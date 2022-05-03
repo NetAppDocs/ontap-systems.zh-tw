@@ -1,0 +1,78 @@
+= 
+:allow-uri-read: 
+
+
+由於推出自動連接埠配置功能、因此在更新過程中、硬體升級程序已在ONTAP 更新過程中簡化。當您升級執行ONTAP 不正常的系統時、必須使用正確的程序來說明連接埠放置功能。
+
+請檢閱下表、查看可用的升級程序。如需其他詳細資料、請參閱每份指南、以判斷程序是否適當。
+
+如需MetroCluster的其他特定程序、請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html["選擇升級或重新整理方法"]。
+
+[cols="4*"]
+|===
+| 版本ONTAP | 位置 | 不中斷營運 | 支援MetroCluster 
+
+
+ a| 
+9.8到9.1.x
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["控制器硬體升級快速指南"] （移動現有的實體儲存設備）
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["控制器硬體升級快速指南"] （將磁碟區移至新儲存設備）
+ a| 
+是的
+ a| 
+否
+
+
+
+ a| 
+9.8
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade/upgrade-decide-to-use-this-guide.html["使用「系統控制器更換」命令來升級執行ONTAP VMware 9.8的控制器硬體"]
+ a| 
+是的
+ a| 
+有（FC）
+
+
+
+ a| 
+9.8
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual-app/index.html["使用Aggregate Relocation來手動升級執行ONTAP VMware 9.8或更新版本的控制器硬體"]
+ a| 
+是的
+ a| 
+有（FC）
+
+
+
+ a| 
+9.7至9.5
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-auto/index.html["使用「系統控制器更換」命令、將執行ONTAP VMware 9.5的控制器硬體升級至ONTAP VMware 9.7"]
+ a| 
+是的
+ a| 
+有（FC）
+
+
+
+ a| 
+9.7及更早版本
+ a| 
+https://docs.netapp.com/us-en/ontap-systems-upgrade/upgrade-arl-manual/index.html["將具有Aggregate Relocation的控制器升級為手動升級執行ONTAP VMware 9.7及更早版本的控制器硬體"]
+ a| 
+是的
+ a| 
+有（FC）
+
+|===

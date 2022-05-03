@@ -1,0 +1,80 @@
+---
+permalink: sas3/service-replace-fan-ds460c.html 
+sidebar: sidebar 
+keywords: ds460c, drive, shelf, fan, module, cooling, disk, replace, replace a fan module in a ds460c disk shelf 
+summary: 每個DS460C磁碟機櫃都包含兩個風扇模組。如果風扇模組故障、您必須儘快更換、以確保機櫃有足夠的冷卻能力。移除故障的風扇模組時、您不需要關閉磁碟櫃的電源。 
+---
+= 將DS460C磁碟櫃中的風扇模組更換成IOM12模組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每個DS460C磁碟機櫃都包含兩個風扇模組。如果風扇模組故障、您必須儘快更換、以確保機櫃有足夠的冷卻能力。移除故障的風扇模組時、您不需要關閉磁碟櫃的電源。
+
+您必須確保在30分鐘內取出並更換風扇模組、以避免系統過熱。
+
+.步驟
+. 提供防靜電保護。
+. 打開新的風扇模組的包裝、並將其放置在靠近機櫃的水平表面上。
++
+請保存所有包裝材料、以便在退回故障風扇時使用。
+
+. 從磁碟櫃背面查看警示LED、找出您需要移除的風扇模組。
++
+您必須更換亮起警示LED的風扇模組。
+
++
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[28圖e2860 de460c單一風扇容器、附有LED編號]
+
++
+|===
+
+
+| 項目 | LED名稱 | 州/省 | 說明 
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+| 注意  a| 
+持續亮起黃色燈號
+ a| 
+風扇故障
+
+|===
+. 按下橘色彈片以釋放風扇模組的握把。
++
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout.gif[28圖e2860 de460c單一風扇容器、附橘色標籤]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+| 按下以釋放風扇模組握把的彈片 
+|===
+. 使用風扇模組握把將風扇模組拉出機櫃。
++
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[28圖e2860 de460c風扇箱把手上附有標註]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+| 將風扇模組拉出的握把 
+|===
+. 將更換的風扇模組完全滑入機櫃、將風扇模組的握把移到側邊、直到其以橘色彈片鎖定為止。
+. 檢查新風扇模組上的黃色警示LED。
++
+
+NOTE: 更換風扇模組之後、警示LED會持續亮起（持續亮起黃色燈）、同時韌體會檢查風扇模組是否已正確安裝。此程序完成後、LED會熄滅。
+
+. 如套件隨附的RMA指示所述、將故障零件退回NetApp。
++
+請聯絡技術支援人員： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]如果您需要RMA號碼、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
+
+

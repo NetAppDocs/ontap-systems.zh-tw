@@ -1,0 +1,410 @@
+---
+permalink: a400/rtc-battery-replace.html 
+sidebar: sidebar 
+keywords: aff a400, aff, a400, replace, real-time, clock, rtc, battery, controller, module, system, service, application, synchronization, function, shut, down, impair, rtc, replacement, switch, back, aggregate, two-node, metrocluster, configuration, complete, process, replace the real-time clock battery, shut down the impaired controller, remove the controller module, replace the rtc battery, reinstall the controller module and setting time/date after rtc battery replacement, switch back aggregates in a two-node MetroCluster configuration, complete the replacement process 
+summary: 您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。 
+---
+= 更換即時時鐘電池AFF - VA400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。
+
+* 您可以將此程序用於ONTAP 系統支援的所有版本的功能
+* 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+
+
+== 步驟1：關閉受損的控制器
+
+[role="lead"]
+根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。
+
+
+
+=== 選項1：大多數組態
+
+[role="lead"]
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+
+
+=== 選項2：控制器位於MetroCluster 一個不二之處
+
+
+NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+
+
+=== 選項3：控制器位於雙節點MetroCluster 的不二
+
+[role="lead"]
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["使用CLI進行NetApp加密總覽"^]。
+* 您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。
+
+
+.步驟
+. 檢查MetroCluster 「不正常」狀態、判斷受損的控制器是否已自動切換至「正常」控制器MetroCluster ：「不正常」
+. 視是否發生自動切換而定、請根據下表繼續進行：
++
+[cols="1,2"]
+|===
+| 如果控制器受損... | 然後... 
+
+
+ a| 
+已自動切換
+ a| 
+繼續下一步。
+
+
+
+ a| 
+尚未自動切換
+ a| 
+從健全的控制器執行計畫性的切換作業MetroCluster ：「『交換切換’」
+
+
+
+ a| 
+尚未自動切換、您嘗試使用MetroCluster 「還原切換」命令進行切換、切換遭到否決
+ a| 
+請檢閱否決訊息、如有可能、請解決此問題、然後再試一次。如果您無法解決問題、請聯絡技術支援部門。
+
+|===
+. 從MetroCluster 存續的叢集執行「f恢復 階段Aggregate」命令、以重新同步資料集合體。
++
+[listing]
+----
+controller_A_1::> metrocluster heal -phase aggregates
+[Job 130] Job succeeded: Heal Aggregates is successful.
+----
++
+如果治療被否決、您可以選擇MetroCluster 使用「-overre-etoes」參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。
+
+. 使用MetroCluster flexoperationshow命令確認作業已完成。
++
+[listing]
+----
+controller_A_1::> metrocluster operation show
+    Operation: heal-aggregates
+      State: successful
+Start Time: 7/25/2016 18:45:55
+   End Time: 7/25/2016 18:45:56
+     Errors: -
+----
+. 使用「shorage Aggregate show」命令來檢查集合體的狀態。
++
+[listing]
+----
+controller_A_1::> storage aggregate show
+Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
+--------- -------- --------- ----- ------- ------ ---------------- ------------
+...
+aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...
+----
+. 使用「MetroCluster f恢復 階段根集合體」命令來修復根集合體。
++
+[listing]
+----
+mcc1A::> metrocluster heal -phase root-aggregates
+[Job 137] Job succeeded: Heal Root Aggregates is successful
+----
++
+如果修復被否決、您可以選擇使用MetroCluster -overrover-etoes參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。
+
+. 在MetroCluster 目的地叢集上使用「停止作業show」命令、確認修復作業已完成：
++
+[listing]
+----
+
+mcc1A::> metrocluster operation show
+  Operation: heal-root-aggregates
+      State: successful
+ Start Time: 7/29/2016 20:54:41
+   End Time: 7/29/2016 20:54:42
+     Errors: -
+----
+. 在受損的控制器模組上、拔下電源供應器。
+
+
+
+
+== 步驟2：移除控制器模組
+
+[role="lead"]
+若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
+
+您可以使用下列動畫、圖例或書面步驟、將控制器模組從機箱中移除。
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82["卸下控制器模組"]
+
+image::../media/drw_A400_Remove_controller.png[DRW A400移除控制器]
+
+. 如果您尚未接地、請正確接地。
+. 釋放電源線固定器、然後從電源供應器拔下纜線。
+. 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
++
+將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。
+
+. 從控制器模組中取出纜線管理裝置、然後將其放在一旁。
+. 向下按兩個鎖定栓、然後同時向下轉動兩個鎖條。
++
+控制器模組會稍微移出機箱。
+
+. 將控制器模組滑出機箱。
++
+將控制器模組滑出機箱時、請確定您支援控制器模組的底部。
+
+. 將控制器模組放在穩固的平面上。
+
+
+
+
+== 步驟3：更換RTC電池
+
+[role="lead"]
+您需要在控制器模組內找到RTC電池、然後依照特定的步驟順序進行。請參閱控制器模組內的FRU對應圖、以瞭解RTC電池的位置。
+
+您可以使用下列動畫、圖例或書面步驟來更換RTC電池。
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80fe7a9b-de6f-46e0-a18b-aadb0157263d["更換RTC電池"]
+
+image::../media/drw_A400_rtc-batt.png[DRW A400 RTC電池]
+
+. 如果您尚未接地、請正確接地。
+. 打開通風管：
++
+.. 將通風管側邊的鎖定彈片朝控制器模組中央按下。
+.. 將通風管朝控制器模組背面滑入、然後將其向上旋轉至完全開啟的位置。
+
+
+. 找到、取出並更換RTC電池：
++
+.. 使用FRU對應圖、在控制器模組上找出RTC電池。
+.. 將電池從電池座中輕推、將電池從電池座中轉開、然後將其從電池座中取出。
++
+
+NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加號、必須正確放置在電池座中。支架附近的加號表示電池的放置方式。
+
+.. 從防靜電包裝袋中取出替換電池。
+.. 記下RTC電池的極性、然後以一定角度向下推電池、將其插入電池座。
+
+
+. 目視檢查電池、確定電池已完全裝入電池座、且極性正確。
+. 關閉通風管。
+
+
+
+
+== 步驟4：重新安裝控制器模組、並設定更換RTC電池後的時間/日期
+
+[role="lead"]
+更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、重設控制器上的時間和日期、然後將其開機。
+
+您可以使用下列動畫、圖例或書面步驟、在機箱中安裝控制器模組。
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a["安裝控制器模組"]
+
+image::../media/drw_A400_Install_controller_source.png[DRW A400安裝控制器來源]
+
+. 如果您尚未這麼做、請關閉通風管或控制器模組護蓋。
+. 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
++
+在指示之前、請勿將控制器模組完全插入機箱。
+
+. 視需要重新安裝系統。
++
+如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖纜線時重新安裝。
+
+. 如果電源供應器已拔下、請將其插回、然後重新安裝電源線固定器。
+. 完成控制器模組的安裝：
++
+.. 使用鎖定鎖條、將控制器模組穩固地推入機箱、直到其與中間背板接入並完全就位。
++
+控制器模組完全就位時、鎖定鎖條會上升。
+
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
++
+控制器模組一旦完全插入機箱、就會開始開機。準備好中斷開機程序。
+
+.. 將鎖定鎖條向上轉動、將鎖定鎖條向內傾、使其脫離鎖定插銷、將控制器推入到底、然後將鎖定鎖條向下推入鎖定位置、以將控制器模組完全裝入機箱。
+.. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
+.. 中斷正常開機程序、然後按「Ctrl-C」開機至載入器。
++
+
+NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項。
+
+
+
+. 重設控制器上的時間和日期：
++
+.. 使用「show date」命令檢查健全控制器上的日期和時間。
+.. 在目標控制器的載入器提示下、檢查時間和日期。
+.. 如有必要、請使用「設置日期mm/dd/ymm/西元年」命令來修改日期。
+.. 如有必要、請使用「Set Time hh：mm：sss」命令、以GMT0設定時間。
+.. 確認目標控制器上的日期和時間。
+
+
+. 在載入程式提示下、輸入「bye」重新初始化PCIe卡和其他元件、然後讓控制器重新開機。
+. 將控制器恢復正常運作、方法是歸還儲存設備：「torage容錯移轉恢復-ofnode_disapped_node_name_」
+. 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
+
+
+
+
+== 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
+
+[role="lead"]
+完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
+
+此工作僅適用於雙節點MetroCluster 的不完整組態。
+
+.步驟
+. 驗證所有節點是否都處於「啟用」狀態：MetroCluster 「顯示節點」
++
+[listing]
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+. 確認所有SVM上的重新同步已完成：MetroCluster 「Svserver show」
+. 驗證修復作業所執行的任何自動LIF移轉是否已成功完成：「MetroCluster 還原檢查LIF show」
+. 從存續叢集中的任何節點使用「MetroCluster 還原」命令執行切換。
+. 確認切換作業已完成：MetroCluster 「不顯示」
++
+當叢集處於「等待切換」狀態時、切換回復作業仍在執行中：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+當叢集處於「正常」狀態時、即可完成切換作業：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+如果切換需要很長時間才能完成、您可以使用「MetroCluster show config-repl複 寫res同步 狀態show」命令來檢查進行中的基準狀態。
+
+. 重新建立任何SnapMirror或SnapVault 不完整的組態。
+
+
+
+
+== 步驟6：將故障零件歸還給NetApp
+
+[role="lead"]
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

@@ -1,0 +1,115 @@
+= 
+:allow-uri-read: 
+
+
+將節點2的非根Aggregate重新放置到節點3之後、您現在必須將節點3重新定位到節點4。
+
+.步驟
+. [man重新定位_3_4_Step1]]在任一控制器上輸入下列命令、然後檢查輸出以識別要重新定位的非根Aggregate：
++
+「torage Aggregate show -Owner-name <node3>-home-id <node2_system_id>`」
+
+. 完成下列子步驟、重新配置集合體：
++
+.. 在任一節點上輸入下列命令、即可存取進階權限層級：
++
+"進階權限"
+
+.. 輸入下列命令：
++
+「torage Aggregate regate regate regulationstart -node3>-destination <node4>-Aggregate-list <aggr_name1、aggr_name2...>-ne-控制 器升級true」
+
++
+Aggregate清單是您在中取得的node4所擁有的Aggregate清單 <<man_relocate_3_4_Step1,步驟1.>>。
+
+.. 出現提示時、請輸入「y」。
++
+重新配置會在背景中進行。重新部署集合體可能需要幾秒鐘到幾分鐘的時間。時間包括用戶端中斷和非中斷部分。此命令不會重新部署任何離線或受限的集合體。
+
+.. 返回管理層級：
++
+「et -priv. admin」
+
+
+
+. [[step3]檢查重新配置狀態：
++
+「torage Aggregate regate reg搬 移顯示-node3>'
+
++
+在重新放置集合體之後、輸出會顯示「Done」。
+
++
+
+NOTE: 請等到所有節點2集合體都已重新放置到節點4之後、再繼續下一步。
+
+. 請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果重新配置... | 然後... 
+
+
+| 所有集合體都成功 | 前往 <<man_relocate_3_4_Step5,步驟5.>>。 
+
+
+| 任何Aggregate都失敗或遭否決  a| 
+.. 檢查EMS記錄以瞭解修正行動。
+.. 執行修正行動。
+.. 在任一節點上輸入下列命令、即可存取進階權限層級：
++
+"進階權限"
+
+.. 重新部署任何故障或被否決的集合體：
++
+「torage Aggregate regate regate regulationstart -node3> destination <node4>-Aggregate-list <aggr_name1、aggr_name2...> ne-控制 器升級true」
+
++
+Aggregate清單是故障或被否決的Aggregate清單。
+
+.. 出現提示時、請輸入「y」。
+.. 輸入下列命令即可返回管理員層級：
++
+「et -priv. admin」
+
+
+
+如有必要、您可以使用下列其中一種方法強制重新配置：
+
+** 壓倒一切的否決檢查：
++
+「torage aggregate regate regate regate reg搬 移開始- overre-tetoes -n控制器升級」
+
+** 覆寫目的地檢查：
++
+「torage Aggregate regate regate regate regate reg搬 移開始- overre-destination-checks-ndos控制 器升級」
+
+
+
+如需儲存Aggregate重新定位命令的詳細資訊、請參閱 link:other_references.html["參考資料"] 若要連結至「_SURF9 ONTAP 磁碟」和「Aggregate Power Guide_」和「_SURF9 ONTAP 命令：手動頁面參考_」。
+
+|===
+. [[man_allocation_3_4_Step5]]確認所有節點2非根Aggregate均處於線上狀態、以及節點4上的狀態：
++
+「torage Aggregate show -node4>-state offline -root false」
+
++
+node2 Aggregate列在中命令的輸出中 <<man_relocate_3_4_Step1,步驟1.>>。
+
+. 如果有任何Aggregate已離線或變成外部、請針對每個Aggregate使用下列命令使其上線：
++
+「torage Aggregate online -gregate <agger_name>」
+
+. 驗證node2 Aggregate中的所有磁碟區都在節點4上處於線上狀態：
++
+Volume show -node4>-state offline（Volume show -node4>-state offline）
+
+. 如果節點4上有任何磁碟區離線、請將其上線：
++
+「Volume online -vserver <vserver_name>-volume <volume <volume．name>'
+
+. 將升級後AutoSupport 的資訊訊息傳送給NetApp for node4：
++
+「系統節點AutoSupport 無法叫用節點<node4>-type all -m則 訊息"<node2>已成功從<platform _old>升級至<platfore_new>""。
+
+

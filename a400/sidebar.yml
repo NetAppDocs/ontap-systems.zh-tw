@@ -1,0 +1,85 @@
+---
+section: a400
+title: VA400系統AFF
+url: "/a400/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定AFF
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/a400/install-setup.html"
+  - title: 快速步驟
+    url: "/a400/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/a400/install-videos.html"
+  - title: 詳細步驟
+    url: "/a400/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: VA400維護AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: VA400開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/a400/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/a400/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/a400/bootmedia-impaired-controller-shutdown.html"
+    - title: 更換開機媒體
+      url: "/a400/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/a400/bootmedia-recovery-image-boot-options.html"
+    - title: 切換回復MetroCluster 此組態
+      url: "/a400/bootmedia-2n-mcc-switchback.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/a400/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/a400/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: VA400機箱AFF
+    entries:
+    - title: 總覽
+      url: "/a400/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a400/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/a400/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/a400/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器模組
+    pdf-filename: VA400控制器模組AFF
+    entries:
+    - title: 總覽
+      url: "/a400/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a400/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/a400/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/a400/controller-replace-system-config-restore-and-verify.html"
+    - title: 重新安裝系統
+      url: "/a400/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/a400/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: VA400 DIMM AFF
+    url: "/a400/dimm-replace.html"
+  - title: 風扇
+    pdf-filename: VA400風扇模組AFF
+    url: "/a400/fan-swap-out.html"
+  - title: NVDIMM電池
+    pdf-filename: VA400 NVDIMM電池AFF
+    url: "/a400/nvdimm-battery-replace.html"
+  - title: NVDIMM
+    pdf-filename: VA320 NVDIMM AFF
+    url: "/a400/nvdimm-replace.html"
+  - title: PCIe或夾層卡
+    pdf-filename: VA400 PCIe或夾層卡AFF
+    url: "/a400/pci-cards-and-risers-replace.html"
+  - title: 電源供應器
+    pdf-filename: 供應器AFF
+    url: "/a400/power-supply-replace.html"
+  - title: 即時時鐘電池
+    pdf-filename: Real-Time時鐘電池AFF
+    url: "/a400/rtc-battery-replace.html"

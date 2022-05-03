@@ -1,0 +1,53 @@
+---
+permalink: sas3/install-cabling-worksheets-examples-fas2600.html 
+sidebar: sidebar 
+keywords: controller-to-stack, cabling, worksheet, cable, aff, a200, a220, fas2600, fas2700, onboard, onboard storage 
+summary: 您可以使用完整的控制器對堆疊佈線工作表和佈線範例、將AFF 內部FAS 儲存的纜線架構用於諸如AFF 但不限於E4A200、AFF EVA220、FAS2600系列和FAS2700平台等。此資訊不適用於FAS25XX平台。 
+---
+= 包含內建儲存設備的控制器對堆疊佈線工作表和纜線連接範例AFF 、例如採用IOM12模組的機櫃FAS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用完整的控制器對堆疊佈線工作表和佈線範例、將AFF 內部FAS 儲存的纜線架構用於諸如AFF 但不限於E4A200、AFF EVA220、FAS2600系列和FAS2700平台等。此資訊不適用於FAS25XX平台。
+
+* 如有需要、請參閱 link:install-cabling-rules.html["SAS纜線配置規則"] 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、
+* 佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器0b連接埠與控制器0A連接埠的連線。
++
+image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[DRW fas2600控制器至堆疊纜線類型金鑰]
+
+* 佈線範例以兩種不同的色彩顯示控制器對堆疊連線和機櫃對機櫃連線、以區別透過IOM A（網域A）和IOM B（網域B）的連線能力。
++
+image::../media/drw_fas2600_cable_color_key.png[DRW fas2600纜線色彩金鑰]
+
+
+
+
+
+== 採用多重路徑HA組態的內建儲存設備、搭配單一多重機櫃堆疊的整套支援功能AFF FAS
+
+以下工作表和佈線範例使用連接埠配對0A/0b：
+
+image::../media/drw_fas2600_mpha_worksheet.png[DRW fas2600 mpha工作表]
+
+image::../media/drw_fas2600_mpha.png[Drw fas2600 mpha]
+
+
+
+== FAS2600系列多重路徑組態、搭配單一多重機櫃堆疊
+
+以下工作表和佈線範例使用連接埠配對0A/0b。
+
+在此範例中、控制器安裝在機箱的插槽A中。當控制器位於機箱的插槽A時、其內部儲存連接埠（0b）位於網域A（IOM A）中、因此連接埠0b必須連接至堆疊中的網域A（IOM A）。
+
+image::../media/drw_fas2600_mp_slot_a_worksheet.png[DRW fas2600 MP slot A工作表]
+
+image::../media/drw_fas2600_mp_slot_a.png[DRW fas2600 MP插槽A]
+
+在此範例中、控制器安裝在機箱的插槽B中。當控制器位於機箱的插槽B時、其內部儲存連接埠（0b）位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的網域B（IOM B）。
+
+image::../media/drw_fas2600_mp_slot_b_worksheet.png[DRW fas2600 MP slot b工作表]
+
+image::../media/drw_fas2600_mp_slot_b.png[DRW fas2600 MP插槽b]

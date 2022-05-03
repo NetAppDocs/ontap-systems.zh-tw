@@ -1,0 +1,80 @@
+---
+section: fas2700
+title: FAS2700系統
+url: "/fas2700/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: FAS2700安裝與設定
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/fas2700/install-setup.html"
+  - title: 快速步驟
+    url: "/fas2700/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/fas2700/install-videos.html"
+  - title: 詳細步驟
+    url: "/fas2700/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: FAS2700維護
+  entries:
+  - title: 開機媒體
+    pdf-filename: FAS2700開機媒體
+    entries:
+    - title: 總覽
+      url: "/fas2700/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/fas2700/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/fas2700/bootmedia-impaired-controller-shutdown.html"
+    - title: 取代開機映像
+      url: "/fas2700/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/fas2700/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas2700/bootmedia-complete-rma.html"
+  - title: 快取模組
+    pdf-filename: FAS2700快取模組
+    url: "/fas2700/caching-module-replace.html"
+  - title: 機箱
+    pdf-filename: FAS2700機箱
+    entries:
+    - title: 總覽
+      url: "/fas2700/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas2700/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/fas2700/chassis-replace-move-hardware.html"
+    - title: 還原組態
+      url: "/fas2700/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器
+    pdf-filename: FAS2700控制器
+    entries:
+    - title: 總覽
+      url: "/fas2700/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas2700/controller-replace-shutdown.html"
+    - title: 更換控制器硬體
+      url: "/fas2700/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/fas2700/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/fas2700/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/fas2700/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: FAS2700 DIMM
+    url: "/fas2700/dimm-replace.html"
+  - title: 磁碟機
+    pdf-filename: FAS2700磁碟機
+    url: "/fas2700/drive-replace.html"
+  - title: NVMEM電池
+    pdf-filename: EFF-220和FAS2700 NVMEM電池AFF
+    url: "/fas2700/nvmem-nvram-battery-replace.html"
+  - title: 電源供應器
+    pdf-filename: FASA220與FAS2700電源供應器AFF
+    url: "/fas2700/power-supply-swap-out.html"
+  - title: 即時時鐘電池
+    pdf-filename: FAS2700即時時鐘電池
+    url: "/fas2700/rtc-battery-replace.html"

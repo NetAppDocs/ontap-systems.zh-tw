@@ -1,0 +1,138 @@
+= 
+:allow-uri-read: 
+
+
+將Aggregate從node2重新部署到node3之後、您需要將node2擁有的NAS資料lifs移到node3。
+
+在升級過程中、遠端LIF會處理SAN LUN的流量。在升級期間、移轉SAN LIF對於叢集或服務健全狀況並不必要。除非需要將SAN LIF對應至新連接埠、否則不會移動SAN LIF。將lifs從node3移至node4並使node4聯機後、您必須確認lifs是否正常且位於適當的連接埠上。
+
+.步驟
+. [[step1]]在任一節點上輸入下列命令並擷取輸出、即可列出節點2擁有的所有NAS資料lifs：
++
+「網路介面show -data-protocol nfs | CIFS -home-Node <node2>'
+
++
+以下範例顯示node2的命令輸出：
+
++
+[listing]
+----
+cluster::> network interface show -data-protocol nfs|cifs -home-node node2
+              Logical     Status      Network             Current  Current  Is
+ Vserver      Interface   Admin/Oper  Address/Mask        Node     Port     Home
+ -----------  ----------  ----------  ------------------  -------  -------  ----
+ vs0
+              a0a         up/down     10.63.0.53/24       node2    a0a      true
+              data1       up/up       10.63.0.50/18       node2    e0c      true
+              rads1       up/up       10.63.0.51/18       node2    e1a      true
+              rads2       up/down     10.63.0.52/24       node2    e1b      true
+ vs1
+              lif1        up/up       172.17.176.120/24   node2    e0c      true
+              lif2        up/up       172.17.176.121/24   node2    e1a      true
+----
+. [[step2]]請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果node2... | 然後... 
+
+
+| 已設定介面群組或VLAN | 前往 <<man_move_lif_2_3_step3,步驟3.>>。 
+
+
+| 未設定介面群組或VLAN | 跳過步驟3、前往 <<man_move_lif_2_3_step4,步驟4.>>。 
+|===
+. [[man_move_lif_2_3_step3]]請採取下列步驟、移轉節點2上介面群組和VLAN上裝載的NAS資料lifs：
++
+.. [[man_move_lif_2_3_substepa]]將節點2介面群組上裝載的任何資料lifs移轉到節點3上的連接埠、以便在同一個網路上裝載lifs、方法是輸入下列命令（每個LIF一次）：
++
+「網路介面移轉-vserver <vserver_name>-lif<lif_name>-destite-node<node3>–destite-port <netport|ifgrp>'
+
+.. 修改中的lifs主連接埠和主節點 <<man_move_lif_2_3_substepa,子步驟A>> 輸入下列命令（每個節點一次）、即可將目前裝載l生命 的連接埠和節點移至：
++
+「網路介面修改-vserver <vserver_name>-lif <lif_name>-home-node3>-homeport <netport|ifgrp>`
+
+.. [[man_move_lif_2_3_substepc]]]<將節點2上VLAN上裝載的任何LIF移轉至節點3上的連接埠、以便在與VLAN相同的網路上裝載LIF、只需輸入下列命令一次、即可針對每個LIF：
++
+「網路介面移轉-vserver <vserver_name>-lif<lif_name>-destite-node<node3>–destite-port <netport|ifgrp>'
+
+.. 修改中的lifs主連接埠和主節點 <<man_move_lif_2_3_substepc,子步驟c>> 輸入下列命令、針對每個LIF輸入一次、即可移至目前裝載lifs的連接埠和節點：
++
+「網路介面修改-vserver <vserver_name>-lif <lif_name>-home-node3>-homeport <netport|ifgrp>`
+
+
+
+. [[man_move_lif_2_3_step4]]採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果叢集設定為... | 然後... 
+
+
+| NAS | 完成 <<man_move_lif_2_3_step5,步驟5.>> 透過 <<man_move_lif_2_3_step8,步驟8.>>。 
+
+
+| SAN | 跳過步驟5至步驟8、然後完成 <<man_move_lif_2_3_step9,步驟9.>>。 
+
+
+| NAS和SAN | 完成 <<man_move_lif_2_3_step5,步驟5.>> 透過 <<man_move_lif_2_3_step9,步驟9.>>。 
+|===
+. [[man_move_lif_2_3_step5]]如果您的平台上有不同的資料連接埠、請將連接埠新增至廣播網域：
++
+「網路連接埠廣播網域附加連接埠-IPSpace <IPspace_name>-broadcast網域管理-ports <node:port>'
+
++
+下列範例將節點「6280-1」上的連接埠「e0a」和節點「8060-1」上的連接埠「e0i」新增至IPspace「預設」中的廣播網域「mgmt」：
+
++
+[listing]
+----
+cluster::> network port broadcast-domain add-ports -ipspace Default
+           -broadcast-domain mgmt -ports 6280-1:e0a, 8060-1:e0i
+----
+. [[step6]]輸入下列命令、將每個NAS資料LIF移轉至節點3、每個LIF一次：
++
+「網路介面移轉-vserver <vserver_name>-lif<lif_name>-dite-node<node3>-dite-port <netport|ifgrp>'
+
+. [[step7]在任一節點上輸入下列命令、檢查輸出、確認NAS lifs已移至正確的連接埠、而且lifs的狀態為up：
++
+「網路介面show -curr-Node <node3>-data-Protocol CIFS/NFS」
+
+. [[man_move_lif_2_3_step8]如果有任何LIF當機、請輸入下列命令、將LIF的管理狀態設為「up」、每個LIF一次：
++
+「網路介面修改-vserver <vserver_name>-lIF <LIF_name>-STATUS-admin up」
+
+. [[man_move_lif_2_3_step9]如果已設定介面群組或VLAN、請完成下列子步驟：
++
+.. 從介面群組移除VLAN：
++
+「網路連接埠VLAN刪除節點<node_name>-port <ifgrp>-vlan-id <vlan_ID>'
+
+.. 輸入下列命令並檢查其輸出、以判斷節點上是否已設定任何介面群組：
++
+「網路連接埠ifgrp show -node<node_name>-ifgrp <ifgrp_name>-instance」
+
++
+系統會顯示節點的介面群組資訊、如下列範例所示：
+
++
+[listing]
+----
+cluster::> network port ifgrp show -node node2 -ifgrp a0a -instance
+                 Node: node2
+ Interface Group Name: a0a
+Distribution Function: ip
+        Create Policy: multimode_lacp
+          MAC Address: MAC_address
+    ort Participation: partial
+        Network Ports: e2c, e2d
+             Up Ports: e2c
+           Down Ports: e2d
+----
+.. 如果節點上已設定任何介面群組、請記錄介面群組的名稱及指派給它們的連接埠、然後輸入下列命令刪除連接埠、每個連接埠一次：
++
+「network port ifgrp remove-port -node<node_name>-ifgrp <ifgrp_name>-port <port_name>」
+
+
+
+

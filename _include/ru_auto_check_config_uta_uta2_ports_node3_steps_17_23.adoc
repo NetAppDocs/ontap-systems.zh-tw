@@ -1,0 +1,96 @@
+= 
+:allow-uri-read: 
+
+
+. [[auto_checks3_step17]在自動開機期間按「Ctrl-C」、即可在「loader>」提示字元下停止節點。
+. [[step18]在載入程式提示下、進入維護模式：
++
+Boot_ONTAP maint
+
+. [[step19]在維護模式中、顯示所有先前設定的啟動器連接埠、這些連接埠現在處於目標模式：
++
+「ucadmin show」
+
++
+將連接埠改回啟動器模式：
+
++
+「ucadmin modify -m fs -t initiator -f <介面卡名稱>」
+
+. [[step20]確認連接埠已變更為啟動器模式：
++
+「ucadmin show」
+
+. [[step21]結束維護模式：
++
+《停止》
+
+. [[auto_checks3_step22]在載入程式提示下開機：
++
+Boot_ONTAP
+
++
+現在、在開機時、節點可以偵測先前指派給它的所有磁碟、並可依預期開機。
+
+. [[auto_checks3_step23]如果您要從具有外部磁碟的系統升級至支援內部和外部磁碟AFF 的系統（例如、E4A800系統）、請將node1 Aggregate設為根Aggregate、以確保node3從節點1的根Aggregate開機。若要設定根Aggregate、請移至開機功能表、然後選取選項「5」以進入維護模式。
++
+
+CAUTION: *您必須依照所示的確切順序執行下列子步驟；否則可能導致中斷運作、甚至資料遺失。*
+
++
+下列程序會將node3設定為從節點1的根Aggregate開機：
+
++
+.. 進入維護模式：
++
+Boot_ONTAP maint
+
+.. 檢查node1 Aggregate的RAID、plex和Checksum資訊：
++
+「aggr狀態-r」
+
+.. 檢查node1 Aggregate的狀態：
++
+「aggr狀態」
+
+.. 如有必要、請將node1 Aggregate上線：
++
+「aggr_online root_aggr_from _」
+
+.. 防止節點3從其原始根Aggregate開機：
++
+「aggr offline <root_aggr_on_node3>'」
+
+.. 將node1根Aggregate設為節點3的新根Aggregate：
++
+「aggr options aggr_ffrom _」（aggr_from _）<節點1> root（根）
+
+.. 確認節點3的根Aggregate為離線狀態、且從節點1移轉的磁碟根Aggregate為線上狀態、並設定為root：
++
+「aggr狀態」
+
++
+
+NOTE: 如果無法執行上一個子步驟、可能會導致節點3從內部根Aggregate開機、或是導致系統假設有新的叢集組態存在、或提示您識別一個。
+
++
+以下是命令輸出的範例：
+
++
+[listing]
+----
+ -----------------------------------------------------------------
+ Aggr                 State    Status             Options
+
+ aggr0_nst_fas8080_15 online   raid_dp, aggr      root, nosnap=on
+                               fast zeroed
+                               64-bit
+
+ aggr0                offline  raid_dp, aggr      diskroot
+                               fast zeroed
+                               64-bit
+ -----------------------------------------------------------------
+----
+
+
+

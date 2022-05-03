@@ -1,0 +1,44 @@
+= 
+:allow-uri-read: 
+
+
+您必須將組態資訊從根磁碟區還原至開機裝置。
+
+您需要在節點3和節點4上執行這些步驟、在一個節點上完成每個步驟、然後在另一個節點上完成每個步驟、然後再繼續下一個步驟。
+
+.步驟
+. 從載入程式提示字元「boot_ONTAP功能表」存取開機功能表
+. 從開機功能表中、選擇（6）從備份組態更新Flash、並在提示繼續時輸入「y」。
++
+[listing]
+----
+Please choose one of the following:
+
+(1) Normal Boot.
+(2) Boot without /etc/rc.
+(3) Change password.
+(4) Clean configuration and initialize all disks.
+(5) Maintenance mode boot.
+(6) Update flash from backup config.
+(7) Install new software first.
+(8) Reboot node.
+(9) Configure Advanced Drive Partitioning.
+Selection (1-9)? 6
+
+This will replace all flash-based configuration with the last backup to
+disks. Are you sure you want to continue?: y
+----
++
+更新Flash程序會執行數分鐘、然後系統重新開機。
+
+. 當系統提示您確認系統ID不相符時、請輸入「y」。
++
+[listing]
+----
+WARNING: System id mismatch. This usually occurs when replacing CF or NVRAM cards!
+Override system id? {y|n} [n] y
+----
++
+啟動順序會正常運作。
+
+

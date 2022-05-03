@@ -1,0 +1,47 @@
+---
+permalink: sas3/install-worksheets-examples-quadpath.html 
+sidebar: sidebar 
+keywords: complete, controller-to-stack, cabling, cable, worksheet, quad-path, ha, configuration, ha, configuration, sas, hba, controller-to-stack cabling worksheet and cabling example for a quad-path ha configuration with two quad-port sas hbas 
+summary: 您可以使用完整的控制器對堆疊纜線工作表和纜線佈線範例、來連接具有兩個四埠SAS HBA的四路徑HA組態。 
+---
+= 控制器對堆疊佈線工作表和佈線範例、適用於使用兩個四埠SAS HBA的四路徑HA組態、亦即採用IOM12模組的機櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用完整的控制器對堆疊纜線工作表和纜線佈線範例、來連接具有兩個四埠SAS HBA的四路徑HA組態。
+
+* 如有需要、請參閱 link:install-cabling-rules.html["SAS纜線配置規則"] 如需支援組態的相關資訊、請參閱控制器插槽編號慣例、機櫃對機櫃連線、以及控制器對機櫃連線（包括使用連接埠配對）。
+* 如有需要、請參閱 link:install-cabling-worksheets-how-to-read-quadpath.html["如何讀取工作表以纜線連接控制器與堆疊的連線、以實現四路徑連線"]。
+* 佈線範例將控制器對堆疊纜線顯示為實線或虛線、以區分控制器A和C連接埠與控制器B和D連接埠的連線。
++
+image::../media/drw_controller_to_stack_cable_type_key.gif[從DRW控制器堆疊纜線類型金鑰]
+
+* 佈線範例中的纜線及工作表中對應的連接埠配對會以色彩編碼、以區分與HA配對中每個堆疊的連線。
++
+image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[將有線彩色金鑰堆疊至非2600的DRW控制器]
+
+* 佈線範例可視覺區分兩組多路徑纜線、以便在HA配對或單一控制器組態中、為每個控制器與每個堆疊建立四路徑連線。
++
+第一組多路徑纜線稱為「多路徑」。第二組多路徑纜線稱為「四路徑」。第二組纜線稱為「四路徑」、因為完成這組纜線後、您就能享有四路徑連線功能。
+
++
+image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[以DRw控制器堆疊四路徑連線金鑰]
+
+* 工作表範例顯示指定用於多路徑纜線或四路徑纜線至適用堆疊的連接埠配對。
++
+指定用於多路徑纜線的每個連接埠配對都會以一個圓形圈圈圈、其顏色與連接的堆疊相關。每個指定用於四路徑纜線的連接埠配對都會以矩形圈選、矩形是與其纜線堆疊相關的色彩。
+
+
+
+
+
+== 四通道HA、含兩個四埠SAS HBA和兩個多機櫃堆疊
+
+下列工作表和佈線範例使用連接埠配對1a/2b（多路徑）和2a/1d（四路徑）作為堆疊1、連接埠配對1c/2d（多路徑）和2c/1b（四路徑）作為stack2。
+
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Drw工作表qpha插槽1和2個4porthbas雙堆疊NAU]
+
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Drw qpha插槽1和2兩個4porthbas兩個堆疊NAU]

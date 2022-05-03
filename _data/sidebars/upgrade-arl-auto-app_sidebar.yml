@@ -1,0 +1,113 @@
+---
+prefix: upgrade-arl-auto-app
+entries:
+- title: 使用Aggregate重新配置來升級控制器硬體
+  entries:
+  - title: 總覽
+    url: "/using_aggregate_relocation_to_upgrade_controller_hardware_overview.html"
+  - title: 自動化控制器升級程序
+    url: "/automating_the_controller_upgrade_process.html"
+- title: 決定是否使用Aggregate重新配置指南
+  url: "/deciding_whether_to_use_the_aggregate_relocation_guide.html"
+- title: 必要的工具與文件
+  url: "/required_tools_and_documentation.html"
+- title: 使用ARL升級控制器的準則
+  url: "/guidelines_for_upgrading_controllers_with_arl.html"
+- title: 驗MetroCluster 證整個過程的效能狀況
+  url: "/verifying_the_health_of_the_metrocluster_configuration.html"
+- title: 檢查MetroCluster 是否有任何組態錯誤
+  url: "/checking_for_metrocluster_configuration_errors.html"
+- title: 驗證切換、修復及切換
+  url: "/verifying_switchover,_healing,_and_switchback.html"
+- title: ARL升級總覽
+  url: "/overview_of_the_arl_upgrade.html"
+- title: 升級節點配對
+  url: "/upgrading_the_node_pair.html"
+- title: 第1階段準備升級
+  entries:
+  - title: 總覽
+    url: "/stage_1_preparing_for_upgrade_overview.html"
+  - title: 準備節點以進行升級
+    url: "/preparing_the_nodes_for_upgrade.html"
+  - title: 取得外部金鑰管理伺服器的IP位址以進行儲存加密
+    url: "/getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html"
+- title: 第2階段重新部署和淘汰節點1
+  entries:
+  - title: 總覽
+    url: "/stage_2_relocating_and_retiring_node1_overview.html"
+  - title: 將節點1擁有的非根Aggregate和NAS資料lifs重新部署到節點2
+    url: "/relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html"
+  - title: 重新部署故障或被否決的集合體
+    url: "/relocating_failed_or_vetoed_aggregates.html"
+  - title: 淘汰節點1
+    url: "/retiring_node1.html"
+  - title: 準備netboot
+    url: "/preparing_for_netboot.html"
+- title: 第3階段：安裝與開機節點3
+  entries:
+  - title: 總覽
+    url: "/stage_3_installing_and_booting_node3_overview.html"
+  - title: 安裝及開機節點3
+    url: "/installing_and_booting_node3.html"
+  - title: 在節點3上設定FC或UTA/UTA2組態
+    url: "/setting_the_fc_or_uta_uta2_configuration_on_node3.html"
+  - title: 驗證node3安裝
+    url: "/verifying_the_node3_installation.html"
+  - title: 還原節點3上的金鑰管理程式組態
+    url: "/restoring_key-manager_configuration_on_node3.html"
+  - title: 將節點1擁有的非根Aggregate和NAS資料lifs從節點2移至節點3
+    url: "/moving_non-root_aggregates_and_nas_data_lifs_owned_by_node1_from_node2_to_node3.html"
+- title: 第4階段重新部署和淘汰節點2
+  entries:
+  - title: 總覽
+    url: "/stage_4_relocating_and_retiring_node2_overview.html"
+  - title: 將非根Aggregate和NAS資料LIF從節點2重新定位至節點3
+    url: "/relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html"
+  - title: 淘汰節點2
+    url: "/retiring_node2.html"
+- title: 第5階段：安裝與開機節點4
+  entries:
+  - title: 總覽
+    url: "/stage_5_installing_and_booting_node4_overview.html"
+  - title: 安裝及開機節點4
+    url: "/installing_and_booting_node4.html"
+  - title: 在節點4上設定FC或UTA/UTA2組態
+    url: "/setting_the_fc_or_uta_uta2_configuration_on_node4.html"
+  - title: 驗證node4安裝
+    url: "/verifying_the_node4_installation.html"
+  - title: 還原節點4上的金鑰管理程式組態
+    url: "/restoring_key-manager_configuration_on_node4.html"
+  - title: 將節點2擁有的非根Aggregate和NAS資料lifs從節點3移至節點4
+    url: "/moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html"
+- title: 第6階段完成升級
+  entries:
+  - title: 總覽
+    url: "/stage_6_completing_the_upgrade_overview.html"
+  - title: 完成MetroCluster 升級以進行F精選FC組態
+    url: "/completing_the_upgrade_for_metrocluster_fc_configuration.html"
+  - title: 請確定新的控制器已正確設定
+    url: "/ensuring_that_the_new_controllers_are_set_up_correctly.html"
+  - title: 在新的控制器模組上設定儲存加密
+    url: "/setting_up_storage_encryption_on_the_new_controller_module.html"
+  - title: 在新的控制器模組上設定NetApp Volume Encryption
+    url: "/setting_up_netapp_volume_encryption_on_the_new_controller_module.html"
+  - title: 取消委任舊系統
+    url: "/decommissioning_the_old_system.html"
+  - title: 恢復SnapMirror作業
+    url: "/resuming_snapmirror_operations.html"
+- title: 疑難排解
+  entries:
+  - title: 總覽
+    url: "/troubleshooting_overview.html"
+  - title: Aggregate重新配置失敗
+    url: "/aggregate_relocation_failures.html"
+  - title: 檢查Aggregate重新配置失敗
+    url: "/checking_for_aggregate_relocation_failure.html"
+  - title: 在完成升級後、原本位於節點1上的Aggregate歸node4所有
+    url: "/aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html"
+  - title: 重新開機、出現問題或重新開機
+    url: "/reboots_panics_or_power_cycles.html"
+  - title: 程序的多個階段可能會發生的問題
+    url: "/issues_that_can_arise_in_multiple_stages_of_the_procedure.html"
+  - title: LIF移轉失敗
+    url: "/lif_migration_failure.html"

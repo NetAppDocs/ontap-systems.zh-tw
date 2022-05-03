@@ -1,0 +1,78 @@
+---
+section: fas8200
+title: FAS8200系統
+url: "/fas8200/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: FAS8200安裝與設定
+  entries:
+  - title: 叢集組態工作表
+    url: "/fas8200/install-worksheet-linkout.html"
+  - title: 選擇安裝與設定體驗
+    url: "/fas8200/install-setup.html"
+  - title: 快速步驟
+    url: "/fas8200/install-setup-linkout.html"
+  - title: 影片步驟
+    url: "/fas8200/install-video-linkout.html"
+- title: 維護
+  pdf-filename: FAS8200維護
+  entries:
+  - title: 開機媒體
+    pdf-filename: FAS8200開機媒體
+    entries:
+    - title: 總覽
+      url: "/fas8200/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/fas8200/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/fas8200/bootmedia-impaired-controller-shutdown.html"
+    - title: 更換開機媒體
+      url: "/fas8200/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/fas8200/bootmedia-recovery-image-boot-options.html"
+    - title: 切換回復MetroCluster 此組態
+      url: "/fas8200/bootmedia-2n-mcc-switchback.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/fas8200/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas8200/bootmedia-complete-rma.html"
+  - title: 快取模組
+    url: "/fas8200/caching-module-replace.html"
+  - title: 機箱
+    pdf-filename: FAS8200機箱
+    entries:
+    - title: 總覽
+      url: "/fas8200/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas8200/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/fas8200/chassis-replace-move-hardware.html"
+    - title: 還原組態
+      url: "/fas8200/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器
+    pdf-filename: FAS8200控制器模組
+    entries:
+    - title: 總覽
+      url: "/fas8200/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas8200/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/fas8200/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/fas8200/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/fas8200/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/fas8200/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas8200/dimm-replace.html"
+  - title: 風扇
+    url: "/fas8200/fan-swap-out.html"
+  - title: NVMEM電池
+    url: "/fas8200/nvmem-nvram-battery-replace.html"
+  - title: PCIe卡
+    url: "/fas8200/pci-cards-and-risers-replace.html"
+  - title: 電源供應器
+    url: "/fas8200/power-supply-swap-out.html"
+  - title: 即時時鐘電池
+    url: "/fas8200/rtc-battery-replace.html"

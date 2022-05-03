@@ -1,0 +1,93 @@
+---
+section: a700
+title: 部分A700系統AFF
+url: "/a700/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定AFF
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/fas9000/install-setup.html"
+  - title: 快速步驟
+    url: "/fas9000/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/fas9000/install-videos.html"
+  - title: 詳細步驟
+    url: "/fas9000/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: 資料保護AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: VA700開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/fas9000/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/fas9000/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/fas9000/bootmedia-impaired-controller-shutdown.html"
+    - title: 取代開機映像
+      url: "/fas9000/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/fas9000/bootmedia-recovery-image-boot-options.html"
+    - title: 切換回復MetroCluster 此組態
+      url: "/fas9000/bootmedia-2n-mcc-switchback.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/fas9000/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas9000/bootmedia-complete-rma.html"
+  - title: 快取模組
+    url: "/fas9000/caching-module-and-core-dump-module-replace.html"
+  - title: 快取模組（熱交換）
+    url: "/fas9000/caching-module-hot-swap.html"
+  - title: 機箱
+    pdf-filename: VA700機箱AFF
+    entries:
+    - title: 總覽
+      url: "/fas9000/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas9000/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/fas9000/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/fas9000/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器模組
+    pdf-filename: 部分A700控制器AFF
+    entries:
+    - title: 總覽
+      url: "/fas9000/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas9000/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/fas9000/controller-replace.html"
+    - title: 還原系統組態
+      url: "/fas9000/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/fas9000/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/fas9000/controller-replace-complete-system-restoration.html"
+  - title: DCPM
+    url: "/fas9000/dcpm-nvram10-battery-replace.html"
+  - title: DIMM
+    url: "/fas9000/dimm-replace.html"
+  - title: 風扇
+    url: "/fas9000/fan-swap-out.html"
+  - title: I/O模組
+    url: "/fas9000/pci-cards-and-risers-replace.html"
+  - title: LED USB模組
+    url: "/fas9000/led-module-replace.html"
+  - title: NVRAM
+    url: "/fas9000/nvram-module-or-nvram-dimm-replacement.html"
+  - title: 電源供應器
+    url: "/fas9000/power-supply-swap-out.html"
+  - title: 實時時鐘電池
+    url: "/fas9000/rtc-battery-replace.html"
+  - title: X91148A模組
+    pdf-filename: 資訊單元A700 X91148A模組AFF
+    entries:
+    - title: 總覽
+      url: "/fas9000/x91148a-module-install-overview.html"
+    - title: 含開放式插槽的部分A700系統AFF
+      url: "/fas9000/x91148a-modules-with-open-slots-add.html"
+    - title: 不含開放式插槽的系統AFF
+      url: "/fas9000/x91148a-modules-with-no-open-slots-add.html"

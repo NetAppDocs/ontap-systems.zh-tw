@@ -1,0 +1,134 @@
+---
+permalink: a800/bootmedia-transfer-boot-image.html 
+sidebar: sidebar 
+keywords: aff a800, transfer the boot image to the boot media 
+summary: 您安裝的替換開機媒體不含開機映像、因此您需要使用USB快閃磁碟機來傳輸開機映像。 
+---
+= 將開機映像傳輸到開機媒體AFF - ImageA800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您安裝的替換開機媒體不含開機映像、因此您需要使用USB快閃磁碟機來傳輸開機映像。
+
+* 您必須擁有格式化為FAT32的USB隨身碟、且容量至少為4GB。
+* 與執行受損控制器相同ONTAP 版本之圖片的一份複本。您可以從NetApp支援網站的「下載」區段下載適當的映像
++
+** 如果已啟用NVE、請使用NetApp Volume Encryption下載映像、如下載按鈕所示。
+** 如果未啟用NVE、請下載不含NetApp Volume Encryption的映像、如下載按鈕所示。
+
+
+* 如果您的系統是HA配對、則必須有網路連線。
+* 如果您的系統是獨立式系統、則不需要網路連線、但在還原var檔案系統時、您必須執行額外的重新開機。
++
+.. 從NetApp支援網站下載並複製適當的服務映像到USB快閃磁碟機。
++
+... 將服務映像下載到筆記型電腦的工作空間。
+... 解壓縮服務映像。
++
+
+NOTE: 如果您使用Windows擷取內容、請勿使用WinZipto擷取netboot映像。使用其他擷取工具、例如7-Zip或WinRAR。
+
++
+解壓縮服務映像檔中有兩個資料夾：
+
++
+**** 開機
+**** 《EFI'》
+
+
+... 將「efi」資料夾複製到USB快閃磁碟機的頂端目錄。
++
+USB快閃磁碟機應具有受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
+
+... 從筆記型電腦中取出USB隨身碟。
+
+
+.. 如果您尚未這麼做、請關閉通風管：
++
+... 將通風管向下旋轉至控制器模組。
+... 將通風管滑向提升板、直到鎖定彈片卡入定位。
+... 檢查通風管、確定其已正確放置並鎖定到位。
++
+image::../media/drw_a800_close_air_duct.png[DRw a800封閉通風管]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+
+
+
+ a| 
+通風管
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+
+
+
+ a| 
+擴充卡
+
+|===
+
+
+.. 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
+.. 重新安裝纜線管理裝置、並視需要重新連接系統。
++
+重新啟用時、請記得重新安裝移除的媒體轉換器（SFP或QSFP）。
+
+.. 將電源線插入電源供應器、然後重新安裝電源線固定器。
+.. 將USB隨身碟插入控制器模組的USB插槽。
++
+請確定您將USB隨身碟安裝在標示為USB裝置的插槽中、而非USB主控台連接埠中。
+
+.. 將控制器模組一路輕推入系統、直到控制器模組鎖定掛勾開始上升、穩固地推入鎖定掛勾、以完成控制器模組的安裝、然後將鎖定掛勾旋轉至控制器模組插銷上的鎖定位置。
++
+控制器一旦完全安裝到機箱中、就會開始開機。
+
+.. 在載入程式提示字元下按Ctrl-C停止、以中斷開機程序。
++
+如果您錯過此訊息、請按Ctrl-C、選取開機至維護模式選項、然後按「halt」控制器以開機至載入器。
+
+.. 儘管保留了環境變數和bootargs、您仍應使用「printenv bootargs name」命令、檢查是否已針對您的系統類型和組態正確設定所有必要的開機環境變數和bootargs、並使用「show variable-name <value>」命令修正任何錯誤。
++
+... 檢查開機環境變數：
++
+**** bootarg.init.boot_clustered`
+**** 《合作夥伴sysid》
+**** bootarg.init.flash_optimized` for AFF The FeC190/AFF A220（All Flash FAS ）
+**** bootarg.init.san_optimized`適用於AFF ESA220和All SAN Array
+**** bootarg.init.switchless_cluster.enable`
+
+
+... 如果已啟用外部金鑰管理程式、請檢查「肯夫」ASUP輸出中所列的bootarg值：
++
+**** 「bootarg.storageencryption支援<value>'
+**** 「bootarg.keymanager.support <value>」
+**** 「kmip.init.interface <value>」
+**** 「kmip.init.ipaddr <value>」
+**** 「kmip.init.netmask <value>」
+**** 「kmip.init.gateway <value>」
+
+
+... 如果已啟用Onboard Key Manager、請檢查「kenv」ASUP輸出中所列的bootarg值：
++
+**** 「bootarg.storageencryption支援<value>'
+**** 「bootarg.keymanager.support <value>」
+**** 「bootarg.onal_keymanager <value>」
+
+
+... 使用「shavenv」命令儲存您變更的環境變數
+... 使用「prontenv _variable-name_」命令確認您的變更。
+
+
+
+
+

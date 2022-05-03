@@ -1,0 +1,83 @@
+---
+permalink: ns224/service-replace-power-supply.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, replace, fail, power, supply, nondisruptive, drive, i/o, progress, hot-swap, hot-swap a power supply 
+summary: 您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障的電源供應器。 
+---
+= 熱交換電源供應器- NS224磁碟櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障的電源供應器。
+
+.關於這項工作
+* 請勿混用具有不同效率額定值的電源供應器。永遠像這樣更換。
+* 如果您要更換多個電源供應器、則必須一次更換一個電源供應器、以便磁碟櫃維持電力。
+* *最佳實務做法：*最佳實務做法是在從NSM模組移除後兩分鐘內更換電源供應器。
++
+如果超過兩分鐘、磁碟櫃會繼續運作、ONTAP 但在更換電源供應器之前、會將降級電源供應器的相關訊息傳送至主控台。
+
+* *最佳實務做法：*最佳實務做法是在更換FRU元件之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。
++
+[NOTE]
+====
+請勿將韌體還原至不支援機櫃及其元件的版本。
+
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
+
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
+
+====
+* 如有需要、您可以開啟機櫃的位置（藍色）LED、以協助實際找出受影響的機櫃：「儲存櫃位置導向的修改-機櫃名稱_bidle_name_-leide-Status on」
++
+如果您不知道受影響機櫃的「shelf_name」、請執行「shorage shelage show」命令。
+
++
+機櫃有三個位置LED：一個在操作員顯示面板上、一個在每個NSM模組上。位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用「關閉」選項來關閉這些命令。
+
+* 打開更換用電源供應器的包裝時、請保留所有包裝材料、以便在退回故障的電源供應器時使用。
++
+如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
+
+* 您可以使用下列影片或書面步驟來更換電源供應器。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5794da63-99aa-425a-825f-aa86002f154d["熱交換NS224磁碟機櫃中的電源供應器"^]
+
+
+
+.步驟
+. 請妥善接地。
+. 實體識別故障的電源供應器。
++
+系統會將警告訊息記錄到系統主控台、指出哪個電源供應器故障。此外、機櫃操作員顯示面板上的警示（黃色）LED會亮起、故障電源供應器上的雙色LED會亮起紅色。
+
+. 打開電源線固定器、從電源供應器拔下電源線、然後從電源供應器拔下電源線。
++
+電源供應器沒有電源開關。
+
+. 移除故障的電源供應器：
++
+.. 將CAM握把旋轉至其開啟（水平）位置、然後加以抓住。
+.. 用您的姆指按下藍色彈片以釋放鎖定機制。
+.. 將電源供應器從NSM模組中拉出、同時用另一隻手支撐其重量。
+
+
+. 插入替換的電源供應器：
++
+.. 用兩隻手支撐電源供應器的邊緣、並將其與NSM模組的開孔對齊。
+.. 將電源供應器輕推入NSM模組、直到鎖定機制卡入定位。
++
+
+NOTE: 請勿過度施力、否則可能會損壞內部接頭。
+
+.. 將CAM握把旋轉至閉模位置。
+
+
+. 將電源線連接至電源供應器、並使用電源線固定器固定電源線。
++
+當電源供應器正常運作時、雙色LED會亮起綠燈。
+
+

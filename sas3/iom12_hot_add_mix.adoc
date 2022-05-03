@@ -1,0 +1,653 @@
+---
+permalink: sas3/iom12-hot-add-mix.html 
+sidebar: sidebar 
+keywords: addional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 sheles to a stack of iom6 shelves 
+summary: 如果需要額外的儲存設備、您可以將IOM12磁碟櫃（含IOM12模組的SAS磁碟櫃）熱新增至IOM6磁碟櫃堆疊（含IOM6模組的SAS磁碟櫃）、表示您可以混合堆疊。 
+---
+= 將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要額外的儲存設備、您可以將IOM12磁碟櫃（含IOM12模組的SAS磁碟櫃）熱新增至IOM6磁碟櫃堆疊（含IOM6模組的SAS磁碟櫃）、表示您可以混合堆疊。
+
+
+
+== 熱新增需求
+
+[role="lead"]
+在MetroCluster 將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您的HA配對、單一控制器或延伸功能不全組態（系統）必須符合特定需求。
+
+
+NOTE: 如需橋接式MetroCluster 附加的功能、請參閱 <<Requirements for a hot-add in bridge-attached MetroCluster configurations>>。
+
+* 您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6層架和IOM12層架。
++
+您可以使用下列其中一種方法來驗證支援：
+
++
+** 在任一控制器的admin提示字元中輸入「run local sysconfig」命令。
++
+如果SAS2/SAS3「混合堆疊支援」欄位未出現在輸出中或值為「無」、表示您的系統不支援混合堆疊。
+
++
+如果「SAS2/SAS3混合堆疊支援」欄位中出現其他項目、例如「全部」或「連接橋接」、則您的系統確實支援混合堆疊。
+
+** 移至Hardware Universe 「不完整」並瀏覽至您的平台資訊。
++
+https://hwu.netapp.com["NetApp Hardware Universe"]
+
+
+
+* 如果您要將機櫃新增MetroCluster 至某個架構、則組態必須符合MetroCluster 《安裝與組態指南》中的所有要求。
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-ip/home.html["《英文網頁IP安裝與組態指南》MetroCluster"]
+
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-stretch/home.html["《》《9 Stretch《安裝與組態指南》ONTAP MetroCluster"]
+
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-fabric/home.html["《支援架構的不完整安裝與組態指南》（英文）ONTAP MetroCluster"]
+
+* IOM6磁碟櫃堆疊（您要將IOM12磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。
++
+混合堆疊不支援SAS光纖纜線。
+
++
+
+NOTE: 如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新增IOM12機櫃。請聯絡您的NetApp銷售代表。
+
+* 您的系統必須少於支援的磁碟機數量上限、至少必須少於您要熱新增的IOM12磁碟櫃中能夠安裝的磁碟機數量。
++
+在熱新增IOM12磁碟櫃之後、您無法超過系統支援的磁碟機數量上限。
+
++
+https://hwu.netapp.com["NetApp Hardware Universe"]
+
+* 您的系統無法顯示任何SAS纜線錯誤訊息。
++
+您必須使用錯誤訊息所提供的修正動作來修正任何纜線錯誤。
+
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+
+* 您必須訂購並接收IOM12磁碟櫃、以及適當數量和類型的SAS銅線。
++
+IOM12磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。
+
+
+
+
+
+== 橋接式MetroCluster 附加功能的需求
+
+[role="lead"]
+如果您要將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊、而IOM6磁碟櫃是以MetroCluster 一對Atto FibreBridge的方式以進行非二線組態連接、則系統必須符合特定需求。
+
+* 如果橋接SAS連接埠在目前組態中可用、您應該將IOM12磁碟櫃新增為個別堆疊。
++
+在堆疊中混合IOM12和IOM6模組之前、請先使用所有橋接連接埠。
+
+* 您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6層架和IOM12層架。
++
+您可以使用下列其中一種方法來驗證支援：
+
++
+** 在任一控制器的admin提示字元中輸入「run local sysconfig」命令。
++
+如果SAS2/SAS3「混合堆疊支援」欄位未出現在輸出中或值為「無」、表示您的系統不支援混合堆疊。
+
++
+如果「SAS2/SAS3混合堆疊支援」欄位中出現其他項目、例如「全部」或「連接橋接」、則您的系統確實支援混合堆疊。
+
+** 移至Hardware Universe 「不完整」並瀏覽至您的平台資訊。
++
+https://hwu.netapp.com["NetApp Hardware Universe"]
+
+
+
+* 組態必須符合MetroCluster 《不完整安裝與組態指南》中的所有要求。
++
+https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html["安裝及設定Stretch MetroCluster 的需求擴充組態"]
+
++
+https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["安裝及設定架構附加MetroCluster 的功能性更新組態"]
+
+* IOM6磁碟櫃堆疊（您要將IOM12磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。
++
+混合堆疊不支援SAS光纖纜線。
+
++
+
+NOTE: 如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新增IOM12機櫃。請聯絡您的NetApp銷售代表。
+
+* 您的組態必須少於橋接連接埠所支援的磁碟機數量上限。
+* 您必須訂購並接收IOM12磁碟櫃、以及適當數量和類型的SAS銅線。
++
+IOM12磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。
+
+* 橋接器必須執行3.16/4.16版及更新版本的韌體。
+
+
+
+
+== 熱新增的考量事項
+
+[role="lead"]
+在將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您應該先熟悉此程序的各個層面和最佳實務做法。
+
+
+
+=== 一般考量
+
+* 強烈建議您熱新增的IOM12磁碟櫃執行韌體版本0260或更新版本、然後再將其連接至系統。
++
+如果您將熱新增的磁碟櫃錯誤地連接至堆疊、則擁有支援版本的機櫃韌體可防止儲存堆疊存取問題。
+
++
+將IOM12磁碟櫃韌體下載到磁碟櫃之後、請在任一控制器的主控台輸入「shorage sherage show -module"命令、確認韌體版本為0260或更新版本。
+
+* 不支援不中斷的堆疊整合。
++
+您無法使用此程序來熱新增磁碟櫃、這些磁碟櫃在系統開機並提供資料（I/O進行中）時、會從同一個系統的其他堆疊熱移除。
+
+* 如果受影響的磁碟櫃有鏡射的集合體、您可以使用此程序、在同MetroCluster 一個作業系統中熱移除的熱新增磁碟櫃。
+* 連接好熱新增的機櫃之後ONTAP 、即可識別出機櫃：
++
+** 如果啟用自動磁碟機指派、則會指派磁碟機所有權。
+** 如有需要、機櫃（IOM）韌體和磁碟機韌體應會自動更新。
++
+
+NOTE: 韌體更新最多可能需要30分鐘。
+
+
+
+
+
+
+
+=== 最佳實務考量
+
+* *最佳實務做法：*最佳實務做法是在熱新增機櫃之前、先在系統上安裝最新版本的機櫃（IOM）韌體和磁碟機韌體。
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
+
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
+
+
+
+
+NOTE: 請勿將韌體還原至不支援機櫃及其元件的版本。
+
+* *最佳實務做法：*最佳實務做法是在熱新增機櫃之前、先安裝目前版本的磁碟認證套件（DQP）。
++
+安裝最新版的DQP可讓您的系統辨識及使用新的合格磁碟機。如此可避免系統事件訊息、因為無法辨識磁碟機、因此無法取得非最新的磁碟機資訊並防止磁碟分割。此外、DQP也會通知您非最新的磁碟機韌體。
+
++
+https://mysupport.netapp.com/NOW/download/tools/diskqual/["NetApp下載：磁碟認證套件"]
+
+* *最佳實務做法：*最佳實務做法是Active IQ Config Advisor 在熱新增機櫃之前和之後執行
++
+在Active IQ Config Advisor 熱新增機櫃之前執行功能支援提供現有SAS連線的快照、驗證機櫃（IOM）韌體版本、並可讓您驗證系統上已使用的機櫃ID。熱新增機櫃後執行Active IQ Config Advisor 的功能可讓您驗證機櫃的纜線是否正確、以及系統內的機櫃ID是否獨特。
+
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+
+* *最佳實務做法：*最佳實務做法是在您的系統上執行頻內ACP（IBACP）。
++
+** 對於執行IBAP的系統、IBACP會自動在熱新增的IOM12磁碟櫃上啟用。
+** 對於啟用頻外ACP的系統、IOM12磁碟櫃上不提供ACP功能。
++
+您應該移轉至IBACP、並移除頻外ACP纜線。
+
+** 如果您的系統未執行IBACP、且您的系統符合IBACP的要求、則您可以在熱新增IOM12機櫃之前、將系統移轉至IBACP。
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Systems/FAS_Systems/In-Band_ACP_Setup_and_Support["移轉至IBACP的說明"]
+
++
+
+NOTE: 移轉指示提供IBACP的系統需求。
+
+
+
+
+
+
+
+== 準備為熱新增手動指派磁碟機擁有權
+
+[role="lead"]
+如果您要手動指派熱新增IOM12磁碟櫃的磁碟機擁有權、則必須停用已啟用的自動磁碟機指派。
+
+您必須符合系統需求。
+
+<<Requirements for a hot-add>>
+
+<<Requirements for a hot-add in bridge-attached MetroCluster configurations>>
+
+如果您有HA配對、則當機櫃中的磁碟機將由兩個控制器模組擁有時、您必須手動指派磁碟機擁有權。
+
+.步驟
+. 驗證是否已啟用自動磁碟指派：「torage disk option show」
++
+如果您有HA配對、可以在任一控制器模組上輸入命令。
+
++
+如果啟用自動磁碟指派、輸出會在「Auto assign」（自動指派）欄中顯示「On」（開啟）（針對每個控制器模組）。
+
+. 如果已啟用自動磁碟指派、請停用此功能：「torage disk option modify -node_node_name_-autodassign Off」（磁碟選項修改-node_node_name_-autodassign Off）
++
+如果您有HA配對或雙節點MetroCluster 的功能不全、則必須停用兩個控制器模組上的自動磁碟機指派功能。
+
+
+
+
+
+== 安裝熱新增的磁碟櫃
+
+[role="lead"]
+對於您要熱新增的每個機櫃、您都可以將機櫃安裝到機架、連接電源線、開啟機櫃電源、以及設定機櫃ID。
+
+. 使用套件隨附的安裝說明來安裝磁碟櫃隨附的機架安裝套件（適用於兩柱式或四柱式機架安裝）。
++
+[NOTE]
+====
+如果您要安裝多個磁碟櫃、則應從底部安裝至機架頂端、以獲得最佳的穩定性。
+
+====
++
+[CAUTION]
+====
+請勿將磁碟櫃疊裝到電信型機架中、因為磁碟櫃的重量可能會導致磁碟櫃在機架中以自己的重量收起。
+
+====
+. 使用套件隨附的安裝傳單、將磁碟櫃安裝並固定在支撐托架和機架上。
++
+若要使磁碟櫃更輕、更容易操作、請移除電源供應器和I/O模組（IOM）。
+
++
+對於DS460C磁碟櫃、您也可以使用磁碟櫃隨附的四個可拆式握把。將握把往上推、直到卡入定位、即可安裝（機箱兩側各兩個）。將磁碟櫃滑到軌道上時、請使用指旋栓拆下握把。
+
++
+如果您要移動滿載的DS460C磁碟櫃、建議您使用機械式起重設備或起重設備。
+
++
+
+NOTE: 全負載的DS460C磁碟櫃重量約為247磅（112公斤）。
+
++
+image::../media/drw_ds460c_handles.gif[DRW ds460c控點]
+
+. 如果您要安裝DS460C磁碟櫃、請將元件安裝到機架磁碟櫃中；否則、請執行下一步。
++
+如果您購買的磁碟櫃中、每個磁碟機插槽中都沒有磁碟機、則必須確保：
+
++
+** 前四個插槽（0、3、6和9）會在每個藥櫃中佔用。
++
+如此可確保磁碟櫃中的通風良好。
+
+** 在具有30個磁碟機的磁碟櫃中、其餘10個磁碟機會平均分佈在每個磁碟櫃的插槽1和10中。
++
+下圖顯示磁碟機如何在磁碟櫃內的每個磁碟機匣中編號0至11。插槽0、3、6、9及 在包含30個磁碟機的機櫃中、每個抽屜的插槽1和10必須包含磁碟機。
+
+
+
++
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[具備HDD標註的Dwgt Trap抽屜]
+
++
+.. 在將磁碟櫃安裝到機架之前、請先重新安裝您移除的所有電源供應器和IOM。
+.. 打開機櫃的頂端抽屜。
+.. 將磁碟機上的CAM握把垂直提起。
+.. 將磁碟機承載器兩側的兩個凸起按鈕對齊磁碟機承載器上磁碟機通道的對應間隙。
++
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[28圖e2860 de460c磁碟機CRU]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+| 磁碟機承載器右側的凸起按鈕 
+|===
+.. 垂直放下磁碟機、然後向下轉動CAM握把、直到磁碟機卡入橘色釋放栓鎖下方。
+.. 針對藥櫃中的每個磁碟機重複上述子步驟。
++
+您必須確定每個藥櫃中的插槽0、3、6和9均包含磁碟機。
+
+.. 小心地將磁碟機抽屜推回機箱。
++
+|===
+
+
+ a| 
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif[""]
+
+
+
+ a| 
+
+CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜、以避免抽屜震動、並造成儲存陣列損壞。
+
+|===
+.. 將兩個拉桿推向中央、以關閉磁碟機抽取器。
+.. 對磁碟櫃中的每個藥櫃重複這些步驟。
+
+
+. 如果您要新增多個磁碟櫃、請針對您要安裝的每個磁碟櫃重複上述步驟。
+. 連接每個磁碟櫃的電源供應器：
++
+.. 先將電源線連接至磁碟櫃、使用電源線固定器將電源線固定到位、然後將電源線連接至不同的電源供應器、以獲得恢復能力。
+.. 開啟每個磁碟櫃的電源供應器、並等待磁碟機加速運轉。
+
+
+. 設定您要熱新增至HA配對或單一控制器組態中唯一ID的每個機櫃的機櫃ID。
++
+有效的機櫃ID為00至99。建議您設定機櫃ID、以便IOM6機櫃使用較低的數字（1 - 9）、IOM12機櫃使用較高的數字（10個以上）。
+
++
+如果您的平台模式具有內建儲存設備、則機櫃ID必須在內部機櫃和外部附加機櫃之間是唯一的。建議您將內部機櫃設為0。在靜態IP組態中、只會套用外部機櫃名稱、因此機櫃名稱不需要是唯一的。MetroCluster
+
++
+.. 如有需要、請執行Active IQ Config Advisor 功能以驗證已在使用中的機櫃ID。
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+
++
+您也可以執行「shorage sh家show -Fields sh家ID」命令、查看系統中已使用的機櫃ID清單（如果有的話、也可以複製）。
+
+.. 存取左端蓋後方的機櫃ID按鈕。
+.. 按住橘色按鈕、直到數位顯示器上的第一個數字開始閃爍、最多需要三秒鐘、即可變更機櫃ID的第一個數字。
+.. 按下按鈕以前進該號碼、直到達到所需的號碼為止。
+.. 針對第二個數字重複執行子步驟c和d。
+.. 按住按鈕、直到第二個數字停止閃爍為止、結束程式設定模式、最多可能需要三秒鐘的時間。
+.. 關閉機櫃電源後再開啟、使機櫃ID生效。
++
+您必須關閉兩個電源開關、等待10秒、然後重新開啟、才能完成電源循環。
+
+.. 針對您要熱新增的每個機櫃、重複執行步驟b到g。
+
+
+
+
+
+
+== 熱插拔的纜線架
+
+[role="lead"]
+如何將IOM12機櫃連接至IOM6機櫃堆疊、取決於IOM12機櫃是否為初始IOM12機櫃、亦即堆疊中沒有其他IOM12機櫃、 或是現有混合堆疊的額外IOM12層、表示堆疊中已存在一個或多個IOM12層架。這也取決於堆疊是否具有多重路徑HA、多重路徑、單一路徑HA或單一路徑連線。
+
+.開始之前
+* 您必須符合系統需求。
++
+<<Requirements for a hot-add>>
+
+* 如果適用、您必須完成準備程序。
++
+<<Prepare to manually assign drive ownership for a hot-add>>
+
+* 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
++
+<<Install shelves for a hot-add>>
+
+
+
+.關於這項工作
+* 您總是將IOM12磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、以維持堆疊內的單一速度轉換。
++
+將IOM12磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、IOM6磁碟櫃仍會群組在一起、IOM12磁碟櫃仍會群組在一起、以便在兩個磁碟櫃群組之間進行單一速度轉換。
+
++
+例如：
+
++
+** 在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12磁碟櫃的單一速度轉換會描述為：
++
+ Controller <-> IOM6 <-> IOM6 <---> IOM12 <-> IOM12 <-> Controller
+** 在與內建IOM12E儲存設備的HA配對中、堆疊內有兩個IOM12磁碟櫃和兩個IOM6磁碟櫃的單一速度轉換說明如下：
++
+ IOM12E 0b <-> IOM12 <-> IOM12 <---> IOM6 <-> IOM6 <-> IOM12E 0a
++
+內建儲存連接埠0b是內部儲存設備（擴充器）的連接埠、因為它連接到熱新增的IOM12機櫃（堆疊中的最後一個機櫃）、IOM12機櫃群組會一起保存、並透過堆疊和內建IOM12E儲存設備維持單一轉換。
+
+
+
+* 混合堆疊只支援單一速度轉換。您無法進行額外的速度轉換。例如、您無法在堆疊中進行兩種速度轉換、其描述如下：
++
+ Controller <-> IOM6 <-> IOM6 <---> IOM12 <-> IOM12 <---> IOM6 <-> Controller
+* 您可以將IOM6磁碟櫃熱新增至混合式堆疊。不過、您必須將IOM6磁碟櫃（現有IOM6磁碟櫃群組）熱新增至堆疊側邊、以維持堆疊中的單一速度轉換。
+* 您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。
++
+
+NOTE: 在這個組態中、您無法使用IOM B路徑。MetroCluster
+
+* 初始IOM12機櫃（IOM12機櫃連接至邏輯上最後一個IOM6機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。
+* SAS纜線連接器採用鎖定式設計；若方向正確放入SAS連接埠、連接器會卡入定位。
++
+如果是磁碟櫃、請插入SAS纜線連接器、拉片朝下（位於連接器底部）。對於控制器、SAS連接埠的方向可能會因平台機型而異、因此SAS纜線連接器的正確方向會有所不同。
+
+* 您可以參考下圖、將IOM12磁碟櫃連接至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。
++
+此圖例僅適用於具有多重路徑HA連線功能的堆疊、不過、纜線概念可套用至具有多重路徑、單一路徑HA、單一路徑連線及延伸MetroCluster 性等組態的堆疊。
+
++
+image::../media/drw_sas2_sas3_mixed_stack.png[DRW SAS2 SAS3混合堆疊]
+
+* 您可以參考下圖、將IOM12磁碟櫃連接至IOM6磁碟櫃堆疊、並採用橋接式MetroCluster 附加功能的功能。 image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png[""]
+
+
+.步驟
+. 實體識別堆疊中的最後一個邏輯磁碟櫃。
++
+根據您的平台模式和堆疊連線能力（多重路徑HA、多重路徑、單一路徑HA或單一路徑）、邏輯的最後一個機櫃是控制器SAS連接埠B和D的控制器對堆疊連線、 或是沒有任何控制器連線的機櫃（因為控制器對堆疊連線是透過控制器SAS連接埠A和C連至堆疊的邏輯頂端）。
+
+. 如果您要熱新增的IOM12機櫃是IOM12機櫃的初始新增至IOM6堆疊、表示IOM6機櫃堆疊中沒有其他IOM12機櫃、請完成適用的子步驟。
++
+否則、請前往步驟3。
+
++
+[cols="2*"]
+|===
+| 如果您的IOM6堆疊連線功能是... | 然後... 
+
+
+ a| 
+多重路徑HA或多重路徑、或單一路徑HA、並可將控制器連線至邏輯最後一個機櫃（包括彈性MetroCluster 的等位組態）
+ a| 
+.. 從最後一個IOM6機櫃IOM上拔下控制器對堆疊纜線、將圓形連接埠連接至控制器或橋接器。
++
+記下控制器連接埠。
+
++
+將纜線放在一邊。不再需要。
+
++
+否則、請前往子步驟e...
+
+.. 將最後一個IOM6機櫃IOM與新IOM12機櫃IOM A連接埠（從子步驟A）之間的機櫃對機櫃連線纜線連接至新的IOM12機櫃IOM A連接埠1。
++
+使用SAS銅線QSFP-to Mini-SAS HD纜線。
+
+.. 如果您要熱新增另一個IOM12機櫃、請將IOM12機櫃IOM A連接埠3、剛連接纜線的機櫃連接至機櫃連接線、以及下一個IOM12機櫃IOM A連接埠1纜線。
++
+使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。
+
++
+否則、請前往下一個子步驟。
+
+.. 將控制器或橋接器（位於子步驟A）上的相同連接埠纜線連接至新的最後一個IOM12機櫃IOM A連接埠3、藉此重新建立控制器對堆疊連線。
++
+視控制器上的連接埠類型而定、使用SAS銅線QSFP-to Mini-SAS HD纜線或Mini-SAS HD對Mini-SAS HD纜線。
+
+.. 針對IOM B重複執行步驟A到d
++
+否則、請前往步驟4。
+
+
+
+
+
+ a| 
+橋接式連線功能、MetroCluster 採用一套功能性的架構
+ a| 
+.. 從最後一個IOM6機櫃IOM的圓形連接埠拔下底部橋接至堆疊的纜線。
++
+記下橋接連接埠。
+
++
+將纜線放在一邊。不再需要。
+
++
+否則、請前往子步驟e...
+
+.. 將最後一個IOM6機櫃IOM與新IOM12機櫃IOM A連接埠（從子步驟A）之間的機櫃對機櫃連線纜線連接至新的IOM12機櫃IOM A連接埠1。
++
+使用SAS銅線QSFP-to Mini-SAS HD纜線。
+
+.. 如果您要熱新增另一個IOM12機櫃、請將IOM12機櫃IOM A連接埠3、剛連接纜線的機櫃連接至機櫃連接線、以及下一個IOM12機櫃IOM A連接埠1纜線。
++
+使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。
+
++
+否則、請前往下一個子步驟。
+
+.. 重複執行步驟b和c、以纜線連接IOM B的機櫃對機櫃連線
+.. 將橋接器上的相同連接埠（位於子步驟A）纜線連接至新的最後IOM12機櫃IOM A連接埠3、藉此重新建立底部橋接至堆疊的連線。
++
+視控制器上的連接埠類型而定、使用SAS銅線QSFP-to Mini-SAS HD纜線或Mini-SAS HD對Mini-SAS HD纜線。
+
+.. 前往步驟4。
+
+
+
+
+ a| 
+單一路徑HA或單一路徑、且沒有控制器連線至邏輯最後一個機櫃
+ a| 
+.. 將最後一個IOM6機櫃IOM A回轉連接埠與新IOM12機櫃IOM A連接埠之間的機櫃對機櫃連接線纜1。
++
+使用SAS銅線QSFP-to Mini-SAS HD纜線。
+
+.. 針對IOM B重複上述子步驟
+.. 如果您要熱新增另一個IOM12機櫃、請重複執行子步驟a和b
++
+否則、請前往步驟4。
+
+
+
+|===
+. 如果您要熱新增的IOM12磁碟櫃是現有混合式堆疊的額外IOM12磁碟櫃、表示堆疊中已存在一個或多個IOM12磁碟櫃、請完成適用的子步驟。
++
+[cols="2*"]
+|===
+| 如果您的混合堆疊連線是... | 然後... 
+
+
+ a| 
+多重路徑HA或多重路徑、或是單一路徑HA、可將控制器連線至邏輯最後一個機櫃、或MetroCluster 是以整合式架構組態連接橋接式連線
+ a| 
+.. 將控制器對堆疊纜線從最後一個IOM12機櫃IOM A連接埠3移至新最後一個IOM12機櫃上的相同連接埠。
+.. 如果您要熱新增一個IOM12機櫃、請將舊最後一個IOM12機櫃IOM A連接埠3與新的最後一個IOM12機櫃IOM A連接埠1的機櫃對機櫃連接纜線。
++
+使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。
+
++
+否則、請前往下一個子步驟。
+
+.. 如果您要熱新增多個IOM12機櫃、請將舊的上一個IOM12機櫃IOM A連接埠3和下一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線、然後針對任何其他IOM12機櫃重複此步驟。
++
+使用額外的SAS銅線Mini-SAS HD對Mini-SAS HD纜線。
+
++
+否則、請前往下一個子步驟。
+
+.. 針對IOM B重複執行子步驟a到c
++
+否則、請前往步驟4。
+
+
+
+
+
+ a| 
+橋接式連線功能、MetroCluster 採用一套功能性的架構
+ a| 
+.. 將底部的橋接至堆疊纜線從舊的上一個IOM12機櫃移至新的最後一個IOM12機櫃上的相同連接埠。
+.. 將舊的上一個IOM12機櫃IOM A連接埠3和下一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜、然後對任何其他IOM12機櫃重複此步驟。
++
+使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。
+
+.. 將舊的上一個IOM12機櫃IOM B連接埠3和下一個IOM12機櫃IOM B連接埠1之間的機櫃對機櫃連接線纜、然後對任何其他IOM12機櫃重複此步驟。
+.. 前往步驟4。
+
+
+
+
+ a| 
+單一路徑HA或單一路徑、且沒有控制器連線至邏輯最後一個機櫃
+ a| 
+.. 將最後一個IOM12機櫃IOM A連接埠3與最後一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜。
++
+使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。
+
+.. 針對IOM B重複上述子步驟
+.. 如果您要熱新增另一個IOM12機櫃、請重複執行子步驟a和b
++
+否則、請前往步驟4。
+
+
+
+|===
+. 驗證SAS連線是否正確。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+
+. 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
++
+否則、您將完成此程序。
+
++
+<<Complete the hot-add>>
+
++
+
+NOTE: 所有MetroCluster 的支援組態都需要手動指派磁碟機。
+
+
+
+
+
+== 完成熱新增
+
+[role="lead"]
+如果您在準備將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。
+
+您必須依照系統的指示、將機櫃連接好纜線。
+
+<<Cable shelves for a hot-add>>
+
+.步驟
+. 顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」
++
+如果您有HA配對、可以在任一控制器模組上輸入命令。
+
+. 指派每個磁碟機：「torage disk assign -disk _disk_name_-Owner_name_」
++
+如果您有HA配對、可以在任一控制器模組上輸入命令。
+
++
+您可以使用萬用字元一次指派多個磁碟機。
+
+. 如有需要、請重新啟用自動磁碟指派：「儲存磁碟選項修改節點節點節點名稱_-autodassign on」
++
+如果您有HA配對、則必須在兩個控制器模組上重新啟用自動磁碟機指派。
+
+

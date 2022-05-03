@@ -1,0 +1,35 @@
+= 
+:allow-uri-read: 
+
+
+. [[auto_check_4_step17]在自動開機期間按下「Ctrl-C」、即可在「loader>」提示字元下停止節點。
+. 在載入程式提示下、進入維護模式：
++
+Boot_ONTAP maint
+
+. 在維護模式中、顯示所有先前設定的啟動器連接埠、這些連接埠現在都處於目標模式：
++
+「ucadmin show」
+
++
+將連接埠改回啟動器模式：
+
++
+「ucadmin modify -m fs -t initiator -f <介面卡名稱>」
+
+. 確認連接埠已變更為啟動器模式：
++
+「ucadmin show」
+
+. 結束維護模式：
++
+《停止》
+
+. [[auto_check_4_step22]在載入程式提示下開機：
++
+Boot_ONTAP
+
++
+現在、在開機時、節點可以偵測先前指派給它的所有磁碟、並可依預期開機。
+
+

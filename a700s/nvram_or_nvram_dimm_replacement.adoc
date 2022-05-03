@@ -1,0 +1,400 @@
+---
+permalink: a700s/nvram-or-nvram-dimm-replacement.html 
+sidebar: sidebar 
+keywords: aff a700s, aff, a700s, replace, fail, nvram, card, remove, riser, controller, module, system, id, nvram, dimm, shut, down, reassign, disk, restore, encryption, functionality, complete, replacement, process, replace the nvram module and/or nvram dimms, shut down the impaired controller, shut down the impaired controller, remove the controller module, remove the nvram card, reinstall the controller module and booting the system, reassign disks, restore storage and volume encryption functionality, complete the replacement process 
+summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVRAM擴充卡（擴充卡1）、從擴充卡中移除故障的擴充卡、在擴充卡中安裝新的NVRAM卡、然後將擴充卡重新安裝到控制器模組中。由於系統ID是從NVRAM卡衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派給新的系統ID。 
+---
+= 更換NVRAM模組和NVRAM DIMM AFF -《非洲之旅》（《非洲之旅》、《非洲之旅》）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要更換故障的NVRAM卡、您必須從控制器模組中移除NVRAM擴充卡（擴充卡1）、從擴充卡中移除故障的擴充卡、在擴充卡中安裝新的NVRAM卡、然後將擴充卡重新安裝到控制器模組中。由於系統ID是從NVRAM卡衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派給新的系統ID。
+
+.開始之前
+* 所有磁碟櫃都必須正常運作。
+* 如果您的系統是HA配對、則合作夥伴控制器必須能夠接管與要更換的NVRAM模組相關的控制器。
+* 本程序使用下列術語：
++
+** _減損_控制器是您要執行維護的控制器。
+** _Healthy控制器是受損控制器的HA合作夥伴。
+
+
+* 此程序包括自動或手動將磁碟重新指派給與新NVRAM模組相關聯的控制器模組的步驟。您必須依照程序中的指示重新指派磁碟。在恢復之前完成磁碟重新指派可能會造成問題。
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 在此程序中、您無法變更任何磁碟或磁碟櫃。
+
+
+
+
+== 關閉受損的控制器
+
+[role="lead"]
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
++
+** 如果您使用NetApp儲存加密、則必須依照《NetApp ONTAP 加密電源指南》_的「將SED恢復為未受保護模式」一節中的指示、重設MSID。
++
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]
+
+
+
+
+
+
+
+== 卸下控制器模組
+
+[role="lead"]
+更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
+
+. 如果您尚未接地、請正確接地。
+. 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
++
+將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。
+
+. 從來源拔下控制器模組電源供應器、然後從電源供應器拔下纜線。
+. 從控制器模組中取出纜線管理裝置、然後將其放在一旁。
+. 向下按兩個鎖定栓、然後同時向下轉動兩個鎖條。
++
+控制器模組會稍微移出機箱。
+
++
+image::../media/drw_a700s_pcm_remove.png[DRW a700s PCM移除]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+鎖定鎖定
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+鎖定銷
+
+|===
+. 將控制器模組滑出機箱。
++
+將控制器模組滑出機箱時、請確定您支援控制器模組的底部。
+
+. 將控制器模組放在穩固、平坦的表面上、然後打開通風管：
++
+.. 將通風管側邊的鎖定彈片往控制器模組中央壓下。
+.. 將通風管滑向風扇模組、然後將其向上旋轉至完全開啟的位置。
++
+image::../media/drw_a700s_open_air_duct.png[DRW a700s開放式通風管]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+通風管鎖定翼片
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+擴充卡
+
+
+
+ a| 
+image:../media/legend_icon_03.png[""]
+ a| 
+通風管
+
+|===
+
+
+
+
+
+
+== 取出NVRAM卡
+
+[role="lead"]
+裝回NVRAM包括從控制器模組中卸下NVRAM擴充卡、擴充卡1、從NVRAM卡拔下NVRAM電池、移除故障的NVRAM卡並安裝替換的NVRAM擴充卡、然後將NVRAM擴充卡重新安裝回控制器模組。
+
+. 如果您尚未接地、請正確接地。
+. 從控制器模組中移除NVRAM擴充卡（擴充卡1）：
++
+.. 向上轉動提升板左側的提升板鎖定栓、並朝風扇方向轉動。
++
+NVRAM提升卡從控制器模組稍微向上提升。
+
+.. 向上提起NVRAM提升板、將其移向風扇、使提升板上的金屬片凸起脫離控制器模組邊緣、將提升板從控制器模組中垂直提起、 然後將其放在穩固的平面上、以便存取NVRAM卡。
++
+image::../media/drw_a700s_nvme_replace.png[以DRW a700s NVMe取代]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+通風管
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+擴充卡1鎖定鎖定
+
+
+
+ a| 
+image:../media/legend_icon_03.png[""]
+ a| 
+NVRAM電池纜線插頭連接至NVRAM卡
+
+
+
+ a| 
+image:../media/legend_icon_04.png[""]
+ a| 
+插卡鎖定支架
+
+
+
+ a| 
+image:../media/legend_icon_05.png[""]
+ a| 
+NVRAM卡
+
+|===
+
+
+. 從提升板模組中取出NVRAM卡：
++
+.. 轉動提升模組、以便存取NVRAM卡。
+.. 拔下NVRAM卡上的NVRAM電池纜線。
+.. 按下NVRAM擴充卡側邊的鎖定支架、然後將其旋轉至開啟位置。
+.. 從提升板模組中取出NVRAM卡。
+
+
+. 將NVRAM卡安裝到NVRAM擴充卡：
++
+.. 將擴充卡與擴充卡模組上的擴充卡導軌和擴充卡中的插卡插槽對齊。
+.. 將插卡正面滑入插卡插槽。
++
+
+NOTE: 請確定插卡完全且正面地插入擴充卡插槽。
+
+.. 將電池纜線連接至NVRAM卡上的插槽。
+.. 將鎖定栓轉到鎖定位置、並確定鎖定到位。
+
+
+. 將擴充卡安裝至控制器模組：
++
+.. 將擴充卡的邊緣對齊控制器模組的底部金屬板。
+.. 沿控制器模組的插腳引導擴充卡、然後將擴充卡降低至控制器模組。
+.. 向下轉動鎖定栓、然後將其卡入鎖定位置。
++
+鎖定時、鎖定栓會與擴充卡的頂端齊平、而擴充卡則會正面置於控制器模組中。
+
+.. 重新插入從PCIe卡中移除的任何SFP模組。
+
+
+
+
+
+
+== 重新安裝控制器模組並啟動系統
+
+[role="lead"]
+在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。
+
+對於同一機箱中有兩個控制器模組的HA配對、安裝控制器模組的順序特別重要、因為當您將控制器模組完全裝入機箱時、它會嘗試重新開機。
+
+. 如果您尚未接地、請正確接地。
+. 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
++
+
+NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
+
+. 視需要重新安裝系統。
++
+如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖纜線時重新安裝。
+
+. 將電源線插入電源供應器、重新安裝電源線鎖環、然後將電源供應器連接至電源。
+. 完成控制器模組的重新安裝：
++
+.. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
+.. 將控制器模組穩固地推入機箱、直到它與中間板完全接入。
++
+控制器模組完全就位時、鎖定鎖條會上升。
+
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
++
+控制器模組一旦完全插入機箱、就會開始開機。準備好中斷開機程序。
+
+.. 向上轉動鎖定栓、將其傾斜、使其從鎖定銷中取出、然後將其放低至鎖定位置。
+.. 當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」時、請按「Ctrl-C」來中斷開機程序。
+.. 從顯示的功能表中選取要開機至維護模式的選項。
+
+
+
+
+
+
+== 驗證HA系統上的系統ID變更
+
+[role="lead"]
+您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。
+
+此程序僅適用於ONTAP HA配對中執行的系統。
+
+. 如果_replaced_控制器處於維護模式（顯示"*>"提示符）、請退出維護模式並進入載入器提示："half"（停止）
+. 在_replace_控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」
+. 請等到_replace_控制器主控台顯示「waiting for恢復...（正在等待恢復...）」訊息、然後從健全的控制器驗證是否已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」
++
+在命令輸出中、您應該會看到一則訊息、指出受損控制器上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
+
++
+[listing]
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 從健全的控制器、確認已儲存任何核心傾印：
++
+.. 變更為進階權限等級：「et -priv榮幸 進階」
++
+當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
+
+.. 儲存任何核心傾印：「系統節點執行節點_nocal-node-name_合作夥伴儲存資源」
+.. 在發出恢復之前、請等待「命令」完成。
++
+您可以輸入下列命令來監控savecore命令的進度：「ystem節點run -node-node-name_合作夥伴savecore -ss」
+
+.. 返回管理員權限等級：「et -priv. admin」
+
+
+. 退回控制器：
++
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
++
+_replacement控制器會恢復其儲存設備並完成開機。
+
++
+如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
+
+.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
++
+「儲存容錯移轉show」命令的輸出不應包含在合作夥伴訊息中變更的系統ID。
+
+
+
+. 驗證是否已正確分配磁碟：「torage disk show -所有權」
++
+屬於_replaced_控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：
+
++
+[listing]
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
+
+
+
+
+== 還原儲存設備與Volume Encryption功能
+
+[role="lead"]
+針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
+
+.步驟
+. 使用中的適當程序還原儲存設備或Volume Encryption功能 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"]。
+. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"]
+
+
+
+
+
+
+== 將故障零件歸還給NetApp
+
+[role="lead"]
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

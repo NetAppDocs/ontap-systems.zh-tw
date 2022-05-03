@@ -1,0 +1,72 @@
+---
+section: c190
+title: C190系統AFF
+url: "/c190/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定AFF
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/c190/install-setup.html"
+  - title: 快速步驟
+    url: "/c190/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/c190/install-videos.html"
+  - title: 詳細步驟
+    url: "/c190/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: C190維護AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: C190開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/c190/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/c190/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/c190/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/c190/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/c190/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/c190/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/c190/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: C190機箱AFF
+    entries:
+    - title: 總覽
+      url: "/c190/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/c190/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/c190/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/c190/chassis-replace-complete-rma.html"
+  - title: 控制器
+    pdf-filename: HC190控制器模組AFF
+    entries:
+    - title: 總覽
+      url: "/c190/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/c190/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/c190/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/c190/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/c190/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/c190/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/c190/dimm-replace.html"
+  - title: 磁碟機
+    url: "/c190/drive-replace.html"
+  - title: NVMEM電池
+    url: "/c190/nvmem-nvram-battery-replace.html"
+  - title: 電源供應器
+    url: "/c190/power-supply-swap-out.html"
+  - title: 即時時鐘電池
+    url: "/c190/rtc-battery-replace.html"

@@ -1,0 +1,146 @@
+= 
+:allow-uri-read: 
+
+
+若要確保設定正確、您必須啟用HA配對。您也必須驗證node3和node4是否可以存取彼此的儲存設備、以及它們是否擁有屬於叢集上其他節點的資料LIF。此外、您必須確保node3擁有node1的Aggregate、而node4擁有node2的Aggregate、而且兩個節點的磁碟區都處於線上狀態。
+
+.步驟
+. 在其中一個節點上輸入下列命令以啟用儲存容錯移轉：
++
+「torage容錯移轉修改啟用的true節點<node3>'」
+
+. 確認已啟用儲存容錯移轉：
++
+「容錯移轉顯示」
+
++
+下列範例顯示啟用儲存容錯移轉時命令的輸出：
+
++
+[listing]
+----
+cluster::> storage failover show
+                              Takeover
+Node           Partner        Possible State Description
+-------------- -------------- -------- ------------------
+node3          node4          true     Connected to node4
+node4          node3          true     Connected to node3
+----
+. 請採取下列其中一項行動：
++
+|===
+| 如果叢集是... | 說明 
+
+
+| 雙節點叢集 | 在任一節點上輸入下列命令、即可啟用叢集高可用度：「cluster ha modify -configured true」 
+
+
+| 具有兩個以上節點的叢集 | 前往 <<man_ensure_setup_Step4,步驟4.>>。 
+|===
+. [[man_ensure_setup_Step4]]輸入下列命令並檢查輸出、確認node3和node4屬於同一個叢集：
++
+「叢集展示」
+
+. 輸入下列命令並檢查輸出、確認node3和node4能夠存取彼此的儲存設備：
++
+「torage容錯移轉顯示欄位local-missing磁碟、合作夥伴遺失磁碟」
+
+. 輸入下列命令並檢查輸出、以確認節點3和節點4都不擁有叢集中其他節點所擁有的資料lifs主目錄：
++
+「網路介面展示」
+
++
+如果node3或node4擁有叢集中其他節點所擁有的資料lifs主目錄、請使用「network interface revert」命令、將資料lifs還原為其主目錄擁有者。
+
+. 驗證node3是否擁有node1的集合體、以及node4是否擁有node2的集合體：
++
+"torage Aggregate show -Owner-name <node3>'"scorage gregate show -Owner-name <node4>'
+
+. 判斷是否有任何磁碟區離線：
++
+Volume show -node<node3>-state offline（Volume show -node4>-state offline）
+
+. 如果有任何磁碟區離線、請將它們與您在中擷取的離線磁碟區清單進行比較 link:prepare_nodes_for_upgrade.html#step19d["步驟19（d）"] 在_準備要升級的節點_中、輸入下列命令（針對每個Volume一次）、並視需要將任何離線磁碟區上線：
++
+「Volume online -vserver <vserver_name>-volume <volume <volume．name>'
+
+. 為每個節點輸入下列命令、以安裝新節點的新授權：
++
+「系統授權新增-授權代碼<lite_code,liter_code,liter_code...>'
+
++
+授權代碼參數接受28個大寫字母字元金鑰的清單。您可以一次新增一個授權、也可以一次新增多個授權、每個授權金鑰都以逗號分隔。
+
+. 如果在組態中使用NetApp儲存加密（NSE）、您可以使用「kmip.init.maxwait` variable "Off"（在中）、將「setenv bootarg.storageEncryption.support"命令設為「true」（真） link:install_boot_node3.html#step16["步驟16"] 在_Install and boot node3_）中、您需要重設變數：「et diag」（設定診斷）；「systemShell節點」節點<node-name>-command Sudo kenv -u -p kmip.init.maxwait`
+. 若要從原始節點移除所有舊授權、請輸入下列其中一個命令：
++
+「系統授權清理-未使用的-過期」「系統授權刪除-序號<node_sSerial_number>-package<sited_package>」
+
++
+** 若要刪除所有過期的授權、請輸入：
++
+「系統授權清除-過期」
+
+** 若要刪除所有未使用的授權、請輸入：
++
+「系統授權清理-未使用」
+
+** 若要從叢集刪除特定授權、請在節點上輸入下列命令：
++
+「系統授權刪除-序號<節點1-serial序號>-package *」「系統授權刪除-序號<節點2-serial序號>-package *」
+
++
+將顯示下列輸出：
+
++
+[listing]
+----
+Warning: The following licenses will be removed:
+<list of each installed package>
+Do you want to continue? {y|n}: y
+----
++
+輸入「y」以移除所有套件。
+
+
+
+. 輸入下列命令並檢查其輸出、確認授權已正確安裝：
++
+「系統授權展示」
+
++
+您可能想要比較輸出與擷取的輸出 link:prepare_nodes_for_upgrade.html#step30["步驟30"] （_準備節點以進行升級_）。
+
+. 在兩個節點上執行下列命令來設定SP：
++
+「系統服務處理器網路修改節點<節點名稱>」
+
++
+前往 link:other_references.html["參考資料"] 如需SP和_SUR9 ONTAP 命令的相關資訊、請連結至_System Administration Reference（系統管理參考）：Manual Page Reference（手冊頁參考）_、以取得有關「系統服務-處理器網路修改」命令的詳細資訊。
+
+. 在其中一個新節點上執行下列動作：
++
+.. 輸入下列命令、輸入進階權限等級：
++
+"進階權限"
+
+.. 輸入下列命令：
++
+「儲存容錯移轉修改節點<節點名稱>-CIFS/NDA-duration預設值|中|低」
+
++
+*** 如果系統的工作負載達到50%至75%的作業量、則輸入「管理」。
+*** 如果系統的工作負載為75%至100%、則輸入「low」（低）、操作量為4 KB或更小。
+
+
+.. 輸入下列命令即可返回管理員層級：
++
+「et -priv. admin」
+
+.. 重新啟動系統以確保變更生效。
+
+
+. 如果您要在新節點上設定無交換器叢集、請前往 link:other_references.html["參考資料"] 若要連結至_網路支援站台_、請遵循_移轉至雙節點無交換器叢集_中的指示。
+
+
+如果節點3和節點4上已啟用儲存加密、請完成中的步驟 link:set_up_storage_encryption_new_controller.html["在新的控制器模組上設定儲存加密"]。否則、請完成中的步驟 link:decommission_old_system.html["取消委任舊系統"]。

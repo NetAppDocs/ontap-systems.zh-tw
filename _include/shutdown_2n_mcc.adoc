@@ -1,0 +1,95 @@
+= 
+:allow-uri-read: 
+
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["使用CLI進行NetApp加密總覽"^]。
+* 您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。
+
+
+.步驟
+. 檢查MetroCluster 「不正常」狀態、判斷受損的控制器是否已自動切換至「正常」控制器MetroCluster ：「不正常」
+. 視是否發生自動切換而定、請根據下表繼續進行：
++
+[cols="1,2"]
+|===
+| 如果控制器受損... | 然後... 
+
+
+ a| 
+已自動切換
+ a| 
+繼續下一步。
+
+
+
+ a| 
+尚未自動切換
+ a| 
+從健全的控制器執行計畫性的切換作業MetroCluster ：「『交換切換’」
+
+
+
+ a| 
+尚未自動切換、您嘗試使用MetroCluster 「還原切換」命令進行切換、切換遭到否決
+ a| 
+請檢閱否決訊息、如有可能、請解決此問題、然後再試一次。如果您無法解決問題、請聯絡技術支援部門。
+
+|===
+. 從MetroCluster 存續的叢集執行「f恢復 階段Aggregate」命令、以重新同步資料集合體。
++
+[listing]
+----
+controller_A_1::> metrocluster heal -phase aggregates
+[Job 130] Job succeeded: Heal Aggregates is successful.
+----
++
+如果治療被否決、您可以選擇MetroCluster 使用「-overre-etoes」參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。
+
+. 使用MetroCluster flexoperationshow命令確認作業已完成。
++
+[listing]
+----
+controller_A_1::> metrocluster operation show
+    Operation: heal-aggregates
+      State: successful
+Start Time: 7/25/2016 18:45:55
+   End Time: 7/25/2016 18:45:56
+     Errors: -
+----
+. 使用「shorage Aggregate show」命令來檢查集合體的狀態。
++
+[listing]
+----
+controller_A_1::> storage aggregate show
+Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
+--------- -------- --------- ----- ------- ------ ---------------- ------------
+...
+aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...
+----
+. 使用「MetroCluster f恢復 階段根集合體」命令來修復根集合體。
++
+[listing]
+----
+mcc1A::> metrocluster heal -phase root-aggregates
+[Job 137] Job succeeded: Heal Root Aggregates is successful
+----
++
+如果修復被否決、您可以選擇使用MetroCluster -overrover-etoes參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。
+
+. 在MetroCluster 目的地叢集上使用「停止作業show」命令、確認修復作業已完成：
++
+[listing]
+----
+
+mcc1A::> metrocluster operation show
+  Operation: heal-root-aggregates
+      State: successful
+ Start Time: 7/29/2016 20:54:41
+   End Time: 7/29/2016 20:54:42
+     Errors: -
+----
+. 在受損的控制器模組上、拔下電源供應器。
+

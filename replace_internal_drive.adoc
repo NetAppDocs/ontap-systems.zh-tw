@@ -1,0 +1,40 @@
+---
+permalink: a200/replace_internal_drive.html 
+sidebar: sidebar 
+keywords: AFF A200 
+summary: 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。 
+---
+= 更換故障磁碟機- AFF REVA200
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。
+
+.開始之前
+* 最佳實務做法是在熱交換磁碟機之前、先安裝目前版本的磁碟認證套件（DQP）。
+* 從系統主控台執行「shorage disk show -disf肯」命令、以識別故障的磁碟機。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。
+* 如何熱交換磁碟取決於磁碟機的使用方式。如果已啟用SED驗證、您必須使用中的SED替換指示 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]。這些指示說明更換SED之前和之後、您必須執行的其他步驟。
+* 替換磁碟機必須由您的平台支援。請參閱 https://hwu.netapp.com["NetApp Hardware Universe"]。
+* 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+磁碟機韌體會自動更新（不中斷營運）、以安裝非最新韌體版本的新磁碟機。
+
+更換多個磁碟機時、您必須在移除每個故障磁碟機和插入替換磁碟機之間等待一分鐘、以便儲存系統識別每個新磁碟的存在。
+
+[role="tabbed-block"]
+====
+.選項1：更換SSD
+--
+stdin>中的未解析指令-包括：..//_include/drive_hotswap_sas.adoc[]
+
+--
+.選項2：更換HDD
+--
+stdin>中的未解析指令-包括：..//_include/drive_hotswap_sas.adoc.adocon[]
+
+--
+====

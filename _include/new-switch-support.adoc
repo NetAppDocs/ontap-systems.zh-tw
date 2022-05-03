@@ -1,0 +1,59 @@
+= 
+:allow-uri-read: 
+
+
+[cols="25h,~,~"]
+|===
+| 交換器 | 說明 | 可用的開始 
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["36埠100 GbE Cisco交換器（X190200）"]
+ a| 
+在同一組Cisco Nexus 9336C-FX2交換器上支援共享基礎架構（叢集、HA和交換器附加儲存設備）、包括支援MetroCluster 不支援任何IP組態。
+ a| 
+部分9.9.1 ONTAP
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["36埠100 GbE Cisco交換器（X190200和X190210）"]
+ a| 
+Cisco Nexus 9336C-FX2叢集互連交換器與儲存交換器支援AFF/FAS控制器、以及前端資料連線。
+ a| 
+部分9.8 ONTAP
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["Broadcom BCS-53248交換器（X190005和X190005R）"]
+ a| 
+Broadcom BS-53248叢集互連交換器支援AFF/FAS控制器、具有40/100GbE連接埠。
+ a| 
+部分9.8 ONTAP
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["36埠100 GbE Cisco交換器（X190200）"] https://hwu.netapp.com/Switch/Index["32埠100 GbE Cisco交換器（X190100和X190100R）"]
+ a| 
+Cisco Nexus 100 GbE交換器可作為專用儲存交換器、將NS224 NVMe磁碟機櫃連接至下列平台：
+
+* 介紹A800/AFF的A800 AFF ASA
+* 介紹A700/AFF的功能AFF ASA
+* 介紹A400/AFF的功能AFF ASA
+* 解答320 AFF
+
+ a| 
+部分9.8 ONTAP
+
+
+
+ a| 
+https://hwu.netapp.com/Switch/Index["Broadcom BCS-53248交換器（X190005和X190005R）"]
+ a| 
+Broadcom BS-53248叢集互連交換器支援AFF/FAS控制器、具備10/25GbE連接埠。
+ a| 
+零點9.5P8 ONTAP
+
+|===

@@ -1,0 +1,96 @@
+= 
+:allow-uri-read: 
+
+
+若要淘汰節點2、您必須正確關閉節點2、然後將其從機架或機箱中移除。如果叢集位於SAN環境中、您也需要刪除SAN LIF。
+
+.步驟
+. 請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果叢集是... | 然後... 
+
+
+| 雙節點叢集 | 前往 <<man_retire_2_Step2,步驟2>>。 
+
+
+| 具有兩個以上節點的叢集 | 前往 <<man_retire_2_Step9,步驟9.>>。 
+|===
+. [[man_retar_2_Step2]]在任一節點上輸入下列命令、即可存取進階權限層級：
++
+"進階權限"
+
+. 輸入下列命令並檢查其輸出、確認叢集HA已停用：
++
+《叢集表演》
+
++
+系統會顯示下列訊息：
+
++
+[listing]
+----
+High Availability Configured: false
+----
+. 輸入下列命令並檢查其輸出、檢查node2目前是否保留epsilon：
++
+「叢集展示」
+
++
+以下範例顯示node2擁有epsilon：
+
++
+[listing]
+----
+cluster*::> cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------  -----------
+node1                true    true          false
+node2                true    true          true
+
+Warning: Cluster HA has not been configured. Cluster HA must be configured on a two-node cluster to ensure data access availability in the event of storage failover. Use the "cluster ha modify -configured true" command to configure cluster HA.
+
+2 entries were displayed.
+----
+. 如果node2保留epsilon、請在節點上將epsilon標記為「假」、以便傳輸至node3：
++
+「cluster modify -node2>-epsilon假」
+
+. 將epsilon傳輸到node3、在node3上標記epsilon「true（真））：
++
+「cluster modify -node3>-epsilon true」
+
+. 確認設定是否為雙節點無交換器叢集：
++
+「網路選項、無交換式叢集展示」
+
++
+[listing]
+----
+cluster::*> network options switchless-cluster show
+Enable Switchless Cluster: false/true
+----
++
+此命令的值必須符合系統的實體狀態。
+
+. 確認設定是否為雙節點無交換器叢集：
++
+「網路選項、無交換式叢集展示」
+
++
+[listing]
+----
+cluster::*> network options switchless-cluster show
+Enable Switchless Cluster: false/true
+----
++
+此命令的值必須符合系統的實體狀態。
+
+. [[man_retar_2_Step9]]返回管理層級：
++
+「et -priv. admin」
+
+. 在任一控制器上輸入下列命令、以停止節點2：「ystem nodem Node halt -node2>'（系統節點停止節點<node2>'）」
+. 節點2完全關機後、請將其從機箱或機架中移除。您可以在升級完成後取消委任節點2。請參閱 link:decommission_old_system.html["取消委任舊系統"]。
+

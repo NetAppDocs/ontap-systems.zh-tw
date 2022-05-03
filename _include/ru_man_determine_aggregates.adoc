@@ -1,0 +1,136 @@
+= 
+:allow-uri-read: 
+
+
+如果您要升級具有內部磁碟機的控制器、則需要完成數個命令並檢查其輸出、以確保內部磁碟機中沒有根集合體或資料集合體。
+
+如果您不想升級內部磁碟機上具有集合體的控制器、請跳過本節、移至一節 link:prepare_nodes_for_upgrade.html["準備節點以進行升級"]。
+
+.步驟
+. 輸入節點、每個原始節點輸入一次。
++
+「系統節點執行節點<node_name>」
+
+. 顯示內部磁碟機：
++
+"syssconfig -av"
+
++
+系統會顯示節點組態的詳細資訊、包括儲存設備、如下列範例所示的部分輸出所示：
+
++
+....
+
+node> sysconfig -av
+slot 0: SAS Host Adapter 0a (PMC-Sierra PM8001 rev. C, SAS, UP)
+                Firmware rev: 01.11.06.00
+                 Base WWN: 5:00a098:0008a3b:b0
+                 Phy State: [0] Enabled, 6.0 Gb/s
+                            [1] Enabled, 6.0 Gb/s
+                            [2] Enabled, 6.0 Gb/s
+                            [3] Enabled, 6.0 Gb/s
+                ID Vendor Model FW Size
+                00.0 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.1 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.2 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.3 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.4 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.5 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.6 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.7 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.8 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.9 : NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.10: NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+                00.11: NETAPP X306_HMARK02TSSM NA04 1695.4GB (3907029168 512B/sect)
+...
+....
+. 檢查'sysconfig -av'命令的儲存輸出以識別內部磁碟機、然後記錄資訊。
++
+內部磁碟機的ID開頭有「00」。「00」表示內部磁碟櫃、而小數位數後面的數字則表示個別磁碟機。
+
+. [[man_agger_step4]]在兩個控制器上輸入下列命令：
++
+「aggr狀態-r」
+
++
+系統會顯示節點的Aggregate狀態、如下列範例中的部分輸出所示：
+
++
+[listing]
+----
+node> aggr status -r
+Aggregate aggr2 (online, raid_dp, parity uninit'd!) (block checksums)
+Plex /aggr2/plex0 (online, normal, active)
+RAID group /aggr2/plex0/rg0 (normal, block checksums)
+
+RAID Disk Device    HA SHELF BAY CHAN Pool Type RPM  Used (MB/blks)     Phys (MB/blks)
+--------- --------- -- ----- --- ---- ---- ---- ---- ------------------ ------------------
+dparity   0a.00.1   0a   0    1  SA:B  0   BSAS 7200 1695466/3472315904 1695759/3472914816
+parity    0a.00.3   0a   0    3  SA:B  0   BSAS 7200 1695466/3472315904 1695759/3472914816
+data      0a.00.9   0a   0    9  SA:B  0   BSAS 7200 1695466/3472315904 1695759/3472914816
+...
+----
++
+
+NOTE: 用來建立集合體的裝置可能不是實體磁碟、而是分割區。
+
+. 檢查「aggr STATUS -r」命令的輸出、以使用內部磁碟機識別集合體、然後記錄資訊。
++
+在上一步的範例中、「aggr2」使用內部磁碟機、如「0」機櫃ID所示。
+
+. 在兩個控制器上輸入下列命令：
++
+「aggr STATUS -y」
+
++
+系統會顯示有關集合體上磁碟區的資訊、如下列範例中的部分輸出所示：
+
++
+....
+node> aggr status -v
+...
+ aggr2   online   raid_dp, aggr    nosnap=off, raidtype=raid_dp, raidsize=14,
+                  64-bit           raid_lost_write=on, ignore_inconsistent=off,
+                  rlw_on           snapmirrored=off, resyncsnaptime=60,
+                                   fs_size_fixed=off, lost_write_protect=on,
+                                   ha_policy=cfo, hybrid_enabled=off, percent_snapshot_space=0%,
+                                   free_space_realloc=off, raid_cv=on, thorough_scrub=off
+         Volumes: vol6, vol5, vol14
+...
+ aggr0   online   raid_dp, aggr    root, diskroot, nosnap=off, raidtype=raid_dp,
+                  64-bit           raidsize=14, raid_lost_write=on, ignore_inconsistent=off,
+                  rlw_on           snapmirrored=off,  resyncsnaptime=60, fs_size_fixed=off,
+                                   lost_write_protect=on, ha_policy=cfo, hybrid_enabled=off,
+                                   percent_snapshot_space=0%, free_space_realloc=off, raid_cv=on
+         Volumes: vol0
+....
++
+根據中的輸出 <<man_aggr_step4,步驟4.>> 第6步、aggr2使用三個內部磁碟機：「0a.00.1」、「0a.00.3」和「0a.00.9」、「aggr2」上的磁碟區為「vol6」、「vol5」和「vol14」。此外、在步驟6的輸出中、「aggr0」的讀出內容會在Aggregate資訊的開頭包含「root」一詞。這表示它包含根磁碟區。
+
+. 檢查「aggr STATUS -v」命令的輸出、找出屬於內部磁碟機上任何集合體的磁碟區、以及這些磁碟區中是否有任何包含根磁碟區。
+. 在每個控制器上輸入下列命令、以結束節點：
++
+「退出」
+
+. 請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果控制器 | 然後... 
+
+
+| 請勿在內部磁碟機上包含任何集合體 | 繼續執行此程序。 
+
+
+| 在內部磁碟機上包含集合體、但沒有磁碟區 | 繼續執行此程序。*附註*：在繼續之前、您必須先將集合體離線、然後銷毀內部磁碟機上的集合體。請參閱 link:other_references.html["參考資料"] 若要連結至_磁碟與Aggregate Power Guide_、以取得管理Aggregate的相關資訊。 
+
+
+| 在內部磁碟機上包含非根磁碟區 | 繼續執行此程序。*附註*：在繼續之前、您必須將磁碟區移至外部磁碟櫃、將集合體離線放置、然後銷毀內部磁碟機上的集合體。請參閱 link:other_references.html["參考資料"] 連結至_磁碟與Aggregate Power Guide_、以取得有關移動磁碟區的資訊。 
+
+
+| 在內部磁碟機上包含根磁碟區 | 請勿繼續執行此程序。您可以參考來升級控制器 link:other_references.html["參考資料"] 若要連結至_NetApp Support Site_、並使用下列程序來升級執行叢集Data ONTAP 式故障的一對節點上的控制器硬體：移動Volumes（磁碟區）。 
+
+
+| 在內部磁碟機上包含非根磁碟區、因此您無法將磁碟區移至外部儲存設備 | 請勿繼續執行此程序。您可以Data ONTAP 使用下列程序來升級控制器：移轉Volumes（磁碟區）、在執行叢集式的節點配對上升級控制器硬體。請參閱 link:other_references.html["參考資料"] 連結至_NetApp支援網站_、您可在此存取此程序。 
+|===
+

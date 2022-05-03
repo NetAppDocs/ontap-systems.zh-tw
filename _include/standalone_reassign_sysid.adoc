@@ -1,0 +1,55 @@
+= 
+:allow-uri-read: 
+
+
+在獨立式系統中、您必須手動將磁碟重新指派給新控制器的系統ID、才能將系統恢復正常運作。
+
+.關於這項工作
+
+NOTE: 此程序僅適用於獨立組態的系統。
+
+.步驟
+. 如果您尚未重新啟動_replaced_節點、請按Ctrl-C中斷開機程序、然後從顯示的功能表中選取開機至維護模式的選項。
+. 由於系統ID不相符、當系統提示您置換系統ID時、您必須輸入「Y」。
+. 查看系統ID："Disk show -A"
+. 您應該記下舊的系統ID、該ID會顯示為磁碟擁有者欄的一部分。
++
+以下範例顯示舊系統ID 118673209：
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK      OWNER                  POOL   SERIAL NUMBER  HOME
+--------    -------------          -----  -------------  -------------
+disk_name    system-1  (118073209)  Pool0  J8XJE9LC       system-1  (118073209)
+disk_name    system-1  (118073209)  Pool0  J8Y478RC       system-1  (118073209)
+.
+.
+.
+
+----
+. 使用從disk show命令中獲得的系統ID資訊重新指派磁碟擁有權：「磁碟重新指派- s舊系統ID磁碟重新指派- s 118673209」
+. 驗證是否正確分配了這些磁碟：「磁碟show -A」
++
+屬於替換節點的磁碟應顯示新的系統ID。以下範例現在顯示系統1擁有的磁碟、新的系統ID 118065481：
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK      OWNER                  POOL   SERIAL NUMBER  HOME
+--------    -------------          -----  -------------  -------------
+disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
+disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
+.
+.
+.
+
+----
+. 開機節點：「boot_ONTAP」
+

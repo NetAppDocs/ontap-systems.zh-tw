@@ -1,0 +1,64 @@
+---
+permalink: fas2600/chassis-replace-shutdown.html 
+sidebar: sidebar 
+keywords: fas2600, shutdown the controllers 
+summary: 若要更換機箱、您必須關閉控制器。 
+---
+= 關閉控制器- FAS2600
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先關閉機箱中的控制器或控制器、才能將其移至新機箱。
+
+.關於這項工作
+* 如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+* 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+
+
+.步驟
+. 如果您的系統有兩個控制器模組、請停用HA配對。
++
+[cols="1,2"]
+|===
+| 如果您的系統執行叢集ONTAP 式的 | 然後... 
+
+
+ a| 
+叢集中的兩個控制器
+ a| 
+「叢集ha modify -configured假」、「儲存容錯移轉修改節點node0 -enabled假」
+
+
+
+ a| 
+叢集中有兩個以上的控制器
+ a| 
+「torage容錯移轉修改節點node0 -enabled假」
+
+|===
+. 當系統提示您確認停止時、請按「y」停止控制器：「System Node halt -node_node_name_」
++
+確認訊息如下所示：
+
++
+[listing]
+----
+Warning: This operation will cause controller "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the controller goes out of service and one more controller goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+
+Do you want to continue? {y|n}:
+----
++
+
+NOTE: 在更換機箱之前、您必須執行乾淨的系統關機、以避免在非揮發性記憶體（NVMEM/NVRAM）中遺失未寫入的資料。根據您的系統、如果NVMEM/NVRAM LED正在快閃、則在NVMEM/NVRAM中有尚未儲存至磁碟的內容。您需要重新啟動控制器、並從本程序開始。如果重複嘗試完全關閉控制器失敗、請注意、您可能會遺失任何未儲存至磁碟的資料。
+
+. 如果適用、請停止第二個控制器、以避免HA配對組態中出現可能的仲裁錯誤訊息：「System Node halt -node_dee_node_name_-ignore -quorum - warnings true -skip-lif-imcalemation-tape-shute-shuted true」
++
+出現提示時回答「y」。
+
+

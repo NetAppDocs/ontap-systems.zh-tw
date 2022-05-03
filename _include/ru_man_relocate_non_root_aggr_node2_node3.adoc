@@ -1,0 +1,137 @@
+= 
+:allow-uri-read: 
+
+
+您必須先針對AutoSupport 節點2傳送一份關於節點2的資訊、然後將節點2擁有的非根Aggregate重新定位至節點3、才能將節點2取代為節點2。
+
+.步驟
+. [[step1]將AutoSupport 有關節點2的資訊傳送到NetApp：
++
+「系統節點AutoSupport 無法叫用節點<node2>-type all -messing <node2> from <platform _old> to <platform _new>""（將<node2>從<platform _old>升級至<platform _new>""）」
+
+. 驗AutoSupport 證是否已傳送此訊息：
++
+「System Node AutoSupport 現象show -node2>-instance」
+
++
+「Last Subject sent：」（上次傳送主旨：）和「Last Time sent：」（上次傳送時間：）欄位包含上次傳送訊息的訊息標題、以及訊息傳送時間。
+
+. [[step3]重新部署非根集合體：
++
+.. 將權限層級設為進階：
++
+"進階權限"
+
+.. 列出節點2擁有的Aggregate：
++
+「torage Aggregate show -Owner-name <node2>'
+
+.. 開始進行Aggregate重新配置：
++
+「torage Aggregate regate or搬 移開始節點<node2>-destination <node3>-Aggregate-list *-NDA-控制 器升級true」
+
++
+
+NOTE: 此命令只會尋找非根Aggregate。
+
+.. 出現提示時、請輸入「y」。
++
+重新配置會在背景中進行。重新部署集合體可能需要幾秒鐘到幾分鐘的時間。時間包括用戶端中斷和非中斷部分。此命令不會重新部署任何離線或受限的集合體。
+
+.. 返回管理權限層級：
++
+「et -priv. admin」
+
+
+
+. 驗證node2的重新定位狀態：
++
+「torage Aggregate regate reg搬 移顯示-node2>'
+
++
+在重新放置集合體之後、輸出會顯示「完成」。
+
++
+
+NOTE: 您必須等到節點2所擁有的所有集合體都重新放置到節點3之後、才能繼續下一步。
+
+. 請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果重新配置... | 然後... 
+
+
+| 所有集合體都成功 | 前往 <<man_relocate_2_3_step6,步驟6.>>。 
+
+
+| 任何Aggregate都失敗或遭否決  a| 
+.. 顯示詳細的狀態訊息：
++
+「torage Aggregate show -instance」
+
++
+您也可以檢查EMS記錄、查看所需的修正行動。
+
++
+*附註*：「事件記錄show」命令會列出發生的任何錯誤。
+
+.. 執行修正行動。
+.. 將權限層級設為進階：
++
+"進階權限"
+
+.. 重新部署任何故障或被否決的集合體：
++
+「torage Aggregate regate orocate regate移除開始節點<node2>-destate <node3>-Aggregate list *-NDA-controllerUpgrade true」
+
+.. 出現提示時、請輸入「y」。
+.. 返回管理權限層級：
++
+「et -priv. admin」
+
+
+
+如有必要、您可以使用下列其中一種方法強制重新配置：
+
+** 透過壓倒性的否決檢查：
++
+「torage aggregate regate regate regate reg搬 移開始- overre-tetoes true -n控制器升級」
+
+** 覆寫目的地檢查：
++
+「torage Aggregate regate regate regate regate reg搬 移開始- overre-destination-checkstrue -ndocn控制 器升級」
+
+
+
+如需儲存Aggregate重新配置命令的詳細資訊、請前往 link:other_references.html["參考資料"] 若要連結至「_SURF9 ONTAP 磁碟」和「Aggregate Power Guide_」和「_SURF9 ONTAP 命令：手動頁面參考_」。
+
+|===
+. [[man_allocation_2_3_step6]]確認節點3上的所有非根Aggregate均為線上：
++
+「torage Aggregate show -node3>-state offline -root false」
+
++
+如果有任何Aggregate已經離線或變成外部、您必須將其上線、每個Aggregate一次：
+
++
+「torage Aggregate online -gregate <agger_name>」
+
+. 驗證節點3上的所有磁碟區是否都處於線上狀態：
++
+「Volume show -node3>-state offline」（Volume show -node3>-state offline）
+
++
+如果節點3上有任何磁碟區離線、您必須將其上線、每個磁碟區一次：
+
++
+「Volume online -vserver <vserver-name>-volume <Volume <Volume名稱>'
+
+. 驗證node2是否擁有任何線上非根Aggregate：
++
+「torage Aggregate show -Owner-name <node2>-ha-policy SFO -state online」
+
++
+命令輸出不應顯示線上非根Aggregate、因為所有非根線上Aggregate都已重新部署至節點3。
+
+

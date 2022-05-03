@@ -1,0 +1,479 @@
+---
+permalink: a900/nvram_module_or_nvram_dimm_replacement.html 
+sidebar: sidebar 
+keywords:  
+summary: NVRAM模組包含NVRAM11和DIMM、以及每個NVRAM模組最多兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。 
+---
+= 更換NVRAM模組和/或NVRAM DIMM AFF - REVA900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的NVRAM模組、您必須將其從機箱中取出、將DIMM移至更換模組、然後將替換的NVRAM模組安裝到機箱中。
+
+若要更換和NVRAM DIMM、您必須從機箱中取出NVRAM模組、裝回模組中故障的DIMM、然後重新安裝NVRAM模組。
+
+由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
+
+.開始之前
+* 所有磁碟櫃都必須正常運作。
+* 如果您的系統是HA配對、則合作夥伴控制器必須能夠接管與要更換的NVRAM模組相關的控制器。
+* 本程序使用下列術語：
++
+** 受損的控制器是您要執行維護的控制器。
+** 健全的控制器是受損控制器的HA合作夥伴。
+
+
+* 此程序包括自動或手動將磁碟重新指派給與新NVRAM模組相關聯的控制器模組的步驟。您必須依照程序中的指示重新指派磁碟。在恢復之前完成磁碟重新指派可能會造成問題。
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 在此程序中、您無法變更任何磁碟或磁碟櫃。
+
+
+
+
+== 步驟1：關閉受損的控制器
+
+[role="lead"]
+使用下列其中一個選項來關閉或接管受損的控制器。
+
+[role="tabbed-block"]
+====
+.選項1：大多數系統
+--
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+.選項2：控制器位於MetroCluster 一個不二之處
+--
+
+NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+====
+
+
+== 步驟2：更換NVRAM模組
+
+[role="lead"]
+若要裝回NVRAM模組、請將其置於機箱的插槽6中、然後依照特定的步驟順序進行。
+
+. 如果您尚未接地、請正確接地。
+. 從機箱中移除目標NVRAM模組：
++
+.. 按下帶有字母和編號的CAM按鈕。
++
+CAM按鈕會從機箱移出。
+
+.. 向下轉動CAM栓鎖、直到其處於水平位置。
++
+NVRAM模組會從機箱中鬆脫、然後移出幾英吋。
+
+.. 拉動模組面兩側的拉片、將NVRAM模組從機箱中取出。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a23-b6c2-adf9016b359f["動畫-更換NVRAM模組"^]
+
++
+image::../media/drw_a900_move-remove_NVRAM_module.png[DRW A900 Move移除NVRAM模組]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+I/O CAM栓鎖有編號和編號
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+I/O鎖定完全解除鎖定
+
+|===
+
+
+. 將NVRAM模組設定在穩固的表面上、向下按護蓋上的藍色鎖定按鈕、將護蓋從NVRAM模組中取出、然後按住藍色按鈕、將護蓋從NVRAM模組中滑出。
++
+image::../media/drw_a900_remove_NVRAM_module_contents.png[DRW A900移除NVRAM模組內容]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+護蓋鎖定按鈕
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+DIMM和DIMM彈出卡舌
+
+|===
+. 從舊的NVRAM模組中一次移除一個DIMM、然後將其安裝到替換的NVRAM模組中。
+. 合上模組的護蓋。
+. 將替換的NVRAM模組安裝到機箱：
++
+.. 將模組對齊插槽6中機箱開孔的邊緣。
+.. 將模組輕推入插槽、直到帶有字母和編號的I/O CAM栓開始與I/O CAM銷接合、然後將I/O CAM栓完全推入、將模組鎖定到位。
+
+
+
+
+
+
+== 步驟3：更換NVRAM DIMM
+
+[role="lead"]
+若要更換NVRAM模組中的NVRAM DIMM、您必須移除NVRAM模組、開啟模組、然後更換目標DIMM。
+
+. 如果您尚未接地、請正確接地。
+. 從機箱中移除目標NVRAM模組：
++
+.. 按下帶有字母和編號的CAM按鈕。
++
+CAM按鈕會從機箱移出。
+
+.. 向下轉動CAM栓鎖、直到其處於水平位置。
++
+NVRAM模組會從機箱中鬆脫、然後移出幾英吋。
+
+.. 拉動模組面兩側的拉片、將NVRAM模組從機箱中取出。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5["動畫-更換NVRAM DIMM"^]
+
++
+image::../media/drw_a900_move-remove_NVRAM_module.png[DRW A900 Move移除NVRAM模組]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+I/O CAM栓鎖有編號和編號
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+I/O鎖定完全解除鎖定
+
+|===
+
+
+. 將NVRAM模組設定在穩固的表面上、向下按護蓋上的藍色鎖定按鈕、將護蓋從NVRAM模組中取出、然後按住藍色按鈕、將護蓋從NVRAM模組中滑出。
++
+image::../media/drw_a900_remove_NVRAM_module_contents.png[DRW A900移除NVRAM模組內容]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+護蓋鎖定按鈕
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+DIMM和DIMM彈出卡舌
+
+|===
+. 找到NVRAM模組內要更換的DIMM、然後按下DIMM鎖定彈片並將DIMM從插槽中提出來將其卸下。
++
+每個DIMM旁邊都有一個LED、當DIMM故障時會開始閃燈。
+
+. 將DIMM對齊插槽、然後將DIMM輕推入插槽、直到鎖定彈片鎖定到位、即可安裝替換DIMM。
+. 合上模組的護蓋。
+. 將NVRAM模組安裝至機箱：
++
+.. 將模組對齊插槽6中機箱開孔的邊緣。
+.. 將模組輕推入插槽、直到帶有字母和編號的I/O CAM栓開始與I/O CAM銷接合、然後將I/O CAM栓完全推入、將模組鎖定到位。
+
+
+
+
+
+
+== 步驟4：更換FRU後重新啟動控制器
+
+[role="lead"]
+更換FRU之後、您必須重新啟動控制器模組。
+
+. 若要ONTAP 從載入程式提示字元開機、請輸入「bye」。
+
+
+
+
+== 步驟5：驗證並設定控制器模組的HA狀態
+
+您必須驗證控制器模組的「HA」狀態、並視需要更新狀態以符合您的系統組態。
+
+. 在更換控制器模組的維護模式中、確認所有元件都顯示相同的「HA」狀態：「ha-config show」
++
+[cols="1,2"]
+|===
+| 如果您的系統處於... | 所有元件的HA狀態應為... 
+
+
+ a| 
+HA配對
+ a| 
+HA
+
+
+
+ a| 
+包含四個或更多節點的不含功能的FC組態MetroCluster
+ a| 
+MCC
+
+
+
+ a| 
+一套可讓您使用的MetroCluster
+ a| 
+Mccip
+
+|===
+. 如果顯示的控制器模組系統狀態與您的系統組態不符、請設定控制器模組的「HA」狀態：「ha-config modify controller _ha-stu__」
+. 如果顯示的機箱系統狀態與您的系統組態不符、請設定機箱的「HA」狀態：「ha-config modify chassis _ha-stu__」
+
+
+
+
+== 步驟6：重新指派磁碟
+
+[role="lead"]
+您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
+
+此程序僅適用於ONTAP HA配對中執行的系統。
+
+.步驟
+. 如果更換的控制器處於維護模式（顯示「*」>提示、請結束維護模式、然後進入載入器提示：「halt」（停止）
+. 在更換控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
+. 等到更換控制器主控台顯示「Waiting for恢復...（等待恢復...）」訊息、然後從健全的控制器確認已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」
++
+在命令輸出中、您應該會看到一則訊息、指出受損控制器上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
+
++
+[listing]
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 從健全的控制器、確認已儲存任何核心傾印：
++
+.. 變更為進階權限等級：「et -priv榮幸 進階」
++
+當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
+
+.. 儲存任何核心傾印：「系統節點執行節點本機節點名稱合作夥伴儲存資源」
+.. 在發出恢復之前、請等待「命令」完成。
++
+您可以輸入下列命令來監控savecore命令的進度：「ystem節點run -node-node-name合作夥伴savecore -ss」
+
+.. 返回管理員權限等級：「et -priv. admin」
+
+
+. 退回控制器：
++
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode替 用節點名稱」
++
+更換的控制器會恢復儲存設備、並完成開機。
+
++
+如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動恢復命令"^] 取代否決的主題。
+
+.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
++
+「儲存容錯移轉show」命令的輸出不應包含在合作夥伴訊息中變更的系統ID。
+
+
+
+. 驗證是否已正確分配磁碟：「torage disk show -所有權」
++
+屬於替換控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：
+
++
+[listing]
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+. 如果系統採用MetroCluster 的是一套不全功能的組態、請監控控制器的狀態：MetroCluster 「不只是顯示節點」
++
+更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster
+
+. 如果控制器是MetroCluster 以支援功能為基礎的組態、請MetroCluster 視所用的情況而定、確認如果原始擁有者是災難站台上的控制器、DR主ID欄位會顯示磁碟的原始擁有者。
++
+如果下列兩項條件均為真、則必須執行此動作：
+
++
+** 此功能組態處於切換狀態。MetroCluster
+** 替換控制器是災難站台上磁碟的目前擁有者。
++
+請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"] 以取得更多資訊。
+
+
+
+. 如果您的系統使用MetroCluster 的是E驗 證組態、請確認每個控制器都已設定：「MetroCluster E節點 顯示-欄位組態狀態」
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
+
+
+
+
+== 步驟7：還原儲存設備和Volume Encryption功能
+
+[role="lead"]
+針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
+
+.步驟
+. 使用中的適當程序還原儲存設備或Volume Encryption功能 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"]。
+. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"]
+
+
+
+
+
+
+== 步驟8：將故障零件歸還給NetApp
+
+[role="lead"]
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

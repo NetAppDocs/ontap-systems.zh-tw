@@ -1,0 +1,191 @@
+= 
+:allow-uri-read: 
+
+
+在關閉和淘汰節點1之前、您需要記錄叢集網路、管理、FC連接埠及其NVRAM系統ID的相關資訊。稍後將節點1對應至節點3並重新指派磁碟時、您需要該資訊。
+
+.步驟
+. [[step1]]輸入下列命令並擷取其輸出：
++
+「網路路由秀」
+
++
+系統會顯示類似下列範例的輸出：
+
++
+[listing]
+----
+ cluster::> network route show
+
+ Vserver        Destination    Gateway      Metric
+  -------------- -------------- ----------- -------
+  iscsi vserver  0.0.0.0/0      10.10.50.1  20
+  node1          0.0.0.0/0      10.10.20.1  10
+  ....
+  node2          0.0.0.0/0      192.169.1.1 20
+----
+. 輸入下列命令並擷取其輸出：
++
+「Vserver服務名稱服務DNS節目」
+
++
+系統會顯示類似下列範例的輸出：
+
++
+[listing]
+----
+ cluster::> vserver services name-service dns show
+                                                               Name
+ Vserver        State     Domains                              Servers
+ -------------- --------- ------------------------------------ ---------------
+ node 1 2       enabled   alpha.beta.gamma.netapp.com          10.10.60.10,
+                                                               10.10.60.20
+ vs_base1       enabled   alpha.beta.gamma.netapp.com,         10.10.60.10,
+                          beta.gamma.netapp.com,               10.10.60.20
+ ...
+ ...
+ vs peer1        enabled  alpha.beta.gamma.netapp.com,         10.10.60.10,
+                          gamma.netapp.com                     10.10.60.20
+----
+. [[man_recipal_node1_step3]]在節點1上輸入下列命令、尋找叢集網路和節點管理連接埠：
++
+「network interface show -curr-node-node1>-role cluster、intercluster、node-mgmt、cluster-mgmt」
+
++
+系統會顯示叢集中節點的叢集、叢集間、節點管理和叢集管理生命體、如下列範例所示：
+
++
+[listing]
+----
+ cluster::> network interface show -curr-node <node1>
+            -role cluster,intercluster,node-mgmt,cluster-mgmt
+
+              Logical       Status     Network            Current  Current Is
+  Vserver     Interface     Admin/Oper Address/Mask       Node     Port    Home
+  ----------- ------------- ---------- ------------------ -------- ------- ----
+  vserver1
+              cluster mgmt   up/up     192.168.x.xxx/24   node1    e0c     true
+  node1
+              intercluster   up/up     192.168.x.xxx/24   node1    e0e     true
+              clus1          up/up     169.254.xx.xx/24   node1    e0a     true
+              clus2          up/up     169.254.xx.xx/24   node1    e0b     true
+              mgmt1          up/up     192.168.x.xxx/24   node1    e0c     true
+ 5 entries were displayed.
+----
++
+
+NOTE: 您的系統可能沒有叢集間的LIF。
+
+. 在中擷取命令輸出中的資訊 <<man_record_node1_step3,步驟3.>> 以供本節使用 link:map_ports_node1_node3.html["將連接埠從節點1對應至節點3"]。
++
+需要輸出資訊、才能將新的控制器連接埠對應至舊的控制器連接埠。
+
+. 在節點1上輸入下列命令：
++
+「network port show -node1>-type Physical（網路連接埠顯示節點）」
+
++
+系統會顯示節點上的實體連接埠、如下列範例所示：
+
++
+[listing]
+----
+ sti8080mcc-htp-008::> network port show -node sti8080mcc-htp-008 -type physical
+
+ Node: sti8080mcc-htp-008
+
+                                                                  Ignore
+                                            Speed(Mbps)  Health   Health
+ Port  IPspace  Broadcast Domain Link MTU   Admin/Oper   Status   Status
+ ----  -------  ---------------- ---- ----  -----------  -------  -------
+ e0M   Default  Mgmt             up   1500  auto/1000    healthy  false
+ e0a   Default  Default          up   9000  auto/10000   healthy  false
+ e0b   Default  -                up   9000  auto/10000   healthy  false
+ e0c   Default  -                down 9000  auto/-       -        false
+ e0d   Default  -                down 9000  auto/-       -        false
+ e0e   Cluster  Cluster          up   9000  auto/10000   healthy  false
+ e0f   Default  -                up   9000  auto/10000   healthy  false
+ e0g   Cluster  Cluster          up   9000  auto/10000   healthy  false
+ e0h   Default  Default          up   9000  auto/10000   healthy  false
+ 9 entries were displayed.
+----
+. 記錄連接埠及其廣播網域。
++
+稍後的程序將需要將廣播網域對應至新控制器上的新連接埠。
+
+. 在節點1上輸入下列命令：
++
+「網路FCP介面卡show -node1>'
+
++
+系統會在節點上顯示FC連接埠、如下列範例所示：
+
++
+[listing]
+----
+ cluster::> fcp adapter show -node <node1>
+                      Connection  Host
+ Node         Adapter Established Port Address
+ ------------ ------- ----------- ------------
+ node1
+               0a     ptp         11400
+ node1
+               0c     ptp         11700
+ node1
+               6a     loop        0
+ node1
+               6b     loop        0
+ 4 entries were displayed.
+----
+. 記錄連接埠。
++
+需要輸出資訊、才能在程序稍後的新控制器上對應新的FC連接埠。
+
+. 如果您之前沒有這麼做、請輸入下列命令、檢查節點1上是否已設定介面群組或VLAN：
++
+「網路連接埠ifgrp show」
+
++
+「網路連接埠VLAN show」
+
++
+您將使用本節中的資訊 link:map_ports_node1_node3.html["將連接埠從節點1對應至節點3"]。
+
+. 請採取下列其中一項行動：
++
+[cols="60,40"]
+|===
+| 如果您... | 然後... 
+
+
+| 已在一節中記錄NVRAM系統ID編號 link:prepare_nodes_for_upgrade.html["準備節點以進行升級"]。 | 請繼續下一節： link:retire_node1.html["淘汰節點1"]。 
+
+
+| 未在一節中記錄NVRAM系統ID編號 link:prepare_nodes_for_upgrade.html["準備節點以進行升級"] | 完成 <<man_record_node1_step11,步驟11.>> 和 <<man_record_node1_step12,步驟12.>> 然後繼續 link:retire_node1.html["淘汰節點1"]。 
+|===
+. [[man_recipal_node1_step11]]在任一控制器上輸入下列命令：
++
+「ystem nodeshow -instance -node1>'」（系統節點顯示-instance -node1>'）
+
++
+系統會顯示節點1的相關資訊、如下列範例所示：
+
++
+[listing]
+----
+ cluster::> system node show -instance -node <node1>
+                              Node: node1
+                             Owner:
+                          Location: GDl
+                             Model: FAS6240
+                     Serial Number: 700000484678
+                         Asset Tag: -
+                            Uptime: 20 days 00:07
+                   NVRAM System ID: 1873757983
+                         System ID: 1873757983
+                            Vendor: NetApp
+                            Health: true
+                       Eligibility: true
+----
+. [[man_recipal_node1_step12]請在一節中記錄要使用的NVRAM系統ID編號 link:install_boot_node3.html["安裝及開機節點3"]。
+

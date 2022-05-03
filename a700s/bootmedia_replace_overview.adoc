@@ -1,0 +1,26 @@
+---
+permalink: a700s/bootmedia-replace-overview.html 
+sidebar: sidebar 
+keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media 
+summary: 主開機媒體會儲存ONTAP 系統在開機時所使用的功能不均的開機映像。您可以使用ONTAP 次要開機媒體上的還原影像來還原主要開機媒體映像、或是必要時使用USB快閃磁碟機來還原主開機媒體映像。 
+---
+= 開機媒體更換總覽- AFF 《Sof boot media replacement》-《Se A700s
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+主開機媒體會儲存ONTAP 系統在開機時所使用的功能不均的開機映像。您可以使用ONTAP 次要開機媒體上的還原影像來還原主要開機媒體映像、或是必要時使用USB快閃磁碟機來還原主開機媒體映像。
+
+如果您的次要開機媒體故障或遺失image.tgz檔案、您必須使用USB快閃磁碟機還原主要開機媒體。磁碟機必須格式化為AT32、而且必須有適當的儲存容量、才能容納image_xxx.tgz檔案。
+
+* 更換程序會將var檔案系統從次要開機媒體或USB快閃磁碟機還原至主要開機媒體。
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請務必在正確的控制器上套用下列步驟中的命令：
++
+** _減損_控制器是您要執行維護的控制器。
+** _Healthy控制器是受損控制器的HA合作夥伴。
+
+
+

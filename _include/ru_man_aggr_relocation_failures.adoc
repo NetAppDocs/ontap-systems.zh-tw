@@ -1,0 +1,73 @@
+= 檢查Aggregate重新配置失敗
+:allow-uri-read: 
+
+
+在升級期間、Aggregate重新配置（ARL）可能會在不同的點失敗。
+
+
+
+== 檢查Aggregate重新配置失敗
+
+在程序期間、ARL可能會在階段2、階段3或階段5中失敗。
+
+.步驟
+. 輸入下列命令並檢查輸出：
++
+《集合重遷秀》
+
++
+「shorage aggregate regate regate regate show」命令會顯示哪些Aggregate已成功重新配置、哪些未重新配置、以及故障原因。
+
+. 檢查主控台是否有任何EMS訊息。
+. 請採取下列其中一項行動：
++
+** 根據「儲存集合體重新定位show」命令的輸出和EMS訊息的輸出、採取適當的修正行動。
+** 使用「overre-tetoes」選項或「superre-dite-checks」選項的「shorage aggregate regate or搬 移start」命令、強制重新配置集合體或集合體。
+
+
++
+如需有關「強制集合重新定位開始」、「置換-否決」和「置換-目的地-檢查」選項的詳細資訊、請參閱 link:other_references.html["參考資料"] 若要連結至「_SURF9 ONTAP 命令：手動頁面參考_」。
+
+
+
+
+
+== 在完成升級後、原本位於節點1上的Aggregate歸node4所有
+
+在升級程序結束時、node3應該是集合體的新主節點、而該主節點原本是node1作為主節點。您可以在升級後重新配置。
+
+在下列情況下、Aggregate可能無法正確重新定位、使node1做為其主節點、而非node3：
+
+* 在第3階段期間、當Aggregate從節點2重新定位至節點3時。正在重新部署的部分集合體將node1當作其主節點。例如、此類Aggr_nnode_1可稱為Aggr_node_1。如果在第3階段重新配置aggr_node_1失敗、且無法強制重新配置、則會將Aggregate留在node2上。
+* 在第4階段之後、節點2被節點4取代。當節點2被替換時、aggr_node_1會以node4做為主節點、而非node3連線。
+
+
+在儲存容錯移轉啟用後、您可以完成下列步驟、在第6階段之後修正不正確的擁有權問題：
+
+.步驟
+. [[man_agger_fe_step1]]輸入下列命令以取得Aggregate清單：
++
+「torage Aggregate show -nodes <node4>-is主目錄true」
+
++
+若要識別未正確重新放置的集合體、請參閱您在一節中取得的節點1主擁有者之集合體清單 link:prepare_nodes_for_upgrade.html["準備節點以進行升級"] 並將其與上述命令的輸出進行比較。
+
+. [[step2]]比較的輸出 <<man_aggr_fail_step1,步驟1.>> 您在一節中為節點1擷取的輸出 link:prepare_nodes_for_upgrade.html["準備節點以進行升級"] 並記下任何未正確重新定位的集合體。
+. [[man_aggr_fe_Step3]]重新定位節點4上留下的集合體：
++
+「torage Aggregate regate regate or搬 移開始節點<node4>-aggr <aggr_node_1>-destination <node3>'
+
++
+在此重新定位期間、請勿使用「-ND-控制 器升級」參數。
+
+. 輸入下列命令、確認node3現在是Aggregate的主擁有者：
++
+「torage Aggregate show -Aggregate <aggr1、aggr2、aggr3...>-Fields home-name'
+
++
+"<aggr1、aggr2、aggr3...>'是集合體清單、其中節點1是原始擁有者。
+
++
+沒有node3做為主擁有者的Aggregate可以使用中相同的重新配置命令、將其重新定位至node3 <<man_aggr_fail_Step3,步驟3.>>。
+
+

@@ -1,0 +1,242 @@
+---
+permalink: fas8200/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: fas8200, how to recable the system, how to reassign disks 
+summary: 您必須重新儲存並確認磁碟重新指派。 
+---
+= 重新安裝系統並重新分配磁碟- FAS8200
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+重新啟用儲存設備並確認磁碟重新指派、以繼續執行更換程序。
+
+
+
+== 步驟1：重新安裝系統
+
+執行診斷之後、您必須重新連接控制器模組的儲存設備和網路連線。
+
+.步驟
+. 重新安裝系統。
+. 使用確認纜線正確無誤 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
++
+.. 下載並安裝Config Advisor 此功能。
+.. 輸入目標系統的資訊、然後按一下「Collect Data（收集資料）」。
+.. 按一下「纜線」索引標籤、然後檢查輸出。請確定所有磁碟櫃均已顯示、且所有磁碟均顯示在輸出中、以修正您發現的任何纜線問題。
+.. 按一下適當的索引標籤、然後檢查Config Advisor 來自NetApp的輸出、檢查其他纜線。
+
+
+
+
+
+
+== 步驟2：重新指派磁碟
+
+如果儲存系統位於HA配對中、則在程序結束時進行恢復時、新控制器模組的系統ID會自動指派給磁碟。您必須使用正確的組態程序。
+
+
+
+=== 選項1：驗證HA系統上的系統ID變更
+
+您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。
+
+此程序僅適用於ONTAP HA配對中執行的系統。
+
+. 如果_replaced_控制器處於維護模式（顯示"*>"提示符）、請退出維護模式並進入載入器提示："half"（停止）
+. 在_replacemon_控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。Boot_ONTAP
+. 請等到_replace_控制器主控台顯示「waiting for恢復...（正在等待恢復...）」訊息、然後從健全的控制器驗證是否已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」
++
+在命令輸出中、您應該會看到一則訊息、指出受損控制器上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
+
++
+[listing]
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 從健全的控制器、確認已儲存任何核心傾印：
++
+.. 變更為進階權限等級：「et -priv榮幸 進階」
++
+當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
+
+.. 儲存任何核心傾印：「系統節點執行節點_nocal-node-name_合作夥伴儲存資源」
+.. 等待「Wavecore」命令完成後、再發行傳回。
++
+您可以輸入下列命令來監控「savecore」命令的進度：「ystem noder run -node-node-name_合作夥伴savecore -ss」
+
+.. 返回管理員權限等級：「et -priv. admin」
+
+
+. 退回控制器：
++
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
++
+_replacement控制器會恢復其儲存設備並完成開機。
+
++
+如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您版本的更新版本的高可用度組態內容"]
+
+.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
++
+「儲存容錯移轉show」命令的輸出不應包含在合作夥伴訊息中變更的系統ID。
+
+
+
+. 驗證是否已正確分配磁碟：「torage disk show -所有權」
++
+屬於_replaced_控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：
+
++
+[listing]
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+
+
+
+
+=== 選項2：手動重新指派雙節點MetroCluster 的系統ID
+
+在執行支援功能的雙節點MetroCluster 版的支援功能組態ONTAP 中、您必須手動將磁碟重新指派給新的控制器系統ID、才能將系統恢復正常運作。
+
+此程序僅適用於MetroCluster 執行ONTAP 下列項目的雙節點系統：
+
+您必須確定在正確的節點上發出此程序中的命令：
+
+* _減損_節點是您要執行維護的節點。
+* _replaced_節點是新的節點、在本程序中會取代受損節點。
+* 「_Healthy_」節點是受損節點的DR合作夥伴。
+
+
+.步驟
+. 如果您尚未重新啟動_replaced_節點、請輸入「Ctrl-C」來中斷開機程序、然後從顯示的功能表中選取開機至維護模式的選項。
++
+由於系統ID不相符、當系統提示您置換系統ID時、您必須輸入「Y」。
+
+. 從正常節點上檢視舊的系統ID：「MetroCluster 『節點show -Fields node-SystemID、dr-Partner SystemID」
++
+在此範例中、Node_B_1是舊節點、舊系統ID為118673209：
+
++
+[listing]
+----
+dr-group-id cluster         node                 node-systemid dr-partner-systemid
+ ----------- --------------------- -------------------- ------------- -------------------
+ 1           Cluster_A             Node_A_1             536872914     118073209
+ 1           Cluster_B             Node_B_1             118073209     536872914
+ 2 entries were displayed.
+----
+. 在「受損」節點上的「維護」模式提示字元中檢視新的系統ID：「顯示」
++
+在此範例中、新的系統ID為118065481：
+
++
+[listing]
+----
+Local System ID: 118065481
+    ...
+    ...
+----
+. 使用FAS 從disk show命令「磁碟重新指派舊系統ID」取得的系統ID資訊、重新指派磁碟擁有權（適用於整個系統）或LUN擁有權（FlexArray 適用於整個系統）
++
+在上述範例中、命令為：「磁碟重新指派-s 118673209」
+
++
+系統提示您繼續時、您可以回應「Y」。
+
+. 確認磁碟（或FlexArray 稱「LUN」）已正確指派：「磁碟show -A」
++
+確認屬於_replaced_節點的磁碟顯示_replaced_節點的新系統ID。在下列範例中、system-1擁有的磁碟現在顯示新的系統ID 118065481：
+
++
+[listing]
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK     OWNER                 POOL   SERIAL NUMBER  HOME
+-------    -------------         -----  -------------  -------------
+disk_name   system-1  (118065481) Pool0  J8Y0TDZC       system-1  (118065481)
+disk_name   system-1  (118065481) Pool0  J8Y09DXC       system-1  (118065481)
+.
+.
+.
+----
+. 從健全節點、確認已儲存任何核心傾印：
++
+.. 變更為進階權限等級：「et -priv榮幸 進階」
++
+當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
+
+.. 驗證是否已儲存核心傾印：「System Node run -node-node-name_合作夥伴savecore」（系統節點執行節點_local-node-name_合作夥伴savecore）
++
+如果命令輸出顯示Savecore正在進行中、請先等待Savecore完成、再發出恢復。您可以使用「系統節點執行-node-local-node-name_合作夥伴儲存資源-s命令」來監控儲存資源的進度。</info>。
+
+.. 返回管理員權限等級：「et -priv. admin」
+
+
+. 如果_replaced_節點處於維護模式（顯示*>提示）、請結束維護模式、然後前往載入程式提示：「halt（停止）」
+. 開機_replace_節點：「boot_ontap」
+. 在_replacement節點完全開機之後、執行切換：MetroCluster 「還原」
+. 驗證MetroCluster 不實的組態：MetroCluster 「不實節點顯示-欄位組態狀態」
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. 驗證MetroCluster 下列項目中的功能：Data ONTAP
++
+.. 檢查兩個叢集上是否有任何健全狀況警示：「System health alerts show」（系統健全狀況警示顯示）
+.. 確認MetroCluster 已設定好此功能、並處於正常模式：MetroCluster 「show」
+.. 執行MetroCluster 功能不全的檢查：MetroCluster 「執行功能不全」
+.. 顯示MetroCluster 「不MetroCluster 實檢查」的結果：「不實檢查顯示」
+.. 執行Config Advisor請前往Config Advisor NetApp支援網站上的支援頁面、網址為 http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
++
+執行Config Advisor 完功能後、請檢閱工具的輸出結果、並依照輸出中的建議來解決發現的任何問題。
+
+
+
+. 模擬切換作業：
++
+.. 從任何節點的提示字元、變更為進階權限層級：「et -priv榮幸advanc進 階」
++
+當系統提示您繼續進入進階模式時、您需要用「y」回應、並看到進階模式提示（*>）。
+
+.. 使用-Simulate參數「MetroCluster 還原切換模擬」來執行切換作業
+.. 返回管理員權限等級：「et -priv. admin」
+
+
+

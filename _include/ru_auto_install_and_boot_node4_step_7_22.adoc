@@ -1,0 +1,146 @@
+= 
+:allow-uri-read: 
+
+
+. 在節點4上執行netboot：
++
+[cols="30,70"]
+|===
+| 適用於... | 然後... 
+
+
+| FAS / AFF8000系列系統 | “netboot \http://<web_server_ip/path_to_web-accessible_directory>/netboot/kernel` 
+
+
+| 所有其他系統 | “netboot \http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz` 
+|===
++
+「<path_to the _the_web-易於 存取的目錄>」應該會引導您在本節的步驟1中下載「<ONTAP_VERSION >_image.tgz」 link:prepare_for_netboot.html["準備netboot"]。
+
++
+
+NOTE: 請勿中斷開機。
+
+. 從開機功能表中、選取選項「（7）Install new software first（先安裝新軟體）」。
++
+此功能表選項會下載新ONTAP 的功能表映像、並將其安裝至開機裝置。
+
++
+
+NOTE: 請忽略下列訊息：「HA配對不支援不中斷升級此程序」。本附註適用於ONTAP 不中斷營運的升級功能、不適用於控制器升級。請務必使用netboot將新節點更新為所需映像。如果您使用另一種方法在新控制器上安裝映像、可能會安裝錯誤的映像。此問題適用於ONTAP 所有的版本。
+
+. 如果系統提示您繼續此程序、請輸入「y」、並在系統提示您輸入套件時、輸入URL：
++
+http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz`
+
+. 完成下列子步驟以重新啟動控制器模組：
++
+.. 當您看到下列提示時、請輸入「n」跳過備份恢復：
++
+....
+Do you want to restore the backup configuration now? {y|n}
+....
+.. 當您看到下列提示時、輸入「y」重新開機：
++
+....
+The node must be rebooted to start using the newly installed software. Do you want to reboot now? {y|n}
+....
++
+控制器模組會重新開機、但會在開機功能表停止、因為開機裝置已重新格式化、而且需要還原組態資料。
+
+
+
+. 從開機功能表中選取維護模式「5」、然後在系統提示您繼續開機時輸入「y」。
+. 確認控制器和機箱已設定為HA：
++
+《ha-config show》
+
++
+以下範例顯示「ha-config show」命令的輸出：
+
++
+....
+Chassis HA configuration: ha
+Controller HA configuration: ha
+....
++
+
+NOTE: 無論系統是在HA配對或獨立組態中、都會記錄在PROm中。獨立式系統或HA配對內的所有元件的狀態必須相同。
+
+. 如果控制器和機箱未設定為HA、請使用下列命令修正組態：
++
+「ha-config modify控制器ha」
+
++
+「ha-config modify機箱ha」
+
++
+如果您使用MetroCluster 的是不含任何功能的組態、請使用下列命令來修改控制器和機箱：
+
++
+「ha-config modify控制器MCC」
+
++
+「ha-config modify機箱MCC」
+
+. 結束維護模式：
++
+《停止》
+
++
+在開機環境提示字元中按Ctrl-C來中斷自動開機。
+
+. [[[auto_install4_step15]在節點3上、檢查系統日期、時間和時區：
++
+'日期'
+
+. 在節點4上、請在開機環境提示字元中使用下列命令檢查日期：
++
+「如何日期」
+
+. 如有必要、請在節點4上設定日期：
++
+「et date <mm/dd/yed>'
+
+. 在節點4上、請在開機環境提示字元中使用下列命令檢查時間：
++
+「時間安排」
+
+. 如有必要、請在節點4上設定時間：
++
+「設定時間<hh：mm：ss>」
+
+. 如有必要、請在節點4上設定合作夥伴系統ID：
++
+「etenv PARTNER- sysid <node2_sysid>'」
+
++
+.. 儲存設定：
++
+「aveenv」
+
+
+
+. [[[auto_install4_step21]]在新節點的開機載入程式中、必須設定「partnie-sysid」參數。對於node4、「合作夥伴- sysid」必須是node3。驗證node3的「合作夥伴- sysid」：
++
+《王子》合作夥伴sysid》
+
+. [[step22]請採取下列其中一項行動：
++
+[cols="30,70"]
+|===
+| 如果您的系統... | 然後... 
+
+
+| 具有磁碟、無後端儲存設備 | 前往 <<auto_install4_step23,步驟23>>。 
+
+
+| 是連接FlexArray 至儲存陣列的V系列系統或系統、其中含有與之相關的功能完善的虛擬化軟體  a| 
+.. 前往章節 link:set_fc_or_uta_uta2_config_node4.html["在節點4上設定FC或UTA/UTA2組態"] 並完成本節的小節。
+.. 返回本節、並完成其餘步驟、從開始 <<auto_install4_step23,步驟23>>。
+
+
+*重要事項*：您必須先重新設定FC內建連接埠、CNA內建連接埠和CNA卡、才能ONTAP 使用FlexArray 「支援虛擬化」軟體在V系列或系統上啟動。
+
+|===
+

@@ -1,0 +1,76 @@
+---
+section: fas500f
+title: FAS500f系統
+url: "/fas500f/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: FAS500f安裝與設定
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/fas500f/install-setup.html"
+  - title: 快速步驟
+    url: "/fas500f/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/fas500f/install-videos.html"
+  - title: 詳細步驟
+    url: "/fas500f/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: FAS500f維護
+  entries:
+  - title: 開機媒體
+    pdf-filename: FAS500f開機媒體
+    entries:
+    - title: 總覽
+      url: "/fas500f/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/fas500f/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉節點
+      url: "/fas500f/bootmedia-shutdown.html"
+    - title: 取代開機映像
+      url: "/fas500f/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/fas500f/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas500f/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: FAS500f機箱
+    entries:
+    - title: 總覽
+      url: "/fas500f/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas500f/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/fas500f/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/fas500f/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器
+    pdf-filename: FAS500f控制器模組
+    entries:
+    - title: 總覽
+      url: "/fas500f/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/fas500f/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/fas500f/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/fas500f/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/fas500f/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/fas500f/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas500f/dimm-replace.html"
+  - title: 磁碟機
+    url: "/fas500f/drive-replace.html"
+  - title: 風扇
+    url: "/fas500f/fan-replace.html"
+  - title: 夾層卡
+    url: "/fas500f/mezzanine-replace.html"
+  - title: NVMEM電池
+    url: "/fas500f/nvmem-battery-replace.html"
+  - title: 電源供應器
+    url: "/fas500f/power-supply-replace.html"
+  - title: 即時時鐘電池
+    url: "/fas500f/rtc-battery-replace.html"

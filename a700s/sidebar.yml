@@ -1,0 +1,100 @@
+---
+section: a700s
+title: S4A700s系統AFF
+url: "/a700s/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定SBIOS A700s AFF
+  entries:
+  - title: 叢集組態工作表
+    url: "/a700s/install-worksheet-linkout.html"
+  - title: 選擇安裝與設定體驗
+    url: "/a700s/install-setup.html"
+  - title: 快速步驟
+    url: "/a700s/install-setup-linkout.html"
+  - title: 影片步驟
+    url: "/a700s/install-video-linkout.html"
+- title: 維護
+  pdf-filename: 以A700s維護AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: S4A700s開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/a700s/bootmedia-replace-overview.html"
+    - title: 檢查內建加密
+      url: "/a700s/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉節點
+      url: "/a700s/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/a700s/bootmedia-replace.html"
+    - title: 傳輸開機映像
+      url: "/a700s/bootmedia-transfer-boot-image.html"
+    - title: 開機還原映像
+      url: "/a700s/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/a700s/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/a700s/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: S4A700s機箱AFF
+    entries:
+    - title: 總覽
+      url: "/a700s/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a700s/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/a700s/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/a700s/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器
+    pdf-filename: S4A700s控制器AFF
+    entries:
+    - title: 總覽
+      url: "/a700s/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a700s/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/a700s/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/a700s/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/a700s/controller-replace-recable-reassign-disks.html"
+    - title: 完成更換程序
+      url: "/a700s/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: S4A700s DIMM AFF
+    url: "/a700s/dimm-replace.html"
+  - title: 磁碟機
+    pdf-filename: Su A700s磁碟機AFF
+    url: "/a700s/drive-replace.html"
+  - title: 風扇
+    entries:
+    - title: 關閉受損節點
+      url: "/a700s/fan-impaired-controller-shutdown.html"
+    - title: 卸下控制器模組
+      url: "/a700s/fan-controller-remove.html"
+    - title: 風扇
+      pdf-filename: 回答A700s的風扇AFF
+      url: "/a700s/fan-replace.html"
+    - title: 重新安裝控制器模組
+      url: "/a700s/fan-controller-reinstall-pcie-rtc.html"
+    - title: 將故障零件退回NetApp
+      url: "/a700s/fan-complete-rma.html"
+  - title: NVRAM電池
+    pdf-filename: S4A700s NVRAM電池AFF
+    url: "/a700s/nvmem-nvram-battery-replace.html"
+  - title: NVRAM
+    pdf-filename: S4A700s NVRAM AFF
+    url: "/a700s/nvram-or-nvram-dimm-replacement.html"
+  - title: PCIe卡
+    pdf-filename: Se A700s PCIe卡AFF
+    url: "/a700s/pci-cards-and-risers-replace.html"
+  - title: 電源供應器
+    pdf-filename: S4A700s電源供應器AFF
+    url: "/a700s/power-supply-swap-out.html"
+  - title: 即時時鐘電池
+    pdf-filename: Real-Time時鐘電池AFF
+    url: "/a700s/rtc-battery-replace.html"
+  - title: 系統層級診斷
+    url: "/a700s/system-level-diags-linkout.html"

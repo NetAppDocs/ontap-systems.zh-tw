@@ -1,0 +1,56 @@
+---
+permalink: sas3/install-cabling-worksheets-how-to-read-multipath.html 
+sidebar: sidebar 
+keywords: example, guide, read, apply, complete, worksheet, cable, controller-to-stack, connection, disk, shelves, shelf, iom12, multipathed, connectivity, hot to read a worksheet to cable controller-to-stack connections for multipathed connectivity 
+summary: 您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取及套用完整的工作表、以纜線連接多路徑連線的磁碟機櫃的控制器對堆疊連線。 
+---
+= 如何閱讀工作表、將控制器對堆疊的連線纜線連接到多路徑連線、以利使用IOM12模組的機櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取及套用完整的工作表、以纜線連接多路徑連線的磁碟機櫃的控制器對堆疊連線。
+
+您的HA配對或單一控制器組態不能是AFF 一套E4A200、AFF E4A220、FAS2600系列或FAS2700系統。這些系統使用獨特的工作表：
+
+link:install-cabling-worksheets-examples-fas2600.html["控制器對堆疊佈線工作表和佈線範例、適用於常見AFF 的E4A200、AFF E4A220、FAS2600系列和FAS2700組態"]
+
+.關於這項工作
+* 本程序參考下列工作表和纜線佈線範例、示範如何讀取工作表來連接控制器與堆疊的纜線連接。
++
+本例中使用的組態是多重路徑HA組態、每個控制器上有兩個四埠SAS HBA（八個SAS連接埠）、以及兩個具有IOM12模組的磁碟櫃堆疊。連接埠配對是透過跳過工作表中的每個其他連接埠配對來連接。
+
++
+
+NOTE: 如果連接埠配對數量超過系統中的堆疊纜線數量、最佳做法是跳過連接埠配對、以最佳化系統上的SAS連接埠。藉由最佳化SAS連接埠、您可以最佳化系統效能。
+
+* 如果您使用單一控制器組態、請跳過子步驟b和d、以便連接至第二個控制器。
+* 如有需要、請參閱 link:install-cabling-rules.html["SAS纜線配置規則"] 如需控制器插槽編號慣例、機櫃對機櫃連線及控制器對機櫃連線（包括使用連接埠配對）的相關資訊。
+
+
+連接埠配對使用工作表中的每個其他連接埠配對進行纜線連接：1A/2b和1c/2D。
+
+image::../media/drw_worksheet_mpha_skipped_template.gif[已跳過的範本已跳過網路工作表mpha]
+
+image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[已跳過DRw mpha插槽1和2個4porthbas兩個堆疊]
+
+.步驟
+. 每個控制器上的纜線連接埠配對1a/2b至堆疊1：
++
+.. 纜線控制器1連接埠1A連接至堆疊1、第一個機櫃IOM A連接埠1。
+.. 纜線控制器2連接埠1A連接至堆疊1、第一個機櫃IOM B連接埠1。
+.. 纜線控制器1連接埠2b至堆疊1、最後一個機櫃IOM B連接埠3。
+.. 纜線控制器2連接埠2b至堆疊1、最後一個機櫃IOM A連接埠3。
+
+
+. 每個控制器的纜線連接埠配對1c/2D至堆疊2：
++
+.. 纜線控制器1連接埠1c至堆疊2、第一個機櫃IOM A連接埠1。
+.. 纜線控制器2連接埠1c至堆疊2、第一個機櫃IOM B連接埠1。
+.. 纜線控制器1連接埠2D到堆疊2、最後一個機櫃IOM B連接埠3。
+.. 纜線控制器2連接埠2D到堆疊2、最後一個機櫃IOM A連接埠3。
+
+
+

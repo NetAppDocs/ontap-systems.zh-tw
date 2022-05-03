@@ -1,0 +1,141 @@
+---
+permalink: a300/controller-replace-restore-system-rma.html 
+sidebar: sidebar 
+keywords: aff a300, how to restore NetApp Storage Encryption, how to complete the replacement process 
+summary: '若要將系統還原為完整運作、您必須還原NetApp儲存加密組態（如有必要）、並安裝新控制器的授權、然後將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請聯絡技術支援人員： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]如果您需要RMA編號或更換程序的其他協助、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。' 
+---
+= 完整系統還原- AFF 還原為NetApp
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要將系統還原為完整運作、您必須還原NetApp儲存加密組態（如有必要）、並安裝新控制器的授權、然後將故障零件歸還給NetApp、如套件隨附的RMA指示所述。
+
+
+
+== 步驟1：在ONTAP 更新節點的支援中安裝替代節點的授權
+
+如果受損節點使用ONTAP 的是需要標準（節點鎖定）授權的功能、您必須為_replace_節點安裝新的授權。對於具有標準授權的功能、叢集中的每個節點都應該擁有自己的功能金鑰。
+
+在您安裝授權金鑰之前、需要標準授權的功能仍可用於_replace_節點。但是、如果受損節點是叢集中唯一具有功能授權的節點、則不允許對功能進行組態變更。此外、在節點上使用未獲授權的功能可能會使您違反授權合約、因此您應該盡快在_replace_節點上安裝替換授權金鑰或金鑰。
+
+授權金鑰必須為28個字元的格式。
+
+您有90天的寬限期可以安裝授權金鑰。寬限期過後、所有舊授權都會失效。安裝有效的授權金鑰之後、您有24小時的時間可以在寬限期結束之前安裝所有金鑰。
+
+.步驟
+. 如果您需要新的授權金鑰、請在上取得替換授權金鑰 https://mysupport.netapp.com/site/global/dashboard["NetApp 支援網站"] 在「軟體授權」下的「我的支援」區段中。
++
+
+NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔案上的電子郵件地址。如果您在30天內未收到附有授權金鑰的電子郵件、請聯絡技術支援部門。
+
+. 安裝每個授權金鑰：「+系統授權新增-授權碼授權金鑰、授權金鑰...+」
+. 視需要移除舊授權：
++
+.. 檢查未使用的授權：「授權清理-未使用的-Simulate」
+.. 如果清單看起來正確、請移除未使用的授權：「授權清理-未使用」
+
+
+
+
+
+
+== 步驟2：還原儲存設備和Volume Encryption功能
+
+針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
+
+.步驟
+. 使用中的適當程序還原儲存設備或Volume Encryption功能 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"]。
+. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"]
+
+
+
+
+
+
+== 步驟3：驗證LIF並登錄序號
+
+在將_replacement節點送回服務之前、您應該先確認該生命點是否位於其主連接埠上、如果AutoSupport 啟用了「BIOS」、請登錄_replacement節點的序號、然後重設自動恢復。
+
+.步驟
+. 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
++
+如果有任何生命期被列為假、請將其還原至主連接埠：「網路介面回復」
+
+. 向NetApp支援部門註冊系統序號。
++
+** 如果啟用了「支援」功能、請傳送「支援」訊息來登錄序號。AutoSupport AutoSupport
+** 如果AutoSupport 未啟用此功能、請致電 https://mysupport.netapp.com["NetApp支援"] 以登錄序號。
+
+
+. 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
+
+
+
+
+== 步驟4：在雙節點MetroCluster 的不二組態中切換回集合體
+
+完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
+
+此工作僅適用於雙節點MetroCluster 的不完整組態。
+
+.步驟
+. 驗證所有節點是否都處於「啟用」狀態：MetroCluster 「顯示節點」
++
+[listing]
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+. 確認所有SVM上的重新同步已完成：MetroCluster 「Svserver show」
+. 驗證修復作業所執行的任何自動LIF移轉是否已成功完成：「MetroCluster 還原檢查LIF show」
+. 從存續叢集中的任何節點使用「MetroCluster 還原」命令執行切換。
+. 確認切換作業已完成：MetroCluster 「不顯示」
++
+當叢集處於「等待切換」狀態時、切換回復作業仍在執行中：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+當叢集處於「正常」狀態時、即可完成切換作業：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+如果切換需要很長時間才能完成、您可以使用「MetroCluster show config-repl複 寫res同步 狀態show」命令來檢查進行中的基準狀態。
+
+. 重新建立任何SnapMirror或SnapVault 不完整的組態。
+
+
+
+
+== 步驟5：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

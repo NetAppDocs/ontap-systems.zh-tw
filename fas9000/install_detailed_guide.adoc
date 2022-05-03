@@ -1,0 +1,578 @@
+---
+permalink: fas9000/install-detailed-guide.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, detailed, guide, prepare, install, hardware, two, node, switchless, cluster, cable, controller, ds212c, ds224c, ns224, drive, shelf, complete, system, setup, configuration, network, discovery 
+summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。 
+---
+= 詳細指南：AFF 《》（《產品指南》）-《產品介紹》（《產品介紹》
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本指南提供安裝典型NetApp系統的詳細逐步指示。如果您需要更詳細的安裝說明、請使用本指南。
+
+
+
+== 步驟1：準備安裝
+
+[role="lead"]
+若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
+
+您必須能夠存取Hardware Universe 有關站台需求的資訊、以及設定系統的其他資訊。您也可以存取ONTAP 版本的《發行說明》、以取得更多關於此系統的資訊。
+
+https://hwu.netapp.com["NetApp Hardware Universe"]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 您版本的更新說明"]
+
+您必須在網站上提供下列資訊：
+
+* 儲存系統的機架空間
+* 2號十字螺絲起子
+* 其他網路纜線、可將系統連接至網路交換器、筆記型電腦或主控台、並使用網路瀏覽器
+
+
+.步驟
+. 打開所有包裝箱的內容物。
+. 從控制器記錄系統序號。
++
+image::../media/drw_ssn_label.png[DRw SSN標籤]
+
+. 清點並記下您收到的纜線數量和類型。
++
+下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱Hardware Universe 《關於找出纜線並識別其用途的資訊》。
+
++
+https://hwu.netapp.com["NetApp Hardware Universe"]
+
++
+[cols="1,2,1,2"]
+|===
+| 纜線類型... | 產品編號與長度 | 連接器類型 | 適用於... 
+
+
+ a| 
+10 GbE網路纜線
+ a| 
+X6566B-2-R6、（112-00299）、2公尺
+
+X6566B-3-R6、112-00300、3公尺
+
+X6566B-5-R6、112-00301、5公尺
+ a| 
+image:../media/oie_cable_sfp_gbe_copper.png[""]
+ a| 
+網路纜線
+
+
+
+ a| 
+40 GbE網路纜線
+
+40 GbE叢集互連
+ a| 
+X66100-1、112-00542、1公尺
+
+X66100-3、112-00543、3公尺
+ a| 
+image:../media/oie_cable100_gbe_qsfp28.png[""]
+ a| 
+40 GbE網路
+
+叢集互連
+
+
+
+ a| 
+100 GbE網路纜線
+
+100 GbE儲存纜線
+ a| 
+X66211A-05（112-00595）、0.5公尺
+
+X66211A-1（112-00573）、1公尺
+
+X66211A-2（112-00574）、2公尺
+
+X66211A-5（112-00574）、5公尺
+ a| 
+image:../media/oie_cable100_gbe_qsfp28.png[""]
+ a| 
+網路纜線
+
+儲存纜線
+
+
+NOTE: 此纜線AFF 僅適用於部分A700。
+
+
+
+ a| 
+光纖網路纜線（訂單相依）
+ a| 
+X6553-R6（112-00188）、2公尺
+
+X6536 - R6（112-00090）、5公尺
+ a| 
+image:../media/oie_cable_fiber_lc_connector.png[""]
+ a| 
+FC主機網路
+
+
+
+ a| 
+第6類、RJ-45（訂單相依）
+ a| 
+零件編號X6585-R6（112-00291）、3公尺
+
+X6562-R6（112-00196）、5公尺
+ a| 
+image:../media/oie_cable_rj45.png[""]
+ a| 
+管理網路與乙太網路資料
+
+
+
+ a| 
+儲存設備
+ a| 
+X6031A（112-00436）、1公尺
+
+X6032A（112-00437）、2公尺
+
+X6033A（112-00438）、3公尺
+ a| 
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""]
+ a| 
+儲存設備
+
+
+
+ a| 
+micro-USB主控台纜線
+ a| 
+不適用
+ a| 
+image:../media/oie_cable_micro_usb.png[""]
+ a| 
+非Windows或Mac筆記型電腦/主控台軟體安裝期間的主控台連線
+
+
+
+ a| 
+電源線
+ a| 
+不適用
+ a| 
+image:../media/oie_cable_power.png[""]
+ a| 
+開啟系統電源
+
+|===
+. 檢閱《_ NetApp ONTAP 資料保密指南》、並收集該指南所列的必要資訊。
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
+
+
+
+
+
+== 步驟2：安裝硬體
+
+[role="lead"]
+您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
+
+.步驟
+. 視需要安裝軌道套件。
+. 請依照軌道套件隨附的指示來安裝及固定系統。
++
+
+NOTE: 您必須瞭解與系統重量相關的安全顧慮。
+
++
+image::../media/drw_9000_lifting_icon.png[DRw 9000起重圖示]
+
+
+
+
+NOTE: 左側的標籤表示機箱為空、右側的標籤則表示系統已滿。
+
+. 連接纜線管理裝置（如圖所示）。
++
+image::../media/drw_9000_cable_management_arms.png[DRw 9000纜線管理臂]
+
+. 將擋板放在系統正面。
+
+
+
+
+== 步驟3：將控制器連接至網路
+
+[role="lead"]
+您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
+
+
+
+=== 選項1：雙節點無交換器叢集
+
+[role="lead"]
+控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
+
+您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
+
+將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
+
+image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+
+
+NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
+
+.步驟
+. 請使用動畫或圖例來完成控制器與交換器之間的佈線：
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0["連接雙節點無交換器叢集"]
+
+
+
+image::../media/drw_9000_TNSC_composite_cabling.png[DRw 9000 TSC複合纜線]
+
+. 前往 <<Step 4: Cable controllers to drive shelves>> 以取得磁碟機櫃佈線指示。
+
+
+
+
+=== 選項2：交換式叢集
+
+[role="lead"]
+控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
+
+您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
+
+將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
+
+image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+
+
+NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
+
+.步驟
+. 請使用動畫或圖例來完成控制器與交換器之間的佈線：
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d["交換式叢集纜線"]
+
+
+
+image:../media/drw_9000_switched_cluster_cabling.png[""]
+
+. 前往 <<Step 4: Cable controllers to drive shelves>> 以取得磁碟機櫃佈線指示。
+
+
+
+
+== 步驟4：連接磁碟機櫃的纜線控制器
+
+[role="lead"]
+您可以將新系統纜線連接至DS212C、DS224C或NS224磁碟櫃、視系統AFF 是指或者FAS 是指系統。
+
+
+
+=== 選項1：將控制器纜線連接至DS212C或DS224C磁碟機櫃
+
+[role="lead"]
+您必須將機櫃對機櫃連線纜線、然後將兩個控制器纜線連接至DS212C或DS224C磁碟機櫃。
+
+將纜線插入磁碟機櫃、拉片朝下、纜線的另一端則以拉式彈片向上插入控制器儲存模組。
+
+image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+
+image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+
+.步驟
+. 請使用下列動畫或圖例將磁碟機櫃連接至控制器。
++
+
+NOTE: 這些範例使用DS224C磁碟櫃。佈線與其他支援的SAS磁碟機櫃類似。
+
++
+** FAS9000、AFF S4A700和ASA AFF S4A700、ONTAP Se 9.7及更早版本中的SAS機櫃佈線：
+
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a312e09e-df56-47b3-9b5e-ab2300477f67["SAS儲存設備的佈線ONTAP ：Sing 9.7及更早版本"]
+
++
+image:../media/SAS_storage_ONTAP_9.7_and_earlier.png[""]
+
++
+** FAS9000、AFF S4A700和ASA AFF S4A700、ONTAP Se 9.8及更新版本中的SAS機櫃佈線：
+
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=61d23302-9526-4a2b-9335-ac5b0032eafd["SAS儲存設備佈線：ONTAP Sing 9.8及更新版本"]
+
++
+image:../media/SAS_storage_ONTAP_9.8_and_later.png[""]
+
++
+
+NOTE: 如果您有多個磁碟機櫃堆疊、請參閱磁碟機櫃類型的_安裝與佈線指南_。
+
++
+link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["安裝及纜線架以安裝新的系統-機櫃內有IOM12模組"]
+
++
+image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
+
+. 前往 <<Step 5: Complete system setup and configuration>> 以完成系統設定與組態。
+
+
+
+
+=== 選項2：將控制器纜線連接AFF 至僅ASA AFF 執行ONTAP 《S9.8及更新版本》的單一NS224磁碟機櫃、即可連接至該系統
+
+[role="lead"]
+您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
+
+* 此工作僅適用於AFF 執行部分為9.8或更新版本的部分。ASA AFF ONTAP
+* 系統每個控制器的插槽3和/或7中必須至少安裝一個X91148A模組。動畫或圖例顯示此模組安裝在插槽3和7中。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
++
+image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+
++
+image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+
++
+
+NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
+
+
+
+.步驟
+. 請使用下列動畫或圖例、將具有兩個X91148A儲存模組的控制器連接至單一NS224磁碟機櫃、或使用圖將具有一個X91148A儲存模組的控制器連接至單一NS224磁碟機櫃。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e["單一NS224機櫃的纜線連接- ONTAP S9.8及更新版本"]
+
++
+image::../media/drw_ns224_a700_1shelf.png[DRw n224 a700 1個機櫃]
+
++
+image::../media/single_NS224_shelf.png[單一NS224機櫃]
+
+. 前往 <<Step 5: Complete system setup and configuration>> 以完成系統設定與組態。
+
+
+
+
+=== 選項3：將控制器連接至AFF 僅ASA AFF 執行ONTAP 《S9.8及更新版本》的2個NS224磁碟機櫃、即可連接到位於《Se A700》和《Se A700》系統
+
+[role="lead"]
+您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
+
+* 此工作僅適用於AFF 執行部分為9.8或更新版本的部分。ASA AFF ONTAP
+* 每個控制器必須有兩個X91148A模組安裝在插槽3和7中。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
++
+image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+
++
+image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+
++
+
+NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
+
+
+
+.步驟
+. 請使用下列動畫或圖例、將控制器連接至兩個NS224磁碟機櫃。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a["連接兩個NS224磁碟櫃- ONTAP S9.8及更新版本"]
+
++
+image::../media/drw_ns224_a700_2shelves.png[新南224 a700 2個磁碟櫃]
+
++
+image::../media/two_NS224_shelves.png[兩個NS224磁碟櫃]
+
+. 前往 <<Step 5: Complete system setup and configuration>> 以完成系統設定與組態。
+
+
+
+
+== 步驟5：完成系統設定與組態設定
+
+[role="lead"]
+您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
+
+
+
+=== 選項1：如果已啟用網路探索、請完成系統設定與組態
+
+[role="lead"]
+如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
+
+.步驟
+. 請使用下列動畫來設定一或多個磁碟機櫃ID：
++
+如果您的系統有NS224磁碟機櫃、則磁碟櫃會預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6["設定SAS或NVMe磁碟機磁碟櫃ID"]
+
+. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
+. 開啟兩個節點的電源開關。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b["開啟控制器的電源"]
+
++
+
+NOTE: 初始開機最多可能需要八分鐘。
+
+. 請確定您的筆記型電腦已啟用網路探索功能。
++
+如需詳細資訊、請參閱筆記型電腦的線上說明。
+
+. 請使用下列動畫將筆記型電腦連線至管理交換器。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["將筆記型電腦連接至管理交換器"]
+
+. 選取ONTAP 列出的功能表圖示以探索：
++
+image::../media/drw_autodiscovery_controler_select.png[選擇「自動探索控制器」]
+
++
+.. 開啟檔案總管。
+.. 按一下左窗格中的網路。
+.. 按一下滑鼠右鍵、然後選取重新整理。
+.. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
++
+
+NOTE: XXXXX是目標節點的系統序號。
+
++
+系統管理程式隨即開啟。
+
+
+
+. 使用System Manager引導式設定、使用您在《_ NetApp ONTAP 資訊系統組態指南_》中收集的資料來設定您的系統。
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
+
+. 設定您的帳戶並下載Active IQ Config Advisor 更新：
++
+.. 登入現有帳戶或建立帳戶。
++
+https://mysupport.netapp.com/eservice/public/now.do["NetApp支援註冊"]
+
+.. 註冊您的系統。
++
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
+
+.. 下載Active IQ Config Advisor
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+
+
+
+. 執行Config Advisor 下列項目來驗證系統的健全狀況：
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S-&《系統管理程式文件》資源ONTAP ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+
+
+
+
+=== 選項2：如果未啟用網路探索、請完成系統設定與組態
+
+[role="lead"]
+如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。
+
+.步驟
+. 連接纜線並設定筆記型電腦或主控台：
++
+.. 使用N-8-1將筆記型電腦或主控台的主控台連接埠設為115200鮑。
++
+
+NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定主控台連接埠。
+
+.. 使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的管理交換器。
++
+image::../media/drw_9000_cable_console_switch_controller.png[DRw 9000纜線主控台交換器控制器]
+
+.. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
+
+
+. 請使用下列動畫來設定一或多個磁碟機櫃ID：
++
+如果您的系統有NS224磁碟機櫃、則磁碟櫃會預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6["設定SAS或NVMe磁碟機磁碟櫃ID"]
+
+. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
+. 開啟兩個節點的電源開關。
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b["開啟控制器的電源"]
+
++
+
+NOTE: 初始開機最多可能需要八分鐘。
+
+. 將初始節點管理IP位址指派給其中一個節點。
++
+[cols="1,3"]
+|===
+| 如果管理網路有DHCP ... | 然後... 
+
+
+ a| 
+已設定
+ a| 
+記錄指派給新控制器的IP位址。
+
+
+
+ a| 
+未設定
+ a| 
+.. 使用Putty、終端機伺服器或您環境的等效產品來開啟主控台工作階段。
++
+
+NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台的線上說明。
+
+.. 在指令碼提示時輸入管理IP位址。
+
+
+|===
+. 使用筆記型電腦或主控台上的System Manager來設定叢集：
++
+.. 將瀏覽器指向節點管理IP位址。
++
+
+NOTE: 地址格式為+https://x.x.x.x.+
+
+.. 使用您在《NetApp ONTAP 產品介紹》指南中收集的資料來設定系統。
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
+
+
+
+. 設定您的帳戶並下載Active IQ Config Advisor 更新：
++
+.. 登入現有帳戶或建立帳戶。
++
+https://mysupport.netapp.com/eservice/public/now.do["NetApp支援註冊"]
+
+.. 註冊您的系統。
++
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
+
+.. 下載Active IQ Config Advisor
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+
+
+
+. 執行Config Advisor 下列項目來驗證系統的健全狀況：
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S-&《系統管理程式文件》資源ONTAP ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+

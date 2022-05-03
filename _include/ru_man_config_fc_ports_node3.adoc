@@ -1,0 +1,132 @@
+= 在節點3上設定FC連接埠
+:allow-uri-read: 
+
+
+
+
+== 在節點3上設定FC連接埠
+
+如果節點3具有FC連接埠（內建或FC介面卡上）、您必須先在節點上設定連接埠組態、才能將其投入服務、因為連接埠並未預先設定。如果未設定連接埠、可能會導致服務中斷。
+
+您必須擁有儲存在節點1中的FC連接埠設定值 link:prepare_nodes_for_upgrade.html["準備節點以進行升級"]。
+
+如果您的系統沒有FC組態、您可以跳過本節。如果您的系統內建UTA/UTA2連接埠或UTA/UTA2卡、請在中設定 <<Check and configure UTA/UTA2 ports on node3>>。
+
+
+NOTE: *重要*：如果您的系統有儲存磁碟、請在叢集提示字元下輸入本節中的命令。如果您使用V系列系統或使用FlexArray 支援功能的虛擬化軟體、並已連線至儲存陣列、請在維護模式下於本節輸入命令。
+
+.步驟
+. [[step1]]請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果您要升級的系統... | 然後... 
+
+
+| 具有儲存磁碟 | 前往 <<man_config_3_step5,步驟5.>> 
+
+
+| 是V系列系統、或具有FlexArray 「支援虛擬化的軟體」、並連接至儲存陣列 | 前往 <<man_config_3_step2,步驟2>> 
+|===
+. [[man_config_3_step2]Boot node3和存取維護模式：
++
+Boot_ONTAP maint
+
+. [[step3]請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果您要升級的系統... | 然後... 
+
+
+| 具有儲存磁碟 | 輸入下列命令：「ystem node-connect show」 
+
+
+| 是V系列系統、或具有FlexArray 「虛擬化軟體」、並連接至儲存陣列。 | 輸入以下命令「ucadmin show」 
+|===
++
+系統會顯示系統上所有FC和整合式網路卡的相關資訊。
+
+. [[step4]]比較node3的FC設定與先前從node1擷取的設定。
+. [[man_config_3_step5]]採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果新節點上的預設FC設定為... | 然後... 
+
+
+| 與您在節點1上擷取的相同 | 前往 <<man_config_3_step11,步驟11.>>。 
+
+
+| 與您在節點1上擷取的不同 | 前往 <<man_config_3_step6,步驟6.>>。 
+|===
+. [[man_config_3_step6]]採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果您要升級的系統... | 然後... 
+
+
+| 具有儲存磁碟  a| 
+輸入下列命令之一、視需要修改節點3上的FC連接埠：
+
+** 若要設定目標連接埠：「系統節點硬體統一連接修改-type |-t target -Adapter <port_name>」
+** 若要設定啟動器連接埠：「系統節點硬體統一連線修改-類型|-t啟動器-介面卡<連接埠名稱>」
+
+
+「-t」是FC4類型：目標或啟動器。
+
+
+
+| 是V系列系統、或具有FlexArray 「支援虛擬化的軟體」、並連接至儲存陣列 | 輸入下列命令、視需要修改節點3上的FC連接埠：「ucadmin modify -m fs -t initiator -f <adapter_port_name>'`-t'是FC4類型、目標或啟動器。*附註*：FC連接埠必須設定為啟動器。 
+|===
+. [[step7]採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果您要升級的系統... | 然後... 
+
+
+| 具有儲存磁碟 | 輸入下列命令並檢查輸出、以驗證新設定：「ystem nodem hardware統一連線show」（系統節點硬體統一連線show） 
+
+
+| 是V系列系統、或具有FlexArray 「支援虛擬化的軟體」、並連接至儲存陣列 | 輸入下列命令並檢查輸出「ucadmin show」、以驗證新設定 
+|===
+. [[step8]]輸入下列命令、結束維護模式：
++
+《停止》
+
+. [[step9]輸入命令後、請等待系統在開機環境提示字元停止。
+. [[step10]請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果您要升級的系統... | 然後... 
+
+
+| 是V系列系統、或是FlexArray 使用執行叢集Data ONTAP 式版本資訊8.3的功能完善的虛擬化軟體 | 開機節點3並在開機環境提示字元「boot_ONTAP maint」存取維護 
+
+
+| 不是V系列系統、或沒有FlexArray 「功能完善的虛擬化」軟體 | 在開機環境提示字元「boot_ONTAP」下開機節點3 
+|===
+. [[man_config_3_step11]請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果您要升級的系統... | 然後... 
+
+
+| 具有儲存磁碟  a| 
+** 如果node3具有UTA/UTA2卡或UTA/UTA2內建連接埠、請前往 <<Check and configure UTA/UTA2 ports on node3>>。
+** 如果節點3沒有UTA/UTA2卡或UTA/UTA2內建連接埠、請跳過 <<Check and configure UTA/UTA2 ports on node3>> 並前往 link:map_ports_node1_node3.html["將連接埠從節點1對應至節點3"]。
+
+
+
+
+| 是V系列系統、或具有FlexArray 「支援虛擬化的軟體」、並連接至儲存陣列  a| 
+** 如果node3有卡或內建連接埠、請前往 <<Check and configure UTA/UTA2 ports on node3>>。
+** 如果節點3沒有卡或內建連接埠、請跳過 <<Check and configure UTA/UTA2 ports on node3>>，然後返回_Install and boot node3_並繼續執行 link:install_boot_node3.html#step7["步驟7."]。
+
+
+|===
+

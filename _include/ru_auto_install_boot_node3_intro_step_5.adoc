@@ -1,0 +1,74 @@
+= 
+:allow-uri-read: 
+
+
+您必須在機架中安裝node3、將node1的連線傳輸至node3、開機node3及安裝ONTAP 支援。接著、您必須重新指派節點1的任何備用磁碟、屬於根磁碟區的任何磁碟、以及任何未在程序中稍早重新放置到節點2的非根Aggregate、如本節所述。
+
+重新配置作業會在此階段開始時暫停。此程序大部分是自動化的；此作業會暫停、以便您檢查其狀態。您必須手動恢復作業。此外、您必須驗證SAN LIF是否已成功移至節點3。
+
+如果netboot node3沒有ONTAP 安裝在node1上的相同版本的支援功能、您就需要netboot node3。安裝node3之後、請從ONTAP 儲存在Web伺服器上的Image9映像啟動節點3。接著、您可以依照中的指示、將正確的檔案下載到開機媒體裝置、以供後續系統開機 link:prepare_for_netboot.html["準備netboot"]。
+
+.重要事項：
+* 如果您要升級連接至儲存陣列的V系列系統、或是升級連接FlexArray 至儲存陣列的含有「虛擬化」軟體的系統、則必須完成 <<auto_install3_step1,步驟1.>> 透過 <<auto_install3_step21,步驟21>>、然後保留本節、並依照中的指示進行 link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["在節點3上設定FC連接埠"] 和 link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3["檢查並設定節點3上的UTA/UTA2連接埠"] 視需要在維護模式中輸入命令。接著您必須返回本節並繼續 <<auto_install3_step23,步驟23>>。
+* 如果您要升級具有儲存磁碟的系統、則必須完成此一整節、然後前往 link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3["在節點3上設定FC連接埠"] 和 link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3["檢查並設定節點3上的UTA/UTA2連接埠"] 區段、在叢集提示字元中輸入命令。
+
+
+.步驟
+. [[[auto_install3_step1]]請確定您有節點3的機架空間。
++
+如果節點1和節點2位於不同的機箱中、您可以將節點3放在與節點1相同的機架位置。但是、如果節點1與節點2位於同一個機箱中、則您需要將節點3放入自己的機架空間、最好是靠近節點1的位置。
+
+. [[[auto_install3_step2]]依照節點機型的安裝與設定指示_、在機架中安裝節點3。
++
+
+NOTE: 如果您要升級到同一機箱中同時具有兩個節點的系統、請在機箱中安裝node4以及node3。如果沒有、當您開機節點3時、節點的行為就會如同雙機箱組態、當您開機節點4時、節點之間的互連就不會出現。
+
+. [[auto_install3_step3]]纜線節點3、將連線從節點1移至節點3。
++
+使用FlexArray 節點3平台的_安裝與設定說明_或_《_關於虛擬化安裝的要求與參考_》、適當的磁碟櫃指南、以及_ ONTAP 《_》9《高可用度組態指南_》、來連接下列連線。
+
++
+請參閱 link:other_references.html["參考資料"] 若要連結至「_Estring FlexArray 虛擬化安裝要求與參考資料_」和「_SUR9 ONTAP 高可用度組態指南」。
+
++
+** 主控台（遠端管理連接埠）
+** 叢集連接埠
+** 資料連接埠
+** 叢集與節點管理連接埠
+** 儲存設備
+** SAN組態：iSCSI乙太網路和FC交換器連接埠
++
+
+NOTE: 您可能不需要將互連卡或叢集互連纜線連線從節點1移至節點3、因為大多數平台機型都有獨特的互連卡模式。若要進行支援、您需要將FC-VI纜線連線從節點1移至節點3。MetroCluster如果新主機沒有FC-VI卡、您可能需要移動FC-VI卡。
+
+
+
+. [[auto_install3_step4]]開啟節點3的電源、然後在主控台終端按Ctrl-C存取開機環境提示字元、以中斷開機程序。
++
+如果您要升級到同一機箱中同時具有兩個節點的系統、節點4也會重新開機。不過、您可以忽略node4開機、直到稍後再執行。
+
++
+
+NOTE: 當您啟動節點3時、可能會看到下列警告訊息：
+
++
+....
+WARNING: The battery is unfit to retain data during a power outage. This is likely because the battery is discharged but could be due to other temporary conditions.
+When the battery is ready, the boot process will complete and services will be engaged.
+To override this delay, press 'c' followed by 'Enter'
+....
+. [[auto_install3_step5]]如果您在中看到警告訊息 <<auto_install3_step4,步驟4.>>、請採取下列行動：
++
+.. 檢查可能指出NVRAM電池電量不足以外問題的任何主控台訊息、並視需要採取任何必要的修正行動。
+.. 讓電池充電並完成開機程序。
++
+
+WARNING: *注意：請勿置換延遲；若不讓電池充電、可能導致資料遺失。*
+
++
+
+NOTE: 請參閱 link:prepare_for_netboot.html["準備netboot"]。
+
+
+
+

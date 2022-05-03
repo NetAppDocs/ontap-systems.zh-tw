@@ -1,0 +1,179 @@
+---
+permalink: a320/bootmedia-transfer-boot-image.html 
+sidebar: sidebar 
+keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive 
+summary: 您安裝的替換開機媒體沒有開機映像、因此您需要使用USB快閃磁碟機來傳輸開機映像。 
+---
+= 使用USB隨身碟AFF 將開機映像傳輸到開機媒體- ImageA320
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您安裝的替換開機媒體沒有開機映像、因此您需要使用USB快閃磁碟機來傳輸開機映像。
+
+* 您必須擁有一個USB快閃磁碟機、其格式必須為MBR/fat32、容量至少為4GB
+* 與執行受損控制器相同ONTAP 版本之圖片的一份複本。您可以從NetApp支援網站的「下載」區段下載適當的映像
++
+** 如果已啟用NVE、請使用NetApp Volume Encryption下載映像、如下載按鈕所示。
+** 如果未啟用NVE、請下載不含NetApp Volume Encryption的映像、如下載按鈕所示。
+
+
+* 如果您的系統是HA配對、則必須有網路連線。
+* 如果您的系統是獨立式系統、則不需要網路連線、但在還原var檔案系統時、您必須執行額外的重新開機。
++
+.. 從NetApp支援網站下載並複製適當的服務映像到USB快閃磁碟機。
++
+... 將服務映像下載到筆記型電腦的工作空間。
+... 解壓縮服務映像。
++
+
+NOTE: 如果您使用Windows擷取內容、請勿使用WinZipto擷取netboot映像。使用其他擷取工具、例如7-Zip或WinRAR。
+
++
+解壓縮服務映像檔中有兩個資料夾：
+
++
+**** 開機
+**** efi
+
+
+... 將efi資料夾複製到USB快閃磁碟機的頂端目錄。
++
+USB快閃磁碟機應具有受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
+
+... 從筆記型電腦中取出USB隨身碟。
+
+
+.. 如果您尚未這麼做、請關閉通風管。
+.. 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
+.. 重新安裝纜線管理裝置、並視需要重新連接系統。
++
+重新啟用時、請記得重新安裝移除的媒體轉換器（SFP或QSFP）。
+
+.. 將電源線插入電源供應器、然後重新安裝電源線固定器。
+.. 將USB隨身碟插入控制器模組的USB插槽。
++
+請確定您將USB隨身碟安裝在標示為USB裝置的插槽中、而非USB主控台連接埠中。
+
+.. 完成控制器模組的重新安裝：
++
+image::../media/drw_a320_controller_install_animated_gif.png[DRW A320控制器安裝動畫Gif]
+
++
+... 確定鎖銷臂鎖定在延伸位置。
+... 使用栓鎖臂、將控制器模組推入機箱支架、直到停止為止。
++
+
+NOTE: 請勿向下推鎖銷臂頂端的鎖定機制。如此一來、請提高鎖定機制、並禁止將控制器模組滑入機箱。
+
+... 按住鎖定機制頂端的橘色彈片。
+... 將控制器模組輕推入機箱支架、直到與機箱邊緣齊平為止。
++
+
+NOTE: 鎖定機制臂滑入機箱。
+
++
+控制器模組一旦完全插入機箱、就會開始開機。
+
+... 釋放栓鎖、將控制器模組鎖定到位。
+... 如果您尚未重新安裝纜線管理裝置、請重新安裝。
+
+
+.. 在載入程式提示字元下按Ctrl-C停止、以中斷開機程序。
++
+如果您錯過此訊息、請按Ctrl-C、選取開機至維護模式的選項、然後停止控制器以開機至載入器。
+
+.. 儘管保留了環境變數和bootargs、您仍應使用「printenv bootargs name」命令、檢查是否已針對您的系統類型和組態正確設定所有必要的開機環境變數和bootargs、並使用「show variable-name <value>」命令修正任何錯誤。
++
+... 檢查開機環境變數：
++
+**** bootarg.init.boot_clustered`
+**** 《合作夥伴sysid》
+**** bootarg.init.flash_optimized` for AFF The FeC190/AFF A220（All Flash FAS ）
+**** bootarg.init.san_optimized`適用於AFF ESA220和All SAN Array
+**** bootarg.init.switchless_cluster.enable`
+
+
+... 如果已啟用外部金鑰管理程式、請檢查「肯夫」ASUP輸出中所列的bootarg值：
++
+**** 「bootarg.storageencryption支援<value>'
+**** 「bootarg.keymanager.support <value>」
+**** 「kmip.init.interface <value>」
+**** 「kmip.init.ipaddr <value>」
+**** 「kmip.init.netmask <value>」
+**** 「kmip.init.gateway <value>」
+
+
+... 如果已啟用Onboard Key Manager、請檢查「kenv」ASUP輸出中所列的bootarg值：
++
+**** 「bootarg.storageencryption支援<value>'
+**** 「bootarg.keymanager.support <value>」
+**** 「bootarg.onal_keymanager <value>」
+
+
+... 使用「shavenv」命令儲存您變更的環境變數
+... 使用「prontenv _variable-name_」命令確認您的變更。
+
+
+.. 在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：「boot_recovery」
++
+映像會從USB隨身碟下載。
+
+.. 出現提示時、請輸入映像名稱、或接受螢幕上方括弧內顯示的預設映像。
+.. 安裝映像之後、請開始還原程序：
++
+... 記錄螢幕上顯示的受損控制器IP位址。
+... 系統提示您還原備份組態時、請按「y」。
+... 當系統提示覆寫/etc/ssh / ssh主機_dsa_key時、請按「y」。
+
+
+.. 從處於進階權限層級的合作夥伴控制器、使用上一個步驟中記錄的IP位址開始組態同步：「系統節點還原-備份-節點本機-目標位址_受損節點_ip_address_」
+.. 如果還原成功、請在系統提示使用還原的複本時、按下受損控制器上的「y」。
+.. 當您看到確認備份程序成功時、請按「y」、然後在系統提示您重新啟動控制器時按「y」。
+.. 確認環境變數設定符合預期。
++
+... 將控制器移至載入器提示字元。
++
+在這個畫面提示字元中ONTAP 、您可以發出命令系統節點halt -skip-lif-emation-te-bute-shutf true -ignical-warnings true -bute-takeover true。
+
+... 使用「prontenv」命令檢查環境變數設定。
+... 如果環境變數未如預期設定、請使用'采 集_環境變數名稱____變更值___命令加以修改。
+... 使用「shavenv」命令儲存變更。
+... 重新啟動控制器。
+
+
+.. 重新啟動的受損控制器顯示「正在等待恢復...」訊息、請從健全的控制器執行恢復：
++
+[cols="1,2"]
+|===
+| 如果您的系統處於... | 然後... 
+
+
+ a| 
+HA配對
+ a| 
+當受損控制器顯示「正在等待恢復...」訊息之後、請從健全的控制器執行恢復：
+
+... 從健全的控制器：「torage容錯移轉恢復-ofnode_node_name」
++
+受損的控制器會恢復其儲存設備、完成開機、然後重新開機、再由健全的控制器接管。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html["《供應能力設定指南》（英文）ONTAP"]
+
+... 使用「儲存容錯移轉show-f恢復」命令來監控還原作業的進度。
+... 恢復作業完成後、請使用「儲存容錯移轉show」命令確認HA配對正常、而且可以接管。
+... 如果您使用儲存容錯移轉修改命令停用自動還原功能、請將其還原。
+
+
+|===
+.. 結束健全控制器上的進階權限層級。
+
+
+

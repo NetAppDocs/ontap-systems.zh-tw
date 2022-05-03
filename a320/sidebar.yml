@@ -1,0 +1,83 @@
+---
+section: a320
+title: 作業系統：AFF A320
+url: "/a320/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定AFF
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/a320/install-setup.html"
+  - title: 快速步驟
+    url: "/a320/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/a320/install-videos.html"
+  - title: 詳細步驟
+    url: "/a320/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: 不需要維護的資料AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: VA320開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/a320/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/a320/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/a320/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/a320/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/a320/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/a320/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/a320/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: VA320機箱AFF
+    entries:
+    - title: 總覽
+      url: "/a320/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a320/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/a320/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/a320/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器模組
+    pdf-filename: VA320控制器模組AFF
+    entries:
+    - title: 總覽
+      url: "/a320/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a320/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/a320/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/a320/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/a320/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/a320/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: VA320 DIMM AFF
+    url: "/a320/dimm-replace.html"
+  - title: 風扇
+    pdf-filename: 部分A320風扇模組AFF
+    url: "/a320/fan-swap-out.html"
+  - title: NVDIMM
+    pdf-filename: VA32 NVDIMM AFF
+    url: "/a320/nvdimm-replace.html"
+  - title: NVDIMM電池
+    pdf-filename: NVMA320 NVDIMM電池AFF
+    url: "/a320/nvdimm-battery-replace.html"
+  - title: PCIe卡
+    pdf-filename: 資訊卡A320 PCIe卡AFF
+    url: "/a320/pci-cards-and-risers-replace.html"
+  - title: 電源供應器
+    pdf-filename: 供應器AFF
+    url: "/a320/power-supply-replace.html"
+  - title: 即時時鐘電池
+    pdf-filename: Real-Time時鐘電池AFF
+    url: "/a320/rtc-battery-replace.html"

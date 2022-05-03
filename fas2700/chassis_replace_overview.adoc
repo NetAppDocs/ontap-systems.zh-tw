@@ -1,0 +1,21 @@
+---
+permalink: fas2700/chassis-replace-overview.html 
+sidebar: sidebar 
+keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap 
+summary: 您可以將受損的機箱更換為與受損機箱相同機型的新機箱。 
+---
+= 機箱更換總覽- AFF EFASA220與FAS2700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要更換機箱、您必須將電源供應器、硬碟機、控制器模組或模組從受損機箱移至新機箱、然後將受損機箱從設備機架或系統機櫃中換成與受損機箱相同機型的新機箱。
+
+系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+* 您可以將此程序用於ONTAP 系統支援的所有版本的功能。
+* 此程序的撰寫假設是您將所有磁碟機和控制器模組或模組移至新機箱、而且機箱是NetApp的新元件。
+* 此程序會造成中斷。對於雙控制器叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。
+

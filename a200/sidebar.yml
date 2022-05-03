@@ -1,0 +1,77 @@
+---
+section: a200
+title: VA200系統AFF
+url: "/a200/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定AFF
+  entries:
+  - title: 叢集組態工作表
+    url: "/a200/install-worksheet-linkout.html"
+  - title: 選擇安裝與設定體驗
+    url: "/a200/install-setup.html"
+  - title: 快速步驟
+    url: "/a200/install-setup-linkout.html"
+  - title: 影片步驟
+    url: "/a200/install-video-linkout.html"
+- title: 維護
+  pdf-filename: VA200維護AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: VA200開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/a200/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/a200/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/a200/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/a200/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/a200/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/a200/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/a200/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: VA200機箱AFF
+    entries:
+    - title: 總覽
+      url: "/a200/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a200/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/a200/chassis-replace-move-hardware.html"
+    - title: 還原組態
+      url: "/a200/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器模組
+    pdf-filename: VA200控制器模組AFF
+    entries:
+    - title: 總覽
+      url: "/a200/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a200/controller-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/a200/controller-replace-move-hardware.html"
+    - title: 還原組態
+      url: "/a200/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/a200/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/a200/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: VA200 DIMM AFF
+    url: "/a200/dimm-replace.html"
+  - title: 磁碟機
+    pdf-filename: VA200磁碟機AFF
+    url: "/a200/drive-replace.html"
+  - title: NVMEM電池
+    pdf-filename: NVMA200 NVMEM電池AFF
+    url: "/a200/nvmem-nvram-battery-replace.html"
+  - title: 電源供應器
+    pdf-filename: 供應器AFF
+    url: "/a200/power-supply-swap-out.html"
+  - title: 即時時鐘電池
+    pdf-filename: Real-Time時鐘電池AFF
+    url: "/a200/rtc-battery-replace.html"

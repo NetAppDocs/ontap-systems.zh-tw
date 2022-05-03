@@ -1,0 +1,31 @@
+---
+permalink: c190/bootmedia-replace-overview.html 
+sidebar: sidebar 
+keywords: AFF c190, nondisruptive, disruptive, replace the boot media 
+summary: 開機媒體會儲存系統開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。 
+---
+= 開機媒體更換總覽- AFF 《The Boot Media replacement -》（《更新媒體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+開機媒體會儲存系統在開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。
+
+您必須擁有一個格式化為FAT32的USB快閃磁碟機、並具有適當的儲存容量、才能容納「image_xxx.tgz」檔案。
+
+* 取代開機媒體的不中斷和破壞性方法都需要還原var檔案系統：
++
+** 若要進行不中斷的更換、HA配對必須連線至網路、才能還原var檔案系統。
+** 若要進行中斷更換、您不需要網路連線即可還原var檔案系統、但此程序需要重新開機兩次。
+
+
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請務必在正確的控制器上套用下列步驟中的命令：
++
+** _減損_控制器是您要執行維護的控制器。
+** _Healthy控制器是受損控制器的HA合作夥伴。
+
+
+

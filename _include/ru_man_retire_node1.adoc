@@ -1,0 +1,191 @@
+= 
+:allow-uri-read: 
+
+
+若要淘汰節點1、您需要停用與節點2的HA配對、正確關閉節點1、然後將其從機架或機箱中移除。
+
+.步驟
+. 驗證叢集中的節點數目：
++
+「叢集展示」
+
++
+系統會顯示叢集中的節點、如下列範例所示：
+
++
+[listing]
+----
+cluster::> cluster show
+Node                  Health  Eligibility
+--------------------- ------- ------------
+node1                 true    true
+node2                 true    true
+2 entries were displayed.
+----
+. [[man_retle_1_step2]]停用儲存容錯移轉（視情況而定）：
++
+[cols="35,65"]
+|===
+| 如果叢集是... | 然後... 
+
+
+| 雙節點叢集  a| 
+.. 在任一節點上輸入下列命令、即可停用叢集高可用度：
+
+
+「叢集ha modify -configured假」
+
+.. 停用儲存容錯移轉：
+
+
+「torage容錯移轉修改-node1>-enabled假」
+
+
+
+| 具有兩個以上節點的叢集 | 停用儲存容錯移轉：「儲存容錯移轉修改節點<node1>-enabled假」 
+|===
+. 確認儲存容錯移轉已停用：
++
+「容錯移轉顯示」
+
++
+以下範例顯示停用節點的儲存容錯移轉時、「儲存容錯移轉show」命令的輸出：
+
++
+[listing]
+----
+ cluster::> storage failover show
+                               Takeover
+ Node           Partner        Possible State Description
+ -------------- -------------- -------- -------------------------------------
+ node1          node2          false    Connected to node2, Takeover
+                                        is not possible: Storage failover is
+                                        disabled
+
+ node2          node1          false    Node owns partner's aggregates as part
+                                        of the nondisruptive controller upgrade
+                                        procedure. Takeover is not possible:
+                                        Storage failover is disabled
+ 2 entries were displayed.
+----
+. 驗證資料LIF狀態：
++
+「網路介面show -role data -curr-node2>-home-node1>'
+
++
+查看「*狀態管理/每*」欄、查看是否有任何生命期中斷。如果有任何生命中斷、請參閱 link:troubleshoot.html["故障"] 區段。
+
+. 請採取下列其中一項行動：
++
+[cols="35,65"]
+|===
+| 如果叢集是... | 然後... 
+
+
+| 雙節點叢集 | 前往 <<man_retire_1_step6,步驟6.>>。 
+
+
+| 具有兩個以上節點的叢集 | 前往 <<man_retire_1_step8,步驟8.>>。 
+|===
+. [[man_retar_1_step6]]存取任一節點上的進階權限層級：
++
+"進階權限"
+
+. [[step7]確認叢集HA已停用：
++
+《叢集表演》
+
++
+系統會顯示下列訊息：
+
++
+[listing]
+----
+High Availability Configured: false
+----
++
+如果叢集HA尚未停用、請重複執行 <<man_retire_1_step2,步驟2>>。
+
+. [[man_retare_1_step8]檢查node1目前是否保留epsilon：
++
+「叢集展示」
+
++
+由於叢集中有可能會有一個節點數目相同的連結、因此一個節點會有額外的分數投票權重稱為epsilon。請參閱 link:other_references.html["參考資料"] 如需詳細資訊、請連結至_系統管理參考_。
+
++
+
+NOTE: 如果您有四節點叢集、則epsilon可能位於叢集中不同HA配對的節點上。
+
++
+以下範例顯示node1包含epsilon：
+
++
+[listing]
+----
+ cluster::*> cluster show
+
+ Node                 Health  Eligibility  Epsilon
+ -------------------- ------- ------------ ------------
+ node1                true    true         true
+ node2                true    true         false
+----
+. 如果node1持有epsilon、則在節點上標記epsilon「假」、以便將其傳輸至node2：
++
+「cluster modify -node1>-epsilon假」
+
+. 將epsilon傳輸到node2、在node2上標記epsilon「true（真））：
++
+「cluster modify -node2>-epsilon true」
+
+. 驗證是否發生了對node2的變更：
++
+「叢集展示」
+
++
+[listing]
+----
+ cluster::*> cluster show
+ Node                 Health  Eligibility  Epsilon
+ -------------------- ------- ------------ ------------
+ node1                true    true         false
+ node2                true    true         true
+----
++
+node2的epsilon現在應該是true、node1的epsilon應該是假的。
+
+. 確認設定是否為雙節點無交換器叢集：
++
+「網路選項、無交換式叢集展示」
+
++
+[listing]
+----
+ cluster::*> network options switchless-cluster show
+
+ Enable Switchless Cluster: false/true
+----
++
+此命令的值必須符合系統的實體狀態。
+
+. 返回管理層級：
++
+「et -priv. admin」
+
+. 從node1提示字元中停止node1：
++
+「System Node halt -Node <node1>'」（系統節點停止節點<node1>'）
+
++
+
+WARNING: *注意*：如果節點1與節點2位於同一個機箱中、請勿使用電源開關或拔下電源線來關閉機箱電源。如果您這麼做、正在處理資料的節點2將會停機。
+
+. 當系統提示您確認要停止系統時、請輸入「y」。
++
+節點會在開機環境提示字元停止。
+
+. 當節點1顯示開機環境提示時、請將其從機箱或機架中移除。
++
+您可以在升級完成後取消委任節點1。請參閱 link:decommission_old_system.html["取消委任舊系統"]。
+
+

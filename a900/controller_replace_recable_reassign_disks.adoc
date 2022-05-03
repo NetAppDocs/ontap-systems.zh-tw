@@ -1,0 +1,150 @@
+---
+permalink: a900/controller_replace_recable_reassign_disks.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 重新安裝系統- AFF VA900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+重新啟用儲存設備和網路連線、以繼續執行更換程序。
+
+
+
+== 步驟1：重新安裝系統
+
+執行診斷之後、您必須重新連接控制器模組的儲存設備和網路連線。
+
+.步驟
+. 重新安裝系統。
+. 使用確認纜線正確無誤 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+.. 下載並安裝Config Advisor 此功能。
+.. 輸入目標系統的資訊、然後按一下「Collect Data（收集資料）」。
+.. 按一下「纜線」索引標籤、然後檢查輸出。請確定所有磁碟櫃均已顯示、且所有磁碟均顯示在輸出中、以修正您發現的任何纜線問題。
+.. 按一下適當的索引標籤、然後檢查Config Advisor 來自NetApp的輸出、檢查其他纜線。
+
+
+
+
+
+NOTE: 系統ID和磁碟指派資訊位於NVRAM模組中、此模組與控制器模組分開、不受控制器模組更換影響。
+
+
+
+== 步驟2：重新指派磁碟
+
+[role="lead"]
+如果儲存系統位於HA配對中、則在程序結束時進行恢復時、新控制器模組的系統ID會自動指派給磁碟。您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。
+
+[role="lead"]
+此程序僅適用於ONTAP HA配對中執行的系統。
+
+. 如果_replaced_控制器處於維護模式（顯示"*>"提示）、請結束維護模式、然後進入載入程式提示：「halt（停止）」
+. 在_replace_控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」
+. 請等到_replace_控制器主控台顯示「waiting for恢復...（正在等待恢復...）」訊息、然後從健全的控制器驗證是否已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」
++
+在命令輸出中、您應該會看到一則訊息、指出受損控制器上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
+
++
+[listing]
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+. 從健全的控制器、確認已儲存任何核心傾印：
++
+.. 變更為進階權限等級：「et -priv榮幸 進階」
++
+當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
+
+.. 儲存任何核心傾印：「系統節點執行節點_nocal-node-name_合作夥伴儲存資源」
+.. 等待Savecore命令完成後再發出恢復。
++
+您可以輸入下列命令來監控savecore命令的進度：「ystem節點run -node-node-name_合作夥伴savecore -ss」
+
+.. 返回管理員權限等級：「et -priv. admin」
+
+
+. 退回控制器：
++
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
++
+_replacement控制器會恢復其儲存設備並完成開機。
+
++
+如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動恢復命令"^] 取代否決的主題。
+
+.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
++
+「儲存容錯移轉show」命令的輸出不應包含在合作夥伴訊息中變更的系統ID。
+
+
+
+. 驗證是否已正確分配磁碟：「torage disk show -所有權」
++
+屬於_replaced_控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：
+
++
+[listing]
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+. 如果系統採用MetroCluster 的是一套不全功能的組態、請監控控制器的狀態：MetroCluster 「不只是顯示節點」
++
+更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「MetroCluster 'scee-node-SystemID'」命令輸出會顯示舊的系統ID、直到MetroCluster 該組態恢復正常狀態為止。
+
+. 如果控制器是MetroCluster 以支援功能為基礎的組態、請MetroCluster 視所用的情況而定、確認如果原始擁有者是災難站台上的控制器、DR主ID欄位會顯示磁碟的原始擁有者。
++
+如果下列兩項條件均為真、則必須執行此動作：
+
++
+** 此功能組態處於切換狀態。MetroCluster
+** _replacement控制器是災難站台上磁碟的目前擁有者。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"^] 主題：
+
+
+
+. 如果您的系統使用MetroCluster 的是E驗 證組態、請確認每個控制器都已設定：「MetroCluster E節點 顯示-欄位組態狀態」
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
+
