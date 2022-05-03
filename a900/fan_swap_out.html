@@ -1,0 +1,6390 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>換掉風扇AFF -《不只是我的問題》</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="換掉風扇AFF -《不只是我的問題》" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/ontap-systems/a900/fan_swap_out.html" />
+	<meta property="og:description" content="若要在不中斷服務的情況下切換風扇模組、您必須執行特定的工作順序。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/ontap-systems/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="若要在不中斷服務的情況下切換風扇模組、您必須執行特定的工作順序。">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/zh-tw/ontap-systems/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-systems/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-tw/ontap-systems/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-systems/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-systems/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-systems/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-tw/ontap-systems/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-tw/ontap-systems/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-tw/ontap-systems/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-tw/ontap-systems/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-tw/ontap-systems/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-systems/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-systems/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-tw/ontap-systems/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/ontap-systems/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-tw/ontap-systems/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/ontap-systems/js/na-search.js'></script><script src='/zh-tw/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-tw/ontap-systems/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-systems/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-tw/ontap-systems/js/na-utility.js'></script>
+  <script src='/zh-tw/ontap-systems/js/clouddocs.js'></script>
+  <script src='/zh-tw/ontap-systems/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-tw/ontap-systems/js/toc.js'></script>
+  <script src='/zh-tw/ontap-systems/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-tw/ontap-systems/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/ontap-systems/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/ontap-systems/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/ontap-systems/js/jszip.min.js'></script>
+  <script src='/zh-tw/ontap-systems/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[換掉風扇AFF -《不只是我的問題》](https://docs.netapp.com/zh-tw/ontap-systems/a900/fan_swap_out.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-systems/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a900/fan_swap_out.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-systems/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-systems/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此頁面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">產品與解決方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支援與訓練</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社群</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">部落格</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客戶成功案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-tw/ontap-systems/search.html"
+          data-type="widget" 
+          data-placeholder="搜尋文件" 
+          data-no-results-found="找不到符合 {query} 的相關結果。" 
+          data-did-you-mean="搜尋 {suggestion}。" 
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
+          data-results-found="找到 {hitCount} 筆結果"  
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">繁體中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-systems/a900/fan_swap_out.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/a900/fan_swap_out.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/ontap-systems/a900/fan_swap_out.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/a900/fan_swap_out.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/ontap-systems/a900/fan_swap_out.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-tw/ontap-systems/pdfs/fullsite-sidebar/系統文件AFF_FAS.pdf" >
+          <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/C190系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            C190系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/C190維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/C190開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/C190機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/HC190控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA200系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            VA200系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA200維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA200開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA200機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA200控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA220系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            VA220系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定VA220_AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA220維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA220開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FASA220與FAS2700機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA220控制器AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA250系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            VA250系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA250維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA250開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA250機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA250控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/系統維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA300開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA300機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/部分A300控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/作業系統_AFF_A320.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            作業系統：AFF A320
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/不需要維護的資料AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA320開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA320機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA320控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA400系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            VA400系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA400維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA400開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA400機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA400控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/部分A700系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            部分A700系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/資料保護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA700開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA700機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/部分A700控制器AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/資訊單元A700_X91148A模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            X91148A模組
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/S4A700s系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            S4A700s系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定SBIOS_A700s_AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/以A700s維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/S4A700s開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/S4A700s機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/S4A700s控制器AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/風扇.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            風扇
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA800維護AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/解答A800開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/解答A800機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA800控制器模組AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/VA900系統AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            VA900系統AFF
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/開機媒體.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/機箱.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/控制器模組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-tw/ontap-systems/pdfs/pages/a900/fan_swap_out.pdf" >
+    <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/系統FAS.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            系統FAS
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS500f系統.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS500f系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS500f安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS500f維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS500f開機媒體.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS500f機箱.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS500f控制器模組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2600系統.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS2600系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2600安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2600維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2600開機媒體.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2600機箱.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2600控制器模組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2700系統.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS2700系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2700安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2700維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2700開機媒體.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2700機箱.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS2700控制器.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8200系統.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS8200系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8200安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8200維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8200開機媒體.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8200機箱.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8200控制器模組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8300和FAS8700系統.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS8300和FAS8700系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8300和FAS8700安裝與設定AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8300和FAS8700維持不變AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8300和FAS8700開機媒體AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8300和FAS8700機箱AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS8300和FAS8700控制器AFF.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000系統.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS9000系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000開機媒體.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            開機媒體
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000機箱.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機箱
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000控制器.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            控制器模組
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/FAS9000_X91148A模組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            X91148A模組
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/系統層級診斷.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            系統層級診斷
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/磁碟機櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            磁碟機櫃
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/NS224磁碟櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            NS224磁碟櫃
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/NS224磁碟櫃安裝與纜線.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與連接纜線
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/NS224機櫃維護.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/SAS磁碟櫃搭配IOM12模組.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            SAS磁碟櫃搭配IOM12模組
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝IOM12模組及纜線的機櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝與連接纜線
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/SAS佈線規則_工作表和範例.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            SAS佈線規則、工作表和範例
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/具有IOM12模組的磁碟櫃維持不變.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            維護
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/機櫃與軌道套件.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            機櫃與軌道套件
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/42U_1_280公釐系統機櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            42U 1、280公釐系統機櫃
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/準備安裝機櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            準備安裝機櫃
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝機櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            安裝機櫃
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-systems/pdfs/sidebar/翻轉機櫃前側擋門.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
+            翻轉機櫃前側擋門
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-tw/ontap-systems/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/index.html">
+        系統文件AFF FAS
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開始使用</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/whats-new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/rel-notes.html">
+        版本資訊
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-tw/ontap-systems/c190/index.html">
+        <div class="na-navbar-padding"> C190系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/chassis-replace-complete-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/c190/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a200/index.html">
+        <div class="na-navbar-padding"> VA200系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/install-worksheet-linkout.html">
+        叢集組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/install-setup-linkout.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/install-video-linkout.html">
+        影片步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/chassis-replace-complete-system-restore-rma.html">
+        還原組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/controller-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/controller-replace-system-config-restore-and-verify.html">
+        還原組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a200/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a220/index.html">
+        <div class="na-navbar-padding"> VA220系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/caching-module-replace.html">
+        快取模組
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-complete-system-restore-rma.html">
+        還原組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-move-hardware.html">
+        更換控制器硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a250/index.html">
+        <div class="na-navbar-padding"> VA250系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/fan-replace.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/mezzanine-replace.html">
+        夾層卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/power-supply-replace.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a250/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a300/index.html">
+        <div class="na-navbar-padding"> 系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/install-worksheet-linkout.html">
+        叢集組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/install-setup-linkout.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/install-video-linkout.html">
+        影片步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-recovery-image-boot-options.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-2n-mcc-switchback.html">
+        切換回MetroCluster 還原組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/chassis-replace-complete-system-restore-rma.html">
+        還原組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/controller-replace-restore-system-rma.html">
+        完整更換
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/pci-cards-and-risers-replace.html">
+        PCIe卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a300/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a320/index.html">
+        <div class="na-navbar-padding"> 作業系統：AFF A320</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/nvdimm-battery-replace.html">
+        NVDIMM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/pci-cards-and-risers-replace.html">
+        PCIe卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/power-supply-replace.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a320/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a400/index.html">
+        <div class="na-navbar-padding"> VA400系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-recovery-image-boot-options.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-2n-mcc-switchback.html">
+        切換回復MetroCluster 此組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/controller-replace-recable-reassign-disks.html">
+        重新安裝系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/nvdimm-battery-replace.html">
+        NVDIMM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/pci-cards-and-risers-replace.html">
+        PCIe或夾層卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/power-supply-replace.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a400/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a700/index.html">
+        <div class="na-navbar-padding"> 部分A700系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-recovery-image-boot-options.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-2n-mcc-switchback.html">
+        切換回復MetroCluster 此組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/caching-module-and-core-dump-module-replace.html">
+        快取模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/caching-module-hot-swap.html">
+        快取模組（熱交換）
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-complete-system-restoration.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/dcpm-nvram10-battery-replace.html">
+        DCPM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/pci-cards-and-risers-replace.html">
+        I/O模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/led-module-replace.html">
+        LED USB模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/nvram-module-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/rtc-battery-replace.html">
+        實時時鐘電池
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> X91148A模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/x91148a-module-install-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/x91148a-modules-with-open-slots-add.html">
+        含開放式插槽的部分A700系統AFF
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/x91148a-modules-with-no-open-slots-add.html">
+        不含開放式插槽的系統AFF
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a700s/index.html">
+        <div class="na-navbar-padding"> S4A700s系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/install-worksheet-linkout.html">
+        叢集組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/install-setup-linkout.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/install-video-linkout.html">
+        影片步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-shutdown.html">
+        關閉節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-transfer-boot-image.html">
+        傳輸開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/controller-replace-restore-system-rma.html">
+        完成更換程序
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/drive-replace.html">
+        磁碟機
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 風扇</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
+        關閉受損節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-remove.html">
+        卸下控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-replace.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
+        重新安裝控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+        NVRAM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/pci-cards-and-risers-replace.html">
+        PCIe卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/system-level-diags-linkout.html">
+        系統層級診斷
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a800/index.html">
+        <div class="na-navbar-padding"> 系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/controller-replace-restore-system-rma.html">
+        完整更換
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/fan-replace.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/nvdimm-battery-replace.html">
+        NVDIMM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/pci-cards-and-risers-replace.html">
+        PCIe卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/power-supply-replace.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a800/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/a900/index.html">
+        <div class="na-navbar-padding"> VA900系統AFF</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/install_setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/install_quick_guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/install_videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/install_detailed_guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/add_io_module.html">
+        新增I/O模組
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_replace_overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_encryption_preshutdown_checks.html">
+        預先關機檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_impaired_controller_shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_replace.html">
+        傳輸開機映像並更換故障的開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_recovery_image.html">
+        開機恢復映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_encryption_restore.html">
+        OKM、NSE和NVE的開機後媒體更換步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/bootmedia_complete_rma.html">
+        將故障零件歸還給NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/chassis_replace_overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/chassis_replace_shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/chassis_replace_move_hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/chassis_replace_complete_system_restore_rma.html">
+        還原及驗證組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/controller_replace_overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/controller_replace_shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/controller_replace.html">
+        更換控制器模組硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/controller_replace_system_config_restore_and_verify.html">
+        還原並驗證系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/controller_replace_recable_reassign_disks.html">
+        重新安裝系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/controller_replace_complete_system_restoration_rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/dimm_replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/dcpm_NVRAM11_battery_replace.html">
+        斷點控制電源模組
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/fan_swap_out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/pci_cards_and_risers_replace.html">
+        I/O模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/led_module_replace.html">
+        LED USB模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/nvram_module_or_nvram_dimm_replacement.html">
+        NVRAM模組和/或NVRAM DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/power_supply_swap_out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a900/rtc_battery_replace.html">
+        實時時鐘電池
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 系統FAS</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-tw/ontap-systems/fas500f/index.html">
+        <div class="na-navbar-padding"> FAS500f系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-shutdown.html">
+        關閉節點
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/fan-replace.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/mezzanine-replace.html">
+        夾層卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/nvmem-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/power-supply-replace.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas500f/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/fas2600/index.html">
+        <div class="na-navbar-padding"> FAS2600系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/install-worksheet-linkout.html">
+        叢集組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/install-setup-linkout.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/install-video-linkout.html">
+        影片步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/caching-module-replace.html">
+        快取模組
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/chassis-replace-complete-system-restore-rma.html">
+        還原系統組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/drive-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2600/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/fas2700/index.html">
+        <div class="na-navbar-padding"> FAS2700系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/caching-module-replace.html">
+        快取模組
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/chassis-replace-complete-system-restore-rma.html">
+        還原組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-move-hardware.html">
+        更換控制器硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/drive-replace.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas2700/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/fas8200/index.html">
+        <div class="na-navbar-padding"> FAS8200系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/install-worksheet-linkout.html">
+        叢集組態工作表
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/install-setup-linkout.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/install-video-linkout.html">
+        影片步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-replace.html">
+        更換開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-recovery-image-boot-options.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-2n-mcc-switchback.html">
+        切換回復MetroCluster 此組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/caching-module-replace.html">
+        快取模組
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/chassis-replace-complete-system-restore-rma.html">
+        還原組態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/controller-replace-restore-system-rma.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/nvmem-nvram-battery-replace.html">
+        NVMEM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/pci-cards-and-risers-replace.html">
+        PCIe卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8200/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/fas8300/index.html">
+        <div class="na-navbar-padding"> FAS8300和FAS8700系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-recovery-image-boot-options.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-2n-mcc-switchback.html">
+        切換回復MetroCluster 此組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/caching-module-replace.html">
+        快取模組
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/controller-replace-move-hardware.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/controller-replace-restore-system-rma.html">
+        完整更換
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/nvdimm-battery-replace.html">
+        NVDIMM電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/pci-cards-and-risers-replace.html">
+        PCIe或夾層卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/power-supply-replace.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas8300/rtc-battery-replace.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/fas9000/index.html">
+        <div class="na-navbar-padding"> FAS9000系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-setup.html">
+        選擇安裝與設定體驗
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-quick-guide.html">
+        快速步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-videos.html">
+        影片步驟
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/install-detailed-guide.html">
+        詳細步驟
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開機媒體</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-encryption-preshutdown-checks.html">
+        檢查內建加密金鑰
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-impaired-controller-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-replace.html">
+        取代開機映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-recovery-image-boot-options.html">
+        開機還原映像
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-2n-mcc-switchback.html">
+        切換回復MetroCluster 此組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-encryption-restore.html">
+        還原OKM、NSE和NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/bootmedia-complete-rma.html">
+        將故障零件退回NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/caching-module-and-core-dump-module-replace.html">
+        快取模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/caching-module-hot-swap.html">
+        快取模組（熱交換）
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機箱</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-move-hardware.html">
+        更換硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/chassis-replace-complete-system-restore-rma.html">
+        完整更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-shutdown.html">
+        關閉受損的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace.html">
+        更換控制器模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-system-config-restore-and-verify.html">
+        還原系統組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-recable-reassign-disks.html">
+        可重新恢復的系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/controller-replace-complete-system-restoration.html">
+        完整系統還原
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/dcpm-nvram10-battery-replace.html">
+        DCPM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/fan-swap-out.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/pci-cards-and-risers-replace.html">
+        I/O模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/led-module-replace.html">
+        LED USB模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/nvram-module-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/power-supply-swap-out.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/rtc-battery-replace.html">
+        實時時鐘電池
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> X91148A模組</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/x91148a-module-install-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/x91148a-modules-with-open-slots-add.html">
+        含開放式插槽的部分A700系統AFF
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/fas9000/x91148a-modules-with-no-open-slots-add.html">
+        不含開放式插槽的系統AFF
+      </a></li></ul></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/all-san/all-san-array.html">
+        所有SAN陣列系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/upgrade/upgrade-linkout.html">
+        平台升級
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 系統層級診斷</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-introduction.html">
+        簡介
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-requirements.html">
+        需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-use-cli-help.html">
+        如何使用命令列說明
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-system-installation-diagnostics.html">
+        執行系統安裝診斷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-system-panic-diagnostics.html">
+        執行系統嚴重問題診斷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-slow-system-diagnostics.html">
+        執行慢速系統回應診斷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-hardware-installation-diagnostics.html">
+        執行硬體安裝診斷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/sldiag-device-failure-diagnostics.html">
+        執行裝置故障診斷
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 磁碟機櫃</div>
+      </a>
+      <ul><li class="subfolders "><a href="/zh-tw/ontap-systems/ns224/index.html">
+        <div class="na-navbar-padding"> NS224磁碟櫃</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與連接纜線</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/hot-add-shelf.html">
+        熱新增機櫃
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/change-shelf-id.html">
+        變更機櫃ID
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/cable-as-switch-attached.html">
+        纜線櫃作為交換器附加儲存設備
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-boot-media.html">
+        開機媒體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-dimm.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-drive.html">
+        磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-fan.html">
+        風扇
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/hot-remove-shelf.html">
+        熱移除機櫃
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-nsm100.html">
+        NSM模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-power-supply.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-rtc-battery.html">
+        即時時鐘電池
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/sas3/index.html">
+        <div class="na-navbar-padding"> SAS磁碟櫃搭配IOM12模組</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與連接纜線</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-new-system.html">
+        安裝新系統的機櫃並進行纜線連接
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-hot-add-shelf.html">
+        熱新增機櫃
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/iom12-hot-add-mix.html">
+        將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-change-shelf-id.html">
+        變更機櫃ID
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SAS佈線規則、工作表和範例</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/overview-cabling-rules-examples.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-rules.html">
+        SAS纜線配置規則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
+        常用多重路徑HA組態的佈線工作表和範例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
+        常見AFF 的E4A200、AFF EFASA220、FAS2600系列和FAS2700組態的佈線工作表和範例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
+        使用兩個四埠SAS HBA進行四路徑HA組態的佈線工作表和範例
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
+        用於多路徑連線的佈線工作表範本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheet-template-quadpath.html">
+        四路徑連線的佈線工作表範本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-how-to-read-multipath.html">
+        如何將工作表讀取成纜線以實現多路徑連線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-how-to-read-quadpath.html">
+        如何將工作表讀取成纜線以進行四路徑連線
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-hot-swap-drive-ds224c-ds212c.html">
+        DS224C或DS212C機櫃中的磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-hot-swap-drive-ds460c.html">
+        DS460C機櫃中的磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-replace-drawer-ds460c.html">
+        DS460C機櫃中的磁碟機抽屜
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-replace-fan-ds460c.html">
+        DS460C機櫃中的風扇模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/hot-remove-shelf.html">
+        熱移除機櫃
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-hot-swap-iom.html">
+        IOM12模組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-hot-swap-power-supply.html">
+        電源供應器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-monitor-leds.html">
+        機櫃LED狀態條件
+      </a></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/switch/switch-linkout.html">
+        交換器
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 機櫃與軌道套件</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/superrail-install.html">
+        超級軌道套件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/telco-installation-instructions.html">
+        FASA700/FAS9000雙柱軌道套件AFF
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 42U 1、280公釐系統機櫃</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 準備安裝機櫃</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-features.html">
+        機櫃功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-required-tools.html">
+        必要工具/設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-space-and-dimensions.html">
+        空間需求與機櫃尺寸
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html">
+        支援的PDU類型與規格
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-unpack.html">
+        打開系統機櫃
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝機櫃</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-install.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html">
+        安裝機櫃互連套件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-install-bolt-down-kit.html">
+        安裝栓接套件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-install-additional-rails.html">
+        安裝支撐軌道
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-install-equipment.html">
+        安裝設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-power-on.html">
+        開啟機櫃電源
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-replace-pdus.html">
+        更換PDU
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 翻轉機櫃前側擋門</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-reverse-front-door.html">
+        您需要的一切
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-remove-illuminated-badge.html">
+        移除發光的徽章
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-remove-door.html">
+        拆下機櫃門
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html">
+        移動標牌電源供應器和纜線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html">
+        反轉門的轉軸和鎖扣
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html">
+        重新安裝門並點亮徽章
+      </a></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/other/other-models.html">
+        其他機型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-tw/ontap-systems/">ONTAP&nbsp;Systems</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">換掉風扇AFF -《不只是我的問題》</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-05-03 06:55:08 +0000">05/03/2022</time>
+    
+  
+
+
+</p>
+
+<div class="paragraph lead">
+<p>若要在不中斷服務的情況下切換風扇模組、您必須執行特定的工作順序。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+從機箱中取出風扇模組之後、您必須在兩分鐘內裝回。系統氣流中斷、控制器模組或模組會在兩分鐘後關機、以避免過熱。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>如果您尚未接地、請正確接地。</p>
+</li>
+<li>
+<p>用兩隻手抓住擋板兩側的開孔、然後朝自己的方向拉動擋板、直到擋板從機箱框架上的球形接線柱中釋放為止、以卸下擋板（如有必要）。</p>
+</li>
+<li>
+<p>查看主控台錯誤訊息、並查看每個風扇模組上的警示LED、以識別您必須更換的風扇模組。</p>
+</li>
+<li>
+<p>按下風扇模組上的Terra cotta按鈕、將風扇模組從機箱中直接拉出、確保您可以用手支撐。</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/important.svg" alt="重要">
+</td>
+<td class="content">
+風扇模組很短。請務必用手支撐風扇模組的底部、以免突然從機箱中掉落而造成傷害。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c3c8d93-b48e-4554-87c8-adf9016af819" target="_blank" rel="noopener">"動畫-移除/安裝風扇"</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_a900_remove_install_fan.png" alt="DRW A900移除安裝風扇">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_01.png" alt=""></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Terra cotta釋放鈕</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_02.png" alt=""></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>將風扇滑入/滑出機箱</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>將風扇模組放在一邊。</p>
+</li>
+<li>
+<p>將備用風扇模組的邊緣與機箱的開孔對齊、然後將其滑入機箱、直到卡入定位。</p>
+<div class="paragraph">
+<p>將風扇模組成功插入機箱時、黃色警示LED燈會閃四次。</p>
+</div>
+</li>
+<li>
+<p>將擋板對齊球柱、然後將擋板輕推至球柱上。</p>
+</li>
+<li>
+<p>如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 <a href="https://mysupport.netapp.com/site/info/rma">"產品退貨安培；更換"</a> 頁面以取得更多資訊。</p>
+</li>
+</ol>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">cookie-settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
+              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/ontap-systems/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/ontap-systems/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/ontap-systems/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/ontap-systems/js/www-ntap.js'></script>
+    <script src='/zh-tw/ontap-systems/js/tabbed-blocks.js'></script>
+  </body></html>
