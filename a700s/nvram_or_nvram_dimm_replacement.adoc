@@ -29,7 +29,7 @@ summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVR
 
 
 
-== 關閉受損的控制器
+== 步驟1：關閉受損的控制器
 
 [role="lead"]
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
@@ -37,11 +37,11 @@ summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVR
 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
 
 .步驟
-. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=_number_of_hs_dable_h」AutoSupport AutoSupport AutoSupport
 +
 下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
 
-. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 如果受損的控制器是HA配對的一部分、請從健全控制器的主控台停用自動恢復功能：「torage容錯移轉修改節點本機-自動恢復錯誤」
 . 將受損的控制器移至載入器提示：
 +
 [cols="1,2"]
@@ -59,7 +59,7 @@ summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVR
  a| 
 正在等待恢復...
  a| 
-按Ctrl-C、然後在出現提示時回應「y」。
+按Ctrl-C、然後回應「y」。
 
 
 
@@ -68,7 +68,7 @@ summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVR
  a| 
 從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
++當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
 
 |===
 +
@@ -82,7 +82,7 @@ https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetAp
 
 
 
-== 卸下控制器模組
+== 步驟2：移除控制器模組
 
 [role="lead"]
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -161,7 +161,7 @@ image:../media/legend_icon_03.png[""]
 
 
 
-== 取出NVRAM卡
+== 步驟3：移除NVRAM卡
 
 [role="lead"]
 裝回NVRAM包括從控制器模組中卸下NVRAM擴充卡、擴充卡1、從NVRAM卡拔下NVRAM電池、移除故障的NVRAM卡並安裝替換的NVRAM擴充卡、然後將NVRAM擴充卡重新安裝回控制器模組。
@@ -253,7 +253,7 @@ NOTE: 請確定插卡完全且正面地插入擴充卡插槽。
 
 
 
-== 重新安裝控制器模組並啟動系統
+== 步驟4：重新安裝控制器模組並啟動系統
 
 [role="lead"]
 在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。
@@ -294,7 +294,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
-== 驗證HA系統上的系統ID變更
+== 步驟5：驗證HA系統上的系統ID變更
 
 [role="lead"]
 您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。
@@ -377,7 +377,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 
 
-== 還原儲存設備與Volume Encryption功能
+== 步驟6：還原儲存設備和Volume Encryption功能
 
 [role="lead"]
 針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
@@ -394,7 +394,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 
 
-== 將故障零件歸還給NetApp
+== 步驟7：將故障零件歸還給NetApp
 
 [role="lead"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

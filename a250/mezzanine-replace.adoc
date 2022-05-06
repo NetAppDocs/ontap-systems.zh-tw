@@ -30,7 +30,18 @@ summary: 若要更換故障的夾層卡、您必須拔下纜線和任何SFP或QS
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
-如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+.關於這項工作
+* 如果您使用NetApp儲存加密、則必須依照《NetApp ONTAP 加密電源指南》_的「將SED恢復為未受保護模式」一節中的指示、重設MSID。
++
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]
+
+* 如果您使用SAN系統、則必須檢查受損控制器SCSI刀鋒的事件訊息（事件記錄顯示）。
++
+每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/index.html["使用CLI進行系統管理總覽"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
 
 .步驟
 . 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport

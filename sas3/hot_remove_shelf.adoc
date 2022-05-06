@@ -1,7 +1,7 @@
 ---
 permalink: sas3/hot-remove-shelf.html 
 sidebar: sidebar 
-keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules 
+keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling 
 summary: 當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。 
 ---
 = 熱移除機櫃-配備IOM12模組的機櫃
@@ -75,7 +75,7 @@ epsilon的節點在"Epsilon（Epsilon）"欄位中顯示「true（真）」。�
 
 NOTE: 如果在重新啟用堆疊以略過您要移除的磁碟櫃時、未維持從控制器到堆疊的單一路徑連線、則可能會在多磁碟恐慌中使系統故障。
 
-* *可能的機櫃損壞：*如果您要移除DS460C機櫃、並將其移至資料中心的其他部分、或將其移至其他位置、請移除磁碟機、以免損壞磁碟機的機櫃和磁碟機。
+* *可能的機櫃毀損：*如果您要移除DS460C機櫃、並將其移至資料中心的其他部分、或將其移至不同位置、請參閱 <<Move or transport DS460C shelves>> 在本程序結束時。
 
 
 .步驟
@@ -266,16 +266,47 @@ NOTE: 當您重複步驟7且正確地重新建立堆疊時、您應該只看到�
 若要使磁碟櫃更輕、更容易操作、請移除電源供應器和I/O模組（IOM）。
 
 +
-對於DS460C磁碟櫃、您也可以使用磁碟櫃隨附的四個可拆式握把。將握把往上推、直到卡入定位、即可安裝（機箱兩側各兩個）。將磁碟櫃滑到軌道上時、請使用指旋栓拆下握把。
-
-+
-如果您要移動滿載的DS460C磁碟櫃、建議您使用機械式起重設備或起重設備。
+對於DS460C磁碟櫃而言、滿載的磁碟櫃可能約重247磅（112公斤）、因此從機架或機櫃移除磁碟櫃時請務必小心下列事項。
 
 +
 
-NOTE: 全負載的DS460C磁碟櫃重量約為247磅（112公斤）。
+CAUTION: 建議您使用機械式舉升機或四人使用舉升把手、安全地搬移DS460C機櫃。
+
++
+您的DS460C出貨件隨附四個可拆式起重把手（每側兩個）。若要使用起重把手、請將握把的彈片插入機櫃側邊的插槽、然後向上推、直到卡入定位。然後、當您將磁碟櫃滑到軌道上時、您可以使用指旋栓一次拔下一組握把。下圖顯示如何安裝舉升把手。
 
 +
 image::../media/drw_ds460c_handles.gif[DRW ds460c控點]
+
++
+如果您要將DS460C機櫃移至資料中心的不同部分、或是將其移至不同位置、請參閱下節： <<Move or transport DS460C shelves>>。
+
+
+
+[role="lead"]
+如果您將DS460C磁碟櫃移至資料中心的其他部分、或將磁碟櫃移至不同位置、則必須從磁碟機抽屜中移除磁碟機、以避免可能損壞磁碟機抽取器和磁碟機。
+
+* 如果您將DS460C磁碟櫃安裝為新系統安裝或磁碟櫃熱新增的一部分、則儲存了磁碟機包裝材料、請在移動磁碟機之前使用這些材料來重新封裝磁碟機。
++
+如果您未儲存包裝材料、則應將磁碟機放在緩衝墊表面上、或使用備用的緩衝封裝。切勿將磁碟機彼此堆疊在一起。
+
+* 在處理磁碟機之前、請先戴上接地於儲存機箱機箱上未上漆表面的ESD腕帶。
++
+如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。
+
+* 您應該採取步驟小心處理磁碟機：
++
+** 在移除、安裝或攜帶磁碟機時、請務必使用兩隻手來支撐其重量。
++
+
+CAUTION: 請勿將手放在外露在磁碟機承載器底部的磁碟機板上。
+
+** 請小心不要讓磁碟機碰到其他表面。
+** 磁碟機應遠離磁性裝置。
++
+
+CAUTION: 磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。
+
+
 
 

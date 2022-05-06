@@ -1,7 +1,7 @@
 ---
 permalink: sas3/install-new-system.html 
 sidebar: sidebar 
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation 
+keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling 
 summary: 如果您的新系統（HA配對或單一控制器組態）未安裝在機櫃中、您必須在機架中安裝磁碟櫃並將其纜線。 
 ---
 = 安裝及纜線架以安裝新的系統-機櫃內有IOM12模組
@@ -55,7 +55,7 @@ NOTE: 如果您有至少兩個堆疊的HA配對、則包含第二個堆疊根集
 
 * 含有根集合體的磁碟機櫃可透過磁碟機櫃箱和磁碟櫃機箱上的標籤來識別。
 +
-標籤顯示堆疊編號、例如「迴圈或堆疊編號：1」和「迴圈或堆疊編號：2」。不含根集合體的磁碟櫃只會在標籤上顯示磁碟櫃序號。
+標籤顯示堆疊編號、例如*迴圈或堆疊編號：1*和*迴圈或堆疊編號：2*。不含根集合體的磁碟櫃只會在標籤上顯示磁碟櫃序號。
 
 * 如果在系統設定與組態時、您未將系統設定為使用自動磁碟擁有權指派、則需要手動指派磁碟擁有權。
 * 頻內替代控制路徑（ACP）會自動啟用。
@@ -110,6 +110,29 @@ SAS纜線連接器採用鎖定式設計。當正確定位至SAS連接埠時、�
 
 
 
+=== DS460C磁碟機處理考量
+
+* 磁碟機與機櫃機箱分開包裝。
++
+您應該將磁碟機與您收到的其他系統設備一起進行庫存管理。
+
+* 打開磁碟機的包裝後、您應該保留包裝材料以供未來使用。
++
+
+CAUTION: *可能會遺失資料存取：*如果您日後將磁碟櫃移至資料中心的其他部分、或將磁碟櫃移至不同位置、則必須從磁碟機匣中移除磁碟機、以避免可能損壞磁碟機的磁碟機抽屜和磁碟機。
+
++
+
+NOTE: 請將磁碟機放入其電子化服務包中、直到您準備好安裝為止。
+
+* 處理磁碟機時、請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶、以避免靜電釋放。
++
+如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。
+
+
+
+
+
 == 安裝含有IOM12模組的磁碟櫃、以進行新的系統安裝
 
 [role="lead"]
@@ -129,38 +152,50 @@ NOTE: 請勿將磁碟櫃疊裝到電信型機架中、因為磁碟櫃的重量�
 若要使磁碟櫃更輕、更容易操作、請移除電源供應器和I/O模組（IOM）。
 
 +
-對於DS460C磁碟櫃、您也可以使用磁碟櫃隨附的四個可拆式握把。將握把往上推、直到卡入定位、即可安裝（機箱兩側各兩個）。將磁碟櫃滑到軌道上時、請使用指旋栓拆下握把。
-
-+
-如果您要移動滿載的DS460C磁碟櫃、建議您使用機械式起重設備或起重設備。
+對於DS460C磁碟櫃而言、雖然磁碟機是分開包裝的、使磁碟櫃更輕、但空的DS460C磁碟櫃仍重約132磅（60公斤）、因此移動磁碟櫃時請務必小心下列事項。
 
 +
 
-NOTE: 全負載的DS460C磁碟櫃重量約為247磅（112公斤）。
+CAUTION: 建議您使用機械式舉升機或四人使用舉升把手、安全地搬移空的DS460C機櫃。
+
++
+您的DS460C出貨件隨附四個可拆式起重把手（每側兩個）。若要使用起重把手、請將握把的彈片插入機櫃側邊的插槽、然後向上推、直到卡入定位。然後、當您將磁碟櫃滑到軌道上時、您可以使用指旋栓一次拔下一組握把。下圖顯示如何安裝舉升把手。
 
 +
 image::../media/drw_ds460c_handles.gif[DRW ds460c控點]
 
-. 如果您要安裝DS460C磁碟櫃、請將元件安裝到機架磁碟櫃中；否則、請執行下一步。
+. 在將磁碟櫃安裝到機架之前、請先重新安裝您移除的所有電源供應器和IOM。
+. 如果您要安裝DS460C磁碟櫃、請將磁碟機安裝到磁碟機抽屜中；否則、請執行下一步。
 +
-如果您購買的磁碟櫃中、每個磁碟機插槽中都沒有磁碟機、則必須確保：
+[NOTE]
+====
+請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶、以避免靜電釋放。
+
+如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。
+
+====
++
+如果您購買的是部分裝入的磁碟櫃、表示磁碟櫃所支援的磁碟機少於60個、請針對每個磁碟櫃安裝磁碟機、如下所示：
 
 +
-** 前四個插槽（0、3、6和9）會在每個藥櫃中佔用。
+** 將前四個磁碟機安裝到正面插槽（0、3、6和9）。
 +
-如此可確保磁碟櫃中的通風良好。
 
-** 在具有30個磁碟機的磁碟櫃中、其餘10個磁碟機會平均分佈在每個磁碟櫃的插槽1和10中。下圖顯示磁碟機如何在磁碟櫃內的每個磁碟機匣中編號0至11。插槽0、3、6、9及 在包含30個磁碟機的機櫃中、每個抽屜的插槽1和10必須包含磁碟機。
+NOTE: *設備故障風險：*為了確保適當的氣流並避免過熱、請務必將前四個磁碟機安裝到前插槽（0、3、6和9）。
+
+** 對於其餘的磁碟機、請將其平均分配至每個抽屜。
 
 
-+
+
+
+下圖顯示磁碟機如何在磁碟櫃內的每個磁碟機匣中編號0至11。
+
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[具備HDD標註的Dwgt Trap抽屜]
 
-+
-.. 在將磁碟櫃安裝到機架之前、請先重新安裝您移除的所有電源供應器和IOM。
-.. 打開機櫃的頂端抽屜。
-.. 將磁碟機上的CAM握把垂直提起。
-.. 將磁碟機承載器兩側的兩個凸起按鈕對齊磁碟機承載器上磁碟機通道的對應間隙。
+. 打開機櫃的頂端抽屜。
+. 將磁碟機從其ESD袋中取出。
+. 將磁碟機上的CAM握把垂直提起。
+. 將磁碟機承載器兩側的兩個凸起按鈕對齊磁碟機承載器上磁碟機通道的對應間隙。
 +
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[28圖e2860 de460c磁碟機CRU]
 
@@ -172,12 +207,12 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[28圖e2860 de460c磁碟機CRU]
 image:../media/legend_icon_01.png[""]
 | 磁碟機承載器右側的凸起按鈕 
 |===
-.. 垂直放下磁碟機、然後向下轉動CAM握把、直到磁碟機卡入橘色釋放栓鎖下方。
-.. 針對藥櫃中的每個磁碟機重複上述子步驟。
+. 垂直放下磁碟機、然後向下轉動CAM握把、直到磁碟機卡入橘色釋放栓鎖下方。
+. 針對藥櫃中的每個磁碟機重複上述子步驟。
 +
 您必須確定每個藥櫃中的插槽0、3、6和9均包含磁碟機。
 
-.. 小心地將磁碟機抽屜推回機箱。
+. 小心地將磁碟機抽屜推回機箱。
 +
 |===
 
@@ -192,14 +227,16 @@ image:../media/2860_dwg_e2860_de460c_gentle_close.gif[""]
 CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜、以避免抽屜震動、並造成儲存陣列損壞。
 
 |===
-.. 將兩個拉桿推向中央、以關閉磁碟機抽取器。
-.. 對磁碟櫃中的每個藥櫃重複這些步驟。
-
-
-. 如果您要新增多個磁碟櫃、請針對您要安裝的每個磁碟櫃重複此程序。
+. 將兩個拉桿推向中央、以關閉磁碟機抽取器。
+. 對磁碟櫃中的每個藥櫃重複這些步驟。
+. 連接前擋板。
++
+.. 如果您要新增多個磁碟櫃、請針對您要安裝的每個磁碟櫃重複此程序。
 +
 
 NOTE: 此時請勿開啟磁碟櫃電源。
+
+
 
 
 
@@ -253,7 +290,7 @@ NOTE: 此時請勿開啟磁碟櫃電源。
 +
 .. 請查看控制器對堆疊佈線工作表和佈線範例、以瞭解您的組態是否有完整的工作表。
 +
-link:install-cabling-worksheets-examples-fas2600.html["控制器對堆疊佈線工作表和佈線範例、適用於常見AFF 的E4A200、AFF E4A220、FAS2600系列和FAS2700組態"]
+link:install-cabling-worksheets-examples-fas2600.html["控制器對堆疊佈線工作表和佈線範例、適用於AFF 搭載FAS 內建儲存設備的整套功能"]
 
 +
 link:install-cabling-worksheets-examples-multipath.html["通用多重路徑HA組態的控制器對堆疊佈線工作表和佈線範例"]
@@ -384,5 +421,37 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 . 確認頻內ACP已自動啟用。《老舊的ACP秀》
 +
 在輸出中、每個節點的「頻內」會列為「'active'」。
+
+
+
+
+
+== 搬移或搬移DS460C磁碟櫃
+
+[role="lead"]
+如果日後將DS460C磁碟櫃移至資料中心的不同部分、或將磁碟櫃移至不同位置、則必須從磁碟機匣中移除磁碟機、以免損壞磁碟機的磁碟機匣和磁碟機。
+
+* 如果您將DS460C磁碟櫃安裝為新系統安裝的一部分、則儲存了磁碟機包裝材料、請在移動磁碟機之前使用這些材料來重新包裝磁碟機。
++
+如果您未儲存包裝材料、則應將磁碟機放在緩衝墊表面上、或使用備用的緩衝封裝。切勿將磁碟機彼此堆疊在一起。
+
+* 在處理磁碟機之前、請先戴上接地於儲存機箱機箱上未上漆表面的ESD腕帶。
++
+如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。
+
+* 您應該採取步驟小心處理磁碟機：
++
+** 在移除、安裝或攜帶磁碟機時、請務必使用兩隻手來支撐其重量。
++
+
+CAUTION: 請勿將手放在外露在磁碟機承載器底部的磁碟機板上。
+
+** 請小心不要讓磁碟機碰到其他表面。
+** 磁碟機應遠離磁性裝置。
++
+
+CAUTION: 磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。
+
+
 
 
