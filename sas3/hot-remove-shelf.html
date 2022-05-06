@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。">
-  <meta name="keywords" content=" hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules"><!-- Icons -->
+  <meta name="keywords" content=" hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling"><!-- Icons -->
   <link rel="icon" href="/zh-tw/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -2266,39 +2266,6 @@
 
 
 
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/zh-tw/ontap-systems/pdfs/sidebar/風扇.pdf" 
-            
-          >
-            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
-            風扇
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/drive-replace.html">
         磁碟機
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 風扇</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        關閉受損節點
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-remove.html">
-        卸下控制器模組
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-replace.html">
         風扇
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        重新安裝控制器模組
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-complete-rma.html">
-        將故障零件退回NetApp
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM電池
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         常用多重路徑HA組態的佈線工作表和範例
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        常見AFF 的E4A200、AFF EFASA220、FAS2600系列和FAS2700組態的佈線工作表和範例
+        提供內建儲存設備的連接工作表與範例AFF 、適用於包含內FAS 建儲存設備的不穩定和不穩定平台
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         使用兩個四埠SAS HBA進行四路徑HA組態的佈線工作表和範例
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6143,7 +6099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:55:08 +0000">05/03/2022</time>
+    <time datetime="2022-05-06 14:24:40 +0000">05/06/2022</time>
     
   
 
@@ -6283,7 +6239,7 @@
 </div>
 </li>
 <li>
-<p>*可能的機櫃損壞：*如果您要移除DS460C機櫃、並將其移至資料中心的其他部分、或將其移至其他位置、請移除磁碟機、以免損壞磁碟機的機櫃和磁碟機。</p>
+<p>*可能的機櫃毀損：*如果您要移除DS460C機櫃、並將其移至資料中心的其他部分、或將其移至不同位置、請參閱 <a href="#Move or transport DS460C shelves">[Move or transport DS460C shelves]</a> 在本程序結束時。</p>
 </li>
 </ul>
 </div>
@@ -6604,30 +6560,92 @@ PRIMARY  PORT SECONDARY      PORT TYPE SHELF BAY
 <p>若要使磁碟櫃更輕、更容易操作、請移除電源供應器和I/O模組（IOM）。</p>
 </div>
 <div class="paragraph">
-<p>對於DS460C磁碟櫃、您也可以使用磁碟櫃隨附的四個可拆式握把。將握把往上推、直到卡入定位、即可安裝（機箱兩側各兩個）。將磁碟櫃滑到軌道上時、請使用指旋栓拆下握把。</p>
+<p>對於DS460C磁碟櫃而言、滿載的磁碟櫃可能約重247磅（112公斤）、因此從機架或機櫃移除磁碟櫃時請務必小心下列事項。</p>
 </div>
-<div class="paragraph">
-<p>如果您要移動滿載的DS460C磁碟櫃、建議您使用機械式起重設備或起重設備。</p>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="附註">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
 </td>
 <td class="content">
-全負載的DS460C磁碟櫃重量約為247磅（112公斤）。
+建議您使用機械式舉升機或四人使用舉升把手、安全地搬移DS460C機櫃。
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>您的DS460C出貨件隨附四個可拆式起重把手（每側兩個）。若要使用起重把手、請將握把的彈片插入機櫃側邊的插槽、然後向上推、直到卡入定位。然後、當您將磁碟櫃滑到軌道上時、您可以使用指旋栓一次拔下一組握把。下圖顯示如何安裝舉升把手。</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../media/drw_ds460c_handles.gif" alt="DRW ds460c控點">
 </div>
 </div>
+<div class="paragraph">
+<p>如果您要將DS460C機櫃移至資料中心的不同部分、或是將其移至不同位置、請參閱下節： <a href="#Move or transport DS460C shelves">[Move or transport DS460C shelves]</a>。</p>
+</div>
 </li>
 </ol>
+</div>
+<div class="paragraph lead">
+<p>如果您將DS460C磁碟櫃移至資料中心的其他部分、或將磁碟櫃移至不同位置、則必須從磁碟機抽屜中移除磁碟機、以避免可能損壞磁碟機抽取器和磁碟機。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您將DS460C磁碟櫃安裝為新系統安裝或磁碟櫃熱新增的一部分、則儲存了磁碟機包裝材料、請在移動磁碟機之前使用這些材料來重新封裝磁碟機。</p>
+<div class="paragraph">
+<p>如果您未儲存包裝材料、則應將磁碟機放在緩衝墊表面上、或使用備用的緩衝封裝。切勿將磁碟機彼此堆疊在一起。</p>
+</div>
+</li>
+<li>
+<p>在處理磁碟機之前、請先戴上接地於儲存機箱機箱上未上漆表面的ESD腕帶。</p>
+<div class="paragraph">
+<p>如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。</p>
+</div>
+</li>
+<li>
+<p>您應該採取步驟小心處理磁碟機：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>在移除、安裝或攜帶磁碟機時、請務必使用兩隻手來支撐其重量。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+請勿將手放在外露在磁碟機承載器底部的磁碟機板上。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>請小心不要讓磁碟機碰到其他表面。</p>
+</li>
+<li>
+<p>磁碟機應遠離磁性裝置。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 
     </article>
@@ -6648,16 +6666,16 @@ PRIMARY  PORT SECONDARY      PORT TYPE SHELF BAY
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>

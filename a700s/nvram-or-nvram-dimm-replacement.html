@@ -2267,39 +2267,6 @@
 
 
 
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/zh-tw/ontap-systems/pdfs/sidebar/風扇.pdf" 
-            
-          >
-            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
-            風扇
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/drive-replace.html">
         磁碟機
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 風扇</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        關閉受損節點
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-remove.html">
-        卸下控制器模組
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-replace.html">
         風扇
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        重新安裝控制器模組
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-complete-rma.html">
-        將故障零件退回NetApp
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM電池
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         常用多重路徑HA組態的佈線工作表和範例
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        常見AFF 的E4A200、AFF EFASA220、FAS2600系列和FAS2700組態的佈線工作表和範例
+        提供內建儲存設備的連接工作表與範例AFF 、適用於包含內FAS 建儲存設備的不穩定和不穩定平台
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         使用兩個四埠SAS HBA進行四路徑HA組態的佈線工作表和範例
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6143,7 +6099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:55:08 +0000">05/03/2022</time>
+    <time datetime="2022-05-06 14:24:40 +0000">05/06/2022</time>
     
   
 
@@ -6191,7 +6147,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="關閉受損的控制器">關閉受損的控制器</h2>
+<h2 id="步驟1關閉受損的控制器">步驟1：關閉受損的控制器</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
@@ -6203,13 +6159,13 @@
 <div class="title">步驟</div>
 <ol class="arabic">
 <li>
-<p>如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport</p>
+<p>如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=_number_of_hs_dable_h」AutoSupport AutoSupport AutoSupport</p>
 <div class="paragraph">
 <p>下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：<strong>&gt;系統節點AutoSupport 、叫用節點</strong>-輸入ALL -Message MAn=2h」</p>
 </div>
 </li>
 <li>
-<p>停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」</p>
+<p>如果受損的控制器是HA配對的一部分、請從健全控制器的主控台停用自動恢復功能：「torage容錯移轉修改節點本機-自動恢復錯誤」</p>
 </li>
 <li>
 <p>將受損的控制器移至載入器提示：</p>
@@ -6238,7 +6194,7 @@
 <p>正在等待恢復&#8230;&#8203;</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>按Ctrl-C、然後在出現提示時回應「y」。</p>
+<p>按Ctrl-C、然後回應「y」。</p>
 </div></div></td>
 </tr>
 <tr>
@@ -6249,7 +6205,7 @@
 <p>從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」</p>
 </div>
 <div class="paragraph">
-<p>當受損的控制器顯示正在等待恢復&#8230;&#8203;時、請按Ctrl-C、然後回應「y」。</p>
+<p>+當受損的控制器顯示正在等待恢復&#8230;&#8203;時、請按Ctrl-C、然後回應「y」。</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -6270,7 +6226,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="卸下控制器模組">卸下控制器模組</h2>
+<h2 id="步驟2移除控制器模組">步驟2：移除控制器模組</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。</p>
@@ -6388,7 +6344,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="取出nvram卡">取出NVRAM卡</h2>
+<h2 id="步驟3移除nvram卡">步驟3：移除NVRAM卡</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>裝回NVRAM包括從控制器模組中卸下NVRAM擴充卡、擴充卡1、從NVRAM卡拔下NVRAM電池、移除故障的NVRAM卡並安裝替換的NVRAM擴充卡、然後將NVRAM擴充卡重新安裝回控制器模組。</p>
@@ -6544,7 +6500,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="重新安裝控制器模組並啟動系統">重新安裝控制器模組並啟動系統</h2>
+<h2 id="步驟4重新安裝控制器模組並啟動系統">步驟4：重新安裝控制器模組並啟動系統</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。</p>
@@ -6630,7 +6586,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="驗證ha系統上的系統id變更">驗證HA系統上的系統ID變更</h2>
+<h2 id="步驟5驗證ha系統上的系統id變更">步驟5：驗證HA系統上的系統ID變更</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。</p>
@@ -6759,7 +6715,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 </div>
 </div>
 <div class="sect1">
-<h2 id="還原儲存設備與volume-encryption功能">還原儲存設備與Volume Encryption功能</h2>
+<h2 id="步驟6還原儲存設備和volume-encryption功能">步驟6：還原儲存設備和Volume Encryption功能</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。</p>
@@ -6788,7 +6744,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 </div>
 </div>
 <div class="sect1">
-<h2 id="將故障零件歸還給netapp">將故障零件歸還給NetApp</h2>
+<h2 id="步驟7將故障零件歸還給netapp">步驟7：將故障零件歸還給NetApp</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 <a href="https://mysupport.netapp.com/site/info/rma">"產品退貨安培；更換"</a> 頁面以取得更多資訊。</p>
@@ -6814,16 +6770,16 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>

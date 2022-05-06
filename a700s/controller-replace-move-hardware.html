@@ -2276,39 +2276,6 @@
 
 
 
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/zh-tw/ontap-systems/pdfs/sidebar/風扇.pdf" 
-            
-          >
-            <img src="/zh-tw/ontap-systems/images/pdf.png" width="16" height="16"/>
-            風扇
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/drive-replace.html">
         磁碟機
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 風扇</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        關閉受損節點
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-remove.html">
-        卸下控制器模組
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-replace.html">
         風扇
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        重新安裝控制器模組
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/fan-complete-rma.html">
-        將故障零件退回NetApp
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM電池
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         常用多重路徑HA組態的佈線工作表和範例
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        常見AFF 的E4A200、AFF EFASA220、FAS2600系列和FAS2700組態的佈線工作表和範例
+        提供內建儲存設備的連接工作表與範例AFF 、適用於包含內FAS 建儲存設備的不穩定和不穩定平台
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         使用兩個四埠SAS HBA進行四路徑HA組態的佈線工作表和範例
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6143,7 +6099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:55:08 +0000">05/03/2022</time>
+    <time datetime="2022-05-06 14:24:40 +0000">05/06/2022</time>
     
   
 
@@ -7115,15 +7071,9 @@
 </div>
 </li>
 <li>
-<p>將電源線插入電源供應器、重新安裝電源線鎖環、然後將電源供應器連接至電源。</p>
-</li>
-<li>
 <p>完成控制器模組的重新安裝：</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
-<li>
-<p>如果您尚未重新安裝纜線管理裝置、請重新安裝。</p>
-</li>
 <li>
 <p>將控制器模組穩固地推入機箱、直到它與中間板完全接入。</p>
 <div class="paragraph">
@@ -7153,13 +7103,16 @@
 <p>向上轉動鎖定栓、將其傾斜、使其從鎖定銷中取出、然後將其放低至鎖定位置。</p>
 </li>
 <li>
-<p>當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」時、請按「Ctrl-C」來中斷開機程序。</p>
-</li>
-<li>
-<p>從顯示的功能表中選取要開機至維護模式的選項。</p>
+<p>按下「Ctrl-C」中斷開機程序。</p>
 </li>
 </ol>
 </div>
+</li>
+<li>
+<p>將系統纜線和收發器模組插入控制器模組、然後重新安裝纜線管理設備。</p>
+</li>
+<li>
+<p>將電源線插入電源供應器、然後重新安裝電源線固定器。</p>
 </li>
 <li>
 <p>如果您的系統設定為支援40 GbE NIC或內建連接埠上的10 GbE叢集互連和資料連線、請使用「維護模式」中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。</p>
@@ -7199,16 +7152,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
