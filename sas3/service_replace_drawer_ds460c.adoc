@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf 
 summary: 更換磁碟機匣之前、您必須停止所有主機I/O活動並關閉磁碟櫃電源。 
 ---
-= 將DS460C磁碟櫃中的磁碟機匣更換成IOM12模組
+= 將DS460C磁碟櫃中的磁碟機匣更換為IOM12模組的磁碟櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -19,11 +19,7 @@ image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[28圖e2860 de460c正�
 
 五個抽屜各可容納12個磁碟機。
 
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[具備HDD標註的Dwgt Trap抽屜]
-
-
-
-== 開始之前
+image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts.gif[92 dwgde6600藥櫃、含HDD、無標註]
 
 此程序需要下列項目：
 
@@ -35,6 +31,7 @@ NOTE: *可能的硬體損壞：*為了防止磁碟機櫃受到靜電釋放的損
 * 更換磁碟機匣
 * 更換左和右纜線鏈
 * 手電筒
+* 永久標記
 
 
 
@@ -76,7 +73,6 @@ NOTE: *可能的硬體損壞：*為避免對磁碟櫃造成靜電損害、請在
 image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[28圖e2860 de460c風扇箱把手上附有標註]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -95,7 +91,6 @@ image:../media/legend_icon_01.png[""]
 image::../media/2860_dwg_full_back_view_chain_connectors.gif[2860 dwx全後視圖鏈連接器]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -128,7 +123,6 @@ image:../media/legend_icon_03.png[""]
 image::../media/2860_dwg_vertical_ring_for_chain.gif[用於鏈的2860 dwx垂直環]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -150,7 +144,6 @@ image:../media/legend_icon_01.png[""]
 image::../media/2860_dwg_horiz_ring_for_chain.gif[用於鏈的2860 dx水平環]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -189,17 +182,26 @@ image:../media/legend_icon_02.png[""]
 == 移除磁碟機抽屜
 
 [role="lead"]
-移除左右纜線鏈之後、您可以從磁碟機櫃中移除磁碟機抽屜。移除磁碟機抽取器時、必須將抽取器的一部分滑出、移除磁碟機、以及移除磁碟機抽取器。
+移除左右纜線鏈之後、您可以從磁碟機櫃中移除磁碟機抽屜。移除磁碟機抽取器時、必須將抽取器的一部分滑出、記錄磁碟機的位置、移除磁碟機、以及移除磁碟機抽取器。
 
 .開始之前
 * 您已移除磁碟機抽屜的左右纜線鏈。
 * 您已更換左右風扇模組。
+* 從抽屜中取出磁碟機時、您已取得永久標記、以記下每個磁碟機的確切位置。
 
 
 .步驟
 . 從磁碟機櫃正面卸下擋板。
 . 拉出兩個拉桿、以解開磁碟機抽屜。
 . 使用延伸槓桿、小心地將磁碟機抽屜拉出、直到它停止為止。請勿將磁碟機匣從磁碟機櫃中完全移除。
+. 如果已建立並指派邏輯單元編號（LUN）、請使用永久性標記來記錄每個磁碟機的確切位置。例如、使用下列圖示做為參考、在每個磁碟機的頂端寫下適當的插槽編號。
++
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[具備HDD標註的Dwgt Trap抽屜]
+
++
+
+NOTE: *可能會遺失資料存取：*請務必在移除每個磁碟機之前、先記錄其確切位置。
+
 . 從磁碟機匣中取出磁碟機：
 +
 .. 將每個磁碟機正面中央可見的橘色釋放栓扣、輕拉回。下圖顯示每個磁碟機的橘色釋放栓鎖。
@@ -225,7 +227,6 @@ NOTE: *可能的資料存取遺失：*磁區可能會破壞磁碟機上的所有
 image::../media/92_pht_de6600_drive_drawer_release_lever.gif[92 PHT DE6600磁碟機抽屜釋放槓桿]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -248,6 +249,7 @@ image:../media/legend_icon_01.png[""]
 若要將磁碟機抽取器安裝到磁碟機櫃中、必須將抽取器滑入閒置的插槽、安裝磁碟機、以及更換前擋板。
 
 .開始之前
+* 您知道每個磁碟機的安裝位置。
 * 您已取得下列項目：
 +
 ** 更換磁碟機匣
@@ -265,7 +267,6 @@ image:../media/legend_icon_01.png[""]
 image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[92 PHT de6600可鎖定翻轉器的詳細資料]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -298,7 +299,15 @@ NOTE: *設備受損風險：*如果您感到過度阻力或卡滯、請停止推
 +
 .. 拉出抽屜正面的兩個拉桿、以解開磁碟機抽屜。
 .. 使用延伸槓桿、小心地將磁碟機抽屜拉出、直到它停止為止。請勿將磁碟機匣從磁碟機櫃中完全移除。
-.. 在您要安裝的磁碟機上、將握把垂直提起。
+.. 使用您在卸下磁碟機時所做的備註、判斷每個插槽中要安裝的磁碟機。
++
+
+NOTE: *可能會遺失資料存取：*您必須將每個磁碟機安裝在磁碟機抽屜的原始位置。
+
++
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[具備HDD標註的Dwgt Trap抽屜]
+
+.. 將磁碟機上的握把垂直提起。
 .. 將磁碟機兩側的兩個凸起按鈕對齊抽屜的槽口。
 +
 圖中顯示了磁碟機的右側視圖、顯示了凸起按鈕的位置。
@@ -307,7 +316,6 @@ NOTE: *設備受損風險：*如果您感到過度阻力或卡滯、請停止推
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[28圖e2860 de460c磁碟機CRU]
 
 +
-[cols="10,90"]
 |===
 
 
@@ -316,13 +324,6 @@ image:../media/legend_icon_01.png[""]
 | 磁碟機右側的凸起按鈕。 
 |===
 .. 將磁碟機垂直向下放、然後向下轉動磁碟機握把、直到磁碟機卡入定位。
-+
-如果您的磁碟櫃已部分裝入、表示您要重新安裝磁碟機的磁碟櫃所含的磁碟機數量少於其支援的12個磁碟機、請將前四個磁碟機安裝至前插槽（0、3、6和9）。
-
-+
-
-NOTE: *設備故障風險：*為了確保適當的氣流並避免過熱、請務必將前四個磁碟機安裝到前插槽（0、3、6和9）。
-
 +
 image::../media/92_dwg_de6600_install_or_remove_drive.gif[92 dwgde6600安裝或移除磁碟機]
 
@@ -414,7 +415,6 @@ image:../media/legend_icon_02.png[""]
 image::../media/2860_dwg_guide_rail.gif[2860 dwx導軌]
 
 +
-[cols="10,90"]
 |===
 
 
