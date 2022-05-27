@@ -6099,7 +6099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-06 14:24:40 +0000">05/06/2022</time>
+    <time datetime="2022-05-27 17:37:29 +0000">05/27/2022</time>
     
   
 
@@ -6129,9 +6129,12 @@
 <div class="paragraph">
 <p>根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。</p>
 </div>
-<div class="sect2">
-<h3 id="選項1大多數組態">選項1：大多數組態</h3>
-<div class="paragraph">
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">選項1：大多數組態</div>
+<div class="content">
+<div class="paragraph lead">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
 </div>
 <div class="ulist">
@@ -6216,95 +6219,11 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="選項2控制器位於metrocluster-一個不二之處">選項2：控制器位於MetroCluster 一個不二之處</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="附註">
-</td>
-<td class="content">
-如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
-</td>
-</tr>
-</table>
 </div>
-<div class="paragraph">
-<p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">"使用CLI進行系統管理總覽"</a>。</p>
-</li>
-<li>
-<p>如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步驟</div>
-<ol class="arabic">
-<li>
-<p>如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport</p>
-<div class="paragraph">
-<p>下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：<strong>&gt;系統節點AutoSupport 、叫用節點</strong>-輸入ALL -Message MAn=2h」</p>
-</div>
-</li>
-<li>
-<p>停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」</p>
-</li>
-<li>
-<p>將受損的控制器移至載入器提示：</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 66.6667%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">如果受損的控制器正在顯示&#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">然後&#8230;&#8203;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>載入程式提示</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>移至「移除控制器模組」。</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>正在等待恢復&#8230;&#8203;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>按Ctrl-C、然後在出現提示時回應「y」。</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>系統提示或密碼提示（輸入系統密碼）</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」</p>
-</div>
-<div class="paragraph">
-<p>當受損的控制器顯示正在等待恢復&#8230;&#8203;時、請按Ctrl-C、然後回應「y」。</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="選項3控制器位於雙節點metrocluster-的不二">選項3：控制器位於雙節點MetroCluster 的不二</h3>
-<div class="paragraph">
+<div class="openblock">
+<div class="title">選項2：控制器位於雙節點MetroCluster 的不二</div>
+<div class="content">
+<div class="paragraph lead">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
 </div>
 <div class="ulist">
@@ -6431,6 +6350,9 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <p>在受損的控制器模組上、拔下電源供應器。</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

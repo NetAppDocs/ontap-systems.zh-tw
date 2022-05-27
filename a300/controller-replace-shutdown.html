@@ -6099,24 +6099,22 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-06 14:24:40 +0000">05/06/2022</time>
+    <time datetime="2022-05-27 17:37:29 +0000">05/27/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>使用適合您組態的適當程序來關閉或接管受損的控制器。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="選項1大多數組態">選項1：大多數組態</h2>
-<div class="sectionbody">
-<div class="paragraph">
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">選項1：大多數組態</div>
+<div class="content">
+<div class="paragraph lead">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
 </div>
 <div class="ulist">
@@ -6202,10 +6200,10 @@
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="選項2控制器採用雙節點metrocluster-的不二組態">選項2：控制器採用雙節點MetroCluster 的不二組態</h2>
-<div class="sectionbody">
-<div class="paragraph">
+<div class="openblock">
+<div class="title">選項2：控制器位於雙節點MetroCluster 的不二</div>
+<div class="content">
+<div class="paragraph lead">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
 </div>
 <div class="ulist">
@@ -6334,137 +6332,6 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 </ol>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="選項3控制器位於雙節點metrocluster-的不二">選項3：控制器位於雙節點MetroCluster 的不二</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
-</div>
-<div class="ulist">
-<div class="title">關於這項工作</div>
-<ul>
-<li>
-<p>如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html" target="_blank" rel="noopener">"使用CLI進行NetApp加密總覽"</a>。</p>
-</li>
-<li>
-<p>您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步驟</div>
-<ol class="arabic">
-<li>
-<p>檢查MetroCluster 「不正常」狀態、判斷受損的控制器是否已自動切換至「正常」控制器MetroCluster ：「不正常」</p>
-</li>
-<li>
-<p>視是否發生自動切換而定、請根據下表繼續進行：</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 66.6667%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">如果控制器受損&#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">然後&#8230;&#8203;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>已自動切換</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>繼續下一步。</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>尚未自動切換</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>從健全的控制器執行計畫性的切換作業MetroCluster ：「『交換切換’」</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>尚未自動切換、您嘗試使用MetroCluster 「還原切換」命令進行切換、切換遭到否決</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>請檢閱否決訊息、如有可能、請解決此問題、然後再試一次。如果您無法解決問題、請聯絡技術支援部門。</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>從MetroCluster 存續的叢集執行「f恢復 階段Aggregate」命令、以重新同步資料集合體。</p>
-<div class="listingblock">
-<div class="content">
-<pre>controller_A_1::&gt; metrocluster heal -phase aggregates
-[Job 130] Job succeeded: Heal Aggregates is successful.</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如果治療被否決、您可以選擇MetroCluster 使用「-overre-etoes」參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。</p>
-</div>
-</li>
-<li>
-<p>使用MetroCluster flexoperationshow命令確認作業已完成。</p>
-<div class="listingblock">
-<div class="content">
-<pre>controller_A_1::&gt; metrocluster operation show
-    Operation: heal-aggregates
-      State: successful
-Start Time: 7/25/2016 18:45:55
-   End Time: 7/25/2016 18:45:56
-     Errors: -</pre>
-</div>
-</div>
-</li>
-<li>
-<p>使用「shorage Aggregate show」命令來檢查集合體的狀態。</p>
-<div class="listingblock">
-<div class="content">
-<pre>controller_A_1::&gt; storage aggregate show
-Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
---------- -------- --------- ----- ------- ------ ---------------- ------------
-...
-aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...</pre>
-</div>
-</div>
-</li>
-<li>
-<p>使用「MetroCluster f恢復 階段根集合體」命令來修復根集合體。</p>
-<div class="listingblock">
-<div class="content">
-<pre>mcc1A::&gt; metrocluster heal -phase root-aggregates
-[Job 137] Job succeeded: Heal Root Aggregates is successful</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如果修復被否決、您可以選擇使用MetroCluster -overrover-etoes參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。</p>
-</div>
-</li>
-<li>
-<p>在MetroCluster 目的地叢集上使用「停止作業show」命令、確認修復作業已完成：</p>
-<div class="listingblock">
-<div class="content">
-<pre>mcc1A::&gt; metrocluster operation show
-  Operation: heal-root-aggregates
-      State: successful
- Start Time: 7/29/2016 20:54:41
-   End Time: 7/29/2016 20:54:42
-     Errors: -</pre>
-</div>
-</div>
-</li>
-<li>
-<p>在受損的控制器模組上、拔下電源供應器。</p>
-</li>
-</ol>
 </div>
 </div>
 </div>
