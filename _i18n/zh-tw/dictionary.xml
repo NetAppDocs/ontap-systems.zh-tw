@@ -3452,14 +3452,7 @@
   <block id="485915b2618f6e44eeb59fb1a237eb08" category="admonition">請勿將磁碟櫃疊裝到電信型機架中、因為磁碟櫃的重量可能會導致磁碟櫃在機架中以自己的重量收起。</block>
   <block id="f7ec6f03d48ba0d482840bec340da0cf" category="list-text">使用套件隨附的安裝傳單、將磁碟櫃安裝並固定在支撐托架和機架上。</block>
   <block id="fa4c9ef92b72a4afda4eb5a196eecc3f" category="paragraph">若要使磁碟櫃更輕、更容易操作、請移除電源供應器和I/O模組（IOM）。</block>
-  <block id="6c3e7eebf0d82be7ff1f926b348de584" category="paragraph">對於DS460C磁碟櫃、您也可以使用磁碟櫃隨附的四個可拆式握把。將握把往上推、直到卡入定位、即可安裝（機箱兩側各兩個）。將磁碟櫃滑到軌道上時、請使用指旋栓拆下握把。</block>
-  <block id="3d4236fe344d3a92a8695db10ccb5072" category="paragraph">如果您要移動滿載的DS460C磁碟櫃、建議您使用機械式起重設備或起重設備。</block>
-  <block id="a5e5379fb06ced70dc284e6acb2cdcee" category="admonition">全負載的DS460C磁碟櫃重量約為247磅（112公斤）。</block>
   <block id="2794022ceac3fcd7a5363d665e5359a5" category="image-alt">DRW ds460c控點</block>
-  <block id="6af8ffd92d343a1b0d2759bc6fc5ae7e" category="list-text">如果您要安裝DS460C磁碟櫃、請將元件安裝到機架磁碟櫃中；否則、請執行下一步。</block>
-  <block id="3f5bbce38720364dafaa1c4e291566a6" category="paragraph">如果您購買的磁碟櫃中、每個磁碟機插槽中都沒有磁碟機、則必須確保：</block>
-  <block id="8c298229e7eae71bf34cd42839641cb1" category="list-text">前四個插槽（0、3、6和9）會在每個藥櫃中佔用。</block>
-  <block id="cf6acee577d7cefcf79dd4e1b561dbe6" category="paragraph">如此可確保磁碟櫃中的通風良好。</block>
   <block id="82edbae4acf5762cfee69aaa6facde11" category="image-alt">具備HDD標註的Dwgt Trap抽屜</block>
   <block id="451345ca48e949ee2fe424e0fc68ce3d" category="list-text">在將磁碟櫃安裝到機架之前、請先重新安裝您移除的所有電源供應器和IOM。</block>
   <block id="07f7351fb2334783d3087885957e5f5e" category="list-text">打開機櫃的頂端抽屜。</block>
@@ -3879,8 +3872,6 @@
   <block id="343701335a2c76e217adf10f35f5ac0d" category="paragraph">如果您有HA配對或雙節點MetroCluster 的功能不全、則必須停用兩個控制器模組上的自動磁碟機指派功能。</block>
   <block id="186c036c7e975a624b82dd356df0999b" category="section-title">安裝熱新增的磁碟櫃</block>
   <block id="3546e85dc307b9bcf0b533b27fad8878" category="paragraph">對於您要熱新增的每個機櫃、您都可以將機櫃安裝到機架、連接電源線、開啟機櫃電源、以及設定機櫃ID。</block>
-  <block id="e685698b3cc7edc0edbcb6b4f0acca4b" category="list-text">在具有30個磁碟機的磁碟櫃中、其餘10個磁碟機會平均分佈在每個磁碟櫃的插槽1和10中。</block>
-  <block id="7ecce0af07cdd6bc780ac358240cc0a4" category="paragraph">下圖顯示磁碟機如何在磁碟櫃內的每個磁碟機匣中編號0至11。插槽0、3、6、9及 在包含30個磁碟機的機櫃中、每個抽屜的插槽1和10必須包含磁碟機。</block>
   <block id="36c4b867932e9d22e95453e968104256" category="list-text">設定您要熱新增至HA配對或單一控制器組態中唯一ID的每個機櫃的機櫃ID。</block>
   <block id="4c1c5ca48f80900bdbd6478de4bd8643" category="paragraph">有效的機櫃ID為00至99。建議您設定機櫃ID、以便IOM6機櫃使用較低的數字（1 - 9）、IOM12機櫃使用較高的數字（10個以上）。</block>
   <block id="07ef6aaec0e48ce2f5b9d9f42adf77cc" category="paragraph">如果您的平台模式具有內建儲存設備、則機櫃ID必須在內部機櫃和外部附加機櫃之間是唯一的。建議您將內部機櫃設為0。在靜態IP組態中、只會套用外部機櫃名稱、因此機櫃名稱不需要是唯一的。MetroCluster</block>
@@ -4661,7 +4652,6 @@
   <block id="17e2d63e3b45ecbfe13bcc32fec929d0" category="paragraph">*開始之前*</block>
   <block id="cfdacb5b8eea6906da1318b4cc5ee5a2" category="list-text">如果您的系統是HA配對、則合作夥伴節點必須能夠接管與要更換的NVRAM模組相關的節點。</block>
   <block id="0fd88e54da65fb1a33a1996f9d00a9cd" category="list-text">「_Healthy_」節點是受損節點的HA合作夥伴。</block>
-  <block id="0fbe0630286ce5debeb3d11174988b34" category="open-title">選項3：控制器位於雙節點MetroCluster 的不二</block>
   <block id="5d0d368db133218e5906d443b61514c6" category="list-text">將FlashCache模組從舊的NVRAM模組移至新的NVRAM模組：</block>
   <block id="e1e044e9b2596ea55ccf2665031de0fc" category="image-alt">DRw 9000移除快閃快取</block>
   <block id="e2daacc31483bc3b72e7bcacf14a33cf" category="paragraph">橘色釋放按鈕（空白FlashCache模組為灰色）</block>
@@ -7648,7 +7638,6 @@
   <block id="9e8bc2f3ff00e91084e8d9faacfbbbc7" category="image-alt">DRw a250安裝通風管蓋</block>
   <block id="b0a5349e52bfc1b486c0f4bb7f8c6b18" category="doc">關閉控制器AFF -現象A250</block>
   <block id="233527e56f38be60ebacfaf00ed45f11" category="doc">更換DIMM AFF - REVA250</block>
-  <block id="4a2546eb9c2e57bf15ddf11202689d7c" category="section-title">選項2：MetroCluster 系統在一個地方</block>
   <block id="ef9f4e0c500a9033e3ecc6ac2bea9386" category="section-title">步驟3：更換DIMM</block>
   <block id="ff2cabdfad197ecc54cac7ac5edf88bc" category="paragraph">若要更換DIMM、您必須使用通風管頂端的DIMM對應標籤、或是使用DIMM旁的LED來找到DIMM、然後依照特定的步驟順序加以更換。</block>
   <block id="52a264f83e80026af9b21b4d57f0db5a" category="paragraph">請使用下列影片或表格步驟來更換DIMM：</block>
@@ -7833,7 +7822,6 @@
   <block id="d79b377e4ffb63d9f7bc2cd5de1e04de" category="doc">關閉受損的控制器模組AFF - VA250</block>
   <block id="f3ccc6a1c062dbba61f459b0e8b57597" category="list-text">如果您使用SAN系統、則必須檢查受損控制器SCSI刀鋒的事件訊息（事件記錄顯示）。</block>
   <block id="d341e954ddede02e8d2c553ecfba224a" category="paragraph">每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。</block>
-  <block id="971840ecd85a736d5b833bc352989a07" category="list-text">如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全的組態狀態」、且節點處於啟用且正常的狀態（MetroCluster 畫面顯示為節點）。</block>
   <block id="5e6435d148cbdc8c0269f95c1ec7b442" category="doc">開機恢復映像AFF -還原A250</block>
   <block id="1f684a558f672dca1e5cd104fa082470" category="doc">完整系統還原- AFF 還原為VA250</block>
   <block id="9f6a47c67bda21bca9bc7674dc5f2c67" category="doc">更換SSD磁碟機或HDD磁碟機- AFF VA250</block>
@@ -8060,8 +8048,6 @@
   <block id="46b673e11c982206be30f1a0d6d4bde7" category="doc">完整系統還原：FAS500f</block>
   <block id="f201ab41a4eb414e420e16dba34a7cfc" category="doc">重新安裝系統並重新分配磁碟- FAS500f</block>
   <block id="3fa677b8ecb97b0ae0d14f9ded5ed49a" category="doc">關閉受損的控制器- FAS500f</block>
-  <block id="6407763c1d2de6600133ab1f5d7bc94f" category="inline-link">NetApp Encryption Power內容ONTAP</block>
-  <block id="b70ce74f678772eec8ed950c996578d8" category="paragraph"><block ref="b70ce74f678772eec8ed950c996578d8" category="inline-link-rx"></block></block>
   <block id="806172d09ec083b134236f39467e6f44" category="doc">更換或安裝夾層卡- FAS500f</block>
   <block id="5a8806fc27bd2a34806ff3f345c3e780" category="paragraph">您可以使用下列視訊或表格步驟來更換夾層卡：</block>
   <block id="7688f98e234548d9c9eb8a47a54131fc" category="paragraph"><block ref="7688f98e234548d9c9eb8a47a54131fc" category="inline-link-rx"></block></block>
@@ -8626,17 +8612,14 @@
   <block id="04e527203c5db793872f9a09c2541063" category="list-text">將您在子步驟A中拔下的所有纜線重新連接至熱新增磁碟櫃的IOM A上相同連接埠、否則請執行下一個子步驟。</block>
   <block id="e62a559839495c7e61b9ce5a088b786c" category="doc">將DS460C磁碟櫃中的磁碟機匣更換為IOM12模組的磁碟櫃</block>
   <block id="585248eeaa0c7aa335cb47a05c525433" category="image-alt">92 dwgde6600藥櫃、含HDD、無標註</block>
-  <block id="c8c22257eb9d1c1c2a60aad49bd446f7" category="list-text">永久標記</block>
   <block id="2e3d3f0aa5e64af89c170da27ccf0cb2" category="section-title">移除纜線鏈</block>
   <block id="bbbd51c2b3c60d5e9becdcf09d29b105" category="section-title">移除磁碟機抽屜</block>
-  <block id="335dce1d41f6ceb784ef37e86cc55836" category="paragraph">移除左右纜線鏈之後、您可以從磁碟機櫃中移除磁碟機抽屜。移除磁碟機抽取器時、必須將抽取器的一部分滑出、記錄磁碟機的位置、移除磁碟機、以及移除磁碟機抽取器。</block>
-  <block id="8ef71e80ff9b1b842baf4030f316fb11" category="list-text">從抽屜中取出磁碟機時、您已取得永久標記、以記下每個磁碟機的確切位置。</block>
-  <block id="152621a29ef9446b42880cb317783a76" category="list-text">如果已建立並指派邏輯單元編號（LUN）、請使用永久性標記來記錄每個磁碟機的確切位置。例如、使用下列圖示做為參考、在每個磁碟機的頂端寫下適當的插槽編號。</block>
-  <block id="7d2466032b15e1b1adb1ac2c562eda3b" category="admonition">*可能會遺失資料存取：*請務必在移除每個磁碟機之前、先記錄其確切位置。</block>
   <block id="fe8265ac3d0f9c648e57474b40e2e5d8" category="section-title">安裝磁碟機抽屜</block>
-  <block id="00a6e09fe995a9431b12ec0b25d1e616" category="list-text">您知道每個磁碟機的安裝位置。</block>
-  <block id="844dfe4267fa67e9f6790c353bfd5146" category="list-text">使用您在卸下磁碟機時所做的備註、判斷每個插槽中要安裝的磁碟機。</block>
-  <block id="eaae88ce87aad975b7d2ee116355a25d" category="admonition">*可能會遺失資料存取：*您必須將每個磁碟機安裝在磁碟機抽屜的原始位置。</block>
-  <block id="bb9b26a61fb91f1d47a271d0ed32a967" category="list-text">將磁碟機上的握把垂直提起。</block>
   <block id="2731a32bd20082112cb21bea67097d21" category="section-title">連接纜線鏈</block>
+  <block id="b3e40f87c203ef282d4d64a42d869542" category="open-title">選項2：控制器位於雙節點MetroCluster 的不二</block>
+  <block id="2cb6637a5fdf450f80c9f19b8c718a47" category="admonition">請確定在拔下纜線並重新連接纜線、以及更換另一條纜線時、至少等待70秒。</block>
+  <block id="17c343da5115d1e0b01e0d9fab1f9d4e" category="paragraph">+如果無法使用腕帶、請先觸摸儲存設備機箱機箱上未上漆的表面、再操作磁碟機。</block>
+  <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">移除左右纜線鏈之後、您可以從磁碟機櫃中移除磁碟機抽屜。移除磁碟機抽取器時、必須將抽取器的一部分滑出、移除磁碟機、以及移除磁碟機抽取器。</block>
+  <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">在您要安裝的磁碟機上、將握把垂直提起。</block>
+  <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">如果您的磁碟櫃已部分裝入、表示您要重新安裝磁碟機的磁碟櫃所含的磁碟機數量少於其支援的12個磁碟機、請將前四個磁碟機安裝至前插槽（0、3、6和9）。</block>
 </blocks>
