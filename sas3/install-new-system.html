@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-systems/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -4552,7 +4544,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/index.html">
         系統文件AFF FAS
       </a></li><li class="subfolders "><a href="#">
@@ -6099,7 +6091,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-27 17:37:29 +0000">05/27/2022</time>
+    <time datetime="2022-06-03 02:20:43 +0000">06/03/2022</time>
     
   
 
@@ -6373,7 +6365,7 @@
 <p>請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶、以避免靜電釋放。</p>
 </div>
 <div class="paragraph">
-<p>+如果無法使用腕帶、請先觸摸儲存設備機箱機箱上未上漆的表面、再操作磁碟機。</p>
+<p>如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。</p>
 </div>
 </td>
 </tr>
@@ -6382,8 +6374,8 @@
 <div class="paragraph">
 <p>如果您購買的是部分裝入的磁碟櫃、表示磁碟櫃所支援的磁碟機少於60個、請針對每個磁碟櫃安裝磁碟機、如下所示：</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="ulist">
+<ul>
 <li>
 <p>將前四個磁碟機安裝到正面插槽（0、3、6和9）。</p>
 <div class="admonitionblock note">
@@ -6409,7 +6401,8 @@
 <img src="../media/dwg_trafford_drawer_with_hdds_callouts.gif" alt="具備HDD標註的Dwgt Trap抽屜">
 </div>
 </div>
-</li>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>打開機櫃的頂端抽屜。</p>
 </li>
@@ -6429,6 +6422,9 @@
 </li>
 </ol>
 </div>
+</li>
+</ul>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -6441,8 +6437,8 @@
 </tr>
 </tbody>
 </table>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
 <li>
 <p>垂直放下磁碟機、然後向下轉動CAM握把、直到磁碟機卡入橘色釋放栓鎖下方。</p>
 </li>
@@ -7051,4 +7047,5 @@
     </script>
     <script src='/zh-tw/ontap-systems/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-systems/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-systems/js/sidebar.js'></script>
   </body></html>
