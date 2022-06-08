@@ -22,9 +22,9 @@ summary: 若要更換機箱、您必須關閉控制器。此程序會造成中�
 .關於這項工作
 * 如果您使用NetApp儲存加密、則必須依照《NetApp ONTAP 加密電源指南》_的「將SED恢復為未受保護模式」一節中的指示、重設MSID。
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"^]
 
-* 如果您使用SAN系統、則必須檢查受損控制器SCSI刀鋒的事件訊息（事件記錄顯示）。
+* 如果您使用SAN系統、則必須檢查受損控制器SCSI刀鋒的事件訊息（「事件記錄顯示」）。
 +
 每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
 

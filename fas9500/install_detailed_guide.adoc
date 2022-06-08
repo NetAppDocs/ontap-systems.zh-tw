@@ -1,0 +1,249 @@
+---
+permalink: fas9500/install_detailed_guide.html 
+sidebar: sidebar 
+keywords: FAS9500 
+summary: 這份提供安裝典型NetApp系統的詳細逐步指示。 
+---
+= 詳細步驟- FAS9500
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本文提供安裝典型NetApp系統的詳細逐步指示。如果您需要更詳細的安裝指示、請參閱本文。
+
+
+
+== 步驟1：準備安裝
+
+若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
+
+您必須能夠存取 https://hwu.netapp.com["NetApp Hardware Universe"^] 以取得站台需求的相關資訊、以及設定系統的其他資訊。
+
+您可能也想要存取 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["發行說明ONTAP"^] 如ONTAP 需此系統的詳細資訊、請參閱您的版本的
+
+您必須在網站上提供下列資訊：
+
+* 儲存系統的機架空間
+* 2號十字螺絲起子
+* 其他網路纜線、可將系統連接至網路交換器、筆記型電腦或主控台、並使用網路瀏覽器
+
+
+.步驟
+. 打開所有包裝箱的內容物。
+. 從控制器記錄系統序號。
++
+image::../media/drw_ssn_label.svg[DRw SSN標籤]
+
+. 清點並記下您收到的纜線數量和類型。
++
+下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱Hardware Universe 《關於找出纜線並識別其用途的資訊》。
+
++
+https://hwu.netapp.com["NetApp Hardware Universe"^]
+
++
+[cols="1,2,1,2"]
+|===
+| 纜線類型... | 產品編號與長度 | 連接器類型 | 適用於... 
+
+
+ a| 
+25 GbE資料纜線
+ a| 
+X66240A-05（112-00639）、0.5公尺
+
+X66240A-2（112-00598）、2公尺
+
+X66240A-5（112-00600）、5公尺
+| image:../media/oie_cable_sfp_gbe_copper.svg["寬=85px"]  a| 
+網路纜線
+
+
+
+ a| 
+32 GB FC（SFP+ Op）
+ a| 
+X66250-2（112-00342）、2公尺
+
+X66250-5（112-003444）、5公尺
+
+X66250-15（112-00346）、15公尺
+ a| 
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+ a| 
+FC光纖網路纜線
+
+
+
+ a| 
+40 GbE網路纜線
+ a| 
+X66100-1（112-00542）、1公尺
+
+X66100-3（112-00543）、3公尺
+
+X66100-5（112-00544）、5公尺
+ a| 
+image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+ a| 
+乙太網路資料、叢集網路
+
+
+
+ a| 
+100 GbE纜線
+ a| 
+X6621B-1（112-00573）、1公尺
+
+X66211B-2（112-00574）、2公尺
+
+X66211B-5（112-00576）、5公尺
+ a| 
+image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+ a| 
+網路、
+
+乙太網路資料、
+
+叢集網路
+
+
+
+ a| 
+光纖纜線
+ a| 
+X6031A（112-00436）、1公尺
+
+X6032A（112-00437）、2公尺
+
+X6033A（112-00438）、3公尺
+ a| 
+image::../media/oie_cable_fiber_lc_connector.svg[OIE纜線光纖LC連接器]
+ a| 
+FC光纖網路
+
+
+
+ a| 
+第6類、RJ-45（訂單相依）
+ a| 
+零件編號X6585-R6（112-00291）、3公尺
+
+X6562-R6（112-00196）、5公尺
+ a| 
+image::../media/oie_cable_rj45.svg[OIE纜線RJ45]
+ a| 
+管理網路與乙太網路資料
+
+
+
+ a| 
+儲存設備
+ a| 
+X6031A（112-00436）、1公尺
+
+X6032A（112-00437）、2公尺
+
+X6033A（112-00438）、3公尺
+ a| 
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD到迷你SAS HD]
+ a| 
+儲存設備
+
+
+
+ a| 
+micro-USB主控台纜線
+ a| 
+不適用
+ a| 
+image::../media/oie_cable_micro_usb.svg[OIE纜線Micro USB]
+ a| 
+非Windows或Mac筆記型電腦/主控台軟體安裝期間的主控台連線
+
+
+
+ a| 
+電源線
+ a| 
+不適用
+ a| 
+image::../media/oie_cable_power.svg[OIE纜線電源]
+ a| 
+開啟系統電源
+
+|===
+. 檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"^] 並收集該指南所列的必要資訊。
+
+
+
+
+== 步驟2：安裝硬體
+
+您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
+
+. 視需要安裝軌道套件。
+. 請依照軌道套件隨附的指示來安裝及固定系統。
++
+
+NOTE: 您必須瞭解與系統重量相關的安全顧慮。
+
++
+左側的標籤表示機箱為空、右側的標籤則表示系統已滿。
+
++
+image::../media/drw_9500_lifting_icon.svg[DRw 9500起重圖示]
+
+. 連接纜線管理裝置（如圖所示）。
++
+image::../media/drw_9500_cable_management_arms.svg[DRW 9500纜線管理臂]
+
+. 將擋板放在系統正面。
+
+
+
+
+== 步驟3：將控制器連接至網路
+
+您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
+
+[role="tabbed-block"]
+====
+.選項1：雙節點無交換器叢集
+--
+控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
+
+您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
+
+將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
+
+image::../media/oie_cable_pull_tab_up.svg[OIE纜線拉片向上]
+
+
+NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
+
+. 請使用動畫或圖例來完成控制器與交換器之間的佈線：
++
+
+
+
+endif::[]
+
+endif::[]
+
+endif::[]
+
+endif::[]
+
+endif::[]
+
+endif::[]
+
+endif::[]
+
+endif::[]
+
+--
+====

@@ -1,0 +1,39 @@
+---
+permalink: fas9500/dcpm_NVRAM11_battery_replace.html 
+sidebar: sidebar 
+keywords: FAS9500 
+summary: 若要熱交換內含NVRAM11電池的還原控制器電源模組（DCPM\）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。 
+---
+= 更換裝有NVRAM11電池的斷續控制電源模組- FAS9500
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要熱交換內含NVRAM11電池的還原控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。
+
+從機箱中取出故障模組之前、您必須備有備用的DCPM模組、而且必須在移除後五分鐘內進行更換。從機箱中移除DCPM模組之後、除了容錯移轉到其他控制器模組之外、擁有DCPM模組的控制器模組也不會有關機保護。
+
+
+
+== 步驟1：更換DCPM模組
+
+若要更換系統中的DCPM模組、您必須從系統中移除故障的DCPM模組、然後以新的DCPM模組加以更換。
+
+. 如果您尚未接地、請正確接地。
+. 卸下系統正面的擋板並將其放在一邊。
+. 尋找模組上的警示LED、找出系統前面的故障DCPM模組。
++
+如果模組故障、LED會持續亮起黃色燈號。
+
++
+
+IMPORTANT: DCPM模組必須在移除後五分鐘內在機箱中更換、否則相關的控制器將會關機。
+
+. 按下模組握把上的Terra cotta鎖定按鈕、然後將DCPM模組滑出機箱。
++
+
+
+
+endif::[]

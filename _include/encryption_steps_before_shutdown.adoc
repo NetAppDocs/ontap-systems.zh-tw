@@ -4,14 +4,14 @@
 
 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。
 
-如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"]。
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"^]。
 
 .步驟
 . 檢查受損控制器的狀態：
 +
 ** 如果受損的控制器處於登入提示狀態、請以「admin」身分登入。
 ** 如果受損的控制器處於載入器提示狀態、並且是HA組態的一部分、請在健全的控制器上以「admin」身分登入。
-** 如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 link:http://mysupport.netapp.com/["mysupport.netapp.com"]。
+** 如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 link:http://mysupport.netapp.com/["mysupport.netapp.com"^]。
 
 
 . 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport

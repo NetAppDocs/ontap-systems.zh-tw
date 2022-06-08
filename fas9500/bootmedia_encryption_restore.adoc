@@ -1,0 +1,185 @@
+---
+permalink: fas9500/bootmedia_encryption_restore.html 
+sidebar: sidebar 
+keywords:  
+summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。 
+---
+= OKM、NSE和NVE的開機後媒體更換步驟- FAS9500
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一旦勾選環境變數、您必須完成還原Onboard Key Manager（OKM）、NetApp Storage Encryption（NSE）和NetApp Volume Encryption（NVE）的專屬步驟。
+
+. 判斷您應該使用哪個區段來還原OKM、NSE或NVE組態：如果NSE或NVE已啟用、且內建金鑰管理程式已啟用、則您必須還原在本程序開始時擷取的設定。
++
+** 如果已啟用NSE或NVE、且已啟用Onboard Key Manager、請前往 <<Restore NVE or NSE when Onboard Key Manager is enabled>>。
+** 如果NSE或NVE已啟用ONTAP 支援功能以支援S69.6、請前往 <<Restore NSE/NVE on systems running ONTAP 9.6 and later>>。
+
+
+
+
+
+
+== 啟用Onboard Key Manager時、還原NVE或NSE
+
+. 將主控台纜線連接至目標節點。
+. 在載入程式提示字元下使用「boot_ontap」命令來開機節點。
+. 檢查主控台輸出：
++
+[cols="1,2"]
+|===
+| 如果主控台顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+將節點開機至開機功能表：「boot_ONTAP功能表」
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+.. 在提示字元中輸入「Ctrl-C」
+.. 出現訊息：Do you sto halt this node/wait [y/n]（是否要停止此節點、而非等待[y/n]？）輸入：「y」
+.. 在載入程式提示字元下、輸入「boot_ONTAP功能表」命令。
+
+
+|===
+. 在「Boot Menu（開機功能表）」中、輸入隱藏的命令「主機蓋內建金鑰管理程式」、然後在提示字元中回覆「y」。
+. 輸入您在本程序開始時從客戶處取得的機載金鑰管理程式密碼。
+. 當系統提示您輸入備份資料時、請在系統詢問時貼上本節開頭擷取的備份資料。貼上「安全金鑰管理程式備份顯示」或「安全金鑰管理程式內建show-Backup」命令的輸出。
++
+
+NOTE: 資料是從「安全金鑰管理程式備份顯示」或安全金鑰管理程式內建show-Backup命令輸出。
+
++
+備份資料範例：
+
++
+輸入備份資料：
+
++
+====
+－－－－－－－－－－－－ 開始備份 TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAA1AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAMAZAMAZAAAAAA。。。H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+－－－－－－－－－－－－－ 結束備份
+
+====
+. 在Boot Menu（開機功能表）中、選取Normal Boot（正常開機）選項。
++
+系統會開機以等待傳回...提示。
+
+. 將主控台纜線移至合作夥伴節點、然後以admin身分登入。
+. 使用「儲存容錯移轉show」命令確認目標節點已準備好進行還原。
+. 只讓CFO使用「儲存容錯移轉回傳回-fromNode local -only CFO Aggregate true」命令來集合體。
++
+** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
+** 如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。
++
+
+NOTE: 終止CIFS可能導致資料遺失。
+
+** 如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVRAM同步。
+** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。
+
+
+. 一旦恢復完成、請使用「儲存容錯移轉顯示」和儲存容錯移轉顯示恢復命令來檢查容錯移轉和恢復狀態。
++
+只會顯示CFO集合體（根Aggregate和CFO型式資料集合體）。
+
+. 如果您執行ONTAP 的是32或更新版本、請執行安全金鑰管理程式內建同步：
++
+.. 執行「安全金鑰管理程式內建同步」命令、然後在出現提示時輸入密碼。
+.. 輸入「安全金鑰管理程式金鑰查詢」命令、即可查看內建金鑰管理程式中儲存的所有金鑰詳細檢視、並確認所有驗證金鑰的「RESured」欄位=「yes / true」。
++
+
+NOTE: 如果「RESTORED」欄位=「yes / true」以外的任何項目、請聯絡客戶支援部門。
+
+.. 等待10分鐘、讓金鑰在整個叢集之間同步。
+
+
+. 將主控台纜線移至合作夥伴節點。
+. 使用「儲存容錯移轉還原-fromNode local'命令來歸還目標節點。
+. 使用「儲存容錯移轉show」命令、在報告完成三分鐘後、檢查恢復狀態。
++
+如果20分鐘後仍未完成還原、請聯絡客戶支援部門。
+
+. 在clusterShell提示符下、輸入「net int show -is－homefal」命令、列出不在主節點和連接埠上的邏輯介面。
++
+如果有任何介面被列為「假」、請使用「net int f還原」命令將這些介面還原回其主連接埠。
+
+. 將主控台纜線移至目標節點、然後執行「vrsion -v」命令來檢查ONTAP 版本。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+
+
+
+
+== 在執行ONTAP S還原9.6及更新版本的系統上還原NSE/NVE
+
+. 將主控台纜線連接至目標節點。
+. 在載入程式提示字元下使用「boot_ontap」命令來開機節點。
+. 檢查主控台輸出：
++
+[cols="1,2"]
+|===
+| 如果主控台顯示... | 然後... 
+
+
+ a| 
+登入提示
+ a| 
+移至步驟7。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+.. 登入合作夥伴節點。
+.. 使用「儲存容錯移轉show」命令確認目標節點已準備好進行還原。
+
+
+|===
+. 將主控台纜線移至合作夥伴節點、然後使用「儲存容錯移轉恢復-來源節點本機-僅CFO - Aggregate true local'命令、將目標節點儲存設備歸還。
++
+** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
+** 如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。
++
+
+NOTE: 終止CIFS可能導致資料遺失。
+
+** 如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVMEM同步。
+** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。
+
+
+. 等待3分鐘、然後使用「儲存容錯移轉show」命令檢查容錯移轉狀態。
+. 在clusterShell提示符下、輸入「net int show -is－homefal」命令、列出不在主節點和連接埠上的邏輯介面。
++
+如果有任何介面被列為「假」、請使用「net int f還原」命令將這些介面還原回其主連接埠。
+
+. 將主控台纜線移至目標節點、然後執行「vrsion -v」命令來檢查ONTAP 版本。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+. 在clusterShell提示符下使用「shorage加密磁碟show」查看輸出。
+. 使用「安全金鑰管理程式金鑰查詢」命令來顯示儲存在金鑰管理伺服器上的加密和驗證金鑰。
++
+** 如果「RESTORED」欄=「yes / true」、您就能完成更換程序。
+** 如果「金鑰管理程式類型」=「外部」、「還原」欄=「是/真」以外的任何項目、請使用「安全金鑰管理程式外部還原」命令來還原驗證金鑰的金鑰ID。
++
+
+NOTE: 如果命令失敗、請聯絡客戶支援部門。
+
+** 如果「金鑰管理程式類型」=「OnBoard」、「RESTORED」欄=「yes / true」以外的任何項目、請使用「安全金鑰管理程式內建同步」命令重新同步金鑰管理程式類型。
++
+使用「安全金鑰管理程式金鑰查詢」命令來驗證所有驗證金鑰的「RESured」欄位=「yes / true」。
+
+
+
+. 將主控台纜線連接至合作夥伴節點。
+. 使用"shorage容錯移轉恢復-fromnode"命令歸還節點。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+

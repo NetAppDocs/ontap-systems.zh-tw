@@ -13,14 +13,14 @@ summary: 在關閉受損節點並檢查機載加密金鑰的狀態之前、您�
 [role="lead"]
 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。
 
-如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"]。
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"^]。
 
 .步驟
 . 檢查受損控制器的狀態：
 +
 ** 如果受損的控制器處於登入提示狀態、請以「admin」身分登入。
 ** 如果受損的控制器處於載入器提示狀態、並且是HA組態的一部分、請在健全的控制器上以「admin」身分登入。
-** 如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 link:http://mysupport.netapp.com/["mysupport.netapp.com"]。
+** 如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 link:http://mysupport.netapp.com/["mysupport.netapp.com"^]。
 
 
 . 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
@@ -223,7 +223,7 @@ NOTE: 發行完發行版不只是發行版的版本、您可能還需要其他�
 如果命令失敗、請聯絡NetApp支援部門。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... 驗證所有驗證金鑰的「restored（還原）」欄位是否均為「yes（是）」：「ecurity key-manager key-query（安全金鑰管理程式金鑰查詢）」
 ... 關閉受損的控制器。
@@ -234,7 +234,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"]
 ... 輸入內建的安全金鑰管理程式同步命令：「安全金鑰管理程式內建同步」
 +
 
-NOTE: 在提示下輸入客戶的機載金鑰管理通關密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。 http://mysupport.netapp.com/["mysupport.netapp.com"]
+NOTE: 在提示下輸入客戶的機載金鑰管理通關密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... 驗證所有驗證金鑰的「restored（還原）」欄位是否顯示「yes（是）」：「ecurity key-manager key-query（安全金鑰管理程式金鑰查詢）」
 ... 驗證「Key Manager（金鑰管理程式）」類型是否顯示為「OnBoard（機上）」、然後手動備份OKM資訊。
@@ -280,7 +280,7 @@ NOTE: 發行完發行版不只是發行版的版本、您可能還需要其他�
 如果命令失敗、請聯絡NetApp支援部門。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... 驗證所有驗證金鑰的「restored（還原）」欄位是否均為「yes（是）」：「ecurity key-manager key-query（安全金鑰管理程式金鑰查詢）」
 ... 您可以安全地關閉控制器。
@@ -293,7 +293,7 @@ http://mysupport.netapp.com/["mysupport.netapp.com"]
 在提示下輸入客戶的機載金鑰管理通關密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。
 
 +
-http://mysupport.netapp.com/["mysupport.netapp.com"]
+http://mysupport.netapp.com/["mysupport.netapp.com"^]
 
 ... 驗證所有驗證金鑰的「restored（還原）」欄位是否顯示「yes（是）」：「ecurity key-manager key-query（安全金鑰管理程式金鑰查詢）」
 ... 驗證「Key Manager（金鑰管理程式）」類型是否顯示為「OnBoard（機上）」、然後手動備份OKM資訊。
