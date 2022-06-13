@@ -3611,7 +3611,6 @@
   <block id="4e24ff050030d18996425f4adbef1c69" category="paragraph">對於您要熱新增的每個磁碟櫃、您可以將磁碟櫃安裝到機架、連接電源線、開啟磁碟櫃電源、並在SAS連線之前設定磁碟櫃ID。</block>
   <block id="549c3e79fca25d52391097fcebcbfac4" category="list-text">如果您要新增多個磁碟櫃、請針對您要安裝的每個磁碟櫃重複上述步驟。</block>
   <block id="82fd485bd66b7a7cf95b41701aff95f4" category="list-text">設定要熱新增至HA配對或單一控制器組態中唯一ID的每個磁碟櫃的機櫃ID。</block>
-  <block id="6f3cc8e26b4a1e5fe24b9cfea68de345" category="paragraph">如果您的系統具有內部磁碟櫃、則內部磁碟櫃和外部附加磁碟櫃的磁碟櫃ID必須是唯一的。</block>
   <block id="437cff47077287b8acaab6cf6eb3f66e" category="inline-link-macro">變更機櫃ID</block>
   <block id="f44e011a4789f1353840c4446705dbef" category="paragraph">您可以使用下列子步驟來變更機櫃ID、或是如需更詳細的指示、請使用 <block ref="7a954fe7521681b1209c8a82ea854632" category="inline-link-macro-rx"></block>。</block>
   <block id="be888bc11355717d8c2ff0800204b0b3" category="list-text">如有需要、請執行Config Advisor 功能以驗證已在使用中的機櫃ID。</block>
@@ -8723,4 +8722,5 @@
   <block id="3e5fda4bdb63c28cc3aa53cadbde1129" category="doc">更換DIMM - FAS9500</block>
   <block id="6a58b2807f942e88a255882209bad046" category="sidebar">快取模組熱交換</block>
   <block id="3867a4f17cad66bc9a480e8ad7b9ae3c" category="paragraph">endif::[]</block>
+  <block id="50a5f31124b37f0e6f0175b4691d290a" category="paragraph">如果您的平台模式含有內部磁碟櫃、則內部磁碟櫃和外部附加磁碟櫃的機櫃ID必須是唯一的。</block>
 </blocks>
