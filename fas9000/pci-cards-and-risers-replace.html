@@ -6392,7 +6392,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:55:23 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:58:28 +0000">06/20/2022</time>
     
   
 
@@ -6401,7 +6401,7 @@
 
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>若要更換I/O模組、您必須執行特定的工作順序。</p>
 </div>
 <div class="ulist">
@@ -6419,7 +6419,7 @@
 <div class="sect1">
 <h2 id="步驟1關閉受損的控制器">步驟1：關閉受損的控制器</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。</p>
 </div>
 <div class="exampleblock tabbed-block">
@@ -6427,7 +6427,7 @@
 <div class="openblock">
 <div class="title">選項1：大多數組態</div>
 <div class="content">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
 </div>
 <div class="ulist">
@@ -6516,7 +6516,7 @@
 <div class="openblock">
 <div class="title">選項2：控制器位於雙節點MetroCluster 的不二</div>
 <div class="content">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。</p>
 </div>
 <div class="ulist">
@@ -6653,7 +6653,7 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="sect1">
 <h2 id="步驟2更換io模組">步驟2：更換I/O模組</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>若要更換I/O模組、請在機箱內找到該模組、然後依照特定的步驟順序進行。</p>
 </div>
 <div class="olist arabic">
@@ -6738,14 +6738,14 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="sect1">
 <h2 id="步驟3更換pcie模組後重新啟動控制器">步驟3：更換PCIe模組後、重新啟動控制器</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>更換PCIe模組之後、您必須重新啟動控制器模組。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步驟</div>
 <ol class="arabic">
 <li>
-<p>如果節點出現載入器提示、請啟動節點、如果您看到系統ID不相符的提示警告、並要求覆寫系統ID：「bye」、則回應「y」</p>
+<p>在載入程式提示字元中、重新啟動節點：_by_附註：這會重新初始化PCIe卡和其他元件、然後重新啟動節點。</p>
 </li>
 <li>
 <p>如果您的系統設定為支援40 GbE NIC或內建連接埠上的10 GbE叢集互連和資料連線、請使用「維護模式」中的「nicadmin convert」命令、將這些連接埠轉換成10 GbE連線。</p>
@@ -6763,52 +6763,31 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 </div>
 </li>
 <li>
-<p>使節點恢復正常運作：</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">如果您的系統處於&#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">從合作夥伴的主控台發出此命令&#8230;&#8203;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>HA配對</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>'容錯移轉還原-ofnode_disapped_node_name_'</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>雙節點MetroCluster 的不全功能組態</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>繼續下一步。</p>
-</div>
-<div class="paragraph">
-<p>更新程序的下一項工作是執行此程序。MetroCluster</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+<p>使節點恢復正常運作：「儲存容錯移轉恢復-節點_減損節點名稱_」</p>
 </li>
 <li>
 <p>如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」</p>
 </li>
 </ol>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="附註">
+</td>
+<td class="content">
+如果您的系統採用雙節點MetroCluster 的功能不全、您必須依照下一步所述、將集合體切換回原位。
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="步驟4在雙節點metrocluster-的不二組態中切換回集合體">步驟4：在雙節點MetroCluster 的不二組態中切換回集合體</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。</p>
 </div>
 <div class="paragraph">
@@ -6883,7 +6862,7 @@ Remote: cluster_A configured      		normal</pre>
 <div class="sect1">
 <h2 id="步驟5將故障零件歸還給netapp">步驟5：將故障零件歸還給NetApp</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 <a href="https://mysupport.netapp.com/site/info/rma">"產品退貨安培；更換"</a> 頁面以取得更多資訊。</p>
 </div>
 </div>

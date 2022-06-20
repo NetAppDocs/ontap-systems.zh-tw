@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:55:23 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:58:28 +0000">06/20/2022</time>
     
   
 
@@ -6514,11 +6514,104 @@
 <div class="paragraph">
 <p>請務必追蹤I/O模組所在的插槽。</p>
 </div>
-</li>
-</ol>
+<div class="videoblock">
+<div class="title">動畫-移除/安裝I/O模組</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCIe_module.svg" alt="DRW 9500移除PCIe模組">
+</div>
 </div>
 </li>
 </ol>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="圖例圖示01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>I/O CAM栓鎖有編號和編號</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="圖例圖示02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>I/O CAM栓鎖完全解除鎖定</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>將I/O模組放在一邊。</p>
+</li>
+<li>
+<p>將替換I/O模組輕推入插槽、直到有字母和編號的I/O CAM栓開始與I/O CAM銷接合、然後將I/O CAM栓完全推入機箱、將模組鎖定到位。</p>
+</li>
+<li>
+<p>視需要重新安裝I/O模組。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟3更換io模組後重新啟動控制器">步驟3：更換I/O模組後、重新啟動控制器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>更換I/O模組之後、您必須重新啟動控制器模組。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>在載入程式提示字元中、重新啟動節點：_by_附註：這會重新初始化PCIe卡和其他元件、然後重新啟動節點。</p>
+</li>
+<li>
+<p>如果您的系統設定為支援40 GbE NIC或內建連接埠上的10 GbE叢集互連和資料連線、請使用「維護模式」中的「nicadmin convert」命令、將這些連接埠轉換成10 GbE連線。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="附註">
+</td>
+<td class="content">
+完成轉換後、請務必結束維護模式。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>使節點恢復正常運作：「儲存容錯移轉恢復-節點減損節點名稱」</p>
+</li>
+<li>
+<p>如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟4將故障零件歸還給netapp">步驟4：將故障零件歸還給NetApp</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 <a href="https://mysupport.netapp.com/site/info/rma">"產品退貨安培；更換"</a> 頁面以取得更多資訊。</p>
 </div>
 </div>
 </div>

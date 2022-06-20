@@ -6383,7 +6383,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 13:55:23 +0000">06/08/2022</time>
+    <time datetime="2022-06-20 13:58:28 +0000">06/20/2022</time>
     
   
 
@@ -6392,7 +6392,7 @@
 
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
+<div class="paragraph lead">
 <p>您可以在系統中新增I/O模組、方法是將NIC或儲存介面卡更換為已完全安裝的系統中的新NIC或儲存介面卡、或是將新的NIC或儲存介面卡新增至系統中的空機箱插槽。</p>
 </div>
 <div class="ulist">
@@ -6602,9 +6602,115 @@
 <div class="paragraph">
 <p>請務必追蹤I/O模組所在的插槽。</p>
 </div>
+<div class="videoblock">
+<div class="title">動畫-更換I/O模組</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9500_remove_PCIe_module.svg" alt="DRW 9500移除PCIe模組">
+</div>
+</div>
 </li>
 </ol>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_01.svg" alt="圖例圖示01">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>I/O CAM栓鎖有編號和編號</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../media/legend_icon_02.svg" alt="圖例圖示02">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>I/O CAM栓鎖完全解除鎖定</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>將I/O模組安裝至目標插槽：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>將I/O模組與插槽邊緣對齊。</p>
+</li>
+<li>
+<p>將I/O模組滑入插槽、直到有字母和編號的I/O CAM栓開始與I/O CAM銷接合為止。</p>
+</li>
+<li>
+<p>將I/O CAM栓鎖推到底、將模組鎖定到位。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>重複執行移除和安裝步驟、以更換控制器A的其他模組</p>
+</li>
+<li>
+<p>如果更換的I/O模組是NIC、請將模組或模組纜線連接至資料交換器。</p>
+</li>
+<li>
+<p>從載入程式提示字元_by_重新啟動節點</p>
+</li>
+<li>
+<p>從合作夥伴節點回饋節點。將容錯移轉還原為-ofnode_node_name'</p>
+</li>
+<li>
+<p>如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」</p>
+</li>
+<li>
+<p>如果您新增：</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">如果I/O模組是&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">然後&#8230;&#8203;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>插槽3或7中的NIC模組、</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>對於每個連接埠、使用「儲存連接埠修改節點*<em>&lt;節點名稱&gt;</em>-port *<em>&lt;連接埠名稱&gt;</em>-mode network」命令。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>儲存模組</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>如所述、安裝及連接SAS磁碟櫃https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["熱新增SAS機櫃"^]。</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>對控制器B重複這些步驟</p>
 </li>
 </ol>
 </div>
