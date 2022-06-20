@@ -33,7 +33,42 @@ IMPORTANT: DCPM模組必須在移除後五分鐘內在機箱中更換、否則�
 
 . 按下模組握把上的Terra cotta鎖定按鈕、然後將DCPM模組滑出機箱。
 +
+.動畫-移除/安裝DCPM
+video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto]
++
+image::../media/drw_9500_remove_NV_battery.svg[DRW 9500取出NV.電池]
+
++
+[cols="20%,80%"]
+|===
+
+
+ a| 
+image::../media/legend_icon_01.svg[圖例圖示01]
+ a| 
+DCPM模組Terra cotta鎖定按鈕
+
+|===
+. 將DCPM模組的一端對準機箱開口、然後將其輕推入機箱、直到卡入定位。
++
+
+NOTE: 模組和插槽均採用鎖定式設計。請勿強制模組進入開啟位置。如果模組不容易進入、請重新對齊模組、然後將其滑入機箱。
+
++
+插入時、黃色LED會閃四次、如果電池提供電壓、綠色LED也會閃燈。如果沒有Flash、可能需要更換。
 
 
 
-endif::[]
+
+
+== 步驟2：丟棄電池
+
+您必須依照當地電池回收或棄置規定來處理電池。如果您無法妥善處理電池、則必須將電池送回NetApp、如套件隨附的RMA指示所述。
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["安全資訊與法規注意事項"^]
+
+
+
+== 步驟3：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。
