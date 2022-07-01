@@ -3271,9 +3271,6 @@
   <block id="257892c51ef5c682eda8a947355b2d9d" category="paragraph"><block ref="257892c51ef5c682eda8a947355b2d9d" category="inline-link-rx"></block></block>
   <block id="4693df7fc44203724111e55493c1f236" category="paragraph">Terra cotta釋放鈕</block>
   <block id="9cc3abf99d341ddf4468a9377444f16d" category="doc">關閉受損的控制器AFF - VA900</block>
-  <block id="e528f2a51a17d9bc176b9c9c5872d278" category="doc">SAS磁碟櫃搭配IOM12模組</block>
-  <block id="7c5a6fbb61762dbfee01097d30691b14" category="summary">您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取完整的工作表、並將其套用至磁碟櫃的纜線堆疊、以進行四路徑連線。</block>
-  <block id="cf8eb678d840b3c88f73b61d6e7679cd" category="doc">如何閱讀工作表、將控制器對堆疊的連線纜線連接到具有四路徑連線的磁碟櫃、並使用IOM12模組</block>
   <block id="d69f8bb928c8179d4a1d81a77b9f6a4c" category="list-text">本程序參考下列工作表和纜線佈線範例、示範如何讀取工作表來連接控制器與堆疊的纜線連接。</block>
   <block id="2f40064540d7b13547e7d24b16fd49e7" category="paragraph">本範例所使用的組態為四路徑HA組態、每個控制器上有兩個四埠SAS HBA、以及兩個具有IOM12模組的磁碟櫃堆疊。</block>
   <block id="a513cfe8d83ba38ea85b01260a4ffb53" category="list-text">如果您使用單一控制器組態、請跳過子步驟b和d、以便連接至第二個控制器。</block>
@@ -3306,7 +3303,6 @@
   <block id="d7fcd8720e9644b9a8c73b6f3b8b6bb2" category="list-text">纜線控制器1連接埠1b連接至堆疊2、最後一個機櫃IOM B連接埠4。</block>
   <block id="52432613fc4f7b39a3f5f9b03dadb70d" category="list-text">纜線控制器2連接埠1b至堆疊2、最後一個機櫃IOM A連接埠4。</block>
   <block id="44491eb0ab54400161157cb853b6a2bb" category="summary">您可以在DS224C或DS212C磁碟櫃中熱交換故障磁碟機。</block>
-  <block id="cc20500337dd3f196d85408377bada8a" category="doc">將DS224C或DS212C磁碟櫃中的磁碟機熱交換至IOM12模組磁碟櫃</block>
   <block id="988e6420e48ac7b198915b1d8e0756b4" category="list-text">您要安裝的磁碟機必須受DS224C或DS212C磁碟櫃支援。</block>
   <block id="76020e99d95549721b5520de732b01f5" category="list-text">您要移除的磁碟機必須故障。</block>
   <block id="6fb3647f42df873b2d4553200bca36bd" category="paragraph">您可以執行「儲存磁碟show -disfed'命令、來驗證磁碟機是否故障。故障磁碟機會出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。</block>
@@ -3374,12 +3370,9 @@
   <block id="00970b07def0346373e788e10d6493b3" category="paragraph">您可以使用萬用字元一次指派多個磁碟。</block>
   <block id="6945b44586dc88e4263f108e9be99095" category="list-text">如有需要、請重新啟用自動磁碟指派：「儲存磁碟選項modify -node_node_name_-autodassign on」</block>
   <block id="1bf8504be438eafdf786f7fef56996eb" category="paragraph">您需要在HA配對中的兩個控制器上重新啟用自動磁碟機指派。</block>
-  <block id="7dbdcb32c9db2612bd031043224dae8f" category="summary">完成工作表範本之後、您就可以定義控制器SAS連接埠配對、以便將控制器連接至具有IOM12模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。</block>
-  <block id="5cf2b662ddc9e386ea849d5a2d3ba76d" category="doc">控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM12模組</block>
   <block id="f8688b55e48596e9efbee0294dc9b0af" category="list-title">關於他的工作</block>
   <block id="0410b8cb4945f84623b17f2f6249cf4a" category="list-text">此程序和工作表範本適用於使用一或多個堆疊進行四路徑HA或四路徑組態的四路徑連線。</block>
   <block id="70c45a3fea4e20bf8f37ec9e02cb575c" category="paragraph">四路徑HA和四路徑組態的工作表已完成範例。</block>
-  <block id="dc5d3bbb8f9856069694ac5baf23d955" category="paragraph">工作表範例使用兩個四埠SAS HBA和兩個磁碟櫃堆疊的組態、其中包含IOM12模組。</block>
   <block id="65a0fc99a9081f91248c8270a5907189" category="list-text">工作表範本最多可容納兩個堆疊、如有需要、您需要新增更多欄。</block>
   <block id="a6272c1f6162bcbbc7fe10a8553536c2" category="list-text">控制器對堆疊連線的四路徑連線由兩組多路徑纜線組成：第一組纜線稱為「多路徑」；第二組纜線稱為「四路徑」。</block>
   <block id="7b4d1d3384a1734579d06cee355f6f93" category="paragraph">第二組纜線稱為「四路徑」、因為完成這組纜線之後、您就能在HA配對或單一控制器組態中、從控制器連接到堆疊、達到四路徑連線。</block>
@@ -3389,9 +3382,7 @@
   <block id="f0cd87f18d90e4016279796c776837f8" category="inline-link-macro">如何讀取工作表以纜線連接控制器與堆疊的連線、以實現四路徑連線</block>
   <block id="511fc491991f37919ad20aca7e974640" category="list-text">如有需要、請在完成工作表後參閱 <block ref="22de937f8b92c8373761b256e9819f4a" category="inline-link-macro-rx"></block>。</block>
   <block id="d51e2dd4571539675d09c8266f532da7" category="image-alt">DRw工作表四路徑範本NAU</block>
-  <block id="0636f6be315cedb9025a2140757ddbc1" category="list-text">在灰色方塊上方的方塊中、列出系統上的所有SAS A連接埠、然後依插槽順序列出系統上的所有SAS C連接埠（0、1、2、3等）。</block>
   <block id="9c43147d4d4c774a215292ec5b9439de" category="paragraph">例如：1A、2a、1c、2c</block>
-  <block id="f9c6fd678079201df2e26d02d73a7912" category="list-text">在灰色方塊中、列出系統上的所有SAS B連接埠、然後依插槽順序列出系統上的所有SAS D連接埠（0、1、2、3等）。</block>
   <block id="6184df819b9367f5c25fc56f0851d7b3" category="paragraph">例如：1B、2b、1d、2D</block>
   <block id="2cfe5da4c8722b640a9dfc5b5ab60ebf" category="list-text">在灰色方塊下方的方塊中、重新寫入D和B連接埠清單、以便將清單中的第一個連接埠移到清單的結尾。</block>
   <block id="f3bf9eec2c2f45fee4b6559b6347a72e" category="paragraph">例如：2B、一維、二維、1b</block>
@@ -3407,7 +3398,6 @@
   <block id="35f83b87028a9833d2f51254685e9660" category="summary">如果您的新系統（HA配對或單一控制器組態）未安裝在機櫃中、您必須在機架中安裝磁碟櫃並將其纜線。</block>
   <block id="dc1949c56b4feff1c4f2d03eb17ee3cb" category="doc">安裝及纜線架以安裝新的系統-機櫃內有IOM12模組</block>
   <block id="4664332b9563f72120f97fcec6827311" category="paragraph">如果您的新系統（HA配對或單一控制器組態）未安裝在機櫃中、您可以在機架中安裝磁碟櫃並將其纜線。</block>
-  <block id="6f43d4f1fc81b922a2a346854955d9aa" category="section-title">安裝和佈線使用IOM12模組的磁碟櫃以進行新系統安裝的需求</block>
   <block id="e5fbc77be9a74494e708f06f77d18de5" category="paragraph">安裝和佈線磁碟櫃之前、您必須符合特定需求。</block>
   <block id="33e36140a42f4f8d22f9ac3bcaa59b55" category="list-text">您必須擁有適用於您平台機型的安裝與設定指示。</block>
   <block id="db6140788218135102ddf3b3cc8fd707" category="paragraph">安裝與設定說明可說明系統安裝、設定與組態的完整程序。如果您需要有關將磁碟櫃安裝或纜線連接至儲存系統的詳細資訊、請僅將此程序（_Install and cable Shelves for a new system installation_）與平台安裝與設定說明一起使用。</block>
@@ -3416,10 +3406,8 @@
   <block id="e0b50a66e9b220342f7fbaa9834e4842" category="list-text">此時不得開啟磁碟櫃和控制器的電源。</block>
   <block id="5b19d4f8bb5c1509ddbcb3050340348d" category="inline-link-macro">Mini-SAS HD SAS光纖纜線規則</block>
   <block id="96aa544f3a1fa5c4b5c2e9d7aeef2fe1" category="list-text">如果您使用的是迷你SAS HD SAS光纖纜線、則必須符合中的規則 <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。</block>
-  <block id="b32e9d47676e82c87590b74632b61095" category="section-title">安裝和佈線使用IOM12模組的磁碟櫃以進行新系統安裝時的考量事項</block>
   <block id="b92a3c3c734a6c9e5d3ee17b42bdd333" category="paragraph">在安裝和佈線磁碟櫃之前、您應該先熟悉此程序的各個層面和最佳實務做法。</block>
   <block id="3516c8ba7b35045de92853ce609c11f7" category="section-title">一般考量</block>
-  <block id="5d23b547db799f96af3ae4e4a71f4ae9" category="list-text">搭載IOM12模組的磁碟櫃會隨附預設為00的磁碟櫃ID。</block>
   <block id="1d4c0fb2a243494a984412dc5b5381a1" category="admonition">如果您有至少兩個堆疊的HA配對、則包含第二個堆疊根集合體的磁碟機櫃會將機櫃ID預設為10。</block>
   <block id="f2717497b83e7964ce960a0ca5ac4860" category="paragraph">您必須設定機櫃ID、使其在HA配對或單一控制器組態中是唯一的。您可以在維護模式中使用命令、為HA配對或單一控制器組態中的所有磁碟櫃手動設定機櫃ID、或為其自動指派機櫃ID。提供這兩種方法的說明。</block>
   <block id="b1b6e8ddb338daabf15cdf510590fae4" category="list-text">含有根集合體的磁碟機櫃可透過磁碟機櫃箱和磁碟櫃機箱上的標籤來識別。</block>
@@ -3439,7 +3427,6 @@
   <block id="a8f84b584f326bb48cbda73cc904bb0e" category="list-text">為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。</block>
   <block id="36e5b31f4aed96fe11cffb4a6666f9f7" category="paragraph">纜線有最小的彎折半徑。纜線製造商規格定義最小的彎折半徑、但最小彎折半徑的一般準則是纜線直徑的10倍。</block>
   <block id="2b9663ad46a5f2dcd8c2fffdba003269" category="list-text">使用Velcro綁帶而非綁帶綁帶來綁固及固定系統纜線、可更輕鬆地調整纜線。</block>
-  <block id="407a981a808fda2c0421e9e45684daf8" category="section-title">安裝含有IOM12模組的磁碟櫃、以進行新的系統安裝</block>
   <block id="4634c66603d33968007ce623c89d2060" category="paragraph">您可以使用磁碟櫃隨附的機架安裝套件、將磁碟櫃安裝在機架中。</block>
   <block id="5e1aea44e6b1928c36874e6661b610a9" category="list-text">使用套件隨附的安裝說明來安裝磁碟櫃隨附的機架安裝套件（適用於兩柱式或四柱式機架安裝）。</block>
   <block id="0242c187e17fdc5fb8c6c39a3c7e44cf" category="admonition">如果您要安裝多個磁碟櫃、則應從底部安裝至機架頂端、以獲得最佳的穩定性。</block>
@@ -3464,7 +3451,6 @@
   <block id="3d2a88f98e197f6bc822064edae59a49" category="list-text">對磁碟櫃中的每個藥櫃重複這些步驟。</block>
   <block id="3cc6cb740df088ccfac252ec1fe8a2d0" category="list-text">如果您要新增多個磁碟櫃、請針對您要安裝的每個磁碟櫃重複此程序。</block>
   <block id="76a74383605253628e7771913e3eb749" category="admonition">此時請勿開啟磁碟櫃電源。</block>
-  <block id="e7afe933c2f80e3f8b351cacf0a98497" category="section-title">將磁碟櫃與IOM12模組連接在一起、以進行新的系統安裝</block>
   <block id="b8fe06fa8cda2e641eeef95ff91ef16f" category="paragraph">您可以將磁碟櫃SAS連線（如適用）和控制器對機櫃）連接至機櫃、以建立系統的儲存連線。</block>
   <block id="1143d5c25aa2f693537222d1f3260323" category="paragraph">您必須符合中的要求 <block ref="d785cc9ecd460c8d1bff7d4aeeca8c73" category="inline-xref-macro-rx"></block> 並在機架中安裝磁碟櫃。</block>
   <block id="eb0ef620e7c33a9d328a59925c63f641" category="paragraph">在連接磁碟櫃纜線之後、您可以開啟磁碟櫃電源、設定磁碟櫃ID、並完成系統設定與組態。</block>
@@ -3535,16 +3521,13 @@
   <block id="dff1dc2f7a2fbdf73084eb54bb572edd" category="list-text">確認頻內ACP已自動啟用。《老舊的ACP秀》</block>
   <block id="cf4c2211d1e7e05578f4d644efc4b0f5" category="paragraph">在輸出中、每個節點的「頻內」會列為「'active'」。</block>
   <block id="7a48725aae87c25c20800da734657f8d" category="summary">您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取及套用完整的工作表、以纜線連接多路徑連線的磁碟機櫃的控制器對堆疊連線。</block>
-  <block id="3d08def89864cfe0e473db695c3b8b2c" category="doc">如何閱讀工作表、將控制器對堆疊的連線纜線連接到多路徑連線、以利使用IOM12模組的機櫃</block>
   <block id="34a29535255d4c9658cf8667fb70f827" category="paragraph">您的HA配對或單一控制器組態不能是AFF 一套E4A200、AFF E4A220、FAS2600系列或FAS2700系統。這些系統使用獨特的工作表：</block>
-  <block id="59da566889699a19d7cab68c1fde27b4" category="paragraph">本例中使用的組態是多重路徑HA組態、每個控制器上有兩個四埠SAS HBA（八個SAS連接埠）、以及兩個具有IOM12模組的磁碟櫃堆疊。連接埠配對是透過跳過工作表中的每個其他連接埠配對來連接。</block>
   <block id="f590bcd598fe8232b2185b3611156cca" category="admonition">如果連接埠配對數量超過系統中的堆疊纜線數量、最佳做法是跳過連接埠配對、以最佳化系統上的SAS連接埠。藉由最佳化SAS連接埠、您可以最佳化系統效能。</block>
   <block id="cd0bbcf8c45ff326b72c889eab8250c0" category="paragraph">連接埠配對使用工作表中的每個其他連接埠配對進行纜線連接：1A/2b和1c/2D。</block>
   <block id="1924d3ee43c267ede3f6ed98969b8a41" category="image-alt">已跳過的範本已跳過網路工作表mpha</block>
   <block id="2674e8f8d480cc5fce26a4245094489c" category="image-alt">已跳過DRw mpha插槽1和2個4porthbas兩個堆疊</block>
   <block id="22de385bc846aff8918c00418f396af3" category="summary">下列SAS纜線佈線規則、範例和工作表可協助您將SAS磁碟機櫃與IOM12模組連接至儲存系統。</block>
   <block id="d882321e2eb0b3930cc4d89826524491" category="doc">SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃</block>
-  <block id="104b388e64d99775bc4ff6b16daf9e27" category="paragraph">為了協助您將SAS磁碟機櫃與IOM12模組連接至儲存系統、您可以視需要使用任何可用的SAS纜線佈線規則、工作表和範例內容。</block>
   <block id="dec8d0bac5e3e019cf604b191c0cd1fc" category="paragraph">* SAS佈線規則*</block>
   <block id="eb631b70ae7c721773f91b506c815082" category="inline-link-macro">組態</block>
   <block id="2c20867b019d706a391ac25e6929487d" category="list-text"><block ref="2c20867b019d706a391ac25e6929487d" category="inline-link-macro-rx"></block></block>
@@ -3572,12 +3555,7 @@
   <block id="22466a802c90a3a201ee0515f54de806" category="list-text"><block ref="22466a802c90a3a201ee0515f54de806" category="inline-link-macro-rx"></block></block>
   <block id="2c7dca88481889b656f4d74763cd9a46" category="inline-link-macro">如何閱讀工作表、瞭解四路徑連線能力</block>
   <block id="13c0d70fd4cb9852007aff38af1de02a" category="list-text"><block ref="13c0d70fd4cb9852007aff38af1de02a" category="inline-link-macro-rx"></block></block>
-  <block id="545b7f30ad2af93efecde12bf09f62e6" category="summary">您可以使用IOM12模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。</block>
-  <block id="ad0264cd7ad787d24cf6bc55ad39025a" category="doc">熱新增機櫃-機櫃內有IOM12模組</block>
   <block id="fe096ebf4601616805c78a6dbc395407" category="inline-link-macro">將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊</block>
-  <block id="ea8b0ca4b7e403da928bc7458ed61d7d" category="paragraph">您無法使用此程序來混合堆疊：將含有IOM12模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。如果您需要混合堆疊、請使用 <block ref="262c980c58c743dada67cf3fc593aeaa" category="inline-link-macro-rx"></block>。</block>
-  <block id="c920d4841ecd46b57d9a50e7295a2153" category="section-title">使用IOM12模組熱新增磁碟櫃的需求</block>
-  <block id="53b7e29a0202cff09b03c6aa753604ba" category="paragraph">在使用IOM12模組熱新增磁碟櫃之前、您的系統必須符合特定需求。</block>
   <block id="de33df5f9c0e7cad9f4a80efe6b64037" category="section-title">系統狀態</block>
   <block id="ca56cd02a36881bbfbd303ad25ed02ab" category="list-text">您的系統和版本ONTAP 的支援必須支援熱新增的磁碟櫃、包括IOM、磁碟機和SAS纜線。</block>
   <block id="87f977ab6d3b14c09f67014c03174f98" category="list-text">您的系統必須少於所支援的磁碟機數量上限、至少要少於您計畫要熱新增的磁碟櫃數量。</block>
@@ -3592,13 +3570,8 @@
   <block id="8a6093bb74b1d54ff4762774f2de06dc" category="list-text">如果您在磁碟櫃堆疊中使用Mini-SAS HD SAS光纖纜線或混合使用Mini-SAS HD SAS光纖纜線和SAS銅線、則必須符合中的規則 <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。</block>
   <block id="db4ec39badc4cbb7bab7bcf31386f4c9" category="list-text">如果您要將配備Mini-SAS HD SAS光纖纜線的磁碟櫃熱新增至連接SAS銅線的磁碟櫃堆疊、則可在堆疊中暫時使用這兩種纜線類型。</block>
   <block id="bea8d9a74a333358da573c569f901a16" category="paragraph">熱新增磁碟櫃之後、您必須更換SAS銅線、以用於堆疊中其餘的磁碟櫃對磁碟櫃連線、以及控制器對堆疊連線、使堆疊符合中的規則 <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。這表示您必須訂購適當數量的Mini-SAS HD SAS光纖纜線。</block>
-  <block id="fe2f7deb9ab9cd3d0af8a260fc8b5c59" category="section-title">使用IOM12模組熱新增磁碟櫃的考量事項</block>
   <block id="91d741bb049c9a466853b4ad38bb8ca8" category="paragraph">在熱新增磁碟櫃之前、您應該先熟悉此程序的各個層面和最佳實務做法。</block>
-  <block id="c5e36545fdd9f98fe69543998623a3e2" category="list-text">如果您要將具有IOM12模組的磁碟櫃熱新增至現有堆疊（含IOM12模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一個或最後一個磁碟櫃）。</block>
   <block id="f0e56e4ad757d6fad89dfcfe1aa12d88" category="paragraph">若為單一路徑HA和單一路徑組態（適用AFF 對象為E4A200、AFF E4A220、FAS2600系列和FAS2700系統）、您可將磁碟櫃熱新增至堆疊的末端、而該堆疊沒有控制器連線。</block>
-  <block id="04a87706f976ad08a4ef07399d6e9fac" category="list-text">具有IOM12模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。</block>
-  <block id="2265fccf5f84cc4b1d60215d82415c82" category="paragraph">此程序並不處理混合堆疊的問題：將含有IOM12模組的機櫃熱新增至含有IOM6模組的機櫃堆疊。</block>
-  <block id="225b02e59ad97380e70691c81e696827" category="list-text">系統可以使用IOM12模組、將磁碟櫃的多路徑堆疊和四路徑堆疊。</block>
   <block id="1367c0042a0771df50820889203cf147" category="paragraph">如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表中的系統組態會顯示為「多路徑」。</block>
   <block id="23799cee6c2d33512d5d7c2c4dd066da" category="list-text">此程序假設您的組態使用頻內ACP。</block>
   <block id="0a21ef57c079b8fb55adaac84e5c7dc9" category="paragraph">對於啟用頻內ACP的組態、頻內ACP會自動在熱新增磁碟櫃上啟用。對於未啟用頻內ACP的組態、熱新增磁碟櫃可在沒有任何ACP功能的情況下運作。</block>
@@ -3607,7 +3580,6 @@
   <block id="512350f125bb7245b3fb215fde5ff006" category="list-text">最佳實務做法是在熱新增磁碟櫃之前、先安裝目前版本的磁碟認證套件（DQP）。</block>
   <block id="9a9724487e7a797766950ddd9af95d77" category="list-text">最佳實務做法是Config Advisor 在熱新增磁碟櫃之前和之後執行</block>
   <block id="b66743ded6efe2a4907999f86527ea14" category="paragraph">在Config Advisor 熱新增磁碟櫃之前執行支援功能、可提供SAS連線的快照、驗證磁碟櫃（IOM）韌體版本、並可讓您驗證系統上已使用的磁碟櫃ID。熱新增磁碟櫃後執行Config Advisor 的功能區可讓您驗證SAS連線是否正確、以及HA配對或單一控制器組態中的機櫃ID是否唯一。</block>
-  <block id="06dfcb3b1a9c224a29ae8981c6882d18" category="section-title">使用IOM12模組安裝磁碟櫃以進行熱新增</block>
   <block id="4e24ff050030d18996425f4adbef1c69" category="paragraph">對於您要熱新增的每個磁碟櫃、您可以將磁碟櫃安裝到機架、連接電源線、開啟磁碟櫃電源、並在SAS連線之前設定磁碟櫃ID。</block>
   <block id="549c3e79fca25d52391097fcebcbfac4" category="list-text">如果您要新增多個磁碟櫃、請針對您要安裝的每個磁碟櫃重複上述步驟。</block>
   <block id="82fd485bd66b7a7cf95b41701aff95f4" category="list-text">設定要熱新增至HA配對或單一控制器組態中唯一ID的每個磁碟櫃的機櫃ID。</block>
@@ -3618,7 +3590,6 @@
   <block id="caf1406d08cb4aa05b7a22c96cfe7c00" category="paragraph">請等待至少10秒、再開啟電源以完成電源循環。</block>
   <block id="e721fed5752af28a811f95c9517647d5" category="paragraph">磁碟櫃ID會持續閃爍、而操作員顯示面板的黃色LED會持續亮起、直到磁碟櫃重新開機為止。</block>
   <block id="114b5f5f60d5305cae68f7358becbb08" category="list-text">針對您要熱新增的每個磁碟櫃、重複執行子步驟a到d。</block>
-  <block id="7eb22faea0fdcb1766826a0a35cc21d9" category="section-title">使用IOM12模組來連接磁碟櫃的纜線、以便熱新增</block>
   <block id="7d1f085b961baef4ee505ff0b202f8af" category="paragraph">您可以將SAS連線（即機櫃對機櫃和控制器對堆疊）連接至熱新增磁碟櫃、以便它們能夠連線至系統。</block>
   <block id="25144a0fdc573490379af60a79ce8953" category="paragraph">您必須符合中的要求 <block ref="b97fb0f13d8cc81479b53e89d9178105" category="inline-xref-macro-rx"></block> 並依照中的指示、為每個磁碟櫃設定機櫃ID <block ref="1559829c998f121990e6747d77c5c076" category="inline-xref-macro-rx"></block>。</block>
   <block id="634f97c34a23666fd57c06fc0817e89c" category="inline-link-macro">機櫃對機櫃SAS連線規則</block>
@@ -3667,7 +3638,6 @@
   <block id="cc6b9d9108c7e95955c2723ace2cce93" category="paragraph">您需要在HA配對中的兩個控制器上重新啟用磁碟擁有權自動指派。</block>
   <block id="6a220954edf12040894af14cc9669600" category="list-text">如果您的組態正在頻內執行ACP、請確認頻內ACP已在熱新增磁碟櫃上自動啟用：「儲存櫃ACP show」</block>
   <block id="0ed20e374c19ba1929de6bdbbdd59fb4" category="summary">您可以瞭解磁碟櫃元件上LED的位置和狀態條件、以監控磁碟櫃的健全狀況。</block>
-  <block id="8c959dd2d40819c11d5abe3b406d68bf" category="doc">監控磁碟櫃LED -採用IOM12模組的磁碟櫃</block>
   <block id="a93d9d3aea843199027168d521da5dea" category="section-title">操作員顯示面板LED</block>
   <block id="3b4ebd8e7c477a0f7a960c9c6a4ce31f" category="paragraph">磁碟櫃前面的操作員顯示面板上的LED會指出磁碟櫃是否正常運作、或是硬體有問題。</block>
   <block id="13e60e94f01a2770d6906d572edb4e16" category="paragraph">下表說明DS460C、DS224C和DS212C磁碟櫃中所使用的三個控制面板LED：</block>
@@ -3762,7 +3732,6 @@
   <block id="9a0daa08283e3d5284734f7a4dd54c88" category="image-alt">2860 dwgam黃色 磁碟機</block>
   <block id="6c6102fba9a6a67d68f726fd9a0aaa6a" category="cell">注意LED燈亮起</block>
   <block id="1a9e0b4a2336d16f8663305e4fc18c6f" category="summary">您可以使用控制器對堆疊佈線工作表和佈線範例、將HA配對纜線連接成多重路徑HA組態。</block>
-  <block id="1cd676616010f77b0108acce219a8b0c" category="doc">控制器對堆疊佈線工作表與纜線佈線範例、適用於常見的多重路徑HA組態-具有IOM12模組的磁碟櫃</block>
   <block id="26ba4644ea5bc8f16212e97ddf32d634" category="list-text">如有需要、請參閱 <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> 如需支援組態的相關資訊、請參閱控制器插槽編號慣例、機櫃對機櫃連線、以及控制器對機櫃連線（包括使用連接埠配對）。</block>
   <block id="7ab9991308c3a3d15fb6ed5c7a347e31" category="list-text">如有需要、請參閱 <block ref="32f1048d76ed4ef07349228b731694c0" category="inline-link-macro-rx"></block>。</block>
   <block id="f36fd727bb50e27882dbe086058bd373" category="list-text">佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器A和C連接埠連線與控制器B和D連接埠連線。</block>
@@ -3806,10 +3775,7 @@
   <block id="6c41b1568b5db604b91d32b896598e73" category="paragraph">以下工作表和佈線範例顯示跳過連接埠配對、以便在清單中每隔一組使用：0A/1b和0c/1d。</block>
   <block id="6ef763da442e6cc67ed639f83a4e7b31" category="image-alt">已跳過DRw工作表mpha插槽0和1 8個連接埠的兩個堆疊</block>
   <block id="cc1b17d485465e67146abdf8583e715e" category="image-alt">DRw mpha插槽0和1 8個連接埠跳過兩個堆疊</block>
-  <block id="d3d138262ed0f55d19a69189f52f03ca" category="summary">如果需要額外的儲存設備、您可以將IOM12磁碟櫃（含IOM12模組的SAS磁碟櫃）熱新增至IOM6磁碟櫃堆疊（含IOM6模組的SAS磁碟櫃）、表示您可以混合堆疊。</block>
-  <block id="40b8c09abd3ab8cd2410441ab74e8f46" category="paragraph">在MetroCluster 將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您的HA配對、單一控制器或延伸功能不全組態（系統）必須符合特定需求。</block>
   <block id="087dd70cd49bca7af2d666a6ce4a73e5" category="admonition">如需橋接式MetroCluster 附加的功能、請參閱 <block ref="a36de82ec030fb7c465d75421f1bf354" category="inline-xref-macro-rx"></block>。</block>
-  <block id="b73981b6e178e117df039b0b4c496268" category="list-text">您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6層架和IOM12層架。</block>
   <block id="e9b78b52c00f7174e47b3e3e00f34747" category="paragraph">您可以使用下列其中一種方法來驗證支援：</block>
   <block id="c87b70dfd933003335168887fda9b203" category="list-text">在任一控制器的admin提示字元中輸入「run local sysconfig」命令。</block>
   <block id="a9e6da69afc7cf19277dce38f3af6658" category="paragraph">如果SAS2/SAS3「混合堆疊支援」欄位未出現在輸出中或值為「無」、表示您的系統不支援混合堆疊。</block>
@@ -3826,13 +3792,9 @@
   <block id="c08b36d83324a217b367ef482dda6bff" category="paragraph">混合堆疊不支援SAS光纖纜線。</block>
   <block id="79558b80e68c3388b4399b11c12347ac" category="admonition">如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新增IOM12機櫃。請聯絡您的NetApp銷售代表。</block>
   <block id="8ac997f121720a497b3cff0318f505b3" category="list-text">您的系統必須少於支援的磁碟機數量上限、至少必須少於您要熱新增的IOM12磁碟櫃中能夠安裝的磁碟機數量。</block>
-  <block id="0e37753f9ec212b577d2cd0e1d9f327e" category="paragraph">在熱新增IOM12磁碟櫃之後、您無法超過系統支援的磁碟機數量上限。</block>
-  <block id="992139c1f07935c457369a8b228d040e" category="list-text">您必須訂購並接收IOM12磁碟櫃、以及適當數量和類型的SAS銅線。</block>
   <block id="3969a8285624065a82b260666129a7d3" category="paragraph">IOM12磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。</block>
   <block id="c7566a05bf32290cd12dd8d369e46bd4" category="section-title">橋接式MetroCluster 附加功能的需求</block>
-  <block id="45850248856f0338879b9cb8b4984fee" category="paragraph">如果您要將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊、而IOM6磁碟櫃是以MetroCluster 一對Atto FibreBridge的方式以進行非二線組態連接、則系統必須符合特定需求。</block>
   <block id="8c5677f5d5c9a3e27e7aa9a888386129" category="list-text">如果橋接SAS連接埠在目前組態中可用、您應該將IOM12磁碟櫃新增為個別堆疊。</block>
-  <block id="15cf525c29e3077584066ec93be80b2b" category="paragraph">在堆疊中混合IOM12和IOM6模組之前、請先使用所有橋接連接埠。</block>
   <block id="bd7825d41c8830b21a19c98ddcd9b85a" category="list-text">在任一控制器的admin提示字元中輸入「run local sysconfig」命令。</block>
   <block id="9d5ea5ac8c96d6d172e1cc58ef233dd1" category="list-text">組態必須符合MetroCluster 《不完整安裝與組態指南》中的所有要求。</block>
   <block id="39d46c9b8c2da59196572bcb75b09f65" category="inline-link">安裝及設定Stretch MetroCluster 的需求擴充組態</block>
@@ -3841,10 +3803,7 @@
   <block id="21990ac0aec263e0a024057600dc893c" category="paragraph"><block ref="21990ac0aec263e0a024057600dc893c" category="inline-link-rx"></block></block>
   <block id="6e4c499bdd2966c2b90a216c4bda1fb3" category="list-text">您的組態必須少於橋接連接埠所支援的磁碟機數量上限。</block>
   <block id="6da9e0f76a9feddbef77395623172c84" category="list-text">橋接器必須執行3.16/4.16版及更新版本的韌體。</block>
-  <block id="8c432b127601831790bd7d695c0029d0" category="paragraph">在將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您應該先熟悉此程序的各個層面和最佳實務做法。</block>
-  <block id="6ba12b1b5e7e34fc318fb4e006d6eb53" category="list-text">強烈建議您熱新增的IOM12磁碟櫃執行韌體版本0260或更新版本、然後再將其連接至系統。</block>
   <block id="dd6fd6077c76a89a726fd6fd4df5ecd6" category="paragraph">如果您將熱新增的磁碟櫃錯誤地連接至堆疊、則擁有支援版本的機櫃韌體可防止儲存堆疊存取問題。</block>
-  <block id="fff9549320af463836f0563314d1e238" category="paragraph">將IOM12磁碟櫃韌體下載到磁碟櫃之後、請在任一控制器的主控台輸入「shorage sherage show -module"命令、確認韌體版本為0260或更新版本。</block>
   <block id="cc2b41a35c221fb91dbefde3e869ed2d" category="list-text">如果受影響的磁碟櫃有鏡射的集合體、您可以使用此程序、在同MetroCluster 一個作業系統中熱移除的熱新增磁碟櫃。</block>
   <block id="6ef27274e13ef21decb2e40b817dc838" category="list-text">如有需要、機櫃（IOM）韌體和磁碟機韌體應會自動更新。</block>
   <block id="73dba703fd8c5b56b1febc70d5f9bc0d" category="list-text">*最佳實務做法：*最佳實務做法是在熱新增機櫃之前、先在系統上安裝最新版本的機櫃（IOM）韌體和磁碟機韌體。</block>
@@ -3877,30 +3836,20 @@
   <block id="74ee2dd8c1c457d065bbe6699d54d9d2" category="paragraph">您必須關閉兩個電源開關、等待10秒、然後重新開啟、才能完成電源循環。</block>
   <block id="1127d0feda6e469dce912ad847745999" category="list-text">針對您要熱新增的每個機櫃、重複執行步驟b到g。</block>
   <block id="ac6725fb813060a9b7afc55f795aae39" category="section-title">熱插拔的纜線架</block>
-  <block id="195d94d351e70d915dbfa7ea732f64c4" category="paragraph">如何將IOM12機櫃連接至IOM6機櫃堆疊、取決於IOM12機櫃是否為初始IOM12機櫃、亦即堆疊中沒有其他IOM12機櫃、 或是現有混合堆疊的額外IOM12層、表示堆疊中已存在一個或多個IOM12層架。這也取決於堆疊是否具有多重路徑HA、多重路徑、單一路徑HA或單一路徑連線。</block>
   <block id="93484edf29512f42176285d1b3aaffee" category="list-text">如果適用、您必須完成準備程序。</block>
   <block id="7aa59d062d2da8d407e876bd47370fa0" category="paragraph"><block ref="1f1303724d0c3c3fd20087be0397e475" category="inline-xref-macro-rx"></block></block>
   <block id="f687c0bac0c7622f56dbb2b4da300a72" category="paragraph"><block ref="395b2cdcd845cc34c1cb8c041e444e72" category="inline-xref-macro-rx"></block></block>
-  <block id="7df56e2d89cedcfb19c366a5f5ba1ba3" category="list-text">您總是將IOM12磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、以維持堆疊內的單一速度轉換。</block>
-  <block id="3ec286ca7aef209a82a25f8e44cfe008" category="paragraph">將IOM12磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、IOM6磁碟櫃仍會群組在一起、IOM12磁碟櫃仍會群組在一起、以便在兩個磁碟櫃群組之間進行單一速度轉換。</block>
   <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
-  <block id="35ff2a2b75ed583f6d17f8fc93c2bded" category="list-text">在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12磁碟櫃的單一速度轉換會描述為：</block>
   <block id="cb9ba118de906a291cd694ac2df4fdae" category="list-text">在與內建IOM12E儲存設備的HA配對中、堆疊內有兩個IOM12磁碟櫃和兩個IOM6磁碟櫃的單一速度轉換說明如下：</block>
-  <block id="39756e456d1fa63aae03504421b7e0d3" category="paragraph">內建儲存連接埠0b是內部儲存設備（擴充器）的連接埠、因為它連接到熱新增的IOM12機櫃（堆疊中的最後一個機櫃）、IOM12機櫃群組會一起保存、並透過堆疊和內建IOM12E儲存設備維持單一轉換。</block>
   <block id="eadd8b5aeac3b3cac91a5861456a7daf" category="list-text">混合堆疊只支援單一速度轉換。您無法進行額外的速度轉換。例如、您無法在堆疊中進行兩種速度轉換、其描述如下：</block>
   <block id="785690423679fc729d3390cf87c73c79" category="list-text">您可以將IOM6磁碟櫃熱新增至混合式堆疊。不過、您必須將IOM6磁碟櫃（現有IOM6磁碟櫃群組）熱新增至堆疊側邊、以維持堆疊中的單一速度轉換。</block>
-  <block id="08da1810aa1c7164b3f9cb727aa45dee" category="list-text">您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。</block>
   <block id="954499b275aa6b0244088769d4cab500" category="admonition">在這個組態中、您無法使用IOM B路徑。MetroCluster</block>
-  <block id="52c0221a4c6cfa666d5a9af47d2917f3" category="list-text">初始IOM12機櫃（IOM12機櫃連接至邏輯上最後一個IOM6機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</block>
   <block id="f260b20153205d9038127e4a15618a0f" category="list-text">SAS纜線連接器採用鎖定式設計；若方向正確放入SAS連接埠、連接器會卡入定位。</block>
   <block id="10ae5a4ce8cb24c89ab7989958cb34b9" category="paragraph">如果是磁碟櫃、請插入SAS纜線連接器、拉片朝下（位於連接器底部）。對於控制器、SAS連接埠的方向可能會因平台機型而異、因此SAS纜線連接器的正確方向會有所不同。</block>
-  <block id="a1acde8be5e3eb1d79a962a3ec3f99dc" category="list-text">您可以參考下圖、將IOM12磁碟櫃連接至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。</block>
   <block id="80e0a56bad8ed4beffb511e7a7644751" category="paragraph">此圖例僅適用於具有多重路徑HA連線功能的堆疊、不過、纜線概念可套用至具有多重路徑、單一路徑HA、單一路徑連線及延伸MetroCluster 性等組態的堆疊。</block>
   <block id="9eae6e522d01233eda31813671040bc9" category="image-alt">DRW SAS2 SAS3混合堆疊</block>
-  <block id="7634bb9cc34b77912adf964cf61c3014" category="list-text">您可以參考下圖、將IOM12磁碟櫃連接至IOM6磁碟櫃堆疊、並採用橋接式MetroCluster 附加功能的功能。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a4450110a0add0d3dc0ed544c4dc9587" category="list-text">實體識別堆疊中的最後一個邏輯磁碟櫃。</block>
   <block id="dcb30e1abfaaa4b668dce7194e9a2977" category="paragraph">根據您的平台模式和堆疊連線能力（多重路徑HA、多重路徑、單一路徑HA或單一路徑）、邏輯的最後一個機櫃是控制器SAS連接埠B和D的控制器對堆疊連線、 或是沒有任何控制器連線的機櫃（因為控制器對堆疊連線是透過控制器SAS連接埠A和C連至堆疊的邏輯頂端）。</block>
-  <block id="80eab1f919093463299353422047b939" category="list-text">如果您要熱新增的IOM12機櫃是IOM12機櫃的初始新增至IOM6堆疊、表示IOM6機櫃堆疊中沒有其他IOM12機櫃、請完成適用的子步驟。</block>
   <block id="3290caa995109a5019ab331bcbb4fd8c" category="paragraph">否則、請前往步驟3。</block>
   <block id="49ae96093ef4318ebea3748695f1f2ec" category="cell">如果您的IOM6堆疊連線功能是...</block>
   <block id="86ce44b3919ce611e611db5c55786de7" category="paragraph">多重路徑HA或多重路徑、或單一路徑HA、並可將控制器連線至邏輯最後一個機櫃（包括彈性MetroCluster 的等位組態）</block>
@@ -3910,7 +3859,6 @@
   <block id="e9ba2695cb468ef719b2b099a63ad4e0" category="paragraph">否則、請前往子步驟e...</block>
   <block id="6abc41dcfb66265b141bc0c3d6bd404f" category="list-text">將最後一個IOM6機櫃IOM與新IOM12機櫃IOM A連接埠（從子步驟A）之間的機櫃對機櫃連線纜線連接至新的IOM12機櫃IOM A連接埠1。</block>
   <block id="01eaaf7e875b3b2171b15d76169dd9e6" category="paragraph">使用SAS銅線QSFP-to Mini-SAS HD纜線。</block>
-  <block id="2cc72f294985828ae8239194b9a476d6" category="list-text">如果您要熱新增另一個IOM12機櫃、請將IOM12機櫃IOM A連接埠3、剛連接纜線的機櫃連接至機櫃連接線、以及下一個IOM12機櫃IOM A連接埠1纜線。</block>
   <block id="8904fa6bfff4cd47f36ebe61b80ba07e" category="paragraph">使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</block>
   <block id="e2e2c21437bf854e94458bf7484b889d" category="paragraph">否則、請前往下一個子步驟。</block>
   <block id="926c9efdfde9f0aef47047a0e5f7949b" category="list-text">將控制器或橋接器（位於子步驟A）上的相同連接埠纜線連接至新的最後一個IOM12機櫃IOM A連接埠3、藉此重新建立控制器對堆疊連線。</block>
@@ -3924,32 +3872,20 @@
   <block id="63fc6622bd95c4421099340dd35535b4" category="list-text">將橋接器上的相同連接埠（位於子步驟A）纜線連接至新的最後IOM12機櫃IOM A連接埠3、藉此重新建立底部橋接至堆疊的連線。</block>
   <block id="87787cb4b43228e79111842d0ca7ad92" category="list-text">前往步驟4。</block>
   <block id="53446fdb493b04597baa8f53eb3225a7" category="paragraph">單一路徑HA或單一路徑、且沒有控制器連線至邏輯最後一個機櫃</block>
-  <block id="f4dacae69a131a08b3308f001c6e0873" category="list-text">將最後一個IOM6機櫃IOM A回轉連接埠與新IOM12機櫃IOM A連接埠之間的機櫃對機櫃連接線纜1。</block>
   <block id="cb388561ef96ce81298a5572abedfbe4" category="list-text">針對IOM B重複上述子步驟</block>
-  <block id="22a91773eeb57ff76cb3a5c7f71b152e" category="list-text">如果您要熱新增另一個IOM12機櫃、請重複執行子步驟a和b</block>
-  <block id="f3c5d063820d8fab0d5b8261bf53b58e" category="list-text">如果您要熱新增的IOM12磁碟櫃是現有混合式堆疊的額外IOM12磁碟櫃、表示堆疊中已存在一個或多個IOM12磁碟櫃、請完成適用的子步驟。</block>
   <block id="fbeb13900997a66117589107666778fd" category="cell">如果您的混合堆疊連線是...</block>
   <block id="2959cd4f37c3034d02125ecfe63d8c4b" category="paragraph">多重路徑HA或多重路徑、或是單一路徑HA、可將控制器連線至邏輯最後一個機櫃、或MetroCluster 是以整合式架構組態連接橋接式連線</block>
-  <block id="66dcddb033d4bd30cb4de2fe9ee7faa0" category="list-text">將控制器對堆疊纜線從最後一個IOM12機櫃IOM A連接埠3移至新最後一個IOM12機櫃上的相同連接埠。</block>
-  <block id="11bc7941767ab282c9e15fd9a816de99" category="list-text">如果您要熱新增一個IOM12機櫃、請將舊最後一個IOM12機櫃IOM A連接埠3與新的最後一個IOM12機櫃IOM A連接埠1的機櫃對機櫃連接纜線。</block>
-  <block id="f844247cd0a7e802d6a89619df010773" category="list-text">如果您要熱新增多個IOM12機櫃、請將舊的上一個IOM12機櫃IOM A連接埠3和下一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線、然後針對任何其他IOM12機櫃重複此步驟。</block>
   <block id="f0e978aba7deb5c2e1bfcdac0c49239a" category="paragraph">使用額外的SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</block>
   <block id="91398026a42b0ad3df38768d188da3be" category="list-text">針對IOM B重複執行子步驟a到c</block>
-  <block id="877067242eddfcfbe089b6070a88be6e" category="list-text">將底部的橋接至堆疊纜線從舊的上一個IOM12機櫃移至新的最後一個IOM12機櫃上的相同連接埠。</block>
-  <block id="4bf53e71f3023c8f2e9c4997bc18ad4d" category="list-text">將舊的上一個IOM12機櫃IOM A連接埠3和下一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜、然後對任何其他IOM12機櫃重複此步驟。</block>
-  <block id="048af402ff1884a71e180b390fb7dfec" category="list-text">將舊的上一個IOM12機櫃IOM B連接埠3和下一個IOM12機櫃IOM B連接埠1之間的機櫃對機櫃連接線纜、然後對任何其他IOM12機櫃重複此步驟。</block>
-  <block id="7bcbb6f67a6b65f322cf9a44412071da" category="list-text">將最後一個IOM12機櫃IOM A連接埠3與最後一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜。</block>
   <block id="ddca53bb59a951feb73df1cac7e8a2a6" category="list-text">驗證SAS連線是否正確。</block>
   <block id="b820bba4fa275f727b4a3ae2b2c50735" category="list-text">如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。</block>
   <block id="065b4edc8d1cf335e89ee6f896eec285" category="admonition">所有MetroCluster 的支援組態都需要手動指派磁碟機。</block>
-  <block id="549f4ee0ddae14c2c93710dba70ad0eb" category="paragraph">如果您在準備將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</block>
   <block id="ed78f3d19d8a18848ca3f130fe50ea15" category="paragraph">您必須依照系統的指示、將機櫃連接好纜線。</block>
   <block id="30c116b6226c332ac17e3d64d35b521e" category="paragraph"><block ref="0f7f1fe381af78fb10727d6c8cdc10ea" category="inline-xref-macro-rx"></block></block>
   <block id="459fd1f74de9761aa97f3f008fbdb134" category="list-text">指派每個磁碟機：「torage disk assign -disk _disk_name_-Owner_name_」</block>
   <block id="c614b3d5d45f850c2de661cead70f602" category="list-text">如有需要、請重新啟用自動磁碟指派：「儲存磁碟選項修改節點節點節點名稱_-autodassign on」</block>
   <block id="f838a919336ed5d0c1d74549f6259a40" category="paragraph">如果您有HA配對、則必須在兩個控制器模組上重新啟用自動磁碟機指派。</block>
   <block id="fdd0f707bd71fcef53b653ae53e31f53" category="summary">您可以使用完整的控制器對堆疊佈線工作表和佈線範例、將AFF 內部FAS 儲存的纜線架構用於諸如AFF 但不限於E4A200、AFF EVA220、FAS2600系列和FAS2700平台等。此資訊不適用於FAS25XX平台。</block>
-  <block id="34a9eb16320fa575f00d96a29be9d645" category="doc">包含內建儲存設備的控制器對堆疊佈線工作表和纜線連接範例AFF 、例如採用IOM12模組的機櫃FAS</block>
   <block id="18e93c7175385ec259f95d9d453bdda1" category="list-text">如有需要、請參閱 <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、</block>
   <block id="ba38e437ae673ee3e3f19dd893a38b35" category="list-text">佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器0b連接埠與控制器0A連接埠的連線。</block>
   <block id="1b423539e905b630394da7971c47a88a" category="image-alt">DRW fas2600控制器至堆疊纜線類型金鑰</block>
@@ -3967,10 +3903,7 @@
   <block id="f713f3d5118d64219e7f60c5bb8b1949" category="paragraph">在此範例中、控制器安裝在機箱的插槽B中。當控制器位於機箱的插槽B時、其內部儲存連接埠（0b）位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的網域B（IOM B）。</block>
   <block id="558b115477a065d99c298cb43b8dce82" category="image-alt">DRW fas2600 MP slot b工作表</block>
   <block id="c5973d1d05064577208601411fd0be8d" category="image-alt">DRW fas2600 MP插槽b</block>
-  <block id="8a1a993c74cc431e2e022e6bd26ad915" category="summary">更換磁碟機匣之前、您必須停止所有主機I/O活動並關閉磁碟櫃電源。</block>
-  <block id="1d7bbe9c194670e89233cc6c1dc79534" category="paragraph">每個60個磁碟機磁碟櫃都有五個磁碟機匣。</block>
   <block id="efdce0991089cb793985d216e3fc1bbc" category="image-alt">28圖e2860 de460c正面無標註</block>
-  <block id="76ad7e322a2be745998c576cb12affcd" category="paragraph">五個抽屜各可容納12個磁碟機。</block>
   <block id="a83cb446c51cb0bdbc4bec489e45b406" category="paragraph">此程序需要下列項目：</block>
   <block id="4b4b58cabc76886a516816c3c1dca8a2" category="list-text">防靜電保護</block>
   <block id="a3dfcf9f8add4df0b4976c41ffa8abb2" category="admonition">*可能的硬體損壞：*為了防止磁碟機櫃受到靜電釋放的損害、請在處理磁碟機櫃元件時使用適當的防靜電保護。</block>
@@ -3978,7 +3911,6 @@
   <block id="68103d0e27146f9689251724a7fbf29f" category="list-text">更換左和右纜線鏈</block>
   <block id="75b0ae11d26c806413ef6e8aed1ece4f" category="list-text">手電筒</block>
   <block id="12cd6af9147d69765327244240949e1f" category="paragraph">DS460C磁碟機櫃中每個磁碟機藥櫃的左右纜線鏈可讓藥櫃滑入和滑出。您必須先移除兩個纜線鏈、才能移除磁碟機抽屜。</block>
-  <block id="b4aaf296207d91e05752ac7857824f14" category="list-text">您已停止主機I/O活動、並將磁碟櫃關機。</block>
   <block id="295e1710be0bb53c45ab0ed9001e275c" category="list-text">您已取得下列項目：</block>
   <block id="b8e03a6c06c2200508949dce7bb9580b" category="admonition">*可能的硬體損壞：*為避免對磁碟櫃造成靜電損害、請在處理磁碟櫃元件時使用適當的防靜電保護。</block>
   <block id="5e3358e3eacc9b9fa8f984ee64d7ecea" category="paragraph">每個磁碟機抽屜都有左右纜線鏈。纜線鏈上的金屬端點會滑入機箱內對應的垂直和水平托架、如下所示：</block>
@@ -4062,7 +3994,6 @@
   <block id="d6ff75ca96a3f7b0da1db5214e2a5a07" category="list-text">將抽屜從中央推回磁碟機櫃、然後關閉兩個槓桿。</block>
   <block id="88ca50989638a87f86de89481f4cf935" category="admonition">*設備故障風險：*請務必同時推動兩個槓桿、以完全關閉磁碟機抽屜。您必須完全關閉磁碟機抽取器、以確保通風良好、並避免過熱。</block>
   <block id="55451c7cebd8269f03ecac9742984329" category="list-text">將擋板連接至磁碟機櫃的正面。</block>
-  <block id="0170a7ad27d76cb01573cd1f22614cf7" category="paragraph">安裝磁碟機抽屜的最後步驟、是將左右纜線鏈連接至磁碟機櫃。連接纜線鏈時、請依照您拔下纜線鏈時的順序進行。您必須先將鏈的橫式連接器插入機箱的橫式托架、然後再將鏈的垂直連接器插入機箱的垂直托架。</block>
   <block id="4ab9a12c053dc60c1cfdd6c7dd07687e" category="list-text">您已更換磁碟機抽屜和所有磁碟機。</block>
   <block id="72774896cf4456a17908ca4b102fbb02" category="list-text">您有兩個替換的纜線鏈、分別標示為左和右（位於磁碟機抽屜旁的橫式連接器上）。</block>
   <block id="b65bb2c36cf61ca817a09197efa2a05a" category="image-alt">28圖e2860 de460c纜線鏈剩餘</block>
@@ -4097,7 +4028,6 @@
   <block id="f3c63ac44190e806f7590f75016082ad" category="list-text">開啟磁碟機櫃上的兩個電源開關。</block>
   <block id="39cc2d6f5935ef61ab1eac11e4ea2a0a" category="list-text">確認兩個風扇均已開啟、且風扇背面的黃色LED燈已關閉。</block>
   <block id="e1dd44433fde96fb10259b3ccdf4b8b6" category="summary">您可以在DS460C磁碟櫃中熱交換故障的磁碟機。</block>
-  <block id="43c3117e7c2816fe7d548359181f4463" category="doc">將DS460C磁碟櫃中的磁碟機熱交換至IOM12模組磁碟櫃</block>
   <block id="be233bc92e2ebd68f0afba0d549e1989" category="list-text">替換磁碟機必須由DS460C磁碟櫃支援。</block>
   <block id="d4639e1d22aa97da774c8bd77f8fb9a4" category="list-text">DS460C磁碟機櫃包含五個磁碟機抽取盒（磁碟機抽取盒1位於頂端、底部為磁碟機抽取盒5）、每個抽取盒均包含12個磁碟機插槽。</block>
   <block id="b04a9ecb43c98234e0c97b118b532535" category="list-text">下圖顯示磁碟機如何在磁碟櫃內的每個磁碟機匣中編號0至11。</block>
@@ -4130,11 +4060,6 @@
   <block id="de7db5c7d3edb5507dadd7887f854b66" category="paragraph">注意LED亮起</block>
   <block id="675def5af0c4b48eeb602c1d9c80e7eb" category="paragraph">新磁碟機可能有故障。請更換另一個新磁碟機。</block>
   <block id="0ce1997215ff26fd5b9284736a764b25" category="admonition">首次插入磁碟機時、其注意LED可能亮起。不過、LED應會在一分鐘內熄滅。</block>
-  <block id="18cff2776742187179445dc30242e8e9" category="summary">具有IOM12模組的磁碟櫃可以HA配對和單一控制器組態（適用於支援的平台）進行纜線連接。</block>
-  <block id="97f136905a79484f9d05c2fde9c02854" category="doc">SAS纜線配置規則-採用IOM12模組的磁碟櫃</block>
-  <block id="c0e65a17a528ead03d44199c3ff6bb20" category="paragraph">使用IOM12模組的磁碟櫃可在HA配對和單一控制器組態（適用於支援的平台）中進行纜線連接、方法是套用SAS纜線配置規則：組態規則、控制器插槽編號規則、機櫃對機櫃連線規則、控制器對堆疊連線規則、以及如果適用的Mini-SAS HD SAS光纖纜線規則。</block>
-  <block id="66b998f7d7fdfbd68d264a714d8ea3ac" category="admonition">本指南所述的控制器插槽編號規則、機櫃對機櫃連線規則、以及控制器對堆疊連線規則、均與適用於所有SAS磁碟櫃的相同規則相同、無論它們具有IOM12、IOM6或IOM3模組。然而、本指南所提供的資訊、是針對採用IOM12模組的磁碟櫃的獨特特性、以及在支援的組態中使用這些模組。</block>
-  <block id="d39cd902472dfe0f14223c46b811932b" category="paragraph">本指南所述的SAS纜線配置規則與Mini-SAS HD SAS光纖纜線規則、是針對採用IOM12模組的磁碟櫃而制定。</block>
   <block id="13a358753c734e014332022a647326d0" category="paragraph">本指南所述的SAS纜線佈線規則、可平衡內建SAS連接埠與主機匯流排介面卡SAS連接埠之間的SAS纜線、以提供高可用度的儲存控制器組態、並符合下列目標：</block>
   <block id="e650f09b3c5e7082570989f690e937f2" category="list-text">針對所有SAS產品和組態、提供易於理解的單一通用演算法</block>
   <block id="87d052f6b61021fdd81a25737c46faf1" category="list-text">產生物料清單（BOM）時、請產生相同的實體纜線、然後在工廠和現場進行</block>
@@ -4260,7 +4185,6 @@
   <block id="9d3db7bfcd4e676bd510caab64ec8d51" category="list-text">如果機櫃對機櫃連線是SAS光纖纜線、則控制器對堆疊連至該堆疊的連線也必須是SAS光纖纜線。</block>
   <block id="02a51574500eff63a08bc1c345282e3c" category="list-text">如果機櫃對機櫃連線是SAS銅線、則控制器對堆疊連至該堆疊的連線可以是SAS光纖纜線或SAS銅線。</block>
   <block id="0ea17a93d064afb53edf4305d17b5599" category="summary">您可以在DS460C、DS224C或DS212C磁碟櫃中熱交換故障的電源供應器。</block>
-  <block id="e6cdd977391488a1a0918177811fc37e" category="doc">熱交換電源供應器-配備IOM12模組的機櫃</block>
   <block id="bf35e0ea77e327a31ac3baf63bb1253c" category="paragraph">系統中的所有其他元件（包括其他電源供應器）都必須正常運作。</block>
   <block id="6c02a1910626a867fbe4d789c7beb45a" category="list-text">如果您要更換多個電源供應器、則必須一次更換一個電源供應器、以便磁碟櫃維持電力。</block>
   <block id="62b854d2d227610915feea67e81979da" category="list-text">您必須在移除後兩分鐘內更換電源供應器、以將磁碟櫃氣流中斷的情況降至最低。</block>
@@ -4285,10 +4209,7 @@
   <block id="7942c8c0a2938d554ca414a57b6286aa" category="list-text">開啟電源開關。</block>
   <block id="b30bd480240ea6cb86b54735c115a8db" category="paragraph">電源供應器的電源（綠色）LED和警示（黃色）LED會亮起、然後在40秒內、警示（黃色）LED會關閉。</block>
   <block id="bd7b8cb1f03ceb90528c843b3cd8c0a4" category="summary">當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。</block>
-  <block id="1b13b207ae1928cd420c7771c798eb3d" category="doc">熱移除機櫃-配備IOM12模組的機櫃</block>
-  <block id="bf9eaa32fa671084f441eeba9c863ef6" category="paragraph">當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。</block>
   <block id="c5cabc5bd527563ec2a9e03c2ca16ab6" category="list-text">您的系統必須是多重路徑HA、多重路徑、四重路徑HA或四重路徑組態。</block>
-  <block id="9c2a85bd806fec2b1e3452f15f799e68" category="paragraph">對於E4A200、Eese20220、FAS2600系列和FAS2700系統、外部儲存設備必須以多重路徑HA或多重路徑的纜線連接。AFF AFF</block>
   <block id="079a7f8e81dcfa4ea9fb370c9901815f" category="admonition">對於使用多重路徑連線的外接式儲存設備、FAS2600系列單一控制器系統來說、系統是混合路徑組態、因為內部儲存設備使用單一路徑連線。</block>
   <block id="7aef33153293755f25958302c5aed92b" category="paragraph">您可以下載並執行Active IQ Config Advisor 此功能、以檢視任何SAS纜線錯誤訊息、以及您應採取的修正行動。</block>
   <block id="a87e1a96f2d7d8d3f543485f49e17ff9" category="list-text">HA配對組態無法處於接管狀態。</block>
@@ -4364,48 +4285,23 @@
   <block id="335b10c6fee711cea86391103d3f0ccb" category="paragraph">對於HA配對組態、您可以從兩個控制器的叢集Shell執行命令。</block>
   <block id="3037b211ed81d339e89983a39433d5ed" category="list-text">關閉您拔下的磁碟櫃電源、並從磁碟櫃拔下電源線。</block>
   <block id="60f2a3cfd26e6f6c57aebe8c8e233493" category="list-text">從機架或機櫃中取出磁碟櫃。</block>
-  <block id="f8c97b417197858bb1f9147d5bbd3cf0" category="summary">您的系統組態可決定在IOM12模組故障時、是否可以執行不中斷營運的IOM12模組熱交換或中斷營運的IOM12模組更換。</block>
-  <block id="5e47682a1985f4894dfbfddf0ca6a7c0" category="doc">熱交換或更換IOM12模組-以IOM12模組取代磁碟櫃</block>
-  <block id="eaabc4ed2d3de90d6a5c09556c1edeb8" category="paragraph">系統中的所有其他元件（包括其他IOM12模組）都必須正常運作。</block>
-  <block id="6cee96067a1efcb3a61f577e2a8f1184" category="list-text">對於多路徑（多重路徑HA或多重路徑）和四路徑（四路徑HA或四路徑）組態、您可以熱插拔IOM12模組（在已開機且正在處理資料的系統中、以不中斷的方式取代IOM12模組）。</block>
-  <block id="3aaa7a9c570e3b4cd2d8bdba063cdbaa" category="list-text">對於FAS2600系列和FAS2700單路徑HA組態、您必須執行接管和恢復作業、以取代已開啟電源並正在處理資料的系統中的IOM12模組、I/O也在進行中。</block>
-  <block id="2dd34de95504caaf6b1dafbc6cb31441" category="list-text">對於FAS2600系列單路徑組態、您必須停止系統以更換IOM12模組。</block>
-  <block id="0b2f1c77b2be0a8345d37e4ef2de10eb" category="admonition">如果您嘗試以單一路徑連線、在磁碟櫃上熱交換IOM12模組、您將無法存取磁碟櫃上的磁碟機、以及其下的任何磁碟櫃。您也可以關閉整個系統。</block>
-  <block id="146d490dd0ddc3140a4ab9577c82037e" category="list-text">磁碟櫃（IOM）韌體會在新的IOM12模組上、以非最新韌體版本自動更新（不中斷營運）。</block>
-  <block id="840389739654a0cb6ff81790e58d65b4" category="paragraph">IOM韌體檢查每十分鐘進行一次。IOM韌體更新最多可能需要30分鐘。</block>
-  <block id="488593fc66b12c24bc9d860a028e60be" category="list-text">打開新IOM12模組的包裝、並將其放在磁碟櫃附近的水平面上。</block>
-  <block id="78134d8ce26abe81b7c2223710056ac1" category="paragraph">儲存所有包裝材料、以便在退回故障的IOM12模組時使用。</block>
-  <block id="b9a0ba621d77a5a69ac7a9387e2f73b6" category="list-text">從系統主控台警告訊息和故障IOM12模組上的發光注意（黃色）LED、實際識別故障IOM12模組。</block>
   <block id="44a79028b8e2f56c8d1164ae1aedc076" category="list-text">根據您的組態類型執行下列其中一項動作：</block>
   <block id="e8599f3c8ef213317efbf60b0379685c" category="cell">如果您有...</block>
   <block id="099e230bc4db13968f2d136f79693703" category="paragraph">多重路徑HA、多重路徑、四重路徑HA或四重路徑組態</block>
-  <block id="e5f82022af06b90c12e35d576cc0c3d9" category="paragraph">FAS2600系列和FAS2700單路徑HA組態</block>
-  <block id="f21eb9917cf294050cfae63d1ed7ed58" category="list-text">確定目標節點（故障IOM12模組所屬的節點）。</block>
   <block id="1e5e667063d28d41ec828c8438a56b89" category="paragraph">IOM A屬於控制器1。IOM B屬於控制器2。</block>
   <block id="8dc0ad92e4b342d1741894f5ae7ffbe9" category="list-text">接管目標節點：「torage容錯移轉接管- bbynode_Partner HA node_」</block>
   <block id="1e78ab40bbabb204b7d418ad7a32f801" category="paragraph">FAS2600系列單路徑組態</block>
   <block id="afd363af41e03520500b30751b522491" category="list-text">從系統主控台關閉系統：「halt（停止）」</block>
   <block id="e8403bb6f96eb0e9dd855761d673bcfb" category="list-text">檢查儲存系統主控台、確認系統已停止。</block>
-  <block id="e86a0c790fd7c6f5dbf58f5c6870324b" category="list-text">從要移除的IOM12模組拔下纜線。</block>
-  <block id="8bf90c1a882bba7f49bed26875e94cee" category="paragraph">記下每條纜線所連接的IOM12模組連接埠。</block>
-  <block id="9f78dab8d292677e01851e8a917b6f5f" category="list-text">按下IOM12模組CAM握把上的橘色栓鎖、直到其釋放為止、然後完全開啟CAM握把、從中間面釋放IOM12模組。</block>
   <block id="cd5f38b38ffd79461cf543f7d3a14843" category="image-alt">DRW IOM鎖存器</block>
   <block id="4c85cb5670afa3b61996e7baa0111129" category="image-alt">已開啟的DRW IOM</block>
-  <block id="4c07ae1007b3a2029e7841aeea475071" category="list-text">使用CAM握把將IOM12模組滑出磁碟櫃。</block>
-  <block id="07b7a165a51ddb5cbf9c2a4c6cf94454" category="paragraph">處理IOM12模組時、請務必用兩隻手支撐其重量。</block>
-  <block id="de4ae2c6f1963896fbfea28e82d00c1a" category="list-text">在移除IOM12模組之後、請等待至少70秒、然後再安裝新的IOM12模組。</block>
   <block id="ccadbe2edcc98f542a5f72090def31e3" category="paragraph">等待至少70秒、可讓駕駛正確登錄機櫃ID。</block>
-  <block id="aa3bb973e5a793f5e96c587b782042c8" category="list-text">用兩隻手將新IOM12模組的CAM握把置於開啟位置、支撐並將新IOM12模組的邊緣與磁碟櫃的開孔對齊、然後將新的IOM12模組穩固推入、直到其與中間面交會為止。</block>
-  <block id="f1b86d4dfdaf9595d77f0125018bb80f" category="admonition">將IOM12模組滑入磁碟櫃時、請勿過度施力、否則可能會損壞連接器。</block>
-  <block id="d2375a4ef8785f406de718d058e88a04" category="list-text">關閉CAM握把、使栓鎖卡入鎖定位置、IOM12模組就位。</block>
   <block id="9bf609fda741e4f05af53222039c4623" category="list-text">重新連接纜線。</block>
   <block id="240ac1f7b24df668dce754edbdea2f25" category="paragraph">SAS纜線連接器採用鎖定式設計；正確放置於IOM連接埠時、連接器會卡入定位、且IOM連接埠LKLED會亮起綠色燈號。將SAS纜線連接器插入IOM連接埠、拉片朝下（位於連接器底部）。</block>
   <block id="d69bd90c00da9d5886f4b689f99f70d6" category="paragraph">歸還目標節點：「torage容錯移轉恢復- fromNode PARTNER_HA_node'</block>
   <block id="8460de55fc39038d9b9df5787b6da108" category="paragraph">重新啟動系統。</block>
-  <block id="69215aec902649f47b0b67453c2abf00" category="list-text">確認IOM12模組連接埠連結已建立。</block>
   <block id="a4399fd36cbdc5057108842e4a4a42ff" category="paragraph">對於您連接的每個模組連接埠、當四個SAS線道中有一或多個已建立連結（使用介面卡或其他磁碟櫃）時、則LNO（綠色）LED會亮起。</block>
   <block id="72da4c803cace81d299fce3a877d4cba" category="summary">每個DS460C磁碟機櫃都包含兩個風扇模組。如果風扇模組故障、您必須儘快更換、以確保機櫃有足夠的冷卻能力。移除故障的風扇模組時、您不需要關閉磁碟櫃的電源。</block>
-  <block id="fa4d12b5f2455c5e2d1dd21058d233de" category="doc">將DS460C磁碟櫃中的風扇模組更換成IOM12模組</block>
   <block id="1d39850c7c315ddebed0ccfb770321d4" category="paragraph">您必須確保在30分鐘內取出並更換風扇模組、以避免系統過熱。</block>
   <block id="03b9616c320fdafaa018b7edf82f0212" category="list-text">打開新的風扇模組的包裝、並將其放置在靠近機櫃的水平表面上。</block>
   <block id="263c7d60489662b08bc168e30ef43797" category="paragraph">請保存所有包裝材料、以便在退回故障風扇時使用。</block>
@@ -4421,7 +4317,6 @@
   <block id="ed548d9ada85060c7850298ed30cea6d" category="list-text">檢查新風扇模組上的黃色警示LED。</block>
   <block id="c50fdb32ee76a4d77a2a4b76520e5bed" category="admonition">更換風扇模組之後、警示LED會持續亮起（持續亮起黃色燈）、同時韌體會檢查風扇模組是否已正確安裝。此程序完成後、LED會熄滅。</block>
   <block id="162c19cb0e58f8c6c83c319b91d9da12" category="paragraph">請聯絡技術支援人員：<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要RMA號碼、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。</block>
-  <block id="dad70355d3eedda1dd51d44624779698" category="doc">變更機櫃ID：機櫃內有IOM12模組</block>
   <block id="36c30042f6ca79134c6c218841a81eb0" category="paragraph">您可以使用「儲存磁碟show -sh現 況_機櫃_機櫃_編號_」命令來驗證磁碟機的狀態。Container Type（容器類型）欄中的輸出應顯示為備用磁碟機或故障磁碟機。此外、「Container Name（容器名稱）」和「Owner"（擁有者）欄應該會有破折號。</block>
   <block id="a02840d92f715aa31ea70eb31b610e96" category="list-text">您可以執行Active IQ Config Advisor 下列命令、驗證系統中已使用的機櫃ID：執行下列命令、或使用「shorage shield show -Fields shid]命令。</block>
   <block id="6a1ebf8b2142401ac4376ee7a33567e0" category="list-text">機櫃ID在HA配對或單一控制器組態中必須是唯一的。</block>
@@ -4446,7 +4341,6 @@
   <block id="26a846deb04c0d63c063041ad0fa15ef" category="list-text">執行Active IQ Config Advisor 此功能可檢查是否有重複的機櫃ID警示、或執行「shorage sh家 中的show -Fields sh家 中的id」命令、查看已在使用中的機櫃ID清單、包括任何重複的ID。</block>
   <block id="8599052dc8c8c0f79b1edc766e0bb77e" category="list-text">如果您的系統有任何重複的機櫃ID、請重複此程序來變更重複的機櫃ID。</block>
   <block id="c8fe385a2d49c957811553fa2c507091" category="summary">您可以使用完整的控制器對堆疊纜線工作表和纜線佈線範例、來連接具有兩個四埠SAS HBA的四路徑HA組態。</block>
-  <block id="94e995b1e4aa2076765c84814247b324" category="doc">控制器對堆疊佈線工作表和佈線範例、適用於使用兩個四埠SAS HBA的四路徑HA組態、亦即採用IOM12模組的機櫃</block>
   <block id="1cf61d431bf950cf1f2f9f2368e7f729" category="list-text">如有需要、請參閱 <block ref="22de937f8b92c8373761b256e9819f4a" category="inline-link-macro-rx"></block>。</block>
   <block id="894ffcc20897b622cbd7b6ca6714ee4f" category="list-text">佈線範例將控制器對堆疊纜線顯示為實線或虛線、以區分控制器A和C連接埠與控制器B和D連接埠的連線。</block>
   <block id="de01522e941cfe599b9f3b4a6394c373" category="image-alt">將有線彩色金鑰堆疊至非2600的DRW控制器</block>
@@ -4457,8 +4351,6 @@
   <block id="ecc08dd2661076f245ef51eb14c4a74d" category="paragraph">指定用於多路徑纜線的每個連接埠配對都會以一個圓形圈圈圈、其顏色與連接的堆疊相關。每個指定用於四路徑纜線的連接埠配對都會以矩形圈選、矩形是與其纜線堆疊相關的色彩。</block>
   <block id="7c0edd402cd55e5ea26650be4a6f998c" category="section-title">四通道HA、含兩個四埠SAS HBA和兩個多機櫃堆疊</block>
   <block id="f76dc75f678aa69ffe38bc567a89bca0" category="paragraph">下列工作表和佈線範例使用連接埠配對1a/2b（多路徑）和2a/1d（四路徑）作為堆疊1、連接埠配對1c/2d（多路徑）和2c/1b（四路徑）作為stack2。</block>
-  <block id="d1479d59dda9c56be3c9adea79b989b3" category="summary">完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至具有IOM12模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現多路徑連線。您也可以使用完成的工作表、引導自己完成組態的多路徑連線。</block>
-  <block id="26425c0bd2eccee0c97ce278e5e6c90d" category="doc">用於多路徑連線的控制器對堆疊佈線工作表範本-具有IOM12模組的磁碟櫃</block>
   <block id="cea3ccc996d16531a1bdc296b2d6851c" category="paragraph">您的HA配對或單一控制器組態不能是AFF 一套E4A200、AFF E4A220、FAS2600系列或FAS2700系統。如果您有下列其中一種組態、請使用下列項目：</block>
   <block id="5976250f174c7aa7423cbb91c458e804" category="list-text">此程序和工作表範本適用於將多重路徑HA或多重路徑組態與一或多個堆疊進行纜線連接。</block>
   <block id="8c7e7585bf065649c4ca12e935833b4c" category="paragraph">多重路徑HA和多重路徑組態的工作表範例已完成。</block>
@@ -8199,7 +8091,6 @@
   <block id="3766b702f27d0a06cd0d3ed539c864f4" category="sidebar">DS460C機櫃中的磁碟機</block>
   <block id="3b59196e4aa295b1c38baacd453e22d4" category="sidebar">DS460C機櫃中的磁碟機抽屜</block>
   <block id="215cf653ea0cb475af5720eed33931da" category="sidebar">DS460C機櫃中的風扇</block>
-  <block id="6d4ef13a216b4449d8385bdc797b5980" category="sidebar">IOM12模組</block>
   <block id="711fec659e5c52bba32ca7f6f3439502" category="sidebar">機櫃LED狀態條件</block>
   <block id="bbe5cfba1366505a700c77ffc3f25e15" category="sidebar">快取模組</block>
   <block id="0f40216c1ad47c12e8ccc087d555570f" category="sidebar">發行說明ONTAP</block>
@@ -8390,7 +8281,6 @@
   <block id="718b8a88a314d56b344c3895d896ab2a" category="sidebar">還原並驗證系統組態</block>
   <block id="88e09b832b8634d2f827a9e44cf2569c" category="sidebar">重新安裝系統</block>
   <block id="3182807165615fb651163be98cb522b4" category="sidebar">斷點控制電源模組</block>
-  <block id="8bd58fce46ecf816e8b3a0b884ad4724" category="sidebar">安裝IOM12模組及纜線的機櫃</block>
   <block id="2392f11d96d6fc4362b42688f146c995" category="sidebar">安裝新系統的機櫃並進行纜線連接</block>
   <block id="4ccd403eb19c48e7ebdaaeb982ef2481" category="sidebar">熱新增機櫃</block>
   <block id="cf999199f9d4c3e90d15399860476f13" category="sidebar">變更機櫃ID</block>
@@ -8400,7 +8290,6 @@
   <block id="ce6374cb8d43c65f66d31cf1a0ede69e" category="sidebar">四路徑連線的佈線工作表範本</block>
   <block id="c9dbe70bac035df0f96f45c02dcf5bd9" category="sidebar">如何將工作表讀取成纜線以實現多路徑連線</block>
   <block id="5ed51fc3ce581de756d5c3ed9d63dd68" category="sidebar">如何將工作表讀取成纜線以進行四路徑連線</block>
-  <block id="36b90e2aa279bb518f4a354b026c3203" category="sidebar">具有IOM12模組的磁碟櫃維持不變</block>
   <block id="7c162b58feb8186ad24c1219e33fdd5b" category="sidebar">DS224C或DS212C機櫃中的磁碟機</block>
   <block id="d35e9de4dd221879d5824b232348dc91" category="sidebar">DS460C機櫃中的磁碟機</block>
   <block id="8dfce13bab3428db55090c483e5d838b" category="sidebar">DS460C機櫃中的磁碟機抽屜</block>
@@ -8566,12 +8455,6 @@
   <block id="cff7366c4191a9dd1698e3fd38e5acaf" category="sidebar">NVRAM模組或NVRAM DIMM</block>
   <block id="dbe0afeaa91b9a08168e98b33a4c7de8" category="admonition">請確定在拔下纜線並重新連接纜線之間、以及更換較長纜線之間、至少等待70秒。</block>
   <block id="04e527203c5db793872f9a09c2541063" category="list-text">將您在子步驟A中拔下的所有纜線重新連接至熱新增磁碟櫃的IOM A上相同連接埠、否則請執行下一個子步驟。</block>
-  <block id="e62a559839495c7e61b9ce5a088b786c" category="doc">將DS460C磁碟櫃中的磁碟機匣更換為IOM12模組的磁碟櫃</block>
-  <block id="585248eeaa0c7aa335cb47a05c525433" category="image-alt">92 dwgde6600藥櫃、含HDD、無標註</block>
-  <block id="2e3d3f0aa5e64af89c170da27ccf0cb2" category="section-title">移除纜線鏈</block>
-  <block id="bbbd51c2b3c60d5e9becdcf09d29b105" category="section-title">移除磁碟機抽屜</block>
-  <block id="fe8265ac3d0f9c648e57474b40e2e5d8" category="section-title">安裝磁碟機抽屜</block>
-  <block id="2731a32bd20082112cb21bea67097d21" category="section-title">連接纜線鏈</block>
   <block id="b3e40f87c203ef282d4d64a42d869542" category="open-title">選項2：控制器位於雙節點MetroCluster 的不二</block>
   <block id="2cb6637a5fdf450f80c9f19b8c718a47" category="admonition">請確定在拔下纜線並重新連接纜線、以及更換另一條纜線時、至少等待70秒。</block>
   <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">移除左右纜線鏈之後、您可以從磁碟機櫃中移除磁碟機抽屜。移除磁碟機抽取器時、必須將抽取器的一部分滑出、移除磁碟機、以及移除磁碟機抽取器。</block>
@@ -8802,4 +8685,172 @@
   <block id="f56310c49687a40fd4b43bced4b3dcc8" category="video-title">動畫- AFF 《安裝與設定指南》</block>
   <block id="c511d3a873cdf45068fb4cd9897dd7d1" category="admonition">這會重新初始化PCIe卡和其他元件、然後重新啟動節點。</block>
   <block id="37aaa0d7d666e28c8819aac432ac13a0" category="video-title">交換式叢集的佈線</block>
+  <block id="0de0a804806f46ef402b06f8cf86d3fd" category="doc">監控磁碟櫃LED -採用IOM12/IOM12B模組的磁碟櫃</block>
+  <block id="78a16aa9b69495c135b25bc218c90ea1" category="summary">如果需要額外的儲存設備、您可以將IOM12/IOM12B磁碟櫃（SAS磁碟櫃搭配IOM12/IOM12B模組）熱新增至IOM6磁碟櫃堆疊（SAS磁碟櫃搭配IOM6模組）、表示您可以混合堆疊。</block>
+  <block id="f5359f540fed4be15500114188289896" category="doc">將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊</block>
+  <block id="f76b5dbe9d6914e6e6154c1a3f084d23" category="paragraph">在MetroCluster 將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、HA配對、單一控制器或延伸功能不全組態（系統）必須符合特定需求。</block>
+  <block id="191707c2abaed14d4f84b334359f090f" category="list-text">您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6磁碟櫃和IOM12/IOM12B磁碟櫃。</block>
+  <block id="00fff54c913160f5c3bf6b51833732a2" category="paragraph">熱新增IOM12/IOM12B磁碟櫃之後、您無法超過系統支援的磁碟機數量上限。</block>
+  <block id="930a04c4c89c9247f79288e2800c12ca" category="list-text">您必須訂購並收到IOM12/IOM12B磁碟櫃、以及適當數量和類型的SAS銅線。</block>
+  <block id="1aefc40815c8a14c682b27d605e0c852" category="paragraph">如果您要將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊、而此磁碟櫃是以MetroCluster 一對Atto FibreBridge的方式以供進行非結構性組態連接、則系統必須符合特定需求。</block>
+  <block id="19ad2c0538cf2699805ae5b7a88dc72d" category="paragraph">在堆疊中混合IOM12/IOM12B和IOM6模組之前、請先使用所有橋接連接埠。</block>
+  <block id="f29790dcd5dad7176b065228da8e813b" category="list-text">IOM6磁碟櫃堆疊（您要將IOM12/IOM12B磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。</block>
+  <block id="a303526442a9b488afde68409bafd573" category="admonition">如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新增IOM12/IOM12B機櫃。請聯絡您的NetApp銷售代表。</block>
+  <block id="274358a46e82410d70348e1fd12ca278" category="paragraph">IOM12/IOM12B磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。</block>
+  <block id="e827f0977c76611ee483794c8c0d589e" category="paragraph">在將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您應該先熟悉此程序的各個層面和最佳實務做法。</block>
+  <block id="32532820ab52039587ac6fc9539bfbe4" category="list-text">強烈建議您要熱新增的IOM12/IOM12B磁碟櫃執行韌體版本0260或更新版本、然後再將其連接至系統。</block>
+  <block id="4b0c6c7c1712b07c4f6eb456f77c250b" category="paragraph">將IOM12/IOM12B機櫃韌體下載至機櫃之後、請在任一控制器的主控台輸入「shorage shShelfLE show -module"命令、確認韌體版本為0260或更新版本。</block>
+  <block id="3ed3a0caa77626b30983d683ee9db330" category="paragraph">如何將IOM12/IOM12B機櫃纜線至IOM6機櫃堆疊、取決於IOM12機櫃是否為初始IOM12/IOM12B機櫃、表示堆疊中沒有其他IOM12機櫃、 或是現有混合堆疊的額外IOM12/IOM12B層架、表示堆疊中已存在一個或多個IOM12/IOM12B層架。這也取決於堆疊是否具有多重路徑HA、多重路徑、單一路徑HA或單一路徑連線。</block>
+  <block id="04bb04135ba18792013909ca58e7a551" category="list-text">您一律將IOM12/IOM12B磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、以維持堆疊內的單一速度轉換。</block>
+  <block id="e0895cf80563e944b90f33500e3072ad" category="paragraph">將IOM12/IOM12B磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、IOM6磁碟櫃會一起群組、而IOM12/IOM12B磁碟櫃會一起群組、以便在兩個磁碟櫃群組之間進行單一速度轉換。</block>
+  <block id="0455216bece3ce620e2fd5c84b24a523" category="list-text">在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12/IOM12B磁碟櫃的單一速度轉換會描述為：</block>
+  <block id="988fffa48b6a32203597193ccfb194d0" category="paragraph">內建儲存連接埠0b是內部儲存設備（擴充器）的連接埠、因為它連接到熱新增的IOM12/IOM12B機櫃（堆疊中的最後一個機櫃）、IOM12/IOM12B機櫃群組會一起保存、並透過堆疊和內建IOM12E儲存設備維持單一轉換。</block>
+  <block id="22c141c57159ea5a9cf5ecee1f8b4145" category="list-text">您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12/IOM12B磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。</block>
+  <block id="74e72cd0b8695a83723abedf9f9e8d92" category="list-text">初始IOM12/IOM12B機櫃（IOM12機櫃連接至邏輯上最後一個IOM6機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</block>
+  <block id="f40ad7d263effd48cd15f5ec54dc2775" category="list-text">您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。</block>
+  <block id="5c5d06fa180884eea62ba831b980ed33" category="list-text">您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至連接橋MetroCluster 接的IOM6磁碟櫃堆疊。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d7f99cbbf1b9ba05ea3a6ec89eae8b6" category="list-text">如果您要熱新增的IOM12/IOM12B機櫃是IOM6堆疊中新增的初始IOM12/IOM12B機櫃、表示IOM6機櫃堆疊中沒有其他IOM12/IOM12B機櫃、請完成適用的子步驟。</block>
+  <block id="423d2f16d6d5594161f3868e4a50907a" category="list-text">將最後一個IOM6機櫃IOM A圓形連接埠（從子步驟A）與新IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</block>
+  <block id="41cb447e88bb124a5db517ed30198998" category="list-text">如果您要熱新增另一個IOM12/IOM12B機櫃、請將IOM12/IOM12B機櫃IOM A連接埠3、剛連接纜線的機櫃連接線、以及下一個IOM12/IOM12B機櫃IOM A連接埠1連接線。</block>
+  <block id="c5053835d12fc440bf9519cf51926077" category="list-text">將最後一個IOM6機櫃IOM A圓形連接埠與新IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</block>
+  <block id="46a7d11c0de8261bfb74d9bce4920db4" category="list-text">如果您要熱新增另一個IOM12/IOM12B機櫃、請重複執行子步驟a和b</block>
+  <block id="cc6b443dcaf375914e07667f9d494608" category="list-text">如果您要熱新增的IOM12/IOM12B機櫃是現有混合堆疊的額外IOM12/IOM12B機櫃、表示堆疊中已存在一個或多個IOM12/IOM12B機櫃、請完成適用的子步驟。</block>
+  <block id="323be85d169cf65d9f2dff0b9daf0dd6" category="list-text">將控制器對堆疊纜線從最後一個IOM12/IOM12B機櫃IOM A連接埠3移至新最後一個IOM12/IOM12B機櫃上的相同連接埠。</block>
+  <block id="4a234d60639e9340f8ce3de65d81db69" category="list-text">如果您要熱新增一個IOM12/IOM12B機櫃、請將舊的IOM12/IOM12B機櫃IOM A連接埠3與新的上一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</block>
+  <block id="633e2691f3d334f1861df8688fb8aff3" category="list-text">如果您要熱新增一個以上的IOM12/IOM12B機櫃、請將舊的IOM12/IOM12B機櫃IOM A連接埠3和下一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線、然後對任何其他IOM12/IOM12B機櫃重複此動作。</block>
+  <block id="b113f1515b045f95139c50b2780a1d36" category="list-text">將底部的橋接至堆疊纜線從舊的上一個IOM12/IOM12B機櫃移至新的上一個IOM12/IOM12B機櫃上的相同連接埠。</block>
+  <block id="7db70baa0612f96923b03e33b9be4f34" category="list-text">將舊的IOM12/IOM12B機櫃IOM A連接埠3和下一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連接纜線、然後對任何其他IOM12/IOM12B機櫃重複此步驟。</block>
+  <block id="9547d5ec3cd6feb3f2b2910fd3c8382c" category="list-text">將舊的上一個IOM12/IOM12B機櫃IOM B連接埠3和下一個IOM12/IOM12B機櫃IOM B連接埠1之間的機櫃對機櫃連線纜線、然後對任何其他IOM12/IOM12B機櫃重複此步驟。</block>
+  <block id="3e64a107cb4cb3d60d43a803688dd95d" category="list-text">將最後一個IOM12/IOM12B機櫃IOM A連接埠3與新的最後一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜。</block>
+  <block id="ec60586c7b5d5cc75eb55730acd9080c" category="paragraph">如果您在準備將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</block>
+  <block id="e0c4907423e9966f80fb30cb4ce6df57" category="doc">SAS纜線佈線規則、工作表和範例總覽-採用IOM12/IOM12B模組的磁碟櫃</block>
+  <block id="87fe7ea614796dffe614513028372aa9" category="paragraph">為了協助您將具有IOM12/IOM12B模組的SAS磁碟機櫃纜線連接至儲存系統、您可以視需要使用任何可用的SAS纜線規則、工作表和範例內容。</block>
+  <block id="062023e4095a297f17b97a86d9b4d256" category="summary">具有IOM12/IOM12B模組的磁碟櫃可在HA配對和單一控制器組態中進行纜線（適用於支援的平台）。</block>
+  <block id="f5b9b5b9c8a3b908584581a89b8c2226" category="doc">SAS纜線配置規則：採用IOM12/IOM12B模組的機櫃</block>
+  <block id="19a5945f47c08602bccb2ce050ccb955" category="paragraph">採用IOM12/IOM12B模組的磁碟櫃、可透過套用SAS纜線規則、組態規則、控制器插槽編號規則、機櫃對機櫃連線規則、控制器對堆疊連線規則、以及適用的Mini-SAS HD SAS光纖纜線規則、以HA配對和單一控制器組態（適用於支援的平台）進行纜線。</block>
+  <block id="238f6056b9fefe76918fd63804bbcbfa" category="admonition">本指南所述的控制器插槽編號規則、機櫃對機櫃連線規則、以及控制器對堆疊連線規則、均與適用於所有SAS磁碟櫃的相同規則相同、無論它們具有IOM12/IOM12B、IOM6或IOM3模組。然而、本指南所提供的資訊、是針對採用IOM12模組的磁碟櫃的獨特特性、以及在支援的組態中使用這些模組。</block>
+  <block id="35f903a7001175494e6eb7088631a16e" category="paragraph">本指南所述的SAS纜線配置規則與Mini-SAS HD SAS光纖纜線規則、是特定於採用IOM12/IOM12B模組的磁碟櫃。</block>
+  <block id="db4182fc310c06c3ebfb7e9fb022e4b4" category="doc">變更機櫃ID：機櫃採用IOM12/IOM12B模組</block>
+  <block id="30e90859076cc858a7c5ef12a99ba8ce" category="doc">SAS磁碟櫃搭配IOM12/IOM12B模組</block>
+  <block id="314802b9b5ea5477ad3c17cc48db0ca8" category="doc">熱移除機櫃-配備IOM12/IOM12B模組的機櫃</block>
+  <block id="f6516aa66806c66f90b17f54c90fc724" category="paragraph">您可以使用IOM12/IOM12B模組熱移除磁碟櫃（不中斷營運地從已開機且I/O正在進行的系統移除磁碟櫃）、以便在需要移動或更換磁碟櫃時進行。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。</block>
+  <block id="a545c2ce8d557ac97c60d7fea8129606" category="paragraph">對於內建儲存設備的平台、例如AFF ：E20A200、AFF E20220、FAS2600系列和FAS2700系統、外部儲存設備必須以多重路徑HA或多重路徑的纜線連接。</block>
+  <block id="5472ec6cdf96cae68f6aaf248821072c" category="summary">您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12/IOM12B模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。</block>
+  <block id="73f598cbb764bf6388343f00e9909f51" category="doc">熱新增機櫃：機櫃配備IOM12/IOM12B模組</block>
+  <block id="4581059a15bfa8d6048b69c91b29d1d6" category="paragraph">您無法使用此程序來混合堆疊：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。如果您需要混合堆疊、請使用 <block ref="262c980c58c743dada67cf3fc593aeaa" category="inline-link-macro-rx"></block>。</block>
+  <block id="92d59a751ebdb338fef3f1efcf1de229" category="section-title">使用IOM12/IOM12B模組熱新增磁碟櫃的需求</block>
+  <block id="d672bc2589b757bc56d94ab87634e52d" category="paragraph">您的系統必須符合特定需求、才能使用IOM12/IOM12B模組熱新增磁碟櫃。</block>
+  <block id="b12f13e54028d8d03dc7ca379e406141" category="section-title">使用IOM12/IOM12B模組熱新增磁碟櫃的考量事項</block>
+  <block id="16e515f4f7ddf43ca6fc5f5321a960e5" category="list-text">如果您要將具有IOM12/IOM12B模組的磁碟櫃熱新增至現有堆疊（使用IOM12/IOM12B模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一或最後一個磁碟櫃）。</block>
+  <block id="4a6c06310d2bcd1c9758407cb59a423d" category="list-text">具有IOM12/IOM12B模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。</block>
+  <block id="1297a8f1ac3fcf90ab0c70ff5e47b71d" category="paragraph">此程序並未解決混合堆疊的問題：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。</block>
+  <block id="0712df39e8d2ca11a74df9f3fe275482" category="list-text">系統可以使用IOM12/IOM12B模組、將多路徑和四路徑磁碟櫃堆疊在一起。</block>
+  <block id="fb510c511f697ba0b554724f2d55ce12" category="section-title">使用IOM12/IOM12B模組安裝磁碟櫃以進行熱新增</block>
+  <block id="eef12ccd7f9c2345b5a3e069f9088bd0" category="section-title">使用IOM12/IOM12B模組來連接磁碟櫃的纜線、以進行熱新增</block>
+  <block id="5b07090bafdc58182b6f01852ecbad05" category="summary">完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至使用IOM12/IOM12B模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。</block>
+  <block id="5d57c73dbe661f28ff4ab36825900d40" category="doc">控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM1/IOM12B2模組</block>
+  <block id="51432cf63c198a0a11bab993299ae7fd" category="paragraph">工作表範例使用兩個四埠SAS HBA的組態、以及兩個具有IOM12/IOM12B模組的磁碟櫃堆疊。</block>
+  <block id="b6e864fc7eab4fd6206badf96144db05" category="list-text">在灰色方塊上方的方塊中、列出系統上的所有SAS A連接埠、然後依插槽順序列出系統上的所有SAS C連接埠（0、1、2、3等）。</block>
+  <block id="e50ad77c16b4b45855a35ff91f7ad9a6" category="list-text">在灰色方塊中、列出系統上的所有SAS B連接埠、然後依插槽順序列出系統上的所有SAS D連接埠（0、1、2、3等）。</block>
+  <block id="9f82eea0f440d221437653dd782356a4" category="summary">您的系統組態可決定在IOM12/IOM12B模組故障時、是否可以執行不中斷營運的IOM12/IOM12B模組熱交換、或是執行中斷營運的IOM12/IOM12B模組更換。</block>
+  <block id="e94ea14f1834ad1513612bb606dc44a1" category="doc">熱交換或更換IOM12/IOM12B模組-機櫃採用IOM12/IOM12B模組</block>
+  <block id="d007c21d806a293463286bcdc9c26240" category="paragraph">您的系統組態決定了當機櫃IOM故障時、是否可以執行不中斷營運的機櫃IOM熱交換或中斷營運的機櫃IOM更換作業。</block>
+  <block id="030b841927b9d492809adeca76bc32be" category="paragraph">系統中的所有其他元件（包括其他IOM12/IOM12B模組）都必須正常運作。</block>
+  <block id="aef3b76fff3e5002c8e1c4072af34e33" category="list-text">此程序適用於具有IOM12模組和具有IOM12B模組的磁碟櫃。</block>
+  <block id="2af3ffb0914986412fbce97033362ada" category="admonition">此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）</block>
+  <block id="ebe49a15e88084dd22a61a0c761257fe" category="list-text">IOM12模組和IOM12B模組的外觀可加以區分：</block>
+  <block id="20b0dc7787284cb0afa2dbc5d95136a2" category="paragraph">IOM12模組以「IOM12」標籤區分：</block>
+  <block id="5416d570ace1334ffbc27d0d9486ebe5" category="paragraph">IOM12B模組以藍色等量磁碟區和「IOM12B」標籤加以區分：</block>
+  <block id="d2a8fdadc8d18dd445c56f47cea6197a" category="image-alt">iom12b.</block>
+  <block id="f85a60cb0afe5b75f4c43ed293c8a779" category="list-text">對於多路徑（多重路徑HA或多重路徑）和四路徑（四路徑HA或四路徑）組態、您可以熱交換機櫃IOM（在開啟電源並提供資料的系統中、以不中斷營運的方式取代機櫃IOM）。</block>
+  <block id="9785f45e8f6989c9b8cb2419a2b695da" category="list-text">對於FAS2600系列和FAS2700系列單路徑HA組態、您必須執行接管與還原作業、以取代已啟動並正在處理資料的系統中的機櫃IOM、I/O也在進行中。</block>
+  <block id="0894c7928fa1bee8fd4a0207429b7254" category="list-text">對於FAS2600系列單路徑組態、您必須停止系統以更換機櫃IOM。</block>
+  <block id="f00eb102fd21bbf5e0dd612fcc8a9fde" category="admonition">如果您嘗試以單一路徑連線將磁碟櫃上的磁碟櫃IOM熱交換、您將無法存取磁碟櫃中的磁碟機、以及其下的任何磁碟櫃。您也可以關閉整個系統。</block>
+  <block id="1ab8471fd1a18dea9022ef583cd03d25" category="list-text">磁碟櫃（IOM）韌體會自動更新（不中斷營運）新機櫃IOM上的非最新韌體版本。</block>
+  <block id="97b28cd2a227df77e22972ff1fcbf490" category="paragraph">磁碟櫃IOM韌體檢查每十分鐘進行一次。IOM韌體更新最多可能需要30分鐘。</block>
+  <block id="0921b7cc724d7a4c794a884b40f14789" category="paragraph">磁碟櫃有三個位置LED：一個在操作員顯示面板上、一個在每個機櫃IOM上。位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用「關閉」選項來關閉這些命令。</block>
+  <block id="9704edc0c40aff2bc9c91d97d7bdd6c5" category="list-text">打開新機櫃IOM的包裝、並將其放在磁碟櫃附近的水平面上。</block>
+  <block id="82596309a8fa5f7ee94835a2785f0208" category="paragraph">保存所有包裝材料、以便在退回故障的機櫃IOM時使用。</block>
+  <block id="27f828dc47aef9b25b9f0603b1307a44" category="list-text">從系統主控台警告訊息和故障機櫃IOM上的亮起警示（黃色）LED、實際識別故障機櫃IOM。</block>
+  <block id="373a5d24b1aa2958990518bcd5ed56ab" category="paragraph">FAS2600系列和FAS2700系列單路徑HA組態</block>
+  <block id="5de1791487db34e32b1323bb994c054c" category="list-text">確定目標節點（故障機櫃IOM所屬的節點）。</block>
+  <block id="3b8811460da03f6141f48283c90f0c81" category="list-text">從您要移除的機櫃IOM上拔下纜線。</block>
+  <block id="07bf16e1ed0cfef58d7f5600babc67b0" category="paragraph">記下每條纜線所連接的機櫃IOM連接埠。</block>
+  <block id="2c90515780aa4ada9f036267519ca053" category="list-text">按下機櫃IOM CAM握把上的橘色栓鎖、直到釋放為止、然後完全打開CAM握把、從中間平面釋放機櫃IOM。</block>
+  <block id="3cd34c3a3dcf24396b327cfffa0135af" category="list-text">使用CAM握把將機櫃IOM滑出磁碟櫃。</block>
+  <block id="c53f74c15390f8807c5e8c0905bb0886" category="paragraph">處理機櫃IOM時、請務必用兩隻手支撐其重量。</block>
+  <block id="745f4edf7ff287661f3eaeff8ee25ded" category="list-text">在移除機櫃IOM之後、請至少等待70秒、然後再安裝新的機櫃IOM。</block>
+  <block id="574efb7bdeea63f97753a05f3c6871f5" category="list-text">用兩隻手將新機櫃IOM的CAM握把置於開啟位置、支撐並將新機櫃IOM的邊緣與磁碟櫃的開孔對齊、然後將新機櫃IOM穩固推入、直到它與中間板接入。</block>
+  <block id="222746507964b1ed3eaf55fde5e31c2b" category="admonition">將機櫃IOM滑入磁碟櫃時、請勿過度施力、否則可能會損壞連接器。</block>
+  <block id="4ca96495e80202f00b900a4621ad919b" category="list-text">關閉CAM握把、使鎖扣卡入鎖定位置、且機櫃IOM完全就位。</block>
+  <block id="0da46cd6bdd0bb5727da715e0ba9290d" category="list-text">確認已建立機櫃IOM連接埠連結。</block>
+  <block id="e4d6a1639eb1018ebdf0ee077494d1a9" category="summary">您可以使用此範例來引導您瞭解如何使用IOM12/IOM12B模組、讀取完整的工作表並套用至磁碟櫃的纜線堆疊、以進行四路徑連線。</block>
+  <block id="114f9b221f24441ab337c7de57a95c34" category="doc">如何讀取工作表、以纜線連接控制器與堆疊的連線、以實現四路徑連線：機櫃採用IOM12/IOM12B模組</block>
+  <block id="35dc71ed57aee63da50f31e10929fcac" category="doc">熱交換A電源供應器-配備IOM12/IOM12B模組的機櫃</block>
+  <block id="597768bf006f6e20b6db4d977f39566f" category="doc">控制器對堆疊佈線工作表和通用多重路徑HA組態的佈線範例-具有IOM12/IOM12B模組的機櫃</block>
+  <block id="daa5cf1e3bbccdadf18629f97e2ca42a" category="doc">如何讀取工作表以纜線連接控制器與堆疊的連線、以實現多路徑連線功能、亦即使用IOM12/IOM12B模組的磁碟櫃</block>
+  <block id="eeea27d9ea27420adcc8ce9fd05614b8" category="paragraph">您可以使用此範例來引導您瞭解如何使用IOM12/IOM12B模組來讀取完整工作表、並將其套用至磁碟櫃的控制器對堆疊連線、以實現多路徑連線。</block>
+  <block id="baeaa6c0f7d91e3737654018dbaf4dab" category="paragraph">本例中使用的組態是多重路徑HA組態、每個控制器上有兩個四埠SAS HBA（八個SAS連接埠）、以及兩個具有IOM12/IOM12B模組的磁碟櫃堆疊。連接埠配對是透過跳過工作表中的每個其他連接埠配對來連接。</block>
+  <block id="8c2ea3821fe3ebc950535413e621cebe" category="doc">將DS460C磁碟櫃中的風扇模組更換為IOM12/IOM12B模組</block>
+  <block id="3b11171c02404a6a48fbb19b047eef0f" category="summary">完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至使用IOM12/IOM12B模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現多路徑連線。您也可以使用完成的工作表、引導自己完成組態的多路徑連線。</block>
+  <block id="12156870a61d18f81545fc90d3b6ffda" category="doc">用於多路徑連線的控制器對堆疊佈線工作表範本-具有IOM12/IOM12B模組的磁碟櫃</block>
+  <block id="43e54d26abacd9c39f7b1ca3e46f28bc" category="doc">安裝及纜線架以安裝新系統-機櫃配備IOM12/IOM12B模組</block>
+  <block id="26d6adab5145dcaeef75e539d6505422" category="section-title">安裝和佈線使用IOM12/IOM12B模組的磁碟櫃以進行新系統安裝的需求</block>
+  <block id="92981035bf465c86f5c925914f3103e0" category="section-title">安裝和佈線使用IOM12/IOM12B模組的磁碟櫃以進行新系統安裝時的考量事項</block>
+  <block id="6a133718408653e3259d13651c14c879" category="list-text">配備IOM12/IOM12B模組的磁碟櫃會隨附預設為00的磁碟櫃ID。</block>
+  <block id="e37be681c028209021899aca48b5a94e" category="section-title">安裝含有IOM12/IOM12B模組的磁碟櫃、以進行新的系統安裝</block>
+  <block id="cff4c6a80d673a91abe24c8dff38731f" category="section-title">將磁碟櫃與IOM12/IOM12B模組連接在一起、以進行新的系統安裝</block>
+  <block id="17ddda76156258b572f9b144817d0684" category="doc">DS224C或DS212C磁碟櫃中的磁碟機熱交換-磁碟櫃具有IOM12/IOM12B模組</block>
+  <block id="bae52e811e373496a8dd1a90bdcd997a" category="doc">控制器對堆疊佈線工作表和佈線範例、適用於具有兩個四埠SAS HBA的四路徑HA組態：具有IOM12/IOM12B模組的磁碟櫃</block>
+  <block id="ddc31af8042cf01054a35e84a194db81" category="summary">若要更換磁碟櫃中的磁碟櫃、您必須停止整個儲存系統（HA配對）、以便將資料集合體保留在磁碟櫃上、或者您可以選擇讓HA配對保持正常運作、 這需要您將所有資料從位於磁碟機上的資料集合體移出、然後離線刪除資料集合體。但是、如果磁碟櫃包含根Aggregate、則必須停止HA配對。</block>
+  <block id="4d3eb6be0ac338cf16ceee7366b714e2" category="doc">將DS460C磁碟櫃中的磁碟機匣更換為IOM12/IOM12B模組</block>
+  <block id="08112df5a5488f0c78a69cd8eb1823a1" category="list-text">此程序適用於具有資料管理軟碟機抽屜和/或DCM2磁碟機抽屜的磁碟櫃。（磁碟櫃也會有兩個IOM12模組或兩個IOM12B模組。）</block>
+  <block id="ff6ef70fd6ff188b3310deca2ed1341f" category="paragraph">當資料中心管理員或DCM2磁碟櫃故障時、您會收到一個資料中心管理員或DCM2磁碟櫃來進行更換。</block>
+  <block id="a1de29a246e1d955898722ea58ccaad9" category="paragraph">如果您更換故障的磁碟機抽屜、則會導致磁碟櫃結合IOM12模組和任何數量的DCM2磁碟機抽取器、 您必須將IOM12韌體升級至0300版或更新版本、因為IOM12模組需要支援DCM2磁碟機抽屜的韌體版本。</block>
+  <block id="99a3be716b7d4f783a2df1a6711575bb" category="paragraph">IOM12韌體升級可在更換磁碟機匣之前或之後完成。此程序可讓您升級韌體、做為準備藥櫃更換程序的一部分。</block>
+  <block id="ee0c60e2d91c7aed52362f32053f76dc" category="list-text">資料中心管理員磁碟機抽取盒和DCM2磁碟機抽取盒的外觀可加以區分：</block>
+  <block id="032d64c3ac3941e331a360a54f0a04ef" category="paragraph">資料中心管理員磁碟機抽屜如下所示：</block>
+  <block id="319d072de0a7eb80654d8506bc74de47" category="paragraph">DCM2磁碟機抽取器以藍色等量磁碟區和「DCM2」標籤加以區分：</block>
+  <block id="8bf45bf113568322e421362c99ee6a1e" category="image-alt">dcm2</block>
+  <block id="d5240bafd6bf54bcb59e9a9f899b324e" category="section-title">準備更換磁碟機抽屜</block>
+  <block id="38cd7f0eca6a82b183b0f9dc3599583a" category="paragraph">在更換磁碟機匣之前、您必須確保在必要時更新IOM12韌體、並停止HA配對、以便將資料集合體保留在磁碟櫃上、或是讓HA配對保持正常運作、 這需要您將所有資料從位於磁碟機上的資料集合體移出、然後離線刪除資料集合體。但是、如果磁碟櫃包含根Aggregate、則必須停止HA配對。最後、您必須關閉機櫃電源。</block>
+  <block id="fca3ffea6534176432f58b5a22ed22e1" category="list-title">步驟</block>
+  <block id="f1d6fcc8467c66247fc38fc5bb1e448c" category="list-text">確定更換故障磁碟機抽屜時、是否會導致磁碟櫃結合IOM12模組和任何數量的DCM2磁碟機抽取器。</block>
+  <block id="bb92ef0e860f1f3c67a9c3a453b2781c" category="list-text">如果磁碟櫃將結合IOM12模組和任何數量的DCM2磁碟機抽取器、您必須將IOM12韌體升級至0300版或更新版本、否則請執行下一步。</block>
+  <block id="62f67af3803932031f11d177b5600361" category="list-text">如果機櫃包含來自HA配對中任一控制器的根Aggregate、或是您選擇停止HA配對（而非保持HA配對正常運作）、請完成下列子步驟；否則、請執行下一步。</block>
+  <block id="b37509241639472ba31b52aa5d631103" category="admonition">停止HA配對時、資料集合體仍可保留在磁碟櫃上。</block>
+  <block id="4776c6cfddf3d461bf032149a752938e" category="list-text">停止HA配對中的兩個控制器。</block>
+  <block id="e2db2ba60f254ab9fa73e6d1f20e55c2" category="list-text">檢查儲存系統主控台、確認HA配對已停止。</block>
+  <block id="44359972349c2c141847d44b8de3be34" category="list-text">關閉機櫃電源。</block>
+  <block id="4bd0b0c2b519de54df41bc77088d8182" category="list-text">請移至「」區段、 <block ref="f9b764c55080d7cf77ed91e890c43565" category="inline-xref-macro-rx"></block>。</block>
+  <block id="eb1a8e53bca0fcb026633a23b562bfff" category="list-text">如果您選擇保持HA配對正常運作、請完成下列子步驟：</block>
+  <block id="1aea84d8e76217145d77f4dd7efe6f8f" category="admonition">如果您嘗試以磁碟櫃上的集合體來更換藥櫃、可能會造成多磁碟毀損的系統中斷。</block>
+  <block id="ea0b163daac6d7d1dbcf0110733b7a5c" category="list-text">將所有資料從位於磁碟機上的資料集合體中移除。</block>
+  <block id="a3285b442e65f70add01ba5f44551d15" category="paragraph">資料包括但不限於磁碟區和LUN。</block>
+  <block id="cf798cab97b54ad5fe43c91a959754ca" category="list-text">卸除並刪除集合體、讓磁碟機成為備援磁碟機：</block>
+  <block id="19613506a0ea4d74ae9e654ba0e170e6" category="paragraph">可以從任一控制器的clusterShell輸入命令。</block>
+  <block id="29d153e4b431b938b7c5a1015eeb6911" category="paragraph">'離線儲存Aggregate -Aggregate _name_'</block>
+  <block id="6111125e279add9b4874ec606bdf8f0e" category="paragraph">'儲存Aggregate刪除-Aggregate _Aggregate名稱_'</block>
+  <block id="0c94b39e7db15daf22049ff530aa79c4" category="list-text">確認磁碟機沒有集合體（為備援磁碟機）：</block>
+  <block id="c0ee87ce0ebd393c47203bb5fe61c6ff" category="list-text">檢查輸出以確認磁碟機是否為備用磁碟機。</block>
+  <block id="4b212a4f1b15a2634ac4585703871c77" category="paragraph">備用磁碟機在「Container Type」（容器類型）欄中顯示「shpare」（磁碟機）。</block>
+  <block id="91b2958bfbb554d300e8185ae9b27737" category="admonition">如果磁碟機在磁碟櫃中故障、「Container Type（容器類型）」欄中會出現「中斷」。</block>
+  <block id="f3f4e90f1b3b6970f9ad6037d23137fc" category="section-title">移除纜線鏈</block>
+  <block id="55f8cb8af8225d6be98f60253659b35d" category="list-text">您已完成 <block ref="95aa2d1c854ce79c2690ee7f9045d8e3" category="inline-xref-macro-rx"></block> 步驟：暫停HA配對、或是將磁碟機上的資料集合體中的所有資料全部移出、然後將資料集合體離線並刪除、以允許磁碟機成為備援磁碟機。</block>
+  <block id="eb00582562ed05ba82111f55c5dd7ed9" category="list-text">您已關閉磁碟櫃電源。</block>
+  <block id="39f83f14ef074e7f47f1a89591dede20" category="section-title">移除磁碟機抽屜</block>
+  <block id="c1493a32213b959f5c9f8be86dfb9960" category="section-title">安裝磁碟機抽屜</block>
+  <block id="02b9f44accc14d7238a1f0607ea50e30" category="section-title">連接纜線鏈</block>
+  <block id="f4435aa5af54d743ca17f6f55210a44e" category="paragraph">安裝磁碟機抽屜的最後步驟、是將更換的左右纜線鏈連接至磁碟機櫃。連接纜線鏈時、請依照您拔下纜線鏈時的順序進行。您必須先將鏈的橫式連接器插入機箱的橫式托架、然後再將鏈的垂直連接器插入機箱的垂直托架。</block>
+  <block id="4a88d75e49b05610191f242748bb61ec" category="list-text">如果您已停止HA配對、請在ONTAP 兩個控制器上都開機支援功能、否則請執行下一步。</block>
+  <block id="4f793cbfd6b4c5b97cc3f88b97513f30" category="list-text">如果您已將資料移出磁碟櫃並刪除資料集合體、則現在可以使用磁碟櫃中的備用磁碟來建立或擴充集合體。</block>
+  <block id="c776cbda6aa3c18922e3f8d06f693123" category="inline-link">Aggregate建立工作流程</block>
+  <block id="ada7b50b987afb01f91df0d931ebd26c" category="paragraph"><block ref="ada7b50b987afb01f91df0d931ebd26c" category="inline-link-rx"></block></block>
+  <block id="5d2249930d4d6f285a5ccc70c9734de6" category="inline-link">Aggregate擴充工作流程</block>
+  <block id="fcdebdb1f4c79cc7a93d9f17744521c5" category="paragraph"><block ref="fcdebdb1f4c79cc7a93d9f17744521c5" category="inline-link-rx"></block></block>
+  <block id="87e222a1917be35f082aeb99501e10ca" category="doc">在DS460C磁碟櫃中熱交換磁碟機-使用IOM12/IOM12B模組的磁碟櫃</block>
+  <block id="85085227e7191ff5201df5ab0dba828e" category="doc">包含內建儲存設備的控制器對堆疊佈線工作表與線路設計範例AFF 、FAS 適用於搭載IOM12/IOM12B模組的機櫃</block>
+  <block id="3cf53d4c9bda935f2527cd9e3072ef82" category="sidebar">IOM12/IOM12B模組</block>
+  <block id="c495d94f32f50365b375a20870280fde" category="sidebar">安裝IOM12/IOM2B模組及纜線的機櫃</block>
+  <block id="932dcd191a61980121848404f3579ffb" category="sidebar">具有IOM12/IOM12B模組的磁碟櫃會維持不變</block>
 </blocks>

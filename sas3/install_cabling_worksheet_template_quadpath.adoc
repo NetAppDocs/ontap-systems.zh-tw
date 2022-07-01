@@ -2,16 +2,16 @@
 permalink: sas3/install-cabling-worksheet-template-quadpath.html 
 sidebar: sidebar 
 keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, shelf, iom12, quad-pathed, connectivity, ha, pair, controller-to-stack, controller-to-stack cabling worksheet template for quad-pathed connectivity 
-summary: 完成工作表範本之後、您就可以定義控制器SAS連接埠配對、以便將控制器連接至具有IOM12模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。 
+summary: 完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至使用IOM12/IOM12B模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。 
 ---
-= 控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM12模組
+= 控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM1/IOM12B2模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-完成工作表範本之後、您就可以定義控制器SAS連接埠配對、以便將控制器連接至具有IOM12模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。
+完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至使用IOM12/IOM12B模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。
 
 .關於他的工作
 * 此程序和工作表範本適用於使用一或多個堆疊進行四路徑HA或四路徑組態的四路徑連線。
@@ -19,7 +19,7 @@ summary: 完成工作表範本之後、您就可以定義控制器SAS連接埠�
 四路徑HA和四路徑組態的工作表已完成範例。
 
 +
-工作表範例使用兩個四埠SAS HBA和兩個磁碟櫃堆疊的組態、其中包含IOM12模組。
+工作表範例使用兩個四埠SAS HBA的組態、以及兩個具有IOM12/IOM12B模組的磁碟櫃堆疊。
 
 * 工作表範本最多可容納兩個堆疊、如有需要、您需要新增更多欄。
 * 控制器對堆疊連線的四路徑連線由兩組多路徑纜線組成：第一組纜線稱為「多路徑」；第二組纜線稱為「四路徑」。

@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-new-system.html 
 sidebar: sidebar 
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling 
+keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
 summary: 如果您的新系統（HA配對或單一控制器組態）未安裝在機櫃中、您必須在機架中安裝磁碟櫃並將其纜線。 
 ---
-= 安裝及纜線架以安裝新的系統-機櫃內有IOM12模組
+= 安裝及纜線架以安裝新系統-機櫃配備IOM12/IOM12B模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 如果您的新系統（HA配對或單一控制器組態）未安裝在
 
 
 
-== 安裝和佈線使用IOM12模組的磁碟櫃以進行新系統安裝的需求
+== 安裝和佈線使用IOM12/IOM12B模組的磁碟櫃以進行新系統安裝的需求
 
 [role="lead"]
 安裝和佈線磁碟櫃之前、您必須符合特定需求。
@@ -36,7 +36,7 @@ link:../index.html["系統文件AFF FAS"]
 
 
 
-== 安裝和佈線使用IOM12模組的磁碟櫃以進行新系統安裝時的考量事項
+== 安裝和佈線使用IOM12/IOM12B模組的磁碟櫃以進行新系統安裝時的考量事項
 
 [role="lead"]
 在安裝和佈線磁碟櫃之前、您應該先熟悉此程序的各個層面和最佳實務做法。
@@ -45,7 +45,7 @@ link:../index.html["系統文件AFF FAS"]
 
 === 一般考量
 
-* 搭載IOM12模組的磁碟櫃會隨附預設為00的磁碟櫃ID。
+* 配備IOM12/IOM12B模組的磁碟櫃會隨附預設為00的磁碟櫃ID。
 +
 
 NOTE: 如果您有至少兩個堆疊的HA配對、則包含第二個堆疊根集合體的磁碟機櫃會將機櫃ID預設為10。
@@ -133,7 +133,7 @@ NOTE: 請將磁碟機放入其電子化服務包中、直到您準備好安裝�
 
 
 
-== 安裝含有IOM12模組的磁碟櫃、以進行新的系統安裝
+== 安裝含有IOM12/IOM12B模組的磁碟櫃、以進行新的系統安裝
 
 [role="lead"]
 您可以使用磁碟櫃隨附的機架安裝套件、將磁碟櫃安裝在機架中。
@@ -240,7 +240,7 @@ NOTE: 此時請勿開啟磁碟櫃電源。
 
 
 
-== 將磁碟櫃與IOM12模組連接在一起、以進行新的系統安裝
+== 將磁碟櫃與IOM12/IOM12B模組連接在一起、以進行新的系統安裝
 
 [role="lead"]
 您可以將磁碟櫃SAS連線（如適用）和控制器對機櫃）連接至機櫃、以建立系統的儲存連線。

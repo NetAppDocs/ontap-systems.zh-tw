@@ -1,22 +1,22 @@
 ---
 permalink: sas3/hot-remove-shelf.html 
 sidebar: sidebar 
-keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling 
+keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
 summary: 當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。 
 ---
-= 熱移除機櫃-配備IOM12模組的機櫃
+= 熱移除機櫃-配備IOM12/IOM12B模組的機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。
+您可以使用IOM12/IOM12B模組熱移除磁碟櫃（不中斷營運地從已開機且I/O正在進行的系統移除磁碟櫃）、以便在需要移動或更換磁碟櫃時進行。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。
 
 .開始之前
 * 您的系統必須是多重路徑HA、多重路徑、四重路徑HA或四重路徑組態。
 +
-對於E4A200、Eese20220、FAS2600系列和FAS2700系統、外部儲存設備必須以多重路徑HA或多重路徑的纜線連接。AFF AFF
+對於內建儲存設備的平台、例如AFF ：E20A200、AFF E20220、FAS2600系列和FAS2700系統、外部儲存設備必須以多重路徑HA或多重路徑的纜線連接。
 
 +
 

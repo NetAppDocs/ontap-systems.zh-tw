@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: example, guide, read, apply, complete, worksheet, cable, controller-to-stack, connection, disk, shelves, shelf, iom12, multipathed, connectivity, hot to read a worksheet to cable controller-to-stack connections for multipathed connectivity 
 summary: 您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取及套用完整的工作表、以纜線連接多路徑連線的磁碟機櫃的控制器對堆疊連線。 
 ---
-= 如何閱讀工作表、將控制器對堆疊的連線纜線連接到多路徑連線、以利使用IOM12模組的機櫃
+= 如何讀取工作表以纜線連接控制器與堆疊的連線、以實現多路徑連線功能、亦即使用IOM12/IOM12B模組的磁碟櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取及套用完整的工作表、以纜線連接多路徑連線的磁碟機櫃的控制器對堆疊連線。
+您可以使用此範例來引導您瞭解如何使用IOM12/IOM12B模組來讀取完整工作表、並將其套用至磁碟櫃的控制器對堆疊連線、以實現多路徑連線。
 
 您的HA配對或單一控制器組態不能是AFF 一套E4A200、AFF E4A220、FAS2600系列或FAS2700系統。這些系統使用獨特的工作表：
 
@@ -20,7 +20,7 @@ link:install-cabling-worksheets-examples-fas2600.html["控制器對堆疊佈線�
 .關於這項工作
 * 本程序參考下列工作表和纜線佈線範例、示範如何讀取工作表來連接控制器與堆疊的纜線連接。
 +
-本例中使用的組態是多重路徑HA組態、每個控制器上有兩個四埠SAS HBA（八個SAS連接埠）、以及兩個具有IOM12模組的磁碟櫃堆疊。連接埠配對是透過跳過工作表中的每個其他連接埠配對來連接。
+本例中使用的組態是多重路徑HA組態、每個控制器上有兩個四埠SAS HBA（八個SAS連接埠）、以及兩個具有IOM12/IOM12B模組的磁碟櫃堆疊。連接埠配對是透過跳過工作表中的每個其他連接埠配對來連接。
 
 +
 

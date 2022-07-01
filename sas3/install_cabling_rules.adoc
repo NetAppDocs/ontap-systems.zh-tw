@@ -1,22 +1,22 @@
 ---
 permalink: sas3/install-cabling-rules.html 
 sidebar: sidebar 
-keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules 
-summary: 具有IOM12模組的磁碟櫃可以HA配對和單一控制器組態（適用於支援的平台）進行纜線連接。 
+keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules, iom12b 
+summary: 具有IOM12/IOM12B模組的磁碟櫃可在HA配對和單一控制器組態中進行纜線（適用於支援的平台）。 
 ---
-= SAS纜線配置規則-採用IOM12模組的磁碟櫃
+= SAS纜線配置規則：採用IOM12/IOM12B模組的機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-使用IOM12模組的磁碟櫃可在HA配對和單一控制器組態（適用於支援的平台）中進行纜線連接、方法是套用SAS纜線配置規則：組態規則、控制器插槽編號規則、機櫃對機櫃連線規則、控制器對堆疊連線規則、以及如果適用的Mini-SAS HD SAS光纖纜線規則。
+採用IOM12/IOM12B模組的磁碟櫃、可透過套用SAS纜線規則、組態規則、控制器插槽編號規則、機櫃對機櫃連線規則、控制器對堆疊連線規則、以及適用的Mini-SAS HD SAS光纖纜線規則、以HA配對和單一控制器組態（適用於支援的平台）進行纜線。
 
 
-NOTE: 本指南所述的控制器插槽編號規則、機櫃對機櫃連線規則、以及控制器對堆疊連線規則、均與適用於所有SAS磁碟櫃的相同規則相同、無論它們具有IOM12、IOM6或IOM3模組。然而、本指南所提供的資訊、是針對採用IOM12模組的磁碟櫃的獨特特性、以及在支援的組態中使用這些模組。
+NOTE: 本指南所述的控制器插槽編號規則、機櫃對機櫃連線規則、以及控制器對堆疊連線規則、均與適用於所有SAS磁碟櫃的相同規則相同、無論它們具有IOM12/IOM12B、IOM6或IOM3模組。然而、本指南所提供的資訊、是針對採用IOM12模組的磁碟櫃的獨特特性、以及在支援的組態中使用這些模組。
 
-本指南所述的SAS纜線配置規則與Mini-SAS HD SAS光纖纜線規則、是針對採用IOM12模組的磁碟櫃而制定。
+本指南所述的SAS纜線配置規則與Mini-SAS HD SAS光纖纜線規則、是特定於採用IOM12/IOM12B模組的磁碟櫃。
 
 本指南所述的SAS纜線佈線規則、可平衡內建SAS連接埠與主機匯流排介面卡SAS連接埠之間的SAS纜線、以提供高可用度的儲存控制器組態、並符合下列目標：
 

@@ -1,25 +1,17 @@
 ---
 permalink: sas3/service-replace-drawer-ds460c.html 
 sidebar: sidebar 
-keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf 
-summary: 更換磁碟機匣之前、您必須停止所有主機I/O活動並關閉磁碟櫃電源。 
+keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm 
+summary: 若要更換磁碟櫃中的磁碟櫃、您必須停止整個儲存系統（HA配對）、以便將資料集合體保留在磁碟櫃上、或者您可以選擇讓HA配對保持正常運作、 這需要您將所有資料從位於磁碟機上的資料集合體移出、然後離線刪除資料集合體。但是、如果磁碟櫃包含根Aggregate、則必須停止HA配對。 
 ---
-= 將DS460C磁碟櫃中的磁碟機匣更換為IOM12模組的磁碟櫃
+= 將DS460C磁碟櫃中的磁碟機匣更換為IOM12/IOM12B模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-更換磁碟機匣之前、您必須停止所有主機I/O活動並關閉磁碟櫃電源。
-
-每個60個磁碟機磁碟櫃都有五個磁碟機匣。
-
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[28圖e2860 de460c正面無標註]
-
-五個抽屜各可容納12個磁碟機。
-
-image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts.gif[92 dwgde6600藥櫃、含HDD、無標註]
+若要更換磁碟櫃中的磁碟櫃、您必須停止整個儲存系統（HA配對）、以便將資料集合體保留在磁碟櫃上、或者您可以選擇讓HA配對保持正常運作、 這需要您將所有資料從位於磁碟機上的資料集合體移出、然後離線刪除資料集合體。但是、如果磁碟櫃包含根Aggregate、則必須停止HA配對。
 
 此程序需要下列項目：
 
@@ -33,6 +25,101 @@ NOTE: *可能的硬體損壞：*為了防止磁碟機櫃受到靜電釋放的損
 * 手電筒
 
 
+.關於這項工作
+* 此程序適用於具有資料管理軟碟機抽屜和/或DCM2磁碟機抽屜的磁碟櫃。（磁碟櫃也會有兩個IOM12模組或兩個IOM12B模組。）
++
+當資料中心管理員或DCM2磁碟櫃故障時、您會收到一個資料中心管理員或DCM2磁碟櫃來進行更換。
+
+
+
+[NOTE]
+====
+如果您更換故障的磁碟機抽屜、則會導致磁碟櫃結合IOM12模組和任何數量的DCM2磁碟機抽取器、 您必須將IOM12韌體升級至0300版或更新版本、因為IOM12模組需要支援DCM2磁碟機抽屜的韌體版本。
+
+IOM12韌體升級可在更換磁碟機匣之前或之後完成。此程序可讓您升級韌體、做為準備藥櫃更換程序的一部分。
+
+====
+* 資料中心管理員磁碟機抽取盒和DCM2磁碟機抽取盒的外觀可加以區分：
++
+資料中心管理員磁碟機抽屜如下所示：
+
++
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[28圖e2860 de460c正面無標註]
+
++
+DCM2磁碟機抽取器以藍色等量磁碟區和「DCM2」標籤加以區分：
+
++
+image::../media/dcm2.png[dcm2]
+
+
+
+
+
+== 準備更換磁碟機抽屜
+
+[role="Lead"]
+在更換磁碟機匣之前、您必須確保在必要時更新IOM12韌體、並停止HA配對、以便將資料集合體保留在磁碟櫃上、或是讓HA配對保持正常運作、 這需要您將所有資料從位於磁碟機上的資料集合體移出、然後離線刪除資料集合體。但是、如果磁碟櫃包含根Aggregate、則必須停止HA配對。最後、您必須關閉機櫃電源。
+
+.步驟
+. 確定更換故障磁碟機抽屜時、是否會導致磁碟櫃結合IOM12模組和任何數量的DCM2磁碟機抽取器。
+. 如果磁碟櫃將結合IOM12模組和任何數量的DCM2磁碟機抽取器、您必須將IOM12韌體升級至0300版或更新版本、否則請執行下一步。
++
+如需最新版本的韌體、請參閱NetApp支援網站。
+
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
+
+. 如果機櫃包含來自HA配對中任一控制器的根Aggregate、或是您選擇停止HA配對（而非保持HA配對正常運作）、請完成下列子步驟；否則、請執行下一步。
++
+
+NOTE: 停止HA配對時、資料集合體仍可保留在磁碟櫃上。
+
++
+.. 停止HA配對中的兩個控制器。
+.. 檢查儲存系統主控台、確認HA配對已停止。
+.. 關閉機櫃電源。
+.. 請移至「」區段、 <<Remove the cable chains>>。
+
+
+. 如果您選擇保持HA配對正常運作、請完成下列子步驟：
++
+
+NOTE: 如果您嘗試以磁碟櫃上的集合體來更換藥櫃、可能會造成多磁碟毀損的系統中斷。
+
++
+.. 將所有資料從位於磁碟機上的資料集合體中移除。
++
+資料包括但不限於磁碟區和LUN。
+
+.. 卸除並刪除集合體、讓磁碟機成為備援磁碟機：
++
+可以從任一控制器的clusterShell輸入命令。
+
++
+'離線儲存Aggregate -Aggregate _name_'
+
++
+'儲存Aggregate刪除-Aggregate _Aggregate名稱_'
+
+.. 確認磁碟機沒有集合體（為備援磁碟機）：
++
+... 在任一控制器的clusterShell中輸入以下命令：「torage disk show -ber櫃_bering_number_」
+... 檢查輸出以確認磁碟機是否為備用磁碟機。
++
+備用磁碟機在「Container Type」（容器類型）欄中顯示「shpare」（磁碟機）。
+
++
+
+NOTE: 如果磁碟機在磁碟櫃中故障、「Container Type（容器類型）」欄中會出現「中斷」。
+
+
+
+.. 關閉機櫃電源。
+
+
+
+
 
 
 == 移除纜線鏈
@@ -41,7 +128,8 @@ NOTE: *可能的硬體損壞：*為了防止磁碟機櫃受到靜電釋放的損
 DS460C磁碟機櫃中每個磁碟機藥櫃的左右纜線鏈可讓藥櫃滑入和滑出。您必須先移除兩個纜線鏈、才能移除磁碟機抽屜。
 
 .開始之前
-* 您已停止主機I/O活動、並將磁碟櫃關機。
+* 您已完成 <<Prepare to replace a drive drawer>> 步驟：暫停HA配對、或是將磁碟機上的資料集合體中的所有資料全部移出、然後將資料集合體離線並刪除、以允許磁碟機成為備援磁碟機。
+* 您已關閉磁碟櫃電源。
 * 您已取得下列項目：
 +
 ** 防靜電保護
@@ -338,7 +426,7 @@ NOTE: *設備故障風險：*請務必同時推動兩個槓桿、以完全關閉
 == 連接纜線鏈
 
 [role="lead"]
-安裝磁碟機抽屜的最後步驟、是將左右纜線鏈連接至磁碟機櫃。連接纜線鏈時、請依照您拔下纜線鏈時的順序進行。您必須先將鏈的橫式連接器插入機箱的橫式托架、然後再將鏈的垂直連接器插入機箱的垂直托架。
+安裝磁碟機抽屜的最後步驟、是將更換的左右纜線鏈連接至磁碟機櫃。連接纜線鏈時、請依照您拔下纜線鏈時的順序進行。您必須先將鏈的橫式連接器插入機箱的橫式托架、然後再將鏈的垂直連接器插入機箱的垂直托架。
 
 .開始之前
 * 您已更換磁碟機抽屜和所有磁碟機。
@@ -462,5 +550,13 @@ image:../media/legend_icon_01.png[""]
 .. 開啟磁碟機櫃上的兩個電源開關。
 .. 確認兩個風扇均已開啟、且風扇背面的黃色LED燈已關閉。
 
+
+. 如果您已停止HA配對、請在ONTAP 兩個控制器上都開機支援功能、否則請執行下一步。
+. 如果您已將資料移出磁碟櫃並刪除資料集合體、則現在可以使用磁碟櫃中的備用磁碟來建立或擴充集合體。
++
+https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html["Aggregate建立工作流程"]
+
++
+https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html["Aggregate擴充工作流程"]
 
 

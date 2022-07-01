@@ -1,26 +1,26 @@
 ---
 permalink: sas3/install-hot-add-shelf.html 
 sidebar: sidebar 
-keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling 
-summary: 您可以使用IOM12模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。 
+keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
+summary: 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12/IOM12B模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。 
 ---
-= 熱新增機櫃-機櫃內有IOM12模組
+= 熱新增機櫃：機櫃配備IOM12/IOM12B模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用IOM12模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。
+您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12/IOM12B模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。
 
-您無法使用此程序來混合堆疊：將含有IOM12模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。如果您需要混合堆疊、請使用 link:iom12-hot-add-mix.html["將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊"]。
+您無法使用此程序來混合堆疊：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。如果您需要混合堆疊、請使用 link:iom12-hot-add-mix.html["將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊"]。
 
 
 
-== 使用IOM12模組熱新增磁碟櫃的需求
+== 使用IOM12/IOM12B模組熱新增磁碟櫃的需求
 
 [role="lead"]
-在使用IOM12模組熱新增磁碟櫃之前、您的系統必須符合特定需求。
+您的系統必須符合特定需求、才能使用IOM12/IOM12B模組熱新增磁碟櫃。
 
 
 
@@ -71,7 +71,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 
 
-== 使用IOM12模組熱新增磁碟櫃的考量事項
+== 使用IOM12/IOM12B模組熱新增磁碟櫃的考量事項
 
 [role="lead"]
 在熱新增磁碟櫃之前、您應該先熟悉此程序的各個層面和最佳實務做法。
@@ -80,15 +80,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 === 一般考量
 
-* 如果您要將具有IOM12模組的磁碟櫃熱新增至現有堆疊（含IOM12模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一個或最後一個磁碟櫃）。
+* 如果您要將具有IOM12/IOM12B模組的磁碟櫃熱新增至現有堆疊（使用IOM12/IOM12B模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一或最後一個磁碟櫃）。
 +
 若為單一路徑HA和單一路徑組態（適用AFF 對象為E4A200、AFF E4A220、FAS2600系列和FAS2700系統）、您可將磁碟櫃熱新增至堆疊的末端、而該堆疊沒有控制器連線。
 
-* 具有IOM12模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。
+* 具有IOM12/IOM12B模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。
 +
-此程序並不處理混合堆疊的問題：將含有IOM12模組的機櫃熱新增至含有IOM6模組的機櫃堆疊。
+此程序並未解決混合堆疊的問題：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。
 
-* 系統可以使用IOM12模組、將磁碟櫃的多路徑堆疊和四路徑堆疊。
+* 系統可以使用IOM12/IOM12B模組、將多路徑和四路徑磁碟櫃堆疊在一起。
 +
 如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表中的系統組態會顯示為「多路徑」。
 
@@ -181,7 +181,7 @@ NOTE: 請將磁碟機放入其電子化服務包中、直到您準備好安裝�
 
 
 
-== 使用IOM12模組安裝磁碟櫃以進行熱新增
+== 使用IOM12/IOM12B模組安裝磁碟櫃以進行熱新增
 
 [role="lead"]
 對於您要熱新增的每個磁碟櫃、您可以將磁碟櫃安裝到機架、連接電源線、開啟磁碟櫃電源、並在SAS連線之前設定磁碟櫃ID。
@@ -316,7 +316,7 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 
 
 
-== 使用IOM12模組來連接磁碟櫃的纜線、以便熱新增
+== 使用IOM12/IOM12B模組來連接磁碟櫃的纜線、以進行熱新增
 
 [role="lead"]
 您可以將SAS連線（即機櫃對機櫃和控制器對堆疊）連接至熱新增磁碟櫃、以便它們能夠連線至系統。
