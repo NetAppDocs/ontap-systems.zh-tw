@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
   <head class="at-element-marker">
-  <title>將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊</title>
+  <title>將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊" />
+  <meta property="og:title" content="將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-tw/ontap-systems/sas3/iom12-hot-add-mix.html" />
-	<meta property="og:description" content="如果需要額外的儲存設備、您可以將IOM12磁碟櫃（含IOM12模組的SAS磁碟櫃）熱新增至IOM6磁碟櫃堆疊（含IOM6模組的SAS磁碟櫃）、表示您可以混合堆疊。" />
+	<meta property="og:description" content="如果需要額外的儲存設備、您可以將IOM12/IOM12B磁碟櫃（SAS磁碟櫃搭配IOM12/IOM12B模組）熱新增至IOM6磁碟櫃堆疊（SAS磁碟櫃搭配IOM6模組）、表示您可以混合堆疊。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-tw/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="如果需要額外的儲存設備、您可以將IOM12磁碟櫃（含IOM12模組的SAS磁碟櫃）熱新增至IOM6磁碟櫃堆疊（含IOM6模組的SAS磁碟櫃）、表示您可以混合堆疊。">
-  <meta name="keywords" content=" additional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 shelves to a stack of iom6 shelves"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="如果需要額外的儲存設備、您可以將IOM12/IOM12B磁碟櫃（SAS磁碟櫃搭配IOM12/IOM12B模組）熱新增至IOM6磁碟櫃堆疊（SAS磁碟櫃搭配IOM6模組）、表示您可以混合堆疊。">
+  <meta name="keywords" content=" additional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 shelves to a stack of iom6 shelves, iom12b"><!-- Icons -->
   <link rel="icon" href="/zh-tw/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊](https://docs.netapp.com/zh-tw/ontap-systems/sas3/iom12-hot-add-mix.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/iom12_hot_add_mix.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />瞭解如何作出貢獻</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊](https://docs.netapp.com/zh-tw/ontap-systems/sas3/iom12-hot-add-mix.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/iom12_hot_add_mix.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />瞭解如何作出貢獻</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此頁面上</div>
@@ -4164,11 +4164,11 @@
           
           <a target="_blank" 
             
-              href="/zh-tw/ontap-systems/pdfs/sidebar/SAS磁碟櫃搭配IOM12模組.pdf" 
+              href="/zh-tw/ontap-systems/pdfs/sidebar/SAS磁碟櫃搭配IOM12_IOM12B模組.pdf" 
             
           >
             <img src="/zh-tw/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
-            SAS磁碟櫃搭配IOM12模組
+            SAS磁碟櫃搭配IOM12/IOM12B模組
           </a>
           
 
@@ -4180,7 +4180,7 @@
           
           <a target="_blank" 
             
-              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝IOM12模組及纜線的機櫃.pdf" 
+              href="/zh-tw/ontap-systems/pdfs/sidebar/安裝IOM12_IOM2B模組及纜線的機櫃.pdf" 
             
           >
             <img src="/zh-tw/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -4254,7 +4254,7 @@
           
           <a target="_blank" 
             
-              href="/zh-tw/ontap-systems/pdfs/sidebar/具有IOM12模組的磁碟櫃維持不變.pdf" 
+              href="/zh-tw/ontap-systems/pdfs/sidebar/具有IOM12_IOM12B模組的磁碟櫃會維持不變.pdf" 
             
           >
             <img src="/zh-tw/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -5946,7 +5946,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/ns224/service-replace-rtc-battery.html">
         即時時鐘電池
       </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-systems/sas3/index.html">
-        <div class="na-navbar-padding"> SAS磁碟櫃搭配IOM12模組</div>
+        <div class="na-navbar-padding"> SAS磁碟櫃搭配IOM12/IOM12B模組</div>
       </a>
       <ul><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 安裝與連接纜線</div>
@@ -5956,7 +5956,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-hot-add-shelf.html">
         熱新增機櫃
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/iom12-hot-add-mix.html">
-        將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊
+        將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/install-change-shelf-id.html">
         變更機櫃ID
       </a></li><li class="subfolders "><a href="#">
@@ -5994,7 +5994,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/hot-remove-shelf.html">
         熱移除機櫃
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-hot-swap-iom.html">
-        IOM12模組
+        IOM12/IOM12B模組
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-hot-swap-power-supply.html">
         電源供應器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-systems/sas3/service-monitor-leds.html">
@@ -6114,14 +6114,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊</h1>
+  <h1 class="n-doc__component-detail-heading">將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-06-13 16:31:11 +0000">06/13/2022</time>
+    <time datetime="2022-07-01 15:51:21 +0000">07/01/2022</time>
     
   
 
@@ -6131,7 +6131,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>如果需要額外的儲存設備、您可以將IOM12磁碟櫃（含IOM12模組的SAS磁碟櫃）熱新增至IOM6磁碟櫃堆疊（含IOM6模組的SAS磁碟櫃）、表示您可以混合堆疊。</p>
+<p>如果需要額外的儲存設備、您可以將IOM12/IOM12B磁碟櫃（SAS磁碟櫃搭配IOM12/IOM12B模組）熱新增至IOM6磁碟櫃堆疊（SAS磁碟櫃搭配IOM6模組）、表示您可以混合堆疊。</p>
 </div>
 </div>
 </div>
@@ -6139,7 +6139,7 @@
 <h2 id="熱新增需求">熱新增需求</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>在MetroCluster 將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您的HA配對、單一控制器或延伸功能不全組態（系統）必須符合特定需求。</p>
+<p>在MetroCluster 將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、HA配對、單一控制器或延伸功能不全組態（系統）必須符合特定需求。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -6156,7 +6156,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6層架和IOM12層架。</p>
+<p>您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6磁碟櫃和IOM12/IOM12B磁碟櫃。</p>
 <div class="paragraph">
 <p>您可以使用下列其中一種方法來驗證支援：</p>
 </div>
@@ -6217,7 +6217,7 @@
 <li>
 <p>您的系統必須少於支援的磁碟機數量上限、至少必須少於您要熱新增的IOM12磁碟櫃中能夠安裝的磁碟機數量。</p>
 <div class="paragraph">
-<p>在熱新增IOM12磁碟櫃之後、您無法超過系統支援的磁碟機數量上限。</p>
+<p>熱新增IOM12/IOM12B磁碟櫃之後、您無法超過系統支援的磁碟機數量上限。</p>
 </div>
 <div class="paragraph">
 <p><a href="https://hwu.netapp.com">"NetApp Hardware Universe"</a></p>
@@ -6233,7 +6233,7 @@
 </div>
 </li>
 <li>
-<p>您必須訂購並接收IOM12磁碟櫃、以及適當數量和類型的SAS銅線。</p>
+<p>您必須訂購並收到IOM12/IOM12B磁碟櫃、以及適當數量和類型的SAS銅線。</p>
 <div class="paragraph">
 <p>IOM12磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。</p>
 </div>
@@ -6246,18 +6246,18 @@
 <h2 id="橋接式metrocluster-附加功能的需求">橋接式MetroCluster 附加功能的需求</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>如果您要將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊、而IOM6磁碟櫃是以MetroCluster 一對Atto FibreBridge的方式以進行非二線組態連接、則系統必須符合特定需求。</p>
+<p>如果您要將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊、而此磁碟櫃是以MetroCluster 一對Atto FibreBridge的方式以供進行非結構性組態連接、則系統必須符合特定需求。</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p>如果橋接SAS連接埠在目前組態中可用、您應該將IOM12磁碟櫃新增為個別堆疊。</p>
 <div class="paragraph">
-<p>在堆疊中混合IOM12和IOM6模組之前、請先使用所有橋接連接埠。</p>
+<p>在堆疊中混合IOM12/IOM12B和IOM6模組之前、請先使用所有橋接連接埠。</p>
 </div>
 </li>
 <li>
-<p>您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6層架和IOM12層架。</p>
+<p>您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6磁碟櫃和IOM12/IOM12B磁碟櫃。</p>
 <div class="paragraph">
 <p>您可以使用下列其中一種方法來驗證支援：</p>
 </div>
@@ -6295,7 +6295,7 @@
 </div>
 </li>
 <li>
-<p>IOM6磁碟櫃堆疊（您要將IOM12磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。</p>
+<p>IOM6磁碟櫃堆疊（您要將IOM12/IOM12B磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。</p>
 <div class="paragraph">
 <p>混合堆疊不支援SAS光纖纜線。</p>
 </div>
@@ -6306,7 +6306,7 @@
 <img src="/us-en/ontap-systems/images/note.svg" alt="附註">
 </td>
 <td class="content">
-如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新增IOM12機櫃。請聯絡您的NetApp銷售代表。
+如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新增IOM12/IOM12B機櫃。請聯絡您的NetApp銷售代表。
 </td>
 </tr>
 </table>
@@ -6316,9 +6316,9 @@
 <p>您的組態必須少於橋接連接埠所支援的磁碟機數量上限。</p>
 </li>
 <li>
-<p>您必須訂購並接收IOM12磁碟櫃、以及適當數量和類型的SAS銅線。</p>
+<p>您必須訂購並收到IOM12/IOM12B磁碟櫃、以及適當數量和類型的SAS銅線。</p>
 <div class="paragraph">
-<p>IOM12磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。</p>
+<p>IOM12/IOM12B磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。</p>
 </div>
 </li>
 <li>
@@ -6332,19 +6332,19 @@
 <h2 id="熱新增的考量事項">熱新增的考量事項</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>在將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您應該先熟悉此程序的各個層面和最佳實務做法。</p>
+<p>在將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、您應該先熟悉此程序的各個層面和最佳實務做法。</p>
 </div>
 <div class="sect2">
 <h3 id="一般考量">一般考量</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>強烈建議您熱新增的IOM12磁碟櫃執行韌體版本0260或更新版本、然後再將其連接至系統。</p>
+<p>強烈建議您要熱新增的IOM12/IOM12B磁碟櫃執行韌體版本0260或更新版本、然後再將其連接至系統。</p>
 <div class="paragraph">
 <p>如果您將熱新增的磁碟櫃錯誤地連接至堆疊、則擁有支援版本的機櫃韌體可防止儲存堆疊存取問題。</p>
 </div>
 <div class="paragraph">
-<p>將IOM12磁碟櫃韌體下載到磁碟櫃之後、請在任一控制器的主控台輸入「shorage sherage show -module"命令、確認韌體版本為0260或更新版本。</p>
+<p>將IOM12/IOM12B機櫃韌體下載至機櫃之後、請在任一控制器的主控台輸入「shorage shShelfLE show -module"命令、確認韌體版本為0260或更新版本。</p>
 </div>
 </li>
 <li>
@@ -6784,7 +6784,7 @@
 <h2 id="熱插拔的纜線架">熱插拔的纜線架</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>如何將IOM12機櫃連接至IOM6機櫃堆疊、取決於IOM12機櫃是否為初始IOM12機櫃、亦即堆疊中沒有其他IOM12機櫃、 或是現有混合堆疊的額外IOM12層、表示堆疊中已存在一個或多個IOM12層架。這也取決於堆疊是否具有多重路徑HA、多重路徑、單一路徑HA或單一路徑連線。</p>
+<p>如何將IOM12/IOM12B機櫃纜線至IOM6機櫃堆疊、取決於IOM12機櫃是否為初始IOM12/IOM12B機櫃、表示堆疊中沒有其他IOM12機櫃、 或是現有混合堆疊的額外IOM12/IOM12B層架、表示堆疊中已存在一個或多個IOM12/IOM12B層架。這也取決於堆疊是否具有多重路徑HA、多重路徑、單一路徑HA或單一路徑連線。</p>
 </div>
 <div class="ulist">
 <div class="title">開始之前</div>
@@ -6813,9 +6813,9 @@
 <div class="title">關於這項工作</div>
 <ul>
 <li>
-<p>您總是將IOM12磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、以維持堆疊內的單一速度轉換。</p>
+<p>您一律將IOM12/IOM12B磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、以維持堆疊內的單一速度轉換。</p>
 <div class="paragraph">
-<p>將IOM12磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、IOM6磁碟櫃仍會群組在一起、IOM12磁碟櫃仍會群組在一起、以便在兩個磁碟櫃群組之間進行單一速度轉換。</p>
+<p>將IOM12/IOM12B磁碟櫃熱新增至堆疊中的邏輯最後一個磁碟櫃、IOM6磁碟櫃會一起群組、而IOM12/IOM12B磁碟櫃會一起群組、以便在兩個磁碟櫃群組之間進行單一速度轉換。</p>
 </div>
 <div class="paragraph">
 <p>例如：</p>
@@ -6823,20 +6823,20 @@
 <div class="ulist">
 <ul>
 <li>
-<p>在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12磁碟櫃的單一速度轉換會描述為：</p>
+<p>在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12/IOM12B磁碟櫃的單一速度轉換會描述為：</p>
 <div class="literalblock">
 <div class="content">
-<pre> Controller &lt;-&gt; IOM6 &lt;-&gt; IOM6 &lt;---&gt; IOM12 &lt;-&gt; IOM12 &lt;-&gt; Controller
+<pre> Controller &lt;-&gt; IOM6 &lt;-&gt; IOM6 &lt;---&gt; IOM12IOM12B &lt;-&gt; IOM12/IOM12B &lt;-&gt; Controller
 ** 在與內建IOM12E儲存設備的HA配對中、堆疊內有兩個IOM12磁碟櫃和兩個IOM6磁碟櫃的單一速度轉換說明如下：</pre>
 </div>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>IOM12E 0b &lt;-&gt; IOM12 &lt;-&gt; IOM12 &lt;---&gt; IOM6 &lt;-&gt; IOM6 &lt;-&gt; IOM12E 0a</pre>
+<pre>IOM12E 0b &lt;-&gt; IOM12/IOM12B &lt;-&gt; IOM12/IOM12B &lt;---&gt; IOM6 &lt;-&gt; IOM6 &lt;-&gt; IOM12E 0a</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>內建儲存連接埠0b是內部儲存設備（擴充器）的連接埠、因為它連接到熱新增的IOM12機櫃（堆疊中的最後一個機櫃）、IOM12機櫃群組會一起保存、並透過堆疊和內建IOM12E儲存設備維持單一轉換。</p>
+<p>內建儲存連接埠0b是內部儲存設備（擴充器）的連接埠、因為它連接到熱新增的IOM12/IOM12B機櫃（堆疊中的最後一個機櫃）、IOM12/IOM12B機櫃群組會一起保存、並透過堆疊和內建IOM12E儲存設備維持單一轉換。</p>
 </div>
 </li>
 </ul>
@@ -6846,9 +6846,9 @@
 <p>混合堆疊只支援單一速度轉換。您無法進行額外的速度轉換。例如、您無法在堆疊中進行兩種速度轉換、其描述如下：</p>
 <div class="literalblock">
 <div class="content">
-<pre> Controller &lt;-&gt; IOM6 &lt;-&gt; IOM6 &lt;---&gt; IOM12 &lt;-&gt; IOM12 &lt;---&gt; IOM6 &lt;-&gt; Controller
+<pre> Controller &lt;-&gt; IOM6 &lt;-&gt; IOM6 &lt;---&gt; IOM12/IOM12B &lt;-&gt; IOM12/IOM12B &lt;---&gt; IOM6 &lt;-&gt; Controller
 * 您可以將IOM6磁碟櫃熱新增至混合式堆疊。不過、您必須將IOM6磁碟櫃（現有IOM6磁碟櫃群組）熱新增至堆疊側邊、以維持堆疊中的單一速度轉換。
-* 您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。</pre>
+* 您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12/IOM12B磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。</pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -6865,7 +6865,7 @@
 </div>
 </li>
 <li>
-<p>初始IOM12機櫃（IOM12機櫃連接至邏輯上最後一個IOM6機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</p>
+<p>初始IOM12/IOM12B機櫃（IOM12機櫃連接至邏輯上最後一個IOM6機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</p>
 </li>
 <li>
 <p>SAS纜線連接器採用鎖定式設計；若方向正確放入SAS連接埠、連接器會卡入定位。</p>
@@ -6874,7 +6874,7 @@
 </div>
 </li>
 <li>
-<p>您可以參考下圖、將IOM12磁碟櫃連接至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。</p>
+<p>您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。</p>
 <div class="paragraph">
 <p>此圖例僅適用於具有多重路徑HA連線功能的堆疊、不過、纜線概念可套用至具有多重路徑、單一路徑HA、單一路徑連線及延伸MetroCluster 性等組態的堆疊。</p>
 </div>
@@ -6885,7 +6885,7 @@
 </div>
 </li>
 <li>
-<p>您可以參考下圖、將IOM12磁碟櫃連接至IOM6磁碟櫃堆疊、並採用橋接式MetroCluster 附加功能的功能。 <span class="image"><img src="../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png" alt=""></span></p>
+<p>您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至連接橋MetroCluster 接的IOM6磁碟櫃堆疊。 <span class="image"><img src="../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png" alt=""></span></p>
 </li>
 </ul>
 </div>
@@ -6899,7 +6899,7 @@
 </div>
 </li>
 <li>
-<p>如果您要熱新增的IOM12機櫃是IOM12機櫃的初始新增至IOM6堆疊、表示IOM6機櫃堆疊中沒有其他IOM12機櫃、請完成適用的子步驟。</p>
+<p>如果您要熱新增的IOM12/IOM12B機櫃是IOM6堆疊中新增的初始IOM12/IOM12B機櫃、表示IOM6機櫃堆疊中沒有其他IOM12/IOM12B機櫃、請完成適用的子步驟。</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -6946,13 +6946,13 @@
 </div>
 </li>
 <li>
-<p>將最後一個IOM6機櫃IOM與新IOM12機櫃IOM A連接埠（從子步驟A）之間的機櫃對機櫃連線纜線連接至新的IOM12機櫃IOM A連接埠1。</p>
+<p>將最後一個IOM6機櫃IOM A圓形連接埠（從子步驟A）與新IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</p>
 <div class="paragraph">
 <p>使用SAS銅線QSFP-to Mini-SAS HD纜線。</p>
 </div>
 </li>
 <li>
-<p>如果您要熱新增另一個IOM12機櫃、請將IOM12機櫃IOM A連接埠3、剛連接纜線的機櫃連接至機櫃連接線、以及下一個IOM12機櫃IOM A連接埠1纜線。</p>
+<p>如果您要熱新增另一個IOM12/IOM12B機櫃、請將IOM12/IOM12B機櫃IOM A連接埠3、剛連接纜線的機櫃連接線、以及下一個IOM12/IOM12B機櫃IOM A連接埠1連接線。</p>
 <div class="paragraph">
 <p>使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</p>
 </div>
@@ -7000,7 +7000,7 @@
 </div>
 </li>
 <li>
-<p>如果您要熱新增另一個IOM12機櫃、請將IOM12機櫃IOM A連接埠3、剛連接纜線的機櫃連接至機櫃連接線、以及下一個IOM12機櫃IOM A連接埠1纜線。</p>
+<p>如果您要熱新增另一個IOM12/IOM12B機櫃、請將IOM12/IOM12B機櫃IOM A連接埠3、剛連接纜線的機櫃連接線、以及下一個IOM12/IOM12B機櫃IOM A連接埠1連接線。</p>
 <div class="paragraph">
 <p>使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</p>
 </div>
@@ -7030,7 +7030,7 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>將最後一個IOM6機櫃IOM A回轉連接埠與新IOM12機櫃IOM A連接埠之間的機櫃對機櫃連接線纜1。</p>
+<p>將最後一個IOM6機櫃IOM A圓形連接埠與新IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</p>
 <div class="paragraph">
 <p>使用SAS銅線QSFP-to Mini-SAS HD纜線。</p>
 </div>
@@ -7039,7 +7039,7 @@
 <p>針對IOM B重複上述子步驟</p>
 </li>
 <li>
-<p>如果您要熱新增另一個IOM12機櫃、請重複執行子步驟a和b</p>
+<p>如果您要熱新增另一個IOM12/IOM12B機櫃、請重複執行子步驟a和b</p>
 <div class="paragraph">
 <p>否則、請前往步驟4。</p>
 </div>
@@ -7051,7 +7051,7 @@
 </table>
 </li>
 <li>
-<p>如果您要熱新增的IOM12磁碟櫃是現有混合式堆疊的額外IOM12磁碟櫃、表示堆疊中已存在一個或多個IOM12磁碟櫃、請完成適用的子步驟。</p>
+<p>如果您要熱新增的IOM12/IOM12B機櫃是現有混合堆疊的額外IOM12/IOM12B機櫃、表示堆疊中已存在一個或多個IOM12/IOM12B機櫃、請完成適用的子步驟。</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -7083,10 +7083,10 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>將控制器對堆疊纜線從最後一個IOM12機櫃IOM A連接埠3移至新最後一個IOM12機櫃上的相同連接埠。</p>
+<p>將控制器對堆疊纜線從最後一個IOM12/IOM12B機櫃IOM A連接埠3移至新最後一個IOM12/IOM12B機櫃上的相同連接埠。</p>
 </li>
 <li>
-<p>如果您要熱新增一個IOM12機櫃、請將舊最後一個IOM12機櫃IOM A連接埠3與新的最後一個IOM12機櫃IOM A連接埠1的機櫃對機櫃連接纜線。</p>
+<p>如果您要熱新增一個IOM12/IOM12B機櫃、請將舊的IOM12/IOM12B機櫃IOM A連接埠3與新的上一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</p>
 <div class="paragraph">
 <p>使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</p>
 </div>
@@ -7095,7 +7095,7 @@
 </div>
 </li>
 <li>
-<p>如果您要熱新增多個IOM12機櫃、請將舊的上一個IOM12機櫃IOM A連接埠3和下一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線、然後針對任何其他IOM12機櫃重複此步驟。</p>
+<p>如果您要熱新增一個以上的IOM12/IOM12B機櫃、請將舊的IOM12/IOM12B機櫃IOM A連接埠3和下一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線、然後對任何其他IOM12/IOM12B機櫃重複此動作。</p>
 <div class="paragraph">
 <p>使用額外的SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</p>
 </div>
@@ -7119,16 +7119,16 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>將底部的橋接至堆疊纜線從舊的上一個IOM12機櫃移至新的最後一個IOM12機櫃上的相同連接埠。</p>
+<p>將底部的橋接至堆疊纜線從舊的上一個IOM12/IOM12B機櫃移至新的上一個IOM12/IOM12B機櫃上的相同連接埠。</p>
 </li>
 <li>
-<p>將舊的上一個IOM12機櫃IOM A連接埠3和下一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜、然後對任何其他IOM12機櫃重複此步驟。</p>
+<p>將舊的IOM12/IOM12B機櫃IOM A連接埠3和下一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連接纜線、然後對任何其他IOM12/IOM12B機櫃重複此步驟。</p>
 <div class="paragraph">
 <p>使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</p>
 </div>
 </li>
 <li>
-<p>將舊的上一個IOM12機櫃IOM B連接埠3和下一個IOM12機櫃IOM B連接埠1之間的機櫃對機櫃連接線纜、然後對任何其他IOM12機櫃重複此步驟。</p>
+<p>將舊的上一個IOM12/IOM12B機櫃IOM B連接埠3和下一個IOM12/IOM12B機櫃IOM B連接埠1之間的機櫃對機櫃連線纜線、然後對任何其他IOM12/IOM12B機櫃重複此步驟。</p>
 </li>
 <li>
 <p>前往步驟4。</p>
@@ -7143,7 +7143,7 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>將最後一個IOM12機櫃IOM A連接埠3與最後一個IOM12機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜。</p>
+<p>將最後一個IOM12/IOM12B機櫃IOM A連接埠3與新的最後一個IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連接線纜。</p>
 <div class="paragraph">
 <p>使用SAS銅線Mini-SAS HD對Mini-SAS HD纜線。</p>
 </div>
@@ -7152,7 +7152,7 @@
 <p>針對IOM B重複上述子步驟</p>
 </li>
 <li>
-<p>如果您要熱新增另一個IOM12機櫃、請重複執行子步驟a和b</p>
+<p>如果您要熱新增另一個IOM12/IOM12B機櫃、請重複執行子步驟a和b</p>
 <div class="paragraph">
 <p>否則、請前往步驟4。</p>
 </div>
@@ -7201,7 +7201,7 @@
 <h2 id="完成熱新增">完成熱新增</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>如果您在準備將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</p>
+<p>如果您在準備將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</p>
 </div>
 <div class="paragraph">
 <p>您必須依照系統的指示、將機櫃連接好纜線。</p>
