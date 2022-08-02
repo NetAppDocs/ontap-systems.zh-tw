@@ -216,8 +216,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48552ddf-0925-4f88-8e93-ab1b00666489["雙節點無交換式叢集纜線"]
-
+.動畫：雙節點無交換式叢集佈線
+video::48552ddf-0925-4f88-8e93-ab1b00666489[panopto]
 +
 image::../media/drw_A400_TNSC-network-cabling.png[DRW A400 TNSC網路纜線]
 
@@ -245,8 +245,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=8fefba75-f395-4cf2-ba3c-ab1b00665870["交換式叢集纜線"]
-
+.動畫-交換式叢集纜線
+video::8fefba75-f395-4cf2-ba3c-ab1b00665870[panopto]
 +
 image::../media/drw_a400_switched_network_cabling.png[DRW A400交換式網路纜線]
 
@@ -277,8 +277,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 請使用下列動畫或圖例、將控制器連接至單一磁碟機櫃。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48d68897-c91d-47dc-b4b0-ab1b0066808a["將控制器連接至一個NS224磁碟機櫃"]
-
+.動畫-將控制器連接至一個NS224磁碟機櫃
+video::48d68897-c91d-47dc-b4b0-ab1b0066808a[panopto]
 +
 image::../media/drw_a400_one_ns224_shelves.png[DRW A400單一n224磁碟櫃]
 
@@ -302,8 +302,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 請使用下列動畫或圖例、將控制器連接至兩個磁碟機櫃。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5501c7bf-8b74-49e8-8067-ab1b00668804["將控制器連接至兩個NS224磁碟機櫃"]
-
+.動畫-將控制器連接至一個NS224磁碟機櫃
+video::5501c7bf-8b74-49e8-8067-ab1b00668804[panopto]
 +
 image::../media/drw_a400_two_ns224_shelves.png[DRW A400兩個新南224磁碟櫃]
 
@@ -327,8 +327,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 使用下列圖例將控制器連接至兩個磁碟機櫃。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=cbb0280e-708d-4365-92b6-ab1b006677ef["將控制器連接至SAS磁碟機櫃"]
-
+.動畫-將控制器連接至SAS磁碟機櫃
+video::cbb0280e-708d-4365-92b6-ab1b006677ef[panopto]
 +
 image::../media/drw_a400_three_ds224c_shelves.png[DRW A400三個ds224c機櫃]
 
@@ -354,8 +354,8 @@ image::../media/drw_a400_three_ds224c_shelves.png[DRW A400三個ds224c機櫃]
 如果您的系統有NS224磁碟機櫃、則磁碟櫃會預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["設定磁碟機櫃ID"]
-
+.動畫-設定磁碟機櫃ID
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 . 請確定您的筆記型電腦已啟用網路探索功能。
 +
@@ -363,8 +363,8 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a
 
 . 請使用下列動畫將筆記型電腦連線至管理交換器。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["將筆記型電腦連接至管理交換器"]
-
+.動畫-將筆記型電腦連接到管理交換器
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 選取ONTAP 列出的功能表圖示以探索：
 +
 image::../media/drw_autodiscovery_controler_select.png[選擇「自動探索控制器」]
@@ -378,10 +378,10 @@ image::../media/drw_autodiscovery_controler_select.png[選擇「自動探索控�
 
 NOTE: XXXXX是目標節點的系統序號。
 
+
+
 +
 系統管理程式隨即開啟。
-
-
 
 . 使用System Manager引導式設定、使用您在《_ NetApp ONTAP 資訊系統組態指南_》中收集的資料來設定您的系統。
 +
@@ -427,22 +427,22 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 . 請使用下列動畫來設定一或多個磁碟機櫃ID：
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["設定磁碟機櫃ID"]
-
-
-
+.動畫-設定磁碟機櫃ID
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
++
 如果您的系統有NS224磁碟機櫃、則磁碟櫃會預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
 
-+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b["設定磁碟機櫃ID"]
-
++
+.動畫-設定磁碟機櫃ID
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 +
 
 NOTE: 所示為FAS8300和FAS8700。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=50cdf200-ede1-45a9-b4b5-ab1b006698d7["開啟控制器電源"]
-
+.動畫-開啟控制器電源
+video::50cdf200-ede1-45a9-b4b5-ab1b006698d7[panopto]
 +
 
 NOTE: 初始開機最多可能需要八分鐘。

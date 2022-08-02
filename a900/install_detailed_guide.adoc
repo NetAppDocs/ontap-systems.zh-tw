@@ -214,8 +214,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0["動畫-連接雙節點無交換式叢集"^]
-
+.動畫-連接雙節點無交換器叢集
+video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
 +
 image::../media/drw_a900_tnsc_network_cabling.png[DRW A900 tnscc網路纜線]
 
@@ -294,8 +294,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d["動畫-交換式叢集的佈線"^]
-
+.動畫-連接交換式叢集
+video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
 +
 image::../media/drw_a900_switched_network_cabling.png[DRW A900交換式網路纜線]
 
@@ -382,10 +382,12 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 +
 .. 請使用下列動畫或圖片、將控制器連接至單一NS224磁碟機櫃。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e["動畫-單一NS224機櫃的佈線"^]
-
+.動畫-連接單一NS224機櫃
+video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto]
 +
 image::../media/drw_a900_NS224_one shelf_cabling.png[DRW A900 NS224單一機櫃纜線]
+
+
 
 +
 |===
@@ -395,8 +397,8 @@ image::../media/drw_a900_NS224_one shelf_cabling.png[DRW A900 NS224單一機櫃�
  a| 
 image:../media/oie_legend_icon_1_mb.png[""]
  a| 
-*** 將控制器A連接埠E2A連接至機櫃上NSM A的連接埠e0a。
-*** 將控制器A連接埠e10b連接至機櫃NSM B上的連接埠e0b。
+** 將控制器A連接埠E2A連接至機櫃上NSM A的連接埠e0a。
+** 將控制器A連接埠e10b連接至機櫃NSM B上的連接埠e0b。
 
 
 image:../media/oie_cable100_gbe_qsfp28.png[""]
@@ -408,8 +410,8 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
  a| 
 image:../media/oie_legend_icon_2_lo.png[""]
  a| 
-*** 將控制器B連接埠E2A連接至機櫃NSM B上的連接埠e0A。
-*** 將控制器B連接埠e10b連接至機櫃上NSM A的連接埠e0b。
+** 將控制器B連接埠E2A連接至機櫃NSM B上的連接埠e0A。
+** 將控制器B連接埠e10b連接至機櫃上NSM A的連接埠e0b。
 
 
 image:../media/oie_cable100_gbe_qsfp28.png[""]
@@ -417,6 +419,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 100 GbE纜線
 
 |===
++
 .. 若要完成系統設定、請參閱 <<Step 5: Complete system setup and configuration>>。
 
 
@@ -443,8 +446,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 請使用下列動畫或圖表、將控制器連接至兩個NS224磁碟機櫃。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a["動畫-連接兩個NS224磁碟櫃"^]
-
+.動畫-連接兩個NS224磁碟櫃
+video::34098e39-73ad-45de-9af7-ac5b0032ea9a[panopto]
 +
 image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[""]
 
@@ -508,8 +511,8 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6["動畫：設定SAS或NVMe磁碟機櫃ID"^]
-
+.動畫-設定SAS或NVMe磁碟機櫃ID
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
 image::../media/drw_power-on_set_shelf_ID_set.png[在設定機櫃ID集上啟動的DRW]
 
@@ -557,8 +560,8 @@ image:../media/legend_icon_05.png[""]
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 . 開啟兩個節點的電源開關。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a905e56e-c995-4704-9673-adfa0005a891["動畫：開啟控制器的電源"^]
-
+.動畫-開啟控制器的電源
+video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
 image::../media/drw_a900_power-on.png[DRW A900開機]
 
@@ -572,8 +575,8 @@ NOTE: 初始開機最多可能需要八分鐘。
 
 . 請使用下列動畫將筆記型電腦連線至管理交換器。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b["動畫：將筆記型電腦連接至管理交換器"^]
-
+.動畫-將筆記型電腦連接到管理交換器
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 +
 image::../media/dwr_laptop_to_switch_only.png[DWR筆記型電腦只能切換]
 
@@ -642,8 +645,8 @@ image::../media/drw_9000_cable_console_switch_controller.png[DRw 9000纜線主�
 NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6["動畫：設定SAS或NVMe磁碟機櫃ID"^]
-
+.動畫-設定SAS或NVMe磁碟機櫃ID
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
 image::../media/drw_power-on_set_shelf_ID_set.png[在設定機櫃ID集上啟動的DRW]
 
@@ -691,8 +694,8 @@ image:../media/legend_icon_05.png[""]
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 . 開啟兩個節點的電源開關。
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b["動畫：開啟控制器的電源"^]
-
+.動畫-開啟控制器的電源
+video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto]
 
 
 image::../media/drw_a900_power-on.png[DRW A900開機]

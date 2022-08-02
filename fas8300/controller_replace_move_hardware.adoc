@@ -21,8 +21,8 @@ summary: 若要更換控制器模組硬體、您必須移除受損的控制器�
 
 您可以使用下列動畫、圖例或書面步驟、將控制器模組從機箱中移除。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5["卸下控制器模組"]
-
+.動畫-移除控制器模組
+video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto]
 . 如果您尚未接地、請正確接地。
 . 釋放電源線固定器、然後從電源供應器拔下纜線。
 . 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
@@ -64,8 +64,8 @@ image::../media/drw_8300_empty_riser_remove.png[已移除的DRw 8300空擴充卡
 
 您可以使用下列動畫、圖例或書面步驟、將電源供應器移至更換的控制器模組。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=92060115-1967-475b-b517-aad9012f130c["移動電源供應器"]
-
+.動畫-移動電源供應器
+video::92060115-1967-475b-b517-aad9012f130c[panopto]
 image::../media/drw_A400_psu.png[DRW A400 PSU]
 
 . 移除電源供應器：
@@ -95,8 +95,8 @@ NOTE: 為避免損壞內部連接器、請勿在將電源供應器滑入系統�
 
 您可以使用下列動畫、圖例或書面步驟、將NVDIMM電池從受損的控制器模組移至更換的控制器模組。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=94d115b2-b02a-4234-805c-aad9012f204c["移動NVDIMM電池"]
-
+.動畫-移動NVDIMM電池
+video::94d115b2-b02a-4234-805c-aad9012f204c[panopto]
 . 打開通風管：
 +
 .. 將通風管側邊的鎖定彈片朝控制器模組中央按下。
@@ -126,8 +126,8 @@ NOTE: 請勿將電池纜線插回主機板、直到接到指示為止。
 
 您可以使用下列動畫、圖例或書面步驟、將開機媒體從受損的控制器模組移至更換的控制器模組。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=2a14099c-85de-4a84-867c-aad9012efac8["移動開機媒體"]
-
+.動畫-移動開機媒體
+video::2a14099c-85de-4a84-867c-aad9012efac8[panopto]
 image::../media/drw_A400_Replace-boot_media.png[DRW A400更換開機媒體]
 
 . 從控制器模組中找出並移除開機媒體：
@@ -160,14 +160,14 @@ image::../media/drw_A400_Replace-boot_media.png[DRW A400更換開機媒體]
 
 移動PCIe擴充卡1和2（左和中擴充卡）：
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f4ee1d4d-6029-4fe6-a063-aad9012f170b["移動PCI擴充卡1和2"]
-
+.動畫-移動PCI擴充卡1和2
+video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto]
 image::../media/drw_A400_Replace-PCIe-cards.png[DRW A400取代PCIe卡]
 
 移動夾層卡和擴充卡3（右擴充卡）：
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b0c3b575-3434-4e00-a421-aad9012f2e9e["移動夾層卡和擴充卡3"]
-
+.動畫-移動夾層卡和擴充卡3
+video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto]
 image::../media/drw_A400_Replace-mezz-card.png[DRW A400更換夾層卡]
 
 . 將PCIe擴充卡從受損的控制器模組移至更換的控制器模組：
@@ -205,8 +205,8 @@ image::../media/drw_A400_Replace-mezz-card.png[DRW A400更換夾層卡]
 
 您可以使用下列動畫、圖例或書面步驟、將快取模組移至新的控制器模組。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d6a43902-0e78-40c3-a2bd-aad9012f5b94["移動快取模組"]
-
+.動畫-移動快取模組
+video::d6a43902-0e78-40c3-a2bd-aad9012f5b94[panopto]
 image::../media/drw_A400_Replace-flashcache.png[DRW A400取代快閃快取]
 
 . 如果您尚未接地、請正確接地。
@@ -231,8 +231,8 @@ image::../media/drw_A400_Replace-flashcache.png[DRW A400取代快閃快取]
 
 您可以使用下列動畫、圖例或書面步驟、將受損的控制器模組中的DIMM移至更換的控制器模組。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=717b52fa-f236-4f3d-b07d-aad9012f51a3["移動DIMM"]
-
+.動畫-移動DIMM
+video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto]
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[DRW A400更換NVDIMM DIMM]
 
 . 找到控制器模組上的DIMM。
@@ -272,8 +272,8 @@ DIMM可緊密裝入插槽、但應能輕鬆裝入。如果沒有、請重新將D
 
 您可以使用下列動畫、圖例或書面步驟、在機箱中安裝更換的控制器模組。
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b["安裝控制器模組"]
-
+.動畫-安裝控制器模組
+video::9249fdb8-1522-437d-9280-aae10007c97b[panopto]
 image::../media/drw_A400_Install_controller_source.png[DRW A400安裝控制器來源]
 
 . 如果您尚未這麼做、請關閉通風管。

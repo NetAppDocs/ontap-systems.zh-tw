@@ -117,7 +117,10 @@ HA狀態的值可以是下列其中一項：
 +
 「DEEV_NAME」可以是前述步驟所識別的任何一個連接埠和裝置。
 
-.. 檢查輸出結果、如果適用、只選取您要執行的測試：「ldiag設備modify -dev_dev_name_-selection only（僅限選擇）」會停用您不想為裝置執行的所有其他測試。
+.. 檢查輸出、如果適用、請僅選取您要執行的測試：「ldiag設備modify -dev_name_-selection only」（僅限ldiag設備修改-dev_dev_name_選擇）
++
+「僅限選取」會停用您不想為裝置執行的所有其他測試。
+
 .. 執行選取的測試：「ldiag裝置執行-dev_name_」
 +
 測試完成後、會顯示下列訊息：

@@ -13,9 +13,14 @@ summary: 當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指�
 [role="lead"]
 當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。
 
-您可能需要先清除快取模組的內容、然後再進行更換。。雖然快取模組上的資料已加密、但您可能想要清除受損快取模組中的任何資料、並確認快取模組沒有資料：清除快取模組上的資料：「System Controller flash-cache secfire-erase run」（系統控制器快閃快取安全清除執行）。驗證資料是否已從快取模組中清除：「System Controller flash-cache secure-erase show -node_name」（系統控制器快閃快取安全清除show -node_name）
+您可能需要先清除快取模組的內容、然後再進行更換。
 
-+輸出應顯示快取模組狀態為「已清除」。
+* 雖然快取模組上的資料已加密、但您可能想要清除受損快取模組中的任何資料、並確認快取模組沒有資料：
+* 清除快取模組上的資料：「系統控制器快閃快取安全清除執行」
+* 驗證資料是否已從快取模組中清除：「System Controller flash-cache secure-erase show -node_name」（系統控制器快閃快取安全清除show -node_name）
+
+
+輸出應顯示快取模組狀態為「已清除」。
 
 * 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
