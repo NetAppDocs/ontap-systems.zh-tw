@@ -1504,9 +1504,7 @@
   <block id="2b1646515c4dcacd96acd971239a6f14" category="paragraph">若要更換機箱、您必須將控制器模組和SSD磁碟機從受損機箱移至更換機箱、然後從設備機架或系統機櫃中移除受損機箱、並將替換機箱安裝到位。</block>
   <block id="c465df44865c02db52bc6f37023b5b75" category="list-text">此程序的撰寫假設是您將SSD和控制器模組移至新機箱、而更換機箱是NetApp的新元件。</block>
   <block id="abb3159815c7d305ec1a9697a5ec0fef" category="summary">若要更換控制器模組、您必須移除受損的控制器、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
-  <block id="535d86d4b7bd76433b67b69b528e1319" category="doc">更換主控制器模組硬體AFF - S4A700s</block>
   <block id="e2f9fc0be7a0bec719378633fe5d0324" category="section-title">步驟1：移除控制器模組</block>
-  <block id="a3d92d77da598c2538c04939f7322e49" category="list-text">如果您尚未接地、請自行控制。</block>
   <block id="d9119345c9a007e36472326a6510319b" category="section-title">步驟2：移動NVRAM卡</block>
   <block id="63f3a7c41a55885608d548f506cf6e84" category="paragraph">在控制器更換程序中、您必須從受損控制器模組的擴充卡1中移除NVRAM卡、並將擴充卡安裝到更換控制器模組的擴充卡1中。將受損的控制器模組中的DIMM移至更換的控制器模組之後、您只能將擴充卡1重新安裝到更換的控制器模組。</block>
   <block id="115022fcae65fb80fb84f7c0d8cc8840" category="list-text">從更換的控制器模組中移除NVRAM擴充卡。</block>
@@ -7338,4 +7336,5 @@
   <block id="e4fe2ba20af64acaf45fc4ff2fdf0009" category="video-title">動畫-連接單一NS224機櫃的纜線- ONTAP 僅供9.8或更新版本之用</block>
   <block id="438bbae9c36667383085b6ae9e94d71f" category="video-title">動畫-連接兩個NS224磁碟櫃- ONTAP 不含更新版本</block>
   <block id="45fe4cb2226f52988b50d1f171612f5b" category="video-title">動畫- AFF 安裝及設定一套功能不只是功能性的功能、還能安裝及設定一套功能</block>
+  <block id="a6528a788f88cf757ff6bbfe3f5da074" category="doc">更換控制器模組硬體AFF - S4A700s</block>
 </blocks>
