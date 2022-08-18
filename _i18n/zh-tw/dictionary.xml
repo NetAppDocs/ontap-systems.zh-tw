@@ -3491,7 +3491,6 @@
   <block id="e721fed5752af28a811f95c9517647d5" category="paragraph">磁碟櫃ID會持續閃爍、而操作員顯示面板的黃色LED會持續亮起、直到磁碟櫃重新開機為止。</block>
   <block id="114b5f5f60d5305cae68f7358becbb08" category="list-text">針對您要熱新增的每個磁碟櫃、重複執行子步驟a到d。</block>
   <block id="7d1f085b961baef4ee505ff0b202f8af" category="paragraph">您可以將SAS連線（即機櫃對機櫃和控制器對堆疊）連接至熱新增磁碟櫃、以便它們能夠連線至系統。</block>
-  <block id="25144a0fdc573490379af60a79ce8953" category="paragraph">您必須符合中的要求 <block ref="b97fb0f13d8cc81479b53e89d9178105" category="inline-xref-macro-rx"></block> 並依照中的指示、為每個磁碟櫃設定機櫃ID <block ref="1559829c998f121990e6747d77c5c076" category="inline-xref-macro-rx"></block>。</block>
   <block id="634f97c34a23666fd57c06fc0817e89c" category="inline-link-macro">機櫃對機櫃SAS連線規則</block>
   <block id="3580003f42a2219bf8368586293ce5d1" category="list-text">如需機櫃對機櫃「標準」纜線和機櫃對機櫃「雙寬」纜線的說明和範例、請參閱 <block ref="cc9fe1e757b2015fb556613621f1b2cf" category="inline-link-macro-rx"></block>。</block>
   <block id="94b940d24fc57c2a1a1a40bc68523940" category="list-text">如需如何閱讀工作表以纜線連接控制器與堆疊的連線、請參閱 <block ref="32f1048d76ed4ef07349228b731694c0" category="inline-link-macro-rx"></block> 或 <block ref="22de937f8b92c8373761b256e9819f4a" category="inline-link-macro-rx"></block>。</block>
@@ -7135,8 +7134,6 @@
   <block id="4a6c06310d2bcd1c9758407cb59a423d" category="list-text">具有IOM12/IOM12B模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。</block>
   <block id="1297a8f1ac3fcf90ab0c70ff5e47b71d" category="paragraph">此程序並未解決混合堆疊的問題：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。</block>
   <block id="0712df39e8d2ca11a74df9f3fe275482" category="list-text">系統可以使用IOM12/IOM12B模組、將多路徑和四路徑磁碟櫃堆疊在一起。</block>
-  <block id="fb510c511f697ba0b554724f2d55ce12" category="section-title">使用IOM12/IOM12B模組安裝磁碟櫃以進行熱新增</block>
-  <block id="eef12ccd7f9c2345b5a3e069f9088bd0" category="section-title">使用IOM12/IOM12B模組來連接磁碟櫃的纜線、以進行熱新增</block>
   <block id="5b07090bafdc58182b6f01852ecbad05" category="summary">完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至使用IOM12/IOM12B模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。</block>
   <block id="5d57c73dbe661f28ff4ab36825900d40" category="doc">控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM1/IOM12B2模組</block>
   <block id="51432cf63c198a0a11bab993299ae7fd" category="paragraph">工作表範例使用兩個四埠SAS HBA的組態、以及兩個具有IOM12/IOM12B模組的磁碟櫃堆疊。</block>
@@ -7337,4 +7334,10 @@
   <block id="438bbae9c36667383085b6ae9e94d71f" category="video-title">動畫-連接兩個NS224磁碟櫃- ONTAP 不含更新版本</block>
   <block id="45fe4cb2226f52988b50d1f171612f5b" category="video-title">動畫- AFF 安裝及設定一套功能不只是功能性的功能、還能安裝及設定一套功能</block>
   <block id="a6528a788f88cf757ff6bbfe3f5da074" category="doc">更換控制器模組硬體AFF - S4A700s</block>
+  <block id="d39ffb80309f658b2cc5987e7d3fe12b" category="section-title">使用IOM12/IOM12B模組安裝磁碟櫃以進行熱新增</block>
+  <block id="7c100d04606be0913d1347f47c7198ab" category="section-title">使用IOM12/IOM12B模組的纜線磁碟櫃進行熱新增</block>
+  <block id="c920d4841ecd46b57d9a50e7295a2153" category="inline-link-macro">使用IOM12模組熱新增磁碟櫃的需求</block>
+  <block id="36779ed778ea1fac61fae3be46917d43" category="inline-link-macro">使用IOM12模組安裝磁碟櫃以進行熱新增</block>
+  <block id="56ccacf68c60aa589cdd947ffabc6a40" category="paragraph">您必須符合中的要求 <block ref="38d5024537883b0bd86511e0b5e50dba" category="inline-link-macro-rx"></block> 並依照中的指示、為每個磁碟櫃設定機櫃ID <block ref="2957551c96808bfde01acb853ddbc0af" category="inline-link-macro-rx"></block>。</block>
+  <block id="4ec6a95192d18718a540794417c8fa63" category="sidebar">NetApp Active IQ Digital Advisor</block>
 </blocks>

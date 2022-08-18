@@ -316,12 +316,12 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 
 
 
-== 使用IOM12/IOM12B模組來連接磁碟櫃的纜線、以進行熱新增
+== 使用IOM12/IOM12B模組的纜線磁碟櫃進行熱新增
 
 [role="lead"]
 您可以將SAS連線（即機櫃對機櫃和控制器對堆疊）連接至熱新增磁碟櫃、以便它們能夠連線至系統。
 
-您必須符合中的要求 <<Requirements for hot-adding disk shelves with IOM12 modules>> 並依照中的指示、為每個磁碟櫃設定機櫃ID <<Installing disk shelves with IOM12 modules for a hot-add>>。
+您必須符合中的要求 link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules["使用IOM12模組熱新增磁碟櫃的需求"] 並依照中的指示、為每個磁碟櫃設定機櫃ID link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add["使用IOM12模組安裝磁碟櫃以進行熱新增"]。
 
 .關於這項工作
 * 如需機櫃對機櫃「標準」纜線和機櫃對機櫃「雙寬」纜線的說明和範例、請參閱 link:install-cabling-rules.html#shelf-to-shelf-connection-rules["機櫃對機櫃SAS連線規則"]。
