@@ -7095,7 +7095,6 @@
   <block id="0455216bece3ce620e2fd5c84b24a523" category="list-text">在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12/IOM12B磁碟櫃的單一速度轉換會描述為：</block>
   <block id="988fffa48b6a32203597193ccfb194d0" category="paragraph">內建儲存連接埠0b是內部儲存設備（擴充器）的連接埠、因為它連接到熱新增的IOM12/IOM12B機櫃（堆疊中的最後一個機櫃）、IOM12/IOM12B機櫃群組會一起保存、並透過堆疊和內建IOM12E儲存設備維持單一轉換。</block>
   <block id="22c141c57159ea5a9cf5ecee1f8b4145" category="list-text">您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12/IOM12B磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。</block>
-  <block id="74e72cd0b8695a83723abedf9f9e8d92" category="list-text">初始IOM12/IOM12B機櫃（IOM12機櫃連接至邏輯上最後一個IOM6機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</block>
   <block id="f40ad7d263effd48cd15f5ec54dc2775" category="list-text">您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。</block>
   <block id="5c5d06fa180884eea62ba831b980ed33" category="list-text">您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至連接橋MetroCluster 接的IOM6磁碟櫃堆疊。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d7f99cbbf1b9ba05ea3a6ec89eae8b6" category="list-text">如果您要熱新增的IOM12/IOM12B機櫃是IOM6堆疊中新增的初始IOM12/IOM12B機櫃、表示IOM6機櫃堆疊中沒有其他IOM12/IOM12B機櫃、請完成適用的子步驟。</block>
@@ -7340,4 +7339,7 @@
   <block id="36779ed778ea1fac61fae3be46917d43" category="inline-link-macro">使用IOM12模組安裝磁碟櫃以進行熱新增</block>
   <block id="56ccacf68c60aa589cdd947ffabc6a40" category="paragraph">您必須符合中的要求 <block ref="38d5024537883b0bd86511e0b5e50dba" category="inline-link-macro-rx"></block> 並依照中的指示、為每個磁碟櫃設定機櫃ID <block ref="2957551c96808bfde01acb853ddbc0af" category="inline-link-macro-rx"></block>。</block>
   <block id="4ec6a95192d18718a540794417c8fa63" category="sidebar">NetApp Active IQ Digital Advisor</block>
+  <block id="398a3c8d2269f5f0bf21e8be014ed54c" category="list-text">當您將IOM12模組的磁碟櫃熱新增至含有IOM6模組的磁碟櫃堆疊時、整個堆疊的效能會以6 Gbps（以最低的通用速度執行）運作。</block>
+  <block id="75e1d900c724ecf27f282e3bba238d06" category="paragraph">如果您要熱新增的磁碟櫃是從IOM3或IOM6模組升級至IOM12模組的磁碟櫃、則該堆疊的運作速度為12 Gbps；不過、磁碟櫃背板和磁碟功能可將磁碟效能限制在3 Gbps或6 Gbps。</block>
+  <block id="240920b675de649a14eaba01757477c0" category="list-text">初始IOM12/IOM12B機櫃（連接至邏輯上最後IOM6機櫃的機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</block>
 </blocks>
