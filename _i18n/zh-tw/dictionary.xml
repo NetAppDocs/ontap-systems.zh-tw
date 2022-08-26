@@ -3148,7 +3148,6 @@
   <block id="45effe123bc9d7b38324ac0170a7d2ed" category="list-text">將替換I/O模組輕推入插槽、直到有字母和編號的I/O CAM栓開始與I/O CAM銷接合、然後將I/O CAM栓完全推入機箱、將模組鎖定到位。</block>
   <block id="a8869e142255ff80f45be4817f469087" category="section-title">步驟3：更換I/O模組後、重新啟動控制器</block>
   <block id="bbee62c98bf71c87d77b3d48e5cacaff" category="paragraph">更換I/O模組之後、您必須重新啟動控制器模組。</block>
-  <block id="8c2fb795497456b969ba9307ef6f84c8" category="list-text">在載入程式提示字元中、重新啟動節點：_by_</block>
   <block id="b40d85db7a9de91cff53c5663c76daaf" category="list-text">使節點恢復正常運作：「儲存容錯移轉恢復-節點減損節點名稱」</block>
   <block id="ee509c1ffca70e9f258ad73c3116cf37" category="doc">機載加密金鑰的關機前檢查- AFF 32：A900</block>
   <block id="127cae73d2b4d7758b4c0a0e3f49ba5f" category="section-title">更新版本ONTAP</block>
@@ -4567,8 +4566,6 @@
   <block id="68f1a7b941dc9e6a48709297bda51c0f" category="doc">新增X91148A模組之總覽- AFF NETAPP 9000</block>
   <block id="c0231814de48c33dacc879427cd2b0c4" category="list-text">若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。</block>
   <block id="67217a13f69bc00335677c551451bc10" category="doc">更換I/O模組AFF - FASA700和FAS9000</block>
-  <block id="fe93c3e28753ccd59e8b3dc55497b074" category="section-title">步驟3：更換PCIe模組後、重新啟動控制器</block>
-  <block id="60f0e4a73edf1a4e40be1d8fff5656f6" category="paragraph">更換PCIe模組之後、您必須重新啟動控制器模組。</block>
   <block id="074956b98e6ab62b7ae2bf9b8699df64" category="list-text">如果您的系統設定為支援40 GbE NIC或內建連接埠上的10 GbE叢集互連和資料連線、請使用「維護模式」中的「nicadmin convert」命令、將這些連接埠轉換成10 GbE連線。</block>
   <block id="30c36d0c10aef968ba45a8742ec6c704" category="doc">以雙節點MetroCluster 的不全功能組態切換回Aggregate：AFF 還原A700和FAS9000</block>
   <block id="1544c9529e8061df2e6df349a1585acc" category="summary">NVMe SSD FlashCache模組（FlashCache或快取模組）僅位於FAS9000系統插槽6的NVRAM10模組前方。從S得9.4開始ONTAP 、您可以從相同或不同支援廠商、將相同容量的快取模組熱交換出。</block>
@@ -6966,7 +6963,6 @@
   <block id="3e5fda4bdb63c28cc3aa53cadbde1129" category="doc">更換DIMM - FAS9500</block>
   <block id="6a58b2807f942e88a255882209bad046" category="sidebar">快取模組熱交換</block>
   <block id="50a5f31124b37f0e6f0175b4691d290a" category="paragraph">如果您的平台模式含有內部磁碟櫃、則內部磁碟櫃和外部附加磁碟櫃的機櫃ID必須是唯一的。</block>
-  <block id="5db74a009a275aefa3af112cb922e082" category="list-text">在載入程式提示字元中、重新啟動節點：_by_附註：這會重新初始化PCIe卡和其他元件、然後重新啟動節點。</block>
   <block id="208e6af1006f73ba3b37a7e05e3692cd" category="list-text">使節點恢復正常運作：「儲存容錯移轉恢復-節點_減損節點名稱_」</block>
   <block id="837fcf17f123dccb1301f252ade8a58e" category="admonition">如果您的系統採用雙節點MetroCluster 的功能不全、您必須依照下一步所述、將集合體切換回原位。</block>
   <block id="abc219c929a34cf7b62e36c2503b63ac" category="video-title">動畫-移除控制器模組</block>
@@ -7342,4 +7338,19 @@
   <block id="398a3c8d2269f5f0bf21e8be014ed54c" category="list-text">當您將IOM12模組的磁碟櫃熱新增至含有IOM6模組的磁碟櫃堆疊時、整個堆疊的效能會以6 Gbps（以最低的通用速度執行）運作。</block>
   <block id="75e1d900c724ecf27f282e3bba238d06" category="paragraph">如果您要熱新增的磁碟櫃是從IOM3或IOM6模組升級至IOM12模組的磁碟櫃、則該堆疊的運作速度為12 Gbps；不過、磁碟櫃背板和磁碟功能可將磁碟效能限制在3 Gbps或6 Gbps。</block>
   <block id="240920b675de649a14eaba01757477c0" category="list-text">初始IOM12/IOM12B機櫃（連接至邏輯上最後IOM6機櫃的機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</block>
+  <block id="966c8588db44d6fc5bd740f02c4aeb91" category="admonition">如果新的I/O模組與故障模組的機型不同、您必須先重新啟動BMC。</block>
+  <block id="fac432b1efa495a7ca9205e962038529" category="list-text">如果更換模組的機型與舊模組不同、請重新啟動BMC：</block>
+  <block id="741ed5c64ad3d534bfa3f19ff5509d9b" category="list-text">在載入程式提示字元中、變更為進階權限模式：「priv set advanc進 階」</block>
+  <block id="b40f61c6dd95c940867e3e5d99f099be" category="list-text">重新開機BMC：「p reboot"（p重新開機）</block>
+  <block id="7ec1cacfbf4271c9864b8e40717b1f8f" category="list-text">在載入程式提示字元中、重新啟動節點：「bye」</block>
+  <block id="d73758375aa4c2c0d806b85cf93229be" category="sidebar">FAS9500-Install and Setup</block>
+  <block id="fd44bc5547a31fa6a44a5dba383710f5" category="sidebar">FAS9500維護</block>
+  <block id="ee6cf51d21f40cc78c0a70dbb1b8d104" category="sidebar">FAS9500開機媒體</block>
+  <block id="33a725da473f57f9db39e8cb90fb8ec1" category="sidebar">FAS9500機箱</block>
+  <block id="cea781d942e6e6feafc25284d025750b" category="sidebar">FAS9500控制器模組</block>
+  <block id="4ea03be5210b1deef6915fc966939eb4" category="sidebar">安裝與設定AFF</block>
+  <block id="9dac2c892993fb8afd0257c050073a7a" category="sidebar">VA900維護AFF</block>
+  <block id="fe673aff2ce9eb5c6eaf841f4ec88b30" category="sidebar">VA900開機媒體AFF</block>
+  <block id="6cff7e5493433d24015d6ef5a8566b38" category="sidebar">VA900機箱AFF</block>
+  <block id="7d1c80f318f9bf16deac2495abe88a7e" category="sidebar">VA900控制器模組AFF</block>
 </blocks>
