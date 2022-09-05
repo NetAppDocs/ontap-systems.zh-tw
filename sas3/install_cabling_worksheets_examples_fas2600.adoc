@@ -1,17 +1,20 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-fas2600.html 
 sidebar: sidebar 
-keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, onboard storage 
-summary: 您可以使用完整的控制器對堆疊佈線工作表和佈線範例、將AFF 內部FAS 儲存的纜線架構用於諸如AFF 但不限於E4A200、AFF EVA220、FAS2600系列和FAS2700平台等。此資訊不適用於FAS25XX平台。 
+keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, internal storage 
+summary: 您可以將完整的控制器對堆疊佈線工作表和佈線範例、用於內部儲存設備的纜線平台、包括FAS2600系列、AFF E4A200、FAS2700系列、AFF E4A220、 及更新版本。 
 ---
-= 包含內建儲存設備的控制器對堆疊佈線工作表與線路設計範例AFF 、FAS 適用於搭載IOM12/IOM12B模組的機櫃
+= 控制器對堆疊佈線工作表與佈線範例、適用於具有內部儲存設備的平台、也就是採用IOM12/IOM12B模組的機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用完整的控制器對堆疊佈線工作表和佈線範例、將AFF 內部FAS 儲存的纜線架構用於諸如AFF 但不限於E4A200、AFF EVA220、FAS2600系列和FAS2700平台等。此資訊不適用於FAS25XX平台。
+您可以將完整的控制器對堆疊佈線工作表和佈線範例、用於內部儲存設備的纜線平台、包括FAS2600系列、AFF E4A200、FAS2700系列、AFF E4A220、 及更新版本。
+
+
+NOTE: 此資訊不適用於FAS25XX平台。
 
 * 如有需要、請參閱 link:install-cabling-rules.html["SAS纜線配置規則"] 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、
 * 佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器0b連接埠與控制器0A連接埠的連線。
@@ -26,7 +29,7 @@ image::../media/drw_fas2600_cable_color_key.png[DRW fas2600纜線色彩金鑰]
 
 
 
-== 採用多重路徑HA組態的內建儲存設備、搭配單一多重機櫃堆疊的整套支援功能AFF FAS
+== 採用多重路徑HA組態的內部儲存平台、只需一個多重機櫃堆疊即可
 
 以下工作表和佈線範例使用連接埠配對0A/0b：
 

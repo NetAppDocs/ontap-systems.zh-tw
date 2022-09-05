@@ -1744,7 +1744,6 @@
   <block id="4b0f11237c7fb298046b87e4e5edf9a0" category="paragraph">您可以執行「儲存磁碟show -disfed'命令來驗證磁碟機是否故障。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。</block>
   <block id="49499bb4b11cb28cd05725cd5cafadd0" category="paragraph">安裝最新版的DQP可讓您的系統辨識及使用新的合格磁碟機。如此可避免系統事件訊息、因為無法辨識磁碟機、因此無法取得非最新的磁碟機資訊並防止磁碟分割。此外、DQP也會通知您非最新的磁碟機韌體。</block>
   <block id="27ad121f85fccbb2fbae4c00d3c38810" category="inline-link">NetApp下載：磁碟認證套件</block>
-  <block id="14baf7cbaa5e214a8313f9ae6e6b8214" category="paragraph"><block ref="14baf7cbaa5e214a8313f9ae6e6b8214" category="inline-link-rx"></block></block>
   <block id="487dc73655e4dd592558124d6eac1709" category="list-text">*最佳實務做法：*最佳實務做法是在更換FRU元件之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。</block>
   <block id="674592e1267199051af8d213dd556031" category="paragraph">請勿將韌體還原至不支援機櫃及其元件的版本。</block>
   <block id="6805cea5c8147284b27002a3dfc8e4af" category="inline-link">NetApp下載：磁碟櫃韌體</block>
@@ -3223,7 +3222,6 @@
   <block id="f08d538e8d0696dd4cb22a3bd43ea21e" category="admonition">磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。</block>
   <block id="06211175fb33cf5331c4d5602635409b" category="list-text">最佳實務做法是在熱交換磁碟機之前、先安裝目前版本的磁碟認證套件（DQP）。</block>
   <block id="78bb11bcada4cd8b9e64f9c51fb16d4f" category="paragraph">安裝最新版的DQP可讓您的系統辨識並使用新的合格磁碟機、因此可避免系統事件訊息顯示非最新磁碟機資訊。您也可以避免因為無法識別磁碟機、而導致磁碟分割的可能預防。此外、DQP也會通知您非最新的磁碟機韌體。</block>
-  <block id="1b6d02ae9b640ed72271cd7270a2f643" category="paragraph"><block ref="1b6d02ae9b640ed72271cd7270a2f643" category="inline-link-rx"></block></block>
   <block id="86ad419f67c39ef656a84496cc5b09d1" category="list-text">最佳實務做法是在新增磁碟櫃、磁碟櫃FRU元件或SAS纜線之前、先在系統上安裝目前版本的磁碟櫃（IOM）韌體和磁碟機韌體。</block>
   <block id="64aac8c84cbc00cef2f3932cafe39d7e" category="paragraph">如需最新版本的韌體、請參閱NetApp支援網站。</block>
   <block id="90a2ee29d5c0a6782e15c4ba1d47ebca" category="paragraph"><block ref="90a2ee29d5c0a6782e15c4ba1d47ebca" category="inline-link-rx"></block></block>
@@ -3369,8 +3367,6 @@
   <block id="ae021b7a41fefa439d27646e97295bd4" category="list-text">針對每個堆疊重複執行子步驟a到c。</block>
   <block id="d143e0ce0d39e2f27344d050a54201a7" category="list-text">識別控制器SAS連接埠配對、以便用來連接控制器與堆疊的連接線。</block>
   <block id="11eaf61422cf68224e34ee6875a0eaf8" category="list-text">請查看控制器對堆疊佈線工作表和佈線範例、以瞭解您的組態是否有完整的工作表。</block>
-  <block id="c938619c45a867da395e1f0213cdb4b0" category="inline-link-macro">控制器對堆疊佈線工作表和佈線範例、適用於常見AFF 的E4A200、AFF E4A220、FAS2600系列和FAS2700組態</block>
-  <block id="8298bd1953102e090c7ee364e7677f25" category="paragraph"><block ref="8298bd1953102e090c7ee364e7677f25" category="inline-link-macro-rx"></block></block>
   <block id="157171cdb89a7c3ef4163f5ab09c52b9" category="inline-link-macro">通用多重路徑HA組態的控制器對堆疊佈線工作表和佈線範例</block>
   <block id="5d50d12c536a18b90ff261c6cb3dd2ff" category="paragraph"><block ref="5d50d12c536a18b90ff261c6cb3dd2ff" category="inline-link-macro-rx"></block></block>
   <block id="5c2ad194cf23987186d5cbe5c49ce2a6" category="inline-link-macro">控制器對堆疊佈線工作表和佈線範例、適用於使用兩個四埠SAS HBA的四路徑HA組態</block>
@@ -3420,7 +3416,6 @@
   <block id="dff1dc2f7a2fbdf73084eb54bb572edd" category="list-text">確認頻內ACP已自動啟用。《老舊的ACP秀》</block>
   <block id="cf4c2211d1e7e05578f4d644efc4b0f5" category="paragraph">在輸出中、每個節點的「頻內」會列為「'active'」。</block>
   <block id="7a48725aae87c25c20800da734657f8d" category="summary">您可以使用此範例來引導您瞭解如何使用IOM12模組來讀取及套用完整的工作表、以纜線連接多路徑連線的磁碟機櫃的控制器對堆疊連線。</block>
-  <block id="34a29535255d4c9658cf8667fb70f827" category="paragraph">您的HA配對或單一控制器組態不能是AFF 一套E4A200、AFF E4A220、FAS2600系列或FAS2700系統。這些系統使用獨特的工作表：</block>
   <block id="f590bcd598fe8232b2185b3611156cca" category="admonition">如果連接埠配對數量超過系統中的堆疊纜線數量、最佳做法是跳過連接埠配對、以最佳化系統上的SAS連接埠。藉由最佳化SAS連接埠、您可以最佳化系統效能。</block>
   <block id="cd0bbcf8c45ff326b72c889eab8250c0" category="paragraph">連接埠配對使用工作表中的每個其他連接埠配對進行纜線連接：1A/2b和1c/2D。</block>
   <block id="1924d3ee43c267ede3f6ed98969b8a41" category="image-alt">已跳過的範本已跳過網路工作表mpha</block>
@@ -3471,7 +3466,6 @@
   <block id="bea8d9a74a333358da573c569f901a16" category="paragraph">熱新增磁碟櫃之後、您必須更換SAS銅線、以用於堆疊中其餘的磁碟櫃對磁碟櫃連線、以及控制器對堆疊連線、使堆疊符合中的規則 <block ref="981073c6c3d6ceff62f8d350a20e9ca2" category="inline-link-macro-rx"></block>。這表示您必須訂購適當數量的Mini-SAS HD SAS光纖纜線。</block>
   <block id="91d741bb049c9a466853b4ad38bb8ca8" category="paragraph">在熱新增磁碟櫃之前、您應該先熟悉此程序的各個層面和最佳實務做法。</block>
   <block id="f0e56e4ad757d6fad89dfcfe1aa12d88" category="paragraph">若為單一路徑HA和單一路徑組態（適用AFF 對象為E4A200、AFF E4A220、FAS2600系列和FAS2700系統）、您可將磁碟櫃熱新增至堆疊的末端、而該堆疊沒有控制器連線。</block>
-  <block id="1367c0042a0771df50820889203cf147" category="paragraph">如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表中的系統組態會顯示為「多路徑」。</block>
   <block id="23799cee6c2d33512d5d7c2c4dd066da" category="list-text">此程序假設您的組態使用頻內ACP。</block>
   <block id="0a21ef57c079b8fb55adaac84e5c7dc9" category="paragraph">對於啟用頻內ACP的組態、頻內ACP會自動在熱新增磁碟櫃上啟用。對於未啟用頻內ACP的組態、熱新增磁碟櫃可在沒有任何ACP功能的情況下運作。</block>
   <block id="df9362a84fd3cff7395403ecc0c32568" category="list-text">不支援不中斷的堆疊整合。</block>
@@ -3783,13 +3777,11 @@
   <block id="459fd1f74de9761aa97f3f008fbdb134" category="list-text">指派每個磁碟機：「torage disk assign -disk _disk_name_-Owner_name_」</block>
   <block id="c614b3d5d45f850c2de661cead70f602" category="list-text">如有需要、請重新啟用自動磁碟指派：「儲存磁碟選項修改節點節點節點名稱_-autodassign on」</block>
   <block id="f838a919336ed5d0c1d74549f6259a40" category="paragraph">如果您有HA配對、則必須在兩個控制器模組上重新啟用自動磁碟機指派。</block>
-  <block id="fdd0f707bd71fcef53b653ae53e31f53" category="summary">您可以使用完整的控制器對堆疊佈線工作表和佈線範例、將AFF 內部FAS 儲存的纜線架構用於諸如AFF 但不限於E4A200、AFF EVA220、FAS2600系列和FAS2700平台等。此資訊不適用於FAS25XX平台。</block>
   <block id="18e93c7175385ec259f95d9d453bdda1" category="list-text">如有需要、請參閱 <block ref="db31d33614fd87795381d5ac14be04aa" category="inline-link-macro-rx"></block> 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、</block>
   <block id="ba38e437ae673ee3e3f19dd893a38b35" category="list-text">佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器0b連接埠與控制器0A連接埠的連線。</block>
   <block id="1b423539e905b630394da7971c47a88a" category="image-alt">DRW fas2600控制器至堆疊纜線類型金鑰</block>
   <block id="ee547c1c638ccba345b1cbcb32709bcc" category="list-text">佈線範例以兩種不同的色彩顯示控制器對堆疊連線和機櫃對機櫃連線、以區別透過IOM A（網域A）和IOM B（網域B）的連線能力。</block>
   <block id="c81b301c5f51b115f5e18cb1507f7388" category="image-alt">DRW fas2600纜線色彩金鑰</block>
-  <block id="67f2d45d4d0936132195fb6f111ce3e8" category="section-title">採用多重路徑HA組態的內建儲存設備、搭配單一多重機櫃堆疊的整套支援功能AFF FAS</block>
   <block id="ff82ea2b354e0f934f26abf26044a994" category="paragraph">以下工作表和佈線範例使用連接埠配對0A/0b：</block>
   <block id="722de0e0a7dcfb970621a772bae3850c" category="image-alt">DRW fas2600 mpha工作表</block>
   <block id="5eb85c13122610ca0d3c8606ac0884a7" category="image-alt">Drw fas2600 mpha</block>
@@ -3965,10 +3957,7 @@
   <block id="540d6dd9e8a601304f58e8b1692a0cbc" category="list-text">提供最大可能的恢復能力、以維持可用度、並將對控制器移轉的依賴程度降至最低</block>
   <block id="ac9d521507af48d2a069896628ddcbe1" category="paragraph">您應該避免偏離規則、因為差異可能會降低可靠性、普遍性和通用性。</block>
   <block id="1411fab742ef51836dbcd20dc81b333a" category="section-title">組態規則</block>
-  <block id="1ef4b114887ad97836aad1df50936d3b" category="paragraph">特定類型的HA配對和單一控制器組態支援含有IOM12模組的磁碟櫃。</block>
   <block id="e813922cd0bf97e10c1d75af7555f41d" category="list-text">HA配對組態必須以多重路徑HA或四重路徑HA組態進行纜線連接、但有下列例外：</block>
-  <block id="bc5739bb9ad5df08aab832948b129daf" category="list-text">可將S2-A200、FASA220、FAS2600系列和FAS2700HA配對組態（含外部磁碟櫃）纜線連接為單一路徑HA組態、以支援連線至外部SAS磁帶備份裝置。AFF AFF</block>
-  <block id="c30e5ab802ae6eda8b94fc166555d469" category="list-text">不支援四通道HA連線的FASA200、FASA220、FAS2600系列和FAS2700HA配對組態。AFF AFF</block>
   <block id="905e44a8d6df3feceb87ebb53cfc800e" category="list-text">單一控制器組態必須以多重路徑或四重路徑組態進行纜線連接、但有下列例外：</block>
   <block id="4f84345fdfdaaef18218a7ade58e0626" category="list-text">FAS2600系列單一控制器組態（含外部磁碟櫃）可以單一路徑組態進行纜線連接。</block>
   <block id="ab36d824336ef6ebffc6dcb6e6c8f5c7" category="paragraph">由於內部儲存設備使用單一路徑連線功能、ONTAP 因此導致無法偵測到混合路徑時、出現一些偶爾出現的警告。為了避免這些警告、您可以使用單一路徑連線到外部磁碟櫃。此外、您也可以在使用外部SAS磁帶備份設備時、使用單一路徑連線功能。</block>
@@ -3997,11 +3986,9 @@
   <block id="7830411c7d1c383be96811621cfdb2e5" category="paragraph">從邏輯的第一個機櫃到堆疊中的邏輯最後一個機櫃、您可以將IOM連接埠3連接到網域A中的下一個機櫃IOM連接埠1、然後連接到網域B從邏輯的第一個機櫃到堆疊中的邏輯最後一個機櫃、您可以將IOM連接埠4連接到網域A中的下一個機櫃的IOM連接埠2、然後連接到網域B（以雙寬連線方式連接的IOM連接埠顯示為藍色。）</block>
   <block id="cea4f34bbde19b19ec8b528484463d97" category="image-alt">將磁碟櫃放在雙寬的磁碟櫃上</block>
   <block id="76ac5618163f7cfdc83af1a982460b25" category="section-title">控制器對堆疊連線規則</block>
-  <block id="e7e704fe1a564b4bba84a4b89d7ab9b8" category="paragraph">您可以正確地將SAS連線從每個控制器連接至HA配對或單一控制器組態中的每個堆疊、方法是瞭解SAS磁碟櫃使用軟體磁碟擁有權、控制器連接埠A/C和B/D如何連接至堆疊、 控制器連接埠A/C和B/D如何組織成連接埠配對、AFF 以及如何AFF 將SESENEO A200、EYS2220、FAS2600系列和FAS2700系統連接埠0b和0A連接至堆疊。</block>
   <block id="815ae1da852a7e116dabaa4790481ca1" category="section-title">SAS磁碟櫃軟體型磁碟擁有權規則</block>
   <block id="b090fb384d88ba417ddba5bc09e12033" category="paragraph">SAS磁碟櫃使用軟體型磁碟擁有權（而非硬體型磁碟擁有權）。這表示磁碟機擁有權儲存在磁碟機上、而非由儲存系統實體連線的拓撲所決定（如同硬體型磁碟擁有權）。具體而言、磁碟機所有權是由ONTAP 支援（自動或CLI命令）指派、而非由控制器與堆疊連線的纜線方式指派。</block>
   <block id="561976391c859af5f378c2249b3ab7cc" category="paragraph">SAS磁碟櫃切勿使用硬體型磁碟擁有權配置來進行纜線連接。</block>
-  <block id="7b1a771699d48eb5b0ebb788ec8a2494" category="section-title">控制器A和C連接埠連線規則（適用於非AFF EFASA200、AFF E4A220、FAS2600系列和FAS2700組態）</block>
   <block id="543f14beeef4a9be4cc43463e7a5882c" category="list-text">A和C連接埠永遠是堆疊的主要路徑。</block>
   <block id="28f5d46a191ea26e7d3d6a7b8f95cb0b" category="list-text">A和C連接埠一律連接至堆疊中的邏輯第一個磁碟櫃。</block>
   <block id="323025b84432843afbacb8850eab48b1" category="list-text">A和C連接埠一律連接至磁碟櫃IOM連接埠1和2。</block>
@@ -4010,7 +3997,6 @@
   <block id="845648a6d13ed37c7454c6be1991a364" category="list-text">控制器2 A和C連接埠一律連線至IOM B（網域B）。</block>
   <block id="1f393663a63759c6a1dd2986c13770e5" category="paragraph">下圖重點說明控制器連接埠A和C如何以一個四埠HBA和兩個磁碟櫃堆疊的多重路徑HA組態進行連線。與堆疊1的連線顯示為藍色。堆疊2的連線顯示為橘色。</block>
   <block id="52b9f36f0a0ece73e588e8d49a1d2e38" category="image-alt">以堆疊規則連接埠A和c為例的DRW控制器</block>
-  <block id="ef0714114d85b9f9cefcc62cc0b65e22" category="section-title">控制器B和D連接埠連線規則（適用於非AFF E4A200、AFF E4A220、FAS2600系列和FAS2700組態）</block>
   <block id="28b0df79d69d4b7bf21f0271c55d4f4e" category="list-text">B和D連接埠永遠是堆疊的次要路徑。</block>
   <block id="9280f37bc620ca5d0b26ec8580f87f58" category="list-text">B和D連接埠一律連接至堆疊中的邏輯最後一個磁碟櫃。</block>
   <block id="5961adddd5595d6aa7de1c01c6f229b8" category="list-text">B和D連接埠一律連接至磁碟櫃IOM連接埠3和4。</block>
@@ -4020,7 +4006,6 @@
   <block id="6265370a0863851abf028ccb76cce9bb" category="list-text">B和D連接埠會將PCI插槽的順序偏移一個、以便第一個插槽上的第一個連接埠最後連接。</block>
   <block id="1180b7b391f14633455e18d7e8a70316" category="paragraph">下圖重點說明控制器連接埠B和D如何以一個四埠HBA和兩個磁碟櫃堆疊的多重路徑HA組態進行連線。與堆疊1的連線顯示為藍色。堆疊2的連線顯示為橘色。</block>
   <block id="937c34f84d0b7a30ac6064abdb97a6f0" category="image-alt">以堆疊方式堆疊的DRw控制器規則連接埠b和d範例</block>
-  <block id="0805da24af8e9775551e97055c6d00d2" category="section-title">連接埠配對連線規則（適用於非AFF E4A200、AFF EFASA220、FAS2600系列和FAS2700組態）</block>
   <block id="adc0f860870e3220b08daf202d1dbe12" category="paragraph">控制器SAS連接埠A、B、C和D會組織成連接埠配對、並使用一種方法來利用所有SAS連接埠、在HA配對和單一控制器組態中進行控制器對堆疊連線時、提供系統恢復能力和一致性。</block>
   <block id="b74977118ce8bd6994f851515d0aff70" category="list-text">連接埠配對包含控制器A或C SAS連接埠、以及控制器B或D SAS連接埠。</block>
   <block id="4b317a36993fd6d376aba7d0d82eef4b" category="paragraph">A和C SAS連接埠可連接至堆疊中的邏輯第一個機櫃。B和D SAS連接埠可連接至堆疊中的邏輯最後一個機櫃。</block>
@@ -4045,8 +4030,6 @@
   <block id="2baadcb56e7720f5676b919d51a92530" category="paragraph">例如、如果您為系統識別六個連接埠配對、並將三個堆疊連接至纜線作為多重路徑、則您可以在清單中連接其他連接埠配對：</block>
   <block id="e2379f90f7d935a1dcd0af01adbdf46e" category="image-alt">不顯示DRw連接規則列表</block>
   <block id="5e94596a2debe5f10b4bfe8ed1dfb583" category="paragraph">控制器對堆疊佈線工作表是識別及組織連接埠配對的便利工具、可讓您將控制器對堆疊連線纜線連接至HA配對或單一控制器組態。</block>
-  <block id="03668c626125d88dfbaebd0ec0c3051b" category="section-title">將A200、Es20220、FAS2600系列和FAS2700控制器0b和0A連接埠連線規則連接至外部磁碟櫃AFF AFF</block>
-  <block id="2e70696cbfe7e045226c133146c10a21" category="paragraph">由於內部儲存設備（連接埠0b）和堆疊之間的每個控制器必須維持相同的網域連線、因此EFFEA200、EFFEA220、FAS2600系列和FAS2700系統都有一組獨特的連線規則。AFF AFF這表示當控制器位於機箱（控制器1）的插槽A時、它位於網域A（IOM A）中、因此連接埠0b必須連接至堆疊中的IOM A。當控制器位於機箱（控制器2）的插槽B時、它位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的IOM B。</block>
   <block id="f49f9d1b35c60dce77fd03008b90cb34" category="admonition">如果您未將0b連接埠連接至正確的網域（跨連線網域）、則系統會面臨恢復問題、使您無法安全執行不中斷營運的程序。</block>
   <block id="5118c6333d912e1b490b20c974a571ef" category="list-text">控制器0b連接埠（內部儲存連接埠）：</block>
   <block id="53b81829b8b397189aaa4f3eb1ae76a7" category="list-text">控制器1 0b連接埠永遠連線至IOM A（網域A）。</block>
@@ -4060,7 +4043,6 @@
   <block id="0757935fc13bec433eaf412d005fb61b" category="list-text">連接埠0A永遠是次要路徑。</block>
   <block id="5821e49b61c774c699a1d7c8f58887e5" category="list-text">連接埠0A永遠會連接至堆疊中的邏輯第一個磁碟櫃。</block>
   <block id="47f1d04db41788a76ce8ec9e42c7defd" category="list-text">連接埠0A永遠連接磁碟櫃IOM連接埠1。</block>
-  <block id="2b903583c4ae425459eed4f57caaa35d" category="paragraph">下圖重點介紹AFF 內部儲存連接埠（0b）的網域連線功能、以利執行下列功能：EVA200、AFF E4A220、FAS2600系列及FAS2700多重路徑HA組態：</block>
   <block id="d6be80f16b2e703ff33257470dacbcf3" category="image-alt">DRW fas2600 mpha網域範例</block>
   <block id="cfabee74f7cf81c29938b44cfcd37eae" category="paragraph">您可以使用迷你SAS HD SAS光纖纜線：多重模式主動式光纖纜線（AOC）纜線搭配迷你SAS HD對Mini SAS HD連接器、以及多重模式（OM4）中斷纜線搭配Mini-SAS HD對LC連接器、以實現長距離SAS連線、適用於具有IOM12模組磁碟櫃的特定組態。</block>
   <block id="0500445e8d76472cb131af54eda14d19" category="list-text">您的平台和版本ONTAP 的支援必須支援使用Mini-SAS HD SAS光纖纜線：多重模式主動式光纖纜線（AOC）纜線、搭配迷你SAS HD對Mini-SAS HD連接器、以及多重模式（OM4）中斷纜線與Mini-SAS HD對LC連接器。</block>
@@ -4249,7 +4231,6 @@
   <block id="ecc08dd2661076f245ef51eb14c4a74d" category="paragraph">指定用於多路徑纜線的每個連接埠配對都會以一個圓形圈圈圈、其顏色與連接的堆疊相關。每個指定用於四路徑纜線的連接埠配對都會以矩形圈選、矩形是與其纜線堆疊相關的色彩。</block>
   <block id="7c0edd402cd55e5ea26650be4a6f998c" category="section-title">四通道HA、含兩個四埠SAS HBA和兩個多機櫃堆疊</block>
   <block id="f76dc75f678aa69ffe38bc567a89bca0" category="paragraph">下列工作表和佈線範例使用連接埠配對1a/2b（多路徑）和2a/1d（四路徑）作為堆疊1、連接埠配對1c/2d（多路徑）和2c/1b（四路徑）作為stack2。</block>
-  <block id="cea3ccc996d16531a1bdc296b2d6851c" category="paragraph">您的HA配對或單一控制器組態不能是AFF 一套E4A200、AFF E4A220、FAS2600系列或FAS2700系統。如果您有下列其中一種組態、請使用下列項目：</block>
   <block id="5976250f174c7aa7423cbb91c458e804" category="list-text">此程序和工作表範本適用於將多重路徑HA或多重路徑組態與一或多個堆疊進行纜線連接。</block>
   <block id="8c7e7585bf065649c4ca12e935833b4c" category="paragraph">多重路徑HA和多重路徑組態的工作表範例已完成。</block>
   <block id="da38645c7fd59844e84034f3e0e006a1" category="list-text">工作表範本最多可容納六個堆疊、如有需要、您需要新增更多欄。</block>
@@ -4658,7 +4639,6 @@
   <block id="c15449579d92fa124a659aa412ed32be" category="section-title">步驟7：安裝控制器</block>
   <block id="d3e14d546bdb099fa06c198263457888" category="doc">交換電源供應器- FAS8200</block>
   <block id="0336dcab6aaf6e0e6b3e580f2e159ad5" category="doc">安裝與設定PDF海報- FAS8200</block>
-  <block id="345a2a62ce004a5b297819af054c9777" category="inline-link-macro">FAS8200安裝與設定說明AFF</block>
   <block id="13fa4776dd3902d644b4c8c6e4086d8d" category="doc">更換即時時鐘電池- FAS8200</block>
   <block id="0c778d4562d4433df431e74565c47304" category="doc">更換快取模組- FAS8200</block>
   <block id="9b81891ee2ba844aa5a5e1cc3074e3ab" category="section-title">步驟3：更換或新增快取模組</block>
@@ -6843,8 +6823,6 @@
   <block id="d2190ca0f2bf90686cb089f6fb2d5e2b" category="paragraph">如果您要將DS460C機櫃移至資料中心的不同部分、或是將其移至不同位置、請參閱下節： <block ref="2dfa5cde780121ff739815d2402836cf" category="inline-xref-macro-rx"></block>。</block>
   <block id="1d5287e79870e687badf4e2da0612ad0" category="paragraph">如果您將DS460C磁碟櫃移至資料中心的其他部分、或將磁碟櫃移至不同位置、則必須從磁碟機抽屜中移除磁碟機、以避免可能損壞磁碟機抽取器和磁碟機。</block>
   <block id="c3fdb0812209f286e664a4d0cd47c328" category="list-text">如果您將DS460C磁碟櫃安裝為新系統安裝或磁碟櫃熱新增的一部分、則儲存了磁碟機包裝材料、請在移動磁碟機之前使用這些材料來重新封裝磁碟機。</block>
-  <block id="ba70aeebfd3549f6f01e998eb6dd6e28" category="paragraph">您可以使用PDF海報來安裝及設定新系統。。 <block ref="a8e3f4b75381b375e7ce8abf385604f8" category="inline-link-macro-rx"></block> 提供逐步指示、並提供其他內容的即時連結。</block>
-  <block id="4919d15b1a0ddd0c55a729c741fd5005" category="sidebar">提供內建儲存設備的連接工作表與範例AFF 、適用於包含內FAS 建儲存設備的不穩定和不穩定平台</block>
   <block id="9285e5d96d62653cbfc04067e2de249c" category="list-text"><block ref="9285e5d96d62653cbfc04067e2de249c" category="inline-link-macro-rx"></block></block>
   <block id="cff7366c4191a9dd1698e3fd38e5acaf" category="sidebar">NVRAM模組或NVRAM DIMM</block>
   <block id="dbe0afeaa91b9a08168e98b33a4c7de8" category="admonition">請確定在拔下纜線並重新連接纜線之間、以及更換較長纜線之間、至少等待70秒。</block>
@@ -7231,7 +7209,6 @@
   <block id="5d2249930d4d6f285a5ccc70c9734de6" category="inline-link">Aggregate擴充工作流程</block>
   <block id="fcdebdb1f4c79cc7a93d9f17744521c5" category="paragraph"><block ref="fcdebdb1f4c79cc7a93d9f17744521c5" category="inline-link-rx"></block></block>
   <block id="87e222a1917be35f082aeb99501e10ca" category="doc">在DS460C磁碟櫃中熱交換磁碟機-使用IOM12/IOM12B模組的磁碟櫃</block>
-  <block id="85085227e7191ff5201df5ab0dba828e" category="doc">包含內建儲存設備的控制器對堆疊佈線工作表與線路設計範例AFF 、FAS 適用於搭載IOM12/IOM12B模組的機櫃</block>
   <block id="3cf53d4c9bda935f2527cd9e3072ef82" category="sidebar">IOM12/IOM12B模組</block>
   <block id="c495d94f32f50365b375a20870280fde" category="sidebar">安裝IOM12/IOM2B模組及纜線的機櫃</block>
   <block id="932dcd191a61980121848404f3579ffb" category="sidebar">具有IOM12/IOM12B模組的磁碟櫃會維持不變</block>
@@ -7353,4 +7330,30 @@
   <block id="fe673aff2ce9eb5c6eaf841f4ec88b30" category="sidebar">VA900開機媒體AFF</block>
   <block id="6cff7e5493433d24015d6ef5a8566b38" category="sidebar">VA900機箱AFF</block>
   <block id="7d1c80f318f9bf16deac2495abe88a7e" category="sidebar">VA900控制器模組AFF</block>
+  <block id="2014d8b66b0e05fba286f79c1c8aac17" category="admonition">當您看到_是否要停用自動恢復？_時、請輸入「y」。</block>
+  <block id="f80b45f73e8b653fc036922e438eff9e" category="inline-link-macro">FAS8200安裝與設定說明</block>
+  <block id="ca2e2999fd16933cd908b9c9e44161d0" category="paragraph">您可以使用PDF海報來安裝及設定新系統。。 <block ref="666c6c27ec3878a6b3f3c3cb24d10587" category="inline-link-macro-rx"></block> 提供逐步指示、並提供其他內容的即時連結。</block>
+  <block id="0e1569786cd5c99315511da0d9e3f2aa" category="admonition">如果系統在開機功能表停止、請選取「重新開機節點」選項、並在出現提示時回應y、然後按「Ctrl-C」開機至載入程式。</block>
+  <block id="6f0e65a313ceda26ae3094641da52d2e" category="paragraph"><block ref="6f0e65a313ceda26ae3094641da52d2e" category="inline-link-rx"></block></block>
+  <block id="e789db57588c567cf162bf2f8ec8b65e" category="paragraph">如果您的平台具有內部儲存設備、包括FAS2600系列、AFF E4A200、FAS2700系列、AFF E4A220、 之後、請使用下列工具（這些平台使用獨特的工作表）：</block>
+  <block id="f5d03e0aa6d32340b1284f6bb82c8ee3" category="inline-link-macro">具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例</block>
+  <block id="c19123e6031c139d66f534ae4311d605" category="paragraph"><block ref="c19123e6031c139d66f534ae4311d605" category="inline-link-macro-rx"></block></block>
+  <block id="9f5ac9f9e33d14b5edcf142aa6534de3" category="paragraph">特定類型的HA配對和單一控制器組態支援含有IOM12模組的磁碟櫃。</block>
+  <block id="a02316bb16a44dfeab4bba0330def5a9" category="admonition">本內容未說明FAS25XX平台的問題。</block>
+  <block id="f18e20acd27581fe2f1075089d65a455" category="list-text">內含內部儲存設備的平台、包括FAS2600系列、AFF EFASA200、FAS2700系列、AFF E4A220、 之後、也可以將纜線連接成單一路徑HA組態、以支援連線至外部SAS磁帶備份裝置。</block>
+  <block id="c47a6f7fbf347f2ab09e05ad80c1fc30" category="list-text">內含內部儲存設備的平台、包括FAS2600系列、AFF EFASA200、FAS2700系列、AFF E4A220、 之後、不支援四路徑HA連線。</block>
+  <block id="dee118410b7e171b0f510cb87be443b7" category="paragraph">您可以正確地將SAS連線從每個控制器連接至HA配對或單一控制器組態中的每個堆疊、方法是瞭解SAS磁碟櫃使用軟體磁碟擁有權、控制器連接埠A/C和B/D如何連接至堆疊、 控制器連接埠A/C和B/D如何組織成連接埠配對、以及採用內部儲存設備的平台如何將其控制器連接埠連接至堆疊。</block>
+  <block id="8018a1e3a70e95fa6594f859c3232987" category="section-title">控制器A和C連接埠連線規則（適用於沒有內部儲存設備的平台）</block>
+  <block id="91be64cf601d5c3cea92700e0feb259b" category="section-title">控制器B和D連接埠連線規則（適用於沒有內部儲存設備的平台）</block>
+  <block id="53de5403d00811e5f44fb1b9f62019a4" category="section-title">連接埠配對連線規則（適用於沒有內部儲存設備的平台）</block>
+  <block id="0ce2d44d1215d0431e0b46ed686dd560" category="section-title">控制器0b和0A連接埠連線規則、適用於具有內部儲存設備的平台</block>
+  <block id="0c574ecb6a58bb92327391af7cfd84d2" category="paragraph">內含內部儲存設備的平台、包括FAS2600系列、AFF EFASA200、FAS2700系列、AFF E4A220、 之後的連線規則也會是一組獨特的規則、因為每個控制器必須在內部儲存設備（連接埠0b）和堆疊之間維持相同的網域連線。這表示當控制器位於機箱（控制器1）的插槽A時、它位於網域A（IOM A）中、因此連接埠0b必須連接至堆疊中的IOM A。當控制器位於機箱（控制器2）的插槽B時、它位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的IOM B。</block>
+  <block id="27858a1c4654311bc60fbcd9494b2c3e" category="admonition">FAS25XX平台未在此內容中說明。</block>
+  <block id="06da34e55ca27b5fa072a7b523991230" category="paragraph">下圖重點介紹FAS2600系列、AFF E4A200、FAS2700系列、AFF EVA220及更新版本的多重路徑HA組態的內部儲存連接埠（0b）網域連線：</block>
+  <block id="0fdd3a9de120fbacd6c04d73ee6832df" category="summary">您可以將完整的控制器對堆疊佈線工作表和佈線範例、用於內部儲存設備的纜線平台、包括FAS2600系列、AFF E4A200、FAS2700系列、AFF E4A220、 及更新版本。</block>
+  <block id="bb42dbb13759e9df73ffa74412e3548a" category="doc">控制器對堆疊佈線工作表與佈線範例、適用於具有內部儲存設備的平台、也就是採用IOM12/IOM12B模組的機櫃</block>
+  <block id="424f2fdac9e61f7b7785b602da677d00" category="admonition">此資訊不適用於FAS25XX平台。</block>
+  <block id="4efb7705f98005596f065e30ddf32363" category="section-title">採用多重路徑HA組態的內部儲存平台、只需一個多重機櫃堆疊即可</block>
+  <block id="835ecba5eb095440eda54c2f50f1ef89" category="paragraph">如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表功能表將系統組態顯示為「多路徑」。</block>
+  <block id="3f9904dabd6885ddf815902aade7d320" category="sidebar">內部儲存平台的佈線工作表和範例</block>
 </blocks>
