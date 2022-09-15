@@ -43,7 +43,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 ====
 非專屬的具備RoCE功能的連接埠必須設定為供儲存使用（非網路使用）。
 
-<<Prepare non-dedicated RoCE-capable ports for a hot-add>>
+ non-dedicated RoCE-capable ports for a hot-add
 
 ====
 * 如果您有AFF 一對EzeA700 HA配對、而且要熱新增初始NS224磁碟機櫃（HA配對中沒有NS224磁碟機櫃）、則必須在每個控制器中安裝核心傾印模組（X9170A、NVMe 1TB SSD）、才能支援核心傾印（儲存核心檔案）。
@@ -130,7 +130,7 @@ NOTE: 韌體更新最多可能需要30分鐘。
 
 您必須符合系統需求。
 
-<<Requirements for a hot-add>>
+ for a hot-add
 
 .關於這項工作
 * 對於某些平台機型、當控制器的支援插槽中安裝具備RoCE功能的PCIe卡或I/O模組時、連接埠會自動預設為使用儲存設備（而非網路）；不過、建議您完成此程序、以驗證具備RoCE功能的連接埠是否已設定為用於儲存設備。
@@ -250,11 +250,11 @@ NOTE: 第一個控制器必須已完成重新開機。
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須啟用所安裝之具備RoCE功能的PCIe卡或I/O模組上的連接埠。
 +
-<<Prepare non-dedicated RoCE-capable ports for a hot-add>>
+ non-dedicated RoCE-capable ports for a hot-add
 
 
 
@@ -288,7 +288,7 @@ NOTE: 這些子步驟假設現有機櫃已連接至每個控制器插槽3中具�
 ====
 如有需要、您可以參考兩個機櫃組態中現有單一機櫃和標註機櫃的佈線圖例。
 
-<<Cable a hot-add shelf for an AFF A700 HA pair>>
+ a hot-add shelf for an AFF A700 HA pair
 
 ====
 .. 在控制器A上、將纜線從插槽3連接埠b（e3b）移至插槽7連接埠b（e7b）。
@@ -307,7 +307,7 @@ NOTE: 以下步驟假設現有的機櫃已連接至每個控制器插槽5中的�
 ====
 如有需要、您可以參考兩個機櫃組態中現有單一機櫃和標註機櫃的佈線圖例。
 
-<<Cable a hot-add shelf for an AFF A800 HA pair>>
+ a hot-add shelf for an AFF A800 HA pair
 
 ====
 .. 在控制器A上、將纜線從插槽5連接埠b（e5b）移至插槽3連接埠b（e3b）。
@@ -323,7 +323,7 @@ VA400 HA配對AFF
 ====
 如有需要、您可以參考兩個機櫃組態中現有單一機櫃和標註機櫃的佈線圖例。
 
-<<Cable a hot-add shelf for an AFF A400 HA pair>>
+ a hot-add shelf for an AFF A400 HA pair
 
 ====
 .. 在控制器A上、將纜線從連接埠e0d移至插槽5連接埠b（e5b）。
@@ -348,7 +348,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 您必須符合系統需求。
 
-<<Requirements for a hot-add>>
+ for a hot-add
 
 如果磁碟櫃中的磁碟機將由HA配對中的兩個控制器模組擁有、則您需要手動指派磁碟機擁有權。
 
@@ -376,11 +376,11 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 
 
@@ -472,15 +472,15 @@ image::../media/drw_ns224_back_ports.png[DRW n224個後端連接埠]
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -553,7 +553,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -567,15 +567,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -605,7 +605,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -618,15 +618,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -706,7 +706,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -719,15 +719,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -811,7 +811,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -824,15 +824,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -902,7 +902,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -915,15 +915,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 您必須已完成適用的準備程序。
 +
-<<Prepare for a hot-add>>
+ for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 
 
@@ -953,7 +953,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 
 
@@ -966,7 +966,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 您必須已依照HA配對的指示、將機櫃連接好纜線。
 
-<<Cable a drive shelf for a hot-add>>
+ a drive shelf for a hot-add
 
 .步驟
 . 顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」

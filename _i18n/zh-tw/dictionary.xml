@@ -5025,20 +5025,13 @@
   <block id="9cd2ad15fd6e17e2089c3e6d267284e8" category="paragraph"><block ref="9cd2ad15fd6e17e2089c3e6d267284e8" category="inline-link-rx"></block></block>
   <block id="64ade082ee5f7cc92e1fcf2264b98814" category="summary">您可以使用這些連結來尋找其他AFF 的參考資料和FAS 參考資料系統。</block>
   <block id="ad451e1c6a6a584f53b88b5c73144db7" category="doc">其他機型</block>
-  <block id="eb90dbf89cffd9812a8720d277f30583" category="paragraph">您可以使用這些連結來尋找其他AFF 的參考資料FAS 和參考資料平台。</block>
   <block id="07fa61787cd64fafda80a8c62e643a38" category="section-title">平台機型</block>
   <block id="f453086a36d64a5193cd4183c14bcd72" category="inline-link-macro">支援NetApp®NetApp®AFF</block>
   <block id="c651d2f010c85fa1c8605da5e127657e" category="paragraph"><block ref="c651d2f010c85fa1c8605da5e127657e" category="inline-link-macro-rx"></block></block>
   <block id="71bdc94f19d5947bd1cb6d437f119ba2" category="inline-link-macro">FAS8000系列文件</block>
   <block id="2b3a51bca746a221bf4a0af6d3098ccf" category="paragraph"><block ref="2b3a51bca746a221bf4a0af6d3098ccf" category="inline-link-macro-rx"></block></block>
-  <block id="f739ddc76de0a287d2c0b563d814e953" category="inline-link-macro">FAS6200系列文件</block>
-  <block id="e9631782eda247a09ad2e090180b8c23" category="paragraph"><block ref="e9631782eda247a09ad2e090180b8c23" category="inline-link-macro-rx"></block></block>
-  <block id="f7c466bdf55160e7ccabf40d2020dad0" category="inline-link-macro">FAS3200系列文件</block>
-  <block id="d710040b8ac876a0da7dc8e847bb40ee" category="paragraph"><block ref="d710040b8ac876a0da7dc8e847bb40ee" category="inline-link-macro-rx"></block></block>
   <block id="c7e39e875a3a875d9445eace0794b0f5" category="inline-link-macro">FAS2500系列文件</block>
   <block id="ebc5a75e4df8077b15f7cef6c123c7db" category="paragraph"><block ref="ebc5a75e4df8077b15f7cef6c123c7db" category="inline-link-macro-rx"></block></block>
-  <block id="3c0f93dc3f40f9ea0aef607cee8d55b1" category="inline-link-macro">FAS2200系列文件</block>
-  <block id="1da789723077cd18e287167bf56d9b2e" category="paragraph"><block ref="1da789723077cd18e287167bf56d9b2e" category="inline-link-macro-rx"></block></block>
   <block id="7a31198e87ee2c9071d7bf63050a7088" category="section-title">機櫃機型</block>
   <block id="dc562a84ed096c677cedf44a7c5df0bf" category="inline-link-macro">DS2246磁碟櫃文件</block>
   <block id="dd26152c70d312482c21516c3889b669" category="paragraph"><block ref="dd26152c70d312482c21516c3889b669" category="inline-link-macro-rx"></block></block>
@@ -6848,7 +6841,6 @@
   <block id="a31ab93f41516026d249aceb633bccc3" category="doc">新增I/O模組- FAS9500</block>
   <block id="133808c24f6fb32a9a2a58ed28150498" category="paragraph">您可以將I/O模組新增至系統的空模組插槽、做為SAS儲存櫃的NIC或儲存模組。</block>
   <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">主控台連線顯示、當接管完成時、節點會捨棄至載入器提示。</block>
-  <block id="2a5cd1f850ee79601be57448f10d9595" category="list-text">從載入程式提示字元_by_重新啟動節點</block>
   <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">從合作夥伴節點回饋節點。將容錯移轉還原為-ofnode_node_name'</block>
   <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">熱新增SAS機櫃</block>
   <block id="9856beabcb389225df78cec96e74e365" category="list-text">如果您安裝儲存I/O模組、請依照中所述、安裝並連接SAS磁碟櫃<block ref="322cc377ef41f5776a1c64690e12c49b" category="inline-link-rx"></block>。</block>
@@ -7356,4 +7348,8 @@
   <block id="4efb7705f98005596f065e30ddf32363" category="section-title">採用多重路徑HA組態的內部儲存平台、只需一個多重機櫃堆疊即可</block>
   <block id="835ecba5eb095440eda54c2f50f1ef89" category="paragraph">如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表功能表將系統組態顯示為「多路徑」。</block>
   <block id="3f9904dabd6885ddf815902aade7d320" category="sidebar">內部儲存平台的佈線工作表和範例</block>
+  <block id="e3fd55f400cc227fbbc7c777c0679db1" category="list-text">如果更換的I/O模組是NIC、請將模組或模組纜線連接至資料交換器。</block>
+  <block id="c51e6cbbe594b20461edba0d83817fce" category="list-text">重新啟動BMC、然後重新啟動節點：</block>
+  <block id="e727b00944f81e1d0a95c12886ac4641" category="inline-link-macro">歸檔</block>
+  <block id="97a6415da8202d0321d49b92f019e7b1" category="paragraph">您可以使用這些連結來尋找其他AFF 的參考資料FAS 和參考資料平台。客戶可在中使用已達到硬體支援終止的支援功能、以取得AFF 有關的支援資料FAS <block ref="5e4606a12c7b193a6ccb23ff349575d7" category="inline-link-macro-rx"></block>。</block>
 </blocks>

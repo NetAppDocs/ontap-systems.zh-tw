@@ -21,7 +21,7 @@ summary: 如果需要額外的儲存設備、您可以將IOM12/IOM12B磁碟櫃�
 在MetroCluster 將IOM12/IOM12B磁碟櫃熱新增至IOM6磁碟櫃堆疊之前、HA配對、單一控制器或延伸功能不全組態（系統）必須符合特定需求。
 
 
-NOTE: 如需橋接式MetroCluster 附加的功能、請參閱 <<Requirements for a hot-add in bridge-attached MetroCluster configurations>>。
+NOTE: 如需橋接式MetroCluster 附加的功能、請參閱  for a hot-add in bridge-attached MetroCluster configurations。
 
 * 您的系統和版本ONTAP 的支援必須在同一個堆疊（混合堆疊）中混合使用IOM6磁碟櫃和IOM12/IOM12B磁碟櫃。
 +
@@ -228,9 +228,9 @@ NOTE: 移轉指示提供IBACP的系統需求。
 
 您必須符合系統需求。
 
-<<Requirements for a hot-add>>
+ for a hot-add
 
-<<Requirements for a hot-add in bridge-attached MetroCluster configurations>>
+ for a hot-add in bridge-attached MetroCluster configurations
 
 如果您有HA配對、則當機櫃中的磁碟機將由兩個控制器模組擁有時、您必須手動指派磁碟機擁有權。
 
@@ -396,15 +396,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 .開始之前
 * 您必須符合系統需求。
 +
-<<Requirements for a hot-add>>
+ for a hot-add
 
 * 如果適用、您必須完成準備程序。
 +
-<<Prepare to manually assign drive ownership for a hot-add>>
+ to manually assign drive ownership for a hot-add
 
 * 您必須安裝磁碟櫃、開啟磁碟櫃電源、然後設定磁碟櫃ID。
 +
-<<Install shelves for a hot-add>>
+ shelves for a hot-add
 
 
 
@@ -634,7 +634,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 否則、您將完成此程序。
 
 +
-<<Complete the hot-add>>
+ the hot-add
 
 +
 
@@ -651,7 +651,7 @@ NOTE: 所有MetroCluster 的支援組態都需要手動指派磁碟機。
 
 您必須依照系統的指示、將機櫃連接好纜線。
 
-<<Cable shelves for a hot-add>>
+ shelves for a hot-add
 
 .步驟
 . 顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」
