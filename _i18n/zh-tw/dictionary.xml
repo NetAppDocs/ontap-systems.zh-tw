@@ -2909,7 +2909,6 @@
   <block id="4336c94d0986062a5e7d1d117b05fa50" category="section-title">步驟3：更換NVRAM DIMM</block>
   <block id="5aa839d702c6b821077d7a98ae849b99" category="paragraph">若要更換NVRAM模組中的NVRAM DIMM、您必須移除NVRAM模組、開啟模組、然後更換目標DIMM。</block>
   <block id="2f38ba189ae414ae66180b4a58eb6b22" category="list-text">找到NVRAM模組內要更換的DIMM、然後按下DIMM鎖定彈片並將DIMM從插槽中提出來將其卸下。</block>
-  <block id="f08fa3f1d8bff6dfbc18be0fdca6444e" category="paragraph">每個DIMM旁邊都有一個LED、當DIMM故障時會開始閃燈。</block>
   <block id="418a022f56c1e24ab49e10afac569c94" category="list-text">將DIMM對齊插槽、然後將DIMM輕推入插槽、直到鎖定彈片鎖定到位、即可安裝替換DIMM。</block>
   <block id="0133a8841f8d283d3a060042f4904613" category="list-text">將NVRAM模組安裝至機箱：</block>
   <block id="1c0152b1bce888fe537c442be9dccb80" category="section-title">步驟4：更換FRU後重新啟動控制器</block>
@@ -5726,7 +5725,6 @@
   <block id="bb90eba065615f7ac639d1758ba84812" category="paragraph">您可以使用下列動畫、圖例或書面步驟來取代快取模組。</block>
   <block id="540a3a140ba4c7da7729d8bbfbe06861" category="image-alt">DRW8300取代快閃快取</block>
   <block id="b08a9c5bee019bb00ec5f4f00b59819e" category="list-text">使用控制器模組上的FRU對應圖、找出故障的快取模組並將其移除：</block>
-  <block id="ea38ef5f5282f326e6e880ef9f6db82b" category="paragraph">視您的組態而定、控制器模組中可能有零、一個或兩個快取模組。故障快取模組的LED會亮起。</block>
   <block id="58a5256eec02e1fef80c02b3deffc3f5" category="list-text">按下藍色釋放卡舌。</block>
   <block id="3b9dfc19fe13a88ce4bf85240df578ae" category="paragraph">快取模組端點會從「版本」索引標籤中增加。</block>
   <block id="03ca5be2075218c7bb1546c7700fbc6a" category="list-text">向上旋轉快取模組、將其從插槽中滑出。</block>
@@ -5802,7 +5800,6 @@
   <block id="bef53c14eb719bb1cd8539b91f7515d7" category="doc">以雙節點MetroCluster 的不全功能組態（AFF 例如：FASfas8300和FAS8700）切換回集合體</block>
   <block id="73e891cd10bc7a669d3df2629ca0ed7c" category="doc">更換NVDIMM - FAS8300和FAS8700</block>
   <block id="d77f71cbbb3c8057b08d0dfb49aa5664" category="paragraph">您可以使用下列、圖例或書面步驟、從機箱中移除控制器模組。</block>
-  <block id="de9c147054e3fb33c301b1846d2c2c80" category="paragraph">若要更換NVDIMM、您必須使用通風管頂端的FRU對應圖、在控制器模組中找到NVDIMM、或使用插槽1擴充卡頂端的FRU對應圖、找到警示LED。</block>
   <block id="702c236818660597292fd2708b25d1d7" category="list-text">雖然NVDIMM的內容已加密、但最好先清除NVDIMM的內容再更換。如需詳細資訊、請參閱<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> 請至NetApp支援網站。</block>
   <block id="fd62f71706b219af05866bd0a2936d3c" category="paragraph">您可以使用下列動畫、圖例或書面步驟來更換NVDIMM。</block>
   <block id="83f5dbc08aca0f364692b2a42ed31f22" category="admonition">動畫和圖例顯示沒有DIMM的插槽空插槽。這些空插槽中會填入空格。</block>
@@ -6233,7 +6230,6 @@
   <block id="03163c4d180c5b6d6482efa550043cd8" category="doc">關閉控制器AFF -現象A800</block>
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
   <block id="161d11f75b68457ea33ac52c79b01c05" category="doc">更換NVDIMM AFF - NVME A800</block>
-  <block id="bca504eb60c2c7a5f3511f22eeb34338" category="admonition">當您停止系統時、NVDIMM LED會在減少內容時閃爍。完成轉出後、LED會關閉。</block>
   <block id="2c0856fef0927def0bd154513fb326fb" category="list-text">如果您要移除或移動NVDIMM、請解除鎖定擴充卡上的鎖定栓、然後移除適用的擴充卡。</block>
   <block id="e9d13b816c74953ab05ce3d6d2486166" category="image-alt">更換DRw a800 NVDIMM</block>
   <block id="f8cdcc9997405437e79f5d57e18498f5" category="paragraph">提升板2和NVDIMM 11</block>
@@ -7351,4 +7347,9 @@
   <block id="42e8099baf01da8bcc3b8362f29f317c" category="inline-link-macro">《安裝與設定說明》（英文）AFF</block>
   <block id="08b9fb46f5aced4cd732b3ae62e9764f" category="paragraph">本指南提供從機架安裝和纜線安裝到初始系統啟動的系統典型安裝圖形指示。使用 <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="3968cc9d2fa7f59d81661adbaf12cfac" category="paragraph"><block ref="3968cc9d2fa7f59d81661adbaf12cfac" category="inline-link-macro-rx"></block></block>
+  <block id="b72bee50d170af9037bebf46f5eb89d7" category="paragraph">若要更換NVDIMM、您必須使用通風管頂端的FRU對應圖或插槽1擴充卡頂端的FRU對應圖、將其放入控制器模組。</block>
+  <block id="ad7f5333de2f76cfccc7ea7fa134c8a7" category="paragraph">更換系統DIMM時、需要透過相關的錯誤訊息來識別目標DIMM、使用通風管上的FRU對應來找出目標DIMM、然後更換DIMM。</block>
+  <block id="2ceb6141859316070c657f406135cd1c" category="paragraph">視您的組態而定、控制器模組中可能有零、一個或兩個快取模組。使用控制器模組內的FRU對應來協助找出快取模組。</block>
+  <block id="edae17e7394c8face12fc5d74d33aa9b" category="paragraph">若要更換NVDIMM、您必須使用插槽1擴充卡頂端的FRU對應圖、在控制器模組中找到NVDIMM。</block>
+  <block id="ca7c99126c90b6d4e929e35a12f23c35" category="paragraph">若要更換NVDIMM、您必須使用通風管頂端的NVDIMM對應標籤、將其放置在控制器模組中、然後依照特定步驟順序加以更換。</block>
 </blocks>
