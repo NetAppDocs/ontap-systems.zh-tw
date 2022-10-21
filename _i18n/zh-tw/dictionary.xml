@@ -814,7 +814,6 @@
   <block id="9d80f287709beea4f34371644025d541" category="list-text">確認NVMEM LED不再亮起。</block>
   <block id="2df619b7d1a08e00bedcc91e7f49e549" category="list-text">重新連接電池接頭。</block>
   <block id="170207ac967287c686f238b6880ae540" category="list-text">返回此程序的步驟2、重新檢查NVMEM LED。</block>
-  <block id="b2bd14184e9f3b25f1856f38f5e4292a" category="admonition">每個系統記憶體DIMM的每個DIMM插槽旁邊、主機板上都有一個LED。故障的LED每兩秒會閃爍一次。</block>
   <block id="169525b3af51c8a1a1183325e19e3768" category="list-text">請注意插槽中的DIMM方向、以便您以適當的方向插入替換的DIMM。</block>
   <block id="1037b1c609239a848832f786d5ffba1b" category="image-alt">DRW 2600 DIMM重新格式動畫Gif</block>
   <block id="780061b11a4f33cc8eecc0c1fd85c471" category="list-text">從防靜電包裝袋中取出備用DIMM、拿住DIMM的邊角、然後將其對準插槽。</block>
@@ -1666,7 +1665,6 @@
   <block id="2c605d107b8b0f8d344d6c863e4c47a9" category="paragraph">按Ctrl-C、然後回應「y」。</block>
   <block id="d0a414fa814c592a9fcc74f3aaae710b" category="paragraph">接管或停止受損的控制器：「暫停容錯移轉接管-節點_受損節點_節點名稱_」</block>
   <block id="e160675dcb2bc6ebdb28380884820e26" category="paragraph">當受損的控制器顯示「正在等待恢復...」時、請按Ctrl-C、然後回應「y」。</block>
-  <block id="8d73259baf4ddfb7a4ebcc9452d895e0" category="paragraph">若要更換DIMM、您必須使用控制器模組內部的DIMM對應圖、或是使用DIMM旁的LED來找到DIMM、然後依照特定的步驟順序加以更換。</block>
   <block id="9de291eec146aa309ed46727b945c6d4" category="list-text">移除適用的擴充卡。</block>
   <block id="a4e4695daf3bcdb3f2c31bf35c0a5950" category="paragraph">通風管蓋</block>
   <block id="526b2479f6412e63d5f244b19de1b2d9" category="paragraph">擴充卡2和DIMM插槽5至8和9至12</block>
@@ -1682,7 +1680,6 @@
   <block id="e9e66c1bd59e20ff8acce6fb41f94461" category="paragraph">您必須從機箱中取出控制器模組、開啟它、然後更換故障的開機媒體。</block>
   <block id="e88eebc1797d32d10ed4abe331b3ecb6" category="section-title">步驟2：更換開機媒體AFF - S4A700s</block>
   <block id="588550e231fd9dcead167f2e3a8a2926" category="paragraph">您需要使用十字螺絲起子來移除將開機媒體固定到位的螺絲。</block>
-  <block id="bf74c7ac7f9e7efeee2d230b44098194" category="list-text">透過控制器模組主機板上的LED燈號找到故障開機媒體。</block>
   <block id="08e062e39a8a4c0f3e78183b95ffe7a6" category="list-text">向下轉動開機媒體、直到它與主機板齊面。</block>
   <block id="037b010332fb97984cd0e0f82925b8c2" category="list-text">使用螺絲將開機媒體固定到位。</block>
   <block id="860cf43001914d965b2435c1d0c7f8fe" category="admonition">請勿過度鎖緊螺絲。否則可能會使開機媒體電路板破裂。</block>
@@ -7352,4 +7349,9 @@
   <block id="58be97337d3377c59cd19ffb71fbc7fb" category="inline-link-macro">NetApp CN1601</block>
   <block id="36c686b6a1d561ca87a79e4ac0028295" category="list-text"><block ref="36c686b6a1d561ca87a79e4ac0028295" category="inline-link-macro-rx"></block></block>
   <block id="c83195c9d5e5dd5960c0976c81d14ea5" category="sidebar">Cisco 3232C</block>
+  <block id="b609dd6c87556493ce1f11c7ab61cbdb" category="list-text">檢查控制器模組背面的NVMEM LED。</block>
+  <block id="62052f557603d07beccb5c5c5b7c8d48" category="list-text">檢查主控台錯誤訊息、找出您必須更換的風扇模組。</block>
+  <block id="6c0f8c80eb90bb62692eec695b2b97a4" category="paragraph">您必須在控制器模組中移除中間的PCIe模組、找出故障的開機媒體、然後更換開機媒體、才能找到故障的開機媒體。</block>
+  <block id="75482a309ad2153a216d2cc1f37de42a" category="list-text">找到故障開機媒體。</block>
+  <block id="3f09782d88b17a1d4d58adb09f8cd8ee" category="paragraph">若要更換DIMM、您必須使用控制器模組內部的DIMM對應圖、將其放入控制器模組、然後依照特定步驟順序加以更換。</block>
 </blocks>
