@@ -1293,13 +1293,11 @@
   <block id="11d90ad9838fdc1545ee368cd8943df9" category="list-text">視需要移除舊授權：</block>
   <block id="eb9892aa7a6ee6cfe6b30dad735d6d7a" category="list-text">檢查未使用的授權：「授權清理-未使用的-Simulate」</block>
   <block id="f77eef718a5ddb0006a44a75016370bf" category="list-text">如果清單看起來正確、請移除未使用的授權：「授權清理-未使用」</block>
-  <block id="ff3a1a304de699b15bd2a5a39798c5a8" category="section-title">步驟2：還原儲存設備和Volume Encryption功能</block>
   <block id="37b0fb827bbc179115abc1768c9c5f12" category="paragraph">針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">步驟</block>
   <block id="e68c8836280fba147b04a2b14b196600" category="list-text">視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：</block>
   <block id="7b5b637cc082477a9dd4c129c225152e" category="inline-link">還原內建金鑰管理加密金鑰</block>
   <block id="1ee623098df2f7856a034824be882999" category="inline-link">還原外部金鑰管理加密金鑰</block>
-  <block id="92f82264c734da3126796f6bfa718d0f" category="section-title">步驟3：驗證LIF並登錄序號</block>
   <block id="556aba51608845a42e971c4c7b471837" category="paragraph">在將_replacement節點送回服務之前、您應該先確認該生命點是否位於其主連接埠上、如果AutoSupport 啟用了「BIOS」、請登錄_replacement節點的序號、然後重設自動恢復。</block>
   <block id="462ec873925d8409f9ead354ff424e1b" category="list-text">驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」</block>
   <block id="8ea6b3a9b2a4529608397a2c8232b2e9" category="paragraph">如果有任何生命期被列為假、請將其還原至主連接埠：「網路介面回復」</block>
@@ -2525,7 +2523,6 @@
   <block id="3891e96240b27c2309a21f6387f98917" category="paragraph">移至「移除控制器模組」。</block>
   <block id="c055245c084600ec7129f0f3c0692170" category="section-title">選項2：控制器採用雙節點MetroCluster 的不二組態</block>
   <block id="c11d911fdc6f049d5491a18850fa08dd" category="doc">完整系統還原- AFF 還原為NetApp</block>
-  <block id="332c846459ecae57b885b30c41482384" category="section-title">步驟3：驗證LIF並登錄序號</block>
   <block id="14e1966b2539241942d6151ccb0e2a0e" category="section-title">步驟4：在雙節點MetroCluster 的不二組態中切換回集合體</block>
   <block id="8394191e21f04380d08fe40ae8199691" category="summary">若要更換機箱、您必須關閉控制器。此程序會造成中斷。對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。</block>
   <block id="a5c7a7f72206c6b63d2ec6de862b1cfd" category="doc">關閉控制器AFF -現象A300</block>
@@ -4506,9 +4503,6 @@
   <block id="45c20771cb1532f5746ddda7446e7140" category="list-text">將每個節點開機至維護模式：</block>
   <block id="b3dd491c5d322d28567e04f0d5b0ee6f" category="list-text">當每個節點開始開機時、當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」訊息時、請按「Ctrl-C」來中斷開機程序。</block>
   <block id="647f24f2eb58a916547a537a4937864d" category="doc">完整系統還原：AFF 功能齊全的NetApp產品</block>
-  <block id="90e0a79f0dc5582ba3bb7a9b28936d5c" category="section-title">步驟2：還原儲存設備和Volume Encryption功能</block>
-  <block id="0072b0fd9d430209e4485c4040bcaa19" category="section-title">步驟3：驗證LIF並登錄序號</block>
-  <block id="bbc9c42b99312692d6c920df2a10da53" category="section-title">步驟4（MetroCluster 僅限部分內容）：在雙節點MetroCluster 的性能特性中切換回集合體</block>
   <block id="8cd2c59a1f3a2ce0c49c92a0d4528f07" category="list-text"><block ref="8cd2c59a1f3a2ce0c49c92a0d4528f07" category="inline-link-macro-rx"></block></block>
   <block id="b5b22eb5eb0f03243c0620128dd7637e" category="list-text"><block ref="b5b22eb5eb0f03243c0620128dd7637e" category="inline-link-macro-rx"></block></block>
   <block id="664d3eb774ad3059727a76a1079ff305" category="list-text"><block ref="664d3eb774ad3059727a76a1079ff305" category="inline-link-macro-rx"></block></block>
@@ -5279,7 +5273,6 @@
   <block id="22d17da6d44d1c72d2415ed45b62cc6e" category="list-text"><block ref="22d17da6d44d1c72d2415ed45b62cc6e" category="inline-link-macro-rx"></block></block>
   <block id="f18d3ce1458eacbbf20206e503ce6dcf" category="doc">更換DIMM AFF - 32</block>
   <block id="5beb49709902306e7264c7704117a827" category="section-title">步驟3：更換系統DIMM</block>
-  <block id="3848c7730c285ede150ddd598894cf0b" category="paragraph">更換系統DIMM需要透過相關的錯誤訊息來識別目標DIMM、使用通風管上的FRU對應圖或主機板上亮起的LED來找出目標DIMM、然後更換DIMM。</block>
   <block id="314e31cf4cbebcf3a827e9ba64a1e005" category="list-text">將通風管旋轉至開啟位置。</block>
   <block id="3c96abc43edac8ae6d9684f7b2c979fa" category="list-text">將DIMM從插槽中取出、方法是緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、然後將DIMM從插槽中滑出。</block>
   <block id="6867fc910d131de047b47f8e69a79887" category="paragraph">在系統中更換系統DIMM之後、您應該對該元件執行診斷測試。</block>
@@ -5313,7 +5306,6 @@
   <block id="3e39936f936e4834cc06a63b1868d4c5" category="summary">當系統登錄快閃存壽命即將結束、或辨識出的NVDIMM一般狀況不正常時、您必須更換控制器模組中的NVDIMM；否則會造成系統恐慌。</block>
   <block id="72e762fb9ea8e85f3b69ae72fd4dc171" category="doc">更換NVDIMM AFF - NVM-A320</block>
   <block id="00a491f6ddc82f254e9e3fa6711c8a44" category="section-title">步驟3：更換NVDIMM</block>
-  <block id="7ccf04d2fd9b25a78287b4db5e34e7d6" category="paragraph">若要更換NVDIMM、您必須使用通風管頂端的NVDIMM對應標籤、或使用NVDIMM旁的LED來定位NVDIMM、然後依照特定步驟順序加以更換。</block>
   <block id="d07d22679fd595588166f72cbc3fcec6" category="admonition">當您停止系統時、NVDIMM LED會在減少內容時閃爍。完成轉出後、LED會關閉。</block>
   <block id="a28d1d59ce7973c59f7c8fb5eb3f42b3" category="image-alt">以DRw A320 NVDIMM取代動畫Gif</block>
   <block id="47cd398c5a2374103dbd8377631bc325" category="list-text">打開通風管、然後在控制器模組的插槽11中找到NVDIMM。</block>
@@ -5387,7 +5379,6 @@
   <block id="d221362a63e7ae50e83d35a15224dfbc" category="inline-link">尋找Data ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）</block>
   <block id="fdb5e3795d932923cacf5ee53c989cbb" category="paragraph"><block ref="fdb5e3795d932923cacf5ee53c989cbb" category="inline-link-rx"></block></block>
   <block id="8b641292568e892fbb88f218a413255c" category="paragraph">系統會在載入程式提示下停止。</block>
-  <block id="00bfced11707df12b7beabc9cb1854c6" category="list-text">返回管理權限層級：</block>
   <block id="550ffaa7219faf74146770514db0d8e8" category="inline-link-macro">準備netboot</block>
   <block id="df5267f8e4bbfa9add1dd732e6b68e41" category="inline-link-macro">在節點4上設定FC或UTA/UTA2組態</block>
   <block id="97c16f2bd68041ac79ef06049407d0c7" category="list-text">結束維護模式：</block>
@@ -5498,25 +5489,11 @@
   <block id="86c3969f421b58d4b4b270ed1fb7b003" category="section-title">步驟1：在ONTAP 不支援的情況下安裝更換控制器的授權</block>
   <block id="d9a7a09d2734ecc763c0c5a8586a61a3" category="doc">重新連接系統並重新分配磁碟- AFF 《》（《》）-《》（《The》）</block>
   <block id="b279b6600d5af224d26ab7bab80082c7" category="section-title">步驟2：驗證HA系統上的系統ID變更</block>
-  <block id="ecc93de5d9e6d1de2c8f307f37c933d1" category="list-text">如果_replaced_控制器處於維護模式（顯示"*&gt;"提示符）、請退出維護模式並進入載入程式提示：</block>
   <block id="1ece66f8bf58294a3a5da700df5daffe" category="list-text">在_replace_控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「* y*」。</block>
-  <block id="ad40e97175b514d2c81a91067ad04ed7" category="list-text">請等到_replace_控制器主控台顯示「waiting for恢復...」（正在等待恢復...）訊息、然後從健全的控制器驗證是否已自動指派新的合作夥伴系統ID：</block>
-  <block id="b36708a8226ddc48a16407516f32b6ae" category="paragraph">"*「儲存容錯移轉顯示」*</block>
-  <block id="109773e48c8731216edae51d1686c8bc" category="list-text">變更為進階權限層級：</block>
   <block id="2fb10535c586c96b3774f785a3997a21" category="paragraph">「*設定-權限進階*」</block>
   <block id="e510b81f84ff95d9355a3f8777aac54e" category="paragraph">當系統提示您繼續進入進階模式時、您可以回應「* Y*」。出現進階模式提示（*&gt;）。</block>
-  <block id="cd398a68db8f00186aae955968cc06d7" category="list-text">儲存任何核心傾印：</block>
-  <block id="5bedc6fbcb54f704df8ebd472d318d98" category="paragraph">系統節點執行節點_normal-node-name_合作夥伴儲存資源*</block>
-  <block id="5ba88971aec930df5e482b401ee5bda7" category="paragraph">您可以輸入下列命令來監控Savecore命令的進度：</block>
-  <block id="0a6496658205fc38ba1b1f3e184070ba" category="paragraph">系統節點執行節點_normal-node-name_合作夥伴儲存資源-s*</block>
   <block id="e16abfed5120765160124f48c832fec8" category="paragraph">「*設定-權限管理*」</block>
-  <block id="65ae07541c754093eda9cd898cf890f7" category="list-text">從健全的控制器、將更換的控制器儲存設備交回：</block>
-  <block id="84a63e5c67c16845df7acbd3cae860da" category="paragraph">`*儲存容錯移轉恢復-ofnode_replace_name_*</block>
   <block id="393be3b3a8c5c898411ba572d160869b" category="paragraph">如果系統ID不相符、系統提示您覆寫系統ID、您應該輸入「* y *」。</block>
-  <block id="2e02c080662f8fd550785b87be3c1144" category="list-text">確認每個控制器都有預期的磁碟區：</block>
-  <block id="e3de43ab4017cb33908b0ff634023d7d" category="paragraph">‘* vol show -node-name_*’</block>
-  <block id="f7e34e40e37b03149dbadb73b8513476" category="list-text">如果您在重新開機時停用自動接管、請從健全的控制器啟用：</block>
-  <block id="73b172a422efac317883ee1a518015e1" category="paragraph">hy*儲存容錯移轉修改-nodee-node-name_-onrebooteal*</block>
   <block id="ca305e69a315b30dad8d789c197489f9" category="doc">關閉控制器AFF -現象C190</block>
   <block id="0f614c99bcb66f2ffd7b4fb27558ea2a" category="doc">機箱更換總覽- AFF C190</block>
   <block id="0d76ca0117187df0c8275a536ccc39ef" category="doc">更換控制器模組硬體AFF - REC190</block>
@@ -7354,4 +7331,10 @@
   <block id="6c0f8c80eb90bb62692eec695b2b97a4" category="paragraph">您必須在控制器模組中移除中間的PCIe模組、找出故障的開機媒體、然後更換開機媒體、才能找到故障的開機媒體。</block>
   <block id="75482a309ad2153a216d2cc1f37de42a" category="list-text">找到故障開機媒體。</block>
   <block id="3f09782d88b17a1d4d58adb09f8cd8ee" category="paragraph">若要更換DIMM、您必須使用控制器模組內部的DIMM對應圖、將其放入控制器模組、然後依照特定步驟順序加以更換。</block>
+  <block id="161316904c049c8661c4860ac103d326" category="list-text">如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：</block>
+  <block id="cd52056b12799b75e95ce3715dbd95d0" category="section-title">步驟2：驗證LIF並登錄序號</block>
+  <block id="e5d342b84a7b4a1d294e75d2ff62d759" category="section-title">步驟2：驗證LIF並登錄序號</block>
+  <block id="483a752599520b0534872ca3822c9083" category="list-text">確認每個控制器都有預期的磁碟區：<block ref="6931ff74d75f98d072d2434c71cfc1e4" prefix=" " category="inline-code"></block></block>
+  <block id="8ba332a9944c2e6a66e36aee66689593" category="section-title">步驟2：驗證LIF並登錄序號</block>
+  <block id="6de93a3d40cba5a9f17ae225a0a97f4e" category="section-title">步驟3：MetroCluster （僅供參考）：在雙節點MetroCluster 的「僅供參考」組態中切換回集合體</block>
 </blocks>

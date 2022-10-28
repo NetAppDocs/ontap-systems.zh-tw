@@ -49,23 +49,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
-== 步驟2：還原儲存設備和Volume Encryption功能
-
-針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
-
-.步驟
-. 使用中的適當程序還原儲存設備或Volume Encryption功能 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密總覽"^]。
-. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
-+
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
-
-
-
-
-
-
-== 步驟3：驗證LIF並登錄序號
+== 步驟2：驗證LIF並登錄序號
 
 在將_replacement節點送回服務之前、您應該先確認該生命點是否位於其主連接埠上、如果AutoSupport 啟用了「BIOS」、請登錄_replacement節點的序號、然後重設自動恢復。
 
@@ -85,7 +69,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
-== 步驟4（MetroCluster 僅限部分內容）：在雙節點MetroCluster 的性能特性中切換回集合體
+== 步驟3：MetroCluster （僅供參考）：在雙節點MetroCluster 的「僅供參考」組態中切換回集合體
 
 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
 
@@ -143,6 +127,6 @@ Remote: cluster_A configured      		normal
 
 
 
-== 將故障零件歸還給NetApp
+== 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

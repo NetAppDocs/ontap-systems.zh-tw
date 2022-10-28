@@ -65,15 +65,24 @@ node2             node1             -            Waiting for giveback (HA mailbo
 . 從健全的控制器、確認已儲存任何核心傾印：
 +
 .. 變更為進階權限等級：「et -priv榮幸 進階」
+
+
+. 如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
 +
 當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
 
-.. 儲存任何核心傾印：「系統節點執行節點_nocal-node-name_合作夥伴儲存資源」
-.. 等待「Wavecore」命令完成後、再發行傳回。
++
+... 儲存任何核心傾印：「系統節點執行節點_nocal-node-name_合作夥伴儲存資源」
+... 等待「Wavecore」命令完成後、再發行傳回。
 +
 您可以輸入下列命令來監控「savecore」命令的進度：「ystem noder run -node-node-name_合作夥伴savecore -ss」
 
-.. 返回管理員權限等級：「et -priv. admin」
+... 返回管理員權限等級：「et -priv. admin」
+
+
 
 
 . 退回控制器：

@@ -76,6 +76,12 @@ node2             node1             -            Waiting for giveback (HA mailbo
 .. 返回管理員權限等級：「et -priv. admin」
 
 
+. 如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+
+
 . 退回控制器：
 +
 .. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
@@ -172,5 +178,11 @@ disk_name    system-1  (118065481)  Pool0  J8Y0TDZC       system-1  (118065481)
 .
 
 ----
+. 如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+
+
 . 開機節點：「boot_ONTAP」
 

@@ -76,6 +76,12 @@ node2             node1             -            Waiting for giveback (HA mailbo
 .. 返回管理員權限等級：「et -priv. admin」
 
 
+. 如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：
++
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+
+
 . 回饋節點：
 +
 .. 從健全的節點、歸還替換節點的儲存設備：「儲存容錯移轉恢復-節點_replace_node_name_」
