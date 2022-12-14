@@ -21,6 +21,7 @@ summary: 本節提供安裝FAS500f系統的詳細逐步指示。
 
 您必須能夠存取 link:https://hwu.netapp.com["NetApp Hardware Universe"^] （HWU）以取得站台需求的相關資訊、以及設定系統的其他資訊。您可能也想要存取 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["版本的發行說明ONTAP"^] 以取得此系統的詳細資訊。
 
+.您需要的一切
 您必須在網站上提供下列資訊：
 
 * 儲存系統的機架空間
@@ -175,6 +176,7 @@ image::../media/drw_affa250_weight_caution.png[DRw affa250重量注意事項]
 
 控制器模組上的管理、光纖通道及資料或主機網路連接埠均連接至交換器。兩個控制器模組上的叢集互連連接埠均已連接好纜線。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -229,6 +231,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 控制器上的所有連接埠均連接至交換器；叢集互連、管理、光纖通道、以及資料或主機網路交換器。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -287,6 +290,7 @@ image::../media/oie_legend_icon_attn_symbol.png[OIE圖例圖示收件人符號]
 
 控制器上的Fibre Channel連接埠連接至Fibre Channel主機網路交換器。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -315,8 +319,8 @@ image::../media/drw_affa250_fc_host_cabling.png[DRW仿射250光纖通道主機�
  a| 
 若要執行其他選用的纜線、請選擇：
 
-*  2: Cable to a 25GbE data or host network
-*  3: Cable the controllers to a single drive shelf
+* <<選項2：連接至25GbE資料或主機網路的纜線>>
+* <<選項3：將控制器連接至單一磁碟機櫃>>
 
 
 
@@ -333,6 +337,7 @@ image::../media/drw_affa250_fc_host_cabling.png[DRW仿射250光纖通道主機�
 
 控制器上的25GbE連接埠連接至25GbE資料或主機網路交換器。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -361,8 +366,8 @@ image::../media/drw_affa250_25gbe_host_cabling.png[DRW AFFa250 25GbE主機纜線
  a| 
 若要執行其他選用的纜線、請選擇：
 
-*  1: Cable to a Fibre Channel host network
-*  3: Cable the controllers to a single drive shelf
+* <<選項1：連接至光纖通道主機網路的纜線>>
+* <<選項3：將控制器連接至單一磁碟機櫃>>
 
 
 

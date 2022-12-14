@@ -47,14 +47,14 @@ summary: 您必須重新儲存並確認磁碟重新指派。
  a| 
 HA配對
  a| 
- 1: Verify the system ID change on an HA system]
+<<選項1：驗證HA系統上的系統ID變更>>]
 
 
 
  a| 
 雙節點MetroCluster 的不全功能組態
  a| 
- 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration
+<<選項2：手動重新指派雙節點MetroCluster 的系統ID>>
 
 |===
 
@@ -149,6 +149,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 在執行支援功能的雙節點MetroCluster 版的支援功能組態ONTAP 中、您必須手動將磁碟重新指派給新的控制器系統ID、才能將系統恢復正常運作。
 
+.關於這項工作
 此程序僅適用於MetroCluster 執行ONTAP 下列項目的雙節點系統：
 
 您必須確定在正確的節點上發出此程序中的命令：

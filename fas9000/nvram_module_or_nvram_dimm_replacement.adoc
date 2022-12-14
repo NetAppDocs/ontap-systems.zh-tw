@@ -397,6 +397,7 @@ DIMM和DIMM彈出卡舌
 ====
 .選項1：驗證ID（HA配對）
 --
+.驗證HA系統上的系統ID變更
 [role="lead"]
 您必須在開機_replaced_節點時確認系統ID變更、然後驗證變更是否已實作。
 
@@ -517,9 +518,11 @@ dr-group-id            cluster node           configuration-state
 --
 .選項2：重新指派ID MetroCluster （資訊組態）
 --
+.在雙節點MetroCluster 的不全功能組態中重新指派系統ID
 [role="lead"]
 在執行支援功能的雙節點MetroCluster 版的支援功能組態ONTAP 中、您必須手動將磁碟重新指派給新的控制器系統ID、才能將系統恢復正常運作。
 
+.關於這項工作
 此程序僅適用於MetroCluster 執行ONTAP 下列項目的雙節點系統：
 
 您必須確定在正確的節點上發出此程序中的命令：

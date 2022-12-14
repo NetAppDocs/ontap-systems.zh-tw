@@ -19,6 +19,7 @@ summary: 這份提供安裝典型NetApp系統的詳細逐步指示。
 
 若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
 
+.開始之前
 [role="lead"]
 您必須能夠存取 https://hwu.netapp.com["NetApp Hardware Universe"^] 以取得站台需求的相關資訊、以及設定系統的其他資訊。
 
@@ -203,6 +204,7 @@ image::../media/drw_9000_cable_management_arms.png[DRw 9000纜線管理臂]
 [role="lead"]
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
 
+.開始之前
 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
@@ -273,7 +275,7 @@ image::../media/oie_legend_icon_4_dr.png[OIE圖例圖示4災難恢復]
 image:../media/oie_cable_sfp_gbe_copper.png[""]
 
 |===
-. 若要纜線連接儲存設備、請參閱  4: Cable controllers to drive shelves。
+. 若要纜線連接儲存設備、請參閱 <<步驟4：連接磁碟機櫃的纜線控制器>>。
 
 
 
@@ -283,6 +285,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[""]
 [role="lead"]
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
 
+.開始之前
 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
@@ -353,7 +356,7 @@ image::../media/oie_legend_icon_4_dr.png[OIE圖例圖示4災難恢復]
 image:../media/oie_cable_sfp_gbe_copper.png[""]
 
 |===
-. 若要纜線連接儲存設備、請參閱  4: Cable controllers to drive shelves。
+. 若要纜線連接儲存設備、請參閱 <<步驟4：連接磁碟機櫃的纜線控制器>>。
 
 
 
@@ -420,7 +423,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 
 |===
 +
-.. 若要完成系統設定、請參閱  5: Complete system setup and configuration。
+.. 若要完成系統設定、請參閱 <<步驟5：完成系統設定與組態設定>>。
 
 
 
@@ -489,7 +492,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 100 GbE纜線
 
 |===
-. 若要完成系統設定、請參閱  5: Complete system setup and configuration。
+. 若要完成系統設定、請參閱 <<步驟5：完成系統設定與組態設定>>。
 
 
 

@@ -15,6 +15,7 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 
 若要更換和NVRAM DIMM、您必須從機箱中取出NVRAM模組、裝回模組中故障的DIMM、然後重新安裝NVRAM模組。
 
+.關於這項工作
 由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
 
 .開始之前
@@ -35,6 +36,7 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 
 == 步驟1：關閉受損的控制器
 
+.步驟
 [role="lead"]
 使用下列其中一個選項來關閉或接管受損的控制器。
 

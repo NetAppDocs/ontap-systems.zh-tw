@@ -21,6 +21,7 @@ summary: 這份提供安裝典型NetApp系統的詳細逐步指示。
 
 您必須能夠存取 https://hwu.netapp.com["NetApp Hardware Universe"^] 以取得站台需求的相關資訊、以及設定系統的其他資訊。
 
+.您需要的一切
 您可能也想要存取 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["發行說明ONTAP"^] 如ONTAP 需此系統的詳細資訊、請參閱您的版本的
 
 您必須在網站上提供下列資訊：
@@ -215,6 +216,7 @@ image::../media/drw_9500_cable_management_arms.svg[DRW 9500纜線管理臂]
 --
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
 
+.開始之前
 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
@@ -288,7 +290,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 |===
 . 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。
 . 將纜線固定在纜線管理臂上（未顯示）。
-. 若要纜線連接儲存設備、請參閱  4: Cable controllers to drive shelves。
+. 若要纜線連接儲存設備、請參閱 <<步驟4：連接磁碟機櫃的纜線控制器>>。
 
 
 --
@@ -296,6 +298,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 --
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
 
+.開始之前
 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
@@ -369,7 +372,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 |===
 . 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。
 . 將纜線固定在纜線管理臂上（未顯示）。
-. 若要纜線連接儲存設備、請參閱  4: Cable controllers to drive shelves。
+. 若要纜線連接儲存設備、請參閱 <<步驟4：連接磁碟機櫃的纜線控制器>>。
 
 
 --
@@ -429,7 +432,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD�
 Mini-SAS纜線
 
 |===
-. 若要完成系統設定、請參閱  5: Complete system setup and configuration。
+. 若要完成系統設定、請參閱 <<步驟5：完成系統設定與組態設定>>。
 
 
 

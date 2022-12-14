@@ -13,6 +13,7 @@ summary: 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增�
 [role="lead"]
 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12/IOM12B模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。
 
+.關於這項工作
 您無法使用此程序來混合堆疊：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。如果您需要混合堆疊、請使用 link:iom12-hot-add-mix.html["將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊"]。
 
 
@@ -321,6 +322,7 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 [role="lead"]
 您可以將SAS連線（即機櫃對機櫃和控制器對堆疊）連接至熱新增磁碟櫃、以便它們能夠連線至系統。
 
+.開始之前
 您必須符合中的要求 link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules["使用IOM12模組熱新增磁碟櫃的需求"] 並依照中的指示、為每個磁碟櫃設定機櫃ID link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add["使用IOM12模組安裝磁碟櫃以進行熱新增"]。
 
 .關於這項工作
@@ -446,7 +448,7 @@ NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長�
 |===
 . 如果您將使用Mini-SAS HD SAS光纖纜線的磁碟櫃熱新增至使用SAS銅線連接的磁碟櫃堆疊、請更換SAS銅線；否則、請執行下一步。
 +
-堆疊必須符合中所述的要求  for hot-adding disk shelves with IOM12 modules 本程序的一節。
+堆疊必須符合中所述的要求 <<使用IOM12模組熱新增磁碟櫃的需求>> 本程序的一節。
 
 +
 一次更換一條纜線、並確定拔下纜線和連接新纜線之間至少等待70秒。

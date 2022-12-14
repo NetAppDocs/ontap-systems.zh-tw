@@ -21,6 +21,7 @@ summary: 本節將詳細說明如何安裝AFF 一套功能完善的系統。
 
 您必須能夠存取 link:https://hwu.netapp.com["NetApp Hardware Universe"^] （HWU）以取得站台需求的相關資訊、以及設定系統的其他資訊。您可能也想要存取 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["版本的發行說明ONTAP"^] 以取得此系統的詳細資訊。
 
+.您需要的一切
 您必須在網站上提供下列資訊：
 
 * 儲存系統的機架空間
@@ -200,6 +201,7 @@ image::../media/drw_affa800_install_cable_mgmt.png[DRw affa800安裝纜線管理
 
 控制器上的管理網路連接埠連接至交換器。兩個控制器上的HA互連和叢集互連連接埠均已連接好纜線。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -257,10 +259,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . 若要執行選購的纜線、請參閱：
 +
-**  1: Connect to a Fibre Channel host
-**  2: Connect to a 10GbE host
-**  3: Connect to a single direct-attached NS224 drive shelf
-**  4: Connect to two direct-attached NS224 drive shelves
+** <<Option 1: Connect to a Fibre Channel host>>
+** <<Option 2: Connect to a 10GbE host>>
+** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 . 若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
@@ -272,6 +274,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 控制器上的叢集互連和管理網路連接埠會連接至交換器、而HA互連連接埠則連接至兩個控制器。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -325,10 +328,10 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 |===
 . 若要執行選購的纜線、請參閱：
 +
-**  1: Connect to a Fibre Channel host
-**  2: Connect to a 10GbE host
-**  3: Connect to a single direct-attached NS224 drive shelf
-**  4: Connect to two direct-attached NS224 drive shelves
+** <<Option 1: Connect to a Fibre Channel host>>
+** <<Option 2: Connect to a 10GbE host>>
+** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 . 若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
@@ -346,6 +349,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 控制器上的Fibre Channel連接埠連接至Fibre Channel主機網路交換器。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -372,8 +376,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
  a| 
 若要執行其他選用的纜線、請選擇：
 
-*  3: Connect to a single direct-attached NS224 drive shelf
-*  4: Connect to two direct-attached NS224 drive shelves
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 
@@ -390,6 +394,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 控制器上的10GbE連接埠連接至10GbE主機網路交換器。
 
+.開始之前
 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
@@ -416,8 +421,8 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
  a| 
 若要執行其他選用的纜線、請選擇：
 
-*  3: Connect to a single direct-attached NS224 drive shelf
-*  4: Connect to two direct-attached NS224 drive shelves
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 
 
@@ -434,6 +439,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 您必須將每個控制器纜線連接至NS224磁碟機櫃上的NSM模組。
 
+.開始之前
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
 image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
@@ -471,6 +477,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 
 您必須將每個控制器連接至兩個NS224磁碟機櫃上的NSM模組。
 
+.開始之前
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
 image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]

@@ -20,6 +20,7 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 [role="lead"]
 若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
 
+.開始之前
 您必須能夠存取Hardware Universe 有關站台需求的資訊、以及設定系統的其他資訊。您也可以存取ONTAP 版本的《發行說明》、以取得更多關於此系統的資訊。
 
 https://hwu.netapp.com["NetApp Hardware Universe"]
@@ -237,7 +238,7 @@ video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
 
 image::../media/drw_9000_TNSC_composite_cabling.png[DRw 9000 TSC複合纜線]
 
-. 前往  4: Cable controllers to drive shelves 以取得磁碟機櫃佈線指示。
+. 前往 <<步驟4：連接磁碟機櫃的纜線控制器>> 以取得磁碟機櫃佈線指示。
 
 
 
@@ -265,7 +266,7 @@ video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
 
 image:../media/drw_9000_switched_cluster_cabling.png[""]
 
-. 前往  4: Cable controllers to drive shelves 以取得磁碟機櫃佈線指示。
+. 前往 <<步驟4：連接磁碟機櫃的纜線控制器>> 以取得磁碟機櫃佈線指示。
 
 
 
@@ -324,7 +325,7 @@ link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
 
-. 前往  5: Complete system setup and configuration 以完成系統設定與組態。
+. 前往 <<步驟5：完成系統設定與組態設定>> 以完成系統設定與組態。
 
 
 
@@ -360,7 +361,7 @@ image::../media/drw_ns224_a700_1shelf.png[DRw n224 a700 1個機櫃]
 +
 image::../media/single_NS224_shelf.png[單一NS224機櫃]
 
-. 前往  5: Complete system setup and configuration 以完成系統設定與組態。
+. 前往 <<步驟5：完成系統設定與組態設定>> 以完成系統設定與組態。
 
 
 
@@ -396,7 +397,7 @@ image::../media/drw_ns224_a700_2shelves.png[新南224 a700 2個磁碟櫃]
 +
 image::../media/two_NS224_shelves.png[兩個NS224磁碟櫃]
 
-. 前往  5: Complete system setup and configuration 以完成系統設定與組態。
+. 前往 <<步驟5：完成系統設定與組態設定>> 以完成系統設定與組態。
 
 
 
