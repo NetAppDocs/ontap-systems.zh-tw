@@ -769,8 +769,6 @@
   <block id="7406636825b302f07932b3580dc3aa5b" category="doc">關閉控制器AFF -現象A200</block>
   <block id="b5d03ef67a171c85bf4bd311e2fd75df" category="paragraph">您必須先關閉機箱中的控制器或控制器、才能將其移至新機箱。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">關於這項工作</block>
-  <block id="a2960939186ae78b824d694e2cbba800" category="inline-link-macro">使用CLI進行系統管理總覽</block>
-  <block id="c53eb92ae6b734f0f5b5e257acb152cb" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
   <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">如果您的系統有兩個控制器模組、請停用HA配對。</block>
   <block id="d426a3f5c9c0e3362f4ed536e7643c03" category="cell">如果您的系統執行叢集ONTAP 式的</block>
   <block id="93ff4b8a35c5f08ad3e97fdc9983948e" category="paragraph">叢集中的兩個控制器</block>
@@ -788,7 +786,6 @@
   <block id="b626e8ed8cb40b390a06b7c8ce9a8cf2" category="list-text">您必須使用從供應商處收到的替換FRU元件來更換故障元件。</block>
   <block id="118a19c264126d2eb7de4542c32c102d" category="section-title">步驟1：關閉受損的控制器</block>
   <block id="3a11addb86720d7891a7b14fea7f4776" category="paragraph">若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。</block>
-  <block id="22a3fad7c3cfdd379a652e4aa08aa70e" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="1baf9f7ecc4554f61d6168e4897ea002" category="inline-link-macro-rx"></block>。</block>
   <block id="04b13459c31bdc128c187f2b882c3d74" category="list-text">停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」</block>
   <block id="087b01deb1bef7c8b4ffe6fe81283666" category="list-text">將受損的控制器移至載入器提示：</block>
   <block id="ebc5673f419bc9da94f2c2f001aaf3ff" category="cell">如果受損的控制器正在顯示...</block>
@@ -1292,7 +1289,6 @@
   <block id="11d90ad9838fdc1545ee368cd8943df9" category="list-text">視需要移除舊授權：</block>
   <block id="eb9892aa7a6ee6cfe6b30dad735d6d7a" category="list-text">檢查未使用的授權：「授權清理-未使用的-Simulate」</block>
   <block id="f77eef718a5ddb0006a44a75016370bf" category="list-text">如果清單看起來正確、請移除未使用的授權：「授權清理-未使用」</block>
-  <block id="37b0fb827bbc179115abc1768c9c5f12" category="paragraph">針對先前設定為使用儲存設備或Volume Encryption的儲存系統、更換控制器模組或NVRAM模組之後、您必須執行其他步驟、才能提供不中斷的加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">步驟</block>
   <block id="e68c8836280fba147b04a2b14b196600" category="list-text">視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：</block>
   <block id="7b5b637cc082477a9dd4c129c225152e" category="inline-link">還原內建金鑰管理加密金鑰</block>
@@ -2756,12 +2752,9 @@
   <block id="1a012ae90c41b7530ce0df40b8053d54" category="section-title">選項1：如果已啟用網路探索</block>
   <block id="03acfd01fa7e9005a658be1126450720" category="paragraph">如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。</block>
   <block id="5eadc00e7d9146c2fd474e7d8d5f5137" category="list-text">使用下列動畫或繪圖來設定一或多個磁碟機櫃ID：</block>
-  <block id="f551b341dd5555b5471ea63f7fad8db8" category="paragraph">NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。</block>
   <block id="6b39390f8836ac9ddcaf033f6ec9d535" category="image-alt">在設定機櫃ID集上啟動的DRW</block>
   <block id="543ab7831f0589c951278e6073647eb0" category="paragraph">取下端蓋。</block>
   <block id="77b9275f6fd711644f4214aa9c1fd216" category="paragraph">按住機櫃ID按鈕、直到第一位數開始閃燈、然後按下以前進至0-9。</block>
-  <block id="5463cd717cd1248bc167a0577c0d17a5" category="paragraph">附註：第一個數字會持續閃爍</block>
-  <block id="f5e9a997371da544ff3b8bba352ef6e5" category="paragraph">按住機櫃ID按鈕、直到第二位數開始閃爍、然後按下以前進至0-9。附註：第一位數會停止閃爍、第二位數會繼續閃爍。</block>
   <block id="72e911c52ba51e970a39b1b30b1c8424" category="paragraph">更換端蓋。</block>
   <block id="241b3d2acad120dfd8decf92e173cd23" category="paragraph">等待10秒鐘、等待黃色LED（！） 如需顯示、請關閉磁碟機櫃電源、然後重新開啟以設定機櫃ID。</block>
   <block id="a2e521b7ad497537c9e544a50086c51b" category="list-text">將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。</block>
@@ -2871,7 +2864,6 @@
   <block id="23b82013e68c4445eaa3ec355ca09fb4" category="summary">NVRAM模組包含NVRAM11和DIMM、以及每個NVRAM模組最多兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。</block>
   <block id="b422a6f4d3945c00efbef5a1554df972" category="doc">更換NVRAM模組和/或NVRAM DIMM AFF - REVA900</block>
   <block id="4d365227a3a5ccf9886fa9c35ba6a99d" category="paragraph">NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的NVRAM模組、您必須將其從機箱中取出、將DIMM移至更換模組、然後將替換的NVRAM模組安裝到機箱中。</block>
-  <block id="50b70636b9b845e1cca7db72fbdeec68" category="paragraph">若要更換和NVRAM DIMM、您必須從機箱中取出NVRAM模組、裝回模組中故障的DIMM、然後重新安裝NVRAM模組。</block>
   <block id="356bb2eaf8fe1f9955f9f22e00ddcb54" category="paragraph">由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。</block>
   <block id="1e27080aaa4839341247d89fa27230f6" category="list-text">受損的控制器是您要執行維護的控制器。</block>
   <block id="cb82be680779cb2f6fe87d5303395ca3" category="list-text">健全的控制器是受損控制器的HA合作夥伴。</block>
@@ -2906,14 +2898,9 @@
   <block id="d2afd23f9efb1f5de6cadd26fcce1cf5" category="section-title">步驟5：驗證並設定控制器模組的HA狀態</block>
   <block id="f95e8e8b229c3aee97b205509f91df66" category="section-title">步驟6：重新指派磁碟</block>
   <block id="75058bf61b1188ee8304798f89ca02bf" category="paragraph">您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。</block>
-  <block id="fa0bfd482c7a3a6dfc65930e176b0502" category="list-text">如果更換的控制器處於維護模式（顯示「*」&gt;提示、請結束維護模式、然後進入載入器提示：「halt」（停止）</block>
-  <block id="ba6fae1de76d6230e1c74a17242ebf97" category="list-text">在更換控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。</block>
-  <block id="a0d04de6e8774043ed7dd31ce11a9577" category="list-text">等到更換控制器主控台顯示「Waiting for恢復...（等待恢復...）」訊息、然後從健全的控制器確認已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」</block>
   <block id="8672de10e3d8295abd1be60e2569c4c6" category="list-text">儲存任何核心傾印：「系統節點執行節點本機節點名稱合作夥伴儲存資源」</block>
-  <block id="544b7fcf1fe2aaedd577ba107a7f6a56" category="paragraph">您可以輸入下列命令來監控savecore命令的進度：「ystem節點run -node-node-name合作夥伴savecore -ss」</block>
   <block id="590ef635c433371eead20b940bf6c429" category="list-text">從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode替 用節點名稱」</block>
   <block id="4cd2ac4c22d2d6323c4f80d036ea5320" category="paragraph">更換的控制器會恢復儲存設備、並完成開機。</block>
-  <block id="5e0cea5d67aaa32c62721aadfacd5df4" category="paragraph">屬於替換控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：</block>
   <block id="e8d2a192788fc79eb80ab29e07304094" category="paragraph">更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster</block>
   <block id="11cd58ab2810de65be01109093020b63" category="list-text">替換控制器是災難站台上磁碟的目前擁有者。</block>
   <block id="7285c4012d903a86f08da4d4eb643a35" category="paragraph">請參閱<block ref="1c9dcde47ee822b3ac120aae2f296f05" category="inline-link-rx"></block> 以取得更多資訊。</block>
@@ -2981,7 +2968,6 @@
   <block id="86b058636c934f73a262e3a5469f088e" category="paragraph">本主題提供圖形指示、說明如何從機架安裝和纜線安裝系統、直到系統初次開機為止。如果您熟悉NetApp系統的安裝、請使用本內容。</block>
   <block id="350cd17d7031de85301f98a531f45f4c" category="paragraph">存取安裝與設定指示_ PDF海報：</block>
   <block id="cd9130a2736bae3213b0c2da4de3435e" category="inline-link-macro">《關於安裝與設定的資訊》AFF</block>
-  <block id="4409045029375618296b6ed24e35aec6" category="paragraph"><block ref="4409045029375618296b6ed24e35aec6" category="inline-link-macro-rx"></block></block>
   <block id="e81993a1d153ae6594cc7e0070093d6a" category="doc">搬移及更換硬體AFF - REWAI-A900</block>
   <block id="a30a15e944afabde046385685fec252c" category="paragraph">若要更換機箱、您必須從舊機箱中取出元件、然後將其安裝在替換機箱中。</block>
   <block id="0a7d4055ebf0329a7a3468cd3ccca3ca" category="section-title">步驟1：移除電源供應器</block>
@@ -6767,9 +6753,6 @@
   <block id="8456c08b8772c6458de93a0a78ff4f85" category="paragraph">移除左右纜線鏈之後、您可以從磁碟機櫃中移除磁碟機抽屜。移除磁碟機抽取器時、必須將抽取器的一部分滑出、移除磁碟機、以及移除磁碟機抽取器。</block>
   <block id="40cfdd2fa544c18fef836a58df7bb2e9" category="list-text">在您要安裝的磁碟機上、將握把垂直提起。</block>
   <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">如果您的磁碟櫃已部分裝入、表示您要重新安裝磁碟機的磁碟櫃所含的磁碟機數量少於其支援的12個磁碟機、請將前四個磁碟機安裝至前插槽（0、3、6和9）。</block>
-  <block id="dbe360eaa5ee89fd4f31c500db9f2fd7" category="paragraph"><block ref="dbe360eaa5ee89fd4f31c500db9f2fd7" category="inline-link-rx"></block></block>
-  <block id="44eacc26d730bc46ddc55858ccb8e7e3" category="list-text">如果您使用SAN系統、則必須檢查受損控制器SCSI刀鋒的事件訊息（「事件記錄顯示」）。</block>
-  <block id="503506ac51c03177e4e29bdd8f3f83e0" category="list-text">使用中的適當程序還原儲存設備或Volume Encryption功能<block ref="2ff5666698979ec87e001217f795c3dd" category="inline-link-rx"></block>。</block>
   <block id="b18ad0a07953c39e92025f3df711d7e8" category="list-text"><block ref="b18ad0a07953c39e92025f3df711d7e8" category="inline-link-rx"></block></block>
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
   <block id="d331c2ddc96dbf38f25371617243bf17" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="1ab03132ea6210439f901707b3806211" category="inline-link-macro-rx"></block>。</block>
@@ -7343,4 +7326,38 @@
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">您需要的產品</block>
   <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">步驟1：在ONTAP 更新版本中安裝_replace_控制器的授權</block>
   <block id="541648f14089765ba6e8c3198be32507" category="section-title">步驟2：更換開機媒體</block>
+  <block id="6fdf23777adc5b39f52f2829b69833e5" category="inline-link-macro">將節點與叢集同步</block>
+  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="7260398ee351f45c2b93073dcc9f358d" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 若要取得資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="692418fcc9983296fd6b89b4072b99d2" category="inline-link-macro">將SED恢復為無保護模式</block>
+  <block id="aa641c641cc4509747c629778ceba1e6" category="list-text">如果您使用NetApp儲存加密、則必須依照中的指示重設MSID <block ref="deeaf76d485e47e462d03c774bc2ca5e" category="inline-link-macro-rx"></block>。</block>
+  <block id="dca9d9d34ff973dbf261373e223aa9e4" category="list-text">如果您有SAN系統、則必須檢查事件訊息 <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>（用於控制器SCSI刀鋒伺服器）。。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> 命令會顯示節點名稱、該節點的仲裁狀態、該節點的可用度狀態、以及該節點的作業狀態。</block>
+  <block id="03733c422db2a03d86659ae5a1e923dc" category="paragraph">下列AutoSupport 資訊不顯示自動建立案例兩小時：<block ref="387708b955ccf034fcf9197ad51ba879" prefix=" " category="inline-code"></block></block>
+  <block id="f1f0ba04096d04407de2d15a11510ac1" category="paragraph">系統提示或密碼提示</block>
+  <block id="639008d04bbddd83a85cafeeb0a39a18" category="paragraph">對於先前設定為使用儲存設備或Volume Encryption的儲存系統、您必須執行其他步驟以提供不中斷加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。</block>
+  <block id="96e55b268667b462cab9bd34069f1863" category="admonition">更換DIMM時不需要執行此步驟。</block>
+  <block id="ff0dc22dde7f31608d4b3c140aa680a6" category="list-text">重設SED MSID</block>
+  <block id="fc3118913338c7fb342195db815855cb" category="admonition">如果您要佈線MetroCluster 成一個靜態IP組態、連接埠e0a/e0b可用於託管資料生命量（通常在預設IPSpace中）。</block>
+  <block id="450bb6c29a5f5af0fe4d1f8fcfcb4777" category="paragraph">交換電源供應器包括關閉、拔下及移除電源供應器、以及安裝、連接及開啟更換的電源供應器。</block>
+  <block id="3e476a4d56adc74857e9c49cf82980f1" category="list-text">系統中有四個電源供應器。</block>
+  <block id="d35281b877a38ecad54d9ac919c0ff9a" category="list-text">將電源線重新連接至電源供應器。</block>
+  <block id="5803fc3bcce0b024b213bb355de85f8f" category="paragraph">NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。請參閱<block ref="86c3962fabec597b00cc6faeabccf883" category="inline-link-rx"></block> 以取得詳細指示。</block>
+  <block id="312be20d26d0db2b40b706dc2f350028" category="image-alt">DRw A900 oie變更新南澳州224機櫃ID IEOPS 836</block>
+  <block id="48fb10beb7e1cd15b9bdbab40aac9532" category="paragraph">機櫃端蓋</block>
+  <block id="22f4a2aa68e94fdf29e1fc7d0f30d571" category="paragraph">機櫃面板</block>
+  <block id="fd4a04a1b7abc5cadef1bf584e6e5547" category="paragraph">機櫃ID LED</block>
+  <block id="700f4fc6f1e4c3e585e23be6378affa0" category="paragraph">機櫃ID設定按鈕</block>
+  <block id="1f35a49e1a9f3ad335b1add2e4080478" category="paragraph"><block ref="1f35a49e1a9f3ad335b1add2e4080478" category="inline-link-macro-rx"></block></block>
+  <block id="f37dfb2a27ff4e023e475b54c0ad055e" category="list-text">此程序包括將磁碟自動重新指派給與新NVRAM模組相關聯的控制器模組的步驟。您必須依照程序中的指示重新指派磁碟。在恢復之前完成磁碟重新指派可能會造成問題。</block>
+  <block id="d73a26bc3e3d4896bae825c2a70691a4" category="paragraph">帶有字母和編號的CAM栓鎖</block>
+  <block id="3c327a3216d201c494ac60534e1a2117" category="paragraph">CAM栓鎖完全解除鎖定</block>
+  <block id="e1d6265d5c32eb8c4e989291b8d72d20" category="list-text">將模組輕推入插槽、直到有字母和編號的CAM栓開始與I/O CAM銷接合、然後將CAM栓完全推入、將模組鎖定到位。</block>
+  <block id="bc62fa4bef9a4cd2a983ca01d5a5b1b3" category="paragraph">CAM栓鎖完全解除鎖定</block>
+  <block id="58e30dc94cdf372b64dac305fbb57bc0" category="section-title">步驟5：重新指派磁碟</block>
+  <block id="7b0ac7dba1c185e5ac66482ca29488da" category="admonition">只有在更換NVRAM模組時才需要重新指派磁碟。</block>
+  <block id="84bda9f97f27f63cc6fa0c4cac3ddcb4" category="list-text">如果更換的控制器處於維護模式（顯示<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> 提示）、結束維護模式、然後前往載入程式提示：<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
+  <block id="3cea6cd019ee970febca58bfe050e1cb" category="list-text">在更換控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入y。</block>
+  <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">等待等待恢復...訊息會顯示在控制器的主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統ID：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
+  <block id="e8060bae9316148ae38460dbb2356f26" category="paragraph">屬於替換控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：151759706：</block>
+  <block id="209f885dfe9e7d41b82f04b945d68576" category="list-text">如果已啟用儲存加密、您必須是</block>
 </blocks>

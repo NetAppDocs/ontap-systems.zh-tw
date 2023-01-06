@@ -511,13 +511,13 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 
 . 使用下列動畫或繪圖來設定一或多個磁碟機櫃ID：
 +
-NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
+NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。請參閱 https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"] 以取得詳細指示。
 
 +
 .動畫-設定SAS或NVMe磁碟機櫃ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_power-on_set_shelf_ID_set.png[在設定機櫃ID集上啟動的DRW]
+image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[DRw A900 oie變更新南澳州224機櫃ID IEOPS 836]
 
 +
 [cols="25h,~"]
@@ -527,37 +527,28 @@ image::../media/drw_power-on_set_shelf_ID_set.png[在設定機櫃ID集上啟動�
  a| 
 image:../media/legend_icon_01.png[""]
  a| 
-取下端蓋。
+機櫃端蓋
 
 
 
  a| 
 image:../media/legend_icon_02.png[""]
  a| 
-按住機櫃ID按鈕、直到第一位數開始閃燈、然後按下以前進至0-9。
-
-附註：第一個數字會持續閃爍
+機櫃面板
 
 
 
  a| 
 image:../media/legend_icon_03.png[""]
  a| 
-按住機櫃ID按鈕、直到第二位數開始閃爍、然後按下以前進至0-9。附註：第一位數會停止閃爍、第二位數會繼續閃爍。
+機櫃ID LED
 
 
 
  a| 
 image:../media/legend_icon_04.png[""]
  a| 
-更換端蓋。
-
-
-
- a| 
-image:../media/legend_icon_05.png[""]
- a| 
-等待10秒鐘、等待黃色LED（！） 如需顯示、請關閉磁碟機櫃電源、然後重新開啟以設定機櫃ID。
+機櫃ID設定按鈕
 
 |===
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
@@ -645,13 +636,13 @@ image::../media/drw_9000_cable_console_switch_controller.png[DRw 9000纜線主�
 
 . 請使用下列動畫來設定一或多個磁碟機櫃ID：
 +
-NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
+NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。請參閱 https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"] 以取得詳細指示。
 
 +
 .動畫-設定SAS或NVMe磁碟機櫃ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_power-on_set_shelf_ID_set.png[在設定機櫃ID集上啟動的DRW]
+image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[DRw A900 oie變更新南澳州224機櫃ID IEOPS 836]
 
 +
 [cols="25h,~"]
@@ -661,37 +652,28 @@ image::../media/drw_power-on_set_shelf_ID_set.png[在設定機櫃ID集上啟動�
  a| 
 image:../media/legend_icon_01.png[""]
  a| 
-取下端蓋。
+機櫃端蓋
 
 
 
  a| 
 image:../media/legend_icon_02.png[""]
  a| 
-按住機櫃ID按鈕、直到第一位數開始閃燈、然後按下以前進至0-9。
-
-附註：第一個數字會持續閃爍
+機櫃面板
 
 
 
  a| 
 image:../media/legend_icon_03.png[""]
  a| 
-按住機櫃ID按鈕、直到第二位數開始閃爍、然後按下以前進至0-9。附註：第一位數會停止閃爍、第二位數會繼續閃爍。
+機櫃ID LED
 
 
 
  a| 
 image:../media/legend_icon_04.png[""]
  a| 
-更換端蓋。
-
-
-
- a| 
-image:../media/legend_icon_05.png[""]
- a| 
-等待10秒鐘、等待黃色LED（！） 如需顯示、請關閉磁碟機櫃電源、然後重新開啟以設定機櫃ID。
+機櫃ID設定按鈕
 
 |===
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
