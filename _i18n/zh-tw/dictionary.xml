@@ -1813,8 +1813,6 @@
   <block id="27e678adf7638dee0685d336eee4d327" category="list-text">鬆開NSM模組護蓋指旋螺絲、然後打開護蓋。</block>
   <block id="4666aab744a5064fa4082c8fac681c8b" category="paragraph">NSM模組護蓋上的FRU標籤顯示了RTC電池的位置、靠近NSM模組正面和電源供應器右側。</block>
   <block id="8e3521698724daea37d72f82d00b93c9" category="list-text">實體識別故障的RTC電池。</block>
-  <block id="803b47b0e40e190124f45c4a9e49deaf" category="paragraph">位於電池插槽旁的主機板上的「RTC電池注意（黃色）」LED會亮起。</block>
-  <block id="4ed28e0141128c6835c2a5c39d8fbd44" category="admonition">從機櫃中取出NSM模組後、故障的RTC電池LED會持續亮起10分鐘。</block>
   <block id="4230cd66e4b97c5c537e2fc66b106a54" category="list-text">更換RTC電池：</block>
   <block id="bf6676c1b4e1cac9f1e6593249e2ba7d" category="list-text">從電池座中輕推電池、直到電池呈斜角（從電池座上斜放）、然後將其從電池座中取出。</block>
   <block id="3b3396eaf97f4b90a50effb7d2321635" category="list-text">將替換電池以斜角（從電池座向外傾斜）插入電池座、將電池推入直立位置、然後將電池穩固地壓入連接器、直到電池完全就位。</block>
@@ -1846,8 +1844,6 @@
   <block id="36d40c496b02dc7324aae319cf2fac47" category="list-text">您可以使用下列影片或書面步驟來更換DIMM。</block>
   <block id="7109d4dc916d45e9366b7c657316ac40" category="paragraph">NSM模組護蓋上的FRU標籤顯示四個DIMM的位置、兩個位於散熱器兩側的NSM模組中央。</block>
   <block id="8784146272dd716aac8c73ca366c7cc8" category="list-text">實體識別故障的DIMM。</block>
-  <block id="dadd78fdb3c6e2ea2ea7ab4bbb929618" category="paragraph">當DIMM故障時、系統會將警告訊息記錄到系統主控台、指出哪個DIMM故障。此外、位於DIMM插槽旁的主機板上的DIMM警示（黃色）LED會亮起。</block>
-  <block id="813bee9559bf78c09aa8885a12d5320c" category="admonition">從機櫃中取出NSM模組後、故障DIMM的LED會持續亮起10分鐘。</block>
   <block id="7a53774970ebbc388ee000791ae12db3" category="list-text">更換故障DIMM：</block>
   <block id="6b8676d0e83295cf2e06f62b67dc335e" category="list-text">請注意插槽中的DIMM方向、以便您可以使用相同方向插入替換的DIMM。</block>
   <block id="40d7c94992ee1c119b1654a536669fe9" category="list-text">緩慢地將DIMM插槽兩端的彈出彈出彈片分開、然後將DIMM從插槽中提出、藉此將DIMM從插槽中退出。</block>
@@ -1862,10 +1858,7 @@
   <block id="6dd14905d9c9172b32f9c257aa8f5279" category="paragraph">NSM模組重新開機後、NSM模組警示LED會關閉、而且不會再偵測到DIMM問題。這可能需要三到五分鐘的時間。</block>
   <block id="ee902d4594abf28b5457ac82defd33ec" category="summary">當在執行ONTAP 更新版本的HA配對中、NS224磁碟機櫃上的開機媒體故障、或磁碟櫃執行NVMe機櫃模組（NSM\）韌體版本1.1x或更新版本時、您可以更換開機媒體。更換開機媒體時、磁碟機櫃電源開啟且I/O正在進行中、無需中斷營運即可完成。</block>
   <block id="89d4335ef7ebbfe1db510925f09d4702" category="doc">更換開機媒體- NS224磁碟櫃</block>
-  <block id="fe4889c3c14829f659038af092c58c0f" category="paragraph">當在執行ONTAP 更新版本的HA配對中、NS224磁碟機櫃上的開機媒體故障、或磁碟櫃執行NVMe機櫃模組（NSM）韌體版本1.1x或更新版本時、您可以更換開機媒體。更換開機媒體時、磁碟機櫃電源開啟且I/O正在進行中、無需中斷營運即可完成。</block>
-  <block id="24ce88dcb36e4e61a4334746ee0dc49a" category="list-text">您的HA配對必須已執行ONTAP 支援NSM韌體最低版本的更新版本、或者HA配對必須已執行ONTAP NSM韌體1.1x或更新版本的版本。</block>
   <block id="74f49f6f28d9fd5e7df6f1800c601a73" category="paragraph">您可以在任一控制器的主控台輸入「儲存櫃show -module'命令、以驗證機櫃上的NSM韌體版本。</block>
-  <block id="553dc0c59541aeaac9552fd0e9932c27" category="paragraph">如果您的機櫃未執行NSM韌體版本1.1x或更新版本、則無法更換開機媒體、您必須更換NSM模組。</block>
   <block id="ab72df24859b52c3af8d40d64d3c4050" category="inline-link-macro">更換NSM模組- NS224磁碟櫃</block>
   <block id="d444e316e4fbe4a790c7592f4ea0e4d7" category="paragraph"><block ref="d444e316e4fbe4a790c7592f4ea0e4d7" category="inline-link-macro-rx"></block></block>
   <block id="daeece39bd904e83241a90c8b8570c0a" category="list-text">您需要一把飛利浦#1螺絲起子。</block>
@@ -1875,8 +1868,6 @@
   <block id="9d0a00a5aff4ec18c5c781787962378b" category="list-text">更換開機媒體之後、您可以依照套件隨附的RMA指示、將故障零件退回NetApp。</block>
   <block id="d7fc7b8a28737104902684f03a8279e6" category="list-text">您可以使用下列影片或書面步驟來更換開機媒體。</block>
   <block id="41d0446a43bf0ca4e32d8aa74acfb9dc" category="list-text">實際找到故障的開機媒體。</block>
-  <block id="2ac77c1f53d2acaf74354a442d9484d9" category="paragraph">開機媒體位於與電源供應器相對的機櫃機箱牆上。開機媒體注意（黃色）LED會亮起、位於開機媒體插槽旁的主機板上。</block>
-  <block id="926c6df0fdfeee94a62afab70e1f9cb3" category="admonition">從機櫃中取出NSM模組後、LED會持續亮起10分鐘。</block>
   <block id="f100a7d7d4d0125055a6d5f3a0bea50d" category="list-text">更換開機媒體：</block>
   <block id="0c6687325a026afea7971f92ec185cbb" category="list-text">使用1號十字螺絲起子、小心地移除將開機媒體底部（有缺口）端固定至主機板的螺絲。</block>
   <block id="76099b6de6a0677a0267f7925ff91f68" category="list-text">將開機媒體稍微向上旋轉、然後朝自己的方向輕拉、直到其從插槽中釋放、即可將其取出。</block>
@@ -1951,8 +1942,6 @@
   <block id="f35ad689c95d772c71204022636dabe5" category="list-text">您可以使用下列影片或書面步驟來更換風扇。</block>
   <block id="4fe5c70371cacd7543cf54df75bedd0a" category="admonition">NSM模組護蓋上的FRU標籤會顯示NSM模組背面牆上五個風扇的位置。</block>
   <block id="5605f4aa461ce479ba2b6762822acf2b" category="list-text">實體識別故障的風扇。</block>
-  <block id="574b0c09ebc1f816ee7722cc2b16597c" category="paragraph">當風扇故障時、系統會將警告訊息記錄到系統主控台、指出哪個風扇故障。此外、位於主機板上風扇插槽附近的風扇警示（黃色）LED會亮起。</block>
-  <block id="1ab4aa2ef8e978637a25c0cebd43704b" category="admonition">從機櫃移除NSM模組後、故障風扇的LED會持續亮起10分鐘。</block>
   <block id="9d1ae14f2ff79acfc8e3625d7e49361b" category="list-text">更換故障風扇：</block>
   <block id="139ce540361536d483467917385aa5b2" category="list-text">抓住藍色接觸點所在的兩側、然後垂直提起故障風扇、將其從插槽拔下、以移除故障風扇。</block>
   <block id="f722151f886b6d867be170b0ee89e837" category="list-text">將備用風扇對齊導引頭、然後向下推、直到風扇模組連接器完全插入插槽。</block>
@@ -7360,4 +7349,12 @@
   <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">等待等待恢復...訊息會顯示在控制器的主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統ID：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
   <block id="e8060bae9316148ae38460dbb2356f26" category="paragraph">屬於替換控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：151759706：</block>
   <block id="209f885dfe9e7d41b82f04b945d68576" category="list-text">如果已啟用儲存加密、您必須是</block>
+  <block id="929bfee1ef6e5f44f83a22a0ee585e88" category="paragraph">當風扇故障時、系統會將警告訊息記錄到系統主控台、指出哪個風扇故障。</block>
+  <block id="3f39e3eb27d53c3293d829964b0aec99" category="list-text">確定機櫃中的兩個NSM模組都執行相同版本的韌體：0200版或更新版本。</block>
+  <block id="c4a176fcfed8ad262bd0a9b82f87a961" category="paragraph">當DIMM故障時、系統會將警告訊息記錄到系統主控台、指出哪個DIMM故障。</block>
+  <block id="85cd9535810e294c0523d2b75788a394" category="paragraph">當在執行ONTAP 更新版本的HA配對中、NS224磁碟機櫃上的開機媒體故障、或磁碟櫃執行NVMe機櫃模組（NSM）韌體版本0111或更新版本時、您可以更換開機媒體。更換開機媒體時、磁碟機櫃電源開啟且I/O正在進行中、無需中斷營運即可完成。</block>
+  <block id="8813a3bc6746d75d51a9aca6d90b54cb" category="list-text">您的HA配對必須已執行ONTAP 支援NSM韌體最低版本的更新版本、或者HA配對必須已執行ONTAP NSM韌體版本0111或更新版本的版本。</block>
+  <block id="480be366fc83dd9fbbf8246b5e2f9f40" category="paragraph">如果您的機櫃未執行NSM韌體版本0111或更新版本、則無法更換開機媒體、您必須更換NSM模組。</block>
+  <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">開機媒體位於與電源供應器相對的機櫃機箱牆上。</block>
+  <block id="178d438c63a174b511750f68655d814d" category="list-text">更換完RTC電池後、重新安裝NSM模組、然後開機模組、ONTAP 實時時鐘時間會由更新。</block>
 </blocks>

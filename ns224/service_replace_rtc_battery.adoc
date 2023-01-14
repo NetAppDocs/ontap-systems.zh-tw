@@ -26,6 +26,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 +
 這讓ONTAP 我們有足夠的時間來處理NSM移除事件。
 
+* 更換完RTC電池後、重新安裝NSM模組、然後開機模組、ONTAP 實時時鐘時間會由更新。
 * *最佳實務做法：*最佳實務做法是在更換FRU元件之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
@@ -92,13 +93,6 @@ NOTE: 如果您要移除底部NSM模組、而且底部軌道阻礙了鎖定機�
 NSM模組護蓋上的FRU標籤顯示了RTC電池的位置、靠近NSM模組正面和電源供應器右側。
 
 . 實體識別故障的RTC電池。
-+
-位於電池插槽旁的主機板上的「RTC電池注意（黃色）」LED會亮起。
-
-+
-
-NOTE: 從機櫃中取出NSM模組後、故障的RTC電池LED會持續亮起10分鐘。
-
 . 更換RTC電池：
 +
 .. 從電池座中輕推電池、直到電池呈斜角（從電池座上斜放）、然後將其從電池座中取出。

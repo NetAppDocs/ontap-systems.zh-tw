@@ -11,17 +11,17 @@ summary: 當在執行ONTAP 更新版本的HA配對中、NS224磁碟機櫃上的�
 
 
 [role="lead"]
-當在執行ONTAP 更新版本的HA配對中、NS224磁碟機櫃上的開機媒體故障、或磁碟櫃執行NVMe機櫃模組（NSM）韌體版本1.1x或更新版本時、您可以更換開機媒體。更換開機媒體時、磁碟機櫃電源開啟且I/O正在進行中、無需中斷營運即可完成。
+當在執行ONTAP 更新版本的HA配對中、NS224磁碟機櫃上的開機媒體故障、或磁碟櫃執行NVMe機櫃模組（NSM）韌體版本0111或更新版本時、您可以更換開機媒體。更換開機媒體時、磁碟機櫃電源開啟且I/O正在進行中、無需中斷營運即可完成。
 
 .開始之前
-* 您的HA配對必須已執行ONTAP 支援NSM韌體最低版本的更新版本、或者HA配對必須已執行ONTAP NSM韌體1.1x或更新版本的版本。
+* 您的HA配對必須已執行ONTAP 支援NSM韌體最低版本的更新版本、或者HA配對必須已執行ONTAP NSM韌體版本0111或更新版本的版本。
 +
 您可以在任一控制器的主控台輸入「儲存櫃show -module'命令、以驗證機櫃上的NSM韌體版本。
 
 +
 [NOTE]
 ====
-如果您的機櫃未執行NSM韌體版本1.1x或更新版本、則無法更換開機媒體、您必須更換NSM模組。
+如果您的機櫃未執行NSM韌體版本0111或更新版本、則無法更換開機媒體、您必須更換NSM模組。
 
 link:service-replace-nsm100.html["更換NSM模組- NS224磁碟櫃"^]
 
@@ -48,13 +48,15 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 * *最佳實務做法：*最佳實務做法是在更換FRU元件之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。
 +
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
+
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
+
++
 [NOTE]
 ====
 請勿將韌體還原至不支援機櫃及其元件的版本。
-
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
-
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
 
 ====
 * 如有需要、您可以開啟機櫃的位置（藍色）LED、以協助實際找出受影響的機櫃：「儲存櫃位置導向的修改-機櫃名稱_bidle_name_-leide-Status on」
@@ -75,6 +77,7 @@ video::20ed85f9-1f80-4e0e-9219-ab4600070d8a[panopto]
 
 
 .步驟
+. 確定機櫃中的兩個NSM模組都執行相同版本的韌體：0200版或更新版本。
 . 請妥善接地。
 . 從包含您要更換之FRU的NSM模組拔下纜線：
 +
@@ -108,11 +111,7 @@ NOTE: 如果您要移除底部NSM模組、而且底部軌道阻礙了鎖定機�
 . 鬆開NSM模組護蓋指旋螺絲、然後打開護蓋。
 . 實際找到故障的開機媒體。
 +
-開機媒體位於與電源供應器相對的機櫃機箱牆上。開機媒體注意（黃色）LED會亮起、位於開機媒體插槽旁的主機板上。
-
-+
-
-NOTE: 從機櫃中取出NSM模組後、LED會持續亮起10分鐘。
+開機媒體位於與電源供應器相對的機櫃機箱牆上。
 
 . 更換開機媒體：
 +
