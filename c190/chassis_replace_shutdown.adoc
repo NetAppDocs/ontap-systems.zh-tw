@@ -14,7 +14,7 @@ summary: 若要更換機箱、您必須關閉控制器。
 您必須先關閉機箱中的控制器或控制器、才能將其移至新機箱。
 
 .關於這項工作
-* 如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器 `false` 若要取得資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+* 如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器 `false` 如需資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
 * 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
 +
 下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」

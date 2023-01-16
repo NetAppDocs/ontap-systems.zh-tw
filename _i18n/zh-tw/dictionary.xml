@@ -1651,9 +1651,6 @@
   <block id="aca669b08ed42205a122dce8e564a07e" category="paragraph">將控制器模組安裝到新機箱之後、請將其開機至可執行診斷測試的狀態。</block>
   <block id="63e4f060a3a69033c9bc37634f0af27d" category="list-text">重複上述步驟、將第二個控制器安裝到新機箱中。</block>
   <block id="24907dee7e4205c74e589d14a85e4bbd" category="doc">更換DIMM AFF -《Se A700s》</block>
-  <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須先修正問題、再關閉受損的控制器。</block>
-  <block id="dec0306e681fc720cf31bc4851ebcee4" category="inline-link">《系統管理參考資料》（英文） ONTAP</block>
-  <block id="38093d6513bb2e960eab247f00f04533" category="paragraph"><block ref="38093d6513bb2e960eab247f00f04533" category="inline-link-rx"></block></block>
   <block id="526e7908f5d2d796c1fb3cb3bcb64b9c" category="list-text">如果受損的控制器是HA配對的一部分、請從健全控制器的主控台停用自動恢復功能：「torage容錯移轉修改節點本機-自動恢復錯誤」</block>
   <block id="2c605d107b8b0f8d344d6c863e4c47a9" category="paragraph">按Ctrl-C、然後回應「y」。</block>
   <block id="d0a414fa814c592a9fcc74f3aaae710b" category="paragraph">接管或停止受損的控制器：「暫停容錯移轉接管-節點_受損節點_節點名稱_」</block>
@@ -4837,7 +4834,6 @@
   <block id="a618373732a54299b15020c4fdcc9ff7" category="doc">更換快取模組- FAS2600</block>
   <block id="f6f6b5bb4c3c117ebfdad565e3beb0c3" category="inline-link-macro">FAS2600快取模組更換影片AFF</block>
   <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
-  <block id="b95a2b769ddc69403557ab79e1942007" category="paragraph"><block ref="b95a2b769ddc69403557ab79e1942007" category="inline-link-rx"></block></block>
   <block id="49ba302fbc53429009e579494e0457be" category="list-text"><block ref="49ba302fbc53429009e579494e0457be" category="inline-link-macro-rx"></block></block>
   <block id="fb2b1a9ce62aa797e37590c1f38945e1" category="doc">搬移及更換硬體- FAS2600</block>
   <block id="431d17d73264273f0bc377c1c3bd07e9" category="paragraph">在安裝替換機箱之前、請先從設備機架或系統機櫃中移除現有機箱。</block>
@@ -6744,7 +6740,6 @@
   <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">如果您的磁碟櫃已部分裝入、表示您要重新安裝磁碟機的磁碟櫃所含的磁碟機數量少於其支援的12個磁碟機、請將前四個磁碟機安裝至前插槽（0、3、6和9）。</block>
   <block id="b18ad0a07953c39e92025f3df711d7e8" category="list-text"><block ref="b18ad0a07953c39e92025f3df711d7e8" category="inline-link-rx"></block></block>
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
-  <block id="d331c2ddc96dbf38f25371617243bf17" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="1ab03132ea6210439f901707b3806211" category="inline-link-macro-rx"></block>。</block>
   <block id="ec5866194941126dcbe55d496f612191" category="list-text">如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
   <block id="4729966d1b42f799e14eba4dd6dedbdb" category="paragraph"><block ref="4729966d1b42f799e14eba4dd6dedbdb" category="inline-link-rx"></block></block>
   <block id="60db4a77031ab02d5c7d793d8ee8e564" category="admonition">在提示下輸入客戶的機載金鑰管理通關密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
@@ -7316,8 +7311,6 @@
   <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">步驟1：在ONTAP 更新版本中安裝_replace_控制器的授權</block>
   <block id="541648f14089765ba6e8c3198be32507" category="section-title">步驟2：更換開機媒體</block>
   <block id="6fdf23777adc5b39f52f2829b69833e5" category="inline-link-macro">將節點與叢集同步</block>
-  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
-  <block id="7260398ee351f45c2b93073dcc9f358d" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 若要取得資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="692418fcc9983296fd6b89b4072b99d2" category="inline-link-macro">將SED恢復為無保護模式</block>
   <block id="aa641c641cc4509747c629778ceba1e6" category="list-text">如果您使用NetApp儲存加密、則必須依照中的指示重設MSID <block ref="deeaf76d485e47e462d03c774bc2ca5e" category="inline-link-macro-rx"></block>。</block>
   <block id="dca9d9d34ff973dbf261373e223aa9e4" category="list-text">如果您有SAN系統、則必須檢查事件訊息 <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>（用於控制器SCSI刀鋒伺服器）。。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> 命令會顯示節點名稱、該節點的仲裁狀態、該節點的可用度狀態、以及該節點的作業狀態。</block>
@@ -7357,4 +7350,6 @@
   <block id="480be366fc83dd9fbbf8246b5e2f9f40" category="paragraph">如果您的機櫃未執行NSM韌體版本0111或更新版本、則無法更換開機媒體、您必須更換NSM模組。</block>
   <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">開機媒體位於與電源供應器相對的機櫃機箱牆上。</block>
   <block id="178d438c63a174b511750f68655d814d" category="list-text">更換完RTC電池後、重新安裝NSM模組、然後開機模組、ONTAP 實時時鐘時間會由更新。</block>
+  <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 如需資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
 </blocks>
