@@ -2003,7 +2003,6 @@
   <block id="ea26f0c009e33e86f172f22d6e190d0a" category="paragraph">如果HA配對執行ONTAP 的是NetApp 9.8或更新版本、非專屬連接埠會在「模式」欄位中顯示「network」（網路）。</block>
   <block id="744b6c476a210a04195ef528c6730bc7" category="paragraph">如果您的HA配對執行ONTAP 的是32或9.6、則非專用連接埠在「專用」中顯示「假」 欄位、也會在「tate」欄位中顯示「停用」。</block>
   <block id="d8109bc1e72c67d266f35804a93c0a8d" category="summary">當HA配對符合特定需求、且已完成適用於HA配對的準備工作之後、您可以熱新增NS224磁碟機櫃。</block>
-  <block id="332ecfda75eef89a55acd64671013612" category="doc">熱新增NS224磁碟櫃</block>
   <block id="eca821c6b2673e81fce80d61c03099a4" category="section-title">熱新增需求</block>
   <block id="eeb59433d501968b152fd713cddd2e47" category="paragraph">在熱新增NS224磁碟機櫃之前、HA配對必須符合特定需求。</block>
   <block id="9e3a02c5b7d1bbea0a425314be87f94c" category="list-text">您的平台模式和ONTAP 版本的支援必須支援NS224機櫃和熱新增的磁碟機。</block>
@@ -7352,4 +7351,5 @@
   <block id="178d438c63a174b511750f68655d814d" category="list-text">更換完RTC電池後、重新安裝NSM模組、然後開機模組、ONTAP 實時時鐘時間會由更新。</block>
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 如需資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">熱新增機櫃- NS224機櫃</block>
 </blocks>
