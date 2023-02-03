@@ -32,7 +32,9 @@ summary: 若要更換機箱、您必須關閉控制器。
  a| 
 叢集中的兩個控制器
  a| 
-「叢集ha modify -configured假」、「儲存容錯移轉修改節點node0 -enabled假」
+`cluster ha modify -configured false`
+
+「torage容錯移轉修改節點node0 -enabled假」
 
 
 

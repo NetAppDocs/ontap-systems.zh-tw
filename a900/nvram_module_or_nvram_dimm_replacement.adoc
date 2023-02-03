@@ -423,19 +423,121 @@ dr-group-id            cluster node           configuration-state
 == 步驟6：還原儲存設備和Volume Encryption功能
 
 [role="lead"]
-對於先前設定為使用儲存設備或Volume Encryption的儲存系統、您必須執行其他步驟以提供不中斷加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
+如果您已啟用儲存加密、請使用適當的程序。
 
-
-NOTE: 更換DIMM時不需要執行此步驟。
-
+[role="tabbed-block"]
+====
+.選項1：使用Onboard Key Manager
+--
 .步驟
-. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
+. 將節點開機至開機功能表。
+. 選取選項10、 `Set onboard key management recovery secrets`。
+. 在提示符下輸入叢集的內建金鑰管理程式密碼：需要範例、請按這裡
+. 輸入備份金鑰資料
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+
+NOTE: 完成通關密碼資訊後、節點會返回開機功能表。
+
+. 選取選項1、 `Normal Boot`
+. 只讓CFO使用「儲存容錯移轉回傳回-fromNode local -only CFO Aggregate true」命令來集合體。
++
+** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
+** 如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。
++
+
+NOTE: 終止CIFS可能導致資料遺失。
+
+** 如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVRAM同步。
+** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。
 
 
-. 重設SED MSID
+. 一旦恢復完成、請使用「儲存容錯移轉顯示」和「儲存容錯移轉顯示」命令來檢查容錯移轉和恢復狀態。
++
+只會顯示CFO集合體（根Aggregate和CFO型式資料集合體）。
+
+. 如果您執行ONTAP 的是32或更新版本、請執行安全金鑰管理程式內建同步：
++
+.. 執行「安全金鑰管理程式內建同步」命令、然後在出現提示時輸入密碼。
+.. 輸入「安全金鑰管理程式金鑰查詢」命令、即可查看內建金鑰管理程式中儲存的所有金鑰詳細檢視、並確認所有驗證金鑰的「RESured」欄位=「yes / true」。
++
+
+NOTE: 如果「RESTORED」欄位=「yes / true」以外的任何項目、請聯絡客戶支援部門。
+
+.. 等待10分鐘、讓金鑰在整個叢集之間同步。
+
+
+. 將主控台纜線移至合作夥伴控制器。
+. 使用「儲存容錯移轉還原-fromNode local」命令來歸還目標控制器。
+. 使用「儲存容錯移轉show」命令、在報告完成三分鐘後、檢查恢復狀態。
++
+如果20分鐘後仍未完成還原、請聯絡客戶支援部門。
+
+. 在clusterShell提示字元中、輸入net int show -is主目錄假命令、列出不在主控制器和連接埠上的邏輯介面。
++
+如果有任何介面列為「假」、請使用net int f還原 命令將這些介面還原回其主連接埠。
+
+. 將主控台纜線移至目標控制器、然後執行「vrsion -v」命令來檢查ONTAP 版本。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+
+
+--
+.選項2：使用外部管理程式
+--
+. 將節點開機至開機功能表。
+. 選取選項11、 `Configure node for external key management`。
+. 在提示中輸入管理憑證資訊：需要範例於此處*
++
+
+NOTE: 管理憑證資訊完成後、節點會返回開機功能表。
+
+. 選取選項1、 `Normal Boot`
+. 將主控台纜線移至合作夥伴控制器、然後使用儲存容錯移轉恢復-從節點本機-僅限CFO - Aggregate true local命令、將目標控制器儲存設備歸還。
++
+** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
+** 如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。
++
+
+NOTE: 終止CIFS可能導致資料遺失。
+
+** 如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVMEM同步。
+** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。
+
+
+. 等待3分鐘、然後使用儲存容錯移轉show命令檢查容錯移轉狀態。
+. 在clusterShell提示符下、輸入「net int show -is－homefal」命令、列出不在主控制器和連接埠上的邏輯介面。
++
+如果有任何介面被列為「假」、請使用「net int f還原」命令將這些介面還原回其主連接埠。
+
+. 將主控台纜線移至目標控制器、然後執行「vrsion -v」命令來檢查ONTAP 版本。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+. 在clusterShell提示符下使用「shorage加密磁碟show」查看輸出。
+. 使用「安全金鑰管理程式金鑰查詢」命令來顯示儲存在金鑰管理伺服器上的加密和驗證金鑰。
++
+** 如果「RESTORED」欄=「yes / true」、您就能完成更換程序。
+** 如果「金鑰管理程式類型」=「外部」、「還原」欄=「是/真」以外的任何項目、請使用安全金鑰管理程式外部還原命令來還原驗證金鑰的金鑰ID。
++
+
+NOTE: 如果命令失敗、請聯絡客戶支援部門。
+
+** 如果「金鑰管理程式類型」=「OnBoard」、「RESTORED」欄=「yes / true」以外的任何項目、請使用安全金鑰管理程式內建同步命令來重新同步金鑰管理程式類型。
++
+使用「安全金鑰管理程式金鑰查詢」命令來驗證所有驗證金鑰的「RESured」欄位=「yes / true」。
+
+
+
+. 將主控台纜線連接至合作夥伴控制器。
+. 使用儲存容錯移轉恢復-fromNode本機命令來歸還控制器。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+
+
+--
+====
+. 重設磁碟的MSID：
++
+.. 如果您使用內建儲存加密、請依照中的程序進行 https://docs.netapp.com/us-en/ontap/encryption-at-rest/assign-authentication-keys-seds-onboard-task.html["指派資料驗證金鑰給FIPS磁碟機或SED（內建金鑰管理）"^]
+.. 如果您使用的是外部Keymanager、請依照中的程序進行 https://docs.netapp.com/us-en/ontap/encryption-at-rest/assign-authentication-keys-seds-external-task.html["指派資料驗證金鑰給FIPS磁碟機或SED（外部金鑰管理）"^]
+
+
 
 
 

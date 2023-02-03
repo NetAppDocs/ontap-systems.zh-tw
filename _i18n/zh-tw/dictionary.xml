@@ -772,7 +772,6 @@
   <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">如果您的系統有兩個控制器模組、請停用HA配對。</block>
   <block id="d426a3f5c9c0e3362f4ed536e7643c03" category="cell">如果您的系統執行叢集ONTAP 式的</block>
   <block id="93ff4b8a35c5f08ad3e97fdc9983948e" category="paragraph">叢集中的兩個控制器</block>
-  <block id="8d6f30824233e0351fc71f18fbb5c436" category="paragraph">「叢集ha modify -configured假」、「儲存容錯移轉修改節點node0 -enabled假」</block>
   <block id="a0540c64b7001eb9739a6eed390808ac" category="paragraph">叢集中有兩個以上的控制器</block>
   <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「torage容錯移轉修改節點node0 -enabled假」</block>
   <block id="853a8c6f8383ee1dc5f3826af9ff6797" category="list-text">當系統提示您確認停止時、請按「y」停止控制器：「System Node halt -node_node_name_」</block>
@@ -2822,7 +2821,6 @@
   <block id="e10b0a89639d4224f22325c89418ef31" category="paragraph">若要更換機箱、您必須移除電源供應器、風扇、控制器模組、I/O模組、DCPM模組、 以及受損機箱的USB LED模組、從設備機架或系統機櫃中移除受損機箱、將替換機箱安裝到位、然後將元件安裝到替換機箱中。</block>
   <block id="68908cbb53a7b71659933af600697a19" category="summary">若要熱交換內含NVRAM11電池的還原控制器電源模組（DCPM\）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
   <block id="d04f6248062fc9d16de8588d61c28d1e" category="doc">更換裝有NVRAM11電池AFF 的斷續控制電源模組- REVA900</block>
-  <block id="b36f3c4187cae8553973b284879e1c97" category="paragraph">若要熱交換內含NVRAM11電池的還原控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
   <block id="9b9f090ead8603008076b06ff01712ce" category="paragraph">從機箱中取出故障模組之前、您必須備有備用的DCPM模組、而且必須在移除後五分鐘內進行更換。從機箱中移除DCPM模組之後、除了容錯移轉到其他控制器模組之外、擁有DCPM模組的控制器模組也不會有關機保護。</block>
   <block id="90eb2af5a768fd638c695d0394817a0e" category="section-title">步驟1：更換DCPM模組</block>
   <block id="5a00f3de99220093cfa367a074d35fec" category="paragraph">若要更換系統中的DCPM模組、您必須從系統中移除故障的DCPM模組、然後以新的DCPM模組加以更換。</block>
@@ -4972,13 +4970,6 @@
   <block id="9cd2ad15fd6e17e2089c3e6d267284e8" category="paragraph"><block ref="9cd2ad15fd6e17e2089c3e6d267284e8" category="inline-link-rx"></block></block>
   <block id="64ade082ee5f7cc92e1fcf2264b98814" category="summary">您可以使用這些連結來尋找其他AFF 的參考資料和FAS 參考資料系統。</block>
   <block id="ad451e1c6a6a584f53b88b5c73144db7" category="doc">其他機型</block>
-  <block id="07fa61787cd64fafda80a8c62e643a38" category="section-title">平台機型</block>
-  <block id="f453086a36d64a5193cd4183c14bcd72" category="inline-link-macro">支援NetApp®NetApp®AFF</block>
-  <block id="c651d2f010c85fa1c8605da5e127657e" category="paragraph"><block ref="c651d2f010c85fa1c8605da5e127657e" category="inline-link-macro-rx"></block></block>
-  <block id="71bdc94f19d5947bd1cb6d437f119ba2" category="inline-link-macro">FAS8000系列文件</block>
-  <block id="2b3a51bca746a221bf4a0af6d3098ccf" category="paragraph"><block ref="2b3a51bca746a221bf4a0af6d3098ccf" category="inline-link-macro-rx"></block></block>
-  <block id="c7e39e875a3a875d9445eace0794b0f5" category="inline-link-macro">FAS2500系列文件</block>
-  <block id="ebc5a75e4df8077b15f7cef6c123c7db" category="paragraph"><block ref="ebc5a75e4df8077b15f7cef6c123c7db" category="inline-link-macro-rx"></block></block>
   <block id="7a31198e87ee2c9071d7bf63050a7088" category="section-title">機櫃機型</block>
   <block id="dc562a84ed096c677cedf44a7c5df0bf" category="inline-link-macro">DS2246磁碟櫃文件</block>
   <block id="dd26152c70d312482c21516c3889b669" category="paragraph"><block ref="dd26152c70d312482c21516c3889b669" category="inline-link-macro-rx"></block></block>
@@ -7352,4 +7343,44 @@
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 如需資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">熱新增機櫃- NS224機櫃</block>
+  <block id="859c951ebab21901f2fd6183c53339d5" category="summary">若要熱交換內含NVRAM11電池的卸載控制器電源模組（DCPM\）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
+  <block id="8ea19d634d233a26f4f650bd2e2b467c" category="paragraph">若要熱交換內含NVRAM11電池的卸載控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
+  <block id="58fb0a507d97ff336e5db5d69ba846e9" category="inline-link">將40GbE NIC連接埠轉換成多個10GbE連接埠、以實現10GbE連線</block>
+  <block id="8ae73aa056882e7b560f3b52b5764957" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用將這些連接埠轉換成10 GbE連線<block ref="5ec041cdb2bbdf01cd4ea2c400b17495" prefix=" " category="inline-code"></block> 從維護模式執行命令。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="d875f9fec183da794cd6d6245ef00d1d" category="paragraph"><block ref="272f3c49a4ec1753c70013d06165277b" prefix="" category="inline-code"></block></block>
+  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
+  <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須先修正問題、再關閉受損的控制器。</block>
+  <block id="68d9e980b8b4998ef88139d7b7ab8ff6" category="paragraph"><block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block></block>
+  <block id="3cf0b39ddc0b0c6fbe705a62aacc7d3c" category="list-text">在機箱正面、用您的拇指將每個磁碟機穩固推入、直到您感覺到有正面的停止為止。如此可確保磁碟機穩固地安裝在機箱中板上。</block>
+  <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRw a800磁碟機就位在IOPS 960上</block>
+  <block id="9fec9d1f051b750c4b137dc68aaa9695" category="list-text">移至機箱背面。如果您尚未接地、請正確接地。</block>
+  <block id="3caccb46026f8affc6c95f65aa0c8af1" category="list-text">將控制器模組滑出機箱、然後放在穩固的平面上。</block>
+  <block id="9bc9bee1c7c86ea6e815437b4f02ff6c" category="paragraph">將控制器模組滑出機箱時、請確定您支援控制器模組的底部。。</block>
+  <block id="1422875ceb77c2edc7c07474b11b3c6f" category="list-text">打開控制器模組通風管：</block>
+  <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">按下模組握把上的Terra cotta釋放按鈕、然後將DCPM模組滑出機箱。</block>
+  <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">還原並驗證組態- AFF VA900</block>
+  <block id="4db8dbc03fb77b9d2fa1dabdeec7a07a" category="list-text">重新執行系統層級的診斷測試。+如果系統層級的診斷測試再次失敗、請聯絡 <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
+  <block id="22afc2cb7855948b6347ad0d5b8816a7" category="paragraph">如果您已啟用儲存加密、請使用適當的程序。</block>
+  <block id="2c35abfceaabbce6e9a2f24491d249c0" category="open-title">選項1：使用Onboard Key Manager</block>
+  <block id="86b112e5aa1ced4fbffb09dded147e9f" category="list-text">將節點開機至開機功能表。</block>
+  <block id="e07ae2ef2fbd56f8a3ced5a2ab602ded" category="list-text">選取選項10、<block ref="cdca34dc3d7defb03d741a65d78de01c" prefix=" " category="inline-code"></block>。</block>
+  <block id="5affab7614cb0938ec2fe16dbf6094bd" category="list-text">在提示符下輸入叢集的內建金鑰管理程式密碼：需要範例、請按這裡</block>
+  <block id="e1abc7408800fce9a7b34d2d5dca8aee" category="list-text">輸入備份金鑰資料</block>
+  <block id="99f5c4eee12090497e3ca28e84e49cab" category="admonition">完成通關密碼資訊後、節點會返回開機功能表。</block>
+  <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">選取選項1、<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
+  <block id="c566d4828cd295258aa8097a90880602" category="open-title">選項2：使用外部管理程式</block>
+  <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">選取選項11、<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
+  <block id="b0bab47307c92499e81bac9b25dc3e52" category="list-text">在提示中輸入管理憑證資訊：需要範例於此處*</block>
+  <block id="453b94e2cc94c331c590159bf6b2d21e" category="admonition">管理憑證資訊完成後、節點會返回開機功能表。</block>
+  <block id="6f7b977f442186b3a2cff79208772851" category="list-text">重設磁碟的MSID：</block>
+  <block id="55bbcb479d2d67bc8ad4b8a2598ddd48" category="inline-link">指派資料驗證金鑰給FIPS磁碟機或SED（內建金鑰管理）</block>
+  <block id="be8dfb1b8df54a914e06c0a343100004" category="list-text">如果您使用內建儲存加密、請依照中的程序進行<block ref="503b29df34267dc3c3e3b8927894b0ee" category="inline-link-rx"></block></block>
+  <block id="32c3cf2b38ceb59d729e7de2ff67fefc" category="inline-link">指派資料驗證金鑰給FIPS磁碟機或SED（外部金鑰管理）</block>
+  <block id="a785aecc0aa86cd8bf8795e1bc4c3e60" category="list-text">如果您使用的是外部Keymanager、請依照中的程序進行<block ref="c5282a2eb5b1733e45b98afbe5b54d05" category="inline-link-rx"></block></block>
+  <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用維護模式中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="55c99fae85fce446adbb5ceb895cf55e" category="paragraph">更換機箱時、若要移除電源供應器、必須先關閉、拔下電源供應器、然後再從舊機箱背面卸下四個電源供應器。</block>
+  <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">裝回機箱時、您必須卸下機箱正面的六個風扇模組。</block>
+  <block id="63ee7e61fbd30f44f9b9df101a63a845" category="paragraph">從舊機箱正面卸下兩個取消階段控制器電源模組。</block>
+  <block id="1d8e1f6692aa85c8d94c39dda8015fdb" category="paragraph">將新機箱安裝到機架或機櫃之後、請將USB LED模組從舊機箱正面移到新機箱。</block>
+  <block id="02c98171b36d44757b42c6b5c5d2acb9" category="paragraph">答<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 當您看到開機至維護模式的提示時</block>
 </blocks>
