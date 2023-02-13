@@ -2675,7 +2675,6 @@
   <block id="08f8dc743a7889305e9e12b5efdf8be5" category="paragraph">將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。</block>
   <block id="1ec9fa42251d8d9889cd15b2ab11e819" category="admonition">插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。</block>
   <block id="d50b249d8e309dd400e0180a12ceae23" category="list-text">請使用動畫或圖例來完成控制器與交換器之間的佈線：</block>
-  <block id="1fb0ebfbc5b5595571d6d5f9b6042526" category="image-alt">DRW A900 tnscc網路纜線</block>
   <block id="3f4a7771ab61ac16b156190d458da251" category="cell">在每個控制器上執行</block>
   <block id="e738e65f735fc9089f253b3fe571f559" category="paragraph"><block ref="e738e65f735fc9089f253b3fe571f559" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d718ffb6aaa936306ccf33aefa9f9462" category="paragraph">纜線叢集互連連接埠：</block>
@@ -2696,7 +2695,6 @@
   <block id="dea6830a53392dc3b1f30fb0a37fb5e4" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block>。</block>
   <block id="84252b20b7e0ac6281a9b368a8f95d01" category="section-title">選項2：交換式叢集</block>
   <block id="64f550ceb718fb87884d6c018d99b0d3" category="paragraph">控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。</block>
-  <block id="4ee80bb938c529fd8e585ff1663b9324" category="image-alt">DRW A900交換式網路纜線</block>
   <block id="5f4965084173e3c414637c35200b73a8" category="paragraph">纜線叢集互連A連接埠：</block>
   <block id="765c3c3f314b105120b116fa72fa83ec" category="list-text">連接至叢集網路交換器的插槽A4和B4（E4A）。</block>
   <block id="370ef18034bcd8124be9ef4b4b76a551" category="list-text">插槽A8和B8（e8a）連接至叢集網路交換器。</block>
@@ -2709,7 +2707,6 @@
   <block id="581d8b893cc4a239df32042db4e658a7" category="list-text">請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。</block>
   <block id="7540cda30776c310e4b86b624032cea1" category="image-alt">OIE纜線下拉式彈片</block>
   <block id="5ec6942c74c6a8edac1d2288d383731d" category="list-text">請使用下列動畫或圖片、將控制器連接至單一NS224磁碟機櫃。</block>
-  <block id="3edbc67f0fd2ebb274aeb6ee9dd581fe" category="image-alt">DRW A900 NS224單一機櫃纜線</block>
   <block id="dcbdf1c0d1b9f68d0faeb146daed7433" category="paragraph"><block ref="dcbdf1c0d1b9f68d0faeb146daed7433" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3a58f6912b98caf7435fd9f6896ba4c6" category="list-text">將控制器A連接埠E2A連接至機櫃上NSM A的連接埠e0a。</block>
   <block id="e4e47b4780428e178a9b09390f2362b3" category="list-text">將控制器A連接埠e10b連接至機櫃NSM B上的連接埠e0b。</block>
@@ -2721,7 +2718,6 @@
   <block id="46c91124d100547c9507fea50ae0639b" category="paragraph">您必須將每個控制器連接至NS224磁碟機櫃上的NSM模組。</block>
   <block id="26fe6dbccc48fc5e3f27bb01af6740e6" category="list-text">請使用下列動畫或圖表、將控制器連接至兩個NS224磁碟機櫃。</block>
   <block id="2b31343b857fe67d64a1a976e200e971" category="paragraph"><block ref="2b31343b857fe67d64a1a976e200e971" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3cf9ca19fe84380073a6046bd956f972" category="image-alt">DRW A900 NS224兩個機櫃佈線</block>
   <block id="1d4442969281e166b667219af7e7fe7b" category="list-text">將控制器A連接埠E2A連接至機櫃1上的NSM A e0a。</block>
   <block id="952e197be70605a4933f1fa544e89cf3" category="list-text">將控制器A連接埠e10b連接至機櫃1上的NSM B e0b。</block>
   <block id="92d9c39d99b3b14f8b5b4b785e697404" category="list-text">將控制器A連接埠e2b連接至機櫃2上的NSM B e0b。</block>
@@ -7383,4 +7379,17 @@
   <block id="63ee7e61fbd30f44f9b9df101a63a845" category="paragraph">從舊機箱正面卸下兩個取消階段控制器電源模組。</block>
   <block id="1d8e1f6692aa85c8d94c39dda8015fdb" category="paragraph">將新機箱安裝到機架或機櫃之後、請將USB LED模組從舊機箱正面移到新機箱。</block>
   <block id="02c98171b36d44757b42c6b5c5d2acb9" category="paragraph">答<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 當您看到開機至維護模式的提示時</block>
+  <block id="2adab982ea2c53caec320e625667e439" category="list-text">在舊機箱正面的DCPM模組正下方找到USB LED模組。</block>
+  <block id="e9e9a6de5e421dfe8a5ccc0b156ecc94" category="admonition">如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽的左側）、然後尋找插卡、再依產品編號在中尋找插卡<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> 命令或系統壓縮清單上的。</block>
+  <block id="bea43746a1060b2b6af67fba31ca2890" category="paragraph">下圖顯示典型系統的外觀、以及主要元件位於系統讀取位置的示意圖：</block>
+  <block id="2f50f96b8a95f8c73f9257ccd13d3c46" category="image-alt">機箱ID為IEOPS 856的DRW A900控制器</block>
+  <block id="ea69d5fd5f06add244968ab4b689c261" category="image-alt">DRW A900 tnscc網路佈線IOPS 933</block>
+  <block id="e1ed9dc03578bbf7dfdc44cf31220a86" category="image-alt">DRW A900交換式網路纜線IOPS 934</block>
+  <block id="f31eedcaeccdc6e2f0110a8d59512b5b" category="image-alt">DRW A900 NS224一個機櫃佈線IOPS 937</block>
+  <block id="de9724762d060c871892fe8183e35056" category="image-alt">DRW A900 NS224兩個機櫃佈線IOPS 938</block>
+  <block id="6f189db9f1b1dfc1be838de48c805168" category="video-title">動畫-設定NVMe磁碟機磁碟櫃ID</block>
+  <block id="c81415a6ed927280dac360edb5000bc6" category="image-alt">DRW A900開啟IOPS 941</block>
+  <block id="7a0118bb1b2d6a800462ca70c23a1876" category="image-alt">DRw 9000纜線主控台交換器控制器IOPS 953</block>
+  <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
+  <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
 </blocks>

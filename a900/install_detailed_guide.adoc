@@ -190,6 +190,10 @@ image::../media/drw_9000_cable_management_arms.png[DRw 9000纜線管理臂]
 . 將擋板放在系統正面。
 
 
+下圖顯示典型系統的外觀、以及主要元件位於系統讀取位置的示意圖：
+
+image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[機箱ID為IEOPS 856的DRW A900控制器]
+
 
 
 == 步驟3：將控制器連接至網路
@@ -217,9 +221,9 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
 .動畫-連接雙節點無交換器叢集
-video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
+video::37419c37-f56f-48e5-8e6c-afa600095444[panopto]
 +
-image::../media/drw_a900_tnsc_network_cabling.png[DRW A900 tnscc網路纜線]
+image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[DRW A900 tnscc網路佈線IOPS 933]
 
 +
 |===
@@ -298,9 +302,9 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
 .動畫-連接交換式叢集
-video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
+video::61ec11ec-aa30-474a-87a5-afa60008b52b[panopto]
 +
-image::../media/drw_a900_switched_network_cabling.png[DRW A900交換式網路纜線]
+image::../media/drw_a900_switched_network_cabling_IEOPS-934.svg[DRW A900交換式網路纜線IOPS 934]
 
 +
 |===
@@ -386,9 +390,9 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .. 請使用下列動畫或圖片、將控制器連接至單一NS224磁碟機櫃。
 +
 .動畫-連接單一NS224機櫃
-video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto]
+video::8d8b45cd-bd8f-4fab-a4fa-afa5017e7b72[panopto]
 +
-image::../media/drw_a900_NS224_one shelf_cabling.png[DRW A900 NS224單一機櫃纜線]
+image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[DRW A900 NS224一個機櫃佈線IOPS 937]
 
 
 
@@ -450,12 +454,12 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 . 請使用下列動畫或圖表、將控制器連接至兩個NS224磁碟機櫃。
 +
 .動畫-連接兩個NS224磁碟櫃
-video::34098e39-73ad-45de-9af7-ac5b0032ea9a[panopto]
+video::ec143c32-9e4b-47e5-893e-afa5017da6b4[panopto]
 +
 image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[""]
 
 +
-image::../media/drw_a900_NS224_two shelf_cabling.png[DRW A900 NS224兩個機櫃佈線]
+image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[DRW A900 NS224兩個機櫃佈線IOPS 938]
 
 +
 |===
@@ -514,7 +518,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。請參閱 https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"] 以取得詳細指示。
 
 +
-.動畫-設定SAS或NVMe磁碟機櫃ID
+.動畫-設定NVMe磁碟機磁碟櫃ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
 image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[DRw A900 oie變更新南澳州224機櫃ID IEOPS 836]
@@ -557,7 +561,7 @@ image:../media/legend_icon_04.png[""]
 .動畫-開啟控制器的電源
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image::../media/drw_a900_power-on.png[DRW A900開機]
+image::../media/drw_a900_power-on_IEOPS-941.svg[DRW A900開啟IOPS 941]
 
 +
 
@@ -629,7 +633,7 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的管理交換器。
 +
-image::../media/drw_9000_cable_console_switch_controller.png[DRw 9000纜線主控台交換器控制器]
+image::../media/drw_9000_cable_console_switch_controller_IEOPS-953.svg[DRw 9000纜線主控台交換器控制器IOPS 953]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 
@@ -639,7 +643,7 @@ image::../media/drw_9000_cable_console_switch_controller.png[DRw 9000纜線主�
 NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。請參閱 https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"] 以取得詳細指示。
 
 +
-.動畫-設定SAS或NVMe磁碟機櫃ID
+.動畫-設定NVMe磁碟機磁碟櫃ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
 image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[DRw A900 oie變更新南澳州224機櫃ID IEOPS 836]
