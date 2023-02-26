@@ -3013,11 +3013,8 @@
   <block id="e01b6c84aaebe2321eef7b7a933b171f" category="list-text">若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。</block>
   <block id="91b094c45d5351d209f688ccfd548bf7" category="list-text">確定所有其他元件都正常運作。</block>
   <block id="329fe7c89a525def535e03c6dbc6f98f" category="section-title">選項1：將I/O模組新增至具有開放插槽的系統</block>
-  <block id="12f686a2d13fd4b93c3ef7fbc915cdcd" category="paragraph">您可以將I/O模組新增至系統的空模組插槽、做為NS224儲存櫃的NIC或儲存模組。</block>
   <block id="ff028db00edc198dd85f97eaa8795079" category="list-text">關機控制器A：</block>
   <block id="e775b99f0018ec21dcdd858b620ec674" category="list-text">停用自動恢復：「儲存容錯移轉修改節點本機-自動恢復錯誤」</block>
-  <block id="e7e0acd4a94a610862553a655c0372a3" category="list-text">接管目標控制器：「torage容錯移轉接管-ofnode_node_name'</block>
-  <block id="0a7ae7a43062cf45861e620d40d10ab9" category="paragraph">主控台連線顯示控制器在接管完成時會捨棄至載入器提示。</block>
   <block id="f95919e2465ed77382efeba17c614808" category="list-text">移除目標插槽遮罩：</block>
   <block id="c45c3f1f9d099575b7abd851e7ef8b33" category="list-text">向下旋轉CAM栓鎖、直到其處於開啟位置。</block>
   <block id="c07593bfceec64f42a005d1a16af33f0" category="list-text">卸下封蓋。</block>
@@ -3033,18 +3030,14 @@
   <block id="05648a23fc430a3dcc4fb4c1fbb040cd" category="list-text">如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。</block>
   <block id="d6c7a664e3819be9a0869782e685c75b" category="list-text">對控制器B重複這些步驟</block>
   <block id="9744ad3e63fafdf6d52c1d0eeed92d7d" category="inline-link">熱新增NS224磁碟機櫃</block>
-  <block id="2d881a27ee894664c2e7cc8d1795b104" category="list-text">如果您安裝儲存I/O模組、請依照中所述、安裝NS224磁碟櫃並進行纜線連接<block ref="8b1d41e5fd14f554e8b3490e0dfd47ae" category="inline-link-rx"></block>。</block>
   <block id="3e0887648c519f4a3c16a1c61b2e8ec3" category="section-title">選項2：在沒有開放插槽的系統中新增I/O模組</block>
-  <block id="3a94a10e2dbe887d30ec12c0e2d2170d" category="paragraph">您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個I/O模組安裝到已完全安裝的系統中。</block>
   <block id="cebb0168d5bfd94a91f0da51501ba6b8" category="list-text">如果您：</block>
   <block id="e818b574f8a890f6c21405d9164bb6ef" category="cell">取代...</block>
   <block id="d6737fd4fc838900efec68220d9b62d5" category="paragraph">NIC I/O模組的連接埠數量相同</block>
   <block id="c5cb03fb8ac84e8ed0867902373368c5" category="paragraph">當控制器模組關閉時、LIF會自動移轉。</block>
   <block id="5b4da5fe899903c4fb7ea38cdcd59059" category="paragraph">NIC I/O模組、連接埠較少</block>
   <block id="3dca69382eebe0e25d26be588bb3bb7c" category="inline-link">移轉LIF</block>
-  <block id="92fa459a77121184c537af9ee2b58dff" category="paragraph">將受影響的LIF永久重新指派至不同的主連接埠。請參閱<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block> 如需使用System Manager永久移動生命期的相關資訊、</block>
   <block id="f83c48dd124994c4062d124a835da954" category="paragraph">具有儲存I/O模組的NIC I/O模組</block>
-  <block id="2640f01f139d87de119d4e0ddc369433" category="paragraph">使用System Manager將lifs永久移轉至不同的主連接埠、如所述<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block>。</block>
   <block id="1270e01f5b82a307cd267071e45adc4f" category="list-text">關閉控制器A：</block>
   <block id="fd08cd08ec85105086c22d49a195dfd3" category="list-text">拔下目標I/O模組上的任何纜線。</block>
   <block id="9e64f9f7a827c26fc2d5c89975330a4c" category="image-alt">圖例圖示01</block>
@@ -3056,7 +3049,6 @@
   <block id="85fd23f64df6d6e4c54bd55af7b58c44" category="paragraph">插槽3或7中的NIC模組、</block>
   <block id="86cf1151f6e6623b20e6f28b8eb846ea" category="paragraph">對於每個連接埠、使用「儲存連接埠修改節點*_&lt;節點名稱&gt;_-port *_&lt;連接埠名稱&gt;_-mode network」命令。</block>
   <block id="3cb2d50b71ca167f282d29cc4a2f763f" category="paragraph">儲存模組</block>
-  <block id="907b4c195a2387f3ef35df10e9b1a0eb" category="paragraph">如所述、安裝並連接NS224磁碟櫃<block ref="71b38ceec90716734f26b1c06463d904" category="inline-link-rx"></block>。</block>
   <block id="3d583022c2a0e3f44141400e25a3113d" category="list-text"><block ref="3d583022c2a0e3f44141400e25a3113d" category="inline-link-macro-rx"></block></block>
   <block id="e95c782f97493fda4a0794b55f88c5be" category="list-text"><block ref="e95c782f97493fda4a0794b55f88c5be" category="inline-link-macro-rx"></block></block>
   <block id="0a4bb09bc90ee0ee6fecb0e670cb0d8e" category="inline-link-macro">詳細步驟</block>
@@ -6734,8 +6726,6 @@
   <block id="777fd6d7388769d3f60adc007c4390a4" category="paragraph"><block ref="777fd6d7388769d3f60adc007c4390a4" category="inline-link-rx"></block></block>
   <block id="801fb2644ef002c15826950c6197b174" category="paragraph">零點9.10.1P3和9.11.1 ONTAP</block>
   <block id="a31ab93f41516026d249aceb633bccc3" category="doc">新增I/O模組- FAS9500</block>
-  <block id="133808c24f6fb32a9a2a58ed28150498" category="paragraph">您可以將I/O模組新增至系統的空模組插槽、做為SAS儲存櫃的NIC或儲存模組。</block>
-  <block id="ff231ca484e594004f4ca93ecfa6683e" category="paragraph">主控台連線顯示、當接管完成時、節點會捨棄至載入器提示。</block>
   <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">從合作夥伴節點回饋節點。將容錯移轉還原為-ofnode_node_name'</block>
   <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">熱新增SAS機櫃</block>
   <block id="9856beabcb389225df78cec96e74e365" category="list-text">如果您安裝儲存I/O模組、請依照中所述、安裝並連接SAS磁碟櫃<block ref="322cc377ef41f5776a1c64690e12c49b" category="inline-link-rx"></block>。</block>
@@ -7356,23 +7346,13 @@
   <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">按下模組握把上的Terra cotta釋放按鈕、然後將DCPM模組滑出機箱。</block>
   <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">還原並驗證組態- AFF VA900</block>
   <block id="4db8dbc03fb77b9d2fa1dabdeec7a07a" category="list-text">重新執行系統層級的診斷測試。+如果系統層級的診斷測試再次失敗、請聯絡 <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
-  <block id="22afc2cb7855948b6347ad0d5b8816a7" category="paragraph">如果您已啟用儲存加密、請使用適當的程序。</block>
   <block id="2c35abfceaabbce6e9a2f24491d249c0" category="open-title">選項1：使用Onboard Key Manager</block>
   <block id="86b112e5aa1ced4fbffb09dded147e9f" category="list-text">將節點開機至開機功能表。</block>
   <block id="e07ae2ef2fbd56f8a3ced5a2ab602ded" category="list-text">選取選項10、<block ref="cdca34dc3d7defb03d741a65d78de01c" prefix=" " category="inline-code"></block>。</block>
-  <block id="5affab7614cb0938ec2fe16dbf6094bd" category="list-text">在提示符下輸入叢集的內建金鑰管理程式密碼：需要範例、請按這裡</block>
-  <block id="e1abc7408800fce9a7b34d2d5dca8aee" category="list-text">輸入備份金鑰資料</block>
-  <block id="99f5c4eee12090497e3ca28e84e49cab" category="admonition">完成通關密碼資訊後、節點會返回開機功能表。</block>
   <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">選取選項1、<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
   <block id="c566d4828cd295258aa8097a90880602" category="open-title">選項2：使用外部管理程式</block>
   <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">選取選項11、<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
-  <block id="b0bab47307c92499e81bac9b25dc3e52" category="list-text">在提示中輸入管理憑證資訊：需要範例於此處*</block>
   <block id="453b94e2cc94c331c590159bf6b2d21e" category="admonition">管理憑證資訊完成後、節點會返回開機功能表。</block>
-  <block id="6f7b977f442186b3a2cff79208772851" category="list-text">重設磁碟的MSID：</block>
-  <block id="55bbcb479d2d67bc8ad4b8a2598ddd48" category="inline-link">指派資料驗證金鑰給FIPS磁碟機或SED（內建金鑰管理）</block>
-  <block id="be8dfb1b8df54a914e06c0a343100004" category="list-text">如果您使用內建儲存加密、請依照中的程序進行<block ref="503b29df34267dc3c3e3b8927894b0ee" category="inline-link-rx"></block></block>
-  <block id="32c3cf2b38ceb59d729e7de2ff67fefc" category="inline-link">指派資料驗證金鑰給FIPS磁碟機或SED（外部金鑰管理）</block>
-  <block id="a785aecc0aa86cd8bf8795e1bc4c3e60" category="list-text">如果您使用的是外部Keymanager、請依照中的程序進行<block ref="c5282a2eb5b1733e45b98afbe5b54d05" category="inline-link-rx"></block></block>
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用維護模式中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="55c99fae85fce446adbb5ceb895cf55e" category="paragraph">更換機箱時、若要移除電源供應器、必須先關閉、拔下電源供應器、然後再從舊機箱背面卸下四個電源供應器。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">裝回機箱時、您必須卸下機箱正面的六個風扇模組。</block>
@@ -7392,4 +7372,29 @@
   <block id="7a0118bb1b2d6a800462ca70c23a1876" category="image-alt">DRw 9000纜線主控台交換器控制器IOPS 953</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
+  <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">您可以將I/O模組新增至系統的空模組插槽。</block>
+  <block id="741ade379895992f2a574e8e60de1571" category="section-title">步驟2：新增I/O模組</block>
+  <block id="31ac56c0f673cbef254563f6a8a32626" category="paragraph">如果系統已完全安裝、您可以移除現有的I/O模組、並以不同的I/O模組來更換I/O模組、以變更I/O插槽中的I/O模組。</block>
+  <block id="ed4dc030dff8dfc29b5cd17aafe4c26e" category="paragraph">=步驟2：更換I/O模組</block>
+  <block id="abd172307b56cb5c0bccb5323a67b886" category="paragraph">=步驟3：更換I/O模組後重新啟動控制器</block>
+  <block id="fd25e96fa9d35ae62fb86caa243d8698" category="paragraph">=步驟4：將故障零件歸還給NetApp</block>
+  <block id="74458273e576f4b2da617a6e0e209a5f" category="paragraph">如果您已啟用儲存加密、請使用適當的程序。</block>
+  <block id="23620cc2fa7491aefb480afbef75dac2" category="list-text">輸入您從客戶處取得的機載金鑰管理程式密碼。</block>
+  <block id="15247f97704eb964c60d179c321c1370" category="list-text">出現提示時、請貼上輸出的備份金鑰資料<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> 或<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="8726b2ef66dc0e734b269a3191597e11" category="paragraph">－－－－－－－－－－－－ 開始備份</block>
+  <block id="328f6eaec3741c1d0f9558d6c40c1da4" category="paragraph">TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAA1AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAMAZAMAZAAAAAA。。。H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</block>
+  <block id="26eef74dee0269079c9b6b002eeddb34" category="admonition">節點會返回開機功能表。</block>
+  <block id="1e4d7cab6ce42bcab6973efa42fc0b2c" category="list-text">執行安全金鑰管理程式內建同步：</block>
+  <block id="377fca3965b001b9bcc8843e1b287fe7" category="list-text">如果先前已設定MSID、並在本程序開始時擷取、請重設MSID：</block>
+  <block id="a967d40ef247a202e5f1ce7a9626a0ca" category="list-text">使用將資料驗證金鑰指派給FIPS磁碟機或SED<block ref="8fc59e93e98503b6d1b1230269b06192" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="551eb7af7cdc6ae3394d506bd47a783d" category="admonition">您可以使用<block ref="eb3cf23f0c9c60ca759ddca34bbfbf56" prefix=" " category="inline-code"></block> 檢視金鑰ID的命令。</block>
+  <block id="6f44d6d36af2c0294f4e53a2e6947b94" category="list-text">確認已使用指派驗證金鑰<block ref="46353f4e0bb2c136591c37c9eeedcf40" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="960bc5d7d199e0e148cd3dd0e517250d" category="list-text">在提示下輸入管理憑證資訊。</block>
+  <block id="037baf09c7ddcc7c38f81e7dbe35fa87" category="paragraph">您可以將I/O模組新增至系統、方法是將新的I/O節點新增至具有空插槽的系統、或是將I/O模組更換為已完全安裝的系統中的新I/O模組。</block>
+  <block id="55f1569cdcfb82612fcf293f23db4f6f" category="list-text">請檢查<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。</block>
+  <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">如果有多個插槽可用、請檢查中的插槽優先順序<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 並使用適用於您I/O模組的最佳工具。</block>
+  <block id="849384ba6480c0ea1f0194c179b1dad2" category="list-text">如果您安裝儲存I/O模組、請依照中所述、安裝NS224磁碟櫃並進行纜線連接<block ref="a84558faf7b836b9db418a291f2462b5" category="inline-link-rx"></block>。</block>
+  <block id="3aa5c10c865ad075f0b3003697aa0a31" category="inline-image-macro">寬=20px</block>
+  <block id="5574e785cb3feaf25b9cde927c042bd5" category="paragraph"><block ref="5574e785cb3feaf25b9cde927c042bd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="314032c5f76e6fcf7f32085e64ca9fd1" category="paragraph">如所述、安裝並連接NS224磁碟櫃<block ref="120b604fa0c5a5c9d522c8314c790770" category="inline-link-rx"></block>。</block>
 </blocks>
