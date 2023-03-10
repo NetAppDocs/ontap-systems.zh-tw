@@ -197,7 +197,7 @@ image::../media/drw_a320_cable_management_arms.png[DRW A320纜線管理臂]
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
-NOTE: 如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽的左側）、然後尋找插卡、再依產品編號在中尋找插卡 https://hwu.netapp.com["NetApp Hardware Universe"^] 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號 `sysconfig -a` 命令或系統壓縮清單上的。
+NOTE: 如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽左側）、然後在中依產品編號尋找插卡 https://hwu.netapp.com["NetApp Hardware Universe"^] 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號 `sysconfig -a` 命令或系統壓縮清單上的。
 
 
 NOTE: 如果您要佈線MetroCluster 成一個靜態IP組態、連接埠e0a/e0b可用於託管資料生命量（通常在預設IPSpace中）。

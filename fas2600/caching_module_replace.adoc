@@ -33,11 +33,12 @@ link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-t
 
 . 雖然快取模組上的資料已加密、但您可能想要清除受損快取模組中的任何資料、並確認快取模組沒有資料：
 +
-.. 清除快取模組上的資料：「系統控制器快閃快取安全清除執行」
-.. 驗證資料是否已從快取模組中清除：「System Controller flash-cache secure-erase show -node_name」（系統控制器快閃快取安全清除show -node_name）
+.. 清除快取模組上的資料： `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
 +
-輸出應顯示快取模組狀態為「已清除」。
 
+NOTE: 執行 `system controller flash-cache show` 如果您不知道快閃快取裝置ID、則命令。
+
+.. 確認資料已從快取模組中清除： `system controller flash-cache secure-erase show`
 
 
 . 如果受損的控制器是HA配對的一部分、請從健全控制器的主控台停用自動恢復功能：「torage容錯移轉修改節點本機-自動恢復錯誤」

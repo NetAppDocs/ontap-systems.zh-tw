@@ -4757,9 +4757,6 @@
   <block id="322391dba2ed1aad7de572d3e59d7971" category="doc">更換快取模組AFF - EFFEA220和FAS2700</block>
   <block id="308216007c5ec00e109a42c5068cc3de" category="paragraph">您可能需要先清除快取模組的內容、然後再進行更換。</block>
   <block id="6ec04a396d43adc0bf840cc9e4cce4b3" category="list-text">雖然快取模組上的資料已加密、但您可能想要清除受損快取模組中的任何資料、並確認快取模組沒有資料：</block>
-  <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">清除快取模組上的資料：「系統控制器快閃快取安全清除執行」</block>
-  <block id="236dd84b9226dbf8dfd98a6c46b59972" category="list-text">驗證資料是否已從快取模組中清除：「System Controller flash-cache secure-erase show -node_name」（系統控制器快閃快取安全清除show -node_name）</block>
-  <block id="af41b619bf9d50ddae2454efc001e4dd" category="paragraph">輸出應顯示快取模組狀態為「已清除」。</block>
   <block id="01ca059245897bf13f451aefdac2252d" category="section-title">步驟3：更換快取模組</block>
   <block id="fcb47fab108a0238221cf0b2d24663f3" category="paragraph">若要更換控制器標籤上的快取模組（稱為「M.2 PCIe卡」）、請找出控制器內的插槽、然後依照特定的步驟順序進行。</block>
   <block id="b37236c3c4a90442c4db951305ea57a0" category="image-alt">DRW 2600 fcache重新製動畫Gif</block>
@@ -5632,8 +5629,6 @@
   <block id="f7594aa9507b35645b3c82938aed0e9a" category="paragraph">您可以使用下列動畫、圖例或書面步驟、在機箱中安裝控制器模組。</block>
   <block id="144c419e3dcef5763e6e9018f63fe3f4" category="list-text">使用鎖定鎖條、將控制器模組穩固地推入機箱、直到其與中間背板接入並完全就位。</block>
   <block id="05da715fdd840e7fc27dd764386018bc" category="doc">更換快取模組- FAS8300和FAS8700</block>
-  <block id="d457ea14ed8ca14254ad1d75e29dce09" category="list-text">清除快取模組上的資料：「System Controller flash-cache secure-erase run -node_node_name_-device-id _device_id_」</block>
-  <block id="b9106c27d735907c8812d337029e92be" category="list-text">驗證資料是否已從快取模組中清除：「System Controller flash-cache secure-erase show -node_node_name_」（系統控制器快閃快取安全清除show -node_node_name_）</block>
   <block id="852ccbca31b38b90e5621b15b3d30e1b" category="paragraph">接管或停止受損的控制器：「暫停容錯移轉接管-節點_受損節點_節點_名稱_」當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。</block>
   <block id="8a653be38ee9a052d5a08a28a70c1d9e" category="paragraph">若要更換快取模組（在控制器標籤上稱為快閃快取）、請找出控制器內的插槽、然後依照特定的步驟順序進行。請參閱控制器模組上的FRU對應圖、以瞭解Flash Cache的位置。</block>
   <block id="1bd3d89e17ddba901467cbccce7082ab" category="inline-link">波動性聲明</block>
@@ -7375,9 +7370,6 @@
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">您可以將I/O模組新增至系統的空模組插槽。</block>
   <block id="741ade379895992f2a574e8e60de1571" category="section-title">步驟2：新增I/O模組</block>
   <block id="31ac56c0f673cbef254563f6a8a32626" category="paragraph">如果系統已完全安裝、您可以移除現有的I/O模組、並以不同的I/O模組來更換I/O模組、以變更I/O插槽中的I/O模組。</block>
-  <block id="ed4dc030dff8dfc29b5cd17aafe4c26e" category="paragraph">=步驟2：更換I/O模組</block>
-  <block id="abd172307b56cb5c0bccb5323a67b886" category="paragraph">=步驟3：更換I/O模組後重新啟動控制器</block>
-  <block id="fd25e96fa9d35ae62fb86caa243d8698" category="paragraph">=步驟4：將故障零件歸還給NetApp</block>
   <block id="74458273e576f4b2da617a6e0e209a5f" category="paragraph">如果您已啟用儲存加密、請使用適當的程序。</block>
   <block id="23620cc2fa7491aefb480afbef75dac2" category="list-text">輸入您從客戶處取得的機載金鑰管理程式密碼。</block>
   <block id="15247f97704eb964c60d179c321c1370" category="list-text">出現提示時、請貼上輸出的備份金鑰資料<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> 或<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> 命令。</block>
@@ -7397,4 +7389,9 @@
   <block id="3aa5c10c865ad075f0b3003697aa0a31" category="inline-image-macro">寬=20px</block>
   <block id="5574e785cb3feaf25b9cde927c042bd5" category="paragraph"><block ref="5574e785cb3feaf25b9cde927c042bd5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="314032c5f76e6fcf7f32085e64ca9fd1" category="paragraph">如所述、安裝並連接NS224磁碟櫃<block ref="120b604fa0c5a5c9d522c8314c790770" category="inline-link-rx"></block>。</block>
+  <block id="757216293ea1da04339a2c9b8eaa2641" category="admonition">tar.gz檔案必須放在最少4GB的fat32格式分割區上。儘管Windows內建工具（例如磁碟零件）的容量可達2TB、但卻無法格式化大於32GB的FAT32分割區。</block>
+  <block id="e9d3276fadd16a57346b54cecf613793" category="list-text">清除快取模組上的資料：<block ref="5ffb603e9f437c31dabf66aeb6dc9941" prefix=" " category="inline-code"></block></block>
+  <block id="06dd51a0351c6bc1041f60a7a78358f1" category="admonition">執行<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block> 如果您不知道快閃快取裝置ID、則命令。</block>
+  <block id="955a29c530e47b3a4d397e3e2ff7a94a" category="list-text">確認資料已從快取模組中清除：<block ref="5a00050b2fc68dfbfe21cffc587aa407" prefix=" " category="inline-code"></block></block>
+  <block id="04f13a81f468108c54934d79ebdf3ceb" category="admonition">如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽左側）、然後在中依產品編號尋找插卡<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> 命令或系統壓縮清單上的。</block>
 </blocks>
