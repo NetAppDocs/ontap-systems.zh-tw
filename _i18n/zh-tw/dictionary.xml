@@ -7394,4 +7394,7 @@
   <block id="06dd51a0351c6bc1041f60a7a78358f1" category="admonition">執行<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block> 如果您不知道快閃快取裝置ID、則命令。</block>
   <block id="955a29c530e47b3a4d397e3e2ff7a94a" category="list-text">確認資料已從快取模組中清除：<block ref="5a00050b2fc68dfbfe21cffc587aa407" prefix=" " category="inline-code"></block></block>
   <block id="04f13a81f468108c54934d79ebdf3ceb" category="admonition">如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽左側）、然後在中依產品編號尋找插卡<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> 命令或系統壓縮清單上的。</block>
+  <block id="3a5f51ab8f29522107285c1bd243bf95" category="paragraph">如果SAS2/SAS3「混合堆疊支援」欄位未出現在輸出中、或值為「無」、則表示您的系統不支援混合堆疊。</block>
+  <block id="b57b9debcc2348af5e609f2c38ecae74" category="paragraph">如果「SAS2/SAS3混合堆疊支援」欄位中顯示「ALL」、則表示您的系統支援混合堆疊。</block>
+  <block id="7a2d660ca9e94c940789a57658eb9268" category="paragraph">如果「SAS2/SAS3混合堆疊支援」欄位中出現「橋接附加」、則系統僅在儲存櫃透過Atto FibreBridge連接時才支援混合堆疊。</block>
 </blocks>
