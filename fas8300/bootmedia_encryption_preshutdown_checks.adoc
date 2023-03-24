@@ -40,7 +40,6 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 
 == 在執行ONTAP Se 9.6及更新版本的系統上檢查NVE或NSE
 
-[role="lead"]
 在關閉受損的控制器之前、您需要確認系統是否已啟用NetApp Volume Encryption（NVE）或NetApp Storage Encryption（NSE）。如果是、您需要驗證組態。
 
 . 驗證叢集中的任何磁碟區是否正在使用NVE：「Volume show -is -Encrypted true（Volume show -is -Encrypted true）」

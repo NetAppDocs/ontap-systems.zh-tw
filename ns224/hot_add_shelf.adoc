@@ -17,7 +17,6 @@ summary: 當HA配對符合特定需求、且已完成適用於HA配對的準備�
 
 == 熱新增需求
 
-[role="lead"]
 在熱新增NS224磁碟機櫃之前、HA配對必須符合特定需求。
 
 * 您的平台模式和ONTAP 版本的支援必須支援NS224機櫃和熱新增的磁碟機。
@@ -74,7 +73,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 == 熱新增的考量事項
 
-[role="lead"]
 在熱新增NS224磁碟機櫃之前、您應該先熟悉此程序的最佳實務做法和相關事項。
 
 * 如果您有ASA 支援NS224磁碟櫃的SHA配對、可以使用此程序。
@@ -119,7 +117,6 @@ NOTE: 韌體更新最多可能需要30分鐘。
 
 == 準備熱新增
 
-[role="lead"]
 在熱新增NS224磁碟機櫃之前、您必須先完成適用於HA配對的準備工作。
 
 
@@ -373,7 +370,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 == 安裝熱新增磁碟機櫃
 
-[role="lead"]
 安裝新的NS224磁碟機櫃時、需要將磁碟櫃安裝到機架或機櫃、連接電源線（自動開啟磁碟櫃電源）、然後設定磁碟櫃ID。
 
 .開始之前
@@ -441,7 +437,6 @@ NOTE: 如果ID需要15秒以上的時間才能開始閃燈、請再次按住按�
 
 == 纜線連接磁碟機櫃以進行熱新增
 
-[role="lead"]
 您可以將每個熱新增的NS224磁碟機櫃纜線、以便每個機櫃都有兩個連線連接到HA配對中的每個控制器模組。視您要熱新增的磁碟櫃數量和平台機型而定、您可以在控制器、具備RoCE功能的PCIe卡、兩者的組合、或是具備RoCE功能的I/O模組上使用具備RoCE功能的連接埠。
 
 
@@ -564,7 +559,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 === 將FAS500f或AFF FASA250 HA配對的熱新增機櫃連接起來
 
-[role="lead"]
 如果需要額外的儲存空間、您可以將NS224磁碟機櫃熱新增至FAS500f或AFF S4A250 HA配對。
 
 .開始之前
@@ -966,7 +960,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 == 完成熱新增
 
-[role="lead"]
 如果您在準備NS224磁碟機櫃熱新增時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。
 
 .開始之前

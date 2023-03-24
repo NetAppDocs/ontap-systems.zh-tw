@@ -2874,16 +2874,12 @@
   <block id="1c0152b1bce888fe537c442be9dccb80" category="section-title">步驟4：更換FRU後重新啟動控制器</block>
   <block id="ba7c6b30d321c807ee6ec4c52d399609" category="paragraph">更換FRU之後、您必須重新啟動控制器模組。</block>
   <block id="e56984ce184129f6ba4941f5a5d85c7b" category="list-text">若要ONTAP 從載入程式提示字元開機、請輸入「bye」。</block>
-  <block id="d2afd23f9efb1f5de6cadd26fcce1cf5" category="section-title">步驟5：驗證並設定控制器模組的HA狀態</block>
-  <block id="f95e8e8b229c3aee97b205509f91df66" category="section-title">步驟6：重新指派磁碟</block>
   <block id="75058bf61b1188ee8304798f89ca02bf" category="paragraph">您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。</block>
-  <block id="8672de10e3d8295abd1be60e2569c4c6" category="list-text">儲存任何核心傾印：「系統節點執行節點本機節點名稱合作夥伴儲存資源」</block>
   <block id="590ef635c433371eead20b940bf6c429" category="list-text">從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode替 用節點名稱」</block>
   <block id="4cd2ac4c22d2d6323c4f80d036ea5320" category="paragraph">更換的控制器會恢復儲存設備、並完成開機。</block>
   <block id="e8d2a192788fc79eb80ab29e07304094" category="paragraph">更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster</block>
   <block id="11cd58ab2810de65be01109093020b63" category="list-text">替換控制器是災難站台上磁碟的目前擁有者。</block>
   <block id="7285c4012d903a86f08da4d4eb643a35" category="paragraph">請參閱<block ref="1c9dcde47ee822b3ac120aae2f296f05" category="inline-link-rx"></block> 以取得更多資訊。</block>
-  <block id="5a503439969930e9e348f79d2b8004d7" category="section-title">步驟7：還原儲存設備和Volume Encryption功能</block>
   <block id="e81625c6f6813a6e5480c2987f5bd781" category="section-title">步驟8：將故障零件歸還給NetApp</block>
   <block id="b9f8bf80fa7fab32aca8c28430b0b999" category="doc">更換即時時鐘電池AFF - REVA900</block>
   <block id="5ab3b65334d9648ac44bf62025764ce2" category="section-title">步驟2：移除控制器</block>
@@ -4256,7 +4252,6 @@
   <block id="1843827ef03aba05b85ff9846acb4a4f" category="list-text">FAS9000、AFF S4A700和ASA AFF S4A700、ONTAP Se 9.8及更新版本中的SAS機櫃佈線：</block>
   <block id="e2da081ec1f9e5df221849d0bca3449a" category="paragraph"><block ref="e2da081ec1f9e5df221849d0bca3449a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c2c57baca5559cc6deaa2d149cbcc7e" category="admonition">如果您有多個磁碟機櫃堆疊、請參閱磁碟機櫃類型的_安裝與佈線指南_。</block>
-  <block id="2b5a9c03e0a3ef447899ed93ac4917cb" category="paragraph"><block ref="2b5a9c03e0a3ef447899ed93ac4917cb" category="inline-link-macro-rx"></block></block>
   <block id="90a326588028ddcde615038a3974e162" category="paragraph"><block ref="90a326588028ddcde615038a3974e162" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f3e065129fb4cb88ba99260c70d8c054" category="list-text">前往 <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block> 以完成系統設定與組態。</block>
   <block id="51b3003c067a0d5dfcbcfbc5aab0240d" category="section-title">選項2：將控制器纜線連接AFF 至僅ASA AFF 執行ONTAP 《S9.8及更新版本》的單一NS224磁碟機櫃、即可連接至該系統</block>
@@ -4394,7 +4389,6 @@
   <block id="1cb9b3efa917390e5f072324eb2dea38" category="list-text">此程序假設您將X91148A模組重新安裝至插槽3和/或7。</block>
   <block id="46bbb084ae40b0369bddbcb13aac2bc4" category="list-text">如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block>。</block>
   <block id="bee1f07b307186667ad005db1d21960d" category="list-text">如果您要安裝第二個X91148A模組進行儲存、請針對插槽7中的模組重複執行移除和安裝步驟。</block>
-  <block id="da6e337f5926cf03f06bcd1c9fb63113" category="list-text">如所述、安裝並連接NS224磁碟櫃<block ref="a5aecdce285751c9f856700f4feb4311" category="inline-link-rx"></block>。</block>
   <block id="ce0f07ee43e7bb986cfbe4574d968557" category="summary">當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。</block>
   <block id="5262c4fcaae1028d6c63e17aa1a1d447" category="doc">更換快取模組或新增/更換核心傾印模組AFF - REVA700和FAS9000</block>
   <block id="e0eabfb37c8abbd2f6978d6e8eb8432b" category="paragraph">當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。如果AutoSupport 未啟用此功能、您可以透過模組正面的故障LED尋找故障快取模組。您也可以新增或更換1TB的X9170A核心傾印模組、如果您要將NS224磁碟機櫃安裝在AFF SVA700系統中、則需要此模組。</block>
@@ -4499,7 +4493,6 @@
   <block id="ebc2b7657690ae02a25495dd970c279d" category="list-text">使用「系統控制器插槽模組show」命令顯示插槽狀態。</block>
   <block id="dac273d93724b47a21b755da953f81be" category="paragraph">對於需要更換的快取模組、NVMe插槽狀態會在螢幕輸出中顯示「關機」。</block>
   <block id="9cdb076245d84700443d3aee5a21f0ff" category="inline-link">命令手冊頁</block>
-  <block id="70241a33e23df22a0f8f997b18ff24a7" category="admonition">請參閱<block ref="853257fe46b33572328cc9f35a075f2a" category="inline-link-rx"></block> 以取得ONTAP 更多詳細資料。</block>
   <block id="6889e6aea700ddb8ffc126572b96cdca" category="list-text">使用「系統控制器插槽模組insert」命令將替換快取模組上線、如下所示：</block>
   <block id="03ffe1ad6eee59a62bd912b30524dc4f" category="paragraph">下列命令會準備節點1上的插槽6-2以供開機、並顯示已開機的訊息：</block>
   <block id="7b4a8a9abbba5d85a58219d1e5163f5b" category="list-text">使用「系統控制器插槽模組show」命令來驗證插槽狀態。</block>
@@ -4604,8 +4597,6 @@
   <block id="8351404e0633e21cf67cb22047391a59" category="doc">開機媒體更換總覽- FAS8200</block>
   <block id="1a44c6d683ab4458e8c10088dee0617d" category="doc">還原並驗證組態- FAS8200</block>
   <block id="ad0e39682bcd1cd18eb8f815706bdc7d" category="paragraph">HA狀態的值可以是以下值之一：***"ha"（三個）***"mcc"（三個）***"mcc-2n"（三個）***"mCCIP"（三個）***"non-ha"（非三個）</block>
-  <block id="6561961e36dc0d672367014bb35814b0" category="inline-link-macro">「完成更換程序</block>
-  <block id="65f64a7bdb4d22c25178d4fda4e009b6" category="list-text">前往 <block ref="c0ff5fd751abc2ff7939ebc71dae2951" category="inline-link-macro-rx"></block>。</block>
   <block id="8c11f4937de9ae763544c825f88097ae" category="doc">換出一個風扇- FAS8200</block>
   <block id="8f2c083353ba46faa1f5bfb6d1740753" category="doc">開機恢復映像- FAS8200</block>
   <block id="b6c33850022ae87ff1d2d111469a0da5" category="paragraph">：您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。</block>
@@ -4662,8 +4653,6 @@
   <block id="f2333c38a5002ab3a3ce6f24b2d22d95" category="paragraph"><block ref="f2333c38a5002ab3a3ce6f24b2d22d95" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4357958f190ff6c4c081ade05a73d53e" category="paragraph"><block ref="4357958f190ff6c4c081ade05a73d53e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cd55300ec4cb3223c5bc06b35b221bc" category="paragraph">此時請勿插入電源線。</block>
-  <block id="dd1dcd1cd7a28bbfc3b5a581b055bce3" category="inline-link-macro">將控制器連接至磁碟機櫃</block>
-  <block id="6c9cda13d9d7d9f8f82d912175e78d9b" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="42bf816180738dc1660363ee044d9786" category="inline-link-macro-rx"></block></block>
   <block id="6d4bc3cf86318438b709fd5087158d59" category="section-title">選項2：連接交換式叢集、統一化網路組態</block>
   <block id="afcfe9ab06da740b8b6db896f79a9ba9" category="paragraph">控制器上的管理網路、UTA2資料網路和管理連接埠均連接至交換器。叢集互連連接埠已連接至叢集互連交換器。</block>
   <block id="65dc5db3d1655dcd2f6bb2520a3cbef6" category="list-text">您可以使用圖形或逐步指示來完成控制器與交換器之間的佈線：</block>
@@ -4705,9 +4694,6 @@
   <block id="4b340db6110d657781e4a28d91e76457" category="list-text">控制器1連接埠0A至堆疊中第一個磁碟機櫃上的IOM B連接埠1。</block>
   <block id="25e9c854cd268404ba760167e55a47b9" category="list-text">控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。<block ref="1869c18bf4845d129ab70a2555c3fa58" category="inline-image-macro-rx" type="image"></block> Mini-SAS HD至Mini-SAS HD纜線</block>
   <block id="ba9a3cf272ff19e49b8066ab84a2b3dc" category="inline-link-macro">安裝和佈線</block>
-  <block id="a1770e5cf644990212f313f91eccb2d8" category="paragraph"><block ref="a1770e5cf644990212f313f91eccb2d8" category="inline-link-macro-rx"></block></block>
-  <block id="4402c8b8d6c489ed5617a151ffa90726" category="inline-link-macro">完成系統設定與組態</block>
-  <block id="41e876cad607f9363190645026f4f818" category="list-text">若要完成系統設定、請參閱 <block ref="cf51f79f23f70e62c97013df347c6a0f" category="inline-link-macro-rx"></block></block>
   <block id="a83c5e67d745b0c85b815af3214463cd" category="section-title">選項1：如果已啟用網路探索、請完成系統設定</block>
   <block id="cbd6e530c253bd69eae2efffc8a1d409" category="list-text">請使用下列動畫來設定一或多個磁碟機櫃ID</block>
   <block id="347e1a8985d85eefdfec9853c8769148" category="image-alt">啟用切換至PSU的電源</block>
@@ -4725,14 +4711,8 @@
   <block id="6050f7a94074865f0c7eb8f65b5c5a8f" category="cell">控制器備援</block>
   <block id="21f105a570b6840e0f78f7fef2476046" category="cell">然後使用此程序...</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="paragraph">HA配對</block>
-  <block id="91b91feeb88498e7be1c10bbbb6db4c2" category="inline-link-macro">驗證HA系統上的系統ID變更</block>
-  <block id="4e87b3c0f415f46d36e8fa6bd32a6ff7" category="paragraph"><block ref="4e87b3c0f415f46d36e8fa6bd32a6ff7" category="inline-link-macro-rx"></block></block>
   <block id="d7fb1a4bddb3db62efbcefc0f8162f42" category="paragraph">獨立式</block>
-  <block id="465740a443e85d455a90494615d629b9" category="inline-link-macro">在ONTAP 支援的獨立系統上手動重新指派系統ID</block>
-  <block id="7070195bf98baff2e0462461db9cb074" category="paragraph"><block ref="7070195bf98baff2e0462461db9cb074" category="inline-link-macro-rx"></block></block>
   <block id="c35620e4053e83506175fd11f77f79d1" category="paragraph">雙節點MetroCluster 的不全功能組態</block>
-  <block id="734e28e3c6b715a48c7043347210471e" category="inline-link-macro">在雙節點MetroCluster 的作業系統上手動重新指派系統ID</block>
-  <block id="ca5a5e07d656cff35da2184538cfc5fb" category="paragraph"><block ref="ca5a5e07d656cff35da2184538cfc5fb" category="inline-link-macro-rx"></block></block>
   <block id="d7f3697202a93edfa9694f456f135d47" category="section-title">選項3：手動重新指派雙節點MetroCluster 的系統ID</block>
   <block id="4a548135158bf0dbaee8622657e29f8a" category="doc">關閉受損的控制器AFF - E4A220和FAS2700</block>
   <block id="49d177da03edc46e3dbb473a8199c5e8" category="doc">機箱更換總覽- AFF EFASA220與FAS2700</block>
@@ -4769,8 +4749,6 @@
   <block id="00a787350c10dda9fec8ed799a0a0d41" category="inline-link">安裝MetroCluster 不需要的IP組態</block>
   <block id="dd97e64f3163f239256639a3f4314e89" category="paragraph">如果您的系統採用MetroCluster 不知道IP組態、請參閱<block ref="373f2390d7121eb9c57821ab147cf1e7" category="inline-link-rx"></block> 說明。</block>
   <block id="c4de84ea78d221e98599baf30d3e65d1" category="doc">更換DIMM AFF - EFASA220和FAS2700</block>
-  <block id="376b1cae869bbe8ab1cce68fdb30b696" category="inline-link-macro">更換DIMM</block>
-  <block id="91e13f2779cb51174165fa30eaba7e5b" category="list-text">返回 <block ref="cf268cc4bc5a73daf7348170b397c07d" category="inline-link-macro-rx"></block> 重新檢查NVMEM LED。</block>
   <block id="066c0a2f133fb39e8887805ab2dd11a0" category="doc">更換開機媒體AFF - EFFEA220和FAS2700</block>
   <block id="88de6a437c20bc32d754f16685e940b8" category="image-alt">DRw 2600開機媒體會移入americif</block>
   <block id="03be12a0476133b21cb6c1c927956d23" category="doc">更換SSD磁碟機或HDD磁碟機- AFF E4A220和FAS2700</block>
@@ -5015,7 +4993,6 @@
   <block id="d1ac48d4410d6102fa54b8b3405a83e5" category="paragraph"><block ref="d1ac48d4410d6102fa54b8b3405a83e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9dfe7ca4d480fd4e10a0954286489a0f" category="paragraph">使用RJ45纜線將e0M連接埠連接至管理網路交換器。</block>
   <block id="5d86a652667b386e0b98042631990c02" category="paragraph"><block ref="5d86a652667b386e0b98042631990c02" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="564becbb42cc33012e00424619583eca" category="list-text">纜線連接儲存設備： <block ref="42bf816180738dc1660363ee044d9786" category="inline-link-macro-rx"></block></block>
   <block id="eb9634f2ea796139d7f0aeca3f6ce2d4" category="section-title">選項2：交換式叢集的佈線</block>
   <block id="5b2974409018c6d4642074b9be18209d" category="paragraph">控制器模組上的選用資料連接埠、選用NIC卡和管理連接埠、都會連接至交換器。叢集互連/ HA連接埠會連接至叢集/ HA交換器。</block>
   <block id="75a0d3caeb66a7c3aca3b7bc0f0c5985" category="image-alt">DRW A320交換式網路纜線複合式動畫式GIF</block>
@@ -5030,7 +5007,6 @@
   <block id="d49bb9b3f4ea10bb2faedd5805957881" category="image-alt">DRW A320單一機櫃連線動畫Gif</block>
   <block id="fcc21d6aa5ce2f3d80b7b15b3efd7622" category="paragraph">將控制器A纜線連接至機櫃 <block ref="97ef6a28616ee1b44c8e319d2e09ad63" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf09fa2cd4cedb36165538f6f6133b7f" category="paragraph">將控制器B纜線連接至機櫃： <block ref="adad54de70c837652052dc8fbe20179a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d183e64634b3038a2447a8af4bc6f415" category="list-text">若要完成系統設定、請參閱 <block ref="cf51f79f23f70e62c97013df347c6a0f" category="inline-link-macro-rx"></block>。</block>
   <block id="e47141e6c8fccf9bfe115e4e18090b8e" category="section-title">選項2：將控制器連接至兩個磁碟機櫃</block>
   <block id="a496c0eee37cdb410fb5999f04b37d60" category="paragraph">您必須將每個控制器連接至兩個NS224磁碟機櫃上的NSM模組。</block>
   <block id="6bd176ab7852b1804bc6113808615ff6" category="list-text">您可以使用下列圖例或書面步驟、將控制器連接至兩個磁碟機櫃。</block>
@@ -5478,7 +5454,6 @@
   <block id="a3e79fff93cae393b9fcd5d08d264b15" category="list-text"><block ref="a3e79fff93cae393b9fcd5d08d264b15" category="inline-link-macro-rx"></block></block>
   <block id="bdcac988a0903764d18f7be5086a6f98" category="doc">更換DIMM AFF - REC190</block>
   <block id="70307621ba0045acdea9f2a7c113fa13" category="paragraph">若要更換DIMM、您必須在控制器模組內找到DIMM、然後依照特定的步驟順序進行。</block>
-  <block id="0a980a0f7131164348aa395168430c19" category="list-text">返回 <block ref="8d9485b043d2d189d21e80102089dac7" category="inline-link-macro-rx"></block> 重新檢查NVMEM LED。</block>
   <block id="17268c6ef2838628d8d6888cfbe7b25b" category="paragraph">執行「歸還」：「儲存容錯移轉還原-ofnode_replace_node_name_」*注意：*如果停用自動還原、請使用儲存容錯移轉修改命令重新啟用。</block>
   <block id="cc36390de0e6f5128a70841fe11c7e73" category="doc">更換開機媒體AFF - REC190</block>
   <block id="0ce2a0e29499223b29490143e42e0e0e" category="list-text">與執行受損控制器相同ONTAP 版本之圖片的一份複本。您可以從NetApp支援網站上的* Downloads（下載）*區段下載適當的映像</block>
@@ -5993,7 +5968,6 @@
   <block id="9856c39eca48b8716f11fbd7f4e0e610" category="paragraph">X6566B-3-R6（112-00300）、3公尺；</block>
   <block id="fe4dbcab9b910577e5035e97ac068dae" category="paragraph">管理</block>
   <block id="1a24d62ae37ede800baaffb6a6a891c2" category="inline-link-macro">將超級滑軌安裝到四柱式機架中</block>
-  <block id="09e80812def315f5cdd1c01dcdfeecd6" category="paragraph"><block ref="09e80812def315f5cdd1c01dcdfeecd6" category="inline-link-macro-rx"></block></block>
   <block id="a0c86487fec36ce37cba5bd44aad6322" category="image-alt">DRW AFFa800重量注意事項</block>
   <block id="820d203fae081b8e985e10f5ba7a6241" category="image-alt">DRw affa800安裝纜線管理</block>
   <block id="2e3f75d41267a27ec00f8d348665700d" category="paragraph">控制器上的管理網路連接埠連接至交換器。兩個控制器上的HA互連和叢集互連連接埠均已連接好纜線。</block>
@@ -6241,7 +6215,6 @@
   <block id="8eea6ffadcece75bbf0826ed26885fb9" category="list-text">此程序會造成中斷。對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。</block>
   <block id="20ea0eb9eebca0280abc5766496bdaed" category="doc">更換控制器模組硬體AFF - REVA400</block>
   <block id="2010d72cb8663ac4f3960dead61f921e" category="paragraph"><block ref="2010d72cb8663ac4f3960dead61f921e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1f25549d09d9fee6b326b3ae80c2ed1b" category="image-alt">DRW A400空提升板移除</block>
   <block id="90afaae143c60252559a0b44e0296586" category="paragraph">您可以使用下列動畫、圖例或書面步驟、將PCIe擴充卡和夾層卡從受損的控制器模組移至更換的控制器模組。</block>
   <block id="2263a4202dc3f47e21b796046fdb14e0" category="section-title">步驟6：移動DIMM</block>
   <block id="a6c279177bd30a0d3ee3363a3679bffa" category="doc">更換即時時鐘電池AFF - VA400</block>
@@ -6740,7 +6713,6 @@
   <block id="1360261f3d9e17642c609debfd62b1d6" category="admonition">如果您需要或想要冷切換FlashCache模組、請遵循更換I/O模組的程序。</block>
   <block id="fa807167a57a5e7782f90326093319e4" category="list-text">快取模組的運作必須足以讓系統看到。如果快取模組自上次開機後無法運作、您將無法使用此程序、而且必須使用冷交換程序。</block>
   <block id="bdd8c99ec41c2de3e99ba0a36e04bfbf" category="list-text">在管理權限層級中、準備要移除的目標NVMe插槽、並在系統提示是否繼續時回應「y」：「系統控制器插槽模組移除節點節點節點名稱-插槽插槽編號」下列命令會準備節點1上的插槽6-1以供移除、並顯示可安全移除的訊息：</block>
-  <block id="e47fa3700d8c8b185b05f4e09285f497" category="admonition">請參閱<block ref="7dfdd4167a3eb44ee8af382f653a3ce0" category="inline-link-rx"></block> 以取得ONTAP 更多詳細資料。</block>
   <block id="68607949342d7df39c7770d809d0a5f2" category="image-alt">DRW 9500移除快閃快取</block>
   <block id="5e8d2460689245ee00f6d51f5db543dc" category="paragraph">Terra cotta釋放鈕。</block>
   <block id="948a2b625585740c830fda62dae13d97" category="list-text">按下快取模組前面的Terra cotta釋放按鈕。</block>
@@ -6777,8 +6749,6 @@
   <block id="3b56ab083e8d5c37dcc957efc509182f" category="doc">完整系統還原- FAS9500</block>
   <block id="3f679ad9b20cbb8994ff36e9ce18d58f" category="doc">更換NVRAM模組和/或NVRAM DIMM - FAS9500</block>
   <block id="140a295824b1023b2fcf1ac1414fc56b" category="paragraph">若要更換和NVRAM DIMM、您必須從機箱中移除NVRAM模組、更換模組中故障的DIMM、然後重新安裝NVRAM模組。</block>
-  <block id="566dc57c04b76274e7168e53e1eea041" category="list-text">「受損」節點是您要執行維護的節點。</block>
-  <block id="350cecd9af7d98cbf31c22fbd46e60fe" category="list-text">健全節點是受損節點的HA合作夥伴。</block>
   <block id="821b1e6be57f410ab68ac2071fc04df4" category="doc">更換裝有NVRAM11電池的斷續控制電源模組- FAS9500</block>
   <block id="1aa73ef56da88752323de5876f9b3750" category="doc">交換電源供應器- FAS9500</block>
   <block id="70ebba1c8f978f26a3ed9799176dd8a9" category="doc">更換控制器模組- FAS9500</block>
@@ -6840,17 +6810,6 @@
   <block id="f8cc7bd538c729e18dab57ecfd18b69e" category="video-title">動畫-更換NVRAM模組</block>
   <block id="9b191eaf82da57faf3acb37f96f84ca6" category="image-alt">DRw 9500-Move移除NVRAM模組</block>
   <block id="1b75d6028af1363f62eb9a45010f31c4" category="image-alt">DRW 9500移除NVRAM模組內容</block>
-  <block id="0855873e0fa5bed2d0067d6acae6c0df" category="paragraph">您必須在開機更換節點時確認系統ID變更、然後驗證變更是否已實作。</block>
-  <block id="93a4033a981ca86f17e1c02656473521" category="list-text">如果替換節點處於維護模式（顯示「*」&gt;「」提示）、請結束維護模式、然後移至載入程式提示字元「halt（停止）」</block>
-  <block id="fbb9a853512346feaa4279f18e3efe8c" category="list-text">等待替換節點主控台顯示「waiting for恢復...（正在等待恢復...）」訊息、然後從正常節點驗證是否已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」</block>
-  <block id="2675f497966bc5cad0cdd88dbe6eab31" category="list-text">等待「Wavecore」命令完成後、再發行傳回。</block>
-  <block id="80de24e4482214278771d2b0f3142427" category="paragraph">您可以輸入下列命令來監控「savecore」命令的進度：「ystem noder run -node-node-name合作夥伴savecore -ss」</block>
-  <block id="7a18402f95cb86527db24f56d6baec40" category="list-text">從健全的節點、歸還所更換節點的儲存設備：「torage容錯移轉恢復-ofnode替 用節點名稱」</block>
-  <block id="3217c14b22c3695ed301b94539bd2dbb" category="paragraph">替換節點會恢復其儲存設備、並完成開機。</block>
-  <block id="8a6fbf23d593cc1be4de4068cb3eeee1" category="paragraph">儲存容錯移轉show命令的輸出不應包含合作夥伴訊息中變更的系統ID。</block>
-  <block id="18963b05f9f3bc779f544c26aae06ab9" category="paragraph">屬於替換節點的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：</block>
-  <block id="cfe787a999b8c200091f805ad9426e24" category="list-text">替換節點是災難站台上磁碟的目前擁有者。</block>
-  <block id="7c5a57d1d4b3b589da7f755562ad50f8" category="paragraph">請參閱<block ref="4b1c17d30e94cc8d68adcd4265a76547" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="2c2b9a83665e5336275a4320efcb9a16" category="image-alt">DRw 9500-WCM移除</block>
   <block id="31006bbd619d2a77e6fe8ac85bee0cc0" category="image-alt">已開啟的DRw 95PCM</block>
   <block id="65b7d00d22ce12162c084039ae28de63" category="video-title">動畫-更換RTC電池</block>
@@ -7222,8 +7181,6 @@
   <block id="4efb7705f98005596f065e30ddf32363" category="section-title">採用多重路徑HA組態的內部儲存平台、只需一個多重機櫃堆疊即可</block>
   <block id="835ecba5eb095440eda54c2f50f1ef89" category="paragraph">如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表功能表將系統組態顯示為「多路徑」。</block>
   <block id="3f9904dabd6885ddf815902aade7d320" category="sidebar">內部儲存平台的佈線工作表和範例</block>
-  <block id="e3fd55f400cc227fbbc7c777c0679db1" category="list-text">如果更換的I/O模組是NIC、請將模組或模組纜線連接至資料交換器。</block>
-  <block id="c51e6cbbe594b20461edba0d83817fce" category="list-text">重新啟動BMC、然後重新啟動節點：</block>
   <block id="e727b00944f81e1d0a95c12886ac4641" category="inline-link-macro">歸檔</block>
   <block id="97a6415da8202d0321d49b92f019e7b1" category="paragraph">您可以使用這些連結來尋找其他AFF 的參考資料FAS 和參考資料平台。客戶可在中使用已達到硬體支援終止的支援功能、以取得AFF 有關的支援資料FAS <block ref="5e4606a12c7b193a6ccb23ff349575d7" category="inline-link-macro-rx"></block>。</block>
   <block id="1c91d351b95f21de02a1d9bc700d73d0" category="list-text"><block ref="1c91d351b95f21de02a1d9bc700d73d0" category="inline-link-macro-rx"></block></block>
@@ -7312,7 +7269,6 @@
   <block id="3cea6cd019ee970febca58bfe050e1cb" category="list-text">在更換控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入y。</block>
   <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">等待等待恢復...訊息會顯示在控制器的主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統ID：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
   <block id="e8060bae9316148ae38460dbb2356f26" category="paragraph">屬於替換控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：151759706：</block>
-  <block id="209f885dfe9e7d41b82f04b945d68576" category="list-text">如果已啟用儲存加密、您必須是</block>
   <block id="929bfee1ef6e5f44f83a22a0ee585e88" category="paragraph">當風扇故障時、系統會將警告訊息記錄到系統主控台、指出哪個風扇故障。</block>
   <block id="3f39e3eb27d53c3293d829964b0aec99" category="list-text">確定機櫃中的兩個NSM模組都執行相同版本的韌體：0200版或更新版本。</block>
   <block id="c4a176fcfed8ad262bd0a9b82f87a961" category="paragraph">當DIMM故障時、系統會將警告訊息記錄到系統主控台、指出哪個DIMM故障。</block>
@@ -7347,7 +7303,6 @@
   <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">選取選項1、<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
   <block id="c566d4828cd295258aa8097a90880602" category="open-title">選項2：使用外部管理程式</block>
   <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">選取選項11、<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
-  <block id="453b94e2cc94c331c590159bf6b2d21e" category="admonition">管理憑證資訊完成後、節點會返回開機功能表。</block>
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用維護模式中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="55c99fae85fce446adbb5ceb895cf55e" category="paragraph">更換機箱時、若要移除電源供應器、必須先關閉、拔下電源供應器、然後再從舊機箱背面卸下四個電源供應器。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">裝回機箱時、您必須卸下機箱正面的六個風扇模組。</block>
@@ -7364,7 +7319,6 @@
   <block id="de9724762d060c871892fe8183e35056" category="image-alt">DRW A900 NS224兩個機櫃佈線IOPS 938</block>
   <block id="6f189db9f1b1dfc1be838de48c805168" category="video-title">動畫-設定NVMe磁碟機磁碟櫃ID</block>
   <block id="c81415a6ed927280dac360edb5000bc6" category="image-alt">DRW A900開啟IOPS 941</block>
-  <block id="7a0118bb1b2d6a800462ca70c23a1876" category="image-alt">DRw 9000纜線主控台交換器控制器IOPS 953</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">您可以將I/O模組新增至系統的空模組插槽。</block>
@@ -7375,7 +7329,6 @@
   <block id="15247f97704eb964c60d179c321c1370" category="list-text">出現提示時、請貼上輸出的備份金鑰資料<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> 或<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="8726b2ef66dc0e734b269a3191597e11" category="paragraph">－－－－－－－－－－－－ 開始備份</block>
   <block id="328f6eaec3741c1d0f9558d6c40c1da4" category="paragraph">TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAA1AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAMAZAMAZAAAAAA。。。H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</block>
-  <block id="26eef74dee0269079c9b6b002eeddb34" category="admonition">節點會返回開機功能表。</block>
   <block id="1e4d7cab6ce42bcab6973efa42fc0b2c" category="list-text">執行安全金鑰管理程式內建同步：</block>
   <block id="377fca3965b001b9bcc8843e1b287fe7" category="list-text">如果先前已設定MSID、並在本程序開始時擷取、請重設MSID：</block>
   <block id="a967d40ef247a202e5f1ce7a9626a0ca" category="list-text">使用將資料驗證金鑰指派給FIPS磁碟機或SED<block ref="8fc59e93e98503b6d1b1230269b06192" prefix=" " category="inline-code"></block> 命令。</block>
@@ -7397,4 +7350,37 @@
   <block id="3a5f51ab8f29522107285c1bd243bf95" category="paragraph">如果SAS2/SAS3「混合堆疊支援」欄位未出現在輸出中、或值為「無」、則表示您的系統不支援混合堆疊。</block>
   <block id="b57b9debcc2348af5e609f2c38ecae74" category="paragraph">如果「SAS2/SAS3混合堆疊支援」欄位中顯示「ALL」、則表示您的系統支援混合堆疊。</block>
   <block id="7a2d660ca9e94c940789a57658eb9268" category="paragraph">如果「SAS2/SAS3混合堆疊支援」欄位中出現「橋接附加」、則系統僅在儲存櫃透過Atto FibreBridge連接時才支援混合堆疊。</block>
+  <block id="4a9a79dbcdff2c804e887801277bb57c" category="list-text">纜線連接儲存設備： <block ref="64b4bebcc285271f3157ecc735b0c062" category="inline-xref-macro-rx"></block></block>
+  <block id="e90d1c109a9cd8d68a357882d5cf925c" category="list-text">若要完成系統設定、請參閱 <block ref="84c1e7f35fa076545c5f4c4417de33e1" category="inline-xref-macro-rx"></block></block>
+  <block id="d12db64c0cb5cb862afbde49d98d6f25" category="inline-link-macro">完成更換程序</block>
+  <block id="e739fb18db4795dd1e2cea8f3c5244c3" category="list-text">前往 <block ref="56c57196a2457d200e49164377b65ba5" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba9fde9925258d03950e9c2d180f665c" category="image-alt">DRW A400更換開機媒體IOPS 1007</block>
+  <block id="e7f3c0051e6bc5cbd205f59b35151985" category="inline-image-macro">寬=500px</block>
+  <block id="6a226d8716b094e1702259265b496684" category="paragraph"><block ref="6a226d8716b094e1702259265b496684" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afe794b290a5da51dd8b580fadd2b035" category="image-alt">DRW A400更換夾層卡IEOPS 1006</block>
+  <block id="a7f924c2147b80d349701c702d7f091f" category="image-alt">DRW A400空立管移除IOPS 1002.</block>
+  <block id="54c5909d12d5c473924ce9b2c856a68d" category="image-alt">DRW A400 NVDIMM電池IOPS 1004.</block>
+  <block id="947bc8320a7df1722adcc49a6bdc81ba" category="image-alt">DRW A400取代PCIe卡IOPS 1008</block>
+  <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400更換NVDIMM DIMM IOPS 1009</block>
+  <block id="f7e6cca62df33f4887013e8daaa9e77d" category="image-alt">Drw A400 RTc batt IOPS 1003.</block>
+  <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900纜線主控台交換器控制器IOPS 953</block>
+  <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">如果已啟用儲存加密、則必須還原功能。</block>
+  <block id="718ea359d9cc2d2bff619909d16ec537" category="admonition">控制器會返回開機功能表。</block>
+  <block id="a9cbabd3f42c5ad7f4796dbf5e384b08" category="list-text">將控制器開機至開機功能表。</block>
+  <block id="1e37c9a4ea44b0a302091f02c74564c1" category="admonition">管理憑證資訊完成後、控制器會返回開機功能表。</block>
+  <block id="34dbbed571bcfe30f4b9897172116b74" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block></block>
+  <block id="24ed59b86428c96c86204227163206c0" category="paragraph"><block ref="24ed59b86428c96c86204227163206c0" category="inline-link-rx"></block></block>
+  <block id="90d49fcc83418b049803a1b2081f3c6b" category="list-text">若要完成系統設定、請參閱 <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block></block>
+  <block id="14fa1a86493af188cbb574d402b31f1b" category="list-text">返回 <block ref="c67cdb63ab5b46180d9910dcb0f03689" category="inline-xref-macro-rx"></block> 在此程序中重新檢查NVMEM LED。</block>
+  <block id="ba17e519b189ae10cd004d12dcc5e44d" category="paragraph"><block ref="751c01f8467f96987ff97e3a647e9973" category="inline-xref-macro-rx"></block></block>
+  <block id="c1918f58421ab69768df267ff2412c99" category="paragraph"><block ref="0b030be2689b90a40f49c456c91f18ec" category="inline-xref-macro-rx"></block></block>
+  <block id="b102c1828cf53d9df33f622c2208da4c" category="paragraph"><block ref="6ac3340c69a46ee235155eba76c461d6" category="inline-xref-macro-rx"></block></block>
+  <block id="68495e0db11cd8c3fcd536c93ecb150b" category="list-text">如所述、安裝並連接NS224磁碟櫃<block ref="8b1d41e5fd14f554e8b3490e0dfd47ae" category="inline-link-rx"></block>。</block>
+  <block id="d034ad76bb5b20c4f0a1790c3665c3b2" category="paragraph"><block ref="d034ad76bb5b20c4f0a1790c3665c3b2" category="inline-link-rx"></block></block>
+  <block id="7be2f40216e9676314a384c650694fed" category="admonition">請參閱<block ref="17d46f7a995ead494ec7b2eb9caffda8" category="inline-link-rx"></block> 以取得ONTAP 更多詳細資料。</block>
+  <block id="1fad4d8ec174b60255a8febb2707e048" category="paragraph"><block ref="1fad4d8ec174b60255a8febb2707e048" category="inline-link-rx"></block></block>
+  <block id="8427b7c5bd63cec67b7bb2edba538972" category="list-text">重新啟動節點：</block>
+  <block id="8c2c8bc4e47d0ed180d7a321a6f45a30" category="paragraph">若要裝回NVRAM模組、請將其放在機箱的插槽6中、然後依照特定步驟順序進行。</block>
+  <block id="44e91a10c5fb9bc923eb6ca613b41106" category="list-text">按下有字母和編號的CAM栓鎖。</block>
+  <block id="35ed901089030d76b9de29f7bb8d54ce" category="paragraph">CAM栓鎖會從機箱移出。</block>
 </blocks>

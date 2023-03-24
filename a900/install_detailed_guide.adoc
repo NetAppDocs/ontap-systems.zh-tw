@@ -20,7 +20,6 @@ summary: 這份提供安裝典型NetApp系統的詳細逐步指示。
 若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
 
 .開始之前
-[role="lead"]
 您必須能夠存取 https://hwu.netapp.com["NetApp Hardware Universe"^] 以取得站台需求的相關資訊、以及設定系統的其他資訊。
 
 您可能也想要存取 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["發行說明ONTAP"^] 如ONTAP 需此系統的詳細資訊、請參閱您的版本的
@@ -171,7 +170,6 @@ image:../media/oie_cable_power.png[""]
 
 == 步驟2：安裝硬體
 
-[role="lead"]
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
 
 . 視需要安裝軌道套件。
@@ -198,14 +196,12 @@ image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[機箱ID為IEOP
 
 == 步驟3：將控制器連接至網路
 
-[role="lead"]
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
 
 === 選項1：雙節點無交換器叢集
 
-[role="lead"]
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
 
 .開始之前
@@ -286,7 +282,6 @@ image:../media/oie_cable_sfp_gbe_copper.png[""]
 
 === 選項2：交換式叢集
 
-[role="lead"]
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
 
 .開始之前
@@ -371,7 +366,6 @@ image:../media/oie_cable_sfp_gbe_copper.png[""]
 
 === 選項1：將控制器連接至AFF 單一NS224磁碟機櫃（位於VA900中）
 
-[role="lead"]
 您必須將每個控制器連接至NS224磁碟機櫃上AFF 的NSM模組、以供選擇。
 
 .開始之前
@@ -436,7 +430,6 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 
 === 選項2：將控制器連接至AFF 2個NS224磁碟機櫃（位於S4A900）
 
-[role="lead"]
 您必須將每個控制器連接至NS224磁碟機櫃上的NSM模組。
 
 .開始之前
@@ -503,14 +496,12 @@ image:../media/oie_cable100_gbe_qsfp28.png[""]
 
 == 步驟5：完成系統設定與組態設定
 
-[role="lead"]
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 
 
 === 選項1：如果已啟用網路探索
 
-[role="lead"]
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
 
 . 使用下列動畫或繪圖來設定一或多個磁碟機櫃ID：
@@ -621,7 +612,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 === 選項2：如果未啟用網路探索
 
-[role="lead"]
 如果您未使用Windows或Mac型筆記型電腦或主控台、或未啟用自動探索、則必須使用此工作完成組態設定。
 
 . 連接纜線並設定筆記型電腦或主控台：
@@ -633,7 +623,7 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的管理交換器。
 +
-image::../media/drw_9000_cable_console_switch_controller_IEOPS-953.svg[DRw 9000纜線主控台交換器控制器IOPS 953]
+image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[DRW A900纜線主控台交換器控制器IOPS 953]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 

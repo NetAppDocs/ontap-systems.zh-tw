@@ -32,14 +32,12 @@ NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Fl
 
 == 步驟1：關閉受損的控制器
 
-[role="lead"]
 使用下列其中一個選項來關閉或接管受損的控制器。
 
 [role="tabbed-block"]
 ====
 .選項1：大多數系統
 --
-[role="lead"]
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 .關於這項工作
@@ -95,7 +93,6 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 --
 .選項2：控制器位於雙節點MetroCluster 的不二
 --
-[role="lead"]
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 .關於這項工作
@@ -194,7 +191,6 @@ mcc1A::> metrocluster operation show
 
 == 步驟2：更換NVRAM模組
 
-[role="lead"]
 若要裝回NVRAM模組、請將其置於機箱的插槽6中、然後依照特定的步驟順序進行。
 
 .步驟
@@ -299,7 +295,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟3：更換NVRAM DIMM
 
-[role="lead"]
 若要更換NVRAM模組中的NVRAM DIMM、您必須移除NVRAM模組、開啟模組、然後更換目標DIMM。
 
 .步驟
@@ -373,7 +368,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟4：更換FRU後重新啟動控制器
 
-[role="lead"]
 更換FRU之後、您必須重新啟動控制器模組。
 
 .步驟
@@ -384,7 +378,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟5：重新指派磁碟
 
-[role="lead"]
 視您是否有HA配對或雙節點MetroCluster 的功能表組態而定、您必須驗證磁碟是否重新指派至新的控制器模組、或手動重新指派磁碟。
 
 請選取下列其中一個選項、以取得如何將磁碟重新指派給新控制器的指示。
@@ -394,7 +387,6 @@ DIMM和DIMM彈出卡舌
 .選項1：驗證ID（HA配對）
 --
 .驗證HA系統上的系統ID變更
-[role="lead"]
 您必須在開機_replaced_節點時確認系統ID變更、然後驗證變更是否已實作。
 
 此程序僅適用於ONTAP HA配對中執行的系統。
@@ -515,7 +507,6 @@ dr-group-id            cluster node           configuration-state
 .選項2：重新指派ID MetroCluster （資訊組態）
 --
 .在雙節點MetroCluster 的不全功能組態中重新指派系統ID
-[role="lead"]
 在執行支援功能的雙節點MetroCluster 版的支援功能組態ONTAP 中、您必須手動將磁碟重新指派給新的控制器系統ID、才能將系統恢復正常運作。
 
 .關於這項工作
@@ -643,7 +634,6 @@ dr-group-id            cluster node           configuration-state
 
 == 步驟6：還原儲存設備和Volume Encryption功能
 
-[role="lead"]
 對於先前設定為使用儲存設備或Volume Encryption的儲存系統、您必須執行其他步驟以提供不中斷加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
 
 
@@ -663,5 +653,4 @@ NOTE: 更換DIMM時不需要執行此步驟。
 
 == 步驟7：將故障零件歸還給NetApp
 
-[role="lead"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

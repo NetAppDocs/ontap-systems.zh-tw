@@ -17,7 +17,6 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 
 == 步驟1：準備安裝
 
-[role="lead"]
 若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
 
 .開始之前
@@ -181,7 +180,6 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南�
 
 == 步驟2：安裝硬體
 
-[role="lead"]
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
 
 .步驟
@@ -210,14 +208,12 @@ image::../media/drw_9000_cable_management_arms.png[DRw 9000纜線管理臂]
 
 == 步驟3：將控制器連接至網路
 
-[role="lead"]
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
 
 === 選項1：雙節點無交換器叢集
 
-[role="lead"]
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
 
 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
@@ -245,7 +241,6 @@ image::../media/drw_9000_TNSC_composite_cabling.png[DRw 9000 TSC複合纜線]
 
 === 選項2：交換式叢集
 
-[role="lead"]
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
 
 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
@@ -273,14 +268,12 @@ image:../media/drw_9000_switched_cluster_cabling.png[""]
 
 == 步驟4：連接磁碟機櫃的纜線控制器
 
-[role="lead"]
 您可以將新系統纜線連接至DS212C、DS224C或NS224磁碟櫃、視系統AFF 是指或者FAS 是指系統。
 
 
 
 === 選項1：將控制器纜線連接至DS212C或DS224C磁碟機櫃
 
-[role="lead"]
 您必須將機櫃對機櫃連線纜線、然後將兩個控制器纜線連接至DS212C或DS224C磁碟機櫃。
 
 將纜線插入磁碟機櫃、拉片朝下、纜線的另一端則以拉式彈片向上插入控制器儲存模組。
@@ -320,7 +313,7 @@ image:../media/SAS_storage_ONTAP_9.8_and_later.png[""]
 NOTE: 如果您有多個磁碟機櫃堆疊、請參閱磁碟機櫃類型的_安裝與佈線指南_。
 
 +
-link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["安裝及纜線架以安裝新的系統-機櫃內有IOM12模組"]
+https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["安裝及纜線架以安裝新的系統-機櫃內有IOM12模組"]
 
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
@@ -332,7 +325,6 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
 
 === 選項2：將控制器纜線連接AFF 至僅ASA AFF 執行ONTAP 《S9.8及更新版本》的單一NS224磁碟機櫃、即可連接至該系統
 
-[role="lead"]
 您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
 
 * 此工作僅適用於AFF 執行部分為9.8或更新版本的部分。ASA AFF ONTAP
@@ -368,7 +360,6 @@ image::../media/single_NS224_shelf.png[單一NS224機櫃]
 
 === 選項3：將控制器連接至AFF 僅ASA AFF 執行ONTAP 《S9.8及更新版本》的2個NS224磁碟機櫃、即可連接到位於《Se A700》和《Se A700》系統
 
-[role="lead"]
 您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
 
 * 此工作僅適用於AFF 執行部分為9.8或更新版本的部分。ASA AFF ONTAP
@@ -404,14 +395,12 @@ image::../media/two_NS224_shelves.png[兩個NS224磁碟櫃]
 
 == 步驟5：完成系統設定與組態設定
 
-[role="lead"]
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 
 
 === 選項1：如果已啟用網路探索、請完成系統設定與組態
 
-[role="lead"]
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
 
 .步驟
@@ -485,7 +474,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 === 選項2：如果未啟用網路探索、請完成系統設定與組態
 
-[role="lead"]
 如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。
 
 .步驟

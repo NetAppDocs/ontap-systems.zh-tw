@@ -37,7 +37,6 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 == 步驟1：關閉受損的控制器
 
 .步驟
-[role="lead"]
 使用下列其中一個選項來關閉或接管受損的控制器。
 
 [role="tabbed-block"]
@@ -151,7 +150,6 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 
 == 步驟2：更換NVRAM模組
 
-[role="lead"]
 若要裝回NVRAM模組、請將其置於機箱的插槽6中、然後依照特定的步驟順序進行。
 
 . 如果您尚未接地、請正確接地。
@@ -228,7 +226,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟3：更換NVRAM DIMM
 
-[role="lead"]
 若要更換NVRAM模組中的NVRAM DIMM、您必須移除NVRAM模組、開啟模組、然後更換目標DIMM。
 
 . 如果您尚未接地、請正確接地。
@@ -306,7 +303,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟4：更換FRU後重新啟動控制器
 
-[role="lead"]
 更換FRU之後、您必須重新啟動控制器模組。
 
 . 若要ONTAP 從載入程式提示字元開機、請輸入「bye」。
@@ -316,7 +312,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟5：重新指派磁碟
 
-[role="lead"]
 您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
 
 
@@ -414,7 +409,7 @@ dr-group-id            cluster node           configuration-state
 4 entries were displayed.
 ----
 . 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
-. 如果已啟用儲存加密、您必須是
+. 如果已啟用儲存加密、則必須還原功能。
 . 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
 
 
@@ -422,7 +417,6 @@ dr-group-id            cluster node           configuration-state
 
 == 步驟6：還原儲存設備和Volume Encryption功能
 
-[role="lead"]
 如果您已啟用儲存加密、請使用適當的程序。
 
 [role="tabbed-block"]
@@ -448,7 +442,7 @@ TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAA
 
 +
 
-NOTE: 節點會返回開機功能表。
+NOTE: 控制器會返回開機功能表。
 
 . 選取選項1、 `Normal Boot`
 . 只讓CFO使用「儲存容錯移轉回傳回-fromNode local -only CFO Aggregate true」命令來集合體。
@@ -505,12 +499,12 @@ NOTE: 您可以使用 `security key-manager key query -key-type NSE-AK` 檢視�
 --
 .選項2：使用外部管理程式
 --
-. 將節點開機至開機功能表。
+. 將控制器開機至開機功能表。
 . 選取選項11、 `Configure node for external key management`。
 . 在提示下輸入管理憑證資訊。
 +
 
-NOTE: 管理憑證資訊完成後、節點會返回開機功能表。
+NOTE: 管理憑證資訊完成後、控制器會返回開機功能表。
 
 . 選取選項1、 `Normal Boot`
 . 將主控台纜線移至合作夥伴控制器、然後使用儲存容錯移轉恢復-從節點本機-僅限CFO - Aggregate true local命令、將目標控制器儲存設備歸還。
@@ -568,5 +562,4 @@ NOTE: 您可以使用 `security key-manager key query -key-type NSE-AK` 檢視�
 
 == 步驟7：將故障零件歸還給NetApp
 
-[role="lead"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

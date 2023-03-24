@@ -20,21 +20,21 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 
 .開始之前
 * 所有磁碟櫃都必須正常運作。
-* 如果您的系統是HA配對、則合作夥伴節點必須能夠接管與要更換的NVRAM模組相關的節點。
+* 如果您的系統是HA配對、則合作夥伴控制器必須能夠接管與要更換的NVRAM模組相關的控制器。
 * 本程序使用下列術語：
 +
-** 「受損」節點是您要執行維護的節點。
-** 健全節點是受損節點的HA合作夥伴。
+** 受損的控制器是您要執行維護的控制器。
+** 健全的控制器是受損控制器的HA合作夥伴。
 
 
-* 此程序包括自動或手動將磁碟重新指派給與新NVRAM模組相關聯的控制器模組的步驟。您必須依照程序中的指示重新指派磁碟。在恢復之前完成磁碟重新指派可能會造成問題。
+* 此程序包括將磁碟自動重新指派給與新NVRAM模組相關聯的控制器模組的步驟。您必須依照程序中的指示重新指派磁碟。在恢復之前完成磁碟重新指派可能會造成問題。
 * 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 * 在此程序中、您無法變更任何磁碟或磁碟櫃。
 
 
 
 
-== 步驟1：關閉受損節點
+== 步驟1：關閉受損的控制器
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
@@ -82,14 +82,14 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 
 == 步驟2：更換NVRAM模組
 
-若要裝回NVRAM模組、請將其置於機箱的插槽6中、然後依照特定的步驟順序進行。
+若要裝回NVRAM模組、請將其放在機箱的插槽6中、然後依照特定步驟順序進行。
 
 . 如果您尚未接地、請正確接地。
 . 從機箱中移除目標NVRAM模組：
 +
-.. 按下帶有字母和編號的CAM按鈕。
+.. 按下有字母和編號的CAM栓鎖。
 +
-CAM按鈕會從機箱移出。
+CAM栓鎖會從機箱移出。
 
 .. 向下轉動CAM栓鎖、直到其處於水平位置。
 +
@@ -163,9 +163,9 @@ DIMM和DIMM彈出卡舌
 . 如果您尚未接地、請正確接地。
 . 從機箱中移除目標NVRAM模組：
 +
-.. 按下帶有字母和編號的CAM按鈕。
+.. 按下有字母和編號的CAM栓鎖。
 +
-CAM按鈕會從機箱移出。
+CAM栓鎖會從機箱移出。
 
 .. 向下轉動CAM栓鎖、直到其處於水平位置。
 +
@@ -242,60 +242,28 @@ DIMM和DIMM彈出卡舌
 
 
 
-== 步驟5：驗證並設定控制器模組的HA狀態
+== 步驟5：重新指派磁碟
 
-您必須驗證控制器模組的「HA」狀態、並視需要更新狀態以符合您的系統組態。
-
-. 在更換控制器模組的維護模式中、確認所有元件都顯示相同的「HA」狀態：「ha-config show」
-+
-[cols="1,2"]
-|===
-| 如果您的系統處於... | 所有元件的HA狀態應為... 
+[role="lead"]
+您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
 
 
- a| 
-HA配對
- a| 
-HA
+NOTE: 此程序僅適用於ONTAP HA配對中執行的系統。
 
 
-
- a| 
-包含四個或更多節點的不含功能的FC組態MetroCluster
- a| 
-MCC
-
-
-
- a| 
-一套可讓您使用的MetroCluster
- a| 
-Mccip
-
-|===
-. 如果顯示的控制器模組系統狀態與您的系統組態不符、請設定控制器模組的「HA」狀態：「ha-config modify controller _ha-stu__」
-. 如果顯示的機箱系統狀態與您的系統組態不符、請設定機箱的「HA」狀態：「ha-config modify chassis _ha-stu__」
-
-
-
-
-== 步驟6：重新指派磁碟
-
-您必須在開機更換節點時確認系統ID變更、然後驗證變更是否已實作。
-
-此程序僅適用於ONTAP HA配對中執行的系統。
+CAUTION: 只有在更換NVRAM模組時才需要重新指派磁碟。
 
 .步驟
-. 如果替換節點處於維護模式（顯示「*」>「」提示）、請結束維護模式、然後移至載入程式提示字元「halt（停止）」
-. 從替換節點的載入器提示中、啟動節點、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
-. 等待替換節點主控台顯示「waiting for恢復...（正在等待恢復...）」訊息、然後從正常節點驗證是否已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」
+. 如果更換的控制器處於維護模式（顯示 `*>` 提示）、結束維護模式、然後前往載入程式提示： `halt`
+. 在更換控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入y。
+. 等待等待恢復...訊息會顯示在控制器的主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統ID： `storage failover show`
 +
-在命令輸出中、您應該會看到一則訊息、指出受損節點上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
+在命令輸出中、您應該會看到一則訊息、指出受損控制器上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
 
 +
 [listing]
 ----
-node1> `storage failover show`
+node1:> storage failover show
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -303,25 +271,11 @@ node1             node2             false        System ID changed on partner (O
                                                   151759755, New: 151759706), In takeover
 node2             node1             -            Waiting for giveback (HA mailboxes)
 ----
-. 從健全節點、確認已儲存任何核心傾印：
+. 退回控制器：
 +
-.. 變更為進階權限等級：「et -priv榮幸 進階」
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode替 用節點名稱」
 +
-當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
-
-.. 儲存任何核心傾印：「系統節點執行節點本機節點名稱合作夥伴儲存資源」
-.. 等待「Wavecore」命令完成後、再發行傳回。
-+
-您可以輸入下列命令來監控「savecore」命令的進度：「ystem noder run -node-node-name合作夥伴savecore -ss」
-
-.. 返回管理員權限等級：「et -priv. admin」
-
-
-. 回饋節點：
-+
-.. 從健全的節點、歸還所更換節點的儲存設備：「torage容錯移轉恢復-ofnode替 用節點名稱」
-+
-替換節點會恢復其儲存設備、並完成開機。
+更換的控制器會恢復儲存設備、並完成開機。
 
 +
 如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」。
@@ -335,44 +289,44 @@ NOTE: 如果被否決、您可以考慮覆寫否決。
 
 .. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
 +
-儲存容錯移轉show命令的輸出不應包含合作夥伴訊息中變更的系統ID。
+「儲存容錯移轉show」命令的輸出不應包含在合作夥伴訊息中變更的系統ID。
 
 
 
 . 驗證是否已正確分配磁碟：「torage disk show -所有權」
 +
-屬於替換節點的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：1873775277：
+屬於替換控制器的磁碟應顯示新的系統ID。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：151759706：
 
 +
 [listing]
 ----
-node1> `storage disk show -ownership`
+node1:> storage disk show -ownership
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
-1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
-1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+1.0.0  aggr0_1  node1 node1  -        151759706  151759706  -       151759706 Pool0
+1.0.1  aggr0_1  node1 node1           151759706  151759706  -       151759706 Pool0
 .
 .
 .
 ----
-. 如果系統採用MetroCluster 的是一套不全功能的組態、請監控節點的狀態：MetroCluster 「不只是顯示節點」
+. 如果系統採用MetroCluster 的是一套不全功能的組態、請監控控制器的狀態：MetroCluster 「不只是顯示節點」
 +
-更換後、需要幾分鐘時間才能恢復正常狀態、此時每個節點都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster
+更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster
 
-. 如果節點是MetroCluster 以支援功能為基礎的組態、請MetroCluster 視支援狀況而定、確認如果原始擁有者是災難站台上的節點、則DR主ID欄位會顯示磁碟的原始擁有者。
+. 如果控制器是MetroCluster 以支援功能為基礎的組態、請MetroCluster 視所用的情況而定、確認如果原始擁有者是災難站台上的控制器、DR主ID欄位會顯示磁碟的原始擁有者。
 +
 如果下列兩項條件均為真、則必須執行此動作：
 
 +
 ** 此功能組態處於切換狀態。MetroCluster
-** 替換節點是災難站台上磁碟的目前擁有者。
+** 替換控制器是災難站台上磁碟的目前擁有者。
 +
-請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"^] 以取得更多資訊。
+請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"] 以取得更多資訊。
 
 
 
-. 如果您的系統使用MetroCluster 的是E驗 證組態、請確認每個節點都已設定：「MetroCluster E節點 顯示-欄位組態狀態」
+. 如果您的系統使用MetroCluster 的是E驗 證組態、請確認每個控制器都已設定：「MetroCluster E節點 顯示-欄位組態狀態」
 +
 [listing]
 ----
@@ -387,31 +341,160 @@ dr-group-id            cluster node           configuration-state
 
 4 entries were displayed.
 ----
-. 驗證每個節點是否存在預期的磁碟區：「vol show -node-name」
-. 如果您在重新開機時停用自動接管、請從正常節點「torage容錯移轉修改節點置換節點名稱-onreboottrue」啟用
+. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 如果已啟用儲存加密、則必須還原功能。
+. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
 
 
 
 
-== 步驟7：還原儲存設備和Volume Encryption功能
+== 步驟6：還原儲存設備和Volume Encryption功能
 
-對於先前設定為使用儲存設備或Volume Encryption的儲存系統、您必須執行其他步驟以提供不中斷加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
+[role="lead"]
+如果您已啟用儲存加密、請使用適當的程序。
 
-
-NOTE: 更換DIMM時不需要執行此步驟。
-
+[role="tabbed-block"]
+====
+.選項1：使用Onboard Key Manager
+--
 .步驟
-. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
+. 將控制器開機至開機功能表。
+. 選取選項10、 `Set onboard key management recovery secrets`。
+. 輸入您從客戶處取得的機載金鑰管理程式密碼。
+. 出現提示時、請貼上輸出的備份金鑰資料 `security key-manager backup show` 或 `security key-manager onboard show-backup` 命令。
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+備份資料範例：
+
++
+－－－－－－－－－－－－ 開始備份
+
++
+TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAA1AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAMAZAMAZAAAAAA。。。H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
++
+－－－－－－－－－－－－－ 結束備份
+
++
+
+NOTE: 控制器會返回開機功能表。
+
+. 選取選項1、 `Normal Boot`
+. 只讓CFO使用「儲存容錯移轉回傳回-fromNode local -only CFO Aggregate true」命令來集合體。
++
+** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
+** 如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。
++
+
+NOTE: 終止CIFS可能導致資料遺失。
+
+** 如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVRAM同步。
+** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。
 
 
-. 重設SED MSID
+. 一旦恢復完成、請使用「儲存容錯移轉顯示」和「儲存容錯移轉顯示」命令來檢查容錯移轉和恢復狀態。
++
+只會顯示CFO集合體（根Aggregate和CFO型式資料集合體）。
+
+. 執行安全金鑰管理程式內建同步：
++
+.. 執行「安全金鑰管理程式內建同步」命令、然後在出現提示時輸入密碼。
+.. 輸入「安全金鑰管理程式金鑰查詢」命令、即可查看內建金鑰管理程式中儲存的所有金鑰詳細檢視、並確認所有驗證金鑰的「RESured」欄位=「yes / true」。
++
+
+NOTE: 如果「RESTORED」欄位=「yes / true」以外的任何項目、請聯絡客戶支援部門。
+
+.. 等待10分鐘、讓金鑰在整個叢集之間同步。
+
+
+. 將主控台纜線移至合作夥伴控制器。
+. 使用「儲存容錯移轉還原-fromNode local」命令來歸還目標控制器。
+. 使用「儲存容錯移轉show」命令、在報告完成三分鐘後、檢查恢復狀態。
++
+如果20分鐘後仍未完成還原、請聯絡客戶支援部門。
+
+. 在clusterShell提示字元中、輸入net int show -is主目錄假命令、列出不在主控制器和連接埠上的邏輯介面。
++
+如果有任何介面列為「假」、請使用net int f還原 命令將這些介面還原回其主連接埠。
+
+. 將主控台纜線移至目標控制器、然後執行「vrsion -v」命令來檢查ONTAP 版本。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+. 如果先前已設定MSID、並在本程序開始時擷取、請重設MSID：
++
+.. 使用將資料驗證金鑰指派給FIPS磁碟機或SED `storage encryption disk modify -disk _disk_ID_ -data-key-id _key_ID_` 命令。
++
+
+NOTE: 您可以使用 `security key-manager key query -key-type NSE-AK` 檢視金鑰ID的命令。
+
+.. 確認已使用指派驗證金鑰 `storage encryption disk show` 命令。
 
 
 
 
-== 步驟8：將故障零件歸還給NetApp
+--
+.選項2：使用外部管理程式
+--
+. 將控制器開機至開機功能表。
+. 選取選項11、 `Configure node for external key management`。
+. 在提示下輸入管理憑證資訊。
++
 
+NOTE: 管理憑證資訊完成後、控制器會返回開機功能表。
+
+. 選取選項1、 `Normal Boot`
+. 將主控台纜線移至合作夥伴控制器、然後使用儲存容錯移轉恢復-從節點本機-僅限CFO - Aggregate true local命令、將目標控制器儲存設備歸還。
++
+** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
+** 如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。
++
+
+NOTE: 終止CIFS可能導致資料遺失。
+
+** 如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVMEM同步。
+** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。
+
+
+. 等待3分鐘、然後使用儲存容錯移轉show命令檢查容錯移轉狀態。
+. 在clusterShell提示符下、輸入「net int show -is－homefal」命令、列出不在主控制器和連接埠上的邏輯介面。
++
+如果有任何介面被列為「假」、請使用「net int f還原」命令將這些介面還原回其主連接埠。
+
+. 將主控台纜線移至目標控制器、然後執行「vrsion -v」命令來檢查ONTAP 版本。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+. 在clusterShell提示符下使用「shorage加密磁碟show」查看輸出。
+. 使用「安全金鑰管理程式金鑰查詢」命令來顯示儲存在金鑰管理伺服器上的加密和驗證金鑰。
++
+** 如果「RESTORED」欄=「yes / true」、您就能完成更換程序。
+** 如果「金鑰管理程式類型」=「外部」、「還原」欄=「是/真」以外的任何項目、請使用安全金鑰管理程式外部還原命令來還原驗證金鑰的金鑰ID。
++
+
+NOTE: 如果命令失敗、請聯絡客戶支援部門。
+
+** 如果「金鑰管理程式類型」=「OnBoard」、「RESTORED」欄=「yes / true」以外的任何項目、請使用安全金鑰管理程式內建同步命令來重新同步金鑰管理程式類型。
++
+使用「安全金鑰管理程式金鑰查詢」命令來驗證所有驗證金鑰的「RESured」欄位=「yes / true」。
+
+
+
+. 將主控台纜線連接至合作夥伴控制器。
+. 使用儲存容錯移轉恢復-fromNode本機命令來歸還控制器。
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+. 如果先前已設定MSID、並在本程序開始時擷取、請重設MSID：
++
+.. 使用將資料驗證金鑰指派給FIPS磁碟機或SED `storage encryption disk modify -disk _disk_ID_ -data-key-id _key_ID_` 命令。
++
+
+NOTE: 您可以使用 `security key-manager key query -key-type NSE-AK` 檢視金鑰ID的命令。
+
+.. 確認已使用指派驗證金鑰 `storage encryption disk show` 命令。
+
+
+
+
+--
+====
+
+
+== 步驟7：將故障零件歸還給NetApp
+
+[role="lead"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

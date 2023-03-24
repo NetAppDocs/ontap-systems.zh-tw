@@ -77,7 +77,6 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 == 步驟2：移除控制器模組
 
-[role="lead"]
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
 
 . 如果您尚未接地、請正確接地。
@@ -113,7 +112,6 @@ image::../media/drw_a320_controller_remove_animated_gif.png[DRW A320控制器移
 
 == 步驟3：更換PCIe卡
 
-[role="lead"]
 您必須從控制器模組中移除包含故障PCIe卡的PCIe擴充卡、從擴充卡中移除故障的PCIe卡、在擴充卡中安裝替換的PCIe卡、然後將擴充卡重新安裝至控制器模組。
 
 image::../media/drw_a320_pci_card_replace_animated_gif.png[更換成動態圖片的DRW A320 PCI卡]
@@ -149,7 +147,6 @@ image::../media/drw_a320_pci_card_replace_animated_gif.png[更換成動態圖片
 
 == 9月4日：安裝控制器模組
 
-[role="lead"]
 在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
 
 . 如果您尚未這麼做、請關閉控制器模組後端的通風管、然後將護蓋重新安裝到PCIe卡上。
@@ -191,7 +188,6 @@ NOTE: 鎖定機制臂滑入機箱。
 
 == 步驟5：將控制器模組還原為運作狀態
 
-[role="lead"]
 完成診斷之後、您必須重新啟動系統、歸還控制器模組、然後重新啟用自動恢復功能。
 
 . 視需要重新安裝系統。
@@ -206,5 +202,4 @@ NOTE: 鎖定機制臂滑入機箱。
 
 == 步驟6：將故障零件歸還給NetApp
 
-[role="lead"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

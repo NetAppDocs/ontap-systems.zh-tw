@@ -27,7 +27,6 @@ https://hwu.netapp.com["NetApp Hardware Universe"]
 
 == 選項1：在沒有開放插槽的系統中、將X91148A模組新增為NIC模組
 
-[role="lead"]
 您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A NIC模組安裝到已完全安裝的系統中。
 
 .步驟
@@ -99,7 +98,6 @@ I/O CAM栓鎖完全解除鎖定
 
 == 選項2：在沒有開放插槽的系統中、將X91148A模組新增為儲存模組
 
-[role="lead"]
 您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A儲存模組安裝到已完全安裝的系統中。
 
 * 此程序假設您將X91148A模組重新安裝至插槽3和/或7。
@@ -166,5 +164,5 @@ I/O CAM栓鎖完全解除鎖定
 . 從合作夥伴節點恢復節點：「torage容錯移轉恢復-ofnode_target節點名稱_」
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 對控制器B重複這些步驟
-. 如所述、安裝並連接NS224磁碟櫃 https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-nvme-hotadd/GUID-B215753F-F3E6-4FA0-A1E1-B9390B19AD94.html["熱新增NS224磁碟機櫃"]。
+. 如所述、安裝並連接NS224磁碟櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"]。
 
