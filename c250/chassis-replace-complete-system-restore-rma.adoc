@@ -1,0 +1,75 @@
+---
+permalink: c250/chassis-replace-complete-system-restore-rma.html 
+sidebar: sidebar 
+keywords: aff c250, verify and set HA state, run diagnostics, complete the replacement process 
+summary: 您必須驗證機箱的HA狀態、執行診斷、並將故障零件歸還給NetApp、如套件隨附的RMA指示所述。 
+---
+= 完成還原與更換程序AFF -還原C250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須驗證機箱的HA狀態、執行診斷、並將故障零件歸還給NetApp、如套件隨附的RMA指示所述。
+
+
+
+== 步驟1：驗證並設定機箱的HA狀態
+
+您必須驗證機箱的HA狀態、並視需要更新狀態以符合您的系統組態。
+
+. 在維護模式中、從任一控制器模組顯示本機控制器模組和機箱的HA狀態：「ha-config show」
++
+所有元件的HA狀態都應該相同。
+
+. 如果所顯示的機箱系統狀態與您的系統組態不符：
++
+.. 設定機箱的HA狀態：「ha-config modify chassis _ha-stu__」
++
+HA狀態的值可以是下列其中一項：
+
++
+*** 《哈》
+*** "Malc"
+*** 《MCCIP》
+*** 「非哈」
+
+
+.. 確認設定已變更：「ha-config show」
+
+
+. 如果您尚未重新設定、請重新設定系統的其他部分。
+. 重新安裝系統正面的擋板。
+
+
+
+
+== 步驟2：執行診斷
+
+更換系統中的元件之後、您應該對該元件執行診斷測試。
+
+您的系統必須處於載入器提示狀態、才能開始診斷。
+
+診斷程序中的所有命令都是由要更換元件的控制器發出。
+
+. 如果要服務的控制器未出現在載入程式提示下、請重新啟動控制器：「ystem nodem halt -node_name」（系統節點停止節點節點節點名稱）
++
+發出命令之後、您應該等到系統在載入程式提示字元停止。
+
+. 在載入程式提示字元下、存取專為系統層級診斷所設計的特殊驅動程式、以正常運作：「boot_diags'（boot_diags'）
+. 從顯示的功能表中選取*掃描系統*、即可執行診斷測試。
+. 從顯示的功能表中選取*測試系統*。
+. 根據上述步驟的結果繼續進行：
++
+** 如果測試失敗、請修正故障、然後重新執行測試。
+** 如果測試報告無故障、請從功能表中選取重新開機、以重新啟動系統。
+
+
+
+
+
+
+== 步驟3：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

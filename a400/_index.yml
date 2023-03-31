@@ -1,18 +1,14 @@
 ---
 indexpage:
   tiles:
-  - title: 開始使用 
-    links:
-    - title: 發行說明ONTAP
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-    - title: 新增功能
-      url: "../whats-new.html"
-    - title: TR-4539 -適用於FAS VMware Horizon View的NetApp All Flash解決方案
-      url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
   - title: 安裝與設定
     links:
-    - title: 大多數組態
-      url: "/install-setup.html"
+    - title: 快速步驟
+      url: "/install-quick-guide.html"
+    - title: 影片步驟
+      url: "/install-videos.html"
+    - title: 詳細步驟
+      url: "/install-detailed-guide.html"
     - title: 網路附加MetroCluster 的不完整組態
       url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
     - title: 彈性MetroCluster 的擴充功能
@@ -39,35 +35,21 @@ indexpage:
       url: "/power-supply-replace.html"
     - title: 實時時鐘電池
       url: "/rtc-battery-replace.html"
-  - title: 新增或移除磁碟櫃
+    - title: SAS磁碟櫃
+      url: "../sas3/index.html"
+  - title: 支援的交換器
     links:
-    - title: SAS搭配IOM12
-      url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
-  - title: 安裝及維護交換器
-    links:
-    - title: Broadcom支援的交換器
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/
-    - title: Cisco交換器
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/
-  - title: 升級
+    - title: Bes - 53248-
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
+    - title: Cisco Nexus 9336C-FX2
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
+    - title: Cisco Nexus 9336C-FX2共享組態
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
+  - title: 更多文件資源
     links:
     - title: 系統硬體升級
       url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
     - title: 軟體升級ONTAP
       url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
-  - title: 更多資源
-    links:
-    - title: 本文檔 ONTAP
-      url: https://docs.netapp.com/us-en/ontap/
-    - title: NetApp Hardware Universe
-      url: https://hwu.netapp.com/home/index
-    - title: NetApp Active IQ Digital Advisor
-      url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: NetApp Active IQ Config Advisor
-      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
-    - title: NetApp互通性對照表工具
-      url: https://mysupport.netapp.com/matrix/#welcome
-    - title: NetApp支援知識庫
-      url: https://kb.netapp.com/
-    - title: NetApp社群
-      url: https://community.netapp.com/
+    - title: 更換內部磁碟機（視訊）
+      url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ

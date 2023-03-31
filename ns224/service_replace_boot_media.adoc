@@ -46,19 +46,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 +
 這讓ONTAP 我們有足夠的時間來處理NSM移除事件。
 
-* *最佳實務做法：*最佳實務做法是在更換FRU元件之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
-
-+
-[NOTE]
-====
-請勿將韌體還原至不支援機櫃及其元件的版本。
-
-====
 * 如有需要、您可以開啟機櫃的位置（藍色）LED、以協助實際找出受影響的機櫃：「儲存櫃位置導向的修改-機櫃名稱_bidle_name_-leide-Status on」
 +
 如果您不知道受影響的機櫃的「_shider_name_」、請執行「shorage sh儲存 櫃show」命令。
@@ -70,7 +57,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp
 +
 如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
 
-* 您可以使用下列影片或書面步驟來更換開機媒體。
+* 您可以使用下列動畫或書面步驟來取代開機媒體。
 +
 .動畫-更換NS224磁碟機櫃中的開機媒體
 video::20ed85f9-1f80-4e0e-9219-ab4600070d8a[panopto]
@@ -81,7 +68,7 @@ video::20ed85f9-1f80-4e0e-9219-ab4600070d8a[panopto]
 . 請妥善接地。
 . 從包含您要更換之FRU的NSM模組拔下纜線：
 +
-.. 打開電源線固定器、從電源供應器拔下電源線、然後從電源供應器拔下電源線。
+.. 如果電源線是AC電源供應器、請打開電源線固定器、將電源線從電源供應器拔下；如果是DC電源供應器、請打開兩個指旋螺絲、然後從電源供應器拔下電源線。
 +
 電源供應器沒有電源開關。
 
@@ -163,7 +150,7 @@ NSM模組應完全插入機櫃、並與機櫃邊緣齊平。
 +
 插入纜線時、連接器拉片朝上。正確插入纜線時、會卡入定位。
 
-.. 將電源線重新連接至電源供應器、然後使用電源線固定器固定電源線。
+.. 將電源線重新連接至電源供應器、如果是AC電源供應器、請將電源線與電源線固定器固定、如果是DC電源供應器、請將兩顆指旋螺絲鎖緊。
 +
 當電源供應器正常運作時、雙色LED會亮起綠燈。
 

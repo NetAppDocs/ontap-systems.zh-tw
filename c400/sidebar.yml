@@ -1,0 +1,79 @@
+---
+section: c400
+title: C400系統AFF
+url: "/c400/index.html"
+entries:
+- title: 安裝與設定
+  pdf-filename: 安裝與設定C400 AFF
+  entries:
+  - title: 快速步驟
+    url: "/c400/install-quick-guide.html"
+- title: 維護
+  pdf-filename: C400維護AFF
+  entries:
+  - title: 開機媒體
+    pdf-filename: C400開機媒體AFF
+    entries:
+    - title: 總覽
+      url: "/c400/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/c400/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/c400/bootmedia-impaired-controller-shutdown.html"
+    - title: 更換開機媒體
+      url: "/c400/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/c400/bootmedia-recovery-image-boot-options.html"
+    - title: 切換回復MetroCluster 此組態
+      url: "/c400/bootmedia-2n-mcc-switchback.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/c400/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/c400/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: C400機箱AFF
+    entries:
+    - title: 總覽
+      url: "/c400/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/c400/chassis-replace-shutdown.html"
+    - title: 更換硬體
+      url: "/c400/chassis-replace-move-hardware.html"
+    - title: 完整更換
+      url: "/c400/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器模組
+    pdf-filename: HC400控制器模組AFF
+    entries:
+    - title: 總覽
+      url: "/c400/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/c400/controller-replace-shutdown.html"
+    - title: 更換控制器模組
+      url: "/c400/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/c400/controller-replace-system-config-restore-and-verify.html"
+    - title: 重新安裝系統
+      url: "/c400/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/c400/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: C400 DIMM AFF
+    url: "/c400/dimm-replace.html"
+  - title: 風扇
+    pdf-filename: C400風扇模組AFF
+    url: "/c400/fan-swap-out.html"
+  - title: NVDIMM電池
+    pdf-filename: NVMC400 NVDIMM電池AFF
+    url: "/c400/nvdimm-battery-replace.html"
+  - title: NVDIMM
+    pdf-filename: VA320 NVDIMM AFF
+    url: "/c400/nvdimm-replace.html"
+  - title: PCIe或夾層卡
+    pdf-filename: C400 PCIe或夾層卡AFF
+    url: "/c400/pci-cards-and-risers-replace.html"
+  - title: 電源供應器
+    pdf-filename: C400電源供應器AFF
+    url: "/c400/power-supply-replace.html"
+  - title: 即時時鐘電池
+    pdf-filename: Real-Time時鐘電池AFF
+    url: "/c400/rtc-battery-replace.html"

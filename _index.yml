@@ -5,30 +5,34 @@ indexpage:
   tiles:
   - title: 開始使用
     links:
-    - title: 發行說明 ONTAP
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: 新增功能
       url: "/whats-new.html"
+    - title: 快速入門
+      url: "/get-up-and-run.html"
+    - title: 不再需要儲存資料表FAS AFF
+      url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+    - title: 發行說明 ONTAP
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
   - title: 系統AFF
     links:
     - title: C190 AFF
       url: "/c190/index.html"
-    - title: 解答200 AFF
-      url: "/a200/index.html"
+    - title: C250 AFF
+      url: "/c250/index.html"
+    - title: C400 AFF
+      url: "/c400/index.html"
+    - title: C800 AFF
+      url: "/c800/index.html"
+    - title: 解答150 AFF
+      url: "/a150/index.html"
     - title: VA220 AFF
-      url: "/fas2700/index.html"
+      url: "/a220/index.html"
     - title: VA250 AFF
       url: "/a250/index.html"
-    - title: 部分A300 AFF
-      url: "/a300/index.html"
-    - title: 解答320 AFF
-      url: "/a320/index.html"
     - title: 解答400 AFF
       url: "/a400/index.html"
     - title: 部分A700 AFF
-      url: "/fas9000/index.html"
-    - title: S4A700s AFF
-      url: "/a700s/index.html"
+      url: "/a700/index.html"
     - title: 解答800 AFF
       url: "/a800/index.html"
     - title: 解答900 AFF
@@ -37,12 +41,6 @@ indexpage:
     links:
     - title: FAS500f
       url: "/fas500f/index.html"
-    - title: FAS2600
-      url: "/fas2600/index.html"
-    - title: FAS2700
-      url: "/fas2700/index.html"
-    - title: FAS8200
-      url: "/fas8200/index.html"
     - title: FAS8300
       url: "/fas8300/index.html"
     - title: FAS8700
@@ -51,49 +49,51 @@ indexpage:
       url: "/fas9000/index.html"
     - title: FAS9500
       url: "/fas9500/index.html"
-  - title: 磁碟機櫃
+  - title: 終止可用度系統
     links:
-    - title: NS224
-      url: "/ns224/index.html"
-    - title: SAS搭配IOM12
-      url: "/sas3/index.html"
-  - title: 叢集與儲存交換器
+    - title: 解答200 AFF
+      url: "/a200/index.html"
+    - title: 部分A300 AFF
+      url: "/a300/index.html"
+    - title: 解答320 AFF
+      url: "/a320/index.html"
+    - title: S4A700s AFF
+      url: "/a700s/index.html"
+    - title: FAS2600
+      url: "/fas2600/index.html"
+    - title: FAS2700
+      url: "/fas2700/index.html"
+    - title: FAS8200
+      url: "/fas8200/index.html"
+  - title: 支援的交換器
     links:
     - title: Broadcom支援的Bes：53248
       url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
-    - title: Cisco 3132Q-V
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-3132q-v/install-overview-cisco-3132qv.html
-    - title: Cisco 3232C
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-3232c/install-overview-cisco-3232c.html
     - title: Cisco 9336C-FX2
       url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
     - title: Cisco 9336-FX2共享組態
       url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
-    - title: Cisco 92300YC
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-92300/92300-overview.html
-    - title: NetApp CN1610
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-netapp-cn1610/install-overview-cn1610.html
     - title: NVIDIA SN2100
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/sn2100-overview.html
-    - title: 其他交換器機型
-      url: https://docs.netapp.com/us-en/ontap-systems-switches/other/switch-linkout.html
-  - title: 平台升級
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-overview-sn2100-storage.html
+    - title: 終止可用度交換器
+      url: https://docs.netapp.com/us-en/ontap-systems-switches/overview-eod.html
+  - title: 相關ONTAP 資訊
     links:
-    - title: 升級適用於大多數系統
+    - title: 平台升級（大多數系統）
       url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
-    - title: 升級MetroCluster 至採用不更新組態的系統
+    - title: 平台升級（MetroCluster 更新）
       url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html
-  - title: 更多資源
-    links:
-    - title: 本文檔 ONTAP
+    - title: 軟體文件ONTAP
       url: https://docs.netapp.com/us-en/ontap/index.html
-    - title: NetApp Hardware Universe
-      url: https://hwu.netapp.com/
-    - title: NetApp Active IQ Digital Advisor
+    - title: 數位顧問文件
       url: https://docs.netapp.com/us-en/active-iq/index.html
-    - title: NetApp Active IQ Config Advisor
-      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+  - title: 工具與支援
+    links:
     - title: NetApp 互通性對照表
       url: https://mysupport.netapp.com/matrix/#welcome
-    - title: NetApp社群
-      url: https://community.netapp.com/t5/ONTAP-and-FAS/ct-p/fas-ontap-oncommand-and-related-plug-ins
+    - title: NetApp Hardware Universe
+      url: https://hwu.netapp.com/
+    - title: NetApp知識庫
+      url: https://kb.netapp.com/
+    - title: "（需要登入）Active IQ"
+      url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
