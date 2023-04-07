@@ -6218,8 +6218,6 @@
   <block id="15ec95a1d0a631e3b92b0edbb8cc676a" category="doc">升級程序</block>
   <block id="121b7f57f2237bf67b44a7e14ee89c24" category="inline-link">升級AFF 版的功能與FAS 功能、系統文件網站</block>
   <block id="8f656f617cb33dc389da6056b5ff435f" category="inline-link">資訊網站ONTAP MetroCluster</block>
-  <block id="9d36987153aaf6bfaf4018df16b0dc21" category="sidebar">開始使用 </block>
-  <block id="ec01d482cf394f212f073921cfd9d5bd" category="sidebar">發行說明ONTAP</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="7ff4995c299eff1168d2cf4a88aff450" category="sidebar">安裝與設定</block>
   <block id="ade01a5a398372194a42c36e9f5279ac" category="sidebar">維護</block>
@@ -6227,25 +6225,9 @@
   <block id="a2e494f9e893e2ce2495f61aebe60a0a" category="sidebar">控制器模組</block>
   <block id="d138e90428f37a60387c8577b6e009b8" category="sidebar">非易失電池</block>
   <block id="a9638d4d52688cbe2f6d101cb55be3b8" category="sidebar">系統DIMM</block>
-  <block id="2f1a3e62508d88ddc31f1aa72a8334d4" category="sidebar">瞭解</block>
-  <block id="950ddde1b95bd175de9e64710ca7628d" category="sidebar">更換內部磁碟機視訊</block>
-  <block id="a4e1bbb083c33fd7dbc252f015b0b111" category="sidebar">NetApp All Flash FAS 解決方案適用於採用VMware Horizon View的非持續桌面| TR-4539</block>
-  <block id="6c991e0eca69d42bf35e7ea499a3ea0c" category="sidebar">新增或移除磁碟櫃</block>
   <block id="207e21ff57c713dc789acfa5e99040ae" category="sidebar">SAS搭配IOM12</block>
-  <block id="99a7b0ee54277073c008109914f38e8b" category="sidebar">安裝及維護交換器</block>
-  <block id="7972b80956858e3ab7ff0a50aa404e7b" category="sidebar">Broadcom支援的交換器</block>
-  <block id="250f3098aa37d3a08b48b8157db8a62e" category="sidebar">Cisco交換器</block>
-  <block id="f683581d3e75f05f9d9215f9b4696cef" category="sidebar">升級</block>
   <block id="d44f3a6dbf7d14380c862fdbf2b79c35" category="sidebar">系統硬體升級</block>
   <block id="f7e891dd188ea1d7b94852cb50ec354e" category="sidebar">軟體升級ONTAP</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多資源</block>
-  <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="sidebar">本文檔 ONTAP</block>
-  <block id="519131237f79eadb2dc6a1e003a087bc" category="sidebar">NetApp Active IQ Config Advisor</block>
-  <block id="cd7241567b7d41282d7d42bd0fd8924e" category="sidebar">NetApp互通性對照表工具</block>
-  <block id="3f2b90ec5a9b43745b9c8c9fedf48d8d" category="sidebar">NetApp支援知識庫</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
-  <block id="5b46f1e25b24701e3e37b48389c68f1f" category="sidebar">系統資料表</block>
-  <block id="9309884a373bc815760f4be6706be913" category="sidebar">儲存資料表</block>
   <block id="afef6b7a17d55fd0b4ca89fefb09e6ed" category="sidebar">網路附加MetroCluster 的不完整組態</block>
   <block id="6e312601c8cf7db987974e64a6ef3fb3" category="sidebar">彈性MetroCluster 的擴充功能</block>
   <block id="c5ee1908bc809728e968990e07fb6bf9" category="sidebar">快取或核心傾印模組</block>
@@ -7084,7 +7066,6 @@
   <block id="c920d4841ecd46b57d9a50e7295a2153" category="inline-link-macro">使用IOM12模組熱新增磁碟櫃的需求</block>
   <block id="36779ed778ea1fac61fae3be46917d43" category="inline-link-macro">使用IOM12模組安裝磁碟櫃以進行熱新增</block>
   <block id="56ccacf68c60aa589cdd947ffabc6a40" category="paragraph">您必須符合中的要求 <block ref="38d5024537883b0bd86511e0b5e50dba" category="inline-link-macro-rx"></block> 並依照中的指示、為每個磁碟櫃設定機櫃ID <block ref="2957551c96808bfde01acb853ddbc0af" category="inline-link-macro-rx"></block>。</block>
-  <block id="4ec6a95192d18718a540794417c8fa63" category="sidebar">NetApp Active IQ Digital Advisor</block>
   <block id="398a3c8d2269f5f0bf21e8be014ed54c" category="list-text">當您將IOM12模組的磁碟櫃熱新增至含有IOM6模組的磁碟櫃堆疊時、整個堆疊的效能會以6 Gbps（以最低的通用速度執行）運作。</block>
   <block id="75e1d900c724ecf27f282e3bba238d06" category="paragraph">如果您要熱新增的磁碟櫃是從IOM3或IOM6模組升級至IOM12模組的磁碟櫃、則該堆疊的運作速度為12 Gbps；不過、磁碟櫃背板和磁碟功能可將磁碟效能限制在3 Gbps或6 Gbps。</block>
   <block id="240920b675de649a14eaba01757477c0" category="list-text">初始IOM12/IOM12B機櫃（連接至邏輯上最後IOM6機櫃的機櫃）一律會連接至IOM6機櫃圓形連接埠（非方形連接埠）。</block>
@@ -7804,4 +7785,8 @@
   <block id="bcf7de048a0b400d784ce2434b8beffe" category="doc">更換 SSD 磁碟機 - AFF C250</block>
   <block id="9c7a64854bf794e3fdb5cf355e7f1647" category="doc">AFF A150 系統文件</block>
   <block id="31d91f8342285d4227c3ee9c296c770a" category="doc">AFF A220 系統文件</block>
+  <block id="7ea1e7a8d88645f3d34ddf28afd75c22" category="sidebar">AFF A 系列系統資料表</block>
+  <block id="9a7f5dd837959f1361128bbf46fc6c5b" category="sidebar">AFF C 系列系統資料表</block>
+  <block id="242c23abc6f706eeabc035c9160b09f4" category="sidebar">AFF A 系列系統</block>
+  <block id="ac6e4f5110aa7db5e1253a60d8d4f5a1" category="sidebar">AFF C 系列系統</block>
 </blocks>
