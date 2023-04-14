@@ -569,7 +569,6 @@
   <block id="bc36b7561098172a45ca8601c91c3c1c" category="inline-link">儲存系統文件資源FAS</block>
   <block id="ffd3191487f66e44a54010853dc2463b" category="paragraph"><block ref="ffd3191487f66e44a54010853dc2463b" category="inline-link-rx"></block></block>
   <block id="45b8f0b842002ec85fb07171d4b0d278" category="list-text">#1與#2十字螺絲起子</block>
-  <block id="550a05295adac93ed80399f5d8c460bc" category="list-text">系統機櫃螺絲的內六角螺絲起子</block>
   <block id="830cb2795d80d2d868f65bf4fc0302ba" category="list-text">用於調平系統機櫃的調平工具</block>
   <block id="e13e49c4785459e877f9a59004d99ad4" category="summary">執行診斷可協助您判斷存取特定裝置的原因為何會變成間歇性、或是儲存系統中的裝置無法使用的原因。</block>
   <block id="7edb195b323657f9e058299134ada2f6" category="doc">執行裝置故障診斷</block>
@@ -656,7 +655,6 @@
   <block id="ad6e341d56390163e7fc8c5722a9e033" category="list-text">如果命令輸出中列出磁碟機詳細資料及模式與金鑰ID資訊、則NSE已設定完成、您需要驗證NSE組態並使用中。</block>
   <block id="52f57fb3e4c5bd20a2a75ecc9242ad9a" category="list-text">如果未顯示任何磁碟、則表示未設定NSE。</block>
   <block id="d592a26ccf1ea8ee5faa30f916fd2fb6" category="list-text">如果未設定NVE和NSE、則不會有任何磁碟機受到NSE金鑰保護、因此可以安全地關閉受損的控制器。</block>
-  <block id="c9c0cd0bbd81ff9ac4cc17d3dad4fb7c" category="list-text">顯示儲存在金鑰管理伺服器上驗證金鑰的金鑰ID：「安全金鑰管理程式金鑰查詢」</block>
   <block id="08c67f907b0f6c715c552d9ca4f21200" category="admonition">發行完發行版不只是發行版的版本、您可能還需要其他的金鑰管理程式類型。ONTAP這些類型包括「KMIP」、「AKV」和「GCP」。確認這些類型的程序與確認「外部」或「內建」金鑰管理程式類型相同。</block>
   <block id="bc06dd585ab0c8107e022844d1397b0b" category="list-text">如果「金鑰管理程式」類型顯示為「外部」、而「還原」欄顯示為「是」、則關閉受損的控制器是安全的做法。</block>
   <block id="ea9a06f5fb2cd5470a0c0c25b039a03c" category="list-text">如果「金鑰管理程式」類型顯示為「OnBoard」、而「RESTORED」欄顯示為「yes」、則您需要完成一些額外步驟。</block>
@@ -666,14 +664,10 @@
   <block id="1b3e3ec3fd07bf53abc8401f17b2a7b5" category="list-text">輸入命令以顯示金鑰管理資訊：「安全金鑰管理程式內建show-backup」</block>
   <block id="59d3229a75f9a710337879feec6b35c8" category="list-text">如果「Key Manager（金鑰管理程式）」類型顯示「external（外部）」、而「restored.（還原）」欄顯示「yes（是）」以外的任何內容：</block>
   <block id="c664ce90df89e48082cd24116ca9c5cf" category="list-text">將外部金鑰管理驗證金鑰還原至叢集中的所有節點：「安全金鑰管理程式外部還原」</block>
-  <block id="2647b6895add9d235f2ff89a28db2364" category="list-text">驗證所有驗證金鑰的「restored（還原）」欄位是否均為「yes（是）」：「ecurity key-manager key-query（安全金鑰管理程式金鑰查詢）」</block>
   <block id="09344dc6761d2a7f8e0074911899de26" category="list-text">如果「Key Manager（金鑰管理程式）」類型顯示為「OnBoard（機上）」、而「RESTORED（還原）」欄則顯示「yes（是）」以外的任何內容：</block>
   <block id="f5321e091dead7c4ead8728aa3332803" category="list-text">輸入內建的安全金鑰管理程式同步命令：「安全金鑰管理程式內建同步」</block>
-  <block id="e95eff996520c90aaccb543013169368" category="list-text">驗證所有驗證金鑰的「restored（還原）」欄位是否顯示「yes（是）」：「ecurity key-manager key-query（安全金鑰管理程式金鑰查詢）」</block>
   <block id="b1dfba2b33907e87a5254267b34a3e32" category="list-text">驗證「Key Manager（金鑰管理程式）」類型是否顯示為「OnBoard（機上）」、然後手動備份OKM資訊。</block>
   <block id="5420f491e628cc60c7e1ffcad20d35da" category="list-text">輸入命令以顯示金鑰管理備份資訊：「安全金鑰管理程式內建show-backup」</block>
-  <block id="da258252bb942c85fc21f326f3b4ef28" category="list-text">顯示儲存在金鑰管理伺服器上的驗證金鑰ID：「安全金鑰管理程式金鑰查詢-金鑰類型NSE-AK」</block>
-  <block id="a5e337a3469d0028e9b72fe170e6d372" category="list-text">輸入內建的安全金鑰管理程式同步命令：「安全金鑰管理程式外部同步」</block>
   <block id="f0bb66ccc33b2423473b4997076e2e15" category="paragraph">在提示下輸入客戶的機載金鑰管理通關密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。</block>
   <block id="2ac1e9cd887b50e321ead7a3e6beab55" category="summary">若要更換控制器模組硬體、您必須移除受損的控制器模組、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
   <block id="6f932d5d73e623ce4a8447916188b6ea" category="doc">更換控制器模組硬體AFF - REVA200</block>
@@ -7778,9 +7772,6 @@
   <block id="e1c82a0b92bea9d8ce8c8d14a1992cd8" category="list-text">啟動每個控制器。</block>
   <block id="7765edbf8893ad208b9932e53c6d932a" category="doc">更換 SSD 磁碟機 - AFF C800</block>
   <block id="8b516ca5434f765000f11032059de011" category="section-title">步驟 6 移除 USB LED 模組</block>
-  <block id="284d8ab33b7a1bc5797091f74643b163" category="section-title">步驟 7 ：將 USB LED 模組安裝至更換的機箱</block>
-  <block id="b91630a08c2bbd38ab4fcccfc43288bc" category="paragraph">將替換機箱安裝到機架或機櫃後、請從損壞的機箱正面安裝 USB LED 模組至更換的機箱。</block>
-  <block id="d87777306e62f6ae23e04dd3919ca898" category="list-text">找到位於受損機箱正面的 USB LED 模組、直接位於 DCPM 模組下方。</block>
   <block id="632bcda28821b8191cdaaa396c4b3e22" category="paragraph">若要安裝 I/O 模組、包括受損機箱的 NVRAM 模組、請依照特定步驟順序進行。</block>
   <block id="bcf7de048a0b400d784ce2434b8beffe" category="doc">更換 SSD 磁碟機 - AFF C250</block>
   <block id="9c7a64854bf794e3fdb5cf355e7f1647" category="doc">AFF A150 系統文件</block>
@@ -7789,4 +7780,28 @@
   <block id="9a7f5dd837959f1361128bbf46fc6c5b" category="sidebar">AFF C 系列系統資料表</block>
   <block id="242c23abc6f706eeabc035c9160b09f4" category="sidebar">AFF A 系列系統</block>
   <block id="ac6e4f5110aa7db5e1253a60d8d4f5a1" category="sidebar">AFF C 系列系統</block>
+  <block id="767f4271a1d06fc66fc1c9d48c7b86e8" category="list-text">顯示儲存在金鑰管理伺服器上之驗證金鑰的金鑰 ID ：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
+  <block id="e084232082046eab4e75b332c2a9fbe5" category="list-text">確認<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄等於<block ref="a6105c0a611b41b08f1209506350279e" prefix=" " category="inline-code"></block> 對於所有驗證金鑰：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
+  <block id="7ef95216354d37756f204adf213d9c42" category="list-text">驗證<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示<block ref="a6105c0a611b41b08f1209506350279e" prefix=" " category="inline-code"></block> 對於所有驗證金鑰：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
+  <block id="1f7aa359582e430ea0f9f103a2603e1e" category="list-text">顯示儲存在金鑰管理伺服器上之驗證金鑰的金鑰 ID ：<block ref="eb3cf23f0c9c60ca759ddca34bbfbf56" prefix=" " category="inline-code"></block></block>
+  <block id="1ffab5c59dbafc5f9803c8c1c9f1a392" category="list-text">按住電源供應器把手上的 terra cotta 鎖定按鈕、然後將電源供應器從機箱中拉出。</block>
+  <block id="053d4f46894c00d901f3095a3ad91755" category="paragraph">Terra cotta 鎖定按鈕</block>
+  <block id="80e9690d6c33d863eeba6d3568a54e20" category="list-text">按下風扇模組上的 terra cotta 鎖定按鈕、將風扇模組直接從機箱中拉出、並確保您可以用自己的手來支撐它。</block>
+  <block id="f43485cd7eea44f6cc85f3bfe7987006" category="list-text">向下滑動凸輪把手上的赤陶鎖定按鈕、直到解鎖為止。</block>
+  <block id="d9b851276ec6084875c160232c176919" category="paragraph">CAM 把手鎖定按鈕</block>
+  <block id="f97e20f188f0046b0b36414920f0e68e" category="list-text">將控制器模組放在一旁安全的地方、並追蹤其來源的機箱插槽、以便將其安裝在替換機箱的相同插槽中。</block>
+  <block id="6c94606812e365b0e8385e70576c6718" category="list-text">如果機箱中有另一個控制器模組、請重複這些步驟。</block>
+  <block id="350810443071d4905db65d0c63cf2f88" category="list-text">按下有字母和編號的凸輪鎖定按鈕。</block>
+  <block id="917443d56d6fbbb1d3682a65ef978df7" category="paragraph">CAM 鎖定按鈕會移離機箱。</block>
+  <block id="10fff62c8a7d1e6e667632b9de8cadcf" category="list-text">按下模組把手上的 terra cotta 鎖定按鈕、然後將 DCPM 滑出機箱。</block>
+  <block id="6b8855666d15c36dc1d8447cba6abb80" category="paragraph">DCPM terra cotta 鎖定按鈕</block>
+  <block id="2f88dcf2a1278dcfd1dcdb771a7801e3" category="list-text">將 DCPM 放在安全的地方、然後對其餘的 DCPM 重複此步驟。</block>
+  <block id="8350ea7a739289c52ff4ea63e874393e" category="list-text">將模組放在安全的地方。</block>
+  <block id="4800a3ea9c30369fb6fdfc565391feec" category="list-text">將 DCPM 的末端對準機箱開口、然後將其輕輕滑入機箱、直到卡入定位。</block>
+  <block id="379d3cebc84f572e91639d41fb778594" category="list-text">對其餘的 DCPM 重複此步驟。</block>
+  <block id="d8d1f0e161d8126e168a20aca1dc8735" category="list-text">找到替換機箱正面的 USB LED 模組插槽、直接位於 DCPM 托架下方。</block>
+  <block id="d296f2735134671680a1857862c2390f" category="list-text">將模組邊緣與 USB LED 凹槽對齊、然後將模組輕輕推入機箱、直到卡入定位。</block>
+  <block id="66ba60034a525a69b1b5cf4344529c25" category="paragraph">若要從受損機箱（包括 NVRAM 模組）中移除 I/O 模組、請依照特定步驟順序進行。</block>
+  <block id="76558becedd79e95bf3921d5f08baeb6" category="list-text">在受損機箱正面的 DCPM 托架正下方找到 USB LED 模組。</block>
+  <block id="ac6201b7b810f81cfaef54d4d8fe63d5" category="list-text">用於系統機櫃螺絲的 TORQ 驅動程式</block>
 </blocks>
