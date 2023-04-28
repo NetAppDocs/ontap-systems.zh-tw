@@ -761,18 +761,7 @@
   <block id="5882cd2f55c4bcf825c0675d56d4677a" category="list-text">提示警告：在HA組態中進入維護模式時、您必須確保健全的控制器保持停機狀態。您可以安全地回應這些提示。</block>
   <block id="596bcca65aca56bacb3df39265f83dfb" category="summary">若要更換機箱、您必須關閉控制器。</block>
   <block id="7406636825b302f07932b3580dc3aa5b" category="doc">關閉控制器AFF -現象A200</block>
-  <block id="b5d03ef67a171c85bf4bd311e2fd75df" category="paragraph">您必須先關閉機箱中的控制器或控制器、才能將其移至新機箱。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">關於這項工作</block>
-  <block id="880c0610027a11af7086ae7e380e12e5" category="list-text">如果您的系統有兩個控制器模組、請停用HA配對。</block>
-  <block id="d426a3f5c9c0e3362f4ed536e7643c03" category="cell">如果您的系統執行叢集ONTAP 式的</block>
-  <block id="93ff4b8a35c5f08ad3e97fdc9983948e" category="paragraph">叢集中的兩個控制器</block>
-  <block id="a0540c64b7001eb9739a6eed390808ac" category="paragraph">叢集中有兩個以上的控制器</block>
-  <block id="b2aa61dcee4d7b77fcd001973469ddde" category="paragraph">「torage容錯移轉修改節點node0 -enabled假」</block>
-  <block id="853a8c6f8383ee1dc5f3826af9ff6797" category="list-text">當系統提示您確認停止時、請按「y」停止控制器：「System Node halt -node_node_name_」</block>
-  <block id="481250f3e8ec41b0e994305d8fc52b4a" category="paragraph">確認訊息如下所示：</block>
-  <block id="253a50052b60be1951a606aa7c311ba2" category="admonition">在更換機箱之前、您必須執行乾淨的系統關機、以避免在非揮發性記憶體（NVMEM/NVRAM）中遺失未寫入的資料。根據您的系統、如果NVMEM/NVRAM LED正在快閃、則在NVMEM/NVRAM中有尚未儲存至磁碟的內容。您需要重新啟動控制器、並從本程序開始。如果重複嘗試完全關閉控制器失敗、請注意、您可能會遺失任何未儲存至磁碟的資料。</block>
-  <block id="8373aa3aac3c8f18564812bfcb55615a" category="list-text">如果適用、請停止第二個控制器、以避免HA配對組態中出現可能的仲裁錯誤訊息：「System Node halt -node_dee_node_name_-ignore -quorum - warnings true -skip-lif-imcalemation-tape-shute-shuted true」</block>
-  <block id="7da65b5a10b69b45b490009ac07696ff" category="paragraph">出現提示時回答「y」。</block>
   <block id="1cfa6f391685fda6b74bedcb88fa1418" category="summary">當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。</block>
   <block id="34618f776812de6f5f59a70ca2c17728" category="doc">更換DIMM AFF - VA200</block>
   <block id="49d981e4792b1b6bfc193d341fe3b1d4" category="list-text">系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。</block>
@@ -3061,7 +3050,6 @@
   <block id="c03d9a33e888c8ba0969d655b0bb1791" category="list-text">使控制器恢復正常運作。</block>
   <block id="13c4db3516e2bb246a5834f3d7814d4f" category="doc">換掉風扇AFF -《不只是我的問題》</block>
   <block id="4693df7fc44203724111e55493c1f236" category="paragraph">Terra cotta釋放鈕</block>
-  <block id="9cc3abf99d341ddf4468a9377444f16d" category="doc">關閉受損的控制器AFF - VA900</block>
   <block id="d69f8bb928c8179d4a1d81a77b9f6a4c" category="list-text">本程序參考下列工作表和纜線佈線範例、示範如何讀取工作表來連接控制器與堆疊的纜線連接。</block>
   <block id="2f40064540d7b13547e7d24b16fd49e7" category="paragraph">本範例所使用的組態為四路徑HA組態、每個控制器上有兩個四埠SAS HBA、以及兩個具有IOM12模組的磁碟櫃堆疊。</block>
   <block id="a513cfe8d83ba38ea85b01260a4ffb53" category="list-text">如果您使用單一控制器組態、請跳過子步驟b和d、以便連接至第二個控制器。</block>
@@ -7198,13 +7186,11 @@
   <block id="0c2b7daebf1a1e94a676675bf614fba6" category="paragraph">開機媒體位於與電源供應器相對的機櫃機箱牆上。</block>
   <block id="178d438c63a174b511750f68655d814d" category="list-text">更換完RTC電池後、重新安裝NSM模組、然後開機模組、ONTAP 實時時鐘時間會由更新。</block>
   <block id="d067784c8bad4d41a4f87accd50abbc1" category="list-text">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
-  <block id="1c0138111ac00fdce24dc38ffd9859d5" category="list-text">如果叢集有兩個以上的控制器、則叢集必須處於仲裁狀態。如果叢集不在仲裁中、或顯示正常的控制器<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 如需資格和健全狀況、您必須先修正問題、再關閉受損的控制器；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="305fade7b83ae4e7549b33a3ae1b1fd0" category="doc">熱新增機櫃- NS224機櫃</block>
   <block id="859c951ebab21901f2fd6183c53339d5" category="summary">若要熱交換內含NVRAM11電池的卸載控制器電源模組（DCPM\）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
   <block id="8ea19d634d233a26f4f650bd2e2b467c" category="paragraph">若要熱交換內含NVRAM11電池的卸載控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
   <block id="58fb0a507d97ff336e5db5d69ba846e9" category="inline-link">將40GbE NIC連接埠轉換成多個10GbE連接埠、以實現10GbE連線</block>
   <block id="8ae73aa056882e7b560f3b52b5764957" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用將這些連接埠轉換成10 GbE連線<block ref="5ec041cdb2bbdf01cd4ea2c400b17495" prefix=" " category="inline-code"></block> 從維護模式執行命令。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
-  <block id="d875f9fec183da794cd6d6245ef00d1d" category="paragraph"><block ref="272f3c49a4ec1753c70013d06165277b" prefix="" category="inline-code"></block></block>
   <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須先修正問題、再關閉受損的控制器。</block>
   <block id="68d9e980b8b4998ef88139d7b7ab8ff6" category="paragraph"><block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block></block>
@@ -7416,11 +7402,7 @@
   <block id="5ab526c2d8a23c39c3d68b1080ca3e89" category="doc">詳細指南AFF - C400</block>
   <block id="ed1fe7521861c492832064f3b6daca68" category="paragraph">100 GbE纜線（QSFP28）</block>
   <block id="e0cc8c545401fc3b34281140c54756c7" category="admonition">如果看不到卡上的連接埠標籤、您可以檢查卡安裝方向（C400的PCIe連接器插槽位於卡插槽左側）、然後在NetApp Hardware Universe ® 其中顯示了帶有連接埠標籤的擋板圖形。您可以使用sysconfig -A命令或系統壓縮清單來找到卡片零件編號。</block>
-  <block id="80a7f396e1bc3ed796a9313a0aa75443" category="image-alt">DRW C400 TSC網路纜線</block>
-  <block id="a905d4a42dacfc07296e02d609b47cb0" category="image-alt">DRW C400交換式網路纜線</block>
   <block id="670ce436320fc9008e2880db983e27d2" category="paragraph">下列選項說明如何將一或兩個NS224磁碟機櫃纜線連接至系統。</block>
-  <block id="66587f1aa86b9e296b1d1dd43ca73e3e" category="image-alt">DRW C400單一n224磁碟櫃</block>
-  <block id="0b9e9bf3097ae366abf0d35474fb4b1f" category="image-alt">DRW C400兩個新南224磁碟櫃</block>
   <block id="eca713323e6fa9782ebae60357fc0453" category="doc">更換NVDIMM AFF - REC400</block>
   <block id="719e61ffcf0d96924351db01f7e50603" category="doc">影片- AFF C400</block>
   <block id="51e4f59a1aaa143b8d5c910f0a77328e" category="video-title">動畫- AFF 《安裝與設定指南》</block>
@@ -7804,4 +7786,80 @@
   <block id="66ba60034a525a69b1b5cf4344529c25" category="paragraph">若要從受損機箱（包括 NVRAM 模組）中移除 I/O 模組、請依照特定步驟順序進行。</block>
   <block id="76558becedd79e95bf3921d5f08baeb6" category="list-text">在受損機箱正面的 DCPM 托架正下方找到 USB LED 模組。</block>
   <block id="ac6201b7b810f81cfaef54d4d8fe63d5" category="list-text">用於系統機櫃螺絲的 TORQ 驅動程式</block>
+  <block id="d581cc3762a48b4da22069bdeae81b8f" category="inline-link">如何在 4 節點叢集中執行一個 HA 配對的正常關機和開機</block>
+  <block id="3f7ee1fb6cfdfd18c49f8e060fa8f9c9" category="paragraph">此程序僅適用於雙節點非 MetroCluster 組態。如果您的系統有兩個以上的節點、請參閱<block ref="681b47fbe1cebc545a75e77efd420ec0" category="inline-link-rx"></block>。</block>
+  <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">您需要：</block>
+  <block id="68d685ddbaa25f1a411d5e93d6f91913" category="list-text">ONTAP 的本機系統管理員認證。</block>
+  <block id="ac1036c822296c33d140ef7ba7cd246d" category="list-text">NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密）。</block>
+  <block id="93e6bf3fa29a7ebd2a4bb235a54deb94" category="list-text">每個控制器的 SP/BMC 存取能力。</block>
+  <block id="d6562c849f41b9038124f0c304aed030" category="list-text">停止所有用戶端 / 主機存取 NetApp 系統上的資料。</block>
+  <block id="d61b46d9cd719b77efb76269147aa377" category="list-text">暫停外部備份工作。</block>
+  <block id="527f18fb3f8ac4bca4ae01901a2c9317" category="list-text">更換所需的工具和設備。</block>
+  <block id="3b6fc5695f8237510131da824ce788d0" category="inline-link">正常關機並開啟儲存系統解析指南</block>
+  <block id="03f7958d5b1fc7636429e97368e2f97f" category="admonition">如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱<block ref="6db187057e0b0e01589d1a1a7f510469" category="inline-link-rx"></block> 執行此程序之後。</block>
+  <block id="ec965df16952820cbea39156c0dfe2f0" category="admonition">如果使用 FlexArray 陣列 LUN 、請遵循特定廠商的儲存陣列文件、以瞭解在執行此程序之後、要對這些系統執行的關機程序。</block>
+  <block id="ad8a5006901db5ea8481166a34f27929" category="inline-link">SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險</block>
+  <block id="7d140f8b4464f9a8684a7943df8e74d9" category="admonition">如果使用 SSD 、請參閱<block ref="13eec713a6c81535d5709aa561195b7a" category="inline-link-rx"></block></block>
+  <block id="356bf392971487f892daba5338258571" category="paragraph">關機前的最佳做法是：</block>
+  <block id="2ee5edc561a6167cf2d57a64ee655bef" category="inline-link">系統健全狀況檢查</block>
+  <block id="7023017d0098f741d6569842ee62b922" category="list-text">執行其他<block ref="9ace058273de133e6accbea83a7d278a" category="inline-link-rx"></block>。</block>
+  <block id="f40b8507b340a958be200bec6d3758a0" category="list-text">將 ONTAP 升級至建議的系統版本。</block>
+  <block id="9f4d2068e7b3d206efc0252b3da597a5" category="inline-link">Active IQ 健康警示與風險</block>
+  <block id="c5df4dcae9a001142a36959487445ff6" category="list-text">解決任何問題<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block>。記下系統上目前存在的任何故障、例如系統元件上的 LED 。</block>
+  <block id="3923b7d5100131c85be2160c8b680704" category="list-text">透過 SSH 登入叢集、或使用本機主控台纜線和筆記型電腦 / 主控台、從叢集中的任何節點登入。</block>
+  <block id="d9e8189e14354652821e1f0f10f12dfe" category="list-text">關閉 AutoSupport 並指出您預期系統離線的時間：</block>
+  <block id="ff3faabe8aca2ae4a92cf7dec5b62b8f" category="paragraph"><block ref="14fb036c43dbcde966a639d33554da5c" prefix="" category="inline-code"></block></block>
+  <block id="ac2a6618449930e8abeb32fd078d7716" category="list-text">識別所有節點的 SP/BMC 位址：</block>
+  <block id="0d16db60da2c01b63ef84ee8d616c2fb" category="paragraph"><block ref="b206d268f79aeaa7c4f1e44684d2f080" prefix="" category="inline-code"></block></block>
+  <block id="a0fd5b31be719aeb26e2fc9c6991da9f" category="list-text">結束叢集 Shell ：<block ref="f24f62eeb789199b9b2e467df3b1876b" prefix=" " category="inline-code"></block></block>
+  <block id="cf814f480a03329076e1d0cf2f71d7e3" category="list-text">使用上一步輸出中列出的任何節點的 IP 位址、透過 SSH 登入 SP/BMC 。</block>
+  <block id="aed4c23042b5f25dad252449f4ddcc59" category="paragraph">如果您使用的是主控台 / 筆記型電腦、請使用相同的叢集管理員認證登入控制器。</block>
+  <block id="a3dcd96fdc725fa51c4161c8a03146ab" category="admonition">開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。</block>
+  <block id="e2cba6e644aeaf95f80f688b880746da" category="list-text">停止叢集中的所有節點：</block>
+  <block id="02e0d9b5c39d838c007bfad7b6e34196" category="paragraph"><block ref="b89a38fd8ae1ad809e5b3560be211bfa" prefix="" category="inline-code"></block>。</block>
+  <block id="aba2c36fe67a0528d4417c7e5c4da8a1" category="admonition">對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集：<block ref="03e2e719454253f2db864fa560da7899" prefix=" " category="inline-code"></block></block>
+  <block id="3171aeb3fa199cec60349b4529cc0178" category="list-text">當您看到時、請為叢集中的每個控制器輸入 * y*<block ref="25cae4cb08eccf660db87cfb99a959d7" prefix=" " category="inline-code"></block></block>
+  <block id="a39c8c38e51a42fcfaac22367dd19064" category="list-text">等待每個控制器停止並顯示載入器提示。</block>
+  <block id="461bb1724a0adc2c975edfdd4b4923a1" category="list-text">如果沒有 PSU 開 / 關開關、請關閉每個 PSU 或拔下它們。</block>
+  <block id="e3dc6cc26ed03ba51ee4327edde1e1fc" category="list-text">從每個 PSU 拔下電源線。</block>
+  <block id="0042f27885e192c9ea879dde4ac34445" category="list-text">驗證與叢集相關的所有控制器、磁碟機櫃和交換器均已關機。</block>
+  <block id="3f80193798fcbb08cbe99cbe0a3aff95" category="paragraph">更換機箱後、請依下列順序開啟叢集元件的電源：</block>
+  <block id="f9604921fe40d48421b9ae74e9a50059" category="list-text">開啟交換器電源</block>
+  <block id="85ee83d55e3fb9b20f9f17b7fb773ca0" category="list-text">開啟磁碟機櫃電源</block>
+  <block id="d692ae791953fc513c9f3fd94d866964" category="list-text">開啟控制器電源</block>
+  <block id="6d0114cd2de3e017d8d76d6b9f2191fc" category="list-text">開啟交換器電源：</block>
+  <block id="fe12fd40092a74cc86c0db3006d72880" category="list-text">將每根電源線從 PDU 插回 PSU 。</block>
+  <block id="d79f0458e922251555ddc7baa3538dbc" category="list-text">將每個 PSU 翹板開關轉到「 On 」（開啟）位置（如果適用）。</block>
+  <block id="420a1ffc592934afa358803642255547" category="list-text">等待交換器開機。</block>
+  <block id="67935e6f17c778c98c8e80fce8e29a9f" category="list-text">檢查開關上的任何故障指示燈（前後）。</block>
+  <block id="978a8732c5cda53a8b4a3de35d2184fd" category="list-text">透過管理 IP 位址連線至交換器。</block>
+  <block id="c72d57bd067b2b477426ef13c9c81629" category="list-text">確認交換器健全狀況（如需詳細資訊、請參閱交換器廠商文件）。</block>
+  <block id="fc5b4d6235b015336cafcedc54683d5d" category="list-text">對每個交換器重複上述步驟、直到所有交換器都已開機且正常運作。</block>
+  <block id="874c11301500ddf99db8a26ccc161200" category="list-text">為磁碟機櫃加電：</block>
+  <block id="6309302d98e4a634b65821ffb59dcafc" category="list-text">等待所有磁碟櫃開機、讓磁碟機開始運轉。</block>
+  <block id="453fd8a2e005a3688cb57a1715403eb8" category="list-text">確保所有機櫃 ID 都是預期值。</block>
+  <block id="43efaf94ccfd1b8ff73ede9310aa0726" category="list-text">檢查磁碟機櫃（前置和後置）上是否有在關機之前不存在的故障指示燈。</block>
+  <block id="9a14737750e117b254a09e3e342bf4d4" category="list-text">開啟控制器電源：</block>
+  <block id="1526ecbd5f3186fd0391bcab851746a6" category="list-text">將每個 PSU 翹板開關轉到「 On 」（開啟）位置（如果適用）。非同一機箱的 HA 配對應同時開機。</block>
+  <block id="4ac3730c7728ff9f397c9c9c30e61398" category="list-text">等待機箱中的控制器開機。</block>
+  <block id="2a966b5531ce1a15adff1f9be922268a" category="list-text">檢查機箱和控制器（前後）上是否有任何故障指示燈。</block>
+  <block id="c908a555fb9bda03518faf090d62b55f" category="list-text">對每個控制器 / 機箱重複上述步驟、直到全部開機為止。</block>
+  <block id="1ace3ad5235525fbfcabf5c9ed71d2c2" category="list-text">透過 SSH 連線至節點的 SP 或 BMC IP 位址。在關機之前、請使用此命令取得 IP 位址：</block>
+  <block id="42bd22c6658be2e7f86763221caaff8d" category="list-text">執行其他系統健全狀況檢查：</block>
+  <block id="6cae41ec99a87022e2ff84639c1c9bc1" category="list-text">解決任何問題<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block></block>
+  <block id="a4e515a78d7900d16a4af3f913b033f7" category="list-text">執行<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block></block>
+  <block id="2d7735678080387bf2714cda931af8cf" category="inline-link">如何使用 ONTAP 中的指令碼執行叢集健全狀況檢查</block>
+  <block id="b13401e632345d1a1c36a42722a9cdd7" category="list-text">如所述檢查系統健全狀況<block ref="8441a6aeb4c8951afc9d3ef26143aa41" category="inline-link-rx"></block></block>
+  <block id="36bc7c68ef7de2e917f4a186a4edaa58" category="list-text">產生維護工作完成 AutoSupport 訊息：</block>
+  <block id="538f577c4284d097aef57681a2acf728" category="paragraph"><block ref="a0502e9e767995ecf84f499d84740634" prefix="" category="inline-code"></block></block>
+  <block id="c779830d2c1a694320dcf49ae503c75a" category="list-text">請確定自動恢復已啟用：</block>
+  <block id="3d2d5e9a2a8cef4225a4bd073c2aeefb" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block></block>
+  <block id="a095b22aaa929c82c4414b8a51e710af" category="doc">關閉控制器 - AFF A900</block>
+  <block id="736a1f9cdd2dabb4a30feb86e55777ad" category="paragraph">25 GbE 纜線（ SFP28 ）</block>
+  <block id="bbeb14c0a41e32ab9190d6fef7d7d2de" category="list-text">使用下圖完成控制器與交換器之間的纜線：</block>
+  <block id="3f90eae06a0fd4fa951102461bc035a2" category="image-alt">DRW C400 TNSC 網路纜線 IEOPS 1095</block>
+  <block id="dc70a7fbe1f21380db9b236898b87503" category="image-alt">DRW C400 交換式網路纜線 IEOPS 1096</block>
+  <block id="2a29b6abc01fa919029a6defab91ed09" category="list-text">使用下圖將控制器連接至單一磁碟機櫃。</block>
+  <block id="cf05a1b835cc522d6ff312818c4655b5" category="image-alt">DRW C400 ONE ns224 機櫃 IEOPS 1097</block>
+  <block id="c8bb212781cb1ea1ac1f2bb19672260b" category="image-alt">DRW C400 兩個 ns224 機櫃 IEOPS 1098</block>
 </blocks>

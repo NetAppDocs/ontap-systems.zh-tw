@@ -1,0 +1,61 @@
+= 
+:allow-uri-read: 
+
+
+更換機箱後、請依下列順序開啟叢集元件的電源：
+
+* 開啟交換器電源
+* 開啟磁碟機櫃電源
+* 開啟控制器電源
+
+
+.步驟
+. 開啟交換器電源：
++
+.. 將每根電源線從 PDU 插回 PSU 。
+.. 將每個 PSU 翹板開關轉到「 On 」（開啟）位置（如果適用）。
+.. 等待交換器開機。
+.. 檢查開關上的任何故障指示燈（前後）。
+.. 透過管理 IP 位址連線至交換器。
+.. 確認交換器健全狀況（如需詳細資訊、請參閱交換器廠商文件）。
+.. 對每個交換器重複上述步驟、直到所有交換器都已開機且正常運作。
+
+
+. 為磁碟機櫃加電：
++
+.. 將每根電源線從 PDU 插回 PSU 。
+.. 將每個 PSU 翹板開關轉到「 On 」（開啟）位置（如果適用）。
+.. 等待所有磁碟櫃開機、讓磁碟機開始運轉。
+.. 確保所有機櫃 ID 都是預期值。
+.. 檢查磁碟機櫃（前置和後置）上是否有在關機之前不存在的故障指示燈。
+
+
+. 開啟控制器電源：
++
+.. 將每根電源線從 PDU 插回 PSU 。
+.. 將每個 PSU 翹板開關轉到「 On 」（開啟）位置（如果適用）。非同一機箱的 HA 配對應同時開機。
+.. 等待機箱中的控制器開機。
+.. 檢查機箱和控制器（前後）上是否有任何故障指示燈。
+.. 對每個控制器 / 機箱重複上述步驟、直到全部開機為止。
+.. 透過 SSH 連線至節點的 SP 或 BMC IP 位址。在關機之前、請使用此命令取得 IP 位址：
++
+`system service-processor show -node * -fields address`
+
+.. 執行其他系統健全狀況檢查：
++
+... 解決任何問題 https://activeiq.netapp.com/["Active IQ 健康警示與風險"]
+... 執行 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]
+... 如所述檢查系統健全狀況 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["如何使用 ONTAP 中的指令碼執行叢集健全狀況檢查"]
+
+
+.. 產生維護工作完成 AutoSupport 訊息：
++
+`system node autosupport invoke -node * -type all -message MAINT=end`
+
+.. 請確定自動恢復已啟用：
++
+`storage failover modify -node local -auto-giveback true`
+
+
+
+
