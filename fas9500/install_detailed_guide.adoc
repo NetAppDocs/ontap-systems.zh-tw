@@ -58,7 +58,9 @@ X66240A-05（112-00639）、0.5公尺
 X66240A-2（112-00598）、2公尺
 
 X66240A-5（112-00600）、5公尺
-| image:../media/oie_cable_sfp_gbe_copper.svg["寬=85px"]  a| 
+ a| 
+image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+ a| 
 網路纜線
 
 
@@ -234,7 +236,6 @@ video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto]
 image::../media/drw_9500_tnsc_network_cabling.svg[DRW 9500-scc網路纜線]
 
 +
-[cols="20%,80%"]
 |===
 | 步驟 | 在每個控制器上執行 
 
@@ -287,10 +288,18 @@ image::../media/oie_legend_icon_4_dr.svg[OIE圖例圖示4災難恢復]
 
 image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 
+
+
+ a| 
+** 將纜線固定在纜線管理臂上（未顯示）。
+** 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。PSU 1 和 3 可為所有 A 側元件提供電力、而 PSU2 和 PSU4 則可為所有 B 側元件提供電力。
+
+ a| 
+image::../media/oie_cable_power.svg[OIE纜線電源]
+
+image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500 電源圖示 IEOPS 1142]
+
 |===
-. 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。
-. 將纜線固定在纜線管理臂上（未顯示）。
-. 若要纜線連接儲存設備、請參閱 <<步驟4：連接磁碟機櫃的纜線控制器>>。
 
 
 --
@@ -316,7 +325,6 @@ video::3ad3f118-8339-4683-865f-ae7c0170400c[panopto]
 image::../media/drw_9500_switched_network_cabling.svg[DRW 9500交換式網路纜線]
 
 +
-[cols="20%,80%"]
 |===
 | 步驟 | 在每個控制器上執行 
 
@@ -369,10 +377,18 @@ image::../media/oie_legend_icon_4_dr.svg[OIE圖例圖示4災難恢復]
 
 image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 
+
+
+ a| 
+** 將纜線固定在纜線管理臂上（未顯示）。
+** 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。PSU 1 和 3 可為所有 A 側元件提供電力、而 PSU2 和 PSU4 則可為所有 B 側元件提供電力。
+
+ a| 
+image::../media/oie_cable_power.svg[OIE纜線電源]
+
+image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500 電源圖示 IEOPS 1142]
+
 |===
-. 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。
-. 將纜線固定在纜線管理臂上（未顯示）。
-. 若要纜線連接儲存設備、請參閱 <<步驟4：連接磁碟機櫃的纜線控制器>>。
 
 
 --
@@ -381,7 +397,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 
 == 步驟4：連接磁碟機櫃的纜線控制器
 
-您必須將機櫃對機櫃連線纜線、然後將兩個控制器纜線連接至DS212C或DS224C磁碟機櫃。
+將 DS212C 或 DS224C 磁碟機櫃連接至控制器。
 
 
 NOTE: 如需更多SAS纜線連接資訊和工作表、請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html["SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃"^]
@@ -432,7 +448,6 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD�
 Mini-SAS纜線
 
 |===
-. 若要完成系統設定、請參閱 <<步驟5：完成系統設定與組態設定>>。
 
 
 
@@ -499,8 +514,7 @@ image::../media/legend_icon_05.svg[圖例圖示05]
 等待10秒鐘、等待黃色LED（！） 如需顯示、請關閉磁碟機櫃電源、然後重新開啟以設定機櫃ID。
 
 |===
-. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
-. 開啟兩個節點的電源開關。
+. 開啟兩個節點的電源供應器上的電源開關。
 +
 .動畫-開啟控制器的電源
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
@@ -632,15 +646,15 @@ image::../media/legend_icon_05.svg[圖例圖示05]
 等待10秒鐘、等待黃色LED（！） 如需顯示、請關閉磁碟機櫃電源、然後重新開啟以設定機櫃ID。
 
 |===
-. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
-. 開啟兩個節點的電源開關。
+. 開啟兩個節點的電源供應器上的電源開關。
 +
 .動畫-開啟控制器的電源
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
 image::../media/drw_9500_power-on.svg[已開啟DRW 9500電源]
 
-+
+
+
 
 NOTE: 初始開機最多可能需要八分鐘。
 
