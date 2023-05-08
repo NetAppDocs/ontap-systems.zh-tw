@@ -4464,10 +4464,6 @@
   <block id="82d42d1069cf2e412bd7e1638573fc7c" category="doc">關閉控制器AFF - FASA700和FAS9000</block>
   <block id="9947bf3b87585d257219268ad5fee4d1" category="section-title">選項1：關閉控制器</block>
   <block id="56eb83c06d36c90e76429cda40aea7ed" category="section-title">選項2：在雙節點MetroCluster 的現象組態中關閉節點</block>
-  <block id="196d51ffdb0655e7b9a918439dedd197" category="summary">所有的SAN陣列系統都使用AFF 與不支援的系統相同的文件。</block>
-  <block id="13d49ffc5303b0e9712a07f256876cfe" category="doc">所有SAN陣列系統</block>
-  <block id="3233979b1af1dce6c734462f3925f9b6" category="paragraph">您可以AFF 搭配ASA 使用您的不適用功能的系統來使用此功能。有關的資訊適用於相應的功能表系統。AFF ASA例如AFF 、所有的纜線和其他有關的資訊、也適用於ASA AFF 該系統。</block>
-  <block id="979662532995c78363ce0af9f042dd14" category="inline-link">所有SAN陣列軟體組態</block>
   <block id="0a3c10475b565c5c41bceed53441082c" category="doc">更換NVMEM電池- FAS8200</block>
   <block id="2e28e3989e39096fb5b13cdfa91ad165" category="paragraph">繼續下一步。無需採取任何行動。您已完成系統層級的診斷。</block>
   <block id="d0df344784eb5147448a19da06257cbe" category="doc">還原並驗證系統組態- FAS8200</block>
@@ -4866,15 +4862,6 @@
   <block id="9cd2ad15fd6e17e2089c3e6d267284e8" category="paragraph"><block ref="9cd2ad15fd6e17e2089c3e6d267284e8" category="inline-link-rx"></block></block>
   <block id="64ade082ee5f7cc92e1fcf2264b98814" category="summary">您可以使用這些連結來尋找其他AFF 的參考資料和FAS 參考資料系統。</block>
   <block id="ad451e1c6a6a584f53b88b5c73144db7" category="doc">其他機型</block>
-  <block id="7a31198e87ee2c9071d7bf63050a7088" category="section-title">機櫃機型</block>
-  <block id="dc562a84ed096c677cedf44a7c5df0bf" category="inline-link-macro">DS2246磁碟櫃文件</block>
-  <block id="dd26152c70d312482c21516c3889b669" category="paragraph"><block ref="dd26152c70d312482c21516c3889b669" category="inline-link-macro-rx"></block></block>
-  <block id="06df42750628898d4d9028ca8a299fb0" category="inline-link-macro">DS4486磁碟櫃文件</block>
-  <block id="025a6ebf2f90d8d6fbcf8bb51f3af731" category="paragraph"><block ref="025a6ebf2f90d8d6fbcf8bb51f3af731" category="inline-link-macro-rx"></block></block>
-  <block id="8e01fff6c6332a20292ce54b07e7f4a5" category="inline-link-macro">DS4246磁碟櫃文件</block>
-  <block id="2a8c61005de5c4642cb8dbeba1544811" category="paragraph"><block ref="2a8c61005de5c4642cb8dbeba1544811" category="inline-link-macro-rx"></block></block>
-  <block id="97bf953b242f5f98851629db59e82601" category="inline-link-macro">DS4243磁碟櫃文件</block>
-  <block id="b6d30e3dcd0ba2af54c33b3685aa4429" category="paragraph"><block ref="b42da6ebf9625c910c5d3ba150b439e5" category="inline-link-macro-rx"></block></block>
   <block id="b7605bcb79eb6de60b5238953bb38de0" category="doc">還原並驗證系統組態AFF -還原A320</block>
   <block id="eecf2afb777f2d08f0782bcfec411163" category="list-text">從顯示的功能表中選取*測試系統*以執行診斷測試。</block>
   <block id="673cd659241b9c20f1622a9308a4ba1d" category="list-text">從各種子功能表中選取測試或一系列測試。</block>
@@ -6994,7 +6981,6 @@
   <block id="a3fad5983ba1f7c61a46ffcf74ea359a" category="video-title">動畫- FAS8300和FAS8700安裝與設定說明</block>
   <block id="89f7a66402ba80464b2d8b21ad48be2c" category="video-title">動畫-將控制器連接至一個NS224磁碟機櫃</block>
   <block id="63f87aaa5f633e2ee952b199ae093a26" category="video-title">動畫-從更換的控制器模組中移除空的擴充卡</block>
-  <block id="91bfce3375290d3731ff240e35f162fd" category="paragraph"><block ref="91bfce3375290d3731ff240e35f162fd" category="inline-link-rx"></block></block>
   <block id="44de44e43d612d76f985580ff643993b" category="video-title">動畫- FAS500f的安裝與設定</block>
   <block id="35ad2589af7e420c375f4ec321cc850b" category="list-text">輸入下列命令清除狀態記錄：「ldiag」裝置的清除狀態[-dev_devtype_|MB| slotslotnum]</block>
   <block id="d94c06e259f5d258e151a2fafa975b4a" category="list-text">輸入下列命令、確認記錄已清除：「ldiag」裝置狀態（-dev_devtype_|MB| slotslotnum]）</block>
@@ -7535,7 +7521,6 @@
   <block id="71e3f3adc231b164f4f0837d133f2bc6" category="paragraph">若儲存系統未設定MetroCluster 於功能性組態中、請使用下列工作流程來部署儲存系統。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="1488c7c37653a45223ebecdfabcefa04" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝AFF/FAS控制器</block>
-  <block id="edc4a76e22711e26f2e103a32108feb0" category="paragraph">在機架或機櫃中安裝AFF/FAS控制器。存取AFF/FAS平台機型的安裝與設定說明。</block>
   <block id="8e4eec704f9a8706e1a3cf96accb2c17" category="list-text"><block ref="8e4eec704f9a8706e1a3cf96accb2c17" category="inline-link-rx"></block></block>
   <block id="564ec135f22614fd51e7ace4addc3c82" category="list-text"><block ref="564ec135f22614fd51e7ace4addc3c82" category="inline-link-rx"></block></block>
   <block id="5173935e91aef44c51b8afd57f32f13f" category="list-text"><block ref="5173935e91aef44c51b8afd57f32f13f" category="inline-link-rx"></block></block>
@@ -7601,7 +7586,6 @@
   <block id="09ebf9105e3a0e85568481422cb709d1" category="list-text"><block ref="09ebf9105e3a0e85568481422cb709d1" category="inline-link-macro-rx"></block></block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
   <block id="aea7345148c1589735242fc13ad81924" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 完成系統設定</block>
-  <block id="8a19d1619bb8803d8a6b5d21556d87ad" category="paragraph">設定交換器並安裝所需軟體之後、請存取AFF/FAS平台機型的安裝與設定指示、以完成系統設定。</block>
   <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
   <block id="8f5988d6d5abedb5da92f0fcbc79872d" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 完整ONTAP 的功能組態</block>
   <block id="f0a39bebe9f0d59f6fc97c14de8b2a1a" category="paragraph">安裝並設定AFF/FAS控制器和交換器之後、您必須完成ONTAP 在VMware中設定儲存設備。根據部署組態存取下列指示。</block>
@@ -7874,4 +7858,22 @@
   <block id="ac4fc8e93ed87aaf0d607c7594b760df" category="open-title">選項 2 ：將控制器連接至兩個 NS224 磁碟機櫃</block>
   <block id="eab02c161618f87134d04b274c9ed0a9" category="image-alt">DRW A900 NS224 線上藝術雙機櫃纜線 IEOPS 1147</block>
   <block id="93d4151426ee3e46d52580ae98128972" category="list-text">使用您在中收集的資料來設定系統<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block></block>
+  <block id="6129b7ac1ccc31146cb5299a148a51de" category="summary">若要使用 AFF 、 FAS 和 ASA 系統開始運作、請在 ONTAP 中安裝硬體元件、設定交換器和設定儲存設備。</block>
+  <block id="6d311090c29c1da16c7810703948cbe1" category="paragraph">在機架或機櫃中安裝AFF/FAS控制器。存取 AFF/FAS 平台機型的安裝與設定指示。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。</block>
+  <block id="a6857db3b19fb4b9bb2a3b1cad9a31f1" category="list-text"><block ref="a6857db3b19fb4b9bb2a3b1cad9a31f1" category="inline-link-rx"></block></block>
+  <block id="90a9e7415b88be6a0d94cebc7d4a7a57" category="list-text"><block ref="90a9e7415b88be6a0d94cebc7d4a7a57" category="inline-link-rx"></block></block>
+  <block id="7f5c0eb40943093a2da99c8caf6992b7" category="list-text"><block ref="7f5c0eb40943093a2da99c8caf6992b7" category="inline-link-rx"></block></block>
+  <block id="e7d43e43255aab7a6db982e220c4d532" category="paragraph">設定交換器並安裝所需軟體之後、請存取AFF/FAS平台機型的安裝與設定指示、以完成系統設定。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。</block>
+  <block id="17732d64911b83c1ef019e7ce301df3a" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA 系統。</block>
+  <block id="229bebba45d7b570f882b8783f74558a" category="doc">所有 SAN 陣列（ ASA ）系統</block>
+  <block id="3b062372339f68dd096ab95e8fe7ab07" category="sidebar">NetApp 的 All SAN Array （ ASA ）提供簡化且專屬的 SAN 體驗、可為貴組織的關鍵任務資料庫和其他 SAN 工作負載提供持續的資料可用度。所有的SAN陣列系統都使用AFF 與不支援的系統相同的文件。若要安裝及維護 ASA 系統、請使用對應 AFF 機型的說明。</block>
+  <block id="81bbbcbe6f96a1f4b6df7eeba9ab4c17" category="sidebar">ASA AFF 系統</block>
+  <block id="2ce90a39656cd7489bede7894c2a9943" category="sidebar">ASA AFF A250</block>
+  <block id="b5efaabac2b0776c5f0ca29587d418e4" category="sidebar">ASA AFF A400</block>
+  <block id="dbcea936b7738470872ff3cbf35ec7c3" category="sidebar">ASA AFF A700</block>
+  <block id="7ddb32a2b45e07e265f9e454f57d2eb0" category="sidebar">ASA AFF A800</block>
+  <block id="27562113eba41d0820398afd585cb267" category="sidebar">ASA 軟體組態</block>
+  <block id="ff529c4d04327f7d20ae4d7b457bcd18" category="sidebar">ASA 資料表</block>
+  <block id="30975d9ae55d85636f78d9b3e459df73" category="sidebar">ASA 解決方案簡介</block>
+  <block id="6c713e33f81bfdf294d75a585966fd05" category="sidebar">ASA 技術報告</block>
 </blocks>
