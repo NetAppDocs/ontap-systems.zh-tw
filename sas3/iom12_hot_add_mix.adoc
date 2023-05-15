@@ -39,19 +39,19 @@ NOTE: 如需橋接式MetroCluster 附加的功能、請參閱 <<橋接式MetroCl
 
 ** 移至Hardware Universe 「不完整」並瀏覽至您的平台資訊。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://["NetApp Hardware Universe"]
 
 
 
 * 如果您要將機櫃新增MetroCluster 至某個架構、則組態必須符合MetroCluster 《安裝與組態指南》中的所有要求。
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-ip/home.html["《英文網頁IP安裝與組態指南》MetroCluster"]
+http://["《英文網頁IP安裝與組態指南》MetroCluster"]
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-stretch/home.html["《》《9 Stretch《安裝與組態指南》ONTAP MetroCluster"]
+http://["《》《9 Stretch《安裝與組態指南》ONTAP MetroCluster"]
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-fabric/home.html["《支援架構的不完整安裝與組態指南》（英文）ONTAP MetroCluster"]
+http://["《支援架構的不完整安裝與組態指南》（英文）ONTAP MetroCluster"]
 
 * IOM6磁碟櫃堆疊（您要將IOM12磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。
 +
@@ -66,14 +66,14 @@ NOTE: 如果IOM6機櫃堆疊是以任何SAS光纖纜線連接、則無法熱新�
 熱新增IOM12/IOM12B磁碟櫃之後、您無法超過系統支援的磁碟機數量上限。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://["NetApp Hardware Universe"]
 
 * 您的系統無法顯示任何SAS纜線錯誤訊息。
 +
 您必須使用錯誤訊息所提供的修正動作來修正任何纜線錯誤。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://["NetApp下載Config Advisor"]
 
 * 您必須訂購並收到IOM12/IOM12B磁碟櫃、以及適當數量和類型的SAS銅線。
 +
@@ -105,16 +105,16 @@ IOM12磁碟櫃使用Mini-SAS HD連接器。IOM6磁碟櫃使用QSFP連接器。
 
 ** 移至Hardware Universe 「不完整」並瀏覽至您的平台資訊。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://["NetApp Hardware Universe"]
 
 
 
 * 組態必須符合MetroCluster 《不完整安裝與組態指南》中的所有要求。
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html["安裝及設定Stretch MetroCluster 的需求擴充組態"]
+https://["安裝及設定Stretch MetroCluster 的需求擴充組態"]
 
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html["安裝及設定架構附加MetroCluster 的功能性更新組態"]
+https://["安裝及設定架構附加MetroCluster 的功能性更新組態"]
 
 * IOM6磁碟櫃堆疊（您要將IOM12/IOM12B磁碟櫃熱新增至其中）必須以SAS銅線纜線（適用於所有磁碟櫃對磁碟櫃和控制器對堆疊連線）連接。
 +
@@ -176,10 +176,10 @@ NOTE: 韌體更新最多可能需要30分鐘。
 
 * *最佳實務做法：*最佳實務做法是在熱新增機櫃之前、先在系統上安裝最新版本的機櫃（IOM）韌體和磁碟機韌體。
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
+https://["NetApp下載：磁碟櫃韌體"]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
+https://["NetApp下載：磁碟機韌體"]
 
 
 
@@ -191,14 +191,14 @@ NOTE: 請勿將韌體還原至不支援機櫃及其元件的版本。
 安裝最新版的DQP可讓您的系統辨識及使用新的合格磁碟機。如此可避免系統事件訊息、因為無法辨識磁碟機、因此無法取得非最新的磁碟機資訊並防止磁碟分割。此外、DQP也會通知您非最新的磁碟機韌體。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["NetApp下載：磁碟認證套件"^]
+https://["NetApp下載：磁碟認證套件"^]
 
 * *最佳實務做法：*最佳實務做法是Active IQ Config Advisor 在熱新增機櫃之前和之後執行
 +
 在Active IQ Config Advisor 熱新增機櫃之前執行功能支援提供現有SAS連線的快照、驗證機櫃（IOM）韌體版本、並可讓您驗證系統上已使用的機櫃ID。熱新增機櫃後執行Active IQ Config Advisor 的功能可讓您驗證機櫃的纜線是否正確、以及系統內的機櫃ID是否獨特。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://["NetApp下載Config Advisor"]
 
 * *最佳實務做法：*最佳實務做法是在您的系統上執行頻內ACP（IBACP）。
 +
@@ -209,7 +209,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 ** 如果您的系統未執行IBACP、且您的系統符合IBACP的要求、則您可以在熱新增IOM12機櫃之前、將系統移轉至IBACP。
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Systems/FAS_Systems/In-Band_ACP_Setup_and_Support["移轉至IBACP的說明"]
+https://["移轉至IBACP的說明"]
 
 +
 
@@ -369,7 +369,7 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 
 . 如有需要、請執行Active IQ Config Advisor 功能以驗證已在使用中的機櫃ID。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://["NetApp下載Config Advisor"]
 
 +
 您也可以執行「shorage sh家show -Fields sh家ID」命令、查看系統中已使用的機櫃ID清單（如果有的話、也可以複製）。
@@ -626,7 +626,7 @@ NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長�
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://["NetApp下載Config Advisor"]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +

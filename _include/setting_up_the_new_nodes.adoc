@@ -56,14 +56,14 @@ DHCP
  a| 
 * FAS2200、FAS2500、FAS3200、FAS6200、FAS/AFF8000系列系統*
  a| 
-按鍵+ netboot http://web_server_ip/path_to_web-accessible_directory/netboot/kernel+`[]
+按鍵+ netboot http://[]
 
 
 
  a| 
 *所有其他系統*
  a| 
-按鍵+ netboot http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+`[]
+按鍵+ netboot http://[]
 
 |===
 +
@@ -97,10 +97,10 @@ The node must be rebooted to start using the newly installed software. Do you wa
 . 從開機功能表中、選取*（5）維護模式開機*以存取維護模式。
 . 如有必要、請變更節點上的FC或CNA連接埠、然後將節點重新開機至維護模式。
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["《SAN管理指南》（英文）ONTAP"]
+http://["《SAN管理指南》（英文）ONTAP"]
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30092["尋找Data ONTAP 適用您版本的《SAN管理指南》（SAN Administration Guide）"]
+http://["尋找Data ONTAP 適用您版本的《SAN管理指南》（SAN Administration Guide）"]
 
 . 您應該確認命令輸出顯示為ha:
 +
@@ -117,10 +117,10 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30
 ha-config modify控制器ha命令會將ha設定為控制器設定。ha-config modify機箱ha命令會針對機箱設定來設定ha。
 
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html["《供應能力設定指南》（英文）ONTAP"]
+http://["《供應能力設定指南》（英文）ONTAP"]
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30092["尋找Data ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
+http://["尋找Data ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
 
 . 退出維護模式：「halt」
 +

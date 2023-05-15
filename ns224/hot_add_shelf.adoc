@@ -21,11 +21,11 @@ summary: 當HA配對符合特定需求、且已完成適用於HA配對的準備�
 
 * 您的平台模式和ONTAP 版本的支援必須支援NS224機櫃和熱新增的磁碟機。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 * 您必須擁有正確的纜線數量和類型、才能連接機櫃。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 * 您的HA配對必須有足夠的可用具備RoCE功能的連接埠、才能支援熱新增的磁碟櫃數量。
 +
@@ -35,7 +35,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 如果您的HA配對沒有足夠可用的RoCE連接埠、而且您的平台機型支援使用具備RoCE功能的PCIe卡或I/O模組、則您必須將額外的卡或I/O模組安裝到正確的控制器插槽中、如同您的平台機型所支援。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 +
 [NOTE]
@@ -54,14 +54,14 @@ link:../fas9000/caching-module-and-core-dump-module-replace.html["更換快取�
 在熱新增磁碟櫃之後、您無法超過HA配對所支援的磁碟櫃數量上限。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 * 如果要將機櫃熱新增至已有NS224機櫃的HA配對、HA配對就不會出現任何儲存設備纜線錯誤訊息、而且必須以多重路徑HA的纜線連接。
 +
 您可以執行Active IQ Config Advisor 功能不全、以檢視任何儲存設備佈線錯誤訊息、以及您應採取的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 * 您需要一側拉直的迴紋針或一支細尖端的圓球筆。
 +
@@ -81,21 +81,21 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 安裝最新版的DQP可讓您的系統辨識及使用新的合格磁碟機。如此可避免系統事件訊息、因為無法辨識磁碟機、因此無法取得非最新的磁碟機資訊並防止磁碟分割。此外、DQP也會通知您非最新的磁碟機韌體。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["NetApp下載：磁碟認證套件"^]
+https://["NetApp下載：磁碟認證套件"^]
 
 * *最佳實務做法：*最佳實務做法是Active IQ Config Advisor 在熱新增機櫃之前和之後執行
 +
 在Active IQ Config Advisor 熱新增機櫃之前執行支援功能可提供現有機櫃乙太網路（ENET）連線的快照、驗證NVMe機櫃模組（NSM）韌體版本、並可讓您驗證HA配對中已使用的機櫃ID。在熱新增機櫃之後執行Active IQ Config Advisor 功能、可讓您驗證機櫃的纜線是否正確、以及HA配對內的機櫃ID是否獨特。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 * *最佳實務做法：*最佳實務做法是在新增磁碟櫃之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
+https://["NetApp下載：磁碟櫃韌體"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
+https://["NetApp下載：磁碟機韌體"^]
 
 +
 
@@ -350,7 +350,7 @@ C400 HA配對AFF
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 
 
@@ -560,7 +560,7 @@ image::../media/drw_ns224_a900_4shelves.png[DRw n224 a900 4個機櫃]
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://["NetApp下載Config Advisor"]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +
@@ -612,7 +612,7 @@ image::../media/drw_ns224_a250_c250_f500f_1shelf_IEOPS-963.svg[網路瀏覽器�
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +
@@ -713,7 +713,7 @@ image::../media/drw_ns224_a700_2shelves.png[新南224 a700 2個磁碟櫃]
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +
@@ -818,7 +818,7 @@ image::../media/drw_ns224_a800_c800_2shelves_IEOPS-966.svg[新南威爾斯224 a8
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +
@@ -909,7 +909,7 @@ image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[DRw n224 a400 2個機櫃IE
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +
@@ -1000,7 +1000,7 @@ image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[DRw n224 c400 2個機櫃IE
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +
@@ -1052,7 +1052,7 @@ image::../media/drw_ns224_a320_2shelves_direct_attached.png[直接附加於DRw n
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^]
+https://["NetApp下載Config Advisor"^]
 
 . 如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。
 +

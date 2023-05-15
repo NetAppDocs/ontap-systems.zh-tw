@@ -21,7 +21,7 @@ summary:
 
 .步驟
 . 重新安裝系統。
-. 使用確認纜線正確無誤 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
+. 使用確認纜線正確無誤 https://["Active IQ Config Advisor"^]。
 +
 .. 下載並安裝Config Advisor 此功能。
 .. 輸入目標系統的資訊、然後按一下「Collect Data（收集資料）」。
@@ -75,8 +75,8 @@ node2             node1             -            Waiting for giveback (HA mailbo
 
 . 如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+** https://["還原內建金鑰管理加密金鑰"^]
+** https://["還原外部金鑰管理加密金鑰"^]
 
 
 . 回饋節點：
@@ -93,7 +93,7 @@ _replacy_nodes將恢復其儲存設備並完成開機。
 NOTE: 如果被否決、您可以考慮覆寫否決。
 
 +
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動恢復命令"^] 取代否決的主題。
+如需詳細資訊、請參閱 https://["手動恢復命令"^] 取代否決的主題。
 
 .. 完成恢復後、請確認HA配對正常、而且可以接管：顯示儲存容錯移轉
 +
@@ -130,7 +130,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 ** 此功能組態處於切換狀態。MetroCluster
 ** _replacement節點是災難站台上磁碟的目前擁有者。
 +
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"^] 主題：
+如需詳細資訊、請參閱 https://["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"^] 主題：
 
 
 

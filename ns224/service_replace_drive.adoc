@@ -16,14 +16,14 @@ summary: 您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、
 .開始之前
 * 您要安裝的磁碟機必須由NS224機櫃支援。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
 * 如果已啟用SED驗證、您必須使用ONTAP 本文檔中的SED替換說明。
 +
 本白皮書中的說明ONTAP 說明說明更換SED之前和之後、您必須執行的其他步驟。
 
 +
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密概述"^]
+https://["使用CLI進行NetApp加密概述"^]
 
 * 系統中的所有其他元件都必須正常運作；如果無法正常運作、請聯絡技術支援部門。
 * 驗證您要移除的磁碟機是否故障。
@@ -42,14 +42,14 @@ NOTE: 視磁碟機類型和容量而定、磁碟機可能需要數小時才會�
 安裝最新版的DQP可讓您的系統辨識及使用新的合格磁碟機。如此可避免系統事件訊息、因為無法辨識磁碟機、因此無法取得非最新的磁碟機資訊並防止磁碟分割。此外、DQP也會通知您非最新的磁碟機韌體。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["NetApp下載：磁碟認證套件"^]
+https://["NetApp下載：磁碟認證套件"^]
 
 * *最佳實務做法：*最佳實務做法是在更換FRU元件之前、先在系統上安裝最新版本的NVMe機櫃模組（NSM）韌體和磁碟機韌體。
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
+https://["NetApp下載：磁碟櫃韌體"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
+https://["NetApp下載：磁碟機韌體"^]
 
 +
 [NOTE]
@@ -71,7 +71,7 @@ NOTE: 每兩分鐘檢查一次磁碟機韌體。
 
 * 打開更換磁碟機的包裝時、請保留所有包裝材料、以便在退回故障磁碟機時使用。
 +
-如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
+如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門： https://["NetApp支援"^]電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
 
 * 以下動畫概述了磁碟機熱交換程序的實體移除與插入部分。
 +

@@ -15,7 +15,7 @@ summary: 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版�
 
 * 所有磁碟機櫃都必須正常運作。
 * 如果您的系統是HA配對、健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
-* 如果您的系統採用MetroCluster 不必要的組態、您必須檢閱一節 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"] 判斷您是否應該使用此程序。
+* 如果您的系統採用MetroCluster 不必要的組態、您必須檢閱一節 https://["選擇正確的恢復程序"] 判斷您是否應該使用此程序。
 +
 如果您應該使用這項程序、請注意、四或八個節點MetroCluster 的不一致組態中控制器的控制器更換程序與HA配對相同。不需要使用MetroCluster特定步驟、因為故障僅限於HA配對、而儲存容錯移轉命令可在更換期間提供不中斷營運的操作。
 
@@ -29,7 +29,7 @@ summary: 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版�
 * 在此程序中、開機裝置會從受損的控制器移至_replaced_控制器、以便以ONTAP 與舊控制器模組相同的版本進行_replaced_控制器開機。
 * 更換控制器模組必須支援從舊控制器模組移至新控制器模組或從現有客戶站台庫存新增的任何PCIe卡。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://["NetApp Hardware Universe"]
 
 * 請務必在正確的系統上套用這些步驟中的命令：
 +

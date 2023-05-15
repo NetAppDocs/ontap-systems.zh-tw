@@ -18,7 +18,7 @@ summary: 您必須在系統中移除一或多個現有的NIC或儲存模組、�
 * 如果您要將X91148A模組新增為儲存介面卡、則必須將模組安裝在插槽3和/或7中。
 * 如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想將這些插槽用作網路插槽、但不想新增NS224磁碟櫃、則必須針對每個連接埠、使用「儲存連接埠修改-node_node name_-port _port name_-mode network」命令來修改用於網路的插槽。如Hardware Universe 需X91148A模組可用於網路的其他插槽、請參閱《支援資料：
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://["NetApp Hardware Universe"]
 
 * 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
 
@@ -30,7 +30,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"]
 您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A NIC模組安裝到已完全安裝的系統中。
 
 .步驟
-. 如果您要將X91148A模組新增至包含NIC模組的插槽、且其連接埠數量與X91148A模組相同、則當控制器模組關閉時、LIF會自動移轉。如果要更換的NIC模組連接埠數量超過X91148A模組、您必須將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"] 如需使用System Manager永久移動生命期的相關資訊
+. 如果您要將X91148A模組新增至包含NIC模組的插槽、且其連接埠數量與X91148A模組相同、則當控制器模組關閉時、LIF會自動移轉。如果要更換的NIC模組連接埠數量超過X91148A模組、您必須將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://["移轉LIF"] 如需使用System Manager永久移動生命期的相關資訊
 . 關閉控制器A：
 +
 .. 停用自動恢復：「儲存容錯移轉修改節點本機-自動恢復錯誤」
@@ -104,7 +104,7 @@ I/O CAM栓鎖完全解除鎖定
 
 
 .步驟
-. 如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"]。
+. 如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述 https://["移轉LIF"]。
 . 關閉控制器A：
 +
 .. 停用自動恢復：「儲存容錯移轉修改節點本機-自動恢復錯誤」
@@ -164,5 +164,5 @@ I/O CAM栓鎖完全解除鎖定
 . 從合作夥伴節點恢復節點：「torage容錯移轉恢復-ofnode_target節點名稱_」
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 對控制器B重複這些步驟
-. 如所述、安裝並連接NS224磁碟櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"]。
+. 如所述、安裝並連接NS224磁碟櫃 https://["熱新增NS224磁碟機櫃"]。
 

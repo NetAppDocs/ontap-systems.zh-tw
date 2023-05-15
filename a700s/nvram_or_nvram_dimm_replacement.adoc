@@ -74,7 +74,7 @@ summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVR
 +
 ** 如果您使用NetApp儲存加密、則必須依照《NetApp ONTAP 加密電源指南》_的「將SED恢復為未受保護模式」一節中的指示、重設MSID。
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]
+https://["《NetApp加密電源指南》（英文）ONTAP"]
 
 
 
@@ -342,7 +342,7 @@ _replacement控制器會恢復其儲存設備並完成開機。
 NOTE: 如果被否決、您可以考慮覆寫否決。
 
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
+http://["尋找ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
 
 .. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
 +
@@ -383,8 +383,8 @@ NOTE: 更換DIMM時不需要執行此步驟。
 .步驟
 . 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
 +
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
+** https://["還原內建金鑰管理加密金鑰"^]
+** https://["還原外部金鑰管理加密金鑰"^]
 
 
 . 重設SED MSID
@@ -394,4 +394,4 @@ NOTE: 更換DIMM時不需要執行此步驟。
 
 == 步驟7：將故障零件歸還給NetApp
 
-如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://["產品退貨安培；更換"] 頁面以取得更多資訊。
