@@ -6227,7 +6227,6 @@
   <block id="a301eceb20e1d3480375d34e6dfa1274" category="sidebar">NetApp AFF 的功能完善、FAS 功能完善的資料管理系統、提供領先業界的企業級橫向擴充All Flash或混合式儲存設備。請使用本網站上的文件來安裝、擴充、升級及維護AFF 您的各種版本、包括您的各種版本、FAS 包括您的各種版本。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="sidebar">發行說明 ONTAP</block>
-  <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">系統AFF</block>
   <block id="4fbc8445e0d6cdbbc8011982cd328f69" category="sidebar">解答200 AFF</block>
   <block id="8fd3ca5f66dff5be16e79560dd28171e" category="sidebar">VA220 AFF</block>
   <block id="68b23d3f7da36f1f08be0727f515bcb1" category="sidebar">VA250 AFF</block>
@@ -7536,20 +7535,16 @@
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="d130f1dd19e93aaf9701cc968056061f" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 安裝交換器硬體</block>
   <block id="26d2e0bd267361cc8916e7e16faebcbb" category="paragraph">將交換器安裝在機架或機櫃中。請參閱下列交換器機型的指示。</block>
-  <block id="f267a68fd1c8bddcc992701898021398" category="list-title">叢集交換器</block>
   <block id="8821c03ea98d1edaf4b4b82c0aaf59dc" category="inline-link-macro">安裝BS-53248交換器</block>
   <block id="9000e67500cb5e61bcd3ec702237913b" category="list-text"><block ref="9000e67500cb5e61bcd3ec702237913b" category="inline-link-macro-rx"></block></block>
   <block id="f4f4adc3268a66380dfdff9b1a20bc7b" category="inline-link-macro">安裝Cisco Nexus 9336C-FX2交換器</block>
   <block id="ecdf11290d1440e9c1a6d4b9666ad878" category="list-text"><block ref="ecdf11290d1440e9c1a6d4b9666ad878" category="inline-link-macro-rx"></block></block>
   <block id="66e51b9ff1adb3e615b49ae8223869a4" category="inline-link-macro">安裝NVIDIA SN2100交換器</block>
   <block id="459378c7b38e766a9c40673dc6b7d6b6" category="list-text"><block ref="459378c7b38e766a9c40673dc6b7d6b6" category="inline-link-macro-rx"></block></block>
-  <block id="403284bd44beda112195a484c8a76421" category="list-title">儲存交換器</block>
   <block id="75ddd4263ff912af7be6b34b846062ec" category="list-text"><block ref="75ddd4263ff912af7be6b34b846062ec" category="inline-link-macro-rx"></block></block>
   <block id="617820a8b836e10d6f5146fc0f043112" category="list-text"><block ref="617820a8b836e10d6f5146fc0f043112" category="inline-link-macro-rx"></block></block>
-  <block id="bc8a2cd252a5beb1dbf4f209baea67eb" category="list-title">共享交換器</block>
   <block id="5e56acfb152f096818349fa67202b6f7" category="list-text"><block ref="5e56acfb152f096818349fa67202b6f7" category="inline-link-macro-rx"></block></block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="a4ae5d0bd4e47ba267a8df1ceee51985" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>將交換器連接至控制器</block>
   <block id="427748ed6a44d0d6126050507a461881" category="paragraph">AFF/FAS安裝與設定說明包括將控制器連接埠連接至交換器的纜線。不過、如果您需要支援的纜線和收發器清單、以及交換器主機連接埠的詳細資訊、請針對您的交換器機型存取下列指示。</block>
   <block id="497781401f115451ecac27f7f2933cb3" category="inline-link-macro">連接BS-53248交換器</block>
   <block id="4762b908167d7cdf9e4a1c2789f3dc25" category="list-text"><block ref="4762b908167d7cdf9e4a1c2789f3dc25" category="inline-link-macro-rx"></block></block>
@@ -7859,7 +7854,6 @@
   <block id="eab02c161618f87134d04b274c9ed0a9" category="image-alt">DRW A900 NS224 線上藝術雙機櫃纜線 IEOPS 1147</block>
   <block id="93d4151426ee3e46d52580ae98128972" category="list-text">使用您在中收集的資料來設定系統<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block></block>
   <block id="6129b7ac1ccc31146cb5299a148a51de" category="summary">若要使用 AFF 、 FAS 和 ASA 系統開始運作、請在 ONTAP 中安裝硬體元件、設定交換器和設定儲存設備。</block>
-  <block id="6d311090c29c1da16c7810703948cbe1" category="paragraph">在機架或機櫃中安裝AFF/FAS控制器。存取 AFF/FAS 平台機型的安裝與設定指示。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。</block>
   <block id="a6857db3b19fb4b9bb2a3b1cad9a31f1" category="list-text"><block ref="a6857db3b19fb4b9bb2a3b1cad9a31f1" category="inline-link-rx"></block></block>
   <block id="90a9e7415b88be6a0d94cebc7d4a7a57" category="list-text"><block ref="90a9e7415b88be6a0d94cebc7d4a7a57" category="inline-link-rx"></block></block>
   <block id="7f5c0eb40943093a2da99c8caf6992b7" category="list-text"><block ref="7f5c0eb40943093a2da99c8caf6992b7" category="inline-link-rx"></block></block>
@@ -7877,4 +7871,13 @@
   <block id="30975d9ae55d85636f78d9b3e459df73" category="sidebar">ASA 解決方案簡介</block>
   <block id="6c713e33f81bfdf294d75a585966fd05" category="sidebar">ASA 技術報告</block>
   <block id="b47e2ddbcc7bf8a413f11a740b83ad50" category="sidebar">FAS 系統資料表</block>
+  <block id="05a183c8bc1fc9522f554a0dcc45645f" category="paragraph">在機架或機櫃中安裝AFF/FAS控制器。存取AFF/FAS平台機型的安裝與設定說明。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。</block>
+  <block id="7877fbd25ecba999ab0a739fe29df547" category="paragraph">** AFF A 系列系統 **</block>
+  <block id="999865050c05a9851fa1100ea708f735" category="paragraph">** AFF C 系列系統 **</block>
+  <block id="fb4b827f429720ceefe590267f9978cf" category="paragraph">** FAS 系統 **</block>
+  <block id="6eeacbfb54f0dd2b69ca25ccf7e621e3" category="paragraph">** 叢集交換器 **</block>
+  <block id="05d287d05ed5025354b8f6c796c87491" category="paragraph">** 儲存交換器 **</block>
+  <block id="aca0ddc3769e84e478caff604ad14594" category="paragraph">** 共享交換器 **</block>
+  <block id="4f4f401ca3cb71c1eacaf052eac321fb" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 將交換器連接至控制器</block>
+  <block id="93a86d433d6f98e9a80d74b972237ee6" category="paragraph">** AFF 系統 **</block>
 </blocks>
