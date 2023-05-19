@@ -5282,7 +5282,6 @@
   <block id="54cd26f163d61b3be602eb785ab0a241" category="doc">控制器模組更換總覽- AFF C190</block>
   <block id="4ee2fc05d2faa1f333113817a90809f4" category="summary">本節將詳細說明如何安裝AFF 一套功能完善的系統。</block>
   <block id="25cf65ddd80144b70d3dac5fc3efd292" category="doc">詳細步驟- AFF C190</block>
-  <block id="537180ccf440446ad8816ed356c6cee9" category="paragraph">若要安裝AFF 您的SolidC190系統、您需要建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
   <block id="94c14a3a3429ee874d19f598eabeb841" category="inline-link-macro">版本的發行說明ONTAP</block>
   <block id="3ad26beab00b6ba09b9cf5af096d7c99" category="paragraph">您必須能夠存取 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （HWU）以取得站台需求的相關資訊、以及設定系統的其他資訊。您可能也想要存取 <block ref="515d1814cb0f36c56a64a6574d93c9df" category="inline-link-macro-rx"></block> 以取得此系統的詳細資訊。</block>
   <block id="74215317310e6608b7efcf980bd23ce9" category="list-text">註冊（<block ref="3ae584b0f28c11edd6df40135d81b8ba" category="inline-link-macro-rx"></block>）您的系統。</block>
@@ -5294,26 +5293,13 @@
   <block id="fea037cb34a319bd3b823395ee5fdd07" category="paragraph">SFP + FC主機網路</block>
   <block id="490cb76fd3c75ff8166e251d789f799e" category="paragraph">乙太網路主機與管理網路</block>
   <block id="9cce7e4c2aef0e645d2e38ae612c4ed8" category="list-text">下載並完成 <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block>。</block>
-  <block id="bb4dc882830ed15ff271077443be872e" category="section-title">選項1：連接雙節點無交換式叢集的纜線、統一化組態</block>
-  <block id="b2566b1f021e42ed3c97e4c8d5548f0d" category="paragraph">控制器模組上的UTA2連接埠和管理連接埠會連接至交換器。兩個控制器模組上的叢集互連連接埠均已連接好纜線。</block>
   <block id="9c5bcb67e10ffb465deabdb27ded4b10" category="paragraph">如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。</block>
   <block id="fcca883f68c4e92b98d0f294614cda60" category="admonition">如果連接至光纖交換器、請先將SFP插入控制器連接埠、再將纜線連接至連接埠。</block>
-  <block id="099a72df2bea2f81469ee9e97fc608df" category="list-text">請使用圖例或逐步說明完成控制器與交換器之間的佈線：</block>
   <block id="73da34bccb5db786798534ea5b6eb1d6" category="image-alt">DRW C190 tnscc統一化網路纜線動畫Gif</block>
-  <block id="6ed1027d1da4974a15118c7e8afd7bd8" category="paragraph">使用下列其中一種纜線類型、將e0c/0c和e0d/0d *或* e0e/0e和e0f/0f資料連接埠連接至主機網路：</block>
   <block id="f2371181894421446afe16fe1e5da25b" category="inline-link-macro">步驟4：完成系統設定與組態設定</block>
   <block id="9bb6dc35b9c3cfb584e92ef6bf229185" category="list-text">若要完成系統設定、請參閱 <block ref="b9ddf35bfac2437b7499c5c6e18fd46e" category="inline-link-macro-rx"></block>。</block>
-  <block id="c173bd77464f3b04c0d7c6e0a540f514" category="section-title">選項2：纜線交換式叢集、統一組態</block>
-  <block id="0e8ca1ea3d276eefedced94f4d995872" category="paragraph">控制器模組上的UTA2連接埠和管理連接埠會連接至交換器。叢集互連連接埠已連接至叢集互連交換器。</block>
-  <block id="5142e76828492b8472d310125f7bdc52" category="list-text">請使用圖例或逐步說明來完成控制器與交換器之間的纜線連接：</block>
   <block id="d7d7ce9a70c375da7dd9edb7b21a9134" category="image-alt">DRW C190交換式統一網路纜線動畫Gif</block>
-  <block id="61f1c61b5feaeb89fc7d9cba126122c7" category="section-title">選項3：連接兩個節點無交換式叢集（乙太網路組態）的纜線</block>
-  <block id="7964bdbe798b1e42df1039eee0ed4b7f" category="paragraph">控制器模組上的RJ45連接埠和管理連接埠均連接至交換器。兩個控制器模組上的叢集互連連接埠均已連接好纜線。</block>
   <block id="0df32eef6f99f6d05877f5da86a45063" category="image-alt">DRW C190 tnscc乙太網路纜線動畫Gif</block>
-  <block id="b96881a043916feb6b04e9d9d0e20a7f" category="paragraph">使用叢集互連纜線將叢集互連連接埠彼此連接 <block ref="6b6a40b68f5814cad1750bfff7e3b927" category="inline-image-macro-rx" type="image"></block>：</block>
-  <block id="f4d46ae73f467f92c060779d91e706f5" category="paragraph">使用RJ45纜線將e0M連接埠連接至管理網路交換器 <block ref="af9561bb1d24f4c26f5879aaf09a1c65" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="0a9b2befdc7da9bfc8df73a2b240fae8" category="section-title">選項4：纜線交換式叢集、乙太網路組態</block>
-  <block id="165f152c925d401aec3bdff9aed4cf96" category="paragraph">控制器模組上的RJ45連接埠和管理連接埠均連接至交換器。叢集互連連接埠已連接至叢集互連交換器。</block>
   <block id="ac3d560a40b4d6d28fac097677ecaa8d" category="image-alt">DRW C190交換式乙太網路佈線動畫</block>
   <block id="ca6a767f42962c9e0a0d4a74740024b9" category="paragraph">只要連線到交換器和筆記型電腦、或直接連線到系統中的控制器、然後連線到管理交換器、就能使用叢集探索來完成系統設定和組態。</block>
   <block id="11b77e98d05566e5db1d8a342bd88e64" category="section-title">選項1：啟用網路探索時、請完成系統設定與組態設定</block>
@@ -5756,7 +5742,6 @@
   <block id="dd33af940cfd986282d97dc9269783a9" category="summary">更換電源供應器時、需要將目標電源供應器（PSU）從電源拔下、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。</block>
   <block id="b122a7303b98280f8acc1bef20b1890d" category="doc">更換電源AFF 供應器- REVA250</block>
   <block id="af9d8ec1fd1a942d04dce1dd9b6787b7" category="paragraph">更換電源供應器時、需要將目標電源供應器（PSU）從電源拔下、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。</block>
-  <block id="7f078b87c94f86a68825895095430993" category="paragraph">請使用下列影片或表格中的步驟來更換電源供應器：</block>
   <block id="6d3e06f6307975945ccc1b05b8b5460b" category="list-text">根據主控台錯誤訊息或電源供應器上的紅色故障LED、識別您要更換的電源供應器。</block>
   <block id="aadfffe02f43bab104a0a2298a19657b" category="summary">若要更換故障的夾層卡、您必須拔下纜線和任何SFP或QSFP模組、更換卡片、重新安裝SFP或QSFP模組、然後重新插接卡。若要安裝新的夾層卡、您必須擁有適當的纜線和SFP或QSFP模組。</block>
   <block id="378800f87f8ce5df58c49fa6bb4199e0" category="doc">更換或安裝夾層卡AFF - VA250</block>
@@ -7075,7 +7060,6 @@
   <block id="e968d995195c5befd8e63072a29d7a87" category="paragraph">您可以使用PDF海報來安裝及設定新系統。。 <block ref="7bcaada228bfef0bb9707c307be17530" category="inline-link-macro-rx"></block> 提供逐步指示、並提供其他內容的即時連結。</block>
   <block id="b32a57c06a6b6572f324185a0b81d90c" category="paragraph"><block ref="b32a57c06a6b6572f324185a0b81d90c" category="inline-link-macro-rx"></block></block>
   <block id="0acd1668055811ba455a173f5b2007e1" category="inline-link-macro">《安裝與設定說明》（英文）AFF</block>
-  <block id="78986e3198e620c9a4397bd93b083e68" category="paragraph">本節提供圖形指示、說明如何從機架安裝和纜線安裝系統、直到系統初次開機為止。使用 <block ref="3eed3afb9edbfbab44cea22e18033b51" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="0112dd8e71f10fe869246a29836663d8" category="inline-link-macro">《關於安裝與設定的資訊》AFF</block>
   <block id="70a2087c6fb473305a0e232844fd565f" category="paragraph"><block ref="70a2087c6fb473305a0e232844fd565f" category="inline-link-macro-rx"></block></block>
   <block id="8db94eb390aaecb9128a260b00e455e8" category="paragraph"><block ref="8db94eb390aaecb9128a260b00e455e8" category="inline-link-macro-rx"></block></block>
@@ -7258,7 +7242,6 @@
   <block id="49c230c702ed6b30a6efde8eba87e563" category="doc">將故障零件歸還給NetApp AFF - NetApp - 4A150</block>
   <block id="3dfa4c8dc7083d8d9bf2fb1fc402660a" category="doc">快速指南AFF - VA150</block>
   <block id="6e0311a42e114c05c9779f6c830f1d97" category="inline-link-macro">《系統安裝與設定說明》（英文AFF ）</block>
-  <block id="2e869cac122e3063f7b418f03cb3fa26" category="paragraph"><block ref="2e869cac122e3063f7b418f03cb3fa26" category="inline-link-macro-rx"></block></block>
   <block id="b80ee1e7ed290f304dbaae444297a4fa" category="doc">視需要還原OKM、NSE和NVE - AFF E4A150</block>
   <block id="e822ef8c7b4b17d3230b125760d56e76" category="doc">還原並驗證系統組態- AFF VA150</block>
   <block id="178a6a7a54abe615089fef92a8499c05" category="doc">開機恢復映像AFF - ImageA150</block>
@@ -7272,13 +7255,7 @@
   <block id="9b6f6ecb6633d22a67cc6a982fc55841" category="paragraph">如果您使用MetroCluster 的是「版本資訊」、請使用MetroCluster 「版本資訊」安裝內容。</block>
   <block id="7f4d4fbe08a8a895671d05c4a82b0c85" category="inline-link">資訊文件MetroCluster</block>
   <block id="c56326d51fd75802f2144766bd1e36d3" category="paragraph"><block ref="c56326d51fd75802f2144766bd1e36d3" category="inline-link-rx"></block></block>
-  <block id="11f6227d0571f4bf3fac6b6d821a60d1" category="paragraph">若要安裝AFF 您的VA150系統、您必須在NetApp 支援網站 該系統上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
-  <block id="dd1dcd1cd7a28bbfc3b5a581b055bce3" category="inline-link-macro">將控制器連接至磁碟機櫃</block>
-  <block id="6c9cda13d9d7d9f8f82d912175e78d9b" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="42bf816180738dc1660363ee044d9786" category="inline-link-macro-rx"></block></block>
   <block id="ee44682d06dd8612d09f370d6f80069a" category="image-alt">DRW a150 ha儲存設備佈線：IOPS 1032</block>
-  <block id="a1770e5cf644990212f313f91eccb2d8" category="paragraph"><block ref="a1770e5cf644990212f313f91eccb2d8" category="inline-link-macro-rx"></block></block>
-  <block id="4402c8b8d6c489ed5617a151ffa90726" category="inline-link-macro">完成系統設定與組態</block>
-  <block id="41e876cad607f9363190645026f4f818" category="list-text">若要完成系統設定、請參閱 <block ref="cf51f79f23f70e62c97013df347c6a0f" category="inline-link-macro-rx"></block></block>
   <block id="ab65dd4e976f1787737fc87ae65b8a6d" category="paragraph"><block ref="ab65dd4e976f1787737fc87ae65b8a6d" category="inline-link-rx"></block></block>
   <block id="c2df61cd54941946b9e1d41669228517" category="paragraph"><block ref="c2df61cd54941946b9e1d41669228517" category="inline-link-rx"></block></block>
   <block id="a7d0c7f24713f4f2e4432bb2b91f97d0" category="paragraph"><block ref="a7d0c7f24713f4f2e4432bb2b91f97d0" category="inline-link-rx"></block></block>
@@ -7355,7 +7332,6 @@
   <block id="4d8adba62be8512e84ae7825848692e9" category="doc">將故障零件歸還給NetApp AFF - NetApp - C400</block>
   <block id="28dd2419d5232cd5e390f590d7d76b55" category="doc">快速指南AFF - C400</block>
   <block id="bef061f2ba2a880a4d71960c6fb14a8f" category="inline-link-macro">《C400安裝與設定說明》AFF</block>
-  <block id="1fb877c7c5a192a0f8712065429afd55" category="paragraph"><block ref="1fb877c7c5a192a0f8712065429afd55" category="inline-link-macro-rx"></block></block>
   <block id="dde11f85a430c37e085e56c530fa6482" category="doc">視需要還原OKM、NSE和NVE - AFF EFC400</block>
   <block id="a637f1b4c2a1d9b5cb9f0347c7e77539" category="doc">還原並驗證系統組態- AFF C400</block>
   <block id="b1c4aeeae550bfbe7c6574898398d781" category="doc">更換NVDIMM電池AFF - REC400</block>
@@ -7499,13 +7475,8 @@
   <block id="f0167637a350c4dd2e81ce6e691cd9db" category="list-text">向下轉動握把、使其遠離正常作業。</block>
   <block id="f66f18cf0f377b83882ade5b0618dbe0" category="open-title">選項2：更換DC電源供應器</block>
   <block id="75a2f242d94a472d387a461ee767e00c" category="paragraph">若要更換DC電源供應器、請完成下列步驟。</block>
-  <block id="de5c94ee80b23390308831ba0a74d44b" category="paragraph">下一步的圖例和表格顯示兩顆指旋螺絲（項目1）和D-sub DC電源線接頭（項目2）。</block>
-  <block id="75b8b67557750f13b0b08808f90f76e3" category="list-text">旋下電源線接頭上的兩顆指旋螺絲。</block>
-  <block id="37a0782c59ce799b3f0ac9f1fd300d95" category="list-text">從電源供應器拔下電源線接頭、並將其放在一邊。</block>
   <block id="dd59df5055ae64422d06dada9ff46511" category="admonition">電源供應器不足。從NSM模組移除時、請務必用兩隻手支撐、以免它從NSM模組中移出而造成傷害。</block>
   <block id="6e496e45275d9692038e8f0693a1ec58" category="paragraph">電源供應器必須與內部連接器和鎖定機制正確接合。如果您覺得電源供應器未正確安裝、請重複此步驟。</block>
-  <block id="de1e769c433d3a929aaa6f6ee4b43fe2" category="list-text">將電源線接頭插入電源供應器。</block>
-  <block id="a637e5d063c7b8dd7bfddc7608e9573e" category="list-text">鎖緊兩顆指旋螺絲、將電源線接頭固定至電源供應器。</block>
   <block id="89f1a7f8afce2b821a07ad90fa45719c" category="list-text">您可以使用下列動畫或書面步驟來更換風扇。</block>
   <block id="3b3c879ba506df7489cfabd2dcff0ce2" category="list-text">如果電源線是AC電源供應器、請打開電源線固定器、以從電源供應器拔下電源線、如果是DC電源供應器、請拆下兩個指旋螺絲、然後從電源供應器拔下電源線。</block>
   <block id="2618c98d909106f2012ce83478a61e98" category="list-text">您可以使用下列動畫或書面步驟來取代NSM模組。</block>
@@ -7871,4 +7842,108 @@
   <block id="30975d9ae55d85636f78d9b3e459df73" category="sidebar">ASA 解決方案簡介</block>
   <block id="6c713e33f81bfdf294d75a585966fd05" category="sidebar">ASA 技術報告</block>
   <block id="b47e2ddbcc7bf8a413f11a740b83ad50" category="sidebar">FAS 系統資料表</block>
+  <block id="163a2ccd4200819af22c143525c2903e" category="list-text">旋下 D-sub DC 電源線接頭上的兩個拇指螺絲。</block>
+  <block id="d88c630155642b1c688f5784be9a1acf" category="paragraph">步驟 4 中的圖例和表格顯示兩個指旋螺絲（項目 1 ）和 D-sub DC 電源線接頭（項目 2 ）。</block>
+  <block id="3d95f3470ed102d015e07a1fbb7f7608" category="list-text">從電源供應器拔下 D-sub DC 電源線接頭、並將其放在一邊。</block>
+  <block id="d28bc8f0e10f780bf01d0983424f02e4" category="list-text">將 D-sub DC 電源線接頭插入電源供應器。</block>
+  <block id="538209f1ec1db21a865711f12301a29e" category="list-text">鎖緊兩顆指旋螺絲、將 D-sub DC 電源線接頭固定至電源供應器。</block>
+  <block id="29e74344b0f8f3bb2a741f7b4a504193" category="list-text">PSU 是備援且可熱交換的。</block>
+  <block id="1510e50dd45e2c76b8244bd6a5fc56ab" category="list-text">PSU 是自動調整範圍的。</block>
+  <block id="408c129c35367a646082d00e22485944" category="paragraph">請使用下列影片或步驟更換 PSU ：</block>
+  <block id="96ebd81c649ce61228798b69731b39cc" category="list-text">旋轉 CAM 把手、以便在按下鎖定彈片的同時、將 PSU 從控制器模組中拉出。</block>
+  <block id="041817816aadc0ac389510f06856eb73" category="list-text">用雙手支撐 PSU 的邊緣、並將其與控制器模組的開口對齊、然後將 PSU 輕輕推入控制器模組、直到鎖定彈片卡入定位。</block>
+  <block id="ecc8536d184ca3a7e451181d0f568d41" category="paragraph">PSU 只能與內部連接器正確接合、並以一種方式鎖定到位。</block>
+  <block id="7d710ae6fae5f82131f5e646788f27a1" category="list-text">從 PSU 拔下 D-sub DC 電源線接頭、並將其放在一邊。</block>
+  <block id="26cc3f70141c5f4b4f5a7a7c52321240" category="list-text">移除 PSU ：</block>
+  <block id="25b0a4705669fa58bd671a04b5e34a7f" category="list-text">將 PSU 從控制器模組中拉出、同時用另一隻手支撐其重量。</block>
+  <block id="0d8f690f8863cf6dd078f46fd151cce4" category="admonition">PSU很短。從控制器模組移除時、請務必用雙手支撐、以免其從控制器模組中迴轉而造成傷害。</block>
+  <block id="8e7311e4f3b2e71464aaa1fa66388a4b" category="paragraph">PSU 握把</block>
+  <block id="6aaf2adda7ea3fae24f9570eb951048f" category="list-text">安裝更換的 PSU ：</block>
+  <block id="b323fb6f842e16e2eb1c10951fffbf3e" category="list-text">將 PSU 輕輕推入控制器模組、直到鎖定機制卡入定位。</block>
+  <block id="b5ecda37046d685b93693e01ecb6e6fe" category="paragraph">PSU 必須與內部連接器和鎖定機制正確接合。如果您覺得 PSU 未正確就位、請重複此步驟。</block>
+  <block id="049ea4245daefe1c9ce73d6a75dfbab1" category="list-text">將 D-sub DC 電源線接頭插入 PSU 。</block>
+  <block id="71c2f9602a7f71f9eab2a859d2e0f4ae" category="list-text">鎖緊兩顆指旋螺絲、將 D-sub 直流電源纜線連接器固定至 PSU 。</block>
+  <block id="05a183c8bc1fc9522f554a0dcc45645f" category="paragraph">在機架或機櫃中安裝AFF/FAS控制器。存取AFF/FAS平台機型的安裝與設定說明。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。</block>
+  <block id="7877fbd25ecba999ab0a739fe29df547" category="paragraph">** AFF A 系列系統 **</block>
+  <block id="999865050c05a9851fa1100ea708f735" category="paragraph">** AFF C 系列系統 **</block>
+  <block id="fb4b827f429720ceefe590267f9978cf" category="paragraph">** FAS 系統 **</block>
+  <block id="6eeacbfb54f0dd2b69ca25ccf7e621e3" category="paragraph">** 叢集交換器 **</block>
+  <block id="05d287d05ed5025354b8f6c796c87491" category="paragraph">** 儲存交換器 **</block>
+  <block id="aca0ddc3769e84e478caff604ad14594" category="paragraph">** 共享交換器 **</block>
+  <block id="4f4f401ca3cb71c1eacaf052eac321fb" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 將交換器連接至控制器</block>
+  <block id="93a86d433d6f98e9a80d74b972237ee6" category="paragraph">** AFF 系統 **</block>
+  <block id="1688757a0e4a29ec41d21e63fcc98a90" category="paragraph">若要安裝 AFF C190 系統、請建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
+  <block id="39bbc5176cba797f24070d78f90d0d5a" category="list-text">請確定您有權存取 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （HWU）以取得站台需求的相關資訊、以及設定系統的其他資訊。</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="inline-link-macro">版本資訊</block>
+  <block id="09e00942626b9d2b5187768ea624369a" category="list-text">請確定您可以存取 <block ref="9d7659179eb5b5c244263cabf30336a7" category="inline-link-macro-rx"></block> 如ONTAP 需此系統的詳細資訊、請參閱您的版本的</block>
+  <block id="841cf46b69a4b2c782c980b795074554" category="list-text">請確定您的網站上有下列項目：</block>
+  <block id="85220111cf8764a6d5eefe427de4fbde" category="paragraph">視情況、將您的系統安裝在 4 柱機架或 NetApp 系統機櫃中。</block>
+  <block id="1ccb5aa93b58b2e0cbfd6015e33c6a90" category="paragraph">使用雙節點無交換器叢集方法或叢集互連網路方法、將控制器連接至網路。</block>
+  <block id="22cf31ea4e88d1269c525c08a9c8fdff" category="paragraph">控制器模組上的 UTA2 連接埠、乙太網路資料網路和管理連接埠都連接到交換器。兩個控制器模組上的叢集互連連接埠均已連接好纜線。</block>
+  <block id="434c44657e12928e06a65124dfb073b0" category="paragraph">瞭解如何連接雙節點無交換器叢集。</block>
+  <block id="f7284f28e338cb3e10e42e8214151229" category="paragraph">您可以使用 UTA2 資料網路連接埠或乙太網路資料網路連接埠、將控制器連接到主機網路。在控制器與交換器之間進行纜線連接時、請參閱下列纜線圖示。</block>
+  <block id="48114454330840b73674b4d456819a4e" category="list-text">UTA2 資料網路組態</block>
+  <block id="e6746873d55c9a028bc3eae1ed6cd0db" category="list-text">乙太網路組態</block>
+  <block id="f9655777cbdbded95ebaf4fdc1ed1c83" category="paragraph">在每個控制器模組上執行下列步驟。</block>
+  <block id="4b7d254b4cff665eba8f89aeb96e16cb" category="list-text">使用叢集互連纜線將叢集互連連接埠 e0a 連接至 e0a 、並將 e0b 連接至 e0b 。+<block ref="9a0e89c71564aa69ffecf67eb610bc96" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列其中一項：</block>
+  <block id="54254076225178d5782bc5158de2ffd3" category="list-text">使用下列其中一種纜線類型、將 e0c/0c 和 e0d/0d 或 e0e/0e 和 e0f/0f 資料連接埠連接至主機網路。</block>
+  <block id="43083753a8bd4d126f4e9d226b24d42f" category="list-text">使用 Cat 6 RJ45 纜線將 e0c 透過 e0f 連接埠連接至主機網路。下圖所示。</block>
+  <block id="5cb31a934f99a854350d21ffae22067d" category="paragraph">瞭解如何連接交換式叢集。</block>
+  <block id="3c82d1b8b75fddcd5945e9505cb93e2a" category="list-text">統一化網路組態</block>
+  <block id="98632dc1c45ca0b18d4707328081c4e1" category="list-text">使用叢集互連纜線將 e0a 和 e0b 纜線連接至叢集互連交換器。</block>
+  <block id="119bf83fa4465fb53f4c1cb409fbd677" category="list-text">使用 Cat 6 RJ45 纜線將 e0c 透過 e0f 連接埠連接至主機網路。</block>
+  <block id="94ba17d1769cd415862a18057c1938b2" category="section-title">步驟 4 ：完成系統設定</block>
+  <block id="0b6ed16c1f9d9e2458c0f6738eb93288" category="paragraph">瞭解如何完成系統設定如果您的筆記型電腦已啟用網路探索功能。</block>
+  <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link-macro">本文檔 ONTAP</block>
+  <block id="fd69b335d8c511a8e881204822f8b6ef" category="list-text">完成初始組態之後、請前往 <block ref="a3e81585099d58285005c3431d208fd9" category="inline-link-macro-rx"></block> 網站以取得在 ONTAP 中設定其他功能的相關資訊。</block>
+  <block id="b06876b5a3b23ef5cff05f5d0950ec0d" category="paragraph">瞭解如果您的筆記型電腦未啟用網路探索、如何完成系統設定。</block>
+  <block id="a76d705a87cd7b7a1bea352a13c6cd65" category="inline-link-macro">ONTAP amp;document</block>
+  <block id="0c629d7be969a0c3ffa913473ff37b4b" category="list-text">完成初始組態之後、請前往 <block ref="be5377ebec3eac0b9e77b9246477ddd0" category="inline-link-macro-rx"></block> 網站以取得在 ONTAP 中設定其他功能的相關資訊。</block>
+  <block id="02b3fd979029ff021f281b78fa7ccd20" category="paragraph">瞭解如何透過初始系統開機、從機架和纜線安裝 C190 系統。使用 <block ref="3eed3afb9edbfbab44cea22e18033b51" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
+  <block id="1d4ac53db25f608efca8dafa3f3d6b43" category="paragraph">請使用下列影片、瞭解如何為系統進行機架和纜線連接、以及執行初始系統組態。</block>
+  <block id="95a15694e7d6d23376f741970900ef8e" category="list-text">硬體安裝與纜線</block>
+  <block id="4657c74c0fa17e5f15e4a506f177b913" category="paragraph">下列影片說明如何安裝及連接系統纜線。</block>
+  <block id="d4b6f94dadb3f20b9bf031b9b9983ce3" category="list-text">端點對端點軟體組態</block>
+  <block id="314f8c912a6741218e22dc8ca5f7ee41" category="paragraph">瞭解如何安裝 AFF A150 系統。</block>
+  <block id="119be031ef4485d20c7683d291d0e9f6" category="inline-link">本文檔MetroCluster</block>
+  <block id="bfd53ea423739db497251aa14d8747cd" category="paragraph">如果您有 MetroCluster 組態、請使用<block ref="9b888d0bb3e87322cc68a0bb4a7ae515" category="inline-link-rx"></block>。</block>
+  <block id="f6387b34fb856500ccda4acb52336ff7" category="paragraph">若要安裝 AFF A150 系統、請在 NetApp 支援網站 上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
+  <block id="5d0ff6a06bf967bf825de2c2a610cc33" category="list-text">如需將系統連線至交換器的相關資訊、請聯絡您的網路管理員。</block>
+  <block id="bcce32e97ae0002c4edc1cc8b9245285" category="inline-link">註冊您的系統</block>
+  <block id="1e074148aea327f834455c1f6ae99894" category="list-text"><block ref="2539e9179736696f68f1ba88f3812383" category="inline-link-rx"></block>。</block>
+  <block id="f9be17421d77a57baae245776004d9fc" category="inline-link">Config Advisor</block>
+  <block id="2e1859a63c8f237167580360c7882aca" category="list-text">下載並安裝<block ref="56697f7f340a212f549439c89b0cabd2" category="inline-link-rx"></block> 在筆記型電腦上。</block>
+  <block id="a025f9bb5b185f275f929e4e427c7a26" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
+  <block id="e881b3bd9e158bdbe75952ecb742a95f" category="inline-link">下載並完成叢集組態工作表</block>
+  <block id="738f95af1a0163cf0e1c5931095ae65f" category="list-text"><block ref="d3aebb99b149a14152b68ab3bc13a233" category="inline-link-rx"></block>。</block>
+  <block id="767d56519e2665f49f35713c1a1be451" category="section-title">步驟 3 ：將控制器連接至網路</block>
+  <block id="32eaf8761a3db861b1156e2738e758c1" category="paragraph">使用雙節點無交換器叢集方法或叢集互連網路方法、將控制器連接至網路。</block>
+  <block id="3760d11ceaf4a0fe32d1665068e04673" category="paragraph">管理網路、 UTA2 資料網路、乙太網路資料網路、以及控制器上的管理連接埠、都會連接到交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。</block>
+  <block id="6daf690bb435e2ddca90bbd25f4d0d4c" category="list-text">使用下列其中一種纜線類型、將 UTA2 資料連接埠連接至主機網路。</block>
+  <block id="afb6c834a58331c6ea63436bbf5864c3" category="list-text">對於 FC 主機、請使用 0c 和 0d * 或 * 0e 和 0f 。</block>
+  <block id="0bd1e8e50111e01ba1604ade94902cca" category="list-text">若為 10GbE 系統、請使用 e0c 和 e0d * 或 * e0e 和 e0f 。</block>
+  <block id="1fc58e4765d0d92d238af8bdfc3ab370" category="list-text">統一化網路纜線</block>
+  <block id="b7f69837ac40254faa2741b926641a85" category="list-text">乙太網路纜線</block>
+  <block id="d121c2dd9af112004d29375d7d7385ba" category="list-text">對於每個控制器模組、請使用叢集互連纜線將 e0a 和 e0b 纜線連接至叢集互連交換器。</block>
+  <block id="32f4bb165c35f300da46d2891dcd4591" category="list-text">對於 FC 主機、請使用 0c 和 0d ** 或 ** 0e 和 0f 。</block>
+  <block id="94a602afccb4ec515036eba24fdfed92" category="list-text">若為 10GbE 系統、請使用 e0c 和 e0d ** 或 ** e0e 和 e0f 。</block>
+  <block id="711382b326731ba29a44a7ecd4dacb3e" category="paragraph">使用內建儲存連接埠將控制器連接至機櫃。NetApp建議使用MP-HA纜線來連接具有外部儲存設備的系統。</block>
+  <block id="0c8480de057f1244b5ab346faf4daf5d" category="paragraph">如果您有SAS磁帶機、可以使用單一路徑纜線。如果您沒有外部磁碟櫃、如果系統隨附SAS纜線、則可選擇（未顯示）連接至內部磁碟機的MP-HA纜線。</block>
+  <block id="3d8bab9b47da70efbcdca04a75fddf8e" category="list-text">將 HA 配對連接至外部磁碟機櫃。</block>
+  <block id="f2f386197bbf8899460af5987fca456d" category="paragraph">以下範例顯示 DS224C 磁碟機櫃的纜線。纜線與其他支援的磁碟機櫃類似。</block>
+  <block id="1d775c632fba61d3af79e48b275d4b7e" category="paragraph">如果您有多個磁碟機櫃堆疊、請參閱 <block ref="a1770e5cf644990212f313f91eccb2d8" category="inline-link-macro-rx"></block> 適用於您的磁碟機櫃類型。</block>
+  <block id="624bc3e7c8eadd32ac4d94ff03171ec7" category="section-title">步驟 5 ：完成系統設定</block>
+  <block id="60567d4e2a479c00e2c6513bd91d9cd1" category="list-text">使用您在中收集的資料來設定系統<block ref="492b1b89e16fbed782c0f28e34fb9371" category="inline-link-rx"></block>。</block>
+  <block id="23dc4039b6ba90f63944cca90e993ec5" category="inline-link">現有帳戶或建立及帳戶</block>
+  <block id="21371189181c93bc505633f5bb1729ea" category="list-text">登入<block ref="87e6dd8e4f31a1e4060528f9a17ea003" category="inline-link-rx"></block>。</block>
+  <block id="0ba7583639a274c434bbe6ef797115a4" category="inline-link">註冊</block>
+  <block id="d8f675889dd7611add24a5c35dbe0287" category="list-text"><block ref="dd5351a0b089c34796a2c16f455a15ef" category="inline-link-rx"></block> 您的系統。</block>
+  <block id="a70e700572fd5f3ed169ddc6b2f5473e" category="list-text">下載<block ref="4dfdca8e27abd55d1321fd9c213c69c3" category="inline-link-rx"></block>。</block>
+  <block id="b0ebe1326fcf7880c70950de144bb8b2" category="list-text">完成初始組態之後、請前往<block ref="85236f9c87441cb975667a870e3c5acc" category="inline-link-rx"></block> 網站以取得在 ONTAP 中設定其他功能的相關資訊。</block>
+  <block id="cdc4a8392b31dfb0d6f525f8b4bfb521" category="list-text">連接纜線並設定筆記型電腦或主控台。</block>
+  <block id="f0e48b1c6152b408e3a17383284dfa34" category="paragraph">如需如何設定主控台連接埠的說明、請參閱筆記型電腦或主控台的線上說明。</block>
+  <block id="6266bb335022aad7813f5a92f40c41bb" category="list-text">在筆記型電腦或主控台上使用 System Manager 來設定叢集。</block>
+  <block id="b1e0a8fb86dde21901d58064a47983ae" category="paragraph">瞭解如何透過初始系統開機、從機架和纜線安裝系統。使用 <block ref="2e869cac122e3063f7b418f03cb3fa26" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
+  <block id="78504a496ba3e0d8a682fe929b4d61d9" category="paragraph"><block ref="78504a496ba3e0d8a682fe929b4d61d9" category="inline-link-macro-rx"></block></block>
 </blocks>

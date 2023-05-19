@@ -19,15 +19,12 @@ summary: 若要使用 AFF 、 FAS 和 ASA 系統開始運作、請在 ONTAP 中�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 安裝AFF/FAS控制器
 [role="quick-margin-para"]
-6d311090c29c1da16c7810703948cbe1
+在機架或機櫃中安裝AFF/FAS控制器。存取AFF/FAS平台機型的安裝與設定說明。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。
 
-[cols="4,9,9,9"]
-|===
+[role="quick-margin-para"]
+** AFF A 系列系統 **
 
-
- a| 
- a| 
-.AFF A 系列系統
+[role="quick-margin-list"]
 * https://["VA220 AFF"]
 * https://["VA250 AFF"]
 * https://["解答400 AFF"]
@@ -35,15 +32,21 @@ summary: 若要使用 AFF 、 FAS 和 ASA 系統開始運作、請在 ONTAP 中�
 * https://["解答800 AFF"]
 * https://["解答900 AFF"]
 
- a| 
-.AFF C 系列系統
+
+[role="quick-margin-para"]
+** AFF C 系列系統 **
+
+[role="quick-margin-list"]
 * https://["C190 AFF"]
 * https://["C250 AFF"]
 * https://["C400 AFF"]
 * https://["C800 AFF"]
 
- a| 
-.系統FAS
+
+[role="quick-margin-para"]
+** FAS 系統 **
+
+[role="quick-margin-list"]
 * https://["FAS500f"]
 * https://["FAS8300"]
 * https://["FAS8700"]
@@ -51,122 +54,126 @@ summary: 若要使用 AFF 、 FAS 和 ASA 系統開始運作、請在 ONTAP 中�
 * https://["FAS9500"]
 
 
-|===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 安裝交換器硬體
 [role="quick-margin-para"]
 將交換器安裝在機架或機櫃中。請參閱下列交換器機型的指示。
 
-[cols="2,9,9,9"]
-|===
+[role="quick-margin-para"]
+** 叢集交換器 **
 
-
- a| 
- a| 
-.f267a68fd1c8bddcc992701898021398
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/install-hardware-bes53248.html["安裝BS-53248交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/install-switch-9336c-cluster.html["安裝Cisco Nexus 9336C-FX2交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/install-hardware-sn2100-cluster.html["安裝NVIDIA SN2100交換器"]
 
- a| 
-.403284bd44beda112195a484c8a76421
+
+[role="quick-margin-para"]
+** 儲存交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/install-9336c-storage.html["安裝Cisco Nexus 9336C-FX2交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/install-hardware-sn2100-storage.html["安裝NVIDIA SN2100交換器"]
 
- a| 
-.bc8a2cd252a5beb1dbf4f209baea67eb
+
+[role="quick-margin-para"]
+** 共享交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/install-9336c-shared.html["安裝Cisco Nexus 9336C-FX2交換器"]
 
 
-|===
-.a4ae5d0bd4e47ba267a8df1ceee51985
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 將交換器連接至控制器
 [role="quick-margin-para"]
 AFF/FAS安裝與設定說明包括將控制器連接埠連接至交換器的纜線。不過、如果您需要支援的纜線和收發器清單、以及交換器主機連接埠的詳細資訊、請針對您的交換器機型存取下列指示。
 
-[cols="2,9,9,9"]
-|===
+[role="quick-margin-para"]
+** 叢集交換器 **
 
-
- a| 
- a| 
-.f267a68fd1c8bddcc992701898021398
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-reqs-bes53248.html#configuration-requirements["連接BS-53248交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/setup-worksheet-9336c-cluster.html["Cisco Nexus 9336C-FX2交換器纜線"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/cabling-considerations-sn2100-cluster.html["纜線NVIDIA SN2100交換器"]
 
- a| 
-.403284bd44beda112195a484c8a76421
+
+[role="quick-margin-para"]
+** 儲存交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/setup-worksheet-9336c-storage.html["Cisco Nexus 9336C-FX2交換器纜線"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/cabling-considerations-sn2100-storage.html["纜線NVIDIA SN2100交換器"]
 
- a| 
-.bc8a2cd252a5beb1dbf4f209baea67eb
+
+[role="quick-margin-para"]
+** 共享交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/cable-9336c-shared.html["Cisco Nexus 9336C-FX2交換器纜線"]
 
 
-|===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]設定交換器
 [role="quick-margin-para"]
 執行交換器的初始設定。請參閱下列交換器機型的指示。
 
-[cols="2,9,9,9"]
-|===
+[role="quick-margin-para"]
+** 叢集交換器 **
 
-
- a| 
- a| 
-.f267a68fd1c8bddcc992701898021398
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-install-initial.html["設定BS-53248交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/setup-switch-9336c-cluster.html["設定Cisco Nexus 9336C-FX2交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-sn2100-cluster.html["設定NVIDIA SN2100交換器"]
 
- a| 
-.403284bd44beda112195a484c8a76421
+
+[role="quick-margin-para"]
+** 儲存交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/setup-switch-9336c-storage.html["設定Cisco Nexus 9336C-FX2交換器"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-sn2100-storage.html["設定NVIDIA SN2100交換器"]
 
- a| 
-.bc8a2cd252a5beb1dbf4f209baea67eb
+
+[role="quick-margin-para"]
+** 共享交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/setup-and-configure-9336c-shared.html["設定Cisco Nexus 9336C-FX2交換器"]
 
 
-|===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 安裝交換器軟體
 [role="quick-margin-para"]
 若要在交換器上安裝及設定軟體、請遵循交換器機型的軟體安裝工作流程。
 
-[cols="2,9,9,9"]
-|===
+[role="quick-margin-para"]
+** 叢集交換器 **
 
-
- a| 
- a| 
-.f267a68fd1c8bddcc992701898021398
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-software-overview-bes53248.html["安裝適用於BS-53248交換器的軟體"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-software-overview-9336c-cluster.html["安裝Cisco Nexus 9336C-FX2交換器軟體"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-software-overview-sn2100-cluster.html["安裝NVIDIA SN2100交換器的軟體"]
 
- a| 
-.403284bd44beda112195a484c8a76421
+
+[role="quick-margin-para"]
+** 儲存交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/configure-software-overview-9336c-storage.html["安裝Cisco Nexus 9336C-FX2交換器軟體"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-software-sn2100-storage.html["安裝NVIDIA SN2100交換器的軟體"]
 
- a| 
-.bc8a2cd252a5beb1dbf4f209baea67eb
+
+[role="quick-margin-para"]
+** 共享交換器 **
+
+[role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-software-overview-9336c-shared.html["安裝Cisco Nexus 9336C-FX2交換器軟體"]
 
 
-|===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 完成系統設定
 [role="quick-margin-para"]
 設定交換器並安裝所需軟體之後、請存取AFF/FAS平台機型的安裝與設定指示、以完成系統設定。對於所有 SAN 陣列（ ASA ）系統、請遵循對應 AFF A 系列機型的安裝指示。
 
-[cols="4,9,9,9"]
-|===
+[role="quick-margin-para"]
+** AFF 系統 **
 
-
- a| 
- a| 
-.f3585daa539c5917b4fedd0eb7efb3f2
+[role="quick-margin-list"]
 * https://["VA220 AFF"]
 * https://["VA250 AFF"]
 * https://["解答400 AFF"]
@@ -174,15 +181,21 @@ AFF/FAS安裝與設定說明包括將控制器連接埠連接至交換器的纜�
 * https://["解答800 AFF"]
 * https://["解答900 AFF"]
 
- a| 
-.AFF C 系列系統
+
+[role="quick-margin-para"]
+** AFF C 系列系統 **
+
+[role="quick-margin-list"]
 * https://["C190 AFF"]
 * https://["C250 AFF"]
 * https://["C400 AFF"]
 * https://["C800 AFF"]
 
- a| 
-.系統FAS
+
+[role="quick-margin-para"]
+** FAS 系統 **
+
+[role="quick-margin-list"]
 * https://["FAS500f"]
 * https://["FAS8300"]
 * https://["FAS8700"]
@@ -190,7 +203,6 @@ AFF/FAS安裝與設定說明包括將控制器連接埠連接至交換器的纜�
 * https://["FAS9500"]
 
 
-|===
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"] 完整ONTAP 的功能組態
 [role="quick-margin-para"]
 安裝並設定AFF/FAS控制器和交換器之後、您必須完成ONTAP 在VMware中設定儲存設備。根據部署組態存取下列指示。
