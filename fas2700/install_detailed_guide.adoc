@@ -21,9 +21,9 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 
 您必須能夠存取Hardware Universe 有關站台需求的資訊、以及設定系統的其他資訊。您也可以存取ONTAP 版本的《發行說明》、以取得更多關於此系統的資訊。
 
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
-http://["尋找ONTAP 您版本的更新說明"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 您版本的更新說明"]
 
 您必須在網站上提供下列資訊：
 
@@ -44,20 +44,20 @@ image::../media/drw_ssn_label.png[DRw SSN標籤]
 .. 登入現有帳戶或建立帳戶。
 .. 註冊您的系統。
 +
-https://["NetApp產品註冊"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
 
 
 
 . 在Config Advisor 筆記型電腦上下載並安裝此功能。
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 . 清點並記下您收到的纜線數量和類型。
 +
 下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱Hardware Universe 《關於找出纜線並識別其用途的資訊》。
 
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 +
 [cols="1,2,1,2"]
@@ -161,7 +161,7 @@ image:../media/oie_cable_power.png[""]
 |===
 . 下載並完成_Cluster組態工作表_。
 +
-https://["叢集組態工作表"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["叢集組態工作表"]
 
 
 
@@ -601,10 +601,10 @@ NOTE: XXXXX是目標節點的系統序號。
 
 . 使用System Manager引導式設定、使用您在《_ NetApp ONTAP 資訊系統組態指南_》中收集的資料來設定您的系統。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
 
 
@@ -676,14 +676,14 @@ NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台
 .. 將瀏覽器指向節點管理IP位址。
 +
 
-NOTE: 位址的格式為 https://[]。
+NOTE: 位址的格式為 https://x.x.x.x[]。
 
 .. 使用您在《NetApp ONTAP 產品介紹》指南中收集的資料來設定系統。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 

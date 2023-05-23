@@ -18,12 +18,12 @@ summary: 您可以將X91148A模組新增至系統的空模組插槽、做為100G
 * 您的系統上必須有一個或多個可用的開放式插槽。
 * 如果有多個插槽可用、請根據Hardware Universe 插槽優先順序對照表安裝模組、以利在支援過程中安裝X91148A模組。
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 * 如果您要將X91148A模組新增為儲存模組、則必須安裝模組插槽3和/或7。
 * 如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想將這些插槽用作網路插槽、但不想新增NS224磁碟櫃、您必須使用「儲存連接埠修改-node"節點節點名稱_-port _port name_-mode network」命令來修改用於網路的插槽。如Hardware Universe 需X91148A模組可用於網路的其他插槽、請參閱《支援資料：
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 * 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
 
@@ -105,5 +105,5 @@ https://["NetApp Hardware Universe"]
 . 從合作夥伴節點移回節點：「torage容錯移轉恢復-ofnode_name'
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 對控制器B重複這些步驟
-. 如所述、安裝並連接NS224磁碟櫃 https://["熱新增- NS224磁碟櫃"]。
+. 如所述、安裝並連接NS224磁碟櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增- NS224磁碟櫃"]。
 

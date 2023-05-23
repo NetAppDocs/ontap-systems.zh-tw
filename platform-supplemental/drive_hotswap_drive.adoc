@@ -15,14 +15,14 @@ summary: 當磁碟機故障時、平台會將警告訊息記錄到系統主控�
 
 * 替換磁碟機必須由您的平台支援。
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 * 如果已啟用SED驗證、您必須使用ONTAP 本文檔中的SED替換說明。
 +
 本白皮書中的說明ONTAP 說明說明更換SED之前和之後、您必須執行的其他步驟。
 
 +
-https://["《NetApp加密電源指南》（英文）ONTAP"]
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]
 
 * 系統中的所有其他元件都必須正常運作；如果無法正常運作、請聯絡技術支援部門。
 * 執行「shorage disk show -disf肯」命令、確認您要移除的磁碟機故障。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。
@@ -108,7 +108,7 @@ NOTE: 故障磁碟機上的活動（綠色）LED可亮起（持續亮起）、�
 
 .. 如套件隨附的RMA指示所述、將故障零件退回NetApp。
 +
-請聯絡技術支援人員： https://["NetApp支援"]如果您需要RMA編號或更換程序的其他協助、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
+請聯絡技術支援人員： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]如果您需要RMA編號或更換程序的其他協助、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
 
 
 

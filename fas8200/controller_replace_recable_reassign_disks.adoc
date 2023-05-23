@@ -21,7 +21,7 @@ summary: 您必須重新儲存並確認磁碟重新指派。
 
 .步驟
 . 重新安裝系統。
-. 使用確認纜線正確無誤 https://["Active IQ Config Advisor"]。
+. 使用確認纜線正確無誤 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
 +
 .. 下載並安裝Config Advisor 此功能。
 .. 輸入目標系統的資訊、然後按一下「Collect Data（收集資料）」。
@@ -69,8 +69,8 @@ node2             node1             -            Waiting for giveback (HA mailbo
 
 . 如果您的儲存系統已設定儲存或磁碟區加密、則必須使用下列其中一個程序來還原儲存或磁碟區加密功能、視您使用的是內建或外部金鑰管理而定：
 +
-** https://["還原內建金鑰管理加密金鑰"^]
-** https://["還原外部金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
 +
 當系統提示您繼續進入進階模式時、您可以回應「Y」。出現進階模式提示（*>）。
 
@@ -99,7 +99,7 @@ _replacement控制器會恢復其儲存設備並完成開機。
 NOTE: 如果被否決、您可以考慮覆寫否決。
 
 +
-http://["尋找ONTAP 適用於您版本的更新版本的高可用度組態內容"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您版本的更新版本的高可用度組態內容"]
 
 .. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
 +
@@ -233,7 +233,7 @@ dr-group-id            cluster node           configuration-state
 .. 確認MetroCluster 已設定好此功能、並處於正常模式：MetroCluster 「show」
 .. 執行MetroCluster 功能不全的檢查：MetroCluster 「執行功能不全」
 .. 顯示MetroCluster 「不MetroCluster 實檢查」的結果：「不實檢查顯示」
-.. 執行Config Advisor請前往Config Advisor NetApp支援網站上的支援頁面、網址為 http://["support.netapp.com/NOW/download/tools/config_advisor/"]。
+.. 執行Config Advisor請前往Config Advisor NetApp支援網站上的支援頁面、網址為 http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
 +
 執行Config Advisor 完功能後、請檢閱工具的輸出結果、並依照輸出中的建議來解決發現的任何問題。
 

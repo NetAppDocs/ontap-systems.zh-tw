@@ -13,7 +13,7 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 [role="lead"]
 瞭解如何安裝 AFF A150 系統。
 
-如果您有 MetroCluster 組態、請使用 https://["本文檔MetroCluster"^]。
+如果您有 MetroCluster 組態、請使用 https://docs.netapp.com/us-en/ontap-metrocluster/index.html["本文檔MetroCluster"^]。
 
 
 
@@ -45,13 +45,13 @@ image::../media/drw_ssn_label.png[DRw SSN標籤]
 . 設定您的帳戶：
 +
 .. 登入現有帳戶或建立帳戶。
-.. https://["註冊您的系統"]。
+.. https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["註冊您的系統"]。
 
 
-. 下載並安裝 https://["Config Advisor"] 在筆記型電腦上。
+. 下載並安裝 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Config Advisor"] 在筆記型電腦上。
 . 清點並記下您收到的纜線數量和類型。
 +
-下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://["NetApp Hardware Universe"] 找出纜線並識別其用途。
+下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://hwu.netapp.com["NetApp Hardware Universe"] 找出纜線並識別其用途。
 
 +
 [cols="1,2,1,2"]
@@ -153,7 +153,7 @@ image:../media/oie_cable_power.png[""]
 開啟系統電源
 
 |===
-. https://["下載並完成叢集組態工作表"]。
+. https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["下載並完成叢集組態工作表"]。
 
 
 
@@ -433,16 +433,16 @@ NOTE: XXXXX是目標節點的系統序號。
 
 
 
-. 使用您在中收集的資料來設定系統 https://["《組態指南》ONTAP"]。
+. 使用您在中收集的資料來設定系統 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]。
 . 設定您的帳戶並下載Active IQ Config Advisor 更新：
 +
-.. 登入 https://["現有帳戶或建立及帳戶"]。
-.. https://["註冊"] 您的系統。
-.. 下載 https://["Active IQ Config Advisor"]。
+.. 登入 https://mysupport.netapp.com/site/user/registration["現有帳戶或建立及帳戶"]。
+.. https://mysupport.netapp.com/site/systems/register["註冊"] 您的系統。
+.. 下載 https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]。
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["本文檔 ONTAP"] 網站以取得在 ONTAP 中設定其他功能的相關資訊。
+. 完成初始組態之後、請前往 https://docs.netapp.com/us-en/ontap-family/["本文檔 ONTAP"] 網站以取得在 ONTAP 中設定其他功能的相關資訊。
 
 
 --
@@ -512,20 +512,20 @@ NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台
 .. 將瀏覽器指向節點管理IP位址。
 +
 
-NOTE: 位址的格式為 https://[]。
+NOTE: 位址的格式為 https://x.x.x.x[]。
 
-.. 使用您在中收集的資料來設定系統 https://["《組態指南》ONTAP"]。
+.. 使用您在中收集的資料來設定系統 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]。
 
 
 . 設定您的帳戶並下載Active IQ Config Advisor 更新：
 +
-.. 登入 https://["現有帳戶或建立及帳戶"]。
-.. https://["註冊"] 您的系統。
-.. 下載 https://["Active IQ Config Advisor"]。
+.. 登入 https://mysupport.netapp.com/site/user/registration["現有帳戶或建立及帳戶"]。
+.. https://mysupport.netapp.com/site/systems/register["註冊"] 您的系統。
+.. 下載 https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]。
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["本文檔 ONTAP"] 網站以取得在 ONTAP 中設定其他功能的相關資訊。
+. 完成初始組態之後、請前往 https://docs.netapp.com/us-en/ontap-family/["本文檔 ONTAP"] 網站以取得在 ONTAP 中設定其他功能的相關資訊。
 
 
 --

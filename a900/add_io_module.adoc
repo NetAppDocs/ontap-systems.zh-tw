@@ -14,8 +14,8 @@ summary: 您可以將I/O模組新增至系統、方法是在已完全安裝的�
 您可以將I/O模組新增至系統、方法是將新的I/O節點新增至具有空插槽的系統、或是將I/O模組更換為已完全安裝的系統中的新I/O模組。
 
 .開始之前
-* 請檢查 https://["NetApp Hardware Universe"^] 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。
-* 如果有多個插槽可用、請檢查中的插槽優先順序 https://["NetApp Hardware Universe"^] 並使用適用於您I/O模組的最佳工具。
+* 請檢查 https://hwu.netapp.com/["NetApp Hardware Universe"^] 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。
+* 如果有多個插槽可用、請檢查中的插槽優先順序 https://hwu.netapp.com/["NetApp Hardware Universe"^] 並使用適用於您I/O模組的最佳工具。
 * 若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。
 * 確定所有其他元件都正常運作。
 
@@ -162,7 +162,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。
 . 對控制器B重複這些步驟
-. 如果您安裝儲存I/O模組、請依照中所述、安裝NS224磁碟櫃並進行纜線連接 https://["熱新增NS224磁碟機櫃"^]。
+. 如果您安裝儲存I/O模組、請依照中所述、安裝NS224磁碟櫃並進行纜線連接 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"^]。
 
 
 
@@ -188,14 +188,14 @@ NIC I/O模組的連接埠數量相同
  a| 
 NIC I/O模組、連接埠較少
  a| 
-將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://["移轉LIF"^] 如需使用System Manager永久移動生命期的相關資訊、
+將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^] 如需使用System Manager永久移動生命期的相關資訊、
 
 
 
  a| 
 具有儲存I/O模組的NIC I/O模組
  a| 
-使用System Manager將lifs永久移轉至不同的主連接埠、如所述 https://["移轉LIF"^]。
+使用System Manager將lifs永久移轉至不同的主連接埠、如所述 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^]。
 
 |===
 
@@ -369,7 +369,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 
 +
 
-NOTE: 如果您在重新開機期間遇到問題、請參閱 https://["Burt 1494308 - 在 I/O 模組更換期間、可能會觸發環境關機"]
+NOTE: 如果您在重新開機期間遇到問題、請參閱 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308["Burt 1494308 - 在 I/O 模組更換期間、可能會觸發環境關機"]
 
 
 
@@ -392,7 +392,7 @@ NOTE: 如果您在重新開機期間遇到問題、請參閱 https://["Burt 1494
  a| 
 儲存模組
  a| 
-如所述、安裝並連接NS224磁碟櫃https://["熱新增NS224磁碟機櫃"^]。
+如所述、安裝並連接NS224磁碟櫃https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"^]。
 
 |===
 . 對控制器B重複這些步驟

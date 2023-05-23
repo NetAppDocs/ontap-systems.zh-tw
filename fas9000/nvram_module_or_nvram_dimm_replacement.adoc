@@ -443,7 +443,7 @@ _replacy_nodes將恢復其儲存設備並完成開機。
 NOTE: 如果被否決、您可以考慮覆寫否決。
 
 +
-http://["尋找ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）"]
 
 .. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
 +
@@ -480,7 +480,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 ** 此功能組態處於切換狀態。MetroCluster
 ** _replacement節點是災難站台上磁碟的目前擁有者。
 +
-https://["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"]
+https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"]
 
 
 
@@ -610,7 +610,7 @@ dr-group-id            cluster node           configuration-state
 .. 確認MetroCluster 已設定好此功能、並處於正常模式：MetroCluster 「show」
 .. 執行MetroCluster 功能不全的檢查：MetroCluster 「執行功能不全」
 .. 顯示MetroCluster 「不MetroCluster 實檢查」的結果：「不實檢查顯示」
-.. 執行Config Advisor請前往Config Advisor NetApp支援網站上的支援頁面、網址為 http://["support.netapp.com/NOW/download/tools/config_advisor/"]。
+.. 執行Config Advisor請前往Config Advisor NetApp支援網站上的支援頁面、網址為 http://support.netapp.com/NOW/download/tools/config_advisor/["support.netapp.com/NOW/download/tools/config_advisor/"]。
 +
 執行Config Advisor 完功能後、請檢閱工具的輸出結果、並依照輸出中的建議來解決發現的任何問題。
 
@@ -642,8 +642,8 @@ NOTE: 更換DIMM時不需要執行此步驟。
 .步驟
 . 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
 +
-** https://["還原內建金鑰管理加密金鑰"^]
-** https://["還原外部金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
 
 
 . 重設SED MSID
@@ -653,4 +653,4 @@ NOTE: 更換DIMM時不需要執行此步驟。
 
 == 步驟7：將故障零件歸還給NetApp
 
-如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://["產品退貨安培；更換"] 頁面以取得更多資訊。
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

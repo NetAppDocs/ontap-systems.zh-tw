@@ -21,9 +21,9 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。如果�
 
 您必須能夠存取Hardware Universe 有關站台需求的資訊、以及設定系統的其他資訊。您也可以存取ONTAP 版本的《發行說明》、以取得更多關於此系統的資訊。
 
-https://["NetApp Hardware Universe"^]
+https://hwu.netapp.com["NetApp Hardware Universe"^]
 
-http://["尋找ONTAP 您版本的更新說明"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 您版本的更新說明"^]
 
 您必須在網站上提供下列資訊：
 
@@ -40,7 +40,7 @@ image::../media/drw_ssn_label.png[DRw SSN標籤]
 
 . 清點並記下您收到的纜線數量和類型。
 +
-下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://["NetApp Hardware Universe"^] 找出纜線並識別其用途。
+下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^] 找出纜線並識別其用途。
 
 +
 [cols="1,2,1,2"]
@@ -157,7 +157,7 @@ image:../media/oie_cable_power.png[""]
 |===
 . 檢閱《_ NetApp ONTAP 資料保密指南》、並收集該指南所列的必要資訊。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 
 
@@ -191,7 +191,7 @@ image::../media/drw_a320_cable_management_arms.png[DRW A320纜線管理臂]
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
-NOTE: 如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽的左側）、然後尋找插卡、再依產品編號在中尋找插卡 https://["NetApp Hardware Universe"^] 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號 `sysconfig -a` 命令或系統壓縮清單上的。
+NOTE: 如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽的左側）、然後尋找插卡、再依產品編號在中尋找插卡 https://hwu.netapp.com["NetApp Hardware Universe"^] 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號 `sysconfig -a` 命令或系統壓縮清單上的。
 
 
 
@@ -323,26 +323,26 @@ NOTE: XXXXX是目標節點的系統序號。
 
 . 使用System Manager引導式設定、使用您在《_ NetApp ONTAP 資訊系統組態指南_》中收集的資料來設定您的系統。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 . 設定您的帳戶並下載Active IQ Config Advisor 更新：
 +
 .. 登入現有帳戶或建立帳戶。
 +
-https://["NetApp支援註冊"]
+https://mysupport.netapp.com/eservice/public/now.do["NetApp支援註冊"]
 
 .. 註冊您的系統。
 +
-https://["NetApp產品註冊"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
 
 .. 下載Active IQ Config Advisor
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
 
 
@@ -413,7 +413,7 @@ NOTE: 地址格式為+https://x.x.x.x.+
 
 .. 使用您在《NetApp ONTAP 產品介紹》指南中收集的資料來設定系統。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 
 
@@ -421,18 +421,18 @@ https://["《組態指南》ONTAP"]
 +
 .. 登入現有帳戶或建立帳戶。
 +
-https://["NetApp支援註冊"]
+https://mysupport.netapp.com/eservice/public/now.do["NetApp支援註冊"]
 
 .. 註冊您的系統。
 +
-https://["NetApp產品註冊"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
 
 .. 下載Active IQ Config Advisor
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 

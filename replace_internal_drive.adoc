@@ -16,8 +16,8 @@ summary: 若要關閉受損的控制器、您必須判斷控制器的狀態、�
 .開始之前
 * 最佳實務做法是在熱交換磁碟機之前、先安裝目前版本的磁碟認證套件（DQP）。
 * 從系統主控台執行「shorage disk show -disf肯」命令、以識別故障的磁碟機。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。
-* 如何熱交換磁碟取決於磁碟機的使用方式。如果已啟用SED驗證、您必須使用中的SED替換指示 https://["《NetApp加密電源指南》（英文）ONTAP"]。這些指示說明更換SED之前和之後、您必須執行的其他步驟。
-* 替換磁碟機必須由您的平台支援。請參閱 https://["NetApp Hardware Universe"]。
+* 如何熱交換磁碟取決於磁碟機的使用方式。如果已啟用SED驗證、您必須使用中的SED替換指示 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetApp加密電源指南》（英文）ONTAP"]。這些指示說明更換SED之前和之後、您必須執行的其他步驟。
+* 替換磁碟機必須由您的平台支援。請參閱 https://hwu.netapp.com["NetApp Hardware Universe"]。
 * 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
 
 

@@ -18,7 +18,7 @@ summary: 若要更換機箱、您必須關閉控制器。
 == 選項1：更換機箱時關閉控制器
 
 [role="lead"]
-此程序僅適用於雙節點非 MetroCluster 組態。如果您的系統有兩個以上的節點、請參閱 https://["如何在 4 節點叢集中執行一個 HA 配對的正常關機和開機"^]。
+此程序僅適用於雙節點非 MetroCluster 組態。如果您的系統有兩個以上的節點、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["如何在 4 節點叢集中執行一個 HA 配對的正常關機和開機"^]。
 
 .開始之前
 您需要：
@@ -32,19 +32,19 @@ summary: 若要更換機箱、您必須關閉控制器。
 
 
 
-NOTE: 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://["正常關機並開啟儲存系統解析指南"] 執行此程序之後。
+NOTE: 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["正常關機並開啟儲存系統解析指南"] 執行此程序之後。
 
 
 NOTE: 如果使用 FlexArray 陣列 LUN 、請遵循特定廠商的儲存陣列文件、以瞭解在執行此程序之後、要對這些系統執行的關機程序。
 
 
-NOTE: 如果使用 SSD 、請參閱 https://["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]
+NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]
 
 關機前的最佳做法是：
 
-* 執行其他 https://["系統健全狀況檢查"]。
+* 執行其他 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["系統健全狀況檢查"]。
 * 將 ONTAP 升級至建議的系統版本。
-* 解決任何問題 https://["Active IQ 健康警示與風險"]。記下系統上目前存在的任何故障、例如系統元件上的 LED 。
+* 解決任何問題 https://activeiq.netapp.com/["Active IQ 健康警示與風險"]。記下系統上目前存在的任何故障、例如系統元件上的 LED 。
 
 
 .步驟

@@ -48,7 +48,7 @@ HA狀態的值可以是下列其中一項：
 . 將搖桿切換至 * 開啟 * 、然後等待控制器完全開機、以開啟 PSU 。
 . 開機後、請檢查機箱和控制器的正面和背面是否有任何故障指示燈。
 . 透過 SSH 連線至節點的 SP 或 BMC IP 位址。此位址與用於關閉節點的位址相同。
-. 如所述、執行其他健全狀況檢查 https://["how to 執行 _a_cluster_health 檢查與 _a_script_in_ONTAP"^]
+. 如所述、執行其他健全狀況檢查 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["how to 執行 _a_cluster_health 檢查與 _a_script_in_ONTAP"^]
 . 重新開啟 AutoSupport （結束維護期間訊息）：
 `system node autosupport invoke -node * -type all -message MAINT=end`
 
@@ -58,9 +58,9 @@ HA狀態的值可以是下列其中一項：
 
 NOTE: 最佳實務做法是：
 
-* 解決任何問題 https://["Active IQ 健康警示與風險"^] （ Active IQ 需要時間來處理開機後自動支援、預期結果會延遲）
-* 執行 https://["Active IQ Config Advisor"^]
-* 使用檢查系統健全狀況 https://["how to 執行 _a_cluster_health 檢查與 _a_script_in_ONTAP"^]
+* 解決任何問題 https://activeiq.netapp.com/["Active IQ 健康警示與風險"^] （ Active IQ 需要時間來處理開機後自動支援、預期結果會延遲）
+* 執行 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]
+* 使用檢查系統健全狀況 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["how to 執行 _a_cluster_health 檢查與 _a_script_in_ONTAP"^]
 
 
 ====
@@ -184,4 +184,4 @@ NOTE: 您必須先結束兩個控制器的維護模式、然後再繼續進行�
 
 == 步驟4：將故障零件歸還給NetApp
 
-如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://["產品退貨安培；更換"] 頁面以取得更多資訊。
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

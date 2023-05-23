@@ -2,7 +2,7 @@
 permalink: a150/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: aff a150, a150, aff, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: '若要將系統還原為完整運作、您必須還原NetApp儲存加密組態（如有必要）、並安裝新控制器的授權、然後將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請聯絡技術支援人員： https://["NetApp支援"]如果您需要RMA編號或更換程序的其他協助、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。' 
+summary: '若要將系統還原為完整運作、您必須還原NetApp儲存加密組態（如有必要）、並安裝新控制器的授權、然後將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請聯絡技術支援人員： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]如果您需要RMA編號或更換程序的其他協助、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。' 
 ---
 = 完整系統還原- AFF 還原為VA150
 :allow-uri-read: 
@@ -28,7 +28,7 @@ summary: '若要將系統還原為完整運作、您必須還原NetApp儲存加�
 您有90天的寬限期可以安裝授權金鑰。寬限期過後、所有舊授權都會失效。安裝有效的授權金鑰之後、您有24小時的時間可以在寬限期結束之前安裝所有金鑰。
 
 .步驟
-. 如果您需要新的授權金鑰、請在上取得替換授權金鑰 https://["NetApp 支援網站"] 在「軟體授權」下的「我的支援」區段中。
+. 如果您需要新的授權金鑰、請在上取得替換授權金鑰 https://mysupport.netapp.com/site/global/dashboard["NetApp 支援網站"] 在「軟體授權」下的「我的支援」區段中。
 +
 
 NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔案上的電子郵件地址。如果您在30天內未收到附有授權金鑰的電子郵件、請聯絡技術支援部門。
@@ -56,7 +56,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 . 向NetApp支援部門註冊系統序號。
 +
 ** 如果啟用了「支援」功能、請傳送「支援」訊息來登錄序號。AutoSupport AutoSupport
-** 如果AutoSupport 未啟用此功能、請致電 https://["NetApp支援"] 以登錄序號。
+** 如果AutoSupport 未啟用此功能、請致電 https://mysupport.netapp.com["NetApp支援"] 以登錄序號。
 
 
 . 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
@@ -124,4 +124,4 @@ Remote: cluster_A configured      		normal
 
 == 步驟4：將故障零件歸還給NetApp
 
-如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://["產品退貨安培；更換"] 頁面以取得更多資訊。
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

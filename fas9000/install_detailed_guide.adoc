@@ -22,9 +22,9 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 .開始之前
 您必須能夠存取Hardware Universe 有關站台需求的資訊、以及設定系統的其他資訊。您也可以存取ONTAP 版本的《發行說明》、以取得更多關於此系統的資訊。
 
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
-http://["尋找ONTAP 您版本的更新說明"]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 您版本的更新說明"]
 
 您必須在網站上提供下列資訊：
 
@@ -44,7 +44,7 @@ image::../media/drw_ssn_label.png[DRw SSN標籤]
 下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱Hardware Universe 《關於找出纜線並識別其用途的資訊》。
 
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 +
 [cols="1,2,1,2"]
@@ -172,7 +172,7 @@ image:../media/oie_cable_power.png[""]
 |===
 . 檢閱《_ NetApp ONTAP 資料保密指南》、並收集該指南所列的必要資訊。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 
 
@@ -313,7 +313,7 @@ image:../media/SAS_storage_ONTAP_9.8_and_later.png[""]
 NOTE: 如果您有多個磁碟機櫃堆疊、請參閱磁碟機櫃類型的_安裝與佈線指南_。
 
 +
-https://["安裝及纜線架以安裝新的系統-機櫃內有IOM12模組"]
+https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["安裝及纜線架以安裝新的系統-機櫃內有IOM12模組"]
 
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
@@ -448,26 +448,26 @@ NOTE: XXXXX是目標節點的系統序號。
 
 . 使用System Manager引導式設定、使用您在《_ NetApp ONTAP 資訊系統組態指南_》中收集的資料來設定您的系統。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 . 設定您的帳戶並下載Active IQ Config Advisor 更新：
 +
 .. 登入現有帳戶或建立帳戶。
 +
-https://["NetApp支援註冊"]
+https://mysupport.netapp.com/eservice/public/now.do["NetApp支援註冊"]
 
 .. 註冊您的系統。
 +
-https://["NetApp產品註冊"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
 
 .. 下載Active IQ Config Advisor
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
 
 
@@ -542,7 +542,7 @@ NOTE: 地址格式為+https://x.x.x.x.+
 
 .. 使用您在《NetApp ONTAP 產品介紹》指南中收集的資料來設定系統。
 +
-https://["《組態指南》ONTAP"]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
 
 
@@ -550,18 +550,18 @@ https://["《組態指南》ONTAP"]
 +
 .. 登入現有帳戶或建立帳戶。
 +
-https://["NetApp支援註冊"]
+https://mysupport.netapp.com/eservice/public/now.do["NetApp支援註冊"]
 
 .. 註冊您的系統。
 +
-https://["NetApp產品註冊"]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
 
 .. 下載Active IQ Config Advisor
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 

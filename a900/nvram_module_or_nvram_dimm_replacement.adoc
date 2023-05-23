@@ -352,7 +352,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 NOTE: 如果被否決、您可以考慮覆寫否決。
 
 +
-如需詳細資訊、請參閱 https://["手動恢復命令"^] 取代否決的主題。
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動恢復命令"^] 取代否決的主題。
 
 .. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
 +
@@ -389,7 +389,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 ** 此功能組態處於切換狀態。MetroCluster
 ** 替換控制器是災難站台上磁碟的目前擁有者。
 +
-請參閱 https://["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"] 以取得更多資訊。
+請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"] 以取得更多資訊。
 
 
 
@@ -562,4 +562,4 @@ NOTE: 您可以使用 `security key-manager key query -key-type NSE-AK` 檢視�
 
 == 步驟7：將故障零件歸還給NetApp
 
-如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://["產品退貨安培；更換"] 頁面以取得更多資訊。
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

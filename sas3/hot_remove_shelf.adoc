@@ -27,7 +27,7 @@ NOTE: 對於使用多重路徑連線的外接式儲存設備、FAS2600系列單�
 您可以下載並執行Active IQ Config Advisor 此功能、以檢視任何SAS纜線錯誤訊息、以及您應採取的修正行動。
 
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 * HA配對組態無法處於接管狀態。
 * 您必須從要移除的磁碟櫃中、移除磁碟機的所有集合體（磁碟機必須是備用磁碟機）。
@@ -52,7 +52,7 @@ NOTE: 如果您嘗試在您要移除的磁碟櫃上執行此程序、可能會�
 ====
 移除磁碟機擁有權的程序需要停用磁碟擁有權自動指派。在此程序結束時、您可以重新啟用磁碟擁有權自動指派。
 
-https://["磁碟與集合體總覽"]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html["磁碟與集合體總覽"]
 
 ====
 * 對於ONTAP 超過兩個節點的叢集式支援系統、最佳做法是將epsilon重新指派給正在進行規劃維護的HA配對。

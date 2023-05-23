@@ -14,8 +14,8 @@ summary: 您可以在系統中新增I/O模組、方法是將NIC或儲存介面�
 您可以在系統中新增I/O模組、方法是將NIC或儲存介面卡更換為已完全安裝的系統中的新NIC或儲存介面卡、或是將新的NIC或儲存介面卡新增至系統中的空機箱插槽。
 
 .開始之前
-* 請檢查 https://["NetApp Hardware Universe"] 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。
-* 如果有多個插槽可用、請檢查中的插槽優先順序 https://["NetApp Hardware Universe"] 並使用適用於您I/O模組的最佳工具。
+* 請檢查 https://hwu.netapp.com/["NetApp Hardware Universe"] 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。
+* 如果有多個插槽可用、請檢查中的插槽優先順序 https://hwu.netapp.com/["NetApp Hardware Universe"] 並使用適用於您I/O模組的最佳工具。
 * 若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。
 * 確定所有其他元件都正常運作。
 

@@ -28,14 +28,14 @@ summary: 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增�
 
 * 您的系統和版本ONTAP 的支援必須支援熱新增的磁碟櫃、包括IOM、磁碟機和SAS纜線。
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 * 您的系統必須少於所支援的磁碟機數量上限、至少要少於您計畫要熱新增的磁碟櫃數量。
 +
 在熱新增磁碟櫃之後、您無法超過系統所支援的磁碟機數量上限。
 
 +
-https://["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"]
 
 * 如果您要熱新增一或多個磁碟櫃堆疊（直接新增至平台控制器）、則系統必須有足夠的可用PCI SAS HBA或內建SAS連接埠、或兩者的組合。
 +
@@ -54,7 +54,7 @@ https://["NetApp Hardware Universe"]
 您必須使用錯誤訊息所提供的修正動作來修正任何纜線錯誤。
 
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 
 
@@ -110,7 +110,7 @@ https://["NetApp下載Config Advisor"]
 安裝最新版的DQP可讓您的系統辨識並使用新的合格磁碟機、因此可避免系統事件訊息顯示非最新磁碟機資訊。您也可以避免因為無法識別磁碟機、而導致磁碟分割的可能預防。此外、DQP也會通知您非最新的磁碟機韌體。
 
 +
-https://["NetApp下載：磁碟認證套件"^]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["NetApp下載：磁碟認證套件"^]
 
 * 最佳實務做法是Config Advisor 在熱新增磁碟櫃之前和之後執行
 +
@@ -123,17 +123,17 @@ https://["NetApp下載：磁碟認證套件"^]
 您需要網路存取才能下載Config Advisor 此功能。
 
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 * 最佳實務做法是在新增磁碟櫃、磁碟櫃FRU元件或SAS纜線之前、先在系統上安裝目前版本的磁碟櫃（IOM）韌體和磁碟機韌體。
 +
 如需最新版本的韌體、請參閱NetApp支援網站。
 
 +
-https://["NetApp下載：磁碟櫃韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
 
 +
-https://["NetApp下載：磁碟機韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
 
 
 
@@ -451,7 +451,7 @@ NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長�
 
 . 下載並執行Config Advisor 更新以確認SAS連線正確。
 +
-https://["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
 
 +
 如果產生任何SAS纜線錯誤、請遵循所提供的修正行動。
