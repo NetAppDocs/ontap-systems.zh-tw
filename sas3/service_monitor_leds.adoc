@@ -40,7 +40,7 @@ image:../media/drw_sas_power_icon.png[""]
 .2+| image:../media/drw_sas_fault_icon.png[""] .2+| 注意  a| 
 持續亮起黃色燈號
  a| 
-多個FRU的功能發生錯誤：磁碟櫃、磁碟機、IOM12模組或電源供應器。
+多個 FRU 的功能發生錯誤：磁碟櫃、磁碟機、 IOM12/ IOM12B 模組或電源供應器。
 
 檢查事件訊息、以確定要採取的修正行動。
 
@@ -64,7 +64,7 @@ image:../media/drw_sas3_location_icon.gif[""]
  a| 
 系統管理員啟動此LED功能、以協助實際找出需要維修的磁碟櫃。
 
-此LED功能啟動時、操作員顯示面板上的位置LED和兩個IOM12模組都會亮起。位置LED會在30分鐘後自動關閉。
+啟動此 LED 功能時、操作員顯示面板上的位置 LED 和兩個 IOM12/ IOM12B 模組都會亮起。位置LED會在30分鐘後自動關閉。
 
 |===
 視磁碟櫃機型而定、操作員顯示面板看起來不同、但三個LED的排列方式相同。
@@ -75,13 +75,13 @@ image::../media/drw_opd.gif[DRw選項]
 
 
 
-== IOM12模組LED
+== IOMM12 / IOM12B 模組 LED
 
-IOM12模組上的LED會指出模組是否正常運作、是否已準備好處理I/O流量、以及硬體是否有任何問題。
+IOM12/ IOM12B 模組上的 LED 會指出模組是否正常運作、是否已準備好處理 I/O 流量、以及硬體是否有任何問題。
 
-下表說明與模組功能相關的IOM12模組LED、以及模組上每個SAS連接埠的功能。
+下表說明與模組功能相關的 IOM12/ IOM12B 模組 LED 、以及模組上每個 SAS 連接埠的功能。
 
-IOM12模組用於DS460C、DS224C和DS212C磁碟櫃。
+IOM12/ IOM12B 模組用於 DS460C 、 DS224C 和 DS212C 磁碟櫃。
 
 [cols="4*"]
 |===
@@ -95,7 +95,7 @@ image:../media/drw_sas_fault_icon.png[""]
  a| 
 持續亮起黃色燈號
  a| 
-IOM12模組功能：IOM12模組功能發生錯誤。
+IOM12/ IOM12B 模組功能： IOM12/ IOM12B 模組功能發生錯誤。
 
 SAS連接埠功能：不到四個SAS通道建立連結（使用介面卡或其他磁碟櫃）。
 
@@ -121,14 +121,18 @@ image:../media/drw_sas3_location_icon.gif[""]
  a| 
 持續亮藍燈
  a| 
-系統管理員啟動此LED功能、協助以故障的IOM12模組實際定位磁碟櫃。
+系統管理員啟動此 LED 功能、以協助實體定位故障 IOM12/ IOM12B 模組的磁碟機櫃。
 
-此LED功能啟動時、操作員顯示面板上的位置LED和兩個IOM12模組都會亮起。位置LED會在30分鐘後自動關閉。
+啟動此 LED 功能時、操作員顯示面板上的位置 LED 和兩個 IOM12/ IOM12B 模組都會亮起。位置LED會在30分鐘後自動關閉。
 
 |===
-下列圖示適用於IOM12模組：
+下圖為 IOM12 模組：
 
 image::../media/drw_iom12.gif[DRw iom12]
+
+IOM12B模組以藍色等量磁碟區和「IOM12B」標籤加以區分：
+
+image::../media/iom12b.png[iom12b.]
 
 
 

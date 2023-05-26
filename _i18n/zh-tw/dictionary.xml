@@ -3414,7 +3414,6 @@
   <block id="c61664b995859451c9b18dba9398d36e" category="cell"><block ref="c61664b995859451c9b18dba9398d36e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2aa97e44cace7cb882c9dcba32940f8f" category="cell">注意</block>
   <block id="75e6252bb5a504fc80a435f3c6fc7c82" category="paragraph">持續亮起黃色燈號</block>
-  <block id="a91f4dbac042acc9674c8f30f0009e10" category="paragraph">多個FRU的功能發生錯誤：磁碟櫃、磁碟機、IOM12模組或電源供應器。</block>
   <block id="42532600d34fb5884550b5ba06c71866" category="paragraph">檢查事件訊息、以確定要採取的修正行動。</block>
   <block id="5bb2376fdbdd8b69f07ffed693784a70" category="paragraph">呈黃色持續亮起</block>
   <block id="59ee562359b2b7e862570a57471bda07" category="paragraph">機櫃ID處於擱置狀態。</block>
@@ -3423,21 +3422,13 @@
   <block id="ce5bf551379459c1c61d2a204061c455" category="paragraph">位置</block>
   <block id="d4300cfa84e2e26784840198a0cbd030" category="paragraph">持續亮藍燈</block>
   <block id="dcef7e6e25f4d0285a65c6e2456b274e" category="paragraph">系統管理員啟動此LED功能、以協助實際找出需要維修的磁碟櫃。</block>
-  <block id="2c64d9557c9a2aa50849a46c94063cbf" category="paragraph">此LED功能啟動時、操作員顯示面板上的位置LED和兩個IOM12模組都會亮起。位置LED會在30分鐘後自動關閉。</block>
   <block id="735b119b02d7cf2ed75726f0f7dd0561" category="paragraph">視磁碟櫃機型而定、操作員顯示面板看起來不同、但三個LED的排列方式相同。</block>
   <block id="5d405fcbf9fe0221fc5a388844b43691" category="paragraph">下圖為DS224C磁碟櫃操作員顯示面板、端蓋位於：</block>
   <block id="619a6c64b692f7c7d530acc10ff465bd" category="image-alt">DRw選項</block>
-  <block id="578194735681dfccf0ab5a7f231ad3eb" category="section-title">IOM12模組LED</block>
-  <block id="4bd9e80f0885938495ab10fad1f15091" category="paragraph">IOM12模組上的LED會指出模組是否正常運作、是否已準備好處理I/O流量、以及硬體是否有任何問題。</block>
-  <block id="43887fc5a62c282f3e5be085309f0a65" category="paragraph">下表說明與模組功能相關的IOM12模組LED、以及模組上每個SAS連接埠的功能。</block>
-  <block id="1a2971baecb92cc9a6f46a52fdbc4383" category="paragraph">IOM12模組用於DS460C、DS224C和DS212C磁碟櫃。</block>
-  <block id="16dd5aba0d994e6b3b2ad2851ff70375" category="paragraph">IOM12模組功能：IOM12模組功能發生錯誤。</block>
   <block id="06193ae5b75dce356ceef150051cbba7" category="paragraph">SAS連接埠功能：不到四個SAS通道建立連結（使用介面卡或其他磁碟櫃）。</block>
   <block id="96c5571f7b6648b76366cba9755c4f43" category="paragraph">lnk</block>
   <block id="19e79e9ef0fa80f9b6aa5a3f8e5bb42c" category="paragraph">連接埠連結</block>
   <block id="e35abb0fc157a472260600f52f6994cc" category="paragraph">四個SAS通道中的一個或多個建立了連結（使用介面卡或其他磁碟櫃）。</block>
-  <block id="85eed6af8a7071f352ad78220d797f3b" category="paragraph">系統管理員啟動此LED功能、協助以故障的IOM12模組實際定位磁碟櫃。</block>
-  <block id="11e1a575acb39145b730906b42d580a1" category="paragraph">下列圖示適用於IOM12模組：</block>
   <block id="f2105620d136a321a397d0310e98f133" category="image-alt">DRw iom12</block>
   <block id="2aa3adf1c0ff2c8444260a0e888c02bc" category="section-title">電源供應器LED</block>
   <block id="09cdf702b67ff26e9a51e5bd564332db" category="paragraph">電源供應器上的LED會指出電源供應器是否正常運作、或是有硬體問題。</block>
@@ -5805,7 +5796,6 @@
   <block id="af8bfd864201a671af1e6f74d8b07735" category="section-title">必要的纜線連接：將纜線控制器連接至叢集</block>
   <block id="7ac93f10f464cf00780a0b5d89f972b2" category="paragraph">使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至叢集。</block>
   <block id="b97bdff613a0ca54c0d7c15ca245a1f5" category="paragraph">控制器模組上的管理、光纖通道及資料或主機網路連接埠均連接至交換器。兩個控制器模組上的叢集互連連接埠均已連接好纜線。</block>
-  <block id="f2633075828362900ca73919da819a29" category="paragraph">使用25GbE叢集互連纜線將叢集互連連接埠彼此連接<block ref="6b6a40b68f5814cad1750bfff7e3b927" category="inline-image-macro-rx" type="image"></block>：</block>
   <block id="59fffbd09d1c7158959327a869b9292f" category="list-text">e0c至e0c</block>
   <block id="de629fe3167cc52423821046b02074e3" category="list-text">e0d至e0d<block ref="5d8d8fe980b572286e75db6ff18d3cbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9fe24c609326a57c3fef0ffe189c165b" category="paragraph"><block ref="9fe24c609326a57c3fef0ffe189c165b" category="inline-image-macro-rx" type="image"></block></block>
@@ -5819,7 +5809,6 @@
   <block id="af28ebab5d3a50ec2aa0d0aefd31b178" category="paragraph">您可以選擇是否要連接至光纖通道或iSCSI主機網路或直接附加儲存設備、以設定為相依。這種佈線並非專屬、您可以使用佈線連接至主機網路和儲存設備。</block>
   <block id="97af7274dc94a2eacaad27110ee92a44" category="section-title">選項1：連接至光纖通道主機網路的纜線</block>
   <block id="b24498c2793e7d8d3cefa3bb843a56da" category="paragraph">控制器上的Fibre Channel連接埠連接至Fibre Channel主機網路交換器。</block>
-  <block id="58c441d64314c2082defd9f79f4f5d89" category="paragraph">將連接埠2a至2D連接至FC主機交換器。<block ref="8c69ea1e01dd0a307f5cc8e68a746e18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="paragraph">2.</block>
   <block id="41c3aa6b15da307401c926e42ea6e535" category="paragraph">若要執行其他選用的纜線、請選擇：</block>
   <block id="56207a9d07b6607ddcfada226919fb00" category="list-text"><block ref="9f2a6ae0f8e4e0c002cabfcf0d3b8027" category="inline-xref-macro-rx"></block></block>
@@ -5827,7 +5816,6 @@
   <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="paragraph">3.</block>
   <block id="46bef70db2abdd00f0d4fccb83fbd3db" category="section-title">選項2：連接至25GbE資料或主機網路的纜線</block>
   <block id="2283d2460c1fb366154589c8106aeabb" category="paragraph">控制器上的25GbE連接埠連接至25GbE資料或主機網路交換器。</block>
-  <block id="291805e5f6e41a41cff79176c18b9bbc" category="paragraph">將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。<block ref="4d47a33513883c069cdd23a129a70f98" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3ee99f95dccd989449c31c5582a02a92" category="list-text"><block ref="9d121b80040875d39da3830ae414ba9b" category="inline-xref-macro-rx"></block></block>
   <block id="b508a654c509eed8ec1ae4dc75fdfc9a" category="section-title">選項3：將控制器連接至單一磁碟機櫃</block>
   <block id="0e103ad5ee434b2faca19141061cbe51" category="paragraph">將每個控制器連接至NS224磁碟機櫃上的NSM模組。</block>
@@ -7946,4 +7934,48 @@
   <block id="6266bb335022aad7813f5a92f40c41bb" category="list-text">在筆記型電腦或主控台上使用 System Manager 來設定叢集。</block>
   <block id="b1e0a8fb86dde21901d58064a47983ae" category="paragraph">瞭解如何透過初始系統開機、從機架和纜線安裝系統。使用 <block ref="2e869cac122e3063f7b418f03cb3fa26" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="78504a496ba3e0d8a682fe929b4d61d9" category="paragraph"><block ref="78504a496ba3e0d8a682fe929b4d61d9" category="inline-link-macro-rx"></block></block>
+  <block id="79386daaa48888ed81c00ef493d329e9" category="paragraph">如果您有 MetroCluster 組態、請使用<block ref="d4b6e949edad9293b177bc65e2892165" category="inline-link-rx"></block>。</block>
+  <block id="9b9935ad5969c28de13381a2e512b47c" category="paragraph">附註：</block>
+  <block id="25ca1a1b0a04d8f5341dca5c9e9eed8a" category="list-text">請確定您可以存取 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （ HWU ）以取得站台需求的相關資訊。</block>
+  <block id="b00f162fad84edda46484fcada242a8c" category="inline-link">HWU</block>
+  <block id="0b596d3b9a72deeb4bca2c3f00662c30" category="list-text">有特定電力需求的客戶必須檢查<block ref="911e5b8f28f318acfdc1d057cd36b40e" category="inline-link-rx"></block> 以取得組態選項。</block>
+  <block id="50bb0852475aeb4d407a01f8d637ccae" category="list-text">請確定您可以存取 <block ref="515d1814cb0f36c56a64a6574d93c9df" category="inline-link-macro-rx"></block> 以取得此系統的詳細資訊。</block>
+  <block id="eba4465f65ac7360936f8f238b09999c" category="list-text">額外的網路纜線、可將您的系統連接至網路交換器、筆記型電腦或主控台、並使用網頁瀏覽器。</block>
+  <block id="c7e4a9edbb9ec3bb0052efd3332763a3" category="section-title">步驟 3 ：將控制器連接至叢集</block>
+  <block id="089103029c56ad66034dfe6bd70cfdcb" category="paragraph">使用動畫或表格步驟完成控制器與交換器之間的纜線。在每個控制器上執行步驟。</block>
+  <block id="38e134ad6d648c53626268f8b6a82510" category="list-text">使用 25GbE 叢集互連纜線、將叢集互連連接埠 e0c 連接至 e0c 、並將 e0d 連接至 e0<block ref="6b6a40b68f5814cad1750bfff7e3b927" category="inline-image-macro-rx" type="image"></block>：</block>
+  <block id="5d8d8fe980b572286e75db6ff18d3cbc" category="paragraph"><block ref="5d8d8fe980b572286e75db6ff18d3cbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="84e68180cd83b83ca12149fed857f1ac" category="list-text">將叢集互連連接埠 e0c 和 e0d 連接至 25 GbE 叢集互連交換器。</block>
+  <block id="ee3f9d0ec20204c7d48b52d859e31c4d" category="paragraph"><block ref="ee3f9d0ec20204c7d48b52d859e31c4d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="40a8f8b2f4ff5acd74232849a99a8a04" category="section-title">步驟 4 ：連接主機網路或儲存設備的纜線（選用）</block>
+  <block id="03c1ffcb3fc95b8bfccde9eae4c521cb" category="open-title">選項 1 ：連接至光纖通道主機網路的纜線</block>
+  <block id="57f232cf1846457526a67fb857654097" category="paragraph">在每個控制器模組上執行步驟。</block>
+  <block id="8c69ea1e01dd0a307f5cc8e68a746e18" category="paragraph"><block ref="8c69ea1e01dd0a307f5cc8e68a746e18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d47a33513883c069cdd23a129a70f98" category="paragraph"><block ref="4d47a33513883c069cdd23a129a70f98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db24b10d7ccee1e6c17be0c81439dce8" category="open-title">選項 3 ：將纜線控制器連接至單一磁碟機櫃</block>
+  <block id="8fb418cbd362c972abff9e15e5bbef81" category="paragraph">使用動畫或表格步驟、完成控制器與單一機櫃之間的纜線。在每個控制器模組上執行步驟。</block>
+  <block id="26f36b74d2b5930cb4c8a791d8825169" category="list-text">纜線控制器 A 至機櫃。</block>
+  <block id="18f599f35e14d88c5e3fb9f75197e3c8" category="paragraph"><block ref="18f599f35e14d88c5e3fb9f75197e3c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e9ad1feb0945eeeb8a1d11bf9bf539e" category="list-text">纜線控制器 B 至機櫃。</block>
+  <block id="f822d74484a7588f78ead07185e89b82" category="paragraph"><block ref="f822d74484a7588f78ead07185e89b82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a363ebbaf5776be0c980b7b95cd927d3" category="inline-link">現有帳戶或建立帳戶</block>
+  <block id="50350463d29f0dd6d00e1fbb6e5ee301" category="list-text">登入<block ref="7d7bd8ac0b1a83207c698de0ebfd0970" category="inline-link-rx"></block>。</block>
+  <block id="d8c9578f313af4d30124d95a9a82f55a" category="list-text"><block ref="45857239f243800c6028823fe1bb7167" category="inline-link-macro-rx"></block> 您的系統。</block>
+  <block id="42608111c1df97efb2c5e1785a0c9236" category="paragraph">使用雙節點無交換器叢集方法或使用叢集互連網路方法、將控制器連接至叢集。</block>
+  <block id="940761e28da4b693854d6f9dd90cf253" category="video-title">動畫 - 纜線雙節點無交換器叢集</block>
+  <block id="e8da070fbb7ed9f4e58234be76f00e95" category="list-text">使用 25GbE 叢集互連纜線將叢集互連連接埠 e0c 連接至 e0c 、 e0d 連接至 e0d 。</block>
+  <block id="c26780590002425e46bd9c5734245466" category="paragraph">使用動畫或步驟完成控制器與交換器之間的纜線。在每個控制器上執行步驟。</block>
+  <block id="76cc458c90f11508f1ec83bed8953ef1" category="video-title">動畫 - 纜線交換式叢集</block>
+  <block id="f7d77014760bf79c9b9469d98b1e031b" category="admonition">插入連接器時、您應該會覺得它卡入定位；如果您不覺得它卡住、請將其移除、然後將其轉過來、然後再試一次。</block>
+  <block id="ed7a3f593115fbd1332dbd3743a9967c" category="paragraph">在每個控制器模組上執行下列步驟。</block>
+  <block id="63acd4af39a4e0dda6fe6c3d381743a7" category="open-title">選項 2 ：連接至 25GbE 資料或主機網路的纜線</block>
+  <block id="2b5c65d5b0abc122c914eec510d083ae" category="paragraph">多個 FRU 的功能發生錯誤：磁碟櫃、磁碟機、 IOM12/ IOM12B 模組或電源供應器。</block>
+  <block id="179393dc95adf2d21fee0c7a4ac43a35" category="paragraph">啟動此 LED 功能時、操作員顯示面板上的位置 LED 和兩個 IOM12/ IOM12B 模組都會亮起。位置LED會在30分鐘後自動關閉。</block>
+  <block id="a0e54d8ccf5f2c0e80dde9c632b59a06" category="section-title">IOMM12 / IOM12B 模組 LED</block>
+  <block id="d513e2f89875e1250513a03a56fb4689" category="paragraph">IOM12/ IOM12B 模組上的 LED 會指出模組是否正常運作、是否已準備好處理 I/O 流量、以及硬體是否有任何問題。</block>
+  <block id="94d8e14101b7f4ab9a744f00e8e2fe29" category="paragraph">下表說明與模組功能相關的 IOM12/ IOM12B 模組 LED 、以及模組上每個 SAS 連接埠的功能。</block>
+  <block id="90f41460d3ad083904e7b340e4b39ece" category="paragraph">IOM12/ IOM12B 模組用於 DS460C 、 DS224C 和 DS212C 磁碟櫃。</block>
+  <block id="1ed7e5bc49edc6dcd82d94adaa712607" category="paragraph">IOM12/ IOM12B 模組功能： IOM12/ IOM12B 模組功能發生錯誤。</block>
+  <block id="661a269cef9bb91a2f8b4d733118a2eb" category="paragraph">系統管理員啟動此 LED 功能、以協助實體定位故障 IOM12/ IOM12B 模組的磁碟機櫃。</block>
+  <block id="a78123fcf223e9fb14720d2a07e2ef85" category="paragraph">下圖為 IOM12 模組：</block>
 </blocks>

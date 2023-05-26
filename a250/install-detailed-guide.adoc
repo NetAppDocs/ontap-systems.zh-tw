@@ -19,17 +19,19 @@ summary: 本節將詳細說明如何安裝AFF VA250系統。
 
 若要安裝AFF 您的VA250系統、您需要建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
 
-您必須能夠存取 link:https://hwu.netapp.com["NetApp Hardware Universe"^] （HWU）以取得站台需求的相關資訊、以及設定系統的其他資訊。您可能也想要存取 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["版本的發行說明ONTAP"^] 以取得此系統的詳細資訊。
-
 
 NOTE: 具有特定電力需求的客戶必須檢查HWU的組態選項。
 
-.您需要的一切
-您必須在網站上提供下列資訊：
+.開始之前
+* 請確定您可以存取 link:https://hwu.netapp.com["NetApp Hardware Universe"^] （ HWU ）以取得站台需求的相關資訊。
+* 請確定您可以存取 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["版本的發行說明ONTAP"^] 以取得此系統的詳細資訊。
+* 您必須在網站上提供下列資訊：
++
+** 儲存系統的機架空間
+** 2號十字螺絲起子
+** 其他網路纜線、可將系統連接至網路交換器、筆記型電腦或主控台、並使用網路瀏覽器
 
-* 儲存系統的機架空間
-* 2號十字螺絲起子
-* 其他網路纜線、可將系統連接至網路交換器、筆記型電腦或主控台、並使用網路瀏覽器
+
 
 
 .步驟
@@ -41,7 +43,7 @@ image::../media/drw_ssn_label.png[DRw SSN標籤]
 . 設定您的帳戶：
 +
 .. 登入現有帳戶或建立帳戶。
-.. 註冊（link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"^]）您的系統。
+.. link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["註冊"^] 您的系統。
 
 
 . 下載並安裝 link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"^] 在筆記型電腦上。
@@ -161,222 +163,149 @@ image::../media/drw_affa250_weight_caution.png[DRw affa250重量注意事項]
 
 
 
-== 步驟3：纜線控制器
+== 步驟 3 ：將控制器連接至叢集
 
-使用雙節點無交換式叢集方法或叢集互連網路方法、您的平台叢集需要佈線。光纖通道或iSCSI主機網路或直接附加儲存設備可選用纜線。這種纜線並非獨家、您可以使用纜線連接主機網路和儲存設備。
+使用雙節點無交換器叢集方法或使用叢集互連網路方法、將控制器連接至叢集。
 
-
-
-=== 必要的纜線連接：將纜線控制器連接至叢集
-
-使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至叢集。
-
-
-
-==== 選項1：連接雙節點無交換式叢集
-
+[role="tabbed-block"]
+====
+.選項1：雙節點無交換器叢集
+--
 控制器模組上的管理、光纖通道及資料或主機網路連接埠均連接至交換器。兩個控制器模組上的叢集互連連接埠均已連接好纜線。
 
 .開始之前
-如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
+* 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
++
 image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
 
++
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
 
-使用動畫或表格步驟完成控制器與交換器之間的佈線：
 
-.動畫-連接雙節點無交換器叢集
+
+.關於這項工作
+使用動畫或表格步驟完成控制器與交換器之間的纜線。在每個控制器上執行步驟。
+
+.動畫 - 纜線雙節點無交換器叢集
 video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto]
-[cols="10,90"]
-|===
-| 步驟 | 在每個控制器上執行 
+.步驟
+. 使用 25GbE 叢集互連纜線將叢集互連連接埠 e0c 連接至 e0c 、 e0d 連接至 e0d 。
++
+image:../media/oie_cable_sfp_gbe_copper.png[""]：
 
++
+image:../media/drw_affa250_tnsc_cabling.png[""]
 
- a| 
-image:../media/oie_legend_icon_1_lg.png[""]
- a| 
-使用25GbE叢集互連纜線將叢集互連連接埠彼此連接image:../media/oie_cable_sfp_gbe_copper.png[""]：
-
-* e0c至e0c
-* e0d至e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
-
-
-
-
- a| 
-image:../media/oie_legend_icon_2_dr.png[""]
- a| 
-使用RJ45纜線將扳手連接埠連接至管理網路交換器。
-
+. 使用RJ45纜線將扳手連接埠連接至管理網路交換器。
++
 image::../media/drw_affa250_mgmt_cabling.png[DRW AFFa250管理佈線]
 
 
 
- a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
- a| 
-此時請勿插入電源線。
 
-|===
-若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
+IMPORTANT: 此時請勿插入電源線。
 
-
-
-==== 選項2：連接交換式叢集
-
+--
+.選項2：交換式叢集
+--
 控制器上的所有連接埠均連接至交換器；叢集互連、管理、光纖通道、以及資料或主機網路交換器。
 
 .開始之前
-如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
+* 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
++
 image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
 
++
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
 
-使用動畫或表格步驟完成控制器與交換器之間的佈線：
 
-.動畫-連接交換式叢集
+
+.關於這項工作
+使用動畫或步驟完成控制器與交換器之間的纜線。在每個控制器上執行步驟。
+
+.動畫 - 纜線交換式叢集
 video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto]
-[cols="10,90"]
-|===
-| 步驟 | 在每個控制器上執行 
+.步驟
+. 將叢集互連連接埠 e0c 和 e0d 連接至 25 GbE 叢集互連交換器。
++
+image:../media/drw_affa250_switched_clust_cabling.png[""]
 
-
- a| 
-image:../media/oie_legend_icon_1_lg.png[""]
- a| 
-將叢集互連連接埠連接至25 GbE叢集互連交換器。
-
-* e0c
-* e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
-
-
-
-
- a| 
-image:../media/oie_legend_icon_2_dr.png[""]
- a| 
-使用RJ45纜線將扳手連接埠連接至管理網路交換器。
-
+. 使用RJ45纜線將扳手連接埠連接至管理網路交換器。
++
 image::../media/drw_affa250_mgmt_cabling.png[DRW AFFa250管理佈線]
 
 
 
- a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
- a| 
-此時請勿插入電源線。
-
-|===
-若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
+--
+====
 
 
-
-=== 可選佈線：纜線組態相依選項
+== 步驟 4 ：連接主機網路或儲存設備的纜線（選用）
 
 您可以選擇是否要連接至光纖通道或iSCSI主機網路或直接附加儲存設備、以設定為相依。這種佈線並非專屬、您可以使用佈線連接至主機網路和儲存設備。
 
-
-
-==== 選項1：連接至光纖通道主機網路的纜線
-
+[role="tabbed-block"]
+====
+.選項 1 ：連接至光纖通道主機網路的纜線
+--
 控制器上的Fibre Channel連接埠連接至Fibre Channel主機網路交換器。
 
 .開始之前
-如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
+* 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
++
 image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
 
++
 
-NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
-
-[cols="10,90"]
-|===
-| 步驟 | 在每個控制器模組上執行 
-
-
- a| 
-1.
- a| 
-將連接埠2a至2D連接至FC主機交換器。image:../media/drw_affa250_fc_host_cabling.png[""]
+NOTE: 插入連接器時、您應該會覺得它卡入定位；如果您不覺得它卡住、請將其移除、然後將其轉過來、然後再試一次。
 
 
 
- a| 
-2.
- a| 
-若要執行其他選用的纜線、請選擇：
+.關於這項工作
+在每個控制器模組上執行下列步驟。
 
-* <<選項2：連接至25GbE資料或主機網路的纜線>>
-* <<選項3：將控制器連接至單一磁碟機櫃>>
-
-
+.步驟
+. 將連接埠2a至2D連接至FC主機交換器。
++
+image:../media/drw_affa250_fc_host_cabling.png[""]
 
 
- a| 
-3.
- a| 
-若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
 
-|===
-
-
-==== 選項2：連接至25GbE資料或主機網路的纜線
-
+--
+.選項 2 ：連接至 25GbE 資料或主機網路的纜線
+--
 控制器上的25GbE連接埠連接至25GbE資料或主機網路交換器。
 
 .開始之前
-如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
+* 如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
++
 image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
 
++
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
 
-[cols="10,90"]
-|===
-| 步驟 | 在每個控制器模組上執行 
 
 
- a| 
-1.
- a| 
-將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。image:../media/drw_affa250_25gbe_host_cabling.png[""]
+.關於這項工作
+在每個控制器模組上執行下列步驟。
 
-
-
- a| 
-2.
- a| 
-若要執行其他選用的纜線、請選擇：
-
-* <<選項1：連接至光纖通道主機網路的纜線>>
-* <<選項3：將控制器連接至單一磁碟機櫃>>
+.步驟
+. 將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。
++
+image:../media/drw_affa250_25gbe_host_cabling.png[""]
 
 
 
-
- a| 
-3.
- a| 
-若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
-
-|===
-
-
-==== 選項3：將控制器連接至單一磁碟機櫃
-
+--
+.選項 3 ：將纜線控制器連接至單一磁碟機櫃
+--
 將每個控制器連接至NS224磁碟機櫃上的NSM模組。
 
 .開始之前
@@ -387,40 +316,34 @@ image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
 
-請使用動畫或表格步驟來完成控制器與單一機櫃之間的佈線：
+.關於這項工作
+使用動畫或表格步驟、完成控制器與單一機櫃之間的纜線。在每個控制器模組上執行步驟。
 
 .動畫-將控制器連接至單一NS224
 video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto]
-[cols="10,90"]
-|===
-| 步驟 | 在每個控制器模組上執行 
+.步驟
+. 纜線控制器 A 至機櫃。
++
+image:../media/drw_affa250_1shelf_cabling_a.png[""]
 
-
- a| 
-image:../media/oie_legend_icon_1_mb.png[""]
- a| 
-將控制器A纜線連接至機櫃： image:../media/drw_affa250_1shelf_cabling_a.png[""]
-
-
-
- a| 
-image:../media/oie_legend_icon_2_lo.png[""]
- a| 
-將控制器B纜線連接至機櫃： image:../media/drw_affa250_1shelf_cabling_b.png[""]
-
-|===
-若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
+. 纜線控制器 B 至機櫃。
++
+image:../media/drw_affa250_1shelf_cabling_b.png[""]
 
 
 
-== 步驟4：完成系統設定與組態設定
+--
+====
+
+
+== 步驟 5 ：完成系統設定
 
 只要連線到交換器和筆記型電腦、或直接連線到系統中的控制器、然後連線到管理交換器、就能使用叢集探索來完成系統設定和組態。
 
-
-
-=== 選項1：啟用網路探索時、請完成系統設定與組態設定
-
+[role="tabbed-block"]
+====
+.選項1：如果已啟用網路探索
+--
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
 
 .步驟
@@ -459,10 +382,9 @@ NOTE: XXXXX是目標節點的系統序號。
 . 完成初始組態之後、請前往 link:https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"^] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
 
-
-
-=== 選項2：如果未啟用網路探索、請完成系統設定與組態設定
-
+--
+.選項2：如果未啟用網路探索
+--
 如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。
 
 .步驟
@@ -523,3 +445,6 @@ NOTE: 地址格式為+https://x.x.x.x+。
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
 . 完成初始組態之後、請前往 link:https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"^] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
+
+--
+====
