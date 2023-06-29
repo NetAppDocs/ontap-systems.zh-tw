@@ -7867,12 +7867,10 @@
   <block id="85220111cf8764a6d5eefe427de4fbde" category="paragraph">視情況、將您的系統安裝在 4 柱機架或 NetApp 系統機櫃中。</block>
   <block id="1ccb5aa93b58b2e0cbfd6015e33c6a90" category="paragraph">使用雙節點無交換器叢集方法或叢集互連網路方法、將控制器連接至網路。</block>
   <block id="434c44657e12928e06a65124dfb073b0" category="paragraph">瞭解如何連接雙節點無交換器叢集。</block>
-  <block id="f7284f28e338cb3e10e42e8214151229" category="paragraph">您可以使用 UTA2 資料網路連接埠或乙太網路資料網路連接埠、將控制器連接到主機網路。在控制器與交換器之間進行纜線連接時、請參閱下列纜線圖示。</block>
   <block id="48114454330840b73674b4d456819a4e" category="list-text">UTA2 資料網路組態</block>
   <block id="e6746873d55c9a028bc3eae1ed6cd0db" category="list-text">乙太網路組態</block>
   <block id="f9655777cbdbded95ebaf4fdc1ed1c83" category="paragraph">在每個控制器模組上執行下列步驟。</block>
   <block id="4b7d254b4cff665eba8f89aeb96e16cb" category="list-text">使用叢集互連纜線將叢集互連連接埠 e0a 連接至 e0a 、並將 e0b 連接至 e0b 。+<block ref="9a0e89c71564aa69ffecf67eb610bc96" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列其中一項：</block>
   <block id="54254076225178d5782bc5158de2ffd3" category="list-text">使用下列其中一種纜線類型、將 e0c/0c 和 e0d/0d 或 e0e/0e 和 e0f/0f 資料連接埠連接至主機網路。</block>
   <block id="43083753a8bd4d126f4e9d226b24d42f" category="list-text">使用 Cat 6 RJ45 纜線將 e0c 透過 e0f 連接埠連接至主機網路。下圖所示。</block>
   <block id="5cb31a934f99a854350d21ffae22067d" category="paragraph">瞭解如何連接交換式叢集。</block>
@@ -7891,10 +7889,8 @@
   <block id="95a15694e7d6d23376f741970900ef8e" category="list-text">硬體安裝與纜線</block>
   <block id="4657c74c0fa17e5f15e4a506f177b913" category="paragraph">下列影片說明如何安裝及連接系統纜線。</block>
   <block id="d4b6f94dadb3f20b9bf031b9b9983ce3" category="list-text">端點對端點軟體組態</block>
-  <block id="314f8c912a6741218e22dc8ca5f7ee41" category="paragraph">瞭解如何安裝 AFF A150 系統。</block>
   <block id="119be031ef4485d20c7683d291d0e9f6" category="inline-link">本文檔MetroCluster</block>
   <block id="bfd53ea423739db497251aa14d8747cd" category="paragraph">如果您有 MetroCluster 組態、請使用<block ref="9b888d0bb3e87322cc68a0bb4a7ae515" category="inline-link-rx"></block>。</block>
-  <block id="f6387b34fb856500ccda4acb52336ff7" category="paragraph">若要安裝 AFF A150 系統、請在 NetApp 支援網站 上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
   <block id="5d0ff6a06bf967bf825de2c2a610cc33" category="list-text">如需將系統連線至交換器的相關資訊、請聯絡您的網路管理員。</block>
   <block id="bcce32e97ae0002c4edc1cc8b9245285" category="inline-link">註冊您的系統</block>
   <block id="1e074148aea327f834455c1f6ae99894" category="list-text"><block ref="2539e9179736696f68f1ba88f3812383" category="inline-link-rx"></block>。</block>
@@ -7904,13 +7900,9 @@
   <block id="e881b3bd9e158bdbe75952ecb742a95f" category="inline-link">下載並完成叢集組態工作表</block>
   <block id="738f95af1a0163cf0e1c5931095ae65f" category="list-text"><block ref="d3aebb99b149a14152b68ab3bc13a233" category="inline-link-rx"></block>。</block>
   <block id="767d56519e2665f49f35713c1a1be451" category="section-title">步驟 3 ：將控制器連接至網路</block>
-  <block id="32eaf8761a3db861b1156e2738e758c1" category="paragraph">使用雙節點無交換器叢集方法或叢集互連網路方法、將控制器連接至網路。</block>
-  <block id="3760d11ceaf4a0fe32d1665068e04673" category="paragraph">管理網路、 UTA2 資料網路、乙太網路資料網路、以及控制器上的管理連接埠、都會連接到交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。</block>
   <block id="6daf690bb435e2ddca90bbd25f4d0d4c" category="list-text">使用下列其中一種纜線類型、將 UTA2 資料連接埠連接至主機網路。</block>
   <block id="afb6c834a58331c6ea63436bbf5864c3" category="list-text">對於 FC 主機、請使用 0c 和 0d * 或 * 0e 和 0f 。</block>
   <block id="0bd1e8e50111e01ba1604ade94902cca" category="list-text">若為 10GbE 系統、請使用 e0c 和 e0d * 或 * e0e 和 e0f 。</block>
-  <block id="1fc58e4765d0d92d238af8bdfc3ab370" category="list-text">統一化網路纜線</block>
-  <block id="b7f69837ac40254faa2741b926641a85" category="list-text">乙太網路纜線</block>
   <block id="d121c2dd9af112004d29375d7d7385ba" category="list-text">對於每個控制器模組、請使用叢集互連纜線將 e0a 和 e0b 纜線連接至叢集互連交換器。</block>
   <block id="32f4bb165c35f300da46d2891dcd4591" category="list-text">對於 FC 主機、請使用 0c 和 0d ** 或 ** 0e 和 0f 。</block>
   <block id="94a602afccb4ec515036eba24fdfed92" category="list-text">若為 10GbE 系統、請使用 e0c 和 e0d ** 或 ** e0e 和 e0f 。</block>
@@ -7989,4 +7981,19 @@
   <block id="3529feb1f15a906788e97c962f5f18b5" category="doc">更換即時時鐘電池 - AFF A150</block>
   <block id="74fef60bd66705310b79dcd3e46f4894" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - AFF A150</block>
   <block id="d646909dddf2c419f953113a67e04618" category="doc">更換 DIMM - AFF A150</block>
+  <block id="833748c904af71a7ab422a33ad70be86" category="list-text">將筆記型電腦連接到管理交換器：</block>
+  <block id="482df54948cb0af45b9238ba8f7416dd" category="paragraph">您可以使用雙節點無交換器叢集方法或使用交換式叢集方法、將控制器連接至網路。</block>
+  <block id="ff83054154392545e173589dbc5f0d6e" category="paragraph">控制器模組的叢集互連和 HA 連接埠已連接至其合作夥伴控制器模組。控制器模組上的選用資料連接埠、選用NIC卡和管理連接埠、都會連接至交換器。</block>
+  <block id="d9a4d96ebe77470ef37b10a2002ee889" category="paragraph">控制器模組叢集互連和 HA 連接埠會連接至叢集 / HA 交換器。可選的數據端口、可選的 NIC 卡、夾層卡和管理端口連接到交換機。</block>
+  <block id="3794995e59166b895cc502ce8c1ba88e" category="list-text">將筆記型電腦連接到管理交換器。</block>
+  <block id="55d181b0e985bd01c76c600ee8e5436b" category="paragraph">本節提供安裝 AFF A150 系統的詳細逐步說明。</block>
+  <block id="07b84ded01d94786eac9600aeee34234" category="paragraph">若要安裝 AFF A150 系統、請在 NetApp 支援網站 上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
+  <block id="c82dff6dbb251f02ea9b21c5377c84b7" category="paragraph">您可以視情況將系統安裝在 4 柱式機架或 NetApp 系統機櫃中。</block>
+  <block id="c0f68275dba754d24cf8cd39cc11b441" category="paragraph">您可以使用雙節點無交換器叢集方法或交換式叢集方法、將控制器連接至網路。</block>
+  <block id="5a579b0b54ae5d57e0aca1dfcffc421b" category="paragraph">使用纜線連接雙節點無交換器叢集。</block>
+  <block id="69516d110b779c64dceeed289ceff830" category="list-text">將控制器連接至 UTA2 資料網路或乙太網路：</block>
+  <block id="9216554f447e636359d50545d5efdd16" category="paragraph">為交換式叢集佈線。</block>
+  <block id="04924b20a91a5f5b238ee6721421d3cb" category="list-text">您可以使用 UTA2 資料網路連接埠或乙太網路資料網路連接埠、將控制器連接至主機網路：</block>
+  <block id="be838816a39a48461edd5a1e87b6d8e5" category="list-text">將筆記型電腦或主控台連接至管理交換器。</block>
+  <block id="fea0a68e925a0ae2df0aa5bbdbe7c891" category="list-text">使用管理交換器上的 TCP/IP 位址、將其指派給筆記型電腦或主控台。</block>
 </blocks>

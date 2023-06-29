@@ -11,7 +11,7 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 
 
 [role="lead"]
-瞭解如何安裝 AFF A150 系統。
+本節提供安裝 AFF A150 系統的詳細逐步說明。
 
 如果您有 MetroCluster 組態、請使用 https://docs.netapp.com/us-en/ontap-metrocluster/index.html["本文檔MetroCluster"^]。
 
@@ -19,7 +19,6 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 
 == 步驟1：準備安裝
 
-[role="lead"]
 若要安裝 AFF A150 系統、請在 NetApp 支援網站 上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
 
 .開始之前
@@ -160,8 +159,7 @@ image:../media/oie_cable_power.png[""]
 
 == 步驟2：安裝硬體
 
-[role="lead"]
-視情況、將您的系統安裝在 4 柱機架或 NetApp 系統機櫃中。
+您可以視情況將系統安裝在 4 柱式機架或 NetApp 系統機櫃中。
 
 .步驟
 . 視需要安裝軌道套件。
@@ -184,18 +182,43 @@ image::../media/drw_cable_management_arm_install.png[DRw纜線管理ARM 功能�
 
 == 步驟 3 ：將控制器連接至網路
 
-[role="lead"]
-使用雙節點無交換器叢集方法或叢集互連網路方法、將控制器連接至網路。
+您可以使用雙節點無交換器叢集方法或交換式叢集方法、將控制器連接至網路。
 
-管理網路、 UTA2 資料網路、乙太網路資料網路、以及控制器上的管理連接埠、都會連接到交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
+.關於這項工作
+下表列出兩個節點無交換器叢集網路纜線和交換式叢集網路纜線的纜線類型、以及圖示中的撥出號碼和纜線顏色。
 
+[cols="20%,80%"]
+|===
+| 纜線 | 連線類型 
+
+
+ a| 
+image::../media/oie_legend_icon_1_lg.svg[OIE圖例圖示1 LG]
+ a| 
+叢集互連
+
+
+
+ a| 
+image::../media/oie_legend_icon_2_o.svg[OIE 圖例圖示 2 o]
+ a| 
+控制器以主控資料網路交換器
+
+
+
+ a| 
+image::../media/oie_legend_icon_3_lp.svg[OIE 圖例圖示 3 lp]
+ a| 
+控制器至管理網路交換器
+
+|===
 [role="tabbed-block"]
 ====
 .選項1：雙節點無交換器叢集
 --
-瞭解如何連接雙節點無交換器叢集。
+使用纜線連接雙節點無交換器叢集。
 
-.開始之前
+.關於這項工作
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
 image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
@@ -203,28 +226,9 @@ image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
 
-.關於這項工作
-您可以使用 UTA2 資料網路連接埠或乙太網路資料網路連接埠、將控制器連接到主機網路。在控制器與交換器之間進行纜線連接時、請參閱下列纜線圖示。
-
-UTA2 資料網路組態::
-+
---
-image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[DRW 2700 tnscc統一化網路纜線動畫Gif]
-
---
-乙太網路組態::
-+
---
-image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[DRW 2700 tnscc乙太網路纜線動畫Gif]
-
---
-
-
-在每個控制器模組上執行下列步驟。
-
 .步驟
 . 使用叢集互連纜線將叢集互連連接埠 e0a 連接至 e0a 、並將 e0b 連接至 e0b 。+image:../media/drw_c190_u_tnsc_clust_cbling.png[""]
-. 執行下列其中一項：
+. 將控制器連接至 UTA2 資料網路或乙太網路：
 +
 UTA2 資料網路組態:: 使用下列其中一種纜線類型、將 UTA2 資料連接埠連接至主機網路。
 +
@@ -260,9 +264,9 @@ IMPORTANT: 此時請勿插入電源線。
 --
 .選項2：交換式叢集
 --
-瞭解如何連接交換式叢集。
+為交換式叢集佈線。
 
-.開始之前
+.關於這項工作
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
 image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
@@ -270,31 +274,12 @@ image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
 
-.關於這項工作
-您可以使用 UTA2 資料網路連接埠或乙太網路資料網路連接埠、將控制器連接到主機網路。在控制器與交換器之間進行纜線連接時、請參閱下列纜線圖示。
-
-統一化網路纜線::
-+
---
-image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[DRW 2700交換式統一網路纜線動畫Gif]
-
---
-乙太網路纜線::
-+
---
-image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[DRw 2700交換式乙太網路纜線動畫Gif]
-
---
-
-
-在每個控制器模組上執行下列步驟。
-
 .步驟
 . 對於每個控制器模組、請使用叢集互連纜線將 e0a 和 e0b 纜線連接至叢集互連交換器。
 +
 image:../media/drw_c190_u_switched_clust_cbling.png[""]
 
-. 執行下列其中一項：
+. 您可以使用 UTA2 資料網路連接埠或乙太網路資料網路連接埠、將控制器連接至主機網路：
 +
 UTA2 資料網路組態:: 使用下列其中一種纜線類型、將 UTA2 資料連接埠連接至主機網路。
 +
@@ -336,13 +321,13 @@ IMPORTANT: 此時請勿插入電源線。
 使用內建儲存連接埠將控制器連接至機櫃。NetApp建議使用MP-HA纜線來連接具有外部儲存設備的系統。
 
 .關於這項工作
-如果您有SAS磁帶機、可以使用單一路徑纜線。如果您沒有外部磁碟櫃、如果系統隨附SAS纜線、則可選擇（未顯示）連接至內部磁碟機的MP-HA纜線。
-
-您必須將機櫃對機櫃連接纜線、然後將兩個控制器纜線連接至磁碟機櫃。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
+* 如果您有SAS磁帶機、可以使用單一路徑纜線。如果您沒有外部磁碟櫃、如果系統隨附SAS纜線、則可選擇（未顯示）連接至內部磁碟機的MP-HA纜線。
+* 您必須將機櫃對機櫃連接纜線、然後將兩個控制器纜線連接至磁碟機櫃。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
++
 image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+
+
 
 .步驟
 . 將 HA 配對連接至外部磁碟機櫃。
@@ -411,10 +396,10 @@ NOTE: 初始開機最多可能需要八分鐘。
 +
 如需詳細資訊、請參閱筆記型電腦的線上說明。
 
-. 請使用下列動畫將筆記型電腦連線至管理交換器。
+. 將筆記型電腦連接到管理交換器。
 +
-.動畫-將筆記型電腦連接到管理交換器
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
+image::../media/dwr_laptop_to_switch_only.svg[DWR筆記型電腦只能切換]
+
 . 選取ONTAP 列出的功能表圖示以探索：
 +
 image::../media/drw_autodiscovery_controler_select.png[選擇「自動探索控制器」]
