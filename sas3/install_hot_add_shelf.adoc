@@ -28,14 +28,14 @@ summary: 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增�
 
 * 您的系統和版本ONTAP 的支援必須支援熱新增的磁碟櫃、包括IOM、磁碟機和SAS纜線。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 * 您的系統必須少於所支援的磁碟機數量上限、至少要少於您計畫要熱新增的磁碟櫃數量。
 +
 在熱新增磁碟櫃之後、您無法超過系統所支援的磁碟機數量上限。
 
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 * 如果您要熱新增一或多個磁碟櫃堆疊（直接新增至平台控制器）、則系統必須有足夠的可用PCI SAS HBA或內建SAS連接埠、或兩者的組合。
 +
@@ -54,7 +54,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"]
 您必須使用錯誤訊息所提供的修正動作來修正任何纜線錯誤。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
 
 
 
@@ -84,13 +84,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 若為單一路徑HA和單一路徑組態（適用AFF 對象為E4A200、AFF E4A220、FAS2600系列和FAS2700系統）、您可將磁碟櫃熱新增至堆疊的末端、而該堆疊沒有控制器連線。
 
 * 具有IOM12/IOM12B模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。
-+
-此程序並未解決混合堆疊的問題：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。
-
-* 系統可以使用IOM12/IOM12B模組、將多路徑和四路徑磁碟櫃堆疊在一起。
-+
-如果您有HA配對、ONTAP 則系統組態顯示為「多路徑HA」。如果您使用單一控制器組態、ONTAP 則功能表功能表將系統組態顯示為「多路徑」。
-
 * 此程序假設您的組態使用頻內ACP。
 +
 對於啟用頻內ACP的組態、頻內ACP會自動在熱新增磁碟櫃上啟用。對於未啟用頻內ACP的組態、熱新增磁碟櫃可在沒有任何ACP功能的情況下運作。
@@ -123,17 +116,17 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/downloa
 您需要網路存取才能下載Config Advisor 此功能。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
 
 * 最佳實務做法是在新增磁碟櫃、磁碟櫃FRU元件或SAS纜線之前、先在系統上安裝目前版本的磁碟櫃（IOM）韌體和磁碟機韌體。
 +
 如需最新版本的韌體、請參閱NetApp支援網站。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
 
 
 
@@ -291,7 +284,7 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 如果您的平台模式含有內部磁碟櫃、則內部磁碟櫃和外部附加磁碟櫃的機櫃ID必須是唯一的。
 
 +
-您可以使用下列子步驟來變更機櫃ID、或是如需更詳細的指示、請使用 link:install-change-shelf-id.html["變更機櫃ID"]。
+您可以使用下列子步驟來變更機櫃ID、或是如需更詳細的指示、請使用 link:install-change-shelf-id.html["變更機櫃ID"^]。
 
 +
 .. 如有需要、請執行Config Advisor 功能以驗證已在使用中的機櫃ID。
@@ -316,7 +309,7 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 
 == 使用IOM12/IOM12B模組的纜線磁碟櫃進行熱新增
 
-您可以將SAS連線（即機櫃對機櫃和控制器對堆疊）連接至熱新增磁碟櫃、以便它們能夠連線至系統。
+您可以將 SAS 連線（機櫃對機櫃和控制器對堆疊）纜線連接至熱新增的磁碟櫃、以便連接至系統。
 
 .開始之前
 您必須符合中的要求 link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules["使用IOM12模組熱新增磁碟櫃的需求"] 並依照中的指示、為每個磁碟櫃設定機櫃ID link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add["使用IOM12模組安裝磁碟櫃以進行熱新增"]。
@@ -363,7 +356,7 @@ NOTE: 韌體更新最多可能需要30分鐘。
 
 
  a| 
-您要將具有多重路徑HA、多重路徑、單一路徑HA或單一路徑連線的堆疊連接至控制器
+您正在使用多重路徑 HA 、三重路徑 HA 、多重路徑、單一路徑 HA 或單一路徑連線來連接堆疊至控制器
  a| 
 將機櫃對機櫃連線纜線為「標準」連線（使用IOM連接埠3和1）：
 
@@ -386,10 +379,10 @@ NOTE: 韌體更新最多可能需要30分鐘。
 |===
 .. 請查看控制器對堆疊佈線工作表和佈線範例、以瞭解您的組態是否有完整的工作表。
 +
-link:install-cabling-worksheets-examples-fas2600.html["控制器對堆疊佈線工作表和佈線範例、適用於AFF 搭載FAS 內建儲存設備的整套功能"]
+link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例"]
 
 +
-link:install-cabling-worksheets-examples-multipath.html["通用多重路徑HA組態的控制器對堆疊佈線工作表和佈線範例"]
+link:install-cabling-worksheets-examples-multipath.html["多重路徑 HA 組態的控制器對堆疊纜線工作表和纜線範例"]
 
 +
 link:install-worksheets-examples-quadpath.html["控制器對堆疊佈線工作表和佈線範例、適用於使用兩個四埠SAS HBA的四路徑HA組態"]
@@ -405,7 +398,7 @@ link:install-cabling-worksheet-template-quadpath.html["控制器對堆疊佈線�
 .. 確認所有纜線均已穩固固定。
 
 
-. 如果您要將一個或多個磁碟櫃熱新增至現有堆疊的端點（邏輯第一個或最後一個磁碟櫃）、請完成組態適用的子步驟；否則、請執行下一步。
+. 如果您要將一個或多個磁碟櫃熱新增至現有堆疊的端點（邏輯第一個或最後一個磁碟機櫃）、請針對您的組態完成適用的子步驟；否則、請前往下一步。
 +
 
 NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長纜線之間、至少等待70秒。
@@ -417,7 +410,7 @@ NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長�
 
 
  a| 
-將磁碟櫃熱新增至堆疊的末端、該堆疊具有多重路徑HA、多重路徑、四重路徑HA或四重路徑連線至控制器
+將磁碟機熱新增至堆疊的末端、該堆疊具有多重路徑 HA 、三重路徑 HA 、多重路徑、四路徑 HA 或四路徑連線至控制器
  a| 
 .. 從堆疊末端連接至任何控制器的磁碟櫃IOM A拔下任何纜線；否則、請前往子步驟e
 +
@@ -444,14 +437,14 @@ NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長�
 |===
 . 如果您將使用Mini-SAS HD SAS光纖纜線的磁碟櫃熱新增至使用SAS銅線連接的磁碟櫃堆疊、請更換SAS銅線；否則、請執行下一步。
 +
-堆疊必須符合中所述的要求 <<使用IOM12模組熱新增磁碟櫃的需求>> 本程序的一節。
+堆疊必須符合中所述的要求 <<使用IOM12/IOM12B模組熱新增磁碟櫃的需求>> 本程序的一節。
 
 +
 一次更換一條纜線、並確定拔下纜線和連接新纜線之間至少等待70秒。
 
 . 下載並執行Config Advisor 更新以確認SAS連線正確。
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
 
 +
 如果產生任何SAS纜線錯誤、請遵循所提供的修正行動。

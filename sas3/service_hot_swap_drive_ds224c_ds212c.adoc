@@ -16,7 +16,7 @@ summary: 您可以在DS224C或DS212C磁碟櫃中熱交換故障磁碟機。
 .開始之前
 * 您要安裝的磁碟機必須受DS224C或DS212C磁碟櫃支援。
 +
-https://hwu.netapp.com["NetApp Hardware Universe"]
+https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 * 系統中的所有其他元件都必須正常運作；如果無法正常運作、請聯絡技術支援部門。
 * 您要移除的磁碟機必須故障。
@@ -32,7 +32,7 @@ NOTE: 視磁碟機類型和容量而定、磁碟機可能需要數小時才能�
 本白皮書中的說明ONTAP 說明說明更換SED之前和之後、您必須執行的其他步驟。
 
 +
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密概述"]
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密概述"^]
 
 
 
@@ -79,10 +79,10 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/downloa
 如需最新版本的韌體、請參閱NetApp支援網站。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
 
 * 使用非最新韌體版本的新磁碟機上、磁碟機韌體會自動更新（不中斷營運）。
 +
@@ -91,7 +91,7 @@ NOTE: 磁碟機韌體檢查每兩分鐘進行一次。
 
 * 如有需要、您可以開啟磁碟櫃的位置（藍色）LED、以協助實際找出受影響的磁碟櫃：「儲存櫃位置導向的修改-機櫃名稱_bidle_name_-leide-Status on」
 +
-磁碟櫃有三個位置LED：一個在操作員顯示面板上、一個在每個IOM12模組上。位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用「關閉」選項來關閉這些命令。
+磁碟櫃有三個位置LED：一個在操作員顯示面板上、一個在每個機櫃IOM上。位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用「關閉」選項來關閉這些命令。
 
 * 如有需要、請參閱監控磁碟櫃LED區段、以取得有關操作員顯示面板和FRU元件上磁碟櫃LED的意義和位置的資訊。
 

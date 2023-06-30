@@ -53,12 +53,12 @@ NOTE: 如果您有至少兩個堆疊的HA配對、則包含第二個堆疊根集
 
 * 含有根集合體的磁碟機櫃可透過磁碟機櫃箱和磁碟櫃機箱上的標籤來識別。
 +
-標籤顯示堆疊編號、例如*迴圈或堆疊編號：1*和*迴圈或堆疊編號：2*。不含根集合體的磁碟櫃只會在標籤上顯示磁碟櫃序號。
+標籤顯示堆疊編號、例如*迴圈或堆疊編號：1*和*迴圈或堆疊編號：2*。不包含根集合體的磁碟櫃只會在標籤上顯示磁碟櫃序號。
 
 * 如果在系統設定與組態時、您未將系統設定為使用自動磁碟擁有權指派、則需要手動指派磁碟擁有權。
-* 頻內替代控制路徑（ACP）會自動啟用。
+* 自動啟用頻內替代控制路徑（ IBACP ）。
 +
-單一路徑HA或單一路徑組態不支援頻內ACP。
+單一路徑 HA 或單一路徑組態不支援 IBACP 。
 
 
 
@@ -84,7 +84,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/downloa
 您需要網路存取才能下載Config Advisor 此功能。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
 
 
 
@@ -242,7 +242,7 @@ NOTE: 此時請勿開啟磁碟櫃電源。
 您可以將磁碟櫃SAS連線（如適用）和控制器對機櫃）連接至機櫃、以建立系統的儲存連線。
 
 .開始之前
-您必須符合中的要求 <<Requirements for installing and cabling disk shelves with IOM12 modules for a new system installation>> 並在機架中安裝磁碟櫃。
+您必須符合中的要求 <<安裝和佈線使用IOM12/IOM12B模組的磁碟櫃以進行新系統安裝的需求>> 並在機架中安裝磁碟櫃。
 
 .關於這項工作
 在連接磁碟櫃纜線之後、您可以開啟磁碟櫃電源、設定磁碟櫃ID、並完成系統設定與組態。
@@ -259,7 +259,7 @@ NOTE: 此時請勿開啟磁碟櫃電源。
 
 
  a| 
-您正在佈線多重路徑HA、多重路徑、單一路徑HA或單一路徑組態
+您正在佈線多重路徑 HA 、三重路徑 HA 、多重路徑、單一路徑 HA 或單一路徑組態
  a| 
 將機櫃對機櫃連線纜線為「標準」連線（使用IOM連接埠3和1）：
 
@@ -286,10 +286,10 @@ NOTE: 此時請勿開啟磁碟櫃電源。
 +
 .. 請查看控制器對堆疊佈線工作表和佈線範例、以瞭解您的組態是否有完整的工作表。
 +
-link:install-cabling-worksheets-examples-fas2600.html["控制器對堆疊佈線工作表和佈線範例、適用於AFF 搭載FAS 內建儲存設備的整套功能"]
+link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例"]
 
 +
-link:install-cabling-worksheets-examples-multipath.html["通用多重路徑HA組態的控制器對堆疊佈線工作表和佈線範例"]
+link:install-cabling-worksheets-examples-multipath.html["多重路徑 HA 組態的控制器對堆疊纜線工作表和纜線範例"]
 
 +
 link:install-worksheets-examples-quadpath.html["控制器對堆疊佈線工作表和佈線範例、適用於使用兩個四埠SAS HBA的四路徑HA組態"]
@@ -409,7 +409,7 @@ NOTE: 在您開機之前、最佳實務做法是利用這個機會來驗證纜�
 如果產生任何SAS纜線或重複的機櫃ID錯誤、請遵循所提供的修正行動。
 
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
+https://https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
 
 +
 您也可以執行「shorage sh家show -Fields sh家ID」命令、查看系統中已使用的機櫃ID清單（如果有的話、也可以複製）。

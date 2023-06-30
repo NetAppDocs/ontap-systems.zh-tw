@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-cabling-rules.html 
 sidebar: sidebar 
-keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules, iom12b 
+keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules, iom12b, concepts 
 summary: 具有IOM12/IOM12B模組的磁碟櫃可在HA配對和單一控制器組態中進行纜線（適用於支援的平台）。 
 ---
-= SAS纜線配置規則：採用IOM12/IOM12B模組的機櫃
+= SAS 纜線規則與概念 - 配備 IOM12/ IOM12B 模組的機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 具有IOM12/IOM12B模組的磁碟櫃可在HA配對和單一控制器組
 採用IOM12/IOM12B模組的磁碟櫃、可透過套用SAS纜線規則、組態規則、控制器插槽編號規則、機櫃對機櫃連線規則、控制器對堆疊連線規則、以及適用的Mini-SAS HD SAS光纖纜線規則、以HA配對和單一控制器組態（適用於支援的平台）進行纜線。
 
 
-NOTE: 本指南所述的控制器插槽編號規則、機櫃對機櫃連線規則、以及控制器對堆疊連線規則、均與適用於所有SAS磁碟櫃的相同規則相同、無論它們具有IOM12/IOM12B、IOM6或IOM3模組。然而、本指南所提供的資訊、是針對採用IOM12模組的磁碟櫃的獨特特性、以及在支援的組態中使用這些模組。
+NOTE: 本指南所述的控制器插槽編號規則、機櫃對機櫃連線規則、以及控制器對堆疊連線規則、均與適用於所有SAS磁碟櫃的相同規則相同、無論它們具有IOM12/IOM12B、IOM6或IOM3模組。不過、本指南中的資訊是針對配備 IOM12/ IOM12B 模組的磁碟櫃的獨特特性、以及它們在支援組態中的使用。
 
 本指南所述的SAS纜線配置規則與Mini-SAS HD SAS光纖纜線規則、是特定於採用IOM12/IOM12B模組的磁碟櫃。
 
@@ -32,20 +32,39 @@ NOTE: 本指南所述的控制器插槽編號規則、機櫃對機櫃連線規�
 
 == 組態規則
 
-特定類型的HA配對和單一控制器組態支援含有IOM12模組的磁碟櫃。
+[role="lead"]
+特定類型的 HA 配對和單一控制器組態支援配備 IOM12/ IOM12B 模組的磁碟櫃。
 
 
 NOTE: 本內容未說明FAS25XX平台的問題。
 
+[NOTE]
+====
+如需平台機型支援的佈線組態的最新資訊、請參閱 Hardware Universe 。
+
+https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+====
 * HA配對組態必須以多重路徑HA或四重路徑HA組態進行纜線連接、但有下列例外：
 +
-** 內含內部儲存設備的平台、包括FAS2600系列、AFF EFASA200、FAS2700系列、AFF E4A220、 之後、也可以將纜線連接成單一路徑HA組態、以支援連線至外部SAS磁帶備份裝置。
-** 內含內部儲存設備的平台、包括FAS2600系列、AFF EFASA200、FAS2700系列、AFF E4A220、 之後、不支援四路徑HA連線。
+** 具有內部儲存設備的平台不支援四路徑 HA 連線。
+** FAS2800 HA 配對可以用纜線連接成三路徑 HA 。
++
+有關 FAS2800 連線能力的資訊、請參閱 <<三重路徑 HA 連線>> 區段。
+
+** 具有內部儲存設備的平台可以以單一路徑 HA 組態（從連接埠 0b/0b1 到外部機櫃）進行纜線連接、以支援連線至外部 SAS 磁帶備份裝置（從連接埠 0A ）。
 
 
+
+
+[NOTE]
+====
+對於 FAS2800 HA 配對、雖然連接至外部機櫃的纜線是單一路徑 HA 、但由於每個控制器的內部連接埠 0b 與其本機擴充器（ IOM12G ）和連接埠 0c 連至其合作夥伴的擴充器、因此 HA 配對組態是多重路徑 HA 。
+
+====
 * 單一控制器組態必須以多重路徑或四重路徑組態進行纜線連接、但有下列例外：
 +
-** FAS2600系列單一控制器組態（含外部磁碟櫃）可以單一路徑組態進行纜線連接。
+** FAS2600 系列單一控制器組態可以以單一路徑組態的方式連接。
 +
 由於內部儲存設備使用單一路徑連線功能、ONTAP 因此導致無法偵測到混合路徑時、出現一些偶爾出現的警告。為了避免這些警告、您可以使用單一路徑連線到外部磁碟櫃。此外、您也可以在使用外部SAS磁帶備份設備時、使用單一路徑連線功能。
 
@@ -88,8 +107,10 @@ image::../media/slot0_rules.png[SLOT0規則]
 
 === 標準機櫃對機櫃連線能力
 
-* 標準機櫃對機櫃連線功能可用於多重路徑HA、多重路徑、單一路徑HA和單一路徑組態。
-* 標準的機櫃對機櫃連線功能是目前使用IOM3和IOM6模組的SAS儲存組態：每個網域中的磁碟機櫃（IOM A）和網域B（IOM B）之間需要一條纜線連線。
+* 標準的機櫃對機櫃連線功能可用於任何具有多個磁碟機櫃的磁碟機堆疊。
++
+每個網域（網域 A （ IOM A ）和網域 B （ IOM B ））的磁碟櫃之間需要一條纜線連線。
+
 * 最佳實務做法是使用IOM連接埠3和1進行標準的機櫃對機櫃連線。
 +
 從邏輯的第一個機櫃到堆疊中的邏輯最後一個機櫃、您可以將IOM連接埠3連接到網域A中的下一個機櫃IOM連接埠1、然後連接到網域B
@@ -238,23 +259,23 @@ link:install-cabling-worksheet-template-quadpath.html["控制器對堆疊佈線�
 
 
 
-=== 控制器0b和0A連接埠連線規則、適用於具有內部儲存設備的平台
+=== 控制器 0b/0b1 和 0A 連接埠規則、適用於具有內部儲存設備的平台
 
-內含內部儲存設備的平台、包括FAS2600系列、AFF EFASA200、FAS2700系列、AFF E4A220、 之後的連線規則也會是一組獨特的規則、因為每個控制器必須在內部儲存設備（連接埠0b）和堆疊之間維持相同的網域連線。這表示當控制器位於機箱（控制器1）的插槽A時、它位於網域A（IOM A）中、因此連接埠0b必須連接至堆疊中的IOM A。當控制器位於機箱（控制器2）的插槽B時、它位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的IOM B。
+具有內部儲存設備的平台有一組獨特的連線規則、因為每個控制器必須在內部儲存設備（連接埠 0b/0b1 ）和堆疊之間維持相同的網域連線。這表示當控制器位於機箱（控制器 1 ）的插槽 A 時、它位於網域 A （ IOM A ）、因此連接埠 0b/0b1 必須連接到堆疊中的 IOM A 。當控制器位於機箱（控制器 2 ）的插槽 B 時、它位於網域 B （ IOM B ）、因此連接埠 0b/0b1 必須連接到堆疊中的 IOM B 。
 
 
 NOTE: FAS25XX平台未在此內容中說明。
 
 
-NOTE: 如果您未將0b連接埠連接至正確的網域（跨連線網域）、則系統會面臨恢復問題、使您無法安全執行不中斷營運的程序。
+NOTE: 如果您未將 0b/0b1 連接埠連接至正確的網域（跨連線網域）、您就會使系統面臨恢復問題、使您無法安全執行不中斷營運的程序。
 
-* 控制器0b連接埠（內部儲存連接埠）：
+* 控制器 0b/0b1 連接埠（內部儲存連接埠）：
 +
-** 控制器1 0b連接埠永遠連線至IOM A（網域A）。
-** 控制器2 0b連接埠一律連線至IOM B（網域B）。
-** 連接埠0b永遠是主要路徑。
-** 連接埠0b一律會連線至堆疊中的邏輯最後一個磁碟櫃。
-** 連接埠0b一律連線至磁碟櫃IOM連接埠3。
+** 控制器 1 0b/0b1 連接埠一律會連線至 IOM A （網域 A ）。
+** 控制器 2 0b/0b1 連接埠一律會連線至 IOM B （網域 B ）。
+** 連接埠 0b/0b1 永遠是主要路徑。
+** 連接埠 0b/0b1 一律會連接至堆疊中最後一個邏輯磁碟機櫃。
+** 連接埠 0b/0b1 一律連接至磁碟機櫃 IOM 連接埠 3 。
 
 
 * 控制器0A連接埠（內部HBA連接埠）：
@@ -268,9 +289,37 @@ NOTE: 如果您未將0b連接埠連接至正確的網域（跨連線網域）、
 
 
 
-下圖重點介紹FAS2600系列、AFF E4A200、FAS2700系列、AFF EVA220及更新版本的多重路徑HA組態的內部儲存連接埠（0b）網域連線：
+下圖強調內部儲存連接埠（ 0b/0b1 ）與外部層疊的網域連線：
 
-image::../media/drw_fas2600_mpha_domain_example.png[DRW fas2600 mpha網域範例]
+image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[DRW fas2600 mpha 網域範例 IEOPS 1172]
+
+
+
+=== 三重路徑 HA 連線
+
+FAS2800 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：
+
+* 每個控制器的內部連接埠 0b 與其本機 IOM12G 及連接埠 0c 與合作夥伴的 IOM12G 之間、都能提供 HA 配對多重路徑 HA 連線。
+* 每個控制器的外部儲存連接埠（ 0A 和 0b1 ）的佈線、可提供 HA 配對三路徑 HA 連線。
++
+當沒有外部機櫃時、連接埠 0A 和 0b1 會透過兩個控制器進行纜線連接、或連接至外部機櫃以實現三路徑 HA 連線。
+
+
+
+以下顯示控制器的內部連線和外部纜線、可實現三重路徑 HA 連線：
+
+image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[DRW fas2800 概念 Tpha IEOPS 950]
+
+FAS2800 外部 SAS 連接埠：
+
+* 0A 連接埠來自內部 HBA （如同其他具有內部機櫃的平台）。
+* 0b1 連接埠來自內部機櫃（例如其他平台的 0b 連接埠、內建機櫃）。
+* 未使用 0b2 連接埠。已停用。如果連接纜線、就會產生錯誤訊息。
+
+
+image::../media/drw_sas3_ports_on_fas2800_IEOPS-946 (1).svg[位於 fas2800 IEOPS 946 上的 DRW SAS3 連接埠（ 1 ）]
+
+您可以在中找到 FAS2800 HA 配對纜線範例 link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例"] 區段。
 
 
 

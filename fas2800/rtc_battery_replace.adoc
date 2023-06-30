@@ -1,0 +1,180 @@
+---
+permalink: fas2800/rtc-battery-replace.html 
+sidebar: sidebar 
+keywords: fas2800, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
+summary: 您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。 
+---
+= 更換即時時鐘電池 - FAS2800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。
+
+* 您可以將此程序用於ONTAP 系統支援的所有版本的功能
+* 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+
+
+== 步驟1：關閉受損的控制器
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您使用NetApp儲存加密、則必須依照中的指示重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["將SED恢復為無保護模式"]。
+* 如果您有SAN系統、則必須檢查事件訊息  `cluster kernel-service show`（用於控制器SCSI刀鋒伺服器）。。 `cluster kernel-service show` 命令會顯示節點名稱、該節點的仲裁狀態、該節點的可用度狀態、以及該節點的作業狀態。
++
+每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
++
+
+NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+
+
+== 步驟2：移除控制器模組
+
+從系統中卸下控制器模組、然後卸下控制器模組上的護蓋。
+
+. 如果您尚未接地、請正確接地。
+. 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
++
+將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。
+
+. 從控制器模組的左側和右側移除纜線管理裝置、並將其放在一邊。
+. 壓下CAM把手上的栓鎖直到釋放為止、完全打開CAM把把、以從中間板釋放控制器模組、然後用兩隻手將控制器模組從機箱中拉出。
++
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[DRW 2850 PCM 移除安裝 IEOPS 694]
+
+. 翻轉控制器模組、將其放置在平穩的表面上。
+. 按下控制器模組兩側的藍色按鈕以鬆開護蓋、然後向上或向外旋轉控制器模組護蓋、以打開護蓋。
++
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[DRW 2850 開放式控制器模組涵蓋 IEOPS 695]
+
+
+
+
+
+== 步驟3：更換RTC電池
+
+將 RTC 電池放在控制器內、然後依照特定步驟順序更換。
+
+.動畫-更換RTC電池
+video::7420d100-23b1-4213-a8da-af4701725622[panopto]
+image::../media/drw_2850_replace_rtc_battery_IEOPS-701.svg[DRW 2850 取代 RTC 電池 IEOPS 701]
+
+. 如果您尚未接地、請正確接地。
+. 找到RTC電池。
+. 將電池從電池座中輕推、將電池從電池座中轉開、然後將其從電池座中取出。
++
+
+NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加號、必須正確放置在電池座中。支架附近的加號表示電池的放置方式。
+
+. 從防靜電包裝袋中取出替換電池。
+. 在控制器模組中找到空的電池座。
+. 記下RTC電池的極性、然後以一定角度向下推電池、將其插入電池座。
+. 目視檢查電池、確定電池已完全裝入電池座、且極性正確。
+
+
+
+
+== 步驟4：重新安裝控制器模組
+
+重新安裝控制器模組、並將其開機至載入器提示。
+
+. 將控制器模組翻轉過來、並將端點對齊機箱的開口。
+. 將控制器模組輕輕推入系統的一半。將控制器模組的末端與機箱中的開口對齊、然後將控制器模組輕輕推入系統的一半。
++
+在指示之前、請勿將控制器模組完全插入機箱。
+
+. 視需要重新安裝系統。
++
+如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖纜線時重新安裝。
+
+. 如果電源供應器已拔下、請將其插回、然後重新安裝電源線固定器。
+. 完成控制器模組的重新安裝：
+
+
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[DRW 2850 PCM 移除安裝 IEOPS 694]
+
+. 將CAM握把置於開啟位置時、將控制器模組穩固推入、直到它與中間背板接觸並完全就位、然後將CAM握把關閉至鎖定位置。
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
++
+控制器一旦安裝在機箱中、就會開始開機。
+
+. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
+. 使用掛勾和迴圈固定帶將纜線綁定至纜線管理裝置。
+. 重新連接電源供應器和電源的電源線、然後開啟電源以開始開機程序。
+. 在載入程式提示下停止控制器。
+
+
+
+
+== 步驟 5 ：設定更換 RTC 電池後的時間 / 日期
+
+. 重設控制器上的時間和日期：
++
+.. 使用「show date」命令檢查健全控制器上的日期和時間。
+.. 在目標控制器的載入器提示下、檢查時間和日期。
+.. 如有必要、請使用「設置日期mm/dd/ymm/西元年」命令來修改日期。
+.. 如有必要、請使用「Set Time hh：mm：sss」命令、以GMT0設定時間。
+.. 確認目標控制器上的日期和時間。
+
+
+. 在載入程式提示下、輸入「bye」重新初始化PCIe卡和其他元件、然後讓控制器重新開機。
+. 將控制器恢復正常運作、方法是歸還儲存設備：「torage容錯移轉恢復-ofnode_disapped_node_name_」
+. 使用還原自動恢復 `storage failover modify -node local -auto-giveback true` 命令。
+. 如果觸發 AutoSupport 維護時段、請使用結束 `system node autosupport invoke -node * -type all -message MAINT=END` 命令。
+
+
+
+
+== 步驟6：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

@@ -1,8 +1,8 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-fas2600.html 
 sidebar: sidebar 
-keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, internal storage 
-summary: 您可以將完整的控制器對堆疊佈線工作表和佈線範例、用於內部儲存設備的纜線平台、包括FAS2600系列、AFF E4A200、FAS2700系列、AFF E4A220、 及更新版本。 
+keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, fas2800, internal storage 
+summary: 您可以使用完整的控制器對堆疊纜線工作表、並將纜線範例用於內部儲存設備的纜線平台。 
 ---
 = 控制器對堆疊佈線工作表與佈線範例、適用於具有內部儲存設備的平台、也就是採用IOM12/IOM12B模組的機櫃
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: 您可以將完整的控制器對堆疊佈線工作表和佈線範例�
 
 
 [role="lead"]
-您可以將完整的控制器對堆疊佈線工作表和佈線範例、用於內部儲存設備的纜線平台、包括FAS2600系列、AFF E4A200、FAS2700系列、AFF E4A220、 及更新版本。
+您可以使用完整的控制器對堆疊纜線工作表、並將纜線範例用於內部儲存設備的纜線平台。
 
 
 NOTE: 此資訊不適用於FAS25XX平台。
 
-* 如有需要、請參閱 link:install-cabling-rules.html["SAS纜線配置規則"] 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、
-* 佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器0b連接埠與控制器0A連接埠的連線。
+* 如有需要、請參閱 link:install-cabling-rules.html["SAS 纜線規則與概念"] 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、
+* 佈線範例顯示控制器對堆疊的纜線為實線或虛線、以區別控制器 0b/0b1 連接埠與控制器 0A 連接埠的連接。
 +
-image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[DRW fas2600控制器至堆疊纜線類型金鑰]
+image::../media/drw_fas2600_controller_to_stack_cable_type_key_IEOPS-947.svg[DRW fas2600 控制器堆疊纜線類型金鑰 IEOPS 947]
 
 * 佈線範例以兩種不同的色彩顯示控制器對堆疊連線和機櫃對機櫃連線、以區別透過IOM A（網域A）和IOM B（網域B）的連線能力。
 +
@@ -29,13 +29,42 @@ image::../media/drw_fas2600_cable_color_key.png[DRW fas2600纜線色彩金鑰]
 
 
 
+== FAS2800 平台採用多重路徑 HA 組態、沒有外部機櫃
+
+以下範例顯示、快取多重路徑 HA 連線不需要纜線：
+
+image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[DRW fas2800 noslap mpha IEOPS 954]
+
+
+
+== 三路徑 HA 組態中的 FAS2800 平台、不含外部機櫃
+
+以下佈線範例顯示兩個控制器之間的必要佈線、以實現三重路徑連線：
+
+image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[DRW fas2800 noslap tpha IEOPS 955]
+
+
+
+== 三路徑 HA 組態中的 FAS2800 平台、具備一個多層架構堆疊
+
+下列工作表和纜線範例使用連接埠配對 0A/0b1 ：
+
+image::../media/drw_fas2800_worksheet_IEOPS-948.svg[DRW fas2800 工作表 IEOPS 948]
+
+image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[DRw fas2800 可架裝 Tpha IEOPS 949]
+
+
+
 == 採用多重路徑HA組態的內部儲存平台、只需一個多重機櫃堆疊即可
 
 以下工作表和佈線範例使用連接埠配對0A/0b：
 
-image::../media/drw_fas2600_mpha_worksheet.png[DRW fas2600 mpha工作表]
 
-image::../media/drw_fas2600_mpha.png[Drw fas2600 mpha]
+NOTE: 本節不適用於 FAS2800 或 FAS25XX 系統。
+
+image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[DRW fas2600 mpha 工作表 IEOPS 1255]
+
+image::../media/drw_fas2600_mpha_IEOPS-1256.svg[DRW fas2600 mpha IEOPS 1256]
 
 
 

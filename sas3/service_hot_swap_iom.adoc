@@ -35,7 +35,7 @@ IOM12B模組以藍色等量磁碟區和「IOM12B」標籤加以區分：
 +
 image::../media/iom12b.png[iom12b.]
 
-* 對於多路徑（多重路徑HA或多重路徑）和四路徑（四路徑HA或四路徑）組態、您可以熱交換機櫃IOM（在開啟電源並提供資料的系統中、以不中斷營運的方式取代機櫃IOM）。
+* 對於多路徑（多重路徑 HA 或多重路徑）、三路徑 HA 和四路徑（四路徑 HA 或四路徑）組態、您可以熱交換機櫃 IOM （不中斷地取代已開機且正在處理資料的系統中的機櫃 IOM ）。
 * 對於FAS2600系列和FAS2700系列單路徑HA組態、您必須執行接管與還原作業、以取代已啟動並正在處理資料的系統中的機櫃IOM、I/O也在進行中。
 * 對於FAS2600系列單路徑組態、您必須停止系統以更換機櫃IOM。
 +
@@ -47,10 +47,10 @@ NOTE: 如果您嘗試以單一路徑連線將磁碟櫃上的磁碟櫃IOM熱交�
 如需最新版本的韌體、請參閱NetApp支援網站。
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
 
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
 
 * 磁碟櫃（IOM）韌體會自動更新（不中斷營運）新機櫃IOM上的非最新韌體版本。
 +
@@ -78,7 +78,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp
 
 
  a| 
-多重路徑HA、多重路徑、四重路徑HA或四重路徑組態
+多重路徑 HA 、三重路徑 HA 、多重路徑、四重路徑 HA 或四重路徑組態
  a| 
 前往下一步。
 
@@ -141,7 +141,7 @@ SAS纜線連接器採用鎖定式設計；正確放置於IOM連接埠時、連�
 
 
  a| 
-多重路徑HA、多重路徑、四重路徑HA或四重路徑組態
+多重路徑 HA 、三重路徑 HA 、多重路徑、四重路徑 HA 或四重路徑組態
  a| 
 前往下一步。
 

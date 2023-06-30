@@ -51,7 +51,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 .步驟
 . 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
 +
-如果有任何生命期被列為假、請將其還原至主連接埠：「網路介面回復」
+如果有任何生命被列為假、請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
 
 . 向NetApp支援部門註冊系統序號。
 +
@@ -59,6 +59,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 ** 如果AutoSupport 未啟用此功能、請致電 https://mysupport.netapp.com["NetApp支援"] 以登錄序號。
 
 
+. 如果觸發 AutoSupport 維護時段、請使用結束 `system node autosupport invoke -node * -type all -message MAINT=END` 命令。
 . 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 
 

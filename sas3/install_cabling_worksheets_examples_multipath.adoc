@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-multipath.html 
 sidebar: sidebar 
-keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, ha, configuration, controller-to-stack, cabling, controller-to-stack cabling worksheets and cabling examples for common multipath ha configuration 
+keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, ha, configuration, controller-to-stack, cabling, controller-to-stack cabling worksheets and cabling examples for multipath ha configuration 
 summary: 您可以使用控制器對堆疊佈線工作表和佈線範例、將HA配對纜線連接成多重路徑HA組態。 
 ---
-= 控制器對堆疊佈線工作表和通用多重路徑HA組態的佈線範例-具有IOM12/IOM12B模組的機櫃
+= 多重路徑 HA 組態的控制器對堆疊纜線工作表和纜線範例 - 具有 IOM12/ IOM12B 模組的機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,10 @@ summary: 您可以使用控制器對堆疊佈線工作表和佈線範例、將HA
 [role="lead"]
 您可以使用控制器對堆疊佈線工作表和佈線範例、將HA配對纜線連接成多重路徑HA組態。
 
-* 如有需要、請參閱 link:install-cabling-rules.html["SAS纜線配置規則"] 如需支援組態的相關資訊、請參閱控制器插槽編號慣例、機櫃對機櫃連線、以及控制器對機櫃連線（包括使用連接埠配對）。
+
+NOTE: 此資訊適用於沒有內部儲存設備的平台。
+
+* 如有需要、請參閱 link:install-cabling-rules.html["SAS 纜線規則與概念"] 如需支援組態的相關資訊、請參閱控制器插槽編號慣例、機櫃對機櫃連線、以及控制器對機櫃連線（包括使用連接埠配對）。
 * 如有需要、請參閱 link:install-cabling-worksheets-how-to-read-multipath.html["如何讀取工作表以纜線連接控制器與堆疊的連線、以實現多路徑連線"]。
 * 佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器A和C連接埠連線與控制器B和D連接埠連線。
 +
