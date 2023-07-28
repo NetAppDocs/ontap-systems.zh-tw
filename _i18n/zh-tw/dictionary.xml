@@ -8356,4 +8356,80 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9287ab39836157b975fad28f9782a821" category="sidebar">FAS2800 電源供應器</block>
   <block id="3dfd3fa9bee4e9b9ad14ec588c8e9ed4" category="sidebar">FAS2800 即時時鐘電池</block>
   <block id="f298a7570713e4b8f24128c2f7dcc05c" category="sidebar">工具與支援</block>
+  <block id="0a90cb9b1ee5610139d0e39856363c8c" category="summary">您可以瞭解磁碟機櫃元件上 LED 的位置和狀態條件、藉此監控磁碟機櫃的健全狀況。</block>
+  <block id="039c72bbf63892ab7a9a7d88f01d9ef1" category="doc">監控磁碟機櫃 LED - NS224 機櫃</block>
+  <block id="4c1e87d961b7abad7899274630f1a96a" category="list-text">可啟動機櫃操作員顯示面板（ ODP ）和兩個 NSM 模組上的位置（藍色） LED 、以協助實體定位需要維修的機櫃：<block ref="d6bcc7ed2edc5b8ad7e7188bba8189eb" prefix=" " category="inline-code"></block></block>
+  <block id="3417b5f666a273fe6204a90a40cd960a" category="paragraph">位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用來關閉這些命令<block ref="3262d48df5d75e3452f0f16b313b7808" prefix=" " category="inline-code"></block> 選項。</block>
+  <block id="90c4ae9a3664954df72efa181f417914" category="list-text">LED 狀態可以是：</block>
+  <block id="5f77ac1006b54df5d09a24404a213642" category="list-text">「開啟」： LED 燈恆亮 / 穩定</block>
+  <block id="ca49a7e42f16a88fc179226bfe0edde8" category="list-text">「關閉」： LED 未亮起</block>
+  <block id="117106b46f3b11e3bbfc40ae15a1f678" category="list-text">「閃爍」： LED 會根據 FRU 狀態、以不同的時間間隔開啟和關閉</block>
+  <block id="e3248bada0dd8141e2ab87552806328f" category="list-text">「任何狀態」： LED 可以是「開啟」、「關閉」或「閃爍」</block>
+  <block id="6afbd49803e44c3aa6797e42828fd734" category="paragraph">磁碟機櫃前操作員顯示面板（ ODP ）上的 LED 會指出磁碟機櫃是否正常運作、或硬體是否有問題。</block>
+  <block id="98b358c9e04e87becfb72379a2b4c9d5" category="paragraph">下圖和表格說明 ODP 上的三個 LED ：</block>
+  <block id="138149667750b6d9b839cc79c8d6b29a" category="image-alt">DRW ns224 odp LED IEOPS 1262</block>
+  <block id="6984fd43f67a1bf48379d74906b421c0" category="cell">LED 名稱與顏色</block>
+  <block id="89a44a0e4b47aa8032cdb05ec66374e8" category="paragraph">電源（綠色）</block>
+  <block id="521c36a31c2762741cf0f8890cbe05e3" category="paragraph">開啟</block>
+  <block id="7ab85b9335b729ddfdd50939907e5626" category="paragraph">一個或多個電源供應器正在為磁碟機櫃供電。</block>
+  <block id="7ad8ba1fe94fd72fd9f74d14e7037f4a" category="paragraph">注意（琥珀色）</block>
+  <block id="e83364f6cc636130c2c04e44b8f47f19" category="list-text">一個以上機櫃 FRU 的功能發生錯誤。</block>
+  <block id="792a0f450d52c98560941fc89bf34430" category="list-text">如果兩位數的機櫃 ID 也在閃爍、機櫃 ID 就會處於待處理狀態。</block>
+  <block id="c71218e03c7b1d130d35a210073b7500" category="paragraph">關閉磁碟機櫃的電源、讓機櫃 ID 生效。</block>
+  <block id="fdb5296df84be4098a8bcf7a2eafe291" category="paragraph">位置（藍色）</block>
+  <block id="fa5f455b4bf3d012d2777718991d0440" category="paragraph">系統管理員已啟動此 LED 功能。</block>
+  <block id="745d735db3f2e8f31dbbfa30d77113d9" category="section-title">NSM 模組 LED</block>
+  <block id="2abced28d6da640242f441beadbf8ee0" category="paragraph">NSM 模組上的 LED 會指出模組是否正常運作、是否已準備好處理 I/O 流量、以及硬體是否有任何問題。</block>
+  <block id="eb21c45722f5ff9bf64973b0ac209180" category="paragraph">下圖和表格說明與模組功能相關的 NSM 模組 LED 、以及模組上每個 NVMe 連接埠的功能。</block>
+  <block id="68f54317fa8b23ea7098189416f011eb" category="image-alt">DRW ns224 NSM LED IEOPS 1270</block>
+  <block id="a5b225465f65d6810c16d66ba3172319" category="cell">撥出電話</block>
+  <block id="cb5feb1b7314637725a2e73bdc9f7295" category="cell">色彩</block>
+  <block id="9594eec95be70e7b1710f730fdda33d9" category="paragraph">藍色</block>
+  <block id="6d9957aa3906726ca4d7614d877977df" category="paragraph">NSM 模組：位置</block>
+  <block id="88068e33c78eb72f1b371c7110846085" category="paragraph">琥珀色</block>
+  <block id="1903810490ad85ac105168a3e90068d0" category="paragraph">NSM 模組：注意</block>
+  <block id="e5b3a965934bf3ca0a50c8cda04e1b3f" category="paragraph">NVMe 連接埠 / 連結：狀態</block>
+  <block id="e03b09748657a5b63a0374112f96cef8" category="paragraph">NVMe 連接埠 / 連結：注意</block>
+  <block id="ec53a8c4f07baed5d8825072c89799be" category="cell">狀態</block>
+  <block id="5767ccac8b9ab75a17e52eb709fb26e8" category="cell">NSM 注意事項（琥珀色）</block>
+  <block id="a2164070412e695d73fc2ab64c01f149" category="cell">連接埠 LNO （綠色）</block>
+  <block id="5a1dea4ae3ffb6c0ab8f9acbbf3c4fda" category="cell">連接埠注意事項（琥珀色）</block>
+  <block id="f7461aec7fcfa3f30f604927ef643ebc" category="paragraph">NSM 正常</block>
+  <block id="d60fd197e540446192f328624ebc9be2" category="paragraph">任何狀態</block>
+  <block id="956b8d84f48336f2a0e561c66edb7f07" category="paragraph">NSM 故障</block>
+  <block id="7e5905b08296770ebd816f86cfb84b60" category="paragraph">NSM VPD 錯誤</block>
+  <block id="ec280b965c05518ec9a4070c43b19c7f" category="paragraph">無主機連接埠連線</block>
+  <block id="1401dfc837785ee5fb45ba2c53fd991b" category="paragraph">主機連接埠連線連結作用中</block>
+  <block id="923a074db98ee6d8f18ca11712164fff" category="paragraph">活動時亮起 / 閃爍</block>
+  <block id="25570bb9d9339942629f14699f8f977e" category="paragraph">主機連接埠連線有故障</block>
+  <block id="4402fe228b0b8a78da9019341eb36b7f" category="paragraph">如果所有通道都故障、則開啟 / 關閉</block>
+  <block id="ae56bf029d48aa72a5f72c3a20e780b9" category="paragraph">開機後從 BIOS 映像開機</block>
+  <block id="cfad0a7419f44ea0c64db24197abbf70" category="paragraph">閃爍</block>
+  <block id="6b6aa0b6d9b620cfef1de19db2c781e5" category="paragraph">AC 或 DC 電源供應器（ PSU ）上的 LED 會指出 PSU 是否正常運作、或是否有硬體問題。</block>
+  <block id="ddf6d4204e991f952d5f65cedae767ce" category="paragraph">下圖和表格說明 PSU 上的 LED 。（圖示為 AC PSU 、但 DC PSU 上的 LED 位置相同）：</block>
+  <block id="cb64a8852ed883dfc686d51492e31bfa" category="image-alt">DRW ns224 PSU LED IEOPS 1261</block>
+  <block id="7609b319dac3aca8b9d7c805388fc5e6" category="paragraph">雙色 LED 會在綠色時顯示電源 / 活動、而琥珀色時則顯示故障。</block>
+  <block id="0cb6b469a5da43eb5225c25fab0b5ff0" category="cell">電源 / 活動（綠色）</block>
+  <block id="cd5f6c10b859eea6eaed71a2e494c0db" category="paragraph">機箱沒有交流 / 直流電源</block>
+  <block id="aade40c62d1308360c2f119536da1c63" category="paragraph">PSU 沒有交流 / 直流電源</block>
+  <block id="cf335ef3413e902db7461d8f15450cae" category="paragraph">交流 / 直流電源開啟、但 PSU 不在機箱內</block>
+  <block id="215c6f78a1c194e6228514ff7bdd71cd" category="paragraph">PSU 正常運作</block>
+  <block id="3f01099f03de6897d7388ee1c31f6770" category="paragraph">PSU 故障</block>
+  <block id="0da2a2ed379c0a511e6346492e61a8e8" category="paragraph">風扇故障</block>
+  <block id="d78c48ba978ed998f8c4aaf41f2003a1" category="paragraph">韌體更新模式</block>
+  <block id="0485558d80ce3f9e356a60181cefb758" category="section-title">磁碟機 LED</block>
+  <block id="ec2086f8c8aa32f4039431accf799e7e" category="paragraph">NVMe 磁碟機上的 LED 會指出它是否正常運作、或是硬體有問題。</block>
+  <block id="1789a93f2267580a7b3d61d32fd8de64" category="paragraph">下圖和表格說明 NVMe 磁碟機上的兩個 LED ：</block>
+  <block id="82e7f0e876b2809cacccfffb630802cf" category="image-alt">DRW ns224 磁碟機 LED IEOPS 1263</block>
+  <block id="31eef7712c15110e77d39c33fa6398b8" category="paragraph">電力 / 活動</block>
+  <block id="4f64599448fa0ed6d8c8631c9c782051" category="cell">電源 / 活動（綠色）</block>
+  <block id="d24aa27125c051e29098493eceace539" category="cell">關聯的 ODP LED</block>
+  <block id="73adb82b35cf9e200ec112cf75d968b7" category="paragraph">磁碟機已安裝且可運作</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="paragraph">不適用</block>
+  <block id="04e450c5eabdbe5208c912ed16aa5c5f" category="paragraph">磁碟機故障</block>
+  <block id="81c36a08fce93b18a65d7e5214ab26cb" category="paragraph">SES 裝置識別集</block>
+  <block id="0adb6ff7f0bdadd155910f204b3330d5" category="paragraph">閃爍</block>
+  <block id="cc818334a12195812c946efa74959a44" category="paragraph">注意（琥珀色）關閉</block>
+  <block id="830de589dead0df6a61213a5dc116efd" category="paragraph">SES 裝置故障位元集</block>
+  <block id="2475cae13a65975fd4da631c78689624" category="paragraph">電源控制電路故障</block>
 </blocks>
