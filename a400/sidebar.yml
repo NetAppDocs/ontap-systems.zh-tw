@@ -1,7 +1,6 @@
 ---
 section: a400
 title: VA400系統AFF
-url: "/a400/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: 安裝與設定AFF
@@ -17,6 +16,8 @@ entries:
 - title: 維護
   pdf-filename: VA400維護AFF
   entries:
+  - title: 總覽
+    url: "/a400/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: VA400開機媒體AFF
     entries:
@@ -43,22 +44,22 @@ entries:
       url: "/a400/chassis-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a400/chassis-replace-shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/a400/chassis-replace-move-hardware.html"
-    - title: 完整更換
+    - title: 完成機箱更換
       url: "/a400/chassis-replace-complete-system-restore-rma.html"
-  - title: 控制器模組
+  - title: 控制器
     pdf-filename: VA400控制器模組AFF
     entries:
     - title: 總覽
       url: "/a400/controller-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a400/controller-replace-shutdown.html"
-    - title: 更換控制器模組
+    - title: 更換控制器
       url: "/a400/controller-replace-move-hardware.html"
     - title: 還原系統組態
       url: "/a400/controller-replace-system-config-restore-and-verify.html"
-    - title: 重新安裝系統
+    - title: 可重新恢復的系統
       url: "/a400/controller-replace-recable-reassign-disks.html"
     - title: 完整系統還原
       url: "/a400/controller-replace-restore-system-rma.html"

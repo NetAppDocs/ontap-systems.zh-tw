@@ -1,0 +1,81 @@
+---
+section: asa150
+title: ASA A150 系統
+entries:
+- title: 安裝與設定
+  pdf-filename: ASA A150 安裝與設定
+  entries:
+  - title: 選擇安裝與設定體驗
+    url: "/asa150/install-setup.html"
+  - title: 快速步驟
+    url: "/asa150/install-quick-guide.html"
+  - title: 影片步驟
+    url: "/asa150/install-videos.html"
+  - title: 詳細步驟
+    url: "/asa150/install-detailed-guide.html"
+- title: 維護
+  pdf-filename: ASA A150 維護
+  entries:
+  - title: 總覽
+    url: "/asa150/maintain-overview.html"
+  - title: 開機媒體
+    pdf-filename: ASA A150 開機媒體
+    entries:
+    - title: 總覽
+      url: "/asa150/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/asa150/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/asa150/bootmedia-impaired-controller-shutdown.html"
+    - title: 取代開機映像
+      url: "/asa150/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/asa150/bootmedia-recovery-image-boot-non-2n-mcc.html"
+    - title: 還原OKM、NSE和NVE
+      url: "/asa150/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/asa150/bootmedia-complete-rma.html"
+  - title: 快取模組
+    pdf-filename: ASA A150 快取模組
+    url: "/asa150/caching-module-replace.html"
+  - title: 機箱
+    pdf-filename: ASA A150 機箱
+    entries:
+    - title: 總覽
+      url: "/asa150/chassis-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/asa150/chassis-replace-shutdown.html"
+    - title: 更換機箱
+      url: "/asa150/chassis-replace-move-hardware.html"
+    - title: 還原組態
+      url: "/asa150/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器
+    pdf-filename: ASA A150 控制器
+    entries:
+    - title: 總覽
+      url: "/asa150/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/asa150/controller-replace-shutdown.html"
+    - title: 更換控制器
+      url: "/asa150/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/asa150/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新恢復的系統
+      url: "/asa150/controller-replace-recable-reassign-disks.html"
+    - title: 完整系統還原
+      url: "/asa150/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    pdf-filename: ASA A150 DIMM
+    url: "/asa150/dimm-replace.html"
+  - title: 磁碟機
+    pdf-filename: ASA A150 磁碟機
+    url: "/asa150/drive-replace.html"
+  - title: NVMEM電池
+    pdf-filename: ASA A150 NVMEM 電池
+    url: "/asa150/nvmem-nvram-battery-replace.html"
+  - title: 電源供應器
+    pdf-filename: ASA A150 電源供應器
+    url: "/asa150/power-supply-swap-out.html"
+  - title: 即時時鐘電池
+    pdf-filename: ASA A150 即時時鐘電池
+    url: "/asa150/rtc-battery-replace.html"

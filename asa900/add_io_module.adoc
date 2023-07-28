@@ -1,0 +1,399 @@
+---
+permalink: asa900/add_io_module.html 
+sidebar:  
+keywords:  
+summary: 您可以將I/O模組新增至系統、方法是在已完全安裝的系統中以新的I/O模組取代現有的I/O模組、或是將新的I/O模組新增至機箱的空插槽。 
+---
+= 新增 I/O 模組 - ASA A900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將I/O模組新增至系統、方法是將新的I/O節點新增至具有空插槽的系統、或是將I/O模組更換為已完全安裝的系統中的新I/O模組。
+
+.開始之前
+* 請檢查 https://hwu.netapp.com/["NetApp Hardware Universe"^] 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。
+* 如果有多個插槽可用、請檢查中的插槽優先順序 https://hwu.netapp.com/["NetApp Hardware Universe"^] 並使用適用於您I/O模組的最佳工具。
+* 若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。
+* 確定所有其他元件都正常運作。
+
+
+
+
+== 選項1：將I/O模組新增至具有開放插槽的系統
+
+您可以將I/O模組新增至系統的空模組插槽。
+
+
+
+== 步驟1：關閉受損節點
+
+使用下列其中一個選項來關閉或接管受損的控制器。
+
+[role="tabbed-block"]
+====
+.選項1：大多數系統
+--
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+《等待贈品……》
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+.選項2：控制器位於MetroCluster 一個不二之處
+--
+
+NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+====
+
+
+== 步驟2：新增I/O模組
+
+. 如果您尚未接地、請正確接地。
+. 移除目標插槽遮罩：
++
+.. 按下有字母和編號的CAM栓鎖。
+.. 向下旋轉CAM栓鎖、直到其處於開啟位置。
+.. 卸下封蓋。
+
+
+. 安裝I/O模組：
++
+.. 將I/O模組與插槽邊緣對齊。
+.. 將I/O模組滑入插槽、直到有字母和編號的I/O CAM栓開始與I/O CAM銷接合為止。
+.. 將I/O CAM栓鎖推到底、將模組鎖定到位。
+
+
+. 如果更換的I/O模組是NIC、請將模組纜線連接至資料交換器。
++
+
+NOTE: 請確定所有未使用的I/O插槽均已安裝空白、以避免可能的散熱問題。
+
+. 從載入程式提示字元_by_重新啟動控制器
++
+
+NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
+
+. 從合作夥伴控制器中退回控制器。將容錯移轉還原為-ofnode_node_name'
+. 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
+. 如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。
+. 對控制器B重複這些步驟
+. 如果您安裝儲存I/O模組、請依照中所述、安裝NS224磁碟櫃並進行纜線連接 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"^]。
+
+
+
+
+== 選項2：在沒有開放插槽的系統中新增I/O模組
+
+如果系統已完全安裝、您可以移除現有的I/O模組、並以不同的I/O模組來更換I/O模組、以變更I/O插槽中的I/O模組。
+
+. 如果您：
++
+[cols="1,2"]
+|===
+| 取代... | 然後... 
+
+
+ a| 
+NIC I/O模組的連接埠數量相同
+ a| 
+當控制器模組關閉時、LIF會自動移轉。
+
+
+
+ a| 
+NIC I/O模組、連接埠較少
+ a| 
+將所需的移位點永久重新指派至不同的主連接埠。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^] 如需使用System Manager永久移動生命期的相關資訊、
+
+
+
+ a| 
+具有儲存I/O模組的NIC I/O模組
+ a| 
+使用System Manager將lifs永久移轉至不同的主連接埠、如所述 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^]。
+
+|===
+
+
+
+
+== 步驟1：關閉受損節點
+
+使用下列其中一個選項來關閉或接管受損的控制器。
+
+[role="tabbed-block"]
+====
+.選項1：大多數系統
+--
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+《等待贈品……》
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+.選項2：控制器位於MetroCluster 一個不二之處
+--
+
+NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+====
+
+
+== 步驟2：更換I/O模組
+
+. 如果您尚未接地、請正確接地。
+. 拔下目標I/O模組上的任何纜線。
+. 從機箱中移除目標I/O模組：
++
+.. 按下有字母和編號的CAM栓鎖。
++
+CAM栓鎖會從機箱移出。
+
+.. 向下轉動CAM栓鎖、直到其處於水平位置。
++
+I/O模組從機箱鬆脫、並從I/O插槽移出約1/2英吋。
+
+.. 拉動模組面兩側的拉片、將I/O模組從機箱中移除。
++
+請務必追蹤I/O模組所在的插槽。
+
++
+.動畫-移除或更換I/O模組
+video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto]
++
+image:../media/drw_a900_remove_PCIe_module.png[""]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image::../media/legend_icon_01.svg[圖例圖示01]
+ a| 
+I/O CAM栓鎖有編號和編號
+
+
+
+ a| 
+image:../media/legend_icon_02.svg["寬=20px"]
+ a| 
+I/O CAM栓鎖完全解除鎖定
+
+|===
+
+
+. 將I/O模組安裝至目標插槽：
++
+.. 將I/O模組與插槽邊緣對齊。
+.. 將I/O模組滑入插槽、直到有字母和編號的I/O CAM栓開始與I/O CAM銷接合為止。
+.. 將I/O CAM栓鎖推到底、將模組鎖定到位。
+
+
+. 重複執行移除和安裝步驟、以更換控制器A的其他模組
+. 如果更換的I/O模組是NIC、請將模組或模組纜線連接至資料交換器。
+. 從載入程式提示重新啟動控制器：
++
+.. 檢查控制器上的 BMC 版本： `system service-processor show`
+.. 如有需要、請更新 BMC 韌體： `system service-processor image update`
+.. 重新啟動節點： `bye`
++
+
+NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
+
++
+
+NOTE: 如果您在重新開機期間遇到問題、請參閱 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308["Burt 1494308 - 在 I/O 模組更換期間、可能會觸發環境關機"]
+
+
+
+. 從合作夥伴控制器中退回控制器。將容錯移轉還原為-ofnode_node_name'
+. 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
+. 如果您新增：
++
+[cols="1,2"]
+|===
+| 如果I/O模組是... | 然後... 
+
+
+ a| 
+插槽3或7中的NIC模組、
+ a| 
+對於每個連接埠、使用「儲存連接埠修改節點*_<節點名稱>_-port *_<連接埠名稱>_-mode network」命令。
+
+
+
+ a| 
+儲存模組
+ a| 
+如所述、安裝並連接NS224磁碟櫃https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"^]。
+
+|===
+. 對控制器B重複這些步驟
+

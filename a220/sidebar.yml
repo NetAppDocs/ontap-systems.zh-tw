@@ -1,80 +1,81 @@
 ---
 section: a220
 title: VA220系統AFF
-url: "/a220/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: 安裝與設定VA220 AFF
   entries:
   - title: 選擇安裝與設定體驗
-    url: "/fas2700/install-setup.html"
+    url: "/a220/install-setup.html"
   - title: 快速步驟
-    url: "/fas2700/install-quick-guide.html"
+    url: "/a220/install-quick-guide.html"
   - title: 影片步驟
-    url: "/fas2700/install-videos.html"
+    url: "/a220/install-videos.html"
   - title: 詳細步驟
-    url: "/fas2700/install-detailed-guide.html"
+    url: "/a220/install-detailed-guide.html"
 - title: 維護
   pdf-filename: VA220維護AFF
   entries:
+  - title: 總覽
+    url: "/a220/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: VA220開機媒體AFF
     entries:
     - title: 總覽
-      url: "/fas2700/bootmedia-replace-overview.html"
+      url: "/a220/bootmedia-replace-overview.html"
     - title: 檢查內建加密金鑰
-      url: "/fas2700/bootmedia-encryption-preshutdown-checks.html"
+      url: "/a220/bootmedia-encryption-preshutdown-checks.html"
     - title: 關閉受損的控制器
-      url: "/fas2700/bootmedia-impaired-controller-shutdown.html"
+      url: "/a220/bootmedia-impaired-controller-shutdown.html"
     - title: 取代開機映像
-      url: "/fas2700/bootmedia-replace.html"
+      url: "/a220/bootmedia-replace.html"
     - title: 開機還原映像
-      url: "/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html"
+      url: "/a220/bootmedia-recovery-image-boot-non-2n-mcc.html"
     - title: 還原OKM、NSE和NVE
-      url: "/fas2700/bootmedia-encryption-restore.html"
+      url: "/a220/bootmedia-encryption-restore.html"
     - title: 將故障零件退回NetApp
-      url: "/fas2700/bootmedia-complete-rma.html"
+      url: "/a220/bootmedia-complete-rma.html"
   - title: 快取模組
     pdf-filename: VA220快取模組AFF
-    url: "/fas2700/caching-module-replace.html"
+    url: "/a220/caching-module-replace.html"
   - title: 機箱
-    pdf-filename: FASA220與FAS2700機箱AFF
+    pdf-filename: AFF A220 和 A220 機箱
     entries:
     - title: 總覽
-      url: "/fas2700/chassis-replace-overview.html"
+      url: "/a220/chassis-replace-overview.html"
     - title: 關閉受損的控制器
-      url: "/fas2700/chassis-replace-shutdown.html"
+      url: "/a220/chassis-replace-shutdown.html"
     - title: 更換硬體
-      url: "/fas2700/chassis-replace-move-hardware.html"
+      url: "/a220/chassis-replace-move-hardware.html"
     - title: 還原組態
-      url: "/fas2700/chassis-replace-complete-system-restore-rma.html"
+      url: "/a220/chassis-replace-complete-system-restore-rma.html"
   - title: 控制器
     pdf-filename: VA220控制器AFF
     entries:
     - title: 總覽
-      url: "/fas2700/controller-replace-overview.html"
+      url: "/a220/controller-replace-overview.html"
     - title: 關閉受損的控制器
-      url: "/fas2700/controller-replace-shutdown.html"
+      url: "/a220/controller-replace-shutdown.html"
     - title: 更換控制器硬體
-      url: "/fas2700/controller-replace-move-hardware.html"
+      url: "/a220/controller-replace-move-hardware.html"
     - title: 還原系統組態
-      url: "/fas2700/controller-replace-system-config-restore-and-verify.html"
+      url: "/a220/controller-replace-system-config-restore-and-verify.html"
     - title: 可重新恢復的系統
-      url: "/fas2700/controller-replace-recable-reassign-disks.html"
+      url: "/a220/controller-replace-recable-reassign-disks.html"
     - title: 完整系統還原
-      url: "/fas2700/controller-replace-restore-system-rma.html"
+      url: "/a220/controller-replace-restore-system-rma.html"
   - title: DIMM
     pdf-filename: VA220 DIMM AFF
-    url: "/fas2700/dimm-replace.html"
+    url: "/a220/dimm-replace.html"
   - title: 磁碟機
     pdf-filename: VA220磁碟機AFF
-    url: "/fas2700/drive-replace.html"
+    url: "/a220/drive-replace.html"
   - title: NVMEM電池
-    pdf-filename: EFF-220和FAS2700 NVMEM電池AFF
-    url: "/fas2700/nvmem-nvram-battery-replace.html"
+    pdf-filename: AFF A220 和 A220 NVMEM 電池
+    url: "/a220/nvmem-nvram-battery-replace.html"
   - title: 電源供應器
-    pdf-filename: FASA220與FAS2700電源供應器AFF
-    url: "/fas2700/power-supply-swap-out.html"
+    pdf-filename: AFF A220 和 A220 電源供應器
+    url: "/a220/power-supply-swap-out.html"
   - title: 即時時鐘電池
     pdf-filename: Real-Time時鐘電池AFF
-    url: "/fas2700/rtc-battery-replace.html"
+    url: "/a220/rtc-battery-replace.html"

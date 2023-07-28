@@ -1,7 +1,7 @@
 ---
 permalink: a320/pci-cards-and-risers-replace.html 
 sidebar: sidebar 
-keywords: aff, a320, aff a320, replace, pcie, card, disconnect, cable, card, sfp, qsfp, module, riser, reinstall, shut, down, controller, operation, diagnostic, complete, process, replace a pcie card, shut down the impaired controller, remove the controller module, replace a pcie card, install the controller module, restore the controller module to operation after running diagnostics, complete the replacement process 
+keywords: aff, a320, aff a320, replace, pcie, card, disconnect, cable, card, sfp, qsfp, module, riser, reinstall, shut, down, controller, operation, complete, process, replace a pcie card, shut down the impaired controller, remove the controller module, replace a pcie card, install the controller module, restore the controller module to operation, complete the replacement process 
 summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。 
 ---
 = 更換PCIe卡AFF - REVA320
@@ -147,7 +147,7 @@ image::../media/drw_a320_pci_card_replace_animated_gif.png[更換成動態圖片
 
 == 9月4日：安裝控制器模組
 
-在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
+更換控制器模組中的元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機。
 
 . 如果您尚未這麼做、請關閉控制器模組後端的通風管、然後將護蓋重新安裝到PCIe卡上。
 . 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
@@ -179,7 +179,6 @@ NOTE: 鎖定機制臂滑入機箱。
 .. 釋放栓鎖、將控制器模組鎖定到位。
 .. 重新接上電源供應器。
 .. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
-.. 按下「Ctrl-C」來中斷正常開機程序。
 
 
 
@@ -188,7 +187,7 @@ NOTE: 鎖定機制臂滑入機箱。
 
 == 步驟5：將控制器模組還原為運作狀態
 
-完成診斷之後、您必須重新啟動系統、歸還控制器模組、然後重新啟用自動恢復功能。
+您必須重新設計系統、歸還控制器模組、然後重新啟用自動恢復功能。
 
 . 視需要重新安裝系統。
 +

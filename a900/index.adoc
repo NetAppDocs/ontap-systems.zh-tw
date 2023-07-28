@@ -1,12 +1,80 @@
 ---
-layout: landing-page 
-sidebar: sidebar 
 permalink: a900/index.html 
-summary: 利用《支援您的AFF 系統》文件、您可以安裝、設定及維護系統。 
+sidebar: sidebar 
+keywords: aff A900 maintenance, maintenance, repairing aff A900, repairing aff A900, replace aff A900 components, replace aff A900 components 
+summary: 維護 ASA A900 硬體 
 ---
-= VA900系統AFF
+= 維護 AFF A900 硬體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+對於 AFF A900 儲存系統、您可以對下列元件執行維護程序。
+
+
+
+== 開機媒體
+
+開機媒體會儲存一組主要和次要的開機映像檔案、供系統在開機時使用。
+
+
+
+== 機箱
+
+機箱是實體機箱、可容納所有控制器元件、例如控制器 /CPU 單元、電源供應器和 I/O
+
+
+
+== 控制器
+
+控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 功能。
+
+
+
+== DIMM
+
+如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。
+
+
+
+== DCPM
+
+DCPM （ destage 控制器電源模組）包含 NVRAM11 電池。
+
+
+
+== 風扇
+
+風扇會冷卻控制器。
+
+
+
+== I/O模組
+
+I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。
+
+
+
+== LED USB
+
+LED USB模組可連線至主控台連接埠和系統狀態。
+
+
+
+== NVRAM
+
+NVRAM 模組（非揮發性隨機存取記憶體）可讓控制器在電源週期或系統重新開機時保留資料。
+
+
+
+== 電源供應器
+
+電源供應器可在控制器機櫃中提供備援電源。
+
+
+
+== 即時時鐘電池
+
+即時時鐘電池會在電源關閉時保留系統日期和時間資訊。

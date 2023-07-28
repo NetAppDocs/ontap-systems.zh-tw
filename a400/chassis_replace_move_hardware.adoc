@@ -1,7 +1,7 @@
 ---
 permalink: a400/chassis-replace-move-hardware.html 
 sidebar: sidebar 
-keywords: aff a400, aff, a400, component, system, function, properly, contact, technical, support, replace, chassis, shut, down, controller, replacing, remove, module, fan, equipment, rack, cabinet, ha, state, diagnostic, switch, back, aggregate, two-node, metrocluster, configuration, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, verify and set the ha state of the chassis, run diagnostics, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
+keywords: aff a400, aff, a400, component, system, function, properly, contact, technical, support, replace, chassis, shut, down, controller, replacing, remove, module, fan, equipment, rack, cabinet, ha, state, switch, back, aggregate, two-node, metrocluster, configuration, complete, replacement, process, replace the chassis, shut down the controllers when replacing a chassis, remove the controller modules, move the fans, replace a chassis from within the equipment rack or system cabinet, install the controller modules, verify and set the ha state of the chassis, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
 summary: 將風扇、硬碟機和控制器模組或模組從受損的機箱移至新機箱、然後將受損的機箱從設備機架或系統機櫃換成與受損機箱相同機型的新機箱。 
 ---
 = 更換硬體- AFF REVA400
@@ -11,7 +11,7 @@ summary: 將風扇、硬碟機和控制器模組或模組從受損的機箱移�
 
 
 [role="lead"]
-將風扇、硬碟機和控制器模組或模組從受損的機箱移至新機箱、然後將受損的機箱從設備機架或系統機櫃換成與受損機箱相同機型的新機箱。
+將風扇、硬碟機和控制器模組從功能受損的機箱移至新機箱、然後將功能受損的機箱換成與功能受損機箱相同型號的新機箱。
 
 
 
@@ -84,7 +84,7 @@ CAUTION: 風扇模組很短。請務必用手支撐風扇模組的底部、以�
 
 == 步驟4：安裝控制器模組
 
-將控制器模組安裝到新機箱之後、您需要將其開機至可執行診斷測試的狀態。
+將控制器模組安裝到新機箱後、您需要將其開機。
 
 對於同一機箱中有兩個控制器模組的HA配對、安裝控制器模組的順序特別重要、因為當您將控制器模組完全裝入機箱時、它會嘗試重新開機。
 

@@ -1,0 +1,71 @@
+---
+permalink: a700/dcpm-nvram10-battery-replace.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part 
+summary: 若要熱交換內含NVRAM10電池的還原控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。 
+---
+= 熱交換非階段控制器電源模組（ DCPM ） - AFF A700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要熱交換內含NVRAM10電池的還原控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。
+
+從機箱中取出故障模組之前、您必須備有備用的DCPM模組、而且必須在移除後五分鐘內進行更換。從機箱中移除DCPM模組之後、除了容錯移轉到其他控制器模組之外、擁有DCPM模組的控制器模組也不會有關機保護。
+
+
+
+== 步驟1：更換DCPM模組
+
+若要更換系統中的DCPM模組、您必須從系統中移除故障的DCPM模組、然後以新的DCPM模組加以更換。
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 卸下系統正面的擋板並將其放在一邊。
+. 尋找模組上的警示LED、找出系統前面的故障DCPM模組。
++
+如果模組故障、LED會持續亮起黃色燈號。
+
++
+
+NOTE: DCPM模組必須在移除後五分鐘內在機箱中更換、否則相關的控制器將會關機。
+
+. 按下模組把手上的橘色鎖定按鈕、然後將DCPM模組滑出機箱。
++
+image::../media/drw_9000_remove_nv_battery.png[DRW 9000移除nv電池]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+DCPM模組橘色鎖定按鈕
+
+|===
+. 將DCPM模組的一端對準機箱開口、然後將其輕推入機箱、直到卡入定位。
++
+
+NOTE: 模組和插槽均採用鎖定式設計。請勿強制模組進入開啟位置。如果模組不容易進入、請重新對齊模組、然後將其滑入機箱。
+
++
+當模組完全插入機箱時、DCPM模組LED會亮起。
+
+
+
+
+
+== 步驟2：丟棄電池
+
+您必須依照當地電池回收或棄置規定來處理電池。如果您無法妥善處理電池、則必須將電池送回NetApp、如套件隨附的RMA指示所述。
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[]
+
+
+
+== 步驟3：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

@@ -1,7 +1,7 @@
 ---
 permalink: c800/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
-keywords: aff c800, restore and verify the system configuration, verify and set the ha state of the controller module, run system-level diagnostics 
+keywords: aff c800, restore and verify the system configuration, verify and set the ha state of the controller module 
 summary: 完成硬體更換並開機至維護模式之後、您需要驗證更換控制器的低階系統組態、並視需要重新設定系統設定。 
 ---
 = 還原並驗證系統組態- AFF 還原C800
@@ -15,7 +15,7 @@ summary: 完成硬體更換並開機至維護模式之後、您需要驗證更�
 
 
 
-== 步驟1：更換控制器後、請設定並驗證系統時間
+== 步驟 1 ：設定並驗證系統時間
 
 您應該對照HA配對中的健全控制器模組、或獨立組態中的可靠時間伺服器、檢查更換控制器模組的時間和日期。如果時間和日期不相符、您必須在更換的控制器模組上重設、以避免客戶端因時間差異而可能發生中斷。
 
@@ -67,38 +67,4 @@ HA狀態的值可以是下列其中一項：
 
 . 如果顯示的控制器模組系統狀態與您的系統組態不符、請設定控制器模組的「HA」狀態：「ha-config modify controller ha-state」
 . 確認設定已變更：「ha-config show」
-
-
-
-
-== 步驟3：執行診斷
-
-更換系統中的元件之後、您應該對該元件執行診斷測試。
-
-您的系統必須處於載入器提示狀態、才能開始診斷。
-
-診斷程序中的所有命令都是由要更換元件的控制器發出。
-
-. 如果要服務的控制器未出現在載入程式提示下、請重新啟動控制器：「ystem nodem halt -node_name」（系統節點停止節點節點節點名稱）
-+
-發出命令之後、您應該等到系統在載入程式提示字元停止。
-
-. 在載入程式提示字元下、存取專為系統層級診斷所設計的特殊驅動程式、以正常運作：「boot_diags'（boot_diags'）
-. 從顯示的功能表中選取*掃描系統*、即可執行診斷測試。
-. 從顯示的功能表中選取*測試記憶體*。
-. 根據上述步驟的結果繼續進行：
-+
-** 如果測試失敗、請修正故障、然後重新執行測試。
-** 如果測試報告無故障、請從功能表中選取重新開機、以重新啟動系統。
-+
-
-NOTE: 在開機程序期間、您可能會看到下列提示：
-
-+
-*** 系統ID不相符的提示警告、並要求覆寫系統ID。
-*** 提示警告：在HA組態中進入維護模式時、您必須確保健全的控制器保持停機狀態。您可以安全地回應這些提示。
-
-
-
-
 

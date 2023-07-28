@@ -1,7 +1,6 @@
 ---
 section: a250
 title: VA250系統AFF
-url: "/a250/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: 安裝與設定AFF
@@ -17,6 +16,8 @@ entries:
 - title: 維護
   pdf-filename: VA250維護AFF
   entries:
+  - title: 總覽
+    url: "/a250/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: VA250開機媒體AFF
     entries:
@@ -41,9 +42,9 @@ entries:
       url: "/a250/chassis-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a250/chassis-replace-shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/a250/chassis-replace-move-hardware.html"
-    - title: 完整更換
+    - title: 完成機箱更換
       url: "/a250/chassis-replace-complete-system-restore-rma.html"
   - title: 控制器
     pdf-filename: VA250控制器模組AFF
@@ -52,7 +53,7 @@ entries:
       url: "/a250/controller-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a250/controller-replace-shutdown.html"
-    - title: 更換控制器模組
+    - title: 更換控制器
       url: "/a250/controller-replace-move-hardware.html"
     - title: 還原系統組態
       url: "/a250/controller-replace-system-config-restore-and-verify.html"

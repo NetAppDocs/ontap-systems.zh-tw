@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, detailed, guide, prepare, install, hardware, two, node, switchless, cluster, cable, controller, ds212c, ds224c, ns224, drive, shelf, complete, system, setup, configuration, network, discovery 
 summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。 
 ---
-= 詳細指南：AFF 《》（《產品指南》）-《產品介紹》（《產品介紹》
+= 詳細指南 - FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -323,11 +323,11 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png[""]
 
 
 
-=== 選項2：將控制器纜線連接AFF 至僅ASA AFF 執行ONTAP 《S9.8及更新版本》的單一NS224磁碟機櫃、即可連接至該系統
+=== 選項 2 ：將控制器連接至 ASA AFF A700 系統中的單一 NS224 磁碟機櫃、僅執行 ONTAP 9.8 及更新版本
 
 您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
 
-* 此工作僅適用於AFF 執行部分為9.8或更新版本的部分。ASA AFF ONTAP
+* 此工作僅適用於執行 ONTAP 9.8 或更新版本的 ASA AFF A700 。
 * 系統每個控制器的插槽3和/或7中必須至少安裝一個X91148A模組。動畫或圖例顯示此模組安裝在插槽3和7中。
 * 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
 +
@@ -358,11 +358,11 @@ image::../media/single_NS224_shelf.png[單一NS224機櫃]
 
 
 
-=== 選項3：將控制器連接至AFF 僅ASA AFF 執行ONTAP 《S9.8及更新版本》的2個NS224磁碟機櫃、即可連接到位於《Se A700》和《Se A700》系統
+=== 選項 3 ：將控制器連接至兩個 NS224 磁碟櫃、僅限執行 ONTAP 9.8 及更新版本的 ASA AFF A700 系統
 
 您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
 
-* 此工作僅適用於AFF 執行部分為9.8或更新版本的部分。ASA AFF ONTAP
+* 此工作僅適用於執行 ONTAP 9.8 或更新版本的 ASA AFF A700 。
 * 每個控制器必須有兩個X91148A模組安裝在插槽3和7中。
 * 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
 +

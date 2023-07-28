@@ -1,7 +1,7 @@
 ---
 permalink: a700s/dimm-replace.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, replace, fimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, dimm, shut, down, impair, diagnostic, complete, replacement, process, replace a dimmm, shut down the impaired controller, remove the controller module, replace a dimm, reinstall the controller module and booting the system, run diagnostics, complete the replacement process 
+keywords: aff a700s, aff, a700s, replace, fimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, dimm, shut, down, impair, complete, replacement, process, replace a dimmm, shut down the impaired controller, remove the controller module, replace a dimm, reinstall the controller module and booting the system, complete the replacement process 
 summary: 當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。 
 ---
 = 更換DIMM AFF -《Se A700s》
@@ -214,7 +214,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
-== 步驟4：重新安裝控制器模組並啟動系統
+== 步驟 4 ：重新安裝控制器模組並啟動系統
 
 在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。
 
@@ -243,43 +243,15 @@ NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
 
 +
-控制器模組一旦完全插入機箱、就會開始開機。準備好中斷開機程序。
+控制器模組一旦完全插入機箱、就會開始開機。
 
 .. 向上轉動鎖定栓、將其傾斜、使其從鎖定銷中取出、然後將其放低至鎖定位置。
-.. 當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」時、請按「Ctrl-C」來中斷開機程序。
-.. 從顯示的功能表中選取要開機至維護模式的選項。
 
 
 
 
 
 
-== 步驟5：執行診斷
-
-更換系統中的元件之後、您應該對該元件執行診斷測試。
-
-您的系統必須處於載入器提示狀態、才能開始診斷。
-
-診斷程序中的所有命令都是由要更換元件的控制器發出。
-
-.步驟
-. 如果要服務的控制器未出現在載入程式提示下、請重新啟動控制器：「ystem nodem halt -node_name」（系統節點停止節點節點節點名稱）
-+
-發出命令之後、您應該等到系統在載入程式提示字元停止。
-
-. 在載入程式提示字元下、存取專為系統層級診斷所設計的特殊驅動程式、以正常運作：「boot_diags'（boot_diags'）
-. 從顯示的功能表中選取*掃描系統*、即可執行診斷測試。
-. 從顯示的功能表中選取*測試記憶體*。
-. 根據上述步驟的結果繼續進行：
-+
-** 如果測試失敗、請修正故障、然後重新執行測試。
-** 如果測試報告無故障、請從功能表中選取重新開機、以重新啟動系統。
-
-
-
-
-
-
-== 步驟6：將故障零件歸還給NetApp
+== 步驟 5 ：將故障零件退回 NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

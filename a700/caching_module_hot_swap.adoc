@@ -1,0 +1,142 @@
+---
+permalink: a700/caching-module-hot-swap.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, hot swap, replace, FlashCache 
+summary: NVMe SSD FlashCache模組（FlashCache或快取模組）僅位於FAS9000系統插槽6的NVRAM10模組前方。從S得9.4開始ONTAP 、您可以從相同或不同支援廠商、將相同容量的快取模組熱交換出。 
+---
+= 熱交換快取模組 - AFF A700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe SSD FlashCache模組（FlashCache或快取模組）僅位於FAS9000系統插槽6的NVRAM10模組前方。從S得9.4開始ONTAP 、您可以從相同或不同支援廠商、將相同容量的快取模組熱交換出。
+
+.開始之前
+您的儲存系統必須符合特定條件、視您的情況而定：
+
+* 它必須具備適用於您所安裝之快取模組的作業系統。
+* 它必須支援快取容量。
+* 更換快取模組的容量必須與故障快取模組相同、但可以來自不同的支援廠商。
+* 儲存系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 在插槽6中、透過快取模組正面亮起的黃色警示LED、找到故障快取模組。
+. 準備好快取模組插槽以進行更換、如下所示：
++
+.. 適用於更新版本的更新版本：ONTAP
++
+... 在目標節點上記錄快取模組容量、零件編號和序號：「System Node run local sysconfig -av6」（系統節點執行本機sysconfig -av6）
+... 在管理權限層級中、請準備要更換的目標NVMe插槽、並在系統提示是否繼續時回應「y」：「系統控制器插槽模組更換節點節點_node_name -slot slid_number_」下列命令會準備節點1上的插槽6-2以供更換、並顯示可安全更換的訊息：
++
+[listing]
+----
+::> system controller slot module replace -node node1 -slot 6-2
+
+Warning: NVMe module in slot 6-2 of the node node1 will be powered off for replacement.
+Do you want to continue? (y|n): `y`
+
+The module has been successfully powered off.  It can now be safely replaced.
+After the replacement module is inserted, use the "system controller slot module insert" command to place the module into service.
+----
+... 使用系統控制器插槽模組show命令顯示插槽狀態。
++
+NVMe插槽狀態會在需要更換的快取模組的螢幕輸出中顯示「等待更換」。
+
+
+
+.. 適用於更新版本的更新版本：ONTAP
++
+... 在目標節點上記錄快取模組容量、零件編號和序號：「System Node run local sysconfig -av6」（系統節點執行本機sysconfig -av6）
+... 在管理權限層級中、準備要移除的目標NVMe插槽、並在系統提示是否繼續時回應「y」：「系統控制器插槽模組移除節點節點節點名稱-插槽插槽編號」下列命令會準備節點1上的插槽6-2以供移除、並顯示可安全移除的訊息：
++
+[listing]
+----
+::> system controller slot module remove -node node1 -slot 6-2
+
+Warning: SSD module in slot 6-2 of the node node1 will be powered off for removal.
+Do you want to continue? (y|n): `y`
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+... 使用「系統控制器插槽模組show」命令顯示插槽狀態。
++
+對於需要更換的快取模組、NVMe插槽狀態會在螢幕輸出中顯示「關機」。
+
+
+
+
+
++
+
+NOTE: 請參閱 https://docs.netapp.com/us-en/ontap-cli-9121/["命令手冊頁"^] 以取得ONTAP 更多詳細資料。
+
+. 移除快取模組：
++
+image::../media/drw_9000_remove_flashcache.png[DRw 9000移除快閃快取]
+
++
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+橘色釋放鈕。
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+快取模組CAM處理。
+
+|===
++
+.. 按下快取模組正面的橘色釋放按鈕。
++
+
+NOTE: 請勿使用編號和有字母標記的I/O CAM栓鎖來退出快取模組。編號和有字母的I/O CAM栓鎖會退出整個NVRAM10模組、而非快取模組。
+
+.. 旋轉CAM握把、直到快取模組開始滑出NVRAM10模組。
+.. 將CAM握把往您的方向輕拉、即可從NVRAM10模組中移除快取模組。
++
+從NVRAM10模組移除快取模組時、請務必支援該模組。
+
+
+
+. 安裝快取模組：
++
+.. 將快取模組的邊緣與NVRAM10模組的開孔對齊。
+.. 將快取模組輕推入支架、直到CAM把手上卡入。
+.. 旋轉CAM握把、直到鎖定到位。
+
+
+. 使用「系統控制器插槽模組insert」命令將替換快取模組上線、如下所示：
++
+下列命令會準備節點1上的插槽6-2以供開機、並顯示已開機的訊息：
+
++
+[listing]
+----
+::> system controller slot module insert -node node1 -slot 6-2
+
+Warning: NVMe module in slot 6-2 of the node localhost will be powered on and initialized.
+Do you want to continue? (y|n): `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+. 使用「系統控制器插槽模組show」命令來驗證插槽狀態。
++
+確保命令輸出將插槽6至1或6至2的狀態報告為「已開機」、並準備就緒可供操作。
+
+. 確認更換的快取模組已上線並已辨識、然後以視覺方式確認黃色警示LED未亮起：「syssconfig -av slid_number」
++
+
+NOTE: 如果您以不同廠商的快取模組來取代快取模組、則命令輸出中會顯示新的廠商名稱。
+
+. 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"^] 頁面以取得更多資訊。
+

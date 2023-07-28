@@ -1,0 +1,178 @@
+---
+permalink: a700/chassis-replace-shutdown.html 
+sidebar: sidebar 
+keywords: aff a700, fas9000, chassis replacement, shutdown 
+summary: 若要更換機箱、您必須關閉控制器。 
+---
+= 關閉控制器 - AFF A700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要更換機箱、您必須關閉控制器。
+
+
+
+== 選項1：關閉控制器
+
+此程序僅適用於雙節點非 MetroCluster 組態。如果您的系統有兩個以上的節點、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["如何在 4 節點叢集中執行一個 HA 配對的正常關機和開機"^]。
+
+.開始之前
+您需要：
+
+* ONTAP 的本機系統管理員認證。
+* NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密）。
+* 每個控制器的 SP/BMC 存取能力。
+* 停止所有用戶端 / 主機存取 NetApp 系統上的資料。
+* 暫停外部備份工作。
+* 更換所需的工具和設備。
+
+
+
+NOTE: 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["正常關機並開啟儲存系統解析指南"] 執行此程序之後。
+
+
+NOTE: 如果使用 FlexArray 陣列 LUN 、請遵循特定廠商的儲存陣列文件、以瞭解在執行此程序之後、要對這些系統執行的關機程序。
+
+
+NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]
+
+關機前的最佳做法是：
+
+* 執行其他 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["系統健全狀況檢查"]。
+* 將 ONTAP 升級至建議的系統版本。
+* 解決任何問題 https://activeiq.netapp.com/["Active IQ 健康警示與風險"]。記下系統上目前存在的任何故障、例如系統元件上的 LED 。
+
+
+.步驟
+. 透過 SSH 登入叢集、或使用本機主控台纜線和筆記型電腦 / 主控台、從叢集中的任何節點登入。
+. 關閉 AutoSupport 並指出您預期系統離線的時間：
++
+`system node autosupport invoke -node * -type all -messages "MAINT=8h Power Maintenance"`
+
+. 識別所有節點的 SP/BMC 位址：
++
+`system service-processor show -node * -fields address`
+
+. 結束叢集 Shell ： `exit`
+. 使用上一步輸出中列出的任何節點的 IP 位址、透過 SSH 登入 SP/BMC 。
++
+如果您使用的是主控台 / 筆記型電腦、請使用相同的叢集管理員認證登入控制器。
+
++
+
+NOTE: 開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。
+
+. 停止叢集中的所有節點：
++
+`system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`。
+
++
+
+NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+
+. 當您看到時、請為叢集中的每個控制器輸入 * y* `_Warning: Are you sure you want to halt node "cluster name-controller number"?
+{y|n}:_`
+. 等待每個控制器停止並顯示載入器提示。
+. 如果沒有 PSU 開 / 關開關、請關閉每個 PSU 或拔下它們。
+. 從每個 PSU 拔下電源線。
+. 確認受損機箱中的所有控制器都已關機。
+
+
+
+
+== 選項2：在雙節點MetroCluster 的現象組態中關閉節點
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["使用CLI進行NetApp加密總覽"^]。
+* 您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。
+
+
+.步驟
+. 檢查MetroCluster 「不正常」狀態、判斷受損的控制器是否已自動切換至「正常」控制器MetroCluster ：「不正常」
+. 視是否發生自動切換而定、請根據下表繼續進行：
++
+[cols="1,2"]
+|===
+| 如果控制器受損... | 然後... 
+
+
+ a| 
+已自動切換
+ a| 
+繼續下一步。
+
+
+
+ a| 
+尚未自動切換
+ a| 
+從健全的控制器執行計畫性的切換作業MetroCluster ：「『交換切換’」
+
+
+
+ a| 
+尚未自動切換、您嘗試使用MetroCluster 「還原切換」命令進行切換、切換遭到否決
+ a| 
+請檢閱否決訊息、如有可能、請解決此問題、然後再試一次。如果您無法解決問題、請聯絡技術支援部門。
+
+|===
+. 從MetroCluster 存續的叢集執行「f恢復 階段Aggregate」命令、以重新同步資料集合體。
++
+[listing]
+----
+controller_A_1::> metrocluster heal -phase aggregates
+[Job 130] Job succeeded: Heal Aggregates is successful.
+----
++
+如果治療被否決、您可以選擇MetroCluster 使用「-overre-etoes」參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。
+
+. 使用MetroCluster flexoperationshow命令確認作業已完成。
++
+[listing]
+----
+controller_A_1::> metrocluster operation show
+    Operation: heal-aggregates
+      State: successful
+Start Time: 7/25/2016 18:45:55
+   End Time: 7/25/2016 18:45:56
+     Errors: -
+----
+. 使用「shorage Aggregate show」命令來檢查集合體的狀態。
++
+[listing]
+----
+controller_A_1::> storage aggregate show
+Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
+--------- -------- --------- ----- ------- ------ ---------------- ------------
+...
+aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...
+----
+. 使用「MetroCluster f恢復 階段根集合體」命令來修復根集合體。
++
+[listing]
+----
+mcc1A::> metrocluster heal -phase root-aggregates
+[Job 137] Job succeeded: Heal Root Aggregates is successful
+----
++
+如果修復被否決、您可以選擇使用MetroCluster -overrover-etoes參數重新發出「還原」命令。如果您使用此選用參數、系統將會置換任何軟質否決、以防止修復作業。
+
+. 在MetroCluster 目的地叢集上使用「停止作業show」命令、確認修復作業已完成：
++
+[listing]
+----
+
+mcc1A::> metrocluster operation show
+  Operation: heal-root-aggregates
+      State: successful
+ Start Time: 7/29/2016 20:54:41
+   End Time: 7/29/2016 20:54:42
+     Errors: -
+----
+. 在受損的控制器模組上、拔下電源供應器。
+

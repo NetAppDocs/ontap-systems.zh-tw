@@ -1,8 +1,8 @@
 ---
 permalink: a400/chassis-replace-complete-system-restore-rma.html 
 sidebar: sidebar 
-keywords: aff a400, verify and set HA state, run diagnostics, complete the replacement process 
-summary: 您必須驗證機箱的HA狀態、執行診斷、並將故障零件歸還給NetApp、如套件隨附的RMA指示所述。 
+keywords: aff a400, verify and set HA state,complete the replacement process 
+summary: 您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。 
 ---
 = 完成還原與更換程序AFF -還原A400
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您必須驗證機箱的HA狀態、執行診斷、並將故障零件歸
 
 
 [role="lead"]
-您必須驗證機箱的HA狀態、執行診斷、並將故障零件歸還給NetApp、如套件隨附的RMA指示所述。
+您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。
 
 
 
@@ -46,33 +46,7 @@ _HA-stu__的值可以是下列其中一項：
 
 
 
-== 步驟2：執行診斷
-
-更換系統中的元件之後、您應該對該元件執行診斷測試。
-
-您的系統必須處於載入器提示狀態、才能開始診斷。
-
-診斷程序中的所有命令都會從要更換元件的節點發出。
-
-. 如果要服務的節點不在載入程式提示下、請重新開機節點：「ystem Node halt -node_name」（系統節點停止節點節點節點名稱）
-+
-發出命令之後、您應該等到系統在載入程式提示字元停止。
-
-. 在載入程式提示字元下、存取專為系統層級診斷所設計的特殊驅動程式、以正常運作：「boot_diags'（boot_diags'）
-. 從顯示的功能表中選取*掃描系統*、即可執行診斷測試。
-. 從顯示的功能表中選取*測試系統*以執行診斷測試。
-. 從各種子功能表中選取測試或一系列測試。
-. 根據上述步驟的結果繼續進行：
-+
-** 如果測試失敗、請修正故障、然後重新執行測試。
-** 如果測試報告無故障、請從功能表中選取重新開機、以重新啟動系統。
-
-
-
-
-
-
-== 步驟3：在雙節點MetroCluster 的不二組態中切換回集合體
+== 步驟 2 ：切換回雙節點 MetroCluster 組態中的集合體
 
 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
 
@@ -130,6 +104,6 @@ Remote: cluster_A configured      		normal
 
 
 
-== 步驟4：將故障零件歸還給NetApp
+== 步驟3：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

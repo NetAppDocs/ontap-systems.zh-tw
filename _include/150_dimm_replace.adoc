@@ -1,0 +1,282 @@
+= 步驟1：關閉受損的控制器
+:allow-uri-read: 
+
+
+當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。
+
+系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+
+
+
+== 步驟1：關閉受損的控制器
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您使用NetApp儲存加密、則必須依照中的指示重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["將SED恢復為無保護模式"]。
+* 如果您有SAN系統、則必須檢查事件訊息  `cluster kernel-service show`（用於控制器SCSI刀鋒伺服器）。。 `cluster kernel-service show` 命令會顯示節點名稱、該節點的仲裁狀態、該節點的可用度狀態、以及該節點的作業狀態。
++
+每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
++
+
+NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+移至「移除控制器模組」。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+. 如果系統機箱中只有一個控制器模組、請關閉電源供應器、然後從電源插座拔下受損控制器的電源線。
+
+
+
+
+== 步驟2：移除控制器模組
+
+若要存取控制器內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
++
+將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。
+
+. 從控制器模組的左側和右側移除纜線管理裝置、並將其放在一邊。
++
+image::../media/drw_25xx_cable_management_arm.png[DRW 25xx纜線管理ARM 功能]
+
+. 壓下CAM把手上的栓鎖直到釋放為止、完全打開CAM把把、以從中間板釋放控制器模組、然後用兩隻手將控制器模組從機箱中拉出。
++
+image::../media/drw_2240_x_opening_cam_latch.png[DRW 2240 x開啟CAM栓鎖]
+
+. 翻轉控制器模組、將其放置在平穩的表面上。
+. 滑入藍色彈片以釋放護蓋、然後將護蓋向上旋轉並開啟、即可開啟護蓋。
++
+image::../media/drw_2600_opening_pcm_cover.png[DRw 2600開啟PCM機箱蓋]
+
+
+
+
+
+== 步驟3：更換DIMM
+
+若要更換DIMM、請在控制器內找到DIMM、然後依照特定的步驟順序進行。
+
+如果您要更換DIMM、則必須在從控制器模組拔下NVMEM電池後將其取出。
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 檢查控制器模組背面的NVMEM LED。
++
+在更換系統元件之前、您必須執行乾淨的系統關機、以避免在非揮發性記憶體（NVMEM）中遺失未寫入的資料。LED位於控制器模組背面。尋找下列圖示：
+
++
+image::../media/drw_hw_nvram_icon.png[DRW硬體NVRAM圖示]
+
+. 如果NVMEM LED未更新、則在NVMEM中沒有任何內容；您可以跳過下列步驟、繼續執行本程序中的下一個工作。
+. 如果NVMEM LED正在閃燈、則表示NVMEM中有資料、您必須中斷電池連線以清除記憶體：
++
+.. 找到電池、按下電池插頭正面的固定夾、將鎖定夾從插槽中鬆脫、然後從插槽拔下電池纜線。
++
+image::../media/drw_2600_nvmem_battery_unplug.png[DRW 2600 nvmem電池拔下]
+
+.. 確認NVMEM LED不再亮起。
+.. 重新連接電池接頭。
+
+
+. 返回 link:dimm_replace.md["更換DIMM"] 重新檢查NVMEM LED。
+. 找到控制器模組上的DIMM。
+. 請注意插槽中的DIMM方向、以便您以適當的方向插入替換的DIMM。
+. 緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、然後將DIMM從插槽中滑出、藉此將DIMM從插槽中退出。
++
+
+NOTE: 小心拿住DIMM的邊緣、避免對DIMM電路板上的元件施加壓力。
+
++
+系統DIMM的數量和位置取決於您的系統機型。
+
++
+下圖顯示系統DIMM的位置：
+
++
+image::../media/drw_2600_dimm_repl_animated_gif.png[DRW 2600 DIMM重新格式動畫Gif]
+
+. 從防靜電包裝袋中取出備用DIMM、拿住DIMM的邊角、然後將其對準插槽。
++
+DIMM插針之間的槽口應與插槽中的卡舌對齊。
+
+. 確定連接器上的DIMM彈出彈片處於開啟位置、然後將DIMM正面插入插槽。
++
+DIMM可緊密插入插槽、但應該很容易就能裝入。如果沒有、請重新將DIMM與插槽對齊、然後重新插入。
+
++
+
+NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
+
+. 在DIMM頂端邊緣小心地推入、但穩固地推入、直到彈出彈出彈片卡入DIMM兩端的槽口。
+. 找到NVMEM電池插頭插槽、然後擠壓電池纜線插頭正面的固定夾、將其插入插槽。
++
+請確定插頭鎖定在控制器模組上。
+
+. 合上控制器模組護蓋。
+
+
+
+
+== 步驟4：重新安裝控制器模組
+
+更換控制器模組中的元件之後、請將其重新安裝到機箱中。
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 如果您尚未更換控制器模組的護蓋、請將其裝回。
+. 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
++
+
+NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
+
+. 視需要重新安裝系統。
++
+如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖纜線時重新安裝。
+
+. 完成控制器模組的重新安裝：
++
+[cols="1,2"]
+|===
+| 如果您的系統處於... | 然後執行下列步驟... 
+
+
+ a| 
+HA配對
+ a| 
+控制器模組一旦完全插入機箱、就會開始開機。
+
+.. 將CAM握把置於開啟位置時、將控制器模組穩固推入、直到它與中間背板接觸並完全就位、然後將CAM握把關閉至鎖定位置。
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
++
+控制器一旦安裝在機箱中、就會開始開機。
+
+.. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
+.. 使用掛勾和迴圈固定帶將纜線綁定至纜線管理裝置。
+
+
+
+
+ a| 
+獨立組態
+ a| 
+.. 將CAM握把置於開啟位置時、將控制器模組穩固推入、直到它與中間背板接觸並完全就位、然後將CAM握把關閉至鎖定位置。
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
+.. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
+.. 使用掛勾和迴圈固定帶將纜線綁定至纜線管理裝置。
+.. 將電源線重新連接至電源供應器和電源、然後開啟電源以開始開機程序。
+
+
+|===
+
+
+
+
+== 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
+
+完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
+
+此工作僅適用於雙節點MetroCluster 的不完整組態。
+
+.步驟
+. 驗證所有節點是否都處於「啟用」狀態：MetroCluster 「顯示節點」
++
+[listing]
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+. 確認所有SVM上的重新同步已完成：MetroCluster 「Svserver show」
+. 驗證修復作業所執行的任何自動LIF移轉是否已成功完成：「MetroCluster 還原檢查LIF show」
+. 從存續叢集中的任何節點使用「MetroCluster 還原」命令執行切換。
+. 確認切換作業已完成：MetroCluster 「不顯示」
++
+當叢集處於「等待切換」狀態時、切換回復作業仍在執行中：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+當叢集處於「正常」狀態時、即可完成切換作業：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+如果切換需要很長時間才能完成、您可以使用「MetroCluster show config-repl複 寫res同步 狀態show」命令來檢查進行中的基準狀態。
+
+. 重新建立任何SnapMirror或SnapVault 不完整的組態。
+
+
+
+
+== 步驟6：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

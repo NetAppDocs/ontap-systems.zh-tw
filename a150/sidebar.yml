@@ -1,7 +1,6 @@
 ---
 section: a150
 title: VA150系統AFF
-url: "/a150/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: 安裝與設定AFF
@@ -17,6 +16,8 @@ entries:
 - title: 維護
   pdf-filename: VA150維護AFF
   entries:
+  - title: 總覽
+    url: "/a150/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: VA150開機媒體AFF
     entries:
@@ -44,7 +45,7 @@ entries:
       url: "/a150/chassis-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a150/chassis-replace-shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/a150/chassis-replace-move-hardware.html"
     - title: 還原組態
       url: "/a150/chassis-replace-complete-system-restore-rma.html"
@@ -55,7 +56,7 @@ entries:
       url: "/a150/controller-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a150/controller-replace-shutdown.html"
-    - title: 更換控制器硬體
+    - title: 更換控制器
       url: "/a150/controller-replace-move-hardware.html"
     - title: 還原系統組態
       url: "/a150/controller-replace-system-config-restore-and-verify.html"

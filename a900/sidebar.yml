@@ -1,7 +1,6 @@
 ---
 section: a900
 title: VA900系統AFF
-url: "/a900/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: 安裝與設定AFF
@@ -17,24 +16,24 @@ entries:
 - title: 維護
   pdf-filename: VA900維護AFF
   entries:
-  - title: 新增I/O模組
-    url: "/a900/add_io_module.html"
+  - title: 總覽
+    url: "/a900/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: VA900開機媒體AFF
     entries:
     - title: 總覽
       url: "/a900/bootmedia_replace_overview.html"
-    - title: 預先關機檢查內建加密金鑰
+    - title: 檢查內建加密金鑰
       url: "/a900/bootmedia_encryption_preshutdown_checks.html"
     - title: 關閉受損的控制器
       url: "/a900/bootmedia_impaired_controller_shutdown.html"
     - title: 取代開機映像
       url: "/a900/bootmedia_replace.html"
-    - title: 開機恢復映像
+    - title: 開機還原映像
       url: "/a900/bootmedia_recovery_image.html"
-    - title: OKM、NSE和NVE的開機後媒體更換步驟
+    - title: 還原OKM、NSE和NVE
       url: "/a900/bootmedia_encryption_restore.html"
-    - title: 將故障零件歸還給NetApp
+    - title: 將故障零件退回NetApp
       url: "/a900/bootmedia_complete_rma.html"
   - title: 機箱
     pdf-filename: VA900機箱AFF
@@ -43,38 +42,42 @@ entries:
       url: "/a900/chassis_replace_overview.html"
     - title: 關閉受損的控制器
       url: "/a900/chassis_replace_shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/a900/chassis_replace_move_hardware.html"
-    - title: 還原及驗證組態
+    - title: 還原並驗證組態
       url: "/a900/chassis_replace_complete_system_restore_rma.html"
-  - title: 控制器模組
+  - title: 控制器
     pdf-filename: VA900控制器模組AFF
     entries:
     - title: 總覽
       url: "/a900/controller_replace_overview.html"
     - title: 關閉受損的控制器
       url: "/a900/controller_replace_shutdown.html"
-    - title: 更換控制器模組硬體
+    - title: 更換控制器
       url: "/a900/controller_replace.html"
     - title: 還原並驗證系統組態
       url: "/a900/controller_replace_system_config_restore_and_verify.html"
-    - title: 重新安裝系統
+    - title: 可重新恢復的系統
       url: "/a900/controller_replace_recable_reassign_disks.html"
     - title: 完整系統還原
       url: "/a900/controller_replace_complete_system_restoration_rma.html"
   - title: DIMM
     url: "/a900/dimm_replace.html"
-  - title: 斷點控制電源模組
+  - title: DCPM
     url: "/a900/dcpm_NVRAM11_battery_replace.html"
   - title: 風扇
     url: "/a900/fan_swap_out.html"
   - title: I/O模組
-    url: "/a900/pci_cards_and_risers_replace.html"
-  - title: LED USB模組
+    entries:
+    - title: 更換 I/O 模組
+      url: "/a900/pci_cards_and_risers_replace.html"
+    - title: 新增I/O模組
+      url: "/a900/add_io_module.html"
+  - title: LED USB
     url: "/a900/led_module_replace.html"
-  - title: NVRAM模組和/或NVRAM DIMM
+  - title: NVRAM
     url: "/a900/nvram_module_or_nvram_dimm_replacement.html"
   - title: 電源供應器
     url: "/a900/power_supply_swap_out.html"
-  - title: 實時時鐘電池
+  - title: 即時時鐘電池
     url: "/a900/rtc_battery_replace.html"

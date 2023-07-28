@@ -1,7 +1,6 @@
 ---
 section: a800
 title: 系統AFF
-url: "/a800/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: 安裝與設定AFF
@@ -17,6 +16,8 @@ entries:
 - title: 維護
   pdf-filename: VA800維護AFF
   entries:
+  - title: 總覽
+    url: "/a800/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: 解答A800開機媒體AFF
     entries:
@@ -41,9 +42,9 @@ entries:
       url: "/a800/chassis-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a800/chassis-replace-shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/a800/chassis-replace-move-hardware.html"
-    - title: 完整更換
+    - title: 完成機箱更換
       url: "/a800/chassis-replace-complete-system-restore-rma.html"
   - title: 控制器
     pdf-filename: VA800控制器模組AFF
@@ -52,13 +53,13 @@ entries:
       url: "/a800/controller-replace-overview.html"
     - title: 關閉受損的控制器
       url: "/a800/controller-replace-shutdown.html"
-    - title: 更換控制器模組
+    - title: 更換控制器
       url: "/a800/controller-replace-move-hardware.html"
     - title: 還原系統組態
       url: "/a800/controller-replace-system-config-restore-and-verify.html"
     - title: 可重新恢復的系統
       url: "/a800/controller-replace-recable-reassign-disks.html"
-    - title: 完整更換
+    - title: 完整更換控制器
       url: "/a800/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/a800/dimm-replace.html"

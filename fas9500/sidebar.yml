@@ -1,7 +1,6 @@
 ---
 section: fas9500
 title: FAS9500系統
-url: "/fas9500/index.html"
 entries:
 - title: 安裝與設定
   pdf-filename: FAS9500-Install and Setup
@@ -17,8 +16,8 @@ entries:
 - title: 維護
   pdf-filename: FAS9500維護
   entries:
-  - title: 新增I/O模組
-    url: "/fas9500/add_io_module.html"
+  - title: 總覽
+    url: "/fas9500/maintain-overview.html"
   - title: 開機媒體
     pdf-filename: FAS9500開機媒體
     entries:
@@ -66,17 +65,21 @@ entries:
       url: "/fas9500/controller_replace_complete_system_restoration_rma.html"
   - title: DIMM
     url: "/fas9500/dimm_replace.html"
-  - title: 斷點控制電源模組
+  - title: DCPM
     url: "/fas9500/dcpm_NVRAM11_battery_replace.html"
   - title: 風扇
     url: "/fas9500/fan_swap_out.html"
   - title: I/O模組
-    url: "/fas9500/pci_cards_and_risers_replace.html"
-  - title: LED USB模組
+    entries:
+    - title: 更換
+      url: "/fas9500/pci_cards_and_risers_replace.html"
+    - title: 新增
+      url: "/fas9500/add_io_module.html"
+  - title: LED USB
     url: "/fas9500/led_module_replace.html"
-  - title: NVRAM模組和/或NVRAM DIMM
+  - title: NVRAM
     url: "/fas9500/nvram_module_or_nvram_dimm_replacement.html"
   - title: 電源供應器
     url: "/fas9500/power_supply_swap_out.html"
-  - title: 實時時鐘電池
+  - title: 即時時鐘電池
     url: "/fas9500/rtc_battery_replace.html"

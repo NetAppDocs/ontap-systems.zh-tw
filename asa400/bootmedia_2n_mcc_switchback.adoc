@@ -1,0 +1,66 @@
+---
+permalink: asa400/bootmedia-2n-mcc-switchback.html 
+sidebar: sidebar 
+keywords: ASA A400, ASA, A400, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration 
+summary: 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會使組態恢復正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVMs）現在處於作用中狀態、並從本機磁碟集區提供資料。 
+---
+= 在雙節點 MetroCluster 組態中切換回集合體 - ASA A400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
+
+此工作僅適用於雙節點MetroCluster 的不完整組態。
+
+.步驟
+. 驗證所有節點是否都處於「啟用」狀態：MetroCluster 「顯示節點」
++
+[listing]
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+. 確認所有SVM上的重新同步已完成：MetroCluster 「Svserver show」
+. 驗證修復作業所執行的任何自動LIF移轉是否已成功完成：「MetroCluster 還原檢查LIF show」
+. 從存續叢集中的任何節點使用「MetroCluster 還原」命令執行切換。
+. 確認切換作業已完成：MetroCluster 「不顯示」
++
+當叢集處於「等待切換」狀態時、切換回復作業仍在執行中：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+當叢集處於「正常」狀態時、即可完成切換作業：
+
++
+[listing]
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+如果切換需要很長時間才能完成、您可以使用「MetroCluster show config-repl複 寫res同步 狀態show」命令來檢查進行中的基準狀態。
+
+. 重新建立任何SnapMirror或SnapVault 不完整的組態。
+

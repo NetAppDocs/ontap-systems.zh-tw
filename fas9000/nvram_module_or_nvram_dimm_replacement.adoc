@@ -4,14 +4,18 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality 
 summary: NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。 
 ---
-= 更換NVRAM模組或NVRAM DIMM - AFF FASA700和FAS9000
+= 更換 NVRAM 模組或 NVRAM DIMM - FAS9000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的NVRAM模組、您必須將其從機箱中移除、從NVRAM模組中移除FlashCache模組或模組、將DIMM移至更換模組、重新安裝FlashCache模組或模組、然後將替換的NVRAM模組安裝到機箱中。由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
+NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
+
+若要更換故障的NVRAM模組、您必須將其從機箱中移除、從NVRAM模組中移除FlashCache模組或模組、將DIMM移至更換模組、重新安裝FlashCache模組或模組、然後將替換的NVRAM模組安裝到機箱中。
+
+由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
 
 *開始之前*
 
