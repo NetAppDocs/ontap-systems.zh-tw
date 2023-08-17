@@ -1,10 +1,10 @@
 ---
-permalink: asa900/dcpm_NVRAM11_battery_replace.html 
+permalink: fas9500/dcpm-nvram11-battery-replace.html 
 sidebar: sidebar 
-keywords: ASA A900 
-summary: 若要熱交換內含NVRAM11電池的還原控制器電源模組（DCPM\）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。 
+keywords: FAS9500 
+summary: 若要熱交換內含NVRAM11電池的卸載控制器電源模組（DCPM\）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。 
 ---
-= 更換裝有 NVRAM11 電池的 DCPM - ASA A900
+= 更換裝有NVRAM11電池的斷續控制電源模組- FAS9500
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -31,20 +31,20 @@ summary: 若要熱交換內含NVRAM11電池的還原控制器電源模組（DCPM
 
 IMPORTANT: DCPM模組必須在移除後五分鐘內在機箱中更換、否則相關的控制器將會關機。
 
-. 按下模組握把上的Terra cotta釋放按鈕、然後將DCPM模組滑出機箱。
+. 按下模組握把上的Terra cotta鎖定按鈕、然後將DCPM模組滑出機箱。
 +
 .動畫-移除/安裝DCPM
-video::ade18276-5dbc-4b91-9a0e-adf9016b4e55[panopto]
+video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto]
 +
-image::../media/drw_9000_remove_nv_battery.svg[DRW 9000移除nv電池]
+image::../media/drw_9500_remove_NV_battery.svg[DRW 9500取出NV.電池]
 
 +
-[cols="10,90"]
+[cols="20%,80%"]
 |===
 
 
  a| 
-image:../media/legend_icon_01.png[""]
+image::../media/legend_icon_01.svg[圖例圖示01]
  a| 
 DCPM模組Terra cotta鎖定按鈕
 
