@@ -244,7 +244,6 @@ DIMM和DIMM彈出卡舌
 
 == 步驟5：重新指派磁碟
 
-[role="lead"]
 您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
 
 
@@ -350,7 +349,6 @@ dr-group-id            cluster node           configuration-state
 
 == 步驟6：還原儲存設備和Volume Encryption功能
 
-[role="lead"]
 如果您已啟用儲存加密、請使用適當的程序。
 
 [role="tabbed-block"]
@@ -496,5 +494,4 @@ NOTE: 您可以使用 `security key-manager key query -key-type NSE-AK` 檢視�
 
 == 步驟7：將故障零件歸還給NetApp
 
-[role="lead"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

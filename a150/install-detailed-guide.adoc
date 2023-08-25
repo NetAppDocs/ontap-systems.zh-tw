@@ -39,7 +39,7 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 . 打開所有包裝箱的內容物。
 . 從控制器記錄系統序號。
 +
-image::../media/drw_ssn_label.png[DRw SSN標籤]
+image::../media/drw_ssn_label.png[顯示號碼位置的系統序號範例]
 
 . 設定您的帳戶：
 +
@@ -95,7 +95,7 @@ X6536 - R6（112-00090）、5公尺
 
 X654-R6（112-00189）、15公尺
  a| 
-image:../media/oie_cable_fiber_lc_connector.png[""]
+image:../media/oie_cable_fiber_lc_connector.png["顯示光纖 LC 連接器的圖例"]
  a| 
 FC主機網路
 
@@ -136,7 +136,7 @@ micro-USB主控台纜線
  a| 
 不適用
  a| 
-image:../media/oie_cable_micro_usb.png[""]
+image:../media/oie_cable_micro_usb.png["顯示 Micro USB 接頭的圖例"]
  a| 
 非Windows或Mac筆記型電腦/主控台軟體安裝期間的主控台連線
 
@@ -236,7 +236,7 @@ UTA2 資料網路組態:: 使用下列其中一種纜線類型、將 UTA2 資料
 ** 對於 FC 主機、請使用 0c 和 0d * 或 * 0e 和 0f 。
 ** 若為 10GbE 系統、請使用 e0c 和 e0d * 或 * e0e 和 e0f 。
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[""]
+image:../media/drw_c190_u_fc_10gbe_cbling.png["顯示周邊文字所述資料連接埠連線的圖例"]
 
 +
 您可以將一個連接埠配對連接為CNA、另一個連接埠配對連接為FC、也可以將兩個連接埠配對連接為CNA、或將兩個連接埠配對連接為FC。
@@ -287,7 +287,7 @@ UTA2 資料網路組態:: 使用下列其中一種纜線類型、將 UTA2 資料
 ** 對於 FC 主機、請使用 0c 和 0d ** 或 ** 0e 和 0f 。
 ** 若為 10GbE 系統、請使用 e0c 和 e0d ** 或 ** e0e 和 e0f 。
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[""]
+image:../media/drw_c190_u_fc_10gbe_cbling.png["顯示周邊文字所述資料連接埠連線的圖例"]
 
 +
 您可以將一個連接埠配對連接為CNA、另一個連接埠配對連接為FC、也可以將兩個連接埠配對連接為CNA、或將兩個連接埠配對連接為FC。
@@ -369,7 +369,6 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] Mini-SAS HD至Mini-S
 
 == 步驟 5 ：完成系統設定
 
-[role="lead"]
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 [role="tabbed-block"]
