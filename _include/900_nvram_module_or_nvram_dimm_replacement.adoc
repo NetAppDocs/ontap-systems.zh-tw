@@ -305,10 +305,7 @@ DIMM和DIMM彈出卡舌
 您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
 
 
-NOTE: 此程序僅適用於ONTAP HA配對中執行的系統。
-
-
-CAUTION: 只有在更換NVRAM模組時才需要重新指派磁碟。
+CAUTION: 只有在更換 NVRAM 模組時才需要重新指派磁碟、而且不適用於 NVRAM DIMM 更換。
 
 .步驟
 . 如果更換的控制器處於維護模式（顯示 `*>` 提示）、結束維護模式、然後前往載入程式提示： `halt`
@@ -408,6 +405,9 @@ dr-group-id            cluster node           configuration-state
 == 步驟6：還原儲存設備和Volume Encryption功能
 
 如果您已啟用儲存加密、請使用適當的程序。
+
+
+IMPORTANT: 此步驟不適用於 NVRAM DIMM 更換。
 
 [role="tabbed-block"]
 ====

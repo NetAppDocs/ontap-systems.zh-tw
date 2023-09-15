@@ -6479,7 +6479,6 @@
   <block id="e1d6265d5c32eb8c4e989291b8d72d20" category="list-text">將模組輕推入插槽、直到有字母和編號的CAM栓開始與I/O CAM銷接合、然後將CAM栓完全推入、將模組鎖定到位。</block>
   <block id="bc62fa4bef9a4cd2a983ca01d5a5b1b3" category="paragraph">CAM栓鎖完全解除鎖定</block>
   <block id="58e30dc94cdf372b64dac305fbb57bc0" category="section-title">步驟5：重新指派磁碟</block>
-  <block id="7b0ac7dba1c185e5ac66482ca29488da" category="admonition">只有在更換NVRAM模組時才需要重新指派磁碟。</block>
   <block id="84bda9f97f27f63cc6fa0c4cac3ddcb4" category="list-text">如果更換的控制器處於維護模式（顯示<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> 提示）、結束維護模式、然後前往載入程式提示：<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block></block>
   <block id="3cea6cd019ee970febca58bfe050e1cb" category="list-text">在更換控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入y。</block>
   <block id="40ef2970d7d205d6f0ba4ecddaec7b51" category="list-text">等待等待恢復...訊息會顯示在控制器的主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統ID：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
@@ -8539,4 +8538,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e598646ba49e0f0b7db709308a38bd0c" category="inline-image-macro">顯示控制器背面連接埠之間的叢集互連的圖例</block>
   <block id="d5fe92183ddfd6502c92a350a2928047" category="list-text">e0b 至 e0b
 <block ref="23c439b7ef31021d610e4d3b988f3cd1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10fbfa6320d8e7c72e731fbd9a6e6c69" category="admonition">只有在更換 NVRAM 模組時才需要重新指派磁碟、而且不適用於 NVRAM DIMM 更換。</block>
+  <block id="099f7b942e4e89631784891716949599" category="admonition">此步驟不適用於 NVRAM DIMM 更換。</block>
 </blocks>
