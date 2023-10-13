@@ -182,12 +182,6 @@ mcc1A::> metrocluster operation show
 
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
 
-您可以使用下列動畫、圖例或書面步驟、將控制器模組從機箱中移除。
-
-.動畫-移除控制器模組
-video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
-image::../media/drw_A400_Remove_controller.png[DRW A400移除控制器]
-
 . 如果您尚未接地、請正確接地。
 . 釋放電源線固定器、然後從電源供應器拔下纜線。
 . 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
@@ -199,6 +193,25 @@ image::../media/drw_A400_Remove_controller.png[DRW A400移除控制器]
 +
 控制器模組會稍微移出機箱。
 
+
+
+image::../media/drw_A400_Remove_controller.png[DRW A400移除控制器]
+
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["編號 1"]
+ a| 
+鎖定鎖條
+
+
+
+ a| 
+image:../media/legend_icon_02.png["編號 2"]
+| 控制器稍微移出機箱 
+|===
 . 將控制器模組滑出機箱。
 +
 將控制器模組滑出機箱時、請確定您支援控制器模組的底部。
@@ -212,12 +225,39 @@ image::../media/drw_A400_Remove_controller.png[DRW A400移除控制器]
 
 若要更換PCIe卡、您必須找到故障的PCIe卡、從控制器模組中移除包含該卡的擴充卡、裝回該卡、然後在控制器模組中重新安裝PCIe擴充卡。
 
-您可以使用下列動畫、圖例或書面步驟來更換PCIe卡。
+image:../media/drw_A400_Replace-PCIe-cards.png[""]
 
-.動畫-更換PCIe卡
-video::84339f87-321c-400e-985e-aae10182cd24[panopto]
-image:../media/drw_A400_Replace-PCIe-cards_IEOPS-1008.svg["寬=500px"]
+[cols="10,90"]
+|===
 
+
+ a| 
+image:../media/legend_icon_01.png["編號 1"]
+ a| 
+提升板鎖定鎖定
+
+
+
+ a| 
+image:../media/legend_icon_02.png["編號 2"]
+ a| 
+PCI 卡鎖定閂鎖
+
+
+
+ a| 
+image:../media/legend_icon_03.png["編號 3"]
+ a| 
+PCI 鎖定板
+
+
+
+ a| 
+image:../media/legend_icon_04.png["編號 4."]
+ a| 
+PCI 卡
+
+|===
 . 卸下內含要更換之插卡的擴充卡：
 +
 .. 按下通風管兩側的鎖定彈片、將通風管滑向控制器模組背面、然後將其旋轉至完全開啟的位置、以開啟通風管。
@@ -263,9 +303,31 @@ NOTE: 如果您要在底部插槽中安裝插卡、但看不到插卡插槽、�
 您可以使用下列動畫、圖例或書面步驟來更換夾層卡。
 
 .動畫-更換夾層卡
-video::4e00f5b1-8ca5-4cd6-9881-aadb01578e52[panopto]
-image::../media/drw_A400_Replace-mezz-card_IEOPS-1006.svg[DRW A400更換夾層卡IEOPS 1006]
+video::e3fd32b6-bdbb-4c53-b666-b030018a5744[panopto]
+image::../media/drw_A400_Replace-mezz-card.png[DRW A400更換夾層卡]
 
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["編號 1"]
+ a| 
+PCI 擴充卡
+
+
+
+ a| 
+image:../media/legend_icon_02.png["編號 2"]
+ a| 
+轉接器指旋螺絲
+
+
+
+ a| 
+image:../media/legend_icon_03.png["編號 3"]
+| 擴充卡 
+|===
 . 移除第3號擴充卡（插槽4和5）：
 +
 .. 按下通風管兩側的鎖定彈片、將通風管滑向控制器模組背面、然後將其旋轉至完全開啟的位置、以開啟通風管。
@@ -299,12 +361,6 @@ image::../media/drw_A400_Replace-mezz-card_IEOPS-1006.svg[DRW A400更換夾層�
 == 步驟5：安裝控制器模組
 
 在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
-
-您可以使用下列動畫、圖例或書面步驟、在機箱中安裝控制器模組。
-
-.動畫-安裝控制器模組
-video::0310fe80-b129-4685-8fef-ab19010e720a[panopto]
-image::../media/drw_A400_Install_controller_source.png[DRW A400安裝控制器來源]
 
 . 如果您尚未這麼做、請關閉通風管。
 . 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。

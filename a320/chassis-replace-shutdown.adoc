@@ -44,7 +44,7 @@ NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Cust
 . 透過 SSH 登入叢集、或使用本機主控台纜線和筆記型電腦 / 主控台、從叢集中的任何節點登入。
 . 關閉 AutoSupport 並指出您預期系統離線的時間：
 +
-`system node autosupport invoke -node * -type all -messages "MAINT=8h Power Maintenance"`
+`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
 
 . 識別所有節點的 SP/BMC 位址：
 +
