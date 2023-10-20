@@ -1,0 +1,74 @@
+---
+permalink: asa-c250/index.html 
+sidebar: sidebar 
+keywords: asa C250 maintenance, maintenance, repairing C250, repairing asa C250, replace asa C250 components, replace asa C250 components 
+summary: 維護 ASA C250 硬體 
+---
+= 維護 ASA C250 硬體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於 ASA C250 儲存系統、您可以對下列元件執行維護程序。
+
+
+
+== 開機媒體
+
+開機媒體會儲存一組主要和次要的開機映像檔案、供系統在開機時使用。
+
+
+
+== 機箱
+
+機箱是實體機箱、可容納所有控制器元件、例如控制器 /CPU 單元、電源供應器和 I/O
+
+
+
+== 控制器
+
+控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 功能。
+
+
+
+== DIMM
+
+如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。
+
+
+
+== 磁碟機
+
+磁碟機是提供資料實體儲存媒體的裝置。
+
+
+
+== 風扇
+
+風扇會冷卻控制器。
+
+
+
+== 夾層卡
+
+夾層卡是直接插入另一個外掛卡的印刷電路板。
+
+
+
+== NVEM 電池
+
+控制器隨附電池、可在 AC 電源故障時保留快取資料。
+
+
+
+== 電源供應器
+
+電源供應器可在控制器機櫃中提供備援電源。
+
+
+
+== 即時時鐘電池
+
+即時時鐘電池會在電源關閉時保留系統日期和時間資訊。

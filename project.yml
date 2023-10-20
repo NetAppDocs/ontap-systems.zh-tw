@@ -11,7 +11,7 @@ settings:
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: AFF 、 ASA 和 FAS 系統文件
+  - title: ONTAP 硬體系統文件
     url: "/index.html"
   - title: 版本資訊
     url: "/rel-notes.html"
@@ -46,6 +46,12 @@ sidebar:
     - section: asa400
     - section: asa800
     - section: asa900
+  - title: ASA C 系列系統
+    url: "/allsan-c-series/index.html"
+    entries:
+    - section: asa-c250
+    - section: asa-c400
+    - section: asa-c800
   - title: 系統FAS
     url: "/fas/index.html"
     entries:
@@ -64,6 +70,7 @@ sidebar:
     - section: a700s
     - section: fas2600
     - section: fas8200
+    - section: other
   - title: 磁碟機櫃
     url: "/drive-shelves/index.html"
     entries:
@@ -119,9 +126,8 @@ sidebar:
           url: "/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html"
         - title: 重新安裝門並點亮徽章
           url: "/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html"
-  - section: other
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
-  name: AFF and FAS Systems
+  name: ONTAP hardware systems
   repo: ontap-systems-family
