@@ -1327,8 +1327,6 @@
   <block id="ff02ca9b372ecd5e7de683ed182d26e4" category="paragraph">當受損控制器顯示「正在等待恢復...」訊息之後、請從健全的控制器執行恢復：</block>
   <block id="9bdcceabcaeaceb62327dbad774d83fd" category="list-text">從健全的控制器：「torage容錯移轉恢復-ofnode_node_name」</block>
   <block id="7ca421ecacbe47c97cfdc6f02bceeb1b" category="paragraph">受損的控制器會恢復其儲存設備、完成開機、然後重新開機、再由健全的控制器接管。</block>
-  <block id="3804b132271e47a4db7521e977b43625" category="inline-link">《供應能力設定指南》（英文）ONTAP</block>
-  <block id="08ca2eade8768d4ee7e1752168f719ac" category="paragraph"><block ref="08ca2eade8768d4ee7e1752168f719ac" category="inline-link-rx"></block></block>
   <block id="889c078e9cfb9c17ddcfadb4d5c9759c" category="list-text">使用「儲存容錯移轉show-f恢復」命令來監控還原作業的進度。</block>
   <block id="2e2dd412417cfab75b0340fc82c0c08b" category="list-text">恢復作業完成後、請使用「儲存容錯移轉show」命令確認HA配對正常、而且可以接管。</block>
   <block id="c2a9feacea3374ba5c6052aaa36c24d5" category="list-text">如果您使用「儲存容錯移轉修改」命令停用自動還原功能、請將其還原。</block>
@@ -2031,7 +2029,6 @@
   <block id="30354285f2a8e6ac58b71db46bfc3ead" category="list-text">「抄送給我們」</block>
   <block id="b3c97d04447b52934cf5049f38689249" category="list-text">《MCCIP》</block>
   <block id="e868d163eb8c93826e8f9ef7d7b0613e" category="list-text">下一步取決於您的系統組態。</block>
-  <block id="3746182c68f1f041a5f57979560a0566" category="list-text">前往 <block ref="1665eb69960f5979fe40ff23600bffd1" category="inline-xref-macro-rx"></block>。</block>
   <block id="17c7d5cfc1341d03fca63b7c848b5ad1" category="paragraph">HA與第二個控制器模組配對</block>
   <block id="ebb1194e26e6cc8c6c5c749fda017889" category="paragraph">結束維護模式：「停止」載入程式提示字元出現。</block>
   <block id="9d2a810337a7aa9c3699cd8746f6d93e" category="section-title">步驟3：在雙節點MetroCluster 的不二組態中切換回集合體</block>
@@ -5437,8 +5434,6 @@
   <block id="e9d13b816c74953ab05ce3d6d2486166" category="image-alt">更換DRw a800 NVDIMM</block>
   <block id="f8cdcc9997405437e79f5d57e18498f5" category="paragraph">提升板2和NVDIMM 11</block>
   <block id="7103ae2dc232b897a89408d0cd914f59" category="doc">檢查內建加密金鑰AFF -《》、《》、《》、《》</block>
-  <block id="5fb89931e5b269129a2ad5936878a851" category="list-text">如果命令輸出中未顯示&lt;lno－dare&gt;、且系統執行ONTAP 的是版本號為《版本資訊與管理技術：&lt;lno－dare&gt;」、請前往 <block ref="b9f6f8746149f87def14842273c93bfe" category="inline-xref-macro-rx"></block>。</block>
-  <block id="70c3e5c6b05722334dd3cfb521d9e159" category="list-text">如果命令輸出中未顯示&lt;lno－dare&gt;、且系統執行ONTAP 的是更新版本的版本號、請前往 <block ref="e0569187fa90a6ae4bbbe053355b82c8" category="inline-xref-macro-rx"></block>。</block>
   <block id="9fc6e6ebb195a8b268f686a0f8256e7b" category="summary">更換電源供應器時、需要從電源拔下目標電源供應器、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。</block>
   <block id="80185b76790082a23c34d9ebf9a01f7e" category="doc">更換電源AFF 供應器- REVA800</block>
   <block id="0e3989fd0fd811ede751f0ca9dbfbe88" category="doc">開機媒體更換總覽- AFF VA800</block>
@@ -6585,16 +6580,8 @@
   <block id="7befdc0c8cc35d0c1711e11bd7feb970" category="list-text">清除快取模組上的資料：<block ref="6daf7f4112fcf7c7be366c44ff70faf2" prefix=" " category="inline-code"></block></block>
   <block id="236dd84b9226dbf8dfd98a6c46b59972" category="list-text">確認資料已從快取模組中清除：<block ref="55030d884a341e8f95d06478b61fbec9" prefix=" " category="inline-code"></block></block>
   <block id="af41b619bf9d50ddae2454efc001e4dd" category="paragraph">輸出應顯示快取模組狀態為「已清除」。</block>
-  <block id="376b1cae869bbe8ab1cce68fdb30b696" category="inline-link-macro">更換DIMM</block>
-  <block id="91e13f2779cb51174165fa30eaba7e5b" category="list-text">返回 <block ref="cf268cc4bc5a73daf7348170b397c07d" category="inline-link-macro-rx"></block> 重新檢查NVMEM LED。</block>
   <block id="1a9ae2b5eb296d614bebfdc33f389268" category="doc">請檢查內建加密金鑰AFF - VA150</block>
   <block id="3bf6a2921f0e655ea4d2b6b2851e02df" category="doc">重新安裝系統並重新分配磁碟- AFF VA150</block>
-  <block id="91b91feeb88498e7be1c10bbbb6db4c2" category="inline-link-macro">驗證HA系統上的系統ID變更</block>
-  <block id="4e87b3c0f415f46d36e8fa6bd32a6ff7" category="paragraph"><block ref="4e87b3c0f415f46d36e8fa6bd32a6ff7" category="inline-link-macro-rx"></block></block>
-  <block id="465740a443e85d455a90494615d629b9" category="inline-link-macro">在ONTAP 支援的獨立系統上手動重新指派系統ID</block>
-  <block id="7070195bf98baff2e0462461db9cb074" category="paragraph"><block ref="7070195bf98baff2e0462461db9cb074" category="inline-link-macro-rx"></block></block>
-  <block id="734e28e3c6b715a48c7043347210471e" category="inline-link-macro">在雙節點MetroCluster 的作業系統上手動重新指派系統ID</block>
-  <block id="ca5a5e07d656cff35da2184538cfc5fb" category="paragraph"><block ref="ca5a5e07d656cff35da2184538cfc5fb" category="inline-link-macro-rx"></block></block>
   <block id="1cd8a39839471e937855a3c54b6b84d9" category="doc">開機媒體更換總覽- AFF VA150</block>
   <block id="35db388e4e99e4a7488ab682126d7fa6" category="doc">更換NVMEM電池AFF - VA150</block>
   <block id="2867a72512f6330f74fb93ac9f93f07d" category="doc">搬移及更換硬體- AFF REVA150</block>
@@ -7372,7 +7359,6 @@
   <block id="60564c6a5dbb582ea0f8b967540d266c" category="paragraph">標籤顯示堆疊編號、例如*迴圈或堆疊編號：1*和*迴圈或堆疊編號：2*。不包含根集合體的磁碟櫃只會在標籤上顯示磁碟櫃序號。</block>
   <block id="e50b176d298cced2ec9cfd5bbe516332" category="list-text">自動啟用頻內替代控制路徑（ IBACP ）。</block>
   <block id="e5db155980df3ce33a16c9ed4af83e4e" category="paragraph">單一路徑 HA 或單一路徑組態不支援 IBACP 。</block>
-  <block id="ba809f57bc3e36546d8a47b82a5d995c" category="paragraph"><block ref="ba809f57bc3e36546d8a47b82a5d995c" category="inline-link-rx"></block></block>
   <block id="d37bef5353b917df46bc5ea30882b3a9" category="paragraph">您必須符合中的要求 <block ref="45a94b67f53095b9a49e00311fb0216a" category="inline-xref-macro-rx"></block> 並在機架中安裝磁碟櫃。</block>
   <block id="59e65b256ff4505ae2cefd9f9a823d8b" category="paragraph">您正在佈線多重路徑 HA 、三重路徑 HA 、多重路徑、單一路徑 HA 或單一路徑組態</block>
   <block id="7e8bbc30dce4dc23bd053149c93370be" category="inline-link-macro">多重路徑 HA 組態的控制器對堆疊纜線工作表和纜線範例</block>
@@ -7383,7 +7369,6 @@
   <block id="a9965269fc2882517b2f7404230818ad" category="list-text">如果您要將一個或多個磁碟櫃熱新增至現有堆疊的端點（邏輯第一個或最後一個磁碟機櫃）、請針對您的組態完成適用的子步驟；否則、請前往下一步。</block>
   <block id="ca067501330c228a786fd00d17229575" category="paragraph">將磁碟機熱新增至堆疊的末端、該堆疊具有多重路徑 HA 、三重路徑 HA 、多重路徑、四路徑 HA 或四路徑連線至控制器</block>
   <block id="fa3d4e5360018aa45e5104272d43148c" category="paragraph">堆疊必須符合中所述的要求 <block ref="d7ead9d51e0253f97f9c0ae83a2ee9eb" category="inline-xref-macro-rx"></block> 本程序的一節。</block>
-  <block id="2aaf80f49dd70b27832d7aa8d96090d0" category="list-text">如果命令輸出中顯示 &lt;lno-DARE&gt; 或 &lt;1Ono － DARe 、表示系統不支援 NVE 、請繼續執行 <block ref="89ef15e2cd441b6b5852f79de56e5549" category="inline-xref-macro-rx"></block>。</block>
   <block id="78fe270cb69c9ecda90d7e049a571c28" category="list-text">如果命令輸出中未顯示 &lt;lno-DARE&gt; 、且系統執行的是 ONTAP 9.6 或更新版本、請繼續下一節、 <block ref="a913f4e8384864716d5146884ff27f0e" category="inline-xref-macro-rx"></block>。</block>
   <block id="d9b691280dde7c1805e39052719c9c29" category="list-text">停用健康控制器的自動恢復：
 儲存容錯移轉修改 -node 本機 -auto-贈 品 false
@@ -7592,7 +7577,6 @@
   <block id="0da3888f81e8e56d2de2a92a42b512a3" category="doc">開機恢復映像： FAS2800</block>
   <block id="c5ad83e174ba7727e76fc50c8366e589" category="list-text">還原 var 檔案系統：</block>
   <block id="e51ecd8f185715278ef737fd290e62f5" category="list-text">按下<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 當系統提示您還原組態複本時。</block>
-  <block id="17fb1354460acbac7ab4abe6c27a24a2" category="list-text">如果您的系統已設定內建Keymanager、NSE或NVE、請前往 <block ref="4b98be10d46a75a522880bc01a177aa5" category="inline-xref-macro-rx"></block></block>
   <block id="1a037944aedbce3040a5314200246858" category="list-text">在叢集提示字元中、使用檢查邏輯介面<block ref="55cf88a325a6e0574aef732566cc984c" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="8c4cb494b75288cf3ce1e7ce1dee3c9d" category="paragraph">如果有任何介面列為「假」、請使用將這些介面還原回其主連接埠<block ref="ffbe7d182280173cba10c83ec9992974" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="fcb4d3b1f229bc036dc2280a7c1d29c4" category="list-text">如果您不使用儲存加密、請還原自動恢復和 AutoSupport ：</block>
@@ -8694,4 +8678,19 @@ SFP+ （目標 / 啟動器）</block>
   <block id="052bc2e859c31b84b04f42db7b60abff" category="sidebar">ASA C800 開機媒體</block>
   <block id="801fdf5b112137a107d3f17390e4042d" category="sidebar">ASA C800 機箱</block>
   <block id="ca7dce9cd06f0f2ef6e548c8c26d54d9" category="sidebar">ASA C800 控制器模組</block>
+  <block id="664f9c52f93e2fbf6e801148b0f573ad" category="inline-link">HA配對管理</block>
+  <block id="665a2533bb5f8d55add7fd24df29e614" category="paragraph"><block ref="665a2533bb5f8d55add7fd24df29e614" category="inline-link-rx"></block></block>
+  <block id="8fa572d5dfdbff8c60e791d349eca279" category="list-text">如果命令輸出中顯示 &lt;lno-DARE&gt; 或 &lt;1Ono － DARe 、表示系統不支援 NVE 、請繼續執行<block ref="c2302bfb39f1e6b6fccfd9207e94da44" category="inline-link-rx"></block>。</block>
+  <block id="7d52b24114e5d676f50874574fb29878" category="paragraph">系統中的所有其他元件都必須正常運作；否則、您必須聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
+  <block id="6cca151867efbcb742b6e15efec51760" category="list-text">擠壓 CAM 把手上的閂鎖、直到其鬆開、完全打開 CAM 把手、從中間背板上鬆開控制器模組、然後用雙手將控制器模組從機箱中拉出一半。</block>
+  <block id="92edeac7b5b629f5e93e2de4ba2adf43" category="list-text">檢查控制器模組背面的 NVMEM LED 。  尋找 NV 圖示：</block>
+  <block id="bb49ab711ab9d79c58c90ff674747f54" category="admonition">如果系統處於「等待恢復」狀態、或系統未正確接管或停止（未認可的資料）、則當從控制器拔下電源時、面板上的綠色 NV LED 會開始閃爍。  如果合作夥伴控制器模組未成功接管受損的控制器模組、請聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
+  <block id="fab80bc3fcd8eac48cd9c319017190f7" category="list-text">如果從機箱中卸下控制器模組時綠色的 NV 狀態 LED 開始閃爍：</block>
+  <block id="db20b5f8713e5397c5c04ce0ebd834fd" category="list-text">確認控制器已由合作夥伴控制器模組進行乾淨接管、或是故障控制器顯示正在等待恢復、閃爍的 LED 可忽略、您可以從機箱中完全移除受損的控制器。</block>
+  <block id="b3fb52770d8a327ed5d79c25e8d2d8fe" category="list-text">如果綠色的 NV LED 燈熄滅、您可以從機箱中完全移除受損的控制器。</block>
+  <block id="30f4d9cc74028fcb25b044f8d09f0cdd" category="list-text">從機箱中卸下控制模組。</block>
+  <block id="6476f2f5425248b422cb30658323cbae" category="list-text">返回 <block ref="c67cdb63ab5b46180d9910dcb0f03689" category="inline-xref-macro-rx"></block> 重新檢查NVMEM LED。</block>
+  <block id="699b31ad01a325baded3de0b74220957" category="list-text"><block ref="56abd8a9e334744fb66750bee3a52178" category="inline-xref-macro-rx"></block></block>
+  <block id="74e404c1f33731e0a999a4fc54ab33df" category="list-text"><block ref="893f29ac32188f4c8d29836a3587e127" category="inline-xref-macro-rx"></block></block>
+  <block id="a192a372cc891c7f0839a86b1b42a3e2" category="list-text">前往 <block ref="39ef488856eb21b3aaabcded4bff7c5d" category="inline-xref-macro-rx"></block>。</block>
 </blocks>

@@ -30,8 +30,8 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 . 使用ONTAP 「vrvion -v」命令檢查系統在受損控制器上執行的版本；如果受損控制器停機、則檢查合作夥伴控制器上執行的版本：
 +
 ** 如果命令輸出中顯示<lanne-dare>或<1Oanne-dare>、表示系統不支援NVE、請繼續關閉控制器。
-** 如果命令輸出中未顯示<lno－dare>、且系統執行ONTAP 的是版本號為《版本資訊與管理技術：<lno－dare>」、請前往 <<Checking NVE or NSE on systems running ONTAP 9.5 and later>>。
-** 如果命令輸出中未顯示<lno－dare>、且系統執行ONTAP 的是更新版本的版本號、請前往 <<Checking NVE or NSE on systems running ONTAP 9.6 and later>>。
+** 如果命令輸出中未顯示<lno－dare>、且系統執行ONTAP 的是版本號為《版本資訊與管理技術：<lno－dare>」、請前往 <<選項1：在執行ONTAP ENF9.5或更早版本的系統上勾選NVE或NSE>>。
+** 如果命令輸出中未顯示<lno－dare>、且系統執行ONTAP 的是更新版本的版本號、請前往 <<選項2：在執行ONTAP ES9.6及更新版本的系統上、勾選NVE或NSE>>。
 
 
 . 如果受損的控制器是HA組態的一部分、請停用健全控制器的自動恢復功能：「儲存容錯移轉修改節點本機-自動恢復錯誤」或「儲存容錯移轉修改節點本機-自動恢復發生恐慌後的錯誤」
