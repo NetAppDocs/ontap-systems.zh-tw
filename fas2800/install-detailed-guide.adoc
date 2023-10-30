@@ -1,8 +1,8 @@
 ---
 permalink: fas2800/install-detailed-guide.html 
 sidebar: sidebar 
-keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, setup, discovery 
-summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。 
+keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, storage system, setup, discovery 
+summary: 此程序提供安裝一般 NetApp 儲存系統的詳細逐步指示。 
 ---
 = 詳細步驟： FAS2800
 :allow-uri-read: 
@@ -11,42 +11,51 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 
 
 [role="lead"]
-本指南提供安裝典型NetApp系統的詳細逐步指示。如果您需要更詳細的安裝說明、請使用本指南。
+本程序提供安裝一般 NetApp 儲存系統的詳細逐步指示。如果您需要更詳細的安裝指示、請使用此程序。
 
 
 
 == 步驟1：準備安裝
 
-若要安裝 FAS2800 系統、您必須在 NetApp 支援網站 上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
-
-您必須能夠存取 https://hwu.netapp.com["NetApp Hardware Universe"] 以取得站台需求的相關資訊、以及設定系統的其他資訊。您可能也想要存取 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 版本的版本資訊"] 如ONTAP 需此系統的詳細資訊、請參閱您的版本的
-
+.開始之前
 您必須在網站上提供下列資訊：
 
-* 儲存系統的機架空間
+* 儲存系統的機架空間位於電信機架或系統機櫃中。
++
+** 2U 適用於儲存系統
+** 2U 或 4U 適用於系統中的每個磁碟機櫃
+
+
 * 2號十字螺絲起子
-* 其他網路纜線、可將系統連接至網路交換器、筆記型電腦或主控台、並使用網路瀏覽器
+* 額外的網路纜線、可將儲存系統連接至網路交換器、筆記型電腦或主控台、並使用網頁瀏覽器
 * 具備RJ-45連線並可存取網頁瀏覽器的筆記型電腦或主控台
++
+** 存取 https://hwu.netapp.com["NetApp Hardware Universe"] 以取得站台需求的相關資訊、以及設定儲存系統的其他資訊。
+** 您可能也想要存取 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 版本的版本資訊"] 如需此儲存系統的詳細資訊、請參閱您的 ONTAP 版本。
+
+
 
 
 .步驟
-. 打開所有包裝箱的內容物。
-. 從控制器記錄系統序號。
+. 打開所有包裝箱並清點內容物。
++
+
+IMPORTANT: 有特定電力需求的客戶必須檢查 https://hwu.netapp.com["NetApp Hardware Universe"] 以瞭解其組態選項。
+
+. 存取 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html#assign-a-node-management-ip-address["使用系統管理員在新叢集上設定 ONTAP"^]
++
+.. 檢閱要求和程序步驟。
+.. 完成以收集儲存系統的相關資訊 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["設定工作表 ^ （需要工作表的 URL ）"]。
+.. 記錄控制器的儲存系統序號。
 +
 image::../media/drw_ssn_label.svg[DRw SSN標籤]
 
-. 設定您的帳戶：
-+
-.. 登入現有帳戶或建立帳戶。
-.. 透過註冊您的系統  https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct["NetApp產品註冊"]
 
 
-. 下載並安裝 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Config Advisor"] 在筆記型電腦上。
-. 清點並記下您收到的纜線數量和類型。
-+
+
+
 下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://hwu.netapp.com["NetApp Hardware Universe"] 找出纜線並識別其用途。
 
-+
 [cols="1,2,1,2"]
 |===
 | 纜線類型... | 產品編號與長度 | 連接器類型 | 適用於... 
@@ -127,7 +136,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD�
  a| 
 USB-C 主控台纜線
  a| 
-不適用
+無產品編號標籤
  a| 
 image::../media/oie_cable_micro_usb.svg[OIE纜線Micro USB]
  a| 
@@ -138,11 +147,11 @@ image::../media/oie_cable_micro_usb.svg[OIE纜線Micro USB]
  a| 
 電源線
  a| 
-不適用
+無產品編號標籤
  a| 
 image::../media/oie_cable_power.svg[OIE纜線電源]
  a| 
-開啟系統電源
+開啟儲存系統電源
 
 
 
@@ -156,21 +165,18 @@ image::../media/oie_cable_fiber_lc_connector.svg[OIE纜線光纖LC連接器]
 額外的 FC 網路纜線
 
 |===
-. 下載並完成中的工作表  https://docs.netapp.com/us-en/ontap/software_setup/concept_set_up_the_cluster.html#cluster-setup-worksheets["使用ONTAP NetApp CLI設定叢集"^]。
-
-
 
 
 == 步驟2：安裝硬體
 
-您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
+視情況、將儲存系統安裝在電信機架或 NetApp 儲存系統機櫃中。
 
 .步驟
 . 視需要安裝軌道套件。
-. 請依照軌道套件隨附的指示來安裝及固定系統。
+. 請依照軌道套件隨附的說明安裝及保護您的儲存系統。
 +
 
-NOTE: 您必須瞭解與系統重量相關的安全顧慮。
+NOTE: 您必須注意與儲存系統重量相關的安全考量。
 
 +
 image::../media/oie_fas2800_weight_caution_IEOPS-1070.svg[OIE fas2800 重量注意事項 IEOPS 1070]
@@ -179,16 +185,16 @@ image::../media/oie_fas2800_weight_caution_IEOPS-1070.svg[OIE fas2800 重量注�
 +
 image::../media/drw_cable_management_arm_install.svg[DRw纜線管理ARM 功能安裝]
 
-. 將擋板放在系統正面。
+. 將擋板放在儲存系統的正面。
 
 
 
 
 == 步驟3：將控制器連接至網路
 
-使用雙節點無交換器叢集方法或使用叢集互連網路方法、將控制器連接至網路。
+將控制器以雙節點無交換器叢集或交換式叢集的形式連接至網路。
 
-下表列出兩個節點無交換器叢集網路纜線和交換式叢集網路纜線的纜線類型、以及圖示中的撥出號碼和纜線顏色。
+下表列出兩個節點無交換器叢集和交換式叢集的纜線類型、以及撥出電話號碼和纜線顏色。
 
 [cols="20%,80%"]
 |===
@@ -215,27 +221,26 @@ image::../media/oie_legend_icon_3_o.svg[OIE圖例圖示3 o]
 主機網路交換器
 
 |===
+.開始之前
+* 如需將儲存系統連接至交換器的相關資訊、請聯絡您的網路管理員。
+* 請查看圖例箭頭、瞭解正確的纜線連接器推拉式彈片方向。
++
+** 插入連接器時、您應該會覺得它卡入定位；如果您不覺得卡住、請將其取下、將纜線頭翻轉過來、然後再試一次。
+** 如果連接至光纖交換器、請先將SFP插入控制器連接埠、再將纜線連接至連接埠。
+
+
+
+
+image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
+
 [role="tabbed-block"]
 ====
 .選項1：連接雙節點無交換式叢集
 --
 為無交換器的雙節點叢集連接網路連線和叢集互連連接埠佈線。
 
-.開始之前
-如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
-image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
-
-
-NOTE: 插入連接器時、您應該會覺得它卡入定位；如果您不覺得卡住、請將其取下、將纜線頭翻轉過來、然後再試一次。
-
-
-NOTE: 如果連接至光纖交換器、請先將SFP插入控制器連接埠、再將纜線連接至連接埠。
-
 .關於這項工作
-您可以使用圖形或逐步說明來完成控制器與交換器之間的纜線。
+使用動畫或逐步說明完成控制器與交換器之間的纜線。
 
 .動畫 - 無交換器的雙節點叢集佈線
 video::90577508-fa79-46cf-b18a-afe8016325af[panopto]
@@ -315,18 +320,8 @@ IMPORTANT: 請勿插入電源線。
 --
 為交換式叢集連接網路連線和叢集互連連接埠。
 
-
-NOTE: 您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
-image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
-
-
-NOTE: 插入連接器時、您應該會覺得它卡入定位；如果您不覺得卡住、請將其取下、將纜線頭翻轉過來、然後再試一次。
-
 .關於這項工作
-您可以使用圖形或逐步說明來完成控制器與交換器之間的纜線。
+使用動畫或逐步說明完成控制器與交換器之間的纜線。
 
 .動畫-交換式叢集纜線
 video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto]
@@ -403,22 +398,10 @@ IMPORTANT: 請勿插入電源線。
 
 將控制器連接至外部儲存設備。
 
+下表列出磁碟機櫃與儲存系統之間的纜線類型、以及圖示中的撥出電話號碼和纜線顏色。
 
-NOTE: 範例使用DS224C。佈線與其他支援的磁碟機櫃類似。
 
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
-
-image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
-
-.關於這項工作
-您可以使用圖示或逐步說明來完成控制器與磁碟機櫃之間的纜線。
-
-.動畫 - 磁碟機櫃纜線
-video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]
-
-NOTE: 請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["在新的儲存系統中安裝機櫃"^] 以取得更多資訊。
-
-下表列出兩個節點無交換器叢集網路纜線和交換式叢集網路纜線的纜線類型、以及圖示中的撥出號碼和纜線顏色。
+NOTE: 範例使用DS224C。佈線與其他支援的磁碟機櫃類似。請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["安裝及纜線架以安裝新系統-機櫃配備IOM12/IOM12B模組"^] 以取得更多資訊。
 
 [cols="20%,80%"]
 |===
@@ -428,23 +411,35 @@ NOTE: 請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 
  a| 
 image::../media/oie_legend_icon_1_lo.svg[OIE 圖例圖示 1 lo]
  a| 
-叢集互連
+機櫃到機櫃的纜線
 
 
 
  a| 
 image::../media/oie_legend_icon_2_mb.svg[OIE 圖例圖示 2 MB]
  a| 
-管理網路交換器
+控制器 A 至磁碟機櫃
 
 
 
  a| 
 image::../media/oie_legend_icon_3_t.svg[OIE 圖例圖示 3 t]
  a| 
-主機網路交換器
+控制器 B 至磁碟機櫃
 
 |===
+請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
+
+image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
+
+.關於這項工作
+請使用動畫或逐步說明、完成控制器與磁碟機櫃之間的纜線連接。
+
+
+IMPORTANT: 請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["在新的儲存系統中安裝機櫃"^] 以取得更多資訊。
+
+.動畫 - 磁碟機櫃纜線
+video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]
 .步驟
 . 將機櫃對機櫃連接埠連接至纜線。
 +
@@ -495,39 +490,40 @@ image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[DWR 2800 控制器
 
 
 
-== 步驟5：完成系統設定與組態設定
+== 步驟 5 ：完整的儲存系統設定與組態
 
-您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
+使用選項 1 ：（如果已啟用網路探索）或選項 2 ：（如果未啟用網路探索）來完成儲存系統的設定和組態。
 
 [role="tabbed-block"]
 ====
 .選項1：如果已啟用網路探索
 --
-如果您的筆記型電腦已啟用網路探索、請使用自動叢集探索來完成系統設定和組態。
+如果您的筆記型電腦已啟用網路探索、請使用自動叢集探索來完成儲存系統設定和組態。
 
 .步驟
-. 請使用下列動畫來設定一或多個磁碟機櫃ID
+. 請使用下列動畫來開啟機櫃電源並設定機櫃 ID 。
 +
 .動畫-設定磁碟機櫃ID
 video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
-. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
-. 開啟兩個節點的電源開關。
+. 開啟控制器電源
 +
-image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[DWR 2800 開啟電源 IEOPS 898]
-
+.. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
+.. 開啟兩個節點的電源開關。
 +
 
 NOTE: 初始開機最多可能需要八分鐘。
+
++
+image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[DWR 2800 開啟電源 IEOPS 898]
+
+
 
 . 請確定您的筆記型電腦已啟用網路探索功能。
 +
 如需詳細資訊、請參閱筆記型電腦的線上說明。
 
-. 請使用下列動畫將筆記型電腦連線至管理交換器。
-+
-.動畫-將筆記型電腦連接到管理交換器
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
-. 選取ONTAP 列出的功能表圖示以探索：
+. 將筆記型電腦連接到管理交換器。
+. 請使用圖示或步驟來探索儲存系統節點以進行設定：
 +
 image::../media/drw_autodiscovery_controler_select.svg[選擇「自動探索控制器」]
 
@@ -538,16 +534,27 @@ image::../media/drw_autodiscovery_controler_select.svg[選擇「自動探索控�
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 
-NOTE: XXXXX是目標節點的系統序號。
+NOTE: xxxxx 是目標節點的儲存系統序號。
 
 +
 系統管理程式隨即開啟。
 
 
 
-. 使用System Manager引導式設定、使用您在中收集的資料來設定系統 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
-. 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 使用 System Manager 引導式設定、使用您在中收集的資料來設定儲存系統 <<步驟1：準備安裝>>。
+. 建立帳戶或登入您的帳戶。
++
+.. 按一下 https://mysupport.netapp.com["mysupport.netapp.com"]
+.. 如果您需要建立帳戶或登入帳戶、請按一下 _ 建立帳戶 _ 。
+
+
+. 下載並安裝 https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]
++
+.. 執行 Active IQ Config Advisor 以驗證儲存系統的健全狀況。
+
+
+. 請至登錄您的系統 https://mysupport.netapp.com/site/systems/register[]。
+. 完成初始組態之後、請前往 https://www.netapp.com/support-and-training/documentation/["NetApp ONTAP 資源"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
 
 --
@@ -563,7 +570,7 @@ NOTE: XXXXX是目標節點的系統序號。
 
 NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定主控台連接埠。
 
-.. 將主控台纜線連接至筆記型電腦或主控台、並使用系統隨附的主控台纜線連接控制器上的主控台連接埠、然後 c 將筆記型電腦或主控台連接至管理子網路上的交換器。
+.. 將主控台纜線連接至筆記型電腦或主控台、然後使用儲存系統隨附的主控台纜線連接控制器上的主控台連接埠、然後 c 將筆記型電腦或主控台連接至管理子網路上的交換器。
 +
 image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[將 DRW 2800 筆記型電腦切換至控制器 IEOPS 1084]
 
@@ -616,11 +623,22 @@ NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台
 
 NOTE: 位址的格式為 https://x.x.x.x[]。
 
-.. 使用您在中收集的資料來設定系統 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]。
+.. 使用您在中收集的資料來設定儲存系統 <<步驟1：準備安裝>>...
 
 
-. 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態後、請前往  https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 以取得在 ONTAP 中設定其他功能的相關資訊。
+. 建立帳戶或登入您的帳戶。
++
+.. 按一下 https://mysupport.netapp.com["mysupport.netapp.com"]
+.. 如果您需要建立帳戶或登入帳戶、請按一下 _ 建立帳戶 _ 。
+
+
+. 下載並安裝 https://mysupport.netapp.com/site/tools["Active IQ Config Advisor"]
++
+.. 執行 Active IQ Config Advisor 以驗證儲存系統的健全狀況。
+
+
+. 請至登錄您的系統 https://mysupport.netapp.com/site/systems/register[]。
+. 完成初始組態之後、請前往 https://www.netapp.com/support-and-training/documentation/["NetApp ONTAP 資源"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
 
 
 --
