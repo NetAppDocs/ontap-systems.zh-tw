@@ -1,5 +1,5 @@
 ---
-permalink: asa-c400/nvdimm-replace.html 
+permalink: asa-c-400/nvdimm-replace.html 
 sidebar: sidebar 
 keywords: asa c400, asa, c400, replace, nvdimm, controller, module, system, register, flash, lifetime, healthy, system, panic, shut, down, impair, two-node, metrocluster, complete, replacement, process, replace an nvdimm, shut down the impaired controller, remove the controller module, replace the nvdimm, install the controller module, restore the controller module to operation, switch back aggregates in a two-node metrocluster configuration, complete the replacement process 
 summary: 當系統登錄快閃存壽命即將結束、或辨識出的NVDIMM一般狀況不正常時、您必須更換控制器模組中的NVDIMM；否則會造成系統恐慌。 
@@ -182,27 +182,6 @@ mcc1A::> metrocluster operation show
 
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
 
-您可以使用下列動畫、圖例或書面步驟、將控制器模組從機箱中移除。
-
-.動畫-移除控制器模組
-video::ca74d345-e213-4390-a599-aae10019ec82[panopto]
-image::../media/drw_A400_Remove_controller.png[DRW A400移除控制器]
-
-[cols="10,90"]
-|===
-
-
- a| 
-image:../media/legend_icon_01.png["編號 1"]
- a| 
-鎖定鎖條
-
-
-
- a| 
-image:../media/legend_icon_02.png["編號 2"]
-| 控制器稍微移出機箱 
-|===
 . 如果您尚未接地、請正確接地。
 . 釋放電源線固定器、然後從電源供應器拔下纜線。
 . 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線和SFP（如有需要）、並追蹤纜線的連接位置。
@@ -214,6 +193,27 @@ image:../media/legend_icon_02.png["編號 2"]
 +
 控制器模組會稍微移出機箱。
 
++
+image::../media/drw_c400_remove_controller_IEOPS-1216.svg[DRW C400 移除控制器 IEOPS 1216]
+
++
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png[""]
+ a| 
+鎖定鎖條
+
+
+
+ a| 
+image:../media/legend_icon_02.png[""]
+ a| 
+控制器稍微移出機箱
+
+|===
 . 將控制器模組滑出機箱。
 +
 將控制器模組滑出機箱時、請確定您支援控制器模組的底部。
@@ -241,7 +241,7 @@ NOTE: 您必須登入NetApp支援網站、才能顯示系統的_波動聲明_。
 NOTE: 動畫顯示無DIMM插槽的空插槽。這些空插槽中會填入空格。
 
 .動畫-更換NVDIMM
-video::e0afec49-0953-4dcc-b9d0-aadb01578e1b[panopto]
+video::7dfe09d8-eff8-41e3-9eb4-b03100032579[panopto]
 image::../media/drw_A400_Replace-NVDIMM-DIMM_IEOPS-1009.svg[DRW A400更換NVDIMM DIMM IOPS 1009]
 
 [cols="10,90"]
@@ -299,7 +299,7 @@ NOTE: 目視檢查NVDIMM、確認其已平均對齊並完全插入插槽。
 
 == 步驟4：安裝控制器模組
 
-更換控制器模組中的元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機。
+在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
 
 . 如果您尚未這麼做、請關閉通風管。
 . 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
@@ -331,6 +331,10 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項。
 
 .. 在載入程式提示下、輸入「bye」重新初始化PCIe卡和其他元件。
+.. 中斷開機程序、然後按「Ctrl-C」開機至載入器提示字元。
++
+如果系統在開機功能表停止、請選取開機至載入器選項。
+
 
 
 

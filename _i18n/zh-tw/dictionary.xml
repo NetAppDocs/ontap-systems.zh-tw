@@ -1306,7 +1306,6 @@
   <block id="67cee8596d9c8d2c1fc298a78f8c3906" category="list-text">bootarg.init.boot_clustered`</block>
   <block id="a1969dbd1bcea583ab8a2d860a39b3af" category="list-text">《合作夥伴sysid》</block>
   <block id="5d32a23e28833165a96b466792bec7cb" category="list-text">bootarg.init.flash_optimized` for AFF The FeC190/AFF A220（All Flash FAS ）</block>
-  <block id="814c3874029ed6ca8ad80dd3b7be6a3b" category="list-text">bootarg.init.san_optimized`適用於AFF ESA220和All SAN Array</block>
   <block id="2e3640de5e9fa3ac8b95ece22f56c6a0" category="list-text">bootarg.init.switchless_cluster.enable`</block>
   <block id="7c7ef6e57bb05fedf24ffcf44a231f11" category="list-text">如果已啟用外部金鑰管理程式、請檢查「肯夫」ASUP輸出中所列的bootarg值：</block>
   <block id="7b8c83358fbe746786ab219aac22aed9" category="list-text">「bootarg.storageencryption支援&lt;value&gt;'</block>
@@ -4324,7 +4323,6 @@
   <block id="7ebd8d0d42466b09b19073ae00f72945" category="paragraph">零點9.7P4 ONTAP</block>
   <block id="6f2977e3ee99fb8e3f9058e09374bdac" category="paragraph">部分9.6P9 ONTAP</block>
   <block id="11f1d8b1ae01cc9ffc60cebf4b24af37" category="paragraph">零點9.5P14 ONTAP</block>
-  <block id="b7cfb975a50851418ad4bf0bcad4933f" category="section-title">新的硬體升級增強功能</block>
   <block id="25bb4e4a069ff20f27f5a435822dd06e" category="paragraph">由於推出自動連接埠配置功能、因此在更新過程中、硬體升級程序已在ONTAP 更新過程中簡化。當您升級執行ONTAP 不正常的系統時、必須使用正確的程序來說明連接埠放置功能。</block>
   <block id="fe2331c22be633c0221229b4b8251766" category="paragraph">請檢閱下表、查看可用的升級程序。如需其他詳細資料、請參閱每份指南、以判斷程序是否適當。</block>
   <block id="301e2a674920a7bb1b220a6ccd88ce36" category="inline-link">選擇升級或重新整理方法</block>
@@ -6380,7 +6378,6 @@
   <block id="0112dd8e71f10fe869246a29836663d8" category="inline-link-macro">《關於安裝與設定的資訊》AFF</block>
   <block id="70a2087c6fb473305a0e232844fd565f" category="paragraph"><block ref="70a2087c6fb473305a0e232844fd565f" category="inline-link-macro-rx"></block></block>
   <block id="8db94eb390aaecb9128a260b00e455e8" category="paragraph"><block ref="8db94eb390aaecb9128a260b00e455e8" category="inline-link-macro-rx"></block></block>
-  <block id="474b4646ba15883494cbfd9239d508ad" category="list-text">英文： <block ref="053faba884b41a351b336aa44c8075ff" category="inline-link-macro-rx"></block></block>
   <block id="42e8099baf01da8bcc3b8362f29f317c" category="inline-link-macro">《安裝與設定說明》（英文）AFF</block>
   <block id="3968cc9d2fa7f59d81661adbaf12cfac" category="paragraph"><block ref="3968cc9d2fa7f59d81661adbaf12cfac" category="inline-link-macro-rx"></block></block>
   <block id="b72bee50d170af9037bebf46f5eb89d7" category="paragraph">若要更換NVDIMM、您必須使用通風管頂端的FRU對應圖或插槽1擴充卡頂端的FRU對應圖、將其放入控制器模組。</block>
@@ -6435,7 +6432,6 @@
   <block id="22f4a2aa68e94fdf29e1fc7d0f30d571" category="paragraph">機櫃面板</block>
   <block id="fd4a04a1b7abc5cadef1bf584e6e5547" category="paragraph">機櫃ID LED</block>
   <block id="700f4fc6f1e4c3e585e23be6378affa0" category="paragraph">機櫃ID設定按鈕</block>
-  <block id="1f35a49e1a9f3ad335b1add2e4080478" category="paragraph"><block ref="1f35a49e1a9f3ad335b1add2e4080478" category="inline-link-macro-rx"></block></block>
   <block id="f37dfb2a27ff4e023e475b54c0ad055e" category="list-text">此程序包括將磁碟自動重新指派給與新NVRAM模組相關聯的控制器模組的步驟。您必須依照程序中的指示重新指派磁碟。在恢復之前完成磁碟重新指派可能會造成問題。</block>
   <block id="d73a26bc3e3d4896bae825c2a70691a4" category="paragraph">帶有字母和編號的CAM栓鎖</block>
   <block id="3c327a3216d201c494ac60534e1a2117" category="paragraph">CAM栓鎖完全解除鎖定</block>
@@ -6522,10 +6518,7 @@
   <block id="e90d1c109a9cd8d68a357882d5cf925c" category="list-text">若要完成系統設定、請參閱 <block ref="84c1e7f35fa076545c5f4c4417de33e1" category="inline-xref-macro-rx"></block></block>
   <block id="d12db64c0cb5cb862afbde49d98d6f25" category="inline-link-macro">完成更換程序</block>
   <block id="e739fb18db4795dd1e2cea8f3c5244c3" category="list-text">前往 <block ref="56c57196a2457d200e49164377b65ba5" category="inline-link-macro-rx"></block>。</block>
-  <block id="ba9fde9925258d03950e9c2d180f665c" category="image-alt">DRW A400更換開機媒體IOPS 1007</block>
-  <block id="a7f924c2147b80d349701c702d7f091f" category="image-alt">DRW A400空立管移除IOPS 1002.</block>
   <block id="54c5909d12d5c473924ce9b2c856a68d" category="image-alt">DRW A400 NVDIMM電池IOPS 1004.</block>
-  <block id="947bc8320a7df1722adcc49a6bdc81ba" category="image-alt">DRW A400取代PCIe卡IOPS 1008</block>
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400更換NVDIMM DIMM IOPS 1009</block>
   <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900纜線主控台交換器控制器IOPS 953</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">如果已啟用儲存加密、則必須還原功能。</block>
@@ -6779,7 +6772,6 @@
   <block id="1a4af28a3bbd2601782d5a7f4300eace" category="paragraph">如果您的系統採用MetroCluster 不支援的組態、請前往<block ref="7a41c0ceac7b7f46cc98ba334d076153" category="inline-link-rx"></block> 並遵循MetroCluster 適用於您的資訊系統組態類型的安裝說明。</block>
   <block id="71e3f3adc231b164f4f0837d133f2bc6" category="paragraph">若儲存系統未設定MetroCluster 於功能性組態中、請使用下列工作流程來部署儲存系統。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
-  <block id="1488c7c37653a45223ebecdfabcefa04" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝AFF/FAS控制器</block>
   <block id="8e4eec704f9a8706e1a3cf96accb2c17" category="list-text"><block ref="8e4eec704f9a8706e1a3cf96accb2c17" category="inline-link-rx"></block></block>
   <block id="5173935e91aef44c51b8afd57f32f13f" category="list-text"><block ref="5173935e91aef44c51b8afd57f32f13f" category="inline-link-rx"></block></block>
   <block id="e06ad9290eff5c16396920aafb75091e" category="list-text"><block ref="e06ad9290eff5c16396920aafb75091e" category="inline-link-rx"></block></block>
@@ -7167,7 +7159,6 @@
   <block id="cdc4a8392b31dfb0d6f525f8b4bfb521" category="list-text">連接纜線並設定筆記型電腦或主控台。</block>
   <block id="f0e48b1c6152b408e3a17383284dfa34" category="paragraph">如需如何設定主控台連接埠的說明、請參閱筆記型電腦或主控台的線上說明。</block>
   <block id="6266bb335022aad7813f5a92f40c41bb" category="list-text">在筆記型電腦或主控台上使用 System Manager 來設定叢集。</block>
-  <block id="b1e0a8fb86dde21901d58064a47983ae" category="paragraph">瞭解如何透過初始系統開機、從機架和纜線安裝系統。使用 <block ref="2e869cac122e3063f7b418f03cb3fa26" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="79386daaa48888ed81c00ef493d329e9" category="paragraph">如果您有 MetroCluster 組態、請使用<block ref="d4b6e949edad9293b177bc65e2892165" category="inline-link-rx"></block>。</block>
   <block id="25ca1a1b0a04d8f5341dca5c9e9eed8a" category="list-text">請確定您可以存取 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （ HWU ）以取得站台需求的相關資訊。</block>
   <block id="b00f162fad84edda46484fcada242a8c" category="inline-link">HWU</block>
@@ -7786,8 +7777,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="717a9aa80dde1b6f821f1ed175d03255" category="section-title">PCIe 或夾層卡</block>
   <block id="fbc33e94068f7206fe1f29c2cdd767fe" category="paragraph">夾層卡是一種擴充卡、設計用於插入主機板上的專用插槽。</block>
   <block id="e8bc49790ccdd5f485eb537cc7b3081d" category="summary">您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。</block>
-  <block id="66682602c55b1ce226e1af081a5ca0ad" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA A 系列系統。</block>
-  <block id="8d468b5fdd20b5347cabd9609c9b129c" category="doc">所有 SAN 陣列（ ASA ） A 系列系統</block>
   <block id="9260991b91fdf449af1f97b5d09a9db6" category="summary">NS224 和 SAS 機櫃是專為 NetApp AFF 和 FAS 系統所設計、可支援您不同的業務和應用程式需求。</block>
   <block id="0add3a06a3c8079fac5caa294ad21965" category="doc">AFF 和 FAS 系統的磁碟櫃</block>
   <block id="4de4b37af472f8b6bb5aa5b5732538f0" category="summary">維護 ASA C250 硬體</block>
@@ -8030,7 +8019,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="996a9b0ff7207d4230b2b6f5ca8de4e0" category="doc">開機恢復映像 - ASA A900</block>
   <block id="4da6be1bf421fc7ff067ee2e73b4b8b1" category="summary">提供從機架安裝和佈線到初始系統開機等系統典型安裝的圖形說明。</block>
   <block id="4848727d4d964e87d86f556430e12505" category="doc">快速步驟 - ASA A900</block>
-  <block id="2b57f3ec73724e7c40f99865a0e4cf8c" category="paragraph">本頁提供從機架安裝和纜線到初始系統開機的一般系統安裝說明。如果您熟悉NetApp系統的安裝、請使用本內容。</block>
   <block id="c247d6dca80720b1329aceeb17a50ccf" category="admonition">ASA A900 使用與 AFF A900 系統相同的安裝程序。</block>
   <block id="5be7906317aa19835143b0c0fe5bf8dd" category="doc">完成更換程序： ASA A900</block>
   <block id="ffd35f8c2bbd04d0d068c1f8df413804" category="doc">影片步驟 - ASA A900</block>
@@ -8072,7 +8060,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b975712b276c632e6e3ed246ddd046a0" category="doc">還原並驗證組態 - FAS2700</block>
   <block id="4309cf18d5068ccdb70e15aa1884eef3" category="doc">更換控制器模組總覽 - FAS2700</block>
   <block id="e7ac051b931486a46017746405bd99b0" category="summary">儲存系統文件可讓您安裝、設定及維護 AFF A 系列系統。</block>
-  <block id="3c711448b0b5556d4d595181348f6f28" category="doc">AFF A 系列系統</block>
   <block id="ba2c13e593755a2a8d5abfc7c287f37a" category="admonition">在您啟動系統之前、最佳實務做法是利用這個機會來驗證纜線是否正確、根集合體是否存在。</block>
   <block id="5700595ded11bf9b39ddcfb777b74f51" category="inline-link-macro">A-Z 文件庫</block>
   <block id="aed0b8ddc6ecca05cd2b9a0821d819f4" category="paragraph">客戶可在中使用已達到硬體支援終止的支援功能、以取得AFF 有關的支援資料FAS <block ref="5e4606a12c7b193a6ccb23ff349575d7" category="inline-link-macro-rx"></block>。已不再提供購買但仍支援的舊版 AFF 和 FAS 機型文件、請參閱 <block ref="209f06912983755a2175a782ffcfd7bc" category="inline-link-macro-rx"></block>。</block>
@@ -8158,7 +8145,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0b11c8d8ffff83e1165677b553555d82" category="doc">還原並驗證組態 - ASA A150</block>
   <block id="33856cd92829adce64e02fb2504a0206" category="doc">控制器更換總覽 - ASA A150</block>
   <block id="f391cb900d45daed2a3ef828c09a1546" category="doc">將故障零件退回 NetApp - ASA A150</block>
-  <block id="5d2a42167f3def56bac21d2ca43f7f59" category="doc">AFF C 系列系統</block>
   <block id="9a54ff3f438075f6ab130fd5ddae6cb8" category="paragraph">將控制器模組和任何其他元件安裝到替換機箱後、請啟動系統。</block>
   <block id="e7e663b99514b25c64e06ab89f12a96d" category="summary">完成硬體更換並開機至維護模式後、您將驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
   <block id="941c5c287ded8e20a0e0afb65a87e0f3" category="paragraph">完成硬體更換後、您將驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
@@ -8221,7 +8207,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1d1baa298bc554af91e5545294a0caac" category="list-text">將擴充卡重新安裝到更換的控制器模組中。</block>
   <block id="2027233f02e0735faa315111a8f49753" category="doc">維護 AFF A250 硬體</block>
   <block id="0fc502f108e5a4712b571fd0f4e5e877" category="paragraph">對於 AFF A250 儲存系統、您可以對下列元件執行維護程序。</block>
-  <block id="5e39feebf91abb30a9e524ad5bdc4ad7" category="sidebar">NetApp 的 All SAN Array （ ASA ）提供簡化且專屬的 SAN 體驗、可為貴組織的關鍵任務資料庫和其他 SAN 工作負載提供持續的資料可用度。</block>
   <block id="0814a528a6e09bdfa454da4598d03b6a" category="sidebar">ASA A150</block>
   <block id="58bdeb56c4a59fe27bedb60d1f1b8b90" category="sidebar">ASA A250</block>
   <block id="5efea76f9855288a2e4056189fbdd4f4" category="sidebar">ASA A400</block>
@@ -8238,9 +8223,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0d15b077865ff751c51f5dab813a9ea6" category="sidebar">DS460C 機櫃中的風扇</block>
   <block id="eaede3cca67a867c9e94c14b2f787088" category="sidebar">終止供應系統不再可供購買、但仍受到支援。</block>
   <block id="1e5c40b1bf2557793e21f12b8450b6d8" category="sidebar">儲存平台</block>
-  <block id="66c2e7aa58c59d739dda76e6d38b06a4" category="sidebar">AFF A 系列系統</block>
-  <block id="41b3869a7c52f072660b62d2724ca1c7" category="sidebar">AFF C 系列系統</block>
-  <block id="d95e9652d1e363a33891cc5827433386" category="sidebar">ASA A 系列系統</block>
   <block id="12f8aec1aacb26c22265d9eeef4f1a7a" category="sidebar">文件資源</block>
   <block id="7a604a486a6b57afdf446b5f26439040" category="sidebar">平台升級（大多數系統）</block>
   <block id="efd44736fee0b29831bc101f834f9425" category="sidebar">軟件ONTAP</block>
@@ -8478,14 +8460,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c4d97f649f8fd0bc0d2842c98374b325" category="summary">「安裝與設定」影片會示範如何安裝和連接新系統。</block>
   <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">影片步驟 - ASA A250</block>
   <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">影片步驟： FAS500f</block>
-  <block id="0fc2bce08e8e93df5954329e4439b224" category="paragraph">安裝程序會提供從機架安裝和纜線到初始系統開機的典型系統安裝圖示說明。如果您熟悉 NetApp 系統的安裝、請使用此程序。</block>
   <block id="0a5ad698c7446792fa1695e8ef9001ee" category="image-alt">DRW 2800 交換式叢集佈線 IEOPS 893</block>
-  <block id="9bf3d28b6f86b0747100312dce20ff66" category="paragraph">ASA A400 安裝程序提供圖形指示、說明從機架安裝和纜線連接到初始系統開機的典型系統安裝。如果您熟悉 NetApp 系統的安裝、請使用這些指示。</block>
-  <block id="0117839c8787354fc8b23cefed0984e8" category="inline-link-macro">ASA A400 安裝與設定說明</block>
-  <block id="dc752cf6900478701aac225362320867" category="paragraph">存取 <block ref="d646334093abec0f8f7152331712c776" category="inline-link-macro-rx"></block>。</block>
   <block id="646d7d5f93b4a6d7bbbc65acf5ac1077" category="doc">ONTAP 硬體系統文件</block>
-  <block id="0f99f9a5d3161caa81a9cf870bfb3c1a" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA C 系列系統。</block>
-  <block id="8d44a819ce1a0d042dc4afd48b415863" category="doc">所有 SAN 陣列（ ASA ） C 系列系統</block>
   <block id="92217d103cec461ace2aded92b4f42ab" category="doc">將故障零件退回 NetApp - ASA C400</block>
   <block id="f4b7b756855e1111bd19648537226e16" category="doc">維護 ASA C400 硬體</block>
   <block id="f85c225eac9932f77dacb6e6236f7ce2" category="paragraph">對於 ASA C400 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -8519,8 +8495,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f7655848002e8aaa751343ece73cc869" category="list-text"><block ref="f7655848002e8aaa751343ece73cc869" category="inline-link-macro-rx"></block></block>
   <block id="7bc99d09a7bcacf207b0881cb2ae0094" category="doc">關閉控制器 - ASA C400</block>
   <block id="8c5f08066225243efefc6d89726bbae1" category="doc">快速指南 - ASA C400</block>
-  <block id="d7bb31e777ffd65def4f500154e3d8f6" category="paragraph">安裝與設定程序提供從機架和纜線到初始系統開機的典型系統安裝圖示說明。如果您熟悉NetApp系統的安裝、請使用本指南。</block>
-  <block id="c87f658e413784f6727d69e5f3a504e9" category="paragraph">存取 <block ref="78504a496ba3e0d8a682fe929b4d61d9" category="inline-link-macro-rx"></block>。</block>
   <block id="d86ad8650b661d28cc2d4ab2c5649c4a" category="doc">將故障零件退回 NetApp - ASA C250</block>
   <block id="bcf1e5f5ec2f5fa0fb4df4081483cf5a" category="doc">維護 ASA C250 硬體</block>
   <block id="d856c63691d6118cb3531626f4c662b5" category="paragraph">對於 ASA C250 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -8555,11 +8529,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8cbcc8d109afe5c1880ad74857d5f039" category="list-text"><block ref="8cbcc8d109afe5c1880ad74857d5f039" category="inline-link-macro-rx"></block></block>
   <block id="117802f52fb0f0fc020147893a4130c5" category="doc">關閉控制器 - ASA C250</block>
   <block id="0bec81f6d2e70dbe308b882253ae1ad4" category="doc">快速步驟 - ASA C250</block>
-  <block id="3bb369b5461fced54dd1e1e11d3295e9" category="inline-link-macro">ASA A250 安裝與設定說明</block>
-  <block id="f445f8f3baee3e9d681e87f062865a42" category="list-text">英文： <block ref="94f0ecafae085a43bf1e5c5f7e70443c" category="inline-link-macro-rx"></block></block>
-  <block id="1c60d609b30b7ea4b8a9fe84f62f1d6b" category="inline-link">ASA A250 系統安裝與設定說明</block>
-  <block id="561edde01bf058a77040944512b4abc3" category="list-text">日文：<block ref="c8810e622f8e460212fed12e7e215db6" category="inline-link-rx"></block></block>
-  <block id="923cb9da2234b70162cf030969c9c64d" category="list-text">中文：<block ref="8e65669da6e18daec356d618e3ea94ac" category="inline-link-rx"></block></block>
   <block id="56e4846e0597740899e073a1ec45d163" category="doc">將故障零件退回 NetApp - ASA C800</block>
   <block id="1074d363c9086b22a355d4527d32b28c" category="doc">維護 ASA C800 硬體</block>
   <block id="f9ea5dff2f002c5b2f6eeeb84451e9f5" category="paragraph">對於 ASA C800 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -8623,7 +8592,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0a1b788d1099f65afcbd5d2617f3ed92" category="inline-link-macro">ASA C800 安裝與設定說明</block>
   <block id="27e19165ae3633b64ea0d1e5828b6473" category="paragraph">本指南提供從機架安裝和纜線安裝到初始系統啟動的系統典型安裝圖形指示。使用 <block ref="8e51076e81612ebc2edf3ef44ea3a905" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="2b9953635f286a5f88d8f368e0aa5465" category="sidebar">NetApp 的 ONTAP 硬體儲存系統以業界最先進的資料管理功能、提供領先業界的企業級橫向擴充全快閃或混合式儲存設備。請使用本網站上的文件來安裝、擴充、升級及維護您的系統。</block>
-  <block id="c3e7f9784130f33ec58f778a7d364a56" category="sidebar">ASA C 系列系統</block>
   <block id="ce75e61b074bab0c8e79b911972ddbf1" category="sidebar">機櫃和交換器</block>
   <block id="efb7d807a9229170619783564ab9a186" category="sidebar">ASA C250</block>
   <block id="8be061f2ffd8e5438d395c1e9844b4ff" category="sidebar">ASA C400</block>
@@ -8668,7 +8636,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="699b31ad01a325baded3de0b74220957" category="list-text"><block ref="56abd8a9e334744fb66750bee3a52178" category="inline-xref-macro-rx"></block></block>
   <block id="74e404c1f33731e0a999a4fc54ab33df" category="list-text"><block ref="893f29ac32188f4c8d29836a3587e127" category="inline-xref-macro-rx"></block></block>
   <block id="a192a372cc891c7f0839a86b1b42a3e2" category="list-text">前往 <block ref="39ef488856eb21b3aaabcded4bff7c5d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="2866d26481b1c521c672b3cb60930e47" category="paragraph">存取 <block ref="130b74705762cd99c7dfbbbc83d14934" category="inline-link-macro-rx"></block>。</block>
   <block id="7484b7e82acc4757b26226229997810e" category="summary">此程序提供安裝一般 NetApp 儲存系統的詳細逐步指示。</block>
   <block id="d9652a5ef2ee620cb0b558db1a0b0abd" category="paragraph">本程序提供安裝一般 NetApp 儲存系統的詳細逐步指示。如果您需要更詳細的安裝指示、請使用此程序。</block>
   <block id="f4c3757c8a20a3155f18506671b4a147" category="list-text">儲存系統的機架空間位於電信機架或系統機櫃中。</block>
@@ -8731,6 +8698,91 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a2cb8617cb158198389b743ac2b50756" category="inline-image-macro">寬度 = 5px</block>
   <block id="a28edc89fe8bb6fcbeda4a8c5427d04f" category="cell"><block ref="a28edc89fe8bb6fcbeda4a8c5427d04f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="df6fc52eeceab2497b885a798c538a6f" category="cell"><block ref="df6fc52eeceab2497b885a798c538a6f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3b6daa4c4df8e50b04c2ed3f923979e3" category="paragraph">存取 <block ref="1ede88745168187a218abc6fed7fade9" category="inline-link-macro-rx"></block>。</block>
   <block id="69389a2dcdac250c7be80b621e53e8b6" category="list-text">英文： <block ref="69854c1d21b3991324c802c8a6aabc4a" category="inline-link-macro-rx"></block></block>
+  <block id="3e9ec063809ed35fdf77c6c261c6e205" category="paragraph">本快速指南提供典型系統安裝的圖形指示、從機架安裝和纜線配置、到初始系統開機。如果您熟悉NetApp系統的安裝、請使用本內容。</block>
+  <block id="ef8131e94c652f303bc33244cff9df06" category="paragraph">使用連結： <block ref="1f35a49e1a9f3ad335b1add2e4080478" category="inline-link-macro-rx"></block></block>
+  <block id="34da8131e3c849a4fd58c995ca7c8514" category="paragraph">安裝與設定說明會提供典型系統安裝的圖形指示、從機架安裝和纜線、到初始系統開機。如果您熟悉NetApp系統的安裝、請使用本指南。</block>
+  <block id="51f075a453afd9249d5d4f6b0e8808bb" category="paragraph">使用連結： <block ref="130b74705762cd99c7dfbbbc83d14934" category="inline-link-macro-rx"></block>。</block>
+  <block id="5590b96dc59eb91eb51b7b3ea51d3fd8" category="image-alt">DRW C400 移除控制器 IEOPS 1216</block>
+  <block id="8a8905b8ba33c894ca2404f3ecc9601d" category="image-alt">DRW C400 開放式通風管 IEOPS 1215</block>
+  <block id="7f3e7059150c562376058a9c62805700" category="image-alt">DRW C400 取代開機媒體 IEOPS 1217</block>
+  <block id="bd017b464f7ccc6f05ea50c47d504548" category="paragraph"><block ref="bd017b464f7ccc6f05ea50c47d504548" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3964bc8d7e8eb5f4ac34dcc2de182743" category="paragraph"><block ref="3964bc8d7e8eb5f4ac34dcc2de182743" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2e983c0397ba596f716adfed1e1f9821" category="image-alt">DRW C400 空立管移除 IEOPS 1225</block>
+  <block id="a19c61933f90287162c63ef0a40aa0f0" category="paragraph">提升板閂鎖</block>
+  <block id="6d9502ea6880092a4496782c893e3da2" category="image-alt">DRW C400 PSU IEOPS 1237</block>
+  <block id="8fd39c2eb9c2c19fb66fabb13ca5407d" category="image-alt">DRW C400 NVDIMM 電池 IEOPS 1227</block>
+  <block id="5af2765bc8ec26a113a34fb076ee531e" category="image-alt">DRW C400 取代 PCIe 卡 IEOPS 1235</block>
+  <block id="f84e6736e0937abd8ec66865d23305e8" category="image-alt">DRW C400 安裝控制器 IEOPS 1226</block>
+  <block id="e46b8c6d3d358d972a1fe516250dcf5d" category="paragraph">將控制器滑入機箱</block>
+  <block id="ff0420a1b97d66a283e50773fa71f7ab" category="image-alt">DRW C400 RTC 電池 IEOPS 1239</block>
+  <block id="d1ad021bd9b79ffa9323df56f68e4b22" category="paragraph">本快速指南提供典型系統安裝的圖形指示、從機架安裝和纜線配置、到初始系統開機。如果您熟悉 NetApp 系統的安裝、請使用此程序。</block>
+  <block id="e39f500ad07a270219bd21d82b87b157" category="paragraph">使用 <block ref="1ede88745168187a218abc6fed7fade9" category="inline-link-macro-rx"></block>。</block>
+  <block id="e7f3c0051e6bc5cbd205f59b35151985" category="inline-image-macro">寬度 = 500px</block>
+  <block id="8f9d84ce0761e9cbbd0e69dc419011a6" category="paragraph"><block ref="8f9d84ce0761e9cbbd0e69dc419011a6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="80c14517a78070e49e0abac5d7f9ddbf" category="image-alt">DRW C400 取代夾層卡 IEOPS 1236</block>
+  <block id="a52f295a1e0115ba8c9f660ccbe7dca1" category="list-text"><block ref="d7c37365844b6be16568f626fb19383d" prefix="" category="inline-code"></block> 適用於 AFF A220 和 All Flash SAN Array</block>
+  <block id="2026d852cd27d948593bfc1a3574c322" category="admonition">ASA A250 和 ASA C250 使用與 AFF A250 系統相同的安裝程序。</block>
+  <block id="a58dccdc77e179b758abc1517c624f1b" category="paragraph">使用連結：</block>
+  <block id="443bff05e89ce584a82fad7537299324" category="paragraph"><block ref="443bff05e89ce584a82fad7537299324" category="inline-link-rx"></block></block>
+  <block id="a38d1917ff6a9b6732e44475a62db2b8" category="paragraph">ONTAP 9.13.1P1</block>
+  <block id="857b6606a6e99d0474fefdb3c0e531c8" category="paragraph"><block ref="857b6606a6e99d0474fefdb3c0e531c8" category="inline-link-rx"></block></block>
+  <block id="7fa6e084d3f97d622169e8725d4276fa" category="paragraph"><block ref="7fa6e084d3f97d622169e8725d4276fa" category="inline-link-rx"></block></block>
+  <block id="d5d146524ce4c0f712a824fc5d2837d6" category="paragraph">ONTAP 9.13.P11</block>
+  <block id="66053bf3b6e00f570e69483ee7bc5c17" category="paragraph"><block ref="66053bf3b6e00f570e69483ee7bc5c17" category="inline-link-rx"></block></block>
+  <block id="1f10563baa8714508ef486de79efa394" category="paragraph"><block ref="1f10563baa8714508ef486de79efa394" category="inline-link-rx"></block></block>
+  <block id="c7a0e0fa32b2f0176191d54506ef1eee" category="paragraph"><block ref="c7a0e0fa32b2f0176191d54506ef1eee" category="inline-link-rx"></block></block>
+  <block id="dab9b10aa7e18cec1fb9e8fc9a279a30" category="paragraph"><block ref="dab9b10aa7e18cec1fb9e8fc9a279a30" category="inline-link-rx"></block></block>
+  <block id="63e35e2035314eeb49e5fb2a362fac48" category="list-text"><block ref="63e35e2035314eeb49e5fb2a362fac48" category="inline-link-rx"></block></block>
+  <block id="974ba3a7db837634122109dea2a1af78" category="list-text"><block ref="974ba3a7db837634122109dea2a1af78" category="inline-link-rx"></block></block>
+  <block id="aa5ff252bfa84ef368a78cacfca48768" category="list-text"><block ref="aa5ff252bfa84ef368a78cacfca48768" category="inline-link-rx"></block></block>
+  <block id="f3975a91159eff9969dbd4feb2dec392" category="paragraph">ONTAP 9.12.1P1</block>
+  <block id="352458f65d5f61dec66b7456c51e33cc" category="paragraph">ONTAP 9.13.1 GA 與更新版本的 ONTAP 版本</block>
+  <block id="839c501c003baf01642160068d3b89ee" category="paragraph">ONTAP 9.13.1 RC1 不支援這些平台。</block>
+  <block id="e872f12d4700488219de2e018ee20b2d" category="paragraph"><block ref="e872f12d4700488219de2e018ee20b2d" category="inline-link-rx"></block></block>
+  <block id="cf3df5175c09d7c2f3e49bb6636031c3" category="paragraph">請勿嘗試使用不支援的 ONTAP 版本來安裝或開機 AFF A150 儲存系統。如果您嘗試使用不受支援的 ONTAP 版本來安裝或開機系統、 ONTAP 將允許安裝或開機（ ONTAP 不會封鎖嘗試）。結果是您的 AFF A150 儲存系統將成為 FAS2750 儲存系統。</block>
+  <block id="f57f1967d5e316f5c38c14ea29884a9a" category="paragraph">ONTAP 9.13.1 及更新版本的 ONTAP 版本</block>
+  <block id="ee64dfb34bd2ed3e08d63eaf38462ec7" category="paragraph">ONTAP 9.11.1P8</block>
+  <block id="fc0954dc49e631cf41dcb343d7e02893" category="paragraph">ONTAP 9.10.1P12</block>
+  <block id="ab70e91f66475e718e91ee8acb9fcc1b" category="paragraph"><block ref="ab70e91f66475e718e91ee8acb9fcc1b" category="inline-link-rx"></block></block>
+  <block id="b59cced8914a5ae4b2997c54c8cfeb8d" category="paragraph">零點9.11.1. ONTAP</block>
+  <block id="a27e0c0f139f11e76a1c1a879356f2a4" category="paragraph">ONTAP 9.10.1P3</block>
+  <block id="d240273d5fc28d500cfbff67832bbc47" category="inline-link">NVIDIA IP SN2100 交換器</block>
+  <block id="159b685852aefcffb124b1134e01e76a" category="paragraph"><block ref="159b685852aefcffb124b1134e01e76a" category="inline-link-rx"></block></block>
+  <block id="45746fefffb6562b94b07507c4948ddf" category="paragraph">使用 A900/FAS9500 平台的 MetroCluster IP 組態支援 NVIDIA IP SN2100 儲存交換器。</block>
+  <block id="594e1ec3daa27e540baa061f731f028f" category="paragraph">ONTAP 9.12.1</block>
+  <block id="95e8a38783c954905bd99170b4281795" category="inline-link">NVIDIA IP SN2100 交換器（ X190006 ）</block>
+  <block id="b57d1f8fef912c4c1418c6a69e397c72" category="paragraph"><block ref="b57d1f8fef912c4c1418c6a69e397c72" category="inline-link-rx"></block></block>
+  <block id="af974e8101c5d3881fb3f884e87bf3d0" category="paragraph">使用下列平台的 MetroCluster IP 組態支援 NVIDIA IP SN2100 儲存交換器：</block>
+  <block id="39d6f05db05d22d23d38fd12cf4ae17a" category="list-text">FAS500f/AFF A250</block>
+  <block id="5cb9f94b0998b68d5e93b9f6e02b0e55" category="list-text">FAS5PS/AFF A400</block>
+  <block id="36352a6adb1be8cb31e0076b03ed2125" category="list-text">FAS9000/AFF A700</block>
+  <block id="3a049258c7d4f65591690530a2d71491" category="paragraph">使用連結： <block ref="2e869cac122e3063f7b418f03cb3fa26" category="inline-link-macro-rx"></block></block>
+  <block id="c706be8edc4286046dcf6813e8dd8b18" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA A 系列系統。</block>
+  <block id="b93d997895dde5ccf0b4ce2c7ea76b38" category="doc">All Flash SAN Array （ ASA ） A 系列系統</block>
+  <block id="ca42e40f781122cb5a2d8f08cb50d450" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA C 系列系統。</block>
+  <block id="d6db6f02fef14cb7ca1df4e0aecf3992" category="doc">All Flash SAN Array （ ASA ） C 系列系統</block>
+  <block id="d2f3f8ad2ee3b259dc7e838d35c21ece" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝控制器</block>
+  <block id="1e328579e066bd52d81db5813109e763" category="paragraph">** ASA A 系列系統 **</block>
+  <block id="1ab5446725f4ee75e53cfa05dcd66d51" category="list-text"><block ref="1ab5446725f4ee75e53cfa05dcd66d51" category="inline-link-rx"></block></block>
+  <block id="5bdb8055b260f02eec19d823c3311a42" category="list-text"><block ref="5bdb8055b260f02eec19d823c3311a42" category="inline-link-rx"></block></block>
+  <block id="c68b919518dbc07c3ea6de93e748f2a8" category="list-text"><block ref="c68b919518dbc07c3ea6de93e748f2a8" category="inline-link-rx"></block></block>
+  <block id="77072c848f54ead938faeef11b9c0c7f" category="list-text"><block ref="77072c848f54ead938faeef11b9c0c7f" category="inline-link-rx"></block></block>
+  <block id="b5b696403ec1aea418f96649c95377f7" category="list-text"><block ref="b5b696403ec1aea418f96649c95377f7" category="inline-link-rx"></block></block>
+  <block id="41bfcd2f6014398965bef92c57ac1de1" category="paragraph">** ASA C 系列系統 **</block>
+  <block id="6505edfb90a2164175a72e5b1e50783a" category="list-text"><block ref="6505edfb90a2164175a72e5b1e50783a" category="inline-link-rx"></block></block>
+  <block id="503163f0da3a219668f1526d7486559b" category="list-text"><block ref="503163f0da3a219668f1526d7486559b" category="inline-link-rx"></block></block>
+  <block id="2127de740eb730a4618a8b073a6c6e02" category="list-text"><block ref="2127de740eb730a4618a8b073a6c6e02" category="inline-link-rx"></block></block>
+  <block id="6be417bc5c1ffdb0f8da869305e5d269" category="list-text">將纜線管理裝置連接至控制器背面（如圖所示）。</block>
+  <block id="d042cd94231d5a9490b5a46cb7fcfa64" category="image-alt">DRW C400 纜線匣 IEOPS 1208</block>
+  <block id="9e9d13bc60316acb706283fdc88fb378" category="image-alt">DRW C400 TNSC 網路纜線 IEOPS 1189</block>
+  <block id="2f683fe2c23373240ca86b4c46b781a6" category="image-alt">DRW C400 交換式網路纜線 IEOPS 1190</block>
+  <block id="6a8a52ad989777368fed119f17045cba" category="image-alt">DRW C400 ONE ns224 機櫃 IEOPS 1191</block>
+  <block id="e16e25a7d0ad77cbed9a0d70f5acfc3d" category="image-alt">DRW C400 兩個 ns224 機櫃 IEOPS 1192</block>
+  <block id="6bc7f0f1626fcd7c449742964090a276" category="paragraph">使用連結： <block ref="ce9d9eed382ae5ac1650ec89550136ac" category="inline-link-macro-rx"></block></block>
+  <block id="242c23abc6f706eeabc035c9160b09f4" category="sidebar">AFF A 系列系統</block>
+  <block id="ac6e4f5110aa7db5e1253a60d8d4f5a1" category="sidebar">AFF C 系列系統</block>
+  <block id="6d6d899023064067891b54808437adaa" category="sidebar">ASA A 系列系統</block>
+  <block id="be83f0f3d9e7cc4af05991e4976d2134" category="sidebar">ASA C 系列系統</block>
+  <block id="a46d5e85a24eb7f41987dc2fc02df2c1" category="sidebar">NetApp 的 All Flash SAN Array （ ASA ）提供簡化且專屬的 SAN 體驗、可為貴組織的關鍵任務資料庫和其他 SAN 工作負載提供持續的資料可用度。</block>
 </blocks>
