@@ -1,0 +1,83 @@
+---
+permalink: asa-c400/power-supply-replace.html 
+sidebar: sidebar 
+keywords: asa c400, asa, c400, replace, replacing, power, supply, psu, disconnect, target, psu, unplug, power, cable, removing, remove, replacement, source, replace a power supply 
+summary: 更換電源供應器（PSU）需要中斷目標PSU與電源的連接、拔下電源線、移除舊PSU並安裝替換PSU、然後將替換PSU重新連接至電源。 
+---
+= 更換電源設備 - ASA C400
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更換電源供應器（PSU）時、需要將目標PSU從電源拔下、拔下電源線、移除舊的PSU並安裝替換的PSU、然後將替換的PSU重新連接至電源。
+
+* 電源供應器備援且可熱交換。
+* 本程序是針對一次更換一個電源供應器而撰寫。
++
+
+NOTE: 最好是在從機箱中取出電源供應器的兩分鐘內進行更換。系統仍可繼續運作、但ONTAP 在更換電源供應器之前、無法將降級電源供應器的相關訊息傳送至主控台。
+
++
+
+IMPORTANT: 請勿混用不同效率額定值的PSU。永遠像這樣更換。
+
+
+
+您可以使用下列圖例搭配書面步驟來更換電源供應器。
+
+image::../media/drw_c400_psu_IEOPS-1237.svg[DRW C400 PSU IEOPS 1237]
+
+[cols="10,90"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.png["編號 1"]
+ a| 
+PSU 鎖定彈片
+
+
+
+ a| 
+image:../media/legend_icon_02.png["編號 2"]
+ a| 
+電源線固定器
+
+|===
+. 如果您尚未接地、請正確接地。
+. 根據主控台錯誤訊息或電源供應器上的LED、識別您要更換的電源供應器。
+. 拔下電源供應器：
++
+.. 打開電源線固定器、然後從電源供應器拔下電源線。
+.. 從電源拔下電源線。
+
+
+. 移除電源供應器：
++
+.. 旋轉CAM握把、以便將電源供應器從機箱中拉出。
+.. 按下藍色鎖定彈片、從機箱中釋放電源供應器。
+.. 用兩隻手將電源供應器從機箱中拉出、然後放在一旁。
+
+
+. 用兩隻手支撐電源供應器的邊緣、並將其與控制器模組的開口對齊、然後將電源供應器輕推入控制器模組、直到鎖定彈片卡入定位。
++
+電源供應器只能與內部連接器正確接合、並以一種方式鎖定到位。
+
++
+
+NOTE: 為避免損壞內部連接器、請勿在將電源供應器滑入系統時過度施力。
+
+. 旋轉CAM握把、使其與電源供應器齊平。
+. 重新連接電源供應器纜線：
++
+.. 將電源線重新連接至電源供應器和電源。
+.. 使用電源線固定器將電源線固定至電源供應器。
+
+
++
+電源恢復後、狀態LED應為綠色。
+
+. 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"^] 頁面以取得更多資訊。
+
