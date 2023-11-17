@@ -174,11 +174,11 @@ https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-inst
 NOTE: 您必須瞭解與系統重量相關的安全顧慮。
 
 +
-image::../media/drw_asac800_weight_caution.png[DRW asac800 重量注意事項]
+image::../media/drw_affa800_weight_caution.png[DRW AFFa800重量注意事項]
 
 . 連接纜線管理裝置（如圖所示）。
 +
-image::../media/drw_asac800_install_cable_mgmt.png[DRW asac800 安裝纜線管理]
+image::../media/drw_affc800_install_cable_mgmt.png[DRW affc800 安裝纜線管理]
 
 . 將擋板放在系統正面。
 
@@ -228,8 +228,7 @@ image:../media/oie_legend_icon_1_dp.png[""]
 連接HA互連連接埠：
 
 ** e0b至e0b
-** e1b 至 e1b
-image:../media/drw_asac800_ha_pair_cabling.png[""]
+** e1b至e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
 
 
 
@@ -240,8 +239,7 @@ image:../media/oie_legend_icon_2_lg.png[""]
 連接叢集互連連接埠：
 
 ** e0a至e0a
-** e1a 至 e1a
-image:../media/drw_asac800_tnsc_clust_cabling.png[""]
+** e1a至e1aimage:../media/drw_affa800_tnsc_clust_cabling.png[""]
 
 
 
@@ -249,7 +247,7 @@ image:../media/drw_asac800_tnsc_clust_cabling.png[""]
  a| 
 image:../media/oie_legend_icon_3_lp.png[""]
  a| 
-將管理連接埠連接至管理網路交換器    image:../media/drw_asac800_mgmt_cabling.png["顯示系統背面管理連接埠位置的圖例"]
+將管理連接埠連接至管理網路交換器    image:../media/drw_affa800_mgmt_cabling.png["顯示系統背面管理連接埠位置的圖例"]
 
 
 
@@ -303,8 +301,7 @@ image:../media/oie_legend_icon_1_dp.png[""]
 連接HA互連連接埠：
 
 ** e0b至e0b
-** e1b 至 e1b
-image:../media/drw_asac800_ha_pair_cabling.png[""]
+** e1b至e1bimage:../media/drw_affa800_ha_pair_cabling.png[""]
 
 
 
@@ -312,17 +309,14 @@ image:../media/drw_asac800_ha_pair_cabling.png[""]
  a| 
 image:../media/oie_legend_icon_2_lg.png[""]
  a| 
-將叢集互連連接埠連接至 100 GbE 叢集互連交換器。
-** e0a
-** e1a.
-image:../media/drw_asac800_switched_clust_cabling.png[""]
+將叢集互連連接埠連接至100 GbE叢集互連交換器。* e0a * e1a.image:../media/drw_affa800_switched_clust_cabling.png[""]
 
 
 
  a| 
 image:../media/oie_legend_icon_3_lp.png[""]
  a| 
-將管理連接埠連接至管理網路交換器    image:../media/drw_asac800_mgmt_cabling.png["顯示系統背面管理連接埠位置的圖例"]
+將管理連接埠連接至管理網路交換器    image:../media/drw_affa800_mgmt_cabling.png["顯示系統背面管理連接埠位置的圖例"]
 
 
 
@@ -373,7 +367,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
  a| 
 1.
  a| 
-將連接埠2a至2D連接至FC主機交換器。image:../media/drw_asac800_fc_host_cabling.png[""]
+將連接埠2a至2D連接至FC主機交換器。image:../media/drw_affa800_fc_host_cabling.png[""]
 
 
 
@@ -418,7 +412,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
  a| 
 1.
  a| 
-將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。image:../media/drw_asac800_10gbe_host_cabling.png[""]
+將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。image:../media/drw_affa800_10gbe_host_cabling.png[""]
 
 
 
@@ -465,14 +459,14 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto]
  a| 
 image:../media/oie_legend_icon_1_mb.png[""]
  a| 
-將控制器A纜線連接至機櫃：    image:../media/drw_asac800_1shelf_cabling_a.png[""]
+將控制器A纜線連接至機櫃： image:../media/drw_affa800_1shelf_cabling_a.png[""]
 
 
 
  a| 
 image:../media/oie_legend_icon_2_lo.png[""]
  a| 
-將控制器B纜線連接至機櫃：    image:../media/drw_asac800_1shelf_cabling_b.png[""]
+將控制器B纜線連接至機櫃： image:../media/drw_affa800_1shelf_cabling_b.png[""]
 
 |===
 若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
@@ -503,14 +497,14 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto]
  a| 
 image:../media/oie_legend_icon_1_mb.png[""]
  a| 
-將控制器A纜線連接至磁碟櫃：    image:../media/drw_asac800_2shelf_cabling_a.png[""]
+將控制器A纜線連接至磁碟櫃： image:../media/drw_affa800_2shelf_cabling_a.png[""]
 
 
 
  a| 
 image:../media/oie_legend_icon_2_lo.png[""]
  a| 
-將控制器B纜線連接至磁碟櫃：    image:../media/drw_asac800_2shelf_cabling_b.png[""]
+將控制器B纜線連接至磁碟櫃： image:../media/drw_affa800_2shelf_cabling_b.png[""]
 
 |===
 若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
@@ -579,11 +573,11 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 將主控台纜線連接至筆記型電腦或主控台、然後使用系統隨附的主控台纜線連接控制器上的主控台連接埠。
 +
-image::../media/drw_console_connect_asac800.png[DRW 主控台連線 asac800]
+image::../media/drw_console_connect_affa800.png[DRW主控台可連接AFFa800]
 
 .. 將筆記型電腦或主控台連接至管理子網路上的交換器。
 +
-image::../media/drw_client_mgmt_subnet_asac800.png[DRW 用戶端管理子網路 asac800]
+image::../media/drw_client_mgmt_subnet_affa800.png[DRW用戶端管理子網路AFFa800]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 
