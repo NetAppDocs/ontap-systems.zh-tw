@@ -42,12 +42,16 @@ entries:
     url: "/sas3/service-hot-swap-drive-ds460c.html"
   - title: DS460C機櫃中的磁碟機抽屜
     url: "/sas3/service-replace-drawer-ds460c.html"
-  - title: 磁碟機櫃 LED
-    url: "/sas3/service-monitor-leds.html"
+  - title: 磁碟機櫃
+    entries:
+    - title: 冷更換機櫃
+      url: "/sas3/cold-replace-shelf.html"
+    - title: 熱移除機櫃
+      url: "/sas3/hot-remove-shelf.html"
+    - title: 監控機櫃 LED
+      url: "/sas3/service-monitor-leds.html"
   - title: DS460C機櫃中的風扇模組
     url: "/sas3/service-replace-fan-ds460c.html"
-  - title: 熱移除機櫃
-    url: "/sas3/hot-remove-shelf.html"
   - title: IOM12/IOM12B模組
     url: "/sas3/service-hot-swap-iom.html"
   - title: 電源供應器
