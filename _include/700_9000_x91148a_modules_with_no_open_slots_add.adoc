@@ -1,4 +1,4 @@
-= 選項1：在沒有開放插槽的系統中、將X91148A模組新增為NIC模組
+= 
 :allow-uri-read: 
 
 
@@ -7,21 +7,18 @@
 * 您的系統必須執行ONTAP 的是更新版本的版本。
 * 若要在不中斷營運的情況下新增X91148A模組、您必須接管目標控制器、新增模組、然後還原目標控制器。
 * 如果您要將X91148A模組新增為儲存介面卡、則必須將模組安裝在插槽3和/或7中。
-* 如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想將這些插槽用作網路插槽、但不想新增NS224磁碟櫃、則必須針對每個連接埠、使用「儲存連接埠修改-node_node name_-port _port name_-mode network」命令來修改用於網路的插槽。如Hardware Universe 需X91148A模組可用於網路的其他插槽、請參閱《支援資料：
-+
-https://hwu.netapp.com["NetApp Hardware Universe"]
-
+* 如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想要將這些插槽作為網路插槽、而不想新增 NS224 機櫃、則必須修改用於網路的插槽 `storage port modify -node _node name_ -port _port name_ -mode network` 每個連接埠的命令。請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^] 適用於 X91148A 模組可用於網路連線的其他插槽。
 * 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
 
 
-
-
-== 選項1：在沒有開放插槽的系統中、將X91148A模組新增為NIC模組
-
+[role="tabbed-block"]
+====
+--
+.選項 1 ：新增 X91148A 模組作為 NIC 模組
 您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A NIC模組安裝到已完全安裝的系統中。
 
 .步驟
-. 如果您要將X91148A模組新增至包含NIC模組的插槽、且其連接埠數量與X91148A模組相同、則當控制器模組關閉時、LIF會自動移轉。如果要更換的NIC模組連接埠數量超過X91148A模組、您必須將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"] 如需使用System Manager永久移動生命期的相關資訊
+. 如果您要將X91148A模組新增至包含NIC模組的插槽、且其連接埠數量與X91148A模組相同、則當控制器模組關閉時、LIF會自動移轉。如果要更換的NIC模組連接埠數量超過X91148A模組、您必須將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^] 如需使用System Manager永久移動生命期的相關資訊
 . 關閉控制器A：
 +
 .. 停用自動恢復：「儲存容錯移轉修改節點本機-自動恢復錯誤」
@@ -51,6 +48,7 @@ I/O模組從機箱鬆脫、並從I/O插槽移出約1/2英吋。
 image::../media/drw_9000_remove_pcie_module.png[DRw 9000移除PCIe模組]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -78,24 +76,27 @@ I/O CAM栓鎖完全解除鎖定
 
 . 重複執行移除和安裝步驟、以更換控制器A的其他模組
 . 將模組或模組纜線連接至資料交換器。
-. 重新開機控制器A：「boot_ONTAP」
+. 從載入程式提示重新啟動控制器 A ： `bye`
++
+
+NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
+
 . 從合作夥伴節點移回節點：「torage容錯移轉恢復-ofnode_name'
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 如果您在插槽3或7中新增X91148A模組作為NIC模組、則對於每個連接埠、請使用「儲存連接埠修改-node_nic name_-port _port name_-mode network」命令。
 . 對控制器B重複這些步驟
 
 
-
-
-== 選項2：在沒有開放插槽的系統中、將X91148A模組新增為儲存模組
-
+--
+.選項 2 ：新增 X91148A 模組作為儲存模組
+--
 您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A儲存模組安裝到已完全安裝的系統中。
 
 * 此程序假設您將X91148A模組重新安裝至插槽3和/或7。
 
 
 .步驟
-. 如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"]。
+. 如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^]。
 . 關閉控制器A：
 +
 .. 停用自動恢復：「儲存容錯移轉修改節點本機-自動恢復錯誤」
@@ -125,6 +126,7 @@ I/O模組從機箱鬆脫、並從I/O插槽移出約1/2英吋。
 image::../media/drw_9000_remove_pcie_module.png[DRw 9000移除PCIe模組]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -151,9 +153,16 @@ I/O CAM栓鎖完全解除鎖定
 .. 如果您要安裝第二個X91148A模組進行儲存、請針對插槽7中的模組重複執行移除和安裝步驟。
 
 
-. 重新開機控制器A：「boot_ONTAP」
+. 從載入程式提示重新啟動控制器 A ： `bye`
++
+
+NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
+
 . 從合作夥伴節點恢復節點：「torage容錯移轉恢復-ofnode_target節點名稱_」
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 對控制器B重複這些步驟
-. 如所述、安裝並連接NS224磁碟櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"]。
+. 如所述、安裝並連接NS224磁碟櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增NS224磁碟機櫃"^]。
 
+
+--
+====

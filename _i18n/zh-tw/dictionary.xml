@@ -3785,10 +3785,7 @@
   <block id="0be5556a6966ecc67209514eafe7b6da" category="list-text">您的系統必須執行ONTAP 的是更新版本的版本。</block>
   <block id="03aa604366f3326c3de048957b091102" category="list-text">若要在不中斷營運的情況下新增X91148A模組、您必須接管目標控制器、移除目標插槽中的插槽遮罩、新增模組、然後歸還目標控制器。</block>
   <block id="ecc5d754663e73afe71158a26891b595" category="list-text">您的系統上必須有一個或多個可用的開放式插槽。</block>
-  <block id="6b76b0ee2a036bc88bbc96b40f376caf" category="list-text">如果有多個插槽可用、請根據Hardware Universe 插槽優先順序對照表安裝模組、以利在支援過程中安裝X91148A模組。</block>
   <block id="55df7d04425206e548f1aa14d2aaf2a6" category="list-text">如果您要將X91148A模組新增為儲存模組、則必須安裝模組插槽3和/或7。</block>
-  <block id="3accfd574dcbdb6df6fec9dfc0e19668" category="list-text">如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想將這些插槽用作網路插槽、但不想新增NS224磁碟櫃、您必須使用「儲存連接埠修改-node"節點節點名稱_-port _port name_-mode network」命令來修改用於網路的插槽。如Hardware Universe 需X91148A模組可用於網路的其他插槽、請參閱《支援資料：</block>
-  <block id="efca24805658af657991e2ddd7494fa4" category="section-title">選項1：在具有開放式插槽的系統中、將X91148A模組新增為NIC模組</block>
   <block id="cd616b24f9d5f5ea77c4c674cd676cdc" category="paragraph">若要將X91148A模組新增為具有開放式插槽的系統中的NIC模組、您必須依照特定的步驟順序進行。</block>
   <block id="5f4c3f45fa6e79d9063cff9d43c26d47" category="list-text">接管目標節點：「torage容錯移轉接管-ofnode_target節點名稱」</block>
   <block id="12b26e2ffe550420a4d147bc5340eb66" category="paragraph">主控台連線顯示、當接管完成時、節點會捨棄至載入器提示。</block>
@@ -3796,9 +3793,7 @@
   <block id="9d3054f476b061ad23a29f969e947a78" category="list-text">將X91148A模組對準插槽邊緣。</block>
   <block id="399dddb85dc6721e398d5a9d271b306a" category="list-text">將X91148A模組滑入插槽、直到有字母和編號的I/O CAM栓開始與I/O CAM銷接合為止。</block>
   <block id="8c8b079ce3132b9c32998cf148264275" category="list-text">將模組纜線連接至資料交換器。</block>
-  <block id="8bea63e772f248b4440fae6b7644a377" category="list-text">重新開機控制器A：「boot_ONTAP」</block>
   <block id="b8e74ae60e8625fb6ed112fc8da2a6b9" category="list-text">從合作夥伴節點恢復節點：「torage容錯移轉恢復-ofnode_target節點名稱_」</block>
-  <block id="0cc78f73ac736832a74effc12a1648b4" category="section-title">選項2：在具有開放式插槽的系統中、將X91148A模組新增為儲存模組</block>
   <block id="47ca5790bc9136484568813eaaef77c5" category="paragraph">若要在具有開放式插槽的系統中新增X91148A模組作為儲存模組、您必須依照特定步驟順序進行。</block>
   <block id="a995822127725d44db8de596bb8202d5" category="list-text">此程序假設插槽3和/或7已開啟。</block>
   <block id="074dd277824bef9c902209214f2118d7" category="list-text">接管目標節點：「torage容錯移轉接管-ofnode_node_name'</block>
@@ -3806,7 +3801,6 @@
   <block id="642f6e57cb2cd65a42c4b04259516876" category="list-text">如果您要安裝第二個X91148A模組進行儲存、請針對插槽7中的模組重複此步驟。</block>
   <block id="3f1037819d4403da837745fdf033eca9" category="list-text">從合作夥伴節點移回節點：「torage容錯移轉恢復-ofnode_name'</block>
   <block id="1dce66ce512581bef6c7afdf40ed4417" category="inline-link">熱新增- NS224磁碟櫃</block>
-  <block id="44323c30f0ec052e74f75c27940101f6" category="list-text">如所述、安裝並連接NS224磁碟櫃<block ref="1251716a2329bb7d9111adeba70973d6" category="inline-link-rx"></block>。</block>
   <block id="b78bf62e6c1dd80b4eab87a4a3039f94" category="summary">若要更換控制器模組硬體、您必須移除受損節點、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
   <block id="c1ed0cd23ea77c49b5611e5929537b3f" category="list-text">將CAM把手上的橘色按鈕向下推、直到解鎖為止。</block>
   <block id="5981fc794ea7f5a20dc2dbae0768981d" category="image-alt">DRw 9000移除PCM</block>
@@ -3859,18 +3853,13 @@
   <block id="6929ed15e0e67e0b58c79d2b8b2dcb7b" category="summary">您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A儲存模組安裝到已完全安裝的系統中。</block>
   <block id="70a9962b20f4b24e0fab99c887254705" category="list-text">若要在不中斷營運的情況下新增X91148A模組、您必須接管目標控制器、新增模組、然後還原目標控制器。</block>
   <block id="845de0988ca520e09f1bb7580cdd03f0" category="list-text">如果您要將X91148A模組新增為儲存介面卡、則必須將模組安裝在插槽3和/或7中。</block>
-  <block id="54f8a1122aab4b02cdf2c143f3a1f1f9" category="list-text">如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想將這些插槽用作網路插槽、但不想新增NS224磁碟櫃、則必須針對每個連接埠、使用「儲存連接埠修改-node_node name_-port _port name_-mode network」命令來修改用於網路的插槽。如Hardware Universe 需X91148A模組可用於網路的其他插槽、請參閱《支援資料：</block>
-  <block id="42a4a7959a1a29706390c2084add532d" category="section-title">選項1：在沒有開放插槽的系統中、將X91148A模組新增為NIC模組</block>
   <block id="ca18d102ed6aae999ffe4720f49391c8" category="paragraph">您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A NIC模組安裝到已完全安裝的系統中。</block>
-  <block id="57f2489f8872b94ea649e454360e1b69" category="list-text">如果您要將X91148A模組新增至包含NIC模組的插槽、且其連接埠數量與X91148A模組相同、則當控制器模組關閉時、LIF會自動移轉。如果要更換的NIC模組連接埠數量超過X91148A模組、您必須將受影響的LIF永久重新指派至不同的主連接埠。請參閱<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block> 如需使用System Manager永久移動生命期的相關資訊</block>
   <block id="2caeb99a93a4b178a27338b7a581ae15" category="image-alt">DRw 9000移除PCIe模組</block>
   <block id="0c342fbf585badba43a9e6edb76aed6f" category="list-text">將X91148A模組安裝至目標插槽：</block>
   <block id="e51a0e0ba467a86a8a56ce81fe5c02ac" category="list-text">將模組或模組纜線連接至資料交換器。</block>
   <block id="e47e2c044804e7ed8af436c465fbe130" category="list-text">如果您在插槽3或7中新增X91148A模組作為NIC模組、則對於每個連接埠、請使用「儲存連接埠修改-node_nic name_-port _port name_-mode network」命令。</block>
-  <block id="e85d85b01a7d653ecad94c8962d88a8c" category="section-title">選項2：在沒有開放插槽的系統中、將X91148A模組新增為儲存模組</block>
   <block id="ad4d148ac595350c78d9c2efd6b02556" category="paragraph">您必須在系統中移除一或多個現有的NIC或儲存模組、才能將一個或多個X91148A儲存模組安裝到已完全安裝的系統中。</block>
   <block id="1cb9b3efa917390e5f072324eb2dea38" category="list-text">此程序假設您將X91148A模組重新安裝至插槽3和/或7。</block>
-  <block id="46bbb084ae40b0369bddbcb13aac2bc4" category="list-text">如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述<block ref="85291e79b86f275650bb0fb4e90a39e9" category="inline-link-rx"></block>。</block>
   <block id="bee1f07b307186667ad005db1d21960d" category="list-text">如果您要安裝第二個X91148A模組進行儲存、請針對插槽7中的模組重複執行移除和安裝步驟。</block>
   <block id="ce0f07ee43e7bb986cfbe4574d968557" category="summary">當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。</block>
   <block id="e0eabfb37c8abbd2f6978d6e8eb8432b" category="paragraph">當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。如果AutoSupport 未啟用此功能、您可以透過模組正面的故障LED尋找故障快取模組。您也可以新增或更換1TB的X9170A核心傾印模組、如果您要將NS224磁碟機櫃安裝在AFF SVA700系統中、則需要此模組。</block>
@@ -6528,7 +6517,6 @@
   <block id="ba17e519b189ae10cd004d12dcc5e44d" category="paragraph"><block ref="751c01f8467f96987ff97e3a647e9973" category="inline-xref-macro-rx"></block></block>
   <block id="c1918f58421ab69768df267ff2412c99" category="paragraph"><block ref="0b030be2689b90a40f49c456c91f18ec" category="inline-xref-macro-rx"></block></block>
   <block id="b102c1828cf53d9df33f622c2208da4c" category="paragraph"><block ref="6ac3340c69a46ee235155eba76c461d6" category="inline-xref-macro-rx"></block></block>
-  <block id="68495e0db11cd8c3fcd536c93ecb150b" category="list-text">如所述、安裝並連接NS224磁碟櫃<block ref="8b1d41e5fd14f554e8b3490e0dfd47ae" category="inline-link-rx"></block>。</block>
   <block id="d034ad76bb5b20c4f0a1790c3665c3b2" category="paragraph"><block ref="d034ad76bb5b20c4f0a1790c3665c3b2" category="inline-link-rx"></block></block>
   <block id="7be2f40216e9676314a384c650694fed" category="admonition">請參閱<block ref="17d46f7a995ead494ec7b2eb9caffda8" category="inline-link-rx"></block> 以取得ONTAP 更多詳細資料。</block>
   <block id="1fad4d8ec174b60255a8febb2707e048" category="paragraph"><block ref="1fad4d8ec174b60255a8febb2707e048" category="inline-link-rx"></block></block>
@@ -8789,4 +8777,19 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d1d52714be599a75c470c1f0da3b1429" category="paragraph">請採取下列行動來維護 NS224 磁碟機櫃。</block>
   <block id="30d9c3c67c8634f0507aed48fc4a0fc8" category="sidebar">SAS3 機櫃總覽</block>
   <block id="e945a21b304f12950d5e1290c9cf7ddd" category="sidebar">NS224 機櫃總覽</block>
+  <block id="e9f65f625c8dd881230c3cdeafc6df26" category="list-text">如果有多個插槽可用、請根據中 X91148A 模組的插槽優先順序對照表來安裝模組<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="5aa66c58b75b8a0d61edc9384fcab2ba" category="list-text">如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想要將這些插槽作為網路插槽、而不想新增 NS224 機櫃、則必須修改用於網路的插槽<block ref="60578b38516b9ac929876fc9b1f357a0" prefix=" " category="inline-code"></block> 命令。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 適用於 X91148A 模組可用於網路連線的其他插槽。</block>
+  <block id="5d185ebab5cfeafdf5ebd9bbbb7dcc5b" category="paragraph-title">選項 1 ：新增 X91148A 模組作為 NIC 模組</block>
+  <block id="7cd5115a55fc2e4ae6c63151762a23cb" category="list-text">從載入程式提示重新啟動控制器 A ：<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block></block>
+  <block id="f5a6f380280a117aabe553559cf8531d" category="open-title">選項 2 ：新增 X91148A 模組作為儲存模組</block>
+  <block id="5f068763bfd4a47a7dc3834c65546ec9" category="list-text">重新啟動控制器 A ：</block>
+  <block id="f9b35dee9e3929b0b611c7ce18cf5603" category="list-text">如果更換模組的型號與舊模組不同、請重新啟動 BMC ：</block>
+  <block id="80977faeee33db44f9c1823cc9e6015d" category="list-text">在載入程式提示字元中、變更為進階權限模式：<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block></block>
+  <block id="53bdebcc4567a5d5fce995d39e71d6ed" category="list-text">如果替換模組與舊模組相同、請從載入器提示字元開機：<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block></block>
+  <block id="602d60f17affd81a37150c1525267788" category="list-text">如所述、安裝並連接NS224磁碟櫃<block ref="72e4379e9511740d20321904205a5f79" category="inline-link-rx"></block>。</block>
+  <block id="8cda93f56f29013f8b72c2c1f486d752" category="list-text">如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想要將這些插槽作為網路插槽、而不想新增 NS224 機櫃、則必須修改用於網路的插槽<block ref="60578b38516b9ac929876fc9b1f357a0" prefix=" " category="inline-code"></block> 每個連接埠的命令。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 適用於 X91148A 模組可用於網路連線的其他插槽。</block>
+  <block id="2c9095b91db2dc1432f4e86018a03639" category="list-text">如果您要將X91148A模組新增至包含NIC模組的插槽、且其連接埠數量與X91148A模組相同、則當控制器模組關閉時、LIF會自動移轉。如果要更換的NIC模組連接埠數量超過X91148A模組、您必須將受影響的LIF永久重新指派至不同的主連接埠。請參閱<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 如需使用System Manager永久移動生命期的相關資訊</block>
+  <block id="f0770a756304b05e8fc4f321e0babe43" category="open-title">選項 2 ：新增 X91148A 模組作為儲存模組</block>
+  <block id="9e41ec46d0af5ba1b01d8b3bde9b4f52" category="list-text">如果您要將X91148A模組新增為插槽3和/或7中的儲存模組、並將其新增至現有NIC模組的插槽中、請使用System Manager將LIF永久移轉至不同的主連接埠、如所述<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block>。</block>
+  <block id="c81f78014b983d44adbb454f838c2ae9" category="list-text">如所述、安裝並連接NS224磁碟櫃<block ref="a84558faf7b836b9db418a291f2462b5" category="inline-link-rx"></block>。</block>
 </blocks>
