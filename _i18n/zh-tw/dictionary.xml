@@ -5345,15 +5345,10 @@
   <block id="80257ad9b8e102e01f1a08f309c3eed0" category="doc">將開機映像傳輸到開機媒體AFF - ImageA800</block>
   <block id="055ce7154e7ea0261c8667a0d628ee36" category="image-alt">DRw a800封閉通風管</block>
   <block id="2bb6eb6e274e403747742b20b6b76f1a" category="doc">更換即時時鐘電池AFF - REVA800</block>
-  <block id="63b8891414a2163d2135a858ac9d8576" category="section-title">步驟3：移除PCIe擴充卡</block>
-  <block id="0e402ea83f9434d19cbb58c56a2db717" category="paragraph">更換控制器模組中的特定硬體元件時、您必須移除一或多個PCIe擴充卡。</block>
   <block id="92a1e44c6fd05cd1ba8ab2abf944200f" category="paragraph">擴充卡2（中間擴充卡）鎖定栓</block>
   <block id="f8875cd0262026ed3fb8588a40cc1ddf" category="list-text">在提升板2下找到RTC電池。</block>
   <block id="f384f058a9e18cd94b2018353655dfd8" category="image-alt">更換DRW a800的RTC電池</block>
   <block id="5970ecf5a77095b830e5e2d378b5f67c" category="paragraph">擴充卡2</block>
-  <block id="2ac4ac5667e74f34105113704c416ab4" category="section-title">步驟5：安裝PCIe擴充卡</block>
-  <block id="b7d2c15ba4d23a3704c6e0fa1cd09303" category="paragraph">更換受損控制器中的硬體元件後、請重新安裝PCIe擴充卡。</block>
-  <block id="5b6534f621851e68cd3102bd5d746226" category="section-title">步驟6：重新安裝控制器模組、並設定更換RTC電池後的時間/日期</block>
   <block id="0f07a7a739e2ae279d88f5e72a6960ff" category="summary">更換故障的風扇模組時、您必須將控制器模組從機箱中移除、並以新的風扇模組加以更換。</block>
   <block id="1e1eb097395dd5376d6e746987676ab9" category="doc">更換風扇AFF - REVA800</block>
   <block id="45c8293117e9731c1b2983abd691e338" category="paragraph">更換風扇模組時、您必須從機箱中移除控制器模組。</block>
@@ -8796,4 +8791,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="738ad40a42e139ed29cebf62dfc05a11" category="paragraph"><block ref="738ad40a42e139ed29cebf62dfc05a11" category="inline-link-macro-rx"></block></block>
   <block id="99ddf4d694dac695dfe3508f22a2764a" category="paragraph"><block ref="99ddf4d694dac695dfe3508f22a2764a" category="inline-link-macro-rx"></block></block>
   <block id="2cff6532f0a35fcdab297942157a970e" category="paragraph">瞭解如何透過初始系統開機、從機架和纜線安裝 C190 系統。使用 <block ref="861cf0a8c95d8b17a03c43773caa91e4" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
+  <block id="6b94783b3a4b318de01cab9d3ec81247" category="open-title">原始控制器</block>
+  <block id="2790027947ff94fbf03f63a1df957821" category="list-text">從控制器模組中移除 PCIe 提升板 2 （中間提升板）：</block>
+  <block id="f24c160de87a570618194aa5d8b9c9de" category="open-title">Ver2 控制器</block>
+  <block id="204438254dc5e5c9fbc69d974b0ec2ad" category="list-text">找到 DIMM 附近的 RTC 電池。</block>
+  <block id="71adfc8a5d09d16090dd4dd7ff8256f4" category="image-alt">DRW a800 RTC 電池更換 v2</block>
 </blocks>
