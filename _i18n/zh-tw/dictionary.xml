@@ -6390,8 +6390,6 @@
   <block id="7d60346fb854755b0fc4b8486f2e5769" category="section-title">步驟1：在ONTAP 更新版本中安裝_replace_控制器的授權</block>
   <block id="541648f14089765ba6e8c3198be32507" category="section-title">步驟2：更換開機媒體</block>
   <block id="6fdf23777adc5b39f52f2829b69833e5" category="inline-link-macro">將節點與叢集同步</block>
-  <block id="692418fcc9983296fd6b89b4072b99d2" category="inline-link-macro">將SED恢復為無保護模式</block>
-  <block id="aa641c641cc4509747c629778ceba1e6" category="list-text">如果您使用NetApp儲存加密、則必須依照中的指示重設MSID <block ref="deeaf76d485e47e462d03c774bc2ca5e" category="inline-link-macro-rx"></block>。</block>
   <block id="dca9d9d34ff973dbf261373e223aa9e4" category="list-text">如果您有SAN系統、則必須檢查事件訊息 <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>（用於控制器SCSI刀鋒伺服器）。。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block> 命令會顯示節點名稱、該節點的仲裁狀態、該節點的可用度狀態、以及該節點的作業狀態。</block>
   <block id="03733c422db2a03d86659ae5a1e923dc" category="paragraph">下列AutoSupport 資訊不顯示自動建立案例兩小時：<block ref="387708b955ccf034fcf9197ad51ba879" prefix=" " category="inline-code"></block></block>
   <block id="f1f0ba04096d04407de2d15a11510ac1" category="paragraph">系統提示或密碼提示</block>
@@ -7141,7 +7139,6 @@
   <block id="eba4465f65ac7360936f8f238b09999c" category="list-text">額外的網路纜線、可將您的系統連接至網路交換器、筆記型電腦或主控台、並使用網頁瀏覽器。</block>
   <block id="c7e4a9edbb9ec3bb0052efd3332763a3" category="section-title">步驟 3 ：將控制器連接至叢集</block>
   <block id="089103029c56ad66034dfe6bd70cfdcb" category="paragraph">使用動畫或表格步驟完成控制器與交換器之間的纜線。在每個控制器上執行步驟。</block>
-  <block id="38e134ad6d648c53626268f8b6a82510" category="list-text">使用 25GbE 叢集互連纜線、將叢集互連連接埠 e0c 連接至 e0c 、並將 e0d 連接至 e0<block ref="6b6a40b68f5814cad1750bfff7e3b927" category="inline-image-macro-rx" type="image"></block>：</block>
   <block id="5d8d8fe980b572286e75db6ff18d3cbc" category="paragraph"><block ref="5d8d8fe980b572286e75db6ff18d3cbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="84e68180cd83b83ca12149fed857f1ac" category="list-text">將叢集互連連接埠 e0c 和 e0d 連接至 25 GbE 叢集互連交換器。</block>
   <block id="ee3f9d0ec20204c7d48b52d859e31c4d" category="paragraph"><block ref="ee3f9d0ec20204c7d48b52d859e31c4d" category="inline-image-macro-rx" type="image"></block></block>
@@ -7751,7 +7748,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fbc33e94068f7206fe1f29c2cdd767fe" category="paragraph">夾層卡是一種擴充卡、設計用於插入主機板上的專用插槽。</block>
   <block id="e8bc49790ccdd5f485eb537cc7b3081d" category="summary">您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。</block>
   <block id="9260991b91fdf449af1f97b5d09a9db6" category="summary">NS224 和 SAS 機櫃是專為 NetApp AFF 和 FAS 系統所設計、可支援您不同的業務和應用程式需求。</block>
-  <block id="0add3a06a3c8079fac5caa294ad21965" category="doc">AFF 和 FAS 系統的磁碟櫃</block>
   <block id="4de4b37af472f8b6bb5aa5b5732538f0" category="summary">維護 ASA C250 硬體</block>
   <block id="80b77aae28ed3360a8b704371f5188e1" category="doc">維護 AFF C250 硬體</block>
   <block id="ab253cf54adf6fdbb65cbb0ed70cb2cf" category="paragraph">對於 AFF C250 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -8792,4 +8788,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4169d3d04b863ba6044225d783c8511c" category="paragraph">使用 <block ref="760faf2edba83a3b2dfe198c423cd5ec" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="230fb764922530d0d527b96fb40d15f8" category="paragraph"><block ref="230fb764922530d0d527b96fb40d15f8" category="inline-link-macro-rx"></block></block>
   <block id="9e4682a37df843156979b712e93e942d" category="paragraph"><block ref="9e4682a37df843156979b712e93e942d" category="inline-link-macro-rx"></block></block>
+  <block id="370d65afeef540ea21d331a7da8675ec" category="list-text">使用 25GbE 叢集互連纜線、將叢集互連連接埠 e0c 連接至 e0c 、並將 e0d 連接至 e0d 。</block>
+  <block id="45c0f160ca0efa09fc0b198986db5e31" category="image-alt">DRW AFFa250 交換式 clust 纜線</block>
+  <block id="5407ed45e4a9085a4f72a4611d202d7c" category="sidebar">NetApp 的 NS224 機櫃和 SAS 機櫃有助於提供數位轉型所需的效能、恢復能力和彈性。</block>
+  <block id="432ba2d883505b11fa27f305c25abca9" category="sidebar">ONTAP 硬體系統的磁碟櫃</block>
 </blocks>

@@ -191,7 +191,10 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .動畫-連接雙節點無交換器叢集
 video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto]
 .步驟
-. 使用 25GbE 叢集互連纜線、將叢集互連連接埠 e0c 連接至 e0c 、並將 e0d 連接至 e0image:../media/oie_cable_sfp_gbe_copper.png[""]：
+. 使用 25GbE 叢集互連纜線、將叢集互連連接埠 e0c 連接至 e0c 、並將 e0d 連接至 e0d 。
++
+image:../media/oie_cable_sfp_gbe_copper.png[""]：
+
 +
 image:../media/drw_affa250_tnsc_cabling.png[""]
 
@@ -229,7 +232,7 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto]
 .步驟
 . 將叢集互連連接埠 e0c 和 e0d 連接至 25 GbE 叢集互連交換器。
 +
-image:../media/drw_affa250_switched_clust_cabling.png[""]
+image::../media/drw_affa250_switched_clust_cabling.png[DRW AFFa250 交換式 clust 纜線]
 
 . 使用RJ45纜線將扳手連接埠連接至管理網路交換器。
 +
