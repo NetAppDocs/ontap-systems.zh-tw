@@ -80,7 +80,6 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 .關於這項工作
-* 如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["使用CLI進行NetApp加密總覽"^]。
 * 您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。
 
 

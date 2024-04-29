@@ -44,26 +44,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
-== 步驟2：還原儲存設備和Volume Encryption功能
-
-對於先前設定為使用儲存設備或Volume Encryption的儲存系統、您必須執行其他步驟以提供不中斷加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
-
-
-NOTE: 更換DIMM時不需要執行此步驟。
-
-.步驟
-. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
-+
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
-
-
-. 重設SED MSID
-
-
-
-
-== 步驟3：驗證LIF並登錄序號
+== 步驟2：驗證LIF並登錄序號
 
 在將_replacement節點送回服務之前、您應該先確認該生命點是否位於其主連接埠上、如果AutoSupport 啟用了「BIOS」、請登錄_replacement節點的序號、然後重設自動恢復。
 
@@ -84,6 +65,6 @@ NOTE: 更換DIMM時不需要執行此步驟。
 
 
 
-== 步驟4：將故障零件歸還給NetApp
+== 步驟3：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

@@ -79,7 +79,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 +
 .. 將控制器移至載入器提示字元。
 .. 使用「prontenv」命令檢查環境變數設定。
-.. 如果環境變數未如預期般設定、請使用「show enovenforation_variable_name changed_value」命令加以修改。
+.. 如果環境變數未如預期設定、請使用「setenv _eniation_variable_name__changed_value_」命令加以修改。
 .. 使用「Saveenv」命令儲存變更。
 
 
@@ -191,7 +191,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 +
 .. 將控制器移至載入器提示字元。
 .. 使用「prontenv」命令檢查環境變數設定。
-.. 如果環境變數未如預期般設定、請使用「show enovenforation_variable_name changed_value」命令加以修改。
+.. 如果環境變數未如預期設定、請使用進行修改 `set _envenvironment_variable_name_ _changed_value_` 命令。
 .. 使用「Saveenv」命令儲存變更。
 
 

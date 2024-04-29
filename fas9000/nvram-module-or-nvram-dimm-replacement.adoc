@@ -99,7 +99,6 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 .關於這項工作
-* 如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html["使用CLI進行NetApp加密總覽"^]。
 * 您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。
 
 
@@ -636,25 +635,6 @@ dr-group-id            cluster node           configuration-state
 ====
 
 
-== 步驟6：還原儲存設備和Volume Encryption功能
-
-對於先前設定為使用儲存設備或Volume Encryption的儲存系統、您必須執行其他步驟以提供不中斷加密功能。您可以在未啟用「儲存設備」或「Volume Encryption」的儲存系統上略過此工作。
-
-
-NOTE: 更換DIMM時不需要執行此步驟。
-
-.步驟
-. 視您使用的是內建或外部金鑰管理而定、請使用下列其中一個程序：
-+
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html["還原內建金鑰管理加密金鑰"^]
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html["還原外部金鑰管理加密金鑰"^]
-
-
-. 重設SED MSID
-
-
-
-
-== 步驟7：將故障零件歸還給NetApp
+== 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

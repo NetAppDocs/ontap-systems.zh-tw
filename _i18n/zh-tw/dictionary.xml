@@ -431,7 +431,6 @@
   <block id="6d21dbcd6d30fc2426dd0b077d719da5" category="summary">在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。</block>
   <block id="692f4928d5204c6348c9d46866e44703" category="doc">檢查內建的加密金鑰AFF - VA200</block>
   <block id="d1614290531967ae3b3623d71b4ed961" category="paragraph">在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。</block>
-  <block id="518d2076bf387a28038f7558530bb987" category="inline-link-macro">使用CLI進行NetApp加密總覽</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="6d4079af860d745f44d13bfe9834115d" category="list-text">檢查受損控制器的狀態：</block>
   <block id="6f0786e478994e04512bb55e945ab79c" category="list-text">如果受損的控制器處於登入提示狀態、請以「admin」身分登入。</block>
@@ -1935,7 +1934,6 @@
   <block id="159dd817f86d57640ec3082399a576f9" category="list-text">如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。</block>
   <block id="686631a3f808d481cbff656f883e6657" category="section-title">選項3：控制器位於雙節點MetroCluster 的不二</block>
   <block id="0c2cb7a10e04116783dbfedc59540a50" category="paragraph">若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。</block>
-  <block id="063a6c27f42a062a6ece0163f4444fc3" category="list-text">如果您使用NetApp儲存加密、則必須依照的「將FIPS磁碟機或SED恢復為未受保護模式」一節中的指示、重設MSID <block ref="bb6c6af86c0c41920e9753bb15981800" category="inline-link-macro-rx"></block>。</block>
   <block id="230cc8b63d72a2bf47b7c87ead7ab0b8" category="list-text">您必須在本程序結束時保持電源供應器開啟、才能為健全的控制器提供電力。</block>
   <block id="eec0e5f9d553c7b70402acd4568f1ec7" category="list-text">檢查MetroCluster 「不正常」狀態、判斷受損的控制器是否已自動切換至「正常」控制器MetroCluster ：「不正常」</block>
   <block id="a4d3e0e884bda08238ebcf294cd22173" category="list-text">視是否發生自動切換而定、請根據下表繼續進行：</block>
@@ -2533,7 +2531,6 @@
   <block id="c08617576b470c531fa6946e0863ed35" category="paragraph">您可以在看到下列訊息後繼續：</block>
   <block id="35e25520eae4191769a5f17749607c22" category="list-text">將受損的控制器移至載入程式提示字元。</block>
   <block id="2ddd54a208744ec5e2ccb1b7ac83aa05" category="list-text">使用printenv命令檢查環境變數設定。</block>
-  <block id="edb5a1f64879356169f323de78b718be" category="list-text">如果環境變數未如預期設定、請使用setenovenforsion_variable_name changed_value命令加以修改。</block>
   <block id="eeacd9b31ab0c2f60f1d13e5632f7f13" category="list-text">使用Saveenv命令儲存變更。</block>
   <block id="d2f83f17d591f35e8d5d48e486cff011" category="inline-xref-macro">OKM、NSE和NVE的開機後媒體更換步驟</block>
   <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">如果您的系統已設定內建Keymanager、NSE或NVE、請前往 <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
@@ -3834,7 +3831,6 @@
   <block id="0a777e4b645d66ac575356b85c16ed55" category="paragraph">如果已設定自動開機、節點將會重新開機。</block>
   <block id="4cc5d765a3b2155ab803f6ce50c11747" category="paragraph">從「儲存容錯移轉show」命令輸出的內容、不應包含「系統ID已在合作夥伴上變更」訊息。</block>
   <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">選項2：重新指派ID MetroCluster （資訊組態）</block>
-  <block id="3bf4c288b20a882f54f61cd8cb0618a7" category="section-title">步驟6：還原儲存設備和Volume Encryption功能</block>
   <block id="f2ff55accbe6a2f86bcb85e25825d8fb" category="doc">完成更換程序AFF - FASA700和FAS9000</block>
   <block id="fd0db0c0a8315e064601a11ecc8c2b49" category="doc">更換即時時鐘電池</block>
   <block id="78d6212d8f30faeb1f63caab05c699e0" category="image-alt">DRW 9000移除RTC電池</block>
@@ -4217,7 +4213,6 @@
   <block id="02b2ef9566494498645accc0aa3742ef" category="doc">更換開機媒體- FAS2600</block>
   <block id="586b0b2395e2a0e300f3fa9bf559633c" category="doc">更換SSD磁碟機或HDD磁碟機- FAS2600</block>
   <block id="d2efa0c31f219abbc043377bfd4ffa3b" category="doc">開機恢復映像- FAS2600</block>
-  <block id="30748b1b116d9335e2b8cdb6ec3038d0" category="list-text">如果環境變數未如預期般設定、請使用「show enovenforation_variable_name changed_value」命令加以修改。</block>
   <block id="c3a9fb901b6e82e19cf5d6be414a5461" category="doc">關閉受損的控制器- FAS2600</block>
   <block id="120d4b04cada3ad4213234c2437fb645" category="doc">檢查內建加密金鑰- FAS2600</block>
   <block id="048623d528706e72f17139851220f65a" category="doc">開機媒體更換總覽- FAS2600</block>
@@ -6441,12 +6436,6 @@
   <block id="1422875ceb77c2edc7c07474b11b3c6f" category="list-text">打開控制器模組通風管：</block>
   <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">按下模組握把上的Terra cotta釋放按鈕、然後將DCPM模組滑出機箱。</block>
   <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">還原並驗證組態- AFF VA900</block>
-  <block id="2c35abfceaabbce6e9a2f24491d249c0" category="open-title">選項1：使用Onboard Key Manager</block>
-  <block id="86b112e5aa1ced4fbffb09dded147e9f" category="list-text">將節點開機至開機功能表。</block>
-  <block id="e07ae2ef2fbd56f8a3ced5a2ab602ded" category="list-text">選取選項10、<block ref="cdca34dc3d7defb03d741a65d78de01c" prefix=" " category="inline-code"></block>。</block>
-  <block id="0a2404583aab34668c1c8004bddabbaa" category="list-text">選取選項1、<block ref="e6922a1788401c5ef431db829a2c387b" prefix=" " category="inline-code"></block></block>
-  <block id="c566d4828cd295258aa8097a90880602" category="open-title">選項2：使用外部管理程式</block>
-  <block id="0a05a9975c9259ea331a85366e41d3ce" category="list-text">選取選項11、<block ref="0dd518498ab98fe1fd543910856e6153" prefix=" " category="inline-code"></block>。</block>
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用維護模式中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">裝回機箱時、您必須卸下機箱正面的六個風扇模組。</block>
   <block id="e9e9a6de5e421dfe8a5ccc0b156ecc94" category="admonition">如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽的左側）、然後尋找插卡、再依產品編號在中尋找插卡<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> 命令或系統壓縮清單上的。</block>
@@ -6462,17 +6451,6 @@
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">您可以將I/O模組新增至系統的空模組插槽。</block>
   <block id="741ade379895992f2a574e8e60de1571" category="section-title">步驟2：新增I/O模組</block>
   <block id="31ac56c0f673cbef254563f6a8a32626" category="paragraph">如果系統已完全安裝、您可以移除現有的I/O模組、並以不同的I/O模組來更換I/O模組、以變更I/O插槽中的I/O模組。</block>
-  <block id="74458273e576f4b2da617a6e0e209a5f" category="paragraph">如果您已啟用儲存加密、請使用適當的程序。</block>
-  <block id="23620cc2fa7491aefb480afbef75dac2" category="list-text">輸入您從客戶處取得的機載金鑰管理程式密碼。</block>
-  <block id="15247f97704eb964c60d179c321c1370" category="list-text">出現提示時、請貼上輸出的備份金鑰資料<block ref="6b6f6c1a8bc1fede794cda92ed140953" prefix=" " category="inline-code"></block> 或<block ref="32ba7af89b7557f6e3e6d80a922080ce" prefix=" " category="inline-code"></block> 命令。</block>
-  <block id="8726b2ef66dc0e734b269a3191597e11" category="paragraph">－－－－－－－－－－－－ 開始備份</block>
-  <block id="328f6eaec3741c1d0f9558d6c40c1da4" category="paragraph">TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAA1AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAMAZAMAZAAAAAA。。。H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</block>
-  <block id="1e4d7cab6ce42bcab6973efa42fc0b2c" category="list-text">執行安全金鑰管理程式內建同步：</block>
-  <block id="377fca3965b001b9bcc8843e1b287fe7" category="list-text">如果先前已設定MSID、並在本程序開始時擷取、請重設MSID：</block>
-  <block id="a967d40ef247a202e5f1ce7a9626a0ca" category="list-text">使用將資料驗證金鑰指派給FIPS磁碟機或SED<block ref="8fc59e93e98503b6d1b1230269b06192" prefix=" " category="inline-code"></block> 命令。</block>
-  <block id="551eb7af7cdc6ae3394d506bd47a783d" category="admonition">您可以使用<block ref="eb3cf23f0c9c60ca759ddca34bbfbf56" prefix=" " category="inline-code"></block> 檢視金鑰ID的命令。</block>
-  <block id="6f44d6d36af2c0294f4e53a2e6947b94" category="list-text">確認已使用指派驗證金鑰<block ref="46353f4e0bb2c136591c37c9eeedcf40" prefix=" " category="inline-code"></block> 命令。</block>
-  <block id="960bc5d7d199e0e148cd3dd0e517250d" category="list-text">在提示下輸入管理憑證資訊。</block>
   <block id="037baf09c7ddcc7c38f81e7dbe35fa87" category="paragraph">您可以將I/O模組新增至系統、方法是將新的I/O節點新增至具有空插槽的系統、或是將I/O模組更換為已完全安裝的系統中的新I/O模組。</block>
   <block id="55f1569cdcfb82612fcf293f23db4f6f" category="list-text">請檢查<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。</block>
   <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">如果有多個插槽可用、請檢查中的插槽優先順序<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 並使用適用於您I/O模組的最佳工具。</block>
@@ -6496,9 +6474,6 @@
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400更換NVDIMM DIMM IOPS 1009</block>
   <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900纜線主控台交換器控制器IOPS 953</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">如果已啟用儲存加密、則必須還原功能。</block>
-  <block id="718ea359d9cc2d2bff619909d16ec537" category="admonition">控制器會返回開機功能表。</block>
-  <block id="a9cbabd3f42c5ad7f4796dbf5e384b08" category="list-text">將控制器開機至開機功能表。</block>
-  <block id="1e37c9a4ea44b0a302091f02c74564c1" category="admonition">管理憑證資訊完成後、控制器會返回開機功能表。</block>
   <block id="34dbbed571bcfe30f4b9897172116b74" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block></block>
   <block id="90d49fcc83418b049803a1b2081f3c6b" category="list-text">若要完成系統設定、請參閱 <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block></block>
   <block id="14fa1a86493af188cbb574d402b31f1b" category="list-text">返回 <block ref="c67cdb63ab5b46180d9910dcb0f03689" category="inline-xref-macro-rx"></block> 在此程序中重新檢查NVMEM LED。</block>
@@ -7339,7 +7314,6 @@
   <block id="ab18556462377223339c421c568ab231" category="paragraph"><block ref="ab18556462377223339c421c568ab231" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b6e58fb741960f0300c7783438276a5" category="paragraph">開機媒體鎖定標籤</block>
   <block id="fa8b2d8b91c1c89065d3652288dbddc1" category="list-text">使用下圖或控制器模組上的 FRU 對應圖移除夾層卡：</block>
-  <block id="c684d6ba7251084d87edf6423b1ebd24" category="list-text">從控制器模組中直接滑出夾層卡擋板、將其卸下。</block>
   <block id="d62aede9e33b9cbeca49d6fcc6de78c2" category="list-text">鬆開夾層卡上的指旋螺絲。</block>
   <block id="db1a320c26dfcefe739a659ae4724890" category="admonition">您可以用手指或螺絲起子鬆開指旋螺絲。如果您使用手指、您可能需要向上旋轉 NV 電池、以便在其旁邊的指旋螺絲上以更好的方式購買。</block>
   <block id="1a64138e0b66965c80b909462ba9543f" category="list-text">垂直向上提起夾層卡。</block>
@@ -7350,7 +7324,6 @@
   <block id="d29b17eb668c51029bfa0626ffe7500f" category="list-text">重新安裝夾層卡：</block>
   <block id="834f618686de8125c24ea965ba281757" category="list-text">將主機板上的插槽與夾層卡上的插槽對齊、然後將插卡輕輕插入插槽。</block>
   <block id="361016e8b59dfa6e2e2f28d3e38835e1" category="list-text">鎖緊夾層卡上的三個指旋螺絲。</block>
-  <block id="31276a19caaffd6d8a485978edefcae8" category="list-text">重新安裝夾層擋板。</block>
   <block id="eef513f5198b93971d313eb80e4da6fb" category="list-text">重新安裝控制器模組護蓋、並將其鎖定到位。</block>
   <block id="1aecc8a01c9fc90b26bed0f39865bc18" category="paragraph">使用安裝映像的 USB 快閃磁碟機、在替換開機媒體上安裝系統映像。在此過程中、您必須還原 var 檔案系統。</block>
   <block id="4c10168d5e2592171ac54097149079b0" category="list-text">您必須擁有格式化為 MBL/FAT32 的 USB 快閃磁碟機、且容量至少為 4GB 。</block>
@@ -7373,7 +7346,6 @@
   <block id="cf6800eb49ae54456676c105c115a1fa" category="section-title">步驟 3 ：更換夾層卡</block>
   <block id="6918dd1d1ecfa7a18a047a925c4f30ee" category="paragraph">更換夾層卡。</block>
   <block id="808ce573561d6717a3c0cc395df3a504" category="image-alt">DRW 2850 取代 HIC IEOPS 700</block>
-  <block id="b98f82c68dbd20395815986320582ec2" category="paragraph">提升板擋板</block>
   <block id="83b54898f0ac014b1e217ee413643205" category="paragraph">PCIe 夾層卡</block>
   <block id="64016c063cf6b470fdcccc5a97f852b1" category="list-text">鬆開夾層卡上的指旋螺絲、然後垂直提起夾層卡。</block>
   <block id="4bca5310f65e82fe5c4eec2c7a1c6c17" category="list-text">將替換夾層卡插頭上的插槽與主機板上的插槽對齊、然後將插卡輕輕平齊插入插槽。</block>
@@ -7383,8 +7355,6 @@
   <block id="d32890221c5529cefc96a956073d9844" category="list-text">使用還原自動恢復<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="e2306cfc3634594ca9e5483d541a9eb2" category="doc">完整系統還原： FAS2800</block>
   <block id="954e375575b9fbd9370aa08dd503d453" category="paragraph">還原 NetApp 儲存加密或磁碟區加密組態（如有必要）、安裝更換控制器的授權、並將故障零件退回 NetApp 、將系統還原至完整運作、如套件隨附的 RMA 指示所述。</block>
-  <block id="ff3a1a304de699b15bd2a5a39798c5a8" category="section-title">步驟2：還原儲存設備和Volume Encryption功能</block>
-  <block id="332c846459ecae57b885b30c41482384" category="section-title">步驟3：驗證LIF並登錄序號</block>
   <block id="458c640b6a96cac4ef20be523ebb7f89" category="doc">更換 NVMEM 電池 - FAS2800</block>
   <block id="26e700524d9a1c0b6c28c8ad2d207679" category="section-title">步驟 2 ：移除並開啟控制器模組</block>
   <block id="2a0805526339647b20ef0fc7df37dd6f" category="paragraph">卸下並打開控制器模組。</block>
@@ -7420,8 +7390,6 @@
   <block id="2549b95d18de43d1c8602f07ed634585" category="list-text">將電池移至更換的控制器模組、然後安裝：</block>
   <block id="350a3cd01c92197375fa1dd80773199d" category="admonition">請勿插入電池。  將其餘元件移至替換控制器模組後、您就可以插入。</block>
   <block id="ba9da6f2122b24c495dd034a4a5ec818" category="section-title">步驟 3 ：卸下夾層卡</block>
-  <block id="853a9f16e976ca6346fa38e81f8476a8" category="paragraph">從受損的控制器模組中卸下夾層擋板和 PCIe 夾層卡。</block>
-  <block id="539df95ed4f8e5993f75e19be1a36f64" category="list-text">將夾層卡擋板直接從控制器模組滑出、以將其卸下。</block>
   <block id="7bb524aff91b85838c807523fc1e4828" category="admonition">您可以用手指或螺絲起子鬆開指旋螺絲。</block>
   <block id="099cf7f6040f65b3c9d7fb3f7393d4c3" category="list-text">垂直提起夾層卡、將其放在防靜電表面上。</block>
   <block id="3356d87e196ed94acd2635f8d405e53f" category="paragraph">從受損的控制器模組中取出開機媒體、並將其安裝在替換的控制器模組中。</block>
@@ -7437,7 +7405,6 @@
   <block id="a00bf690f9db0be90ea5ab9cde9db677" category="paragraph">在更換的控制器模組中安裝夾層卡。</block>
   <block id="507e7243ab4a1d0bdbfa4edd5c9733d3" category="list-text">將夾層卡與主機板上的插槽對齊。</block>
   <block id="fc7fc35188ad3f7c32f3328839f4dff2" category="list-text">輕輕向下推卡、將卡插入插槽中。</block>
-  <block id="803bc905348545eacfc8739f67ee6fc2" category="list-text">重新安裝夾層卡擋板。</block>
   <block id="ec782fd2b49f0e4d6edd263c0d30d7f7" category="paragraph">從受損的控制器模組中取出 DIMM 、然後將其安裝到更換的控制器模組中。</block>
   <block id="64b66263e264f63be40a6135bb7e5f04" category="image-alt">DRW 2850 取代 DIMM IEOPS 699</block>
   <block id="2a7c25f4f62d559672aaa2da18086b65" category="paragraph">DIMM 鎖定閂鎖</block>
@@ -8380,7 +8347,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d5fe92183ddfd6502c92a350a2928047" category="list-text">e0b 至 e0b
 <block ref="23c439b7ef31021d610e4d3b988f3cd1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10fbfa6320d8e7c72e731fbd9a6e6c69" category="admonition">只有在更換 NVRAM 模組時才需要重新指派磁碟、而且不適用於 NVRAM DIMM 更換。</block>
-  <block id="099f7b942e4e89631784891716949599" category="admonition">此步驟不適用於 NVRAM DIMM 更換。</block>
   <block id="ce75c7b2bf3b15b7659cc85a9c36c6f8" category="admonition">在提示字元處輸入客戶的 32 個字元、英數字元內建金鑰管理密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
   <block id="2f061f16ff1dc3668b0b979718bcf140" category="paragraph">在提示字元處輸入客戶的 32 個字元、英數字元內建金鑰管理密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。</block>
   <block id="f44ae95a820a7e92672103acdefa1387" category="paragraph"><block ref="5e48dfc079c01fd7f817337abb01a320" prefix="" category="inline-code"></block></block>
@@ -8792,4 +8758,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="45c0f160ca0efa09fc0b198986db5e31" category="image-alt">DRW AFFa250 交換式 clust 纜線</block>
   <block id="5407ed45e4a9085a4f72a4611d202d7c" category="sidebar">NetApp 的 NS224 機櫃和 SAS 機櫃有助於提供數位轉型所需的效能、恢復能力和彈性。</block>
   <block id="432ba2d883505b11fa27f305c25abca9" category="sidebar">ONTAP 硬體系統的磁碟櫃</block>
+  <block id="4ab265d37ededf839a389d0b0bedcb7f" category="paragraph">30 公分</block>
+  <block id="70f83c59fcbb747c1a869b38caf783e3" category="list-text">如果環境變數未如預期設定、請使用進行修改<block ref="ac4028a4cb48838c0a22ab27fa6e6920" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="f0c3921d8aabdebf1548d35d830083d9" category="list-text">將 IO 板從控制器模組中直接滑出、以將其卸下。</block>
+  <block id="4dfabb2b4515ceefb323f4a3eb8d4a32" category="list-text">重新安裝 IO 板。</block>
+  <block id="ed991b7c3c7e4af5c89a603772f54dd1" category="paragraph">從受損的控制器模組中取出 IO 板和 PCIe 夾層卡。</block>
+  <block id="eeb8f13cb25825752e216fedcd65a6b1" category="paragraph">IO 板</block>
+  <block id="c746ae924024283281476c33315a4598" category="list-text">將 IO 板從控制器模組中直接滑出、以將其卸下。</block>
 </blocks>
