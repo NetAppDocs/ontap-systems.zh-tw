@@ -8704,20 +8704,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="396b16fa397fdd85993f8aa5bef27ffc" category="paragraph">使用 <block ref="d1042c47c9aff448d2e8f9ac980b805e" category="inline-link-macro-rx"></block>。</block>
   <block id="3e7aa82d2d70031bc903abc14fcef228" category="paragraph">使用連結： <block ref="7c76049c7cc6b29a138ae1f21c8716c8" category="inline-link-macro-rx"></block>。</block>
   <block id="6febf85749247f2f22048a485869645e" category="paragraph">本指南提供從機架安裝和纜線安裝到初始系統啟動的系統典型安裝圖形指示。使用 <block ref="85d66ca1788630be12ac9fc5ee2595a5" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
-  <block id="6053aed1bfbcc070d47989735b666d06" category="summary">SAS3 機櫃概覽。</block>
-  <block id="5b0bc6fa97d8d2e2dc4b4b0be078e8e2" category="doc">概覽 - SAS3 機櫃</block>
-  <block id="2a257bfa513884220e7be0e9ac5852a5" category="paragraph">NetApp SAS3 磁碟機架使用 SAS 連接器連接至儲存系統。</block>
-  <block id="e61b9553a933ab9c90dc9abe1d1d621e" category="paragraph">請採取下列行動來維護您的 SAS3 磁碟機櫃。</block>
   <block id="5398e5f0481212fec157da30d21384f0" category="inline-link-macro">冷更換機櫃</block>
   <block id="13ce8c4588978587ac346becc2c018b0" category="list-text"><block ref="13ce8c4588978587ac346becc2c018b0" category="inline-link-macro-rx"></block></block>
   <block id="449501ad9a8703c6804a67bdd19a3de0" category="list-text"><block ref="449501ad9a8703c6804a67bdd19a3de0" category="inline-link-macro-rx"></block></block>
   <block id="dcfc26efc2fb6ed4ced91a73b846f916" category="list-text"><block ref="dcfc26efc2fb6ed4ced91a73b846f916" category="inline-link-macro-rx"></block></block>
-  <block id="ffb86a04e7c0d1005b2366aac081dadb" category="summary">NS224 機櫃總覽。</block>
-  <block id="6b8f3f11041c0d6fd51b6747de31f198" category="doc">概覽 - NS224 機櫃</block>
-  <block id="8755317874c3d4628a24b76f9a705216" category="paragraph">NetApp NS224 磁碟機櫃是 2U 機架單元、最多可容納 24 個磁碟機。NS224 磁碟機櫃與 2.5 吋小型磁碟機相容、同時支援 SAS 和 SATA 介面。</block>
-  <block id="d1d52714be599a75c470c1f0da3b1429" category="paragraph">請採取下列行動來維護 NS224 磁碟機櫃。</block>
-  <block id="30d9c3c67c8634f0507aed48fc4a0fc8" category="sidebar">SAS3 機櫃總覽</block>
-  <block id="e945a21b304f12950d5e1290c9cf7ddd" category="sidebar">NS224 機櫃總覽</block>
   <block id="e9f65f625c8dd881230c3cdeafc6df26" category="list-text">如果有多個插槽可用、請根據中 X91148A 模組的插槽優先順序對照表來安裝模組<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
   <block id="5aa66c58b75b8a0d61edc9384fcab2ba" category="list-text">如果您要將X91148A模組新增為100GbE NIC、您可以使用任何開放式插槽。不過、根據預設、插槽3和7會設為儲存插槽。如果您想要將這些插槽作為網路插槽、而不想新增 NS224 機櫃、則必須修改用於網路的插槽<block ref="60578b38516b9ac929876fc9b1f357a0" prefix=" " category="inline-code"></block> 命令。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 適用於 X91148A 模組可用於網路連線的其他插槽。</block>
   <block id="5d185ebab5cfeafdf5ebd9bbbb7dcc5b" category="paragraph-title">選項 1 ：新增 X91148A 模組作為 NIC 模組</block>
@@ -8765,4 +8755,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ed991b7c3c7e4af5c89a603772f54dd1" category="paragraph">從受損的控制器模組中取出 IO 板和 PCIe 夾層卡。</block>
   <block id="eeb8f13cb25825752e216fedcd65a6b1" category="paragraph">IO 板</block>
   <block id="c746ae924024283281476c33315a4598" category="list-text">將 IO 板從控制器模組中直接滑出、以將其卸下。</block>
+  <block id="b4ce9255fe86b124b06814d87b3233db" category="summary">NS224 機櫃維護總覽。</block>
+  <block id="6839d8dc991c3da89b9b3b916fde2b7b" category="doc">機櫃維護總覽 - NS224 機櫃</block>
+  <block id="79a918585a1d94a22b468960e11e9174" category="paragraph">您可以採取下列行動來維護 NS224 機櫃：</block>
+  <block id="4ad47736772386e98b3765035e4ccc77" category="summary">SAS3 機櫃維護總覽。</block>
+  <block id="87504c530521bba0db07c8180af8e3cb" category="doc">機櫃維護總覽 - SAS3 機櫃</block>
+  <block id="c74c43788d9279fa623b9982f6dc6df0" category="paragraph">您可以採取下列行動來維護 SAS3 機櫃：</block>
+  <block id="9db4c90afc251da112cecabb2b945f1a" category="sidebar">機櫃維護總覽</block>
 </blocks>
