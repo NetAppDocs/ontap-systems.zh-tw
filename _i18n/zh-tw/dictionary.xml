@@ -3435,19 +3435,16 @@
   <block id="cb7c2f210d0b823f99f441d18f868850" category="list-text">內建SAS HBA的定義是佔用PCI插槽0、如同控制器上標示的一樣。</block>
   <block id="ff654fb1af810770d4355a5c3a88d631" category="list-text">每個插槽中的每個連接埠的定義方式、與控制器上標示的方式一樣。例如、有兩個連接埠的插槽0稱為0A和0b。插槽1含四個連接埠、稱為1a、1b、1c和1d。</block>
   <block id="bc776c180ed4018f4cb6f873e2f3c87d" category="paragraph">本文檔中的插槽和插槽端口如下所示：</block>
-  <block id="b95eb6743cbe688091bd2cfb7e2183e7" category="image-alt">SLOT0規則</block>
   <block id="32455c6254e3a15b603b17e884e4a3f5" category="section-title">機櫃對機櫃連線規則</block>
   <block id="9e6bd75d2dbbefca4d7d3cc44a0101c2" category="paragraph">當您在磁碟櫃堆疊中有多個磁碟櫃時、它們會使用適用的「標準」或「雙寬」磁碟櫃對磁碟櫃佈線、透過每個SAS網域（IOM A和IOM B）相互連接。您使用「標準」或「雙寬」的機櫃對機櫃佈線取決於您的組態。</block>
   <block id="dde4848c792228faaab1af9f19fc0907" category="section-title">標準機櫃對機櫃連線能力</block>
   <block id="5a53cde4cf5c91e0b09b08e60c754e51" category="list-text">最佳實務做法是使用IOM連接埠3和1進行標準的機櫃對機櫃連線。</block>
   <block id="925ce4810c954644e740106ff49fc2b7" category="paragraph">從邏輯的第一個機櫃到堆疊中的邏輯最後一個機櫃、您可以將IOM連接埠3連接到網域A中的下一個機櫃IOM連接埠1、然後連接到網域B</block>
-  <block id="dcbdcc316aee385c3ebdf72977af7d44" category="image-alt">從磁碟櫃到磁碟櫃的標準</block>
   <block id="e8645390fd232e242ab81f5d4dd7d38d" category="section-title">雙寬機櫃對機櫃連線能力</block>
   <block id="6d1f03112a2c8c20e21a127a33d198d7" category="list-text">雙寬磁碟櫃對磁碟櫃連線可用於四路徑（四路徑HA和四路徑）組態。</block>
   <block id="9d045c0226ba49d4eab1578ba5585209" category="list-text">雙寬型機櫃對機櫃連線需要在每個網域的磁碟櫃之間建立兩條纜線連線、分別是網域A（IOM A）和網域B（IOM B）。</block>
   <block id="ae15f7fe8c2deae6cbe1b6e0a2948e1e" category="paragraph">第一條纜線連接是以標準的機櫃對機櫃連線（使用IOM連接埠3和1）連接；第二條纜線連接是以雙寬機櫃對機櫃連線方式（使用IOM連接埠4和2）連接。</block>
   <block id="7830411c7d1c383be96811621cfdb2e5" category="paragraph">從邏輯的第一個機櫃到堆疊中的邏輯最後一個機櫃、您可以將IOM連接埠3連接到網域A中的下一個機櫃IOM連接埠1、然後連接到網域B從邏輯的第一個機櫃到堆疊中的邏輯最後一個機櫃、您可以將IOM連接埠4連接到網域A中的下一個機櫃的IOM連接埠2、然後連接到網域B（以雙寬連線方式連接的IOM連接埠顯示為藍色。）</block>
-  <block id="cea4f34bbde19b19ec8b528484463d97" category="image-alt">將磁碟櫃放在雙寬的磁碟櫃上</block>
   <block id="76ac5618163f7cfdc83af1a982460b25" category="section-title">控制器對堆疊連線規則</block>
   <block id="815ae1da852a7e116dabaa4790481ca1" category="section-title">SAS磁碟櫃軟體型磁碟擁有權規則</block>
   <block id="b090fb384d88ba417ddba5bc09e12033" category="paragraph">SAS磁碟櫃使用軟體型磁碟擁有權（而非硬體型磁碟擁有權）。這表示磁碟機擁有權儲存在磁碟機上、而非由儲存系統實體連線的拓撲所決定（如同硬體型磁碟擁有權）。具體而言、磁碟機所有權是由ONTAP 支援（自動或CLI命令）指派、而非由控制器與堆疊連線的纜線方式指派。</block>
@@ -3459,7 +3456,6 @@
   <block id="19ae97dcc1173168146e3a4b052d5b8c" category="list-text">控制器1 A和C連接埠一律連線至IOM A（網域A）。</block>
   <block id="845648a6d13ed37c7454c6be1991a364" category="list-text">控制器2 A和C連接埠一律連線至IOM B（網域B）。</block>
   <block id="1f393663a63759c6a1dd2986c13770e5" category="paragraph">下圖重點說明控制器連接埠A和C如何以一個四埠HBA和兩個磁碟櫃堆疊的多重路徑HA組態進行連線。與堆疊1的連線顯示為藍色。堆疊2的連線顯示為橘色。</block>
-  <block id="52b9f36f0a0ece73e588e8d49a1d2e38" category="image-alt">以堆疊規則連接埠A和c為例的DRW控制器</block>
   <block id="28b0df79d69d4b7bf21f0271c55d4f4e" category="list-text">B和D連接埠永遠是堆疊的次要路徑。</block>
   <block id="9280f37bc620ca5d0b26ec8580f87f58" category="list-text">B和D連接埠一律連接至堆疊中的邏輯最後一個磁碟櫃。</block>
   <block id="5961adddd5595d6aa7de1c01c6f229b8" category="list-text">B和D連接埠一律連接至磁碟櫃IOM連接埠3和4。</block>
@@ -3468,7 +3464,6 @@
   <block id="4d43e729c7ad0f8ebbee1e2c62e559fa" category="list-text">控制器2 B和D連接埠一律連線至IOM A（網域A）。</block>
   <block id="6265370a0863851abf028ccb76cce9bb" category="list-text">B和D連接埠會將PCI插槽的順序偏移一個、以便第一個插槽上的第一個連接埠最後連接。</block>
   <block id="1180b7b391f14633455e18d7e8a70316" category="paragraph">下圖重點說明控制器連接埠B和D如何以一個四埠HBA和兩個磁碟櫃堆疊的多重路徑HA組態進行連線。與堆疊1的連線顯示為藍色。堆疊2的連線顯示為橘色。</block>
-  <block id="937c34f84d0b7a30ac6064abdb97a6f0" category="image-alt">以堆疊方式堆疊的DRw控制器規則連接埠b和d範例</block>
   <block id="adc0f860870e3220b08daf202d1dbe12" category="paragraph">控制器SAS連接埠A、B、C和D會組織成連接埠配對、並使用一種方法來利用所有SAS連接埠、在HA配對和單一控制器組態中進行控制器對堆疊連線時、提供系統恢復能力和一致性。</block>
   <block id="b74977118ce8bd6994f851515d0aff70" category="list-text">連接埠配對包含控制器A或C SAS連接埠、以及控制器B或D SAS連接埠。</block>
   <block id="4b317a36993fd6d376aba7d0d82eef4b" category="paragraph">A和C SAS連接埠可連接至堆疊中的邏輯第一個機櫃。B和D SAS連接埠可連接至堆疊中的邏輯最後一個機櫃。</block>
@@ -3480,7 +3475,6 @@
   <block id="19f944ed800a622fdb5777c2c60a1276" category="list-text">依插槽順序列出B連接埠和D連接埠（0、1、2、3等）。</block>
   <block id="a904ef618fabf031a7e546305e0edb28" category="paragraph">例如：1B、2b、3b、1d、2D、 3D</block>
   <block id="99175bfb18611b333b890408aa408b4a" category="list-text">重新寫入D和B連接埠清單、將清單中的第一個連接埠移到清單的結尾。</block>
-  <block id="39d6691caec8f01536162f2cf4091139" category="paragraph">例如： <block ref="ea15a8afc83d3c56031ae98f8c2bb8ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="219b31f671caa1d4f189fc7bdc6a4a7c" category="paragraph">當有多個SAS連接埠插槽可用時、一個插槽的順序會在多個插槽（實體PCI插槽和主機板插槽）之間平衡連接埠配對、因此無法將堆疊連接至單一SAS HBA。</block>
   <block id="ff70e36406026fb02094c6d3fafad1ff" category="list-text">將A和C連接埠（在步驟1中列出）與D和B連接埠（在步驟2中列出）配對、並依照它們列出的順序進行配對。</block>
   <block id="3ab37ab8507783959895914eb515656c" category="paragraph">例如：1A/2b、2a/3b、3a/1d、1c/2D、2c/3D、3c/1b。</block>
@@ -3491,7 +3485,6 @@
   <block id="aec70d41229d5cb6a92c2e9340bcaa4f" category="paragraph">1A/2b、2a/3b、3a/1d、1c/2D、2c/3D、3c/1b</block>
   <block id="12242ce563bf31134199a6fd5a6bfecf" category="list-text">當系統中的堆疊不需要所有連接埠配對時、請跳過連接埠配對（使用其他連接埠配對）。</block>
   <block id="2baadcb56e7720f5676b919d51a92530" category="paragraph">例如、如果您為系統識別六個連接埠配對、並將三個堆疊連接至纜線作為多重路徑、則您可以在清單中連接其他連接埠配對：</block>
-  <block id="e2379f90f7d935a1dcd0af01adbdf46e" category="image-alt">不顯示DRw連接規則列表</block>
   <block id="5e94596a2debe5f10b4bfe8ed1dfb583" category="paragraph">控制器對堆疊佈線工作表是識別及組織連接埠配對的便利工具、可讓您將控制器對堆疊連線纜線連接至HA配對或單一控制器組態。</block>
   <block id="b84caa3e5d7ef1b5806f72c6d4c5884b" category="list-text">控制器0A連接埠（內部HBA連接埠）：</block>
   <block id="f3bc55f33663d14383a84df3141cf713" category="list-text">控制器1 0A連接埠永遠連線至IOM B（網域B）。</block>
@@ -6723,15 +6716,11 @@
   <block id="8e4eec704f9a8706e1a3cf96accb2c17" category="list-text"><block ref="8e4eec704f9a8706e1a3cf96accb2c17" category="inline-link-rx"></block></block>
   <block id="5173935e91aef44c51b8afd57f32f13f" category="list-text"><block ref="5173935e91aef44c51b8afd57f32f13f" category="inline-link-rx"></block></block>
   <block id="e06ad9290eff5c16396920aafb75091e" category="list-text"><block ref="e06ad9290eff5c16396920aafb75091e" category="inline-link-rx"></block></block>
-  <block id="5cebcc95a2116e4839d188e34a24089c" category="list-text"><block ref="5cebcc95a2116e4839d188e34a24089c" category="inline-link-rx"></block></block>
   <block id="2f143cdae4fee80d6697460e215b8a02" category="list-text"><block ref="2f143cdae4fee80d6697460e215b8a02" category="inline-link-rx"></block></block>
-  <block id="266197ce8fb9d3417e159a8b375e04ef" category="list-text"><block ref="266197ce8fb9d3417e159a8b375e04ef" category="inline-link-rx"></block></block>
   <block id="9832cac218f9fee6c6d44a9f9b5e7d76" category="list-text"><block ref="9832cac218f9fee6c6d44a9f9b5e7d76" category="inline-link-rx"></block></block>
   <block id="4cd32923632a1028f1e64fee85335b39" category="list-text"><block ref="4cd32923632a1028f1e64fee85335b39" category="inline-link-rx"></block></block>
-  <block id="6cfed826aaeccc59ecbf1bef0c41c6b6" category="list-text"><block ref="6cfed826aaeccc59ecbf1bef0c41c6b6" category="inline-link-rx"></block></block>
   <block id="2bf999bae7084da5db26c6b483ac44f0" category="list-text"><block ref="2bf999bae7084da5db26c6b483ac44f0" category="inline-link-rx"></block></block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="d130f1dd19e93aaf9701cc968056061f" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 安裝交換器硬體</block>
   <block id="26d2e0bd267361cc8916e7e16faebcbb" category="paragraph">將交換器安裝在機架或機櫃中。請參閱下列交換器機型的指示。</block>
   <block id="8821c03ea98d1edaf4b4b82c0aaf59dc" category="inline-link-macro">安裝BS-53248交換器</block>
   <block id="9000e67500cb5e61bcd3ec702237913b" category="list-text"><block ref="9000e67500cb5e61bcd3ec702237913b" category="inline-link-macro-rx"></block></block>
@@ -6743,45 +6732,7 @@
   <block id="617820a8b836e10d6f5146fc0f043112" category="list-text"><block ref="617820a8b836e10d6f5146fc0f043112" category="inline-link-macro-rx"></block></block>
   <block id="5e56acfb152f096818349fa67202b6f7" category="list-text"><block ref="5e56acfb152f096818349fa67202b6f7" category="inline-link-macro-rx"></block></block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="427748ed6a44d0d6126050507a461881" category="paragraph">AFF/FAS安裝與設定說明包括將控制器連接埠連接至交換器的纜線。不過、如果您需要支援的纜線和收發器清單、以及交換器主機連接埠的詳細資訊、請針對您的交換器機型存取下列指示。</block>
-  <block id="497781401f115451ecac27f7f2933cb3" category="inline-link-macro">連接BS-53248交換器</block>
-  <block id="4762b908167d7cdf9e4a1c2789f3dc25" category="list-text"><block ref="4762b908167d7cdf9e4a1c2789f3dc25" category="inline-link-macro-rx"></block></block>
-  <block id="2586f55a2b9174f4cb4f6ba1d3074ad1" category="inline-link-macro">Cisco Nexus 9336C-FX2交換器纜線</block>
-  <block id="93bab82665555723d09cf89ede810907" category="list-text"><block ref="93bab82665555723d09cf89ede810907" category="inline-link-macro-rx"></block></block>
-  <block id="52f7a5e6d4c023e5fef53f473f22b20a" category="inline-link-macro">纜線NVIDIA SN2100交換器</block>
-  <block id="0ee060af4c87c4fbc6cbd8f24ffeda59" category="list-text"><block ref="0ee060af4c87c4fbc6cbd8f24ffeda59" category="inline-link-macro-rx"></block></block>
-  <block id="3f53fd4b09af6c568ea0f9f54f9f2d23" category="list-text"><block ref="3f53fd4b09af6c568ea0f9f54f9f2d23" category="inline-link-macro-rx"></block></block>
-  <block id="705795ef685b9269be58747bb63f1206" category="list-text"><block ref="705795ef685b9269be58747bb63f1206" category="inline-link-macro-rx"></block></block>
-  <block id="8ed9021db09e01ee30c3f88e6bb6c84a" category="list-text"><block ref="8ed9021db09e01ee30c3f88e6bb6c84a" category="inline-link-macro-rx"></block></block>
-  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
-  <block id="2d51a4c0647f6c33eb1618ae2b75bbbf" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>設定交換器</block>
-  <block id="ec105a48fce29c3cef5a1857c97bf49f" category="paragraph">執行交換器的初始設定。請參閱下列交換器機型的指示。</block>
-  <block id="f5dcfee71330ba72d10a9ef205dd69e5" category="inline-link-macro">設定BS-53248交換器</block>
-  <block id="fa53fe969df039b61c8e18516b5dc73c" category="list-text"><block ref="fa53fe969df039b61c8e18516b5dc73c" category="inline-link-macro-rx"></block></block>
-  <block id="b26d2c239cf0d70021ec2d611dd2cefd" category="inline-link-macro">設定Cisco Nexus 9336C-FX2交換器</block>
-  <block id="0a2dce0d006281c864fd0f86f4ea8582" category="list-text"><block ref="0a2dce0d006281c864fd0f86f4ea8582" category="inline-link-macro-rx"></block></block>
-  <block id="7bfd713e089f5e59b6c1826b2af39c2a" category="inline-link-macro">設定NVIDIA SN2100交換器</block>
-  <block id="2519e7f54407f60dc79e9259ef7945d2" category="list-text"><block ref="2519e7f54407f60dc79e9259ef7945d2" category="inline-link-macro-rx"></block></block>
-  <block id="06a65f0a1639e3cb60d130682802f0f4" category="list-text"><block ref="06a65f0a1639e3cb60d130682802f0f4" category="inline-link-macro-rx"></block></block>
-  <block id="3a8a1008ac39062434132158737ee20f" category="list-text"><block ref="3a8a1008ac39062434132158737ee20f" category="inline-link-macro-rx"></block></block>
-  <block id="19f48057a2a8e92f21d37a0c84da71ca" category="list-text"><block ref="19f48057a2a8e92f21d37a0c84da71ca" category="inline-link-macro-rx"></block></block>
-  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
-  <block id="64637562d7e27f62620328710451f9ca" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 安裝交換器軟體</block>
-  <block id="8c5afc8d3c5a4855ac8b127c598aaf6c" category="paragraph">若要在交換器上安裝及設定軟體、請遵循交換器機型的軟體安裝工作流程。</block>
-  <block id="be6af2b7851b2766e149e88f47cd231e" category="inline-link-macro">安裝適用於BS-53248交換器的軟體</block>
-  <block id="283819fa3187f4cab4901fd782a00562" category="list-text"><block ref="283819fa3187f4cab4901fd782a00562" category="inline-link-macro-rx"></block></block>
-  <block id="60772399a01d09f82f607f7cc816aef1" category="inline-link-macro">安裝Cisco Nexus 9336C-FX2交換器軟體</block>
-  <block id="17cd31cbaa939cc9be9b435aa9bc29b3" category="list-text"><block ref="17cd31cbaa939cc9be9b435aa9bc29b3" category="inline-link-macro-rx"></block></block>
-  <block id="3437ca96f916be870bf8b2b922d6299d" category="inline-link-macro">安裝NVIDIA SN2100交換器的軟體</block>
-  <block id="56e2901763e1f0f4a779d43168cd0e17" category="list-text"><block ref="56e2901763e1f0f4a779d43168cd0e17" category="inline-link-macro-rx"></block></block>
-  <block id="71e74baaa680eaec49a78bcc05bd4cae" category="list-text"><block ref="71e74baaa680eaec49a78bcc05bd4cae" category="inline-link-macro-rx"></block></block>
-  <block id="79b5bea37a0a17cdb8b4e1b94ffc5c28" category="list-text"><block ref="79b5bea37a0a17cdb8b4e1b94ffc5c28" category="inline-link-macro-rx"></block></block>
-  <block id="09ebf9105e3a0e85568481422cb709d1" category="list-text"><block ref="09ebf9105e3a0e85568481422cb709d1" category="inline-link-macro-rx"></block></block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
-  <block id="aea7345148c1589735242fc13ad81924" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 完成系統設定</block>
-  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
-  <block id="8f5988d6d5abedb5da92f0fcbc79872d" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 完整ONTAP 的功能組態</block>
-  <block id="f0a39bebe9f0d59f6fc97c14de8b2a1a" category="paragraph">安裝並設定AFF/FAS控制器和交換器之後、您必須完成ONTAP 在VMware中設定儲存設備。根據部署組態存取下列指示。</block>
   <block id="549f827e07761bafef053e8ca7564a39" category="inline-link">設定ONTAP 功能</block>
   <block id="8849c41092b79554e9b7f3a213d25622" category="list-text">如需ONTAP 部署的資訊、請參閱<block ref="a9c0083f0559526553eb5b29452926d5" category="inline-link-rx"></block>。</block>
   <block id="10775dd39d5bac0a859a7c2aa804576e" category="inline-link">使用MetroCluster 支援功能進行組態設定ONTAP</block>
@@ -6835,7 +6786,6 @@
   <block id="9f4416e119f06c0f37d722efa8fabfe9" category="sidebar">終止可用度系統</block>
   <block id="7c4365c5c3b36c349d31ac07e90053ce" category="sidebar">平台升級（MetroCluster 更新）</block>
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="sidebar">NetApp知識庫</block>
-  <block id="b5bfe3d61bf9be292418cb9d21eec19c" category="sidebar">開始運作</block>
   <block id="8f7cc2c7f8ea66405c4805e7ebc09f8f" category="sidebar">VA150系統AFF</block>
   <block id="cafd0584cfa2700cbb38234c6c87ff44" category="sidebar">安裝與設定AFF</block>
   <block id="19aa00b7e147cb8650f3b77592febb48" category="sidebar">VA150維護AFF</block>
@@ -7043,8 +6993,6 @@
   <block id="6eeacbfb54f0dd2b69ca25ccf7e621e3" category="paragraph">** 叢集交換器 **</block>
   <block id="05d287d05ed5025354b8f6c796c87491" category="paragraph">** 儲存交換器 **</block>
   <block id="aca0ddc3769e84e478caff604ad14594" category="paragraph">** 共享交換器 **</block>
-  <block id="4f4f401ca3cb71c1eacaf052eac321fb" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 將交換器連接至控制器</block>
-  <block id="93a86d433d6f98e9a80d74b972237ee6" category="paragraph">** AFF 系統 **</block>
   <block id="1688757a0e4a29ec41d21e63fcc98a90" category="paragraph">若要安裝 AFF C190 系統、請建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
   <block id="39bbc5176cba797f24070d78f90d0d5a" category="list-text">請確定您有權存取 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> （HWU）以取得站台需求的相關資訊、以及設定系統的其他資訊。</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="inline-link-macro">版本資訊</block>
@@ -7251,19 +7199,16 @@
   <block id="f37147b373a7dab930e9ad58967b110f" category="list-text">連接埠 0b/0b1 一律會連接至堆疊中最後一個邏輯磁碟機櫃。</block>
   <block id="ec50871e5c9ed1add9f37e13b5f6dcc5" category="list-text">連接埠 0b/0b1 一律連接至磁碟機櫃 IOM 連接埠 3 。</block>
   <block id="5cc45636165f15166974ddab3dfb0fd7" category="paragraph">下圖強調內部儲存連接埠（ 0b/0b1 ）與外部層疊的網域連線：</block>
-  <block id="cb9e9a1b808c7a4e6312fd5827f6c84e" category="image-alt">DRW fas2600 mpha 網域範例 IEOPS 1172</block>
   <block id="45219ca27a4ad91c17dcca93a96dd284" category="section-title">三重路徑 HA 連線</block>
   <block id="7125880b6305be48cdd0760966c349f2" category="paragraph">FAS2800 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：</block>
   <block id="c8c29757ef852a483118b80a57d4b5ac" category="list-text">每個控制器的內部連接埠 0b 與其本機 IOM12G 及連接埠 0c 與合作夥伴的 IOM12G 之間、都能提供 HA 配對多重路徑 HA 連線。</block>
   <block id="494edf65cd0a33575dc779a9df2979d6" category="list-text">每個控制器的外部儲存連接埠（ 0A 和 0b1 ）的佈線、可提供 HA 配對三路徑 HA 連線。</block>
   <block id="a35c30ba1541ae1d8a44ed5229f19650" category="paragraph">當沒有外部機櫃時、連接埠 0A 和 0b1 會透過兩個控制器進行纜線連接、或連接至外部機櫃以實現三路徑 HA 連線。</block>
   <block id="77f105a56bd1c2ae99c93daa98950ddb" category="paragraph">以下顯示控制器的內部連線和外部纜線、可實現三重路徑 HA 連線：</block>
-  <block id="d16f504f7bfcd6bdd9341d281e367431" category="image-alt">DRW fas2800 概念 Tpha IEOPS 950</block>
   <block id="56aa5946d918a9c287c3413f16a7f6a8" category="paragraph">FAS2800 外部 SAS 連接埠：</block>
   <block id="49c992eee9e3421ed1fbdca1cea6cc70" category="list-text">0A 連接埠來自內部 HBA （如同其他具有內部機櫃的平台）。</block>
   <block id="21f39b91f6bc9739ca0f20af09effa4e" category="list-text">0b1 連接埠來自內部機櫃（例如其他平台的 0b 連接埠、內建機櫃）。</block>
   <block id="cd00b581ae35cc28e22b76f1f56e73a3" category="list-text">未使用 0b2 連接埠。已停用。如果連接纜線、就會產生錯誤訊息。</block>
-  <block id="89c7c407656d81769624b64d696a7e5e" category="image-alt">位於 fas2800 IEOPS 946 上的 DRW SAS3 連接埠（ 1 ）</block>
   <block id="4d29df0cb21d81560d8799a21074035f" category="paragraph">您可以在中找到 FAS2800 HA 配對纜線範例 <block ref="c19123e6031c139d66f534ae4311d605" category="inline-link-macro-rx"></block> 區段。</block>
   <block id="d781db166642a4d3afbe74add6458ec0" category="paragraph">* SAS 纜線規則與概念 *</block>
   <block id="8f8530d523c868e5ee729783d7b0a04a" category="list-text"><block ref="8f8530d523c868e5ee729783d7b0a04a" category="inline-link-macro-rx"></block></block>
@@ -8252,18 +8197,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="52af7d4516c9a231debbc59d16540841" category="summary">維護 FAS2800 硬體</block>
   <block id="a15b9605ee28854b0a879286a11a485d" category="doc">維護 FAS2800 硬體</block>
   <block id="3bf4e15c5081d9414a6cd3448aae890e" category="paragraph">對於 FAS2800 儲存系統、您可以在下列元件上執行維護程序。</block>
-  <block id="1ddc1fb5b0cd55faae476600a06e1a0b" category="summary">若要使用 AFF 、 ASA 和 FAS 系統開始運作、您必須在 ONTAP 中安裝硬體元件、設定交換器和設定儲存設備。</block>
   <block id="d90835a42340aac8a036ef710a1aa68a" category="doc">使用 AFF 、 ASA 和 FAS 儲存系統開始運作</block>
-  <block id="ced81397dd782da72bb7c38992c64be4" category="paragraph">在機架或機櫃中安裝 AFF 、 ASA 和 FAS 控制器。存取您平台機型的安裝與設定指示。</block>
   <block id="fe16224741a81fa9747d82d6dc05182c" category="list-text"><block ref="fe16224741a81fa9747d82d6dc05182c" category="inline-link-rx"></block></block>
-  <block id="ecd8dd92a7f4e8e4e42627b4e7b33118" category="list-text"><block ref="ecd8dd92a7f4e8e4e42627b4e7b33118" category="inline-link-rx"></block></block>
-  <block id="550e0f3f38fa7f062f0cd580e8ec9904" category="list-text"><block ref="550e0f3f38fa7f062f0cd580e8ec9904" category="inline-link-rx"></block></block>
   <block id="52142476f2ac75ac73f5e40f09d0e6d4" category="list-text"><block ref="52142476f2ac75ac73f5e40f09d0e6d4" category="inline-link-rx"></block></block>
   <block id="b9cc4cc5d585d56b19a0b0bf8c7ff71f" category="list-text"><block ref="b9cc4cc5d585d56b19a0b0bf8c7ff71f" category="inline-link-rx"></block></block>
   <block id="0ac6aa3296c0437f3274277862d88d2b" category="list-text"><block ref="0ac6aa3296c0437f3274277862d88d2b" category="inline-link-rx"></block></block>
   <block id="a334af0b164fc0db79711e89abe4cb0d" category="inline-link">FAS2800</block>
   <block id="53e69397147d83b3fa253cab22a92a98" category="list-text"><block ref="53e69397147d83b3fa253cab22a92a98" category="inline-link-rx"></block></block>
-  <block id="842e9311855e597be1c8f81082e70046" category="paragraph">設定交換器並安裝必要軟體之後、請存取平台機型的安裝與設定指示、以完成系統設定。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -8664,7 +8604,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b93d997895dde5ccf0b4ce2c7ea76b38" category="doc">All Flash SAN Array （ ASA ） A 系列系統</block>
   <block id="ca42e40f781122cb5a2d8f08cb50d450" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA C 系列系統。</block>
   <block id="d6db6f02fef14cb7ca1df4e0aecf3992" category="doc">All Flash SAN Array （ ASA ） C 系列系統</block>
-  <block id="d2f3f8ad2ee3b259dc7e838d35c21ece" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝控制器</block>
   <block id="1e328579e066bd52d81db5813109e763" category="paragraph">** ASA A 系列系統 **</block>
   <block id="1ab5446725f4ee75e53cfa05dcd66d51" category="list-text"><block ref="1ab5446725f4ee75e53cfa05dcd66d51" category="inline-link-rx"></block></block>
   <block id="5bdb8055b260f02eec19d823c3311a42" category="list-text"><block ref="5bdb8055b260f02eec19d823c3311a42" category="inline-link-rx"></block></block>
@@ -8762,4 +8701,49 @@ SFP+ （目標 / 啟動器）</block>
   <block id="87504c530521bba0db07c8180af8e3cb" category="doc">機櫃維護總覽 - SAS3 機櫃</block>
   <block id="c74c43788d9279fa623b9982f6dc6df0" category="paragraph">您可以採取下列行動來維護 SAS3 機櫃：</block>
   <block id="9db4c90afc251da112cecabb2b945f1a" category="sidebar">機櫃維護總覽</block>
+  <block id="8eb5d7e14f078213436247ba24450689" category="summary">若要使用 AFF 、 ASA 和 FAS 系統開始運作、請在 ONTAP 中安裝硬體元件、連接硬體纜線、以及設定儲存設備。</block>
+  <block id="96a3941fc07feefba651e74e742d6638" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝交換器</block>
+  <block id="0ed1fd19207f3710615fa098f320a29c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 安裝平台和機櫃</block>
+  <block id="10acd5d369d377f995d334cedec57254" category="paragraph">在機櫃或機架中安裝平台和機櫃。存取您平台機型的安裝與設定指示。</block>
+  <block id="16271069a214a6b555402afb04d69089" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 連接纜線</block>
+  <block id="c6b53c8091f0d8860c298f31862ebf8f" category="paragraph">將控制器連接至網路、然後將控制器連接至機櫃。  您的平台機型的安裝與設定指示包括將控制器連接埠連接至網路和交換器的佈線說明。</block>
+  <block id="f6da489aeeacf32739293cc7e93355f6" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>  完整ONTAP 的功能組態</block>
+  <block id="690804f2b4dc1d3ad6cc6e584fbc071b" category="paragraph">安裝並設定控制器和交換器之後、您必須在 ONTAP 中完成儲存設備的設定。根據部署組態存取下列指示。</block>
+  <block id="2d5a4622cf1f60fa2062a6410204c938" category="summary">瞭解不再支援的舊版硬體。</block>
+  <block id="b55c2253dc1b30a508b603e707fc1e15" category="doc">不再支援舊版硬體</block>
+  <block id="71beaaf93c4fa164e290b4988b8f6656" category="paragraph">從指定版本的 ONTAP 開始、不再支援下列系統和交換器。</block>
+  <block id="314f9efc50d5c33d8b64718f7b4f13bb" category="section-title">AFF 和 FAS 系統</block>
+  <block id="a45da96d0bf6575970f2d27af22be28a" category="cell">系統</block>
+  <block id="6cb7a213dd3d9c9b67da8b1aabb3928f" category="cell">支援終止於 ...</block>
+  <block id="8541975335a64aeefea980107946fbbf" category="list-text">FAS2650</block>
+  <block id="489c8707e7f92883a9ec4c6edf2f6a9a" category="list-text">FAS2620</block>
+  <block id="a705ce04641549f4b945855fcf455aef" category="list-text">AFF AFF8020 、 AFF8040 、 AFF8060 、 AFF8080</block>
+  <block id="8c06a9afcd20cc8675f878a8e07e16ab" category="list-text">FAS8020 、 FAS8040 、 FAS8060 、 FAS8080</block>
+  <block id="335755c0e7b53572be7e9a663d297e47" category="list-text">FAS2520 、 FAS2552 、 FAS2554</block>
+  <block id="bbc155fb2b111bf61c4f5ff892915e6b" category="cell">交換器</block>
+  <block id="e29dd9091577ef2b7d9c9828cd5407af" category="paragraph">NetApp CN1610 交換器</block>
+  <block id="f267a68fd1c8bddcc992701898021398" category="paragraph">叢集交換器</block>
+  <block id="a8495ee8f8ba70ddce083c14b317a765" category="list-text">Cisco 5596UP</block>
+  <block id="4249daf52cc9869f5f0eb05a465153b6" category="list-text">Cisco 5596T</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
+  <block id="23c35b2f23dd1a2d9d32a286f986b138" category="inline-link">支援的 Cisco 乙太網路交換器</block>
+  <block id="01be3333cdb9fcee786cd82fd72188b1" category="list-text"><block ref="01be3333cdb9fcee786cd82fd72188b1" category="inline-link-rx"></block></block>
+  <block id="079cac943a6f06ba1a13244088f0d10b" category="inline-link">支援的 NetApp 乙太網路交換器</block>
+  <block id="1f842f6537ceea5c5c63d4a77061098a" category="list-text"><block ref="1f842f6537ceea5c5c63d4a77061098a" category="inline-link-rx"></block></block>
+  <block id="9e956a69209fd02cc7fc71bcd825b619" category="inline-link">終止可用性平台</block>
+  <block id="25ac67e138b8fda2539443953ff699a2" category="list-text"><block ref="25ac67e138b8fda2539443953ff699a2" category="inline-link-rx"></block></block>
+  <block id="70c1ec940020a23d470c43a425a19dbd" category="image-alt">插槽和插槽 [ 連接埠便利性</block>
+  <block id="39512bdbabbfe6463989630fdaea738d" category="image-alt">標準機櫃對機櫃連線能力</block>
+  <block id="c690abed43ee84b2aa4c067ae75274a5" category="image-alt">雙寬的機櫃到機櫃連線能力</block>
+  <block id="b912ea83cac657f0577115ac95728ead" category="image-alt">不含內部儲存設備的平台的控制器 A 和 C 連接埠連線規則</block>
+  <block id="d759728a4cd391f6debf60656cfa418b" category="image-alt">無內部儲存設備平台的控制器 B 和 D 連接埠連線規則</block>
+  <block id="59009e88d7a055107f6ba1d9f17ae2e7" category="inline-image-macro">重新寫入 D 和 B 連接埠清單</block>
+  <block id="c64ccaa723127cd5c1f19cd2d8a9937f" category="paragraph">例如： <block ref="f5b253e3b09b12b383be6c4485664df6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf7080fa51742670c142cfdf8d73846d" category="image-alt">跳過連接埠配對的選項</block>
+  <block id="c89ad601d530f2912af428762ab2c116" category="image-alt">內部儲存連接埠 0b/0b1 網域連線</block>
+  <block id="d92309c4fbff10ebdb4237d6a87fe7b6" category="image-alt">三重路徑 HA 連線</block>
+  <block id="468bc64c7e6d21f618a8c0a4186b734c" category="image-alt">fas2800 上的 DRW SAS3 連接埠</block>
+  <block id="a0bdeb39cc6a9364f3559ad9a77e2a71" category="summary">瞭解 AFF 、 ASA 和 FAS 系統的新功能、以及不再支援的舊版硬體。</block>
+  <block id="5aa9a0e12c17de73e420b615315f7453" category="paragraph">如需 ONTAP 9 版本中已知問題、限制和升級注意事項的詳細資訊、請參閱<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。</block>
+  <block id="d1f3a81423106ee57c19f4fc60f797ca" category="sidebar">支援終止</block>
 </blocks>

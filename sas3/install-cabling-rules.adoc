@@ -90,7 +90,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 本文檔中的插槽和插槽端口如下所示：
 
 +
-image::../media/slot0_rules.png[SLOT0規則]
+image::../media/slot0_rules.png[插槽和插槽 [ 連接埠便利性]
 
 
 
@@ -116,7 +116,7 @@ image::../media/slot0_rules.png[SLOT0規則]
 
 
 
-image::../media/drw_shelf_to_shelf_standard.gif[從磁碟櫃到磁碟櫃的標準]
+image::../media/drw_shelf_to_shelf_standard.gif[標準機櫃對機櫃連線能力]
 
 
 
@@ -132,7 +132,7 @@ image::../media/drw_shelf_to_shelf_standard.gif[從磁碟櫃到磁碟櫃的標�
 
 
 
-image::../media/drw_shelf_to_shelf_double_wide.gif[將磁碟櫃放在雙寬的磁碟櫃上]
+image::../media/drw_shelf_to_shelf_double_wide.gif[雙寬的機櫃到機櫃連線能力]
 
 
 
@@ -164,7 +164,7 @@ IOM連接埠2僅用於四路徑HA和四路徑組態。
 
 下圖重點說明控制器連接埠A和C如何以一個四埠HBA和兩個磁碟櫃堆疊的多重路徑HA組態進行連線。與堆疊1的連線顯示為藍色。堆疊2的連線顯示為橘色。
 
-image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[以堆疊規則連接埠A和c為例的DRW控制器]
+image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[不含內部儲存設備的平台的控制器 A 和 C 連接埠連線規則]
 
 
 
@@ -183,7 +183,7 @@ IOM連接埠4僅用於四路徑HA和四路徑組態。
 
 下圖重點說明控制器連接埠B和D如何以一個四埠HBA和兩個磁碟櫃堆疊的多重路徑HA組態進行連線。與堆疊1的連線顯示為藍色。堆疊2的連線顯示為橘色。
 
-image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[以堆疊方式堆疊的DRw控制器規則連接埠b和d範例]
+image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[無內部儲存設備平台的控制器 B 和 D 連接埠連線規則]
 
 
 
@@ -211,7 +211,7 @@ A和C SAS連接埠可連接至堆疊中的邏輯第一個機櫃。B和D SAS連�
 
 .. 重新寫入D和B連接埠清單、將清單中的第一個連接埠移到清單的結尾。
 +
-例如： image:../media/drw_gen_sas_cable_step2.png[""]
+例如： image:../media/drw_gen_sas_cable_step2.png["重新寫入 D 和 B 連接埠清單"]
 
 +
 當有多個SAS連接埠插槽可用時、一個插槽的順序會在多個插槽（實體PCI插槽和主機板插槽）之間平衡連接埠配對、因此無法將堆疊連接至單一SAS HBA。
@@ -240,7 +240,7 @@ NOTE: 對於HA配對、您為第一個控制器識別的連接埠配對清單也
 例如、如果您為系統識別六個連接埠配對、並將三個堆疊連接至纜線作為多重路徑、則您可以在清單中連接其他連接埠配對：
 
 +
-image::../media/drw_portpair_connection_rules_list_skip.gif[不顯示DRw連接規則列表]
+image::../media/drw_portpair_connection_rules_list_skip.gif[跳過連接埠配對的選項]
 
 +
 
@@ -290,7 +290,7 @@ NOTE: 如果您未將 0b/0b1 連接埠連接至正確的網域（跨連線網域
 
 下圖強調內部儲存連接埠（ 0b/0b1 ）與外部層疊的網域連線：
 
-image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[DRW fas2600 mpha 網域範例 IEOPS 1172]
+image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[內部儲存連接埠 0b/0b1 網域連線]
 
 
 
@@ -307,7 +307,7 @@ FAS2800 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能�
 
 以下顯示控制器的內部連線和外部纜線、可實現三重路徑 HA 連線：
 
-image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[DRW fas2800 概念 Tpha IEOPS 950]
+image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[三重路徑 HA 連線]
 
 FAS2800 外部 SAS 連接埠：
 
@@ -316,7 +316,7 @@ FAS2800 外部 SAS 連接埠：
 * 未使用 0b2 連接埠。已停用。如果連接纜線、就會產生錯誤訊息。
 
 
-image::../media/drw_sas3_ports_on_fas2800_IEOPS-946 (1).svg[位於 fas2800 IEOPS 946 上的 DRW SAS3 連接埠（ 1 ）]
+image::../media/drw-sas3-ports-on-fas2800.svg[fas2800 上的 DRW SAS3 連接埠]
 
 您可以在中找到 FAS2800 HA 配對纜線範例 link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例"] 區段。
 
