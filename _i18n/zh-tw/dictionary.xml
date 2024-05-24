@@ -8632,7 +8632,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="407685da96fd9ced3310d7d46ae6df51" category="doc">冷更換機櫃 - 配備 IOM12/ IOM12B 模組的機櫃</block>
   <block id="ec2ab707a85ae3f8634491d0876e34c6" category="paragraph">在使用磁碟的正式作業系統中更換磁碟機櫃時、您需要執行冷機櫃更換。這是一種破壞性程序。它要求您停止 HA 配對中的控制器。</block>
   <block id="b70986af2d94261df69e2141b1a928cf" category="inline-link">如何使用冷機櫃移除程序來更換機櫃機箱</block>
-  <block id="9bfe0b1ca930a33b763298ba44f6db91" category="paragraph">使用知識庫文章<block ref="0ce7a268461a7f9e86d34962088e7dcd" category="inline-link-rx"></block>。</block>
   <block id="3946a95173cf2872b6b6e8309352d61b" category="inline-link">NS224 NVMe磁碟機櫃佈線指南</block>
   <block id="29c2f32397b266395d18c9814ee2c641" category="paragraph"><block ref="29c2f32397b266395d18c9814ee2c641" category="inline-link-rx"></block></block>
   <block id="5932d352036c33399a3ddcba5a995002" category="summary">您可以冷更換 NS224 磁碟機櫃。</block>
@@ -8698,8 +8697,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6839d8dc991c3da89b9b3b916fde2b7b" category="doc">機櫃維護總覽 - NS224 機櫃</block>
   <block id="79a918585a1d94a22b468960e11e9174" category="paragraph">您可以採取下列行動來維護 NS224 機櫃：</block>
   <block id="4ad47736772386e98b3765035e4ccc77" category="summary">SAS3 機櫃維護總覽。</block>
-  <block id="87504c530521bba0db07c8180af8e3cb" category="doc">機櫃維護總覽 - SAS3 機櫃</block>
-  <block id="c74c43788d9279fa623b9982f6dc6df0" category="paragraph">您可以採取下列行動來維護 SAS3 機櫃：</block>
   <block id="9db4c90afc251da112cecabb2b945f1a" category="sidebar">機櫃維護總覽</block>
   <block id="8eb5d7e14f078213436247ba24450689" category="summary">若要使用 AFF 、 ASA 和 FAS 系統開始運作、請在 ONTAP 中安裝硬體元件、連接硬體纜線、以及設定儲存設備。</block>
   <block id="96a3941fc07feefba651e74e742d6638" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝交換器</block>
@@ -8746,4 +8743,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5aa9a0e12c17de73e420b615315f7453" category="paragraph">如需 ONTAP 9 版本中已知問題、限制和升級注意事項的詳細資訊、請參閱<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。</block>
   <block id="d1f3a81423106ee57c19f4fc60f797ca" category="sidebar">支援終止</block>
   <block id="3709879cf4b397082ed4cccaa4fc0561" category="image-alt">FAS2800 外部 SAS 連接埠</block>
+  <block id="684a3c483281d887c3d3be6f2fec0dee" category="inline-link-macro">熱新增磁碟機</block>
+  <block id="0981347849054d7973149d23c4187aa8" category="list-text"><block ref="0981347849054d7973149d23c4187aa8" category="inline-link-macro-rx"></block></block>
+  <block id="fd6333b3a15bf4ff3d4a25db6d99ea06" category="paragraph">請使用 NetApp 知識庫文件<block ref="0ce7a268461a7f9e86d34962088e7dcd" category="inline-link-rx"></block>。</block>
+  <block id="b1acc3668afb9014f44281694ae06824" category="summary">即使在 I/O 作業期間、您也可以將新的磁碟機新增至開機的機櫃、不會中斷營運。</block>
+  <block id="68bab7572a161f11853ff30476a32e76" category="doc">熱新增磁碟機 - NS224 機櫃</block>
+  <block id="4c8c4b22ca17117dae583f0c094d9eed" category="inline-link">將磁碟新增至現有機櫃或叢集的最佳實務做法</block>
+  <block id="daf4bbdefc995283fd259f0a85f2206e" category="paragraph">請使用 NetApp 知識庫文件<block ref="d77269536bcca9e0e9d3e1016828b4c0" category="inline-link-rx"></block>。</block>
+  <block id="b7a6ae7b0390fcc46b05224bb591437e" category="doc">機櫃維護概述 - SAS 機櫃</block>
+  <block id="3336aa3ff360375747634c1e3385684b" category="paragraph">您可以採取下列行動來維護 SAS 機櫃：</block>
+  <block id="db84f3feadfa946e6f025822cc6bb942" category="doc">熱新增磁碟機 - SAS 磁碟櫃</block>
+  <block id="532733c728150f3f848affd8d9840374" category="sidebar">熱新增磁碟機</block>
 </blocks>
