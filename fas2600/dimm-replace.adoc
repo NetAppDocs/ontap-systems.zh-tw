@@ -80,16 +80,16 @@ link:https://youtu.be/SoMbi3to9Fk["FAS2600 DIMM更換影片AFF"^]
 
 . 從控制器模組的左側和右側移除纜線管理裝置、並將其放在一邊。
 +
-image::../media/drw_25xx_cable_management_arm.png[DRW 25xx纜線管理ARM 功能]
+image::../media/drw_25xx_cable_management_arm.png[插入或移除纜線管理 ARM]
 
 . 壓下CAM把手上的栓鎖直到釋放為止、完全打開CAM把把、以從中間板釋放控制器模組、然後用兩隻手將控制器模組從機箱中拉出。
 +
-image::../media/drw_2240_x_opening_cam_latch.png[DRW 2240 x開啟CAM栓鎖]
+image::../media/drw_2240_x_opening_cam_latch.png[打開凸輪把手栓鎖]
 
 . 翻轉控制器模組、將其放置在平穩的表面上。
 . 滑入藍色彈片以釋放護蓋、然後將護蓋向上旋轉並開啟、即可開啟護蓋。
 +
-image::../media/drw_2600_opening_pcm_cover.png[DRw 2600開啟PCM機箱蓋]
+image::../media/drw_2600_opening_pcm_cover.png[開啟或關閉控制器模組]
 
 
 
@@ -106,14 +106,14 @@ image::../media/drw_2600_opening_pcm_cover.png[DRw 2600開啟PCM機箱蓋]
 在更換系統元件之前、您必須執行乾淨的系統關機、以避免在非揮發性記憶體（NVMEM）中遺失未寫入的資料。LED位於控制器模組背面。尋找下列圖示：
 
 +
-image::../media/drw_hw_nvram_icon.png[DRW硬體NVRAM圖示]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 . 如果NVMEM LED未更新、則在NVMEM中沒有任何內容；您可以跳過下列步驟、繼續執行本程序中的下一個工作。
 . 如果NVMEM LED正在閃燈、則表示NVMEM中有資料、您必須中斷電池連線以清除記憶體：
 +
 .. 找到電池、按下電池插頭正面的固定夾、將鎖定夾從插槽中鬆脫、然後從插槽拔下電池纜線。
 +
-image::../media/drw_2600_nvmem_battery_unplug.png[DRW 2600 nvmem電池拔下]
+image::../media/drw_2600_nvmem_battery_unplug.png[更換NVMEM電池]
 
 .. 確認NVMEM LED不再亮起。
 .. 重新連接電池接頭。
@@ -134,7 +134,7 @@ NOTE: 小心拿住DIMM的邊緣、避免對DIMM電路板上的元件施加壓力
 下圖顯示系統DIMM的位置：
 
 +
-image::../media/drw_2600_dimm_repl_animated_gif.png[DRW 2600 DIMM重新格式動畫Gif]
+image::../media/drw_2600_dimm_repl_animated_gif.png[更換DIMM]
 
 . 從防靜電包裝袋中取出備用DIMM、拿住DIMM的邊角、然後將其對準插槽。
 +

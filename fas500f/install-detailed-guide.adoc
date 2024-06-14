@@ -61,7 +61,7 @@ X66240A-05（112-00595）、0.5公尺；
 
 X66240-2（112-00573）、2公尺
  a| 
-image:../media/oie_cable100_gbe_qsfp28.png[""]
+image:../media/oie_cable100_gbe_qsfp28.png["100 GbE QSFP28 連接器"]
  a| 
 叢集互連網路
 
@@ -92,7 +92,7 @@ RJ-45（訂單相依）
  a| 
 不適用
  a| 
-image:../media/oie_cable_rj45.png[""]
+image:../media/oie_cable_rj45.png["RJ-45 纜線連接器"]
  a| 
 管理網路（BMC和扳手連接埠）和乙太網路資料（e0a和e0b）
 
@@ -109,7 +109,7 @@ X66250-15（112-00346）15公尺；
 
 X66250-30（112-003473）30公尺
  a| 
-image:../media/oie_cable_fc_optical.png[""]
+image:../media/oie_cable_fc_optical.png["OIE 光纖通道光纖纜線"]
  a| 
 
 
@@ -130,7 +130,7 @@ image:../media/oie_cable_micro_usb.png["顯示 Micro USB 接頭的圖例"]
  a| 
 不適用
  a| 
-image:../media/oie_cable_power.png[""]
+image:../media/oie_cable_power.png["電源線"]
  a| 
 開啟系統電源
 
@@ -152,7 +152,7 @@ image:../media/oie_cable_power.png[""]
 NOTE: 您必須瞭解與系統重量相關的安全顧慮。
 
 +
-image::../media/drw_affa250_weight_caution.png[DRw affa250重量注意事項]
+image::../media/drw_affa250_weight_caution.png[兩人提舉注意事項]
 
 . 識別並管理纜線、因為此系統沒有纜線管理裝置。
 . 將擋板放在系統正面。
@@ -181,7 +181,7 @@ image::../media/drw_affa250_weight_caution.png[DRw affa250重量注意事項]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -196,29 +196,30 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["步驟1."]
  a| 
 使用25GbE叢集互連纜線將叢集互連連接埠彼此連接
 
-image:../media/oie_cable_sfp_gbe_copper.png[""]：
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器"]：
 
 * e0c至e0c
-* e0d至e0dimage:../media/drw_affa250_tnsc_cabling.png[""]
+* e0d 至 e0d
+image:../media/drw_affa250_tnsc_cabling.png["雙節點無交換器叢集中的叢集互連纜線"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_dr.png[""]
+image:../media/oie_legend_icon_2_dr.png["編號 2"]
  a| 
 使用RJ45纜線將扳手連接埠連接至管理網路交換器。
 
-image::../media/drw_affa250_mgmt_cabling.png[DRW AFFa250管理佈線]
+image::../media/drw_affa250_mgmt_cabling.png[管理連接埠纜線]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
  a| 
 此時請勿插入電源線。
 
@@ -236,7 +237,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -251,27 +252,28 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["步驟1."]
  a| 
 將叢集互連連接埠連接至25 GbE叢集互連交換器。
 
 * e0c
-* e0dimage:../media/drw_affa250_switched_clust_cabling.png[""]
+* e0d
+image:../media/drw_affa250_switched_clust_cabling.png["叢集互連纜線"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_dr.png[""]
+image:../media/oie_legend_icon_2_dr.png["編號 2"]
  a| 
 使用RJ45纜線將扳手連接埠連接至管理網路交換器。
 
-image::../media/drw_affa250_mgmt_cabling.png[DRW AFFa250管理佈線]
+image::../media/drw_affa250_mgmt_cabling.png[管理連接埠纜線]
 
 
 
  a| 
-image::../media/oie_legend_icon_attn_symbol.png[OIE圖例圖示收件人符號]
+image::../media/oie_legend_icon_attn_symbol.png[注意符號]
  a| 
 此時請勿插入電源線。
 
@@ -295,7 +297,7 @@ image::../media/oie_legend_icon_attn_symbol.png[OIE圖例圖示收件人符號]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+image::../media/oie_cable_pull_tab_up.png[纜線連接器、頂部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -310,7 +312,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
  a| 
 將連接埠2a至2D連接至FC主機交換器。
 
-image::../media/drw_affa250_fc_host_cabling.png[DRW仿射250光纖通道主機纜線]
+image::../media/drw_affa250_fc_host_cabling.png[光纖通道主機纜線]
 
 
 
@@ -342,7 +344,7 @@ image::../media/drw_affa250_fc_host_cabling.png[DRW仿射250光纖通道主機�
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+image::../media/oie_cable_pull_tab_up.png[纜線連接器、頂部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -357,7 +359,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
  a| 
 將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。
 
-image::../media/drw_affa250_25gbe_host_cabling.png[DRW AFFa250 25GbE主機纜線]
+image::../media/drw_affa250_25gbe_host_cabling.png[25 GbE 纜線]
 
 
 
@@ -386,7 +388,7 @@ image::../media/drw_affa250_25gbe_host_cabling.png[DRW AFFa250 25GbE主機纜線
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_up.png[OIE纜線拉片向上]
+image::../media/oie_cable_pull_tab_up.png[纜線連接器、頂部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -401,16 +403,16 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto]
 
 
  a| 
-image:../media/oie_legend_icon_1_mb.png[""]
+image:../media/oie_legend_icon_1_mb.png["編號 1"]
  a| 
-將控制器A纜線連接至機櫃： image:../media/drw_affa250_1shelf_cabling_a.png[""]
+將控制器A纜線連接至機櫃：    image:../media/drw_affa250_1shelf_cabling_a.png["控制器 A 纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_lo.png[""]
+image:../media/oie_legend_icon_2_lo.png["編號 2"]
  a| 
-將控制器B纜線連接至機櫃： image:../media/drw_affa250_1shelf_cabling_b.png[""]
+將控制器B纜線連接至機櫃：    image:../media/drw_affa250_1shelf_cabling_b.png["控制器 B 纜線"]
 
 |===
 若要完成系統設定、請參閱 link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration["步驟4：完成系統設定與組態設定"]。
@@ -439,7 +441,7 @@ image:../media/oie_legend_icon_2_lo.png[""]
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.png[選擇「自動探索控制器」]
+image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
 
 +
 .. 開啟檔案總管。
@@ -476,7 +478,7 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 將筆記型電腦或主控台連接至管理子網路上的交換器。
 +
-image::../media/drw_console_client_mgmt_subnet_affa250.png[DRW主控台用戶端管理子網路AFFa250]
+image::../media/drw_console_client_mgmt_subnet_affa250.png[連線到管理子網路]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 

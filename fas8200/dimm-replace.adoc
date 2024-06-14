@@ -187,11 +187,11 @@ mcc1A::> metrocluster operation show
 
 . 從控制器模組的左側和右側移除纜線管理裝置、並將其放在一邊。
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[DRW 32xx cbl管理ARM]
+image::../media/drw_32xx_cbl_mgmt_arm.png[取下纜線管理臂 ][]
 
 . 旋鬆控制器模組CAM握把上的指旋螺絲。
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[DRW 8020 CAM握把指旋螺絲]
+image::../media/drw_8020_cam_handle_thumbscrew.png[擰鬆指旋螺絲以打開 CAM 把手]
 
 +
 |===
@@ -225,7 +225,7 @@ CAM握把
 在更換系統元件之前、您必須執行乾淨的系統關機、以避免在非揮發性記憶體（NVMEM）中遺失未寫入的資料。LED位於控制器模組背面。尋找下列圖示：
 
 +
-image::../media/drw_hw_nvram_icon.png[DRW硬體NVRAM圖示]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 . 如果NVMEM LED未更新、則在NVMEM中沒有任何內容；您可以跳過下列步驟、繼續執行本程序中的下一個工作。
 . 拔下電池：
@@ -242,7 +242,7 @@ NOTE: 當您停止系統時、NVMEM LED會在將內容降級至快閃記憶體�
 +
 ... 打開CPU通風管、找到NVMEM電池。
 +
-image::../media/drw_rxl_nvmem_battery.png[rw rxl nvmem電池]
+image::../media/drw_rxl_nvmem_battery.png[更換NVMEM電池]
 
 +
 |===
@@ -280,7 +280,7 @@ NOTE: 小心拿住DIMM的邊緣、避免對DIMM電路板上的元件施加壓力
 下圖顯示系統DIMM的位置：
 
 +
-image::../media/drw_rxl_dimms.png[DRW rxl DIMM]
+image::../media/drw_rxl_dimms.png[更換 DIMM]
 
 . 從防靜電包裝袋中取出備用DIMM、拿住DIMM的邊角、然後將其對準插槽。
 +

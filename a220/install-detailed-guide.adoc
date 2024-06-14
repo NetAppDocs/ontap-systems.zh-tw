@@ -72,7 +72,7 @@ X6566B-05-R6（112-00297）、0.5公尺
 
 X6566B-2-R6（112-00299）、2公尺
  a| 
-image:../media/oie_cable_sfp_gbe_copper.png[""]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器"]
  a| 
 叢集互連網路
 
@@ -87,7 +87,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[""]
 
 X6566B-5-R6（112-00301）、5公尺
  a| 
-image:../media/oie_cable_sfp_gbe_copper.png[""]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器"]
  a| 
 資料
 
@@ -115,7 +115,7 @@ FC主機網路
 
 X6562-R6（112-00196）、5公尺
  a| 
-image:../media/oie_cable_rj45.png[""]
+image:../media/oie_cable_rj45.png["RJ-45 纜線連接器"]
  a| 
 管理網路與乙太網路資料
 
@@ -132,7 +132,7 @@ X6032A（112-00437）、2公尺
 
 X6033A（112-00438）、3公尺
  a| 
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]
  a| 
 儲存設備
 
@@ -154,7 +154,7 @@ image:../media/oie_cable_micro_usb.png["顯示 Micro USB 接頭的圖例"]
  a| 
 不適用
  a| 
-image:../media/oie_cable_power.png[""]
+image:../media/oie_cable_power.png["電源線"]
  a| 
 開啟系統電源
 
@@ -179,11 +179,11 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["叢集組態工�
 NOTE: 您必須瞭解與系統重量相關的安全顧慮。
 
 +
-image::../media/drw_oie_fas2700_weight_caution.png[Drw oie fas2700重量注意事項]
+image::../media/drw_oie_fas2700_weight_caution.png[兩人提舉注意事項]
 
 . 連接纜線管理裝置（如圖所示）。
 +
-image::../media/drw_cable_management_arm_install.png[DRw纜線管理ARM 功能安裝]
+image::../media/drw_cable_management_arm_install.png[連接纜線管理裝置]
 
 . 將擋板放在系統正面。
 
@@ -204,7 +204,7 @@ image::../media/drw_cable_management_arm_install.png[DRw纜線管理ARM 功能�
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -212,7 +212,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 您可以使用圖形或逐步指示來完成控制器與交換器之間的纜線連接：
 +
-image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[DRW 2700 tnscc統一化網路纜線動畫Gif]
+image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[統一化網路組態中的雙節點無交換器叢集佈線]
 
 +
 [cols="1,3"]
@@ -221,18 +221,19 @@ image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[DRW 2700 
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["步驟1."]
  a| 
 使用叢集互連纜線將叢集互連連接埠彼此連接：
 
 ** e0a至e0a
-** e0b至e0bimage:../media/drw_c190_u_tnsc_clust_cbling.png[""]
+** e0b 至 e0b
+image:../media/drw_c190_u_tnsc_clust_cbling.png["叢集互連纜線"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png[""]
+image:../media/oie_legend_icon_2_o.png["步驟 2"]
  a| 
 使用下列其中一種纜線類型、將UTA2資料連接埠纜線連接至主機網路：
 
@@ -252,16 +253,16 @@ image:../media/drw_c190_u_fc_10gbe_cbling.png["顯示周邊文字所述資料連
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png[""]
+image:../media/oie_legend_icon_3_lp.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
-image:../media/drw_c190_u_mgmt_cbling.png[""]
+image:../media/drw_c190_u_mgmt_cbling.png["管理連接埠纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
  a| 
 此時請勿插入電源線。
 
@@ -279,7 +280,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -287,7 +288,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 您可以使用圖形或逐步指示來完成控制器與交換器之間的佈線：
 +
-image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[DRW 2700交換式統一網路纜線動畫Gif]
+image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[交換式 Lustre 統一化網路纜線]
 
 +
 [cols="1,3"]
@@ -296,16 +297,16 @@ image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[DRW 2
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["步驟1."]
  a| 
 使用叢集互連纜線將e0a和e0b纜線連接至叢集互連交換器：
 
-image:../media/drw_c190_u_switched_clust_cbling.png[""]
+image:../media/drw_c190_u_switched_clust_cbling.png["Cluster互 連纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png[""]
+image:../media/oie_legend_icon_2_o.png["步驟 2"]
  a| 
 使用下列其中一種纜線類型、將UTA2資料連接埠纜線連接至主機網路：
 
@@ -329,16 +330,16 @@ image:../media/drw_c190_u_fc_10gbe_cbling.png["顯示周邊文字所述資料連
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png[""]
+image:../media/oie_legend_icon_3_lp.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
-image:../media/drw_c190_u_mgmt_cbling.png[""]
+image:../media/drw_c190_u_mgmt_cbling.png["管理連接埠纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
  a| 
 此時請勿插入電源線。
 
@@ -356,7 +357,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -364,7 +365,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 您可以使用圖形或逐步指示來完成控制器與交換器之間的纜線連接：
 +
-image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[DRW 2700 tnscc乙太網路纜線動畫Gif]
+image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[無交換器的雙節點網路纜線]
 
 +
 [cols="1,3"]
@@ -373,7 +374,7 @@ image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[DRW 2700
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["步驟1."]
  a| 
 使用叢集互連纜線將叢集互連連接埠彼此連接：
 
@@ -385,25 +386,25 @@ image:../media/drw_c190_e_tnsc_clust_cbling.png["顯示控制器背面連接埠�
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png[""]
+image:../media/oie_legend_icon_2_o.png["步驟 2"]
  a| 
 使用Cat 6 RJ45纜線將e0c纜線透過e0f連接埠連接至主機網路：
 
-image:../media/drw_c190_e_rj45_cbling.png[""]
+image:../media/drw_c190_e_rj45_cbling.png["主機網路纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png[""]
+image:../media/oie_legend_icon_3_lp.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
-image:../media/drw_c190_e_mgmt_cbling.png[""]
+image:../media/drw_c190_e_mgmt_cbling.png["管理連接埠纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
  a| 
 此時請勿插入電源線。
 
@@ -421,7 +422,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -429,7 +430,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .步驟
 . 您可以使用圖形或逐步指示來完成控制器與交換器之間的佈線：
 +
-image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[DRw 2700交換式乙太網路纜線動畫Gif]
+image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[交換式乙太網路纜線]
 
 +
 [cols="1,2"]
@@ -438,34 +439,34 @@ image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[DRw 
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png[""]
+image:../media/oie_legend_icon_1_lg.png["步驟1."]
  a| 
 使用叢集互連纜線將e0a和e0b纜線連接至叢集互連交換器：
 
-image:../media/drw_c190_e_switched_clust_cbling.png[""]
+image:../media/drw_c190_e_switched_clust_cbling.png["叢集互連纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png[""]
+image:../media/oie_legend_icon_2_o.png["步驟 2"]
  a| 
 使用Cat 6 RJ45纜線將e0c纜線透過e0f連接埠連接至主機網路：
 
-image:../media/drw_c190_e_rj45_cbling.png[""]
+image:../media/drw_c190_e_rj45_cbling.png["主機網路纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png[""]
+image:../media/oie_legend_icon_3_lp.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
-image:../media/drw_c190_e_mgmt_cbling.png[""]
+image:../media/drw_c190_e_mgmt_cbling.png["管理連接埠纜線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_attn_symbol.png[""]
+image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
  a| 
 此時請勿插入電源線。
 
@@ -487,7 +488,7 @@ image:../media/oie_legend_icon_attn_symbol.png[""]
 
 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
+image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
 .步驟
 . 連接HA配對與外部磁碟機櫃：
@@ -496,7 +497,7 @@ image::../media/oie_cable_pull_tab_down.png[OIE纜線下拉式彈片]
 NOTE: 範例使用DS224C。佈線與其他支援的磁碟機櫃類似。
 
 +
-image::../media/drw_2700_ha_storage_cabling_animated_gif.png[DRW 2700 ha儲存設備佈線動畫Gif]
+image::../media/drw_2700_ha_storage_cabling_animated_gif.png[HA 配對中的機櫃纜線]
 
 +
 [cols="1,3"]
@@ -505,40 +506,41 @@ image::../media/drw_2700_ha_storage_cabling_animated_gif.png[DRW 2700 ha儲存�
 
 
  a| 
-image:../media/oie_legend_icon_1_lo.png[""]
+image:../media/oie_legend_icon_1_lo.png["編號 1"]
  a| 
 將機櫃對機櫃連接埠連接至纜線。
 
 ** IOM A上的連接埠3連接至下方機櫃上IOM A上的連接埠1。
 ** IOM B上的連接埠3連接至下方機櫃上IOM B上的連接埠1。
 +
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] Mini-SAS HD至Mini-SAS HD纜線
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]     Mini-SAS HD至Mini-SAS HD纜線
 
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_mb.png[""]
+image:../media/oie_legend_icon_2_mb.png["步驟 2"]
  a| 
 將每個節點連接至堆疊中的IOM A。
 
 ** 控制器1連接埠0b至IOM堆疊中最後一個磁碟機櫃的連接埠3。
 ** 控制器2連接埠0A至IOM堆疊中第一個磁碟機櫃的連接埠1。
 +
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] Mini-SAS HD至Mini-SAS HD纜線
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]     Mini-SAS HD至Mini-SAS HD纜線
 
 
 
 
 
  a| 
-image:../media/oie_legend_icon_3_t.png[""]
+image:../media/oie_legend_icon_3_t.png["步驟 3"]
  a| 
 將每個節點連接至堆疊中的IOM B
 
 ** 控制器1連接埠0A至堆疊中第一個磁碟機櫃上的IOM B連接埠1。
-** 控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[""] Mini-SAS HD至Mini-SAS HD纜線
+** 控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]     Mini-SAS HD至Mini-SAS HD纜線
 
 
 |===
@@ -568,7 +570,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 . 開啟兩個節點的電源開關。
 +
-image::../media/drw_turn_on_power_switches_to_psus.png[啟用切換至PSU的電源]
+image::../media/drw_turn_on_power_switches_to_psus.png[開啟電源]
 
 +
 
@@ -584,7 +586,7 @@ NOTE: 初始開機最多可能需要八分鐘。
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.png[選擇「自動探索控制器」]
+image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
 
 +
 .. 開啟檔案總管。
@@ -624,11 +626,11 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 將主控台纜線連接至筆記型電腦或主控台、然後使用系統隨附的主控台纜線連接控制器上的主控台連接埠。
 +
-image::../media/drw_console_connect_fas2700_affa200.png[DRW主控台連接fas2700 affa200]
+image::../media/drw_console_connect_fas2700_affa200.png[連線至主控台連接埠]
 
 .. 將筆記型電腦或主控台連接至管理子網路上的交換器。
 +
-image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[從客戶端到管理子網路的DRW fas2700 affa220]
+image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[連線到管理子網路]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 
@@ -640,7 +642,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 . 開啟兩個節點的電源開關。
 +
-image::../media/drw_turn_on_power_switches_to_psus.png[啟用切換至PSU的電源]
+image::../media/drw_turn_on_power_switches_to_psus.png[開啟電源]
 
 +
 
@@ -677,7 +679,7 @@ NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台
 .. 將瀏覽器指向節點管理IP位址。
 +
 
-NOTE: 位址的格式為 https://x.x.x.x[]。
+NOTE: 地址格式為+https://x.x.x.x.+
 
 .. 使用您在《NetApp ONTAP 產品介紹》指南中收集的資料來設定系統。
 +
