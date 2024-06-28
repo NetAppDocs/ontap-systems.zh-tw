@@ -17,8 +17,7 @@ NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Fl
 
 由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
 
-*開始之前*
-
+.開始之前
 * 所有磁碟櫃都必須正常運作。
 * 如果您的系統是HA配對、則合作夥伴節點必須能夠接管與要更換的NVRAM模組相關的節點。
 * 本程序使用下列術語：
@@ -202,6 +201,7 @@ mcc1A::> metrocluster operation show
 image::../media/drw_9000_remove_flashcache.png[更換快取模組]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -241,9 +241,10 @@ NVRAM模組會從機箱中鬆脫、然後移出幾英吋。
 
 .. 拉動模組面兩側的拉片、將NVRAM模組從機箱中取出。
 +
-image::../media/drw_9000_move_remove_nvram_module.png[DRw 9000 Move移除NVRAM模組]
+image::../media/drw_9000_move_remove_nvram_module.png[卸下NVRAM模組]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -264,9 +265,10 @@ I/O鎖定完全解除鎖定
 
 . 將NVRAM模組設定在穩固的表面上、向下按護蓋上的藍色鎖定按鈕、將護蓋從NVRAM模組中取出、然後按住藍色按鈕、將護蓋從NVRAM模組中滑出。
 +
-image::../media/drw_9000_remove_nvram_module_contents.png[DRw 9000移除NVRAM模組內容]
+image::../media/drw_9000_remove_nvram_module_contents.png[卸下 NVRAM 模組內容]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -313,9 +315,10 @@ NVRAM模組會從機箱中鬆脫、然後移出幾英吋。
 
 .. 拉動模組面兩側的拉片、將NVRAM模組從機箱中取出。
 +
-image::../media/drw_9000_move_remove_nvram_module.png[DRw 9000 Move移除NVRAM模組]
+image::../media/drw_9000_move_remove_nvram_module.png[卸下NVRAM模組]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -336,9 +339,10 @@ I/O鎖定完全解除鎖定
 
 . 將NVRAM模組設定在穩固的表面上、向下按護蓋上的藍色鎖定按鈕、將護蓋從NVRAM模組中取出、然後按住藍色按鈕、將護蓋從NVRAM模組中滑出。
 +
-image::../media/drw_9000_remove_nvram_module_contents.png[DRw 9000移除NVRAM模組內容]
+image::../media/drw_9000_remove_nvram_module_contents.png[卸下 NVRAM 模組內容]
 
 +
+[cols="1,4"]
 |===
 
 
