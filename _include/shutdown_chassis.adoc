@@ -8,8 +8,8 @@
 您需要：
 
 * ONTAP 的本機系統管理員認證。
-* NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密）。
-* 每個控制器的 SP/BMC 存取能力。
+* NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密或 NVE/NAE ）。
+* 每個控制器的 BMC 存取能力。
 * 停止所有用戶端 / 主機存取 NetApp 系統上的資料。
 * 暫停外部備份工作。
 * 更換所需的工具和設備。
@@ -17,9 +17,6 @@
 
 
 NOTE: 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["正常關機並開啟儲存系統解析指南"] 執行此程序之後。
-
-
-NOTE: 如果使用 FlexArray 陣列 LUN 、請遵循特定廠商的儲存陣列文件、以瞭解在執行此程序之後、要對這些系統執行的關機程序。
 
 
 NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]
@@ -50,18 +47,15 @@ NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Cust
 
 NOTE: 開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。
 
-. 停止叢集中的所有節點：
+. 停止位於受損機箱中的 2 個節點：
 +
-`system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`。
+`system node halt -node <node>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
 
 +
 
-NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `system node halt -node <node>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. 當您看到時、請為叢集中的每個控制器輸入 * y* `_Warning: Are you sure you want to halt node "cluster name-controller number"?
+. 當您看到時、請為叢集中的每個控制器輸入 * y* `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
 {y|n}:_`
 . 等待每個控制器停止並顯示載入器提示。
-. 如果沒有 PSU 開 / 關開關、請關閉每個 PSU 或拔下它們。
-. 從每個 PSU 拔下電源線。
-. 確認受損機箱中的所有控制器都已關機。
 

@@ -1,0 +1,33 @@
+---
+permalink: ns224/hot-add-shelf-overview.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, overview 
+summary: 若要熱新增 NS224 磁碟機櫃、您的 HA 配對必須符合特定需求。 
+---
+= 熱新增工作流程 - NS224 機櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請依照下列工作流程步驟、熱新增 NS224 機櫃。
+
+.開始之前
+若要熱新增 NS224 機櫃、您的 HA 配對必須符合特定需求。查看 link:requirements-hot-add-shelf.html["熱新增需求和最佳實務做法"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:prepare-hot-add-shelf.html["準備熱新增您的機櫃"]
+[role="quick-margin-para"]
+視您的平台機型而定、您可能需要安裝其他具備 ROCE 功能的 PCIe 卡或 I/O 模組、設定支援 ROCE 功能的非專用乙太網路連接埠以供儲存使用、在不同插槽的兩組連接埠之間重新配置現有機櫃、以因應插槽故障的恢復能力、 如果您是手動指派磁碟機擁有權、請停用自動磁碟機指派。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:install-hot-add-shelf.html["安裝您的機櫃"]
+[role="quick-margin-para"]
+若要安裝機櫃、請安裝機櫃的軌道套件、然後將機櫃安裝並固定在電信機架或機櫃中。接下來、將電源線連接至機櫃電源、然後指派唯一的機櫃 ID 、以確保機櫃在 HA 配對中是不同的。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:cable-overview-hot-add-shelf.html["為您的機櫃佈線"]
+[role="quick-margin-para"]
+將您要熱新增的機櫃連接至 HA 配對中的每個控制器、使其有兩個連線。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:complete-hot-add-shelf.html["完成熱新增"]
+[role="quick-margin-para"]
+如果您在準備熱新增時停用自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。

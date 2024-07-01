@@ -1,0 +1,78 @@
+---
+section: a1k
+title: AFF A1K 系統
+entries:
+- title: 安裝與設定
+  pdf-filename: AFF A1K 安裝與設定
+  entries:
+  - title: 安裝工作流程
+    url: "/a1k/install-overview.html"
+  - title: 準備安裝
+    url: "/a1k/install-prepare.html"
+  - title: 安裝硬體
+    url: "/a1k/install-hardware.html"
+  - title: 纜線硬體
+    url: "/a1k/install-cable.html"
+  - title: 開啟系統電源
+    url: "/a1k/install-power-hardware.html"
+  - title: 完成系統設定
+    url: "/a1k/install-complete.html"
+- title: 維護
+  pdf-filename: AFF A1K 維護
+  entries:
+  - title: 總覽
+    url: "/a1k/maintain-overview.html"
+  - title: 開機媒體
+    pdf-filename: AFF A1K 開機媒體
+    entries:
+    - title: 開機媒體取代總覽
+      url: "/a1k/bootmedia-replace-overview.html"
+    - title: 檢查內建加密金鑰
+      url: "/a1k/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/a1k/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/a1k/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/a1k/bootmedia-recovery-image-boot.html"
+    - title: 加密還原
+      url: "/a1k/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/a1k/bootmedia-complete-rma.html"
+  - title: 控制器
+    pdf-filename: AFF A1K 控制器模組
+    entries:
+    - title: 控制器模組更換總覽
+      url: "/a1k/controller-replace-overview.html"
+    - title: 關閉受損的控制器
+      url: "/a1k/controller-replace-shutdown.html"
+    - title: 更換控制器
+      url: "/a1k/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/a1k/controller-replace-system-config-restore-and-verify.html"
+    - title: 將控制器交回
+      url: "/a1k/controller-replace-recable-reassign-disks.html"
+    - title: 完整更換控制器
+      url: "/a1k/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/a1k/dimm-replace.html"
+  - title: 風扇
+    url: "/a1k/fan-replace.html"
+  - title: NVRAM
+    url: "/a1k/nvram-replace.html"
+  - title: NV 電池
+    url: "/a1k/nvdimm-battery-replace.html"
+  - title: I/O模組
+    entries:
+    - title: 新增或更換 I/O 模組總覽
+      url: "/a1k/io-module-overview.html"
+    - title: 新增 I/O 模組
+      url: "/a1k/io-module-add.html"
+    - title: 更換 I/O 模組
+      url: "/a1k/io-module-replace.html"
+  - title: 電源供應器
+    url: "/a1k/power-supply-replace.html"
+  - title: 即時時鐘電池
+    url: "/a1k/rtc-battery-replace.html"
+  - title: 系統管理模組
+    url: "/a1k/system-management-replace.html"

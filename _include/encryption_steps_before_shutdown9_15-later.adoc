@@ -1,0 +1,33 @@
+= 
+:allow-uri-read: 
+
+
+在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。
+
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+.步驟
+. 檢查受損控制器的狀態：
++
+** 如果受損的控制器處於登入提示狀態、請以「admin」身分登入。
+** 如果受損的控制器處於載入器提示狀態、並且是HA組態的一部分、請在健全的控制器上以「admin」身分登入。
+
+
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列 AutoSupport 訊息會在兩小時內禁止自動建立個案：「 cluster1:*> 系統節點 AutoSupport 呼叫 -node*-type all -message MAINT =2h
+
+. 使用ONTAP 「vrvion -v」命令檢查系統在受損控制器上執行的版本；如果受損控制器停機、則檢查合作夥伴控制器上執行的版本：
++
+** 如果命令輸出中顯示 <lno-DARE> 或 <1Ono － DARe 、表示系統不支援 NVE 、請繼續執行 https://docs.netapp.com/us-en/ontap-systems/fas2800/bootmedia-impaired-controller-shutdown.html["關閉受損的控制器"]。
+** 如果命令輸出中未顯示 <lno-DARE> 、且系統執行的是 ONTAP 9.6 或更新版本、請繼續下一節、 <<在執行ONTAP Se 9.6及更新版本的系統上檢查NVE或NSE>>。
+
+
+. 停用健康控制器的自動恢復：
++
+....
+`storage failover modify -node local -auto-giveback false`
+or
+`storage failover modify -node local -auto-giveback-after-panic false`
+....
+

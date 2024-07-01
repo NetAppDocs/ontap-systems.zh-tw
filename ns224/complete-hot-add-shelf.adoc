@@ -1,0 +1,35 @@
+---
+permalink: ns224/complete-hot-add-shelf.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, complete, drive, hot-add an ns224 drive shelf 
+summary: 如果您在準備NS224磁碟機櫃熱新增時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。 
+---
+= 完成熱新增 - NS224 機櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在準備 NS224 機櫃熱新增時停用自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。
+
+.開始之前
+您必須已依照HA配對的指示、將機櫃連接好纜線。請參閱。 link:cable-overview-hot-add-shelf.html["熱新增的纜線總覽"]
+
+.步驟
+. 顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」
++
+您可以在任一控制器上輸入命令。
+
+. 指派每個磁碟機：「torage disk assign -disk _disk_name_-Owner_name_」
++
+您可以在任一控制器上輸入命令。
+
++
+您可以使用萬用字元一次指派多個磁碟機。
+
+. 如有需要、請重新啟用自動磁碟指派：「儲存磁碟選項修改節點節點節點名稱_-autodassign on」
++
+您必須在兩個控制器上重新啟用自動磁碟機指派。
+
+

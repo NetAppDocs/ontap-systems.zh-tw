@@ -6,7 +6,27 @@ entries:
   pdf-filename: NS224磁碟櫃安裝與纜線
   entries:
   - title: 熱新增機櫃
-    url: "/ns224/hot-add-shelf.html"
+    entries:
+    - title: 熱新增工作流程
+      url: "/ns224/hot-add-shelf-overview.html"
+    - title: 要求與最佳實務做法
+      url: "/ns224/requirements-hot-add-shelf.html"
+    - title: 準備熱新增
+      url: "/ns224/prepare-hot-add-shelf.html"
+    - title: 安裝熱新增的機櫃
+      url: "/ns224/install-hot-add-shelf.html"
+    - title: 熱新增的纜線架
+      entries:
+      - title: 纜線配置總覽
+        url: "/ns224/cable-overview-hot-add-shelf.html"
+      - title: 系統AFF
+        url: "/ns224/cable-aff-systems-hot-add-shelf.html"
+      - title: 系統ASA
+        url: "/ns224/cable-asa-systems-hot-add-shelf.html"
+      - title: 終止可用度系統
+        url: "/ns224/cable-eoa-systems-hot-add-shelf.html"
+    - title: 完成熱新增
+      url: "/ns224/complete-hot-add-shelf.html"
   - title: 變更機櫃ID
     url: "/ns224/change-shelf-id.html"
   - title: 纜線櫃作為交換器附加儲存設備

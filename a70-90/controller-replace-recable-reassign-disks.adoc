@@ -1,0 +1,98 @@
+---
+permalink: a70-90/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: aff a70, aff a90, how to recable the system, teboot the system 
+summary: 您必須重新啟動控制器的儲存設備。 
+---
+= 可回收並退回控制器 - AFF A70 、 AFF A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+重新連接儲存設備、網路連線、並將控制器送回、以繼續更換程序。
+
+
+
+== 步驟1：重新安裝系統
+
+可重新連接控制器模組的儲存設備和網路連線。
+
+.步驟
+. 將控制器模組重新連接至儲存設備和網路連線。
+. 使用確認纜線正確無誤 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
++
+.. 下載並安裝Config Advisor 此功能。
+.. 輸入目標系統的資訊、然後按一下「Collect Data（收集資料）」。
+.. 按一下「纜線」索引標籤、然後檢查輸出。請確定所有磁碟櫃均已顯示、且所有磁碟均顯示在輸出中、以修正您發現的任何纜線問題。
+.. 按一下適當的索引標籤、然後檢查Config Advisor 來自NetApp的輸出、檢查其他纜線。
+
+
+
+
+
+
+== 步驟 2 ：退回控制器
+
+. 如果您的儲存系統已設定加密、則必須使用下列程序還原儲存或磁碟區加密功能、才能重新啟動系統：
++
+.. 開機至功能表並執行選項 10
+.. 輸入複雜密碼與備份資料、然後執行正常開機請參閱 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys["還原內建金鑰管理加密金鑰"]。
+.. 僅執行 CFO 贈品
+.. 執行 Onboard Sync 並驗證 SVM-KEK 是否設為 true 、請參閱 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement["更換 MB 失敗後的 GiveBack - 操作被 keymanager 否決"]
+.. GiveBack SFO （無強制）
+
+
+. 如果您的系統未設定加密、請完成下列程序以重新啟動系統：
++
+.. 開機至功能表並執行選項 1 。
+.. 退回控制器：
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
++
+_replacement控制器會恢復其儲存設備並完成開機。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您版本的更新版本的高可用度組態內容"]
+
+.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
+
+
+. 如果系統採用MetroCluster 的是一套不全功能的組態、請監控控制器的狀態：MetroCluster 「不只是顯示節點」
++
+更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster
+
+. 如果控制器是MetroCluster 以支援功能為基礎的組態、請MetroCluster 視所用的情況而定、確認如果原始擁有者是災難站台上的控制器、DR主ID欄位會顯示磁碟的原始擁有者。
++
+如果下列兩項條件均為真、則必須執行此動作：
+
++
+** 此功能組態處於切換狀態。MetroCluster
+** _replacement控制器是災難站台上磁碟的目前擁有者。
++
+https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration["在HA接管期間、磁碟擁有權會有所變更、MetroCluster 而在四節點MetroCluster 的功能組態中、也會進行不全的功能切換"]
+
+
+
+. 如果您的系統使用MetroCluster 的是E驗 證組態、請確認每個控制器都已設定：「MetroCluster E節點 顯示-欄位組態狀態」
++
+[listing]
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
+

@@ -1,0 +1,70 @@
+= 在執行ONTAP Se 9.15及更新版本的系統上檢查NVE或NSE
+:allow-uri-read: 
+
+
+在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。
+
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+
+== 在執行ONTAP Se 9.15及更新版本的系統上檢查NVE或NSE
+
+在關閉受損控制器之前、您需要確認系統是否已啟用安全金鑰管理程式或加密磁碟。
+
+
+
+== 驗證安全金鑰管理程式組態
+
+.步驟
+. 使用 _security key-manager keystore show_ 命令、確定金鑰管理程式是否作用中。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html["安全密鑰管理器密鑰庫顯示手冊頁"^]
++
+
+NOTE: 您可能還有其他金鑰管理程式類型。類型包括 `KMIP`、 `AKV`和 `GCP`。確認這些類型的程序與確認或金鑰管理程式類型相同 `external` `onboard` 。
+
++
+** 如果未顯示任何輸出、請前往 link:bootmedia-shutdown.html["關閉受損的控制器"] 關閉受損節點。
+** 如果命令顯示輸出、表示系統已啟用、 `security key-manager` 您需要顯示 `Key Manager` 類型和狀態。
+
+
+. 使用 _security key-manager keyquery_ 命令顯示作用中的資訊 `Key Manager` 。
++
+** 如果顯示類型且欄位顯示、則 `Key Manager` `external` `Restored` `true`可安全關閉受損的控制器。
+** 如果 `Key Manager` 顯示類型 `onboard` 且 `Restored` 欄位顯示 `true`、您需要完成一些其他步驟。
+** 如果 `Key Manager` 顯示的類型 `external` 和 `Restored` 欄顯示的不是 `true`、您需要完成一些其他步驟。
+** 如果 `Key Manager` 顯示的類型 `onboard` 和 `Restored` 欄顯示的不是 `true`、您需要完成一些其他步驟。
+
+
+. 如果 `Key Manager` 顯示類型 `onboard` 且 `Restored` 欄顯示 `true`、請手動備份 OKM 資訊：
++
+.. 當系統提示您繼續時、請輸入 `y` ： `set -priv advanced`
+.. 輸入命令以顯示金鑰管理資訊： _security key-manager onboard show-backup_
+.. 將備份資訊的內容複製到個別檔案或記錄檔。在可能需要手動恢復OKM的災難情境中、您將需要此工具。
+.. 您可以安全地關閉受損的控制器。
+
+
+. 如果 `Key Manager` 顯示的類型 `onboard` 和 `Restored` 欄顯示的內容不是 `true`：
++
+.. 輸入機載安全金鑰管理程式同步命令： _security key-manager onboard sync
++
+
+NOTE: 在提示字元中輸入 32 個字元的英數字元內建金鑰管理密碼。如果無法提供通行密碼、請聯絡 NetApp 支援部門。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
+
+.. 驗證 `Restored` 所有驗證金鑰的欄位顯示 `true` ： `security key-manager key query`
+.. 驗證類型是否 `Key Manager` 顯示 `onboard`，然後手動備份 OKM 資訊。
+.. 輸入命令以顯示金鑰管理備份資訊： _security key-manager onboard show-backup_
+.. 將備份資訊的內容複製到個別檔案或記錄檔。在可能需要手動恢復OKM的災難情境中、您將需要此工具。
+.. 您可以安全地關閉控制器。
+
+
+. 如果 `Key Manager` 顯示的類型 `external` 和 `Restored` 欄顯示的內容不是 `true`：
++
+.. 將外部金鑰管理驗證金鑰還原至叢集中的所有節點：「安全金鑰管理程式外部還原」
++
+如果命令失敗，請與 NetApp 支援中心聯絡： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+
+.. 確認 `Restored` 所有驗證金鑰的欄位都顯示 `true` ： _security key-manager key query_
+.. 您可以安全地關閉受損的控制器。
+
+
+

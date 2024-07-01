@@ -1,0 +1,60 @@
+---
+permalink: ns224/requirements-hot-add-shelf.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement 
+summary: 若要熱新增 NS224 磁碟機櫃、您的 HA 配對必須符合特定需求。 
+---
+= 熱新增的需求與最佳實務做法： NS224 機櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在熱新增機櫃之前、請務必先檢閱需求和最佳實務做法。
+
+
+
+== 需求
+
+若要熱新增 NS224 機櫃、您的 HA 配對必須符合特定需求。
+
+* * 支援的 ONTAP 版本 * ：您的平台型號和 ONTAP 版本必須支援您要熱新增的 NS224 機櫃和磁碟機。請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^]
+* * 機櫃數量 * ：您的 HA 配對必須少於支援的機櫃數量上限、至少要少於您打算熱新增的機櫃數量。
++
+在熱新增磁碟櫃之後、您無法超過HA配對所支援的磁碟櫃數量上限。請參閱。 https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+* * 佈線 * ：
++
+** 請確定您擁有正確的纜線數量和類型、以連接機櫃。請參閱。 https://hwu.netapp.com["NetApp Hardware Universe"^]
+** 如果要將機櫃熱新增至已有NS224機櫃的HA配對、HA配對就不會出現任何儲存設備纜線錯誤訊息、而且必須以多重路徑HA的纜線連接。
++
+您可以執行  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] 以檢視任何儲存纜線錯誤訊息、以及您應該採取的修正行動。
+
+
+
+
+
+
+
+== 最佳實務做法
+
+在熱新增 NS224 機櫃之前、請先熟悉下列最佳實務做法。
+
+* 最佳實務做法： * 最佳實務做法是在熱新增機櫃之前、先安裝最新版本 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["磁碟資格審查套件"^] 的。
++
+安裝最新版的DQP可讓您的系統辨識及使用新的合格磁碟機。如此可避免系統事件訊息、因為無法辨識磁碟機、因此無法取得非最新的磁碟機資訊並防止磁碟分割。此外、DQP也會通知您非最新的磁碟機韌體。
+
+* 最佳實務做法： * 最佳實務做法是在熱新增機櫃之前和之後執行 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] 。
++
+在Active IQ Config Advisor 熱新增機櫃之前執行支援功能可提供現有機櫃乙太網路（ENET）連線的快照、驗證NVMe機櫃模組（NSM）韌體版本、並可讓您驗證HA配對中已使用的機櫃ID。
+
++
+在熱新增機櫃之後執行Active IQ Config Advisor 功能、可讓您驗證機櫃的纜線是否正確、以及HA配對內的機櫃ID是否獨特。
+
+* * 最佳實務做法： * 最佳實務做法是在新增新機櫃之前、先在儲存系統上安裝及安裝最新版本 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NVMe 儲存模組（ NSM ）韌體"^] https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["磁碟機韌體"^] 。
++
+
+NOTE: 請勿將韌體還原至不支援機櫃及其元件的版本。
+
+

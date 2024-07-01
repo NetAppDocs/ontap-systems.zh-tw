@@ -1,0 +1,256 @@
+---
+permalink: a1k/nvdimm-battery-replace.html 
+sidebar: sidebar 
+keywords: aff a1k, replace the nv battery, NV battery 
+summary: 若要更換NV電池、您必須取出控制器模組、取出電池、更換電池、然後重新安裝控制器模組。 
+---
+= 更換 NV 電池 - AFF A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要更換NV電池、您必須取出控制器模組、取出電池、更換電池、然後重新安裝控制器模組。
+
+系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+
+== 步驟1：關閉受損的控制器
+
+使用下列其中一個選項來關閉或接管受損的控制器。
+
+[role="tabbed-block"]
+====
+.選項1：大多數系統
+--
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您有 SAN 系統，則必須檢查故障控制器 SCSI 刀鋒的事件訊息  `cluster kernel-service show`。 `cluster kernel-service show`命令（從 priv 進階模式）會顯示節點名稱、該節點的仲裁狀態、該節點的可用性狀態、以及該節點的作業狀態。
++
+每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+.步驟
+. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
++
+
+NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+.選項2：控制器位於MetroCluster 一個不二之處
+--
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+====
+
+
+== 步驟2：移除控制器模組
+
+更換控制器模組或更換控制器模組內的元件時、您必須從機箱中移除控制器模組。
+
+. 檢查系統插槽 4/5 中的 NVRAM 狀態 LED 。控制器模組前面板上也有 NVRAM LED 。尋找 NV 圖示：
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM 注意與狀態 LED 位置圖]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.svg["編號 1 、寬度 = 30px"]
+ a| 
+NVRAM 狀態 LED
+
+
+
+ a| 
+image:../media/legend_icon_02.svg["編號 1 、寬度 = 30px"]
+ a| 
+NVRAM 注意 LED
+
+|===
++
+
+NOTE: 如果 NVRAM 狀態 LED 閃爍、可能表示控制器模組未正確接管或停止（未認可的資料）。如果合作夥伴控制器模組未成功接管受損的控制器模組、請先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"] 、再繼續執行此程序。
+
++
+故障控制器模組上 NVRAM 狀態 LED 的一般行為如下：
+
++
+** 從控制器模組拔下電源、控制器模組處於「等待恢復」狀態、或控制器模組未正確接管或停止（未認可的資料）時、 NVRAM 狀態 LED 會閃爍。
+** 從機箱中移除控制器模組時、 NVRAM 狀態 LED 會閃爍、這可能表示控制器模組未正確接管或停止（未認可的資料）。確認已由合作夥伴控制器模組完全接管控制器模組、或顯示受損控制器模組 `waiting for giveback`。然後、可以忽略閃爍的 LED （並從機箱中移除控制器）。
+
+
+. 如果您尚未接地、請正確接地。
+. 在裝置正面、將手指勾入鎖定凸輪的孔中、壓緊凸輪桿上的彈片、然後輕輕地同時將兩個鎖條牢牢地朝您的方向旋轉。
++
+控制器模組會稍微移出機箱。
+
++
+image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[控制器移除圖形]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.svg["編號 1 、寬度 = 30px"]
+| A 鎖定凸輪栓鎖 
+|===
+. 將控制器模組滑出機箱、然後放在平坦穩定的表面上。
++
+將控制器模組滑出機箱時、請務必支撐控制器模組的底部。
+
+
+
+
+
+== 步驟3：更換NV電池
+
+從控制器模組中取出故障的 NV 電池、然後安裝替換的 NV 電池。
+
+. 打開通風管蓋並找到 NV 電池。
++
+image::../media/drw_a1k_remove_replace_nvmembat_ieops-1379.svg[重新調整 NV 電池的速度]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/legend_icon_01.svg["編號 1 、寬度 = 30 像素"]
+| NV 電池通風管蓋 
+
+
+ a| 
+image:../media/legend_icon_02.svg["編號 2 、寬度 = 30 像素"]
+ a| 
+NV 電池插頭
+
+|===
+. 將電池向上提、以取用電池插頭。
+. 擠壓電池插頭正面的固定夾、將插頭從插槽中拔下、然後從插槽拔下電池纜線。
+. 將電池從通風管和控制器模組中取出、然後放在一邊。
+. 從包裝中取出替換電池。
+. 將替換電池組裝入控制器：
++
+.. 將電池插頭插入擴充卡插槽、並確定插塞鎖定到位。
+.. 將電池套件插入插槽、然後穩固地向下按電池套件、以確保其鎖定到位。
+
+
+. 關閉 NV 通風管蓋。
++
+確定插頭已鎖入插槽。
+
+
+
+
+
+== 步驟4：重新安裝控制器模組
+
+重新安裝控制器模組並將其開機。
+
+. 如果您尚未這麼做、請關閉通風管。
+. 將控制器模組的末端與機箱中的開口對齊、然後將控制器模組滑入機箱、並將控制桿從系統正面旋轉。
+. 一旦控制器模組停止滑動、請向內旋轉 CAM 把手、直到卡入風扇下方
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
++
+一旦控制器模組完全插入機箱中、就會開始開機。
+
+. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
+. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
+
+
+
+
+== 步驟5：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["產品退貨安培；更換"] 頁面以取得更多資訊。

@@ -78,5 +78,5 @@ NOTE: 如果命令失敗、請聯絡客戶支援部門。
 . 將主控台纜線連接至合作夥伴控制器。
 . 使用"shorage容錯移轉恢復-fromnode"命令來歸還控制器。
 . 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
-. 如果使用停用 AutoSupport 、請還原 `system node autosupport invoke -node * -type all -message MAINT=END`
+. 如果啟用 AutoSupport 、請使用還原 / 恢復隱藏自動建立案例 `system node autosupport invoke -node * -type all -message MAINT=END`
 
