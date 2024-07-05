@@ -9,7 +9,7 @@
 == 驗證安全金鑰管理程式組態
 
 .步驟
-. 使用 _security key-manager keystore show_ 命令、確定金鑰管理程式是否作用中。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html["安全密鑰管理器密鑰庫顯示手冊頁"^]
+. 使用 _security key-manager keystore show_ 命令確定 Key Manager 是否處於活動狀態。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html["安全密鑰管理器密鑰庫顯示手冊頁"^]
 +
 
 NOTE: 您可能還有其他金鑰管理程式類型。類型包括 `KMIP`、 `AKV`和 `GCP`。確認這些類型的程序與確認或金鑰管理程式類型相同 `external` `onboard` 。

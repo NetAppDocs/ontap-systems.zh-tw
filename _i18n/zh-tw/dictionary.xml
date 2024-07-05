@@ -2043,7 +2043,6 @@
   <block id="8311fdba7d6af817bbd917e36ee0241a" category="doc">更換即時時鐘電池AFF - REVA300</block>
   <block id="6ffcd61574f4970c28c0b71a5611ad7c" category="section-title">步驟3：更換RTC電池</block>
   <block id="12567249cf52e7754ded20b52b9cb150" category="paragraph">若要更換RTC電池、請在控制器內找到它們、然後依照特定的步驟順序進行。</block>
-  <block id="b7d5be6336dc1e791cd4f528bc0ef57a" category="image-alt">rw rxl rc電池</block>
   <block id="529a5b75d801eb658fc7856f114ac8e5" category="section-title">步驟4：重新安裝控制器模組、並設定更換RTC電池後的時間/日期</block>
   <block id="8f511756e5bb3f8ab1b0c5b4c59ad2d1" category="section-title">步驟5：在雙節點MetroCluster 的不二組態中切換回集合體</block>
   <block id="e63d72ed0cd02fd6dc373efe52370adf" category="doc">安裝與設定PDF海報AFF -《非洲》（英文）</block>
@@ -4173,7 +4172,6 @@
   <block id="9acce39f034b56b5a36d798f9b54c493" category="paragraph">X66200-2（112-00326）、2公尺</block>
   <block id="36789c9401bff1c7c561e68fd452d624" category="paragraph">X66250-5（112-00328）、5公尺</block>
   <block id="638d6c29f972d003a7c9bce0be1075c0" category="paragraph">X66250-30（112-00331）、30公尺</block>
-  <block id="ee2a005a5fff47af39846bc52215856a" category="paragraph"><block ref="ee2a005a5fff47af39846bc52215856a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6d03b2201d103d5ae1263174b93ad00d" category="paragraph">乙太網路纜線（訂單相依）</block>
   <block id="a0e077807aa1ab474e20633b71f65adc" category="paragraph">SR：</block>
   <block id="b035e4657fbd3c974d6c165b266864f8" category="paragraph">X654-R6（112-00189）、15公尺</block>
@@ -4188,43 +4186,28 @@
   <block id="494eeb741723e2c166dc5864c7da1e64" category="paragraph">管理網路</block>
   <block id="c08fa304c8438359d1692f7b6a329b54" category="paragraph">如果筆記型電腦或主控台不支援網路探索、則在軟體設定期間使用主控台連線。</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="section-title">安裝硬體</block>
-  <block id="36038ef1dbb81cac29095e7ec102e15e" category="image-alt">DRW A320重量標籤</block>
   <block id="6c9822a6a6265e0e6627098c357cfe2d" category="section-title">將控制器纜線連接至您的網路</block>
   <block id="f69d8cf8cac45861ff6e65b70f1318ea" category="section-title">選項1：連接雙節點無交換式叢集</block>
   <block id="a766258e1cfb1ce4e72917121f65a74d" category="paragraph">控制器模組上的選用資料連接埠、選用NIC卡和管理連接埠、都會連接至交換器。兩個控制器模組上的叢集互連/ HA連接埠均已連接纜線。</block>
   <block id="5e71f7cd3736dc18c619e22ab69496b8" category="list-text">您可以使用圖例或逐步指示來完成控制器與交換器之間的纜線連接：</block>
-  <block id="013322a8027b639585538fe290718386" category="image-alt">DRW A320 tnscc網路纜線複合動畫</block>
   <block id="e5cd602ca5c03c391e8dfac3c307e06c" category="paragraph">使用100 GbE（QSFP28）纜線將叢集/ HA連接埠彼此連接：</block>
-  <block id="4f8f8380e5597e92380de812b879c5d1" category="list-text">e0d至e0d<block ref="5ea5295965a00406899d4b7460801661" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ec377d11568067a729ee6f50dee77c8" category="paragraph">如果您使用內建連接埠進行資料網路連線、請將100GbE或40GbE纜線連接至適當的資料網路交換器：</block>
-  <block id="3c04babfe00a81e06f8982d93dd90179" category="list-text">e0g和e0小時<block ref="6fafbcd677ceba87d8c48de1a29a3bf5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cc74cb2d1e5f9750b5812faaf036676e" category="paragraph">如果您使用NIC卡進行乙太網路或FC連線、請將NIC卡連接至適當的交換器：</block>
-  <block id="becd6fe246f05c450f5f6f1ff59f10ab" category="image-alt">DRW A320 NIC連線步驟3</block>
   <block id="9dfe7ca4d480fd4e10a0954286489a0f" category="paragraph">使用RJ45纜線將e0M連接埠連接至管理網路交換器。</block>
-  <block id="5d86a652667b386e0b98042631990c02" category="paragraph"><block ref="5d86a652667b386e0b98042631990c02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb9634f2ea796139d7f0aeca3f6ce2d4" category="section-title">選項2：交換式叢集的佈線</block>
   <block id="5b2974409018c6d4642074b9be18209d" category="paragraph">控制器模組上的選用資料連接埠、選用NIC卡和管理連接埠、都會連接至交換器。叢集互連/ HA連接埠會連接至叢集/ HA交換器。</block>
-  <block id="75a0d3caeb66a7c3aca3b7bc0f0c5985" category="image-alt">DRW A320交換式網路纜線複合式動畫式GIF</block>
   <block id="f5412d7277a9aad4f1e320bf63f0582b" category="paragraph">使用100 GbE（QSFP28）纜線將叢集/ HA連接埠連接至叢集/ HA交換器：</block>
   <block id="840e60c4749a688bca9fc657aaff1710" category="list-text">將兩個控制器上的e0a連接至叢集/ HA交換器</block>
-  <block id="c59f62b950bdb48bdd4229f438a8c8a8" category="list-text">將兩個控制器上的e0d連接至叢集/ HA交換器<block ref="15e7674fee3b32b30f565083329e5ce8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60e821d2b0d80835cf4d935eb3557760" category="section-title">將控制器纜線連接至磁碟機櫃</block>
   <block id="ea4a0ef865c900d0ce0d6485667ba790" category="paragraph">您必須使用內建儲存連接埠將控制器連接至機櫃。</block>
   <block id="44545bc0051cf1d567b013be4fbb64b8" category="section-title">選項1：將控制器連接至單一磁碟機櫃</block>
   <block id="722164afb5db2ef3c2f2cf14fc383cba" category="paragraph">您必須將每個控制器纜線連接至NS224磁碟機櫃上的NSM模組。</block>
   <block id="23d2444a35f8c3c8957c78070a834d0c" category="list-text">您可以使用圖例或逐步指示、將控制器連接至單一機櫃。</block>
-  <block id="d49bb9b3f4ea10bb2faedd5805957881" category="image-alt">DRW A320單一機櫃連線動畫Gif</block>
-  <block id="fcc21d6aa5ce2f3d80b7b15b3efd7622" category="paragraph">將控制器A纜線連接至機櫃 <block ref="97ef6a28616ee1b44c8e319d2e09ad63" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf09fa2cd4cedb36165538f6f6133b7f" category="paragraph">將控制器B纜線連接至機櫃： <block ref="adad54de70c837652052dc8fbe20179a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e47141e6c8fccf9bfe115e4e18090b8e" category="section-title">選項2：將控制器連接至兩個磁碟機櫃</block>
   <block id="a496c0eee37cdb410fb5999f04b37d60" category="paragraph">您必須將每個控制器連接至兩個NS224磁碟機櫃上的NSM模組。</block>
   <block id="6bd176ab7852b1804bc6113808615ff6" category="list-text">您可以使用下列圖例或書面步驟、將控制器連接至兩個磁碟機櫃。</block>
-  <block id="e49f4a89e69b410e9fd76acc797854aa" category="image-alt">DRW A320 2 shevles纜線動畫式Gif</block>
-  <block id="1fd24d2bc89f56e2b5b986eb7d944870" category="paragraph">將控制器A纜線連接至磁碟櫃： <block ref="dc30c6795d4eccef24ec9e4cbd9f34a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="64cd25defcb831725e6dbd4eeb07cec0" category="paragraph">將控制器B纜線連接至磁碟櫃： <block ref="fcd3de865e51763ca7c18796d9eecca6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="29507e337f4599b17e78b1e81c219e26" category="section-title">完成系統設定與組態</block>
   <block id="cc96661e257df64a25ec11990688e801" category="paragraph">系統開始開機。初始開機最多可能需要八分鐘</block>
-  <block id="80b38fbcbc6122c93f20a23f0edcacc5" category="image-alt">切換與控制器的DRW A320筆記型電腦</block>
   <block id="aeef38b8f860290dfafd28f807c628f7" category="admonition">地址格式為+https://x.x.x.x+。</block>
   <block id="f6344d6f5f705ef72e5da86baf7ff342" category="doc">檢查內建加密金鑰AFF - 32</block>
   <block id="3672b64d07583e651fa9761c4dd84ce8" category="list-text">如果命令輸出中沒有顯示&lt;lno－dare&gt;、而且系統執行ONTAP 的是版本號為32的9.6或更新版本、請前往下一節。</block>
@@ -4249,13 +4232,11 @@
   <block id="f42c638bfd110c61246a6666784bc4c1" category="section-title">步驟3：移動NVDIMM電池</block>
   <block id="4d0a56aece8f02d27b0a6d6c9d616e2b" category="paragraph">若要將NVDIMM電池從受損的控制器模組移至更換的控制器模組、您必須執行特定的步驟順序。</block>
   <block id="3b609a79f7b20263526b5366c8880592" category="paragraph">您可以使用下列圖例或書面步驟、將NVDIMM電池從受損的控制器模組移至更換的控制器模組。</block>
-  <block id="7a7bd9d285c26c52e7363905c161c15e" category="image-alt">DRW A320 nvbat"移動動畫Gif</block>
   <block id="6ab4c588cab9f22e47997287cbbf31a2" category="list-text">在控制器模組中找到NVDIMM電池。</block>
   <block id="132e7df6bb77c84e49f793bfa8f603a2" category="list-text">將電池模組與電池的開孔對齊、然後將電池輕推入插槽、直到卡入定位。</block>
   <block id="a1880f99fabfa105d117b95cd8a8e13f" category="admonition">請勿將電池纜線插回主機板、直到接到指示為止。</block>
   <block id="11c0701315f6ed07c6cf9f964fa86a42" category="paragraph">您必須找到開機媒體、然後依照指示將其從受損的控制器模組中移除、並將其插入更換的控制器模組。</block>
   <block id="af959703d2cf03d6f0ec54feb06a483a" category="paragraph">您可以使用下列圖例或書面步驟、將受損的控制器模組中的開機媒體移至更換的控制器模組。</block>
-  <block id="688801a2df2e8d7d87f1b2c5de917ce1" category="image-alt">DRW A320開機媒體移動動畫式Gif</block>
   <block id="11eb9c8c2de064eb9f7977a655de2097" category="list-text">開啟通風管、並使用下列圖例或控制器模組上的FRU對應圖找到開機媒體：</block>
   <block id="b7354c4a03a4fa8e4dad4a1e56b737cd" category="list-text">從控制器模組中找出並移除開機媒體：</block>
   <block id="2f803b1fd5ca64429b8057b9d74d5e2b" category="list-text">按下開機媒體末端的藍色按鈕、直到開機媒體的邊緣清除藍色按鈕為止。</block>
@@ -4266,8 +4247,6 @@
   <block id="3a03dd2c91e538d3e67a42cab9b8cce1" category="section-title">步驟5：移動DIMM</block>
   <block id="6446bf31ea57eb06abcf3d71277ace1f" category="paragraph">您需要找到DIMM、然後將其從受損的控制器模組移至更換的控制器模組。</block>
   <block id="8704a1a5bea5c63a077fa4f8a91fa4a6" category="paragraph">您可以使用下列圖例或書面步驟、將受損的控制器模組中的DIMM移至更換的控制器模組。</block>
-  <block id="2f486cec6da5b4ab5646e87394d2a4a2" category="image-alt">DRW A320 DIMM搬移動動畫Gif</block>
-  <block id="05e409ce8812fcbb841a7e4fffcaacac" category="image-alt">DRW A320 DIMM對應</block>
   <block id="81991fce0a133e64dc7f5bd7f590afbd" category="list-text">系統DIMM插槽：2、4、7、9、13、15、 18、20</block>
   <block id="42fedd56824cc1ddf6aa00c30e53255e" category="list-text">NVDIMM插槽：11.</block>
   <block id="dbbfb501b0cd6e084bc9a536cb1e4772" category="admonition">NVDIMM的外觀與系統DIMM大不相同。</block>
@@ -4284,7 +4263,6 @@
   <block id="f7201b424e63db1eb201784a41831c5b" category="section-title">步驟6：移動PCIe擴充卡</block>
   <block id="09a031229040acdcc93835464607987d" category="paragraph">您必須將已安裝PCIe卡的PCIe擴充卡、從受損的控制器模組移至更換的控制器模組。</block>
   <block id="7b54866b2a0d6e6e75dbd1588a1d2832" category="paragraph">您可以使用下列圖例或書面步驟、將PCIe擴充卡從受損的控制器模組移至更換的控制器模組。</block>
-  <block id="eb05cd11b7228336d5c9c6b4b1189e9b" category="image-alt">DRW A320 PCI擴充卡移動動畫Gif</block>
   <block id="e3c377eeac98c2c7c22ab039e765483b" category="list-text">打開主機蓋上的藍色指旋螺絲、將主機蓋朝自己的方向滑出、將主機蓋向上旋轉、將其從控制器模組中提出、然後將其放在一邊、即可將主機蓋移到PCIe擴充卡上。</block>
   <block id="64e10ab629fdd5f98070e4ba4cbc9431" category="list-text">從更換的控制器模組中取出空的擴充卡。</block>
   <block id="fb2259bf7b24733032c36ee5d7b47fc1" category="list-text">將您的手指放入擴充模組左側的孔中、用您的姆指抓住擴充卡。</block>
@@ -4312,7 +4290,6 @@
   <block id="b06018bc829da55a1eb1a43b93312dc5" category="summary">開機媒體會儲存系統開機時所使用的一組主要和次要系統（開機映像）檔案。</block>
   <block id="acd5b7a742e22209bb792b093caff068" category="doc">更換開機媒體AFF - 32</block>
   <block id="7182b14422325235a1325aec0997297b" category="paragraph">您必須在控制器模組中找到開機媒體、然後依照指示進行更換。</block>
-  <block id="e6b7941c3f8bfc56083e6d96c76bea05" category="image-alt">DRW A320開機媒體取代動畫式Gif</block>
   <block id="e7ee072a3e06310afcc412655144e84b" category="section-title">步驟3：使用USB快閃磁碟機將開機映像傳輸到開機媒體</block>
   <block id="0186f6c22953c36e3e4978bb091e11b3" category="paragraph">您安裝的替換開機媒體沒有開機映像、因此您需要使用USB快閃磁碟機來傳輸開機映像。</block>
   <block id="ce92127c659a39f2e906ff085ee4ba89" category="list-text">您必須擁有一個USB快閃磁碟機、其格式必須為MBR/fat32、容量至少為4GB</block>
@@ -4366,7 +4343,6 @@
   <block id="99028e2ad3b8cc332ccf01555ed73338" category="section-title">步驟2：更換RTC電池</block>
   <block id="85197942c26926cbc965c61326a19f17" category="paragraph">您需要在控制器模組內找到RTC電池、然後依照特定的步驟順序進行。</block>
   <block id="5d32a38a1b041424ab4d21535c31e0b6" category="section-title">步驟4：更換RTC電池</block>
-  <block id="ca57ca907ae8206b83c7ddff6d0710d5" category="image-alt">DRW A320 RTC電池取代動畫式Gif</block>
   <block id="f443567234fee382feed95c62b71f4ac" category="list-text">取下PCIe護蓋。</block>
   <block id="098c84ebcbcf1abdb1b6be280f983f02" category="list-text">轉開位於控制器模組背面內建連接埠上方的藍色指旋螺絲。</block>
   <block id="c7705a8f2e7cd22c3c497bc8bdc6a22e" category="list-text">朝自己的方向滑動機箱蓋、然後向上轉動機箱蓋。</block>
@@ -4403,7 +4379,6 @@
   <block id="03009d063726425063c4f5d23d6de24b" category="summary">若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。</block>
   <block id="f1483589a16ee2a87f4946990ed1464b" category="doc">更換PCIe卡AFF - REVA320</block>
   <block id="c6835c4571228046430ed6bbb1f8c06a" category="paragraph">您必須從控制器模組中移除包含故障PCIe卡的PCIe擴充卡、從擴充卡中移除故障的PCIe卡、在擴充卡中安裝替換的PCIe卡、然後將擴充卡重新安裝至控制器模組。</block>
-  <block id="d53dfbdb1355f3674e5de636f87c5be0" category="image-alt">更換成動態圖片的DRW A320 PCI卡</block>
   <block id="618712f4c03b5acbe994f7deb8579ad4" category="list-text">使用故障的PCIe卡移除擴充卡：</block>
   <block id="c5001055f65b1d0ac2ba105ee25e93fe" category="list-text">移除PCIe卡中的任何SFP或QSFP模組。</block>
   <block id="8da48c6dbfa1b11e1b02a674f7016444" category="list-text">將擴充卡從插槽中直接提出、然後放在一旁。</block>
@@ -4424,7 +4399,6 @@
   <block id="72e762fb9ea8e85f3b69ae72fd4dc171" category="doc">更換NVDIMM AFF - NVM-A320</block>
   <block id="00a491f6ddc82f254e9e3fa6711c8a44" category="section-title">步驟3：更換NVDIMM</block>
   <block id="d07d22679fd595588166f72cbc3fcec6" category="admonition">當您停止系統時、NVDIMM LED會在減少內容時閃爍。完成轉出後、LED會關閉。</block>
-  <block id="a28d1d59ce7973c59f7c8fb5eb3f42b3" category="image-alt">以DRw A320 NVDIMM取代動畫Gif</block>
   <block id="47cd398c5a2374103dbd8377631bc325" category="list-text">打開通風管、然後在控制器模組的插槽11中找到NVDIMM。</block>
   <block id="b860df82f0aa962ce83ad7cbf06bb972" category="list-text">請注意NVDIMM在插槽中的方向、以便將NVDIMM以適當的方向插入替換控制器模組。</block>
   <block id="25a6b723f7cfda53f61ec55242eba9ce" category="list-text">將NVDIMM從插槽中退出、方法是緩慢地將NVDIMM兩側的兩個NVDIMM彈出彈片分開、然後將NVDIMM從插槽中滑出並放在一邊。</block>
@@ -4440,7 +4414,6 @@
   <block id="d6cd25c7a2ec0fe6ad8621d4562ce0ae" category="summary">更換電源供應器（PSU）需要中斷目標PSU與電源的連接、拔下電源線、移除舊PSU並安裝替換PSU、然後將替換PSU重新連接至電源。</block>
   <block id="e944774dbb716679ef719542153680f0" category="doc">更換電源AFF 供應器- REVA320</block>
   <block id="f044adaf132925553df56c50232bae8a" category="paragraph">更換電源供應器（PSU）時、需要將目標PSU從電源拔下、拔下電源線、移除舊的PSU並安裝替換的PSU、然後將替換的PSU重新連接至電源。</block>
-  <block id="4cc9071129241d95215f35c3a4e731ef" category="image-alt">以DRW A320 PSU取代動畫Gif</block>
   <block id="0b8bc61409e02494497fb415b526324c" category="list-text">移除電源供應器：</block>
   <block id="bd5e4756909c5ec64e5959e1f7d9e160" category="list-text">旋轉CAM握把、以便將電源供應器從機箱中拉出。</block>
   <block id="93a3854a41381c83abf3b98c9ae1f88e" category="list-text">按下藍色鎖定彈片、從機箱中釋放電源供應器。</block>
@@ -4450,7 +4423,6 @@
   <block id="dc034442a42b074e0609ba09ebc77d0e" category="paragraph">完成NVE或NSE工作之後、您需要完成受損節點的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
   <block id="442396e207d697f3466573acd63cdeb7" category="section-title">選項2：系統MetroCluster 位於一個不二之處</block>
   <block id="19700f9c729dfc1036b3ebeb2a20006a" category="doc">熱抽換風扇模組AFF - VA320</block>
-  <block id="18537f27e3c57fa7095de2a3bbea83b2" category="image-alt">DRW A320更換風扇</block>
   <block id="a7e949b06c0a14c96761a482fe850048" category="paragraph">當風扇安裝到位後、警示LED不應亮起、而且會加速運作。</block>
   <block id="cfd2431baff6fc4122f2c8fed540c128" category="paragraph">在移動儲存設備進行升級的過程中、您需要開啟節點3和節點4的電源、開機軟體映像、以及設定節點。原始節點與新節點之間的實體連接埠配置可能有所不同。應在原始節點和替換節點之間對應連接埠、以識別連接埠和連線的適當配置。</block>
   <block id="f9001cb2001a5d31c1674d860cf46052" category="paragraph">如果ONTAP 在新節點上執行的版本與原始節點上的版本不同、您必須從NetApp支援網站下載正確的&lt;ONTAP_VERSION &gt;_image.tgz檔案至可從網路存取的目錄（請參閱步驟4）。您需要&lt;ONTAP_VERSION &gt;_image.tgz檔案來執行系統的網路開機。</block>
@@ -5199,15 +5171,11 @@
   <block id="61c752abcbb868d9432b6f4a5da1593b" category="doc">控制器模組更換總覽- AFF VA400</block>
   <block id="8ebf8284e0fff7b962f6416451a28baa" category="doc">詳細指南AFF - VA400</block>
   <block id="6a34534c1e57a69bc063e8a88767c875" category="list-text">檢閱《_ NetApp ONTAP 產品資訊指南_》、並收集該指南所列的必要資訊。</block>
-  <block id="89022c411a82a2fd505bed4d053014b2" category="image-alt">DRW A400 TNSC網路纜線</block>
-  <block id="1183b63959875b4b1d4b622707e3bdb2" category="image-alt">DRW A400交換式網路纜線</block>
   <block id="23b4387b0bd437fdde9fbf6ab72eb30b" category="paragraph">您可以將NSS224或SAS磁碟櫃連接至系統。</block>
   <block id="8e0457ffe2e7bb2af86481f4fd7c6f41" category="paragraph">請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。NS224的纜線拉片為向上。</block>
   <block id="3e2f0478573244aa002f7207cde9b93b" category="list-text">請使用下列動畫或圖例、將控制器連接至單一磁碟機櫃。</block>
-  <block id="28a5b6c12bed824c9983c41c17b4e08c" category="image-alt">DRW A400兩個新南224磁碟櫃</block>
   <block id="2d30f0e7d0bd139e4aadac367a22367c" category="section-title">選項3：將控制器連接至SAS磁碟機櫃</block>
   <block id="f7a5a513bed985929212bb6fb12674e1" category="list-text">使用下列圖例將控制器連接至兩個磁碟機櫃。</block>
-  <block id="f2a5deba6280f91d25f9842359122210" category="image-alt">DRW A400三個ds224c機櫃</block>
   <block id="22cc15dad4c522616e5130f927446d07" category="doc">將故障零件歸還給NetApp AFF - NetApp -即可</block>
   <block id="2147ead816c0910c1fb713da5e278601" category="doc">完整系統還原：AFF 還原為VA400</block>
   <block id="3d295bc9d76a2ebbc6f508a6fdc75d90" category="doc">重新安裝系統並重新分配磁碟- AFF VA400</block>
@@ -8711,7 +8679,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0fc16b203bddbfc834dc54c640fc1fd2" category="image-alt">取下 LED USB 模組</block>
   <block id="e5247af1b25811b19243276e67aa7b9b" category="image-alt">卸下 NVRAM 模組</block>
   <block id="11d45af041bcae71c4e4d631ead36642" category="image-alt">移除 NVRAM 模組內容</block>
-  <block id="99a4fad8e3a9e518a4c8e3984c45a020" category="image-alt">移除或安裝 PSU 模組</block>
   <block id="38d3a35ba6c4b54bcaa647b5f49f15bf" category="image-alt">取出並安裝 RTC 電池</block>
   <block id="c591c62ae89f72b00936f85341489306" category="image-alt">打開電源供應器 CAM 把手</block>
   <block id="0709513deb20f95d7151fe2b5265dec7" category="image-alt">端蓋駕駛員顯示幕</block>
@@ -8808,7 +8775,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f4247136ba1a68a91a49f4e715963146" category="paragraph">在關閉受損控制器之前、您需要確認系統是否已啟用安全金鑰管理程式或加密磁碟。</block>
   <block id="ee3b489243bdd4fdcc48ef1ad422f531" category="section-title">驗證安全金鑰管理程式組態</block>
   <block id="19033065ab73d137563560b1fc6895b0" category="inline-link">安全密鑰管理器密鑰庫顯示手冊頁</block>
-  <block id="a816d953401f2846877f62bed4fdd27b" category="list-text">使用 _security key-manager keystore show_ 命令、確定金鑰管理程式是否作用中。如需詳細資訊、請參閱<block ref="4b8f2aeacb1514195535ef615c2cae4a" category="inline-link-rx"></block></block>
   <block id="71f479ec4da1fa9d5c9be25ad13a546d" category="admonition">您可能還有其他金鑰管理程式類型。類型包括<block ref="5a2c55bb167f4f0fcfe52384fe7a4f0b" prefix=" " category="inline-code"></block>、<block ref="15460966dfd5d819470e51c2381536a3" prefix=" " category="inline-code"></block>和<block ref="c731f72e1d22a7c5e01a7cb789a8885e" prefix=" " category="inline-code"></block>。確認這些類型的程序與確認或金鑰管理程式類型相同<block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block><block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> 。</block>
   <block id="a286fff38dd07b679c8ce3d88b6f2962" category="inline-link-macro">關閉受損的控制器</block>
   <block id="367826db12be5d0f5fa3825090445002" category="list-text">如果未顯示任何輸出、請前往 <block ref="eee94cfaa2087b0a7525f83880646105" category="inline-link-macro-rx"></block> 關閉受損節點。</block>
@@ -9029,7 +8995,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8c7bd045108e1c5b78c97e914b17c504" category="list-text">若要從載入程式提示字元啟動 ONTAP 、請輸入 _by_ 。</block>
   <block id="92c80dd5462d9ebbe458a4d5574a0bcd" category="paragraph">您必須在開機控制器時確認系統 ID 變更、然後確認變更已實作。</block>
   <block id="4809a5131531611e176d418579ff2bce" category="list-text">如果控制器處於維護模式（顯示<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block> 提示）、請結束維護模式、並前往載入程式提示： _halt _</block>
-  <block id="98848d6f640c1b9d9ad1cab89e0b0a13" category="list-text">在控制器的載入器提示字元中、啟動控制器、並在系統 ID 不相符而提示置換系統 ID 時輸入 _y_ 。</block>
   <block id="4e5f4ae21b25e767c4cce37a6162f267" category="list-text">等待恢復 ... 此訊息會顯示在控制器主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統 ID ： _storage 容錯移轉 show_</block>
   <block id="7fea4b03ba1069ae857e3bf99659e212" category="list-text">從健全的控制器中、歸還更換過的控制器儲存設備： _storage 容錯移轉恢復恢復 -ofnode_node_name_</block>
   <block id="67a849a4d7dbba4f1483601cbb852e97" category="paragraph">控制器會恢復其儲存設備並完成開機。</block>
@@ -9376,7 +9341,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dc67dd4e83bd586a50c17ea2c94c00d5" category="list-text"><block ref="3b8595d627306d8980fff3bd262d05b2" prefix="" category="inline-code"></block></block>
   <block id="536aadfad0128887672b66e929f02fcb" category="list-text"><block ref="a6dd61fa165deef585a79e05f8de73b0" prefix="" category="inline-code"></block></block>
   <block id="a242b56bad1d07089dce8ccb795966f2" category="list-text">恢復程序將完成：</block>
-  <block id="4730255e1152aa0891d10726285854f6" category="paragraph">在正常開機後完成開機媒體更換程序、完成最終檢查並提供儲存設備。</block>
   <block id="3bac3ae452491bc05a59b99b3d2476d6" category="paragraph">請前往步驟6。</block>
   <block id="070dd7606e33a466d7a8bb82a9a64b17" category="list-text">使用 _storage 容錯移轉 show_ 命令、確認目標控制器已準備好可供恢復。</block>
   <block id="378fa36f6e90b3bf6ddbb070e35b0388" category="list-text">將主控台纜線移至合作夥伴控制器、並使用 _storage 容錯移轉恢復恢復 -fromnode local -only-CFO -Aggregate true_ 命令將目標控制器儲存設備歸還。</block>
@@ -9438,7 +9402,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="04c6391623d6bd5d0ac0d7df563f74dc" category="image-alt">纜線拉式彈片方向範例</block>
   <block id="35bd3e31ed449ec51ffdc43a42bdcd8f" category="list-text">如果要連接至光纖交換器、請先將 SFP 插入控制器連接埠、再將纜線連接至連接埠。</block>
   <block id="e8dcbbdb0b0cc30021cdb1772e14a12d" category="section-title">步驟1：將控制器連接至網路</block>
-  <block id="6df54967c5941126ef71ad521ce71f57" category="paragraph">這些程序顯示一般組態。請記住、特定的纜線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="774fc771cbe0562cf589e2e5571e543c" category="open-title">選項 1 ：無纜線交換器叢集</block>
   <block id="ab3e6f854653e79b55b1aef74734d66a" category="paragraph">使用纜線連接無交換器的叢集連線。</block>
   <block id="0ce6d01af755d7d63a1db543cd42ef01" category="list-text">使用叢集 /HA 互連纜線將叢集 /HA 互連連接埠 e1a 連接至 e1a 和 e7a 連接至 e7a 。</block>
@@ -9460,7 +9423,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1107155d6b0c900a6485f06681854862" category="image-alt">RJ-45 纜線</block>
   <block id="9c29eb35e98929529d99ca71cd855f4e" category="paragraph">* 1000BASE-T RJ-45 纜線 *</block>
   <block id="a8536d671676b42d7c49328e04123a96" category="image-alt">連線至您的管理網路</block>
-  <block id="c67ade60c9405661826821f009653f29" category="admonition">請勿插入電源線。</block>
   <block id="09e9d41a74e65e2200df2359e0c54806" category="open-title">選項 2 ：纜線交換式叢集</block>
   <block id="0b7f474dc87a04642d4a17b892a87553" category="paragraph">連接交換式叢集連線。</block>
   <block id="fe1ed4b5e6a760085b2af448921f0d53" category="list-text">進行下列纜線連接：</block>
@@ -9523,7 +9485,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2ce1349fe67fa0e027bf3526a78ebb93" category="admonition">叢集初始化之後、請下載並執行 <block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block> 以確認您的設定。</block>
   <block id="ed198c6c65dda3bfcee47cc329346a10" category="summary">將儲存系統安裝在機櫃或電信機架中。</block>
   <block id="94ebd1127cf45d2e2e1f6f1b0cd35269" category="doc">安裝硬體 - AFF A1K</block>
-  <block id="7acdb30933a12f95dfea26017bada1f5" category="paragraph">下列說明說明如何將硬體安裝在空置的機櫃或電信機架中。如果您的機櫃已預先填入、請跳過此步驟。</block>
   <block id="dfdc73d42700a9c3fdaeacd939a51a4f" category="inline-link">安全注意事項</block>
   <block id="ab68982517ac3ad46c0076188c40b44c" category="list-text">您應該檢閱<block ref="cf650561cfd1ad2dfbe54c8781566683" category="inline-link-rx"></block> 文件、並瞭解移動和安裝硬體的預防措施。</block>
   <block id="ba4a0871133faabe4aa77db489cdd95f" category="list-text">您應該隨附軌道套件的說明。</block>
@@ -9591,7 +9552,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5e90eef3467966790ef48f7bc66eaea8" category="list-text">風扇第一次啟動時可能會很吵。開機期間風扇噪音很大是正常現象。</block>
   <block id="671754b07475807f952083aca6f98a97" category="list-text">使用每個電源供應器上的固定裝置固定電源線。</block>
   <block id="b20f6daaff695ed207299929a85ec2f0" category="summary">準備好安裝 AFF A1K 平台。</block>
-  <block id="7322abed84a9319ae754d84788be0a04" category="doc">準備安裝 - AFF A1K</block>
   <block id="b08289f100b75f4c534e1d2f7b065d98" category="inline-link-macro">設定叢集</block>
   <block id="4df010254bccca3ca04b1ea2f27bc98d" category="list-text">使用<block ref="21429355d1404c86c4038169e7df91bc" category="inline-link-rx"></block> 記錄您需要的值 <block ref="5fecf2f883e4e59df3d0a6a1bcd5e808" category="inline-link-macro-rx"></block>。如果提供預設值、您可以使用該值、或輸入自己的值。</block>
   <block id="4157e2eb4dd8641bf3242a14b2dfed09" category="list-text">確認您擁有完成硬體安裝所需的所有其他設備和工具。</block>
@@ -9640,14 +9600,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="501009762675d8b94f6d05080102eaa1" category="paragraph">您可以在裝箱單、確認電子郵件或控制器的系統管理模組中找到編號、然後再將其解壓縮。</block>
   <block id="8a7ac8ffae90ca0a1caaddb0f33069c2" category="list-text">前往 NetApp 支援網站：<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="d1cc88bda5b2251b480ce496987d8474" category="list-text">註冊硬體：</block>
-  <block id="8f45a9f1fcb944bee42c078bdeacd8ac" category="cell">如果您是...</block>
-  <block id="e3df4624e4d36502b5d044730eab97cc" category="cell">請遵循下列步驟...</block>
-  <block id="d3f2dc7623074c370346f082b621f2db" category="paragraph">現有NetApp客戶</block>
   <block id="8a55a5b89690f6046e6de8dd649ff837" category="list-text">使用您的使用者名稱和密碼登入。</block>
   <block id="5c83cedabfd78baf337988a092bcf317" category="list-text">選擇 * 系統 * &gt; * 我的系統 * 。</block>
   <block id="1f122c4c30234dec74d765075fd1f45f" category="list-text">確認已列出新的系統序號。</block>
-  <block id="d193a53b34315bee1bed499f665686ce" category="list-text">如果沒有、請依照新NetApp客戶的指示進行。</block>
-  <block id="daee797d0bf63a91fe069e1df88d7923" category="paragraph">NetApp新客戶</block>
   <block id="12dc2a66a130388ec482398caa6ce95b" category="list-text">按一下*立即註冊*、然後建立帳戶。</block>
   <block id="89cc8de091278e0fb0686833ac6a7982" category="list-text">選擇 * 系統 * &gt; * 註冊系統 * 。</block>
   <block id="c04746c1c8deb45f0567d25441428d64" category="list-text">輸入產品系統序號和要求的詳細資料。</block>
@@ -9735,7 +9690,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8f176870ac6c4361a1f6d7201cca260f" category="paragraph">在 ONTAP 儲存系統中、每個 NS224 機櫃都以獨特的機櫃 ID 加以區分。此 ID 可確保儲存系統設定中的機櫃各有不同。根據預設、機櫃 ID 通常會指派為「 00 」和「 01 」、但您可能需要調整這些 ID 、以維持整個儲存系統的唯一性。</block>
   <block id="4de17b4fab9ee69108776ab9c4aaa0c6" category="admonition">控制器機箱機櫃 ID 硬編碼為「 00 」。請勿將機櫃 ID '00' 用於任何連接至平台的 NS224 機櫃。</block>
   <block id="8e6cf8027b121504bad8e5f00fe274bd" category="summary">準備安裝 AFF A70 、 AFF A90 平台。</block>
-  <block id="6ac7ef3cf74f3edcc05e92fb62092d4a" category="doc">準備安裝 - AFF A70 、 AFF A90</block>
   <block id="45fa7acb63053c31c5ae0a83dd4b3618" category="paragraph">準備好安裝平台。</block>
   <block id="62ca0ae61a6f061f90175c671563df84" category="list-text">存取網頁瀏覽器以設定儲存系統</block>
   <block id="bcaac0b69edbeb6d6ebf55df173a989d" category="paragraph">完全負載的 A70-90 平台可重達 151.68 磅（ 68.8 公斤）、需要四個人抬起或使用液壓舉升設備。</block>
@@ -9747,7 +9701,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6e6faa41850da2cbf2fba1981d46dbf5" category="list-text">兩個纜線管理裝置</block>
   <block id="a960b1448ee5bc8431d64797103ff6f9" category="paragraph">註冊您的平台即可享有支援效益。</block>
   <block id="9ddae9a7519b413c3e002aaa6578c11b" category="paragraph">您可以在裝箱單、確認電子郵件或控制器上找到編號、然後再打開。</block>
-  <block id="321d330a3500c9aa223bf5d134d0886b" category="list-text">輸入系統序號和要求的詳細資料。</block>
   <block id="9693b6a52f0ee9092f8116f36e38a969" category="summary">若要更換 I/O 模組、您必須從模組拔下纜線、從模組中移除 SFP 和 QSFP 模組、移除模組、安裝替換模組、重新安裝 SFP 和 QSFP 模組、然後連接 I/O 模組纜線。</block>
   <block id="2224bc58afd68539e0dea6bf9e50c3d6" category="doc">新增 I/O 模組： AFF A70 、 AFF A90</block>
   <block id="24ca01289b896c334109ba7e14ec004f" category="doc">新增與更換 I/O 模組總覽 - AFF A70-90K</block>
@@ -9999,4 +9952,67 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">系統AFF</block>
   <block id="6476573ba5b973ad8ea01c57f5b30267" category="sidebar">系統ASA</block>
   <block id="9aaba65702056e024efc0836758c1538" category="sidebar">完成熱新增</block>
+  <block id="b1cd69e899e8ab2e8b0c559899a3f2d7" category="admonition">下圖顯示移除水平和垂直 I/O 模組。一般而言、您只會移除一個 I/O 模組。</block>
+  <block id="ed8012a83cd9088ec111d26e82a75971" category="list-text">使用 _security key-manager keystore show_ 命令確定 Key Manager 是否處於活動狀態。如需詳細資訊、請參閱<block ref="4b8f2aeacb1514195535ef615c2cae4a" category="inline-link-rx"></block></block>
+  <block id="3e6277588162255770fd3384bad09d6d" category="list-text">在控制器的載入器提示字元中、啟動控制器、並在系統 ID 不相符而提示覆寫系統 ID 時輸入 _y_ 。</block>
+  <block id="9daabece8db7521a7882f63ebd76a891" category="image-alt">取下上方有釋放按鈕的磁碟機</block>
+  <block id="e0bc24820711c466532ba2cb67ababd9" category="image-alt">卸下中間有釋放按鈕的磁碟機</block>
+  <block id="5be3be4e3c78f5ba4233a70fab6255f9" category="paragraph">完成最終檢查並提供儲存設備、以在正常開機後完成開機媒體更換程序。</block>
+  <block id="0ae7701d2ef507a0fceb7c75d4891e75" category="list-text">控制器 A 上的纜線連接埠 e1a 至控制器 B 上的連接埠 e1A</block>
+  <block id="8bf237b60bd4b2db806d6610ad52ec49" category="list-text">控制器 A 上的纜線連接埠 e7a 至控制器 B 上的連接埠 e1A</block>
+  <block id="1de71be9c54175327aecef768179d1bd" category="paragraph">+ 影像： ../media/drw_a1k_tnsc_cluster 纜線 _cabling_iops-1648.svg [ 雙節點無切換叢集纜線圖、寬度 =500px]</block>
+  <block id="89135cd683c3d107d2c82b9a703f04cb" category="paragraph">+ 。將乙太網路模組連接埠連接至主機網路。</block>
+  <block id="4e44798e075d2d881a9fb7543667af95" category="paragraph">+ 以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
+  <block id="38821947dff053760f4c97b648ca454a" category="admonition">請勿插入電源線。</block>
+  <block id="b0dc4e3ef222885899ea12125b17e5eb" category="list-text">按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。</block>
+  <block id="1d0b4b2ae4d50e55a4247f5c6ede72f1" category="paragraph">將硬體安裝在空置的機櫃或電信機架中。如果您的機櫃已預先填入、請跳過此步驟。</block>
+  <block id="cd5e55734c933dafcff53ae3865a89d5" category="doc">準備安裝 - AFF A1K</block>
+  <block id="5a5cce6679503c381a637f466b048193" category="open-title">選項 1 ：現有 NetApp 客戶</block>
+  <block id="253e5915076081eaf8bcc8dd74c1d42e" category="admonition">如果未列出新的系統序號、請遵循適用於新 NetApp 客戶的指示。</block>
+  <block id="7e2ca0c1daf9aaf521d6b306d11f7c79" category="open-title">選項 2 ：新的 NetApp 客戶</block>
+  <block id="a620e4025016adf1d0a58233ca0fabf5" category="image-alt">取出或更換 RTC 電池</block>
+  <block id="49c0e8738689c7137641d0b6eed8b74c" category="image-alt">移動開機媒體</block>
+  <block id="e9178489530d4c60949007e8abe6cd95" category="image-alt">移動 DIMM 動畫</block>
+  <block id="3cebb0bf3f808b01f8380666a63cc376" category="image-alt">移動 PCI 擴充卡</block>
+  <block id="1079efe662e16cf433206d49d63eeaa6" category="paragraph"><block ref="1079efe662e16cf433206d49d63eeaa6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8dca5ac38ffa0e9613281a20a0ace994" category="image-alt">系統舉升重量注意事項</block>
+  <block id="9971c7f02208e39ad6368e57eb2f82f3" category="image-alt">取下或安裝纜線管理臂</block>
+  <block id="2b6ebc45199173506b9b4592d62affa0" category="image-alt">雙節點無交換器叢集纜線複合式</block>
+  <block id="3988cb152ae91c53f380027a4232d536" category="inline-image-macro">雙節點無交換器叢集可連接叢集 HA 連線</block>
+  <block id="372a8dd97d0e0a73dd341e38652ff673" category="list-text">e0d 至 e0d <block ref="df4a6e6703f97285d4be98ac6b32bb9f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="896029f9803d769d6b4c354df0fa1440" category="inline-image-macro">連接內建資料網路連線</block>
+  <block id="5fc0a7eeb4f9f66fd26242880a45cfa4" category="list-text">e0g 和 e0h <block ref="ba2134526422f5f21eaaa9ef2e2f11c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="722ecbce3343f3dc23dee2d53d88f2ed" category="image-alt">雙節點無交換器叢集可連接 NIC</block>
+  <block id="5a77698302494ef91ee95c3f9ded308f" category="inline-image-macro">連接管理連接埠</block>
+  <block id="1c0c9fe4df36ecf54b797e69eff0360e" category="paragraph"><block ref="1c0c9fe4df36ecf54b797e69eff0360e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aecf4c890506699d5134914982e97718" category="image-alt">交換式叢集纜線複合式</block>
+  <block id="79135b297c57329d2d977b75149a086c" category="inline-image-macro">交換式叢集叢集叢集 HA 連線</block>
+  <block id="2a41afda28faa24bd5359e120005398d" category="list-text">兩個控制器上的 e0d 至叢集 /HA 交換器 <block ref="b92a1fef09a96ed6d9089504fec643ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b6bade89e0d586d34572548f1418dff" category="inline-image-macro">交換式叢集內建網路連線</block>
+  <block id="e734ac5b706a3982e94ed4bcf5783d35" category="list-text">e0g 和 e0h <block ref="d655351f2183e938c691c0566f625116" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d2b5e3a94d4de532d196fa8367775092" category="image-alt">交換式叢集網路連線</block>
+  <block id="aeb83c4121e1220b0a8efc82136a809d" category="inline-image-macro">交換式叢集管理網路連線</block>
+  <block id="df81ef45089583d9cf254a5e823c88ab" category="paragraph"><block ref="df81ef45089583d9cf254a5e823c88ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f44e898d80cbbf4a33440188c038a5d3" category="image-alt">單一磁碟機櫃纜線複合式</block>
+  <block id="7619a75fe3181346925af214b3805907" category="inline-image-macro">將控制器A纜線連接至機櫃</block>
+  <block id="ed6605849a8f419088845bc48c2b4374" category="paragraph">纜線控制器 A 至機櫃 <block ref="8f69dbb1a9676f77b4e45659e89350f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9228396d4ae4e82ba4cd05b1f94961bf" category="inline-image-macro">將控制器 B 連接至單一機櫃</block>
+  <block id="4e324a0bffb1eb75afb38454acf8e1ea" category="paragraph">纜線控制器 B 至機櫃： <block ref="eae43961c4d76c017c2440362d53b1c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7d0a8670d6614b389c8403bdb0f5690" category="image-alt">連接兩個機櫃動畫</block>
+  <block id="694cbf19b59e9646ed9b4e00c40a2d5e" category="inline-image-macro">將兩個機架連接至控制器 A</block>
+  <block id="eeadc1e47c5ada05336cc4a2430aff44" category="paragraph">纜線控制器 A 至機櫃： <block ref="d1f96be8e1b1f281d39fbb850bfff8ae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f7272edef7a7fba4085ccfab3dcab29" category="inline-image-macro">連接至控制器 b 的纜線架</block>
+  <block id="5068cb73707de732551109a3000233a5" category="paragraph">纜線控制器 B 至機櫃： <block ref="a2de9db71ec552fd6bcd09e536f53289" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3efca07728c425a2d570687f9c5ee055" category="list-text">打開文件資源管理器。</block>
+  <block id="060661d6632055dffb9c643daef86e4f" category="image-alt">將筆記型電腦連接到管理子網路交換器</block>
+  <block id="cf3f3f0fc4be4a45a82eb23742f77b44" category="image-alt">更換 NV 電池</block>
+  <block id="8dd9b5acff09c1cf11545aba64dc805d" category="image-alt">更換 NVDIMM</block>
+  <block id="d8ee7164de4500239f84b98bce6a6cba" category="image-alt">取下纜線管理裝置</block>
+  <block id="0607668bcd83e971ac318001952a55ae" category="image-alt">更換 PCI 卡</block>
+  <block id="abb9a3f7b40da322ff2c9d6b0f555396" category="image-alt">交換式叢集網路纜線</block>
+  <block id="11e10f0140c4a2adc649196a587b4fb5" category="image-alt">將兩個機櫃連接至控制器</block>
+  <block id="91ffcf18fe68ab362696af94371c45a6" category="image-alt">將三個機櫃連接至控制器</block>
+  <block id="5d40c2e94b9e6a2b23697795499fe265" category="paragraph">+ 影像： ../media/drw_70-90_tnsc_cluster 纜線 _cabling_iops-1653.svg [ 雙節點無切換叢集纜線圖表、寬度 =500px]</block>
+  <block id="46ef92fe9e0acb49a708c33291f9e608" category="doc">準備安裝 - AFF A70 、 AFF A90</block>
+  <block id="0f8a8f2efc51dcb48a6d357e4ed1476e" category="sidebar">準備安裝</block>
 </blocks>

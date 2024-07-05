@@ -100,7 +100,7 @@ X66250-5（112-00328）、5公尺
 
 X66250-30（112-00331）、30公尺
  a| 
-image:../media/oie_cable_etherned_mpo.png[""]
+image:../media/oie_cable_etherned_mpo.png["乙太網路纜線- MPO"]
  a| 
 乙太網路纜線（訂單相依）
 
@@ -186,11 +186,11 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["叢集組態工�
 NOTE: 您必須瞭解與系統重量相關的安全顧慮。
 
 +
-image::../media/drw_a320_weight_label.png[DRW A320重量標籤]
+image::../media/drw_a320_weight_label.png[系統舉升重量注意事項]
 
 . 連接纜線管理裝置（如圖所示）。
 +
-image::../media/drw_a320_cable_management_arms.png[卸下或安裝纜線管理臂]
+image::../media/drw_a320_cable_management_arms.png[取下或安裝纜線管理臂]
 
 . 將擋板放在系統正面。
 
@@ -218,7 +218,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 您可以使用圖例或逐步指示來完成控制器與交換器之間的纜線連接：
 +
-image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[DRW A320 tnscc網路纜線複合動畫]
+image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[雙節點無交換器叢集纜線複合式]
 
 +
 [cols="1,2"]
@@ -232,7 +232,7 @@ image:../media/oie_legend_icon_1_lg.png["步驟1."]
 使用100 GbE（QSFP28）纜線將叢集/ HA連接埠彼此連接：
 
 ** e0a至e0a
-** e0d至e0dimage:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png[""]
+** e0d 至 e0d image:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png["雙節點無交換器叢集可連接叢集 HA 連線"]
 
 
 
@@ -242,7 +242,7 @@ image:../media/oie_legend_icon_2_o.png["步驟 2"]
  a| 
 如果您使用內建連接埠進行資料網路連線、請將100GbE或40GbE纜線連接至適當的資料網路交換器：
 
-** e0g和e0小時image:../media/drw_a320_onboard_data_connection_step2.png[""]
+** e0g 和 e0h image:../media/drw_a320_onboard_data_connection_step2.png["連接內建資料網路連線"]
 
 
 
@@ -252,7 +252,7 @@ image:../media/oie_legend_icon_3_dr.png["步驟 3"]
  a| 
 如果您使用NIC卡進行乙太網路或FC連線、請將NIC卡連接至適當的交換器：
 
-image::../media/drw_a320_nic_connections_step3.png[DRW A320 NIC連線步驟3]
+image::../media/drw_a320_nic_connections_step3.png[雙節點無交換器叢集可連接 NIC]
 
 
 
@@ -261,7 +261,7 @@ image:../media/oie_legend_icon_4_lp.png["步驟 4"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器。
 
-image:../media/drw_a320_management_port_connection_step4.png[""]
+image:../media/drw_a320_management_port_connection_step4.png["連接管理連接埠"]
 
 
 
@@ -291,7 +291,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 您可以使用圖例或逐步指示來完成控制器與交換器之間的纜線連接：
 +
-image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[DRW A320交換式網路纜線複合式動畫式GIF]
+image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[交換式叢集纜線複合式]
 
 +
 [cols="1,3"]
@@ -305,7 +305,7 @@ image:../media/oie_legend_icon_1_lg.png["步驟1."]
 使用100 GbE（QSFP28）纜線將叢集/ HA連接埠連接至叢集/ HA交換器：
 
 ** 將兩個控制器上的e0a連接至叢集/ HA交換器
-** 將兩個控制器上的e0d連接至叢集/ HA交換器image:../media/drw_a320_switched_cluster_ha_connection_step1b.png[""]
+** 兩個控制器上的 e0d 至叢集 /HA 交換器 image:../media/drw_a320_switched_cluster_ha_connection_step1b.png["交換式叢集叢集叢集 HA 連線"]
 
 
 
@@ -315,7 +315,7 @@ image:../media/oie_legend_icon_2_o.png["步驟 2"]
  a| 
 如果您使用內建連接埠進行資料網路連線、請將100GbE或40GbE纜線連接至適當的資料網路交換器：
 
-** e0g和e0小時image:../media/drw_a320_onboard_data_connection_step2.png[""]
+** e0g 和 e0h image:../media/drw_a320_onboard_data_connection_step2.png["交換式叢集內建網路連線"]
 
 
 
@@ -325,7 +325,7 @@ image:../media/oie_legend_icon_3_dr.png["步驟 3"]
  a| 
 如果您使用NIC卡進行乙太網路或FC連線、請將NIC卡連接至適當的交換器：
 
-image::../media/drw_a320_nic_connections_step3.png[DRW A320 NIC連線步驟3]
+image::../media/drw_a320_nic_connections_step3.png[交換式叢集網路連線]
 
 
 
@@ -334,7 +334,7 @@ image:../media/oie_legend_icon_4_lp.png["步驟 4"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器。
 
-image:../media/drw_a320_management_port_connection_step4.png[""]
+image:../media/drw_a320_management_port_connection_step4.png["交換式叢集管理網路連線"]
 
 
 
@@ -368,7 +368,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 您可以使用圖例或逐步指示、將控制器連接至單一機櫃。
 +
-image::../media/drw_a320_single_shelf_connections_animated_gif.png[DRW A320單一機櫃連線動畫Gif]
+image::../media/drw_a320_single_shelf_connections_animated_gif.png[單一磁碟機櫃纜線複合式]
 
 +
 [cols="1,3"]
@@ -379,14 +379,14 @@ image::../media/drw_a320_single_shelf_connections_animated_gif.png[DRW A320單�
  a| 
 image:../media/oie_legend_icon_1_mb.png["編號 1"]
  a| 
-將控制器A纜線連接至機櫃 image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[""]
+纜線控制器 A 至機櫃 image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png["將控制器A纜線連接至機櫃"]
 
 
 
  a| 
 image:../media/oie_legend_icon_2_lo.png["編號 2"]
  a| 
-將控制器B纜線連接至機櫃： image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png[""]
+纜線控制器 B 至機櫃： image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png["將控制器 B 連接至單一機櫃"]
 
 |===
 . 若要完成系統設定、請參閱 <<完成系統設定與組態>>
@@ -407,7 +407,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 您可以使用下列圖例或書面步驟、將控制器連接至兩個磁碟機櫃。
 +
-image::../media/drw_a320_2_shevles_cabling_animated_gif.png[DRW A320 2 shevles纜線動畫式Gif]
+image::../media/drw_a320_2_shevles_cabling_animated_gif.png[連接兩個機櫃動畫]
 
 +
 [cols="1-3"]
@@ -418,14 +418,14 @@ image::../media/drw_a320_2_shevles_cabling_animated_gif.png[DRW A320 2 shevles�
  a| 
 image:../media/oie_legend_icon_1_mb.png["編號 1"]
  a| 
-將控制器A纜線連接至磁碟櫃： image:../media/drw_a320_2_shelves_cabling_controller_a.png[""]
+纜線控制器 A 至機櫃： image:../media/drw_a320_2_shelves_cabling_controller_a.png["將兩個機架連接至控制器 A"]
 
 
 
  a| 
 image:../media/oie_legend_icon_2_lo.png["編號 2"]
  a| 
-將控制器B纜線連接至磁碟櫃： image:../media/drw_a320_2_shelves_cabling_controller_b.png[""]
+纜線控制器 B 至機櫃： image:../media/drw_a320_2_shelves_cabling_controller_b.png["連接至控制器 b 的纜線架"]
 
 |===
 . 若要完成系統設定、請參閱 <<完成系統設定與組態>>
@@ -460,7 +460,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
 
 +
-.. 開啟檔案總管。
+.. 打開文件資源管理器。
 .. 按一下左窗格中的網路。
 .. 按一下滑鼠右鍵、然後選取重新整理。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
@@ -496,7 +496,7 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的管理交換器。
 +
-image::../media/drw_a320_laptop_to_switch_and_controller.png[切換與控制器的DRW A320筆記型電腦]
+image::../media/drw_a320_laptop_to_switch_and_controller.png[將筆記型電腦連接到管理子網路交換器]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 

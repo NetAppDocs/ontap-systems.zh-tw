@@ -32,7 +32,7 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[纜線拉式彈片�
 如需將儲存系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 .關於這項工作
-這些程序顯示一般組態。請記住、特定的纜線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+這些程序顯示一般組態。請記住、特定纜線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
 
 [role="tabbed-block"]
 ====
@@ -47,20 +47,24 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[纜線拉式彈片�
 NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[叢集 HA 纜線]
-
+.. 控制器 A 上的纜線連接埠 e1a 至控制器 B 上的連接埠 e1A
+.. 控制器 A 上的纜線連接埠 e7a 至控制器 B 上的連接埠 e1A
 +
 * 叢集 / HA 互連纜線 *
 
-+
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[雙節點無交換器叢集佈線圖]
 
-. 將乙太網路模組連接埠連接至主機網路。
-+
-以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
 
-+
-.. 如圖所示、將 e9a 和 e9b 連接至乙太網路資料網路交換器。
+
+
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[叢集 HA 纜線]
+
++ 影像： ../media/drw_a1k_tnsc_cluster 纜線 _cabling_iops-1648.svg [ 雙節點無切換叢集纜線圖、寬度 =500px]
+
++ 。將乙太網路模組連接埠連接至主機網路。
+
++ 以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
+
+. 如圖所示、將 e9a 和 e9b 連接至乙太網路資料網路交換器。
 +
 
 NOTE: 為了讓叢集和 HA 流量發揮最大的系統效能、最佳做法是不要使用連接埠 e1b 和 e7b 連接埠來進行主機網路連線。請使用獨立的主機卡來發揮最大效能。
@@ -74,7 +78,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[100Gb 乙太網路纜線]
 +
 image::../media/drw_a1k_network_cabling1_ieops-1649.svg[連接至 100Gb 乙太網路的纜線]
 
-.. 連接 10/25 GbE 主機網路交換器。
+. 連接 10/25 GbE 主機網路交換器。
 +
 *10/25 GbE 主機 *
 
@@ -84,9 +88,8 @@ image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb 乙太網路纜線]
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[連接到 10/25Gb 乙太網路的纜線]
 
-
-
-. 使用 1000BASE-T RJ-45 纜線、將控制器管理（扳手）連接埠連接至管理網路交換器。
++
+.. 使用 1000BASE-T RJ-45 纜線、將控制器管理（扳手）連接埠連接至管理網路交換器。
 +
 image::../media/oie_cable_rj45.svg[RJ-45 纜線]
 
@@ -95,6 +98,8 @@ image::../media/oie_cable_rj45.svg[RJ-45 纜線]
 
 +
 image::../media/drw_a1k_management_connection_ieops-1651.svg[連線至您的管理網路]
+
+
 
 
 
