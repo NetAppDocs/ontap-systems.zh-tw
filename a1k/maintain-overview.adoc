@@ -11,64 +11,86 @@ summary: 維護 AFF A1K 硬體
 
 
 [role="lead"]
+您可能需要在硬體上執行維護程序。本節說明維護 AFF A1K 系統元件的特定程序。
+
+本節中的程序假設 AFF A1K 系統已部署為 ONTAP 環境中的儲存節點。
+
+
+
+== 系統元件
+
 對於 AFF A1K 儲存系統、您可以對下列元件執行維護程序。
 
+[cols="25,65"]
+|===
 
 
-== 開機媒體
-
+ a| 
+link:bootmedia-replace-workflow.html["開機媒體"]
+ a| 
 開機媒體會儲存一組主要和次要的 ONTAP 映像檔案、供系統在開機時使用。
 
 
 
-== 控制器
-
+ a| 
+link:controller-replace-workflow.html["控制器"]
+ a| 
 控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 作業系統軟體。
 
 
 
-== DIMM
-
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
 雙列直插式記憶體模組（ DIMM ）是一種電腦記憶體類型。它們是為了將系統記憶體新增至控制器主機板而安裝。
 
 
 
-== 風扇
-
+ a| 
+link:fan-replace.html["風扇"]
+ a| 
 風扇可冷卻控制器。
 
 
 
-== NVRAM
-
+ a| 
+link:nvram-replace.html["NVRAM"]
+ a| 
 NVRAM （非揮發性隨機存取記憶體）是一個模組、可讓控制器在系統斷電時保護及儲存在線上資料。系統 ID 位於 NVRAM 模組中。更換後、控制器會從更換的 NVRAM 模組中取得新的系統 ID 。
 
 
 
-== 非易失電池
+ a| 
+link:nvdimm-battery-replace.html["非易失電池"]
+ a| 
+NV 電池負責為 NVRAM 模組提供電力、而在電力中斷後、正在傳輸的資料會被轉至快閃記憶體。
 
-NVRAM 電池負責為 NVRAM 模組提供電力、而在電力中斷後、正在傳輸中的資料會被移轉至快閃記憶體。
 
 
-
-== I/O模組
-
+ a| 
+link:io-module-overview.html["I/O模組"]
+ a| 
 I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。
 
 
 
-== 電源供應器
-
+ a| 
+link:power-supply-replace.html["電源供應器"]
+ a| 
 電源供應器在控制器中提供備援電源。
 
 
 
-== 即時時鐘電池
-
+ a| 
+link:rtc-battery-replace.html["即時時鐘電池"]
+ a| 
 即時時鐘電池會在電源關閉時保留系統日期和時間資訊。
 
 
 
-== 系統管理模組
-
+ a| 
+link:system-management-replace.html["系統管理模組"]
+ a| 
 系統管理模組提供控制器與主控台或筆記型電腦之間的介面、以供控制器或系統維護之用。系統管理模組包含開機媒體、並儲存系統序號（ SSN ）。
+
+|===

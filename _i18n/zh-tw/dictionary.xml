@@ -2689,9 +2689,7 @@
   <block id="f9949e25a19a066ee96b2445c47e6bbd" category="paragraph">當您按下釋放按鈕時、磁碟機上的CAM握把會部分開啟。</block>
   <block id="8c1abcf074a9adec09e39ebd810a512d" category="admonition">DS212C磁碟櫃中的磁碟機會以位於磁碟機面左側的釋放按鈕水平排列。DS224C磁碟櫃中的磁碟機會以垂直排列、釋放按鈕位於磁碟機正面頂端。</block>
   <block id="691f396d85c0be2dbf8fe249eb9aa06b" category="paragraph">以下顯示DS212C磁碟櫃中的磁碟機：</block>
-  <block id="9f384f4e3cb7648375730a62ac90eff9" category="image-alt">不打開磁碟機擋板</block>
   <block id="ae837c75b919fd34b7bb3a1ac14b40ca" category="paragraph">以下顯示DS224C磁碟櫃中的磁碟機：</block>
-  <block id="3c8f0ed13542dc0b44cabea8893057b5" category="image-alt">2240移除磁碟無擋板</block>
   <block id="0a6926c08151fd5eb5c8be886b34f3d9" category="list-text">稍微滑出磁碟機、讓磁碟安全地減少磁碟磁碟的磁碟機、然後從磁碟櫃中取出磁碟機。</block>
   <block id="e36b3cad9a6a6901301f9b0cbb18d94b" category="paragraph">HDD可能需要一分鐘的時間才能安全地減少磁碟。</block>
   <block id="fbe4d4e18826cc880bfe176cb971e107" category="admonition">處理磁碟機時、請務必用兩隻手支撐其重量。</block>
@@ -2971,7 +2969,6 @@
   <block id="96c5571f7b6648b76366cba9755c4f43" category="paragraph">lnk</block>
   <block id="19e79e9ef0fa80f9b6aa5a3f8e5bb42c" category="paragraph">連接埠連結</block>
   <block id="e35abb0fc157a472260600f52f6994cc" category="paragraph">四個SAS通道中的一個或多個建立了連結（使用介面卡或其他磁碟櫃）。</block>
-  <block id="f2105620d136a321a397d0310e98f133" category="image-alt">DRw iom12</block>
   <block id="2aa3adf1c0ff2c8444260a0e888c02bc" category="section-title">電源供應器LED</block>
   <block id="09cdf702b67ff26e9a51e5bd564332db" category="paragraph">電源供應器上的LED會指出電源供應器是否正常運作、或是有硬體問題。</block>
   <block id="593e6773180149ce15a83f47762be685" category="paragraph">下表說明DS460C、DS224C和DS212C磁碟櫃所使用的兩個電源供應器LED：</block>
@@ -3119,7 +3116,6 @@
   <block id="954499b275aa6b0244088769d4cab500" category="admonition">在這個組態中、您無法使用IOM B路徑。MetroCluster</block>
   <block id="f260b20153205d9038127e4a15618a0f" category="list-text">SAS纜線連接器採用鎖定式設計；若方向正確放入SAS連接埠、連接器會卡入定位。</block>
   <block id="10ae5a4ce8cb24c89ab7989958cb34b9" category="paragraph">如果是磁碟櫃、請插入SAS纜線連接器、拉片朝下（位於連接器底部）。對於控制器、SAS連接埠的方向可能會因平台機型而異、因此SAS纜線連接器的正確方向會有所不同。</block>
-  <block id="9eae6e522d01233eda31813671040bc9" category="image-alt">DRW SAS2 SAS3混合堆疊</block>
   <block id="a4450110a0add0d3dc0ed544c4dc9587" category="list-text">實體識別堆疊中的最後一個邏輯磁碟櫃。</block>
   <block id="3290caa995109a5019ab331bcbb4fd8c" category="paragraph">否則、請前往步驟3。</block>
   <block id="49ae96093ef4318ebea3748695f1f2ec" category="cell">如果您的IOM6堆疊連線功能是...</block>
@@ -3288,7 +3284,6 @@
   <block id="2d876268689d2b3dd0523bf8bc1a49ab" category="list-text">查看磁碟機抽屜頂端、找出位於每個磁碟機前面的抽屜上的警示LED。</block>
   <block id="27967334ee8d19e4cf590fd2f532f262" category="list-text">從開啟的抽屜中取出故障磁碟機：</block>
   <block id="e42c19e11077bb09d5a36d3d6a01cda9" category="list-text">將欲移除之磁碟機前方的橘色釋放卡鎖輕輕拉回。</block>
-  <block id="2006a7ac1c738ee804933b92cb0fd114" category="image-alt">Trap磁碟機磁碟機磁碟機磁碟</block>
   <block id="40f837f06bbd36f49cef42babd88b053" category="cell">橘色釋放栓鎖</block>
   <block id="48cb4c1c5e18eec97fe2c35a66b8047c" category="list-text">打開CAM握把、然後稍微拉出磁碟機。</block>
   <block id="764a62532760f655a4934a835eafa280" category="list-text">等待30秒。</block>
@@ -3503,8 +3498,6 @@
   <block id="1e78ab40bbabb204b7d418ad7a32f801" category="paragraph">FAS2600系列單路徑組態</block>
   <block id="afd363af41e03520500b30751b522491" category="list-text">從系統主控台關閉系統：「halt（停止）」</block>
   <block id="e8403bb6f96eb0e9dd855761d673bcfb" category="list-text">檢查儲存系統主控台、確認系統已停止。</block>
-  <block id="cd5f38b38ffd79461cf543f7d3a14843" category="image-alt">DRW IOM鎖存器</block>
-  <block id="4c85cb5670afa3b61996e7baa0111129" category="image-alt">已開啟的DRW IOM</block>
   <block id="ccadbe2edcc98f542a5f72090def31e3" category="paragraph">等待至少70秒、可讓駕駛正確登錄機櫃ID。</block>
   <block id="9bf609fda741e4f05af53222039c4623" category="list-text">重新連接纜線。</block>
   <block id="240ac1f7b24df668dce754edbdea2f25" category="paragraph">SAS纜線連接器採用鎖定式設計；正確放置於IOM連接埠時、連接器會卡入定位、且IOM連接埠LKLED會亮起綠色燈號。將SAS纜線連接器插入IOM連接埠、拉片朝下（位於連接器底部）。</block>
@@ -3550,10 +3543,8 @@
   <block id="c8fe385a2d49c957811553fa2c507091" category="summary">您可以使用完整的控制器對堆疊纜線工作表和纜線佈線範例、來連接具有兩個四埠SAS HBA的四路徑HA組態。</block>
   <block id="1cf61d431bf950cf1f2f9f2368e7f729" category="list-text">如有需要、請參閱 <block ref="22de937f8b92c8373761b256e9819f4a" category="inline-link-macro-rx"></block>。</block>
   <block id="894ffcc20897b622cbd7b6ca6714ee4f" category="list-text">佈線範例將控制器對堆疊纜線顯示為實線或虛線、以區分控制器A和C連接埠與控制器B和D連接埠的連線。</block>
-  <block id="de01522e941cfe599b9f3b4a6394c373" category="image-alt">將有線彩色金鑰堆疊至非2600的DRW控制器</block>
   <block id="0230c83ced57a67f2d5277748826cfef" category="list-text">佈線範例可視覺區分兩組多路徑纜線、以便在HA配對或單一控制器組態中、為每個控制器與每個堆疊建立四路徑連線。</block>
   <block id="bdb9e07856583317bddd1f2c2748f611" category="paragraph">第一組多路徑纜線稱為「多路徑」。第二組多路徑纜線稱為「四路徑」。第二組纜線稱為「四路徑」、因為完成這組纜線後、您就能享有四路徑連線功能。</block>
-  <block id="3ab4c9235d9001b444564b2a71159407" category="image-alt">以DRw控制器堆疊四路徑連線金鑰</block>
   <block id="a1133df643b44f52c54c9ac1cc0963ee" category="list-text">工作表範例顯示指定用於多路徑纜線或四路徑纜線至適用堆疊的連接埠配對。</block>
   <block id="ecc08dd2661076f245ef51eb14c4a74d" category="paragraph">指定用於多路徑纜線的每個連接埠配對都會以一個圓形圈圈圈、其顏色與連接的堆疊相關。每個指定用於四路徑纜線的連接埠配對都會以矩形圈選、矩形是與其纜線堆疊相關的色彩。</block>
   <block id="7c0edd402cd55e5ea26650be4a6f998c" category="section-title">四通道HA、含兩個四埠SAS HBA和兩個多機櫃堆疊</block>
@@ -5774,7 +5765,6 @@
   <block id="0455216bece3ce620e2fd5c84b24a523" category="list-text">在HA配對中、堆疊內有兩個IOM6磁碟櫃和兩個IOM12/IOM12B磁碟櫃的單一速度轉換會描述為：</block>
   <block id="22c141c57159ea5a9cf5ecee1f8b4145" category="list-text">您可以先連接IOM A路徑上的SAS連接埠、以纜線連接IOM12/IOM12B磁碟櫃、然後視堆疊連線的情況、針對IOM B路徑重複佈線步驟。</block>
   <block id="f40ad7d263effd48cd15f5ec54dc2775" category="list-text">您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至組態中未使用FC對SAS橋接器的IOM6磁碟櫃堆疊。</block>
-  <block id="5c5d06fa180884eea62ba831b980ed33" category="list-text">您可以參考下圖、將IOM12/IOM12B磁碟櫃佈線至連接橋MetroCluster 接的IOM6磁碟櫃堆疊。 <block ref="3bf7d126d94220be52cd0d278e98261d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d7f99cbbf1b9ba05ea3a6ec89eae8b6" category="list-text">如果您要熱新增的IOM12/IOM12B機櫃是IOM6堆疊中新增的初始IOM12/IOM12B機櫃、表示IOM6機櫃堆疊中沒有其他IOM12/IOM12B機櫃、請完成適用的子步驟。</block>
   <block id="423d2f16d6d5594161f3868e4a50907a" category="list-text">將最後一個IOM6機櫃IOM A圓形連接埠（從子步驟A）與新IOM12/IOM12B機櫃IOM A連接埠1之間的機櫃對機櫃連線纜線。</block>
   <block id="41cb447e88bb124a5db517ed30198998" category="list-text">如果您要熱新增另一個IOM12/IOM12B機櫃、請將IOM12/IOM12B機櫃IOM A連接埠3、剛連接纜線的機櫃連接線、以及下一個IOM12/IOM12B機櫃IOM A連接埠1連接線。</block>
@@ -5819,7 +5809,6 @@
   <block id="ebe49a15e88084dd22a61a0c761257fe" category="list-text">IOM12模組和IOM12B模組的外觀可加以區分：</block>
   <block id="20b0dc7787284cb0afa2dbc5d95136a2" category="paragraph">IOM12模組以「IOM12」標籤區分：</block>
   <block id="5416d570ace1334ffbc27d0d9486ebe5" category="paragraph">IOM12B模組以藍色等量磁碟區和「IOM12B」標籤加以區分：</block>
-  <block id="d2a8fdadc8d18dd445c56f47cea6197a" category="image-alt">iom12b.</block>
   <block id="9785f45e8f6989c9b8cb2419a2b695da" category="list-text">對於FAS2600系列和FAS2700系列單路徑HA組態、您必須執行接管與還原作業、以取代已啟動並正在處理資料的系統中的機櫃IOM、I/O也在進行中。</block>
   <block id="0894c7928fa1bee8fd4a0207429b7254" category="list-text">對於FAS2600系列單路徑組態、您必須停止系統以更換機櫃IOM。</block>
   <block id="f00eb102fd21bbf5e0dd612fcc8a9fde" category="admonition">如果您嘗試以單一路徑連線將磁碟櫃上的磁碟櫃IOM熱交換、您將無法存取磁碟櫃中的磁碟機、以及其下的任何磁碟櫃。您也可以關閉整個系統。</block>
@@ -8913,8 +8902,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3874bbf004c50eed71c2b06f7ce4e648" category="list-text">對其餘的DIMM重複這些步驟。關閉主機板通風管。</block>
   <block id="d20809d05af81f52d71c6d3d4f4fe771" category="list-text">由於開機裝置位於系統背面安裝的系統管理模組上、因此更換控制器模組時不需要移動開機裝置。</block>
   <block id="c78805aa63e8c47c7cae0cdebcc54f64" category="list-text">您必須永遠擷取控制器的主控台輸出至文字記錄檔。</block>
-  <block id="564469f8ea8458a513637b3b059f6404" category="doc">步驟 1 ：退回控制器</block>
-  <block id="3342bfb4c028e1d77e8b0ab8a0dce560" category="paragraph">請將控制器放回原裝控制器、以繼續更換程序。</block>
   <block id="f9d9eff2772e16e9135d964e4533138c" category="list-text">如果您的儲存系統已設定加密、則必須使用下列程序還原儲存或磁碟區加密功能、才能重新啟動系統：</block>
   <block id="c380f4d06afd36dcee7654a86545b95b" category="list-text">開機至功能表並執行選項 10</block>
   <block id="1cd2c681f4d255665595108ab57cef94" category="list-text">輸入複雜密碼與備份資料、然後執行正常開機請參閱<block ref="1ab4828979a21de09829a9c51e95a6df" category="inline-link-rx"></block>。</block>
@@ -9375,16 +9362,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2990a44118615c0a3bf6cce4a7382d56" category="list-text">當您看到時、請為叢集中的每個控制器輸入 * y*<block ref="e50c9785a9a600201730c59602a210ab" prefix=" " category="inline-code"></block></block>
   <block id="889f830bf501de78eaa854a4c956e927" category="doc">將故障零件退回 NetApp - AFF A1K</block>
   <block id="66ed54e044d464902b4fc84eae0aaebf" category="doc">檢查內建加密金鑰 - AFF A1K</block>
-  <block id="0af39fad029d8a54529403cecac5dfcd" category="doc">加密還原 - AFF A1K</block>
   <block id="1ab064b6602aa76e09ccae7297651215" category="doc">開機恢復映像 - AFF A1K</block>
-  <block id="b32c820e9a6b0c19e598a90100f6ede2" category="doc">開機媒體更換總覽 - AFF A1K</block>
   <block id="59b85bf8d1d726d67312a9425f7cabac" category="doc">更換開機媒體 - AFF A1K</block>
   <block id="ac632c351c050929564cd7a72c3d383a" category="doc">關閉受損控制器 - AFF A1K</block>
-  <block id="c0fbab8ec26a74970b48b956b885d93b" category="doc">更換控制器模組硬體 - AFF A1K</block>
-  <block id="62eb40be1c65593a3462e6f5ba4a05a0" category="doc">更換控制器模組總覽 - AFF A1K</block>
   <block id="a4fbb291103a5430eb9ece2393c095a4" category="doc">將控制器交回 AFF A1K</block>
   <block id="fb829c49a3a2da88fb46330449bb960d" category="summary">若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。如需 RMA 編號或更換程序的其他協助、請聯絡技術支援<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>：、 888-463-8277 （北美）、 00-800-444-638277 （歐洲）或 +800-800-80-800 （亞太地區）。</block>
-  <block id="8993dc7b76f8cb7fa94fec3534c4c210" category="doc">完整系統還原 - AFF A1K</block>
   <block id="5f0eff5741eb1b44c778897a8674fa87" category="paragraph">若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。</block>
   <block id="6bcc49329cd2b052a2bddab981fec2e3" category="section-title">步驟 1 ：驗證生命和檢查叢集健全狀況</block>
   <block id="61ec4d4962d0f24c38b731c335dcb259" category="doc">還原並驗證系統組態 - AFF A1K</block>
@@ -9618,7 +9600,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="83ec06d2d85deb94568cf05665746cc6" category="paragraph">風扇可冷卻控制器。</block>
   <block id="f7ce037e5340ee9ac2b2cd474ee29778" category="paragraph">NVRAM （非揮發性隨機存取記憶體）是一個模組、可讓控制器在系統斷電時保護及儲存在線上資料。系統 ID 位於 NVRAM 模組中。更換後、控制器會從更換的 NVRAM 模組中取得新的系統 ID 。</block>
   <block id="d138e90428f37a60387c8577b6e009b8" category="section-title">非易失電池</block>
-  <block id="971b00f795c3753e8fa0422eed0b0d3e" category="paragraph">NVRAM 電池負責為 NVRAM 模組提供電力、而在電力中斷後、正在傳輸中的資料會被移轉至快閃記憶體。</block>
   <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。</block>
   <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源供應器在控制器中提供備援電源。</block>
   <block id="aebd84aedf30ca3854097975c59229ed" category="doc">更換 NV 電池 - AFF A1K</block>
@@ -9630,20 +9611,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8696c3a11bb55bf4544256cfb1b2bd94" category="doc">更換系統管理模組 - AFF A1K</block>
   <block id="cca32d9f7020830ce64904a8c1aecba9" category="doc">將故障零件退回 NetApp - AFF A70 、 AFF A90</block>
   <block id="24adca74cd4521b9f4f4a8ab1033a6d8" category="doc">檢查機載加密金鑰 - AFF A70 、 AFF A90</block>
-  <block id="ce327d04876efb8d4a59808bf378cece" category="doc">加密還原： AFF A70 、 AFF A90</block>
   <block id="a79b7b4459526eba247c33a94309858e" category="doc">開機恢復映像： AFF A70 、 AFF A90</block>
-  <block id="1123346d505790a2a7f4001b490d0c4c" category="doc">開機媒體更換總覽 - AFF A70 、 AFF A90</block>
   <block id="b565c8083612023ff18332e3f18570fb" category="doc">更換開機媒體： AFF A70 、 AFF A90</block>
   <block id="7a78f14a4a6a79a25fb9d91deac29f7f" category="doc">關閉控制器 - AFF A70 、 AFF A90</block>
-  <block id="c51acb19ea5c85f590681561a6632ee7" category="doc">完成還原與更換程序： AFF A70 、 AFF A90</block>
-  <block id="1f6784a27e692a917bbc139bcab6f062" category="doc">移動並更換硬體 - AFF A70 、 AFF A90</block>
   <block id="3fd2ece46b2cae70b208d459839b7ea6" category="doc">更換機箱 - AFF A70 、 AFF A90</block>
   <block id="47cc53453bdbc0a412f7d6260da64a94" category="doc">關閉控制器 - AFF A70 、 AFF A90</block>
-  <block id="ea75031f570b7a55db89689259c07998" category="doc">更換控制器模組硬體 - AFF A70 、 AFF A90</block>
-  <block id="b5c682512ae7ddb81d1086428c97af49" category="doc">更換控制器模組總覽 - AFF A70 、 AFF A90</block>
   <block id="729f102b3131803a07803cd2f223d3c3" category="summary">您必須重新啟動控制器的儲存設備。</block>
   <block id="5026bf36473d8bd98b2f832968a63c84" category="doc">可回收並退回控制器 - AFF A70 、 AFF A90</block>
-  <block id="e01e42ef6a8116389e0f89dad6068e42" category="doc">完整系統還原： AFF A70 、 AFF A90</block>
   <block id="7b78a43d2ef1cd56888972224b322cba" category="section-title">步驟 1 ：驗證生命週期並檢查叢集健全狀況</block>
   <block id="44e04fa20bc233bee93d06b7b58ece31" category="doc">關閉受損控制器 - AFF A70 、 AFF A90</block>
   <block id="9a05f1c61c530c04ac5d33357330d517" category="doc">還原並驗證系統組態 - AFF A70 、 AFF A90</block>
@@ -9703,9 +9677,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9ddae9a7519b413c3e002aaa6578c11b" category="paragraph">您可以在裝箱單、確認電子郵件或控制器上找到編號、然後再打開。</block>
   <block id="9693b6a52f0ee9092f8116f36e38a969" category="summary">若要更換 I/O 模組、您必須從模組拔下纜線、從模組中移除 SFP 和 QSFP 模組、移除模組、安裝替換模組、重新安裝 SFP 和 QSFP 模組、然後連接 I/O 模組纜線。</block>
   <block id="2224bc58afd68539e0dea6bf9e50c3d6" category="doc">新增 I/O 模組： AFF A70 、 AFF A90</block>
-  <block id="24ca01289b896c334109ba7e14ec004f" category="doc">新增與更換 I/O 模組總覽 - AFF A70-90K</block>
   <block id="924c37fc9153e68527b7be3c003bb435" category="doc">更換 I/O 模組 - AFF A70 、 AFF A90</block>
-  <block id="1f6a084d4572b01747b6b088d9e0ee43" category="paragraph">對於 AFF A70 、 AFF A90 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="f99a621b951fd2b537d7a091c6b754fd" category="doc">更換 NV 電池 - AFF A70 、 AFF A90</block>
   <block id="64adf1ea4c1f4c02f038823429bd4c66" category="doc">更換 NVRAM - AFF A70 、 AFF A90</block>
   <block id="9020c560951313547d9b00a00f95d818" category="doc">更換電源供應器 - AFF A70 、 AFF A90</block>
@@ -9927,13 +9899,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fad3eebd1aa676638de5e9e932b52f40" category="sidebar">完成系統設定</block>
   <block id="cdea6179c22763aadc0ee6a4b14f5f21" category="sidebar">AFF A1K 維護</block>
   <block id="5881b108517b27e7011c12b72fab1eb6" category="sidebar">AFF A1K 開機媒體</block>
-  <block id="316c8b53d0bf94b7eb89217eff43484f" category="sidebar">開機媒體取代總覽</block>
-  <block id="96be37c346f6ee6fa03e35cdcf3a0159" category="sidebar">加密還原</block>
   <block id="2df31b353db26ab75397dd256071bb0f" category="sidebar">AFF A1K 控制器模組</block>
-  <block id="f2113978e313a35c71164bd53785fe54" category="sidebar">控制器模組更換總覽</block>
   <block id="2dc5b9299e6c112139901723adb67ed0" category="sidebar">將控制器交回</block>
   <block id="5a34816c99c709c3123cc893c23aa8de" category="sidebar">NV 電池</block>
-  <block id="9e76982e92861bfe7b8b9a2c95380f48" category="sidebar">新增或更換 I/O 模組總覽</block>
   <block id="4d5d9ed8cd3daf7e0f60b7f56524d07a" category="sidebar">新增 I/O 模組</block>
   <block id="00015974de1f6f69c16403a005f48582" category="sidebar">更換 I/O 模組</block>
   <block id="8c62ca0981c296824eceba9a38d6aa19" category="sidebar">AFF A70 和 AFF A90 系統</block>
@@ -9941,7 +9909,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8431b3d07718f99a71910529288bfbef" category="sidebar">AFF A70 、 AFF A90 維護</block>
   <block id="0961888a0db0b2456e0301cb7e70997c" category="sidebar">AFF A70 、 AFF A90 開機媒體</block>
   <block id="bae3b9c4dc4ef01c1c3e52131996d15d" category="sidebar">AFF A70 、 AFF A90 機箱</block>
-  <block id="6895ff697457a497cc096ed423a7f5f7" category="sidebar">機箱更換總覽</block>
   <block id="12a66472ea6e6007bdd278fb5f5f4773" category="sidebar">AFF A70 、 AFF A90 控制器模組</block>
   <block id="be9c2c89d042ee7f71b10024f37a31ce" category="sidebar">熱新增工作流程</block>
   <block id="9671268467391e7f925a038c0f83e411" category="sidebar">要求與最佳實務做法</block>
@@ -9960,9 +9927,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5be3be4e3c78f5ba4233a70fab6255f9" category="paragraph">完成最終檢查並提供儲存設備、以在正常開機後完成開機媒體更換程序。</block>
   <block id="0ae7701d2ef507a0fceb7c75d4891e75" category="list-text">控制器 A 上的纜線連接埠 e1a 至控制器 B 上的連接埠 e1A</block>
   <block id="8bf237b60bd4b2db806d6610ad52ec49" category="list-text">控制器 A 上的纜線連接埠 e7a 至控制器 B 上的連接埠 e1A</block>
-  <block id="1de71be9c54175327aecef768179d1bd" category="paragraph">+ 影像： ../media/drw_a1k_tnsc_cluster 纜線 _cabling_iops-1648.svg [ 雙節點無切換叢集纜線圖、寬度 =500px]</block>
-  <block id="89135cd683c3d107d2c82b9a703f04cb" category="paragraph">+ 。將乙太網路模組連接埠連接至主機網路。</block>
-  <block id="4e44798e075d2d881a9fb7543667af95" category="paragraph">+ 以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
   <block id="38821947dff053760f4c97b648ca454a" category="admonition">請勿插入電源線。</block>
   <block id="b0dc4e3ef222885899ea12125b17e5eb" category="list-text">按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。</block>
   <block id="1d0b4b2ae4d50e55a4247f5c6ede72f1" category="paragraph">將硬體安裝在空置的機櫃或電信機架中。如果您的機櫃已預先填入、請跳過此步驟。</block>
@@ -10012,7 +9976,121 @@ SFP+ （目標 / 啟動器）</block>
   <block id="abb9a3f7b40da322ff2c9d6b0f555396" category="image-alt">交換式叢集網路纜線</block>
   <block id="11e10f0140c4a2adc649196a587b4fb5" category="image-alt">將兩個機櫃連接至控制器</block>
   <block id="91ffcf18fe68ab362696af94371c45a6" category="image-alt">將三個機櫃連接至控制器</block>
-  <block id="5d40c2e94b9e6a2b23697795499fe265" category="paragraph">+ 影像： ../media/drw_70-90_tnsc_cluster 纜線 _cabling_iops-1653.svg [ 雙節點無切換叢集纜線圖表、寬度 =500px]</block>
   <block id="46ef92fe9e0acb49a708c33291f9e608" category="doc">準備安裝 - AFF A70 、 AFF A90</block>
-  <block id="0f8a8f2efc51dcb48a6d357e4ed1476e" category="sidebar">準備安裝</block>
+  <block id="5f1422fe4664becf0aa8b9ffe6bf86d6" category="paragraph">更換開機媒體之前、請務必檢閱下列需求。</block>
+  <block id="76b9ce100a5ce0ab266bb83f1c474ac5" category="list-text">您必須將檔案複製<block ref="c70b112e1b022bd450e0790d8615c85a" prefix=" " category="inline-code"></block> 到 USB 快閃磁碟機、以便稍後在本程序中使用。</block>
+  <block id="01df70585b251d67c7e85dbced3f0bae" category="paragraph">將儲存資源的擁有權移回更換控制器。</block>
+  <block id="5685250d28f7395e8ea2fbd5656061c6" category="paragraph">檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。</block>
+  <block id="b7325683a2337dcdab8a07d398701bbe" category="list-text">如果您的系統採用 MetroCluster 組態、您必須檢閱一節<block ref="dbcae02c495cc3db61b37ce85396171e" category="inline-link-rx"></block> 、以判斷是否應該使用此控制器更換程序。</block>
+  <block id="8505696d0e3fbe2fd170739bbdf0fd07" category="list-text">確保系統中的所有其他元件正常運作；如果沒有、請聯絡技術支援部門。</block>
+  <block id="9b3a68cd89d10f3b0ccc10f24e3f6012" category="list-text">您可以在系統支援的所有 ONTAP 版本中使用機箱更換程序。</block>
+  <block id="fd6ec360446d31e3ab9c3f69a39b148a" category="list-text">機箱更換程序是假設您要將擋板、 NVMe 磁碟機和控制器模組移至新機箱、而更換機箱則是 NetApp 的新元件。</block>
+  <block id="f39018b3c08ed8bfa54e407c9e13c6b4" category="list-text">* 機箱更換程序會造成營運中斷。 *對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。</block>
+  <block id="a77e388862c17fbfa9503eb6e38c1ec3" category="paragraph">您必須檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。</block>
+  <block id="fcf1f99c5510f69d07371f2deebe6070" category="doc">還原加密 - AFF A1K</block>
+  <block id="6153407aa3467dec46b4d9467c1b1856" category="summary">瞭解更換開機媒體的需求。</block>
+  <block id="cc038387595615d54230bead39a5f9c2" category="doc">要求與考量事項： AFF A1K</block>
+  <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">開機媒體更換工作流程 - AFF A1K</block>
+  <block id="1d7e5e0e3df76ac9dc695510c92b0468" category="paragraph">請依照下列工作流程步驟來更換開機媒體。</block>
+  <block id="725fba88551da9c92e0dc7b5ab34ba0c" category="inline-link-macro">開機媒體需求與考量</block>
+  <block id="7aa8454601f36b96e1a20bee3753c58b" category="paragraph">若要更換開機媒體、您必須符合特定需求。查看 <block ref="be62bd79c2fbb00cbbdbbb71ced5d802" category="inline-link-macro-rx"></block>。</block>
+  <block id="80a95f49e4683aaa8aed6e4b56d5cef1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
+  <block id="d5874724b2a05ddd0fcf9a45278e58ff" category="paragraph">驗證系統是否已啟用安全金鑰管理程式或加密磁碟。</block>
+  <block id="99656405f7d1d5d39430b7771d03dad7" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="7444ce336f5cb99437679b1ac8b6aefb" category="inline-link-macro-rx"></block></block>
+  <block id="7db8d856045d03a62b20e857798b75c4" category="paragraph">關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。</block>
+  <block id="ecb8f83b8d48363a92afc461e11d3752" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
+  <block id="8ba62a96dab9549596c8edd46f3bd5cc" category="paragraph">從系統管理模組移除故障開機媒體、然後安裝替換開機媒體、然後使用 USB 快閃磁碟機將 ONTAP 映像傳輸到替換開機媒體。</block>
+  <block id="28f71f0981cad1b4d63248d24cc356e5" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="68895f240ebc6c043e757f74f16ee4e8" category="inline-link-macro-rx"></block></block>
+  <block id="3075613c146b62cdb964218b1b25f33a" category="paragraph">從 USB 磁碟機開機 ONTAP 映像、還原檔案系統、並驗證環境變數。</block>
+  <block id="328c5bc6b9f2e06bb542a0d6dabcedd7" category="inline-link-macro">還原加密</block>
+  <block id="e8715de67b3dc98a20f01d64b03b5a53" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
+  <block id="66155ab867b9e72e003c32039430a194" category="paragraph">從 ONATP 開機功能表還原內建金鑰管理程式組態或外部金鑰管理程式。</block>
+  <block id="3e7991bdfb889505687a7da2384ab8ab" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
+  <block id="5be3f38f9a32479c868826a858d049a6" category="doc">更換控制器模組 - AFF A1K</block>
+  <block id="011c6a75a4dc386bdb35a883058e2297" category="doc">完整控制器更換 - AFF A1K</block>
+  <block id="f3555ea3467ebe4fdfc22c15f93397e0" category="doc">控制器更換工作流程 - AFF A1K</block>
+  <block id="4eccda983f51d658744291e7b5e3e733" category="paragraph">請依照下列工作流程步驟更換控制器模組。</block>
+  <block id="d768a9e13831df72a415dcdd45486ce6" category="inline-link-macro">控制器更換需求與考量</block>
+  <block id="42a7b941256031cfc400576fdc2d0885" category="paragraph">若要更換控制器模組、您必須符合特定需求。查看 <block ref="dd87dfb53f7dd70c25e1260ab79eff31" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae3b72ec9d4bfefbb94ce5a07d383d84" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="980cfa80bc576e35f09c67c3be4eddc8" category="inline-link-macro-rx"></block></block>
+  <block id="55c7ebf0deeac4f8204507eb9ab3cf38" category="inline-link-macro">更換控制器</block>
+  <block id="a0a9245f1a7e957d0b3062551118fe1b" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="1f759de80b41385676d2f1fe163eb0aa" category="inline-link-macro-rx"></block></block>
+  <block id="033d50cc4a08211a432c03a9350b9a71" category="paragraph">更換控制器包括移除受損的控制器、將 FRU 元件移至更換的控制器模組、然後在機箱中安裝更換的控制器模組。</block>
+  <block id="4d642a38ec660c3a650895de21d1fe3b" category="inline-link-macro">還原並驗證系統組態</block>
+  <block id="0710b8cf1cc5e9353db038dc5164ec82" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d7f15e9703914d919163ee72018c4347" category="inline-link-macro-rx"></block></block>
+  <block id="1f2fe4b700b2b1be29968eb7ee0dfa6b" category="paragraph">驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
+  <block id="f3cee1c656f19c44e3775cb54693c03a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="0314c54fb87f2f2b01af763f24ebf5ef" category="inline-link-macro-rx"></block></block>
+  <block id="4e11a85a0220206b0bc560e74a5eb99f" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="94dc13e126f429eefb3c1f2ca69200fa" category="inline-link-macro-rx"></block></block>
+  <block id="3f241611f37a3a938c6086f224665f2d" category="paragraph">驗證生命、檢查叢集健全狀況、並將故障零件退回 NetApp 。</block>
+  <block id="cddf061490cf83caae5feee2aaeb87ab" category="summary">您必須使用從供應商處收到的替換現場可更換單元（ FRU ）元件來更換故障元件。</block>
+  <block id="cc642e219166c76e6ac027cc2f450209" category="list-text"><block ref="cc642e219166c76e6ac027cc2f450209" category="inline-link-macro-rx"></block></block>
+  <block id="74b0c9e1c6f08f1930847df1992af055" category="paragraph">新增其他模組可改善備援、有助於確保即使有一個模組故障、系統仍能正常運作。</block>
+  <block id="b49ba47015c67eae9f182326198621a4" category="list-text"><block ref="b49ba47015c67eae9f182326198621a4" category="inline-link-macro-rx"></block></block>
+  <block id="9fda3838f591736cf5d7bf5941736a26" category="paragraph">更換故障 I/O 模組可將系統還原至最佳作業狀態。</block>
+  <block id="7a327b859ee108f2920cd543eddd73a0" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 AFF A1K 系統元件的特定程序。</block>
+  <block id="7799c706f7bfc9f724a38dd742f52aaa" category="paragraph">本節中的程序假設 AFF A1K 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="000fb458b47995fb84311bb7ef7c7f62" category="section-title">系統元件</block>
+  <block id="c0e6d430c38f280369988922128024f4" category="paragraph"><block ref="c0e6d430c38f280369988922128024f4" category="inline-link-macro-rx"></block></block>
+  <block id="dceb619599d0aa6d9d89d0abf54e0b37" category="paragraph"><block ref="dceb619599d0aa6d9d89d0abf54e0b37" category="inline-link-macro-rx"></block></block>
+  <block id="57a64598a9ce65521278654300cbc21d" category="paragraph"><block ref="57a64598a9ce65521278654300cbc21d" category="inline-link-macro-rx"></block></block>
+  <block id="48fa76b6ceef78de919d0c14de5c1e8e" category="paragraph"><block ref="48fa76b6ceef78de919d0c14de5c1e8e" category="inline-link-macro-rx"></block></block>
+  <block id="7c9d2d9c711dd30a47c41d53fb8f639d" category="paragraph"><block ref="7c9d2d9c711dd30a47c41d53fb8f639d" category="inline-link-macro-rx"></block></block>
+  <block id="42e36784b087ac0d890c7f6dabed6982" category="paragraph"><block ref="42e36784b087ac0d890c7f6dabed6982" category="inline-link-macro-rx"></block></block>
+  <block id="55e7645d6bac38e8a7d8f01356040d16" category="paragraph">NV 電池負責為 NVRAM 模組提供電力、而在電力中斷後、正在傳輸的資料會被轉至快閃記憶體。</block>
+  <block id="1cec3a4ecd2d4b7c8580770e953af5c3" category="paragraph"><block ref="1cec3a4ecd2d4b7c8580770e953af5c3" category="inline-link-macro-rx"></block></block>
+  <block id="95ab97eb0fe2b20f23eb848c59d681ac" category="paragraph"><block ref="95ab97eb0fe2b20f23eb848c59d681ac" category="inline-link-macro-rx"></block></block>
+  <block id="05cdc0d49abee279ee5e0bdde910f96c" category="paragraph"><block ref="05cdc0d49abee279ee5e0bdde910f96c" category="inline-link-macro-rx"></block></block>
+  <block id="bc425b4b6ac9f297a4fe3bc23a9beb1c" category="paragraph">即時時鐘電池會在電源關閉時保留系統日期和時間資訊。</block>
+  <block id="e6b4d284961b2daa06d56302ba361b67" category="inline-link-macro">系統管理模組</block>
+  <block id="e5f38539729ed58a561f506662e81abe" category="paragraph"><block ref="e5f38539729ed58a561f506662e81abe" category="inline-link-macro-rx"></block></block>
+  <block id="d7158a40e6d62c91f568a937bb75f8ad" category="paragraph">系統管理模組提供控制器與主控台或筆記型電腦之間的介面、以供控制器或系統維護之用。系統管理模組包含開機媒體、並儲存系統序號（ SSN ）。</block>
+  <block id="22e57cb512e3ee6dd44ad84e9c0eba6d" category="doc">還原加密： AFF A70 、 AFF A90</block>
+  <block id="806833b8e020115ba120e0259b5b6dde" category="doc">要求與考量事項： AFF A70 、 AFF A90</block>
+  <block id="3a090f45cd3eaaf1125470fb47b78d45" category="doc">開機媒體更換工作流程： AFF A70 、 AFF A90</block>
+  <block id="1a80a229053bc2701262e358084c838b" category="paragraph">若要更換開機媒體、您的必須符合特定需求。查看 <block ref="be62bd79c2fbb00cbbdbbb71ced5d802" category="inline-link-macro-rx"></block>。</block>
+  <block id="f9b1c5db9a25fd2334e8aba09a914138" category="doc">完整機箱更換： AFF A70 、 AFF A90</block>
+  <block id="e2fecd58050f321afb4d9cc739d4187c" category="summary">您可以使用與受損機箱相同型號的新機箱來更換受損機箱。</block>
+  <block id="ed235526c9cfaa44fbc032db9854b1e9" category="doc">機箱更換工作流程： AFF A70 、 AFF A90</block>
+  <block id="64e923d27d8f20b1c39e996784b889e8" category="paragraph">請依照下列工作流程步驟更換機箱。</block>
+  <block id="ad5348d83b53533243eebb2be9ef1707" category="inline-link-macro">機箱更換需求與考量</block>
+  <block id="d00e4984e8012d79f3629015b50175c5" category="paragraph">若要更換機箱、您必須符合特定需求。查看 <block ref="85b79c35aab56873c02d629d1d3908c3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b9a16e18baf3e3435991b6d9c3ba01af" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="6b014aeda9f88c8732e6a64d143414df" category="inline-link-macro-rx"></block></block>
+  <block id="d26fcd936ac92db8cf84389a3ab7bf47" category="inline-link-macro">更換機箱</block>
+  <block id="d59de865276916bdd9f97d9473947ee3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
+  <block id="2c248a1a1b5e42590f3b77ae3ede043f" category="paragraph">更換機箱包括將電源供應器、硬碟機和控制器模組從損壞的機箱移至新機箱、並將損壞的機箱換成與損壞的機箱相同機型的新機箱。</block>
+  <block id="76f5f34488e514a65bf0c31e970e4fe7" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
+  <block id="7f54aa0b6fdadc77a6c35a589cdb35b3" category="paragraph">驗證機箱的 HA 狀態、並將故障零件退回 NetApp 。</block>
+  <block id="59ae240445027bbf9dc6c3c5d9bceb5c" category="doc">更換控制器模組 - AFF A70 、 AFF A90</block>
+  <block id="b935c7ad64878b8339ab0991016d016b" category="doc">完整更換控制器： AFF A70 、 AFF A90</block>
+  <block id="458af0f5eb6cb4db8860e3274353ecac" category="doc">控制器更換工作流程： AFF A70 、 AFF A90</block>
+  <block id="58d356c259fddd513288088c96915d44" category="inline-link-macro">可重新分配控制器</block>
+  <block id="d0f2dbd12d4daa019c3a6a9b40b092ac" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="e14fc53a2fbc5d3f87f2c572a1629eed" category="inline-link-macro-rx"></block></block>
+  <block id="9a4829e743998d9894153667670dfd29" category="paragraph">重新分配控制器、並將儲存資源的擁有權移交給更換的控制器。</block>
+  <block id="b1e4b88723d63ea7009965cda7a3722c" category="doc">新增與更換 I/O 模組總覽 - AFF A70 、 AFF A90</block>
+  <block id="137aeb15d685b764448324fcbbc40af6" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 AFF A70 和 AFF A90 系統元件的特定程序。</block>
+  <block id="75775d88e26bd0ec1b5827bced4fb9dd" category="paragraph">本節中的程序假設 AFF A70 和 AFF A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="cde82c9b04790b90c2679aca48bf0641" category="paragraph">對於 ASA A70 和 ASA A90 儲存系統、您可以對下列元件執行維護程序。</block>
+  <block id="dc5fb977cb8c88d079092e9c6ec6160e" category="paragraph"><block ref="dc5fb977cb8c88d079092e9c6ec6160e" category="inline-link-macro-rx"></block></block>
+  <block id="5d7bf1cac3020aecc9e419835da60990" category="paragraph"><block ref="5d7bf1cac3020aecc9e419835da60990" category="inline-link-macro-rx"></block></block>
+  <block id="8c2694371a75dd052d8b2e0cd66496fc" category="paragraph">磁碟機是提供資料所需實體儲存設備的裝置。</block>
+  <block id="68957a8f3d38a433e42aad8e6127ef63" category="paragraph"><block ref="68957a8f3d38a433e42aad8e6127ef63" category="inline-link-macro-rx"></block></block>
+  <block id="817eb80fb251d174bd0db4e59b399ab2" category="image-alt">控制器至堆疊纜線的纜線類型鑰匙</block>
+  <block id="4feb668b50eb4388bae4031a6d3195b8" category="image-alt">佈線工作表的彩色鍵</block>
+  <block id="d72417441c3fe0b8542f7fd634702b7c" category="image-alt">四路徑連線的彩色鍵</block>
+  <block id="92111cfa73a8b9848b8194c307bf7fc4" category="image-alt">Quuad-path HA 、具備兩個四埠 SAS HBA 和兩個多層架堆疊</block>
+  <block id="331d1570f3bb78a7df5983eef1419886" category="image-alt">多重路徑混合堆疊纜線</block>
+  <block id="36ee953295cb8328778ccc3c480b3518" category="inline-image-macro">橋接連接組態中的混合堆疊纜線</block>
+  <block id="5e93aebff8a73cdc55e9e45600704cda" category="list-text">您可以參考下圖、將 IOM12/ IOM12B 機櫃連接至橋接式 MetroCluster 組態中的 IOM6 機櫃堆疊。 <block ref="0933d45bdb42bc4cf61cb846f3d6402b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b370bb883c0ae399576093140be62573" category="image-alt">移除 DS212C 磁碟櫃中的磁碟</block>
+  <block id="ef1b2155f266ae851abdcc2efb79e577" category="image-alt">移除 DS224C 磁碟櫃中的磁碟</block>
+  <block id="783b57f4c424133fb614814a5561cacd" category="image-alt">IOM12 前方</block>
+  <block id="a8ab1a97e4cda29b26f514a774dd5ba0" category="image-alt">IOM12B 正面</block>
+  <block id="4283b924e5ab8de772cce8a8672e234a" category="image-alt">CAM 把手的釋放閂鎖</block>
+  <block id="5bd609ccafc05b4bba3acfef2eaa0190" category="image-alt">凸輪把手處於開啟位置</block>
+  <block id="7dd431cc03f43f663695fa547eddc199" category="sidebar">維護綜覽</block>
+  <block id="d95c547fbb677f06b886d9af6b8c8c7f" category="sidebar">開機媒體取代工作流程</block>
+  <block id="e7d709a415f457e468d93ff7beb8afbf" category="sidebar">要求與考量</block>
+  <block id="4f46fe04ed7debd30ef1d3c151e24935" category="sidebar">控制器更換工作流程</block>
+  <block id="1ca4e63b42d944e09b1132b7f6f56b66" category="sidebar">I/O 模組總覽</block>
+  <block id="926cbecf3e76b90a2bcdbc9c4519fc77" category="sidebar">機箱更換工作流程</block>
 </blocks>

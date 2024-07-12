@@ -1,0 +1,20 @@
+---
+permalink: a70-90/chassis-replace-requirements.html 
+sidebar: sidebar 
+keywords: aff a70, aff a90, replace the chassis 
+summary: 您可以使用與受損機箱相同型號的新機箱來更換受損機箱。 
+---
+= 要求與考量事項： AFF A70 、 AFF A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要更換機箱、您必須將擋板、控制器模組和NVMe磁碟機從受損機箱移至更換機箱、然後從設備機架或系統機櫃中移除受損機箱、並將替換機箱安裝到位。
+
+* 確保系統中的所有其他元件正常運作；如果沒有、請聯絡技術支援部門。
+* 您可以在系統支援的所有 ONTAP 版本中使用機箱更換程序。
+* 機箱更換程序是假設您要將擋板、 NVMe 磁碟機和控制器模組移至新機箱、而更換機箱則是 NetApp 的新元件。
+* * 機箱更換程序會造成營運中斷。 *對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。
+

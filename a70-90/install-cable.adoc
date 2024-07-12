@@ -52,19 +52,20 @@ NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
 +
 * 叢集 / HA 互連纜線 *
 
-
-
-
-
++
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[叢集 HA 纜線]
 
-+ 影像： ../media/drw_70-90_tnsc_cluster 纜線 _cabling_iops-1653.svg [ 雙節點無切換叢集纜線圖表、寬度 =500px]
 
-+ 。將乙太網路模組連接埠連接至主機網路。
 
-+ 以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
++
+image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[雙節點無交換器叢集佈線圖]
 
-. 如圖所示、將 e9a 和 e9b 連接至乙太網路資料網路交換器。
+. 將乙太網路模組連接埠連接至主機網路。
++
+以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
+
++
+.. 如圖所示、將 e9a 和 e9b 連接至乙太網路資料網路交換器。
 +
 
 NOTE: 為了讓叢集和 HA 流量發揮最大的系統效能、最佳做法是不要使用連接埠 e1b 和 e7b 連接埠來進行主機網路連線。請使用獨立的主機卡來發揮最大效能。
@@ -78,7 +79,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[100Gb 乙太網路纜線]
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[連接至 100 Gb 乙太網路的纜線]
 
-. 連接 10/25 GbE 主機網路交換器。
+.. 連接 10/25 GbE 主機網路交換器。
 +
 *4 個連接埠、 10/25 GbE 主機 *
 
@@ -88,8 +89,9 @@ image::../media/oie_cable_sfp_gbe_copper.svg[10/25 GB 纜線]
 +
 image::../media/drw_70-90_network_cabling2_ieops-1655.svg[連接至 100Gb 乙太網路的纜線]
 
-+
-.. 使用 1000BASE-T RJ-45 纜線、將控制器管理（扳手）連接埠連接至管理網路交換器。
+
+
+. 使用 1000BASE-T RJ-45 纜線、將控制器管理（扳手）連接埠連接至管理網路交換器。
 +
 image::../media/oie_cable_rj45.svg[RJ45 纜線]
 
@@ -98,8 +100,6 @@ image::../media/oie_cable_rj45.svg[RJ45 纜線]
 
 +
 image::../media/drw_70-90_management_connection_ieops-1656.svg[連線至您的管理網路]
-
-
 
 
 

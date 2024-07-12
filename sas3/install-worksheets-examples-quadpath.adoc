@@ -17,18 +17,18 @@ summary: 您可以使用完整的控制器對堆疊纜線工作表和纜線佈�
 * 如有需要、請參閱 link:install-cabling-worksheets-how-to-read-quadpath.html["如何讀取工作表以纜線連接控制器與堆疊的連線、以實現四路徑連線"]。
 * 佈線範例將控制器對堆疊纜線顯示為實線或虛線、以區分控制器A和C連接埠與控制器B和D連接埠的連線。
 +
-image::../media/drw_controller_to_stack_cable_type_key.gif[從DRW控制器堆疊纜線類型金鑰]
+image::../media/drw_controller_to_stack_cable_type_key.gif[控制器至堆疊纜線的纜線類型鑰匙]
 
 * 佈線範例中的纜線及工作表中對應的連接埠配對會以色彩編碼、以區分與HA配對中每個堆疊的連線。
 +
-image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[將有線彩色金鑰堆疊至非2600的DRW控制器]
+image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[佈線工作表的彩色鍵]
 
 * 佈線範例可視覺區分兩組多路徑纜線、以便在HA配對或單一控制器組態中、為每個控制器與每個堆疊建立四路徑連線。
 +
 第一組多路徑纜線稱為「多路徑」。第二組多路徑纜線稱為「四路徑」。第二組纜線稱為「四路徑」、因為完成這組纜線後、您就能享有四路徑連線功能。
 
 +
-image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[以DRw控制器堆疊四路徑連線金鑰]
+image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[四路徑連線的彩色鍵]
 
 * 工作表範例顯示指定用於多路徑纜線或四路徑纜線至適用堆疊的連接埠配對。
 +
@@ -44,4 +44,4 @@ image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[以DRw�
 
 image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[四路徑 HA 的佈線工作表]
 
-image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Drw qpha插槽1和2兩個4porthbas兩個堆疊NAU]
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Quuad-path HA 、具備兩個四埠 SAS HBA 和兩個多層架堆疊]

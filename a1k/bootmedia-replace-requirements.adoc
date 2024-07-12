@@ -1,0 +1,24 @@
+---
+permalink: a1k/bootmedia-replace-requirements.html 
+keywords: aff a1k, replace the boot media 
+summary: 瞭解更換開機媒體的需求。 
+---
+= 要求與考量事項： AFF A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更換開機媒體之前、請務必檢閱下列需求。
+
+* 您必須擁有一個格式化為FAT32的USB快閃磁碟機、以及適當的儲存容量、才能容納「image_xxx.tgz」。
+* 您必須將檔案複製 `image_xxx.tgz` 到 USB 快閃磁碟機、以便稍後在本程序中使用。
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請務必在正確的控制器上套用下列步驟中的命令：
++
+** _減損_控制器是您要執行維護的控制器。
+** _Healthy控制器是受損控制器的HA合作夥伴。
+
+
+
