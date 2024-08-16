@@ -20,11 +20,11 @@ NOTE: 此資訊適用於沒有內部儲存設備的平台。
 * 如有需要、請參閱 link:install-cabling-worksheets-how-to-read-multipath.html["如何讀取工作表以纜線連接控制器與堆疊的連線、以實現多路徑連線"]。
 * 佈線範例顯示控制器對堆疊纜線為實線或虛線、以區分控制器A和C連接埠連線與控制器B和D連接埠連線。
 +
-image::../media/drw_controller_to_stack_cable_type_key.gif[從DRW控制器堆疊纜線類型金鑰]
+image::../media/drw_controller_to_stack_cable_type_key.gif[多重路徑 HA 組態纜線類型金鑰]
 
 * 佈線範例中的纜線及工作表中對應的連接埠配對會以色彩編碼、以區分與HA配對中每個堆疊的連線。
 +
-image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif[將纜線色彩金鑰堆疊至非2600 4堆疊色彩的DRW控制器]
+image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif[多重路徑 HA 組態纜線彩色金鑰]
 
 * 工作表和佈線範例會依照工作表中列出的順序來顯示佈線連接埠配對。
 
@@ -41,9 +41,9 @@ image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif
 
 下列工作表和纜線範例使用連接埠配對1a/1d：
 
-image::../media/drw_worksheet_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[網路工作表mpha插槽1一個單一單一伺服器堆疊]
+image::../media/drw_worksheet_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[一個四埠 SAS HBA 和一個單一機櫃堆疊的多重路徑 HA 纜線工作表]
 
-image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[Drw mpha插槽1單一單一單一單一單一堆疊]
+image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[一個四埠 SAS HBA 和一個單一機櫃堆疊的多重路徑 HA 纜線範例]
 
 
 
@@ -51,9 +51,9 @@ image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[Drw mpha�
 
 下列工作表和纜線範例使用連接埠配對1a/1d和1c/1b：
 
-image::../media/drw_worksheet_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[Drw工作表mpha插槽1一個4porthba兩個單一伺服器堆疊]
+image::../media/drw_worksheet_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[一個四埠 SAS HBA 和兩個單一機櫃堆疊的多重路徑 HA 纜線工作表]
 
-image::../media/drw_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[Drw mpha插槽1一個4porthba兩個單一伺服器堆疊]
+image::../media/drw_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[一個四埠 SAS HBA 和兩個單一機櫃堆疊的多重路徑 HA 纜線範例]
 
 
 
@@ -66,18 +66,18 @@ NOTE: 如果連接埠配對數量超過系統中的堆疊纜線數量、最佳�
 
 下列工作表和纜線佈線範例顯示使用連接埠配對的順序、請參閱工作表：1A/2b、2a/1d、1c/2D和2c/1b。
 
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[Drw工作表mpha插槽1和2個4porthbas兩個堆疊]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[兩個四埠 SAS HBA 和兩個多機櫃堆疊的多重路徑 HA 纜線工作表]
 
-image::../media/drw_mpha_slots_1_and_2_4porthbas_4_stacks.gif[Drw mpha插槽1和2 4組4個堆疊]
+image::../media/drw_mpha_slots_1_and_2_4porthbas_4_stacks.gif[兩個四埠 SAS HBA 和兩個多機櫃堆疊的多重路徑 HA 纜線範例]
 
 下列工作表和佈線範例顯示要跳過的連接埠配對、以供清單中的每一個使用：1A/2b和1c/2D。
 
 
 NOTE: 如果稍後新增了第三個堆疊、您就會使用跳過的連接埠配對。
 
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[已跳過DRw工作表mpha插槽1和2個4porthbas兩個堆疊]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[使用跳過的連接埠配對、用於兩個四埠 SAS HBA 和兩個多機櫃堆疊的多重路徑 HA 纜線工作表]
 
-image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[已跳過DRw mpha插槽1和2個4porthbas兩個堆疊]
+image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[使用跳過的連接埠配對、用於兩個四埠 SAS HBA 和兩個多機櫃堆疊的多重路徑 HA 纜線範例]
 
 
 
@@ -91,9 +91,9 @@ image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[已�
 
 以下工作表和佈線範例使用連接埠配對0A/0d：
 
-image::../media/drw_worksheet_mpha_slot_0_4ports_one_singleshelf_stack.gif[DRW工作表mpha插槽0 4連接埠單一單一伺服器堆疊]
+image::../media/drw_worksheet_mpha_slot_0_4ports_one_singleshelf_stack.gif[四個內建連接埠和一個單一機櫃堆疊的多重路徑 HA 纜線工作表]
 
-image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[單一單一伺服器堆疊的DRw mpha插槽0 4連接埠]
+image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[四個內建連接埠和一個單一機櫃堆疊的多重路徑 HA 纜線範例]
 
 
 
@@ -101,9 +101,9 @@ image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[單一單一伺
 
 以下工作表和佈線範例使用連接埠配對0A/0d和0c/0b：
 
-image::../media/drw_worksheet_mpha_slot_0_4ports_two_singleshelf_stacks.gif[DRW工作表mpha插槽0 4連接埠兩個單一伺服器堆疊]
+image::../media/drw_worksheet_mpha_slot_0_4ports_two_singleshelf_stacks.gif[四個內建連接埠和兩個單一機櫃堆疊的多重路徑 HA 纜線工作表]
 
-image::../media/drw_mpha_slot_0_4ports_two_singleshelf_stacks.gif[Drw mpha插槽0 4連接埠兩個單一伺服器堆疊]
+image::../media/drw_mpha_slot_0_4ports_two_singleshelf_stacks.gif[四個內建連接埠和兩個單一機櫃堆疊的多重路徑 HA 纜線範例]
 
 
 
@@ -116,15 +116,15 @@ NOTE: 如果連接埠配對數量超過系統中的堆疊纜線數量、最佳�
 
 下列工作表和纜線佈線範例顯示使用連接埠配對的順序、請參閱工作表：0A/1b、1a/0d、0c/1d和1c/0b。
 
-image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_4stacks.gif[DRW工作表mpha插槽0和1 8個連接埠4st堆 疊]
+image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_4stacks.gif[多重路徑 HA 纜線工作表、適用於四埠 SAS HBA 和兩個多機櫃堆疊的四個內建 SAS 連接埠]
 
-image::../media/drw_mpha_slots_0_and_1_8ports_4_stacks.gif[DRW mpha插槽0和1 8埠4堆疊]
+image::../media/drw_mpha_slots_0_and_1_8ports_4_stacks.gif[多重路徑 HA 纜線範例、適用於四埠 SAS HBA 和兩個多機櫃堆疊的四個內建 SAS 連接埠]
 
 以下工作表和佈線範例顯示跳過連接埠配對、以便在清單中每隔一組使用：0A/1b和0c/1d。
 
 
 NOTE: 如果稍後新增了第三個堆疊、您就會使用跳過的連接埠配對。
 
-image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[已跳過DRw工作表mpha插槽0和1 8個連接埠的兩個堆疊]
+image::../media/drw_worksheet_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[多重路徑 HA 纜線工作表適用於四個內建連接埠、四埠 SAS HBA 、以及使用略過連接埠配對的兩個多機櫃堆疊]
 
-image::../media/drw_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[DRw mpha插槽0和1 8個連接埠跳過兩個堆疊]
+image::../media/drw_mpha_slots_0_and_1_8ports_two_stacks_skipped.gif[多重路徑 HA 纜線範例：四個內建連接埠、一個四埠 SAS HBA 、以及兩個使用略過連接埠配對的多機櫃堆疊]

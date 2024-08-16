@@ -31,7 +31,7 @@ link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備�
 * 如有需要、請在完成工作表後參閱 link:install-cabling-worksheets-how-to-read-multipath.html["如何讀取工作表以纜線連接控制器與堆疊的連線、以實現多路徑連線"]
 
 
-image::../media/drw_worksheet_mpha_template.gif[DRw工作表mpha範本]
+image::../media/drw_worksheet_mpha_template.gif[MPHA 控制器堆疊纜線工作表範本]
 
 .步驟
 . 在灰色方塊上方的方塊中、列出系統上的所有SAS A連接埠、然後依插槽順序列出系統上的所有SAS C連接埠（0、1、2、3等）。
@@ -54,7 +54,7 @@ image::../media/drw_worksheet_mpha_template.gif[DRw工作表mpha範本]
 例如、在具有八個SAS連接埠和四個堆疊的多重路徑HA組態中、連接埠配對1a/2b連接至堆疊1、連接埠配對2a/1d連接至堆疊2、連接埠配對1c/2D連接至stack3、連接埠配對2c/1b連接至堆疊4。
 
 +
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[Drw工作表mpha插槽1和2個4porthbas兩個堆疊]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[已填寫多重路徑 HA 纜線工作表單]
 
 +
 當系統中的堆疊不需要所有連接埠配對時、請跳過連接埠配對（使用其他連接埠配對）。
@@ -67,14 +67,14 @@ image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[Dr
 NOTE: 如果連接埠配對數量超過系統中的堆疊纜線數量、最佳做法是跳過連接埠配對、以最佳化系統上的SAS連接埠。藉由最佳化SAS連接埠、您可以最佳化系統效能。
 
 +
-image::../media/drw_worksheet_mpha_skipped_template.gif[已跳過的範本已跳過網路工作表mpha]
+image::../media/drw_worksheet_mpha_skipped_template.gif[顯示略過連接埠配對的多重路徑 HA 纜線工作表]
 
 +
 您可以使用完整的工作表單來連接系統。
 
 . 如果您有單一控制器（多重路徑）組態、請將控制器2的資訊橫向顯示出來。
 +
-image::../media/drw_worksheet_mp_template.gif[DRW工作表MP範本]
+image::../media/drw_worksheet_mp_template.gif[已填寫多路徑纜線工作表單]
 
 +
 您可以使用完整的工作表單來連接系統。

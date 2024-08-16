@@ -19,11 +19,11 @@ NOTE: 此資訊不適用於FAS25XX平台。
 * 如有需要、請參閱 link:install-cabling-rules.html["SAS 纜線規則與概念"] 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、
 * 佈線範例顯示控制器對堆疊的纜線為實線或虛線、以區別控制器 0b/0b1 連接埠與控制器 0A 連接埠的連接。
 +
-image::../media/drw_fas2600_controller_to_stack_cable_type_key_IEOPS-947.svg[DRW fas2600 控制器堆疊纜線類型金鑰 IEOPS 947]
+image::../media/drw_fas2600_controller_to_stack_cable_type_key_IEOPS-947.svg[纜線類型金鑰、適用於內建儲存設備的平台]
 
 * 佈線範例以兩種不同的色彩顯示控制器對堆疊連線和機櫃對機櫃連線、以區別透過IOM A（網域A）和IOM B（網域B）的連線能力。
 +
-image::../media/drw_fas2600_cable_color_key.png[DRW fas2600纜線色彩金鑰]
+image::../media/drw_fas2600_cable_color_key.png[纜線彩色金鑰、適用於內建儲存設備的平台]
 
 
 
@@ -33,7 +33,7 @@ image::../media/drw_fas2600_cable_color_key.png[DRW fas2600纜線色彩金鑰]
 
 以下範例顯示、快取多重路徑 HA 連線不需要纜線：
 
-image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[DRW fas2800 noslap mpha IEOPS 954]
+image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2800 多重路徑 HA 、不含外部機櫃]
 
 
 
@@ -41,7 +41,7 @@ image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[DRW fas2800 noslap mpha I
 
 以下佈線範例顯示兩個控制器之間的必要佈線、以實現三重路徑連線：
 
-image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[DRW fas2800 noslap tpha IEOPS 955]
+image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[Fas2800 三路徑 HA 纜線範例、無外部機櫃]
 
 
 
@@ -49,9 +49,9 @@ image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[DRW fas2800 noslap tpha I
 
 下列工作表和纜線範例使用連接埠配對 0A/0b1 ：
 
-image::../media/drw_fas2800_worksheet_IEOPS-948.svg[DRW fas2800 工作表 IEOPS 948]
+image::../media/drw_fas2800_worksheet_IEOPS-948.svg[FAS2800 三路徑 HA 佈線工作表顯示堆疊 1 的連接埠配對]
 
-image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[DRw fas2800 可架裝 Tpha IEOPS 949]
+image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2800 三路徑 HA 佈線範例、連接到一個堆疊]
 
 
 
@@ -62,9 +62,9 @@ image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[DRw fas2800 可架裝
 
 NOTE: 本節不適用於 FAS2800 或 FAS25XX 系統。
 
-image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[DRW fas2600 mpha 工作表 IEOPS 1255]
+image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[多重路徑 HA 纜線工作表、適用於具有內部儲存設備和單一堆疊的平台]
 
-image::../media/drw_fas2600_mpha_IEOPS-1256.svg[DRW fas2600 mpha IEOPS 1256]
+image::../media/drw_fas2600_mpha_IEOPS-1256.svg[內部儲存平台的多重路徑 HA 纜線範例]
 
 
 
@@ -74,12 +74,12 @@ image::../media/drw_fas2600_mpha_IEOPS-1256.svg[DRW fas2600 mpha IEOPS 1256]
 
 在此範例中、控制器安裝在機箱的插槽A中。當控制器位於機箱的插槽A時、其內部儲存連接埠（0b）位於網域A（IOM A）中、因此連接埠0b必須連接至堆疊中的網域A（IOM A）。
 
-image::../media/drw_fas2600_mp_slot_a_worksheet.png[DRW fas2600 MP slot A工作表]
+image::../media/drw_fas2600_mp_slot_a_worksheet.png[FAS2600 佈線工作表顯示多路徑組態的連接埠配對]
 
-image::../media/drw_fas2600_mp_slot_a.png[DRW fas2600 MP插槽A]
+image::../media/drw_fas2600_mp_slot_a.png[使用機箱插槽 1 中的控制器的 FAS2600 多重路徑纜線範例]
 
 在此範例中、控制器安裝在機箱的插槽B中。當控制器位於機箱的插槽B時、其內部儲存連接埠（0b）位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的網域B（IOM B）。
 
-image::../media/drw_fas2600_mp_slot_b_worksheet.png[DRW fas2600 MP slot b工作表]
+image::../media/drw_fas2600_mp_slot_b_worksheet.png[FAS2600 佈線工作表顯示多路徑組態的連接埠配對]
 
-image::../media/drw_fas2600_mp_slot_b.png[DRW fas2600 MP插槽b]
+image::../media/drw_fas2600_mp_slot_b.png[使用機箱插槽 2 中的控制器的 FAS2600 多重路徑纜線範例]

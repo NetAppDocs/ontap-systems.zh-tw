@@ -35,7 +35,7 @@ summary: 完成工作表範本之後、即可定義控制器SAS連接埠配對�
 * 如有需要、請在完成工作表後參閱 link:install-cabling-worksheets-how-to-read-quadpath.html["如何讀取工作表以纜線連接控制器與堆疊的連線、以實現四路徑連線"]。
 
 
-image::../media/drw_worksheet_quad_pathed_template_nau.gif[DRw工作表四路徑範本NAU]
+image::../media/drw_worksheet_quad_pathed_template_nau.gif[四重路徑纜線工作表範本]
 
 .步驟
 . 在灰色方塊上方的方塊中、列出系統上的所有SAS A連接埠、然後依插槽順序列出系統上的所有SAS C連接埠（0、1、2、3等）。
@@ -58,7 +58,7 @@ image::../media/drw_worksheet_quad_pathed_template_nau.gif[DRw工作表四路徑
 下列範例使用連接埠配對1a/2b進行多路徑纜線、而使用連接埠配對2a/1d進行四路徑纜線至堆疊1。
 
 +
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_set1_circled_nau.gif[Drw工作表qpha插槽1和2個4porthbas兩個堆疊、設定1個圈出的NAU]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_set1_circled_nau.gif[顯示連接至堆疊 1 的連接埠配對的四重路徑 HA 纜線工作表]
 
 . 在第一組連接埠配對四周畫一個橢圓形、在第二組連接埠配對四周畫一個矩形、以識別要連接至堆疊2的兩組連接埠配對。
 +
@@ -68,13 +68,13 @@ image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_set1_c
 下列範例使用連接埠配對1c/2D進行多路徑纜線、使用連接埠配對2c/1b進行四路徑纜線至堆疊2。
 
 +
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[四路徑 HA 的佈線工作表]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[顯示連接至堆疊 2 的連接埠配對的四重路徑 HA 纜線工作表]
 
 . 如果您有四路徑（單控制器）組態、請將控制器2的資訊橫向傳送出去；您只需要控制器1的資訊、就能將控制器與堆疊的連線纜線。
 +
 以下範例顯示控制器2的資訊已刪去。
 
 +
-image::../media/drw_worksheet_qp_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[DRw工作表QP插槽1和2個4porthbas雙堆疊NAU]
+image::../media/drw_worksheet_qp_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[四重路徑單一控制器纜線工作表、顯示連接至堆疊 1 和 2 的連接埠配對]
 
 

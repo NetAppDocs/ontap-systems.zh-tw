@@ -186,7 +186,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 . 對控制器B重複這些步驟
 . 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
 . 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
-. 如果您安裝了儲存 I/O 模組、請依照中所述、安裝 NS224 機櫃並連接纜線 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增機櫃"^]。
+. 如果您安裝了儲存 I/O 模組、請依照中所述、安裝 NS224 機櫃並連接纜線 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["熱新增工作流程"^]。
 
 
 
@@ -408,7 +408,7 @@ NIC 模組
  a| 
 儲存模組
  a| 
-按照中所述，安裝和連接 NS224 機櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html["熱新增機櫃"^]。
+按照中所述，安裝和連接 NS224 機櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["熱新增工作流程"^]。
 
 |===
 . 對控制器B重複這些步驟
