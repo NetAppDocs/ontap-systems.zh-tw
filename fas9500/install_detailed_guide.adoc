@@ -35,7 +35,7 @@ summary: 這份提供安裝典型NetApp系統的詳細逐步指示。
 . 打開所有包裝箱的內容物。
 . 從控制器記錄系統序號。
 +
-image::../media/drw_ssn_label.svg[DRw SSN標籤]
+image::../media/drw_ssn_label.svg[顯示號碼位置的系統序號範例]
 
 . 清點並記下您收到的纜線數量和類型。
 +
@@ -223,7 +223,7 @@ image::../media/drw_9500_cable_management_arms.svg[DRW 9500纜線管理臂]
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
 
-image::../media/oie_cable_pull_tab_up.svg[OIE纜線拉片向上]
+image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -312,7 +312,7 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
 
-image::../media/oie_cable_pull_tab_up.svg[OIE纜線拉片向上]
+image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -400,14 +400,14 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500
 將 DS212C 或 DS224C 磁碟機櫃連接至控制器。
 
 
-NOTE: 如需更多SAS纜線連接資訊和工作表、請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html["SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃"^]
+NOTE: 如需更多 SAS 纜線資訊和工作表、請參閱link:../sas3/overview-cabling-rules-examples.html["SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃"]
 
 .開始之前
-* 填寫系統的SAS纜線工作表。請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html["SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃"^]。
+* 填寫系統的SAS纜線工作表。請參閱。 link:../sas3/overview-cabling-rules-examples.html["SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃"]
 * 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
 
 
-image::../media/oie_cable_pull_tab_up.svg[OIE纜線拉片向上]
+image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
 
 image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
 

@@ -19,8 +19,8 @@
 
 . 使用ONTAP 「vrvion -v」命令檢查系統在受損控制器上執行的版本；如果受損控制器停機、則檢查合作夥伴控制器上執行的版本：
 +
-** 如果命令輸出中顯示 <lno-DARE> 或 <1Ono － DARe 、表示系統不支援 NVE 、請繼續執行 https://docs.netapp.com/us-en/ontap-systems/fas2800/bootmedia-impaired-controller-shutdown.html["關閉受損的控制器"]。
-** 如果命令輸出中未顯示 <lno-DARE> 、且系統執行的是 ONTAP 9.6 或更新版本、請繼續下一節、 <<在執行ONTAP Se 9.6及更新版本的系統上檢查NVE或NSE>>。
+** 如果命令輸出中顯示 <lno-DARE> 或 <1Ono － DARe ，則系統不支持 NVE ，請繼續執行link:../fas2800/bootmedia-impaired-controller-shutdown.html["關閉受損的控制器"]。
+** 如果命令輸出中未顯示 <lno-DARE> 、且系統執行的是 ONTAP 9 6 或更新版本、請繼續下一節link:../fas2800/bootmedia-encryption-preshutdown-checks.html#check-nve-or-nse-on-systems-running-ontap-9-6-and-later["在執行ONTAP Se 9.6及更新版本的系統上檢查NVE或NSE"]。
 
 
 . 停用健康控制器的自動恢復：

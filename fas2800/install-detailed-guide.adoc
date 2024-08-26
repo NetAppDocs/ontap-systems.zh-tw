@@ -48,7 +48,7 @@ IMPORTANT: 有特定電力需求的客戶必須檢查 https://hwu.netapp.com["Ne
 .. 完成以收集儲存系統的相關資訊 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["設定工作表 ^ （需要工作表的 URL ）"]。
 .. 記錄控制器的儲存系統序號。
 +
-image::../media/drw_ssn_label.svg[DRw SSN標籤]
+image::../media/drw_ssn_label.svg[顯示號碼位置的系統序號範例]
 
 
 
@@ -401,7 +401,7 @@ IMPORTANT: 請勿插入電源線。
 下表列出磁碟機櫃與儲存系統之間的纜線類型、以及圖示中的撥出電話號碼和纜線顏色。
 
 
-NOTE: 範例使用DS224C。佈線與其他支援的磁碟機櫃類似。請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["安裝及纜線架以安裝新系統-機櫃配備IOM12/IOM12B模組"^] 以取得更多資訊。
+NOTE: 範例使用DS224C。佈線與其他支援的磁碟機櫃類似。如需詳細資訊、請參閱 link:../sas3/install-new-system.html["安裝及纜線架以安裝新系統-機櫃配備IOM12/IOM12B模組"] 。
 
 [cols="20%,80%"]
 |===
@@ -436,7 +436,7 @@ image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
 請使用動畫或逐步說明、完成控制器與磁碟機櫃之間的纜線連接。
 
 
-IMPORTANT: 請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。請參閱 https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html["在新的儲存系統中安裝機櫃"^] 以取得更多資訊。
+IMPORTANT: 請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。如需詳細資訊、請參閱 link:../sas3/install-new-system.html["在新的儲存系統中安裝機櫃"^] 。
 
 .動畫 - 磁碟機櫃纜線
 video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]

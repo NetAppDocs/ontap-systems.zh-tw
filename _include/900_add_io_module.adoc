@@ -153,7 +153,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。
 . 對控制器B重複這些步驟
-. 如果您安裝了儲存 I/O 模組、請依照中所述、安裝 NS224 機櫃並連接纜線 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["熱新增工作流程"^]。
+. 如果您安裝了儲存 I/O 模組、請依照中所述link:../ns224/hot-add-shelf-overview.html["熱新增工作流程"]、安裝 NS224 機櫃並連接纜線。
 
 
 
@@ -383,7 +383,7 @@ NOTE: 如果您在重新開機期間遇到問題、請參閱 https://mysupport.n
  a| 
 儲存模組
  a| 
-按照中所述，安裝和連接 NS224 機櫃 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["熱新增工作流程"^]。
+按照中所述，安裝和連接 NS224 機櫃 link:../ns224/hot-add-shelf-overview.html["熱新增工作流程"]。
 
 |===
 . 對控制器B重複這些步驟

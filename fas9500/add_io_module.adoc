@@ -162,7 +162,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。
 . 對控制器B重複這些步驟
-. 如果您安裝儲存I/O模組、請依照中所述、安裝並連接SAS磁碟櫃 https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["熱新增SAS機櫃"^]。
+. 如果您安裝了儲存 I/O 模組、請依照中所述link:../sas3/install-hot-add-shelf.html["熱新增SAS機櫃"]、安裝及連接 SAS 機櫃。
 
 
 
@@ -387,7 +387,7 @@ NOTE: 如果您在重新開機期間遇到問題、請參閱 https://mysupport.n
 
 
  a| 
-插槽3或7中的NIC模組、
+插槽 3 或 7 中的 NIC 模組
  a| 
 對於每個連接埠、使用「儲存連接埠修改節點*_<節點名稱>_-port *_<連接埠名稱>_-mode network」命令。
 
@@ -396,7 +396,7 @@ NOTE: 如果您在重新開機期間遇到問題、請參閱 https://mysupport.n
  a| 
 儲存模組
  a| 
-如所述、安裝及連接SAS磁碟櫃https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html["熱新增SAS機櫃"^]。
+按照中所述安裝和佈線 SAS 機櫃link:../sas3/install-hot-add-shelf.html["熱新增SAS機櫃"]。
 
 |===
 . 對控制器B重複這些步驟
