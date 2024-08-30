@@ -5920,7 +5920,6 @@
   <block id="450bb6c29a5f5af0fe4d1f8fcfcb4777" category="paragraph">交換電源供應器包括關閉、拔下及移除電源供應器、以及安裝、連接及開啟更換的電源供應器。</block>
   <block id="3e476a4d56adc74857e9c49cf82980f1" category="list-text">系統中有四個電源供應器。</block>
   <block id="d35281b877a38ecad54d9ac919c0ff9a" category="list-text">將電源線重新連接至電源供應器。</block>
-  <block id="312be20d26d0db2b40b706dc2f350028" category="image-alt">DRw A900 oie變更新南澳州224機櫃ID IEOPS 836</block>
   <block id="48fb10beb7e1cd15b9bdbab40aac9532" category="paragraph">機櫃端蓋</block>
   <block id="22f4a2aa68e94fdf29e1fc7d0f30d571" category="paragraph">機櫃面板</block>
   <block id="fd4a04a1b7abc5cadef1bf584e6e5547" category="paragraph">機櫃ID LED</block>
@@ -5961,11 +5960,7 @@
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用維護模式中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="c56809d9cff2ea190c6fb9d67e804b42" category="paragraph">裝回機箱時、您必須卸下機箱正面的六個風扇模組。</block>
   <block id="e9e9a6de5e421dfe8a5ccc0b156ecc94" category="admonition">如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽的左側）、然後尋找插卡、再依產品編號在中尋找插卡<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> 命令或系統壓縮清單上的。</block>
-  <block id="e1ed9dc03578bbf7dfdc44cf31220a86" category="image-alt">DRW A900交換式網路纜線IOPS 934</block>
-  <block id="f31eedcaeccdc6e2f0110a8d59512b5b" category="image-alt">DRW A900 NS224一個機櫃佈線IOPS 937</block>
-  <block id="de9724762d060c871892fe8183e35056" category="image-alt">DRW A900 NS224兩個機櫃佈線IOPS 938</block>
   <block id="6f189db9f1b1dfc1be838de48c805168" category="video-title">動畫-設定NVMe磁碟機磁碟櫃ID</block>
-  <block id="c81415a6ed927280dac360edb5000bc6" category="image-alt">DRW A900開啟IOPS 941</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
   <block id="192e7ded6d54e3ac04596dc33b9c67cf" category="paragraph">您可以將I/O模組新增至系統的空模組插槽。</block>
@@ -5990,7 +5985,6 @@
   <block id="e739fb18db4795dd1e2cea8f3c5244c3" category="list-text">前往 <block ref="56c57196a2457d200e49164377b65ba5" category="inline-link-macro-rx"></block>。</block>
   <block id="54c5909d12d5c473924ce9b2c856a68d" category="image-alt">DRW A400 NVDIMM電池IOPS 1004.</block>
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400更換NVDIMM DIMM IOPS 1009</block>
-  <block id="f5a5a95a5282486c3989ed932401b693" category="image-alt">DRW A900纜線主控台交換器控制器IOPS 953</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">如果已啟用儲存加密、則必須還原功能。</block>
   <block id="34dbbed571bcfe30f4b9897172116b74" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block></block>
   <block id="90d49fcc83418b049803a1b2081f3c6b" category="list-text">若要完成系統設定、請參閱 <block ref="53346fef0c147b551f530d05bbad2e41" category="inline-xref-macro-rx"></block></block>
@@ -6448,9 +6442,7 @@
   <block id="94f6805f56a12322f9f69e911a22d9b8" category="paragraph">下圖顯示典型系統的外觀、以及主要元件位於系統後方的位置：</block>
   <block id="fd39828687c1d928d80860408fbad6fe" category="paragraph">將單一 NS224 磁碟機櫃或兩個 NS224 磁碟機櫃連接至控制器。</block>
   <block id="b10d0d290118effc922ad6f19fc77818" category="open-title">選項 1 ：將控制器連接至單一 NS224 磁碟機櫃</block>
-  <block id="197dee836fa91f0bc10674f0b47382e3" category="image-alt">OIE 圖例圖示 2</block>
   <block id="ac4fc8e93ed87aaf0d607c7594b760df" category="open-title">選項 2 ：將控制器連接至兩個 NS224 磁碟機櫃</block>
-  <block id="eab02c161618f87134d04b274c9ed0a9" category="image-alt">DRW A900 NS224 線上藝術雙機櫃纜線 IEOPS 1147</block>
   <block id="93d4151426ee3e46d52580ae98128972" category="list-text">使用您在中收集的資料來設定系統<block ref="31fb422f2cdfc1b2e916b587bec00136" category="inline-link-rx"></block></block>
   <block id="17732d64911b83c1ef019e7ce301df3a" category="summary">儲存系統文件可讓您安裝、設定及維護 ASA 系統。</block>
   <block id="27562113eba41d0820398afd585cb267" category="sidebar">ASA 軟體組態</block>
@@ -9240,10 +9232,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="90b5c3b3e8b76a473c431858d638eccb" category="list-text">先將電源線連接至機櫃、然後使用電源線固定器將電源線固定到位、再將電源線連接至不同電路上的電源、以開啟機櫃電源。</block>
   <block id="aa4d119638bea60a8850d8c9e0b57b86" category="paragraph">機櫃在插入電源時會自動開機和開機。</block>
   <block id="67cfcbdbfb87a54aadf338e218c38216" category="list-text">取下左端蓋、即可存取面板後面的機櫃 ID 按鈕。</block>
-  <block id="f044e75ec5037aabefb204d1365ba96b" category="image-alt">變更 NS224 機櫃 ID</block>
-  <block id="d8147b4a0f272144c59f006b412b8290" category="image-alt">[ 請撥號碼 2</block>
-  <block id="8c5529e435c4992332c3afef54410f4e" category="image-alt">[ 請撥號碼 3</block>
-  <block id="1e7068fa54071c2235730ac32aea59df" category="image-alt">[ 請撥號碼 4</block>
   <block id="7d080ef2a38b64e6cac5c0ae019e1a04" category="list-text">將迴紋針或窄尖圓珠筆的拉直端插入小孔中。</block>
   <block id="6344f7fd68670da7ea2e25f860ab47c7" category="list-text">將機櫃關機至少 10 秒、使機櫃 ID 生效。</block>
   <block id="8dd5b39a083288c66f9b37e4b47571ed" category="list-text">從機櫃上的兩個電源供應器拔下電源線。</block>
@@ -9966,4 +9954,68 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1a603190ae07bbceebb7036072831b8b" category="image-alt">如何將 SuperRail 安裝到圓形四柱機架中</block>
   <block id="7c89b00bc8ce7878c39671bd32585c2d" category="image-alt">如何安裝兩個 POST 中間安裝軌道套件</block>
   <block id="887f19a9ed16e42d506a7ee90031e54f" category="image-alt">如何安裝兩柱嵌入式安裝軌道套件</block>
+  <block id="b86f1d6c96041a5555b0eeb0d961c958" category="inline-image-macro">寬度 =300px</block>
+  <block id="63c096f5d747b5901a4e4a36f3aa6339" category="paragraph"><block ref="63c096f5d747b5901a4e4a36f3aa6339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="256e7b6221cc372d4c7438f290102613" category="paragraph"><block ref="256e7b6221cc372d4c7438f290102613" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34b0592b90649145df285163256979f1" category="paragraph"><block ref="34b0592b90649145df285163256979f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="68de0f1c0c0a3216e6ba51295424d756" category="paragraph"><block ref="68de0f1c0c0a3216e6ba51295424d756" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="edbe18d1d431ff5c580c40f87966b4f5" category="paragraph"><block ref="edbe18d1d431ff5c580c40f87966b4f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd9b917400ef9502d61c9c928592feeb" category="inline-image-macro">變更 NS224 機櫃 ID 、寬度 = 300px</block>
+  <block id="070a4dff1a7b1b64d034265c6caef2d0" category="paragraph"><block ref="070a4dff1a7b1b64d034265c6caef2d0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cc0c582fd7777e5d2bea79674136ad70" category="inline-image-macro">編號 1 、寬度 = 20</block>
+  <block id="aa032eab3a17bfa0062c6f09557e3323" category="paragraph"><block ref="aa032eab3a17bfa0062c6f09557e3323" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="216b2e6b0553773aac5eef243619cbc7" category="inline-image-macro">[ 編號 2 、寬度 = 20</block>
+  <block id="11236c01ac6ea594214da845dddb9b2a" category="paragraph"><block ref="11236c01ac6ea594214da845dddb9b2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="644b161ed3089cd2770465be8f055f89" category="inline-image-macro">[ 編號 3 、寬度 = 20</block>
+  <block id="a44f7cc336be8913f0d82f435c921f31" category="paragraph"><block ref="a44f7cc336be8913f0d82f435c921f31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1de6e00aac59480183f5a40884ee2a6e" category="inline-image-macro">[ 編號 4 、寬度 = 20</block>
+  <block id="3eaebe9b3c4bed3b1b0cecc2dd98b9e4" category="paragraph"><block ref="3eaebe9b3c4bed3b1b0cecc2dd98b9e4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7e4f2a8a442405d313b86bd561273488" category="paragraph"><block ref="7e4f2a8a442405d313b86bd561273488" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0f134964723266dab47501a2329291f" category="paragraph"><block ref="c0f134964723266dab47501a2329291f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d33fba9af53b5439ecf23b3382edf2c" category="inline-image-macro">編號 2 、寬度 = 20</block>
+  <block id="d810130c7c55101931e08470c7bb07fe" category="paragraph"><block ref="d810130c7c55101931e08470c7bb07fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1db6a9786fedd43f93f01eba0c2b74bb" category="inline-image-macro">編號 3 、寬度 = 20</block>
+  <block id="17af8c353ce2a37b41b7566738989371" category="paragraph"><block ref="17af8c353ce2a37b41b7566738989371" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="186aa7defdbbe050cd1a4a7400246e3a" category="inline-image-macro">編號 4 、寬度 = 20</block>
+  <block id="c4c5b40e6b1e96c10d75a836204a368d" category="paragraph"><block ref="c4c5b40e6b1e96c10d75a836204a368d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f0e7f42636386fbffaf36b54fbacbf2" category="paragraph"><block ref="6f0e7f42636386fbffaf36b54fbacbf2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="babff6765c503db416f9aad69aec82a2" category="inline-image-macro">寬度 =85px</block>
+  <block id="dc1d3c7f8b5174880f91aa6524f186eb" category="paragraph"><block ref="dc1d3c7f8b5174880f91aa6524f186eb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3db2800441aa6ca29fd1bd67f542d1bd" category="paragraph"><block ref="3db2800441aa6ca29fd1bd67f542d1bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f94c4982d99cc7ba1168f178d5d52649" category="paragraph"><block ref="f94c4982d99cc7ba1168f178d5d52649" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c8dbd18eefd428a2369abb267937a3d" category="paragraph"><block ref="4c8dbd18eefd428a2369abb267937a3d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6be69614f7f631ae41156c7262cbfa20" category="paragraph"><block ref="6be69614f7f631ae41156c7262cbfa20" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1d30d02381fe3fd0fcf25a5394ca931" category="paragraph"><block ref="f1d30d02381fe3fd0fcf25a5394ca931" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ce4e5b97dc4eb5b063de87adcdd8d64" category="paragraph"><block ref="0ce4e5b97dc4eb5b063de87adcdd8d64" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1890402c394bdc8f92e9b00832d96f6b" category="paragraph"><block ref="1890402c394bdc8f92e9b00832d96f6b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3d5200ae441b0d20a4914cbdec727d4" category="paragraph"><block ref="b3d5200ae441b0d20a4914cbdec727d4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d94ad2eb413c586a67a90ad278538137" category="paragraph"><block ref="d94ad2eb413c586a67a90ad278538137" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbf85e66f1cb509bc0522dbbc1b48537" category="paragraph"><block ref="cbf85e66f1cb509bc0522dbbc1b48537" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23f4a6989d877a6848ae85e75cb4107e" category="inline-image-macro">寬度 =30px</block>
+  <block id="f9699d6d10a66e7dba1302dde0e673e6" category="paragraph"><block ref="f9699d6d10a66e7dba1302dde0e673e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a382efe39ca1c5af285eccf0c3d8c05c" category="paragraph"><block ref="a382efe39ca1c5af285eccf0c3d8c05c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f76d5540905d1cc6c8338428fd9d3811" category="paragraph"><block ref="f76d5540905d1cc6c8338428fd9d3811" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fdb524c81cefaf7db65d9ed7860fcb25" category="paragraph"><block ref="fdb524c81cefaf7db65d9ed7860fcb25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="664a1b1220265a449d182e15fb02318f" category="inline-image-macro">寬度 =200px</block>
+  <block id="e2c11749d8ea9cc8051d3a7bd0cb0080" category="paragraph"><block ref="e2c11749d8ea9cc8051d3a7bd0cb0080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="039c37b42c48bd7a9b86e7c17df52d69" category="paragraph"><block ref="039c37b42c48bd7a9b86e7c17df52d69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="295668da1a72746b1e49ede1730d71a9" category="paragraph"><block ref="295668da1a72746b1e49ede1730d71a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15b1cc1c6654646db65180e23bdc80db" category="paragraph"><block ref="15b1cc1c6654646db65180e23bdc80db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f46fcba45ee604355020dcd7df29d159" category="paragraph"><block ref="f46fcba45ee604355020dcd7df29d159" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba54bcf2001d79bb8625529fa7f35e9f" category="inline-image-macro">寬度 =50px</block>
+  <block id="b4990fed2df281f883d25b9ff4fc1532" category="paragraph"><block ref="b4990fed2df281f883d25b9ff4fc1532" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34470acac68b3677d6a7380524d4bec1" category="paragraph"><block ref="34470acac68b3677d6a7380524d4bec1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54de702be0b1e6a75b4ae600758440de" category="paragraph"><block ref="54de702be0b1e6a75b4ae600758440de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="650c0cbd6c737b406f1159925d524291" category="paragraph"><block ref="650c0cbd6c737b406f1159925d524291" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e320175742d036b41e5fb1a481d8d47f" category="paragraph"><block ref="e320175742d036b41e5fb1a481d8d47f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28f823292921e13f5f1e716a34156335" category="paragraph"><block ref="28f823292921e13f5f1e716a34156335" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1eb01e42c3bc98cc6dc3939e3efbe66e" category="paragraph"><block ref="1eb01e42c3bc98cc6dc3939e3efbe66e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="577534c40b40575b9270f9eec17d10bb" category="paragraph"><block ref="577534c40b40575b9270f9eec17d10bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="45a4f29af6323beb8354f98243d57637" category="paragraph"><block ref="45a4f29af6323beb8354f98243d57637" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b49587dccf0f5de061c677cc2cc91ade" category="paragraph"><block ref="b49587dccf0f5de061c677cc2cc91ade" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac7edd3cc7124f409cdf5dc436336252" category="paragraph"><block ref="ac7edd3cc7124f409cdf5dc436336252" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53c210c2168561d49ec663ddcdb6d39e" category="sidebar">A1K I/O 模組</block>
+  <block id="37e0009e8f9c1c6982a732432e86d180" category="sidebar">AFF A70 和 AFF A90 I/O 模組</block>
+  <block id="c079075c23cce6316cdc21e35ca264ec" category="sidebar">更換 NS224 磁碟機櫃</block>
+  <block id="2ebb7b9dab34661ab53f47e149c49c5c" category="sidebar">更換 SAS 磁碟機櫃</block>
 </blocks>

@@ -35,7 +35,7 @@ summary: 這份提供安裝典型NetApp系統的詳細逐步指示。
 . 打開所有包裝箱的內容物。
 . 從控制器記錄系統序號。
 +
-image::../media/drw_ssn_label.svg[顯示號碼位置的系統序號範例]
+image:drw_ssn_label.svg["顯示號碼位置的系統序號範例"]
 
 . 清點並記下您收到的纜線數量和類型。
 +
@@ -59,7 +59,7 @@ X66240A-2（112-00598）、2公尺
 
 X66240A-5（112-00600）、5公尺
  a| 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+image:oie_cable_sfp_gbe_copper.svg["寬度 =85px"]
  a| 
 網路纜線
 
@@ -74,7 +74,7 @@ X66250-5（112-003444）、5公尺
 
 X66250-15（112-00346）、15公尺
  a| 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+image:oie_cable_sfp_gbe_copper.svg["寬度 =85px"]
  a| 
 FC光纖網路纜線
 
@@ -89,7 +89,7 @@ X66100-3（112-00543）、3公尺
 
 X66100-5（112-00544）、5公尺
  a| 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =85px"]
  a| 
 乙太網路資料、叢集網路
 
@@ -104,7 +104,7 @@ X66211B-2（112-00574）、2公尺
 
 X66211B-5（112-00576）、5公尺
  a| 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =85px"]
  a| 
 網路、
 
@@ -125,7 +125,7 @@ X6032A（112-00437）、2公尺
 
 X6033A（112-00438）、3公尺
  a| 
-image::../media/oie_cable_fiber_lc_connector.svg[OIE纜線光纖LC連接器]
+image:oie_cable_fiber_lc_connector.svg["寬度 =85px"]
  a| 
 FC光纖網路
 
@@ -138,7 +138,7 @@ FC光纖網路
 
 X6562-R6（112-00196）、5公尺
  a| 
-image::../media/oie_cable_rj45.svg[OIE纜線RJ45]
+image:oie_cable_rj45.svg["寬度 =85px"]
  a| 
 管理網路與乙太網路資料
 
@@ -149,7 +149,7 @@ micro-USB主控台纜線
  a| 
 不適用
  a| 
-image::../media/oie_cable_micro_usb.svg[OIE纜線Micro USB]
+image:oie_cable_micro_usb.svg["寬度 =85px"]
  a| 
 非Windows或Mac筆記型電腦/主控台軟體安裝期間的主控台連線
 
@@ -160,7 +160,7 @@ image::../media/oie_cable_micro_usb.svg[OIE纜線Micro USB]
  a| 
 不適用
  a| 
-image::../media/oie_cable_power.svg[OIE纜線電源]
+image:oie_cable_power.svg["寬度 =85px"]
  a| 
 開啟系統電源
 
@@ -181,18 +181,18 @@ image::../media/oie_cable_power.svg[OIE纜線電源]
 NOTE: 您必須瞭解與系統重量相關的安全顧慮。
 
 +
-image::../media/drw_9500_lifting_icon.svg[重量舉升注意標籤]
+image:drw_9500_lifting_icon.svg["重量舉升注意標籤"]
 
 . 連接纜線管理裝置（如圖所示）。
 +
-image::../media/drw_9500_cable_management_arms.svg[安裝纜線管理 ARM]
+image:drw_9500_cable_management_arms.svg["安裝纜線管理 ARM"]
 
 . 將擋板放在系統正面。
 
 
 下圖顯示典型系統的外觀、以及主要元件位於系統後方的位置：
 
-image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[典型叢集組態]
+image:drw_a900_controller_in _chassis_ID_IEOPS-856.svg["典型叢集組態"]
 
 
 
@@ -211,7 +211,7 @@ image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[典型叢集組
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
 
-image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
+image:oie_cable_pull_tab_up.svg["纜線拉片方向"]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -221,7 +221,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .動畫-連接雙節點無交換器叢集
 video::37419c37-f56f-48e5-8e6c-afa600095444[panopto]
 +
-image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[無交換器的雙節點網路纜線]
+image:drw_a900_tnsc_network_cabling_IEOPS-933.svg["無交換器的雙節點網路纜線"]
 
 +
 |===
@@ -229,7 +229,7 @@ image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[無交換器的雙�
 
 
  a| 
-image::../media/oie_legend_icon_1_lg.svg[OIE圖例圖示1 LG]
+image:oie_legend_icon_1_lg.svg["寬度 =30px"]
  a| 
 纜線叢集互連連接埠：
 
@@ -237,44 +237,44 @@ image::../media/oie_legend_icon_1_lg.svg[OIE圖例圖示1 LG]
 ** 插槽A8和B8（e8a）
 
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =85px"]
 
 
 
  a| 
-image::../media/oie_legend_icon_2_lp.svg[OIE圖例圖示2 lp]
+image:oie_legend_icon_2_lp.svg["寬度 =30px"]
  a| 
 纜線控制器管理（扳手）連接埠。
 
-image::../media/oie_cable_rj45.svg[OIE纜線RJ45]
+image:oie_cable_rj45.svg["寬度 =85px"]
 
 
 
  a| 
-image::../media/oie_legend_icon_3_o.svg[OIE圖例圖示3 o]
+image:oie_legend_icon_3_o.svg["寬度 =30px"]
  a| 
 纜線25 GbE網路交換器：
 
 插槽A3和B3（e3a和e3c）的連接埠、插槽A3和B9（e9a和e9c）的連接埠、連接至25 GbE網路交換器。
 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+image:oie_cable_sfp_gbe_copper.svg["寬度 =85px"]
 
 40GbE主機網路交換器：
 
 將插槽A4和B4（e4b）中的主機端b連接埠、插槽A8和B8（e8b）連接至主機交換器。
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =85px"]
 
 
 
  a| 
-image::../media/oie_legend_icon_4_dr.svg[OIE圖例圖示4災難恢復]
+image:oie_legend_icon_4_dr.svg["寬度 =30px"]
  a| 
 纜線32 Gb FC連線：
 
 將插槽a5和b5（5a、5b、c和5d）、插槽a7和b7（7a、7b、7c和7d）中的纜線連接埠連接至32 GB FC網路交換器。
 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+image:oie_cable_sfp_gbe_copper.svg["寬度 =85px"]
 
 
 
@@ -283,9 +283,9 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 ** 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。PSU 1 和 3 可為所有 A 側元件提供電力、而 PSU2 和 PSU4 則可為所有 B 側元件提供電力。
 
  a| 
-image::../media/oie_cable_power.svg[OIE纜線電源]
+image:oie_cable_power.svg["寬度 =85px"]
 
-image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500 電源圖示 IEOPS 1142]
+image:drw_a900fas9500_power_source_icon_IEOPS-1142.svg["寬度 =200px"]
 
 |===
 
@@ -300,7 +300,7 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
 
-image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
+image:oie_cable_pull_tab_up.svg["纜線拉片方向"]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -310,7 +310,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .動畫-連接交換式叢集
 video::61ec11ec-aa30-474a-87a5-afa60008b52b[panopto]
 +
-image::../media/drw_a900_switched_network_cabling_IEOPS-934.svg[DRW A900交換式網路纜線IOPS 934]
+image:drw_a900_switched_network_cabling_IEOPS-934.svg["寬度 = 500px"]
 
 +
 |===
@@ -318,7 +318,7 @@ image::../media/drw_a900_switched_network_cabling_IEOPS-934.svg[DRW A900交換�
 
 
  a| 
-image::../media/oie_legend_icon_1_lg.svg[OIE圖例圖示1 LG]
+image:oie_legend_icon_1_lg.svg["寬度 =30px"]
  a| 
 纜線叢集互連A連接埠：
 
@@ -326,44 +326,44 @@ image::../media/oie_legend_icon_1_lg.svg[OIE圖例圖示1 LG]
 ** 插槽A8和B8（e8a）連接至叢集網路交換器。
 
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =85px"]
 
 
 
  a| 
-image::../media/oie_legend_icon_2_lp.svg[OIE圖例圖示2 lp]
+image:oie_legend_icon_2_lp.svg["寬度 =30px"]
  a| 
 纜線控制器管理（扳手）連接埠。
 
-image::../media/oie_cable_rj45.svg[OIE纜線RJ45]
+image:oie_cable_rj45.svg["寬度 =85px"]
 
 
 
  a| 
-image::../media/oie_legend_icon_3_o.svg[OIE圖例圖示3 o]
+image:oie_legend_icon_3_o.svg["寬度 =30px"]
  a| 
 纜線25GbE網路交換器：
 
 插槽A3和B3（e3a和e3c）的連接埠、插槽A3和B9（e9a和e9c）的連接埠、連接至25 GbE網路交換器。
 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+image:oie_cable_sfp_gbe_copper.svg["寬度 =85px"]
 
 40GbE主機網路交換器：
 
 將插槽A4和B4（e4b）中的主機端b連接埠、插槽A8和B8（e8b）連接至主機交換器。
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =85px"]
 
 
 
  a| 
-image::../media/oie_legend_icon_4_dr.svg[OIE圖例圖示4災難恢復]
+image:oie_legend_icon_4_dr.svg["寬度 =30px"]
  a| 
 纜線32 Gb FC連線：
 
 將插槽a5和b5（5a、5b、c和5d）、插槽a7和b7（7a、7b、7c和7d）中的纜線連接埠連接至32 GB FC網路交換器。
 
-image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
+image:oie_cable_sfp_gbe_copper.svg["寬度 =85px"]
 
 
 
@@ -372,9 +372,9 @@ image::../media/oie_cable_sfp_gbe_copper.svg[OIE纜線SFP GbE銅線]
 ** 將電源纜線連接至PSU、並將其連接至不同的電源（未顯示）。PSU 1 和 3 可為所有 A 側元件提供電力、而 PSU2 和 PSU4 則可為所有 B 側元件提供電力。
 
  a| 
-image::../media/oie_cable_power.svg[OIE纜線電源]
+image:oie_cable_power.svg["寬度 =85px"]
 
-image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500 電源圖示 IEOPS 1142]
+image:drw_a900fas9500_power_source_icon_IEOPS-1142.svg["寬度 =200px"]
 
 |===
 
@@ -397,9 +397,9 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[DRW a900fas9500
 * 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
 
 
-image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
+image:oie_cable_pull_tab_up.svg["纜線拉片方向"]
 
-image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
+image:oie_cable_pull_tab_down.svg["寬度 =200px"]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -409,7 +409,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .動畫-連接單一NS224機櫃
 video::8d8b45cd-bd8f-4fab-a4fa-afa5017e7b72[panopto]
 +
-image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[DRW A900 NS224一個機櫃佈線IOPS 937]
+image:drw_a900_NS224_one shelf_cabling_IEOPS-937.svg["寬度 = 500px"]
 
 +
 |===
@@ -417,26 +417,26 @@ image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[DRW A900 NS224一
 
 
  a| 
-image::../media/oie_legend_icon_1_mb.svg[OIE圖例圖示1 MB]
+image:oie_legend_icon_1_mb.svg["寬度 =30px"]
  a| 
 ** 將控制器A連接埠E2A連接至機櫃上NSM A的連接埠e0a。
 ** 將控制器A連接埠e10b連接至機櫃NSM B上的連接埠e0b。
 
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =50px"]
 
 100 GbE纜線
 
 
 
  a| 
-image::../media/oie_legend_icon_2_lo.svg[OIE 圖例圖示 2]
+image:oie_legend_icon_2_lo.svg["寬度 =30px"]
  a| 
 ** 將控制器B連接埠E2A連接至機櫃NSM B上的連接埠e0A。
 ** 將控制器B連接埠e10b連接至機櫃上NSM A的連接埠e0b。
 
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =50px"]
 
 100 GbE纜線
 
@@ -452,9 +452,9 @@ image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
 * 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
 
 
-image::../media/oie_cable_pull_tab_up.svg[纜線拉片方向]
+image:oie_cable_pull_tab_up.svg["纜線拉片方向"]
 
-image::../media/oie_cable_pull_tab_down.svg[OIE纜線下拉式彈片]
+image:oie_cable_pull_tab_down.svg["寬度 =200px"]
 
 
 NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -464,10 +464,10 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 .動畫-連接兩個NS224磁碟櫃
 video::ec143c32-9e4b-47e5-893e-afa5017da6b4[panopto]
 +
-image::../media/drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg[DRW A900 NS224 線上藝術雙機櫃纜線 IEOPS 1147]
+image:drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg["寬度 = 500px"]
 
 +
-image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[DRW A900 NS224兩個機櫃佈線IOPS 938]
+image:drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg["寬度 = 500px"]
 
 +
 |===
@@ -475,7 +475,7 @@ image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[DRW A900 NS224兩
 
 
  a| 
-image::../media/oie_legend_icon_1_mb.svg[OIE圖例圖示1 MB]
+image:oie_legend_icon_1_mb.svg["寬度 =30px"]
  a| 
 ** 將控制器A連接埠E2A連接至機櫃1上的NSM A e0a。
 ** 將控制器A連接埠e10b連接至機櫃1上的NSM B e0b。
@@ -483,14 +483,14 @@ image::../media/oie_legend_icon_1_mb.svg[OIE圖例圖示1 MB]
 ** 將控制器A連接埠E10A連接至機櫃2上的NSM A e0a。
 
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =50px"]
 
 100 GbE纜線
 
 
 
  a| 
-image::../media/oie_legend_icon_2_lo.svg[OIE 圖例圖示 2]
+image:oie_legend_icon_2_lo.svg["寬度 =30px"]
  a| 
 ** 將控制器B連接埠E2A連接至機櫃1上的NSM B e0A。
 ** 將控制器B連接埠e10b連接至機櫃1上的NSM a e0b。
@@ -498,7 +498,7 @@ image::../media/oie_legend_icon_2_lo.svg[OIE 圖例圖示 2]
 ** 將控制器B連接埠E10A連接至機櫃2上的NSM B e0A。
 
 
-image::../media/oie_cable100_gbe_qsfp28.svg[OIE纜線100 GbE qsfp28]
+image:oie_cable100_gbe_qsfp28.svg["寬度 =50px"]
 
 100 GbE纜線
 
@@ -527,7 +527,7 @@ NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃 I
 .動畫-設定NVMe磁碟機磁碟櫃ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRw A900 oie變更新南澳州224機櫃ID IEOPS 836]
+image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["寬度 = 500px"]
 
 +
 [cols="20%,80%"]
@@ -535,28 +535,28 @@ image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRw A900 oie變
 
 
  a| 
-image::../media/legend_icon_01.svg[圖例圖示01]
+image:legend_icon_01.svg["寬=20"]
  a| 
 機櫃端蓋
 
 
 
  a| 
-image::../media/legend_icon_02.svg[圖例圖示02]
+image:legend_icon_02.svg["寬=20"]
  a| 
 機櫃面板
 
 
 
  a| 
-image::../media/legend_icon_03.svg[圖例圖示03]
+image:legend_icon_03.svg["寬=20"]
  a| 
 機櫃ID LED
 
 
 
  a| 
-image::../media/legend_icon_04.svg[圖例圖示04]
+image:legend_icon_04.svg["寬=20"]
  a| 
 機櫃ID設定按鈕
 
@@ -566,7 +566,7 @@ image::../media/legend_icon_04.svg[圖例圖示04]
 .動畫-開啟控制器的電源
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image::../media/drw_a900_power-on_IEOPS-941.svg[DRW A900開啟IOPS 941]
+image:drw_a900_power-on_IEOPS-941.svg["寬度 = 500px"]
 
 +
 
@@ -581,11 +581,11 @@ NOTE: 初始開機最多可能需要八分鐘。
 .動畫-將筆記型電腦連接到管理交換器
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 +
-image::../media/dwr_laptop_to_switch_only.svg[DWR筆記型電腦只能切換]
+image:dwr_laptop_to_switch_only.svg["寬度 = 500px"]
 
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.svg[選擇「自動探索控制器」]
+image:drw_autodiscovery_controler_select.svg["寬度 = 500px"]
 
 +
 .. 開啟檔案總管。
@@ -636,7 +636,7 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的管理交換器。
 +
-image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[DRW A900纜線主控台交換器控制器IOPS 953]
+image:drw_A900_cable_console_switch_controller_IEOPS-953.svg["寬度 = 500px"]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 
@@ -649,7 +649,7 @@ NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃 I
 .動畫-設定NVMe磁碟機磁碟櫃ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRw A900 oie變更新南澳州224機櫃ID IEOPS 836]
+image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg["寬度 = 500px"]
 
 +
 [cols="20%,80%"]
@@ -657,28 +657,28 @@ image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[DRw A900 oie變
 
 
  a| 
-image::../media/legend_icon_01.svg[圖例圖示01]
+image:legend_icon_01.svg["寬=20"]
  a| 
 機櫃端蓋
 
 
 
  a| 
-image::../media/legend_icon_02.svg[圖例圖示02]
+image:legend_icon_02.svg["寬=20"]
  a| 
 機櫃面板
 
 
 
  a| 
-image::../media/legend_icon_03.svg[圖例圖示03]
+image:legend_icon_03.svg["寬=20"]
  a| 
 機櫃ID LED
 
 
 
  a| 
-image::../media/legend_icon_04.svg[圖例圖示04]
+image:legend_icon_04.svg["寬=20"]
  a| 
 機櫃ID設定按鈕
 
@@ -688,7 +688,7 @@ image::../media/legend_icon_04.svg[圖例圖示04]
 .動畫-開啟控制器的電源
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto]
 +
-image::../media/drw_a900_power-on_IEOPS-941.svg[DRW A900開啟IOPS 941]
+image:drw_a900_power-on_IEOPS-941.svg["寬度 = 500px"]
 
 +
 
