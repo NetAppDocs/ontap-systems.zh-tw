@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: fas-70-90/install-requirements.html 
+keywords: fas70, fas90, install, setup, cautions 
+summary: 檢視平台和機櫃所需的設備和起重預防措施。 
+---
+= 安裝要求： FAS70 和 FAS90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+檢閱 FAS70 或 FAS90 儲存系統和儲存櫃所需的設備和提升注意事項。
+
+
+
+== 安裝所需的設備
+
+若要安裝 FAS70 或 FAS90 儲存系統、您需要下列設備和工具。
+
+* 存取網頁瀏覽器以設定儲存系統
+* 靜電釋放（ ESD ）固定帶
+* 手電筒
+* 具備 USB/ 序列連線的筆記型電腦或主控台
+* 迴紋針或窄尖圓珠筆、用於設定 NS224 儲存櫃 ID
+* 2號十字螺絲起子
+
+
+
+
+== 起重預防措施
+
+FAS70 和 FAS90 儲存系統、 NS224 儲存櫃和 DS460C 儲存櫃非常繁重。抬起和移動這些項目時請務必謹慎。
+
+
+
+=== FAS70 和 FAS90 儲存系統
+
+FAS70 或 FAS90 儲存系統的重量可達 62.83 磅（ 28.5 公斤）。若要抬起系統、請使用兩個人或液壓舉升設備。
+
+image::../media/drw_a1k_weight_caution_ieops-1698.svg[FAS70 和 FAS90 提升注意事項圖示]
+
+
+
+=== NS224 機櫃
+
+NS224 儲存櫃的重量可達 66.78 磅（ 30.29 公斤）。若要抬起儲存架、請使用兩個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。
+
+image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 舉升注意事項]
+
+
+
+=== DS460C 機櫃
+
+DS460C 機櫃最重可達 360.4 磅（ 181.1 公斤）。若要抬起儲存架、您可能需要最多五個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。
+
+image::../media/drw_ds460c_weight_warning_ieops-1932.svg[DS460C 舉升注意事項]
+
+.相關資訊
+* https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["安全資訊與法規注意事項"^]
+* https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+
+.接下來呢？
+在您檢閱過硬體需求之後link:install-prepare.html["準備安裝 FAS70 或 FAS90 儲存系統"]，您就可以了。

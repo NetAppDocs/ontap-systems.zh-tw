@@ -1,0 +1,310 @@
+---
+permalink: asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html 
+sidebar: sidebar 
+keywords: asa r2 a70, asa r2 a90, boot the recovery image 
+summary: 您可以透過自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。 
+---
+= 自動開機恢復： ASA A70 和 ASA A90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。
+
+選取符合您組態的單一節點自動還原選項。
+
+[role="tabbed-block"]
+====
+.選項 1 ：不加密的還原
+--
+您可以在 `boot_recovery -partner`執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台上使用命令、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
+
+.開始之前
+當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
+
+[listing]
+----
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+
+
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+
+
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+
+----
+如果您看到此訊息、則必須還原 ONTAP 映像
+
+.步驟
+. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
++
+畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`並開始初始檢查。
+
+. 在 Loader 設定本機叢集連接埠並透過執行 netboot 時 `\http://<remote-partner-IP>:65530/recoverydisk/image.tgz`、監控程序。
++
+網路開機執行後、 `Starting BMR ...`畫面上會顯示、程序會完成安裝程序。
+
++
+.. 如果未設定金鑰管理程式、您會看到下列訊息：
++
+....
+key manager is not configured. Exiting.
+....
+.. 如果您看到下列訊息、表示已設定 Onboard Key Manager （ OKM ）：
++
+....
+
+key manager is configured.
+Entering Bootmenu Option 10...
+
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+
+....
++
+請移至以完成還原程序。
+
+.. 如果您看到下列訊息、表示已設定外部金鑰管理員（ EKM ）。前往 EKM 主題並完成恢復程序：
++
+....
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+
+....
+
+
+. 監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。
+. 當您看到下列內容時、節點會重新開機並完成 BMR ：
+
+
+....
+
+varfs_backup_restore: update checksum for varfs.tgz
+varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
+varfs_backup_restore: attempting to restore /var/kmip to the boot device
+varfs_backup_restore: failed to restore /var/kmip to the boot device
+varfs_backup_restore: Rebooting to load the new varfs
+.
+Terminated
+varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
+
+....
+--
+.選項 2 ：使用內建金鑰管理程式進行還原
+--
+您可以使用 `boot_recovery -partner`搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
+
+.開始之前
+當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
+
+....
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+
+
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+
+
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+
+....
+如果您看到此訊息、則必須還原 ONTAP 映像
+
+.步驟
+. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
++
+畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`、並開始初始檢查及安裝開機恢復檔案。
+
++
+.. 如果已設定 Onboard Key Manager （ OKM ）、您將會看到下列畫面：
++
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
+
+
+. 在提示字元中輸入 _y_ 。
+. 當您看到時、請輸入內建金鑰管理程式的密碼 `Enter the passphrase for onboard key management:`
+. 當系統提示您確認密碼時、請再次輸入機載金鑰管理員的密碼短語。
++
+....
+Enter the passphrase for onboard key management:
+Enter the passphrase again to confirm:
+Enter the backup data:
+TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
+QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
+RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
+3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
+IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
+QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
+.
+.
+.
+.
+....
++
+恢復程序完成時、您將看到下列內容：
+
++
+....
+Trying to recover keymanager secrets....
+Setting recovery material for the onboard key manager
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.wkeydb file.
+
+Successfully recovered keymanager secrets.
+....
+. 監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。
++
+還原完成後、節點會重新啟動以完成程序。
+
+
+
+--
+.選項 3 ：使用外部金鑰管理程式進行還原
+--
+您可以使用 `boot_recovery -partner`搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
+
+當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
+
+....
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+
+
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+
+
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+....
+如果您看到此訊息、則必須還原 ONTAP 映像。
+
+.步驟
+. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
++
+畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`、並開始初始檢查及安裝開機恢復檔案。
+
++
+.. 如果已設定外部金鑰管理程式（ EKM ）、您將會看到下列顯示：
++
+....
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+....
+.. 如果已設定金鑰管理員、請輸入 _y_ 。
++
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+
+
++
+Bootmenu Option 11 會提示使用者輸入所有的 EKM 組態資訊、以便重新建立組態檔案。
+
+. 在每個提示時輸入 EKM 配置。
++
+* 附註： * 大部分資訊是在最初啟用 EKM 時輸入。您應該輸入與初始 EKM 組態期間相同的資訊。
+
+. 檢查 `Keystore UUID`和 `Cluster UUID`是否正確。
++
+.. 在合作夥伴節點上、使用 `cluster identity show`命令擷取叢集 UUID 。
+.. 在合作夥伴節點上、使用 `vserver show -type admin` `key-manager keystore show -vserver <nodename>`命令和命令擷取 Keystore UUID 。
+.. 出現提示時、請輸入 Keystore UUID 和叢集 UUID 的值。
++
+* 注意： * 如果合作夥伴節點無法使用、則可從設定金鑰伺服器上的 Mroot-AK 金鑰取得 Keystore UUID 和叢集 UUID 。
+
++
+驗證 `x-NETAPP-ClusterName: <cluster name>`叢集 UUID 和 `x-NETAPP-KeyUsage: "MROOT-AK"` Keystore UUID 屬性的、以確保您擁有正確的金鑰。
+
+
+
+. 監控將 Mroot-AK 擷取及還原至 ONTAP 節點。
+. 如果程序無法還原金鑰、您會看到下列訊息、需要從功能表系統 Shell 設定 e0M ：
++
+....
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+
+Uptime: 11m32s
+System halting...
+
+LOADER-B>
+
+....
++
+..  `boot_recovery -partner`在恢復節點上運行命令。
+.. 當系統提示您執行（ y 或 n ） EKM 選項時、請為所有選項選取 _n_ 。
++
+為 8 個提示選取 _n_ 選項後、系統將會在開機功能表停止。
+
+.. 從其他叢集節點收集 /ccfcard/kmip/servers.cfg 檔案資訊。您將收集下列資訊：
++
+*** KMIP 伺服器位址。
+*** KMIP 連接埠。
+*** Keystore UUID 。
+*** 從 /ccfcard/kmip/certs/client.crt 檔案複本用戶端憑證。
+*** 從 /ccfcard/kmip/certs/client.key 檔案複本用戶端金鑰。
+*** 從 /ccfcard/kmip/certs/ca.pem 檔案複本 KMIP 伺服器 CA 。
+
+
+.. 在提示字元輸入 _systemshell_ 、從開機功能表進入 systemshell 。
+.. 從系統殼層功能表設定網路、用於 e0M 、網路遮罩和閘道。
+.. 使用 _exit_ 命令從功能表系統 Shell 結束。
+.. 您會看到開機功能表。選取選項 `11`以繼續 EKM 還原。
+.. 回答 `y`下列問題、並在出現提示時輸入您先前收集的必要資訊：
++
+*** 您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
+*** 您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝
+*** 您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
+*** 您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝
+
+
+
+
+. 如果金鑰已正確還原、則恢復程序會繼續並重新啟動節點。
+
+
+--
+====

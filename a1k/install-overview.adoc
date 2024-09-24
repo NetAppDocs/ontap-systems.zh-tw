@@ -2,33 +2,37 @@
 permalink: a1k/install-overview.html 
 sidebar: sidebar 
 keywords: Installation, deployment, Install, deploy, Installing, deploying, a1k 
-summary: 請遵循這些高階步驟來安裝和設定 AFF A1K 儲存系統、並將其部署為 ONTAP 系統中的節點。 
+summary: 請遵循這些高階步驟、在 ONTAP 系統中安裝及設定 AFF A1K 儲存系統、並將其部署為 HA 配對。 
 ---
-= 安裝設定工作流程 - AFF A1K
+= 安裝與組態工作流程 - AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-請依照下列工作流程步驟來安裝、設定及部署 AFF A1K 儲存系統。
+若要安裝及設定 AFF A1K 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:install-prepare.html["準備安裝"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:install-requirements.html["檢閱安裝需求"]
 [role="quick-margin-para"]
-若要準備安裝、您必須準備好場地、檢查環境和電力需求、並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。
+檢閱安裝儲存系統和儲存櫃所需的設備和工具、並檢閱起重和安全預防措施。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:install-hardware.html["安裝硬體"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:install-prepare.html["準備安裝 AFF A1K 儲存系統"]
 [role="quick-margin-para"]
-若要安裝硬體、請為您的平台和機櫃安裝軌道套件、然後在機櫃或電信機架中安裝並固定平台。接著、將貨架滑到軌道上。最後、將纜線管理裝置連接至平台後方、以便整理纜線佈線。
+若要準備安裝系統、您必須準備好場地、檢查環境和電力需求、並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:install-cable.html["纜線硬體"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:install-hardware.html["安裝 AFF A1K 儲存系統的硬體"]
 [role="quick-margin-para"]
-若要連接硬體、請先將控制器連接至網路、然後將控制器連接至機櫃。
+若要安裝硬體、請安裝儲存系統和機櫃的軌道套件、然後將儲存系統安裝並固定在機櫃或電信機架中。接著、將貨架滑到軌道上。最後、將纜線管理裝置連接至儲存系統背面、以便整理纜線佈線。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:install-power-hardware.html["開啟儲存系統電源"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:install-cable.html["為 AFF A1K 儲存系統的控制器和儲存櫃佈線"]
 [role="quick-margin-para"]
-若要開啟系統電源、請先開啟每個 NS224 機櫃的電源、並指派唯一的機櫃 ID 、以確保每個機櫃在設定中都是不同的。然後、開啟控制器電源。最後、請使用隨附的固定裝置、將電源線固定在每個電源供應器上。
+若要連接硬體、請先將儲存控制器連接至網路、然後將控制器連接至儲存櫃。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:install-complete.html["完整的儲存系統設定"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:install-power-hardware.html["開啟 AFF A1K 儲存系統電源"]
 [role="quick-margin-para"]
-若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取網路型介面 System Manager 。安裝精靈可協助您開始進行叢集組態。此外、您也可以使用命令列介面（CLI）。
+開啟控制器電源之前、請先開啟每個 NS224 機櫃的電源、並指派唯一的機櫃 ID 、以確保每個機櫃在設定中都能唯一識別。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:install-complete.html["完整的儲存系統設定"]
+[role="quick-margin-para"]
+若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成 AFF A1K 儲存系統的叢集組態。

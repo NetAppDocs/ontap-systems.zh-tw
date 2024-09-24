@@ -1,0 +1,86 @@
+---
+section: fas-70-90
+title: FAS70和FAS90系統
+entries:
+- title: 安裝與設定
+  pdf-filename: FAS70 和 FAS90 安裝和設置
+  entries:
+  - title: 安裝工作流程
+    url: "/fas-70-90/install-overview.html"
+  - title: 檢閱要求
+    url: "/fas-70-90/install-requirements.html"
+  - title: 準備安裝
+    url: "/fas-70-90/install-prepare.html"
+  - title: 安裝硬體
+    url: "/fas-70-90/install-hardware.html"
+  - title: 纜線硬體
+    url: "/fas-70-90/install-cable.html"
+  - title: 開啟系統電源
+    url: "/fas-70-90/install-power-hardware.html"
+  - title: 完成系統設定
+    url: "/fas-70-90/install-complete.html"
+- title: 維護
+  pdf-filename: FAS70 和 FAS90 保持不變
+  entries:
+  - title: 維護綜覽
+    url: "/fas-70-90/maintain-overview.html"
+  - title: 開機媒體
+    pdf-filename: FAS70 和 FAS90 Boot Media
+    entries:
+    - title: 開機媒體取代工作流程
+      url: "/fas-70-90/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/fas-70-90/bootmedia-replace-requirements.html"
+    - title: 檢查內建加密金鑰
+      url: "/fas-70-90/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/fas-70-90/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/fas-70-90/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/fas-70-90/bootmedia-recovery-image-boot.html"
+    - title: 還原加密
+      url: "/fas-70-90/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas-70-90/bootmedia-complete-rma.html"
+  - title: 控制器
+    pdf-filename: FAS70 和 FAS90 控制器模塊
+    entries:
+    - title: 控制器更換工作流程
+      url: "/fas-70-90/controller-replace-workflow.html"
+    - title: 要求與考量
+      url: "/fas-70-90/controller-replace-requirements.html"
+    - title: 關閉受損的控制器
+      url: "/fas-70-90/controller-replace-shutdown.html"
+    - title: 更換控制器
+      url: "/fas-70-90/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/fas-70-90/controller-replace-system-config-restore-and-verify.html"
+    - title: 將控制器交回
+      url: "/fas-70-90/controller-replace-recable-reassign-disks.html"
+    - title: 完整更換控制器
+      url: "/fas-70-90/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/fas-70-90/dimm-replace.html"
+  - title: 風扇
+    url: "/fas-70-90/fan-replace.html"
+  - title: FlashCache 模組
+    url: "/fas-70-90/caching-module-hot-swap.html"
+  - title: NVRAM
+    url: "/fas-70-90/nvram-replace.html"
+  - title: NV 電池
+    url: "/fas-70-90/nvdimm-battery-replace.html"
+  - title: I/O模組
+    entries:
+    - title: I/O 模組總覽
+      url: "/fas-70-90/io-module-overview.html"
+    - title: 新增I/O模組
+      url: "/fas-70-90/io-module-add.html"
+    - title: 更換 I/O 模組
+      url: "/fas-70-90/io-module-replace.html"
+  - title: 電源供應器
+    url: "/fas-70-90/power-supply-replace.html"
+  - title: 即時時鐘電池
+    url: "/fas-70-90/rtc-battery-replace.html"
+  - title: 系統管理模組
+    url: "/fas-70-90/system-management-replace.html"

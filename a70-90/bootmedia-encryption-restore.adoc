@@ -4,13 +4,19 @@ sidebar: sidebar
 keywords: aff a70, aff a90, post boot media replacement steps for okm, nse, and nve 
 summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。 
 ---
-= 還原加密： AFF A70 、 AFF A90
+= 還原加密： AFF A70 和 AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在替換開機媒體上還原加密。
+
+
+
+== 步驟 1 ：還原內建金鑰管理程式
+
 您必須完成特定於已啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp 磁碟區加密（ NVE ）的系統、並使用本程序開始時擷取的設定。
 
 
@@ -18,6 +24,7 @@ NOTE: 如果 NSE 或 NVE 與 Onboard 或 External Key Manager 一起啟用、您
 
 .步驟
 . 將主控台纜線連接至目標控制器。
+. 從 ONATP 開機功能表中選取下列其中一個選項、以還原內建金鑰管理程式組態。
 
 
 [role="tabbed-block"]
@@ -53,7 +60,7 @@ Please choose one of the following:
 (9)  Configure Advanced Drive Partitioning.
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
-Selection (1-11)? _10_
+Selection (1-11)? 10
 
 ----
 . 確認程序是否繼續。
@@ -330,7 +337,7 @@ Selection (1-11)? 1
 ====
 
 
-== 完成開機媒體更換
+== 步驟 2 ：完成開機媒體更換
 
 完成最終檢查並提供儲存設備、以在正常開機後完成開機媒體更換程序。
 

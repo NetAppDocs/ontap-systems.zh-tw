@@ -1,0 +1,83 @@
+= 
+:allow-uri-read: 
+
+
+您可以使用 `boot_recovery -partner`搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
+
+.開始之前
+當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
+
+....
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+
+
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+
+
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+
+....
+如果您看到此訊息、則必須還原 ONTAP 映像
+
+.步驟
+. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
++
+畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`、並開始初始檢查及安裝開機恢復檔案。
+
++
+.. 如果已設定 Onboard Key Manager （ OKM ）、您將會看到下列畫面：
++
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
+
+
+. 在提示字元中輸入 _y_ 。
+. 當您看到時、請輸入內建金鑰管理程式的密碼 `Enter the passphrase for onboard key management:`
+. 當系統提示您確認密碼時、請再次輸入機載金鑰管理員的密碼短語。
++
+....
+Enter the passphrase for onboard key management:
+Enter the passphrase again to confirm:
+Enter the backup data:
+TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
+QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
+RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
+3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
+IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
+QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
+.
+.
+.
+.
+....
++
+恢復程序完成時、您將看到下列內容：
+
++
+....
+Trying to recover keymanager secrets....
+Setting recovery material for the onboard key manager
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.wkeydb file.
+
+Successfully recovered keymanager secrets.
+....
+. 監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。
++
+還原完成後、節點會重新啟動以完成程序。
+
+

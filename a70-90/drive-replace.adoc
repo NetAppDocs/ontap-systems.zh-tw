@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace the drives 
 summary: 當平台將警告訊息記錄到系統主控台、指出磁碟機故障時、您必須更換磁碟機。此外、操作員顯示面板上的故障LED和故障磁碟機上的故障LED都會亮起。 
 ---
-= 更換 SSD 磁碟機 - AFF A70 、 AFF A90
+= 更換 SSD 磁碟機 - AFF A70 和 AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -92,25 +92,6 @@ NOTE: 故障磁碟機上的活動（綠色）LED可亮起（持續亮起）、�
 當磁碟機的活動LED持續亮起時、表示磁碟機已有電力。當磁碟機的活動LED燈在閃爍時、表示磁碟機已開機且I/O正在進行中。如果磁碟機韌體正在自動更新、LED會開始閃爍。
 
 . 如果您要更換另一個磁碟機、請重複步驟3到7。
-. 如果您在步驟1中停用自動指派磁碟機、請手動指派磁碟機擁有權、然後視需要重新啟用自動指派磁碟機。
-+
-.. 顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」
-+
-您可以在任一控制器模組上輸入命令。
-
-.. 指派每個磁碟機： `storage disk assign -disk disk_name -owner node_name`
-+
-您可以在任一控制器模組上輸入命令。
-
-+
-您可以使用萬用字元一次指派多個磁碟機。
-
-.. 如有需要、請重新啟用自動磁碟指派：「儲存磁碟選項modify -node_name -autodassign on」
-+
-您必須在兩個控制器模組上重新啟用自動磁碟機指派。
-
-
-
 . 如套件隨附的RMA指示所述、將故障零件退回NetApp。
 +
 請聯絡技術支援人員： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]如果您需要RMA編號或更換程序的其他協助、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。

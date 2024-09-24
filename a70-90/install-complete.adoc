@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a70, a90, prepare installation 
 summary: 使用叢集探索來完成平台設定與組態、只需連線至交換器和筆記型電腦、或直接連線至儲存系統中的控制器、然後再連線至管理交換器。 
 ---
-= 完整的儲存系統設定與組態： AFF A70 、 AFF A90
+= 完整的儲存系統設定與組態： AFF A70 與 AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-安裝硬體之後、請使用 ONTAP 軟體來設定及管理儲存系統。
+開啟儲存系統之後、您就可以開始探索叢集網路並設定 ONTAP 叢集。
 
 
 
@@ -19,7 +19,7 @@ summary: 使用叢集探索來完成平台設定與組態、只需連線至交�
 
 如果您尚未這麼做、請收集設定叢集所需的資訊、例如叢集管理介面連接埠和 IP 位址。
 
-使用 https://docs.netapp.com/us-en/ontap/software_setup/index.html["叢集設定工作表"] 記錄叢集設定程序期間所需的值。如果提供預設值、您可以使用該值、或輸入自己的值。
+使用 https://docs.netapp.com/us-en/ontap/software_setup/index.html["叢集設定工作表"^] 記錄叢集設定程序期間所需的值。如果提供預設值、您可以使用該值、或輸入自己的值。
 
 
 
@@ -47,10 +47,10 @@ image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[如何使用 W
 
 NOTE: xxxxx 是目標節點的平台序號。
 
+
+
 +
 系統管理程式隨即開啟。
-
-
 
 
 
@@ -60,7 +60,7 @@ NOTE: xxxxx 是目標節點的平台序號。
 如果您的筆記型電腦未啟用網路探索、請使用 ONTAP 命令列介面（ CLI ）叢集設定精靈來完成組態和設定。
 
 .開始之前
-請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。如需相關指示、請參閱 link:install-power-hardware.html#step-2-power-on-the-controllers["開啟控制器電源"] 。
+請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。如需相關指示、請參閱 link:install-power-hardware.html#step-2-power-on-the-controllers["開啟儲存系統電源"] 。
 
 .步驟
 將初始節點管理IP位址指派給其中一個節點。
@@ -99,9 +99,9 @@ NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台
 
 == 步驟 3 ：設定叢集
 
-NetApp 建議您使用系統管理員來設定新叢集。如需設定說明、請參閱 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["使用系統管理員在新叢集上設定 ONTAP"] 。
+NetApp 建議您使用系統管理員來設定新叢集。如需設定說明、請參閱 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["使用系統管理員在新叢集上設定 ONTAP"^] 。
 
 System Manager 為叢集設定與組態提供簡單易用的工作流程、包括指派節點管理 IP 位址、初始化叢集、建立本機層、設定通訊協定、以及初始配置附加儲存設備。
 
-
-NOTE: 叢集初始化之後、請下載並執行  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"] 以確認您的設定。
+.接下來呢？
+叢集初始化之後、請下載並執行  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] 以確認您的設定。

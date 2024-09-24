@@ -1,0 +1,85 @@
+= 
+:allow-uri-read: 
+
+
+您可以在 `boot_recovery -partner`執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台上使用命令、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
+
+.開始之前
+當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
+
+[listing]
+----
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+
+
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+
+
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+
+----
+如果您看到此訊息、則必須還原 ONTAP 映像
+
+.步驟
+. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
++
+畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`並開始初始檢查。
+
+. 在 Loader 設定本機叢集連接埠並透過執行 netboot 時 `\http://<remote-partner-IP>:65530/recoverydisk/image.tgz`、監控程序。
++
+網路開機執行後、 `Starting BMR ...`畫面上會顯示、程序會完成安裝程序。
+
++
+.. 如果未設定金鑰管理程式、您會看到下列訊息：
++
+....
+key manager is not configured. Exiting.
+....
+.. 如果您看到下列訊息、表示已設定 Onboard Key Manager （ OKM ）：
++
+....
+
+key manager is configured.
+Entering Bootmenu Option 10...
+
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+
+....
++
+請移至以完成還原程序。
+
+.. 如果您看到下列訊息、表示已設定外部金鑰管理員（ EKM ）。前往 EKM 主題並完成恢復程序：
++
+....
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+
+....
+
+
+. 監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。
+. 當您看到下列內容時、節點會重新開機並完成 BMR ：
+
+
+....
+
+varfs_backup_restore: update checksum for varfs.tgz
+varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
+varfs_backup_restore: attempting to restore /var/kmip to the boot device
+varfs_backup_restore: failed to restore /var/kmip to the boot device
+varfs_backup_restore: Rebooting to load the new varfs
+.
+Terminated
+varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
+
+....

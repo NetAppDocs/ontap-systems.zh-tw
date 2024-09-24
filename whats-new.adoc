@@ -1,27 +1,46 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: new, features,aff, asa,  fas, legacy, end-of-support 
-summary: 瞭解 AFF 、 ASA 和 FAS 系統的新功能、以及不再支援的舊版硬體。 
+keywords: new, features, asa r2, aff, asa, fas, legacy, end-of-support 
+summary: 瞭解 ONTAP 硬體系統的新功能。 
 ---
-= AFF 、 ASA 和 FAS 系統的新功能
+= ONTAP 硬體系統的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-瞭解 AFF 、 ASA 和 FAS 系統的新功能。
+瞭解 ONTAP 硬體系統的新功能。
 
 如需 ONTAP 9 版本中已知問題、限制和升級注意事項的詳細資訊、請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明ONTAP"]。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。
 
 
 
-== 新平台支援
+== 平台支援
 
 [cols="2*"]
 |===
-| 平台（含資料表連結） | 可用的開始 
+| 平台 | 可用的開始 
+
+
+ a| 
+https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA r2 系統"]
+
+* ASA A1K
+* ASA A70
+* ASA A90
+
+ a| 
+ONTAP 9.16.1.
+
+
+
+ a| 
+https://www.netapp.com/data-storage/fas/["FAS70 和 FAS90"]
+ a| 
+ONTAP 9.16.1.
+
 
 
  a| 
@@ -212,7 +231,7 @@ https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["解答320 AFF"]
 |===
 
 
-== 新交換器支援
+== 交換器支援
 
 [cols="20,65,15"]
 |===
@@ -296,53 +315,7 @@ Broadcom BS-53248叢集互連交換器支援AFF/FAS控制器、具備10/25GbE連
 |===
 
 
-== 新的介面卡支援
-
-[cols="4*"]
-|===
-| 介面卡零件編號 | 說明 | 類別 | 可用的開始 
-
-
- a| 
-https://hwu.netapp.com/adapter/index["X91148A."]
- a| 
-2埠100GbE ROCE QSFP28
- a| 
-* 儲存設備
-* 網路
-* HA/MetroCluster
-
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://hwu.netapp.com/adapter/index["X91122A"]
- a| 
-2埠25GbE ROCE QSFP28
- a| 
-* 網路
-* HA/MetroCluster
-
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://hwu.netapp.com/adapter/index["X9170A"]
- a| 
-NVMe SSD模組（1 TB）
- a| 
-核心傾印裝置
- a| 
-部分9.8 ONTAP
-
-|===
-
-
-== 全新機櫃支援
+== 機櫃支援
 
 [cols="2*"]
 |===
@@ -357,7 +330,7 @@ NS224
 |===
 
 
-== 新硬體更新
+== 硬體更新
 
 [cols="25h,~,~"]
 |===

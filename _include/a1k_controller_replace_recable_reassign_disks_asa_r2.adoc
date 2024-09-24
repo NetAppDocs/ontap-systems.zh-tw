@@ -1,0 +1,38 @@
+= 
+:allow-uri-read: 
+
+
+將儲存資源的擁有權移回更換控制器。
+
+.步驟
+. 如果您的儲存系統已設定加密、則必須使用下列程序還原儲存或磁碟區加密功能、才能重新啟動系統：
++
+.. 開機至功能表並執行選項 10
+.. 輸入複雜密碼與備份資料、然後執行正常開機請參閱 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys["還原內建金鑰管理加密金鑰"]。
+.. 僅執行 CFO 贈品
+.. 執行 Onboard Sync 並驗證 SVM-KEK 是否設為 true 、請參閱 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement["更換 MB 失敗後的 GiveBack - 操作被 keymanager 否決"]
+.. GiveBack SFO （無強制）
+
+
+. 如果您的系統未設定加密、請完成下列程序以重新啟動系統：
++
+.. 開機至功能表並執行選項 1 。
+.. 退回控制器：
+.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
++
+_replacement控制器會恢復其儲存設備並完成開機。
+
++
+
+NOTE: 如果被否決、您可以考慮覆寫否決。
+
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您版本的更新版本的高可用度組態內容"]
+
+.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
+
+
+. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
+. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
+

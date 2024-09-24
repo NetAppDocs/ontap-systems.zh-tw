@@ -1,0 +1,38 @@
+---
+permalink: fas-70-90/install-overview.html 
+sidebar: sidebar 
+keywords: Installation, deployment, Install, deploy, Installing, deploying, a1k 
+summary: 按照以下高級步驟安裝和設置 FAS70 和 FAS90 存儲系統，並將其部署爲 ONTAP 系統中的節點。 
+---
+= 安裝與組態工作流程： FAS70 與 FAS90
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要安裝和設定 FAS70 或 FAS90 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:install-requirements.html["檢閱安裝需求"]
+[role="quick-margin-para"]
+檢閱安裝儲存系統和儲存櫃所需的設備和工具、並檢閱起重和安全預防措施。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:install-prepare.html["準備安裝 FAS70 或 FAS90 儲存系統"]
+[role="quick-margin-para"]
+若要準備安裝系統、您必須準備好場地、檢查環境和電力需求、並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:install-hardware.html["安裝 FAS70 或 FAS90 儲存系統的硬體"]
+[role="quick-margin-para"]
+若要安裝硬體、請安裝儲存系統和機櫃的軌道套件、然後將儲存系統安裝並固定在機櫃或電信機架中。接著、將貨架滑到軌道上。最後、將纜線管理裝置連接至儲存系統背面、以便整理纜線佈線。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:install-cable.html["為 FAS70 或 FAS90 儲存系統的控制器和儲存櫃佈線"]
+[role="quick-margin-para"]
+若要連接硬體、請先將儲存控制器連接至網路、然後將控制器連接至儲存櫃。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:install-power-hardware.html["開啟 FAS70 或 FAS90 儲存系統的電源"]
+[role="quick-margin-para"]
+開啟控制器電源之前、請先開啟每個機櫃的電源、並指派唯一的機櫃 ID 、以確保每個機櫃在設定中都能唯一識別。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:install-complete.html["完整的儲存系統設定"]
+[role="quick-margin-para"]
+若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成儲存系統的叢集組態。

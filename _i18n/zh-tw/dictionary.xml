@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="21ee2e5e51f0485744f531669814fed3" category="summary">您可以將這些連結用於其他交換器機型。</block>
   <block id="0052efad5d260a806d52bfcfe640936f" category="doc">交換器</block>
-  <block id="bd397018360b37f0581b599a75518e00" category="paragraph">您可以使用這些連結來尋找交換器文件。</block>
-  <block id="077d93425bc0aa7f9c6512d9b58b5d96" category="inline-link-macro">Nexus 9336C-FX2叢集交換器</block>
-  <block id="1087bd6a45d263f28a4b0b93895e1941" category="inline-link-macro">Nexus 2300YC叢集交換器</block>
-  <block id="c65be06145c6932d272087d8bd0dc751" category="inline-link-macro">Nexus 5596</block>
-  <block id="ee9afd7df5d1f09abe628235a0bbd29c" category="inline-link-macro">Nexus 3232C</block>
-  <block id="43f44eb6eab88bd3dd44d614bab79684" category="inline-link-macro">Nexus 3132Q-V</block>
   <block id="9682abea21a8105e25e53a664815f083" category="summary">您必須將系統元件連接至PDU、將PDU纜線佈線至AC電源、將其連接至電源、然後開啟系統電源。</block>
   <block id="de377ff4f06113db5f03b6d5d7501baa" category="doc">開啟系統機櫃電源</block>
   <block id="44626aa3377a470ee951473cc16b9064" category="paragraph">系統機櫃中的每個PDU都必須有獨立的電源電路可供使用。</block>
@@ -235,8 +228,6 @@
   <block id="2f4e88c25cdf52e68455a1402fb5bf5b" category="list-text">將PDU電源線插入AC電源。</block>
   <block id="a30d841057f0a416dd0bbc795c01e012" category="list-text">開啟PDU電源開關或PDU斷路器。</block>
   <block id="f520ae6a21fe8875386bf25f0f70cc17" category="paragraph">對於PDU斷路器、按鈕會在與PDU框架齊面時開啟。</block>
-  <block id="065e0cfc1a644921f8da7dcbc4e51ec2" category="summary">安裝系統機櫃之前、您應該先熟悉其功能。您也必須確認站台可支援系統機櫃、將其移至所需位置、然後打開機櫃。</block>
-  <block id="c3f0ef3ab0d6ba2b67aa70091a366e6d" category="doc">準備安裝系統機櫃</block>
   <block id="c9c398d96e19f76a792dde6c40d97674" category="summary">您可以訂購裝有NetApp儲存控制器和磁碟櫃的系統機櫃、如果您已經有NetApp設備、也可以訂購空的系統機櫃。您可以使用選購的互連套件、將多個系統機櫃連接在一起、也可以使用選購的栓接式套件、將它們固定在資料中心樓層。</block>
   <block id="04dd3356a6ed1dc409a57e068d7f5007" category="doc">安裝系統機櫃</block>
   <block id="408521a2467d21746b611d562e795e60" category="list-text">從系統主控台執行「shorage disk show -disf肯」命令、以識別故障的磁碟機。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。</block>
@@ -598,8 +589,6 @@
   <block id="6e38eaaf86dd1572cd6c587d5ce6f8e5" category="list-text">退出維護模式：「halt」</block>
   <block id="ff8f74aeadb5ed14c3562a83de710ce2" category="list-text">使控制器恢復正常運作：</block>
   <block id="d099df7ce339c15abb7692668d035fea" category="section-title">步驟6：將故障零件歸還給NetApp</block>
-  <block id="6bec966647e1b9c8a03ddd277c8fe864" category="inline-link">產品退貨安培；更換</block>
-  <block id="822bec4a0db0c5fd17b5f05b4e1c0335" category="paragraph">如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱<block ref="4fc2cab5a4eb2f6a408378b0d596ae42" category="inline-link-rx"></block> 頁面以取得更多資訊。</block>
   <block id="5cdd6ca46c1bd8446e669172ffdc9515" category="summary">您必須在控制器中找到開機媒體、然後依照指示進行更換。</block>
   <block id="ebc7476a478f335dcc4ca03640d92275" category="doc">更換開機媒體AFF - REVA200</block>
   <block id="e5c77732c72900008e8eb20c104f7bfd" category="paragraph">若要更換開機媒體、您必須移除受損的控制器模組、安裝替換的開機媒體、並將開機映像傳輸到USB快閃磁碟機。</block>
@@ -5068,10 +5057,6 @@
   <block id="f24bbd8bd23b87a9a7d8b466f2edd685" category="list-text">最佳實務做法是在熱交換磁碟機之前、先安裝目前版本的磁碟認證套件（DQP）。</block>
   <block id="38b15850492133a635d50ad8448e62b9" category="list-text">如何熱交換磁碟取決於磁碟機的使用方式。如果已啟用SED驗證、您必須使用中的SED替換指示<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。這些指示說明更換SED之前和之後、您必須執行的其他步驟。</block>
   <block id="6e3d311e755c860fa8be4786c7ffe617" category="list-text">替換磁碟機必須由您的平台支援。請參閱<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
-  <block id="00a7f3c2d2e90362fce77e39121e81ff" category="summary">升級AFF 功能：FAS</block>
-  <block id="15ec95a1d0a631e3b92b0edbb8cc676a" category="doc">升級程序</block>
-  <block id="121b7f57f2237bf67b44a7e14ee89c24" category="inline-link">升級AFF 版的功能與FAS 功能、系統文件網站</block>
-  <block id="8f656f617cb33dc389da6056b5ff435f" category="inline-link">資訊網站ONTAP MetroCluster</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="7ff4995c299eff1168d2cf4a88aff450" category="sidebar">安裝與設定</block>
   <block id="ade01a5a398372194a42c36e9f5279ac" category="sidebar">維護</block>
@@ -5115,7 +5100,6 @@
   <block id="a393cd4f170aafc6db54b17ca62ffb74" category="sidebar">Broadcom支援的Bes：53248</block>
   <block id="059d31543d448499bd1a9c454a8d1ebb" category="sidebar">Cisco 9336C-FX2</block>
   <block id="1c87a984d0a1c6881c9703209fd4341c" category="sidebar">Cisco 9336-FX2共享組態</block>
-  <block id="408e6b1f14e3275adbc6a975f5910340" category="sidebar">平台升級</block>
   <block id="bc8be72fdc9d6054f356bb2b7f80fd12" category="sidebar">NetApp 互通性對照表</block>
   <block id="3b4f8423fb92aace5b1c957248b6fd18" category="sidebar">機櫃與軌道套件</block>
   <block id="622847369a10871880b9d0b967b82ff7" category="sidebar">超級軌道套件</block>
@@ -5184,7 +5168,6 @@
   <block id="d75bd21e9af20a5036c0fbf461bc4e2d" category="sidebar">重新開機、出現問題或重新開機</block>
   <block id="e33c48b52ab7d302b4af41aca3bbe858" category="sidebar">程序的多個階段可能會發生的問題</block>
   <block id="06d473a91334306e0ea337d0cf403b02" category="sidebar">LIF移轉失敗</block>
-  <block id="7dc0a4c9b1bf6d7cd26d6089be0d9825" category="sidebar">其他平台程序</block>
   <block id="c8773f5cba3b9e8aa265fa0dc1a2c09e" category="sidebar">VA200系統AFF</block>
   <block id="9ea8548070881e82ab793011f6dd50c5" category="sidebar">安裝與設定AFF</block>
   <block id="fb1ca7e905b80bde19bff1b5175a28a8" category="sidebar">叢集組態工作表</block>
@@ -5274,7 +5257,6 @@
   <block id="11a40190bb36e43cbe860e374d9ecde9" category="sidebar">FAS9000機箱</block>
   <block id="1999e7b9b8a359e0a34178719a904727" category="sidebar">FAS9000控制器</block>
   <block id="e3c2d91c7cf7bef5a04aecd6ac9a7aa2" category="sidebar">FAS9000 X91148A模組</block>
-  <block id="e62f199edf5ce700e5ae74c377f48585" category="sidebar">所有SAN陣列系統</block>
   <block id="59716068960c1b1bd7e3622d5de18936" category="sidebar">FAS8200系統</block>
   <block id="b4fec57ff039acd21feb4f7cebc2a5e7" category="sidebar">FAS8200安裝與設定</block>
   <block id="16395d9877c81f77a787eea01100fcba" category="sidebar">FAS8200維護</block>
@@ -5428,7 +5410,6 @@
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
   <block id="ec5866194941126dcbe55d496f612191" category="list-text">如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
   <block id="4729966d1b42f799e14eba4dd6dedbdb" category="paragraph"><block ref="4729966d1b42f799e14eba4dd6dedbdb" category="inline-link-rx"></block></block>
-  <block id="0f4f43e093db80d862a516057fb4a1b2" category="list-text">如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱<block ref="9d47acedf189f7880a7ff697cbca93c5" category="inline-link-rx"></block> 頁面以取得更多資訊。</block>
   <block id="756d409209ace98589705774b5011aa0" category="inline-link">FAS9500</block>
   <block id="777fd6d7388769d3f60adc007c4390a4" category="paragraph"><block ref="777fd6d7388769d3f60adc007c4390a4" category="inline-link-rx"></block></block>
   <block id="801fb2644ef002c15826950c6197b174" category="paragraph">零點9.10.1P3和9.11.1 ONTAP</block>
@@ -5805,13 +5786,6 @@
   <block id="837918aaa69464badcf35f3fe9990380" category="video-title">動畫-將控制器連接至單一磁碟機櫃</block>
   <block id="967cea93964caa083c2f02eb64b559e9" category="video-title">動畫-將控制器連接至兩個磁碟機櫃</block>
   <block id="26115a2b78227837b2498242d7c3a180" category="video-title">「動畫- AFF 安裝及設定一個E4A800</block>
-  <block id="aea2017eeef1ac0b5bedf736bb4cc56c" category="paragraph">對於大多數AFF 的功能和FAS 功能、請遵循上的升級程序<block ref="45cab07a2e6950f494ed7c0063e4eca0" category="inline-link-rx"></block>。</block>
-  <block id="a6401ef397991d88e225879ba9ed75c9" category="paragraph">若系統採用MetroCluster 的是功能不實的組態、請遵循上的升級程序<block ref="691c45d5fd38b720542002162cc3ef59" category="inline-link-rx"></block>。</block>
-  <block id="86ca80c530df92e51a5342bb132791d4" category="list-text"><block ref="86ca80c530df92e51a5342bb132791d4" category="inline-link-macro-rx"></block></block>
-  <block id="c1382a426f7a22fb86c0c3bc5c872813" category="list-text"><block ref="c1382a426f7a22fb86c0c3bc5c872813" category="inline-link-macro-rx"></block></block>
-  <block id="1b4fef00bfd6ba6d87574d44349b96c6" category="list-text"><block ref="1b4fef00bfd6ba6d87574d44349b96c6" category="inline-link-macro-rx"></block></block>
-  <block id="069558aa8531de93c732e3ad85152f0b" category="list-text"><block ref="069558aa8531de93c732e3ad85152f0b" category="inline-link-macro-rx"></block></block>
-  <block id="373042f8867690f31666fb2c254472b2" category="list-text"><block ref="373042f8867690f31666fb2c254472b2" category="inline-link-macro-rx"></block></block>
   <block id="dbfcf28fbace45ccb8bc86694314e16b" category="paragraph"><block ref="dbfcf28fbace45ccb8bc86694314e16b" category="inline-link-rx"></block></block>
   <block id="35c124f455f44a154eb3b514029ee58a" category="section-title">安全資訊與法規注意事項</block>
   <block id="a6518839a3ee2f900f136494094df3cf" category="paragraph"><block ref="a6518839a3ee2f900f136494094df3cf" category="inline-link-rx"></block></block>
@@ -5880,15 +5854,7 @@
   <block id="2ceb6141859316070c657f406135cd1c" category="paragraph">視您的組態而定、控制器模組中可能有零、一個或兩個快取模組。使用控制器模組內的FRU對應來協助找出快取模組。</block>
   <block id="edae17e7394c8face12fc5d74d33aa9b" category="paragraph">若要更換NVDIMM、您必須使用插槽1擴充卡頂端的FRU對應圖、在控制器模組中找到NVDIMM。</block>
   <block id="ca7c99126c90b6d4e929e35a12f23c35" category="paragraph">若要更換NVDIMM、您必須使用通風管頂端的NVDIMM對應標籤、將其放置在控制器模組中、然後依照特定步驟順序加以更換。</block>
-  <block id="d7e26346af961fd458b06e903fa1c22f" category="list-text"><block ref="d7e26346af961fd458b06e903fa1c22f" category="inline-link-macro-rx"></block></block>
-  <block id="52dc0fa7aa63a597a3aa6891a2cdd53d" category="inline-link-macro">Nexus 9336C-FX2共享交換器</block>
-  <block id="d67dacff598cf99bd3107746a21662be" category="list-text"><block ref="d67dacff598cf99bd3107746a21662be" category="inline-link-macro-rx"></block></block>
   <block id="94f92369bb57ec3cd50af356ac87615d" category="inline-link-macro">NVIDIA SN2100</block>
-  <block id="f8cd80fb62bb327e6f2e300d81ac3a27" category="list-text"><block ref="f8cd80fb62bb327e6f2e300d81ac3a27" category="inline-link-macro-rx"></block></block>
-  <block id="280107a5f53cc09efecfd6d30a3b7ebc" category="inline-link-macro">NetApp CN1610</block>
-  <block id="c7b110777e110ebf201cadf84803bdb5" category="list-text"><block ref="c7b110777e110ebf201cadf84803bdb5" category="inline-link-macro-rx"></block></block>
-  <block id="58be97337d3377c59cd19ffb71fbc7fb" category="inline-link-macro">NetApp CN1601</block>
-  <block id="36c686b6a1d561ca87a79e4ac0028295" category="list-text"><block ref="36c686b6a1d561ca87a79e4ac0028295" category="inline-link-macro-rx"></block></block>
   <block id="b609dd6c87556493ce1f11c7ab61cbdb" category="list-text">檢查控制器模組背面的NVMEM LED。</block>
   <block id="62052f557603d07beccb5c5c5b7c8d48" category="list-text">檢查主控台錯誤訊息、找出您必須更換的風扇模組。</block>
   <block id="6c0f8c80eb90bb62692eec695b2b97a4" category="paragraph">您必須在控制器模組中移除中間的PCIe模組、找出故障的開機媒體、然後更換開機媒體、才能找到故障的開機媒體。</block>
@@ -6204,14 +6170,8 @@
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="26d2e0bd267361cc8916e7e16faebcbb" category="paragraph">將交換器安裝在機架或機櫃中。請參閱下列交換器機型的指示。</block>
   <block id="8821c03ea98d1edaf4b4b82c0aaf59dc" category="inline-link-macro">安裝BS-53248交換器</block>
-  <block id="9000e67500cb5e61bcd3ec702237913b" category="list-text"><block ref="9000e67500cb5e61bcd3ec702237913b" category="inline-link-macro-rx"></block></block>
   <block id="f4f4adc3268a66380dfdff9b1a20bc7b" category="inline-link-macro">安裝Cisco Nexus 9336C-FX2交換器</block>
-  <block id="ecdf11290d1440e9c1a6d4b9666ad878" category="list-text"><block ref="ecdf11290d1440e9c1a6d4b9666ad878" category="inline-link-macro-rx"></block></block>
   <block id="66e51b9ff1adb3e615b49ae8223869a4" category="inline-link-macro">安裝NVIDIA SN2100交換器</block>
-  <block id="459378c7b38e766a9c40673dc6b7d6b6" category="list-text"><block ref="459378c7b38e766a9c40673dc6b7d6b6" category="inline-link-macro-rx"></block></block>
-  <block id="75ddd4263ff912af7be6b34b846062ec" category="list-text"><block ref="75ddd4263ff912af7be6b34b846062ec" category="inline-link-macro-rx"></block></block>
-  <block id="617820a8b836e10d6f5146fc0f043112" category="list-text"><block ref="617820a8b836e10d6f5146fc0f043112" category="inline-link-macro-rx"></block></block>
-  <block id="5e56acfb152f096818349fa67202b6f7" category="list-text"><block ref="5e56acfb152f096818349fa67202b6f7" category="inline-link-macro-rx"></block></block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
   <block id="549f827e07761bafef053e8ca7564a39" category="inline-link">設定ONTAP 功能</block>
@@ -7256,7 +7216,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="67908030f8ab0c8af80f92c280cae057" category="doc">控制器更換總覽 - ASA A800</block>
   <block id="9bada4e82bb10497f6b0fb3e9469479c" category="doc">將故障零件退回 NetApp - ASA A800</block>
   <block id="bb1471f2572ce66912ad367693b967e2" category="doc">關閉控制器 - ASA A800</block>
-  <block id="c38e9b63f42ae3ffa80a45bd9b7bf3fa" category="doc">FAS 系統</block>
   <block id="aac030e27e2d05ac9c8d86c5ee6b670b" category="doc">更換 LED USB 模組： FAS9000</block>
   <block id="f149ffc69b5cfb8f7aad3b01a8a19d4a" category="doc">可重新分配系統並重新分配磁碟： FAS9000</block>
   <block id="c6dffe83bee9ebc28b0c537a4a763ffe" category="doc">開機媒體更換總覽 - FAS9000</block>
@@ -7561,7 +7520,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="32a49590098c9ab40e21eed11bc6f5fc" category="sidebar">更換機箱</block>
   <block id="b2fd4fdfde096263eb69465336c40583" category="sidebar">完成機箱更換</block>
   <block id="44f0502a4e12ff4c7b2a8e29ddf1240f" category="sidebar">更換控制器</block>
-  <block id="3fc24721bdaf8d0273d81d6e79588a83" category="sidebar">AFF 和 FAS 系統的磁碟櫃</block>
   <block id="04174ca16933f190c875156d1c865a6f" category="sidebar">ASA A250 系統</block>
   <block id="49cad51c2467ab7a48a5a714a6b702f9" category="sidebar">ASA A250 安裝與設定</block>
   <block id="25bbddb4969df355fec42d7f4381dc50" category="sidebar">ASA A250 維護</block>
@@ -7637,7 +7595,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="52af7d4516c9a231debbc59d16540841" category="summary">維護 FAS2800 硬體</block>
   <block id="a15b9605ee28854b0a879286a11a485d" category="doc">維護 FAS2800 硬體</block>
   <block id="3bf4e15c5081d9414a6cd3448aae890e" category="paragraph">對於 FAS2800 儲存系統、您可以在下列元件上執行維護程序。</block>
-  <block id="d90835a42340aac8a036ef710a1aa68a" category="doc">使用 AFF 、 ASA 和 FAS 儲存系統開始運作</block>
   <block id="a334af0b164fc0db79711e89abe4cb0d" category="inline-link">FAS2800</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
@@ -7647,8 +7604,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="7654764586a53c997b8c1df9098532f4" category="summary">瞭解 AFF 、 ASA 和 FAS 系統的新功能。</block>
-  <block id="3e2d1e468d09ac8c0d6588070ba9373f" category="doc">AFF 、 ASA 和 FAS 系統的新功能</block>
   <block id="ca31c0aa49625e7cda9cae921b597ddc" category="admonition">Ver2 控制器的 DIMM 插槽較少。DIMM 插槽編號並未減少支援的 DIMM 數量或變更。將 DIMM 移至新的控制器模組時、請將 DIMM 安裝至與受損控制器模組相同的插槽編號 / 位置。  請參閱 Ver2 控制器模組上的 FRU 對應圖、瞭解 DIMM 插槽位置。</block>
   <block id="41f70b901e92516347e56b1eee6fe77b" category="section-title">步驟5：執行系統層級診斷</block>
   <block id="2a075cce7e33313e84aaa96ceb86a4c8" category="paragraph">安裝新的DIMM之後、您應該執行診斷程式。</block>
@@ -7767,7 +7722,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">影片步驟 - ASA A250</block>
   <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">影片步驟： FAS500f</block>
   <block id="0a5ad698c7446792fa1695e8ef9001ee" category="image-alt">DRW 2800 交換式叢集佈線 IEOPS 893</block>
-  <block id="646d7d5f93b4a6d7bbbc65acf5ac1077" category="doc">ONTAP 硬體系統文件</block>
   <block id="92217d103cec461ace2aded92b4f42ab" category="doc">將故障零件退回 NetApp - ASA C400</block>
   <block id="f4b7b756855e1111bd19648537226e16" category="doc">維護 ASA C400 硬體</block>
   <block id="f85c225eac9932f77dacb6e6236f7ce2" category="paragraph">對於 ASA C400 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -8035,10 +7989,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6a8a52ad989777368fed119f17045cba" category="image-alt">DRW C400 ONE ns224 機櫃 IEOPS 1191</block>
   <block id="e16e25a7d0ad77cbed9a0d70f5acfc3d" category="image-alt">DRW C400 兩個 ns224 機櫃 IEOPS 1192</block>
   <block id="6bc7f0f1626fcd7c449742964090a276" category="paragraph">使用連結： <block ref="ce9d9eed382ae5ac1650ec89550136ac" category="inline-link-macro-rx"></block></block>
-  <block id="242c23abc6f706eeabc035c9160b09f4" category="sidebar">AFF A 系列系統</block>
-  <block id="ac6e4f5110aa7db5e1253a60d8d4f5a1" category="sidebar">AFF C 系列系統</block>
-  <block id="6d6d899023064067891b54808437adaa" category="sidebar">ASA A 系列系統</block>
-  <block id="be83f0f3d9e7cc4af05991e4976d2134" category="sidebar">ASA C 系列系統</block>
   <block id="a46d5e85a24eb7f41987dc2fc02df2c1" category="sidebar">NetApp 的 All Flash SAN Array （ ASA ）提供簡化且專屬的 SAN 體驗、可為貴組織的關鍵任務資料庫和其他 SAN 工作負載提供持續的資料可用度。</block>
   <block id="71b9da16d2c97302e30020688facb467" category="doc">更換風扇 - AFF A250</block>
   <block id="4419435d737554741ab61c9d91e5c332" category="doc">更換風扇 - ASA C250</block>
@@ -8106,18 +8056,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="79a918585a1d94a22b468960e11e9174" category="paragraph">您可以採取下列行動來維護 NS224 機櫃：</block>
   <block id="4ad47736772386e98b3765035e4ccc77" category="summary">SAS3 機櫃維護總覽。</block>
   <block id="9db4c90afc251da112cecabb2b945f1a" category="sidebar">機櫃維護總覽</block>
-  <block id="8eb5d7e14f078213436247ba24450689" category="summary">若要使用 AFF 、 ASA 和 FAS 系統開始運作、請在 ONTAP 中安裝硬體元件、連接硬體纜線、以及設定儲存設備。</block>
   <block id="96a3941fc07feefba651e74e742d6638" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝交換器</block>
-  <block id="0ed1fd19207f3710615fa098f320a29c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 安裝平台和機櫃</block>
-  <block id="10acd5d369d377f995d334cedec57254" category="paragraph">在機櫃或機架中安裝平台和機櫃。存取您平台機型的安裝與設定指示。</block>
   <block id="16271069a214a6b555402afb04d69089" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 連接纜線</block>
   <block id="c6b53c8091f0d8860c298f31862ebf8f" category="paragraph">將控制器連接至網路、然後將控制器連接至機櫃。  您的平台機型的安裝與設定指示包括將控制器連接埠連接至網路和交換器的佈線說明。</block>
-  <block id="f6da489aeeacf32739293cc7e93355f6" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>  完整ONTAP 的功能組態</block>
   <block id="690804f2b4dc1d3ad6cc6e584fbc071b" category="paragraph">安裝並設定控制器和交換器之後、您必須在 ONTAP 中完成儲存設備的設定。根據部署組態存取下列指示。</block>
   <block id="2d5a4622cf1f60fa2062a6410204c938" category="summary">瞭解不再支援的舊版硬體。</block>
   <block id="b55c2253dc1b30a508b603e707fc1e15" category="doc">不再支援舊版硬體</block>
-  <block id="71beaaf93c4fa164e290b4988b8f6656" category="paragraph">從指定版本的 ONTAP 開始、不再支援下列系統和交換器。</block>
-  <block id="314f9efc50d5c33d8b64718f7b4f13bb" category="section-title">AFF 和 FAS 系統</block>
   <block id="a45da96d0bf6575970f2d27af22be28a" category="cell">系統</block>
   <block id="6cb7a213dd3d9c9b67da8b1aabb3928f" category="cell">支援終止於 ...</block>
   <block id="8541975335a64aeefea980107946fbbf" category="list-text">FAS2650</block>
@@ -8138,7 +8082,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9e956a69209fd02cc7fc71bcd825b619" category="inline-link">終止可用性平台</block>
   <block id="25ac67e138b8fda2539443953ff699a2" category="list-text"><block ref="25ac67e138b8fda2539443953ff699a2" category="inline-link-rx"></block></block>
   <block id="70c1ec940020a23d470c43a425a19dbd" category="image-alt">插槽和插槽 [ 連接埠便利性</block>
-  <block id="a0bdeb39cc6a9364f3559ad9a77e2a71" category="summary">瞭解 AFF 、 ASA 和 FAS 系統的新功能、以及不再支援的舊版硬體。</block>
   <block id="5aa9a0e12c17de73e420b615315f7453" category="paragraph">如需 ONTAP 9 版本中已知問題、限制和升級注意事項的詳細資訊、請參閱<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。</block>
   <block id="d1f3a81423106ee57c19f4fc60f797ca" category="sidebar">支援終止</block>
   <block id="3709879cf4b397082ed4cccaa4fc0561" category="image-alt">FAS2800 外部 SAS 連接埠</block>
@@ -8493,7 +8436,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="db89594b0a0cbb483395a2641220f1fe" category="list-text">停用時啟用自動恢復： _storage 容錯移轉修改 -node local -auto-贈 品 true_</block>
   <block id="4e0b6dc04aaa383038bc23130a17cb25" category="cell">如果 I/O 模組為 ..</block>
   <block id="09c2cf2531a14305542e6aff93e691c5" category="paragraph">NIC 模組</block>
-  <block id="b20dcdb6484b6a4d5293d5d3de29ee0e" category="doc">在執行ONTAP Se 9.15及更新版本的系統上檢查NVE或NSE</block>
   <block id="f4247136ba1a68a91a49f4e715963146" category="paragraph">在關閉受損控制器之前、您需要確認系統是否已啟用安全金鑰管理程式或加密磁碟。</block>
   <block id="ee3b489243bdd4fdcc48ef1ad422f531" category="section-title">驗證安全金鑰管理程式組態</block>
   <block id="19033065ab73d137563560b1fc6895b0" category="inline-link">安全密鑰管理器密鑰庫顯示手冊頁</block>
@@ -8524,7 +8466,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3578391379ba5c5411207a0793afef71" category="list-text">在功能受損的控制器上，當系統提示您覆寫時，請按 _Y_<block ref="295b4ac77f4e1c5f93c6894df85fd86d" prefix=" " category="inline-code"></block>。</block>
   <block id="496e1cf89cb904a9a2ceccd873c325c5" category="list-text">在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： _set -priv特權 advancive_ 。</block>
   <block id="f0cfaabee28943cffa398d23cd5ca41f" category="list-text">在健全的合作夥伴控制器上、執行還原備份命令： _ 系統節點還原 - 備份 - 節點本機 - 目標位址受損 _ 節點 IP 位址 _ 。</block>
-  <block id="1c1f324db7646bade3d65840670981d5" category="admonition">如果您看到成功還原以外的任何訊息、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="271ca74eba5af203102f7ab7c6dd3191" category="list-text">在健全的合作夥伴控制器上、將功能受損的控制器恢復至管理層級： _set -priv特權 admin_ 。</block>
   <block id="61dad7d5cf7f4e4b7469b097ac35485f" category="list-text">在功能受損的控制器上，當您看到時，請按 _y_<block ref="dff08971c5acbbdac6642922fde20608" prefix=" " category="inline-code"></block>。</block>
   <block id="e9636d3f8e24f08b43c5d1ed71e065ea" category="list-text">在功能受損的控制器上，當您看到時，請按 _y_<block ref="396e369cf75815ba643925818d3ec37e" prefix=" " category="inline-code"></block>。</block>
@@ -8534,9 +8475,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="55f7c3a98a49a2f2d96cb2d21b95d947" category="list-text">使用 _storage 容錯移轉恢復 -fromnode local_ 命令將控制器歸還。</block>
   <block id="4c6b53c8ce9f5900a70a994f21a32c6b" category="list-text">如果您使用 _storage 容錯移轉 modify -node local -auto-贈 品 true_ 命令停用、請還原自動恢復。</block>
   <block id="85ef34c14131c3f446c3d96330659ce7" category="list-text">如果啟用 AutoSupport 、請使用 _system 節點 AutoSupport 呼叫 -node* -type all -message MAIS=end_ 命令、還原 / 恢復自動建立個案。</block>
-  <block id="1d5e6fb63cdc1edb63d6a40f348b2dff" category="paragraph">聯繫人<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block></block>
   <block id="4e3d3d75dd1d92ce7fd5a7cb8fbca06f" category="doc">步驟1：更換開機媒體</block>
-  <block id="cfb8d631ef0909ee2cb18c2966215fcc" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、在系統管理模組中安裝替換開機媒體、然後將 ONTAP 映像從 USB 快閃磁碟機傳輸至替換的開機媒體。</block>
   <block id="40137b2ef5d6219999ccbff7acc4080e" category="paragraph">開機媒體位於系統管理模組內、可從系統中移除模組來存取。</block>
   <block id="c7e42b88c75788e5a4dd44ffee425837" category="image-alt">開機媒體取代圖形</block>
   <block id="65c48f838cd0d6bef4f7f9dfeffa6c20" category="paragraph">系統管理模組 CAM 栓鎖</block>
@@ -8545,7 +8484,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8f95aa0a30128c64f675b79156365155" category="admonition">如果您的儲存系統有 DC 電源供應器、請從電源供應器（ PSU ）拔下電源線區塊。</block>
   <block id="f1f9e5f6b36ebaca49f1a330347ef511" category="list-text">拔下連接至系統管理模組的所有纜線。請務必標示纜線的連接位置、以便在重新安裝模組時、將纜線連接至正確的連接埠。</block>
   <block id="ef59e6e115d6a402e96debfbcf2d43a4" category="list-text">向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。</block>
-  <block id="4de74279b34bc439bb927ff19c3f2635" category="list-text">按下 System Management CAM 按鈕。CAM 控制桿會離開機箱。</block>
   <block id="8c124a15e8ff5fddc697411c217c8f3e" category="list-text">向下轉動凸輪栓鎖、直到卡入定位為止。</block>
   <block id="446d736b3461ada66026e254d8004909" category="list-text">將手指插入 CAM 拉桿開口處、然後將模組從機箱中拉出、即可將系統管理模組從機箱中移除。</block>
   <block id="0c04e9069213a3f01693dfea6d29cdea" category="list-text">將系統管理模組放在防靜電墊上、以便存取開機媒體。</block>
@@ -8795,7 +8733,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="253b24d74d0517388c6e5b078713c86a" category="inline-link">Burt 1494308 - 在 I/O 模組更換期間、可能會觸發環境關機</block>
   <block id="fc5ee1a4ca46ff0160eeada84fe673fc" category="admonition">如果您在重新開機期間遇到問題、請參閱<block ref="5f4b19e33781d4df6c59a005be26e607" category="inline-link-rx"></block></block>
   <block id="cfedf0b233356261eb909e7add24bded" category="list-text">從合作夥伴控制器模組中退回控制器模組。儲存設備容錯移轉恢復恢復 -ofnode_node_name_</block>
-  <block id="50452a92c8429276ad6b40b6a483c0dc" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、在系統管理模組中安裝替換開機媒體、然後將開機映像傳輸至 USB 快閃磁碟機。</block>
   <block id="43d656a7b2fb92dbbe5e13b8f00a00b8" category="list-text">按下系統管理 CAM 按鈕。CAM 控制桿會從機箱移出。</block>
   <block id="f0d27e50eb41ec006d18a96b5254063e" category="list-text">向下轉動 CAM 拉桿、然後從控制器模組中移除 System Management 模組。</block>
   <block id="54a53a09772d42f23357a9952d2d46a1" category="section-title">步驟2：將開機映像傳輸到開機媒體</block>
@@ -8847,7 +8784,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c9551b0fc75e2c8508231fd6835ef674" category="list-text">向下拉纜線管理 ARM 內部的按鈕、然後向下旋轉纜線管理、即可向下旋轉纜線管理 ARM 。</block>
   <block id="ab7f57bf2d31f89a07c8be533fdaddec" category="list-text">從控制器模組中移除 I/O 模組：</block>
   <block id="f3d88c3c810af1cdb84d313cc4275953" category="list-text">按下目標 I/O 模組 CAM 鎖定按鈕。</block>
-  <block id="7c6e6d55849c69a2b7dab4c3fb9da90d" category="paragraph">CAM 控制桿會離開控制器模組。</block>
   <block id="9845fc7da7211da718a847b9a731f5b8" category="list-text">將手指連入凸輪桿開口處、然後將模組拉出控制器模組、即可將模組從控制器模組中移除。</block>
   <block id="f849da379b8d83f31d348b3d693cc638" category="list-text">將替換 I/O 模組安裝至替換控制器模組中、方法是將 I/O 模組輕輕滑入插槽、直到 I/O 凸輪閂鎖開始與 I/O 凸輪銷接合、然後將 I/O 凸輪閂鎖完全推入、以將模組鎖定到位。</block>
   <block id="4af3919f928bd4d197aed63e4bc600d5" category="list-text">重複這些步驟、將插槽 6 和 7 中的模組以外的其他 I/O 模組移至替換控制器模組。</block>
@@ -8880,7 +8816,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bbd2b770350c6f52732f68cd939d17e5" category="admonition">如需 AFF A70 或 AFF A90 的確切 DIMM 位置、請參閱<block ref="4e43c3b83d98d9534ba258422aad47e3" category="inline-link-rx"></block> 控制器模組上的或 FRU 對應圖。</block>
   <block id="610add0822408300fa8ad516407472f4" category="section-title">步驟 3 ：更換風扇</block>
   <block id="fc6665e9f1b6162e5d38bd8eb567b787" category="list-text">從控制器模組中卸下 I/O 模組：</block>
-  <block id="43bdfcb23a758397ea6517f635aacc1d" category="paragraph">CAM 栓鎖會離開控制器模組。</block>
   <block id="e7a88b07d0fe11e52b015a7a07b1b7ee" category="list-text">將替換 I/O 模組安裝至目標插槽：</block>
   <block id="a3106006bcbd6b01107844abf97f1800" category="list-text">將模組一路輕輕滑入控制器模組的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。</block>
   <block id="1089c3637780c1a22ad88c3e30e3eaa6" category="image-alt">更換NV電池</block>
@@ -8990,7 +8925,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ccb7122523ff13a861d44c2bcdc45f81" category="list-text">指派每個磁碟機：<block ref="e546c7c0f19a803f32f47d3907849b62" prefix=" " category="inline-code"></block></block>
   <block id="3774ddca34a7ba4f3e245f00869ad3d4" category="paragraph">更換數個磁碟機時、每個故障磁碟機的移除與插入替換磁碟機之間、您必須等待 70 秒、讓儲存系統能夠識別每個新磁碟的存在。</block>
   <block id="9f8cb0e8a48411f934bc97473df58706" category="list-text">如果啟用 AutoSupport 、請使用還原 / 恢復隱藏自動建立案例<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block></block>
-  <block id="a93d77f6df5e06d389505b064ee465e0" category="doc">完成開機媒體更換</block>
   <block id="9cdea9bbd0e16c22fc991522b7972ed5" category="paragraph">您必須完成特定於已啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp 磁碟區加密（ NVE ）的系統、並使用本程序開始時擷取的設定。</block>
   <block id="7b2bdafe064028eef5977d05150f12ac" category="admonition">如果 NSE 或 NVE 與 Onboard 或 External Key Manager 一起啟用、您必須還原本程序開始時擷取的設定。</block>
   <block id="63a4de1bcedff077618555275f624f08" category="open-title">選項 1 ：具有內建金鑰管理程式伺服器組態的系統</block>
@@ -9097,44 +9031,29 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f424eb06e28282360201a36ab719f6c7" category="paragraph">系統管理模組提供控制器與主控台或筆記型電腦之間的介面、以供控制器或系統維護之用。系統管理模組包含開機媒體、並儲存系統序號（ SSN ）。</block>
   <block id="3fb7b4296088420fb4e0b9343835ec5f" category="summary">控制器上的管理網路連接埠連接至交換器。兩個控制器上的HA互連和叢集互連連接埠均已連接好纜線。控制器模組若有訂購、則會連接至外部儲存設備。</block>
   <block id="b1e60e9c8e3b79ce7200aaa962a901d0" category="doc">連接硬體 - AFF A1K</block>
-  <block id="0d47251cb5a40d7e8fdd90893a890cb5" category="paragraph">根據您的特定儲存系統組態、為控制器和機櫃佈線。</block>
   <block id="403075fa89afdf5689d3f155524d9e1b" category="paragraph">檢查纜線連接器拉式彈片方向是否正確、請參閱纜線連接圖中的圖例箭頭。</block>
   <block id="04c6391623d6bd5d0ac0d7df563f74dc" category="image-alt">纜線拉式彈片方向範例</block>
   <block id="35bd3e31ed449ec51ffdc43a42bdcd8f" category="list-text">如果要連接至光纖交換器、請先將 SFP 插入控制器連接埠、再將纜線連接至連接埠。</block>
-  <block id="e8dcbbdb0b0cc30021cdb1772e14a12d" category="section-title">步驟1：將控制器連接至網路</block>
-  <block id="774fc771cbe0562cf589e2e5571e543c" category="open-title">選項 1 ：無纜線交換器叢集</block>
-  <block id="ab3e6f854653e79b55b1aef74734d66a" category="paragraph">使用纜線連接無交換器的叢集連線。</block>
-  <block id="0ce6d01af755d7d63a1db543cd42ef01" category="list-text">使用叢集 /HA 互連纜線將叢集 /HA 互連連接埠 e1a 連接至 e1a 和 e7a 連接至 e7a 。</block>
   <block id="883f8ccaa3b7bb186f5d85df551292e7" category="admonition">叢集互連流量和 HA 流量共用相同的實體連接埠。</block>
   <block id="29b62d617481485649ea2d5b54fca512" category="image-alt">叢集 HA 纜線</block>
   <block id="8c1f3262727530ad8d4652a5b107e167" category="paragraph">* 叢集 / HA 互連纜線 *</block>
-  <block id="23fb563ac26a205349d9c7cce9636f14" category="list-text">將乙太網路模組連接埠連接至主機網路。</block>
   <block id="e5878ec206640d3f0489cbe562e56856" category="paragraph">以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d6971cc4d66c44424c9f79edd62c87a4" category="list-text">如圖所示、將 e9a 和 e9b 連接至乙太網路資料網路交換器。</block>
   <block id="4f223663358c0dcb4aac038f73fdf58d" category="admonition">為了讓叢集和 HA 流量發揮最大的系統效能、最佳做法是不要使用連接埠 e1b 和 e7b 連接埠來進行主機網路連線。請使用獨立的主機卡來發揮最大效能。</block>
   <block id="d2163ed76fe91108f8a1e58f08924448" category="paragraph">*100 GbE 纜線 *</block>
   <block id="dca4917cf460ca0094ae46e8d7178c17" category="image-alt">100Gb 乙太網路纜線</block>
   <block id="63498c78e69ef7b5cc7cd5a1c0c3b724" category="image-alt">連接至 100Gb 乙太網路的纜線</block>
-  <block id="eddbc7579882e3cdebc0716bd1a883cb" category="list-text">連接 10/25 GbE 主機網路交換器。</block>
   <block id="fbb2ead6e1dba22c64b785b1864b9809" category="paragraph">*10/25 GbE 主機 *</block>
   <block id="e6db43427a500d394f1d34dcfecf3b50" category="image-alt">10/25Gb 乙太網路纜線</block>
   <block id="204d53c0ad48ec9abe6f3cde34241579" category="image-alt">連接到 10/25Gb 乙太網路的纜線</block>
-  <block id="23b5c21ed8d6bd3d9626d882b8ed5b76" category="list-text">使用 1000BASE-T RJ-45 纜線、將控制器管理（扳手）連接埠連接至管理網路交換器。</block>
   <block id="1107155d6b0c900a6485f06681854862" category="image-alt">RJ-45 纜線</block>
   <block id="9c29eb35e98929529d99ca71cd855f4e" category="paragraph">* 1000BASE-T RJ-45 纜線 *</block>
   <block id="a8536d671676b42d7c49328e04123a96" category="image-alt">連線至您的管理網路</block>
-  <block id="09e9d41a74e65e2200df2359e0c54806" category="open-title">選項 2 ：纜線交換式叢集</block>
-  <block id="0b7f474dc87a04642d4a17b892a87553" category="paragraph">連接交換式叢集連線。</block>
   <block id="fe1ed4b5e6a760085b2af448921f0d53" category="list-text">進行下列纜線連接：</block>
-  <block id="6166cb0eddbc000f8b888922799ec0c0" category="list-text">將控制器 A 上的連接埠 e1a 和控制器 B 上的連接埠 e1a 連接至叢集網路交換器 A</block>
-  <block id="c1634d34779ed3f630d8561f06954738" category="list-text">控制器 A 上的纜線連接埠 e7a 和控制器 B 上的連接埠 e7a 至叢集網路交換器 B</block>
   <block id="b222cca23840b6a495e76b8c300b08f2" category="image-alt">100 GB 纜線</block>
   <block id="f1d133e33e29362e931a34312a961d0b" category="image-alt">將叢集連線連接至叢集網路</block>
   <block id="5a8b74659281e9e3495bfc29767b645c" category="paragraph">*4 個連接埠、 10/25 GbE 主機 *</block>
   <block id="ff54d299af9abd1be5b8082a790261aa" category="section-title">步驟 2 ：纜線控制器連接至機櫃</block>
   <block id="071bf81b7a0d7e66c24dfdb5f3604a4c" category="paragraph">將控制器連接至機櫃或機櫃。</block>
-  <block id="8cf6a83f767cc36c3f339af205b3e7d0" category="paragraph">這些程序說明如何將控制器連接至一個機櫃和兩個機櫃。您最多可以直接將四個機櫃連線至控制器。</block>
-  <block id="d5a4ec7e98f94395b8939b8bc64155e0" category="open-title">選項 1 ：連接至一個 NS224 機櫃的纜線</block>
   <block id="ffa3c6d2c04b126c7ca74f9a656eb36e" category="paragraph">將每個控制器連接至 NS224 機櫃上的 NSM 模組。圖形顯示每個控制器的纜線：藍色控制器 A 纜線、黃色控制器 B 纜線。</block>
   <block id="56af31a9320e84a6619ac8ae861b165a" category="list-text">在控制器 A 上、使用纜線連接下列連線：</block>
   <block id="f316f1854f33785f42807636a3284714" category="list-text">將連接埠 e11a 連接至 NSM A 連接埠 e0a 。</block>
@@ -9146,7 +9065,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3a95f3cf99705bbbd01d1dd74336e9fd" category="list-text">將連接埠 e11b 連接至 NSM a 連接埠 e0b 。</block>
   <block id="182824a7bd82a321df1a100637995a19" category="inline-image-macro">纜線控制器 B 連接埠 e11a 和 e11b 至單一 NS224 機櫃</block>
   <block id="86ab7b5fab8b30fc8e3619226fb66002" category="paragraph"><block ref="86ab7b5fab8b30fc8e3619226fb66002" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="08c7b8b999017a30f27de344bfc6beb2" category="open-title">選項 2 ：連接兩個 NS224 機櫃的纜線</block>
   <block id="2aec08b694d0f04216b731c2d38eff0a" category="paragraph">將每個控制器連接至兩個 NS224 機櫃上的 NSM 模組。圖形顯示每個控制器的纜線：藍色控制器 A 纜線、黃色控制器 B 纜線。</block>
   <block id="4b079ba797f88f932136bdbd1aa314a0" category="list-text">將連接埠 e11a 連接至機櫃 1 NSM A 連接埠 e0a 。</block>
   <block id="486d7e107c3f396974308ba4cc20a5f9" category="list-text">將連接埠 e11b 連接至機櫃 2 NSM B 連接埠 e0b 。</block>
@@ -9161,11 +9079,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="462dd5d60871bb2319eb46e1da38c42d" category="paragraph"><block ref="462dd5d60871bb2319eb46e1da38c42d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d5bec2eb0018e8e254a2426f768cf678" category="summary">使用叢集探索來完成平台設定與組態、只需連線至交換器和筆記型電腦、或直接連線至儲存系統中的控制器、然後再連線至管理交換器。</block>
   <block id="e0c6d59cdb58b213183cb0fc7534ee18" category="doc">完整的儲存系統設定與組態 - AFF A1K</block>
-  <block id="897dc3c4dc954f5e16e901f1eab0854c" category="paragraph">安裝硬體之後、請使用 ONTAP 軟體來設定及管理儲存系統。</block>
   <block id="4ba7257f41527371f7a52420787c1085" category="section-title">步驟 1 ：收集叢集資訊</block>
   <block id="e13a4e2099510963f792c4fc1ef4fced" category="paragraph">如果您尚未這麼做、請收集設定叢集所需的資訊、例如叢集管理介面連接埠和 IP 位址。</block>
   <block id="8c468ee786068bf98fe0b8a71cf946fa" category="inline-link">叢集設定工作表</block>
-  <block id="34c4c0a38a5ca0192ee4865cdbb0a29c" category="paragraph">使用<block ref="21429355d1404c86c4038169e7df91bc" category="inline-link-rx"></block> 記錄叢集設定程序期間所需的值。如果提供預設值、您可以使用該值、或輸入自己的值。</block>
   <block id="4616f779d40b2ecdf1191d9d79c0a350" category="section-title">步驟 2 ：探索叢集網路</block>
   <block id="b4e52cacc81413e852d2fa47a578fb04" category="paragraph">探索程序可讓您探索網路上的儲存系統控制器。</block>
   <block id="87d44868bcfa03f5ad272605d74737c1" category="open-title">選項 1 ：已啟用網路探索</block>
@@ -9175,67 +9091,32 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4aec97d731539f50b200414275b82dd7" category="admonition">xxxxx 是目標節點的平台序號。</block>
   <block id="330cfe945ce3f586f079ea386fb67cff" category="open-title">選項 2 ：未啟用網路探索</block>
   <block id="688aa74b62c0c2511666ad96b9dc3726" category="paragraph">如果您的筆記型電腦未啟用網路探索、請使用 ONTAP 命令列介面（ CLI ）叢集設定精靈來完成組態和設定。</block>
-  <block id="236a4f95ac53e773b32d5263f4f3c76f" category="paragraph">請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。如需相關指示、請參閱 <block ref="31d9c8c23bc40252f42cad2b21229cbd" category="inline-link-macro-rx"></block> 。</block>
   <block id="b2fee2229d33fcf0b97717446435f7bb" category="list-text">連線至第一個節點的主控台。</block>
   <block id="00a2f26d65c63976ed98d9b8d38880f3" category="paragraph">節點會開機、然後從主控台啟動叢集設定精靈。</block>
   <block id="f85417ae10b7f79bccdb3735a79b7ec3" category="list-text">當叢集設定精靈提示時、請輸入節點的管理 IP 位址。</block>
   <block id="932ce8b8d60e3730c547081f25cce2e6" category="section-title">步驟 3 ：設定叢集</block>
-  <block id="b265770b187e4a8451ddd37476001903" category="paragraph">NetApp 建議您使用系統管理員來設定新叢集。如需設定說明、請參閱<block ref="76a0ad9e6d9605be893ded0930762dd1" category="inline-link-rx"></block> 。</block>
   <block id="1557b8ad03da8f6954c03ccd61005ac5" category="paragraph">System Manager 為叢集設定與組態提供簡單易用的工作流程、包括指派節點管理 IP 位址、初始化叢集、建立本機層、設定通訊協定、以及初始配置附加儲存設備。</block>
-  <block id="2ce1349fe67fa0e027bf3526a78ebb93" category="admonition">叢集初始化之後、請下載並執行 <block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block> 以確認您的設定。</block>
   <block id="ed198c6c65dda3bfcee47cc329346a10" category="summary">將儲存系統安裝在機櫃或電信機架中。</block>
   <block id="94ebd1127cf45d2e2e1f6f1b0cd35269" category="doc">安裝硬體 - AFF A1K</block>
-  <block id="dfdc73d42700a9c3fdaeacd939a51a4f" category="inline-link">安全注意事項</block>
-  <block id="ab68982517ac3ad46c0076188c40b44c" category="list-text">您應該檢閱<block ref="cf650561cfd1ad2dfbe54c8781566683" category="inline-link-rx"></block> 文件、並瞭解移動和安裝硬體的預防措施。</block>
-  <block id="ba4a0871133faabe4aa77db489cdd95f" category="list-text">您應該隨附軌道套件的說明。</block>
-  <block id="8e1aabd1c656abc178babd71f8776b44" category="list-text">您應注意與平台和機櫃重量相關的安全考量。</block>
-  <block id="e55a9011c423c880adfcc3c86f8853a4" category="list-text">視需要、依照套件隨附的說明、安裝平台和機櫃的軌道套件。</block>
-  <block id="5fa8d497851dfe0abacec979a3120dc8" category="list-text">在機櫃或電信機架中安裝及保護您的平台：</block>
-  <block id="880290b720b791ab429f09f225910ebf" category="list-text">將平台放置在機櫃或電信機架中間的軌道上、然後從底部支撐平台並將其滑入定位。</block>
-  <block id="7ff61639824e703bd4a303ea89a779de" category="list-text">使用隨附的安裝螺絲、將平台固定在機櫃或電信機架上。</block>
-  <block id="a21ee0e1df8582726afc6306cc99ef3b" category="list-text">安裝機櫃或機櫃：</block>
   <block id="41d0162b829c86f804973e362022ee25" category="list-text">將機架背面放在軌道上、然後從底部支撐機架、並將其滑入機櫃或電信機架。</block>
-  <block id="f27419cb0b36bb39cc7c4466769ccdbf" category="paragraph">如果您要安裝多個機櫃、請將第一個機櫃直接放在控制器上方。將第二個機櫃直接放在控制器下方。對任何其他磁碟機櫃重複此模式。</block>
-  <block id="6bbef5157a3a6aedb6bc6c893061aafc" category="list-text">使用隨附的安裝螺絲、將機櫃固定在機櫃或電信機架上。</block>
-  <block id="9befb49ff1b56070c1ef21476a709671" category="list-text">將纜線管理裝置連接至平台背面。</block>
   <block id="6b7aa880220c7f598440de8d8a0f944b" category="image-alt">安裝纜線管理裝置</block>
-  <block id="b647ec81f6bfcb450169641046ccaaca" category="list-text">將擋板連接至平台正面。</block>
-  <block id="0e0e2b2ed8789596071dfbf76e75f335" category="summary">請遵循這些高階步驟來安裝和設定 AFF A1K 儲存系統、並將其部署為 ONTAP 系統中的節點。</block>
-  <block id="49879e1937eb584d6d1329cf32f36c17" category="doc">安裝設定工作流程 - AFF A1K</block>
-  <block id="9eda15b0c07f5fb1e2490feec4e5ae37" category="paragraph">請依照下列工作流程步驟來安裝、設定及部署 AFF A1K 儲存系統。</block>
-  <block id="2be710d107cc8e46959e3e62e4dd4ce3" category="inline-link-macro">準備安裝</block>
-  <block id="9043ab3a65cd1350dbda4be47f21ec5c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="5011908086784bfaa4525017596fbe2f" category="inline-link-macro-rx"></block></block>
-  <block id="ae37677074f9ff9d8928c0f76565c1f8" category="paragraph">若要準備安裝、您必須準備好場地、檢查環境和電力需求、並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。</block>
   <block id="543e6a3c9b07a3642afb462fba582642" category="inline-link-macro">安裝硬體</block>
-  <block id="0daf67323f6374a80f12afc31c54ae52" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="3068911acb0b71d1c5f064869e9b802c" category="inline-link-macro-rx"></block></block>
-  <block id="3a172b938ebc0bcb033a917bc78949f3" category="paragraph">若要安裝硬體、請為您的平台和機櫃安裝軌道套件、然後在機櫃或電信機架中安裝並固定平台。接著、將貨架滑到軌道上。最後、將纜線管理裝置連接至平台後方、以便整理纜線佈線。</block>
   <block id="ea6245a5aad1d347d3bfd8727ccbe15c" category="inline-link-macro">纜線硬體</block>
-  <block id="edbddbe119f4ad198500b1c1e7ba4f52" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="126f36101e06fcd4dd487e889fcb7145" category="inline-link-macro-rx"></block></block>
-  <block id="dfdac243a395e5b1ba82e312c215986f" category="paragraph">若要連接硬體、請先將控制器連接至網路、然後將控制器連接至機櫃。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
-  <block id="b2b76e77a7b6cf193e3439cb4a6ff4cc" category="inline-link-macro">開啟儲存系統電源</block>
-  <block id="b6180a89c068535cbdcabc203f7dfa6a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="1404b70315f2fceae786975a12b854e5" category="inline-link-macro-rx"></block></block>
-  <block id="046a5bc73524f6b601e10aac7dad5c7c" category="paragraph">若要開啟系統電源、請先開啟每個 NS224 機櫃的電源、並指派唯一的機櫃 ID 、以確保每個機櫃在設定中都是不同的。然後、開啟控制器電源。最後、請使用隨附的固定裝置、將電源線固定在每個電源供應器上。</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
   <block id="32faffb9b7b89515bab5605b39a5c57d" category="inline-link-macro">完整的儲存系統設定</block>
-  <block id="6e64cb3fdf6eb566ca2c753432f1247f" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
-  <block id="aae7e85311563575e46976e45988721f" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取網路型介面 System Manager 。安裝精靈可協助您開始進行叢集組態。此外、您也可以使用命令列介面（CLI）。</block>
   <block id="079541787256810512e79fe819711d61" category="summary">將電源線連接到機櫃和控制器上、並為其供電。</block>
   <block id="c2b963a7671a8f77c637646d3e8c76a5" category="doc">開啟儲存系統電源 - AFF A1K</block>
-  <block id="334084b3d6aab4c485e6aeead3639ada" category="paragraph">連接網路和任何機架纜線之後、您就可以為控制器和機櫃供電了。</block>
   <block id="0b5c1681fb8f009a141f0c7d0f2d8f64" category="section-title">步驟 1 ：開啟機櫃電源並指派機櫃 ID</block>
-  <block id="8d24ecb081b813a63dd1dda9aad1d93c" category="paragraph">在 ONTAP 儲存系統中、每個 NS224 機櫃都以獨特的機櫃 ID 加以區分。此 ID 可確保儲存系統設定中的機櫃各有不同。根據預設、機櫃 ID 會指派為「 00 」和「 01 」、但您可能需要調整這些 ID 、以維持整個儲存系統的唯一性。</block>
   <block id="4acf2e1827dc9d94e8643d89bb45be93" category="list-text">您必須將機櫃關機後再開機（拔下兩條電源線、等待適當的時間、然後重新插入）、機櫃 ID 才會生效。</block>
   <block id="90b5c3b3e8b76a473c431858d638eccb" category="list-text">先將電源線連接至機櫃、然後使用電源線固定器將電源線固定到位、再將電源線連接至不同電路上的電源、以開啟機櫃電源。</block>
   <block id="aa4d119638bea60a8850d8c9e0b57b86" category="paragraph">機櫃在插入電源時會自動開機和開機。</block>
   <block id="67cfcbdbfb87a54aadf338e218c38216" category="list-text">取下左端蓋、即可存取面板後面的機櫃 ID 按鈕。</block>
-  <block id="7d080ef2a38b64e6cac5c0ae019e1a04" category="list-text">將迴紋針或窄尖圓珠筆的拉直端插入小孔中。</block>
   <block id="6344f7fd68670da7ea2e25f860ab47c7" category="list-text">將機櫃關機至少 10 秒、使機櫃 ID 生效。</block>
   <block id="8dd5b39a083288c66f9b37e4b47571ed" category="list-text">從機櫃上的兩個電源供應器拔下電源線。</block>
   <block id="2fd334af24d7f85b4be7ae87f6cc3fd5" category="list-text">等待10秒。</block>
   <block id="f4eba532dc9721310c35cdad2e0831ac" category="list-text">將電源線插回機櫃電源供應器、以完成電源循環。</block>
   <block id="b1ea51baf980ec6bb00ca1b7b419d506" category="section-title">步驟 2 ：開啟控制器電源</block>
-  <block id="da22bb3ea79ddb2366d539465852f273" category="list-text">將筆記型電腦連接到序列主控台連接埠、以便在控制器通電時監控開機順序。</block>
   <block id="943e3a7c8a0476b63130b5a3dfab2ef1" category="list-text">將筆記型電腦上的序列主控台連接埠設為 115200 傳輸速率（ N-8-1 ）。</block>
   <block id="04112f6af1c35028ff6da3640556c14c" category="admonition">如需如何設定序列主控台連接埠的說明、請參閱筆記型電腦的線上說明。</block>
   <block id="c7d14c04a57d9e31aaae62ee110f2cd9" category="list-text">將主控台纜線連接至筆記型電腦、然後使用平台隨附的主控台纜線連接控制器上的序列主控台連接埠。</block>
@@ -9245,32 +9126,17 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d4b97f0234af8d33d5ad6190a7930ff4" category="image-alt">一般電源連線圖表</block>
   <block id="1231fe933f3b46c84db2f5066eca43a5" category="list-text">平台開始開機。初始開機最多可能需要八分鐘。</block>
   <block id="71abffb89587fc128eb09ec9ef2dd7e1" category="list-text">LED 會亮起、風扇會啟動、表示控制器正在開機。</block>
-  <block id="5e90eef3467966790ef48f7bc66eaea8" category="list-text">風扇第一次啟動時可能會很吵。開機期間風扇噪音很大是正常現象。</block>
   <block id="671754b07475807f952083aca6f98a97" category="list-text">使用每個電源供應器上的固定裝置固定電源線。</block>
   <block id="b20f6daaff695ed207299929a85ec2f0" category="summary">準備好安裝 AFF A1K 平台。</block>
-  <block id="4157e2eb4dd8641bf3242a14b2dfed09" category="list-text">確認您擁有完成硬體安裝所需的所有其他設備和工具。</block>
-  <block id="d9a73103885ae8b7024a16f9b7de34b7" category="list-text">防靜電繫帶</block>
-  <block id="1cf76f3395dbf84a39ec8781dc375709" category="list-text">用於設定 NS224 機櫃 ID 的迴紋針或窄尖圓珠筆</block>
   <block id="32271edc7814b81370e65a0b9ea22010" category="list-text">具備 USB/ 序列連線的筆記型電腦或主控台</block>
   <block id="5c454c254f4e346b0d54dac30e743b57" category="list-text">存取網頁瀏覽器以設定儲存系統</block>
-  <block id="97c8363ab8f2bf90b40d701079ee1b9b" category="list-text">您應注意與平台重量相關的安全考量。</block>
-  <block id="ce20e4d335b040b9531723f1ead004ab" category="paragraph">完全負載的 A1K 平台可重達 62.83 磅（ 28.5 公斤）、需要兩個人抬起或使用液壓舉升設備。</block>
   <block id="00db13616a21c862d199d7fae938549d" category="image-alt">AFF A1K 提升注意事項圖示</block>
-  <block id="4e170b28ebb6850991292afb9c2051de" category="list-text">您應注意與機櫃重量相關的安全考量。</block>
-  <block id="e3c1fd502d61f3f93d6f9ebbb32ced79" category="paragraph">滿載的機櫃可重達 66.78 磅（ 30.29 公斤）、需要兩個人才能抬起或使用液壓起重。避免移除機櫃元件（從機櫃正面或背面）、以降低機櫃重量、因為機櫃重量會不平衡。</block>
   <block id="c55a46464ae8350cc2bff0a097df93e1" category="image-alt">NS224 舉升注意事項</block>
-  <block id="935ac3c2bb6566a5dc2ab9114aec6183" category="list-text">透過儲存系統的氣流會從安裝擋板或端蓋的前端進入、並排出連接埠所在的後端。</block>
   <block id="92c8397408f55d9526d554c55cde3d22" category="section-title">步驟 1 ：準備網站</block>
-  <block id="0409fe2e24b1b8f51df857a1319fa881" category="paragraph">請確定您打算使用的站台和機櫃或機架符合儲存系統的規格。</block>
-  <block id="0e2d8e6b1b2e831a550a22ebf28da119" category="list-text">確認您的站台符合平台的環境和電力需求、如所示<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
   <block id="0b75c01928f08a952353b4ed76796fb5" category="list-text">請確定您有足夠的機架空間：</block>
   <block id="588fcd6ecf982925ddac393983abe360" category="list-text">適用於平台的 HA 組態中的 4U</block>
-  <block id="da3fb29b9c49b56a1258104d41af01b0" category="list-text">2U 適用於每個 NS224 機櫃</block>
-  <block id="58289cba8eae4ebda5681e0e7e10f324" category="list-text">在平台附近安裝任何必要的網路交換器。</block>
   <block id="11b5963f8c4ca653ab5f43bc4b9828df" category="inline-link">交換器文件</block>
-  <block id="f2f64ae8a8810988ba30737729696726" category="paragraph">如需安裝說明及相容性資訊、請參閱<block ref="664f8ad712a885ab177a41fa3298f95f" category="inline-link-rx"></block> <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
   <block id="6630a85163683d2127a4b50c91d77093" category="section-title">步驟 2 ：打開包裝盒</block>
-  <block id="8214ba6045bea7b27c21955011903997" category="paragraph">打開所有包裝箱的包裝、並將內容物與裝箱單上的物品進行比較。</block>
   <block id="82174a976e9a37564a41e6138a110eb6" category="list-text">小心打開所有包裝盒、並以井然有序的方式配置內容物。</block>
   <block id="d6aed2118da6ba77f55936d16677727f" category="list-text">請比較裝箱單上的清單內容。</block>
   <block id="6056345394434bf38ce0cd6fc7155a3e" category="admonition">您可以掃描運送紙箱側邊的 QR 碼、以取得裝箱清單。</block>
@@ -9279,7 +9145,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="958c530ea1ae0e18b942f8784148734c" category="cell">*硬體*</block>
   <block id="09ff86ce1246a36d79f5d417bc9fb6be" category="cell">* 纜線 *</block>
   <block id="419f3742e6de8e0ec4b22cce005e7630" category="list-text">平台</block>
-  <block id="27369e02201cfd95107ef7fe0fe1a46c" category="list-text">機櫃</block>
   <block id="45e29b9394f4cac59a4b24854556dec2" category="list-text">軌道套件附說明（選用）</block>
   <block id="680d900a0d52fdf0778ee2a5588f6f69" category="list-text">纜線管理裝置</block>
   <block id="efb4c0c41cf8767bf0f9361a8c61a50a" category="list-text">擋板</block>
@@ -9287,19 +9152,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b2cdf9589096f203f816541f43a15f6c" category="list-text">網路纜線</block>
   <block id="06d2646a8077631818b55a12dc3c58ac" category="list-text">管理乙太網路纜線（ RJ-45 纜線）</block>
   <block id="3ad4852daca6060d9a43783d0d67578c" category="list-text">USB-C 序列連接埠纜線</block>
-  <block id="8fb8b901c9406f66b944ce69ca368bef" category="list-text">儲存纜線（如果訂購額外儲存設備）</block>
-  <block id="a824ea8f6ce3f1963a3ab81dff178919" category="section-title">步驟 3 ：註冊您的硬體</block>
-  <block id="885791cdc23c6886e9b36f9ec6e17613" category="paragraph">註冊您的平台可提供支援效益。</block>
-  <block id="23a47645f6fbd975494d974f8b3133df" category="list-text">找出平台的系統序號。</block>
   <block id="501009762675d8b94f6d05080102eaa1" category="paragraph">您可以在裝箱單、確認電子郵件或控制器的系統管理模組中找到編號、然後再將其解壓縮。</block>
-  <block id="8a7ac8ffae90ca0a1caaddb0f33069c2" category="list-text">前往 NetApp 支援網站：<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
-  <block id="d1cc88bda5b2251b480ce496987d8474" category="list-text">註冊硬體：</block>
   <block id="8a55a5b89690f6046e6de8dd649ff837" category="list-text">使用您的使用者名稱和密碼登入。</block>
   <block id="5c83cedabfd78baf337988a092bcf317" category="list-text">選擇 * 系統 * &gt; * 我的系統 * 。</block>
-  <block id="1f122c4c30234dec74d765075fd1f45f" category="list-text">確認已列出新的系統序號。</block>
   <block id="12dc2a66a130388ec482398caa6ce95b" category="list-text">按一下*立即註冊*、然後建立帳戶。</block>
   <block id="89cc8de091278e0fb0686833ac6a7982" category="list-text">選擇 * 系統 * &gt; * 註冊系統 * 。</block>
-  <block id="c04746c1c8deb45f0567d25441428d64" category="list-text">輸入產品系統序號和要求的詳細資料。</block>
   <block id="9fcab783d1ffadeafb84de00efe883d9" category="paragraph">註冊核准後、您可以下載任何必要的軟體。核准程序可能需要24小時。</block>
   <block id="43322d1e43d632d017f923484e7efa80" category="summary">若要更換 PCIe 卡、您必須從插卡拔下纜線、從插卡上取下 SFP 和 QSFP 模組、然後重新安裝 SFP 和 QSFP 模組、再將插卡佈線。</block>
   <block id="240a5f8ed7bc82e0c089904a09102a91" category="doc">新增 I/O 模組 - AFF A1K</block>
@@ -9321,30 +9178,14 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">更換即時時鐘電池 - AFF A1K</block>
   <block id="7a0d50897c7e82eeae5a76e821ede64f" category="summary">您必須更換。</block>
   <block id="8696c3a11bb55bf4544256cfb1b2bd94" category="doc">更換系統管理模組 - AFF A1K</block>
-  <block id="cca32d9f7020830ce64904a8c1aecba9" category="doc">將故障零件退回 NetApp - AFF A70 、 AFF A90</block>
-  <block id="24adca74cd4521b9f4f4a8ab1033a6d8" category="doc">檢查機載加密金鑰 - AFF A70 、 AFF A90</block>
-  <block id="a79b7b4459526eba247c33a94309858e" category="doc">開機恢復映像： AFF A70 、 AFF A90</block>
-  <block id="b565c8083612023ff18332e3f18570fb" category="doc">更換開機媒體： AFF A70 、 AFF A90</block>
-  <block id="3fd2ece46b2cae70b208d459839b7ea6" category="doc">更換機箱 - AFF A70 、 AFF A90</block>
-  <block id="47cc53453bdbc0a412f7d6260da64a94" category="doc">關閉控制器 - AFF A70 、 AFF A90</block>
   <block id="729f102b3131803a07803cd2f223d3c3" category="summary">您必須重新啟動控制器的儲存設備。</block>
-  <block id="5026bf36473d8bd98b2f832968a63c84" category="doc">可回收並退回控制器 - AFF A70 、 AFF A90</block>
   <block id="7b78a43d2ef1cd56888972224b322cba" category="section-title">步驟 1 ：驗證生命週期並檢查叢集健全狀況</block>
-  <block id="44e04fa20bc233bee93d06b7b58ece31" category="doc">關閉受損控制器 - AFF A70 、 AFF A90</block>
-  <block id="9a05f1c61c530c04ac5d33357330d517" category="doc">還原並驗證系統組態 - AFF A70 、 AFF A90</block>
-  <block id="71a75f66de0b5a1e6f82e2ce5d803726" category="doc">更換 DIMM - AFF A70 、 AFF A90</block>
-  <block id="dbdf350afb243fd4cd0befedfd1602f1" category="doc">更換 SSD 磁碟機 - AFF A70 、 AFF A90</block>
-  <block id="9e2c31d5c46d92fa7a0e1d87de2b8f61" category="doc">更換風扇模組 - AFF A70 、 AFF A90</block>
-  <block id="8764eb166fd4f85322158239bc87e88c" category="summary">維護 AFF A70 、 AFF A90 硬體</block>
-  <block id="c79fbe33ba055331bbb64ae5c44ca6e3" category="doc">維護 AFF A70 、 AFF A90 硬體</block>
   <block id="6f088e5455bf9d5415570fed055240bc" category="paragraph">對於 AFF A70 和 A90 儲存系統、您可以對下列元件執行維護程序。</block>
-  <block id="fd49219a793e799e8711a9d83ceab53e" category="doc">連接硬體 - AFF A70 、 AFF A90</block>
   <block id="1fba4a247f94ae0adebcaa57fd54e768" category="image-alt">纜線拉式彈片方向範例</block>
   <block id="261ca3ab85aacb02f4f06f9776818d57" category="paragraph">這些程序顯示一般組態。請記住、特定纜線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="d4f534f2d370cb0f29178f31331b3536" category="image-alt">連接至 100 Gb 乙太網路的纜線</block>
   <block id="06d20f31fccdd7b31221a7b1e1ed37d1" category="image-alt">10/25 GB 纜線</block>
   <block id="95b007a39e5ec5c4d9b8e17f2ec0424d" category="image-alt">RJ45 纜線</block>
-  <block id="fffbddfa6c26d83bdcb33f97eb7e513d" category="paragraph">這些程序說明如何將控制器連接至一個機櫃和兩個機櫃。您最多可以將控制器連接至四個機櫃。</block>
   <block id="9dcc8dc3a558729dc61c31c84e00c3e4" category="list-text">將控制器 A 連接埠 e11a 連接至 NSM A 連接埠 e0a 。</block>
   <block id="918349807746744597338bfd03ce241f" category="list-text">將控制器 A 連接埠 e11b 連接至連接埠 NSM B 連接埠 e0b 。</block>
   <block id="956aab6b8733f2140ed524c12e37f4bd" category="paragraph"><block ref="956aab6b8733f2140ed524c12e37f4bd" category="inline-image-macro-rx" type="image"></block></block>
@@ -9352,7 +9193,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6a5052a8c54e3e46dc1452dcb9c98eaa" category="list-text">將控制器 B 連接埠 e11b 連接至 NSM A 連接埠 e0b 。</block>
   <block id="a35e9f25f382abbe5abcfeab4b53167c" category="inline-image-macro">控制器 B e11a 和 e11b 至單一 NS224 機櫃</block>
   <block id="7f958fb1f7822d334698802022ec3956" category="paragraph"><block ref="7f958fb1f7822d334698802022ec3956" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ca923df64a292d4c64ae8ba3bd1fa16d" category="list-text">在控制器 A 上、使用纜線連接下列連線：</block>
   <block id="622567f759d81c4e71f74d57546ee33a" category="list-text">將連接埠 e11a 連接至機櫃 1 、 NSM A 連接埠 e0a 。</block>
   <block id="fa65b92c92e4c6583d514be0324b7aae" category="list-text">將連接埠 e11b 連接至機櫃 2 、 NSM B 連接埠 e0b 。</block>
   <block id="884b219f88a01bf8fe5bf55db135e450" category="list-text">將連接埠 e8a 連接至機櫃 2 、 NSM A 連接埠 e0a 。</block>
@@ -9363,37 +9203,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a032a8830d9e7689c545a9f5d436568b" category="list-text">將連接埠 e8a 連接至機櫃 2 、 NSM B 連接埠 e0a 。</block>
   <block id="a7ac225913423b42ae7801d894de31c8" category="list-text">將連接埠 e8b 連接至機櫃 1 、 NSM A 連接埠 e0b 。</block>
   <block id="bf1f9977d76210449a57d0b526df80f9" category="paragraph"><block ref="bf1f9977d76210449a57d0b526df80f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="04906a53d5026b5fceb0bb70b93770cf" category="doc">完整的儲存系統設定與組態： AFF A70 、 AFF A90</block>
-  <block id="c6a553b8b8155340301e1d96a324e013" category="doc">安裝硬體 - AFF A70 、 AFF A90</block>
-  <block id="88e6081ee98670cab8a3fe0dfaf9ba6d" category="list-text">將兩個纜線管理裝置連接至控制器背面。</block>
-  <block id="a55683ab467b68505d4d77b810a9a29c" category="summary">請遵循這些高階步驟來安裝和設定 AFF A70 或 A90 儲存系統、並將其部署為 ONTAP 系統中的節點。</block>
-  <block id="85b0f2fed3866ab2961a3f0674e32d0e" category="doc">安裝設定工作流程 - AFF A70 、 AFF A90</block>
-  <block id="bea6c678d4039f6fab5dc48633437381" category="paragraph">請依照下列工作流程步驟來安裝、設定及部署 AFF A70 、 AFF A90 儲存系統。</block>
-  <block id="e1bca12013dce14bfb0c72dc412b9321" category="doc">開啟儲存系統電源： AFF A70 、 AFF A90</block>
-  <block id="7b6f0d636b997b079dfb8b56de6e6f86" category="paragraph">連接網路和任何機架纜線之後、您就可以為控制器和任何其他機櫃供電了。</block>
-  <block id="81e99160d9d8d2511e0e1db54531167e" category="admonition">外部 NS224 機櫃為選用配備。</block>
-  <block id="8f176870ac6c4361a1f6d7201cca260f" category="paragraph">在 ONTAP 儲存系統中、每個 NS224 機櫃都以獨特的機櫃 ID 加以區分。此 ID 可確保儲存系統設定中的機櫃各有不同。根據預設、機櫃 ID 通常會指派為「 00 」和「 01 」、但您可能需要調整這些 ID 、以維持整個儲存系統的唯一性。</block>
-  <block id="4de17b4fab9ee69108776ab9c4aaa0c6" category="admonition">控制器機箱機櫃 ID 硬編碼為「 00 」。請勿將機櫃 ID '00' 用於任何連接至平台的 NS224 機櫃。</block>
-  <block id="8e6cf8027b121504bad8e5f00fe274bd" category="summary">準備安裝 AFF A70 、 AFF A90 平台。</block>
-  <block id="45fa7acb63053c31c5ae0a83dd4b3618" category="paragraph">準備好安裝平台。</block>
-  <block id="62ca0ae61a6f061f90175c671563df84" category="list-text">存取網頁瀏覽器以設定儲存系統</block>
-  <block id="bcaac0b69edbeb6d6ebf55df173a989d" category="paragraph">完全負載的 A70-90 平台可重達 151.68 磅（ 68.8 公斤）、需要四個人抬起或使用液壓舉升設備。</block>
   <block id="50c089c00eacadfe94238545067e1673" category="image-alt">AFF A90</block>
-  <block id="129270e102c6ee2c4b9e965303a8486f" category="list-text">適用於平台機箱的 4U</block>
   <block id="fa2548c5f212acd29e45e9296579f088" category="paragraph">如需安裝說明及相容性資訊、請參閱<block ref="512a1f6ca3554ab9c3f8be1627b41678" category="inline-link-rx"></block> <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4d3c32f3b37fe2830b654fcd25daa841" category="list-text">已安裝內建磁碟機的平台</block>
-  <block id="c466a56afb5075d2e82e969f860401ee" category="list-text">機櫃（選用）</block>
-  <block id="6e6faa41850da2cbf2fba1981d46dbf5" category="list-text">兩個纜線管理裝置</block>
-  <block id="a960b1448ee5bc8431d64797103ff6f9" category="paragraph">註冊您的平台即可享有支援效益。</block>
-  <block id="9ddae9a7519b413c3e002aaa6578c11b" category="paragraph">您可以在裝箱單、確認電子郵件或控制器上找到編號、然後再打開。</block>
   <block id="9693b6a52f0ee9092f8116f36e38a969" category="summary">若要更換 I/O 模組、您必須從模組拔下纜線、從模組中移除 SFP 和 QSFP 模組、移除模組、安裝替換模組、重新安裝 SFP 和 QSFP 模組、然後連接 I/O 模組纜線。</block>
-  <block id="2224bc58afd68539e0dea6bf9e50c3d6" category="doc">新增 I/O 模組： AFF A70 、 AFF A90</block>
-  <block id="924c37fc9153e68527b7be3c003bb435" category="doc">更換 I/O 模組 - AFF A70 、 AFF A90</block>
-  <block id="f99a621b951fd2b537d7a091c6b754fd" category="doc">更換 NV 電池 - AFF A70 、 AFF A90</block>
-  <block id="64adf1ea4c1f4c02f038823429bd4c66" category="doc">更換 NVRAM - AFF A70 、 AFF A90</block>
-  <block id="9020c560951313547d9b00a00f95d818" category="doc">更換電源供應器 - AFF A70 、 AFF A90</block>
-  <block id="866b7e69a0fb0f745608a59b2a02f1ca" category="doc">更換即時時鐘電池 - AFF A70 、 AFF A90</block>
-  <block id="a1bdc631ad485f9356bc93d7ccbb7e85" category="doc">更換系統管理模組 - AFF A70 、 AFF A90</block>
   <block id="f710bde9f928341df6ff92fee79cb81a" category="summary">每個要熱新增的 NS224 機櫃都要連接纜線、以便每個機櫃都有兩個連線至 HA 配對中的每個控制器。</block>
   <block id="567fab43047b0960ce69a80b4d3eeef2" category="doc">連接 AFF 系統的纜線架 - NS224 機櫃</block>
   <block id="62415c5f208498fa7a928f2f3d1ce337" category="example-title">連接至 AFF A1K 的纜線架</block>
@@ -9595,15 +9407,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9daabece8db7521a7882f63ebd76a891" category="image-alt">取下上方有釋放按鈕的磁碟機</block>
   <block id="e0bc24820711c466532ba2cb67ababd9" category="image-alt">卸下中間有釋放按鈕的磁碟機</block>
   <block id="5be3be4e3c78f5ba4233a70fab6255f9" category="paragraph">完成最終檢查並提供儲存設備、以在正常開機後完成開機媒體更換程序。</block>
-  <block id="0ae7701d2ef507a0fceb7c75d4891e75" category="list-text">控制器 A 上的纜線連接埠 e1a 至控制器 B 上的連接埠 e1A</block>
-  <block id="8bf237b60bd4b2db806d6610ad52ec49" category="list-text">控制器 A 上的纜線連接埠 e7a 至控制器 B 上的連接埠 e1A</block>
   <block id="38821947dff053760f4c97b648ca454a" category="admonition">請勿插入電源線。</block>
   <block id="b0dc4e3ef222885899ea12125b17e5eb" category="list-text">按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。</block>
-  <block id="1d0b4b2ae4d50e55a4247f5c6ede72f1" category="paragraph">將硬體安裝在空置的機櫃或電信機架中。如果您的機櫃已預先填入、請跳過此步驟。</block>
-  <block id="cd5e55734c933dafcff53ae3865a89d5" category="doc">準備安裝 - AFF A1K</block>
-  <block id="5a5cce6679503c381a637f466b048193" category="open-title">選項 1 ：現有 NetApp 客戶</block>
-  <block id="253e5915076081eaf8bcc8dd74c1d42e" category="admonition">如果未列出新的系統序號、請遵循適用於新 NetApp 客戶的指示。</block>
-  <block id="7e2ca0c1daf9aaf521d6b306d11f7c79" category="open-title">選項 2 ：新的 NetApp 客戶</block>
   <block id="a620e4025016adf1d0a58233ca0fabf5" category="image-alt">取出或更換 RTC 電池</block>
   <block id="49c0e8738689c7137641d0b6eed8b74c" category="image-alt">移動開機媒體</block>
   <block id="e9178489530d4c60949007e8abe6cd95" category="image-alt">移動 DIMM 動畫</block>
@@ -9646,7 +9451,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="abb9a3f7b40da322ff2c9d6b0f555396" category="image-alt">交換式叢集網路纜線</block>
   <block id="11e10f0140c4a2adc649196a587b4fb5" category="image-alt">將兩個機櫃連接至控制器</block>
   <block id="91ffcf18fe68ab362696af94371c45a6" category="image-alt">將三個機櫃連接至控制器</block>
-  <block id="46ef92fe9e0acb49a708c33291f9e608" category="doc">準備安裝 - AFF A70 、 AFF A90</block>
   <block id="5f1422fe4664becf0aa8b9ffe6bf86d6" category="paragraph">更換開機媒體之前、請務必檢閱下列需求。</block>
   <block id="76b9ce100a5ce0ab266bb83f1c474ac5" category="list-text">您必須將檔案複製<block ref="c70b112e1b022bd450e0790d8615c85a" prefix=" " category="inline-code"></block> 到 USB 快閃磁碟機、以便稍後在本程序中使用。</block>
   <block id="01df70585b251d67c7e85dbced3f0bae" category="paragraph">將儲存資源的擁有權移回更換控制器。</block>
@@ -9659,7 +9463,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a77e388862c17fbfa9503eb6e38c1ec3" category="paragraph">您必須檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。</block>
   <block id="fcf1f99c5510f69d07371f2deebe6070" category="doc">還原加密 - AFF A1K</block>
   <block id="6153407aa3467dec46b4d9467c1b1856" category="summary">瞭解更換開機媒體的需求。</block>
-  <block id="cc038387595615d54230bead39a5f9c2" category="doc">要求與考量事項： AFF A1K</block>
   <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">開機媒體更換工作流程 - AFF A1K</block>
   <block id="1d7e5e0e3df76ac9dc695510c92b0468" category="paragraph">請依照下列工作流程步驟來更換開機媒體。</block>
   <block id="725fba88551da9c92e0dc7b5ab34ba0c" category="inline-link-macro">開機媒體需求與考量</block>
@@ -9680,17 +9483,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="011c6a75a4dc386bdb35a883058e2297" category="doc">完整控制器更換 - AFF A1K</block>
   <block id="f3555ea3467ebe4fdfc22c15f93397e0" category="doc">控制器更換工作流程 - AFF A1K</block>
   <block id="4eccda983f51d658744291e7b5e3e733" category="paragraph">請依照下列工作流程步驟更換控制器模組。</block>
-  <block id="d768a9e13831df72a415dcdd45486ce6" category="inline-link-macro">控制器更換需求與考量</block>
-  <block id="42a7b941256031cfc400576fdc2d0885" category="paragraph">若要更換控制器模組、您必須符合特定需求。查看 <block ref="dd87dfb53f7dd70c25e1260ab79eff31" category="inline-link-macro-rx"></block>。</block>
-  <block id="ae3b72ec9d4bfefbb94ce5a07d383d84" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="980cfa80bc576e35f09c67c3be4eddc8" category="inline-link-macro-rx"></block></block>
   <block id="55c7ebf0deeac4f8204507eb9ab3cf38" category="inline-link-macro">更換控制器</block>
-  <block id="a0a9245f1a7e957d0b3062551118fe1b" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="1f759de80b41385676d2f1fe163eb0aa" category="inline-link-macro-rx"></block></block>
   <block id="033d50cc4a08211a432c03a9350b9a71" category="paragraph">更換控制器包括移除受損的控制器、將 FRU 元件移至更換的控制器模組、然後在機箱中安裝更換的控制器模組。</block>
   <block id="4d642a38ec660c3a650895de21d1fe3b" category="inline-link-macro">還原並驗證系統組態</block>
-  <block id="0710b8cf1cc5e9353db038dc5164ec82" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d7f15e9703914d919163ee72018c4347" category="inline-link-macro-rx"></block></block>
   <block id="1f2fe4b700b2b1be29968eb7ee0dfa6b" category="paragraph">驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
-  <block id="f3cee1c656f19c44e3775cb54693c03a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="0314c54fb87f2f2b01af763f24ebf5ef" category="inline-link-macro-rx"></block></block>
-  <block id="4e11a85a0220206b0bc560e74a5eb99f" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="94dc13e126f429eefb3c1f2ca69200fa" category="inline-link-macro-rx"></block></block>
   <block id="3f241611f37a3a938c6086f224665f2d" category="paragraph">驗證生命、檢查叢集健全狀況、並將故障零件退回 NetApp 。</block>
   <block id="cddf061490cf83caae5feee2aaeb87ab" category="summary">您必須使用從供應商處收到的替換現場可更換單元（ FRU ）元件來更換故障元件。</block>
   <block id="cc642e219166c76e6ac027cc2f450209" category="list-text"><block ref="cc642e219166c76e6ac027cc2f450209" category="inline-link-macro-rx"></block></block>
@@ -9714,28 +9510,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e6b4d284961b2daa06d56302ba361b67" category="inline-link-macro">系統管理模組</block>
   <block id="e5f38539729ed58a561f506662e81abe" category="paragraph"><block ref="e5f38539729ed58a561f506662e81abe" category="inline-link-macro-rx"></block></block>
   <block id="d7158a40e6d62c91f568a937bb75f8ad" category="paragraph">系統管理模組提供控制器與主控台或筆記型電腦之間的介面、以供控制器或系統維護之用。系統管理模組包含開機媒體、並儲存系統序號（ SSN ）。</block>
-  <block id="22e57cb512e3ee6dd44ad84e9c0eba6d" category="doc">還原加密： AFF A70 、 AFF A90</block>
-  <block id="806833b8e020115ba120e0259b5b6dde" category="doc">要求與考量事項： AFF A70 、 AFF A90</block>
-  <block id="3a090f45cd3eaaf1125470fb47b78d45" category="doc">開機媒體更換工作流程： AFF A70 、 AFF A90</block>
-  <block id="1a80a229053bc2701262e358084c838b" category="paragraph">若要更換開機媒體、您的必須符合特定需求。查看 <block ref="be62bd79c2fbb00cbbdbbb71ced5d802" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9b1c5db9a25fd2334e8aba09a914138" category="doc">完整機箱更換： AFF A70 、 AFF A90</block>
   <block id="e2fecd58050f321afb4d9cc739d4187c" category="summary">您可以使用與受損機箱相同型號的新機箱來更換受損機箱。</block>
-  <block id="ed235526c9cfaa44fbc032db9854b1e9" category="doc">機箱更換工作流程： AFF A70 、 AFF A90</block>
   <block id="64e923d27d8f20b1c39e996784b889e8" category="paragraph">請依照下列工作流程步驟更換機箱。</block>
-  <block id="ad5348d83b53533243eebb2be9ef1707" category="inline-link-macro">機箱更換需求與考量</block>
-  <block id="d00e4984e8012d79f3629015b50175c5" category="paragraph">若要更換機箱、您必須符合特定需求。查看 <block ref="85b79c35aab56873c02d629d1d3908c3" category="inline-link-macro-rx"></block>。</block>
   <block id="d26fcd936ac92db8cf84389a3ab7bf47" category="inline-link-macro">更換機箱</block>
-  <block id="d59de865276916bdd9f97d9473947ee3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
   <block id="2c248a1a1b5e42590f3b77ae3ede043f" category="paragraph">更換機箱包括將電源供應器、硬碟機和控制器模組從損壞的機箱移至新機箱、並將損壞的機箱換成與損壞的機箱相同機型的新機箱。</block>
-  <block id="76f5f34488e514a65bf0c31e970e4fe7" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
   <block id="7f54aa0b6fdadc77a6c35a589cdb35b3" category="paragraph">驗證機箱的 HA 狀態、並將故障零件退回 NetApp 。</block>
-  <block id="59ae240445027bbf9dc6c3c5d9bceb5c" category="doc">更換控制器模組 - AFF A70 、 AFF A90</block>
-  <block id="b935c7ad64878b8339ab0991016d016b" category="doc">完整更換控制器： AFF A70 、 AFF A90</block>
-  <block id="458af0f5eb6cb4db8860e3274353ecac" category="doc">控制器更換工作流程： AFF A70 、 AFF A90</block>
   <block id="58d356c259fddd513288088c96915d44" category="inline-link-macro">可重新分配控制器</block>
-  <block id="d0f2dbd12d4daa019c3a6a9b40b092ac" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="e14fc53a2fbc5d3f87f2c572a1629eed" category="inline-link-macro-rx"></block></block>
   <block id="9a4829e743998d9894153667670dfd29" category="paragraph">重新分配控制器、並將儲存資源的擁有權移交給更換的控制器。</block>
-  <block id="b1e4b88723d63ea7009965cda7a3722c" category="doc">新增與更換 I/O 模組總覽 - AFF A70 、 AFF A90</block>
   <block id="137aeb15d685b764448324fcbbc40af6" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 AFF A70 和 AFF A90 系統元件的特定程序。</block>
   <block id="75775d88e26bd0ec1b5827bced4fb9dd" category="paragraph">本節中的程序假設 AFF A70 和 AFF A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="dc5fb977cb8c88d079092e9c6ec6160e" category="paragraph"><block ref="dc5fb977cb8c88d079092e9c6ec6160e" category="inline-link-macro-rx"></block></block>
@@ -9776,9 +9557,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2355c0de89c03f36fe4d254465752ee9" category="paragraph">請使用下列連結 <block ref="082e4336681466ac35683d076de2007e" category="inline-link-macro-rx"></block>：。</block>
   <block id="bfe3957a11dab27de6793691acba1b94" category="paragraph">*100 GbE QSFP28 銅線 *</block>
   <block id="59850ec6ce706547c89ff81eb99141db" category="image-alt">100 GbE QSFP28 銅線</block>
-  <block id="98d708b05a190cb186f067bf90619d96" category="doc">關機功能受損的控制器 - AFF A70 、 AFF A90</block>
   <block id="c69300475b70372bd3ae9414f284bd95" category="inline-link-macro">關閉控制器</block>
-  <block id="d184fea7e7fa9090950a80f61d31a011" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
   <block id="2c72cc19c0bd942b8dafe7de49659cc1" category="paragraph">關閉控制器、以便在機箱上執行維護。</block>
   <block id="df0a5e7efca0ed693d07e3026e615c4a" category="paragraph">對於 AFF A70 和 AFF A90 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="3a18b3bb3b5d96ad964da98cfdd729b8" category="paragraph"><block ref="3a18b3bb3b5d96ad964da98cfdd729b8" category="inline-link-macro-rx"></block></block>
@@ -9786,7 +9565,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9b7a185b60a0431ee8b8715c107b112e" category="paragraph">如果您需要在安裝主要開機媒體且正常運作的情況下更換次要開機媒體、請聯絡 NetApp 支援中心、並提及<block ref="1f934b5b84ae8c28d2ccbd8c83b2dd26" category="inline-link-rx"></block> 知識庫文章。</block>
   <block id="0861a4c5524aee3e491db29774dd89a8" category="sidebar">關閉控制器</block>
   <block id="cada3ae8b9b850f4721595b91f8ab383" category="doc">步驟 1 ：可重新恢復控制器</block>
-  <block id="8727c9934e62950f5ec3ad8fac1885d6" category="list-text">使用<block ref="21429355d1404c86c4038169e7df91bc" category="inline-link-rx"></block> 記錄設定叢集時所需的值。如果提供預設值、您可以使用該值或輸入自己的值。</block>
   <block id="f4c083c41633c63a72a1bbce7db1c159" category="sidebar">給回控制器</block>
   <block id="26916af0dde7f17e1c0020bc61152522" category="sidebar">可重新分配控制器</block>
   <block id="a39e0fbfb2db42a80ba7546850d8b5c6" category="paragraph"><block ref="a39e0fbfb2db42a80ba7546850d8b5c6" category="inline-link-rx"></block></block>
@@ -9881,7 +9659,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="32054c5ad8312edd8060078021c40e5a" category="list-text">如果命令輸出中顯示 &lt;lno-DARE&gt; 或 &lt;1Ono － DARe ，則系統不支持 NVE ，請繼續執行<block ref="28ec6f22ff725a2b75e5efb9fe4ec8ad" category="inline-link-macro-rx"></block>。</block>
   <block id="f5fc26027a17bd6c3d672fadcfbcbd0a" category="list-text">如果命令輸出中未顯示 &lt;lno-DARE&gt; 、且系統執行的是 ONTAP 9 6 或更新版本、請繼續下一節<block ref="2a46afadceb505b77f1bd61e2cc13b61" category="inline-link-macro-rx"></block>。</block>
   <block id="b9c98500ab9d006e0d9fd3d1c95f7904" category="paragraph">如需更多纜線資訊<block ref="b8ff88c1a2e9444f28ec1504689e0040" category="inline-link-macro-rx"></block>、請參閱。</block>
-  <block id="ade8035150bd89ce6852db30459ac3ea" category="image-alt">AFF A90 AFF A70 重量注意圖示</block>
   <block id="ef83cb60cd5ea6118e6d106efa30f927" category="image-alt">舉升重量注意事項</block>
   <block id="f3badb2cde47b97db55936f633e8bbf1" category="image-alt">雙節點無交換器叢集複合纜線</block>
   <block id="34af8f9ffd0b4b6280598852b3af1562" category="inline-image-macro">交換式叢集複合纜線</block>
@@ -9957,24 +9734,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="34b0592b90649145df285163256979f1" category="paragraph"><block ref="34b0592b90649145df285163256979f1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="68de0f1c0c0a3216e6ba51295424d756" category="paragraph"><block ref="68de0f1c0c0a3216e6ba51295424d756" category="inline-image-macro-rx" type="image"></block></block>
   <block id="edbe18d1d431ff5c580c40f87966b4f5" category="paragraph"><block ref="edbe18d1d431ff5c580c40f87966b4f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fd9b917400ef9502d61c9c928592feeb" category="inline-image-macro">變更 NS224 機櫃 ID 、寬度 = 300px</block>
-  <block id="070a4dff1a7b1b64d034265c6caef2d0" category="paragraph"><block ref="070a4dff1a7b1b64d034265c6caef2d0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cc0c582fd7777e5d2bea79674136ad70" category="inline-image-macro">編號 1 、寬度 = 20</block>
-  <block id="aa032eab3a17bfa0062c6f09557e3323" category="paragraph"><block ref="aa032eab3a17bfa0062c6f09557e3323" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="216b2e6b0553773aac5eef243619cbc7" category="inline-image-macro">[ 編號 2 、寬度 = 20</block>
-  <block id="11236c01ac6ea594214da845dddb9b2a" category="paragraph"><block ref="11236c01ac6ea594214da845dddb9b2a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="644b161ed3089cd2770465be8f055f89" category="inline-image-macro">[ 編號 3 、寬度 = 20</block>
-  <block id="a44f7cc336be8913f0d82f435c921f31" category="paragraph"><block ref="a44f7cc336be8913f0d82f435c921f31" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1de6e00aac59480183f5a40884ee2a6e" category="inline-image-macro">[ 編號 4 、寬度 = 20</block>
-  <block id="3eaebe9b3c4bed3b1b0cecc2dd98b9e4" category="paragraph"><block ref="3eaebe9b3c4bed3b1b0cecc2dd98b9e4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7e4f2a8a442405d313b86bd561273488" category="paragraph"><block ref="7e4f2a8a442405d313b86bd561273488" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c0f134964723266dab47501a2329291f" category="paragraph"><block ref="c0f134964723266dab47501a2329291f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1d33fba9af53b5439ecf23b3382edf2c" category="inline-image-macro">編號 2 、寬度 = 20</block>
-  <block id="d810130c7c55101931e08470c7bb07fe" category="paragraph"><block ref="d810130c7c55101931e08470c7bb07fe" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1db6a9786fedd43f93f01eba0c2b74bb" category="inline-image-macro">編號 3 、寬度 = 20</block>
-  <block id="17af8c353ce2a37b41b7566738989371" category="paragraph"><block ref="17af8c353ce2a37b41b7566738989371" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="186aa7defdbbe050cd1a4a7400246e3a" category="inline-image-macro">編號 4 、寬度 = 20</block>
-  <block id="c4c5b40e6b1e96c10d75a836204a368d" category="paragraph"><block ref="c4c5b40e6b1e96c10d75a836204a368d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f0e7f42636386fbffaf36b54fbacbf2" category="paragraph"><block ref="6f0e7f42636386fbffaf36b54fbacbf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="babff6765c503db416f9aad69aec82a2" category="inline-image-macro">寬度 =85px</block>
   <block id="dc1d3c7f8b5174880f91aa6524f186eb" category="paragraph"><block ref="dc1d3c7f8b5174880f91aa6524f186eb" category="inline-image-macro-rx" type="image"></block></block>
@@ -10017,4 +9776,725 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0ab01e08199504186fb2242508c77af5" category="paragraph">將硬碟機和控制器模組從功能受損的機箱移至新機箱、然後將功能受損的機箱換成與功能受損機箱相同型號的新機箱。</block>
   <block id="32c1650c7fd910bcdea68420f25c9c98" category="summary">將硬碟機、控制器模組或模組從損壞的機箱移至新機箱、然後將損壞的機箱從設備機架或系統機櫃中換出與損壞的機箱型號相同的新機箱。</block>
   <block id="f5fb85d160e4ca0263ef1d466e1904de" category="image-alt">起重把手和纜線管理裝置</block>
+  <block id="a51606326fdc4dd84336979274179876" category="inline-link">零件退貨與更換</block>
+  <block id="5f7d656732f3f6002e129feef4d6cf85" category="paragraph">如套件隨附的RMA指示所述、將故障零件退回NetApp。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
+  <block id="d17bb023ab45bd18aad4108bff14bf1e" category="list-text">如套件隨附的RMA指示所述、將故障零件退回NetApp。如<block ref="672892c7f98df9ad95d0024f72bc4b95" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
+  <block id="66a35db4b6d963b540c6a3d31a9d39e6" category="paragraph">關閉或接管受損的控制器模組。</block>
+  <block id="011b6189f470beb455ff657e2d7f7a63" category="list-text">將 CAM 栓鎖儘量遠離模組。</block>
+  <block id="7f6199cbd3ee90e0a5a981dd4bcdb2b3" category="doc">檢查 NVE 或 NSE</block>
+  <block id="5ad3ca057c7fdbeb9a29c3682785baa3" category="cell">如果您的系統正在執行...</block>
+  <block id="2e8e8fd780cc78a14b825cad663b2611" category="paragraph">ONTAP 9 。 16.0 或更早版本</block>
+  <block id="607ae42cd8348594bc8bfa6a3c380eba" category="paragraph">* 注意： * 如果您看到成功還原以外的任何訊息、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="d9cbafff040793241dffd17bc8129532" category="paragraph">* 注意： * 如果程序失敗、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="fe96aa95930d10c2f5829bc437157a9c" category="paragraph">ONTAP 9.16.1 或更新版本</block>
+  <block id="58ebc1c44c2a1ad587a1ef97b4e67ea8" category="list-text">在功能受損的控制器上、當系統提示您還原備份組態時、請按 _y_ 。</block>
+  <block id="5f711b3cd97054c3fbee1821e742da6d" category="paragraph">還原程序成功後、此訊息會顯示在主控台 - 上<block ref="92080c75f9b065e263d7fea155b1d733" prefix=" " category="inline-code"></block>。</block>
+  <block id="bc8c74ae602ccbbf0e37d69985aa90bd" category="list-text">在功能受損的控制器上、當系統提示您確認還原備份是否成功時、請按 _y_ 。</block>
+  <block id="4dd4245a91d32c3932d3b5d936cc489f" category="list-text">在功能受損的控制器上、當系統提示您使用還原的組態時、請按 _y_ 。</block>
+  <block id="e10980055432f699a4007ff594abd273" category="list-text">在功能受損的控制器上、當系統提示您重新啟動節點時、請按 _y_ 。</block>
+  <block id="53f59a608ecfcdc90a1a8b37f4c8f010" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、在系統管理模組中安裝替換開機媒體。</block>
+  <block id="54d6f7773c4a60500d049c396202a23d" category="list-text">按下 System Management CAM 按鈕。</block>
+  <block id="dd684f2098cba6838a05d1dbbeac275c" category="paragraph">您安裝的替換開機媒體沒有 ONTAP 映像、您可以將 ONTAP 映像從下載適當的 ONTAP 服務映像<block ref="0ecdd602ef5a1e7a11a81dad2433ccb0" category="inline-link-rx"></block>到 USB 快閃磁碟機、然後再傳送到替換的開機媒體、以將其傳輸到替換的開機媒體。</block>
+  <block id="e3f95753aace3276fa0375074c45c988" category="list-text">故障控制器上不得有故障的叢集連接埠。</block>
+  <block id="9a55c0fdded61a1e549c1b9afbfc5023" category="list-text"><block ref="32b858596eeb9351eca27c2906a21da4" prefix="" category="inline-code"></block>（ ASA 系統不支援）</block>
+  <block id="e5a09c0b7636f1938d8e318e67adbd26" category="section-title">步驟 5 ：確認控制器狀態</block>
+  <block id="3e5231d64ad1c22e8ef3d91da19d815b" category="paragraph">當您啟動控制器時、必須確認連接到磁碟集區的控制器狀態。</block>
+  <block id="7f5f5398e620a9f9ae998736b2d4d230" category="list-text">等到更換模組的控制器主控台顯示等待恢復 ... 訊息、然後從健全的控制器驗證系統狀態： _ 儲存設備容錯移轉顯示 _</block>
+  <block id="c1b6a9a30a6ce8d79305050622234851" category="paragraph">在命令輸出中、您應該會看到一則訊息、指出控制器的狀態。</block>
+  <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">控制器會重新連接其儲存資源池、並完成開機。</block>
+  <block id="c23f2b6754e0bfe310956814b83c20c2" category="list-text">驗證磁碟集區的磁碟是否如預期：<block ref="a9fae81f0c924f3a581cf23a9c8b11b1" prefix=" " category="inline-code"></block></block>
+  <block id="13a20619b6dc3827356a336b68087987" category="doc">檢查系統上的 NVE 或 NSE</block>
+  <block id="56bce10b49b12be932b0ca38009e1da1" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、然後在系統管理模組中安裝替換開機媒體。</block>
+  <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRw a800磁碟機就位在IOPS 960上</block>
+  <block id="322279d0aaf25c776901bdae1ee30ea2" category="list-text"><block ref="f46f944e351f8b92e40c3308318738a3" prefix="" category="inline-code"></block>（ ASA 不支援）</block>
+  <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">按下系統管理 CAM 按鈕。</block>
+  <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">轉動 CAM 栓鎖、使其儘可能遠離模組。</block>
+  <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">關閉或接管受損的控制器。- 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、使狀況良好的控制器能繼續提供受損控制器儲存設備的資料。</block>
+  <block id="5050dae1093a80a257a1d121ca5f3b0f" category="section-title">步驟 4 ：驗證控制器狀態</block>
+  <block id="e8acdbf790ee266b0ff015c4f2b34c61" category="paragraph">您可以使用<block ref="4d9c822f717329c7000654e8bae09ae4" prefix=" " category="inline-code"></block>搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。</block>
+  <block id="9e1d0b74b993eba7eafb9168cc7662b3" category="paragraph">當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：</block>
+  <block id="0c140b30356afe2d47d779db9a6bac26" category="paragraph">如果您看到此訊息、則必須還原 ONTAP 映像。</block>
+  <block id="dbc253985631ee33fc6976832d319aa9" category="list-text">在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。</block>
+  <block id="9071774e0d4e739ca2fe57b55c805c89" category="paragraph">畫面會顯示訊息<block ref="a42d5407fe60b5716cd9fdd4d4063f27" prefix=" " category="inline-code"></block>、並開始初始檢查及安裝開機恢復檔案。</block>
+  <block id="c3fcf34a186ddf28b42002ccdea5bb89" category="list-text">如果已設定外部金鑰管理程式（ EKM ）、您將會看到下列顯示：</block>
+  <block id="e41b0fa291ba7a2f8d02db37d829dfe6" category="list-text">如果已設定金鑰管理員、請輸入 _y_ 。</block>
+  <block id="8652886cdac2e198b58233db3fe44eb6" category="paragraph">Bootmenu Option 11 會提示使用者輸入所有的 EKM 組態資訊、以便重新建立組態檔案。</block>
+  <block id="3fd9d3baae5e410a98ba4eb52a03ab26" category="list-text">在每個提示時輸入 EKM 配置。</block>
+  <block id="4cbdd1cac9566795166b3d9206cbcf86" category="paragraph">* 附註： * 大部分資訊是在最初啟用 EKM 時輸入。您應該輸入與初始 EKM 組態期間相同的資訊。</block>
+  <block id="b5a73f8c93bdb89882d1ca9e462b0e2a" category="list-text">檢查<block ref="1cc9af734f039af6fc9db1cd2f09ad05" prefix=" " category="inline-code"></block>和<block ref="878efc5de6def52e25be6f622fb5a7ee" prefix=" " category="inline-code"></block>是否正確。</block>
+  <block id="5fb974d016811ca21ebd195d4c257e8e" category="list-text">在合作夥伴節點上、使用<block ref="73bad5beeda4a2a6bd01d97def1d4e67" prefix=" " category="inline-code"></block>命令擷取叢集 UUID 。</block>
+  <block id="923bf1a61097d8e90a02dbe1a7df32ad" category="list-text">在合作夥伴節點上、使用<block ref="2f710df81fb8b58c1792ebb010c82902" prefix=" " category="inline-code"></block><block ref="f2892b1a90652446a2c8a2dce1d42eee" prefix=" " category="inline-code"></block>命令和命令擷取 Keystore UUID 。</block>
+  <block id="6d194eccb9cd88bfbcde1df65103cbb4" category="list-text">出現提示時、請輸入 Keystore UUID 和叢集 UUID 的值。</block>
+  <block id="dc96ebaefbca0b39bdff8d2d09a5fc61" category="paragraph">* 注意： * 如果合作夥伴節點無法使用、則可從設定金鑰伺服器上的 Mroot-AK 金鑰取得 Keystore UUID 和叢集 UUID 。</block>
+  <block id="a1af56a72048fea6d9e9cfde4d42ba60" category="paragraph">驗證<block ref="b8bbecc4d00a5d5b7dc368313818ee3e" prefix=" " category="inline-code"></block>叢集 UUID 和<block ref="8a298935cfa9f81db49083081a35f190" prefix=" " category="inline-code"></block> Keystore UUID 屬性的、以確保您擁有正確的金鑰。</block>
+  <block id="590f459917bbe31595105daebcf768c1" category="list-text">監控將 Mroot-AK 擷取及還原至 ONTAP 節點。</block>
+  <block id="89300ff102ca2ae1f98390b5c9e15301" category="list-text">如果程序無法還原金鑰、您會看到下列訊息、需要從功能表系統 Shell 設定 e0M ：</block>
+  <block id="6cc7c87f6feab358abdd7e5d3a02d56a" category="list-text"><block ref="4d9c822f717329c7000654e8bae09ae4" prefix=" " category="inline-code"></block>在恢復節點上運行命令。</block>
+  <block id="c2ba694984018511e5fcb2227ede89a7" category="list-text">當系統提示您執行（ y 或 n ） EKM 選項時、請為所有選項選取 _n_ 。</block>
+  <block id="e270b10aff38431298d0f26d98b59928" category="paragraph">為 8 個提示選取 _n_ 選項後、系統將會在開機功能表停止。</block>
+  <block id="008a857939aa018d50da198fbe054fc6" category="list-text">從其他叢集節點收集 /ccfcard/kmip/servers.cfg 檔案資訊。您將收集下列資訊：</block>
+  <block id="72722c702d15bfb2fc8ae00fb7ba789c" category="list-text">Keystore UUID 。</block>
+  <block id="b116d908108592e18c15ab8b11021aa3" category="list-text">從 /ccfcard/kmip/certs/client.crt 檔案複本用戶端憑證。</block>
+  <block id="1c3672fe84635589ee6c4a3e23e103ee" category="list-text">從 /ccfcard/kmip/certs/client.key 檔案複本用戶端金鑰。</block>
+  <block id="38738990aba5afc22196bbc862eb761f" category="list-text">從 /ccfcard/kmip/certs/ca.pem 檔案複本 KMIP 伺服器 CA 。</block>
+  <block id="e2874eeec152eb2179db88a81efc4de9" category="list-text">在提示字元輸入 _systemshell_ 、從開機功能表進入 systemshell 。</block>
+  <block id="b2248e7da0926dbcdb8b9df477d2b087" category="list-text">從系統殼層功能表設定網路、用於 e0M 、網路遮罩和閘道。</block>
+  <block id="f3d49466f3a6a7af00b2e999892ac7bc" category="list-text">使用 _exit_ 命令從功能表系統 Shell 結束。</block>
+  <block id="19dca7dc65f43fc760cd93421c38f7e1" category="list-text">您會看到開機功能表。選取選項<block ref="6512bd43d9caa6e02c990b0a82652dca" prefix=" " category="inline-code"></block>以繼續 EKM 還原。</block>
+  <block id="de426d6c771ceeb06e9a9b20e9f71651" category="list-text">回答<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>下列問題、並在出現提示時輸入您先前收集的必要資訊：</block>
+  <block id="b19458ff12859c393f2fd46d02cb24d4" category="list-text">您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝</block>
+  <block id="05ac7348459861360c86dc5851e1ab0b" category="list-text">您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝</block>
+  <block id="0daafd01a5c78aa4cf52e57febc9c7d9" category="list-text">您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝</block>
+  <block id="05f6b998dcdacf2a7e5882ef776dfa8e" category="list-text">您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝</block>
+  <block id="d887305d2b2206bc86e35b35a47e130f" category="list-text">如果金鑰已正確還原、則恢復程序會繼續並重新啟動節點。</block>
+  <block id="e1b8c672b53ced266041810009ef0acb" category="paragraph">您可以在<block ref="4d9c822f717329c7000654e8bae09ae4" prefix=" " category="inline-code"></block>執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台上使用命令、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。</block>
+  <block id="65efffc08222998f24c68d8ee17af399" category="paragraph">如果您看到此訊息、則必須還原 ONTAP 映像</block>
+  <block id="e4b7511a00ba0effd6c938bde56c85b1" category="paragraph">畫面會顯示訊息<block ref="a42d5407fe60b5716cd9fdd4d4063f27" prefix=" " category="inline-code"></block>並開始初始檢查。</block>
+  <block id="d1de7a2b347063926ee7045aa2c0d40f" category="list-text">在 Loader 設定本機叢集連接埠並透過執行 netboot 時<block ref="41e7db54f2498671a212595a5bc3f9c4" prefix=" " category="inline-code"></block>、監控程序。</block>
+  <block id="7d7167e676e301c377a23cf821f58e87" category="paragraph">網路開機執行後、<block ref="78a0f5e144f919e879f7037c4f29865c" prefix=" " category="inline-code"></block>畫面上會顯示、程序會完成安裝程序。</block>
+  <block id="e9bdba49a952b52d8fc36e6ae32295bf" category="list-text">如果未設定金鑰管理程式、您會看到下列訊息：</block>
+  <block id="233309cf2a420789e8fcc1627010277c" category="list-text">如果您看到下列訊息、表示已設定 Onboard Key Manager （ OKM ）：</block>
+  <block id="0062654a58ca10b6a4b1ffce37755e67" category="paragraph">請移至以完成還原程序。</block>
+  <block id="e6424e7ff2e258bc2ce037ee38b77931" category="list-text">如果您看到下列訊息、表示已設定外部金鑰管理員（ EKM ）。前往 EKM 主題並完成恢復程序：</block>
+  <block id="b5b024aba6aeeef11aba1df77e7bc935" category="list-text">監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。</block>
+  <block id="1fd38840c77d72c3a907f5a961467b12" category="list-text">當您看到下列內容時、節點會重新開機並完成 BMR ：</block>
+  <block id="76e65f6de5f0ef338defad156e9302d6" category="list-text">如果已設定 Onboard Key Manager （ OKM ）、您將會看到下列畫面：</block>
+  <block id="16881782fee9167d362ad031a7bd4efa" category="list-text">在提示字元中輸入 _y_ 。</block>
+  <block id="efdeb95716fc588d0e0896e9945962d6" category="list-text">當您看到時、請輸入內建金鑰管理程式的密碼<block ref="2b673e138bf62e9f201d2fe3f4e48e85" prefix=" " category="inline-code"></block></block>
+  <block id="d1da2db4d465ceb969bae13f9a2c1665" category="list-text">當系統提示您確認密碼時、請再次輸入機載金鑰管理員的密碼短語。</block>
+  <block id="d6b5f802b07df1179c13649ed53524f0" category="paragraph">恢復程序完成時、您將看到下列內容：</block>
+  <block id="c6980bbd79483c6809cc84795b7d14d6" category="paragraph">還原完成後、節點會重新啟動以完成程序。</block>
+  <block id="c7c363d50712f34059376cdfe0ce8652" category="doc">步驟 1 ：還原內建金鑰管理程式</block>
+  <block id="0afa9147e7fde537954ecea742d84625" category="list-text">從 ONATP 開機功能表中選取下列其中一個選項、以還原內建金鑰管理程式組態。</block>
+  <block id="1f816c392c5ee466677e2fd2587ce8a1" category="section-title">步驟 2 ：完成開機媒體更換</block>
+  <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">步驟 1 ：將儲存控制器連接到您的網路</block>
+  <block id="c0b05ac617b77a5c10f26756e6ef04f2" category="list-text">如果連接至光纖交換器、請先將小型可插拔（ SFP ）收發器插入控制器連接埠、再將纜線連接至連接埠。</block>
+  <block id="1463138ead0bd5def70e2d744eddfc0a" category="paragraph">將控制器直接彼此連接、並連接到主機網路。</block>
+  <block id="73672e433c39ed0cc0cdb0334e672525" category="paragraph">如需將儲存系統連接至主機網路交換器的相關資訊、請聯絡您的網路管理員。</block>
+  <block id="a5e51e5f50ca83720f1d0d8b17c1e93b" category="paragraph">這些程序顯示一般組態。具體的佈線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="8c8e768c4d86293c1b8fd551cc2a1a4e" category="open-title">ASA A1K 儲存系統</block>
+  <block id="10ddcbe568df11daf470f9b11ab92b62" category="paragraph">將儲存控制器彼此連接以建立 ONTAP 叢集連線、然後將每個控制器上的乙太網路連接埠連接至主機網路。</block>
+  <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">使用叢集 /HA 互連纜線將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。</block>
+  <block id="491359bee867965cfa22411b77d88b8d" category="list-text">將控制器 A 上的連接埠 e1a 連接到控制器 B 上的連接埠 e1A</block>
+  <block id="1a33712b794a97041f7338604473e7a3" category="list-text">將控制器 A 上的連接埠 e7a 連接至控制器 B 上的連接埠 e1A</block>
+  <block id="8637ca13eb3c1a10bb4383130268c950" category="list-text">將乙太網路模組連接埠連接到主機網路。</block>
+  <block id="a6992cc3b8eb7adfbce0724b4ed8e4a4" category="list-text">如圖所示、將連接埠 e9a 和 e9b 連接至乙太網路資料網路交換器。</block>
+  <block id="1cddeaef0a0b08b7178f9023a157d0fc" category="list-text">連接 10/25 GbE 主機網路交換器。</block>
+  <block id="9d62d1718b5465944796c5fb854d0f5d" category="list-text">使用 1000BASE-T RJ-45 纜線將控制器管理（扳手）連接埠連接至管理網路交換器。</block>
+  <block id="c70a96a223c88c75dde3d248fd91e2b1" category="open-title">ASA A70 和 ASA A90 儲存系統</block>
+  <block id="bd078f69cc3533ea9bc3100deef482d0" category="list-text">使用叢集 /HA 互連纜線、將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。</block>
+  <block id="b4e1b9768de4fea1a231630708e9f914" category="section-title">步驟 2 ：將儲存控制器連接至儲存櫃</block>
+  <block id="581d5dbeb2b657af56ca70f32099c9d4" category="paragraph">以下佈線程序說明如何將控制器連接至一個機櫃和兩個機櫃。您最多可以直接將四個機櫃連線至控制器。</block>
+  <block id="44101c78d328291236c1e6a8035b52d1" category="open-title">A1K系統ASA</block>
+  <block id="b3623f40c8ee8913ca5a6a7756d97ce9" category="paragraph">請選擇符合您設定的下列其中一個纜線選項。</block>
+  <block id="200ab92b71653aeb6904db07dcb0a81b" category="example-title">選項 1 ：將控制器連接至一個 NS224 儲存櫃</block>
+  <block id="46d73bd828c75397e5f3cca81c4236e1" category="paragraph">將每個控制器連接至 NS224 機櫃上的 NSM 模組。圖形顯示每個控制器的纜線：控制器 A 纜線以藍色顯示、控制器 B 纜線則以黃色顯示。</block>
+  <block id="cdc609c675d24b2fff8b5acc2e37e89e" category="list-text">在控制器 A 上、連接下列連接埠：</block>
+  <block id="ab7ef1e990b02e4f310f950e86665f24" category="list-text">在控制器 B 上、連接下列連接埠：</block>
+  <block id="150e5856fceb6b2cacbe569c1921d330" category="example-title">選項 2 ：將控制器連接至兩個 NS224 儲存櫃</block>
+  <block id="348bd528033e13e79fcfb366a5cd5af4" category="paragraph">將每個控制器連接至兩個 NS224 機櫃上的 NSM 模組。圖形顯示每個控制器的纜線：控制器 A 纜線以藍色顯示、控制器 B 纜線則以黃色顯示。</block>
+  <block id="40e080201f076f6a17456e5af8be4fa3" category="open-title">ASA A70 和 A90 系統</block>
+  <block id="d2304a06aa5c8ddc89113b1713a1c67e" category="example-title">選項 1 ：將控制器連接至一個 NS224 儲存櫃</block>
+  <block id="d4e2126c6118383149b1e943e8bba458" category="example-title">選項 2 ：將控制器連接至兩個 NS224 儲存櫃</block>
+  <block id="e934f6c11392ce362b9b522d3905e905" category="list-text">在控制器 A 上、連接下列連接埠：</block>
+  <block id="b54dd6af6e848badd84700a68025355a" category="paragraph">開啟儲存系統之後、您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
+  <block id="9567b57fbc256ab6a2a904d9e65e90fc" category="paragraph">使用<block ref="2b7eb894c1625ebcb138cf06e4e24423" category="inline-link-rx"></block> 記錄叢集設定程序期間所需的值。如果提供預設值、您可以使用該值、或輸入自己的值。</block>
+  <block id="2b613a5cfe94ed4e246fd0b8d8e788d7" category="inline-link-macro">開啟儲存系統電源</block>
+  <block id="62b1b8fecbe53d21e29b3193b917d52b" category="paragraph">請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。如需相關指示、請參閱 <block ref="7c573676638f479dced3a24193374cdc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c0cca90a0ea793a9983b3bf5d8f21117" category="paragraph">NetApp 建議您使用系統管理員來設定新叢集。如需設定說明、請參閱<block ref="21993ef26df9bd69488ae5f93ea51b95" category="inline-link-rx"></block> 。</block>
+  <block id="eb060a6205d76a5e75ea0815f4f83b5a" category="paragraph">叢集初始化之後、請下載並執行 <block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block> 以確認您的設定。</block>
+  <block id="25e29897c37b7e5f9f9f0d8aac2e8c21" category="list-text">請務必備有軌道套件隨附的說明。</block>
+  <block id="6a82938033e352436834589b4000acd1" category="list-text">請注意與儲存系統和儲存櫃重量相關的安全考量。</block>
+  <block id="cd5270ea2c99376e2e028058d02bfa65" category="list-text">瞭解透過儲存系統的氣流從安裝擋板或端蓋的前端進入、並排出連接埠所在的後端。</block>
+  <block id="a23c8df519f5dec5dcc76f5989d937c4" category="list-text">根據需要、依照套件隨附的說明、安裝儲存系統和儲存櫃的軌道套件。</block>
+  <block id="1c8c6696ac03ef01690be450b3767032" category="list-text">在機櫃或電信機架中安裝及保護您的儲存系統：</block>
+  <block id="bdb39b5926a304a8f387b036b6fd9445" category="list-text">將儲存系統放在機櫃或電信機架中央的軌道上、然後從底部支撐儲存系統、並將其滑入定位。</block>
+  <block id="0a508c750e66a219b3bc9449125a4672" category="list-text">使用隨附的安裝螺絲、將儲存系統固定在機櫃或電信機架上。</block>
+  <block id="c91c25b22baf3cf726a3ecc4b7e7f23f" category="list-text">安裝儲存櫃：</block>
+  <block id="76f6a6a53ead4da24271bca7a9b976e0" category="list-text">將儲存櫃的背面放在軌道上、然後從底部支撐機櫃、並將其滑入機櫃或電信機架。</block>
+  <block id="8ac98c640ab335c330eb3d45c03096ad" category="paragraph">如果您要安裝多個儲存櫃、請將第一個儲存櫃直接放在控制器上方。將第二個儲存櫃直接放在控制器下方。對任何其他儲存櫃重複此模式。</block>
+  <block id="871681e86e80556b261166721e0bbe3b" category="list-text">使用隨附的安裝螺絲、將儲存架固定在機櫃或電信機架上。</block>
+  <block id="c5eaaf4a6fa532356e5d0189384e0e34" category="list-text">將纜線管理裝置連接至儲存系統背面。</block>
+  <block id="36eaeecf3fe5d82e498290c50c773db1" category="list-text">將擋板連接至儲存系統正面。</block>
+  <block id="c239b345dc160b2bfc0fb8247acc17eb" category="paragraph">每個 NS224 機櫃都以獨特的機櫃 ID 加以區分。此 ID 可確保儲存系統設定中的機櫃各有不同。根據預設、機櫃 ID 會指派為「 00 」和「 01 」、但您可能需要調整這些 ID 、以維持整個儲存系統的唯一性。</block>
+  <block id="f044e75ec5037aabefb204d1365ba96b" category="image-alt">變更 NS224 機櫃 ID</block>
+  <block id="d8147b4a0f272144c59f006b412b8290" category="image-alt">[ 請撥號碼 2</block>
+  <block id="8c5529e435c4992332c3afef54410f4e" category="image-alt">[ 請撥號碼 3</block>
+  <block id="1e7068fa54071c2235730ac32aea59df" category="image-alt">[ 請撥號碼 4</block>
+  <block id="d99e56a0fc1270d6ad52dad4e860e03b" category="paragraph">機櫃 ID 按鈕</block>
+  <block id="d4c1c2e026b220a076548832df5663fd" category="list-text">將迴紋針或窄尖圓珠筆的拉直端插入小孔中、按下「機架 ID 」按鈕。</block>
+  <block id="1d3167cc672adacb0626b4e754f4fe12" category="admonition">在 DS 系列機櫃上、可直接在機櫃耳底部使用機櫃 ID 按鈕。</block>
+  <block id="a575fb8631b6f36bc982f14c1cc92a6e" category="list-text">按住「機櫃 ID 」按鈕、直到數位顯示器上的第一個數字閃爍、然後放開按鈕。</block>
+  <block id="d82a10aaede074fc250a2dc7ef372dca" category="admonition">如果 ID 需要超過 15 秒的時間來閃爍、請再次按住「機櫃 ID 」按鈕、並確保完全按下。</block>
+  <block id="1e6aa1713a8e26a3cecae4cd918e20a0" category="list-text">按下並放開「機櫃 ID 」按鈕以進階數字、直到您達到所需的數字、從 0 到 9 為止。</block>
+  <block id="fbfc6fb88e89fa9fd421347ccdc222c8" category="list-text">鎖定所需的號碼、然後按住機櫃 ID 按鈕、直到第二個號碼停止閃爍、以結束程式設定模式。</block>
+  <block id="3a7f97a4c78b33a1c47a571494b17709" category="paragraph">數位顯示器上的兩個數字都會開始閃爍、且琥珀色 LED 會在大約五秒後亮起、提醒您擱置的機櫃 ID 尚未生效。</block>
+  <block id="51ebfc33ce787da893819e3a68129a19" category="paragraph">開啟儲存櫃並指派唯一 ID 之後、請開啟儲存控制器的電源。</block>
+  <block id="9be560fd489238e97542aa683a683199" category="list-text">將筆記型電腦連接到序列主控台連接埠。這可讓您在控制器開啟時監控開機順序。</block>
+  <block id="cd76e142e3adabbfc33b1de3c074b2cb" category="list-text">風扇第一次啟動時可能會非常吵雜。啟動時風扇發出噪音是正常現象。</block>
+  <block id="8d30b064af728ae0d0217b4663afa97d" category="paragraph">若要安裝儲存系統、請確定您計畫使用的站台和機櫃或機架符合您組態的規格。</block>
+  <block id="784289434de2772034240714a84f80a9" category="list-text">用於<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>確認您的站台符合儲存系統的環境和電力需求。</block>
+  <block id="6ac193907083dd66438c89227559f4dc" category="list-text">2U 適用於每個 NS224 儲存櫃</block>
+  <block id="f7baf09cec0bef6d7451bbfb2506b5d8" category="paragraph">* 注意： * 請參閱<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>以瞭解其他支援儲存櫃的機架空間需求。</block>
+  <block id="2df7e61cfe4bf7857f54171cec3da494" category="list-text">安裝所有必要的網路交換器。</block>
+  <block id="6734bc0c212e4efd373707768ae51b81" category="paragraph">確保您打算用於儲存系統的站台和機櫃或機架符合所需規格後、請打開所有包裝箱的包裝、並將內容物與裝箱單上的項目進行比較。</block>
+  <block id="2a6f49472befe7fd3e056a4a6fedfe00" category="list-text">儲存櫃</block>
+  <block id="256397940895ecf3de88fca8684f0a2d" category="list-text">儲存纜線（如果您訂購額外的儲存設備）</block>
+  <block id="9bea2d1b752b83d2f602c5b85b99a901" category="section-title">步驟 3 ：註冊您的儲存系統</block>
+  <block id="b36d5598e44a73dff0e120c41f02ee3f" category="paragraph">確保您的網站符合儲存系統規格的要求、並確認您已訂購所有零件之後、您應該註冊系統。</block>
+  <block id="04a9069d60a270b8326c0bf8dece532c" category="list-text">找到儲存系統的序號。</block>
+  <block id="f5c45bcc73f02c7f2b1398ee78576a7a" category="list-text">前往<block ref="1850de052c61829b534b07ba1a2ca402" category="inline-link-rx"></block>。</block>
+  <block id="6918c0735e9cef59385e60d3f94d7115" category="list-text">判斷您是否需要註冊儲存系統：</block>
+  <block id="8f45a9f1fcb944bee42c078bdeacd8ac" category="cell">如果您是...</block>
+  <block id="e3df4624e4d36502b5d044730eab97cc" category="cell">請遵循下列步驟...</block>
+  <block id="d3f2dc7623074c370346f082b621f2db" category="paragraph">現有NetApp客戶</block>
+  <block id="8cc04c4151dd22af84b31cd55d6c5f57" category="list-text">確認已列出新的序號。</block>
+  <block id="d193a53b34315bee1bed499f665686ce" category="list-text">如果沒有、請依照新NetApp客戶的指示進行。</block>
+  <block id="daee797d0bf63a91fe069e1df88d7923" category="paragraph">NetApp新客戶</block>
+  <block id="616ce92e68107b272305803b0da3016e" category="list-text">輸入儲存系統的序號和要求的詳細資料。</block>
+  <block id="38342a608d29c610e381db6c1bfd532c" category="doc">安裝所需的設備</block>
+  <block id="3278b4b06a799dc3318232ebf4631179" category="paragraph">若要安裝儲存系統、您需要下列設備和工具。</block>
+  <block id="8dd75d4e14815a2e3e3154ea67cd841e" category="list-text">靜電釋放（ ESD ）固定帶</block>
+  <block id="2e9e7e3bf632d3a831fdcb0a200d53b7" category="list-text">迴紋針或窄尖圓珠筆、用於設定 NS224 儲存櫃 ID</block>
+  <block id="8170c4932dac7ac5a018213e28744cab" category="section-title">起重預防措施</block>
+  <block id="631a629b49692f05c6c442b2053abb24" category="paragraph">儲存系統和儲存櫃很重。抬起和移動這些項目時請務必謹慎。</block>
+  <block id="522bd666055071c79860849502df1178" category="section-title">儲存系統重量</block>
+  <block id="33f8da0ea30bb3eb60321a8d29715499" category="paragraph">移動或提起儲存系統時、請採取必要的預防措施。</block>
+  <block id="cc462bbdb3b8d9369a4c3f67dcc8095c" category="open-title">A1K</block>
+  <block id="5ea1cbb0d935be77a5bd89c7ae6df537" category="paragraph">A1K 儲存系統的重量可達 62.83 磅（ 28.5 公斤）。若要抬起系統、請使用兩個人或液壓舉升設備。</block>
+  <block id="b1f39e4d9956723a4e80ea4844651e57" category="open-title">A70 和 A90</block>
+  <block id="dd9f2d53c1722b6c2ac842b778803e5a" category="paragraph">A70 儲存系統或 A90 儲存系統的重量可達 151.68 磅（ 68.8 公斤）。若要抬起系統、請使用四個人或液壓舉升設備。</block>
+  <block id="336e0262f6402efd45d8cf9d7ae13e8c" category="section-title">儲存櫃重量</block>
+  <block id="2426c13bd8c78d02a8ccbd2a43174936" category="paragraph">NS224 儲存櫃的重量可達 66.78 磅（ 30.29 公斤）。若要抬起儲存架、請使用兩個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。</block>
+  <block id="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="list-text"><block ref="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="inline-link-rx"></block></block>
+  <block id="ed49a36c4fd547e5e2ace11bef4f21cf" category="cell">平台</block>
+  <block id="fde1abb5537b55c34521d414267b3f70" category="inline-link">ASA r2 系統</block>
+  <block id="2801c41ee3229b268cd2fcada7e51006" category="paragraph"><block ref="2801c41ee3229b268cd2fcada7e51006" category="inline-link-rx"></block></block>
+  <block id="5d6a7459a3583d9e29f4b486d809b6a1" category="list-text">ASA A1K</block>
+  <block id="cd527b2aadf2bebf28ba082002724ab0" category="list-text">ASA A70</block>
+  <block id="009f19d7e9e80eda1c7dbf7374519e58" category="list-text">ASA A90</block>
+  <block id="31272abf1c9209ab4acd0bf10f129338" category="paragraph">ONTAP 9.16.1.</block>
+  <block id="f869dc03b59b4f9d3c8c795771fbbe2b" category="inline-link">FAS70 和 FAS90</block>
+  <block id="2a711630f30a2d04c665c4daa7fb0489" category="paragraph"><block ref="2a711630f30a2d04c665c4daa7fb0489" category="inline-link-rx"></block></block>
+  <block id="e1a213d0031a49d9c017602a71d510b0" category="paragraph">在替換開機媒體上還原加密。</block>
+  <block id="0d7c63328eb549c922addcf92c2017df" category="doc">開機媒體更換需求 - AFF A1K</block>
+  <block id="03d5b4d9a583274fad1fce62333f9be7" category="inline-link-macro">檢閱開機媒體需求</block>
+  <block id="7da2ad3a49ec26bdfe6f10369a633cc8" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="aabe0e8fbf047f86b63aab624a516987" category="inline-link-macro-rx"></block></block>
+  <block id="1c44a2b837e3b2eb360a9835aa83dcf7" category="paragraph">若要更換開機媒體、您必須符合特定需求。</block>
+  <block id="c4792b30ffa1af5c4752558e8a66e902" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
+  <block id="865bd81ed9770f3b581d56b133a65f56" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="7444ce336f5cb99437679b1ac8b6aefb" category="inline-link-macro-rx"></block></block>
+  <block id="f4578c5af522b1009c2980c6199ae159" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
+  <block id="6d23893da11d98444089ffbec975f465" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="68895f240ebc6c043e757f74f16ee4e8" category="inline-link-macro-rx"></block></block>
+  <block id="be5d3b55237388ed40cd1421e3630441" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
+  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
+  <block id="2e24e2e746e68459a4ef5698bea65e61" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
+  <block id="5660b56c25825a9ea794de13bb60e4c6" category="doc">控制器更換需求 - AFF A1K</block>
+  <block id="cc7b6ad2b5c5cf984ed2b31eb7cdec78" category="inline-link-macro">檢閱控制器更換需求</block>
+  <block id="63d82565e7082940cd04e84427b25ae7" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="fda781847f9aa68393ef9eb97f6097de" category="inline-link-macro-rx"></block></block>
+  <block id="ad2f6ac636537ead1316455f1fa934a0" category="paragraph">若要更換控制器模組、您必須符合特定需求。</block>
+  <block id="5db5d2b27155f69726c98899f51a8838" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="980cfa80bc576e35f09c67c3be4eddc8" category="inline-link-macro-rx"></block></block>
+  <block id="e234328226c3b4e2ce6b3ad6a3d9bf82" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="1f759de80b41385676d2f1fe163eb0aa" category="inline-link-macro-rx"></block></block>
+  <block id="3fc66111e701346de793b8e8715ad7d9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="d7f15e9703914d919163ee72018c4347" category="inline-link-macro-rx"></block></block>
+  <block id="2cfd26a8651887864fc31e672a6b0387" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="0314c54fb87f2f2b01af763f24ebf5ef" category="inline-link-macro-rx"></block></block>
+  <block id="0d23a7eb39db3e785d2c87bde3e7d302" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="94dc13e126f429eefb3c1f2ca69200fa" category="inline-link-macro-rx"></block></block>
+  <block id="a353ad5d28eb41a61c5aaf6e3cdd653a" category="paragraph">為 AFF A1K 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並將纜線連接到控制器和儲存櫃。</block>
+  <block id="85ca4f61e95c7ff9505b58b2263d7c5f" category="paragraph">將儲存控制器連接到主機網路。</block>
+  <block id="0847a9a714302b71df1445a81d7aa6a8" category="paragraph">如需將儲存系統連接至交換器的相關資訊、請聯絡您的網路管理員。</block>
+  <block id="b1f3b66a8c145c97d922ed0e9d17eef1" category="open-title">選項 1 ：將控制器連接至無交換器的 ONTAP 叢集</block>
+  <block id="c4cbbd77402de8c27a0e7a305bcd7a83" category="list-text">將控制器 A 上的連接埠 e1a 連接到控制器 B 上的連接埠 e1a</block>
+  <block id="e2e054e25b28fb3d74a683482ef337a6" category="list-text">將控制器 A 上的連接埠 e7a 連接至控制器 B 上的連接埠 e7a</block>
+  <block id="b1a78b15892ed366f203ff3009cb08d9" category="admonition">為了讓叢集和 HA 流量發揮最大的系統效能、請勿使用連接埠 e1b 和 e7b 連接埠進行主機網路連線。請使用獨立的主機卡來發揮最大效能。</block>
+  <block id="1e2c2dffacd95873bc67d8d7545fc14d" category="open-title">選項 2 ：將控制器連接至交換式 ONTAP 叢集</block>
+  <block id="7d2da5b086f85cd3dc85b163367bc06a" category="paragraph">將儲存控制器連接至叢集網路交換器以建立 ONTAP 叢集連線、然後將每個控制器上的乙太網路連接埠連接至主機網路。</block>
+  <block id="bf419afe8104f0626b8c6f35d7546f54" category="list-text">將控制器 A 上的連接埠 e1a 和控制器 B 上的連接埠 e1a 連接至叢集網路交換器 A</block>
+  <block id="cf5e5d4912cff0cbaa590fc1ae9ce6d7" category="list-text">將控制器 A 上的連接埠 e7a 和控制器 B 上的連接埠 e7a 連接至叢集網路交換器 B</block>
+  <block id="3c9f58e10af9f9956f48a0b66192a1fe" category="list-text">使用 1000BASE-T RJ-45 纜線、將控制器管理（扳手）連接埠連接至管理網路交換器。</block>
+  <block id="4bdc8275aa2933fa877bfc4f40f6c3a2" category="section-title">步驟 2 ：將儲存控制器連接至儲存櫃</block>
+  <block id="8bff2f2dabc32a6a40817e91a3008934" category="open-title">選項 1 ：連接至一個 NS224 儲存櫃</block>
+  <block id="585305b30e013fddf0d6343d4ee20ddd" category="open-title">選項 2 ：連接兩個 NS224 儲存櫃</block>
+  <block id="6ed30500ab710bf43940cb83592bdbfa" category="inline-link-macro">開啟 AFF A1K 儲存系統電源</block>
+  <block id="3f9b0cea76dc6f2b6177d8bcb5908423" category="paragraph">為 AFF A1K 系統連接硬體之後，您<block ref="654696be1fe92ecfa0ff053c720b2b1d" category="inline-link-macro-rx"></block>就可以了。</block>
+  <block id="27ed857e5ec70c9d4b25678f791b6131" category="summary">使用叢集探索來完成設定與組態、只需連線至交換器和筆記型電腦、或直接連線至儲存系統中的控制器、然後再連線至管理交換器。</block>
+  <block id="b53b432cc7bef69c6e3b55451a6e6076" category="paragraph">準備好安裝 AFF A1K 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
+  <block id="957ae92207588304b6d7d5e236d23f00" category="paragraph">如果您的機櫃已預先填入、請跳過此步驟。</block>
+  <block id="2faeb3f50bfdbdf81bf89b4827b8be68" category="inline-link-macro">為 AFF A1K 儲存系統連接硬體纜線</block>
+  <block id="79aaa7590e7c27125e2cf32258241983" category="paragraph">安裝 AFF A1K 系統的硬體之後<block ref="276df4372f4c1ef233160d5c044c2336" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="72bcdfb901be6fc6ef8c39bd8c337e88" category="summary">請遵循這些高階步驟、在 ONTAP 系統中安裝及設定 AFF A1K 儲存系統、並將其部署為 HA 配對。</block>
+  <block id="8ae35c0a841e9060691b600318ec9f94" category="doc">安裝與組態工作流程 - AFF A1K</block>
+  <block id="4c25a2646817717d4a790f0bede16ce6" category="paragraph">若要安裝及設定 AFF A1K 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。</block>
+  <block id="bfd626ab3de611114a68642af3d7f37b" category="inline-link-macro">檢閱安裝需求</block>
+  <block id="6b709a9bbc7230171c9e7e7ab08ac80a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="830e88ccc301f49a022a63b6e13ea117" category="inline-link-macro-rx"></block></block>
+  <block id="714ab953589b6e13bf2273a7f6277188" category="paragraph">檢閱安裝儲存系統和儲存櫃所需的設備和工具、並檢閱起重和安全預防措施。</block>
+  <block id="35388d0fd73b5ab22bd1e46838d29d20" category="inline-link-macro">準備安裝 AFF A1K 儲存系統</block>
+  <block id="31879a7ac12b926bb3b7b4439d29ba46" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="45eba4e552c9845d9799a19234a6de37" category="inline-link-macro-rx"></block></block>
+  <block id="684e19ae990f0eee39587dd6fed76946" category="paragraph">若要準備安裝系統、您必須準備好場地、檢查環境和電力需求、並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。</block>
+  <block id="9049e011783242fb89737e789ed66cd5" category="inline-link-macro">安裝 AFF A1K 儲存系統的硬體</block>
+  <block id="896ed4920923adde300a17baec3670d2" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="61699abd45fb8a769732a90481deacf4" category="inline-link-macro-rx"></block></block>
+  <block id="2d797c4cbf8f7f6c9e87e405560d40d4" category="paragraph">若要安裝硬體、請安裝儲存系統和機櫃的軌道套件、然後將儲存系統安裝並固定在機櫃或電信機架中。接著、將貨架滑到軌道上。最後、將纜線管理裝置連接至儲存系統背面、以便整理纜線佈線。</block>
+  <block id="0efd3f720c96c41320edb50cc63688ad" category="inline-link-macro">為 AFF A1K 儲存系統的控制器和儲存櫃佈線</block>
+  <block id="e61a60662bf228c4e0efceae235aceb8" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="0b696003ccb7fb8790254facf54af78a" category="inline-link-macro-rx"></block></block>
+  <block id="5ff2c2e371b329794d430555ced9e3f7" category="paragraph">若要連接硬體、請先將儲存控制器連接至網路、然後將控制器連接至儲存櫃。</block>
+  <block id="285d6553cd8c7daec6f0d12aba91379c" category="inline-link-macro">開啟 AFF A1K 儲存系統電源</block>
+  <block id="7975efdb78ae2356ecfb7785916813ea" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e440a513b8c5f4e1fdb4e9cd395eb57d" category="inline-link-macro-rx"></block></block>
+  <block id="9adaba33c41b009e4561e4c9bfed5074" category="paragraph">開啟控制器電源之前、請先開啟每個 NS224 機櫃的電源、並指派唯一的機櫃 ID 、以確保每個機櫃在設定中都能唯一識別。</block>
+  <block id="54cd8d1881f4be7195e616a39249670b" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
+  <block id="80c97b00983d1544cf5059e1ae224d3c" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成 AFF A1K 儲存系統的叢集組態。</block>
+  <block id="cb3c09e0aea666ca89714e771fe2a341" category="paragraph">為 AFF A1K 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
+  <block id="35f11b67e0796a5ad8b1a42113d555af" category="inline-link-macro">完成系統設定</block>
+  <block id="bb0e3698075baec263b94b00c624fc7f" category="paragraph">開啟 AFF A1K 儲存系統之後<block ref="cdf5a4c974bf88b91aa8dc567bf1a13f" category="inline-link-macro-rx"></block>、您就可以了。</block>
+  <block id="42aa8e4e5869ddf4141b1addfd622a67" category="doc">準備安裝 - AFF A1K</block>
+  <block id="d0f453bcbfb08f54ed7c397b49f72493" category="paragraph">準備好安裝 AFF A1K 儲存系統的方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
+  <block id="f6b81eee7a6985b4bd76813e240e5101" category="inline-link-macro">安裝 AFF A1K 儲存系統的硬體</block>
+  <block id="9a94399b27b1f1a5915b1415bc8ddcf1" category="paragraph">準備好安裝 AFF A1K 硬體之後<block ref="b5860b45d9509179b0e89dc0bae86024" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="e7536efd3b9d16674c0de677b471dab2" category="summary">檢視平台和機櫃所需的設備和起重預防措施。</block>
+  <block id="9715acc529a1f784f09c842c87aa8b94" category="doc">安裝需求 - AFF A1K</block>
+  <block id="203f80207b135ea7e43386a891f88e09" category="paragraph">檢閱 AFF A1K 儲存系統和儲存櫃所需的設備和起重注意事項。</block>
+  <block id="7441be50cc1ffa7c8f6b88094fab2108" category="paragraph">若要安裝 AFF A1K 儲存系統、您需要下列設備和工具。</block>
+  <block id="3330827a108d9ed79f76697fbb71af4c" category="paragraph">AFF A1K 儲存系統和 NS224 儲存櫃非常繁重。抬起和移動這些項目時請務必謹慎。</block>
+  <block id="01b7bc7debacf02e21b4e5c1eec0bcf9" category="section-title">AFF A1K 儲存系統</block>
+  <block id="bcc0f364176a6b86cafbe8e4dfce2a4a" category="paragraph">AFF A1K 儲存系統的重量可達 62.83 磅（ 28.5 公斤）。若要抬起系統、請使用兩個人或液壓舉升設備。</block>
+  <block id="45e63469b991d33c068f31181b786804" category="section-title">NS224 機櫃</block>
+  <block id="d03f5ec8a330688c4e047e99f5fecd12" category="inline-link-macro">準備安裝 AFF A1K 儲存系統</block>
+  <block id="95225809efab4457ee4a53c1a58dfb52" category="paragraph">在您檢閱過硬體需求之後<block ref="483aaa3c2f4f88e7b219b85383e864a7" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="e736c3581e7cc7eb9804edd4215c31b3" category="doc">將故障零件退回 NetApp - AFF A70 and AFF A90</block>
+  <block id="4a5ea51aecc0b34eb246feb20f130b5d" category="doc">檢查內建加密金鑰 - AFF A70 和 AFF A90</block>
+  <block id="e32530d54c0288f36793648830558717" category="doc">還原加密： AFF A70 和 AFF A90</block>
+  <block id="a13516239a2a49e82fd12bff6cdd2f91" category="doc">開機恢復映像： AFF A70 和 AFF A90</block>
+  <block id="7c506ea0b7da853881a11acc736d97c7" category="doc">開機媒體更換需求 - AFF A70 和 AFF A90</block>
+  <block id="f03f5749cb3ab7b7e16074ecbba8e300" category="doc">開機媒體更換工作流程： AFF A70 和 AFF A90</block>
+  <block id="08d73f01628a5943295e92f24c02e02b" category="doc">更換開機媒體： AFF A70 和 AFF A90</block>
+  <block id="ecf04557e2cacfb271d9b67c7f2b3a72" category="doc">關閉功能受損的控制器 - AFF A70 和 AFF A90</block>
+  <block id="2b7235fbef1deecc7fbd91bed02be1e7" category="doc">完整機箱更換： AFF A70 和 AFF A90</block>
+  <block id="a91e5640776c0744ff211f74a193dc57" category="doc">更換機箱 - AFF A70 和 AFF A90</block>
+  <block id="85d8564bfb7225b8979b99bf295a46f1" category="doc">機箱更換需求 - AFF A70 和 AFF A90</block>
+  <block id="2f7658a94038d064a8c1d014e3362aa8" category="doc">關閉控制器 - AFF A70 和 AFF A90</block>
+  <block id="a3b6d0681b238842e8abbe17c93092bf" category="doc">機箱更換工作流程： AFF A70 和 AFF A90</block>
+  <block id="610624f1a6b2eadbbc362858bfa11e2f" category="inline-link-macro">檢閱機箱更換需求</block>
+  <block id="15f73c32702be38a6c35694972953b59" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="9e50dfd69463f0498a1a5a1d869a2b1e" category="inline-link-macro-rx"></block></block>
+  <block id="fa29148ce9207214342e5afd8db28bf6" category="paragraph">若要更換機箱、您必須符合特定需求。</block>
+  <block id="04639049161c98433d708c0a6845499c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
+  <block id="49b45e8248fd2d5ed919902809621c44" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
+  <block id="b47ee6654722b2bed7a27aba5a38d41e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
+  <block id="8b2975d216e00ec9bbae796edb379021" category="doc">更換控制器模組 - AFF A70 和 AFF A90</block>
+  <block id="d17298652653b6c2396a7e0cf7ba5220" category="doc">可回收並退回控制器 - AFF A70 和 AFF A90</block>
+  <block id="b851102d36222ece27890507e1841ecc" category="doc">控制器更換需求 - AFF A70 和 AFF A90</block>
+  <block id="68e66200bb827544f2bc5f02c2c9a441" category="doc">完整更換控制器： AFF A70 和 AFF A90</block>
+  <block id="5e1c3f88c24c4db392d7d1d519b28aa4" category="doc">關閉受損的控制器 - AFF A70 和 AFF A90</block>
+  <block id="50a2e3714f0440fca3d96537b2113368" category="doc">還原並驗證系統組態 - AFF A70 和 AFF A90</block>
+  <block id="05bf5962e43260a46857d5654c4d1eb4" category="doc">控制器更換工作流程： AFF A70 和 AFF A90</block>
+  <block id="ea0554b4bb91e270fbc2d78ea4e70d10" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e14fc53a2fbc5d3f87f2c572a1629eed" category="inline-link-macro-rx"></block></block>
+  <block id="d76ab8637f7b871faf1afbc59cd046ca" category="doc">更換 DIMM - AFF A70 和 AFF A90</block>
+  <block id="48144ea57b64dddd5b6d7aa9af0b7f31" category="doc">更換 SSD 磁碟機 - AFF A70 和 AFF A90</block>
+  <block id="6c8228ef743965fe7b33006e88a295a0" category="doc">更換風扇模組 - AFF A70 和 AFF A90</block>
+  <block id="d570d60e6fb68aef28765899da0c3a11" category="summary">維護 AFF A70 和 AFF A90 硬體</block>
+  <block id="633a66c416ef74d4bb2e9b9bd6538f11" category="doc">維護 AFF A70 和 AFF A90 硬體</block>
+  <block id="bab1b3baab1e9940a2218c82b7dcca29" category="doc">連接硬體纜線 - AFF A70 和 AFF A90</block>
+  <block id="129659531a7af0b8cc014b27db714e59" category="paragraph">為 AFF A70 或 AFF A90 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並將纜線連接至控制器和儲存櫃。</block>
+  <block id="4303b29f12561a35dc71cb122558d909" category="inline-link-macro">開啟 AFF A70 或 AFF A90 儲存系統的電源</block>
+  <block id="f4e587df8e3873f191b7a2eaee7efc0d" category="paragraph">為 AFF A70 或 AFF A90 系統連接硬體之後<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="0a9fdcb4b99938b1949943d7889de0e4" category="doc">完整的儲存系統設定與組態： AFF A70 與 AFF A90</block>
+  <block id="eaed2b50f9ac1d1c725b320e4c9f09e1" category="doc">安裝硬體： AFF A70 和 AFF A90</block>
+  <block id="816bbd9f7f68bfea42f976bdd1e27e0d" category="paragraph">準備好安裝 AFF A70 或 AFF A90 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
+  <block id="fd0f91da61deb35dbaf2ae06cc064cf2" category="inline-link-macro">為 AFF A70 或 AFF A90 儲存系統連接硬體纜線</block>
+  <block id="2eee7d48deec1bc3240e9ce8e8e52e6a" category="paragraph">安裝 AFF A70 或 AFF A90 系統的硬體之後<block ref="17a7c89c361515d880a6cdcb9635aeb8" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="0d037547a643b9b10ccde668038f1cce" category="summary">請遵循這些高階步驟、在 ONTAP 系統中安裝及設定 AFF A70 或 A90 儲存系統、並將其部署為 HA 配對。</block>
+  <block id="470284b3c5d8d86ec6517e975c145e3d" category="doc">安裝與組態工作流程 - AFF A70 與 AFF A90</block>
+  <block id="2f63ecb0af9e49a7ecf2336ee83329ff" category="paragraph">若要安裝及設定 AFF A70 或 AFF A90 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。</block>
+  <block id="0fb9e8e688219941d3b3a149c0872261" category="inline-link-macro">準備安裝 AFF A70 或 AFF A90 儲存系統</block>
+  <block id="dc37db34de35bd4abe64d1d8c4112029" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="06d5ea794523ab4902856526bbbfd978" category="inline-link-macro-rx"></block></block>
+  <block id="d1a246e5ac0009568e39fb02fac42d32" category="inline-link-macro">安裝 AFF A70 或 AFF A90 儲存系統的硬體</block>
+  <block id="84b0c9ca7c3805f4e6c45dff779008ce" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="cffd5aff72b9ec84d9da81a3a3dc97b1" category="inline-link-macro-rx"></block></block>
+  <block id="c4b389cb6a8033c4b523162617f97377" category="inline-link-macro">為 AFF A70 或 AFF A90 儲存系統的控制器和儲存櫃佈線</block>
+  <block id="2d3e272e1a75695d2e91a62c635ca211" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="aadc43ed51769de185eed40b0ee14a06" category="inline-link-macro-rx"></block></block>
+  <block id="4c29a03a0ab864082fe459c7b721fbbc" category="inline-link-macro">開啟 AFF A70 或 AFF A90 儲存系統的電源</block>
+  <block id="a19bec9c1c3c4f1245f5b6986c20b987" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5a2730391e8b064fb32b1f55a3ad2002" category="inline-link-macro-rx"></block></block>
+  <block id="7ebf9d5e847b8d7a94676c8589e3ba8a" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成 AFF A70 或 AFF A90 儲存系統的叢集組態。</block>
+  <block id="15dfdd4107875517824d97fd681fd5cb" category="doc">開啟儲存系統電源 - AFF A70 和 AFF A90</block>
+  <block id="addbfcd02447e9d1c6cbb3810c45a6ac" category="paragraph">為 AFF A70 或 AFF A90 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
+  <block id="ed1a15747627f84755b5eef621bb8e85" category="inline-link-macro">完成系統設定</block>
+  <block id="c0677b3f2eac3919f6dafe43a0461dd5" category="paragraph">開啟 AFF A70 或 AFF A90 儲存系統之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>、您就可以了。</block>
+  <block id="21fcd461c7d93e9d4e6cc391e27e2f50" category="summary">準備安裝 AFF A70 和 AFF A90 平台。</block>
+  <block id="ec9b0b25a575ea2719a43e0ed4eba2ef" category="doc">準備安裝 - AFF A70 和 AFF A90</block>
+  <block id="e2ffcf27d17e53137e3f3b594c1cd4c4" category="paragraph">準備安裝 AFF A70 或 AFF A90 儲存系統、方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
+  <block id="61c06139b6cae8ee51fc2ec7501dee42" category="inline-link-macro">安裝 AFF A70 或 AFF A90 儲存系統的硬體</block>
+  <block id="09f908c7739e53b3d2c38aa6643b223a" category="paragraph">準備好安裝 AFF A70 或 AFF A90 硬體之後<block ref="5d63ec75b552414f601ef48807f802a1" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="4090848005a10223aa8682ab65a126b3" category="doc">安裝需求 - AFF A70 和 AFF A90</block>
+  <block id="9d5550245778349bc21a4d66e8e5cc3e" category="paragraph">檢閱 AFF A70 或 AFF A90 儲存系統和儲存櫃所需的設備和起重預防措施。</block>
+  <block id="c9341c606e640aaa0d7045e6ee2fa517" category="paragraph">若要安裝 AFF A70 或 AFF A90 儲存系統、您需要下列設備和工具。</block>
+  <block id="1b8e66b9b4993a3fd09f38d7bd0611e0" category="paragraph">AFF A70 和 AFF A90 儲存系統以及 NS224 儲存櫃非常繁重。抬起和移動這些項目時請務必謹慎。</block>
+  <block id="0ac98212d833b45fb113f4133b2650ca" category="section-title">AFF A70 和 AFF A90 儲存系統</block>
+  <block id="c629dd83e83c71e99f9857aae4c70761" category="paragraph">AFF A70 儲存系統或 AFF A90 儲存系統的重量可達 151.68 磅（ 68.8 公斤）。若要抬起系統、請使用四個人或液壓舉升設備。</block>
+  <block id="e78eb711e1e947ddb92f05657d0347d1" category="inline-link-macro">準備安裝 AFF A70 或 AFF A90 儲存系統</block>
+  <block id="2f2189cfd66651c01e836375bb7f1b05" category="paragraph">在您檢閱過硬體需求之後<block ref="cee013a212eeca03333769e1fffc4483" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="2eb78ee9cbbc9fb7df3e32a863ef8c78" category="doc">新增 I/O 模組 - AFF A70 和 AFF A90</block>
+  <block id="904251477a4ab72deb06fb568e51e8e9" category="doc">新增與更換 I/O 模組的總覽 - AFF A70 與 AFF A90</block>
+  <block id="23c290996bbddd9feb90c8208ce03776" category="doc">更換 I/O 模組 - AFF A70 和 AFF A90</block>
+  <block id="45246f3dd0a53426b7b68a7138275eae" category="doc">更換 NV 電池 - AFF A70 和 AFF A90</block>
+  <block id="59d1ac278f79c5b6902c13cbe126a692" category="doc">更換 NVRAM - AFF A70 和 AFF A90</block>
+  <block id="142aed9b4219bef04d9ce41b26e16e98" category="doc">更換電源供應器 - AFF A70 和 AFF A90</block>
+  <block id="09667d54b485aed2ff058a0b9116b943" category="doc">更換即時時鐘電池 - AFF A70 和 AFF A90</block>
+  <block id="e0bb6be3391ff9aea036f34370ebe044" category="doc">更換系統管理模組 - AFF A70 和 AFF A90</block>
+  <block id="1d04f5bb7d7b81fc8fded3b79cc0c8d3" category="doc">安裝及設定 ASA R2 系統</block>
+  <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link">ASA R2 系統文件</block>
+  <block id="5aef6f7c7bd154b3669d06150a10ac8f" category="paragraph">請移至<block ref="4842686d9ffe46ff775159613c5fe1d3" category="inline-link-rx"></block>以瞭解如何安裝、使用及管理 ASA R2 系統。</block>
+  <block id="bf23d4e4f984a5d26f1941521cd08180" category="paragraph"><block ref="4842686d9ffe46ff775159613c5fe1d3" category="inline-link-rx"></block>包括以下資訊：</block>
+  <block id="25eae9362181f1d5fdbff88ae905fd46" category="list-text">安裝與設定說明</block>
+  <block id="75afa97fe4fdc157828daae34d32ebd3" category="list-text">設定系統的管理指示、例如資源配置 SAN 儲存設備、複製資料、以及重新調整本機儲存空間大小。</block>
+  <block id="a70d2e13c55ae4058427177840c2c2a5" category="list-text">管理系統的指示、包括管理用戶端存取、保護資料安全及保護資料。</block>
+  <block id="7681293dc9914f924b80b407bcf93b60" category="list-text">監控和疑難排解指示、包括警示、叢集事件和系統記錄的相關資訊。</block>
+  <block id="29ce4833094eb0992ba97ac3e0c71b3f" category="inline-link-macro">ASA R2 系統維護部分</block>
+  <block id="c8208be6c84d32af841a96445a7aa12a" category="paragraph">每種 ASA R2 系統的特定維護程序請參閱<block ref="6106c9a1bd699a0a46425013e812fe67" category="inline-link-macro-rx"></block>。</block>
+  <block id="cb1eb944e0468ffad560cfc4623a28dc" category="doc">將故障零件退回 NetApp - ASA A70 和 ASA A90</block>
+  <block id="000b8f6ff6773eed3646b647d7ba17b0" category="doc">檢查機載加密金鑰 - ASA A70 和 ASA A90</block>
+  <block id="50845bae5620d87f695c2dc8e2ba4b4e" category="doc">還原加密： ASA A70 和 ASA A90</block>
+  <block id="a536f1353388ae9a9051066b28c5a6e0" category="summary">瞭解更換開機媒體的自動化方法和手動方法。</block>
+  <block id="9c80bf2ce5b5ebdbe4120c07897a68bf" category="doc">更換開機媒體的總覽 - ASA A70 和 ASA A90</block>
+  <block id="2ae2a629b0bc850781e0206745cd3b3e" category="paragraph">您可以使用 USB 模組作為開機映像、或透過自動開機媒體恢復（ BMR ）選項、手動更換故障的開機媒體。</block>
+  <block id="0792ce6d8f86d180ff01c2a8e3138f0f" category="inline-link-macro">自動開機媒體還原</block>
+  <block id="49f22f0d665263e5b2eefdc62c1fd779" category="list-text"><block ref="49f22f0d665263e5b2eefdc62c1fd779" category="inline-link-macro-rx"></block></block>
+  <block id="223bbbfb281b468a486440892257143a" category="paragraph">自動開機媒體還原會使用部分節點的開機映像、並自動執行適當的開機功能表選項、將開機映像安裝到替換的開機媒體。</block>
+  <block id="05697ae1686cab5868aea887e013256c" category="inline-link-macro">手動更換開機媒體</block>
+  <block id="ab627a0858cfd29a960b1e47d8e3309c" category="list-text"><block ref="ab627a0858cfd29a960b1e47d8e3309c" category="inline-link-macro-rx"></block></block>
+  <block id="be50da4a0a4e7670cc5496e8959abd3e" category="paragraph">手動開機媒體取代使用傳統方法、從 NetApp 支援網站下載 ONTAP 映像、將映像傳輸到 USB 磁碟機、下載到目標替換開機媒體、以及手動瀏覽開機功能表選項、在替換的開機媒體上安裝 ONTAP 映像。</block>
+  <block id="4a64f3d63fd0e8b93b80ef48b4698a9a" category="summary">您可以透過自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。</block>
+  <block id="41f43600bfb66f22a00e070720eb3684" category="doc">自動開機恢復： ASA A70 和 ASA A90</block>
+  <block id="03d754d98b9bef4fdb6dd9961b94bc3f" category="paragraph">您可以使用自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。</block>
+  <block id="b1eee21c24b289e0918c000ada54e323" category="paragraph">選取符合您組態的單一節點自動還原選項。</block>
+  <block id="bc870d27a5756c85d171dcfa81222b70" category="open-title">選項 1 ：不加密的還原</block>
+  <block id="87d5b822cdb7420f1f697bbcb85e5ef1" category="open-title">選項 2 ：使用內建金鑰管理程式進行還原</block>
+  <block id="f7c070f8ed876173ff11d6abd21a87f3" category="open-title">選項 3 ：使用外部金鑰管理程式進行還原</block>
+  <block id="7d7b39e1d38d18d4acc88e8ead4ecab1" category="doc">開機恢復映像： ASA A70 和 ASA A90</block>
+  <block id="56e7f21b9427a2441a89613fe1fcc2ff" category="summary">您可以在更換開機媒體之前、先移除系統管理模組、找出故障的開機媒體。</block>
+  <block id="69326c1cf7a079cc03d300fe203efde6" category="doc">更換開機媒體 - ASA A70 和 ASA A90</block>
+  <block id="f5f04350fe8cc121abba09eed8ef8194" category="doc">要求與考量事項： ASA A70 與 ASA A90</block>
+  <block id="740df8929ce5dd43cd4aae8d5504654d" category="doc">開機媒體更換需求 - ASA A70 和 ASA A90</block>
+  <block id="2cf315583a350744f9ff0bd28ec89aef" category="doc">開機媒體更換工作流程： ASA A70 和 ASA A90</block>
+  <block id="d49388da53cc4a7219dcbdd63d45342a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="d54ef5e1f82ac3261c20b17cf3d0d453" category="inline-link-macro-rx"></block></block>
+  <block id="f34aa6a5d31a45519f859aa60bd859b0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="eca088c3311d093e84211f243a48b6b0" category="inline-link-macro-rx"></block></block>
+  <block id="e15dd4e77a0784cb0db73357420aff31" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="16af84fbab48141f269a09d09712af68" category="inline-link-macro-rx"></block></block>
+  <block id="bbe9dab8dbb04372040fcb892979257c" category="paragraph">從 System Management 模組中移除故障開機媒體、然後安裝替換開機媒體。</block>
+  <block id="eeec2f41cb0966f090c3a2623c28a3fa" category="inline-link-macro">在開機媒體上還原映像（自動開機還原）</block>
+  <block id="9194785fe046484032e6aeeed4bc66cb" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="5b7b9b4eeaff7d7b9673dc99f0735b0c" category="inline-link-macro-rx"></block></block>
+  <block id="d09fb8e8be6d5c93fb8113549e3abfb0" category="paragraph">從合作夥伴控制器還原 ONTAP 映像。</block>
+  <block id="cebae21dc29c5d5bdb777db254647344" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
+  <block id="b8a9f715dbb64fd5c56e7783c6820a61" category="inline-image-macro">二</block>
+  <block id="378cfbea0b90a51bfb83d8351ad538f7" category="paragraph-title"><block ref="ccf9965eddaaff76b152812c8e0015f1" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
+  <block id="14c9871d29cebff6090d4220729c7ade" category="summary">您需要完成受損控制器的關機。</block>
+  <block id="0049b2ae6634f29dc31a51b97c674ab3" category="doc">關閉控制器 - ASA A70 和 ASA A90</block>
+  <block id="a79ec0bc86b66848b485542b40048cb6" category="paragraph">您需要完成受損控制器的關機。關閉或接管受損的控制器。</block>
+  <block id="1dab5797f147c52155e0e89668535452" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。關閉或接管受損的控制器。</block>
+  <block id="95d86a07e48032c658d9a13faedb46d6" category="doc">完成機箱更換： ASA A70 和 ASA A90</block>
+  <block id="33af0abab8ca4fe70c730bb3d86abb73" category="doc">移動並更換硬體 - ASA A70 和 ASA A90</block>
+  <block id="03980c8a0e89406d8626708be0593619" category="doc">機箱更換需求 - ASA A70 和 ASA A90</block>
+  <block id="13a9f3efccfcf5c719f702d9208343d3" category="doc">關閉控制器 - ASA A70 和 ASA A90</block>
+  <block id="442aff9d882f282af3f3d4634f0b094f" category="doc">機箱更換工作流程： ASA A70 和 ASA A90</block>
+  <block id="bb4ee587dee40e9bdda1394b4c11a88d" category="inline-link-macro">檢閱機箱更換需求</block>
+  <block id="778ed0ff73bab9d38df4ab676b375d7d" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="7295d6b475ca2cf21124bd198447f219" category="inline-link-macro-rx"></block></block>
+  <block id="3459049c9ccd0e45188ec917dc7dca94" category="paragraph">若要更換機箱模組、您必須符合特定需求。</block>
+  <block id="8c82ee3a5a33a059aae4ab30bedbd5a5" category="doc">更換控制器模組硬體 - ASA A70 和 ASA A90</block>
+  <block id="1e314e899a3414e9234a03c7449851c1" category="doc">可回收並退回控制器 - ASA A70 和 ASA A90</block>
+  <block id="f6c6b6a5348d487bef542c09ec0a4b75" category="doc">控制器更換需求 - ASA A70 和 ASA A90</block>
+  <block id="63c1e704a685a7abd832fefd52c52ac5" category="doc">完整系統還原： ASA A70 和 ASA A90</block>
+  <block id="43df70609ea6def43d3a5dbd42ad0adc" category="doc">關閉受損控制器 - ASA A70 和 ASA A90</block>
+  <block id="c419380631bdd15fdc50ecdb6cb5afa2" category="doc">還原並驗證系統組態 - ASA A70 和 ASA A90</block>
+  <block id="9eae42d3fd37d848f1824e0e46fef5d9" category="doc">控制器更換工作流程： ASA A70 和 ASA A90</block>
+  <block id="1ea686595c5ed6760ff52fdfd043e3f7" category="inline-link-macro">檢閱控制器更換要求</block>
+  <block id="cc27efe3b06878284f987c234862dfa3" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="00ff41a73d410c5006f78cd4269abce5" category="inline-link-macro-rx"></block></block>
+  <block id="54ca9bab43d194ab4253b5eb1032a2c7" category="doc">更換 DIMM - ASA A70 和 ASA A90</block>
+  <block id="1c295c6505abd41000c1a1e46a807ba7" category="doc">更換 SSD 磁碟機 - ASA A70 和 ASA A90</block>
+  <block id="e26d17ccdd5c8e0cedb0a6558327fd7c" category="doc">更換風扇模組 - ASA A70 和 ASA A90</block>
+  <block id="d4492cf543a73c552a0ae603fe5b3974" category="summary">維護 ASA R2 A70 、 ASA R2 A90 硬體</block>
+  <block id="6b7623624a11f24beaa18469d3e1ce46" category="doc">維護 ASA A70 和 ASA A90 硬體</block>
+  <block id="ebed0084164c328fe17ca5feb5cf06f4" category="paragraph">對於 ASA R2 A70 和 A90 儲存系統、您可以對下列元件執行維護程序。</block>
+  <block id="2c5160f725c60b555d2128c4fa5c00ce" category="doc">新增 I/O 模組 - ASA A70 和 ASA A90</block>
+  <block id="a89338ff9a5a6a13eb5230d280eef559" category="doc">新增與更換 I/O 模組總覽 - ASA A70 與 ASA A90</block>
+  <block id="1b73422981d7bd7860216cffe4f27434" category="doc">更換 I/O 模組 - ASA A70 和 ASA A90</block>
+  <block id="cce6a120b979d484a6c17c49a5db377f" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 ASA A70 和 ASA A90 系統元件的特定程序。</block>
+  <block id="441be728228d904c637ab4e11fc40c45" category="paragraph">本節中的程序假設 ASA A70 和 ASA A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="cde82c9b04790b90c2679aca48bf0641" category="paragraph">對於 ASA A70 和 ASA A90 儲存系統、您可以對下列元件執行維護程序。</block>
+  <block id="33be63dd3ac26302ae8657e03e5af7b7" category="paragraph"><block ref="33be63dd3ac26302ae8657e03e5af7b7" category="inline-link-macro-rx"></block></block>
+  <block id="5f402dad935ff3ab451b558b0df9b4f3" category="paragraph">控制器由主機板、韌體和軟體組成。它控制儲存設備、 I/O 卡、並執行 ONTAP 作業系統軟體。</block>
+  <block id="33a7e77eb8f382b670aecd2f25304362" category="doc">更換 NV 電池 - ASA A70 和 ASA A90</block>
+  <block id="124b0b12b52d6ff2b5c211d8ab2b86c6" category="doc">更換 NVRAM - ASA A70 和 ASA A90</block>
+  <block id="778b3919afeff8e8a35cc6a213bb7784" category="doc">更換電源供應器 - ASA A70 和 ASA A90</block>
+  <block id="591fbd5c7a0e4469981c4bc0919fffdb" category="doc">更換即時時鐘電池 - ASA A70 和 ASA A90</block>
+  <block id="ab89852eb86e2c9aed275b5eab913eb1" category="doc">更換系統管理模組 - ASA A70 和 ASA A90</block>
+  <block id="77dbbb0add58d8d5b96d74c1b27689bb" category="doc">將故障零件退回 NetApp - ASA A1K</block>
+  <block id="8dc08c32c5efe688d7bf76a331f1043b" category="doc">檢查內建加密金鑰 - ASA A1K</block>
+  <block id="6a648d096ab46ad56d57cdcbd2f3fbe9" category="doc">還原加密 - ASA A1K</block>
+  <block id="4f1e6ebf3d99237dad391edcff698e41" category="doc">更換開機媒體概述 - ASA A1K</block>
+  <block id="41ec2d608f4a0ca66575022373e46ea1" category="paragraph">您可以使用 USB 模組作為開機映像、或透過自動開機媒體更換（ BMR ）選項、手動更換故障的開機媒體。</block>
+  <block id="57efd27226590ce2a9ed9d60e73941c5" category="inline-link-macro">自動更換開機媒體</block>
+  <block id="13c486d56a980a07463ae9b26d00f23e" category="list-text"><block ref="13c486d56a980a07463ae9b26d00f23e" category="inline-link-macro-rx"></block></block>
+  <block id="f10ac3acf2f78a54b07401e632bafa47" category="paragraph">自動開機媒體置換會使用部分節點的開機映像、並自動執行適當的開機功能表選項、將開機映像安裝到替換的開機媒體。</block>
+  <block id="8e22ce60290e8b393a0781c3d78c5f34" category="doc">自動開機恢復 - ASA A1K</block>
+  <block id="4815b5bdc49e0c84c1f8a77425bfdc4d" category="doc">開機恢復映像 - ASA A1K</block>
+  <block id="1c1be2f74300d879eb6d6d09021f9e6f" category="doc">更換開機媒體 - ASA A1K</block>
+  <block id="28c83315b64c52bba9c9e7929909e6d8" category="doc">開機媒體更換需求 - ASA A1K</block>
+  <block id="c940611fb67d6f64a97efd7fcbadb1aa" category="doc">開機媒體更換工作流程 - ASA A1K</block>
+  <block id="082133921904299f5767fa9481508279" category="inline-link-macro">自動開機恢復</block>
+  <block id="e6e803f1efe445298b53f7a863d64a0d" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="1038a965ccd4fcfd15bc29df5c77b1f1" category="inline-link-macro-rx"></block></block>
+  <block id="ea317decaa01e895dc8b7b6c778d61c7" category="doc">關閉受損控制器 - ASA A1K</block>
+  <block id="4e06886a3a293250d69c4de44c399306" category="doc">更換控制器模組硬體 - ASA A1K</block>
+  <block id="5a1386c52e6b08376e6eab809d47a5a0" category="doc">將控制器交回 ASA A1K</block>
+  <block id="f1f085ba751b2d8d5db1ad0c7ae5cc03" category="doc">控制器更換需求 - ASA A1K</block>
+  <block id="55960eb9cf1af0070a8d87ac5ec35c50" category="doc">完整控制器更換 - ASA A1K</block>
+  <block id="289510b9a5b70d78d5dde9549bcc6837" category="doc">還原並驗證系統組態 - ASA A1K</block>
+  <block id="bb324afe147f01d9741bad94e9f48fa5" category="doc">控制器更換工作流程 - ASA A1K</block>
+  <block id="12971b2e7d5c8abc7c624fdf8b7cce90" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="00ff41a73d410c5006f78cd4269abce5" category="inline-link-macro-rx"></block>。</block>
+  <block id="573cb7e20352c6ed49fece2c623ec50b" category="doc">更換 DIMM - ASA A1K</block>
+  <block id="d874941f5988be4d767ed305d690f93e" category="doc">更換風扇 - ASA A1K</block>
+  <block id="3f3cad89dab9930e656089557bd4ab26" category="doc">維護 ASA A1K 硬體</block>
+  <block id="c0948273a639518682bdf15da7ef7782" category="paragraph">對於 ASA A1K 儲存系統、您可以對下列元件執行維護程序。</block>
+  <block id="35e5b5e2a149cb42a11b58b5692c3bc7" category="doc">新增 I/O 模組 - ASA A1K</block>
+  <block id="08bb3d4b58b6ff10f6ab9eb64b3fd22a" category="doc">新增與更換 I/O 模組總覽 - ASA A1K</block>
+  <block id="9020be3fd186cc81e1afbf82ce5a906f" category="doc">更換 I/O 模組 - ASA A1K</block>
+  <block id="fdad8a98aa7c396c3422dec81f67cd98" category="summary">維護 ASA R2 A1K 硬體</block>
+  <block id="027f5c29477731f5534fdb86e5704506" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 ASA A1K 系統元件的特定程序。</block>
+  <block id="2147c1a9bd7c91a4dedf7e98867ce532" category="paragraph">本節中的程序假設 A1K 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="7b77f66a99c5493b836984570d410aba" category="doc">更換 NV 電池 - ASA A1K</block>
+  <block id="d40d4bbeff22abe0ae50f578804e3f1d" category="doc">更換 NVRAM - ASA A1K</block>
+  <block id="8280bf46cc1987c5763fa466b06ce943" category="doc">更換電源供應器 - ASA A1K</block>
+  <block id="53211074b0edd2a1e49952ae0a99c70e" category="doc">更換即時時鐘電池 - ASA A1K</block>
+  <block id="35b0e55d79a35d4035adfd05a160d0b1" category="doc">更換系統管理模組 - ASA A1K</block>
+  <block id="791c7d7e48c500e265e759e91a1190c4" category="paragraph">從指定版本的 ONTAP 開始、不再支援下列系統、機櫃和交換器。</block>
+  <block id="e039aa1be61543fd84f1c4eb5d3e9f6b" category="section-title">ONTAP 硬體系統</block>
+  <block id="2d32b3d87a83d9147e0da8371e685ab9" category="section-title">機櫃模組</block>
+  <block id="65cc6c94582f61a33aa4704c52ac52c0" category="cell">機櫃模組</block>
+  <block id="8c5d814fd2a79ee668b40d5bb90febe6" category="paragraph">IOM 6 模組</block>
+  <block id="a50d5562329cec378062f8ecd6f08580" category="doc">將故障部件退回 NetApp - FAS70 和 FAS90</block>
+  <block id="748f3a5b6d81b68d72c4ee26da4759a6" category="doc">檢查內建加密金鑰： FAS70 和 FAS90</block>
+  <block id="70e171be442c06a383310683a983f973" category="doc">還原加密： FAS70 和 FAS90</block>
+  <block id="0f8fed13fee9009a30d0eed748301401" category="doc">引導恢復映像（ FAS70 和 FAS90 ）</block>
+  <block id="3b51f7db40d40ca8865f924da6fb8314" category="doc">更換開機媒體- FAS70和FAS90</block>
+  <block id="5f4c17fc9d1e72d3a0424f0072d6a11e" category="doc">開機媒體取代需求： FAS70 和 FAS90</block>
+  <block id="6c6ba57b9ecf74c6c3e647fe06a8cdec" category="doc">開機媒體更換工作流程： FAS70 和 FAS90</block>
+  <block id="ecda8f0a8ab2239fa58008bc2a6778f3" category="inline-link-macro">檢閱開機媒體更換要求</block>
+  <block id="1246a1947c9d78ac27a693476f2c4ef2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="49f63bb068bbde0e2924e3e81e942570" category="inline-link-macro-rx"></block></block>
+  <block id="789b5a8a8cbbdce99d0cd8864ee0122a" category="doc">關閉受損的控制器- FAS70和FAS90</block>
+  <block id="05b595056622ad7d437a73c41db4bd5b" category="summary">NVMe SSD FlashCache 模組承載器包含一或兩個 FlashCache 模組（快取模組）、每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱插拔、但 FlashCache 模組承載器不是可熱交換的。</block>
+  <block id="aff5c09093f639896fea8aee1334af32" category="doc">更換 FlashCache 模組載體或快取模組： FAS70 和 FAS90</block>
+  <block id="e59c2a74cd130e52d9f5e488b284afd2" category="paragraph">NVMe SSD FlashCache 模組承載器包含一或兩個 FlashCache 模組（快取模組）、每個快取模組均整合一個 SSD FlashCache 磁碟機。</block>
+  <block id="cb31e24fc56b3b07f537f88f0cb0663e" category="paragraph">FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 FlashCache 模組載體中混合使用容量不同的快取模組。</block>
+  <block id="1a0f9807030e2dcfcf3ad16528a90a4c" category="paragraph">根據需要更換的項目、您可以執行下列任一程序：整個 Flashcache 模組載體或快取模組。</block>
+  <block id="7393401d7aa7c5b4209f5909c56bc452" category="list-text"><block ref="74d9532e70287c4c6d14bca0d22b793b" category="inline-xref-macro-rx"></block></block>
+  <block id="2902ee20441450339d3c624a2432953d" category="list-text"><block ref="402920e7db99056d01d15836c97d7e6e" category="inline-xref-macro-rx"></block></block>
+  <block id="da50599709f8ceacbb2f44ac74538cb8" category="section-title">更換 FlashCache 模組承載器</block>
+  <block id="638f93e44a4e5eba8188b65837d38950" category="paragraph">FlashCache 模組承載器位於插槽 6 中、最多可容納兩個 FlashCache 模組。您無法熱交換 FlashCache 模組載體</block>
+  <block id="509e381c6e70d6f5709eab0ac2007056" category="list-text">確保您的儲存系統擁有適當的作業系統、可用於更換 FlashCache 模組承載器。</block>
+  <block id="0ead7a2e2db558cfd790c55a9c76462e" category="list-text">確認所有其他元件正常運作；否則、您必須聯絡技術支援部門。</block>
+  <block id="fd39955a756e9aaa81ca55b2791f9b72" category="example-title">選項 1 大多數系統</block>
+  <block id="d4373786f422d4c41e16fcb4a1e26b83" category="example-title">選項 2 MetroCluster 組態</block>
+  <block id="ae50de269a959e0165943b2893821522" category="section-title">步驟 2 ：更換 FlashCache 模組承載器</block>
+  <block id="a66569371b683ea32e370479ad445c58" category="paragraph">請執行下列步驟以更換 FlashCache 模組承載器。</block>
+  <block id="a78dfa5641477f997773a8a496bc6c27" category="list-text">在插槽 6 中找到故障的 FlashCache 模組承載器、其位置是 FlashCache 模組承載器正面的琥珀色警示 LED 。</block>
+  <block id="c16e4c00d79ee8ef92fcca1fa9492cc2" category="image-alt">移除 FlashCache 模組載體</block>
+  <block id="a6cb82ced449dbb1046ef723067b7901" category="paragraph">FlashCache 模組載體</block>
+  <block id="1cc5afe23260cb08d578b3171ed8bb0d" category="paragraph">快取模組插槽編號</block>
+  <block id="e59c8e65fcdc0d4c15c0c636b94a858d" category="inline-image-macro">編號 3 、寬度 =30px</block>
+  <block id="8a05af75abd6fc3f49203cf49da2d317" category="paragraph"><block ref="8a05af75abd6fc3f49203cf49da2d317" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b87d1c8ec894a37f26543a535e844e8b" category="paragraph">FlashCache 模組承載器 CAM 把手</block>
+  <block id="d2b50b1db5b8da4ed2114760af871828" category="inline-image-macro">編號 4 、寬度 =30px</block>
+  <block id="5a90e3c81380267e2558108db3fd1d30" category="paragraph"><block ref="5a90e3c81380267e2558108db3fd1d30" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dcb325bf6ea5bcab2981a5f7a0a35ede" category="paragraph">FlashCache 模組載體故障 LED</block>
+  <block id="b155caf60041968d40f3e850d614a9be" category="list-text">移除故障的 FlashCache 模組載體：</block>
+  <block id="5e32cbbf004ffb2d2a509ed571493ccc" category="list-text">捏住 FlashCache 模組載體底部的藍色彈片。</block>
+  <block id="9c7e22c30b9aa93d97efb0ef5d7ccaa8" category="list-text">將彈片從模組轉開。</block>
+  <block id="8a8dded5367958de77da2461985e38fd" category="list-text">將 FlashCache 模組承載器從控制器模組中拉出、並將其放在防靜電墊上。</block>
+  <block id="c00f75b52aaf83129bdb959706a88e8c" category="list-text">將快取模組移至替換的 FlashCache 模組載體：</block>
+  <block id="21c6d5df7d87902fb54560352086c7e1" category="list-text">捏住快取模組頂端的 Terra Cotta 標籤、將 CAM 把手轉離快取模組。</block>
+  <block id="4f4941d42ca92d09bfdc51b1db6f1492" category="list-text">將手指插入 CAM 拉桿開口處、然後將模組從 FlashCache 模組承載器中拉出、即可將模組從機箱中移除。</block>
+  <block id="868f5dcbc8a0ef4e68545139a9d4e14f" category="list-text">將快取模組安裝到替換 FlashCache 模組承載器的同一個插槽中、然後將 CAM 把手旋轉到快取模組上的關閉位置、將其鎖定到位。</block>
+  <block id="15810adb6f66a6901a9d5669bbe5721d" category="list-text">如果有第二個快取模組、請重複這些步驟。</block>
+  <block id="79702206636b151f5aa2012db730e395" category="list-text">將替換的 FlashCache 模組承載器安裝到系統中：</block>
+  <block id="b5c24cb45faff065206365210b18a04d" category="paragraph">更換 FlashCache 模組承載器之後、您必須重新啟動控制器模組。</block>
+  <block id="cdbccebd677a8b1d134192f19ecf3f8b" category="section-title">更換快取模組</block>
+  <block id="6ce18d354fca16bc5032faa6fef743c0" category="paragraph">FlashCache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中、或插槽 6-1 和插槽 6-2 中。</block>
+  <block id="c124cf7f1b815bf5f6c6e601798519fa" category="paragraph">您可以使用同一廠商或其他支援廠商提供的相同容量快取模組來熱交換個別的快取模組。</block>
+  <block id="f3852a3ed3dc942e88ae4523de9161a2" category="list-text">確保更換快取模組的容量與故障模組、來自同一廠商或其他支援廠商的容量相同。</block>
+  <block id="6451bd5ba5fd42e2e0da530ac0e1f08d" category="list-text">快取模組中的磁碟機不是現場可更換單元（ FRU ）。您必須更換整個快取模組。</block>
+  <block id="9c1bad509ae6fec63a611f59839781a9" category="list-text">在目標節點上記錄快取模組容量、零件編號和序號： _ 系統節點執行本機 sysconfig -av 6_</block>
+  <block id="61e018fd4f7a1d45f87d61b9f7658c42" category="list-text">在管理權限層級中、準備要移除的目標快取模<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>組插槽、並在系統提示是否繼續時回應： _system 控制器插槽模組移除 -node_name -slot slate_number_ 下列命令會準備好節點 1 上的插槽 6-1 以供移除、並顯示一則訊息、表示可以安全移除：</block>
+  <block id="934081772f57be69e8d6b398f1465dd1" category="paragraph">快取模組插槽狀態會顯示在<block ref="006ec0ed628b8a842343b62d6db2dedc" prefix=" " category="inline-code"></block>需要更換之快取模組的畫面輸出中。</block>
+  <block id="7fef4d7d593e0209d1b72c968992f0d3" category="image-alt">移除快取模組</block>
+  <block id="f6c9707e7b722f478882c6903c0ab72a" category="paragraph">快取模組 CAM 把手</block>
+  <block id="6bc5838b4111c8e8e34c5a24a2c44cb0" category="paragraph">快取模組故障 LED</block>
+  <block id="9afed1489f4d1563ca216b11c1352728" category="list-text">轉動凸輪把手至最遠的位置。</block>
+  <block id="39ce51da7e9a2b8c7e5c38a0066b127f" category="list-text">將手指插入 CAM 槓桿開口處、然後將模組從 FlashCache 模組承載器中拉出、即可將快取模組模組模組從機箱中移除。</block>
+  <block id="8fa7d40c54b52a6cdc5ee7ed5fd71a29" category="paragraph">從 FlashCache 模組載體中移除快取模組時、請務必支援快取模組。</block>
+  <block id="8de7e250263d4ca2d8dc62ef2ed1f825" category="list-text">將快取模組的邊緣與控制器模組的開口對齊。</block>
+  <block id="15add6e162f9346663b8cfaeb8d3f8c7" category="doc">更換控制器模組： FAS70 和 FAS90</block>
+  <block id="550ddae6f9579850ff21dd2afce3b69f" category="doc">退回控制器： FAS70 和 FAS90</block>
+  <block id="80f07ddf78cb802c13652dcdc6c599e5" category="doc">控制器更換要求： FAS70 和 FAS90</block>
+  <block id="f8d51288fb4ee263d7c5f31e51171750" category="doc">完整更換控制器： FAS70 和 FAS90</block>
+  <block id="d983ccd4d97ffd0fa5b933bbaab409e4" category="doc">還原並驗證系統組態- FAS70和FAS90</block>
+  <block id="04282533026fa8b748313a7d787b47cf" category="doc">控制器更換工作流程： FAS70 和 FAS90</block>
+  <block id="a700e9422898949d6ff77959a854a7a9" category="doc">更換DIMM - FAS70和FAS90</block>
+  <block id="5dc26d52c4b6e5cf5bcb2431d330c71a" category="doc">更換風扇： FAS70 和 FAS90</block>
+  <block id="66fcecbe990925a3be0fa5916450b2cb" category="summary">維護 FAS70 和 FAS90 硬體</block>
+  <block id="34c746d23b7cf4463933622d91a5b1d7" category="doc">維護 FAS70 和 FAS90 硬體</block>
+  <block id="8abd22d3bded128a109fa097e39e3393" category="paragraph">對於 FAS70 和 FAS90 儲存系統、您可以在下列元件上執行維護程序。</block>
+  <block id="afdecf6e01d418088d8efe8ec740e124" category="doc">為硬體佈線： FAS70 和 FAS90</block>
+  <block id="d4521b1f762680060767a2b3b4536538" category="paragraph">為 FAS70 或 FAS90 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並在控制器和儲存櫃之間連接纜線。</block>
+  <block id="ae7c727e223a1d2deec760bd5f18ce6c" category="paragraph">這些程序說明如何將控制器連接至一個或兩個機櫃 NS224 或兩個或四個 DS460C 機櫃。您最多可以直接將四個 NS224 機櫃連線至控制器。</block>
+  <block id="569dac545e40be673c584de70f4235a1" category="inline-image-macro">纜線控制器 A 連接埠 e11a e11b E10A 和 e10b 至兩個 NS224 機櫃</block>
+  <block id="697b5deffc4baf7cf1e414340d1affc7" category="paragraph"><block ref="697b5deffc4baf7cf1e414340d1affc7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5bea2e91cbb8ca7d6fd0557744fb2f55" category="inline-image-macro">纜線控制器 B 連接埠 e11a e11b E10A 和 e10b 至兩個 NS224 機櫃</block>
+  <block id="fe891893c56d609d92e9a98afec594f8" category="paragraph"><block ref="fe891893c56d609d92e9a98afec594f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f085245083fa4d2d0cb2565b8e3e1d12" category="open-title">選項 3 ：連接兩個 DS460C 機櫃的纜線</block>
+  <block id="279918ca34aa6db648a2dbee46ff3ab9" category="paragraph">將每個控制器連接至兩個 DS460C 機櫃上的 IOM 模組。圖形顯示每個控制器的纜線：藍色控制器 A 纜線、黃色控制器 B 纜線。</block>
+  <block id="5e8bd9e3dbab26401b61204dc74109f0" category="paragraph">* Mini-SAS HD 纜線 *</block>
+  <block id="0da5c300bf112189987b87a7f94a807d" category="image-alt">Mini-SAS HD 纜線</block>
+  <block id="a6b51f7309f8a96381954d2fb08c3a4f" category="list-text">將連接埠 E10A 連接至機櫃 1 IOM A 連接埠 1 。</block>
+  <block id="e759f488683918b56801c4590f84db68" category="list-text">將連接埠 e10c 連接至機櫃 2 IOM A 連接埠 1</block>
+  <block id="118b1fc0380a5666e91eb5c1cd7163c4" category="list-text">將連接埠 e11b 連接至機櫃 1 IOM B 連接埠 3 。</block>
+  <block id="f111df0e731e98dba82d53c6fe2470e5" category="list-text">將連接埠 e11d 連接至機櫃 2 IOM B 連接埠 3 。</block>
+  <block id="43b710da46adbe94522b0bc577277838" category="inline-image-macro">纜線控制器 A 連接埠 E10A e10c 、 e11b 和 e11d 至兩個 DS460C 機櫃</block>
+  <block id="625c8b437b2679e3ec9bb01ec4159510" category="paragraph"><block ref="625c8b437b2679e3ec9bb01ec4159510" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba6979fa37b7cb51ba00ed5f2305e1c4" category="list-text">將連接埠 E10A 連接至機櫃 1 IOM B 連接埠 1 。</block>
+  <block id="f4fc8869d53012509b6fb82b430000c9" category="list-text">將連接埠 e10c 連接至機櫃 2 IOM B 連接埠 1 。</block>
+  <block id="d353257cc4d6d9b59b9a46f958087b7d" category="list-text">將連接埠 e11b 連接至機櫃 1 IOM A 連接埠 3 。</block>
+  <block id="469bce1e9ff1ef07ce82b10b48028724" category="list-text">將連接埠 e11d 連接至機櫃 2 IOM A 連接埠 3 。</block>
+  <block id="52836f6bdc480c8c3fc5dcbb9b5bd683" category="inline-image-macro">纜線控制器 B 連接埠 E10A e10c 、 e11b 和 e11d 至兩個 DS460C 機櫃</block>
+  <block id="552d44762a43ddc762f1255c8680368c" category="paragraph"><block ref="552d44762a43ddc762f1255c8680368c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6076d59638af62c513db60414806ba6a" category="inline-link-macro">開啟 FAS70 或 FAS90 儲存系統的電源</block>
+  <block id="0b38b0938783d2cf1b3800f66d5154c3" category="paragraph">爲 FAS70 或 FAS90 系統連接好硬件之後<block ref="9d70727ad16ec47c3b1ffe9fcd624399" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="c847155be497cfc98de50193bb0ef4e3" category="doc">完整的儲存系統設定與組態： FAS70 與 FAS90</block>
+  <block id="a88ce76514a173cf2bddffce66860b3a" category="doc">安裝硬體： FAS70 和 FAS90</block>
+  <block id="8f4b2475d7c4e7fd5a95811a1509212a" category="paragraph">準備好安裝 FAS70 或 FAS90 儲存系統之後、請為系統安裝硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
+  <block id="6416cb7210c1cd9b1d9cc413f9b62376" category="inline-link-macro">為 FAS70 或 FAS90 儲存系統連接硬體。</block>
+  <block id="c9ecf6c24d42c6c195a5d283af95a0b4" category="paragraph">安裝 FAS70 或 FAS90 儲存系統的硬體之後<block ref="66229e533d818dbc7b41a3001638f04f" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="90bee630c9da2d7d494cda69da33a583" category="summary">按照以下高級步驟安裝和設置 FAS70 和 FAS90 存儲系統，並將其部署爲 ONTAP 系統中的節點。</block>
+  <block id="9b2aaebbf51e1beb36472d0ce0cc3185" category="doc">安裝與組態工作流程： FAS70 與 FAS90</block>
+  <block id="bedb87d7b2671b0ded93144a6ce3c345" category="paragraph">若要安裝和設定 FAS70 或 FAS90 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。</block>
+  <block id="a0c43cd9aeb7f94be9076ed8c95706fb" category="inline-link-macro">準備安裝 FAS70 或 FAS90 儲存系統</block>
+  <block id="03038d89562db71b4208b0f1ef0e3d79" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="f030a1160b10da45f22dd391df991b09" category="inline-link-macro-rx"></block></block>
+  <block id="ad3c2f94364bdbe794c9d0bd11e31501" category="inline-link-macro">安裝 FAS70 或 FAS90 儲存系統的硬體</block>
+  <block id="6994c69e57e955b9b88f81d98be8d9f7" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="75ce63e787b80182c284c9226e3c5399" category="inline-link-macro-rx"></block></block>
+  <block id="6d02cd7e9f3fbb6796e86513c17e2dfb" category="inline-link-macro">為 FAS70 或 FAS90 儲存系統的控制器和儲存櫃佈線</block>
+  <block id="de6952744c4efa4af3b088924141554c" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="47f9cb95cf9bc2df13978b8a91985b13" category="inline-link-macro-rx"></block></block>
+  <block id="a817c10af381296411c154c716af48b7" category="inline-link-macro">開啟 FAS70 或 FAS90 儲存系統的電源</block>
+  <block id="b2f6fbbaf5842fe5addbaac3aabc158d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="164a6e7d5b74e1ce7eb1009b0b13e4f3" category="inline-link-macro-rx"></block></block>
+  <block id="dca1bb25aacd58a886c534d26e411b34" category="paragraph">開啟控制器電源之前、請先開啟每個機櫃的電源、並指派唯一的機櫃 ID 、以確保每個機櫃在設定中都能唯一識別。</block>
+  <block id="7bf2fa9e265a50a618153953f60062b9" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成儲存系統的叢集組態。</block>
+  <block id="d9eb7005000baef74822bf5afd90707b" category="doc">開啟儲存系統電源： FAS70 和 FAS90</block>
+  <block id="f6d3448cfd45b6a4ae23d47aec38dd6f" category="paragraph">為 FAS70 0r FAS90 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
+  <block id="7678c73f0b90edbadbeeacf02256f941" category="paragraph">在您開啟 FAS70 或 FAS90 儲存系統之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="971e955dfe15e7503ed5654ed6ebd8e0" category="summary">準備安裝 FAS70 和 FAS90 平台。</block>
+  <block id="03162faf493040269b3b60738c942373" category="doc">準備安裝： FAS70 和 FAS90</block>
+  <block id="5c3b9df48b8876003c4bc9bef5a99d08" category="paragraph">準備安裝 FAS70 或 FAS90 儲存系統、方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
+  <block id="c122f93f0a8c0d86fe624d89c395a42d" category="inline-link-macro">安裝 FAS70 或 FAS90 儲存系統的硬體</block>
+  <block id="9ed07b45e5e582647bc2df0721e7b250" category="paragraph">準備好安裝 FAS70 或 FAS90 硬體之後<block ref="8b675fcd81dca00f177be4137f647288" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="6a9167a5943a2edebb563033d742c92d" category="doc">安裝要求： FAS70 和 FAS90</block>
+  <block id="9ab04ed2ca5bf9f3a53912fe8182bc26" category="paragraph">檢閱 FAS70 或 FAS90 儲存系統和儲存櫃所需的設備和提升注意事項。</block>
+  <block id="4bcd9ea495d5d070dfd7277883825b09" category="paragraph">若要安裝 FAS70 或 FAS90 儲存系統、您需要下列設備和工具。</block>
+  <block id="8018872d59cd903e3be8eabdcfd25213" category="paragraph">FAS70 和 FAS90 儲存系統、 NS224 儲存櫃和 DS460C 儲存櫃非常繁重。抬起和移動這些項目時請務必謹慎。</block>
+  <block id="ba0156151072eea87a571e4e7ebcfc77" category="section-title">FAS70 和 FAS90 儲存系統</block>
+  <block id="831a011f3efcfa2b56239bdfd5507fdc" category="paragraph">FAS70 或 FAS90 儲存系統的重量可達 62.83 磅（ 28.5 公斤）。若要抬起系統、請使用兩個人或液壓舉升設備。</block>
+  <block id="d7c4e8ded75a649c909a48d80b0ce125" category="image-alt">FAS70 和 FAS90 提升注意事項圖示</block>
+  <block id="aec8e07370e7c72963dcbf3098d2a8ad" category="section-title">DS460C 機櫃</block>
+  <block id="4d6b6f2c7361a56bd8cf3f0aa9e75301" category="paragraph">DS460C 機櫃最重可達 360.4 磅（ 181.1 公斤）。若要抬起儲存架、您可能需要最多五個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。</block>
+  <block id="3f7ff5a5fa66b539e61c49c16ecbff4c" category="image-alt">DS460C 舉升注意事項</block>
+  <block id="6948cb33670435c578dc2ed5f9bd0547" category="inline-link-macro">準備安裝 FAS70 或 FAS90 儲存系統</block>
+  <block id="5060dc7c2f8e62d845323bb56c316f67" category="paragraph">在您檢閱過硬體需求之後<block ref="f9fa58ae9ecc3e85b1db488d30bad78e" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="be14e637d91ce3936aa6ff689b8a329b" category="doc">新增 I/O 模組： FAS70 和 FAS90</block>
+  <block id="084b1e640bb60c632f3727967b6b5ead" category="doc">新增與更換 I/O 模組的總覽： FAS70 與 FAS90</block>
+  <block id="6177b8fb5c4b14da752dc936dbe29ae8" category="doc">更換 I/O 模組： FAS70 和 FAS90</block>
+  <block id="2b104c49f9b8bb92d09875a956d19795" category="paragraph">您可能需要在硬體上執行維護程序。本節將介紹維護 FAS70 和 FAS90 系統元件的特定程序。</block>
+  <block id="2b90a1267a3b7e2b64a23c5c62d7f171" category="paragraph">本節中的程序假設 FAS70 和 FAS90 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="37461bd85478fb33903c38944a96af87" category="inline-link-macro">FlashCache</block>
+  <block id="0b85bf5744472ad352d98cea5a764ba0" category="paragraph"><block ref="0b85bf5744472ad352d98cea5a764ba0" category="inline-link-macro-rx"></block></block>
+  <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。</block>
+  <block id="f15dd37cefd717a7d017e45fe876146c" category="doc">更換 NV 電池： FAS70 和 FAS90</block>
+  <block id="c4ed6403201dfa217ff707bb31f7629c" category="doc">更換 NVRAM ： FAS70 和 FAS90</block>
+  <block id="031f9f009940597777a75796e5b17818" category="doc">更換電源供應器- FAS70和FAS90</block>
+  <block id="6edcaa0f49095aafb0fa011d3fa4d4c5" category="doc">更換即時時鐘電池- FAS70和FAS90</block>
+  <block id="726f515449f8f7ce4011ad297cfea213" category="doc">更換系統管理模組： FAS70 和 FAS90</block>
+  <block id="d387637ce68cde3388b8e2a316fb8a4b" category="summary">若要使用 ONTAP 硬體系統開始運作、請在 ONTAP 中安裝硬體元件、連接硬體纜線、以及設定儲存設備。</block>
+  <block id="945e4ff7a51b59276f6c6ba3a9c5015f" category="doc">使用 ONTAP 硬體系統開始運作</block>
+  <block id="4fc0cdfd3bfeb9e0deca202a13e34c80" category="list-text"><block ref="4fc0cdfd3bfeb9e0deca202a13e34c80" category="inline-link-macro-rx"></block></block>
+  <block id="8c5eb3dbb6b3d670e3fc6421519373f1" category="list-text"><block ref="8c5eb3dbb6b3d670e3fc6421519373f1" category="inline-link-macro-rx"></block></block>
+  <block id="4c244902624c963eb43fc2a03390bad9" category="list-text"><block ref="4c244902624c963eb43fc2a03390bad9" category="inline-link-macro-rx"></block></block>
+  <block id="3580bbbde4ec039cae29775a19e738cf" category="list-text"><block ref="3580bbbde4ec039cae29775a19e738cf" category="inline-link-macro-rx"></block></block>
+  <block id="46f064cfa94ee5451ec1e4c8af3f8b7f" category="list-text"><block ref="46f064cfa94ee5451ec1e4c8af3f8b7f" category="inline-link-macro-rx"></block></block>
+  <block id="c0eb5985b209bb421162c4d51fd35a0a" category="list-text"><block ref="a2fed96771de6267f038dd37162b39dd" category="inline-link-macro-rx"></block>^</block>
+  <block id="b11226c776ec1b74f6a42f871e3194c9" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>安裝儲存系統和儲存櫃</block>
+  <block id="130792cb3edc8d0afffb557e50b218c3" category="paragraph">在機櫃或機架中安裝儲存系統和儲存櫃。存取您平台機型的安裝與設定指示。</block>
+  <block id="068ae8c131ffb072979dc366a738f61d" category="paragraph">** ASA R2 系統 **</block>
+  <block id="7bf4e86b8c2f5ff036932a932f9dc604" category="list-text"><block ref="7bf4e86b8c2f5ff036932a932f9dc604" category="inline-link-rx"></block></block>
+  <block id="6a5e44bab29f77a10ee8291f7122dcd0" category="list-text"><block ref="6a5e44bab29f77a10ee8291f7122dcd0" category="inline-link-macro-rx"></block></block>
+  <block id="d512abd366eb57b9be4a31cb2c1bc065" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>設定 ONTAP 叢集</block>
+  <block id="3ab6aa369c3f9b8276a331929da6f82c" category="example-title">連接至 ASA A1K 的纜線架</block>
+  <block id="5085ff6c350861af4448d82a2c958fe8" category="paragraph">您可以將最多三個額外的 NS224 機櫃（總共四個機櫃）熱新增至 ASA A1K HA 配對。</block>
+  <block id="b96506939d3be5ee82870422bae11f18" category="image-alt">ASA A1K 纜線、含兩個機櫃和兩個 IO 模組</block>
+  <block id="7c5aa1be4042527c8f9979e790cb45ad" category="image-alt">ASA A1K 纜線、含三個機櫃和三個 IO 模組</block>
+  <block id="09bb2c93b169f0c519beed078ec84db3" category="image-alt">ASA A1K 纜線、含三個機櫃和四個 IO 模組</block>
+  <block id="568d158739474681892c0a2e2456188d" category="image-alt">ASA A1K 纜線、含四個機櫃和四個 IO 模組</block>
+  <block id="ae9e439bbd5c00f8b8a1bc7a935729c7" category="example-title">連接至 ASA A70 或 ASA A90 的纜線架</block>
+  <block id="9e4b32259f721cc54024969657de5534" category="paragraph">當需要額外儲存（至內部機櫃）時、您最多可以將兩個 NS224 機櫃熱新增至 ASA A70 或 ASA A90 HA 配對。</block>
+  <block id="087914c8dfa7abbb50d9c6d8ec5daab1" category="image-alt">ASA A70 或 A90 的纜線、含一個機櫃和一個 IO 模組</block>
+  <block id="1bc9489d5803221329c048bb065c42ec" category="image-alt">ASA A70 或 A90 的纜線、含一個機櫃和兩個 IO 模組</block>
+  <block id="cdd4188b076dc68d9ffe52ac80b230c6" category="image-alt">ASA A70 或 A90 的纜線、含兩個機櫃和兩個 IO 模組</block>
+  <block id="5504dbe3d15add2b154d96c08b4219f8" category="summary">瞭解 ONTAP 硬體系統的新功能。</block>
+  <block id="55ec693931401ff7a634100e33ff8cfd" category="doc">ONTAP 硬體系統的新功能</block>
+  <block id="4d8d9056b62fc01f5cd3f0898c551fde" category="section-title">平台支援</block>
+  <block id="9b6c50e7cbf80c446a0078ceb63104d0" category="section-title">交換器支援</block>
+  <block id="9e45acb5527cc27def9ca29f3c4f975a" category="section-title">機櫃支援</block>
+  <block id="8b7d77c01d38c84bb43dc7c32fdd87ed" category="section-title">硬體更新</block>
+  <block id="ec6e72d1c4bb7dccdc62b6caf35c95f7" category="sidebar">ONTAP 硬體系統文件</block>
+  <block id="64f78e10c5d8a4db6f25299bf9a418cd" category="sidebar">AFF A 系列和 C 系列系統旨在協助組織更快速地轉型基礎架構、並推動資料導向策略。</block>
+  <block id="d186b8a54af216bfae7a9573dc3dfd54" category="sidebar">AFF 系統文件說明如何安裝、設定及維護 AFF A 系列和 C 系列系統。</block>
+  <block id="8b4ad289620e7b0611000ddd6fa583c3" category="sidebar">安裝及設定 A 系列系統</block>
+  <block id="c91d48fe9284f4d299615b787ff7c882" category="sidebar">安裝和設定 C 系列系統</block>
+  <block id="d82b198ed12fecd580981b34c4959490" category="sidebar">維護 A 系列系統</block>
+  <block id="e32ee65ffedbf05873ffce177cee51b5" category="sidebar">維護 C 系列系統</block>
+  <block id="7ff670d73112c0badc0ffbf90ef75168" category="sidebar">ASA A 系列和 C 系列機型提供完整的效能和容量、可滿足您的需求。</block>
+  <block id="0ab1a7883d0399cbaf77a2e38633a6ea" category="sidebar">全新的 NetApp ASA R2 系統（ ASA A1K 、 ASA A70 和 ASA A90 ）提供統一化的硬體與軟體解決方案、可針對僅限 SAN 的客戶需求、提供簡化的體驗。</block>
+  <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2 儲存系統文件可讓您安裝、設定及維護 ASA R2 系統。</block>
+  <block id="e995d56efd9e31d97825dd79be4d1383" category="sidebar">瞭解 ASA R2 儲存系統</block>
+  <block id="aa0dbb314a1c2c27148345705facc55c" category="sidebar">安裝及維護 ASA R2 系統</block>
+  <block id="9fd07d4ea56c68343a06b54bb812a542" category="sidebar">安裝 ASA R2 系統</block>
+  <block id="8fda9baf5c444d9fabfd7a057b52cd9b" category="sidebar">維護 ASA R2 系統</block>
+  <block id="92b6233e72ec5d4d856d5db06f7e1617" category="sidebar">管理 ASA R2 系統上的資料</block>
+  <block id="4906f544b7a764889e992fe4877ad659" category="sidebar">配置SAN儲存設備</block>
+  <block id="5fdb60d5b6b01cf54020a91ba4c6d229" category="sidebar">複製資料</block>
+  <block id="32d4bffffe6ace22e290e61f1bb14489" category="sidebar">修改儲存單元</block>
+  <block id="60494656427b8fca790b2a03df5ba844" category="sidebar">保護和保護 ASA R2 系統上的資料</block>
+  <block id="d0dfdfe73aea97321d81327461d381a2" category="sidebar">建立快照</block>
+  <block id="8d6905d51dacb11051a0666d04bc75af" category="sidebar">設定快照複寫</block>
+  <block id="adfd33fbce17f21dd8572d1c07677009" category="sidebar">加密靜態資料</block>
+  <block id="d8f87ca27811771e6005ec1e8989bb8c" category="sidebar">更多 ASA R2 資源</block>
+  <block id="f3497351aae46692e603fedb2f2cd146" category="sidebar">ONTAP 命令參照</block>
+  <block id="8162203e3ec38c896e5f6d688115d731" category="sidebar">ONTAP REST API 參考</block>
+  <block id="27c7ca02055622739ea07ba1243d7683" category="sidebar">ONTAP EMS 參考</block>
+  <block id="2a2dfadb84e98697260fabd8a1ba63ea" category="sidebar">您可能需要在硬體上執行維護程序。本節說明維護 ASA r2 系統元件的特定程序。</block>
+  <block id="9823a9d702614ebe046cb789d32b241d" category="sidebar">瞭解如何維護 ASA R2 系統。</block>
+  <block id="8cf7baf96983d1c70a286576ddcd0ca1" category="sidebar">ASA A70 和 ASA A90</block>
+  <block id="91be56ff709f018bb7b1a4c33c68d316" category="sidebar">A 系列系統</block>
+  <block id="078c4b575f196efdc8ec79e58f26db9f" category="sidebar">C 系列系統</block>
+  <block id="2d0e9a7694bf5bc701c3af145a6bba71" category="sidebar">檢閱要求</block>
+  <block id="f76aaf3aaa7b30238e7a3e2b1a04493b" category="sidebar">準備安裝</block>
+  <block id="c04a102db19c0f27b4baba04f06a5101" category="sidebar">AFF 系統</block>
+  <block id="0ae12fc328f40fde90c0d918815ffb73" category="sidebar">ASA 系統</block>
+  <block id="f849712563d4903661dc53ab87c833ed" category="sidebar">ASA R2 系統</block>
+  <block id="03f15d4e5abe2379224af55ea714e8fd" category="sidebar">ASA A70 和 ASA A90 系統</block>
+  <block id="c253f108fc5f96327e5ecda9ef089a1b" category="sidebar">ASA A70 、 ASA A90 維護</block>
+  <block id="df1d6f82313f8d9132cd488bae08c033" category="sidebar">ASA A70 、 ASA A90 開機媒體</block>
+  <block id="9c00140ee30800a9dd0418b3e4b50890" category="sidebar">開機媒體總覽</block>
+  <block id="dfe2942e1a0a327adbd4a361fb49561a" category="sidebar">自動化方法</block>
+  <block id="e0f5268186ba6af55aa3b68c29a31380" category="sidebar">還原開機媒體上的映像</block>
+  <block id="0791dbb6487467ff29dea5c517f0f506" category="sidebar">手動方法</block>
+  <block id="97e477b4150fe1457e5cd11f8c264d43" category="sidebar">ASA A70 、 ASA A90 機箱</block>
+  <block id="b00485fc6776c1825afb571c5231342d" category="sidebar">ASA A70 、 ASA A90 控制器模組</block>
+  <block id="7b51a70874531a1eb0a69494afcf3fc1" category="sidebar">ASA A1K 系統</block>
+  <block id="81bf1a749a21a3e7b187281a18e24c73" category="sidebar">ASA A1K 維護</block>
+  <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1K 開機媒體</block>
+  <block id="24a668377474f9c183ccfff9d67241ee" category="sidebar">ASA A1K 控制器模組</block>
+  <block id="8bca279955a75b6da98b2910714ce7ed" category="sidebar">維護 ASA R2 系統</block>
+  <block id="7b2d89b8fc4544d7b3fc7e1ae3e2a79b" category="sidebar">FAS70和FAS90系統</block>
+  <block id="4b073adaa8e84c0107a4d144653519e6" category="sidebar">FAS70 和 FAS90 安裝和設置</block>
+  <block id="db79c96e3435962e695832e0fd51205b" category="sidebar">FAS70 和 FAS90 保持不變</block>
+  <block id="546320f5b1318ecbf9a2d5efa8278b70" category="sidebar">FAS70 和 FAS90 Boot Media</block>
+  <block id="bbd90c57f0c4facd0e407d460b63f5e4" category="sidebar">FAS70 和 FAS90 控制器模塊</block>
+  <block id="6aa2bbbbcd863a688ecea951a078cc57" category="sidebar">FlashCache 模組</block>
 </blocks>

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys 
 summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
 ---
-= 檢查機載加密金鑰 - AFF A70 、 AFF A90
+= 檢查內建加密金鑰 - AFF A70 和 AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,7 +17,7 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 
 
 
-== 在執行ONTAP Se 9.15及更新版本的系統上檢查NVE或NSE
+== 檢查系統上的 NVE 或 NSE
 
 在關閉受損控制器之前、您需要確認系統是否已啟用安全金鑰管理程式或加密磁碟。
 
