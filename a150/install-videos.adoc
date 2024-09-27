@@ -16,3 +16,5 @@ summary: 下列影片說明如何安裝及連接系統纜線。
 .動畫- AFF 安裝及設定一套非洲版的
 video::561d941a-f387-4eb9-a10a-afb30029eb36[panopto]
 如果您有 MetroCluster 組態、請使用 https://docs.netapp.com/us-en/ontap-metrocluster/index.html["本文檔MetroCluster"^]。
+
+* 警告： * 如果您的系統正在安裝 ONTAP 9 。 13.1P8 - 9.13.1P11 、 ONTAP 9 。 14.1P1 - 9.14.1P7 或 ONTAP 9 。 15.1-9.15.1P2 、且您的系統包含 10 個以上的內部固態硬碟、則您必須採取額外步驟、準備系統以進行安裝。請參閱問題 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/JiraNgage/CONTAP-285173["CONTAP-285173 - ADP 不會在具有 10 個或更多內部磁碟機的 AFF A150 上留下備用根分割區"^]。

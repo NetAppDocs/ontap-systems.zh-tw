@@ -41,28 +41,5 @@ ONTAP 9 。 16.0 或更早版本
 
 
 
-
-
- a| 
-ONTAP 9.16.1 或更新版本
- a| 
-.. 在功能受損的控制器上、當系統提示您還原備份組態時、請按 _y_ 。
-+
-還原程序成功後、此訊息會顯示在主控台 - 上 `syncflash_partner: Restore from partner complete`。
-
-.. 在功能受損的控制器上、當系統提示您確認還原備份是否成功時、請按 _y_ 。
-.. 在功能受損的控制器上、當系統提示您使用還原的組態時、請按 _y_ 。
-.. 在功能受損的控制器上、當系統提示您重新啟動節點時、請按 _y_ 。
-.. 在功能受損的控制器上、當系統提示您重新啟動功能受損的控制器時、請按 _y_ 、然後按下 _Ctrl-c_ 進入開機功能表。
-.. 如果系統不使用加密功能、請選擇 _ 選項 1 正常開機 _ 、否則請前往 link:bootmedia-encryption-restore.html["還原關鍵管理程式"]。
-.. 將主控台纜線連接至合作夥伴控制器。
-.. 使用 _storage 容錯移轉恢復 -fromnode local_ 命令將控制器歸還。
-.. 如果您使用 _storage 容錯移轉 modify -node local -auto-贈 品 true_ 命令停用、請還原自動恢復。
-.. 如果啟用 AutoSupport 、請使用 _system 節點 AutoSupport 呼叫 -node* -type all -message MAIS=end_ 命令、還原 / 恢復自動建立個案。
-+
-* 注意： * 如果程序失敗、請聯絡 https://support.netapp.com["NetApp支援"]。
-
-
-
 |===
 

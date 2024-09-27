@@ -11,6 +11,8 @@ summary: 本指南提供從機架安裝和纜線安裝到初始系統啟動的�
 
 
 [role="lead"]
+* 警告： * 如果您的系統正在安裝 ONTAP 9 。 13.1P8 - 9.13.1P11 、 ONTAP 9 。 14.1P1 - 9.14.1P7 或 ONTAP 9 。 15.1-9.15.1P2 、且您的系統包含 10 個以上的內部固態硬碟、則您必須採取額外步驟、準備系統以進行安裝。請參閱問題 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/JiraNgage/CONTAP-285173["CONTAP-285173 - ADP 不會在具有 10 個或更多內部磁碟機的 AFF A150 上留下備用根分割區"^]。
+
 安裝與設定說明會提供典型系統安裝的圖形指示、從機架安裝和纜線、到初始系統開機。如果您熟悉NetApp系統的安裝、請使用本指南。
 
 使用連結： link:../media/PDF/Jan_2024_Rev2_AFFA150_ISI_IEOPS-1480.pdf["《系統安裝與設定說明》（英文AFF ）"^]

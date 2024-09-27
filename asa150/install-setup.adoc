@@ -28,3 +28,5 @@ summary: 安裝及設定系統。
 
 
 如果您的系統採用MetroCluster 不知道IP組態、請參閱 https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html["安裝MetroCluster 不需要的IP組態"] 說明。
+
+* 警告： * 如果您的系統正在安裝 ONTAP 9 。 13.1P8 - 9.13.1P11 、 ONTAP 9 。 14.1P1 - 9.14.1P7 或 ONTAP 9 。 15.1-9.15.1P2 、且您的系統包含 10 個以上的內部固態硬碟、則您必須採取額外步驟、準備系統以進行安裝。請參閱問題 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/JiraNgage/CONTAP-285173["CONTAP-285173 - ADP 不會在具有 10 個或更多內部磁碟機的 AFF A150 上留下備用根分割區"^]。

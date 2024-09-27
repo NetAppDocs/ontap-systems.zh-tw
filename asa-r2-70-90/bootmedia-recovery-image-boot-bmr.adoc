@@ -11,21 +11,12 @@ summary: 您可以透過自動開機還原程序、從合作夥伴控制器還�
 
 
 [role="lead"]
-您可以使用自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。
-
-選取符合您組態的單一節點自動還原選項。
-
-[role="tabbed-block"]
-====
-.選項 1 ：不加密的還原
---
-您可以在 `boot_recovery -partner`執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台上使用命令、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
+您可以使用搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 系統、從合作夥伴節點還原 ONTAP 映像（開機媒體還原） `boot_recovery -partner`。
 
 .開始之前
 當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
 
-[listing]
-----
+....
 
 Can't find primary boot device u0a.0
 Can't find backup boot device u0a.1
@@ -44,8 +35,16 @@ ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kern
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
 
-----
+....
 如果您看到此訊息、則必須還原 ONTAP 映像
+
+選取符合您組態的單一節點自動還原選項。
+
+[role="tabbed-block"]
+====
+.選項 1 ：不加密的還原
+--
+還原開機媒體映像。
 
 .步驟
 . 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
@@ -103,32 +102,7 @@ varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 --
 .選項 2 ：使用內建金鑰管理程式進行還原
 --
-您可以使用 `boot_recovery -partner`搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
-
-.開始之前
-當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
-
-....
-
-Can't find primary boot device u0a.0
-Can't find backup boot device u0a.1
-ACPI RSDP Found at 0x777fe014
-
-
-Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
-
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
-
-
-Autoboot of PRIMARY image failed. Device not found (-6)
-LOADER-A>
-
-....
-如果您看到此訊息、則必須還原 ONTAP 映像
+還原開機媒體映像。
 
 .步驟
 . 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
@@ -186,30 +160,7 @@ Successfully recovered keymanager secrets.
 --
 .選項 3 ：使用外部金鑰管理程式進行還原
 --
-您可以使用 `boot_recovery -partner`搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
-
-當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
-
-....
-
-Can't find primary boot device u0a.0
-Can't find backup boot device u0a.1
-ACPI RSDP Found at 0x777fe014
-
-
-Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
-
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
-
-
-Autoboot of PRIMARY image failed. Device not found (-6)
-LOADER-A>
-....
-如果您看到此訊息、則必須還原 ONTAP 映像。
+還原開機媒體映像。
 
 .步驟
 . 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
@@ -248,58 +199,6 @@ Bootmenu Option 11 會提示使用者輸入所有的 EKM 組態資訊、以便�
 
 +
 驗證 `x-NETAPP-ClusterName: <cluster name>`叢集 UUID 和 `x-NETAPP-KeyUsage: "MROOT-AK"` Keystore UUID 屬性的、以確保您擁有正確的金鑰。
-
-
-
-. 監控將 Mroot-AK 擷取及還原至 ONTAP 節點。
-. 如果程序無法還原金鑰、您會看到下列訊息、需要從功能表系統 Shell 設定 e0M ：
-+
-....
-ERROR: kmip_init: halting this system with encrypted mroot...
-WARNING: kmip_init: authentication keys might not be available.
-********************************************************
-*                 A T T E N T I O N                    *
-*                                                      *
-*       System cannot connect to key managers.         *
-*                                                      *
-********************************************************
-ERROR: kmip_init: halting this system with encrypted mroot...
-.
-Terminated
-
-Uptime: 11m32s
-System halting...
-
-LOADER-B>
-
-....
-+
-..  `boot_recovery -partner`在恢復節點上運行命令。
-.. 當系統提示您執行（ y 或 n ） EKM 選項時、請為所有選項選取 _n_ 。
-+
-為 8 個提示選取 _n_ 選項後、系統將會在開機功能表停止。
-
-.. 從其他叢集節點收集 /ccfcard/kmip/servers.cfg 檔案資訊。您將收集下列資訊：
-+
-*** KMIP 伺服器位址。
-*** KMIP 連接埠。
-*** Keystore UUID 。
-*** 從 /ccfcard/kmip/certs/client.crt 檔案複本用戶端憑證。
-*** 從 /ccfcard/kmip/certs/client.key 檔案複本用戶端金鑰。
-*** 從 /ccfcard/kmip/certs/ca.pem 檔案複本 KMIP 伺服器 CA 。
-
-
-.. 在提示字元輸入 _systemshell_ 、從開機功能表進入 systemshell 。
-.. 從系統殼層功能表設定網路、用於 e0M 、網路遮罩和閘道。
-.. 使用 _exit_ 命令從功能表系統 Shell 結束。
-.. 您會看到開機功能表。選取選項 `11`以繼續 EKM 還原。
-.. 回答 `y`下列問題、並在出現提示時輸入您先前收集的必要資訊：
-+
-*** 您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
-*** 您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝
-*** 您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
-*** 您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝
-
 
 
 

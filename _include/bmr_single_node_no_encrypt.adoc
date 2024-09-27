@@ -2,33 +2,7 @@
 :allow-uri-read: 
 
 
-您可以在 `boot_recovery -partner`執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 平台上使用命令、從合作夥伴節點還原 ONTAP 映像（開機媒體還原）。
-
-.開始之前
-當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
-
-[listing]
-----
-
-Can't find primary boot device u0a.0
-Can't find backup boot device u0a.1
-ACPI RSDP Found at 0x777fe014
-
-
-Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
-
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
-
-
-Autoboot of PRIMARY image failed. Device not found (-6)
-LOADER-A>
-
-----
-如果您看到此訊息、則必須還原 ONTAP 映像
+還原開機媒體映像。
 
 .步驟
 . 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
