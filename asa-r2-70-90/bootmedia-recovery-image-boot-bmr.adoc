@@ -11,81 +11,57 @@ summary: 您可以透過自動開機還原程序、從合作夥伴控制器還�
 
 
 [role="lead"]
-您可以使用搭配執行 ONTAP 9 。 16.0 及更新版本的 ASA R2 系統、從合作夥伴節點還原 ONTAP 映像（開機媒體還原） `boot_recovery -partner`。
+當開機媒體毀損時、從合作夥伴節點還原 ONTAP 映像。
 
-.開始之前
-當您在該節點上開機且開機媒體毀損時、您會在 Loader 提示字元下看到下列訊息和開機程序：
+.關於這項工作
+如果節點的開機媒體毀損、開機程序將在 Loader 提示時停止、並顯示開機錯誤訊息。
 
+當您遇到這些開機錯誤訊息時、需要從合作夥伴節點還原 ONTAP 映像。
+
+.顯示開機錯誤訊息範例
+[%collapsible]
+====
 ....
-
 Can't find primary boot device u0a.0
 Can't find backup boot device u0a.1
 ACPI RSDP Found at 0x777fe014
 
-
 Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
 
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
-
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
-
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat)
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat)
 
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
-
 ....
-如果您看到此訊息、則必須還原 ONTAP 映像
+====
+.步驟
+. 在 Loader 提示字元中、輸入命令：
++
+`boot_recovery -partner`
 
-選取符合您組態的單一節點自動還原選項。
++
+畫面會顯示下列訊息：
 
++
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+
+. 在 Loader 設定本機叢集連接埠並從合作夥伴節點執行時、監控開機媒體還原程序 `netboot`。
++
+當 netboot 正在執行時、 `Starting BMR`會顯示訊息。
+
+. 根據加密方法、選取符合單一節點組態的選項：
++
 [role="tabbed-block"]
 ====
-.選項 1 ：不加密的還原
+.無加密
 --
-還原開機媒體映像。
+如果未偵測到加密、則開機媒體還原程序會在不需要金鑰管理的情況下繼續進行。
 
-.步驟
-. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
-+
-畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`並開始初始檢查。
+從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。
 
-. 在 Loader 設定本機叢集連接埠並透過執行 netboot 時 `\http://<remote-partner-IP>:65530/recoverydisk/image.tgz`、監控程序。
-+
-網路開機執行後、 `Starting BMR ...`畫面上會顯示、程序會完成安裝程序。
-
-+
-.. 如果未設定金鑰管理程式、您會看到下列訊息：
-+
-....
-key manager is not configured. Exiting.
-....
-.. 如果您看到下列訊息、表示已設定 Onboard Key Manager （ OKM ）：
-+
-....
-
-key manager is configured.
-Entering Bootmenu Option 10...
-
-This option must be used only in disaster recovery procedures. Are you sure? (y or n):
-
-....
-+
-請移至以完成還原程序。
-
-.. 如果您看到下列訊息、表示已設定外部金鑰管理員（ EKM ）。前往 EKM 主題並完成恢復程序：
-+
-....
-Error when fetching key manager config from partner 169.254.139.209: 28
-Has key manager been configured on this system? {y|n}
-
-....
-
-
-. 監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。
-. 當您看到下列內容時、節點會重新開機並完成 BMR ：
-
+恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
 
 ....
 
@@ -100,30 +76,22 @@ varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
 ....
 --
-.選項 2 ：使用內建金鑰管理程式進行還原
+.內建金鑰管理程式（OKM）
 --
-還原開機媒體映像。
+如果偵測到 Onboard Key Manager （ OKM ）、系統會顯示下列提示。
 
-.步驟
-. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
-+
-畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`、並開始初始檢查及安裝開機恢復檔案。
-
-+
-.. 如果已設定 Onboard Key Manager （ OKM ）、您將會看到下列畫面：
-+
 ....
 key manager is configured.
 Entering Bootmenu Option 10...
 
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
-
-
-. 在提示字元中輸入 _y_ 。
-. 當您看到時、請輸入內建金鑰管理程式的密碼 `Enter the passphrase for onboard key management:`
-. 當系統提示您確認密碼時、請再次輸入機載金鑰管理員的密碼短語。
+.. 在 Bootmenu Option 提示字元中、輸入 `Y`以確認您要使用 bootmedia 恢復選項。
+.. 出現提示時、請輸入內建金鑰管理程式的複雜密碼、然後再次輸入複雜密碼以確認。
 +
+.顯示複雜密碼提示範例
+[%collapsible]
+=====
 ....
 Enter the passphrase for onboard key management:
 Enter the passphrase again to confirm:
@@ -139,8 +107,10 @@ QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
 .
 .
 ....
+=====
+.. 從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。
 +
-恢復程序完成時、您將看到下列內容：
+恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
 
 +
 ....
@@ -151,59 +121,90 @@ Trying to delete any existing km_onboard.wkeydb file.
 
 Successfully recovered keymanager secrets.
 ....
-. 監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。
-+
-還原完成後、節點會重新啟動以完成程序。
-
 
 
 --
-.選項 3 ：使用外部金鑰管理程式進行還原
+.外部金鑰管理程式（EKM）
 --
-還原開機媒體映像。
+如果已設定 EKM 、系統會顯示下列提示。
 
-.步驟
-. 在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。
-+
-畫面會顯示訊息 `Starting boot media recovery (BMR) process press Ctrl-C to abort...`、並開始初始檢查及安裝開機恢復檔案。
-
-+
-.. 如果已設定外部金鑰管理程式（ EKM ）、您將會看到下列顯示：
-+
 ....
-Error when fetching key manager config from partner 169.254.139.209: 28
+Error when fetching key manager config from partner <IP>: 28
+
 Has key manager been configured on this system? {y|n}
 ....
-.. 如果已設定金鑰管理員、請輸入 _y_ 。
+.. 輸入 `Y`是否已設定 EKM 。
 +
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
++
+系統會提示您輸入最初在設定期間使用的 EKM 設定。
 
+.. 出現提示時、請輸入每個 EKM 組態設定。
+.. 驗證叢集 UUID 和 Keystore UUID 的屬性是否正確。
++
+*** 在合作夥伴節點上、使用下列命令擷取叢集 UUID 。
++
+`cluster identity show`
+
+*** 在合作夥伴節點上、使用下列命令擷取 Keystore UUID 。
++
+`vserver show -type admin`
 
 +
-Bootmenu Option 11 會提示使用者輸入所有的 EKM 組態資訊、以便重新建立組態檔案。
+`key-manager keystore show -vserver <nodename>`
 
-. 在每個提示時輸入 EKM 配置。
+*** 如果合作夥伴節點無法使用、請使用 Mroot-AK 鍵擷取 UUID ：
 +
-* 附註： * 大部分資訊是在最初啟用 EKM 時輸入。您應該輸入與初始 EKM 組態期間相同的資訊。
+**** 對於叢集 UUID 、請輸入下列命令：
++
+`x-NETAPP-ClusterName: <cluster name>`
 
-. 檢查 `Keystore UUID`和 `Cluster UUID`是否正確。
+**** 對於 Keystore UUID 、請輸入下列命令：
 +
-.. 在合作夥伴節點上、使用 `cluster identity show`命令擷取叢集 UUID 。
-.. 在合作夥伴節點上、使用 `vserver show -type admin` `key-manager keystore show -vserver <nodename>`命令和命令擷取 Keystore UUID 。
+`x-NETAPP-KeyUsage: MROOT-AK`
+
+
+
+
+
 .. 出現提示時、請輸入 Keystore UUID 和叢集 UUID 的值。
+.. 視金鑰是否成功還原而定、請採取下列其中一項動作：
 +
-* 注意： * 如果合作夥伴節點無法使用、則可從設定金鑰伺服器上的 Mroot-AK 金鑰取得 Keystore UUID 和叢集 UUID 。
-
+*** 如果金鑰已成功還原、則恢復程序會繼續並重新啟動節點。繼續進行步驟 4 。
+*** 如果金鑰未成功還原、系統將會停止、並顯示錯誤和警告訊息。重新執行恢復程序。
 +
-驗證 `x-NETAPP-ClusterName: <cluster name>`叢集 UUID 和 `x-NETAPP-KeyUsage: "MROOT-AK"` Keystore UUID 屬性的、以確保您擁有正確的金鑰。
+.顯示金鑰還原錯誤和警告訊息的範例
+[%collapsible]
+=====
+....
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+
+WARNING: kmip_init: authentication keys might not be available.
+
+System cannot connect to key managers.
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+
+Terminated
+
+Uptime: 11m32s
+
+System halting...
+
+LOADER-B>
+....
+=====
 
 
-
-. 如果金鑰已正確還原、則恢復程序會繼續並重新啟動節點。
 
 
 --
 ====
+
+
+. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
+

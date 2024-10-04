@@ -102,7 +102,7 @@ X6536 - R6（112-00090）、5公尺
 
 X654-R6（112-00189）、15公尺
  a| 
-image:../media/oie_cable_fiber_lc_connector.png["顯示光纖 LC 連接器的圖例"]
+image:../media/oie_cable_fiber_lc_connector.png["LC 光纖連接器"]
  a| 
 FC主機網路
 
@@ -143,7 +143,7 @@ micro-USB主控台纜線
  a| 
 不適用
  a| 
-image:../media/oie_cable_micro_usb.png["顯示 Micro USB 接頭的圖例"]
+image:../media/oie_cable_micro_usb.png["Micro USB 接頭"]
  a| 
 非Windows或Mac筆記型電腦/主控台軟體安裝期間的主控台連線
 
@@ -221,7 +221,7 @@ image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[統一化
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["步驟1."]
+image:../media/icon_square_1_green.png["步驟1."]
  a| 
 使用叢集互連纜線將叢集互連連接埠彼此連接：
 
@@ -233,7 +233,7 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png["叢集互連纜線"]
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["步驟 2"]
+image:../media/icon_square_2_yellow.png["步驟 2"]
  a| 
 使用下列其中一種纜線類型、將UTA2資料連接埠纜線連接至主機網路：
 
@@ -248,16 +248,16 @@ FC主機
 
 NOTE: 您可以將一個連接埠配對連接為CNA、另一個連接埠配對連接為FC、也可以將兩個連接埠配對連接為CNA、或將兩個連接埠配對連接為FC。
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png["顯示周邊文字所述資料連接埠連線的圖例"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["資料連接埠連線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["步驟 3"]
+image:../media/icon_square_3_orange.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
-image:../media/drw_c190_u_mgmt_cbling.png["管理連接埠纜線"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理連接埠纜線"]
 
 
 
@@ -297,7 +297,7 @@ image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[交�
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["步驟1."]
+image:../media/icon_square_1_green.png["步驟1."]
  a| 
 使用叢集互連纜線將e0a和e0b纜線連接至叢集互連交換器：
 
@@ -306,7 +306,7 @@ image:../media/drw_c190_u_switched_clust_cbling.png["Cluster互 連纜線"]
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["步驟 2"]
+image:../media/icon_square_2_yellow.png["步驟 2"]
  a| 
 使用下列其中一種纜線類型、將UTA2資料連接埠纜線連接至主機網路：
 
@@ -325,16 +325,16 @@ FC主機
 
 NOTE: 您可以將一個連接埠配對連接為CNA、另一個連接埠配對連接為FC、也可以將兩個連接埠配對連接為CNA、或將兩個連接埠配對連接為FC。
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png["顯示周邊文字所述資料連接埠連線的圖例"]
+image:../media/drw_c190_u_fc_10gbe_cabling.png["資料連接埠連線"]
 
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["步驟 3"]
+image:../media/icon_square_3_orange.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
-image:../media/drw_c190_u_mgmt_cbling.png["管理連接埠纜線"]
+image:../media/drw_c190_u_mgmt_cabling.png["管理連接埠纜線"]
 
 
 
@@ -374,19 +374,18 @@ image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[無交�
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["步驟1."]
+image:../media/icon_square_1_green.png["步驟1."]
  a| 
 使用叢集互連纜線將叢集互連連接埠彼此連接：
 
 ** e0a至e0a
-** e0b 至 e0b
-image:../media/drw_c190_e_tnsc_clust_cbling.png["顯示控制器背面連接埠之間的叢集互連的圖例"]
+** e0b 至 e0b image:../media/drw_c190_e_tnsc_clust_cbling.png["控制器背面連接埠之間的叢集互連"]
 
 
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["步驟 2"]
+image:../media/icon_square_2_yellow.png["步驟 2"]
  a| 
 使用Cat 6 RJ45纜線將e0c纜線透過e0f連接埠連接至主機網路：
 
@@ -395,7 +394,7 @@ image:../media/drw_c190_e_rj45_cbling.png["主機網路纜線"]
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["步驟 3"]
+image:../media/icon_square_3_orange.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
@@ -439,7 +438,7 @@ image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[交�
 
 
  a| 
-image:../media/oie_legend_icon_1_lg.png["步驟1."]
+image:../media/icon_square_1_green.png["步驟1."]
  a| 
 使用叢集互連纜線將e0a和e0b纜線連接至叢集互連交換器：
 
@@ -448,7 +447,7 @@ image:../media/drw_c190_e_switched_clust_cbling.png["叢集互連纜線"]
 
 
  a| 
-image:../media/oie_legend_icon_2_o.png["步驟 2"]
+image:../media/icon_square_2_yellow.png["步驟 2"]
  a| 
 使用Cat 6 RJ45纜線將e0c纜線透過e0f連接埠連接至主機網路：
 
@@ -457,7 +456,7 @@ image:../media/drw_c190_e_rj45_cbling.png["主機網路纜線"]
 
 
  a| 
-image:../media/oie_legend_icon_3_lp.png["步驟 3"]
+image:../media/icon_square_3_orange.png["步驟 3"]
  a| 
 使用RJ45纜線將e0M連接埠連接至管理網路交換器：
 
@@ -506,7 +505,7 @@ image::../media/drw_2700_ha_storage_cabling_animated_gif.png[HA 配對中的機�
 
 
  a| 
-image:../media/oie_legend_icon_1_lo.png["編號 1"]
+image:../media/icon_square_1_blue.png["編號 1"]
  a| 
 將機櫃對機櫃連接埠連接至纜線。
 
@@ -520,7 +519,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS �
 
 
  a| 
-image:../media/oie_legend_icon_2_mb.png["步驟 2"]
+image:../media/icon_square_2_yellow.png["步驟 2"]
  a| 
 將每個節點連接至堆疊中的IOM A。
 
@@ -534,7 +533,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS �
 
 
  a| 
-image:../media/oie_legend_icon_3_t.png["步驟 3"]
+image:../media/icon_square_3_orange.png["步驟 3"]
  a| 
 將每個節點連接至堆疊中的IOM B
 

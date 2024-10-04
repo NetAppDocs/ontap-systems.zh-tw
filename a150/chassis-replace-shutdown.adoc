@@ -17,30 +17,28 @@ summary: 若要更換機箱、您必須關閉控制器。
 
 == 選項1：大多數組態
 
-此程序僅適用於雙節點非 MetroCluster 組態。如果您的系統有兩個以上的節點、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["如何在 4 節點叢集中執行一個 HA 配對的正常關機和開機"^]。
+關閉控制器、以便在機箱上執行維護。
+
+此程序適用於具有兩個節點組態的系統。如果您的系統具有兩個以上的節點、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["如何在四節點叢集中執行一個 HA 配對的正常關機和開機"^]。
 
 .開始之前
-您需要：
-
-* ONTAP 的本機系統管理員認證。
-* NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密或 NVE/NAE ）。
-* 每個控制器的 BMC 存取能力。
 * 停止所有用戶端 / 主機存取 NetApp 系統上的資料。
 * 暫停外部備份工作。
-* 更換所需的工具和設備。
+* 請確定您擁有必要的權限和認證：
++
+** ONTAP 的本機系統管理員認證。
+** NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密或 NVE/NAE ）。
+** 每個控制器的 BMC 存取能力。
 
 
+* 請確定您擁有必要的工具和設備以進行更換。
+* 關機前的最佳做法是：
++
+** 執行其他 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["系統健全狀況檢查"]。
+** 將 ONTAP 升級至建議的系統版本。
+** 解決任何問題 https://activeiq.netapp.com/["Active IQ 健康警示與風險"]。記下系統上目前存在的任何故障、例如系統元件上的 LED 。
 
-NOTE: 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["正常關機並開啟儲存系統解析指南"] 執行此程序之後。
 
-
-NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]
-
-關機前的最佳做法是：
-
-* 執行其他 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["系統健全狀況檢查"]。
-* 將 ONTAP 升級至建議的系統版本。
-* 解決任何問題 https://activeiq.netapp.com/["Active IQ 健康警示與風險"]。記下系統上目前存在的任何故障、例如系統元件上的 LED 。
 
 
 .步驟
@@ -62,7 +60,7 @@ NOTE: 如果使用 SSD 、請參閱 https://kb.netapp.com/Support_Bulletins/Cust
 
 NOTE: 開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。
 
-. 停止位於受損機箱中的 2 個節點：
+. 停止位於受損機箱中的兩個節點：
 +
 `system node halt -node <node>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
 
@@ -73,6 +71,11 @@ NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `
 . 當您看到時、請為叢集中的每個控制器輸入 * y* `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
 {y|n}:_`
 . 等待每個控制器停止並顯示載入器提示。
+
+
+.接下來呢？
+* 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["正常關機並開啟儲存系統解析指南"]執行此關機程序後的。
+* 如果使用 SSD 、請在執行此關機程序後參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]。
 
 
 

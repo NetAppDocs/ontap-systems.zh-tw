@@ -17,7 +17,7 @@ summary: 您必須使用從供應商處收到的替換FRU元件來更換故障�
 [role="quick-margin-para"]
 若要更換開機媒體、您必須符合特定需求。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-shutdown-asa-r2.html["關閉受損的控制器"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-shutdown-bmr.html["關閉受損的控制器"]
 [role="quick-margin-para"]
 關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。
 
@@ -25,10 +25,10 @@ summary: 您必須使用從供應商處收到的替換FRU元件來更換故障�
 [role="quick-margin-para"]
 從 System Management 模組中移除故障開機媒體、然後安裝替換開機媒體。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-recovery-image-boot-bmr.html["自動開機恢復"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-recovery-image-boot-bmr.html["還原開機媒體上的映像（自動開機還原）"]
 [role="quick-margin-para"]
 從合作夥伴控制器還原 ONTAP 映像。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-complete-rma.html["將故障零件歸還給NetApp"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-complete-rma-bmr.html["將故障零件歸還給NetApp"]
 [role="quick-margin-para"]
 如套件隨附的RMA指示所述、將故障零件退回NetApp。
