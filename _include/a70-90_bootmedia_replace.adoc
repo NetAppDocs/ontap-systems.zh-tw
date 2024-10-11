@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、然後在系統管理模組中安裝替換開機媒體。
+您必須插入控制器模組、從系統背面移除系統管理模組、移除受損的開機媒體、然後在系統管理模組中安裝替換開機媒體。
 
 
 
@@ -77,13 +77,13 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
 
 == 步驟2：將開機映像傳輸到開機媒體
 
-您安裝的替換開機媒體沒有 ONTAP 映像、因此您需要使用 USB 快閃磁碟機傳輸 ONTAP 映像。
+您安裝的替換開機媒體沒有 ONTAP 映像。您可以將 ONTAP 映像從下載適當的 ONTAP 服務映像到 USB 快閃磁碟機、然後再將其傳輸到替換的開機媒體 https://mysupport.netapp.com/["NetApp 支援網站"]。
 
 .開始之前
 * 您必須擁有格式化為FAT32的USB隨身碟、且容量至少為4GB。
-* 您必須擁有與受損控制器執行的相同映像版本 ONTAP 的複本。您可以從 NetApp 支援網站上的區段下載適當的映像 https://support.netapp.com/downloads["下載"]
+* 下載與受損控制器執行的相同映像版本 ONTAP 的複本。您可以從 NetApp 支援網站上的「下載」區段下載適當的映像。如果您的 ONTAP 版本支援 NVE 、請使用 `version -v`命令來顯示。如果顯示命令輸出，則 `<10no- DARE>`表示您的 ONTAP 版本不支援 NVE 。
 +
-** 如果支援 NVE 、請下載具有 NetApp Volume Encryption 的映像、如下載按鈕所示。
+** 如果您的 ONTAP 版本支援 NVE 、請下載具有 NetApp Volume Encryption 的映像、如下載按鈕所示。
 ** 如果不支援 NVE 、請下載不含 NetApp Volume Encryption 的映像、如下載按鈕所示。
 
 
@@ -99,12 +99,9 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
 
 NOTE: 如果您使用Windows擷取內容、請勿使用WinZipto擷取netboot映像。使用其他擷取工具、例如7-Zip或WinRAR。
 
-
-
 +
 USB 快閃磁碟機應具有受損控制器所執行的適當 ONTAP 映像。
 
-+
 .. 從筆記型電腦中取出USB隨身碟。
 
 

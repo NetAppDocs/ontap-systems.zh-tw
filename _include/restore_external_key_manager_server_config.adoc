@@ -7,19 +7,21 @@
 .開始之前
 您需要下列資訊來還原外部金鑰管理程式（ EKM ）組態：
 
-* 您需要另一個叢集節點的 /ccfcard/kmip/servers.cfg 檔案複本、或是下列資訊：
-* KMIP 伺服器位址。
-* KMIP 連接埠。
-* 從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。
-* 從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。
-* 從其他叢集節點或 KMIP 伺服器 CA 複本 /ccfcard/kmip/certs/ca.pem 檔案。
+* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或是下列資訊：
++
+** KMIP 伺服器位址。
+** KMIP 連接埠。
+** 從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。
+** 從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。
+** 從其他叢集節點或 KMIP 伺服器 CA 複本 /ccfcard/kmip/certs/ca.pem 檔案。
+
+
 
 
 .步驟
 . 從 ONTAP 開機功能表中選取選項 11 。
 +
-[listing]
-----
+....
 
 (1)  Normal Boot.
 (2)  Boot without /etc/rc.
@@ -34,7 +36,7 @@
 (11) Configure node for external key management.
 Selection (1-11)? 11
 
-----
+....
 . 系統提示時、請確認您已收集必要資訊：
 +
 .. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
@@ -54,13 +56,14 @@ Selection (1-11)? 11
 
 . 提供以下每個提示的資訊：
 +
-.. `Enter the client certificate (client.crt) file contents:`
-.. `Enter the client key (client.key) file contents:`
-.. `Enter the KMIP server CA(s) (CA.pem) file contents:`
-.. `Enter the server configuration (servers.cfg) file contents:`
+.. _ 輸入用戶端憑證（ client.crt ）檔案內容： _
+.. _ 輸入用戶端金鑰（ client.key ）檔案內容： _
+.. _ 輸入 KMIP 伺服器 CA （ CA.pem ）檔案內容： _
+.. _ 輸入伺服器組態（ server.cfg ）檔案內容： _
+
+
 +
-[listing]
-----
+....
 
 Example
 
@@ -97,13 +100,10 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ​​​​​​
-----
-
-
+....
 . 恢復程序將完成：
 +
-[listing]
-----
+....
 
 
 System is ready to utilize external key manager(s).
@@ -111,11 +111,11 @@ Trying to recover keys from key servers....
 [Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 
-----
+....
 . 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
-+
-[listing]
-----
+
+
+....
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -136,5 +136,4 @@ Successfully recovered keymanager secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-----
-
+....

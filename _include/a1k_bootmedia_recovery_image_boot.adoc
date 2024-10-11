@@ -23,11 +23,11 @@ ONTAP 9 。 16.0 或更早版本
 .. 在功能受損的控制器上、當您看到時、請按下 _Y_ `Do you want to restore the backup configuration now?`
 .. 在功能受損的控制器上，當系統提示您覆寫時，請按 _Y_ `/etc/ssh/ssh_host_ecdsa_key`。
 .. 在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： _set -priv特權 advancive_ 。
-.. 在健全的合作夥伴控制器上、執行還原備份命令： _ 系統節點還原 - 備份 - 節點本機 - 目標位址受損 _ 節點 IP 位址 _ 。
+.. 在健全的合作夥伴控制器上、執行還原備份命令： `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +
 * 注意： * 如果您看到成功還原以外的任何訊息、請聯絡 https://support.netapp.com["NetApp支援"]。
 
-.. 在健全的合作夥伴控制器上、將功能受損的控制器恢復至管理層級： _set -priv特權 admin_ 。
+.. 在健全的合作夥伴控制器上、將受損的控制器恢復至管理層級： `set -privilege admin`。
 .. 在功能受損的控制器上，當您看到時，請按 _y_ `Was the restore backup procedure successful?`。
 .. 在功能受損的控制器上，當您看到時，請按 _y_ `...would you like to use this restored copy now?`。
 .. 在功能受損的控制器上、當系統提示您重新啟動功能受損的控制器時、請按 _y_ 、然後按下 _Ctrl-c_ 進入開機功能表。

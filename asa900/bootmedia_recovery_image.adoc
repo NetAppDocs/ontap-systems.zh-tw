@@ -22,104 +22,32 @@ summary: 從恢復映像啟動受損控制器的程序、取決於系統是否�
 +
 [cols="1,2"]
 |===
-| 如果您的系統有... | 然後... 
+| 如果您的系統正在執行... | 然後... 
 
 
  a| 
-網路連線
+ONTAP 9 。 16.0 或更早版本
  a| 
-.. 系統提示您還原備份組態時、請按「y」。
-.. 當系統提示覆寫「/etc/ssh / ssh _host_ecdsa_key」時、請按「y」。
-.. 當系統提示您確認還原備份是否成功時、請按「y」。
-.. 出現還原組態複本的提示時、請按「Y」。
-.. 將受損的控制器設為進階權限等級：「et -priv榮幸advanc進 階」
-.. 執行還原備份命令：「系統節點還原-備份-節點本機-目標位址減損節點_ip_addresses」
-.. 將受損的控制器恢復至管理層級：「et -priv. admin」
-.. 系統提示您使用還原的組態時、請按「y」。
-.. 當系統提示您重新啟動受損的控制器時、請按「y」。
-
-
-
-
- a| 
-無網路連線
- a| 
-.. 系統提示您還原備份組態時、請按「n」。
-.. 系統出現提示時、請重新啟動系統。
-.. 從顯示的功能表中選取*從備份組態更新Flash *（同步Flash）選項。
+.. 在功能受損的控制器上、當您看到時、請按下 _Y_ `Do you want to restore the backup configuration now?`
+.. 在功能受損的控制器上，當系統提示您覆寫時，請按 _Y_ `/etc/ssh/ssh_host_ecdsa_key`。
+.. 在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： `set -privilege admin`。
+.. 在健全的合作夥伴控制器上、執行還原備份命令： `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +
-如果系統提示您繼續更新、請按「y」。
+* 注意： * 如果您看到成功還原以外的任何訊息、請聯絡 https://support.netapp.com["NetApp支援"]。
 
-
-
-
-
- a| 
-無網路連線、且為MetroCluster 靜態IP組態
- a| 
-.. 系統提示您還原備份組態時、請按「n」。
-.. 系統出現提示時、請重新啟動系統。
-.. 等待iSCSI儲存設備連線連線。
+.. 在健全的合作夥伴控制器上、將受損的控制器恢復至管理層級： `set -privilege admin`。
+.. 在功能受損的控制器上，當您看到時，請按 _y_ `Was the restore backup procedure successful?`。
+.. 在功能受損的控制器上，當您看到時，請按 _y_ `...would you like to use this restored copy now?`。
+.. 在功能受損的控制器上、當系統提示您重新啟動功能受損的控制器時、請按 _y_ 、然後按下 _Ctrl-c_ 進入開機功能表。
+.. 如果系統不使用加密功能、請選擇 _ 選項 1 正常開機 _ 、否則請前往 link:bootmedia_encryption_restore.html["還原關鍵管理程式"]。
+.. 將主控台纜線連接至合作夥伴控制器。
+.. 使用 _storage 容錯移轉恢復 -fromnode local_ 命令將控制器歸還。
+.. 如果您使用 _storage 容錯移轉 modify -node local -auto-贈 品 true_ 命令停用、請還原自動恢復。
+.. 如果啟用 AutoSupport 、請使用 _system 節點 AutoSupport 呼叫 -node* -type all -message MAIS=end_ 命令、還原 / 恢復自動建立個案。
 +
-您可以在看到下列訊息後繼續：
-
-+
-[listing]
-----
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
-----
-.. 從顯示的功能表中選取*從備份組態更新Flash *（同步Flash）選項。
-+
-如果系統提示您繼續更新、請按「y」。
+* 注意： * 如果程序失敗、請聯絡 https://support.netapp.com["NetApp支援"]。
 
 
 
 |===
-. 確保環境變數設定符合預期：
-+
-.. 將受損的控制器移至載入程式提示字元。
-.. 使用printenv命令檢查環境變數設定。
-.. 如果環境變數未如預期設定、請使用「setenv _eniation_variable_name__changed_value_」命令加以修改。
-.. 使用Saveenv命令儲存變更。
-
-
-. 下一個取決於您的系統組態：
-+
-** 如果您的系統已設定內建Keymanager、NSE或NVE、請前往 xref:bootmedia_encryption_restore.adoc[OKM、NSE和NVE的開機後媒體更換步驟]
-** 如果您的系統未設定內建金鑰管理程式、NSE或NVE、請完成本節中的步驟。
-
-
-. 在載入程式提示字元中、輸入boot_ONTAP命令。
-+
-[cols="1,2"]
-|===
-| 如果您看到... | 然後... 
-
-
- a| 
-登入提示
- a| 
-前往下一步。
-
-
-
- a| 
-正在等待恢復...
- a| 
-.. 登入合作夥伴控制器。
-.. 使用「儲存容錯移轉show」命令確認目標已準備好進行還原。
-
-
-|===
-. 將主控台纜線連接至合作夥伴控制器。
-. 使用儲存容錯移轉恢復-fromNode本機命令來歸還控制器。
-. 在叢集提示字元中、使用net int -is主目錄假命令檢查邏輯介面。
-+
-如果有任何介面列為「假」、請使用net int f還原 命令將這些介面還原回其主連接埠。
-
-. 將主控台纜線移至修復的關機、或使用適合您組態的適當程序接管受損的控制器。然後執行version -v命令來檢查ONTAP 此版本的資訊。
-. 如果您使用儲存容錯移轉modify -Node local -aut-f恢復true命令停用自動恢復。
 

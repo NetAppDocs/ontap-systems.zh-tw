@@ -4,76 +4,189 @@ sidebar: sidebar
 keywords: aff a1k, pre-shutdown checks for onboard encryption keys 
 summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
 ---
-= 檢查內建加密金鑰 - AFF A1K
+= 檢查加密金鑰支援與狀態 - AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。
-
-如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+關閉受損控制器之前、請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）、以及您的金鑰管理系統是否已正確設定。
 
 
 
-== 檢查 NVE 或 NSE
+== 步驟 1 ：檢查您的 ONTAP 版本是否支援加密
 
-在關閉受損控制器之前、您需要確認系統是否已啟用安全金鑰管理程式或加密磁碟。
+檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）。此資訊對於下載正確的 ONTAP 映像至關重要。
 
-
-
-== 驗證安全金鑰管理程式組態
-
-.步驟
-. 使用 _security key-manager keystore show_ 命令確定 Key Manager 是否處於活動狀態。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html["安全密鑰管理器密鑰庫顯示手冊頁"^]
+. 執行下列命令、判斷您的 ONTAP 版本是否支援加密：
 +
-
-NOTE: 您可能還有其他金鑰管理程式類型。類型包括 `KMIP`、 `AKV`和 `GCP`。確認這些類型的程序與確認或金鑰管理程式類型相同 `external` `onboard` 。
+`version -v`
 
 +
-** 如果未顯示任何輸出、請前往 link:bootmedia-shutdown.html["關閉受損的控制器"] 關閉受損節點。
-** 如果命令顯示輸出、表示系統已啟用、 `security key-manager` 您需要顯示 `Key Manager` 類型和狀態。
+如果輸出包括 `1Ono-DARE`，則您的叢集版本不支援 NVE 。
 
-
-. 使用 _security key-manager keyquery_ 命令顯示作用中的資訊 `Key Manager` 。
+. 視系統是否支援 NVE 而定、請採取下列其中一項動作：
 +
-** 如果顯示類型且欄位顯示、則 `Key Manager` `external` `Restored` `true`可安全關閉受損的控制器。
-** 如果 `Key Manager` 顯示類型 `onboard` 且 `Restored` 欄位顯示 `true`、您需要完成一些其他步驟。
-** 如果 `Key Manager` 顯示的類型 `external` 和 `Restored` 欄顯示的不是 `true`、您需要完成一些其他步驟。
-** 如果 `Key Manager` 顯示的類型 `onboard` 和 `Restored` 欄顯示的不是 `true`、您需要完成一些其他步驟。
+** 如果支援 NVE 、請使用 NetApp Volume Encryption 下載 ONTAP 映像。
+** 如果 NVE 不受支援、請下載 ONTAP 映像 * 不含 * NetApp Volume Encryption 。
 
 
-. 如果 `Key Manager` 顯示類型 `onboard` 且 `Restored` 欄顯示 `true`、請手動備份 OKM 資訊：
+
+
+
+
+== 步驟 2 ：確定關閉控制器是否安全
+
+若要安全關閉控制器、請先識別內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是否為作用中。然後、確認使用中的金鑰管理員、顯示適當的金鑰資訊、並根據驗證金鑰的狀態採取行動。
+
+. 判斷您的系統上啟用的金鑰管理程式：
 +
-.. 當系統提示您繼續時、請輸入 `y` ： `set -priv advanced`
-.. 輸入命令以顯示金鑰管理資訊： _security key-manager onboard show-backup_
-.. 將備份資訊的內容複製到個別檔案或記錄檔。在可能需要手動恢復OKM的災難情境中、您將需要此工具。
-.. 您可以安全地關閉受損的控制器。
+[cols="1a,2a"]
+|===
+| 金鑰管理程式類型 | 請遵循下列步驟... 
 
 
-. 如果 `Key Manager` 顯示的類型 `onboard` 和 `Restored` 欄顯示的內容不是 `true`：
+ a| 
+外部金鑰管理程式（EKM）
+ a| 
+執行下列命令、判斷您的系統是否已啟用 EKM ：
+
+`security key-manager show key store`
+
+如果啟用 EKM 、 `external`則會列在輸出中。
+
+
+
+ a| 
+內建金鑰管理程式（OKM）
+ a| 
+根據節點所執行的 ONTAP 版本、執行下列其中一個命令、判斷系統上是否已啟用 OKM 。
+
+** 對於 ONTAP 9 ． 14.1 或更高版本，請輸入以下命令：
 +
-.. 輸入機載安全金鑰管理程式同步命令： _security key-manager onboard sync
+`security key-manager keystore show`
+
 +
+如果 OKM 已啟用、 `OKM`則會列在命令輸出中。
 
-NOTE: 在提示字元中輸入 32 個字元的英數字元內建金鑰管理密碼。如果無法提供通行密碼、請聯絡 NetApp 支援部門。 http://mysupport.netapp.com/["mysupport.netapp.com"^]
+** 對於 ONTAP 9 ． 13.1 或更早版本，請輸入以下命令：
++
+`security key-manager show-key-store`
 
-.. 驗證 `Restored` 所有驗證金鑰的欄位顯示 `true` ： `security key-manager key query`
++
+如果 OKM 已啟用、 `onboard`則會列在命令輸出中。
+
+
+
+|===
+. 輸入下列查詢命令、以顯示金鑰管理程式中驗證金鑰的狀態：
++
+`security key-manager key query`
+
+. 檢查您的金鑰管理程式欄中的值輸出 `Restored`。
++
+此欄會指出您的金鑰管理程式（ EKM 或 OKM ）的驗證金鑰是否已成功還原。
+
++
+** 如果還原欄中的值為 true 、則金鑰會正確還原、並可安全地繼續關閉控制器。
+** 如果值不是 TRUE 、則金鑰尚未還原、您需要根據您使用的是 EKM 或 OKM 、採取額外步驟（還原或同步金鑰）。
+
+
+. 視您使用的是 EKM 或 OKM 而定、請選取下列其中一個選項、並根據欄中顯示的輸出值、遵循適當的步驟 `Restored`。
++
+[role="tabbed-block"]
+====
+.EKM
+--
+根據欄中顯示的輸出值 `Restored`、請遵循適當的步驟。
+
+[cols="1a,2a"]
+|===
+| 列中的輸出值 `Restored` | 請遵循下列步驟... 
+
+
+ a| 
+`true`
+ a| 
+您可以安全地關閉受損的控制器。前往 link:bootmedia-shutdown.html["關閉受損的控制器"]。
+
+
+
+ a| 
+其他任何項目 `true`
+ a| 
+.. 使用下列命令、將外部金鑰管理驗證金鑰還原至叢集中的所有節點：
++
+`security key-manager external restore`
+
++
+如果命令失敗，請與聯繫 http://mysupport.netapp.com/["NetApp支援"^]。
+
+.. 輸入命令、確認 `Restored`所有驗證金鑰的欄位均 `_security key-manager key query_`顯示 `true`。
++
+如果所有驗證金鑰都是 `true`、您可以安全地關閉受損的控制器。前往 link:bootmedia-shutdown.html["關閉受損的控制器"]。
+
+
+
+|===
+--
+.OKM
+--
+根據欄中顯示的輸出值 `Restored`、請遵循適當的步驟。
+
+[cols="1a,2a"]
+|===
+| 列中的輸出值 `Restored` | 請遵循下列步驟... 
+
+
+ a| 
+`true`
+ a| 
+手動備份 OKM 資訊。
+
+.. 進入進階模式、 `set -priv advanced`然後在出現提示時輸入 `Y`。
+.. 輸入下列命令以顯示金鑰管理資訊：
++
+`security key-manager onboard show-backup`
+
+.. 將備份資訊的內容複製到個別檔案或記錄檔。
++
+在可能需要手動恢復OKM的災難情境中、您將需要此工具。
+
+.. 您可以安全地關閉受損的控制器。前往 link:bootmedia-shutdown.html["關閉受損的控制器"]。
+
+
+
+
+ a| 
+其他任何項目 `true`
+ a| 
+.. 輸入內建安全金鑰管理程式同步命令：
++
+`security key-manager onboard sync`
+
+.. 出現提示時、請輸入 32 個字元、英數字元的內建金鑰管理密碼。
++
+如果無法提供通行密碼、請聯絡 http://mysupport.netapp.com/["NetApp支援"^]。
+
+.. 驗證 `Restored`所有驗證金鑰的欄位顯示 `true`：
++
+`security key-manager key query`
+
 .. 驗證類型是否 `Key Manager` 顯示 `onboard`，然後手動備份 OKM 資訊。
-.. 輸入命令以顯示金鑰管理備份資訊： _security key-manager onboard show-backup_
-.. 將備份資訊的內容複製到個別檔案或記錄檔。在可能需要手動恢復OKM的災難情境中、您將需要此工具。
-.. 您可以安全地關閉控制器。
-
-
-. 如果 `Key Manager` 顯示的類型 `external` 和 `Restored` 欄顯示的內容不是 `true`：
+.. 輸入命令以顯示金鑰管理備份資訊：
 +
-.. 將外部金鑰管理驗證金鑰還原至叢集中的所有節點：「安全金鑰管理程式外部還原」
+`security key-manager onboard show-backup`
+
+.. 將備份資訊的內容複製到個別檔案或記錄檔。
 +
-如果命令失敗，請與 NetApp 支援中心聯絡： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+在可能需要手動恢復OKM的災難情境中、您將需要此工具。
 
-.. 確認 `Restored` 所有驗證金鑰的欄位都顯示 `true` ： _security key-manager key query_
-.. 您可以安全地關閉受損的控制器。
+.. 您可以安全地關閉受損的控制器。前往 link:bootmedia-shutdown.html["關閉受損的控制器"]。
 
 
+|===
+--
+====
 

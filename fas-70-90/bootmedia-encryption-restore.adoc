@@ -15,7 +15,7 @@ summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key
 
 
 
-== 步驟 1 ：還原內建金鑰管理程式
+== 步驟 1 ：還原金鑰管理程式
 
 您必須完成特定於已啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp 磁碟區加密（ NVE ）的系統、並使用本程序開始時擷取的設定。
 
@@ -42,10 +42,11 @@ NOTE: 如果 NSE 或 NVE 與 Onboard 或 External Key Manager 一起啟用、您
 
 
 .步驟
-. 從 ONTAP 開機功能表中、選取選項 10 ：
+. 從 ONTAP 開機功能表中選取適當的選項：
 +
-[listing]
-----
+** 若為 ONTAP 9 8 及更新版本、請選取選項 10 ：
++
+....
 
 Please choose one of the following:
 
@@ -62,9 +63,29 @@ Please choose one of the following:
 (11) Configure node for external key management.
 Selection (1-11)? 10
 
-----
+....
+** 對於 ONTAP 9 7 和更早版本、請輸入隱藏選項 `recover_onboard_keymanager`命令。
++
+....
+
+Please choose one of the following:
+
+(1)  Normal Boot.
+(2)  Boot without /etc/rc.
+(3)  Change password.
+(4)  Clean configuration and initialize all disks.
+(5)  Maintenance mode boot.
+(6)  Update flash from backup config.
+(7)  Install new software first.
+(8)  Reboot node.
+(9)  Configure Advanced Drive Partitioning.
+Selection (1-19)? recover_onboard_keymanager
+
+....
+
+
 . 確認程序是否繼續。
-`This option must be used only in disaster recovery procedures. Are you sure? (y or n):`_y_
+`This option must be used only in disaster recovery procedures. Are you sure? (y or n): `y`
 . 輸入叢集範圍的複雜密碼兩次。
 +
 
@@ -81,8 +102,7 @@ NOTE: 輸入複雜密碼時、主控台不會顯示任何輸入。
 在輸入結束時按兩次 ENTER 鍵。
 
 +
-[listing]
-----
+....
 
 
 Enter the backup data:
@@ -120,11 +140,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ---------------------------END BACKUP---------------------------
 
-----
+....
 . 恢復程序將會完成。
 +
-[listing]
-----
+....
 
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
@@ -139,15 +158,14 @@ Successfully recovered keymanager secrets.
 * Run the "security key-manager onboard sync" command to synchronize the key database after the node reboots.
 ***********************************************************************************
 
-----
+....
 +
 
 WARNING: 如果顯示的輸出不是、請勿繼續 `Successfully recovered keymanager secrets`。執行疑難排解以修正錯誤。
 
 . 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
 +
-[listing]
-----
+....
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -168,21 +186,24 @@ WARNING: 如果顯示的輸出不是、請勿繼續 `Successfully recovered keym
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-----
+....
 . 確認控制器的主控台已顯示 `Waiting for giveback...(Press Ctrl-C to abort wait)`
-. 在合作夥伴節點上、向合作夥伴控制器進行贈品： _ 儲存設備容錯移轉回贈 -fromnode local -only-CFO -Aggregate true_
-. 只要使用 CFO Aggregate 開機、就會執行 _security key-manager onboard symc變 小命令：
-. 輸入 Onboard Key Manager 的叢集範圍複雜密碼：
+. 在合作夥伴節點上、將合作夥伴控制器贈回： `storage failover giveback -fromnode local -only-cfo-aggregates true`。
+. 只要使用 CFO Aggregate 開機、就會執行 _security key-manager onboard symc變 小命令。
+. 輸入Onboard Key Manager的全叢集密碼。
 +
-[listing]
-----
+....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
 
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
-----
-. 確認所有金鑰都已同步： _security key-manager key query - restored FALSE_
+....
++
+
+NOTE: 如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。
+
+. 請確定所有金鑰都已同步： `security key-manager key query -restored false`。
 +
 `There are no entries matching your query.`
 
@@ -190,7 +211,7 @@ All offline encrypted volumes will be brought online and the corresponding volum
 
 NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
 
-. 來自合作夥伴的 GiveBack 節點： _storage 容錯移轉恢復恢復 -fromnode local_
+. 來自合作夥伴的節點的 GiveBack ： `storage failover giveback -fromnode local`
 
 
 --
@@ -201,19 +222,21 @@ NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
 .開始之前
 您需要下列資訊來還原外部金鑰管理程式（ EKM ）組態：
 
-* 您需要另一個叢集節點的 /ccfcard/kmip/servers.cfg 檔案複本、或是下列資訊：
-* KMIP 伺服器位址。
-* KMIP 連接埠。
-* 從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。
-* 從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。
-* 從其他叢集節點或 KMIP 伺服器 CA 複本 /ccfcard/kmip/certs/ca.pem 檔案。
+* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或是下列資訊：
++
+** KMIP 伺服器位址。
+** KMIP 連接埠。
+** 從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。
+** 從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。
+** 從其他叢集節點或 KMIP 伺服器 CA 複本 /ccfcard/kmip/certs/ca.pem 檔案。
+
+
 
 
 .步驟
 . 從 ONTAP 開機功能表中選取選項 11 。
 +
-[listing]
-----
+....
 
 (1)  Normal Boot.
 (2)  Boot without /etc/rc.
@@ -228,7 +251,7 @@ NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
 (11) Configure node for external key management.
 Selection (1-11)? 11
 
-----
+....
 . 系統提示時、請確認您已收集必要資訊：
 +
 .. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
@@ -248,13 +271,14 @@ Selection (1-11)? 11
 
 . 提供以下每個提示的資訊：
 +
-.. `Enter the client certificate (client.crt) file contents:`
-.. `Enter the client key (client.key) file contents:`
-.. `Enter the KMIP server CA(s) (CA.pem) file contents:`
-.. `Enter the server configuration (servers.cfg) file contents:`
+.. _ 輸入用戶端憑證（ client.crt ）檔案內容： _
+.. _ 輸入用戶端金鑰（ client.key ）檔案內容： _
+.. _ 輸入 KMIP 伺服器 CA （ CA.pem ）檔案內容： _
+.. _ 輸入伺服器組態（ server.cfg ）檔案內容： _
+
+
 +
-[listing]
-----
+....
 
 Example
 
@@ -291,13 +315,10 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ​​​​​​
-----
-
-
+....
 . 恢復程序將完成：
 +
-[listing]
-----
+....
 
 
 System is ready to utilize external key manager(s).
@@ -305,11 +326,11 @@ Trying to recover keys from key servers....
 [Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 
-----
+....
 . 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
-+
-[listing]
-----
+
+
+....
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -330,9 +351,7 @@ Successfully recovered keymanager secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-----
-
-
+....
 --
 ====
 

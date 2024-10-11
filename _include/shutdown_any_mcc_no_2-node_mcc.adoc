@@ -5,7 +5,7 @@
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 * 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
-* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+* 您必須已確認 MetroCluster 組態狀態已設定、且節點處於啟用和正常狀態(`metrocluster node show`）。
 
 
 .步驟
@@ -24,7 +24,7 @@
  a| 
 載入程式提示
  a| 
-前往下一步。
+前往下一節。
 
 
 

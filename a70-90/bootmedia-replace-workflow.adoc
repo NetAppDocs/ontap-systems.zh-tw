@@ -15,19 +15,19 @@ summary: 您必須使用從供應商處收到的替換FRU元件來更換故障�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱開機媒體需求"]
 [role="quick-margin-para"]
-若要更換開機媒體、您必須符合特定需求。
+檢閱更換開機媒體的需求。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-encryption-preshutdown-checks.html["檢查內建加密金鑰"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-encryption-preshutdown-checks.html["檢查加密金鑰支援和狀態"]
 [role="quick-margin-para"]
 驗證系統是否已啟用安全金鑰管理程式或加密磁碟。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-shutdown.html["關閉受損的控制器"]
 [role="quick-margin-para"]
-關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。
+關閉或接管功能受損的控制器、使狀況良好的控制器繼續從功能受損的控制器儲存設備提供資料。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-replace.html["更換開機媒體"]
 [role="quick-margin-para"]
-從系統管理模組移除故障開機媒體、然後安裝替換開機媒體、然後使用 USB 快閃磁碟機將 ONTAP 映像傳輸到替換開機媒體。
+從系統管理模組移除故障開機媒體、然後安裝替換開機媒體、然後使用 USB 快閃磁碟機傳輸 ONTAP 映像。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-recovery-image-boot.html["開機恢復映像"]
 [role="quick-margin-para"]
