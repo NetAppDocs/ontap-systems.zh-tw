@@ -20,21 +20,37 @@ NOTE: 如果 NSE 或 NVE 與 Onboard 或 External Key Manager 一起啟用、您
 ====
 .選項 1 ：具有內建金鑰管理程式伺服器組態的系統
 --
-從 ONATP 開機功能表還原內建金鑰管理程式組態。
+從 ONTAP 開機功能表還原內建金鑰管理程式（ OKM ）組態。
 
 .開始之前
-還原 OKM 組態時、您需要下列資訊：
+* 在還原 OKM 組態時、請確定您擁有下列資訊：
++
+** 輸入的叢集範圍複雜密碼 https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html["同時啟用內建金鑰管理"]。
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html["Onboard Key Manager 的備份資訊"]。
 
-* 輸入的叢集範圍複雜密碼 https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html["同時啟用內建金鑰管理"]。
-* https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html["Onboard Key Manager 的備份資訊"]。
+
 * 請先執行 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase["如何驗證內建金鑰管理備份和叢集範圍的複雜密碼"] 程序再繼續。
 
 
 .步驟
+. 將主控台纜線連接至目標控制器。
 . 從 ONTAP 開機功能表中選取適當的選項：
 +
-** 若為 ONTAP 9 8 及更新版本、請選取選項 10 ：
-+
+[cols="1a,2a"]
+|===
+| 版本ONTAP | 選取此選項 
+
+
+ a| 
+部分9.8或更新版本ONTAP
+ a| 
+選擇選項 10 。
+
+|===
+
+
+--
+====
 ....
 
 Please choose one of the following:
@@ -53,8 +69,11 @@ Please choose one of the following:
 Selection (1-11)? 10
 
 ....
-** 對於 ONTAP 9 7 和更早版本、請輸入隱藏選項 `recover_onboard_keymanager`命令。
-+
+[]
+====
+a| ONTAP 9 7 及更早版本 a| 選擇隱藏選項 `recover_onboard_keymanager`
+
+====
 ....
 
 Please choose one of the following:
@@ -71,29 +90,42 @@ Please choose one of the following:
 Selection (1-19)? recover_onboard_keymanager
 
 ....
+[]
+====
+|===
 
 
-. 確認程序是否繼續。
-`This option must be used only in disaster recovery procedures. Are you sure? (y or n): `y`
+| + 。確認您要繼續恢復程序。+ 。顯示範例提示 [% 可摺疊 ] 
+|===
+====
+`This option must be used only in disaster recovery procedures. Are you sure? (y or n):`
+
+[]
+====
 . 輸入叢集範圍的複雜密碼兩次。
 +
+輸入複雜密碼時、主控台不會顯示任何輸入。
 
-NOTE: 輸入複雜密碼時、主控台不會顯示任何輸入。
 
-+
+
+====
 `Enter the passphrase for onboard key management:`
 
-+
 `Enter the passphrase again to confirm:`
 
-. 輸入備份資訊。將整個內容從 BEGIN 備份線貼到終端備份線。
+[]
+====
 +
-在輸入結束時按兩次 ENTER 鍵。
 
+. 輸入備份資訊。
 +
+.. 將整個內容從 BEGIN 備份線貼到終端備份線。
+
+
+
+
+====
 ....
-
-
 Enter the backup data:
 
 --------------------------BEGIN BACKUP--------------------------
@@ -130,9 +162,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ---------------------------END BACKUP---------------------------
 
 ....
-. 恢復程序將會完成。
+[]
+====
+. 在輸入結束時按兩次 ENTER 鍵。
 +
+恢復程序即告完成。
+
+
+
+====
 ....
+
+Enter the backup data:
 
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
@@ -148,12 +189,14 @@ Successfully recovered keymanager secrets.
 ***********************************************************************************
 
 ....
-+
-
-WARNING: 如果顯示的輸出不是、請勿繼續 `Successfully recovered keymanager secrets`。執行疑難排解以修正錯誤。
+[]
+====
++ 警告：如果顯示的輸出不是、請勿繼續 `Successfully recovered keymanager secrets`。執行疑難排解以修正錯誤。
 
 . 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
-+
+
+
+====
 ....
 
 ***********************************************************************************
@@ -176,11 +219,24 @@ WARNING: 如果顯示的輸出不是、請勿繼續 `Successfully recovered keym
 Selection (1-11)? 1
 
 ....
-. 確認控制器的主控台已顯示 `Waiting for giveback...(Press Ctrl-C to abort wait)`
-. 在合作夥伴節點上、將合作夥伴控制器贈回： `storage failover giveback -fromnode local -only-cfo-aggregates true`。
-. 只要使用 CFO Aggregate 開機、就會執行 _security key-manager onboard symc變 小命令。
-. 輸入Onboard Key Manager的全叢集密碼。
+[]
+====
+. 確認控制器的主控台顯示下列項目：
 +
+`Waiting for giveback...(Press Ctrl-C to abort wait)`
+
+. 從合作夥伴節點、將合作夥伴控制器贈回：
++
+`storage failover giveback -fromnode local -only-cfo-aggregates true`。
+
+. 只使用 CFO Aggregate 開機後、請執行下列命令：
++
+`security key-manager onboard sync`命令。
+
+. 輸入Onboard Key Manager的全叢集密碼。
+
+
+====
 ....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
@@ -188,11 +244,14 @@ Enter the cluster-wide passphrase for the Onboard Key Manager:
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
 ....
+[]
+====
++ 附註：如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。
+
+. 確認所有金鑰都已同步：
 +
+`security key-manager key query -restored false`。
 
-NOTE: 如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。
-
-. 請確定所有金鑰都已同步： `security key-manager key query -restored false`。
 +
 `There are no entries matching your query.`
 
@@ -200,31 +259,45 @@ NOTE: 如果同步成功、就會傳回叢集提示、而不會傳回其他訊�
 
 NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
 
-. 來自合作夥伴的節點的 GiveBack ： `storage failover giveback -fromnode local`
+. 將合作夥伴的節點歸還：
++
+`storage failover giveback -fromnode local`
+
+. 如果您停用了自動恢復功能、請輸入下列命令來還原：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用 AutoSupport 、請輸入下列命令、以還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 --
-.選項 2 ：具有外部金鑰管理程式伺服器組態的系統
+
 --
 從 ONATP 開機功能表還原外部金鑰管理程式組態。
 
 .開始之前
 您需要下列資訊來還原外部金鑰管理程式（ EKM ）組態：
 
-* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或是下列資訊：
+* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或以下資訊：
 +
 ** KMIP 伺服器位址。
 ** KMIP 連接埠。
 ** 從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。
 ** 從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。
-** 從其他叢集節點或 KMIP 伺服器 CA 複本 /ccfcard/kmip/certs/ca.pem 檔案。
+** 另一個叢集節點或 KMIP 伺服器 CA 的 /ccfcard/kmip/certs/ca.pem 檔案複本。
 
 
 
 
 .步驟
+. 將主控台纜線連接至目標控制器。
 . 從 ONTAP 開機功能表中選取選項 11 。
-+
+
+
+====
 ....
 
 (1)  Normal Boot.
@@ -239,38 +312,51 @@ NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 11
-
 ....
-. 系統提示時、請確認您已收集必要資訊：
+[]
+====
 +
-.. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _y_
-+
-您也可以改用以下提示：
 
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _n_
-+
-... `Do you know the KMIP server address? {y/n}` _y_
-... `Do you know the KMIP Port? {y/n}` _y_
+. 出現提示時、請確認您已收集必要資訊。
 
 
-
-
-. 提供以下每個提示的資訊：
-+
-.. _ 輸入用戶端憑證（ client.crt ）檔案內容： _
-.. _ 輸入用戶端金鑰（ client.key ）檔案內容： _
-.. _ 輸入 KMIP 伺服器 CA （ CA.pem ）檔案內容： _
-.. _ 輸入伺服器組態（ server.cfg ）檔案內容： _
-
-
-+
+====
 ....
+Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+....
+[]
+====
++
 
-Example
+====
+....
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+Do you know the KMIP server address? {y/n}
+Do you know the KMIP Port? {y/n}
+....
+[]
+====
++
 
+. 出現提示時、請輸入用戶端和伺服器資訊。
+
+
+====
+....
+Enter the client certificate (client.crt) file contents:
+Enter the client key (client.key) file contents:
+Enter the KMIP server CA(s) (CA.pem) file contents:
+Enter the server configuration (servers.cfg) file contents:
+....
+[]
+====
++ 。顯示範例
+
+====
+....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
 MIIDvjCCAqagAwIBAgICN3gwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAlVT
@@ -303,104 +389,102 @@ Running command '/sbin/ifconfig e0M'
 ..
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
-​​​​​​
-....
-. 恢復程序將完成：
-+
-....
+​​​​....
 
 
-System is ready to utilize external key manager(s).
-Trying to recover keys from key servers....
-[Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
-Successfully recovered keymanager secrets.
-
-....
-. 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
-
-
-....
-
-***********************************************************************************
-* Select option "(1) Normal Boot." to complete the recovery process.
-*
-***********************************************************************************
-
-
-(1)  Normal Boot.
-(2)  Boot without /etc/rc.
-(3)  Change password.
-(4)  Clean configuration and initialize all disks.
-(5)  Maintenance mode boot.
-(6)  Update flash from backup config.
-(7)  Install new software first.
-(8)  Reboot node.
-(9)  Configure Advanced Drive Partitioning.
-(10) Set Onboard Key Manager recovery secrets.
-(11) Configure node for external key management.
-Selection (1-11)? 1
-
-....
---
 ====
 
+. The recovery process completes.
 
-== 步驟 2 ：完成開機媒體更換
 
-完成最終檢查並提供儲存設備、以在正常開機後完成開機媒體更換程序。
-
-. 檢查主控台輸出：
 +
-[cols="1,3"]
+.Show example prompt
+[%collapsible]
+====
+....
+系統已準備好使用外部金鑰管理程式。正在嘗試從關鍵伺服器復原金鑰[ 8 月 29 日 21 ： 06 ： 28 ] ： 0x808806100 ： 0 ：偵錯： kmip2 ：：：主： [initOpenssl] ： 460 ：執行初始化 OpenSSL 成功恢復 keymanager 機密。
+
+....
+
+
+
+. Select option 1 from the boot menu to continue booting into ONTAP.
+
++
+....
+****
+* 選取選項「（ 1 ）正常開機」以完成還原程序。*
+
+
+****
+（ 1 ）正常開機。（ 2 ）不使用 /etc/rc 開機。（ 3 ）變更密碼。（ 4 ）清理組態並初始化所有磁碟。（ 5 ）維護模式開機。（ 6 ）從備份組態更新 Flash 。（ 7 ）先安裝新軟體。（ 8 ）重新開機節點。（ 9 ）設定進階磁碟分割。（ 10 ）設定 Onboard Key Manager 恢復機密。（ 11 ）設定節點以進行外部金鑰管理。選擇（ 1-11 ）？1
+
+....
+====
++
+
+
+. Restore automatic giveback, if you disabled it, by entering the following command:
++
+`storage failover modify -node local -auto-giveback true` command.
+
+. If AutoSupport is enabled, restore automatic case creation by entering  the following command:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+
+====
+
+== Step 2: Complete the boot media replacement
+
+Complete the boot media replacement process after the normal boot by completing final checks and giving back storage.
+
+. Check the console output:
++
+[%header,cols="1,3"]
 |===
-| 如果主控台顯示... | 然後... 
+| If the console displays...| Then...
+a|
+The login prompt
+a|
+Go to Step 6.
+a|
+Waiting for giveback...
+a|
 
-
- a| 
-登入提示
- a| 
-請前往步驟6。
-
-
-
- a| 
-正在等待恢復...
- a| 
-.. 登入合作夥伴控制器。
-.. 使用 _storage 容錯移轉 show_ 命令、確認目標控制器已準備好可供恢復。
-
+ .. Log into the partner controller.
+ .. Confirm the target controller is ready for giveback with the _storage failover show_ command.
 
 |===
-. 將主控台纜線移至合作夥伴控制器、並使用 _storage 容錯移轉恢復恢復 -fromnode local -only-CFO -Aggregate true_ 命令將目標控制器儲存設備歸還。
+
+. Move the console cable to the partner controller and give back the target controller storage using the _storage failover giveback -fromnode local -only-cfo-aggregates true_ command.
+
+ ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
+
+ ** If the command fails because the partner is "not ready", wait 5 minutes for the HA subsystem to synchronize between the partners.
+ ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
+. Wait 3 minutes and check the failover status with the _storage failover show_ command.
+. At the clustershell prompt, enter the _network interface show -is-home false_ command to list the logical interfaces that are not on their home controller and port.
 +
-** 如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。
-** 如果命令因合作夥伴「未就緒」而失敗、請等待 5 分鐘、讓 HA 子系統在合作夥伴之間同步。
-** 如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的文件中心。
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the _net int revert -vserver Cluster -lif _nodename_ command.
 
+. Move the console cable to the target controller and run the _version -v_ command to check the ONTAP versions.
 
-. 等待 3 分鐘、然後使用 _storage 容錯移轉 show_ 命令檢查容錯移轉狀態。
-. 在 clusterShell 提示符下，輸入 _network interface show -is － home FALSE_ 命令，列出不在其主控制器和端口上的邏輯接口。
+. Use the `storage encryption disk show` to review the output.
+. Use the _security key-manager key query_ command to display the key IDs of the authentication keys that are stored on the key management servers.
+ ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
+ ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the _security key-manager external restore_ command to restore the key IDs of the authentication keys.
 +
-如果有任何介面列為 `false`、請使用 _net int fert -vserver cluster -lif _nnodename_ 命令、將這些介面還原回其主連接埠。
+NOTE: If the command fails, contact Customer Support.
 
-. 將主控台纜線移至目標控制器、然後執行 _version -v_ 命令來檢查 ONTAP 版本。
-. 使用 `storage encryption disk show` 檢閱輸出。
-. 使用 _security key-manager key query_ 命令來顯示儲存在金鑰管理伺服器上的驗證金鑰金鑰 ID 。
+ ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the _security key-manager onboard sync_ command to synchronize the missing onboard keys on the repaired node.
 +
-** 如果「RESTORED」欄=「yes / true」、您就能完成更換程序。
-** 如果 `Key Manager type` = `external` 和 `Restored` 欄 = 以外的任何項目 `yes/true`、請使用 _security key-manager external 還原 _ 命令來還原驗證金鑰的金鑰 ID 。
-+
+Use the _security key-manager key query_ command to verify that the `Restored` column = `yes/true` for all authentication keys.
 
-NOTE: 如果命令失敗、請聯絡客戶支援部門。
-
-** 如果 `Key Manager type` = `onboard` 和 `Restored` 欄 = 以外的任何項目 `yes/true`、請使用 _security key-manager onboard sync 命令來同步已修復節點上遺失的機載金鑰。
-+
-使用 _security key-manager key query_ 命令、確認所有驗證金鑰 `Restored` 的欄 = `yes/true` 。
-
-
-
-. 將主控台纜線連接至合作夥伴控制器。
-. 使用"shorage容錯移轉恢復-fromnode"命令來歸還控制器。
-. 如果您使用 _storage 容錯移轉 modify -node local -auto-贈 品 true_ 命令停用、請還原自動恢復。
-. 如果啟用 AutoSupport 、請使用 _system 節點 AutoSupport 呼叫 -node* -type all -message MAIS=end_ 命令、還原 / 恢復自動建立個案。
-
+. Connect the console cable to the partner controller.
+. Give back the controller using the `storage failover giveback -fromnode local` command.
+. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
+....

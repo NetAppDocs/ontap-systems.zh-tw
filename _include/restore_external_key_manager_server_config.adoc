@@ -7,20 +7,24 @@
 .開始之前
 您需要下列資訊來還原外部金鑰管理程式（ EKM ）組態：
 
-* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或是下列資訊：
+* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或以下資訊：
 +
 ** KMIP 伺服器位址。
 ** KMIP 連接埠。
 ** 從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。
 ** 從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。
-** 從其他叢集節點或 KMIP 伺服器 CA 複本 /ccfcard/kmip/certs/ca.pem 檔案。
+** 另一個叢集節點或 KMIP 伺服器 CA 的 /ccfcard/kmip/certs/ca.pem 檔案複本。
 
 
 
 
 .步驟
+. 將主控台纜線連接至目標控制器。
 . 從 ONTAP 開機功能表中選取選項 11 。
 +
+.顯示開機功能表範例
+[%collapsible]
+====
 ....
 
 (1)  Normal Boot.
@@ -35,38 +39,47 @@
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 11
-
 ....
-. 系統提示時、請確認您已收集必要資訊：
+====
+. 出現提示時、請確認您已收集必要資訊。
 +
-.. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}` _y_
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _y_
-+
-您也可以改用以下提示：
-
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _n_
-+
-... `Do you know the KMIP server address? {y/n}` _y_
-... `Do you know the KMIP Port? {y/n}` _y_
-
-
-
-
-. 提供以下每個提示的資訊：
-+
-.. _ 輸入用戶端憑證（ client.crt ）檔案內容： _
-.. _ 輸入用戶端金鑰（ client.key ）檔案內容： _
-.. _ 輸入 KMIP 伺服器 CA （ CA.pem ）檔案內容： _
-.. _ 輸入伺服器組態（ server.cfg ）檔案內容： _
-
-
-+
+.顯示範例提示
+[%collapsible]
+====
 ....
-
-Example
-
+Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+....
+====
++
+.您可能會看到這些提示
+[%collapsible]
+====
+....
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+Do you know the KMIP server address? {y/n}
+Do you know the KMIP Port? {y/n}
+....
+====
+. 出現提示時、請輸入用戶端和伺服器資訊。
++
+.顯示提示
+[%collapsible]
+====
+....
+Enter the client certificate (client.crt) file contents:
+Enter the client key (client.key) file contents:
+Enter the KMIP server CA(s) (CA.pem) file contents:
+Enter the server configuration (servers.cfg) file contents:
+....
+====
++
+.顯示範例
+[%collapsible]
+====
+....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
 MIIDvjCCAqagAwIBAgICN3gwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAlVT
@@ -99,10 +112,16 @@ Running command '/sbin/ifconfig e0M'
 ..
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
-​​​​​​
+​​​​....
+
+
 ....
-. 恢復程序將完成：
+====
+. 恢復程序即告完成。
 +
+.顯示範例提示
+[%collapsible]
+====
 ....
 
 
@@ -112,9 +131,8 @@ Trying to recover keys from key servers....
 Successfully recovered keymanager secrets.
 
 ....
-. 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
-
-
+.. 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
++
 ....
 
 ***********************************************************************************
@@ -137,3 +155,15 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
+
+
+====
+. 如果您停用了自動恢復功能、請輸入下列命令來還原：
++
+`storage failover modify -node local -auto-giveback true`命令。
+
+. 如果啟用 AutoSupport 、請輸入下列命令、以還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

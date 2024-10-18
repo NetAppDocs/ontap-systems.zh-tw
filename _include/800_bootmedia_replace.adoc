@@ -192,7 +192,17 @@ NOTE: 如果您使用Windows擷取內容、請勿使用WinZipto擷取netboot映�
 *** efi
 
 
-.. 將efi資料夾複製到USB快閃磁碟機的頂端目錄。+ USB快閃磁碟機應具備受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
+.. 將efi資料夾複製到USB快閃磁碟機的頂端目錄。
++
+
+NOTE: 如果服務映像沒有 EFI 資料夾、請參閱link:https://kb.netapp.com/onprem/ontap/hardware/EFI_folder_missing_from_Service_Image_download_file_used_for_boot_device_recovery_for_FAS_and_AFF_models["FAS 和 AFF 機型的開機裝置還原所使用的服務影像下載檔案中遺失 EFI 資料夾 ^"]。
+
+
+
++
+USB快閃磁碟機應具有受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
+
++
 .. 從筆記型電腦中取出USB隨身碟。
 
 
