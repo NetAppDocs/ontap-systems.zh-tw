@@ -131,7 +131,6 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 . 對控制器B重複這些步驟
 . 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
 . 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
-. 如果您安裝了儲存 I/O 模組、請依照中所述link:../ns224/hot-add-shelf-overview.html["熱新增工作流程"]、安裝 NS224 機櫃並連接纜線。
 
 
 
@@ -157,7 +156,7 @@ NIC I/O模組的連接埠數量相同
  a| 
 NIC I/O模組、連接埠較少
  a| 
-將所需的移位點永久重新指派至不同的主連接埠。如需使用 System Manager 永久移動生命的相關資訊、請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^] 。
+將受影響的LIF永久重新指派至不同的主連接埠。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html["移轉LIF"^] 如需使用System Manager永久移動生命期的相關資訊、
 
 
 

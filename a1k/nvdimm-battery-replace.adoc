@@ -243,8 +243,9 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 +
 一旦控制器模組完全插入機箱中、就會開始開機。
 
-. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
-. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
 

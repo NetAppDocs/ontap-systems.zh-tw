@@ -253,9 +253,9 @@ image::../media/icon_round_3.png[編號 3]
 系統將開始重新開機、通常會進入載入程式提示。
 
 . 在載入程式提示字元中輸入 _bye 。
-. 將控制器的儲存設備歸還：儲存設備容錯移轉回贈 -ofnode_disbented_node_name__ 、使其恢復正常運作
-. 使用還原自動恢復 `storage failover modify -node local -auto-giveback true` 命令。
-. 如果觸發 AutoSupport 維護時段、請使用結束 `system node autosupport invoke -node * -type all -message MAINT=END` 命令。
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
 

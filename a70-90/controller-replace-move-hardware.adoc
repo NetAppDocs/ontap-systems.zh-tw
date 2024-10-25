@@ -433,7 +433,8 @@ NOTE: 如果控制器開機至 Loader 提示字元、請使用命令將其重新
 
 NOTE: 如果您有直流電源、請在控制器模組完全插入機箱後、將電源區塊重新連接至電源供應器。
 
-. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
-. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 . 如果您尚未重新安裝纜線管理裝置、請重新安裝控制器。
 

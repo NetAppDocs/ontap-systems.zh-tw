@@ -225,6 +225,9 @@ NOTE: 請參閱 NVRAM 模組側邊的 FRU 對應標籤、以判斷 DIMM 插槽 1
 更換FRU之後、您必須重新啟動控制器模組。
 
 . 若要從載入程式提示字元啟動 ONTAP 、請輸入 _by_ 。
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `_storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
 
@@ -325,9 +328,9 @@ dr-group-id            cluster node           configuration-state
 4 entries were displayed.
 ----
 . 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
-. 如果已啟用儲存加密、則必須還原功能。
-. 如果您在重新開機時停用自動接管功能、請從健全的控制器啟用： _storage 容錯移轉 modify -node-name-onreboot true_
-. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
 

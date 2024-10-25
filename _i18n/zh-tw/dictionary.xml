@@ -383,76 +383,10 @@
   <block id="16319414c65274d365d86327a61ef5dc" category="doc">系統文件AFF FAS</block>
   <block id="c6f502d8dd8eb8b387d8da2e59e48c95" category="summary">以下影片顯示ONTAP 執行過程中使用的系統端點對端點軟體組態。</block>
   <block id="6d21dbcd6d30fc2426dd0b077d719da5" category="summary">在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。</block>
-  <block id="d1614290531967ae3b3623d71b4ed961" category="paragraph">在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
-  <block id="6d4079af860d745f44d13bfe9834115d" category="list-text">檢查受損控制器的狀態：</block>
-  <block id="6f0786e478994e04512bb55e945ab79c" category="list-text">如果受損的控制器處於登入提示狀態、請以「admin」身分登入。</block>
-  <block id="1f543f99cb43496b3a35f9786089c979" category="list-text">如果受損的控制器處於載入器提示狀態、並且是HA組態的一部分、請在健全的控制器上以「admin」身分登入。</block>
   <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link-macro">mysupport.netapp.com</block>
   <block id="19285c8cf559d5176d09036ecccfca21" category="list-text">如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport</block>
   <block id="f80af4e39d67de6feaae8747f603e24b" category="paragraph">下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*&gt;系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」</block>
-  <block id="efed560995ba912dfc2aa959620707ff" category="list-text">使用ONTAP 「vrvion -v」命令檢查系統在受損控制器上執行的版本；如果受損控制器停機、則檢查合作夥伴控制器上執行的版本：</block>
-  <block id="3c737345883504ebe7f0075c2e20f47e" category="list-text">如果命令輸出中顯示&lt;lanne-dare&gt;或&lt;1Oanne-dare&gt;、表示系統不支援NVE、請繼續關閉控制器。</block>
-  <block id="24b6214418480e5248eaed7a69ead79c" category="list-text">如果受損的控制器是HA組態的一部分、請停用健全控制器的自動恢復功能：「儲存容錯移轉修改節點本機-自動恢復錯誤」或「儲存容錯移轉修改節點本機-自動恢復發生恐慌後的錯誤」</block>
-  <block id="5a9f897d2d5283081378f66d6ed3cb7a" category="paragraph">在關閉受損的控制器之前、您需要檢查系統是否已啟用NetApp Volume Encryption（NVE）或NetApp Storage Encryption（NSE）。如果是、您需要驗證組態。</block>
-  <block id="a66e142cebcfd6f8d676e487cf4cc04c" category="list-text">將主控台纜線連接至受損的控制器。</block>
-  <block id="b227d8958eb504b6da0a08172b4222db" category="list-text">檢查叢集中的任何磁碟區是否已設定NVE：「Volume show -is -Encrypted true」（Volume show -is -Encrypted true）</block>
-  <block id="757faef19dddc204a17e4b5890ef2088" category="paragraph">如果輸出中列出任何磁碟區、則會設定NVE、您需要驗證NVE組態。如果未列出任何磁碟區、請檢查是否已設定NSE。</block>
-  <block id="68e27ac90c8755079206639397a6abfe" category="list-text">檢查是否已設定NSE：「顯示磁碟加密」</block>
-  <block id="f5275334d8eb3b5cf9ea9368de40cedc" category="list-text">如果命令輸出中列出磁碟機詳細資料及模式與金鑰ID資訊、則NSE已設定完成、您需要驗證NSE組態。</block>
-  <block id="d13e2b9934c9ee03ca8acee53a7c7ab8" category="list-text">如果未設定NVE和NSE、則可安全關閉受損的控制器。</block>
-  <block id="e11e37bddb45a2b092655cc718d388d5" category="section-title">確認NVE組態</block>
-  <block id="a2a9cf44f7484401e6ca68da00a8fb6f" category="list-text">顯示儲存在金鑰管理伺服器上驗證金鑰的金鑰ID：「安全金鑰管理程式查詢」</block>
-  <block id="a4dd34bde59d47a4d8ab4374389ea809" category="list-text">如果「還原」欄顯示「是」、且所有的關鍵經理都顯示「可用」、則關閉受損的控制器是安全的做法。</block>
-  <block id="6c2aeadd2a92753dd1f137a6c7068dc8" category="list-text">如果「還原」欄顯示「是」以外的任何內容、或是任何金鑰管理程式顯示「無法使用」、您需要完成一些額外步驟。</block>
-  <block id="ff31b8e8c86ed558e88ec6430564b19a" category="list-text">如果您看到「啟用內建金鑰管理時、不支援此命令」訊息、您需要完成其他一些步驟。</block>
-  <block id="fdf5e8b8acf351dcc2fa5bbdd1ba8957" category="list-text">如果「RESTORED」欄顯示「yes」以外的任何內容、或是有任何金鑰管理程式顯示「unavailable」（無法使用）：</block>
-  <block id="ec36c7cfd75ef20d8b0ef51a16507a88" category="list-text">擷取並還原所有驗證金鑰及相關金鑰ID：「安全金鑰管理程式還原-address *」</block>
-  <block id="aa93e7bc262e7964a396fd16f3a41d6b" category="paragraph">如果命令失敗、請聯絡NetApp支援部門。</block>
-  <block id="31509d9d2ecd7357c2d79b6100170edf" category="paragraph"><block ref="31509d9d2ecd7357c2d79b6100170edf" category="inline-link-rx"></block></block>
-  <block id="af4d1d3ffadafe2bf36d2f97e0624f27" category="list-text">驗證所有驗證金鑰的「restored（還原）」欄位是否顯示「yes（是）」、以及所有金鑰管理程式是否顯示「Available（可用）」：「ecurity key-manager query（安全金鑰管理程式查詢）」</block>
-  <block id="215eb27cc249e5b8e5b527e07342268c" category="list-text">關閉受損的控制器。</block>
-  <block id="289ff53a98abf4d0113c963cb872935c" category="list-text">如果您看到「啟用內建金鑰管理時、不支援此命令」訊息、請顯示內建金鑰管理程式中儲存的金鑰：「安全金鑰管理程式金鑰顯示-詳細資料」</block>
-  <block id="6675c229d440b5fa295266d2c66af8cb" category="list-text">如果「RESTORED」欄顯示「yes」（是）、請手動備份機載金鑰管理資訊：</block>
-  <block id="edf0839ebd25c40cc1ef62105e3a5d8f" category="list-text">進入進階權限模式、並在提示繼續時輸入「y」：「et -priv進階」</block>
-  <block id="64b5850437a6c5ede6e9cff83bdaf98e" category="list-text">輸入命令以顯示OKM備份資訊：「安全金鑰管理程式備份顯示」</block>
-  <block id="78a22d38c1530a757fec402c5079de18" category="list-text">將備份資訊的內容複製到個別檔案或記錄檔。在可能需要手動恢復OKM的災難情境中、您將需要此工具。</block>
-  <block id="19f83f3f355a8b287ae2aa40b5c8fc99" category="list-text">返回管理模式：「et -priv admin」</block>
-  <block id="eacc67b97d93f923ad42c8176ba8faa9" category="list-text">如果「RESTORED」欄顯示「yes」以外的任何內容：</block>
-  <block id="24220f32b44e782b90a7317dc26ed7aa" category="list-text">執行金鑰管理程式設定精靈：「安全性金鑰管理程式設定-節點目標/受損節點名稱」</block>
-  <block id="eaa3e7284bb9122bca13b95d6cc59ef1" category="admonition">在提示下輸入客戶的機載金鑰管理通關密碼。如果無法提供通關密碼、請聯絡<block ref="7bc6752d2076d2c755eaebbdfeb91d23" category="inline-link-rx"></block></block>
-  <block id="e09a2f79fa1a4d59c75a72c0eaf5b34c" category="list-text">驗證所有驗證金鑰的「RESORED（還原）」欄位是否顯示「yes（是）」：「ecurity key-manager key show -detail（安全金鑰管理程式金鑰顯示-詳細資料）」</block>
-  <block id="b0ca95eab963c35c3d977c396c4acc7d" category="list-text">您可以安全地關閉控制器。</block>
-  <block id="8eb91adaedfd18d8e21833ed58db7673" category="section-title">驗證NSE組態</block>
-  <block id="1adea8aec2ec00910dfbe0bb9bffce8e" category="list-text">如果您看到「啟用內建金鑰管理時、不支援此命令」訊息、您需要完成其他一些步驟</block>
-  <block id="4111f4985df04f9002129e591bafb45f" category="list-text">如果「RESTORED」欄顯示「yes」、請手動備份內建金鑰管理資訊：</block>
-  <block id="c4761cfb1761b743925b9f1be16248cb" category="list-text">輸入命令以顯示OKM備份資訊：「安全金鑰管理程式備份顯示」</block>
-  <block id="dd987c60871b23529ac187b4b51deed6" category="admonition">在提示下輸入客戶的OKM密碼。如果無法提供通關密碼、請聯絡<block ref="7bc6752d2076d2c755eaebbdfeb91d23" category="inline-link-rx"></block></block>
-  <block id="9a771de258008e976b0c48e9801a4c8c" category="list-text">驗證所有驗證金鑰的「restored」（還原）欄是否顯示「yes」（是）：「ecurity key-manager key show -detail（安全金鑰管理程式金鑰顯示-詳細資料）</block>
-  <block id="9829800481ae88069f363ca18226b993" category="list-text">輸入命令以備份OKM資訊：「安全金鑰管理程式備份顯示」</block>
-  <block id="dfeb46620d45b8d49ed48c1634840b5c" category="admonition">請確定OKM資訊已儲存在記錄檔中。在可能需要手動恢復OKM的災難情況下、將需要這些資訊。</block>
-  <block id="f715a6054e8d53c0d1e16dc1d6abcac0" category="list-text">將備份資訊的內容複製到不同的檔案或記錄檔。在可能需要手動恢復OKM的災難情境中、您將需要此工具。</block>
-  <block id="9e81e760541928935bc75be3ec2823a3" category="list-text">您可以安全地關閉控制器。</block>
-  <block id="dbb06a74442cb70fc4d49f092b265be8" category="paragraph">在關閉受損的控制器之前、您需要確認系統是否已啟用NetApp Volume Encryption（NVE）或NetApp Storage Encryption（NSE）。如果是、您需要驗證組態。</block>
-  <block id="9b744d081289382cce38c59e4b6d3f76" category="list-text">驗證叢集中的任何磁碟區是否正在使用NVE：「Volume show -is -Encrypted true（Volume show -is -Encrypted true）」</block>
-  <block id="7ab4c93a1ecb36778005e21c2d800f15" category="paragraph">如果輸出中列出任何磁碟區、則會設定NVE、您需要驗證NVE組態。如果未列出任何磁碟區、請檢查是否已設定及使用NSE。</block>
-  <block id="9a8dafa2367c711dd5820d53a42508e9" category="list-text">驗證是否已設定NSE並使用：「顯示磁碟加密」</block>
-  <block id="ad6e341d56390163e7fc8c5722a9e033" category="list-text">如果命令輸出中列出磁碟機詳細資料及模式與金鑰ID資訊、則NSE已設定完成、您需要驗證NSE組態並使用中。</block>
-  <block id="52f57fb3e4c5bd20a2a75ecc9242ad9a" category="list-text">如果未顯示任何磁碟、則表示未設定NSE。</block>
-  <block id="d592a26ccf1ea8ee5faa30f916fd2fb6" category="list-text">如果未設定NVE和NSE、則不會有任何磁碟機受到NSE金鑰保護、因此可以安全地關閉受損的控制器。</block>
-  <block id="08c67f907b0f6c715c552d9ca4f21200" category="admonition">發行完發行版不只是發行版的版本、您可能還需要其他的金鑰管理程式類型。ONTAP這些類型包括「KMIP」、「AKV」和「GCP」。確認這些類型的程序與確認「外部」或「內建」金鑰管理程式類型相同。</block>
-  <block id="bc06dd585ab0c8107e022844d1397b0b" category="list-text">如果「金鑰管理程式」類型顯示為「外部」、而「還原」欄顯示為「是」、則關閉受損的控制器是安全的做法。</block>
-  <block id="ea9a06f5fb2cd5470a0c0c25b039a03c" category="list-text">如果「金鑰管理程式」類型顯示為「OnBoard」、而「RESTORED」欄顯示為「yes」、則您需要完成一些額外步驟。</block>
-  <block id="c6d9b949fc815c7d1290e5acb1f3ade9" category="list-text">如果「金鑰管理程式」類型顯示為「外部」、而「還原」欄顯示「是」以外的任何內容、則您需要完成一些額外步驟。</block>
-  <block id="b43c8f6b2fe8e4b5d1d2f97c83c7c6ca" category="list-text">如果「金鑰管理程式」類型顯示為「OnBoard」、而「RESTORED」欄顯示「yes」以外的任何內容、則您需要完成一些額外步驟。</block>
-  <block id="ad569dbab7bcafe6ae2a28cd4d832fd1" category="list-text">如果「Key Manager（金鑰管理程式）」類型顯示為「OnBoard（機上）」、而「RESTORED（還原）」欄顯示「yes（是）」、請手動備份OKM資訊：</block>
-  <block id="1b3e3ec3fd07bf53abc8401f17b2a7b5" category="list-text">輸入命令以顯示金鑰管理資訊：「安全金鑰管理程式內建show-backup」</block>
-  <block id="59d3229a75f9a710337879feec6b35c8" category="list-text">如果「Key Manager（金鑰管理程式）」類型顯示「external（外部）」、而「restored.（還原）」欄顯示「yes（是）」以外的任何內容：</block>
-  <block id="c664ce90df89e48082cd24116ca9c5cf" category="list-text">將外部金鑰管理驗證金鑰還原至叢集中的所有節點：「安全金鑰管理程式外部還原」</block>
-  <block id="09344dc6761d2a7f8e0074911899de26" category="list-text">如果「Key Manager（金鑰管理程式）」類型顯示為「OnBoard（機上）」、而「RESTORED（還原）」欄則顯示「yes（是）」以外的任何內容：</block>
-  <block id="f5321e091dead7c4ead8728aa3332803" category="list-text">輸入內建的安全金鑰管理程式同步命令：「安全金鑰管理程式內建同步」</block>
-  <block id="b1dfba2b33907e87a5254267b34a3e32" category="list-text">驗證「Key Manager（金鑰管理程式）」類型是否顯示為「OnBoard（機上）」、然後手動備份OKM資訊。</block>
-  <block id="5420f491e628cc60c7e1ffcad20d35da" category="list-text">輸入命令以顯示金鑰管理備份資訊：「安全金鑰管理程式內建show-backup」</block>
   <block id="2ac1e9cd887b50e321ead7a3e6beab55" category="summary">若要更換控制器模組硬體、您必須移除受損的控制器模組、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
   <block id="6f932d5d73e623ce4a8447916188b6ea" category="doc">更換控制器模組硬體AFF - REVA200</block>
   <block id="c4d9687f431492e0a90b422288606306" category="paragraph">若要更換控制器模組硬體、您必須移除受損的控制器、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
@@ -749,61 +683,14 @@
   <block id="399f225e1b570ae91edafe38ed1e3467" category="list-text">當每個控制器開始開機時、當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」訊息時、請按「Ctrl-C」來中斷開機程序。</block>
   <block id="323803a62993a3ba0d4d3f7b3b6c7a16" category="admonition">如果您錯過提示、且控制器模組開機至ONTAP 指令碼、請輸入「halt」、然後在載入程式提示字元輸入「boot_ONTAP」、並在出現提示時按「Ctrl-C」、然後重複此步驟。</block>
   <block id="d5bfba1ac511ef4b8b0fcb489bdaf25b" category="summary">一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。</block>
-  <block id="adbdad02f5bfa87c9c2f8f336a215924" category="doc">視需要還原OKM、NSE和NVE - AFF E4A200</block>
   <block id="080362a2b4cc1ec10758d0142bde822c" category="paragraph">一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE）的系統的步驟。</block>
-  <block id="675deaab2af548f6613e03341b8c6bf5" category="paragraph">如果NSE或NVE與Onboard Key Manager一起啟用、您必須還原此程序開頭擷取的設定。</block>
   <block id="27be5ff3320dd506741c0dbef8e1a1d9" category="list-text">將主控台纜線連接至目標控制器。</block>
-  <block id="58381527d135a27a6bde4b5bd05e7a8a" category="list-text">在載入程式提示字元下使用「boot_ontap」命令來啟動控制器。</block>
-  <block id="9031c37a40e72ae548a2065bf45f23a8" category="list-text">檢查主控台輸出：</block>
-  <block id="48bb654d023280bd32c893baf085bc9c" category="cell">*如果主控台顯示...*</block>
-  <block id="5868efbae90f2f86a5ed062e24cabc9d" category="cell">*然後...*</block>
-  <block id="be909ce65bf8d6df63809bd8c8368b35" category="paragraph">將控制器開機至開機功能表：「boot_ONTAP功能表」</block>
-  <block id="c970b4d58ed065781ff23330890becaf" category="list-text">在提示字元中輸入「Ctrl-C」</block>
-  <block id="f150e0b3fbf0503690ae315a44612249" category="list-text">在載入程式提示字元下、輸入「boot_ONTAP功能表」命令。</block>
-  <block id="37aa3abead44124c60d5894612210c4c" category="list-text">輸入您在本程序開始時從客戶處取得的機載金鑰管理程式密碼。</block>
-  <block id="0ea97f116afede3b0e4b9dba4ca1aef5" category="admonition">資料是從「安全金鑰管理程式備份顯示」或「安全金鑰管理程式內建show-Backup」命令輸出。</block>
-  <block id="02903ebc5b96b9e7e091112d0909726c" category="paragraph">備份資料範例：</block>
-  <block id="ccabb1a53730fc0cb785a201547625ee" category="paragraph">－－－－－－－－－－－－ 開始備份 TmV0QbewlesbGbG9iAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAADuD+byAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAA1AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA1AAAAAAAAAAAAAAAAAAAAMAZAMAZAAAAAA。。。H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</block>
-  <block id="f24608ce23f83ac6c7240ac03d83765f" category="paragraph">－－－－－－－－－－－－－ 結束備份</block>
-  <block id="4c01cfbecac579c81f79ea4297891a2e" category="list-text">在Boot Menu（開機功能表）中、選取Normal Boot（正常開機）選項。</block>
   <block id="fd8f15b053a3b35d3aaa40b5f46c7fbc" category="list-text">使用「儲存容錯移轉show」命令確認目標控制器已準備好進行還原。</block>
-  <block id="8179ceedf2aad3a2fafb48feb6a32bdb" category="list-text">如果命令因磁碟故障而失敗、請實際移除故障磁碟、但將磁碟留在插槽中、直到收到更換磁碟為止。</block>
-  <block id="cb941ddf6eb69b4ddc86e6b07a005e30" category="list-text">如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶、瞭解如何結束CIFS工作階段。</block>
-  <block id="49a6e24ea887965d547c6593680c2f1f" category="admonition">終止CIFS可能導致資料遺失。</block>
-  <block id="b52ec9545c2eb85c1596e99bc30ce43d" category="list-text">如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVMEM同步。</block>
-  <block id="4de9d59eeee5e688ec5317cbedf4cac0" category="list-text">如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的文件中心。</block>
-  <block id="ad72ea31e4e098e2baae0a62a1ab50e5" category="list-text">一旦恢復完成、請使用「儲存容錯移轉顯示」和「儲存容錯移轉顯示」命令來檢查容錯移轉和恢復狀態。</block>
-  <block id="579b0712f3b828fdc4e9020e1b1bf320" category="paragraph">只會顯示CFO集合體（根Aggregate和CFO型式資料集合體）。</block>
-  <block id="9b1d1f16f124136fae5f19f7571be4e8" category="list-text">將主控台纜線移至目標控制器。</block>
-  <block id="0b5a2bb237981cd334295abf32e335c5" category="list-text">等待10分鐘、讓金鑰在整個叢集之間同步。</block>
-  <block id="94f8d95799ad1cb87cd8f02b76a24ddb" category="list-text">執行「安全金鑰管理程式內建同步」命令、然後在出現提示時輸入密碼。</block>
-  <block id="7efe0ba3bdb03965520de5d493cb1efa" category="list-text">輸入「安全金鑰管理程式金鑰查詢」命令、即可查看內建金鑰管理程式中儲存的所有金鑰詳細檢視、並確認所有驗證金鑰的「RESured（還原）」欄位=「yes / true」。</block>
-  <block id="36ec6aaaed7ffba8db1abf0b30f8ad7e" category="admonition">如果「RESTORED」欄位=「yes / true」以外的任何項目、請聯絡客戶支援部門。</block>
-  <block id="e5a640f18574a8775849c862d1047203" category="list-text">將主控台纜線移至合作夥伴控制器。</block>
-  <block id="3626acf8f3fb043db8b4ec1fa9c88689" category="list-text">使用「儲存容錯移轉還原-fromNode local」命令來歸還目標控制器。</block>
-  <block id="f1f2858d6d4ebbd18bf81861cde4a024" category="list-text">使用「儲存容錯移轉show」命令、在報告完成3分鐘後、檢查恢復狀態。</block>
-  <block id="c7db1a1f0c259cdde0a5d94486a50eab" category="paragraph">如果20分鐘後仍未完成還原、請聯絡客戶支援部門。</block>
-  <block id="fbca918423039255e9a6e82d918f66a5" category="list-text">在clusterShell提示符下、輸入「net int show -is－homefal」命令、列出不在主控制器和連接埠上的邏輯介面。</block>
-  <block id="6b74e1ea2b206c2676c7c5e7a08d32f1" category="paragraph">如果有任何介面被列為「假」、請使用「net int f還原」命令將這些介面還原回其主連接埠。</block>
-  <block id="c1f75c987a465b1cc4e36d81f98dc0f6" category="list-text">將主控台纜線移至目標控制器、然後執行「vrsion -v」命令來檢查ONTAP 版本。</block>
   <block id="0e4c0966d084bca62cb0b1d57bb4cd37" category="list-text">如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。</block>
   <block id="2d3bee2aa5bb3ec8ffb5a77dc1eba625" category="paragraph">登入提示</block>
-  <block id="9a937b3bb3ba6ff155022c69722c1b2d" category="paragraph">請前往步驟7。</block>
   <block id="da3aca27b9eb9a6e192b169e434a93ae" category="list-text">登入合作夥伴控制器。</block>
-  <block id="22a48d4647a1c5395be2a1c92346ddfe" category="list-text">將主控台纜線移至合作夥伴控制器、然後使用「儲存容錯移轉恢復-來源節點-僅限CFO - Aggregate true local'命令、將目標控制器儲存設備歸還。</block>
-  <block id="f872779437b4e53b16edbb822fb3c0f4" category="list-text">如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。</block>
-  <block id="1924e570ac40cf94ae49e97f9ee5aa7c" category="list-text">如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVMEM同步。</block>
-  <block id="aa633ff512f47818b432e9d473f72e85" category="list-text">等待3分鐘、然後使用「儲存容錯移轉show」命令檢查容錯移轉狀態。</block>
-  <block id="05b88caec4b40ec70bfc6914f6b9a2ac" category="list-text">在clusterShell提示符下使用「shorage加密磁碟show」查看輸出。</block>
   <block id="5902a3ce474984c1a3dac5ba814ff133" category="list-text">將主控台纜線連接至合作夥伴控制器。</block>
   <block id="432fbc80d952a560e7d764411dacca12" category="list-text">使用"shorage容錯移轉恢復-fromnode"命令來歸還控制器。</block>
-  <block id="4b6f3f55d184c33efac164b8b2ee5af1" category="cell">如果主控台顯示...</block>
-  <block id="847e5cb0171189006a180b0bdc820c1d" category="list-text">使用「安全金鑰管理程式金鑰查詢」命令、顯示金鑰管理伺服器上儲存之驗證金鑰的金鑰ID。</block>
-  <block id="0ef66abc20cffa4c4991ca92804b1201" category="list-text">如果「RESTORED」欄=「yes / true」、您就能完成更換程序。</block>
-  <block id="3590d4c7e4b3d4c1072a4ec2b4e51916" category="list-text">如果「金鑰管理程式類型」=「外部」、「還原」欄=「是/真」以外的任何項目、請使用「安全金鑰管理程式外部還原」命令來還原驗證金鑰的金鑰ID。</block>
-  <block id="115d1cf06878d4a98f851bc4a19497e0" category="admonition">如果命令失敗、請聯絡客戶支援部門。</block>
-  <block id="1548ff1f461a56c2764d1d704c63c971" category="list-text">如果「金鑰管理程式類型」=「OnBoard」、「RESTORED」欄=「yes / true」以外的任何項目、請使用「安全金鑰管理程式內建同步」命令重新同步金鑰管理程式類型。</block>
-  <block id="85782e063d10d2f824adbf09b6b2f2df" category="paragraph">使用安全金鑰管理程式金鑰查詢來驗證所有驗證金鑰的「RESured（還原）」欄位=「yes / true（是/真）」。</block>
   <block id="be6de1f798c9c3b8d44917a0380db2a8" category="summary">您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。</block>
   <block id="61ebd8fcdf103b9ce92a28b6cb2ee6bb" category="doc">更換即時時鐘電池AFF - REVA200</block>
   <block id="11ce5f5071d3bac04351e20945429ca7" category="list-text">您可以將此程序用於ONTAP 系統支援的所有版本的功能</block>
@@ -1077,7 +964,6 @@
   <block id="1e2a0fcc2986a119062540d6a8a9681f" category="inline-link">尋找ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）</block>
   <block id="8761710e49b8b20d4b6cc2adb064a0b2" category="paragraph"><block ref="8761710e49b8b20d4b6cc2adb064a0b2" category="inline-link-rx"></block></block>
   <block id="e5fb91f466e4f9bded3cae7f56b2a15e" category="list-text">如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」</block>
-  <block id="39d85e49c5dadc98a9a1f6eaef4229dc" category="doc">視需要還原OKM、NSE和NVE - AFF E4A700s</block>
   <block id="09b725ec4b513cf16714e69e0bf388eb" category="doc">控制器模組更換總覽- AFF Sof A700s</block>
   <block id="736818ee29ba3143ee0a9e06231deb0e" category="list-text">健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。</block>
   <block id="f8e9ecd9537af58f29ba82e30b17fd32" category="list-text">您必須以相同型號的控制器模組來更換控制器模組。您無法只更換控制器模組來升級系統。</block>
@@ -1284,8 +1170,6 @@
   <block id="d26f9a8db778421541cf5cebfdeb9039" category="section-title">步驟3：更換PCIe卡</block>
   <block id="ab0f1b74bde528a6c04a7682a94cb284" category="paragraph">若要更換PCIe卡、您必須從目標擴充卡的PCIe卡連接埠移除纜線和任何SFP、從控制器模組移除擴充卡、移除並更換PCIe卡、重新安裝擴充卡、然後重新安裝。</block>
   <block id="fc9b566637bbcf2a8a0459c61e065654" category="doc">關閉控制器AFF -現象A700s</block>
-  <block id="598fddf79c16170c6db6427cdff14daa" category="section-title">選項1：在執行ONTAP ENF9.5或更早版本的系統上勾選NVE或NSE</block>
-  <block id="eb924216b30cedba77ddd9a35ecc861e" category="section-title">選項2：在執行ONTAP ES9.6及更新版本的系統上、勾選NVE或NSE</block>
   <block id="8a9d9ac73cd783fd8be1adef7a7b3710" category="summary">主開機媒體會儲存ONTAP 系統在開機時所使用的功能不均的開機映像。您可以使用ONTAP 次要開機媒體上的還原影像來還原主要開機媒體映像、或是必要時使用USB快閃磁碟機來還原主開機媒體映像。</block>
   <block id="505ba7be41620674b2d6d7caf7f3453d" category="doc">開機媒體更換總覽- AFF 《Sof boot media replacement》-《Se A700s</block>
   <block id="327cba4c3b39fe95536adbd9bda04a68" category="paragraph">如果您的次要開機媒體故障或遺失image.tgz檔案、您必須使用USB快閃磁碟機還原主要開機媒體。磁碟機必須格式化為AT32、而且必須有適當的儲存容量、才能容納image_xxx.tgz檔案。</block>
@@ -1895,7 +1779,6 @@
   <block id="12aec4fbc7647a1e52c203364239e9ee" category="section-title">步驟3：移除控制器模組</block>
   <block id="7bb3e2efcb7169f8ff52d523079a8978" category="paragraph">若要更換機箱、您必須從舊機箱中移除控制器模組或模組。</block>
   <block id="6fc6af7f5e9e751fe317aeb918003ab5" category="admonition">如果系統位於系統機櫃中、您可能需要移除後固定托架。</block>
-  <block id="e3d77d25c42b5b22d3782666486eb37f" category="doc">視需要還原OKM、NSE和NVE - AFF E4A300</block>
   <block id="8311fdba7d6af817bbd917e36ee0241a" category="doc">更換即時時鐘電池AFF - REVA300</block>
   <block id="6ffcd61574f4970c28c0b71a5611ad7c" category="section-title">步驟3：更換RTC電池</block>
   <block id="12567249cf52e7754ded20b52b9cb150" category="paragraph">若要更換RTC電池、請在控制器內找到它們、然後依照特定的步驟順序進行。</block>
@@ -1964,36 +1847,7 @@
   <block id="32b858596eeb9351eca27c2906a21da4" category="paragraph">Mccip</block>
   <block id="8d8e1d2c17edc6fe8262408b12b73390" category="list-text">如果顯示的控制器模組系統狀態與您的系統組態不符、請設定控制器模組的「HA」狀態：「ha-config modify controller _ha-stu__」</block>
   <block id="c36d25abc9dfdbc31228c74f7e654d0c" category="list-text">如果顯示的機箱系統狀態與您的系統組態不符、請設定機箱的「HA」狀態：「ha-config modify chassis _ha-stu__」</block>
-  <block id="3520fe246261ba13b3370caf4fcfc36f" category="paragraph">一旦勾選環境變數、您必須完成還原Onboard Key Manager（OKM）、NetApp Storage Encryption（NSE）和NetApp Volume Encryption（NVE）的專屬步驟。</block>
-  <block id="23e65b68007bc60e8ad67b39ecae3fd1" category="list-text">判斷您應該使用哪個區段來還原OKM、NSE或NVE組態：如果NSE或NVE已啟用、且內建金鑰管理程式已啟用、則您必須還原在本程序開始時擷取的設定。</block>
-  <block id="062e5198807f7350b9d909ed3712446f" category="list-text">如果已啟用NSE或NVE、且已啟用Onboard Key Manager、請前往 <block ref="33a171c6b2b99214dd0e88721c37d6a3" category="inline-xref-macro-rx"></block>。</block>
-  <block id="ab86e173cd8c1637bf2f46855c4a5445" category="list-text">如果NSE或NVE已啟用ONTAP 支援功能以支援S69.6、請前往 <block ref="562d430b0be788e16727b0e1ac85777d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="8ec39994b3f9e646dc5702b80aa074eb" category="section-title">啟用Onboard Key Manager時、還原NVE或NSE</block>
-  <block id="0b0ce175074093bb880164e8608f30ab" category="list-text">在載入程式提示字元下使用boot_ONTAP命令來啟動控制器。</block>
-  <block id="c6ad4048580181b0fbf4e191b6491baa" category="paragraph">正在等待恢復...</block>
-  <block id="349f344b4475008476c2c7c47e12e197" category="list-text">出現訊息：Do you sto halt this node/wait [y/n]（是否要停止此節點、而非等待[y/n]？）輸入：「y」</block>
-  <block id="9a35117ce5f367da3a3ca5116d861d73" category="list-text">在「Boot Menu（開機功能表）」中、輸入隱藏的命令「主機蓋內建金鑰管理程式」、然後在提示字元中回覆「y」。</block>
-  <block id="2a5c64cf16afc052ecc2fa22a6498fd8" category="list-text">當系統提示您輸入備份資料時、請在系統詢問時貼上本節開頭擷取的備份資料。貼上「安全金鑰管理程式備份顯示」或「安全金鑰管理程式內建show-Backup」命令的輸出。</block>
-  <block id="b1a9ca4c67f6b51a4dc8e3cdf1151948" category="admonition">資料是從「安全金鑰管理程式備份顯示」或安全金鑰管理程式內建show-Backup命令輸出。</block>
-  <block id="1491d378fbbc2d9a6048e5b9b67a396a" category="paragraph">輸入備份資料：</block>
-  <block id="18b0469d01c1aab8ffb650afc5ac6e1b" category="paragraph">系統會開機以等待傳回...提示。</block>
-  <block id="c44f1e5dca108a88d3a5c0122cfaad60" category="list-text">將主控台纜線移至合作夥伴控制器、然後以admin身分登入。</block>
-  <block id="04767794ed138df3aa3f519e53e96bcc" category="list-text">只讓CFO使用「儲存容錯移轉回傳回-fromNode local -only CFO Aggregate true」命令來集合體。</block>
-  <block id="56b9aa57eb07c87d93d8f36e42537891" category="list-text">如果命令因為開啟的CIFS工作階段而失敗、請洽詢客戶如何結束CIFS工作階段。</block>
-  <block id="99cf22e04f567c5375349f8aa14becd4" category="list-text">如果該命令因為合作夥伴「未就緒」而失敗、請等待5分鐘、讓NVRAM同步。</block>
-  <block id="4d2b3834d59169dcbb17afc3c699e3ac" category="list-text">如果由於NDMP、SnapMirror或SnapVault 流程而導致命令失敗、請停用此程序。如需詳細資訊、請參閱適當的內容。</block>
-  <block id="eab386a3f0ee69cc95b939175ad1da27" category="list-text">一旦恢復完成、請使用「儲存容錯移轉顯示」和「儲存容錯移轉顯示」命令來檢查容錯移轉和恢復狀態。</block>
-  <block id="be2212e27f9b1a451164ead27dee26c8" category="list-text">如果您執行ONTAP 的是32或更新版本、請執行安全金鑰管理程式內建同步：</block>
-  <block id="dc8d8ea6e07ddae6b12e88e3bd16de6b" category="list-text">輸入「安全金鑰管理程式金鑰查詢」命令、即可查看內建金鑰管理程式中儲存的所有金鑰詳細檢視、並確認所有驗證金鑰的「RESured」欄位=「yes / true」。</block>
-  <block id="2c5db3c58d5b9378c452e1c4413e4723" category="list-text">使用「儲存容錯移轉show」命令、在報告完成三分鐘後、檢查恢復狀態。</block>
-  <block id="6c8465bcaf5ce5fddf9eade0934b0fcf" category="list-text">在clusterShell提示字元中、輸入net int show -is主目錄假命令、列出不在主控制器和連接埠上的邏輯介面。</block>
-  <block id="c21bd0aede10c854ba134924f61e7b69" category="section-title">在執行ONTAP S還原9.6及更新版本的系統上還原NSE/NVE</block>
   <block id="681ec8b91432585ef548a814edeadbb6" category="paragraph">移至步驟7。</block>
-  <block id="3e18dc9be2b2d52bb3684dd323591a77" category="list-text">將主控台纜線移至合作夥伴控制器、然後使用儲存容錯移轉恢復-從節點本機-僅限CFO - Aggregate true local命令、將目標控制器儲存設備歸還。</block>
-  <block id="b17e311ccd8e21ff73506e54f24b6cfd" category="list-text">等待3分鐘、然後使用儲存容錯移轉show命令檢查容錯移轉狀態。</block>
-  <block id="d0dfaa684d62992773c993db76a1b047" category="list-text">使用「安全金鑰管理程式金鑰查詢」命令來顯示儲存在金鑰管理伺服器上的加密和驗證金鑰。</block>
-  <block id="9c261e7ffcca743a66955073e35233a0" category="paragraph">使用「安全金鑰管理程式金鑰查詢」命令來驗證所有驗證金鑰的「RESured」欄位=「yes / true」。</block>
-  <block id="6895f6bac75ce22d9b20367054acb577" category="list-text">使用儲存容錯移轉恢復-fromNode本機命令來歸還控制器。</block>
   <block id="b35a00e75330322eefd710713ca83b02" category="doc">VA900系統AFF</block>
   <block id="eee1a85c64e17c1ca9ed30c1f544d35d" category="doc">更換控制器模組AFF - VA900</block>
   <block id="8b20a20371bd26b5083507f395cf24ab" category="paragraph">若要更換受損的控制器模組、您必須關閉受損的控制器、將內部元件移至更換的控制器模組、安裝更換的控制器模組、然後重新啟動更換的控制器。</block>
@@ -2430,7 +2284,6 @@
   <block id="a8869e142255ff80f45be4817f469087" category="section-title">步驟3：更換I/O模組後、重新啟動控制器</block>
   <block id="bbee62c98bf71c87d77b3d48e5cacaff" category="paragraph">更換I/O模組之後、您必須重新啟動控制器模組。</block>
   <block id="b40d85db7a9de91cff53c5663c76daaf" category="list-text">使節點恢復正常運作：「儲存容錯移轉恢復-節點減損節點名稱」</block>
-  <block id="127cae73d2b4d7758b4c0a0e3f49ba5f" category="section-title">更新版本ONTAP</block>
   <block id="10446d8e0f9e8e6b297995ce7dafe03c" category="doc">完成更換程序AFF -整套流程</block>
   <block id="8f73eb9fb7acfd413cf2778aacee51b6" category="doc">影片步驟AFF - VA900</block>
   <block id="561273ebb17be6fcb781473771bc32cb" category="paragraph">有兩段影片：一段影片顯示如何整理及連接系統、另一段影片則顯示使用System Manager引導式設定來執行初始系統組態的範例。</block>
@@ -3366,7 +3219,6 @@
   <block id="bb9e730cb1bf41d49bb0bc0e691c93ae" category="paragraph">DCPM模組橘色鎖定按鈕</block>
   <block id="3b4693c82a80c8cd74de5624c046d419" category="paragraph">當模組完全插入機箱時、DCPM模組LED會亮起。</block>
   <block id="240a0b552505715727fe3b23eda7f49f" category="paragraph"><block ref="240a0b552505715727fe3b23eda7f49f" category="inline-link-rx"></block></block>
-  <block id="f6731fc619f8ba373101af81f8f57df0" category="doc">視需要還原OKM、NSE和NVE - AFF 即EVA700和FAS9000</block>
   <block id="4289cf60429a6597dbd75e47b7eba5d6" category="summary">本指南提供安裝典型NetApp系統的詳細逐步指示。</block>
   <block id="29d6646c4ba000d4b3b4a533c4f85905" category="paragraph">本指南提供安裝典型NetApp系統的詳細逐步指示。如果您需要更詳細的安裝說明、請使用本指南。</block>
   <block id="aba9cd834dbc9324d89f22de76fad5e9" category="paragraph">您必須能夠存取Hardware Universe 有關站台需求的資訊、以及設定系統的其他資訊。您也可以存取ONTAP 版本的《發行說明》、以取得更多關於此系統的資訊。</block>
@@ -3599,9 +3451,6 @@
   <block id="0733021a14a5c436b9b7a0e6bc3eed4e" category="admonition">如果您以不同廠商的快取模組來取代快取模組、則命令輸出中會顯示新的廠商名稱。</block>
   <block id="b4c31341ab0f1e49529261f974be146d" category="summary">在關閉受損節點並檢查機載加密金鑰的狀態之前、您必須先檢查受損節點的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。</block>
   <block id="44e5cb60393d7e735de29347758edd23" category="doc">檢查內建加密金鑰</block>
-  <block id="9c675ab95a17d7706cc75c5ef43cd314" category="list-text">如果命令輸出中未顯示&lt;lno－dare&gt;、且系統執行ONTAP 的是版本號為《版本資訊與管理技術：&lt;lno－dare&gt;」、請前往 <block ref="bb573a9efe1b6bf0e0892d0c586f8500" category="inline-xref-macro-rx"></block>。</block>
-  <block id="08b4a74e7beb4fdd66d8c35f48e446dd" category="list-text">如果命令輸出中未顯示&lt;lno－dare&gt;、且系統執行ONTAP 的是更新版本的版本號、請前往 <block ref="51b5502ad45a0354bf57a42b448e6184" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e1cb9a7881589d8bbc03d3bc416f6eb6" category="list-text">如果受損節點是HA組態的一部分、請停用正常節點的自動恢復功能：「儲存容錯移轉修改節點本機-自動恢復錯誤」或「儲存容錯移轉修改節點本機-自動恢復發生恐慌後的錯誤」</block>
   <block id="165c715a7b9960848663b1b8fa3c5525" category="doc">開機媒體更換總覽- AFF FASA700和FAS9000</block>
   <block id="299fe45efcdacbb68bc84ef67b7c2627" category="paragraph">「HA狀態」的值可以是下列其中一項：</block>
   <block id="156eb6e82c7345080012a8f00d566c5e" category="paragraph">此時會出現載入程式提示。</block>
@@ -3621,7 +3470,6 @@
   <block id="56eb83c06d36c90e76429cda40aea7ed" category="section-title">選項2：在雙節點MetroCluster 的現象組態中關閉節點</block>
   <block id="0a3c10475b565c5c41bceed53441082c" category="doc">更換NVMEM電池- FAS8200</block>
   <block id="d0df344784eb5147448a19da06257cbe" category="doc">還原並驗證系統組態- FAS8200</block>
-  <block id="aae29116de4798f9a6b173dc6aa9ace8" category="doc">視需要還原OKM、NSE和NVE - FAS8200</block>
   <block id="4fa4535552a76ba6abb695db42b48161" category="paragraph">如果您應該使用此程序、請注意、四或八個控制器MetroCluster 的控制器的控制器更新程序與HA配對相同。不需要使用MetroCluster特定步驟、因為故障僅限於HA配對、而儲存容錯移轉命令可在更換期間提供不中斷營運的操作。</block>
   <block id="061a78fed35fa26d870ae789dd6685b8" category="doc">將故障零件歸還給NetApp - FAS8200</block>
   <block id="b9068760536b874bf77dc015fb91c3ae" category="doc">完整系統還原- FAS8200</block>
@@ -3665,7 +3513,6 @@
   <block id="e742eb9c2d018e1c3855d10b4906368d" category="doc">更換開機媒體- FAS8200</block>
   <block id="d48c73102976c851dd07cb5e9103a138" category="doc">更換PCIe卡- FAS8200</block>
   <block id="ec2f589bb209f983546d21f6ab53d160" category="doc">在雙節點MetroCluster 的「效能不全」組態中切換回集合體- FAS8200</block>
-  <block id="82430a05d3820aeaeb756230e94ee643" category="doc">檢查內建加密- FAS8200</block>
   <block id="8351404e0633e21cf67cb22047391a59" category="doc">開機媒體更換總覽- FAS8200</block>
   <block id="1a44c6d683ab4458e8c10088dee0617d" category="doc">還原並驗證組態- FAS8200</block>
   <block id="ad0e39682bcd1cd18eb8f815706bdc7d" category="paragraph">HA狀態的值可以是以下值之一：***"ha"（三個）***"mcc"（三個）***"mcc-2n"（三個）***"mCCIP"（三個）***"non-ha"（非三個）</block>
@@ -3678,7 +3525,6 @@
   <block id="b6ea0c6054b7f5b7832dafbb8468dc0f" category="paragraph">接管或停止受損的控制器：</block>
   <block id="4571f480b4cb6246b64d91e6cacdf34c" category="list-text">對於HA配對、請從健全的控制器接管受損的控制器：「儲存容錯移轉接管-節點_受損節點_節點名稱_」</block>
   <block id="07b824a16e2eac6bafd600bdf983d340" category="list-text">對於獨立式系統：「System Node halt _disbized_node_name_」</block>
-  <block id="9da34b3563e3dc0c838ac5494efca1fe" category="doc">視需要還原OKM、NSE和NVE - AFF E4A220和FAS2700</block>
   <block id="52d793d1ea6b22a876f80ca2d53bc2c5" category="list-text">具備RJ-45連線並可存取網頁瀏覽器的筆記型電腦或主控台</block>
   <block id="4d825fae8ae896f70b8ddce9f54ecdbd" category="list-text">設定您的帳戶：</block>
   <block id="04f25f5e3cb023eced356b5ed403f57b" category="list-text">在Config Advisor 筆記型電腦上下載並安裝此功能。</block>
@@ -3777,7 +3623,6 @@
   <block id="00a787350c10dda9fec8ed799a0a0d41" category="inline-link">安裝MetroCluster 不需要的IP組態</block>
   <block id="dd97e64f3163f239256639a3f4314e89" category="paragraph">如果您的系統採用MetroCluster 不知道IP組態、請參閱<block ref="373f2390d7121eb9c57821ab147cf1e7" category="inline-link-rx"></block> 說明。</block>
   <block id="03be12a0476133b21cb6c1c927956d23" category="doc">更換SSD磁碟機或HDD磁碟機- AFF E4A220和FAS2700</block>
-  <block id="77c90a069b30ca068906f4bbc5d904e1" category="doc">檢查內建加密金鑰AFF - EFFEA220和FAS2700</block>
   <block id="c6eb316cc94904301a8765db5aa1680f" category="doc">開機媒體更換總覽- AFF EFASA220與FAS2700</block>
   <block id="c715a9373bbec24b23f4dc8858259082" category="summary">發行說明ONTAP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">版本資訊</block>
@@ -3788,7 +3633,6 @@
   <block id="c8ce5afe6808111cafcf57c11a22b941" category="inline-link-macro">FAS2600 NVMEM電池更換影片AFF</block>
   <block id="42eb4da4054bc83a79fd36f832504d55" category="paragraph"><block ref="42eb4da4054bc83a79fd36f832504d55" category="inline-link-macro-rx"></block></block>
   <block id="cdb877e559bf1542dd2ee0540807d4a8" category="doc">還原並驗證系統組態- FAS2600</block>
-  <block id="5e57d07ff1fc6536107cc6e45fe9f281" category="doc">視需要還原OKM、NSE和NVE - FAS2600</block>
   <block id="32ab532730861844c01e0b025a4708f5" category="doc">控制器模組更換總覽- FAS2600</block>
   <block id="a47803b6b6d01b67efcc88a157378c39" category="doc">將故障部件退回NetApp - FAS2600</block>
   <block id="6abcd38b98db86440d4e33f853945773" category="doc">完整系統還原- FAS2600</block>
@@ -3825,7 +3669,6 @@
   <block id="586b0b2395e2a0e300f3fa9bf559633c" category="doc">更換SSD磁碟機或HDD磁碟機- FAS2600</block>
   <block id="d2efa0c31f219abbc043377bfd4ffa3b" category="doc">開機恢復映像- FAS2600</block>
   <block id="c3a9fb901b6e82e19cf5d6be414a5461" category="doc">關閉受損的控制器- FAS2600</block>
-  <block id="120d4b04cada3ad4213234c2437fb645" category="doc">檢查內建加密金鑰- FAS2600</block>
   <block id="048623d528706e72f17139851220f65a" category="doc">開機媒體更換總覽- FAS2600</block>
   <block id="1ab6b8fc7d00d8cf418a98c2a06619a5" category="doc">還原並驗證組態- FAS2600</block>
   <block id="e91a3b78a16fbd7eb7d01342d1c07d69" category="doc">叢集組態工作表- FAS2600</block>
@@ -3994,7 +3837,6 @@
   <block id="29507e337f4599b17e78b1e81c219e26" category="section-title">完成系統設定與組態</block>
   <block id="cc96661e257df64a25ec11990688e801" category="paragraph">系統開始開機。初始開機最多可能需要八分鐘</block>
   <block id="aeef38b8f860290dfafd28f807c628f7" category="admonition">地址格式為+https://x.x.x.x+。</block>
-  <block id="ddf5ebb5c1d9ad17f6222185e1822bf6" category="section-title">在執行ONTAP Se 9.6及更新版本的系統上檢查NVE或NSE</block>
   <block id="2ca9575466d40889a9a6e4de0788d9d5" category="doc">完整系統還原：AFF 還原為32</block>
   <block id="7b346c654ccdab10fc593c01f0c7232e" category="doc">關閉受損的控制器AFF -現象A320</block>
   <block id="655693b8856b3ddd0aca0944005d67f9" category="doc">更換控制器模組硬體AFF - REVA320</block>
@@ -4116,11 +3958,6 @@
   <block id="1e219bacf0333e38a778a5310117e12a" category="doc">使用USB隨身碟AFF 將開機映像傳輸到開機媒體- ImageA320</block>
   <block id="b070946475ca76a9891046ef46e3262c" category="list-text">如果還原成功、請在系統提示使用還原的複本時、按下受損控制器上的「y」。</block>
   <block id="0d1483a76a1f71437aa9197bfa562122" category="list-text">當您看到確認備份程序成功時、請按「y」、然後在系統提示您重新啟動控制器時按「y」。</block>
-  <block id="9652a78dd98a74622c7cc8ab283453ef" category="doc">視需要還原OKM、NSE和NVE - AFF E4A320</block>
-  <block id="edcc5f0d9a5fe5c90139ba29a255573a" category="list-text">在「Boot Menu（開機功能表）」中、輸入隱藏的命令「主機蓋板內建Keymanager」、並在提示字元中回覆「y」</block>
-  <block id="2994665dfb5faa99ddd30c342c374c54" category="list-text">當系統提示您輸入備份資料時、請在系統詢問時貼上您在本程序開頭擷取的備份資料。貼上「安全金鑰管理程式備份顯示」或「安全金鑰管理程式內建show-Backup」命令的輸出</block>
-  <block id="aec87d8b58ad2257f437b0c97adc8c43" category="list-text">GiveBack只有CFO會使用「儲存容錯移轉恢復- fromNode local -only CFO -aggregate true」命令來集合。</block>
-  <block id="19594966094891bac0ec9a57c3d97502" category="paragraph">使用「安全金鑰管理程式金鑰查詢」命令來驗證所有驗證金鑰的「RESured」欄位=「yes / true」。</block>
   <block id="bff69c64ca9124fefc1120a9526e1c86" category="doc">更換即時時鐘電池AFF - REVA320</block>
   <block id="653275a6740924b891457d92a9cbc8ef" category="section-title">步驟1：關閉控制器</block>
   <block id="99028e2ad3b8cc332ccf01555ed73338" category="section-title">步驟2：更換RTC電池</block>
@@ -4274,7 +4111,6 @@
   <block id="3aa65b6dd04ce8c10a11bc203220a807" category="list-text">完成控制器模組的重新安裝。控制器模組一旦完全插入機箱、就會開始開機。準備好中斷開機程序。</block>
   <block id="42ab358b243344438e34cb8483bb2ca2" category="doc">還原並驗證系統組態AFF -還原C190</block>
   <block id="76afa3fde08aeab96dca3e3a39dcd27a" category="list-text">MCC-2n</block>
-  <block id="c8ba643914db1664b5eb486f2f97cf94" category="doc">視需要還原OKM、NSE和NVE - AFF EFC190</block>
   <block id="54cd26f163d61b3be602eb785ab0a241" category="doc">控制器模組更換總覽- AFF C190</block>
   <block id="4ee2fc05d2faa1f333113817a90809f4" category="summary">本節將詳細說明如何安裝AFF 一套功能完善的系統。</block>
   <block id="25cf65ddd80144b70d3dac5fc3efd292" category="doc">詳細步驟- AFF C190</block>
@@ -4367,12 +4203,9 @@
   <block id="df09058d5b404eb00ac7ce864045c556" category="doc">開機恢復映像AFF -還原C190</block>
   <block id="26b459a4766f77a1bec60418a8e392d1" category="list-text">在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：</block>
   <block id="75037510df4619ff0448fd0beadedb4d" category="paragraph">`*boot_recovery *</block>
-  <block id="81b014b89575d4c2c10465dcae392a39" category="doc">檢查內建加密金鑰AFF -《The》（《The Onboard Encryption keys -》</block>
-  <block id="ababafc28230637bc7ee0dc0762d3d7a" category="list-text">如果命令輸出中沒有顯示&lt;lno－dare&gt;、而且系統執行ONTAP 的是版本號為32的9.6或更新版本、請前往下一節。</block>
   <block id="3ec236eb5b8f67430e02ace51c37b834" category="doc">開機媒體更換總覽- AFF 《The Boot Media replacement -》（《更新媒體</block>
   <block id="fc3fc335fe3d498e24675e2eff27cd4f" category="doc">關閉控制器AFF -現象C190</block>
   <block id="e81e65a4f6bbdd26bd0618bcbf34a71d" category="doc">還原並驗證系統組態- FAS8300和FAS8700</block>
-  <block id="85d8efbc74d6524c8654e1ba5832036b" category="doc">視需要還原OKM、NSE和NVE - AFF S還原fas8300和FAS8700</block>
   <block id="94aea6f09b1466d3642940029f1b693a" category="doc">控制器模組更換總覽- FAS8300和FAS8700</block>
   <block id="855366b23fbc8af0c5a01bb5529b380c" category="list-text">置換節點_是取代受損控制器的新控制器。</block>
   <block id="f406838ab1af1615895d90b4b0439c67" category="doc">詳細指南- FAS8300和FAS8700</block>
@@ -4541,7 +4374,6 @@
   <block id="fd62f71706b219af05866bd0a2936d3c" category="paragraph">您可以使用下列動畫、圖例或書面步驟來更換NVDIMM。</block>
   <block id="83f5dbc08aca0f364692b2a42ed31f22" category="admonition">動畫和圖例顯示沒有DIMM的插槽空插槽。這些空插槽中會填入空格。</block>
   <block id="bf333756fca94003818a0db8ced6f7d9" category="list-text">將控制器恢復正常運作：「儲存容錯移轉還原-ofnode_disapped_node_name_」</block>
-  <block id="b35abadbe34f4c4e5f4b2befaba8124d" category="doc">檢查內建的加密金鑰AFF - FASfas8300和FAS8700</block>
   <block id="3a08488c499949ce994ce7beebe666ee" category="doc">更換電源供應器- FAS8300和FAS8700</block>
   <block id="54f4c70c653781a776673e986d65e502" category="paragraph">您可以使用下列動畫、圖例或書面步驟來更換電源供應器。</block>
   <block id="fe0e817b3bc5b4c3f92a0bd2fc673648" category="doc">開機媒體更換總覽：AFF FAS8300和FAS8700</block>
@@ -4648,7 +4480,6 @@
   <block id="d5e5a42c3659480b5bd0d7fe962a3e0d" category="list-text">「_Healthy_」節點是受損控制器的HA合作夥伴。</block>
   <block id="bc79dc3537b9e69ed2f995a703258726" category="doc">重新安裝系統並重新分配磁碟- AFF VA250</block>
   <block id="586424cb167133a0adfaf4650a20127e" category="paragraph">請使用下列視訊或表格步驟來更換機箱、並假設機箱已拆除並更換擋板：</block>
-  <block id="09ceb3b4ff2ad3b2c821f40047aee6f1" category="doc">視需要還原OKM、NSE和NVE - AFF E4A250</block>
   <block id="89df533077d1f80c319c0c00d4c58ed1" category="doc">更換即時時鐘電池AFF - VA250</block>
   <block id="e0f21664596f0c97d1d5a04e2fdf74bc" category="paragraph">請使用下列視訊或表格步驟來更換RTC電池：</block>
   <block id="3bfc0205925c583b173da8aaa6c933a5" category="list-text">找出散熱片與中間板之間的RTC電池、並依照圖示將其取出。</block>
@@ -4761,7 +4592,6 @@
   <block id="a99f211848e0a3fa987df05f364dcc0b" category="doc">關閉控制器AFF -現象A250</block>
   <block id="f7b32babba20f290222a62a499496335" category="section-title">選項2：MetroCluster 系統在一個方面</block>
   <block id="ea00def363aacc8779f9b5afd4cc8812" category="doc">還原並驗證系統組態- AFF VA800</block>
-  <block id="ca509809c0cb66e22f010cac79984c8b" category="doc">視需要還原OKM、NSE和NVE - AFF E4A800</block>
   <block id="868fb46f8db1c45bfa9a49dea454c35a" category="doc">控制器模組更換總覽- AFF VA800</block>
   <block id="1bab600dfeb5dd52557d4dc719a4016b" category="admonition">請勿降級BIOS版本的_replacity_控制器、以符合合作夥伴控制器或舊控制器模組。</block>
   <block id="5ffba9ed2c673f5145fe25996fc2b0dc" category="summary">本節將詳細說明如何安裝AFF 一套功能完善的系統。</block>
@@ -4883,14 +4713,12 @@
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
   <block id="161d11f75b68457ea33ac52c79b01c05" category="doc">更換NVDIMM AFF - NVME A800</block>
   <block id="2c0856fef0927def0bd154513fb326fb" category="list-text">如果您要移除或移動NVDIMM、請解除鎖定擴充卡上的鎖定栓、然後移除適用的擴充卡。</block>
-  <block id="7103ae2dc232b897a89408d0cd914f59" category="doc">檢查內建加密金鑰AFF -《》、《》、《》、《》</block>
   <block id="9fc6e6ebb195a8b268f686a0f8256e7b" category="summary">更換電源供應器時、需要從電源拔下目標電源供應器、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。</block>
   <block id="80185b76790082a23c34d9ebf9a01f7e" category="doc">更換電源AFF 供應器- REVA800</block>
   <block id="0e3989fd0fd811ede751f0ca9dbfbe88" category="doc">開機媒體更換總覽- AFF VA800</block>
   <block id="fd1cff0abcf1ef0e075b330e2ee360fe" category="doc">完成還原與更換程序AFF -還原A800</block>
   <block id="b8238a1ffeb288edb4606d4cee1cdf5c" category="doc">關閉控制器AFF -現象A800</block>
   <block id="49cc582b0e041effb99494704c8f0963" category="doc">還原並驗證系統組態- FAS500f</block>
-  <block id="24f4a2e7ff21c7e7b62929514e79a48b" category="doc">視需要還原OKM、NSE和NVE - FAS500f</block>
   <block id="2bf23db896fc6ece8a7fd4c8db50ab7d" category="doc">控制器模組更換總覽- FAS500f</block>
   <block id="86dc7cd20630b2e611de506fafba9463" category="summary">本節提供安裝FAS500f系統的詳細逐步指示。</block>
   <block id="591619e8839fdfc064f5e99d963dd15b" category="doc">詳細步驟- FAS500f</block>
@@ -4937,14 +4765,12 @@
   <block id="a2eee56e65b85ca98cf164fa99598b1b" category="doc">開機恢復映像- FAS500f</block>
   <block id="4ca27b7e1f4aad146e9ddc45f9af0410" category="doc">關閉控制器- FAS500f</block>
   <block id="aeb37e440c5f2e1087a4396fdd1d260b" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
-  <block id="a27042b0e01fb9b4136d2de6e8c1db73" category="doc">檢查內建加密金鑰- FAS500f</block>
   <block id="b94c622729a1c3b9f221ed4f8376e65b" category="doc">更換電源供應器- FAS500f</block>
   <block id="1661dbd7e15cf50b73ab10b3561b2d66" category="paragraph">您可以使用下列影片或表格步驟來更換電源供應器：</block>
   <block id="00399cc3a07fad2f3aadfc84abd6ee65" category="doc">開機媒體更換總覽- FAS500f</block>
   <block id="6730578f02ba32c4ccfb1acc3e8ab367" category="doc">完成還原與更換程序- FAS500f</block>
   <block id="9fb8ac9db9ddb949f108f678e1fa4b9d" category="doc">關閉控制器- FAS500f</block>
   <block id="936537a41290b6040d5cea518bd8e9f8" category="doc">還原並驗證系統組態- AFF VA400</block>
-  <block id="2b7c2aaa4a365717d683513bec2dd543" category="doc">視需要還原OKM、NSE和NVE - AFF E4A400</block>
   <block id="61c752abcbb868d9432b6f4a5da1593b" category="doc">控制器模組更換總覽- AFF VA400</block>
   <block id="8ebf8284e0fff7b962f6416451a28baa" category="doc">詳細指南AFF - VA400</block>
   <block id="6a34534c1e57a69bc063e8a88767c875" category="list-text">檢閱《_ NetApp ONTAP 產品資訊指南_》、並收集該指南所列的必要資訊。</block>
@@ -5114,7 +4940,6 @@
   <block id="241c179d2adc97920bb3ec4cd2d467aa" category="sidebar">關閉受損的控制器</block>
   <block id="90d6224326bc2ce2bada52a2663f2dbe" category="sidebar">更換開機媒體</block>
   <block id="6ad18d600bb32103fed4e18fdfa6c440" category="sidebar">開機還原映像</block>
-  <block id="6f067b96310ad4260a8f4dd718261296" category="sidebar">還原OKM、NSE和NVE</block>
   <block id="59293e04244880734e8114db6dbd1ed4" category="sidebar">將故障零件退回NetApp</block>
   <block id="3388786d3a71e2dc264dd9a25e4c40cc" category="sidebar">VA200機箱AFF</block>
   <block id="5e9f3b79a908c552a802e6c0d9c51269" category="sidebar">更換硬體</block>
@@ -5172,7 +4997,6 @@
   <block id="84076119b86e5d8e667bab1fab788759" category="sidebar">切換回MetroCluster 還原組態</block>
   <block id="3ce57900c3b1fca4ec9acdde53a7ce72" category="sidebar">VA300機箱AFF</block>
   <block id="c49dd0e106f4d1baf8b7e7083d5068b3" category="sidebar">部分A300控制器模組AFF</block>
-  <block id="4b4ef0c79b0398f75f85815a11b15104" category="sidebar">預先關機檢查內建加密金鑰</block>
   <block id="d5e04348de632d7c88520b90cf79f1fa" category="sidebar">開機恢復映像</block>
   <block id="2e8840df8a206cd4e5aa7e0fa02b1cf7" category="sidebar">更換硬體</block>
   <block id="fa526b254f42bdec5706995cc5868952" category="sidebar">還原及驗證組態</block>
@@ -5344,8 +5168,6 @@
   <block id="2560c526c9d334c39cab4311db7eff4d" category="paragraph">如果您的磁碟櫃已部分裝入、表示您要重新安裝磁碟機的磁碟櫃所含的磁碟機數量少於其支援的12個磁碟機、請將前四個磁碟機安裝至前插槽（0、3、6和9）。</block>
   <block id="b18ad0a07953c39e92025f3df711d7e8" category="list-text"><block ref="b18ad0a07953c39e92025f3df711d7e8" category="inline-link-rx"></block></block>
   <block id="137edbb782dbd05e84addda1ad111604" category="list-text"><block ref="137edbb782dbd05e84addda1ad111604" category="inline-link-rx"></block></block>
-  <block id="ec5866194941126dcbe55d496f612191" category="list-text">如果受損的控制器處於獨立組態、並在載入器提示下、請聯絡 <block ref="d4b5db761eff3af8abec9c2aa8b19609" category="inline-link-macro-rx"></block>。</block>
-  <block id="4729966d1b42f799e14eba4dd6dedbdb" category="paragraph"><block ref="4729966d1b42f799e14eba4dd6dedbdb" category="inline-link-rx"></block></block>
   <block id="756d409209ace98589705774b5011aa0" category="inline-link">FAS9500</block>
   <block id="777fd6d7388769d3f60adc007c4390a4" category="paragraph"><block ref="777fd6d7388769d3f60adc007c4390a4" category="inline-link-rx"></block></block>
   <block id="801fb2644ef002c15826950c6197b174" category="paragraph">零點9.10.1P3和9.11.1 ONTAP</block>
@@ -5355,7 +5177,6 @@
   <block id="c964f542415e7614484e4edf970ab7a8" category="paragraph">將受影響的LIF永久重新指派至不同的主連接埠。請參閱<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 如需使用System Manager永久移動生命期的相關資訊、</block>
   <block id="6d351dbc4a7187d4512a1c505c200687" category="paragraph">使用System Manager將lifs永久移轉至不同的主連接埠、如所述<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block>。</block>
   <block id="f3ca7c7565b074fbf5e12ffb59930d2f" category="doc">將故障零件退回NetApp - FAS9500</block>
-  <block id="111654993a380e0c9bea6bf2840bed64" category="doc">預先關機檢查內建加密金鑰- FAS9500</block>
   <block id="4ea7136415cb99f780a4177ea7ada9f4" category="doc">還原並驗證系統組態- FAS9500</block>
   <block id="a7ed9ff4da75adb740c610eda185e598" category="doc">快速步驟- FAS9500</block>
   <block id="6c77c0963cc43d89befd25aeab2f805c" category="inline-link-macro">FAS9500安裝與設定說明</block>
@@ -5378,17 +5199,6 @@
   <block id="cdcb00922b21796793c48c3b35b6c0f4" category="doc">開機恢復映像- FAS9500</block>
   <block id="46dd13a6814ed7f56a6b685a892da660" category="doc">更換即時時鐘電池- FAS9500</block>
   <block id="542a28d27da2740fcbd2bfb50ba849cc" category="doc">關閉受損節點- FAS9500</block>
-  <block id="c864447c725c6855c6a867ef48db2ee6" category="doc">OKM、NSE和NVE的開機後媒體更換步驟- FAS9500</block>
-  <block id="cb8bd5f8b409f772feeb282be5c812fd" category="list-text">將主控台纜線連接至目標節點。</block>
-  <block id="09c59b704f34eb3d4a2fd7d67e831c1b" category="list-text">在載入程式提示字元下使用「boot_ontap」命令來開機節點。</block>
-  <block id="ee576c01fd9d6961677d0a6255745ad9" category="paragraph">將節點開機至開機功能表：「boot_ONTAP功能表」</block>
-  <block id="da0c8baa25fcee791ffa412ec90044ca" category="list-text">將主控台纜線移至合作夥伴節點、然後以admin身分登入。</block>
-  <block id="2f6a11061d2c04a9d9730e06edaa97a6" category="list-text">一旦恢復完成、請使用「儲存容錯移轉顯示」和儲存容錯移轉顯示恢復命令來檢查容錯移轉和恢復狀態。</block>
-  <block id="da4a2b9c52e805a46a6951e79d1796d9" category="list-text">將主控台纜線移至合作夥伴節點。</block>
-  <block id="da4a3c359cf5d24082930f89cd19b3fc" category="list-text">使用「儲存容錯移轉還原-fromNode local'命令來歸還目標節點。</block>
-  <block id="a23d49d00b003ec7514a6fcf51f93bac" category="list-text">在clusterShell提示符下、輸入「net int show -is－homefal」命令、列出不在主節點和連接埠上的邏輯介面。</block>
-  <block id="80d6c51420c97a5fd468a280127498fe" category="list-text">將主控台纜線移至目標節點、然後執行「vrsion -v」命令來檢查ONTAP 版本。</block>
-  <block id="809f0d7cd6f78909c00532d70262031d" category="list-text">將主控台纜線移至合作夥伴節點、然後使用「儲存容錯移轉恢復-來源節點本機-僅CFO - Aggregate true local'命令、將目標節點儲存設備歸還。</block>
   <block id="5852e0b4d479d20d783c528e9f8e41fa" category="doc">FAS9500系統</block>
   <block id="bc8cb8c20c19791f56e4ce60f7a2aad0" category="doc">移除控制器、更換開機媒體、然後傳輸開機映像- FAS9500</block>
   <block id="eb0c0a024c4f0aa6cfdd5767de1f16f1" category="doc">更換I/O模組- FAS9500</block>
@@ -5836,7 +5646,6 @@
   <block id="8ea19d634d233a26f4f650bd2e2b467c" category="paragraph">若要熱交換內含NVRAM11電池的卸載控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。</block>
   <block id="58fb0a507d97ff336e5db5d69ba846e9" category="inline-link">將40GbE NIC連接埠轉換成多個10GbE連接埠、以實現10GbE連線</block>
   <block id="8ae73aa056882e7b560f3b52b5764957" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用將這些連接埠轉換成10 GbE連線<block ref="5ec041cdb2bbdf01cd4ea2c400b17495" prefix=" " category="inline-code"></block> 從維護模式執行命令。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
-  <block id="1bb835185391c9f6463cb5dc111090d1" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 <block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block>。</block>
   <block id="aae78f4a3d47a08dddca98a632d4a75f" category="paragraph">如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須先修正問題、再關閉受損的控制器。</block>
   <block id="68d9e980b8b4998ef88139d7b7ab8ff6" category="paragraph"><block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block></block>
   <block id="3cf0b39ddc0b0c6fbe705a62aacc7d3c" category="list-text">在機箱正面、用您的拇指將每個磁碟機穩固推入、直到您感覺到有正面的停止為止。如此可確保磁碟機穩固地安裝在機箱中板上。</block>
@@ -5888,7 +5697,6 @@
   <block id="49c230c702ed6b30a6efde8eba87e563" category="doc">將故障零件歸還給NetApp AFF - NetApp - 4A150</block>
   <block id="3dfa4c8dc7083d8d9bf2fb1fc402660a" category="doc">快速指南AFF - VA150</block>
   <block id="6e0311a42e114c05c9779f6c830f1d97" category="inline-link-macro">《系統安裝與設定說明》（英文AFF ）</block>
-  <block id="b80ee1e7ed290f304dbaae444297a4fa" category="doc">視需要還原OKM、NSE和NVE - AFF E4A150</block>
   <block id="e822ef8c7b4b17d3230b125760d56e76" category="doc">還原並驗證系統組態- AFF VA150</block>
   <block id="178a6a7a54abe615089fef92a8499c05" category="doc">開機恢復映像AFF - ImageA150</block>
   <block id="1639fff89eb56a9268790c9fe41436ab" category="doc">控制器模組更換總覽- AFF VA150</block>
@@ -5945,10 +5753,8 @@
   <block id="a4829fef0cfb953ea3181e31db648a62" category="paragraph">您可以在I/O進行期間、不中斷營運地更換故障的SSD磁碟機。</block>
   <block id="d7b7b72f7a0bd85854375ed25ad54137" category="admonition">磁碟機可能需要數小時才能出現在故障磁碟機清單中。</block>
   <block id="f6551f88d88dddb684035802224a0336" category="doc">關閉控制器AFF -現象C250</block>
-  <block id="1338d35acdb3c964dd3a62d00b16a635" category="doc">檢查內建的加密金鑰AFF -《The》（《The》）-《The</block>
   <block id="d667058635875eca097800e4379f58cd" category="doc">快速步驟- AFF C250</block>
   <block id="84918b89947f6a68e4b25fe4753c02bc" category="inline-link-macro">《安裝與設定說明》（英文AFF ）</block>
-  <block id="d3d5358ee829ec20cfebc87c86eed844" category="doc">視需要還原OKM、NSE和NVE - AFF EFC250</block>
   <block id="64e5c97f01cbac1639343e8b0f670c20" category="list-text"><block ref="64e5c97f01cbac1639343e8b0f670c20" category="inline-link-macro-rx"></block></block>
   <block id="38471c9931ce26e5aeb8c80bf6483a48" category="list-text"><block ref="38471c9931ce26e5aeb8c80bf6483a48" category="inline-link-macro-rx"></block></block>
   <block id="82e9cd9a6fede8cb6fa3e276cac9a710" category="list-text"><block ref="82e9cd9a6fede8cb6fa3e276cac9a710" category="inline-link-macro-rx"></block></block>
@@ -5961,7 +5767,6 @@
   <block id="4d8adba62be8512e84ae7825848692e9" category="doc">將故障零件歸還給NetApp AFF - NetApp - C400</block>
   <block id="28dd2419d5232cd5e390f590d7d76b55" category="doc">快速指南AFF - C400</block>
   <block id="bef061f2ba2a880a4d71960c6fb14a8f" category="inline-link-macro">《C400安裝與設定說明》AFF</block>
-  <block id="dde11f85a430c37e085e56c530fa6482" category="doc">視需要還原OKM、NSE和NVE - AFF EFC400</block>
   <block id="a637f1b4c2a1d9b5cb9f0347c7e77539" category="doc">還原並驗證系統組態- AFF C400</block>
   <block id="b1c4aeeae550bfbe7c6574898398d781" category="doc">更換NVDIMM電池AFF - REC400</block>
   <block id="76f50c3f31d2ab405df556357b00ae41" category="doc">控制器模組更換總覽- AFF C400</block>
@@ -5980,7 +5785,6 @@
   <block id="e6423ca3487b9b75d5af512862698175" category="doc">更換控制器模組硬體AFF - REC400</block>
   <block id="5edd30c4cef8fac3bd29e60266f4cb36" category="doc">關閉控制器AFF -現象C400</block>
   <block id="5254fce53c38649f011fdb307e35d4b3" category="doc">更換DIMM AFF - C400</block>
-  <block id="8db6fdf9679dcdf01a0f39d01d482c0c" category="doc">檢查內建加密功能- AFF C400</block>
   <block id="454f2d4445f738afc6491f938272785d" category="doc">重新安裝系統並重新分配磁碟- AFF 《The》（《The》）-《》（《The》</block>
   <block id="7fc305adae8e903c0dc8bff5a49862c9" category="doc">更換PCIe或夾層卡AFF - C400</block>
   <block id="042e6e8da8b6da480bf85ff04e4d7922" category="doc">更換開機媒體總覽- AFF 《》C400</block>
@@ -6100,7 +5904,6 @@
   <block id="a7d1c95d57e2d4d91562898a605711c2" category="doc">將故障零件歸還給NetApp AFF - NetApp - C800</block>
   <block id="c7567cf7dbf1c0e5da4f2ff1ced923ef" category="doc">快速步驟- AFF C800</block>
   <block id="f8eb42a3c2c9e8d82c874d7ccd6ef2a9" category="inline-link-macro">《安裝與設定說明》（英文AFF ）</block>
-  <block id="51e6f316a2e32ea2e86cbacf242892f6" category="doc">視需要還原OKM、NSE和NVE - AFF EFC800</block>
   <block id="6d940c412bcfcdb76ebf095399d157ea" category="doc">還原並驗證系統組態- AFF 還原C800</block>
   <block id="83087c77244cbf7473481303d60706cd" category="doc">開機恢復映像AFF - ImageC800</block>
   <block id="e00efce1b44b4a70e33640aa4e4da7ab" category="doc">更換風扇AFF - REC800</block>
@@ -6121,7 +5924,6 @@
   <block id="2a6e70f5ba0bf4b1e8256c095ec0cd1c" category="doc">更換控制器模組硬體AFF - REC800</block>
   <block id="90571542a9bc3f19e7a4f29fa9556cff" category="doc">關閉控制器AFF -現象C800</block>
   <block id="96575ba10e2fbb7c8295e344411ca2d1" category="doc">更換DIMM AFF - REC800</block>
-  <block id="592fdd085a6d32be5ca82d8cf41fd57d" category="doc">檢查內建加密金鑰AFF -《The》（《The Onboard Encryption keys -》</block>
   <block id="053f6b40fe6bb9b0a6dde49c0f76dc01" category="doc">重新連接系統並重新分配磁碟- AFF 《The》（《The》）-《》（《The》</block>
   <block id="1085be18597d7d6c96ecba68a211bd73" category="doc">更換PCIe卡AFF - REC800</block>
   <block id="a3ab531d62779409698b7c4da393c7e6" category="doc">將開機映像傳輸到開機媒體AFF - ImageC800</block>
@@ -6202,10 +6004,6 @@
   <block id="7765edbf8893ad208b9932e53c6d932a" category="doc">更換 SSD 磁碟機 - AFF C800</block>
   <block id="632bcda28821b8191cdaaa396c4b3e22" category="paragraph">若要安裝 I/O 模組、包括受損機箱的 NVRAM 模組、請依照特定步驟順序進行。</block>
   <block id="bcf7de048a0b400d784ce2434b8beffe" category="doc">更換 SSD 磁碟機 - AFF C250</block>
-  <block id="767f4271a1d06fc66fc1c9d48c7b86e8" category="list-text">顯示儲存在金鑰管理伺服器上之驗證金鑰的金鑰 ID ：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
-  <block id="e084232082046eab4e75b332c2a9fbe5" category="list-text">確認<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄等於<block ref="a6105c0a611b41b08f1209506350279e" prefix=" " category="inline-code"></block> 對於所有驗證金鑰：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
-  <block id="7ef95216354d37756f204adf213d9c42" category="list-text">驗證<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示<block ref="a6105c0a611b41b08f1209506350279e" prefix=" " category="inline-code"></block> 對於所有驗證金鑰：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
-  <block id="1f7aa359582e430ea0f9f103a2603e1e" category="list-text">顯示儲存在金鑰管理伺服器上之驗證金鑰的金鑰 ID ：<block ref="eb3cf23f0c9c60ca759ddca34bbfbf56" prefix=" " category="inline-code"></block></block>
   <block id="1ffab5c59dbafc5f9803c8c1c9f1a392" category="list-text">按住電源供應器把手上的 terra cotta 鎖定按鈕、然後將電源供應器從機箱中拉出。</block>
   <block id="053d4f46894c00d901f3095a3ad91755" category="paragraph">Terra cotta 鎖定按鈕</block>
   <block id="80e9690d6c33d863eeba6d3568a54e20" category="list-text">按下風扇模組上的 terra cotta 鎖定按鈕、將風扇模組直接從機箱中拉出、並確保您可以用自己的手來支撐它。</block>
@@ -6448,7 +6246,6 @@
   <block id="71d4d064630d70cfb9adf86452b9de52" category="paragraph">如果有任何生命被列為假、請將其還原至其主連接埠：<block ref="985591930e85610706940dd82967bd61" prefix=" " category="inline-code"></block></block>
   <block id="5f9489878c0e21ab14f2c4768367bc39" category="list-text">如果觸發 AutoSupport 維護時段、請使用結束<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="fe5bb47bbec2cc6ab51288fa7ec602da" category="paragraph">可重新連接控制器模組的儲存設備和網路連線。</block>
-  <block id="8f71288719d23ae490bd8fa8ba6d2988" category="paragraph">如果有任何介面列為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>、使用將這些介面還原回其主連接埠<block ref="71c4baf0f55b5bfce2627ab279a13043" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="657e1e449c74518bb94702c89e392c1b" category="list-text">在 _health_ 節點上、檢查系統時間：<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block></block>
   <block id="6071c318b780c1f56da250b5fe0334d8" category="paragraph">日期和時間是根據設定的時區而定。</block>
   <block id="598dc5e99f2a14bda43240b77ca40634" category="section-title">步驟 2 ：啟動系統</block>
@@ -6556,10 +6353,6 @@
   <block id="a9965269fc2882517b2f7404230818ad" category="list-text">如果您要將一個或多個磁碟櫃熱新增至現有堆疊的端點（邏輯第一個或最後一個磁碟機櫃）、請針對您的組態完成適用的子步驟；否則、請前往下一步。</block>
   <block id="ca067501330c228a786fd00d17229575" category="paragraph">將磁碟機熱新增至堆疊的末端、該堆疊具有多重路徑 HA 、三重路徑 HA 、多重路徑、四路徑 HA 或四路徑連線至控制器</block>
   <block id="fa3d4e5360018aa45e5104272d43148c" category="paragraph">堆疊必須符合中所述的要求 <block ref="d7ead9d51e0253f97f9c0ae83a2ee9eb" category="inline-xref-macro-rx"></block> 本程序的一節。</block>
-  <block id="d9b691280dde7c1805e39052719c9c29" category="list-text">停用健康控制器的自動恢復：
-儲存容錯移轉修改 -node 本機 -auto-贈 品 false
-或<block ref="1d2c479b57949de891a15e148e1ebcf5" prefix=" " category="inline-code"></block></block>
-  <block id="ce62d26f194e7c2888ff8e53c7d011c5" category="paragraph">檢查環境變數之後、您必須完成特定步驟、以使用您在本程序開始時擷取的設定來啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp Volume 加密（ NVE ）的系統。</block>
   <block id="a9b1f8d4946ebf3182e44c224cfa7997" category="doc">關閉功能受損的控制器 - FAS2800</block>
   <block id="ba1ddb4c1d6bdc698ece9a974aae0713" category="paragraph">關閉或接管受損的控制器。</block>
   <block id="3ab3867dfd753c1ff0d27e903bff1cc4" category="doc">更換開機媒體： FAS2800</block>
@@ -6726,7 +6519,6 @@
   <block id="51f7be1d2b3585b769547e04e7036ed9" category="image-alt">DRW 2850 取代 RTC 電池 IEOPS 701</block>
   <block id="9f463a2feadd622498da11734b7d3548" category="paragraph">重新安裝控制器模組、並將其開機至載入器提示。</block>
   <block id="8133c5bbfd79c61b3d28f53fd52d6b77" category="section-title">步驟 5 ：設定更換 RTC 電池後的時間 / 日期</block>
-  <block id="c9f8b929f9ab0b6a880c4fbdb297685c" category="doc">視需要還原 OKM 、 NSE 和 NVE - FAS2800</block>
   <block id="e8b941fcc944e0bbefda4636b0900a37" category="list-text"><block ref="e8b941fcc944e0bbefda4636b0900a37" category="inline-link-macro-rx"></block></block>
   <block id="531b14cc35d21cdbdd3198396f0be9e2" category="list-text"><block ref="531b14cc35d21cdbdd3198396f0be9e2" category="inline-link-macro-rx"></block></block>
   <block id="64bd602d0544a5fe1fc2a2419daab9cb" category="list-text"><block ref="64bd602d0544a5fe1fc2a2419daab9cb" category="inline-link-macro-rx"></block></block>
@@ -6947,7 +6739,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e6286a186c95dfa765e7e19dc10afa9e" category="section-title">即時時鐘電池</block>
   <block id="fba5965b9134bd1291bee1260f5fcf21" category="paragraph">即時時鐘電池會在電源關閉時保留系統日期和時間資訊。</block>
   <block id="a67cc26cbba94ea1d2b847cbc0574686" category="section-title">步驟 5 （僅限雙節點 MetroCluster ）：切換回集合體</block>
-  <block id="0ab7f92a68b16764d7667e3b826e3433" category="paragraph">在關閉受損控制器並檢查內建加密金鑰的狀態之前、您必須檢查受損控制器的狀態、停用自動恢復、並檢查系統上執行的 ONTAP 版本。</block>
   <block id="28a80c9e2cd7e688ac36b9d1d600c170" category="summary">您必須驗證機箱的 HA 狀態、切換回集合體、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。</block>
   <block id="69f3a5a3fa19fee640389983d958d940" category="section-title">步驟 2 ：切換回雙節點 MetroCluster 組態中的集合體</block>
   <block id="341b682adfeb628f1bd1c2eb360fa9a4" category="paragraph">將風扇、硬碟機和控制器模組從功能受損的機箱移至新機箱、然後將功能受損的機箱換成與功能受損機箱相同型號的新機箱。</block>
@@ -6987,9 +6778,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8e7a33c44e49f9b5c0e2db2d78219211" category="doc">維護 ASA A250 硬體</block>
   <block id="63c77f3bd33a61dbe342def54e1aaf5b" category="paragraph">對於 ASA A250 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="84fba8bc1002a05a2e1bc0df39a0d311" category="section-title">NVEM 電池</block>
-  <block id="e80f92a9874e9f1b07fbfef7aa513724" category="doc">視需要還原 OKM 、 NSE 和 NVE - ASA A250</block>
   <block id="290bd37a39561a18b23a42421cfcf3ee" category="doc">控制器模組更換總覽 - ASA A250</block>
-  <block id="fae9adfe600cdc4c5b43bf973bfc3188" category="doc">檢查內建加密金鑰 - ASA A250</block>
   <block id="943cbde5eb2522f265b1edf4f60529fd" category="doc">關閉控制器 - ASA A250</block>
   <block id="fa26ab686e2bca1aebda5034632821e5" category="doc">更換 NVMEM 電池 - ASA A250</block>
   <block id="b7a0d897933205e6e22755b6d3ed6203" category="list-text"><block ref="b7a0d897933205e6e22755b6d3ed6203" category="inline-link-macro-rx"></block></block>
@@ -7111,7 +6900,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="027df07ace2b49bdd101ed7de8831a66" category="doc">開機恢復映像 - ASA A800</block>
   <block id="1809d57833f6aee6ca28a7a9976f3c02" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - ASA A800</block>
   <block id="8efb05cbcb76a25c9260967bb6da74ea" category="doc">更換電源供應器 - ASA A800</block>
-  <block id="4ec9ac1d6cfd564e14c7762ed15dd4ca" category="doc">檢查內建加密金鑰 - ASA A800</block>
   <block id="ab40c87c67587a22552f3f86175f6b6c" category="doc">更換控制器 - ASA A800</block>
   <block id="3e1e482bf99769f878506ac262ea9469" category="doc">更換機箱 - ASA A800</block>
   <block id="cf89ec61d7d165d24a4540839ef73f51" category="doc">完整機箱更換 - ASA A800</block>
@@ -7145,7 +6933,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="74aa9c71bfd41b33dc21e26b67720c49" category="doc">熱交換非階段控制器電源模組（ DCPM ） - FAS9000</block>
   <block id="14e88a77d6efea55ca64c457b9ab65da" category="doc">關閉受損的控制器 - FAS9000</block>
   <block id="e3424c519d237723175dbe678f466fe1" category="doc">熱交換快取模組： FAS9000</block>
-  <block id="bc33853f048b214c5af2f7aea8908547" category="doc">視需要還原 OKM 、 NSE 和 NVE - FAS9000</block>
   <block id="20be13c1d1090a2ab17f091e497bb866" category="doc">更換控制器模組硬體： FAS9000</block>
   <block id="62195060113df8a2782db9da3228a189" category="doc">開機恢復映像： FAS9000</block>
   <block id="3a201b28e54c09ae98a539a9903e205e" category="doc">快速步驟： FAS9000</block>
@@ -7195,8 +6982,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ed6183c79360d84f37e156e80fe33aa6" category="doc">關閉控制器 - ASA A900</block>
   <block id="67bcd92a05c94a3a813d8e595b1f5283" category="doc">完整系統還原 - ASA A900</block>
   <block id="eb192783589d844d1af1ecb849489b22" category="section-title">步驟 1 ：安裝新控制器的授權</block>
-  <block id="30237a59a1f5031aa00a02bf9f671edc" category="doc">OKM 、 NSE 和 NVE 的開機後媒體更換步驟 - ASA A900</block>
-  <block id="545b78c60c2feb900e5c34b5af729c01" category="paragraph">檢查環境變數之後、您必須完成還原內建金鑰管理員（ OKM ）、 NetApp 儲存加密（ NSE ）和 NetApp Volume 加密（ NVE ）的特定步驟。</block>
   <block id="996a9b0ff7207d4230b2b6f5ca8de4e0" category="doc">開機恢復映像 - ASA A900</block>
   <block id="4da6be1bf421fc7ff067ee2e73b4b8b1" category="summary">提供從機架安裝和佈線到初始系統開機等系統典型安裝的圖形說明。</block>
   <block id="4848727d4d964e87d86f556430e12505" category="doc">快速步驟 - ASA A900</block>
@@ -7205,7 +6990,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ffd35f8c2bbd04d0d068c1f8df413804" category="doc">影片步驟 - ASA A900</block>
   <block id="7d1fb483052073af4f4cc12799641b5e" category="doc">更換裝有 NVRAM11 電池的 DCPM - ASA A900</block>
   <block id="2b061d20a12abc555d3ec31b4a597fbd" category="doc">更換控制器模組硬體 - ASA A900</block>
-  <block id="f4f193c187311fbf0be5df1f8b0bb0e4" category="doc">機載加密金鑰的關機前檢查 - ASA A900</block>
   <block id="600bae2dfd13ad78a23b5956bad21213" category="doc">更換機箱 - ASA A900</block>
   <block id="6bce460d3973f94c0284f11300e21aab" category="doc">還原並驗證組態 - ASA A900</block>
   <block id="df8c04fe473c2ae44cd201952a9c2108" category="doc">更換控制器模組 - ASA A900</block>
@@ -7268,7 +7052,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2f22eb2147b4f40176e6b5b76c428118" category="doc">維護 ASA A220 硬體</block>
   <block id="5008278e1e32e8ad93241b23cfd34db7" category="doc">交換電源供應器 - AFF A220</block>
   <block id="f9f06c08cb5d35391dc83c9a4f0f6c9e" category="doc">關閉控制器 - AFF A220</block>
-  <block id="64ea13cf975482cfba9a36aa8054a2d1" category="doc">視需要還原 OKM 、 NSE 和 NVE - AFF A220</block>
   <block id="86abc489b1bf331707e191a10be0f086" category="doc">完整系統還原 - AFF A220</block>
   <block id="1273c9fbc5c944f1ba9781560b258420" category="summary">本頁提供從機架和纜線到初始系統開機的一般系統安裝說明。</block>
   <block id="fd21e05e00e82c93ae08fac45c859f89" category="doc">快速指南 - AFF A220</block>
@@ -7319,7 +7102,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="85b480bf87d91a2932c8ed43e4def5f4" category="admonition">ASA A150 使用與 AFF A150 系統相同的安裝程序。</block>
   <block id="48a9a0f255a122f383dce55509b5a79a" category="doc">開機恢復映像 - ASA A150</block>
   <block id="76ee45904d9d171832835353313011a4" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - ASA 150</block>
-  <block id="fbbc44ce8ce19560615b28dfcbfe46d3" category="doc">檢查內建加密金鑰 - ASA A150</block>
   <block id="070bdcad0142d8cf21268dca6275fe89" category="doc">更換控制器 - ASA A150</block>
   <block id="f3bad228bd34f18781843874208259c3" category="doc">機箱更換總覽 - ASA A150</block>
   <block id="0b11c8d8ffff83e1165677b553555d82" category="doc">還原並驗證組態 - ASA A150</block>
@@ -7365,7 +7147,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b65dcf1c7ad6c86f6d2d5bed4626bcc6" category="doc">快速指南 - ASA A400</block>
   <block id="5eb8101a6e8a2a3f54c56549ab21ade4" category="admonition">ASA A400 使用與 AFF A400 系統相同的安裝程序。</block>
   <block id="b26cf0fc163ec7e9ea966514eed60da1" category="doc">更換電源設備 - ASA A400</block>
-  <block id="5f2eeb826d2873b3f4c3b6f5107d3feb" category="doc">檢查機載加密 - ASA A400</block>
   <block id="2d7c6c8ec11dfd6f4583d91c8d94d5d0" category="doc">更換控制器 - ASA A400</block>
   <block id="1952c1c21894126b1d43fd1b446add88" category="doc">機箱更換總覽 - ASA A400</block>
   <block id="8a5c79d05f266b99fd8b21d069b75d78" category="doc">完整機箱更換 - ASA A400</block>
@@ -7564,8 +7345,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6e511e082f09f049a4c7c1e36e35c9c3" category="inline-image-macro">顯示系統背面管理連接埠位置的圖例</block>
   <block id="d439da4c3831de2165d4e3edbb6ad2de" category="paragraph">將管理連接埠連接至管理網路交換器    <block ref="5f7dc0c41e4463eda3eca8496148edc4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10fbfa6320d8e7c72e731fbd9a6e6c69" category="admonition">只有在更換 NVRAM 模組時才需要重新指派磁碟、而且不適用於 NVRAM DIMM 更換。</block>
-  <block id="ce75c7b2bf3b15b7659cc85a9c36c6f8" category="admonition">在提示字元處輸入客戶的 32 個字元、英數字元內建金鑰管理密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
-  <block id="2f061f16ff1dc3668b0b979718bcf140" category="paragraph">在提示字元處輸入客戶的 32 個字元、英數字元內建金鑰管理密碼。如果無法提供通關密碼、請聯絡NetApp支援部門。</block>
   <block id="f44ae95a820a7e92672103acdefa1387" category="paragraph"><block ref="5e48dfc079c01fd7f817337abb01a320" prefix="" category="inline-code"></block></block>
   <block id="4d2ddfe3e3c29216d5f6b430195c79ea" category="paragraph">DIMM 鎖定彈片</block>
   <block id="61442583e1c58477c0407d6793d8994b" category="paragraph">DIMM 插槽</block>
@@ -7614,9 +7393,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f85c225eac9932f77dacb6e6236f7ce2" category="paragraph">對於 ASA C400 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="2097e20950ae1f46d998ba486146b369" category="doc">更換 NVDIMM - ASA C400</block>
   <block id="76707ae3bb72f26856ca1367c5a4ac26" category="doc">機箱更換總覽 - ASA C400</block>
-  <block id="c2e0801f4fc7b1cf02d78195b3131f54" category="doc">視需要還原 OKM 、 NSE 和 NVE - ASA C400</block>
   <block id="ec587342818437cd0c6a0daf4be599a1" category="doc">在雙節點 MetroCluster 組態中切換回集合體 - ASA C400</block>
-  <block id="d01d4189a4ad8b718886cbc79fe007a5" category="doc">檢查機載加密 - ASA C400</block>
   <block id="f7f6cafa82cca0d649fec769636a374b" category="doc">關閉受損控制器 - ASA C400</block>
   <block id="124e5d993905ca8fc1e3ed8fa62e76ad" category="doc">更換 DIMM - ASA C400</block>
   <block id="987d3338a5584fedd4b7efd844691246" category="doc">更換開機媒體 - ASA C400</block>
@@ -7646,8 +7423,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bcf1e5f5ec2f5fa0fb4df4081483cf5a" category="doc">維護 ASA C250 硬體</block>
   <block id="d856c63691d6118cb3531626f4c662b5" category="paragraph">對於 ASA C250 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="778936817303ec79ea5a4c275ed17135" category="doc">機箱更換總覽 - ASA C250</block>
-  <block id="b01e565a4186b159f90650ce3ca4196a" category="doc">視需要還原 OKM 、 NSE 和 NVE - ASA C250</block>
-  <block id="0c80834eb80ee789c355be4e4a0edad5" category="doc">檢查內建加密金鑰 - ASA C250</block>
   <block id="706f40f792c3dab367a62e0d94e461ee" category="doc">更換或安裝夾層卡 - ASA C250</block>
   <block id="8336f1f72044234f7e63ccadc716be3d" category="doc">更換 DIMM - ASA C250</block>
   <block id="bc2311b6a715da1a660ee0a9afd2016e" category="doc">更換開機媒體 - ASA C250</block>
@@ -7680,8 +7455,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f9ea5dff2f002c5b2f6eeeb84451e9f5" category="paragraph">對於 ASA C800 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="3f9ba83126a2d0a1b4562908efe4870c" category="doc">更換 NVDIMM - ASA C800</block>
   <block id="50097ad5c1b5e616bbe0f94d6918f272" category="doc">更換機箱 - ASA C800</block>
-  <block id="8e0d3110e2fb313b0ac5d7178af78d83" category="doc">視需要還原 OKM 、 NSE 和 NVE - ASA C800</block>
-  <block id="2927ec98383ea38a218c0b37add3584b" category="doc">檢查內建加密金鑰 - ASA C800</block>
   <block id="f672d90fc8d0ab339549e32ae4a18c26" category="doc">更換 DIMM - ASA C800</block>
   <block id="dccd487628e9e3fb202bf1d54f224f85" category="doc">更換開機媒體 - ASA C800</block>
   <block id="16c54e4c9f50a83bb13eddc18729c9e7" category="doc">更換 NVDIMM 電池 - ASA C800</block>
@@ -8307,31 +8080,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="db89594b0a0cbb483395a2641220f1fe" category="list-text">停用時啟用自動恢復： _storage 容錯移轉修改 -node local -auto-贈 品 true_</block>
   <block id="4e0b6dc04aaa383038bc23130a17cb25" category="cell">如果 I/O 模組為 ..</block>
   <block id="09c2cf2531a14305542e6aff93e691c5" category="paragraph">NIC 模組</block>
-  <block id="f4247136ba1a68a91a49f4e715963146" category="paragraph">在關閉受損控制器之前、您需要確認系統是否已啟用安全金鑰管理程式或加密磁碟。</block>
-  <block id="ee3b489243bdd4fdcc48ef1ad422f531" category="section-title">驗證安全金鑰管理程式組態</block>
-  <block id="19033065ab73d137563560b1fc6895b0" category="inline-link">安全密鑰管理器密鑰庫顯示手冊頁</block>
-  <block id="71f479ec4da1fa9d5c9be25ad13a546d" category="admonition">您可能還有其他金鑰管理程式類型。類型包括<block ref="5a2c55bb167f4f0fcfe52384fe7a4f0b" prefix=" " category="inline-code"></block>、<block ref="15460966dfd5d819470e51c2381536a3" prefix=" " category="inline-code"></block>和<block ref="c731f72e1d22a7c5e01a7cb789a8885e" prefix=" " category="inline-code"></block>。確認這些類型的程序與確認或金鑰管理程式類型相同<block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block><block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> 。</block>
   <block id="a286fff38dd07b679c8ce3d88b6f2962" category="inline-link-macro">關閉受損的控制器</block>
-  <block id="367826db12be5d0f5fa3825090445002" category="list-text">如果未顯示任何輸出、請前往 <block ref="eee94cfaa2087b0a7525f83880646105" category="inline-link-macro-rx"></block> 關閉受損節點。</block>
-  <block id="d59c3f1076a11584ab7756dc397ac53d" category="list-text">如果命令顯示輸出、表示系統已啟用、<block ref="3e5d9bfa91fefbf6ef9dcbbf78fad776" prefix=" " category="inline-code"></block> 您需要顯示<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 類型和狀態。</block>
-  <block id="9c6ad91fc60690c917a5cd6ed6cd7a33" category="list-text">使用 _security key-manager keyquery_ 命令顯示作用中的資訊<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 。</block>
-  <block id="d4d54422637dc235d95476cfe54ea635" category="list-text">如果顯示類型且欄位顯示、則<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block><block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block><block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block><block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>可安全關閉受損的控制器。</block>
-  <block id="70a67dee5ee1d1759bf1a2c010c1e811" category="list-text">如果<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示類型<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> 且<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄位顯示<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>、您需要完成一些其他步驟。</block>
-  <block id="a2bb34c9514c6e80246f4c62ebc228ba" category="list-text">如果<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示的類型<block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block> 和<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示的不是<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>、您需要完成一些其他步驟。</block>
-  <block id="9c33fca9f2622d604fc8874a364353ac" category="list-text">如果<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示的類型<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> 和<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示的不是<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>、您需要完成一些其他步驟。</block>
-  <block id="74604182978b167f63843f1b5103e2fc" category="list-text">如果<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示類型<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> 且<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>、請手動備份 OKM 資訊：</block>
-  <block id="2f860acdf6b26736b405ca465ba26aa8" category="list-text">當系統提示您繼續時、請輸入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> ：<block ref="8d2cf87827d8c4c105b70542cc18077d" prefix=" " category="inline-code"></block></block>
-  <block id="4c94e967d32d6a5e4a0ee6ac899694ef" category="list-text">輸入命令以顯示金鑰管理資訊： _security key-manager onboard show-backup_</block>
-  <block id="20ae1bfb7c7e894e8452d6455767525e" category="list-text">您可以安全地關閉受損的控制器。</block>
-  <block id="557f328fcef62c2d64ceebcbd641d6c9" category="list-text">如果<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示的類型<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block> 和<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示的內容不是<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>：</block>
-  <block id="8df76dc1d3bd7d69bf652ac978436153" category="list-text">輸入機載安全金鑰管理程式同步命令： _security key-manager onboard sync</block>
-  <block id="2f7724b07e3bd024392416fca683c713" category="admonition">在提示字元中輸入 32 個字元的英數字元內建金鑰管理密碼。如果無法提供通行密碼、請聯絡 NetApp 支援部門。<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block></block>
-  <block id="00aae9c1b73fd095e6e3a0c8e04cc543" category="list-text">驗證<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 所有驗證金鑰的欄位顯示<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ：<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block></block>
   <block id="4332aa8c798bac1ec6c0f4c83e0df305" category="list-text">驗證類型是否<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block>，然後手動備份 OKM 資訊。</block>
-  <block id="ad7a7ba5e951e1f95f031b922654b81d" category="list-text">輸入命令以顯示金鑰管理備份資訊： _security key-manager onboard show-backup_</block>
-  <block id="f460d19ca5b84d519df411e9bc1309e8" category="list-text">如果<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示的類型<block ref="6a21b6995a068148bbb65c8f949b3fb2" prefix=" " category="inline-code"></block> 和<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 欄顯示的內容不是<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>：</block>
-  <block id="bd978885d127d957b96043955d436bad" category="paragraph">如果命令失敗，請與 NetApp 支援中心聯絡：<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
-  <block id="0fc2888b577a950f06774de71be916c1" category="list-text">確認<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block> 所有驗證金鑰的欄位都顯示<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block> ： _security key-manager key query_</block>
   <block id="7f1dab55b896652272852d94aadf9413" category="list-text">從載入器提示字元中、從 USB 快閃磁碟機開機恢復映像： _boot_recovery _</block>
   <block id="66e5f5f877412d7578e6bec4d8f933b5" category="list-text">在功能受損的控制器上、當您看到時、請按下 _Y_<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block></block>
   <block id="3578391379ba5c5411207a0793afef71" category="list-text">在功能受損的控制器上，當系統提示您覆寫時，請按 _Y_<block ref="295b4ac77f4e1c5f93c6894df85fd86d" prefix=" " category="inline-code"></block>。</block>
@@ -8518,7 +8268,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ed60c71388c93567b70f2c648568f43e" category="paragraph">更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster命令輸出會<block ref="3a430417b055bb7642531def2eebffec" prefix=" " category="inline-code"></block> 顯示受損系統 ID 、直到 MetroCluster 組態恢復正常狀態為止。</block>
   <block id="df52882bdb0f8ccab117b27b8ad08f11" category="list-text">控制器是災難站台上磁碟的目前擁有者。</block>
   <block id="dbdb9c1ac216db7c2a5488c988607c9b" category="list-text">如果您的系統是 MetroCluster 組態、請確認每個控制器都已設定： MetroCluster 節點顯示 - 欄位組態狀態 _</block>
-  <block id="1964518eff1cbd81e89b8431963a7b3a" category="list-text">如果您在重新開機時停用自動接管功能、請從健全的控制器啟用： _storage 容錯移轉 modify -node-name-onreboot true_</block>
   <block id="f83defba1f467eab098c839b34ecd50f" category="image-alt">更換 PSU</block>
   <block id="dc77af39a42fc8bba7b24ca9686dfb67" category="paragraph">Terracotta PSU 鎖定標籤</block>
   <block id="e1335ae9dd3c981060cb7896ec1cad9f" category="paragraph">取出故障的 RTC 電池、然後安裝替換的 RTC 電池。</block>
@@ -8578,7 +8327,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="75fa26086844dfcbf14f35086518217a" category="list-text">卸下消隱模組。</block>
   <block id="2b6adb50592127273fdb4bb2b68918d5" category="list-text">將 I/O 模組與控制器模組插槽開口邊緣對齊。</block>
   <block id="97366bfb1dcb5b97156c347c8ad89d9a" category="list-text">將模組一路輕輕滑入插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。</block>
-  <block id="2f3095e4c2c969f1f9dca69963ff66c1" category="paragraph">將所需的移位點永久重新指派至不同的主連接埠。如需使用 System Manager 永久移動生命的相關資訊、請參閱<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
   <block id="6181ce929bc404494408989e6b8a9b52" category="paragraph">若要更換 I/O 模組、請在控制器模組中找到該模組、然後依照特定步驟順序進行。</block>
   <block id="8a9a8a0db84d9dd59b0f006930b47193" category="list-text">按下 CAM LATCH 按鈕。</block>
   <block id="422e2aa4ec97de509f54db9d23618f37" category="list-text">將手指連入凸輪桿開口處、然後將模組拉出機箱、即可將模組從機箱中取出。</block>
@@ -8773,10 +8521,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="92a8f4f22e2adcc65ead3e4c5a1435db" category="list-text">關閉 CAM 把手、使磁碟機完全插入中間背板、把手卡入定位。</block>
   <block id="ccb7122523ff13a861d44c2bcdc45f81" category="list-text">指派每個磁碟機：<block ref="e546c7c0f19a803f32f47d3907849b62" prefix=" " category="inline-code"></block></block>
   <block id="3774ddca34a7ba4f3e245f00869ad3d4" category="paragraph">更換數個磁碟機時、每個故障磁碟機的移除與插入替換磁碟機之間、您必須等待 70 秒、讓儲存系統能夠識別每個新磁碟的存在。</block>
-  <block id="9f8cb0e8a48411f934bc97473df58706" category="list-text">如果啟用 AutoSupport 、請使用還原 / 恢復隱藏自動建立案例<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block></block>
-  <block id="9cdea9bbd0e16c22fc991522b7972ed5" category="paragraph">您必須完成特定於已啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp 磁碟區加密（ NVE ）的系統、並使用本程序開始時擷取的設定。</block>
-  <block id="7b2bdafe064028eef5977d05150f12ac" category="admonition">如果 NSE 或 NVE 與 Onboard 或 External Key Manager 一起啟用、您必須還原本程序開始時擷取的設定。</block>
-  <block id="63a4de1bcedff077618555275f624f08" category="open-title">選項 1 ：具有內建金鑰管理程式伺服器組態的系統</block>
   <block id="7000494e61efaf925f6df5293a176456" category="inline-link">同時啟用內建金鑰管理</block>
   <block id="da204d9262b182aa6636ef0f759e2181" category="list-text">輸入的叢集範圍複雜密碼<block ref="45fc92ed2fd28afadf25f8be26cb5500" category="inline-link-rx"></block>。</block>
   <block id="f295be867ed42957086669bda6d018d8" category="inline-link">Onboard Key Manager 的備份資訊</block>
@@ -8796,8 +8540,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d60b517023845eb33535660ac501cf18" category="list-text">KMIP 伺服器位址。</block>
   <block id="70b8d21a07e70130ed6b262a91c18626" category="list-text">KMIP 連接埠。</block>
   <block id="e43680b19a57600cbf0bc788265754c7" category="list-text">從 ONTAP 開機功能表中選取選項 11 。</block>
-  <block id="4f95ab1472771ae8e2475d26cfccfefd" category="paragraph">下列 AutoSupport 訊息會在兩小時內禁止自動建立個案：「 cluster1:*&gt; 系統節點 AutoSupport 呼叫 -node*-type all -message MAINT =2h</block>
-  <block id="46bbc90a4740f73d85b026da0e0ba4db" category="list-text">停用健康控制器的自動恢復：</block>
   <block id="b719e721c62569ed8b97aaf7ac03691a" category="paragraph">多叢集互連交換器</block>
   <block id="237cf241ea2c39cca38863cb459577d8" category="paragraph">多叢集組態可讓多個叢集共用同一個叢集交換器、透過兩個新的 4x4 和 2x8 節點組態參考組態檔案提供。</block>
   <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="paragraph">ONTAP 9.14.1.</block>
@@ -9198,7 +8940,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6476573ba5b973ad8ea01c57f5b30267" category="sidebar">系統ASA</block>
   <block id="9aaba65702056e024efc0836758c1538" category="sidebar">完成熱新增</block>
   <block id="b1cd69e899e8ab2e8b0c559899a3f2d7" category="admonition">下圖顯示移除水平和垂直 I/O 模組。一般而言、您只會移除一個 I/O 模組。</block>
-  <block id="ed8012a83cd9088ec111d26e82a75971" category="list-text">使用 _security key-manager keystore show_ 命令確定 Key Manager 是否處於活動狀態。如需詳細資訊、請參閱<block ref="4b8f2aeacb1514195535ef615c2cae4a" category="inline-link-rx"></block></block>
   <block id="3e6277588162255770fd3384bad09d6d" category="list-text">在控制器的載入器提示字元中、啟動控制器、並在系統 ID 不相符而提示覆寫系統 ID 時輸入 _y_ 。</block>
   <block id="9daabece8db7521a7882f63ebd76a891" category="image-alt">取下上方有釋放按鈕的磁碟機</block>
   <block id="e0bc24820711c466532ba2cb67ababd9" category="image-alt">卸下中間有釋放按鈕的磁碟機</block>
@@ -9443,8 +9184,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f399facc82d214513205adcdfed1e55f" category="image-alt">安裝磁碟機</block>
   <block id="f20a0219f10b0070c92efe4269486629" category="list-text">如果您安裝了儲存 I/O 模組、請依照中所述<block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>、安裝 NS224 機櫃並連接纜線。</block>
   <block id="86e8e2badf42560bb0b1ed3bac3933fa" category="paragraph">按照中所述，安裝和連接 NS224 機櫃 <block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>。</block>
-  <block id="32054c5ad8312edd8060078021c40e5a" category="list-text">如果命令輸出中顯示 &lt;lno-DARE&gt; 或 &lt;1Ono － DARe ，則系統不支持 NVE ，請繼續執行<block ref="28ec6f22ff725a2b75e5efb9fe4ec8ad" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5fc26027a17bd6c3d672fadcfbcbd0a" category="list-text">如果命令輸出中未顯示 &lt;lno-DARE&gt; 、且系統執行的是 ONTAP 9 6 或更新版本、請繼續下一節<block ref="2a46afadceb505b77f1bd61e2cc13b61" category="inline-link-macro-rx"></block>。</block>
   <block id="b9c98500ab9d006e0d9fd3d1c95f7904" category="paragraph">如需更多纜線資訊<block ref="b8ff88c1a2e9444f28ec1504689e0040" category="inline-link-macro-rx"></block>、請參閱。</block>
   <block id="ef83cb60cd5ea6118e6d106efa30f927" category="image-alt">舉升重量注意事項</block>
   <block id="f3badb2cde47b97db55936f633e8bbf1" category="image-alt">雙節點無交換器叢集複合纜線</block>
@@ -9530,7 +9269,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d17bb023ab45bd18aad4108bff14bf1e" category="list-text">如套件隨附的RMA指示所述、將故障零件退回NetApp。如<block ref="672892c7f98df9ad95d0024f72bc4b95" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
   <block id="66a35db4b6d963b540c6a3d31a9d39e6" category="paragraph">關閉或接管受損的控制器模組。</block>
   <block id="011b6189f470beb455ff657e2d7f7a63" category="list-text">將 CAM 栓鎖儘量遠離模組。</block>
-  <block id="7f6199cbd3ee90e0a5a981dd4bcdb2b3" category="doc">檢查 NVE 或 NSE</block>
   <block id="5ad3ca057c7fdbeb9a29c3682785baa3" category="cell">如果您的系統正在執行...</block>
   <block id="2e8e8fd780cc78a14b825cad663b2611" category="paragraph">ONTAP 9 。 16.0 或更早版本</block>
   <block id="607ae42cd8348594bc8bfa6a3c380eba" category="paragraph">* 注意： * 如果您看到成功還原以外的任何訊息、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
@@ -9545,7 +9283,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c1b6a9a30a6ce8d79305050622234851" category="paragraph">在命令輸出中、您應該會看到一則訊息、指出控制器的狀態。</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">控制器會重新連接其儲存資源池、並完成開機。</block>
   <block id="c23f2b6754e0bfe310956814b83c20c2" category="list-text">驗證磁碟集區的磁碟是否如預期：<block ref="a9fae81f0c924f3a581cf23a9c8b11b1" prefix=" " category="inline-code"></block></block>
-  <block id="13a20619b6dc3827356a336b68087987" category="doc">檢查系統上的 NVE 或 NSE</block>
   <block id="56bce10b49b12be932b0ca38009e1da1" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、然後在系統管理模組中安裝替換開機媒體。</block>
   <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRw a800磁碟機就位在IOPS 960上</block>
   <block id="322279d0aaf25c776901bdae1ee30ea2" category="list-text"><block ref="f46f944e351f8b92e40c3308318738a3" prefix="" category="inline-code"></block>（ ASA 不支援）</block>
@@ -9582,7 +9319,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d1da2db4d465ceb969bae13f9a2c1665" category="list-text">當系統提示您確認密碼時、請再次輸入機載金鑰管理員的密碼短語。</block>
   <block id="d6b5f802b07df1179c13649ed53524f0" category="paragraph">恢復程序完成時、您將看到下列內容：</block>
   <block id="c6980bbd79483c6809cc84795b7d14d6" category="paragraph">還原完成後、節點會重新啟動以完成程序。</block>
-  <block id="0afa9147e7fde537954ecea742d84625" category="list-text">從 ONATP 開機功能表中選取下列其中一個選項、以還原內建金鑰管理程式組態。</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">步驟 1 ：將儲存控制器連接到您的網路</block>
   <block id="c0b05ac617b77a5c10f26756e6ef04f2" category="list-text">如果連接至光纖交換器、請先將小型可插拔（ SFP ）收發器插入控制器連接埠、再將纜線連接至連接埠。</block>
   <block id="1463138ead0bd5def70e2d744eddfc0a" category="paragraph">將控制器直接彼此連接、並連接到主機網路。</block>
@@ -9947,7 +9683,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="65cc6c94582f61a33aa4704c52ac52c0" category="cell">機櫃模組</block>
   <block id="8c5d814fd2a79ee668b40d5bb90febe6" category="paragraph">IOM 6 模組</block>
   <block id="a50d5562329cec378062f8ecd6f08580" category="doc">將故障部件退回 NetApp - FAS70 和 FAS90</block>
-  <block id="748f3a5b6d81b68d72c4ee26da4759a6" category="doc">檢查內建加密金鑰： FAS70 和 FAS90</block>
   <block id="70e171be442c06a383310683a983f973" category="doc">還原加密： FAS70 和 FAS90</block>
   <block id="0f8fed13fee9009a30d0eed748301401" category="doc">引導恢復映像（ FAS70 和 FAS90 ）</block>
   <block id="3b51f7db40d40ca8865f924da6fb8314" category="doc">更換開機媒體- FAS70和FAS90</block>
@@ -10374,7 +10109,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2318a1a52ce7d20091148211d8be58fd" category="paragraph">如果無法提供通行密碼、請聯絡<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
   <block id="f1223f2beed0f1db66fa98879448bb9d" category="list-text">驗證<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>所有驗證金鑰的欄位顯示<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>：</block>
   <block id="d81a048f736ca3a03a0fc11c4bc74978" category="list-text">輸入命令以顯示金鑰管理備份資訊：</block>
-  <block id="d019a61bbe760bfae51153af25e806b3" category="doc">步驟 1 ：還原金鑰管理程式</block>
   <block id="926dc92762712fb5c888d06d13b2835c" category="list-text">從 ONTAP 開機功能表中選取適當的選項：</block>
   <block id="3554bd6dca965e0e8bcb314a54ef655c" category="list-text">輸入Onboard Key Manager的全叢集密碼。</block>
   <block id="68e51e7cb5faf4732838f76bc7db6b45" category="admonition">如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。</block>
@@ -10510,15 +10244,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b1a80a7089afd7d3b9be5936d7cc2c4b" category="example-title">顯示提示</block>
   <block id="6015ee0c3c4dbc37f534783a65239e72" category="example-title">顯示範例</block>
   <block id="6758e112526dd1470fdafbd89c3b25df" category="paragraph">輸入用戶端和伺服器資訊後、恢復程序即告完成。</block>
-  <block id="5c333c9d5086ee50b7f10724d1f9dc2b" category="paragraph">a| ONTAP 9 7 及更早版本 a| 選擇隱藏選項<block ref="7191584fa52473c1df15d3c03b065c0b" prefix=" " category="inline-code"></block></block>
-  <block id="d9b80a753e6bd9c6b770fc295f295dc3" category="cell">+ 。確認您要繼續恢復程序。+ 。顯示範例提示 [% 可摺疊 ]</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
-  <block id="68ce5ec1e3f9c353c053b6feafae61f1" category="paragraph">+ 警告：如果顯示的輸出不是、請勿繼續<block ref="3f52dc951949a3041638d54635d71099" prefix=" " category="inline-code"></block>。執行疑難排解以修正錯誤。</block>
   <block id="1544c9897deafcbdffc044dac2f06610" category="list-text">確認控制器的主控台顯示下列項目：</block>
   <block id="1ebe17e50ef0f20c9a4943cdde00f20b" category="list-text">從合作夥伴節點、將合作夥伴控制器贈回：</block>
   <block id="24de39ef6b972a13ee81c8f1e764261f" category="list-text">只使用 CFO Aggregate 開機後、請執行下列命令：</block>
   <block id="a26071b84ebad6f3f9f4f6902bd06efe" category="paragraph"><block ref="1fd11ad9c6fc9e17e9729cd939a2b47b" prefix="" category="inline-code"></block>命令。</block>
-  <block id="93c58e434dc7b5eb5c16678bb00205d0" category="paragraph">+ 附註：如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。</block>
   <block id="85ea8ad93708cbd62f01b1e93c22f93c" category="list-text">確認所有金鑰都已同步：</block>
   <block id="e4cab1326503c7b85827bb20b6ecc371" category="list-text">將合作夥伴的節點歸還：</block>
   <block id="8c262ff4c019499a1809393e7aaf9ec1" category="list-text">如果您停用了自動恢復功能、請輸入下列命令來還原：</block>
@@ -10527,10 +10256,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="44175671016a3c55aa9144d7352ab920" category="list-text">從其他叢集節點或用戶端憑證複本 /ccfcard/kmip/certs/client.crt 檔案。</block>
   <block id="d424dce62a7b2ea39afe29d8361240e7" category="list-text">從其他叢集節點或用戶端金鑰複本 /ccfcard/kmip/certs/client.key 檔案。</block>
   <block id="b8dd2898e8ee20a6f6cb34867845aa17" category="list-text">另一個叢集節點或 KMIP 伺服器 CA 的 /ccfcard/kmip/certs/ca.pem 檔案複本。</block>
-  <block id="7ae600ed46c79416b9301ce3a1377c21" category="paragraph">+ 。顯示範例</block>
-  <block id="16080a7eee840ac3e377c36a8da5fb6f" category="paragraph">系統已準備好使用外部金鑰管理程式。正在嘗試從關鍵伺服器復原金鑰[ 8 月 29 日 21 ： 06 ： 28 ] ： 0x808806100 ： 0 ：偵錯： kmip2 ：：：主： [initOpenssl] ： 460 ：執行初始化 OpenSSL 成功恢復 keymanager 機密。</block>
-  <block id="f9797a252c2780e96d414a71cd6ecf04" category="list-text">選取選項「（ 1 ）正常開機」以完成還原程序。*</block>
-  <block id="285251407570005df5c8fe081a777f29" category="paragraph">（ 1 ）正常開機。（ 2 ）不使用 /etc/rc 開機。（ 3 ）變更密碼。（ 4 ）清理組態並初始化所有磁碟。（ 5 ）維護模式開機。（ 6 ）從備份組態更新 Flash 。（ 7 ）先安裝新軟體。（ 8 ）重新開機節點。（ 9 ）設定進階磁碟分割。（ 10 ）設定 Onboard Key Manager 恢復機密。（ 11 ）設定節點以進行外部金鑰管理。選擇（ 1-11 ）？1</block>
   <block id="5943dcc79f4be51c7946faa01081c8c7" category="admonition">如果系統最初運行的是 ONTAP 9 ． 10.1 或更高版本，請使用中介紹的過程<block ref="b14f44ab326196475bf1d94f7e3821ad" category="inline-link-rx"></block>。如果您不確定系統的初始 ONTAP 版本、請參閱<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="6379280c267113ec35e5881e1b0f65bb" category="paragraph">每個機櫃都以獨特的機櫃 ID 加以區分。此 ID 可確保儲存系統設定中的機櫃各有不同。</block>
   <block id="937eeb311ae4c7f36059ec45705ae05b" category="list-text">有效的外部機櫃 ID 為 01 到 99 。</block>
@@ -10545,4 +10270,65 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f8798e73b2d5e1dfd7612b46ff0e89e2" category="video-title">更換 NS224 機櫃中的 NSM 模組</block>
   <block id="ed5f0b1fadc9d155c332ddd3a2c8910b" category="video-title">在 NS224 機櫃中熱交換電源供應器</block>
   <block id="4dc161fec1e803228a4a6e64a87cc800" category="video-title">更換 NS224 機櫃中的 RTC 電池</block>
+  <block id="63de15d7ebdc2c559ae57bca24a50ba0" category="paragraph">當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。</block>
+  <block id="e2c22e2725f2ca1633de7f84c13e7ee9" category="list-text">將功能受損的控制器恢復正常運作，只需歸還其儲存設備<block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix=" " category="inline-code"></block>：。</block>
+  <block id="31b425d57d182760ff64de2b5271d716" category="list-text">如果已停用自動恢復功能、請重新啟用：<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block>。</block>
+  <block id="1092e7972468642cadebab10dd64d57e" category="list-text">如果啟用 AutoSupport 、則還原 / 恢復自動建立個案：<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block>。</block>
+  <block id="5d76f009f7cd6e682bfd4e7b7100bf50" category="list-text">將功能受損的控制器恢復正常運作，只需歸還其儲存設備<block ref="942475a8b85026371f0df2238e2242a7" prefix=" " category="inline-code"></block>：。</block>
+  <block id="6cc1bea98a5917bd99040659271eee84" category="list-text">如果已停用自動恢復功能、請重新啟用：<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block>。</block>
+  <block id="a503a72dbd766bd5c26b4a8607a4883a" category="paragraph">將控制器模組重新安裝至機箱、然後重新啟動。</block>
+  <block id="179799acf0ae457231cd3985051c6ae8" category="list-text">如果您打開通風管、請將通風管往下轉動、直到通風管完全打開為止。</block>
+  <block id="52b8f282be8abda5f74f6d660d929735" category="paragraph">它應與控制器模組金屬板齊平。</block>
+  <block id="e929e5cc1e429d4acd62e249388409a8" category="list-text">將控制器模組的末端對準機箱的開口、然後將控制器輕輕推入機箱。</block>
+  <block id="73e9cf7fa448804b249c0a2b4c72d5db" category="paragraph">控制器模組一安裝完成、電源恢復、就會立即開始開機。如果引導至加載器提示符，請使用命令重新引導控制器<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block> 。</block>
+  <block id="9279c5976d0efa7962d255d2c0bdf1f7" category="doc">還原加密 - AFF A150</block>
+  <block id="039688df1117abc37830485d9cfc19a2" category="doc">還原加密 - AFF A200</block>
+  <block id="9c582befdd75b28e94852b8d29c862c2" category="doc">還原加密 - AFF A220</block>
+  <block id="dc6b10f7631fef2a5e55cf11bd351edd" category="doc">還原加密 - AFF A250</block>
+  <block id="ae502bfb3f22fd2663f2d03c21f3d2a9" category="doc">還原加密 - AFF A300</block>
+  <block id="774b438539147f48fe16a294d75f3f50" category="doc">還原加密 - AFF A320</block>
+  <block id="85dca47caa75e0735191113853902175" category="doc">還原加密 - AFF A400</block>
+  <block id="7a73c203991b85364d378e1776f409cf" category="doc">檢查加密金鑰支援與狀態 - AFF A700</block>
+  <block id="f36bab8f805adf4900ae9ba7bc242338" category="doc">還原加密 - AFF A700</block>
+  <block id="6c13a509fd78299270a0410be952c7f6" category="doc">還原加密 - AFF A700s</block>
+  <block id="db71ee8a5e2594d351f37a0a87806486" category="doc">檢查加密金鑰支援與狀態 - AFF A800</block>
+  <block id="bb6a55badec0bac9362f16ebd5009e5f" category="doc">還原加密 - AFF A800</block>
+  <block id="71e403f2789af4510e56370feed1aa6d" category="doc">檢查加密金鑰支援與狀態 - ASA C250</block>
+  <block id="ee21012549fd21859836ecc5ec149d22" category="doc">還原加密 - ASA C250</block>
+  <block id="7f3c48e5322ed9fd25902457cb11a8b3" category="doc">檢查加密金鑰支援與狀態 - ASA C400</block>
+  <block id="13e402a48516f3df0a4a2b09e3076481" category="doc">還原加密 - ASA C400</block>
+  <block id="511796586d19d0b2cb5a4cd14581478a" category="doc">檢查加密金鑰支援與狀態 - ASA C800</block>
+  <block id="f477d17555442c3400a29898cd852b96" category="doc">還原加密 - ASA C800</block>
+  <block id="e4cee0c18f92a2719465d58340bc4ab5" category="paragraph">您可以使用 USB 模組作為開機映像、手動更換故障的開機媒體。</block>
+  <block id="e4db105eaa26749e6726fe6644b77f2f" category="doc">檢查加密金鑰支援與狀態 - ASA A150</block>
+  <block id="f9c62bff8e46b0d2433f3609b7ecdb39" category="doc">檢查加密金鑰支援與狀態 - ASA A250</block>
+  <block id="0f791bd55bfa2fd01f0eba9b2a93ae03" category="doc">還原加密 - ASA A250</block>
+  <block id="6a3dc34ad6a214d72bd704b1c631ac27" category="doc">檢查加密金鑰支援與狀態 - ASA A400</block>
+  <block id="0a1b1a82d29b54f3c96fa637e88dbed7" category="doc">檢查加密金鑰支援與狀態 - ASA A800</block>
+  <block id="a4cc434d6b8cdf1077083caf578280ed" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUD/800_bootmedia_加密 _preshutdown_checks.adoc []</block>
+  <block id="a462f90654e012446c7de81d57862efa" category="doc">檢查加密金鑰支援與狀態 - ASA A900</block>
+  <block id="e6b007124129e06cf12d3969e2e3ed17" category="doc">還原加密 - ASA A900</block>
+  <block id="9b07e08c3c5e2bcabe683268fcd03412" category="doc">檢查加密金鑰支援與狀態 - AFF C190</block>
+  <block id="ae74d18925f53499ace58d7411a0f2ab" category="doc">還原加密 - AFF C190</block>
+  <block id="c74c4a68f6158322162718bd4a784ad4" category="doc">檢查加密金鑰支援與狀態 - AFF C250</block>
+  <block id="b68bc3b3e2e227787b4c59fd6d36b955" category="doc">還原加密 - AFF C250</block>
+  <block id="ec37c512fcd210525dc10d15a10e5a95" category="doc">檢查加密金鑰支援與狀態 - AFF C400</block>
+  <block id="c193dadfbf15d42f5494a4bbbc76356d" category="doc">還原加密 - AFF C400</block>
+  <block id="72a12cc831feb59de9ead4ebd134011d" category="doc">檢查加密金鑰支援與狀態 - AFF C800</block>
+  <block id="087db3b88ab1127d927c06f47dd3bd04" category="doc">還原加密 - AFF C800</block>
+  <block id="88c689cc37cba41450ae79f21e6beabf" category="doc">檢查加密金鑰支援與狀態： FAS70 和 FAS90</block>
+  <block id="a29212026f644e3af5d7d35e4872e64e" category="doc">檢查加密金鑰支援與狀態 - FAS2600</block>
+  <block id="f69fe3fd7c25297cb61a32bc5fc76020" category="doc">還原加密： FAS2600</block>
+  <block id="5d4211964469579f1f45285fc12474dd" category="doc">檢查加密金鑰支援與狀態： AFF A220 和 FAS2700</block>
+  <block id="73bc3dac4ffabefd42b1c26a096bbc4e" category="doc">還原加密： AFF A220 和 FAS2700</block>
+  <block id="c0e6c6c0a121f35fdbf7c8694a70b562" category="doc">還原加密： FAS2800</block>
+  <block id="cbae18ebc2b8ffd413dbf0fb20bf3f9d" category="doc">檢查加密金鑰支援與狀態 - FAS500f</block>
+  <block id="a7b0a510fdfaae6ab395e09cd164f2f8" category="doc">還原加密 - FAS500f</block>
+  <block id="8de2c4c1d0c319cb07b6837fd62d106e" category="doc">檢查加密金鑰支援與狀態 - FAS8200</block>
+  <block id="9845ad900ab8d052684f6f9e49107a1f" category="doc">還原加密 - FAS8200</block>
+  <block id="1bc2845699cb3ceb88ee2b3bffabb9b4" category="doc">檢查加密金鑰支援與狀態 - AFF FAS8300 和 FAS8700</block>
+  <block id="e9f4f2164b3732f470d6acec805f446d" category="doc">還原加密： AFF FAS8300 和 FAS8700</block>
+  <block id="3d7237c5aa2d20431d9cae1d4abbadb9" category="doc">還原加密 - FAS9000</block>
+  <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">檢查加密金鑰支援與狀態 - FAS9500</block>
+  <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">還原加密 - FAS9500</block>
 </blocks>
