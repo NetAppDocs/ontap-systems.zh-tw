@@ -14,7 +14,7 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
 
 .步驟
-. 在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：「boot_recovery」
+. 從載入器提示字元中、從 USB 快閃磁碟機開機恢復映像： _boot_recovery _
 +
 映像會從USB隨身碟下載。
 
@@ -31,7 +31,7 @@ ONTAP 9 。 16.0 或更早版本
  a| 
 .. 在功能受損的控制器上、當您看到時、請按下 _Y_ `Do you want to restore the backup configuration now?`
 .. 在功能受損的控制器上，當系統提示您覆寫時，請按 _Y_ `/etc/ssh/ssh_host_ecdsa_key`。
-.. 在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： `set -privilege admin`。
+.. 在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： _set -priv特權 advancive_ 。
 .. 在健全的合作夥伴控制器上、執行還原備份命令： `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +
 * 注意： * 如果您看到成功還原以外的任何訊息、請聯絡 https://support.netapp.com["NetApp支援"]。

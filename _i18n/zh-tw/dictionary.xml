@@ -5365,7 +5365,6 @@
   <block id="16e515f4f7ddf43ca6fc5f5321a960e5" category="list-text">如果您要將具有IOM12/IOM12B模組的磁碟櫃熱新增至現有堆疊（使用IOM12/IOM12B模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一或最後一個磁碟櫃）。</block>
   <block id="4a6c06310d2bcd1c9758407cb59a423d" category="list-text">具有IOM12/IOM12B模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。</block>
   <block id="5b07090bafdc58182b6f01852ecbad05" category="summary">完成工作表範本之後、即可定義控制器SAS連接埠配對、以便將控制器連接至使用IOM12/IOM12B模組的磁碟櫃堆疊、以在HA配對或單一控制器組態中實現四路徑連線。您也可以使用完成的工作表、逐步引導自己完成組態的四路徑連線。</block>
-  <block id="5d57c73dbe661f28ff4ab36825900d40" category="doc">控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM1/IOM12B2模組</block>
   <block id="51432cf63c198a0a11bab993299ae7fd" category="paragraph">工作表範例使用兩個四埠SAS HBA的組態、以及兩個具有IOM12/IOM12B模組的磁碟櫃堆疊。</block>
   <block id="b6e864fc7eab4fd6206badf96144db05" category="list-text">在灰色方塊上方的方塊中、列出系統上的所有SAS A連接埠、然後依插槽順序列出系統上的所有SAS C連接埠（0、1、2、3等）。</block>
   <block id="e50ad77c16b4b45855a35ff91f7ad9a6" category="list-text">在灰色方塊中、列出系統上的所有SAS B連接埠、然後依插槽順序列出系統上的所有SAS D連接埠（0、1、2、3等）。</block>
@@ -6696,7 +6695,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cfad0a7419f44ea0c64db24197abbf70" category="paragraph">閃爍</block>
   <block id="6b6aa0b6d9b620cfef1de19db2c781e5" category="paragraph">AC 或 DC 電源供應器（ PSU ）上的 LED 會指出 PSU 是否正常運作、或是否有硬體問題。</block>
   <block id="ddf6d4204e991f952d5f65cedae767ce" category="paragraph">下圖和表格說明 PSU 上的 LED 。（圖示為 AC PSU 、但 DC PSU 上的 LED 位置相同）：</block>
-  <block id="7609b319dac3aca8b9d7c805388fc5e6" category="paragraph">雙色 LED 會在綠色時顯示電源 / 活動、而琥珀色時則顯示故障。</block>
   <block id="0cb6b469a5da43eb5225c25fab0b5ff0" category="cell">電源 / 活動（綠色）</block>
   <block id="cd5f6c10b859eea6eaed71a2e494c0db" category="paragraph">機箱沒有交流 / 直流電源</block>
   <block id="aade40c62d1308360c2f119536da1c63" category="paragraph">PSU 沒有交流 / 直流電源</block>
@@ -9290,35 +9288,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">轉動 CAM 栓鎖、使其儘可能遠離模組。</block>
   <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">關閉或接管受損的控制器。- 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、使狀況良好的控制器能繼續提供受損控制器儲存設備的資料。</block>
   <block id="5050dae1093a80a257a1d121ca5f3b0f" category="section-title">步驟 4 ：驗證控制器狀態</block>
-  <block id="dbc253985631ee33fc6976832d319aa9" category="list-text">在 Loader 提示字元中、輸入 _boot_recovery -PARTNER_ 命令。</block>
-  <block id="9071774e0d4e739ca2fe57b55c805c89" category="paragraph">畫面會顯示訊息<block ref="a42d5407fe60b5716cd9fdd4d4063f27" prefix=" " category="inline-code"></block>、並開始初始檢查及安裝開機恢復檔案。</block>
-  <block id="c3fcf34a186ddf28b42002ccdea5bb89" category="list-text">如果已設定外部金鑰管理程式（ EKM ）、您將會看到下列顯示：</block>
-  <block id="e41b0fa291ba7a2f8d02db37d829dfe6" category="list-text">如果已設定金鑰管理員、請輸入 _y_ 。</block>
-  <block id="8652886cdac2e198b58233db3fe44eb6" category="paragraph">Bootmenu Option 11 會提示使用者輸入所有的 EKM 組態資訊、以便重新建立組態檔案。</block>
-  <block id="3fd9d3baae5e410a98ba4eb52a03ab26" category="list-text">在每個提示時輸入 EKM 配置。</block>
-  <block id="4cbdd1cac9566795166b3d9206cbcf86" category="paragraph">* 附註： * 大部分資訊是在最初啟用 EKM 時輸入。您應該輸入與初始 EKM 組態期間相同的資訊。</block>
-  <block id="b5a73f8c93bdb89882d1ca9e462b0e2a" category="list-text">檢查<block ref="1cc9af734f039af6fc9db1cd2f09ad05" prefix=" " category="inline-code"></block>和<block ref="878efc5de6def52e25be6f622fb5a7ee" prefix=" " category="inline-code"></block>是否正確。</block>
-  <block id="5fb974d016811ca21ebd195d4c257e8e" category="list-text">在合作夥伴節點上、使用<block ref="73bad5beeda4a2a6bd01d97def1d4e67" prefix=" " category="inline-code"></block>命令擷取叢集 UUID 。</block>
-  <block id="923bf1a61097d8e90a02dbe1a7df32ad" category="list-text">在合作夥伴節點上、使用<block ref="2f710df81fb8b58c1792ebb010c82902" prefix=" " category="inline-code"></block><block ref="f2892b1a90652446a2c8a2dce1d42eee" prefix=" " category="inline-code"></block>命令和命令擷取 Keystore UUID 。</block>
   <block id="6d194eccb9cd88bfbcde1df65103cbb4" category="list-text">出現提示時、請輸入 Keystore UUID 和叢集 UUID 的值。</block>
-  <block id="dc96ebaefbca0b39bdff8d2d09a5fc61" category="paragraph">* 注意： * 如果合作夥伴節點無法使用、則可從設定金鑰伺服器上的 Mroot-AK 金鑰取得 Keystore UUID 和叢集 UUID 。</block>
-  <block id="a1af56a72048fea6d9e9cfde4d42ba60" category="paragraph">驗證<block ref="b8bbecc4d00a5d5b7dc368313818ee3e" prefix=" " category="inline-code"></block>叢集 UUID 和<block ref="8a298935cfa9f81db49083081a35f190" prefix=" " category="inline-code"></block> Keystore UUID 屬性的、以確保您擁有正確的金鑰。</block>
-  <block id="d887305d2b2206bc86e35b35a47e130f" category="list-text">如果金鑰已正確還原、則恢復程序會繼續並重新啟動節點。</block>
-  <block id="e4b7511a00ba0effd6c938bde56c85b1" category="paragraph">畫面會顯示訊息<block ref="a42d5407fe60b5716cd9fdd4d4063f27" prefix=" " category="inline-code"></block>並開始初始檢查。</block>
-  <block id="d1de7a2b347063926ee7045aa2c0d40f" category="list-text">在 Loader 設定本機叢集連接埠並透過執行 netboot 時<block ref="41e7db54f2498671a212595a5bc3f9c4" prefix=" " category="inline-code"></block>、監控程序。</block>
-  <block id="7d7167e676e301c377a23cf821f58e87" category="paragraph">網路開機執行後、<block ref="78a0f5e144f919e879f7037c4f29865c" prefix=" " category="inline-code"></block>畫面上會顯示、程序會完成安裝程序。</block>
-  <block id="e9bdba49a952b52d8fc36e6ae32295bf" category="list-text">如果未設定金鑰管理程式、您會看到下列訊息：</block>
-  <block id="233309cf2a420789e8fcc1627010277c" category="list-text">如果您看到下列訊息、表示已設定 Onboard Key Manager （ OKM ）：</block>
-  <block id="0062654a58ca10b6a4b1ffce37755e67" category="paragraph">請移至以完成還原程序。</block>
-  <block id="e6424e7ff2e258bc2ce037ee38b77931" category="list-text">如果您看到下列訊息、表示已設定外部金鑰管理員（ EKM ）。前往 EKM 主題並完成恢復程序：</block>
-  <block id="b5b024aba6aeeef11aba1df77e7bc935" category="list-text">監控執行合作夥伴還原備份組態、 env 檔案、 mdb 和 RDB 的 BMR 程序。</block>
-  <block id="1fd38840c77d72c3a907f5a961467b12" category="list-text">當您看到下列內容時、節點會重新開機並完成 BMR ：</block>
-  <block id="76e65f6de5f0ef338defad156e9302d6" category="list-text">如果已設定 Onboard Key Manager （ OKM ）、您將會看到下列畫面：</block>
-  <block id="16881782fee9167d362ad031a7bd4efa" category="list-text">在提示字元中輸入 _y_ 。</block>
-  <block id="efdeb95716fc588d0e0896e9945962d6" category="list-text">當您看到時、請輸入內建金鑰管理程式的密碼<block ref="2b673e138bf62e9f201d2fe3f4e48e85" prefix=" " category="inline-code"></block></block>
-  <block id="d1da2db4d465ceb969bae13f9a2c1665" category="list-text">當系統提示您確認密碼時、請再次輸入機載金鑰管理員的密碼短語。</block>
-  <block id="d6b5f802b07df1179c13649ed53524f0" category="paragraph">恢復程序完成時、您將看到下列內容：</block>
-  <block id="c6980bbd79483c6809cc84795b7d14d6" category="paragraph">還原完成後、節點會重新啟動以完成程序。</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">步驟 1 ：將儲存控制器連接到您的網路</block>
   <block id="c0b05ac617b77a5c10f26756e6ef04f2" category="list-text">如果連接至光纖交換器、請先將小型可插拔（ SFP ）收發器插入控制器連接埠、再將纜線連接至連接埠。</block>
   <block id="1463138ead0bd5def70e2d744eddfc0a" category="paragraph">將控制器直接彼此連接、並連接到主機網路。</block>
@@ -9898,7 +9868,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6aa2bbbbcd863a688ecea951a078cc57" category="sidebar">FlashCache 模組</block>
   <block id="9d6e68abc86ef52726565c7e52c9dea7" category="image-alt">系統序號範例</block>
   <block id="acaf98d7d873f9a7ee774034dc1440fc" category="image-alt">AFF A90 和 AFF A70 重量注意圖示</block>
-  <block id="edd9ce1e4d9cc655a3b0e8c6c36049db" category="paragraph">還原開機媒體映像。</block>
   <block id="54425f945644281ccaf6201b998f169f" category="paragraph"><block ref="54425f945644281ccaf6201b998f169f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e41a410f85201d7cc87e022e1f2daf34" category="paragraph">如果您的筆記型電腦已啟用網路探索、則可以使用自動叢集探索來完成設定和組態。</block>
   <block id="637d6f599c1184d1c5de273700d7924f" category="list-text">將主控台纜線連接至筆記型電腦、並使用儲存系統隨附的主控台纜線連接控制器上的序列主控台連接埠。</block>
@@ -10055,7 +10024,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cd5ec5f3586869573f3f0b3112426052" category="sidebar">TR-4290 - 採用 NFS 的 NetApp FAS 系統上的 SAP HANA</block>
   <block id="1e4893fc6c634f02ace3ba7beb78d669" category="inline-link-macro">仲裁狀態</block>
   <block id="8df1727c16aa446d0622abe8cab177ae" category="list-text">如果您有 SAN 系統，則必須檢查故障控制器 SCSI 刀鋒的事件訊息 <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block>命令（從 priv 進階模式）會顯示節點名稱、<block ref="8650efa63daff32c831511388978454c" category="inline-link-macro-rx"></block>該節點的可用度狀態、以及該節點的作業狀態。</block>
-  <block id="35f2b79f2ef05c6cbaae401c14dbe36d" category="list-text">在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級：<block ref="0a654c13d63710f829bc02c4cbec79ee" prefix=" " category="inline-code"></block>。</block>
   <block id="8ad44b8e0ede0abb18fd1d9732ea1fec" category="list-text">在健全的合作夥伴控制器上、執行還原備份命令：<block ref="44d388b27236c791c5fe1d30cc29bc43" prefix=" " category="inline-code"></block>。</block>
   <block id="3fef721e9c365db9acdcf0c6462afc1d" category="list-text">在健全的合作夥伴控制器上、將受損的控制器恢復至管理層級：<block ref="0a654c13d63710f829bc02c4cbec79ee" prefix=" " category="inline-code"></block>。</block>
   <block id="eb907bd5c32aa1799bf0e27e04819907" category="list-text">如果系統不使用加密功能、請選擇 _ 選項 1 正常開機 _ 、否則請前往 <block ref="9946ce0c7c3feb5cc0b8738324cc4807" category="inline-link-macro-rx"></block>。</block>
@@ -10331,4 +10299,18 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3d7237c5aa2d20431d9cae1d4abbadb9" category="doc">還原加密 - FAS9000</block>
   <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">檢查加密金鑰支援與狀態 - FAS9500</block>
   <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">還原加密 - FAS9500</block>
+  <block id="bd5c047c4a41e95a8a9424888875e56a" category="list-text">將 I/O 模組連接至指定的裝置。</block>
+  <block id="2d8241a8fe54414b6494b29d26d8b251" category="list-text">如果您使用命令停用自動恢復功能、請從健全的節點還原<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block>該功能。</block>
+  <block id="9d462bd05672844aeab0d3d5d323d66a" category="list-text">重新安裝控制器並重新連接控制器模組的電源：</block>
+  <block id="4d872659b015ad414d5e68440a7ddfd6" category="paragraph">一旦控制器就位並恢復電源、控制器就會立即開始開機。</block>
+  <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">將受損的控制器歸還其儲存設備、使其恢復正常運作：</block>
+  <block id="c2e17c0358bcab54416e83b4418be536" category="paragraph"><block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix="" category="inline-code"></block>。</block>
+  <block id="32c032e6d73023a7bc6955f5bc422d4d" category="list-text">如果自動恢復已停用、請重新啟用：</block>
+  <block id="929b41baf89e2c5975631c98cabedd59" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block>。</block>
+  <block id="af4b4d5cc6a7f6d9937999949dd33233" category="list-text">如果啟用 AutoSupport 、請還原自動建立案例：</block>
+  <block id="0306ff5f8ff1d760b409c6f7f1b3b8bd" category="paragraph"><block ref="9ac424c0d7b432975df36a19daf50c9c" prefix="" category="inline-code"></block>。</block>
+  <block id="e48348202fcdb5533fd8d224264fdc58" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUD/bootmedia_recovery 映像 .adoc []</block>
+  <block id="1ae221b034a7bacf99b88892279c2462" category="paragraph">雙色 LED 會在綠色時顯示電源 / 活動、紅色時則顯示故障。</block>
+  <block id="7ea17d80896a391ffe01665c36e03909" category="cell">注意（紅色）</block>
+  <block id="ede3a6bd0f0cd8205608f251691a19e1" category="doc">控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM12/IOM12B模組</block>
 </blocks>
