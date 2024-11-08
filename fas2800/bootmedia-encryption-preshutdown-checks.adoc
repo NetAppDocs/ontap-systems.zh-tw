@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
 summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
 ---
-= 檢查加密金鑰支援與狀態 - FAS2800
+= 檢查加密金鑰支援與狀態 - FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -95,7 +95,7 @@ ONTAP 9 。 13.1 或更早版本
 ====
 
 
-. 根據您的系統是使用外部金鑰管理程式還是主機板內建金鑰管理程式、請選取下列其中一個選項。
+. 根據您的系統使用的是外部金鑰管理程式或內建金鑰管理程式、請選取下列其中一個選項。
 +
 [role="tabbed-block"]
 ====

@@ -11,37 +11,118 @@ summary: 重新啟動系統。
 
 
 [role="lead"]
-將儲存資源的擁有權移回更換控制器。
+驗證儲存設備和網路連線、然後將控制器送回。
 
-.步驟
-. 如果您的儲存系統已設定加密、則必須使用下列程序還原儲存或磁碟區加密功能、才能重新啟動系統：
+
+
+== 將控制器交回
+
+如果已啟用、請重設加密、並將控制器恢復正常運作。
+
+[role="tabbed-block"]
+====
+.無加密
+--
+. 在 Loader 提示符下，輸入 `boot_ontap`。
+. 主控台訊息停止時、按 <enter> 。
 +
-.. 開機至功能表並執行選項 10
-.. 輸入複雜密碼與備份資料、然後執行正常開機請參閱 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys["還原內建金鑰管理加密金鑰"]。
-.. 僅執行 CFO 贈品
-.. 執行 Onboard Sync 並驗證 SVM-KEK 是否設為 true 、請參閱 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement["更換 MB 失敗後的 GiveBack - 操作被 keymanager 否決"]
-.. GiveBack SFO （無強制）
+** 如果您看到 _login_ 提示、請前往本節結尾的下一個步驟。
+** 如果您看到 _waiting for 贈品、請按下 <enter> 鍵、登入合作夥伴節點、然後前往本節結尾的下一步。
 
 
-. 如果您的系統未設定加密、請完成下列程序以重新啟動系統：
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+
+
+--
+.機載加密（ OKM ）
+--
+. 在 Loader 提示符下，輸入 `boot_ontap maint`。
+. 使用命令檢查 TMP 韌體版本 `sysconfig -v`。
 +
-.. 開機至功能表並執行選項 1 。
-.. 退回控制器：
-.. 從健全的控制器中、歸還更換的控制器儲存設備：「torage容錯移轉恢復-ofnode_replace_node_name_」
+** 如果版本低於 5.63 、請聯絡 https://support.netapp.com["NetApp支援"]。
+** 如果版本超過 5.63 ，請退出至 Loader 提示符： `halt`。
+
+
+. 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
+. 輸入 OKM 複雜密碼。您可以向客戶索取此通關密碼、或聯絡 https://support.netapp.com["NetApp支援"]。
 +
-_replacement控制器會恢復其儲存設備並完成開機。
+
+NOTE: 系統會提示您輸入兩次密碼。
+
+. 出現提示時輸入備份金鑰資料。
+. 在開機功能表中、輸入正常開機的選項 `1`。
+. 顯示 _ 正在等待恢復 _ 時、請按 <enter> 。
+. 將主控台纜線移至合作夥伴節點、然後以登入 `admin`。
+. 請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」 `set -privilege advanced`、然後 `run local partner savecore`按。
+. 返回管理控制桿 `set privilege admin`：。
+. 僅回饋 CFO 集合體（根集合體）： `storage failover giveback -fromnode local -only-cfo-aggregates true`
++
+** 如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+
+. 在恢復報告完成後等待 5 分鐘、並檢查容錯移轉狀態和恢復狀態： `storage failover show`和 `storage failover show-giveback`。
+. 將主控台纜線移至更換節點、然後輸入 `security key-manager onboard sync`
++
+
+NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
+
+. 使用以下命令檢查密鑰的狀態： `security key-manager key query -key-type svm-KEK`。
++
+如果 _RESTOREURE_ 欄顯示 _true_ 以外的任何內容、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+
+
+--
+.外部金鑰管理程式（ EKM ）
+--
+. 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
+. 回答或 `n`回答 `y`下列問題：
++
+您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
+
++
+您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝
+
++
+您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
+
++
+或
+
++
+您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝
+
++
+您知道 KMIP 伺服器位址嗎？｛ y/n ｝
+
++
+您知道 KMIP 連接埠嗎？｛ y/n ｝
 
 +
 
-NOTE: 如果被否決、您可以考慮覆寫否決。
+NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]。
 
+. 提供以下資訊：
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["尋找ONTAP 適用於您版本的更新版本的高可用度組態內容"]
+** 用戶端憑證（ client.crt ）檔案內容。
+** 用戶端金鑰（ client.key ）檔案內容。
+** KMIP 伺服器 CA （ CA.pem ）檔案內容。
+** KMIP 伺服器的 IP 位址。
+** KMIP 伺服器的連接埠。
 
-.. 完成恢復後、請確認HA配對正常、而且可以接管：「顯示容錯移轉」
+
+. 系統處理完畢後、您將會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。
+. 檢查接管狀態： `storage failover show`。
+. 請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」 `set -privilege advanced`、然後 `run local partner savecore`按。
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
+. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
-. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
-. 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
-. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
-
+--
+====

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, storage system, setup, discovery 
 summary: 此程序提供安裝一般 NetApp 儲存系統的詳細逐步指示。 
 ---
-= 詳細步驟： FAS2800
+= 詳細步驟： FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -436,7 +436,7 @@ image::../media/oie_cable_pull_tab_down.png[拉片方向]
 請使用動畫或逐步說明、完成控制器與磁碟機櫃之間的纜線連接。
 
 
-IMPORTANT: 請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。如需詳細資訊、請參閱 link:../sas3/install-new-system.html["在新的儲存系統中安裝機櫃"^] 。
+IMPORTANT: 請勿在 FAS2820 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。如需詳細資訊、請參閱 link:../sas3/install-new-system.html["在新的儲存系統中安裝機櫃"^] 。
 
 .動畫 - 磁碟機櫃纜線
 video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]

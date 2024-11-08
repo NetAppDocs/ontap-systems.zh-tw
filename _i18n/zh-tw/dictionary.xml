@@ -6026,8 +6026,6 @@
   <block id="68d685ddbaa25f1a411d5e93d6f91913" category="list-text">ONTAP 的本機系統管理員認證。</block>
   <block id="d6562c849f41b9038124f0c304aed030" category="list-text">停止所有用戶端 / 主機存取 NetApp 系統上的資料。</block>
   <block id="d61b46d9cd719b77efb76269147aa377" category="list-text">暫停外部備份工作。</block>
-  <block id="3b6fc5695f8237510131da824ce788d0" category="inline-link">正常關機並開啟儲存系統解析指南</block>
-  <block id="ad8a5006901db5ea8481166a34f27929" category="inline-link">SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險</block>
   <block id="356bf392971487f892daba5338258571" category="paragraph">關機前的最佳做法是：</block>
   <block id="2ee5edc561a6167cf2d57a64ee655bef" category="inline-link">系統健全狀況檢查</block>
   <block id="7023017d0098f741d6569842ee62b922" category="list-text">執行其他<block ref="9ace058273de133e6accbea83a7d278a" category="inline-link-rx"></block>。</block>
@@ -6039,7 +6037,6 @@
   <block id="0d16db60da2c01b63ef84ee8d616c2fb" category="paragraph"><block ref="b206d268f79aeaa7c4f1e44684d2f080" prefix="" category="inline-code"></block></block>
   <block id="a0fd5b31be719aeb26e2fc9c6991da9f" category="list-text">結束叢集 Shell ：<block ref="f24f62eeb789199b9b2e467df3b1876b" prefix=" " category="inline-code"></block></block>
   <block id="cf814f480a03329076e1d0cf2f71d7e3" category="list-text">使用上一步輸出中列出的任何節點的 IP 位址、透過 SSH 登入 SP/BMC 。</block>
-  <block id="aed4c23042b5f25dad252449f4ddcc59" category="paragraph">如果您使用的是主控台 / 筆記型電腦、請使用相同的叢集管理員認證登入控制器。</block>
   <block id="a3dcd96fdc725fa51c4161c8a03146ab" category="admonition">開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。</block>
   <block id="a39c8c38e51a42fcfaac22367dd19064" category="list-text">等待每個控制器停止並顯示載入器提示。</block>
   <block id="3f80193798fcbb08cbe99cbe0a3aff95" category="paragraph">更換機箱後、請依下列順序開啟叢集元件的電源：</block>
@@ -6244,7 +6241,6 @@
   <block id="fea0a68e925a0ae2df0aa5bbdbe7c891" category="list-text">使用管理交換器上的 TCP/IP 位址、將其指派給筆記型電腦或主控台。</block>
   <block id="71d4d064630d70cfb9adf86452b9de52" category="paragraph">如果有任何生命被列為假、請將其還原至其主連接埠：<block ref="985591930e85610706940dd82967bd61" prefix=" " category="inline-code"></block></block>
   <block id="5f9489878c0e21ab14f2c4768367bc39" category="list-text">如果觸發 AutoSupport 維護時段、請使用結束<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block> 命令。</block>
-  <block id="fe5bb47bbec2cc6ab51288fa7ec602da" category="paragraph">可重新連接控制器模組的儲存設備和網路連線。</block>
   <block id="657e1e449c74518bb94702c89e392c1b" category="list-text">在 _health_ 節點上、檢查系統時間：<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block></block>
   <block id="6071c318b780c1f56da250b5fe0334d8" category="paragraph">日期和時間是根據設定的時區而定。</block>
   <block id="598dc5e99f2a14bda43240b77ca40634" category="section-title">步驟 2 ：啟動系統</block>
@@ -6254,13 +6250,9 @@
   <block id="33541e56b6653b3ccd3503e7d446f985" category="summary">您可以使用完整的控制器對堆疊纜線工作表、並將纜線範例用於內部儲存設備的纜線平台。</block>
   <block id="84c55d9e8eb41695e92702bc9aa7e417" category="list-text">如有需要、請參閱 <block ref="513d554484deefc85e1b679659a84cbc" category="inline-link-macro-rx"></block> 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、</block>
   <block id="84f61db881175683de35ce39e2e25556" category="list-text">佈線範例顯示控制器對堆疊的纜線為實線或虛線、以區別控制器 0b/0b1 連接埠與控制器 0A 連接埠的連接。</block>
-  <block id="559ab6a66b2bfa274b38981fac849dbe" category="section-title">FAS2800 平台採用多重路徑 HA 組態、沒有外部機櫃</block>
   <block id="c551f9f047036ae88cefbff0f867bfd7" category="paragraph">以下範例顯示、快取多重路徑 HA 連線不需要纜線：</block>
-  <block id="dce517c194d8aadca050f89acd9479f9" category="section-title">三路徑 HA 組態中的 FAS2800 平台、不含外部機櫃</block>
   <block id="96093137909588511c6efc52b70c20f0" category="paragraph">以下佈線範例顯示兩個控制器之間的必要佈線、以實現三重路徑連線：</block>
-  <block id="45eccdceb680b5fc042ecd5f2cb2f360" category="section-title">三路徑 HA 組態中的 FAS2800 平台、具備一個多層架構堆疊</block>
   <block id="f9fe60b0d5b0a173d8e8a93ef1fad4fa" category="paragraph">下列工作表和纜線範例使用連接埠配對 0A/0b1 ：</block>
-  <block id="b1e743b8776f5252291595e89248eca8" category="admonition">本節不適用於 FAS2800 或 FAS25XX 系統。</block>
   <block id="889643b70d8973adb82162d572e085b6" category="list-text">對於多路徑（多重路徑 HA 或多重路徑）、三路徑 HA 和四路徑（四路徑 HA 或四路徑）組態、您可以熱交換機櫃 IOM （不中斷地取代已開機且正在處理資料的系統中的機櫃 IOM ）。</block>
   <block id="78e2c67b6cd9683131c2d5cc3b5f52eb" category="paragraph">多重路徑 HA 、三重路徑 HA 、多重路徑、四重路徑 HA 或四重路徑組態</block>
   <block id="6d777385d5ec907bb961f7417dca8878" category="paragraph"><block ref="6d777385d5ec907bb961f7417dca8878" category="inline-link-rx"></block></block>
@@ -6292,10 +6284,7 @@
   <block id="8f3e1bfcac5ebf3ae518d7d0b7183191" category="paragraph">特定類型的 HA 配對和單一控制器組態支援配備 IOM12/ IOM12B 模組的磁碟櫃。</block>
   <block id="6c5fe9aff643cb6f6afc0c56cef693b2" category="paragraph">如需平台機型支援的佈線組態的最新資訊、請參閱 Hardware Universe 。</block>
   <block id="38c7dba0bfe978540fdb2f9598267e27" category="list-text">具有內部儲存設備的平台不支援四路徑 HA 連線。</block>
-  <block id="0fecc4c819e73e375d9c40a95ba6fec2" category="list-text">FAS2800 HA 配對可以用纜線連接成三路徑 HA 。</block>
-  <block id="bd0ab5deac45d462eafb4c6094f38b07" category="paragraph">有關 FAS2800 連線能力的資訊、請參閱 <block ref="44cb6d44583fef757ae54be5d72211f9" category="inline-xref-macro-rx"></block> 區段。</block>
   <block id="379f6edbaf8caad99a93caabf81a3374" category="list-text">具有內部儲存設備的平台可以以單一路徑 HA 組態（從連接埠 0b/0b1 到外部機櫃）進行纜線連接、以支援連線至外部 SAS 磁帶備份裝置（從連接埠 0A ）。</block>
-  <block id="e543cae57757f63f8d1f193133213927" category="paragraph">對於 FAS2800 HA 配對、雖然連接至外部機櫃的纜線是單一路徑 HA 、但由於每個控制器的內部連接埠 0b 與其本機擴充器（ IOM12G ）和連接埠 0c 連至其合作夥伴的擴充器、因此 HA 配對組態是多重路徑 HA 。</block>
   <block id="9331810e62f51c7489e12877891ef496" category="list-text">FAS2600 系列單一控制器組態可以以單一路徑組態的方式連接。</block>
   <block id="58e545ebba1044e5ef472e1c15a83e56" category="list-text">標準的機櫃對機櫃連線功能可用於任何具有多個磁碟機櫃的磁碟機堆疊。</block>
   <block id="0d93f50b6ba07d734a4fc535331feeba" category="paragraph">每個網域（網域 A （ IOM A ）和網域 B （ IOM B ））的磁碟櫃之間需要一條纜線連線。</block>
@@ -6310,16 +6299,13 @@
   <block id="ec50871e5c9ed1add9f37e13b5f6dcc5" category="list-text">連接埠 0b/0b1 一律連接至磁碟機櫃 IOM 連接埠 3 。</block>
   <block id="5cc45636165f15166974ddab3dfb0fd7" category="paragraph">下圖強調內部儲存連接埠（ 0b/0b1 ）與外部層疊的網域連線：</block>
   <block id="45219ca27a4ad91c17dcca93a96dd284" category="section-title">三重路徑 HA 連線</block>
-  <block id="7125880b6305be48cdd0760966c349f2" category="paragraph">FAS2800 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：</block>
   <block id="c8c29757ef852a483118b80a57d4b5ac" category="list-text">每個控制器的內部連接埠 0b 與其本機 IOM12G 及連接埠 0c 與合作夥伴的 IOM12G 之間、都能提供 HA 配對多重路徑 HA 連線。</block>
   <block id="494edf65cd0a33575dc779a9df2979d6" category="list-text">每個控制器的外部儲存連接埠（ 0A 和 0b1 ）的佈線、可提供 HA 配對三路徑 HA 連線。</block>
   <block id="a35c30ba1541ae1d8a44ed5229f19650" category="paragraph">當沒有外部機櫃時、連接埠 0A 和 0b1 會透過兩個控制器進行纜線連接、或連接至外部機櫃以實現三路徑 HA 連線。</block>
   <block id="77f105a56bd1c2ae99c93daa98950ddb" category="paragraph">以下顯示控制器的內部連線和外部纜線、可實現三重路徑 HA 連線：</block>
-  <block id="56aa5946d918a9c287c3413f16a7f6a8" category="paragraph">FAS2800 外部 SAS 連接埠：</block>
   <block id="49c992eee9e3421ed1fbdca1cea6cc70" category="list-text">0A 連接埠來自內部 HBA （如同其他具有內部機櫃的平台）。</block>
   <block id="21f39b91f6bc9739ca0f20af09effa4e" category="list-text">0b1 連接埠來自內部機櫃（例如其他平台的 0b 連接埠、內建機櫃）。</block>
   <block id="cd00b581ae35cc28e22b76f1f56e73a3" category="list-text">未使用 0b2 連接埠。已停用。如果連接纜線、就會產生錯誤訊息。</block>
-  <block id="4d29df0cb21d81560d8799a21074035f" category="paragraph">您可以在中找到 FAS2800 HA 配對纜線範例 <block ref="c19123e6031c139d66f534ae4311d605" category="inline-link-macro-rx"></block> 區段。</block>
   <block id="d781db166642a4d3afbe74add6458ec0" category="paragraph">* SAS 纜線規則與概念 *</block>
   <block id="8f8530d523c868e5ee729783d7b0a04a" category="list-text"><block ref="8f8530d523c868e5ee729783d7b0a04a" category="inline-link-macro-rx"></block></block>
   <block id="f70fe2f81dab8d7ddd64b2b8e46c9db9" category="inline-link-macro">多重路徑 HA 組態</block>
@@ -6352,9 +6338,7 @@
   <block id="a9965269fc2882517b2f7404230818ad" category="list-text">如果您要將一個或多個磁碟櫃熱新增至現有堆疊的端點（邏輯第一個或最後一個磁碟機櫃）、請針對您的組態完成適用的子步驟；否則、請前往下一步。</block>
   <block id="ca067501330c228a786fd00d17229575" category="paragraph">將磁碟機熱新增至堆疊的末端、該堆疊具有多重路徑 HA 、三重路徑 HA 、多重路徑、四路徑 HA 或四路徑連線至控制器</block>
   <block id="fa3d4e5360018aa45e5104272d43148c" category="paragraph">堆疊必須符合中所述的要求 <block ref="d7ead9d51e0253f97f9c0ae83a2ee9eb" category="inline-xref-macro-rx"></block> 本程序的一節。</block>
-  <block id="a9b1f8d4946ebf3182e44c224cfa7997" category="doc">關閉功能受損的控制器 - FAS2800</block>
   <block id="ba1ddb4c1d6bdc698ece9a974aae0713" category="paragraph">關閉或接管受損的控制器。</block>
-  <block id="3ab3867dfd753c1ff0d27e903bff1cc4" category="doc">更換開機媒體： FAS2800</block>
   <block id="1a829a672d8f4a1ab6936c766164f3fe" category="image-alt">DRW 2850 PCM 移除安裝 IEOPS 694</block>
   <block id="5d9c656065fa74e7cb14500497b33617" category="list-text">按下控制器模組兩側的藍色按鈕以鬆開護蓋、然後向上或向外旋轉控制器模組護蓋、以打開護蓋。</block>
   <block id="206f40d3d3a553b715b00b4ada962595" category="image-alt">DRW 2850 開放式控制器模組涵蓋 IEOPS 695</block>
@@ -6388,8 +6372,6 @@
   <block id="b455521e9b63749ce3c5c792316849ca" category="list-text">解壓縮下載的映像。</block>
   <block id="0f844d6324319ebe9b4aabd24f1b88dd" category="list-text">安裝控制器模組：</block>
   <block id="6bfde1459ef866428e3532004887b3b8" category="list-text">可重新安裝控制器模組。</block>
-  <block id="aa22e2fb20ea26cf3d0b89dfcd65a440" category="doc">機箱更換總覽 - FAS2800</block>
-  <block id="2655035d8bc59ea5bd6dd9f09d821e65" category="doc">更換夾層卡 - FAS2800</block>
   <block id="db5c04ca6cb958f296ff071cf8420f54" category="paragraph">將纜線、任何 SFP 和 QSFP 模組從插卡上拔下、裝回故障的夾層卡、然後重新讀取插卡、以更換夾層卡。</block>
   <block id="783de30113379b15fc6135387f11b7e6" category="video-title">動畫 - 更換夾層卡</block>
   <block id="a0ff1a6d16d908c33e10409aed0ac623" category="paragraph">從系統中卸下控制器模組、然後卸下控制器模組上的護蓋。</block>
@@ -6403,9 +6385,7 @@
   <block id="f36f34bd21dc87823e156cd47c7d7440" category="list-text">將控制器模組翻轉過來、並將端點對齊機箱的開口。</block>
   <block id="3ab31ac30e2ad91e2f7e6a9ecd045f6e" category="list-text">將控制器模組輕輕推入系統的一半。將控制器模組的末端與機箱中的開口對齊、然後將控制器模組輕輕推入系統的一半。</block>
   <block id="d32890221c5529cefc96a956073d9844" category="list-text">使用還原自動恢復<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block> 命令。</block>
-  <block id="e2306cfc3634594ca9e5483d541a9eb2" category="doc">完整系統還原： FAS2800</block>
   <block id="954e375575b9fbd9370aa08dd503d453" category="paragraph">還原 NetApp 儲存加密或磁碟區加密組態（如有必要）、安裝更換控制器的授權、並將故障零件退回 NetApp 、將系統還原至完整運作、如套件隨附的 RMA 指示所述。</block>
-  <block id="458c640b6a96cac4ef20be523ebb7f89" category="doc">更換 NVMEM 電池 - FAS2800</block>
   <block id="26e700524d9a1c0b6c28c8ad2d207679" category="section-title">步驟 2 ：移除並開啟控制器模組</block>
   <block id="2a0805526339647b20ef0fc7df37dd6f" category="paragraph">卸下並打開控制器模組。</block>
   <block id="9ae3f8b33ac65ec233f1c5afa0e5b31c" category="paragraph">從系統中取出故障的 NVMEM 電池、並更換為新的 NVMEM 電池。</block>
@@ -6426,8 +6406,6 @@
   <block id="98589dc004f09ae0dad7e1b6f02b49cc" category="list-text">重新啟動控制器模組。</block>
   <block id="77eded9438a3613ba447a2592768431f" category="section-title">步驟 5 ：還原自動恢復和自動支援</block>
   <block id="c7e6662de773deb97f21acca554ecb2a" category="paragraph">如果已停用、請還原自動恢復和 AutoSupport 。</block>
-  <block id="89ec55d6caf5c08b62f951c13868846e" category="video-title">動畫 - FAS2800 安裝與設定說明</block>
-  <block id="b1431e23e98302fc2fdbdf8a76f33d8d" category="doc">更換控制器模組硬體 - FAS2800</block>
   <block id="d27d70d1f85fe30f676b7d8f18fbcc20" category="paragraph">更換受損的控制器模組硬體：移除受損的控制器、將 FRU 元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後啟動更換的控制器模組。</block>
   <block id="1c196a814e5043cb74dc86df6c03ff47" category="paragraph">從機箱中卸下受損的控制器模組。</block>
   <block id="27d23c72f7120f51677aa7a5c4e3c7fb" category="list-text">如果您在拔下纜線後將 SFP 模組留在系統中、請將其移至更換的控制器模組。</block>
@@ -6486,12 +6464,10 @@
   <block id="2242e742287f23709fa714deab7eb578" category="admonition">您必須尋找「自動韌體更新主控台」訊息。如果出現更新訊息、請勿按<block ref="76be6883bcf9e8a6aed3a347ac20e41f" prefix=" " category="inline-code"></block> 中斷開機程序、直到您看到確認更新完成的訊息為止。如果韌體更新中止、開機程序會結束至載入程式提示字元。您必須執行<block ref="af718f67c26a0f44692db1ab31eb6a36" prefix=" " category="inline-code"></block> 命令、然後輸入<block ref="1442f7a5af9f43702c90a69a8357a46d" prefix=" " category="inline-code"></block> 重新啟動系統。</block>
   <block id="5dc33b8c32ff69779a908c84d65a7b21" category="list-text">系統ID不相符的提示警告、並要求覆寫系統ID。回應<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 進入此提示。</block>
   <block id="7ac264b7d08fb9d1106ac983e7478d8a" category="list-text">提示警告：在HA組態中進入維護模式時、您必須確保健全的控制器保持停機狀態。回應<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 進入此提示。</block>
-  <block id="75127c072b8dbfcfddece3f2cfd7f451" category="doc">還原並驗證組態 - FAS2800</block>
   <block id="e6c254ab2bdf1b6e7e1ef07d143a13af" category="paragraph">確認機箱的 HA 狀態啟動系統、並將故障零件退回 NetApp 、如套件隨附的 RMA 指示所述。</block>
   <block id="9596a3101174a610f7547f1a64ef5318" category="list-text">根據系統現有的組態、設定機箱的 HA 狀態：<block ref="8c04088c57a1d68914caed5df5031ed1" prefix=" " category="inline-code"></block></block>
   <block id="fc7de36232e6d564fdd8b86d9b96e5c3" category="list-text">結束維護模式：<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block>。    此時會出現載入程式提示。</block>
   <block id="05feda261599a7466b383d9e10f43f27" category="list-text">啟動控制器模組。</block>
-  <block id="eba8408f37a356fdabfeb21f5ae29286" category="doc">更換快取模組： FAS2800</block>
   <block id="dec0306e681fc720cf31bc4851ebcee4" category="inline-link">《系統管理參考資料》（英文） ONTAP</block>
   <block id="b95a2b769ddc69403557ab79e1942007" category="paragraph"><block ref="b95a2b769ddc69403557ab79e1942007" category="inline-link-rx"></block></block>
   <block id="a9c8e259606b559907dfb2f00a204be4" category="paragraph">找到控制器內的快取模組、移除故障的快取模組、然後將其更換。</block>
@@ -6506,14 +6482,10 @@
   <block id="7712b02131dda6b0cd207e6b834af33f" category="section-title">步驟 5 ：還原自動恢復和 AutoSupport</block>
   <block id="58a4b1c93d94014eec48898453bccf6b" category="list-text">如果觸發 AutoSupport 維護時段、請使用結束<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block></block>
   <block id="f13ddfa8c0e2762d2f399acfc6f0806b" category="summary">切換電源供應器包括關閉、拔除和移除受損的電源供應器、以及安裝、連接和開啟更換的電源供應器。</block>
-  <block id="de1b8802ef132a49eb27c58d444b128f" category="doc">交換電源供應器： FAS2800</block>
   <block id="9b0f331e43ad447dbbb78d71a44b1734" category="video-title">動畫 - 更換電源供應器</block>
   <block id="ad74e1b8d39de33b6e8b9df71820c85f" category="image-alt">DRW 2850 取代 PSU IEOPS 702</block>
-  <block id="4f57674d148f7c749c1795267b17a2b1" category="doc">可重新分配系統並重新分配磁碟： FAS2800</block>
   <block id="2675f497966bc5cad0cdd88dbe6eab31" category="list-text">等待<block ref="f1cce1d6823a5337ea1ed313f3bc1d65" prefix=" " category="inline-code"></block> 發出贈品前先完成的命令。</block>
   <block id="578b3122a990bee5553a818b631268ef" category="admonition">如果恢復被否決、請解決否決權問題。如果否決不至關重要、您可以覆寫否決。</block>
-  <block id="cf71e2640e92b433c3b638e9e94411a3" category="doc">將故障零件退回 NetApp - FAS2800</block>
-  <block id="d3b5d00b3ac932c953d2ab9864fd8409" category="doc">更換即時時鐘電池 - FAS2800</block>
   <block id="103256b354864966fcc74d6466bc1cc4" category="paragraph">將 RTC 電池放在控制器內、然後依照特定步驟順序更換。</block>
   <block id="51f7be1d2b3585b769547e04e7036ed9" category="image-alt">DRW 2850 取代 RTC 電池 IEOPS 701</block>
   <block id="9f463a2feadd622498da11734b7d3548" category="paragraph">重新安裝控制器模組、並將其開機至載入器提示。</block>
@@ -6522,7 +6494,6 @@
   <block id="531b14cc35d21cdbdd3198396f0be9e2" category="list-text"><block ref="531b14cc35d21cdbdd3198396f0be9e2" category="inline-link-macro-rx"></block></block>
   <block id="64bd602d0544a5fe1fc2a2419daab9cb" category="list-text"><block ref="64bd602d0544a5fe1fc2a2419daab9cb" category="inline-link-macro-rx"></block></block>
   <block id="57d485c98e6887d6e9203bac1d90bb5b" category="summary">將電源供應器、硬碟機和控制器模組或模組從損壞的機箱移至替換機箱、然後將損壞的機箱從設備機架或系統機櫃中換出與損壞機箱相同型號的替換機箱。</block>
-  <block id="4366f74c4f2ef88a08284a5d59c6119c" category="doc">移動和更換硬體： FAS2800</block>
   <block id="7c5cfb9ddad014365f0de74ba951ffc3" category="paragraph">在更換機箱時、移出電源供應器需要關閉、中斷連接、並從損壞的機箱中移除電源供應器、然後在替換機箱上安裝並連接電源供應器。</block>
   <block id="075968c9cfe201324f67c6dd57423623" category="paragraph">從受損機箱中卸下控制器模組。</block>
   <block id="ecd88b88f167b4220060f55cd515a5d0" category="list-text">對機箱中的第二個控制器模組重複這些步驟。</block>
@@ -6536,19 +6507,13 @@
   <block id="d9b58093a09ff3f9f4ee47e855e10b09" category="paragraph">將控制器模組和任何其他元件安裝到更換的機箱中、將其開機至維護模式。</block>
   <block id="a1b1abf2b9f93afc61b501cc65856321" category="list-text">對更換機箱中的第二個控制器重複上述步驟。</block>
   <block id="fb7c806d17ac05daec934e824397154e" category="list-text">對更換機箱中的第二個控制器模組重複上述步驟。</block>
-  <block id="939dd100817795c3c406debd7b6667d8" category="doc">更換控制器模組總覽 - FAS2800</block>
-  <block id="8e605f57d62f3d1be204e98b9b4935f7" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - FAS2800</block>
-  <block id="9e88aae04cfd42bd2e0b9f18c79e6b08" category="doc">開機媒體更換總覽 - FAS2800</block>
-  <block id="cffd34bd4c8c92699b3202d7f451d2ae" category="doc">還原並驗證系統組態 - FAS2800</block>
   <block id="5a78b16de65a946feda8c56392de99d0" category="paragraph">完成硬體更換並啟動更換控制器之後、請確認更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
   <block id="3fc70ee0f25a2808ad9e1ace34edd095" category="list-text">如果控制器的顯示系統狀態與您的系統組態不符、請設定更換控制器模組的 HA 狀態：<block ref="83ac5421ebdbb8b86762e96ecda44c4a" prefix=" " category="inline-code"></block></block>
-  <block id="0da3888f81e8e56d2de2a92a42b512a3" category="doc">開機恢復映像： FAS2800</block>
   <block id="c5ad83e174ba7727e76fc50c8366e589" category="list-text">還原 var 檔案系統：</block>
   <block id="e51ecd8f185715278ef737fd290e62f5" category="list-text">按下<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> 當系統提示您還原組態複本時。</block>
   <block id="1a037944aedbce3040a5314200246858" category="list-text">在叢集提示字元中、使用檢查邏輯介面<block ref="55cf88a325a6e0574aef732566cc984c" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="8c4cb494b75288cf3ce1e7ce1dee3c9d" category="paragraph">如果有任何介面列為「假」、請使用將這些介面還原回其主連接埠<block ref="ffbe7d182280173cba10c83ec9992974" prefix=" " category="inline-code"></block> 命令。</block>
   <block id="fcb4d3b1f229bc036dc2280a7c1d29c4" category="list-text">如果您不使用儲存加密、請還原自動恢復和 AutoSupport ：</block>
-  <block id="fde9b148f6eb9655d65658597326b4ee" category="doc">詳細步驟： FAS2800</block>
   <block id="82374f90663d7205d26c38028c93cb8d" category="inline-link">ONTAP 9 版本的版本資訊</block>
   <block id="202c6b9676e6e0879f99a323aacdd76b" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
   <block id="21d9a13ac1bf780b5a88db05a215c05d" category="paragraph">10 GbE 、 SFP28 纜線（依訂單而定）</block>
@@ -6613,10 +6578,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="17eddeb5ca42d640ce98ba7b90523804" category="image-alt">DWR 2800 開啟電源 IEOPS 898</block>
   <block id="5725fc4af65adef1b57d4b7c9a365287" category="paragraph">如果您的筆記型電腦未啟用網路探索、請手動完成組態和設定。</block>
   <block id="6f196fc99c938b047a2dbbae60694da9" category="image-alt">將 DRW 2800 筆記型電腦切換至控制器 IEOPS 1084</block>
-  <block id="40ab4deb5c724a3e2d6c8f6d96a94554" category="doc">關閉控制器 - FAS2800</block>
-  <block id="5f81816799fe408c4f5d0d2b06be7dd0" category="doc">快速指南： FAS2800</block>
-  <block id="b0f0e558d3522c3be05dd8c2dd0af1cc" category="inline-link-macro">FAS2800 系統安裝與設定說明</block>
-  <block id="30d72b7769d2368f3a2f7fcacca60c27" category="doc">更換 DIMM - FAS2800</block>
   <block id="041e48089a1444bcdc82526d41790e40" category="paragraph">從系統中卸下控制器模組、然後卸下控制器模組護蓋。</block>
   <block id="8caaa86fafbf22c9627e97fb31c1eea5" category="paragraph">找到控制器內的 DIMM 、將其卸下並裝回。</block>
   <block id="95da017c37970d073ec39c2d3a5f57a0" category="admonition">在更換 DIMM 之前、您需要從控制器模組拔下 NVMEM 電池。</block>
@@ -6633,19 +6594,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cca6b082b0a0af8dfe622b365bd85350" category="section-title">步驟 5 ：將故障零件退回 NetApp - AFF A700s</block>
   <block id="7655464c949e17f83cc9f89554f784e5" category="sidebar">多重路徑 HA 的佈線工作表和範例</block>
   <block id="c2b6b3b554d53a9298b53bc5f03d3830" category="sidebar">佈線工作表和四路徑 HA 範例</block>
-  <block id="84f80d47c3a3934ba083c16827645698" category="sidebar">FAS2800 系統</block>
-  <block id="0822c3a3c2088294acf4b156198fab16" category="sidebar">FAS2800 安裝與設定</block>
-  <block id="52082133ddafec6f44b27acdb0e80d2a" category="sidebar">FAS2800 維護</block>
-  <block id="79f9aa553b7d76f8fd255e9277fa5ed0" category="sidebar">FAS2800 開機媒體</block>
-  <block id="e8beac267c4a923aec553646307b83eb" category="sidebar">FAS2800 快取模組</block>
-  <block id="c1c62fce3287ee9fb4c1d797a1feba55" category="sidebar">FAS2800 機箱</block>
-  <block id="94e71ac35b9db70fff06a5064f80e3f9" category="sidebar">FAS2800 控制器</block>
-  <block id="ff67b04dba165a63ada544868c9096f3" category="sidebar">FAS2800 DIMM</block>
-  <block id="082f3ddfd8b928e971f0ca5feb57e067" category="sidebar">FAS2800 磁碟機</block>
-  <block id="7f6c436a2d5532b606b07a676e696d32" category="sidebar">FAS2800 NVMEM 電池</block>
-  <block id="aee81807d892ce8f0557ee7ba4da62af" category="sidebar">FAS2800 夾層卡</block>
-  <block id="9287ab39836157b975fad28f9782a821" category="sidebar">FAS2800 電源供應器</block>
-  <block id="3dfd3fa9bee4e9b9ad14ec588c8e9ed4" category="sidebar">FAS2800 即時時鐘電池</block>
   <block id="0a90cb9b1ee5610139d0e39856363c8c" category="summary">您可以瞭解磁碟機櫃元件上 LED 的位置和狀態條件、藉此監控磁碟機櫃的健全狀況。</block>
   <block id="039c72bbf63892ab7a9a7d88f01d9ef1" category="doc">監控磁碟機櫃 LED - NS224 機櫃</block>
   <block id="4c1e87d961b7abad7899274630f1a96a" category="list-text">可啟動機櫃操作員顯示面板（ ODP ）和兩個 NSM 模組上的位置（藍色） LED 、以協助實體定位需要維修的機櫃：<block ref="d6bcc7ed2edc5b8ad7e7188bba8189eb" prefix=" " category="inline-code"></block></block>
@@ -7272,10 +7220,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b5775fd5494c53337ae6cdf9684c92bb" category="paragraph">您必須將開機媒體裝置從功能受損的控制器移出、並將其安裝在更換的控制器中。</block>
   <block id="e1e22f74d03ae53f2b284cc33a49e335" category="paragraph">您必須將開機媒體裝置從功能受損的控制器模組移至更換的控制器模組。</block>
   <block id="5f5c8582e186539c05898d22a8d895e8" category="paragraph">開機媒體位於本程序稍早所移除的通風管護蓋下方。</block>
-  <block id="52af7d4516c9a231debbc59d16540841" category="summary">維護 FAS2800 硬體</block>
-  <block id="a15b9605ee28854b0a879286a11a485d" category="doc">維護 FAS2800 硬體</block>
-  <block id="3bf4e15c5081d9414a6cd3448aae890e" category="paragraph">對於 FAS2800 儲存系統、您可以在下列元件上執行維護程序。</block>
-  <block id="a334af0b164fc0db79711e89abe4cb0d" category="inline-link">FAS2800</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -7367,7 +7311,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ce0aad779020493a2d4e98a385762d2b" category="summary">影片顯示如何安裝和連接新系統。</block>
   <block id="997b68807482ea64cc9ef5f725f9309b" category="doc">影片步驟 - AFF A400</block>
   <block id="be804c6631fd09c10e34c693ad05b79b" category="doc">影片步驟 - AFF C190</block>
-  <block id="f2f9e5e5861340b4511769cf5cb0c85c" category="doc">影片步驟： FAS2800</block>
   <block id="110062ecc4941a387b27997f0c7ae5ef" category="doc">影片步驟 - ASA A400</block>
   <block id="abc8a9a1aab13018556d024a5691afae" category="doc">影片步驟： FAS8300 和 FAS8700</block>
   <block id="57fcdb44384a01811b20cb55bd021011" category="doc">影片步驟 - AFF A320</block>
@@ -7686,7 +7629,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f30c92bb3a7434fbf14bd27327ab95f7" category="admonition">插槽 6 僅適用於 FAS8000 Ver2 控制器。</block>
   <block id="bcd681cc4aa56b9c1d3f83f1729660cb" category="paragraph">使用連結： <block ref="0e85fb8899763a058efca868ed40a959" category="inline-link-macro-rx"></block></block>
   <block id="b9cdef2ad36df740ff8a9248d42a21f4" category="paragraph">使用連結： <block ref="00140fff913a08d4822c22694704a0d2" category="inline-link-macro-rx"></block></block>
-  <block id="738ad40a42e139ed29cebf62dfc05a11" category="paragraph"><block ref="738ad40a42e139ed29cebf62dfc05a11" category="inline-link-macro-rx"></block></block>
   <block id="99ddf4d694dac695dfe3508f22a2764a" category="paragraph"><block ref="99ddf4d694dac695dfe3508f22a2764a" category="inline-link-macro-rx"></block></block>
   <block id="2cff6532f0a35fcdab297942157a970e" category="paragraph">瞭解如何透過初始系統開機、從機架和纜線安裝 C190 系統。使用 <block ref="861cf0a8c95d8b17a03c43773caa91e4" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="6b94783b3a4b318de01cab9d3ec81247" category="open-title">原始控制器</block>
@@ -7728,7 +7670,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="335755c0e7b53572be7e9a663d297e47" category="list-text">FAS2520 、 FAS2552 、 FAS2554</block>
   <block id="bbc155fb2b111bf61c4f5ff892915e6b" category="cell">交換器</block>
   <block id="e29dd9091577ef2b7d9c9828cd5407af" category="paragraph">NetApp CN1610 交換器</block>
-  <block id="f267a68fd1c8bddcc992701898021398" category="paragraph">叢集交換器</block>
   <block id="a8495ee8f8ba70ddce083c14b317a765" category="list-text">Cisco 5596UP</block>
   <block id="4249daf52cc9869f5f0eb05a465153b6" category="list-text">Cisco 5596T</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
@@ -7741,7 +7682,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="70c1ec940020a23d470c43a425a19dbd" category="image-alt">插槽和插槽 [ 連接埠便利性</block>
   <block id="5aa9a0e12c17de73e420b615315f7453" category="paragraph">如需 ONTAP 9 版本中已知問題、限制和升級注意事項的詳細資訊、請參閱<block ref="84fe5db170ffeba3db16dd5c6d7a58db" category="inline-link-rx"></block>。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。</block>
   <block id="d1f3a81423106ee57c19f4fc60f797ca" category="sidebar">支援終止</block>
-  <block id="3709879cf4b397082ed4cccaa4fc0561" category="image-alt">FAS2800 外部 SAS 連接埠</block>
   <block id="684a3c483281d887c3d3be6f2fec0dee" category="inline-link-macro">熱新增磁碟機</block>
   <block id="0981347849054d7973149d23c4187aa8" category="list-text"><block ref="0981347849054d7973149d23c4187aa8" category="inline-link-macro-rx"></block></block>
   <block id="fd6333b3a15bf4ff3d4a25db6d99ea06" category="paragraph">請使用 NetApp 知識庫文件<block ref="0ce7a268461a7f9e86d34962088e7dcd" category="inline-link-rx"></block>。</block>
@@ -8036,7 +7976,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e84bd7a7cafaabc7b1743876dcc73c70" category="image-alt">雙節點無交換器叢集複合佈線圖</block>
   <block id="0372c9caab5ee11faf1ffac3ef3c46fa" category="inline-image-macro">交換式叢集複合佈線圖</block>
   <block id="009e65f17aa2f40deb1c718bea3bf98b" category="paragraph"><block ref="009e65f17aa2f40deb1c718bea3bf98b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="586605376a36631b68766c450645ce95" category="list-text">將控制器模組重新連接至儲存設備和網路連線。</block>
   <block id="c8f595ad6dcf30f27e5e610fae364875" category="list-text">如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案：<block ref="fa00b95aa82b5506a4c27cc4a50f05d7" prefix=" " category="inline-code"></block></block>
   <block id="a6efff0cc5b19d4c49cb4467336db466" category="list-text">如果啟用 AutoSupport 、請叫用 AutoSupport 訊息命令來抑制自動建立個案：<block ref="fbcb7868c4849064439910664677cb60" prefix=" " category="inline-code"></block></block>
   <block id="61612a74be5170dd342eb619d607d9a0" category="paragraph">下列 AutoSupport 命令會禁止自動建立案例兩小時：<block ref="6cf51b10a85b7bdc2a6698400ee841b7" prefix=" " category="inline-code"></block></block>
@@ -8080,10 +8019,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="09c2cf2531a14305542e6aff93e691c5" category="paragraph">NIC 模組</block>
   <block id="a286fff38dd07b679c8ce3d88b6f2962" category="inline-link-macro">關閉受損的控制器</block>
   <block id="4332aa8c798bac1ec6c0f4c83e0df305" category="list-text">驗證類型是否<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block>，然後手動備份 OKM 資訊。</block>
-  <block id="7f1dab55b896652272852d94aadf9413" category="list-text">從載入器提示字元中、從 USB 快閃磁碟機開機恢復映像： _boot_recovery _</block>
   <block id="66e5f5f877412d7578e6bec4d8f933b5" category="list-text">在功能受損的控制器上、當您看到時、請按下 _Y_<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block></block>
   <block id="3578391379ba5c5411207a0793afef71" category="list-text">在功能受損的控制器上，當系統提示您覆寫時，請按 _Y_<block ref="295b4ac77f4e1c5f93c6894df85fd86d" prefix=" " category="inline-code"></block>。</block>
-  <block id="496e1cf89cb904a9a2ceccd873c325c5" category="list-text">在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： _set -priv特權 advancive_ 。</block>
   <block id="61dad7d5cf7f4e4b7469b097ac35485f" category="list-text">在功能受損的控制器上，當您看到時，請按 _y_<block ref="dff08971c5acbbdac6642922fde20608" prefix=" " category="inline-code"></block>。</block>
   <block id="e9636d3f8e24f08b43c5d1ed71e065ea" category="list-text">在功能受損的控制器上，當您看到時，請按 _y_<block ref="396e369cf75815ba643925818d3ec37e" prefix=" " category="inline-code"></block>。</block>
   <block id="976af5aa217f6c1b1dbf16e0ed0a4bde" category="list-text">在功能受損的控制器上、當系統提示您重新啟動功能受損的控制器時、請按 _y_ 、然後按下 _Ctrl-c_ 進入開機功能表。</block>
@@ -8136,10 +8073,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="883e97ce0fc5299b4c253bfe7422df99" category="image-alt">NVRAM 注意與狀態 LED 位置圖</block>
   <block id="e752b86e927b89b7fc1a7d0c5e13ef64" category="paragraph">NVRAM 狀態 LED</block>
   <block id="3e0d1dbbb8d79c619401e691855e6d04" category="paragraph">NVRAM 注意 LED</block>
-  <block id="5dc97b940d2a0a8bf57b3743911070b2" category="admonition">如果 NVRAM 狀態 LED 閃爍、可能表示控制器模組未正確接管或停止（未認可的資料）。如果合作夥伴控制器模組未成功接管受損的控制器模組、請先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block> 、再繼續執行此程序。</block>
-  <block id="4e0f18112e412988fc61a484d32624af" category="paragraph">故障控制器模組上 NVRAM 狀態 LED 的一般行為如下：</block>
-  <block id="6c521503338c94e4dc5bf3d3eeb13d8b" category="list-text">從控制器模組拔下電源、控制器模組處於「等待恢復」狀態、或控制器模組未正確接管或停止（未認可的資料）時、 NVRAM 狀態 LED 會閃爍。</block>
-  <block id="1fc34159d945428767817ea4688dbeb4" category="list-text">從機箱中移除控制器模組時、 NVRAM 狀態 LED 會閃爍、這可能表示控制器模組未正確接管或停止（未認可的資料）。確認已由合作夥伴控制器模組完全接管控制器模組、或顯示受損控制器模組<block ref="cbd30655d53ec6ae9cc96680b3199b33" prefix=" " category="inline-code"></block>。然後、可以忽略閃爍的 LED （並從機箱中移除控制器）。</block>
   <block id="cca9ed5787e1c9e8e02cd46db907ea96" category="list-text">在裝置正面、將手指勾入鎖定凸輪的孔中、壓緊凸輪桿上的彈片、然後輕輕地同時將兩個鎖條牢牢地朝您的方向旋轉。</block>
   <block id="f496c685f16af1d79af2853eb1f4f094" category="paragraph">控制器模組會稍微移出機箱。</block>
   <block id="6e7081198e310340fdbd7ee3575a92db" category="image-alt">控制器移除圖形</block>
@@ -8187,7 +8120,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="54e470877c32b61b020326e0bd9815fd" category="list-text">如果您的系統未設定加密、請完成下列程序以重新啟動系統：</block>
   <block id="da9ac1c91f37b4e5f63555337c4e5a28" category="list-text">開機至功能表並執行選項 1 。</block>
   <block id="ec77e5f87d39009b586c11431b08f2df" category="paragraph">完成硬體更換後、您將驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
-  <block id="19b66ea26285ab6907d553e575e1e598" category="list-text">在更換的控制器模組上開機至維護模式、並確認所有元件都顯示相同的<block ref="594c16ca0695f6665d7cf4971707adf6" prefix=" " category="inline-code"></block> 狀態：<block ref="fb4e6c2e33b945c3ff4d042cb66d2ed4" prefix=" " category="inline-code"></block></block>
   <block id="5ce635c93ed7a2d51e30b917452c6ec7" category="list-text"><block ref="f46f944e351f8b92e40c3308318738a3" prefix="" category="inline-code"></block> （不支援）</block>
   <block id="221f15e39f2382e44ef4321b5b0e4320" category="list-text"><block ref="524b78f7770e94479dc70b1b445c5cf3" prefix="" category="inline-code"></block> （不支援）</block>
   <block id="a540c64e6896cd0fc3bf3d5fb82d4719" category="paragraph">當系統報告該 DIMM 的永久性故障狀況時、您必須更換 DIMM 。</block>
@@ -8340,13 +8272,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="54a53a09772d42f23357a9952d2d46a1" category="section-title">步驟2：將開機映像傳輸到開機媒體</block>
   <block id="ba6a859a07959f14e93fa82e7da1233e" category="image-alt">關閉控制器模組通風管圖形 AFF A1K</block>
   <block id="51f2f04b22eba49bd6c9066a5648bd67" category="list-text">檢查故障控制器模組背面插槽 4/5 中的琥珀色 NVRAM 狀態 LED 是否熄滅。尋找 NV 圖示。</block>
-  <block id="da5f7089cdcd7902b7086f24a299a313" category="list-text">從控制器模組拔下電源、儲存系統處於「等待恢復」狀態、或控制器模組未正確接管或停止（未認可的資料）時、 NVRAM 狀態 LED 會閃爍。</block>
-  <block id="997ed926bb92f58aed3a035708bb70c0" category="list-text">從機箱中移除控制器模組時、 NVRAM 狀態 LED 會閃爍、表示控制器模組未正確接管或停止（未認可的資料）。確認已由合作夥伴控制器模組完全接管控制器模組、或顯示受損控制器模組<block ref="cbd30655d53ec6ae9cc96680b3199b33" prefix=" " category="inline-code"></block>。然後、閃爍的 LED 會被忽略（控制器模組可從機箱中移除）。</block>
   <block id="deb4147b46ea2ebcf52f58598b90e46b" category="list-text">從控制器模組電源供應器（ PSU ）拔下控制器模組電源供應器纜線。</block>
   <block id="6233363b0d15d7066ec85e296a99f7eb" category="admonition">如果您的系統有直流電源、請從 PSU 拔下電源區塊。</block>
   <block id="afba20d4eb44e94103854196f1d30cbf" category="list-text">從控制器模組拔下系統纜線、 SFP 和 QSFP 模組（如有需要）、並追蹤纜線的連接位置。</block>
   <block id="a5fd25bf69ec23e5f23fbe3cc38a7e54" category="list-text">從控制器模組中取出纜線管理裝置。</block>
-  <block id="942fdbfcbfd61f0c694784bf520773d4" category="cell">A 鎖定閂鎖</block>
   <block id="32dde6c192b854cc5ef8fbf9965197f3" category="list-text">將控制器模組滑出機箱、然後放在平穩的表面上。</block>
   <block id="3a35b79f6cdc064e1fd8bae199bb7cc1" category="list-text">請追蹤每個磁碟機的磁碟機支架、並將磁碟機放在一旁的無靜電推車或桌子上。</block>
   <block id="bbad437d407ac0dc494f22cf01d36f95" category="section-title">步驟 3 ：從設備機架或系統機櫃內更換機箱</block>
@@ -8713,7 +8642,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6794ac4e17218aaa4a21099cb6c428a5" category="doc">更換電源供應器 - AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">更換即時時鐘電池 - AFF A1K</block>
   <block id="7a0d50897c7e82eeae5a76e821ede64f" category="summary">您必須更換。</block>
-  <block id="8696c3a11bb55bf4544256cfb1b2bd94" category="doc">更換系統管理模組 - AFF A1K</block>
   <block id="729f102b3131803a07803cd2f223d3c3" category="summary">您必須重新啟動控制器的儲存設備。</block>
   <block id="7b78a43d2ef1cd56888972224b322cba" category="section-title">步驟 1 ：驗證生命週期並檢查叢集健全狀況</block>
   <block id="6f088e5455bf9d5415570fed055240bc" category="paragraph">對於 AFF A70 和 A90 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -9092,7 +9020,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0861a4c5524aee3e491db29774dd89a8" category="sidebar">關閉控制器</block>
   <block id="cada3ae8b9b850f4721595b91f8ab383" category="doc">步驟 1 ：可重新恢復控制器</block>
   <block id="f4c083c41633c63a72a1bbce7db1c159" category="sidebar">給回控制器</block>
-  <block id="26916af0dde7f17e1c0020bc61152522" category="sidebar">可重新分配控制器</block>
   <block id="a39e0fbfb2db42a80ba7546850d8b5c6" category="paragraph"><block ref="a39e0fbfb2db42a80ba7546850d8b5c6" category="inline-link-rx"></block></block>
   <block id="4c32ebd39f3a998e8ed434a92fb2337e" category="image-alt">AFF A250 C250 或 FAS500f 的纜線、其中包含一個 NS224 機櫃和一組 PCIe 卡連接埠</block>
   <block id="3512d92434ff4ef9e4eb4253b21a863e" category="image-alt">插入纜線時、接頭拉片朝上</block>
@@ -9124,10 +9051,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3f686579c7d84b4dfbb612af178e6778" category="image-alt">四重路徑單一控制器纜線工作表、顯示連接至堆疊 1 和 2 的連接埠配對</block>
   <block id="71fba59d34f73a8fd5b9be78ee7cbb14" category="image-alt">纜線類型金鑰、適用於內建儲存設備的平台</block>
   <block id="29a8cc812811f08ee47c54a882a55cf7" category="image-alt">纜線彩色金鑰、適用於內建儲存設備的平台</block>
-  <block id="3fd3aba750a8134d082e5da9728cba9d" category="image-alt">FAS2800 多重路徑 HA 、不含外部機櫃</block>
   <block id="78bfb4ec92649c11f6ff3c0d7da078c8" category="image-alt">Fas2800 三路徑 HA 纜線範例、無外部機櫃</block>
-  <block id="3ab84f5b92d635701b7da25b1d7183ef" category="image-alt">FAS2800 三路徑 HA 佈線工作表顯示堆疊 1 的連接埠配對</block>
-  <block id="ab79ce4bb4c74fd2fa5161b751278cde" category="image-alt">FAS2800 三路徑 HA 佈線範例、連接到一個堆疊</block>
   <block id="a565db44d0bce22f1abe371257922823" category="image-alt">多重路徑 HA 纜線工作表、適用於具有內部儲存設備和單一堆疊的平台</block>
   <block id="ebe16c7c11294d83888309527c7aa402" category="image-alt">內部儲存平台的多重路徑 HA 纜線範例</block>
   <block id="ae886991173ce1313a3472f2bf087bea" category="image-alt">FAS2600 佈線工作表顯示多路徑組態的連接埠配對</block>
@@ -9195,7 +9119,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2bccda25615c5e6e7b2f2c08de00a446" category="paragraph">NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃 ID 、您必須建立工具、將其插入按鈕所在的鑽孔中。如<block ref="59d7f7611d6a3a02163f2743d346863e" category="inline-link-macro-rx"></block>需詳細說明、請參閱。</block>
   <block id="79f9797d84bf75ae713143b18a0030f3" category="paragraph">NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃 ID 、您必須建立工具、將其插入按鈕所在的鑽孔中。如<block ref="59d7f7611d6a3a02163f2743d346863e" category="inline-link-macro-rx"></block>需詳細說明、請參閱。</block>
   <block id="f3649257de65ad2898ffea0bcd6b4429" category="admonition">範例使用DS224C。佈線與其他支援的磁碟機櫃類似。如需詳細資訊、請參閱 <block ref="b8ff88c1a2e9444f28ec1504689e0040" category="inline-link-macro-rx"></block> 。</block>
-  <block id="a50d38918f3af2fcdf9a82289745bef3" category="admonition">請勿在 FAS2800 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。如需詳細資訊、請參閱 <block ref="e082bc1662f9e2eeea25ff123ac1639a" category="inline-link-macro-rx"></block> 。</block>
   <block id="cea2fe0896f98e522227f31af739bad1" category="image-alt">如何取出 RTC 電池</block>
   <block id="c865faf8e136bd4fb16b864c71a1a831" category="list-text">如果您安裝了儲存 I/O 模組、請依照中所述<block ref="4a30b7191a311b85a3f2f50c86b1c925" category="inline-link-macro-rx"></block>、安裝及連接 SAS 機櫃。</block>
   <block id="1668821fbbc6ef249109c235ace901e6" category="paragraph">插槽 3 或 7 中的 NIC 模組</block>
@@ -9223,7 +9146,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="76e66c3eaa0efaed0d080a74942cc900" category="list-text"><block ref="76e66c3eaa0efaed0d080a74942cc900" category="inline-link-macro-rx"></block></block>
   <block id="b1b7d90b95e84c2c2f4f36df9e38550c" category="list-text"><block ref="b1b7d90b95e84c2c2f4f36df9e38550c" category="inline-link-macro-rx"></block></block>
   <block id="8e4e1285f49cb2de8e4ad6f96de7a955" category="list-text"><block ref="8e4e1285f49cb2de8e4ad6f96de7a955" category="inline-link-macro-rx"></block></block>
-  <block id="6ed83ea3812e071cb890a3397f1ef8f3" category="list-text"><block ref="6ed83ea3812e071cb890a3397f1ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="f9e104181ae9f5f7cb047ada1d31db67" category="list-text"><block ref="f9e104181ae9f5f7cb047ada1d31db67" category="inline-link-macro-rx"></block></block>
   <block id="7e888c9e662025943d61a7b6ab33fa3f" category="list-text"><block ref="7e888c9e662025943d61a7b6ab33fa3f" category="inline-link-macro-rx"></block></block>
   <block id="0b91391244828b90a1ed6303288f165b" category="list-text"><block ref="0b91391244828b90a1ed6303288f165b" category="inline-link-macro-rx"></block></block>
@@ -9496,7 +9418,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="49b45e8248fd2d5ed919902809621c44" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
   <block id="b47ee6654722b2bed7a27aba5a38d41e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
   <block id="8b2975d216e00ec9bbae796edb379021" category="doc">更換控制器模組 - AFF A70 和 AFF A90</block>
-  <block id="d17298652653b6c2396a7e0cf7ba5220" category="doc">可回收並退回控制器 - AFF A70 和 AFF A90</block>
   <block id="b851102d36222ece27890507e1841ecc" category="doc">控制器更換需求 - AFF A70 和 AFF A90</block>
   <block id="68e66200bb827544f2bc5f02c2c9a441" category="doc">完整更換控制器： AFF A70 和 AFF A90</block>
   <block id="5e1c3f88c24c4db392d7d1d519b28aa4" category="doc">關閉受損的控制器 - AFF A70 和 AFF A90</block>
@@ -9592,7 +9513,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="778ed0ff73bab9d38df4ab676b375d7d" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="7295d6b475ca2cf21124bd198447f219" category="inline-link-macro-rx"></block></block>
   <block id="3459049c9ccd0e45188ec917dc7dca94" category="paragraph">若要更換機箱模組、您必須符合特定需求。</block>
   <block id="8c82ee3a5a33a059aae4ab30bedbd5a5" category="doc">更換控制器模組硬體 - ASA A70 和 ASA A90</block>
-  <block id="1e314e899a3414e9234a03c7449851c1" category="doc">可回收並退回控制器 - ASA A70 和 ASA A90</block>
   <block id="f6c6b6a5348d487bef542c09ec0a4b75" category="doc">控制器更換需求 - ASA A70 和 ASA A90</block>
   <block id="63c1e704a685a7abd832fefd52c52ac5" category="doc">完整系統還原： ASA A70 和 ASA A90</block>
   <block id="43df70609ea6def43d3a5dbd42ad0adc" category="doc">關閉受損控制器 - ASA A70 和 ASA A90</block>
@@ -9646,7 +9566,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d40d4bbeff22abe0ae50f578804e3f1d" category="doc">更換 NVRAM - ASA A1K</block>
   <block id="8280bf46cc1987c5763fa466b06ce943" category="doc">更換電源供應器 - ASA A1K</block>
   <block id="53211074b0edd2a1e49952ae0a99c70e" category="doc">更換即時時鐘電池 - ASA A1K</block>
-  <block id="35b0e55d79a35d4035adfd05a160d0b1" category="doc">更換系統管理模組 - ASA A1K</block>
   <block id="791c7d7e48c500e265e759e91a1190c4" category="paragraph">從指定版本的 ONTAP 開始、不再支援下列系統、機櫃和交換器。</block>
   <block id="e039aa1be61543fd84f1c4eb5d3e9f6b" category="section-title">ONTAP 硬體系統</block>
   <block id="2d32b3d87a83d9147e0da8371e685ab9" category="section-title">機櫃模組</block>
@@ -9794,7 +9713,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c4ed6403201dfa217ff707bb31f7629c" category="doc">更換 NVRAM ： FAS70 和 FAS90</block>
   <block id="031f9f009940597777a75796e5b17818" category="doc">更換電源供應器- FAS70和FAS90</block>
   <block id="6edcaa0f49095aafb0fa011d3fa4d4c5" category="doc">更換即時時鐘電池- FAS70和FAS90</block>
-  <block id="726f515449f8f7ce4011ad297cfea213" category="doc">更換系統管理模組： FAS70 和 FAS90</block>
   <block id="d387637ce68cde3388b8e2a316fb8a4b" category="summary">若要使用 ONTAP 硬體系統開始運作、請在 ONTAP 中安裝硬體元件、連接硬體纜線、以及設定儲存設備。</block>
   <block id="945e4ff7a51b59276f6c6ba3a9c5015f" category="doc">使用 ONTAP 硬體系統開始運作</block>
   <block id="4fc0cdfd3bfeb9e0deca202a13e34c80" category="list-text"><block ref="4fc0cdfd3bfeb9e0deca202a13e34c80" category="inline-link-macro-rx"></block></block>
@@ -9859,7 +9777,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e0f5268186ba6af55aa3b68c29a31380" category="sidebar">還原開機媒體上的映像</block>
   <block id="7b51a70874531a1eb0a69494afcf3fc1" category="sidebar">ASA A1K 系統</block>
   <block id="81bf1a749a21a3e7b187281a18e24c73" category="sidebar">ASA A1K 維護</block>
-  <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1K 開機媒體</block>
   <block id="7b2d89b8fc4544d7b3fc7e1ae3e2a79b" category="sidebar">FAS70和FAS90系統</block>
   <block id="4b073adaa8e84c0107a4d144653519e6" category="sidebar">FAS70 和 FAS90 安裝和設置</block>
   <block id="db79c96e3435962e695832e0fd51205b" category="sidebar">FAS70 和 FAS90 保持不變</block>
@@ -9972,8 +9889,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d8b00338b050b9e3674ca7cb93db3005" category="list-text">請確定您擁有必要的權限和認證：</block>
   <block id="cffb1f7ec4551961dfb3f4305396ba7a" category="list-text">請確定您擁有必要的工具和設備以進行更換。</block>
   <block id="435d3b4c3155a5707da928ecab161564" category="list-text">停止位於受損機箱中的兩個節點：</block>
-  <block id="6c9a996ce891c8110b4d78cd4d1df02b" category="list-text">如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱<block ref="6db187057e0b0e01589d1a1a7f510469" category="inline-link-rx"></block>執行此關機程序後的。</block>
-  <block id="d647c402221a6065f23f921167ae208a" category="list-text">如果使用 SSD 、請在執行此關機程序後參閱<block ref="13eec713a6c81535d5709aa561195b7a" category="inline-link-rx"></block>。</block>
   <block id="49ddd711a9ca60c112300678504ae695" category="paragraph"><block ref="49ddd711a9ca60c112300678504ae695" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc1511678b978556523f43c45099e748" category="paragraph"><block ref="dc1511678b978556523f43c45099e748" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e84be6e7274809578c16168da997728" category="inline-image-macro">資料連接埠連線</block>
@@ -9991,7 +9906,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dea543e8cb1b89f2ada772f68eb0f947" category="paragraph"><block ref="dea543e8cb1b89f2ada772f68eb0f947" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e2c387c7111638a25e569d0c64c23d0" category="paragraph"><block ref="6e2c387c7111638a25e569d0c64c23d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef75e937c70865849d2e54ee4ee42812" category="paragraph"><block ref="ef75e937c70865849d2e54ee4ee42812" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="51acffc07387d62f5f13084afdbadce6" category="paragraph"><block ref="51acffc07387d62f5f13084afdbadce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dbb3f1faf8a21651f251d56b468b76ec" category="paragraph"><block ref="dbb3f1faf8a21651f251d56b468b76ec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f433e93aef4182760deb06094eb03e24" category="paragraph"><block ref="f433e93aef4182760deb06094eb03e24" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e7e71df71ba5cdbb63d04bb2bf5eb4d" category="paragraph"><block ref="1e7e71df71ba5cdbb63d04bb2bf5eb4d" category="inline-image-macro-rx" type="image"></block></block>
@@ -10128,7 +10042,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b33049c653e121238a4124a3d1486bc3" category="paragraph"><block ref="b33049c653e121238a4124a3d1486bc3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="50bc74d4b734039bfc4cef1692453ceb" category="inline-image-macro">圖說文字圖示 2.</block>
   <block id="1fe0e3343e3f2ee9b9c2e4cba910ce70" category="paragraph"><block ref="1fe0e3343e3f2ee9b9c2e4cba910ce70" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c0dcdcb83d0bd841dcab467149d8fbce" category="doc">檢查加密金鑰支援與狀態 - FAS2800</block>
   <block id="a3479b1ff22f258fe8dd4077252cd9cd" category="image-alt">圖說文字圖示 1</block>
   <block id="21f25e3135866d211935a709f5289115" category="image-alt">圖說文字圖示 3.</block>
   <block id="23e72fffbab87e81876009d38ba5865d" category="image-alt">GbE SFP 銅線連接器</block>
@@ -10136,12 +10049,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6f1c9e49e85b9240d07364dd186d0229" category="image-alt">圖說文字圖示 4.</block>
   <block id="7df13f585d67866a6bbc4289b8effc27" category="sidebar">檢查加密金鑰</block>
   <block id="ed435995b7240e9abb5c8ccc0579cb96" category="sidebar">ASA A70 和 ASA A90 維護</block>
-  <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70 和 ASA A90 開機媒體</block>
   <block id="6fa3989bed64ee0002fbcb3ee0b95f27" category="sidebar">ASA A70 和 ASA A90 機箱</block>
   <block id="64f587f0cd70365f99f4bf02b573698f" category="sidebar">ASA A70 和 ASA A90 控制器</block>
-  <block id="d431e47bf770a9393ee9f239dc2035b5" category="sidebar">ASA A70 和 ASA A90 I/O 模組</block>
   <block id="2d5a952fbb91c4ae00f6cf700a7a8912" category="sidebar">ASA A1K 控制器</block>
-  <block id="21b2ca1e48faf28d5918cce56ce73345" category="sidebar">ASA A1K I/O 模組</block>
   <block id="de6146d3d2df55568fb2490009341fe7" category="inline-link-macro">FAS 和 AFF 機型的開機裝置還原所使用的服務影像下載檔案中遺失 EFI 資料夾 ^</block>
   <block id="08bb41e143a5dbcb1f95809650758d5d" category="admonition">如果服務映像沒有 EFI 資料夾、請參閱<block ref="ff41085fda5f8dca9d0e49c279b90ce2" category="inline-link-macro-rx"></block>。</block>
   <block id="fb187e830be89fc21d44062ee3e0783a" category="list-text">在 Loader 提示字元中、從 USB 快閃磁碟機開機恢復映像：<block ref="199329b95897fa5b91256fa51b2186ce" prefix=" " category="inline-code"></block></block>
@@ -10164,7 +10074,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="52aadd496ee1f92c301bdde94ed48b99" category="open-title">未設定金鑰管理程式</block>
   <block id="3bf4a86005a59ea3cd8643586d04cd78" category="open-title">已設定外部或內建金鑰管理程式</block>
   <block id="64d036deb4b248416ccf87deceafe674" category="list-text">輸入下列查詢命令、以顯示金鑰管理程式中驗證金鑰的狀態。</block>
-  <block id="22f8cc1607d6f80a2aa89016db8a184d" category="list-text">根據您的系統是使用外部金鑰管理程式還是主機板內建金鑰管理程式、請選取下列其中一個選項。</block>
   <block id="7f6aa2eddb31d7d07b49d6c308057b6a" category="open-title">外部金鑰管理程式</block>
   <block id="710588d994062c1accbe164eb56effb3" category="list-text">輸入命令、確認<block ref="5fdf564f22be6bd901a690f1c5a6d9eb" prefix=" " category="inline-code"></block>所有驗證金鑰的欄位均<block ref="c9b37f9017fc101cecef415e707e7b5f" prefix=" " category="inline-code"></block>顯示<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。</block>
   <block id="a32dd2ca79d8d8a0056821cb37fed7f4" category="open-title">內建金鑰管理程式</block>
@@ -10273,7 +10182,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0f791bd55bfa2fd01f0eba9b2a93ae03" category="doc">還原加密 - ASA A250</block>
   <block id="6a3dc34ad6a214d72bd704b1c631ac27" category="doc">檢查加密金鑰支援與狀態 - ASA A400</block>
   <block id="0a1b1a82d29b54f3c96fa637e88dbed7" category="doc">檢查加密金鑰支援與狀態 - ASA A800</block>
-  <block id="a4cc434d6b8cdf1077083caf578280ed" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUD/800_bootmedia_加密 _preshutdown_checks.adoc []</block>
   <block id="a462f90654e012446c7de81d57862efa" category="doc">檢查加密金鑰支援與狀態 - ASA A900</block>
   <block id="e6b007124129e06cf12d3969e2e3ed17" category="doc">還原加密 - ASA A900</block>
   <block id="9b07e08c3c5e2bcabe683268fcd03412" category="doc">檢查加密金鑰支援與狀態 - AFF C190</block>
@@ -10289,7 +10197,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f69fe3fd7c25297cb61a32bc5fc76020" category="doc">還原加密： FAS2600</block>
   <block id="5d4211964469579f1f45285fc12474dd" category="doc">檢查加密金鑰支援與狀態： AFF A220 和 FAS2700</block>
   <block id="73bc3dac4ffabefd42b1c26a096bbc4e" category="doc">還原加密： AFF A220 和 FAS2700</block>
-  <block id="c0e6c6c0a121f35fdbf7c8694a70b562" category="doc">還原加密： FAS2800</block>
   <block id="cbae18ebc2b8ffd413dbf0fb20bf3f9d" category="doc">檢查加密金鑰支援與狀態 - FAS500f</block>
   <block id="a7b0a510fdfaae6ab395e09cd164f2f8" category="doc">還原加密 - FAS500f</block>
   <block id="8de2c4c1d0c319cb07b6837fd62d106e" category="doc">檢查加密金鑰支援與狀態 - FAS8200</block>
@@ -10309,8 +10216,163 @@ SFP+ （目標 / 啟動器）</block>
   <block id="929b41baf89e2c5975631c98cabedd59" category="paragraph"><block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix="" category="inline-code"></block>。</block>
   <block id="af4b4d5cc6a7f6d9937999949dd33233" category="list-text">如果啟用 AutoSupport 、請還原自動建立案例：</block>
   <block id="0306ff5f8ff1d760b409c6f7f1b3b8bd" category="paragraph"><block ref="9ac424c0d7b432975df36a19daf50c9c" prefix="" category="inline-code"></block>。</block>
-  <block id="e48348202fcdb5533fd8d224264fdc58" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUD/bootmedia_recovery 映像 .adoc []</block>
   <block id="1ae221b034a7bacf99b88892279c2462" category="paragraph">雙色 LED 會在綠色時顯示電源 / 活動、紅色時則顯示故障。</block>
   <block id="7ea17d80896a391ffe01665c36e03909" category="cell">注意（紅色）</block>
   <block id="ede3a6bd0f0cd8205608f251691a19e1" category="doc">控制器對堆疊佈線工作表範本、提供四路徑連線功能：機櫃採用IOM12/IOM12B模組</block>
+  <block id="ea08cb92daf9bb299780da4c66b593b3" category="paragraph">驗證控制器模組的儲存設備和網路連線。</block>
+  <block id="810a6e5b7c7e7dc33bd43c852dc5809d" category="admonition">控制器完全就位後、就會立即開機至 Loader 提示字元。</block>
+  <block id="45a1b3d9bbbc077546cfb071ca46cde7" category="list-text">在 Loader 提示字元中、輸入<block ref="7e17e2b336dbdd66c2f45405573b53de" prefix=" " category="inline-code"></block>以在更換控制器上顯示日期和時間。日期和時間以 GMT 為準。</block>
+  <block id="6de41248c129d02992789fffa274dd9d" category="admonition">顯示的時間不一定是本地時間、會以 24 小時模式顯示。</block>
+  <block id="7ca88951bb06ba87dc8ba0b64e33c507" category="list-text">使用命令設定 GMT 的目前時間<block ref="0ad4ade5bf715a5335525c69a44424c1" prefix=" " category="inline-code"></block>。您可以從合作夥伴節點取得目前的 GMT 、命令為 'date -u'command.</block>
+  <block id="cdce55e02d4cb663168a3f407165ecce" category="list-text">如果 NV LED 熄滅、請前往下一步。</block>
+  <block id="3e206922895508e63afff7ed9697807f" category="list-text">如果 NV LED 閃爍、請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。</block>
+  <block id="89991a1093220d292cce49271c032d59" category="paragraph">驗證儲存設備和網路連線、然後將控制器送回。</block>
+  <block id="224597833baafb79ff1d8b9ef9e0bff7" category="paragraph">如果已啟用、請重設加密、並將控制器恢復正常運作。</block>
+  <block id="151adffc209b320ba53a9853aae1eabe" category="open-title">無加密</block>
+  <block id="a2f6973fda0857d7d2ce0472981331ed" category="list-text">在 Loader 提示符下，輸入<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block>。</block>
+  <block id="dab3afc1f6c32cd488de89f6f35ab456" category="list-text">主控台訊息停止時、按 &lt;enter&gt; 。</block>
+  <block id="39ac0da90af5fdbc14d7e9d1dd00a3c0" category="list-text">如果您看到 _login_ 提示、請前往本節結尾的下一個步驟。</block>
+  <block id="fa2b1e9104e9f13f6d131cc17fb0365e" category="list-text">如果您看到 _waiting for 贈品、請按下 &lt;enter&gt; 鍵、登入合作夥伴節點、然後前往本節結尾的下一步。</block>
+  <block id="e627ab7a0073e67e496bf87be4f423de" category="open-title">機載加密（ OKM ）</block>
+  <block id="0de8f7ec303ccc5a2407e07df761491b" category="list-text">在 Loader 提示符下，輸入<block ref="cce56b203b8705f3487342813b7117be" prefix=" " category="inline-code"></block>。</block>
+  <block id="bff042f875521bd325254e421d748fc6" category="list-text">使用命令檢查 TMP 韌體版本<block ref="7939c23e48e62d500cafffa3ef074000" prefix=" " category="inline-code"></block>。</block>
+  <block id="a1321e98ac8ef25fdd0acc924f81db03" category="list-text">如果版本低於 5.63 、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="de95af52a6f4a4ddae350b4888862a90" category="list-text">如果版本超過 5.63 ，請退出至 Loader 提示符：<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block>。</block>
+  <block id="561e0c22b1763101c73e7c6a32b322b9" category="list-text">從 Loader 提示字元開機至 ONTAP 功能表<block ref="d20d8416248acf69156e4b7875cc4868" prefix=" " category="inline-code"></block>、然後選取選項 10 。</block>
+  <block id="072522f79d819fbe6b1aba60af265a15" category="list-text">輸入 OKM 複雜密碼。您可以向客戶索取此通關密碼、或聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="d910a39b6016554577eeacfc07238593" category="admonition">系統會提示您輸入兩次密碼。</block>
+  <block id="1e32d40ea1317c1fa7e29377debeb590" category="list-text">出現提示時輸入備份金鑰資料。</block>
+  <block id="137e91ab373d54ca35c36fff0be47241" category="list-text">在開機功能表中、輸入正常開機的選項<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block>。</block>
+  <block id="e5954b5f665f3b9aee4023c5d8eb4f5f" category="list-text">顯示 _ 正在等待恢復 _ 時、請按 &lt;enter&gt; 。</block>
+  <block id="68921013f9ca843f9d1bcfd514ee67de" category="list-text">將主控台纜線移至合作夥伴節點、然後以登入<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
+  <block id="92e13c6a52e1a9d4e2955cd77e4db99d" category="list-text">請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block>、然後<block ref="7f4756e08687048c35020c40f9c8567b" prefix=" " category="inline-code"></block>按。</block>
+  <block id="2b0a436148e337f3515c283e053a817b" category="list-text">返回管理控制桿<block ref="4282e6e28684065097c0d90042d19b11" prefix=" " category="inline-code"></block>：。</block>
+  <block id="9e989767231ec29efb85ce3345c961ff" category="list-text">僅回饋 CFO 集合體（根集合體）：<block ref="291b31306c2e0668f091d41edca7e97f" prefix=" " category="inline-code"></block></block>
+  <block id="e28912f373bd8bce85f7c259590bbe92" category="list-text">如果您遇到錯誤、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="bfc2c53d06a8a433a0fef8b142ab388e" category="list-text">在恢復報告完成後等待 5 分鐘、並檢查容錯移轉狀態和恢復狀態：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>和<block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix=" " category="inline-code"></block>。</block>
+  <block id="3b907a0f4441a9f6e0136c10af7a7ba1" category="list-text">將主控台纜線移至更換節點、然後輸入<block ref="1fd11ad9c6fc9e17e9729cd939a2b47b" prefix=" " category="inline-code"></block></block>
+  <block id="3343b0de1fa8c9b6897b7f74eb649269" category="admonition">系統會提示您輸入叢集範圍的 OKM 複雜密碼。</block>
+  <block id="37a4b550d08e47128eb0f17557e6b8a7" category="list-text">使用以下命令檢查密鑰的狀態：<block ref="8d87a410a64e11591a338ede7162a6d2" prefix=" " category="inline-code"></block>。</block>
+  <block id="724ae3f78a19c2844ef99b4ec6cb1a27" category="paragraph">如果 _RESTOREURE_ 欄顯示 _true_ 以外的任何內容、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="5b07da2161bbe720a0c37a6bd9c9f55e" category="open-title">外部金鑰管理程式（ EKM ）</block>
+  <block id="f2e0af4da309c40953b6db2b96031d2c" category="list-text">如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入<block ref="d20d8416248acf69156e4b7875cc4868" prefix=" " category="inline-code"></block>並選擇選項<block ref="6512bd43d9caa6e02c990b0a82652dca" prefix=" " category="inline-code"></block>。</block>
+  <block id="630f2e078780863e8f4033f8334da91c" category="list-text">回答或<block ref="7b8b965ad4bca0e41ab51de7b31363a1" prefix=" " category="inline-code"></block>回答<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>下列問題：</block>
+  <block id="b19458ff12859c393f2fd46d02cb24d4" category="paragraph">您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝</block>
+  <block id="05ac7348459861360c86dc5851e1ab0b" category="paragraph">您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝</block>
+  <block id="0daafd01a5c78aa4cf52e57febc9c7d9" category="paragraph">您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝</block>
+  <block id="1d00e7dce692e8dc3f6877f035e3a616" category="paragraph">或</block>
+  <block id="05f6b998dcdacf2a7e5882ef776dfa8e" category="paragraph">您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝</block>
+  <block id="9254f5a10bf0e4d18aa18a91a9321bea" category="paragraph">您知道 KMIP 伺服器位址嗎？｛ y/n ｝</block>
+  <block id="1bd532b24b172acf6c82834c9f1f149b" category="paragraph">您知道 KMIP 連接埠嗎？｛ y/n ｝</block>
+  <block id="7873bad0251ec2e56db05ae3bdd1d219" category="admonition">如有任何問題、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="3d76483db3628d1fb7af23dff5958985" category="list-text">提供以下資訊：</block>
+  <block id="187c2fd480071b1bb2479cfb3c633e8a" category="list-text">用戶端憑證（ client.crt ）檔案內容。</block>
+  <block id="9817b60d63d724fe9140cd15a752692b" category="list-text">用戶端金鑰（ client.key ）檔案內容。</block>
+  <block id="bba92a28bff776382ef5e278a33e4496" category="list-text">KMIP 伺服器 CA （ CA.pem ）檔案內容。</block>
+  <block id="847ffa6cb9faf4d586538d4351f8da2f" category="list-text">KMIP 伺服器的 IP 位址。</block>
+  <block id="866a1c0ffdc1628740ac9683b931517f" category="list-text">KMIP 伺服器的連接埠。</block>
+  <block id="3ec523210734487192e83412d785e5fc" category="list-text">系統處理完畢後、您將會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。</block>
+  <block id="7575df076a4b9992707665992f1a5c8f" category="list-text">檢查接管狀態：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>。</block>
+  <block id="cad6009525ec6573ddbaaa5acfa3e80f" category="doc">步驟 1 ：驗證 HA 組態設定</block>
+  <block id="101e739321ca8be8abcaba4791ca6acd" category="list-text">開機至維護模式：<block ref="cce56b203b8705f3487342813b7117be" prefix=" " category="inline-code"></block></block>
+  <block id="bb651eca6e9947efc3cd8f7630d5d4a4" category="list-text">當您看到 _ 繼續開機？ _ 時、請輸入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>。</block>
+  <block id="e08749ad3e22c4cf3dc8580f3990f79e" category="paragraph">如果您看到 _ 系統 ID 不相符 _ 警告訊息、請輸入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>。</block>
+  <block id="9fc49ee0bf87b92158288ad2287da435" category="list-text">輸入<block ref="7939c23e48e62d500cafffa3ef074000" prefix=" " category="inline-code"></block>並擷取顯示內容。</block>
+  <block id="7bd41559dd31cc39de8c6e9a34ce4c5a" category="admonition">如果您看到 _personality mismatch_ 、請聯絡客戶支援部門。</block>
+  <block id="83a4b0a3dcc7da7a9581cb2f273b0e25" category="list-text">從<block ref="7939c23e48e62d500cafffa3ef074000" prefix=" " category="inline-code"></block>輸出中、將介面卡資訊與更換控制器中的介面卡和位置進行比較。</block>
+  <block id="e04ae80f38da13e5a583ad8efcc36788" category="list-text">確認所有元件都顯示相同的<block ref="594c16ca0695f6665d7cf4971707adf6" prefix=" " category="inline-code"></block>狀態：<block ref="fb4e6c2e33b945c3ff4d042cb66d2ed4" prefix=" " category="inline-code"></block></block>
+  <block id="2a884f64eac063d19102596d983ff390" category="section-title">步驟 2 ：驗證磁碟清單</block>
+  <block id="b09c84b40791547383307e9986c547e4" category="list-text">使用確認介面卡列出所有磁碟的路徑<block ref="c41292f339fa0dd66d84b7c3a9eac054" prefix=" " category="inline-code"></block>。</block>
+  <block id="b5507fd73a4983529ea95a333b70737d" category="paragraph">如果您發現任何問題、請檢查纜線佈線並重新拔插纜線。</block>
+  <block id="b9b95d927da2cee98d985b1a328995c6" category="list-text">退出維護模式<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block>：。</block>
+  <block id="f1d532893d42eeecb43413920b6d1769" category="list-text">重新安裝纜線管理 ARM （如果已移除）、但請勿將任何纜線重新連接至更換的控制器。</block>
+  <block id="357f0f49c943fa136f00f3dd57ce7e41" category="list-text">將主控台纜線插入替換控制器模組的主控台連接埠、然後重新連接至筆記型電腦、以便在重新開機時接收主控台訊息。更換的控制器會從正常運作的控制器接收電力、並在完全裝入機箱後立即開始重新開機。</block>
+  <block id="344f921d0ec02fd1e7780b61a619a100" category="admonition">更換 RTC 電池、插入控制器並開啟第一次 BIOS 重設的電源後、您會看到下列錯誤訊息：<block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix=" " category="inline-code"></block><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix=" " category="inline-code"></block>這些訊息是預期的、您可以繼續執行此程序。</block>
+  <block id="f97ccb05cf3baac7ac118d1817e2a5fd" category="open-title">選項 1 ： ONTAP 9 。 16.0 或更早版本</block>
+  <block id="46656bb1c59aea0ac10f1105bf4c8b13" category="list-text">在功能受損的控制器上、當您看到時<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block>按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block></block>
+  <block id="19a9f99a071bb48abc6e83f398b20a0e" category="list-text">在功能受損的控制器上、當系統提示您覆寫 /etc/ssh/sd_host_eCDSA_key_ 時、按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="d116a6f9fb96c43c15019792cd4a1fe9" category="list-text">在功能受損的控制器上，當您看到時<block ref="dff08971c5acbbdac6642922fde20608" prefix=" " category="inline-code"></block>按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="c724a78d41a5f05bc3f7a2f2993c497c" category="list-text">在功能受損的控制器上，當您看到時<block ref="396e369cf75815ba643925818d3ec37e" prefix=" " category="inline-code"></block>按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="6b65eb3b3f603ad188b614f3f50a9d13" category="list-text">在功能受損的控制器上、<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>當系統提示您重新啟動功能受損的控制器時、按下<block ref="1b10a0464da1409d5026aa8b4f098be8" prefix=" " category="inline-code"></block>以進入 Boot Menu （開機功能表）。</block>
+  <block id="d955df273d2c08375d51dc9da0fe5684" category="open-title">選項 2 ： ONTAP 9 。 16.1 或更新版本</block>
+  <block id="c76bf517391d0898b2c357bf0119fc92" category="list-text">在功能受損的控制器上、當系統提示您還原備份組態時、請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="5f711b3cd97054c3fbee1821e742da6d" category="paragraph">還原程序成功後、此訊息會顯示在主控台 - 上<block ref="92080c75f9b065e263d7fea155b1d733" prefix=" " category="inline-code"></block>。</block>
+  <block id="9959e1ea8c67446c566e6a371f9e14cb" category="list-text">在功能受損的控制器上、出現提示時按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>確認還原備份是否成功。</block>
+  <block id="b883391d9dfbf834ff0bda07a53554f5" category="list-text">在功能受損的控制器上、當系統提示您使用還原的組態時、請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="d0ec0afe83814a07fcdbf02b0d2e2e8b" category="list-text">在功能受損的控制器上、當系統提示您重新啟動節點時、請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="f3996efec422ea2910e77724e96ff04e" category="list-text">根據您的系統使用的是外部金鑰管理程式或內建金鑰管理程式、請選取下列其中一個選項。</block>
+  <block id="cd979ca520736846558f2b04a04b63da" category="paragraph">如果您使用的是主控台 / 筆記型電腦、請使用相同的叢集管理員認證登入控制器。</block>
+  <block id="4250e5b5781f94ff901cc1822461f6ae" category="doc">更換系統管理模組 - AFF A1K</block>
+  <block id="b1b14a007e6d27cacb6cbf9837dd5e7e" category="doc">將控制器交回 AFF A70 和 AFF A90</block>
+  <block id="4443f66d8d4febc600e0d4d0b3b0db91" category="doc">將控制器交回 ASA A70 和 ASA A90</block>
+  <block id="425248bc914ee69e002743b7cff8fb0a" category="doc">更換系統管理模組 - ASA A1K</block>
+  <block id="fd61dac268d25ee83789df624f74cdee" category="summary">您必須更換系統管理模組。</block>
+  <block id="fc633a3acea06ec7b13b95943af5a8f1" category="doc">更換系統管理模組： FAS70 和 FAS90</block>
+  <block id="3af65f186d9005b4ac041f824d01a2a6" category="doc">將故障零件退回 NetApp - FAS2820</block>
+  <block id="c6850888623b4b33ceba4c1bd9322642" category="doc">檢查加密金鑰支援與狀態 - FAS2820</block>
+  <block id="0152b6e0cea632db2750cd8de20a739e" category="doc">還原加密 - FAS2820</block>
+  <block id="9e84d4138651a02fba804117209b607b" category="doc">開機恢復映像： FAS2820</block>
+  <block id="d4d79c1a5bf62b9ce87343c6306b87c5" category="doc">開機媒體更換總覽 - FAS2820</block>
+  <block id="0d0170db1c817b32ed8190527b1999f1" category="doc">更換開機媒體： FAS2820</block>
+  <block id="3d0983e4676ad818dc9c354efeabe635" category="doc">關閉功能受損的控制器 - FAS2820</block>
+  <block id="fd167e36c21bd8b8595824591db88367" category="doc">更換快取模組： FAS2820</block>
+  <block id="6e0f0070d93d5a9e57db58dbec60bc75" category="doc">還原並驗證組態 - FAS2820</block>
+  <block id="0a18d7fa493ce8a36cb788672e96ec1e" category="doc">移動和更換硬體： FAS2820</block>
+  <block id="565c7b6b68b9f1217d774e69ffbc1dbe" category="doc">機箱更換總覽 - FAS2820</block>
+  <block id="c1f1fa5b2c6bd817573db541ba6be0ec" category="doc">關閉控制器 - FAS2820</block>
+  <block id="cfb34793404191ff3dbe3c3af07650ac" category="doc">更換控制器模組硬體： FAS2820</block>
+  <block id="052630ced3e9a56676c8d522b3e62cd7" category="doc">更換控制器模組總覽 - FAS2820</block>
+  <block id="240b8a53f6e89c6a271533ffce379d28" category="doc">可重新分配系統並重新分配磁碟： FAS2820</block>
+  <block id="b5ba6d0d7c9b52750d10b7f3c708973c" category="doc">完整系統還原： FAS2820</block>
+  <block id="4aea5de6765c8ea1009a7794b03ff714" category="doc">還原並驗證系統組態： FAS2820</block>
+  <block id="3ccf4bf934980019516d053c16af3ea0" category="doc">更換 DIMM - FAS2820</block>
+  <block id="097bc371e9a668a6c26c1a9e903c37e3" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - FAS2820</block>
+  <block id="b7f90edffbb06b5a41542900d1f4c7fb" category="doc">詳細步驟： FAS2820</block>
+  <block id="585da1007448f1bca25c91aa3d47af64" category="admonition">請勿在 FAS2820 上使用連接埠 0b2 。此 SAS 連接埠不供 ONTAP 使用、且永遠停用。如需詳細資訊、請參閱 <block ref="e082bc1662f9e2eeea25ff123ac1639a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a28ed8e6f23ab0fb5c0e2d72362a0960" category="doc">快速指南： FAS2820</block>
+  <block id="137ac149c5843d9d85bc73d79efd16f3" category="inline-link-macro">FAS2820 系統安裝與設定說明</block>
+  <block id="e2d3adad541d6889bb95a808cb3a3d86" category="paragraph"><block ref="e2d3adad541d6889bb95a808cb3a3d86" category="inline-link-macro-rx"></block></block>
+  <block id="28a82ac904828c0e6dbc9d74c81690fd" category="doc">影片步驟： FAS2820</block>
+  <block id="7b7bdd833250123834030e3857a03094" category="video-title">動畫 - FAS2820 安裝與設定說明</block>
+  <block id="2c46a9a35c0e8d3e16c133bd8365def8" category="summary">維護 FAS2820 硬體</block>
+  <block id="80c431c2178554bdd085409effc13014" category="doc">維護 FAS2820 硬體</block>
+  <block id="49480b187b868d6e33e8c24370a33d80" category="paragraph">對於 FAS2820 儲存系統、您可以在下列元件上執行維護程序。</block>
+  <block id="0cfceb065f1a2336f776d8fd5aa71e3b" category="doc">更換 NVMEM 電池 - FAS2820</block>
+  <block id="5b80efc4608755948d23b9b83213414b" category="doc">更換夾層卡 - FAS2820</block>
+  <block id="e4e0243ba4648dfa72a7dd5868dc075e" category="doc">交換電源供應器： FAS2820</block>
+  <block id="46ef9696d36a8067561c1d44d830adff" category="doc">更換實時時鐘電池 - FAS2820</block>
+  <block id="7d99df27d52ae9f3b0e4a535a7dd9657" category="list-text"><block ref="7d99df27d52ae9f3b0e4a535a7dd9657" category="inline-link-macro-rx"></block></block>
+  <block id="83c2710c5245e8b15cbca4fbf6b6b0a5" category="list-text">FAS2820 HA 配對可以用纜線連接成三路徑 HA 。</block>
+  <block id="e08be6d156a9bd6c7ea1068dd72146ce" category="paragraph">如需 FAS2820 連線的相關資訊<block ref="44cb6d44583fef757ae54be5d72211f9" category="inline-xref-macro-rx"></block>、請參閱一節。</block>
+  <block id="add37990c28070a718afe0d9c04a615c" category="paragraph">對於 FAS2820 HA 配對、雖然連接至外部機櫃的纜線是單一路徑 HA 、但由於每個控制器的內部連接埠 0b 與其本機擴充器（ IOM12G ）和連接埠 0c 連至其合作夥伴的擴充器、因此 HA 配對組態是多重路徑 HA 。</block>
+  <block id="d722531f8634a5cafc9df78a601a4a6c" category="paragraph">FAS2820 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：</block>
+  <block id="3fe5f9a895c1ba7f8e681c5859c05bb4" category="paragraph">FAS2820 外部 SAS 連接埠：</block>
+  <block id="79b6b2666cc1773a1407b7d8a16dc193" category="image-alt">FAS2820 外部 SAS 連接埠</block>
+  <block id="d9e04c77195d0978dc82c8d293ae8a2c" category="paragraph">FAS2820 HA 配對纜線範例請參閱<block ref="c19123e6031c139d66f534ae4311d605" category="inline-link-macro-rx"></block>一節。</block>
+  <block id="5153e41a4944635718ee4bf1574be7dc" category="section-title">FAS2820 平台採用多重路徑 HA 組態、沒有外部機櫃</block>
+  <block id="f1550c94b34792af4c7a27f3367f5b7f" category="image-alt">FAS2820 多重路徑 HA 、不含外部機櫃</block>
+  <block id="e9c922753c25d9979d7630bdab7e83fe" category="section-title">三路徑 HA 組態中的 FAS2820 平台、不含外部機櫃</block>
+  <block id="439824499df2079293c4db534dff3b28" category="section-title">三路徑 HA 組態中的 FAS2820 平台、具備一個多層架構堆疊</block>
+  <block id="7dceff362ab7e3c2187d103ba7fce438" category="image-alt">FAS2820 三路徑 HA 佈線工作表顯示堆疊 1 的連接埠配對</block>
+  <block id="3a6e3da839d00ede01c4513f563899aa" category="image-alt">FAS2820 三路徑 HA 佈線範例、連接到一個堆疊</block>
+  <block id="2f9e622217b802d735475e6e1e79287d" category="admonition">本節不適用於 FAS2820 或 FAS25XX 系統。</block>
+  <block id="0636959b49a1834e3ec5f35103cf8837" category="sidebar">ASA A70 和 ASA A90 Boot Media Automated</block>
+  <block id="da147f1227d896e3c10a7ccfe8a30bd6" category="sidebar">ASA A70 和 ASA A90 開機媒體手冊</block>
+  <block id="917655eaf5fd8c720cd773aba74bdaf8" category="sidebar">ASA A70 和 ASA A90 IO 模組</block>
+  <block id="7b9a6fdb87cb1f6f211f41d044f49a11" category="sidebar">ASA A1K Boot Media Automated</block>
+  <block id="995c40c124bddbeb82d387a9fcb6e262" category="sidebar">ASA A1K 開機媒體手冊</block>
+  <block id="3a537c99c5b869e844d774557fbcee80" category="sidebar">ASA A1K IO 模組</block>
+  <block id="3006210264711079652e75e697fdde7b" category="sidebar">FAS2820 系統</block>
+  <block id="e9fb835c094e7078b3fdd1712ccae31c" category="sidebar">FAS2820 安裝與設定</block>
+  <block id="6129374f01cd3ebeb12420c58801778c" category="sidebar">FAS2820 維護</block>
+  <block id="bb0a174c5a82de66489299528cf518fe" category="sidebar">FAS2820 開機媒體</block>
+  <block id="b5f3da387d229686fd3cc259cd99b323" category="sidebar">FAS2820 快取模組</block>
+  <block id="1271e815e1d2a4bf736cb807a3b42df6" category="sidebar">FAS2820 機箱</block>
+  <block id="2432fa0f9f02a35df250d771c0865ed4" category="sidebar">FAS2820 控制器</block>
+  <block id="ebd8fde0e8283cea13284995a7fca3a8" category="sidebar">FAS2820 DIMM</block>
+  <block id="7d64c74cf4004ffb9d88f7a2a840dc66" category="sidebar">FAS2820 磁碟機</block>
+  <block id="46fb54c543596cf04a5fcfe487799a87" category="sidebar">FAS2820 NVMEM 電池</block>
+  <block id="2f9958347081d2ce185d76c702380979" category="sidebar">FAS2820 夾層卡</block>
+  <block id="6283d5729bdaa96d13760bf62bbe62f2" category="sidebar">FAS2820 電源供應器</block>
+  <block id="e8a44fb416b30e755ecaf489baacfd39" category="sidebar">FAS2820 即時時鐘電池</block>
 </blocks>

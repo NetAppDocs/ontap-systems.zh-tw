@@ -73,11 +73,6 @@ NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `
 . 等待每個控制器停止並顯示載入器提示。
 
 
-.接下來呢？
-* 如果系統是用作 FabricPool 雲端層的 NetApp StorageGRID 或 ONTAP S3 、請參閱 https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#["正常關機並開啟儲存系統解析指南"]執行此關機程序後的。
-* 如果使用 SSD 、請在執行此關機程序後參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490["SU490 ：（影響：關鍵） SSD 最佳實務做法：如果關機超過兩個月、請避免磁碟機故障和資料遺失的風險"]。
-
-
 
 
 == 選項2：在雙節點MetroCluster 的現象組態中關閉節點

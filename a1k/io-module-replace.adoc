@@ -143,7 +143,9 @@ image:../media/drw_a1k_io_remove_replace_ieops-1382.svg["移除 I/O 模組"]
 
  a| 
 image:../media/icon_round_1.png["編號 1"]
-| I/O CAM 閂鎖 
+ a| 
+I/O CAM 閂鎖
+
 |===
 +
 請務必貼上纜線的標籤、以便知道纜線的來源。
@@ -187,8 +189,7 @@ NOTE: 如果新的I/O模組與故障模組的機型不同、您必須先重新�
 
 . 在載入程式提示字元中、重新啟動節點：_by_
 +
-
-NOTE: 這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
+這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
 
 . 將節點恢復為正常作業： _storage 容錯移轉恢復恢復 -ofnode_node_name_
 . 如果自動恢復已停用、請重新啟用： _storage 容錯移轉修改 -node local -auto-贈 品 true_

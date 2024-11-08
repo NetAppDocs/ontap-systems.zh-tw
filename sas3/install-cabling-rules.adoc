@@ -47,9 +47,9 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 * HA配對組態必須以多重路徑HA或四重路徑HA組態進行纜線連接、但有下列例外：
 +
 ** 具有內部儲存設備的平台不支援四路徑 HA 連線。
-** FAS2800 HA 配對可以用纜線連接成三路徑 HA 。
+** FAS2820 HA 配對可以用纜線連接成三路徑 HA 。
 +
-有關 FAS2800 連線能力的資訊、請參閱 <<三重路徑 HA 連線>> 區段。
+如需 FAS2820 連線的相關資訊<<三重路徑 HA 連線>>、請參閱一節。
 
 ** 具有內部儲存設備的平台可以以單一路徑 HA 組態（從連接埠 0b/0b1 到外部機櫃）進行纜線連接、以支援連線至外部 SAS 磁帶備份裝置（從連接埠 0A ）。
 
@@ -58,7 +58,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 [NOTE]
 ====
-對於 FAS2800 HA 配對、雖然連接至外部機櫃的纜線是單一路徑 HA 、但由於每個控制器的內部連接埠 0b 與其本機擴充器（ IOM12G ）和連接埠 0c 連至其合作夥伴的擴充器、因此 HA 配對組態是多重路徑 HA 。
+對於 FAS2820 HA 配對、雖然連接至外部機櫃的纜線是單一路徑 HA 、但由於每個控制器的內部連接埠 0b 與其本機擴充器（ IOM12G ）和連接埠 0c 連至其合作夥伴的擴充器、因此 HA 配對組態是多重路徑 HA 。
 
 ====
 * 單一控制器組態必須以多重路徑或四重路徑組態進行纜線連接、但有下列例外：
@@ -296,7 +296,7 @@ image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[內部儲存連�
 
 === 三重路徑 HA 連線
 
-FAS2800 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：
+FAS2820 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：
 
 * 每個控制器的內部連接埠 0b 與其本機 IOM12G 及連接埠 0c 與合作夥伴的 IOM12G 之間、都能提供 HA 配對多重路徑 HA 連線。
 * 每個控制器的外部儲存連接埠（ 0A 和 0b1 ）的佈線、可提供 HA 配對三路徑 HA 連線。
@@ -309,16 +309,16 @@ FAS2800 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能�
 
 image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[三重路徑 HA 連線能力]
 
-FAS2800 外部 SAS 連接埠：
+FAS2820 外部 SAS 連接埠：
 
 * 0A 連接埠來自內部 HBA （如同其他具有內部機櫃的平台）。
 * 0b1 連接埠來自內部機櫃（例如其他平台的 0b 連接埠、內建機櫃）。
 * 未使用 0b2 連接埠。已停用。如果連接纜線、就會產生錯誤訊息。
 
 
-image::../media/drw_sas3_ports_on_fas2800_IEOPS-946.svg[FAS2800 外部 SAS 連接埠]
+image::../media/drw_sas3_ports_on_fas2800_IEOPS-946.svg[FAS2820 外部 SAS 連接埠]
 
-您可以在中找到 FAS2800 HA 配對纜線範例 link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例"] 區段。
+FAS2820 HA 配對纜線範例請參閱link:install-cabling-worksheets-examples-fas2600.html["具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例"]一節。
 
 
 

@@ -37,15 +37,8 @@ NVRAM 注意 LED
 
 |===
 +
-
-NOTE: 如果 NVRAM 狀態 LED 閃爍、可能表示控制器模組未正確接管或停止（未認可的資料）。如果合作夥伴控制器模組未成功接管受損的控制器模組、請先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"] 、再繼續執行此程序。
-
-+
-故障控制器模組上 NVRAM 狀態 LED 的一般行為如下：
-
-+
-** 從控制器模組拔下電源、儲存系統處於「等待恢復」狀態、或控制器模組未正確接管或停止（未認可的資料）時、 NVRAM 狀態 LED 會閃爍。
-** 從機箱中移除控制器模組時、 NVRAM 狀態 LED 會閃爍、表示控制器模組未正確接管或停止（未認可的資料）。確認已由合作夥伴控制器模組完全接管控制器模組、或顯示受損控制器模組 `waiting for giveback`。然後、閃爍的 LED 會被忽略（控制器模組可從機箱中移除）。
+** 如果 NV LED 熄滅、請前往下一步。
+** 如果 NV LED 閃爍、請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。
 
 
 . 如果您尚未接地、請正確接地。
@@ -73,7 +66,9 @@ image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[控制器移除圖�
 
  a| 
 image:../media/icon_round_1.png["編號 1"]
-| A 鎖定閂鎖 
+ a| 
+鎖定鎖定
+
 
 
  a| 
@@ -352,14 +347,18 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[取下 NVRAM12 
 |===
 
 
-| image:../media/icon_round_1.png["編號 1"]  a| 
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
 CAM 鎖定按鈕
 
 
 
  a| 
 image:../media/icon_round_2.png["編號 2"]
-| DIMM 鎖定彈片 
+ a| 
+DIMM 鎖定彈片
+
 |===
 . 從受損的控制器模組中移除 NVRAM 模組：
 +
@@ -394,14 +393,8 @@ CAM按鈕會從機箱移出。
 
 NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 
-. 視需要重新設定儲存系統。
-+
-如果您移除收發器（ QSFP 或 SFP ）、請記得在使用光纖纜線時重新安裝。
-
-+
-
-NOTE: 請確定主控台纜線已連接至修復的控制器模組、以便在重新開機時接收主控台訊息。修復後的控制器會從正常運作的控制器接收電力、並在完全裝入機箱後立即開始重新開機。
-
+. 重新安裝纜線管理 ARM （如果已移除）、但請勿將任何纜線重新連接至更換的控制器。
+. 將主控台纜線插入替換控制器模組的主控台連接埠、然後重新連接至筆記型電腦、以便在重新開機時接收主控台訊息。更換的控制器會從正常運作的控制器接收電力、並在完全裝入機箱後立即開始重新開機。
 . 完成控制器模組的重新安裝：
 +
 .. 將控制器模組穩固地推入機箱、直到它與中間板完全接入。
@@ -417,15 +410,21 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 +
 
-NOTE: 如果控制器開機至 Loader 提示字元、請使用命令將其重新開機 `boot_ontap`。
+NOTE: 控制器完全就位後、就會立即開機至 Loader 提示字元。
+
+. 在 Loader 提示字元中、輸入 `show date`以在更換控制器上顯示日期和時間。日期和時間以 GMT 為準。
++
+
+NOTE: 顯示的時間不一定是本地時間、會以 24 小時模式顯示。
+
+. 使用命令設定 GMT 的目前時間 `set time hh:mm:ss`。您可以從合作夥伴節點取得目前的 GMT 、命令為 'date -u'command.
+. 視需要重新設定儲存系統。
++
+如果您移除收發器（ QSFP 或 SFP ）、請記得在使用光纖纜線時重新安裝。
 
 . 將電源線插入電源供應器。
 +
 
 NOTE: 如果您有直流電源、請在控制器模組完全插入機箱後、將電源區塊重新連接至電源供應器。
 
-. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
-. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
-. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
-. 如果您尚未重新安裝纜線管理裝置、請重新安裝控制器。
 
