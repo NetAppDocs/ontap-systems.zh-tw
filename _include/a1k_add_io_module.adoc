@@ -354,21 +354,14 @@ image:../media/icon_round_1.png["編號 1"]
 . 將纜線管理承載器向上旋轉至關閉位置。
 . 從載入程式提示字元： _by_ 重新啟動控制器
 +
-.. 檢查控制器上的 BMC 版本： _ 系統服務處理器 show_
-.. 如有需要、請更新 BMC 韌體： _ 系統服務處理器映像更新 _
-.. 重新開機節點： _ 再見 _
-+
-
-NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
+這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 
 +
 
 NOTE: 如果您在重新開機期間遇到問題、請參閱 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308["Burt 1494308 - 在 I/O 模組更換期間、可能會觸發環境關機"]
 
-
-
-. 從合作夥伴控制器中歸還控制器： _storage 容錯移轉恢復恢復 -ofnode_node_name_
-. 停用時啟用自動恢復： _storage 容錯移轉修改 -node local -auto-贈 品 true_
+. 從合作夥伴控制器中歸還控制器：「儲存容錯移轉恢復恢復 - ofnode_node_name 」
+. 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 . 如果您新增：
 +
 [cols="1,2"]
