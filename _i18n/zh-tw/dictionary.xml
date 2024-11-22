@@ -2227,13 +2227,8 @@
   <block id="646c0c0a2d342d0efa63a4e7c560611e" category="list-text">如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」</block>
   <block id="05648a23fc430a3dcc4fb4c1fbb040cd" category="list-text">如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。</block>
   <block id="d6c7a664e3819be9a0869782e685c75b" category="list-text">對控制器B重複這些步驟</block>
-  <block id="cebb0168d5bfd94a91f0da51501ba6b8" category="list-text">如果您：</block>
-  <block id="e818b574f8a890f6c21405d9164bb6ef" category="cell">取代...</block>
-  <block id="d6737fd4fc838900efec68220d9b62d5" category="paragraph">NIC I/O模組的連接埠數量相同</block>
   <block id="c5cb03fb8ac84e8ed0867902373368c5" category="paragraph">當控制器模組關閉時、LIF會自動移轉。</block>
-  <block id="5b4da5fe899903c4fb7ea38cdcd59059" category="paragraph">NIC I/O模組、連接埠較少</block>
   <block id="3dca69382eebe0e25d26be588bb3bb7c" category="inline-link">移轉LIF</block>
-  <block id="f83c48dd124994c4062d124a835da954" category="paragraph">具有儲存I/O模組的NIC I/O模組</block>
   <block id="1270e01f5b82a307cd267071e45adc4f" category="list-text">關閉控制器A：</block>
   <block id="fd08cd08ec85105086c22d49a195dfd3" category="list-text">拔下目標I/O模組上的任何纜線。</block>
   <block id="658f167c4900ed24167db8a2c8ec0dae" category="list-text">將I/O模組安裝至目標插槽：</block>
@@ -5172,7 +5167,6 @@
   <block id="a31ab93f41516026d249aceb633bccc3" category="doc">新增I/O模組- FAS9500</block>
   <block id="4d3b1425bbd62943a546a9f98dc3b7ef" category="list-text">從合作夥伴節點回饋節點。將容錯移轉還原為-ofnode_node_name'</block>
   <block id="6f8193ca6bfb281db32afbcc9e285f79" category="inline-link">熱新增SAS機櫃</block>
-  <block id="c964f542415e7614484e4edf970ab7a8" category="paragraph">將受影響的LIF永久重新指派至不同的主連接埠。請參閱<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 如需使用System Manager永久移動生命期的相關資訊、</block>
   <block id="6d351dbc4a7187d4512a1c505c200687" category="paragraph">使用System Manager將lifs永久移轉至不同的主連接埠、如所述<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block>。</block>
   <block id="f3ca7c7565b074fbf5e12ffb59930d2f" category="doc">將故障零件退回NetApp - FAS9500</block>
   <block id="4ea7136415cb99f780a4177ea7ada9f4" category="doc">還原並驗證系統組態- FAS9500</block>
@@ -5658,7 +5652,6 @@
   <block id="6f189db9f1b1dfc1be838de48c805168" category="video-title">動畫-設定NVMe磁碟機磁碟櫃ID</block>
   <block id="1f583998630e94806bf5b9e059227dd4" category="paragraph"><block ref="1f583998630e94806bf5b9e059227dd4" category="inline-link-rx"></block></block>
   <block id="9b0500b65158795cfc5abb2becae4e80" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 找出纜線並識別其用途。</block>
-  <block id="741ade379895992f2a574e8e60de1571" category="section-title">步驟2：新增I/O模組</block>
   <block id="55f1569cdcfb82612fcf293f23db4f6f" category="list-text">請檢查<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。</block>
   <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">如果有多個插槽可用、請檢查中的插槽優先順序<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 並使用適用於您I/O模組的最佳工具。</block>
   <block id="757216293ea1da04339a2c9b8eaa2641" category="admonition">tar.gz檔案必須放在最少4GB的fat32格式分割區上。儘管Windows內建工具（例如磁碟零件）的容量可達2TB、但卻無法格式化大於32GB的FAT32分割區。</block>
@@ -7969,14 +7962,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="61612a74be5170dd342eb619d607d9a0" category="paragraph">下列 AutoSupport 命令會禁止自動建立案例兩小時：<block ref="6cf51b10a85b7bdc2a6698400ee841b7" prefix=" " category="inline-code"></block></block>
   <block id="ab859514fa976f71299cd0d5366c702d" category="paragraph">從健全的控制器停止或接管受損的控制器：<block ref="64d2ac6bbd59fb854ec2bed7b2dbe259" prefix=" " category="inline-code"></block></block>
   <block id="fd9366185c7040d2814e95fefcce2264" category="list-text">如果啟用 AutoSupport 、請叫用 AutoSupport 命令來抑制自動建立個案：<block ref="fbcb7868c4849064439910664677cb60" prefix=" " category="inline-code"></block></block>
-  <block id="9f496d341d66d79304a55547445c00a2" category="doc">選項 1 ：將 I/O 模組新增至具有空插槽的儲存系統</block>
-  <block id="c4b17ef982ae644ec1d2b995fa1534a8" category="paragraph">您可以將 I/O 模組新增至儲存系統、方法是將新的 I/O 模組新增至具有空插槽的儲存系統、或是在完全填入的儲存系統中以新的 I/O 模組取代 I/O 模組。</block>
   <block id="656450ae55843844fdfca7b44cbc5678" category="list-text">檢查<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 以確定新的 I/O 模組與您執行的儲存系統和 ONTAP 版本相容。</block>
-  <block id="9808a3e490e0cd81c2fab70cb489f958" category="paragraph">您可以將 I/O 模組新增至儲存系統的空模組插槽。</block>
   <block id="78263f5226743bdd204519f0e9bd22d2" category="list-text">向下轉動纜線管理托盤、方法是拉動纜線管理托盤內部的按鈕、然後向下旋轉。</block>
   <block id="72e0b58a2d456f6ab89ca8d83859264d" category="list-text">從載體中卸下目標插槽空白模組：</block>
   <block id="abca9f9a7ffb3d4afa15f947303b1c4c" category="admonition">下圖顯示移除水平和垂直 I/O 模組。一般而言、您只會移除一個 I/O 模組。</block>
-  <block id="b0fe3ad00c115ca25f49fb3d48769b0b" category="image-alt">移除 AFF A1K I/O 模組</block>
   <block id="243dd5ebf726e6d6a9762938953c1a6a" category="cell">CAM 鎖定按鈕</block>
   <block id="3939b3c4c6e868d0268fd9a75f3b3805" category="list-text">按下目標插槽中遮光模組上的凸輪鎖扣。</block>
   <block id="c053808d9acb931bed74754155a6e86f" category="list-text">向下轉動凸輪栓鎖、直到卡入定位為止。對於水平模組、請將 CAM 儘量遠離模組。</block>
@@ -7984,24 +7973,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f47dbf934d7d51340a5c58741715b2d5" category="list-text">將 I/O 模組與機箱插槽開口的邊緣對齊。</block>
   <block id="b3fe1b3e8557371fcb101f90a1a32fd0" category="list-text">將模組一路滑入機箱中的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。</block>
   <block id="be9dc0332662b913cef88d5dcde78acd" category="list-text">連接 I/O 模組纜線。</block>
-  <block id="040f840d8fdf859359eb680be25e8992" category="paragraph">如果 I/O 模組是 NIC 、請將模組連接至資料交換器。</block>
-  <block id="3072040b83655039de255184380a9271" category="paragraph">如果 I/O 模組是儲存模組、請將其連接至 NS224 機櫃。</block>
   <block id="9056e6b74b2e2b546abd76b6e7408f4d" category="list-text">將纜線管理承載器向上旋轉至關閉位置。</block>
-  <block id="a0a7e707ad35c210d4582fab4069c223" category="list-text">從合作夥伴控制器中歸還控制器： _storage 容錯移轉恢復恢復 -ofnode_node_name_</block>
   <block id="6c91356d53993ce0d1f0c1af28c7a48b" category="list-text">如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案<block ref="9ac424c0d7b432975df36a19daf50c9c" prefix=" " category="inline-code"></block> 。</block>
-  <block id="026bf593d893e27d6f090dc74e403a75" category="section-title">選項 2 ：在沒有空插槽的儲存系統中新增 I/O 模組</block>
-  <block id="a06ddc697cce62226c19e353e0f2eeba" category="paragraph">您可以移除現有的 I/O 模組、並以不同的 I/O 模組來更換、以在完全填入的系統中變更 I/O 插槽中的 I/O 模組。</block>
-  <block id="47ab52c1da07a0c00e2b876e54778a95" category="paragraph">將選取的生命由永久重新指派至不同的主連接埠。如需使用 System Manager 永久移動生命的相關資訊、請參閱<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
-  <block id="8f6ea8b644b16793208bc55e27bc7669" category="section-title">步驟 2 ：更換 I/O 模組</block>
-  <block id="900056c17f40fb1a034e134a72eca912" category="image-alt">移除 AFF A1K I/O 模組</block>
   <block id="8181d3a6b1640b5868632cfe5589a05d" category="list-text">按下 CAM LATCH 按鈕。</block>
   <block id="0cfc07520b64c5be4e64fac899e6eaa9" category="list-text">將 I/O 模組安裝至機箱中的目標插槽：</block>
   <block id="7b71c8c5341c95139930e1f1748956d7" category="list-text">將模組與機箱插槽開口的邊緣對齊。</block>
   <block id="0169e44348295d5766b174aa4c296a62" category="list-text">重複執行移除和安裝步驟、以更換控制器的其他模組。</block>
   <block id="7c99497119e4bb81fd50dbd906dfde72" category="list-text">從載入程式提示字元： _by_ 重新啟動控制器</block>
-  <block id="db89594b0a0cbb483395a2641220f1fe" category="list-text">停用時啟用自動恢復： _storage 容錯移轉修改 -node local -auto-贈 品 true_</block>
-  <block id="4e0b6dc04aaa383038bc23130a17cb25" category="cell">如果 I/O 模組為 ..</block>
-  <block id="09c2cf2531a14305542e6aff93e691c5" category="paragraph">NIC 模組</block>
   <block id="a286fff38dd07b679c8ce3d88b6f2962" category="inline-link-macro">關閉受損的控制器</block>
   <block id="4332aa8c798bac1ec6c0f4c83e0df305" category="list-text">驗證類型是否<block ref="c759882cd4e7fcd95f15b0df0ce7f51c" prefix=" " category="inline-code"></block> 顯示<block ref="c6b9507c26062233f2341cb90db60eaa" prefix=" " category="inline-code"></block>，然後手動備份 OKM 資訊。</block>
   <block id="66e5f5f877412d7578e6bec4d8f933b5" category="list-text">在功能受損的控制器上、當您看到時、請按下 _Y_<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block></block>
@@ -8010,7 +7988,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e9636d3f8e24f08b43c5d1ed71e065ea" category="list-text">在功能受損的控制器上，當您看到時，請按 _y_<block ref="396e369cf75815ba643925818d3ec37e" prefix=" " category="inline-code"></block>。</block>
   <block id="976af5aa217f6c1b1dbf16e0ed0a4bde" category="list-text">在功能受損的控制器上、當系統提示您重新啟動功能受損的控制器時、請按 _y_ 、然後按下 _Ctrl-c_ 進入開機功能表。</block>
   <block id="29d550bee6b8b18ca38f7642778d8dad" category="inline-link-macro">還原關鍵管理程式</block>
-  <block id="88045ffbfc0d9ef09cd470c545082621" category="list-text">如果系統不使用加密功能、請選擇 _ 選項 1 正常開機 _ 、否則請前往 <block ref="f2abf47fd75193a34b6b143e08f5b248" category="inline-link-macro-rx"></block>。</block>
   <block id="55f7c3a98a49a2f2d96cb2d21b95d947" category="list-text">使用 _storage 容錯移轉恢復 -fromnode local_ 命令將控制器歸還。</block>
   <block id="4c6b53c8ce9f5900a70a994f21a32c6b" category="list-text">如果您使用 _storage 容錯移轉 modify -node local -auto-贈 品 true_ 命令停用、請還原自動恢復。</block>
   <block id="85ef34c14131c3f446c3d96330659ce7" category="list-text">如果啟用 AutoSupport 、請使用 _system 節點 AutoSupport 呼叫 -node* -type all -message MAIS=end_ 命令、還原 / 恢復自動建立個案。</block>
@@ -8233,23 +8210,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="05dceffd3c31a9d53e9b23ec48d1bf77" category="paragraph">如果受損節點使用的是需要標準（節點鎖定）授權的 ONTAP 功能、則必須為節點安裝新授權。對於具有標準授權的功能、叢集中的每個節點都應該擁有自己的功能金鑰。</block>
   <block id="d498932449bd1680afbe5aad136fb7e3" category="paragraph">在您安裝授權金鑰之前、需要標準授權的功能仍可繼續提供給節點使用。不過、如果節點是叢集中唯一擁有該功能授權的節點、則不允許對該功能進行任何組態變更。此外、在節點上使用未獲授權的功能可能會使您不遵守授權合約、因此您應該盡快在節點上安裝替換授權金鑰或金鑰。</block>
   <block id="3e508eeaedfdae09fad57a764b5e2b73" category="section-title">步驟 1 ：關閉受損的控制器模組</block>
-  <block id="6f13230d5681e1c88b50f5ecbce62637" category="paragraph">使用下列選項之一關閉或接管受損的控制器模組。</block>
   <block id="5d053cb0e109f37b3c9cfa31e957c2bc" category="list-text">將控制器模組從機箱中拉出約 3 英吋、以釋放電力。</block>
-  <block id="d9d1de25706aa51c5367e4dafd60898e" category="list-text">從機箱中卸下目標插槽擋板模組：</block>
-  <block id="192d3ce6854b267e65d46222f8f3a24f" category="image-alt">卸下 I/O 模組</block>
-  <block id="75fa26086844dfcbf14f35086518217a" category="list-text">卸下消隱模組。</block>
-  <block id="2b6adb50592127273fdb4bb2b68918d5" category="list-text">將 I/O 模組與控制器模組插槽開口邊緣對齊。</block>
-  <block id="97366bfb1dcb5b97156c347c8ad89d9a" category="list-text">將模組一路輕輕滑入插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。</block>
   <block id="6181ce929bc404494408989e6b8a9b52" category="paragraph">若要更換 I/O 模組、請在控制器模組中找到該模組、然後依照特定步驟順序進行。</block>
   <block id="8a9a8a0db84d9dd59b0f006930b47193" category="list-text">按下 CAM LATCH 按鈕。</block>
-  <block id="422e2aa4ec97de509f54db9d23618f37" category="list-text">將手指連入凸輪桿開口處、然後將模組拉出機箱、即可將模組從機箱中取出。</block>
-  <block id="ce8b63d25565a610d1f9564150f85914" category="list-text">將模組一路滑入機箱中的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。</block>
-  <block id="fb2068c184d4dbf1c0e520d9e9b173b2" category="list-text">重複執行移除和安裝步驟、以更換控制器模組的其他模組。</block>
   <block id="ed5714a7b9709284c56117bd6dc4e081" category="list-text">將纜線管理承載器旋轉至鎖定位置。</block>
-  <block id="268bccb6c35b538d967467b5d2935b49" category="list-text">從載入程式提示字元： _by_ 重新啟動控制器模組</block>
-  <block id="253b24d74d0517388c6e5b078713c86a" category="inline-link">Burt 1494308 - 在 I/O 模組更換期間、可能會觸發環境關機</block>
-  <block id="fc5ee1a4ca46ff0160eeada84fe673fc" category="admonition">如果您在重新開機期間遇到問題、請參閱<block ref="5f4b19e33781d4df6c59a005be26e607" category="inline-link-rx"></block></block>
-  <block id="cfedf0b233356261eb909e7add24bded" category="list-text">從合作夥伴控制器模組中退回控制器模組。儲存設備容錯移轉恢復恢復 -ofnode_node_name_</block>
   <block id="43d656a7b2fb92dbbe5e13b8f00a00b8" category="list-text">按下系統管理 CAM 按鈕。CAM 控制桿會從機箱移出。</block>
   <block id="f0d27e50eb41ec006d18a96b5254063e" category="list-text">向下轉動 CAM 拉桿、然後從控制器模組中移除 System Management 模組。</block>
   <block id="54a53a09772d42f23357a9952d2d46a1" category="section-title">步驟2：將開機映像傳輸到開機媒體</block>
@@ -8848,7 +8812,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">系統AFF</block>
   <block id="6476573ba5b973ad8ea01c57f5b30267" category="sidebar">系統ASA</block>
   <block id="9aaba65702056e024efc0836758c1538" category="sidebar">完成熱新增</block>
-  <block id="b1cd69e899e8ab2e8b0c559899a3f2d7" category="admonition">下圖顯示移除水平和垂直 I/O 模組。一般而言、您只會移除一個 I/O 模組。</block>
   <block id="3e6277588162255770fd3384bad09d6d" category="list-text">在控制器的載入器提示字元中、啟動控制器、並在系統 ID 不相符而提示覆寫系統 ID 時輸入 _y_ 。</block>
   <block id="9daabece8db7521a7882f63ebd76a891" category="image-alt">取下上方有釋放按鈕的磁碟機</block>
   <block id="e0bc24820711c466532ba2cb67ababd9" category="image-alt">卸下中間有釋放按鈕的磁碟機</block>
@@ -9088,7 +9051,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0e6eb93881093798ffaf4eef324aae16" category="list-text">按照中所述，安裝和連接 NS224 機櫃 <block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>。</block>
   <block id="f399facc82d214513205adcdfed1e55f" category="image-alt">安裝磁碟機</block>
   <block id="f20a0219f10b0070c92efe4269486629" category="list-text">如果您安裝了儲存 I/O 模組、請依照中所述<block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>、安裝 NS224 機櫃並連接纜線。</block>
-  <block id="86e8e2badf42560bb0b1ed3bac3933fa" category="paragraph">按照中所述，安裝和連接 NS224 機櫃 <block ref="4dfda7c2f93914990922f65bd50f90b3" category="inline-link-macro-rx"></block>。</block>
   <block id="b9c98500ab9d006e0d9fd3d1c95f7904" category="paragraph">如需更多纜線資訊<block ref="b8ff88c1a2e9444f28ec1504689e0040" category="inline-link-macro-rx"></block>、請參閱。</block>
   <block id="ef83cb60cd5ea6118e6d106efa30f927" category="image-alt">舉升重量注意事項</block>
   <block id="f3badb2cde47b97db55936f633e8bbf1" category="image-alt">雙節點無交換器叢集複合纜線</block>
@@ -9833,7 +9795,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c285ffddf1786cd1a14a26bcf9b74c7d" category="paragraph"><block ref="061047859ec1e213bd771fe5350bda2c" prefix="" category="inline-code"></block></block>
   <block id="811ae15d713f8c846d0516e053f895b2" category="list-text">在 Loader 設定本機叢集連接埠並從合作夥伴節點執行時、監控開機媒體還原程序<block ref="83a4445bcfef2bd179eaffaabe3b3c20" prefix=" " category="inline-code"></block>。</block>
   <block id="8f616ca67798afd132662e15fc4caa28" category="paragraph">當 netboot 正在執行時、<block ref="f6715e6f2a651bfc51d27566b1be5385" prefix=" " category="inline-code"></block>會顯示訊息。</block>
-  <block id="ab8b7433e2ad2aa82ba07b42b4cd465d" category="list-text">根據加密方法、選取符合單一節點組態的選項：</block>
   <block id="39cb6e7651585d511fc148af8198837f" category="open-title">無加密</block>
   <block id="aada4d2dac8a2a5bd04bf211104ff2c5" category="paragraph">如果未偵測到加密、則開機媒體還原程序會在不需要金鑰管理的情況下繼續進行。</block>
   <block id="69c50e084d31ca90079f6b8b4409607b" category="paragraph">從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。</block>
@@ -10190,7 +10151,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">檢查加密金鑰支援與狀態 - FAS9500</block>
   <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">還原加密 - FAS9500</block>
   <block id="bd5c047c4a41e95a8a9424888875e56a" category="list-text">將 I/O 模組連接至指定的裝置。</block>
-  <block id="2d8241a8fe54414b6494b29d26d8b251" category="list-text">如果您使用命令停用自動恢復功能、請從健全的節點還原<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block>該功能。</block>
   <block id="9d462bd05672844aeab0d3d5d323d66a" category="list-text">重新安裝控制器並重新連接控制器模組的電源：</block>
   <block id="4d872659b015ad414d5e68440a7ddfd6" category="paragraph">一旦控制器就位並恢復電源、控制器就會立即開始開機。</block>
   <block id="6f3fa8086df2fa20b3e903512f693396" category="list-text">將受損的控制器歸還其儲存設備、使其恢復正常運作：</block>
@@ -10370,9 +10330,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="09109aaca603d8ac1da46aa588c46f63" category="paragraph">NIC 對 NIC （不同的連接埠數量）</block>
   <block id="4e7b2ae169cb37276347e7c88d211db4" category="paragraph">將選取的生命由永久重新指派至不同的主連接埠。如需詳細資訊、請參閱<block ref="8a81e44d8701c7e0abd4b6ad328792f0" category="inline-link-rx"></block> 。</block>
   <block id="0c3f64052572f9d13d9b078656a055e4" category="paragraph">NIC 至儲存 I/O 模組</block>
-  <block id="deaf42dafc1e4522c0ccf86ad58f237e" category="list-text">從合作夥伴控制器中歸還控制器：「儲存容錯移轉恢復恢復 - ofnode_node_name 」</block>
-  <block id="c1d0761e549ef1ce873a404f8d41a2d5" category="list-text">從 Loader 提示符下重新引導控制器：<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block></block>
-  <block id="5d831aef00c06eb087aebfb790f041b7" category="section-title">步驟 2 ：新增 I/O 模組</block>
   <block id="68c06f8f4688078ddfe1ceedef798cae" category="list-text">從合作夥伴控制器中退回控制器：</block>
   <block id="523f5a38bba8d64b2af1cdee174a06cc" category="paragraph"><block ref="49c908925c3b8a3554612823f81c8964" prefix="" category="inline-code"></block></block>
   <block id="b98036ad0a9b610670da83fe762dadb5" category="list-text">如果您使用下列命令停用自動恢復功能，請從健全的節點還原該功能：</block>
@@ -10392,4 +10349,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cac74c301a508cf350f8f41a7de866a0" category="paragraph">當 ASA A1K 儲存系統有可用的空插槽，或是所有插槽都已滿時，您可以將 I/O 模組新增至該儲存系統。</block>
   <block id="94aa992895c11cf963b2b749b84aa267" category="paragraph">當有可用的空插槽或所有插槽均已完全插滿時，您可以將 I/O 模組新增至 FAS70 和 FAS90 儲存系統。</block>
   <block id="bc049e4428d592b69605104cc85d56bc" category="section-title">步驟 2 ：新增 I/O 模組</block>
+  <block id="a6448c631c301c525a61c500fdf8e46a" category="list-text">根據加密方法，選取符合您系統組態的選項：</block>
+  <block id="92ba658b9a66d0825f0f084b7da309b7" category="list-text">如果系統不使用加密，請選擇 _ 選項 1 正常開機 _ ，否則請前往<block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block>。</block>
 </blocks>
