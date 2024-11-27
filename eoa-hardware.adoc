@@ -13,6 +13,8 @@ summary: 瞭解不再支援的舊版硬體。
 [role="lead"]
 從指定版本的 ONTAP 開始、不再支援下列系統、機櫃和交換器。
 
+如需目前不受支援的硬體，請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+
 
 
 == ONTAP 硬體系統
@@ -52,7 +54,7 @@ ONTAP 9.12.1
 |===
 
 
-== 機櫃模組
+== 磁碟櫃
 
 [cols="2*"]
 |===
@@ -60,7 +62,12 @@ ONTAP 9.12.1
 
 
  a| 
-IOM 6 模組
+IOM6 6Gb/s SAS 模組，用於：
+
+* DS2246
+* DS4246
+* DS4486
+
 | ONTAP 9.16.1. 
 |===
 

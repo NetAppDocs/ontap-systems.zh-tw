@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-如果儲存系統有空插槽，請將新的 I/O 模組安裝到其中一個可用插槽中。如果所有插槽都已佔用，請移除現有的 I/O 模組以騰出空間，然後安裝新的 I/O 模組。
+如果儲存系統有可用的插槽，請將新的 I/O 模組安裝到其中一個可用的插槽中。如果所有插槽都已佔用，請移除現有的 I/O 模組以騰出空間，然後安裝新的 I/O 模組。
 
 .開始之前
 * 檢查 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以確定新的 I/O 模組與您執行的儲存系統和 ONTAP 版本相容。
@@ -12,9 +12,9 @@
 
 [role="tabbed-block"]
 ====
-.將 I/O 模組新增至空插槽
+.將 I/O 模組新增至可用的插槽
 --
-您可以在具有可用空插槽的儲存系統中新增 I/O 模組。
+您可以在具有可用插槽的儲存系統中新增 I/O 模組。
 
 .步驟
 . 如果您尚未接地、請正確接地。
@@ -38,21 +38,24 @@
 NOTE: 請確定所有未使用的I/O插槽均已安裝空白、以避免可能的散熱問題。
 
 . 將纜線管理承載器向上旋轉至關閉位置。
-. 從載入程式提示字元_by_重新啟動控制器
+. 在 Loader 提示字元中，重新啟動節點：
++
+`bye`
+
 +
 
-NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
+NOTE: 這會重新初始化 I/O 模組和其他元件，然後重新啟動節點。
 
 . 從合作夥伴控制器中退回控制器：
 +
 `storage failover giveback -ofnode target_node_name`
 
 . 對控制器B重複這些步驟
-. 如果您使用下列命令停用自動恢復功能，請從健全的節點還原該功能：
+. 如果您停用自動恢復功能，請從健全的節點還原：
 +
-`storage failover modify -node local -auto-giveback true`
+`storage failover modify -node local -auto-giveback _true_`
 
-. 如果啟用 AutoSupport ，請使用下列命令還原自動建立案例：
+. 如果啟用 AutoSupport 、請還原自動建立案例：
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 

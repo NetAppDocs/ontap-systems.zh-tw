@@ -1,0 +1,28 @@
+= 
+:allow-uri-read: 
+
+
+更換I/O模組之後、您必須重新啟動控制器模組。
+
+.步驟
+. 在 Loader 提示字元中，重新啟動節點：
++
+`bye`
+
++
+
+NOTE: 這會重新初始化 I/O 模組和其他元件，然後重新啟動節點。
+
+. 從合作夥伴控制器中退回控制器：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 如果您停用自動恢復功能，請從健全的節點還原：
++
+`storage failover modify -node local -auto-giveback _true_`
+
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
