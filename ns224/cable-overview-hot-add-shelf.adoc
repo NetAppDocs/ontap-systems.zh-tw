@@ -24,6 +24,7 @@ summary: 每個要熱新增的 NS224 機櫃都要連接纜線、以便每個機�
 
 == 關於這項工作
 
+* 此程序僅適用於直接附加儲存設備。若要檢視交換器附加儲存設備的說明，請檢視我們的link:cable-as-switch-attached.html["交換器連接纜線指南"]。
 * 熟悉正確的纜線連接器方向、以及 NS224 NSM100 機櫃模組上連接埠的位置和標籤。
 +
 ** 插入纜線時、連接器拉片朝上。
@@ -38,14 +39,29 @@ image::../media/oie_cable_pull_tab_up.png[插入纜線時、接頭拉片朝上]
 
 ** 您可以使用下圖來協助實體識別機櫃 NSM100 連接埠、 e0a 和 e0b 。
 +
-NS224 機櫃包含兩個 NSM100 模組。頂部模組插入插槽 A （ NSM A ）、底部模組則插入插槽 B （ NSM B ）。
-
-+
-每個 NSM100 模組包含 2 個 100GbE QSFP28 連接埠： e0a 和 e0b 。
-
+[role="tabbed-block"]
+====
+.NSM100 模組
+--
+*** NS224 機櫃包含兩個 NSM100 模組。頂部模組插入插槽 A （ NSM A ）、底部模組則插入插槽 B （ NSM B ）。
+*** 每個 NSM100 模組包含 2 個 100GbE QSFP28 連接埠： e0a 和 e0b 。
 +
 image::../media/drw_ns224_back_ports.png[NS224 NSM100 模組連接埠 e0a 和 e0b 的位置]
 
+
+
+--
+.NSM100B 模組
+--
+*** NS224 機櫃包含兩個 NSM100B 模組。頂部模組插入插槽 A （ NSM A ）、底部模組則插入插槽 B （ NSM B ）。
+*** 每個 NSM100B 模組均包含 2 個 100GbE CX6/DX 連接埠： e1a 和 e1b 。
++
+image::../media/drw_ns224_nsmb_back_ports_ieops-2006.svg[NS224 NSM100B 模組連接埠 e0a 和 e0b 的位置]
+
+
+
+--
+====
 
 
 * 連接好熱新增的機櫃之後ONTAP 、即可識別出機櫃：

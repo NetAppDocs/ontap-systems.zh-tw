@@ -2,213 +2,74 @@
 :allow-uri-read: 
 
 
-[cols="2*"]
-|===
-| 平台 | 可用的開始 
-
-
- a| 
-https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA r2 系統"]
-
-* ASA A1K
-* ASA A70
-* ASA A90
-
- a| 
-ONTAP 9.16.0.
-
-
-
- a| 
-https://www.netapp.com/data-storage/fas/["FAS70 和 FAS90"]
- a| 
-ONTAP 9.15.1.1
-
-
-
- a| 
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A1K"]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A70"]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A90"]
-
- a| 
-ONTAP 9.15.1.1
-
-
-
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C250"]
- a| 
-ONTAP 9.13.1P1
-
-
-
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C400"]
- a| 
-ONTAP 9.13.1P1
-
-
-
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C800"]
- a| 
-ONTAP 9.13.1P1
-
-
-
- a| 
-https://hwu.netapp.com/ProductSpecs/Index["FAS2820"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A150"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A250"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A400"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A900"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["C250 AFF"]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["C400 AFF"]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["C800 AFF"]
-
- a| 
-ONTAP 9.12.1P1
-
-ONTAP 9.13.1 GA 與更新版本的 ONTAP 版本
-
-[NOTE]
+[role="tabbed-block"]
 ====
-ONTAP 9.13.1 RC1 不支援這些平台。
+.系統AFF
+--
+AFF A 系列和 C 系列機型是專為虛擬化環境所打造的強大橫向擴充平台，可在 NetApp ONTAP 組態中部署為一種不受影響的系統或高效能層級。link:https:://www.netapp.com/data-storage/all-flash-san-storage-array["深入瞭解 AFF 系統"]。
 
+.AFF A20 、 AFF A30 、 AFF A50
+從 ONTAP 9.16.1 開始提供
+
+.AFF C30 、 AFF C60
+從 ONTAP 9.16.1 開始提供
+
+.AFF A1K 、 AFF A70 和 AFF A90
+從 ONTAP 9.15.1 開始提供
+
+.解答150 AFF
+從 ONTAP 9.13.1 ， ONTAP 9.12.1P1 ， ONTAP 9.11.1P8 ， ONTAP 9.10.1P12 開始提供
+
+.解答900 AFF
+從 ONTAP 9.10.1 開始提供
+
+.AFF A250 和 AFF A800
+從 ONTAP 9.8 開始提供
+
+.解答400 AFF
+從 ONTAP 9.7 開始提供
+
+.AFF C250 、 AFF C400 、 AFF C800
+自 ONTAP 9.12.1P1 ， ONTAP 9.13.1 GA 開始提供
+
+--
+.ASA r2 系統
+--
+ASA R2 系統提供統一化的硬體與軟體解決方案，可針對僅限 SAN 的客戶需求，提供簡化的體驗。link:https:://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["深入瞭解 ASA R2 系統"]。
+
+.ASA A1K 、 ASA A70 、 ASA A90
+從 ONTAP 9.16.0 開始提供
+
+--
+.系統ASA
+--
+ASA A 系列和 C 系列機型提供簡化且專屬的 SAN 體驗，可為企業關鍵任務資料庫及其他使用 FCP 或 iSCSI 傳輸協定的 SAN 工作負載提供持續的資料可用度。link:https:://www.netapp.com/data-storage/all-flash-san-storage-array["深入瞭解 ASA 系統"]。
+
+.ASA A150 、 ASA A250 、 ASA A400 、 ASA A900
+從 ONTAP 9.13.1 開始提供
+
+.ASA C250 ， C400 ， C800
+從 ONTAP 9.13.1P1 開始提供
+
+--
+.系統FAS
+--
+FAS 系統提供高效率且安全的次要儲存設備，這是分層，備份和災難恢復的終極解決方案。link:https:://www.netapp.com/data-storage/fas/["深入瞭解 FAS 系統"]。
+
+.FAS70 和 FAS90
+從 ONTAP 9.15.1 開始提供
+
+.FAS9500
+從 ONTAP 9.11.1 ， ONTAP 9.10.1P3 開始提供
+
+.FAS8300 和 FAS700
+從 ONTAP 9.7 開始提供
+
+.FAS2820
+從 ONTAP 9.13.1 開始提供
+
+.FAS2700
+從 ONTAP 9.13.1 開始提供
+
+--
 ====
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["解答150 AFF"]
-
-[NOTE]
-====
-請勿嘗試使用不支援的 ONTAP 版本來安裝或開機 AFF A150 儲存系統。如果您嘗試使用不受支援的 ONTAP 版本來安裝或開機系統、 ONTAP 將允許安裝或開機（ ONTAP 不會封鎖嘗試）。結果是您的 AFF A150 儲存系統將成為 FAS2750 儲存系統。
-
-==== a| 
-ONTAP 9.13.1 及更新版本的 ONTAP 版本
-
-ONTAP 9.12.1P1
-
-ONTAP 9.11.1P8
-
-ONTAP 9.10.1P12
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS9500"]
- a| 
-零點9.11.1. ONTAP
-
-ONTAP 9.10.1P3
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["解答900 AFF"]
- a| 
-零點9.10.1 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["VA250/AFF F4A250 AFF ASA"]
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS500f"]
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["解答800 AFF ASA"]
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8300"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8700"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["解答400 AFF"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["VA220 AFF ASA"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["部分A700 AFF ASA"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7623-ds-3989.pdf["C190 AFF"^]
- a| 
-部分9.6 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["解答320 AFF"]
- a| 
-部分9.6 ONTAP
-
-|===

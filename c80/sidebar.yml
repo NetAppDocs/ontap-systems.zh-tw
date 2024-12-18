@@ -1,0 +1,100 @@
+---
+section: c80
+title: AFF C80 系統
+entries:
+- title: 安裝與設定
+  pdf-filename: C80 安裝與設定
+  entries:
+  - title: 安裝工作流程
+    url: "/c80/install-overview.html"
+  - title: 檢閱要求
+    url: "/c80/install-requirements.html"
+  - title: 準備安裝
+    url: "/c80/install-prepare.html"
+  - title: 安裝硬體
+    url: "/c80/install-hardware.html"
+  - title: 纜線硬體
+    url: "/c80/install-cable.html"
+  - title: 開啟系統電源
+    url: "/c80/install-power-hardware.html"
+  - title: 完成系統設定
+    url: "/c80/install-complete.html"
+- title: 維護
+  pdf-filename: C80 維護
+  entries:
+  - title: 維護綜覽
+    url: "/c80/maintain-overview.html"
+  - title: 開機媒體
+    pdf-filename: C80 開機媒體
+    entries:
+    - title: 開機媒體取代工作流程
+      url: "/c80/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/c80/bootmedia-replace-requirements.html"
+    - title: 檢查加密金鑰
+      url: "/c80/bootmedia-encryption-preshutdown-checks.html"
+    - title: 關閉受損的控制器
+      url: "/c80/bootmedia-shutdown.html"
+    - title: 更換開機媒體
+      url: "/c80/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/c80/bootmedia-recovery-image-boot.html"
+    - title: 還原加密
+      url: "/c80/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/c80/bootmedia-complete-rma.html"
+  - title: 機箱
+    pdf-filename: C80 機箱
+    entries:
+    - title: 機箱更換工作流程
+      url: "/c80/chassis-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/c80/chassis-replace-requirements.html"
+    - title: 關閉控制器
+      url: "/c80/chassis-replace-shutdown.html"
+    - title: 更換機箱
+      url: "/c80/chassis-replace-move-hardware.html"
+    - title: 完成機箱更換
+      url: "/c80/chassis-replace-complete-system-restore-rma.html"
+  - title: 控制器
+    pdf-filename: C80控制器模組
+    entries:
+    - title: 控制器更換工作流程
+      url: "/c80/controller-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/c80/controller-replace-requirements.html"
+    - title: 關閉受損的控制器
+      url: "/c80/controller-replace-shutdown.html"
+    - title: 更換控制器
+      url: "/c80/controller-replace-move-hardware.html"
+    - title: 還原系統組態
+      url: "/c80/controller-replace-system-config-restore-and-verify.html"
+    - title: 可重新分配控制器
+      url: "/c80/controller-replace-recable-reassign-disks.html"
+    - title: 完整更換控制器
+      url: "/c80/controller-replace-restore-system-rma.html"
+  - title: DIMM
+    url: "/c80/dimm-replace.html"
+  - title: 磁碟機
+    url: "/c80/drive-replace.html"
+  - title: 風扇
+    url: "/c80/fan-swap-out.html"
+  - title: NVRAM
+    url: "/c80/nvram-replace.html"
+  - title: NV 電池
+    url: "/c80/nvdimm-battery-replace.html"
+  - title: I/O模組
+    pdf-filename: C80 I/O 模組
+    entries:
+    - title: I/O 模組總覽
+      url: "/c80/io-module-overview.html"
+    - title: 新增I/O模組
+      url: "/c80/io-module-add.html"
+    - title: 更換 I/O 模組
+      url: "/c80/io-module-replace.html"
+  - title: 電源供應器
+    url: "/c80/power-supply-replace.html"
+  - title: 即時時鐘電池
+    url: "/c80/rtc-battery-replace.html"
+  - title: 系統管理模組
+    url: "/c80/system-management-replace.html"

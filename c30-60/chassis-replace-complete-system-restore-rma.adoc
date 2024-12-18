@@ -1,0 +1,51 @@
+---
+permalink: c30-60/chassis-replace-complete-system-restore-rma.html 
+sidebar: sidebar 
+keywords: aff c30, aff c60, verify and set HA state, complete the replacement process 
+summary: 您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。 
+---
+= 完整機箱更換： AFF C30 和 AFF C60
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。
+
+
+
+== 步驟1：驗證並設定機箱的HA狀態
+
+您必須驗證機箱的 HA 狀態，並視需要更新狀態，以符合您的儲存系統組態。
+
+. 在維護模式中，從任一控制器顯示本機控制器和機箱的 HA 狀態：
++
+`ha-config show`
+
++
+所有元件的HA狀態都應該相同。
+
+. 如果機箱的顯示系統狀態與您的儲存系統組態不符：
++
+.. 設定機箱的HA狀態：
++
+`ha-config modify chassis _HA-state_`
+
++
+HA 狀態的值應為 _ha_ 。
+
+.. 確認設定已變更：
++
+`ha-config show`
+
+
+
+. 如果您尚未重新設定儲存系統的其餘部分，請重新調整。
+
+
+
+
+== 步驟 2 ：將故障零件退回 NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

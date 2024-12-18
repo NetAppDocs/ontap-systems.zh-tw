@@ -1,0 +1,389 @@
+---
+permalink: a20-30-50/rtc-battery-replace.html 
+sidebar: sidebar 
+keywords: aff a20, aff a30, aff a50, replace the real-time clock battery 
+summary: 您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。 
+---
+= 更換即時時鐘電池 - AFF A20 ， AFF A30 和 AFF A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更換控制器中的即時時鐘（ RTC ）電池，讓儲存系統的服務和應用程式能夠繼續運作，而這些服務和應用程式則需仰賴精確的時間同步。
+
+.開始之前
+儲存系統中的所有其他元件都必須正常運作；否則，您必須先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]，才能繼續執行此程序。
+
+.關於這項工作
+* 您可以將此程序用於儲存系統支援的所有 ONTAP 版本。
+* 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
++
+儲存系統有三個位置 LED ：一個在操作員顯示面板上，一個在每個控制器上。位置LED會持續亮起30分鐘。
+
++
+您可以輸入命令將其關閉 `system location-led _off_`。如果您不確定 LED 是否亮起或熄滅，可以輸入命令來檢查其狀態 `system location-led show`。
+
+
+
+
+
+== 步驟1：關閉受損的控制器
+
+關閉或接管受損的控制器。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您有 SAN 系統，則必須檢查故障控制器 SCSI 刀鋒的事件訊息  `cluster kernel-service show`。 `cluster kernel-service show`命令（從 priv 進階模式）會顯示節點名稱、link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["仲裁狀態"]該節點的可用度狀態、以及該節點的作業狀態。
++
+每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+.步驟
+. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
++
+
+NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+
+
+== 步驟2：移除控制器
+
+更換控制器或更換控制器內部的元件時，您必須從機箱中移除控制器。
+
+.開始之前
+儲存系統中的所有其他元件都必須正常運作；否則，您必須先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]，才能繼續執行此程序。
+
+.步驟
+. 在受損的控制器上，請確定 NV LED 已關閉。
++
+當 NV LED 熄滅時，即表示已完成減損，可安全移除受損的控制器。
+
++
+
+NOTE: 如果 NV LED 閃爍（綠色），則表示正在減少目標。您必須等待 NV LED 關閉。不過，如果持續閃爍超過五分鐘，請先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]，再繼續執行此程序。
+
++
+NV LED 位於控制器上的 NV 圖示旁。
+
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV 狀態 LED 位置]
+
+
+
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+控制器上的 NV 圖示和 LED
+
+|===
+. 如果您尚未接地、請正確接地。
+. 斷開受損控制器的電源：
++
+
+NOTE: 電源供應器（ PSU ）沒有電源開關。
+
++
+[cols="1,2"]
+|===
+| 如果您要中斷連線 .. | 然後... 
+
+
+ a| 
+AC PSU
+ a| 
+.. 打開電源線固定器。
+.. 從 PSU 拔下電源線，並將其放在一邊。
+
+
+
+
+ a| 
+DC PSU
+ a| 
+.. 旋下 D-sub DC 電源線接頭上的兩個拇指螺絲。
+.. 從 PSU 拔下電源線，並將其放在一邊。
+
+
+|===
+. 從受損的控制器拔下所有纜線。
++
+追蹤纜線的連接位置。
+
+. 移除受損的控制器：
++
+下圖顯示移除控制器時控制器控點的操作（從控制器左側）：
+
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[控制器處理操作以移除控制器]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+在控制器的兩端，將垂直鎖定彈片向外推，以鬆開把手。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+** 朝自己的方向拉動把手，將控制器從中板上取下。
++
+拉動時，把手會從控制器伸出，然後感覺到阻力，請繼續拉動。
+
+** 將控制器滑出機箱，同時支撐控制器的底部，並將其放置在平坦穩定的表面上。
+
+
+
+
+ a| 
+image::../media/icon_round_3.png[編號 3]
+ a| 
+如有需要，請將把手垂直轉動（在彈片旁），將其移出。
+
+|===
+. 逆時針轉動指旋螺絲以鬆開控制器護蓋，然後打開護蓋。
+
+
+
+
+== 步驟3：更換RTC電池
+
+取出故障的 RTC 電池，然後安裝替換的 RTC 電池。
+
+. 找到RTC電池。
+. 取出 RTC 電池：
++
+image::../media/drw_g_rtc_battery_replace_ieops-1902.svg[更換RTC電池]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+輕輕旋轉 RTC 電池，使其與固定座成一定的角度。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+將 RTC 電池從其固定座中取出。
+
+|===
+. 安裝替換 RTC 電池：
++
+.. 從防靜電包裝袋中取出替換電池。
+.. 放置電池，使電池上的加號朝向外，與主機板上的加號相對應。
+.. 以一定角度將電池插入電池盒，然後將其直立推入，使其完全插入電池盒中。
+.. 目視檢查電池，確保電池完全裝入電池座，且極性正確。
+
+
+
+
+
+
+== 步驟4：重新安裝控制器
+
+將控制器重新安裝到機箱中，然後重新啟動。
+
+.關於這項工作
+下圖顯示重新安裝控制器時控制器控點（從控制器左側）的操作，並可作為控制器重新安裝步驟的其餘部分參考。
+
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[控制器處理操作以安裝控制器]
+
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+如果您在維修控制器時將控制器把手直立（在彈片旁邊）移出，請將其向下旋轉至水平位置。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+按下把手，將控制器重新插入機箱的一半，然後在指示下推動，直到控制器完全就位。
+
+
+
+ a| 
+image::../media/icon_round_3.png[編號 3]
+ a| 
+將把手旋轉至直立位置，並使用鎖定彈片鎖定定位。
+
+|===
+.步驟
+. 合上控制器護蓋，然後順時針旋轉指旋螺絲，直到旋緊為止。
+. 將控制器插入機箱的一半。
++
+將控制器背面與機箱中的開口對齊，然後使用把手輕推控制器。
+
++
+
+NOTE: 在接到指示之前，請勿將控制器完全插入機箱。
+
+. 將主控台纜線連接到控制器的主控台連接埠和筆記型電腦，以便在控制器重新開機時，筆記型電腦接收主控台訊息。
+. 將控制器完全插入機箱：
++
+.. 用力推把手，直到控制器與中板接觸並完全就位為止。
++
+
+NOTE: 將控制器滑入機箱時請勿過度施力，否則可能會損壞連接器。
+
+.. 向上旋轉控制器把手，並使用彈片鎖定定位。
++
+
+NOTE: 一旦控制器完全安裝在機箱中，就會開始開機。
+
+
+
+. 按 CTRL-C 中止自動開機，讓控制器進入 Loader 提示。
+. 在控制器上設定時間和日期：
++
+確保您處於控制器的 Loader 提示符下。
+
++
+.. 在控制器上顯示日期和時間：
++
+`show date`
+
++
+
+NOTE: 時間和日期預設為 GMT 。您可以選擇以當地時間和 24 小時模式顯示。
+
+.. 設定目前 GMT 時間：
++
+`set time hh:mm:ss`
+
++
+您可以從健全的節點取得目前的 GMT ：
+
++
+`date -u`
+
+.. 設定 GMT 的目前日期：
++
+`set date mm/dd/yyyy`
+
++
+您可以從健全節點取得目前的 GMT ： +
+`date -u`
+
+
+
+. 視需要重新定位控制器。
+. 將電源線重新連接至電源供應器（ PSU ）。
++
+電源恢復至PSU後、狀態LED應為綠色。
+
++
+[cols="1,2"]
+|===
+| 如果您正在重新連線 ... | 然後... 
+
+
+ a| 
+AC PSU
+ a| 
+.. 將電源線插入 PSU 。
+.. 使用電源線固定器固定電源線。
+
+
+
+
+ a| 
+DC PSU
+ a| 
+.. 將 D-sub DC 電源線接頭插入 PSU 。
+.. 鎖緊兩顆指旋螺絲，將 D-sub DC 電源線接頭固定至 PSU 。
+
+
+|===
+
+
+
+
+== 步驟 5 ：重設控制器上的時間和日期
+
+
+NOTE: 更換 RTC 電池，插入控制器並開啟第一次 BIOS 重設的電源後，您會看到下列錯誤訊息：
+`RTC date/time error. Reset date/time to default`
+`RTC power failure error`這些訊息是預期的，您可以繼續執行此程序。
+
+. 在健全的控制器上，使用命令檢查日期和時間 `cluster date show`。
++
+
+NOTE: 如果您的儲存系統停止在開機功能表，請在出現提示時選取選項 `Reboot node`並回應 _y_ ，然後按下 _Ctrl-C_ 以開機至 Loader 。
+
+. 在功能受損的控制器上，在 Loader 提示下，檢查時間和日期： `cluster date show`
++
+.. 如有必要，請修改日期： `set date _mm/dd/yyyy_`
+.. 如有必要，請在 GMT 中設定時間： `set time hh:mm:ss`
+.. 確認日期和時間。
+
+
+. 在 Loader 提示符下，輸入 `bye`以重新初始化 I/O 模塊和其他組件，然後讓控制器重新啓動。
+. 將控制器恢復正常運作、方法是歸還儲存設備：「torage容錯移轉恢復-ofnode_disapped_node_name_」
+. 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
+
+
+
+
+== 步驟6：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

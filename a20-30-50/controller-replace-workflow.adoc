@@ -1,0 +1,38 @@
+---
+permalink: a20-30-50/controller-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff a20, aff a30, aff a50, replace the controller workflow 
+summary: 您必須使用從供應商處收到的替換FRU元件來更換故障元件。 
+---
+= 控制器更換工作流程： AFF A20 ， AFF A30 和 AFF A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請依照下列工作流程步驟來更換控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:controller-replace-requirements.html["檢閱控制器更換需求"]
+[role="quick-margin-para"]
+若要更換控制器，您必須符合特定要求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:controller-replace-shutdown.html["關閉受損的控制器"]
+[role="quick-margin-para"]
+關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:controller-replace-move-hardware.html["更換控制器"]
+[role="quick-margin-para"]
+更換控制器包括移除受損的控制器，將 FRU 元件移至更換控制器，在機箱中安裝更換控制器，設定時間和日期，然後重新啟用。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:controller-replace-system-config-restore-and-verify.html["還原並驗證系統組態"]
+[role="quick-margin-para"]
+驗證更換控制器的低階系統組態、並視需要重新設定系統設定。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:controller-replace-recable-reassign-disks.html["將控制器交回"]
+[role="quick-margin-para"]
+將儲存資源的擁有權移回更換控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:controller-replace-restore-system-rma.html["完整更換控制器"]
+[role="quick-margin-para"]
+驗證生命，檢查叢集健全狀況，並將故障零件退回 NetApp 。

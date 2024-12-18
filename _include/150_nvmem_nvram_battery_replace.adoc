@@ -26,7 +26,7 @@
 +
 下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
 +
 
 NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。

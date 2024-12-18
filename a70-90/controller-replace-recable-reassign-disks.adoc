@@ -39,12 +39,6 @@ summary: 您必須重新啟動控制器的儲存設備。
 .機載加密（ OKM ）
 --
 . 在 Loader 提示符下，輸入 `boot_ontap maint`。
-. 使用命令檢查 TMP 韌體版本 `sysconfig -v`。
-+
-** 如果版本低於 5.63 、請聯絡 https://support.netapp.com["NetApp支援"]。
-** 如果版本超過 5.63 ，請退出至 Loader 提示符： `halt`。
-
-
 . 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
 . 輸入 OKM 複雜密碼。您可以向客戶索取此通關密碼、或聯絡 https://support.netapp.com["NetApp支援"]。
 +

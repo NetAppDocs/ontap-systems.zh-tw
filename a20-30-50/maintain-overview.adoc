@@ -1,0 +1,96 @@
+---
+permalink: a20-30-50/maintain-overview.html 
+sidebar: sidebar 
+keywords: aff a20 aff a30 aff a50 maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components 
+summary: 維護 AFF A20 ， AFF A30 和 AFF A50 硬體 
+---
+= 硬體維護總覽 - AFF A20 ， AFF A30 和 AFF A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要在硬體上執行維護程序。本節說明維護 AFF A20 ， AFF A30 和 AFF A50 系統元件的特定程序。
+
+本節中的程序假設 AFF A20 ， AFF A30 或 AFF A50 儲存系統已部署為 ONTAP 環境中的儲存節點。
+
+
+
+== 系統元件
+
+對於 AFF A20 ， AFF A30 和 AFF A50 儲存系統，您可以對下列元件執行維護程序。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:bootmedia-replace-workflow.html["開機媒體"]
+ a| 
+開機媒體會儲存一組主要和次要的 ONTAP 映像檔案，以及系統開機時所使用的系統組態資訊。
+
+
+
+ a| 
+link:chassis-replace-workflow.html["機箱"]
+ a| 
+機箱是實體機箱、可容納所有控制器元件、例如控制器 /CPU 單元、電源供應器和 I/O
+
+
+
+ a| 
+link:controller-replace-workflow.html["控制器"]
+ a| 
+控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 作業系統軟體。
+
+
+
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
+雙列直插式記憶體模組（ DIMM ）是一種電腦記憶體類型。它們是為了將系統記憶體新增至控制器主機板而安裝。
+
+
+
+ a| 
+link:drive-replace.html["磁碟機"]
+ a| 
+磁碟機是提供資料所需實體儲存設備的裝置。
+
+
+
+ a| 
+link:fan-replace.html["風扇"]
+ a| 
+風扇可冷卻控制器和磁碟機。
+
+
+
+ a| 
+link:io-module-overview.html["I/O模組"]
+ a| 
+I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。
+
+
+
+ a| 
+link:nvdimm-battery-replace.html["非易失電池"]
+ a| 
+非揮發性記憶體（ NV ）電池負責為 NVMEM 元件提供電力，而在電力中斷後，資料傳輸中的資料會轉到快閃記憶體。
+
+
+
+ a| 
+link:power-supply-replace.html["電源供應器"]
+ a| 
+電源供應器在控制器中提供備援電源。
+
+
+
+ a| 
+link:rtc-battery-replace.html["即時時鐘電池"]
+ a| 
+即時時鐘電池會在電源關閉時保留系統日期和時間資訊。
+
+|===

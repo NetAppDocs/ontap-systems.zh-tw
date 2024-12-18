@@ -1,0 +1,128 @@
+---
+permalink: a20-30-50/controller-replace-recable-reassign-disks.html 
+sidebar: sidebar 
+keywords: aff a20, aff a30, aff a50, how to reboot the system 
+summary: 您必須重新啟動控制器。 
+---
+= 將控制器交回 AFF A20 ， AFF A30 和 AFF A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將控制器交回。
+
+
+
+== 將控制器交回
+
+如果已啟用、請重設加密、並將控制器恢復正常運作。
+
+[role="tabbed-block"]
+====
+.無加密
+--
+. 在 Loader 提示符下，輸入 `boot_ontap`。
+. 主控台訊息停止時、按 <enter> 。
++
+** 如果您看到 _login_ 提示、請前往本節結尾的下一個步驟。
+** 如果您看到 _waiting for 贈品、請按下 <enter> 鍵、登入合作夥伴節點、然後前往本節結尾的下一步。
+
+
+. 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
+. 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.機載加密（ OKM ）
+--
+. 在 Loader 提示符下，輸入 `boot_ontap maint`。
+. 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
+. 輸入 OKM 複雜密碼。
++
+
+NOTE: 系統會提示您輸入兩次密碼。
+
+. 出現提示時輸入備份金鑰資料。
+. 在開機功能表中、輸入正常開機的選項 `1`。
+. 顯示 _ 正在等待恢復 _ 時、請按 <enter> 。
+. 將主控台纜線移至合作夥伴節點、然後以登入 `admin`。
+. 僅回饋 CFO 集合體（根集合體）： `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
++
+** 如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+
+. 在恢復報告完成後等待 5 分鐘、並檢查容錯移轉狀態和恢復狀態： `storage failover show`和 `storage failover show-giveback`。
+. 同步和驗證金鑰狀態：
++
+.. 將主控台纜線移回更換的控制器。
+.. 同步遺失的金鑰： `security key-manager onboard sync`
++
+
+NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
+
+.. 驗證金鑰狀態： `security key-manager key query -restored _false_`
++
+正確同步時，輸出應該不會顯示任何結果。
+
++
+如果輸出顯示結果（系統內部主索引鍵表中沒有的主索引鍵 ID ），請聯絡 https://support.netapp.com["NetApp支援"]。
+
+
+
+. 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
+. 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+.外部金鑰管理程式（ EKM ）
+--
+. 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
+. 回答或 `n`回答 `y`下列問題：
++
+您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
+
++
+您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝
+
++
+您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
+
++
+或
+
++
+您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝
+
++
+您知道 KMIP 伺服器位址嗎？｛ y/n ｝
+
++
+您知道 KMIP 連接埠嗎？｛ y/n ｝
+
++
+
+NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+. 提供以下資訊：
++
+** 用戶端憑證（ client.crt ）檔案內容
+** 用戶端金鑰（ client.key ）檔案內容
+** KMIP 伺服器 CA （ CA.pem ）檔案內容
+** KMIP 伺服器的 IP 位址
+** KMIP 伺服器的連接埠
+
+
+. 系統處理完畢後，您會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。
+. 檢查接管狀態： `storage failover show`
+. 請先進入進階模式，然後再 `run local partner nosavecore`進入，以確保已修復節點上的任何核心傾印都已儲存 `set -privilege advanced`。
+. 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
+. 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+--
+====

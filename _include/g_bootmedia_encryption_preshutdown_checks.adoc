@@ -1,0 +1,13 @@
+= 檢查系統上的 NVE 或 NSE
+:allow-uri-read: 
+
+
+在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 執行中的版本。
+
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+
+== 檢查系統上的 NVE 或 NSE
+
+<stdin> 中未解決的指令 - 包括： ..//_INCLUDE / 加密 _check ， 915_Later.adoc []

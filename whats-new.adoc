@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: new, features, asa r2, aff, asa, fas, legacy, end-of-support 
-summary: 瞭解 ONTAP 硬體系統的新功能。 
+keywords: new, features, asa r2, aff, asa, fas 
+summary: 瞭解 ONTAP 硬體系統的新平台。 
 ---
 = ONTAP 硬體系統的新功能
 :allow-uri-read: 
@@ -13,365 +13,46 @@ summary: 瞭解 ONTAP 硬體系統的新功能。
 [role="lead"]
 瞭解 ONTAP 硬體系統的新功能。
 
-如需 ONTAP 9 版本中已知問題、限制和升級注意事項的詳細資訊、請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明ONTAP"]。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。
 
 
+== 2024 年 12 月
 
-== 平台支援
 
-[cols="2*"]
-|===
-| 平台 | 可用的開始 
 
+=== AFF A20 ， AFF A30 和 AFF A50
 
- a| 
-https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA r2 系統"]
+全新的 AFF A20 ， A30 和 A50 硬體系統可將高效能，智慧型和全方位的資料管理功能延伸至更多客戶和工作負載。
 
-* ASA A1K
-* ASA A70
-* ASA A90
+這些系統提供即時的 ML 型勒索軟體偵測，無縫的雲端整合，以及無與倫比的效能，可支援區塊，檔案和物件儲存，適用於 AI ， VMware ，資料庫和分析等關鍵任務工作負載。
 
- a| 
-ONTAP 9.16.0.
+link:https://www.netapp.com/data-storage/aff-a-series/["深入瞭解 AFF A 系列系統"]。
 
 
 
- a| 
-https://www.netapp.com/data-storage/fas/["FAS70 和 FAS90"]
- a| 
-ONTAP 9.15.1.1
+=== AFF C30 ， AFF C60 和 AFF C80
 
+全新的 AFF C30 ， AFF C60 和 AFF C80 硬體系統可在雙機架部署中提供領先業界的 1.5PB 儲存容量，讓企業更容易存取 Flash 的效能與效率提升。
 
+此解決方案具備 60 TB 磁碟機的優異密度，更高的效能，以及更高的 I/O 靈活度。
 
- a| 
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A1K"]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A70"]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["AFF A90"]
+link:https://www.netapp.com/data-storage/aff-c-series/["深入瞭解 AFF C 系列系統"]。
 
- a| 
-ONTAP 9.15.1.1
 
 
+== 2024 年 9 月
 
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C250"]
- a| 
-ONTAP 9.13.1P1
 
 
+=== ASA r2 系統
 
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C400"]
- a| 
-ONTAP 9.13.1P1
+全新的 ASA R2 硬體系統（ ASA A1K ， ASA A70 和 ASA A90 ）提供統一化的硬體與軟體解決方案，可針對僅限 SAN 的客戶需求，提供簡化的體驗。
 
+link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["深入瞭解 ASA R2 系統"]。
 
 
- a| 
-https://www.netapp.com/data-storage/all-flash-san-storage-array/["ASA C800"]
- a| 
-ONTAP 9.13.1P1
 
+=== FAS70 和 FAS90
 
+全新 FAS70 和 FAS90 硬體系統提供經濟實惠且效能優異的備份儲存設備，讓安全的網路資料保險箱能夠從勒索軟體攻擊中恢復。
 
- a| 
-https://hwu.netapp.com/ProductSpecs/Index["FAS2820"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A150"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A250"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A400"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf["ASA A900"]
- a| 
-ONTAP 9.13.1.12.9.11.9.11.
-
-
-
- a| 
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["C250 AFF"]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["C400 AFF"]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf["C800 AFF"]
-
- a| 
-ONTAP 9.12.1P1
-
-ONTAP 9.13.1 GA 與更新版本的 ONTAP 版本
-
-[NOTE]
-====
-ONTAP 9.13.1 RC1 不支援這些平台。
-
-====
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf["解答150 AFF"]
-
-[NOTE]
-====
-請勿嘗試使用不支援的 ONTAP 版本來安裝或開機 AFF A150 儲存系統。如果您嘗試使用不受支援的 ONTAP 版本來安裝或開機系統、 ONTAP 將允許安裝或開機（ ONTAP 不會封鎖嘗試）。結果是您的 AFF A150 儲存系統將成為 FAS2750 儲存系統。
-
-==== a| 
-ONTAP 9.13.1 及更新版本的 ONTAP 版本
-
-ONTAP 9.12.1P1
-
-ONTAP 9.11.1P8
-
-ONTAP 9.10.1P12
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS9500"]
- a| 
-零點9.11.1. ONTAP
-
-ONTAP 9.10.1P3
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["解答900 AFF"]
- a| 
-零點9.10.1 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["VA250/AFF F4A250 AFF ASA"]
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS500f"]
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["解答800 AFF ASA"]
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8300"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS8700"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["解答400 AFF"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["VA220 AFF ASA"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf["部分A700 AFF ASA"]
- a| 
-更新ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/7623-ds-3989.pdf["C190 AFF"^]
- a| 
-部分9.6 ONTAP
-
-
-
- a| 
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf["解答320 AFF"]
- a| 
-部分9.6 ONTAP
-
-|===
-
-
-== 交換器支援
-
-[cols="20,65,15"]
-|===
-| 交換器 | 說明 | 可用的開始 
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["NVIDIA IP SN2100 交換器"]
- a| 
-使用 A900/FAS9500 平台的 MetroCluster IP 組態支援 NVIDIA IP SN2100 儲存交換器。
- a| 
-ONTAP 9.12.1
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["NVIDIA IP SN2100 交換器（ X190006 ）"]
- a| 
-使用下列平台的 MetroCluster IP 組態支援 NVIDIA IP SN2100 儲存交換器：
-
-* FAS500f/AFF A250
-* FAS5PS/AFF A400
-* FAS8700
-* FAS9000/AFF A700
-* 解答800 AFF
-
- a| 
-ONTAP 9.10.1P3
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["36埠100 GbE Cisco交換器（X190200）"]
- a| 
-在同一組Cisco Nexus 9336C-FX2交換器上支援共享基礎架構（叢集、HA和交換器附加儲存設備）、包括支援MetroCluster 不支援任何IP組態。
- a| 
-部分9.9.1 ONTAP
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["36埠100 GbE Cisco交換器（X190200和X190210）"]
- a| 
-Cisco Nexus 9336C-FX2叢集互連交換器與儲存交換器支援AFF/FAS控制器、以及前端資料連線。
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["Broadcom BCS-53248交換器（X190005和X190005R）"]
- a| 
-Broadcom BS-53248叢集互連交換器支援AFF/FAS控制器、具有40/100GbE連接埠。
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["36埠100 GbE Cisco交換器（X190200）"] https://hwu.netapp.com/Switch/Index["32埠100 GbE Cisco交換器（X190100和X190100R）"]
- a| 
-Cisco Nexus 100 GbE交換器可作為專用儲存交換器、將NS224 NVMe磁碟機櫃連接至下列平台：
-
-* 介紹A800/AFF的A800 AFF ASA
-* 介紹A700/AFF的功能AFF ASA
-* 介紹A400/AFF的功能AFF ASA
-* 解答320 AFF
-
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-https://hwu.netapp.com/Switch/Index["Broadcom BCS-53248交換器（X190005和X190005R）"]
- a| 
-Broadcom BS-53248叢集互連交換器支援AFF/FAS控制器、具備10/25GbE連接埠。
- a| 
-零點9.5P8 ONTAP
-
-|===
-
-
-== 機櫃支援
-
-[cols="2*"]
-|===
-| 磁碟櫃 | 可用的開始 
-
-
- a| 
-NS224
- a| 
-部分9.6 ONTAP
-
-|===
-
-
-== 硬體更新
-
-[cols="25h,~,~"]
-|===
-| 功能 | 說明及深入瞭解的地方 | 可用的開始 
-
-
- a| 
-多叢集互連交換器
- a| 
-多叢集組態可讓多個叢集共用同一個叢集交換器、透過兩個新的 4x4 和 2x8 節點組態參考組態檔案提供。
- a| 
-ONTAP 9.14.1.
-
-
-
- a| 
-更廣泛的NS224磁碟機櫃平台支援
- a| 
-下列平台支援NS224磁碟機櫃：
-
-* 介紹A800/AFF的A800 AFF ASA
-* 介紹A700/AFF的功能AFF ASA
-* VA250/AFF F4A250 AFF ASA
-* FAS500f
-
- a| 
-部分9.8 ONTAP
-
-
-
- a| 
-熱新增12Gb SAS磁碟櫃至6Gb SAS儲存堆疊
- a| 
-SAS儲存堆疊現在支援從6Gb到12Gb的單一速度轉換。如此一來、現有6Gb堆疊的儲存設備就能以12Gb架架擴充。
-
-https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-mix-hotadd/home.html["將含有IOM12模組的熱新增磁碟櫃放到具有IOM6模組的磁碟櫃堆疊中"]
- a| 
-零點9.7P4 ONTAP
-
-部分9.6P9 ONTAP
-
-零點9.5P14 ONTAP
-
-|===
+link:https://www.netapp.com/data-storage/fas/["深入瞭解 FAS 系統"]。

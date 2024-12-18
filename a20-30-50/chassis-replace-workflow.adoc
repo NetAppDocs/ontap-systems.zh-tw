@@ -1,0 +1,30 @@
+---
+permalink: a20-30-50/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff a20, aff a30, aff a50, replace the chassis workflow 
+summary: 您必須使用從供應商處收到的替換FRU元件來更換故障元件。 
+---
+= 機箱更換工作流程： AFF A20 ， AFF A30 和 AFF A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請依照下列工作流程步驟更換機箱。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:chassis-replace-requirements.html["檢閱機箱更換需求"]
+[role="quick-margin-para"]
+若要更換機箱、您必須符合特定需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:chassis-replace-shutdown.html["關閉控制器"]
+[role="quick-margin-para"]
+關閉控制器、以便在機箱上執行維護。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:chassis-replace-move-hardware.html["更換機箱"]
+[role="quick-margin-para"]
+更換機箱包括將磁碟機和任何磁碟機擋片，控制器（使用電源供應器），以及擋板從受損機箱移至新機箱，並將受損機箱換成與受損機箱相同機型的新機箱。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]
+[role="quick-margin-para"]
+驗證機箱的 HA 狀態、並將故障零件退回 NetApp 。

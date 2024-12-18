@@ -50,9 +50,9 @@ LOADER-A>
 --
 如果未偵測到加密、則開機媒體還原程序會在不需要金鑰管理的情況下繼續進行。
 
-從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。
+.. 從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。
+.. 恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
 
-恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
 
 ....
 
@@ -64,6 +64,13 @@ Terminated
 varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
 ....
+.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
+.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+
+
 --
 .內建金鑰管理程式（OKM）
 --
@@ -110,6 +117,15 @@ Trying to delete any existing km_onboard.wkeydb file.
 
 Successfully recovered keymanager secrets.
 ....
+.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
+.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+.. 只使用 CFO 集合體開機後、請執行下列命令。
++
+`security key-manager onboard sync`
+
 
 
 --
@@ -118,7 +134,7 @@ Successfully recovered keymanager secrets.
 如果已設定 EKM 、系統會顯示下列提示。
 
 ....
-Error when fetching key manager config from partner <IP>: 28
+Error when fetching key manager config from partner <IP>:
 
 Has key manager been configured on this system? {y|n}
 ....
@@ -140,7 +156,7 @@ Entering Bootmenu Option 11...
 
 *** 在合作夥伴節點上、使用下列命令擷取 Keystore UUID 。
 +
-`vserver show -type admin`
+`vserver show -type admin -fields uuid`
 
 +
 `key-manager keystore show -vserver <nodename>`
@@ -189,16 +205,16 @@ LOADER-B>
 =====
 
 
+.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
+.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
 
 
 --
 ====
 
-
-. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
-. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
-+
-`storage failover giveback -ofnode _impaired_node_name_`。
 
 . 如果自動恢復已停用、請重新啟用：
 +

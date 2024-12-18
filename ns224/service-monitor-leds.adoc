@@ -1,7 +1,7 @@
 ---
 permalink: ns224/service-monitor-leds.html 
 sidebar: sidebar 
-keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm module leds, power supply leds, drive leds 
+keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm leds, power supply leds, drive leds 
 summary: 您可以瞭解磁碟機櫃元件上 LED 的位置和狀態條件、藉此監控磁碟機櫃的健全狀況。 
 ---
 = 監控磁碟機櫃 LED - NS224 機櫃
@@ -13,7 +13,7 @@ summary: 您可以瞭解磁碟機櫃元件上 LED 的位置和狀態條件、藉
 [role="lead"]
 您可以瞭解磁碟機櫃元件上 LED 的位置和狀態條件、藉此監控磁碟機櫃的健全狀況。
 
-* 可啟動機櫃操作員顯示面板（ ODP ）和兩個 NSM 模組上的位置（藍色） LED 、以協助實體定位需要維修的機櫃： `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
+* 可啟動機櫃操作員顯示面板（ ODP ）和兩個 NSM 上的位置（藍色） LED ，以協助實體定位需要維修的機櫃： `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 如果您不知道受影響的機櫃的「_shider_name_」、請執行「shorage sh儲存 櫃show」命令。
 
@@ -87,12 +87,16 @@ image::../media/drw_sas3_location_icon.svg[操作員顯示面板位置 LED]
 |===
 
 
-== NSM 模組 LED
+== NSM LED
 
-NSM 模組上的 LED 會指出模組是否正常運作、是否已準備好處理 I/O 流量、以及硬體是否有任何問題。
+NSM 上的 LED 會指出模組是否正常運作，是否已準備好處理 I/O 流量，以及硬體是否有任何問題。
 
-下圖和表格說明與模組功能相關的 NSM 模組 LED 、以及模組上每個 NVMe 連接埠的功能。
+下圖和表格說明與模組功能相關的 NSM LED ，以及模組上每個 NVMe 連接埠的功能。
 
+[role="tabbed-block"]
+====
+.NSM100 模組
+--
 image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[NS224 NSM100 模組 LED]
 
 [cols="1,1,2,4"]
@@ -107,7 +111,7 @@ image::../media/drw_sas3_location_icon.svg[操作員顯示面板位置 LED]
  a| 
 藍色
  a| 
-NSM 模組：位置
+NSM ：位置
 
 
 
@@ -118,7 +122,7 @@ image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
  a| 
 琥珀色
  a| 
-NSM 模組：注意
+NSM ：注意
 
 
 
@@ -143,6 +147,72 @@ image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
 NVMe 連接埠 / 連結：注意
 
 |===
+--
+.NSM100B 模組
+--
+image::../media/drw_ns224_nsmb_leds_ieops-2004.svg[NS224 NSM100B 模組 LED]
+
+[cols="1,1,2,4"]
+|===
+| 撥出電話 | LED圖示 | 色彩 | 說明 
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+lnk
+ a| 
+綠色
+ a| 
+NVMe 連接埠 / 連結：狀態
+
+
+
+ a| 
+image:../media/icon_round_2.png["編號 2"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
+ a| 
+琥珀色
+ a| 
+NVMe 連接埠 / 連結：注意
+
+
+
+ a| 
+image:../media/icon_round_3.png["編號 3"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
+ a| 
+琥珀色
+ a| 
+I/O 模組：狀態
+
+
+
+ a| 
+image:../media/icon_round_4.png["編號 4."]
+ a| 
+image::../media/drw_sas3_location_icon.svg[操作員顯示面板位置 LED]
+ a| 
+藍色
+ a| 
+NSM ：位置
+
+
+
+ a| 
+image:../media/icon_round_5.png["編號 5."]
+ a| 
+image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
+ a| 
+琥珀色
+ a| 
+NSM ：注意
+
+|===
+--
+====
 [cols="2,1,1,1"]
 |===
 | 狀態 | NSM 注意事項（琥珀色） | 連接埠 LNO （綠色） | 連接埠注意事項（琥珀色） 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement 
 summary: 若要熱新增 NS224 磁碟機櫃、您的 HA 配對必須符合特定需求。 
 ---
-= 熱新增的需求與最佳實務做法： NS224 機櫃
+= 熱新增 NS224 機櫃的需求與最佳實務做法
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -47,7 +47,7 @@ summary: 若要熱新增 NS224 磁碟機櫃、您的 HA 配對必須符合特定
 
 * 最佳實務做法： * 最佳實務做法是在熱新增機櫃之前和之後執行 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] 。
 +
-在Active IQ Config Advisor 熱新增機櫃之前執行支援功能可提供現有機櫃乙太網路（ENET）連線的快照、驗證NVMe機櫃模組（NSM）韌體版本、並可讓您驗證HA配對中已使用的機櫃ID。
+在熱新增機櫃之前執行 Active IQ Config Advisor 可提供現有機櫃乙太網路（ ENET ）連線的快照，驗證 NVMe 機櫃模組（ NSM ）韌體版本，並可讓您驗證 HA 配對中已使用的機櫃 ID 。
 
 +
 在熱新增機櫃之後執行Active IQ Config Advisor 功能、可讓您驗證機櫃的纜線是否正確、以及HA配對內的機櫃ID是否獨特。

@@ -1,0 +1,195 @@
+---
+permalink: c80/io-module-replace.html 
+sidebar: sidebar 
+keywords: c80, replace a pcie card 
+summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。 
+---
+= 更換 I/O 模組 - AFF C80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請使用此程序來更換故障的 I/O 模組。
+
+* 您可以將此程序用於儲存系統支援的所有 ONTAP 版本。
+* 儲存系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+
+
+== 步驟1：關閉受損的控制器
+
+使用下列其中一個選項來關閉或接管受損的控制器。
+
+[role="tabbed-block"]
+====
+.選項1：大多數系統
+--
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.開始之前
+如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+.步驟
+. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息命令來抑制自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
++
+下列 AutoSupport 命令會禁止自動建立案例兩小時： `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+《等待贈品……》
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從健全的控制器停止或接管受損的控制器： `storage failover takeover -ofnode _impaired_node_name_`
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+.選項2：控制器位於MetroCluster 一個不二之處
+--
+
+NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用 AutoSupport 、請叫用 AutoSupport 命令來抑制自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
++
+下列 AutoSupport 命令會禁止自動建立案例兩小時： `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從健全的控制器停止或接管受損的控制器： `storage failover takeover -ofnode _impaired_node_name_`
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+====
+
+
+== 步驟 2 ：更換故障 I/O 模組
+
+若要更換 I/O 模組、請在控制器模組中找到該模組、然後依照特定步驟順序進行。
+
+. 如果您尚未接地、請正確接地。
+. 拔下目標I/O模組上的任何纜線。
++
+請務必在纜線上貼上標籤、讓您知道纜線的來源。
+
+. 向下轉動纜線管理托盤、方法是拉動纜線管理托盤內部的按鈕、然後向下旋轉。
+. 從控制器模組中卸下 I/O 模組：
++
+
+NOTE: 下圖顯示移除水平和垂直 I/O 模組。一般而言、您只會移除一個 I/O 模組。
+
++
+image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[移除 I/O 模組]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+CAM 鎖定按鈕
+
+|===
++
+.. 按下 CAM LATCH 按鈕。
+.. 轉動 CAM 栓鎖、使其儘可能遠離模組。
+.. 將手指連入凸輪桿開口處、然後將模組拉出控制器模組、即可將模組從控制器模組中移除。
++
+請務必追蹤I/O模組所在的插槽。
+
+
+
+. 將I/O模組放在一邊。
+. 將替換 I/O 模組安裝至目標插槽：
++
+.. 將I/O模組與插槽邊緣對齊。
+.. 將模組一路輕輕滑入控制器模組的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。
+
+
+. 連接 I/O 模組纜線。
+. 重複執行移除和安裝步驟、以更換控制器的其他模組。
+. 將纜線管理承載器旋轉至鎖定位置。
+
+
+
+
+== 步驟 3 ：重新啟動控制器
+
+更換I/O模組之後、您必須重新啟動控制器模組。
+
+.步驟
+. 在載入程式提示字元中、重新啟動節點：「bye」
++
+
+NOTE: 這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
+
+. 將節點恢復為正常作業： _storage 容錯移轉恢復恢復 -ofnode_node_name_
+. 如果自動恢復已停用、請重新啟用： _storage 容錯移轉修改 -node local -auto-贈 品 true_
+
+
+
+
+== 步驟4：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。
