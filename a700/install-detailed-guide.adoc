@@ -192,8 +192,7 @@ NOTE: 您必須瞭解與系統重量相關的安全顧慮。
 +
 image::../media/drw_9000_lifting_icon.png[舉升重量注意事項]
 
-
-
++
 
 NOTE: 左側的標籤表示機箱為空、右側的標籤則表示系統已滿。
 
@@ -230,8 +229,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 +
 .動畫-連接雙節點無交換器叢集
 video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto]
-
-
++
 image::../media/drw_9000_TNSC_composite_cabling.png[雙節點無交換器叢集複合纜線]
 
 . 前往 <<步驟4：連接磁碟機櫃的纜線控制器>> 以取得磁碟機櫃佈線指示。
@@ -257,8 +255,7 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 +
 .動畫-交換式叢集纜線
 video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto]
-
-
++
 image:../media/drw_9000_switched_cluster_cabling.png["交換式叢集複合纜線"]
 
 . 前往 <<步驟4：連接磁碟機櫃的纜線控制器>> 以取得磁碟機櫃佈線指示。
@@ -290,18 +287,16 @@ NOTE: 這些範例使用DS224C磁碟櫃。佈線與其他支援的SAS磁碟機�
 
 +
 ** FAS9000、AFF S4A700和ASA AFF S4A700、ONTAP Se 9.7及更早版本中的SAS機櫃佈線：
-
-
 +
 .動畫-纜線SAS儲存設備- ONTAP 更新版本
 video::a312e09e-df56-47b3-9b5e-ab2300477f67[panopto]
+
+
 +
 image:../media/SAS_storage_ONTAP_9.7_and_earlier.png["適用於 ONTAP 9.7 及更早版本的 SAS 儲存纜線"]
 
 +
 ** FAS9000、AFF S4A700和ASA AFF S4A700、ONTAP Se 9.8及更新版本中的SAS機櫃佈線：
-
-
 +
 .動畫-纜線SAS儲存設備- ONTAP 更新版本
 video::61d23302-9526-4a2b-9335-ac5b0032eafd[panopto]
@@ -317,6 +312,8 @@ link:../sas3/install-new-system.html["安裝及纜線架以安裝新的系統-�
 
 +
 image:../media/Cable_shelves_new_system_IOM12_shelves.png["儲存系統與 SAS 機櫃的纜線"]
+
+
 
 . 前往 <<步驟5：完成系統設定與組態設定>> 以完成系統設定與組態。
 
@@ -467,7 +464,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始設定後，請前往 https://docs.netapp.com/us-en/ontap/index.html["部分9文件ONTAP"^]以取得在 ONTAP 中設定其他功能的相關資訊。
 
 
 
@@ -563,5 +560,5 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 
 . 執行Config Advisor 下列項目來驗證系統的健全狀況：
-. 完成初始組態之後、請前往 https://www.netapp.com/data-management/oncommand-system-documentation/["S- ONTAP"] 頁面、以取得有關設定ONTAP 其他功能的資訊。
+. 完成初始設定後，請前往 https://docs.netapp.com/us-en/ontap/index.html["部分9文件ONTAP"^]以取得在 ONTAP 中設定其他功能的相關資訊。
 

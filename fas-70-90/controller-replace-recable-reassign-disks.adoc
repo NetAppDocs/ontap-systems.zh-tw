@@ -49,8 +49,6 @@ NOTE: 系統會提示您輸入兩次密碼。
 . 在開機功能表中、輸入正常開機的選項 `1`。
 . 顯示 _ 正在等待恢復 _ 時、請按 <enter> 。
 . 將主控台纜線移至合作夥伴節點、然後以登入 `admin`。
-. 請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」 `set -privilege advanced`、然後 `run local partner savecore`按。
-. 返回管理控制桿 `set privilege admin`：。
 . 僅回饋 CFO 集合體（根集合體）： `storage failover giveback -fromnode local -only-cfo-aggregates true`
 +
 ** 如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。

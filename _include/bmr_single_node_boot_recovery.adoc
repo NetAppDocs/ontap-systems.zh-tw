@@ -38,7 +38,7 @@ LOADER-A>
 +
 `Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
-. 在 Loader 設定本機叢集連接埠並從合作夥伴節點執行時、監控開機媒體還原程序 `netboot`。
+. 在 Loader 設定本機連接埠並從合作夥伴節點執行時，監控開機媒體還原程序 `netboot`。
 +
 當 netboot 正在執行時、 `Starting BMR`會顯示訊息。
 
@@ -120,9 +120,9 @@ Successfully recovered keymanager secrets.
 .. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
 .. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
 +
-`storage failover giveback -ofnode _impaired_node_name_`。
+'容錯移轉還原-ofnode_disapped_node_name_'
 
-.. 只使用 CFO 集合體開機後、請執行下列命令。
+.. 在合作夥伴節點完全啟動並提供資料之後，請在叢集中同步 OKM 金鑰。
 +
 `security key-manager onboard sync`
 

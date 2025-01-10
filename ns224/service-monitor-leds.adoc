@@ -147,72 +147,6 @@ image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
 NVMe 連接埠 / 連結：注意
 
 |===
---
-.NSM100B 模組
---
-image::../media/drw_ns224_nsmb_leds_ieops-2004.svg[NS224 NSM100B 模組 LED]
-
-[cols="1,1,2,4"]
-|===
-| 撥出電話 | LED圖示 | 色彩 | 說明 
-
-
- a| 
-image:../media/icon_round_1.png["編號 1"]
- a| 
-lnk
- a| 
-綠色
- a| 
-NVMe 連接埠 / 連結：狀態
-
-
-
- a| 
-image:../media/icon_round_2.png["編號 2"]
- a| 
-image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
- a| 
-琥珀色
- a| 
-NVMe 連接埠 / 連結：注意
-
-
-
- a| 
-image:../media/icon_round_3.png["編號 3"]
- a| 
-image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
- a| 
-琥珀色
- a| 
-I/O 模組：狀態
-
-
-
- a| 
-image:../media/icon_round_4.png["編號 4."]
- a| 
-image::../media/drw_sas3_location_icon.svg[操作員顯示面板位置 LED]
- a| 
-藍色
- a| 
-NSM ：位置
-
-
-
- a| 
-image:../media/icon_round_5.png["編號 5."]
- a| 
-image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
- a| 
-琥珀色
- a| 
-NSM ：注意
-
-|===
---
-====
 [cols="2,1,1,1"]
 |===
 | 狀態 | NSM 注意事項（琥珀色） | 連接埠 LNO （綠色） | 連接埠注意事項（琥珀色） 
@@ -294,6 +228,180 @@ NSM VPD 錯誤
 任何狀態
 
 |===
+--
+.NSM100B 模組
+--
+image::../media/drw_ns224_nsmb_leds_ieops-2004.svg[NS224 NSM100B 模組 LED]
+
+[cols="1,1,2,4"]
+|===
+| 撥出電話 | LED圖示 | 色彩 | 說明 
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+lnk
+ a| 
+綠色
+ a| 
+NVMe 連接埠 / 連結：狀態
+
+
+
+ a| 
+image:../media/icon_round_2.png["編號 2"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
+ a| 
+琥珀色
+ a| 
+NVMe 連接埠 / 連結：注意
+
+
+
+ a| 
+image:../media/icon_round_3.png["編號 3"]
+ a| 
+image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
+ a| 
+琥珀色
+ a| 
+I/O 模組：注意
+
+
+
+ a| 
+image:../media/icon_round_4.png["編號 4."]
+ a| 
+image::../media/drw_sas3_location_icon.svg[操作員顯示面板位置 LED]
+ a| 
+藍色
+ a| 
+NSM ：位置
+
+
+
+ a| 
+image:../media/icon_round_5.png["編號 5."]
+ a| 
+image::../media/drw_sas_fault_icon.svg[操作員顯示面板注意 LED]
+ a| 
+琥珀色
+ a| 
+NSM ：注意
+
+|===
+[cols="2,1,1,1,1"]
+|===
+| 狀態 | NSM 注意事項（琥珀色） | 連接埠 LNO （綠色） | 連接埠注意事項（琥珀色） | I/O 模組注意事項 
+
+
+ a| 
+NSM 正常
+ a| 
+關
+ a| 
+任何狀態
+ a| 
+關
+ a| 
+關
+
+
+
+ a| 
+NSM 故障
+ a| 
+開啟
+ a| 
+任何狀態
+ a| 
+任何狀態
+ a| 
+關
+
+
+
+ a| 
+NSM VPD 錯誤
+ a| 
+開啟
+ a| 
+任何狀態
+ a| 
+任何狀態
+ a| 
+關
+
+
+
+ a| 
+無主機連接埠連線
+ a| 
+任何狀態
+ a| 
+關
+ a| 
+關
+ a| 
+關
+
+
+
+ a| 
+主機連接埠連線連結作用中
+ a| 
+任何狀態
+ a| 
+活動時亮起 / 閃爍
+ a| 
+任何狀態
+ a| 
+關
+
+
+
+ a| 
+主機連接埠連線有故障
+ a| 
+開啟
+ a| 
+如果所有通道都故障、則開啟 / 關閉
+ a| 
+開啟
+ a| 
+關
+
+
+
+ a| 
+開機後從 BIOS 映像開機
+ a| 
+閃爍
+ a| 
+任何狀態
+ a| 
+任何狀態
+ a| 
+關
+
+
+
+ a| 
+I/O 模組遺失
+ a| 
+開啟
+ a| 
+不適用
+ a| 
+不適用
+ a| 
+開啟
+
+|===
+--
+====
 
 
 == 電源供應器LED
