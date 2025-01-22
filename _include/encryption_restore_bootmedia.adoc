@@ -343,11 +343,7 @@ Enter the server configuration (servers.cfg) file contents:
 ....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
-MIIDvjCCAqagAwIBAgICN3gwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAlVT
-MRMwEQYDVQQIEwpDYWxpZm9ybmlhMQwwCgYDVQQHEwNTVkwxDzANBgNVBAoTBk5l
-MSUbQusvzAFs8G3P54GG32iIRvaCFnj2gQpCxciLJ0qB2foiBGx5XVQ/Mtk+rlap
-Pk4ECW/wqSOUXDYtJs1+RB+w0+SHx8mzxpbz3mXF/X/1PC3YOzVNCq5eieek62si
-Fp8=
+<certificate_value>
 -----END CERTIFICATE-----
 
 Enter the client key (client.key) file contents:
@@ -357,9 +353,7 @@ Enter the client key (client.key) file contents:
 
 Enter the KMIP server CA(s) (CA.pem) file contents:
 -----BEGIN CERTIFICATE-----
-MIIEizCCA3OgAwIBAgIBADANBgkqhkiG9w0BAQsFADCBjzELMAkGA1UEBhMCVVMx
-7yaumMQETNrpMfP+nQMd34y4AmseWYGM6qG0z37BRnYU0Wf2qDL61cQ3/jkm7Y94
-EQBKG1NY8dVyjphmYZv+
+<certificate_value>
 -----END CERTIFICATE-----
 
 Enter the IP address for the KMIP server: 10.10.10.10
@@ -384,7 +378,7 @@ kmip_init: cmd: ReleaseExtraBSDPort e0M
 ....
 System is ready to utilize external key manager(s).
 Trying to recover keys from key servers....
-[Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
+Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 ....
 ====
@@ -395,11 +389,10 @@ Successfully recovered keymanager secrets.
 ====
 ....
 
-***********************************************************************************
+***************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
 *
-***********************************************************************************
-
+***************************************************************************
 
 (1)  Normal Boot.
 (2)  Boot without /etc/rc.
@@ -416,7 +409,7 @@ Selection (1-11)? 1
 
 ....
 ====
-. 如果您停用了自動恢復功能、請輸入下列命令來還原。
+. 如果停用自動恢復功能，請將其還原。
 +
 `storage failover modify -node local -auto-giveback true`
 

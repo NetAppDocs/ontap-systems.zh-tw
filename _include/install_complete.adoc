@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-開啟儲存系統之後、您就可以開始探索叢集網路並設定 ONTAP 叢集。
-
 
 
 == 步驟 1 ：收集叢集資訊
@@ -93,6 +91,3 @@ NOTE: 如果您不知道如何設定Putty、請查看筆記型電腦或主控台
 NetApp 建議您使用系統管理員來設定新叢集。如需設定說明、請參閱 https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["使用系統管理員在新叢集上設定 ONTAP"^] 。
 
 System Manager 為叢集設定與組態提供簡單易用的工作流程、包括指派節點管理 IP 位址、初始化叢集、建立本機層、設定通訊協定、以及初始配置附加儲存設備。
-
-.接下來呢？
-叢集初始化之後、請下載並執行  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^] 以確認您的設定。
