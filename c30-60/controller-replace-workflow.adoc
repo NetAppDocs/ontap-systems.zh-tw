@@ -23,16 +23,16 @@ summary: 您必須使用從供應商處收到的替換FRU元件來更換故障�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:controller-replace-move-hardware.html["更換控制器"]
 [role="quick-margin-para"]
-更換控制器包括移除受損的控制器，將 FRU 元件移至更換的控制器，然後在機箱中安裝更換的控制器。
+更換控制器包括移除受損的控制器，將 FRU 元件移至更換控制器，在機箱中安裝更換控制器，設定時間和日期，然後重新啟用。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:controller-replace-system-config-restore-and-verify.html["還原並驗證系統組態"]
 [role="quick-margin-para"]
 驗證更換控制器的低階系統組態、並視需要重新設定系統設定。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:controller-replace-recable-reassign-disks.html["可重新分配控制器"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:controller-replace-recable-reassign-disks.html["將控制器交回"]
 [role="quick-margin-para"]
-重新分配控制器、並將儲存資源的擁有權移交給更換的控制器。
+將儲存資源的擁有權移回更換控制器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:controller-replace-restore-system-rma.html["完整更換控制器"]
 [role="quick-margin-para"]
-驗證生命、檢查叢集健全狀況、並將故障零件退回 NetApp 。
+驗證生命，檢查叢集健全狀況，並將故障零件退回 NetApp 。

@@ -10771,10 +10771,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6bc9706054ddce477397a74fecd293ed" category="inline-link-macro">連接硬體纜線</block>
   <block id="8bfccb1f0c0fcef7c65c13971279707a" category="paragraph">安裝儲存系統的硬體之後<block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="d18e261115fca673ca85d869ef16199c" category="doc">安裝與設定工作流程： AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="974849b8889ed6277f040af2b6045c37" category="paragraph">若要安裝及設定 AFF A20 ， AFF A30 或 AFF A50 儲存系統，您必須檢閱安裝需求與考量事項，準備現場，安裝及連接硬體元件，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
-  <block id="d1f82b8af31f0a0381699baa1730106d" category="inline-link-macro">檢閱安裝需求和考量事項</block>
-  <block id="c33163874d186249575ec12fe18107ae" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="d0e286d31263eb61b4396ffbc7a7ab09" category="inline-link-macro-rx"></block></block>
-  <block id="9b74ca95663410ee614590c26b489ebd" category="paragraph">安裝儲存系統之前，您的儲存系統必須符合安裝需求，而且您必須檢閱安裝考量事項。</block>
   <block id="3cdf8c6347bdc0a257b06253a291ef6c" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
   <block id="efbed9ff10698a899995d519b6515646" category="paragraph">若要準備安裝，您必須準備好場地，檢查環境和電力需求，並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。</block>
   <block id="966353821596fdf316108d72854ad8be" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
@@ -10799,7 +10795,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1594210318baaedcde7a9ee6cf877e2f" category="list-text">在每個控制器上</block>
   <block id="b9d56fbafd9b44fad97bacb9a2bb786a" category="inline-link-macro">安裝儲存系統的硬體</block>
   <block id="6cc83c1114ef7a72628c17c930f42046" category="paragraph">準備好安裝儲存系統之後<block ref="32ef1f18704cc0c97dfcafcf18cacd02" category="inline-link-macro-rx"></block>，您就可以了。</block>
-  <block id="810da8188a0c92df4fdc4ccf84b888d0" category="paragraph">A20 ， A30 或 A50 儲存系統的最大重量可達 61.5 磅（ 27.9 公斤）。若要抬起儲存系統，請使用兩個人或液壓舉升設備。</block>
   <block id="6eb0f75df27b0466f7984bf67accd904" category="paragraph">配備 NSM100B 模組的 NS224 機櫃可重達 56.8 磅（ 25.8 公斤）。若要抬起貨架，請兩個人或液壓舉升。請將所有元件保留在機架中（前後），以避免機架重量不均衡。</block>
   <block id="34ae4f1779c2db0223377cbefc6262df" category="image-alt">NS224 ，含 NSM100b 舉升注意事項</block>
   <block id="2ef800dd74cfc13c160b4dd543b29cf0" category="inline-link-macro">準備安裝</block>
@@ -10840,7 +10835,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7198cc5bade7b4a7512214ef6d139fb9" category="doc">關閉受損的控制器 - AFF C30 和 AFF C60</block>
   <block id="1bd446701023b8913ca9b526c3e92f2e" category="doc">還原並驗證系統組態 - AFF C30 和 AFF C60</block>
   <block id="dffc469bd601fde82121083a3480be81" category="doc">控制器更換工作流程： AFF C30 和 AFF C60</block>
-  <block id="faebe8964cab5b375d2a8b865d40cf87" category="paragraph">更換控制器包括移除受損的控制器，將 FRU 元件移至更換的控制器，然後在機箱中安裝更換的控制器。</block>
   <block id="520d3987267b97f93ef8b0f406babbc3" category="doc">更換 DIMM - AFF C30 和 AFF C60</block>
   <block id="a4e5adc7bc258b17747b6f19d04cc2fa" category="doc">更換磁碟機 - AFF C30 和 AFF C60</block>
   <block id="c610b83162fd42225d6905d0aaa5cac5" category="doc">更換風扇模組 - AFF C30 和 AFF C60</block>
@@ -10849,41 +10843,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="323a91f2ce5b9b7fd43982a93a67f379" category="paragraph">對於 AFF C30 或 AFF C60 儲存系統，您可以對下列元件執行維護程序。</block>
   <block id="ea610f51a26134e77e0b3dc338a41e31" category="doc">連接硬體纜線 - AFF C30 和 AFF C60</block>
   <block id="a79626103b80bf3ef3558a2b727998a3" category="paragraph">安裝 AFF C30 或 AFF C60 儲存系統硬體後，請將控制器連接至網路和機櫃。</block>
-  <block id="ede0aafc1b41dc94c4d76b7c466d2aa0" category="example-title">AFF A30 或 A50 搭配兩個雙埠 100GbE I/O 模組</block>
-  <block id="6d6ca7f3814a8f260c612cf258dab7a0" category="paragraph">插槽 2 和插槽 4 中的 I/O 模組連接埠是 40/100GbE 連接埠。？？？這是否僅適用於 30-50 ，如果是，請將 2 個附註留在原位，但如果全部適用於 3 個，則將其移至新段落下方的區段前置文字？？？？？</block>
-  <block id="d98eb9805dd93d1aaac3e343c97a1f62" category="admonition">插槽 2 和 4 中 I/O 模組上的連接埠 e2b 和 e4b 未使用，可在需要時用於前端（主機網路）連線。</block>
-  <block id="c31d1fbb0d31d5bf997b520e9fa2706e" category="image-alt">使用兩個 100GbE IO 模組的雙節點無交換器叢集佈線圖</block>
-  <block id="6db5b30a6d539226a0c954c6f40c1772" category="example-title">AFF A30 或 A50 搭配一個雙埠 100GbE I/O 模組</block>
-  <block id="db938adc8ef91331ea918e590ee2aa37" category="paragraph">插槽 2 和插槽 4 中的 I/O 模組連接埠是 40/100GbE 連接埠。？？？</block>
-  <block id="8c9ccc84a53843554d3857c6945a9e81" category="image-alt">使用一個 100GbE IO 模組的雙節點無交換器叢集佈線圖</block>
-  <block id="d2a19b5b325d1bb5216c0d27edab36c9" category="example-title">AFF A20 搭配一個雙連接埠 10/25GbE I/O 模組</block>
-  <block id="26a5bf324c50bc7978d531c6959ae245" category="paragraph">新增範例</block>
-  <block id="dc9d6009a3fa846fe260b38b4ca36eee" category="paragraph">+<block ref="a1afb0f3e8ab3c3594052bdc55e1ed7f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
-  <block id="f6d364ad4bb4bbfe3666f43739ecf1e2" category="paragraph">新增附註：插槽 2 和 4 中 I/O 模組上的 40/100GbE 連接埠 e2b 和 e4b 未使用，可在需要時用於前端連線。</block>
-  <block id="b19d000e702330f26cd2a384108098ff" category="list-text">纜線控制器 A 連接埠 E4A 和控制器 B 連接埠 E4A 至叢集網路交換器 A</block>
-  <block id="f402a4b4af565c562918917734dbebd4" category="list-text">纜線控制器 A 連接埠 e4b 和控制器 B 連接埠 e4b 至叢集網路交換器 B</block>
-  <block id="d8c30c43f11d0f060f64c5660c7a1f39" category="paragraph">將控制器連接至主機網路。此程序會因您的儲存系統機型和 I/O 模組組組態而異。主機連線能力是 40/100 GbE 。？？</block>
-  <block id="9dffbf69ffba8bc38bc4e01abf4b1675" category="paragraph">文字</block>
-  <block id="10a84bc73fc237edf3588d386c411fd8" category="list-text">選用：連接至 40/100GbE 主機網路交換器的纜線。</block>
-  <block id="56d0764b8104d28ddcc923d5d3caa5c5" category="paragraph">每個控制器上的纜線連接埠 E2A ， e2b ， e2c 和 e2d 連接至乙太網路主機網路交換器。</block>
-  <block id="2ecc82bcc80b9638467a2765ee8fd8cf" category="list-text">選用：連接 FC 主機網路交換器的纜線。</block>
-  <block id="abfc920ef548717adc4c6b03eeb2bc77" category="paragraph">將每個控制器上的連接埠 1a ， 1b ， 1c 和 1d 連接到 FC 主機網路交換器。</block>
-  <block id="2e169c8e6f4cc1f6315545b46d7284a2" category="image-alt">64 GB 光纖通道纜線</block>
-  <block id="e87e6e084ead192e20865cc30a9a2d38" category="example-title">AFF A20 搭配一個雙連接埠 100GbE 模組</block>
-  <block id="e907544e9df7140708b309d63b376864" category="paragraph">新增文字</block>
-  <block id="536c0db2530016209cf6a71d69470c1c" category="paragraph">本程序說明如何將控制器連接至一個 NS224 機櫃。</block>
   <block id="b079b3155e464d9b84f317b7c289baaa" category="doc">完整的儲存系統設定與組態： AFF C30 與 AFF C60</block>
   <block id="c2193a61b82d60ca9261e895b85747bb" category="doc">安裝硬體： AFF C30 和 AFF C60</block>
   <block id="bde05321bc44e000faa60469a895ce4a" category="paragraph">準備好安裝 AFF C30 或 AFF C60 儲存系統之後，請安裝儲存系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的儲存系統。</block>
   <block id="b96dbc5fbc9ab81f32efde0325589654" category="doc">安裝與設定工作流程： AFF C30 與 AFF C60</block>
-  <block id="fcec2a1b8db28667e03855ac9f46c2f1" category="paragraph">若要安裝及設定 AFF C30 或 AFF C60 儲存系統，您必須檢閱安裝需求與考量事項，準備您的站台，安裝及連接硬體元件，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
   <block id="67867da29f56590b8e9c87517604808b" category="doc">開啟儲存系統電源 - AFF C30 和 AFF C60</block>
   <block id="80fd78b0f849541b11cbcf6acdae3b4f" category="paragraph">將控制器連接至 AFF C30 或 AFF C60 儲存系統的網路和機櫃之後，您就可以開啟機櫃和控制器的電源。</block>
   <block id="fab9e21f1bee0f7c0618cad32b09e254" category="summary">準備安裝 AFF C30 和 AFF C60 平台。</block>
   <block id="e5c1fdfad20885712f2500f11ac35b2f" category="doc">準備安裝 - AFF C30 和 AFF C60</block>
   <block id="79e12a938ddc8f32473767866053dbf9" category="paragraph">準備好安裝 AFF C30 或 AFF C60 儲存系統，方法是準備好場地，打開包裝箱包裝，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
-  <block id="7a3914f84de0175770593720f9a6ce99" category="paragraph">檢閱 AFF C30 或 AFF C60 儲存系統的需求與考量事項。</block>
   <block id="9bf4665a2c4e66c0d1872abb97cf1e62" category="doc">新增 I/O 模組 - AFF C30 和 AFF C60</block>
   <block id="72e4a819218c094d076f11afa9177f29" category="paragraph">當有可用的插槽或所有插槽都已滿時，您可以將 I/O 模組新增至 AFF C30 和 AFF C60 儲存系統。</block>
   <block id="bc5a9bac2cd28850393e45660c8a2ef4" category="doc">新增與更換 I/O 模組的總覽 - AFF C30 與 AFF C60</block>
@@ -11247,4 +11215,16 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f923335af94abdb12e15d306f375ccba" category="sidebar">AFF A20 ， AFF A30 和 AFF A50 I/O 模組</block>
   <block id="78630acc24e5fd1073367e9c78f003a0" category="sidebar">AFF C30 和 AFF C60 開機媒體</block>
   <block id="0cc03c1fb7fac3f451692406956a999d" category="sidebar">AFF C30 和 AFF C60 I/O 模組</block>
+  <block id="d27876edf06fef01e9d562affcf483bc" category="paragraph">若要安裝及設定 AFF A20 ， AFF A30 或 AFF A50 儲存系統，您必須檢閱安裝需求，準備現場，安裝及連接硬體元件，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
+  <block id="2b9366d786af7f25816abf5ad658f2ab" category="inline-link-macro">檢閱安裝需求</block>
+  <block id="bd9e341941a30be8d1d66fd436b9cbb4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="5f0905e544c52c81d90a8c636fddd0a9" category="inline-link-macro-rx"></block></block>
+  <block id="70bfeb1ef79ed88d76859531032e6795" category="paragraph">安裝儲存系統之前，您的儲存系統必須符合安裝需求。</block>
+  <block id="a62423bfdb0c7361946c3892f20d2e7d" category="paragraph">儲存系統最重可達 61.5 磅（ 27.9 公斤）。若要抬起儲存系統，請使用兩個人或液壓舉升設備。</block>
+  <block id="05591bc7cdace84971ece26cdbd0437b" category="example-title">AFF C30 或 AFF C60 ，含兩個雙埠 40/100 GbE I/O 模組</block>
+  <block id="a25f694b3fe46b8223a96d7f7a6709e2" category="example-title">AFF C30 或 AFF C60 搭配一個雙埠 40/100 GbE I/O 模組</block>
+  <block id="40311ade600e0691ceb4ef1447a01304" category="example-title">AFF C30 搭配一個雙連接埠 10/25 GbE I/O 模組</block>
+  <block id="365c5f6cc1c974e74595f900dc07803d" category="example-title">AFF C30 或 AFF C60 搭配一個雙埠 10/25 GbE I/O 模組</block>
+  <block id="61bc9478fe9837a2edfeec12cfef1a17" category="example-title">AFF C30 搭配一個雙連接埠 10/25 GbE 模組</block>
+  <block id="385d33bb3589ce3f38e65ed1e314719e" category="paragraph">若要安裝及設定 AFF C30 或 AFF C60 儲存系統，您必須檢閱安裝需求，準備站台，安裝及連接硬體元件，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
+  <block id="d92a2bc26be46a05b32e6cc5c37b3984" category="paragraph">檢閱 AFF C30 或 AFF C60 儲存系統的需求。</block>
 </blocks>

@@ -14,14 +14,11 @@ summary: 若要更換 I/O 模組、您必須從模組拔下纜線、從模組中
 當有可用插槽或所有插槽均已完全插滿時，您可以將 I/O 模組新增至 AFF A20 ， AFF A30 和 AFF A50 儲存系統。
 
 .關於這項工作
-* 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
-+
+如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
+
 儲存系統有三個位置 LED ：一個在操作員顯示面板上，一個在每個控制器上。位置LED會持續亮起30分鐘。
 
-+
 您可以輸入命令將其關閉 `system location-led _off_`。如果您不確定 LED 是否亮起或熄滅，可以輸入命令來檢查其狀態 `system location-led show`。
-
-
 
 
 

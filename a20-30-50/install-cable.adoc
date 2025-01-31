@@ -1,7 +1,7 @@
 ---
 permalink: a20-30-50/install-cable.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, prepare installation 
+keywords: aff a20, aff a30, aff a50, cabling, cluster cabling, host network cabling, management network cabling, shelf cabling 
 summary: 控制器上的管理網路連接埠連接至交換器。兩個控制器上的HA互連和叢集互連連接埠均已連接好纜線。控制器模組若有訂購、則會連接至外部儲存設備。 
 ---
 = 連接硬體 - AFF A20 ， AFF A30 和 AFF A50
@@ -38,11 +38,11 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["纜線拉片方向"]
 ====
 .無交換器叢集纜線
 --
+將控制器彼此連接，以建立 ONTAP 叢集連線。
+
 .AFF A30 或 AFF A50 ，含兩個雙埠 40/100 GbE I/O 模組
 [%collapsible]
 =====
-將控制器彼此連接，以建立 ONTAP 叢集連線。
-
 .步驟
 . 連接叢集 / HA 互連連線：
 +
@@ -127,11 +127,10 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[使用一
 
 =====
 --
-====
-[role="tabbed-block"]
-====
 .交換式叢集纜線
 --
+將控制器彼此連接，以建立 ONTAP 叢集連線。
+
 .AFF A30 或 AFF A50 ，含兩個雙埠 40/100 GbE I/O 模組
 [%collapsible]
 =====

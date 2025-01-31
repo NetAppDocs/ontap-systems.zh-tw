@@ -1,7 +1,7 @@
 ---
 permalink: c30-60/install-cable.html 
 sidebar: sidebar 
-keywords: aff c30, aff c60, prepare installation 
+keywords: aff c30, aff c60, cabling, cluster cabling, host network cabling, management network cabling, shelf cabling 
 summary: 控制器上的管理網路連接埠連接至交換器。兩個控制器上的HA互連和叢集互連連接埠均已連接好纜線。控制器模組若有訂購、則會連接至外部儲存設備。 
 ---
 = 連接硬體纜線 - AFF C30 和 AFF C60
@@ -38,108 +38,152 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["纜線拉片方向"]
 ====
 .無交換器叢集纜線
 --
-將控制器彼此連接，以建立 ONTAP 叢集連線。
-
-.AFF A30 或 A50 搭配兩個雙埠 100GbE I/O 模組
+.AFF C30 或 AFF C60 ，含兩個雙埠 40/100 GbE I/O 模組
 [%collapsible]
 =====
-插槽 2 和插槽 4 中的 I/O 模組連接埠是 40/100GbE 連接埠。？？？這是否僅適用於 30-50 ，如果是，請將 2 個附註留在原位，但如果全部適用於 3 個，則將其移至新段落下方的區段前置文字？？？？？
+將控制器彼此連接，以建立 ONTAP 叢集連線。
 
 .步驟
 . 連接叢集 / HA 互連連線：
 +
 
-NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
+NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 2 和 4 的 I/O 模組上）。連接埠為 40/100 GbE 。
 
 +
 .. 纜線控制器 A 連接埠 E2A 至控制器 B 連接埠 E2A 。
 .. 纜線控制器 A 連接埠 E4A 至控制器 B 連接埠 E4A 。
 +
 
-NOTE: 插槽 2 和 4 中 I/O 模組上的連接埠 e2b 和 e4b 未使用，可在需要時用於前端（主機網路）連線。
+NOTE: I/O 模組連接埠 e2b 和 e4b 未使用，可供主機網路連線使用。
 
 +
-* 叢集 / HA 互連纜線 *
+*100 GbE 叢集 / HA 互連纜線 *
 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[叢集 HA 纜線]
+image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 100 GbE 纜線]
 
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[使用兩個 100GbE IO 模組的雙節點無交換器叢集佈線圖]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[使用兩個 100GbE IO 模組的 A30 和 A50 無交換器叢集佈線圖]
 
 
 
 
 
 =====
-.AFF A30 或 A50 搭配一個雙埠 100GbE I/O 模組
+.AFF C30 或 AFF C60 搭配一個雙埠 40/100 GbE I/O 模組
 [%collapsible]
 =====
-插槽 2 和插槽 4 中的 I/O 模組連接埠是 40/100GbE 連接埠。？？？
+將控制器彼此連接，以建立 ONTAP 叢集連線。
 
 .步驟
 . 連接叢集 / HA 互連連線：
 +
 
-NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
+NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 40/100 GbE 。
 
 +
 .. 纜線控制器 A 連接埠 E4A 至控制器 B 連接埠 E4A 。
 .. 纜線控制器 A 連接埠 e4b 至控制器 B 連接埠 e4b 。
 +
-* 叢集 / HA 互連纜線 *
+*100 GbE 叢集 / HA 互連纜線 *
 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[叢集 HA 纜線]
+image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 100 GbE 纜線]
 
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[使用一個 100GbE IO 模組的雙節點無交換器叢集佈線圖]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[使用一個 100GbE IO 模組的 A30 和 A50 無交換器叢集佈線圖]
 
 
 
 
 
 =====
-.AFF A20 搭配一個雙連接埠 10/25GbE I/O 模組
+.AFF C30 搭配一個雙連接埠 10/25 GbE I/O 模組
 [%collapsible]
 =====
-新增範例
+將控制器彼此連接，以建立 ONTAP 叢集連線。
 
-+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器"]
+.步驟
+. 連接叢集 / HA 互連連線：
++
+
+NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 10/25 GbE 。
 
 +
+.. 纜線控制器 A 連接埠 E4A 至控制器 B 連接埠 E4A 。
+.. 纜線控制器 A 連接埠 e4b 至控制器 B 連接埠 e4b 。
++
+*25 GbE 叢集 / HA 互連纜線 *
+
++
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器，寬度 = 100px"]
+
++
+image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[使用一個 25 GbE IO 模組的無交換器叢集佈線圖]
+
+
+
+
 
 =====
 --
 .交換式叢集纜線
 --
+.AFF C30 或 AFF C60 ，含兩個雙埠 40/100 GbE I/O 模組
+[%collapsible]
+=====
 將控制器連接至叢集網路交換器，以建立 ONTAP 叢集連線。
 
-.AFF A30 或 A50 搭配兩個雙埠 100GbE I/O 模組
+.步驟
+. 連接叢集 / HA 互連連線：
++
+
+NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 2 和 4 的 I/O 模組上）。連接埠為 40/100 GbE 。
+
++
+.. 纜線控制器 A 連接埠 E4A 至叢集網路交換器 A
+.. 纜線控制器 A 連接埠 E2A 至叢集網路交換器 B
+.. 纜線控制器 B 連接埠 E4A 至叢集網路交換器 A
+.. 纜線控制器 B 連接埠 E2A 至叢集網路交換器 B
++
+
+NOTE: I/O 模組連接埠 e2b 和 e4b 未使用，可供主機網路連線使用。
+
++
+*40/100 GbE 叢集 / HA 互連纜線 *
+
++
+image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 40/100 GbE 纜線]
+
++
+image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[使用兩個 100GbE IO 模組的 A30 和 A50 交換式叢集佈線圖]
+
+
+
+
+
+=====
+.AFF C30 或 AFF C60 搭配一個雙埠 40/100 GbE I/O 模組
 [%collapsible]
 =====
-新增範例
+將控制器連接至叢集網路交換器，以建立 ONTAP 叢集連線。
 
-新增附註：插槽 2 和 4 中 I/O 模組上的 40/100GbE 連接埠 e2b 和 e4b 未使用，可在需要時用於前端連線。
-
-=====
-.AFF A30 或 A50 搭配一個雙埠 100GbE I/O 模組
-[%collapsible]
-=====
 .步驟
 . 將控制器連接至叢集網路交換器：
 +
 
-NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
+NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 40/100 GbE 。
 
 +
-.. 纜線控制器 A 連接埠 E4A 和控制器 B 連接埠 E4A 至叢集網路交換器 A
-.. 纜線控制器 A 連接埠 e4b 和控制器 B 連接埠 e4b 至叢集網路交換器 B
+.. 纜線控制器 A 連接埠 E4A 至叢集網路交換器 A
+.. 纜線控制器 A 連接埠 e4b 至叢集網路交換器 B
+.. 纜線控制器 B 連接埠 E4A 至叢集網路交換器 A
+.. 纜線控制器 B 連接埠 e4b 至叢集網路交換器 B
 +
-* 叢集 / HA 互連纜線 *
+*40/100 GbE 叢集 / HA 互連纜線 *
 
 +
-image::../media/oie_cable100_gbe_qsfp28.png[100 GB 纜線]
+image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 40/100 GbE 纜線]
 
 +
 image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[將叢集連線連接至叢集網路]
@@ -149,10 +193,33 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[�
 
 
 =====
-.AFF A20 搭配一個雙連接埠 10/25GbE I/O 模組
+.AFF C30 搭配一個雙連接埠 10/25 GbE I/O 模組
 [%collapsible]
 =====
-新增範例
+將控制器連接至叢集網路交換器，以建立 ONTAP 叢集連線。
+
+. 將控制器連接至叢集網路交換器：
++
+
+NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 10/25 GbE 。
+
++
+.. 纜線控制器 A 連接埠 E4A 至叢集網路交換器 A
+.. 纜線控制器 A 連接埠 e4b 至叢集網路交換器 B
+.. 纜線控制器 B 連接埠 E4A 至叢集網路交換器 A
+.. 纜線控制器 B 連接埠 e4b 至叢集網路交換器 B
++
+*10/25 GbE 叢集 / HA 互連纜線 *
+
++
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器，寬度 = 100px"]
+
++
+image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg["使用一個 25GbE IO 模組的 A20 交換式叢集佈線圖"]
+
+
+
+
 
 =====
 --
@@ -161,25 +228,26 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[�
 
 == 步驟 2 ：連接主機網路連線
 
-將控制器連接至主機網路。此程序會因您的儲存系統機型和 I/O 模組組組態而異。主機連線能力是 40/100 GbE 。？？
+將控制器連接至主機網路。
 
-.AFF A30 或 A50 搭配兩個雙埠 100GbE I/O 模組
+此程序會因您的儲存系統機型和 I/O 模組組組態而異。
+
+.AFF C30 或 AFF C60 ，含兩個雙埠 40/100 GbE I/O 模組
 [%collapsible]
 ====
-文字
-
-====
-.AFF A30 或 A50 搭配一個雙埠 100GbE I/O 模組
-[%collapsible]
-====
+.步驟
 . 連接主機網路連線。
 +
 以下子步驟為選用主機網路纜線的範例。如有需要，請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]以瞭解您的特定儲存系統組態。
 
 +
-.. 選用：連接至 40/100GbE 主機網路交換器的纜線。
+.. 選用：連接主機網路交換器的纜線控制器。
 +
-每個控制器上的纜線連接埠 E2A ， e2b ， e2c 和 e2d 連接至乙太網路主機網路交換器。
+在每個控制器上，使用纜線連接埠 e2b 和 e4b 連接乙太網路主機網路交換器。
+
++
+
+NOTE: 插槽 2 和插槽 4 中 I/O 模組的連接埠為 40/100 GbE （主機連線為 40/100 GbE ）。
 
 +
 *40/100 GbE 纜線 *
@@ -188,17 +256,57 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[�
 image::../media/oie_cable_sfp_gbe_copper.png[40/100 GB 纜線]
 
 +
-image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[連接至 40/100GbE 乙太網路主機網路交換器的纜線]
+image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[連接至 40/100GbE 乙太網路主機網路交換器的纜線]
 
-.. 選用：連接 FC 主機網路交換器的纜線。
+.. 選用：連接 FC 主機網路交換器的纜線控制器。
 +
-將每個控制器上的連接埠 1a ， 1b ， 1c 和 1d 連接到 FC 主機網路交換器。
+在每個控制器上，將連接埠 1a ， 1b ， 1c 和 1D 連接至 FC 主機網路交換器。
 
 +
 * 64 Gb/s FC 纜線 *
 
 +
-image::../media/oie_cable_sfp_gbe_copper.png[64 GB 光纖通道纜線]
+image:../media/oie_cable_sfp_gbe_copper.png["64 GB 光纖通道纜線，寬度 = 100px"]
+
++
+image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[使用兩個 IO 模組的纜線 A30 或 A50 至 64GB 光纖通道主機網路交換器]
+
+
+
+
+
+====
+.AFF C30 或 AFF C60 搭配一個雙埠 10/25 GbE I/O 模組
+[%collapsible]
+====
+.步驟
+. 連接主機網路連線。
++
+以下子步驟為選用主機網路纜線的範例。如有需要，請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]以瞭解您的特定儲存系統組態。
+
++
+.. 選用：連接主機網路交換器的纜線控制器。
++
+在每個控制器上，將連接埠 E2A ， e2b ， e2c 和 e2d 連接至乙太網路主機網路交換器。
+
++
+*10/25 GbE 纜線 *
+
++
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器，寬度 = 100px"]
+
++
+image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[連接至 40/100GbE 乙太網路主機網路交換器的纜線]
+
+.. 選用：連接 FC 主機網路交換器的纜線控制器。
++
+在每個控制器上，將連接埠 1a ， 1b ， 1c 和 1D 連接至 FC 主機網路交換器。
+
++
+* 64 Gb/s FC 纜線 *
+
++
+image:../media/oie_cable_sfp_gbe_copper.png["64 GB 光纖通道纜線，寬度 = 100px"]
 
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[連接至 64GB 光纖信道主機網路交換器的纜線]
@@ -208,10 +316,44 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[連接至
 
 
 ====
-.AFF A20 搭配一個雙連接埠 100GbE 模組
+.AFF C30 搭配一個雙連接埠 10/25 GbE 模組
 [%collapsible]
 ====
-新增文字
+.步驟
+. 連接主機網路連線。
++
+以下子步驟為選用主機網路纜線的範例。如有需要，請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]以瞭解您的特定儲存系統組態。
+
++
+.. 選用：連接纜線控制器至主機網路交換器。
++
+在每個控制器上，將連接埠 E2A ， e2b ， e2c 和 e2d 連接至乙太網路主機網路交換器。
+
++
+*10/25 GbE 纜線 *
+
++
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器，寬度 = 100pxx"]
+
++
+image::../media/drw_isi_a20_host_4p_25gbe_cabling_ieops-2017.svg[連接電路 A20 至 40/100GbE 乙太網路主機網路交換器]
+
+.. 選用：連接 FC 主機網路交換器的纜線控制器。
++
+在每個控制器上，將連接埠 1a ， 1b ， 1c 和 1D 連接至 FC 主機網路交換器。
+
++
+* 64 Gb/s FC 纜線 *
+
++
+image:../media/oie_cable_sfp_gbe_copper.png["64 GB 光纖通道纜線，寬度 = 100pxx"]
+
++
+image::../media/drw_isi_a20_4p_64gb_fc_cabling_ieops-2016.svg[連接 A20 至 64GB 光纖信道主機網路交換器]
+
+
+
+
 
 ====
 
