@@ -3979,17 +3979,6 @@
   <block id="d221362a63e7ae50e83d35a15224dfbc" category="inline-link">尋找Data ONTAP 適用於您的版本的《高可用度組態指南》（High Availability Configuration Guide）</block>
   <block id="fdb5e3795d932923cacf5ee53c989cbb" category="paragraph"><block ref="fdb5e3795d932923cacf5ee53c989cbb" category="inline-link-rx"></block></block>
   <block id="8b641292568e892fbb88f218a413255c" category="paragraph">系統會在載入程式提示下停止。</block>
-  <block id="550ffaa7219faf74146770514db0d8e8" category="inline-link-macro">準備netboot</block>
-  <block id="df5267f8e4bbfa9add1dd732e6b68e41" category="inline-link-macro">在節點4上設定FC或UTA/UTA2組態</block>
-  <block id="bc26b5e5559721e19875fb91dce22cec" category="inline-link-macro">在節點3上設定FC或UTA/UTA2組態</block>
-  <block id="1a02fe8fc6a186319dd3345573fc3717" category="inline-link-macro">安裝及開機節點4</block>
-  <block id="27af4227ca8acc558df96e2723ec9b37" category="inline-link-macro">在新的控制器模組上設定儲存加密</block>
-  <block id="ac616410952c35e808a3c7ce4ea5b4a7" category="inline-link-macro">取消委任舊系統</block>
-  <block id="bdbf296139657929f989f110dccebbd3" category="doc">檢查Aggregate重新配置失敗</block>
-  <block id="64f7904c016a035f1928a2cbeea82ab1" category="section-title">在完成升級後、原本位於節點1上的Aggregate歸node4所有</block>
-  <block id="83b27b00949218cb0d9ec7e1eb1c92ad" category="inline-link-macro">準備節點以進行升級</block>
-  <block id="93d6a78ca650a17d67b6a45ca81b7f3f" category="inline-link-macro">淘汰節點1</block>
-  <block id="5ff20c188ceb23808ed9b47d8e5637ff" category="inline-link-macro">安裝及開機節點3</block>
   <block id="3c18bf7f079d36181ad6878ed8071663" category="paragraph">您必須將組態資訊從根磁碟區還原至開機裝置。</block>
   <block id="fb1a4e47184adef08299b0192c4065a3" category="paragraph">您需要在節點3和節點4上執行這些步驟、在一個節點上完成每個步驟、然後在另一個節點上完成每個步驟、然後再繼續下一個步驟。</block>
   <block id="e3c0709957067379b297d87750941317" category="list-text">從載入程式提示字元「boot_ONTAP功能表」存取開機功能表</block>
@@ -3997,7 +3986,6 @@
   <block id="e568219783dc2975662f32e6665b9312" category="paragraph">更新Flash程序會執行數分鐘、然後系統重新開機。</block>
   <block id="64c7b7b950f686aaa9399673582360b1" category="list-text">當系統提示您確認系統ID不相符時、請輸入「y」。</block>
   <block id="e4c1c828d40a575431492bab6401d8ae" category="paragraph">啟動順序會正常運作。</block>
-  <block id="befd434b83717d2b7bd83967d66e9157" category="inline-link-macro">淘汰節點2</block>
   <block id="d2ce523f68b472a867f3bd2b22235971" category="section-title">新的硬體增強功能</block>
   <block id="c08618c5a0ce81948b9cda2e429f0deb" category="doc">更換NVMEM電池AFF - REC190</block>
   <block id="8beaeea3973b517e3c11448d6de4ac1d" category="paragraph">若要存取控制器模組內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。</block>
@@ -4780,49 +4768,6 @@
   <block id="6cc45a7a318afd2ecfa9b7b05c51ce5c" category="sidebar">移動標牌電源供應器和纜線</block>
   <block id="6d5cfac2de29a5333b0a36fb584f5df6" category="sidebar">反轉門的轉軸和鎖扣</block>
   <block id="8c8eaddfb0bbf5e47c2729602126527a" category="sidebar">重新安裝門並點亮徽章</block>
-  <block id="7bd0358c3b996edfe19bd3da912bde62" category="sidebar">Cisco Nexus 9336C-FX2共享交換器</block>
-  <block id="eac9e7086f92a026c0dbe06001206204" category="sidebar">Cisco共享交換器的設定與組態指南</block>
-  <block id="b72c69a60f695309089392e6d394557c" category="sidebar">安裝NX-OS軟體與參考組態檔（RCT）</block>
-  <block id="b7167dcb288bc483f270fcd135c332ec" category="sidebar">透過新增兩個共用交換器、從具有Data儲存設備的無交換器叢集移轉</block>
-  <block id="467a501ced0eaaee20142a975e074f95" category="sidebar">透過新增兩個共用交換器、從具有Data儲存設備的交換式組態進行移轉</block>
-  <block id="31a64a44fce8ed03b7b71b06a1ddc567" category="sidebar">重複使用儲存交換器、從無交換器組態移轉至SAT儲存設備</block>
-  <block id="62bb127cfc33134b4b7ba3eb79ae05f3" category="sidebar">重複使用儲存交換器、從具有SAT儲存設備的交換式叢集移轉</block>
-  <block id="8a6725809e9d102de1fa5e1c7d8c431d" category="sidebar">更換Cisco Nexus 9336C-FX2共享交換器</block>
-  <block id="8fb4b518ce39a0704f920c9d4f2f7b77" category="sidebar">使用Aggregate重新配置來升級控制器硬體</block>
-  <block id="3ffee04e4bb020103f1bece18c2ac58e" category="sidebar">自動化控制器升級程序</block>
-  <block id="2e4e187dce2e8970e167f157b1040ef2" category="sidebar">決定是否使用Aggregate重新配置指南</block>
-  <block id="0e635d7a91ccc4eccdfb03e35353c899" category="sidebar">必要的工具與文件</block>
-  <block id="da289ccf0fe9b7b8a0a8c3f55c76c877" category="sidebar">使用ARL升級控制器的準則</block>
-  <block id="e7323a54c9f53a295a2c4d707c7b3fce" category="sidebar">驗MetroCluster 證整個過程的效能狀況</block>
-  <block id="f1b92e8f33cf66355b4b9762bf95256b" category="sidebar">檢查MetroCluster 是否有任何組態錯誤</block>
-  <block id="9759ad3dfabdb9631ec5fba47d71c313" category="sidebar">驗證切換、修復及切換</block>
-  <block id="32de3fe80cc3182e6d21291decbf392a" category="sidebar">ARL升級總覽</block>
-  <block id="15577d2c813239ab53fdc6f35d8a1dc5" category="sidebar">升級節點配對</block>
-  <block id="eee953986530407bd81dc7dec37f7151" category="sidebar">第1階段準備升級</block>
-  <block id="26678fb639f40f31f518f926dd61b9ab" category="sidebar">取得外部金鑰管理伺服器的IP位址以進行儲存加密</block>
-  <block id="d410001785d5e6cf46422378e7dc305f" category="sidebar">第2階段重新部署和淘汰節點1</block>
-  <block id="7de24b16e7313de118da7559fecd8fd4" category="sidebar">將節點1擁有的非根Aggregate和NAS資料lifs重新部署到節點2</block>
-  <block id="97075c537f59de355c8d44c57697ef74" category="sidebar">重新部署故障或被否決的集合體</block>
-  <block id="db0f435716365df4f28208e723c02179" category="sidebar">第3階段：安裝與開機節點3</block>
-  <block id="63ad3c4d36a1a9f413872ac57af754a7" category="sidebar">驗證node3安裝</block>
-  <block id="7ce57c4ce051863fc414ccd402a178f5" category="sidebar">還原節點3上的金鑰管理程式組態</block>
-  <block id="840820d31f6c078aeb1567ce302bdd05" category="sidebar">將節點1擁有的非根Aggregate和NAS資料lifs從節點2移至節點3</block>
-  <block id="cd93c6e9e61b2d31c781ea8786cb4e81" category="sidebar">第4階段重新部署和淘汰節點2</block>
-  <block id="43ccb3503988f16a767b1af1e29d2384" category="sidebar">將非根Aggregate和NAS資料LIF從節點2重新定位至節點3</block>
-  <block id="62e340083f3c5febba2fa693ce759a1a" category="sidebar">第5階段：安裝與開機節點4</block>
-  <block id="405ab80b96586360ea83735c37305935" category="sidebar">驗證node4安裝</block>
-  <block id="6d23265c57ba430c404cc6f3a940e117" category="sidebar">還原節點4上的金鑰管理程式組態</block>
-  <block id="32d978cffec9875e4d92dc55b84df69b" category="sidebar">將節點2擁有的非根Aggregate和NAS資料lifs從節點3移至節點4</block>
-  <block id="ded1f8eb21bf382d51471642d150b8d5" category="sidebar">第6階段完成升級</block>
-  <block id="b81d64bc331b1e2e60b2cef595c6ddf8" category="sidebar">完成MetroCluster 升級以進行F精選FC組態</block>
-  <block id="1a4d3feb333aa03c1008e54bae47d8e9" category="sidebar">請確定新的控制器已正確設定</block>
-  <block id="da7d6f53a5e074768e000aca830b3bfa" category="sidebar">在新的控制器模組上設定NetApp Volume Encryption</block>
-  <block id="140c4ad72e426b76f7e15699ae078635" category="sidebar">恢復SnapMirror作業</block>
-  <block id="231cf4c70d866b616c21baddaeed0696" category="sidebar">疑難排解</block>
-  <block id="b02aac451baf6d7b36d981f898537961" category="sidebar">Aggregate重新配置失敗</block>
-  <block id="d75bd21e9af20a5036c0fbf461bc4e2d" category="sidebar">重新開機、出現問題或重新開機</block>
-  <block id="e33c48b52ab7d302b4af41aca3bbe858" category="sidebar">程序的多個階段可能會發生的問題</block>
-  <block id="06d473a91334306e0ea337d0cf403b02" category="sidebar">LIF移轉失敗</block>
   <block id="c8773f5cba3b9e8aa265fa0dc1a2c09e" category="sidebar">VA200系統AFF</block>
   <block id="9ea8548070881e82ab793011f6dd50c5" category="sidebar">安裝與設定AFF</block>
   <block id="fb1ca7e905b80bde19bff1b5175a28a8" category="sidebar">叢集組態工作表</block>
@@ -10677,7 +10622,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c486d43df45ffe41cde84a1b0fa45aa0" category="paragraph"><block ref="c486d43df45ffe41cde84a1b0fa45aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3eb777419d46f8ec20ca944795a4d26" category="list-text">如果要將纜線連接至光纖交換器，請先將光纖收發器插入控制器連接埠，再將纜線連接至交換器連接埠。</block>
   <block id="d16a227aab66041a81c6f88b290eb486" category="section-title">步驟 1 ：連接叢集 / HA 連線</block>
-  <block id="e5f780ef73bd41c1dd64af7a1a1a31ac" category="paragraph">將控制器連接至 ONTAP 叢集。此程序會因您的儲存系統機型和 I/O 模組組組態而異。</block>
   <block id="134e0586a0879fa097abfb47d5e64dbe" category="open-title">無交換器叢集纜線</block>
   <block id="ee68cf12a16ca46d58bedd8cf9051f32" category="example-title">AFF A30 或 AFF A50 ，含兩個雙埠 40/100 GbE I/O 模組</block>
   <block id="1de8dab1beab3d5ee0495c66a3c814b7" category="paragraph">將控制器彼此連接，以建立 ONTAP 叢集連線。</block>
@@ -10700,7 +10644,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6fb39f4b9d1de8f2f3a463d3f9eedd52" category="paragraph"><block ref="6fb39f4b9d1de8f2f3a463d3f9eedd52" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e04550968face4eb31df851171941f8" category="image-alt">使用一個 25 GbE IO 模組的無交換器叢集佈線圖</block>
   <block id="666ce5251c9c6f25db5da3d713f9b34a" category="open-title">交換式叢集纜線</block>
-  <block id="c9802659f25463254a11923317d9fd06" category="paragraph">將控制器連接至叢集網路交換器，以建立 ONTAP 叢集連線。</block>
   <block id="3a343cf67a3c616a35a00f3a82358fe3" category="list-text">纜線控制器 A 連接埠 E4A 至叢集網路交換器 A</block>
   <block id="627172884756ce9f3fccfd51a4559c59" category="list-text">纜線控制器 A 連接埠 E2A 至叢集網路交換器 B</block>
   <block id="9c7f10ca7cef7791dc302ef4b9fc6cff" category="list-text">纜線控制器 B 連接埠 E4A 至叢集網路交換器 A</block>
@@ -10716,35 +10659,18 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3488ff918c31f4a57e74bbab6ef9bcc9" category="inline-image-macro">使用一個 25GbE IO 模組的 A20 交換式叢集佈線圖</block>
   <block id="ae3bd4fc66b4084d0dc856b5f0230d72" category="paragraph"><block ref="ae3bd4fc66b4084d0dc856b5f0230d72" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7f99cbc2aa28ab9fed6e99fa94242b4a" category="section-title">步驟 2 ：連接主機網路連線</block>
-  <block id="9b8a63481b35238e3f6af2aff25d8e9a" category="paragraph">將控制器連接至主機網路。</block>
-  <block id="40a36b0ffd7a648bae61167d750303ae" category="paragraph">此程序會因您的儲存系統機型和 I/O 模組組組態而異。</block>
-  <block id="b3d6f5fd41d136be22908a2112c08ed2" category="list-text">連接主機網路連線。</block>
-  <block id="9ef6fba4dfd63e9f14ee44588abe6952" category="paragraph">以下子步驟為選用主機網路纜線的範例。如有需要，請參閱<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>以瞭解您的特定儲存系統組態。</block>
-  <block id="1c4fc31a2e3f3932ec066d51327fdee3" category="list-text">選用：連接主機網路交換器的纜線控制器。</block>
   <block id="8246042d23ca859d83185957ac9c4044" category="paragraph">在每個控制器上，使用纜線連接埠 e2b 和 e4b 連接乙太網路主機網路交換器。</block>
   <block id="e827a0600a7ebd00f36ea855012f66a1" category="admonition">插槽 2 和插槽 4 中 I/O 模組的連接埠為 40/100 GbE （主機連線為 40/100 GbE ）。</block>
   <block id="7329bfa51dec924de206ced093bea600" category="paragraph">*40/100 GbE 纜線 *</block>
   <block id="8f31147c7cfeb7520dc9739e31dedc90" category="image-alt">40/100 GB 纜線</block>
   <block id="ec83c89c1bfd1fa2fe72db4df75b0e43" category="image-alt">連接至 40/100GbE 乙太網路主機網路交換器的纜線</block>
-  <block id="a4beda8ffedc190bd2365aa3c0a3982e" category="list-text">選用：連接 FC 主機網路交換器的纜線控制器。</block>
   <block id="8f03269dbdbab70bab244893051fb6ec" category="paragraph">在每個控制器上，將連接埠 1a ， 1b ， 1c 和 1D 連接至 FC 主機網路交換器。</block>
   <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">* 64 Gb/s FC 纜線 *</block>
   <block id="176084e0e3d1d8b98919ade28704bd7b" category="inline-image-macro">64 GB 光纖通道纜線，寬度 = 100px</block>
   <block id="0174aef3c6edce25256f90638a06bdca" category="paragraph"><block ref="0174aef3c6edce25256f90638a06bdca" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c8610994d0d0d721ba1a3c2b56d2606" category="image-alt">使用兩個 IO 模組的纜線 A30 或 A50 至 64GB 光纖通道主機網路交換器</block>
-  <block id="6070aae2c5cbb466ea4b44033555f52a" category="example-title">AFF A30 或 AFF A50 搭配一個雙埠 10/25 GbE I/O 模組</block>
   <block id="baae66b5065d8c53c84d82ba2175779d" category="paragraph">在每個控制器上，將連接埠 E2A ， e2b ， e2c 和 e2d 連接至乙太網路主機網路交換器。</block>
   <block id="c053ea984f8ec26545ef5a0f8e3c516b" category="paragraph">*10/25 GbE 纜線 *</block>
   <block id="53b32e6926c94a5a2ab06b2fe3836135" category="image-alt">連接至 64GB 光纖信道主機網路交換器的纜線</block>
-  <block id="2fcfbaa3d5181e463a6bbfa1a15ce7fa" category="example-title">AFF A20 搭配一個雙連接埠 10/25 GbE 模組</block>
-  <block id="3a6f33d3d155b4ae4ac4c5555a5a5b30" category="list-text">選用：連接纜線控制器至主機網路交換器。</block>
-  <block id="615ea66b0774b4053f21b1c6a497d682" category="inline-image-macro">GbE SFP 銅線連接器，寬度 = 100pxx</block>
-  <block id="3448e0c15182366c2b7b3aa1515e467c" category="paragraph"><block ref="3448e0c15182366c2b7b3aa1515e467c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f6e881d94dc3ef7c3a5b2444eddf6212" category="image-alt">連接電路 A20 至 40/100GbE 乙太網路主機網路交換器</block>
-  <block id="09b66647463ed1ce42bd62c5b8ec2e1a" category="paragraph">在每個控制器上，將連接埠 1a ， 1b ， 1c 和 1D 連接至 FC 主機網路交換器。</block>
-  <block id="8e97dad8f8493822d0e00e75c6d71f3c" category="inline-image-macro">64 GB 光纖通道纜線，寬度 = 100pxx</block>
-  <block id="a592636155b15ffbef0e20c00b496be4" category="paragraph"><block ref="a592636155b15ffbef0e20c00b496be4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="be986ea08bb54dd79ad4a1cee8ab3d63" category="image-alt">連接 A20 至 64GB 光纖信道主機網路交換器</block>
   <block id="945babbf23a8741321d27a1c4a0c4200" category="section-title">步驟 3 ：連接管理網路連線</block>
   <block id="b88fb46fa64622aa179b7b543ddf13a5" category="paragraph">將控制器連接至管理網路。</block>
   <block id="e42848811631f979cb5744f72268013a" category="list-text">將每個控制器上的管理（扳手）連接埠連接到管理網路交換器。</block>
@@ -10772,7 +10698,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8bfccb1f0c0fcef7c65c13971279707a" category="paragraph">安裝儲存系統的硬體之後<block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="d18e261115fca673ca85d869ef16199c" category="doc">安裝與設定工作流程： AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="3cdf8c6347bdc0a257b06253a291ef6c" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
-  <block id="efbed9ff10698a899995d519b6515646" category="paragraph">若要準備安裝，您必須準備好場地，檢查環境和電力需求，並確保有足夠的機架空間。然後、打開設備的包裝、將其內容與裝箱單進行比較、並註冊硬體以取得支援效益。</block>
   <block id="966353821596fdf316108d72854ad8be" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
   <block id="14dba6115fa0ee08da437dd9fc5018c2" category="paragraph">若要安裝硬體，請為您的儲存系統和機櫃安裝軌道套件，然後在機櫃或電信機架中安裝並固定儲存系統和機櫃。</block>
   <block id="88b736e6d5561b4dc7cce39802381ee6" category="inline-link-macro">連接硬體纜線</block>
@@ -11218,13 +11143,22 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d27876edf06fef01e9d562affcf483bc" category="paragraph">若要安裝及設定 AFF A20 ， AFF A30 或 AFF A50 儲存系統，您必須檢閱安裝需求，準備現場，安裝及連接硬體元件，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
   <block id="2b9366d786af7f25816abf5ad658f2ab" category="inline-link-macro">檢閱安裝需求</block>
   <block id="bd9e341941a30be8d1d66fd436b9cbb4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="5f0905e544c52c81d90a8c636fddd0a9" category="inline-link-macro-rx"></block></block>
-  <block id="70bfeb1ef79ed88d76859531032e6795" category="paragraph">安裝儲存系統之前，您的儲存系統必須符合安裝需求。</block>
   <block id="a62423bfdb0c7361946c3892f20d2e7d" category="paragraph">儲存系統最重可達 61.5 磅（ 27.9 公斤）。若要抬起儲存系統，請使用兩個人或液壓舉升設備。</block>
   <block id="05591bc7cdace84971ece26cdbd0437b" category="example-title">AFF C30 或 AFF C60 ，含兩個雙埠 40/100 GbE I/O 模組</block>
   <block id="a25f694b3fe46b8223a96d7f7a6709e2" category="example-title">AFF C30 或 AFF C60 搭配一個雙埠 40/100 GbE I/O 模組</block>
-  <block id="40311ade600e0691ceb4ef1447a01304" category="example-title">AFF C30 搭配一個雙連接埠 10/25 GbE I/O 模組</block>
-  <block id="365c5f6cc1c974e74595f900dc07803d" category="example-title">AFF C30 或 AFF C60 搭配一個雙埠 10/25 GbE I/O 模組</block>
-  <block id="61bc9478fe9837a2edfeec12cfef1a17" category="example-title">AFF C30 搭配一個雙連接埠 10/25 GbE 模組</block>
   <block id="385d33bb3589ce3f38e65ed1e314719e" category="paragraph">若要安裝及設定 AFF C30 或 AFF C60 儲存系統，您必須檢閱安裝需求，準備站台，安裝及連接硬體元件，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
   <block id="d92a2bc26be46a05b32e6cc5c37b3984" category="paragraph">檢閱 AFF C30 或 AFF C60 儲存系統的需求。</block>
+  <block id="b3fb7cc55fec6d7df9078e2ee7739718" category="paragraph">正確插入時， DIMM 會很容易插入，但會緊密插入插槽中。如果沒有、請重新插入DIMM。</block>
+  <block id="7e08ee4b466dc677d31c40c8b0488339" category="list-text">目視檢查 DIMM ，確保 DIMM 完全對齊並完全插入插槽。</block>
+  <block id="34f650ca44fabe66ff7e4095a137da22" category="list-text">確保儲存系統中的所有其他元件都能正常運作；否則，請先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續。」</block>
+  <block id="54d890bf92693607c99bccb67f9933f5" category="paragraph">連接控制器以建立 ONTAP 叢集連線。</block>
+  <block id="d48b3cfe096b47bcb7f13e683c934beb" category="paragraph">將控制器連接至乙太網路或 FC 主機網路。</block>
+  <block id="bb8661c49545cac68358046e25b8f950" category="open-title">乙太網路主機纜線</block>
+  <block id="3c90cea8d34e6c024dcfcf7fbe2bc396" category="example-title">AFF A20 ， A30 或 AFF A50 ，搭配一個 4 埠 10/25 GbE I/O 模組</block>
+  <block id="91ca13b03c277f557b91f705d4455de5" category="open-title">FC 主機纜線</block>
+  <block id="45adc6168b3bfdd0a69aad7185cab6d2" category="example-title">AFF A20 ， A30 或 AFF A50 ，搭配一個 4 埠 64 Gb/s FC I/O 模組</block>
+  <block id="5b903193757e7495dce32499ded20f07" category="paragraph">安裝儲存系統之前，必須符合安裝需求。</block>
+  <block id="82f66f7658dd53410415bd1c67e9ccad" category="paragraph">為了準備安裝，請準備好場地，檢查環境和電力需求，並確保有足夠的機架空間。然後，打開設備包裝，將內容物與裝箱單進行比較，並註冊硬體以取得支援效益。</block>
+  <block id="c273a3f4ab5c9add6857208b8a70d10e" category="example-title">AFF C30 或 AFF C60 搭配一個 4 埠 10/25 GbE I/O 模組</block>
+  <block id="46a9bbd60b5adf699bea6b74307aac99" category="example-title">AFF C30 或 AFF C60 搭配一個 4 埠 64 Gb/s FC I/O 模組</block>
 </blocks>
