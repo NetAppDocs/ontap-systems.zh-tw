@@ -13,17 +13,12 @@ summary: 若要更換機箱、您必須關閉控制器。
 == 關閉控制器 - ASA A900
 
 [role="lead"]
-關閉控制器、以便在機箱上執行維護。
-
-此程序適用於具有兩個節點組態的系統。如果您的系統具有兩個以上的節點、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster["如何在四節點叢集中執行一個 HA 配對的正常關機和開機"^]。
+此程序適用於具有兩個節點組態的系統。有關在服務叢集時正常關機的詳細資訊，請參閱 https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["正常關機並開機儲存系統解決方案指南 - NetApp 知識庫"]。
 
 .開始之前
-* 停止所有用戶端 / 主機存取 NetApp 系統上的資料。
-* 暫停外部備份工作。
 * 請確定您擁有必要的權限和認證：
 +
 ** ONTAP 的本機系統管理員認證。
-** NetApp 板載金鑰管理（ OKM ）叢集範圍的複雜密碼（如果使用儲存加密或 NVE/NAE ）。
 ** 每個控制器的 BMC 存取能力。
 
 
@@ -39,22 +34,23 @@ summary: 若要更換機箱、您必須關閉控制器。
 
 .步驟
 . 透過 SSH 登入叢集、或使用本機主控台纜線和筆記型電腦 / 主控台、從叢集中的任何節點登入。
-. 關閉 AutoSupport 並指出您預期系統離線的時間：
+. 停止所有用戶端 / 主機存取 NetApp 系統上的資料。
+. 暫停外部備份工作。
+. 如果啟用 AutoSupport ，請抑制個案建立，並指出您預期系統離線的時間：
 +
-`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
+`system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
 
-. 識別所有節點的 SP/BMC 位址：
+. 識別所有叢集節點的 SP / BMC 位址：
 +
 `system service-processor show -node * -fields address`
 
-. 結束叢集 Shell ： `exit`
-. 使用上一步輸出中列出的任何節點的 IP 位址、透過 SSH 登入 SP/BMC 。
+. 結束叢集 Shell ：
++
+`exit`
+
+. 使用上一步輸出中列出的任何節點的 IP 位址，透過 SSH 登入 SP / BMC ，以監控進度。
 +
 如果您使用的是主控台 / 筆記型電腦、請使用相同的叢集管理員認證登入控制器。
-
-+
-
-NOTE: 開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。
 
 . 停止位於受損機箱中的兩個節點：
 +
@@ -64,7 +60,9 @@ NOTE: 開啟每個 SP/BMC 連線的 SSH 工作階段、以便監控進度。
 
 NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. 當您看到時、請為叢集中的每個控制器輸入 * y* `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
-{y|n}:_`
+. 當您看到下列項目時，請為叢集中的每個控制器輸入 * y* ：
++
+`Warning: Are you sure you want to halt node _<node_name>_? {y|n}:`
+
 . 等待每個控制器停止並顯示載入器提示。
 
