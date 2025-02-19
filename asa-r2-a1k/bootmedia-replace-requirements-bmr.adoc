@@ -13,12 +13,25 @@ summary: 瞭解更換開機媒體的需求。
 [role="lead"]
 更換開機媒體之前、請務必檢閱下列需求。
 
-* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
-* 請務必在正確的控制器上套用下列步驟中的命令：
-+
-** _減損_控制器是您要執行維護的控制器。
-** _Healthy控制器是受損控制器的HA合作夥伴。
-
-
+* 您必須使用從 NetApp 收到的替換開機媒體來取代故障的開機媒體。
 * 故障控制器上不得有故障的叢集連接埠。
+* 判斷內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是使用下列其中一種方法來設定：
++
+** 您可以詢問系統管理員是否已啟用 OKM 或 EKM 。
+** 若要檢查 OKM 是否已啟用，您可以使用 `security key-manager onboard show`。
+** 若要檢查 EKM 是否已啟用，您可以使用 `security key-manager external show`。
 
+
+* 若為 OKM ，您需要 OKM 複雜密碼檔案內容。
+* 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
++
+** /ccfcard/kmip/servers.cfg 檔案。
+** /ccfcard/kmip/certs/client.crt 檔案。
+** /ccfcard/kmip/certs/client.key 檔案。
+** /ccfcard/kmip/certs/ca.pem 檔案。
+
+
+
+
+.下一步
+檢閱開機媒體需求之後link:bootmedia-shutdown-bmr.html["關閉受損的控制器"]，您就可以了。

@@ -2,31 +2,25 @@
 :allow-uri-read: 
 
 
-當開機媒體毀損時、從合作夥伴節點還原 ONTAP 映像。
+.開始之前
+* 判斷內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是使用下列其中一種方法來設定：
++
+** 如果 OKM 或 EKM 已啟用，您可以詢問客戶或系統管理員。
+** 若要檢查 OKM 是否已啟用，您可以使用 `security key-manager onboard show`。
+** 若要檢查 EKM 是否已啟用，您可以使用 `security key-manager external show`。
 
-.關於這項工作
-如果節點的開機媒體毀損、開機程序將在 Loader 提示時停止、並顯示開機錯誤訊息。
 
-當您遇到這些開機錯誤訊息時、需要從合作夥伴節點還原 ONTAP 映像。
+* 若為 OKM ，您需要 OKM 複雜密碼檔案內容。
+* 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
++
+** /ccfcard/kmip/servers.cfg 檔案。
+** /ccfcard/kmip/certs/client.crt 檔案。
+** /ccfcard/kmip/certs/client.key 檔案。
+** /ccfcard/kmip/certs/ca.pem 檔案。
 
-.顯示開機錯誤訊息範例
-[%collapsible]
-====
-....
-Can't find primary boot device u0a.0
-Can't find backup boot device u0a.1
-ACPI RSDP Found at 0x777fe014
 
-Starting AUTOBOOT press Ctrl-C to abort...
-Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
 
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat)
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat)
 
-Autoboot of PRIMARY image failed. Device not found (-6)
-LOADER-A>
-....
-====
 .步驟
 . 在 Loader 提示字元中、輸入命令：
 +
@@ -38,43 +32,67 @@ LOADER-A>
 +
 `Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
-. 在 Loader 設定本機連接埠並從合作夥伴節點執行時，監控開機媒體還原程序 `netboot`。
+. 監控開機媒體安裝恢復程序。
 +
-當 netboot 正在執行時、 `Starting BMR`會顯示訊息。
+程序完成並顯示 `Installation complete.`訊息。
 
-. 根據加密方法，選取符合您系統組態的選項：
+. 系統會檢查加密和加密類型，並顯示兩個訊息中的其中一個。視所顯示的訊息而定，請採取下列其中一項動作：
++
+
+IMPORTANT: 有時候，程序可能無法識別系統上是否已設定金鑰管理程式。它會顯示錯誤訊息，詢問是否已為系統設定金鑰管理程式，然後詢問已設定的金鑰管理程式類型。解決此問題後，程序將會繼續。
+
++
+.顯示組態錯誤尋找提示的範例
+[%collapsible]
+====
+....
+Error when fetching key manager config from partner ${partner_ip}: ${status}
+
+Has key manager been configured on this system
+
+Is the key manager onboard
+
+....
+====
++
+[cols="1,2"]
+|===
+| 如果您看到此訊息 ... | 執行此動作... 
+
+
+ a| 
+`key manager is not configured. Exiting.`
+ a| 
+系統上未安裝加密。完成下列步驟：
+
+.. 顯示登入提示時登入節點，並將儲存設備交回：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+.. 移至步驟 5 ，啟用停用的自動恢復功能。
+
+
+
+
+ a| 
+`key manager is configured.`
+ a| 
+移至步驟 4 以還原適當的金鑰管理程式。
+
+節點可存取開機功能表並執行：
+
+** 選項 10 適用於內建金鑰管理程式（ OKM ）的系統。
+** 選項 11 適用於具有外部金鑰管理程式（ EKM ）的系統。
+
+
+|===
+. 選取適當的金鑰管理程式還原程序。
 +
 [role="tabbed-block"]
 ====
-.無加密
---
-如果未偵測到加密、則開機媒體還原程序會在不需要金鑰管理的情況下繼續進行。
-
-.. 從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。
-.. 恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
-
-
-....
-
-varfs_backup_restore: update checksum for varfs.tgz
-varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
-varfs_backup_restore: Rebooting to load the new varfs
-.
-Terminated
-varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
-
-....
-.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
-.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
-+
-`storage failover giveback -ofnode _impaired_node_name_`。
-
-
-
---
 .內建金鑰管理程式（OKM）
 --
-如果偵測到 Onboard Key Manager （ OKM ）、系統會顯示下列提示。
+如果偵測到 OKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 10 。
 
 ....
 key manager is configured.
@@ -82,8 +100,8 @@ Entering Bootmenu Option 10...
 
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
-.. 在 Bootmenu Option 提示字元中、輸入 `Y`以確認您要使用 bootmedia 恢復選項。
-.. 出現提示時、請輸入內建金鑰管理程式的複雜密碼、然後再次輸入複雜密碼以確認。
+.. 在提示下輸入 `Y`，確認您要開始 OKM 恢復程序。
+.. 出現提示時，請輸入內建金鑰管理程式的複雜密碼，並在提示時再次輸入複雜密碼以確認。
 +
 .顯示複雜密碼提示範例
 [%collapsible]
@@ -92,19 +110,12 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 Enter the passphrase for onboard key management:
 Enter the passphrase again to confirm:
 Enter the backup data:
-TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
-QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
-RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
-3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
-IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
-QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
-.
-.
-.
-.
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
 ....
 =====
-.. 從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。
+.. 繼續監控還原程序，同時從合作夥伴節點還原適當的檔案。
 +
 恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
 
@@ -113,7 +124,7 @@ QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
 Recovery secrets set successfully
-Trying to delete any existing km_onboard.wkeydb file.
+Trying to delete any existing km_onboard.keydb file.
 
 Successfully recovered keymanager secrets.
 ....
@@ -131,55 +142,194 @@ Successfully recovered keymanager secrets.
 --
 .外部金鑰管理程式（EKM）
 --
-如果已設定 EKM 、系統會顯示下列提示。
+如果偵測到 EKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 11 。
 
-....
-Error when fetching key manager config from partner <IP>:
-
-Has key manager been configured on this system? {y|n}
-....
-.. 輸入 `Y`是否已設定 EKM 。
-+
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
+.. 下一步取決於您的系統執行的 ONTAP 版本：
 +
-系統會提示您輸入最初在設定期間使用的 EKM 設定。
+[cols="1,2"]
+|===
+| 如果您的系統正在執行... | 執行此動作... 
 
-.. 出現提示時、請輸入每個 EKM 組態設定。
-.. 驗證叢集 UUID 和 Keystore UUID 的屬性是否正確。
+
+ a| 
+ONTAP 9.16.0.
+ a| 
+... 按 `Ctlr-C`退出 BootMenu Option 11 。
+... 按下 `Ctlr-C`以結束 EKM 組態程序並返回開機功能表。
+... 選取 BootMenu Option 8 。
+... 重新啟動節點。
 +
-*** 在合作夥伴節點上、使用下列命令擷取叢集 UUID 。
-+
-`cluster identity show`
-
-*** 在合作夥伴節點上、使用下列命令擷取 Keystore UUID 。
-+
-`vserver show -type admin -fields uuid`
+如果已設定，則 `AUTOBOOT`節點會重新開機，並使用來自合作夥伴節點的組態檔案。
 
 +
-`key-manager keystore show -vserver <nodename>`
+如果 `AUTOBOOT`未設定，請輸入適當的開機命令。節點會重新開機，並使用來自合作夥伴節點的組態檔案。
 
-*** 如果合作夥伴節點無法使用、請使用 Mroot-AK 鍵擷取 UUID ：
+... 重新啟動節點，以保護開機媒體分割區。
+... 繼續執行步驟 C
+
+
+
+
+ a| 
+ONTAP 9.16.1.
+ a| 
+繼續下一步。
+
+|===
+.. 出現提示時，請輸入下列 EKM 組態設定：
 +
-**** 對於叢集 UUID 、請輸入下列命令：
-+
-`x-NETAPP-ClusterName: <cluster name>`
-
-**** 對於 Keystore UUID 、請輸入下列命令：
-+
-`x-NETAPP-KeyUsage: MROOT-AK`
+[cols="2"]
+|===
+| 行動 | 範例 
 
 
+ a| 
+從檔案輸入用戶端憑證內容 `/cfcard/kmip/certs/client.crt`。
+ a| 
+.顯示用戶端憑證內容範例
+[%collapsible]
+=====
+....
+-----BEGIN CERTIFICATE-----
+<certificate_value>
+-----END CERTIFICATE-----
+....
+=====
 
 
+ a| 
+輸入檔案中的用戶端金鑰檔案內容 `/cfcard/kmip/certs/client.key`。
+ a| 
+.顯示用戶端金鑰檔案內容的範例
+[%collapsible]
+=====
+....
+-----BEGIN RSA PRIVATE KEY-----
+<key_value>
+-----END RSA PRIVATE KEY-----
+....
+=====
 
-.. 出現提示時、請輸入 Keystore UUID 和叢集 UUID 的值。
+
+ a| 
+輸入檔案中的 KMIP 伺服器 CA 檔案內容 `/cfcard/kmip/certs/CA.pem`。
+ a| 
+.顯示 KMIP 伺服器檔案內容範例
+[%collapsible]
+=====
+....
+-----BEGIN CERTIFICATE-----
+<KMIP_certificate_CA_value>
+-----END CERTIFICATE-----
+....
+=====
+
+
+ a| 
+輸入檔案中的伺服器組態檔案內容 `/cfcard/kmip/servers.cfg`。
+ a| 
+.顯示伺服器組態檔案內容的範例
+[%collapsible]
+=====
+....
+xxx.xxx.xxx.xxx:5696.host=xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx:5696.port=5696
+xxx.xxx.xxx.xxx:5696.trusted_file=/cfcard/kmip/certs/CA.pem
+xxx.xxx.xxx.xxx:5696.protocol=KMIP1_4
+1xxx.xxx.xxx.xxx:5696.timeout=25
+xxx.xxx.xxx.xxx:5696.nbio=1
+xxx.xxx.xxx.xxx:5696.cert_file=/cfcard/kmip/certs/client.crt
+xxx.xxx.xxx.xxx:5696.key_file=/cfcard/kmip/certs/client.key
+xxx.xxx.xxx.xxx:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
+xxx.xxx.xxx.xxx:5696.verify=true
+xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
+....
+=====
+
+
+ a| 
+如果出現提示，請輸入合作夥伴的 ONTAP 叢集 UUID 。
+ a| 
+.顯示 ONTAP 叢集 UUID 範例
+[%collapsible]
+=====
+....
+Notice: bootarg.mgwd.cluster_uuid is not set or is empty.
+Do you know the ONTAP Cluster UUID? {y/n} y
+Enter the ONTAP Cluster UUID: <cluster_uuid_value>
+
+
+System is ready to utilize external key manager(s).
+....
+=====
+
+
+ a| 
+如果出現提示，請輸入節點的暫用網路介面和設定。
+ a| 
+.顯示暫時網路設定的範例
+[%collapsible]
+=====
+....
+In order to recover key information, a temporary network interface needs to be
+configured.
+
+Select the network port you want to use (for example, 'e0a')
+e0M
+
+Enter the IP address for port : xxx.xxx.xxx.xxx
+Enter the netmask for port : xxx.xxx.xxx.xxx
+Enter IP address of default gateway: xxx.xxx.xxx.xxx
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+....
+=====
+|===
 .. 視金鑰是否成功還原而定、請採取下列其中一項動作：
 +
-*** 如果金鑰已成功還原、則恢復程序會繼續並重新啟動節點。繼續進行步驟 4 。
-*** 如果金鑰未成功還原、系統將會停止、並顯示錯誤和警告訊息。重新執行恢復程序。
+*** 如果 EKM 組態已成功還原，程序會嘗試從合作夥伴節點還原適當的檔案，然後重新啟動節點。請移至步驟 d.
++
+.顯示成功 9.16.0 還原訊息的範例
+[%collapsible]
+=====
+....
+
+kmip2_client: Importing keys from external key server: xxx.xxx.xxx.xxx:5696
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdUtils: [locateMrootAkUuids]:420: Locating local cluster MROOT-AK with keystore UUID: <uuid>
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:79: Calling KMIP Locate for the following attributes: [<x-NETAPP-ClusterId, <uuid>>, <x-NETAPP-KeyUsage, MROOT-AK>, <x-NETAPP-KeystoreUuid, <uuid>>, <x-NETAPP-Product, Data ONTAP>]
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:84: KMIP Locate executed successfully!
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [setUuidList]:50: UUID returned: <uuid>
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696
+
+GEOM_ELI: Device nvd0s4.eli created.
+GEOM_ELI: Encryption: AES-XTS 256
+GEOM_ELI:     Crypto: software
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:140 MROOT-AK is requested.
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:162 Returning MROOT-AK.
+....
+=====
++
+.顯示成功還原 9.16.1 訊息的範例
+[%collapsible]
+=====
+....
+
+System is ready to utilize external key manager(s).
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:xxxx
+Successfully recovered keymanager secrets.
+....
+=====
+*** 如果金鑰未成功還原，系統將會停止，並表示無法還原金鑰。畫面會顯示錯誤和警告訊息。輸入以重新執行恢復程序 `boot_recovery -partner`。
 +
 .顯示金鑰還原錯誤和警告訊息的範例
 [%collapsible]
@@ -187,17 +337,18 @@ Entering Bootmenu Option 11...
 ....
 
 ERROR: kmip_init: halting this system with encrypted mroot...
-
 WARNING: kmip_init: authentication keys might not be available.
-
-System cannot connect to key managers.
-
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
 ERROR: kmip_init: halting this system with encrypted mroot...
-
+.
 Terminated
 
 Uptime: 11m32s
-
 System halting...
 
 LOADER-B>
@@ -205,8 +356,8 @@ LOADER-B>
 =====
 
 
-.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
-.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
+.. 當節點重新開機時，請確認系統已重新上線且可運作，以確認開機媒體還原是否成功。
+.. 將控制器的儲存設備歸還，使其恢復正常運作：
 +
 `storage failover giveback -ofnode _impaired_node_name_`。
 

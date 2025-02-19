@@ -1,16 +1,7 @@
----
-permalink: asa-r2-70-90/bootmedia-recovery-image-boot.html 
-sidebar: sidebar 
-keywords: asa r2 a70, asa r2 a90, boot the recovery image 
-summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。 
----
-= 開機恢復映像： ASA A70 和 ASA A90
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
 
 .步驟
@@ -42,15 +33,30 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 --
 .選項 2 ： ONTAP 9 。 16.1 或更新版本
 --
-.. 在功能受損的控制器上、當系統提示您還原備份組態時、請按 `Y`。
+.. 在受損控制器上的 Loader 提示下，設定受損控制器模組的 IP 位址：
 +
-還原程序成功後、此訊息會顯示在主控台 - 上 `syncflash_partner: Restore from partner complete`。
+`ifconfig e0M - auto`
 
+.. 在 Loader 提示符下，以網路開機功能受損的節點：
++
+`netboot \http://_web_server_ip/path_to_web-accessible_directory_/<ontap_version>_image.tgz`
+
+.. 從 Boot Menu （引導菜單）中選擇 Option（選項 `7`）。
+.. 當系統要求還原備份組態時，請輸入 `n`。
+.. 當系統提示您重新啟動節點時，請輸入 `y`。
+.. 按 `ctrl-c`鍵返回 Boot Menu （引導菜單）。
++
+如果已啟用加密，您必須先還原加密，才能繼續還原開機映像。前往 link:bootmedia-encryption-restore.html["還原加密"]。
+
+.. 在功能受損的控制器上、 `Y`當系統提示您重新啟動功能受損的控制器時、按下 `ctrl-c`以進入 Boot Menu （開機功能表）。
+.. 選擇選項 `6`。
 .. 在功能受損的控制器上、出現提示時按 `Y`確認還原備份是否成功。
 .. 在功能受損的控制器上、當系統提示您使用還原的組態時、請按 `Y`。
 .. 在功能受損的控制器上、當系統提示您重新啟動節點時、請按 `Y`。
-.. 在功能受損的控制器上、 `Y`當系統提示您重新啟動功能受損的控制器時、按下 `ctrl-c`以進入 Boot Menu （開機功能表）。
-.. 如果系統不使用加密，請選擇 _ 選項 1 正常開機 _ ，否則請前往link:bootmedia-encryption-restore.html["還原加密"]。
+.. 當系統提示您還原備份組態時，請按 `Y`。
++
+還原程序成功後、此訊息會顯示在主控台 - 上 `syncflash_partner: Restore from partner complete`。
+
 
 
 --

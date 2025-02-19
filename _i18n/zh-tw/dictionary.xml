@@ -8864,7 +8864,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2e8e8fd780cc78a14b825cad663b2611" category="paragraph">ONTAP 9 。 16.0 或更早版本</block>
   <block id="607ae42cd8348594bc8bfa6a3c380eba" category="paragraph">* 注意： * 如果您看到成功還原以外的任何訊息、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="d9cbafff040793241dffd17bc8129532" category="paragraph">* 注意： * 如果程序失敗、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
-  <block id="53f59a608ecfcdc90a1a8b37f4c8f010" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、在系統管理模組中安裝替換開機媒體。</block>
   <block id="54d6f7773c4a60500d049c396202a23d" category="list-text">按下 System Management CAM 按鈕。</block>
   <block id="e3f95753aace3276fa0375074c45c988" category="list-text">故障控制器上不得有故障的叢集連接埠。</block>
   <block id="9a55c0fdded61a1e549c1b9afbfc5023" category="list-text"><block ref="32b858596eeb9351eca27c2906a21da4" prefix="" category="inline-code"></block>（ ASA 系統不支援）</block>
@@ -8874,13 +8873,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c1b6a9a30a6ce8d79305050622234851" category="paragraph">在命令輸出中、您應該會看到一則訊息、指出控制器的狀態。</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">控制器會重新連接其儲存資源池、並完成開機。</block>
   <block id="c23f2b6754e0bfe310956814b83c20c2" category="list-text">驗證磁碟集區的磁碟是否如預期：<block ref="a9fae81f0c924f3a581cf23a9c8b11b1" prefix=" " category="inline-code"></block></block>
-  <block id="56bce10b49b12be932b0ca38009e1da1" category="paragraph">若要更換開機媒體、您必須從系統背面移除系統管理模組、移除受損的開機媒體、然後在系統管理模組中安裝替換開機媒體。</block>
   <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRw a800磁碟機就位在IOPS 960上</block>
   <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">按下系統管理 CAM 按鈕。</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">轉動 CAM 栓鎖、使其儘可能遠離模組。</block>
   <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">關閉或接管受損的控制器。- 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、使狀況良好的控制器能繼續提供受損控制器儲存設備的資料。</block>
   <block id="5050dae1093a80a257a1d121ca5f3b0f" category="section-title">步驟 4 ：驗證控制器狀態</block>
-  <block id="6d194eccb9cd88bfbcde1df65103cbb4" category="list-text">出現提示時、請輸入 Keystore UUID 和叢集 UUID 的值。</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">步驟 1 ：將儲存控制器連接到您的網路</block>
   <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">使用叢集 /HA 互連纜線將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。</block>
   <block id="8637ca13eb3c1a10bb4383130268c950" category="list-text">將乙太網路模組連接埠連接到主機網路。</block>
@@ -9089,14 +9086,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="29ce4833094eb0992ba97ac3e0c71b3f" category="inline-link-macro">ASA R2 系統維護部分</block>
   <block id="c8208be6c84d32af841a96445a7aa12a" category="paragraph">每種 ASA R2 系統的特定維護程序請參閱<block ref="6106c9a1bd699a0a46425013e812fe67" category="inline-link-macro-rx"></block>。</block>
   <block id="cb1eb944e0468ffad560cfc4623a28dc" category="doc">將故障零件退回 NetApp - ASA A70 和 ASA A90</block>
-  <block id="50845bae5620d87f695c2dc8e2ba4b4e" category="doc">還原加密： ASA A70 和 ASA A90</block>
-  <block id="be50da4a0a4e7670cc5496e8959abd3e" category="paragraph">手動開機媒體取代使用傳統方法、從 NetApp 支援網站下載 ONTAP 映像、將映像傳輸到 USB 磁碟機、下載到目標替換開機媒體、以及手動瀏覽開機功能表選項、在替換的開機媒體上安裝 ONTAP 映像。</block>
   <block id="4a64f3d63fd0e8b93b80ef48b4698a9a" category="summary">您可以透過自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。</block>
-  <block id="41f43600bfb66f22a00e070720eb3684" category="doc">自動開機恢復： ASA A70 和 ASA A90</block>
-  <block id="7d7b39e1d38d18d4acc88e8ead4ecab1" category="doc">開機恢復映像： ASA A70 和 ASA A90</block>
   <block id="56e7f21b9427a2441a89613fe1fcc2ff" category="summary">您可以在更換開機媒體之前、先移除系統管理模組、找出故障的開機媒體。</block>
   <block id="69326c1cf7a079cc03d300fe203efde6" category="doc">更換開機媒體 - ASA A70 和 ASA A90</block>
-  <block id="f5f04350fe8cc121abba09eed8ef8194" category="doc">要求與考量事項： ASA A70 與 ASA A90</block>
   <block id="740df8929ce5dd43cd4aae8d5504654d" category="doc">開機媒體更換需求 - ASA A70 和 ASA A90</block>
   <block id="2cf315583a350744f9ff0bd28ec89aef" category="doc">開機媒體更換工作流程： ASA A70 和 ASA A90</block>
   <block id="d49388da53cc4a7219dcbdd63d45342a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="d54ef5e1f82ac3261c20b17cf3d0d453" category="inline-link-macro-rx"></block></block>
@@ -9105,7 +9097,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d09fb8e8be6d5c93fb8113549e3abfb0" category="paragraph">從合作夥伴控制器還原 ONTAP 映像。</block>
   <block id="b8a9f715dbb64fd5c56e7783c6820a61" category="inline-image-macro">二</block>
   <block id="14c9871d29cebff6090d4220729c7ade" category="summary">您需要完成受損控制器的關機。</block>
-  <block id="0049b2ae6634f29dc31a51b97c674ab3" category="doc">關閉控制器 - ASA A70 和 ASA A90</block>
   <block id="a79ec0bc86b66848b485542b40048cb6" category="paragraph">您需要完成受損控制器的關機。關閉或接管受損的控制器。</block>
   <block id="95d86a07e48032c658d9a13faedb46d6" category="doc">完成機箱更換： ASA A70 和 ASA A90</block>
   <block id="33af0abab8ca4fe70c730bb3d86abb73" category="doc">移動並更換硬體 - ASA A70 和 ASA A90</block>
@@ -9139,9 +9130,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="591fbd5c7a0e4469981c4bc0919fffdb" category="doc">更換即時時鐘電池 - ASA A70 和 ASA A90</block>
   <block id="ab89852eb86e2c9aed275b5eab913eb1" category="doc">更換系統管理模組 - ASA A70 和 ASA A90</block>
   <block id="77dbbb0add58d8d5b96d74c1b27689bb" category="doc">將故障零件退回 NetApp - ASA A1K</block>
-  <block id="6a648d096ab46ad56d57cdcbd2f3fbe9" category="doc">還原加密 - ASA A1K</block>
   <block id="8e22ce60290e8b393a0781c3d78c5f34" category="doc">自動開機恢復 - ASA A1K</block>
-  <block id="4815b5bdc49e0c84c1f8a77425bfdc4d" category="doc">開機恢復映像 - ASA A1K</block>
   <block id="1c1be2f74300d879eb6d6d09021f9e6f" category="doc">更換開機媒體 - ASA A1K</block>
   <block id="28c83315b64c52bba9c9e7929909e6d8" category="doc">開機媒體更換需求 - ASA A1K</block>
   <block id="c940611fb67d6f64a97efd7fcbadb1aa" category="doc">開機媒體更換工作流程 - ASA A1K</block>
@@ -9419,42 +9408,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ba5dd27b1299bb403e2ba15f471c0373" category="paragraph"><block ref="ba5dd27b1299bb403e2ba15f471c0373" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109c420da8258ff22d7c9b248c5fe184" category="paragraph"><block ref="109c420da8258ff22d7c9b248c5fe184" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cf8a176eb130616bdad1b90aae3ebea" category="cell">鎖定凸輪栓鎖</block>
-  <block id="4d0fdf4d7f2cb2e8d15ff7667eada8d3" category="paragraph">當開機媒體毀損時、從合作夥伴節點還原 ONTAP 映像。</block>
-  <block id="517e2ed3d13a9db19dc610c5f11efa90" category="paragraph">如果節點的開機媒體毀損、開機程序將在 Loader 提示時停止、並顯示開機錯誤訊息。</block>
-  <block id="10a398d436cab5b5badea933dda79497" category="paragraph">當您遇到這些開機錯誤訊息時、需要從合作夥伴節點還原 ONTAP 映像。</block>
-  <block id="e8693d42f65c91620e44940317084863" category="example-title">顯示開機錯誤訊息範例</block>
   <block id="03f7f0cf47c4f6389ad76450db56b50e" category="list-text">在 Loader 提示字元中、輸入命令：</block>
   <block id="69c68a07899b46965d63bdd6fea6e0da" category="paragraph"><block ref="4d9c822f717329c7000654e8bae09ae4" prefix="" category="inline-code"></block></block>
   <block id="1857c0ed792dbbfc2525805e6132de0b" category="paragraph">畫面會顯示下列訊息：</block>
   <block id="c285ffddf1786cd1a14a26bcf9b74c7d" category="paragraph"><block ref="061047859ec1e213bd771fe5350bda2c" prefix="" category="inline-code"></block></block>
-  <block id="8f616ca67798afd132662e15fc4caa28" category="paragraph">當 netboot 正在執行時、<block ref="f6715e6f2a651bfc51d27566b1be5385" prefix=" " category="inline-code"></block>會顯示訊息。</block>
-  <block id="39cb6e7651585d511fc148af8198837f" category="open-title">無加密</block>
-  <block id="aada4d2dac8a2a5bd04bf211104ff2c5" category="paragraph">如果未偵測到加密、則開機媒體還原程序會在不需要金鑰管理的情況下繼續進行。</block>
-  <block id="69c50e084d31ca90079f6b8b4409607b" category="paragraph">從合作夥伴節點還原備份組態、 env 檔案、 mdb 和 RDB 時、請繼續監控還原程序。</block>
   <block id="d450838e17f81a8b52e0177614d67ad7" category="paragraph">恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：</block>
   <block id="a9849e92b148965a7bbb6c14d0afbcd0" category="open-title">內建金鑰管理程式（OKM）</block>
-  <block id="9948202ce966f6258be65aa9b31169af" category="paragraph">如果偵測到 Onboard Key Manager （ OKM ）、系統會顯示下列提示。</block>
-  <block id="5fd01f063ea353b3d15d04ba686af926" category="list-text">在 Bootmenu Option 提示字元中、輸入<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>以確認您要使用 bootmedia 恢復選項。</block>
-  <block id="0af26afae73e3202f7c7aaab8c992b8c" category="list-text">出現提示時、請輸入內建金鑰管理程式的複雜密碼、然後再次輸入複雜密碼以確認。</block>
   <block id="7d4bcf16d67094152377ca26832cc48a" category="example-title">顯示複雜密碼提示範例</block>
   <block id="08ac1a2fb254b60e9c511fe04b6536d0" category="open-title">外部金鑰管理程式（EKM）</block>
-  <block id="41913ae5c9ce168f601906b14a2d644b" category="paragraph">如果已設定 EKM 、系統會顯示下列提示。</block>
-  <block id="685640bd86353fa910cfbe3619c2e7b6" category="list-text">輸入<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>是否已設定 EKM 。</block>
-  <block id="af938ef69b688ad28c38e627ef2e2ba5" category="paragraph">系統會提示您輸入最初在設定期間使用的 EKM 設定。</block>
-  <block id="12090a552988289480c2a6d3ebef573d" category="list-text">出現提示時、請輸入每個 EKM 組態設定。</block>
-  <block id="03c5f957f0bce79f5fde4d008fa92a51" category="list-text">驗證叢集 UUID 和 Keystore UUID 的屬性是否正確。</block>
-  <block id="abfd93201d9b931fb8a842033c96915c" category="list-text">在合作夥伴節點上、使用下列命令擷取叢集 UUID 。</block>
-  <block id="13be17a2458a5b6a4d7674bfcf31e6f9" category="paragraph"><block ref="73bad5beeda4a2a6bd01d97def1d4e67" prefix="" category="inline-code"></block></block>
-  <block id="055eeae93444c58000a552a49d5cde3f" category="list-text">在合作夥伴節點上、使用下列命令擷取 Keystore UUID 。</block>
-  <block id="fca054687afc6f162b9ade39c46a6116" category="paragraph"><block ref="f2892b1a90652446a2c8a2dce1d42eee" prefix="" category="inline-code"></block></block>
-  <block id="b85d1d8fb07ae788a6ed563b610b84d6" category="list-text">如果合作夥伴節點無法使用、請使用 Mroot-AK 鍵擷取 UUID ：</block>
-  <block id="b33990729d89c66fed95f9d4dd36da47" category="list-text">對於叢集 UUID 、請輸入下列命令：</block>
-  <block id="e1484c32938464e5549c6b76d764b054" category="paragraph"><block ref="b8bbecc4d00a5d5b7dc368313818ee3e" prefix="" category="inline-code"></block></block>
-  <block id="2d545dacd75df3daea75332f92adcae5" category="list-text">對於 Keystore UUID 、請輸入下列命令：</block>
-  <block id="e7262eed05fa7365b0a692742f81c0cb" category="paragraph"><block ref="d48b7412b88ab861789f4a831606e7fa" prefix="" category="inline-code"></block></block>
   <block id="012ebe1b2edbad8e2badae49c3ce7300" category="list-text">視金鑰是否成功還原而定、請採取下列其中一項動作：</block>
-  <block id="6be21e297a64c0ca433ca37eb30b095a" category="list-text">如果金鑰已成功還原、則恢復程序會繼續並重新啟動節點。繼續進行步驟 4 。</block>
-  <block id="baef154cbd04341d2c81cd5f404ffa42" category="list-text">如果金鑰未成功還原、系統將會停止、並顯示錯誤和警告訊息。重新執行恢復程序。</block>
   <block id="1b3e0ac05a9037c92315146268065f35" category="example-title">顯示金鑰還原錯誤和警告訊息的範例</block>
   <block id="1c46e0ff0264d9660c3f0213e88d21b7" category="list-text">當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。</block>
   <block id="c50195249b8a024dc002dc38a94d2ecb" category="paragraph"><block ref="c50195249b8a024dc002dc38a94d2ecb" category="inline-image-macro-rx" type="image"></block></block>
@@ -9591,25 +9553,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9acf79506c541222d53e58985e01eb03" category="doc">還原加密 - AFF A900</block>
   <block id="9eeb212e62f650916daef03f37d7b903" category="paragraph"><block ref="9eeb212e62f650916daef03f37d7b903" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21d7363ee72b4f7dbf229f951faae28f" category="paragraph"><block ref="21d7363ee72b4f7dbf229f951faae28f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="42f783263c0e805556cc105b89a33685" category="doc">檢查加密金鑰支援與狀態 - ASA A70 和 ASA A90</block>
   <block id="7b8bb02fade9d4a58e3cfc42ecdcd970" category="summary">瞭解更換開機媒體的自動化方法。</block>
-  <block id="c0bc9e3dbe6e8f8b47642dae74af82f1" category="doc">自動開機媒體恢復概述： ASA A70 和 ASA A90</block>
   <block id="f5179676ff804b88e5799857443be173" category="paragraph">您可以透過自動開機媒體恢復（ BMR ）選項來更換故障的開機媒體。</block>
   <block id="b0fe901b833b66e26e925b635eccaed3" category="paragraph">自動開機媒體還原會使用來自合作夥伴節點的開機映像、並自動執行適當的開機功能表選項、以便在更換的開機媒體上安裝開機映像。</block>
-  <block id="c0d5cf860156f25b1345db1cbffc797b" category="summary">瞭解更換開機媒體的手動方法。</block>
-  <block id="05c869773156f3e182a24e4a395746ef" category="doc">手動開機媒體恢復概述 - ASA A70 和 ASA A90</block>
-  <block id="85f6c56f4368d94f36af2f8174800cdd" category="paragraph">您可以使用 USB 模組作為開機映像、手動更換故障的開機媒體。</block>
-  <block id="834c7d9c8325f941289306697291736e" category="paragraph-title"><block ref="ccf9965eddaaff76b152812c8e0015f1" category="inline-image-macro-rx" type="image"></block><block ref="fbe5cfbeb25b00ec0a44d74f3b70c580" category="inline-link-macro-rx"></block></block>
   <block id="a203ae5b4c010fa4bfba309f112022fe" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="bace9ebae872b936af5e4fb32c627436" category="inline-link-macro-rx"></block></block>
-  <block id="0353c4306baefb0104fdbd22f3a83fd7" category="inline-link-macro">開機媒體 - 手動還原</block>
-  <block id="868dd0de5ae92735ecf8b13f092b6e94" category="paragraph"><block ref="868dd0de5ae92735ecf8b13f092b6e94" category="inline-link-macro-rx"></block></block>
-  <block id="a4171598a9b6537fe8fa298ad497f7f6" category="inline-link-macro">開機媒體 - 自動還原</block>
-  <block id="939985bab6ffa95bb97b326eb3bb44bc" category="paragraph"><block ref="939985bab6ffa95bb97b326eb3bb44bc" category="inline-link-macro-rx"></block></block>
   <block id="cb6b9b62927bde4101155fb12ce4739b" category="paragraph">自動開機媒體更換會使用來自合作夥伴節點的開機映像、並自動執行適當的開機功能表選項、以便在更換的開機媒體上安裝開機映像。</block>
-  <block id="a5cd6f074e972343dc08fbaaefb21435" category="doc">檢查加密金鑰支援與狀態 - ASA A1K</block>
-  <block id="ecd93ae2a78c5efb02bc3ec3e7df5c2c" category="doc">自動開機媒體恢復總覽 - ASA A1K</block>
-  <block id="5a7035550d11f967a7c1533fa8ef8ae3" category="paragraph">您可以透過自動開機媒體更換（ BMR ）選項來更換故障的開機媒體。</block>
-  <block id="c3f29d977c51a91934fd0b3ac418f5ef" category="doc">手動開機媒體恢復總覽 - ASA A1K</block>
   <block id="ff419f4954e3dbf64ddba1e44234dfc2" category="paragraph"><block ref="ff419f4954e3dbf64ddba1e44234dfc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="57beedb714945568e8369d139b8f960b" category="inline-image-macro">拉片方向</block>
   <block id="b61617c922b3bb175faf6321e52b85d7" category="paragraph"><block ref="b61617c922b3bb175faf6321e52b85d7" category="inline-image-macro-rx" type="image"></block></block>
@@ -9741,7 +9689,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="13e402a48516f3df0a4a2b09e3076481" category="doc">還原加密 - ASA C400</block>
   <block id="511796586d19d0b2cb5a4cd14581478a" category="doc">檢查加密金鑰支援與狀態 - ASA C800</block>
   <block id="f477d17555442c3400a29898cd852b96" category="doc">還原加密 - ASA C800</block>
-  <block id="e4cee0c18f92a2719465d58340bc4ab5" category="paragraph">您可以使用 USB 模組作為開機映像、手動更換故障的開機媒體。</block>
   <block id="e4db105eaa26749e6726fe6644b77f2f" category="doc">檢查加密金鑰支援與狀態 - ASA A150</block>
   <block id="f9c62bff8e46b0d2433f3609b7ecdb39" category="doc">檢查加密金鑰支援與狀態 - ASA A250</block>
   <block id="0f791bd55bfa2fd01f0eba9b2a93ae03" category="doc">還原加密 - ASA A250</block>
@@ -9915,11 +9862,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7dceff362ab7e3c2187d103ba7fce438" category="image-alt">FAS2820 三路徑 HA 佈線工作表顯示堆疊 1 的連接埠配對</block>
   <block id="3a6e3da839d00ede01c4513f563899aa" category="image-alt">FAS2820 三路徑 HA 佈線範例、連接到一個堆疊</block>
   <block id="2f9e622217b802d735475e6e1e79287d" category="admonition">本節不適用於 FAS2820 或 FAS25XX 系統。</block>
-  <block id="0636959b49a1834e3ec5f35103cf8837" category="sidebar">ASA A70 和 ASA A90 Boot Media Automated</block>
-  <block id="da147f1227d896e3c10a7ccfe8a30bd6" category="sidebar">ASA A70 和 ASA A90 開機媒體手冊</block>
   <block id="917655eaf5fd8c720cd773aba74bdaf8" category="sidebar">ASA A70 和 ASA A90 IO 模組</block>
-  <block id="7b9a6fdb87cb1f6f211f41d044f49a11" category="sidebar">ASA A1K Boot Media Automated</block>
-  <block id="995c40c124bddbeb82d387a9fcb6e262" category="sidebar">ASA A1K 開機媒體手冊</block>
   <block id="3a537c99c5b869e844d774557fbcee80" category="sidebar">ASA A1K IO 模組</block>
   <block id="3006210264711079652e75e697fdde7b" category="sidebar">FAS2820 系統</block>
   <block id="e9fb835c094e7078b3fdd1712ccae31c" category="sidebar">FAS2820 安裝與設定</block>
@@ -9963,7 +9906,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cac74c301a508cf350f8f41a7de866a0" category="paragraph">當 ASA A1K 儲存系統有可用的空插槽，或是所有插槽都已滿時，您可以將 I/O 模組新增至該儲存系統。</block>
   <block id="94aa992895c11cf963b2b749b84aa267" category="paragraph">當有可用的空插槽或所有插槽均已完全插滿時，您可以將 I/O 模組新增至 FAS70 和 FAS90 儲存系統。</block>
   <block id="bc049e4428d592b69605104cc85d56bc" category="section-title">步驟 2 ：新增 I/O 模組</block>
-  <block id="a6448c631c301c525a61c500fdf8e46a" category="list-text">根據加密方法，選取符合您系統組態的選項：</block>
   <block id="92ba658b9a66d0825f0f084b7da309b7" category="list-text">如果系統不使用加密，請選擇 _ 選項 1 正常開機 _ ，否則請前往<block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block>。</block>
   <block id="efd2f4952f00033a0e6fc35f4c287446" category="paragraph">如果儲存系統有可用的插槽，請將新的 I/O 模組安裝到其中一個可用的插槽中。如果所有插槽都已佔用，請移除現有的 I/O 模組以騰出空間，然後安裝新的 I/O 模組。</block>
   <block id="6d65586ee736e7deb557e0892d29cb10" category="open-title">將 I/O 模組新增至可用的插槽</block>
@@ -10009,7 +9951,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e726d5f098bf18b53d3d464c11fbe033" category="list-text">如果啟用 AutoSupport ，則還原（恢復抑制）自動建立個案：系統節點 AutoSupport 叫用 -node* -type all -message MAINT = end</block>
   <block id="975c4856a4750ba558520ec8a4820a30" category="list-text">如果您安裝了 NIC 模組，請將每個連接埠的使用模式指定為 _network_ ：<block ref="2318bc4fadd0b94ffa92c4a515df2262" prefix=" " category="inline-code"></block></block>
   <block id="b6d91a8f20eef2bd8b5f445d19459cac" category="list-text">對另一個控制器重複這些步驟。</block>
-  <block id="cc7de6b757b2670e8de91257213f3e71" category="paragraph"><block ref="e3adc655d82fbb7ed4e775bf1f2a0a82" prefix="" category="inline-code"></block></block>
   <block id="fbff7da02a9769667db9e912fa36fc5e" category="paragraph">當需要額外儲存（至內部機櫃）時，您最多可以將兩個 NS224 機櫃熱新增至 AFF A20 ， AFF A30 ， AFF C30 ， AFF A50 或 AFF C60 HA 配對。</block>
   <block id="73a95c42a81e9be601403e3a9d4a84c9" category="list-text">本程序假設您的 HA 配對只有內部儲存設備（無外部機櫃），而且您可以：</block>
   <block id="c6e5816c4606aead75e5bf161bd98726" category="list-text">熱新增至 AFF A20 的額外機櫃。</block>
@@ -11001,7 +10942,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="41d12fb2ee8b3c6f7046a51242a72a75" category="sidebar">C80 機箱</block>
   <block id="3e4165f9c6936da0daac33c7b7ca4957" category="sidebar">C80控制器模組</block>
   <block id="8f31b4d50eb915a24104b3cb7a5cfcb5" category="sidebar">C80 I/O 模組</block>
-  <block id="325e928b605da8dd44aca29a94da895c" category="list-text">在 Loader 設定本機連接埠並從合作夥伴節點執行時，監控開機媒體還原程序<block ref="83a4445bcfef2bd179eaffaabe3b3c20" prefix=" " category="inline-code"></block>。</block>
   <block id="a0828c6d7f89434e71860268e9d651b2" category="list-text">在合作夥伴節點完全啟動並提供資料之後，請在叢集中同步 OKM 金鑰。</block>
   <block id="4230ba5bca3d60bf63b2c39aa992ed84" category="paragraph">從下列 ONTAP 版本開始，就支援 AFF A 系列和 AFF C 系列系統。</block>
   <block id="5fce742f9b06c803a2f04474b1d16eef" category="paragraph">從下列 ONTAP 版本開始，就支援 ASA R2 系統。</block>
@@ -11205,4 +11145,105 @@ SFP+ （目標 / 啟動器）</block>
   <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">準備更換</block>
+  <block id="77f6d66d9d165cf71493f896e9fc7ed7" category="paragraph">從系統背面卸下系統管理模組，移除受損的開機媒體，在系統管理模組中安裝替換開機媒體，然後重新安裝系統管理模組，以更換開機媒體。</block>
+  <block id="19d944a3a323213d80bcdd66ecd5c26f" category="list-text">判斷內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是使用下列其中一種方法來設定：</block>
+  <block id="b3387f173ebbff42e3160605c9db518a" category="list-text">如果 OKM 或 EKM 已啟用，您可以詢問客戶或系統管理員。</block>
+  <block id="5dc17ba8443f8aafae4ca9de8cf9545b" category="list-text">若要檢查 OKM 是否已啟用，您可以使用<block ref="3c690d79c23fa8c25994507c25377567" prefix=" " category="inline-code"></block>。</block>
+  <block id="4e447e93a3331607c74749775653cbfc" category="list-text">若要檢查 EKM 是否已啟用，您可以使用<block ref="001642cb897a8bebce3210207b7e81af" prefix=" " category="inline-code"></block>。</block>
+  <block id="161a8b7bf3b6a7aaa3bda387e5eab04b" category="list-text">若為 OKM ，您需要 OKM 複雜密碼檔案內容。</block>
+  <block id="7e8bda9aef5e8fb9e3018b4afe5250d1" category="list-text">對於 EKM ，您需要從合作夥伴節點複本下列檔案：</block>
+  <block id="0408893d877d770be02b8327fb6a5e89" category="list-text">/ccfcard/kmip/servers.cfg 檔案。</block>
+  <block id="7ca5023275c76ff686c3c960083e2882" category="list-text">/ccfcard/kmip/certs/client.crt 檔案。</block>
+  <block id="eaa29e40b75c2b3c94d1b5d23f50bce1" category="list-text">/ccfcard/kmip/certs/client.key 檔案。</block>
+  <block id="83e7484854530d83dd681b8cf742e93e" category="list-text">/ccfcard/kmip/certs/ca.pem 檔案。</block>
+  <block id="19de728db0f7de420107bca7f6c27e8f" category="list-text">監控開機媒體安裝恢復程序。</block>
+  <block id="bcefe15d3d59604fe3881aa73ba19bec" category="paragraph">程序完成並顯示<block ref="a8a3d751ea5741e4ba21940296cd7183" prefix=" " category="inline-code"></block>訊息。</block>
+  <block id="5e7f58f1d40d387e7b9ab18afe197fd7" category="list-text">系統會檢查加密和加密類型，並顯示兩個訊息中的其中一個。視所顯示的訊息而定，請採取下列其中一項動作：</block>
+  <block id="e631253f1e5c17e7f830fc29fe6c672d" category="admonition">有時候，程序可能無法識別系統上是否已設定金鑰管理程式。它會顯示錯誤訊息，詢問是否已為系統設定金鑰管理程式，然後詢問已設定的金鑰管理程式類型。解決此問題後，程序將會繼續。</block>
+  <block id="a7b02f2200bbf6c786d8ba6859f87c74" category="example-title">顯示組態錯誤尋找提示的範例</block>
+  <block id="4c097bc2a08e8665ee6ce5be5b6d4816" category="cell">如果您看到此訊息 ...</block>
+  <block id="5e2ad6fd9deb412d871137094ee43ef0" category="cell">執行此動作...</block>
+  <block id="0f5d2d6afab72dc1cc43cad3fdc5b679" category="paragraph"><block ref="0bff6104e6ddee2836161e63d5b29d5b" prefix="" category="inline-code"></block></block>
+  <block id="ea9bbc9a1644ad81a9e641c7756cb904" category="paragraph">系統上未安裝加密。完成下列步驟：</block>
+  <block id="2a81e23f2dbdb4931da1ca1941fdcaed" category="list-text">顯示登入提示時登入節點，並將儲存設備交回：</block>
+  <block id="503facbcd54c8f4001c4d78ff3cd181d" category="list-text">移至步驟 5 ，啟用停用的自動恢復功能。</block>
+  <block id="aba66c87293b779b339e88a54def4ece" category="paragraph"><block ref="fc8fae7f1985c187fcbe3dc568de6bab" prefix="" category="inline-code"></block></block>
+  <block id="0c9a8e05dae1edb79dee2ba0e0aa2e10" category="paragraph">移至步驟 4 以還原適當的金鑰管理程式。</block>
+  <block id="3a435296812d929677e01249fc3df97e" category="paragraph">節點可存取開機功能表並執行：</block>
+  <block id="c74f3fc8778415fe1908c3e70bdc5e1f" category="list-text">選項 10 適用於內建金鑰管理程式（ OKM ）的系統。</block>
+  <block id="c5af7493bea6fdf0e6f855282fd978b1" category="list-text">選項 11 適用於具有外部金鑰管理程式（ EKM ）的系統。</block>
+  <block id="5acefa45eaecf4ca5d5698a77ec26b5f" category="list-text">選取適當的金鑰管理程式還原程序。</block>
+  <block id="cec349ed8df71d2a36b9e8ae7d8becef" category="paragraph">如果偵測到 OKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 10 。</block>
+  <block id="90853290faee7028e876fdfdb8de437b" category="list-text">在提示下輸入<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>，確認您要開始 OKM 恢復程序。</block>
+  <block id="968cdeb239e05e7bf0dffdb96ea2f833" category="list-text">出現提示時，請輸入內建金鑰管理程式的複雜密碼，並在提示時再次輸入複雜密碼以確認。</block>
+  <block id="24ffce97bd07e6f791875335c17cd10d" category="list-text">繼續監控還原程序，同時從合作夥伴節點還原適當的檔案。</block>
+  <block id="3291f6521f975e1ead577845998bec95" category="paragraph">如果偵測到 EKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 11 。</block>
+  <block id="a24d722ae51d75766fa9dc3854952898" category="list-text">下一步取決於您的系統執行的 ONTAP 版本：</block>
+  <block id="08f30bb9433217bd66359e72cda7c5e8" category="list-text">按<block ref="f07c0cba208baef6e2b2fc812661812b" prefix=" " category="inline-code"></block>退出 BootMenu Option 11 。</block>
+  <block id="4a12d3871bbbec1a3e321415eaec24b4" category="list-text">按下<block ref="f07c0cba208baef6e2b2fc812661812b" prefix=" " category="inline-code"></block>以結束 EKM 組態程序並返回開機功能表。</block>
+  <block id="be6ec1858f853da7b5c9f4a13665509f" category="list-text">選取 BootMenu Option 8 。</block>
+  <block id="adda1434d5e5c63f23cc8ea5287107c9" category="paragraph">如果已設定，則<block ref="70f26aeb9493e5657ecb82bfdf9a4e2f" prefix=" " category="inline-code"></block>節點會重新開機，並使用來自合作夥伴節點的組態檔案。</block>
+  <block id="821fcd708c45adc084a7b5eb89088d9c" category="paragraph">如果<block ref="70f26aeb9493e5657ecb82bfdf9a4e2f" prefix=" " category="inline-code"></block>未設定，請輸入適當的開機命令。節點會重新開機，並使用來自合作夥伴節點的組態檔案。</block>
+  <block id="f125fc1712ff91500cfaa02b887dfaf7" category="list-text">重新啟動節點，以保護開機媒體分割區。</block>
+  <block id="96dfb3dab5877e28d5de27242828d412" category="list-text">繼續執行步驟 C</block>
+  <block id="858cf7ac64fc02be0935ba5eba961888" category="list-text">出現提示時，請輸入下列 EKM 組態設定：</block>
+  <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="cell">範例</block>
+  <block id="42ffb07c8565a30a8e6e687d851c4dc9" category="paragraph">從檔案輸入用戶端憑證內容<block ref="d606236dedb6ed649b29651c1ec53a99" prefix=" " category="inline-code"></block>。</block>
+  <block id="3dc91f7451a4bd0eb09f75bd2140b3a8" category="example-title">顯示用戶端憑證內容範例</block>
+  <block id="f95e57c3ab55de100400925a1d599f91" category="paragraph">輸入檔案中的用戶端金鑰檔案內容<block ref="ccb442c2c2cc4367a087cfc7cd3b4876" prefix=" " category="inline-code"></block>。</block>
+  <block id="04a71a38825e017a3b1cb1bec1346ae5" category="example-title">顯示用戶端金鑰檔案內容的範例</block>
+  <block id="916c9dd7b85a7a3381b3bdde1910503a" category="paragraph">輸入檔案中的 KMIP 伺服器 CA 檔案內容<block ref="443acc94def30bc037fb2dacac4fb7d3" prefix=" " category="inline-code"></block>。</block>
+  <block id="e6188a9278a87ef417a8e2afcc22f93d" category="example-title">顯示 KMIP 伺服器檔案內容範例</block>
+  <block id="d4fa69cc2ed09bdca599cf7ca3b020cd" category="paragraph">輸入檔案中的伺服器組態檔案內容<block ref="6b2948264272776ad38dbe7f59c7850f" prefix=" " category="inline-code"></block>。</block>
+  <block id="acb2cdf0e044cb8e41dd9dbe163d56cb" category="example-title">顯示伺服器組態檔案內容的範例</block>
+  <block id="1677b437db33146f4ef190a0e1965055" category="paragraph">如果出現提示，請輸入合作夥伴的 ONTAP 叢集 UUID 。</block>
+  <block id="6af9b04018c1d00113ea69c62ee2cfae" category="example-title">顯示 ONTAP 叢集 UUID 範例</block>
+  <block id="ea127e0cf13eef619bb275aeff09d41d" category="paragraph">如果出現提示，請輸入節點的暫用網路介面和設定。</block>
+  <block id="aab616abb54a154e4fcb6dc6edca0697" category="example-title">顯示暫時網路設定的範例</block>
+  <block id="948fd102470ac371888b6bd60cfc7fb4" category="list-text">如果 EKM 組態已成功還原，程序會嘗試從合作夥伴節點還原適當的檔案，然後重新啟動節點。請移至步驟 d.</block>
+  <block id="6fa02563a50cf5fcad70bcfed92fe219" category="example-title">顯示成功 9.16.0 還原訊息的範例</block>
+  <block id="355423b7af5007bd545405d0221c3de6" category="example-title">顯示成功還原 9.16.1 訊息的範例</block>
+  <block id="c1286238ac35049080a5d815a0742050" category="list-text">如果金鑰未成功還原，系統將會停止，並表示無法還原金鑰。畫面會顯示錯誤和警告訊息。輸入以重新執行恢復程序<block ref="4d9c822f717329c7000654e8bae09ae4" prefix=" " category="inline-code"></block>。</block>
+  <block id="b06a9a7481d8f3ca792e2636ad34a5f6" category="list-text">當節點重新開機時，請確認系統已重新上線且可運作，以確認開機媒體還原是否成功。</block>
+  <block id="5f24aaf8b32f780fce1ea44bd659a2f1" category="list-text">將控制器的儲存設備歸還，使其恢復正常運作：</block>
+  <block id="e531efa1ffce94331d0abc4548448cac" category="list-text">在受損控制器上的 Loader 提示下，設定受損控制器模組的 IP 位址：</block>
+  <block id="9674c99b013ac8cdab6eb0df64e77028" category="paragraph"><block ref="83ed86e403dd4a24d2825f48008e5af3" prefix="" category="inline-code"></block></block>
+  <block id="8c58ea9784c7fa6869b22626814be32c" category="list-text">在 Loader 提示符下，以網路開機功能受損的節點：</block>
+  <block id="c73c2dd2459e6650d5b71cc2059faf0e" category="paragraph"><block ref="a8ede5eb13f058392e245c0a8a92ae3d" prefix="" category="inline-code"></block></block>
+  <block id="682c67c386e9533bb90087e13557b0aa" category="list-text">從 Boot Menu （引導菜單）中選擇 Option（選項<block ref="8f14e45fceea167a5a36dedd4bea2543" prefix=" " category="inline-code"></block>）。</block>
+  <block id="a0ea840e423d2247bf566acde2c201ab" category="list-text">當系統要求還原備份組態時，請輸入<block ref="7b8b965ad4bca0e41ab51de7b31363a1" prefix=" " category="inline-code"></block>。</block>
+  <block id="3115cf8c3646a9861bf194086219616c" category="list-text">當系統提示您重新啟動節點時，請輸入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>。</block>
+  <block id="f2922cd1bfa5d6f04d27f02d20080042" category="list-text">按<block ref="1b10a0464da1409d5026aa8b4f098be8" prefix=" " category="inline-code"></block>鍵返回 Boot Menu （引導菜單）。</block>
+  <block id="acd0b9b64f818fbc1776d56da41a8e95" category="paragraph">如果已啟用加密，您必須先還原加密，才能繼續還原開機映像。前往 <block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8d49d03a62a2aaa6d3002fec3a650ea" category="list-text">選擇選項<block ref="1679091c5a880faf6fb5e6087eb1b2dc" prefix=" " category="inline-code"></block>。</block>
+  <block id="fe5f4b926efaec8f9797da6b1b0b6c71" category="list-text">當系統提示您還原備份組態時，請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
+  <block id="c22df67eafdbaec72d1c041a4f36d374" category="list-text">您必須使用從 NetApp 收到的替換開機媒體來取代故障的開機媒體。</block>
+  <block id="0ff7731ee6e151edd45a22c7a84637f0" category="list-text">您可以詢問系統管理員是否已啟用 OKM 或 EKM 。</block>
+  <block id="f6482a2d2722297ff58ea916af2984cb" category="doc">開機媒體恢復總覽 - ASA A70 和 ASA A90</block>
+  <block id="c987ba69ee60ff652b96f087d2e6ae84" category="paragraph">開機媒體恢復會使用來自合作夥伴節點的開機映像，並自動執行適當的開機功能表選項，以便在替換的開機媒體上安裝開機映像。</block>
+  <block id="4c676d1a7c436f114a574bfe649622ee" category="paragraph">當您遇到類似於以下所示的開機錯誤訊息時，您需要更換開機媒體，並從合作夥伴節點還原 ONTAP 映像。</block>
+  <block id="f525eed3ae8e84be0d43c618f7f170bc" category="doc">還原 ONTAP 映像 - ASA A70 和 ASA A90</block>
+  <block id="b237862491f8ea6679a4cdd100ebfdfb" category="paragraph">實體更換受損的開機媒體之後，請從合作夥伴節點還原 ONTAP 映像。</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步</block>
+  <block id="f88cdb2cd014d9929aa478cc85d4b492" category="inline-link-macro">將故障零件退回 NetApp</block>
+  <block id="7853c5276d1f54917577b980848960c3" category="paragraph">還原 ONTAP 映像並啟動節點並提供資料之後<block ref="977d546e7889319c9a653d351be92c2b" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="bd2422b6c8a3faf4b78e2b890528df95" category="inline-link-macro">從合作夥伴節點還原 ONTAP 映像</block>
+  <block id="e625bf74197df22a6e3ea556bf8bd717" category="paragraph">在實際更換受損的開機媒體之後<block ref="dcb4deaaa5f388ac9dd740fbe37648be" category="inline-link-macro-rx"></block>，。</block>
+  <block id="1517ca8b5771d8b16b9ea6a392d1c35c" category="inline-link-macro">關閉受損的控制器</block>
+  <block id="0855cbbfbd39228942736f1dd60ef241" category="paragraph">檢閱開機媒體需求之後<block ref="f6f6eaac8bd3f857cf89c647db55229b" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="5983f3a4eec630293636088c491a3fa1" category="paragraph">檢閱開機媒體更換需求。</block>
+  <block id="5c66e0e2e15a67ec82f9f3d579e21b89" category="inline-link-macro">還原開機媒體上的映像</block>
+  <block id="2adbaa1720c6c394fbe2503b6da6fdb7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="ffddb9c4b10a61c1cf9d29a315266845" category="inline-link-macro-rx"></block></block>
+  <block id="d1e3cab457c34f7a58e0bd674c7d2487" category="paragraph">關閉或接管功能受損的控制器，以便對開機媒體執行維護。</block>
+  <block id="a9a4115c08aa47aeef8b44d2372274ad" category="inline-link-macro">更換開機媒體</block>
+  <block id="aa8efed5979835fe328570ee208b1884" category="paragraph">當您關閉受損的控制器之後<block ref="52c48d39b9a1e431e1d04998ae5045f5" category="inline-link-macro-rx"></block>，您將會。</block>
+  <block id="e0bfc72b163c6540df4eb3869f1393ff" category="paragraph"><block ref="e0bfc72b163c6540df4eb3869f1393ff" category="inline-link-macro-rx"></block></block>
+  <block id="9d99224aaec79ef0b06c033956f14979" category="paragraph">您可以從開機映像的合作夥伴節點更換故障的開機媒體。</block>
+  <block id="5d9ac1643aa86c7bddb319af8c3e06e3" category="paragraph">Boot Media Replace 會使用來自合作夥伴節點的開機映像，並自動執行適當的開機功能表選項，以便在替換的開機媒體上安裝開機映像。</block>
+  <block id="d152ad943d3809714aa2acb56114839e" category="doc">開機媒體恢復總覽 - ASA A1K</block>
+  <block id="488cce5b2121242760d58a49c413507e" category="paragraph">當您遇到開機錯誤訊息時，需要更換開機媒體，並從合作夥伴節點還原 ONTAP 映像。</block>
+  <block id="86e825ad6941bb31698d462a9bbb20e4" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_include/a70-90_bootmedia_replace 需求 _BMR 。 adoc []</block>
+  <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70 和 ASA A90 開機媒體</block>
+  <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1K 開機媒體</block>
 </blocks>
