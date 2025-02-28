@@ -1,8 +1,8 @@
 ---
 permalink: a70-90/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
-keywords: aff a70, aff a90, how to recable the system, teboot the system 
-summary: 您必須重新啟動控制器的儲存設備。 
+keywords: aff a70, aff a90, how to recable the system, reboot the system 
+summary: 將儲存資源的控制權交給更換控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。 
 ---
 = 將控制器交回 AFF A70 和 AFF A90
 :allow-uri-read: 
@@ -11,18 +11,15 @@ summary: 您必須重新啟動控制器的儲存設備。
 
 
 [role="lead"]
-驗證儲存設備和網路連線、然後將控制器送回。
-
-
-
-== 將控制器交回
-
-如果已啟用、請重設加密、並將控制器恢復正常運作。
+將儲存資源的控制權交給更換控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。
 
 [role="tabbed-block"]
 ====
 .無加密
 --
+將受損的控制器歸還其儲存設備，使其恢復正常運作
+
+.步驟
 . 在 Loader 提示符下，輸入 `boot_ontap`。
 . 主控台訊息停止時、按 <enter> 。
 +
@@ -30,15 +27,30 @@ summary: 您必須重新啟動控制器的儲存設備。
 ** 如果您看到 _waiting for 贈品、請按下 <enter> 鍵、登入合作夥伴節點、然後前往本節結尾的下一步。
 
 
-. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
-. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
-. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
+
 
 
 --
 .機載加密（ OKM ）
 --
-. 在 Loader 提示符下，輸入 `boot_ontap maint`。
+重設內建加密，並將控制器恢復正常運作。
+
+.步驟
+. 在 Loader 提示字元中，輸入：
++
+`boot_ontap maint`。
+
 . 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
 . 輸入 OKM 複雜密碼。您可以向客戶索取此通關密碼、或聯絡 https://support.netapp.com["NetApp支援"]。
 +
@@ -49,29 +61,52 @@ NOTE: 系統會提示您輸入兩次密碼。
 . 在開機功能表中、輸入正常開機的選項 `1`。
 . 顯示 _ 正在等待恢復 _ 時、請按 <enter> 。
 . 將主控台纜線移至合作夥伴節點、然後以登入 `admin`。
-. 僅回饋 CFO 集合體（根集合體）： `storage failover giveback -fromnode local -only-cfo-aggregates true`
+. 僅回饋 CFO 集合體（根集合體）：
 +
-** 如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+`storage failover giveback -fromnode local -only-cfo-aggregates true`
 
++
+如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
 
-. 在恢復報告完成後等待 5 分鐘、並檢查容錯移轉狀態和恢復狀態： `storage failover show`和 `storage failover show-giveback`。
-. 將主控台纜線移至更換節點、然後輸入 `security key-manager onboard sync`
+. 在恢復報告完成後等待 5 分鐘，並檢查容錯移轉狀態和恢復狀態：
++
+`storage failover show`和 `storage failover show-giveback`。
+
+. 將主控台纜線移至更換節點，然後輸入：
++
+`security key-manager onboard sync`
+
 +
 
 NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
-. 使用以下命令檢查密鑰的狀態： `security key-manager key query -key-type svm-KEK`。
+. 使用下列命令檢查金鑰的狀態：
++
+`security key-manager key query -key-type svm-KEK`。
+
 +
 如果 _RESTOREURE_ 欄顯示 _true_ 以外的任何內容、請聯絡 https://support.netapp.com["NetApp支援"]。
 
-. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
-. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
-. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
+
 
 
 --
 .外部金鑰管理程式（ EKM ）
 --
+重設加密，並將控制器恢復正常運作。
+
+.步驟
 . 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
 . 回答或 `n`回答 `y`下列問題：
 +
@@ -109,11 +144,26 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 
 
 . 系統處理完畢後、您將會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。
-. 檢查接管狀態： `storage failover show`。
-. 請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」 `set -privilege advanced`、然後 `run local partner savecore`按。
-. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
-. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
-. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+. 檢查接管狀態：
++
+`storage failover show`。
+
+. 進入進階模式，確保已修復節點上的任何核心傾印都已儲存：
++
+`set -privilege advanced`然後 `run local partner savecore`。
+
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
+
 
 
 --

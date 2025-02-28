@@ -17,12 +17,12 @@ summary: '若要將系統還原為完整作業、您必須驗證生命、檢查�
 
 == 步驟 1 ：驗證生命和檢查叢集健全狀況
 
-在將 _replacy_node 恢復服務之前、您應該先確認生命負載位於其主連接埠上、檢查叢集健全狀況、然後重設自動恢復。
+將替換節點送回服務之前，請先確認邏輯介面位於其主連接埠上，檢查叢集健全狀況，然後重設自動恢復。
 
 .步驟
 . 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
 +
-如果有任何生命被列為假、請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
+如果有任何邏輯介面列為 false ，請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
 
 . 檢查叢集的健全狀況。如需詳細資訊、請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["如何使用 ONTAP 中的指令碼執行叢集健全狀況檢查"^] 知識庫文章。
 . 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」

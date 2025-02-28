@@ -1,0 +1,38 @@
+---
+permalink: asa-r2-a20-30-50/chassis-replace-requirements.html 
+sidebar: sidebar 
+keywords: asa a20, asa a30, asa a50, replace the chassis 
+summary: 您可以使用與受損機箱相同型號的新機箱來更換受損機箱。 
+---
+= 機箱更換需求 - ASA A20 ， ASA A30 和 ASA A50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換機箱之前，請務必檢閱下列需求和考量事項。
+
+
+
+== 需求
+
+* 更換的機箱必須與損壞的機箱型號相同。此程序適用於類似更換，而非升級。
+* 儲存系統中的所有其他元件都必須正常運作；否則，您必須先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]，才能繼續執行此程序。
+
+
+
+
+== 考量
+
+* * 機箱更換程序會造成營運中斷。 *對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。
+* 您可以在儲存系統支援的所有 ONTAP 版本中使用機箱更換程序。
+* 機箱更換程序是假設您要將擋板，磁碟機，任何磁碟機擋片和控制器移至新機箱。
+* 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
++
+儲存系統有三個位置 LED ：一個在操作員顯示面板上，一個在每個控制器上。位置LED會持續亮起30分鐘。
+
++
+您可以輸入命令將其關閉 `system location-led _off_`。如果您不確定 LED 是否亮起或熄滅，可以輸入命令來檢查其狀態 `system location-led show`。
+
+

@@ -2,7 +2,7 @@
 permalink: asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html 
 sidebar: sidebar 
 keywords: asa r2 a70, asa r2 a90, boot the recovery image 
-summary: 您可以透過自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。 
+summary: 如果 ASA A70 或 ASA A90 系統中的開機媒體毀損，您可以開機恢復映像，從合作夥伴節點還原組態，以及驗證環境變數。 
 ---
 = 還原 ONTAP 映像 - ASA A70 和 ASA A90
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以透過自動開機還原程序、從合作夥伴控制器還�
 
 
 [role="lead"]
-實體更換受損的開機媒體之後，請從合作夥伴節點還原 ONTAP 映像。
+如果 ASA A70 或 ASA A90 系統中的開機媒體毀損，您可以從合作夥伴節點開機恢復映像並還原組態。
 
 .開始之前
 * 判斷內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是使用下列其中一種方法來設定：

@@ -2,7 +2,7 @@
 permalink: c80/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: c80, pre-shutdown checks for onboard encryption keys 
-summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+summary: 為了確保 AFF C80 儲存系統的資料安全性，您需要驗證加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
 ---
 = 檢查加密金鑰支援與狀態 - AFF C80
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 
 
 [role="lead"]
+為了確保 AFF C80 儲存系統的資料安全性，您需要驗證加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+
 關閉受損控制器之前、請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）、以及您的金鑰管理系統是否已正確設定。
 
 

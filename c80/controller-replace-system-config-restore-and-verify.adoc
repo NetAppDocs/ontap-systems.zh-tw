@@ -2,7 +2,7 @@
 permalink: c80/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: c80, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: 完成硬體更換並開機至維護模式之後、您需要驗證更換控制器的低階系統組態、並視需要重新設定系統設定。 
+summary: 確認控制器的 HA 組態在 AFF C80 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。 
 ---
 = 還原並驗證系統組態 - AFF C80
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 完成硬體更換並開機至維護模式之後、您需要驗證更�
 
 
 [role="lead"]
-驗證更換控制器的低階系統組態、並視需要重新設定系統設定。
+確認控制器的 HA 組態在 AFF C80 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。
 
 
 
