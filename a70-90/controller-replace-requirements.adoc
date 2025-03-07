@@ -2,7 +2,7 @@
 permalink: a70-90/controller-replace-requirements.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, prerequisite, replace the controller module 
-summary: 在更換 AFF A70 或 AFF A90 系統中的機箱之前，請確保您符合成功更換的必要要求。其中包括正確的更換機箱，系統組態的備份，以及存取任何必要工具和韌體。 
+summary: 在更換 AFF A70 或 AFF A90 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。 
 ---
 = 控制器更換需求 - AFF A70 和 AFF A90
 :allow-uri-read: 
@@ -17,8 +17,9 @@ summary: 在更換 AFF A70 或 AFF A90 系統中的機箱之前，請確保您�
 
 * 所有磁碟機櫃都必須正常運作。
 * 健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
-* 如果您的系統採用MetroCluster 不必要的組態、您必須檢閱一節 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"] 判斷您是否應該使用此程序。
-* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請勿將此程序用於控制器升級；請參閱 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["選擇控制器硬體升級程序"]以取得指引。
+* 如果您的系統是 MetroCluster 組態，您必須檢閱 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"]以判斷是否應使用此程序。
+* 您必須使用從 NetApp 收到的現場可更換單元（ FRU ）來更換故障元件。
 * 您必須以相同型號的控制器模組來更換控制器模組。您無法只更換控制器模組來升級系統。
 * 在此程序中、您無法變更任何磁碟機或磁碟機櫃。
 * 由於開機裝置位於系統背面安裝的系統管理模組上、因此更換控制器模組時不需要移動開機裝置。
@@ -34,3 +35,6 @@ summary: 在更換 AFF A70 或 AFF A90 系統中的機箱之前，請確保您�
 這會提供程序記錄、以便您疑難排解在更換程序期間可能遇到的任何問題。
 
 
+
+.接下來呢？
+在您審查了更換 AFF A70 或 AFF A90 控制器的要求之後，您需要link:controller-replace-shutdown.html["關閉控制器"]。

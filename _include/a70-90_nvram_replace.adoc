@@ -2,11 +2,12 @@
 :allow-uri-read: 
 
 
-NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的 NVRAM 模組、您必須從機箱中移除模組、將 DIMM 移至更換模組、然後將更換的 NVRAM 模組安裝到機箱中。
+NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡 https://support.netapp.com["NetApp支援"]。
+.開始之前
+* 請確定您有可用的替換零件。您必須以從供應商處收到的替換元件來取代故障元件。
+* 確保儲存系統中的所有其他元件正常運作；如果沒有，請聯絡 https://support.netapp.com["NetApp支援"]。
 
-您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
 
 
@@ -195,9 +196,9 @@ NOTE: 控制器在機箱中完全就位後、就會重新啟動。
 
 
 
-== 步驟3：更換NVRAM DIMM
+== 步驟 3 ：更換 NVRAM DIMM
 
-若要更換 NVRAM 模組中的 NVRAM DIMM 、您必須先移除 NVRAM 模組、然後更換目標 DIMM 。
+若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。
 
 . 在機箱正面、用您的拇指將每個磁碟機穩固推入、直到您感覺到有正面的停止為止。如此可確保磁碟機穩固地安裝在機箱中板上。
 +

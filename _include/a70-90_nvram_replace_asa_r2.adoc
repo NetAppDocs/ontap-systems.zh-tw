@@ -263,21 +263,24 @@ NOTE: 如果被否決、您可以考慮覆寫否決。
 .. 完成恢復後、確認 HA 配對是否正常、而且可以接管： _storage 容錯移轉 show_
 
 
-. 驗證磁碟集區的磁碟是否如預期： `storage disk show -ownership`
+. 驗證是否顯示所有磁碟： `storage disk show`
 +
 [listing]
 ----
-node1:> storage disk show -ownership
 
-Disk     Aggregate  Home Owner    DR Home      Home ID       Owner ID    DR Home ID  Reserver Pool
--------- --------- ------------- ------------- ------------- ----------- ----------- ----------- ----------- ------
-1.0.0 pod_NVME_SSD_1
+::> storage disk show
+                     Usable           Disk    Container   Container
+Disk                   Size Shelf Bay Type    Type        Name
+---------------- ---------- ----- --- ------- ----------- ---------
+1.0.0                3.49TB     0   0 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.1                3.49TB     0   1 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.2                3.49TB     0   2 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.3                3.49TB     0   3 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.4                3.49TB     0   4 SSD-NVM aggregate   pod_NVME_SSD_1
 
-0 0 - 0 Pool0
-1.0.1 pod_NVME_SSD_1
-0 0 - 0 Pool0
-1.0.2 pod_NVME_SSD_1
-0 0 - 0 Pool0
+[...]
+48 entries were displayed.
+
 ----
 
 

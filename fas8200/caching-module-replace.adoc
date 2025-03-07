@@ -20,7 +20,7 @@ summary: 當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指�
 ** 清除快取模組上的資料： `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
 +
 
-NOTE: 執行 `system controller flash-cache show` 如果您不知道快閃快取裝置ID、則命令。
+NOTE: 執行 `system controller flash-cache show`如果您不知道 Flash Cache 裝置 ID ，請命令。
 
 ** 確認資料已從快取模組中清除： `system controller flash-cache secure-erase show`
 

@@ -2,16 +2,16 @@
 permalink: a70-90/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys 
-summary: 為了確保 AFF A70 和 AFF A90 儲存系統上的資料安全性，您需要驗證加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
+summary: 為了確保 AFF A70 和 AFF A90 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
 ---
-= 檢查加密金鑰支援與狀態 - AFF A70 和 AFF A90
+= 檢查開機媒體上的加密金鑰支援和狀態 - AFF A70 和 AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-為了確保 AFF A70 和 AFF A90 儲存系統上的資料安全性，您需要驗證加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+為了確保 AFF A70 或 AFF A90 儲存系統上的資料安全性，您必須驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
 
 關閉受損控制器之前、請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）、以及您的金鑰管理系統是否已正確設定。
 
@@ -194,3 +194,6 @@ ONTAP 9 。 13.1 或更早版本
 --
 ====
 
+
+.接下來呢？
+在引導媒體上檢查加密密鑰支持和狀態後，您需要link:bootmedia-shutdown.html["關閉控制器"]。

@@ -1068,8 +1068,6 @@
   <block id="f0883ed7dc01ca5a7c6baa998e45a6be" category="section-title">選項1：使用第二個開機媒體的備份還原、將檔案傳輸到開機媒體</block>
   <block id="f2517f7437e31c22e8ebbe3208bc1f18" category="paragraph">您可以使用安裝在控制器模組中的第二個開機媒體上的映像、將系統映像安裝到替換的開機媒體。這是將開機媒體檔案傳輸至控制器模組中具有兩個開機媒體之系統中的替換開機媒體的主要方法。</block>
   <block id="c74fc698f6085001fa8e634011afdd6d" category="paragraph">次要開機媒體上的映像必須包含「image.tgz」檔案、而且不得回報故障。如果image.tgz檔案遺失或開機媒體報告失敗、您將無法使用此程序。您必須使用USB快閃磁碟機更換程序、將開機映像傳輸至更換的開機媒體。</block>
-  <block id="dd04dd92143954e62338ecb34a5c6620" category="list-text">重新接上電源供應器、然後將其連接至電源。</block>
-  <block id="e5116f5891aa80c66712f78ca68f7345" category="paragraph">請確定您重新連接電源線的電源線鎖環。</block>
   <block id="0c285136d46116873f7508d317da15c6" category="list-text">將控制器模組一路輕推入系統、直到控制器模組鎖定掛勾開始上升、穩固地推入鎖定掛勾、以完成控制器模組的安裝、然後將鎖定掛勾旋轉至控制器模組插銷上的鎖定位置。</block>
   <block id="8a3329557ea656d2883ec2301fc0c785" category="list-text">在載入程式提示字元下按Ctrl-C停止、以中斷開機程序。</block>
   <block id="9a31048ac5a99c8ed4056d3af461b406" category="list-text">在載入程式提示字元中、從次要開機媒體開機恢復映像：「boot_recovery」</block>
@@ -1178,11 +1176,7 @@
   <block id="883c91c37ee151a81d34d6105afae5ea" category="summary">如果您的系統需要將NS224磁碟機櫃纜線當作交換器附加儲存設備（非直接附加儲存設備）、請使用所提供的資訊。</block>
   <block id="e8f8b2e7fe84a76416bedc8340d89ea1" category="doc">纜線櫃作為交換器附加儲存設備- NS224磁碟櫃</block>
   <block id="a94de468f363b57c8cc1ea1b7a532a9e" category="paragraph">如果您的系統需要將NS224磁碟機櫃纜線作為交換器附加儲存設備（非直接附加儲存設備）、請使用提供的資訊。</block>
-  <block id="0ab54354ff641ba8f3492f71c03aa435" category="list-text">透過儲存交換器連接NS224磁碟機櫃：</block>
-  <block id="d1f671afbf5d4ca47b95e86f70c6bcc1" category="list-text">安裝儲存交換器：</block>
   <block id="97a30f090fd38397124788f1f0376eda" category="inline-link">VMware交換器文件AFF FAS</block>
-  <block id="008b8867712161228bd794977fcd0d4b" category="paragraph"><block ref="008b8867712161228bd794977fcd0d4b" category="inline-link-rx"></block></block>
-  <block id="4aaebba2a5287c74eb41bf080e6d1fe4" category="list-text">確認您的平台機型支援的硬體、例如儲存交換器和纜線：</block>
   <block id="7c5ee56a01b06b00d2d910cc295d8c56" category="paragraph"><block ref="7c5ee56a01b06b00d2d910cc295d8c56" category="inline-link-rx"></block></block>
   <block id="66c55f70fc7014da19c97d66f75b43e0" category="summary">您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障磁碟機。</block>
   <block id="100cf583f6cdd16852a08df77146f368" category="doc">熱交換磁碟機- NS224磁碟櫃</block>
@@ -1973,7 +1967,6 @@
   <block id="5c35096da376ba0c64381e3c367a4347" category="paragraph">鎖定按鈕</block>
   <block id="772b3d601fb0517d5ef4e922b24709a1" category="list-text">用兩隻手支撐電源供應器邊緣、並將其與系統機箱的開孔對齊、然後將電源供應器輕推入機箱、直到鎖定到位。</block>
   <block id="ef20366d8eeda4ed0725f1a5a164c558" category="paragraph">當PSU完全插入機箱時、綠色電源LED會亮起、而黃色警示LED會開始閃爍、但會在幾分鐘後關閉。</block>
-  <block id="23b82013e68c4445eaa3ec355ca09fb4" category="summary">NVRAM模組包含NVRAM11和DIMM、以及每個NVRAM模組最多兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。</block>
   <block id="b422a6f4d3945c00efbef5a1554df972" category="doc">更換NVRAM模組和/或NVRAM DIMM AFF - REVA900</block>
   <block id="4d365227a3a5ccf9886fa9c35ba6a99d" category="paragraph">NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的NVRAM模組、您必須將其從機箱中取出、將DIMM移至更換模組、然後將替換的NVRAM模組安裝到機箱中。</block>
   <block id="356bb2eaf8fe1f9955f9f22e00ddcb54" category="paragraph">由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。</block>
@@ -2095,7 +2088,6 @@
   <block id="02115e0d387563593963d3e090ae447d" category="list-text">將備用風扇模組的邊緣與機箱的開孔對齊、然後將其滑入機箱、直到卡入定位。</block>
   <block id="07dfb549e1842a4183274e59acab0da7" category="paragraph">將風扇模組成功插入機箱時、黃色警示LED燈會閃四次。</block>
   <block id="f7e35bdcf8da9684539c8d0c30bdfc4c" category="section-title">步驟10：安裝I/O模組</block>
-  <block id="ae4f5c29207fbe466adb203203473a97" category="paragraph">若要安裝I/O模組、包括舊機箱的NVRAM/FlashCache模組、請依照特定步驟順序執行。</block>
   <block id="dbf1ba99b87a5b7bf76e1a0174f863f4" category="paragraph">您必須安裝機箱、才能將I/O模組安裝到新機箱的對應插槽中。</block>
   <block id="a93fa9aba373d58e2f971de1346e1b75" category="list-text">在機架或機櫃中安裝替換機箱之後、將I/O模組輕推入插槽、直到有字母和編號的I/O CAM栓鎖開始卡入、將I/O模組安裝到替換機箱的對應插槽中、 然後將I/O CAM栓鎖推到底、將模組鎖定到位。</block>
   <block id="7ae41c888a0689033181586a5bae1c09" category="list-text">視需要重新安裝I/O模組。</block>
@@ -2154,7 +2146,6 @@
   <block id="c8587180911d070686f7467322a07db1" category="list-text">將機箱蓋上的針腳與主機板托架上的插槽對齊、然後將機箱蓋滑入定位、以重新安裝控制器模組機箱蓋。</block>
   <block id="9148f81e87e207af324fa20ce6e3a4df" category="list-text">視需要重新安裝控制器模組。</block>
   <block id="4f242c85307491ee1ac3a7f2d7ca4421" category="list-text">將控制器模組一路推入系統、確定CAM握把會清除USB快閃磁碟機、穩固推入CAM握把以完成控制器模組的安裝、然後將CAM握把推至關閉位置。</block>
-  <block id="61fb64589c53cb1543b86398c0f9bf5f" category="admonition">您的介面可能需要其他參數。您可以在韌體提示字元中輸入說明、以取得詳細資料。</block>
   <block id="92119567969a6dfb8d14b4d139115118" category="list-text">將MetroCluster 這個連接埠設為啟動器：「ucadmin modify -m fit -t initator adapter_name」</block>
   <block id="546213aeb2cbd4cabb4e9e5099416edd" category="summary">您可以更換LED USB模組、而不中斷服務。</block>
   <block id="6012de004f4bd50d98163ac921889523" category="doc">更換LED USB模組AFF - REVA900</block>
@@ -3208,17 +3199,10 @@
   <block id="c1ed0cd23ea77c49b5611e5929537b3f" category="list-text">將CAM把手上的橘色按鈕向下推、直到解鎖為止。</block>
   <block id="6c35991313f21e9038f629e9e809488a" category="admonition">請勿混用不同效率額定值的PSU。永遠像這樣更換。</block>
   <block id="3d5375a17f55c7bdf08ca9af8aca2b83" category="list-text">按住電源供應器握把上的橘色按鈕、然後將電源供應器從機箱中拉出。</block>
-  <block id="6c5689e6cebd33e09bd3177ac7c907ca" category="summary">NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。</block>
   <block id="cfdacb5b8eea6906da1318b4cc5ee5a2" category="list-text">如果您的系統是HA配對、則合作夥伴節點必須能夠接管與要更換的NVRAM模組相關的節點。</block>
   <block id="0fd88e54da65fb1a33a1996f9d00a9cd" category="list-text">「_Healthy_」節點是受損節點的HA合作夥伴。</block>
-  <block id="5d0d368db133218e5906d443b61514c6" category="list-text">將FlashCache模組從舊的NVRAM模組移至新的NVRAM模組：</block>
-  <block id="e2daacc31483bc3b72e7bcacf14a33cf" category="paragraph">橘色釋放按鈕（空白FlashCache模組為灰色）</block>
-  <block id="82ce6e7b2bec620e2323db80d43596ed" category="paragraph">FlashCache CAM處理</block>
-  <block id="172abe1f5570c53335678f7df0c537d6" category="list-text">按下FlashCache模組正面的橘色按鈕。</block>
-  <block id="2228c66310ba59834f0b6f9926e2c172" category="admonition">空白FlashCache模組上的釋放按鈕為灰色。</block>
   <block id="bba309c8a06aaa0ae0083c07ed7d1439" category="list-text">將CAM握把向外旋轉、直到模組開始滑出舊的NVRAM模組。</block>
   <block id="42ae2677ae87c3a059cee0a88ad9a862" category="list-text">抓住模組CAM把手上、將其從NVRAM模組中滑出、然後將其插入新的NVRAM模組正面。</block>
-  <block id="b5f730ed78c52d852a761b7c3c7ace60" category="list-text">將FlashCache模組一路輕推入NVRAM模組、然後將CAM握把旋開、直到鎖定模組到位。</block>
   <block id="680d8cf9003e2f0c6c16768d83979722" category="section-title">步驟5：重新指派磁碟</block>
   <block id="b2fdb7d98e0aecd7d98c266cea50e1e4" category="paragraph">視您是否有HA配對或雙節點MetroCluster 的功能表組態而定、您必須驗證磁碟是否重新指派至新的控制器模組、或手動重新指派磁碟。</block>
   <block id="934d0bdda7a0d1a8822fd442720c5972" category="paragraph">請選取下列其中一個選項、以取得如何將磁碟重新指派給新控制器的指示。</block>
@@ -3262,7 +3246,6 @@
   <block id="568cc5cf99c02458b3c071cfa0438d78" category="list-text">核心傾印模組可安裝在插槽6-1和6-2中。建議的最佳實務做法是將模組安裝在插槽6-1中。</block>
   <block id="ad76310ff3a94c1bac5eaff22586fdc8" category="list-text">X9170A核心傾印模組不可熱交換。</block>
   <block id="fdb927001af9ab6198815c75f2c63fc8" category="section-title">步驟2：更換或新增快取模組</block>
-  <block id="cd9ce211a477f674f43c4e29c1c20b1e" category="paragraph">NVMe SSD Flash Cache模組（FlashCache或快取模組）是獨立的模組。它們位於NVRAM模組的正面。若要更換或新增快取模組、請將其放在系統背面的插槽6上、然後依照特定的步驟順序進行更換。</block>
   <block id="5b4711acf4c2d0b25a2539612d1166aa" category="paragraph">您的儲存系統必須符合特定條件、視您的情況而定：</block>
   <block id="5f02cc98e909c306d397a3ee47760670" category="list-text">它必須具備適用於您所安裝之快取模組的作業系統。</block>
   <block id="ee9a7c8426388e1f808989ad540f6665" category="list-text">它必須支援快取容量。</block>
@@ -3307,7 +3290,6 @@
   <block id="123ef787b4689ac71f6faa1ecdb5c6c4" category="inline-link">FAS9000安裝與設定說明</block>
   <block id="3db791f86840d722803e10a186dc04c8" category="summary">將風扇、硬碟機和控制器模組或模組從受損的機箱移至新機箱、然後將受損的機箱從設備機架或系統機櫃換成與受損機箱相同機型的新機箱。</block>
   <block id="64f6b820ab2dfc538680f52ee5405553" category="list-text">按下風扇模組上的橘色按鈕、將風扇模組從機箱中直接拉出、並確保您可以用手支撐風扇模組。</block>
-  <block id="7d6149f51977af90ca10cd8b827e1eec" category="paragraph">若要從舊機箱（包括NVRAM模組）移除I/O模組、請依照特定步驟順序執行。將FlashCache模組移至新機箱時、您不需要將其從NVRAM模組中移除。</block>
   <block id="45c20771cb1532f5746ddda7446e7140" category="list-text">將每個節點開機至維護模式：</block>
   <block id="b3dd491c5d322d28567e04f0d5b0ee6f" category="list-text">當每個節點開始開機時、當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」訊息時、請按「Ctrl-C」來中斷開機程序。</block>
   <block id="8cd2c59a1f3a2ce0c49c92a0d4528f07" category="list-text"><block ref="8cd2c59a1f3a2ce0c49c92a0d4528f07" category="inline-link-macro-rx"></block></block>
@@ -3325,7 +3307,6 @@
   <block id="67217a13f69bc00335677c551451bc10" category="doc">更換I/O模組AFF - FASA700和FAS9000</block>
   <block id="074956b98e6ab62b7ae2bf9b8699df64" category="list-text">如果您的系統設定為支援40 GbE NIC或內建連接埠上的10 GbE叢集互連和資料連線、請使用「維護模式」中的「nicadmin convert」命令、將這些連接埠轉換成10 GbE連線。</block>
   <block id="30c36d0c10aef968ba45a8742ec6c704" category="doc">以雙節點MetroCluster 的不全功能組態切換回Aggregate：AFF 還原A700和FAS9000</block>
-  <block id="1544c9529e8061df2e6df349a1585acc" category="summary">NVMe SSD FlashCache模組（FlashCache或快取模組）僅位於FAS9000系統插槽6的NVRAM10模組前方。從S得9.4開始ONTAP 、您可以從相同或不同支援廠商、將相同容量的快取模組熱交換出。</block>
   <block id="26f799463ec0df8fa8944abe163ef0a0" category="list-text">準備好快取模組插槽以進行更換、如下所示：</block>
   <block id="57bed1144a41a674208d8d0428026e0b" category="list-text">適用於更新版本的更新版本：ONTAP</block>
   <block id="21b03e46945fa952d9781d385e7edcec" category="list-text">在目標節點上記錄快取模組容量、零件編號和序號：「System Node run local sysconfig -av6」（系統節點執行本機sysconfig -av6）</block>
@@ -3939,7 +3920,6 @@
   <block id="19700f9c729dfc1036b3ebeb2a20006a" category="doc">熱抽換風扇模組AFF - VA320</block>
   <block id="a7e949b06c0a14c96761a482fe850048" category="paragraph">當風扇安裝到位後、警示LED不應亮起、而且會加速運作。</block>
   <block id="cfd2431baff6fc4122f2c8fed540c128" category="paragraph">在移動儲存設備進行升級的過程中、您需要開啟節點3和節點4的電源、開機軟體映像、以及設定節點。原始節點與新節點之間的實體連接埠配置可能有所不同。應在原始節點和替換節點之間對應連接埠、以識別連接埠和連線的適當配置。</block>
-  <block id="f9001cb2001a5d31c1674d860cf46052" category="paragraph">如果ONTAP 在新節點上執行的版本與原始節點上的版本不同、您必須從NetApp支援網站下載正確的&lt;ONTAP_VERSION &gt;_image.tgz檔案至可從網路存取的目錄（請參閱步驟4）。您需要&lt;ONTAP_VERSION &gt;_image.tgz檔案來執行系統的網路開機。</block>
   <block id="cc32105596984688d6ab5fee199bc645" category="list-text">開啟節點3的電源、然後立即在主控台終端按Ctrl-C存取載入程式提示。</block>
   <block id="25870cbb4fe9afef5797b531420b7012" category="paragraph">如果節點3和節點4位於同一個機箱中、請前往步驟2。如果沒有、請前往步驟3。</block>
   <block id="6c43e0670806fec2f9b82e002c3d44d5" category="list-text">如果節點3和節點4位於單一機箱組態中（在同一個機箱中有控制器）：</block>
@@ -3957,12 +3937,9 @@
   <block id="a6d12afddb580faaf04d9a073325f914" category="paragraph">* FAS2200、FAS2500、FAS3200、FAS6200、FAS/AFF8000系列系統*</block>
   <block id="935d002e70e8bae5172c906d561c2c9e" category="paragraph">按鍵+ netboot<block ref="edffdf0ce71dcfe302f98b15ccfdea9f" category="inline-link-rx"></block></block>
   <block id="339dbbf2e3919abe2381758c4b54e24c" category="paragraph">*所有其他系統*</block>
-  <block id="508003c9dbd4389e46ce53a1eb4ca352" category="paragraph">按鍵+ netboot<block ref="a6ac12d7fa9f1afb6919890f5409d777" category="inline-link-rx"></block></block>
-  <block id="3d72abdf0c5ff5a5928889b5949891bd" category="paragraph">path_to_the_web-易於 存取的目錄是下載的&lt;ONTAP_VERSION &gt;_image.tgz檔案的位置。</block>
   <block id="a7cb2d731b29707bf9c40c8d88a0c732" category="admonition">如果您無法從網路開機新的控制器、請聯絡技術支援部門。</block>
   <block id="9a8c20fab9267090fe0211c579b8d259" category="list-text">從開機功能表中、選取選項*（7）Install new software first*（先安裝新軟體*）、將新的軟體映像下載並安裝至開機裝置。</block>
   <block id="071501038eea1d369bfa271bfc4c7ff9" category="paragraph">請忽略下列訊息：「HA配對上的不中斷升級不支援此程序」。它適用於軟體的不中斷升級、而非控制器的升級。</block>
-  <block id="3119febddbb24ba81e9b7dcfef909e01" category="list-text">如果系統提示您繼續此程序、請輸入「y」、並在系統提示您輸入套件時、輸入映像檔的URL：「+http://web_server_ip/path_to_web-accessible_directory/&lt;ontap_version&gt;_image.tgz+`」。</block>
   <block id="647f982b341b67a165ac63d735784a54" category="paragraph">輸入使用者名稱/密碼（若適用）、或按Enter繼續。</block>
   <block id="a01beec0f6ce0a2dd45c8f1d5aa3e76c" category="list-text">當您看到類似下列的提示時、請輸入「n」跳過備份恢復：</block>
   <block id="4c311f4de89068c42d4731e90025eefc" category="list-text">當您看到類似於以下內容的提示時、輸入「y」重新開機：</block>
@@ -5018,8 +4995,6 @@
   <block id="6c77c0963cc43d89befd25aeab2f805c" category="inline-link-macro">FAS9500安裝與設定說明</block>
   <block id="6b076d5e08feabcb936ff1fc2298c9cb" category="doc">更換機箱- FAS9500</block>
   <block id="fb796745f1b93e7c27af0a928be9d5ae" category="doc">熱交換快取模組- FAS9500</block>
-  <block id="e5684d853146c37193094e90fea21bff" category="paragraph">NVMe SSD FlashCache模組（FlashCache或快取模組）位於FAS9500系統插槽6的NVRAM11模組前方。您可以從相同或不同的支援廠商、熱交換容量相同的快取模組。</block>
-  <block id="1360261f3d9e17642c609debfd62b1d6" category="admonition">如果您需要或想要冷切換FlashCache模組、請遵循更換I/O模組的程序。</block>
   <block id="fa807167a57a5e7782f90326093319e4" category="list-text">快取模組的運作必須足以讓系統看到。如果快取模組自上次開機後無法運作、您將無法使用此程序、而且必須使用冷交換程序。</block>
   <block id="bdd8c99ec41c2de3e99ba0a36e04bfbf" category="list-text">在管理權限層級中、準備要移除的目標NVMe插槽、並在系統提示是否繼續時回應「y」：「系統控制器插槽模組移除節點節點節點名稱-插槽插槽編號」下列命令會準備節點1上的插槽6-1以供移除、並顯示可安全移除的訊息：</block>
   <block id="68607949342d7df39c7770d809d0a5f2" category="image-alt">DRW 9500移除快閃快取</block>
@@ -5091,7 +5066,6 @@
   <block id="4d10af14d34e5e468c4aee19207329d3" category="list-text">kmip.init.gateway &lt;value&gt;</block>
   <block id="a1781eecf18376feb2f740b6a3d7781d" category="list-text">bootarg.onal_keymanager &lt;value&gt;</block>
   <block id="8ed13fe688162a9d4d89829700344e8f" category="list-text">使用「prontenv variable-name」命令確認變更。</block>
-  <block id="890a5db496d99a96f099de944c9791c0" category="admonition">您設定的目標連接埠是您在使用網路連線進行var檔案系統還原期間、從正常節點與受損節點通訊的目標連接埠。您也可以在此命令中使用e0M連接埠。</block>
   <block id="f8cc7bd538c729e18dab57ecfd18b69e" category="video-title">動畫-更換NVRAM模組</block>
   <block id="9b191eaf82da57faf3acb37f96f84ca6" category="image-alt">DRw 9500-Move移除NVRAM模組</block>
   <block id="1b75d6028af1363f62eb9a45010f31c4" category="image-alt">DRW 9500移除NVRAM模組內容</block>
@@ -5495,7 +5469,6 @@
   <block id="6e4968851f4373ab9764e16cffb39389" category="list-text">如果有多個插槽可用、請檢查中的插槽優先順序<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block> 並使用適用於您I/O模組的最佳工具。</block>
   <block id="757216293ea1da04339a2c9b8eaa2641" category="admonition">tar.gz檔案必須放在最少4GB的fat32格式分割區上。儘管Windows內建工具（例如磁碟零件）的容量可達2TB、但卻無法格式化大於32GB的FAT32分割區。</block>
   <block id="e9d3276fadd16a57346b54cecf613793" category="list-text">清除快取模組上的資料：<block ref="5ffb603e9f437c31dabf66aeb6dc9941" prefix=" " category="inline-code"></block></block>
-  <block id="06dd51a0351c6bc1041f60a7a78358f1" category="admonition">執行<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block> 如果您不知道快閃快取裝置ID、則命令。</block>
   <block id="955a29c530e47b3a4d397e3e2ff7a94a" category="list-text">確認資料已從快取模組中清除：<block ref="5a00050b2fc68dfbfe21cffc587aa407" prefix=" " category="inline-code"></block></block>
   <block id="04f13a81f468108c54934d79ebdf3ceb" category="admonition">如果看不到插卡上的連接埠標籤、請檢查插卡的安裝方向（PCIe連接器插槽位於A400和FAS8300/8700插槽左側）、然後在中依產品編號尋找插卡<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 顯示連接埠標籤的擋板圖形。您可以使用找到卡片零件編號<block ref="432345ed72f5509f18312f01d4f08dff" prefix=" " category="inline-code"></block> 命令或系統壓縮清單上的。</block>
   <block id="3a5f51ab8f29522107285c1bd243bf95" category="paragraph">如果SAS2/SAS3「混合堆疊支援」欄位未出現在輸出中、或值為「無」、則表示您的系統不支援混合堆疊。</block>
@@ -5798,7 +5771,6 @@
   <block id="0a73484fb1b3edef8bbbf67f873dec2a" category="paragraph">若要更換機箱、您必須從損壞的機箱中移除元件、並將其安裝在替換機箱中。</block>
   <block id="c41b6afef3be0625148760974efbe53b" category="paragraph">更換機箱時、請先關閉電源供應器、拔下電源供應器、然後從損壞的機箱背面卸下四個電源供應器。</block>
   <block id="f29cd4bb20b414e068c19ba637ce5223" category="paragraph">若要更換機箱、您必須將控制器模組或模組從損壞的機箱中移除。</block>
-  <block id="d29be88ad14bfa795c9cb4b5e8e71620" category="paragraph">若要從受損機箱（包括 NVRAM 模組）中移除 I/O 模組、請依照特定步驟順序進行。將 FlashCache 模組移至替換機箱時、您不需要從 NVRAM 模組中移除該模組（如果有）。</block>
   <block id="70796c97dce9e8bc0ec4d548fad4c33c" category="list-text">對損壞機箱中的其餘 I/O 模組重複上述步驟。</block>
   <block id="7dcb58280c958448c619b7845f19a872" category="paragraph">從損壞的機箱正面卸下兩個分段控制器電源模組。</block>
   <block id="bd87961e02bb318277afd71851d575b3" category="section-title">步驟 6 ：取下 USB LED 模組</block>
@@ -5809,7 +5781,6 @@
   <block id="2bc629fe1fa0756ba85648b1b075475e" category="list-text">在兩到三個人的協助下、將受損的機箱滑出系統機櫃或設備機架中的 _L_ 支架中的機架軌道、然後將其放在一邊。</block>
   <block id="1cff1ec8bb5f01806ddb910dceecf767" category="list-text">使用您從受損機箱中卸下的螺絲、將機箱正面固定至設備機架或系統機櫃。</block>
   <block id="979104406ee03d12a7689ad931f5410b" category="list-text">如果您使用的是纜線管理支架、請將其從受損的機箱中取出、然後將其安裝在替換機箱上。</block>
-  <block id="b9179a26176765e84f442a338275974c" category="paragraph">若要安裝 I/O 模組、包括受損機箱的 NVRAM/FlashCache 模組、請依照特定步驟順序進行。</block>
   <block id="8a063f47876606fb88039df27bbfad1f" category="paragraph">您必須安裝機箱、才能將 I/O 模組安裝到替換機箱的對應插槽中。</block>
   <block id="62d3b0199402c94809d4bbaf872df5c3" category="admonition">如果損壞的機箱有空白 I/O 面板、請將其移至更換的機箱。</block>
   <block id="dc844fd8ca4280150d42e7895f0e653c" category="list-text">請確定電源供應器的搖滾器位於關閉位置。</block>
@@ -6564,8 +6535,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6363d003788743405ff89be986530a80" category="doc">換出風扇 - AFF A700</block>
   <block id="425b45a67b7c80ba6549e393946073c1" category="doc">更換開機媒體 - AFF A700</block>
   <block id="140d684ef1769656ce93863b342912ff" category="doc">更換 NVRAM 模組或 NVRAM DIMM - AFF A700</block>
-  <block id="b180ad00948e933913ce3bc8c504ee6d" category="paragraph">NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。</block>
-  <block id="37ea95dcece93b9043b6f57473c523cc" category="paragraph">若要更換故障的NVRAM模組、您必須將其從機箱中移除、從NVRAM模組中移除FlashCache模組或模組、將DIMM移至更換模組、重新安裝FlashCache模組或模組、然後將替換的NVRAM模組安裝到機箱中。</block>
   <block id="464d8fc73e92650a9ae0878d27074167" category="paragraph">由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。</block>
   <block id="629fa568eaf78ff78d0fcfe8dda40271" category="doc">移動並更換硬體 - AFF A700</block>
   <block id="ec3ff203f5d79b791c68957799b25408" category="doc">在沒有開放式插槽的系統中新增 X91148A 儲存模組 - A700</block>
@@ -7367,7 +7336,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ec2ab707a85ae3f8634491d0876e34c6" category="paragraph">在使用磁碟的正式作業系統中更換磁碟機櫃時、您需要執行冷機櫃更換。這是一種破壞性程序。它要求您停止 HA 配對中的控制器。</block>
   <block id="b70986af2d94261df69e2141b1a928cf" category="inline-link">如何使用冷機櫃移除程序來更換機櫃機箱</block>
   <block id="3946a95173cf2872b6b6e8309352d61b" category="inline-link">NS224 NVMe磁碟機櫃佈線指南</block>
-  <block id="29c2f32397b266395d18c9814ee2c641" category="paragraph"><block ref="29c2f32397b266395d18c9814ee2c641" category="inline-link-rx"></block></block>
   <block id="5932d352036c33399a3ddcba5a995002" category="summary">您可以冷更換 NS224 磁碟機櫃。</block>
   <block id="1aba95483fe95743e6b48b8708c5c514" category="doc">冷更換機櫃 - NS224 機櫃</block>
   <block id="efc8f4d1076344beccb8353312cb002a" category="sidebar">磁碟機櫃</block>
@@ -7627,7 +7595,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5cc16253a8aee4b43fffd03ab6bf4dcc" category="image-alt">移除或安裝 PCIe 卡</block>
   <block id="19d09ef846ca4e7e9e07b780168aa7e8" category="image-alt">卸下電源供應器</block>
   <block id="421c376f4d6d54ea975a03a818082d3d" category="image-alt">更換 DIMM</block>
-  <block id="9cb7281bb7eb2acd0ccc0342394f8a2a" category="summary">NVMe SSD FlashCache 模組（ FlashCache 或快取模組）僅位於 FAS9500 系統插槽 6 的 NVRAM11 模組前方。您可以從相同或不同的支援廠商、熱交換容量相同的快取模組。</block>
   <block id="be156c2254730ffea327aad8b7574600" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUD/700_9000_超速 緩存模塊 _and_core dump 模組 _replace .adoc []</block>
   <block id="98c84c18c84bbdb869a3af52fb92fee5" category="admonition">用於安裝 SuperRail 的前後連接點之間的最小深度為 24 英吋、最大深度為 32 英吋。</block>
   <block id="391efe7c4ae90cf6bb51a9deabcdbefb" category="image-alt">檢視每個抽屜的五個纜線鏈、以及垂直和水平連接器</block>
@@ -7807,8 +7774,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="502b19f0923675ac37953f046d92661c" category="list-text">將 USB 快閃磁碟機插入系統管理模組上的 USB 插槽。</block>
   <block id="54d19c7d0de44aef2c43e3480794f731" category="list-text">將電源線插入電源供應器、然後重新安裝電源線固定器。</block>
   <block id="beab314ce8e147a2186f06e70152d37b" category="paragraph">一旦電源重新連接至系統、控制器就會開始開機。</block>
-  <block id="023f9d7e0e4f25a5ac2fefbe339b9d2a" category="list-text">如果您正在設定 DHCP ：<block ref="910e8145592a2ef4eaf5e3c21b90a5e1" prefix=" " category="inline-code"></block></block>
-  <block id="be7a3d5eb4dec2257326a1191d508e3f" category="list-text">如果您正在設定手動連線：<block ref="0cfd36fa2f6970c4256c7587d6c9730f" prefix=" " category="inline-code"></block></block>
   <block id="1db37c7c622a5ec1ab0be3b691e2c1f6" category="image-alt">關閉控制器模組通風管圖形 AFF A70-90</block>
   <block id="814c3874029ed6ca8ad80dd3b7be6a3b" category="list-text"><block ref="d7c37365844b6be16568f626fb19383d" prefix="" category="inline-code"></block> 適用於 AFF A220 和所有 SAN 陣列</block>
   <block id="2544230e60d1b55358bdfdcb8dc88d1a" category="paragraph">重新安裝控制器模組並將其開機。</block>
@@ -8338,7 +8303,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。</block>
   <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源供應器在控制器中提供備援電源。</block>
   <block id="aebd84aedf30ca3854097975c59229ed" category="doc">更換 NV 電池 - AFF A1K</block>
-  <block id="ef0c1c9390131a9f1f9560791151e3fd" category="summary">NVRAM模組包含NVRAM12和DIMM、以及每個NVRAM模組最多兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。</block>
   <block id="f133a8ed8a0b7a76b6c1b28bc00b0fb1" category="doc">更換 NVRAM - AFF A1K</block>
   <block id="6794ac4e17218aaa4a21099cb6c428a5" category="doc">更換電源供應器 - AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">更換即時時鐘電池 - AFF A1K</block>
@@ -8521,12 +8485,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">最佳實務做法</block>
   <block id="c4d5d39d9de05fa063bc3710cce88d43" category="paragraph">在熱新增 NS224 機櫃之前、請先熟悉下列最佳實務做法。</block>
   <block id="b0af51fce4a966624ca8dbbb18556393" category="inline-link">磁碟資格審查套件</block>
-  <block id="fc229f016899e45241a8132e54e09068" category="list-text">最佳實務做法： * 最佳實務做法是在熱新增機櫃之前、先安裝最新版本<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block> 的。</block>
-  <block id="98321f616aed394d511784263fe8c7fb" category="list-text">最佳實務做法： * 最佳實務做法是在熱新增機櫃之前和之後執行<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block> 。</block>
   <block id="9f24cdc2b556e4f7c914bbbf091868aa" category="paragraph">在熱新增機櫃之後執行Active IQ Config Advisor 功能、可讓您驗證機櫃的纜線是否正確、以及HA配對內的機櫃ID是否獨特。</block>
   <block id="3ddbd0df27907810ff1b446086cf9a21" category="inline-link">NVMe 儲存模組（ NSM ）韌體</block>
   <block id="9a29657c935c0df841655f534d7ab2f2" category="inline-link">磁碟機韌體</block>
-  <block id="b8f81eee7a525fe28574a64eeb1b3cd6" category="list-text">* 最佳實務做法： * 最佳實務做法是在新增新機櫃之前、先在儲存系統上安裝及安裝最新版本<block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block><block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block> 。</block>
   <block id="79a4da7f1ec39f638870f54388dd033e" category="sidebar">AFF A1K 系統</block>
   <block id="1359f19561173d7123369e0c8f9fb141" category="sidebar">AFF A1K 安裝與設定</block>
   <block id="6f550466a69bad21f11ab99fc12db497" category="sidebar">安裝工作流程</block>
@@ -8859,7 +8820,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7f5f5398e620a9f9ae998736b2d4d230" category="list-text">等到更換模組的控制器主控台顯示等待恢復 ... 訊息、然後從健全的控制器驗證系統狀態： _ 儲存設備容錯移轉顯示 _</block>
   <block id="c1b6a9a30a6ce8d79305050622234851" category="paragraph">在命令輸出中、您應該會看到一則訊息、指出控制器的狀態。</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">控制器會重新連接其儲存資源池、並完成開機。</block>
-  <block id="c23f2b6754e0bfe310956814b83c20c2" category="list-text">驗證磁碟集區的磁碟是否如預期：<block ref="a9fae81f0c924f3a581cf23a9c8b11b1" prefix=" " category="inline-code"></block></block>
   <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRw a800磁碟機就位在IOPS 960上</block>
   <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">按下系統管理 CAM 按鈕。</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">轉動 CAM 栓鎖、使其儘可能遠離模組。</block>
@@ -8992,13 +8952,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d03f5ec8a330688c4e047e99f5fecd12" category="inline-link-macro">準備安裝 AFF A1K 儲存系統</block>
   <block id="95225809efab4457ee4a53c1a58dfb52" category="paragraph">在您檢閱過硬體需求之後<block ref="483aaa3c2f4f88e7b219b85383e864a7" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="e736c3581e7cc7eb9804edd4215c31b3" category="doc">將故障零件退回 NetApp - AFF A70 and AFF A90</block>
-  <block id="e32530d54c0288f36793648830558717" category="doc">還原加密： AFF A70 和 AFF A90</block>
   <block id="a13516239a2a49e82fd12bff6cdd2f91" category="doc">開機恢復映像： AFF A70 和 AFF A90</block>
-  <block id="7c506ea0b7da853881a11acc736d97c7" category="doc">開機媒體更換需求 - AFF A70 和 AFF A90</block>
   <block id="08d73f01628a5943295e92f24c02e02b" category="doc">更換開機媒體： AFF A70 和 AFF A90</block>
-  <block id="ecf04557e2cacfb271d9b67c7f2b3a72" category="doc">關閉功能受損的控制器 - AFF A70 和 AFF A90</block>
   <block id="a91e5640776c0744ff211f74a193dc57" category="doc">更換機箱 - AFF A70 和 AFF A90</block>
-  <block id="85d8564bfb7225b8979b99bf295a46f1" category="doc">機箱更換需求 - AFF A70 和 AFF A90</block>
   <block id="2f7658a94038d064a8c1d014e3362aa8" category="doc">關閉控制器 - AFF A70 和 AFF A90</block>
   <block id="610624f1a6b2eadbbc362858bfa11e2f" category="inline-link-macro">檢閱機箱更換需求</block>
   <block id="15f73c32702be38a6c35694972953b59" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="9e50dfd69463f0498a1a5a1d869a2b1e" category="inline-link-macro-rx"></block></block>
@@ -9006,14 +8962,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="04639049161c98433d708c0a6845499c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
   <block id="49b45e8248fd2d5ed919902809621c44" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
   <block id="b47ee6654722b2bed7a27aba5a38d41e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
-  <block id="8b2975d216e00ec9bbae796edb379021" category="doc">更換控制器模組 - AFF A70 和 AFF A90</block>
   <block id="b851102d36222ece27890507e1841ecc" category="doc">控制器更換需求 - AFF A70 和 AFF A90</block>
   <block id="68e66200bb827544f2bc5f02c2c9a441" category="doc">完整更換控制器： AFF A70 和 AFF A90</block>
   <block id="5e1c3f88c24c4db392d7d1d519b28aa4" category="doc">關閉受損的控制器 - AFF A70 和 AFF A90</block>
   <block id="50a2e3714f0440fca3d96537b2113368" category="doc">還原並驗證系統組態 - AFF A70 和 AFF A90</block>
   <block id="ea0554b4bb91e270fbc2d78ea4e70d10" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e14fc53a2fbc5d3f87f2c572a1629eed" category="inline-link-macro-rx"></block></block>
-  <block id="d76ab8637f7b871faf1afbc59cd046ca" category="doc">更換 DIMM - AFF A70 和 AFF A90</block>
-  <block id="48144ea57b64dddd5b6d7aa9af0b7f31" category="doc">更換 SSD 磁碟機 - AFF A70 和 AFF A90</block>
   <block id="6c8228ef743965fe7b33006e88a295a0" category="doc">更換風扇模組 - AFF A70 和 AFF A90</block>
   <block id="d570d60e6fb68aef28765899da0c3a11" category="summary">維護 AFF A70 和 AFF A90 硬體</block>
   <block id="633a66c416ef74d4bb2e9b9bd6538f11" category="doc">維護 AFF A70 和 AFF A90 硬體</block>
@@ -9042,7 +8995,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="addbfcd02447e9d1c6cbb3810c45a6ac" category="paragraph">為 AFF A70 或 AFF A90 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
   <block id="ed1a15747627f84755b5eef621bb8e85" category="inline-link-macro">完成系統設定</block>
   <block id="c0677b3f2eac3919f6dafe43a0461dd5" category="paragraph">開啟 AFF A70 或 AFF A90 儲存系統之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>、您就可以了。</block>
-  <block id="21fcd461c7d93e9d4e6cc391e27e2f50" category="summary">準備安裝 AFF A70 和 AFF A90 平台。</block>
   <block id="ec9b0b25a575ea2719a43e0ed4eba2ef" category="doc">準備安裝 - AFF A70 和 AFF A90</block>
   <block id="e2ffcf27d17e53137e3f3b594c1cd4c4" category="paragraph">準備安裝 AFF A70 或 AFF A90 儲存系統、方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
   <block id="61c06139b6cae8ee51fc2ec7501dee42" category="inline-link-macro">安裝 AFF A70 或 AFF A90 儲存系統的硬體</block>
@@ -9055,10 +9007,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="904251477a4ab72deb06fb568e51e8e9" category="doc">新增與更換 I/O 模組的總覽 - AFF A70 與 AFF A90</block>
   <block id="23c290996bbddd9feb90c8208ce03776" category="doc">更換 I/O 模組 - AFF A70 和 AFF A90</block>
   <block id="45246f3dd0a53426b7b68a7138275eae" category="doc">更換 NV 電池 - AFF A70 和 AFF A90</block>
-  <block id="59d1ac278f79c5b6902c13cbe126a692" category="doc">更換 NVRAM - AFF A70 和 AFF A90</block>
   <block id="142aed9b4219bef04d9ce41b26e16e98" category="doc">更換電源供應器 - AFF A70 和 AFF A90</block>
   <block id="09667d54b485aed2ff058a0b9116b943" category="doc">更換即時時鐘電池 - AFF A70 和 AFF A90</block>
-  <block id="e0bb6be3391ff9aea036f34370ebe044" category="doc">更換系統管理模組 - AFF A70 和 AFF A90</block>
   <block id="1d04f5bb7d7b81fc8fded3b79cc0c8d3" category="doc">安裝及設定 ASA R2 系統</block>
   <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link">ASA R2 系統文件</block>
   <block id="5aef6f7c7bd154b3669d06150a10ac8f" category="paragraph">請移至<block ref="4842686d9ffe46ff775159613c5fe1d3" category="inline-link-rx"></block>以瞭解如何安裝、使用及管理 ASA R2 系統。</block>
@@ -9151,40 +9101,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ecda8f0a8ab2239fa58008bc2a6778f3" category="inline-link-macro">檢閱開機媒體更換要求</block>
   <block id="1246a1947c9d78ac27a693476f2c4ef2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="49f63bb068bbde0e2924e3e81e942570" category="inline-link-macro-rx"></block></block>
   <block id="789b5a8a8cbbdce99d0cd8864ee0122a" category="doc">關閉受損的控制器- FAS70和FAS90</block>
-  <block id="05b595056622ad7d437a73c41db4bd5b" category="summary">NVMe SSD FlashCache 模組承載器包含一或兩個 FlashCache 模組（快取模組）、每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱插拔、但 FlashCache 模組承載器不是可熱交換的。</block>
-  <block id="aff5c09093f639896fea8aee1334af32" category="doc">更換 FlashCache 模組載體或快取模組： FAS70 和 FAS90</block>
-  <block id="e59c2a74cd130e52d9f5e488b284afd2" category="paragraph">NVMe SSD FlashCache 模組承載器包含一或兩個 FlashCache 模組（快取模組）、每個快取模組均整合一個 SSD FlashCache 磁碟機。</block>
-  <block id="cb31e24fc56b3b07f537f88f0cb0663e" category="paragraph">FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 FlashCache 模組載體中混合使用容量不同的快取模組。</block>
-  <block id="1a0f9807030e2dcfcf3ad16528a90a4c" category="paragraph">根據需要更換的項目、您可以執行下列任一程序：整個 Flashcache 模組載體或快取模組。</block>
-  <block id="7393401d7aa7c5b4209f5909c56bc452" category="list-text"><block ref="74d9532e70287c4c6d14bca0d22b793b" category="inline-xref-macro-rx"></block></block>
   <block id="2902ee20441450339d3c624a2432953d" category="list-text"><block ref="402920e7db99056d01d15836c97d7e6e" category="inline-xref-macro-rx"></block></block>
-  <block id="da50599709f8ceacbb2f44ac74538cb8" category="section-title">更換 FlashCache 模組承載器</block>
-  <block id="638f93e44a4e5eba8188b65837d38950" category="paragraph">FlashCache 模組承載器位於插槽 6 中、最多可容納兩個 FlashCache 模組。您無法熱交換 FlashCache 模組載體</block>
-  <block id="509e381c6e70d6f5709eab0ac2007056" category="list-text">確保您的儲存系統擁有適當的作業系統、可用於更換 FlashCache 模組承載器。</block>
   <block id="0ead7a2e2db558cfd790c55a9c76462e" category="list-text">確認所有其他元件正常運作；否則、您必須聯絡技術支援部門。</block>
   <block id="fd39955a756e9aaa81ca55b2791f9b72" category="example-title">選項 1 大多數系統</block>
   <block id="d4373786f422d4c41e16fcb4a1e26b83" category="example-title">選項 2 MetroCluster 組態</block>
-  <block id="ae50de269a959e0165943b2893821522" category="section-title">步驟 2 ：更換 FlashCache 模組承載器</block>
-  <block id="a66569371b683ea32e370479ad445c58" category="paragraph">請執行下列步驟以更換 FlashCache 模組承載器。</block>
-  <block id="a78dfa5641477f997773a8a496bc6c27" category="list-text">在插槽 6 中找到故障的 FlashCache 模組承載器、其位置是 FlashCache 模組承載器正面的琥珀色警示 LED 。</block>
-  <block id="c16e4c00d79ee8ef92fcca1fa9492cc2" category="image-alt">移除 FlashCache 模組載體</block>
-  <block id="a6cb82ced449dbb1046ef723067b7901" category="paragraph">FlashCache 模組載體</block>
   <block id="1cc5afe23260cb08d578b3171ed8bb0d" category="paragraph">快取模組插槽編號</block>
-  <block id="b87d1c8ec894a37f26543a535e844e8b" category="paragraph">FlashCache 模組承載器 CAM 把手</block>
-  <block id="dcb325bf6ea5bcab2981a5f7a0a35ede" category="paragraph">FlashCache 模組載體故障 LED</block>
-  <block id="b155caf60041968d40f3e850d614a9be" category="list-text">移除故障的 FlashCache 模組載體：</block>
-  <block id="5e32cbbf004ffb2d2a509ed571493ccc" category="list-text">捏住 FlashCache 模組載體底部的藍色彈片。</block>
   <block id="9c7e22c30b9aa93d97efb0ef5d7ccaa8" category="list-text">將彈片從模組轉開。</block>
-  <block id="8a8dded5367958de77da2461985e38fd" category="list-text">將 FlashCache 模組承載器從控制器模組中拉出、並將其放在防靜電墊上。</block>
-  <block id="c00f75b52aaf83129bdb959706a88e8c" category="list-text">將快取模組移至替換的 FlashCache 模組載體：</block>
   <block id="21c6d5df7d87902fb54560352086c7e1" category="list-text">捏住快取模組頂端的 Terra Cotta 標籤、將 CAM 把手轉離快取模組。</block>
-  <block id="4f4941d42ca92d09bfdc51b1db6f1492" category="list-text">將手指插入 CAM 拉桿開口處、然後將模組從 FlashCache 模組承載器中拉出、即可將模組從機箱中移除。</block>
-  <block id="868f5dcbc8a0ef4e68545139a9d4e14f" category="list-text">將快取模組安裝到替換 FlashCache 模組承載器的同一個插槽中、然後將 CAM 把手旋轉到快取模組上的關閉位置、將其鎖定到位。</block>
   <block id="15810adb6f66a6901a9d5669bbe5721d" category="list-text">如果有第二個快取模組、請重複這些步驟。</block>
-  <block id="79702206636b151f5aa2012db730e395" category="list-text">將替換的 FlashCache 模組承載器安裝到系統中：</block>
-  <block id="b5c24cb45faff065206365210b18a04d" category="paragraph">更換 FlashCache 模組承載器之後、您必須重新啟動控制器模組。</block>
   <block id="cdbccebd677a8b1d134192f19ecf3f8b" category="section-title">更換快取模組</block>
-  <block id="6ce18d354fca16bc5032faa6fef743c0" category="paragraph">FlashCache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中、或插槽 6-1 和插槽 6-2 中。</block>
   <block id="c124cf7f1b815bf5f6c6e601798519fa" category="paragraph">您可以使用同一廠商或其他支援廠商提供的相同容量快取模組來熱交換個別的快取模組。</block>
   <block id="f3852a3ed3dc942e88ae4523de9161a2" category="list-text">確保更換快取模組的容量與故障模組、來自同一廠商或其他支援廠商的容量相同。</block>
   <block id="6451bd5ba5fd42e2e0da530ac0e1f08d" category="list-text">快取模組中的磁碟機不是現場可更換單元（ FRU ）。您必須更換整個快取模組。</block>
@@ -9195,8 +9120,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f6c9707e7b722f478882c6903c0ab72a" category="paragraph">快取模組 CAM 把手</block>
   <block id="6bc5838b4111c8e8e34c5a24a2c44cb0" category="paragraph">快取模組故障 LED</block>
   <block id="9afed1489f4d1563ca216b11c1352728" category="list-text">轉動凸輪把手至最遠的位置。</block>
-  <block id="39ce51da7e9a2b8c7e5c38a0066b127f" category="list-text">將手指插入 CAM 槓桿開口處、然後將模組從 FlashCache 模組承載器中拉出、即可將快取模組模組模組從機箱中移除。</block>
-  <block id="8fa7d40c54b52a6cdc5ee7ed5fd71a29" category="paragraph">從 FlashCache 模組載體中移除快取模組時、請務必支援快取模組。</block>
   <block id="8de7e250263d4ca2d8dc62ef2ed1f825" category="list-text">將快取模組的邊緣與控制器模組的開口對齊。</block>
   <block id="15add6e162f9346663b8cfaeb8d3f8c7" category="doc">更換控制器模組： FAS70 和 FAS90</block>
   <block id="550ddae6f9579850ff21dd2afce3b69f" category="doc">退回控制器： FAS70 和 FAS90</block>
@@ -9269,8 +9192,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6177b8fb5c4b14da752dc936dbe29ae8" category="doc">更換 I/O 模組： FAS70 和 FAS90</block>
   <block id="2b104c49f9b8bb92d09875a956d19795" category="paragraph">您可能需要在硬體上執行維護程序。本節將介紹維護 FAS70 和 FAS90 系統元件的特定程序。</block>
   <block id="2b90a1267a3b7e2b64a23c5c62d7f171" category="paragraph">本節中的程序假設 FAS70 和 FAS90 系統已部署為 ONTAP 環境中的儲存節點。</block>
-  <block id="37461bd85478fb33903c38944a96af87" category="inline-link-macro">FlashCache</block>
-  <block id="0b85bf5744472ad352d98cea5a764ba0" category="paragraph"><block ref="0b85bf5744472ad352d98cea5a764ba0" category="inline-link-macro-rx"></block></block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。</block>
   <block id="f15dd37cefd717a7d017e45fe876146c" category="doc">更換 NV 電池： FAS70 和 FAS90</block>
   <block id="c4ed6403201dfa217ff707bb31f7629c" category="doc">更換 NVRAM ： FAS70 和 FAS90</block>
@@ -9305,7 +9226,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c91d48fe9284f4d299615b787ff7c882" category="sidebar">安裝和設定 C 系列系統</block>
   <block id="d82b198ed12fecd580981b34c4959490" category="sidebar">維護 A 系列系統</block>
   <block id="e32ee65ffedbf05873ffce177cee51b5" category="sidebar">維護 C 系列系統</block>
-  <block id="0ab1a7883d0399cbaf77a2e38633a6ea" category="sidebar">全新的 NetApp ASA R2 系統（ ASA A1K 、 ASA A70 和 ASA A90 ）提供統一化的硬體與軟體解決方案、可針對僅限 SAN 的客戶需求、提供簡化的體驗。</block>
   <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2 儲存系統文件可讓您安裝、設定及維護 ASA R2 系統。</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="sidebar">瞭解 ASA R2 儲存系統</block>
   <block id="aa0dbb314a1c2c27148345705facc55c" category="sidebar">安裝及維護 ASA R2 系統</block>
@@ -9336,7 +9256,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="db79c96e3435962e695832e0fd51205b" category="sidebar">FAS70 和 FAS90 保持不變</block>
   <block id="546320f5b1318ecbf9a2d5efa8278b70" category="sidebar">FAS70 和 FAS90 Boot Media</block>
   <block id="bbd90c57f0c4facd0e407d460b63f5e4" category="sidebar">FAS70 和 FAS90 控制器模塊</block>
-  <block id="6aa2bbbbcd863a688ecea951a078cc57" category="sidebar">FlashCache 模組</block>
   <block id="9d6e68abc86ef52726565c7e52c9dea7" category="image-alt">系統序號範例</block>
   <block id="54425f945644281ccaf6201b998f169f" category="paragraph"><block ref="54425f945644281ccaf6201b998f169f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e41a410f85201d7cc87e022e1f2daf34" category="paragraph">如果您的筆記型電腦已啟用網路探索、則可以使用自動叢集探索來完成設定和組態。</block>
@@ -9524,7 +9443,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="080b3cf38e099673417f605870f1f8cd" category="doc">檢查加密金鑰支援與狀態 - AFF A300</block>
   <block id="3e96ff4d6696124ce25d44a88c2473b3" category="doc">檢查加密金鑰支援與狀態 - AFF A320</block>
   <block id="77c6f82f1fa8571b22c5fbbe73050bac" category="doc">檢查加密金鑰支援與狀態 - AFF A400</block>
-  <block id="44ba9a845369e38f447427d3106ecf71" category="doc">檢查加密金鑰支援與狀態 - AFF A70 和 AFF A90</block>
   <block id="357726df28778aa8dccb6c780dddce89" category="doc">檢查加密金鑰支援與狀態 - AFF A700s</block>
   <block id="db444b24eeeefc93d51087354a133eeb" category="paragraph"><block ref="db444b24eeeefc93d51087354a133eeb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4641b0536fa1cc37c103002b67dbc848" category="doc">檢查加密金鑰支援與狀態 - AFF A900</block>
@@ -9729,7 +9647,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="137e91ab373d54ca35c36fff0be47241" category="list-text">在開機功能表中、輸入正常開機的選項<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block>。</block>
   <block id="e5954b5f665f3b9aee4023c5d8eb4f5f" category="list-text">顯示 _ 正在等待恢復 _ 時、請按 &lt;enter&gt; 。</block>
   <block id="68921013f9ca843f9d1bcfd514ee67de" category="list-text">將主控台纜線移至合作夥伴節點、然後以登入<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>。</block>
-  <block id="92e13c6a52e1a9d4e2955cd77e4db99d" category="list-text">請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block>、然後<block ref="7f4756e08687048c35020c40f9c8567b" prefix=" " category="inline-code"></block>按。</block>
   <block id="9e989767231ec29efb85ce3345c961ff" category="list-text">僅回饋 CFO 集合體（根集合體）：<block ref="291b31306c2e0668f091d41edca7e97f" prefix=" " category="inline-code"></block></block>
   <block id="e28912f373bd8bce85f7c259590bbe92" category="list-text">如果您遇到錯誤、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="bfc2c53d06a8a433a0fef8b142ab388e" category="list-text">在恢復報告完成後等待 5 分鐘、並檢查容錯移轉狀態和恢復狀態：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>和<block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix=" " category="inline-code"></block>。</block>
@@ -10048,9 +9965,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="28180201bfb2d7bf5615528194442289" category="admonition">將控制器滑入機箱時請勿過度施力，否則可能會損壞連接器。</block>
   <block id="799ddb867e56fb20fe535c39a2bd93c6" category="admonition">控制器在機箱完全就位時會開機。它能從合作夥伴控制器獲得強大功能。</block>
   <block id="a676323e6fcbbd59df78bae524b7b40c" category="list-text">向上旋轉控制器把手，並使用彈片鎖定定位。</block>
-  <block id="de684735ed01be293fbf913a2a8ec714" category="list-text">如果您正在設定 DHCP ：</block>
-  <block id="f92453641f9de288d51e422a67039e9a" category="list-text">如果您正在設定手動連線： +</block>
-  <block id="7b357e81ab493d4020534d05d49f8a43" category="paragraph"><block ref="0cfd36fa2f6970c4256c7587d6c9730f" prefix="" category="inline-code"></block></block>
   <block id="0b57b3f2fbb1058ed0b97ec1a2a69f99" category="list-text">將電源線重新連接至受損控制器上的電源供應器（ PSU ）。</block>
   <block id="ed54d3fee552241630c6da46076d26b8" category="cell">如果您正在重新連線 ...</block>
   <block id="9a74e4a0a346c8db4ead325b107dc493" category="list-text">將電源線插入 PSU 。</block>
@@ -11022,12 +10936,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="df1e51256150b209588942af3aa39c86" category="list-text">安裝替換機箱：</block>
   <block id="88713b0102b6702a4390c31e0218a5d0" category="list-text">使用兩個人或舉升設備，將替換機箱安裝到設備機架或系統機櫃中，方法是引導機箱安裝到系統機櫃或設備機架的機架軌道上。</block>
   <block id="c2ca3f0f2cd46c993c472fe2b2ead2a1" category="section-title">步驟 4 ：安裝機箱元件</block>
-  <block id="8e7b85e50ba49f7e438e34fd94f17067" category="paragraph">安裝替換機箱後，您需要安裝控制器模組，重新安裝它們，然後重新安裝磁碟機和 PSU 。</block>
   <block id="c35dbeca6a0894e924dd0f22bc74b7b6" category="list-text">從底部控制器模組開始，將控制器模組安裝在替換機箱中：</block>
   <block id="462e0b4244f7f81086d8ed4914a4091d" category="paragraph">如果您移除媒體轉換器（ QSFP 或 SFP ），請記得重新安裝。</block>
   <block id="30c13d1d724de7528c0d72d4e7555203" category="paragraph">請確定纜線已連接，並參照纜線標籤。</block>
   <block id="3c4de6b643f23f2b06411d92b09f2db7" category="list-text">將磁碟機重新安裝到機箱正面對應的磁碟機支架中。</block>
-  <block id="ebe9851634608cdaec3bc032f0aac89c" category="list-text">安裝全部四個 PSU ：</block>
   <block id="3af83db7024a86329156a3f0ea145165" category="list-text">將 PSU 電源線重新連接至所有四個 PSU 。</block>
   <block id="f0db4562c2eae985bf11a09aadc6070d" category="paragraph">如果您有直流電源，請在控制器模組完全插入機箱後，將電源區塊重新連接至電源供應器，並使用指旋螺絲將電源線固定至 PSU 。</block>
   <block id="6ba7c840e651190e5c5f357b0b73f0cd" category="paragraph">一旦安裝 PSU 並恢復電源，控制器模組就會開始開機。</block>
@@ -11046,8 +10958,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="378ec75aa1d255c16ad9c85e0cb3c38d" category="list-text">零件說明。</block>
   <block id="a28e205929838e9983677a0a5740982f" category="list-text">包裝盒內的數量。</block>
   <block id="aa540bb7b6b5d4e1ae19ef870d81aeed" category="list-text">從包裝中取出內容物，然後使用包裝將故障元件退回 NetApp 。</block>
-  <block id="e64dc7a7ef4e501b9e8f23daf322a905" category="section-title">步驟 3 ：在纜線和控制器模組上貼上標籤，並自行接地</block>
-  <block id="6f91c65dd15df5f61f60c1e3aabb4318" category="paragraph">從控制器模組或機箱中拔下纜線和控制器之前，您應該在纜線和控制器上貼上標籤。</block>
   <block id="79de133f35ffda00b1cc87bd3df0f0a1" category="list-text">標記與儲存系統相關的所有纜線。這有助於在本程序稍後重新啟用。</block>
   <block id="61f54831afd31c3c4bb5fa569858091d" category="list-text">標示控制器模組。</block>
   <block id="02a322185bda81e4fb6f85f159dc2ba9" category="list-text">如果您尚未正確接地，請將自己接地。</block>
@@ -11077,7 +10987,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9a720e4e76be699dfb02bbc1262d3cb7" category="doc">完成機箱更換： AFF A70 和 AFF A90</block>
   <block id="d15e3734e85341b27e4da1641e1f59e1" category="inline-link-macro">完成機箱更換</block>
   <block id="8814a36d70b251b1442c439b51299ee4" category="paragraph">更換損壞的 AFF A70 或 AFF A90 機箱並將元件重新安裝到其中之後<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>，您需要。</block>
-  <block id="a1d3bcf20c089dbf9082bd95e68d717d" category="doc">準備更換機箱： AFF A70 和 AFF A90</block>
   <block id="fb34a84a11047c5449582cfc3e832942" category="inline-link-macro">關閉控制器</block>
   <block id="d3a08051606463fa6af8ba4af97a9c04" category="paragraph">準備好更換 AFF A70 或 AFF A90 機箱硬體之後，您需要<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>。</block>
   <block id="11e980ab44ebd379750fafda5a247d2c" category="paragraph">檢閱更換受損機箱的要求。</block>
@@ -11173,7 +11082,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e531efa1ffce94331d0abc4548448cac" category="list-text">在受損控制器上的 Loader 提示下，設定受損控制器模組的 IP 位址：</block>
   <block id="9674c99b013ac8cdab6eb0df64e77028" category="paragraph"><block ref="83ed86e403dd4a24d2825f48008e5af3" prefix="" category="inline-code"></block></block>
   <block id="8c58ea9784c7fa6869b22626814be32c" category="list-text">在 Loader 提示符下，以網路開機功能受損的節點：</block>
-  <block id="c73c2dd2459e6650d5b71cc2059faf0e" category="paragraph"><block ref="a8ede5eb13f058392e245c0a8a92ae3d" prefix="" category="inline-code"></block></block>
   <block id="682c67c386e9533bb90087e13557b0aa" category="list-text">從 Boot Menu （引導菜單）中選擇 Option（選項<block ref="8f14e45fceea167a5a36dedd4bea2543" prefix=" " category="inline-code"></block>）。</block>
   <block id="a0ea840e423d2247bf566acde2c201ab" category="list-text">當系統要求還原備份組態時，請輸入<block ref="7b8b965ad4bca0e41ab51de7b31363a1" prefix=" " category="inline-code"></block>。</block>
   <block id="3115cf8c3646a9861bf194086219616c" category="list-text">當系統提示您重新啟動節點時，請輸入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>。</block>
@@ -11209,11 +11117,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70 和 ASA A90 開機媒體</block>
   <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1K 開機媒體</block>
   <block id="3636656d79b8f02465b883839da0c32b" category="paragraph">檢閱下列需求。</block>
-  <block id="92f1ff7f532dd794f633da55b69f7c85" category="paragraph">將受損的控制器歸還其儲存設備，使其恢復正常運作</block>
   <block id="6f6020a95b7d00c90f878194cd791491" category="list-text">如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：</block>
   <block id="2dc03ded03c37126b29eeb1dce677708" category="paragraph">重設內建加密，並將控制器恢復正常運作。</block>
   <block id="334dc8a527ec5589fe66e9a5a8360575" category="list-text">在 Loader 提示字元中，輸入：</block>
-  <block id="79a5dee23638f4d5e3607951ecac75c4" category="paragraph"><block ref="cce56b203b8705f3487342813b7117be" prefix="" category="inline-code"></block>。</block>
   <block id="61d5125f4ea65c28c78898c7eb459ce2" category="list-text">僅回饋 CFO 集合體（根集合體）：</block>
   <block id="07f79b362b9ba5998ff0d2001a027c73" category="paragraph"><block ref="291b31306c2e0668f091d41edca7e97f" prefix="" category="inline-code"></block></block>
   <block id="5bb45bbec6e74b011ff0ed7135d29f73" category="list-text">在恢復報告完成後等待 5 分鐘，並檢查容錯移轉狀態和恢復狀態：</block>
@@ -11224,8 +11130,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="527eb837f30ed81358ebded9ee118169" category="paragraph">重設加密，並將控制器恢復正常運作。</block>
   <block id="4969df85e38b1334145c46668de5d393" category="list-text">檢查接管狀態：</block>
   <block id="ff06f9ac0caa721ed879f199881e0bf3" category="paragraph"><block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix="" category="inline-code"></block>。</block>
-  <block id="dbaf9b3984e2d85f4fed5065ef8777ee" category="list-text">進入進階模式，確保已修復節點上的任何核心傾印都已儲存：</block>
-  <block id="74d6510049f762b67fe103a2ea65ea1f" category="paragraph"><block ref="0581d0d071ad835f74bf419081ce5d75" prefix="" category="inline-code"></block>然後<block ref="7f4756e08687048c35020c40f9c8567b" prefix=" " category="inline-code"></block>。</block>
   <block id="385e0461e78c6be76ddc4a5aac6f0998" category="paragraph">檢閱更換控制器模組的需求。</block>
   <block id="653521d025652d70e27438c926da2d94" category="list-text">您必須擁有可更換的零件。</block>
   <block id="20277dcf478fd8c98c1e17e544b131b2" category="list-text">請確定儲存系統中的所有其他元件都正常運作；如果沒有，請聯絡技術支援部門。</block>
@@ -11243,39 +11147,22 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e21bdbd552261278be0a5ad02fbc6fa7" category="list-text">ASA A30</block>
   <block id="3ee9bc9a210bd85fa921ca63bdeef612" category="list-text">ASA A50</block>
   <block id="18b37022407b9886f4f4138833f49d5c" category="summary">如果 AFF A70 或 AFF A90 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
-  <block id="58075b4980e4db98db3e72c4d42ca97b" category="summary">為了確保 AFF A70 和 AFF A90 儲存系統上的資料安全性，您需要驗證加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
   <block id="00298fcd1cdb59855d04153fb372d5b1" category="summary">在 AFF A70 或 AFF A90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。此程序包括驗證金鑰可用度，重新套用加密設定，確認資料的安全存取。</block>
-  <block id="3991198e40ba997176ba31a00113838e" category="paragraph">在 AFF A70 或 AFF A90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。此程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
-  <block id="a51e74eb0b262c93ab751f84ff5ad828" category="summary">如果 AFF A70 或 AFF A90 系統中的開機媒體毀損，您可以從 USB 磁碟機開機恢復映像，從合作夥伴節點還原組態，並驗證環境變數。</block>
-  <block id="a25f6bec97e7646ff80d5c1552348d28" category="summary">在更換 AFF A70 或 AFF A90 系統中的開機媒體之前，請先確定您擁有正確的更換開機裝置，存取系統韌體和 ONTAP 軟體，以及重要組態資料的備份。</block>
   <block id="01dc782410b8bf757f56e6d2dd9ba8de" category="summary">首先，請準備更換媒體，在系統中安裝，還原開機映像，以及驗證系統功能，以更換 AFF A70 或 AFF A90 儲存系統中的開機媒體。</block>
   <block id="a39d40ffc6e883059dd303e4c5826bf2" category="doc">更換開機媒體的快速入門： AFF A70 和 AFF A90</block>
   <block id="7254e311c159ba205a6bc5f38cfc3060" category="summary">AFF A70 或 AFF A90 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後更換系統管理模組中的開機媒體。</block>
   <block id="2de09d050e108c03bd290fc9b42a73f3" category="summary">當控制器受損時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
-  <block id="073ca97ff948f7b2fa9eb788aa349602" category="summary">重新啟動控制器，驗證系統健全狀況，並將故障零件退回 NetApp ，以完成 AFF A70 和 AFF A90 機箱更換工作流程的最後步驟。</block>
-  <block id="d0f18667169dd5cba8bd1abf930d8979" category="summary">當硬體故障或升級需要時，請更換 AFF A70 或 AFF A90 系統中的機箱。此程序包括關閉系統電源，移除現有機箱，安裝新機箱，以及重新設定元件，以確保系統正常運作。</block>
   <block id="14c9c3ca2e43bd07ece3df269a696d56" category="summary">準備更換 AFF A70 或 AFF A90 系統中受損的機箱，方法是識別受損的機箱，驗證更換元件，並標示纜線和控制器模組。</block>
-  <block id="cd38b993c6ad2e5704c0162f9d789f18" category="summary">在更換 AFF A70 或 AFF A90 系統中的機箱之前，請先確認系統中的所有其他元件運作正常，並確定您擁有 ONTAP 的本機管理員認證，正確的更換機箱和必要的工具。</block>
-  <block id="6c63d33eb7783335379b1c9d94af11b3" category="summary">需要更換機箱時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
   <block id="f3265cef339dbf3c5e74c4290cc2674d" category="summary">更換 AFF A70 和 AFF A90 機箱包括關閉系統，移除和更換機箱，重新設定元件和驗證系統作業的步驟。</block>
   <block id="82d80770b27097a251d9548f43c9e382" category="doc">機箱更換快速入門： AFF A70 和 AFF A90</block>
-  <block id="2bb5a266a17138195f24b92087b37ebb" category="summary">當硬體故障或升級需要時，請更換 AFF A70 或 AFF A90 系統中的控制器。此程序包括移除受損的控制器，將元件移至更換控制器，安裝替換控制器，然後重新啟動。</block>
-  <block id="f19d0ea02c5cb924d1bbd1b1393e656f" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。</block>
-  <block id="946e9ff613b0698dff71f93c998421e6" category="summary">在更換 AFF A70 或 AFF A90 系統中的機箱之前，請確保您符合成功更換的必要要求。其中包括正確的更換機箱，系統組態的備份，以及存取任何必要工具和韌體。</block>
   <block id="e39656e100387da3ec6b6a54806cef2f" category="paragraph">在更換 AFF A70 或 AFF A90 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
-  <block id="13584ead3579381e47832c1fc5821f4a" category="summary">驗證邏輯介面是否回報其主連接埠，執行叢集健全狀況檢查，並將故障零件退回 NetApp ，以完成 AFF A70 和 AFF A90 控制器更換工作流程的最後步驟。</block>
   <block id="a36efc11d87f3dc60d9f74397a3d68a6" category="paragraph">使用下列其中一個選項關閉控制器模組。</block>
   <block id="fc6315489b2675580df80b8ba798580a" category="summary">驗證控制器的 HA 組態是否在 AFF A70 或 AFF A90 儲存系統中作用正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
   <block id="5804af3501a907b164a7eade0771c13a" category="summary">更換 AFF A70 和 AFF A90 控制器包括關閉控制器，移除和更換控制器，重新設定系統設定，以及驗證系統作業的步驟。</block>
   <block id="d2005409b1b3df2f36eafbd1c707b35a" category="doc">控制器更換快速入門： AFF A70 和 AFF A90</block>
-  <block id="693444ad7c3a519b57ea2f6a67afe3ee" category="summary">當偵測到過度可修正或不可修正的錯誤時，請更換 AFF A70 或 AFF A90 系統中的 DIMM 。這些問題通常是由單一 DIMM 故障所造成，可能會導致儲存系統無法開機 ONTAP 。</block>
-  <block id="085e9f138bf88e992aba5f4bb28477e8" category="summary">當磁碟機故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的磁碟機。此程序包括識別故障磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
-  <block id="0dccdedc6bfcf30123409a5daf909e3a" category="summary">當風扇故障或無法有效運作時，請更換 AFF A70 或 AFF A90 系統中的風扇模組，這可能會影響系統冷卻和整體效能。</block>
   <block id="6f13230d5681e1c88b50f5ecbce62637" category="paragraph">使用下列選項之一關閉或接管受損的控制器模組。</block>
   <block id="9d942fe208df847ebbb52d3ac4973c12" category="summary">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 AFF A70 或 AFF A90 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
-  <block id="1853543dc222d3a9f913dd023a08b255" category="paragraph">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF A70 或 AFF A90 系統中的 I/O 模組。</block>
   <block id="870bcf4039fdcff653f180566b1ae65d" category="summary">維護 AFF A70 和 AFF A90 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
-  <block id="c7366a4e629f0430862d80db101f4a13" category="doc">維護 AFF A70 和 AFF A90 儲存系統</block>
   <block id="af1dd5bed2e7f895621a59db47f7a163" category="paragraph">維護程序假設 AFF A70 和 AFF A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="d7cae672b9df48e3106485c6d34eeb2c" category="summary">如果 ASA A70 或 ASA A90 系統中的開機媒體毀損，您可以開機恢復映像，從合作夥伴節點還原組態，以及驗證環境變數。</block>
   <block id="635808fcf7151910b4d230fdffc539b6" category="paragraph">如果 ASA A70 或 ASA A90 系統中的開機媒體毀損，您可以從合作夥伴節點開機恢復映像並還原組態。</block>
@@ -11383,4 +11270,161 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f29453fc9b172b87989c48fc7a5c5299" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 機箱</block>
   <block id="d1c24e8a39fae2157a44e2cc90a3ef86" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 控制器模組</block>
   <block id="c135c802a875bd87fd7ec037edbbefaa" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 I/O 模組</block>
+  <block id="ded04a98a4cf976c5fe334710e1beb0e" category="admonition">執行<block ref="77da07d2ad54f11335f6a0e867b30843" prefix=" " category="inline-code"></block>如果您不知道 Flash Cache 裝置 ID ，請命令。</block>
+  <block id="b004088fa722ea0327164c4ba4c02ace" category="list-text">將電源線插入電源供應器，重新安裝電源線鎖環，然後將電源供應器連接至電源。</block>
+  <block id="045e3738db30f0570266e975de702462" category="paragraph">控制器模組會在電源恢復後立即開始開機。準備好中斷開機程序。</block>
+  <block id="6b0f67919a1f7266d12612788d6f00a5" category="list-text">從鎖定機制頂端釋放您的指稱、然後繼續推動、直到鎖定機制卡入定位為止。+ 控制器模組應完全插入，並與機箱邊緣齊平。</block>
+  <block id="53f7d1f44f0967b908adcf413c5c43b3" category="paragraph">若要從舊機箱（包括NVRAM模組）移除I/O模組、請依照特定步驟順序執行。將快閃快取模組移至新機箱時，無需從 NVRAM 模組中移除快閃快取模組。</block>
+  <block id="dd892e2fd2dce9a107edec02b445ef7d" category="paragraph">若要安裝 I/O 模組，包括舊機箱的 NVRAM / 快閃快取模組，請依照特定步驟順序進行。</block>
+  <block id="b01bdac065de5aab3293d4c9b6c143d1" category="paragraph">NVRAM 模組包含 NVRAM10 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。</block>
+  <block id="f8d5ac07d03e3b9a976830db254e0555" category="paragraph">若要更換故障的 NVRAM 模組，您必須將其從機箱中移除，從 NVRAM 模組中移除快閃快取模組或模組，將 DIMM 移至更換模組，重新安裝快閃快取模組或模組，然後將更換的 NVRAM 模組安裝到機箱中。</block>
+  <block id="b5a7ca7700898c9641ac87a395952ac3" category="list-text">將 Flash Cache 模組從舊的 NVRAM 模組移至新的 NVRAM 模組：</block>
+  <block id="b3e3769bccb68aed4a66a70b9249b23f" category="paragraph">橘色釋放按鈕（空白 Flash Cache 模組上的灰色）</block>
+  <block id="8befbe5f9e65001ca21f12c3bc9ac971" category="paragraph">Flash Cache CAM Handle</block>
+  <block id="bd6adf2a407ffbf3e4a8eedb33e202a2" category="list-text">按下 Flash Cache 模組正面的橘色按鈕。</block>
+  <block id="4d9ed4404057a5ca291db83ff81a93ff" category="admonition">空白 Flash Cache 模組上的釋放按鈕為灰色。</block>
+  <block id="83ff481b2e94b4067569617b8b2beb74" category="list-text">將快閃快取模組輕輕推入 NVRAM 模組，然後將 CAM 把手旋開，直到鎖定模組就位。</block>
+  <block id="eeb7f593c159ca9eb2fb310bd7d23fc2" category="paragraph">NVMe SSD Flash Cache 模組（ Flash Cache 或快取模組）是獨立的模組。它們位於NVRAM模組的正面。若要更換或新增快取模組、請將其放在系統背面的插槽6上、然後依照特定的步驟順序進行更換。</block>
+  <block id="b6a69cb39407395404cfbc744c377b6a" category="paragraph">NVMe SSD 快閃快取模組（ Flash Cache 或快取模組）僅位於 FAS9000 系統插槽 6 的 NVRAM10 模組前方。從S得9.4開始ONTAP 、您可以從相同或不同支援廠商、將相同容量的快取模組熱交換出。</block>
+  <block id="df6c8e6b3ba5bce0814db19ab16307c3" category="list-text">驗證是否顯示所有磁碟：<block ref="242f4ce1948273386f8bb487bdd3732f" prefix=" " category="inline-code"></block></block>
+  <block id="6fbf6612f01484a6facb5d0d33a5b4ba" category="paragraph">安裝替換機箱之後，您需要安裝控制器模組，重新安裝它們，然後重新安裝磁碟機和 PSU 。</block>
+  <block id="4b4bb5ddb129b80d911b66a281db42da" category="list-text">安裝全部四個 PSU ：</block>
+  <block id="81cf1b6821a9509701aa3ffa438696e8" category="inline-link">選擇控制器硬體升級程序</block>
+  <block id="ebffb50e0b751314d493e13cf6d9bae2" category="list-text">請勿將此程序用於系統升級；請參閱<block ref="624f79ea247af93b551ac85c36e5246e" category="inline-link-rx"></block>以取得指引。</block>
+  <block id="11715af7d7c992de7e50f09b0ef0bd34" category="section-title">步驟 3 ：標示纜線和控制器模組</block>
+  <block id="cc7478989c9d0ccd78b85146f63bc5dc" category="paragraph">從控制器模組或機箱中拔下纜線和控制器模組之前，您應該在纜線和控制器模組上貼上標籤。</block>
+  <block id="2ebb9d1c7085d32cb7f9f4ac52713740" category="list-text">機箱更換程序會造成營運中斷。對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。</block>
+  <block id="c3d2740d50d775957cdc077eff98b9c9" category="paragraph">將受損的控制器歸還其儲存設備，使其恢復正常運作。</block>
+  <block id="881029605ca74e40713919d1bb348fae" category="open-title">OKM加密</block>
+  <block id="b21b09fdeb57aca76290eb4fe2ae643a" category="open-title">EKM加密</block>
+  <block id="b2e96dd14c92c1706a90f1bd89cb23c7" category="list-text">請勿將此程序用於控制器升級；請參閱<block ref="624f79ea247af93b551ac85c36e5246e" category="inline-link-rx"></block>以取得指引。</block>
+  <block id="5699c77101753104190332a9d7da9ce5" category="list-text">如果您的系統是 MetroCluster 組態，您必須檢閱<block ref="dbcae02c495cc3db61b37ce85396171e" category="inline-link-rx"></block>以判斷是否應使用此程序。</block>
+  <block id="a5edbd6d88a4165346e4d8cdb1f47c5c" category="list-text">您必須使用從 NetApp 收到的現場可更換單元（ FRU ）來更換故障元件。</block>
+  <block id="98647483b31cc877bfa79fa69527651a" category="list-text">請務必使用您從 NetApp 收到的替換元件來更換故障的元件。</block>
+  <block id="5936be00e88eb782af00b7d10949837a" category="section-title">步驟3：更換DIMM</block>
+  <block id="f93850287d87d3b25d1ae82f23739c89" category="paragraph">若要更換 DIMM ，請在控制器內找到 DIMM ，然後依照特定步驟順序進行。</block>
+  <block id="b68e23ba744de81732ee8532ad0ffa65" category="paragraph">NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。</block>
+  <block id="92eb8adda50290707f24c0186757e6b6" category="list-text">請確定您有可用的替換零件。您必須以從供應商處收到的替換元件來取代故障元件。</block>
+  <block id="eddcdc7ef0c41a163b1aa75c692e684c" category="list-text">確保儲存系統中的所有其他元件正常運作；如果沒有，請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
+  <block id="6308cea3813d33c5bf2949b30d1a8f10" category="section-title">步驟 3 ：更換 NVRAM DIMM</block>
+  <block id="0e22dd23e6324e2e936de48ef986b220" category="paragraph">若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。</block>
+  <block id="76341fe070bb8baf145cd67f5221a7ed" category="list-text">瞭解您可以將此程序用於系統支援的所有 ONTAP 版本。</block>
+  <block id="4564e5afb25f1ffe83d0d3ac84e6cb52" category="paragraph">系統管理模組位於插槽 8 中控制器背面、包含用於系統管理的內建元件、以及用於外部管理的連接埠。目標控制器必須關閉，才能更換損壞的系統管理模組或更換開機媒體。</block>
+  <block id="09251107807a8863c162ef0d13b4ddbb" category="list-text">確定所有其他系統元件都必須正常運作。</block>
+  <block id="8715aa093d3bd0ff3589f26f08de5eda" category="list-text">確保合作夥伴控制器能夠接管受損的控制器。</block>
+  <block id="bf5a59710d5b5e8b78221799e840dc18" category="paragraph"><block ref="d21ecc516ee16c13faec7e470282a04d" prefix="" category="inline-code"></block></block>
+  <block id="6e724374a7f94186bf150ad3f2518ad5" category="paragraph">如果在新節點上執行的 ONTAP 版本與原始節點上的版本不同，您必須將正確的 &lt;xxx_image.tgz&gt; 檔案從 NetApp 支援網站下載至 Web 可存取的目錄（請參閱步驟 4 ）。您需要 &lt;xxx_image.tgz&gt; 檔案來執行系統的網路開機。</block>
+  <block id="d40530e10631f437f94d6f1fef14cd53" category="paragraph"><block ref="17adc220b188022ae9f0e1b23b988522" prefix="" category="inline-code"></block></block>
+  <block id="4f77b2dcd560973ee59e2f123323c869" category="paragraph">path_to_the_web-imapped_directory 是下載 &lt;xxx_image.tgz&gt; 檔案的位置。</block>
+  <block id="716023d4600a7c0e1d8be69651c1702f" category="list-text">如果系統提示您繼續此過程，請輸入，當系統提示您<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>輸入軟件包時，請輸入映像文件的 URL ：<block ref="87c1a3418135883a8a235fe337372005" prefix=" " category="inline-code"></block>。</block>
+  <block id="091fa7b82bf6559b6079bd7650861afb" category="summary">NVRAM 模組包含 NVRAM12 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（ Flash 快取或快取模組）。</block>
+  <block id="021566978f7488f2b517501566bc0db7" category="summary">為了確保 AFF A70 和 AFF A90 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="7d2eb8f41328745f5274b206e54aae98" category="doc">檢查開機媒體上的加密金鑰支援和狀態 - AFF A70 和 AFF A90</block>
+  <block id="eefb5accf7d4ad2229c3cc4e823f76b3" category="paragraph">為了確保 AFF A70 或 AFF A90 儲存系統上的資料安全性，您必須驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="9cd2a6b6bdd086af956c7e27d3059067" category="inline-link-macro">關閉控制器</block>
+  <block id="482e4d1e9586e44d69c9610613f0abf6" category="paragraph">在引導媒體上檢查加密密鑰支持和狀態後，您需要<block ref="68b439f7374cbf94d1d0674cba562466" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c41be3742dfd04cb3e35161b5aa8cae" category="doc">在開機媒體上還原加密： AFF A70 和 AFF A90</block>
+  <block id="159bd84020d09d0cb2a2382b469de5c4" category="paragraph">在 AFF A70 或 AFF A90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
+  <block id="e2e2ae565aa28a204ee6037dec714ccc" category="paragraph">在開機媒體上還原加密後<block ref="e2df5d85d0d0d8d0a3a4f7656136cebe" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="6740691430de88734e113f13d35b6983" category="summary">如果 AFF A70 或 AFF A90 系統中的開機媒體毀損，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="fb8d280a656e08faa8b364869411286a" category="inline-link-macro">在開機媒體上還原加密</block>
+  <block id="06083a1993c377623f1b9c8a4bde3ebf" category="paragraph">引導恢復映像後，您需要<block ref="be52ba9563c0eafd16e999b38353737d" category="inline-link-macro-rx"></block>。</block>
+  <block id="384217cdec726ee67935297452978e96" category="summary">在更換 AFF A70 或 AFF A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確認您擁有正確的更換開機裝置，存取系統韌體和 ONTAP 軟體，以及備份重要組態資料。</block>
+  <block id="408b3fac19f2a23f482ae7a33b300763" category="doc">更換開機媒體的需求 - AFF A70 和 AFF A90</block>
+  <block id="4cc46eaff736b1c1b4344f760a3812e9" category="inline-link-macro">檢查開機媒體上的加密金鑰支援和狀態</block>
+  <block id="91afb4a99422cbf0cbccd15e6a2e2602" category="paragraph">在您檢閱了更換開機媒體的需求之後<block ref="91feb26699cc8675dce29ac358c94764" category="inline-link-macro-rx"></block>，您需要執行。</block>
+  <block id="e3a1979416798658cc544e3caa45070c" category="inline-link-macro">啟動恢復映像</block>
+  <block id="0163271bf5c3aff0aa7865f050229a26" category="paragraph">更換開機媒體之後<block ref="5a569bc0149d933ce39c87a98c5fb6ae" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="94b02598e2a9d4bde3dfe5d8a97bce89" category="summary">當您需要更換開機媒體時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="b7e37132f4ff6930e544d75049d65aa9" category="doc">關閉控制器以更換開機媒體 - AFF A70 和 AFF A90</block>
+  <block id="bbfca713068bba4697c845beb95121c9" category="paragraph">關閉控制器之後，您需要<block ref="844398b29ea04b019bab02290e44033a" category="inline-link-macro-rx"></block>執行。</block>
+  <block id="0c24f1f5276131f68f59d013b5140fe2" category="summary">重新啟動控制器，驗證系統健全狀況，並將故障零件退回 NetApp ，以完成 AFF A70 和 AFF A90 機箱更換程序的最後步驟。</block>
+  <block id="a7d0431e48fc8e27a57e7c9406da1725" category="summary">當硬體故障或升級需要時，請更換 AFF A70 或 AFF A90 系統中的機箱。更換程序包括移除電源供應器（ PSU ），移除現有的機箱，安裝新的機箱，以及重新安裝機箱元件。</block>
+  <block id="ff271b0c96467d97315c4c8bc2a98b8a" category="doc">準備更換機箱 - AFF A70 和 AFF A90</block>
+  <block id="6d282e909f145bd004728ddc74c015d2" category="summary">在更換 AFF A70 或 AFF A90 系統中的機箱之前，請確保您符合成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有 ONTAP 的本機管理員認證，正確的更換機箱，以及必要的工具。</block>
+  <block id="10e86c29e324a387d895b24857eeedb4" category="doc">更換機箱的要求： AFF A70 和 AFF A90</block>
+  <block id="cd9455911023520fcf98b4da7734bf3e" category="inline-link-macro">準備更換機箱</block>
+  <block id="cc76e275a47d9d1dd1c6de11bb2f7b12" category="paragraph">在您檢閱了更換機箱的需求之後<block ref="b1d5a90c05f55c4ad4ac020285b0e079" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="586bc4cfcaeebf3b002827cd918b9ff1" category="summary">需要更換機箱時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。請務必安全關閉控制器，以防止資料遺失，並確保系統穩定性。</block>
+  <block id="cfdba73c7c3c1aef6d411979e7eb0c2c" category="paragraph">需要更換機箱時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。請務必安全關閉控制器，以防止資料遺失，並確保系統穩定。</block>
+  <block id="a1de9509c1cc526ff2685cc16f15c3c0" category="paragraph">關閉控制器之後，您需要執行<block ref="36e3e0df655e652fc33a5dfc009000ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="11e8ff844165c77d350f816362d0ed0a" category="summary">如果需要硬體故障，請更換 AFF A70 或 AFF A90 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
+  <block id="045e51ef9fd14e92bed7263f56f60f6a" category="doc">更換控制器 - AFF A70 和 AFF A90</block>
+  <block id="7802e205f19ce9b3c1e4b5875798ebef" category="inline-link-macro">還原系統組態</block>
+  <block id="44505b1d85314cbb257a6a2a6bf388ab" category="paragraph">更換損壞的 AFF A70 或 AFF A90 控制器之後，您需要<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfa5103eb07abaac2f8b16bd48e7b453" category="summary">重新將儲存資源的控制權交給更換的控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。</block>
+  <block id="13b0f53aec80ac13170530410c42bc46" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="a61002aab76d792f612bedb7d53fdd4f" category="inline-link-macro">完成控制器更換</block>
+  <block id="8e4a77cdcca9305c0b2b2aaff9ccf95f" category="paragraph">將儲存資源的擁有權移回更換控制器後，您需要<block ref="d6f5f08e0612b966d919b4ea0b494c53" category="inline-link-macro-rx"></block>進行程序。</block>
+  <block id="f186981a4514bcd86930c033d8b52982" category="paragraph">在您審查了更換 AFF A70 或 AFF A90 控制器的要求之後，您需要<block ref="5548f0b530c949cbac4afbdb1eb16be4" category="inline-link-macro-rx"></block>。</block>
+  <block id="09d0394dd9f4460ac15da27cea6fffaf" category="summary">驗證邏輯介面是否回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 AFF A70 和 AFF A90 控制器更換程序的最後步驟。</block>
+  <block id="648ac9f5816534afdd3648942217b373" category="inline-link-macro">更換控制器</block>
+  <block id="f7cca63a8d34c4b92e6c512ace430431" category="paragraph">關閉控制器之後，您需要執行<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block>。</block>
+  <block id="67deb70786a6ab0a5fe6d757258a376d" category="inline-link-macro">將控制器交回</block>
+  <block id="144ef5a8d530c9af9dd9a75ed85bd1a6" category="paragraph">在您還原並驗證 AFF A70 或 AFF A90 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您必須執行。</block>
+  <block id="49e12ef90b1faa3a315b169542c713b2" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF A70 或 AFF A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，然後重新安裝控制器。</block>
+  <block id="c6fb1a92a42d034793f0283170857e55" category="doc">將 DIMM 更換為可修正或無法修正的錯誤 - AFF A70 和 AFF A90</block>
+  <block id="c5f515f28cb6c1d3c02533b311fba3d8" category="summary">當磁碟機故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的磁碟機。更換程序包括識別故障的磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
+  <block id="000b9b29f1c096063607d874c93f0b4d" category="doc">更換 SSD 磁碟機： AFF A70 和 AFF A90</block>
+  <block id="d7b13f1b873e95232ccd8e394ffe5a31" category="summary">當風扇故障或無法有效運作時，請更換 AFF A70 或 AFF A90 系統中的風扇模組，這可能會影響系統冷卻和整體效能。更換程序包括關閉受損的控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="c9eb9dae2912644361174c87c95e219c" category="paragraph">當風扇故障或無法有效運作時，請更換 AFF A70 或 AFF A90 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="c3c30014589b4b5af30412dba283a2b0" category="paragraph">將 I/O 模組新增至 AFF A70 或 AFF A90 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="52406e048549d7615d438e28022d00e0" category="paragraph">當系統中有可用的空插槽或所有插槽均已滿時，您可以將 I/O 模組新增至系統。</block>
+  <block id="129c4825a4876a3275fe6fde1ef05925" category="paragraph">AFF A70 和 AFF A90 系統可靈活擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="bbf73d5cd427d702187273d0f71f8264" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF A70 或 AFF A90 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="6469f92d939d5af2ddb7571ff9a54ce1" category="doc">維護程序總覽 - AFF A70 和 AFF A90</block>
+  <block id="9a14eb4201f018a934225cd84a42221c" category="summary">當電池開始充電或故障時，請更換 AFF A70 或 AFF A90 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="b85925ab6af84e80af54ee558d7cdd7b" category="summary">當非揮發性記憶體故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的 NVRAM 。</block>
+  <block id="aaf0a6c95c867df69992eef6a692ca4b" category="doc">更換 NVRAM - AFF A70 and AFF A90</block>
+  <block id="6ce37dbe2a72695de938ca0373d07a48" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
+  <block id="4397c8568a5da97a4fa9968d07a388d6" category="summary">當或 AFF A90 系統故障或故障時，請更換 AFF A70 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以確保運作穩定。更換程序包括中斷目標 PSU 與電源的連接，拔下電源線，移除故障 PSU ，安裝更換 PSU ，然後將其重新連接至電源。</block>
+  <block id="2529fd3c33c553ca2e8d9592843f4207" category="summary">請在 AFF A70 或 AFF A90 系統中更換即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
+  <block id="074741912fd3881b9c0c739cd18929e2" category="summary">當 AFF A70 或 AFF A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉受損的控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
+  <block id="20b1449f6216ab28919605292500b402" category="doc">更換系統管理模組 - AFF A70 和 AFF A90</block>
+  <block id="1f2cf1bdc028f501e0052daef27a058a" category="paragraph">當 AFF A70 或 AFF A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
+  <block id="cf20ef6c3ad56f51916c660c155d776b" category="summary">NVRAM 模組包含 NVRAM10 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。</block>
+  <block id="939d9449c6d0732b22e0493b628bb896" category="summary">NVRAM 模組包含 NVRAM11 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。</block>
+  <block id="7edf1f3179339021f055ec2c0cfb3e9d" category="summary">NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱交換，但 Flash Cache 模組承載器不是可熱交換的。</block>
+  <block id="f216f5272a9bf39ccecae542b80d4bba" category="doc">更換 Flash Cache 模組載體或快取模組： FAS70 和 FAS90</block>
+  <block id="bec3c3d322e61cf4fb9d371c2b8a1230" category="paragraph">NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD Flash Cache 磁碟機。</block>
+  <block id="d4f47b7acbf893a3c4734bad5b0d3873" category="paragraph">FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 Flash Cache 模組載體中混用容量不同的快取模組。</block>
+  <block id="c2a4b5850ddc08ee8695cc3a7d6d8f60" category="paragraph">根據需要更換的項目，您可以執行下列任一程序：整個 Flash Cache 模組載體或快取模組。</block>
+  <block id="025075570cd9bb7535ad91ed4d464db6" category="list-text"><block ref="75c6ecfae5c2dff701c1623adc220334" category="inline-xref-macro-rx"></block></block>
+  <block id="232f8c06b8825cdb1e6d094998bdf9bc" category="section-title">更換 Flash Cache 模組承載器</block>
+  <block id="74c94db80b288242c7f6674930d713e7" category="paragraph">Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cache 模組。您無法熱交換 Flash Cache 模組承載器</block>
+  <block id="bebbc1516aa1b9a12fe06d7b34d961eb" category="list-text">確保您的儲存系統擁有適當的作業系統，可用於更換的 Flash Cache 模組承載器。</block>
+  <block id="329c099907d0f52c68025a7034cdf53b" category="section-title">步驟 2 ：更換 Flash Cache 模組承載器</block>
+  <block id="e311fe35e84dae70043a7afea8a3e209" category="paragraph">請執行下列步驟以更換 Flash Cache 模組承載器。</block>
+  <block id="6bfea0aef7a0f4d7b6e938f7b8cb92cb" category="list-text">在插槽 6 中找到故障的 Flash Cache 模組承載器，其位置是 Flash Cache 模組承載器正面亮起的琥珀色警示 LED 。</block>
+  <block id="b9d75068f283e47b1871a81e0ae98f88" category="image-alt">移除 Flash Cache 模組載體</block>
+  <block id="d02ffa3301373d79bb19ab24899d6b94" category="paragraph">Flash Cache 模組載體</block>
+  <block id="7ec745c531dfcccbb03e8cb6ac770325" category="paragraph">Flash Cache 模組載體 CAM 把手</block>
+  <block id="6320c4570aae84b6f711a0a643c02105" category="paragraph">Flash Cache 模組載體故障 LED</block>
+  <block id="f7ae0ec162944a058c4afe86e4610bb7" category="list-text">移除故障的 Flash Cache 模組載體：</block>
+  <block id="f01b7f35124d8dbf6be7148d34db0f33" category="list-text">捏住 Flash Cache 模組承載器底部的藍色彈片。</block>
+  <block id="4a6358508c77fa629878a588642ff95b" category="list-text">將 Flash Cache 模組承載器從控制器模組中拉出，並將其放在防靜電墊上。</block>
+  <block id="66a9252526707f1fbb30f10131f9a4c5" category="list-text">將快取模組移至替換的 Flash Cache 模組承載器：</block>
+  <block id="47b358f21e6762d922bb6e4e2eb6663f" category="list-text">將手指插入 CAM 拉桿開口，然後將模組從 Flash Cache 模組承載器中拉出，即可將模組從機箱中移除。</block>
+  <block id="085a8eb90d0f9c87674f47de8d745d4c" category="list-text">將快取模組安裝到替換 Flash Cache 模組承載器的同一個插槽中，然後將 CAM 把手旋轉到快取模組上的關閉位置，將其鎖定到位。</block>
+  <block id="0de97d6035bb6bac9f3261a3b54caf2b" category="list-text">將替換的 Flash Cache 模組承載器安裝到系統中：</block>
+  <block id="ec617cf6645b7b31af4acf4bb6bf5548" category="paragraph">更換 Flash Cache 模組承載器之後，您必須重新啟動控制器模組。</block>
+  <block id="cd8149bfa17c8af4e5f1ee33f2b614e1" category="paragraph">Flash Cache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中，或插槽 6-1 和插槽 6-2 中。</block>
+  <block id="c29caa5c6637387a3d824074eeb2985c" category="list-text">將手指插入 CAM 槓桿開口，然後將模組從 Flash Cache 模組承載器中拉出，即可將快取模組模組從機箱中移除。</block>
+  <block id="66a0ca1988f2e1500a8393e213211b91" category="paragraph">從 Flash Cache 模組載體中移除快取模組時，請務必支援快取模組。</block>
+  <block id="5fbc523d8d2ad241522a15100f23bef2" category="inline-link-macro">Flash 快取</block>
+  <block id="4016d0dfef3c71172a1c22488fbd9043" category="paragraph"><block ref="4016d0dfef3c71172a1c22488fbd9043" category="inline-link-macro-rx"></block></block>
+  <block id="b9d7e088b534bc4204f17a38d0ca2c6d" category="summary">NVMe SSD 快閃快取模組（ Flash Cache 或快取模組）僅位於 FAS9500 系統插槽 6 中 NVRAM11 模組的前方。您可以從相同或不同的支援廠商、熱交換容量相同的快取模組。</block>
+  <block id="02d42b405553fc829059f9765d456680" category="paragraph">NVMe SSD 快閃快取模組（ Flash Cache 或快取模組）位於 FAS9500 系統插槽 6 中 NVRAM11 模組的前方。您可以從相同或不同的支援廠商、熱交換容量相同的快取模組。</block>
+  <block id="c443492278b59fb4f69d48dc9c1bf136" category="admonition">如果您需要或想要冷切換 Flash Cache 模組，請遵循更換 I/O 模組的程序。</block>
+  <block id="1537c91762ea3d09c062dd8a4f487023" category="paragraph">若要從受損機箱（包括 NVRAM 模組）中移除 I/O 模組、請依照特定步驟順序進行。將快閃快取模組移至替換機箱時，您不需要從 NVRAM 模組中移除快閃快取模組（如果有）。</block>
+  <block id="b430f11e83c0bcdf88430204506f447c" category="paragraph">若要安裝 I/O 模組，包括受損機箱的 NVRAM / 快閃快取模組，請依照特定步驟順序進行。</block>
+  <block id="c0caee8d791d630286e30c5e81a37e68" category="list-text">若要透過儲存交換器連接 NS224 磁碟機櫃，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以取得更多資訊。對於較舊的硬體機型，也可在中找到交換器纜線資訊<block ref="c0b67f04541b649189f1a990ae4a004d" category="inline-link-rx"></block>。</block>
+  <block id="d4fa7a653c8bbd17c1100e0ee0b5da36" category="list-text">若要安裝儲存交換器，請參閱<block ref="cd35f6165185d2c70017bfb031f19b89" category="inline-link-rx"></block>。</block>
+  <block id="5b799a4d08d10d5bb45cb3c7b02567ba" category="list-text">若要確認平台機型支援的硬體，例如儲存交換器和纜線，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="88b31bba8e7c3dc30d53e07a3939afe0" category="list-text">* 磁碟資格認證套件： * 最佳做法是在熱新增機櫃之前，先安裝最新版本<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block>的。</block>
+  <block id="ae748ebab4dfd9690b144080dee0a021" category="list-text">* Active IQ Config Advisor ： * 最佳實務做法是在熱新增機櫃之前和之後執行<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
+  <block id="fe6c711b5e959d7eb45e9dad280a18ac" category="list-text">* NSM 韌體： * 最佳實務做法是在新增新機櫃之前，先在儲存系統上安裝及<block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block>更新版本<block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block>。</block>
+  <block id="1c0fa23373954917c0b08b188941f3c3" category="sidebar">全新的 NetApp ASA R2 系統（ ASA A1K ， ASA A70 ， ASA A90 ， ASA A20 ， ASA A30 和 ASA A50 ）提供統一化的硬體與軟體解決方案，可針對僅限 SAN 的客戶需求，提供簡化的體驗。</block>
+  <block id="34d5f1e610f6b8eaf1a7180026def343" category="sidebar">關閉控制器</block>
+  <block id="43229c521bba188c3491ed72abe03043" category="sidebar">Flash Cache 模組</block>
 </blocks>

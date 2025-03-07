@@ -2,9 +2,9 @@
 :allow-uri-read: 
 
 
-NVRAM模組包含NVRAM10和DIMM、每個NVRAM模組最多可有兩個NVMe SSD Flash Cache模組（FlashCache或快取模組）。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
+NVRAM 模組包含 NVRAM10 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
 
-若要更換故障的NVRAM模組、您必須將其從機箱中移除、從NVRAM模組中移除FlashCache模組或模組、將DIMM移至更換模組、重新安裝FlashCache模組或模組、然後將替換的NVRAM模組安裝到機箱中。
+若要更換故障的 NVRAM 模組，您必須將其從機箱中移除，從 NVRAM 模組中移除快閃快取模組或模組，將 DIMM 移至更換模組，重新安裝快閃快取模組或模組，然後將更換的 NVRAM 模組安裝到機箱中。
 
 由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
 
@@ -187,7 +187,7 @@ mcc1A::> metrocluster operation show
 
 .步驟
 . 如果您尚未接地、請正確接地。
-. 將FlashCache模組從舊的NVRAM模組移至新的NVRAM模組：
+. 將 Flash Cache 模組從舊的 NVRAM 模組移至新的 NVRAM 模組：
 +
 image::../media/drw_9000_remove_flashcache.png[更換快取模組]
 
@@ -199,25 +199,25 @@ image::../media/drw_9000_remove_flashcache.png[更換快取模組]
  a| 
 image:../media/icon_round_1.png["編號 1"]
  a| 
-橘色釋放按鈕（空白FlashCache模組為灰色）
+橘色釋放按鈕（空白 Flash Cache 模組上的灰色）
 
 
 
  a| 
 image:../media/icon_round_2.png["編號 2"]
  a| 
-FlashCache CAM處理
+Flash Cache CAM Handle
 
 |===
 +
-.. 按下FlashCache模組正面的橘色按鈕。
+.. 按下 Flash Cache 模組正面的橘色按鈕。
 +
 
-NOTE: 空白FlashCache模組上的釋放按鈕為灰色。
+NOTE: 空白 Flash Cache 模組上的釋放按鈕為灰色。
 
 .. 將CAM握把向外旋轉、直到模組開始滑出舊的NVRAM模組。
 .. 抓住模組CAM把手上、將其從NVRAM模組中滑出、然後將其插入新的NVRAM模組正面。
-.. 將FlashCache模組一路輕推入NVRAM模組、然後將CAM握把旋開、直到鎖定模組到位。
+.. 將快閃快取模組輕輕推入 NVRAM 模組，然後將 CAM 把手旋開，直到鎖定模組就位。
 
 
 . 從機箱中移除目標NVRAM模組：

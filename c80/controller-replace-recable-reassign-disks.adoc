@@ -17,7 +17,7 @@ summary: 將儲存資源的控制權交給更換控制器，讓 AFF C80 系統�
 ====
 .無加密
 --
-將受損的控制器歸還其儲存設備，使其恢復正常運作
+將受損的控制器歸還其儲存設備，使其恢復正常運作。
 
 .步驟
 . 在 Loader 提示符下，輸入 `boot_ontap`。
@@ -42,14 +42,14 @@ summary: 將儲存資源的控制權交給更換控制器，讓 AFF C80 系統�
 
 
 --
-.機載加密（ OKM ）
+.OKM加密
 --
 重設內建加密，並將控制器恢復正常運作。
 
 .步驟
 . 在 Loader 提示字元中，輸入：
 +
-`boot_ontap maint`。
+`boot_ontap maint`
 
 . 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
 . 輸入 OKM 複雜密碼。您可以向客戶索取此通關密碼、或聯絡 https://support.netapp.com["NetApp支援"]。
@@ -102,7 +102,7 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 
 --
-.外部金鑰管理程式（ EKM ）
+.EKM加密
 --
 重設加密，並將控制器恢復正常運作。
 
@@ -148,14 +148,7 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 +
 `storage failover show`。
 
-. 進入進階模式，確保已修復節點上的任何核心傾印都已儲存：
-+
-`set -privilege advanced`然後 `run local partner savecore`。
-
-. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
-+
-`storage failover giveback -ofnode _impaired_node_name_`。
-
+. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
 . 如果自動恢復已停用、請重新啟用：
 +
 `storage failover modify -node local -auto-giveback true`。

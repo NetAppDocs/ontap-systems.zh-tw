@@ -1,34 +1,34 @@
 ---
 permalink: fas-70-90/caching-module-hot-swap.html 
 sidebar: sidebar 
-keywords: fas70, fas90, hot swap, replace, FlashCache module carrier, caching module, FlashCache 
-summary: NVMe SSD FlashCache 模組承載器包含一或兩個 FlashCache 模組（快取模組）、每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱插拔、但 FlashCache 模組承載器不是可熱交換的。 
+keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache 
+summary: NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱交換，但 Flash Cache 模組承載器不是可熱交換的。 
 ---
-= 更換 FlashCache 模組載體或快取模組： FAS70 和 FAS90
+= 更換 Flash Cache 模組載體或快取模組： FAS70 和 FAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVMe SSD FlashCache 模組承載器包含一或兩個 FlashCache 模組（快取模組）、每個快取模組均整合一個 SSD FlashCache 磁碟機。
+NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD Flash Cache 磁碟機。
 
-FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 FlashCache 模組載體中混合使用容量不同的快取模組。
+FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 Flash Cache 模組載體中混用容量不同的快取模組。
 
-根據需要更換的項目、您可以執行下列任一程序：整個 Flashcache 模組載體或快取模組。
+根據需要更換的項目，您可以執行下列任一程序：整個 Flash Cache 模組載體或快取模組。
 
-* <<更換 FlashCache 模組承載器>>
+* <<更換 Flash Cache 模組承載器>>
 * <<更換快取模組>>
 
 
 
 
-== 更換 FlashCache 模組承載器
+== 更換 Flash Cache 模組承載器
 
-FlashCache 模組承載器位於插槽 6 中、最多可容納兩個 FlashCache 模組。您無法熱交換 FlashCache 模組載體
+Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cache 模組。您無法熱交換 Flash Cache 模組承載器
 
 .開始之前
-* 確保您的儲存系統擁有適當的作業系統、可用於更換 FlashCache 模組承載器。
+* 確保您的儲存系統擁有適當的作業系統，可用於更換的 Flash Cache 模組承載器。
 * 確認所有其他元件正常運作；否則、您必須聯絡技術支援部門。
 
 
@@ -136,15 +136,15 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 ====
 
 
-=== 步驟 2 ：更換 FlashCache 模組承載器
+=== 步驟 2 ：更換 Flash Cache 模組承載器
 
-請執行下列步驟以更換 FlashCache 模組承載器。
+請執行下列步驟以更換 Flash Cache 模組承載器。
 
 .步驟
 . 如果您尚未接地、請正確接地。
-. 在插槽 6 中找到故障的 FlashCache 模組承載器、其位置是 FlashCache 模組承載器正面的琥珀色警示 LED 。
+. 在插槽 6 中找到故障的 Flash Cache 模組承載器，其位置是 Flash Cache 模組承載器正面亮起的琥珀色警示 LED 。
 +
-image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[移除 FlashCache 模組載體]
+image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[移除 Flash Cache 模組載體]
 
 +
 [cols="1,4"]
@@ -154,7 +154,7 @@ image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[移除
  a| 
 image:../media/icon_round_1.png["編號 1"]
  a| 
-FlashCache 模組載體
+Flash Cache 模組載體
 
 
 
@@ -168,33 +168,33 @@ image:../media/icon_round_2.png["編號 2"]
  a| 
 image:../media/icon_round_3.png["編號 3"]
  a| 
-FlashCache 模組承載器 CAM 把手
+Flash Cache 模組載體 CAM 把手
 
 
 
  a| 
 image:../media/icon_round_4.png["編號 4."]
  a| 
-FlashCache 模組載體故障 LED
+Flash Cache 模組載體故障 LED
 
 |===
-. 移除故障的 FlashCache 模組載體：
+. 移除故障的 Flash Cache 模組載體：
 +
 .. 向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。
-.. 捏住 FlashCache 模組載體底部的藍色彈片。
+.. 捏住 Flash Cache 模組承載器底部的藍色彈片。
 .. 將彈片從模組轉開。
 
 
-. 將 FlashCache 模組承載器從控制器模組中拉出、並將其放在防靜電墊上。
-. 將快取模組移至替換的 FlashCache 模組載體：
+. 將 Flash Cache 模組承載器從控制器模組中拉出，並將其放在防靜電墊上。
+. 將快取模組移至替換的 Flash Cache 模組承載器：
 +
 .. 捏住快取模組頂端的 Terra Cotta 標籤、將 CAM 把手轉離快取模組。
-.. 將手指插入 CAM 拉桿開口處、然後將模組從 FlashCache 模組承載器中拉出、即可將模組從機箱中移除。
-.. 將快取模組安裝到替換 FlashCache 模組承載器的同一個插槽中、然後將 CAM 把手旋轉到快取模組上的關閉位置、將其鎖定到位。
+.. 將手指插入 CAM 拉桿開口，然後將模組從 Flash Cache 模組承載器中拉出，即可將模組從機箱中移除。
+.. 將快取模組安裝到替換 Flash Cache 模組承載器的同一個插槽中，然後將 CAM 把手旋轉到快取模組上的關閉位置，將其鎖定到位。
 
 
 . 如果有第二個快取模組、請重複這些步驟。
-. 將替換的 FlashCache 模組承載器安裝到系統中：
+. 將替換的 Flash Cache 模組承載器安裝到系統中：
 +
 .. 將模組與機箱插槽開口的邊緣對齊。
 .. 將模組一路滑入機箱中的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。
@@ -207,7 +207,7 @@ FlashCache 模組載體故障 LED
 
 === 步驟 3 ：重新啟動控制器
 
-更換 FlashCache 模組承載器之後、您必須重新啟動控制器模組。
+更換 Flash Cache 模組承載器之後，您必須重新啟動控制器模組。
 
 .步驟
 . 在載入程式提示字元中、重新啟動節點：_by_
@@ -230,7 +230,7 @@ NOTE: 這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
 == 更換快取模組
 
 .開始之前
-FlashCache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中、或插槽 6-1 和插槽 6-2 中。
+Flash Cache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中，或插槽 6-1 和插槽 6-2 中。
 
 您可以使用同一廠商或其他支援廠商提供的相同容量快取模組來熱交換個別的快取模組。
 
@@ -292,9 +292,9 @@ image:../media/icon_round_2.png["編號 2"]
 .. 向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。
 .. 按下快取模組前面的Terra cotta釋放按鈕。
 .. 轉動凸輪把手至最遠的位置。
-.. 將手指插入 CAM 槓桿開口處、然後將模組從 FlashCache 模組承載器中拉出、即可將快取模組模組模組從機箱中移除。
+.. 將手指插入 CAM 槓桿開口，然後將模組從 Flash Cache 模組承載器中拉出，即可將快取模組模組從機箱中移除。
 +
-從 FlashCache 模組載體中移除快取模組時、請務必支援快取模組。
+從 Flash Cache 模組載體中移除快取模組時，請務必支援快取模組。
 
 
 

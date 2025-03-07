@@ -38,7 +38,10 @@ summary: 重新啟動系統。
 --
 .機載加密（ OKM ）
 --
-. 在 Loader 提示符下，輸入 `boot_ontap maint`。
+. 在 Loader 提示字元中，輸入：
++
+`boot_ontap maint`
+
 . 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
 . 輸入 OKM 複雜密碼。您可以向客戶索取此通關密碼、或聯絡 https://support.netapp.com["NetApp支援"]。
 +
@@ -110,7 +113,6 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 
 . 系統處理完畢後、您將會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。
 . 檢查接管狀態： `storage failover show`。
-. 請移至進階模式、確保已修復節點上的任何核心傾印都已儲存」 `set -privilege advanced`、然後 `run local partner savecore`按。
 . 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
 . 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
 . 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。

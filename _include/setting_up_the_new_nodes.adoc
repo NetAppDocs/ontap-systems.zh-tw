@@ -5,7 +5,7 @@
 在移動儲存設備進行升級的過程中、您需要開啟節點3和節點4的電源、開機軟體映像、以及設定節點。原始節點與新節點之間的實體連接埠配置可能有所不同。應在原始節點和替換節點之間對應連接埠、以識別連接埠和連線的適當配置。
 
 .關於這項工作
-如果ONTAP 在新節點上執行的版本與原始節點上的版本不同、您必須從NetApp支援網站下載正確的<ONTAP_VERSION >_image.tgz檔案至可從網路存取的目錄（請參閱步驟4）。您需要<ONTAP_VERSION >_image.tgz檔案來執行系統的網路開機。
+如果在新節點上執行的 ONTAP 版本與原始節點上的版本不同，您必須將正確的 <xxx_image.tgz> 檔案從 NetApp 支援網站下載至 Web 可存取的目錄（請參閱步驟 4 ）。您需要 <xxx_image.tgz> 檔案來執行系統的網路開機。
 
 .步驟
 . 開啟節點3的電源、然後立即在主控台終端按Ctrl-C存取載入程式提示。
@@ -63,11 +63,11 @@ DHCP
  a| 
 *所有其他系統*
  a| 
-按鍵+ netboot http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+`[]
+`+netboot http://web_server_ip/path_to_web-accessible_directory/<xxx_image.tgz>+`
 
 |===
 +
-path_to_the_web-易於 存取的目錄是下載的<ONTAP_VERSION >_image.tgz檔案的位置。
+path_to_the_web-imapped_directory 是下載 <xxx_image.tgz> 檔案的位置。
 
 +
 
@@ -77,7 +77,7 @@ NOTE: 如果您無法從網路開機新的控制器、請聯絡技術支援部�
 +
 請忽略下列訊息：「HA配對上的不中斷升級不支援此程序」。它適用於軟體的不中斷升級、而非控制器的升級。
 
-. 如果系統提示您繼續此程序、請輸入「y」、並在系統提示您輸入套件時、輸入映像檔的URL：「+http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+`」。
+. 如果系統提示您繼續此過程，請輸入，當系統提示您 `y`輸入軟件包時，請輸入映像文件的 URL ： `+http://web_server_ip/path_to_web-accessible_directory/<xxx_image.tgz>+`。
 +
 輸入使用者名稱/密碼（若適用）、或按Enter繼續。
 
