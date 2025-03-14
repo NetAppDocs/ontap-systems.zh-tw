@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: asa r2 a1k, move the controller module hardware 
 summary: 若要更換控制器模組、您必須移除受損的控制器、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。 
 ---
-= 更換控制器模組硬體 - ASA A1K
+= 更換控制器 - ASA A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要更換控制器、您必須移除受損的控制器、將 FRU 元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。
+如果需要硬體故障，請更換 ASA A1K 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。
 
 
 
@@ -222,3 +222,6 @@ NOTE: 顯示的時間不一定是本地時間、會以 24 小時模式顯示。
 如果您移除收發器（ QSFP 或 SFP ）、請記得在使用光纖纜線時重新安裝。
 
 
+
+.接下來呢？
+更換了功能受損的 ASA A1K 控制器之後link:controller-replace-system-config-restore-and-verify.html["還原系統組態"]，您需要。

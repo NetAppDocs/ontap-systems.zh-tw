@@ -2,11 +2,13 @@
 :allow-uri-read: 
 
 
-您必須檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。
+檢閱更換控制器模組的需求。
 
 * 所有磁碟機櫃都必須正常運作。
 * 健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
-* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請勿將此程序用於控制器升級；請參閱 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["選擇控制器硬體升級程序"]以取得指引。
+* 如果您的系統是 MetroCluster 組態，您必須檢閱 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"]以判斷是否應使用此程序。
+* 您必須使用從 NetApp 收到的現場可更換單元（ FRU ）來更換故障元件。
 * 您必須以相同型號的控制器模組來更換控制器模組。您無法只更換控制器模組來升級系統。
 * 在此程序中、您無法變更任何磁碟機或磁碟機櫃。
 * 由於開機裝置位於系統背面安裝的系統管理模組上、因此更換控制器模組時不需要移動開機裝置。

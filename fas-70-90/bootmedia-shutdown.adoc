@@ -2,16 +2,16 @@
 permalink: fas-70-90/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: fas70, fas90, shut down the controller 
-summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
+summary: 需要更換開機媒體時，請關閉 FAS70 或 FAS90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。 
 ---
-= 關閉受損的控制器- FAS70和FAS90
+= 關閉控制器以更換開機媒體： FAS70 和 FAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。
+需要更換開機媒體時，請關閉 FAS70 或 FAS90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。
 
 [role="tabbed-block"]
 ====
@@ -116,3 +116,5 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 --
 ====
+.接下來呢？
+關閉控制器之後，您需要link:bootmedia-replace.html["更換開機媒體"]執行。

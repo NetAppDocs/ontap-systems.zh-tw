@@ -2,7 +2,7 @@
 permalink: fas-70-90/caching-module-hot-swap.html 
 sidebar: sidebar 
 keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache 
-summary: NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱交換，但 Flash Cache 模組承載器不是可熱交換的。 
+summary: FAS70 或 FAS90 系統中的 NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組都整合一個 SSD Flash Cache 磁碟機。 
 ---
 = 更換 Flash Cache 模組載體或快取模組： FAS70 和 FAS90
 :allow-uri-read: 
@@ -11,11 +11,11 @@ summary: NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模�
 
 
 [role="lead"]
-NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD Flash Cache 磁碟機。
+FAS70 或 FAS90 系統中的 NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組都整合一個 SSD Flash Cache 磁碟機。
 
 FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 Flash Cache 模組載體中混用容量不同的快取模組。
 
-根據需要更換的項目，您可以執行下列任一程序：整個 Flash Cache 模組載體或快取模組。
+根據您需要更換的元件，您可以執行下列任一程序：整個 Flash Cache 模組載體或快取模組。
 
 * <<更換 Flash Cache 模組承載器>>
 * <<更換快取模組>>
@@ -229,7 +229,6 @@ NOTE: 這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
 
 == 更換快取模組
 
-.開始之前
 Flash Cache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中，或插槽 6-1 和插槽 6-2 中。
 
 您可以使用同一廠商或其他支援廠商提供的相同容量快取模組來熱交換個別的快取模組。

@@ -2,7 +2,7 @@
 permalink: a1k/bootmedia-recovery-image-boot.html 
 sidebar: sidebar 
 keywords: aff a1k, boot the recovery image 
-summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。 
+summary: 在 AFF A1K 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。 
 ---
 = 開機恢復映像 - AFF A1K
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 
 
 [role="lead"]
-您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
+在 AFF A1K 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。
 
 .步驟
 . 在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：「boot_recovery」
@@ -65,3 +65,6 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 * 注意： * 如果程序失敗、請聯絡 https://support.netapp.com["NetApp支援"]。
 
 
+
+.接下來呢？
+引導恢復映像後，您需要link:bootmedia-encryption-restore.html["在開機媒體上還原加密"]。

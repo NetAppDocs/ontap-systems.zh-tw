@@ -2,7 +2,7 @@
 permalink: asa-r2-70-90/dimm-replace.html 
 sidebar: sidebar 
 keywords: asa r2 a70, asa r2 a90, replace a dimm 
-summary: 當偵測到過度可修正或不可修正的錯誤時，請更換 AFF C80 系統中的 DIMM 。這些問題通常是由單一 DIMM 故障所造成，可能會導致儲存系統無法開機 ONTAP 。 
+summary: 如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 ASA A70 或 ASA A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。 
 ---
 = 更換 DIMM - ASA A70 和 ASA A90
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當偵測到過度可修正或不可修正的錯誤時，請更換 AFF 
 
 
 [role="lead"]
-當偵測到過度可修正或不可修正的錯誤時，請更換 AFF C80 系統中的 DIMM 。這些問題通常是由單一 DIMM 故障所造成，可能會導致儲存系統無法開機 ONTAP 。
+如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 ASA A70 或 ASA A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。
 
 .開始之前
 * 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。

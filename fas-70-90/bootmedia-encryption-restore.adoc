@@ -2,16 +2,16 @@
 permalink: fas-70-90/bootmedia-encryption-restore.html 
 sidebar: sidebar 
 keywords: fas70, fas90, post boot media replacement steps for okm, nse, and nve 
-summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。 
+summary: 在 FAS70 或 FAS90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。 
 ---
-= 還原加密： FAS70 和 FAS90
+= 在開機媒體上還原加密： FAS70 和 FAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在替換開機媒體上還原加密。
+在 FAS70 或 FAS90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。
 
 您必須使用開機媒體取代程序開始時所擷取的設定、完成特定於已啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp 磁碟區加密（ NVE ）的系統的步驟。
 
@@ -429,3 +429,6 @@ Selection (1-11)? 1
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.接下來呢？
+在開機媒體上還原加密後link:bootmedia-complete-rma.html["將故障零件退回 NetApp"]，您需要。

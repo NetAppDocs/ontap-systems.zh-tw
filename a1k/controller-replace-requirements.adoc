@@ -2,21 +2,24 @@
 permalink: a1k/controller-replace-requirements.html 
 sidebar: sidebar 
 keywords: aff a1k, prerequisite, replace the controller module 
-summary: 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版本選擇正確的解決方法。 
+summary: 在更換 AFF A1K 系統中的控制器之前，請確保您符合成功更換控制器的必要要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。 
 ---
-= 控制器更換需求 - AFF A1K
+= 更換控制器的要求 - AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。
+在更換 AFF A1K 系統中的控制器之前，請確保您符合成功更換控制器的必要要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。
+
+檢閱更換控制器的需求。
 
 * 所有磁碟機櫃都必須正常運作。
 * 健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
+* 請勿將此程序用於控制器升級；請參閱 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["選擇控制器硬體升級程序"]以取得指引。
 * 如果您的系統採用 MetroCluster 組態、您必須檢閱一節 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"] 、以判斷是否應該使用此控制器更換程序。
-* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 您必須使用從 NetApp 收到的現場可更換單元（ FRU ）來更換故障元件。
 * 您必須以相同型號的控制器模組來更換控制器模組。您無法只更換控制器模組來升級系統。
 * 在此程序中、您無法變更任何磁碟機或磁碟機櫃。
 * 由於開機裝置位於系統背面安裝的系統管理模組上、因此更換控制器模組時不需要移動開機裝置。
@@ -32,3 +35,6 @@ summary: 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版�
 這會提供程序記錄、以便您疑難排解在更換程序期間可能遇到的任何問題。
 
 
+
+.接下來呢？
+在您審查了更換 AFF A1K 控制器的要求之後，您需要link:controller-replace-shutdown.html["關閉控制器"]。

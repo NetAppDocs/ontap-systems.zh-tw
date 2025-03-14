@@ -7791,7 +7791,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6e7081198e310340fdbd7ee3575a92db" category="image-alt">控制器移除圖形</block>
   <block id="1dc32853fd03864e0537b3ae1ad7ef3b" category="list-text">將控制器模組滑出機箱、然後放在平坦穩定的表面上。</block>
   <block id="33fdb32302198e8a827003b4173b5eb0" category="paragraph">將控制器模組滑出機箱時、請務必支撐控制器模組的底部。</block>
-  <block id="75a5f080add11b67917840158e6bbd4b" category="paragraph">若要更換控制器、您必須移除受損的控制器、將 FRU 元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
   <block id="946c9f8702013d89a2409f6409b3b2c1" category="paragraph">您必須將五個風扇模組從受損的控制器模組移至更換的控制器模組。</block>
   <block id="ba353b9db22f76b4888d654901cd45fb" category="list-text">按下風扇模組上的灰色鎖定按鈕、將風扇模組直接從機箱中拉出、確定您用自己的手來支撐它。</block>
   <block id="4bc3c3e0bb0fe52395c42198e6c403bd" category="image-alt">風扇移除 AFF A1K</block>
@@ -7832,7 +7831,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="137461f81303a8e99562914dc4aead7e" category="list-text">GiveBack SFO （無強制）</block>
   <block id="54e470877c32b61b020326e0bd9815fd" category="list-text">如果您的系統未設定加密、請完成下列程序以重新啟動系統：</block>
   <block id="da9ac1c91f37b4e5f63555337c4e5a28" category="list-text">開機至功能表並執行選項 1 。</block>
-  <block id="ec77e5f87d39009b586c11431b08f2df" category="paragraph">完成硬體更換後、您將驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
   <block id="5ce635c93ed7a2d51e30b917452c6ec7" category="list-text"><block ref="f46f944e351f8b92e40c3308318738a3" prefix="" category="inline-code"></block> （不支援）</block>
   <block id="221f15e39f2382e44ef4321b5b0e4320" category="list-text"><block ref="524b78f7770e94479dc70b1b445c5cf3" prefix="" category="inline-code"></block> （不支援）</block>
   <block id="a540c64e6896cd0fc3bf3d5fb82d4719" category="paragraph">當系統報告該 DIMM 的永久性故障狀況時、您必須更換 DIMM 。</block>
@@ -7842,7 +7840,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c91b6f7be7626aeee99aefaf9c8d08bd" category="list-text">找到控制器模組上的 DIMM 、並識別要更換的 DIMM 。</block>
   <block id="9f6b3b55748dc3abdda6a24404bc0981" category="image-alt">更換 DIMM</block>
   <block id="5ad0bee4781dc71ce545ac6a5192bb27" category="list-text">關閉控制器通風管。</block>
-  <block id="1269042d0106261911211f79eb6bd615" category="paragraph">若要在不中斷服務的情況下更換風扇模組、您必須執行特定的工作順序。</block>
   <block id="36c158f4fa724abf128192885ff5d304" category="paragraph">面對控制器模組、風扇模組從左至右編號為 1 至 5 。</block>
   <block id="565ca033dd00cf8e99e85b5be9d0426f" category="admonition">每個風扇都有一個 LED 。當風扇正常運作時、指示燈會亮起綠色燈、如果沒有、則會亮起琥珀色燈。</block>
   <block id="c073b9a839d8979c2b08d95b28ded9fe" category="list-text">按下風扇模組上的黑色按鈕、將風扇模組直接從機箱中拉出、並確保您用自己的手來支撐它。</block>
@@ -7873,7 +7870,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="24047a6db7d76f066348eb7ec600f329" category="list-text">將電池從通風管和控制器模組中取出、然後放在一邊。</block>
   <block id="711984feeea728e6125e2dc423e3fac6" category="list-text">將替換電池組裝入控制器：</block>
   <block id="be9a1fd60aae57036d44ee7248eef782" category="list-text">關閉 NV 通風管蓋。</block>
-  <block id="d9086fba38bd40ec38280d2251574230" category="paragraph">NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的 NVRAM 模組、您必須從機箱中移除模組、將 DIMM 移至更換模組、然後將更換的 NVRAM 模組安裝至機箱。</block>
   <block id="4241925b317fc8692e52a8a332fb8340" category="paragraph">系統中的所有其他元件都必須正常運作；否則、您必須聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="eaf77e551d9134f3614ee70624c0542a" category="paragraph">若要更換 NVRAM 模組、請將其置於機箱的插槽 4/5 中、然後依照特定步驟順序進行。</block>
   <block id="f7a22033f03f49d91738ef92b897c094" category="list-text">從兩個 PSU 拔下電源線。</block>
@@ -7930,7 +7926,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="734233c07fafca68d078ca506f9ceba6" category="list-text">USB 序列（ Type-C ）</block>
   <block id="69381ed751e9fb1eeb4c93152247e3d7" category="list-text">USB Type-A （開機恢復）</block>
   <block id="198fa86a9c542f1a61c0f6a62120cad4" category="list-text">e0M RJ45 乙太網路</block>
-  <block id="1db6096e898c7b22a21f2204a6c1393e" category="paragraph">若要更換系統管理模組或開機媒體、您必須關閉受損的控制器。</block>
   <block id="f744d4ede8531b24b196b4678a6fdfce" category="list-text">所有其他系統元件都必須正常運作。</block>
   <block id="8071fa49d4debf76dea275eb3c85adf2" category="list-text">合作夥伴控制器必須能夠接管受損的控制器。</block>
   <block id="4fbb43a9c47d6d76253729e7d93c5f55" category="section-title">步驟 2 ：更換損壞的系統管理模組</block>
@@ -8039,7 +8034,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e7a88b07d0fe11e52b015a7a07b1b7ee" category="list-text">將替換 I/O 模組安裝至目標插槽：</block>
   <block id="a3106006bcbd6b01107844abf97f1800" category="list-text">將模組一路輕輕滑入控制器模組的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。</block>
   <block id="1089c3637780c1a22ad88c3e30e3eaa6" category="image-alt">更換NV電池</block>
-  <block id="f5844b9beff2dd81e52b9a5d98082467" category="paragraph">NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的 NVRAM 模組、您必須從機箱中移除模組、將 DIMM 移至更換模組、然後將更換的 NVRAM 模組安裝到機箱中。</block>
   <block id="f7de4e424b34170ef3a103ee0f882402" category="paragraph">若要更換 NVRAM 模組、請將其放在機箱的插槽 4/5 中、然後依照特定步驟順序進行。</block>
   <block id="b9c07f9700f6e60517bd8e8c52b698d0" category="list-text">將手指插入 CAM 拉桿開口處、然後將模組拉出機箱、即可將受損的 NVRAM 模組從機箱中移除。</block>
   <block id="95202d1c51ddd04e5c7ee2a579109553" category="list-text">按下 CAM 按鈕。</block>
@@ -8170,7 +8164,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ac632c351c050929564cd7a72c3d383a" category="doc">關閉受損控制器 - AFF A1K</block>
   <block id="a4fbb291103a5430eb9ece2393c095a4" category="doc">將控制器交回 AFF A1K</block>
   <block id="fb829c49a3a2da88fb46330449bb960d" category="summary">若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。如需 RMA 編號或更換程序的其他協助、請聯絡技術支援<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>：、 888-463-8277 （北美）、 00-800-444-638277 （歐洲）或 +800-800-80-800 （亞太地區）。</block>
-  <block id="5f0eff5741eb1b44c778897a8674fa87" category="paragraph">若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。</block>
   <block id="6bcc49329cd2b052a2bddab981fec2e3" category="section-title">步驟 1 ：驗證生命和檢查叢集健全狀況</block>
   <block id="61ec4d4962d0f24c38b731c335dcb259" category="doc">還原並驗證系統組態 - AFF A1K</block>
   <block id="8eed652f60c06861a89907936cca366c" category="doc">更換 DIMM - AFF A1K</block>
@@ -8289,7 +8282,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="12dc2a66a130388ec482398caa6ce95b" category="list-text">按一下*立即註冊*、然後建立帳戶。</block>
   <block id="89cc8de091278e0fb0686833ac6a7982" category="list-text">選擇 * 系統 * &gt; * 註冊系統 * 。</block>
   <block id="9fcab783d1ffadeafb84de00efe883d9" category="paragraph">註冊核准後、您可以下載任何必要的軟體。核准程序可能需要24小時。</block>
-  <block id="43322d1e43d632d017f923484e7efa80" category="summary">若要更換 PCIe 卡、您必須從插卡拔下纜線、從插卡上取下 SFP 和 QSFP 模組、然後重新安裝 SFP 和 QSFP 模組、再將插卡佈線。</block>
   <block id="240a5f8ed7bc82e0c089904a09102a91" category="doc">新增 I/O 模組 - AFF A1K</block>
   <block id="165e0559b98c0c22e37b61a08f8854d6" category="summary">您必須使用從供應商處收到的替換現場可更換單元（ FRU ）元件來更換故障元件。</block>
   <block id="6b3ba57eee03f197f451232d78a67ae7" category="doc">新增與更換 I/O 模組總覽 - AFF A1K</block>
@@ -8302,11 +8294,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d138e90428f37a60387c8577b6e009b8" category="section-title">非易失電池</block>
   <block id="807b26d7111f209057a30d265b88f6ae" category="paragraph">I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。</block>
   <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源供應器在控制器中提供備援電源。</block>
-  <block id="aebd84aedf30ca3854097975c59229ed" category="doc">更換 NV 電池 - AFF A1K</block>
   <block id="f133a8ed8a0b7a76b6c1b28bc00b0fb1" category="doc">更換 NVRAM - AFF A1K</block>
   <block id="6794ac4e17218aaa4a21099cb6c428a5" category="doc">更換電源供應器 - AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">更換即時時鐘電池 - AFF A1K</block>
-  <block id="7a0d50897c7e82eeae5a76e821ede64f" category="summary">您必須更換。</block>
   <block id="729f102b3131803a07803cd2f223d3c3" category="summary">您必須重新啟動控制器的儲存設備。</block>
   <block id="7b78a43d2ef1cd56888972224b322cba" category="section-title">步驟 1 ：驗證生命週期並檢查叢集健全狀況</block>
   <block id="6f088e5455bf9d5415570fed055240bc" category="paragraph">對於 AFF A70 和 A90 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -8497,7 +8487,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5881b108517b27e7011c12b72fab1eb6" category="sidebar">AFF A1K 開機媒體</block>
   <block id="2df31b353db26ab75397dd256071bb0f" category="sidebar">AFF A1K 控制器模組</block>
   <block id="2dc5b9299e6c112139901723adb67ed0" category="sidebar">將控制器交回</block>
-  <block id="5a34816c99c709c3123cc893c23aa8de" category="sidebar">NV 電池</block>
   <block id="4d5d9ed8cd3daf7e0f60b7f56524d07a" category="sidebar">新增 I/O 模組</block>
   <block id="00015974de1f6f69c16403a005f48582" category="sidebar">更換 I/O 模組</block>
   <block id="8c62ca0981c296824eceba9a38d6aa19" category="sidebar">AFF A70 和 AFF A90 系統</block>
@@ -8565,15 +8554,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5f1422fe4664becf0aa8b9ffe6bf86d6" category="paragraph">更換開機媒體之前、請務必檢閱下列需求。</block>
   <block id="76b9ce100a5ce0ab266bb83f1c474ac5" category="list-text">您必須將檔案複製<block ref="c70b112e1b022bd450e0790d8615c85a" prefix=" " category="inline-code"></block> 到 USB 快閃磁碟機、以便稍後在本程序中使用。</block>
   <block id="01df70585b251d67c7e85dbced3f0bae" category="paragraph">將儲存資源的擁有權移回更換控制器。</block>
-  <block id="5685250d28f7395e8ea2fbd5656061c6" category="paragraph">檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。</block>
   <block id="b7325683a2337dcdab8a07d398701bbe" category="list-text">如果您的系統採用 MetroCluster 組態、您必須檢閱一節<block ref="dbcae02c495cc3db61b37ce85396171e" category="inline-link-rx"></block> 、以判斷是否應該使用此控制器更換程序。</block>
   <block id="9b3a68cd89d10f3b0ccc10f24e3f6012" category="list-text">您可以在系統支援的所有 ONTAP 版本中使用機箱更換程序。</block>
   <block id="fd6ec360446d31e3ab9c3f69a39b148a" category="list-text">機箱更換程序是假設您要將擋板、 NVMe 磁碟機和控制器模組移至新機箱、而更換機箱則是 NetApp 的新元件。</block>
   <block id="f39018b3c08ed8bfa54e407c9e13c6b4" category="list-text">* 機箱更換程序會造成營運中斷。 *對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。</block>
-  <block id="a77e388862c17fbfa9503eb6e38c1ec3" category="paragraph">您必須檢閱控制器更換程序的要求、並針對您的 ONTAP 作業系統版本選擇正確的要求。</block>
-  <block id="fcf1f99c5510f69d07371f2deebe6070" category="doc">還原加密 - AFF A1K</block>
   <block id="6153407aa3467dec46b4d9467c1b1856" category="summary">瞭解更換開機媒體的需求。</block>
-  <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">開機媒體更換工作流程 - AFF A1K</block>
   <block id="1d7e5e0e3df76ac9dc695510c92b0468" category="paragraph">請依照下列工作流程步驟來更換開機媒體。</block>
   <block id="d5874724b2a05ddd0fcf9a45278e58ff" category="paragraph">驗證系統是否已啟用安全金鑰管理程式或加密磁碟。</block>
   <block id="7db8d856045d03a62b20e857798b75c4" category="paragraph">關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。</block>
@@ -8581,22 +8566,16 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3075613c146b62cdb964218b1b25f33a" category="paragraph">從 USB 磁碟機開機 ONTAP 映像、還原檔案系統、並驗證環境變數。</block>
   <block id="328c5bc6b9f2e06bb542a0d6dabcedd7" category="inline-link-macro">還原加密</block>
   <block id="66155ab867b9e72e003c32039430a194" category="paragraph">從 ONATP 開機功能表還原內建金鑰管理程式組態或外部金鑰管理程式。</block>
-  <block id="5be3f38f9a32479c868826a858d049a6" category="doc">更換控制器模組 - AFF A1K</block>
   <block id="011c6a75a4dc386bdb35a883058e2297" category="doc">完整控制器更換 - AFF A1K</block>
-  <block id="f3555ea3467ebe4fdfc22c15f93397e0" category="doc">控制器更換工作流程 - AFF A1K</block>
-  <block id="4eccda983f51d658744291e7b5e3e733" category="paragraph">請依照下列工作流程步驟更換控制器模組。</block>
   <block id="55c7ebf0deeac4f8204507eb9ab3cf38" category="inline-link-macro">更換控制器</block>
   <block id="033d50cc4a08211a432c03a9350b9a71" category="paragraph">更換控制器包括移除受損的控制器、將 FRU 元件移至更換的控制器模組、然後在機箱中安裝更換的控制器模組。</block>
   <block id="4d642a38ec660c3a650895de21d1fe3b" category="inline-link-macro">還原並驗證系統組態</block>
   <block id="1f2fe4b700b2b1be29968eb7ee0dfa6b" category="paragraph">驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
   <block id="3f241611f37a3a938c6086f224665f2d" category="paragraph">驗證生命、檢查叢集健全狀況、並將故障零件退回 NetApp 。</block>
-  <block id="cddf061490cf83caae5feee2aaeb87ab" category="summary">您必須使用從供應商處收到的替換現場可更換單元（ FRU ）元件來更換故障元件。</block>
   <block id="cc642e219166c76e6ac027cc2f450209" category="list-text"><block ref="cc642e219166c76e6ac027cc2f450209" category="inline-link-macro-rx"></block></block>
   <block id="74b0c9e1c6f08f1930847df1992af055" category="paragraph">新增其他模組可改善備援、有助於確保即使有一個模組故障、系統仍能正常運作。</block>
   <block id="b49ba47015c67eae9f182326198621a4" category="list-text"><block ref="b49ba47015c67eae9f182326198621a4" category="inline-link-macro-rx"></block></block>
   <block id="9fda3838f591736cf5d7bf5941736a26" category="paragraph">更換故障 I/O 模組可將系統還原至最佳作業狀態。</block>
-  <block id="7a327b859ee108f2920cd543eddd73a0" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 AFF A1K 系統元件的特定程序。</block>
-  <block id="7799c706f7bfc9f724a38dd742f52aaa" category="paragraph">本節中的程序假設 AFF A1K 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="000fb458b47995fb84311bb7ef7c7f62" category="section-title">系統元件</block>
   <block id="c0e6d430c38f280369988922128024f4" category="paragraph"><block ref="c0e6d430c38f280369988922128024f4" category="inline-link-macro-rx"></block></block>
   <block id="dceb619599d0aa6d9d89d0abf54e0b37" category="paragraph"><block ref="dceb619599d0aa6d9d89d0abf54e0b37" category="inline-link-macro-rx"></block></block>
@@ -8644,7 +8623,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fd0b5e2ec2a2cf25a20efb1e3056cd3e" category="list-text">重新安裝系統管理模組：</block>
   <block id="cad55b14298ba91aeb9818c5ded8ee54" category="list-text">將 USB 快閃磁碟機插入系統管理模組上的 USB-A 連接埠。</block>
   <block id="c81ac37e18f8d2fc1fa9a876a4ec31e6" category="list-text">重新連接控制器模組的電源：</block>
-  <block id="81dfaa70d5a404c0e1608245cd5ffd7c" category="paragraph">在更換機箱之前、請務必檢閱下列需求。</block>
   <block id="6d5d746399cefcc613daba11aecdc51c" category="paragraph">可重新連接儲存設備和網路連線、然後將控制器交回。</block>
   <block id="0ed0be895e046a90f3a9bee311a3835e" category="paragraph">驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
   <block id="539ae767713043504856676d47fbdf4b" category="paragraph">請務必在纜線上貼上標籤、讓您知道纜線的來源。</block>
@@ -8884,7 +8862,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="31272abf1c9209ab4acd0bf10f129338" category="paragraph">ONTAP 9.16.1.</block>
   <block id="f869dc03b59b4f9d3c8c795771fbbe2b" category="inline-link">FAS70 和 FAS90</block>
   <block id="e1a213d0031a49d9c017602a71d510b0" category="paragraph">在替換開機媒體上還原加密。</block>
-  <block id="0d7c63328eb549c922addcf92c2017df" category="doc">開機媒體更換需求 - AFF A1K</block>
   <block id="03d5b4d9a583274fad1fce62333f9be7" category="inline-link-macro">檢閱開機媒體需求</block>
   <block id="7da2ad3a49ec26bdfe6f10369a633cc8" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="aabe0e8fbf047f86b63aab624a516987" category="inline-link-macro-rx"></block></block>
   <block id="1c44a2b837e3b2eb360a9835aa83dcf7" category="paragraph">若要更換開機媒體、您必須符合特定需求。</block>
@@ -8895,7 +8872,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="be5d3b55237388ed40cd1421e3630441" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
   <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
   <block id="2e24e2e746e68459a4ef5698bea65e61" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
-  <block id="5660b56c25825a9ea794de13bb60e4c6" category="doc">控制器更換需求 - AFF A1K</block>
   <block id="cc7b6ad2b5c5cf984ed2b31eb7cdec78" category="inline-link-macro">檢閱控制器更換需求</block>
   <block id="63d82565e7082940cd04e84427b25ae7" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="fda781847f9aa68393ef9eb97f6097de" category="inline-link-macro-rx"></block></block>
   <block id="ad2f6ac636537ead1316455f1fa934a0" category="paragraph">若要更換控制器模組、您必須符合特定需求。</block>
@@ -8962,7 +8938,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="04639049161c98433d708c0a6845499c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
   <block id="49b45e8248fd2d5ed919902809621c44" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="50c430fbfd37e7720d34aff806c960b8" category="inline-link-macro-rx"></block></block>
   <block id="b47ee6654722b2bed7a27aba5a38d41e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="24cfaad2045c82e6542685b8f9154291" category="inline-link-macro-rx"></block></block>
-  <block id="b851102d36222ece27890507e1841ecc" category="doc">控制器更換需求 - AFF A70 和 AFF A90</block>
   <block id="68e66200bb827544f2bc5f02c2c9a441" category="doc">完整更換控制器： AFF A70 和 AFF A90</block>
   <block id="5e1c3f88c24c4db392d7d1d519b28aa4" category="doc">關閉受損的控制器 - AFF A70 和 AFF A90</block>
   <block id="50a2e3714f0440fca3d96537b2113368" category="doc">還原並驗證系統組態 - AFF A70 和 AFF A90</block>
@@ -9023,8 +8998,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4a64f3d63fd0e8b93b80ef48b4698a9a" category="summary">您可以透過自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。</block>
   <block id="56e7f21b9427a2441a89613fe1fcc2ff" category="summary">您可以在更換開機媒體之前、先移除系統管理模組、找出故障的開機媒體。</block>
   <block id="69326c1cf7a079cc03d300fe203efde6" category="doc">更換開機媒體 - ASA A70 和 ASA A90</block>
-  <block id="740df8929ce5dd43cd4aae8d5504654d" category="doc">開機媒體更換需求 - ASA A70 和 ASA A90</block>
-  <block id="2cf315583a350744f9ff0bd28ec89aef" category="doc">開機媒體更換工作流程： ASA A70 和 ASA A90</block>
   <block id="d49388da53cc4a7219dcbdd63d45342a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="d54ef5e1f82ac3261c20b17cf3d0d453" category="inline-link-macro-rx"></block></block>
   <block id="e15dd4e77a0784cb0db73357420aff31" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="16af84fbab48141f269a09d09712af68" category="inline-link-macro-rx"></block></block>
   <block id="bbe9dab8dbb04372040fcb892979257c" category="paragraph">從 System Management 模組中移除故障開機媒體、然後安裝替換開機媒體。</block>
@@ -9034,12 +9007,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a79ec0bc86b66848b485542b40048cb6" category="paragraph">您需要完成受損控制器的關機。關閉或接管受損的控制器。</block>
   <block id="95d86a07e48032c658d9a13faedb46d6" category="doc">完成機箱更換： ASA A70 和 ASA A90</block>
   <block id="33af0abab8ca4fe70c730bb3d86abb73" category="doc">移動並更換硬體 - ASA A70 和 ASA A90</block>
-  <block id="03980c8a0e89406d8626708be0593619" category="doc">機箱更換需求 - ASA A70 和 ASA A90</block>
   <block id="13a9f3efccfcf5c719f702d9208343d3" category="doc">關閉控制器 - ASA A70 和 ASA A90</block>
   <block id="442aff9d882f282af3f3d4634f0b094f" category="doc">機箱更換工作流程： ASA A70 和 ASA A90</block>
-  <block id="8c82ee3a5a33a059aae4ab30bedbd5a5" category="doc">更換控制器模組硬體 - ASA A70 和 ASA A90</block>
-  <block id="f6c6b6a5348d487bef542c09ec0a4b75" category="doc">控制器更換需求 - ASA A70 和 ASA A90</block>
-  <block id="63c1e704a685a7abd832fefd52c52ac5" category="doc">完整系統還原： ASA A70 和 ASA A90</block>
   <block id="43df70609ea6def43d3a5dbd42ad0adc" category="doc">關閉受損控制器 - ASA A70 和 ASA A90</block>
   <block id="c419380631bdd15fdc50ecdb6cb5afa2" category="doc">還原並驗證系統組態 - ASA A70 和 ASA A90</block>
   <block id="9eae42d3fd37d848f1824e0e46fef5d9" category="doc">控制器更換工作流程： ASA A70 和 ASA A90</block>
@@ -9054,27 +9023,18 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2c5160f725c60b555d2128c4fa5c00ce" category="doc">新增 I/O 模組 - ASA A70 和 ASA A90</block>
   <block id="a89338ff9a5a6a13eb5230d280eef559" category="doc">新增與更換 I/O 模組總覽 - ASA A70 與 ASA A90</block>
   <block id="1b73422981d7bd7860216cffe4f27434" category="doc">更換 I/O 模組 - ASA A70 和 ASA A90</block>
-  <block id="cce6a120b979d484a6c17c49a5db377f" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 ASA A70 和 ASA A90 系統元件的特定程序。</block>
-  <block id="441be728228d904c637ab4e11fc40c45" category="paragraph">本節中的程序假設 ASA A70 和 ASA A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="cde82c9b04790b90c2679aca48bf0641" category="paragraph">對於 ASA A70 和 ASA A90 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="5f402dad935ff3ab451b558b0df9b4f3" category="paragraph">控制器由主機板、韌體和軟體組成。它控制儲存設備、 I/O 卡、並執行 ONTAP 作業系統軟體。</block>
   <block id="33a7e77eb8f382b670aecd2f25304362" category="doc">更換 NV 電池 - ASA A70 和 ASA A90</block>
   <block id="124b0b12b52d6ff2b5c211d8ab2b86c6" category="doc">更換 NVRAM - ASA A70 和 ASA A90</block>
   <block id="778b3919afeff8e8a35cc6a213bb7784" category="doc">更換電源供應器 - ASA A70 和 ASA A90</block>
   <block id="591fbd5c7a0e4469981c4bc0919fffdb" category="doc">更換即時時鐘電池 - ASA A70 和 ASA A90</block>
-  <block id="ab89852eb86e2c9aed275b5eab913eb1" category="doc">更換系統管理模組 - ASA A70 和 ASA A90</block>
   <block id="77dbbb0add58d8d5b96d74c1b27689bb" category="doc">將故障零件退回 NetApp - ASA A1K</block>
-  <block id="8e22ce60290e8b393a0781c3d78c5f34" category="doc">自動開機恢復 - ASA A1K</block>
   <block id="1c1be2f74300d879eb6d6d09021f9e6f" category="doc">更換開機媒體 - ASA A1K</block>
-  <block id="28c83315b64c52bba9c9e7929909e6d8" category="doc">開機媒體更換需求 - ASA A1K</block>
-  <block id="c940611fb67d6f64a97efd7fcbadb1aa" category="doc">開機媒體更換工作流程 - ASA A1K</block>
   <block id="ea317decaa01e895dc8b7b6c778d61c7" category="doc">關閉受損控制器 - ASA A1K</block>
-  <block id="4e06886a3a293250d69c4de44c399306" category="doc">更換控制器模組硬體 - ASA A1K</block>
   <block id="5a1386c52e6b08376e6eab809d47a5a0" category="doc">將控制器交回 ASA A1K</block>
-  <block id="f1f085ba751b2d8d5db1ad0c7ae5cc03" category="doc">控制器更換需求 - ASA A1K</block>
   <block id="55960eb9cf1af0070a8d87ac5ec35c50" category="doc">完整控制器更換 - ASA A1K</block>
   <block id="289510b9a5b70d78d5dde9549bcc6837" category="doc">還原並驗證系統組態 - ASA A1K</block>
-  <block id="bb324afe147f01d9741bad94e9f48fa5" category="doc">控制器更換工作流程 - ASA A1K</block>
   <block id="573cb7e20352c6ed49fece2c623ec50b" category="doc">更換 DIMM - ASA A1K</block>
   <block id="d874941f5988be4d767ed305d690f93e" category="doc">更換風扇 - ASA A1K</block>
   <block id="3f3cad89dab9930e656089557bd4ab26" category="doc">維護 ASA A1K 硬體</block>
@@ -9082,10 +9042,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="35e5b5e2a149cb42a11b58b5692c3bc7" category="doc">新增 I/O 模組 - ASA A1K</block>
   <block id="08bb3d4b58b6ff10f6ab9eb64b3fd22a" category="doc">新增與更換 I/O 模組總覽 - ASA A1K</block>
   <block id="9020be3fd186cc81e1afbf82ce5a906f" category="doc">更換 I/O 模組 - ASA A1K</block>
-  <block id="fdad8a98aa7c396c3422dec81f67cd98" category="summary">維護 ASA R2 A1K 硬體</block>
-  <block id="027f5c29477731f5534fdb86e5704506" category="paragraph">您可能需要在硬體上執行維護程序。本節說明維護 ASA A1K 系統元件的特定程序。</block>
-  <block id="2147c1a9bd7c91a4dedf7e98867ce532" category="paragraph">本節中的程序假設 A1K 系統已部署為 ONTAP 環境中的儲存節點。</block>
-  <block id="7b77f66a99c5493b836984570d410aba" category="doc">更換 NV 電池 - ASA A1K</block>
   <block id="d40d4bbeff22abe0ae50f578804e3f1d" category="doc">更換 NVRAM - ASA A1K</block>
   <block id="8280bf46cc1987c5763fa466b06ce943" category="doc">更換電源供應器 - ASA A1K</block>
   <block id="53211074b0edd2a1e49952ae0a99c70e" category="doc">更換即時時鐘電池 - ASA A1K</block>
@@ -9093,11 +9049,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e039aa1be61543fd84f1c4eb5d3e9f6b" category="section-title">ONTAP 硬體系統</block>
   <block id="65cc6c94582f61a33aa4704c52ac52c0" category="cell">機櫃模組</block>
   <block id="a50d5562329cec378062f8ecd6f08580" category="doc">將故障部件退回 NetApp - FAS70 和 FAS90</block>
-  <block id="70e171be442c06a383310683a983f973" category="doc">還原加密： FAS70 和 FAS90</block>
   <block id="0f8fed13fee9009a30d0eed748301401" category="doc">引導恢復映像（ FAS70 和 FAS90 ）</block>
   <block id="3b51f7db40d40ca8865f924da6fb8314" category="doc">更換開機媒體- FAS70和FAS90</block>
-  <block id="5f4c17fc9d1e72d3a0424f0072d6a11e" category="doc">開機媒體取代需求： FAS70 和 FAS90</block>
-  <block id="6c6ba57b9ecf74c6c3e647fe06a8cdec" category="doc">開機媒體更換工作流程： FAS70 和 FAS90</block>
   <block id="ecda8f0a8ab2239fa58008bc2a6778f3" category="inline-link-macro">檢閱開機媒體更換要求</block>
   <block id="1246a1947c9d78ac27a693476f2c4ef2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="49f63bb068bbde0e2924e3e81e942570" category="inline-link-macro-rx"></block></block>
   <block id="789b5a8a8cbbdce99d0cd8864ee0122a" category="doc">關閉受損的控制器- FAS70和FAS90</block>
@@ -9121,12 +9074,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6bc5838b4111c8e8e34c5a24a2c44cb0" category="paragraph">快取模組故障 LED</block>
   <block id="9afed1489f4d1563ca216b11c1352728" category="list-text">轉動凸輪把手至最遠的位置。</block>
   <block id="8de7e250263d4ca2d8dc62ef2ed1f825" category="list-text">將快取模組的邊緣與控制器模組的開口對齊。</block>
-  <block id="15add6e162f9346663b8cfaeb8d3f8c7" category="doc">更換控制器模組： FAS70 和 FAS90</block>
   <block id="550ddae6f9579850ff21dd2afce3b69f" category="doc">退回控制器： FAS70 和 FAS90</block>
-  <block id="80f07ddf78cb802c13652dcdc6c599e5" category="doc">控制器更換要求： FAS70 和 FAS90</block>
   <block id="f8d51288fb4ee263d7c5f31e51171750" category="doc">完整更換控制器： FAS70 和 FAS90</block>
   <block id="d983ccd4d97ffd0fa5b933bbaab409e4" category="doc">還原並驗證系統組態- FAS70和FAS90</block>
-  <block id="04282533026fa8b748313a7d787b47cf" category="doc">控制器更換工作流程： FAS70 和 FAS90</block>
   <block id="a700e9422898949d6ff77959a854a7a9" category="doc">更換DIMM - FAS70和FAS90</block>
   <block id="5dc26d52c4b6e5cf5bcb2431d330c71a" category="doc">更換風扇： FAS70 和 FAS90</block>
   <block id="66fcecbe990925a3be0fa5916450b2cb" category="summary">維護 FAS70 和 FAS90 硬體</block>
@@ -9190,10 +9140,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="be14e637d91ce3936aa6ff689b8a329b" category="doc">新增 I/O 模組： FAS70 和 FAS90</block>
   <block id="084b1e640bb60c632f3727967b6b5ead" category="doc">新增與更換 I/O 模組的總覽： FAS70 與 FAS90</block>
   <block id="6177b8fb5c4b14da752dc936dbe29ae8" category="doc">更換 I/O 模組： FAS70 和 FAS90</block>
-  <block id="2b104c49f9b8bb92d09875a956d19795" category="paragraph">您可能需要在硬體上執行維護程序。本節將介紹維護 FAS70 和 FAS90 系統元件的特定程序。</block>
-  <block id="2b90a1267a3b7e2b64a23c5c62d7f171" category="paragraph">本節中的程序假設 FAS70 和 FAS90 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。</block>
-  <block id="f15dd37cefd717a7d017e45fe876146c" category="doc">更換 NV 電池： FAS70 和 FAS90</block>
   <block id="c4ed6403201dfa217ff707bb31f7629c" category="doc">更換 NVRAM ： FAS70 和 FAS90</block>
   <block id="031f9f009940597777a75796e5b17818" category="doc">更換電源供應器- FAS70和FAS90</block>
   <block id="6edcaa0f49095aafb0fa011d3fa4d4c5" category="doc">更換即時時鐘電池- FAS70和FAS90</block>
@@ -9383,10 +9330,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2fab3e35d3a8ad1baf526d01c455141e" category="list-text">在健全的合作夥伴控制器上、執行還原備份命令：<block ref="44d388b27236c791c5fe1d30cc29bc43" prefix=" " category="inline-code"></block>。</block>
   <block id="935c7e481b111b33ff3723afb9a7f2c4" category="paragraph">您必須拔下控制器模組、從系統背面移除系統管理模組、移除受損的開機媒體、然後在系統管理模組中安裝替換的開機媒體。</block>
   <block id="b393e0589b34195adda4ab7dea81ba99" category="paragraph">您安裝的替換開機媒體沒有 ONTAP 映像。您可以將 ONTAP 映像從下載適當的 ONTAP 服務映像到 USB 快閃磁碟機、然後再將其傳輸到替換的開機媒體<block ref="0ecdd602ef5a1e7a11a81dad2433ccb0" category="inline-link-rx"></block>。</block>
-  <block id="80ee5549561d54c85e0dac19602c17db" category="list-text">您必須使用收到 NetApp 的替換 FRU 元件來更換故障元件。</block>
   <block id="5bfc9396e31ecaf44561c35f76ab21a6" category="list-text">您必須已確認 MetroCluster 組態狀態已設定、且節點處於啟用和正常狀態<block ref="4d06f3844212ac745a73965bbb3f6e51" prefix="(" category="inline-code"></block>）。</block>
   <block id="b53660f761dc53e7b68aefd5edbbae44" category="paragraph">前往下一節。</block>
-  <block id="ef265e1108b8991c7b12209078d6123e" category="paragraph">關閉受損控制器之前、請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）、以及您的金鑰管理系統是否已正確設定。</block>
   <block id="fdb2cbe8b1e451ff001e9714b834c459" category="paragraph">檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）。此資訊對於下載正確的 ONTAP 映像至關重要。</block>
   <block id="1c09443221312bdba5a22ddbba4f768f" category="list-text">執行下列命令、判斷您的 ONTAP 版本是否支援加密：</block>
   <block id="f9a9052b778475b675b5a664c20b88b5" category="paragraph"><block ref="86722c94aea996cb23c11ba144dd63ed" prefix="" category="inline-code"></block></block>
@@ -9428,14 +9373,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3554bd6dca965e0e8bcb314a54ef655c" category="list-text">輸入Onboard Key Manager的全叢集密碼。</block>
   <block id="68e51e7cb5faf4732838f76bc7db6b45" category="admonition">如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。</block>
   <block id="5eadc2e25337518dc852a80577d9cf1e" category="doc">檢查加密金鑰支援與狀態 - AFF A150</block>
-  <block id="0dc57322765c9d58ce88190f1690fcde" category="doc">檢查加密金鑰支援與狀態 - AFF A1K</block>
   <block id="8bc64411ac44956417615b1424961016" category="paragraph">在節點上還原加密。</block>
   <block id="ec4046fa1f35acf824d6ff67e5411153" category="paragraph">檢閱更換開機媒體的需求。</block>
   <block id="fed39074bcb7385644a9af66c04b6b56" category="inline-link-macro">檢查加密金鑰支援和狀態</block>
   <block id="d8549f231f330e53d19f22294c4a552a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="fbe5cfbeb25b00ec0a44d74f3b70c580" category="inline-link-macro-rx"></block></block>
   <block id="719449b508b383c2039548e989d50ed7" category="paragraph">關閉或接管功能受損的控制器、使狀況良好的控制器繼續從功能受損的控制器儲存設備提供資料。</block>
   <block id="4e165771f15c6560989e37c20b2f3910" category="paragraph">從系統管理模組移除故障開機媒體、然後安裝替換開機媒體、然後使用 USB 快閃磁碟機傳輸 ONTAP 映像。</block>
-  <block id="2401b0f9450a54a05ecfd322ef3f3df5" category="paragraph">使用適合您組態的適當程序來關閉受損的控制器。</block>
   <block id="873f086f28dc246032bb35219d36ee95" category="doc">檢查加密金鑰支援與狀態 - AFF A200</block>
   <block id="3cd70cdc891507d5b1a01cf7e98502c0" category="doc">檢查加密金鑰支援與狀態 - AFF A220</block>
   <block id="7badbc31c963d7cb1ebf20e6b66869e4" category="paragraph"><block ref="7badbc31c963d7cb1ebf20e6b66869e4" category="inline-image-macro-rx" type="image"></block></block>
@@ -9598,7 +9541,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c193dadfbf15d42f5494a4bbbc76356d" category="doc">還原加密 - AFF C400</block>
   <block id="72a12cc831feb59de9ead4ebd134011d" category="doc">檢查加密金鑰支援與狀態 - AFF C800</block>
   <block id="087db3b88ab1127d927c06f47dd3bd04" category="doc">還原加密 - AFF C800</block>
-  <block id="88c689cc37cba41450ae79f21e6beabf" category="doc">檢查加密金鑰支援與狀態： FAS70 和 FAS90</block>
   <block id="a29212026f644e3af5d7d35e4872e64e" category="doc">檢查加密金鑰支援與狀態 - FAS2600</block>
   <block id="f69fe3fd7c25297cb61a32bc5fc76020" category="doc">還原加密： FAS2600</block>
   <block id="5d4211964469579f1f45285fc12474dd" category="doc">檢查加密金鑰支援與狀態： AFF A220 和 FAS2700</block>
@@ -9631,7 +9573,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7ca88951bb06ba87dc8ba0b64e33c507" category="list-text">使用命令設定 GMT 的目前時間<block ref="0ad4ade5bf715a5335525c69a44424c1" prefix=" " category="inline-code"></block>。您可以從合作夥伴節點取得目前的 GMT 、命令為 'date -u'command.</block>
   <block id="cdce55e02d4cb663168a3f407165ecce" category="list-text">如果 NV LED 熄滅、請前往下一步。</block>
   <block id="3e206922895508e63afff7ed9697807f" category="list-text">如果 NV LED 閃爍、請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。</block>
-  <block id="89991a1093220d292cce49271c032d59" category="paragraph">驗證儲存設備和網路連線、然後將控制器送回。</block>
   <block id="224597833baafb79ff1d8b9ef9e0bff7" category="paragraph">如果已啟用、請重設加密、並將控制器恢復正常運作。</block>
   <block id="151adffc209b320ba53a9853aae1eabe" category="open-title">無加密</block>
   <block id="a2f6973fda0857d7d2ce0472981331ed" category="list-text">在 Loader 提示符下，輸入<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block>。</block>
@@ -9654,7 +9595,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3343b0de1fa8c9b6897b7f74eb649269" category="admonition">系統會提示您輸入叢集範圍的 OKM 複雜密碼。</block>
   <block id="37a4b550d08e47128eb0f17557e6b8a7" category="list-text">使用以下命令檢查密鑰的狀態：<block ref="8d87a410a64e11591a338ede7162a6d2" prefix=" " category="inline-code"></block>。</block>
   <block id="724ae3f78a19c2844ef99b4ec6cb1a27" category="paragraph">如果 _RESTOREURE_ 欄顯示 _true_ 以外的任何內容、請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
-  <block id="5b07da2161bbe720a0c37a6bd9c9f55e" category="open-title">外部金鑰管理程式（ EKM ）</block>
   <block id="f2e0af4da309c40953b6db2b96031d2c" category="list-text">如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入<block ref="d20d8416248acf69156e4b7875cc4868" prefix=" " category="inline-code"></block>並選擇選項<block ref="6512bd43d9caa6e02c990b0a82652dca" prefix=" " category="inline-code"></block>。</block>
   <block id="630f2e078780863e8f4033f8334da91c" category="list-text">回答或<block ref="7b8b965ad4bca0e41ab51de7b31363a1" prefix=" " category="inline-code"></block>回答<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>下列問題：</block>
   <block id="b19458ff12859c393f2fd46d02cb24d4" category="paragraph">您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝</block>
@@ -9706,7 +9646,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b1b14a007e6d27cacb6cbf9837dd5e7e" category="doc">將控制器交回 AFF A70 和 AFF A90</block>
   <block id="4443f66d8d4febc600e0d4d0b3b0db91" category="doc">將控制器交回 ASA A70 和 ASA A90</block>
   <block id="425248bc914ee69e002743b7cff8fb0a" category="doc">更換系統管理模組 - ASA A1K</block>
-  <block id="fd61dac268d25ee83789df624f74cdee" category="summary">您必須更換系統管理模組。</block>
   <block id="fc633a3acea06ec7b13b95943af5a8f1" category="doc">更換系統管理模組： FAS70 和 FAS90</block>
   <block id="3af65f186d9005b4ac041f824d01a2a6" category="doc">將故障零件退回 NetApp - FAS2820</block>
   <block id="c6850888623b4b33ceba4c1bd9322642" category="doc">檢查加密金鑰支援與狀態 - FAS2820</block>
@@ -10503,7 +10442,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="48bcab49f13e58a7dda016546607124d" category="doc">更換控制器 - AFF C30 和 AFF C60</block>
   <block id="27a8d5c594dd7466b19bfce476d8655f" category="doc">可回收並退回控制器 - AFF C30 和 AFF C60</block>
   <block id="985e3f4c0c5e5154a781b3845a345cdf" category="doc">完整更換控制器： AFF C30 和 AFF C60</block>
-  <block id="0c0916c6bdd083e7557e4e90bb5e2025" category="paragraph">若要將儲存系統還原為完整作業，您必須驗證生命，檢查叢集健全狀況，並將故障零件歸還 NetApp 。</block>
   <block id="7198cc5bade7b4a7512214ef6d139fb9" category="doc">關閉受損的控制器 - AFF C30 和 AFF C60</block>
   <block id="1bd446701023b8913ca9b526c3e92f2e" category="doc">還原並驗證系統組態 - AFF C30 和 AFF C60</block>
   <block id="dffc469bd601fde82121083a3480be81" category="doc">控制器更換工作流程： AFF C30 和 AFF C60</block>
@@ -10536,19 +10474,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e9e1d4fa0117eb2eeb86c45ee2c4f0ea" category="doc">更換電源供應器 - AFF C30 和 AFF C60</block>
   <block id="4b0deead0bde3463d57166ad7f274733" category="doc">更換即時時鐘電池 - AFF C30 和 AFF C60</block>
   <block id="4a1bc4a4142dd79ce30c5589f193f6db" category="doc">將故障零件退回 NetApp - AFF C80</block>
-  <block id="edd56e332734eaba427ca0cce098aad0" category="doc">檢查加密金鑰支援與狀態 - AFF C80</block>
-  <block id="5c548b2d6ca8a7428b56ff3689ea220d" category="doc">還原加密 - AFF C80</block>
   <block id="5aa86f6ad99e80b0c832d82d8e8382ca" category="doc">開機恢復映像 - AFF C80</block>
   <block id="90a513766fed06a1c7ddad5bc9b658b0" category="doc">更換開機媒體 - AFF C80</block>
-  <block id="67d1de6ed4a9952b527f92c6619491fc" category="doc">開機媒體更換需求 - AFF C80</block>
-  <block id="ec8e3b5af2c84011f5d342df480c1fef" category="doc">關閉受損的控制器 - AFF C80</block>
   <block id="157ac321bdd43ec0c575181166c8b935" category="doc">完整機箱更換 - AFF C80</block>
   <block id="f7366f893dcc8238229a1e5377b17a3b" category="doc">更換機箱 - AFF C80</block>
-  <block id="a3ccff921bca86a1914b80a3c240608e" category="doc">機箱更換需求 - AFF C80</block>
   <block id="2b0003810533ca47cd6e4c3b3021fc1f" category="doc">關閉控制器 - AFF C80</block>
-  <block id="a2a352ccea6a709882b0380261a3e7c2" category="doc">更換控制器模組 - AFF C80</block>
   <block id="ab855d4ae0d2ee27daa0f6dffb2837b4" category="doc">可回收並退回控制器 - AFF C80</block>
-  <block id="99828fff33e2babe0a1360dc48065684" category="doc">控制器更換需求 - AFF C80</block>
   <block id="8def3d76b77de6e3dbb32ae5e959e725" category="doc">完整控制器更換 - AFF C80</block>
   <block id="2fff840bbe3ee1ad4cc2f3efd810b44b" category="doc">關閉受損控制器 - AFF C80</block>
   <block id="5c26fa22febe5fde9e598be8ee312d12" category="doc">還原並驗證系統組態 - AFF C80</block>
@@ -10961,7 +10892,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="79de133f35ffda00b1cc87bd3df0f0a1" category="list-text">標記與儲存系統相關的所有纜線。這有助於在本程序稍後重新啟用。</block>
   <block id="61f54831afd31c3c4bb5fa569858091d" category="list-text">標示控制器模組。</block>
   <block id="02a322185bda81e4fb6f85f159dc2ba9" category="list-text">如果您尚未正確接地，請將自己接地。</block>
-  <block id="1bba716aed05b4a9e7fb6d3bf06774a4" category="list-text">請確定系統中的所有其他元件都正常運作；如果沒有，請聯絡<block ref="1850de052c61829b534b07ba1a2ca402" category="inline-link-rx"></block>以尋求協助。</block>
   <block id="ca5d1f6a9f282b2406a564dd3a9481d0" category="list-text">如果您沒有 ONTAP 的本機系統管理員認證，請取得這些認證。</block>
   <block id="c2cb7195ee129e2594a56587113c65bc" category="list-text">請確定您擁有必要的工具和設備以進行更換。</block>
   <block id="8d2fe72884758f3d1fef45998d91a468" category="inline-link">正常關機並開機儲存系統解決方案指南 - NetApp 知識庫</block>
@@ -10989,10 +10919,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8814a36d70b251b1442c439b51299ee4" category="paragraph">更換損壞的 AFF A70 或 AFF A90 機箱並將元件重新安裝到其中之後<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="fb34a84a11047c5449582cfc3e832942" category="inline-link-macro">關閉控制器</block>
   <block id="d3a08051606463fa6af8ba4af97a9c04" category="paragraph">準備好更換 AFF A70 或 AFF A90 機箱硬體之後，您需要<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>。</block>
-  <block id="11e980ab44ebd379750fafda5a247d2c" category="paragraph">檢閱更換受損機箱的要求。</block>
   <block id="026fb5a788ed1dd66790400c2f4099e7" category="inline-link-macro">準備更換機箱</block>
   <block id="e228ff2a660e4cebe2066a5840c3b300" category="paragraph">檢閱機箱更換需求之後<block ref="af017f73f8b24b023ee615b1ec4887a6" category="inline-link-macro-rx"></block>，您需要。</block>
-  <block id="8c8e8261718e28e5cfc48151f5e75ac4" category="paragraph">您必須先關閉受損機箱中的控制器，才能將其移除。</block>
   <block id="8f5a50ad9bf783f785b5b596a25d5896" category="inline-link-macro">更換機箱</block>
   <block id="926211b8c90e6b361336abd4a1e465bd" category="paragraph">控制器關機後，您需要<block ref="36e3e0df655e652fc33a5dfc009000ae" category="inline-link-macro-rx"></block>執行。</block>
   <block id="2d5363bbdbfe18ac43fbd33d126fa9db" category="paragraph">檢閱機箱更換需求。</block>
@@ -11017,7 +10945,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">準備更換</block>
-  <block id="77f6d66d9d165cf71493f896e9fc7ed7" category="paragraph">從系統背面卸下系統管理模組，移除受損的開機媒體，在系統管理模組中安裝替換開機媒體，然後重新安裝系統管理模組，以更換開機媒體。</block>
   <block id="19d944a3a323213d80bcdd66ecd5c26f" category="list-text">判斷內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是使用下列其中一種方法來設定：</block>
   <block id="b3387f173ebbff42e3160605c9db518a" category="list-text">如果 OKM 或 EKM 已啟用，您可以詢問客戶或系統管理員。</block>
   <block id="5dc17ba8443f8aafae4ca9de8cf9545b" category="list-text">若要檢查 OKM 是否已啟用，您可以使用<block ref="3c690d79c23fa8c25994507c25377567" prefix=" " category="inline-code"></block>。</block>
@@ -11094,19 +11021,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f6482a2d2722297ff58ea916af2984cb" category="doc">開機媒體恢復總覽 - ASA A70 和 ASA A90</block>
   <block id="c987ba69ee60ff652b96f087d2e6ae84" category="paragraph">開機媒體恢復會使用來自合作夥伴節點的開機映像，並自動執行適當的開機功能表選項，以便在替換的開機媒體上安裝開機映像。</block>
   <block id="4c676d1a7c436f114a574bfe649622ee" category="paragraph">當您遇到類似於以下所示的開機錯誤訊息時，您需要更換開機媒體，並從合作夥伴節點還原 ONTAP 映像。</block>
-  <block id="f525eed3ae8e84be0d43c618f7f170bc" category="doc">還原 ONTAP 映像 - ASA A70 和 ASA A90</block>
-  <block id="b237862491f8ea6679a4cdd100ebfdfb" category="paragraph">實體更換受損的開機媒體之後，請從合作夥伴節點還原 ONTAP 映像。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步</block>
   <block id="f88cdb2cd014d9929aa478cc85d4b492" category="inline-link-macro">將故障零件退回 NetApp</block>
   <block id="7853c5276d1f54917577b980848960c3" category="paragraph">還原 ONTAP 映像並啟動節點並提供資料之後<block ref="977d546e7889319c9a653d351be92c2b" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="bd2422b6c8a3faf4b78e2b890528df95" category="inline-link-macro">從合作夥伴節點還原 ONTAP 映像</block>
   <block id="e625bf74197df22a6e3ea556bf8bd717" category="paragraph">在實際更換受損的開機媒體之後<block ref="dcb4deaaa5f388ac9dd740fbe37648be" category="inline-link-macro-rx"></block>，。</block>
   <block id="1517ca8b5771d8b16b9ea6a392d1c35c" category="inline-link-macro">關閉受損的控制器</block>
-  <block id="0855cbbfbd39228942736f1dd60ef241" category="paragraph">檢閱開機媒體需求之後<block ref="f6f6eaac8bd3f857cf89c647db55229b" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="5983f3a4eec630293636088c491a3fa1" category="paragraph">檢閱開機媒體更換需求。</block>
   <block id="5c66e0e2e15a67ec82f9f3d579e21b89" category="inline-link-macro">還原開機媒體上的映像</block>
   <block id="2adbaa1720c6c394fbe2503b6da6fdb7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="ffddb9c4b10a61c1cf9d29a315266845" category="inline-link-macro-rx"></block></block>
-  <block id="d1e3cab457c34f7a58e0bd674c7d2487" category="paragraph">關閉或接管功能受損的控制器，以便對開機媒體執行維護。</block>
   <block id="a9a4115c08aa47aeef8b44d2372274ad" category="inline-link-macro">更換開機媒體</block>
   <block id="aa8efed5979835fe328570ee208b1884" category="paragraph">當您關閉受損的控制器之後<block ref="52c48d39b9a1e431e1d04998ae5045f5" category="inline-link-macro-rx"></block>，您將會。</block>
   <block id="e0bfc72b163c6540df4eb3869f1393ff" category="paragraph"><block ref="e0bfc72b163c6540df4eb3869f1393ff" category="inline-link-macro-rx"></block></block>
@@ -11150,40 +11073,27 @@ SFP+ （目標 / 啟動器）</block>
   <block id="00298fcd1cdb59855d04153fb372d5b1" category="summary">在 AFF A70 或 AFF A90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。此程序包括驗證金鑰可用度，重新套用加密設定，確認資料的安全存取。</block>
   <block id="01dc782410b8bf757f56e6d2dd9ba8de" category="summary">首先，請準備更換媒體，在系統中安裝，還原開機映像，以及驗證系統功能，以更換 AFF A70 或 AFF A90 儲存系統中的開機媒體。</block>
   <block id="a39d40ffc6e883059dd303e4c5826bf2" category="doc">更換開機媒體的快速入門： AFF A70 和 AFF A90</block>
-  <block id="7254e311c159ba205a6bc5f38cfc3060" category="summary">AFF A70 或 AFF A90 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後更換系統管理模組中的開機媒體。</block>
   <block id="2de09d050e108c03bd290fc9b42a73f3" category="summary">當控制器受損時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
   <block id="14c9c3ca2e43bd07ece3df269a696d56" category="summary">準備更換 AFF A70 或 AFF A90 系統中受損的機箱，方法是識別受損的機箱，驗證更換元件，並標示纜線和控制器模組。</block>
-  <block id="f3265cef339dbf3c5e74c4290cc2674d" category="summary">更換 AFF A70 和 AFF A90 機箱包括關閉系統，移除和更換機箱，重新設定元件和驗證系統作業的步驟。</block>
   <block id="82d80770b27097a251d9548f43c9e382" category="doc">機箱更換快速入門： AFF A70 和 AFF A90</block>
   <block id="e39656e100387da3ec6b6a54806cef2f" category="paragraph">在更換 AFF A70 或 AFF A90 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
   <block id="a36efc11d87f3dc60d9f74397a3d68a6" category="paragraph">使用下列其中一個選項關閉控制器模組。</block>
   <block id="fc6315489b2675580df80b8ba798580a" category="summary">驗證控制器的 HA 組態是否在 AFF A70 或 AFF A90 儲存系統中作用正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
-  <block id="5804af3501a907b164a7eade0771c13a" category="summary">更換 AFF A70 和 AFF A90 控制器包括關閉控制器，移除和更換控制器，重新設定系統設定，以及驗證系統作業的步驟。</block>
   <block id="d2005409b1b3df2f36eafbd1c707b35a" category="doc">控制器更換快速入門： AFF A70 和 AFF A90</block>
   <block id="6f13230d5681e1c88b50f5ecbce62637" category="paragraph">使用下列選項之一關閉或接管受損的控制器模組。</block>
   <block id="9d942fe208df847ebbb52d3ac4973c12" category="summary">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 AFF A70 或 AFF A90 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
   <block id="870bcf4039fdcff653f180566b1ae65d" category="summary">維護 AFF A70 和 AFF A90 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
   <block id="af1dd5bed2e7f895621a59db47f7a163" category="paragraph">維護程序假設 AFF A70 和 AFF A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
-  <block id="d7cae672b9df48e3106485c6d34eeb2c" category="summary">如果 ASA A70 或 ASA A90 系統中的開機媒體毀損，您可以開機恢復映像，從合作夥伴節點還原組態，以及驗證環境變數。</block>
-  <block id="635808fcf7151910b4d230fdffc539b6" category="paragraph">如果 ASA A70 或 ASA A90 系統中的開機媒體毀損，您可以從合作夥伴節點開機恢復映像並還原組態。</block>
   <block id="06056d6fd7dddea48ba45b6addef7373" category="summary">重新啟動控制器，驗證系統健全狀況，並將故障零件退回 NetApp ，以完成 ASA A70 和 ASA A90 機箱更換工作流程中的最後步驟。</block>
-  <block id="0fcd5fb71e3025e1b617322bbdc4e07c" category="summary">當硬體故障或升級需要時，請更換 ASA A70 或 ASA A90 系統中的機箱。此程序包括關閉系統電源，移除現有機箱，安裝新機箱，以及重新設定元件，以確保系統正常運作。</block>
   <block id="34157b6b9a0050e9c335468f75f69762" category="paragraph">更換損壞的 ASA A70 或 ASA A90 機箱並將元件重新安裝到其中之後<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="c5a3b9039ee3d286f345090dc5bd7f24" category="summary">準備更換 ASA A70 或 ASA A90 系統中受損的機箱，方法是識別受損的機箱，驗證更換元件，並標示纜線和控制器模組。</block>
-  <block id="d26a010d0bb559be6b6dfc262441072e" category="summary">當硬體故障或升級需要時，請更換 ASA A70 或 ASA A90 系統中的控制器。此程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，以及重新啟動系統。</block>
   <block id="5cb5b467ffe15c96f5be4b190434f4d7" category="summary">確認控制器的 HA 組態在 ASA A70 或 ASA A90 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
-  <block id="252f4a6ddd646c9d3f4e51507f00bed1" category="summary">當偵測到過度可修正或不可修正的錯誤時，請更換 AFF C80 系統中的 DIMM 。這些問題通常是由單一 DIMM 故障所造成，可能會導致儲存系統無法開機 ONTAP 。</block>
   <block id="9b16f0deb40e2ccd298a84213dfcb3c1" category="summary">當磁碟機故障或需要升級時，請更換 ASA A70 或 ASA A90 系統中的磁碟機。此程序包括識別故障磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
-  <block id="ca1ea54698fb1b04e8a653c5e8a8cd1d" category="summary">當風扇故障或無法有效運作時，請更換 ASA A70 或 ASA A90 系統中的風扇模組，這可能會影響系統冷卻和整體效能。</block>
   <block id="8e10453b1538c94c1675905e948ad27f" category="doc">重新安裝控制器 - ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="77b6dee74a408b2a89351dd1b7874a9d" category="doc">卸下控制器 - ASA A20 ， ASA A30 和 ASA A50</block>
-  <block id="5ddec4b2381adfee74850662c85dc488" category="doc">開機媒體恢復總覽 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="5970537d01572b9f6e38a2ab25283e3b" category="doc">還原 ONTAP 映像 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="f619e6bd6beb4969e83c23f025e658e4" category="doc">要求： AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="2cef65195db4ebbdb50708cb050fe7e4" category="paragraph">檢閱開機媒體需求之後<block ref="f6f6eaac8bd3f857cf89c647db55229b" category="inline-link-macro-rx"></block>，。</block>
   <block id="1bd4517f6602bce986a904d28bd0d138" category="paragraph">從受損的控制器中取出故障開機媒體，然後安裝替換開機媒體。</block>
   <block id="52e36495272e13465007207307f8b233" category="paragraph">從健全的控制器還原 ONTAP 映像。</block>
-  <block id="5c7ef5b78e5792ada5db15743ced08f7" category="doc">關閉控制器 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="b8a92f73f87b92a5dfcbd6224f8a5764" category="paragraph">關閉受損的控制器後<block ref="52c48d39b9a1e431e1d04998ae5045f5" category="inline-link-macro-rx"></block>，。</block>
   <block id="8022fc0f0b4485cbb98cfd555c374305" category="doc">完整機箱更換： ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="317145ec6032de40e2246da65e85383f" category="doc">更換機箱 - ASA A20 ， ASA A30 和 ASA A50</block>
@@ -11220,33 +11130,20 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f317160d8dfd97d4cc4253d62b67f3b9" category="summary">為了確保 AFF C80 儲存系統的資料安全性，您需要驗證加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
   <block id="25eebb4423da182d5cedc15ce1414b2b" category="summary">在 AFF C80 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。此程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
   <block id="ce8241d4f4c26d9b9170ae31a1e03a0c" category="summary">如果 AFF C80 系統中的開機媒體毀損，您可以從 USB 磁碟機開機恢復映像，從合作夥伴節點還原組態，並驗證環境變數</block>
-  <block id="4cef7de61ebdce38512d3fc347d6e34c" category="paragraph">如果 AFF C80 系統中的開機媒體毀損，您可以從 USB 磁碟機開機恢復映像，從合作夥伴節點還原組態，並驗證環境變數。</block>
-  <block id="2c83fcaa28b35ed74a90cff7429c8965" category="summary">在更換 AFF C80 系統中的開機媒體之前，請先確定您擁有正確的更換開機裝置，存取系統韌體和 ONTAP 軟體，以及重要組態資料的備份。</block>
-  <block id="c537d320f31017756018bad768045a78" category="summary">開始更換 AFF C80 儲存系統中的開機媒體，方法是準備更換媒體，在系統中安裝，還原開機映像，以及驗證系統功能。</block>
   <block id="f1d2fc786cb6dcb7bce434481764f92a" category="doc">開機媒體更換快速入門 - AFF C80</block>
-  <block id="a606799c098e2a189dd98622a95abdc9" category="summary">AFF C80 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後更換系統管理模組中的開機媒體。</block>
   <block id="2877d102e5080eaaa899652c3db8831c" category="summary">當 AFF C80 儲存系統的控制器受損時，請將其關閉。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
-  <block id="2ed1c3dd70342df2a080582be1eb2a59" category="summary">重新啟動控制器，驗證系統健全狀況，並將故障零件退回 NetApp ，以完成 AFF C80 機箱更換工作流程的最後一步。</block>
-  <block id="4bfe5f3327600d10085e511cbed4a477" category="summary">當硬體故障或升級需要時，請更換 AFF C80 系統中的機箱。此程序包括關閉系統電源，移除現有機箱，安裝新機箱，以及重新設定元件，以確保系統正常運作。</block>
   <block id="25740b71029eb78f5ff691cc2dbe0a0f" category="summary">在更換 AFF C80 系統中的機箱之前，請先確認系統中的所有其他元件運作正常，並確定您擁有 ONTAP 的本機管理員認證，正確的更換機箱和必要的工具。</block>
   <block id="ac1e09807f7c4c02fb18d5fb00528f71" category="summary">當您需要更換機箱時，請關閉 AFF C80 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
-  <block id="a189d75b1b41e47a5b4ae492fff0148a" category="summary">更換 AFF C80 機箱包括關閉系統，移除和更換機箱，重新設定元件，以及驗證系統運作的步驟。</block>
   <block id="725b88ce594215c3b6e1c82f98f2840a" category="doc">機箱更換快速入門： AFF C80</block>
   <block id="f48200b4fe7f2f013c6d085467e08b85" category="summary">當硬體故障或需要升級時，請更換 AFF C80 系統中的控制器。此程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，以及重新啟動系統。</block>
   <block id="0dfddb9a8d92421aedc4b572cdcbfea9" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF C80 系統恢復正常運作。</block>
-  <block id="0fc0c177409db8c5e0223f6627351fcc" category="summary">在更換 AFF C80 系統中的機箱之前，請確保您符合成功更換的必要要求。其中包括正確的更換機箱，系統組態的備份，以及存取任何必要工具和韌體。</block>
-  <block id="c72353d21c07d0b1553f50afb35e85ea" category="summary">驗證邏輯介面是否正在回報其主連接埠，執行叢集健全狀況檢查，並將故障零件退回 NetApp ，以完成 AFF C80 控制器更換工作流程的最後步驟。</block>
   <block id="43d776718c1fd733b854e3b84bdffa63" category="summary">確認控制器的 HA 組態在 AFF C80 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
-  <block id="e2f6c633868b82ce0f0f7ff0a95e32a0" category="summary">更換 AFF C80 控制器包括關閉控制器，移除及更換控制器，重新設定系統設定，以及驗證系統運作的步驟。</block>
   <block id="1a082657102e0d46558fa1a8080aeff0" category="doc">控制器更換快速入門 - AFF C80</block>
   <block id="28494b8071c5db3970085154386f4a39" category="summary">當磁碟機故障或需要升級時，請更換 AFF C80 系統中的磁碟機。此程序包括識別故障磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
-  <block id="e64efa39f80ef2fdaed60b7a7d41e45b" category="summary">當風扇故障或無法有效運作時，請更換 AFF C80 系統中的風扇模組，這可能會影響系統冷卻和整體效能。</block>
   <block id="d00c6aa9f0c4ce10a1828603f11f3a21" category="paragraph">當 AFF C80 儲存系統有可用的空插槽，或是所有插槽都已滿時，您可以將 I/O 模組新增至該儲存系統。</block>
   <block id="cd8d2c9f06c5661e2266f9927427382e" category="summary">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 AFF C80 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
   <block id="d395647cfc21ff6edde6803e55dea637" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF C80 系統中的 I/O 模組。</block>
   <block id="c52f1e3ee9e9664930223aa9ebbd84dc" category="summary">維護 AFF C80 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
-  <block id="5f2717321f0f0bba8357248fa98a7330" category="doc">維護 AFF C80 儲存系統</block>
-  <block id="f2465de333e46411cd1a6fc3cb52f580" category="paragraph">維護程序假設 AFF C80 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="68cbf1b0b6ee68064dae0d1f74537f78" category="doc">不再支援硬體</block>
   <block id="a70eaca09b18d4d2941af3eb0f7325cd" category="paragraph-title"><block ref="a65152a941ce25485720d5bcfae86492" category="inline-image-macro-rx" type="image"></block>設定 ONTAP 叢集</block>
   <block id="6cc5c9e930ea3d3b8bff4367c60ceea4" category="section-title">2025 年 2 月</block>
@@ -11304,13 +11201,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5936be00e88eb782af00b7d10949837a" category="section-title">步驟3：更換DIMM</block>
   <block id="f93850287d87d3b25d1ae82f23739c89" category="paragraph">若要更換 DIMM ，請在控制器內找到 DIMM ，然後依照特定步驟順序進行。</block>
   <block id="b68e23ba744de81732ee8532ad0ffa65" category="paragraph">NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。</block>
-  <block id="92eb8adda50290707f24c0186757e6b6" category="list-text">請確定您有可用的替換零件。您必須以從供應商處收到的替換元件來取代故障元件。</block>
   <block id="eddcdc7ef0c41a163b1aa75c692e684c" category="list-text">確保儲存系統中的所有其他元件正常運作；如果沒有，請聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
-  <block id="6308cea3813d33c5bf2949b30d1a8f10" category="section-title">步驟 3 ：更換 NVRAM DIMM</block>
   <block id="0e22dd23e6324e2e936de48ef986b220" category="paragraph">若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。</block>
   <block id="76341fe070bb8baf145cd67f5221a7ed" category="list-text">瞭解您可以將此程序用於系統支援的所有 ONTAP 版本。</block>
   <block id="4564e5afb25f1ffe83d0d3ac84e6cb52" category="paragraph">系統管理模組位於插槽 8 中控制器背面、包含用於系統管理的內建元件、以及用於外部管理的連接埠。目標控制器必須關閉，才能更換損壞的系統管理模組或更換開機媒體。</block>
-  <block id="09251107807a8863c162ef0d13b4ddbb" category="list-text">確定所有其他系統元件都必須正常運作。</block>
   <block id="8715aa093d3bd0ff3589f26f08de5eda" category="list-text">確保合作夥伴控制器能夠接管受損的控制器。</block>
   <block id="bf5a59710d5b5e8b78221799e840dc18" category="paragraph"><block ref="d21ecc516ee16c13faec7e470282a04d" prefix="" category="inline-code"></block></block>
   <block id="6e724374a7f94186bf150ad3f2518ad5" category="paragraph">如果在新節點上執行的 ONTAP 版本與原始節點上的版本不同，您必須將正確的 &lt;xxx_image.tgz&gt; 檔案從 NetApp 支援網站下載至 Web 可存取的目錄（請參閱步驟 4 ）。您需要 &lt;xxx_image.tgz&gt; 檔案來執行系統的網路開機。</block>
@@ -11326,10 +11220,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2c41be3742dfd04cb3e35161b5aa8cae" category="doc">在開機媒體上還原加密： AFF A70 和 AFF A90</block>
   <block id="159bd84020d09d0cb2a2382b469de5c4" category="paragraph">在 AFF A70 或 AFF A90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
   <block id="e2e2ae565aa28a204ee6037dec714ccc" category="paragraph">在開機媒體上還原加密後<block ref="e2df5d85d0d0d8d0a3a4f7656136cebe" category="inline-link-macro-rx"></block>，您需要。</block>
-  <block id="6740691430de88734e113f13d35b6983" category="summary">如果 AFF A70 或 AFF A90 系統中的開機媒體毀損，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
   <block id="fb8d280a656e08faa8b364869411286a" category="inline-link-macro">在開機媒體上還原加密</block>
   <block id="06083a1993c377623f1b9c8a4bde3ebf" category="paragraph">引導恢復映像後，您需要<block ref="be52ba9563c0eafd16e999b38353737d" category="inline-link-macro-rx"></block>。</block>
-  <block id="384217cdec726ee67935297452978e96" category="summary">在更換 AFF A70 或 AFF A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確認您擁有正確的更換開機裝置，存取系統韌體和 ONTAP 軟體，以及備份重要組態資料。</block>
   <block id="408b3fac19f2a23f482ae7a33b300763" category="doc">更換開機媒體的需求 - AFF A70 和 AFF A90</block>
   <block id="4cc46eaff736b1c1b4344f760a3812e9" category="inline-link-macro">檢查開機媒體上的加密金鑰支援和狀態</block>
   <block id="91afb4a99422cbf0cbccd15e6a2e2602" category="paragraph">在您檢閱了更換開機媒體的需求之後<block ref="91feb26699cc8675dce29ac358c94764" category="inline-link-macro-rx"></block>，您需要執行。</block>
@@ -11348,11 +11240,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="586bc4cfcaeebf3b002827cd918b9ff1" category="summary">需要更換機箱時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。請務必安全關閉控制器，以防止資料遺失，並確保系統穩定性。</block>
   <block id="cfdba73c7c3c1aef6d411979e7eb0c2c" category="paragraph">需要更換機箱時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器。請務必安全關閉控制器，以防止資料遺失，並確保系統穩定。</block>
   <block id="a1de9509c1cc526ff2685cc16f15c3c0" category="paragraph">關閉控制器之後，您需要執行<block ref="36e3e0df655e652fc33a5dfc009000ae" category="inline-link-macro-rx"></block>。</block>
-  <block id="11e8ff844165c77d350f816362d0ed0a" category="summary">如果需要硬體故障，請更換 AFF A70 或 AFF A90 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
   <block id="045e51ef9fd14e92bed7263f56f60f6a" category="doc">更換控制器 - AFF A70 和 AFF A90</block>
   <block id="7802e205f19ce9b3c1e4b5875798ebef" category="inline-link-macro">還原系統組態</block>
   <block id="44505b1d85314cbb257a6a2a6bf388ab" category="paragraph">更換損壞的 AFF A70 或 AFF A90 控制器之後，您需要<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
-  <block id="dfa5103eb07abaac2f8b16bd48e7b453" category="summary">重新將儲存資源的控制權交給更換的控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。</block>
   <block id="13b0f53aec80ac13170530410c42bc46" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
   <block id="a61002aab76d792f612bedb7d53fdd4f" category="inline-link-macro">完成控制器更換</block>
   <block id="8e4a77cdcca9305c0b2b2aaff9ccf95f" category="paragraph">將儲存資源的擁有權移回更換控制器後，您需要<block ref="d6f5f08e0612b966d919b4ea0b494c53" category="inline-link-macro-rx"></block>進行程序。</block>
@@ -11362,7 +11252,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f7cca63a8d34c4b92e6c512ace430431" category="paragraph">關閉控制器之後，您需要執行<block ref="4c59920dffd5894cdc2dc27ddd7fff07" category="inline-link-macro-rx"></block>。</block>
   <block id="67deb70786a6ab0a5fe6d757258a376d" category="inline-link-macro">將控制器交回</block>
   <block id="144ef5a8d530c9af9dd9a75ed85bd1a6" category="paragraph">在您還原並驗證 AFF A70 或 AFF A90 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您必須執行。</block>
-  <block id="49e12ef90b1faa3a315b169542c713b2" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF A70 或 AFF A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，然後重新安裝控制器。</block>
   <block id="c6fb1a92a42d034793f0283170857e55" category="doc">將 DIMM 更換為可修正或無法修正的錯誤 - AFF A70 和 AFF A90</block>
   <block id="c5f515f28cb6c1d3c02533b311fba3d8" category="summary">當磁碟機故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的磁碟機。更換程序包括識別故障的磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
   <block id="000b9b29f1c096063607d874c93f0b4d" category="doc">更換 SSD 磁碟機： AFF A70 和 AFF A90</block>
@@ -11384,11 +11273,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1f2cf1bdc028f501e0052daef27a058a" category="paragraph">當 AFF A70 或 AFF A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
   <block id="cf20ef6c3ad56f51916c660c155d776b" category="summary">NVRAM 模組包含 NVRAM10 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。</block>
   <block id="939d9449c6d0732b22e0493b628bb896" category="summary">NVRAM 模組包含 NVRAM11 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。</block>
-  <block id="7edf1f3179339021f055ec2c0cfb3e9d" category="summary">NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD 快取磁碟機。快取模組可以熱交換，但 Flash Cache 模組承載器不是可熱交換的。</block>
   <block id="f216f5272a9bf39ccecae542b80d4bba" category="doc">更換 Flash Cache 模組載體或快取模組： FAS70 和 FAS90</block>
-  <block id="bec3c3d322e61cf4fb9d371c2b8a1230" category="paragraph">NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組均整合一個 SSD Flash Cache 磁碟機。</block>
   <block id="d4f47b7acbf893a3c4734bad5b0d3873" category="paragraph">FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 Flash Cache 模組載體中混用容量不同的快取模組。</block>
-  <block id="c2a4b5850ddc08ee8695cc3a7d6d8f60" category="paragraph">根據需要更換的項目，您可以執行下列任一程序：整個 Flash Cache 模組載體或快取模組。</block>
   <block id="025075570cd9bb7535ad91ed4d464db6" category="list-text"><block ref="75c6ecfae5c2dff701c1623adc220334" category="inline-xref-macro-rx"></block></block>
   <block id="232f8c06b8825cdb1e6d094998bdf9bc" category="section-title">更換 Flash Cache 模組承載器</block>
   <block id="74c94db80b288242c7f6674930d713e7" category="paragraph">Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cache 模組。您無法熱交換 Flash Cache 模組承載器</block>
@@ -11427,4 +11313,286 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1c0fa23373954917c0b08b188941f3c3" category="sidebar">全新的 NetApp ASA R2 系統（ ASA A1K ， ASA A70 ， ASA A90 ， ASA A20 ， ASA A30 和 ASA A50 ）提供統一化的硬體與軟體解決方案，可針對僅限 SAN 的客戶需求，提供簡化的體驗。</block>
   <block id="34d5f1e610f6b8eaf1a7180026def343" category="sidebar">關閉控制器</block>
   <block id="43229c521bba188c3491ed72abe03043" category="sidebar">Flash Cache 模組</block>
+  <block id="fbdb1aac25f859d1e2c65c0e025f6297" category="list-text">您必須以收到 NetApp 的替換元件來更換故障的元件。</block>
+  <block id="6640795ffbdb7f7a3d23500204587fa2" category="paragraph">檢閱要求。</block>
+  <block id="ce85baae3e2c5d31340232daa7068163" category="list-text">您必須使用從 NetApp 收到的替換元件來更換故障的元件。</block>
+  <block id="9b6e5b2629086f006b250ddc01abde9f" category="paragraph">檢閱更換控制器的需求。</block>
+  <block id="c2c3227caa7cff27407cf7d411f7dee5" category="list-text">請確定您有可用的替換零件。您必須使用從 NetApp 收到的替換元件來更換故障的元件。</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="inline-link">NetApp支援</block>
+  <block id="1f1e06b57981303b350019c5f65878c7" category="list-text">確保儲存系統中的所有其他元件正常運作；如果沒有，請聯絡<block ref="f6cbdab4a318778429fff04ee553af84" category="inline-link-rx"></block>。</block>
+  <block id="7d4bc7309009c6f4ea61ac6ee1521abe" category="section-title">步驟 3 ：更換 NVRAM DIMM</block>
+  <block id="717777b8148d1d54681ae9c4a062e8e3" category="list-text">確保系統中的所有其他元件正常運作；否則，您必須聯絡<block ref="f6cbdab4a318778429fff04ee553af84" category="inline-link-rx"></block>。</block>
+  <block id="dcf85cc29c6f972a28cc6d3ed9370c37" category="paragraph">若要更換系統管理模組或開機媒體，您必須關閉受損的控制器。</block>
+  <block id="3b0feb5303f3eeec93eba65f8eb967ae" category="list-text">確定所有其他系統元件都正常運作。</block>
+  <block id="d5607198701fa39cc481498d62a52e7b" category="list-text">請確定系統中的所有其他元件都正常運作；如果沒有，請聯絡<block ref="468ae937a554dfd3baf209aa53f9f7a6" category="inline-link-rx"></block>以尋求協助。</block>
+  <block id="1b55fb3af000d448310e77a6de6c5161" category="paragraph">NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。</block>
+  <block id="566c293315d81d047304e5fade9a967d" category="list-text">若要檢查 OKM 是否已啟用，請使用下列命令：</block>
+  <block id="248c44cfee0de883f1e8e602cd90cfbb" category="paragraph"><block ref="3c690d79c23fa8c25994507c25377567" prefix="" category="inline-code"></block></block>
+  <block id="a0e65297bb80c27972e34aa4810ab81b" category="list-text">若要檢查 EKM 是否已啟用，請使用下列命令：</block>
+  <block id="49bfbad696a2529ef03d859ad9b3f40a" category="paragraph"><block ref="001642cb897a8bebce3210207b7e81af" prefix="" category="inline-code"></block></block>
+  <block id="c174421f5b8f9ca697d7784c901fd0e7" category="paragraph">為了確保儲存系統上的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="6e9d75b7e6d83f0d47bf1ca8b289ab30" category="summary">如果 AFF A1K 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
+  <block id="e7202980adb67469897852b1c95d1aa0" category="summary">為了確保 AFF A1K 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption ，並在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="b1238f7893e2ea6fc6c3b9e5ffcbbdda" category="doc">檢查開機媒體上的加密金鑰支援和狀態 - AFF A1K</block>
+  <block id="bedea27f08a6749d8ad0b70488331b3d" category="paragraph">為了確保 AFF A1K 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="5be09d010a2851be6a89ba23be08b5ec" category="summary">在 AFF A1K 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
+  <block id="eef73853baf37bb908ca89f3db570175" category="doc">還原開機媒體上的加密 - AFF A1K</block>
+  <block id="ae0dd276f7fcfc94ca5bc313f3a14d1f" category="summary">在 AFF A1K 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="9db0d8d7de8e6fb7a39b3af16b414332" category="summary">在更換 AFF A1K 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。</block>
+  <block id="2cfc0605bf5ada6d9a95240a36629fad" category="doc">更換開機媒體的需求 - AFF A1K</block>
+  <block id="234386b4902a9d34ddf14299713b80af" category="summary">開始更換 AFF A1K 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。</block>
+  <block id="a360262e364f2fed974d00c8db96ef86" category="doc">開機媒體更換快速入門 - AFF A1K</block>
+  <block id="f94ca64fdec470a119f06192ac9bdd37" category="paragraph">判斷系統是否已啟用安全金鑰管理程式或加密磁碟。</block>
+  <block id="67caf5dc8dfdda70610a58906fa4b6d2" category="inline-link-macro">關閉控制器</block>
+  <block id="eab58b4fd7927bfc67a19b1176afc945" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
+  <block id="1694aca8e34009761e2e7c350661707d" category="paragraph">當您需要更換開機媒體時，請關閉控制器。</block>
+  <block id="a6f7946a6b7c989d8c15b8a0a753100c" category="summary">AFF A1K 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後在系統管理模組中安裝替換開機媒體。</block>
+  <block id="663956136174b339bfebcb54363b46c1" category="summary">當您需要更換開機媒體時，請關閉 AFF A1K 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="a9f2d60bdbe603442f0bb3f6eedb57a1" category="doc">關閉控制器以更換開機媒體 - AFF A1K</block>
+  <block id="c7bb0682619aac3924ad651203f10f14" category="summary">如果需要硬體故障，請更換 AFF A1K 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
+  <block id="12f231246c1957ecc017d5e14e8fa5ce" category="doc">更換控制器 - AFF A1K</block>
+  <block id="a7a4c58bcecc6da48011ed379f160841" category="paragraph">更換損壞的 AFF A1K 控制器之後，您需要<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
+  <block id="65cfd4efc075696b5b4fa182bd8310b6" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統恢復正常運作。</block>
+  <block id="18ffded833a06eab340a3512c997924e" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="eaa282b080027676bbdbaec41fe9c85c" category="summary">在更換 AFF A1K 系統中的控制器之前，請確保您符合成功更換控制器的必要要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
+  <block id="c0fde7c58eda00a5144709bacf24bfe9" category="doc">更換控制器的要求 - AFF A1K</block>
+  <block id="80391fe8edf9e73958f7a2a5d3010f63" category="paragraph">在您審查了更換 AFF A1K 控制器的要求之後，您需要<block ref="5548f0b530c949cbac4afbdb1eb16be4" category="inline-link-macro-rx"></block>。</block>
+  <block id="6911c42baf5226ca6d00478ac1b258b9" category="summary">驗證邏輯介面（生命週期）是否正在回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 AFF A1K 控制器更換程序的最後步驟。</block>
+  <block id="afe37d77bdc53f3287813ec21c219367" category="summary">當 AFF A1K 儲存系統的控制器受損時，請將其關閉。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="3559feca6c2a12a75b7a78f13f084dc8" category="summary">確認控制器的 HA 組態在 AFF A1K 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
+  <block id="7fdca32f90d14c1028db4d9982fb4f82" category="paragraph">在您還原並驗證 AFF A1K 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您必須執行。</block>
+  <block id="1949c395d505ef989d4d7af415759b52" category="summary">開始更換 AFF A1K 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，重新設定系統設定，以及驗證系統作業。</block>
+  <block id="0a00695e51db3fbd7030705f4b618d9b" category="doc">控制器更換快速入門 - AFF A1K</block>
+  <block id="c4c88761d25285392851c50e9db87dd7" category="paragraph">開始更換 AFF A1K 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，還原系統組態，以及驗證系統作業。</block>
+  <block id="139cf4f7657fbfb9877fab98c53f832d" category="inline-link-macro">檢閱更換控制器的需求</block>
+  <block id="8014b2531e10b65728f5d00f10086239" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="096e9e0acfd801adaf14a881210574f5" category="inline-link-macro-rx"></block></block>
+  <block id="09669e45a232b18f400c361ee12274ac" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF A1K 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="e18b877ffac8b35448d895c1c68b748d" category="summary">當風扇故障或無法有效運作時，請更換 AFF A1K 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="12fae7867415134b9f235298c4fc3ae0" category="summary">將 I/O 模組新增至 AFF A1K 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="209868bed00d990c1f23476188be7137" category="summary">AFF A1K 系統可靈活擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="4e411b307b5033fa0adda94171cef0e7" category="paragraph">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 AFF A1K 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
+  <block id="f7322ac5923cab27b4d9379cc2503f3d" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF A1K 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="090242c6b7d29815595d01688302f984" category="summary">維護 AFF A1K 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
+  <block id="cf813c22713b77f2649a9318f2682b40" category="doc">維護程序總覽 - AFF A1K</block>
+  <block id="cbc15aa840d66555f17bac7b6366a7d0" category="paragraph">維護程序假設 AFF A1K 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="932fe9a7d62c95f2464fb4f5a7c4337e" category="summary">當電池開始充電或故障時，請更換 AFF A1K 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="8ed97563bf4d5f496f2982652dc69435" category="doc">更換 NV 電池 - AFF A1K</block>
+  <block id="b889f264945762db2ec53a971f5a8b69" category="summary">當非揮發性記憶體故障或需要升級時，請更換 AFF A1K 系統中的 NVRAM 。</block>
+  <block id="ee8057da89b708de84bb437f57377732" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 AFF A1K 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
+  <block id="c8a9c6d30a68245d30b575bde3eaddfd" category="summary">當系統故障或故障時，請更換 AFF A1K 系統中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。更換程序包括中斷目標 PSU 與電源的連接，拔下電源線，移除故障 PSU ，安裝更換 PSU ，然後將其重新連接至電源。</block>
+  <block id="2fc18a45921e3a79b5488782baca4a44" category="summary">更換 AFF A1K 系統中的即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
+  <block id="e4ce49599b7708d2380c0acd0152168f" category="summary">當 AFF A1K 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
+  <block id="24aeb6a573e5dc8ef8479a1cd01aa3a4" category="paragraph">為了確保您的 A20 ， AFF A30 或 AFF A50 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="f60e1a2cbf88f065326fee5be0453369" category="paragraph">在 AFF A20 ， AFF A30 或 AFF A50 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="d1d91eea8a4e4243a20599b995ddba58" category="paragraph">還原 NetApp 儲存加密組態（如有必要），安裝替換控制器的授權，驗證邏輯介面（生命週期）是否回報其主連接埠，執行叢集健全狀況檢查，登錄更換控制器的序號，然後將故障零件退回 NetApp ，以完成 AFF A20 ， AFF A30 或 AFF A50 控制器更換程序的最後步驟。</block>
+  <block id="6757ff45ffc17a0e2c90504122294b6d" category="section-title">步驟 2 ：驗證生命週期，登錄序號，以及檢查叢集健全狀況</block>
+  <block id="be220c57ca8f72eecc9ca98d4ae34396" category="paragraph">在系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="a859a500e3537b0acfe60f07cc3d9bda" category="summary">在 AFF A70 或 AFF A90 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="fb02013df1845d5f124c71dd73dc7aec" category="summary">在更換 AFF AA70 或 AFF A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。</block>
+  <block id="4e62cf0c019b7703c5e266cf62716857" category="paragraph">在更換 AFF A70 或 AFF A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。</block>
+  <block id="ba8746752f8b45d77677fb468f24aa1d" category="paragraph">開始更換 AFF A70 或 AFF A90 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。</block>
+  <block id="252cf4364b5f048c80c2531c5575b60d" category="inline-link-macro">檢閱更換開機媒體的需求</block>
+  <block id="32bf9365da6ac657cde75fe54c79b518" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="99637525fbc132f10eab994f3d0e75e6" category="inline-link-macro-rx"></block></block>
+  <block id="c2f73edd58fd00bde3ced3001808147f" category="paragraph">當您需要更換開機媒體時，請關閉儲存系統中的控制器。</block>
+  <block id="d284cb9981fed28f7a7211555ae88f2c" category="summary">AFF A70 或 AFF A90 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後在系統管理模組中安裝替換開機媒體。</block>
+  <block id="b283dbb70a77ff6e190297752a0d6fd3" category="paragraph">如果硬體故障需要更換 AFF A70 或 AFF A90 系統中的機箱。更換程序包括移除電源供應器（ PSU ），移除現有的機箱，安裝新的機箱，以及重新安裝機箱元件。</block>
+  <block id="d18cca5a3cfd66ccab449787cff6d121" category="summary">首先，請檢閱更換需求，關閉控制器，移除和更換機箱，以及驗證系統作業，以更換 AFF A70 或 AFF A90 儲存系統中的機箱。</block>
+  <block id="2c6f251b064b212efdb06f8f2dfa8154" category="summary">如果需要硬體故障，請更換 AFF A70 或 AFF A90 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
+  <block id="f19d0ea02c5cb924d1bbd1b1393e656f" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF A70 或 AFF A90 系統恢復正常運作。</block>
+  <block id="e3e2df3fac03b2dfc736461a25374124" category="doc">更換控制器的要求 - AFF A70 和 AFF A90</block>
+  <block id="55d298f721522954ba29ecf82b215046" category="paragraph">驗證邏輯介面（生命週期）是否正在回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 AFF A70 和 AFF A90 控制器更換程序的最後步驟。</block>
+  <block id="1878b74f555ee5e50308581e721b2c76" category="summary">開始更換 AFF A70 或 AFF A90 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，重新設定系統設定，以及驗證系統作業。</block>
+  <block id="c5fd92fb9ea5cd1f647306c39958f7c3" category="paragraph">開始更換 AFF A70 或 AFF A90 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，還原系統組態，以及驗證系統作業。</block>
+  <block id="1b138e65eb583a747e0e4d3a8398fb6a" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF A70 或 AFF A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="99d3d3fcd25a3de8482ec4e2a68cd980" category="paragraph">若要完成更換程序並將系統還原至完整運作，請還原 NetApp 儲存加密組態（如有必要），並安裝新控制器的授權。</block>
+  <block id="bc8b7a027a67f1503950943beb4e6143" category="paragraph">如果 ASA A1K 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
+  <block id="a2aac55abc6c28c4882557e0112dda0e" category="summary">ASA A70 或 ASA A90 儲存系統的開機媒體恢復會使用合作夥伴節點的開機映像，並自動執行適當的開機功能表選項，在替換的開機媒體上安裝開機映像。</block>
+  <block id="bd0c4a219c159fa570da1ded545f36d9" category="summary">在 ASA A70 或 ASA A90 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。</block>
+  <block id="b6bbff6284dec160274ef588afc1a30c" category="doc">還原開機媒體上的映像 - ASA A70 和 ASA A90</block>
+  <block id="24fd70ba02d3ad8edef21fae96195bae" category="paragraph">在 ASA A70 或 ASA A90 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。</block>
+  <block id="fee45db111832f938d749d9972109b24" category="paragraph">在恢復過程中，系統會檢查是否已啟用加密，並判斷所使用的金鑰加密類型。如果啟用金鑰加密，系統會引導您完成適當的還原步驟。</block>
+  <block id="9ebf0f9cdc8e3d4b2cb25a5314423cb2" category="summary">ASA A70 或 ASA A90 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除系統管理模組，移除受損的開機媒體，在系統管理模組中安裝替換開機媒體，然後重新安裝系統管理模組。</block>
+  <block id="f64cb6d84d7c27a06ee97bfed6357102" category="summary">在更換 ASA A70 或 A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。</block>
+  <block id="dd43e74377ed32c7af5731f3c6c94085" category="doc">更換開機媒體的需求 - ASA A70 和 ASA A90</block>
+  <block id="c44cfd74f365cd62f9cef56e5ab9e3ac" category="paragraph">在更換 ASA A70 或 ASA A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括驗證您是否擁有正確的替換開機媒體，確認控制器上沒有故障的叢集連接埠，以及判斷是否已啟用 Onboard Key Manager （ OKM ）或外部金鑰管理程式（ EKM ）。</block>
+  <block id="c330ef0ca8c9d8e7a95cd59e8bd29028" category="paragraph">檢閱開機媒體需求之後<block ref="a9f725bc41d31688b04caf5a2f249945" category="inline-link-macro-rx"></block>，您就可以了。</block>
+  <block id="2637ddc571b4eec6fba99d80e4508ea3" category="summary">開始更換 ASA A70 和 ASA A90 儲存系統中的開機媒體，方法是檢閱更換需求，關閉控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
+  <block id="601c1322cc70007a777d71d3c059d283" category="doc">更換開機媒體的快速入門： ASA A70 和 ASA A90</block>
+  <block id="e02c1c38027df9cf184c084019ca80bd" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="c17103ffaf4bf6b45a49b4f8fd312634" category="inline-link-macro-rx"></block></block>
+  <block id="f99c3440dc4d1880db1a9ab5ebfdc6f7" category="summary">當您需要更換開機媒體時，請關閉 ASA A70 或 ASA A90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="e11c4e7e1911a7e97e4e5ede6d323863" category="doc">關閉控制器以更換開機媒體 - ASA A1K</block>
+  <block id="fc8100e55637c75e7d2b555b531a0ee4" category="paragraph">重新啟動控制器，驗證系統健全狀況，並將故障零件退回 NetApp ，以完成 ASA A70 和 ASA A90 機箱更換程序的最後步驟。</block>
+  <block id="d03075e256b76f63e415d842f1841772" category="summary">如果需要硬體故障，請更換 ASA A70 或 ASA A90 系統中的機箱。此程序包括關閉系統電源，移除現有機箱，安裝新機箱，以及重新設定元件，以確保系統正常運作。</block>
+  <block id="dcce5c69a78e230fb171cf67cf118ad8" category="paragraph">準備更換 ASA A70 或 ASA A90 系統中受損的機箱，方法是識別受損的機箱，驗證更換元件，並標示纜線和控制器模組。</block>
+  <block id="f3ffb6f6792172ee195e0a78c1a90392" category="summary">在更換 ASA A70 或 ASA A90 系統中的機箱之前，請確保您符合成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有 ONTAP 的本機管理員認證，正確的更換機箱，以及必要的工具。</block>
+  <block id="7b9d1397ffd8886e76e4fed43c1ecd40" category="doc">更換機箱的要求 - ASA A70 和 ASA A90</block>
+  <block id="3bacadd28ffb78060433bedcfed92c53" category="summary">需要更換機箱時，請關閉 ASA A70 或 ASA A90 儲存系統中的控制器。請務必安全關閉控制器，以防止資料遺失，並確保系統穩定。</block>
+  <block id="8e32706968c472aa079e9cd03eafbf12" category="summary">開始更換 ASA A70 或 ASA A90 儲存系統中的機箱，方法是關閉控制器，移除和更換機箱，以及驗證系統作業。</block>
+  <block id="f27d9a5f7d5680dbe736e6836d3c1a9f" category="summary">如果需要硬體故障，請更換 ASA A70 或 ASA A90 系統中的控制器。此程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，以及重新啟動系統。</block>
+  <block id="2c72ab76cb7a954eb5f3546d4abad687" category="doc">更換控制器 - ASA A70 和 ASA A90</block>
+  <block id="1a68c286a29e94a07ffe7e1a8e288e40" category="summary">將儲存資源的控制權交給更換控制器，讓 ASA A70 或 ASA A90 系統恢復正常運作。</block>
+  <block id="33973baa5847fa5dcb8ee97041c826ae" category="paragraph">將儲存資源的控制權交給更換控制器，讓 ASA A70 或 ASA A90 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="b25f0fb243bad5e39db497ca9643ee35" category="doc">更換控制器的要求 - ASA A70 和 ASA A90</block>
+  <block id="b142dca97d5afb38c1a9d73855b73aa9" category="paragraph">在更換 ASA A70 或 ASA A90 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
+  <block id="1e60488a65d744862b8f6292544da3f0" category="doc">完整更換控制器： ASA A70 和 ASA A90</block>
+  <block id="b071ebae80827a45b9576ea29aae6ff6" category="paragraph">驗證邏輯介面（生命週期）是否回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 ASA A70 和 ASA A90 控制器更換程序的最後步驟。</block>
+  <block id="09f67c65a0274b2d694383022b5e6fd7" category="summary">當控制器受損時，請關閉 ASA A70 或 ASA A90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="00598e88bbdc5fef4f031a14caa5bd08" category="summary">開始更換 ASA A70 或 ASA A90 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，還原系統組態，以及驗證系統作業。</block>
+  <block id="bb9f8e902211727b75f62da6100f446a" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 ASA A70 或 ASA A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="bdd967d82d036d0ed0b29ba6983694ae" category="paragraph">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 ASA A70 或 ASA A90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="e8afe3e9f56a1403556444ed307a82ea" category="summary">當風扇故障或無法有效運作時，請更換 ASA A70 或 ASA A90 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="814f0dcd86c15e00b5cb4ad5d628d7d1" category="summary">將 I/O 模組新增至 ASA A70 或 ASA A90 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="37c709c92540fdfafad949954d9c9d23" category="summary">ASA A70 和 ASA A90 系統可靈活擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="ef5c567123618039bb9c6365201a9516" category="paragraph">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 ASA A70 或 ASA A90 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
+  <block id="6ec9d402bdf5f8f281a64877dcfb1834" category="paragraph">當模組故障或需要升級以支援更高效能或其他功能時，請更換 ASA A70 或 ASA A90 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="ba9896ee329eaab4d69b782c90f96426" category="doc">維護程序總覽 - ASA A70 和 ASA A90</block>
+  <block id="9820e4314a3e441bfece800b6e086ee5" category="paragraph">維護 ASA A70 和 ASA A90 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
+  <block id="156e54fb574402ca9f26edcfaeff46e1" category="paragraph">維護程序假設 ASA A70 和 ASA A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="99b88f32607667ac31ffc4d65b240425" category="summary">當電池開始充電或故障時，請更換 ASA A70 或 ASA A90 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="2c183cd7821c2303d65c52bc4eccc960" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 ASA A70 或 ASA A90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
+  <block id="7d211eaf988119c9d2b506a5d2c8037f" category="summary">當或 ASA A90 系統故障或故障時，請更換 ASA A70 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以確保運作穩定。更換程序包括中斷目標 PSU 與電源的連接，拔下電源線，移除故障 PSU ，安裝更換 PSU ，然後將其重新連接至電源。</block>
+  <block id="41e2f285e686b8f2a3edb4bab2e58d51" category="paragraph">請在 ASA A70 或 ASA A90 系統中更換即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
+  <block id="bcde75f7bddc9226b30c2cb1712cb52b" category="summary">當 ASA A70 或 ASA A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
+  <block id="603c758839f418606126a3dd634c68d9" category="doc">更換系統管理模組 - ASA A70 和 ASA A90</block>
+  <block id="73c7c606d50a6cd6a6bf0be619496e05" category="paragraph">ASA A1K 儲存系統的開機媒體恢復會使用合作夥伴節點的開機映像，並自動執行適當的開機功能表選項，在替換的開機媒體上安裝開機映像。</block>
+  <block id="dcfa3de2faa27a3e334c7c433ea50340" category="summary">在 ASA A1K 系統的替換開機媒體上還原 ONTAP 映像。此程序包括從 Loader 提示字元啟動開機恢復程序，並監控恢復程序，直到完成並重新啟動節點為止。</block>
+  <block id="2cc0e4a695b44179f7b31d704877b9fc" category="doc">還原開機媒體上的映像 - ASA A1K</block>
+  <block id="955b02a4be265a47dec370f73ec90202" category="paragraph">在 ASA A1K 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。</block>
+  <block id="09922310f86dcfda39249f4666ce5146" category="summary">ASA A1K 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除系統管理模組，移除受損的開機媒體，在系統管理模組中安裝替換開機媒體，然後重新安裝系統管理模組。</block>
+  <block id="71b41768755429f94118b959381a52b4" category="summary">在更換 ASA A1K 系統中的開機媒體之前，請確保您符合成功更換所需的要求。</block>
+  <block id="9463e7037823b10043e935b4c66fd40f" category="doc">更換開機媒體的需求 - ASA A1K</block>
+  <block id="9f5fe76b9efeba7b34ebfcafd14ae3b8" category="paragraph">在更換 ASA A1K 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括驗證您是否擁有正確的替換開機媒體，確認控制器上沒有故障的叢集連接埠，以及判斷是否已啟用 Onboard Key Manager （ OKM ）或外部金鑰管理程式（ EKM ）。</block>
+  <block id="24ba379bd8e7bdde7e0e1b156431376b" category="summary">開始更換 ASA A1K 儲存系統中的開機媒體，方法是檢閱更換需求，關閉控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
+  <block id="8b2356b774f40b97c86f057f3ce27e98" category="doc">開機媒體更換快速入門 - ASA A1K</block>
+  <block id="4d60e015da1ccbddbd5825262ead312e" category="paragraph">開始更換 ASA A1K 儲存系統中的開機媒體，方法是檢閱更換需求，關閉控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
+  <block id="dc3e2187fb6f65e3d0a03d407215b8f5" category="summary">當您需要更換開機媒體時，請關閉 ASA A1K 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="8f31c4d6dd15a8b6badb61be6bbe870f" category="doc">更換控制器 - ASA A1K</block>
+  <block id="f36c76518c1338c3f03a21b9d4c06d87" category="paragraph">如果需要硬體故障，請更換 ASA A1K 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
+  <block id="f501a4282c0407a5377e73a38c2fe79c" category="paragraph">更換了功能受損的 ASA A1K 控制器之後<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="0b7aa62fd5de84b2f6b9168c29cd9699" category="summary">將儲存資源的控制權交給更換控制器，讓 ASA A1K 系統恢復正常運作。</block>
+  <block id="650cd8dda24c1d628d2370fc896e2898" category="paragraph">將儲存資源的控制權交給更換控制器，讓 ASA A1K 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="0a6c014d49b3d029cad7c1c0b0b8a1ee" category="summary">在更換 ASA A1K 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
+  <block id="6a41dab46dde5ea92e32bfe9162ff999" category="doc">更換控制器的要求 - ASA A1K</block>
+  <block id="1835f41a7f835baa4e1394989bbb70fa" category="paragraph">在您審查了更換 ASA A1K 控制器的要求之後，您需要<block ref="f4efbe35964cb711c7f7fc221d35e4ef" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a197d6edeae9c94e0721ab454a5fb33" category="summary">驗證邏輯介面（生命週期）是否正在回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 ASA A1K 控制器更換程序的最後步驟。</block>
+  <block id="327c618fb7954d9af5efd084522be547" category="summary">當 ASA A1K 儲存系統的控制器受損時，請將其關閉。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="95155c153887de18d244e072071f2b3a" category="summary">確認控制器的 HA 組態在 ASA A1K 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
+  <block id="f68165cbf3ba1e1d45a1b8381c53da48" category="paragraph">在您還原並驗證 ASA A1K 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="3554082e8291b9cdbf124dd341192845" category="summary">開始更換 ASA A1K 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，重新設定系統設定，以及驗證系統作業。</block>
+  <block id="9ea49ea0ce6c8ea26b58305a898bfe1a" category="doc">控制器更換快速入門 - ASA A1K</block>
+  <block id="e74490e131d6ff28bc330a79722d7ee8" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 ASA A1K 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="2ec0426abc59751a6bbc5d7f1d4ad88f" category="summary">當風扇故障或無法有效運作時，請更換 ASA A1K 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="d0ae37255e241883926e006b05aea242" category="summary">維護 ASA A1K 硬體</block>
+  <block id="81fbab84dee840e51b947d05ddd735f0" category="summary">將 I/O 模組新增至 ASA A1K 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="41a0e3b7c23899a0913091e05f33a16c" category="summary">ASA A1K 系統可靈活擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的</block>
+  <block id="1ce826ab1554590d6883aa02769b6bee" category="paragraph">ASA A1K 系統可靈活擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="0964259faae5ffbb057f210fdf96f911" category="paragraph">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 ASA A1K 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
+  <block id="271e5509aea40fadf8358832d40d8709" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 ASA A1K 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="0034e19547064f54c68ea2a26e4a1c09" category="summary">維護 ASA A1K 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
+  <block id="60b49041f4566dad7b5438207f03aab8" category="doc">維護程序總覽 - ASA A1K</block>
+  <block id="f60f4792191ab6f28133159fba4fc7e3" category="paragraph">維護程序假設 ASA A1K 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="4911cb240fadb3a7b630d1a2812158f0" category="summary">當電池開始充電或故障時，請更換 ASA A1K 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="14528c5898a9ac73197c0d6eb1f9285a" category="doc">更換 NV 電池 - ASA A1K</block>
+  <block id="77fc6c64616effe73533cda37fa4f23e" category="summary">當非揮發性記憶體故障或需要升級時，請更換 ASA A1K 系統中的 NVRAM 。</block>
+  <block id="53adf483cd5d3055074ef84d5be7963f" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 ASA A1K 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
+  <block id="11d3d535287566fab88416a8d44d9304" category="summary">當 ASA A1K 系統故障或故障時，請更換其 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以確保運作穩定。更換程序包括中斷目標 PSU 與電源的連接，拔下電源線，移除故障 PSU ，安裝更換 PSU ，然後將其重新連接至電源。</block>
+  <block id="d5c5d5ed06719b517e116422631085f4" category="summary">更換 ASA A1K 系統中的即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
+  <block id="9f3c1aa619a31cc111c40fc314f9faa2" category="summary">當 ASA A1K 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
+  <block id="e04a3734ea529efaec431e68c61d0806" category="doc">將故障零件退回 NetApp - ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="23972a0b40b2aebc2048150eeceaebc3" category="doc">開機媒體恢復總覽 - ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="817d05bfff91a9bb6a2bb9e5203b65d3" category="doc">還原 ONTAP 映像 - ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="99408db22f283eaf0f69169123395c6f" category="doc">更換開機媒體： ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="f58091a149488a1ecc831031e40a5b60" category="doc">要求： ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="f61a4b29bc6d3cca219956808d8cd39b" category="doc">開機媒體更換工作流程： ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="7a8657f592784e691c773c79396353de" category="doc">關閉控制器 - ASA A20 ， ASA A30 和 ASA A50</block>
+  <block id="f08c3d5c20f112189a4f958d78f4d98e" category="paragraph">在 AFF C80 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="a867b6edd5fd8d31165da0862d36d921" category="paragraph">還原 NetApp 儲存加密組態（如有必要），安裝替換控制器的授權，驗證邏輯介面（生命週期）是否回報其主連接埠，執行叢集健全狀況檢查，登錄更換控制器的序號，然後將故障零件退回 NetApp ，以完成 AFF C30 和 C60 控制器更換程序的最後步驟。</block>
+  <block id="41b025b8baa2039a2465c86120cb5676" category="doc">檢查開機媒體上的加密金鑰支援和狀態 - AFF C80</block>
+  <block id="4084b87819887441c043e34054e46b81" category="paragraph">為了確保 AFF C80 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="5fb5d2b4d6732071f26ad98fccdcbdc8" category="doc">在開機媒體上還原加密 - AFF C80</block>
+  <block id="518d259b42a911dc3a20adcfc4d0303a" category="paragraph">在 AFF C80 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
+  <block id="8bd3a19a7fb9b578a97dddca4df4ad06" category="summary">在更換 AFF C80 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。</block>
+  <block id="da62f8b2c616742646bb31ad664a79a7" category="doc">更換開機媒體的需求 - AFF C80</block>
+  <block id="54c5cfd970375ce173e4624907f3f86d" category="summary">開始更換 AFF C80 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。</block>
+  <block id="6179dac6bed21e0ec413a250238622e8" category="summary">AFF C80 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後在系統管理模組中安裝替換開機媒體。</block>
+  <block id="2a71299c5410b15041549338cea11d6b" category="doc">關閉控制器以更換開機媒體 - AFF C80</block>
+  <block id="39711f23f9d50d743a487efb7fb599a8" category="paragraph">當您需要更換開機媒體時，請關閉 AFF C80 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="7796ef257d684df8101cbe032026345a" category="summary">重新啟動控制器，確認系統健全狀況，並將故障零件退回 NetApp ，以完成 AFF C80 機箱更換程序的最後步驟。</block>
+  <block id="61dcf11870387288971097971555a932" category="summary">如果需要硬體故障，請更換 AFF C80 系統中的機箱。更換程序包括移除電源供應器（ PSU ），移除現有的機箱，安裝新的機箱，以及重新安裝機箱元件。</block>
+  <block id="e19839d5977fc486204b637326960f50" category="paragraph">更換損壞的 AFF C80 機箱並將元件重新安裝到其中之後<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="c214c7601f79b45ee4e329a9388bcc1c" category="doc">更換機箱的要求 - AFF C80</block>
+  <block id="68ff0e851584bc17ddf2fe0360cb3b2f" category="summary">首先，請檢閱更換需求，關閉控制器，移除和更換機箱，以及驗證系統作業，以更換 AFF C80 系統中的機箱。</block>
+  <block id="d13e978f047aec74606199ffff94e6ba" category="doc">更換控制器 - AFF C80</block>
+  <block id="02a9e9984c956e264ae67617477e3c81" category="paragraph">如果需要硬體故障，請更換 AFF C80 系統中的控制器。此程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，以及重新啟動系統。</block>
+  <block id="7fe746cff776821811860f80a8a2766b" category="paragraph">更換了功能受損的 AFF C80 控制器之後<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="70ca6ca8fd81886c4dcc82d957e79ee9" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF C80 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="d2cb254b559fda06efd648167c7ab022" category="summary">在更換 AFF C80 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
+  <block id="c59af556b2a6209df2da47002b6b6559" category="doc">更換控制器的要求 - AFF C80</block>
+  <block id="4aa280c9f0046a6824c089d7b0af664a" category="paragraph">在您審查了更換 AFF C80 控制器的要求之後，您需要<block ref="5548f0b530c949cbac4afbdb1eb16be4" category="inline-link-macro-rx"></block>。</block>
+  <block id="993406729b186cdaf4296a5964b58d0c" category="summary">驗證邏輯介面是否回報其主連接埠，執行叢集健全狀況檢查，並將故障零件退回 NetApp ，以完成 AFF C80 控制器更換程序的最後步驟。</block>
+  <block id="ddf7412e7c37431f1b35f11a4af557a8" category="paragraph">驗證邏輯介面（生命週期）是否正在回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 AFF C80 控制器更換程序的最後步驟。</block>
+  <block id="179b17b78c730160d70c7ea7bf15c4b0" category="paragraph">在您還原並驗證 AFF C80 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您必須執行。</block>
+  <block id="9eacdc88e540a48a5d1d9d1e732eada8" category="summary">開始更換 AFF C80 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，還原系統組態，以及驗證系統作業。</block>
+  <block id="f135020b3e6c604b824d7ee673ed8305" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF C80 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。</block>
+  <block id="3f371c66e80d5513f4a179913cf5b591" category="paragraph">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF C80 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="c3addd31ef6f6050c2957082a6b8435c" category="summary">當風扇故障或無法有效運作時，請更換 AFF C80 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="099c3c7a7a81ab71ed79331578e0fe3d" category="summary">將 I/O 模組新增至 AFF C80 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="aa385fb498b53644f6dc3936ceeb2d7e" category="paragraph">AFF C80 系統可靈活擴充或更換 I/O 模組，以增強網路連線能力與效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="d7c7e76b864ff7a3831cc063bb83b3e0" category="paragraph">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF C80 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="3191381d0c4f9d1b943290e9648992cf" category="doc">維護程序總覽 - AFF C80</block>
+  <block id="dd70af6ac86c3004056a10922bf1e4a7" category="paragraph">維護程序假設 AFF C80 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="5d542a4393896b1649a9f71a10d0053c" category="summary">當電池開始充電或故障時，請更換 AFF C80 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。</block>
+  <block id="6c723933775e16b84e349b93a65294be" category="paragraph">當電池開始充電或故障時，請更換 AFF C80 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="4a39a7154d94aaf673b103d62c88527f" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 AFF C80 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
+  <block id="30555822c52dee845e2aa45a31d62f0b" category="summary">當 AFF C80 系統故障或故障時，請更換其中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。</block>
+  <block id="48cf235776f6dc91501c34ff699092e4" category="paragraph">當 AFF C80 系統故障或故障時，請更換其中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。更換程序包括中斷目標 PSU 與電源的連接，拔下電源線，移除故障 PSU ，安裝更換 PSU ，然後將其重新連接至電源。</block>
+  <block id="faed8c38f21fc080afa13d15d554d7cd" category="summary">更換 AFF C80 系統中的即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
+  <block id="6bb54b1dd4c1b6fa5564137fda344533" category="summary">當 AFF C80 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
+  <block id="a119fd4e8fa2ab8606dde519437910b4" category="summary">如果 FAS70 或 FAS90 系統中的某個組件出現故障，請將故障部件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
+  <block id="a8cd391d1441499185c41fc6e801c3d7" category="summary">為了確保 FAS70 或 FAS90 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="daf5287fe33d37fc0b734ac6e49e47a1" category="doc">檢查開機媒體上的加密金鑰支援和狀態： FAS70 和 FAS90</block>
+  <block id="7e96a00838a8088948208951269e9708" category="summary">在 FAS70 或 FAS90 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
+  <block id="fbbd8efeefc24fcfd66d78c3d72285a3" category="doc">在開機媒體上還原加密： FAS70 和 FAS90</block>
+  <block id="8f80c018c55bc17f045095e90bb15c9d" category="summary">在 FAS70 或 FAS90 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="f8023bed2a305a417ef130df4846c6e5" category="summary">在更換 FAS70 或 FAS90 系統中的引導媒體之前，請確保您滿足成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。</block>
+  <block id="a59ba5ee7064d6b62f7fb2d7584369c0" category="doc">更換開機媒體的需求： FAS70 和 FAS90</block>
+  <block id="7c081c6d125632166bf9b1cdf643e45a" category="summary">首先，請檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能，以更換 FAS70 或 FAS90 儲存系統中的開機媒體。</block>
+  <block id="e142bda95f18c2cc4d5108c635d0bab8" category="doc">快速開始更換開機媒體： FAS70 和 FAS90</block>
+  <block id="8aed650105651661c1bda44f8c55d4c3" category="summary">組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後在系統管理模組中安裝替換開機媒體。</block>
+  <block id="c2adb5ee8363214a28c9cdc3540ad46e" category="paragraph">FAS70 或 FAS90 系統中的開機媒體會儲存必要的韌體和組態資料。如果開機媒體故障，您必須拔下控制器模組，移除系統管理模組，移除受損的開機媒體，然後在系統管理模組中安裝替換開機媒體。</block>
+  <block id="c2ce8b0e043d40efef52c807376bca8f" category="summary">需要更換開機媒體時，請關閉 FAS70 或 FAS90 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="896b7ea2170c7a1dce1accef671f831b" category="doc">關閉控制器以更換開機媒體： FAS70 和 FAS90</block>
+  <block id="de41373a1a42199b53708716aaf66e1f" category="summary">FAS70 或 FAS90 系統中的 NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組都整合一個 SSD Flash Cache 磁碟機。</block>
+  <block id="515e344f1a5ffdb8b7e79a6002bbae67" category="paragraph">根據您需要更換的元件，您可以執行下列任一程序：整個 Flash Cache 模組載體或快取模組。</block>
+  <block id="8fa82e1e241bb83d887373e344b7912c" category="summary">當硬體故障需要時，請更換 FAS70 或 FAS90 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
+  <block id="2e49773a386b54a9cb9b9ac6679c6e79" category="doc">更換控制器： FAS70 和 FAS90</block>
+  <block id="a09bde82e257a9efc5c840b3d64e8e4f" category="paragraph">更換功能受損的 FAS70 或 FAS90 控制器後<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="1e70422005019f4903b79a5a577df1a1" category="summary">將儲存資源的控制權歸還更換控制器，讓 FAS70 或 FAS90 系統恢復正常運作。</block>
+  <block id="493e5e25ac20d8aedaf3aae396a4ec29" category="paragraph">將儲存資源的控制權歸還更換控制器，讓 FAS70 或 FAS90 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="a99292e9b9cb5abc5a25036f0c9b0e0f" category="summary">在更換 FAS70 或 FAS90 系統中的控制器之前，請確保您滿足成功更換所需的要求。這包括擁有正確的更換控制器，系統組態備份，以及存取任何必要的工具和韌體。</block>
+  <block id="819d0a4d339e34d2e8daf63b772aae13" category="doc">更換控制器的要求： FAS70 和 FAS90</block>
+  <block id="7d848b20e84dd7a677b1d40c80ab5f2a" category="paragraph">在您審查了更換 FAS70 或 FAS90 控制器的要求之後，您需要<block ref="5548f0b530c949cbac4afbdb1eb16be4" category="inline-link-macro-rx"></block>。</block>
+  <block id="6dd3fde43a5f29446a4c49fb87879b65" category="summary">驗證邏輯介面（生命週期）是否正在回報其主連接埠，執行叢集健全狀況檢查，然後將故障零件退回 NetApp ，以完成 FAS70 或 FAS90 控制器更換程序的最後步驟。</block>
+  <block id="0a078841876399340520c93a651b964b" category="summary">當 FAS70 或 FAS90 儲存系統的控制器受損時，請將其關閉。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。</block>
+  <block id="dcac0d4d44ce3609f70b9f6817380eb7" category="summary">確認控制器的 HA 組態在 FAS70 或 FAS90 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
+  <block id="8f15a6b55f9d40c8f4779330981502f5" category="paragraph">在您還原並驗證 FAS70 或 FAS90 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="17e4dd018a5a20b5b198058502e171bc" category="summary">開始更換 FAS70 或 FAS90 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，重新設定系統設定，以及驗證系統作業。</block>
+  <block id="d5eb3f739eeebefeff8bf88458a73de1" category="doc">快速開始更換控制器： FAS70 和 FAS90</block>
+  <block id="e1333d1a07372dc88d0fa1ebd5185b4a" category="paragraph">開始更換 FAS70 或 FAS90 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，還原系統組態，以及驗證系統作業。</block>
+  <block id="3ba02cb05957bfb199a99a74f94a9bc3" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 FAS70 或 FAS90 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="0d9cd1cb3839e926bde7f75246162365" category="summary">當風扇故障或無法有效運作時，請更換 FAS70 或 FAS90 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="1dcb8e58a58ed649cdab695faeb1512c" category="summary">將 I/O 模組新增至 FAS70 和 FAS90 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="86cfd8171cc9d13fd6ba34c5f4b8560b" category="summary">FAS70 或 FAS90 系統可靈活地擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="7b96b7e6eb8df75ce5aff9a62ce657e2" category="paragraph">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 FAS70 或 FAS90 儲存系統中故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
+  <block id="55658611693e2dfb5ae95b1b317d553f" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 FAS70 或 FAS90 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="763b42955255a221cd56eabbdfc3f915" category="summary">維護 FAS70 或 FAS90 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
+  <block id="acea612d3c29d7d769a97b7ca1b29e06" category="doc">維護程序概述： FAS70 和 FAS90</block>
+  <block id="e9bba2e277346ab0c68cd89eb9a00379" category="paragraph">維護程序假設 FAS70 或 FAS90 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="95033a171cde1d1e61e319b0408276ff" category="summary">當電池開始充電或故障時，請更換 FAS70 或 FAS90 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="b7029028266270532def4bb85df6970b" category="doc">更換NV電池- FAS70和FAS90</block>
+  <block id="3431bba91e3459ddc9941bfbb2561cdc" category="summary">當非揮發性記憶體故障或需要升級時，請更換 FAS70 或 FAS90 系統中的 NVRAM 。</block>
+  <block id="35ac4e474d14cd3235380c2e767e83a3" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 FAS70 或 FAS90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
+  <block id="0c086b446ac3c632e250da3281ca468e" category="summary">當 FAS70 或 FAS90 系統發生故障或故障時，請更換 FAS70 或 FAS90 系統中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。更換程序包括中斷目標 PSU 與電源的連接，拔下電源線，移除故障 PSU ，安裝更換 PSU ，然後將其重新連接至電源。</block>
+  <block id="a7188c3f4745ef552e2d05d7b35f5f28" category="summary">更換 FAS70 或 FAS90 系統中的實時時鐘（ RTC ）電池（通常稱爲幣形電池），以確保依賴準確時間同步的服務和應用程序保持正常運行。</block>
+  <block id="2ffef1288a7f6acf62a54035268660b1" category="summary">當 FAS70 或 FAS90 系統出現故障或固件損壞時，請更換系統管理模塊。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
 </blocks>

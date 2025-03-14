@@ -2,16 +2,16 @@
 permalink: a1k/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff a1k, pre-shutdown checks for onboard encryption keys 
-summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+summary: 為了確保 AFF A1K 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption ，並在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
 ---
-= 檢查加密金鑰支援與狀態 - AFF A1K
+= 檢查開機媒體上的加密金鑰支援和狀態 - AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-關閉受損控制器之前、請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）、以及您的金鑰管理系統是否已正確設定。
+為了確保 AFF A1K 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
 
 
 
@@ -192,3 +192,6 @@ ONTAP 9 。 13.1 或更早版本
 --
 ====
 
+
+.接下來呢？
+在引導媒體上檢查加密密鑰支持和狀態後，您需要link:bootmedia-shutdown.html["關閉控制器"]。

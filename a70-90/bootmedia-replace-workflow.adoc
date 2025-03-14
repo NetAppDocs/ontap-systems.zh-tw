@@ -11,19 +11,19 @@ summary: 首先，請準備更換媒體，在系統中安裝，還原開機映�
 
 
 [role="lead"]
-首先，請準備更換媒體，在系統中安裝，還原開機映像，以及驗證系統功能，以更換 AFF A70 或 AFF A90 儲存系統中的開機媒體。
+開始更換 AFF A70 或 AFF A90 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱開機媒體需求"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱更換開機媒體的需求"]
 [role="quick-margin-para"]
 檢閱更換開機媒體的需求。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-encryption-preshutdown-checks.html["檢查加密金鑰支援和狀態"]
 [role="quick-margin-para"]
-驗證系統是否已啟用安全金鑰管理程式或加密磁碟。
+判斷系統是否已啟用安全金鑰管理程式或加密磁碟。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-shutdown.html["關閉受損的控制器"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-shutdown.html["關閉控制器"]
 [role="quick-margin-para"]
-關閉或接管功能受損的控制器、使狀況良好的控制器繼續從功能受損的控制器儲存設備提供資料。
+當您需要更換開機媒體時，請關閉儲存系統中的控制器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-replace.html["更換開機媒體"]
 [role="quick-margin-para"]

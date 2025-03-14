@@ -2,7 +2,7 @@
 permalink: fas-70-90/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
 keywords: fas70, fas90, how to recable the system, how to reassign disks 
-summary: 重新啟動系統。 
+summary: 將儲存資源的控制權歸還更換控制器，讓 FAS70 或 FAS90 系統恢復正常運作。 
 ---
 = 退回控制器： FAS70 和 FAS90
 :allow-uri-read: 
@@ -11,18 +11,15 @@ summary: 重新啟動系統。
 
 
 [role="lead"]
-驗證儲存設備和網路連線、然後將控制器送回。
-
-
-
-== 將控制器交回
-
-如果已啟用、請重設加密、並將控制器恢復正常運作。
+將儲存資源的控制權歸還更換控制器，讓 FAS70 或 FAS90 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。
 
 [role="tabbed-block"]
 ====
 .無加密
 --
+將受損的控制器歸還其儲存設備，使其恢復正常運作。
+
+.步驟
 . 在 Loader 提示符下，輸入 `boot_ontap`。
 . 主控台訊息停止時、按 <enter> 。
 +
@@ -36,8 +33,11 @@ summary: 重新啟動系統。
 
 
 --
-.機載加密（ OKM ）
+.OKM加密
 --
+重設內建加密，並將控制器恢復正常運作。
+
+.步驟
 . 在 Loader 提示字元中，輸入：
 +
 `boot_ontap maint`
@@ -73,8 +73,11 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 
 --
-.外部金鑰管理程式（ EKM ）
+.EKM加密
 --
+重設加密，並將控制器恢復正常運作。
+
+.步驟
 . 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
 . 回答或 `n`回答 `y`下列問題：
 +
@@ -120,3 +123,5 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 
 --
 ====
+.接下來呢？
+將儲存資源的擁有權移回更換控制器後，您需要link:controller-replace-restore-system-rma.html["完成控制器更換"]進行程序。

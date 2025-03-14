@@ -2,7 +2,7 @@
 permalink: asa-r2-a1k/nvram-replace.html 
 sidebar: sidebar 
 keywords: asa r2 a1k, replace an nvdimm 
-summary: NVRAM 模組包含 NVRAM12 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（ Flash 快取或快取模組）。 
+summary: 當非揮發性記憶體故障或需要升級時，請更換 ASA A1K 系統中的 NVRAM 。 
 ---
 = 更換 NVRAM - ASA A1K
 :allow-uri-read: 
@@ -11,11 +11,14 @@ summary: NVRAM 模組包含 NVRAM12 和 DIMM ，每個 NVRAM 模組最多兩個 
 
 
 [role="lead"]
-NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的 NVRAM 模組、您必須從機箱中移除模組、將 DIMM 移至更換模組、然後將更換的 NVRAM 模組安裝至機箱。
+當非揮發性記憶體故障或需要升級時，請更換 ASA A1K 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡 https://support.netapp.com["NetApp支援"]。
+NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
 
-您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+.開始之前
+* 請確定您有可用的替換零件。您必須使用從 NetApp 收到的替換元件來更換故障的元件。
+* 確保儲存系統中的所有其他元件正常運作；如果沒有，請聯絡 https://support.netapp.com["NetApp支援"]。
+
 
 
 

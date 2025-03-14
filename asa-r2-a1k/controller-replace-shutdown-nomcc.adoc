@@ -2,7 +2,7 @@
 permalink: asa-r2-a1k/controller-replace-shutdown-nomcc.html 
 sidebar: sidebar 
 keywords: asa r2 a1k, shut down the impaired controller 
-summary: 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。 
+summary: 當 ASA A1K 儲存系統的控制器受損時，請將其關閉。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。 
 ---
 = 關閉受損控制器 - ASA A1K
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 若要關閉受損的控制器、您必須判斷控制器的狀態、�
 
 
 [role="lead"]
-關閉或接管受損的控制器。
+當 ASA A1K 儲存系統的控制器受損時，請將其關閉。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
@@ -63,3 +63,6 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 |===
 
+
+.接下來呢？
+關閉控制器之後，您需要執行link:controller-replace-move-hardware.html["更換控制器"]。

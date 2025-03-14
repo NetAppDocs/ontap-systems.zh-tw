@@ -11,7 +11,7 @@ summary: 將儲存資源的控制權交給更換控制器，讓 AFF C80 系統�
 
 
 [role="lead"]
-將儲存資源的控制權交給更換控制器，讓 AFF C80 系統恢復正常運作。
+將儲存資源的控制權交給更換控制器，讓 AFF C80 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。
 
 [role="tabbed-block"]
 ====
@@ -161,3 +161,5 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 
 --
 ====
+.接下來呢？
+將儲存資源的擁有權移回更換控制器後，您需要link:controller-replace-restore-system-rma.html["完成控制器更換"]進行程序。

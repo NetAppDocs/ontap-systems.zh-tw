@@ -1,8 +1,8 @@
 ---
 permalink: asa-r2-70-90/system-management-replace.html 
 sidebar: sidebar 
-keywords: AFF A70, AFF A90, replace the system management module 
-summary: 您必須更換。 
+keywords: ASA A70,  ASA A90, replace the system management module 
+summary: 當 ASA A70 或 ASA A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。 
 ---
 = 更換系統管理模組 - ASA A70 和 ASA A90
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 您必須更換。
 
 
 [role="lead"]
+當 ASA A70 或 ASA A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。
+
 系統管理模組位於插槽 8 中控制器背面、包含用於系統管理的內建元件、以及用於外部管理的連接埠。目標控制器必須關閉、才能更換損壞的系統管理模組或更換開機媒體。
 
 系統管理模組具有下列主機板內建元件：
@@ -27,8 +29,6 @@ summary: 您必須更換。
 * USB Type-A （開機恢復）
 * e0M RJ45 乙太網路
 
-
-若要更換系統管理模組或開機媒體、您必須關閉受損的控制器。
 
 .開始之前
 * 本程序使用下列術語：
