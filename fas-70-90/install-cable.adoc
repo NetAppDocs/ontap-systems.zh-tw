@@ -18,6 +18,10 @@ summary: 控制器上的管理網路連接埠連接至交換器。兩個控制�
 
 .關於這項工作
 * 這些程序顯示一般組態。具體的佈線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+* FAS70 和 FAS90 控制器上的 I/O 插槽編號爲 1 到 11 。
++
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[FAS70 和 FAS90 控制器上的插槽編號]
+
 * 將連接器插入連接埠時，纜線連接器拉片上的箭頭圖示會顯示正確的方向（上或下）。
 +
 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -135,6 +139,8 @@ IMPORTANT: 請勿插入電源線。
 以下佈線程序說明如何將控制器連接至儲存櫃。請選擇符合您設定的下列其中一個纜線選項。
 
 如需儲存系統支援的最大機櫃數量以及所有纜線選項link:https://hwu.netapp.com["NetApp Hardware Universe"^]，請參閱。
+
+有關 SAS 機櫃佈線的其他指導，請參閱link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html["SAS 纜線規則與概念 - 配備 IOM12/ IOM12B 模組的機櫃"]。
 
 [role="tabbed-block"]
 ====

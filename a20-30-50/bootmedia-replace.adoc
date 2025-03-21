@@ -2,7 +2,7 @@
 permalink: a20-30-50/bootmedia-replace.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, replace the boot media 
-summary: 在更換開機媒體之前、請先移除控制器模組上的擴充卡3、找出控制器模組中故障的開機媒體。 
+summary: AFF A20 ， AFF A30 或 AFF A50 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除控制器模組，移除受損的開機媒體，安裝更換的開機媒體，然後將 ONTAP 映像傳輸至更換的開機媒體。 
 ---
 = 更換開機媒體： AFF A20 ， AFF A30 和 AFF A50
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 在更換開機媒體之前、請先移除控制器模組上的擴充�
 
 
 [role="lead"]
+AFF A20 ， AFF A30 或 AFF A50 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除控制器模組，移除受損的開機媒體，安裝更換的開機媒體，然後將 ONTAP 映像傳輸至更換的開機媒體。
+
 若要更換開機媒體，您必須移除受損的控制器，移除開機媒體，安裝替換開機媒體，然後將開機映像傳輸至 USB 快閃磁碟機。
 
 
@@ -309,3 +311,6 @@ DC PSU
 
 |===
 
+
+.接下來呢？
+更換開機媒體之後link:bootmedia-recovery-image-boot.html["啟動恢復映像"]，您需要。

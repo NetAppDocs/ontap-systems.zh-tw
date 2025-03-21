@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, shut down the controller 
-summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
+summary: 關閉 AFF C30 或 AFF C60 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定性。 
 ---
 = 關閉功能受損的控制器 - AFF C30 和 AFF C60
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機�
 
 
 [role="lead"]
-關閉或接管受損的控制器。
+關閉 AFF C30 或 AFF C60 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定性。
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
@@ -63,3 +63,6 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 |===
 
+
+.接下來呢？
+關閉控制器之後，您需要link:bootmedia-replace.html["更換開機媒體"]執行。

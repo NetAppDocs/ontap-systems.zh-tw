@@ -2,7 +2,7 @@
 permalink: asa-r2-a1k/bootmedia-shutdown-bmr.html 
 sidebar: sidebar 
 keywords: asa r2 a1k, shut down the controller 
-summary: 當您需要更換開機媒體時，請關閉 ASA A1K 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。 
+summary: 關閉 ASA A1K 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定性。 
 ---
 = 關閉控制器以更換開機媒體 - ASA A1K
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當您需要更換開機媒體時，請關閉 ASA A1K 儲存系統中�
 
 
 [role="lead"]
-當您需要更換開機媒體時，請關閉 ASA A1K 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。
+關閉 ASA A1K 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定性。
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 

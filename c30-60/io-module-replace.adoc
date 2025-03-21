@@ -2,7 +2,7 @@
 permalink: c30-60/io-module-replace.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace a pcie card 
-summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。 
+summary: 當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF C30 或 AFF C60 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。 
 ---
 = 更換 I/O 模組 - AFF C30 和 AFF C60
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上�
 
 
 [role="lead"]
+當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF C30 或 AFF C60 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。
+
 請使用此程序來更換故障的 I/O 模組。
 
 .開始之前

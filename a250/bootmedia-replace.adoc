@@ -152,13 +152,16 @@ NOTE: 如果您使用Windows擷取內容、請勿使用WinZipto擷取netboot映�
 
 
 .. 將efi資料夾複製到USB快閃磁碟機的頂端目錄。
+
+
 +
 
 NOTE: 如果服務映像沒有 EFI 資料夾、請參閱link:https://kb.netapp.com/onprem/ontap/hardware/EFI_folder_missing_from_Service_Image_download_file_used_for_boot_device_recovery_for_FAS_and_AFF_models["FAS 和 AFF 機型的開機裝置還原所使用的服務影像下載檔案中遺失 EFI 資料夾 ^"]。
 
 +
-USB快閃磁碟機應具有受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
++ USB快閃磁碟機應具備受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
 
++
 .. 從筆記型電腦中取出USB隨身碟。
 .. 如果您尚未安裝、請安裝通風管。
 +
@@ -195,12 +198,9 @@ image:../media/icon_round_2.png["編號 2"]
 .. 將指標手指放在鎖定機制內側的指孔中。
 .. 向下壓鎖定機制頂端的橘色彈片、然後將控制器模組輕推到停止點上。
 .. 從鎖定機制頂端釋放您的指稱、然後繼續推動、直到鎖定機制卡入定位為止。
-
-
 +
 控制器模組應完全插入、並與機箱邊緣齊平。
 
-+
 .. 將電源線插入電源供應器，重新安裝電源線鎖環，然後將電源供應器連接至電源。
 +
 控制器模組會在電源恢復後立即開始開機。準備好中斷開機程序。

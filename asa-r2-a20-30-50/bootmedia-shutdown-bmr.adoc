@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-shutdown-bmr.html 
 sidebar: sidebar 
-keywords: aff a20, aff a30, aff a50, shut down the controller 
+keywords: asa a20, asa a30, asa a50, shut down the controller 
 summary: 您需要完成受損控制器的關機。 
 ---
 = 關閉控制器 - ASA A20 ， ASA A30 和 ASA A50
@@ -11,7 +11,7 @@ summary: 您需要完成受損控制器的關機。
 
 
 [role="lead"]
-您需要完成受損控制器的關機。關閉或接管受損的控制器。
+當您需要更換開機媒體時，請關閉 ASA A20 ， ASA A30 或 ASA A50 儲存系統中的控制器。在執行維護或元件更換之前，請務必安全關閉控制器，以避免資料遺失並確保系統穩定性。
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
@@ -65,4 +65,4 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 
 .下一步
-關閉受損的控制器後link:bootmedia-replace-bmr.html["更換開機媒體"]，。
+當您關閉受損的控制器之後link:bootmedia-replace-bmr.html["更換開機媒體"]，您將會。

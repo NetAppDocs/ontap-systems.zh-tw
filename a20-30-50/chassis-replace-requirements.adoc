@@ -2,15 +2,17 @@
 permalink: a20-30-50/chassis-replace-requirements.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, replace the chassis 
-summary: 您可以使用與受損機箱相同型號的新機箱來更換受損機箱。 
+summary: 在更換 AFF A20 ， AFF A30 或 AFF A50 系統中的機箱之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。 
 ---
-= 機箱更換需求 - AFF A20 ， AFF A30 和 AFF A50
+= 更換機箱的需求 - AFF A20 ， AFF A30 和 AFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在更換 AFF A20 ， AFF A30 或 AFF A50 系統中的機箱之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。
+
 在更換機箱之前，請務必檢閱下列需求和考量事項。
 
 
@@ -36,3 +38,6 @@ summary: 您可以使用與受損機箱相同型號的新機箱來更換受損�
 您可以輸入命令將其關閉 `system location-led _off_`。如果您不確定 LED 是否亮起或熄滅，可以輸入命令來檢查其狀態 `system location-led show`。
 
 
+
+.接下來呢？
+在您檢閱更換機箱的需求之後，您需要link:chassis-replace-shutdown.html["關閉控制器"]

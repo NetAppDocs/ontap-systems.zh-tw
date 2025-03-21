@@ -2,7 +2,7 @@
 permalink: c30-60/controller-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, move the controller module hardware 
-summary: 若要更換控制器模組、您必須移除受損的控制器、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。 
+summary: 如果需要硬體故障，請更換 AFF C30 或 AFF C60 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。 
 ---
 = 更換控制器 - AFF C30 和 AFF C60
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 若要更換控制器模組、您必須移除受損的控制器、將FR
 
 
 [role="lead"]
+如果需要硬體故障，請更換 AFF C30 或 AFF C60 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。
+
 若要更換控制器，您必須移除受損的控制器，將 FRU 元件從受損的控制器移至更換控制器，在機箱中安裝更換控制器，設定時間和日期，然後重新安裝更換控制器。
 
 
@@ -627,3 +629,6 @@ DC PSU
 
 |===
 
+
+.接下來呢？
+更換損壞的 AFF C30 或 AFF C60 控制器之後，您需要link:controller-replace-system-config-restore-and-verify.html["還原系統組態"]。

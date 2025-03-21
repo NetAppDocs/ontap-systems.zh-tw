@@ -2,7 +2,7 @@
 permalink: a20-30-50/chassis-replace-move-hardware.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, move hardware components, replace the chassis 
-summary: 將擋板，磁碟機和控制器模組從功能受損的機箱移至新機箱，然後將設備機架或系統機櫃中的受損機箱換成與功能受損機箱相同型號的新機箱。 
+summary: 如果需要硬體故障，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的機箱。更換程序包括移除控制器和電源供應器（ PSU ），從損壞的機箱中移除磁碟機，安裝更換的機箱，以及重新安裝機箱元件。 
 ---
 = 更換機箱 - AFF A20 ， AFF A30 和 AFF A50
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 將擋板，磁碟機和控制器模組從功能受損的機箱移至�
 
 
 [role="lead"]
+如果需要硬體故障，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的機箱。更換程序包括移除控制器和電源供應器（ PSU ），從損壞的機箱中移除磁碟機，安裝更換的機箱，以及重新安裝機箱元件。
+
 將磁碟機，任何磁碟機擋片，控制器和擋板從損壞的機箱移到更換機箱（相同機型），然後將損壞的機箱裝回設備機架或系統機櫃。
 
 
@@ -293,3 +295,6 @@ DC PSU
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.接下來呢？
+在您更換了功能受損的 AFF A20 ， AFF A30 或 AFF A50 機箱並將其重新安裝到其中之後link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]，您需要。

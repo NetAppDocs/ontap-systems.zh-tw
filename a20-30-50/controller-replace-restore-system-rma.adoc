@@ -2,7 +2,7 @@
 permalink: a20-30-50/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: aff a20, aff a30, aff a50, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。 
+summary: 若要將 AFF A20 ， AFF A30 或 AFF A50 系統還原為完整運作，請在新的控制器上安裝所需的授權，確認邏輯介面已回報至其主連接埠，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。 
 ---
 = 完整更換控制器： AFF A20 ， AFF A30 和 AFF A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 若要將系統還原為完整作業、您必須驗證生命、檢查�
 
 
 [role="lead"]
-還原 NetApp 儲存加密組態（如有必要），安裝替換控制器的授權，驗證邏輯介面（生命週期）是否回報其主連接埠，執行叢集健全狀況檢查，登錄更換控制器的序號，然後將故障零件退回 NetApp ，以完成 AFF A20 ， AFF A30 或 AFF A50 控制器更換程序的最後步驟。
+若要完成 AFF A20 ， AFF A30 或 AFF A50 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。
 
 
 

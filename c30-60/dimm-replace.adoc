@@ -2,7 +2,7 @@
 permalink: c30-60/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace a dimm 
-summary: 當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。 
+summary: 當系統登錄越來越多的可修正錯誤修正碼（ ECC ）時，請更換控制器模組中的 DIMM ；否則會造成系統故障。 
 ---
 = 更換 DIMM - AFF C30 和 AFF C60
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加�
 
 
 [role="lead"]
+如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF C30 或 AFF C60 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。
+
 當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。
 
 .開始之前

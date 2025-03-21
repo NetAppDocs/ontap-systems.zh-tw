@@ -2,15 +2,17 @@
 permalink: c30-60/bootmedia-replace-requirements.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the boot media 
-summary: 瞭解更換開機媒體的需求。 
+summary: 在更換 AFF C30 或 AFF C60 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。 
 ---
-= 開機媒體需求 - AFF C30 和 AFF C60
+= 更換開機媒體的需求 - AFF C30 和 AFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在更換 AFF C30 或 AFF C60 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。
+
 在更換開機媒體之前，請務必檢閱下列需求和考量事項。
 
 
@@ -40,3 +42,6 @@ summary: 瞭解更換開機媒體的需求。
 您可以輸入命令將其關閉 `system location-led _off_`。如果您不確定 LED 是否亮起或熄滅，可以輸入命令來檢查其狀態 `system location-led show`。
 
 
+
+.接下來呢？
+在您檢閱了更換開機媒體的需求之後link:bootmedia-encryption-preshutdown-checks.html["檢查開機媒體上的加密金鑰支援和狀態"]，您需要執行。
