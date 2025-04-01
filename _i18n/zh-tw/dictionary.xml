@@ -8795,7 +8795,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ab7ef1e990b02e4f310f950e86665f24" category="list-text">在控制器 B 上、連接下列連接埠：</block>
   <block id="9567b57fbc256ab6a2a904d9e65e90fc" category="paragraph">使用<block ref="2b7eb894c1625ebcb138cf06e4e24423" category="inline-link-rx"></block> 記錄叢集設定程序期間所需的值。如果提供預設值、您可以使用該值、或輸入自己的值。</block>
   <block id="2b613a5cfe94ed4e246fd0b8d8e788d7" category="inline-link-macro">開啟儲存系統電源</block>
-  <block id="62b1b8fecbe53d21e29b3193b917d52b" category="paragraph">請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。如需相關指示、請參閱 <block ref="7c573676638f479dced3a24193374cdc" category="inline-link-macro-rx"></block> 。</block>
   <block id="c0cca90a0ea793a9983b3bf5d8f21117" category="paragraph">NetApp 建議您使用系統管理員來設定新叢集。如需設定說明、請參閱<block ref="21993ef26df9bd69488ae5f93ea51b95" category="inline-link-rx"></block> 。</block>
   <block id="25e29897c37b7e5f9f9f0d8aac2e8c21" category="list-text">請務必備有軌道套件隨附的說明。</block>
   <block id="cd5270ea2c99376e2e028058d02bfa65" category="list-text">瞭解透過儲存系統的氣流從安裝擋板或端蓋的前端進入、並排出連接埠所在的後端。</block>
@@ -9876,16 +9875,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a475b089bd1d54a48dc02d6327ce3723" category="paragraph">HA 狀態的值應為 _ha_ 。</block>
   <block id="9c6a064471e1d988a3b10d26ed1c4d09" category="list-text">如果您尚未重新設定儲存系統的其餘部分，請重新調整。</block>
   <block id="90c5817c78a73467a558dc23bd5e4f4c" category="list-text">對機箱中的其他控制器重複這些步驟。</block>
-  <block id="45d69e7bdfec0647cf3523f57e30a808" category="section-title">步驟 2 ：從損壞的機箱中取出磁碟機</block>
-  <block id="c0055725498ec7c6a2d459f6d18aef46" category="paragraph">您需要從損壞的機箱中移除所有磁碟機和任何磁碟機擋片，以便稍後在程序中安裝它們到更換的機箱中。</block>
   <block id="dd96419c0010405119a86fda57cc77f4" category="list-text">從儲存系統正面輕輕卸下擋板。</block>
-  <block id="3e56a6d3defe800cc97429c918a7c4fb" category="list-text">卸下磁碟機和任何磁碟機擋片：</block>
-  <block id="ba52981b53ce10a301f84e2da386c778" category="admonition">請追蹤每個磁碟機和磁碟機擋片從哪個磁碟機支架中移除，因為它們必須安裝在更換機箱的相同磁碟機支架中。</block>
   <block id="802e81544e7cd56335454cb3f02f6c1a" category="image-alt">移除 NVMe 磁碟機</block>
   <block id="36c4bb9266e617d3ca8a33eb9502e855" category="paragraph">向下轉動 CAM 把手，將磁碟機從中間背板上鬆脫。</block>
   <block id="72b54ea7be3a13b4755dc4521c8d0af6" category="paragraph">使用 CAM 把手將磁碟機滑出磁碟機支架，並用另一隻手支撐磁碟機。</block>
   <block id="0093c88dee6ce91e0bd8ccb1cfbc03ff" category="admonition">由於磁碟機很脆弱，因此請盡量減少處理，以免損壞它們。</block>
-  <block id="ab32ae446e6fa5de50a5d631bbe01daf" category="list-text">將磁碟機放在一旁的無靜電推車或桌面上。</block>
   <block id="0649d37403624118b801efa8956dc716" category="section-title">步驟 3 ：從設備機架或系統機櫃內更換機箱</block>
   <block id="e5a4b20c56ed46e589289f6e1a9368dd" category="paragraph">您可以從設備機架或系統機櫃中移除受損的機箱，安裝替換機箱，安裝磁碟機，任何磁碟機擋片，然後安裝擋板。</block>
   <block id="eb8def779f4d3e61a371ec65c0cc0128" category="list-text">從受損的機箱安裝點取下螺絲。</block>
@@ -9903,8 +9897,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a49827c76ee70fdd179847c88075dc56" category="list-text">用力推手柄，直到控制器與中板相接觸，並完全插入機箱。</block>
   <block id="3056a592db17bf1d39a65418c696f961" category="list-text">視需要重新拔插控制器，但電源線除外。</block>
   <block id="707d1581f04f57894e17cb3cafe9b845" category="list-text">重複這些步驟，將第二個控制器安裝到機箱中。</block>
-  <block id="a6d6e73e138675b6ffbbb0e4663b2d5d" category="list-text">將您從受損機箱中卸下的磁碟機和任何磁碟機擋片安裝到替換機箱中：</block>
-  <block id="4a7738e24d9329241e05c40def3be102" category="admonition">磁碟機和磁碟機擋片必須安裝在更換機箱的相同磁碟機支架中。</block>
   <block id="8434f030a8261109d70a0f1ab5da399d" category="list-text">在凸輪把手處於開啟位置時，用雙手插入磁碟機。</block>
   <block id="969b8fc5cc51be52f8dce30f8f2d4b34" category="list-text">輕輕推動直到磁碟機停止。</block>
   <block id="1b247863479c60a2779b5eedef888d17" category="list-text">對其餘磁碟機重複此程序。</block>
@@ -10712,7 +10704,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4572f45ac79ded53bd57f95eaf949d13" category="doc">安裝需求 - AFF C30 和 AFF C60</block>
   <block id="2795470282b110353916b87e8a68ea10" category="paragraph">開啟 AFF C80 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
   <block id="021fad57648b2198deca585e8c317a71" category="paragraph">開啟 FAS70 或 FAS90 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
-  <block id="4c92eb29f2a257faff3e90e45cf70459" category="paragraph">DS460C 機櫃最重可達 260.4 磅（ 181.1 公斤）。若要抬起儲存架、您可能需要最多五個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。</block>
   <block id="510996b7cd8e0bf946a50e1f000afbe2" category="paragraph">SuperRail 可安裝在標準的方孔四柱機架上，或是使用圓孔對方孔配接器支架，安裝在標準的四柱式四柱式機架上。</block>
   <block id="090baac144fae3a90d22bb679e0194a6" category="sidebar">AFF A20 ， AFF A30 和 AFF A50 開機媒體</block>
   <block id="f923335af94abdb12e15d306f375ccba" category="sidebar">AFF A20 ， AFF A30 和 AFF A50 I/O 模組</block>
@@ -11593,7 +11584,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0d7d91e5c0ba14682d8accd0725bd4f8" category="paragraph">檢閱下列需求與考量事項。</block>
   <block id="26bdea20d97a5dc3ed17ac3abb94f903" category="paragraph">檢閱控制器更換程序的要求與考量事項。</block>
   <block id="b00e817c5e070498acf083d5cdea215d" category="paragraph">請確定您有迴紋針或窄尖圓珠筆來設定 NS224 儲存櫃 ID 。</block>
-  <block id="dac54bdee97e00ed11513b711808fbbb" category="list-text">您必須關閉 SAS 機櫃背面的電源開關，等待適當的時間，然後重新開啟電源，機櫃 ID 才會生效。</block>
   <block id="7ca755a8f6cc07b6b9e0fb7e1b6c9a09" category="list-text">先將電源線連接至機櫃，然後使用電源線固定器將電源線固定到位，再將電源線連接至不同電路上的電源，然後開啟每個電源供應器（位於機櫃背面）上的電源開關，以開啟機櫃電源。</block>
   <block id="58664d0a6ee33336810fe2050bd807f7" category="paragraph">機櫃開機時會自動開機。</block>
   <block id="ba79a134cbfbf535ef0d30ec122fd9fb" category="list-text">取下左端蓋，即可存取面板上的橘色機櫃 ID 按鈕。</block>
@@ -11610,7 +11600,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7c72724f0b6450fb95e7722b18d2e78f" category="summary">在更換 AFF A20 ， AFF A30 或 AFF A50 系統的機箱之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。</block>
   <block id="6c5e82deb6f3de231e3eb286f77e492f" category="paragraph">在您檢閱了更換機箱的需求之後<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="e7eea0ad5ba5d4f18a6414b3197206c3" category="summary">首先，請檢閱更換需求，關閉控制器，更換機箱，以及驗證系統作業，以更換 AFF A20 ， AFF A30 或 AFF A50 儲存系統的機箱。</block>
-  <block id="dcde20e17b1c5c80f1f980da5150736e" category="list-text">系統機箱正面的機櫃 ID 不會亮起。系統的內部機櫃 ID 固定為 00 。</block>
   <block id="b299bf8f9276ecc9c20cd1ae118c9799" category="list-text">使用每個電源供應器上的固定裝置固定電源線。： A20-30-50 ！：</block>
   <block id="12c8eb3808a13f0adea4f2c3d86acb4c" category="image-alt">AFF A20 A30 A50 ， C30 和 C60 重量注意圖示</block>
   <block id="90c51f2e3ac0e73e60b00bd0eba8b946" category="doc">新增 I/O 模組： AFF A20 ， AFF A30 和 AFF A50</block>
@@ -11710,4 +11699,181 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9f4af5ab487f7477da2dd13bdd9a635c" category="paragraph">使用圖示將堆疊二中的磁碟機櫃彼此連接以供參考。</block>
   <block id="5314841cf1990f9c696f41eaf702eb4f" category="image-alt">DRW 自動探索控制器選擇 iops 1849</block>
   <block id="4c871f3eceeb63ae32259cd45a0be767" category="list-text">按一下左窗格中的「網路」，然後按一下滑鼠右鍵並選取「重新整理」。</block>
+  <block id="08308f65214c45c04131a1ad77f35101" category="list-text">儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡，<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續執行此程序。</block>
+  <block id="6c9f2761d7d74eb3a979daf442af39b5" category="paragraph">請確定儲存系統中的所有其他元件都正常運作；否則，您必須先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>，才能繼續執行此程序。</block>
+  <block id="452dbbce25fd2a411a98a68c759a30a7" category="paragraph">HA 狀態的值應為 _ha_ 。HA 狀態的值可以是以下值之一： *** _ha_ *** _MCC_ （ ASA 不支援）</block>
+  <block id="944a42cded90e80d0304a07ec28b9a33" category="section-title">步驟 2 ：從受損機箱中移除快取模組</block>
+  <block id="d7906265ec3e4443fc6dc14ccbf13357" category="paragraph">您需要從損壞的機箱中移除任何快取模組和磁碟機擋片，以便稍後在程序中安裝它們到更換的機箱中。</block>
+  <block id="54418dee1efbdcdf7f7e4f53c224f259" category="list-text">移除快取模組和磁碟機擋片：</block>
+  <block id="a4453fe1e94237d231fc2f4878753194" category="admonition">請追蹤每個快取模組和磁碟機擋片從哪個磁碟機支架中移除，因為它們必須安裝在更換機箱的相同磁碟機支架中。</block>
+  <block id="4feff098827182c526ab95ef83e78f24" category="image-alt">fas50 快取模組更換步驟圖</block>
+  <block id="9a4b2d8c6321f069d147bd3a6aab1771" category="paragraph">按下模組面上的釋放按鈕以開啟 CAM 把手。</block>
+  <block id="078ab15ebb81d82e85799292435daed5" category="paragraph">向下轉動 CAM 把手，將模組從中間背板上鬆脫。</block>
+  <block id="3696cc02cc4e1d6727f9f15be51f46c4" category="paragraph">使用 CAM 把手將模組滑出磁碟機支架，並用另一隻手支撐模組。</block>
+  <block id="12399a516954dd0843cdcb19410dd141" category="paragraph">移除模組時，請務必用雙手支撐模組的重量。</block>
+  <block id="9222b175cf0c7af5a9ebb98fd1fd266f" category="list-text">將快取模組放在一旁的無靜態推車或桌面上。</block>
+  <block id="fb042e101845ff5cfb8e58953697dd25" category="list-text">將您從受損機箱中移除的快取模組和磁碟機擋片安裝到替換機箱中：</block>
+  <block id="08a3990a102599592f1bfa837fdb4b59" category="admonition">快取模組和磁碟機擋片必須安裝在替換機箱的相同磁碟機支架中。</block>
+  <block id="7efc069c2d6033d673e36b12fe42467a" category="paragraph">您必須檢閱控制器更換程序的要求與考量事項。</block>
+  <block id="8e02634dbf9dfd6114030109a952c94d" category="list-text">儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續。</block>
+  <block id="cb4319361e919e892411df69baf2763b" category="paragraph">若要更換風扇，您必須卸下控制器，卸下故障風扇，安裝更換風扇，然後重新安裝控制器。</block>
+  <block id="1ceae8e0ff0bec3c4a785784e13c38e0" category="paragraph">請使用此程序來更換故障的 I/O 模組。</block>
+  <block id="72cad785e17debea8fb89d72f80450e0" category="paragraph">若要更換 NV 電池，您必須取下控制器，取出故障電池，安裝更換電池，然後重新安裝控制器。</block>
+  <block id="837c47c934f14522b94248f34ec495be" category="paragraph">您可以更換控制器中的即時時鐘（ RTC ）電池，讓儲存系統的服務和應用程式能夠繼續運作，而這些服務和應用程式則需仰賴精確的時間同步。</block>
+  <block id="55eba7ecf8d7b61636e734c095e4ed8c" category="paragraph">請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。</block>
+  <block id="91860a8cf69554e12c3e3a5720821c5a" category="list-text">您必須關閉每個 SAS 機櫃電源供應器的電源開關，等待適當的時間，然後重新開啟電源），機櫃 ID 才會生效。</block>
+  <block id="f5afd4b6c78c970d9b9f36473a81eb43" category="paragraph">DS460C 機櫃最重可達 260.4 磅（ 181.1 公斤）。若要抬起儲存架，您可能需要最多五個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。</block>
+  <block id="33ae25491bd1a8a3daa58c3e044ddc6f" category="doc">將故障零件退回 NetApp - FAS50</block>
+  <block id="cb898608072ab3625e9f94c0f82cbc2f" category="paragraph">如果 FAS50 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
+  <block id="ddcc1fe805cfc4158d50ee0c9f6ad59c" category="doc">重新安裝控制器 - FAS50</block>
+  <block id="739ec770fb0f54d0a185f727d0e59411" category="doc">移除控制器 - FAS50</block>
+  <block id="0277d6392a2af9f708f9e4369e630a19" category="summary">為了確保 FAS50 儲存系統的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
+  <block id="f1079072d592c82515d925fae16c5721" category="doc">檢查機載加密金鑰 - FAS50</block>
+  <block id="0c7c2005d76982e23553fd1d3514150c" category="summary">在 FAS50 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。</block>
+  <block id="0151d2e25a624c9dbf01c9da862a2efb" category="doc">還原加密 - FAS50</block>
+  <block id="16d1af605f4fcd33a64f8a2ed880330e" category="summary">在 FAS50 系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。</block>
+  <block id="d21d0e8ba826df129a1cd71f29ee4d5e" category="doc">開機恢復映像： FAS50</block>
+  <block id="56429bb6d74550cd9c5360f41397c6de" category="summary">在更換 FAS50 系統中的開機媒體之前，請確保您符合成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。</block>
+  <block id="aeba6c8bbaea20952c636da581b7a8c2" category="doc">開機媒體更換需求 - FAS50</block>
+  <block id="062f7c310d8631c5c060416fd38b1228" category="doc">開機媒體更換工作流程： FAS50</block>
+  <block id="1d7e5e0e3df76ac9dc695510c92b0468" category="paragraph">請依照下列工作流程步驟來更換開機媒體。</block>
+  <block id="bd898a77e63b1dd4978b864491e6c7b0" category="summary">FAS50 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除控制器模組，移除受損的開機媒體，安裝更換的開機媒體，然後將 ONTAP 映像傳輸至更換的開機媒體。</block>
+  <block id="719e92c119e580be0fedfe1616953620" category="doc">更換開機媒體： FAS50</block>
+  <block id="c518e6003337d8c1efff7e119d9365d2" category="summary">關閉 FAS50 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定。</block>
+  <block id="079acc3f3f4418c4b4c1010b6fa2edff" category="doc">關閉控制器以更換開機媒體： FAS50</block>
+  <block id="5f8c2ad1061532c9035fde45699f108c" category="summary">您可以從相同或不同支援的廠商熱交換相同容量的 NVMe SSD Flash Cache 模組（快取模組）。</block>
+  <block id="3645f29f6c8c221f20d7813f0fa26a50" category="doc">熱交換快取模組： FAS50</block>
+  <block id="375300c4c74d065b6e97b93cfb47065f" category="paragraph">您可以從相同或不同支援的廠商熱交換相同容量的 NVMe SSD 快取模組（ Flash Cache 模組）。</block>
+  <block id="8ebd59de86e8c4e921b201cca97c0308" category="list-text">您的儲存系統必須具備適當的作業系統，才能用於您要安裝的快取模組。</block>
+  <block id="b8c60af649b796482380a3f6a76bbe83" category="list-text">儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續。</block>
+  <block id="cc2fe3a3c64e24b07aa04c80f9e847e5" category="list-text">在快取模組正面，以亮起的琥珀色警示 LED 燈找出故障快取模組。</block>
+  <block id="a2a6e52f9ed0f0942796917dad1d8983" category="paragraph">快取模組可以位於磁碟機支架 0 或 23 中。</block>
+  <block id="62e950648d145fe8127106ed64a26ffc" category="list-text">插入替代快取模組之前，請至少等待 70 秒。</block>
+  <block id="c212e76764548ecbad1eec55aa51a425" category="list-text">在凸輪把手處於開啟位置時，請用雙手插入模組。</block>
+  <block id="654ae1f780a7bf81f96af9189ef4e099" category="list-text">輕輕推動，直到模組停止。</block>
+  <block id="f4766f330ca30e7a625e2b5dbae44be1" category="list-text">關閉 CAM 把手，使模組完全插入中間背板，把手卡入定位。</block>
+  <block id="dc327f7dba7a06bc6de0e2276d46d0a4" category="paragraph">請務必緩慢關閉凸輪把手，使其與模組正面正確對齊。</block>
+  <block id="b99f6dafb7ef9e4ba4319aeb859a0f74" category="list-text">確認模組的活動（綠色） LED 亮起。</block>
+  <block id="69013c48c40dc96bdb9016813612271b" category="summary">驗證機箱的 HA 狀態，然後將故障零件送回 NetApp ，以完成 FAS50 機箱更換程序的最後步驟。</block>
+  <block id="71ca5fa859d5d656d350997252618cfd" category="doc">完整機箱更換： FAS50</block>
+  <block id="c39f2ee0c21b22242c863103ccffba7b" category="summary">如果需要硬體故障，請更換 FAS50 系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除任何快取模組，安裝替換機箱，以及重新安裝機箱元件。</block>
+  <block id="f7fd8733f7a1cdfb735457344642d65a" category="doc">更換機箱- FAS50</block>
+  <block id="43c0e4ff98cea4dff4c5c25388cd5bdb" category="paragraph">更換受損的 FAS50 機箱並將元件重新安裝到其中之後<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="92b1dd9a60c1d18f7606ce281d72ad2d" category="summary">在更換 FAS50 系統的機箱之前，請確保您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。</block>
+  <block id="b6658ca07f1d7034f64ec87009aff148" category="doc">機箱更換需求 - FAS50</block>
+  <block id="d5558ef85c97f84228e8ede4f9fe68a6" category="summary">關閉 FAS50 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定性。</block>
+  <block id="975d6c51bb7949ae1d3665c5ddf83cd9" category="doc">關閉控制器 - FAS50</block>
+  <block id="9d9651f97ee43fc1894d70b8fca0c55f" category="doc">機箱更換工作流程： FAS50</block>
+  <block id="64e923d27d8f20b1c39e996784b889e8" category="paragraph">請依照下列工作流程步驟更換機箱。</block>
+  <block id="d46dfcea882ba1b154e777304a052dbb" category="paragraph">更換機箱包括將磁碟機擋片，任何快取模組，控制器（使用電源供應器）和擋板從受損機箱移至新機箱，並將受損機箱換成與受損機箱相同機型的新機箱。</block>
+  <block id="f8ab9ad62f54fefd22c0d90bef055198" category="summary">如果需要硬體故障，請更換 FAS50 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
+  <block id="b8642444bf8dd9a7f955ef4d53c42954" category="doc">更換控制器 - FAS50</block>
+  <block id="38ebe64559125444b42957c926d9309b" category="paragraph">更換功能受損的 FAS50 控制器後<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="f47617ad2fb9ec35e7f692f630cf213c" category="summary">將儲存資源的控制權歸還更換控制器，讓 FAS50 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
+  <block id="f82377f16c8e20dd1aa1d107e057ab26" category="doc">退回控制器： FAS50</block>
+  <block id="94346bd4e393d4a734081b75a7200d5c" category="doc">控制器更換要求 - FAS50</block>
+  <block id="18850df12d6d3905c171cf3b41eb6ff7" category="summary">若要完成 FAS50 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。</block>
+  <block id="6a9ca21da69005485aa97597c969ab06" category="doc">完整更換控制器： FAS50</block>
+  <block id="73b625912eebd490af94249495a8a3ff" category="summary">關閉 FAS50 儲存系統中受損的控制器，以防止資料遺失，並確保更換控制器時系統穩定。</block>
+  <block id="47a8a5d1c629f2781c2ebb30539303b9" category="doc">關閉功能受損的控制器 - FAS50</block>
+  <block id="49945f2cad4c9c368059dd754d754f6a" category="summary">確認控制器的 HA 組態在 FAS50 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
+  <block id="c8401b5380a5df9e9eb71687aa5cbf9f" category="doc">還原並驗證系統組態： FAS50</block>
+  <block id="2c4ddbd4f1c1216183f0c5bd566a6763" category="paragraph">在您還原並驗證 FAS50 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您需要。</block>
+  <block id="5f4615774f4a50ce4e2b4677a17e8e75" category="doc">控制器更換工作流程： FAS50</block>
+  <block id="fdfa46ff546c241fb59ecec0b3caccd1" category="paragraph">請依照下列工作流程步驟來更換控制器。</block>
+  <block id="72b60d2ae609d3cbfaf3bd48263c8ae5" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 FAS50 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
+  <block id="83182c55d59f50af3178dc292ed9f781" category="doc">更換 DIMM - FAS50</block>
+  <block id="b12e36ec5c23c2b057b2d1aff5582fd9" category="summary">當風扇故障或無法有效運作時，請更換 FAS50 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="14c5b0713d5ac9cac842b3b9d9f1c6e9" category="doc">更換風扇模組： FAS50</block>
+  <block id="c553f0c394c115c59a3770645eef6aac" category="summary">維護 FAS50 硬體</block>
+  <block id="aedcdd21a0c77de5f96885987dfadefb" category="doc">維護 FAS50 硬體</block>
+  <block id="b58ab625a31715db771c75c8ea90990d" category="paragraph">對於 FAS50 儲存系統，您可以在下列元件上執行維護程序。</block>
+  <block id="24b87f9884757dfe5ebe74a987ca5489" category="doc">硬體佈線： FAS50</block>
+  <block id="176d935f21584d13a73cc2fee6d2006f" category="paragraph">安裝 FAS50 儲存系統硬體後，請將控制器連接至網路和機櫃。</block>
+  <block id="e7bd234f89aa10fe2a25ab70f1881386" category="example-title">FAS50 配備一個雙埠 40/100 GbE I/O 模組</block>
+  <block id="ab0929853066bc5afff8f565bc7e138d" category="image-alt">使用一個 100GbE IO 模組的無交換器叢集佈線圖</block>
+  <block id="f5e2edd1a08f37ae784f4706be49b73d" category="admonition">叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 40/100 GbE 。</block>
+  <block id="587bed5e1b1013acb3b0cad78e0dc97f" category="inline-image-macro">使用一個 100GbE IO 模組的 fas50 交換式叢集佈線圖</block>
+  <block id="5af61e2d32561bdfd725b4ff1abad33d" category="paragraph"><block ref="5af61e2d32561bdfd725b4ff1abad33d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="30116aad52f0bad698fa0cb2a523a7d2" category="example-title">FAS50 配備一個 4 埠 10/25 GbE I/O 模組</block>
+  <block id="83ed0059cf7b8565a69e40d218194766" category="image-alt">纜線 fas50 至 10/25GbE 乙太網路主機網路交換器</block>
+  <block id="97999a10174c7270f80d69a61f881c34" category="example-title">FAS50 配備一個 4 埠 64 Gb/s FC I/O 模組</block>
+  <block id="4af0635b9b0fa01d90348d64d44ac5a7" category="paragraph">下列程序說明如何將控制器連接至一或兩個 DS460C 機櫃。</block>
+  <block id="0d4ae2c19fb1eec9c73a9ba31cf7b80f" category="list-text">佈線範例顯示 DS460C 機櫃；但支援額外的 SAS 機櫃<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>，請參閱。</block>
+  <block id="dc59d157ac5f286eedfff99a1bb61862" category="inline-link-macro">安裝並連接新系統安裝所需的機櫃</block>
+  <block id="016ce9a551ae5a3866c3feb9f430f867" category="inline-link-macro">SAS 纜線路徑，工作表和範例概觀</block>
+  <block id="41f30de602f778bd37fd94cde0e93d98" category="paragraph">其他支援的 SAS 磁碟櫃的纜線類似。請參閱。 <block ref="c0d7aa9ee22aab3ecf7bf0fe7732f94e" category="inline-link-macro-rx"></block>您也可以參閱<block ref="f178d666cc0e8ba0d12eda1a67319fdb" category="inline-link-macro-rx"></block>。</block>
+  <block id="0bf36a9d3e5241c7c2a803cca8393af0" category="list-text">如需儲存系統支援的最大機櫃數量，以及所有的纜線選項，例如光纖和交換器連接選項<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>，請參閱。</block>
+  <block id="72d885b36f3dabe9e44ce371442073d6" category="list-text">您可以使用儲存系統隨附的儲存纜線，其纜線類型可能如下：</block>
+  <block id="72f4035027f2f7ca82b0a522cc86f866" category="open-title">選項 1 ：一個 DS460C 機櫃</block>
+  <block id="1475db94c866c1134ab5b90020f91d8e" category="paragraph">將每個控制器連接至 DS460C 機櫃上的每個 IOM12 模組。</block>
+  <block id="4148c23baf0acb2d5a889bf39e98d451" category="list-text">纜線控制器 A 連接埠 3a 至 IOMA 連接埠 1 。</block>
+  <block id="83622a8ebd61bb324e46d859d063a629" category="list-text">纜線控制器 A 連接埠 3D 至 IOMB 連接埠 3 。</block>
+  <block id="e9c2e0916e87c8e70c3f414d7a2a3171" category="inline-image-macro">控制器 A 連接埠 3a 和 3D 連接至一個 DS460C 機櫃</block>
+  <block id="ad272dab205763d50bc64eb8ffbaab6a" category="paragraph"><block ref="ad272dab205763d50bc64eb8ffbaab6a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="65b2202bf59d69d19c408dfe2eb87eb4" category="list-text">纜線控制器 B 連接埠 3a 至 IOMB 連接埠 1 。</block>
+  <block id="e8849143d50daef61f19b6d8a620b759" category="list-text">纜線控制器 B 連接埠 3D 至 IOMA 連接埠 3 。</block>
+  <block id="ef1647c46666dea72c87973140aae982" category="inline-image-macro">控制器 B 連接埠 3a 和 3D 連接至一個 DS460C 機櫃</block>
+  <block id="e4c4ceb79fe5729418dba70f3d3a4b6f" category="paragraph"><block ref="e4c4ceb79fe5729418dba70f3d3a4b6f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd4b8702e1fece6900211aed1df08297" category="open-title">選項 2 ：兩個 DS460C 機櫃</block>
+  <block id="d5b0fb86b04fadb04b2c1aabdc682124" category="paragraph">將每個控制器連接至兩個 DS460C 機櫃上的 IOM12 模組。</block>
+  <block id="92b6981d91e56c51ed8cd81ceb0c2725" category="list-text">纜線連接機櫃與機櫃：</block>
+  <block id="4a433061aeb5f5489a4f6f2c6998431e" category="list-text">纜線架 1 IOMA 連接埠 3 至機架 2 IOMA 連接埠 1 。</block>
+  <block id="953e03d7a579b26571697352f2be0e05" category="list-text">纜線架 1 IOMB 連接埠 3 至機架 2 IOMB 連接埠 1 。</block>
+  <block id="123ab7e1c9141cb0b7e7b712d202404a" category="inline-image-macro">纜線架與機櫃連接</block>
+  <block id="5b5c504f96f7bd830b1746878c952c52" category="paragraph"><block ref="5b5c504f96f7bd830b1746878c952c52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="32711258ec649d276f0febe359183174" category="list-text">將控制器A纜線連接至磁碟櫃：</block>
+  <block id="8a077fe26258a791808f6c79d3bb7497" category="list-text">纜線控制器 A 連接埠 3a 至機櫃 1 IOMA 連接埠 1 。</block>
+  <block id="3b49545c9e32c779ba99005b8bdb4459" category="list-text">纜線控制器 A 連接埠 3D 至機櫃 2 IOMB 連接埠 3 。</block>
+  <block id="262e032c06dfbe5a4f5e5984c10f93a8" category="inline-image-macro">控制器 A 連接埠 3a 和 3D 連線至兩個 DS460C 機櫃</block>
+  <block id="f55c64664eae8ba733b8672a7ff524f8" category="paragraph"><block ref="f55c64664eae8ba733b8672a7ff524f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a6143a096aca12e23bfad9f1d41fe20" category="list-text">將控制器B纜線連接至磁碟櫃：</block>
+  <block id="0b811f09e9eac5e37e239a12858a54c1" category="list-text">纜線控制器 B 連接埠 3a 至機櫃 1 IOMB 連接埠 1 。</block>
+  <block id="01c7cda26a7b465d1c56f741d328e967" category="list-text">纜線控制器 B 連接埠 3D 至機櫃 2 IOMA 連接埠 3 。</block>
+  <block id="60fee2ee2c3e768d10719c680fb38afb" category="inline-image-macro">控制器 B 連接埠 3a 和 3D 連線至兩個 DS460C 機櫃</block>
+  <block id="7a2d0d2a1e1f5dc3d5184332fb23afba" category="paragraph"><block ref="7a2d0d2a1e1f5dc3d5184332fb23afba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c7a75f3a015710392a8467c08fd9862a" category="doc">完整的儲存系統設定與組態： FAS50</block>
+  <block id="c63c71562f3b83fe3a2793ff2deb8fd5" category="paragraph">開啟 FAS50 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
+  <block id="a48dcb52a80835a67657f668af54582e" category="doc">安裝硬體： FAS50</block>
+  <block id="986b47fd733e9cbf32255b28864ed238" category="paragraph">準備好安裝 FAS50 儲存系統之後，請安裝儲存系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的儲存系統。</block>
+  <block id="4f71d9bde1ecffc22f8c526c10e5381e" category="doc">安裝與設定工作流程： FAS50</block>
+  <block id="1974af6df768391cf88c40aec678571e" category="paragraph">若要安裝和設定 FAS50 儲存系統，您必須檢閱安裝需求，準備站台，安裝硬體元件並連接纜線，開啟儲存系統電源，以及設定 ONTAP 叢集。</block>
+  <block id="dbcb2bc4d50c0b367ad35ab35049f6cf" category="doc">開啟儲存系統電源： FAS50</block>
+  <block id="58a9bceae382f9146952eb764c24eaa4" category="paragraph">將控制器連接到 FAS50 儲存系統的網路和機櫃之後，您就可以開啟機櫃和控制器的電源。</block>
+  <block id="c5c54b199e1cae61ce9f1f8df4d64ad2" category="list-text">系統機箱正面的機櫃 ID 不會亮起。</block>
+  <block id="21b1424b1e644de7e738b04ffc32d5fb" category="list-text">使用每個電源供應器上的固定裝置固定電源線。： fas50-a20-30-50 ！：</block>
+  <block id="64edc211ab70498201f3acbe712ec6a4" category="summary">準備安裝 FAS50 平台。</block>
+  <block id="ba721f2e06c40252a394b51ea95142e3" category="doc">準備安裝 - FAS50</block>
+  <block id="e20b24ffe711fbb4211c8b7f51f10949" category="paragraph">準備好安裝 FAS50 儲存系統，準備好讓網站準備就緒，打開包裝箱，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
+  <block id="bf6f76951a411b87fee677094547f5d4" category="doc">安裝要求 - FAS50</block>
+  <block id="f3239a5f1291696246e54607fd3b9a01" category="paragraph">檢閱 FAS50 儲存系統的需求。</block>
+  <block id="e56a8d138f62f4590eed5655df5c011f" category="paragraph">儲存系統最重可達 53.8 磅（ 24.4 公斤）。若要抬起儲存系統，請使用兩個人或液壓舉升設備。</block>
+  <block id="9c48a8da7b0db1cca470b9010947185e" category="image-alt">FAS50 重量注意圖示</block>
+  <block id="af0319de88f3ed43d4ee4fb8b670c558" category="paragraph">DS460C 機櫃最重可達 260.4 磅（ 181.1 公斤）。若要抬起機架，您可能需要最多五個人或液壓起重。請將所有元件保留在機架中（前後），以避免機架重量不均衡。</block>
+  <block id="7b153c13ff10bb5ce6fd48c3d66f3a2d" category="summary">將 I/O 模組新增至 FAS50 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
+  <block id="26f561223ab76238a005189688efb525" category="doc">新增I/O模組- FAS50</block>
+  <block id="472113a5add68b7f9bf4dce6d45207dd" category="paragraph">當有可用的插槽或所有插槽都已完全填滿時，您可以將 I/O 模組新增至 FAS50 儲存系統。</block>
+  <block id="0da13ed47030f4f6aff66ca53e9ab7bd" category="summary">FAS50 系統可靈活地擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
+  <block id="9f6e0871bc1f665d9d55adeaef141285" category="doc">新增及更換 I/O 模組的總覽 - FAS50</block>
+  <block id="74be49eeaaab5e0816ef02fff20cac31" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 FAS50 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
+  <block id="c65fcc9bc376acee1b7dc4604e426776" category="doc">更換 I/O 模組： FAS50</block>
+  <block id="c296ba9a8987d716f7c569e3d75c754e" category="summary">維護 FAS50 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
+  <block id="651d5528b03e26465b5710deab4b18d5" category="doc">硬體維護總覽： FAS50</block>
+  <block id="92bf596899ecc2dd428dae4ead6350e9" category="paragraph">維護程序假設 FAS50 系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="0c2720f00fff80891cbfa57fc6b79952" category="paragraph"><block ref="0c2720f00fff80891cbfa57fc6b79952" category="inline-link-macro-rx"></block></block>
+  <block id="c83ef2561162a9d1f0f9a046b5027a5f" category="paragraph">快取模組（ Flash Cache 模組）使用高速 SSD 來儲存經常存取的資料，以便更快擷取。</block>
+  <block id="99345c0fa01397fc4834fca8d86e6924" category="summary">當電池開始充電或故障時，請更換 FAS50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
+  <block id="ee30a6d4bd29182df174caa70edbbdf0" category="doc">更換 NV 電池 - FAS50</block>
+  <block id="8847128a12be40ae1b08a6092e93aa11" category="summary">當 FAS50 系統故障或故障時，請更換 FAS50 系統中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能持續獲得所需的電力，以便穩定運作。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。</block>
+  <block id="bfae144eadfeb10d9deaca4eda74d8ca" category="doc">更換電源供應器- FAS50</block>
+  <block id="ac8a37f8b37d0c6890e6847a1c6e4f90" category="summary">更換 FAS50 系統中的實時時鐘（ RTC ）電池（通常稱爲幣形電池），以確保依賴準確時間同步的服務和應用程序保持正常運行。</block>
+  <block id="cd9bb4588a19b474bb2eea89a70d69b9" category="doc">更換實時時鐘電池 - FAS50</block>
+  <block id="d85e5cacacd757755e3d09416d2a8bf8" category="sidebar">FAS50</block>
+  <block id="89c74f56d3077d699f62355b846ecb58" category="sidebar">FAS50 系統</block>
+  <block id="d45586db6404e164f2c1f5e7cee53a63" category="sidebar">FAS50 安裝與設定</block>
+  <block id="e4a119c627ab5c9085b1bc8cdd861028" category="sidebar">FAS50 維護</block>
+  <block id="b27b643308a11f640602b0b02c8a2b53" category="sidebar">FAS50 開機媒體</block>
+  <block id="58a129a196d2bcb0ede5faa90327004e" category="sidebar">FAS50 機箱</block>
+  <block id="e05691d9a469c6dfe5333a08214cfeee" category="sidebar">FAS50控制器模組</block>
+  <block id="58a7a102daa03629c6548f4b567a8bdc" category="sidebar">FAS50 I/O 模組</block>
 </blocks>

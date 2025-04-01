@@ -2,7 +2,7 @@
 permalink: c30-60/install-complete.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, prepare installation 
-summary: 使用叢集探索來完成平台設定與組態、只需連線至交換器和筆記型電腦、或直接連線至儲存系統中的控制器、然後再連線至管理交換器。 
+summary: 開啟 AFF C30 或 AFF C60 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。 
 ---
 = 完整的儲存系統設定與組態： AFF C30 與 AFF C60
 :allow-uri-read: 
@@ -60,7 +60,7 @@ NOTE: xxxxx 是目標節點的儲存系統序號。
 如果您的筆記型電腦未啟用網路探索、請使用 ONTAP 命令列介面（ CLI ）叢集設定精靈來完成組態和設定。
 
 .開始之前
-請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。如需相關指示、請參閱 link:install-power-hardware.html#step-2-power-on-the-controllers["開啟儲存系統電源"] 。
+請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。
 
 .步驟
 將初始節點管理IP位址指派給其中一個節點。

@@ -26,6 +26,10 @@ summary: 將 I/O 模組新增至 AFF A20 ， AFF A30 或 AFF A50 系統，以增
 
 == 步驟 1 ：關閉受損的控制器模組
 
+[role="tabbed-block"]
+====
+.選項1：大多數系統
+--
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 .開始之前
@@ -68,6 +72,57 @@ summary: 將 I/O 模組新增至 AFF A20 ， AFF A30 或 AFF A50 系統，以增
 |===
 
 
+--
+.選項 2 ： MetroCluster 組態
+--
+
+NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+* 如果您使用MetroCluster 的是功能不全的組態、則必須確認MetroCluster 已設定「功能不全」狀態、且節點處於啟用且正常的狀態（「MetroCluster 功能不全」）。
+
+
+.步驟
+. 如果啟用 AutoSupport 、請叫用 AutoSupport 命令來抑制自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
++
+下列 AutoSupport 命令會禁止自動建立案例兩小時： `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示（輸入系統密碼）
+ a| 
+從健全的控制器停止或接管受損的控制器： `storage failover takeover -ofnode _impaired_node_name_`
+
+當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+
+|===
+
+
+--
+====
 
 
 == 步驟 2 ：新增 I/O 模組
@@ -77,7 +132,7 @@ summary: 將 I/O 模組新增至 AFF A20 ， AFF A30 或 AFF A50 系統，以增
 .開始之前
 * 檢查 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以確定新的 I/O 模組與您執行的儲存系統和 ONTAP 版本相容。
 * 如果有多個插槽可用、請檢查中的插槽優先順序 https://hwu.netapp.com/["NetApp Hardware Universe"^] 並使用適用於您I/O模組的最佳工具。
-* 儲存系統中的所有其他元件都必須正常運作；否則，您必須先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]，才能繼續執行此程序。
+* 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
 
 
 [role="tabbed-block"]

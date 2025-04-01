@@ -1,0 +1,51 @@
+---
+permalink: fas50/chassis-replace-complete-system-restore-rma.html 
+sidebar: sidebar 
+keywords: fas50, verify and set HA state, complete the replacement process 
+summary: 驗證機箱的 HA 狀態，然後將故障零件送回 NetApp ，以完成 FAS50 機箱更換程序的最後步驟。 
+---
+= 完整機箱更換： FAS50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+驗證機箱的 HA 狀態，然後將故障零件送回 NetApp ，以完成 FAS50 機箱更換程序的最後步驟。
+
+
+
+== 步驟1：驗證並設定機箱的HA狀態
+
+您必須驗證機箱的 HA 狀態，並視需要更新狀態，以符合您的儲存系統組態。
+
+. 在維護模式中，從任一控制器顯示本機控制器和機箱的 HA 狀態：
++
+`ha-config show`
+
++
+所有元件的HA狀態都應該相同。
+
+. 如果機箱的顯示系統狀態與您的儲存系統組態不符：
++
+.. 設定機箱的HA狀態：
++
+`ha-config modify chassis _HA-state_`
+
++
+HA 狀態的值應為 _ha_ 。HA 狀態的值可以是以下值之一： *** _ha_ *** _MCC_ （ ASA 不支援）
+
+.. 確認設定已變更：
++
+`ha-config show`
+
+
+
+. 如果您尚未重新設定儲存系統的其餘部分，請重新調整。
+
+
+
+
+== 步驟 2 ：將故障零件退回 NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

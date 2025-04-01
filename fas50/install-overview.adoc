@@ -1,0 +1,38 @@
+---
+permalink: fas50/install-overview.html 
+sidebar: sidebar 
+keywords: fas50, Installation, deployment, Install, deploy, Installing, deploying 
+summary: 請遵循這些高階步驟、在 ONTAP 系統中安裝及設定 AFF A70 或 A90 儲存系統、並將其部署為 HA 配對。 
+---
+= 安裝與設定工作流程： FAS50
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要安裝和設定 FAS50 儲存系統，您必須檢閱安裝需求，準備站台，安裝硬體元件並連接纜線，開啟儲存系統電源，以及設定 ONTAP 叢集。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:install-requirements.html["檢閱安裝需求"]
+[role="quick-margin-para"]
+安裝儲存系統之前，必須符合安裝需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["一"]link:install-prepare.html["準備安裝"]
+[role="quick-margin-para"]
+為了準備安裝，請準備好場地，檢查環境和電力需求，並確保有足夠的機架空間。然後，打開設備包裝，將內容物與裝箱單進行比較，並註冊硬體以取得支援效益。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["二"]link:install-hardware.html["安裝硬體"]
+[role="quick-margin-para"]
+若要安裝硬體，請為您的儲存系統和機櫃安裝軌道套件，然後在機櫃或電信機架中安裝並固定儲存系統和機櫃。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["三"]link:install-cable.html["連接硬體纜線"]
+[role="quick-margin-para"]
+若要連接硬體，請將控制器連接至網路，然後再連接至機櫃。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["四"]link:install-power-hardware.html["開啟儲存系統電源"]
+[role="quick-margin-para"]
+若要開啟儲存系統電源，請開啟每個機櫃的電源，並視需要指派唯一的機櫃 ID ，然後開啟控制器的電源。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["五"]link:install-complete.html["完整的儲存系統設定"]
+[role="quick-margin-para"]
+若要完成儲存系統的設定，請將瀏覽器指向控制器的 IP 位址，以存取 ONTAP 系統管理員。安裝精靈可協助您完成儲存系統的叢集組態。
