@@ -45,10 +45,10 @@ NOTE: 如果您看到 _personality mismatch_ ，請聯絡客戶支援部門。
 
 . 如果控制器的顯示系統狀態與您的儲存系統組態不符，請設定 `HA`控制器的狀態：
 +
-`ha-config modify controller ha-state`
+`ha-config modify controller ha`
 
 +
-HA狀態的值可以是下列其中一項：
+HA 狀態的值可以是下列其中一項：
 
 +
 ** 《哈》
@@ -81,4 +81,4 @@ HA狀態的值可以是下列其中一項：
 
 
 .接下來呢？
-在您還原並驗證 AFF C30 或 AFF C60 系統的系統組態之後link:controller-replace-recable-reassign-disks.html["將控制器交回"]，您必須執行。
+還原並驗證系統組態之後link:controller-replace-recable-reassign-disks.html["將控制器交回"]，您必須執行。

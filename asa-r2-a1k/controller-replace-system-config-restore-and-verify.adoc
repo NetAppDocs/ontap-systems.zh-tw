@@ -30,16 +30,16 @@ summary: 確認控制器的 HA 組態在 ASA A1K 儲存系統中為作用中且�
 . 輸入 `sysconfig -v`並擷取顯示內容。
 +
 
-NOTE: 如果您看到 _personality mismatch_ 、請聯絡客戶支援部門。
+NOTE: 如果您看到 _personality mismatch_ ，請聯絡客戶支援部門。
 
 . 從 `sysconfig -v`輸出中、將介面卡資訊與更換控制器中的介面卡和位置進行比較。
 . 確認所有元件都顯示相同的 `HA`狀態： `ha-config show`
 +
 所有元件的HA狀態都應該相同。
 
-. 如果顯示的控制器模組系統狀態與您的系統組態不符、請設定控制器模組的「HA」狀態：「ha-config modify controller ha-state」
+. 如果控制器模組的顯示系統狀態與您的系統組態不符，請設定 `HA`控制器模組的狀態： `ha-config modify controller ha`
 +
-HA狀態的值可以是下列其中一項：
+HA 狀態的值可以是下列其中一項：
 
 +
 ** 《哈》

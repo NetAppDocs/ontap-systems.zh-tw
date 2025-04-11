@@ -79,7 +79,7 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 .步驟
 . 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
-. 回答或 `n`回答 `y`下列問題：
+. 如果出現這些問題，請回答或 `n`視情況回答 `y`：
 +
 您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
 
@@ -88,9 +88,6 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 +
 您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
-
-+
-或
 
 +
 您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝

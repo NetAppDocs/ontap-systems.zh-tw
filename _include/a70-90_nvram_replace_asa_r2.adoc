@@ -25,11 +25,20 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 
 
 .步驟
-. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
 
-. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify -node local -auto-giveback false`
+
 +
 
 NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
@@ -58,17 +67,25 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 
 
 
 
-== 步驟2：更換NVRAM模組
+== 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
 
+使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。
+
+[role="tabbed-block"]
+====
+.選項 1 ：更換 NVRAM 模組
+--
 若要更換 NVRAM 模組、請將其放在機箱的插槽 4/5 中、然後依照特定步驟順序進行。
 
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
@@ -138,10 +155,9 @@ NOTE: 控制器在機箱中完全就位後、就會重新啟動。
 . 將纜線管理承載器向上旋轉至關閉位置。
 
 
-
-
-== 步驟3：更換NVRAM DIMM
-
+--
+.選項 2 ：更換 NVRAM DIMM
+--
 若要更換 NVRAM 模組中的 NVRAM DIMM 、您必須先移除 NVRAM 模組、然後更換目標 DIMM 。
 
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
@@ -214,9 +230,11 @@ NOTE: 控制器在機箱中完全就位後、就會重新啟動。
 . 將纜線管理承載器向上旋轉至關閉位置。
 
 
+--
+====
 
 
-== 步驟 4 ：驗證控制器狀態
+== 步驟 3 ：確認控制器狀態
 
 當您啟動控制器時、必須確認連接到磁碟集區的控制器狀態。
 
@@ -286,6 +304,6 @@ Disk                   Size Shelf Bay Type    Type        Name
 
 
 
-== 步驟5：將故障零件歸還給NetApp
+== 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

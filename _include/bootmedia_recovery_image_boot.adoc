@@ -15,7 +15,7 @@
 .選項 1 ： ONTAP 9 。 16.0 或更早版本
 --
 .. 在功能受損的控制器上、當您看到時 `Do you want to restore the backup configuration now?`按 `Y`
-.. 在功能受損的控制器上、當系統提示您覆寫 /etc/ssh/sd_host_eCDSA_key_ 時、按 `Y`。
+.. 如果出現受損控制器的提示，請按 `Y`以覆寫 _/etc/sssh / host_ECDSA_key_ 。
 .. 在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： `set -privilege advanced`。
 .. 在健全的合作夥伴控制器上、執行還原備份命令： `system node restore-backup -node local -target-address impaired_node_IP_address`。
 +

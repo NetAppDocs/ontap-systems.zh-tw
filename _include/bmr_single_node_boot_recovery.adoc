@@ -40,7 +40,7 @@
 
 . 監控開機媒體安裝恢復程序。
 +
-程序完成並顯示 `Installation complete.`訊息。
+程序完成並顯示 `Installation complete`訊息。
 
 . 系統會檢查加密和加密類型，並顯示兩個訊息中的其中一個。視所顯示的訊息而定，請採取下列其中一項動作：
 +
@@ -335,7 +335,10 @@ kmip2_client: Successfully imported the keys from external key server: xxx.xxx.x
 Successfully recovered keymanager secrets.
 ....
 =====
-*** 如果金鑰未成功還原，系統將會停止，並表示無法還原金鑰。畫面會顯示錯誤和警告訊息。輸入以重新執行恢復程序 `boot_recovery -partner`。
+*** 如果金鑰未成功還原，系統將會停止，並表示無法還原金鑰。畫面會顯示錯誤和警告訊息。重新執行恢復程序：
++
+`boot_recovery -partner`
+
 +
 .顯示金鑰還原錯誤和警告訊息的範例
 [%collapsible]
@@ -365,7 +368,7 @@ LOADER-B>
 .. 當節點重新開機時，請確認系統已重新上線且可運作，以確認開機媒體還原是否成功。
 .. 將控制器的儲存設備歸還，使其恢復正常運作：
 +
-`storage failover giveback -ofnode _impaired_node_name_`。
+'容錯移轉還原-ofnode_disapped_node_name_'
 
 
 
@@ -375,10 +378,10 @@ LOADER-B>
 
 . 如果自動恢復已停用、請重新啟用：
 +
-`storage failover modify -node local -auto-giveback true`。
+`storage failover modify -node local -auto-giveback true`
 
 . 如果啟用 AutoSupport 、請還原自動建立案例：
 +
-`system node autosupport invoke -node * -type all -message MAINT=END`。
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
 

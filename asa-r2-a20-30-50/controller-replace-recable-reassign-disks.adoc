@@ -86,7 +86,7 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 .步驟
 . 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
-. 回答或 `n`回答 `y`下列問題：
+. 如果出現這些問題，請回答或 `n`視情況回答 `y`：
 +
 您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
 
@@ -95,9 +95,6 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 +
 您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
-
-+
-或
 
 +
 您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝
@@ -132,4 +129,4 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 --
 ====
 .接下來呢？
-將儲存資源的擁有權移回更換控制器後，您需要link:controller-replace-restore-system-rma.html["完成控制器更換"]進行程序。
+將儲存資源的擁有權移轉至更換控制器後，您需要link:controller-replace-restore-system-rma.html["完成控制器更換"]進行程序。

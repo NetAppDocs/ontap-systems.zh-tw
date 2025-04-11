@@ -41,11 +41,20 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 
 
 .步驟
-. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
 
-. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify -node local -auto-giveback false`
+
 +
 
 NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
@@ -74,9 +83,11 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 
@@ -87,15 +98,27 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 * 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
-* 您必須已確認 MetroCluster 組態狀態已設定、且節點處於啟用和正常狀態(`metrocluster node show`）。
+* 您必須確認已設定 MetroCluster 組態狀態，且節點處於啟用和正常狀態：
++
+`metrocluster node show`
+
 
 
 .步驟
-. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+`system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 
-. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify –node local -auto-giveback false`
+
 . 將受損的控制器移至載入器提示：
 +
 [cols="1,2"]
@@ -120,9 +143,11 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示（輸入系統密碼）
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 
@@ -131,8 +156,14 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 ====
 
 
-== 步驟2：更換NVRAM模組
+== 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
 
+使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。
+
+[role="tabbed-block"]
+====
+.選項 1 ：更換 NVRAM 模組
+--
 若要更換 NVRAM 模組、請將其放在機箱的插槽 4/5 中、然後依照特定步驟順序進行。
 
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
@@ -205,10 +236,9 @@ NOTE: 控制器在機箱中完全就位後、就會重新啟動。
 . 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
-
-
-== 步驟 3 ：更換 NVRAM DIMM
-
+--
+.選項 2 ：更換 NVRAM DIMM
+--
 若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。
 
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
@@ -284,9 +314,11 @@ NOTE: 控制器在機箱中完全就位後、就會重新啟動。
 . 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
+--
+====
 
 
-== 步驟4：重新指派磁碟
+== 步驟3：重新指派磁碟
 
 您必須在開機控制器時確認系統 ID 變更、然後確認變更已實作。
 
@@ -390,6 +422,6 @@ dr-group-id            cluster node           configuration-state
 
 
 
-== 步驟5：將故障零件歸還給NetApp
+== 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

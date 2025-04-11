@@ -145,7 +145,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 . 如果您尚未接地、請正確接地。
 . 在受損的控制器上，從目標插槽中移除 I/O 遮蔽模組。
 +
-未使用的 I/O 插槽應安裝消隱模組，以避免可能的散熱問題。
+未使用的 I/O 插槽應安裝消隱模組，以避免可能的散熱問題，並符合 EMC 法規。
 
 +
 image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[移除 I/O 消隱模組]
@@ -186,7 +186,7 @@ image:../media/icon_round_2.png["編號 2"]
 +
 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
 
-. 將受損的控制器交回合作夥伴控制器： `storage failover giveback -ofnode _impaired_node_name_`
+. 從健全的控制器中恢復功能受損的控制器： `storage failover giveback -ofnode _impaired_node_name_`
 . 重複這些步驟，將 I/O 模組新增至其他控制器。
 . 從健全控制器的主控台還原自動恢復： `storage failover modify -node local -auto-giveback _true_`
 . 如果啟用 AutoSupport ，則還原（恢復抑制）自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
@@ -269,10 +269,10 @@ image:../media/icon_round_2.png["編號 2"]
 +
 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
 
-. 將受損的控制器交回合作夥伴控制器： `storage failover giveback -ofnode _impaired_node_name_`
+. 從健全的控制器中恢復功能受損的控制器： `storage failover giveback -ofnode _impaired_node_name_`
 . 從健全控制器的主控台還原自動恢復： `storage failover modify -node local -auto-giveback _true_`
-. 如果啟用 AutoSupport ，則還原（恢復抑制）自動建立個案：系統節點 AutoSupport 叫用 -node* -type all -message MAINT = end
-. 如果您安裝了 NIC 模組，請將每個連接埠的使用模式指定為 _network_ ： `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network`
+. 如果啟用 AutoSupport ，則還原（恢復抑制）自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
+. 如果您安裝了 NIC 模組，請將每個連接埠的使用模式指定為 _network_ ： `storage port modify -node _node_name_ -port _port_name_ -mode _network_`
 . 對另一個控制器重複這些步驟。
 
 

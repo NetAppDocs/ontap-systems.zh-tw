@@ -35,11 +35,20 @@ summary: 如果偵測到過度的可修正或不可修正的記憶體錯誤，�
 
 
 .步驟
-. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
 
-. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify -node local -auto-giveback false`
+
 +
 
 NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
@@ -68,9 +77,11 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 
@@ -169,8 +180,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 . 找到控制器模組上的 DIMM 、並識別目標 DIMM 。
 +
-
-NOTE: 如需 AFF A70 或 AFF A90 的確切 DIMM 位置、請參閱 https://hwu.netapp.com["NetApp Hardware Universe"] 控制器模組上的或 FRU 對應圖。
+使用控制器通風管上的 FRU 對應圖來找出 DIMM 插槽。
 
 . 緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、然後將DIMM從插槽中滑出、藉此將DIMM從插槽中退出。
 +

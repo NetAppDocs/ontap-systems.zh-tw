@@ -28,11 +28,20 @@ summary: 更換故障的風扇模組時、您必須將控制器模組從機箱�
 
 
 .步驟
-. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
 
-. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify -node local -auto-giveback false`
+
 +
 
 NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
@@ -61,9 +70,11 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 

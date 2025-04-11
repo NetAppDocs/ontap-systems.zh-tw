@@ -39,11 +39,20 @@ summary: 如果偵測到過度的可修正或不可修正的記憶體錯誤，�
 
 
 .步驟
-. 如果啟用 AutoSupport 、請叫用 AutoSupport 訊息來隱藏自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時： `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
 
-. 停用健康控制器主控台的自動恢復： `storage failover modify -node local -auto-giveback false`
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify -node local -auto-giveback false`
+
 +
 
 NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
@@ -72,9 +81,11 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 
@@ -85,15 +96,27 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
 * 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
-* 您必須已確認 MetroCluster 組態狀態已設定、且節點處於啟用和正常狀態(`metrocluster node show`）。
+* 您必須確認已設定 MetroCluster 組態狀態，且節點處於啟用和正常狀態：
++
+`metrocluster node show`
+
 
 
 .步驟
-. 如果啟用了此功能、請叫用下列訊息來抑制自動建立案例：「System Node現象叫用節點*-type all -Message MAn=number_of_hs_Downh」AutoSupport AutoSupport AutoSupport
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-下列AutoSupport 資訊不顯示自動建立案例兩小時的訊息：「cluster1：*>系統節點AutoSupport 、叫用節點*-輸入ALL -Message MAn=2h」
+`system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 
-. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用健康控制器主控台的自動恢復：
++
+`storage failover modify –node local -auto-giveback false`
+
 . 將受損的控制器移至載入器提示：
 +
 [cols="1,2"]
@@ -118,9 +141,11 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
  a| 
 系統提示或密碼提示（輸入系統密碼）
  a| 
-從正常控制器接管或停止受損的控制器：「torage容錯移轉接管-節點_受損節點_節點名稱_」
+從健全的控制器接管或停止受損的控制器：
 
-當受損的控制器顯示正在等待恢復...時、請按Ctrl-C、然後回應「y」。
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
 
@@ -197,6 +222,28 @@ image:../media/icon_round_1.png["編號 1"]
 
 
 . 找到控制器模組上的 DIMM 、並識別要更換的 DIMM 。
++
+DIMM 的位置視系統機型而定：
+
++
+[cols="1,4"]
+|===
+
+
+| 模型 | DIMM 插槽位置 
+
+
+| FAS70  a| 
+插槽 3 ， 10 ， 19 ， 26
+
+
+
+ a| 
+FAS90
+ a| 
+插槽 3 ， 7 ， 10 ， 14 ， 19 ， 23 ， 26 ， 30
+
+|===
 . 緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、然後將DIMM從插槽中滑出、藉此將DIMM從插槽中退出。
 +
 
