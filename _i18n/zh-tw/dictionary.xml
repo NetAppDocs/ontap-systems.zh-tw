@@ -757,7 +757,6 @@
   <block id="8ea62d632a69911dcf193e9803b1195a" category="inline-link-macro">快速步驟</block>
   <block id="74d5da85ba7d8689117200b9e72fda0c" category="paragraph">可列印的PDF逐步說明、並提供其他內容的即時連結。</block>
   <block id="0de8a61be1d2a676a9eb73aeea6bcf76" category="inline-link-macro">影片步驟</block>
-  <block id="ddd1a9511bc4cec117e8b939fbe7f2cc" category="list-text"><block ref="ddd1a9511bc4cec117e8b939fbe7f2cc" category="inline-link-macro-rx"></block></block>
   <block id="50c37789175e52f0eff7f1b127fff4c3" category="paragraph">視訊逐步指示。</block>
   <block id="5d1cfd3c9a95578cfe36dabeac6fec83" category="summary">交換電源供應器包括關閉、拔下及移除舊的電源供應器、以及安裝、連接及開啟更換的電源供應器。</block>
   <block id="7b08469ac72ae10a3800fd65a60dd1ad" category="doc">換出電源供應器AFF -電力供應不穩定</block>
@@ -977,7 +976,6 @@
   <block id="2e7119d7d654a51006d39261079ed460" category="doc">移除控制器模組AFF -《Se A700s》</block>
   <block id="1ab25fd464770ca38598dbf7e3aa872c" category="doc">安裝與設定影片- AFF Se A700s</block>
   <block id="0e77f42d7c64a07ce718d60dd8e6bd46" category="inline-link-macro">BIOS A700s設定影片AFF</block>
-  <block id="ad95e5b69f87474809f8228af5e2fbe2" category="paragraph"><block ref="ad95e5b69f87474809f8228af5e2fbe2" category="inline-link-macro-rx"></block></block>
   <block id="0dfb2568739ce156f475dfddb29e2387" category="doc">機箱更換總覽- AFF 《Se A700s》</block>
   <block id="2b1646515c4dcacd96acd971239a6f14" category="paragraph">若要更換機箱、您必須將控制器模組和SSD磁碟機從受損機箱移至更換機箱、然後從設備機架或系統機櫃中移除受損機箱、並將替換機箱安裝到位。</block>
   <block id="c465df44865c02db52bc6f37023b5b75" category="list-text">此程序的撰寫假設是您將SSD和控制器模組移至新機箱、而更換機箱是NetApp的新元件。</block>
@@ -1115,7 +1113,6 @@
   <block id="413ac2fd2fb4f86c9ec059076dc0b76b" category="list-text">請查看主控台錯誤訊息或找出主機板上風扇模組的LED燈號、以識別您必須更換的風扇模組。</block>
   <block id="c6c330df068950fe73f003a3f85b3fa0" category="list-text">將更換風扇模組的邊緣與控制器模組的開孔對齊、然後將更換的風扇模組滑入控制器模組、直到鎖定鎖條卡入定位。</block>
   <block id="320003b122e9ced04801080d4fca8abd" category="list-text"><block ref="320003b122e9ced04801080d4fca8abd" category="inline-link-macro-rx"></block></block>
-  <block id="604b91e7007f6b52b608d188580ff582" category="list-text"><block ref="604b91e7007f6b52b608d188580ff582" category="inline-link-macro-rx"></block></block>
   <block id="212a7c63df3073a24c5ba97aaad63e51" category="doc">更換硬體- AFF S4A700s</block>
   <block id="47e6ca7a31b3f3492d704b44dea3bc0e" category="section-title">步驟1：移除控制器模組</block>
   <block id="c488924be9cfde77f802e82e996e90e1" category="paragraph">若要更換機箱、您必須從舊機箱中移除控制器模組。</block>
@@ -1640,10 +1637,8 @@
   <block id="741c2196cc7abcf971992d4e656da7ea" category="paragraph">在此範例中、Node_B_1是舊節點、舊系統ID為118673209：</block>
   <block id="2aa94dd7242f16ec9126f4d25ad06195" category="list-text">在「受損」節點上的「維護」模式提示字元中檢視新的系統ID：「顯示」</block>
   <block id="761dab2a2eaf4e205d39d0acc4925d17" category="paragraph">在此範例中、新的系統ID為118065481：</block>
-  <block id="73a7440753d817323876d5857eb4a3f7" category="list-text">使用FAS 從disk show命令「磁碟重新指派舊系統ID」取得的系統ID資訊、重新指派磁碟擁有權（適用於整個系統）或LUN擁有權（FlexArray 適用於整個系統）</block>
   <block id="aab7ee705a771085da41cf3f32f1aebe" category="paragraph">在上述範例中、命令為：「磁碟重新指派-s 118673209」</block>
   <block id="1d1227c1811174bd93682bbcc9fdce3c" category="paragraph">系統提示您繼續時、您可以回應「Y」。</block>
-  <block id="a3437746fcb93fe85bd0d8ade510007d" category="list-text">確認磁碟（或FlexArray 稱「LUN」）已正確指派：「磁碟show -A」</block>
   <block id="21d6dd74cdb7e164685f5da4f2e76256" category="paragraph">確認屬於_replaced_節點的磁碟顯示_replaced_節點的新系統ID。在下列範例中、system-1擁有的磁碟現在顯示新的系統ID 118065481：</block>
   <block id="b06003538a02608d68f5e58756344017" category="list-text">驗證是否已儲存核心傾印：「System Node run -node-node-name_合作夥伴savecore」（系統節點執行節點_local-node-name_合作夥伴savecore）</block>
   <block id="83d65805f786049104c0e0050c82696b" category="paragraph">如果命令輸出顯示Savecore正在進行中、請先等待Savecore完成、再發出恢復。您可以使用「系統節點執行-node-local-node-name_合作夥伴儲存資源-s命令」來監控儲存資源的進度。&lt;/info&gt;。</block>
@@ -1748,13 +1743,11 @@
   <block id="b35a00e75330322eefd710713ca83b02" category="doc">VA900系統AFF</block>
   <block id="eee1a85c64e17c1ca9ed30c1f544d35d" category="doc">更換控制器模組AFF - VA900</block>
   <block id="8b20a20371bd26b5083507f395cf24ab" category="paragraph">若要更換受損的控制器模組、您必須關閉受損的控制器、將內部元件移至更換的控制器模組、安裝更換的控制器模組、然後重新啟動更換的控制器。</block>
-  <block id="2cbabd3028fd0cb6f4a57144ace2ee33" category="list-text">如果您的系統FlexArray 是一個不必要的系統、或具有V_StorageAttach授權、則在執行此程序之前、您必須先參考其他必要步驟。</block>
   <block id="3f0db9aa8dd4145d2c4b64ea3481303a" category="list-text">在此程序中、開機裝置會從受損的控制器移至更換的控制器、以便更換的控制器以ONTAP 與舊控制器模組相同的版本進行重新開機。</block>
   <block id="c679e8417b3c86837c70fa5e162e77a6" category="list-text">受損的控制器是要更換的控制器。</block>
   <block id="df958dff87a8c819a8e0b81a1b306ead" category="list-text">更換控制器是指更換受損控制器的新控制器。</block>
   <block id="283fab4cea5d664827b937416e41a5e5" category="list-text">健全的控制器是正常運作的控制器。</block>
   <block id="3bc737994532b61e4fad9c84d6dccfc0" category="summary">這份提供安裝典型NetApp系統的詳細逐步指示。</block>
-  <block id="b37eeea92bef8e254a5c7650e7002788" category="doc">詳細步驟- AFF 32：900</block>
   <block id="fa3056f29df183b75e177c2b6ee65b45" category="paragraph">本文提供安裝典型NetApp系統的詳細逐步指示。如果您需要更詳細的安裝指示、請參閱本文。</block>
   <block id="a244d5252d50aa9b9cb10de76b91dcf2" category="section-title">步驟1：準備安裝</block>
   <block id="b223e7b739d071d1e94b262773fc5fc2" category="paragraph">若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
@@ -3505,7 +3498,6 @@
   <block id="aee57c40ad1b8fc3b33e5e954861e270" category="paragraph"><block ref="aee57c40ad1b8fc3b33e5e954861e270" category="inline-link-rx"></block></block>
   <block id="478fc4fb96b68e7639f1b8b60636da7c" category="doc">更換NVMEM電池- FAS2600</block>
   <block id="c8ce5afe6808111cafcf57c11a22b941" category="inline-link-macro">FAS2600 NVMEM電池更換影片AFF</block>
-  <block id="42eb4da4054bc83a79fd36f832504d55" category="paragraph"><block ref="42eb4da4054bc83a79fd36f832504d55" category="inline-link-macro-rx"></block></block>
   <block id="cdb877e559bf1542dd2ee0540807d4a8" category="doc">還原並驗證系統組態- FAS2600</block>
   <block id="32ab532730861844c01e0b025a4708f5" category="doc">控制器模組更換總覽- FAS2600</block>
   <block id="a47803b6b6d01b67efcc88a157378c39" category="doc">將故障部件退回NetApp - FAS2600</block>
@@ -3516,28 +3508,23 @@
   <block id="0443683677e40fa41815d2d7edef042b" category="doc">關閉控制器- FAS2600</block>
   <block id="c66eef3fd6b2a7fdd9b6e9fbe927aa2f" category="doc">安裝與設定影片- FAS2600</block>
   <block id="7d529e0ab83dded43342f45ed2a098bd" category="inline-link-macro">FAS2600設定影片AFF</block>
-  <block id="5f3f6cd3a4d5edc50129f46b603aa9c2" category="paragraph"><block ref="5f3f6cd3a4d5edc50129f46b603aa9c2" category="inline-link-macro-rx"></block></block>
   <block id="fd21bfdd90e6f071c007ad1c32523fc2" category="doc">機箱更換概述- FAS2600</block>
   <block id="017630cf9ee2c9c60d9112bb45f305ca" category="doc">更換控制器模組硬體- FAS2600</block>
   <block id="ab16b7659f1f3d151837f3f6574edbce" category="paragraph">若要更換控制器模組、您必須移除受損的控制器、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
   <block id="5b9bf9643d348558871bac7550eb6bf2" category="inline-link-macro">FAS2600控制器更換影片AFF</block>
-  <block id="bfc5f4fff0a27940b1f4676800d974c4" category="paragraph"><block ref="bfc5f4fff0a27940b1f4676800d974c4" category="inline-link-macro-rx"></block></block>
   <block id="86b067a1faa816ad3c0a245cc1e409ad" category="section-title">步驟5：移動快取模組</block>
   <block id="f5f4db4cbf741ec589cd881a641a1a02" category="paragraph">若要移動控制器標籤上稱為「M.2 PCIe卡」的快取模組、請找出舊控制器並將其移至更換控制器、然後依照特定的步驟順序進行。</block>
   <block id="04a9405b6945cd62aebba48163e7663f" category="doc">交換電源供應器- FAS2600</block>
   <block id="7030094db64cfe33a24436a2528348b6" category="inline-link-macro">FAS2600電源供應器更換影片AFF</block>
-  <block id="e85e66f99bf70a0cd52615d346aa4f9f" category="paragraph"><block ref="e85e66f99bf70a0cd52615d346aa4f9f" category="inline-link-macro-rx"></block></block>
   <block id="f8775be935fb9d9effeb8c290b2531ef" category="doc">安裝與設定PDF海報- FAS2600</block>
   <block id="3b9e3b1b2ab53b0241dc5867f9200f0f" category="section-title">步驟5：完成更換程序</block>
   <block id="a618373732a54299b15020c4fdcc9ff7" category="doc">更換快取模組- FAS2600</block>
   <block id="f6f6b5bb4c3c117ebfdad565e3beb0c3" category="inline-link-macro">FAS2600快取模組更換影片AFF</block>
-  <block id="083781fc87756a032121b806b4d18a92" category="paragraph"><block ref="083781fc87756a032121b806b4d18a92" category="inline-link-macro-rx"></block></block>
   <block id="49ba302fbc53429009e579494e0457be" category="list-text"><block ref="49ba302fbc53429009e579494e0457be" category="inline-link-macro-rx"></block></block>
   <block id="fb2b1a9ce62aa797e37590c1f38945e1" category="doc">搬移及更換硬體- FAS2600</block>
   <block id="431d17d73264273f0bc377c1c3bd07e9" category="paragraph">在安裝替換機箱之前、請先從設備機架或系統機櫃中移除現有機箱。</block>
   <block id="9d74ba2bcb476d63733debafcde443ea" category="doc">更換DIMM - FAS2600</block>
   <block id="c217f888de7cccc4e5f27065cb754354" category="inline-link-macro">FAS2600 DIMM更換影片AFF</block>
-  <block id="e3d9e54e0daad2e60e36e8b370fec883" category="paragraph"><block ref="e3d9e54e0daad2e60e36e8b370fec883" category="inline-link-macro-rx"></block></block>
   <block id="cc0229491324372575d8e9833b910f02" category="list-text">重新檢查NVMEM LED。</block>
   <block id="02b2ef9566494498645accc0aa3742ef" category="doc">更換開機媒體- FAS2600</block>
   <block id="586b0b2395e2a0e300f3fa9bf559633c" category="doc">更換SSD磁碟機或HDD磁碟機- FAS2600</block>
@@ -9901,7 +9888,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="07e9b2c4f45f1b16bcc15da0757a3cab" category="admonition">在接到指示之前，請勿將控制器完全插入機箱。</block>
   <block id="ef25353e4e6a2996c8c58db66688c4b4" category="list-text">將主控台纜線連接到控制器的主控台連接埠和筆記型電腦，以便在控制器重新開機時，筆記型電腦接收主控台訊息。</block>
   <block id="b5286ddd59d2d1bedeafbeaffb7de288" category="list-text">將控制器完全插入機箱：</block>
-  <block id="28b7fea1449f9a616376a90e478d67b0" category="admonition">一旦控制器完全安裝在機箱中，就會開始開機。</block>
   <block id="f34b6cfc50a1739d51d949fcdd369dad" category="list-text">按 CTRL-C 中止自動開機，讓控制器進入 Loader 提示。</block>
   <block id="316bb85cd1ab9a7f0cc40325c5827a6d" category="list-text">在控制器上設定時間和日期：</block>
   <block id="1e5698196a8490bf6290a21eeb883524" category="paragraph">確保您處於控制器的 Loader 提示符下。</block>
@@ -11911,4 +11897,19 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3034b89fc8e6fc3ae99585d8f1eab80e" category="doc">更換控制器的要求 - FAS50</block>
   <block id="5c15054b184102da84361b1cd1e81384" category="paragraph">將 I/O 模組新增至 FAS50 儲存系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
   <block id="9bb6ca48b5f448262155e3c3811e7d6e" category="paragraph">當有可用的插槽或所有插槽均已滿時（移除現有 I/O 模組並在其位置安裝新的 I/O 模組），您可以將 I/O 模組新增至 FAS50 儲存系統。</block>
+  <block id="b9aaf4b8305c7a34a4b30da6df50ebc5" category="list-text">使用從 disk show 命令取得的系統 ID 資訊，重新指派磁碟擁有權（適用於 FAS 系統）：<block ref="c59d47aa9e91bfb7b5c45feb4846c496" prefix=" " category="inline-code"></block></block>
+  <block id="2dcdf3018c4d483d8c38e450dbdf5944" category="list-text">如果您的系統具有 V_StorageAttach 授權，則在執行此程序之前，您必須參閱其他必要步驟。</block>
+  <block id="1253bf6221482d606a7719ba415d9176" category="admonition">此時請勿連接任何其他纜線或電源線。</block>
+  <block id="c69071436bdfe1b2f2edc29969a29980" category="admonition">更換的控制器會從正常運作的控制器接收電力，並在完全插入機箱後立即開始開機。</block>
+  <block id="5cb4dbca31ce772b17987c15a725b52e" category="list-text">使節點恢復正常運作：</block>
+  <block id="257315f653a5868c10e8897449aa264f" category="list-text">從健全控制器的主控台還原自動恢復：</block>
+  <block id="b9adb77861a7f27800ce914be076df5d" category="list-text"><block ref="b9adb77861a7f27800ce914be076df5d" category="inline-link-macro-rx"></block></block>
+  <block id="ec3558cc556230de3472d8f669055445" category="paragraph"><block ref="ec3558cc556230de3472d8f669055445" category="inline-link-macro-rx"></block></block>
+  <block id="2b1f12b6c48af6da013ad7ca0b3e507d" category="doc">詳細步驟 - AFF A900</block>
+  <block id="b8a400661d0d8f4681160e3984f8fe0e" category="paragraph"><block ref="b8a400661d0d8f4681160e3984f8fe0e" category="inline-link-macro-rx"></block></block>
+  <block id="c17ceb181c73449b45e8ac62b23f0788" category="paragraph"><block ref="c17ceb181c73449b45e8ac62b23f0788" category="inline-link-macro-rx"></block></block>
+  <block id="7d3ad47a619f98568e42b3c81d3fc66e" category="paragraph"><block ref="7d3ad47a619f98568e42b3c81d3fc66e" category="inline-link-macro-rx"></block></block>
+  <block id="3f6b8f5ed334d33d55220057f3840983" category="paragraph"><block ref="3f6b8f5ed334d33d55220057f3840983" category="inline-link-macro-rx"></block></block>
+  <block id="13ac941ecf968dc28151bce5851fd7a9" category="paragraph"><block ref="13ac941ecf968dc28151bce5851fd7a9" category="inline-link-macro-rx"></block></block>
+  <block id="f9314d663ff89799d6d255ab7e3ca079" category="paragraph"><block ref="f9314d663ff89799d6d255ab7e3ca079" category="inline-link-macro-rx"></block></block>
 </blocks>

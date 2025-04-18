@@ -17,7 +17,7 @@ summary: 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版�
 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版本選擇正確的解決方法。
 
 * 所有磁碟機櫃都必須正常運作。
-* 如果您的系統FlexArray 是一個不必要的系統、或具有V_StorageAttach授權、則在執行此程序之前、您必須先參考其他必要步驟。
+* 如果您的系統具有 V_StorageAttach 授權，則在執行此程序之前，您必須參閱其他必要步驟。
 * 如果您的系統是HA配對、健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
 * 如果您的系統採用MetroCluster 不必要的組態、您必須檢閱一節 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"] 判斷您是否應該使用此程序。
 +

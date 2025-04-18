@@ -167,14 +167,14 @@ Local System ID: 118065481
     ...
     ...
 ----
-. 使用FAS 從disk show命令「磁碟重新指派舊系統ID」取得的系統ID資訊、重新指派磁碟擁有權（適用於整個系統）或LUN擁有權（FlexArray 適用於整個系統）
+. 使用從 disk show 命令取得的系統 ID 資訊，重新指派磁碟擁有權（適用於 FAS 系統）： `disk reassign -s old system ID`
 +
 在上述範例中、命令為：「磁碟重新指派-s 118673209」
 
 +
 系統提示您繼續時、您可以回應「Y」。
 
-. 確認磁碟（或FlexArray 稱「LUN」）已正確指派：「磁碟show -A」
+. 驗證是否正確分配了這些磁碟：「磁碟show -A」
 +
 確認屬於_replaced_節點的磁碟顯示_replaced_節點的新系統ID。在下列範例中、system-1擁有的磁碟現在顯示新的系統ID 118065481：
 

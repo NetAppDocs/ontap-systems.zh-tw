@@ -210,12 +210,26 @@ image::../media/icon_round_2.png[編號 2]
 更換 I/O 模組之後，您必須重新啟動控制器。
 
 .步驟
-. 從 Loader 提示符下重新引導控制器： `bye`
+. 從載入程式提示重新啟動控制器：
 +
-重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
+`bye`
 
-. 將節點恢復正常作業： `storage failover giveback -ofnode _impaired_node_name_`
-. 從健全控制器的主控台還原自動恢復： `storage failover modify -node local -auto-giveback _true_`
++
+
+NOTE: 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
+
+. 使節點恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback _true_`
+
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 
