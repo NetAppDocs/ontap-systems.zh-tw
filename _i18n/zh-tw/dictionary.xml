@@ -1873,10 +1873,7 @@
   <block id="ea68fc4bd3124625f5669e18cc6321be" category="list-text">請使用下列動畫將筆記型電腦連線至管理交換器。</block>
   <block id="bd21e6ec29256eee4c7a9b34dd71c9ba" category="image-alt">DWR筆記型電腦只能切換</block>
   <block id="e897f5a61b2733e58437829c5307ea46" category="list-text">選取ONTAP 列出的功能表圖示以探索：</block>
-  <block id="0b62e9153cdcecb79f7e53c87ce67330" category="image-alt">選擇「自動探索控制器」</block>
   <block id="098bbae74bb948e3ff3baff0a28b2546" category="list-text">開啟檔案總管。</block>
-  <block id="dd91aaae84d7888dedec54ca2a506f0b" category="list-text">按一下左窗格中的網路。</block>
-  <block id="45ee8c440f001b54eda6e16b8de7a56f" category="list-text">按一下滑鼠右鍵、然後選取重新整理。</block>
   <block id="81592bfecc2f1f54499d5458079662a4" category="list-text">按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。</block>
   <block id="ddd155ae3314c6b49467b47ed3f5bced" category="admonition">XXXXX是目標節點的系統序號。</block>
   <block id="7e043f500d316c07931a265899f256e5" category="paragraph">系統管理程式隨即開啟。</block>
@@ -3408,7 +3405,6 @@
   <block id="92270083ed53c03c06ac44a343720ee6" category="paragraph">零件編號：X56030（112-00435）、0.5公尺</block>
   <block id="5dce1d6a0952709f0d3753b80a1cfdfb" category="list-text">下載並完成_Cluster組態工作表_。</block>
   <block id="9245f306913d78c734376f866af93a01" category="paragraph"><block ref="9245f306913d78c734376f866af93a01" category="inline-link-rx"></block></block>
-  <block id="78b39d88cb979ddb300a4cf2c6cdb1be" category="image-alt">DRw纜線管理ARM 功能安裝</block>
   <block id="27b080f64d728dcb5d21170ab42a4bb8" category="section-title">選項1：連接雙節點無交換式叢集的纜線、統一化網路組態</block>
   <block id="a8cb52644fd63b3d401b5a740d7a6af4" category="paragraph">控制器上的管理網路、UTA2資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。</block>
   <block id="f27acca0ae6d65e7323b16e8fd4c8c55" category="paragraph">請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。</block>
@@ -4441,7 +4437,6 @@
   <block id="823b36f7fa4cb798d78af7be2bf8aca7" category="doc">詳細步驟- AFF VA800</block>
   <block id="13f3f5d40904a4c5b68e6c877e0c9bbd" category="paragraph">若要安裝AFF 您的VA800系統、您必須建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
   <block id="b772890c716d468c4b26510d897c0276" category="paragraph">HA互連</block>
-  <block id="3d8315ff7403b2d22ef55f5c6720369f" category="paragraph">X66211A-05（112-00595）、0.5公尺；</block>
   <block id="a3ad201a1a037cefc3f3acc547d02b93" category="paragraph">X66211-1（112-00573）、1公尺</block>
   <block id="faaafc7c4f27115d996b2449593abf6e" category="paragraph">儲存、資料</block>
   <block id="191a7f4eeb64e176c62409539353ac5d" category="paragraph">10 GbE纜線</block>
@@ -5016,7 +5011,6 @@
   <block id="537af5095a4992ae7e9026bd3ff008a6" category="list-text">正常節點是正常運作的節點。</block>
   <block id="c704a060606b2944e3c331124aaaa743" category="doc">詳細步驟- FAS9500</block>
   <block id="9a7819d4ddc611b1438c0a7f4633f619" category="image-alt">OIE纜線迷你SAS HD到迷你SAS HD</block>
-  <block id="c08fd160f4570df01d3a40efa2524ce7" category="image-alt">OIE纜線電源</block>
   <block id="fd2cb99acafb4f0144bfb5e0e4c31373" category="admonition">插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。</block>
   <block id="3bdc20d60c6095f8c752a75e72777feb" category="doc">重新安裝系統- FAS9500</block>
   <block id="580fe6e7e310b3db810754c7c7927744" category="list-text">如果_replaced_節點處於維護模式（顯示"*&gt;"提示）、請結束維護模式、然後移至載入程式提示字元「halt（停止）」</block>
@@ -5035,9 +5029,7 @@
   <block id="837fcf17f123dccb1301f252ade8a58e" category="admonition">如果您的系統採用雙節點MetroCluster 的功能不全、您必須依照下一步所述、將集合體切換回原位。</block>
   <block id="abc219c929a34cf7b62e36c2503b63ac" category="video-title">動畫-移除控制器模組</block>
   <block id="0b3bd9d9290b20b7deabeee68dbd8982" category="image-alt">DRW 9500移除PCM來源</block>
-  <block id="0c95144374a371b7d780cf2dda8caa68" category="image-alt">DRW 95PCM開放原始碼</block>
   <block id="0b8e9f368ea269ec23c6c676a7561e53" category="video-title">動畫-取代開機媒體</block>
-  <block id="3937ac537a8c89789d0e3e5e505a0afb" category="image-alt">DRW 9500移除開機開發來源</block>
   <block id="defa99ee750d2ca6a8f52cf79e8eb713" category="list-text">bootarg.init.boot_clustered</block>
   <block id="d18fd3db938a26ebbd3f74de41f0b73f" category="list-text">合作夥伴系統</block>
   <block id="bac349cdf99ddd20206c9b20eb9e6d22" category="list-text">bootarg.init.flash_optimized AFF for e.com</block>
@@ -5460,7 +5452,6 @@
   <block id="e90d1c109a9cd8d68a357882d5cf925c" category="list-text">若要完成系統設定、請參閱 <block ref="84c1e7f35fa076545c5f4c4417de33e1" category="inline-xref-macro-rx"></block></block>
   <block id="d12db64c0cb5cb862afbde49d98d6f25" category="inline-link-macro">完成更換程序</block>
   <block id="e739fb18db4795dd1e2cea8f3c5244c3" category="list-text">前往 <block ref="56c57196a2457d200e49164377b65ba5" category="inline-link-macro-rx"></block>。</block>
-  <block id="54c5909d12d5c473924ce9b2c856a68d" category="image-alt">DRW A400 NVDIMM電池IOPS 1004.</block>
   <block id="85445cdcf89edd32e9cf4cb8554898a3" category="image-alt">DRW A400更換NVDIMM DIMM IOPS 1009</block>
   <block id="0ea0d47e034118a7f063c35eaf67ebd2" category="list-text">如果已啟用儲存加密、則必須還原功能。</block>
   <block id="34dbbed571bcfe30f4b9897172116b74" category="list-text">若要纜線連接儲存設備、請參閱 <block ref="4261ea2b75c295a1978f7924667f1c11" category="inline-xref-macro-rx"></block></block>
@@ -6108,8 +6099,6 @@
   <block id="206f40d3d3a553b715b00b4ada962595" category="image-alt">DRW 2850 開放式控制器模組涵蓋 IEOPS 695</block>
   <block id="ac250ab529052385767cc5abd9d02efe" category="paragraph">控制器模組護蓋釋放按鈕</block>
   <block id="02196554e362859bf13fdb8c354bd53c" category="paragraph">在位於夾層卡下方的控制器模組中找到開機媒體、然後依照指示進行更換。</block>
-  <block id="b269a4583845b75a99e2494b866181d5" category="inline-image-macro">寬度 = 500</block>
-  <block id="ab18556462377223339c421c568ab231" category="paragraph"><block ref="ab18556462377223339c421c568ab231" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b6e58fb741960f0300c7783438276a5" category="paragraph">開機媒體鎖定標籤</block>
   <block id="fa8b2d8b91c1c89065d3652288dbddc1" category="list-text">使用下圖或控制器模組上的 FRU 對應圖移除夾層卡：</block>
   <block id="d62aede9e33b9cbeca49d6fcc6de78c2" category="list-text">鬆開夾層卡上的指旋螺絲。</block>
@@ -6282,7 +6271,6 @@
   <block id="9e4563e9b028264514409ab230a5da42" category="paragraph">X66240A-05 、 0.5 公尺</block>
   <block id="0aeb49c9fa6e4bb6f0e2ba133818122d" category="paragraph">X66240-2 、 2m</block>
   <block id="f6f5073d92449b0a0e2bd3034fc1ecea" category="paragraph">X66240A-5 、 5 公尺</block>
-  <block id="dea505bfaa4f0d732b7c8f5f9938f6be" category="image-alt">OIE 纜線 25Gb 乙太網路 SFP28 IEOPS 1069</block>
   <block id="cd438f3250a6932c30ca2344ae39b00e" category="paragraph">32GB 光纖通道、
 SFP+ （目標 / 啟動器）</block>
   <block id="2c4afc06b1fdae4cd99b305968ffe5d2" category="paragraph">X66250-2 、 2m</block>
@@ -6297,7 +6285,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7176bca53e61f926de4367eb107ce7c8" category="paragraph">USB-C 主控台纜線</block>
   <block id="34dc50315428bf6e6940b722c6a21ee9" category="paragraph">選用 FC 纜線</block>
   <block id="01b24af9f8a6b3efddd64ee9ab57a42e" category="paragraph">額外的 FC 網路纜線</block>
-  <block id="3157ab12e29c7ae731c3bbc36443b23f" category="image-alt">OIE fas2800 重量注意事項 IEOPS 1070</block>
   <block id="9646d1820777de5269873d2317186ecb" category="paragraph">管理網路交換器</block>
   <block id="e80abcbf02cd3bed5561a16253c1dea0" category="paragraph">主機網路交換器</block>
   <block id="3b9d43c8f889d04a7e7e50ecc887f626" category="paragraph">為無交換器的雙節點叢集連接網路連線和叢集互連連接埠佈線。</block>
@@ -6305,11 +6292,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="43f3f164715da7f3368f26b28f4ef36f" category="video-title">動畫 - 無交換器的雙節點叢集佈線</block>
   <block id="00cdc1c050c54120647c95f8ac43e946" category="list-text">使用叢集互連纜線將叢集互連連接埠 e0a 連接至 e0a 、並將 e0b 連接至 e0b ：</block>
   <block id="64d64c32d62f821e30eb2ef5d4583099" category="paragraph">* 叢集互連纜線 *</block>
-  <block id="0d31c2b61f0790381bf124be78a40d97" category="image-alt">DRW 2800 tnsc 叢集佈線 IEOPS 892</block>
   <block id="329a1da79dbbba5ea7dea23acd21eb44" category="paragraph">* RJ45 纜線 *</block>
-  <block id="71148769b55621d50b01310cdb17af44" category="image-alt">DRW 2800 管理連線 IEOPS 1077</block>
   <block id="69dc61becc19938a9333356069afeddb" category="list-text">將夾層卡連接埠連接至主機網路。</block>
-  <block id="a773f522f61f6a463095f90a0f74a848" category="image-alt">DRW 2800 網路纜線 IEOPS 894</block>
   <block id="1d249cc4581bfebd1ac174f1d758e2de" category="list-text">如果您有 4 埠乙太網路資料網路、請將連接埠 e1a 至 e1d 連接至乙太網路資料網路。</block>
   <block id="1cc0b86b94e25e4841fd242fdbd850e8" category="list-text">4 埠、 10/25Gb 乙太網路、 SFP28</block>
   <block id="213b283921a16f109ab5a42efd1afde7" category="list-text">4 埠、 10GBASE-T 、 RJ45</block>
@@ -6325,18 +6309,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6ac0c621e44f0d6d3cfb9a6035ba969b" category="list-text">IOM A 上的連接埠 1 至 IOM A 的連接埠 3 、位於機架正下方。</block>
   <block id="a2a4a3ef1017cf43a3cf109d61286633" category="list-text">IOM B 上的連接埠 1 至 IOM B 的連接埠 3 、位於機架正下方。</block>
   <block id="9f8e1f093714df2b4e4cea2483986e1f" category="paragraph">* Mini-SAS HD 至 Mini-SAS HD 纜線 *</block>
-  <block id="202f3ec29ba7fc0c62960a60ae2f794f" category="image-alt">DRW 2800 機櫃到機櫃佈線 IEOPS 895</block>
-  <block id="b1905c91f00e1e7ad75a290938d0c0ae" category="list-text">將控制器 A 纜線連接至磁碟機櫃。</block>
-  <block id="7414b28752291f5ed73122cbbe85acd3" category="list-text">控制器 A 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM B 連接埠 1 。</block>
-  <block id="d490aaf97e1fdf82eb244edca242e5f7" category="list-text">控制器 A 連接埠 0b1 至 IOM A 連接埠 3 、位於堆疊中最後一個磁碟機櫃上。</block>
-  <block id="0d5514b466e4b55a41f3994d3034c96f" category="image-alt">DWR 2800 控制器 1 至機櫃 IEOPS 896</block>
-  <block id="575f5a968bfa57f9d0a99b09b5f73ff2" category="list-text">將控制器 B 連接至磁碟機櫃。</block>
-  <block id="49fefb8508936cb5a0f672b0146c0013" category="list-text">控制器 B 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM A 連接埠 1 。</block>
-  <block id="0cbd55a3e4a33973ae5e025f7565fe75" category="list-text">控制器 B 連接埠 0b1 至堆疊中最後一個磁碟機櫃上的 IOM B 連接埠 3 。</block>
-  <block id="8f61138caddaadc30f99b723e123cf22" category="image-alt">DWR 2800 控制器 2 至機櫃 IEOPS 897</block>
-  <block id="17eddeb5ca42d640ce98ba7b90523804" category="image-alt">DWR 2800 開啟電源 IEOPS 898</block>
   <block id="5725fc4af65adef1b57d4b7c9a365287" category="paragraph">如果您的筆記型電腦未啟用網路探索、請手動完成組態和設定。</block>
-  <block id="6f196fc99c938b047a2dbbae60694da9" category="image-alt">將 DRW 2800 筆記型電腦切換至控制器 IEOPS 1084</block>
   <block id="041e48089a1444bcdc82526d41790e40" category="paragraph">從系統中卸下控制器模組、然後卸下控制器模組護蓋。</block>
   <block id="8caaa86fafbf22c9627e97fb31c1eea5" category="paragraph">找到控制器內的 DIMM 、將其卸下並裝回。</block>
   <block id="95da017c37970d073ec39c2d3a5f57a0" category="admonition">在更換 DIMM 之前、您需要從控制器模組拔下 NVMEM 電池。</block>
@@ -7072,7 +7045,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c4d97f649f8fd0bc0d2842c98374b325" category="summary">「安裝與設定」影片會示範如何安裝和連接新系統。</block>
   <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">影片步驟 - ASA A250</block>
   <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">影片步驟： FAS500f</block>
-  <block id="0a5ad698c7446792fa1695e8ef9001ee" category="image-alt">DRW 2800 交換式叢集佈線 IEOPS 893</block>
   <block id="92217d103cec461ace2aded92b4f42ab" category="doc">將故障零件退回 NetApp - ASA C400</block>
   <block id="f4b7b756855e1111bd19648537226e16" category="doc">維護 ASA C400 硬體</block>
   <block id="f85c225eac9932f77dacb6e6236f7ce2" category="paragraph">對於 ASA C400 儲存系統、您可以對下列元件執行維護程序。</block>
@@ -7268,7 +7240,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="70cdb4752e56964c8e382c73c4dad5a3" category="list-text">請至登錄您的系統<block ref="609ce97692648785b01245072a80d78d" category="inline-link-rx"></block>。</block>
   <block id="6ef8afe0d08cfff8d7c63feeb46c3bbe" category="inline-link">NetApp ONTAP 資源</block>
   <block id="1e030dc8ef51cc0c3b7cfdf5b1fb31ef" category="list-text">完成初始組態之後、請前往<block ref="0d9c07b12aa4e6262cc31099f94c22ac" category="inline-link-rx"></block> 頁面、以取得有關設定ONTAP 其他功能的資訊。</block>
-  <block id="c1abdda48959ad5305acdea9199b4083" category="list-text">將主控台纜線連接至筆記型電腦或主控台、然後使用儲存系統隨附的主控台纜線連接控制器上的主控台連接埠、然後 c 將筆記型電腦或主控台連接至管理子網路上的交換器。</block>
   <block id="ea6092d42464dfafd164efeca17f02cc" category="list-text">使用您在中收集的資料來設定儲存系統 <block ref="d0fb50e606c7cb2fa74e99fa5a3520a8" category="inline-xref-macro-rx"></block>...</block>
   <block id="6a1952da65ff3ad3728cd89ec078bfa2" category="paragraph">本程序提供安裝 AFF C250 儲存系統的詳細逐步指示。</block>
   <block id="3e9ec063809ed35fdf77c6c261c6e205" category="paragraph">本快速指南提供典型系統安裝的圖形指示、從機架安裝和纜線配置、到初始系統開機。如果您熟悉NetApp系統的安裝、請使用本內容。</block>
@@ -7485,17 +7456,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="381f37fd0c6301b4adcfedecc4eda925" category="image-alt">四人舉升注意事項</block>
   <block id="3a0eeccdd4e521f45365f2b428095f2d" category="image-alt">連接纜線管理裝置</block>
   <block id="5ef048ab759bf73977c35349ec483eab" category="inline-image-macro">HA 配對纜線</block>
-  <block id="2b1368b4381f3629e96800ab48579d68" category="list-text">e1b 至 e1b
-<block ref="aa46ce125e154e60d93093e92fe06f34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4fae04c8c73682a0f5aee781b4ba55e0" category="list-text">e1a 至 e1a
-<block ref="ce168455f06d894620cf25f3ad7f95ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d5ce426423eeeead4f35769cd8b1b27" category="inline-image-macro">步驟 3</block>
   <block id="75f728010e80f6e306c8d0419ab6e02f" category="inline-image-macro">注意符號</block>
   <block id="a64c1d9519895ea9b4d05af7302a3f5d" category="paragraph"><block ref="a64c1d9519895ea9b4d05af7302a3f5d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a9640555fa5bc248b1730cc507ea1862" category="paragraph">將叢集互連連接埠連接至 100 GbE 叢集互連交換器。
-** e0a
-** e1a.
-<block ref="03c334f1a71e7086b1987bb740b5b995" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fae734ae73d4d9ca0d2c390bc2bb7c39" category="inline-image-macro">Fibre Channel 主機網路纜線</block>
   <block id="b2d4d0d6d18aadc5250160804ec5f72c" category="paragraph">將連接埠2a至2D連接至FC主機交換器。<block ref="f7469edef6c72cc42131f9dced4b36a4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e69c5c6214fe233e92d0ac376a7db30a" category="paragraph">將E4A至e4d纜線連接埠連接至10GbE主機網路交換器。<block ref="54eadf4427f8838bf31ee4b6c63b48ac" category="inline-image-macro-rx" type="image"></block></block>
@@ -8512,7 +8475,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="eeadc1e47c5ada05336cc4a2430aff44" category="paragraph">纜線控制器 A 至機櫃： <block ref="d1f96be8e1b1f281d39fbb850bfff8ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f7272edef7a7fba4085ccfab3dcab29" category="inline-image-macro">連接至控制器 b 的纜線架</block>
   <block id="5068cb73707de732551109a3000233a5" category="paragraph">纜線控制器 B 至機櫃： <block ref="a2de9db71ec552fd6bcd09e536f53289" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3efca07728c425a2d570687f9c5ee055" category="list-text">打開文件資源管理器。</block>
   <block id="060661d6632055dffb9c643daef86e4f" category="image-alt">將筆記型電腦連接到管理子網路交換器</block>
   <block id="cf3f3f0fc4be4a45a82eb23742f77b44" category="image-alt">更換 NV 電池</block>
   <block id="8dd9b5acff09c1cf11545aba64dc805d" category="image-alt">更換 NVDIMM</block>
@@ -9186,7 +9148,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f7305488b29b60c60ef013880d0f02ad" category="paragraph"><block ref="f7305488b29b60c60ef013880d0f02ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a18694bfa10dd9b027282521693676b2" category="paragraph"><block ref="a18694bfa10dd9b027282521693676b2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="479d87b89f643c48150efb707fc18d0f" category="paragraph"><block ref="479d87b89f643c48150efb707fc18d0f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f62c6097f594e20eff16caf60adf9108" category="paragraph"><block ref="f62c6097f594e20eff16caf60adf9108" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a367e21663d7d88be766a2410f65c492" category="paragraph"><block ref="a367e21663d7d88be766a2410f65c492" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0efe74a0894d83f88156519939a5c6c8" category="image-alt">電源</block>
   <block id="8123303767547374b75236612d61eaea" category="paragraph"><block ref="8123303767547374b75236612d61eaea" category="inline-image-macro-rx" type="image"></block></block>
@@ -9236,7 +9197,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8188063ba0cf302b151076be57ced81f" category="image-alt">兩個機櫃纜線</block>
   <block id="d30d07697739e058466e9449e759a88c" category="paragraph"><block ref="d30d07697739e058466e9449e759a88c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="caf1bb6cd794cb2234ad5594cd599806" category="image-alt">筆記型電腦可切換連線</block>
-  <block id="cdde7ae0e94e375bc190503128bce1fc" category="image-alt">自動探索</block>
   <block id="4dbdeeec8c8a1db8c3051377a336528c" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="4756441374eb951a9eff4e8462cce863" category="inline-link-macro-rx"></block></block>
   <block id="295e63d74f4c0ccd864527db0492eb45" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="743c3bfe574d2216cecf6275411cf3b1" category="inline-link-macro-rx"></block></block>
   <block id="b45a109e4d0580107e262e3038f944ca" category="paragraph"><block ref="b45a109e4d0580107e262e3038f944ca" category="inline-image-macro-rx" type="image"></block></block>
@@ -9505,7 +9465,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7ca88951bb06ba87dc8ba0b64e33c507" category="list-text">使用命令設定 GMT 的目前時間<block ref="0ad4ade5bf715a5335525c69a44424c1" prefix=" " category="inline-code"></block>。您可以從合作夥伴節點取得目前的 GMT 、命令為 'date -u'command.</block>
   <block id="cdce55e02d4cb663168a3f407165ecce" category="list-text">如果 NV LED 熄滅、請前往下一步。</block>
   <block id="3e206922895508e63afff7ed9697807f" category="list-text">如果 NV LED 閃爍、請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。</block>
-  <block id="224597833baafb79ff1d8b9ef9e0bff7" category="paragraph">如果已啟用、請重設加密、並將控制器恢復正常運作。</block>
   <block id="151adffc209b320ba53a9853aae1eabe" category="open-title">無加密</block>
   <block id="a2f6973fda0857d7d2ce0472981331ed" category="list-text">在 Loader 提示符下，輸入<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block>。</block>
   <block id="dab3afc1f6c32cd488de89f6f35ab456" category="list-text">主控台訊息停止時、按 &lt;enter&gt; 。</block>
@@ -10201,7 +10160,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4e38ca25783f7173a88cdcafcbc8fcf1" category="doc">連接硬體 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="c0b72cc8650fc5a7e5f5cf9c191a5b7c" category="paragraph">安裝 AFF A20 ， AFF A30 或 AFF A50 儲存系統硬體後，請將控制器連接至網路和機櫃。</block>
   <block id="b3a1e3cfc607694cb423d46b8b23fa54" category="paragraph">如需將儲存系統連接至網路交換器的相關資訊，請聯絡您的網路管理員。</block>
-  <block id="f37876f75af8e8f5192b039199defe16" category="list-text">叢集 / HA 和主機網路纜線程序顯示一般組態。請記住、特定纜線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="28c4b42113d6ebd3c5e6ca40929d04a6" category="list-text">將連接器插入連接埠時，纜線連接器拉片上的箭頭圖示會顯示正確的方向（上或下）。</block>
   <block id="c486d43df45ffe41cde84a1b0fa45aa0" category="paragraph"><block ref="c486d43df45ffe41cde84a1b0fa45aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3eb777419d46f8ec20ca944795a4d26" category="list-text">如果要將纜線連接至光纖交換器，請先將光纖收發器插入控制器連接埠，再將纜線連接至交換器連接埠。</block>
@@ -10331,7 +10289,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="aac515bc7c0fef6db4d96f41deee5fd1" category="doc">關閉控制器 - AFF C30 和 AFF C60</block>
   <block id="63e13473c1728f519626b3fe2d9025a1" category="doc">機箱更換工作流程： AFF C30 和 AFF C60</block>
   <block id="48bcab49f13e58a7dda016546607124d" category="doc">更換控制器 - AFF C30 和 AFF C60</block>
-  <block id="27a8d5c594dd7466b19bfce476d8655f" category="doc">可回收並退回控制器 - AFF C30 和 AFF C60</block>
   <block id="985e3f4c0c5e5154a781b3845a345cdf" category="doc">完整更換控制器： AFF C30 和 AFF C60</block>
   <block id="7198cc5bade7b4a7512214ef6d139fb9" category="doc">關閉受損的控制器 - AFF C30 和 AFF C60</block>
   <block id="1bd446701023b8913ca9b526c3e92f2e" category="doc">還原並驗證系統組態 - AFF C30 和 AFF C60</block>
@@ -10365,7 +10322,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="90a513766fed06a1c7ddad5bc9b658b0" category="doc">更換開機媒體 - AFF C80</block>
   <block id="157ac321bdd43ec0c575181166c8b935" category="doc">完整機箱更換 - AFF C80</block>
   <block id="f7366f893dcc8238229a1e5377b17a3b" category="doc">更換機箱 - AFF C80</block>
-  <block id="ab855d4ae0d2ee27daa0f6dffb2837b4" category="doc">可回收並退回控制器 - AFF C80</block>
   <block id="8def3d76b77de6e3dbb32ae5e959e725" category="doc">完整控制器更換 - AFF C80</block>
   <block id="2fff840bbe3ee1ad4cc2f3efd810b44b" category="doc">關閉受損控制器 - AFF C80</block>
   <block id="5c26fa22febe5fde9e598be8ee312d12" category="doc">還原並驗證系統組態 - AFF C80</block>
@@ -10628,7 +10584,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f376855bc2e70ede2a3302568f196ac3" category="sidebar">AFF C30 和 AFF C60 維護</block>
   <block id="60e1f7550be0949bf7734cc91fda2356" category="sidebar">AFF C30 和 AFF C60 機箱</block>
   <block id="045c113b9d1cea61a74dc657da45639a" category="sidebar">AFF C30 和 AFF C60 控制器模組</block>
-  <block id="26916af0dde7f17e1c0020bc61152522" category="sidebar">可重新分配控制器</block>
   <block id="f22a96549ddb43b0980ceea8499ceba7" category="sidebar">AFF C80 系統</block>
   <block id="af39c2d08f5bb60a56a2c3273eb31df0" category="sidebar">C80 安裝與設定</block>
   <block id="68bf1f26144175dee40f3509aa1cb595" category="sidebar">C80 維護</block>
@@ -11376,7 +11331,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="35ac4e474d14cd3235380c2e767e83a3" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 FAS70 或 FAS90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
   <block id="a7188c3f4745ef552e2d05d7b35f5f28" category="summary">更換 FAS70 或 FAS90 系統中的實時時鐘（ RTC ）電池（通常稱爲幣形電池），以確保依賴準確時間同步的服務和應用程序保持正常運行。</block>
   <block id="2ffef1288a7f6acf62a54035268660b1" category="summary">當 FAS70 或 FAS90 系統出現故障或固件損壞時，請更換系統管理模塊。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
-  <block id="61a20642d1e9cad056e372d8196160b8" category="paragraph">+ USB快閃磁碟機應具備受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。</block>
   <block id="5058f1af8388633f609cadb75a75dc9d" category="paragraph">。</block>
   <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">開機媒體更換工作流程 - AFF A1K</block>
   <block id="25602a3f0e04b149a4c958bcec65c371" category="summary">AFF A1K 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除系統管理模組，移除受損的開機媒體，安裝替換開機媒體，然後將 ONTAP 映像傳輸至替換開機媒體。</block>
@@ -11647,8 +11601,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="23ec6e18dffbef0189449646f5931878" category="image-alt">100 GbE 銅線連接器</block>
   <block id="483f1570f8eb0f7bf748ec2f83a68cba" category="paragraph">* Mini-SAS 纜線 *</block>
   <block id="9f4af5ab487f7477da2dd13bdd9a635c" category="paragraph">使用圖示將堆疊二中的磁碟機櫃彼此連接以供參考。</block>
-  <block id="5314841cf1990f9c696f41eaf702eb4f" category="image-alt">DRW 自動探索控制器選擇 iops 1849</block>
-  <block id="4c871f3eceeb63ae32259cd45a0be767" category="list-text">按一下左窗格中的「網路」，然後按一下滑鼠右鍵並選取「重新整理」。</block>
   <block id="08308f65214c45c04131a1ad77f35101" category="list-text">儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡，<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續執行此程序。</block>
   <block id="6c9f2761d7d74eb3a979daf442af39b5" category="paragraph">請確定儲存系統中的所有其他元件都正常運作；否則，您必須先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>，才能繼續執行此程序。</block>
   <block id="452dbbce25fd2a411a98a68c759a30a7" category="paragraph">HA 狀態的值應為 _ha_ 。HA 狀態的值可以是以下值之一： *** _ha_ *** _MCC_ （ ASA 不支援）</block>
@@ -11912,4 +11864,63 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3f6b8f5ed334d33d55220057f3840983" category="paragraph"><block ref="3f6b8f5ed334d33d55220057f3840983" category="inline-link-macro-rx"></block></block>
   <block id="13ac941ecf968dc28151bce5851fd7a9" category="paragraph"><block ref="13ac941ecf968dc28151bce5851fd7a9" category="inline-link-macro-rx"></block></block>
   <block id="f9314d663ff89799d6d255ab7e3ca079" category="paragraph"><block ref="f9314d663ff89799d6d255ab7e3ca079" category="inline-link-macro-rx"></block></block>
+  <block id="83bff0d5c34d578fa839ac49404c9392" category="list-text">從控制器模組拔下 I/O 纜線。</block>
+  <block id="d86f5a7ed8b3122487d6d2983a3d95f1" category="list-text">重新連接控制器模組 I/O 纜線。</block>
+  <block id="db424e93139f05b40145c02ca1496dab" category="image-alt">更換 NVDIMM 電池</block>
+  <block id="f01c12d2b181f3fa692e46f31483240d" category="list-text">請確定機箱或電信機架的導引插腳已固定在機箱導引插槽中。</block>
+  <block id="0ce45b8799d32fa93b50aed5301e827b" category="list-text">控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。+ <block ref="065babb6c425d208f17452adf684f6f8" category="inline-image-macro-rx" type="image"></block>Mini-SAS HD 至 Mini-SAS HD 纜線</block>
+  <block id="ce48b5f9c255c35e0431b311322885fc" category="list-text">叢集 / HA 和主機網路纜線程序顯示一般組態。</block>
+  <block id="11695514a878032b3fb5ecdf5e659b5b" category="paragraph">如果您在此處看不到您的組態，請前往<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>以取得完整的組態和插槽優先順序資訊，以連接儲存系統。</block>
+  <block id="2e169c8e6f4cc1f6315545b46d7284a2" category="inline-image-macro">64 GB 光纖通道纜線</block>
+  <block id="0bf370304560205688213d22ba637c07" category="paragraph"><block ref="0bf370304560205688213d22ba637c07" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="beb0d5517240a78e9a0d820d0cc72901" category="cell">適用於....2+</block>
+  <block id="41808d27e9d2aded3d4e7b4d381cd4f6" category="paragraph">X66240-2 （ 112-00573 ）， 2 m .3+</block>
+  <block id="610784c65e00a7160be578b24e829e1f" category="inline-image-macro">控制器 1 纜線</block>
+  <block id="fb1a92a9f3466626feb9c8b39fc2f15a" category="paragraph"><block ref="fb1a92a9f3466626feb9c8b39fc2f15a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4aee1879aa42ff92e3eacf5873fbb5d4" category="inline-image-macro">控制器 2 纜線</block>
+  <block id="db57e3bdde1cc2a58f1093e55c91edd8" category="paragraph"><block ref="db57e3bdde1cc2a58f1093e55c91edd8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5a6e3a7ce135d06e87acea56094849bd" category="paragraph">X66211-2 （ 112-00574 ）， 2m</block>
+  <block id="445ce7c267c4207385a654bbf96a7cd2" category="inline-image-macro">10 GbE QSFP28 連接器</block>
+  <block id="ff93dddb805cf284a90f50a9478044a8" category="paragraph"><block ref="ff93dddb805cf284a90f50a9478044a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c61df210c55ff2f064cc13ece1afeb8" category="inline-image-macro">25 GbE QSFP28 連接器</block>
+  <block id="33bad94543f43b5a86ed85b45f07fad9" category="paragraph"><block ref="33bad94543f43b5a86ed85b45f07fad9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eec89088ee408b80387155272b113256" category="list-text">網路</block>
+  <block id="b44c77c4bff9d030b38703307329190c" category="paragraph">將 PSU 連接至電源</block>
+  <block id="5d1da2d235e27fc0bcc9ce897d690f1a" category="list-text">e1b 至 e1b</block>
+  <block id="aa46ce125e154e60d93093e92fe06f34" category="paragraph"><block ref="aa46ce125e154e60d93093e92fe06f34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dab4cb98bc90925ff554009f35b28013" category="list-text">e1a 至 e1a</block>
+  <block id="ce168455f06d894620cf25f3ad7f95ae" category="paragraph"><block ref="ce168455f06d894620cf25f3ad7f95ae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d82509fd67d3344fdfc796875cbb5148" category="paragraph">將叢集互連連接埠連接至 100 GbE 叢集互連交換器。</block>
+  <block id="922c556baf6272bffc4fa28b2e9a0bbc" category="list-text">e0a</block>
+  <block id="9cb7b36b3f2bccc776862e6f2f494077" category="list-text">e1a</block>
+  <block id="03c334f1a71e7086b1987bb740b5b995" category="paragraph"><block ref="03c334f1a71e7086b1987bb740b5b995" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="149908e216dc72e0533f69ab126aad8f" category="doc">將控制器交回 AFF C30 和 AFF C60</block>
+  <block id="d577eb8153a8191824e900c199f4adb5" category="image-alt">使用兩個 100GbE IO 模組的 A30 和 A60 無交換式叢集佈線圖</block>
+  <block id="b36b92a50cc219291b67a5511975b913" category="image-alt">使用一個 100GbE IO 模組的 A30 和 A60 無交換式叢集佈線圖</block>
+  <block id="ccea46e36f76a430c118e619834cee72" category="image-alt">使用兩個 100GbE IO 模組的 A30 和 A60 交換式叢集佈線圖</block>
+  <block id="526ef9ab51ab95d97249aac6cc69c855" category="doc">將控制器交回 AFF C80</block>
+  <block id="f114d3932a75433b75f66fa15d3b0340" category="list-text">控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。</block>
+  <block id="6ba9035799414ab848820232d6755ea3" category="paragraph">DRW_autodimation_控制 器 _Select_ieops-1849.svg[ 選取 ONTAP 圖示 ]</block>
+  <block id="ace672d02e91b22d0e293d6ce8c9ee77" category="image-alt">開啟控制器</block>
+  <block id="ecb9e090aec7cb8bd31f706750ce1760" category="paragraph"><block ref="ecb9e090aec7cb8bd31f706750ce1760" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c332a8daf8a0021ec9153a974044b66" category="image-alt">25GB 網路纜線</block>
+  <block id="262904644a868ffbd1ee5c1fd87f7e1a" category="image-alt">Mini-SAS 對 Mini-SAS 纜線</block>
+  <block id="b68abce5afd4f011d69f546d6ca42bb0" category="image-alt">舉升注意標籤</block>
+  <block id="952940d015e596e40662acd687844cc4" category="image-alt">雙節點叢集佈線</block>
+  <block id="a1200bdfe199f9fa17797210969ba510" category="image-alt">管理連線</block>
+  <block id="20822b3c185b92a79afd73ff588c5aca" category="image-alt">網路連線</block>
+  <block id="610f4c607b42bf25cf6ef97ed4b0f226" category="image-alt">25Gb 乙太網路纜線</block>
+  <block id="d3a1b9f7d22d4b09db0b92c5183f1170" category="image-alt">25Gb 乙太網路連接器</block>
+  <block id="ee151691d95fa34033bab458f921f308" category="image-alt">交換式叢集連線</block>
+  <block id="422b19e9df415d67d88bd9b0fb3451d2" category="image-alt">管理網路連線</block>
+  <block id="fb8d77e1874a8ce16ad0e1d15408d8cd" category="image-alt">Mini SAS 至 Mini SAS 連接器</block>
+  <block id="ead5f0e9b0fc157a5b141be2ccd44dbd" category="paragraph">+ 影像： ../media/drw_2800_Shelf 至 Shelf 纜線 _IEOS-895.svg [ 機架至機櫃纜線 ]</block>
+  <block id="b672b75ae62195a280bf8f67f6923701" category="paragraph">+ 。將控制器 A 纜線連接至磁碟機櫃。...控制器 A 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM B 連接埠 1 。...控制器 A 連接埠 0b1 至 IOM A 連接埠 3 、位於堆疊中最後一個磁碟機櫃上。</block>
+  <block id="331c92c74ae2411dbfdce0b34bc0251f" category="paragraph">+ 影像： ../media/oie_cable ， mini ， sas ， hd ， to ， mini ， sas ， hd ， svg [ Mini SAS 到 Mini SAS 連接器 ]</block>
+  <block id="2525bc76b22ae63a5087b660ed944490" category="paragraph">+ 影像： ../media/DWR-2800_controller1-sender_IEOS-896.svg [ 控制器 A 至機櫃連線 ]</block>
+  <block id="d93bc8a87f3c34f95017b69aa2590230" category="paragraph">+ 。將控制器 B 連接至磁碟機櫃。...控制器 B 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM A 連接埠 1 。...控制器 B 連接埠 0b1 至堆疊中最後一個磁碟機櫃上的 IOM B 連接埠 3 。</block>
+  <block id="05a6bd9e18c93cca4d9b550746dfd5d1" category="paragraph">+ 影像： ../media/DWR-2800_controller2-senders_IEOS-897.svg [ 控制器 B 至機櫃連線 ]</block>
+  <block id="40bde7f2324ee2876dd8a09846b14ff4" category="image-alt">開啟電源</block>
+  <block id="512bdc85c8065a0397ce7025381aaf66" category="image-alt">自動探索系統</block>
+  <block id="397249170dcc18ae00c3a7885f97fdc1" category="list-text">將主控台纜線連接至筆記型電腦或主控台，並使用儲存系統隨附的主控台纜線連接控制器上的主控台連接埠，然後將筆記型電腦或主控台連接至管理子網路上的交換器。</block>
 </blocks>

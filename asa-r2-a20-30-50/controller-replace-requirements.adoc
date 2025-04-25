@@ -13,7 +13,7 @@ summary: 在更換 ASA A20 ， ASA A30 或 ASA A50 系統中的控制器之前�
 [role="lead"]
 在更換 ASA A20 ， ASA A30 或 ASA A50 系統中的控制器之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換控制器，以及將控制器的主控台輸出儲存至文字記錄檔。
 
-檢閱控制器更換程序的要求與考量事項。
+您必須檢閱控制器更換程序的要求與考量事項。
 
 
 
@@ -21,7 +21,6 @@ summary: 在更換 ASA A20 ， ASA A30 或 ASA A50 系統中的控制器之前�
 
 * 所有機櫃都必須正常運作。
 * 健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
-* 如果您的系統採用MetroCluster 不必要的組態、您必須檢閱一節 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"] 判斷您是否應該使用此程序。
 * 您必須以相同機型類型的控制器來更換控制器。您無法只更換控制器來升級系統。
 * 在此程序中，您無法變更任何磁碟機或磁碟櫃。
 * 您必須永遠擷取控制器的主控台輸出至文字記錄檔。

@@ -55,7 +55,7 @@ image::../media/drw_ssn_label.png[系統序號範例]
 下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 找出纜線並識別其用途。
 
 +
-[cols="1,2,1,2"]
+[cols="1,2,2,2"]
 |===
 | 連接器類型 | 產品編號與長度 | 纜線類型... | 適用於... 
 
@@ -64,28 +64,19 @@ image::../media/drw_ssn_label.png[系統序號範例]
 100 GbE纜線
  a| 
 X66211A-05（112-00595）、0.5公尺
- a| 
-image:../media/oie_cable100_gbe_qsfp28.png["100 GbE QSFP28 連接器"]
- a| 
-HA互連
-
-
-
- a| 
-X66211A-05（112-00595）、0.5公尺；
 
 X66211-1（112-00573）、1公尺
- a| 
-叢集互連網路
 
-
-
- a| 
-X66211-2（112-00576）、2公尺；
+X66211-2 （ 112-00574 ）， 2m
 
 X66211-5（112-00576）、5公尺
  a| 
-儲存、資料
+image:../media/oie_cable100_gbe_qsfp28.png["100 GbE QSFP28 連接器"]
+ a| 
+** HA互連
+** 叢集互連網路
+** 儲存、資料
+
 
 
 
@@ -96,7 +87,10 @@ X6566B-3-R6（112-00300）、3公尺；
 
 X6566B-5-R6（112-00301）、5公尺
  a| 
-資料
+image:../media/oie_cable100_gbe_qsfp28.png["10 GbE QSFP28 連接器"]
+ a| 
+** 資料
+
 
 
 
@@ -107,7 +101,10 @@ X66240A-2（112-00598）、2公尺；
 
 X66240A-5（112-00600）、5公尺
  a| 
-資料
+image:../media/oie_cable100_gbe_qsfp28.png["25 GbE QSFP28 連接器"]
+ a| 
+** 資料
+
 
 
 
@@ -118,7 +115,8 @@ RJ-45（訂單相依）
  a| 
 image:../media/oie_cable_rj45.png["RJ-45 纜線連接器"]
  a| 
-管理
+** 管理
+
 
 
 
@@ -135,6 +133,8 @@ X66250-30（112-003473）30公尺
  a| 
 image:../media/oie_cable_fc_optical.png["OIE 光纖通道光纖纜線"]
  a| 
+** 網路
+
 
 
 
@@ -145,7 +145,8 @@ micro-USB主控台纜線
  a| 
 image:../media/oie_cable_micro_usb.png["Micro USB 接頭"]
  a| 
-軟體設定期間的主控台連線
+** 軟體設定期間的主控台連線
+
 
 
 
@@ -156,7 +157,7 @@ image:../media/oie_cable_micro_usb.png["Micro USB 接頭"]
  a| 
 image:../media/oie_cable_power.png["電源線"]
  a| 
-開啟系統電源
+將 PSU 連接至電源
 
 |===
 . 下載並完成 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["叢集組態工作表"^]。
@@ -234,8 +235,9 @@ image:../media/icon_square_1_dark_purple.png["編號 1"]
 
 ** e0b至e0b
 ** e1b 至 e1b
-image:../media/drw_affa800_ha_pair_cabling.png["HA 配對纜線"]
 
+
+image:../media/drw_affa800_ha_pair_cabling.png["HA 配對纜線"]
 
 
 
@@ -246,8 +248,9 @@ image:../media/icon_square_2_green.png["編號 2"]
 
 ** e0a至e0a
 ** e1a 至 e1a
-image:../media/drw_affa800_tnsc_clust_cabling.png["雙節點無交換器叢集中的叢集互連纜線"]
 
+
+image:../media/drw_affa800_tnsc_clust_cabling.png["雙節點無交換器叢集中的叢集互連纜線"]
 
 
 
@@ -309,8 +312,9 @@ image:../media/icon_square_1_dark_purple.png["編號 1"]
 
 ** e0b至e0b
 ** e1b 至 e1b
-image:../media/drw_affa800_ha_pair_cabling.png["HA 配對纜線"]
 
+
+image:../media/drw_affa800_ha_pair_cabling.png["HA 配對纜線"]
 
 
 
@@ -318,8 +322,11 @@ image:../media/drw_affa800_ha_pair_cabling.png["HA 配對纜線"]
 image:../media/icon_square_2_green.png["編號 2"]
  a| 
 將叢集互連連接埠連接至 100 GbE 叢集互連交換器。
+
 ** e0a
-** e1a.
+** e1a
+
+
 image:../media/drw_affa800_switched_clust_cabling.png["叢集互連纜線"]
 
 
@@ -547,12 +554,11 @@ image:../media/icon_square_2_yellow.png["編號 2"]
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[選取 ONTAP 圖示]
 
 +
 .. 開啟檔案總管。
-.. 按一下左窗格中的*網路*。
-.. 按一下滑鼠右鍵並選取*重新整理*。
+.. 按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 

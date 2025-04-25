@@ -17,7 +17,10 @@ summary: 控制器上的管理網路連接埠連接至交換器。兩個控制�
 如需將儲存系統連接至網路交換器的相關資訊，請聯絡您的網路管理員。
 
 .關於這項工作
-* 叢集 / HA 和主機網路纜線程序顯示一般組態。請記住、特定纜線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+* 叢集 / HA 和主機網路纜線程序顯示一般組態。
++
+如果您在此處看不到您的組態，請前往link:https://hwu.netapp.com["NetApp Hardware Universe"^]以取得完整的組態和插槽優先順序資訊，以連接儲存系統。
+
 * 將連接器插入連接埠時，纜線連接器拉片上的箭頭圖示會顯示正確的方向（上或下）。
 +
 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -61,7 +64,7 @@ NOTE: I/O 模組連接埠 e2b 和 e4b 未使用，可供主機網路連線使用
 image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 100 GbE 纜線]
 
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[使用兩個 100GbE IO 模組的 A30 和 A50 無交換器叢集佈線圖]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[使用兩個 100GbE IO 模組的 A30 和 A60 無交換式叢集佈線圖]
 
 
 
@@ -87,7 +90,7 @@ NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠（位於插�
 image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 100 GbE 纜線]
 
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[使用一個 100GbE IO 模組的 A30 和 A50 無交換器叢集佈線圖]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[使用一個 100GbE IO 模組的 A30 和 A60 無交換式叢集佈線圖]
 
 
 
@@ -122,7 +125,7 @@ NOTE: I/O 模組連接埠 e2b 和 e4b 未使用，可供主機網路連線使用
 image::../media/oie_cable100_gbe_qsfp28.png[叢集 HA 40/100 GbE 纜線]
 
 +
-image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[使用兩個 100GbE IO 模組的 A30 和 A50 交換式叢集佈線圖]
+image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[使用兩個 100GbE IO 模組的 A30 和 A60 交換式叢集佈線圖]
 
 
 
@@ -199,7 +202,7 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[�
 *10/25 GbE 纜線 *
 
 +
-image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器，寬度 = 100px"]
+image:../media/oie_cable_sfp_gbe_copper.png["GbE SFP 銅線連接器"]
 
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[連接至 40/100GbE 乙太網路主機網路交換器的纜線]

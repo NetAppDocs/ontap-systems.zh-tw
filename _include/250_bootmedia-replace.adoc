@@ -14,6 +14,7 @@
 . 如果您尚未接地、請正確接地。
 . 從來源拔下控制器模組電源供應器。
 . 釋放電源線固定器、然後從電源供應器拔下纜線。
+. 從控制器模組拔下 I/O 纜線。
 . 將您的手指插入控制器模組兩側的鎖定機制、用姆指按下拉桿、然後將控制器從機箱中輕拉幾英吋。
 +
 
@@ -23,6 +24,7 @@ NOTE: 如果您在移除控制器模組時遇到困難、請將指標手指從�
 image::../media/drw_a250_pcm_remove_install.png[開啟鎖定機制]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -45,6 +47,7 @@ image:../media/icon_round_2.png["編號 2"]
 image::../media/drw_a250_open_controller_module_cover.png[打開控制器模組護蓋]
 
 +
+[cols="1,4"]
 |===
 
 
@@ -143,16 +146,13 @@ NOTE: 如果您使用Windows擷取內容、請勿使用WinZipto擷取netboot映�
 
 
 .. 將efi資料夾複製到USB快閃磁碟機的頂端目錄。
-
-
 +
 
 NOTE: 如果服務映像沒有 EFI 資料夾、請參閱link:https://kb.netapp.com/onprem/ontap/hardware/EFI_folder_missing_from_Service_Image_download_file_used_for_boot_device_recovery_for_FAS_and_AFF_models["FAS 和 AFF 機型的開機裝置還原所使用的服務影像下載檔案中遺失 EFI 資料夾 ^"]。
 
 +
-+ USB快閃磁碟機應具備受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
+USB快閃磁碟機應具有受損控制器執行的EFI資料夾和相同服務映像（BIOS）版本。
 
-+
 .. 從筆記型電腦中取出USB隨身碟。
 .. 如果您尚未安裝、請安裝通風管。
 +
@@ -192,6 +192,7 @@ image:../media/icon_round_2.png["編號 2"]
 +
 控制器模組應完全插入、並與機箱邊緣齊平。
 
+.. 重新連接控制器模組 I/O 纜線。
 .. 將電源線插入電源供應器，重新安裝電源線鎖環，然後將電源供應器連接至電源。
 +
 控制器模組會在電源恢復後立即開始開機。準備好中斷開機程序。

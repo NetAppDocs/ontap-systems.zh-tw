@@ -54,7 +54,7 @@ image::../media/drw_ssn_label.png[系統序號範例]
 +
 [cols="1,2,1,2"]
 |===
-| 纜線類型... | 產品編號與長度 | 連接器類型 | 適用於... 
+| 纜線類型... | 產品編號與長度 | 連接器類型 | 適用於....2+ 
 
 
  a| 
@@ -62,7 +62,7 @@ image::../media/drw_ssn_label.png[系統序號範例]
  a| 
 X66240A-05（112-00595）、0.5公尺；
 
-X66240-2（112-00573）、2公尺
+X66240-2 （ 112-00573 ）， 2 m .3+
  a| 
 image:../media/oie_cable100_gbe_qsfp28.png["100 GbE QSFP28 連接器"]
  a| 
@@ -76,31 +76,28 @@ X66240A-2（112-00598）、2公尺；
 X66240A-5（112-00600）、5公尺
  a| 
 資料
-
-
-
  a| 
 100 GbE纜線
  a| 
 X66211-2（112-00576）、2公尺；
 
 X66211-5（112-00576）、5公尺
+
+
+
  a| 
 儲存設備
-
-
-
  a| 
 RJ-45（訂單相依）
  a| 
 不適用
  a| 
 image:../media/oie_cable_rj45.png["RJ-45 纜線連接器"]
+
+
+
  a| 
 管理網路（BMC和扳手連接埠）和乙太網路資料（e0a和e0b）
-
-
-
  a| 
 Fibre Channel
  a| 
@@ -113,29 +110,27 @@ X66250-15（112-00346）15公尺；
 X66250-30（112-003473）30公尺
  a| 
 image:../media/oie_cable_fc_optical.png["OIE 光纖通道光纖纜線"]
+
+
+
  a| 
-
-
-
  a| 
 micro-USB主控台纜線
  a| 
 不適用
  a| 
 image:../media/oie_cable_micro_usb.png["Micro USB 接頭"]
+
+
+
  a| 
 軟體設定期間的主控台連線
-
-
-
  a| 
 電源線
  a| 
 不適用
  a| 
 image:../media/oie_cable_power.png["電源線"]
- a| 
-開啟系統電源
 
 |===
 . 檢閱 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"^] 並收集該指南所列的必要資訊。
@@ -327,11 +322,11 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto]
 .步驟
 . 纜線控制器 A 至機櫃。
 +
-image:../media/drw_affa250_1shelf_cabling_a.png["控制器 A 纜線"]
+image:../media/drw_affa250_1shelf_cabling_a.png["控制器 1 纜線"]
 
 . 纜線控制器 B 至機櫃。
 +
-image:../media/drw_affa250_1shelf_cabling_b.png["控制器 B 纜線"]
+image:../media/drw_affa250_1shelf_cabling_b.png["控制器 2 纜線"]
 
 
 
@@ -364,12 +359,11 @@ image:../media/drw_affa250_1shelf_cabling_b.png["控制器 B 纜線"]
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[選取 ONTAP 圖示]
 
 +
 .. 開啟檔案總管。
-.. 按一下左窗格中的*網路*。
-.. 按一下滑鼠右鍵並選取*重新整理*。
+.. 按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 

@@ -479,13 +479,10 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 您必須使用內建儲存連接埠將控制器連接至機櫃。NetApp建議使用MP-HA纜線來連接具有外部儲存設備的系統。如果您有SAS磁帶機、可以使用單一路徑纜線。如果您沒有外部磁碟櫃、如果系統隨附SAS纜線、則可選擇（未顯示）連接至內部磁碟機的MP-HA纜線。
 
+.開始之前
+* 您必須將機櫃對機櫃連接纜線、然後將兩個控制器纜線連接至磁碟機櫃。
+* 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
-
-=== 選項1：HA與外部磁碟機櫃配對上的纜線儲存設備
-
-您必須將機櫃對機櫃連接纜線、然後將兩個控制器纜線連接至磁碟機櫃。
-
-請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。
 
 image::../media/oie_cable_pull_tab_down.png[纜線連接器、底部有拉片]
 
@@ -539,12 +536,15 @@ image:../media/icon_square_3_tourquoise.png["步驟 3"]
 
 ** 控制器1連接埠0A至堆疊中第一個磁碟機櫃上的IOM B連接埠1。
 ** 控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。
+
+
 image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]     Mini-SAS HD至Mini-SAS HD纜線
 
-
 |===
-+
-如果您有多個磁碟機櫃堆疊、請參閱磁碟機櫃類型的_安裝與佈線指南_。
+
+
+
+NOTE: 如需更多 SAS 纜線資訊和工作表、請參閱link:../sas3/overview-cabling-rules-examples.html["SAS纜線佈線規則、工作表和範例總覽-搭載IOM12模組的磁碟櫃"]
 
 . 若要完成系統設定、請參閱 <<步驟5：完成系統設定與組態設定>>
 
@@ -585,12 +585,11 @@ NOTE: 初始開機最多可能需要八分鐘。
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
+DRW_autodimation_控制 器 _Select_ieops-1849.svg[ 選取 ONTAP 圖示 ]
 
 +
 .. 開啟檔案總管。
-.. 按一下左窗格中的網路。
-.. 按一下滑鼠右鍵、然後選取重新整理。
+.. 按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 

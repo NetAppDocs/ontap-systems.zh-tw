@@ -202,7 +202,7 @@ image::../media/icon_square_1_green.png[編號 1]
 
 
  a| 
-image::../media/icon_square_2_yellow.png[編號 2]
+image::../media/icon_square_2_orange.png[編號 2]
  a| 
 控制器以主控資料網路交換器
 
@@ -362,8 +362,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS �
 . 將每個節點連接至堆疊中的IOM B
 +
 ** 控制器1連接埠0A至堆疊中第一個磁碟機櫃上的IOM B連接埠1。
-** 控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]     Mini-SAS HD至Mini-SAS HD纜線
+** 控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。+ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS 連接器"]Mini-SAS HD 至 Mini-SAS HD 纜線
 
 
 
@@ -406,12 +405,11 @@ image::../media/dwr_laptop_to_switch_only.svg[DWR筆記型電腦只能切換]
 
 . 選取ONTAP 列出的功能表圖示以探索：
 +
-image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[選取 ONTAP 圖示]
 
 +
 .. 開啟檔案總管。
-.. 按一下左窗格中的網路。
-.. 按一下滑鼠右鍵、然後選取重新整理。
+.. 按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 

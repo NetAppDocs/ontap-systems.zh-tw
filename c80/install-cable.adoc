@@ -54,10 +54,10 @@ NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
 * 叢集 / HA 互連纜線 *
 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[叢集 HA 纜線]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[叢集 HA 纜線]
 
 +
-image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[雙節點無交換器叢集佈線圖]
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[雙節點無交換器叢集佈線圖]
 
 
 
@@ -72,13 +72,11 @@ image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[雙節點無交換
 +
 *100 GbE 纜線 *
 
-+
+
+
 image::../media/oie_cable100_gbe_qsfp28.png[100 GB 纜線]
 
-+
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[將叢集連線連接至叢集網路]
-
-
 
 --
 ====
@@ -123,9 +121,9 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[連接到 10/25Gb 乙�
 
 使用 1000BASE-T RJ-45 纜線，將每個控制器上的管理（扳手）連接埠連接到管理網路交換器。
 
-image::../media/oie_cable_rj45.png[RJ-45 纜線]
-
 * 1000BASE-T RJ-45 纜線 *
+
+image::../media/oie_cable_rj45.png[RJ-45 纜線]
 
 image::../media/drw_70-90_management_connection_ieops-1656.svg[連線至您的管理網路]
 
