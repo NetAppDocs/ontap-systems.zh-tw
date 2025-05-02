@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-如何在 AFF A800 或 AFF C800 HA 配對中連接 NS224 機櫃、取決於您要熱新增的機櫃數量、以及您在控制器上使用的具備 ROCE 功能的連接埠集數（一或兩個）。
-
 .開始之前
 * 您必須已檢閱 link:requirements-hot-add-shelf.html["熱新增需求和最佳實務做法"]。
 * 您必須已完成中的適用程序 link:prepare-hot-add-shelf.html["準備熱新增機櫃"]。
@@ -28,7 +26,7 @@ NOTE: 此步驟假設您已在插槽5中安裝具備RoCE功能的PCIe卡。
 下圖顯示使用每個控制器上一個具備切換功能的 PCIe 卡來連接一個熱插拔機櫃的纜線：
 
 +
-image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[AFF A800 或 AFF C800 的纜線、搭配一個 NS224 機櫃和一個 PCIe 卡]
+image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[使用一個 NS224 機櫃和一個 PCIe 卡，連接 AFF / ASA A800 或 AFF / ASA C800 的纜線]
 
 
 

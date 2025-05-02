@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-當需要額外儲存時、您最多可以在 AFF A250 或 AFF C250 HA 配對中熱新增一個 NS224 機櫃。
-
 .開始之前
 * 您必須已檢閱 link:requirements-hot-add-shelf.html["熱新增需求和最佳實務做法"]。
 * 您必須已完成中的適用程序 link:prepare-hot-add-shelf.html["準備熱新增機櫃"]。
@@ -21,7 +19,7 @@
 .. 纜線櫃NSM B連接埠e0A至控制器B插槽1連接埠A（e1a）。
 .. 纜線櫃NSM B連接埠e0b連接至控制器A插槽1連接埠b（e1b）。+下圖顯示機櫃佈線完成後的情形。
 +
-image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[AFF A250 C250 或 FAS500f 的纜線、其中包含一個 NS224 機櫃和一組 PCIe 卡連接埠]
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[使用一個 NS224 機櫃和一組 PCIe 卡連接埠的 AFF / ASA A250 C250 或 FAS500f 纜線]
 
 
 

@@ -2,8 +2,6 @@
 :allow-uri-read: 
 
 
-如何為 NS224 機櫃接線以進行熱新增、取決於您是否有 AFF A400 或 AFF C400 HA 配對。
-
 .開始之前
 * 您必須已檢閱 link:requirements-hot-add-shelf.html["熱新增需求和最佳實務做法"]。
 * 您必須已完成中的適用程序 link:prepare-hot-add-shelf.html["準備熱新增機櫃"]。
@@ -28,7 +26,7 @@
 下圖顯示使用每個控制器上一組具備磁碟功能的連接埠、為一個熱新增機櫃進行纜線連接的情況：
 
 +
-image::../media/drw_ns224_a400_1shelf.png[AFF A400 的纜線、其中包含一個 NS224 機櫃和一組內建連接埠]
+image::../media/drw_ns224_a400_1shelf.png[一組 NS224 機櫃和一組內建連接埠，用於 AFF / ASA A400 的纜線]
 
 
 
@@ -66,7 +64,7 @@ image::../media/drw_ns224_a400_1shelf.png[AFF A400 的纜線、其中包含一�
 下圖顯示兩個熱新增磁碟櫃的纜線佈線：
 
 +
-image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[AFF A400 的纜線、其中有兩個 NS224 機櫃、一組內建連接埠、以及一組 PCIe 卡連接埠]
+image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[使用兩個 NS224 機櫃，一組內建連接埠和一組 PCIe 卡連接埠的 ASA A400 纜線]
 
 . 使用驗證熱添加的機櫃是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +
@@ -96,7 +94,7 @@ image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[AFF A400 的纜線、其�
 下圖顯示使用每個控制器上一組具備磁碟功能的連接埠、為一個熱新增機櫃進行纜線連接的情況：
 
 +
-image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[AFF C400 的纜線、其中包含一個 NS224 機櫃和一組 PCIe 卡連接埠]
+image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[使用一個 NS224 機櫃和一組 PCIe 卡連接埠的 AFF / ASA C400 纜線]
 
 
 
@@ -134,7 +132,7 @@ image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[AFF C400 的纜線、其中�
 下圖顯示兩個熱新增磁碟櫃的纜線佈線：
 
 +
-image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[使用兩個 NS224 機櫃和兩組 PCIe 卡連接埠的 AFF C400 纜線]
+image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[使用兩個 NS224 機櫃和兩組 PCIe 卡連接埠的 AFF / ASA C400 纜線]
 
 . 使用驗證熱添加的機櫃是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
 +
