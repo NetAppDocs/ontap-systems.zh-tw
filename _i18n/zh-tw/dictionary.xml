@@ -9787,7 +9787,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="72b54ea7be3a13b4755dc4521c8d0af6" category="paragraph">使用 CAM 把手將磁碟機滑出磁碟機支架，並用另一隻手支撐磁碟機。</block>
   <block id="0093c88dee6ce91e0bd8ccb1cfbc03ff" category="admonition">由於磁碟機很脆弱，因此請盡量減少處理，以免損壞它們。</block>
   <block id="0649d37403624118b801efa8956dc716" category="section-title">步驟 3 ：從設備機架或系統機櫃內更換機箱</block>
-  <block id="e5a4b20c56ed46e589289f6e1a9368dd" category="paragraph">您可以從設備機架或系統機櫃中移除受損的機箱，安裝替換機箱，安裝磁碟機，任何磁碟機擋片，然後安裝擋板。</block>
   <block id="eb8def779f4d3e61a371ec65c0cc0128" category="list-text">從受損的機箱安裝點取下螺絲。</block>
   <block id="16e252393218a73fc25b829675a86fce" category="paragraph">將螺絲放在一旁，以便稍後在本程序中使用。</block>
   <block id="433916ec8110bbee1005399f55ede944" category="admonition">如果儲存系統是隨附於 NetApp 系統機櫃中，則必須先卸下機箱背面的其他螺絲，才能卸下機箱。</block>
@@ -11808,7 +11807,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="64013ec345bda7b07597c5bf34eac5fe" category="open-title">選項 1 ： NS224 機櫃</block>
   <block id="8a978cde5ab4fac3e67487580bc3a51a" category="open-title">選項 2 ： SAS 機櫃</block>
   <block id="2cc2225989c416fa40923a89f7f8d99c" category="doc">檢查開機媒體上的加密金鑰支援和狀態： FAS50</block>
-  <block id="e65767537c6f00cc3bec96359db6404a" category="summary">如果需要硬體故障，請更換 FAS50 儲存系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除任何快取模組，安裝替換機箱，以及重新安裝機箱元件。</block>
   <block id="aa7129f47a0b0a00e74ba4024fe7ba35" category="paragraph">如果需要硬體故障，請更換 FAS50 儲存系統的機箱。更換程序包括移除控制器，移除任何快取模組和磁碟機擋片，安裝替換機箱，以及重新安裝機箱元件。</block>
   <block id="d3f6a519d78eb3e642c0549ced5f8f2f" category="summary">在更換 FAS50 儲存系統中的控制器之前，請確保您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換控制器，以及將控制器的主控台輸出儲存至文字記錄檔。</block>
   <block id="3034b89fc8e6fc3ae99585d8f1eab80e" category="doc">更換控制器的要求 - FAS50</block>
@@ -11934,4 +11932,23 @@ SFP+ （目標 / 啟動器）</block>
   <block id="18b75697f84707c97e051581b495caae" category="list-text">在 ASA A400 上：</block>
   <block id="f08c247bf18a7d50e52f66010faca66f" category="list-text">在 ASA C400 上：</block>
   <block id="2aba7ab5e3f8f696965da4208fe4dd23" category="open-title">ASA A30 或 ASA A50</block>
+  <block id="e3fb1d8bd564bfe9f807ba42e5cd7b33" category="paragraph">按下快取模組面板上的釋放按鈕以開啟 CAM 把手。</block>
+  <block id="06269d1797937a16e290698098cc8abd" category="paragraph">向下轉動 CAM 把手，將快取模組從中間背板上鬆脫。</block>
+  <block id="469c355b09315b0a1d1690c1923180a4" category="paragraph">使用 CAM 把手將快取模組滑出磁碟機支架，另一隻手支撐快取模組。</block>
+  <block id="e84b84ef6157f4a35245509c8a7fa353" category="paragraph">移除快取模組時，請務必用雙手支撐其重量。</block>
+  <block id="feec4c6e74f9f529edb4ef65e2cc4efc" category="paragraph">您可以從設備機架或系統機櫃中移除受損的機箱，安裝替換機箱，安裝控制器，安裝任何快取模組和磁碟機擋片，然後安裝擋板。</block>
+  <block id="19b2479c4fb73cb4e1e7a5cd66cd9fa9" category="list-text">當 CAM 把手處於開啟位置時，請用雙手插入快取模組。</block>
+  <block id="5b42dc5254df979588b011980c1a8adc" category="list-text">輕推直到快取模組停止。</block>
+  <block id="73e8bab771e1e37a562d7cdbeb444153" category="list-text">關閉 CAM 把手，使快取模組完全插入中間背板，把手卡入定位。</block>
+  <block id="82a8073ecc9994385ee15cd53ba7d96a" category="paragraph">請務必緩慢關閉 CAM 把手，使其正確對齊快取模組的表面。</block>
+  <block id="0c1eef5d5ee997a38d2bb1303bcee89d" category="list-text">如有需要，請針對其餘的快取模組重複此程序。</block>
+  <block id="45d69e7bdfec0647cf3523f57e30a808" category="section-title">步驟 2 ：從損壞的機箱中取出磁碟機</block>
+  <block id="c0055725498ec7c6a2d459f6d18aef46" category="paragraph">您需要從損壞的機箱中移除所有磁碟機和任何磁碟機擋片，以便稍後在程序中安裝它們到更換的機箱中。</block>
+  <block id="3e56a6d3defe800cc97429c918a7c4fb" category="list-text">卸下磁碟機和任何磁碟機擋片：</block>
+  <block id="ba52981b53ce10a301f84e2da386c778" category="admonition">請追蹤每個磁碟機和磁碟機擋片從哪個磁碟機支架中移除，因為它們必須安裝在更換機箱的相同磁碟機支架中。</block>
+  <block id="ab32ae446e6fa5de50a5d631bbe01daf" category="list-text">將磁碟機放在一旁的無靜電推車或桌面上。</block>
+  <block id="17df5870a90dff11dc4f027f001751a7" category="section-title">步驟 2 ：從設備機架或系統機櫃內更換機箱</block>
+  <block id="277a5698809db74260fd2ddda1e6acd9" category="paragraph">您可以從設備機架或系統機櫃中移除受損的機箱，安裝替換機箱，安裝磁碟機，任何磁碟機擋片，然後安裝擋板。</block>
+  <block id="a6d6e73e138675b6ffbbb0e4663b2d5d" category="list-text">將您從受損機箱中卸下的磁碟機和任何磁碟機擋片安裝到替換機箱中：</block>
+  <block id="4a7738e24d9329241e05c40def3be102" category="admonition">磁碟機和磁碟機擋片必須安裝在更換機箱的相同磁碟機支架中。</block>
 </blocks>
