@@ -133,20 +133,29 @@ CAM 鎖定按鈕
 
 == 步驟 3 ：重新啟動控制器
 
-更換I/O模組之後、您必須重新啟動控制器模組。
+更換 I/O 模組之後，您必須重新啟動控制器。
 
 .步驟
-. 在 Loader 提示符下，重新引導節點： "bye"
+. 從載入程式提示重新啟動控制器：
++
+`bye`
+
 +
 
-NOTE: 這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
+NOTE: 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
 
+. 使節點恢復正常運作：
 +
+'容錯移轉還原-ofnode_disapped_node_name_'
 
-NOTE: 完成轉換後、請務必結束維護模式。
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback _true_`
 
-. 使節點恢復正常運作：「儲存容錯移轉恢復-節點減損節點名稱」
-. 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 
