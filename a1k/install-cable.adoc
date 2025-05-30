@@ -140,6 +140,15 @@ IMPORTANT: 請勿插入電源線。
 
 如需儲存系統支援的最大機櫃數量以及所有纜線選項link:https://hwu.netapp.com["NetApp Hardware Universe"^]，請參閱。
 
+.關於這項工作
+AFF A1K 儲存系統支援具有 NSM100 或 NSM100B 模組的 NS224 架。模組之間的主要區別是：
+
+* NSM100 機架模組使用內建連接埠 e0a 和 e0b。
+* NSM100B 架模組使用插槽 1 中的連接埠 e1a 和 e1b。
+
+
+以下佈線範例顯示了 NS224 機架中的 NSM100 模組（涉及機架模組連接埠）。
+
 [role="tabbed-block"]
 ====
 .選項 1 ：連接至一個 NS224 儲存櫃

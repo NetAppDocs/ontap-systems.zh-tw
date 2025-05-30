@@ -1,0 +1,30 @@
+---
+permalink: asa-r2-c30/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: asa c30, replace the chassis workflow 
+summary: 更換 ASA C30 儲存系統中的機箱包括檢查更換需求、關閉控制器、更換機箱以及驗證系統運作。 
+---
+= 機箱更換工作流程 - ASA C30
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更換 ASA C30 儲存系統中的機箱包括檢查更換需求、關閉控制器、更換機箱以及驗證系統運作。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:chassis-replace-requirements.html["檢閱機箱更換需求"]
+[role="quick-margin-para"]
+查看更換底盤的要求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:chassis-replace-shutdown.html["關閉控制器"]
+[role="quick-margin-para"]
+關閉控制器、以便在機箱上執行維護。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:chassis-replace-move-hardware.html["更換機箱"]
+[role="quick-margin-para"]
+更換機箱，方法是將驅動器和所有驅動器擋片、控制器（帶電源）和擋板從損壞的機箱移到新機箱，然後將損壞的機箱換成與損壞的機箱相同型號的新機箱。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]
+[role="quick-margin-para"]
+驗證機箱的 HA 狀態、並將故障零件退回 NetApp 。

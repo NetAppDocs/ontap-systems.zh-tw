@@ -11,13 +11,6 @@
 +
 e0S 連接埠用於自動開機恢復。
 
-* 判斷內建金鑰管理程式（ OKM ）或外部金鑰管理程式（ EKM ）是使用下列其中一種方法來設定：
-+
-** 您可以詢問系統管理員是否已啟用 OKM 或 EKM 。
-** 若要檢查 OKM 是否已啟用，您可以使用 `security key-manager onboard show`。
-** 若要檢查 EKM 是否已啟用，您可以使用 `security key-manager external show`。
-
-
 * 若為 OKM ，您需要 OKM 複雜密碼檔案內容。
 * 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
 +
