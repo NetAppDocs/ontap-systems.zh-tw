@@ -8937,8 +8937,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="789b5a8a8cbbdce99d0cd8864ee0122a" category="doc">關閉受損的控制器- FAS70和FAS90</block>
   <block id="2902ee20441450339d3c624a2432953d" category="list-text"><block ref="402920e7db99056d01d15836c97d7e6e" category="inline-xref-macro-rx"></block></block>
   <block id="0ead7a2e2db558cfd790c55a9c76462e" category="list-text">確認所有其他元件正常運作；否則、您必須聯絡技術支援部門。</block>
-  <block id="fd39955a756e9aaa81ca55b2791f9b72" category="example-title">選項 1 大多數系統</block>
-  <block id="d4373786f422d4c41e16fcb4a1e26b83" category="example-title">選項 2 MetroCluster 組態</block>
   <block id="1cc5afe23260cb08d578b3171ed8bb0d" category="paragraph">快取模組插槽編號</block>
   <block id="9c7e22c30b9aa93d97efb0ef5d7ccaa8" category="list-text">將彈片從模組轉開。</block>
   <block id="21c6d5df7d87902fb54560352086c7e1" category="list-text">捏住快取模組頂端的 Terra Cotta 標籤、將 CAM 把手轉離快取模組。</block>
@@ -11249,7 +11247,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="35ac4e474d14cd3235380c2e767e83a3" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 FAS70 或 FAS90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
   <block id="a7188c3f4745ef552e2d05d7b35f5f28" category="summary">更換 FAS70 或 FAS90 系統中的實時時鐘（ RTC ）電池（通常稱爲幣形電池），以確保依賴準確時間同步的服務和應用程序保持正常運行。</block>
   <block id="2ffef1288a7f6acf62a54035268660b1" category="summary">當 FAS70 或 FAS90 系統出現故障或固件損壞時，請更換系統管理模塊。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
-  <block id="5058f1af8388633f609cadb75a75dc9d" category="paragraph">。</block>
   <block id="83755d1a8b686dba4bc8143c0cb7f397" category="doc">開機媒體更換工作流程 - AFF A1K</block>
   <block id="25602a3f0e04b149a4c958bcec65c371" category="summary">AFF A1K 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除系統管理模組，移除受損的開機媒體，安裝替換開機媒體，然後將 ONTAP 映像傳輸至替換開機媒體。</block>
   <block id="b33207f5d0f2655fdef88d9bbf915f24" category="summary">關閉 AFF A1K 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定。</block>
@@ -11913,9 +11910,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e772ad168b6f97f132982a96392cd046" category="example-title">更換 NS224 的 AC 電源供應器</block>
   <block id="0dcc8efe101bb5e6350d650ce519cbfa" category="video-title">在 NS224 機櫃中熱交換 AC 電源供應器</block>
   <block id="40f990da8c57e47c36081d4d612c9817" category="list-text">從 PSU 上拔下電源線，然後將控制器模組從系統前部拉出幾英寸。</block>
-  <block id="5330c5fb5d366be53452014b9ecf03a7" category="paragraph">+ ..拔下連接至系統管理模組的所有纜線。請務必標示纜線的連接位置、以便在重新安裝模組時、將纜線連接至正確的連接埠。...向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。...按下 System Management CAM 按鈕。...向下轉動凸輪栓鎖、直到卡入定位為止。...將手指插入 CAM 拉桿開口處、然後將模組從機箱中拉出、即可將系統管理模組從機箱中移除。...將系統管理模組放在防靜電墊上、以便存取開機媒體。。從管理模組中移除開機媒體：</block>
-  <block id="42daa41b8c19102ddb14e0889d7abbb4" category="paragraph">+ image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[啟動媒體取代圖形]</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="193d35b8a9ac476b4099d10d04a128a6" category="list-text">輕輕地將控制器模組重新安裝並鎖定在系統前面。</block>
   <block id="c65e5ab2ccd40a14e7dbaad19aa0c504" category="list-text">從控制器上拔下 PSU 的電源線，然後將系統前部的控制器模組拉出幾英寸。</block>
   <block id="2a111f85cafe27d96d705414a1545f34" category="list-text">將電源線重新插入 PSU，然後輕輕地重新安裝並鎖定係統前部的控制器模組。</block>
@@ -11926,7 +11920,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b4f9b4ed219fb6f91477aff5ebef3453" category="admonition">如果您有直流電源，請將電源塊重新連接到電源。</block>
   <block id="4efb9ea6af03bf03e0cdc2a4164ea43c" category="list-text">將主控台纜線插入替換控制器模組的主控台連接埠、然後重新連接至筆記型電腦、以便在重新開機時接收主控台訊息。</block>
   <block id="fde22c7ade0121628e0502770ed5326e" category="list-text">插入電源。一旦電源恢復，控制器就會啟動並進入 LOADER 提示字元。</block>
-  <block id="ea1ad38d91c2e87ef2e9571bd55654fd" category="list-text">ONTAP 9.17.1</block>
   <block id="14a1b02d9ac34f22a362671d392a3852" category="list-text">ASA C30</block>
   <block id="ed57089257c5bf0e9855c2abce5e2f2c" category="paragraph">AFF A1K 儲存系統支援具有 NSM100 或 NSM100B 模組的 NS224 架。模組之間的主要區別是：</block>
   <block id="bee9bdef55e93399a97d85b3925cfca2" category="list-text">NSM100 機架模組使用內建連接埠 e0a 和 e0b。</block>
@@ -12019,4 +12012,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b4a3b44dc7350cb88f59a4a2eb7dda1d" category="sidebar">ASA C30 機箱</block>
   <block id="cb330090f109eb2fa5d8e0cb697b8627" category="sidebar">ASA C30 控制器模組</block>
   <block id="d6cf13e3e73df787bea3a13aaa745efd" category="sidebar">ASA C30 I/O 模組</block>
+  <block id="8acf9575f7f79494b7321c6428846a4b" category="paragraph">更換啟動媒體。</block>
+  <block id="8fdc5ec3ff56b023a707d257557cb7c1" category="paragraph">FAS70 和 FAS90 儲存系統支援具有 NSM100 或 NSM100B 模組的 DS212C、DS224C、DS460C 和 NS224 架。</block>
+  <block id="cb1d7f2de7963108d3fe1b590a415523" category="paragraph">NS224 模組之間的主要區別是：</block>
+  <block id="a1c52b2edb23bc93318c0b82dc9baead" category="paragraph">以下 NS224 佈線範例顯示了 NS224 架中的 NSM100 模組（涉及架模組連接埠）。</block>
+  <block id="29cc4b807f94b06bddae2e11c6a56c1e" category="paragraph">USB 隨身碟應具有與受損控制器所執行的服務映像 (BIOS) 版本相同的版本。</block>
 </blocks>

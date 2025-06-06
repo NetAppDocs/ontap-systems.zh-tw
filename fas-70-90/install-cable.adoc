@@ -142,6 +142,17 @@ IMPORTANT: 請勿插入電源線。
 
 有關 SAS 機櫃佈線的其他指導，請參閱link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html["SAS 纜線規則與概念 - 配備 IOM12/ IOM12B 模組的機櫃"]。
 
+.關於這項工作
+FAS70 和 FAS90 儲存系統支援具有 NSM100 或 NSM100B 模組的 DS212C、DS224C、DS460C 和 NS224 架。
+
+NS224 模組之間的主要區別是：
+
+* NSM100 機架模組使用內建連接埠 e0a 和 e0b。
+* NSM100B 架模組使用插槽 1 中的連接埠 e1a 和 e1b。
+
+
+以下 NS224 佈線範例顯示了 NS224 架中的 NSM100 模組（涉及架模組連接埠）。
+
 [role="tabbed-block"]
 ====
 .選項 1 ：一個 NS224 儲存櫃
