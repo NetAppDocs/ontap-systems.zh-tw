@@ -230,10 +230,10 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
-.動畫：雙節點無交換式叢集佈線
+.動畫雙節點無交換器叢集佈線
 video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto]
 +
-image::../media/drw_9500_tnsc_network_cabling.svg[DRW 9500-scc網路纜線]
+image::../media/drw_9500_tnsc_network_cabling.svg[TNSC網路佈線圖]
 
 +
 [cols="20%,80%"]
@@ -322,10 +322,10 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 請使用動畫或圖例來完成控制器與交換器之間的佈線：
 +
-.動畫-交換式叢集纜線
+.動畫：交換集群佈線
 video::3ad3f118-8339-4683-865f-ae7c0170400c[panopto]
 +
-image::../media/drw_9500_switched_network_cabling.svg[DRW 9500交換式網路纜線]
+image::../media/drw_9500_switched_network_cabling.svg[交換式叢集網路纜線]
 
 +
 [cols="20%,80%"]
@@ -422,10 +422,10 @@ NOTE: 插入連接器時、您應該會感覺到它卡入到位；如果您沒�
 
 . 請使用下列動畫或圖片、將控制器連接至三個（一疊磁碟機櫃、一疊兩個磁碟機櫃）DS224C磁碟機櫃。
 +
-.動畫-連接磁碟機櫃
+.動畫電纜驅動器架
 video::c958aae6-9d08-4d3d-a213-ae7c017040cd[panopto]
 +
-image::../media/drw_9500_sas_shelf_cabling.svg[DRW 9500-SAS機櫃佈線]
+image::../media/drw_9500_sas_shelf_cabling.svg[SAS 架佈線]
 
 +
 [cols="20%,80%"]
@@ -434,13 +434,13 @@ image::../media/drw_9500_sas_shelf_cabling.svg[DRW 9500-SAS機櫃佈線]
 
 
  a| 
-image::../media/icon_square_1_blue.png[圖示方塊 1 藍色]
+image::../media/icon_square_1_blue.png[圖說文字圖示 1]
  a| 
 使用圖示將磁碟機櫃堆疊1連接至控制器、以供參考。
 
 * Mini-SAS 纜線 *
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD到迷你SAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HD 電纜]
 
 
 
@@ -451,7 +451,7 @@ image::../media/icon_square_2_yellow.png[圖說文字圖示 2.]
 
 * Mini-SAS 纜線 *
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD到迷你SAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HD 電纜]
 
 
 
@@ -462,7 +462,7 @@ image::../media/icon_square_3_tourquoise.png[圖說文字圖示 3.]
 
 * Mini-SAS 纜線 *
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD到迷你SAS HD]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HD 電纜]
 
 |===
 
@@ -481,10 +481,10 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[OIE纜線迷你SAS HD�
 
 . 使用下列動畫或繪圖來設定一或多個磁碟機櫃ID：
 +
-.動畫-設定您的機櫃ID&#8217/s
+.動畫設定你的架ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_power-on_set_shelf_ID_set.svg[在設定機櫃ID集上啟動的DRW]
+image::../media/drw_power-on_set_shelf_ID_set.svg[開啟電源並設定機架ID]
 
 +
 [cols="20%,80%"]
@@ -533,10 +533,10 @@ image::../media/icon_round_5.png[編號 5.]
 |===
 . 開啟兩個節點的電源供應器上的電源開關。
 +
-.動畫-開啟控制器的電源
+.動畫 開啟控制器的電源
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image::../media/drw_9500_power-on.svg[已開啟DRW 9500電源]
+image::../media/drw_9500_power-on.svg[開啟系統電源]
 
 +
 
@@ -548,10 +548,10 @@ NOTE: 初始開機最多可能需要八分鐘。
 
 . 請使用下列動畫將筆記型電腦連線至管理交換器。
 +
-.動畫-將筆記型電腦連接到管理交換器
+.動畫 將筆記型電腦連接到管理交換機
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto]
 +
-image::../media/dwr_laptop_to_switch_only.svg[DWR筆記型電腦只能切換]
+image::../media/dwr_laptop_to_switch_only.svg[筆記型電腦到交換器的佈線]
 
 . 選取ONTAP 列出的功能表圖示以探索：
 +
@@ -605,17 +605,17 @@ NOTE: 請參閱筆記型電腦或主控台的線上說明、瞭解如何設定�
 
 .. 使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的交換器。
 +
-image::../media/drw_9500_cable_console_switch_controller.svg[DRW 9500纜線主控台交換器控制器]
+image::../media/drw_9500_cable_console_switch_controller.svg[控制台切換連接]
 
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 
 
 . 請使用下列動畫來設定一或多個磁碟機櫃ID：
 +
-.動畫-設定您的機櫃ID&#8217/s
+.動畫設定你的架ID
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 +
-image::../media/drw_power-on_set_shelf_ID_set.svg[在設定機櫃ID集上啟動的DRW]
+image::../media/drw_power-on_set_shelf_ID_set.svg[開機並設定機架ID]
 
 +
 [cols="20%,80%"]
@@ -664,10 +664,10 @@ image::../media/icon_round_5.png[編號 5.]
 |===
 . 開啟兩個節點的電源供應器上的電源開關。
 +
-.動畫-開啟控制器的電源
+.動畫 開啟控制器的電源
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto]
 +
-image::../media/drw_9500_power-on.svg[已開啟DRW 9500電源]
+image::../media/drw_9500_power-on.svg[開啟系統電源]
 
 +
 

@@ -11,66 +11,25 @@ summary: 驗證邏輯介面（生命週期）是否正在回報其主連接埠�
 
 
 [role="lead"]
-若要完成 FAS70 和 FAS90 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。
+若要完成 AFF A1K 系統的控制器更換，請先還原 NetApp 儲存加密配置（如有必要）。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，將故障元件退回給 NetApp。
 
 
 
-== 步驟1：在ONTAP 更新版本中安裝更換控制器的授權
+== 步驟 1 ：驗證生命週期並檢查叢集健全狀況
 
-如果受損節點使用ONTAP 的是需要標準（節點鎖定）授權的功能、您必須為_replace_節點安裝新的授權。對於具有標準授權的功能、叢集中的每個節點都應該擁有自己的功能金鑰。
-
-.開始之前
-如果系統最初運行的是 ONTAP 9 ． 10.1 或更高版本，請使用中介紹的過程 https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^["主機板更換後程序，可更新 ONTAP 平台上的授權"]。如果您不確定系統的初始 ONTAP 版本、請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]以取得更多資訊。
-
-.關於這項工作
-* 在您安裝授權金鑰之前、需要標準授權的功能仍可用於_replace_節點。但是、如果受損節點是叢集中唯一具有功能授權的節點、則不允許對功能進行組態變更。
-+
-此外、在節點上使用未獲授權的功能可能會使您違反授權合約、因此您應該盡快在_replace_節點上安裝替換授權金鑰或金鑰。
-
-* 授權金鑰必須為28個字元的格式。
-* 您有90天的寬限期可以安裝授權金鑰。寬限期過後、所有舊授權都會失效。安裝有效的授權金鑰之後、您有24小時的時間可以在寬限期結束之前安裝所有金鑰。
-* 如果節點處於MetroCluster 不完整組態、且站台上的所有節點均已更換、則必須先在_replace_節點或節點上安裝授權金鑰、才能進行切換。
-
-
-.步驟
-. 如果您需要新的授權金鑰、請在上取得替換授權金鑰 https://mysupport.netapp.com/site/global/dashboard["NetApp 支援網站"] 在「軟體授權」下的「我的支援」區段中。
-+
-
-NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔案上的電子郵件地址。如果您在30天內未收到附有授權金鑰的電子郵件、請聯絡技術支援部門。
-
-. 安裝每個授權金鑰：「+系統授權新增-授權碼授權金鑰、授權金鑰...+」
-. 視需要移除舊授權：
-+
-.. 檢查未使用的授權：「授權清理-未使用的-Simulate」
-.. 如果清單看起來正確、請移除未使用的授權：「授權清理-未使用」
-
-
-
-
-
-
-== 步驟 2 ：驗證生命週期，登錄序號，以及檢查叢集健全狀況
-
-在將_replacement節點送回服務之前、您應該先確認該生命點是否位於其主連接埠上、如果AutoSupport 啟用了「BIOS」、請登錄_replacement節點的序號、然後重設自動恢復。
+將替換節點送回服務之前，請先確認邏輯介面位於其主連接埠上，檢查叢集健全狀況，然後重設自動恢復。
 
 .步驟
 . 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
 +
-如果有任何生命被列為假、請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
-
-. 向NetApp支援部門註冊系統序號。
-+
-** 如果啟用了「支援」功能、請傳送「支援」訊息來登錄序號。AutoSupport AutoSupport
-** 如果AutoSupport 未啟用此功能、請致電 https://mysupport.netapp.com["NetApp支援"] 以登錄序號。
-
+如果有任何邏輯介面列為 false ，請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
 
 . 檢查叢集的健全狀況。如需詳細資訊、請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["如何使用 ONTAP 中的指令碼執行叢集健全狀況檢查"^] 知識庫文章。
-. 如果觸發 AutoSupport 維護時段、請使用結束 `system node autosupport invoke -node * -type all -message MAINT=END` 命令。
 . 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
 
 
 
 
-== 步驟3：將故障零件歸還給NetApp
+== 步驟 2 ：將故障零件退回 NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

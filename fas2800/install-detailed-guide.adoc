@@ -233,17 +233,18 @@ image::../media/icon_square_3_orange.png[編號 3]
 
 image::../media/oie_cable_pull_tab_down.png[拉片方向]
 
+您可以使用適用的動畫或表格中的詳細步驟將控制器連接到網路。
+
+.動畫 - 無交換器的雙節點叢集佈線
+video::90577508-fa79-46cf-b18a-afe8016325af[panopto]
+.動畫-交換式叢集纜線
+video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto]
 [role="tabbed-block"]
 ====
 .選項1：連接雙節點無交換式叢集
 --
 為無交換器的雙節點叢集連接網路連線和叢集互連連接埠佈線。
 
-.關於這項工作
-使用動畫或逐步說明完成控制器與交換器之間的纜線。
-
-.動畫 - 無交換器的雙節點叢集佈線
-video::90577508-fa79-46cf-b18a-afe8016325af[panopto]
 .步驟
 . 使用叢集互連纜線將叢集互連連接埠 e0a 連接至 e0a 、並將 e0b 連接至 e0b ：
 +
@@ -320,11 +321,6 @@ IMPORTANT: 請勿插入電源線。
 --
 為交換式叢集連接網路連線和叢集互連連接埠。
 
-.關於這項工作
-使用動畫或逐步說明完成控制器與交換器之間的纜線。
-
-.動畫-交換式叢集纜線
-video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto]
 .步驟
 . 使用叢集互連纜線將叢集互連連接埠 e0a 連接至 e0a 、並將 e0b 連接至 e0b ：
 +
@@ -446,31 +442,29 @@ video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto]
 .. IOM A 上的連接埠 1 至 IOM A 的連接埠 3 、位於機架正下方。
 .. IOM B 上的連接埠 1 至 IOM B 的連接埠 3 、位於機架正下方。
 +
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS 至 Mini SAS 連接器]
+image::../media/drw_2800_shelf-to-shelf_cabling_IEOPS-895.svg[架間佈線]
 
 
 
+. 將控制器 A 纜線連接至磁碟機櫃。
++
+.. 控制器 A 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM B 連接埠 1 。
+.. 控制器 A 連接埠 0b1 至 IOM A 連接埠 3 、位於堆疊中最後一個磁碟機櫃上。
++
+image::../media/dwr-2800_controller1-to shelves_IEOPS-896.svg[控制器 A 到機架連接]
 
 
-* Mini-SAS HD 至 Mini-SAS HD 纜線 *
 
-+ 影像： ../media/drw_2800_Shelf 至 Shelf 纜線 _IEOS-895.svg [ 機架至機櫃纜線 ]
+. 將控制器 B 連接至磁碟機櫃。
++
+.. 控制器 B 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM A 連接埠 1 。
+.. 控制器 B 連接埠 0b1 至堆疊中最後一個磁碟機櫃上的 IOM B 連接埠 3 。
 
-+ 。將控制器 A 纜線連接至磁碟機櫃。...控制器 A 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM B 連接埠 1 。...控制器 A 連接埠 0b1 至 IOM A 連接埠 3 、位於堆疊中最後一個磁碟機櫃上。
 
-+ 影像： ../media/oie_cable ， mini ， sas ， hd ， to ， mini ， sas ， hd ， svg [ Mini SAS 到 Mini SAS 連接器 ]
++
+image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[控制器 B 到機架連接]
 
-* Mini-SAS HD 至 Mini-SAS HD 纜線 *
 
-+ 影像： ../media/DWR-2800_controller1-sender_IEOS-896.svg [ 控制器 A 至機櫃連線 ]
-
-+ 。將控制器 B 連接至磁碟機櫃。...控制器 B 連接埠 0A 至堆疊中第一個磁碟機櫃上的 IOM A 連接埠 1 。...控制器 B 連接埠 0b1 至堆疊中最後一個磁碟機櫃上的 IOM B 連接埠 3 。
-
-+ 影像： ../media/oie_cable ， mini ， sas ， hd ， to ， mini ， sas ， hd ， svg [ Mini SAS 到 Mini SAS 連接器 ]
-
-* Mini-SAS HD 至 Mini-SAS HD 纜線 *
-
-+ 影像： ../media/DWR-2800_controller2-senders_IEOS-897.svg [ 控制器 B 至機櫃連線 ]
 
 
 
@@ -478,6 +472,10 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS 至 Mini SAS �
 
 使用選項 1 ：（如果已啟用網路探索）或選項 2 ：（如果未啟用網路探索）來完成儲存系統的設定和組態。
 
+在需要設定貨架 ID 的任一選項中使用下列動畫：
+
+.動畫-設定磁碟機櫃ID
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
 [role="tabbed-block"]
 ====
 .選項1：如果已啟用網路探索
@@ -485,10 +483,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS 至 Mini SAS �
 如果您的筆記型電腦已啟用網路探索、請使用自動叢集探索來完成儲存系統設定和組態。
 
 .步驟
-. 請使用下列動畫來開啟機櫃電源並設定機櫃 ID 。
-+
-.動畫-設定磁碟機櫃ID
-video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
+. 打開架子電源並使用此步驟開始時的動畫設定架 ID。
 . 開啟控制器電源
 +
 .. 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
@@ -560,10 +555,7 @@ image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[筆記型
 .. 使用管理子網路上的TCP/IP位址指派給筆記型電腦或主控台。
 
 
-. 請使用下列動畫來設定一或多個磁碟機櫃ID：
-+
-.動畫-設定磁碟機櫃ID
-video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto]
+. 打開架子電源並使用此步驟開始時的動畫設定架 ID。
 . 將電源線插入控制器電源供應器、然後將電源線連接至不同電路上的電源。
 . 開啟兩個節點的電源開關。
 +

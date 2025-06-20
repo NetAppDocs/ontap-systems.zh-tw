@@ -11,7 +11,7 @@ summary: 將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統�
 
 
 [role="lead"]
-將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。
+將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密或板載金鑰管理員 (OKM) 加密。
 
 [role="tabbed-block"]
 ====
@@ -72,53 +72,6 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 
 
-. 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
-. 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
-. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
-
-
---
-.外部金鑰管理程式（ EKM ）
---
-重設加密，並將控制器恢復正常運作。
-
-.步驟
-. 如果根磁碟區是使用外部金鑰管理程式加密、且主控台纜線已連接至替換節點、請輸入 `boot_ontap menu`並選擇選項 `11`。
-. 如果出現這些問題，請回答或 `n`視情況回答 `y`：
-+
-您是否有 /ccfcard/kmip/certs/client.crt 檔案的複本？｛ y/n ｝
-
-+
-您是否擁有 /ccfcard/kmip/certs/client.key 檔案的複本？｛ y/n ｝
-
-+
-您是否擁有 /ccfcard/kmip/certs/ca.pem 檔案的複本？｛ y/n ｝
-
-+
-您是否有 /ccfcard/kmip/servers.cfg 檔案的複本？｛ y/n ｝
-
-+
-您知道 KMIP 伺服器位址嗎？｛ y/n ｝
-
-+
-您知道 KMIP 連接埠嗎？｛ y/n ｝
-
-+
-
-NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]。
-
-. 提供以下資訊：
-+
-** 用戶端憑證（ client.crt ）檔案內容
-** 用戶端金鑰（ client.key ）檔案內容
-** KMIP 伺服器 CA （ CA.pem ）檔案內容
-** KMIP 伺服器的 IP 位址
-** KMIP 伺服器的連接埠
-
-
-. 系統處理完畢後，您會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。
-. 檢查接管狀態： `storage failover show`
-. 請先進入進階模式，然後再 `run local partner nosavecore`進入，以確保已修復節點上的任何核心傾印都已儲存 `set -privilege advanced`。
 . 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
 . 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
 . 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
