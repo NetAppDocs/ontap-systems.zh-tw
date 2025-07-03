@@ -17,10 +17,6 @@ summary: 控制器上的管理網路連接埠連接至交換器。兩個控制�
 如需將儲存系統連接至網路交換器的相關資訊，請聯絡您的網路管理員。
 
 .關於這項工作
-* 叢集 / HA 和主機網路纜線程序顯示一般組態。
-+
-如果您在此處看不到您的組態，請前往link:https://hwu.netapp.com["NetApp Hardware Universe"^]以取得完整的組態和插槽優先順序資訊，以連接儲存系統。
-
 * 將連接器插入連接埠時，纜線連接器拉片上的箭頭圖示會顯示正確的方向（上或下）。
 +
 插入連接器時、您應該會感覺到它卡入到位；如果您沒有感覺到它卡入定位、請將其移除、將其翻轉、然後再試一次。
@@ -35,8 +31,15 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["纜線拉片方向"]
 
 == 步驟 1 ：連接叢集 / HA 連線
 
-連接控制器以建立 ONTAP 叢集連線。
+建立 ONTAP 叢集連線。對於無交換器叢集，請將控制器彼此連接。對於交換式叢集，請將控制器連接至叢集網路交換器。
 
+[NOTE]
+====
+叢集/HA 佈線範例展示了常見的配置。
+
+如果您在此處看不到您的組態，請前往link:https://hwu.netapp.com["NetApp Hardware Universe"^]以取得完整的組態和插槽優先順序資訊，以連接儲存系統。
+
+====
 [role="tabbed-block"]
 ====
 .無交換器叢集纜線
@@ -221,6 +224,13 @@ image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg["使用一�
 
 將控制器連接至乙太網路或 FC 主機網路。
 
+[NOTE]
+====
+主機網路佈線範例展示了常見的配置。
+
+如果您在此處看不到您的組態，請前往link:https://hwu.netapp.com["NetApp Hardware Universe"^]以取得完整的組態和插槽優先順序資訊，以連接儲存系統。
+
+====
 [role="tabbed-block"]
 ====
 .乙太網路主機纜線
