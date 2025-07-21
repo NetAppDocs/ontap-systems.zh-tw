@@ -40,8 +40,8 @@ NOTE: 系統會提示您輸入兩次密碼。
 . 將主控台纜線移至合作夥伴節點、然後以登入 `admin`。
 . 僅回饋 CFO 集合體（根集合體）： `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
 +
-** 如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
 
+NOTE: 如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
 
 . 在恢復報告完成後等待 5 分鐘、並檢查容錯移轉狀態和恢復狀態： `storage failover show`和 `storage failover show-giveback`。
 . 同步和驗證金鑰狀態：

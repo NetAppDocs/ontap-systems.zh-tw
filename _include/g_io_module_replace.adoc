@@ -207,13 +207,13 @@ image::../media/icon_round_2.png[編號 2]
 
 NOTE: 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
 
-. 使節點恢復正常運作：
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
 +
 '容錯移轉還原-ofnode_disapped_node_name_'
 
 . 從健全控制器的主控台還原自動恢復：
 +
-`storage failover modify -node local -auto-giveback _true_`
+`storage failover modify -node local -auto-giveback true`
 
 . 如果啟用 AutoSupport 、請還原自動建立案例：
 +

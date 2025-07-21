@@ -347,6 +347,18 @@ DC PSU
 
 
 |===
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用了AutoSupport ，則復原（取消抑制）自動案例建立：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 

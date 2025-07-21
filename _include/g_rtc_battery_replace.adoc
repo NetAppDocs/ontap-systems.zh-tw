@@ -390,6 +390,18 @@ DC PSU
 
 
 |===
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用了AutoSupport ，則復原（取消抑制）自動案例建立：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 
@@ -401,21 +413,31 @@ NOTE: 更換 RTC 電池，插入控制器並開啟第一次 BIOS 重設的電源
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`這些訊息是預期的，您可以繼續執行此程序。
 
-. 在健全的控制器上，使用命令檢查日期和時間 `cluster date show`。
+. 在健康的控制器上，檢查日期和時間：
++
+`cluster date show`
+
 +
 
 NOTE: 如果您的儲存系統停止在開機功能表，請在出現提示時選取選項 `Reboot node`並回應 _y_ ，然後按下 _Ctrl-C_ 以開機至 Loader 。
 
-. 在功能受損的控制器上，在 Loader 提示下，檢查時間和日期： `cluster date show`
+. 在受損控制器上，在 LOADER 提示字元下檢查時間和日期：
 +
-.. 如有必要，請修改日期： `set date _mm/dd/yyyy_`
-.. 如有必要，請在 GMT 中設定時間： `set time hh:mm:ss`
+`cluster date show`
+
++
+.. 如果需要，修改日期：
++
+`set date _mm/dd/yyyy_`
+
+.. 如果需要，請設定格林威治標準時間 (GMT)：
++
+`set time hh:mm:ss`
+
 .. 確認日期和時間。
 
 
 . 在 Loader 提示符下，輸入 `bye`以重新初始化 I/O 模塊和其他組件，然後讓控制器重新啓動。
-. 將控制器恢復正常運作、方法是歸還儲存設備：「torage容錯移轉恢復-ofnode_disapped_node_name_」
-. 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
 
 
 

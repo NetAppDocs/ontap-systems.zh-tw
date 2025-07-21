@@ -217,10 +217,19 @@ image:../media/icon_round_2.png["編號 2"]
 +
 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
 
-. 從健全的控制器中恢復功能受損的控制器： `storage failover giveback -ofnode _impaired_node_name_`
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
 . 重複這些步驟，將 I/O 模組新增至其他控制器。
-. 從健全控制器的主控台還原自動恢復： `storage failover modify -node local -auto-giveback _true_`
-. 如果啟用 AutoSupport ，則還原（恢復抑制）自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用了AutoSupport ，則恢復（取消抑制）自動案例建立：+
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
 
 
 --
@@ -296,14 +305,29 @@ image:../media/icon_round_2.png["編號 2"]
 如果您安裝了儲存 I/O 模組、請依照中所述、安裝 NS224 機櫃並連接纜線 https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html["熱新增工作流程"^]。
 
 . 重複 I/O 模組的移除和安裝步驟，在控制器中新增任何其他 I/O 模組。
-. 從 Loader 提示重新啟動受損的控制器： `bye`
+. 從 LOADER 提示字元重新啟動受損的控制器：
++
+`bye`
+
 +
 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
 
-. 從健全的控制器中恢復功能受損的控制器： `storage failover giveback -ofnode _impaired_node_name_`
-. 從健全控制器的主控台還原自動恢復： `storage failover modify -node local -auto-giveback _true_`
-. 如果啟用 AutoSupport ，則還原（恢復抑制）自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
-. 如果您安裝了 NIC 模組，請將每個連接埠的使用模式指定為 _network_ ： `storage port modify -node _node_name_ -port _port_name_ -mode _network_`
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用了AutoSupport ，則復原（取消抑制）自動案例建立：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+. 如果您安裝了 NIC 模組，請將每個連接埠的使用模式指定為 _network_：
++
+`storage port modify -node _node_name_ -port _port_name_ -mode _network_`
+
 . 對另一個控制器重複這些步驟。
 
 
