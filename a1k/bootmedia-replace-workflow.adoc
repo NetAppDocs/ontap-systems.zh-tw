@@ -2,16 +2,20 @@
 permalink: a1k/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff a1k, replace the boot media 
-summary: 開始更換 AFF A1K 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。 
+summary: 手動恢復啟動映像需要使用 USB 隨身碟將ONTAP重新安裝到AFF A1K系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行恢復操作，將系統恢復到正常運作狀態。 
 ---
-= 開機媒體更換工作流程 - AFF A1K
+= 啟動媒體手動恢復工作流程 - AFF A1K
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-開始更換 AFF A1K 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。
+手動恢復啟動映像需要使用 USB 隨身碟將ONTAP重新安裝到AFF A1K系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行恢復操作，將系統恢復到正常運作狀態。
+
+如果您的系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"] 。
+
+首先，檢查恢復要求，關閉控制器，更換啟動媒體，使用 USB 驅動器恢復映像，並在必要時重新套用加密設定。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱開機媒體需求"]
 [role="quick-margin-para"]
@@ -29,13 +33,13 @@ summary: 開始更換 AFF A1K 儲存系統中的開機媒體，方法是檢閱�
 [role="quick-margin-para"]
 從系統管理模組移除故障開機媒體、然後安裝替換開機媒體、然後使用 USB 快閃磁碟機傳輸 ONTAP 映像。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-recovery-image-boot.html["開機恢復映像"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-recovery-image-boot.html["還原開機媒體上的映像"]
 [role="quick-margin-para"]
 從 USB 磁碟機開機 ONTAP 映像、還原檔案系統、並驗證環境變數。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:bootmedia-encryption-restore.html["還原加密"]
 [role="quick-margin-para"]
-從 ONATP 開機功能表還原內建金鑰管理程式組態或外部金鑰管理程式。
+從ONTAP啟動選單恢復板載金鑰管理器設定或外部金鑰管理器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"]link:bootmedia-complete-rma.html["將故障零件歸還給NetApp"]
 [role="quick-margin-para"]

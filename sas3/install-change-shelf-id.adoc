@@ -4,25 +4,14 @@ sidebar: sidebar
 keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate 
 summary: 當系統尚未執行任何功能時、或是在將機櫃連接至系統之前熱新增機櫃時、您可以變更系統中的機櫃ID ONTAP 。您也可以在ONTAP 啟用且執行更新時變更機櫃ID（控制器模組可用於提供資料）、機櫃中的所有磁碟機均為無擁有、備援或是外聯Aggregate的一部分。 
 ---
-= 變更機櫃ID：機櫃採用IOM12/IOM12B模組
+= 更改機架 ID - DS212C、DS224C 或 DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當系統尚未執行任何功能時、或是在將機櫃連接至系統之前熱新增機櫃時、您可以變更系統中的機櫃ID ONTAP 。您也可以在ONTAP 啟用並執行更新時變更機櫃ID（控制器模組可用於處理資料）、機櫃中的所有磁碟機均為無擁有、備援磁碟機、或是外聯Aggregate的一部分。
-
-.開始之前
-* 如果已啟動且正在執行（控制器模組可用於提供資料）、您必須已確認機櫃中的所有磁碟機均為無擁有、備援或是外聯Aggregate的一部分。ONTAP
-+
-您可以使用「儲存磁碟show -sh現 況_機櫃_機櫃_編號_」命令來驗證磁碟機的狀態。Container Type（容器類型）欄中的輸出應顯示為備用磁碟機或故障磁碟機。此外、「Container Name（容器名稱）」和「Owner"（擁有者）欄應該會有破折號。
-
-* 您可以執行Active IQ Config Advisor 下列命令、驗證系統中已使用的機櫃ID：執行下列命令、或使用「shorage shield show -Fields shid]命令。
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp下載Config Advisor"]
-
-
+在配備 IOM12/IOM12B 模組的系統中，您可以在ONTAP尚未運作或在將磁碟架連接到系統之前進行熱添加時更改磁碟架 ID。您也可以在ONTAP已啟動並運作（控制器模組可用於提供資料）且磁碟架中的所有磁碟機均為無主磁碟機、備用磁碟機或屬於已離線聚合體時變更磁碟架 ID。
 
 .關於這項工作
 * 有效的機櫃ID為00至99。
@@ -34,6 +23,14 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 +
 重新開啟電源之前所等待的時間取決於ONTAP 本程序稍後所述的狀況。
 
+
+
+.開始之前
+* 如果已啟動且正在執行（控制器模組可用於提供資料）、您必須已確認機櫃中的所有磁碟機均為無擁有、備援或是外聯Aggregate的一部分。ONTAP
++
+您可以使用「儲存磁碟show -sh現 況_機櫃_機櫃_編號_」命令來驗證磁碟機的狀態。Container Type（容器類型）欄中的輸出應顯示為備用磁碟機或故障磁碟機。此外、「Container Name（容器名稱）」和「Owner"（擁有者）欄應該會有破折號。
+
+* 您可以透過執行Active IQ Config Advisor或使用 `storage shelf show -fields shelf-id`命令。您可以 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["下載並造訪Active IQ Config Advisor"]在NetApp支援站點上。
 
 
 .步驟

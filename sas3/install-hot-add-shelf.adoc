@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
 summary: 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12/IOM12B模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。 
 ---
-= 熱新增機櫃：機櫃配備IOM12/IOM12B模組
+= 熱添加架子 - DS212C、DS224C 或 DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,31 +13,17 @@ summary: 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增�
 [role="lead"]
 您可以使用IOM12/IOM12B模組將一個或多個磁碟櫃熱新增至現有磁碟櫃堆疊、並使用IOM12/IOM12B模組、或將一個或多個磁碟櫃堆疊熱新增至SAS HBA或控制器上的內建SAS連接埠。
 
-.關於這項工作
-您無法使用此程序來混合堆疊：將含有IOM12/IOM12B模組的機櫃熱新增至具有IOM6模組的機櫃堆疊。如果您需要混合堆疊、請使用 link:iom12-hot-add-mix.html["將IOM12磁碟櫃熱新增至IOM6磁碟櫃堆疊"]。
+.開始之前
+在熱添加磁碟架之前，您必須滿足某些要求並熟悉此流程的最佳實務和注意事項。
 
-
-
-== 使用IOM12/IOM12B模組熱新增磁碟櫃的需求
-
-您的系統必須符合特定需求、才能使用IOM12/IOM12B模組熱新增磁碟櫃。
-
-
-
-=== 系統狀態
-
-* 您的系統和版本ONTAP 的支援必須支援熱新增的磁碟櫃、包括IOM、磁碟機和SAS纜線。
+* 在熱添加具有 IOM12/IOM12B 模組的磁碟架之前，請確保您的系統符合某些要求：
 +
-https://hwu.netapp.com["NetApp Hardware Universe"^]
-
-* 您的系統必須少於所支援的磁碟機數量上限、至少要少於您計畫要熱新增的磁碟櫃數量。
+** 您的系統和ONTAP版本必須支援要熱添加的磁碟架，包括 IOM、磁碟機和 SAS 線纜。ONTAP可以在 https://hwu.netapp.com["NetApp Hardware Universe"^] 。
+** 您的系統必須少於所支援的磁碟機數量上限、至少要少於您計畫要熱新增的磁碟櫃數量。
 +
-在熱新增磁碟櫃之後、您無法超過系統所支援的磁碟機數量上限。
+熱添加磁碟架後，您的系統支援的磁碟機數量不得超過上限。您可以在 https://hwu.netapp.com["NetApp Hardware Universe"^]
 
-+
-https://hwu.netapp.com["NetApp Hardware Universe"^]
-
-* 如果您要熱新增一或多個磁碟櫃堆疊（直接新增至平台控制器）、則系統必須有足夠的可用PCI SAS HBA或內建SAS連接埠、或兩者的組合。
+** 如果您要熱新增一或多個磁碟櫃堆疊（直接新增至平台控制器）、則系統必須有足夠的可用PCI SAS HBA或內建SAS連接埠、或兩者的組合。
 +
 [NOTE]
 ====
@@ -46,117 +32,76 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 支援使用6Gb SAS HBA或結合使用6Gb SAS HBA和12Gb SAS HBA；不過、IOM12模組與6Gb SAS HBA的連線會向下交涉至6Gbs、因此效能較低。
 
 ====
-* 您的系統無法顯示任何SAS纜線錯誤訊息。
+** 您的系統無法顯示任何SAS纜線錯誤訊息。
 +
-下載並執行Config Advisor 更新以確認SAS連線正確。
+驗證 SAS 連線是否正確 https://mysupport.netapp.com/site/tools["下載並執行Config Advisor"^] 。
 
 +
 您必須使用錯誤訊息所提供的修正動作來修正任何纜線錯誤。
 
+
+
+* 熟悉使用 mini-SAS HD SAS 光纖纜線的需求與注意事項：
 +
-https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
-
-
-
-
-
-=== 使用Mini-SAS HD SAS光纖纜線
-
-* 如果您在磁碟櫃堆疊中使用Mini-SAS HD SAS光纖纜線或混合使用Mini-SAS HD SAS光纖纜線和SAS銅線、則必須符合中的規則 link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules["Mini-SAS HD SAS光纖纜線規則"]。
-* 如果您要將配備Mini-SAS HD SAS光纖纜線的磁碟櫃熱新增至連接SAS銅線的磁碟櫃堆疊、則可在堆疊中暫時使用這兩種纜線類型。
+** 如果您在磁碟櫃堆疊中使用Mini-SAS HD SAS光纖纜線或混合使用Mini-SAS HD SAS光纖纜線和SAS銅線、則必須符合中的規則 link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules["Mini-SAS HD SAS光纖纜線規則"]。
+** 如果您要將配備Mini-SAS HD SAS光纖纜線的磁碟櫃熱新增至連接SAS銅線的磁碟櫃堆疊、則可在堆疊中暫時使用這兩種纜線類型。
 +
 熱新增磁碟櫃之後、您必須更換SAS銅線、以用於堆疊中其餘的磁碟櫃對磁碟櫃連線、以及控制器對堆疊連線、使堆疊符合中的規則 link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules["Mini-SAS HD SAS光纖纜線規則"]。這表示您必須訂購適當數量的Mini-SAS HD SAS光纖纜線。
 
 
 
-
-
-== 使用IOM12/IOM12B模組熱新增磁碟櫃的考量事項
-
-在熱新增磁碟櫃之前、您應該先熟悉此程序的各個層面和最佳實務做法。
-
-
-
-=== 一般考量
-
-* 如果您要將具有IOM12/IOM12B模組的磁碟櫃熱新增至現有堆疊（使用IOM12/IOM12B模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一或最後一個磁碟櫃）。
+* 熟悉完成此過程的一般注意事項：
++
+** 如果您要將具有IOM12/IOM12B模組的磁碟櫃熱新增至現有堆疊（使用IOM12/IOM12B模組的磁碟櫃）、您可以將磁碟櫃熱新增至堆疊的端點（邏輯第一或最後一個磁碟櫃）。
 +
 若為單一路徑HA和單一路徑組態（適用AFF 對象為E4A200、AFF E4A220、FAS2600系列和FAS2700系統）、您可將磁碟櫃熱新增至堆疊的末端、而該堆疊沒有控制器連線。
 
-* 具有IOM12/IOM12B模組的磁碟櫃必須位於其專屬堆疊中、無法新增至具有IOM6模組或IOM3模組的磁碟櫃。
-* 此程序假設您的組態使用頻內ACP。
+** 具有 IOM12/IOM12B 模組的磁碟架必須位於其自己獨特的堆疊中。
+** 此程序假設您的組態使用頻內ACP。
 +
 對於啟用頻內ACP的組態、頻內ACP會自動在熱新增磁碟櫃上啟用。對於未啟用頻內ACP的組態、熱新增磁碟櫃可在沒有任何ACP功能的情況下運作。
 
-* 不支援不中斷的堆疊整合。
+** 不支援不中斷的堆疊整合。
 +
 您無法使用此程序來熱新增磁碟櫃、這些磁碟櫃在系統開機並提供資料（I/O進行中）時、會從同一個系統的其他堆疊熱移除。
 
 
 
-
-
-=== 最佳實務考量
-
-* 最佳實務做法是在熱新增磁碟櫃之前、先安裝目前版本的磁碟認證套件（DQP）。
+* *最佳實務*：確保您的系統能夠識別並使用新合格的磁碟機 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["下載目前版本的磁碟認證套件 (DQP)"^] 。
 +
-安裝最新版的DQP可讓您的系統辨識並使用新的合格磁碟機、因此可避免系統事件訊息顯示非最新磁碟機資訊。您也可以避免因為無法識別磁碟機、而導致磁碟分割的可能預防。此外、DQP也會通知您非最新的磁碟機韌體。
+這樣可以避免出現有關磁碟機資訊非最新系統事件訊息。此外，還可以避免因無法辨識磁碟機而導致磁碟分割區受阻的情況。 DQP會通知您磁碟機韌體非最新。
 
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["NetApp下載：磁碟認證套件"^]
-
-* 最佳實務做法是Config Advisor 在熱新增磁碟櫃之前和之後執行
-+
-在Config Advisor 熱新增磁碟櫃之前執行支援功能、可提供SAS連線的快照、驗證磁碟櫃（IOM）韌體版本、並可讓您驗證系統上已使用的磁碟櫃ID。熱新增磁碟櫃後執行Config Advisor 的功能區可讓您驗證SAS連線是否正確、以及HA配對或單一控制器組態中的機櫃ID是否唯一。
-
+* *最佳實務*：驗證磁碟架 (IOM) 韌體版本、系統已使用的磁碟架 ID，並透過以下方式取得 SAS 連線的快照 https://mysupport.netapp.com/site/tools["下載並執行Config Advisor"^]在熱添加磁碟架之前。您還必須透過在熱添加磁碟架後執行Config Advisor來驗證 SAS 連接是否正確，以及磁碟架 ID 在 HA 對或單控制器配置中是否唯一。
 +
 如果產生任何SAS纜線或重複的機櫃ID錯誤、請遵循所提供的修正行動。
 
 +
 您需要網路存取才能下載Config Advisor 此功能。
 
+* *最佳實務*：在新增新的磁碟架、磁碟架 FRU 元件或 SAS 線纜之前，請確保您的系統已安裝最新版本的磁碟架 (IOM) 韌體和磁碟機韌體。您可以造訪NetApp支援網站 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["下載磁碟架韌體"]和 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["下載磁碟機韌體"] 。
+* 熟悉正確處理 SAS 電纜的注意事項：
 +
-https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
-
-* 最佳實務做法是在新增磁碟櫃、磁碟櫃FRU元件或SAS纜線之前、先在系統上安裝目前版本的磁碟櫃（IOM）韌體和磁碟機韌體。
-+
-如需最新版本的韌體、請參閱NetApp支援網站。
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
-
-
-
-
-
-=== SAS纜線處理考量
-
-* 在插入連接器之前、請先目視檢查SAS連接埠、以確認連接器的方向正確。
+** 在插入連接器之前、請先目視檢查SAS連接埠、以確認連接器的方向正確。
 +
 SAS纜線連接器採用鎖定式設計。當正確定位至SAS連接埠時、連接器會卡入定位、如果當時磁碟櫃電源已開啟、則磁碟櫃SAS連接埠LKLED會亮起綠色。若為磁碟櫃、請插入SAS纜線連接器、拉片朝下（位於連接器底部）。
 
 +
 對於控制器、SAS連接埠的方向可能會因平台機型而異、因此SAS纜線連接器的正確方向會有所不同。
 
-* 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。
+** 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。
 +
 纜線有最小的彎折半徑。纜線製造商規格定義最小的彎折半徑、但最小彎折半徑的一般準則是纜線直徑的10倍。
 
-* 使用Velcro綁帶而非綁帶綁帶來綁固及固定系統纜線、可更輕鬆地調整纜線。
+** 使用Velcro綁帶而非綁帶綁帶來綁固及固定系統纜線、可更輕鬆地調整纜線。
 
 
-
-
-=== DS460C磁碟機處理考量
-
-* 磁碟機與機櫃機箱分開包裝。
+* 熟悉正確處理 DS460C 驅動器的注意事項：
++
+** 磁碟機與機櫃機箱分開包裝。
 +
 您應該清查磁碟機。
 
-* 打開磁碟機的包裝後、您應該保留包裝材料以供未來使用。
+** 打開磁碟機的包裝後、您應該保留包裝材料以供未來使用。
 +
 
 CAUTION: *可能會遺失資料存取：*如果您日後將磁碟櫃移至資料中心的其他部分、或將磁碟櫃移至不同位置、則必須從磁碟機匣中移除磁碟機、以避免可能損壞磁碟機的磁碟機抽屜和磁碟機。
@@ -165,7 +110,7 @@ CAUTION: *可能會遺失資料存取：*如果您日後將磁碟櫃移至資料
 
 NOTE: 請將磁碟機放入其電子化服務包中、直到您準備好安裝為止。
 
-* 處理磁碟機時、請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶、以避免靜電釋放。
+** 處理磁碟機時、請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶、以避免靜電釋放。
 +
 如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。
 
@@ -173,7 +118,9 @@ NOTE: 請將磁碟機放入其電子化服務包中、直到您準備好安裝�
 
 
 
-== 使用IOM12/IOM12B模組安裝磁碟櫃以進行熱新增
+
+
+== 步驟 1：安裝用於熱添加的磁碟架
 
 對於您要熱新增的每個磁碟櫃、您可以將磁碟櫃安裝到機架、連接電源線、開啟磁碟櫃電源、並在SAS連線之前設定磁碟櫃ID。
 
@@ -192,20 +139,17 @@ NOTE: 請勿將磁碟櫃疊裝到電信型機架中、因為磁碟櫃的重量�
 若要使磁碟櫃更輕、更容易操作、請移除電源供應器和I/O模組（IOM）。
 
 +
-對於DS460C磁碟櫃而言、雖然磁碟機是分開包裝的、使磁碟櫃更輕、但空的DS460C磁碟櫃仍重約132磅（60公斤）、因此移動磁碟櫃時請務必小心下列事項。
+
+CAUTION: 雖然 DS460C 磁碟架中的磁碟機單獨包裝，減輕了磁碟架的重量，但空的 DS460C 磁碟架仍重約 132 磅（60 公斤）。建議使用機械升降機或由四個人使用升降手柄來安全地移動空的 DS460C 磁碟架。
 
 +
-
-CAUTION: 建議您使用機械式舉升機或四人使用舉升把手、安全地搬移空的DS460C機櫃。
-
-+
-您的DS460C出貨件隨附四個可拆式起重把手（每側兩個）。若要使用起重把手、請將握把的彈片插入機櫃側邊的插槽、然後向上推、直到卡入定位。然後、當您將磁碟櫃滑到軌道上時、您可以使用指旋栓一次拔下一組握把。下圖顯示如何安裝舉升把手。
+您的 DS460C 出貨時附帶四個可拆卸的升降手柄（每側兩個）。若要使用升降手柄，請先將手柄的卡榫插入磁碟架側面的插槽中，然後向上推直至其卡入到位。然後，在將磁碟架滑入導軌時，使用拇指鎖銷一次卸下一組手把。下圖顯示如何安裝升降手柄。
 
 +
 image::../media/drw_ds460c_handles.gif[安裝起重把手]
 
 . 在將磁碟櫃安裝到機架之前、請先重新安裝您移除的所有電源供應器和IOM。
-. 如果您要安裝DS460C磁碟櫃、請將磁碟機安裝到磁碟機抽屜中；否則、請執行下一步。
+. 如果您要安裝 DS460C 磁碟架，請將磁碟機安裝到磁碟機抽屜中。否則，請轉至下一步。
 +
 [NOTE]
 ====
@@ -215,7 +159,7 @@ image::../media/drw_ds460c_handles.gif[安裝起重把手]
 
 ====
 +
-如果您購買的是部分裝入的磁碟櫃、表示磁碟櫃所支援的磁碟機少於60個、請針對每個磁碟櫃安裝磁碟機、如下所示：
+如果您購買了部分填充的架子，即架子支援的驅動器少於 60 個，請按如下方式在每個抽屜中安裝驅動器：
 
 +
 ** 將前四個磁碟機安裝到正面插槽（0、3、6和9）。
@@ -254,21 +198,11 @@ image:../media/icon_round_1.png["編號 1"]
 +
 您必須確定每個藥櫃中的插槽0、3、6和9均包含磁碟機。
 
-... 小心地將磁碟機抽屜推回機箱。
+... 小心地將驅動器抽屜推回機櫃中。+s image:../media/2860_dwg_e2860_de460c_gentle_close.gif["輕輕關上抽屜"]
 +
-|===
-
-
- a| 
-image:../media/2860_dwg_e2860_de460c_gentle_close.gif["輕輕關上抽屜"]
-
-
-
- a| 
 
 CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜、以避免抽屜震動、並造成儲存陣列損壞。
 
-|===
 ... 將兩個拉桿推向中央、以關閉磁碟機抽取器。
 ... 對磁碟櫃中的每個藥櫃重複這些步驟。
 ... 連接前擋板。
@@ -288,7 +222,7 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 如果您的平台模式含有內部磁碟櫃、則內部磁碟櫃和外部附加磁碟櫃的機櫃ID必須是唯一的。
 
 +
-您可以使用下列子步驟來變更機櫃ID、或是如需更詳細的指示、請使用 link:install-change-shelf-id.html["變更機櫃ID"^]。
+您可以使用下列子步驟變更貨架 ID。有關更詳細的說明，請使用link:install-change-shelf-id.html["變更機櫃ID"^] 。
 
 +
 .. 如有需要、請執行Config Advisor 功能以驗證已在使用中的機櫃ID。
@@ -311,12 +245,9 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 
 
 
-== 使用IOM12/IOM12B模組的纜線磁碟櫃進行熱新增
+== 步驟 2：為熱添加磁碟架佈線
 
 您可以將 SAS 連線（機櫃對機櫃和控制器對堆疊）纜線連接至熱新增的磁碟櫃、以便連接至系統。
-
-.開始之前
-您必須符合中的要求 link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules["使用IOM12模組熱新增磁碟櫃的需求"] 並依照中的指示、為每個磁碟櫃設定機櫃ID link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add["使用IOM12模組安裝磁碟櫃以進行熱新增"]。
 
 .關於這項工作
 * 如需機櫃對機櫃「標準」纜線和機櫃對機櫃「雙寬」纜線的說明和範例、請參閱 link:install-cabling-rules.html#shelf-to-shelf-connection-rules["機櫃對機櫃SAS連線規則"]。
@@ -326,6 +257,10 @@ CAUTION: *可能的資料存取遺失：*切勿關閉藥櫃。緩慢推入抽屜
 
 NOTE: 韌體更新最多可能需要30分鐘。
 
+
+
+.開始之前
+* 您必須滿足完成此過程的要求<<before_you_begin,開始之前>>部分，並按照<<install_disk_shelves_for_a_hot_add,使用IOM12模組安裝磁碟櫃以進行熱新增>> 。
 
 
 .步驟
@@ -441,15 +376,12 @@ NOTE: 請確定在拔下纜線並重新連接纜線之間、以及更換較長�
 |===
 . 如果您將使用Mini-SAS HD SAS光纖纜線的磁碟櫃熱新增至使用SAS銅線連接的磁碟櫃堆疊、請更換SAS銅線；否則、請執行下一步。
 +
-堆疊必須符合中所述的要求 <<使用IOM12/IOM12B模組熱新增磁碟櫃的需求>> 本程序的一節。
+堆疊必須滿足<<before_you_begin,開始之前>>此過程的部分。
 
 +
 一次更換一條纜線、並確定拔下纜線和連接新纜線之間至少等待70秒。
 
-. 下載並執行Config Advisor 更新以確認SAS連線正確。
-+
-https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"^]
-
+. 驗證 SAS 連線是否正確 https://mysupport.netapp.com/site/tools["下載並執行Config Advisor"^] 。
 +
 如果產生任何SAS纜線錯誤、請遵循所提供的修正行動。
 
@@ -512,11 +444,11 @@ Errors:
 
 
 
-== 搬移或搬移DS460C磁碟櫃
+== （可選）步驟 3：移動或運輸 DS460C 架子
 
-如果日後將DS460C磁碟櫃移至資料中心的不同部分、或將磁碟櫃移至不同位置、則必須從磁碟機匣中移除磁碟機、以免損壞磁碟機的磁碟機匣和磁碟機。
+如果將來您將 DS460C 機架移至資料中心的不同部分或將機架運送到其他位置，則需要從驅動器抽屜中取出驅動器，以避免對驅動器抽屜和驅動器造成損壞。
 
-* 如果您將DS460C磁碟櫃安裝為磁碟櫃熱新增的一部分、則儲存了磁碟機包裝材料、請在移動磁碟機之前使用這些材料來重新包裝磁碟機。
+* 如果您在安裝 DS460C 機架作為機架熱添加的一部分時保存了驅動器包裝材料，請在移動驅動器之前使用這些材料重新包裝驅動器。
 +
 如果您未儲存包裝材料、則應將磁碟機放在緩衝墊表面上、或使用備用的緩衝封裝。切勿將磁碟機彼此堆疊在一起。
 

@@ -3,14 +3,12 @@ section: sas3
 title: SAS磁碟櫃
 entries:
 - title: 安裝與連接纜線
-  pdf-filename: 安裝IOM12/IOM2B模組及纜線的機櫃
+  pdf-filename: DS212C、DS224C 或 DS460C 機架安裝和佈線
   entries:
   - title: 安裝新系統的機櫃並進行纜線連接
     url: "/sas3/install-new-system.html"
   - title: 熱新增機櫃
     url: "/sas3/install-hot-add-shelf.html"
-  - title: 熱新增 IOM12/ IOM12B 機櫃至 IOM6 機櫃堆疊
-    url: "/sas3/iom12-hot-add-mix.html"
   - title: 變更機櫃ID
     url: "/sas3/install-change-shelf-id.html"
   - title: SAS佈線規則、工作表和範例
@@ -19,22 +17,22 @@ entries:
       url: "/sas3/overview-cabling-rules-examples.html"
     - title: SAS 纜線規則與概念
       url: "/sas3/install-cabling-rules.html"
-    - title: 多重路徑 HA 的佈線工作表和範例
+    - title: 多路徑 HA
       url: "/sas3/install-cabling-worksheets-examples-multipath.html"
-    - title: 內部儲存平台的佈線工作表
+    - title: 具有內部儲存設備的平台
       url: "/sas3/install-cabling-worksheets-examples-fas2600.html"
-    - title: 佈線工作表和四路徑 HA 範例
+    - title: 四路徑 HA
       url: "/sas3/install-worksheets-examples-quadpath.html"
-    - title: 多路徑連線的纜線工作表
+    - title: 多路徑連線
       url: "/sas3/install-cabling-worksheet-template-multipath.html"
-    - title: 四路徑連線的纜線工作表
+    - title: 四路徑連線
       url: "/sas3/install-cabling-worksheet-template-quadpath.html"
-    - title: 如何閱讀工作表以瞭解多路徑連線能力
+    - title: 多路徑連線
       url: "/sas3/install-cabling-worksheets-how-to-read-multipath.html"
     - title: 如何閱讀四路徑連線的工作表
       url: "/sas3/install-cabling-worksheets-how-to-read-quadpath.html"
 - title: 維護
-  pdf-filename: 具有IOM12/IOM12B模組的磁碟櫃會維持不變
+  pdf-filename: DS212C、DS224C 或 DS460C 機架維修
   entries:
   - title: DS224C或DS212C機櫃中的磁碟機
     url: "/sas3/service-hot-swap-drive-ds224c-ds212c.html"

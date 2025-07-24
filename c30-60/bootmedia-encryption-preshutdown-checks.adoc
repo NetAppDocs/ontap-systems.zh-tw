@@ -2,9 +2,9 @@
 permalink: c30-60/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, pre-shutdown checks for onboard encryption keys 
-summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+summary: 為確保AFF C30 或AFF C60 儲存系統上的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況及其狀態。請檢查您的ONTAP版本是否支援NetApp磁碟區加密，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。 
 ---
-= 檢查開機媒體上的加密金鑰支援和狀態 - AFF C30 和 AFF C60
+= 檢查手動啟動媒體復原的加密支援 - AFF C30 和AFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

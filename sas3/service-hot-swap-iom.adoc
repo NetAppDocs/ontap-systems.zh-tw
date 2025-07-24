@@ -4,25 +4,22 @@ sidebar: sidebar
 keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12/iom12b module, iom12b 
 summary: 您的系統組態可決定在IOM12/IOM12B模組故障時、是否可以執行不中斷營運的IOM12/IOM12B模組熱交換、或是執行中斷營運的IOM12/IOM12B模組更換。 
 ---
-= 熱交換或更換IOM12/IOM12B模組-機櫃採用IOM12/IOM12B模組
+= 熱插拔或更換 IOM 模組 - DS212C、DS224C 或 DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您的系統組態決定了當機櫃IOM故障時、是否可以執行不中斷營運的機櫃IOM熱交換或中斷營運的機櫃IOM更換作業。
-
-.開始之前
-系統中的所有其他元件（包括其他IOM12/IOM12B模組）都必須正常運作。
+您的系統設定決定了當 IOM12 或 IOM12B 機架 IOM 故障時，您是否可以執行無中斷機架 IOM 熱插拔或中斷機架 IOM 更換。
 
 .關於這項工作
-* 此程序適用於具有IOM12模組和具有IOM12B模組的磁碟櫃。
+* 此程式適用於具有 IOM12 或 IOM12B 模組的架子。
 +
 
-NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）
+NOTE: 此程序適用於同類 IOM 機架熱插拔或更換。這表示您只能將一個 IOM12 模組更換為另一個 IOM12 模組，或將一個 IOM12B 模組更換為另一個 IOM12B 模組。
 
-* IOM12模組和IOM12B模組的外觀可加以區分：
+* IOM12 或 IOM12B 模組可以透過外觀來區分：
 +
 IOM12模組以「IOM12」標籤區分：
 
@@ -40,17 +37,7 @@ image::../media/iom12b.png[IOM12B 正面]
 * 對於FAS2600系列單路徑組態、您必須停止系統以更換機櫃IOM。
 +
 
-NOTE: 如果您嘗試以單一路徑連線將磁碟櫃上的磁碟櫃IOM熱交換、您將無法存取磁碟櫃中的磁碟機、以及其下的任何磁碟櫃。您也可以關閉整個系統。
-
-* 最佳實務做法是在新增磁碟櫃、磁碟櫃FRU元件或SAS纜線之前、先在系統上安裝目前版本的磁碟櫃（IOM）韌體和磁碟機韌體。
-+
-如需最新版本的韌體、請參閱NetApp支援網站。
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"^]
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"^]
+CAUTION: 如果您嘗試以單一路徑連線將磁碟櫃上的磁碟櫃IOM熱交換、您將無法存取磁碟櫃中的磁碟機、以及其下的任何磁碟櫃。您也可以關閉整個系統。
 
 * 磁碟櫃（IOM）韌體會自動更新（不中斷營運）新機櫃IOM上的非最新韌體版本。
 +
@@ -60,7 +47,12 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp
 +
 磁碟櫃有三個位置LED：一個在操作員顯示面板上、一個在每個機櫃IOM上。位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用「關閉」選項來關閉這些命令。
 
-* 如有需要、請參閱監控磁碟櫃LED區段、以取得有關操作員顯示面板和FRU元件上磁碟櫃LED的意義和位置的資訊。
+* 如果需要的話，可以參考link:/sas3/service-monitor-leds.html#operator-display-panel-leds["監控磁碟架 LED"]指南，了解有關操作員顯示面板和 FRU 組件上的磁碟架 LED 的含義和位置的資訊。
+
+
+.開始之前
+* 系統中的所有其他元件（包括其他IOM12/IOM12B模組）都必須正常運作。
+* *最佳實務*：在新增新的磁碟架、磁碟架 FRU 元件或 SAS 線纜之前，請確保您的系統已安裝最新版本的磁碟架 (IOM) 韌體和磁碟機韌體。您可以造訪NetApp支援網站 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["下載磁碟架韌體"]和 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["下載磁碟機韌體"] 。
 
 
 .步驟

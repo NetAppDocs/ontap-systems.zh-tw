@@ -2,16 +2,20 @@
 permalink: a70-90/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff a70, a90, replace the boot media 
-summary: 首先，請準備更換媒體，在系統中安裝，還原開機映像，以及驗證系統功能，以更換 AFF A70 或 AFF A90 儲存系統中的開機媒體。 
+summary: 手動恢復啟動映像需要使用 USB 驅動器將ONTAP重新安裝到AFF A70或AFF A90系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 驅動器執行恢復並將系統恢復到正常運作狀態。 
 ---
-= 開機媒體更換工作流程： AFF A70 和 AFF A90
+= 啟動媒體手動復原工作流程 - AFF A70和AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-開始更換 AFF A70 或 AFF A90 儲存系統中的開機媒體，方法是檢閱更換需求，檢查加密狀態，關閉控制器，更換開機媒體，開機恢復映像，還原加密，以及驗證系統功能。
+手動恢復啟動映像需要使用 USB 驅動器將ONTAP重新安裝到AFF A70或AFF A90系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 驅動器執行恢復並將系統恢復到正常運作狀態。
+
+如果您的系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"] 。
+
+首先，檢查恢復要求，關閉控制器，更換啟動媒體，使用 USB 驅動器恢復映像，並在必要時重新套用加密設定。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱更換開機媒體的需求"]
 [role="quick-margin-para"]
@@ -23,7 +27,7 @@ summary: 首先，請準備更換媒體，在系統中安裝，還原開機映�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-shutdown.html["關閉控制器"]
 [role="quick-margin-para"]
-當您需要更換開機媒體時，請關閉儲存系統中的控制器。
+當您需要更換開機媒體時，請關閉控制器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-replace.html["更換開機媒體"]
 [role="quick-margin-para"]
@@ -35,7 +39,7 @@ summary: 首先，請準備更換媒體，在系統中安裝，還原開機映�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:bootmedia-encryption-restore.html["還原加密"]
 [role="quick-margin-para"]
-從 ONATP 開機功能表還原內建金鑰管理程式組態或外部金鑰管理程式。
+從ONTAP啟動選單恢復板載金鑰管理器設定或外部金鑰管理器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"]link:bootmedia-complete-rma.html["將故障零件歸還給NetApp"]
 [role="quick-margin-para"]

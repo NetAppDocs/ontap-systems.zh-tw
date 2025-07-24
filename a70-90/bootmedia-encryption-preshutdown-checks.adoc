@@ -2,9 +2,9 @@
 permalink: a70-90/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys 
-summary: 為了確保 AFF A70 和 AFF A90 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
+summary: 為了確保 AFF A70 或 AFF A90 儲存系統上的資料安全性，您必須驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
 ---
-= 檢查開機媒體上的加密金鑰支援和狀態 - AFF A70 和 AFF A90
+= 檢查手動啟動媒體復原的加密支援 - AFF A70和AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

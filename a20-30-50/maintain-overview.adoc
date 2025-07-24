@@ -4,31 +4,38 @@ sidebar: sidebar
 keywords: aff a20 aff a30 aff a50 maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components 
 summary: 維護 AFF A20 ， AFF A30 或 AFF A50 儲存系統的硬體，確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。 
 ---
-= 硬體維護總覽 - AFF A20 ， AFF A30 和 AFF A50
+= 維護程序概述 - AFF A20、 AFF A30 和AFF A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-維護 AFF A20 ， AFF A30 或 AFF A50 儲存系統的硬體，確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。
+維護AFF A20、 AFF A30 或AFF A50 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。
 
-維護程序假設 AFF A20 ， AFF A30 和 AFF A50 系統已部署為 ONTAP 環境中的儲存節點。
+維修過程假定AFF A20、 AFF A30 或AFF A50 儲存系統已部署為ONTAP環境中的儲存節點。
 
 
 
 == 系統元件
 
-對於 AFF A20 ， AFF A30 和 AFF A50 儲存系統，您可以對下列元件執行維護程序。
+對於AFF A20、 AFF A30 或AFF A50 儲存系統，您可以對下列元件執行維護程序。
 
 [cols="25,65"]
 |===
 
 
  a| 
-link:bootmedia-replace-workflow.html["開機媒體"]
+link:bootmedia-replace-workflow-bmr.html["啟動媒體 - 自動恢復"]
  a| 
-開機媒體會儲存一組主要和次要的 ONTAP 映像檔案，以及系統開機時所使用的系統組態資訊。
+啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些文件從配對節點啟動映像，並自動執行相應的啟動選單選項，以將啟動映像安裝到已取代的啟動媒體上。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
+
+
+
+ a| 
+link:bootmedia-replace-workflow.html["啟動媒體-手動恢復"]
+ a| 
+啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些檔案從 USB 磁碟機啟動映像並從合作夥伴節點恢復配置。
 
 
 

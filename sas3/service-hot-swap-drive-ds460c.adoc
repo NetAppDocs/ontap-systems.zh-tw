@@ -4,20 +4,17 @@ sidebar: sidebar
 keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, i/o, hot-swap a disk drive in a ds460c disk shelf 
 summary: 您可以在DS460C磁碟櫃中熱交換故障的磁碟機。 
 ---
-= 在DS460C磁碟櫃中熱交換磁碟機-使用IOM12/IOM12B模組的磁碟櫃
+= 熱插拔磁碟機 - DS460C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以在DS460C磁碟櫃中熱交換故障的磁碟機。
+您可以使用 IOM12 或 IOM12B 模組熱插拔 DS460C 磁碟架中發生故障的磁碟機。
 
 .開始之前
-* 替換磁碟機必須由DS460C磁碟櫃支援。
-+
-https://hwu.netapp.com["NetApp Hardware Universe"]
-
+* DS460C 磁碟架必須支援替換磁碟機。您可以在 https://hwu.netapp.com["NetApp Hardware Universe"] 。
 * 系統中的所有其他元件都必須正常運作；如果無法正常運作、請聯絡技術支援部門。
 * 您要移除的磁碟機必須故障。
 +
@@ -29,10 +26,7 @@ NOTE: 視磁碟機類型和容量而定、磁碟機可能需要數小時才能�
 
 * 如果您要更換自我加密磁碟（SED）、則必須依照ONTAP 您ONTAP 的版本的資訊手冊中有關更換SED的指示進行。
 +
-本白皮書中的說明ONTAP 說明說明更換SED之前和之後、您必須執行的其他步驟。
-
-+
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密概述"]
+說明 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["使用CLI進行NetApp加密概述"]文件描述了更換 SED 之前和之後必須執行的額外步驟。
 
 
 
@@ -67,23 +61,11 @@ NOTE: 請勿將手放在露出在磁碟機承載器底部的磁碟機板上。
 
 NOTE: 磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。
 
-* 最佳實務做法是在熱交換磁碟機之前、先安裝目前版本的磁碟認證套件（DQP）。
+* *最佳實務*：確保您的系統能夠識別並使用新合格的磁碟機 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["下載目前版本的磁碟認證套件 (DQP)"^]在熱插拔磁碟機之前。
 +
-安裝最新版的DQP可讓您的系統辨識並使用新的合格磁碟機、因此可避免系統事件訊息顯示非最新磁碟機資訊。您也可以避免因為無法識別磁碟機、而導致磁碟分割的可能預防。此外、DQP也會通知您非最新的磁碟機韌體。
+安裝最新版本的 DQP 可讓您的系統識別並使用新認證的磁碟機；從而避免出現有關磁碟機資訊非最新狀態的系統事件訊息。您也可以避免因無法識別磁碟機而導致磁碟分割區受阻的情況。 DQP會通知您磁碟機韌體非最新狀態。
 
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["NetApp下載：磁碟認證套件"^]
-
-* 最佳實務做法是在新增磁碟櫃、磁碟櫃FRU元件或SAS纜線之前、先在系統上安裝目前版本的磁碟櫃（IOM）韌體和磁碟機韌體。
-+
-如需最新版本的韌體、請參閱NetApp支援網站。
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["NetApp下載：磁碟櫃韌體"]
-
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["NetApp下載：磁碟機韌體"]
-
+* *最佳實務*：在新增新的磁碟架、磁碟架 FRU 元件或 SAS 線纜之前，請確保您的系統已安裝最新版本的磁碟架 (IOM) 韌體和磁碟機韌體。您可以造訪NetApp支援網站 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["下載磁碟架韌體"^]和 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["下載磁碟機韌體"^] 。
 * 使用非最新韌體版本的新磁碟機上、磁碟機韌體會自動更新（不中斷營運）。
 +
 

@@ -11,19 +11,25 @@ summary: 在更換 ASA A1K 系統中的開機媒體之前，請確保您符合�
 
 
 [role="lead"]
-在更換 ASA A1K 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括驗證您是否擁有正確的替換開機媒體，確認控制器上沒有故障的叢集連接埠，以及判斷是否已啟用 Onboard Key Manager （ OKM ）或外部金鑰管理程式（ EKM ）。
+在更換ASA A1K 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。
 
 檢閱下列需求。
 
 * 您必須使用從 NetApp 收到的替換開機媒體來取代故障的開機媒體。
-* 故障控制器上不得有故障的叢集連接埠。
+* 集群連接埠用於在自動啟動復原過程中在兩個控制器之間進行通訊。請確保受損控制器上的叢集連接埠正常運作。
 * 若為 OKM ，您需要 OKM 複雜密碼檔案內容。
 * 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
 +
-** /ccfcard/kmip/servers.cfg 檔案。
-** /ccfcard/kmip/certs/client.crt 檔案。
-** /ccfcard/kmip/certs/client.key 檔案。
-** /ccfcard/kmip/certs/ca.pem 檔案。
+** /cfcard/kmip/servers.cfg
+** /cfcard/kmip/certs/client.crt
+** /cfcard/kmip/certs/client.key
+** /cfcard/kmip/certs/CA.pem
+
+
+* 更換受損的啟動介質時，將命令應用到正確的控制器至關重要：
++
+** _受損控制器_是您正在執行維護的控制器。
+** _健康控制器_是受損控制器的 HA 夥伴。
 
 
 

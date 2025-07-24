@@ -2,9 +2,9 @@
 permalink: fas-70-90/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: fas70, fas90, pre-shutdown checks for onboard encryption keys 
-summary: 為了確保 FAS70 或 FAS90 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。 
+summary: 為確保 FAS70 或 FAS90 儲存系統上的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況及其狀態。請檢查您的ONTAP版本是否支援NetApp磁碟區加密，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。 
 ---
-= 檢查開機媒體上的加密金鑰支援和狀態： FAS70 和 FAS90
+= 檢查手動啟動介質復原的加密支援 - FAS70 和 FAS90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
