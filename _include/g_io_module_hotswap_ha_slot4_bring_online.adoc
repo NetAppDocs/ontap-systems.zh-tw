@@ -6,12 +6,11 @@
 
 . 使替換叢集和 HA I/O 模組連線：
 +
-`system controller slot module insert -node impaired_node_name_ -slot _slot_name_`
-
+.. 輸入以下命令：
 +
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
 
-NOTE: 當您看到“您想繼續嗎？”時，請輸入 `y` 。
-
+.. 進入 `y`當您看到提示“您想繼續嗎？”
 +
 輸出應確認叢集和 HA I/O 模組已成功上線（啟動、初始化並投入使用）。
 
@@ -29,6 +28,8 @@ Do you want to continue? {y|n}: `y`
 
 The module has been successfully powered on, initialized and placed into service.
 ----
+
+
 . 驗證叢集和 HA I/O 模組上的每個連接埠是否已成功初始化：
 +
 `event log show -event \*hotplug.init*`

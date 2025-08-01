@@ -13,20 +13,23 @@ summary: 叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發
 [role="lead"]
 叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在ASA A20、 ASA A30 或ASA A50 儲存系統中熱插拔該模組。
 
-熱插拔過程包括準備儲存系統和 I/O 模組插槽 4，以便可以安全地移除故障模組，將故障模組熱插拔為等效模組，使替換模組聯機，將儲存系統恢復正常運行，然後將故障模組傳回NetApp。
+要熱插拔模組，您需要確保您的儲存系統符合程式要求，準備好插槽 4 中的儲存系統和 I/O 模組，將故障模組熱插拔為等效模組，使替換模組聯機，將儲存系統恢復正常運行，然後將故障模組傳回NetApp。
 
-.開始之前
-* 為了使用此流程，您的儲存系統必須滿足以下所有要求。
-+
 
-NOTE: 如果您的儲存系統不符合以下所有要求，則必須使用link:io-module-replace.html["更換 I/O 模組程序"] 。
 
-+
-** 您的儲存系統必須運作ONTAP 9.17.1 或更高版本。
-** 發生故障的 I/O 模組必須是插槽 4 中的叢集和 HA I/O 模組，並且必須將其替換為另一個叢集和 HA I/O 模組。您無法變更 I/O 模組類型。
-** 您的儲存系統配置必須只有一個位於插槽 4 的叢集和 HA I/O 模組，而不是兩個叢集和 HA I/O 模組。
-** 您的儲存系統必須是雙節點（無交換器或有交換器）叢集配置。
-** 叢集和 HA I/O 模組發生故障的控制器（受損控制器）必須已接管正常的配對控制器。如果 I/O 模組發生故障，接管應該會自動進行。
+== 步驟 1：確保儲存系統符合程序要求
+
+要使用此流程，您的儲存系統必須滿足所有要求。閱讀注意事項以了解該過程的更多背景資訊。
+
+
+NOTE: 如果您的儲存系統不符合所有要求，則必須使用link:io-module-replace.html["更換 I/O 模組程序"]。
+
+.需求
+* 您的儲存系統必須運作ONTAP 9.17.1 或更高版本。
+* 發生故障的 I/O 模組必須是插槽 4 中的叢集和 HA I/O 模組，並且必須將其替換為等效的叢集和 HA I/O 模組。您無法變更 I/O 模組類型。
+* 您的儲存系統配置必須只有一個位於插槽 4 的叢集和 HA I/O 模組，而不是兩個叢集和 HA I/O 模組。
+* 您的儲存系統必須是雙節點（無交換器或有交換器）叢集配置。
+* 叢集和 HA I/O 模組發生故障的控制器（受損控制器）必須已接管正常的配對控制器。如果 I/O 模組發生故障，接管應該會自動進行。
 +
 對於雙節點集群，儲存系統無法辨別哪個控制器的 I/O 模組發生故障，因此任一控制器都可能啟動接管。只有當 I/O 模組發生故障的控制器（受損控制器）接管了正常的控制器時，才支援叢集和 HA I/O 模組熱插拔過程。
 
@@ -36,12 +39,10 @@ NOTE: 如果您的儲存系統不符合以下所有要求，則必須使用link:
 +
 如果您不確定哪個控制器的 I/O 模組出現故障，請聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"] 。
 
-
-
 * 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
 
 
-.關於這項工作
+.考量
 * 熱交換叢集和 HA I/O 模組意味著您不必執行手動接管；受損控制器（具有故障叢集和 HA I/O 模組的控制器）已自動接管健康的控制器。
 +
 當受損控制器接管健康控制器時，不發生中斷而恢復的唯一方法就是熱插拔模組。
@@ -63,7 +64,7 @@ NOTE: 如果您的儲存系統不符合以下所有要求，則必須使用link:
 
 
 
-== 步驟 1：準備儲存系統和 I/O 模組插槽 4
+== 步驟 2：準備儲存系統和 I/O 模組插槽 4
 
 準備儲存系統和 I/O 模組插槽 4，以便可以安全地移除故障叢集和 HA I/O 模組：
 
@@ -82,24 +83,24 @@ NOTE: 如果您的儲存系統不符合以下所有要求，則必須使用link:
 +
 `node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 從受損控制器的控制台停用自動交還：
+. 停用自動交還：
++
+.. 從受損控制器的控制台輸入以下命令：
 +
 `storage failover modify -node local -auto-giveback false`
 
-+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 
-NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 . 準備移除插槽 4 中的故障叢集和 HA 模組，方法是將其從服務中移除並關閉電源：
 +
+.. 輸入以下命令：
++
 `system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
 
+.. 進入 `y`當您看到提示“您想繼續嗎？”
 +
-
-NOTE: 當您看到“您想繼續嗎？”時，請輸入 `y` 。
-
-+
-例如，下列指令準備移除節點 2（受損控制器）上插槽 4 中的模組，並顯示一則可安全移除的訊息：
+例如，以下命令準備移除節點 2（受損控制器）上插槽 4 中的模組，並顯示可以安全移除的訊息：
 
 +
 [listing]
@@ -112,6 +113,8 @@ Do you want to continue? {y|n}: y
 
 The module has been successfully removed from service and powered off. It can now be safely removed.
 ----
+
+
 . 驗證發生故障的叢集以及插槽 4 中的 HA 模組是否已關閉：
 +
 `system controller slot module show`
@@ -123,7 +126,7 @@ The module has been successfully removed from service and powered off. It can no
 
 
 
-== 步驟 2：更換故障的叢集和 HA I/O 模組
+== 步驟 3：更換故障的叢集和 HA I/O 模組
 
 使用等效的 I/O 模組更換插槽 4 中發生故障的叢集和 HA I/O 模組：
 
@@ -166,18 +169,17 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
-== 步驟 3：使替換叢集和 HA I/O 模組聯機
+== 步驟 4：使替換叢集和 HA I/O 模組聯機
 
 將插槽 4 中的替換叢集和 HA I/O 模組聯機，驗證模組連接埠是否已成功初始化，驗證插槽 4 是否已開啟電源，然後驗證模組是否連線並被識別。
 
 . 使替換叢集和 HA I/O 模組連線：
 +
-`system controller slot module insert -node impaired_node_name_ -slot _slot_name_`
-
+.. 輸入以下命令：
 +
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
 
-NOTE: 當您看到“您想繼續嗎？”時，請輸入 `y` 。
-
+.. 進入 `y`當您看到提示“您想繼續嗎？”
 +
 輸出應確認叢集和 HA I/O 模組已成功上線（啟動、初始化並投入使用）。
 
@@ -195,6 +197,8 @@ Do you want to continue? {y|n}: `y`
 
 The module has been successfully powered on, initialized and placed into service.
 ----
+
+
 . 驗證叢集和 HA I/O 模組上的每個連接埠是否已成功初始化：
 +
 `event log show -event \*hotplug.init*`
@@ -272,7 +276,7 @@ Slot slot Information
 
 
 
-== 步驟 4：恢復儲存系統正常運作
+== 步驟 5：恢復儲存系統正常運作
 
 透過將儲存交還給運作狀況良好的控制器、恢復自動交還以及重新啟用AutoSupport自動案例創建，將儲存系統恢復正常運作。
 
@@ -293,6 +297,6 @@ Slot slot Information
 
 
 
-== 步驟5：將故障零件歸還給NetApp
+== 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。
