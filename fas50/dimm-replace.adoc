@@ -2,7 +2,7 @@
 permalink: fas50/dimm-replace.html 
 sidebar: sidebar 
 keywords: fas50, replace a dimm 
-summary: 如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 FAS50 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。 
+summary: 如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換 FAS50 儲存系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。 
 ---
 = 更換 DIMM - FAS50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果偵測到過度的可修正或不可修正的記憶體錯誤，�
 
 
 [role="lead"]
-如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 FAS50 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。
+如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換 FAS50 儲存系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。
 
 .開始之前
 * 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續。

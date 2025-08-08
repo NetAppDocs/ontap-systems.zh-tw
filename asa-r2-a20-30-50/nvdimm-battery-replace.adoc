@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/nvdimm-battery-replace.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, replace the NV battery, NV battery 
-summary: 當電池開始充電或故障時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。 
+summary: 當電池開始失去電量或故障時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。 
 ---
 = 更換 NV 電池 - ASA A20 ， ASA A30 和 ASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當電池開始充電或故障時，請更換 ASA A20 ， ASA A30 或 A
 
 
 [role="lead"]
-當電池開始充電或故障時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。
+當電池開始失去電量或故障時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。
 
 若要更換 NV 電池，您必須取下控制器，取出故障電池，安裝更換電池，然後重新安裝控制器。
 

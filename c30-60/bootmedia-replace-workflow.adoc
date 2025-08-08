@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the boot media 
-summary: 手動恢復啟動映像需要使用 USB 隨身碟將ONTAP重新安裝到AFF C30 或AFF C60 系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用此準備好的 USB 驅動器執行恢復操作，將系統恢復到正常運作狀態。 
+summary: 啟動映像的手動復原涉及使用 USB 磁碟機將ONTAP重新安裝到AFF C30 或AFF C60 儲存系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行恢復操作，將系統恢復到正常運作狀態。 
 ---
 = 啟動媒體手動復原工作流程 - AFF C30 和AFF C60
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 手動恢復啟動映像需要使用 USB 隨身碟將ONTAP重新安裝�
 
 
 [role="lead"]
-手動恢復啟動映像需要使用 USB 隨身碟將ONTAP重新安裝到AFF C30 或AFF C60 系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用此準備好的 USB 驅動器執行恢復操作，將系統恢復到正常運作狀態。
+啟動映像的手動復原涉及使用 USB 磁碟機將ONTAP重新安裝到AFF C30 或AFF C60 儲存系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行恢復操作，將系統恢復到正常運作狀態。
 
 如果您的系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"] 。
 

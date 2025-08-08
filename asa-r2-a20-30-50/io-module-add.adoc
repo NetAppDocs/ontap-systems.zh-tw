@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/io-module-add.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, add I/O module 
-summary: 若要更換 I/O 模組、您必須從模組拔下纜線、從模組中移除 SFP 和 QSFP 模組、移除模組、安裝替換模組、重新安裝 SFP 和 QSFP 模組、然後連接 I/O 模組纜線。 
+summary: 在您的ASA A20、 ASA A30 或ASA A50 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。 
 ---
 = 新增 I/O 模組： ASA A20 ， ASA A30 和 ASA A50
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 若要更換 I/O 模組、您必須從模組拔下纜線、從模組中
 
 
 [role="lead"]
-將 I/O 模組新增至 ASA A20 ， ASA A30 或 ASA A50 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。
+在您的ASA A20、 ASA A30 或ASA A50 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。
 
-如果有可用插槽，您可以為 ASA C30 儲存系統新增 I/O 模組。如果所有插槽都已填滿，則可以取代現有模組以新增模組。
+如果有可用插槽，您可以為ASA A20、 ASA A30 或ASA A50 儲存系統新增 I/O 模組。如果所有插槽都已填滿，則可以取代現有模組以新增模組。
 
 .關於這項工作
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實體定位所選的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。

@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/io-module-replace.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, replace a pcie card 
-summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。 
+summary: 當ASA A20、 ASA A30 或ASA A50 儲存系統中的 I/O 模組發生故障或需要升級以支援更高效能或其他功能時，請更換此模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。 
 ---
 = 更換 I/O 模組 - ASA A20 ， ASA A30 和 ASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上�
 
 
 [role="lead"]
-當模組故障或需要升級以支援更高效能或其他功能時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。
+當ASA A20、 ASA A30 或ASA A50 儲存系統中的 I/O 模組發生故障或需要升級以支援更高效能或其他功能時，請更換此模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。
 
 請使用此程序來更換故障的 I/O 模組。
 

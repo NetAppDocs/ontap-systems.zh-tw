@@ -1,86 +1,8 @@
-= 步驟1：關閉受損的控制器
+= 步驟 3 ：確認控制器狀態
 :allow-uri-read: 
 
 
-NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
-
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡 https://support.netapp.com["NetApp支援"]。
-
-請務必使用您從 NetApp 收到的替換元件來更換故障的元件。
-
-
-
-== 步驟1：關閉受損的控制器
-
-關閉或接管受損的控制器。
-
-若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
-
-.關於這項工作
-* 如果您有 SAN 系統，則必須檢查故障控制器 SCSI 刀鋒的事件訊息  `cluster kernel-service show`。 `cluster kernel-service show`命令（從 priv 進階模式）會顯示節點名稱、link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["仲裁狀態"]該節點的可用度狀態、以及該節點的作業狀態。
-+
-每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
-
-* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
-
-
-.步驟
-. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
-+
-`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
-
-+
-下列AutoSupport 資訊不顯示自動建立案例兩小時：
-
-+
-`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
-
-. 停用健康控制器主控台的自動恢復：
-+
-`storage failover modify -node local -auto-giveback false`
-
-+
-
-NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
-
-. 將受損的控制器移至載入器提示：
-+
-[cols="1,2"]
-|===
-| 如果受損的控制器正在顯示... | 然後... 
-
-
- a| 
-載入程式提示
- a| 
-前往下一步。
-
-
-
- a| 
-正在等待恢復...
- a| 
-按Ctrl-C、然後在出現提示時回應「y」。
-
-
-
- a| 
-系統提示或密碼提示
- a| 
-從健全的控制器接管或停止受損的控制器：
-
-`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
-
---halt true_ 參數會帶您進入 Loader 提示字元。
-
-|===
-
-
-
-
-== 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
-
-使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。
+使用適當的選項更換NVRAM模組或NVRAM DIMM。
 
 [role="tabbed-block"]
 ====
@@ -88,6 +10,7 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 --
 若要更換 NVRAM 模組、請將其放在機箱的插槽 4/5 中、然後依照特定步驟順序進行。
 
+.步驟
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
@@ -152,6 +75,7 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 --
 若要更換 NVRAM 模組中的 NVRAM DIMM 、您必須先移除 NVRAM 模組、然後更換目標 DIMM 。
 
+.步驟
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
@@ -284,9 +208,3 @@ Disk                   Size Shelf Bay Type    Type        Name
 
 ----
 
-
-
-
-== 步驟4：將故障零件歸還給NetApp
-
-如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

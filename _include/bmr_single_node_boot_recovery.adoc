@@ -3,7 +3,7 @@
 
 
 .開始之前
-* 若為 OKM ，您需要 OKM 複雜密碼檔案內容。
+* 對於 OKM，您需要叢集範圍的密碼以及備份資料。
 * 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
 +
 ** /ccfcard/kmip/servers.cfg 檔案。
@@ -72,7 +72,7 @@ Is the key manager onboard
  a| 
 移至步驟 4 以還原適當的金鑰管理程式。
 
-節點可存取開機功能表並執行：
+節點進入啟動選單並運行：
 
 ** 選項 10 適用於內建金鑰管理程式（ OKM ）的系統。
 ** 選項 11 適用於具有外部金鑰管理程式（ EKM ）的系統。
@@ -94,20 +94,32 @@ Entering Bootmenu Option 10...
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
 .. 在提示下輸入 `Y`，確認您要開始 OKM 恢復程序。
-.. 出現提示時，請輸入內建金鑰管理程式的複雜密碼，並在提示時再次輸入複雜密碼以確認。
+.. 出現提示時輸入以下內容：
 +
-.顯示複雜密碼提示範例
+... 密碼
+... 當提示確認時再次輸入密碼
+... 板載密鑰管理器的備份數據
++
+.顯示密碼和備份資料提示的範例
 [%collapsible]
 =====
 ....
 Enter the passphrase for onboard key management:
-Enter the passphrase again to confirm:
-Enter the backup data:
 -----BEGIN PASSPHRASE-----
 <passphrase_value>
 -----END PASSPHRASE-----
+Enter the passphrase again to confirm:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the backup data:
+-----BEGIN BACKUP-----
+<passphrase_value>
+-----END ACKUP-----
 ....
 =====
+
+
 .. 繼續監控還原程序，同時從合作夥伴節點還原適當的檔案。
 +
 恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
@@ -168,7 +180,7 @@ ONTAP 9.16.0.
 
 
  a| 
-ONTAP 9.16.1.
+ONTAP 9.16.1 及更高版本
  a| 
 繼續下一步。
 
@@ -246,6 +258,8 @@ xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
 
  a| 
 如果出現提示，請輸入合作夥伴的 ONTAP 叢集 UUID 。
+
+您可以使用以下方式從夥伴節點檢查叢集 UUID `cluster identify show`命令。
  a| 
 .顯示 ONTAP 叢集 UUID 範例
 [%collapsible]
@@ -263,6 +277,13 @@ System is ready to utilize external key manager(s).
 
  a| 
 如果出現提示，請輸入節點的暫用網路介面和設定。
+
+您需要輸入：
+
+... 連接埠的 IP 位址
+... 連接埠的網路遮罩
+... 預設網關的 IP 位址
+
  a| 
 .顯示暫時網路設定的範例
 [%collapsible]
@@ -285,44 +306,11 @@ Trying to recover keys from key servers....
 |===
 .. 視金鑰是否成功還原而定、請採取下列其中一項動作：
 +
-*** 如果 EKM 組態已成功還原，程序會嘗試從合作夥伴節點還原適當的檔案，然後重新啟動節點。請移至步驟 d.
+*** 如果你看到 `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696`在輸出中，EKM 配置已成功恢復。
 +
-.顯示成功 9.16.0 還原訊息的範例
-[%collapsible]
-=====
-....
+該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。轉至步驟 d。
 
-kmip2_client: Importing keys from external key server: xxx.xxx.xxx.xxx:5696
-[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdUtils: [locateMrootAkUuids]:420: Locating local cluster MROOT-AK with keystore UUID: <uuid>
-[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:79: Calling KMIP Locate for the following attributes: [<x-NETAPP-ClusterId, <uuid>>, <x-NETAPP-KeyUsage, MROOT-AK>, <x-NETAPP-KeystoreUuid, <uuid>>, <x-NETAPP-Product, Data ONTAP>]
-[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:84: KMIP Locate executed successfully!
-[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [setUuidList]:50: UUID returned: <uuid>
-...
-kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696
-
-GEOM_ELI: Device nvd0s4.eli created.
-GEOM_ELI: Encryption: AES-XTS 256
-GEOM_ELI:     Crypto: software
-Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:140 MROOT-AK is requested.
-Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:162 Returning MROOT-AK.
-....
-=====
-+
-.顯示成功還原 9.16.1 訊息的範例
-[%collapsible]
-=====
-....
-
-System is ready to utilize external key manager(s).
-Trying to recover keys from key servers....
-[discover_versions]
-[status=SUCCESS reason= message=]
-...
-kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:xxxx
-Successfully recovered keymanager secrets.
-....
-=====
-*** 如果金鑰未成功還原，系統將會停止，並表示無法還原金鑰。畫面會顯示錯誤和警告訊息。重新執行恢復程序：
+*** 如果密鑰未成功恢復，系統將停止並指示無法恢復密鑰。顯示錯誤和警告訊息。您必須重新執行復原過程：
 +
 `boot_recovery -partner`
 

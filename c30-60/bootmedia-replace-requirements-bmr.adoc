@@ -2,7 +2,7 @@
 permalink: c30-60/bootmedia-replace-requirements-bmr.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, replace the boot media 
-summary: 在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。 
+summary: 在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M 扳手連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 OKM 或外部密鑰管理器 EKM。 
 ---
 = 自動啟動媒體復原的要求 - AFF C30 和AFF C60
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請�
 
 
 [role="lead"]
-在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。
+在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M（扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。
 
 自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 
@@ -22,7 +22,7 @@ summary: 在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請�
 +
 e0M 連接埠用於在自動啟動復原過程中在兩個控制器之間進行通訊。
 
-* 若為 OKM ，您需要 OKM 複雜密碼檔案內容。
+* 對於 OKM，您需要叢集範圍的密碼以及備份資料。
 * 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
 +
 ** /ccfcard/kmip/servers.cfg 檔案。

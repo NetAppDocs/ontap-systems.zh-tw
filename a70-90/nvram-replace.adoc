@@ -158,6 +158,10 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 == 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
 
+
+
+== 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
+
 使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。
 
 [role="tabbed-block"]
@@ -309,11 +313,17 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 CAUTION: 只有在更換 NVRAM 模組時才需要重新指派磁碟、而且不適用於 NVRAM DIMM 更換。
 
 .步驟
-. 如果控制器處於維護模式（顯示 `*>` 提示）、請結束維護模式、並前往載入程式提示： _halt _
-. 在控制器的載入器提示字元中、啟動控制器、並在系統 ID 不相符而提示覆寫系統 ID 時輸入 _y_ 。
-. 等待恢復 ... 此訊息會顯示在控制器主控台上、並顯示更換模組、然後從健全的控制器確認已自動指派新的合作夥伴系統 ID ： _storage 容錯移轉 show_
+. 如果控制器處於維護模式（顯示 `*>`提示符號），退出維護模式並進入 LOADER 提示符號：
 +
-在命令輸出中、您應該會看到一則訊息、指出受損控制器上的系統ID已變更、顯示正確的舊ID和新ID。在下列範例中、node2已完成更換、新的系統ID為151759706。
+`halt`
+
+. 在控制器的載入器提示字元中、啟動控制器、並在系統 ID 不相符而提示覆寫系統 ID 時輸入 _y_ 。
+. 等到更換模組的控制器控制台上顯示等待交還訊息，然後從健康的控制器驗證是否已自動指派新的合作夥伴系統 ID：
++
+`storage failover show`
+
++
+在命令輸出中，您應該會看到一則訊息，表示受損控制器上的系統 ID 已更改，並顯示正確的舊 ID 和新 ID。在下列範例中，節點 2 已完成替換，並具有新的系統 ID 151759706。
 
 +
 [listing]
@@ -328,7 +338,8 @@ node2             node1             -            Waiting for giveback (HA mailbo
 ----
 . 退回控制器：
 +
-.. 從健全的控制器中、歸還更換過的控制器儲存設備： _storage 容錯移轉恢復恢復 -ofnode_node_name_
+.. 從健康的控制器中，歸還被替換的控制器的儲存空間：+
+`storage failover giveback -ofnode replacement_node_name`
 +
 控制器會恢復其儲存設備並完成開機。
 
@@ -336,11 +347,10 @@ node2             node1             -            Waiting for giveback (HA mailbo
 如果系統因為系統 ID 不相符而提示您置換系統 ID 、您應該輸入 _y_ 。
 
 +
-
-NOTE: 如果被否決、您可以考慮覆寫否決。
+如果被否決、您可以考慮覆寫否決。
 
 +
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動恢復命令"^] 取代否決的主題。
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted["手動交還命令"^]推翻否決。
 
 .. 完成恢復後、確認 HA 配對是否正常、而且可以接管： _storage 容錯移轉 show_
 +
@@ -348,7 +358,10 @@ NOTE: 如果被否決、您可以考慮覆寫否決。
 
 
 
-. 驗證是否已正確分配磁碟：「torage disk show -所有權」
+. 驗證磁碟是否已正確分配：
++
+`storage disk show -ownership`
+
 +
 屬於控制器的磁碟應顯示新的系統 ID 。在下列範例中、node1擁有的磁碟現在顯示新的系統ID：151759706：
 
@@ -396,11 +409,23 @@ dr-group-id            cluster node           configuration-state
 
 4 entries were displayed.
 ----
-. 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
+. 驗證每個控制器是否存在預期的磁碟區：
++
+`vol show -node node-name`
+
 . 如果已啟用儲存加密、則必須還原功能。
-. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
-. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
-. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
+
 
 
 

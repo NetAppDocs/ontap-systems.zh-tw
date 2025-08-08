@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/controller-replace-restore-system-rma.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, how to restore NetApp Storage Encryption, how to complete the replacement process 
-summary: 若要完成 ASA A20 ， ASA A30 或 ASA A50 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。 
+summary: '若要完成ASA A20、 ASA A30 或ASA A50 儲存系統的控制器更換，請先還原NetApp儲存加密配置（如有必要）並在新控制器上安裝所需的授權。接下來，確認邏輯介面 (LIF) 正在向其主連接埠報告並執行叢集健康檢查。最後，註冊新控制器的序號，然後將發生故障的零件退回給NetApp。' 
 ---
 = 完整更換控制器： ASA A20 ， ASA A30 和 ASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 若要完成 ASA A20 ， ASA A30 或 ASA A50 系統的控制器更換�
 
 
 [role="lead"]
-若要完成 ASA A20 ， ASA A30 或 ASA A50 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。
+若要完成ASA A20、 ASA A30 或ASA A50 儲存系統的控制器更換，請先還原NetApp儲存加密配置（如有必要）並在新控制器上安裝所需的授權。接下來，確認邏輯介面 (LIF) 正在向其主連接埠報告並執行叢集健康檢查。最後，註冊新控制器的序號，然後將發生故障的零件退回給NetApp。
 
 
 

@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/fan-replace.html 
 sidebar: sidebar 
 keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
-summary: 當風扇故障或無法有效運作時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。 
+summary: 當風扇發生故障或無法有效運作時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。 
 ---
 = 更換風扇模組 - ASA A20 ， ASA A30 和 ASA A50
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當風扇故障或無法有效運作時，請更換 ASA A20 ， ASA A30
 
 
 [role="lead"]
-當風扇故障或無法有效運作時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。
+當風扇發生故障或無法有效運作時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。
 
 .關於這項工作
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。

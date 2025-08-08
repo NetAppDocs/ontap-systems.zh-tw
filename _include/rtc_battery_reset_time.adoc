@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+更換 RTC 電池、插入控制器並開啟電源進行第一次 BIOS 重設後，您將看到以下錯誤訊息：
+
+`RTC date/time error. Reset date/time to default`
+
+`RTC power failure error`
+
+這些訊息是預期的，您可以繼續此過程。
+
+.步驟
+. 使用 `cluster date show`命令。  + 如果您的系統在啟動選單處停止，請選擇 `Reboot node`並在出現提示時回覆 _y_，然後按 _Ctrl-C_ 啟動到 LOADER
++
+.. 在目標控制器的載入程式提示字元下、使用命令檢查時間和日期 `cluster date show` 。
+.. 如有必要、請使用「設置日期mm/dd/ymm/西元年」命令來修改日期。
+.. 如有必要、請使用「Set Time hh：mm：sss」命令、以GMT0設定時間。
+
+
+. 確認目標控制器上的日期和時間。
+. 在載入程式提示下、輸入 _by_ 重新初始化 PCIe 卡和其他元件、並讓控制器重新開機。
+

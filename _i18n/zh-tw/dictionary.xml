@@ -173,7 +173,6 @@
   <block id="70c5de04671814ba5dcd9d09b741a1cf" category="paragraph">請務必緩慢關閉CAM握把、使其與磁碟機正面正確對齊。</block>
   <block id="f250aff9c2ea8d250ac78fea504ef0b9" category="list-text">確認磁碟機的活動（綠色）LED亮起。</block>
   <block id="d498450dccf1adc37cca8b357a798688" category="paragraph">當磁碟機的活動LED持續亮起時、表示磁碟機已有電力。當磁碟機的活動LED燈在閃爍時、表示磁碟機已開機且I/O正在進行中。如果磁碟機韌體正在自動更新、LED會開始閃爍。</block>
-  <block id="aae9b254c24cc3785086114d3d117232" category="list-text">如果您要更換另一個磁碟機、請重複步驟3到7。</block>
   <block id="21d25369cad786139fffb165354c1748" category="list-text">如果您在步驟1中停用自動指派磁碟機、請手動指派磁碟機擁有權、然後視需要重新啟用自動指派磁碟機。</block>
   <block id="fd5f28077fc18a4d39f9d405591062ff" category="list-text">顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」</block>
   <block id="64622072300a30ca93fc44d9b161979b" category="list-text">指派每個磁碟機：「torage disk assign -disk disk_name -Owner_name」</block>
@@ -842,7 +841,6 @@
   <block id="9f2373b743cd63cae2165d916d44ed8f" category="list-text">從系統主控台執行「shorage disk show -disf肯」命令、以識別故障的磁碟機。</block>
   <block id="583696e8273677d4dbae849781cbf55d" category="paragraph">故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。</block>
   <block id="1bb0fd4258be50b59e46882b35acc28e" category="list-text">確定是否已啟用SED驗證。</block>
-  <block id="5d5aa765d031a6aec40949b1fe489f43" category="paragraph">磁碟的更換方式取決於磁碟機的使用方式。如果已啟用SED驗證、您必須使用中的SED替換指示<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。這些指示說明更換SED之前和之後、您必須執行的其他步驟。</block>
   <block id="81e1b67b4176274b272b2432d79bb3a4" category="list-text">請確定您的平台支援更換磁碟機。請參閱<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
   <block id="35947e84e557291e52a523d2f7eefc27" category="list-text">請確定系統中的所有其他元件都正常運作；如果沒有、您必須聯絡技術支援部門。</block>
   <block id="b2503ad254a75d9be517466a531e8187" category="open-title">選項1：更換SSD</block>
@@ -7495,7 +7493,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="24047a6db7d76f066348eb7ec600f329" category="list-text">將電池從通風管和控制器模組中取出、然後放在一邊。</block>
   <block id="711984feeea728e6125e2dc423e3fac6" category="list-text">將替換電池組裝入控制器：</block>
   <block id="be9a1fd60aae57036d44ee7248eef782" category="list-text">關閉 NV 通風管蓋。</block>
-  <block id="4241925b317fc8692e52a8a332fb8340" category="paragraph">系統中的所有其他元件都必須正常運作；否則、您必須聯絡<block ref="dac6ef02422de09259cb8cc562a669a7" category="inline-link-rx"></block>。</block>
   <block id="eaf77e551d9134f3614ee70624c0542a" category="paragraph">若要更換 NVRAM 模組、請將其置於機箱的插槽 4/5 中、然後依照特定步驟順序進行。</block>
   <block id="37482fa38231232549f86b1d6fa25993" category="list-text">輕輕拉動托盤兩端的插針、然後向下旋轉托盤、將纜線管理托盤向下旋轉。</block>
   <block id="5aaa2c1d195fa72e1355d04b3f634478" category="list-text">從機箱中卸下受損的 NVRAM 模組：</block>
@@ -7656,7 +7653,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="95202d1c51ddd04e5c7ee2a579109553" category="list-text">按下 CAM 按鈕。</block>
   <block id="eea43b1f9f4191af441ec7f1515ffd01" category="list-text">將手指插入 CAM 拉桿開口處、然後將模組拉出機箱、即可從機箱中移除 NVRAM 模組。</block>
   <block id="586cd1de26648f3c3aa70dbd61199e65" category="image-alt">移除 DC PSU</block>
-  <block id="5862e3059693b0ae5802e65d68b3df4c" category="list-text">使用命令檢查健康控制器上的日期和時間<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block> 。</block>
   <block id="84d381361973ac3871949fc5ba34d24f" category="list-text">按下藍色鎖定按鈕。開機媒體會稍微向上旋轉。</block>
   <block id="59073837e9444bf2400f497219e938ff" category="list-text">向上旋轉開機媒體、將其滑出插槽。</block>
   <block id="39ae5f56527ba81d40a11f9ee81d3594" category="list-text">將開機媒體朝下旋轉、直到它卡入鎖定按鈕為止。如有必要、請按下藍色上鎖。</block>
@@ -7732,7 +7728,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="42a63d570d38a93d3cbaddcfd266a58c" category="paragraph">機櫃 ID 存取按鈕</block>
   <block id="d6f7de8608837079f0d0dd7fa668c457" category="list-text">檢查叢集的健全狀況。如需詳細資訊、請參閱<block ref="9f193d2818f839c9575e0a6969820fd9" category="inline-link-rx"></block> 知識庫文章。</block>
   <block id="92a8f4f22e2adcc65ead3e4c5a1435db" category="list-text">關閉 CAM 把手、使磁碟機完全插入中間背板、把手卡入定位。</block>
-  <block id="ccb7122523ff13a861d44c2bcdc45f81" category="list-text">指派每個磁碟機：<block ref="e546c7c0f19a803f32f47d3907849b62" prefix=" " category="inline-code"></block></block>
   <block id="3774ddca34a7ba4f3e245f00869ad3d4" category="paragraph">更換數個磁碟機時、每個故障磁碟機的移除與插入替換磁碟機之間、您必須等待 70 秒、讓儲存系統能夠識別每個新磁碟的存在。</block>
   <block id="7000494e61efaf925f6df5293a176456" category="inline-link">同時啟用內建金鑰管理</block>
   <block id="da204d9262b182aa6636ef0f759e2181" category="list-text">輸入的叢集範圍複雜密碼<block ref="45fc92ed2fd28afadf25f8be26cb5500" category="inline-link-rx"></block>。</block>
@@ -7914,7 +7909,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bf1f9977d76210449a57d0b526df80f9" category="paragraph"><block ref="bf1f9977d76210449a57d0b526df80f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="50c089c00eacadfe94238545067e1673" category="image-alt">AFF A90</block>
   <block id="fa2548c5f212acd29e45e9296579f088" category="paragraph">如需安裝說明及相容性資訊、請參閱<block ref="512a1f6ca3554ab9c3f8be1627b41678" category="inline-link-rx"></block> <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
-  <block id="9693b6a52f0ee9092f8116f36e38a969" category="summary">若要更換 I/O 模組、您必須從模組拔下纜線、從模組中移除 SFP 和 QSFP 模組、移除模組、安裝替換模組、重新安裝 SFP 和 QSFP 模組、然後連接 I/O 模組纜線。</block>
   <block id="f710bde9f928341df6ff92fee79cb81a" category="summary">每個要熱新增的 NS224 機櫃都要連接纜線、以便每個機櫃都有兩個連線至 HA 配對中的每個控制器。</block>
   <block id="567fab43047b0960ce69a80b4d3eeef2" category="doc">連接 AFF 系統的纜線架 - NS224 機櫃</block>
   <block id="62415c5f208498fa7a928f2f3d1ce337" category="example-title">連接至 AFF A1K 的纜線架</block>
@@ -8516,7 +8510,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="816bbd9f7f68bfea42f976bdd1e27e0d" category="paragraph">準備好安裝 AFF A70 或 AFF A90 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
   <block id="fd0f91da61deb35dbaf2ae06cc064cf2" category="inline-link-macro">為 AFF A70 或 AFF A90 儲存系統連接硬體纜線</block>
   <block id="2eee7d48deec1bc3240e9ce8e8e52e6a" category="paragraph">安裝 AFF A70 或 AFF A90 系統的硬體之後<block ref="17a7c89c361515d880a6cdcb9635aeb8" category="inline-link-macro-rx"></block>，您就可以了。</block>
-  <block id="0d037547a643b9b10ccde668038f1cce" category="summary">請遵循這些高階步驟、在 ONTAP 系統中安裝及設定 AFF A70 或 A90 儲存系統、並將其部署為 HA 配對。</block>
   <block id="470284b3c5d8d86ec6517e975c145e3d" category="doc">安裝與組態工作流程 - AFF A70 與 AFF A90</block>
   <block id="2f63ecb0af9e49a7ecf2336ee83329ff" category="paragraph">若要安裝及設定 AFF A70 或 AFF A90 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。</block>
   <block id="0fb9e8e688219941d3b3a149c0872261" category="inline-link-macro">準備安裝 AFF A70 或 AFF A90 儲存系統</block>
@@ -8553,7 +8546,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="29ce4833094eb0992ba97ac3e0c71b3f" category="inline-link-macro">ASA R2 系統維護部分</block>
   <block id="c8208be6c84d32af841a96445a7aa12a" category="paragraph">每種 ASA R2 系統的特定維護程序請參閱<block ref="6106c9a1bd699a0a46425013e812fe67" category="inline-link-macro-rx"></block>。</block>
   <block id="cb1eb944e0468ffad560cfc4623a28dc" category="doc">將故障零件退回 NetApp - ASA A70 和 ASA A90</block>
-  <block id="4a64f3d63fd0e8b93b80ef48b4698a9a" category="summary">您可以透過自動開機還原程序、從合作夥伴控制器還原開機媒體上的映像。</block>
   <block id="69326c1cf7a079cc03d300fe203efde6" category="doc">更換開機媒體 - ASA A70 和 ASA A90</block>
   <block id="d49388da53cc4a7219dcbdd63d45342a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="d54ef5e1f82ac3261c20b17cf3d0d453" category="inline-link-macro-rx"></block></block>
   <block id="e15dd4e77a0784cb0db73357420aff31" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="16af84fbab48141f269a09d09712af68" category="inline-link-macro-rx"></block></block>
@@ -8788,7 +8780,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c285ffddf1786cd1a14a26bcf9b74c7d" category="paragraph"><block ref="061047859ec1e213bd771fe5350bda2c" prefix="" category="inline-code"></block></block>
   <block id="d450838e17f81a8b52e0177614d67ad7" category="paragraph">恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：</block>
   <block id="a9849e92b148965a7bbb6c14d0afbcd0" category="open-title">內建金鑰管理程式（OKM）</block>
-  <block id="7d4bcf16d67094152377ca26832cc48a" category="example-title">顯示複雜密碼提示範例</block>
   <block id="08ac1a2fb254b60e9c511fe04b6536d0" category="open-title">外部金鑰管理程式（EKM）</block>
   <block id="012ebe1b2edbad8e2badae49c3ce7300" category="list-text">視金鑰是否成功還原而定、請採取下列其中一項動作：</block>
   <block id="1b3e0ac05a9037c92315146268065f35" category="example-title">顯示金鑰還原錯誤和警告訊息的範例</block>
@@ -8910,7 +8901,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9eeb212e62f650916daef03f37d7b903" category="paragraph"><block ref="9eeb212e62f650916daef03f37d7b903" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21d7363ee72b4f7dbf229f951faae28f" category="paragraph"><block ref="21d7363ee72b4f7dbf229f951faae28f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a203ae5b4c010fa4bfba309f112022fe" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="bace9ebae872b936af5e4fb32c627436" category="inline-link-macro-rx"></block></block>
-  <block id="cb6b9b62927bde4101155fb12ce4739b" category="paragraph">自動開機媒體更換會使用來自合作夥伴節點的開機映像、並自動執行適當的開機功能表選項、以便在更換的開機媒體上安裝開機映像。</block>
   <block id="ff419f4954e3dbf64ddba1e44234dfc2" category="paragraph"><block ref="ff419f4954e3dbf64ddba1e44234dfc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="57beedb714945568e8369d139b8f960b" category="inline-image-macro">拉片方向</block>
   <block id="b61617c922b3bb175faf6321e52b85d7" category="paragraph"><block ref="b61617c922b3bb175faf6321e52b85d7" category="inline-image-macro-rx" type="image"></block></block>
@@ -9132,7 +9122,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b5507fd73a4983529ea95a333b70737d" category="paragraph">如果您發現任何問題、請檢查纜線佈線並重新拔插纜線。</block>
   <block id="b9b95d927da2cee98d985b1a328995c6" category="list-text">退出維護模式<block ref="4a1bde0ea8bcda2a591f42646813c477" prefix=" " category="inline-code"></block>：。</block>
   <block id="f1d532893d42eeecb43413920b6d1769" category="list-text">重新安裝纜線管理 ARM （如果已移除）、但請勿將任何纜線重新連接至更換的控制器。</block>
-  <block id="344f921d0ec02fd1e7780b61a619a100" category="admonition">更換 RTC 電池、插入控制器並開啟第一次 BIOS 重設的電源後、您會看到下列錯誤訊息：<block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix=" " category="inline-code"></block><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix=" " category="inline-code"></block>這些訊息是預期的、您可以繼續執行此程序。</block>
   <block id="f97ccb05cf3baac7ac118d1817e2a5fd" category="open-title">選項 1 ： ONTAP 9 。 16.0 或更早版本</block>
   <block id="46656bb1c59aea0ac10f1105bf4c8b13" category="list-text">在功能受損的控制器上、當您看到時<block ref="aa48693d0248bb57512e373cd7f7eebc" prefix=" " category="inline-code"></block>按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block></block>
   <block id="19a9f99a071bb48abc6e83f398b20a0e" category="list-text">在功能受損的控制器上、當系統提示您覆寫 /etc/ssh/sd_host_eCDSA_key_ 時、按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
@@ -9738,9 +9727,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4fc57cbea1dc283632f2787066643f15" category="doc">機箱更換工作流程： AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="0269dc3bd1d7948d24b36b8b2739b473" category="paragraph">更換機箱包括將磁碟機和任何磁碟機擋片，控制器（使用電源供應器），以及擋板從受損機箱移至新機箱，並將受損機箱換成與受損機箱相同機型的新機箱。</block>
   <block id="5bae6af65fd5f35abd232c6ce1a14295" category="doc">更換控制器 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="6d9d9ac121a8f5a15d41ec5f703e6101" category="summary">您必須重新啟動控制器。</block>
   <block id="b77a1ee5ee32a5f56bdacc0fefa46a40" category="doc">將控制器交回 AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="438f8b1d0081894024b1fe442b8e0573" category="summary">若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。</block>
   <block id="4cc73fc8309284bbdefbcc4e3bd31e98" category="doc">完整更換控制器： AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="3653260700c5e2a8b2b6aa3f7680b31b" category="doc">關閉受損的控制器 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="5a1facb838fb1daf0b90031c157579d0" category="doc">還原並驗證系統組態 - AFF A20 ， AFF A30 和 AFF A50</block>
@@ -9751,7 +9738,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a2742c1f78fe5704322365331e542ab9" category="doc">更換 DIMM - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="fdcf50e10537e759b00a45364943197b" category="doc">更換磁碟機 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="94adc47982045347c477d3413a1ce035" category="doc">更換風扇模組 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="f972dc1275134cb1cdc76ea35eb5af09" category="summary">維護 AFF A20 ， AFF A30 和 AFF A50 硬體</block>
   <block id="fca7a57f7ae7786be1a28cd2eff7a7e6" category="doc">維護 AFF A20 ， AFF A30 和 AFF A50 硬體</block>
   <block id="866a764dfc035b62bd1e377e9effbd58" category="paragraph">對於 AFF A20 ， AFF A30 或 AFF A50 儲存系統，您可以對下列元件執行維護程序。</block>
   <block id="4e38ca25783f7173a88cdcafcbc8fcf1" category="doc">連接硬體 - AFF A20 ， AFF A30 和 AFF A50</block>
@@ -9849,7 +9835,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0e13dd128aeb300bd4c4e4321d3b6d00" category="paragraph">將控制器連接至 AFF A20 ， AFF A30 或 AFF A50 儲存系統中的網路和機櫃後，您就可以開啟機櫃和控制器的電源。</block>
   <block id="d2318e267239f37a3cc57e89925b9627" category="image-alt">A20 ， A30 或 A50 儲存系統電源連接圖</block>
   <block id="c99b4f07076f9f2d91c4d91135d1dc65" category="paragraph">開啟儲存系統電源之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>，您就可以了。</block>
-  <block id="2f7ada7e6eec19cfe4bd99e34e03fa4e" category="summary">準備安裝 AFF A20 ， AFF A30 和 AFF A50 平台。</block>
   <block id="80c5d8d4caa18675a1c928876932e0f5" category="doc">準備安裝 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="3d805e2ccb8d322d7295163d2ef0cd1d" category="paragraph">準備好安裝 AFF A20 ， AFF A30 或 AFF A50 儲存系統，方法是準備好場地，打開包裝箱的包裝箱，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
   <block id="586f9ad5db82f223a8b9cca9ed48f572" category="list-text">2U 儲存系統</block>
@@ -9864,7 +9849,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b33de9966d9d43b710f08c7404d97657" category="paragraph">當有可用插槽或所有插槽均已完全插滿時，您可以將 I/O 模組新增至 AFF A20 ， AFF A30 和 AFF A50 儲存系統。</block>
   <block id="9498413c95fb0b129853a42fc8125eb8" category="paragraph">新增額外的 I/O 模組可改善備援性，有助於確保儲存系統在一個 I/O 模組故障時仍能正常運作。</block>
   <block id="90a8d302e5a2869554fc370c0ce052fb" category="paragraph">更換故障 I/O 模組可將儲存系統還原至其最佳作業狀態。</block>
-  <block id="09ca8a9db98dfce354c1cbf7d9d46336" category="paragraph">開機媒體會儲存一組主要和次要的 ONTAP 映像檔案，以及系統開機時所使用的系統組態資訊。</block>
   <block id="90173eb1ed454afdf58b9269bb20c2b9" category="paragraph">風扇可冷卻控制器和磁碟機。</block>
   <block id="05a221444243ea0ca6f4dad99fe28c6c" category="paragraph">非揮發性記憶體（ NV ）電池負責為 NVMEM 元件提供電力，而在電力中斷後，資料傳輸中的資料會轉到快閃記憶體。</block>
   <block id="93cffbd214791f6c73bd02d80e0804ab" category="doc">更換 NV 電池 - AFF A20 ， AFF A30 和 AFF A50</block>
@@ -9893,7 +9877,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b96dbc5fbc9ab81f32efde0325589654" category="doc">安裝與設定工作流程： AFF C30 與 AFF C60</block>
   <block id="67867da29f56590b8e9c87517604808b" category="doc">開啟儲存系統電源 - AFF C30 和 AFF C60</block>
   <block id="80fd78b0f849541b11cbcf6acdae3b4f" category="paragraph">將控制器連接至 AFF C30 或 AFF C60 儲存系統的網路和機櫃之後，您就可以開啟機櫃和控制器的電源。</block>
-  <block id="fab9e21f1bee0f7c0618cad32b09e254" category="summary">準備安裝 AFF C30 和 AFF C60 平台。</block>
   <block id="e5c1fdfad20885712f2500f11ac35b2f" category="doc">準備安裝 - AFF C30 和 AFF C60</block>
   <block id="79e12a938ddc8f32473767866053dbf9" category="paragraph">準備好安裝 AFF C30 或 AFF C60 儲存系統，方法是準備好場地，打開包裝箱包裝，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
   <block id="72e4a819218c094d076f11afa9177f29" category="paragraph">當有可用的插槽或所有插槽都已滿時，您可以將 I/O 模組新增至 AFF C30 和 AFF C60 儲存系統。</block>
@@ -10351,7 +10334,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">準備更換</block>
-  <block id="161a8b7bf3b6a7aaa3bda387e5eab04b" category="list-text">若為 OKM ，您需要 OKM 複雜密碼檔案內容。</block>
   <block id="7e8bda9aef5e8fb9e3018b4afe5250d1" category="list-text">對於 EKM ，您需要從合作夥伴節點複本下列檔案：</block>
   <block id="0408893d877d770be02b8327fb6a5e89" category="list-text">/ccfcard/kmip/servers.cfg 檔案。</block>
   <block id="7ca5023275c76ff686c3c960083e2882" category="list-text">/ccfcard/kmip/certs/client.crt 檔案。</block>
@@ -10369,13 +10351,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="503facbcd54c8f4001c4d78ff3cd181d" category="list-text">移至步驟 5 ，啟用停用的自動恢復功能。</block>
   <block id="aba66c87293b779b339e88a54def4ece" category="paragraph"><block ref="fc8fae7f1985c187fcbe3dc568de6bab" prefix="" category="inline-code"></block></block>
   <block id="0c9a8e05dae1edb79dee2ba0e0aa2e10" category="paragraph">移至步驟 4 以還原適當的金鑰管理程式。</block>
-  <block id="3a435296812d929677e01249fc3df97e" category="paragraph">節點可存取開機功能表並執行：</block>
   <block id="c74f3fc8778415fe1908c3e70bdc5e1f" category="list-text">選項 10 適用於內建金鑰管理程式（ OKM ）的系統。</block>
   <block id="c5af7493bea6fdf0e6f855282fd978b1" category="list-text">選項 11 適用於具有外部金鑰管理程式（ EKM ）的系統。</block>
   <block id="5acefa45eaecf4ca5d5698a77ec26b5f" category="list-text">選取適當的金鑰管理程式還原程序。</block>
   <block id="cec349ed8df71d2a36b9e8ae7d8becef" category="paragraph">如果偵測到 OKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 10 。</block>
   <block id="90853290faee7028e876fdfdb8de437b" category="list-text">在提示下輸入<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>，確認您要開始 OKM 恢復程序。</block>
-  <block id="968cdeb239e05e7bf0dffdb96ea2f833" category="list-text">出現提示時，請輸入內建金鑰管理程式的複雜密碼，並在提示時再次輸入複雜密碼以確認。</block>
   <block id="24ffce97bd07e6f791875335c17cd10d" category="list-text">繼續監控還原程序，同時從合作夥伴節點還原適當的檔案。</block>
   <block id="3291f6521f975e1ead577845998bec95" category="paragraph">如果偵測到 EKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 11 。</block>
   <block id="a24d722ae51d75766fa9dc3854952898" category="list-text">下一步取決於您的系統執行的 ONTAP 版本：</block>
@@ -10401,9 +10381,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6af9b04018c1d00113ea69c62ee2cfae" category="example-title">顯示 ONTAP 叢集 UUID 範例</block>
   <block id="ea127e0cf13eef619bb275aeff09d41d" category="paragraph">如果出現提示，請輸入節點的暫用網路介面和設定。</block>
   <block id="aab616abb54a154e4fcb6dc6edca0697" category="example-title">顯示暫時網路設定的範例</block>
-  <block id="948fd102470ac371888b6bd60cfc7fb4" category="list-text">如果 EKM 組態已成功還原，程序會嘗試從合作夥伴節點還原適當的檔案，然後重新啟動節點。請移至步驟 d.</block>
-  <block id="6fa02563a50cf5fcad70bcfed92fe219" category="example-title">顯示成功 9.16.0 還原訊息的範例</block>
-  <block id="355423b7af5007bd545405d0221c3de6" category="example-title">顯示成功還原 9.16.1 訊息的範例</block>
   <block id="b06a9a7481d8f3ca792e2636ad34a5f6" category="list-text">當節點重新開機時，請確認系統已重新上線且可運作，以確認開機媒體還原是否成功。</block>
   <block id="5f24aaf8b32f780fce1ea44bd659a2f1" category="list-text">將控制器的儲存設備歸還，使其恢復正常運作：</block>
   <block id="e531efa1ffce94331d0abc4548448cac" category="list-text">在受損控制器上的 Loader 提示下，設定受損控制器模組的 IP 位址：</block>
@@ -10428,8 +10405,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2adbaa1720c6c394fbe2503b6da6fdb7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="ffddb9c4b10a61c1cf9d29a315266845" category="inline-link-macro-rx"></block></block>
   <block id="a9a4115c08aa47aeef8b44d2372274ad" category="inline-link-macro">更換開機媒體</block>
   <block id="aa8efed5979835fe328570ee208b1884" category="paragraph">當您關閉受損的控制器之後<block ref="52c48d39b9a1e431e1d04998ae5045f5" category="inline-link-macro-rx"></block>，您將會。</block>
-  <block id="9d99224aaec79ef0b06c033956f14979" category="paragraph">您可以從開機映像的合作夥伴節點更換故障的開機媒體。</block>
-  <block id="5d9ac1643aa86c7bddb319af8c3e06e3" category="paragraph">Boot Media Replace 會使用來自合作夥伴節點的開機映像，並自動執行適當的開機功能表選項，以便在替換的開機媒體上安裝開機映像。</block>
   <block id="a81626227e94d15884d465e1127d3af4" category="sidebar">ASA A70 和 ASA A90 開機媒體</block>
   <block id="9482f3836d9bb6259f467a0685f5e3b4" category="sidebar">ASA A1K 開機媒體</block>
   <block id="3636656d79b8f02465b883839da0c32b" category="paragraph">檢閱下列需求。</block>
@@ -10489,7 +10464,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="151d3f9489dc71ef0bf598517f9387d5" category="paragraph">如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實體定位所選的儲存系統。使用 SSH 登入 BMC ，然後輸入<block ref="748a449bca03582c103ee6b7bcd4a969" prefix=" " category="inline-code"></block>命令。</block>
   <block id="f7505dbf9cbf21226d33ed67b7c926e6" category="doc">硬體維護總覽 - ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="02cbc9c9b92f52062a793fbc039a7a5f" category="paragraph">對於 ASA A20 ， ASA A30 和 ASA A50 儲存系統，您可以對下列元件執行維護程序。</block>
-  <block id="bb955abc1ee1a042f477c6977d0bfc07" category="paragraph"><block ref="bb955abc1ee1a042f477c6977d0bfc07" category="inline-link-macro-rx"></block></block>
   <block id="c62c530fe1e7e769964d1cac42c0c1ca" category="doc">更換 NV 電池 - ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="db9511faddf8c60d659417ec7880bb9b" category="doc">更換電源供應器 - ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="69ddcdcae3c05843aa3be62f304e023b" category="doc">更換即時時鐘電池 - ASA A20 ， ASA A30 和 ASA A50</block>
@@ -10517,7 +10491,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ba9006710c05e167cf4c54dd8913e747" category="sidebar">ONTAP 硬體系統的磁碟櫃</block>
   <block id="12f32ad5228092ba48607728f8bbaf60" category="sidebar">TR-4384 - 採用 FC 傳輸協定的 NetApp FAS 系統上的 SAP HANA</block>
   <block id="6a003446ac5cfcc128a600e2f0f4d5f8" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 系統</block>
-  <block id="37b94bc9c3c3b884893142ecf71e0112" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 維護</block>
   <block id="ac683c035e1392a45e654dfbcfc1be22" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 開機媒體</block>
   <block id="f29453fc9b172b87989c48fc7a5c5299" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 機箱</block>
   <block id="d1c24e8a39fae2157a44e2cc90a3ef86" category="sidebar">ASA A20 ， ASA A30 和 ASA A50 控制器模組</block>
@@ -10854,30 +10827,17 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1c0352693ded19ccdeb0fec11d3c385c" category="paragraph-title">I/O 插槽編號</block>
   <block id="49b9f31bb4801b746ad0f04e6c8fe614" category="summary">為了確保您的 A20 ， AFF A30 或 AFF A50 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption ，並在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
   <block id="ad5b6cd72397448815f30afe8edf14bb" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
-  <block id="fa6ec00c17c7aa5dfefcfc4ba572a43d" category="summary">重新啟動控制器，確認系統健全狀況，並將故障零件送回 NetApp ，以完成 AFF A20 ， AFF A30 和 AFF A50 機箱更換程序的最後步驟。</block>
   <block id="9fae3d417e2d3ebd88166f9029869c43" category="paragraph">驗證機箱的 HA 狀態，然後將故障零件退回 NetApp ，以完成 AFF A20 ， AFF A30 和 AFF A50 機箱更換程序的最後步驟。</block>
   <block id="ce8d219b0c25cdcfa8794aaa3940ae9b" category="doc">更換機箱的需求 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="a67af8037fff1bcc2d313723431a1370" category="paragraph">在您檢閱更換機箱的需求之後，您需要<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block></block>
   <block id="c4bc88aac3ca3e3334c364fc02c4ddd6" category="summary">關閉 AFF A20 ， AFF A30 或 AFF A50 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定。</block>
   <block id="48f6c9ed7304e1d60e8a109cadfba40a" category="doc">關閉控制器以更換機箱 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="c3c39eb715783f1321fa0aa7e16abbda" category="summary">當硬體故障需要時，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
-  <block id="6b6c88c8c191fb969db6f9ca6c75c626" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF A20 ， AFF A30 或 AFF A50 系統恢復正常運作。</block>
-  <block id="56583e25c67e5bde4007a0ee8bfef756" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF A20 ， AFF A30 或 AFF A50 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
-  <block id="b7985864b2944dd8c51e785e7f2f925f" category="summary">在更換 AFF A20 ， AFF A30 或 AFF A50 系統中的控制器之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換控制器，以及將控制器的主控台輸出儲存至文字記錄檔。</block>
   <block id="cf10aa84135d8b5510f94f10aed1f986" category="doc">更換控制器的需求 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="1d6059c20337f6ec89436c98b3139b15" category="summary">若要將 AFF A20 ， AFF A30 或 AFF A50 系統還原為完整運作，請在新的控制器上安裝所需的授權，確認邏輯介面已回報至其主連接埠，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。</block>
-  <block id="dbfb7f71ddadbabc72e187a5c4da93cd" category="paragraph">若要完成 AFF A20 ， AFF A30 或 AFF A50 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。</block>
   <block id="af1d8260fbfbe546d84135a7a6b5512d" category="summary">關閉 AFF A20 ， AFF A30 或 AFF A50 儲存系統中受損的控制器，以防止資料遺失，並確保更換控制器時系統穩定。</block>
   <block id="71d16f8220835fa6169da2624621e0ec" category="summary">確認控制器的 HA 組態在 AFF A20 ， AFF A30 或 AFF A50 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
   <block id="965667831af190d5d3fd1b7d54719b84" category="summary">開始更換 AFF A20 ， AFF A30 或 AFF A50 儲存系統中的控制器，方法是關閉受損的控制器，移除並更換控制器，還原系統組態，並將儲存資源的控制權歸還給更換的控制器。</block>
-  <block id="404f51fc1e613174d5c37f88c1f4c2dc" category="summary">如果偵測到過度的可修正或不可修正記憶體錯誤，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
-  <block id="e908a42835789ba204cf167cbe961758" category="summary">當磁碟機故障或需要升級時，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的磁碟機。更換程序包括識別故障的磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
-  <block id="f9de076f8f23284c4a40fa0f852f8d4e" category="summary">當風扇故障或無法有效運作時，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
   <block id="3ac70615ad552b5eea2676454c85950a" category="summary">將 I/O 模組新增至 AFF A20 ， AFF A30 或 AFF A50 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
-  <block id="487383e168090632bc5092335dc6f13a" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
   <block id="a83cdf3ca9bf3d99e2b58929c533818a" category="summary">維護 AFF A20 ， AFF A30 或 AFF A50 儲存系統的硬體，確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
-  <block id="3ba3267688c39aee5bbae861bdff41f4" category="summary">當電池開始充電或故障時，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
-  <block id="c550b85dad59ef101bf3051c5eaa67d8" category="summary">更換 AFF A20 ， AFF A30 或 AFF A50 系統中的即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
   <block id="fa72549d457c07c224290c2737baf800" category="summary">關閉 AFF A70 或 AFF A90 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定。</block>
   <block id="cf4eab2b0d88ec4bacebde986a9b8eb9" category="summary">關閉 AFF A70 或 AFF A90 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定。</block>
   <block id="9a7b84fa6ef9f0a29d5eafc3304d18ed" category="doc">關閉控制器以更換機箱 - AFF A70 和 AFF A90</block>
@@ -10913,26 +10873,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="82ab30608a615aba23a7ce646834847f" category="paragraph">在 ASA A20 ， ASA A30 或 ASA A50 儲存系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從正常運作的節點還原組態。</block>
   <block id="0855cbbfbd39228942736f1dd60ef241" category="paragraph">檢閱開機媒體需求之後<block ref="f6f6eaac8bd3f857cf89c647db55229b" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="2fd545b6948b18df87e2184b90a0ba0b" category="paragraph">首先，請檢閱更換需求，關閉受損的控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能，以更換 ASA A30 ， ASA A20 或 ASA A50 儲存系統中的開機媒體。</block>
-  <block id="f78c88bb1e8f1ee3c7a6ac3858965894" category="paragraph">如果 AFF C30 或 AFF C60 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
   <block id="ac441f70de988a3251f64d82487a2c72" category="doc">更換機箱的要求： AFF C30 和 AFF C60</block>
   <block id="fc824cd7c134b0480b328fdcc7e54a05" category="paragraph">關閉 AFF C30 或 AFF C60 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定。</block>
-  <block id="2a1610dd70b8a51f012830051f7279c8" category="summary">如果需要硬體故障，請更換 AFF C30 或 AFF C60 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
-  <block id="feb81abd5ac4c32ed5630f110c457192" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF C30 或 AFF C60 系統恢復正常運作。</block>
-  <block id="b4e6d3f9cdc53c6a9ef02592ac6e1745" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF C30 或 AFF C60 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
-  <block id="3c0d82572af8bfa1b1ac9398525a48b0" category="summary">在更換 AFF C30 或 AFF C60 系統中的控制器之前，請確保您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換控制器，以及將控制器的主控台輸出儲存至文字記錄檔。</block>
-  <block id="1c56ed919455b263e0b194fdb4860d3a" category="paragraph">若要完成 AFF C30 或 AFF C60 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。</block>
   <block id="820ebe91a649e54a85fa1235af6b64e3" category="summary">關閉 AFF C30 或 AFF C60 儲存系統中受損的控制器，以防止資料遺失，並確保更換控制器時系統穩定性。</block>
   <block id="8f2170cf47e7ccc5b397bef99d083003" category="summary">確認控制器的 HA 組態在 AFF C30 或 AFF C60 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
   <block id="065012dd74a990e19317ff188ae60c77" category="summary">開始更換 AFF C30 或 AFF C60 儲存系統中的控制器，方法是關閉受損的控制器，移除並更換控制器，還原系統組態，並將儲存資源的控制權歸還給更換的控制器。</block>
-  <block id="4cb7bae3b675d8f099013715e6f803ff" category="summary">當系統登錄越來越多的可修正錯誤修正碼（ ECC ）時，請更換控制器模組中的 DIMM ；否則會造成系統故障。</block>
-  <block id="c9e2f1b314975a294e1981be233c0bed" category="paragraph">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 AFF C30 或 AFF C60 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
-  <block id="4e8bf987f450a2dcf8e3bc528b85b49d" category="summary">當磁碟機故障或需要升級時，請更換 AFF C30 或 AFF C60 系統中的磁碟機。更換程序包括識別故障的磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
-  <block id="a1c20f5ca62067156c14b14bcb29b11e" category="summary">當風扇故障或無法有效運作時，請更換 AFF C30 或 AFF C60 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
-  <block id="2f7e57530013339c3c35ed4d41290b19" category="summary">將 I/O 模組新增至 AFF C30 或 AFF C60 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
-  <block id="c13e75176064078adbd8d04fd906cc25" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 AFF C30 或 AFF C60 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
-  <block id="6cf1dd9e440d4e08c366b35b5d464aa9" category="summary">維護 AFF C30 或 AFF C60 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
-  <block id="94ea7f5dce2d0d803e480c1f14e44e00" category="summary">當電池開始充電或故障時，請更換 AFF C30 或 AFF C60 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
-  <block id="dbce7ee7cabfb0723dce8e56e2b7fa68" category="summary">請在 AFF C30 或 AFF C60 系統中更換即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
   <block id="162a811733ff347575a7e59554f507f6" category="summary">如果 AFF C80 系統中的元件故障，請將故障零件退回 NetApp 。</block>
   <block id="77599faf30c91abaad9dace21e73154f" category="summary">準備更換 C80 系統中受損的機箱，方法是識別受損的機箱，驗證更換元件，並標示纜線和控制器模組。</block>
   <block id="45f5989999d0454062fb2df1d68290bb" category="doc">準備更換機箱 - C80</block>
@@ -10978,14 +10923,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a9c0987fd2b31f999e6738087d128cfb" category="doc">新增及更換 I/O 模組的總覽 - AFF A1K</block>
   <block id="5bd705ad3d1ea061d9af69ede4ff4f69" category="doc">更換 I/O 模組 - AFF A1K</block>
   <block id="d02f11b418ff6ee9cf284d4d7e73f73a" category="summary">當 AFF A1K 系統故障或故障時，請更換其中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。</block>
-  <block id="b3b27accc842e0670215c3d8bae33dca" category="summary">如果硬體故障需要，請更換 AFF A20 ， AFF A30 或 AFF A50 系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除磁碟機，安裝替換機箱，以及重新安裝機箱元件。</block>
-  <block id="7c72724f0b6450fb95e7722b18d2e78f" category="summary">在更換 AFF A20 ， AFF A30 或 AFF A50 系統的機箱之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。</block>
   <block id="6c5e82deb6f3de231e3eb286f77e492f" category="paragraph">在您檢閱了更換機箱的需求之後<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="e7eea0ad5ba5d4f18a6414b3197206c3" category="summary">首先，請檢閱更換需求，關閉控制器，更換機箱，以及驗證系統作業，以更換 AFF A20 ， AFF A30 或 AFF A50 儲存系統的機箱。</block>
   <block id="12c8eb3808a13f0adea4f2c3d86acb4c" category="image-alt">AFF A20 A30 A50 ， C30 和 C60 重量注意圖示</block>
   <block id="90c51f2e3ac0e73e60b00bd0eba8b946" category="doc">新增 I/O 模組： AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="37783cf8bbf503f6c904d4be13f8c509" category="doc">更換 I/O 模組 - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="00a767b911241b7c49465dabd6862d3c" category="summary">當 A20 ， A30 或 A50 系統故障或故障時，請更換 AFF A20 ， AFF A30 或 AFF A50 系統中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。</block>
   <block id="dc5c74d1abe195182477161220f736cb" category="summary">如果需要硬體故障，請更換 AFF A70 或 AFF A90 系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除磁碟機，安裝替換機箱，以及重新安裝機箱元件。</block>
   <block id="d40f146aa7a5b4915ec82bbac5b1b200" category="summary">首先，請檢閱更換需求，關閉控制器，更換機箱，以及驗證系統作業，以更換 AFF A70 或 AFF A90 儲存系統的機箱。</block>
   <block id="cdab9753bdddb0aefefab44fd8865fbb" category="summary">在更換 AFF A70 或 AFF A90 系統的控制器之前，請確保您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換控制器，以及將控制器的主控台輸出儲存至文字記錄檔。</block>
@@ -11011,43 +10953,24 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bf112a46cb5a25f5cf12e7fa7476c832" category="summary">關閉 ASA A20 ， ASA A30 或 ASA A50 儲存系統中受損的控制器，以防止資料遺失，並確保更換開機媒體時系統穩定。</block>
   <block id="b0539e420a1a7e12959ba498e9c4c3e9" category="doc">關閉控制器以更換開機媒體： ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="551101167caf68719cb147303d60b949" category="summary">驗證機箱的 HA 狀態，然後將故障零件退回 NetApp ，以完成 ASA A20 ， ASA A30 和 ASA A50 機箱更換程序的最後步驟。</block>
-  <block id="cdb623edcfcfc106b95d891e6f92dc47" category="summary">如果硬體故障需要，請更換 ASA A20 ， ASA A30 或 ASA A50 系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除磁碟機，安裝替換機箱，以及重新安裝機箱元件。</block>
-  <block id="ac5ddaf3878f4ead9d018046981ba2ce" category="summary">在更換 ASA A20 ， ASA A30 或 ASA A50 系統的機箱之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。</block>
   <block id="c6963b720dca1306fb2b2a32b8270aa9" category="doc">更換機箱的需求 - ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="984b114393f8c371c935bf8294b37d97" category="summary">關閉 ASA A20 ， ASA A30 或 ASA A50 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定</block>
   <block id="59db0d95323923d4e6f323ff6818771c" category="doc">關閉控制器以更換機箱 - ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="a5e24d14d590829cbfff59eba673354f" category="paragraph">關閉 ASA A20 ， ASA A30 或 ASA A50 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定。</block>
   <block id="92629391c3dcec45b4a57f70a0170351" category="summary">首先，請檢閱更換需求，關閉控制器，更換機箱，以及驗證系統作業，以更換 ASA A20 ， ASA A30 或 ASA A50 儲存系統的機箱。</block>
-  <block id="36d9abf97baa1ce50cb7240d95175d10" category="summary">當硬體故障需要時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
-  <block id="eb5fa37b40ac29d806d25fd111dec256" category="paragraph">將儲存資源的控制權交給更換控制器，讓 ASA A20 ， ASA A30 或 ASA A50 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
-  <block id="2b29b503d474e1acf23485ba5ac29524" category="summary">在更換 ASA A20 ， ASA A30 或 ASA A50 系統中的控制器之前，請確定您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換控制器，以及將控制器的主控台輸出儲存至文字記錄檔。</block>
   <block id="dd3d557e8bfc32aef920f1556504e992" category="doc">更換控制器的需求 - ASA A20 ， ASA A30 和 ASA A50</block>
-  <block id="db232c87d0bac1ead95036cc549e9ffc" category="summary">若要完成 ASA A20 ， ASA A30 或 ASA A50 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要），然後在新控制器上安裝所需的授權。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，請登錄新控制器的序號，然後將故障零件退回 NetApp 。</block>
   <block id="f5973d56afe00d376ea7bd993f72a20f" category="summary">關閉 ASA A20 ， ASA A30 或 ASA A50 儲存系統中受損的控制器，以防止資料遺失，並確保更換控制器時系統穩定。</block>
   <block id="5aa75814a6440d82518a5c6d36803e59" category="paragraph">確認控制器的 HA 組態在 ASA A20 ， ASA A30 或 ASA A50 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
   <block id="d63c83e82032b0fd551f7b97d69801d8" category="summary">開始更換 ASA A20 ， ASA A30 或 ASA A50 儲存系統中的控制器，方法是關閉受損的控制器，移除並更換控制器，還原系統組態，並將儲存資源的控制權歸還給更換的控制器。</block>
-  <block id="df606962cca02355ec1f79ba930745e2" category="summary">如果偵測到過度的可修正或不可修正記憶體錯誤，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
-  <block id="93416db2b32ec93792665f82681a3a72" category="summary">當磁碟機故障或需要升級時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的磁碟機。更換程序包括識別故障的磁碟機，安全地移除磁碟機，以及安裝新磁碟機，以確保資料存取和系統效能不中斷。</block>
   <block id="77e3a161a6437b37a5320511615cbe90" category="doc">更換磁碟機 - ASA A20 ， ASA A30 和 ASA A50</block>
-  <block id="739d386a3981c43823fc33581f9ea499" category="summary">當風扇故障或無法有效運作時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
   <block id="0b4bd6c33b6b9314fc76337448ba58b6" category="doc">新增 I/O 模組： ASA A20 ， ASA A30 和 ASA A50</block>
-  <block id="63e1ce9a5de4c2528b766fc901516653" category="paragraph">將 I/O 模組新增至 ASA A20 ， ASA A30 或 ASA A50 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
   <block id="3c2e500baca7d452cd0054d9674fe62b" category="doc">更換 I/O 模組 - ASA A20 ， ASA A30 和 ASA A50</block>
-  <block id="2dd485bd8c3802921232b24f40b7238e" category="paragraph">當模組故障或需要升級以支援更高效能或其他功能時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
-  <block id="e8426a7a56a7087f1362d01fc67e23ad" category="paragraph">維護 ASA A20 ， ASA A30 或 ASA A50 儲存系統的硬體，確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
   <block id="03bbc4769b99d5f6da0fafece29f6b29" category="paragraph">維護程序假設 ASA A20 ， ASA A30 和 ASA A50 系統已部署為 ONTAP 環境中的儲存節點。</block>
-  <block id="39145b31eb1af2b84a4eb9a2d304e6da" category="summary">當電池開始充電或故障時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。</block>
-  <block id="baf9fd52f4b291f983b40dcd8019c9ff" category="paragraph">當電池開始充電或故障時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
-  <block id="23009711f72919a951a7217971d40105" category="summary">當 A20 ， A30 或 A50 系統故障或故障時，請更換 ASA A20 ， ASA A30 或 ASA A50 系統中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以便穩定運作。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。</block>
-  <block id="e9775dcf1c17e076120d5f80d3fcad0e" category="summary">更換 ASA A20 ， ASA A30 或 ASA A50 系統中的即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
   <block id="1c4b51b458fce412a8c007542d10d036" category="paragraph">為了確保 AFF C30 或 AFF C60 儲存系統上的資料安全性，您必須驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
   <block id="d7dae7b7d8a61375a24bff154aa12898" category="summary">驗證機箱的 HA 狀態，然後將故障零件退回 NetApp ，以完成 AFF C30 和 AFF C60 機箱更換程序中的最後步驟。</block>
-  <block id="76aee590be02a09340ef2e47e664fe1c" category="summary">當硬體故障需要時，請更換 AFF C30 或 AFF C60 系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除磁碟機，安裝替換機箱，以及重新安裝機箱元件。</block>
-  <block id="44a2d18250e07e4bea0e162129b4ed79" category="summary">在更換 AFF C30 或 AFF C60 系統的機箱之前，請確保您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。</block>
   <block id="c52568a311e3d85bff701b5334ea6c43" category="summary">首先，請檢閱更換需求，關閉控制器，更換機箱，以及驗證系統作業，以更換 AFF C30 或 AFF C60 儲存系統的機箱。</block>
   <block id="877ce8d6e2378f25eb1934d780634787" category="doc">新增 I/O 模組 - AFF C30 和 AFF C60</block>
   <block id="f9430f7ad2e3d7cbd4ff22fe4e6db301" category="doc">更換 I/O 模組 - AFF C30 和 AFF C60</block>
-  <block id="51b71a910044e4f579c4e1a6cacd2926" category="summary">當或 AFF C60 系統故障或故障時，請更換 AFF C30 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以確保運作穩定。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。</block>
   <block id="148c37b997fbf92672f09bf3d72bdde2" category="summary">如果需要硬體故障，請更換 AFF C80 系統的機箱。更換程序包括移除控制器和電源供應器（ PSU ），移除磁碟機，安裝替換機箱，以及重新安裝機箱元件。</block>
   <block id="5e4f388782b23b352ea8d9214c80bfd5" category="summary">在更換 AFF C80 系統的機箱之前，請先確認系統中的所有其他元件運作正常，並確定您擁有 ONTAP 的本機管理員認證，正確的更換機箱和必要的工具。</block>
   <block id="149d9cc9170faac13c9c0680a914233c" category="summary">首先，請檢閱更換需求，關閉控制器，更換機箱，以及驗證系統作業，以更換 AFF C80 系統的機箱。</block>
@@ -11089,9 +11012,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="33ae25491bd1a8a3daa58c3e044ddc6f" category="doc">將故障零件退回 NetApp - FAS50</block>
   <block id="cb898608072ab3625e9f94c0f82cbc2f" category="paragraph">如果 FAS50 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
   <block id="0277d6392a2af9f708f9e4369e630a19" category="summary">為了確保 FAS50 儲存系統的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
-  <block id="5f8c2ad1061532c9035fde45699f108c" category="summary">您可以從相同或不同支援的廠商熱交換相同容量的 NVMe SSD Flash Cache 模組（快取模組）。</block>
   <block id="3645f29f6c8c221f20d7813f0fa26a50" category="doc">熱交換快取模組： FAS50</block>
-  <block id="375300c4c74d065b6e97b93cfb47065f" category="paragraph">您可以從相同或不同支援的廠商熱交換相同容量的 NVMe SSD 快取模組（ Flash Cache 模組）。</block>
   <block id="8ebd59de86e8c4e921b201cca97c0308" category="list-text">您的儲存系統必須具備適當的作業系統，才能用於您要安裝的快取模組。</block>
   <block id="b8c60af649b796482380a3f6a76bbe83" category="list-text">儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續。</block>
   <block id="cc2fe3a3c64e24b07aa04c80f9e847e5" category="list-text">在快取模組正面，以亮起的琥珀色警示 LED 燈找出故障快取模組。</block>
@@ -11106,14 +11027,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="71ca5fa859d5d656d350997252618cfd" category="doc">完整機箱更換： FAS50</block>
   <block id="f7fd8733f7a1cdfb735457344642d65a" category="doc">更換機箱- FAS50</block>
   <block id="43c0e4ff98cea4dff4c5c25388cd5bdb" category="paragraph">更換受損的 FAS50 機箱並將元件重新安裝到其中之後<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>，您需要。</block>
-  <block id="92b1dd9a60c1d18f7606ce281d72ad2d" category="summary">在更換 FAS50 系統的機箱之前，請確保您符合成功更換所需的要求。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有正確的更換機箱，以及必要的工具。</block>
   <block id="b6658ca07f1d7034f64ec87009aff148" category="doc">機箱更換需求 - FAS50</block>
   <block id="d5558ef85c97f84228e8ede4f9fe68a6" category="summary">關閉 FAS50 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定性。</block>
   <block id="975d6c51bb7949ae1d3665c5ddf83cd9" category="doc">關閉控制器 - FAS50</block>
   <block id="9d9651f97ee43fc1894d70b8fca0c55f" category="doc">機箱更換工作流程： FAS50</block>
-  <block id="64e923d27d8f20b1c39e996784b889e8" category="paragraph">請依照下列工作流程步驟更換機箱。</block>
   <block id="d46dfcea882ba1b154e777304a052dbb" category="paragraph">更換機箱包括將磁碟機擋片，任何快取模組，控制器（使用電源供應器）和擋板從受損機箱移至新機箱，並將受損機箱換成與受損機箱相同機型的新機箱。</block>
-  <block id="f8ab9ad62f54fefd22c0d90bef055198" category="summary">如果需要硬體故障，請更換 FAS50 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
   <block id="b8642444bf8dd9a7f955ef4d53c42954" category="doc">更換控制器 - FAS50</block>
   <block id="38ebe64559125444b42957c926d9309b" category="paragraph">更換功能受損的 FAS50 控制器後<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="f47617ad2fb9ec35e7f692f630cf213c" category="summary">將儲存資源的控制權歸還更換控制器，讓 FAS50 系統恢復正常運作。回饋程序會因系統使用的加密類型而異：無加密，內建金鑰管理程式（ OKM ）加密或外部金鑰管理程式（ EKM ）加密。</block>
@@ -11126,8 +11044,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c8401b5380a5df9e9eb71687aa5cbf9f" category="doc">還原並驗證系統組態： FAS50</block>
   <block id="2c4ddbd4f1c1216183f0c5bd566a6763" category="paragraph">在您還原並驗證 FAS50 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="5f4615774f4a50ce4e2b4677a17e8e75" category="doc">控制器更換工作流程： FAS50</block>
-  <block id="fdfa46ff546c241fb59ecec0b3caccd1" category="paragraph">請依照下列工作流程步驟來更換控制器。</block>
-  <block id="72b60d2ae609d3cbfaf3bd48263c8ae5" category="summary">如果偵測到過度的可修正或不可修正的記憶體錯誤，請更換 FAS50 系統中的 DIMM 。此類錯誤可能會導致儲存系統無法開機 ONTAP 。更換程序包括關閉受損的控制器，將其移除，更換 DIMM ，重新安裝控制器，然後將故障零件退回 NetApp 。</block>
   <block id="83182c55d59f50af3178dc292ed9f781" category="doc">更換 DIMM - FAS50</block>
   <block id="b12e36ec5c23c2b057b2d1aff5582fd9" category="summary">當風扇故障或無法有效運作時，請更換 FAS50 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
   <block id="14c5b0713d5ac9cac842b3b9d9f1c6e9" category="doc">更換風扇模組： FAS50</block>
@@ -11188,7 +11104,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="58a9bceae382f9146952eb764c24eaa4" category="paragraph">將控制器連接到 FAS50 儲存系統的網路和機櫃之後，您就可以開啟機櫃和控制器的電源。</block>
   <block id="c5c54b199e1cae61ce9f1f8df4d64ad2" category="list-text">系統機箱正面的機櫃 ID 不會亮起。</block>
   <block id="21b1424b1e644de7e738b04ffc32d5fb" category="list-text">使用每個電源供應器上的固定裝置固定電源線。： fas50-a20-30-50 ！：</block>
-  <block id="64edc211ab70498201f3acbe712ec6a4" category="summary">準備安裝 FAS50 平台。</block>
   <block id="ba721f2e06c40252a394b51ea95142e3" category="doc">準備安裝 - FAS50</block>
   <block id="e20b24ffe711fbb4211c8b7f51f10949" category="paragraph">準備好安裝 FAS50 儲存系統，準備好讓網站準備就緒，打開包裝箱，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
   <block id="bf6f76951a411b87fee677094547f5d4" category="doc">安裝要求 - FAS50</block>
@@ -11196,19 +11111,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e56a8d138f62f4590eed5655df5c011f" category="paragraph">儲存系統最重可達 53.8 磅（ 24.4 公斤）。若要抬起儲存系統，請使用兩個人或液壓舉升設備。</block>
   <block id="9c48a8da7b0db1cca470b9010947185e" category="image-alt">FAS50 重量注意圖示</block>
   <block id="af0319de88f3ed43d4ee4fb8b670c558" category="paragraph">DS460C 機櫃最重可達 260.4 磅（ 181.1 公斤）。若要抬起機架，您可能需要最多五個人或液壓起重。請將所有元件保留在機架中（前後），以避免機架重量不均衡。</block>
-  <block id="7b153c13ff10bb5ce6fd48c3d66f3a2d" category="summary">將 I/O 模組新增至 FAS50 系統，以增強網路連線能力，並擴充系統處理資料流量的能力。</block>
   <block id="26f561223ab76238a005189688efb525" category="doc">新增I/O模組- FAS50</block>
-  <block id="74be49eeaaab5e0816ef02fff20cac31" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 FAS50 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
   <block id="c65fcc9bc376acee1b7dc4604e426776" category="doc">更換 I/O 模組： FAS50</block>
-  <block id="c296ba9a8987d716f7c569e3d75c754e" category="summary">維護 FAS50 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
   <block id="651d5528b03e26465b5710deab4b18d5" category="doc">硬體維護總覽： FAS50</block>
   <block id="0c2720f00fff80891cbfa57fc6b79952" category="paragraph"><block ref="0c2720f00fff80891cbfa57fc6b79952" category="inline-link-macro-rx"></block></block>
   <block id="c83ef2561162a9d1f0f9a046b5027a5f" category="paragraph">快取模組（ Flash Cache 模組）使用高速 SSD 來儲存經常存取的資料，以便更快擷取。</block>
-  <block id="99345c0fa01397fc4834fca8d86e6924" category="summary">當電池開始充電或故障時，請更換 FAS50 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
   <block id="ee30a6d4bd29182df174caa70edbbdf0" category="doc">更換 NV 電池 - FAS50</block>
-  <block id="8847128a12be40ae1b08a6092e93aa11" category="summary">當 FAS50 系統故障或故障時，請更換 FAS50 系統中的 AC 或 DC 電源供應器（ PSU ），以確保您的系統能持續獲得所需的電力，以便穩定運作。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。</block>
   <block id="bfae144eadfeb10d9deaca4eda74d8ca" category="doc">更換電源供應器- FAS50</block>
-  <block id="ac8a37f8b37d0c6890e6847a1c6e4f90" category="summary">更換 FAS50 系統中的實時時鐘（ RTC ）電池（通常稱爲幣形電池），以確保依賴準確時間同步的服務和應用程序保持正常運行。</block>
   <block id="cd9bb4588a19b474bb2eea89a70d69b9" category="doc">更換實時時鐘電池 - FAS50</block>
   <block id="d85e5cacacd757755e3d09416d2a8bf8" category="sidebar">FAS50</block>
   <block id="89c74f56d3077d699f62355b846ecb58" category="sidebar">FAS50 系統</block>
@@ -11255,7 +11164,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e7c2a2aadaeb3f0bbd622bc6dfdbba35" category="section-title">步驟 3 ：確認控制器狀態</block>
   <block id="97e9b99ec4fb1f882057ec866b408907" category="paragraph">未使用的 I/O 插槽應安裝消隱模組，以避免可能的散熱問題，並符合 EMC 法規。</block>
   <block id="bc8cd0b25c4f8f5afe020026e3d82314" category="paragraph">程序完成並顯示<block ref="fd27264bf07cac36017c79d5bc35af81" prefix=" " category="inline-code"></block>訊息。</block>
-  <block id="59b113844b84da51f785fb0828d66ba7" category="list-text">如果金鑰未成功還原，系統將會停止，並表示無法還原金鑰。畫面會顯示錯誤和警告訊息。重新執行恢復程序：</block>
   <block id="f3b6228c1cbd418b703785112e6450cf" category="list-text">如果出現受損控制器的提示，請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>以覆寫 _/etc/sssh / host_ECDSA_key_ 。</block>
   <block id="343b939e82f6c7bd4d0b3724a8118a24" category="list-text">如果您在步驟 1 中停用自動磁碟機指派，請手動指派磁碟機擁有權，然後視需要重新啟用自動磁碟機指派。</block>
   <block id="4a7998c6b7bf581d6118278f506a5818" category="list-text">從儲存系統正面卸下擋板。</block>
@@ -11423,18 +11331,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d939be8abe0645a186c5e2276ed7d76d" category="image-alt">移動系統管理模組</block>
   <block id="2ca01560515b774bbe8010d626eaa173" category="paragraph">在開啟控制器電源之前，請先開啟每個 NS224 機櫃的電源，並指派唯一的機櫃 ID ，以確保每個機櫃在設定中都能唯一識別，將筆記型電腦或主控台連接至控制器，然後將控制器連接至電源。</block>
   <block id="80fa214fde654e9ccd63d0efc1c1aa45" category="paragraph">儲存系統有兩個位置 LED ，每個控制器各一個。位置LED會持續亮起30分鐘。</block>
-  <block id="89aaebc504e24628ae2ed382d4f18074" category="paragraph">當有可用的空插槽或所有插槽都已滿時，您可以將 I/O 模組新增至 ASA A70 和 ASA A90 儲存系統。關於此工作</block>
   <block id="40f579c384e8adf65664e4d24345733d" category="paragraph">當 ASA A1K 儲存系統有可用的空插槽，或是所有插槽都已滿時，您可以將 I/O 模組新增至該儲存系統。關於此工作</block>
   <block id="f4eebdeb5b8898b082de73e6e4949845" category="list-text">本程序適用於配備 NSM100 或 NSM100B 模組的 NS224 機櫃。</block>
   <block id="3d30da9db64c70df76ae8eab8c37ddf1" category="list-text">如果您要更換 NS224 機櫃的 AC 電源供應器，可以觀看下列動畫，在開始之前先熟悉程序。動畫顯示 NS224 與 NSM100 模組，但 NSM100B 模組的機櫃步驟相同。</block>
   <block id="e772ad168b6f97f132982a96392cd046" category="example-title">更換 NS224 的 AC 電源供應器</block>
   <block id="0dcc8efe101bb5e6350d650ce519cbfa" category="video-title">在 NS224 機櫃中熱交換 AC 電源供應器</block>
-  <block id="40f990da8c57e47c36081d4d612c9817" category="list-text">從 PSU 上拔下電源線，然後將控制器模組從系統前部拉出幾英寸。</block>
-  <block id="193d35b8a9ac476b4099d10d04a128a6" category="list-text">輕輕地將控制器模組重新安裝並鎖定在系統前面。</block>
-  <block id="c65e5ab2ccd40a14e7dbaad19aa0c504" category="list-text">從控制器上拔下 PSU 的電源線，然後將系統前部的控制器模組拉出幾英寸。</block>
-  <block id="2a111f85cafe27d96d705414a1545f34" category="list-text">將電源線重新插入 PSU，然後輕輕地重新安裝並鎖定係統前部的控制器模組。</block>
   <block id="fabbb288606bc55258a9e8e717fe5213" category="list-text">重新連接控制器。</block>
-  <block id="a97d4703d17abbeceacc3edae4e8fdc4" category="list-text">如果您尚未接地、請正確接地。從 PSU 上拔下電源線，然後將控制器模組從系統前部拉出幾英寸。</block>
   <block id="fda9664b829519d7882c4d0260276790" category="list-text">拔下控制器的 PSU。</block>
   <block id="9ea5392d65d4b774209903c12c0b7a2c" category="list-text">將電源線插入電源供應器。一旦電源恢復，控制器就會重新啟動。</block>
   <block id="b4f9b4ed219fb6f91477aff5ebef3453" category="admonition">如果您有直流電源，請將電源塊重新連接到電源。</block>
@@ -11466,7 +11368,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c2de4d4510a9a64facdf71ce04df1256" category="doc">在啟動媒體上還原 ONTAP 映像 - ASA C30</block>
   <block id="ea8fd5bd6c26f06b31f96391b253c778" category="summary">ASA C30 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換程序包括移除控制器模組，移除受損的開機媒體，安裝更換的開機媒體，然後將 ONTAP 映像傳輸至更換的開機媒體。</block>
   <block id="5daa76a4aa0a675c1ff837ebfd9193de" category="doc">更換開機媒體 - ASA C30</block>
-  <block id="bd9df02f270ea2cb9436c0038ef3b34a" category="summary">在更換 ASA C30 儲存系統中的啟動媒體之前，請確保滿足成功更換所需的必要要求和注意事項。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
   <block id="9711de828f499165b267f4aded9c85e0" category="doc">更換開機媒體的需求 - ASA C30</block>
   <block id="af64ca3ab36eca3c94582cbfadb2bb6d" category="summary">透過查看更換需求、關閉受損控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換 ASA C30 儲存系統中的啟動媒體。</block>
   <block id="9e4d05a14fde717f129944022ed99861" category="doc">開機媒體更換工作流程 - ASA C30</block>
@@ -11524,7 +11425,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5ff448003ebaf80171d13e6e73920334" category="section-title">2025 年 5 月</block>
   <block id="5a4e5cd19493dae0777edfcd18341c6e" category="paragraph">全新ASA C30系統將高效能、智慧、全面的資料管理功能擴展到更多客戶和工作負載。</block>
   <block id="4b59a84869b0ee3437aa8c8b9dd4c786" category="sidebar">ASA C30 系統</block>
-  <block id="527a051a36c26b816e479ad211bc96ea" category="sidebar">ASA C30 維護</block>
   <block id="63a52a2f30db6359822003e267bb9514" category="sidebar">ASA C30 開機媒體</block>
   <block id="b4a3b44dc7350cb88f59a4a2eb7dda1d" category="sidebar">ASA C30 機箱</block>
   <block id="cb330090f109eb2fa5d8e0cb697b8627" category="sidebar">ASA C30 控制器模組</block>
@@ -11599,13 +11499,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a54c219a955221bc0586ab22f8a07401" category="image-alt">更換RTC電池</block>
   <block id="14d4a75ecbe13082ebd840dc7d091f2c" category="section-title">步驟 4：安裝控制器和驅動器</block>
   <block id="7aa6db479f57ead7ac39225f410bdf2d" category="paragraph">將控制器和磁碟機安裝到替換機箱中並重新啟動控制器。</block>
-  <block id="3dbc14ba753f9b6deb52fc17f8c85cec" category="paragraph">如果硬體故障需要，請更換 AFF A20 ， AFF A30 或 AFF A50 系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
   <block id="fde22ae5f3a1cc39c61853ffe9a68675" category="paragraph">建立 ONTAP 叢集連線。對於無交換器叢集，請將控制器彼此連接。對於交換式叢集，請將控制器連接至叢集網路交換器。</block>
   <block id="4a1975a1a386f2f3f28c4859f5ea4976" category="paragraph">叢集/HA 佈線範例展示了常見的配置。</block>
   <block id="8c3a29fca49d6a772e0a2f8ab6ab7280" category="paragraph">主機網路佈線範例展示了常見的配置。</block>
-  <block id="6ce95ae69a1e0ed801b4369491228162" category="paragraph">如果硬體故障需要，請更換 ASA A20 ， ASA A30 或 ASA A50 系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
   <block id="d756679882bcf80d5a80fd42020d0f25" category="paragraph">當硬體故障需要更換 ASA C30 儲存系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
-  <block id="72dc238e73081e826d88e29df24b4c58" category="paragraph">當硬體故障需要時，請更換 AFF C30 或 AFF C60 系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
   <block id="149eed3e03e259c4e52b1de45a4fe3e9" category="paragraph">若要更換磁碟架中的磁碟機抽屜，您可以暫停整個儲存系統（HA 對），這樣可以保留磁碟架上的資料聚合。或者，您可以保持 HA 對正常運行，但這需要您將資料聚合中的所有資料移至磁碟架的磁碟機上，然後使其離線並刪除這些資料聚合。如果磁碟架包含根聚合，則必須暫停 HA 對。</block>
   <block id="12e16a41f9ae5c97288e4e9e78b0bbf6" category="list-text">將所有資料從位於機架上所有磁碟機上的資料聚合中移動。</block>
   <block id="18de2c69e2059bfb4397c266ca003000" category="list-text">如果啟用了AutoSupport ，則恢復（取消抑制）自動案例建立：+</block>
@@ -11713,7 +11610,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3d64f9d659d620b82ee84b480edfe77a" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A1K</block>
   <block id="a4171598a9b6537fe8fa298ad497f7f6" category="inline-link-macro">啟動媒體 - 自動恢復</block>
   <block id="2b43a2491d5babfc034a1b39308b0d39" category="paragraph"><block ref="2b43a2491d5babfc034a1b39308b0d39" category="inline-link-macro-rx"></block></block>
-  <block id="68cd65e7f6fb397f8e4d523060b22038" category="paragraph">啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，系統使用這些文件從配對節點啟動映像，並自動執行相應的啟動選單選項，以將啟動映像安裝到已取代的啟動媒體上。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用<block ref="739428bb763fc45faeb1ae97255a3f48" category="inline-link-macro-rx"></block> 。</block>
   <block id="867c47462b7dbbde23368654369cdfb2" category="inline-link-macro">啟動媒體-手動恢復</block>
   <block id="f4855f83eb4f1d3ed29ac13e5aba3470" category="paragraph"><block ref="f4855f83eb4f1d3ed29ac13e5aba3470" category="inline-link-macro-rx"></block></block>
   <block id="b214a7d2f434291d180eb08d9e110707" category="paragraph">啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，系統使用這些文件從 USB 隨身碟啟動映像並從合作夥伴節點恢復配置。</block>
@@ -11723,7 +11619,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2d9fb4844fc0b69f98aad7502cc18530" category="doc">檢查手動啟動媒體復原的加密支援 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="e7b34b1c7feda8baafad81324e57fd6e" category="summary">在AFF A20、 AFF A30 或AFF A50 儲存系統中的替換啟動媒體上恢復加密，以確保持續的資料保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
   <block id="1eeb73368d7d13ce8021f673b756e9c8" category="doc">手動啟動復原後復原加密金鑰 - AFF A20、 AFF A30 和AFF A50</block>
-  <block id="a8f8612ae35390c806cb7ad773e21db1" category="summary">在AFF A20、 AFF A30 或AFF A50 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原設定。</block>
   <block id="4035b22f65cbe15429c787946383c31f" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="c2ab3aa2f070978192f07633b66b611b" category="paragraph">在AFF A20、 AFF A30 或AFF A50 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點還原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成相應的步驟來還原它。</block>
   <block id="6bc3fdb5c0eb98749b03f303f55be559" category="summary">在AFF A20、 AFF A30 或AFF A50 系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟手動啟動復原映像以從合作夥伴節點復原設定。</block>
@@ -11731,24 +11626,19 @@ SFP+ （目標 / 啟動器）</block>
   <block id="53af8ddc00e8892374749fd736d33e94" category="paragraph">在AFF A20、 AFF A30 或AFF A50 儲存系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟手動啟動復原映像以從合作夥伴節點復原設定。</block>
   <block id="94012bfc813c3d26adc1addcef6ab592" category="summary">AFF A20、 AFF A30 或AFF A50 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後重新安裝控制器模組。</block>
   <block id="d019cb3b7a1462ec312533167aec6b60" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF A20、 AFF A30 和AFF A50</block>
-  <block id="540634f513fa86eba512f6c5e20b1edc" category="summary">在更換AFF A20、 AFF A30 和AFF A50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
   <block id="e7dedd3a598740ef3cd74469734f59c5" category="doc">自動啟動媒體復原的要求 - AFF A20、 AFF A30 和AFF A50</block>
-  <block id="aa41cd0d7cf0d63201c4beb4c77376b7" category="paragraph">在更換AFF A20、 AFF A30 和AFF A50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
   <block id="e8ba12b1b73cf784b959f0a4e5a136f8" category="summary">在更換AFF A20、 AFF A30 或AFF A50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您是否擁有正確的替換啟動裝置。</block>
   <block id="488940eae252d9af0420e9fb6b678643" category="doc">手動啟動媒體復原的要求 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="f04b4c89a04c5e50fe7caa50409018a7" category="summary">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A20、 AFF A30 或AFF A50 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
   <block id="84e583a8ac85547ba188e3068ccf50c9" category="doc">啟動媒體自動復原工作流程 - AFF A20、 AFF A30 和AFF A50</block>
-  <block id="cf842e8407105a2befd8c87238a2cb8f" category="summary">手動恢復啟動映像需要使用 USB 驅動器將ONTAP重新安裝到AFF A20、 AFF A30 或AFF A50 系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行復原並將系統還原到運作狀態。</block>
   <block id="f63aa4c8dd37ee2cb1da956c4a1fe384" category="doc">啟動媒體手動復原工作流程 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="2bd8342b8bfd6e69a169c6f9ed55a700" category="paragraph">從受損的控制器中移除故障的啟動媒體並安裝替換的啟動介質，然後使用 USB 隨身碟傳輸ONTAP映像。</block>
-  <block id="9efbd4f23571ff1c72b692852caec4eb" category="summary">AFF A20、 AFF A30 或AFF A50 系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
   <block id="60763c15a6f132eceddee5c6f307b243" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="afbea307d435b66173b7743a9b0ac265" category="summary">關閉AFF A20、 AFF A30 或AFF A50 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="0c70a1337f1b10f3de78fb71ecb82047" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="c48758516887cabfc7aa631065bbbf52" category="summary">關閉AFF A20、 AFF A30 或AFF A50 儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="63e126797305c7f8c49721deaec6f6c9" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="3c199c593e067fa1f51f90da936eb18d" category="paragraph">在您的AFF A20、 AFF A30 或AFF A50 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。</block>
-  <block id="bcd8431d9578c377430b244dbafbcbdf" category="summary">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障時，您可以在AFF A20、 AFF A30 或AFF A50 儲存系統中熱插拔該模組。</block>
   <block id="6b232c9d9431de2948d224ac1438ed55" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="ae0a8348139fa13812ce5b8381566578" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在AFF A20、 AFF A30 或AFF A50 儲存系統中熱插拔該模組。</block>
   <block id="4df4a7f18003a7a352929815909d2724" category="inline-link-macro">更換 I/O 模組程序</block>
@@ -11806,14 +11696,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d55169feb27a15b4ac62b82359989d13" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A70和AFF A90</block>
   <block id="2e4843ddf40683ca1c00244d80d3270c" category="paragraph">在更換ASA A70 或ASA A90 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。</block>
   <block id="957a8300cdf9b41cbbe3e3e196ad4dbb" category="paragraph">在更換ASA A1K 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。</block>
-  <block id="806591a31f614d7e4e57bb3b45c037f3" category="summary">ASA A20、 ASA A30 或ASA A50 系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後重新安裝控制器模組。</block>
-  <block id="d94bfb1c61ca2b7991476a3e434aee0c" category="summary">在更換ASA A20、 ASA A30 或ASA A50 儲存系統中的啟動媒體之前，請確保滿足成功更換所需的要求和注意事項。這包括驗證您是否擁有正確的替換啟動介質，確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM) 是否已啟用。</block>
-  <block id="a96ae053dc9ad160922333528a5d3abd" category="summary">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障時，您可以在ASA A20、 ASA A30 或ASA A50 儲存系統中熱插拔該模組。</block>
   <block id="ca6ff5e2a18f563b4e6acadc68d46f64" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - ASA A20、 ASA A30 和ASA A50</block>
   <block id="6f5a8e68f677f939bbd426fa307f6c3c" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在ASA A20、 ASA A30 或ASA A50 儲存系統中熱插拔該模組。</block>
-  <block id="c23f7f672ee68d0408de4bf7050428ff" category="summary">ASA A20、 ASA A30 和ASA A50 系統可靈活擴充或更換 I/O 模組，進而增強網路連線和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
   <block id="7cfc66ffab0e5dcaf35aec6c1f45c0e4" category="paragraph">若要使用此流程，您的儲存系統必須執行ONTAP 9.17.1 或更高版本，並且符合特定的系統要求。</block>
-  <block id="267b034862e77ecf585e0f10c53a998d" category="summary">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障時，您可以在ASA C30 儲存系統中熱插拔該模組。</block>
   <block id="7e204d8c50c3b311f5f084b18f60fe42" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - ASA C30</block>
   <block id="ae9ac95e753aa6e11b1f186d2894bfbe" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在ASA C30 儲存系統中熱插拔該模組。</block>
   <block id="7e40ba54f9478efaeb9f51563cb1f923" category="paragraph">ASA C30 儲存系統可靈活擴充或更換 I/O 模組，進而增強網路連線和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
@@ -11823,30 +11708,23 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e23f2de0ece503b35ba6f52e338d6a27" category="doc">檢查手動啟動媒體復原的加密支援 - AFF C30 和AFF C60</block>
   <block id="1df39bd3d8f1c2e8bea2ef989716e240" category="summary">在AFF C30 或AFF C60 儲存系統中恢復替換啟動媒體上的加密，以確保持續的資料保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
   <block id="cd868f355365bf234349f566b221faae" category="doc">手動啟動復原後復原加密金鑰 - AFF C30 和AFF C60</block>
-  <block id="a727269c168f6eb55eaea05ce540c597" category="summary">在AFF C30 和AFF C80 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原設定。</block>
   <block id="779861620d3c98deea6a19d7bf5160d6" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF C30 和AFF C80</block>
   <block id="a1b019a9e41e2de604059ed55a490caf" category="paragraph">在AFF C30 和AFF C80 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原設定。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
-  <block id="5d1ae215ad5b8c95646c824856162d19" category="summary">在AFF C30 或AFF C60 系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟手動啟動復原映像以從合作夥伴節點復原配置。</block>
   <block id="be455206b22269bf76a1ee5b8d511156" category="doc">從 USB 隨身碟手動恢復啟動媒體 - AFF C30 和AFF C60</block>
   <block id="103e9425b904ccdc5c06bfd70bca3e6e" category="paragraph">在AFF C30 或AFF C60 儲存系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟手動啟動復原映像以從合作夥伴節點復原設定。</block>
   <block id="6810a823f37a2d12b68ed853581ed86a" category="summary">AFF C30 或AFF C60 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後重新安裝控制器模組。</block>
   <block id="8b37242865b14a049e47c5f7ae65c301" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF C30 或AFF C60</block>
-  <block id="6206e82ebf05c82d827ec8c5f2ddc1c1" category="summary">在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。</block>
   <block id="8d0c879e2bb5c5a295382e679f310c76" category="doc">自動啟動媒體復原的要求 - AFF C30 和AFF C60</block>
-  <block id="72623a0df6e1d24e6a066243e3967f9a" category="paragraph">在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
   <block id="2698324b3710e921ad00bae35bf3159f" category="summary">在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您是否擁有正確的替換啟動裝置。</block>
   <block id="319064cbc4bc350c356a6cd21bcbecc0" category="doc">手動啟動媒體復原的要求 - AFF C30 和AFF C60</block>
   <block id="f8afa19df6a77c53c4b632f141408f44" category="summary">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF C30 或AFF C60 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
   <block id="6a2351037d058fe87d601cf41ef35ef1" category="doc">啟動媒體自動復原工作流程 - AFF C30 和AFF C60</block>
-  <block id="40d65b4427fac5291424fceff0a0d9f9" category="summary">手動恢復啟動映像需要使用 USB 隨身碟將ONTAP重新安裝到AFF C30 或AFF C60 系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用此準備好的 USB 驅動器執行恢復操作，將系統恢復到正常運作狀態。</block>
   <block id="54083dfd42bf9252b8d704f0efa331dc" category="doc">啟動媒體手動復原工作流程 - AFF C30 和AFF C60</block>
-  <block id="2adc3bbeb7e295ff4e73824f2959a3d8" category="summary">AFF C30 或AFF C60 系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
   <block id="25744a6b6b7e871fc578849c3ff28507" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF C30 和AFF C60</block>
   <block id="c2e4258473f416d64de4e0134024663a" category="summary">關閉AFF C30 或AFF C60 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="7976355e51dac60c58e55293f936de38" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF C30 和AFF C60</block>
   <block id="f8285106d469d3b0c42b570cd2305d2f" category="summary">關閉AFF C30 或AFF C60 儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="66459e7abffb3c94a92d570450f1c4f2" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF C30 和AFF C60</block>
-  <block id="837cf35636e5753ce5accd4ec1c03e53" category="summary">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障時，您可以在AFF C30 或AFF C60 儲存系統中熱插拔該模組。</block>
   <block id="1b0c016612713903a3c497b1aba4bbe6" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - AFF C30 和AFF C60</block>
   <block id="257a07574b8e17c7ad551a78350bbfb1" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在AFF C30 或AFF C60 儲存系統中熱插拔該模組。</block>
   <block id="ac8f3969a316894b12e15fbd022b3e6b" category="summary">AFF C30 和AFF C60 儲存系統可靈活擴充或更換 I/O 模組，進而增強網路連接性和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
@@ -11923,9 +11801,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="733a2086a888387fac4843ff5b4e52fd" category="paragraph">在 FAS50 儲存系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟手動啟動復原映像，以從合作夥伴節點復原設定。</block>
   <block id="c9510a6844fbc0b8f73e9cc86ff16945" category="summary">FAS50 儲存系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後重新安裝控制器模組。</block>
   <block id="80c35323109583f1a90985d3c42d8c31" category="doc">更換啟動介質以實現自動啟動恢復 - FAS50</block>
-  <block id="5e33f0338bd0d6e631ee0168fbfc2451" category="summary">在更換AFF A20、 AFF A30 和AFF A50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。</block>
   <block id="6eaaade29405ead184f62f1a496fcebe" category="doc">自動啟動介質恢復的要求 - FAS50</block>
-  <block id="bc6dfa31ccf7a390e89aad3dd8ceb65a" category="paragraph">在更換 FAS50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要條件。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
   <block id="5cfd95395e21d67478f134244d8db986" category="summary">在更換 FAS50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要條件。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
   <block id="345b1f9ea267a10e1bd2c14d69119d9a" category="doc">手動啟動介質恢復的要求 - FAS50</block>
   <block id="639d9ae3f98def6dce1b8dcdc37b64d2" category="summary">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它會使用合作夥伴節點上的啟動映像在 FAS50 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
@@ -11938,10 +11814,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b2293480756f9ad39fc82ed5d46ca4d3" category="doc">關閉控制器以進行自動啟動媒體恢復 - FAS50</block>
   <block id="999a50283687ab52206373131390978e" category="summary">關閉 FAS50 儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="95f11137222c4d00467bd8e0ffa768dd" category="doc">關閉控制器以進行手動啟動媒體恢復 - FAS50</block>
-  <block id="63af1166159076af1736a02ce80cbdd3" category="summary">叢集和 HA I/O 模組支援叢集互連和高可用性。當模組發生故障時，您可以在 FAS50 儲存系統中熱插拔該模組。</block>
   <block id="5b013473b3a0ecde061a431e92574ae9" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - FAS50</block>
   <block id="6cae912dff84ae6240c315ddaaf28349" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在 FAS50 儲存系統中熱插拔該模組。</block>
-  <block id="1db9aadbce6a6b3c04d462fe3f9bbd95" category="summary">FAS50 系統可靈活擴充或更換 I/O 模組，進而增強網路連接和效能。在升級網路功能或修復故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
   <block id="50021c9aa8d3585a4c703c3363cab114" category="paragraph">維護 FAS50 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
   <block id="8eba03c70758101e68e6391b4be43740" category="paragraph">維護過程假定 FAS50 儲存系統已部署為ONTAP環境中的儲存節點。</block>
   <block id="49be3e0ad5188b850535280e2d521d5f" category="doc">冷更換架 - DS212C、DS224C 和 DS460C</block>
@@ -12090,7 +11964,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c839598e8cd5c29bde6c617cf440daeb" category="list-text">進入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>當您看到提示「您是否要停用自動回饋？」時</block>
   <block id="b17710a831db85286b790ec982422585" category="list-text">進入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>當您看到提示“您想繼續嗎？”</block>
   <block id="b3a29894ebbd7743077b200ddcd67c99" category="paragraph">例如，以下命令準備移除節點 2（受損控制器）上插槽 4 中的模組，並顯示可以安全移除的訊息：</block>
-  <block id="4bdafd7f42b0b57fc4b68e8b3bb68636" category="paragraph">要使用此流程，您的儲存系統必須滿足所有要求。閱讀注意事項以了解該過程的更多背景資訊。</block>
   <block id="3a06445388ea9f45380e61bdcd8e390a" category="admonition">如果您的儲存系統不符合所有要求，則必須使用<block ref="9f7a817607c1343a4577e0eb53bffb0f" category="inline-link-macro-rx"></block>。</block>
   <block id="d5289a7c7a439993123bceae28506164" category="list-text">發生故障的 I/O 模組必須是插槽 4 中的叢集和 HA I/O 模組，並且必須將其替換為等效的叢集和 HA I/O 模組。您無法變更 I/O 模組類型。</block>
   <block id="8a1240d7278991deb34efd819884bfe7" category="paragraph">要熱插拔模組，您需要確保您的儲存系統符合程式要求，準備好插槽 4 中的儲存系統和 I/O 模組，將故障模組熱插拔為等效模組，使替換模組聯機，將儲存系統恢復正常運行，然後將故障模組傳回NetApp。</block>
@@ -12105,4 +11978,139 @@ SFP+ （目標 / 啟動器）</block>
   <block id="10fdff00cbd8dc0b562f7c384ead00e8" category="paragraph">////2025 年 7 月：ontap-systems 370：刪除快取模組，因為本平台不支援該模組。</block>
   <block id="e30ec3a146d2f46cfcab61e84ddafe94" category="doc">I/O 模組維護概述 - AFF C30 和AFF C60</block>
   <block id="99479e0da4b4c4c75f054c2458b99405" category="doc">I/O 模組維護概述 - FAS50</block>
+  <block id="f8d23415d8ca50b5a3f9979fcbd75e20" category="list-text">從 PSU 上拔下電源線。</block>
+  <block id="87faf0594e9a4ac1e4ad3b090942d772" category="list-text">將電源線重新插入 PSU。</block>
+  <block id="0b1da60af00d4b1a01ca279b690d1859" category="paragraph">更換 FRU 後，必須將電源線重新插入 PSU 來重新啟動控制器模組。</block>
+  <block id="4f27afe411c647fb960721a1f0b3c4cd" category="list-text">從控制器 PSU 上拔下電源線。</block>
+  <block id="7a9c239999a1f71d8b0a2953ac1cefd9" category="paragraph">更換組件後，必須將電源線重新插入 PSU 以重新啟動控制器模組。</block>
+  <block id="8c3db079d56ac3b2afd0f08ec5c5f0b0" category="list-text">刪除系統管理模組</block>
+  <block id="131d592db319e211a4ce11e5d1e71151" category="paragraph">您必須驗證適配器清單和所有系統磁碟的路徑。</block>
+  <block id="8ca9e1bcafc96fa83d21fdd083213830" category="list-text">如果控制器處於維護模式（顯示<block ref="2cf8a3bab83c4d2618c18eeeca9ebc98" prefix=" " category="inline-code"></block>提示符號），退出維護模式並進入 LOADER 提示符號：</block>
+  <block id="ab8a21779e7d2f5935dd0a75d2fcb9c1" category="list-text">等到更換模組的控制器控制台上顯示等待交還訊息，然後從健康的控制器驗證是否已自動指派新的合作夥伴系統 ID：</block>
+  <block id="751035e5db88d172e881299c202d9b13" category="paragraph"><block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix="" category="inline-code"></block></block>
+  <block id="4d67a97a7a4bdaa068aca8964daf6bc7" category="paragraph">在命令輸出中，您應該會看到一則訊息，表示受損控制器上的系統 ID 已更改，並顯示正確的舊 ID 和新 ID。在下列範例中，節點 2 已完成替換，並具有新的系統 ID 151759706。</block>
+  <block id="b0ca4008db9ade329bdaa07eb18abb6e" category="list-text">從健康的控制器中，歸還被替換的控制器的儲存空間：+<block ref="06b377d178eed8a76119920cc708363f" prefix=" " category="inline-code"></block></block>
+  <block id="c37d3ca34f959c63ba76b936b5b8ac56" category="inline-link">手動交還命令</block>
+  <block id="08e4659b0eb57c9cea96cc6dd1d74831" category="paragraph">有關詳細信息，請參閱<block ref="31dcb12c2767b4c2bc8af867d9122aa5" category="inline-link-rx"></block>推翻否決。</block>
+  <block id="9c34e1a48e911178576bdbaa330d5f5a" category="list-text">驗證磁碟是否已正確分配：</block>
+  <block id="2d5a880ef52315e5f0831507c7bf8597" category="paragraph"><block ref="a9fae81f0c924f3a581cf23a9c8b11b1" prefix="" category="inline-code"></block></block>
+  <block id="2e02c080662f8fd550785b87be3c1144" category="list-text">驗證每個控制器是否存在預期的磁碟區：</block>
+  <block id="5a4b5ac8f772853d6afb81c8553dbb15" category="paragraph"><block ref="6e33357af78f433ecca9de8b2c95153d" prefix="" category="inline-code"></block></block>
+  <block id="977b203861cb3c2c588a4142b48b05c2" category="paragraph">使用適當的選項更換NVRAM模組或NVRAM DIMM。</block>
+  <block id="5b3427657c6bda221bdcad9ffdc6d415" category="list-text">恢復自動交還：</block>
+  <block id="40ad8facc59095e1b75e847852476f45" category="list-text">如果已觸發AutoSupport維護窗口，請結束它：</block>
+  <block id="5b7a1b6d227f6a51cfb42a0979bed262" category="list-text">對於 OKM，您需要叢集範圍的密碼以及備份資料。</block>
+  <block id="1beb4a264b8dd81f525684704d7292e4" category="paragraph">節點進入啟動選單並運行：</block>
+  <block id="c60afca561cf690c0f928b4577cc30ea" category="list-text">出現提示時輸入以下內容：</block>
+  <block id="c085666be46924eb3b846eef9ff3e4a3" category="list-text">密碼</block>
+  <block id="230fe3806ff8b04e1519d7151217ceb2" category="list-text">當提示確認時再次輸入密碼</block>
+  <block id="149d75e74e184ea98322d4a1293983b0" category="list-text">板載密鑰管理器的備份數據</block>
+  <block id="37760bdbf5f83e8f2e69ad13fdf032a8" category="example-title">顯示密碼和備份資料提示的範例</block>
+  <block id="68f3f4229fb38200453da13af034b117" category="paragraph">ONTAP 9.16.1 及更高版本</block>
+  <block id="deaaad9f1b5f7aef98666a194b63f4b6" category="paragraph">您可以使用以下方式從夥伴節點檢查叢集 UUID<block ref="97c6b1d9f961d2fb9b8a976962d5c444" prefix=" " category="inline-code"></block>命令。</block>
+  <block id="9d8a27b9a34ff479042a266ec7ac6724" category="paragraph">您需要輸入：</block>
+  <block id="f4dc0474a9b4425a339efb683b7dd915" category="list-text">連接埠的 IP 位址</block>
+  <block id="b3d28b344c55260439945f6caed47e6c" category="list-text">連接埠的網路遮罩</block>
+  <block id="0471579d34255a0d9b6386ea78d8fd44" category="list-text">預設網關的 IP 位址</block>
+  <block id="240de215578701a602c7ee68dfdcb425" category="list-text">如果你看到<block ref="ac676b9b4d7ad5923ab3fe5f9ae60aa8" prefix=" " category="inline-code"></block>在輸出中，EKM 配置已成功恢復。</block>
+  <block id="42701a1ff76597ba7c5638bce0d2af9b" category="paragraph">該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。轉至步驟 d。</block>
+  <block id="0c387b1b026e4f3547ed2f50da22a39e" category="list-text">如果密鑰未成功恢復，系統將停止並指示無法恢復密鑰。顯示錯誤和警告訊息。您必須重新執行復原過程：</block>
+  <block id="1c27eb77b57ec03853c37b1f761a36dc" category="list-text">如果您想要手動指派替換磁碟機的磁碟機所有權，則需要停用自動磁碟機指派（如果已啟用）。</block>
+  <block id="9fb832dec5cd2e7d518230b1cfb70020" category="list-text">如果要更換另一個驅動器，請重複步驟 3 至 7。</block>
+  <block id="9b36684b5751c1f43c35d80933024e6d" category="paragraph"><block ref="e546c7c0f19a803f32f47d3907849b62" prefix="" category="inline-code"></block></block>
+  <block id="6d81f890ae97b7a0ebc76c301009ec65" category="paragraph">接觸<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要 RMA 號碼或更換程式的額外協助。</block>
+  <block id="e55cf153efde1bb25a6c8b4b2a77e3a3" category="paragraph">聯絡技術支援<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要 RMA 號碼或更換程式的額外協助。</block>
+  <block id="d598f43c29dbfb57d8a433d03113c67f" category="paragraph">如何更換磁碟取決於磁碟機的使用方式。如果啟用了 SED 身份驗證，則必須使用<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。這些說明描述了更換 SED 之前和之後必須執行的附加步驟。</block>
+  <block id="eb03cbc9aa8eb5663aa471a07b6db216" category="list-text">確保您的平台支援替換的驅動器。看<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
+  <block id="fddb24d381975e775beadef5c508bb6a" category="paragraph">若要使用此流程，請確保您的儲存系統符合所有要求。</block>
+  <block id="28c97d58702fb49d4aa748d2804f3821" category="paragraph">更換 RTC 電池、插入控制器並開啟電源進行第一次 BIOS 重設後，您將看到以下錯誤訊息：</block>
+  <block id="2f34e43a31489ab6aae443176e8154f6" category="paragraph"><block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix="" category="inline-code"></block></block>
+  <block id="fbd1b3bb67ce5ea92711c37024536ea7" category="paragraph"><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix="" category="inline-code"></block></block>
+  <block id="214a7bc84d74469ddf73be3fcd648cdf" category="paragraph">這些訊息是預期的，您可以繼續此過程。</block>
+  <block id="5029f046fcbb7475d7247b1d72b04def" category="list-text">使用<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block>命令。  + 如果您的系統在啟動選單處停止，請選擇<block ref="6390b97950613f587497b26c5800a6d6" prefix=" " category="inline-code"></block>並在出現提示時回覆 _y_，然後按 _Ctrl-C_ 啟動到 LOADER</block>
+  <block id="83c5cc947a538e7c6830a86dad32c5e6" category="paragraph">啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，系統會從合作夥伴節點擷取啟動映像，並自動執行對應的啟動功能表選項以在取代啟動媒體上安裝映像。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用<block ref="739428bb763fc45faeb1ae97255a3f48" category="inline-link-macro-rx"></block> 。</block>
+  <block id="fa67c19fe81d95264be5c7759ed6afd8" category="summary">在更換AFF A20、 AFF A30 和AFF A50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M（扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="08c58bb79904586b0b84d9a778dc8107" category="summary">啟動映像的手動復原涉及使用 USB 磁碟機將ONTAP重新安裝到AFF A20、 AFF A30 或AFF A50 儲存系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行恢復操作，將系統恢復到正常運作狀態。</block>
+  <block id="dc79fe320ee45a815e863d895752a274" category="summary">AFF A20、 AFF A30 或AFF A50 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
+  <block id="bde33c2c67d772b35ad0626f8cbd8254" category="summary">當硬體故障需要更換AFF A20、 AFF A30 或AFF A50 儲存系統的機箱。更換過程包括移除控制器和電源裝置 (PSU)、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="357b430d8171ba2cd2ef98dee7df36ee" category="paragraph">當硬體故障需要更換AFF A20、 AFF A30 或AFF A50 儲存系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="88a6ec6d39a1fe20b418b3c1ec40cd1d" category="summary">在更換AFF A20、 AFF A30 或AFF A50 儲存系統的機箱之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他組件是否正常運行，以驗證您是否擁有正確的替換底盤以及必要的工具。</block>
+  <block id="75887c274cb165e4b1c96890f02f0996" category="summary">當硬體故障需要更換AFF A20、 AFF A30 或AFF A50 儲存系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="2580891b2fea72dbc8d92a978522aef3" category="summary">將儲存資源的控制權傳回給取代控制器，以便您的AFF A20、 AFF A30 或AFF A50 儲存系統可以恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密、板載金鑰管理員 (OKM) 加密或外部金鑰管理員 (EKM) 加密。</block>
+  <block id="cb3dc45ab8a4a2a6f13973e27edcfe48" category="paragraph">將儲存資源的控制權傳回給取代控制器，以便您的AFF A20、 AFF A30 或AFF A50 儲存系統可以恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密、板載金鑰管理員 (OKM) 加密或外部金鑰管理員 (EKM) 加密。</block>
+  <block id="ddfee45d1a32cc77764ff9a18684e3f6" category="summary">在更換AFF A20、 AFF A30 或AFF A50 儲存系統中的控制器之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="8f5c315cb49801079466207b737cd908" category="summary">若要完成AFF A20、 AFF A30 或AFF A50 儲存系統的控制器更換，請先還原NetApp儲存加密配置（如有必要）並在新控制器上安裝所需的授權。接下來，確認邏輯介面 (LIF) 正在向其主連接埠報告並執行叢集健康檢查。最後，註冊新控制器的序號，然後將發生故障的零件退回給NetApp。</block>
+  <block id="a9ca4769f70c563603b453d3077d3ade" category="summary">如果偵測到過多可修正或無法修正的記憶體錯誤，請更換AFF A20、 AFF A30 或AFF A50 儲存系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="678ae99b51cf5b81ebb6118b25cec8eb" category="summary">當磁碟機發生故障或需要升級時，請更換AFF A20、 AFF A30 或AFF A50 儲存系統中的磁碟機。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="200870e0e2e422e7b3c67d50a0f45c5b" category="summary">當風扇發生故障或無法有效運作時，請更換AFF A20、 AFF A30 或AFF A50 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。</block>
+  <block id="6237db28aa5e0cd0c98deb9558431563" category="paragraph">啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，系統會從合作夥伴節點擷取啟動映像，並自動執行適當的啟動功能表選項以在取代啟動媒體上安裝映像。</block>
+  <block id="e30f5d9464fa73eb93951dff9971fb1e" category="summary">當電池開始失去電量或故障時，請更換AFF A20、 AFF A30 或AFF A50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="886d953d9b80582fca46a0bc055864db" category="summary">當AFF A20、 AFF A30 或AFF A50 儲存系統中的交流或直流電源裝置 (PSU) 發生故障或故障時，請更換此電源裝置，以確保系統繼續接收穩定運作所需的電力。更換過程包括將故障的 PSU 與電源斷開、拔除電源線、更換故障的 PSU，然後將其重新連接到電源。</block>
+  <block id="5e7f9e097befc5c074728786c725dc8c" category="summary">更換AFF A20、 AFF A30 或AFF A50 儲存系統中的即時時鐘 (RTC) 電池（通常稱為紐扣電池），以確保依賴準確時間同步的服務和應用程式保持運作。</block>
+  <block id="8c7e39141abf425f327a293b74aa70b6" category="section-title">步驟 3：更換風扇</block>
+  <block id="4b6424813979635fd3c46b4584304bbf" category="section-title">步驟 2：更換系統管理模組</block>
+  <block id="5342cf7e14ace50bbfab26225b3e6f39" category="paragraph">當有空插槽或所有插槽都已填滿時，您可以為ASA A70 和ASA A90 儲存系統新增 I/O 模組。</block>
+  <block id="f339542c26e429278d0a968528259bdf" category="paragraph">您可以將此程序與儲存系統支援的所有版本的ONTAP一起使用。</block>
+  <block id="7bb83e93eb03edb4c1349618a792a167" category="paragraph">啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些檔案從 USB 磁碟機啟動映像並從合作夥伴節點恢復配置</block>
+  <block id="079bd34868a9068824540bdd3e5756a9" category="summary">當ASA A20、 ASA A30 或ASA A50 儲存系統中的某個元件發生故障時，請依照套件隨附的 RMA 說明將故障元件退回給NetApp 。</block>
+  <block id="64e29f64a3126848b6c0304887f843ff" category="summary">ASA A20、 ASA A30 或ASA A50 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="1ea018baf95a4f94ba8f6cf8b2d2b494" category="summary">在更換ASA A20、 ASA A30 或ASA A50 儲存系統中的啟動媒體之前，請確保滿足成功更換所需的要求和注意事項。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M（扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="9285d0066746f6d0aa6ec9aa93f25239" category="summary">當硬體故障需要更換ASA A20、 ASA A30 或ASA A50 儲存系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="e4a47d40d8a148e2fbb3194fbb3cea9d" category="summary">在更換ASA A20、 ASA A30 或ASA A50 儲存系統的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他組件是否正常運行，以驗證您是否擁有正確的替換底盤以及必要的工具。</block>
+  <block id="7971d8d0801f3f8c3a476b64b9472422" category="summary">當硬體故障需要更換ASA A20、 ASA A30 或ASA A50 儲存系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="6caa9ba1734bbb8cc9849acbec223740" category="summary">將儲存資源的控制權交還給替換控制器，以便您的ASA A20、 ASA A30 或ASA A50 儲存系統可以恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密、板載金鑰管理員 (OKM) 加密或外部金鑰管理員 (EKM) 加密。</block>
+  <block id="762e0132133a1c7606e1ccd7bc675458" category="paragraph">將儲存資源的控制權交還給替換控制器，以便您的ASA A20、 ASA A30 或ASA A50 儲存系統可以恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密、板載金鑰管理員 (OKM) 加密或外部金鑰管理員 (EKM) 加密。</block>
+  <block id="a6b1615dfbc2a8ac2b35d1758aa9b452" category="summary">在更換ASA A20、 ASA A30 或ASA A50 儲存系統中的控制器之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="60f2dc8c7558644ab5f91d6ec46c4400" category="summary">若要完成ASA A20、 ASA A30 或ASA A50 儲存系統的控制器更換，請先還原NetApp儲存加密配置（如有必要）並在新控制器上安裝所需的授權。接下來，確認邏輯介面 (LIF) 正在向其主連接埠報告並執行叢集健康檢查。最後，註冊新控制器的序號，然後將發生故障的零件退回給NetApp。</block>
+  <block id="9c5c6f34b1d493453cc0b36e1ab076ad" category="summary">如果偵測到過多可修正或無法修正的記憶體錯誤，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="b380238e5b48e025296f26372da18a5a" category="summary">當磁碟機發生故障或需要升級時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的磁碟機。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="af15476ed3634a2bb5b7a1d9186f2d24" category="summary">當風扇發生故障或無法有效運作時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。</block>
+  <block id="ec5eefc118260c0afeff84188cf41b90" category="summary">在您的ASA A20、 ASA A30 或ASA A50 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。</block>
+  <block id="ceb03e8cd3860ca9352d392908222fa2" category="paragraph">如果有可用插槽，您可以為ASA A20、 ASA A30 或ASA A50 儲存系統新增 I/O 模組。如果所有插槽都已填滿，則可以取代現有模組以新增模組。</block>
+  <block id="2c483e7e1b393985fed59a22d1eca004" category="summary">ASA A20、 ASA A30 和ASA A50 儲存系統可靈活擴充或更換 I/O 模組，進而增強網路連接性和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
+  <block id="6fe7a823d65eed60023145cea31fe01d" category="summary">當ASA A20、 ASA A30 或ASA A50 儲存系統中的 I/O 模組發生故障或需要升級以支援更高效能或其他功能時，請更換此模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="8f596d54dc6b2f6827f3fbc6d7522e74" category="summary">維護ASA A20、 ASA A30 或ASA A50 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="a5bd16a0f9223032d1be2b5213b1264b" category="summary">當電池開始失去電量或故障時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="887b99ca213a1df50e6b01633f50061c" category="summary">當ASA A20、 ASA A30 或ASA A50 儲存系統中的交流或直流電源裝置 (PSU) 發生故障或故障時，請更換裝置，以確保系統繼續接收穩定運作所需的電力。更換過程包括將故障的 PSU 與電源斷開、拔除電源線、更換故障的 PSU，然後將其重新連接到電源。</block>
+  <block id="5513302211056a7e3dd7ca9bd784eb34" category="summary">更換ASA A20、 ASA A30 或ASA A50 儲存系統中的即時時鐘 (RTC) 電池（通常稱為連結電池），以確保依賴準確時間同步的服務和應用程式保持運作。</block>
+  <block id="e5175dd57114102a90765714529f32e8" category="summary">在更換ASA C30 儲存系統中的啟動媒體之前，請確保滿足成功更換所需的必要要求和注意事項。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M（扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="6d66fdc3e20f9d68c20348fa91c66c36" category="summary">如果您的AFF C30 或AFF C60 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。</block>
+  <block id="95c2f2d1455b3b88330a47d070071a60" category="summary">更換AFF C30 或AFF C60 儲存系統中的零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。</block>
+  <block id="59ea15f282ae4b955fe96105c13858c4" category="summary">在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M 扳手連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 OKM 或外部密鑰管理器 EKM。</block>
+  <block id="63e011620bc71e4305af372580a0c049" category="paragraph">在更換AFF C30 或AFF C60 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M（扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="40904a36d8b7b3a0bc2b8ee3a376f4ef" category="summary">啟動映像的手動復原涉及使用 USB 磁碟機將ONTAP重新安裝到AFF C30 或AFF C60 儲存系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 隨身碟執行恢復操作，將系統恢復到正常運作狀態。</block>
+  <block id="05da27a14023154502ceb7ea9eb70e65" category="summary">AFF C30 或AFF C60 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除控制器模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
+  <block id="d0dd8b3521fbf550397a6225da08ff6a" category="summary">當硬體故障需要更換AFF C30 或AFF C60 儲存系統的機箱。更換過程包括移除控制器和電源裝置 (PSU)、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="d9ece133c151c89527ade519d8b5073f" category="paragraph">當硬體故障需要更換AFF C30 或AFF C60 儲存系統的機箱。更換過程包括移除控制器、移除驅動器、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="ae90a77e56b271daa13405a4b48bdb1e" category="summary">在更換AFF C30 或AFF C60 儲存系統的機箱之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他組件是否正常運行，以驗證您是否擁有正確的替換底盤以及必要的工具。</block>
+  <block id="a6a65a19ce4a6d195834723d960cc17e" category="summary">當硬體故障需要更換AFF C30 或AFF C60 儲存系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="aedb8855bc80eb9352228e1a64c25b8c" category="summary">將儲存資源的控制權傳回給取代控制器，以便您的AFF C30 或AFF C60 儲存系統可以恢復正常運作。復原過程會根據系統使用的加密類型（無加密、板載金鑰管理員 OKM 加密或外部金鑰管理員 EKM 加密）而有所不同。</block>
+  <block id="8690a96227e919181f64d22202f6e6a2" category="paragraph">將儲存資源的控制權傳回給取代控制器，以便您的AFF C30 或AFF C60 儲存系統可以恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密、板載金鑰管理員 (OKM) 加密或外部金鑰管理員 (EKM) 加密。</block>
+  <block id="2e7e30a3c46269164f98bfaa2559fd92" category="summary">在更換AFF C30 或AFF C60 儲存系統中的控制器之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="e4d2d445c188984cec1bac153f71ef1b" category="summary">若要完成AFF C30 或AFF C60 儲存系統的控制器更換，請先還原NetApp儲存加密配置（如有需要），然後在新控制器上安裝所需的授權。接下來，確認邏輯介面 LIF 正在向其主連接埠報告並執行叢集運行狀況檢查。最後，註冊新控制器的序號，然後將故障部件傳回給NetApp</block>
+  <block id="b538a349617efe7059d9f642f02517f2" category="paragraph">若要完成AFF C30 或AFF C60 儲存系統的控制器更換，請先恢復NetApp儲存加密配置（如有必要）並在新控制器上安裝所需的授權。接下來，確認邏輯介面 (LIF) 正在向其主連接埠報告並執行叢集健康檢查。最後，註冊新控制器的序號，然後將發生故障的零件退回給NetApp。</block>
+  <block id="d3db264d9eacbc28b1e95a3db2488f15" category="summary">如果偵測到過多可修正或無法修正的記憶體錯誤，請更換AFF C30 或AFF C60 儲存系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="e64c35566f4192910fd96255b2ce6829" category="summary">當磁碟機發生故障或需要升級時，請更換AFF C30 或AFF C60 儲存系統中的磁碟機。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="30039d681358f47535e9dc792b85b7ff" category="summary">當風扇發生故障或無法有效運作時，請更換AFF C30 或AFF C60 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。</block>
+  <block id="d8a896f9e037be6fb6681599c6a8aa8c" category="summary">在您的AFF C30 或AFF C60 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。</block>
+  <block id="9b18885feab6818399cdcd5895dc6c4c" category="summary">當模組發生故障或需要升級以支援更高效能或附加功能時，請更換AFF C30 或AFF C60 儲存系統中的 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="c76ddb32b3eb44ec7a4a9ee7f5667f81" category="summary">當電池開始失去電量或故障時，請更換AFF C30 或AFF C60 儲存系統中的 NV 電池，因為它負責在停電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="27fb3d3ae019d8ba63f63d1bd7545c44" category="summary">當AFF C30 或AFF C60 儲存系統中的交流或直流電源裝置 (PSU) 發生故障或故障時，請更換裝置，以確保系統繼續接收穩定運作所需的電力。更換過程包括將故障的 PSU 與電源斷開、拔除電源線、更換故障的 PSU，然後將其重新連接到電源。</block>
+  <block id="56b247821a3c3c563db2bf847d4d2fb8" category="summary">更換AFF C30 或AFF C60 儲存系統中的即時時鐘 (RTC) 電池（通常稱為連結電池），以確保依賴準確時間同步的服務和應用程式保持運作。</block>
+  <block id="041b63c51d23e85878aad6b23b5c239a" category="summary">更換 FAS50 系統中的零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。</block>
+  <block id="c1283ea6e00b9c654c6f64d35330a564" category="summary">在更換 FAS50 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要條件。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0M（扳手）連接埠是否正常運作，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="b176a9cc405f10e3854721cdf7ebe99f" category="summary">您可以為您的 FAS50 儲存系統熱插拔來自相同或不同支援供應商的相同容量的 NVMe SSD 快取模組、快閃記憶體快取模組。</block>
+  <block id="cee03be850ff8b3f1d03ff6ab022b7ef" category="paragraph">您可以為您的 FAS50 儲存系統熱插拔來自相同或不同支援供應商的相同容量的 NVMe SSD 快取模組（快閃記憶體快取模組）。</block>
+  <block id="8c3756cf25b302ae98de44dc3bbe2e26" category="summary">在更換 FAS50 儲存系統的機箱之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他組件是否正常運行，以驗證您是否擁有正確的替換底盤以及必要的工具。</block>
+  <block id="2c8cbe274d6629c9c07d4a72fa65dc56" category="summary">請依照下列工作流程步驟更換您的 FAS50 儲存系統機箱。</block>
+  <block id="0db644dce9b72e765dfa42cb271aa4bb" category="summary">當硬體故障需要更換 FAS50 儲存系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="7f10d81a2af374e7d73011ddfefcffa0" category="summary">將儲存資源的控制權交還給替換控制器，以便您的 FAS50 系統可以恢復正常運作。復原過程會根據系統使用的加密類型而有所不同，包括無加密、板載金鑰管理器 OKM 加密或外部金鑰管理員 EKM 加密。</block>
+  <block id="1eb5a9af90ca61fe0c3d080035b42c6e" category="summary">若要完成 FAS50 系統的控制器更換，請先還原NetApp儲存加密配置（如有必要），然後在新控制器上安裝所需的授權。接下來，確認邏輯介面 LIF 正在向其主連接埠報告並執行叢集運行狀況檢查。最後，註冊新控制器的序號，然後將發生故障的零件退回給NetApp。</block>
+  <block id="bcab8849efe81ef1ee715149bbf79a0a" category="summary">請依照下列工作流程步驟更換 FAS50 儲存系統中的控制器。</block>
+  <block id="011c80f4e9e47f254013ed199051aea6" category="summary">如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換 FAS50 儲存系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="a14f60f5ae08b6e865df544028d7abdf" category="summary">FAS50 儲存系統可靈活地擴充或更換 I/O 模組，以增強網路連接和效能。在升級網路功能或修復故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
+  <block id="acf8b5ce343ee24a63607dcd4f9ec33d" category="summary">當 FAS50 儲存系統中的 I/O 模組發生故障或需要升級以支援更高的效能或附加功能時，請更換此模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="1a9030bf843d5fd6c4e2ffad5e4f7589" category="summary">當電池開始失去電量或故障時，請更換 FAS50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="be9875a94cc09d90fb578f7e7eb0c1b9" category="summary">當 FAS50 儲存系統中的交流或直流電源裝置 (PSU) 發生故障或故障時，請更換裝置，以確保系統繼續接收穩定運作所需的電力。更換過程包括將故障的 PSU 與電源斷開、拔除電源線、更換故障的 PSU，然後將其重新連接到電源。</block>
+  <block id="5933d58ecdf477732aebddd62290e674" category="summary">更換 FAS50 儲存系統中的即時時鐘 (RTC) 電池（通常稱為連結電池），以確保依賴準確時間同步的服務和應用程式保持運作。</block>
 </blocks>

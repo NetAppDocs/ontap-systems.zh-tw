@@ -2,7 +2,7 @@
 permalink: c30-60/maintain-overview.html 
 sidebar: sidebar 
 keywords: aff c30, aff c60, maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components 
-summary: 維護 AFF C30 或 AFF C60 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。 
+summary: 維護AFF C30 或AFF C60 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。 
 ---
 = 硬體維護總覽 - AFF C30 和 AFF C60
 :allow-uri-read: 
@@ -28,14 +28,14 @@ summary: 維護 AFF C30 或 AFF C60 儲存系統的硬體，以確保長期的�
  a| 
 link:bootmedia-replace-workflow-bmr.html["啟動媒體 - 自動恢復"]
  a| 
-啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些文件從配對節點啟動映像，並自動執行相應的啟動選單選項，以將啟動映像安裝到已取代的啟動媒體上。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
+啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，系統會從合作夥伴節點擷取啟動映像，並自動執行對應的啟動功能表選項以在取代啟動媒體上安裝映像。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 
 
 
  a| 
 link:bootmedia-replace-workflow.html["啟動媒體-手動恢復"]
  a| 
-啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些檔案從 USB 磁碟機啟動映像並從合作夥伴節點恢復配置。
+啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些檔案從 USB 磁碟機啟動映像並從合作夥伴節點恢復配置
 
 
 

@@ -15,9 +15,10 @@ summary: NVRAM 模組包含 NVRAM12 和 DIMM ，每個 NVRAM 模組最多兩個 
 
 NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡 https://support.netapp.com["NetApp支援"]。
+.開始之前
+* 請確定您有可用的替換零件。您必須使用從 NetApp 收到的替換元件來更換故障的元件。
+* 確保儲存系統中的所有其他元件正常運作；如果沒有，請聯絡 https://support.netapp.com["NetApp支援"]。
 
-請務必使用您從 NetApp 收到的替換元件來更換故障的元件。
 
 
 
@@ -91,7 +92,7 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 == 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
 
-使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。
+使用適當的選項更換NVRAM模組或NVRAM DIMM。
 
 [role="tabbed-block"]
 ====
@@ -99,6 +100,7 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 --
 若要更換 NVRAM 模組、請將其放在機箱的插槽 4/5 中、然後依照特定步驟順序進行。
 
+.步驟
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
@@ -163,6 +165,7 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 --
 若要更換 NVRAM 模組中的 NVRAM DIMM 、您必須先移除 NVRAM 模組、然後更換目標 DIMM 。
 
+.步驟
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]

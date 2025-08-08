@@ -1,0 +1,21 @@
+= 
+:allow-uri-read: 
+
+
+重新啟動控制器模組。
+
+.步驟
+. 在載入程式提示字元中輸入 _bye 。
+. 將控制器的儲存設備歸還，使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 恢復自動交還：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果已觸發AutoSupport維護窗口，請結束它：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

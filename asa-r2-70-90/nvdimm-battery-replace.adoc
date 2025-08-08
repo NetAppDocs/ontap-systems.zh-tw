@@ -87,6 +87,7 @@ NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
 
+.步驟
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
@@ -166,6 +167,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 從控制器模組中取出故障的 NV 電池、然後安裝替換的 NV 電池。
 
+.步驟
 . 打開通風管蓋並找到 NV 電池。
 +
 image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[更換NV電池]
@@ -208,6 +210,7 @@ NV 電池插頭
 
 重新安裝控制器模組、然後重新啟動。
 
+.步驟
 . 將通風管往下轉動、以確保通風管完全關閉。
 +
 它必須與控制器模組金屬板齊平。
@@ -222,8 +225,7 @@ NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 如果您移除收發器（ QSFP 或 SFP ）、請記得在使用光纖纜線時重新安裝。
 
 +
-
-NOTE: 請確定主控台纜線已連接至修復的控制器模組、以便在重新開機時接收主控台訊息。修復後的控制器會從正常運作的控制器接收電力、並在完全裝入機箱後立即開始重新開機。
+請確定主控台纜線已連接至修復的控制器模組、以便在重新開機時接收主控台訊息。修復後的控制器會從正常運作的控制器接收電力、並在完全裝入機箱後立即開始重新開機。
 
 . 完成控制器模組的重新安裝：
 +
@@ -231,24 +233,28 @@ NOTE: 請確定主控台纜線已連接至修復的控制器模組、以便在�
 +
 控制器模組完全就位時、鎖定鎖條會上升。
 
-
-
 +
+將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
 
-NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
-
-+
 .. 將鎖定閂向上旋轉至鎖定位置。
 
 
 . 將電源線插入電源供應器。一旦電源恢復，控制器就會重新啟動。
 +
+如果您有直流電源、請在控制器模組完全插入機箱後、將電源區塊重新連接至電源供應器。
 
-NOTE: 如果您有直流電源、請在控制器模組完全插入機箱後、將電源區塊重新連接至電源供應器。
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
 
-. 將功能受損的控制器恢復正常運作，只需歸還其儲存設備 `storage failover giveback -ofnode _impaired_node_name_`：。
-. 如果已停用自動恢復功能、請重新啟用： `storage failover modify -node local -auto-giveback true`。
-. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
+
 
 
 
