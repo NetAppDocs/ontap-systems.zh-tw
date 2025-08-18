@@ -1,4 +1,4 @@
-= 步驟 3 ：重新啟動控制器
+= 
 :allow-uri-read: 
 
 
@@ -93,26 +93,4 @@ image::../media/icon_round_3.png[編號 3]
 NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 
 . 將纜線管理承載器向上旋轉至關閉位置。
-
-
-
-
-== 步驟 3 ：重新啟動控制器
-
-重新啟動控制器模組。
-
-.步驟
-. 在載入程式提示字元中輸入 _bye 。
-. 將控制器的儲存設備歸還，使其恢復正常運作：
-+
-'容錯移轉還原-ofnode_disapped_node_name_'
-
-. 恢復自動交還：
-+
-`storage failover modify -node local -auto-giveback true`
-
-. 如果已觸發AutoSupport維護窗口，請結束它：
-+
-`system node autosupport invoke -node * -type all -message MAINT=END`
-
 

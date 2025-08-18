@@ -7805,8 +7805,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2f6df380cd83e22784e9ab6e56edd84d" category="list-text">將連接埠 E10A 連接至機櫃 2 NSM B 連接埠 e0A 。</block>
   <block id="cd510ec7974b62b233e62a6e6a5c727e" category="inline-image-macro">控制器 B 的控制器與機櫃連線</block>
   <block id="462dd5d60871bb2319eb46e1da38c42d" category="paragraph"><block ref="462dd5d60871bb2319eb46e1da38c42d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d5bec2eb0018e8e254a2426f768cf678" category="summary">使用叢集探索來完成平台設定與組態、只需連線至交換器和筆記型電腦、或直接連線至儲存系統中的控制器、然後再連線至管理交換器。</block>
-  <block id="e0c6d59cdb58b213183cb0fc7534ee18" category="doc">完整的儲存系統設定與組態 - AFF A1K</block>
   <block id="4ba7257f41527371f7a52420787c1085" category="section-title">步驟 1 ：收集叢集資訊</block>
   <block id="e13a4e2099510963f792c4fc1ef4fced" category="paragraph">如果您尚未這麼做、請收集設定叢集所需的資訊、例如叢集管理介面連接埠和 IP 位址。</block>
   <block id="8c468ee786068bf98fe0b8a71cf946fa" category="inline-link">叢集設定工作表</block>
@@ -7830,7 +7828,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ea6245a5aad1d347d3bfd8727ccbe15c" category="inline-link-macro">纜線硬體</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
-  <block id="32faffb9b7b89515bab5605b39a5c57d" category="inline-link-macro">完整的儲存系統設定</block>
   <block id="079541787256810512e79fe819711d61" category="summary">將電源線連接到機櫃和控制器上、並為其供電。</block>
   <block id="c2b963a7671a8f77c637646d3e8c76a5" category="doc">開啟儲存系統電源 - AFF A1K</block>
   <block id="0b5c1681fb8f009a141f0c7d0f2d8f64" category="section-title">步驟 1 ：開啟機櫃電源並指派機櫃 ID</block>
@@ -8067,7 +8064,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1359f19561173d7123369e0c8f9fb141" category="sidebar">AFF A1K 安裝與設定</block>
   <block id="6f550466a69bad21f11ab99fc12db497" category="sidebar">安裝工作流程</block>
   <block id="7b2ca066e862da1c95471b425468af14" category="sidebar">開啟系統電源</block>
-  <block id="fad3eebd1aa676638de5e9e932b52f40" category="sidebar">完成系統設定</block>
   <block id="cdea6179c22763aadc0ee6a4b14f5f21" category="sidebar">AFF A1K 維護</block>
   <block id="5881b108517b27e7011c12b72fab1eb6" category="sidebar">AFF A1K 開機媒體</block>
   <block id="2df31b353db26ab75397dd256071bb0f" category="sidebar">AFF A1K 控制器模組</block>
@@ -8450,7 +8446,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="585305b30e013fddf0d6343d4ee20ddd" category="open-title">選項 2 ：連接兩個 NS224 儲存櫃</block>
   <block id="6ed30500ab710bf43940cb83592bdbfa" category="inline-link-macro">開啟 AFF A1K 儲存系統電源</block>
   <block id="3f9b0cea76dc6f2b6177d8bcb5908423" category="paragraph">為 AFF A1K 系統連接硬體之後，您<block ref="654696be1fe92ecfa0ff053c720b2b1d" category="inline-link-macro-rx"></block>就可以了。</block>
-  <block id="27ed857e5ec70c9d4b25678f791b6131" category="summary">使用叢集探索來完成設定與組態、只需連線至交換器和筆記型電腦、或直接連線至儲存系統中的控制器、然後再連線至管理交換器。</block>
   <block id="b53b432cc7bef69c6e3b55451a6e6076" category="paragraph">準備好安裝 AFF A1K 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
   <block id="957ae92207588304b6d7d5e236d23f00" category="paragraph">如果您的機櫃已預先填入、請跳過此步驟。</block>
   <block id="2faeb3f50bfdbdf81bf89b4827b8be68" category="inline-link-macro">為 AFF A1K 儲存系統連接硬體纜線</block>
@@ -8472,11 +8467,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5ff2c2e371b329794d430555ced9e3f7" category="paragraph">若要連接硬體、請先將儲存控制器連接至網路、然後將控制器連接至儲存櫃。</block>
   <block id="285d6553cd8c7daec6f0d12aba91379c" category="inline-link-macro">開啟 AFF A1K 儲存系統電源</block>
   <block id="7975efdb78ae2356ecfb7785916813ea" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="e440a513b8c5f4e1fdb4e9cd395eb57d" category="inline-link-macro-rx"></block></block>
-  <block id="54cd8d1881f4be7195e616a39249670b" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
-  <block id="80c97b00983d1544cf5059e1ae224d3c" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成 AFF A1K 儲存系統的叢集組態。</block>
   <block id="cb3c09e0aea666ca89714e771fe2a341" category="paragraph">為 AFF A1K 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
-  <block id="35f11b67e0796a5ad8b1a42113d555af" category="inline-link-macro">完成系統設定</block>
-  <block id="bb0e3698075baec263b94b00c624fc7f" category="paragraph">開啟 AFF A1K 儲存系統之後<block ref="cdf5a4c974bf88b91aa8dc567bf1a13f" category="inline-link-macro-rx"></block>、您就可以了。</block>
   <block id="42aa8e4e5869ddf4141b1addfd622a67" category="doc">準備安裝 - AFF A1K</block>
   <block id="d0f453bcbfb08f54ed7c397b49f72493" category="paragraph">準備好安裝 AFF A1K 儲存系統的方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
   <block id="f6b81eee7a6985b4bd76813e240e5101" category="inline-link-macro">安裝 AFF A1K 儲存系統的硬體</block>
@@ -8505,7 +8496,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="129659531a7af0b8cc014b27db714e59" category="paragraph">為 AFF A70 或 AFF A90 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並將纜線連接至控制器和儲存櫃。</block>
   <block id="4303b29f12561a35dc71cb122558d909" category="inline-link-macro">開啟 AFF A70 或 AFF A90 儲存系統的電源</block>
   <block id="f4e587df8e3873f191b7a2eaee7efc0d" category="paragraph">為 AFF A70 或 AFF A90 系統連接硬體之後<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>，您就可以了。</block>
-  <block id="0a9fdcb4b99938b1949943d7889de0e4" category="doc">完整的儲存系統設定與組態： AFF A70 與 AFF A90</block>
   <block id="eaed2b50f9ac1d1c725b320e4c9f09e1" category="doc">安裝硬體： AFF A70 和 AFF A90</block>
   <block id="816bbd9f7f68bfea42f976bdd1e27e0d" category="paragraph">準備好安裝 AFF A70 或 AFF A90 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
   <block id="fd0f91da61deb35dbaf2ae06cc064cf2" category="inline-link-macro">為 AFF A70 或 AFF A90 儲存系統連接硬體纜線</block>
@@ -8520,11 +8510,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2d3e272e1a75695d2e91a62c635ca211" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="aadc43ed51769de185eed40b0ee14a06" category="inline-link-macro-rx"></block></block>
   <block id="4c29a03a0ab864082fe459c7b721fbbc" category="inline-link-macro">開啟 AFF A70 或 AFF A90 儲存系統的電源</block>
   <block id="a19bec9c1c3c4f1245f5b6986c20b987" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5a2730391e8b064fb32b1f55a3ad2002" category="inline-link-macro-rx"></block></block>
-  <block id="7ebf9d5e847b8d7a94676c8589e3ba8a" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成 AFF A70 或 AFF A90 儲存系統的叢集組態。</block>
   <block id="15dfdd4107875517824d97fd681fd5cb" category="doc">開啟儲存系統電源 - AFF A70 和 AFF A90</block>
   <block id="addbfcd02447e9d1c6cbb3810c45a6ac" category="paragraph">為 AFF A70 或 AFF A90 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
-  <block id="ed1a15747627f84755b5eef621bb8e85" category="inline-link-macro">完成系統設定</block>
-  <block id="c0677b3f2eac3919f6dafe43a0461dd5" category="paragraph">開啟 AFF A70 或 AFF A90 儲存系統之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>、您就可以了。</block>
   <block id="ec9b0b25a575ea2719a43e0ed4eba2ef" category="doc">準備安裝 - AFF A70 和 AFF A90</block>
   <block id="e2ffcf27d17e53137e3f3b594c1cd4c4" category="paragraph">準備安裝 AFF A70 或 AFF A90 儲存系統、方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
   <block id="61c06139b6cae8ee51fc2ec7501dee42" category="inline-link-macro">安裝 AFF A70 或 AFF A90 儲存系統的硬體</block>
@@ -8639,7 +8626,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="552d44762a43ddc762f1255c8680368c" category="paragraph"><block ref="552d44762a43ddc762f1255c8680368c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6076d59638af62c513db60414806ba6a" category="inline-link-macro">開啟 FAS70 或 FAS90 儲存系統的電源</block>
   <block id="0b38b0938783d2cf1b3800f66d5154c3" category="paragraph">爲 FAS70 或 FAS90 系統連接好硬件之後<block ref="9d70727ad16ec47c3b1ffe9fcd624399" category="inline-link-macro-rx"></block>，您就可以了。</block>
-  <block id="c847155be497cfc98de50193bb0ef4e3" category="doc">完整的儲存系統設定與組態： FAS70 與 FAS90</block>
   <block id="a88ce76514a173cf2bddffce66860b3a" category="doc">安裝硬體： FAS70 和 FAS90</block>
   <block id="8f4b2475d7c4e7fd5a95811a1509212a" category="paragraph">準備好安裝 FAS70 或 FAS90 儲存系統之後、請為系統安裝硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
   <block id="6416cb7210c1cd9b1d9cc413f9b62376" category="inline-link-macro">為 FAS70 或 FAS90 儲存系統連接硬體。</block>
@@ -8655,10 +8641,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="de6952744c4efa4af3b088924141554c" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="47f9cb95cf9bc2df13978b8a91985b13" category="inline-link-macro-rx"></block></block>
   <block id="a817c10af381296411c154c716af48b7" category="inline-link-macro">開啟 FAS70 或 FAS90 儲存系統的電源</block>
   <block id="b2f6fbbaf5842fe5addbaac3aabc158d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="164a6e7d5b74e1ce7eb1009b0b13e4f3" category="inline-link-macro-rx"></block></block>
-  <block id="7bf2fa9e265a50a618153953f60062b9" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成儲存系統的叢集組態。</block>
   <block id="d9eb7005000baef74822bf5afd90707b" category="doc">開啟儲存系統電源： FAS70 和 FAS90</block>
   <block id="f6d3448cfd45b6a4ae23d47aec38dd6f" category="paragraph">為 FAS70 0r FAS90 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
-  <block id="7678c73f0b90edbadbeeacf02256f941" category="paragraph">在您開啟 FAS70 或 FAS90 儲存系統之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="971e955dfe15e7503ed5654ed6ebd8e0" category="summary">準備安裝 FAS70 和 FAS90 平台。</block>
   <block id="03162faf493040269b3b60738c942373" category="doc">準備安裝： FAS70 和 FAS90</block>
   <block id="5c3b9df48b8876003c4bc9bef5a99d08" category="paragraph">準備安裝 FAS70 或 FAS90 儲存系統、方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
@@ -9813,7 +9797,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a7232cb75808a8e7cf49cc148792b59d" category="inline-image-macro">控制器 B 連接埠 e3a 和 e3b 連接至一個 NS224 機櫃</block>
   <block id="4e7a391052a15e943c46f8d16f6bd53d" category="paragraph"><block ref="4e7a391052a15e943c46f8d16f6bd53d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="00f18c30a7bbd65060cf6a0e58f57e8f" category="paragraph">為儲存系統連接硬體之後，您<block ref="b337e1aa7c5092d0bcfa0886ff778532" category="inline-link-macro-rx"></block>就可以了。</block>
-  <block id="41d2428eb3b5bcaf38caff2b05238c99" category="doc">完整的儲存系統設定與組態： AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="b33623048258f5659092aa830041844a" category="doc">安裝硬體 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="4a671f9889e4f6492c5a797641c7d77f" category="paragraph">準備好安裝 AFF A20 ， AFF A30 或 AFF A50 儲存系統之後，請安裝儲存系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的儲存系統。</block>
   <block id="8206c8008227416f46d5d9a68b5f5f92" category="paragraph">如果您的儲存系統位於機櫃中，請略過此步驟。</block>
@@ -9829,12 +9812,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3f43328b333c4df4c9ec539236523e92" category="inline-link-macro">開啟儲存系統電源</block>
   <block id="e6eeb9ce8e52b3b9db9cd7abc091625d" category="paragraph-title"><block ref="91d7076df3f3bfcf6ace71bd0aa6cf68" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
   <block id="503f95c5c9b5a04e511351c93261b35d" category="paragraph">若要開啟儲存系統電源，請開啟每個機櫃的電源，並視需要指派唯一的機櫃 ID ，然後開啟控制器的電源。</block>
-  <block id="2da317240a59e2e0c3ab69f98844fd97" category="paragraph-title"><block ref="6e12d70052c23b4d8ac555d298c6cb54" category="inline-image-macro-rx" type="image"></block><block ref="ed796137dcbf61e6432604e7b2936e62" category="inline-link-macro-rx"></block></block>
-  <block id="e79be7c13a8e05b95f0803989d822f1a" category="paragraph">若要完成儲存系統的設定，請將瀏覽器指向控制器的 IP 位址，以存取 ONTAP 系統管理員。安裝精靈可協助您完成儲存系統的叢集組態。</block>
   <block id="9057791e1506dce04bd3005efa6d93aa" category="doc">開啟儲存系統電源 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="0e13dd128aeb300bd4c4e4321d3b6d00" category="paragraph">將控制器連接至 AFF A20 ， AFF A30 或 AFF A50 儲存系統中的網路和機櫃後，您就可以開啟機櫃和控制器的電源。</block>
   <block id="d2318e267239f37a3cc57e89925b9627" category="image-alt">A20 ， A30 或 A50 儲存系統電源連接圖</block>
-  <block id="c99b4f07076f9f2d91c4d91135d1dc65" category="paragraph">開啟儲存系統電源之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="80c5d8d4caa18675a1c928876932e0f5" category="doc">準備安裝 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="3d805e2ccb8d322d7295163d2ef0cd1d" category="paragraph">準備好安裝 AFF A20 ， AFF A30 或 AFF A50 儲存系統，方法是準備好場地，打開包裝箱的包裝箱，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
   <block id="586f9ad5db82f223a8b9cca9ed48f572" category="list-text">2U 儲存系統</block>
@@ -9871,7 +9851,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="323a91f2ce5b9b7fd43982a93a67f379" category="paragraph">對於 AFF C30 或 AFF C60 儲存系統，您可以對下列元件執行維護程序。</block>
   <block id="ea610f51a26134e77e0b3dc338a41e31" category="doc">連接硬體纜線 - AFF C30 和 AFF C60</block>
   <block id="a79626103b80bf3ef3558a2b727998a3" category="paragraph">安裝 AFF C30 或 AFF C60 儲存系統硬體後，請將控制器連接至網路和機櫃。</block>
-  <block id="b079b3155e464d9b84f317b7c289baaa" category="doc">完整的儲存系統設定與組態： AFF C30 與 AFF C60</block>
   <block id="c2193a61b82d60ca9261e895b85747bb" category="doc">安裝硬體： AFF C30 和 AFF C60</block>
   <block id="bde05321bc44e000faa60469a895ce4a" category="paragraph">準備好安裝 AFF C30 或 AFF C60 儲存系統之後，請安裝儲存系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的儲存系統。</block>
   <block id="b96dbc5fbc9ab81f32efde0325589654" category="doc">安裝與設定工作流程： AFF C30 與 AFF C60</block>
@@ -9901,8 +9880,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4218f8d2412136bfb32601e026baa923" category="paragraph">為 AFF C80 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並將纜線連接到控制器和儲存櫃。</block>
   <block id="692eb202bcfcdd5ff15ac88e850a8958" category="inline-link-macro">開啟 AFF C80 儲存系統電源</block>
   <block id="7d21a7c62df428d46d7ff82091e62589" category="paragraph">為 AFF C80 系統連接硬體之後，您<block ref="763dfc53859a04a5c267821436720409" category="inline-link-macro-rx"></block>就可以了。</block>
-  <block id="63d7026bd2a296696d20207af94b856c" category="summary">使用叢集探索（僅連線至交換器和筆記型電腦），或直接連線至儲存系統中的控制器，然後連線至管理交換器，即可完成儲存系統的設定和組態。</block>
-  <block id="d3e862b08cbf5c7b7a60cae18ea4735e" category="doc">完整的儲存系統設定與組態 - AFF C80</block>
   <block id="c567aa1fcd31cf1fc0ed7ef613af1ec2" category="doc">安裝硬體 - AFF C80</block>
   <block id="ac535b6b9c7de780cfad843a39bc961c" category="paragraph">準備好安裝 AFF C80 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的儲存系統。</block>
   <block id="33a7bb70ec0d85a6af9ff85989ebee02" category="inline-link-macro">為 AFF C80 儲存系統連接硬體纜線</block>
@@ -9918,10 +9895,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="511d044004931d0b1b2a06b8015413bd" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="662ed7ee864af1cfedbe87e2ee1f3eb1" category="inline-link-macro-rx"></block></block>
   <block id="58194004b73e5c3f0f7893e86022434b" category="inline-link-macro">開啟 AFF C80 儲存系統電源</block>
   <block id="4cb1bbde7d4f7a3185716ba5e6aeb05d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="bcacb9d1291db203e425798ebfffc016" category="inline-link-macro-rx"></block></block>
-  <block id="a16c29eb6be9b9073d5e43b9d22851b9" category="paragraph">若要完成系統設定、請將瀏覽器指向控制器的 IP 位址、以存取 ONTAP 系統管理員。安裝精靈可協助您完成 AFF C80 儲存系統的叢集組態。</block>
   <block id="42bc98faf5f65033d7e58c1389bfb4d8" category="doc">開啟儲存系統電源 - AFF C80</block>
   <block id="56f39934b7b567638a5c7fab3e4713dc" category="paragraph">為 AFF C80 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
-  <block id="72d24e6471241ba980e6c2b8017a3c3e" category="paragraph">開啟 AFF C80 儲存系統之後<block ref="a6663b3be7b31b2e16a5286f009fcfff" category="inline-link-macro-rx"></block>、您就可以了。</block>
   <block id="c60dc618663ce54c52b024e209050e57" category="summary">準備安裝 AFF C80 儲存系統。</block>
   <block id="aa2e3ee65f05caaf497283a0ab483129" category="doc">準備安裝 - AFF C80</block>
   <block id="ae94559d673eaece00e4a335f4347e99" category="paragraph">準備好安裝 AFF C80 儲存系統的方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
@@ -10172,8 +10147,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f1f5a8071b69ef980c0fca64b3b9c54e" category="list-text">如果停用自動恢復功能，請將其還原。</block>
   <block id="a7ecdb67614fe7d399a65b213dd20e1a" category="paragraph">磁碟機櫃專為 NetApp AFF ， ASA 和 FAS 系統所設計，可協助提供數位轉型所需的效能，恢復能力和靈活度。</block>
   <block id="dbc74f369dbf214b25d0f839fd4cd2b0" category="list-text">如果停用自動恢復功能，請還原：</block>
-  <block id="37e73c8cf9d7d3b4aeaa58f23b2fcb81" category="paragraph">開啟 AFF A1K 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
-  <block id="f2cde5cb8aa49228f5cb392e473dff51" category="paragraph">叢集初始化之後，請下載並執行<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block>以確認您的設定。</block>
   <block id="e826d5b26017ec374bf63b94b8a425d9" category="list-text">使用每個電源供應器上的固定裝置固定電源線。： a1k-a70-90 ！：</block>
   <block id="0bf1ff1f561d2a96752b8ee596c65068" category="list-text">HA 組態中的 4U</block>
   <block id="3ac4d4a9f6b930345bd4ccdb8435d0fb" category="list-text">在每個控制器的系統管理模組上</block>
@@ -10181,15 +10154,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6de84c72e7e126f172cbcc00c68cd297" category="paragraph">NS224 機櫃最重可達 66.78 磅（ 30.29 公斤）。若要抬起貨架，請兩個人或液壓舉升。請將所有元件保留在機架中（前後），以避免機架重量不均衡。</block>
   <block id="f6212161be26bdf2d9804cc49d78a681" category="image-alt">NS224 NSM100 舉升注意事項</block>
   <block id="4eb7fd7f39fdba863f648fba58c6a17b" category="list-text"><block ref="fa81f583d8b6c7dcaf8e26a5fcf5de52" category="inline-link-rx"></block>： a1k! ：</block>
-  <block id="be520d0c187d935243d727d6ae1fae7d" category="paragraph">開啟 AFF A20 ， AFF A30 或 AFF A50 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
   <block id="a8df3504a76da7d726b26d0dfd4a23f3" category="doc">安裝需求 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="a6c628254ff2bf40212541b76682d0ca" category="paragraph">檢閱 AFF A20 ， AFF A30 或 AFF A50 儲存系統的需求。</block>
-  <block id="b88e50a127892280ab464a0d38a10676" category="paragraph">開啟 AFF A70 或 AFF A90 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
   <block id="7fffd066161648ae573d6d74ec60e85e" category="paragraph">儲存系統最重可達 151.68 磅（ 68.8 公斤）。若要抬起儲存系統，請使用四個人或液壓舉升設備。</block>
-  <block id="877c6321779942add591f77ab7b28f2e" category="paragraph">開啟 AFF C30 或 AFF C60 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
   <block id="4572f45ac79ded53bd57f95eaf949d13" category="doc">安裝需求 - AFF C30 和 AFF C60</block>
-  <block id="2795470282b110353916b87e8a68ea10" category="paragraph">開啟 AFF C80 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
-  <block id="021fad57648b2198deca585e8c317a71" category="paragraph">開啟 FAS70 或 FAS90 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
   <block id="510996b7cd8e0bf946a50e1f000afbe2" category="paragraph">SuperRail 可安裝在標準的方孔四柱機架上，或是使用圓孔對方孔配接器支架，安裝在標準的四柱式四柱式機架上。</block>
   <block id="090baac144fae3a90d22bb679e0194a6" category="sidebar">AFF A20 ， AFF A30 和 AFF A50 開機媒體</block>
   <block id="f923335af94abdb12e15d306f375ccba" category="sidebar">AFF A20 ， AFF A30 和 AFF A50 I/O 模組</block>
@@ -11094,8 +11062,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="01c7cda26a7b465d1c56f741d328e967" category="list-text">纜線控制器 B 連接埠 3D 至機櫃 2 IOMA 連接埠 3 。</block>
   <block id="60fee2ee2c3e768d10719c680fb38afb" category="inline-image-macro">控制器 B 連接埠 3a 和 3D 連線至兩個 DS460C 機櫃</block>
   <block id="7a2d0d2a1e1f5dc3d5184332fb23afba" category="paragraph"><block ref="7a2d0d2a1e1f5dc3d5184332fb23afba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7a75f3a015710392a8467c08fd9862a" category="doc">完整的儲存系統設定與組態： FAS50</block>
-  <block id="c63c71562f3b83fe3a2793ff2deb8fd5" category="paragraph">開啟 FAS50 儲存系統之後，您就可以開始探索叢集網路並設定 ONTAP 叢集。</block>
   <block id="a48dcb52a80835a67657f668af54582e" category="doc">安裝硬體： FAS50</block>
   <block id="986b47fd733e9cbf32255b28864ed238" category="paragraph">準備好安裝 FAS50 儲存系統之後，請安裝儲存系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的儲存系統。</block>
   <block id="4f71d9bde1ecffc22f8c526c10e5381e" category="doc">安裝與設定工作流程： FAS50</block>
@@ -11868,8 +11834,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="aa531670186ea89165a64b4839889b9b" category="list-text">小心地將驅動器抽屜推回機櫃中。+s <block ref="e57bb4934e3c0d4cbe8c534709c18cf5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2efcc590b5abb3211d808cb53bc04668" category="paragraph">您可以使用下列子步驟變更貨架 ID。有關更詳細的說明，請使用<block ref="1bf0acf64e45d0c785cbad3f63f469c6" category="inline-link-macro-rx"></block> 。</block>
   <block id="9982fc2fe5816d297a37b3ad57f43a5e" category="section-title">步驟 2：為熱添加磁碟架佈線</block>
-  <block id="8791ec38034bbb459948342e16d5eeef" category="list-text">您必須滿足完成此過程的要求<block ref="8f2931546a85884febd2253de0e97e97" category="inline-xref-macro-rx"></block>部分，並按照<block ref="e16f4ee23c5ee1fb9788c3c8a75ff6d9" category="inline-xref-macro-rx"></block> 。</block>
-  <block id="72e517954e40be84083a6b87508b39b0" category="paragraph">堆疊必須滿足<block ref="8f2931546a85884febd2253de0e97e97" category="inline-xref-macro-rx"></block>此過程的部分。</block>
   <block id="e799b535f2d63f0553a59afd2bbcbc37" category="section-title">（可選）步驟 3：移動或運輸 DS460C 架子</block>
   <block id="790df2827c132e9040bd12ac9938f8e1" category="paragraph">如果將來您將 DS460C 機架移至資料中心的不同部分或將機架運送到其他位置，則需要從驅動器抽屜中取出驅動器，以避免對驅動器抽屜和驅動器造成損壞。</block>
   <block id="84f49fb7ef2efb64157148b160d0f41b" category="list-text">如果您在安裝 DS460C 機架作為機架熱添加的一部分時保存了驅動器包裝材料，請在移動驅動器之前使用這些材料重新包裝驅動器。</block>
@@ -12113,4 +12077,16 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1a9030bf843d5fd6c4e2ffad5e4f7589" category="summary">當電池開始失去電量或故障時，請更換 FAS50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
   <block id="be9875a94cc09d90fb578f7e7eb0c1b9" category="summary">當 FAS50 儲存系統中的交流或直流電源裝置 (PSU) 發生故障或故障時，請更換裝置，以確保系統繼續接收穩定運作所需的電力。更換過程包括將故障的 PSU 與電源斷開、拔除電源線、更換故障的 PSU，然後將其重新連接到電源。</block>
   <block id="5933d58ecdf477732aebddd62290e674" category="summary">更換 FAS50 儲存系統中的即時時鐘 (RTC) 電池（通常稱為連結電池），以確保依賴準確時間同步的服務和應用程式保持運作。</block>
+  <block id="92db1257222418b67082094015c7573b" category="inline-link">設定集群</block>
+  <block id="cc51e5e3b47d6ec06dc4243cef49c8d0" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>/<block ref="51676d6e20492df73dde4996e18903b5" category="inline-link-rx"></block></block>
+  <block id="fab8921216755946904b56169390c6a4" category="inline-link">設定集群</block>
+  <block id="17d8b1a24625f873cbd79169b4d6a4a1" category="paragraph">打開儲存系統電源後，<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
+  <block id="429705c279d5084e43119e97001cc757" category="paragraph">打開AFF A1K儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
+  <block id="7330f49604b46d73a3ab5144a0883082" category="paragraph-title"><block ref="6e12d70052c23b4d8ac555d298c6cb54" category="inline-image-macro-rx" type="image"></block>/<block ref="51676d6e20492df73dde4996e18903b5" category="inline-link-rx"></block></block>
+  <block id="ba86337324d5518a2b56b6eb5db17504" category="paragraph">開啟AFF A70或AFF A90儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
+  <block id="bb955abc1ee1a042f477c6977d0bfc07" category="paragraph"><block ref="bb955abc1ee1a042f477c6977d0bfc07" category="inline-link-macro-rx"></block></block>
+  <block id="8d96a0652a56a46a76c2dfa6064eedc6" category="paragraph">打開AFF C80 儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
+  <block id="6fe10565744cf725b2fd75861906fbc1" category="paragraph">開啟 FAS70 或 FAS90 儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
+  <block id="130be2fd2e92afb91e19f2dec9836c4c" category="admonition">此程序不適用於ASA r2 系統。</block>
+  <block id="9da319b07aef4095e22497ba00c68f1e" category="list-text">您必須滿足完成此過程的要求，並按照<block ref="e16f4ee23c5ee1fb9788c3c8a75ff6d9" category="inline-xref-macro-rx"></block>。</block>
 </blocks>

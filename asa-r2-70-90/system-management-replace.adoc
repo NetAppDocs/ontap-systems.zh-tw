@@ -217,28 +217,6 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 
 
 
-== 步驟 3 ：重新啟動控制器
-
-重新啟動控制器模組。
-
-.步驟
-. 在載入程式提示字元中輸入 _bye 。
-. 將控制器的儲存設備歸還，使其恢復正常運作：
-+
-'容錯移轉還原-ofnode_disapped_node_name_'
-
-. 恢復自動交還：
-+
-`storage failover modify -node local -auto-giveback true`
-
-. 如果已觸發AutoSupport維護窗口，請結束它：
-+
-`system node autosupport invoke -node * -type all -message MAINT=END`
-
-
-
-
-
 == 步驟 4 ：安裝授權並登錄序號
 
 如果受損節點使用的是需要標準（節點鎖定）授權的 ONTAP 功能、則必須為節點安裝新授權。對於具有標準授權的功能、叢集中的每個節點都應該擁有自己的功能金鑰。
