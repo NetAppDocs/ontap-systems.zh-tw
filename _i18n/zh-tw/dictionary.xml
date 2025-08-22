@@ -5083,7 +5083,6 @@
   <block id="fe673aff2ce9eb5c6eaf841f4ec88b30" category="sidebar">VA900開機媒體AFF</block>
   <block id="6cff7e5493433d24015d6ef5a8566b38" category="sidebar">VA900機箱AFF</block>
   <block id="7d1c80f318f9bf16deac2495abe88a7e" category="sidebar">VA900控制器模組AFF</block>
-  <block id="2014d8b66b0e05fba286f79c1c8aac17" category="admonition">當您看到_是否要停用自動恢復？_時、請輸入「y」。</block>
   <block id="0e1569786cd5c99315511da0d9e3f2aa" category="admonition">如果系統在開機功能表停止、請選取「重新開機節點」選項、並在出現提示時回應y、然後按「Ctrl-C」開機至載入程式。</block>
   <block id="6f0e65a313ceda26ae3094641da52d2e" category="paragraph"><block ref="6f0e65a313ceda26ae3094641da52d2e" category="inline-link-rx"></block></block>
   <block id="f5d03e0aa6d32340b1284f6bb82c8ee3" category="inline-link-macro">具有內部儲存設備之平台的控制器對堆疊佈線工作表和佈線範例</block>
@@ -9720,7 +9719,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="56316a8ca0d4ea8218ff785f2fe8fc7d" category="paragraph">更換控制器包括移除受損的控制器，將 FRU 元件移至更換控制器，在機箱中安裝更換控制器，設定時間和日期，然後重新啟用。</block>
   <block id="3fe8767a939feff2cd12159441aec4ee" category="paragraph">驗證生命，檢查叢集健全狀況，並將故障零件退回 NetApp 。</block>
   <block id="a2742c1f78fe5704322365331e542ab9" category="doc">更換 DIMM - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="fdcf50e10537e759b00a45364943197b" category="doc">更換磁碟機 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="94adc47982045347c477d3413a1ce035" category="doc">更換風扇模組 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="fca7a57f7ae7786be1a28cd2eff7a7e6" category="doc">維護 AFF A20 ， AFF A30 和 AFF A50 硬體</block>
   <block id="866a764dfc035b62bd1e377e9effbd58" category="paragraph">對於 AFF A20 ， AFF A30 或 AFF A50 儲存系統，您可以對下列元件執行維護程序。</block>
@@ -9803,14 +9801,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6bc9706054ddce477397a74fecd293ed" category="inline-link-macro">連接硬體纜線</block>
   <block id="8bfccb1f0c0fcef7c65c13971279707a" category="paragraph">安裝儲存系統的硬體之後<block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="d18e261115fca673ca85d869ef16199c" category="doc">安裝與設定工作流程： AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="3cdf8c6347bdc0a257b06253a291ef6c" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
-  <block id="966353821596fdf316108d72854ad8be" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
   <block id="14dba6115fa0ee08da437dd9fc5018c2" category="paragraph">若要安裝硬體，請為您的儲存系統和機櫃安裝軌道套件，然後在機櫃或電信機架中安裝並固定儲存系統和機櫃。</block>
   <block id="88b736e6d5561b4dc7cce39802381ee6" category="inline-link-macro">連接硬體纜線</block>
-  <block id="3028390870c5926e662eeccfbd8c3472" category="paragraph-title"><block ref="d5b760e3b486da6aca46a9bd83d66c13" category="inline-image-macro-rx" type="image"></block><block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block></block>
   <block id="2188955fbe0ae54210208dbb48e57dcc" category="paragraph">若要連接硬體，請將控制器連接至網路，然後再連接至機櫃。</block>
   <block id="3f43328b333c4df4c9ec539236523e92" category="inline-link-macro">開啟儲存系統電源</block>
-  <block id="e6eeb9ce8e52b3b9db9cd7abc091625d" category="paragraph-title"><block ref="91d7076df3f3bfcf6ace71bd0aa6cf68" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
   <block id="503f95c5c9b5a04e511351c93261b35d" category="paragraph">若要開啟儲存系統電源，請開啟每個機櫃的電源，並視需要指派唯一的機櫃 ID ，然後開啟控制器的電源。</block>
   <block id="9057791e1506dce04bd3005efa6d93aa" category="doc">開啟儲存系統電源 - AFF A20 ， AFF A30 和 AFF A50</block>
   <block id="0e13dd128aeb300bd4c4e4321d3b6d00" category="paragraph">將控制器連接至 AFF A20 ， AFF A30 或 AFF A50 儲存系統中的網路和機櫃後，您就可以開啟機櫃和控制器的電源。</block>
@@ -11069,7 +11063,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dbcb2bc4d50c0b367ad35ab35049f6cf" category="doc">開啟儲存系統電源： FAS50</block>
   <block id="58a9bceae382f9146952eb764c24eaa4" category="paragraph">將控制器連接到 FAS50 儲存系統的網路和機櫃之後，您就可以開啟機櫃和控制器的電源。</block>
   <block id="c5c54b199e1cae61ce9f1f8df4d64ad2" category="list-text">系統機箱正面的機櫃 ID 不會亮起。</block>
-  <block id="21b1424b1e644de7e738b04ffc32d5fb" category="list-text">使用每個電源供應器上的固定裝置固定電源線。： fas50-a20-30-50 ！：</block>
   <block id="ba721f2e06c40252a394b51ea95142e3" category="doc">準備安裝 - FAS50</block>
   <block id="e20b24ffe711fbb4211c8b7f51f10949" category="paragraph">準備好安裝 FAS50 儲存系統，準備好讓網站準備就緒，打開包裝箱，將包裝箱的內容與裝箱單進行比較，並註冊儲存系統以取得支援效益。</block>
   <block id="bf6f76951a411b87fee677094547f5d4" category="doc">安裝要求 - FAS50</block>
@@ -11101,7 +11094,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5c40960208a7535beecf44f84d10cea9" category="paragraph"><block ref="fa00b95aa82b5506a4c27cc4a50f05d7" prefix="" category="inline-code"></block></block>
   <block id="2a9205137f8a0ec57be25e6b19b96284" category="paragraph">下列AutoSupport 資訊不顯示自動建立案例兩小時：</block>
   <block id="cd080b2ac496489acb1e57ed7c6444c6" category="paragraph"><block ref="387708b955ccf034fcf9197ad51ba879" prefix="" category="inline-code"></block></block>
-  <block id="a5e0a9798bce38c0259a506f0fd1147d" category="list-text">停用健康控制器主控台的自動恢復：</block>
   <block id="b452c4bf6d6344fb288a06006598685e" category="paragraph"><block ref="f454cdc7efb7d9bfad8109c4264a3a1b" prefix="" category="inline-code"></block></block>
   <block id="68f5fa8735b547da3775c7c617e0e5ec" category="paragraph">從健全的控制器接管或停止受損的控制器：</block>
   <block id="92a9150d319311961f208f8e5f5ebb6e" category="paragraph"><block ref="db99891238c978ac8afa2f5699f2917d" prefix="" category="inline-code"></block></block>
@@ -11113,7 +11105,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ecada3140a47012aab89f14c63ba9190" category="paragraph"><block ref="4d06f3844212ac745a73965bbb3f6e51" prefix="" category="inline-code"></block></block>
   <block id="f045de31e6ca5c44bdd82fc2b4ea9e53" category="paragraph"><block ref="fbcb7868c4849064439910664677cb60" prefix="" category="inline-code"></block></block>
   <block id="b56b78769068ef30879ff862bf0d7d58" category="paragraph"><block ref="6cf51b10a85b7bdc2a6698400ee841b7" prefix="" category="inline-code"></block></block>
-  <block id="a9f9ae342279f5d338d3038ce3af820c" category="paragraph"><block ref="7b903d789523bfa1771a2f63b3523783" prefix="" category="inline-code"></block></block>
   <block id="5f54996be1665b2f88bba84f87a93569" category="paragraph">使用控制器通風管上的 FRU 對應圖來找出 DIMM 插槽。</block>
   <block id="7d0097234d19020f58b7650559edaf2b" category="section-title">步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM</block>
   <block id="a876fe76c4b113909ecdec3c0882f369" category="paragraph">使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。</block>
@@ -12082,11 +12073,16 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fab8921216755946904b56169390c6a4" category="inline-link">設定集群</block>
   <block id="17d8b1a24625f873cbd79169b4d6a4a1" category="paragraph">打開儲存系統電源後，<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block> 。</block>
   <block id="429705c279d5084e43119e97001cc757" category="paragraph">打開AFF A1K儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
-  <block id="7330f49604b46d73a3ab5144a0883082" category="paragraph-title"><block ref="6e12d70052c23b4d8ac555d298c6cb54" category="inline-image-macro-rx" type="image"></block>/<block ref="51676d6e20492df73dde4996e18903b5" category="inline-link-rx"></block></block>
   <block id="ba86337324d5518a2b56b6eb5db17504" category="paragraph">開啟AFF A70或AFF A90儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
   <block id="bb955abc1ee1a042f477c6977d0bfc07" category="paragraph"><block ref="bb955abc1ee1a042f477c6977d0bfc07" category="inline-link-macro-rx"></block></block>
   <block id="8d96a0652a56a46a76c2dfa6064eedc6" category="paragraph">打開AFF C80 儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
   <block id="6fe10565744cf725b2fd75861906fbc1" category="paragraph">開啟 FAS70 或 FAS90 儲存系統後，您<block ref="0f60cfcace4de2b8e8fde35e0c84ffd6" category="inline-link-rx"></block>。</block>
   <block id="130be2fd2e92afb91e19f2dec9836c4c" category="admonition">此程序不適用於ASA r2 系統。</block>
   <block id="9da319b07aef4095e22497ba00c68f1e" category="list-text">您必須滿足完成此過程的要求，並按照<block ref="e16f4ee23c5ee1fb9788c3c8a75ff6d9" category="inline-xref-macro-rx"></block>。</block>
+  <block id="90b6fa75d1a40492225ef00d2d0a4308" category="list-text">從健康控制器的控制台輸入以下命令：</block>
+  <block id="4c7dda08e4d9eb262f7eea3b8ee04e62" category="doc">更換驅動器 - AFF A20、 AFF A30 和AFF A50</block>
+  <block id="4e60aeb8ec43ad463ce3dcdf5957e41a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
+  <block id="8e7e4fe549d31d35f22d5919a6326875" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
+  <block id="034cb39094d8eb483c641ad0dfc1c27f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block></block>
+  <block id="af42a6a9db306b2ac5725e006de14a7a" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
 </blocks>

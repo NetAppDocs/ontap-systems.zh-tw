@@ -39,13 +39,14 @@
 +
 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 停用健康控制器主控台的自動恢復：
+. 停用自動交還：
++
+.. 從健康控制器的控制台輸入以下命令：
 +
 `storage failover modify -node local -auto-giveback false`
 
-+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 
-NOTE: 當您看到_是否要停用自動恢復？_時、請輸入「y」。
 
 . 將受損的控制器移至載入器提示：
 +
