@@ -1,10 +1,10 @@
 ---
 permalink: fas8300/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
-keywords: fas8300, fas8300, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration 
+keywords: fas8300, fas8700, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration 
 summary: 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會使組態恢復正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVMs）現在處於作用中狀態、並從本機磁碟集區提供資料。 
 ---
-= 以雙節點MetroCluster 的不全功能組態（AFF 例如：FASfas8300和FAS8700）切換回集合體
+= 在雙節點MetroCluster配置中切換回聚合 - FAS8300和FAS8700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後�
 
 [role="lead"]
 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
 

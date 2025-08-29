@@ -14,15 +14,32 @@ entries:
   - title: 詳細步驟
     url: "/fas2800/install-detailed-guide.html"
 - title: 維護
-  pdf-filename: FAS2820 維護
+  pdf-filename: AFF FAS2800 維護
   entries:
-  - title: 總覽
+  - title: 維護概述
     url: "/fas2800/maintain-overview.html"
-  - title: 開機媒體
-    pdf-filename: FAS2820 開機媒體
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: FAS2820啟動介質自動化
     entries:
-    - title: 總覽
-      url: "/fas2800/bootmedia-replace-overview.html"
+    - title: 開機媒體更換工作流程
+      url: "/fas2800/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/fas2800/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉控制器
+      url: "/fas2800/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/fas2800/bootmedia-replace-bmr.html"
+    - title: 開機還原映像
+      url: "/fas2800/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas2800/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
+    pdf-filename: FAS2820啟動介質手冊
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/fas2800/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/a800/bootmedia-replace-requirements.html"
     - title: 檢查加密金鑰
       url: "/fas2800/bootmedia-encryption-preshutdown-checks.html"
     - title: 關閉受損的控制器

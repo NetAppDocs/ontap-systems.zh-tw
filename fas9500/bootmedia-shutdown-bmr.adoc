@@ -1,0 +1,82 @@
+---
+permalink: fas9500/bootmedia-shutdown-bmr.html 
+sidebar: sidebar 
+keywords: fas9500, shut down the controller 
+summary: 關閉FAS9500儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。 
+---
+= 關閉控制器以進行自動啟動媒體恢復 - FAS9500
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+關閉 FAS9500 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。
+
+自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
+
+若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
+
+.關於這項工作
+* 如果您有 SAN 系統，則必須檢查故障控制器 SCSI 刀鋒的事件訊息  `cluster kernel-service show`。 `cluster kernel-service show`命令（從 priv 進階模式）會顯示節點名稱、link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["仲裁狀態"]該節點的可用度狀態、以及該節點的作業狀態。
++
+每個SCSI刀鋒處理序都應與叢集中的其他節點處於仲裁狀態。任何問題都必須先解決、才能繼續進行更換。
+
+* 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。
+
+
+.步驟
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
++
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 停用自動交還：
++
+.. 從健康控制器的控制台輸入以下命令：
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
+
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+正在等待恢復...
+ a| 
+按Ctrl-C、然後在出現提示時回應「y」。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從健全的控制器接管或停止受損的控制器：
+
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+--halt true_ 參數會帶您進入 Loader 提示字元。
+
+|===
+
+
+.下一步
+當您關閉受損的控制器之後link:bootmedia-replace-bmr.html["更換開機媒體"]，您將會。

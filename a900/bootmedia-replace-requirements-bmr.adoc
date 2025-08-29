@@ -1,0 +1,41 @@
+---
+permalink: a900/bootmedia-replace-requirements-bmr.html 
+sidebar: sidebar 
+keywords: a900, replace the boot media 
+summary: 在更換AFF A900 系統中的啟動介質之前，請確保滿足成功更換的必要要求。 
+---
+= 自動啟動媒體復原的要求 - AFF A900
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換AFF A900中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。
+
+自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
+
+* 您必須使用與從 NetApp 收到的容量相同的替換 FRU 元件來更換故障元件。
+* 驗證受損控制器上的 e0M（扳手）連接埠是否已連接且沒有故障。
++
+e0M 連接埠用於在自動啟動復原過程中在兩個控制器之間進行通訊。
+
+* 對於 OKM，您需要叢集範圍的密碼以及備份資料。
+* 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
++
+** /ccfcard/kmip/servers.cfg 檔案。
+** /ccfcard/kmip/certs/client.crt 檔案。
+** /ccfcard/kmip/certs/client.key 檔案。
+** /ccfcard/kmip/certs/ca.pem 檔案。
+
+
+* 更換受損的啟動介質時，將命令應用到正確的控制器至關重要：
++
+** _受損控制器_是您正在執行維護的控制器。
+** _健康控制器_是受損控制器的 HA 夥伴。
+
+
+
+
+.下一步
+檢閱開機媒體需求之後link:bootmedia-shutdown-bmr.html["關閉控制器"]，您就可以了。

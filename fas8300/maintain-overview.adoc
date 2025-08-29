@@ -2,7 +2,7 @@
 permalink: fas8300/maintain-overview.html 
 sidebar: sidebar 
 keywords: fas8300 maintenance, maintenance, repairing, repairing fas8300, replace fas8300 components, replace fas8300 components 
-summary: 維護 FAS8330 和 FAS8700 硬體 
+summary: 維護FAS8300和FAS8700硬件 
 ---
 = 維護 FAS8300 和 FAS8700 硬體
 :allow-uri-read: 
@@ -11,71 +11,100 @@ summary: 維護 FAS8330 和 FAS8700 硬體
 
 
 [role="lead"]
-對於 FAS8300 和 FAS8700 儲存系統、您可以在下列元件上執行維護程序。
+維護FAS8300和FAS8700儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。
+
+維修過程假定FAS8300和FAS8700儲存系統已部署為ONTAP環境中的儲存節點。
 
 
 
-== 開機媒體
+== 系統元件
 
-開機媒體會儲存一組主要和次要的開機映像檔案、供系統在開機時使用。
+對於FAS8300和FAS8700儲存系統，您可以對下列元件執行維護程序。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:bootmedia-replace-workflow-bmr.html["啟動媒體 - 自動恢復"]
+ a| 
+啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，儲存系統會從合作夥伴節點擷取啟動映像，並自動執行對應的啟動選單選項以在取代啟動媒體上安裝映像。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 
 
 
-== 快取模組
+ a| 
+link:bootmedia-replace-workflow.html["啟動媒體 - 手動恢復"]
+ a| 
+啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在手動復原期間，您會從 USB 隨身碟啟動儲存系統並手動還原檔案系統映像和設定。如果您的儲存系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。
 
+
+
+ a| 
+link:caching-module-replace.html["快取模組"]
+ a| 
 當系統登錄單一 AutoSupport （ ASUP ）訊息指出模組已離線時、您必須更換控制器的快取模組。
 
 
 
-== 機箱
-
+ a| 
+link:chassis-replace-overview.html["機箱"]
+ a| 
 機箱是實體機箱、可容納所有控制器元件、例如控制器 /CPU 單元、電源供應器和 I/O
 
 
 
-== 控制器
-
+ a| 
+link:controller-replace-overview.html["控制器"]
+ a| 
 控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 功能。
 
 
 
-== DIMM
-
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
 如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。
 
 
 
-== 風扇
-
+ a| 
+link:fan-swap-out.html["風扇"]
+ a| 
 風扇會冷卻控制器。
 
 
 
-== NVDIMM電池
+ a| 
+link:nvdimm-replace.html["NVDIMM"]
+ a| 
+NVDIMM （非揮發性雙列直插式記憶體模組）可管理從揮發性記憶體到非揮發性儲存設備的資料傳輸、並在停電或系統關機時維持資料完整性。
 
+
+
+ a| 
+link:nvdimm-battery-replace.html["NVDIMM電池"]
+ a| 
 NVDIMM 電池負責維持 NVDIMM 模組的電力。
 
 
 
-== NVDIMM
-
- The NVDIMM (non-volatile dual in-line memory module) manages the data transfer from the volatile memory to the non-volatile storage, and maintains data integrity in the event of a power loss or system shutdown.
-
-
-== PCIe 或夾層卡
-
-PCIe （周邊元件互連高速）卡是插入主機板 PCIe 插槽的擴充卡。
-
-夾層卡是一種擴充卡、設計用於插入主機板上的專用插槽。
+ a| 
+link:pci-cards-and-risers-replace.html["PCIe 卡和轉接卡"]
+ a| 
+PCIe（外圍組件可互連快速）卡是一種擴充卡，可插入主機板上的 PCIe 插槽或插入主機板的轉接卡。
 
 
 
-== 電源供應器
-
+ a| 
+link:power-supply-replace.html["電源供應器"]
+ a| 
 電源供應器可在控制器機櫃中提供備援電源。
 
 
 
-== 即時時鐘電池
-
+ a| 
+link:rtc-battery-replace.html["即時時鐘電池"]
+ a| 
 即時時鐘電池會在電源關閉時保留系統日期和時間資訊。
+
+|===

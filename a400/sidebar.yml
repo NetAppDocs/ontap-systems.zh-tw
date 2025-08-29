@@ -16,23 +16,38 @@ entries:
 - title: 維護
   pdf-filename: VA400維護AFF
   entries:
-  - title: 總覽
+  - title: 維護綜覽
     url: "/a400/maintain-overview.html"
-  - title: 開機媒體
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: AFF A400 啟動介質自動化
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/a400/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/a400/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉控制器
+      url: "/a400/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/a400/bootmedia-replace-bmr.html"
+    - title: 開機還原映像
+      url: "/a400/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/a400/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
     pdf-filename: VA400開機媒體AFF
     entries:
-    - title: 總覽
-      url: "/a400/bootmedia-replace-overview.html"
+    - title: 開機媒體更換工作流程
+      url: "/a400/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/a400/bootmedia-replace-requirements.html"
     - title: 檢查加密金鑰
       url: "/a400/bootmedia-encryption-preshutdown-checks.html"
-    - title: 關閉受損的控制器
+    - title: 關閉控制器
       url: "/a400/bootmedia-shutdown.html"
     - title: 更換開機媒體
       url: "/a400/bootmedia-replace.html"
     - title: 開機還原映像
       url: "/a400/bootmedia-recovery-image-boot.html"
-    - title: 切換回復MetroCluster 此組態
-      url: "/a400/bootmedia-2n-mcc-switchback.html"
     - title: 還原加密
       url: "/a400/bootmedia-encryption-restore.html"
     - title: 將故障零件退回NetApp

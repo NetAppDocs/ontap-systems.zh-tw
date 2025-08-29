@@ -6,35 +6,52 @@ entries:
   pdf-filename: 安裝與設定AFF
   entries:
   - title: 選擇安裝與設定體驗
-    url: "/a900/install_setup.html"
+    url: "/a900/install-setup.html"
   - title: 快速步驟
-    url: "/a900/install_quick_guide.html"
+    url: "/a900/install-quick-guide.html"
   - title: 影片步驟
-    url: "/a900/install_videos.html"
+    url: "/a900/install-videos.html"
   - title: 詳細步驟
-    url: "/a900/install_detailed_guide.html"
+    url: "/a900/install-detailed-guide.html"
 - title: 維護
   pdf-filename: VA900維護AFF
   entries:
-  - title: 總覽
+  - title: 維護綜覽
     url: "/a900/maintain-overview.html"
-  - title: 開機媒體
-    pdf-filename: VA900開機媒體AFF
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: AFF A900 啟動介質自動化
     entries:
-    - title: 總覽
-      url: "/a900/bootmedia_replace_overview.html"
+    - title: 開機媒體更換工作流程
+      url: "/a900/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/a900/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉控制器
+      url: "/a900/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/a900/bootmedia-replace-bmr.html"
+    - title: 還原開機媒體上的映像
+      url: "/a900/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/a900/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
+    pdf-filename: AFF A900啟動介質手冊
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/a900/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/a900/bootmedia-replace-requirements.html"
     - title: 檢查加密金鑰
-      url: "/a900/bootmedia_encryption_preshutdown_checks.html"
+      url: "/a900/bootmedia-encryption-preshutdown-checks.html"
     - title: 關閉受損的控制器
       url: "/a900/bootmedia-shutdown.html"
-    - title: 取代開機映像
-      url: "/a900/bootmedia_replace.html"
+    - title: 更換開機媒體
+      url: "/a900/bootmedia-replace.html"
     - title: 開機還原映像
       url: "/a900/bootmedia_recovery_image.html"
     - title: 還原加密
       url: "/a900/bootmedia-encryption-restore.html"
     - title: 將故障零件退回NetApp
-      url: "/a900/bootmedia_complete_rma.html"
+      url: "/a900/bootmedia-complete-rma.html"
   - title: 機箱
     pdf-filename: VA900機箱AFF
     entries:

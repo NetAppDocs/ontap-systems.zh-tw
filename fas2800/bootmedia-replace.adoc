@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, replace, boot, media, controller, module, fru map 
 summary: 您必須在控制器中找到開機媒體、然後依照指示進行更換。 
 ---
-= 更換開機媒體： FAS2820
+= 更換啟動介質並準備手動啟動恢復 - FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 您必須在控制器中找到開機媒體、然後依照指示進行�
 
 [role="lead"]
 您必須移除並打開受損的控制器模組，找到並更換控制器中的啟動介質，將啟動映像傳輸到 USB 驅動器，將 USB 驅動器插入控制器，然後啟動控制器。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 
 

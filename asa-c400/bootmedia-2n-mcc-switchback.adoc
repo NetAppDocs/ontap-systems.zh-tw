@@ -13,6 +13,8 @@ summary: 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後�
 [role="lead"]
 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。
 
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
+
 此工作僅適用於雙節點MetroCluster 的不完整組態。
 
 .步驟

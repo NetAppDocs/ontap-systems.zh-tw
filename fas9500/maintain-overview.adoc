@@ -2,7 +2,7 @@
 permalink: fas9500/maintain-overview.html 
 sidebar: sidebar 
 keywords: FAS9500 maintenance, maintenance, repairing FAS9500, repairing aff FAS9500, replace FAS9500 components, replace FAS9500 components 
-summary: 維護 ASA FAS9500 硬體 
+summary: 維護FAS9500硬件 
 ---
 = 維護 FAS9500 硬體
 :allow-uri-read: 
@@ -11,76 +11,107 @@ summary: 維護 ASA FAS9500 硬體
 
 
 [role="lead"]
+維護 FAS9500 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。
+
+維護過程假定 FAS9500 儲存系統已部署為ONTAP環境中的儲存節點。
+
+
+
+== 系統元件
+
 對於 FAS9500 儲存系統、您可以在下列元件上執行維護程序。
 
+[cols="25,65"]
+|===
 
 
-== 開機媒體
+ a| 
+link:bootmedia-replace-workflow-bmr.html["啟動媒體 - 自動恢復"]
+ a| 
+啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，系統會從合作夥伴節點擷取啟動映像，並自動執行對應的啟動功能表選項以在取代啟動媒體上安裝映像。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 
-開機媒體會儲存一組主要和次要的開機映像檔案、供系統在開機時使用。
+
+
+ a| 
+link:bootmedia-replace-workflow.html["啟動媒體 - 手動恢復"]
+ a| 
+啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在手動復原期間，您會從 USB 隨身碟啟動儲存系統並手動還原檔案系統映像和設定。如果您的儲存系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。
 
 
 
-== 快取模組
-
+ a| 
+link:caching_module_hot_swap.html["快取模組"]
+ a| 
 當系統登錄單一 AutoSupport （ ASUP ）訊息指出模組已離線時、您必須更換控制器的快取模組。
 
 
 
-== 機箱
-
+ a| 
+link:chassis_replace_overview.html["機箱"]
+ a| 
 機箱是實體機箱、可容納所有控制器元件、例如控制器 /CPU 單元、電源供應器和 I/O
 
 
 
-== 控制器
-
+ a| 
+link:controller_replace_overview.html["控制器"]
+ a| 
 控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 功能。
 
 
 
-== DCPM
-
-DCPM （ destage 控制器電源模組）包含 NVRAM11 電池。
-
-
-
-== DIMM
-
+ a| 
+link:dimm_replace.html["DIMM"]
+ a| 
 如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。
 
 
 
-== 風扇
+ a| 
+link:dcpm-nvram11-battery-replace.html["DCPM"]
+ a| 
+DCPM （ destage 控制器電源模組）包含 NVRAM11 電池。
 
+
+
+ a| 
+link:fan_swap_out.html["風扇"]
+ a| 
 風扇會冷卻控制器。
 
 
 
-== I/O模組
-
+ a| 
+link:pci_cards_and_risers_replace.html["I/O模組"]
+ a| 
 I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。
 
 
 
-== LED USB
-
+ a| 
+link:led_module_replace.html["LED USB"]
+ a| 
 LED USB模組可連線至主控台連接埠和系統狀態。
 
 
 
-== NVRAM
-
-NVRAM 模組（非揮發性隨機存取記憶體）可讓控制器在電源週期或系統重新開機時保留資料。
-
-
-
-== 電源供應器
-
-電源供應器可在控制器機櫃中提供備援電源。
+ a| 
+link:nvram_module_or_nvram_dimm_replacement.html["NVRAM"]
+ a| 
+NVRAM模組（非揮發性隨機存取記憶體）允許控制器在電源循環或系統重新啟動後保留數據，而NVRAM DIMM 則維護NVRAM設定。
 
 
 
-== 即時時鐘電池
+ a| 
+link:power_supply_swap_out.html["電源供應器"]
+ a| 
+電源供應器在控制器中提供備援電源。
 
+
+
+ a| 
+link:rtc_battery_replace.html["即時時鐘電池"]
+ a| 
 即時時鐘電池會在電源關閉時保留系統日期和時間資訊。
+
+|===

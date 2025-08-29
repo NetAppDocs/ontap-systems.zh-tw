@@ -11,7 +11,9 @@ summary: 關閉AFF A70或AFF A90儲存系統中受損的控制器，以防止資
 
 
 [role="lead"]
-關閉AFF A70或AFF A90儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。
+關閉AFF A70或AFF A90儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 [role="tabbed-block"]
 ====

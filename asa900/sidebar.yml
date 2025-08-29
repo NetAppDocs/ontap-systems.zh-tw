@@ -16,23 +16,38 @@ entries:
 - title: 維護
   pdf-filename: ASA A900 維護
   entries:
-  - title: 總覽
-    url: "/asa900/index.html"
-  - title: 開機媒體
-    pdf-filename: ASA A900 開機媒體
+  - title: 維護綜覽
+    url: "/asa900/maintain-overview.html"
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: AFF ASA 900 啟動媒體自動化
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/asa900/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/asa900/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉控制器
+      url: "/asa900/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/asa900/bootmedia-replace-bmr.html"
+    - title: 還原開機媒體上的映像
+      url: "/asa900/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/asa900/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
+    pdf-filename: AFF ASA 900 啟動介質手冊
     entries:
     - title: 總覽
       url: "/asa900/bootmedia_replace_overview.html"
     - title: 檢查加密金鑰
       url: "/asa900/bootmedia_encryption_preshutdown_checks.html"
     - title: 關閉受損的控制器
-      url: "/asa900/bootmedia_impaired_controller_shutdown.html"
-    - title: 更換故障的開機媒體
+      url: "/asa900/bootmedia-shutdown.html"
+    - title: 更換開機媒體
       url: "/asa900/bootmedia_replace.html"
     - title: 開機還原映像
       url: "/asa900/bootmedia_recovery_image.html"
     - title: 還原加密
-      url: "/asa900/bootmedia_encryption_restore.html"
+      url: "/asa900/bootmedia-encryption-restore.html"
     - title: 將故障零件退回NetApp
       url: "/asa900/bootmedia_complete_rma.html"
   - title: 機箱

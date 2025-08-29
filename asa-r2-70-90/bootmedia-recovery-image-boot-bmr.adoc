@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, boot the recovery image 
 summary: 在 ASA A70 或 ASA A90 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。 
 ---
-= 還原開機媒體上的映像 - ASA A70 和 ASA A90
+= 在啟動媒體上恢復ONTAP映像 - ASA A70 和ASA A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -128,7 +128,7 @@ Enter the passphrase again to confirm:
 Enter the backup data:
 -----BEGIN BACKUP-----
 <passphrase_value>
------END ACKUP-----
+-----END BACKUP-----
 ....
 =====
 

@@ -6,37 +6,52 @@ entries:
   pdf-filename: FAS9500-Install and Setup
   entries:
   - title: 選擇安裝與設定體驗
-    url: "/fas9500/install_setup.html"
+    url: "/fas9500/install-setup.html"
   - title: 快速步驟
-    url: "/fas9500/install_quick_guide.html"
+    url: "/fas9500/install-quick-guide.html"
   - title: 影片步驟
-    url: "/fas9500/install_videos.html"
+    url: "/fas9500/install-videos.html"
   - title: 詳細步驟
-    url: "/fas9500/install_detailed_guide.html"
+    url: "/fas9500/install-detailed-guide.html"
 - title: 維護
   pdf-filename: FAS9500維護
   entries:
-  - title: 總覽
+  - title: 維護綜覽
     url: "/fas9500/maintain-overview.html"
-  - title: 開機媒體
-    pdf-filename: FAS9500開機媒體
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: FAS9500啟動介質自動化
     entries:
-    - title: 總覽
-      url: "/fas9500/bootmedia_replace_overview.html"
+    - title: 開機媒體更換工作流程
+      url: "/fas9500/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/fas9500/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉控制器
+      url: "/fas9500/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/fas9500/bootmedia-replace-bmr.html"
+    - title: 還原開機媒體上的映像
+      url: "/fas9500/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas9500/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
+    pdf-filename: FAS9500啟動介質手冊
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/fas9500/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/fas9500/bootmedia-replace-requirements.html"
     - title: 檢查加密金鑰
-      url: "/fas9500/bootmedia_encryption_preshutdown_checks.html"
+      url: "/fas9500/bootmedia-encryption-preshutdown-checks.html"
     - title: 關閉受損的控制器
       url: "/fas9500/bootmedia-shutdown.html"
     - title: 更換開機媒體
-      url: "/fas9500/bootmedia_replace.html"
-    - title: 開機恢復映像
-      url: "/fas9500/bootmedia_recovery_image.html"
-    - title: OKM、NSE和NVE的開機後媒體更換步驟
-      url: "/fas9500/bootmedia_encryption_restore.html"
-    - title: 將故障零件歸還給NetApp
-      url: "/fas9500/bootmedia_complete_rma.html"
-  - title: 快取模組
-    url: "/fas9500/caching_module_hot_swap.html"
+      url: "/fas9500/bootmedia-replace.html"
+    - title: 開機還原映像
+      url: "/fas9500/bootmedia-recovery-image.html"
+    - title: 還原加密
+      url: "/fas9500/bootmedia-encryption-restore.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas9500/bootmedia-complete-rma.html"
   - title: 機箱
     pdf-filename: FAS9500機箱
     entries:
@@ -44,22 +59,22 @@ entries:
       url: "/fas9500/chassis_replace_overview.html"
     - title: 關閉受損的控制器
       url: "/fas9500/chassis_replace_shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/fas9500/chassis_replace_move_hardware.html"
-    - title: 還原及驗證組態
+    - title: 還原並驗證組態
       url: "/fas9500/chassis_replace_complete_system_restore_rma.html"
-  - title: 控制器模組
+  - title: 控制器
     pdf-filename: FAS9500控制器模組
     entries:
     - title: 總覽
       url: "/fas9500/controller_replace_overview.html"
     - title: 關閉受損的控制器
       url: "/fas9500/controller_replace_shutdown.html"
-    - title: 更換控制器模組硬體
+    - title: 更換控制器
       url: "/fas9500/controller_replace.html"
     - title: 還原並驗證系統組態
       url: "/fas9500/controller_replace_system_config_restore_and_verify.html"
-    - title: 重新安裝系統
+    - title: 可重新恢復的系統
       url: "/fas9500/controller_replace_recable_reassign_disks.html"
     - title: 完整系統還原
       url: "/fas9500/controller_replace_complete_system_restoration_rma.html"

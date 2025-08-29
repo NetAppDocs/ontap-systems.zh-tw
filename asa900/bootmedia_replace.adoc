@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ASA A900, replace, boot, media, controller, directions. replace boot media, transfer image 
 summary: 您必須移除並開啟控制器模組、找出並更換控制器中的開機媒體、然後將映像傳輸到替換的開機媒體。 
 ---
-= 更換開機媒體 - ASA A900
+= 更換啟動媒體並準備手動啟動恢復 - ASA A900
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 您必須移除並開啟控制器模組、找出並更換控制器中�
 
 [role="lead"]
 您必須拔下控制器模組、移除並開啟控制器模組、找到並更換控制器中的開機媒體、然後將映像傳輸至替換的開機媒體。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 
 
@@ -80,7 +82,7 @@ image:../media/icon_round_1.png["編號 1"]
 .動畫-取代開機媒體
 video::c5080658-765e-4d29-8456-adf2000e1495[panopto]
 +
-image::../media/drw_a900_remove_boot_dev.png[移除開機媒體]
+image::../media/drw_9000_remove_boot_dev.svg[移除開機媒體]
 
 +
 [cols="1,4"]
@@ -162,7 +164,7 @@ USB 快閃磁碟機應具有受損控制器所執行的適當 ONTAP 映像。
 . 如果控制器處於延伸或光纖附加MetroCluster 的功能不全、您必須還原FC介面卡組態：
 +
 .. 開機至維護模式：「boot_ONTAP maint」
-.. 將MetroCluster 這個連接埠設為啟動器：「ucadmin modify -m fit -t initator adapter_name」
+.. 將MetroCluster連接埠設定為啟動器： `ucadmin modify -m fc -t initiator adapter_name`
 .. 停止以返回維護模式：「halt（停止）」
 
 

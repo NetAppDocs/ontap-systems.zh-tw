@@ -13,6 +13,9 @@ summary: 從恢復映像開機受損節點的程序、取決於系統是否為�
 [role="lead"]
 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
 
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
+
+.步驟
 . 在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：「boot_recovery」
 +
 映像會從USB隨身碟下載。
@@ -88,7 +91,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 
 . 下一個取決於您的系統組態：
 +
-** 如果您的系統已設定內建Keymanager、NSE或NVE、請前往 xref:bootmedia_encryption_restore.adoc[OKM、NSE和NVE的開機後媒體更換步驟]
+** 如果您的系統已設定內建Keymanager、NSE或NVE、請前往 xref:bootmedia-encryption-restore.adoc[OKM、NSE和NVE的開機後媒體更換步驟]
 ** 如果您的系統未設定內建金鑰管理程式、NSE或NVE、請完成本節中的步驟。
 
 

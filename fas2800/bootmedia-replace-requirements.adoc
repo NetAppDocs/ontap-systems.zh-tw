@@ -1,0 +1,37 @@
+---
+permalink: fas2800/bootmedia-replace-requirements.html 
+sidebar: sidebar 
+keywords: fas2800, replace the boot media 
+summary: 在更換 FAS2800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。 
+---
+= 手動啟動介質恢復的要求 - FAS2800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換 FAS2800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
+
+.USB 隨身碟
+* 確保您有一個格式化為 FAT32 的 USB 隨身碟。
+* USB 必須具有足夠的儲存容量來容納 `image_xxx.tgz`文件。
+
+
+.文件準備
+複製 `image_xxx.tgz`將檔案複製到 USB 隨身碟。使用 USB 隨身碟傳輸ONTAP映像時將使用此檔案。
+
+.組件更換
+使用NetApp提供的替換組件來更換故障組件。
+
+.控制器識別
+更換受損的啟動介質時，將命令應用到正確的控制器至關重要：
+
+* _受損控制器_是您正在執行維護的控制器。
+* _健康控制器_是受損控制器的 HA 夥伴。
+
+
+.接下來呢？
+在您檢閱了更換開機媒體的需求之後link:bootmedia-encryption-preshutdown-checks.html["檢查開機媒體上的加密金鑰支援和狀態"]，您需要執行。

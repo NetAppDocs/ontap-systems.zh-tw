@@ -33,9 +33,9 @@ link:bootmedia-replace-workflow-bmr.html["啟動媒體 - 自動恢復"]
 
 
  a| 
-link:bootmedia-replace-workflow.html["啟動媒體-手動恢復"]
+link:bootmedia-replace-workflow.html["啟動媒體 - 手動恢復"]
  a| 
-啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，儲存系統使用這些檔案從 USB 磁碟機啟動映像並從合作夥伴節點恢復配置
+啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在手動復原期間，您會從 USB 隨身碟啟動儲存系統並手動還原檔案系統映像和設定。如果您的儲存系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。
 
 
 
@@ -112,6 +112,6 @@ link:rtc-battery-replace.html["即時時鐘電池"]
  a| 
 link:system-management-replace.html["系統管理模組"]
  a| 
-系統管理模組提供控制器與主控台或筆記型電腦之間的介面、以供控制器或系統維護之用。系統管理模組包含開機媒體、並儲存系統序號（ SSN ）。
+系統管理模組提供控制器和控制台或筆記型電腦之間的接口，用於控制器或系統維護目的。系統管理模組包含啟動媒體並儲存系統序號 (SSN)。
 
 |===

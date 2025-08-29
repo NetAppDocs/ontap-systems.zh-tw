@@ -1894,7 +1894,6 @@
   <block id="11991b3479fcd322fec352f130b7b364" category="admonition">地址格式為+https://x.x.x.x+。</block>
   <block id="58599a78c7345fe9e241e0a8a135d733" category="list-text">使用您在《NetApp ONTAP 產品介紹》指南中收集的資料來設定系統。</block>
   <block id="2ae25bf6a8aeb42c4073ddba26224b0c" category="summary">更換零件後、您可以將故障零件退回NetApp、如套件隨附的RMA指示所述。</block>
-  <block id="13437270a7a5bb30024bcf51e56b9645" category="doc">將故障零件歸還給NetApp AFF - NetApp - 4A900</block>
   <block id="727b43bb986548fddfd9fbbfd6c3c609" category="summary">若要完成更換程序並將系統還原至完整作業、您必須重新恢復儲存設備、還原NetApp儲存加密組態（如有必要）、以及安裝新控制器的授權。</block>
   <block id="055140d300b472c3cf197b316fc1a111" category="doc">完整系統還原- AFF 還原為VA900</block>
   <block id="b3f3a2ee1b0886d1b6596283fceb837b" category="paragraph">如果節點處於MetroCluster 不完整組態、且站台上的所有節點均已更換、則必須先在_replace_節點或節點上安裝授權金鑰、才能進行切換。</block>
@@ -2009,7 +2008,6 @@
   <block id="800c8750475f7f7221a9b7946bec8d10" category="list-text">選取要開機至載入器的選項。</block>
   <block id="e5fcd011be287f0b85815a5d0c8165aa" category="open-title">大多數組態</block>
   <block id="6a925f3765a4dc795f4b5a0732579780" category="open-title">控制器位於MetroCluster 一個不一樣的地方</block>
-  <block id="097b77e85acb6a3710edc7929eb72d93" category="doc">開機恢復映像AFF - ImageA900</block>
   <block id="6ce5f7147d284a7d41c1fc93d3072d57" category="list-text">當系統提示覆寫「/etc/ssh / ssh _host_ecdsa_key」時、請按「y」。</block>
   <block id="1396dacdf561903f32c605f06d2cf5d8" category="list-text">當系統提示您確認還原備份是否成功時、請按「y」。</block>
   <block id="c9ed271ea801891a1b5c1e6e048813b6" category="list-text">出現還原組態複本的提示時、請按「Y」。</block>
@@ -2018,7 +2016,6 @@
   <block id="86bba5d76feac422bdd702d82a755938" category="list-text">等待iSCSI儲存設備連線連線。</block>
   <block id="c08617576b470c531fa6946e0863ed35" category="paragraph">您可以在看到下列訊息後繼續：</block>
   <block id="d2f83f17d591f35e8d5d48e486cff011" category="inline-xref-macro">OKM、NSE和NVE的開機後媒體更換步驟</block>
-  <block id="29d4dec218aeaffabfed6dcc8fd1ad45" category="list-text">如果您的系統已設定內建Keymanager、NSE或NVE、請前往 <block ref="39910b5f3ea1ee39d8059faae857cc98" category="inline-xref-macro-rx"></block></block>
   <block id="2a1253e1eb3f5fea69107948ef4c203d" category="summary">本主題提供圖形指示、說明如何從機架安裝和纜線安裝系統、直到系統初次開機為止。</block>
   <block id="cb0bd9965128fe9d9c7dc5fe35ba00fa" category="doc">快速步驟- AFF 解決方案</block>
   <block id="86b058636c934f73a262e3a5469f088e" category="paragraph">本主題提供圖形指示、說明如何從機架安裝和纜線安裝系統、直到系統初次開機為止。如果您熟悉NetApp系統的安裝、請使用本內容。</block>
@@ -2116,7 +2113,6 @@
   <block id="fcc9aa8940599a2c3be38723a65e9e21" category="doc">更換DIMM AFF - VA900</block>
   <block id="f7980892d5a8155c0cf2a73f4bff4bad" category="paragraph">將元件安裝到控制器模組之後、您必須將控制器模組裝回系統機箱、然後啟動作業系統。</block>
   <block id="f019032ca5e4ee1339ef0bcd485f9c8d" category="summary">您必須移除並開啟控制器模組、找出並更換控制器中的開機媒體、然後將映像傳輸到替換的開機媒體。</block>
-  <block id="f42f050dc5269ad7b9f62abb5be6f335" category="doc">移除控制器、更換開機媒體、並傳輸開機映像AFF - ImageA900</block>
   <block id="5f1d298de53194255e6ce0c8f30f4bdb" category="list-text">提起控制器模組背面的黑色通風管、然後使用下列圖例或控制器模組上的FRU對應圖找到開機媒體：</block>
   <block id="c8587180911d070686f7467322a07db1" category="list-text">將機箱蓋上的針腳與主機板托架上的插槽對齊、然後將機箱蓋滑入定位、以重新安裝控制器模組機箱蓋。</block>
   <block id="9148f81e87e207af324fa20ce6e3a4df" category="list-text">視需要重新安裝控制器模組。</block>
@@ -2925,7 +2921,6 @@
   <block id="e36a558e7bc20ae0e75bec222964d055" category="paragraph">數位顯示器上的兩個數字都會開始閃爍、而操作員顯示面板上的黃色LED會在約五秒鐘後亮起、提醒您、擱置中的磁碟櫃ID尚未生效。</block>
   <block id="9c221bef9744439a86ecbb6f88e250ff" category="list-text">重新啟動磁碟櫃、使機櫃ID生效。</block>
   <block id="205f1a8463c3864309c68834a88b379a" category="paragraph">您必須關閉兩個電源開關、等待適當的時間、然後重新開啟電源、才能完成電源循環。</block>
-  <block id="15a1d20a0f87ef124a4dfb12c2d12f8a" category="list-text">如果執行的是（控制器可用於處理資料）、且機櫃中的所有磁碟機均為無擁有、備援或是外聯Aggregate的一部分、請等待至少70秒。ONTAP</block>
   <block id="0de4baec8d6e3dac5c52267ff0631bac" category="list-text">針對每個額外的磁碟櫃重複步驟1到9。</block>
   <block id="c6f83377a8f707e5d4500fa6c34141e8" category="list-text">確認您的系統沒有重複的機櫃ID。</block>
   <block id="79a8830b6eb260be5b914306191dde58" category="paragraph">當兩個或多個磁碟櫃具有相同的ID時、系統會指派一個等於或大於100的軟體ID號碼給重複的磁碟櫃。您必須變更軟體ID（重複）號碼。</block>
@@ -3930,7 +3925,6 @@
   <block id="22b99956f40dddc5bacbbde3d6214bfb" category="paragraph">請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。DS224-C的纜線拉片已關閉。</block>
   <block id="0d41b873813de2203d2c7cc22322899d" category="list-text">請使用下列動畫或圖例、將控制器連接至兩個磁碟機櫃。</block>
   <block id="b0be8a8947e60a5cb3175d6d1d1c560d" category="paragraph">所示為FAS8300和FAS8700。</block>
-  <block id="14df5008a24cd65fbb232505d17779b3" category="doc">將故障零件歸還給NetApp AFF - NetApp - FAS8300和FAS8700</block>
   <block id="9839b9efeb4f2cb59f36a02a747b73cb" category="doc">完整系統還原：FAS8300和FAS8700</block>
   <block id="c1541e02506543efaa1d18ae5a171fa3" category="doc">重新安裝系統並重新分配磁碟- FAS8300和FAS8700</block>
   <block id="7b69f40dd7d380028b22097976e23e5c" category="paragraph">您必須先完成一系列工作、才能將系統還原至完整運作狀態。</block>
@@ -4015,7 +4009,6 @@
   <block id="b98cf2068f61b55f2a9881a2a679fcc3" category="doc">更換NVDIMM電池- FAS8300和FAS8700</block>
   <block id="2cf2814258fcdc62e9d952b1e5b1ae63" category="paragraph">若要更換NVDIMM電池、您必須從控制器模組中取出故障電池、然後將替換電池裝入控制器模組。請參閱控制器模組內的FRU對應圖、以找出NVDIMM電池。</block>
   <block id="d51d3e7568ea6b575902677aaf5d5ccc" category="paragraph">您可以使用下列動畫、圖例或書面步驟來更換NVDIMM電池。</block>
-  <block id="27dcde903ce9d2827a6882d72efe7cb4" category="doc">關閉受損的控制器AFF - FAS8300和FAS8700</block>
   <block id="d1903d398c4c8283b66cc2ee2599cef5" category="doc">快速指南- FAS8300和FAS8700</block>
   <block id="221315bbb17a9424f37793425986d6c2" category="inline-link">FAS8300和FAS8700安裝與設定說明</block>
   <block id="d02e6ae989532a758e17797d21d350db" category="doc">更換和搬移硬體：FAS8300和FAS8700</block>
@@ -4031,7 +4024,6 @@
   <block id="23322e561ac6bea2fdd969f81f065cb0" category="list-text">NVDIMM位於插槽11。</block>
   <block id="48d478390eb7cda13973a166fcbc6922" category="paragraph">您可以使用下列動畫、繪圖或書面步驟、在機箱中安裝控制器模組。</block>
   <block id="601c15b5101316dedeb3a25975e9e2f9" category="summary">您必須在控制器模組中找到開機媒體（請參閱控制器模組上的FRU對應表）、然後依照指示進行更換。</block>
-  <block id="ba4fadf78396a2db14bc9a4e0f707f9d" category="doc">更換開機媒體- FAS8300和FAS8700</block>
   <block id="88ef394be03c2dee8da212eb3ce203d3" category="paragraph">鎖定鎖條</block>
   <block id="be0b7bebdbc010beb298a7c7fac29946" category="paragraph">將控制器滑出機箱</block>
   <block id="5783f79f9e7f2e133566622979b9730b" category="paragraph">您必須在控制器模組中找到開機媒體（請參閱控制器模組上的FRU對應圖）、然後依照指示進行更換。</block>
@@ -4068,7 +4060,6 @@
   <block id="185f316f26b2e07ee5c76fd51819ade3" category="list-text">旋鬆夾層卡上的指旋螺絲、然後將插卡從插槽中直接輕拉出、並放在一旁。</block>
   <block id="a8e704986b8fe0372f306f5479785f13" category="list-text">將替換的夾層卡對準插槽和導引腳、然後將插卡輕推入插槽。</block>
   <block id="baa8f832a66343ab3a1fa5e326ae95d5" category="list-text">鎖緊夾層卡上的指旋螺絲。</block>
-  <block id="bef53c14eb719bb1cd8539b91f7515d7" category="doc">以雙節點MetroCluster 的不全功能組態（AFF 例如：FASfas8300和FAS8700）切換回集合體</block>
   <block id="73e891cd10bc7a669d3df2629ca0ed7c" category="doc">更換NVDIMM - FAS8300和FAS8700</block>
   <block id="d77f71cbbb3c8057b08d0dfb49aa5664" category="paragraph">您可以使用下列、圖例或書面步驟、從機箱中移除控制器模組。</block>
   <block id="702c236818660597292fd2708b25d1d7" category="list-text">雖然NVDIMM的內容已加密、但最好先清除NVDIMM的內容再更換。如需詳細資訊、請參閱<block ref="89de74d6a86df9137b0ef3fb03a43036" category="inline-link-rx"></block> 請至NetApp支援網站。</block>
@@ -4077,11 +4068,9 @@
   <block id="bf333756fca94003818a0db8ced6f7d9" category="list-text">將控制器恢復正常運作：「儲存容錯移轉還原-ofnode_disapped_node_name_」</block>
   <block id="3a08488c499949ce994ce7beebe666ee" category="doc">更換電源供應器- FAS8300和FAS8700</block>
   <block id="54f4c70c653781a776673e986d65e502" category="paragraph">您可以使用下列動畫、圖例或書面步驟來更換電源供應器。</block>
-  <block id="fe0e817b3bc5b4c3f92a0bd2fc673648" category="doc">開機媒體更換總覽：AFF FAS8300和FAS8700</block>
   <block id="5b904801e53f1801fe6ebd755f21ce8e" category="doc">完成還原與更換程序：FAS8300與FAS8700</block>
   <block id="f53fd2bac78253daaa912be518fddcc2" category="doc">熱交換風扇模組- FAS8300和FAS8700</block>
   <block id="f94769a33d4669a6660b7ec2722589ef" category="paragraph">您可以使用下列動畫、圖例或書面步驟來熱交換風扇模組。</block>
-  <block id="9860772233b4555001c5a388230758df" category="doc">開機恢復映像AFF ：FAS8300和FAS8700</block>
   <block id="e9c29b2069e0c6c237cd1e2a30e9c48b" category="doc">關閉控制器- FAS8300和FAS8700</block>
   <block id="ba33da695ad96f17f79f8e49c2a7e76b" category="paragraph">更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。</block>
   <block id="0bbc1525261c73e0484c79ecb9b38dc6" category="list-text">從來源拔下控制器模組電源供應器。</block>
@@ -4314,7 +4303,6 @@
   <block id="ed6aa14dcddd8960a96a377341c9d252" category="section-title">選項2：連接10GbE主機網路的纜線</block>
   <block id="7f41e7efae96b1a03620ad35c03b48c9" category="paragraph">控制器上的10GbE連接埠連接至10GbE主機網路交換器。</block>
   <block id="67f8e001ff11a5ea0b9591fadb082aee" category="section-title">選項4：將控制器連接至兩個磁碟機櫃</block>
-  <block id="228833e7e465458067df236eb339d948" category="doc">將故障零件歸還給NetApp AFF - NetApp - 4A800</block>
   <block id="f474da68fe49004e7ef71b0e2e717c06" category="doc">完整系統還原：AFF NetApp A800</block>
   <block id="12abc0287f5162e3fd98e6515d1cc063" category="doc">重新安裝系統並重新分配磁碟- AFF VA800</block>
   <block id="865bb86499cf1ad3a70c7ff888673760" category="doc">關閉功能受損的控制器AFF -現象A800</block>
@@ -4357,7 +4345,6 @@
   <block id="7f162e118d7c5841e35145af500cfea2" category="section-title">步驟10：安裝控制器模組</block>
   <block id="99c63b9bf884dd51a946aceee88a56e0" category="paragraph">將所有元件從受損的控制器模組移至更換的控制器模組之後、您必須將更換的控制器模組安裝到機箱中、然後將其開機至維護模式。</block>
   <block id="c4565f27e7eb1d0640e258fb796df9c4" category="list-text">將系統纜線和收發器模組插入控制器模組、然後重新安裝纜線管理設備。</block>
-  <block id="80257ad9b8e102e01f1a08f309c3eed0" category="doc">將開機映像傳輸到開機媒體AFF - ImageA800</block>
   <block id="2bb6eb6e274e403747742b20b6b76f1a" category="doc">更換即時時鐘電池AFF - REVA800</block>
   <block id="92a1e44c6fd05cd1ba8ab2abf944200f" category="paragraph">擴充卡2（中間擴充卡）鎖定栓</block>
   <block id="f8875cd0262026ed3fb8588a40cc1ddf" category="list-text">在提升板2下找到RTC電池。</block>
@@ -4387,10 +4374,8 @@
   <block id="5c2989b756c1c0a4f26576c2a249cb73" category="paragraph">擴充卡3和DIMM 19 - 22和24</block>
   <block id="deed19e25ff1800b42b409fbd813f32a" category="paragraph">*附註：*插槽2和14為空白。請勿嘗試在這些插槽中安裝DIMM。</block>
   <block id="759e216c6a22313a95c34c198ce8cb0b" category="summary">在更換開機媒體之前、請先移除控制器模組上的擴充卡3、找出控制器模組中故障的開機媒體。</block>
-  <block id="34cf3a43d39d8b0acc65bd578d7188da" category="doc">更換開機媒體AFF - REE A800</block>
   <block id="b075a4576b5250274446097769fe8ec1" category="list-text">將替換的開機媒體安裝到控制器模組：</block>
   <block id="2bed99b4660dcf909368c3a2ae62b513" category="doc">更換SSD磁碟機或HDD磁碟機- AFF VA800</block>
-  <block id="4050846ab3a5766e0ed28bed6ef9631b" category="doc">開機恢復映像AFF - ImageA800</block>
   <block id="3b1cae4630f47c8bafa2138c896b9e8d" category="list-text">使用"shorage容錯移轉恢復-fromnode"命令來歸還控制器</block>
   <block id="b847555d08409368f0fef45554d04bc5" category="doc">更換PCIe卡AFF - REVA800</block>
   <block id="1ae20649d2f47264734a3a5ec5e979b9" category="paragraph">若要更換PCIe卡、您必須從目標擴充卡的PCIe卡連接埠移除纜線和任何QSFP和SFP、從控制器模組移除擴充卡、移除並更換PCIe卡、將擴充卡和任何QSFP和SFP重新安裝到連接埠上、 並連接連接埠。</block>
@@ -4409,7 +4394,6 @@
   <block id="4762dce14a885434d0d88406f201a65e" category="list-text">將PCIe卡安裝到提升板的同一個插槽中：</block>
   <block id="a1228212b1280f9a69b5523ecd1a6854" category="list-text">將擴充卡與擴充卡中的插槽對齊、然後將其正面滑入擴充卡的插槽。</block>
   <block id="515a9278fa676806936af5610703610f" category="list-text">若為擴充卡2或3、請關閉側邊面板。</block>
-  <block id="03163c4d180c5b6d6482efa550043cd8" category="doc">關閉控制器AFF -現象A800</block>
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
   <block id="161d11f75b68457ea33ac52c79b01c05" category="doc">更換NVDIMM AFF - NVME A800</block>
   <block id="2c0856fef0927def0bd154513fb326fb" category="list-text">如果您要移除或移動NVDIMM、請解除鎖定擴充卡上的鎖定栓、然後移除適用的擴充卡。</block>
@@ -4479,7 +4463,6 @@
   <block id="3e2f0478573244aa002f7207cde9b93b" category="list-text">請使用下列動畫或圖例、將控制器連接至單一磁碟機櫃。</block>
   <block id="2d30f0e7d0bd139e4aadac367a22367c" category="section-title">選項3：將控制器連接至SAS磁碟機櫃</block>
   <block id="f7a5a513bed985929212bb6fb12674e1" category="list-text">使用下列圖例將控制器連接至兩個磁碟機櫃。</block>
-  <block id="22cc15dad4c522616e5130f927446d07" category="doc">將故障零件歸還給NetApp AFF - NetApp -即可</block>
   <block id="2147ead816c0910c1fb713da5e278601" category="doc">完整系統還原：AFF 還原為VA400</block>
   <block id="3d295bc9d76a2ebbc6f508a6fdc75d90" category="doc">重新安裝系統並重新分配磁碟- AFF VA400</block>
   <block id="d21dc442f2ac95e798154d9d5d6e5d0a" category="doc">關閉受損的控制器AFF - VA400</block>
@@ -4499,7 +4482,6 @@
   <block id="6b9a3fa7bbe5a7acd3b913b48966aec6" category="list-text"><block ref="6b9a3fa7bbe5a7acd3b913b48966aec6" category="inline-link-macro-rx"></block></block>
   <block id="c98df33d69df5ef2c70238c6ec12241c" category="doc">更換DIMM AFF - VA400</block>
   <block id="ef3d6a7034bbb6a1a5a3adc4e54f05da" category="paragraph">DIMM位於插槽2、4、13和15中。NVDIMM位於插槽11。</block>
-  <block id="170df6d027f1af0af09f17faa2ab6d64" category="doc">更換開機媒體AFF - VA400</block>
   <block id="2328259b44c61e074b53206e40c60845" category="paragraph">您可以使用下列動畫、圖例或書面步驟來取代開機媒體。</block>
   <block id="dd473272c4d6050e610191be8ab18137" category="doc">更換PCIe或夾層卡AFF - VA400</block>
   <block id="3c38b76f36cf9e85685d2299abf20afc" category="section-title">步驟6：將控制器模組還原為運作狀態</block>
@@ -4512,7 +4494,6 @@
   <block id="9f10aac4e72d368f5602754ad5076de6" category="doc">完成還原與更換程序AFF -還原A400</block>
   <block id="0ecf4967de705c4a27e4c0f0513becb3" category="paragraph">_HA-stu__的值可以是下列其中一項：</block>
   <block id="2c4c75d1e0e065592eedb5be469928fc" category="doc">熱交換風扇模組- AFF VA400</block>
-  <block id="d8be62011c1882fcf382ba1c61256314" category="doc">開機恢復映像AFF - ImageA400</block>
   <block id="f63746c86a42cd15d7a70dfdd276f719" category="doc">關閉控制器AFF -現象A400</block>
   <block id="0288adc0f71efbfccd93c799c7b290be" category="section-title">選項1：更換機箱時關閉控制器</block>
   <block id="c41b3a61f99c2acfc4df4b56cbc1ea35" category="section-title">選項2：在雙節點MetroCluster 的現象組態中關閉控制器</block>
@@ -4654,9 +4635,6 @@
   <block id="3ce57900c3b1fca4ec9acdde53a7ce72" category="sidebar">VA300機箱AFF</block>
   <block id="c49dd0e106f4d1baf8b7e7083d5068b3" category="sidebar">部分A300控制器模組AFF</block>
   <block id="d5e04348de632d7c88520b90cf79f1fa" category="sidebar">開機恢復映像</block>
-  <block id="2e8840df8a206cd4e5aa7e0fa02b1cf7" category="sidebar">更換硬體</block>
-  <block id="fa526b254f42bdec5706995cc5868952" category="sidebar">還原及驗證組態</block>
-  <block id="043f87552b799b527c2dd72b0313e404" category="sidebar">更換控制器模組硬體</block>
   <block id="718b8a88a314d56b344c3895d896ab2a" category="sidebar">還原並驗證系統組態</block>
   <block id="88e09b832b8634d2f827a9e44cf2569c" category="sidebar">重新安裝系統</block>
   <block id="2392f11d96d6fc4362b42688f146c995" category="sidebar">安裝新系統的機櫃並進行纜線連接</block>
@@ -4719,16 +4697,6 @@
   <block id="7adeeef71f46a3a2275476684d43f7c0" category="sidebar">C190機箱AFF</block>
   <block id="d2b7406fea14e725ea0ee27f6aaeb406" category="sidebar">HC190控制器模組AFF</block>
   <block id="246a9aee554901f0dcaa84281ba65f27" category="sidebar">FAS8300和FAS8700系統</block>
-  <block id="47457e18f221715e00fad3fb4c7a52dc" category="sidebar">FAS8300和FAS8700安裝與設定AFF</block>
-  <block id="de07745e6df6470f2740b5a80f2cfc02" category="sidebar">FAS8300和FAS8700維持不變AFF</block>
-  <block id="a137d57ddda596bd08f1d0704c5d1c39" category="sidebar">FAS8300和FAS8700開機媒體AFF</block>
-  <block id="32efd1c40b64ba63f8e2ef74e7bbd3ef" category="sidebar">FAS8300和FAS8700快取模組AFF</block>
-  <block id="ce745a6886861b37bbd4e634d23d3d30" category="sidebar">FAS8300和FAS8700機箱AFF</block>
-  <block id="a387a6313c902695bd31ebfe788cd3a4" category="sidebar">FAS8300和FAS8700控制器AFF</block>
-  <block id="0fcef37c24790dd8deb76f0463ab8ae7" category="sidebar">FAS8300和FAS8700 DIMM AFF</block>
-  <block id="89a799818e0c9e291b449a0b1a37c1a8" category="sidebar">FAS8300和FAS8700 PCIe或夾層卡AFF</block>
-  <block id="b93c4e02bbbbb606086c414028b69b0c" category="sidebar">FAS8300與FAS8700電源供應器AFF</block>
-  <block id="099c4a72daac7793c0290ca5e2fdf623" category="sidebar">FAS8300與FAS8700即時時鐘電池AFF</block>
   <block id="e7fe78f29d2a12982128aa007f6851a6" category="sidebar">VA250系統AFF</block>
   <block id="0505c366cf2aa05ef59b3b78f4e74a9f" category="sidebar">安裝與設定AFF</block>
   <block id="18733d6bd4b969f880747fde25a787be" category="sidebar">VA250維護AFF</block>
@@ -4738,7 +4706,6 @@
   <block id="7990706983b7a68de799c5164d608a30" category="sidebar">系統AFF</block>
   <block id="f9bc6672d0c11aeaba7c639726c8452d" category="sidebar">安裝與設定AFF</block>
   <block id="cfa03b31ffbc6dcdead22aa89e56143c" category="sidebar">VA800維護AFF</block>
-  <block id="b5b680b3561fefc523bf540f6cbb76a5" category="sidebar">解答A800開機媒體AFF</block>
   <block id="7bc56029e8efc19176ac65d5c1b11f63" category="sidebar">解答A800機箱AFF</block>
   <block id="03a6e6d8c5aef6f456ef142fc5a3912b" category="sidebar">VA800控制器模組AFF</block>
   <block id="6068fc2d3e06aeff53e2c84fd7bd9e9e" category="sidebar">FAS500f系統</block>
@@ -4842,13 +4809,11 @@
   <block id="46dd13a6814ed7f56a6b685a892da660" category="doc">更換即時時鐘電池- FAS9500</block>
   <block id="542a28d27da2740fcbd2bfb50ba849cc" category="doc">關閉受損節點- FAS9500</block>
   <block id="5852e0b4d479d20d783c528e9f8e41fa" category="doc">FAS9500系統</block>
-  <block id="bc8cb8c20c19791f56e4ce60f7a2aad0" category="doc">移除控制器、更換開機媒體、然後傳輸開機映像- FAS9500</block>
   <block id="eb0c0a024c4f0aa6cfdd5767de1f16f1" category="doc">更換I/O模組- FAS9500</block>
   <block id="6e2a8281a18f34ebf7b28cf7584e58ea" category="doc">換出一個風扇- FAS9500</block>
   <block id="96454e2f4cce6f7ff26336656ad504c5" category="doc">關閉受損的控制器- FAS9500</block>
   <block id="2fcf4c33596849c180828b304c73609a" category="doc">更換LED USB模組- FAS9500</block>
   <block id="737b04c7e695216162d794c71001099a" category="doc">更換控制器模組硬體- FAS9500</block>
-  <block id="c3b3c57f039315476b0683acbee42a5a" category="doc">關閉受損的控制器- FAS9500</block>
   <block id="3b56ab083e8d5c37dcc957efc509182f" category="doc">完整系統還原- FAS9500</block>
   <block id="3f679ad9b20cbb8994ff36e9ce18d58f" category="doc">更換NVRAM模組和/或NVRAM DIMM - FAS9500</block>
   <block id="140a295824b1023b2fcf1ac1414fc56b" category="paragraph">若要更換和NVRAM DIMM、您必須從機箱中移除NVRAM模組、更換模組中故障的DIMM、然後重新安裝NVRAM模組。</block>
@@ -4879,19 +4844,6 @@
   <block id="837fcf17f123dccb1301f252ade8a58e" category="admonition">如果您的系統採用雙節點MetroCluster 的功能不全、您必須依照下一步所述、將集合體切換回原位。</block>
   <block id="abc219c929a34cf7b62e36c2503b63ac" category="video-title">動畫-移除控制器模組</block>
   <block id="0b8e9f368ea269ec23c6c676a7561e53" category="video-title">動畫-取代開機媒體</block>
-  <block id="defa99ee750d2ca6a8f52cf79e8eb713" category="list-text">bootarg.init.boot_clustered</block>
-  <block id="d18fd3db938a26ebbd3f74de41f0b73f" category="list-text">合作夥伴系統</block>
-  <block id="bac349cdf99ddd20206c9b20eb9e6d22" category="list-text">bootarg.init.flash_optimized AFF for e.com</block>
-  <block id="f3b31cc7028e1885fb21b81b0fdbee37" category="list-text">bootarg.init.san_optimized AFF for e.com</block>
-  <block id="cbcb656967b507992a4a640a604c47e0" category="list-text">bootarg.init.switchless_cluster.enable</block>
-  <block id="8e66622dd5a924bd59ee4f46318a13a9" category="list-text">bootarg.storageedigation.support &lt;value&gt;</block>
-  <block id="bdafe896118bc000c3a68090808112cd" category="list-text">bootarg.keymanager.support &lt;value&gt;</block>
-  <block id="8f4ea3656910a928382f8c75368c3c2a" category="list-text">kmip.init.interface &lt;value&gt;</block>
-  <block id="b2adbab4ce96430a3475db235c4be8c3" category="list-text">kmip.init.ipaddr &lt;value&gt;</block>
-  <block id="70e8273bd6b058c89bc23bad2de4c396" category="list-text">kmip.init.netmask &lt;value&gt;</block>
-  <block id="4d10af14d34e5e468c4aee19207329d3" category="list-text">kmip.init.gateway &lt;value&gt;</block>
-  <block id="a1781eecf18376feb2f740b6a3d7781d" category="list-text">bootarg.onal_keymanager &lt;value&gt;</block>
-  <block id="8ed13fe688162a9d4d89829700344e8f" category="list-text">使用「prontenv variable-name」命令確認變更。</block>
   <block id="f8cc7bd538c729e18dab57ecfd18b69e" category="video-title">動畫-更換NVRAM模組</block>
   <block id="65b7d00d22ce12162c084039ae28de63" category="video-title">動畫-更換RTC電池</block>
   <block id="e0ec09ab8cb93f04e1ddb90be314a159" category="paragraph">向上轉動電池</block>
@@ -5075,12 +5027,10 @@
   <block id="7ec1cacfbf4271c9864b8e40717b1f8f" category="list-text">在載入程式提示字元中、重新啟動節點：「bye」</block>
   <block id="d73758375aa4c2c0d806b85cf93229be" category="sidebar">FAS9500-Install and Setup</block>
   <block id="fd44bc5547a31fa6a44a5dba383710f5" category="sidebar">FAS9500維護</block>
-  <block id="ee6cf51d21f40cc78c0a70dbb1b8d104" category="sidebar">FAS9500開機媒體</block>
   <block id="33a725da473f57f9db39e8cb90fb8ec1" category="sidebar">FAS9500機箱</block>
   <block id="cea781d942e6e6feafc25284d025750b" category="sidebar">FAS9500控制器模組</block>
   <block id="4ea03be5210b1deef6915fc966939eb4" category="sidebar">安裝與設定AFF</block>
   <block id="9dac2c892993fb8afd0257c050073a7a" category="sidebar">VA900維護AFF</block>
-  <block id="fe673aff2ce9eb5c6eaf841f4ec88b30" category="sidebar">VA900開機媒體AFF</block>
   <block id="6cff7e5493433d24015d6ef5a8566b38" category="sidebar">VA900機箱AFF</block>
   <block id="7d1c80f318f9bf16deac2495abe88a7e" category="sidebar">VA900控制器模組AFF</block>
   <block id="0e1569786cd5c99315511da0d9e3f2aa" category="admonition">如果系統在開機功能表停止、請選取「重新開機節點」選項、並在出現提示時回應y、然後按「Ctrl-C」開機至載入程式。</block>
@@ -5284,7 +5234,6 @@
   <block id="59278043c69406fc3ad5a92b1268c7a1" category="list-text"><block ref="59278043c69406fc3ad5a92b1268c7a1" category="inline-link-macro-rx"></block></block>
   <block id="207fa20809605ec76418419987911de1" category="list-text"><block ref="207fa20809605ec76418419987911de1" category="inline-link-macro-rx"></block></block>
   <block id="8ec5a018cdb8c2ff183e79e6526679cf" category="list-text"><block ref="8ec5a018cdb8c2ff183e79e6526679cf" category="inline-link-macro-rx"></block></block>
-  <block id="a8284f2b3b25b926b6a065b08aa67e1a" category="doc">更換開機媒體AFF - REC400</block>
   <block id="aeb801131e9e445741a961cfb931c2db" category="doc">關閉功能受損的控制器AFF - C400</block>
   <block id="5ab526c2d8a23c39c3d68b1080ca3e89" category="doc">詳細指南AFF - C400</block>
   <block id="ed1fe7521861c492832064f3b6daca68" category="paragraph">100 GbE纜線（QSFP28）</block>
@@ -5300,7 +5249,6 @@
   <block id="042e6e8da8b6da480bf85ff04e4d7922" category="doc">更換開機媒體總覽- AFF 《》C400</block>
   <block id="bb2c0218cb7e6195837599cbb3d03ac1" category="doc">以雙節點MetroCluster 的功能性組態切換回Aggregate AFF</block>
   <block id="1d3d538ec62d31076cad785952dec0e5" category="doc">更換硬體- AFF REC400</block>
-  <block id="f961e8ce56452340996ff8bab8e0d037" category="doc">開機恢復映像AFF - ImageC400</block>
   <block id="2642a6c4a1666402654202d970bc20a6" category="doc">完整系統還原：AFF 功能齊全</block>
   <block id="3e442d8f2f13e8331a31e7c1c2737e59" category="paragraph">更換電源供應器（PSU）時、需要先將目標PSU從電源拔下、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。</block>
   <block id="311f323a046afbcf6ce4b152ad2dee93" category="list-text">本程序是為了一次更換一個PSU而編寫。</block>
@@ -5402,20 +5350,16 @@
   <block id="c5a63894b2cca959254f190c438b2862" category="doc">更換即時時鐘電池AFF - Real-Time C800</block>
   <block id="4e98f7d06c194d745ab8b22805c9cf46" category="doc">更換機箱AFF - REC800</block>
   <block id="7084b904bc2fba91a6a3acb82001365c" category="doc">完成還原與更換程序AFF -還原C800</block>
-  <block id="a7d1c95d57e2d4d91562898a605711c2" category="doc">將故障零件歸還給NetApp AFF - NetApp - C800</block>
   <block id="c7567cf7dbf1c0e5da4f2ff1ced923ef" category="doc">快速步驟- AFF C800</block>
   <block id="f8eb42a3c2c9e8d82c874d7ccd6ef2a9" category="inline-link-macro">《安裝與設定說明》（英文AFF ）</block>
   <block id="6d940c412bcfcdb76ebf095399d157ea" category="doc">還原並驗證系統組態- AFF 還原C800</block>
-  <block id="83087c77244cbf7473481303d60706cd" category="doc">開機恢復映像AFF - ImageC800</block>
   <block id="e00efce1b44b4a70e33640aa4e4da7ab" category="doc">更換風扇AFF - REC800</block>
   <block id="7bb5b3f1026a3e755afd3077cd503481" category="doc">更換NVDIMM電池AFF - REC800</block>
   <block id="47b1e09c5a04b6651d4bc03190565935" category="doc">控制器模組更換總覽- AFF C800</block>
-  <block id="f3812c1bc21f4b91457674bcb79e0abd" category="doc">關閉控制器AFF -現象C800</block>
   <block id="555193cbb314d41872f483748d489825" category="doc">更換電源供應器AFF - REC800</block>
   <block id="3898efc1e45ee027e1343af6cd87375e" category="list-text"><block ref="3898efc1e45ee027e1343af6cd87375e" category="inline-link-macro-rx"></block></block>
   <block id="76908712922b1fbfdbdf730f794b109c" category="list-text"><block ref="76908712922b1fbfdbdf730f794b109c" category="inline-link-macro-rx"></block></block>
   <block id="96ec8a0dff9ea2637e9a0469cd7bf45e" category="list-text"><block ref="96ec8a0dff9ea2637e9a0469cd7bf45e" category="inline-link-macro-rx"></block></block>
-  <block id="b841c581d0bd2543077c9323cde216c2" category="doc">更換開機媒體AFF - REC800</block>
   <block id="820a6cf0e2bcf8d6df3250e33f97c935" category="doc">關閉功能受損的控制器AFF -現象C800</block>
   <block id="f9df48646e98bcca0ef69fd1b5827115" category="summary">本節提供安裝AFF 一套解決方案的詳細逐步說明。</block>
   <block id="c090b19d359523d8768d0e3b3aecfeac" category="doc">詳細步驟- AFF C800</block>
@@ -5427,7 +5371,6 @@
   <block id="96575ba10e2fbb7c8295e344411ca2d1" category="doc">更換DIMM AFF - REC800</block>
   <block id="053f6b40fe6bb9b0a6dde49c0f76dc01" category="doc">重新連接系統並重新分配磁碟- AFF 《The》（《The》）-《》（《The》</block>
   <block id="1085be18597d7d6c96ecba68a211bd73" category="doc">更換PCIe卡AFF - REC800</block>
-  <block id="a3ab531d62779409698b7c4da393c7e6" category="doc">將開機映像傳輸到開機媒體AFF - ImageC800</block>
   <block id="c73861201327e5c06b062143f039e8bc" category="doc">開機媒體更換總覽- AFF 《》（Overview of boot media replacement -）-《</block>
   <block id="07aadbac64794a2290e43416f4863695" category="doc">搬移及更換硬體AFF - REC800</block>
   <block id="253caa9c2eebe3748f90a07e4d0d1158" category="doc">完整系統還原：AFF NetApp C800</block>
@@ -5463,7 +5406,6 @@
   <block id="6329b1134cd585a80e1c1289687135be" category="sidebar">C400系統AFF</block>
   <block id="fef6e20056a9a97444ad5d035918d0f2" category="sidebar">安裝與設定C400 AFF</block>
   <block id="abdc9f1c1f1fa93deddb3513a455ff74" category="sidebar">C400維護AFF</block>
-  <block id="69077bf839678df07e0a3ee2c5ce0c19" category="sidebar">C400開機媒體AFF</block>
   <block id="4e7c968326614b0c8bb6e7220446c15e" category="sidebar">C400機箱AFF</block>
   <block id="275e786433a7b9ba3c47efacaf9e9d56" category="sidebar">HC400控制器模組AFF</block>
   <block id="a49ab8f17cda96f1a42a275df274b272" category="sidebar">C400 DIMM AFF</block>
@@ -5475,7 +5417,6 @@
   <block id="abab29a6fb252536c5c31f6382d49164" category="sidebar">C800系統AFF</block>
   <block id="7db3bd8a3e788453e923804704eb87b7" category="sidebar">安裝與設定AFF</block>
   <block id="27d884866d0c53b71a3641e639ac19f3" category="sidebar">功能維護AFF</block>
-  <block id="36c69c49c18ae2fa7dce0347a69f0065" category="sidebar">C800開機媒體AFF</block>
   <block id="81e825abffe43a736d6c9dc55fd84da2" category="sidebar">C800機箱AFF</block>
   <block id="c164f067875d1a9aa792717f22c79b98" category="sidebar">HC800控制器模組AFF</block>
   <block id="0a73484fb1b3edef8bbbf67f873dec2a" category="paragraph">若要更換機箱、您必須從損壞的機箱中移除元件、並將其安裝在替換機箱中。</block>
@@ -6168,9 +6109,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="832db81167fd84efee6f2f1426f0d945" category="doc">關閉受損的控制器模組 - ASA A250</block>
   <block id="e31f48aed610f4dfc632dee37773ef46" category="section-title">步驟 7 ：將控制器模組還原至運作狀態</block>
   <block id="4de03bc95ff205a87859998054c21b43" category="paragraph">更換控制器模組中的元件之後、您必須將控制器模組重新安裝到機箱中。</block>
-  <block id="ae07b1debd7dfb2474b29c923f78cb6a" category="summary">維護 FAS8330 和 FAS8700 硬體</block>
   <block id="f92b0aabcfb0600795d091d920f2ee13" category="doc">維護 FAS8300 和 FAS8700 硬體</block>
-  <block id="0eeb87f24d0432f0969e16a0d5862ea7" category="paragraph">對於 FAS8300 和 FAS8700 儲存系統、您可以在下列元件上執行維護程序。</block>
   <block id="67e353c31cb553b860a67adade3b1120" category="paragraph">當系統登錄單一 AutoSupport （ ASUP ）訊息指出模組已離線時、您必須更換控制器的快取模組。</block>
   <block id="7d3c8192745dac8d9c9ce0b0eaffb290" category="section-title">步驟 3 ：完成更換程序</block>
   <block id="067920079e2e1532ebc5f61e1b39a90e" category="doc">維護 AFF A300 硬體</block>
@@ -6241,7 +6180,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9dbc6de9e979960d269ff45dfa541d76" category="doc">重新分配系統並重新分配磁碟 - ASA A800</block>
   <block id="0b61404420e238ba6738c723b617ba4f" category="doc">開機媒體更換總覽 - ASA A800</block>
   <block id="308e5629f56cd85980c01c5a7d6b4a5e" category="doc">更換風扇 - ASA A800</block>
-  <block id="d6a1076e496a5256314c747b11460d37" category="doc">更換開機媒體 - ASA A800</block>
   <block id="799d5020bc2d18c715e106de04ae1867" category="doc">更換機箱 - ASA A800</block>
   <block id="3ef7061589a2a04431ea9f25b6e79307" category="doc">關閉受損控制器 - ASA A800</block>
   <block id="e2bc701c24d2b9ed0f95fc6ba2920d2d" category="doc">還原並驗證系統組態 - ASA A800</block>
@@ -6253,7 +6191,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5fa3fc366648b99a59526964d222385e" category="summary">維護 ASA A800 硬體</block>
   <block id="8c32524c30f1cf8ac0610fc400ed0758" category="doc">維護 ASA A800 硬體</block>
   <block id="d374640195a360abfae0102d10acd97b" category="doc">更換即時時鐘電池 - ASA A800</block>
-  <block id="6d197c1fa114418d0086844edf0867e7" category="doc">將開機映像傳輸至開機媒體 - ASA A800</block>
   <block id="202dc1ddf91930fc943d288f13abc2c4" category="doc">更換 DIMM - ASA A800</block>
   <block id="498a9392717395bcd76919fcbc8cd683" category="doc">關閉控制器 - ASA A800</block>
   <block id="8eeb34b2abc09270a61b91c0fea86350" category="doc">還原 OKM 、 NSE 和 NVE - ASA A800</block>
@@ -6261,15 +6198,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d1df8c22a8919d325b97cb34cdbfec4f" category="doc">快速步驟 - ASA A800</block>
   <block id="caa8aa4a595b6f33857d21fb97a3622e" category="paragraph">本頁提供從機架和纜線到初始系統開機的一般系統安裝說明。使用 <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="f0d6a8fa292b0f0965c180c3ec81b98c" category="admonition">ASA A800 使用與 AFF A800 系統相同的安裝程序。</block>
-  <block id="027df07ace2b49bdd101ed7de8831a66" category="doc">開機恢復映像 - ASA A800</block>
   <block id="1809d57833f6aee6ca28a7a9976f3c02" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - ASA A800</block>
   <block id="8efb05cbcb76a25c9260967bb6da74ea" category="doc">更換電源供應器 - ASA A800</block>
   <block id="ab40c87c67587a22552f3f86175f6b6c" category="doc">更換控制器 - ASA A800</block>
   <block id="3e1e482bf99769f878506ac262ea9469" category="doc">更換機箱 - ASA A800</block>
   <block id="cf89ec61d7d165d24a4540839ef73f51" category="doc">完整機箱更換 - ASA A800</block>
   <block id="67908030f8ab0c8af80f92c280cae057" category="doc">控制器更換總覽 - ASA A800</block>
-  <block id="9bada4e82bb10497f6b0fb3e9469479c" category="doc">將故障零件退回 NetApp - ASA A800</block>
-  <block id="bb1471f2572ce66912ad367693b967e2" category="doc">關閉控制器 - ASA A800</block>
   <block id="aac030e27e2d05ac9c8d86c5ee6b670b" category="doc">更換 LED USB 模組： FAS9000</block>
   <block id="f149ffc69b5cfb8f7aad3b01a8a19d4a" category="doc">可重新分配系統並重新分配磁碟： FAS9000</block>
   <block id="c6dffe83bee9ebc28b0c537a4a763ffe" category="doc">開機媒體更換總覽 - FAS9000</block>
@@ -6346,7 +6280,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ed6183c79360d84f37e156e80fe33aa6" category="doc">關閉控制器 - ASA A900</block>
   <block id="67bcd92a05c94a3a813d8e595b1f5283" category="doc">完整系統還原 - ASA A900</block>
   <block id="eb192783589d844d1af1ecb849489b22" category="section-title">步驟 1 ：安裝新控制器的授權</block>
-  <block id="996a9b0ff7207d4230b2b6f5ca8de4e0" category="doc">開機恢復映像 - ASA A900</block>
   <block id="4da6be1bf421fc7ff067ee2e73b4b8b1" category="summary">提供從機架安裝和佈線到初始系統開機等系統典型安裝的圖形說明。</block>
   <block id="4848727d4d964e87d86f556430e12505" category="doc">快速步驟 - ASA A900</block>
   <block id="c247d6dca80720b1329aceeb17a50ccf" category="admonition">ASA A900 使用與 AFF A900 系統相同的安裝程序。</block>
@@ -6472,7 +6405,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9a54ff3f438075f6ab130fd5ddae6cb8" category="paragraph">將控制器模組和任何其他元件安裝到替換機箱後、請啟動系統。</block>
   <block id="e7e663b99514b25c64e06ab89f12a96d" category="summary">完成硬體更換並開機至維護模式後、您將驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
   <block id="941c5c287ded8e20a0e0afb65a87e0f3" category="paragraph">完成硬體更換後、您將驗證更換控制器的低階系統組態、並視需要重新設定系統設定。</block>
-  <block id="f8ead0e1f5f1d60e8cfce169aadd994f" category="summary">維護 ASA FAS9500 硬體</block>
   <block id="1308073a5b44cc77fcce7142e61edf15" category="doc">維護 FAS9500 硬體</block>
   <block id="9e209d7a48bf7b8bd414632f31a6d032" category="paragraph">對於 FAS9500 儲存系統、您可以在下列元件上執行維護程序。</block>
   <block id="48f49ab53c743281158bdd3a887f7928" category="summary">維護 ASA C400 硬體</block>
@@ -6485,7 +6417,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="387bb93ff4bb00a831a3ddb5c619a84a" category="doc">重新分配系統並重新分配磁碟 - ASA A400</block>
   <block id="f4a25106acc9f2b398da8ab1dbc2278a" category="doc">開機媒體更換總覽 - ASA A400</block>
   <block id="1ad7108acef5f97dbf6407833d441058" category="doc">熱交換風扇模組 - ASA A400</block>
-  <block id="54a4d4e7da8d9e37d2ba61fd94122d60" category="doc">更換開機媒體 - ASA A400</block>
   <block id="f04cfd2261dd6a1f556f80b087e6b8e6" category="doc">更換硬體 - ASA A400</block>
   <block id="f52c387171f2e8c70a6f184572b951e7" category="doc">在雙節點 MetroCluster 組態中切換回集合體 - ASA A400</block>
   <block id="0a852867e7d67d61d0c2e9fc0bf5c25b" category="doc">關閉受損控制器 - ASA A400</block>
@@ -6505,7 +6436,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fbe5ac44caed14b65f65c674c260d4f6" category="list-text"><block ref="fbe5ac44caed14b65f65c674c260d4f6" category="inline-link-macro-rx"></block></block>
   <block id="5ba82c1fe7f9a054ea742a089f7a227e" category="list-text"><block ref="5ba82c1fe7f9a054ea742a089f7a227e" category="inline-link-macro-rx"></block></block>
   <block id="b8a21ef26361bcf497970ad95729f649" category="doc">完整系統還原 - ASA A400</block>
-  <block id="9e386c9e794f2f2e7ef00f62fb22c636" category="doc">開機恢復映像 - ASA A400</block>
   <block id="b65dcf1c7ad6c86f6d2d5bed4626bcc6" category="doc">快速指南 - ASA A400</block>
   <block id="5eb8101a6e8a2a3f54c56549ab21ade4" category="admonition">ASA A400 使用與 AFF A400 系統相同的安裝程序。</block>
   <block id="b26cf0fc163ec7e9ea966514eed60da1" category="doc">更換電源設備 - ASA A400</block>
@@ -6513,7 +6443,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="1952c1c21894126b1d43fd1b446add88" category="doc">機箱更換總覽 - ASA A400</block>
   <block id="8a5c79d05f266b99fd8b21d069b75d78" category="doc">完整機箱更換 - ASA A400</block>
   <block id="c4b2f6abafcc332bf4722cbb6468f31f" category="doc">控制器更換總覽 - ASA A400</block>
-  <block id="15421bef78aa7462014529dab7da5730" category="doc">將故障零件退回 NetApp - ASA A400</block>
   <block id="466aa8d45982e2ca3b8ed3fa99638ca2" category="paragraph">將控制器模組安裝至新機箱後、請將其開機。</block>
   <block id="145ef1ac525baa70aa5c03030fa49d7b" category="summary">維護 AFF A700s 硬體</block>
   <block id="5128a68724ce704ce115a0fb76e61b2d" category="doc">維護 AFF A700s 硬體</block>
@@ -6573,7 +6502,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="157402a98436e93454bd795f06631e26" category="sidebar">ASA A800 系統</block>
   <block id="fe7deec5120abaf62371300bd4da5b6e" category="sidebar">ASA A800 安裝與設定</block>
   <block id="bdab0fcadbf708f1f1fb16afd6fd466a" category="sidebar">ASA A800 維護</block>
-  <block id="52e0537c8f1ec6be694befd3617cd3dd" category="sidebar">ASA A800 開機媒體</block>
   <block id="418a8ea1c4ad523a83014cbdae44b5c3" category="sidebar">ASA A800 機箱</block>
   <block id="4589f7e3740a32d8bc8cb9c0e65f4a89" category="sidebar">ASA A800 控制器模組</block>
   <block id="e4f0abc832a633a54f5a664b5033be93" category="sidebar">在具有開放式插槽的系統中新增 X91148A 模組</block>
@@ -6581,8 +6509,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6fd9a3ad4812220bfa5621a9f82f04e7" category="sidebar">ASA A900 系統</block>
   <block id="3e1d68740fe9fb085d3acbdce19296b5" category="sidebar">ASA A900 安裝與設定</block>
   <block id="0cb2548ce0f040b7a8125ebff5e56d6e" category="sidebar">ASA A900 維護</block>
-  <block id="9fbfbe4519034a95aa1a640a08e5b606" category="sidebar">ASA A900 開機媒體</block>
-  <block id="a0b6c54fae9a886e9274ded73da53353" category="sidebar">更換故障的開機媒體</block>
   <block id="b4b3b0c8d46b310c654d75599964cbe9" category="sidebar">ASA A900 機箱</block>
   <block id="53c8a64dd1d3685bac59f29b275f09fd" category="sidebar">還原並驗證組態</block>
   <block id="042788b5141a1d26f2ec23d657ceb901" category="sidebar">ASA A900 控制器模組</block>
@@ -6606,7 +6532,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="880e70d8b15ad919e463072506581a9a" category="sidebar">ASA A400 系統</block>
   <block id="9d524e3b80cdb8b322945f9b3acd0611" category="sidebar">ASA A400 安裝與設定</block>
   <block id="34dd7f09476a68e4a11cace464b55609" category="sidebar">ASA A400 維護</block>
-  <block id="6dd829424be1ac15f2f65c92a7ed934b" category="sidebar">ASA A400 開機媒體</block>
   <block id="8cd2b472b79fbafe2b2b4f850e9be042" category="sidebar">ASA A400 機箱</block>
   <block id="187bfe8d41a4ffd322e65c79309c5089" category="sidebar">ASA A400 控制器模組</block>
   <block id="ffb35c2db1105f8728e738072aa35c9e" category="sidebar">ASA A400 DIMM</block>
@@ -6731,7 +6656,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c4d97f649f8fd0bc0d2842c98374b325" category="summary">「安裝與設定」影片會示範如何安裝和連接新系統。</block>
   <block id="728c8b35a059c5debd8717ebc5eef9cc" category="doc">影片步驟 - ASA A250</block>
   <block id="da8c100a35e67a4a9a03589f6afa9ddc" category="doc">影片步驟： FAS500f</block>
-  <block id="92217d103cec461ace2aded92b4f42ab" category="doc">將故障零件退回 NetApp - ASA C400</block>
   <block id="f4b7b756855e1111bd19648537226e16" category="doc">維護 ASA C400 硬體</block>
   <block id="f85c225eac9932f77dacb6e6236f7ce2" category="paragraph">對於 ASA C400 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="2097e20950ae1f46d998ba486146b369" category="doc">更換 NVDIMM - ASA C400</block>
@@ -6739,12 +6663,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ec587342818437cd0c6a0daf4be599a1" category="doc">在雙節點 MetroCluster 組態中切換回集合體 - ASA C400</block>
   <block id="f7f6cafa82cca0d649fec769636a374b" category="doc">關閉受損控制器 - ASA C400</block>
   <block id="124e5d993905ca8fc1e3ed8fa62e76ad" category="doc">更換 DIMM - ASA C400</block>
-  <block id="987d3338a5584fedd4b7efd844691246" category="doc">更換開機媒體 - ASA C400</block>
   <block id="9187e0a8947f2ca2039bb2793202300f" category="doc">更換 NVDIMM 電池 - ASA C400</block>
   <block id="d8f9a29ce7164ac54d9904be12998cb5" category="doc">更換控制器模組總覽 - ASA C400</block>
   <block id="d593ab590ed489d6717b0d0fbc84376f" category="doc">更換控制器模組硬體 - ASA C400</block>
   <block id="00e85c9b81ade8fe5e2f38c4a31d4388" category="doc">熱交換風扇模組 - ASA C400</block>
-  <block id="c1f915ba5e3e17f84a3238a75c84e2c9" category="doc">開機恢復映像 - ASA C400</block>
   <block id="b31b0c352e7abb4634524d9d53f5fcce" category="doc">更換 PCIe 或夾層卡 - ASA C400</block>
   <block id="b4247ab28006e796109bb9e6443b612f" category="doc">開機媒體更換總覽 - ASA C400</block>
   <block id="967b266f7bf42739746ff8ee10704ec8" category="doc">完整系統還原 - ASA C400</block>
@@ -6793,24 +6715,20 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8cbcc8d109afe5c1880ad74857d5f039" category="list-text"><block ref="8cbcc8d109afe5c1880ad74857d5f039" category="inline-link-macro-rx"></block></block>
   <block id="117802f52fb0f0fc020147893a4130c5" category="doc">關閉控制器 - ASA C250</block>
   <block id="0bec81f6d2e70dbe308b882253ae1ad4" category="doc">快速步驟 - ASA C250</block>
-  <block id="56e4846e0597740899e073a1ec45d163" category="doc">將故障零件退回 NetApp - ASA C800</block>
   <block id="1074d363c9086b22a355d4527d32b28c" category="doc">維護 ASA C800 硬體</block>
   <block id="f9ea5dff2f002c5b2f6eeeb84451e9f5" category="paragraph">對於 ASA C800 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="3f9ba83126a2d0a1b4562908efe4870c" category="doc">更換 NVDIMM - ASA C800</block>
   <block id="50097ad5c1b5e616bbe0f94d6918f272" category="doc">更換機箱 - ASA C800</block>
   <block id="f672d90fc8d0ab339549e32ae4a18c26" category="doc">更換 DIMM - ASA C800</block>
-  <block id="dccd487628e9e3fb202bf1d54f224f85" category="doc">更換開機媒體 - ASA C800</block>
   <block id="16c54e4c9f50a83bb13eddc18729c9e7" category="doc">更換 NVDIMM 電池 - ASA C800</block>
   <block id="6a9d061449e03d1a36e0711f39abff8f" category="doc">關閉受損控制器 - ASA C800</block>
   <block id="f5811521c6ed1fabe9020730715bf6ec" category="doc">更換控制器模組總覽 - ASA C800</block>
   <block id="a77bfb07153ea54985cd6d32b137a0c8" category="doc">更換風扇 - ASA C800</block>
   <block id="0033b3cf7bd066a6dcb42aab6d55a7f7" category="doc">更換控制器模組硬體 - ASA C800</block>
   <block id="bc6187f0b8778014377ccebd8b17d2ed" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - ASA C800</block>
-  <block id="d9fe8c436c5cbc472b9ebf52adbbc858" category="doc">將開機映像傳輸至開機媒體 - ASA C800</block>
   <block id="2f7ac9575acad766cc32c4e3e9719d24" category="doc">更換 PCIe 卡 - ASA C800</block>
   <block id="dee67159310079d1b0fb667da81d6e9e" category="doc">開機媒體更換總覽 - ASA C800</block>
   <block id="7aceb406cd07b754209377738399299c" category="doc">完整系統還原 - ASA C800</block>
-  <block id="6099221a831c734ee14418269bc9c024" category="doc">關閉控制器 - ASA C800</block>
   <block id="7eb1428cde412a152576637c584b14c0" category="doc">重新分配系統並重新分配磁碟 - ASA C800</block>
   <block id="ea1dc19906ddc0d31254dd6f8ec34328" category="doc">移動並更換硬體 - ASA C800</block>
   <block id="5bb05bb37b0f50f78a66bcb870b4f799" category="doc">更換電源供應器 - ASA C800</block>
@@ -6820,7 +6738,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4a9663f34d974f62e97bc12e3339b829" category="summary">本節提供安裝 ASA C800 系統的詳細逐步說明。</block>
   <block id="785cd996138f338b507afb4b1a247f7a" category="doc">詳細步驟 - ASA C800</block>
   <block id="0638f850898c092d5e1fe72b87242595" category="paragraph">若要安裝 ASA C800 系統、您必須建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。</block>
-  <block id="3682f89576a4cb3869bd075b26450b14" category="doc">開機恢復映像 - ASA C800</block>
   <block id="1a127c6545345af120647a9618b2e726" category="doc">影片 - ASA C800</block>
   <block id="71eb59c59a42227ae8b45d0cfaf6f52f" category="paragraph">共有兩段影片：一段影片顯示如何整理及連接系統、另一段影片則顯示使用System Manager引導式設定來執行初始系統組態的範例。</block>
   <block id="2ff6b785c9bbb9bd149f3c338b823e06" category="section-title">影片：硬體安裝與纜線</block>
@@ -6842,12 +6759,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c1370c033cc8d9c44f943c71c77e2612" category="sidebar">ASA C400 系統</block>
   <block id="84f8b16af6e61b50a60f6963a3714dce" category="sidebar">ASA C400 安裝與設定</block>
   <block id="6e6b83322f27e0a481920c1942ca4d06" category="sidebar">ASA C400 維護</block>
-  <block id="42dcbb2a8a1d5c203703489b6bfd2d41" category="sidebar">ASA C400 開機媒體</block>
   <block id="ccf8018b3d654d823bd222ff5852d94c" category="sidebar">ASA C400 機箱</block>
   <block id="f1ce6ee6a9b6701ded3e7305d1a47f8b" category="sidebar">ASA C400 控制器模組</block>
   <block id="037942e17a72efbec3fbd02f17ae222e" category="sidebar">ASA C400 DIMM</block>
   <block id="a476b30aedf19d74cc76a81c627ef010" category="sidebar">ASA C400 風扇模組</block>
-  <block id="5ac4d65b443121440994b5efbc6fe2db" category="sidebar">ASA C400 NVDIMM 電池</block>
   <block id="7da162a63ee18d83599a6f39dfad99f3" category="sidebar">ASA C400 PCIe 或夾層卡</block>
   <block id="e7d6c70be60310d753bb04f93958a99e" category="sidebar">ASA C400 電源供應器</block>
   <block id="6e1f6b52dcbf426bd04e045b833f7989" category="sidebar">ASA C400 即時時鐘電池</block>
@@ -6860,7 +6775,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f52cc0c002eb630b3aee28324fd8a0a0" category="sidebar">ASA C800 系統</block>
   <block id="5185f6f6f1211a7e3fff65634642f7bf" category="sidebar">ASA C800 安裝與設定</block>
   <block id="6254a52fafb7f7564e91436cf4b47113" category="sidebar">ASA C800 維護</block>
-  <block id="052bc2e859c31b84b04f42db7b60abff" category="sidebar">ASA C800 開機媒體</block>
   <block id="801fdf5b112137a107d3f17390e4042d" category="sidebar">ASA C800 機箱</block>
   <block id="ca7dce9cd06f0f2ef6e548c8c26d54d9" category="sidebar">ASA C800 控制器模組</block>
   <block id="664f9c52f93e2fbf6e801148b0f573ad" category="inline-link">HA配對管理</block>
@@ -8357,7 +8271,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7f5f5398e620a9f9ae998736b2d4d230" category="list-text">等到更換模組的控制器主控台顯示等待恢復 ... 訊息、然後從健全的控制器驗證系統狀態： _ 儲存設備容錯移轉顯示 _</block>
   <block id="c1b6a9a30a6ce8d79305050622234851" category="paragraph">在命令輸出中、您應該會看到一則訊息、指出控制器的狀態。</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">控制器會重新連接其儲存資源池、並完成開機。</block>
-  <block id="7acc547c8acfbe4a745ca72a3e0e83e4" category="image-alt">DRw a800磁碟機就位在IOPS 960上</block>
   <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">按下系統管理 CAM 按鈕。</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">轉動 CAM 栓鎖、使其儘可能遠離模組。</block>
   <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">關閉或接管受損的控制器。- 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、使狀況良好的控制器能繼續提供受損控制器儲存設備的資料。</block>
@@ -9035,8 +8948,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a7b0a510fdfaae6ab395e09cd164f2f8" category="doc">還原加密 - FAS500f</block>
   <block id="8de2c4c1d0c319cb07b6837fd62d106e" category="doc">檢查加密金鑰支援與狀態 - FAS8200</block>
   <block id="9845ad900ab8d052684f6f9e49107a1f" category="doc">還原加密 - FAS8200</block>
-  <block id="1bc2845699cb3ceb88ee2b3bffabb9b4" category="doc">檢查加密金鑰支援與狀態 - AFF FAS8300 和 FAS8700</block>
-  <block id="e9f4f2164b3732f470d6acec805f446d" category="doc">還原加密： AFF FAS8300 和 FAS8700</block>
   <block id="3d7237c5aa2d20431d9cae1d4abbadb9" category="doc">還原加密 - FAS9000</block>
   <block id="13e7cf07309f0d95eee5aa49b6842dc0" category="doc">檢查加密金鑰支援與狀態 - FAS9500</block>
   <block id="e4d9374bc79ce9095fb021e03551599f" category="doc">還原加密 - FAS9500</block>
@@ -9124,12 +9035,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4443f66d8d4febc600e0d4d0b3b0db91" category="doc">將控制器交回 ASA A70 和 ASA A90</block>
   <block id="425248bc914ee69e002743b7cff8fb0a" category="doc">更換系統管理模組 - ASA A1K</block>
   <block id="fc633a3acea06ec7b13b95943af5a8f1" category="doc">更換系統管理模組： FAS70 和 FAS90</block>
-  <block id="3af65f186d9005b4ac041f824d01a2a6" category="doc">將故障零件退回 NetApp - FAS2820</block>
   <block id="c6850888623b4b33ceba4c1bd9322642" category="doc">檢查加密金鑰支援與狀態 - FAS2820</block>
   <block id="0152b6e0cea632db2750cd8de20a739e" category="doc">還原加密 - FAS2820</block>
-  <block id="9e84d4138651a02fba804117209b607b" category="doc">開機恢復映像： FAS2820</block>
   <block id="d4d79c1a5bf62b9ce87343c6306b87c5" category="doc">開機媒體更換總覽 - FAS2820</block>
-  <block id="0d0170db1c817b32ed8190527b1999f1" category="doc">更換開機媒體： FAS2820</block>
   <block id="3d0983e4676ad818dc9c354efeabe635" category="doc">關閉功能受損的控制器 - FAS2820</block>
   <block id="fd167e36c21bd8b8595824591db88367" category="doc">更換快取模組： FAS2820</block>
   <block id="6e0f0070d93d5a9e57db58dbec60bc75" category="doc">還原並驗證組態 - FAS2820</block>
@@ -9175,8 +9083,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3a537c99c5b869e844d774557fbcee80" category="sidebar">ASA A1K IO 模組</block>
   <block id="3006210264711079652e75e697fdde7b" category="sidebar">FAS2820 系統</block>
   <block id="e9fb835c094e7078b3fdd1712ccae31c" category="sidebar">FAS2820 安裝與設定</block>
-  <block id="6129374f01cd3ebeb12420c58801778c" category="sidebar">FAS2820 維護</block>
-  <block id="bb0a174c5a82de66489299528cf518fe" category="sidebar">FAS2820 開機媒體</block>
   <block id="b5f3da387d229686fd3cc259cd99b323" category="sidebar">FAS2820 快取模組</block>
   <block id="1271e815e1d2a4bf736cb807a3b42df6" category="sidebar">FAS2820 機箱</block>
   <block id="2432fa0f9f02a35df250d771c0865ed4" category="sidebar">FAS2820 控制器</block>
@@ -10653,12 +10559,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="99d3d3fcd25a3de8482ec4e2a68cd980" category="paragraph">若要完成更換程序並將系統還原至完整運作，請還原 NetApp 儲存加密組態（如有必要），並安裝新控制器的授權。</block>
   <block id="bc8b7a027a67f1503950943beb4e6143" category="paragraph">如果 ASA A1K 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
   <block id="bd0c4a219c159fa570da1ded545f36d9" category="summary">在 ASA A70 或 ASA A90 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。</block>
-  <block id="b6bbff6284dec160274ef588afc1a30c" category="doc">還原開機媒體上的映像 - ASA A70 和 ASA A90</block>
   <block id="24fd70ba02d3ad8edef21fae96195bae" category="paragraph">在 ASA A70 或 ASA A90 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。</block>
   <block id="fee45db111832f938d749d9972109b24" category="paragraph">在恢復過程中，系統會檢查是否已啟用加密，並判斷所使用的金鑰加密類型。如果啟用金鑰加密，系統會引導您完成適當的還原步驟。</block>
   <block id="9ebf0f9cdc8e3d4b2cb25a5314423cb2" category="summary">ASA A70 或 ASA A90 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除系統管理模組，移除受損的開機媒體，在系統管理模組中安裝替換開機媒體，然後重新安裝系統管理模組。</block>
   <block id="f64cb6d84d7c27a06ee97bfed6357102" category="summary">在更換 ASA A70 或 A90 系統中的開機媒體之前，請確保您符合成功更換所需的要求。</block>
-  <block id="dd43e74377ed32c7af5731f3c6c94085" category="doc">更換開機媒體的需求 - ASA A70 和 ASA A90</block>
   <block id="c330ef0ca8c9d8e7a95cd59e8bd29028" category="paragraph">檢閱開機媒體需求之後<block ref="a9f725bc41d31688b04caf5a2f249945" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="2637ddc571b4eec6fba99d80e4508ea3" category="summary">開始更換 ASA A70 和 ASA A90 儲存系統中的開機媒體，方法是檢閱更換需求，關閉控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
   <block id="e02c1c38027df9cf184c084019ca80bd" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="c17103ffaf4bf6b45a49b4f8fd312634" category="inline-link-macro-rx"></block></block>
@@ -10687,7 +10591,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bcde75f7bddc9226b30c2cb1712cb52b" category="summary">當 ASA A70 或 ASA A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
   <block id="603c758839f418606126a3dd634c68d9" category="doc">更換系統管理模組 - ASA A70 和 ASA A90</block>
   <block id="dcfa3de2faa27a3e334c7c433ea50340" category="summary">在 ASA A1K 系統的替換開機媒體上還原 ONTAP 映像。此程序包括從 Loader 提示字元啟動開機恢復程序，並監控恢復程序，直到完成並重新啟動節點為止。</block>
-  <block id="2cc0e4a695b44179f7b31d704877b9fc" category="doc">還原開機媒體上的映像 - ASA A1K</block>
   <block id="955b02a4be265a47dec370f73ec90202" category="paragraph">在 ASA A1K 系統中安裝新的開機媒體裝置之後，您可以啟動自動開機媒體還原程序，從合作夥伴節點還原組態。</block>
   <block id="09922310f86dcfda39249f4666ce5146" category="summary">ASA A1K 系統中的開機媒體會儲存必要的韌體和組態資料。更換程序包括移除系統管理模組，移除受損的開機媒體，在系統管理模組中安裝替換開機媒體，然後重新安裝系統管理模組。</block>
   <block id="71b41768755429f94118b959381a52b4" category="summary">在更換 ASA A1K 系統中的開機媒體之前，請確保您符合成功更換所需的要求。</block>
@@ -11124,7 +11027,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f3b6228c1cbd418b703785112e6450cf" category="list-text">如果出現受損控制器的提示，請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>以覆寫 _/etc/sssh / host_ECDSA_key_ 。</block>
   <block id="343b939e82f6c7bd4d0b3724a8118a24" category="list-text">如果您在步驟 1 中停用自動磁碟機指派，請手動指派磁碟機擁有權，然後視需要重新啟用自動磁碟機指派。</block>
   <block id="4a7998c6b7bf581d6118278f506a5818" category="list-text">從儲存系統正面卸下擋板。</block>
-  <block id="23cb2d8a7bcff2be32dfdc6532d9a330" category="list-text">如果您要更換另一個磁碟機、請重複步驟2到7。</block>
   <block id="6447c21ef920ffa27c0fa03f8a1f5fde" category="list-text">在儲存系統正面重新安裝擋板。</block>
   <block id="1796631c78343fa139263e5130977036" category="paragraph">DIMM 的位置視系統機型而定：</block>
   <block id="f150c3e678803cfab7db992b3aed8654" category="paragraph">插槽 3 ， 10 ， 19 ， 26</block>
@@ -11132,7 +11034,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="28201d108eeaa65ba3986e8d2995486e" category="admonition">當控制器完全安裝在機箱中時，控制器會開機至 Loader 提示字元。它能從合作夥伴控制器獲得強大功能。</block>
   <block id="a163e755300f34b3c5f473a61ca749d5" category="admonition">請追蹤每個快取模組從哪個磁碟機支架中移除，因為它們必須安裝在替換機箱的相同磁碟機支架中。</block>
   <block id="dd974151ca8e1528e09f3e46a090f617" category="paragraph"><block ref="120d2ded4595f37c06ed8c4aa3b846ea" prefix="" category="inline-code"></block></block>
-  <block id="02f9bb2fa8a3e17cc8807f1c822c2d25" category="list-text">如果您要更換另一個磁碟機、請重複步驟3到步驟8。</block>
   <block id="d5dd94ee04fd2267b6c2e4e6e2b590de" category="inline-link">主機板更換後程序，可更新 ONTAP 平台上的授權</block>
   <block id="bfa89a6ce1f8c47724bbe6c9b703c00b" category="paragraph">如果系統最初運行的是 ONTAP 9 ． 10.1 或更高版本，請使用中介紹的過程<block ref="db67b8b77fc4e1d6512bfc70b85bb60a" category="inline-link-rx"></block>。如果您不確定系統的初始 ONTAP 版本、請參閱<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>以取得更多資訊。</block>
   <block id="0f741141425a35612c14f0bd5cc39ad7" category="paragraph">AFF A1K 控制器上的 I/O 插槽編號為 1 至 11 ，如下圖所示。</block>
@@ -11453,7 +11354,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c19c878358034620e42421b1d0e88979" category="image-alt">控制台切換連接</block>
   <block id="bcbe9ce5b2d50ad0b254f40cda6fc7e1" category="image-alt">開機並設定機架ID</block>
   <block id="43f978a7787080590a53cc2abdd637c9" category="image-alt">更換 LED 模組</block>
-  <block id="a54c219a955221bc0586ab22f8a07401" category="image-alt">更換RTC電池</block>
   <block id="14d4a75ecbe13082ebd840dc7d091f2c" category="section-title">步驟 4：安裝控制器和驅動器</block>
   <block id="7aa6db479f57ead7ac39225f410bdf2d" category="paragraph">將控制器和磁碟機安裝到替換機箱中並重新啟動控制器。</block>
   <block id="fde22ae5f3a1cc39c61853ffe9a68675" category="paragraph">建立 ONTAP 叢集連線。對於無交換器叢集，請將控制器彼此連接。對於交換式叢集，請將控制器連接至叢集網路交換器。</block>
@@ -11642,7 +11542,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="61e03a9ae98f11e74ecca739028b0d8d" category="doc">手動啟動媒體復原的要求 - AFF A70和AFF A90</block>
   <block id="3d2127437f7682efd33cc290f8c65313" category="summary">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A70或AFF A90儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
   <block id="ba6215836b185b42ba18f8576bf97d60" category="doc">啟動媒體自動復原工作流程 - AFF A70和AFF A90</block>
-  <block id="25d514d7003721a0847e201148310402" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A70或AFF A90儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
   <block id="f2a3b87fc596fdb0e863f6ea05d31ec8" category="summary">手動恢復啟動映像需要使用 USB 驅動器將ONTAP重新安裝到AFF A70或AFF A90系統的替換啟動媒體上。您必須從NetApp支援網站下載對應的ONTAP復原映像並將其複製到 USB 隨身碟。然後，使用準備好的 USB 驅動器執行恢復並將系統恢復到正常運作狀態。</block>
   <block id="c605804530ac6780903b2cd5d714e7bf" category="doc">啟動媒體手動復原工作流程 - AFF A70和AFF A90</block>
   <block id="81933396946b55d13782566f5b10b705" category="summary">AFF A70或AFF A90系統中的啟動媒體儲存了必要的韌體和設定資料。更換過程包括移除系統管理模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
@@ -12085,4 +11984,446 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8e7e4fe549d31d35f22d5919a6326875" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="d8f87fb4140fea77f47017bd9ec5dcdd" category="inline-link-macro-rx"></block></block>
   <block id="034cb39094d8eb483c641ad0dfc1c27f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block></block>
   <block id="af42a6a9db306b2ac5725e006de14a7a" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="8a056a6439f08c4b1b6c616463cfac54" category="inline-link-macro-rx"></block></block>
+  <block id="e872032fe954a0a016830d7e9591352e" category="paragraph">啟動介質位於控制器模組內部，可透過從機箱移除控制器模組並從系統中移除控制器模組蓋模組來存取。</block>
+  <block id="5f69d11faaea3ac587d471e8151ad364" category="list-text">將控制器模組的末端與機箱中的開口對齊，然後輕輕地將控制器模組推入系統一半。</block>
+  <block id="362c38f73eac0b4be28a88885d41ace1" category="list-text">重新連接控制器，用力推動凸輪手柄以完成控制器模組的安裝，將凸輪手柄推至關閉位置，然後擰緊翼形螺絲。</block>
+  <block id="53a6e0164d86afa690a9ff0940f16e43" category="paragraph">控制器開始啟動並在 LOADER 提示字元處停止。</block>
+  <block id="b1e9aebf4ad402db02d940afdcc2e99f" category="paragraph">啟動介質位於風管下方的控制器模組內，透過從系統中移除控制器模組即可存取。</block>
+  <block id="0fdc60b29d5e5c778f4b3a3c6e75da94" category="list-text">找到控制器模組中的啟動介質並替換它：</block>
+  <block id="b79ec07311b0b2e9007a947502ca1217" category="list-text">重新連接控制器模組，用力推動凸輪手柄以完成控制器模組的安裝，將凸輪手柄推至關閉位置，然後擰緊翼形螺絲。</block>
+  <block id="ece11f9c3d8f9d6d8aff79c9273631aa" category="paragraph">控制器模組開始啟動並在 LOADER 提示字元處停止。</block>
+  <block id="2658eb11cd0ca39cfc2d7394809fff01" category="list-text">將MetroCluster連接埠設定為啟動器：<block ref="2c8f25cb974f5d5b1e520b768a31cde6" prefix=" " category="inline-code"></block></block>
+  <block id="262d6ff37dc133df81dc97d7127c21ca" category="list-text">重新安裝控制器模組：</block>
+  <block id="aae9b254c24cc3785086114d3d117232" category="list-text">如果要更換另一個驅動器，請重複步驟 3 至 7。</block>
+  <block id="7c9d4c7520ca0f8e1dc57c8c26289d65" category="list-text">如果要更換另一個驅動器，請重複步驟 4 至步驟 8。</block>
+  <block id="6ab51c87498e3948742262b60aeeee14" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A1K 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="1598afb8f3a2e9755fe6204af9dbaa8d" category="inline-link-macro">自動啟動恢復程序</block>
+  <block id="a3484b2f8cbf6736974f7d02ebc99cb3" category="paragraph">如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。</block>
+  <block id="cc513374e31e81a36ff55275c714cbac" category="paragraph">如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。</block>
+  <block id="6ff1453623c70a2b8780ad2767e3b225" category="doc">將失敗的啟動媒體傳回NetApp - AFF A400</block>
+  <block id="22575bfd6e6d83a939c93fbb6e575ac4" category="paragraph">如果您的AFF A400系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="7f404c3390a92744a76c0e6cda8523bd" category="summary">在AFF A400系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。</block>
+  <block id="7329e2e54a0c6f2594e93d7b150ad530" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF A400</block>
+  <block id="e534d775ebf989520a3da41d67088a88" category="paragraph">在AFF A400系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="2977d2cbc48cf6d17f3f085799333ebf" category="doc">從 USB 隨身碟手動恢復啟動媒體 - AFF A400</block>
+  <block id="6777ba2bbc950c2b774b64c5bcdb29e5" category="summary">AFF A400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="75e79c10dfb5b715570f884a06eaf614" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF A400</block>
+  <block id="41291641a69711b11f70781c3e5f5b31" category="paragraph">AFF A400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="9ffad2a2e8a0a7b04526d1ca06c188a5" category="summary">在更換AFF A400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="4221e926e9f147f537d074c9f2b0ce81" category="doc">自動啟動媒體復原的要求 - AFF A400</block>
+  <block id="3c50ce07906925ea3d8c4b688f2694e3" category="paragraph">在更換AFF A400中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="46b9703cb3ee80b60b84932a8ac8176e" category="summary">在更換AFF A400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="d6191c7ed5d4b01af56240eea73c1db7" category="doc">手動啟動媒體復原的要求 - AFF A400</block>
+  <block id="13dc1f2a9b4cecb516f1df45df0cc6e5" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換AFF A400儲存系統中的啟動媒體。</block>
+  <block id="3c2f2827e811189b36235deeac40b9b1" category="doc">啟動媒體自動復原工作流程 - AFF A400</block>
+  <block id="9195c4cc5374a942663f8840fb1281fe" category="paragraph">從控制器模組移除故障的啟動媒體並安裝替換的啟動媒體。</block>
+  <block id="406c2c347bf25875352cbe864c54760e" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換AFF A400儲存系統中的啟動媒體。</block>
+  <block id="41227c678f01396d0ca339e8c01c5a46" category="doc">啟動媒體手動恢復工作流程 - AFF A400</block>
+  <block id="9640026e903f94f4800da359d913e0a9" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A400儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="66155ab867b9e72e003c32039430a194" category="paragraph">從ONATP啟動選單恢復板載金鑰管理器設定或外部金鑰管理器。</block>
+  <block id="b4eff71b8a25e1341c978f074e809f5f" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF A400</block>
+  <block id="25a6eda8b598dc35f40455a3b6650942" category="summary">關閉AFF A400儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="33f15341dc012b7a1741173f0a003ced" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF A400</block>
+  <block id="217151ef13b32a9ab67e7c5b3ba1f936" category="paragraph">關閉AFF A400 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="74c6811365bff32176970c98a7ab6f9d" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A400</block>
+  <block id="c6615dfdc0291800b33208ac35a4f3a7" category="summary">維護AFF A400硬體</block>
+  <block id="72b339e7e15c8320ce1d0ba12fe138c8" category="paragraph">維護AFF A400儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="5c2498e6d495f2eadf0d5823b9b81b5f" category="paragraph">維護過程假定AFF A400儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="2deff6ec3e4c0e2a0db765f462db4612" category="paragraph"><block ref="2deff6ec3e4c0e2a0db765f462db4612" category="inline-link-macro-rx"></block></block>
+  <block id="e447290ac243d603f20831e02d91710f" category="paragraph">啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在手動復原期間，您會從 USB 隨身碟啟動儲存系統並手動還原檔案系統映像和設定。如果您的儲存系統運作的是ONTAP 9.17.1 及更高版本，請使用<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>。</block>
+  <block id="051f22735645ddcfbfa223db7367938f" category="paragraph"><block ref="051f22735645ddcfbfa223db7367938f" category="inline-link-macro-rx"></block></block>
+  <block id="88bdf3fa698fc0c434013372c8db3385" category="paragraph"><block ref="88bdf3fa698fc0c434013372c8db3385" category="inline-link-macro-rx"></block></block>
+  <block id="57f2f0606695bac4136b80682c0dd404" category="paragraph"><block ref="57f2f0606695bac4136b80682c0dd404" category="inline-link-macro-rx"></block></block>
+  <block id="2dd9606b888bc028dc9419210515e786" category="paragraph"><block ref="2dd9606b888bc028dc9419210515e786" category="inline-link-macro-rx"></block></block>
+  <block id="17f029f989bdbbf0434ea622cfd5e805" category="inline-link-macro">PCIe 卡和轉接卡</block>
+  <block id="7760b4ea4020d480f5d1e31697315dff" category="paragraph"><block ref="7760b4ea4020d480f5d1e31697315dff" category="inline-link-macro-rx"></block></block>
+  <block id="349fb764bbd6401eb7d613694f98f7c4" category="paragraph">PCIe（外圍組件可互連快速）卡是一種擴充卡，可插入主機板上的 PCIe 插槽或插入主機板的轉接卡。</block>
+  <block id="01899ffb4a605f0c7e9ab547e7577a77" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A70 或AFF A90 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="ebe44cd1c2b4953680597bc907ac847f" category="doc">將失敗的啟動媒體傳回NetApp - AFF A800</block>
+  <block id="c361ce5877b4c3472f7530b0c7183085" category="paragraph">如果您的AFF A800系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="6ff2e5a3499f954eec5bcb32d690d50f" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF A800</block>
+  <block id="8159e9573b2be76b1df996506aa14ac7" category="paragraph">在AFF A800系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="2ed5d23a0ec9dff10c56f0887a40e290" category="doc">從 USB 隨身碟手動恢復啟動媒體 - AFF A800</block>
+  <block id="8abdc855ddcb65fe07b133d1a1c8acee" category="summary">AFF A800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="334e327e3022d260eb3917df3b148515" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF A800</block>
+  <block id="a62fdb9237bcfd937af4d6d9819f6e82" category="paragraph">AFF A800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="7b0145095bc96cae451f4d9717ea7de7" category="summary">在更換AFF A800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="ef4dc8a2da4b460a22a10167539ebd57" category="doc">自動啟動媒體復原的要求 - AFF A800</block>
+  <block id="fc99496f3b91b50bff484d30be86c54b" category="paragraph">在更換AFF A800中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="2bb55bbdd1cec1049fafcad902f0a44d" category="summary">在更換AFF A800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="11d22079e470961bf43da95fc1b2d7f6" category="doc">手動啟動媒體復原的要求 - AFF A800</block>
+  <block id="eaff295096fb469efcbefa49e0f4f3ed" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換AFF A800儲存系統中的啟動媒體。</block>
+  <block id="f738af3fa00b500bdfc7e9e4892d6ad9" category="doc">啟動媒體自動復原工作流程 - AFF A800</block>
+  <block id="b02c6242a336a84e34ccd1cd6aebc376" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A800 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="449c78eca1dca9facdb7ce55e5dc2673" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換AFF A800儲存系統中的啟動媒體。</block>
+  <block id="88138d0001152b572df5180bdabce355" category="doc">啟動媒體手動恢復工作流程 - AFF A800</block>
+  <block id="9d9c5a6acf31e2700c8e91d48b92825c" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF A800</block>
+  <block id="21b70166f3276f0c9a5dfd8176a16044" category="summary">關閉AFF A800儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="48751441f8d0b29dffdfa73f7ef6b039" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF A800</block>
+  <block id="de98338fbf36a37cb429421fc6f9d489" category="paragraph">關閉AFF A800 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="4bf6f934b24bd52641aa4ad81da672ea" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A800</block>
+  <block id="142b3fd7edc5dab0d9075db01d128ae6" category="paragraph">維護AFF A800儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="257144cee758fa901d78671592b3aa8c" category="paragraph">維護過程假定AFF A800儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="5708588245469f24c7a1fd90d0157713" category="doc">將失敗的啟動媒體傳回NetApp - AFF A900</block>
+  <block id="3a3de961b8b171b1d7e682900a483148" category="paragraph">如果您的AFF A900系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="a3dae0277377edf5da3a49e133321874" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF A900</block>
+  <block id="60c62d69aaafba15d3027f86dac5dd9a" category="paragraph">在AFF A900系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="4059a51c70923734ed21300a115eb92d" category="summary">AFF A900 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="b2849f50cfae619af9a6a868bae178ed" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF A900</block>
+  <block id="f39e44e4f6d4595e06d41036eb263bf1" category="paragraph">AFF A900 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="d67ade4ae91f7c0d5eb3c9d1e641bde7" category="summary">在更換AFF A900 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="b9ee889c6b2d7a600d42e364dba9cc43" category="doc">自動啟動媒體復原的要求 - AFF A900</block>
+  <block id="e096b937f22c19f1446afb0aabfa4204" category="paragraph">在更換AFF A900中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="e4ce3d52f68e109081a7c4e9ec974ef3" category="summary">在更換AFF A900 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="01e10f901636359acda9f4714a592dca" category="doc">手動啟動媒體復原的要求 - AFF A900</block>
+  <block id="3b6aca2c18ad84f0e83d21c5342d3cc1" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換AFF A900儲存系統中的啟動媒體。</block>
+  <block id="97e88b41b05cca9f6c5bd170c4c703a7" category="doc">啟動媒體自動復原工作流程 - AFF A900</block>
+  <block id="131365dfbc2c8580e0b7c418b577017c" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A900 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="40d1397376c7893f9fe8ab2b99914b10" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換AFF A900儲存系統中的啟動媒體。</block>
+  <block id="173ec8ed18c52eafad0830ed08789676" category="doc">啟動媒體手動恢復工作流程 - AFF A900</block>
+  <block id="b5bf4b2796b6023656eab3e1737c94eb" category="paragraph">當您需要更換啟動介質時，請關閉控制器。</block>
+  <block id="85ed6aa6d1e8311e80e0619c4d18d303" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="a70ed88f8fc545e1d29198fc61b5c58e" category="inline-link-macro-rx"></block></block>
+  <block id="16544e4cd0d15558e854f3b9c762c1e0" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF A900</block>
+  <block id="d7797b426a89708a73784826c2bd25a8" category="summary">關閉AFF A900儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="f2fa38e6be0c053e489deb839142196d" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF A900</block>
+  <block id="5f7924b943afe82cde397c44d409ccd8" category="paragraph">關閉AFF A900 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="facc45ff99f31b515df42f2b0ba59c86" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A900</block>
+  <block id="4b4a03214cc0238211a99dae237814c6" category="paragraph">如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用自動啟動復原程序。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。</block>
+  <block id="712bd387d50c5fc749ffb5f431130a44" category="doc">從 USB 隨身碟手動恢復啟動媒體 - AFF A900</block>
+  <block id="d7759bb9755ab1f9bc3537241c66c6ba" category="summary">維護AFF A900硬體</block>
+  <block id="b1869a7fddfc52d740077ac0eba816bb" category="paragraph">維護AFF A900儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="1a04019f5defd9a03ee7c19509f69f9d" category="paragraph">維護過程假定AFF A900儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="adc9cb4ce04e3f5ffaacafe1972bd0d0" category="paragraph">啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，儲存系統會從合作夥伴節點擷取啟動映像，並自動執行對應的啟動選單選項以在取代啟動媒體上安裝映像。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用<block ref="739428bb763fc45faeb1ae97255a3f48" category="inline-link-macro-rx"></block> 。</block>
+  <block id="bd03785e613dc329f14cf463b0512423" category="paragraph"><block ref="bd03785e613dc329f14cf463b0512423" category="inline-link-macro-rx"></block></block>
+  <block id="fffcae23e95c33bd8606d21e412441f5" category="paragraph"><block ref="fffcae23e95c33bd8606d21e412441f5" category="inline-link-macro-rx"></block></block>
+  <block id="6ab755457f66e7be1a26019a04d5ccad" category="paragraph"><block ref="6ab755457f66e7be1a26019a04d5ccad" category="inline-link-macro-rx"></block></block>
+  <block id="b1d4e14e51fd80f3d42a5a61331331ec" category="paragraph"><block ref="b1d4e14e51fd80f3d42a5a61331331ec" category="inline-link-macro-rx"></block></block>
+  <block id="1ff948d4fdd43a5c08683922d48952ae" category="paragraph"><block ref="1ff948d4fdd43a5c08683922d48952ae" category="inline-link-macro-rx"></block></block>
+  <block id="1cfeb929027ebaebb9322da45a5af3d3" category="paragraph"><block ref="1cfeb929027ebaebb9322da45a5af3d3" category="inline-link-macro-rx"></block></block>
+  <block id="4d505ded17e0fc2301810e57a288db7d" category="paragraph"><block ref="4d505ded17e0fc2301810e57a288db7d" category="inline-link-macro-rx"></block></block>
+  <block id="ec8a7de2ed4b8f6b9bc4b06a500a8696" category="paragraph"><block ref="ec8a7de2ed4b8f6b9bc4b06a500a8696" category="inline-link-macro-rx"></block></block>
+  <block id="8911a2f78b707f48ed59f4823bc6ea2b" category="paragraph">NVRAM模組（非揮發性隨機存取記憶體）允許控制器在電源循環或系統重新啟動後保留數據，而NVRAM DIMM 則維護NVRAM設定。</block>
+  <block id="06ae2e96e772f1ebb7bcbdfaf2a29619" category="paragraph"><block ref="06ae2e96e772f1ebb7bcbdfaf2a29619" category="inline-link-macro-rx"></block></block>
+  <block id="3b6e8011ba80e6703880646bf3925bff" category="paragraph"><block ref="3b6e8011ba80e6703880646bf3925bff" category="inline-link-macro-rx"></block></block>
+  <block id="e10e00b4c53f89990e82ffd1e6f22f61" category="doc">將失敗的啟動媒體傳回NetApp - ASA C400</block>
+  <block id="352d38ced977b67bb2c4f5a69083d03d" category="paragraph">如果您的ASA C400系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="e788a48adb6a19e7299317986939a9a2" category="doc">從合作夥伴節點自動復原啟動媒體 - ASA C400</block>
+  <block id="34b29be83d480738889d8ebcd1886ec1" category="paragraph">在ASA C400系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="9d39a64ade57e142a88ec768b81c91d9" category="doc">從 USB 隨身碟手動恢復啟動媒體 - ASA C400</block>
+  <block id="83c2b84806c943f6b50bafd0fb4efb51" category="summary">ASA C400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="55d53312805fe204533f1bb33f0fedca" category="doc">更換啟動媒體以實現自動啟動恢復 - ASA C400</block>
+  <block id="5d69ccf09575fcce4a0fcad17c305a7b" category="paragraph">ASA C400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="95af7460d1911057f13d748a51faf551" category="summary">在更換ASA C400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="fafee2b3699468f91e3f14fc4e792257" category="doc">自動啟動媒體復原的要求 - ASA C400</block>
+  <block id="10d2fbd856f042a1112a6b4be8d605a4" category="paragraph">在更換ASA C400中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="1a3246c7ae0b5f948f467b33a302c911" category="summary">在更換ASA C400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="da706d63b6432a748eccdc32954975df" category="doc">手動啟動媒體復原的要求 - ASA C400</block>
+  <block id="939257993754234e74b76aea6f4e4e43" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換ASA C400儲存系統中的啟動媒體。</block>
+  <block id="8fcfa8e6cb87eb29b8bae4c2c6a95100" category="doc">啟動媒體自動復原工作流程 - ASA C400</block>
+  <block id="61aba7c99f550875e7735725dc17f5f1" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在ASA C400 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="dc9867e84dc1dc6d42d61ec374a11844" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密以及驗證系統功能，開始更換ASA C400儲存系統中的啟動媒體。</block>
+  <block id="d1f17cccb0588b5d0d37a939af6b6ec9" category="doc">啟動媒體手動恢復工作流程 - ASA C400</block>
+  <block id="1f67115261e58e4a3c2902f55ff1870a" category="doc">更換啟動媒體並準備手動啟動恢復 - ASA C400</block>
+  <block id="dcc1e7905dc913d93bd16a9d4b0cddd4" category="summary">關閉ASA C400儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="a4c3f985c6515c8f88e604f7a11905f1" category="doc">關閉控制器以進行自動啟動媒體恢復 - ASA C400</block>
+  <block id="cb0dfaa8139b94587b39f5694c8c8f9e" category="paragraph">關閉ASA C400 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="5dd2434180bdbd6f1d65f83bd7aa5bb8" category="doc">關閉控制器以進行手動啟動媒體恢復 - ASA C400</block>
+  <block id="c1f0d47ed40a4f3a4a19c11084ae58a5" category="paragraph">維護ASA C400儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="15bc84fa5489d2e54fdf72482df3e3ce" category="paragraph">維護過程假定ASA C400儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="9850c9d30ed561f1bc1a63527d554b78" category="doc">將失敗的啟動媒體傳回NetApp - ASA C800</block>
+  <block id="b602900a2c4edc1e98c65f23c235accb" category="paragraph">如果您的ASAF C800系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="9d2068a55a2da473bf1c33aae89a36d2" category="paragraph">如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用<block ref="739428bb763fc45faeb1ae97255a3f48" category="inline-link-macro-rx"></block></block>
+  <block id="d514a7489ec95bb2a3e761f79dd08254" category="doc">從合作夥伴節點自動復原啟動媒體 - ASA C800</block>
+  <block id="43535e76f42e16cae35e58f51112fee3" category="paragraph">在ASA C800系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="e797cc14cbd83adea19055313ce780d2" category="doc">從 USB 隨身碟手動恢復啟動媒體 - ASA C800</block>
+  <block id="cc6c150eeeda76035baba1ca9bec7f8b" category="summary">ASA C800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="9075606b5faf6dd212619308b8e5025e" category="doc">更換啟動媒體以實現自動啟動恢復 - ASA C800</block>
+  <block id="075d5fc89153c0383e52d9f3e5badfb0" category="paragraph">ASA C800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="6bca484b66731ad1c39b5ddad4ee5423" category="summary">在更換ASA C800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="18319bfb663e3372f07d3e1e8e0ed3de" category="doc">自動啟動媒體復原的要求 - ASA C800</block>
+  <block id="eab54dfc4e7beb82ae1f48213a2b2b62" category="paragraph">在更換ASA C800中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="a0e501facd187264d36a04b26ace9613" category="summary">在更換ASA C800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="97b8e0ee1943302c9ce7b8c3f7099672" category="doc">手動啟動媒體復原的要求 - ASA C800</block>
+  <block id="46d81f9ac1f40f51995ed2d2a864c7d0" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換ASA C800儲存系統中的啟動媒體。</block>
+  <block id="bd2004181e783a2ce1a7edb9d36c9621" category="doc">啟動媒體自動復原工作流程 - ASA C800</block>
+  <block id="c17c6cd7d230d26b6055df587fff8f2a" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在ASA C800 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="fc4543934233e0bf02e26cec60f78e13" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密以及驗證系統功能，開始更換ASA C800儲存系統中的啟動媒體。</block>
+  <block id="87b2f8106853b00c0b2dc002a92e6c71" category="doc">啟動媒體手動恢復工作流程 - ASA C800</block>
+  <block id="49b0bd3c0dbb58facff799b0de224229" category="doc">更換啟動媒體並準備手動啟動恢復 - ASA C800</block>
+  <block id="9cbb8388a3adabc9382cb6a250286db6" category="summary">關閉ASA C800儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="1874f003f2109c6554e8680d99e76e4d" category="doc">關閉控制器以進行自動啟動媒體恢復 - ASA C800</block>
+  <block id="f36e4e67bad8abd5dd4c7e4ab62dafbc" category="paragraph">關閉ASA C800 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="fb90cfe951df7435d9ebfc3ad5489b6b" category="doc">關閉控制器以進行手動啟動媒體恢復 - ASA C800</block>
+  <block id="d3c68c0d6fbe8e59b9ce22c40e047bb6" category="paragraph">維護ASA C800儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="1cdf405b83256c8187cb8d239742c6e6" category="paragraph">維護過程假定ASA C800儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="86eaa4c0bb049cd4791891b569f8b208" category="paragraph">如果您的ASA 70-90 系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="34a6a22de50bdf82fc335ef9ba00f122" category="doc">在啟動媒體上恢復ONTAP映像 - ASA A70 和ASA A90</block>
+  <block id="311fdf0bc640bef9909a44de7e92965d" category="doc">更換啟動介質的要求 - ASA A70 和ASA A90</block>
+  <block id="41b89d0490625c676af5a5cff71cfb3e" category="doc">關閉控制器以更換啟動介質 - ASA A70 或ASA A90</block>
+  <block id="02b0f3d45bd8a43d8e99a812c22f13a0" category="doc">在啟動媒體上還原ONTAP映像 - ASA A1K</block>
+  <block id="0e4aeec1f9da6d5e96e0144b5f37e09a" category="doc">將失敗的啟動媒體傳回NetApp - ASA A400</block>
+  <block id="f7c6615d138a63d22cf5023c69e7319a" category="paragraph">如果您的ASA A400系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="c0f6a2eb47a57b7c065866b33fdf90ac" category="doc">從合作夥伴節點自動復原啟動媒體 - ASA A400</block>
+  <block id="85856d7fbf598be1af6359e041dbc6c0" category="paragraph">在ASA A400系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="834ffef5d40b393f44e5d2a7b7ca183e" category="doc">從 USB 隨身碟手動恢復啟動媒體 - ASA A400</block>
+  <block id="a1102252f7d291ba487477c1ad7dc0f4" category="summary">ASA A400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="183429bd185c0bb89d230721c8bafb0f" category="doc">更換啟動媒體以實現自動啟動恢復 - ASA A400</block>
+  <block id="f8dd43c0db45969cb260f51342c2daf8" category="paragraph">ASA A400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="7bedaa496cfd73e8b1e6cfc86c091f63" category="summary">在更換ASA A400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="f2c392f30e5fe029dc592be664339154" category="doc">自動啟動媒體復原的要求 - ASA A400</block>
+  <block id="ef5ca04fc37545d8e98cf02275bc6c17" category="paragraph">在更換ASA A400中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="84d5e9550c5d39d2538fd0be0557590f" category="summary">在更換ASA A400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="7f32935bbd94e38a894928143b4b15c6" category="doc">手動啟動媒體復原的要求 - ASA A400</block>
+  <block id="a20ebcdc01dd4e5abab7f61885008057" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換ASA A400儲存系統中的啟動媒體。</block>
+  <block id="015033a6e051cecbcf4d2c3aebdc2b40" category="doc">啟動媒體自動復原工作流程 - ASA A400</block>
+  <block id="6507c6b787cdc07b44b60600bf4145e9" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在ASA A400系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="329c9ace994be9248b3043e77ed3e54f" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密以及驗證系統功能，開始更換ASA A400儲存系統中的啟動媒體。</block>
+  <block id="22f353a6c038ce3ebff60b5a2080b0ec" category="doc">啟動媒體手動恢復工作流程 - ASA A400</block>
+  <block id="e5bcdce4e562b8b60ae89794b945de42" category="doc">更換啟動媒體並準備手動啟動恢復 - ASA A400</block>
+  <block id="e72e7228a5180ac1bfa285a4f11bc4f5" category="summary">關閉ASA A400儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="66f12ed6d68584ef675075a288b7b482" category="doc">關閉控制器以進行自動啟動媒體恢復 - ASA A400</block>
+  <block id="7cb7231cf20dc931525517d42b1e5409" category="paragraph">關閉ASA A400 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="6effad4b4f854b5d9f5212f5786dec6c" category="doc">關閉控制器以進行手動啟動媒體恢復 - ASA A400</block>
+  <block id="63316578a99d2be44745f91a8a533687" category="paragraph">維護ASA A400儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="f84d129ccf9d1cd4adfd21c0a2e73b20" category="paragraph">維護過程假定ASA A400儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="2fa228b1a6b52ddee3a9c6779943197f" category="paragraph">啟動媒體儲存儲存系統用於啟動的一組主要ONTAP映像檔。在自動復原期間，系統會從合作夥伴節點擷取啟動映像，並自動執行適當的啟動功能表選項以在取代啟動媒體上安裝映像。自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用<block ref="d83b47a0a2d85a13a2094c696f473b60" category="inline-link-macro-rx"></block> 。</block>
+  <block id="361b65eef42e888122f41f11eac8fa07" category="doc">將失敗的啟動媒體傳回NetApp - ASA A800</block>
+  <block id="06275ea376599fc8bf14d5bde1a4cc31" category="paragraph">如果您的ASAF A800系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="924624c8588a90de7fdeb6caf86c2203" category="doc">從合作夥伴節點自動復原啟動媒體 - ASA A800</block>
+  <block id="eb5a4bd38649b66fbf79fa72698b100d" category="paragraph">在ASA A800系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="d8640bcfad4728aed30f3f1a19ed9aab" category="doc">從 USB 隨身碟手動恢復啟動媒體 - ASA A800</block>
+  <block id="16083bf1712dbe8dce78059c2dcbfab8" category="summary">ASA A800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="e6a5d51d9bb4a462a50b66e9607ed4c9" category="doc">更換啟動媒體以實現自動啟動恢復 - ASA A800</block>
+  <block id="c750b42bbf0b2a1a720c61535134b17b" category="paragraph">ASA A800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="c93806c44a1a1eacf0faaf11c4a72185" category="summary">在更換ASA A800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="e149ea0285b07569363801278d2e4f1e" category="doc">自動啟動媒體復原的要求 - ASA A800</block>
+  <block id="2c7180a3080a06cb0599eed2d1ca8b9a" category="paragraph">在更換ASA A800中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="aa2b63e39c66d87e3ef0adb54f3a479e" category="summary">在更換ASA A800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="8b4167c8eb3a3738ce201cbad23f4a4f" category="doc">手動啟動媒體復原的要求 - ASA A800</block>
+  <block id="2f6dc43fac8155de65b6846438a8462a" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換ASA A800儲存系統中的啟動媒體。</block>
+  <block id="f50118f7e12a2ef1e5a8f1983b2eff33" category="doc">啟動媒體自動復原工作流程 - ASA A800</block>
+  <block id="8e70b97e62889f4765f18fc1c9d41928" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在ASA A800系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="3535229cbc089db5881d1253c5694ce3" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密以及驗證系統功能，開始更換ASA A800儲存系統中的啟動媒體。</block>
+  <block id="bcbcde938bdf5537e124daf437e7b9db" category="doc">啟動媒體手動恢復工作流程 - ASA A800</block>
+  <block id="dc9758be9759e8c57475ad932fefe4db" category="doc">更換啟動媒體並準備手動啟動恢復 - ASA A800</block>
+  <block id="efdee91879779d5ca7bdeca68ad8554e" category="summary">關閉ASA A800儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="5f3255ff63cc7544f1e12eab4fb27c88" category="doc">關閉控制器以進行自動啟動媒體恢復 - ASA A800</block>
+  <block id="1ff29b745be87692db3430ac143ca156" category="paragraph">關閉ASA A800 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="057a80e24c284868ae5c3b2342b8f7db" category="doc">關閉控制器以進行手動啟動媒體恢復 - ASA A800</block>
+  <block id="a6ef9b4193af40daa8e0af1cb39800be" category="paragraph">維護ASA A800儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="f479f65c7fc63d1be810d8c72e66fa74" category="paragraph">維護過程假定ASA A800儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="991fde1e2f472e8a5745cbdf81e079bc" category="paragraph">如果您的ASA A900系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="853ed3f66990612e4e0c819c5d847ab0" category="summary">在ASA A900系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。</block>
+  <block id="9ba315e2dcb74d7d652a176d97bfa363" category="doc">從合作夥伴節點自動復原啟動媒體 - ASA A900</block>
+  <block id="f054df79bb11619746d06ed0958953a0" category="paragraph">在ASA A900系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。</block>
+  <block id="f844aa112f2ce2bbb31f34acfc4e2526" category="summary">ASA A900 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="b0a9527bfb8ce1fb0c8d3d5aa7b2ce80" category="doc">更換啟動媒體以實現自動啟動恢復 - ASA A900</block>
+  <block id="1a36d4701aabbe1db74da28a8cc140b3" category="paragraph">ASA A900 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="1fbc095e27acc85d2d626dc44b1698c9" category="summary">在更換ASA A900 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="6371c9113bb173db821f8c48a70384c0" category="doc">自動啟動媒體復原的要求 - ASA A900</block>
+  <block id="9e897d5c1be66981a1ee20fced4d99fa" category="paragraph">在更換ASA A900中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="c1de618be6f54f816019fc5cb45c849b" category="doc">手動啟動媒體復原的要求 - ASA A900</block>
+  <block id="5b631559aae3b51d865116d5608bd577" category="paragraph">在更換ASA A900 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="5485c081c1aaeb9399be0ef0aa1243e3" category="paragraph">在您查看更換啟動介質的要求後，您需要<block ref="3b50245387c5d16203a9ca127a792c70" category="inline-link-macro-rx"></block>。</block>
+  <block id="849dbcb9cff10c2c3ce685ff21f7c30c" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換ASA A900儲存系統中的啟動媒體。</block>
+  <block id="fb2125bdc8e77f8630fb3e030e8857f8" category="doc">啟動媒體自動復原工作流程 - ASA A900</block>
+  <block id="d799be71967575706ca5ccebf03648f1" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在ASA A900 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="40421d6a1e6e75d7ef1ebc0e1744e8d1" category="doc">啟動媒體手動恢復工作流程 - ASA A900</block>
+  <block id="517be28f997c15f4e0a9610c7b8eb98a" category="paragraph">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密以及驗證系統功能，開始更換ASA A900儲存系統中的啟動媒體。</block>
+  <block id="0e2db22b9c9decd8463dba0e31f85618" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="9ed39e651cfa2bfcad897ddd10297697" category="inline-link-macro-rx"></block></block>
+  <block id="8686efd91f938565a531b86e4c6484ad" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="710153b81007aab4b847b09b692bebbc" category="inline-link-macro-rx"></block></block>
+  <block id="764396cc36f254bde1c6a8bb8648fe3d" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block><block ref="a98f18c86f9fa7a3f9a442daf9108144" category="inline-link-macro-rx"></block></block>
+  <block id="6929742e903d13c0715ad73d359fba49" category="summary">關閉ASA A900儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="9b845a693c955827a416b44a9519c242" category="doc">關閉控制器以進行自動啟動媒體恢復 - ASA A900</block>
+  <block id="bc350e9ed5562f8e05caf725860ee458" category="doc">關閉控制器以進行手動啟動媒體恢復 - ASA A900</block>
+  <block id="ddd2c1807a530195dc9c14c581b7fe0d" category="doc">從 USB 隨身碟手動恢復啟動媒體 - ASA A900</block>
+  <block id="332b46a23e8dff84588d76fe63f1cc25" category="doc">更換啟動媒體並準備手動啟動恢復 - ASA A900</block>
+  <block id="a8cc89dd83e94825c63fb5042ce52a8c" category="paragraph">維護ASA A900儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="e78d2f54e32be5aace4ee0e915e12814" category="paragraph">維護過程假定ASA A900儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="a8ebccad83f39d45d83692638bd1be35" category="paragraph">如果您的AFF C400系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="65970b34da900e5881f17583856bc5cd" category="doc">將失敗的啟動媒體傳回NetApp - AFF C400</block>
+  <block id="152037f5b7b5780b475e2597da9bbe78" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF C400</block>
+  <block id="4b0c67a505fa209d6a529a42e37faf4c" category="paragraph">在AFF C400系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。</block>
+  <block id="d5c70f79d37569cc26a869ff117966be" category="doc">從 USB 隨身碟手動恢復啟動媒體 - AFF C400</block>
+  <block id="11e63cc559e327f289e6412304de9cbc" category="summary">AFF C400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="50c31d72416e6fd79a7ef27a60db744a" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF C400</block>
+  <block id="fd80fb86220d663f3c8686b29148ae99" category="paragraph">AFF C400 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="e72434326057ff97f987b53641ca00dd" category="summary">在更換AFF C400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="5e2aa7d9d2c2ab236eb3da371e4c94cd" category="doc">自動啟動媒體復原的要求 - AFF C400</block>
+  <block id="90e3ca94599436bafa3254e647b43203" category="paragraph">在更換AFF C400中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="5e5d0bcb9eda9596399336b7fd66585b" category="summary">在更換AFF C400 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="356cabc5259436f13451eb0e681a3d7f" category="doc">手動啟動媒體復原的要求 - AFF C400</block>
+  <block id="403d3b92cecce32f9df4f2ccf0c26869" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換AFF C400儲存系統中的啟動媒體。</block>
+  <block id="816ca9c03b9dc4b02266d8e1f92392b0" category="doc">啟動媒體自動復原工作流程 - AFF C400</block>
+  <block id="a15fd3940e63990ccc51f739d2346c37" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF C400儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="9fc72301b7287c718e79e66fb08e294c" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換AFF C400儲存系統中的啟動媒體。</block>
+  <block id="4faa36a85b9d111fe4905e6b2e10a27c" category="doc">啟動媒體手動恢復工作流程 - AFF C400</block>
+  <block id="eaf1f4f25a5276152228f6fc62bc398a" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF C400</block>
+  <block id="a0dbcf6f0f26d754fde2bb6d70fbb73f" category="summary">關閉AFF C400儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="966d4890030f1e5c3f1b51c3c5299a94" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF C400</block>
+  <block id="e36c07ddc2c852e96b18f7eda4762c15" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF C400</block>
+  <block id="a42309898a70f71c8b47fb7946ed0fa2" category="summary">維護AFF C400硬體</block>
+  <block id="37a0c3f42116a45593e1759f7ca396f7" category="paragraph">維護AFF C400儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="3fc46261568f86b2dfeb5c6ac5374871" category="paragraph">維護過程假定AFF C400儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="a6783798c7878d8ef836e14478c0ef38" category="paragraph">系統管理模組提供控制器和控制台或筆記型電腦之間的接口，用於控制器或系統維護目的。系統管理模組包含啟動媒體並儲存系統序號 (SSN)。</block>
+  <block id="6a927a72a3647dbe3f40171b477f09d5" category="doc">將失敗的啟動媒體傳回NetApp - AFF C800</block>
+  <block id="6833a1d5259195b475f6fe2e0b87de67" category="paragraph">如果您的AFF C800系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="bf6fd99254dd358ccb3761bdb86f6ee6" category="doc">從合作夥伴節點自動復原啟動媒體 - AFF C800</block>
+  <block id="6d359ea24bf33b0c9bc36b5be1f31e14" category="paragraph">在AFF C800系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原過程，以從配對節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="59614d7f8c54752af4b5da2b2b5ad34b" category="doc">從 USB 隨身碟手動恢復啟動媒體 - AFF C800</block>
+  <block id="86d17ca75354a41103a63cf402b7270c" category="summary">AFF C800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="2fba40f1d4b0b0191c3ce74446e448f2" category="doc">更換啟動媒體以實現自動啟動恢復 - AFF C800</block>
+  <block id="e14388897a217e1a857388770cabf974" category="paragraph">AFF C800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="d883ace2fbed4bfa3af3fbcc4b01bdc1" category="summary">在更換AFF C800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="cdb79bc35cd41638183f39b8a4ce7fd3" category="doc">自動啟動媒體復原的要求 - AFF C800</block>
+  <block id="762a189e47993cdece764acffc3ceaa4" category="paragraph">在更換AFF C800中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="94af2227395ddad6e5559560cd877271" category="summary">在更換AFF C800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="376d0b7cc18d28859e4ffa0d79786298" category="doc">手動啟動媒體復原的要求 - AFF C800</block>
+  <block id="19c26b68bb7cb462e4abd364c6328f0f" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換AFF C800儲存系統中的啟動媒體。</block>
+  <block id="11f28b493b22c26e63808c0ef19438fb" category="doc">啟動媒體自動復原工作流程 - AFF C800</block>
+  <block id="45205ddf6f9c7e719aaaa7cbae3d0889" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF C800 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="302e158fc93380f5f3a9d40cf82e06f9" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換AFF C800儲存系統中的啟動媒體。</block>
+  <block id="7af8a97506402cb0ac9ef5bfd59bd213" category="doc">啟動媒體手動恢復工作流程 - AFF C800</block>
+  <block id="fbe931acedf8eb5e6a3615d416560ed4" category="doc">更換啟動媒體並準備手動啟動恢復 - AFF C800</block>
+  <block id="d16211cc14d5926be04fb22e96001a9a" category="summary">關閉AFF C800儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="b168114c4413f6996c9f2a75b1a5a2ef" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF C800</block>
+  <block id="4049e0486575464f760ada93973aa794" category="paragraph">關閉AFF C800儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="7dfe2a1426c539750938a390c889f3c7" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF C800</block>
+  <block id="09cd0fdcd9f1256abe6169998fea7954" category="summary">維護AFF C800硬體</block>
+  <block id="ae52032c0389bb7e30fc8a1b1d42aca4" category="paragraph">維護AFF C800儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="d0dc52ec8db18186cb1170efa77d4057" category="paragraph">維護過程假定AFF C800儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="24cceeaae404051397c2983029af36f3" category="summary">如果您的 FAS2800 系統中的某個元件發生故障，請將故障元件退回給NetApp。</block>
+  <block id="f182f34c787823aeadccd435dcec1399" category="doc">將發生故障的啟動介質回傳給NetApp - FAS2800</block>
+  <block id="b3361527c62bdeb1f36dbc5fa70c1b86" category="paragraph">如果您的 FAS2800 系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="208666d4a1799cf8d635583dc8b3e3de" category="doc">將發生故障的啟動介質回傳給NetApp - FAS2820</block>
+  <block id="f8baed9ec7bf1a62d9ce35c80a3d8c51" category="summary">在 fas2800 系統中的替換啟動媒體上恢復ONTAP映像。該過程涉及從 LOADER 提示符啟動啟動恢復程序並監視恢復過程直到其完成並且節點重新啟動。</block>
+  <block id="e6fe534627555f8e7a33805bc543abdc" category="doc">從合作夥伴節點自動恢復啟動媒體 - FAS2800</block>
+  <block id="cc0ed6aa6da428e81652617693d61afb" category="paragraph">在 FAS2800 系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原流程，從合作夥伴節點復原設定。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="f2bc732a7d5d8c83b606d4b87b43d0c8" category="doc">從 USB 隨身碟手動恢復啟動媒體 - FAS2820</block>
+  <block id="1e791cb35abdd5d00f53d3d3c4443566" category="summary">FAS2800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="743e8a6f1f9f11ff4a64d576d02918df" category="doc">更換啟動介質以實現自動啟動恢復 - FAS2800</block>
+  <block id="25e62a9fdcc1989a75580a47b34b825a" category="paragraph">FAS2800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="b25d39100142d4325a36a2f1dc51b357" category="summary">在更換 FAS2800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="b0c926b67df8c50f554c31ba5f438d3b" category="doc">自動啟動介質恢復的要求 - FAS2800</block>
+  <block id="391ecd0e8870e2b4f7726e8e0e4535b4" category="paragraph">在更換 FAS2800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="540645a7a8b968d2bfc1cb50135e74b5" category="summary">在更換 FAS2800 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="f42d257c8d78af23f34def0cfd5c0e41" category="doc">手動啟動介質恢復的要求 - FAS2800</block>
+  <block id="95ede32ef16239c3cc5bbb5979861cd5" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換 FAS2800 儲存系統中的啟動媒體。</block>
+  <block id="7d5a43c9fba8074e1fcb5d5b13d61a95" category="doc">啟動媒體自動復原工作流程 - FAS2800</block>
+  <block id="3255a747b4184547071b1ae5154169ee" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它會使用合作夥伴節點上的啟動映像在 FAS2800 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="9a9625cd4ab60019935c414944220ecf" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換 FAS2800 儲存系統中的啟動媒體。</block>
+  <block id="ebcc7e58b81c25dd73c9df8fe6181151" category="doc">啟動媒體手動復原工作流程 - FAS2800</block>
+  <block id="3ee8f094be932eefb34c56849195a95c" category="doc">更換啟動介質並準備手動啟動恢復 - FAS2820</block>
+  <block id="761cd9929abac19a1b8c34b6aabb24d1" category="summary">關閉 FAS2800 儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="708e5a998bc4f6c04fcaa8374cb2876c" category="doc">關閉控制器以進行自動啟動媒體恢復 - FAS2800</block>
+  <block id="e78e9090c463ee72ca6961d2d9410202" category="paragraph">關閉 FAS2800 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="f786f72f787253592e5245b4d428485a" category="doc">關閉控制器以進行手動啟動媒體恢復 - FAS2820</block>
+  <block id="0d524c2055dbb11c0b4664cba6b67f83" category="paragraph">維護 FAS2820 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="f0a79de90b99f5f050883964e05d8d52" category="paragraph">維護過程假定 FAS2820 儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="f33c5fec2de4fbf5a4380cbc9a2ddaa6" category="paragraph"><block ref="f33c5fec2de4fbf5a4380cbc9a2ddaa6" category="inline-link-macro-rx"></block></block>
+  <block id="b964db289e222d97cb288f76b040aa05" category="paragraph"><block ref="b964db289e222d97cb288f76b040aa05" category="inline-link-macro-rx"></block></block>
+  <block id="ae67a746eb3619b67c535b49242009cc" category="paragraph"><block ref="ae67a746eb3619b67c535b49242009cc" category="inline-link-macro-rx"></block></block>
+  <block id="59fd433224242913fbfcbf0af8c25782" category="paragraph">夾層卡是一種擴充卡，設計用於插入主機板上的專用插槽並容納卡片 I/O 卡。</block>
+  <block id="ccb46cd83815d2a0d4deb3061e1890cd" category="paragraph"><block ref="ccb46cd83815d2a0d4deb3061e1890cd" category="inline-link-macro-rx"></block></block>
+  <block id="4b90affa7835ea96a51fed1943ed714a" category="doc">在雙節點MetroCluster配置中切換回聚合 - FAS8300和FAS8700</block>
+  <block id="873aecdad0cb49d6576e39c8298dd1bf" category="doc">將失敗的啟動媒體傳回NetApp - FAS8300和FAS8700</block>
+  <block id="be73561cb8cd15d6613be2396178e43c" category="paragraph">如果您的FAS8300或FAS8700系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="b76577fa042165d3e8e07c529d9b9d1c" category="doc">檢查加密金鑰支援和狀態 - FAS8300和FAS8700</block>
+  <block id="5b43006cee0518e13913328d7814035f" category="doc">恢復加密 - FAS8300和FAS8700</block>
+  <block id="0924b401802439618a718e54fb8b6c2a" category="summary">在FAS8300或FAS8700系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原設定。</block>
+  <block id="f054e77489472e63e19b45e2c9ff31c4" category="doc">從合作夥伴節點自動恢復啟動介質 - FAS8300 和 FAS8700</block>
+  <block id="524ffc85b676c8fa7303fecc45c332ab" category="paragraph">在FAS8300或FAS8700系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原設定。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="093908c6170c1795125ba47dc3c5f5c8" category="doc">從 USB 驅動器手動恢復啟動媒體 - FAS8300 和 FAS8700</block>
+  <block id="ba37f46ada6aaff46e63e14da5857450" category="summary">FAS8300 或 FAS8700 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="2f5bd969b0f29b1308a14f3006b040f3" category="doc">更換啟動介質以實現自動啟動恢復 - FAS8300 和 FAS8700</block>
+  <block id="96c4098495740e7119648c5d4dfcc81f" category="paragraph">FAS8300 或 FAS8700 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="6d38c98f35feff5362357d90ac3df2f0" category="doc">啟動介質更換概述 - FAS8300和FAS8700</block>
+  <block id="fa6154065b326631d4348a136b2cfb2c" category="summary">在更換FAS8300或FAS8700系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="d17ebedff2aa967786a1f05ffdd1d4a5" category="doc">自動啟動介質恢復的要求 - FAS8300 和 FAS8700</block>
+  <block id="a9f25df7e08b579215eb3375343eb3a5" category="paragraph">在更換FAS8300或FAS8700中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="be767870bb556c204155138a2ea3ad9f" category="summary">在更換FAS8300和FAS8700系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="cc2c652dd46d9b43caba43e56578d8fc" category="doc">手動啟動介質恢復的要求 - FAS8300 和 FAS8700</block>
+  <block id="00211911b2ba513521720fdc3f5c8683" category="paragraph">在更換FAS8300或FAS8700系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="65899bfeb0f4080d023f5b76933df62a" category="summary">開始更換FAS8300或FAS8700儲存系統中的啟動介質，方法是檢視更換需求、關閉控制器、更換啟動介質、恢復啟動介質上的映像並驗證系統功能。</block>
+  <block id="9c211242417a2d4e971c87e2f2ab93b0" category="doc">啟動介質自動復原工作流程 - FAS8300 和 FAS8700</block>
+  <block id="c23c751e94afc93f18b1692d0c6f7466" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在FAS8300或FAS8700儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="cd59b9e4a3eff357c3e5ea8cfd55b7e7" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換FAS8300儲存系統中的啟動媒體。</block>
+  <block id="20f77c655b1ed667f582034518a6b13f" category="doc">啟動介質手動復原工作流程 - FAS8300 和 FAS8700</block>
+  <block id="8769b23b60bc0ed47c85cd0f85d8a72f" category="doc">更換啟動介質並準備手動啟動恢復 - FAS8300 和 FAS8700</block>
+  <block id="f92852859a1256b879ad5dfabaea0674" category="summary">關閉FAS8300或FAS8700儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="b2afd54a88356df6b7914f4f501173fe" category="doc">關閉控制器以進行自動啟動介質恢復 - FAS8300 和 FAS8700</block>
+  <block id="710b1825cc3b61d89111ebcb4f63d4ed" category="doc">關閉控制器以進行手動啟動介質恢復 - FAS8300 和 FAS8700</block>
+  <block id="cdcc1635d67f2d69b9bc78130ddd2127" category="summary">維護FAS8300和FAS8700硬件</block>
+  <block id="8dc6127ffd213090bdfb30a973df145d" category="paragraph">維護FAS8300和FAS8700儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="2f5b095ada5faeed091717ef3fef109e" category="paragraph">維修過程假定FAS8300和FAS8700儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="0facd68d08373b50ebf915bc5f5d5586" category="paragraph">對於FAS8300和FAS8700儲存系統，您可以對下列元件執行維護程序。</block>
+  <block id="7c407f24f3e8906fc28272461447b787" category="doc">將發生故障的啟動介質回傳給NetApp - FAS9500</block>
+  <block id="fb86ae9d6001d86ff643fedb448fbcd7" category="paragraph">如果您的FAS9500系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
+  <block id="adaa659861ef96874f01b66fb3085af7" category="summary">在FAS9500系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原配置。</block>
+  <block id="90b0b54831ab373418e5ba1f7e36930e" category="doc">從合作夥伴節點自動恢復啟動媒體 - FAS9500</block>
+  <block id="144634326815d011e3c0544a865340fa" category="paragraph">在FAS9500系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原配置。在復原過程中，系統會檢查是否已啟用加密，並決定正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。</block>
+  <block id="43c0f29ffe78a563d4821e6d5071db39" category="doc">從 USB 隨身碟手動恢復啟動媒體 - FAS9500</block>
+  <block id="465fc6d88891709a6b5ec571f0fca1ec" category="summary">FAS9500 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="dc7b436e17040bcd855e157c87919d67" category="doc">更換啟動介質以實現自動啟動恢復 - FAS9500</block>
+  <block id="ec8924ddfa313bcce83832f40a4baa04" category="paragraph">FAS9500 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。</block>
+  <block id="7704cc4b3655d0f9e0e1a04dd2b14fa0" category="summary">在更換FAS9500系統中的啟動介質之前，請確保滿足成功更換的必要要求。</block>
+  <block id="33d8e575e5d342885f50e373977da7e6" category="doc">自動啟動介質恢復的要求 - FAS9500</block>
+  <block id="c1c756e9da2d209c0c17a3d0d725eda1" category="paragraph">在更換FAS9500中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。</block>
+  <block id="fecc555d30c9690385419a4e597992b0" category="summary">在更換FAS9500系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括確保您擁有具有適當儲存容量的 USB 隨身碟，並驗證您擁有正確的替換啟動裝置。</block>
+  <block id="d67fdc8908e6979f4155c6f1e5e595a4" category="doc">手動啟動介質恢復的要求 - FAS9500</block>
+  <block id="42f8dd2364f77d762591cef6b62b04df" category="summary">透過查看更換需求、關閉控制器、更換啟動媒體、恢復啟動媒體上的映像以及驗證系統功能，開始更換FAS9500儲存系統中的啟動媒體。</block>
+  <block id="bfefca4afffb74e4e761491f28a131f6" category="doc">啟動媒體自動復原工作流程 - FAS9500</block>
+  <block id="1b8cebd8291d5bfb01ca423636061fe8" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它會使用合作夥伴節點上的啟動映像在 FAS9500 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
+  <block id="d0be1e41f5efadbe5260140391f8f070" category="summary">透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密以及驗證系統功能，開始更換FAS9500儲存系統中的啟動媒體。</block>
+  <block id="8697a2c0e8a58bab734aee2fe05e19b5" category="doc">啟動媒體手動復原工作流程 - FAS9500</block>
+  <block id="19a42cf51141a99fd44aa4a3127b58d8" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="300546c55a0d2f6b7698e0a84c6153c8" category="inline-link-macro-rx"></block></block>
+  <block id="815bc0bcd0054c7517bbb33733536cc4" category="doc">更換啟動介質並準備手動啟動恢復 - FAS9500</block>
+  <block id="027c11afe276b4d26b9766b35d4d9ad2" category="summary">關閉FAS9500儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。</block>
+  <block id="def66a7f50caa48722a73294ce8ebd3b" category="doc">關閉控制器以進行自動啟動媒體恢復 - FAS9500</block>
+  <block id="743d8586c85598b53462cd9178125494" category="paragraph">關閉 FAS9500 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="5bf7e02c281c350a900998a7828cb257" category="doc">關閉控制器以進行手動啟動媒體恢復 - FAS9500</block>
+  <block id="736d29c74e85cdb54018f2987a6768a8" category="summary">維護FAS9500硬件</block>
+  <block id="dc5e9025fa86b8774f3ddf2324b611ac" category="paragraph">維護 FAS9500 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
+  <block id="8e9e5dffbf855d3c7d941afd70d9cedd" category="paragraph">維護過程假定 FAS9500 儲存系統已部署為ONTAP環境中的儲存節點。</block>
+  <block id="f09996a6db4296438daa24156ff1a1de" category="paragraph"><block ref="f09996a6db4296438daa24156ff1a1de" category="inline-link-macro-rx"></block></block>
+  <block id="f91d147c48561257f64c342fae27eef7" category="list-text">如果ONTAP正在運作（控制器可用於提供資料），且機架中的所有磁碟機均為無人擁有、備用或離線聚合的一部分，則等待至少 120 秒。</block>
+  <block id="502c078a8048be1df907e48bf701b982" category="sidebar">AFF A400 啟動介質自動化</block>
+  <block id="202476252b9c9c8129a604e257244ba5" category="sidebar">AFF A800 啟動介質自動化</block>
+  <block id="f807c912f6737e2b2dad57aef36ad2fa" category="sidebar">AFF A800啟動介質手冊</block>
+  <block id="a4489912dbfe35fd210adadc480dce1f" category="sidebar">AFF A900 啟動介質自動化</block>
+  <block id="6d57596897407d8d46c3194d7e06319e" category="sidebar">AFF A900啟動介質手冊</block>
+  <block id="068f81a3552788580eabee4f71ba08e5" category="sidebar">ASA C400 啟動介質自動化</block>
+  <block id="d446c141458991578f7f367cdefd1543" category="sidebar">ASA C400啟動介質手冊</block>
+  <block id="07af2586f8972447a5389c5ed63a2fd6" category="sidebar">ASA C400 NVDIMM 電池</block>
+  <block id="6c2cbc73b4ce8864a3fac3a14c1016de" category="sidebar">ASA C400 NVDIMM</block>
+  <block id="6ec3fd53b9e8060329a181b68e94213f" category="sidebar">ASA C800 啟動介質自動化</block>
+  <block id="6832a3aaee06e686f8e63b80669d39ed" category="sidebar">ASA C800啟動介質手冊</block>
+  <block id="cfadc5aad1c7058062b660223b587c20" category="sidebar">ASA A400 啟動介質自動化</block>
+  <block id="b3b2022a701d54310615a57645d62cae" category="sidebar">ASA A400啟動介質手冊</block>
+  <block id="43d69a4e133a92260ad49f36d7a05314" category="sidebar">ASA A800 啟動介質自動化</block>
+  <block id="c9d91f4ea6962720259fdd3c16389ba8" category="sidebar">ASA A800啟動介質手冊</block>
+  <block id="6dcafec1d678591dc948d8e32182a7a5" category="sidebar">AFF ASA 900 啟動媒體自動化</block>
+  <block id="4aa0b2363af339f0ad6cead0a79ed708" category="sidebar">AFF ASA 900 啟動介質手冊</block>
+  <block id="ca96cd7359b9e5e04ba20a6984160e96" category="sidebar">AFF C400 啟動介質自動化</block>
+  <block id="9e87c4c8e827eb7823ebebbcd271b8ee" category="sidebar">AFF C400啟動介質手冊</block>
+  <block id="2b544173f05b3881e3d51af3e4025a38" category="sidebar">AFF C800 啟動介質自動化</block>
+  <block id="8b4bd76545bbd6f247c6a51cd425af88" category="sidebar">AFF C800啟動介質手冊</block>
+  <block id="e73568e0a1463c8025d72668296e80db" category="sidebar">AFF FAS2800 維護</block>
+  <block id="0a83395bce1aa0ecd6fa3f7f207f952f" category="sidebar">維護概述</block>
+  <block id="9fd044ae1396335c1e195383a9a59de8" category="sidebar">FAS2820啟動介質自動化</block>
+  <block id="671911c7ec14361dc8322a55a2156535" category="sidebar">啟動媒體 - 手動恢復</block>
+  <block id="1c30f96bf597bbdfd26e310e59eb5854" category="sidebar">FAS2820啟動介質手冊</block>
+  <block id="4c430810e44153a64c88da3a6cf7142a" category="sidebar">FAS8300和FAS8700安裝和設置</block>
+  <block id="6845236a22320cce517f949631bddf30" category="sidebar">FAS8300和FAS8700維護</block>
+  <block id="cbaa86b5dbdf706f5cc08b5bbb1513cb" category="sidebar">FAS8300和FAS8700啟動介質自動化</block>
+  <block id="bc0e1310870c6a6fc5e2b8667ad10d8f" category="sidebar">FAS8300和FAS8700啟動介質手冊</block>
+  <block id="bec00705870c9891f2ef3af87007bd9a" category="sidebar">FAS8300和FAS8700快取模組</block>
+  <block id="929d95f2ea68f18ba02ae5368e08e5db" category="sidebar">FAS8300和FAS8700機箱</block>
+  <block id="404700197343ce725269e5effa1d5195" category="sidebar">FAS8300和FAS8700控制器</block>
+  <block id="dc4411936a1b60d450c095695c5e2202" category="sidebar">FAS8300和FAS8700 DIMM</block>
+  <block id="760db64ab19de7bfb40eccff0f7386c6" category="sidebar">FAS8300和FAS8700 PCIe 或夾層卡</block>
+  <block id="f17dc0d5f272bb8850e52f96c86ea835" category="sidebar">FAS8300和FAS8700電源</block>
+  <block id="b283de4e13a7d5b68dec3f041941e3bc" category="sidebar">FAS8300和FAS8700實時時鐘電池</block>
+  <block id="49083f96e824487850956b55d36a363f" category="sidebar">FAS9500啟動介質自動化</block>
+  <block id="92e1f12178f27a238b4b86215c5615af" category="sidebar">FAS9500啟動介質手冊</block>
 </blocks>

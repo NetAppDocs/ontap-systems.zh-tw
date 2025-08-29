@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, shut, down, impaired, controller, take, over 
 summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
 ---
-= 關閉功能受損的控制器 - FAS2820
+= 關閉控制器以進行手動啟動媒體恢復 - FAS2820
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 根據儲存系統硬體組態的不同、您可以使用不同的程�
 
 [role="lead"]
 關閉或接管受損的控制器。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 完成NVE或NSE工作之後、您必須完成受損控制器的關機。
 

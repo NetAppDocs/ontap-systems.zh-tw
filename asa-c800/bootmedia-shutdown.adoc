@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, shut down the controller 
 summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
 ---
-= 關閉控制器 - ASA C800
+= 關閉控制器以進行手動啟動媒體恢復 - ASA C800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機�
 
 [role="lead"]
 完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 
 

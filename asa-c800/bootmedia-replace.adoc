@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace the boot media 
 summary: 在更換開機媒體之前、請先移除控制器模組上的擴充卡3、找出控制器模組中故障的開機媒體。 
 ---
-= 更換開機媒體 - ASA C800
+= 更換啟動媒體並準備手動啟動恢復 - ASA C800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,6 +12,8 @@ summary: 在更換開機媒體之前、請先移除控制器模組上的擴充�
 
 [role="lead"]
 若要更換開機媒體、您必須移除受損的控制器模組、安裝替換的開機媒體、並將開機映像傳輸到USB快閃磁碟機。
+
+如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用自動啟動復原程序。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
 
 
