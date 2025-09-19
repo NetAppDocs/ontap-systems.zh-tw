@@ -67,7 +67,7 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node _impaired_node_name_ -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

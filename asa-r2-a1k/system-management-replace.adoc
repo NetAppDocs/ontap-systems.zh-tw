@@ -74,7 +74,7 @@ summary: 當 ASA A1K 系統發生故障或韌體毀損時，請更換系統管�
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node _impaired_node_name_ -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

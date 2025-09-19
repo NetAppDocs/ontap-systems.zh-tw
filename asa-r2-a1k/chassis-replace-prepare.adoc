@@ -1,0 +1,67 @@
+---
+permalink: asa-r2-a1k/chassis-replace-prepare.html 
+sidebar: sidebar 
+keywords: asa a1k, replace the chassis 
+summary: 準備更換ASA A1K 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。 
+---
+= 準備更換機殼 - ASA A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+準備更換ASA A1K 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。
+
+
+
+== 步驟 1 ：找出並監控您的系統
+
+您應該開啟主控台工作階段並儲存工作階段記錄以供日後參考，同時開啟系統位置 LED 以尋找受損機箱。
+
+.步驟
+. 連接至序列主控台連接埠，以與系統進行介面並監控系統。
+. 找出並開啟控制器的位置 LED ：
++
+.. 使用 `system controller location-led show`命令顯示位置 LED 的目前狀態。
+.. 將位置 LED 的狀態變更為「開啟」：
++
+`system controller location-led modify -node _node1_ -state on`
+
++
+位置 LED 會持續亮起 30 分鐘。
+
+
+
+
+
+
+
+== 步驟 2 ：確認更換元件
+
+您應確認收到必要的元件，將其從包裝中取出，並儲存包裝。
+
+.步驟
+. 在打開包裝之前，您應該先查看包裝標籤，並確認：
++
+** 元件零件編號。
+** 零件說明。
+** 包裝盒內的數量。
+
+
+. 從包裝中取出內容物，然後使用包裝將故障元件退回 NetApp 。
+
+
+
+
+== 步驟 3：標記電纜
+
+從系統背面的 I/O 模組中拔出電纜之前，應先將電纜貼上標籤。
+
+.步驟
+. 標記與儲存系統相關的所有纜線。這有助於在本程序稍後重新啟用。
+. 如果您尚未正確接地，請將自己接地。
+
+
+.接下來呢？
+準備好更換ASA A1K 機殼硬體後，您需要link:chassis-replace-shutdown.html["關閉控制器"]。

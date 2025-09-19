@@ -57,7 +57,7 @@ NVRAM 模組包含 NVRAM10 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node _impaired_node_name_ -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

@@ -10518,7 +10518,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="67caf5dc8dfdda70610a58906fa4b6d2" category="inline-link-macro">關閉控制器</block>
   <block id="eab58b4fd7927bfc67a19b1176afc945" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
   <block id="1694aca8e34009761e2e7c350661707d" category="paragraph">當您需要更換開機媒體時，請關閉控制器。</block>
-  <block id="c7bb0682619aac3924ad651203f10f14" category="summary">如果需要硬體故障，請更換 AFF A1K 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
   <block id="12f231246c1957ecc017d5e14e8fa5ce" category="doc">更換控制器 - AFF A1K</block>
   <block id="a7a4c58bcecc6da48011ed379f160841" category="paragraph">更換損壞的 AFF A1K 控制器之後，您需要<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>。</block>
   <block id="65cfd4efc075696b5b4fa182bd8310b6" category="summary">將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統恢復正常運作。</block>
@@ -10598,7 +10597,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="24ba379bd8e7bdde7e0e1b156431376b" category="summary">開始更換 ASA A1K 儲存系統中的開機媒體，方法是檢閱更換需求，關閉控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
   <block id="4d60e015da1ccbddbd5825262ead312e" category="paragraph">開始更換 ASA A1K 儲存系統中的開機媒體，方法是檢閱更換需求，關閉控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
   <block id="8f31c4d6dd15a8b6badb61be6bbe870f" category="doc">更換控制器 - ASA A1K</block>
-  <block id="f36c76518c1338c3f03a21b9d4c06d87" category="paragraph">如果需要硬體故障，請更換 ASA A1K 系統中的控制器。更換程序包括移除受損的控制器，將元件移至更換控制器，安裝更換控制器，然後重新啟動。</block>
   <block id="f501a4282c0407a5377e73a38c2fe79c" category="paragraph">更換了功能受損的 ASA A1K 控制器之後<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="0b7aa62fd5de84b2f6b9168c29cd9699" category="summary">將儲存資源的控制權交給更換控制器，讓 ASA A1K 系統恢復正常運作。</block>
   <block id="6a41dab46dde5ea92e32bfe9162ff999" category="doc">更換控制器的要求 - ASA A1K</block>
@@ -11467,8 +11465,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3d64f9d659d620b82ee84b480edfe77a" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A1K</block>
   <block id="a4171598a9b6537fe8fa298ad497f7f6" category="inline-link-macro">啟動媒體 - 自動恢復</block>
   <block id="2b43a2491d5babfc034a1b39308b0d39" category="paragraph"><block ref="2b43a2491d5babfc034a1b39308b0d39" category="inline-link-macro-rx"></block></block>
-  <block id="867c47462b7dbbde23368654369cdfb2" category="inline-link-macro">啟動媒體-手動恢復</block>
-  <block id="f4855f83eb4f1d3ed29ac13e5aba3470" category="paragraph"><block ref="f4855f83eb4f1d3ed29ac13e5aba3470" category="inline-link-macro-rx"></block></block>
   <block id="b214a7d2f434291d180eb08d9e110707" category="paragraph">啟動媒體儲存一組主ONTAP映像檔和一組輔助 ONTAP 映像文件，系統使用這些文件從 USB 隨身碟啟動映像並從合作夥伴節點恢復配置。</block>
   <block id="002e098e4eaaa09d220774f545b9c2bf" category="summary">如果您的AFF A20、 AFF A30 或AFF A50 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。</block>
   <block id="58463f7f9959c3a53fb6c0c0a714fa80" category="doc">將失敗的啟動媒體部分回傳給NetApp - AFF A20、 AFF A30 和AFF A50</block>
@@ -12426,4 +12422,106 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b283de4e13a7d5b68dec3f041941e3bc" category="sidebar">FAS8300和FAS8700實時時鐘電池</block>
   <block id="49083f96e824487850956b55d36a363f" category="sidebar">FAS9500啟動介質自動化</block>
   <block id="92e1f12178f27a238b4b86215c5615af" category="sidebar">FAS9500啟動介質手冊</block>
+  <block id="3bce4848ee8babd978a1eed14ffb0657" category="paragraph"><block ref="e5d0e758897049635b8f9c5e676046ce" prefix="" category="inline-code"></block></block>
+  <block id="08ff655980adcc7a622e1807b2ce15c0" category="list-text">如果自動交還功能已停用，請重新啟用它：<block ref="07d94d90bbf940cf95f9dbba0029631f" prefix=" " category="inline-code"></block></block>
+  <block id="23d2a44e582b0f47f51ad61543f2784a" category="paragraph">移除控制器之前，您需要移除兩個電源裝置 (PSU)。</block>
+  <block id="754bdcb9d2a9982ca84863ebead5a9e8" category="list-text">卸下 PSU：</block>
+  <block id="4b944e2196447e52700b84ea963df7b5" category="list-text">從 PSU 上拔下電源線。</block>
+  <block id="6c06a5fb23d0b27d73f3c9f97f33c32c" category="list-text">透過向上旋轉 PSU 手柄將 PSU 從機殼後部移除，以便可以將 PSU 拉出，按下 PSU 鎖定卡舌，然後將 PSU 從機箱中拉出。</block>
+  <block id="581513d5a12dbd1f3bfe6ef45b1ed5ff" category="image-alt">移除或更換 PSU</block>
+  <block id="ed4b810b55283df203ad480485a82a62" category="list-text">對第二個 PSU 重複這些步驟。</block>
+  <block id="1cfb4651ff023a85a810b0d0f8752d3b" category="list-text">從底盤上卸下電纜管理設備並將其放在一邊。</block>
+  <block id="232518c3cb9c6af2fd4c7e458c6f8392" category="section-title">步驟 2：移除 I/O 卡、NVRAM12 和系統管理模組</block>
+  <block id="422e2aa4ec97de509f54db9d23618f37" category="list-text">將手指勾入凸輪桿開口並將模組從底盤中拉出，從而將模組從底盤中取出。</block>
+  <block id="bc697ed81f913243860bc2c3886255ae" category="list-text">將 I/O 模組放在一邊，然後對任何其他 I/O 模組重複這些步驟。</block>
+  <block id="123360600d0becc5e58411f458b74156" category="list-text">移除 NVRAM12 模組：</block>
+  <block id="05a0d79ed405af3160693b48cbaf0c70" category="cell">NVRAM12凸輪鎖</block>
+  <block id="09cc9509bdf826c6ba58bbc69212af57" category="list-text">刪除系統管理模組：</block>
+  <block id="d6c8246628a797c4b268d4c17cafc3ff" category="image-alt">系統管理刪除</block>
+  <block id="c988528d3c37d2f9b0d866605d6767c9" category="section-title">步驟 4：更換受損底盤</block>
+  <block id="643b45a9b6dd32c35870daa6dfbb048c" category="list-text">將受損的機殼從系統機櫃或設備機架中的機架導軌上滑出，然後將其放在一邊。</block>
+  <block id="9c1c113447189ce75af5b185c93c6bbb" category="list-text">透過將機殼引導至系統機櫃或設備機架中的機架導軌上，將替換機殼安裝到設備機架或系統機櫃中。</block>
+  <block id="8c9255ceb852418064ecca7af8f50926" category="section-title">步驟5：安裝底盤組件</block>
+  <block id="bb82c34a491e47b4833cd43d9a513a52" category="paragraph">安裝替換機箱後，您需要安裝控制器模組，重新連接 I/O 模組和系統管理模組，然後重新安裝並插入 PSU。</block>
+  <block id="c5b4904134f0b5ed318e3e08c1c32beb" category="list-text">將控制器模組的末端與機殼前方的開口對齊，然後輕輕地將控制器完全推入機箱。</block>
+  <block id="c1704a094a14ee73d5195ae8a7a3e6e8" category="list-text">將鎖定閂鎖旋轉至鎖定位置。</block>
+  <block id="38b59633be983fb905704036391e127c" category="list-text">在機箱後方安裝 I/O 卡：</block>
+  <block id="53c5be162e0f6f1625d426c7fd50db77" category="list-text">將 I/O 模組的末端與更換機箱中與損壞機箱相同的插槽對齊，然後輕輕地將模組完全推入機箱。</block>
+  <block id="66a1431f6c9e0f235d21851ca45dbdb2" category="list-text">將凸輪閂鎖向上旋轉至鎖定位置。</block>
+  <block id="d834c622fceca6769c88ad53db3a2a22" category="list-text">對任何其他 I/O 模組重複這些步驟。</block>
+  <block id="1ae245f9dddd7b829203e0086aaa9a2b" category="list-text">在機箱後方安裝系統管理模組：</block>
+  <block id="0f82c9849f4faa128c397db07a54a6d3" category="list-text">將系統管理模組的末端與機箱中的開口對齊，然後輕輕地將模組完全推入機箱。</block>
+  <block id="ede66225ebedc3cf820e20627637056c" category="list-text">如果尚未這樣做，請重新安裝電纜管理設備並將電纜重新連接到 I/O 卡和系統管理模組。</block>
+  <block id="9120340c78efb5856c815d38239bd2f9" category="paragraph">確保電纜按照電纜標籤連接。</block>
+  <block id="7d05725619265b0ad412764bd666826f" category="list-text">在機箱後方安裝機殼背面的 NVRAM12 模組：</block>
+  <block id="ae55effaa43d7b2d63f1dac58367549b" category="list-text">將 NVRAM12 模組的末端與機箱中的開口對齊，然後輕輕地將模組完全推入機箱。</block>
+  <block id="f4101c3338d1ec932207cef05c24c529" category="list-text">安裝 PSU：</block>
+  <block id="32a8792c5b10dbf3bf64cb4a8447bbb8" category="list-text">用雙手支撐 PSU 的邊緣並將其與機殼的開口對齊。</block>
+  <block id="6874d25be6b9d52091b73fa2bac59eea" category="list-text">輕輕地將 PSU 推入機箱，直到鎖定卡榫卡入到位。</block>
+  <block id="ab5ae5779d2a4772a591893618c45e4b" category="list-text">將 PSU 電源線重新連接到兩個 PSU，並使用電源線固定器將每條電源線固定在 PSU。</block>
+  <block id="7f3b2db379f7f8b9b33f928f1a3f33a8" category="paragraph"><block ref="73d25173d7c27d69b9fef91a1e6d8f78" prefix="" category="inline-code"></block></block>
+  <block id="ab9d481619a2ea583cb02397bab7bba7" category="section-title">步驟 3：標記電纜</block>
+  <block id="c2d122cdbef703afa5e9e90edb466820" category="paragraph">從系統背面的 I/O 模組中拔出電纜之前，應先將電纜貼上標籤。</block>
+  <block id="acaef3896a2bbb98ae14983c2076d3b4" category="paragraph">機殼是容納所有系統組件（例如風扇、控制器/CPU 單元、NVRAM12、系統管理模組、I/O 卡和消隱模組以及 PSU）的實體機箱。</block>
+  <block id="059aa23ccfbd2dceb25deca0d4248c15" category="list-text">機箱更換程序是假設您要將擋板、風扇、控制器模組、NVRAM12、系統管理模組、I/O 卡和消隱模組以及 PSU 移至新機箱，更換機殼是NetApp的新組件。</block>
+  <block id="c3b7f04deba9a99877c66d5f1520e4bc" category="summary">重新啟動控制器，驗證系統健康狀況，並將故障零件傳回給NetApp ，以完成AFF A1K機箱更換程序的最後一步。</block>
+  <block id="bbdf42194bd34fedc2e7a3c5ab0f3cd8" category="doc">完成底盤更換 - AFF A1K</block>
+  <block id="7b15497869394a629839f26501a0e20f" category="summary">當硬體故障需要更換AFF A1K系統的機箱時。更換過程包括從機殼前方移除控制器、移除電源單元 (PSU)、NVRAM12、I/O 模組和空白板以及系統管理模組，然後安裝更換機箱，並重新安裝機箱組件。</block>
+  <block id="5fb72873516b6fa89bc4cbc55f8f79a6" category="doc">更換底盤 - AFF A1K</block>
+  <block id="a4a8f7ed930a61fed25e5cb4b874522c" category="paragraph">當硬體故障需要更換AFF A1K系統的機箱時。更換過程包括移除控制器、I/O 卡、NVRAM12 模組、系統管理模組和電源單元 (PSU)、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="cf55c741d07b351e4641605836e7f7da" category="paragraph">更換受損的AFF A1K機殼並重新安裝組件後，您需要<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="f46cc179d6201e4d20946e55e80904c7" category="summary">透過識別受損的機箱、驗證更換組件以及標記電纜和控制器模組，準備更換AFF A1K系統中受損的機箱。</block>
+  <block id="550b5e652d0cd66624604284a9bf0e52" category="doc">準備更換底盤 - AFF A1K</block>
+  <block id="a329d7bda6be9d9cd0acffdf8de0fd5b" category="paragraph">透過識別受損的機箱、驗證更換組件以及標記電纜和控制器模組，準備更換AFF A1K系統中受損的機箱。</block>
+  <block id="32e22e6977dd1aab50fc6944e5493bd8" category="paragraph">準備好更換AFF A1K機箱硬體後，您需要<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block>。</block>
+  <block id="e8eafb11fc103049334709c8a99424a8" category="summary">在更換AFF A1K系統中的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="53c0093bd34bf6a527a5c8325c4a70b7" category="doc">更換底盤的要求 - AFF A1K</block>
+  <block id="5bc32c69bc3e2a93ca5d61477d2ca629" category="summary">關閉AFF A1K儲存系統中的控制器，以防止資料遺失並確保更換機殼時系統穩定性。</block>
+  <block id="dead0cfc0c14a2689b03b6ce8f269ea1" category="doc">關閉控制器以更換機殼 - AFF A1K</block>
+  <block id="327b8a05ec36b221608a43f0917dd8d7" category="summary">透過查看更換要求、關閉控制器、更換機箱和驗證系統操作來開始更換AFF A1K儲存系統的機箱。</block>
+  <block id="70e2b3fc8f982246ab5a2130f07ef1ec" category="doc">底盤更換工作流程 - AFF A1K</block>
+  <block id="c77d647fced0d18ea8388a89c9fbbe8c" category="paragraph-title"><block ref="6b77e2260873b4d678c3f337dd767e02" category="inline-image-macro-rx" type="image"></block><block ref="148983c7fc1a624047153d53429d13a1" category="inline-link-macro-rx"></block></block>
+  <block id="a59a9a05f780a25a994c0a1796c4e14c" category="paragraph">關閉控制器，以便對底盤進行維護。</block>
+  <block id="710a3e7fade7e7d65d3f95207d84a760" category="paragraph">透過啟動控制器、歸還控制器並將故障機箱返回給NetApp來完成機箱更換。</block>
+  <block id="0a53613f0a8092b49f93c48b98e6639c" category="summary">當硬體故障需要更換AFF A1K系統中的控制器時，請更換控制器。更換過程包括從機殼前方移除控制器，移除電源單元 (PSU)、NVRAM12、I/O 模組和空白板以及系統管理模組，然後安裝替換機箱，並重新安裝機箱組件。</block>
+  <block id="1c003f60306195fc28f8caffd47dd340" category="paragraph">當硬體故障需要更換AFF A1K系統的控制器時。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="28c4dddeb520e51d2f0abe60128d46e8" category="paragraph">機殼內裝有風扇、控制器、電源、PSU、NVRAM12、系統管理模組、I/O 卡和消隱模組。</block>
+  <block id="7ff4349856f45df803f8bf1c62cd8a3e" category="summary">重新啟動控制器，驗證系統健康狀況，並將故障部件傳回給NetApp ，以完成ASA A1K 機箱更換程序的最後一步。</block>
+  <block id="9c92b4551d0ebe4951d40344b2e526c8" category="doc">完成底盤更換 - ASA A1K</block>
+  <block id="12e1a630fcbebc408d89ab84807bfcf2" category="summary">當硬體故障需要更換ASA A1K 系統的機殼時。更換過程包括從機殼前方移除控制器，移除電源供應器 (PSU)、NVRAM12、I/O 模組和空白板以及系統管理模組，然後安裝更換機箱，並重新安裝機箱組件。</block>
+  <block id="5aeefe07266bb1fc5e1139b04473dfe8" category="doc">更換機殼 - ASA A1K</block>
+  <block id="89c5427feacbde4f607d05cd07f48f94" category="paragraph">當硬體故障需要更換ASA A1K 系統的機殼時。更換過程包括移除控制器、I/O 卡、NVRAM12 模組、系統管理模組和電源單元 (PSU)、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="e1a44d52ef9851aabc78844c3bc47c92" category="paragraph">更換受損的ASA A1K 機殼並重新安裝組件後，您需要<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd98fab18d28b555609a40ff2da246cc" category="summary">準備更換ASA A1K 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。</block>
+  <block id="3da1146d548beaacf7f23d0a781ba402" category="doc">準備更換機殼 - ASA A1K</block>
+  <block id="e8a527b81bcbe490b98bc368dac43e45" category="paragraph">準備更換ASA A1K 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。</block>
+  <block id="73b8932c0e9d952de3428d339d3c9176" category="paragraph">準備好更換ASA A1K 機殼硬體後，您需要<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block>。</block>
+  <block id="5581f7e866a160d28eefb508e480ba53" category="summary">在更換ASA A1K 系統中的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="850837518a06d2feaf03b103e01b619b" category="doc">更換機殼的要求 - ASA A1K</block>
+  <block id="c3493d287110e2fecc8fe4a00755810a" category="summary">關閉ASA A1K 儲存系統中的控制器，以防止資料遺失並確保更換機箱時系統穩定性。</block>
+  <block id="abf7924958c351fce7ade0ced8f159bb" category="doc">關閉控制器以更換機殼 - ASA A1K</block>
+  <block id="48b2982a8a3ef500c4100e6df4f7a36f" category="summary">透過查看更換需求、關閉控制器、更換機箱並驗證系統操作來開始更換ASA A1K 儲存系統的機箱。</block>
+  <block id="086e2962bab7f4d95eabde09a20941a6" category="doc">機殼更換工作流程 - ASA A1K</block>
+  <block id="00cfcf708436d304f31cc1839fa2b7ca" category="paragraph">當硬體故障需要時，請更換ASA A1K 系統的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="39317983344793ba26ea170a2d890ebb" category="summary">重新啟動控制器，驗證系統健康狀況，並將故障零件傳回給NetApp ，以完成 FAS70 和 FAS90 機箱更換程序的最後一步。</block>
+  <block id="a584be06d42c86eb582b119daa14da5d" category="doc">完成機殼更換 - FAS70 和 FAS90</block>
+  <block id="c2dc989e45ed55b7aae85308ef4125c6" category="summary">當硬體故障需要更換 FAS70 或 FAS90 系統的機箱。更換過程包括從機殼前方移除控制器，移除電源供應器 (PSU)、NVRAM12、I/O 模組和空白板以及系統管理模組，然後安裝更換機箱，並重新安裝機箱組件。</block>
+  <block id="dce30f474dda0b72a0d206b0e7ddb077" category="doc">更換機殼 - FAS70 和 FAS90</block>
+  <block id="0d823891069047b4e507bdd24e6d65c4" category="paragraph">當硬體故障需要更換 FAS70 或 FAS90 系統的機箱。更換過程包括移除控制器、I/O 卡、NVRAM12 模組、系統管理模組和電源單元 (PSU)、安裝更換機箱以及重新安裝機箱組件。</block>
+  <block id="9a938e00f17fc76cb7355904a9c9f5f4" category="paragraph">更換受損的 FAS70 和 FAS90 機殼並重新安裝組件後，您需要<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a030365819f761722986adc43daa6f2" category="summary">準備更換 FAS70 和 FAS90 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件以及標記電纜和控制器模組。</block>
+  <block id="fa392e0dd040cfa23f9b009f3e2c5aa4" category="doc">準備更換機殼 - FAS70 和 FAS90</block>
+  <block id="8e7fe670b4f6140501330d90f05eac87" category="paragraph">準備更換 FAS70 或 FAS90 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件以及標記電纜和控制器模組。</block>
+  <block id="d2502d2bcf545026b78bb173fb5fa6e7" category="paragraph">準備更換 FAS70 或 FAS90 機殼硬體後，您需要<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block>。</block>
+  <block id="56e56c2b65322d342febf7b273c54b50" category="summary">在更換 FAS70 或 FAS90 系統中的機箱之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="79b671b6294c72beeb496f663231935a" category="doc">更換機殼的要求 - FAS70 和 FAS90</block>
+  <block id="555ee8aff84c91eb64d9de30e5275b3f" category="summary">關閉 FAS70 或 FAS90 儲存系統中的控制器，以防止資料遺失並確保更換機箱時系統穩定性。</block>
+  <block id="d7dc6cc66a3cc2307ae77db0423dbc46" category="doc">關閉控制器以更換機殼 - FAS70 和 FAS90</block>
+  <block id="bbc718ac69fd8c0c219feac9d361896a" category="summary">透過查看更換需求、關閉控制器、更換機箱並驗證系統操作，開始更換 FAS70 或 FAS90 儲存系統的機箱。</block>
+  <block id="3280801af2b8e921539cc0997419f436" category="doc">機箱更換工作流程 - FAS70 和 FAS90</block>
+  <block id="093f932f5f4bdb15c42d178147860933" category="summary">當磁碟機發生故障或需要升級時，請更換 FAS50 儲存系統中的磁碟機。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="fa11c1555fbac9e3100e8a3bd62d4cde" category="doc">更換驅動器 - FAS50</block>
+  <block id="8e031770a4d9a08d2f7e16ac12a9cd0a" category="sidebar">AFF A1K底盤</block>
+  <block id="d9d281ab673771b297258ea764116200" category="sidebar">ASA A1K 機箱</block>
+  <block id="e428b65248e01ed552b943e7bea6d786" category="sidebar">FAS70和FAS90機箱</block>
 </blocks>

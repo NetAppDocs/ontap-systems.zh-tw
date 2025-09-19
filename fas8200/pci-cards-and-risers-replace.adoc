@@ -52,7 +52,7 @@ summary: 若要更換PCIe卡、您必須執行特定的工作順序。
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node _impaired_node_name_ -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

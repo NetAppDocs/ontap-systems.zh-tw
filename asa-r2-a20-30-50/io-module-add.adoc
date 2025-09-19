@@ -51,7 +51,7 @@ summary: 在您的ASA A20、 ASA A30 或ASA A50 儲存系統中新增 I/O 模組
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node _impaired_node_name_ -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

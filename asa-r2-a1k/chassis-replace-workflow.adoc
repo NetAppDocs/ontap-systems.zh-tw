@@ -1,0 +1,34 @@
+---
+permalink: asa-r2-a1k/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: asa 1k, replace the chassis workflow 
+summary: 透過查看更換需求、關閉控制器、更換機箱並驗證系統操作來開始更換ASA A1K 儲存系統的機箱。 
+---
+= 機殼更換工作流程 - ASA A1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過查看更換需求、關閉控制器、更換機箱並驗證系統操作來開始更換ASA A1K 儲存系統的機箱。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:chassis-replace-requirements.html["檢閱機箱更換需求"]
+[role="quick-margin-para"]
+檢閱機箱更換需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:chassis-replace-prepare.html["準備更換機箱"]
+[role="quick-margin-para"]
+準備更換機箱，方法是找到系統，收集系統認證和必要工具，驗證是否已收到替換機箱，以及標記系統纜線。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:chassis-replace-shutdown.html["關閉控制器"]
+[role="quick-margin-para"]
+關閉控制器，以便對底盤進行維護。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:chassis-replace-move-hardware.html["更換機箱"]
+[role="quick-margin-para"]
+將元件從損壞的機箱移到更換的機箱，以更換機箱。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]
+[role="quick-margin-para"]
+透過啟動控制器、歸還控制器並將故障機箱返回給NetApp來完成機箱更換。
