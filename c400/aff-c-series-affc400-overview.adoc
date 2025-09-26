@@ -1,0 +1,153 @@
+---
+permalink: c400/overview.html 
+sidebar: sidebar 
+keywords: AFF C400 specifications, AFF C400 specs, NetApp AFF C400, AFF C400 hardware 
+summary: AFF C400儲存系統的主要規格 
+---
+= AFF C400的主要規格
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下是AFF C400的部分規格。訪問 https://hwu.netapp.com["NetApp Hardware Universe"^]（HWU）取得AFF C400規格的完整清單。此頁面反映的是單一高可用性對。
+
+
+
+=== AFF C400的主要規格
+
+平台配置： AFF C400單機箱 HA 對，乙太網路捆綁包
+
+最大原容量：2.9472 PB
+
+記憶體：256.0000 GB
+
+外形尺寸：4U 機箱，附 2 個 HA 控制器
+
+ONTAP版本：b_startONTAP：9.16.1P2b_end
+
+PCIe 擴充槽：10
+
+最低ONTAP版本： ONTAP 9.10.1P15
+
+
+
+=== 橫向擴展最大值
+
+|===
+
+
+| 類型 | HA 對 | 原始容量 | 最大記憶體 
+
+
+| 網路儲存 | 12 | 35.4 PB / 31.4 PiB | 3072GB 
+
+
+| 儲存區域網絡 | 6 | 17.7 PB / 15.7 PiB | 1536GB 
+
+
+| HA 對 |  | 2.9 PB / 2.6 PiB | 256.0000 
+|===
+
+
+=== 輸入輸出
+
+
+
+==== 板載 IO
+
+|===
+
+
+| 協定 | 連接埠 
+
+
+| 乙太網路 100 Gbps | 4 
+
+
+| 乙太網路 25 Gbps | 12 
+|===
+
+
+==== 總 IO
+
+|===
+
+
+| 協定 | 連接埠 
+
+
+| 乙太網路 100 Gbps | 24 
+
+
+| 乙太網路 25 Gbps | 28 
+
+
+| 乙太網路 10 Gbps | 32 
+
+
+| 光纖通道 32 Gbps | 40 
+
+
+| NVMe/FC 32 Gbps | 40 
+
+
+|  | 0 
+|===
+
+
+==== 管理埠
+
+|===
+
+
+| 協定 | 連接埠 
+
+
+| 乙太網路 1 Gbps | 2. 
+
+
+| RS-232 115 Kbps | 4 
+
+
+| USB 12 Mbps | 4 
+|===
+
+
+=== 支援的儲存網絡
+
+CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4/RDMA；NVMe/FC；NVMe/TCP；S3；附 NAS 的 S3；SMB 2.0；SMB 2.1；
+
+
+
+=== 系統環境規格
+
+* 典型功率：4209 BTU/小時
+* 最壞情況下的功率：5215 BTU/小時
+* 重量：110.0 磅/49.9 公斤
+* 高度：4U
+* 寬度：19 吋 IEC 機架相容（17.6 吋 44.7 公分）
+* 深度：32.6 英寸/（34.7 英寸，含電纜管理支架）
+* 工作溫度/海拔/濕度：海拔 3048 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結
+* 非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺）<br/>10% 至 95% 相對濕度，非冷凝，原包裝箱內
+* 雜訊：標稱聲功率 (LwAd)：8.5；br/聲壓 (LpAm)（旁觀者位置）：67.2 dB
+
+
+
+
+=== 遵守
+
+* EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
+* 安全認證：BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS
+* 安全/EMC/EMI認證：EAC、UKRSEPRO
+* 認證安全/EMC/EMI/RoHS：BSMI、CE DoC、UKCA DoC
+* 標準 EMC/EMI：BS-EN-55024、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、KS 第 15 部分 A 3830 33 類
+* 標準安全：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 14336、EN60825-12368-1、CNS 14336、EN60825-6 62368-1、IEC60950-1、IS 13252（第 1 部分）
+
+
+
+
+=== 高可用性
+
+以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連線進行 SAS 帶內管理；

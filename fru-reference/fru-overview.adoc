@@ -1,0 +1,75 @@
+---
+permalink: fru-reference/fru-overview.html 
+sidebar: sidebar 
+keywords: FRU reference, field replaceable units, platform FRUs, hardware components, replacement procedures 
+summary: 平台現場可更換單元概述以及按 FRU 類型劃分的更換程序連結。 
+---
+= 平台 FRU 參考
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於ONTAP硬體系統，您可以對下列現場可更換單元 (FRU) 組件執行維護程序。
+
+[cols="1,2"]
+|===
+
+
+| FRU 程式 | 說明 
+
+
+| link:bootmedia-fru-links.html["不同平台的啟動介質更換流程"^] | 開機媒體會儲存一組主要和次要的開機映像檔案、供系統在開機時使用。 
+
+
+| link:caching-module-fru-links.html["各平台快取模組替換流程"^] | 當系統登錄單一 AutoSupport （ ASUP ）訊息指出模組已離線時、您必須更換控制器的快取模組。 
+
+
+| link:chassis-fru-links.html["各平台底盤更換流程"^] | 機箱是容納所有控制器組件（例如控制器/CPU 單元、電源和 I/O）的實體外殼。 
+
+
+| link:controller-fru-links.html["不同平台的控制器更換流程"^] | 控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 功能。 
+
+
+| link:dcpm-power-fru-links.html["DCPM 電源模組更換步驟（按平台）"^] | 資料中心持久記憶體 (DCPM) 電源模組在意外斷電事件期間為 DCPM 模組提供備用電源。 
+
+
+| link:dimm-fru-links.html["不同平台的 DIMM 更換流程"^] | 如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。 
+
+
+| link:drive-fru-links.html["不同平台的驅動器更換流程"^] | 磁碟機是提供資料實體儲存媒體的裝置。 
+
+
+| link:fan-fru-links.html["不同平台的風扇更換流程"^] | 風扇提供氣流來冷卻系統組件並維持適當的工作溫度。 
+
+
+| link:io-module-fru-links.html["各平台IO模組更換流程"^] | I/O模組為控制器提供網路和儲存連接介面。 
+
+
+| link:led-module-fru-links.html["各平台的 LED 模組更換流程"^] | LED 模組提供系統健康和組件狀態的視覺狀態指示器。 
+
+
+| link:mezzanine-fru-links.html["各平台夾層更換流程"^] | 夾層卡為控制器提供額外的 I/O 連接和擴充功能。 
+
+
+| link:nvdimm-fru-links.html["不同平台的 NVDIMM 更換步驟"^] | 當模組發生故障或顯示錯誤時，必須更換 NVDIMM（非揮發性雙列直插式記憶體模組）。 
+
+
+| link:nvmem-battery-fru-links.html["不同平台的NVMEM/ NVRAM電池更換流程"^] | 控制器隨附電池、當AC電源故障時、會保留快取的資料。 
+
+
+| link:nvram-module-fru-links.html["不同平台的NVRAM模組更換流程"^] | NVRAM模組為系統元資料和快取寫入資料提供非揮發性儲存。 
+
+
+| link:pci-cards-fru-links.html["PCI 卡和轉接卡更換流程（按平台）"^] | PCI 卡和轉接卡提供擴充槽，用於附加功能和 I/O 連接。 
+
+
+| link:power-supply-fru-links.html["各平台電源更換流程"^] | 電源供應器可在控制器機櫃中提供備援電源。 
+
+
+| link:rtc-battery-fru-links.html["各平台 RTC 電池更換流程"^] | 即時時鐘電池會在電源關閉時保留系統日期和時間資訊。 
+
+
+| link:system-management-fru-links.html["系統管理模組依平台更換流程"^] | 系統管理模組為系統提供帶外管理功能。 
+|===

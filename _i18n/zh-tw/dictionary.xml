@@ -12524,4 +12524,1290 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8e031770a4d9a08d2f7e16ac12a9cd0a" category="sidebar">AFF A1K底盤</block>
   <block id="d9d281ab673771b297258ea764116200" category="sidebar">ASA A1K 機箱</block>
   <block id="e428b65248e01ed552b943e7bea6d786" category="sidebar">FAS70和FAS90機箱</block>
+  <block id="7fabd1cdba3a13a5f67c1ce794dfaa39" category="paragraph">您必須使用經認可的 RTC 電池。</block>
+  <block id="83460d50f3dbc69ad90b6453513822d7" category="summary">AFF A150儲存系統的主要規格</block>
+  <block id="49361918c62b6a934bdb479a0924ad04" category="doc">AFF A150的主要規格</block>
+  <block id="c7f0299c3fccd4005c04d49778c1fe48" category="paragraph">以下是AFF A150的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF A150規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="d331fefc4a5d09bc3d85c6bec2f334dc" category="paragraph">平台配置： AFF A150 UTA2 單機箱 HA 對</block>
+  <block id="f56ae7fd8ac660d55ee476cc2b6b6715" category="paragraph">最大原容量：0.5472 PB</block>
+  <block id="2ce22d99495ad1d67f2afd59b9d15465" category="paragraph">記憶體：64.0000 GB</block>
+  <block id="eab43815aa6ddac6523fe001702557fd" category="paragraph">外型尺寸：2U 機箱，配備 2 個 HA 控制器和 24 個驅動器插槽</block>
+  <block id="dce6354c7432d233d30699f4fa1dab1b" category="paragraph">ONTAP版本：b_startONTAP：9.16.1P2b_end</block>
+  <block id="2b13b0d1b04399d702b8569a3b81c7fb" category="paragraph">PCIe 擴充槽：</block>
+  <block id="467c14d27cfd498baa41b5de62cbe35b" category="paragraph">最低ONTAP版本： ONTAP 9.10.1P12</block>
+  <block id="4d15157e07692c77bdeff6cb8bc45844" category="section-title">橫向擴展最大值</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
+  <block id="5f10300cfc2cedf00fe9c2edb6daf5b1" category="cell">HA 對</block>
+  <block id="e09dc7945acb6ec6caf41c962f679916" category="cell">原始容量</block>
+  <block id="5d9173a4f8a38ec49bbb19da8f828e4a" category="cell">最大記憶體</block>
+  <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="cell">網路儲存</block>
+  <block id="c20ad4d76fe97759aa27a0c99bff6710" category="cell">12</block>
+  <block id="fb607221dd32c72a7249f9bd8cfb3f2b" category="cell">6.6 PB / 5.8 PiB</block>
+  <block id="a459681757b6405a696862209aaa352a" category="cell">768GB</block>
+  <block id="62a0282d39568be094470486eaf70c4f" category="cell">儲存區域網絡</block>
+  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6</block>
+  <block id="9b231205f97035ac2eb47baa131724e6" category="cell">3.3 PB / 2.9 PiB</block>
+  <block id="da64609a54506441eaeba8c0d6017e2c" category="cell">384GB</block>
+  <block id="c6f18f9568d343bc6accef19de501a79" category="cell">HA 對</block>
+  <block id="97457e0f08b39604d58af0a0b9a6d157" category="cell">0.5 PB / 0.5 PiB</block>
+  <block id="75269c7bc5d64b54767d1ed1a5ec6590" category="cell">64.0000</block>
+  <block id="cf3882f1c43ab22bff0bd9d82d83251b" category="section-title">輸入輸出</block>
+  <block id="6bbd14b73cddcbd8813eae287c72f171" category="section-title">板載 IO</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">協定</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">連接埠</block>
+  <block id="2946d73ee8ff10218dbf8d2e00687dd2" category="cell">乙太網路 10 Gbps</block>
+  <block id="f2ee72426e8cdea58ad0562940d55b3e" category="cell">光纖通道 16 Gbps</block>
+  <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8</block>
+  <block id="c2524ae4a30b05898b5ae22e7df2d1c2" category="cell">SAS 12 Gbps</block>
+  <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
+  <block id="2e2b8ea213677b8e5990dec1e5fac8ba" category="section-title">總 IO</block>
+  <block id="809d24e82912e234e6c3d288a27da3b4" category="section-title">管理埠</block>
+  <block id="b39374e53ad4db704c4cb2fe5c6e9575" category="cell">乙太網路 1 Gbps</block>
+  <block id="4e2b5ccf08667fcad151791887e0f785" category="cell">RS-232 115 Kbps</block>
+  <block id="c23007aec13eefb34f32c66979a37fa6" category="cell">USB 12 Mbps</block>
+  <block id="af3f9a5a90c47d308e23306edef98dbc" category="section-title">支援的儲存網絡</block>
+  <block id="28b3637211617aad806f613300b11c1a" category="paragraph">CIFS；FC；FCoE；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/TCP；S3；附 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.0；SMB 3.1；</block>
+  <block id="9b7b330028a8e9da6f55b86fd3d33f89" category="section-title">系統環境規格</block>
+  <block id="5df6a3025f4f85ae5bc83b02f5916f87" category="list-text">典型功率：1209 BTU/小時</block>
+  <block id="64e22d62ec39174118c9e82cc6dcfa6b" category="list-text">最壞情況下的功率：1676 BTU/小時</block>
+  <block id="0a468b2bd789d07addc76d7889e6e2d8" category="list-text">重量：60.8 磅&lt;br/&gt;27.6 公斤</block>
+  <block id="88a8e41521299f0493891f0c6b79967a" category="list-text">高度：2U</block>
+  <block id="b0f6bb9e15d5385ada0d645f19f9f8e9" category="list-text">寬度：19 吋 IEC 機架相容（17.6 吋 44.7 公分）</block>
+  <block id="d4411cb4316548ce03dbb23ca9c17b7a" category="list-text">深度：19.0 英吋&lt;br/&gt;（含電纜管理支架為 24.1 英吋）</block>
+  <block id="9d56de4dc650ba03a2f7cd023d11f7be" category="list-text">工作溫度/海拔/濕度：海拔高度&lt;br/&gt;3048公尺&lt;br/&gt;10000英尺時，5°C 至 45°C&lt;br/&gt;41°F 至 &lt;br/&gt;113°F；相對濕度 8% 至 90%，無凝結</block>
+  <block id="c41e237102e6691218f7320a8d877dfe" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺）&lt;br/&gt;10% 至 95% 相對濕度，非冷凝，原包裝箱內</block>
+  <block id="a0f11d40bf496f127af5f6d70b58cd12" category="list-text">雜訊：標稱聲功率 (LwAd)：6.9；&lt;br/&gt;聲壓 (LpAm)（旁觀者位置）：51.0 dB</block>
+  <block id="9c0408c775a2b61052a2e700a89f396f" category="section-title">遵守</block>
+  <block id="4c00771b9a13a18c84a302748b7e2016" category="list-text">EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI</block>
+  <block id="c8d90a6281a35910b880ffff81384a91" category="list-text">安全認證：BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS</block>
+  <block id="38bb3d0f0c0b45067a089fc1c1538cee" category="list-text">安全/EMC/EMI認證：EAC、UKRSEPRO</block>
+  <block id="08ec896fdebbc7d41753305c028773ff" category="list-text">認證安全/EMC/EMI/RoHS：BSMI、CE DoC、UKCA DoC</block>
+  <block id="810944644ddbd9a71f9a53ebcd73f51d" category="list-text">標準 EMC/EMI：BS-EN-55024、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、KS 第 15 部分 A 3830 33 類</block>
+  <block id="9b3b75c67a53d54bba73c70cd1786aed" category="list-text">標準安全：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 14336、EN60825-12368-1、CNS 14336、EN60825-6 62368-1、IEC60950-1、IS 13252（第 1 部分）</block>
+  <block id="520b661a272c9e6f55f469cc9c24193d" category="section-title">高可用性</block>
+  <block id="e447884015fc6cccd73419a58f4a2dc9" category="paragraph">以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連線進行 SAS 帶內管理；</block>
+  <block id="953484270d99ac98b7edea761c8accc5" category="summary">A150平台組的主要規格</block>
+  <block id="98cf7c8810f9cbc80da978f12dfd11de" category="paragraph">以下是單一高可用性對中AFF A150儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="f5046e4779952c40dda2055325e842f6" category="list-text">ONTAP版本： ONTAP：9.16.1P2</block>
+  <block id="f31908f038c51788c271c5c4f452a2f9" category="list-text">最低ONTAP版本： ONTAP 9.10.1P12 == 橫向擴展最大值</block>
+  <block id="b88ea7120b8d94ca7802d027ea4ae35d" category="list-text">類型：NAS；HA 對：12；原始容量：6.6 PB / 5.8 PiB；最大記憶體：768 GB</block>
+  <block id="a4e92d69d00158d7ae606a77ce4fd213" category="list-text">類型：SAN；HA 對：6；原始容量：3.3 PB / 2.9 PiB；最大記憶體：384 GB</block>
+  <block id="c00cb3237fcdb94d446acf8665539403" category="list-text">類型：HA 對；原始容量：0.5 PB / 0.5 PiB；最大記憶體：64.0000</block>
+  <block id="014e996a6a164aaf40b8b3e72704fc2e" category="section-title">輸入/輸出</block>
+  <block id="c9517cd5cbe4fac6d0c526d61f3fcc39" category="section-title">板載 I/O</block>
+  <block id="81754037ddc5b97d9b806acad96f8815" category="list-text">協定：乙太網路 10 Gbps；連接埠：12</block>
+  <block id="26e3de39b3165eef9bf863d54363efc4" category="list-text">協定：FC 16 Gbps；連接埠：8</block>
+  <block id="91b12f65a5ce89a1b14683b6e1649de1" category="list-text">協定：SAS 12 Gbps；連接埠：4</block>
+  <block id="731fc63f56d8bd9a0a565a42ac116ba6" category="section-title">總輸入/輸出</block>
+  <block id="6eff2087d9efb94ffc1522452380e554" category="section-title">管理埠</block>
+  <block id="521e22837daa678c29b682634631ce4c" category="list-text">協定：乙太網路 1 Gbps；連接埠：2</block>
+  <block id="37021ac88e31dae454fed019c153a9bf" category="list-text">協定：RS-232 115 Kbps；連接埠：4</block>
+  <block id="bf4cc219ab84ae1ba56b996e9f52b5dc" category="list-text">協定：USB 12 Mbps；連接埠：2</block>
+  <block id="ef78a61a84eef19b87e8a71fd2e4ef73" category="section-title">支援儲存網絡</block>
+  <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="list-text">CIFS</block>
+  <block id="6b8f0029ce30f9b4d5fe0def33875511" category="list-text">FC</block>
+  <block id="14eae6ee278098bfad4f8a10fd6c1195" category="list-text">光纖通道</block>
+  <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="list-text">iSCSI</block>
+  <block id="f7d773fd2896401c143676940bc001fc" category="list-text">NFS v3</block>
+  <block id="51271a691fbca204ab9ad4d272b60f77" category="list-text">NFS v4.0</block>
+  <block id="0b99b245267ef194ca3b9f6e694b0983" category="list-text">NFS v4.1</block>
+  <block id="34a8132b17f04ee6e0feea494a36fc9c" category="list-text">NFS v4.2</block>
+  <block id="8b7c42123642e2e4ea7dd426aeb2de58" category="list-text">NVMe/TCP</block>
+  <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="list-text">S3</block>
+  <block id="2aefb14ec823c4781b7fdb884df595d3" category="list-text">S3 與 NAS</block>
+  <block id="9881ea3356a4268d02b5d775ac4de98f" category="list-text">SMB 2.0</block>
+  <block id="b94c3301a92f0222d660861ebb8bc338" category="list-text">SMB 2.1</block>
+  <block id="6b0fa4590459e6ee34459dd90571d0b3" category="list-text">SMB 2.x</block>
+  <block id="e3b6710d220a8b184b813afd623b6126" category="list-text">SMB 3.0</block>
+  <block id="d13f7003befcd5012d9b171e5cc1ec7c" category="list-text">SMB 3.1</block>
+  <block id="ad885d13a6931dbe9364981c4a9e46f8" category="list-text">SMB 3.1.1 == 系統環境規範</block>
+  <block id="2dd3dbbb4fb385b867ab48d985ebe0d0" category="list-text">重量：60.8 磅 27.6 公斤</block>
+  <block id="a6277a061ba7ff4bee1620efc87bc236" category="list-text">深度：19.0 英吋（含電纜管理支架為 24.1 英吋）</block>
+  <block id="b11a5ee48097596f5af95c2bb8a616ac" category="list-text">工作溫度/海拔高度/濕度：海拔高度 &lt;= 3048m (&lt;= 10000 ft) 時 5°C 至 45°C (41°F 至 113°F)；相對濕度 8% 至 90%，無冷凝</block>
+  <block id="208d1a3e7dafc1baa32977b369442c05" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺），相對濕度 10% 至 95%，無冷凝，原包裝箱內</block>
+  <block id="40a919b5a0505ca942495ee4446b4f98" category="list-text">雜訊：標稱聲功率 (LwAd)：6.9 聲壓 (LpAm)（旁觀者位置）：51.0 dB</block>
+  <block id="05807e454c19f244770adae059b3c330" category="section-title">高可用性</block>
+  <block id="c5c02fffbc2ee6fe6623153a2a5e9e19" category="list-text">基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面</block>
+  <block id="d311a2b013e14c901ea4d825bf158199" category="list-text">冗餘熱插拔控制器</block>
+  <block id="87aedddd47363b74077353f3ac86c4d6" category="list-text">冗餘熱插拔電源</block>
+  <block id="fb9739d8125a9b29ff16762480779e87" category="list-text">透過 SAS 連線進行 SAS 帶內管理</block>
+  <block id="3a11f68c452218eaaba02353655fd4c1" category="summary">A1K平台組的主要規格</block>
+  <block id="99796d31c3e48d5cd6e9ed06d9fb9a47" category="doc">AFF A1K的主要規格</block>
+  <block id="a335bb33fcb9e8c831ff747ec976669e" category="paragraph">以下是單一高可用性對中AFF A1K儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="a79a212c9edd36428ef764ada9dc6cb3" category="list-text">平台配置： AFF A1K雙機箱 HA 對</block>
+  <block id="02eacd56ba58be7852d6581d938e6a4e" category="list-text">最大原容量：14.6880 PB</block>
+  <block id="b3b84944f4fcdd5a638e0b97332f25c5" category="list-text">記憶體：2048.0000 GB</block>
+  <block id="2ab4f08685ad9b1d2fa19d89e6ba868d" category="list-text">外形尺寸：2U 機箱，附 1 個 HA 控制器</block>
+  <block id="c9953c4267de28d4e4f4289b7b365daf" category="list-text">PCIe 擴充槽：18</block>
+  <block id="d42c81998c8bb20f01a171602fa2f1a4" category="list-text">最低ONTAP版本： ONTAP 9.15.1RC2 == 橫向擴展最大值</block>
+  <block id="9b47b9e090f3ed760ac1261a644c05f0" category="list-text">類型：NAS；HA 對：12；原始容量：176.3 PB / 156.5 PiB；最大記憶體：24576 GB</block>
+  <block id="f327af4f44f0baf2a9bb36a92f38228b" category="list-text">類型：SAN；HA 對：6；原始容量：88.1 PB / 78.3 PiB；最大記憶體：12288 GB</block>
+  <block id="cf229378f8192fe9232cb0dd2665b5c2" category="list-text">類型：HA 對；原始容量：14.7 PB / 13.0 PiB；最大記憶體：2048.0000</block>
+  <block id="3f1c9c3e8e24616da9c74168299848ec" category="paragraph">無板載 I/O 資料。</block>
+  <block id="d88c4c68a802b8401450c531f8831ad1" category="list-text">協定：乙太網路 200 Gbps；連接埠：24</block>
+  <block id="2468fd9e584b11e5c503a10a4f276545" category="list-text">協定：乙太網路 100 Gbps；連接埠：36</block>
+  <block id="f85daa0e4792a20d9b6430311fd73039" category="list-text">協定：乙太網路 25 Gbps；連接埠：56</block>
+  <block id="5a61fa48bc0328aca250115ded7779a4" category="list-text">協定：乙太網路 10 Gbps；連接埠：56</block>
+  <block id="423dc8713f4e26681c0fdb1b92bee787" category="list-text">協定：FC 64 Gbps；連接埠：56</block>
+  <block id="303c08efbb3a6f4d872b3d08dc33fafb" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：56</block>
+  <block id="c4063aaa0c428e57e56c7ed1a87b857e" category="list-text">埠：0</block>
+  <block id="668f43ee96611a2bfe65b4b13a0c5bd2" category="list-text">協定：SAS 12 Gbps；連接埠：56</block>
+  <block id="3d0459e59bcc7d7d6c0156577d97296f" category="list-text">協定：USB 600 Mbps；連接埠：2</block>
+  <block id="7773f8938e5e9a3f6bedb4b415ba4979" category="list-text">NFSv3/RDMA</block>
+  <block id="f2281c4c559959835d54fc5128b1f9ff" category="list-text">NFSv4/RDMA</block>
+  <block id="26bcb9f1cb6f391f4b2c18e676bb458d" category="list-text">NVMe/光纖通道</block>
+  <block id="f34bfbd8911cbde8080eb35fe343c3ad" category="list-text">典型功率：4402 BTU/小時</block>
+  <block id="d674b4f0437c7215600d1725f95cf658" category="list-text">最壞情況下的功率：6174 BTU/小時</block>
+  <block id="99a11be73f2f4988ed4b0695ca00ca62" category="list-text">重量：59.5 磅 27.0 公斤</block>
+  <block id="658d4184d5ca9a8b014acdf84474ea7e" category="list-text">寬度：19 吋 IEC 機架相容（17.7 吋 44.9 公分）</block>
+  <block id="b7c705f03831e422ad258e381f62556f" category="list-text">深度：30.0 英吋（含電纜管理支架為 35.2 英吋）</block>
+  <block id="aa535ccad0e06026b2c80c79e42a2b75" category="list-text">工作溫度/海拔/濕度：海拔高度 3048 公尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結</block>
+  <block id="5cff7da614bbbf25f8c9cca36c38f691" category="list-text">雜訊：標稱聲功率 (LwAd)：8.5 聲壓 (LpAm)（旁觀者位置）：67.7 dB</block>
+  <block id="a7daecb8dc316b95333993b2c485c8f2" category="list-text">標準 EMC/EMI：BS-EN-55032、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、KS 第 15 部分 A 3830 33、230 3、KS 930 類</block>
+  <block id="d44b841abd6708491fa419df7215fd64" category="list-text">標準安全：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 15598-1,6086825-168-1、CNS 15598-1、1086823623623639 62368-1、IEC60950-1、IS 13252（第 1 部分）</block>
+  <block id="05fad4c614445fda8cb4af0472bc6a55" category="list-text">透過外部機架的 SAS 連線進行 SAS 帶內管理</block>
+  <block id="39e41c4bccd44f63521216d54cb8f3ae" category="summary">AFF A20 的主要規格</block>
+  <block id="ebb7a856cdf1003d6b91b90feb4c2617" category="paragraph">以下是單一高可用性對中AFF A20 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="8ff2dbe187bdf70b6aefc915e8b2f418" category="section-title">AFF A20 規格一覽</block>
+  <block id="c90a9eb0027d48b81b0acbe036bf9292" category="list-text">平台配置： AFF A20 單機箱 HA 對</block>
+  <block id="bb982cf1c6df93898547742fd7c13e34" category="list-text">最大原容量：4.0392 PB</block>
+  <block id="1f36f37c7c81df7b77e777706e8262f9" category="list-text">記憶體：128.0000 GB</block>
+  <block id="f4c24a91325c512de420ced357e65577" category="list-text">PCIe 擴充槽：8</block>
+  <block id="5b3dc59120722ac76ee6af21d9abc7e7" category="list-text">最低ONTAP版本： ONTAP 9.16.1RC1 == 橫向擴展最大值</block>
+  <block id="06cf2fed8ae499b2f77075b4924fa458" category="list-text">類型：NAS；HA 對：3；原始容量：12.1 PB / 10.8 PiB；最大記憶體：384 GB</block>
+  <block id="0dc78f5fc53d592da101560a72c495ee" category="list-text">類型：SAN；HA 對：3；原始容量：12.1 PB / 10.8 PiB；最大記憶體：384 GB</block>
+  <block id="6e2d02e867428685021b5207f032cc30" category="list-text">類型：HA 對；原始容量：4.0 PB / 3.6 PiB；最大記憶體：128.0000</block>
+  <block id="dd8149c13ca265d22a87874de99e4f17" category="list-text">協定：乙太網路 100 Gbps；連接埠：12</block>
+  <block id="23841fcfa56717ecbb90e2b28b0be81e" category="list-text">協定：乙太網路 25 Gbps；連接埠：32</block>
+  <block id="8c5245963873dc44aed87d82e8c6090f" category="list-text">協定：乙太網路 10 Gbps；連接埠：24</block>
+  <block id="e5c0138c0b3f7e29403979905d7f0ffd" category="list-text">協定：FC 64 Gbps；連接埠：24</block>
+  <block id="540fda4e6727c0b4511226f712bfccac" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：24</block>
+  <block id="ec21c9636f37a17e64c44f57b2d45f1f" category="list-text">協定：SAS 12 Gbps；連接埠：16</block>
+  <block id="36ce54fb78d86bb29a64f39130a0e48e" category="list-text">典型功率：2489 BTU/小時</block>
+  <block id="ffac78d3bc24df13cd04b1c34ed6c9bc" category="list-text">最壞情況下的功率：3890 BTU/小時</block>
+  <block id="84daa3a922ed3222bfd90fb16ea96109" category="list-text">重量：60.7 磅 27.5 公斤</block>
+  <block id="b1e4a828b044d2e80f07d242cd74b998" category="list-text">深度：</block>
+  <block id="f65562f701273f740b2155cc3023c9aa" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0 聲壓 (LpAm)（旁觀者位置）：70.5 dB</block>
+  <block id="d3f2089276b5727ccda3fcc5376e2f5e" category="summary">AFF A30 的主要規格</block>
+  <block id="816e80ee89457015e91d4f34be540a21" category="paragraph">以下是單一高可用性對中AFF A30 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="ef06196c842251edfc20f7ffc1a7da67" category="section-title">AFF A30 規格一覽</block>
+  <block id="59a34f2743c4c491c6c7d60ac8d11ae6" category="list-text">平台配置： AFF A30 單機箱 HA 對</block>
+  <block id="05acac231bf955a464ccdecb4eb4af23" category="list-text">類型：NAS；HA 對：4；原始容量：16.2 PB / 14.3 PiB；最大記憶體：512 GB</block>
+  <block id="8dead6a6d65f681a6090eaa823f1e888" category="list-text">類型：SAN；HA 對：4；原始容量：16.2 PB / 14.3 PiB；最大記憶體：512 GB</block>
+  <block id="8cb0fe12c325ebe42d9ffeaf9e920063" category="list-text">協定：乙太網路 100 Gbps；連接埠：16</block>
+  <block id="582be16417cb4ca45c26af495ea5676a" category="list-text">協定：乙太網路 25 Gbps；連接埠：24</block>
+  <block id="e48afd451b6e73caee717296511a5613" category="list-text">典型功率：2892 BTU/小時</block>
+  <block id="f890fd0a4b6cd0ccf8221770bbcb03c0" category="list-text">最壞情況下的功率：4445 BTU/小時</block>
+  <block id="485624adcafbab5736499b3e6600bb42" category="summary">AFF A50 的主要規格</block>
+  <block id="12fd3f9e22a938707b1ba255f2c0e794" category="paragraph">以下是單一高可用性對中AFF A50 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="4f4e41b0daf4f6ef88380e3395c2c5ce" category="section-title">AFF A50 規格一覽</block>
+  <block id="80c8034e9198a5b37248b9f020d3f7e1" category="list-text">平台配置： AFF A50 單機箱 HA 對</block>
+  <block id="9a63147d9fc19b3c35ccabb6f29cd9d5" category="list-text">記憶體：256.0000 GB</block>
+  <block id="0c835e1d5346f28a81bfa1fc5d491eea" category="list-text">類型：NAS；HA 對：12；原始容量：48.5 PB / 43.0 PiB；最大記憶體：3072 GB</block>
+  <block id="a52e62db2eb986e37ce94c2b9139ba39" category="list-text">類型：SAN；HA 對：6；原始容量：24.2 PB / 21.5 PiB；最大記憶體：1536 GB</block>
+  <block id="f7699f0411d3f30b9728ff8a0e70996e" category="list-text">類型：HA 對；原始容量：4.0 PB / 3.6 PiB；最大記憶體：256.0000</block>
+  <block id="9db1e2a39750a0865c0117f7dc404d63" category="list-text">典型功率：3076 BTU/小時</block>
+  <block id="a4611de8b2204e2be5f3947274b605f6" category="list-text">最壞情況下的功率：4860 BTU/小時</block>
+  <block id="da2c63e81beef2ffa0e753375ed69a4e" category="summary">A20-30-50平台組的主要規格</block>
+  <block id="829aad528faa24e5de0c23782c3b5732" category="doc">A20-30-50平台組主要規格</block>
+  <block id="70bc4803c2b8815ccee9ac1eb3846c56" category="paragraph">以下是 A20-30-50 平台組的精選規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得完整規格清單。此頁面反映的是單一高可用性對。</block>
+  <block id="1706803539a6012b47c0b31e49042f7a" category="paragraph">最低ONTAP版本： ONTAP 9.16.1RC1</block>
+  <block id="bd724ee5b95d55ca11736704ddf5b76a" category="cell">48.5 PB / 43.0 PiB</block>
+  <block id="ae39479231ecc88df85edc4ee8b1328a" category="cell">3072GB</block>
+  <block id="3ca3e6bae7f29578846258471f45e8a3" category="cell">24.2 PB / 21.5 PiB</block>
+  <block id="a7a10dbf383431bb9d23b72c3453cb4c" category="cell">1536GB</block>
+  <block id="75ff85939370f2b80d49ef8b4b079109" category="cell">4.0 PB / 3.6 PiB</block>
+  <block id="5cecfa6815f470aa696e2fe08130cbc2" category="cell">256.0000</block>
+  <block id="848bb379589ce62dccaae387040b0113" category="paragraph">無板載 IO 資料。</block>
+  <block id="e561ce5f8853d9748728fd0d6c96afc7" category="cell">乙太網路 100 Gbps</block>
+  <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
+  <block id="227f3de4b77b274e1e1382c68a1fa4ed" category="cell">乙太網路 25 Gbps</block>
+  <block id="1ff1de774005f8da13f42943881c655f" category="cell">24</block>
+  <block id="92335c2e71fe1b77d57d609d9389f03f" category="cell">光纖通道 64 Gbps</block>
+  <block id="f504ae6ac836973f62ed27f1bb05f2e9" category="cell">NVMe/FC 64 Gbps</block>
+  <block id="cfcd208495d565ef66e7dff9f98764da" category="cell">0</block>
+  <block id="23154a4c417ae30150c8183e97228049" category="cell">USB 600 Mbps</block>
+  <block id="e1ed1cc7f2ba5df4283f016409893812" category="paragraph">CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP；S3；含 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.SMB 3.1.1；</block>
+  <block id="23dfbabb7837ab3a7b1454bbdde8dcc8" category="list-text">重量：60.7 磅/27.5 公斤</block>
+  <block id="319e7cb7bbbedc00c30be1b9a4530542" category="list-text">工作溫度/海拔/濕度：海拔 3048 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結</block>
+  <block id="2d4e493bd03e1f489892a17ab8b7aea5" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0；br/聲壓 (LpAm)（旁觀者位置）：70.5 dB</block>
+  <block id="d2aa9231f8ce36fee3257dac7f9040ef" category="paragraph">以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；</block>
+  <block id="3a5eef6111f051ba247922c28e4d140c" category="cell">12.1 PB / 10.8 PiB</block>
+  <block id="5c4e7400165835e351764cdbeb0d733e" category="cell">128.0000</block>
+  <block id="6364d3f0f495b6ab9dcf8d3b5c6e0b01" category="cell">32</block>
+  <block id="4a16cb9d7b1f8ec0ebbee04be759c58b" category="cell">16.2 PB / 14.3 PiB</block>
+  <block id="576f3273d6db3081c99d4a0a2cb13e95" category="cell">512GB</block>
+  <block id="b5a0b49e50cc646d429cadc74903f622" category="summary">AFF A250儲存系統的主要規格</block>
+  <block id="aac73cba0ee6600a1c27f6fcb981de3c" category="doc">AFF A250的主要規格</block>
+  <block id="de46d36a5f356570bf60e02bfbca289a" category="paragraph">以下是AFF A250的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF A250規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="e2eda5a580f236af1b8b4307a0bf396a" category="paragraph">平台配置： AFF A250單機箱 HA 對</block>
+  <block id="c1d1abc449933f3530458d2c0c661232" category="paragraph">最大原始容量：1.1016 PB</block>
+  <block id="2daf1b78cae3f344f04857be844cffbd" category="paragraph">PCIe 擴充槽：4</block>
+  <block id="b67b8aa9f5678027f64d2fb105bee682" category="paragraph">最低ONTAP版本： ONTAP 9.8RC1</block>
+  <block id="17cd0ac651513518952b339e1ffb219b" category="cell">13.2 PB / 11.7 PiB</block>
+  <block id="f4c1417737eb4cde2fe610fc701b64bb" category="cell">6.6 PB / 5.9 PiB</block>
+  <block id="da0ea20144dd7b277d01e75b7480b5da" category="cell">1.1 PB / 1.0 PiB</block>
+  <block id="98f13708210194c475687be6106a3b84" category="cell">20</block>
+  <block id="d853f2214b6ee0da42b20a95dc90c1f3" category="cell">光纖通道 32 Gbps</block>
+  <block id="2175c342acbf385248108299c44118b8" category="cell">NVMe/FC 32 Gbps</block>
+  <block id="06f18c4daece38548aaed1f8e7ad7a65" category="list-text">典型功率：2642 BTU/小時</block>
+  <block id="caee1a6bd998eef961868a45bd4dbc8b" category="list-text">最壞情況下的功率：3476 BTU/小時</block>
+  <block id="7d5423ead4cc9c9c7523162c96b9a70a" category="list-text">重量：54.3 磅/24.6 公斤</block>
+  <block id="bfb224eca9d5778fa9096edb45c6e0a6" category="list-text">雜訊：標稱聲功率 (LwAd)：7.2；br/聲壓 (LpAm)（旁觀者位置）：69.1 dB</block>
+  <block id="72c1a142348c9ef5cd0bfa8785831482" category="summary">A250平台組的主要規格</block>
+  <block id="d4ece2dd07e2b088387c9e6101f7374b" category="paragraph">以下是單一高可用性對中AFF A250儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="141231dc194fb8130baba1dedc3a1437" category="list-text">最低ONTAP版本： ONTAP 9.8RC1 == 橫向擴展最大值</block>
+  <block id="e09d173ed5c31e4dd78ba88f30e765c1" category="list-text">類型：NAS；HA 對：12；原始容量：13.2 PB / 11.7 PiB；最大記憶體：1536 GB</block>
+  <block id="883fa3568cecac0f4750af6ef669d774" category="list-text">類型：SAN；HA 對：6；原始容量：6.6 PB / 5.9 PiB；最大記憶體：768 GB</block>
+  <block id="8620fd4a54bd59df48445495cc60d6a1" category="list-text">類型：HA 對；原始容量：1.1 PB / 1.0 PiB；最大記憶體：128.0000</block>
+  <block id="f350094c762b190b03da78050fac38f6" category="list-text">協定：乙太網路 25 Gbps；連接埠：4</block>
+  <block id="ae6233ad0fe7d541d74b7fcbd8e20ee1" category="list-text">協定：乙太網路 10 Gbps；連接埠：4</block>
+  <block id="ff30f3403ab850b6d6b32e626a9fc160" category="list-text">協定：乙太網路 100 Gbps；連接埠：4</block>
+  <block id="471e16d2ec5259a6040b63c7e6c468a5" category="list-text">協定：乙太網路 25 Gbps；連接埠：20</block>
+  <block id="175a5753a7c2dbf8dddf237cf0315f14" category="list-text">協定：FC 32 Gbps；連接埠：16</block>
+  <block id="e8f8032cf2441ab050afaedcca803190" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：16</block>
+  <block id="8d61df067a966a7385ede0de429f027e" category="list-text">協定：SAS 12 Gbps；連接埠：8</block>
+  <block id="fe511edcfd7cb6bcb5f0bc33d6248d67" category="list-text">協定：USB 12 Mbps；連接埠：4</block>
+  <block id="4cd6ef64e9d38e479c3b3f7961d681d6" category="list-text">重量：54.3 磅 24.6 公斤</block>
+  <block id="91f9fd76a95094512c9723c69668d92a" category="list-text">雜訊：標稱聲功率 (LwAd)：7.2 聲壓 (LpAm)（旁觀者位置）：69.1 dB</block>
+  <block id="ab0523fa3168e31ed074a83477e276eb" category="summary">AFF A400儲存系統的主要規格</block>
+  <block id="e0f86b24bb811cd96628b2a3d8a87567" category="doc">AFF A400的主要規格</block>
+  <block id="c1ca1f43a64e1d2e43e9434f237d091c" category="paragraph">以下是AFF A400的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF A400規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="142496af5ac838cda1cd1352d835efa6" category="paragraph">平台配置： AFF A400單機箱 HA 對，乙太網路捆綁包</block>
+  <block id="a2786413b3da2bb24dcc96f034558956" category="paragraph">外形尺寸：4U 機箱，附 2 個 HA 控制器</block>
+  <block id="d74884ad290c03e9e2429101f293fe7b" category="paragraph">PCIe 擴充槽：10</block>
+  <block id="e8c2dbff7521f11e47f58d12e042a8b2" category="paragraph">最低ONTAP版本： ONTAP 9.7RC1</block>
+  <block id="dc203b2bfcab5ec0e617a414ff06e6bc" category="cell">176.3 PB / 156.5 PiB</block>
+  <block id="a5dc31627fdefcc500b2a9920ddf28c2" category="cell">88.1 PB / 78.3 PiB</block>
+  <block id="90c45c35943e8701112aba6558711acc" category="cell">14.7 PB / 13.0 PiB</block>
+  <block id="82b23dd1d66ccbbfcd3a41578d44c162" category="paragraph">CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4/RDMA；NVMe/FC；NVMe/TCP；S3；附 NAS 的 S3；SMB 2.0；SMB 2.1；</block>
+  <block id="333946675ad4bc16ff4866e620f0381a" category="list-text">典型功率：4209 BTU/小時</block>
+  <block id="4828cf039ad8ba2d28d9246597351104" category="list-text">最壞情況下的功率：5215 BTU/小時</block>
+  <block id="b964471e3140e0a2dc6c7f25ca5880ee" category="list-text">重量：110.0 磅/49.9 公斤</block>
+  <block id="99190bf361f23d7f60b0311ed65db52c" category="list-text">高度：4U</block>
+  <block id="fd82bddbad5203300e57904c991cb840" category="list-text">深度：32.6 英寸/（34.7 英寸，含電纜管理支架）</block>
+  <block id="9725247c68aace7973804f231cbdd26b" category="list-text">雜訊：標稱聲功率 (LwAd)：8.5；br/聲壓 (LpAm)（旁觀者位置）：67.2 dB</block>
+  <block id="2ecaf45e6d941aa8787c5207d6e14cbf" category="summary">A400平台組的主要規格</block>
+  <block id="f0e9d60af7684125f1b3ec54132594db" category="paragraph">以下是單一高可用性對中AFF A400儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="8d6f1126e03ba70819901e3191bf6358" category="list-text">最低ONTAP版本： ONTAP 9.7RC1 == 橫向擴展最大值</block>
+  <block id="af08be515a9d4c3e3b541572ab14ca83" category="list-text">類型：NAS；HA 對：12；原始容量：176.3 PB / 156.5 PiB；最大記憶體：3072 GB</block>
+  <block id="93b63827e9f32e325a3be96e3d1d0d01" category="list-text">類型：SAN；HA 對：6；原始容量：88.1 PB / 78.3 PiB；最大記憶體：1536 GB</block>
+  <block id="d9dd3b93e031a157b272db3164ac9cef" category="list-text">類型：HA 對；原始容量：14.7 PB / 13.0 PiB；最大記憶體：256.0000</block>
+  <block id="603170cd5591c91144ede853fb7004e9" category="list-text">協定：乙太網路 25 Gbps；連接埠：12</block>
+  <block id="c3346d55fb4bcd313308cf344c3c9956" category="list-text">協定：乙太網路 100 Gbps；連接埠：20</block>
+  <block id="1f9a9c48fecfca4a044d529a9d033783" category="list-text">協定：乙太網路 10 Gbps；連接埠：32</block>
+  <block id="637b290f820eaaf5033dfa8ab5a60528" category="list-text">協定：FC 32 Gbps；連接埠：24</block>
+  <block id="53650a5ecd2e7e6bd89acc186768c407" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：24</block>
+  <block id="4930a203d4d9fe648c8369b3361ea867" category="list-text">協定：SAS 12 Gbps；連接埠：32</block>
+  <block id="24679701c4662127aa11de2c774f57f7" category="list-text">重量：110.0 磅 49.9 公斤</block>
+  <block id="f8c2b681f9f457cefef2b7a4d0a49b52" category="list-text">深度：32.6 英吋（含電纜管理支架為 34.7 英吋）</block>
+  <block id="9e31787d3f1fe354c3d16d51b895a31b" category="list-text">雜訊：標稱聲功率 (LwAd)：8.5 聲壓 (LpAm)（旁觀者位置）：67.2 dB</block>
+  <block id="7d404bb301917207f869ce46de12fef5" category="summary">AFF A70的主要規格</block>
+  <block id="38a563279dba261febb9909b6e0b87e6" category="paragraph">以下是單一高可用性對中AFF A70儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="ca7beffc47fc0656ed22d14e675a6a58" category="section-title">AFF A70規格一覽</block>
+  <block id="ff085e57ef6b4acbdaa63d205451f2ff" category="list-text">平台配置： AFF A70單機箱 HA 對</block>
+  <block id="dbab5f3fd97c866143e0da1c4360dfc5" category="list-text">最大原始容量：6.6096 PB</block>
+  <block id="b179ac3fe9112775e6eb553bfea81779" category="list-text">外形尺寸：4U 機箱，配備 2 個 HA 控制器和 48 個驅動器插槽</block>
+  <block id="8271fd3ddffe573f253d0022e5d22cf3" category="list-text">類型：NAS；HA 對：12；原始容量：79.3 PB / 70.4 PiB；最大記憶體：3072 GB</block>
+  <block id="954d93f36258aa435dc3b54ae1132600" category="list-text">類型：SAN；HA 對：6；原始容量：39.7 PB / 35.2 PiB；最大記憶體：1536 GB</block>
+  <block id="b19c2c7048b82c29d5feda222d696605" category="list-text">類型：HA 對；原始容量：6.6 PB / 5.9 PiB；最大記憶體：256.0000</block>
+  <block id="c803d8d230c5020cdc30a3cb8e9303f4" category="list-text">典型功率：6938 BTU/小時</block>
+  <block id="dc7a593c222c4030f739c8d0e1f00f2e" category="list-text">最壞情況下的功率：9089 BTU/小時</block>
+  <block id="393e9f65cd03d1b202348e74d85ea15c" category="list-text">重量：118.0 磅 53.5 公斤</block>
+  <block id="7c7e70fa4ec76732aa0e3f8c34e33b0a" category="list-text">深度：34.5 英吋（含電纜管理支架為 36.6 英吋）</block>
+  <block id="8b00587d45c71c577c712b3a1bb0c9f2" category="list-text">雜訊：標稱聲功率 (LwAd)：8.6 聲壓 (LpAm)（旁觀者位置）：71.6 dB</block>
+  <block id="ea033f663b18ef68b8d1ea62bc608ed6" category="summary">AFF A90的主要規格</block>
+  <block id="f70c602e2f2c543db0ba6130a7e3da93" category="paragraph">以下是單一高可用性對中AFF A90儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="7969fca907e58ba2d8b7186fa5d77182" category="section-title">AFF A90規格一覽</block>
+  <block id="28a033feb8f0f296a902cc17bf98f753" category="list-text">平台配置： AFF A90單機箱 HA 對</block>
+  <block id="5b59354adb3a24213815c3bd582c4be7" category="list-text">類型：NAS；HA 對：12；原始容量：79.3 PB / 70.4 PiB；最大記憶體：24576 GB</block>
+  <block id="c8c23a2ff5f3586253970c9b13f2362b" category="list-text">類型：SAN；HA 對：6；原始容量：39.7 PB / 35.2 PiB；最大記憶體：12288 GB</block>
+  <block id="2664a230f56da871235b98d13738efe5" category="list-text">類型：HA 對；原始容量：6.6 PB / 5.9 PiB；最大記憶體：2048.0000</block>
+  <block id="7013ba4c78df8662b37d74812f4b828b" category="list-text">典型功率：8304 BTU/小時</block>
+  <block id="52a9095a9b5668c0ab7d852597a9e65a" category="list-text">最壞情況下的功率：10948 BTU/小時</block>
+  <block id="98bdce6311f9264a79bf5540d8a91177" category="summary">AFF A70儲存系統的主要規格</block>
+  <block id="5fc041ee8fea6753afc9901c15201d9c" category="paragraph">以下是AFF A70的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF A70規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="8d9fe4546d5dec6351287d5f7d65a1d8" category="paragraph">最低ONTAP版本： ONTAP 9.15.1RC2</block>
+  <block id="b47151dcef1f1efbab618c6c7de0f9d5" category="list-text">NAS：12 個 HA 對，79.3 PB / 70.4 PiB 原始容量，3072 GB 最大內存</block>
+  <block id="065601e4319265f2f631f7e0f1fee2cb" category="list-text">SAN：6 個 HA 對、39.7 PB / 35.2 PiB 原始容量、1536 GB 最大內存</block>
+  <block id="199d603d215c1fbb6afb2b52cd755d3d" category="list-text">HA 對：6.6 PB / 5.9 PiB 原始容量，256.0000 GB 最大內存</block>
+  <block id="bd57079b2f63ecdfc762e715d4e587f7" category="list-text">乙太網路 200 Gbps：24 個連接埠</block>
+  <block id="e4da3e566b845ebbe2c1b22abbfe509d" category="list-text">乙太網路 100 Gbps：36 個連接埠</block>
+  <block id="ac7594219755079570df9a616433f870" category="list-text">乙太網路 25 Gbps：56 個連接埠</block>
+  <block id="aa6f1e0042a4e0f85f71765520a37f74" category="list-text">乙太網路 10 Gbps：56 個連接埠</block>
+  <block id="faa7aaf191c50aab01165ae4403cdaf8" category="list-text">FC 64 Gbps：56 個連接埠</block>
+  <block id="9ffc5fd059bbb07b06692cb7c1ecafe1" category="list-text">NVMe/FC 64 Gbps：56 個連接埠</block>
+  <block id="9b28548b547b0a965fd6b281f8a392e2" category="list-text">SAS 12 Gbps：56 個連接埠</block>
+  <block id="6614ba120512c4b5534e09992ffb3b48" category="list-text">乙太網路 1 Gbps：2 個連接埠</block>
+  <block id="a641c2b52081bb6d5109bd6c1aed3da6" category="list-text">RS-232 115 Kbps：4 個連接埠</block>
+  <block id="178dcda4ffd023c89a1eb518337f3c34" category="list-text">USB 600 Mbps：2 個連接埠</block>
+  <block id="cfb07b6404929452a20cf49b5564f634" category="list-text">重量：118.0 磅/53.5 公斤</block>
+  <block id="75c66802e076ebfbdb8135f4d73d33a3" category="list-text">深度：34.5 英寸/（36.6 英寸，含電纜管理支架）</block>
+  <block id="e3f8e554738613be85c954cb0fe985be" category="list-text">雜訊：標稱聲功率 (LwAd)：8.6；br/聲壓 (LpAm)（旁觀者位置）：71.6 dB</block>
+  <block id="d81fc6af6ea13811aecbc5e80e82a6e0" category="summary">AFF A90儲存系統的主要規格</block>
+  <block id="9b05f025388044bfb675c0d7665f9af8" category="paragraph">以下是AFF A90的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF A90規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="1449c87ec77b43f028315be24aff95c6" category="list-text">NAS：12 個 HA 對，79.3 PB / 70.4 PiB 原始容量，24576 GB 最大內存</block>
+  <block id="5fc3293da68a4bbf8cd435223ff9d9b5" category="list-text">SAN：6 個 HA 對、39.7 PB / 35.2 PiB 原始容量、12288 GB 最大內存</block>
+  <block id="b4e746b652dc71bc904fa260cd47dd74" category="list-text">HA 對：6.6 PB / 5.9 PiB 原始容量，2048.0000 GB 最大內存</block>
+  <block id="f4ccae1af0c039ef6331a12dfa192bc4" category="summary">A800平台組的主要規格</block>
+  <block id="4412f4700447802c6ab24953f2967296" category="doc">AFF A800的主要規格</block>
+  <block id="bdb11ff259e5f7f084623cae9c68c9a0" category="paragraph">以下是單一高可用性對中AFF A800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="e29752183e34c8411a0856db12339812" category="list-text">平台配置： AFF A800單機箱 HA 對</block>
+  <block id="17f48666aa0c35f775a1b2aac2486d64" category="list-text">記憶體：1280.0000 GB</block>
+  <block id="1f54434a03024a54ecb330e9febd2445" category="list-text">最低ONTAP版本： ONTAP 9.4RC1 == 橫向擴展最大值</block>
+  <block id="10f6bfd3f9f7efb9da69f6aaaf00dd2e" category="list-text">類型：NAS；HA 對：12；原始容量：79.3 PB / 70.4 PiB；最大記憶體：15360 GB</block>
+  <block id="7076302b15d2e2833bdd55e6aa4d498f" category="list-text">類型：SAN；HA 對：6；原始容量：39.7 PB / 35.2 PiB；最大記憶體：7680 GB</block>
+  <block id="93b2830e4ec577d691b02f4284fe92e0" category="list-text">類型：HA 對；原始容量：6.6 PB / 5.9 PiB；最大記憶體：1280.0000</block>
+  <block id="1d2705bc030b205a4f625d63e58e1892" category="list-text">協定：乙太網路 25 Gbps；連接埠：16</block>
+  <block id="826e8cab819d51116cbfef7ad2138f96" category="list-text">協定：FC 32 Gbps；連接埠：32</block>
+  <block id="c3294baafb836a74dc1c09bac1e50e28" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：32</block>
+  <block id="1e2373344357d94deea230c08fdb8a61" category="list-text">協定：乙太網路 1 Gbps；連接埠：4</block>
+  <block id="8128140dc138c0144edf19fd950d1ee2" category="list-text">典型功率：6626 BTU/小時</block>
+  <block id="e42b526fbe0f3c1227d56efb1f018003" category="list-text">最壞情況下的功率：8417 BTU/小時</block>
+  <block id="39fe1ab17015b4c54d3acbb381464843" category="list-text">重量：132.5 磅 60.1 公斤</block>
+  <block id="c407b354a69fc0f35ea83e395d7236e0" category="list-text">工作溫度/海拔/濕度：海拔高度 3048 公尺時 5°C 至 40°C（41°F 至 104°F）；相對濕度 8% 至 90%，無凝結</block>
+  <block id="884a1ad02adc9b1a30d1fb64a488ff81" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0 聲壓 (LpAm)（旁觀者位置）：62.8 dB</block>
+  <block id="374f686d1050b8db4234a3cff60f21f6" category="summary">A900平台組的主要規格</block>
+  <block id="baccae61b0b2c7a795093da2188894c0" category="doc">AFF A900的主要規格</block>
+  <block id="d7377ef7ac2fe02f983d361f9ccd35ce" category="paragraph">以下是單一高可用性對中AFF A900儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="d786d99c8a946cff6ec7792dc598b9f8" category="list-text">平台配置： AFF A900單機箱 HA 對</block>
+  <block id="23bcd6d5f3a8deb59601aecde62055ac" category="list-text">外形尺寸：8U 機箱，附 2 個 HA 控制器</block>
+  <block id="fcc16789555a80dd6421ce488b7de02f" category="list-text">PCIe 擴充槽：20</block>
+  <block id="4e4544052daf1f29c67fcb821b779206" category="list-text">最低ONTAP版本： ONTAP 9.10.1RC2 == 橫向擴展最大值</block>
+  <block id="a0177ff33f36bce292684d5f6e69b13c" category="list-text">協定：乙太網路 100 Gbps；連接埠：32</block>
+  <block id="a4b06306ca8860e11ab1daa2f1d103d7" category="list-text">協定：乙太網路 25 Gbps；連接埠：64</block>
+  <block id="3f954f581bbf55d1e42c397e6d2a769c" category="list-text">協定：乙太網路 10 Gbps；連接埠：64</block>
+  <block id="cb1a8c2c0bde32ceef07cfc2df4f242a" category="list-text">協定：FC 32 Gbps；連接埠：64</block>
+  <block id="d7b663235e4ba7d65751d1ecef9d1e8f" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：64</block>
+  <block id="c84d120ade76fac15e979bdb0a1b53fc" category="list-text">協定：SAS 12 Gbps；連接埠：64</block>
+  <block id="0d88f2d1136cd9d621f5ebf4f4399130" category="list-text">協定：RS-232 115 Kbps；連接埠：6</block>
+  <block id="075d799861cf13549300734fc01c4513" category="list-text">典型功率：8004 BTU/小時</block>
+  <block id="6478fa13001ba724b8246e6dad5e2e42" category="list-text">最壞情況下的功率：9937 BTU/小時</block>
+  <block id="1fdb14b1edaf618b6fdfc9dca655ce0c" category="list-text">重量：220.5 磅 100.0 公斤</block>
+  <block id="8dcfe73b45a2a6ced912819209250921" category="list-text">高度：8U</block>
+  <block id="ce5c111b5fcf83a1ecb95263c76f65aa" category="list-text">寬度：19 吋 IEC 機架相容（17.7 吋 45.0 公分）</block>
+  <block id="a1e06a43350f93ecd55e19457653bebc" category="list-text">深度：28.8 英吋（含電纜管理支架為 36.8 英吋）</block>
+  <block id="f8f37ef9a6b72f1149134728ec9a48d4" category="list-text">雜訊：標稱聲功率 (LwAd)：7.4 聲壓 (LpAm)（旁觀者位置）：65.0 dB</block>
+  <block id="46ae63d798657637d7b0da22ab66be8f" category="summary">ASA-C250 平台組的主要規格</block>
+  <block id="8b14cc17bebb14141a13d943fbf03bea" category="doc">ASA C250的主要規格</block>
+  <block id="2fb11ccabb5f061076955212cf9e3ce1" category="paragraph">以下是單一高可用性對中ASA C250儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="fdd6c5bebca24bc951e9fd52ceb5eecf" category="list-text">平台配置： ASA C250單機箱 HA 對</block>
+  <block id="f91b8c8831bab83cc95ee102087c617f" category="list-text">最大原容量：1.4736 PB</block>
+  <block id="8803112546143acade991372c28bca22" category="list-text">最低ONTAP版本： ONTAP 9.13.1P1 == 橫向擴展最大值</block>
+  <block id="d199fe3f9b1e4090a8f9c733e498aa7e" category="list-text">類型：NAS</block>
+  <block id="a23d2142a38187167c012fc417446750" category="list-text">類型：SAN；HA 對：6；原始容量：8.8 PB / 7.9 PiB；最大記憶體：768 GB</block>
+  <block id="bd65761abbdcb433903d000fc35bf75d" category="list-text">類型：HA 對；原始容量：1.5 PB / 1.3 PiB；最大記憶體：128.0000</block>
+  <block id="12232c1b0db425eb005a4461c504595d" category="list-text">NVMe/FC == 系統環境規格</block>
+  <block id="0159c5ec653e15fcbcae39428fa791d8" category="list-text">典型功率：2906 BTU/小時</block>
+  <block id="d707b620c17bdc4f1ab8681a199b43f0" category="list-text">最壞情況下的功率：3750 BTU/小時</block>
+  <block id="3c202f79f61f28bb47426c96d75b8df6" category="summary">ASA-C400 平台組的主要規格</block>
+  <block id="71baed637b22c2f4560587af954092b7" category="doc">ASA C400的主要規格</block>
+  <block id="dc5457cf69538274fe26d7679976aade" category="paragraph">以下是單一高可用性對中ASA C400儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="280a6502db2cb8db47a1361c0ec70b69" category="list-text">平台配置： ASA C400A 單機箱 HA 對，乙太網路捆綁包</block>
+  <block id="06ebb33b1d02a3a4d52515c3169814cc" category="list-text">最大原容量：2.9472 PB</block>
+  <block id="f0895b0c06e00482b7082cef32c9359f" category="list-text">類型：SAN；HA 對：6；原始容量：17.7 PB / 15.7 PiB；最大記憶體：1536 GB</block>
+  <block id="a3aff93af33cc466cc96c3e997ad17a5" category="list-text">類型：HA 對；原始容量：2.9 PB / 2.6 PiB；最大記憶體：256.0000</block>
+  <block id="684538b2fdc87502c8d8c0a0e442a4bf" category="list-text">協定：乙太網路 100 Gbps；連接埠：24</block>
+  <block id="b807781272d98039ae43aed331897138" category="list-text">協定：乙太網路 25 Gbps；連接埠：28</block>
+  <block id="fc09f009b43372c59c26d523783f1a50" category="list-text">協定：FC 32 Gbps；連接埠：40</block>
+  <block id="47ddf3a62f6716ffc2f5dcb2920d6923" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：40</block>
+  <block id="91fc1bf42be5829ef3dba0f799901b92" category="summary">ASA-C800 平台組的主要規格</block>
+  <block id="43901cff589f977e8a6fb9b0ed89e14f" category="doc">ASA C800的主要規格</block>
+  <block id="5a16a1d0d6cb4dff48ee98d4b2fe7b43" category="paragraph">以下是單一高可用性對中ASA C800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="484376736a8b3c83db54118bb81c0552" category="list-text">平台配置： ASA C800單機箱 HA 對</block>
+  <block id="590ea72c375cf8671060032d26812f04" category="list-text">最大原始容量：7.3680 PB</block>
+  <block id="bd1b05bb015a0a2acf5c371d5fcae997" category="list-text">類型：SAN；HA 對：6；原始容量：44.2 PB / 39.3 PiB；最大記憶體：7680 GB</block>
+  <block id="76dc16d4a1bda3935de1c561160f38ae" category="list-text">類型：HA 對；原始容量：7.4 PB / 6.5 PiB；最大記憶體：1280.0000</block>
+  <block id="f0d0a6d3a7c04a2717de536180306483" category="summary">ASA A1K 的主要規格</block>
+  <block id="c32bd05ce9d7ff6bedf76d9a851d218f" category="paragraph">以下是單一高可用性對中ASA A1K 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="7c79445526ccce20b92cbf01e1a47e8d" category="section-title">主要容量、記憶體、外形規格和ONTAP版本規格</block>
+  <block id="5e87e402ec6e815000f9fcf30cb59e70" category="list-text">平台配置： ASA A1KA 雙機箱 HA 對</block>
+  <block id="594ea955f42a459c95e5ec7be911e8b3" category="list-text">最大原容量：2.6622 PB</block>
+  <block id="0bcdc83987481874b3df2da8ad3f5001" category="list-text">最低ONTAP版本： ONTAP 9.16.0 == 橫向擴展最大值</block>
+  <block id="14280657c7fa8d036ae80129b1cfe036" category="list-text">類型：SAN；HA 對：6；原始容量：16.0 PB / 14.2 PiB；最大記憶體：12288 GB</block>
+  <block id="694db4398fbad6ed501214dd8938f337" category="list-text">類型：HA 對；原始容量：2.7 PB / 2.4 PiB；最大記憶體：2048.0000</block>
+  <block id="be5f78085e15e220c97d810039c3d2be" category="list-text">NVMe/TCP == 系統環境規格</block>
+  <block id="987d679b705691bf50ce94ba0126b762" category="summary">ASA A20 的主要規格</block>
+  <block id="067b5fa0404e0a1d2eca59c5e5161621" category="paragraph">以下是單一高可用性對中ASA A20 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="f69463a171f3ace651b547cb61052c23" category="list-text">平台配置： ASA A20 單機箱 HA 對</block>
+  <block id="55ff5c7e853405bb677fe7963b81c4a5" category="list-text">最大原容量：0.7344 PB</block>
+  <block id="9947eeeafeed3d5406463e828a6143b0" category="list-text">最低ONTAP版本： ONTAP 9.16.1 == 橫向擴展最大值</block>
+  <block id="07e012e88c2eae0569e081f75bdc556c" category="list-text">類型：SAN；HA 對：3；原始容量：2.2 PB / 2.0 PiB；最大記憶體：384 GB</block>
+  <block id="0d8ec3cd4998a46e4220bea48bd01c3b" category="list-text">類型：HA 對；原始容量：0.7 PB / 0.7 PiB；最大記憶體：128.0000</block>
+  <block id="a6064ac30820627594be27df076928cb" category="summary">ASA A30 的主要規格</block>
+  <block id="4f8c91384c54ac1295f7762afbc8883e" category="paragraph">以下是單一高可用性對中ASA A30 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="8d93a494e8028f585d2404d6b033b93d" category="list-text">平台配置： ASA A30 單機箱 HA 對</block>
+  <block id="d7e1e92066d8a56a4975a0f05baf1ff9" category="list-text">類型：SAN；HA 對：4；原始容量：4.4 PB / 3.9 PiB；最大記憶體：512 GB</block>
+  <block id="07156d89d731d45925c9f5bf10e6f50c" category="summary">ASA A50 的主要規格</block>
+  <block id="4ffbf269adb841d5f79ac1d7874c346e" category="paragraph">以下是單一高可用性對中ASA A50 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="7f74612770d8b65cb0072daa59c4922f" category="list-text">平台配置： ASA A50 單機箱 HA 對</block>
+  <block id="c8185c22af4575989d24688547cba44f" category="list-text">最大原始容量：1.8360 PB</block>
+  <block id="695d74fcd52d75e8d990b86214c53c37" category="list-text">類型：SAN；HA 對：6；原始容量：11.0 PB / 9.8 PiB；最大記憶體：1536 GB</block>
+  <block id="2dd1d87006696b42f9be9c49f081fd1e" category="list-text">類型：HA 對；原始容量：1.8 PB / 1.6 PiB；最大記憶體：256.0000</block>
+  <block id="dcd427e9561cb1050fe1a346b429afac" category="summary">ASA A70 的主要規格</block>
+  <block id="d8e175f5d1d7c08a9d3e6982faa2fa09" category="paragraph">以下是單一高可用性對中ASA A70 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="323016e8d456bb68c4d5ce7d8528138b" category="list-text">平台配置： ASA A70 單機箱 HA 對</block>
+  <block id="150f26c0e115e7b7ce9a9f0ef48103ef" category="list-text">類型：SAN；HA 對：6；原始容量：16.0 PB / 14.2 PiB；最大記憶體：1536 GB</block>
+  <block id="4dae0db2210cc0d06d11a3ec1b8ef472" category="list-text">類型：HA 對；原始容量：2.7 PB / 2.4 PiB；最大記憶體：256.0000</block>
+  <block id="121c0ac426578ac7a9b579809b0a9aed" category="list-text">重量：170.4 磅 77.3 公斤</block>
+  <block id="1b10801c6c9005e3a5805b8f54b935b6" category="summary">ASA A90 的主要規格</block>
+  <block id="58edb903ab35b05241a60ee1937b5797" category="paragraph">以下是單一高可用性對中ASA A90 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="170cb07016b3615dbe13e6636439a2f2" category="list-text">平台配置： ASA A90 單機箱 HA 對</block>
+  <block id="b4727a157fb242302e9531b6ad75be35" category="summary">ASA A150儲存系統的主要規格</block>
+  <block id="805054946d9cf0f8d178f5d3b66390f7" category="doc">ASA A150的主要規格</block>
+  <block id="67737479dfb4b9a6a67cdcf411791045" category="paragraph">以下是ASA A150的精選規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得ASA A150規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="188204349d8d41bbc23d43b5708e714e" category="paragraph">平台配置： ASA A150 UTA2 單機箱 HA 對</block>
+  <block id="8d316cb0dd32e6a29db7a99bc113d716" category="paragraph">最低ONTAP版本： ONTAP 9.13.1</block>
+  <block id="f0ed92d1c0fd3e909c924094a93243f1" category="paragraph">光纖通道；iSCSI；NVMe/TCP；</block>
+  <block id="fd49e13a7e97bd8bb1e4c38997b7c545" category="paragraph">沒有可用的環境數據。</block>
+  <block id="0e1c2f19527964f6e08154d6482b5e30" category="summary">ASA150 平台組的主要規格</block>
+  <block id="4dbc96329d5818883df31ecb13a05ebd" category="paragraph">以下是單一高可用性對中ASA A150儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="541cac174e166b24f88392f26d40f404" category="list-text">最低ONTAP版本： ONTAP 9.13.1 == 橫向擴展最大值</block>
+  <block id="18f87be5c5603f09112f8af3908b1280" category="list-text">NVMe/TCP == 系統環境規格 沒有可用的環境資料。</block>
+  <block id="680d950d544b60547a8bacca951d6718" category="summary">ASA A250儲存系統的主要規格</block>
+  <block id="a97c7cd2a22344db01c67b788d791334" category="doc">ASA A250的主要規格</block>
+  <block id="20955af66ca82e86dac8266497f64dec" category="paragraph">以下是ASA A250的精選規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得ASA A250規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="c672ed40c229e8b9ec2d31de6665dd03" category="paragraph">平台配置： ASA A250 100V 單機箱 HA 對</block>
+  <block id="8a7a6a6e68946412c0d94b0a69520833" category="cell">4.4 PB / 3.9 PiB</block>
+  <block id="adb1577c933e08c5e605d6b3e683d150" category="cell">0.7 PB / 0.7 PiB</block>
+  <block id="1978f393885cf00f05ab1be479828e8f" category="paragraph">足球俱樂部； iSCSI； NVMe/FC； NVMe/TCP；</block>
+  <block id="65f5bdc4ea585a25db7e798fe434a135" category="summary">ASA250 平台組的主要規格</block>
+  <block id="81dee4edf751df8f6f2a9351c3c1054e" category="paragraph">以下是單一高可用性對中ASA A250儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="a87f27eafdf3369f35e9efc3c479e4f7" category="list-text">類型：SAN；HA 對：6；原始容量：4.4 PB / 3.9 PiB；最大記憶體：768 GB</block>
+  <block id="8635c55a722f7078767bf23390e4512b" category="list-text">協定：FC 32 Gbps；連接埠：8</block>
+  <block id="836d5b409933ca37fd9abb594f9ffa51" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：8</block>
+  <block id="1e9ab1ef21b71ca54d8fb332aba59c57" category="summary">ASA A400儲存系統的主要規格</block>
+  <block id="e4df834f0fddba2a01ce07ec1630efcb" category="doc">ASA A400的主要規格</block>
+  <block id="50c7467b088c1359dd4f78f13eee0b4a" category="paragraph">以下是ASA A400的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得ASA A400規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="c34e8a3f11aa9b5bf96f8f039946f5ac" category="paragraph">平台配置： ASA A400單機箱 HA 對，乙太網路捆綁包</block>
+  <block id="171ad46774f32c56db17e5cc8a1c27ca" category="list-text">最壞情況下的功率：5212 BTU/小時</block>
+  <block id="36fb5b627c2dfb6e53810cdd3e6be3f3" category="summary">ASA400 平台組的主要規格</block>
+  <block id="1976618cf00c0b6aea89a517e457a8c1" category="paragraph">以下是單一高可用性對中ASA A400儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="65d0afe8c0786bff1dd86021fdc07256" category="summary">ASA A800儲存系統的主要規格</block>
+  <block id="59a59c8ca4ad93f3a28d68343d4dc062" category="doc">ASA A800的主要規格</block>
+  <block id="263fbe530f95144e2f9fc1764572e731" category="paragraph">以下是ASA A800的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得ASA A800規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="55e85e6d42d014f86bc84f6f5d11bd8b" category="paragraph">平台配置： ASA A800單機箱 HA 對</block>
+  <block id="9aa49a71aa0866fdf22c763b884cf447" category="cell">39.7 PB / 35.2 PiB</block>
+  <block id="857fbb927f9301cb274cfbbe50576f34" category="cell">7680GB</block>
+  <block id="0a74815927318643e615dd9f6d9ef36c" category="cell">1280.0000</block>
+  <block id="580e58da3f4c8c0e004338e2d5463568" category="summary">ASA800 平台組的主要規格</block>
+  <block id="06eb93fc791c5a505c106b277c7d4f76" category="paragraph">以下是單一高可用性對中ASA A800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="1cb06846bf340ec24f77328a4840931c" category="summary">ASA A900儲存系統的主要規格</block>
+  <block id="cdca003ab9116f8c6df61f92c170e74f" category="doc">ASA A900的主要規格</block>
+  <block id="b9cb6f539efb85bd3dbecb8f63b109da" category="paragraph">以下是ASA A900的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得ASA A900規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="a1f970732d61710eb8552b0bcd3b0dc5" category="paragraph">平台配置： ASA A900單機箱 HA 對</block>
+  <block id="b92faf9c4929da09bc231f321d401aa8" category="cell">12288GB</block>
+  <block id="98cdd85e8301f2ead1b77774d04aeb95" category="cell">2048.0000</block>
+  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
+  <block id="d5badd98590f7c8475031c722bee9f13" category="list-text">重量：220.5 磅/100.0 公斤</block>
+  <block id="d7dbfe33d50154da8ce85d1c1065e7be" category="list-text">深度：28.8 英寸/（36.8 英寸，含電纜管理支架）</block>
+  <block id="a57159585077204011cc6d81536a227c" category="list-text">雜訊：標稱聲功率 (LwAd)：7.4；br/聲壓 (LpAm)（旁觀者位置）：65.0 dB</block>
+  <block id="fa224ab2852d40c3701e238592589a35" category="summary">ASA900 平台組的主要規格</block>
+  <block id="dae772a251ba6ae7609ce9eb445c4ca7" category="paragraph">以下是單一高可用性對中ASA A900儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="18dc17338011190ae60489762b18bbba" category="summary">AFF C250儲存系統的主要規格</block>
+  <block id="06b4db325464ed97a14422979b4d8924" category="doc">AFF C250的主要規格</block>
+  <block id="12dc95d0bc892a4d68c08990a2e0e93f" category="paragraph">以下是AFF C250的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF C250規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="d134719f200ad90c01e902dc7e871bb5" category="paragraph">平台配置： AFF C250單機箱 HA 對</block>
+  <block id="7a587320435b6f1e62139273459f2380" category="paragraph">最低ONTAP版本： ONTAP 9.10.1P15</block>
+  <block id="0ae635a131736e5abdbd3b1192d957e7" category="cell">17.7 PB / 15.7 PiB</block>
+  <block id="ca0c9966bf6d8b13874c9a33d9b103fa" category="cell">8.8 PB / 7.9 PiB</block>
+  <block id="4dfae59c5327b0ed3524f4482c118eaa" category="cell">1.5 PB / 1.3 PiB</block>
+  <block id="acd481bb21a2d48c85590f748324f123" category="paragraph">以乙太網路為基礎的基板管理控制器（BMC）和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；</block>
+  <block id="4f598ad0067992538a9b25a635fd7ebe" category="summary">C250平台組的主要規格</block>
+  <block id="c77413b9effec9f5e6d3543e5e5b357a" category="paragraph">以下是單一高可用性對中AFF C250儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="f15eebaf1ae51e81f921eaf53eb1297d" category="list-text">最低ONTAP版本： ONTAP 9.10.1P15 == 橫向擴展最大值</block>
+  <block id="bdf24340dd03a1e6485e317e7694b9b2" category="list-text">類型：NAS；HA 對：12；原始容量：17.7 PB / 15.7 PiB；最大記憶體：1536 GB</block>
+  <block id="121ccbb25c187ccfd21ddfb63cddb37b" category="summary">AFF C30 的主要規格</block>
+  <block id="ac83142a3cf60457afcf64302dc699f8" category="paragraph">以下是單一高可用性對中AFF C30 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="bdb291fe6613a36b2df9dcf579e18d44" category="section-title">AFF C30 規格一覽</block>
+  <block id="c2c0e72485d6eff7cf17140036e70a51" category="list-text">平台配置： AFF C30 單機箱 HA 對</block>
+  <block id="4373318eabce13348227966bd0d56dc6" category="list-text">最大原容量：2.2104 PB</block>
+  <block id="f77f473155c2ca414246e9e43d1b49ad" category="list-text">類型：NAS；HA 對：4；原始容量：8.8 PB / 7.9 PiB；最大記憶體：512 GB</block>
+  <block id="f3fe04ec28aeefafab43f9f91e1ae0ed" category="list-text">類型：SAN；HA 對：4；原始容量：8.8 PB / 7.9 PiB；最大記憶體：512 GB</block>
+  <block id="dc4f9e2e9f257e0ae44ebd3ad976c5de" category="list-text">類型：HA 對；原始容量：2.2 PB / 2.0 PiB；最大記憶體：128.0000</block>
+  <block id="87f890893abff786475b4844eea5b0c8" category="summary">AFF C60 的主要規格</block>
+  <block id="f58b598ca799eeb4ef7faccac4998bf1" category="paragraph">以下是單一高可用性對中AFF C60 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="1cfd5d62b0f2810208b73dc5d1a2d824" category="section-title">AFF C60 規格一覽</block>
+  <block id="8c8a6e1a08113615d5f74722d05ab1af" category="list-text">平台配置： AFF C60 單機箱 HA 對</block>
+  <block id="3acec582a452ac16c836802a98abe434" category="list-text">類型：NAS；HA 對：4；原始容量：29.5 PB / 26.2 PiB；最大記憶體：512 GB</block>
+  <block id="a397e9c86882c2645689175dc83e6aae" category="list-text">類型：SAN；HA 對：4；原始容量：29.5 PB / 26.2 PiB；最大記憶體：512 GB</block>
+  <block id="a97c6ddea19cdefe815027983ca3c14b" category="list-text">類型：HA 對；原始容量：7.4 PB / 6.5 PiB；最大記憶體：128.0000</block>
+  <block id="064139422cd1a84596f42173a429e212" category="summary">C30-60平台組的主要規格</block>
+  <block id="f0aac3b86f95ddc440a99e8a9af4bac8" category="doc">C30-60平台組主要規格</block>
+  <block id="6617937e38be49cc5fe65e3ed525a737" category="paragraph">以下是 C30-60 平台組的精選規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得完整規格清單。此頁面反映的是單一高可用性對。</block>
+  <block id="42b778b916d05465de30a8b570f7417a" category="cell">29.5 PB / 26.2 PiB</block>
+  <block id="ef0543bedcfbb3ba5f93ce926cbb0555" category="cell">7.4 PB / 6.5 PiB</block>
+  <block id="aade5f6b9b4cba8c863ab3537a3973f1" category="cell">2.2 PB / 2.0 PiB</block>
+  <block id="2e92c130c5443771eaa167757b1d7fa4" category="summary">AFF C400儲存系統的主要規格</block>
+  <block id="6d527eddf180984fcdf3214a896b2400" category="doc">AFF C400的主要規格</block>
+  <block id="6f7abce1807e00eb829b0fb040b13a83" category="paragraph">以下是AFF C400的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF C400規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="24217c4afe3a2d5155d35dfb85660eb8" category="paragraph">平台配置： AFF C400單機箱 HA 對，乙太網路捆綁包</block>
+  <block id="e43a78f093f2cf29673803ddee9c6d0f" category="cell">35.4 PB / 31.4 PiB</block>
+  <block id="73378505345b16bafe8e8e0adc36335b" category="cell">2.9 PB / 2.6 PiB</block>
+  <block id="33e75ff09dd601bbe69f351039152189" category="cell">28</block>
+  <block id="d645920e395fedad7bbbed0eca3fe2e0" category="cell">40</block>
+  <block id="cc2197d8b97e0d4876bce9bda259529b" category="summary">C400平台組的主要規格</block>
+  <block id="14bd00edae2bf24d6d6bb1e970380fcd" category="paragraph">以下是單一高可用性對中AFF C400儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="e2904e96770de9235975509793655256" category="list-text">類型：NAS；HA 對：12；原始容量：35.4 PB / 31.4 PiB；最大記憶體：3072 GB</block>
+  <block id="08bd3bd31dd4639c8d1ce08094a5c7ef" category="summary">AFF C80 儲存系統的主要規格</block>
+  <block id="2d33040a8a66f0c30e2c415a9eec7d8d" category="doc">AFF C80 的主要規格</block>
+  <block id="67e389a0ebc658619776b9d5ac7e49d5" category="paragraph">以下是AFF C80 的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF C80 規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="e189801c045f7326aff1bfc7219a381c" category="paragraph">平台配置： AFF C80 單機箱 HA 對</block>
+  <block id="07548eedeface70baca4c8e294aeb441" category="paragraph">最大原容量：14.7360 PB</block>
+  <block id="ad339f78f7d5eabd8dd19a5f2beee981" category="paragraph">記憶體：512.0000 GB</block>
+  <block id="166bba6aa3732da4c376d8e5910de4c3" category="cell">176.8 PB / 157.0 PiB</block>
+  <block id="64d906a3d54689675d84ae95a83fa49f" category="cell">6144GB</block>
+  <block id="1560af0f523689027f0554b81d5d3c84" category="cell">88.4 PB / 78.5 PiB</block>
+  <block id="fae3259e48be59207fdf854753593173" category="cell">14.7 PB / 13.1 PiB</block>
+  <block id="c390594d1703fb1e22685bd2411d9571" category="cell">512.0000</block>
+  <block id="4e635c54d834641513e2b2c8e225a127" category="cell">乙太網路 200 Gbps</block>
+  <block id="19ca14e7ea6328a42e0eb13d585e4c22" category="cell">36</block>
+  <block id="9f61408e3afb633e50cdf1b20de6f466" category="cell">56</block>
+  <block id="866524d146caf6d5d5ca58414133dfcb" category="summary">C80平台組的關鍵規格</block>
+  <block id="fc53799482b5c72e371c896c296eeaca" category="paragraph">以下是單一高可用性對中AFF C80 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="790f2f7025a49405ecf494550abd2025" category="list-text">類型：NAS；HA 對：12；原始容量：176.8 PB / 157.0 PiB；最大記憶體：6144 GB</block>
+  <block id="4668001b533dcb01a288e13e438ef996" category="list-text">類型：SAN；HA 對：6；原始容量：88.4 PB / 78.5 PiB；最大記憶體：3072 GB</block>
+  <block id="88fef25d7d076a46933eb5cfece64d7d" category="list-text">類型：HA 對；原始容量：14.7 PB / 13.1 PiB；最大記憶體：512.0000</block>
+  <block id="48f850c93d74da66ee33ca24f09bc3d1" category="list-text">SMB 3.1.1 == 系統環境規格 沒有可用的環境資料。</block>
+  <block id="c16047b0b69bcd197b44430d6882aab1" category="summary">AFF C800儲存系統的主要規格</block>
+  <block id="198b715fa6258cbda0053099c7bc668e" category="doc">AFF C800的主要規格</block>
+  <block id="f7695e44bea62e5b28836a193e3bda64" category="paragraph">以下是AFF C800的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF C800規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="282171cc5dd323ec3623eb44944c319e" category="paragraph">平台配置： AFF C800單機箱 HA 對</block>
+  <block id="1aa18ff2688eef082ca414ef6c1d0efb" category="cell">15360GB</block>
+  <block id="750d899f51fc7f647f07a546c5cedf65" category="cell">44.2 PB / 39.3 PiB</block>
+  <block id="439e4902245729253229992fd0a361ae" category="list-text">重量：132.5 磅/60.1 公斤</block>
+  <block id="f60520e90b3a6d873ecb44d71d75b734" category="list-text">工作溫度/海拔/濕度：5°C 至 40°Cbr/41°F 至 br/104°F) atbr/= 3048mbr/= 10000 ft) 海拔；8% 至 90%br/相對濕度，無冷凝</block>
+  <block id="d5cacbff7b82ab3d26541de685b1a32b" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0；br/聲壓 (LpAm)（旁觀者位置）：62.8 dB</block>
+  <block id="de73ab042d31fbcaea0758773ba2aed7" category="summary">C800平台組的主要規格</block>
+  <block id="fc95a14b356ccae993f1c5a596003764" category="paragraph">以下是單一高可用性對中AFF C800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="3a02dddbfe8af1c44ece16bc861685bb" category="list-text">類型：NAS；HA 對：12；原始容量：88.4 PB / 78.5 PiB；最大記憶體：15360 GB</block>
+  <block id="8403c0175395ff495c9af55099b8fef4" category="summary">FAS70 的主要規格</block>
+  <block id="c96eb561070b12daad5027ae91335418" category="paragraph">以下是單一高可用性對中 FAS70 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="c692e4fa105561892a2a9228b34bffae" category="section-title">FAS70 規格一覽</block>
+  <block id="b60dd0f48b757bf37e7152687a5f1e2a" category="list-text">平台配置：FAS70 雙機箱 HA 對</block>
+  <block id="40d3ca6b2e5b5c3a7cf307c29003021c" category="list-text">最大原始容量：15.0000 PB</block>
+  <block id="5452f0b55e47fd57056cfbc2c1df1383" category="list-text">最低ONTAP版本： ONTAP 9.15.1 == 橫向擴展最大值</block>
+  <block id="b254a13dcae5f4c43da172d62dc20c0d" category="list-text">類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：3072 GB</block>
+  <block id="4b63cb91007f9af60dc4a59b97bf7ca9" category="list-text">類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：1536 GB</block>
+  <block id="f3ded331a5a6e6365d277baac957b315" category="list-text">類型：HA 對；原始容量：15.0 PB / 13.3 PiB；最大記憶體：256.0000</block>
+  <block id="f59133a8c7cacd95e2c5ac213a03c659" category="list-text">協定：乙太網路 200 Gbps；連接埠：20</block>
+  <block id="6b50628d21385cc30c365a7eb8bffd16" category="list-text">協定：乙太網路 25 Gbps；連接埠：48</block>
+  <block id="e2eaefdeb48f05ec9cb35dfb6f615aeb" category="list-text">協定：乙太網路 10 Gbps；連接埠：48</block>
+  <block id="e5aa4df0ff781766e2e817068625c8b1" category="list-text">協定：FC 64 Gbps；連接埠：48</block>
+  <block id="70e1c8cd6acecd7be46535fa29cde5eb" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：48</block>
+  <block id="d2601122f2e33565668f0d284f9bba63" category="list-text">協定：SAS 12 Gbps；連接埠：48</block>
+  <block id="9d02a28c4d1a1a71729bbb0ac80472a7" category="list-text">典型功率：2653 BTU/小時</block>
+  <block id="7a334425f69fb6c06dfa651065352e0b" category="list-text">最壞情況下的功率：3050 BTU/小時</block>
+  <block id="11c8af1f99a8557ee032710d4d130287" category="summary">FAS90 的主要規格</block>
+  <block id="9f993159e76f4a7d4b4b8b8eddb4460a" category="paragraph">以下是單一高可用性對中 FAS90 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="42779fde1dac86b0723d2e19199ac8fa" category="section-title">FAS90 規格一覽</block>
+  <block id="4bed2c035bc64442e21e943683a9b185" category="list-text">平台配置：FAS90 雙機箱 HA 對</block>
+  <block id="8b72dc5f9b25dc6168e91c00439c5a50" category="list-text">記憶體：1024.0000 GB</block>
+  <block id="b9019f5082828bbf875a370075374d46" category="list-text">類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：12288 GB</block>
+  <block id="74386d163649b678ff0c97b36f57f142" category="list-text">類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：6144 GB</block>
+  <block id="3790ae3edcd1cbdc06d7cafa099e35b6" category="list-text">類型：HA 對；原始容量：15.0 PB / 13.3 PiB；最大記憶體：1024.0000</block>
+  <block id="aaa6c3a506ce287eabaf8bca129ea5eb" category="list-text">典型功率：3392 BTU/小時</block>
+  <block id="12425dc1c33eeeb8070ff1d0f0dd0990" category="list-text">最壞情況下的功率：5136 BTU/小時</block>
+  <block id="524bbf314904b6048321bf7d57c0721a" category="summary">FAS2700 平台組的主要規格</block>
+  <block id="f9fdf8f9fd1bcb23867be4e8677041cd" category="doc">FAS2750的主要規格</block>
+  <block id="4b81974f9adc22dc0d93c489cfefd300" category="paragraph">以下是單一高可用性對中FAS2750儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="b740280982e279e3689c99d02e31f681" category="list-text">平台配置： FAS2750 UTA2 單機箱 HA 對</block>
+  <block id="97d0e3c1fe730b3fc51986b2a3d86897" category="list-text">最大原容量：2.6832 PB</block>
+  <block id="10dfcb5c5a94973a0430e25e6c8fa34f" category="list-text">PCIe 擴充槽：2</block>
+  <block id="f4dc218e19a555015443828186ea75de" category="list-text">類型：NAS；HA 對：12；原始容量：32.2 PB / 28.6 PiB；最大記憶體：768 GB</block>
+  <block id="8a66310132298effa26bd3d3c9512257" category="list-text">類型：SAN；HA 對：6；原始容量：16.1 PB / 14.3 PiB；最大記憶體：384 GB</block>
+  <block id="b6b10df768149e4f90013273cf86d895" category="list-text">類型：HA 對；原始容量：2.7 PB / 2.4 PiB；最大記憶體：64.0000</block>
+  <block id="43f7c906d8d706e8eaaac5f08222a66d" category="summary">FAS2800 平台組的主要規格</block>
+  <block id="9085692f34e3fb2c2c78d38a14521724" category="doc">FAS2820的主要規格</block>
+  <block id="128d9b59350624d5c79c6c363cab68cc" category="paragraph">以下是單一高可用性對中FAS2820儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="39406851902f01211ead25d98062f61d" category="list-text">平台配置： FAS2820單機箱 HA 對</block>
+  <block id="575985f97a1f988a6350ac06db427db9" category="list-text">最大原始容量：3.1680 PB</block>
+  <block id="b0e3a3152d05dd16038908656c9c2f8a" category="list-text">外型尺寸：2U 機箱，配備 2 個 HA 控制器和 12 個驅動器插槽</block>
+  <block id="af595004b31eb9535c259508ed0ae2fb" category="list-text">最低ONTAP版本： ONTAP 9.13.1RC1 == 橫向擴展最大值</block>
+  <block id="ba885ec4ce316bb75e770a53e3213761" category="list-text">類型：NAS；HA 對：12；原始容量：38.0 PB / 33.8 PiB；最大記憶體：1536 GB</block>
+  <block id="d29c5defb734a27748e948f94d789e06" category="list-text">類型：SAN；HA 對：6；原始容量：19.0 PB / 16.9 PiB；最大記憶體：768 GB</block>
+  <block id="fead3e0ee4def93b2151167022fb4533" category="list-text">類型：HA 對；原始容量：3.2 PB / 2.8 PiB；最大記憶體：128.0000</block>
+  <block id="5ab005b9e35bac0e274dc2ad841d359c" category="list-text">協定：乙太網路 10 Gbps；連接埠：8</block>
+  <block id="26cd69703cea4637292f92e84d75ecfe" category="list-text">典型功率：1815 BTU/小時</block>
+  <block id="420810d7438040f33afa4e9971bc9e68" category="list-text">最壞情況下的功率：2339 BTU/小時</block>
+  <block id="629fef9452940797522a1eb729140801" category="list-text">重量：57.2 磅 25.9 公斤</block>
+  <block id="2a826f4c5f5f2662d385657b6789e5b4" category="list-text">深度：20.0 吋（含電纜管理支架為 25.1 吋）</block>
+  <block id="be0d9c6bd89058287db92de8958647fb" category="list-text">雜訊：標稱聲功率 (LwAd)：7.8 聲壓 (LpAm)（旁觀者位置）：68.4 dB</block>
+  <block id="388cdbcf37c6184c9d7036dfc62997a9" category="summary">FAS50 儲存系統的主要規格</block>
+  <block id="0a42ca797013f8354a046cf687ebb8ab" category="doc">FAS50 的主要規格</block>
+  <block id="753d3613ff5d00b4bdcb87c8418711f5" category="paragraph">以下是 FAS50 的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得 FAS50 規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="d232b6d80071ea4995449dd705931b53" category="paragraph">平台配置：FAS50 單機箱 HA 對</block>
+  <block id="962507c20d94c6ad7f20eaddbdabdc09" category="paragraph">最大原始容量：10.5600 PB</block>
+  <block id="866f9a88aa9f4c7b36fabfc61cbe0848" category="paragraph">外形尺寸：2U 機箱，附 2 個 HA 控制器</block>
+  <block id="76592b6c10e189268149b06b49735b2a" category="paragraph">PCIe 擴充槽：12</block>
+  <block id="6c6fd7b3e3f561c260e02d30c27b8c50" category="paragraph">最低ONTAP版本： ONTAP 9.16.1</block>
+  <block id="3b34791d680bdff7e705346eb0532a52" category="cell">42.2 PB / 37.5 PiB</block>
+  <block id="cbf45d5ba7051d1a5a5803d60ac6d3db" category="cell">10.6 PB / 9.4 PiB</block>
+  <block id="5914ff703c6686a6800588a76dacab74" category="list-text">典型功率：2319 BTU/小時</block>
+  <block id="1c28248d81d6ff87ee55b4eb47056a8c" category="list-text">最壞情況下的功率：3872 BTU/小時</block>
+  <block id="b95d880eb71d3f28802d99353d93f6f0" category="list-text">重量：52.2 磅/23.7 公斤</block>
+  <block id="1c52b559c1f437da01a94de79dc7f45c" category="summary">FAS50 平台組的主要規格</block>
+  <block id="18f027e2b7707b7ff7767f76d5927af2" category="paragraph">以下是單一高可用性對中 FAS50 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="f0a067ccea8b26d0b2f17d9fbdb931ad" category="list-text">類型：NAS；HA 對：4；原始容量：42.2 PB / 37.5 PiB；最大記憶體：512 GB</block>
+  <block id="3a0f42ee3e73e3f8370b07da4111f5b5" category="list-text">類型：SAN；HA 對：4；原始容量：42.2 PB / 37.5 PiB；最大記憶體：512 GB</block>
+  <block id="2283cd8fe9d3e6788a5f1e28f24f55a4" category="list-text">類型：HA 對；原始容量：10.6 PB / 9.4 PiB；最大記憶體：128.0000</block>
+  <block id="656b17c351d41c4973d279414ea79cc9" category="list-text">重量：52.2 磅 23.7 公斤</block>
+  <block id="c0abf347ba9cbc3892abfa80eb2e4397" category="summary">FAS8300的主要規格</block>
+  <block id="e0fa95a49988723bdb3a71e39da9c698" category="paragraph">以下是單一高可用性對中FAS8300儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="39d93cb8cb49b1e34ce4682195baa972" category="section-title">FAS8300規格概覽</block>
+  <block id="81fbb1af2575e277c0ab65de1a34acd7" category="list-text">平台配置： FAS8300單機箱 HA 對，乙太網路捆綁包</block>
+  <block id="fd744345038da274ab58654db1fcb499" category="list-text">PCIe 擴充槽：14</block>
+  <block id="cd06292ee7db4a1216b017c0b9c958ec" category="list-text">協定：SAS 12 Gbps；連接埠：40</block>
+  <block id="5b1ba1394c0a16f7600e9bd605ed1882" category="list-text">典型功率：4024 BTU/小時</block>
+  <block id="8e3eb50eb5b8748228fd6db22195fa7b" category="list-text">最壞情況下的功率：5017 BTU/小時</block>
+  <block id="4d72b1436f42d6ce8ae3bb2729e55822" category="list-text">重量：108.5磅49.2公斤</block>
+  <block id="5e55c56b3c7b10ad41653e8a91cbc409" category="summary">FAS8700的主要規格</block>
+  <block id="76bb02bef14665401f5eae8057e61bda" category="paragraph">以下是單一高可用性對中FAS8700儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="aae0a587325b1f1dcd88fd40da6e1de6" category="section-title">FAS8700規格概覽</block>
+  <block id="269efb49e440289d736d83265c32074a" category="list-text">平台配置： FAS8700單機箱 HA 對，乙太網路捆綁包</block>
+  <block id="525a1167e255f9e8a631d90273984320" category="list-text">類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：6144 GB</block>
+  <block id="76099eb519d73c71dec2093bfda8cc6c" category="list-text">類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：3072 GB</block>
+  <block id="f8b90163d325caceab4eb0de0f6658c1" category="list-text">類型：HA 對；原始容量：15.0 PB / 13.3 PiB；最大記憶體：512.0000</block>
+  <block id="0d53ee5ca699c3621f3c0a505c890b66" category="list-text">典型功率：5430 BTU/小時</block>
+  <block id="36a13f3d826d9f6cf7fc56d6627d7528" category="list-text">最壞情況下的功率：5796 BTU/小時</block>
+  <block id="d61c7e37be329d2ba5a7e809fb08d9c5" category="list-text">重量：108.9磅49.4公斤</block>
+  <block id="e495c9f38a737b6da2117ebaa52ba7ac" category="doc">FAS9500概述</block>
+  <block id="40d3675d7a1ade404a4fdd374833eb73" category="paragraph">平台配置： FAS9500單機箱 HA 對</block>
+  <block id="ce98aac2c839cd0ed245c16a1a40165a" category="summary">FAS9500儲存系統的主要規格</block>
+  <block id="1ea1a140190bf37eb933a90c35b37442" category="doc">FAS9500的主要規格</block>
+  <block id="44e81b2b7c35ddf61be99abbb0611c4a" category="paragraph">以下是FAS9500的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得FAS9500規格的完整清單。此頁面反映的是單一高可用性對。</block>
+  <block id="f66f263a0a2685d5a5c6a1c424eff7d8" category="paragraph">最低ONTAP版本： ONTAP 9.10.1P3</block>
+  <block id="e564247ad1c29279fc0f7f3e940a7204" category="cell">180.0 PB / 159.9 PiB</block>
+  <block id="73f56d8353140321c6d56ae1cd03dcbc" category="cell">24576GB</block>
+  <block id="5d1cd462bd74ff5016c71d1735d844d0" category="cell">90.0 PB / 79.9 PiB</block>
+  <block id="6ec20c5ffb71fc8e6407815aba709ebe" category="cell">15.0 PB / 13.3 PiB</block>
+  <block id="e71a112fcba059348a330658e07fff85" category="list-text">工作溫度/海拔/濕度：海拔 3048 公尺/10000 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 90%，無凝結</block>
+  <block id="fd64ba1b0614f4ffd66207f445196c93" category="summary">FAS9500平台組的主要規格</block>
+  <block id="e3a28d350d8771729547475ef2d67149" category="paragraph">以下是單一高可用性對中FAS9500儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="8d8c60ca9b0b29f222ed76c52c6cf55b" category="list-text">最低ONTAP版本： ONTAP 9.10.1P3 == 橫向擴展最大值</block>
+  <block id="014f2208129cdc831cee84fc30f9247f" category="list-text">類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：24576 GB</block>
+  <block id="42af051dd0fff696f5ce895c1bb97de4" category="list-text">類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：12288 GB</block>
+  <block id="8f449cf0254f2ad40d59dd095542b714" category="list-text">類型：HA 對；原始容量：15.0 PB / 13.3 PiB；最大記憶體：2048.0000</block>
+  <block id="f931f7d58dafa987aed167fe956586d0" category="list-text">工作溫度/海拔/濕度：海拔高度 3048 公尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 90%，無凝結</block>
+  <block id="05cc0b5390a045ad79b485ab82378ed6" category="summary">本頁提供按平台型號劃分的啟動媒體更換程序的連結。</block>
+  <block id="8bd4a26f093f8dfe07ee04e644fc4554" category="doc">啟動介質 FRU 鏈接</block>
+  <block id="84fc9faaabc3bc54cb7df779734624ea" category="paragraph">此頁面提供按系統組織的啟動媒體更換程序的連結。</block>
+  <block id="65a4d6fcc372057dd61e6cc7abb8c696" category="inline-link-macro">AFF A1K （自動恢復）</block>
+  <block id="f12df1affe59ba836acb2829d827579b" category="list-text"><block ref="f12df1affe59ba836acb2829d827579b" category="inline-link-macro-rx"></block></block>
+  <block id="94bd55fe0571dbfa433cb6e80d3e228b" category="inline-link-macro">AFF A1K （手動恢復）</block>
+  <block id="15bb531f57461105045495e2c09051a1" category="list-text"><block ref="15bb531f57461105045495e2c09051a1" category="inline-link-macro-rx"></block></block>
+  <block id="3c9419b0744beccd4fd6272e84be9db0" category="inline-link-macro">AFF A20/30/50（自動恢復）</block>
+  <block id="bf04f836f4a9630a7f04e540287ec501" category="list-text"><block ref="bf04f836f4a9630a7f04e540287ec501" category="inline-link-macro-rx"></block></block>
+  <block id="447fc7176ae638f9f981aff26eecab3c" category="inline-link-macro">AFF A20/30/50（手動恢復）</block>
+  <block id="c5cd347ad860ee6123e7bb36dc3452a6" category="list-text"><block ref="c5cd347ad860ee6123e7bb36dc3452a6" category="inline-link-macro-rx"></block></block>
+  <block id="a6cf25c187729aa964f89edd956843a3" category="inline-link-macro">AFF A70/90（自動恢復）</block>
+  <block id="dcab4c29b7344bb28f1c22cd994046b1" category="list-text"><block ref="dcab4c29b7344bb28f1c22cd994046b1" category="inline-link-macro-rx"></block></block>
+  <block id="49ecd2bdd7c74d9bf009f09f212d8243" category="inline-link-macro">AFF A70/90（手動恢復）</block>
+  <block id="54ef8cd48b133c8d249ada1c919123b8" category="list-text"><block ref="54ef8cd48b133c8d249ada1c919123b8" category="inline-link-macro-rx"></block></block>
+  <block id="0d0ff4acb0334ab0358d67561ba4d804" category="list-text"><block ref="0d0ff4acb0334ab0358d67561ba4d804" category="inline-link-macro-rx"></block></block>
+  <block id="d0dcb4439368b5f6d6bfff9998fc125a" category="list-text"><block ref="d0dcb4439368b5f6d6bfff9998fc125a" category="inline-link-macro-rx"></block></block>
+  <block id="4e186381dc2a437bd757e2ba32c9f500" category="list-text"><block ref="4e186381dc2a437bd757e2ba32c9f500" category="inline-link-macro-rx"></block></block>
+  <block id="c400bbfc1be018f314412c1baebdb5ce" category="list-text"><block ref="c400bbfc1be018f314412c1baebdb5ce" category="inline-link-macro-rx"></block></block>
+  <block id="b46114b8bb51bedbc45030ba81cd876c" category="list-text"><block ref="b46114b8bb51bedbc45030ba81cd876c" category="inline-link-macro-rx"></block></block>
+  <block id="14595b9783b1ce84a77309539e387ef0" category="list-text"><block ref="14595b9783b1ce84a77309539e387ef0" category="inline-link-macro-rx"></block></block>
+  <block id="018c6e26923b0aacdaa3b468216dbef2" category="inline-link-macro">AFF A400 （自動恢復）</block>
+  <block id="b65f27e89f9734289610bbb58fcbc2f2" category="list-text"><block ref="b65f27e89f9734289610bbb58fcbc2f2" category="inline-link-macro-rx"></block></block>
+  <block id="39b8857e7a7db8a1b61ba9a0a2b28c75" category="inline-link-macro">AFF A400 （手動恢復）</block>
+  <block id="71ec006db4d7285a35122a9aa1a0d4a1" category="list-text"><block ref="71ec006db4d7285a35122a9aa1a0d4a1" category="inline-link-macro-rx"></block></block>
+  <block id="871ef9e3d5b15a679c215b5943c4ec22" category="inline-link-macro">AFF A700 （手動恢復）</block>
+  <block id="e688b88dda1c535c2954b633610201b2" category="list-text"><block ref="e688b88dda1c535c2954b633610201b2" category="inline-link-macro-rx"></block></block>
+  <block id="3a7367568e066720e56a6e55fe02e9ca" category="inline-link-macro">AFF A700s （手動恢復）</block>
+  <block id="780f1529c618cefdf07b8d44e07b0d44" category="list-text"><block ref="780f1529c618cefdf07b8d44e07b0d44" category="inline-link-macro-rx"></block></block>
+  <block id="8c85c8a9d45f2cfcf06c10df9f3f548b" category="inline-link-macro">AFF A800 （自動恢復）</block>
+  <block id="8d755a2ec36cc5d9b344aaa7a61b9906" category="list-text"><block ref="8d755a2ec36cc5d9b344aaa7a61b9906" category="inline-link-macro-rx"></block></block>
+  <block id="627175bec44b552fcf461e1edf6b8225" category="inline-link-macro">AFF A800 （手動恢復）</block>
+  <block id="9e0708f9dda2aa86d487f5963cb68bc6" category="list-text"><block ref="9e0708f9dda2aa86d487f5963cb68bc6" category="inline-link-macro-rx"></block></block>
+  <block id="13fb86e7e23e742b8e2dd69203e895e3" category="inline-link-macro">AFF C190 （手動恢復）</block>
+  <block id="b4dd706c1685dc61dc5f99a0678233be" category="list-text"><block ref="b4dd706c1685dc61dc5f99a0678233be" category="inline-link-macro-rx"></block></block>
+  <block id="f53ccd898d6ef213950ef7edb2f3ba29" category="inline-link-macro">AFF C250 （手動恢復）</block>
+  <block id="d769a53f7a1097f70ff1dccb299df2ab" category="list-text"><block ref="d769a53f7a1097f70ff1dccb299df2ab" category="inline-link-macro-rx"></block></block>
+  <block id="ce8eacefdd461a40cac4948b0812b97e" category="inline-link-macro">AFF C30/60（自動恢復）</block>
+  <block id="770c41162bcd49bbebcb6a09ca448828" category="list-text"><block ref="770c41162bcd49bbebcb6a09ca448828" category="inline-link-macro-rx"></block></block>
+  <block id="82dbab0271ce6f7b9f656a8847ec66d3" category="inline-link-macro">AFF C30/60（手動恢復）</block>
+  <block id="97e7f122d24c8ead32af2e0737532d1f" category="list-text"><block ref="97e7f122d24c8ead32af2e0737532d1f" category="inline-link-macro-rx"></block></block>
+  <block id="948524e4647c175a68516fae1ab29d9f" category="inline-link-macro">AFF C80（自動恢復）</block>
+  <block id="a032d1cab834ca3f4c6ff3f73b389115" category="list-text"><block ref="a032d1cab834ca3f4c6ff3f73b389115" category="inline-link-macro-rx"></block></block>
+  <block id="f2fd8ebbe2e4249a51b9dd039d3be26e" category="inline-link-macro">AFF C80（手動恢復）</block>
+  <block id="174aa198f26aa737f4a5220bd32ce5c3" category="list-text"><block ref="174aa198f26aa737f4a5220bd32ce5c3" category="inline-link-macro-rx"></block></block>
+  <block id="be53a4cb456e3bf7068e09c4c71c60c6" category="inline-link-macro">AFF C400 （自動恢復）</block>
+  <block id="f2dc2890b39219ed2ba8183b2042938d" category="list-text"><block ref="f2dc2890b39219ed2ba8183b2042938d" category="inline-link-macro-rx"></block></block>
+  <block id="fa26c3b1827c323bea8e4a3d36610e82" category="inline-link-macro">AFF C400 （手動恢復）</block>
+  <block id="7b60d8833a0299a4458cf67781a1a0ef" category="list-text"><block ref="7b60d8833a0299a4458cf67781a1a0ef" category="inline-link-macro-rx"></block></block>
+  <block id="0343514cacd04f610ac2c1d29e7db8f1" category="inline-link-macro">AFF C800 （自動恢復）</block>
+  <block id="0d75823f0947b23a49e1ade43ce0a103" category="list-text"><block ref="0d75823f0947b23a49e1ade43ce0a103" category="inline-link-macro-rx"></block></block>
+  <block id="e2d6a974ba5c915a4c7ecb8ccf151a87" category="inline-link-macro">AFF C800 （手動恢復）</block>
+  <block id="caf9b716f73709a5fe1e7c523ae63e11" category="list-text"><block ref="caf9b716f73709a5fe1e7c523ae63e11" category="inline-link-macro-rx"></block></block>
+  <block id="33b74fb86a1c8a3b18cd00bf0f7833f8" category="inline-link-macro">ASA A150 （手動恢復）</block>
+  <block id="dac839872a38ba9866c50033377fffc2" category="list-text"><block ref="dac839872a38ba9866c50033377fffc2" category="inline-link-macro-rx"></block></block>
+  <block id="fa1eafb03577d242a0b9b1999f90d885" category="inline-link-macro">ASA A400 （自動恢復）</block>
+  <block id="147ebd88b3b3fbffeae876d7cfd388cc" category="list-text"><block ref="147ebd88b3b3fbffeae876d7cfd388cc" category="inline-link-macro-rx"></block></block>
+  <block id="fa485e6c00059c3bbd97be85f48cefef" category="inline-link-macro">ASA A400 （手動恢復）</block>
+  <block id="c7f3ff9a4f5b74f92e11e769987f3bb1" category="list-text"><block ref="c7f3ff9a4f5b74f92e11e769987f3bb1" category="inline-link-macro-rx"></block></block>
+  <block id="a22b8b46d33811a3d53224d82ca4fa3a" category="inline-link-macro">ASA A800 （自動恢復）</block>
+  <block id="43c2e0d586f10d737d590271e9561edf" category="list-text"><block ref="43c2e0d586f10d737d590271e9561edf" category="inline-link-macro-rx"></block></block>
+  <block id="61d7e225a799f7d513aaad93faa189e4" category="inline-link-macro">ASA A800 （手動恢復）</block>
+  <block id="138c60f9e49b4acc7c67415e0b0a95f6" category="list-text"><block ref="138c60f9e49b4acc7c67415e0b0a95f6" category="inline-link-macro-rx"></block></block>
+  <block id="afce10c71804013ee2485e4bece538d8" category="list-text"><block ref="afce10c71804013ee2485e4bece538d8" category="inline-link-macro-rx"></block></block>
+  <block id="2d5dad2d630479af00cc71e9235bc3dd" category="inline-link-macro">ASA C250 （手動恢復）</block>
+  <block id="fe1c4abd569da8fe35126d0e2de9a60c" category="list-text"><block ref="fe1c4abd569da8fe35126d0e2de9a60c" category="inline-link-macro-rx"></block></block>
+  <block id="6857cf8d83c6fb4cbad3110c1c503989" category="inline-link-macro">ASA C400 （自動恢復）</block>
+  <block id="9c35545ce78c8647692920d18998844b" category="list-text"><block ref="9c35545ce78c8647692920d18998844b" category="inline-link-macro-rx"></block></block>
+  <block id="272c3832b7d5369172d275164bd79fec" category="inline-link-macro">ASA C400 （手動恢復）</block>
+  <block id="e8aa0e1027d3ff18b6ee5b7b41f3352e" category="list-text"><block ref="e8aa0e1027d3ff18b6ee5b7b41f3352e" category="inline-link-macro-rx"></block></block>
+  <block id="1bbd9cec839987f3015cfe4ea2d0e8cf" category="inline-link-macro">ASA C800 （自動恢復）</block>
+  <block id="fb0dc7d614539b0dd7b1f82895e618fb" category="list-text"><block ref="fb0dc7d614539b0dd7b1f82895e618fb" category="inline-link-macro-rx"></block></block>
+  <block id="31e5f99b3cccea1e0f64118a723faf1e" category="inline-link-macro">ASA C800 （手動恢復）</block>
+  <block id="bd606c6df481aa5093387dcca5e9135c" category="list-text"><block ref="bd606c6df481aa5093387dcca5e9135c" category="inline-link-macro-rx"></block></block>
+  <block id="4b77146c50e031d3cc2fdb751d75bef1" category="inline-link-macro">ASA A1K（自動恢復）</block>
+  <block id="552605af9c254c666b6523f360889b4c" category="list-text"><block ref="552605af9c254c666b6523f360889b4c" category="inline-link-macro-rx"></block></block>
+  <block id="f41f6f54a2b8ca72845704d1c7596288" category="inline-link-macro">ASA A20/30/50（自動恢復）</block>
+  <block id="1d671e520fe7e5b4820ad00744755c07" category="list-text"><block ref="1d671e520fe7e5b4820ad00744755c07" category="inline-link-macro-rx"></block></block>
+  <block id="d9beb46b6fabb2c02a562e64c66df495" category="inline-link-macro">ASA 70/90（自動恢復）</block>
+  <block id="625abda6c87541ae597e0a7b79842d81" category="list-text"><block ref="625abda6c87541ae597e0a7b79842d81" category="inline-link-macro-rx"></block></block>
+  <block id="f4b9a0d39239d0484cdcf0e3e296d331" category="inline-link-macro">ASA C30（自動恢復）</block>
+  <block id="2fb6348e2a3d0debcb830ac1cbc672df" category="list-text"><block ref="2fb6348e2a3d0debcb830ac1cbc672df" category="inline-link-macro-rx"></block></block>
+  <block id="4240ddf59e08b91143032712e07016bb" category="inline-link-macro">FAS50（自動恢復）</block>
+  <block id="8a7c6144c3a91807d589afd64f662297" category="list-text"><block ref="8a7c6144c3a91807d589afd64f662297" category="inline-link-macro-rx"></block></block>
+  <block id="621715ee5a359e91b6c0399dfb949ac6" category="inline-link-macro">FAS50（手動恢復）</block>
+  <block id="cb43262ea44ac883fa75bcf5a20ad890" category="list-text"><block ref="cb43262ea44ac883fa75bcf5a20ad890" category="inline-link-macro-rx"></block></block>
+  <block id="944b54488e810bf40f008acd68c8bcdb" category="inline-link-macro">FAS70/90（自動恢復）</block>
+  <block id="de656b08489adba93ba78f367a358373" category="list-text"><block ref="de656b08489adba93ba78f367a358373" category="inline-link-macro-rx"></block></block>
+  <block id="20c54f40c4a899a3eca9825001ee5d4c" category="inline-link-macro">FAS70/90（手動恢復）</block>
+  <block id="57f9bb40782c8700f5e73ae2cd53a4c8" category="list-text"><block ref="57f9bb40782c8700f5e73ae2cd53a4c8" category="inline-link-macro-rx"></block></block>
+  <block id="0579e26ccf814487c470d58c82e60a8b" category="inline-link-macro">FAS500f （手動恢復）</block>
+  <block id="7cf67f10559ec47e04ed99deaadfb682" category="list-text"><block ref="7cf67f10559ec47e04ed99deaadfb682" category="inline-link-macro-rx"></block></block>
+  <block id="293e389f2f48e1feb86b6dbf85c08639" category="inline-link-macro">FAS2600（手動恢復）</block>
+  <block id="006d4457ed02651a2fd4303e7484533e" category="list-text"><block ref="006d4457ed02651a2fd4303e7484533e" category="inline-link-macro-rx"></block></block>
+  <block id="ad97629439b57d3454974e3994ef7d86" category="inline-link-macro">FAS2700（手動恢復）</block>
+  <block id="15b0598bd44b268ee4aaeef00119ba76" category="list-text"><block ref="15b0598bd44b268ee4aaeef00119ba76" category="inline-link-macro-rx"></block></block>
+  <block id="d1e335efe63312605a092b49b372c511" category="inline-link-macro">FAS2800（自動恢復）</block>
+  <block id="936e3216bcdc32c95d764e40bc1d9b95" category="list-text"><block ref="936e3216bcdc32c95d764e40bc1d9b95" category="inline-link-macro-rx"></block></block>
+  <block id="b37bb0f0423e3dc64cbff82a8c2f8401" category="inline-link-macro">FAS2800（手動恢復）</block>
+  <block id="53c7c0e7942b96c5c3b7699e8362ff17" category="list-text"><block ref="53c7c0e7942b96c5c3b7699e8362ff17" category="inline-link-macro-rx"></block></block>
+  <block id="5c630f6409c4327f212c22b7709bed2d" category="inline-link-macro">FAS8200 （手動恢復）</block>
+  <block id="37ed030dc0c388bedad60cc29f7b497c" category="list-text"><block ref="37ed030dc0c388bedad60cc29f7b497c" category="inline-link-macro-rx"></block></block>
+  <block id="94e1df4047f137237c8decfa24472057" category="inline-link-macro">FAS8300 （自動恢復）</block>
+  <block id="43e463996ae6f71cbd6cc4797ab09687" category="list-text"><block ref="43e463996ae6f71cbd6cc4797ab09687" category="inline-link-macro-rx"></block></block>
+  <block id="1ddc45464fe6e66617f9dffb6894d921" category="inline-link-macro">FAS8300 （手動恢復）</block>
+  <block id="9b3a91cf5351da29dd283613cc5cb732" category="list-text"><block ref="9b3a91cf5351da29dd283613cc5cb732" category="inline-link-macro-rx"></block></block>
+  <block id="22940dc769f9cfeae2f1f9c5c9859830" category="inline-link-macro">FAS9000 （手動恢復）</block>
+  <block id="43820384d440718ac258c938a097dc51" category="list-text"><block ref="43820384d440718ac258c938a097dc51" category="inline-link-macro-rx"></block></block>
+  <block id="f024cb195a6c7908c379aadb490f9b16" category="inline-link-macro">FAS9500 （自動恢復）</block>
+  <block id="91d87a5788bee6fff173ede874f33f82" category="list-text"><block ref="91d87a5788bee6fff173ede874f33f82" category="inline-link-macro-rx"></block></block>
+  <block id="87113ac9b4c246e7167c962d27457e05" category="inline-link-macro">FAS9500 （手動恢復）</block>
+  <block id="3f1f15fd096fa12fab12c18908d3939b" category="list-text"><block ref="3f1f15fd096fa12fab12c18908d3939b" category="inline-link-macro-rx"></block></block>
+  <block id="41b2a18f0116f4c3eea43e2050f1c560" category="summary">本頁提供系統快取模組替換程式的連結。</block>
+  <block id="b5c8a83f70fde5d100752d184b042729" category="doc">快取模組 FRU 鏈接</block>
+  <block id="259a08b7e1cbb4b8fe99b2c11a26a94e" category="paragraph">本頁提供按系統組織的快取模組替換程式的連結。</block>
+  <block id="31cd4a1a6d4523471057f1e244a6f087" category="list-text"><block ref="31cd4a1a6d4523471057f1e244a6f087" category="inline-link-macro-rx"></block></block>
+  <block id="70787bf6c66839e10b401f22d9721cb8" category="list-text"><block ref="70787bf6c66839e10b401f22d9721cb8" category="inline-link-macro-rx"></block></block>
+  <block id="7a7c374e1c11100b2d85d38bf371130d" category="inline-link-macro">FAS70/90</block>
+  <block id="f7f9ebeffaffb4dd4c47452577031587" category="list-text"><block ref="f7f9ebeffaffb4dd4c47452577031587" category="inline-link-macro-rx"></block></block>
+  <block id="2ce490bea2091b62ae6e6a53e31fd321" category="list-text"><block ref="2ce490bea2091b62ae6e6a53e31fd321" category="inline-link-macro-rx"></block></block>
+  <block id="a61f47246f0738648cdec56b4deedb8d" category="list-text"><block ref="a61f47246f0738648cdec56b4deedb8d" category="inline-link-macro-rx"></block></block>
+  <block id="a334af0b164fc0db79711e89abe4cb0d" category="inline-link-macro">FAS2800</block>
+  <block id="1dc1d9c5d5839c7ba2040109d6dfe522" category="list-text"><block ref="1dc1d9c5d5839c7ba2040109d6dfe522" category="inline-link-macro-rx"></block></block>
+  <block id="978c6343c8f4a667a990eba0d2c3c85e" category="list-text"><block ref="978c6343c8f4a667a990eba0d2c3c85e" category="inline-link-macro-rx"></block></block>
+  <block id="e9d353cec8057c1b5ea7d746c6b6fabb" category="list-text"><block ref="e9d353cec8057c1b5ea7d746c6b6fabb" category="inline-link-macro-rx"></block></block>
+  <block id="942832d5f73f93375e071876571b40e6" category="list-text"><block ref="942832d5f73f93375e071876571b40e6" category="inline-link-macro-rx"></block></block>
+  <block id="93b0736cd814eb9e36660625bbaad017" category="summary">此頁面提供按系統劃分的底盤更換程序的連結。</block>
+  <block id="b80a33052385cd0cc85c1d686382b4bf" category="doc">機殼 FRU 鏈接</block>
+  <block id="c461486aef127a27729931bddc719bba" category="paragraph">此頁面提供按平台模型組織的底盤更換程序的連結。</block>
+  <block id="949179ca80475272b597bbba00c0548c" category="list-text"><block ref="949179ca80475272b597bbba00c0548c" category="inline-link-macro-rx"></block></block>
+  <block id="ec2bdb337cecf392982c03df6f9fd4f6" category="inline-link-macro">AFF A20/30/50</block>
+  <block id="e6f8b000372b032b36f639a010275585" category="list-text"><block ref="e6f8b000372b032b36f639a010275585" category="inline-link-macro-rx"></block></block>
+  <block id="39c237d07be498497ad0fd97e02c56d3" category="list-text"><block ref="39c237d07be498497ad0fd97e02c56d3" category="inline-link-macro-rx"></block></block>
+  <block id="964da179897b8ace7011493655af5f9f" category="list-text"><block ref="964da179897b8ace7011493655af5f9f" category="inline-link-macro-rx"></block></block>
+  <block id="7c434d14c92d21f5b6ecbbe8e4751f0a" category="list-text"><block ref="7c434d14c92d21f5b6ecbbe8e4751f0a" category="inline-link-macro-rx"></block></block>
+  <block id="e433bb4aee3c5609843048d1d30aa8a3" category="list-text"><block ref="e433bb4aee3c5609843048d1d30aa8a3" category="inline-link-macro-rx"></block></block>
+  <block id="916696e64cc2b37f2bc4e35bcc51e0c9" category="list-text"><block ref="916696e64cc2b37f2bc4e35bcc51e0c9" category="inline-link-macro-rx"></block></block>
+  <block id="bb469c08a074999924489264722443f0" category="list-text"><block ref="bb469c08a074999924489264722443f0" category="inline-link-macro-rx"></block></block>
+  <block id="25f0a8bdd87fe121b3dd5400a0048114" category="list-text"><block ref="25f0a8bdd87fe121b3dd5400a0048114" category="inline-link-macro-rx"></block></block>
+  <block id="98816df0c51b3aaa93b3d878c52ee734" category="list-text"><block ref="98816df0c51b3aaa93b3d878c52ee734" category="inline-link-macro-rx"></block></block>
+  <block id="f6da3204d99c472947ba995fb7a4a1ea" category="list-text"><block ref="f6da3204d99c472947ba995fb7a4a1ea" category="inline-link-macro-rx"></block></block>
+  <block id="16511a800b1df4c6d810291de14e853a" category="list-text"><block ref="16511a800b1df4c6d810291de14e853a" category="inline-link-macro-rx"></block></block>
+  <block id="77de1c9e9f5c105ed742c9e4d408e017" category="list-text"><block ref="77de1c9e9f5c105ed742c9e4d408e017" category="inline-link-macro-rx"></block></block>
+  <block id="9e6a3d9665fd1662e399d48ed6dd2951" category="list-text"><block ref="9e6a3d9665fd1662e399d48ed6dd2951" category="inline-link-macro-rx"></block></block>
+  <block id="fdfffcd785cd210a575de30909349244" category="inline-link-macro">AFF C30/60</block>
+  <block id="4a5b70dd048a583585036cf001afbbe2" category="list-text"><block ref="4a5b70dd048a583585036cf001afbbe2" category="inline-link-macro-rx"></block></block>
+  <block id="96f0d7c7f0f4af0228414a60a54deaa5" category="list-text"><block ref="96f0d7c7f0f4af0228414a60a54deaa5" category="inline-link-macro-rx"></block></block>
+  <block id="858f4ab559d37e61ed9af9043d65bfb3" category="list-text"><block ref="858f4ab559d37e61ed9af9043d65bfb3" category="inline-link-macro-rx"></block></block>
+  <block id="d38e1193a6240959296d1eeba42fa1f4" category="list-text"><block ref="d38e1193a6240959296d1eeba42fa1f4" category="inline-link-macro-rx"></block></block>
+  <block id="58bea9a88e4392e6370b8ed8bb593cd1" category="list-text"><block ref="58bea9a88e4392e6370b8ed8bb593cd1" category="inline-link-macro-rx"></block></block>
+  <block id="3548f4a5bb0bb69e8cfd79982659ed09" category="list-text"><block ref="3548f4a5bb0bb69e8cfd79982659ed09" category="inline-link-macro-rx"></block></block>
+  <block id="8a1387d2faa84f487095300ce27e00d0" category="list-text"><block ref="8a1387d2faa84f487095300ce27e00d0" category="inline-link-macro-rx"></block></block>
+  <block id="b340e5a3f3d2ef805babb2a3e796c424" category="list-text"><block ref="b340e5a3f3d2ef805babb2a3e796c424" category="inline-link-macro-rx"></block></block>
+  <block id="05d195996595b0ffae0436c815bd1b5d" category="list-text"><block ref="05d195996595b0ffae0436c815bd1b5d" category="inline-link-macro-rx"></block></block>
+  <block id="9b6a6fad18761b0de5ace4123b1ad956" category="list-text"><block ref="9b6a6fad18761b0de5ace4123b1ad956" category="inline-link-macro-rx"></block></block>
+  <block id="ac94e290e1da2a1268b559e73e20d5a7" category="inline-link-macro">ASA A20/30/50</block>
+  <block id="eaa06d5c69b0c655cbe183d6591a30e7" category="list-text"><block ref="eaa06d5c69b0c655cbe183d6591a30e7" category="inline-link-macro-rx"></block></block>
+  <block id="73b98ef043acd488522721608d1383c0" category="inline-link-macro">ASA 70/90</block>
+  <block id="3288cadea5c73c6d79c257063a4712fe" category="list-text"><block ref="3288cadea5c73c6d79c257063a4712fe" category="inline-link-macro-rx"></block></block>
+  <block id="d27df4daa0c59b9b2f28375f230db835" category="list-text"><block ref="d27df4daa0c59b9b2f28375f230db835" category="inline-link-macro-rx"></block></block>
+  <block id="fc8bf286d933e838a9fa735d7907f96e" category="list-text"><block ref="fc8bf286d933e838a9fa735d7907f96e" category="inline-link-macro-rx"></block></block>
+  <block id="e40ba28dbff124d53dba4a958e98c44e" category="list-text"><block ref="e40ba28dbff124d53dba4a958e98c44e" category="inline-link-macro-rx"></block></block>
+  <block id="3950a460ddee2a3e07b99424dbe1bcbb" category="list-text"><block ref="3950a460ddee2a3e07b99424dbe1bcbb" category="inline-link-macro-rx"></block></block>
+  <block id="a9d50e709edef8c3cf86529248cbf037" category="list-text"><block ref="a9d50e709edef8c3cf86529248cbf037" category="inline-link-macro-rx"></block></block>
+  <block id="1cf65d5f229f67f4277cbcf4bf9e4da4" category="list-text"><block ref="1cf65d5f229f67f4277cbcf4bf9e4da4" category="inline-link-macro-rx"></block></block>
+  <block id="1c8b8df0bb6bee3dcc1c2a6358ff4668" category="list-text"><block ref="1c8b8df0bb6bee3dcc1c2a6358ff4668" category="inline-link-macro-rx"></block></block>
+  <block id="484e5208bbdd66039a811fb29f0e7240" category="list-text"><block ref="484e5208bbdd66039a811fb29f0e7240" category="inline-link-macro-rx"></block></block>
+  <block id="d67a7e3e646262d45ddf27f8eaca4d86" category="list-text"><block ref="d67a7e3e646262d45ddf27f8eaca4d86" category="inline-link-macro-rx"></block></block>
+  <block id="159fd09c3008a6086b764b9f31eaa9b3" category="list-text"><block ref="159fd09c3008a6086b764b9f31eaa9b3" category="inline-link-macro-rx"></block></block>
+  <block id="85b6f984cd11a457c5fed834f61a0435" category="summary">此頁面提供系統控制器更換程序的連結。</block>
+  <block id="5c3c681dc4ef45d9c05dedcd1583bde3" category="doc">控制器 FRU 鏈接</block>
+  <block id="af02692d89a295b6a09f62c318c82aa3" category="paragraph">此頁面提供按平台型號組織的控制器更換程序的連結。</block>
+  <block id="04271233e1ffb13398732a4fdfa1e3f8" category="list-text"><block ref="04271233e1ffb13398732a4fdfa1e3f8" category="inline-link-macro-rx"></block></block>
+  <block id="7a0104f921af018bb94a5ef41dc389e3" category="list-text"><block ref="7a0104f921af018bb94a5ef41dc389e3" category="inline-link-macro-rx"></block></block>
+  <block id="c1ec09a64f3249dbd91300e59815aba3" category="list-text"><block ref="c1ec09a64f3249dbd91300e59815aba3" category="inline-link-macro-rx"></block></block>
+  <block id="de3f7c179531ddf1cd33d3d03ff81b81" category="list-text"><block ref="de3f7c179531ddf1cd33d3d03ff81b81" category="inline-link-macro-rx"></block></block>
+  <block id="0e904f0ff7905d8cd3ed79786349b7d5" category="list-text"><block ref="0e904f0ff7905d8cd3ed79786349b7d5" category="inline-link-macro-rx"></block></block>
+  <block id="d68ba975953d63ff1a0ae7222e937db2" category="list-text"><block ref="d68ba975953d63ff1a0ae7222e937db2" category="inline-link-macro-rx"></block></block>
+  <block id="e9a982d43bb7811f9e9dd2264ba4be64" category="list-text"><block ref="e9a982d43bb7811f9e9dd2264ba4be64" category="inline-link-macro-rx"></block></block>
+  <block id="71e6ce4a37408e229274555623fe3ce8" category="list-text"><block ref="71e6ce4a37408e229274555623fe3ce8" category="inline-link-macro-rx"></block></block>
+  <block id="651dfb810d00c088f6ac978eb6f5871e" category="list-text"><block ref="651dfb810d00c088f6ac978eb6f5871e" category="inline-link-macro-rx"></block></block>
+  <block id="1424eb9825ad365579c4da49e4786b56" category="inline-link-macro">AFF A70/90</block>
+  <block id="35395840aee0783e603fa8b9669374ae" category="list-text"><block ref="35395840aee0783e603fa8b9669374ae" category="inline-link-macro-rx"></block></block>
+  <block id="0639b4f29666e1096a5a3b8c4da43155" category="list-text"><block ref="0639b4f29666e1096a5a3b8c4da43155" category="inline-link-macro-rx"></block></block>
+  <block id="86d92068a57395fc657c350d74f3356e" category="list-text"><block ref="86d92068a57395fc657c350d74f3356e" category="inline-link-macro-rx"></block></block>
+  <block id="c3029cbd4f78465e6ff54aa81a8a020d" category="list-text"><block ref="c3029cbd4f78465e6ff54aa81a8a020d" category="inline-link-macro-rx"></block></block>
+  <block id="c0228763ea758ac964809811d3571052" category="list-text"><block ref="c0228763ea758ac964809811d3571052" category="inline-link-macro-rx"></block></block>
+  <block id="2989f142a7da424a4a3cc2f63dfdd4f5" category="list-text"><block ref="2989f142a7da424a4a3cc2f63dfdd4f5" category="inline-link-macro-rx"></block></block>
+  <block id="03280f3685e8a5ad36c3fa678523b0d9" category="list-text"><block ref="03280f3685e8a5ad36c3fa678523b0d9" category="inline-link-macro-rx"></block></block>
+  <block id="3019370e81af47ab7d02b2183e911292" category="list-text"><block ref="3019370e81af47ab7d02b2183e911292" category="inline-link-macro-rx"></block></block>
+  <block id="7f16e5e6bc0e02fdbad6f4191ba77cbd" category="list-text"><block ref="7f16e5e6bc0e02fdbad6f4191ba77cbd" category="inline-link-macro-rx"></block></block>
+  <block id="fca4641da43ada30b8f193e92cb7f87f" category="list-text"><block ref="fca4641da43ada30b8f193e92cb7f87f" category="inline-link-macro-rx"></block></block>
+  <block id="401027a3e8d32364ae2f496034bf7c84" category="list-text"><block ref="401027a3e8d32364ae2f496034bf7c84" category="inline-link-macro-rx"></block></block>
+  <block id="eac544c494ceda2b0bed3ec9f6dd34cc" category="list-text"><block ref="eac544c494ceda2b0bed3ec9f6dd34cc" category="inline-link-macro-rx"></block></block>
+  <block id="6ae3e815e9470392185ce17eb6b31b40" category="list-text"><block ref="6ae3e815e9470392185ce17eb6b31b40" category="inline-link-macro-rx"></block></block>
+  <block id="3fb74b10461d31044ead8abdf5a34fdc" category="list-text"><block ref="3fb74b10461d31044ead8abdf5a34fdc" category="inline-link-macro-rx"></block></block>
+  <block id="53665e86b5be0aff6d04ee16b7a1999e" category="list-text"><block ref="53665e86b5be0aff6d04ee16b7a1999e" category="inline-link-macro-rx"></block></block>
+  <block id="b4f5f92241cff1599f47f0715926ed96" category="list-text"><block ref="b4f5f92241cff1599f47f0715926ed96" category="inline-link-macro-rx"></block></block>
+  <block id="31112ca4016b8bb7b0403e4b9c7ce9cc" category="list-text"><block ref="31112ca4016b8bb7b0403e4b9c7ce9cc" category="inline-link-macro-rx"></block></block>
+  <block id="b7af00b1b1fe7c9f794ac19a8f9e206f" category="list-text"><block ref="b7af00b1b1fe7c9f794ac19a8f9e206f" category="inline-link-macro-rx"></block></block>
+  <block id="a9e67674ae7d7034558e16b6394ffc77" category="list-text"><block ref="a9e67674ae7d7034558e16b6394ffc77" category="inline-link-macro-rx"></block></block>
+  <block id="64379daf7298fd525fedaa68017a4288" category="list-text"><block ref="64379daf7298fd525fedaa68017a4288" category="inline-link-macro-rx"></block></block>
+  <block id="da564556f4b2ad023369a6fe6ad5d021" category="list-text"><block ref="da564556f4b2ad023369a6fe6ad5d021" category="inline-link-macro-rx"></block></block>
+  <block id="cb371ad6fa44fad4db4aa99fbeb20033" category="list-text"><block ref="cb371ad6fa44fad4db4aa99fbeb20033" category="inline-link-macro-rx"></block></block>
+  <block id="201dc805ed12fdd52912122fe2d62974" category="list-text"><block ref="201dc805ed12fdd52912122fe2d62974" category="inline-link-macro-rx"></block></block>
+  <block id="d8d36ffbd1c03922299fab2c061d6beb" category="list-text"><block ref="d8d36ffbd1c03922299fab2c061d6beb" category="inline-link-macro-rx"></block></block>
+  <block id="56cd30e519f0eab5fbf82bbaf13b325d" category="list-text"><block ref="56cd30e519f0eab5fbf82bbaf13b325d" category="inline-link-macro-rx"></block></block>
+  <block id="5112a57d99a01e11c39c6b6603bb8eb3" category="list-text"><block ref="5112a57d99a01e11c39c6b6603bb8eb3" category="inline-link-macro-rx"></block></block>
+  <block id="8e3b3acce5fb4a316c5d8f16071bbd5e" category="list-text"><block ref="8e3b3acce5fb4a316c5d8f16071bbd5e" category="inline-link-macro-rx"></block></block>
+  <block id="02ade16a1a01bf3c8f067e38d78977d3" category="list-text"><block ref="02ade16a1a01bf3c8f067e38d78977d3" category="inline-link-macro-rx"></block></block>
+  <block id="1761884dc418660e09fe75a54f4670c2" category="list-text"><block ref="1761884dc418660e09fe75a54f4670c2" category="inline-link-macro-rx"></block></block>
+  <block id="8fb86b8a93e79f597f3743a770f8395a" category="list-text"><block ref="8fb86b8a93e79f597f3743a770f8395a" category="inline-link-macro-rx"></block></block>
+  <block id="039c4367b90249924af9583f51540afd" category="list-text"><block ref="039c4367b90249924af9583f51540afd" category="inline-link-macro-rx"></block></block>
+  <block id="3fc499992d20f8da47ccaf722a7a455b" category="list-text"><block ref="3fc499992d20f8da47ccaf722a7a455b" category="inline-link-macro-rx"></block></block>
+  <block id="aa6854140fe17e62c0ebed8d6bd75284" category="list-text"><block ref="aa6854140fe17e62c0ebed8d6bd75284" category="inline-link-macro-rx"></block></block>
+  <block id="311d90bc03c5b66b221f6616a05d1727" category="summary">此頁面提供按系統劃分的 DCPM 電源模組更換程序的連結。</block>
+  <block id="343f8198dd8925d95e085d7b90e1d474" category="doc">DCPM 電源模組 FRU 連結</block>
+  <block id="521243a6bf215a6022438f8b9d37318a" category="paragraph">本頁提供按平台型號組織的 DCPM 電源模組更換程式的連結。</block>
+  <block id="fb6bc4fe49003360a6b66952adab4b87" category="list-text"><block ref="fb6bc4fe49003360a6b66952adab4b87" category="inline-link-macro-rx"></block></block>
+  <block id="e6097394189d388ded82e3a166953566" category="list-text"><block ref="e6097394189d388ded82e3a166953566" category="inline-link-macro-rx"></block></block>
+  <block id="5fbbc88ffce1b6cc993f4a9f45c6a339" category="summary">此頁面提供按系統劃分的 DIMM 更換程序的連結。</block>
+  <block id="415cc87c0a5808c6e627cdb210353356" category="doc">DIMM FRU 鏈接</block>
+  <block id="1a000f1af8ce4e13a31f5b430aceaeab" category="paragraph">本頁提供按平台型號組織的 DIMM 更換程序的連結。</block>
+  <block id="45f78857e1ac1e448f7f006d63dd00b2" category="list-text"><block ref="45f78857e1ac1e448f7f006d63dd00b2" category="inline-link-macro-rx"></block></block>
+  <block id="530e58fcd8850ba53e451b479295d6e3" category="list-text"><block ref="530e58fcd8850ba53e451b479295d6e3" category="inline-link-macro-rx"></block></block>
+  <block id="aaa995593063d3c36f1cf939cfe38abc" category="list-text"><block ref="aaa995593063d3c36f1cf939cfe38abc" category="inline-link-macro-rx"></block></block>
+  <block id="359f8438f37bef40e918719a1cec31df" category="list-text"><block ref="359f8438f37bef40e918719a1cec31df" category="inline-link-macro-rx"></block></block>
+  <block id="23f25212a47821beddf38077685e9c2d" category="list-text"><block ref="23f25212a47821beddf38077685e9c2d" category="inline-link-macro-rx"></block></block>
+  <block id="e97e0a4d3c8abd0c36f620c636e64abf" category="list-text"><block ref="e97e0a4d3c8abd0c36f620c636e64abf" category="inline-link-macro-rx"></block></block>
+  <block id="74bb0d26cb7290c83057907a6092bf04" category="list-text"><block ref="74bb0d26cb7290c83057907a6092bf04" category="inline-link-macro-rx"></block></block>
+  <block id="ae6aa31e8eba9c72164baf3e6fb8051c" category="list-text"><block ref="ae6aa31e8eba9c72164baf3e6fb8051c" category="inline-link-macro-rx"></block></block>
+  <block id="39adc561b60e3d2a87b45081b9c799a5" category="list-text"><block ref="39adc561b60e3d2a87b45081b9c799a5" category="inline-link-macro-rx"></block></block>
+  <block id="cf3361508128e4b08b37c7b3ebfedceb" category="list-text"><block ref="cf3361508128e4b08b37c7b3ebfedceb" category="inline-link-macro-rx"></block></block>
+  <block id="d358f3c460deb02e980dad4dbbaa8afd" category="list-text"><block ref="d358f3c460deb02e980dad4dbbaa8afd" category="inline-link-macro-rx"></block></block>
+  <block id="35da8ca5824c73d4f79aa0544157b4e4" category="list-text"><block ref="35da8ca5824c73d4f79aa0544157b4e4" category="inline-link-macro-rx"></block></block>
+  <block id="b50efa1ee905d4ec714190d00141b2ee" category="list-text"><block ref="b50efa1ee905d4ec714190d00141b2ee" category="inline-link-macro-rx"></block></block>
+  <block id="249adabbcbab7427c0417a53b3ef4f52" category="list-text"><block ref="249adabbcbab7427c0417a53b3ef4f52" category="inline-link-macro-rx"></block></block>
+  <block id="56427de1285d0ba1d2333cece0bc3650" category="list-text"><block ref="56427de1285d0ba1d2333cece0bc3650" category="inline-link-macro-rx"></block></block>
+  <block id="553001c025a0de9948ef3c4bb2c1a3d9" category="list-text"><block ref="553001c025a0de9948ef3c4bb2c1a3d9" category="inline-link-macro-rx"></block></block>
+  <block id="d2893ab55dcae2b29bfbdcec9a62debd" category="list-text"><block ref="d2893ab55dcae2b29bfbdcec9a62debd" category="inline-link-macro-rx"></block></block>
+  <block id="d434244a63519f08e3a9b04607ffe8f8" category="list-text"><block ref="d434244a63519f08e3a9b04607ffe8f8" category="inline-link-macro-rx"></block></block>
+  <block id="074908ceba15280c9526328c3e3e5610" category="list-text"><block ref="074908ceba15280c9526328c3e3e5610" category="inline-link-macro-rx"></block></block>
+  <block id="8266d59c81bdd8be0708f36caf04f8c0" category="list-text"><block ref="8266d59c81bdd8be0708f36caf04f8c0" category="inline-link-macro-rx"></block></block>
+  <block id="fe16ca13a16a62faac42b01ce05e6e0e" category="list-text"><block ref="fe16ca13a16a62faac42b01ce05e6e0e" category="inline-link-macro-rx"></block></block>
+  <block id="6ed0ca70a7d6ddfbcb57372e5687c204" category="list-text"><block ref="6ed0ca70a7d6ddfbcb57372e5687c204" category="inline-link-macro-rx"></block></block>
+  <block id="b80ab1279f561505cb31dd9d72691b2f" category="list-text"><block ref="b80ab1279f561505cb31dd9d72691b2f" category="inline-link-macro-rx"></block></block>
+  <block id="be3997e673e448568e70a2be85f87574" category="list-text"><block ref="be3997e673e448568e70a2be85f87574" category="inline-link-macro-rx"></block></block>
+  <block id="b7d3e4b4c9832efb34359a7f99f141bc" category="list-text"><block ref="b7d3e4b4c9832efb34359a7f99f141bc" category="inline-link-macro-rx"></block></block>
+  <block id="29dccbaa652ef34a892ef148f634e74d" category="list-text"><block ref="29dccbaa652ef34a892ef148f634e74d" category="inline-link-macro-rx"></block></block>
+  <block id="1a6a9ee3e7e2d0c738e0dd9be1b1d52c" category="list-text"><block ref="1a6a9ee3e7e2d0c738e0dd9be1b1d52c" category="inline-link-macro-rx"></block></block>
+  <block id="5a9246298e334eff319717554f7fca40" category="list-text"><block ref="5a9246298e334eff319717554f7fca40" category="inline-link-macro-rx"></block></block>
+  <block id="580a82d079cb3a7bb9f56bdcbf293f85" category="list-text"><block ref="580a82d079cb3a7bb9f56bdcbf293f85" category="inline-link-macro-rx"></block></block>
+  <block id="ff90af3eb58e9c37ae16ace2af6ec1da" category="list-text"><block ref="ff90af3eb58e9c37ae16ace2af6ec1da" category="inline-link-macro-rx"></block></block>
+  <block id="05ce494d51563efd8aa6b0ee630ba804" category="list-text"><block ref="05ce494d51563efd8aa6b0ee630ba804" category="inline-link-macro-rx"></block></block>
+  <block id="350cd9843146942691b49d859a99e044" category="list-text"><block ref="350cd9843146942691b49d859a99e044" category="inline-link-macro-rx"></block></block>
+  <block id="b5b5a9807ea1103157cef8acb29118ab" category="list-text"><block ref="b5b5a9807ea1103157cef8acb29118ab" category="inline-link-macro-rx"></block></block>
+  <block id="9daec246b160d180f1e0c5507a327303" category="list-text"><block ref="9daec246b160d180f1e0c5507a327303" category="inline-link-macro-rx"></block></block>
+  <block id="8abb2125aa26e736868235fa4ba5bbe8" category="list-text"><block ref="8abb2125aa26e736868235fa4ba5bbe8" category="inline-link-macro-rx"></block></block>
+  <block id="765dcf9b6dae2c993828a1d8a65089eb" category="list-text"><block ref="765dcf9b6dae2c993828a1d8a65089eb" category="inline-link-macro-rx"></block></block>
+  <block id="fd612d6ba46548e3a5c6f11b170d084a" category="list-text"><block ref="fd612d6ba46548e3a5c6f11b170d084a" category="inline-link-macro-rx"></block></block>
+  <block id="b41cf664744bfc52c98d1c44449857b8" category="list-text"><block ref="b41cf664744bfc52c98d1c44449857b8" category="inline-link-macro-rx"></block></block>
+  <block id="510948a3fff1f5b765d94e1f21c8a39b" category="list-text"><block ref="510948a3fff1f5b765d94e1f21c8a39b" category="inline-link-macro-rx"></block></block>
+  <block id="e2bdb9b46a4d07bfd13167fb01d86d3b" category="list-text"><block ref="e2bdb9b46a4d07bfd13167fb01d86d3b" category="inline-link-macro-rx"></block></block>
+  <block id="cc58d747e56c853cbe5327b3f3dfbd8c" category="list-text"><block ref="cc58d747e56c853cbe5327b3f3dfbd8c" category="inline-link-macro-rx"></block></block>
+  <block id="6cbb7a950aae7d3fea3a63b803045773" category="summary">此頁面提供系統驅動器更換程式的連結。</block>
+  <block id="646d12bfc76d64889bab8ca22510aebc" category="doc">驅動器 FRU 鏈接</block>
+  <block id="c9c0d9eaa33b296dce931eb8f70f7a42" category="paragraph">此頁面提供按平台型號組織的驅動器更換程序的連結。</block>
+  <block id="03426e2a39db69a6a5971701592640bb" category="list-text"><block ref="03426e2a39db69a6a5971701592640bb" category="inline-link-macro-rx"></block></block>
+  <block id="05cc24396c426a98702366d3fb88286d" category="list-text"><block ref="05cc24396c426a98702366d3fb88286d" category="inline-link-macro-rx"></block></block>
+  <block id="d5d2f46d3331e3aec420dee2926db81e" category="list-text"><block ref="d5d2f46d3331e3aec420dee2926db81e" category="inline-link-macro-rx"></block></block>
+  <block id="62af1c4edacd474c914876cb6ef57f5f" category="list-text"><block ref="62af1c4edacd474c914876cb6ef57f5f" category="inline-link-macro-rx"></block></block>
+  <block id="c9f588085419aa8ef881eb664f8984af" category="list-text"><block ref="c9f588085419aa8ef881eb664f8984af" category="inline-link-macro-rx"></block></block>
+  <block id="bae2b25e6639d9bc0cee94b886847643" category="list-text"><block ref="bae2b25e6639d9bc0cee94b886847643" category="inline-link-macro-rx"></block></block>
+  <block id="a166a74003b9e235176db3143ce9054a" category="list-text"><block ref="a166a74003b9e235176db3143ce9054a" category="inline-link-macro-rx"></block></block>
+  <block id="82038dd8a098def272825511e8bfc716" category="list-text"><block ref="82038dd8a098def272825511e8bfc716" category="inline-link-macro-rx"></block></block>
+  <block id="4e963584e4b1ecc609a7e9b832bf384e" category="list-text"><block ref="4e963584e4b1ecc609a7e9b832bf384e" category="inline-link-macro-rx"></block></block>
+  <block id="a8b7540db9ee1488244523a2807bd36f" category="list-text"><block ref="a8b7540db9ee1488244523a2807bd36f" category="inline-link-macro-rx"></block></block>
+  <block id="7c5de351f854e6e181c2125a573032c1" category="list-text"><block ref="7c5de351f854e6e181c2125a573032c1" category="inline-link-macro-rx"></block></block>
+  <block id="ed649bf2bf7a67e850eca2e5fb2ae955" category="list-text"><block ref="ed649bf2bf7a67e850eca2e5fb2ae955" category="inline-link-macro-rx"></block></block>
+  <block id="d7d9546cb2e2dc769337cf9392e5f2d2" category="list-text"><block ref="d7d9546cb2e2dc769337cf9392e5f2d2" category="inline-link-macro-rx"></block></block>
+  <block id="8ec137cbb2bb17904ea22d1b4c83789e" category="list-text"><block ref="8ec137cbb2bb17904ea22d1b4c83789e" category="inline-link-macro-rx"></block></block>
+  <block id="029b27eb92284f7b4f8d495807fe2f82" category="list-text"><block ref="029b27eb92284f7b4f8d495807fe2f82" category="inline-link-macro-rx"></block></block>
+  <block id="8ebb9b3f61dd550ee4899fefbf49d455" category="list-text"><block ref="8ebb9b3f61dd550ee4899fefbf49d455" category="inline-link-macro-rx"></block></block>
+  <block id="bbc1066dfed03240df72609d1a86b8f4" category="list-text"><block ref="bbc1066dfed03240df72609d1a86b8f4" category="inline-link-macro-rx"></block></block>
+  <block id="ce0366be3b17a57b22ea28574def651d" category="list-text"><block ref="ce0366be3b17a57b22ea28574def651d" category="inline-link-macro-rx"></block></block>
+  <block id="320f82d59689e36a8399c964287a15dd" category="list-text"><block ref="320f82d59689e36a8399c964287a15dd" category="inline-link-macro-rx"></block></block>
+  <block id="3acfb7ef5d74a9a2b83867ee2f648b5c" category="inline-link-macro">ASA A70/90</block>
+  <block id="e9d38db0c37f62d317f488be25d67055" category="list-text"><block ref="e9d38db0c37f62d317f488be25d67055" category="inline-link-macro-rx"></block></block>
+  <block id="8c7d76489134b111df5718c86894dc63" category="list-text"><block ref="8c7d76489134b111df5718c86894dc63" category="inline-link-macro-rx"></block></block>
+  <block id="77b4651bf7be7ac319a911e8743b4f18" category="list-text"><block ref="77b4651bf7be7ac319a911e8743b4f18" category="inline-link-macro-rx"></block></block>
+  <block id="1c323854e11f53c06e610715e4d7ba7a" category="list-text"><block ref="1c323854e11f53c06e610715e4d7ba7a" category="inline-link-macro-rx"></block></block>
+  <block id="1e2a6c156774d3f00762ad6e6e423676" category="list-text"><block ref="1e2a6c156774d3f00762ad6e6e423676" category="inline-link-macro-rx"></block></block>
+  <block id="c38b7150a69fcb6b537baca1394a2273" category="list-text"><block ref="c38b7150a69fcb6b537baca1394a2273" category="inline-link-macro-rx"></block></block>
+  <block id="4fee85a8f5cc49df6a90e1ffa678dc5c" category="summary">此頁面提供系統風扇更換程序的連結。</block>
+  <block id="127310d0c6e5fb8f0577b5d4f143b182" category="doc">風扇 FRU 鏈接</block>
+  <block id="d795d08c127f8a9980e6b42168219614" category="paragraph">此頁面提供按平台型號組織的風扇更換程序的連結。</block>
+  <block id="14041fac06f7cc0d4a427ee24f7d9689" category="list-text"><block ref="14041fac06f7cc0d4a427ee24f7d9689" category="inline-link-macro-rx"></block></block>
+  <block id="29947fa815e381a78bc218fc7011e852" category="list-text"><block ref="29947fa815e381a78bc218fc7011e852" category="inline-link-macro-rx"></block></block>
+  <block id="78590ec78f02039e98db92a9fcbd9978" category="list-text"><block ref="78590ec78f02039e98db92a9fcbd9978" category="inline-link-macro-rx"></block></block>
+  <block id="66347e3952c1426728d4e21d73a5bc64" category="list-text"><block ref="66347e3952c1426728d4e21d73a5bc64" category="inline-link-macro-rx"></block></block>
+  <block id="f752d15133aae337b8d260bbb243dde6" category="list-text"><block ref="f752d15133aae337b8d260bbb243dde6" category="inline-link-macro-rx"></block></block>
+  <block id="15b99cef6c44888da03b604c2782e5f8" category="list-text"><block ref="15b99cef6c44888da03b604c2782e5f8" category="inline-link-macro-rx"></block></block>
+  <block id="682ef71ef51bb5a8ea84853023ee1a61" category="list-text"><block ref="682ef71ef51bb5a8ea84853023ee1a61" category="inline-link-macro-rx"></block></block>
+  <block id="477dbb4efe1238727b8b19e1d23eb63f" category="list-text"><block ref="477dbb4efe1238727b8b19e1d23eb63f" category="inline-link-macro-rx"></block></block>
+  <block id="5d84fd98e49518e2e6c1736d4dce33ca" category="list-text"><block ref="5d84fd98e49518e2e6c1736d4dce33ca" category="inline-link-macro-rx"></block></block>
+  <block id="b416b76708e1c896c410504f7d7cac71" category="list-text"><block ref="b416b76708e1c896c410504f7d7cac71" category="inline-link-macro-rx"></block></block>
+  <block id="9871e8f9268c441290fb5f6a0ce7b90f" category="list-text"><block ref="9871e8f9268c441290fb5f6a0ce7b90f" category="inline-link-macro-rx"></block></block>
+  <block id="b4358cdafb89bbf097040e1f9fbeb905" category="list-text"><block ref="b4358cdafb89bbf097040e1f9fbeb905" category="inline-link-macro-rx"></block></block>
+  <block id="13fd19028bf0d41232c20c16dbd36d7b" category="list-text"><block ref="13fd19028bf0d41232c20c16dbd36d7b" category="inline-link-macro-rx"></block></block>
+  <block id="dfafba1df2a23edb73e278cd1e2ef8ea" category="list-text"><block ref="dfafba1df2a23edb73e278cd1e2ef8ea" category="inline-link-macro-rx"></block></block>
+  <block id="bdb829bc8de967ddd9a4428ca5195fbb" category="list-text"><block ref="bdb829bc8de967ddd9a4428ca5195fbb" category="inline-link-macro-rx"></block></block>
+  <block id="402d84ca1618b8249a6196fd8c45eede" category="list-text"><block ref="402d84ca1618b8249a6196fd8c45eede" category="inline-link-macro-rx"></block></block>
+  <block id="3606282161e1eb0677427f529e9ef5e8" category="list-text"><block ref="3606282161e1eb0677427f529e9ef5e8" category="inline-link-macro-rx"></block></block>
+  <block id="2a99464a7d35e6760c435d17488d3b14" category="list-text"><block ref="2a99464a7d35e6760c435d17488d3b14" category="inline-link-macro-rx"></block></block>
+  <block id="55fdc7e27b5d3aa9165d6ab10c90ee2a" category="list-text"><block ref="55fdc7e27b5d3aa9165d6ab10c90ee2a" category="inline-link-macro-rx"></block></block>
+  <block id="62a95ab10d6c0f6a759626b5257fe652" category="list-text"><block ref="62a95ab10d6c0f6a759626b5257fe652" category="inline-link-macro-rx"></block></block>
+  <block id="1763937ce3e96c09949dcc2203bfcbc2" category="list-text"><block ref="1763937ce3e96c09949dcc2203bfcbc2" category="inline-link-macro-rx"></block></block>
+  <block id="f62e07c9d704682508e7abf4fe0ee222" category="list-text"><block ref="f62e07c9d704682508e7abf4fe0ee222" category="inline-link-macro-rx"></block></block>
+  <block id="426f98a866401a1b23be688641e02b04" category="list-text"><block ref="426f98a866401a1b23be688641e02b04" category="inline-link-macro-rx"></block></block>
+  <block id="fb9e20548e2089d831c9b12593b6dfd6" category="list-text"><block ref="fb9e20548e2089d831c9b12593b6dfd6" category="inline-link-macro-rx"></block></block>
+  <block id="dfd4859a585c4bdee81df05750e6f7e7" category="list-text"><block ref="dfd4859a585c4bdee81df05750e6f7e7" category="inline-link-macro-rx"></block></block>
+  <block id="a3de159d97d7988f43c57da6a6d4dea8" category="list-text"><block ref="a3de159d97d7988f43c57da6a6d4dea8" category="inline-link-macro-rx"></block></block>
+  <block id="441b41faa0272f0bf8a3c65d41bd78c9" category="list-text"><block ref="441b41faa0272f0bf8a3c65d41bd78c9" category="inline-link-macro-rx"></block></block>
+  <block id="26efee4065d07a9a40d075c7e96998b5" category="list-text"><block ref="26efee4065d07a9a40d075c7e96998b5" category="inline-link-macro-rx"></block></block>
+  <block id="b4b86b9faa19030337671043b989f0a3" category="list-text"><block ref="b4b86b9faa19030337671043b989f0a3" category="inline-link-macro-rx"></block></block>
+  <block id="850e479149592ec6f05f12170a6aed2b" category="list-text"><block ref="850e479149592ec6f05f12170a6aed2b" category="inline-link-macro-rx"></block></block>
+  <block id="5bf6798c8940ebac5d6e35c356b4977b" category="list-text"><block ref="5bf6798c8940ebac5d6e35c356b4977b" category="inline-link-macro-rx"></block></block>
+  <block id="e60b94cfbba98ff79263f8bff25b6bf8" category="summary">平台現場可更換單元概述以及按 FRU 類型劃分的更換程序連結。</block>
+  <block id="1b30d3af75b8498aa46a116d89324f76" category="doc">平台 FRU 參考</block>
+  <block id="001b1359f2db8bd445f2dfacbd575a75" category="paragraph">對於ONTAP硬體系統，您可以對下列現場可更換單元 (FRU) 組件執行維護程序。</block>
+  <block id="9d888730ee7b198ad28d763688e61cf1" category="cell">FRU 程式</block>
+  <block id="6d82a2a5b859413b148451e426f1f409" category="inline-link-macro">不同平台的啟動介質更換流程</block>
+  <block id="6c0a9357888233185872a8d18b872fe3" category="cell"><block ref="6c0a9357888233185872a8d18b872fe3" category="inline-link-macro-rx"></block></block>
+  <block id="09376918226f5063c11ae74e62de5c8b" category="inline-link-macro">各平台快取模組替換流程</block>
+  <block id="37cdf3695b3857e51397734c28c4038f" category="cell"><block ref="37cdf3695b3857e51397734c28c4038f" category="inline-link-macro-rx"></block></block>
+  <block id="e1c82245f7d4c6723dacf2bba763f963" category="inline-link-macro">各平台底盤更換流程</block>
+  <block id="9073570bb0e774837203fef71ecf07b1" category="cell"><block ref="9073570bb0e774837203fef71ecf07b1" category="inline-link-macro-rx"></block></block>
+  <block id="9fb8b7f7ff808262345139c29591fbfd" category="cell">機箱是容納所有控制器組件（例如控制器/CPU 單元、電源和 I/O）的實體外殼。</block>
+  <block id="0de2242d092fd00f6be712cc10a351b5" category="inline-link-macro">不同平台的控制器更換流程</block>
+  <block id="5aa2cb4ef68e36993d7d221f16bd87d6" category="cell"><block ref="5aa2cb4ef68e36993d7d221f16bd87d6" category="inline-link-macro-rx"></block></block>
+  <block id="c37bec0e6a95b2e297732744603853ea" category="inline-link-macro">DCPM 電源模組更換步驟（按平台）</block>
+  <block id="a0dc6464fa90dab09d0c26f4d872757a" category="cell"><block ref="a0dc6464fa90dab09d0c26f4d872757a" category="inline-link-macro-rx"></block></block>
+  <block id="1dd12ce23185605c475a49a224a49d9c" category="cell">資料中心持久記憶體 (DCPM) 電源模組在意外斷電事件期間為 DCPM 模組提供備用電源。</block>
+  <block id="bd036e35e57b650259178e3075ce391d" category="inline-link-macro">不同平台的 DIMM 更換流程</block>
+  <block id="126731c8d2d88a80297ca8d2554dac96" category="cell"><block ref="126731c8d2d88a80297ca8d2554dac96" category="inline-link-macro-rx"></block></block>
+  <block id="aeb9a4dc3b60e826f234188f4ad3575e" category="inline-link-macro">不同平台的驅動器更換流程</block>
+  <block id="fec76be084246fd6062271001d18c6b2" category="cell"><block ref="fec76be084246fd6062271001d18c6b2" category="inline-link-macro-rx"></block></block>
+  <block id="8603df4d6926002b6f1170e86566384e" category="inline-link-macro">不同平台的風扇更換流程</block>
+  <block id="f1b2b4c26c46a048bd35cdceb9325ca4" category="cell"><block ref="f1b2b4c26c46a048bd35cdceb9325ca4" category="inline-link-macro-rx"></block></block>
+  <block id="e93ac6e8beec2ad9885ab64cf4a808c1" category="cell">風扇提供氣流來冷卻系統組件並維持適當的工作溫度。</block>
+  <block id="a984d7c6f8859627336e331870751c3c" category="inline-link-macro">各平台IO模組更換流程</block>
+  <block id="a5e001110fefbe6f458188b508f07052" category="cell"><block ref="a5e001110fefbe6f458188b508f07052" category="inline-link-macro-rx"></block></block>
+  <block id="58fed263b925f9d39e313af171460d1a" category="cell">I/O模組為控制器提供網路和儲存連接介面。</block>
+  <block id="f281a5a7d143df5328d33a9fa580ea63" category="inline-link-macro">各平台的 LED 模組更換流程</block>
+  <block id="5e618e903e79899699679f2f6bbcd20f" category="cell"><block ref="5e618e903e79899699679f2f6bbcd20f" category="inline-link-macro-rx"></block></block>
+  <block id="860762194502ed1a9210218c7841a247" category="cell">LED 模組提供系統健康和組件狀態的視覺狀態指示器。</block>
+  <block id="e6801fba3c51bcba07c6c813236a638c" category="inline-link-macro">各平台夾層更換流程</block>
+  <block id="c0a3db13a3a05eb4f3b2d292f3d679e7" category="cell"><block ref="c0a3db13a3a05eb4f3b2d292f3d679e7" category="inline-link-macro-rx"></block></block>
+  <block id="91ed5045bf07352365158d842f193224" category="cell">夾層卡為控制器提供額外的 I/O 連接和擴充功能。</block>
+  <block id="9d279f49cb872e6631e2593ff778ee1a" category="inline-link-macro">不同平台的 NVDIMM 更換步驟</block>
+  <block id="8c7773b816d02e1599bbaf6cf00c09a5" category="cell"><block ref="8c7773b816d02e1599bbaf6cf00c09a5" category="inline-link-macro-rx"></block></block>
+  <block id="c7cd9ad7ad29f1254a2b2e42d95aa345" category="cell">當模組發生故障或顯示錯誤時，必須更換 NVDIMM（非揮發性雙列直插式記憶體模組）。</block>
+  <block id="d0d79a9bd7171ac6efb1b033b213db38" category="inline-link-macro">不同平台的NVMEM/ NVRAM電池更換流程</block>
+  <block id="9e6e188c739e8773d65a07708fa7fe91" category="cell"><block ref="9e6e188c739e8773d65a07708fa7fe91" category="inline-link-macro-rx"></block></block>
+  <block id="4d270e3e6619b4a2032e7c1a335b119a" category="inline-link-macro">不同平台的NVRAM模組更換流程</block>
+  <block id="9b290b78517fe3200f04edafd159c0aa" category="cell"><block ref="9b290b78517fe3200f04edafd159c0aa" category="inline-link-macro-rx"></block></block>
+  <block id="394c77de2c782fcabbeb8d9b2abf1c39" category="cell">NVRAM模組為系統元資料和快取寫入資料提供非揮發性儲存。</block>
+  <block id="71e348a7c8b8b4c974a416f7f5eed57f" category="inline-link-macro">PCI 卡和轉接卡更換流程（按平台）</block>
+  <block id="0891ac8e3e15bd02e7eeee4f6e96afcc" category="cell"><block ref="0891ac8e3e15bd02e7eeee4f6e96afcc" category="inline-link-macro-rx"></block></block>
+  <block id="e46170c7e18fcaa48a2a75898487c4bc" category="cell">PCI 卡和轉接卡提供擴充槽，用於附加功能和 I/O 連接。</block>
+  <block id="c579db7be8c8309fc69ff822c4cfd74a" category="inline-link-macro">各平台電源更換流程</block>
+  <block id="dd6ece7d805db10246c7855e5d46181d" category="cell"><block ref="dd6ece7d805db10246c7855e5d46181d" category="inline-link-macro-rx"></block></block>
+  <block id="c6b61f610616d49dabec327c9d5a337f" category="inline-link-macro">各平台 RTC 電池更換流程</block>
+  <block id="7e32e79455dfd9984f68b25426f7ec79" category="cell"><block ref="7e32e79455dfd9984f68b25426f7ec79" category="inline-link-macro-rx"></block></block>
+  <block id="c8d3542c84b172a316f672e23a520a62" category="inline-link-macro">系統管理模組依平台更換流程</block>
+  <block id="42dfb57030ce2513d47c61c9f25ce69c" category="cell"><block ref="42dfb57030ce2513d47c61c9f25ce69c" category="inline-link-macro-rx"></block></block>
+  <block id="f1ec2e231b90edf57a42e251aa1ecd14" category="cell">系統管理模組為系統提供帶外管理功能。</block>
+  <block id="14b176dbb849e6c43b0fe50364043da8" category="summary">此頁面提供系統 IO 模組更換程式的連結。</block>
+  <block id="66060820d58319bb0be9427f51c301c3" category="doc">IO 模組 FRU 鏈接</block>
+  <block id="b445ac2c5594336b7f79b508b5622349" category="paragraph">本頁提供按平台型號組織的 IO 模組更換程式的連結。</block>
+  <block id="e8a513a31ec8d0e21205bb60290c2e7e" category="list-text"><block ref="e8a513a31ec8d0e21205bb60290c2e7e" category="inline-link-macro-rx"></block></block>
+  <block id="4b5da720f0ca9b01862c24d6469e01f1" category="list-text"><block ref="4b5da720f0ca9b01862c24d6469e01f1" category="inline-link-macro-rx"></block></block>
+  <block id="312914394ac81b29e9a6626872f0d29b" category="list-text"><block ref="312914394ac81b29e9a6626872f0d29b" category="inline-link-macro-rx"></block></block>
+  <block id="5a9e9e10f3874f133f0b834d6fb983ba" category="list-text"><block ref="5a9e9e10f3874f133f0b834d6fb983ba" category="inline-link-macro-rx"></block></block>
+  <block id="54ea7bcd391772132db927031d1254c6" category="list-text"><block ref="54ea7bcd391772132db927031d1254c6" category="inline-link-macro-rx"></block></block>
+  <block id="fcc97e15a5fc5c94a570f4445f1361f8" category="list-text"><block ref="fcc97e15a5fc5c94a570f4445f1361f8" category="inline-link-macro-rx"></block></block>
+  <block id="77c5ab317423b98d2d00f3f370d54c10" category="list-text"><block ref="77c5ab317423b98d2d00f3f370d54c10" category="inline-link-macro-rx"></block></block>
+  <block id="14cc453a1e6d13b2752095bbe8470796" category="list-text"><block ref="14cc453a1e6d13b2752095bbe8470796" category="inline-link-macro-rx"></block></block>
+  <block id="2f9ad9cce6bd55f502304fc4f57977be" category="list-text"><block ref="2f9ad9cce6bd55f502304fc4f57977be" category="inline-link-macro-rx"></block></block>
+  <block id="7fcca148164522dae3ddfdcd984b5072" category="list-text"><block ref="7fcca148164522dae3ddfdcd984b5072" category="inline-link-macro-rx"></block></block>
+  <block id="ca1f1df2df90b983eb1db61934b8e50e" category="list-text"><block ref="ca1f1df2df90b983eb1db61934b8e50e" category="inline-link-macro-rx"></block></block>
+  <block id="78f017edcc70db5562a8eef0b727bf4c" category="summary">本頁提供按平台劃分的 LED 模組更換程式的連結。</block>
+  <block id="ac76e4f9eea3b3bd649c4cf1fb3fd8aa" category="doc">LED 模組 FRU 鏈接</block>
+  <block id="5f92d972f1a805407da7ff80a3582b22" category="paragraph">本頁面提供按平台型號組織的 LED 模組更換程序的連結。</block>
+  <block id="0452358b5faea72b8eec5938a2d4c9a7" category="list-text"><block ref="0452358b5faea72b8eec5938a2d4c9a7" category="inline-link-macro-rx"></block></block>
+  <block id="4d3a6d425bc89cead1d2fc9c0cd741c4" category="list-text"><block ref="4d3a6d425bc89cead1d2fc9c0cd741c4" category="inline-link-macro-rx"></block></block>
+  <block id="0179070a5366a4b9fe5223ae3011a399" category="summary">本頁提供按系統劃分的夾層更換程序的連結。</block>
+  <block id="bae171aaa589b792747c4d25c0d95de6" category="doc">夾層 FRU 連結</block>
+  <block id="d6c72a4f943e985c916e92cdb67c7252" category="paragraph">本頁面提供按平台型號組織的夾層更換程序的連結。</block>
+  <block id="971f99fb92ad05e4657664dd7b504631" category="list-text"><block ref="971f99fb92ad05e4657664dd7b504631" category="inline-link-macro-rx"></block></block>
+  <block id="33fc60eacfde020946854107eac83b00" category="list-text"><block ref="33fc60eacfde020946854107eac83b00" category="inline-link-macro-rx"></block></block>
+  <block id="ef4baba7599f05c33527925c27ca8820" category="list-text"><block ref="ef4baba7599f05c33527925c27ca8820" category="inline-link-macro-rx"></block></block>
+  <block id="3a74fb167b28c8a39d96ed6ba8cca8fc" category="list-text"><block ref="3a74fb167b28c8a39d96ed6ba8cca8fc" category="inline-link-macro-rx"></block></block>
+  <block id="ca67004215ddd3f8b8ee5c895a215fd5" category="list-text"><block ref="ca67004215ddd3f8b8ee5c895a215fd5" category="inline-link-macro-rx"></block></block>
+  <block id="de9f84b018ce053af8e38d2c62ef4c2f" category="summary">此頁面提供按系統劃分的 NVDIMM 更換程序的連結。</block>
+  <block id="5019e39c6130815eca473286dc560088" category="doc">NVDIMM FRU 鏈接</block>
+  <block id="7ea1f162a24566f497863cecdf51ac89" category="paragraph">本頁面提供按平台型號組織的 NVDIMM 更換程序的連結。</block>
+  <block id="b54249beaa4c67e764d856e3007b6288" category="list-text"><block ref="b54249beaa4c67e764d856e3007b6288" category="inline-link-macro-rx"></block></block>
+  <block id="25b612d0433839053bed78219bb63a53" category="list-text"><block ref="25b612d0433839053bed78219bb63a53" category="inline-link-macro-rx"></block></block>
+  <block id="662604df812eb6d1aae10d03dfb35c79" category="list-text"><block ref="662604df812eb6d1aae10d03dfb35c79" category="inline-link-macro-rx"></block></block>
+  <block id="5b188a8a5005ade3d016fa02976f2077" category="list-text"><block ref="5b188a8a5005ade3d016fa02976f2077" category="inline-link-macro-rx"></block></block>
+  <block id="cc1ba12a03d42bed74b0814b6c7c2922" category="list-text"><block ref="cc1ba12a03d42bed74b0814b6c7c2922" category="inline-link-macro-rx"></block></block>
+  <block id="97225f3c4e76bcd1cf65cc67c4ef3c12" category="list-text"><block ref="97225f3c4e76bcd1cf65cc67c4ef3c12" category="inline-link-macro-rx"></block></block>
+  <block id="bc82c263d2022c98f3c8117c7df48846" category="list-text"><block ref="bc82c263d2022c98f3c8117c7df48846" category="inline-link-macro-rx"></block></block>
+  <block id="b52502f57710d3cd42c4d3258379f72a" category="list-text"><block ref="b52502f57710d3cd42c4d3258379f72a" category="inline-link-macro-rx"></block></block>
+  <block id="02939deec8acbf9a9621cff0e8d7eb22" category="list-text"><block ref="02939deec8acbf9a9621cff0e8d7eb22" category="inline-link-macro-rx"></block></block>
+  <block id="3a73fdaab6dc577c9f4d230feeca11f8" category="list-text"><block ref="3a73fdaab6dc577c9f4d230feeca11f8" category="inline-link-macro-rx"></block></block>
+  <block id="2ae8c47cb7af6ecd796d9f473253349d" category="summary">本頁面提供系統NVMEM/ NVRAM電池更換程序的連結。</block>
+  <block id="f43beeca4e40456448c7f3f11288f865" category="doc">NVMEM/ NVRAM電池 FRU 鏈接</block>
+  <block id="88d444c81df5b0a9a1663e61fa07d28c" category="paragraph">本頁面提供按平台型號組織的NVMEM/ NVRAM電池更換程序的連結。</block>
+  <block id="e40bc43f3a464ed1298285bf5de9877f" category="list-text"><block ref="e40bc43f3a464ed1298285bf5de9877f" category="inline-link-macro-rx"></block></block>
+  <block id="7ca3b56c4f706eb82db4785d99a179ea" category="list-text"><block ref="7ca3b56c4f706eb82db4785d99a179ea" category="inline-link-macro-rx"></block></block>
+  <block id="b365c1b59a8c1f327d951c99a8859715" category="list-text"><block ref="b365c1b59a8c1f327d951c99a8859715" category="inline-link-macro-rx"></block></block>
+  <block id="7997e39581df9fc93f7ab01808f4e91b" category="list-text"><block ref="7997e39581df9fc93f7ab01808f4e91b" category="inline-link-macro-rx"></block></block>
+  <block id="e6f6f34f383e188a3c2deba4e8e695dd" category="list-text"><block ref="e6f6f34f383e188a3c2deba4e8e695dd" category="inline-link-macro-rx"></block></block>
+  <block id="2853db7cf07e1d2337ea6282afcd6419" category="list-text"><block ref="2853db7cf07e1d2337ea6282afcd6419" category="inline-link-macro-rx"></block></block>
+  <block id="509ce0599100261b5f8b2936e1ad8b2a" category="list-text"><block ref="509ce0599100261b5f8b2936e1ad8b2a" category="inline-link-macro-rx"></block></block>
+  <block id="34956e4955f745398b0fed99a5e4b898" category="list-text"><block ref="34956e4955f745398b0fed99a5e4b898" category="inline-link-macro-rx"></block></block>
+  <block id="3bbe3bb47589a0d7cb1eb8fd486a9bfe" category="list-text"><block ref="3bbe3bb47589a0d7cb1eb8fd486a9bfe" category="inline-link-macro-rx"></block></block>
+  <block id="f31e93946f92f608a4ba5319d6355412" category="list-text"><block ref="f31e93946f92f608a4ba5319d6355412" category="inline-link-macro-rx"></block></block>
+  <block id="6f268bb5eec9a4663b23b0583588469b" category="list-text"><block ref="6f268bb5eec9a4663b23b0583588469b" category="inline-link-macro-rx"></block></block>
+  <block id="782c381ec4902fac54b90d76696d1f74" category="list-text"><block ref="782c381ec4902fac54b90d76696d1f74" category="inline-link-macro-rx"></block></block>
+  <block id="7b0df616a2834cb06bbb148d1123f1a5" category="list-text"><block ref="7b0df616a2834cb06bbb148d1123f1a5" category="inline-link-macro-rx"></block></block>
+  <block id="552cc09cee25bc3e66125cf92358acb4" category="list-text"><block ref="552cc09cee25bc3e66125cf92358acb4" category="inline-link-macro-rx"></block></block>
+  <block id="a57edceaa26263885c56baee2ea4df27" category="list-text"><block ref="a57edceaa26263885c56baee2ea4df27" category="inline-link-macro-rx"></block></block>
+  <block id="23609f016b719da0e90c546994c029d1" category="list-text"><block ref="23609f016b719da0e90c546994c029d1" category="inline-link-macro-rx"></block></block>
+  <block id="525279bf3dcd60c62102d71c44b3a82e" category="list-text"><block ref="525279bf3dcd60c62102d71c44b3a82e" category="inline-link-macro-rx"></block></block>
+  <block id="bf74bb3b0c64a31bbc59bbcfa08e153a" category="list-text"><block ref="bf74bb3b0c64a31bbc59bbcfa08e153a" category="inline-link-macro-rx"></block></block>
+  <block id="3d993c26b914b257e8a170fc6fef529f" category="list-text"><block ref="3d993c26b914b257e8a170fc6fef529f" category="inline-link-macro-rx"></block></block>
+  <block id="fb30b070aac34527b13bf9e0198e2811" category="list-text"><block ref="fb30b070aac34527b13bf9e0198e2811" category="inline-link-macro-rx"></block></block>
+  <block id="c5404128320ee8e8274f24ec029d14b4" category="list-text"><block ref="c5404128320ee8e8274f24ec029d14b4" category="inline-link-macro-rx"></block></block>
+  <block id="ef470bf8650fe93295bb48081820bb68" category="list-text"><block ref="ef470bf8650fe93295bb48081820bb68" category="inline-link-macro-rx"></block></block>
+  <block id="37f2aad327be9729125f65210ef69719" category="list-text"><block ref="37f2aad327be9729125f65210ef69719" category="inline-link-macro-rx"></block></block>
+  <block id="6518bbc831ac5a46cb75ab02d99c87e2" category="list-text"><block ref="6518bbc831ac5a46cb75ab02d99c87e2" category="inline-link-macro-rx"></block></block>
+  <block id="120ea7f7e8e9032742fe6f87434986c8" category="list-text"><block ref="120ea7f7e8e9032742fe6f87434986c8" category="inline-link-macro-rx"></block></block>
+  <block id="1701942621e546cde1657ff6a3e45451" category="list-text"><block ref="1701942621e546cde1657ff6a3e45451" category="inline-link-macro-rx"></block></block>
+  <block id="44ef52173e28028a2a90f9cfeb92b6f3" category="list-text"><block ref="44ef52173e28028a2a90f9cfeb92b6f3" category="inline-link-macro-rx"></block></block>
+  <block id="6b39ec409f59ba2cb04d247a2a1d1b61" category="list-text"><block ref="6b39ec409f59ba2cb04d247a2a1d1b61" category="inline-link-macro-rx"></block></block>
+  <block id="fb8340a9e57b46fce3c23e65a816f81e" category="list-text"><block ref="fb8340a9e57b46fce3c23e65a816f81e" category="inline-link-macro-rx"></block></block>
+  <block id="f4ca7186a9644d78040bc17548f91a72" category="list-text"><block ref="f4ca7186a9644d78040bc17548f91a72" category="inline-link-macro-rx"></block></block>
+  <block id="f1f8270281bfc332a9f2d1319937617e" category="list-text"><block ref="f1f8270281bfc332a9f2d1319937617e" category="inline-link-macro-rx"></block></block>
+  <block id="2a2623ef98dfd9411c13e6888ce5e816" category="list-text"><block ref="2a2623ef98dfd9411c13e6888ce5e816" category="inline-link-macro-rx"></block></block>
+  <block id="0ba57cf9d7bee7be542d41a6c29f3d5d" category="list-text"><block ref="0ba57cf9d7bee7be542d41a6c29f3d5d" category="inline-link-macro-rx"></block></block>
+  <block id="48913bc9a2fb38e50484b069d3acad6b" category="list-text"><block ref="48913bc9a2fb38e50484b069d3acad6b" category="inline-link-macro-rx"></block></block>
+  <block id="c2d7f5485096f69590154a4692d8cfb6" category="list-text"><block ref="c2d7f5485096f69590154a4692d8cfb6" category="inline-link-macro-rx"></block></block>
+  <block id="b914ce47b434cd39da3a625bfd5d1f28" category="list-text"><block ref="b914ce47b434cd39da3a625bfd5d1f28" category="inline-link-macro-rx"></block></block>
+  <block id="41fd477fe8f6e98294bd247c0c472551" category="list-text"><block ref="41fd477fe8f6e98294bd247c0c472551" category="inline-link-macro-rx"></block></block>
+  <block id="0e2df4f84f5ee4c2faaa96eec4c0f2bf" category="list-text"><block ref="0e2df4f84f5ee4c2faaa96eec4c0f2bf" category="inline-link-macro-rx"></block></block>
+  <block id="03d245be36a550fd69eb207171c6df42" category="list-text"><block ref="03d245be36a550fd69eb207171c6df42" category="inline-link-macro-rx"></block></block>
+  <block id="1392a7999a576648902e0b3cf14ae06e" category="list-text"><block ref="1392a7999a576648902e0b3cf14ae06e" category="inline-link-macro-rx"></block></block>
+  <block id="c8a5418414af24ce4b65aa9920eb06f7" category="list-text"><block ref="c8a5418414af24ce4b65aa9920eb06f7" category="inline-link-macro-rx"></block></block>
+  <block id="977f11287b3c03e234381a5bb2e1b8c2" category="list-text"><block ref="977f11287b3c03e234381a5bb2e1b8c2" category="inline-link-macro-rx"></block></block>
+  <block id="a5929aec05e5e731f28bdb6446427477" category="summary">本頁提供按平台劃分的NVRAM模組更換程式的連結。</block>
+  <block id="0035013836c4e26c8d464f3ec1f217a7" category="doc">NVRAM模組 FRU 鏈接</block>
+  <block id="a214e11f20f7027daf2f75dd3ecc904b" category="paragraph">此頁面提供按系統組織的NVRAM模組更換程式的連結。</block>
+  <block id="85fa6966bdae4c161b912245f0fff300" category="list-text"><block ref="85fa6966bdae4c161b912245f0fff300" category="inline-link-macro-rx"></block></block>
+  <block id="1483a9233ad5033bfe76d6bbf101f010" category="list-text"><block ref="1483a9233ad5033bfe76d6bbf101f010" category="inline-link-macro-rx"></block></block>
+  <block id="ccc1f7085635524a14b5488911d2a22a" category="list-text"><block ref="ccc1f7085635524a14b5488911d2a22a" category="inline-link-macro-rx"></block></block>
+  <block id="e61246c45506b556e85992c1258c4660" category="list-text"><block ref="e61246c45506b556e85992c1258c4660" category="inline-link-macro-rx"></block></block>
+  <block id="fc1e370f42554a8bb58d19b2fe50e267" category="list-text"><block ref="fc1e370f42554a8bb58d19b2fe50e267" category="inline-link-macro-rx"></block></block>
+  <block id="ed534130cadf2ba3dddc0c1eb6a18c07" category="list-text"><block ref="ed534130cadf2ba3dddc0c1eb6a18c07" category="inline-link-macro-rx"></block></block>
+  <block id="89c323d4c0001226c0e079e2f38ce3f6" category="list-text"><block ref="89c323d4c0001226c0e079e2f38ce3f6" category="inline-link-macro-rx"></block></block>
+  <block id="63a7880a5b49c5589d13008b7f0835f4" category="list-text"><block ref="63a7880a5b49c5589d13008b7f0835f4" category="inline-link-macro-rx"></block></block>
+  <block id="cc05bc97289f74ad880f659719255071" category="list-text"><block ref="cc05bc97289f74ad880f659719255071" category="inline-link-macro-rx"></block></block>
+  <block id="c99e7ca70eca292578066d40d72fdfd0" category="list-text"><block ref="c99e7ca70eca292578066d40d72fdfd0" category="inline-link-macro-rx"></block></block>
+  <block id="118dc9f7fb786149dd5f53bd6cb2624d" category="list-text"><block ref="118dc9f7fb786149dd5f53bd6cb2624d" category="inline-link-macro-rx"></block></block>
+  <block id="4a349c6eb82e22438a39ac41f1a67cb0" category="list-text"><block ref="4a349c6eb82e22438a39ac41f1a67cb0" category="inline-link-macro-rx"></block></block>
+  <block id="0e6ed277344ec6fa3ec2236770c26b76" category="summary">本頁提供按系統劃分的 PCI 卡和轉接卡更換程序的連結。</block>
+  <block id="63056aa8ee1f72f29c77da581cdf498a" category="doc">PCI 卡和立管 FRU 鏈接</block>
+  <block id="586fb9d7de834736272e3f9ca640865a" category="paragraph">本頁提供按平台型號組織的 PCI 卡和轉接卡更換程序的連結。</block>
+  <block id="eb38ace49b60fde3ae70cd9363d910f0" category="list-text"><block ref="eb38ace49b60fde3ae70cd9363d910f0" category="inline-link-macro-rx"></block></block>
+  <block id="9c872b3a57c29a4d9f1c60982b8ec4e7" category="list-text"><block ref="9c872b3a57c29a4d9f1c60982b8ec4e7" category="inline-link-macro-rx"></block></block>
+  <block id="52d7e5a0e2e48dc43eb2536deae669c1" category="list-text"><block ref="52d7e5a0e2e48dc43eb2536deae669c1" category="inline-link-macro-rx"></block></block>
+  <block id="2625c228665a9bd9dce33fd3e027ed2b" category="list-text"><block ref="2625c228665a9bd9dce33fd3e027ed2b" category="inline-link-macro-rx"></block></block>
+  <block id="170c8dc7fb28ee0d59b4eb870125b048" category="list-text"><block ref="170c8dc7fb28ee0d59b4eb870125b048" category="inline-link-macro-rx"></block></block>
+  <block id="b565035e9e5d3105ce30f44b901cb303" category="list-text"><block ref="b565035e9e5d3105ce30f44b901cb303" category="inline-link-macro-rx"></block></block>
+  <block id="1f5717bbf5ff1289b50030e80bd80ef3" category="list-text"><block ref="1f5717bbf5ff1289b50030e80bd80ef3" category="inline-link-macro-rx"></block></block>
+  <block id="d4e65f625be122238070972415e92b14" category="list-text"><block ref="d4e65f625be122238070972415e92b14" category="inline-link-macro-rx"></block></block>
+  <block id="de5fad876a7420d12ba042bc5aeb9df7" category="list-text"><block ref="de5fad876a7420d12ba042bc5aeb9df7" category="inline-link-macro-rx"></block></block>
+  <block id="6f9a33eba632d1a4e75eddd83736cd19" category="list-text"><block ref="6f9a33eba632d1a4e75eddd83736cd19" category="inline-link-macro-rx"></block></block>
+  <block id="02283b56409a1d99d4b79dec313b6fde" category="list-text"><block ref="02283b56409a1d99d4b79dec313b6fde" category="inline-link-macro-rx"></block></block>
+  <block id="aa0a247ecc0a47ca4a001ee3fd6db5fb" category="list-text"><block ref="aa0a247ecc0a47ca4a001ee3fd6db5fb" category="inline-link-macro-rx"></block></block>
+  <block id="6e0ca41a6b0eac020cf31adcb01f05f7" category="list-text"><block ref="6e0ca41a6b0eac020cf31adcb01f05f7" category="inline-link-macro-rx"></block></block>
+  <block id="423f088d6e520de42be8252a00adceb5" category="list-text"><block ref="423f088d6e520de42be8252a00adceb5" category="inline-link-macro-rx"></block></block>
+  <block id="8a3ac150bc9c51942d30b227104c3667" category="list-text"><block ref="8a3ac150bc9c51942d30b227104c3667" category="inline-link-macro-rx"></block></block>
+  <block id="a8e847de31b021b76197859160c5afb5" category="list-text"><block ref="a8e847de31b021b76197859160c5afb5" category="inline-link-macro-rx"></block></block>
+  <block id="6237285daf581f4704ed888feb64c871" category="summary">此頁面提供按系統劃分的電源更換程序的連結。</block>
+  <block id="342014bf179cff5cbd077fe556e13fd2" category="doc">電源 FRU 鏈接</block>
+  <block id="a19ec9b6b286d759565a768c0db3a93e" category="paragraph">本頁提供按平台型號組織的電源更換程序的連結。</block>
+  <block id="817a86cd54c6a62958d3f3b6cd8ca31b" category="list-text"><block ref="817a86cd54c6a62958d3f3b6cd8ca31b" category="inline-link-macro-rx"></block></block>
+  <block id="123d83bdfeb0d00aebffdbeaad3eb0d1" category="list-text"><block ref="123d83bdfeb0d00aebffdbeaad3eb0d1" category="inline-link-macro-rx"></block></block>
+  <block id="cecc14a81661fbe84346797b26f72883" category="list-text"><block ref="cecc14a81661fbe84346797b26f72883" category="inline-link-macro-rx"></block></block>
+  <block id="e09d8a83fa46e311dedcb1137f76729e" category="list-text"><block ref="e09d8a83fa46e311dedcb1137f76729e" category="inline-link-macro-rx"></block></block>
+  <block id="708d1a6c228ae474530f11aa69725b09" category="list-text"><block ref="708d1a6c228ae474530f11aa69725b09" category="inline-link-macro-rx"></block></block>
+  <block id="9980823314fbfed617147ce6b86965e0" category="list-text"><block ref="9980823314fbfed617147ce6b86965e0" category="inline-link-macro-rx"></block></block>
+  <block id="315a7171dc69677a729fb5f11cfbb7e1" category="list-text"><block ref="315a7171dc69677a729fb5f11cfbb7e1" category="inline-link-macro-rx"></block></block>
+  <block id="bae21d8dc51870be31864bbfc37da8ac" category="list-text"><block ref="bae21d8dc51870be31864bbfc37da8ac" category="inline-link-macro-rx"></block></block>
+  <block id="9540e9770003ec251d918b6f313a78d9" category="list-text"><block ref="9540e9770003ec251d918b6f313a78d9" category="inline-link-macro-rx"></block></block>
+  <block id="cf400ecbe6ebecf83a1f37505393ba1d" category="list-text"><block ref="cf400ecbe6ebecf83a1f37505393ba1d" category="inline-link-macro-rx"></block></block>
+  <block id="3f1cb97bcd73b862bfd6e48d90dde98c" category="list-text"><block ref="3f1cb97bcd73b862bfd6e48d90dde98c" category="inline-link-macro-rx"></block></block>
+  <block id="39f304c9596920d6332239d16348c008" category="list-text"><block ref="39f304c9596920d6332239d16348c008" category="inline-link-macro-rx"></block></block>
+  <block id="48f2ee4a81279aa5e4c59e1cb82faa86" category="list-text"><block ref="48f2ee4a81279aa5e4c59e1cb82faa86" category="inline-link-macro-rx"></block></block>
+  <block id="331e7e624c66e2096e2ad5a5a67f4e1f" category="list-text"><block ref="331e7e624c66e2096e2ad5a5a67f4e1f" category="inline-link-macro-rx"></block></block>
+  <block id="ad6988761b3a91a563d8203edb9bb191" category="list-text"><block ref="ad6988761b3a91a563d8203edb9bb191" category="inline-link-macro-rx"></block></block>
+  <block id="51186995f343215d67bb27d9899a04f4" category="list-text"><block ref="51186995f343215d67bb27d9899a04f4" category="inline-link-macro-rx"></block></block>
+  <block id="9c21bc0d329a96b317c5f231da4ea00d" category="list-text"><block ref="9c21bc0d329a96b317c5f231da4ea00d" category="inline-link-macro-rx"></block></block>
+  <block id="65a29d971d29a2de214d24008595c8ac" category="list-text"><block ref="65a29d971d29a2de214d24008595c8ac" category="inline-link-macro-rx"></block></block>
+  <block id="1d9f2e6d58e1dce3de72e3aca22ce826" category="list-text"><block ref="1d9f2e6d58e1dce3de72e3aca22ce826" category="inline-link-macro-rx"></block></block>
+  <block id="58dfa24f6eebdf4e76f3580b28f264bd" category="list-text"><block ref="58dfa24f6eebdf4e76f3580b28f264bd" category="inline-link-macro-rx"></block></block>
+  <block id="c218b91aa26034b1c48376f7baa534f0" category="list-text"><block ref="c218b91aa26034b1c48376f7baa534f0" category="inline-link-macro-rx"></block></block>
+  <block id="63296de2821d32d8c0588d047c548e11" category="list-text"><block ref="63296de2821d32d8c0588d047c548e11" category="inline-link-macro-rx"></block></block>
+  <block id="79d8eef5bdee6ccdb32cb5112c815ce1" category="list-text"><block ref="79d8eef5bdee6ccdb32cb5112c815ce1" category="inline-link-macro-rx"></block></block>
+  <block id="3d41759cb6d6162f07e07586da889d85" category="list-text"><block ref="3d41759cb6d6162f07e07586da889d85" category="inline-link-macro-rx"></block></block>
+  <block id="d22f38511963654f83a0b1f9aa255123" category="list-text"><block ref="d22f38511963654f83a0b1f9aa255123" category="inline-link-macro-rx"></block></block>
+  <block id="aedead7f61fa02cd42af16ba0a25723a" category="list-text"><block ref="aedead7f61fa02cd42af16ba0a25723a" category="inline-link-macro-rx"></block></block>
+  <block id="d1aae7b4d3d3dfa60040c3e5097269fa" category="list-text"><block ref="d1aae7b4d3d3dfa60040c3e5097269fa" category="inline-link-macro-rx"></block></block>
+  <block id="779c2c21e0aa3dca1be1caf2fffd684d" category="list-text"><block ref="779c2c21e0aa3dca1be1caf2fffd684d" category="inline-link-macro-rx"></block></block>
+  <block id="59170a6e7c5f03fc21a03caa7167f02e" category="list-text"><block ref="59170a6e7c5f03fc21a03caa7167f02e" category="inline-link-macro-rx"></block></block>
+  <block id="fb9f754a04ed578c5c281d23c6e377d7" category="list-text"><block ref="fb9f754a04ed578c5c281d23c6e377d7" category="inline-link-macro-rx"></block></block>
+  <block id="00f99be901a4b108b42abbf7b08d1eb5" category="list-text"><block ref="00f99be901a4b108b42abbf7b08d1eb5" category="inline-link-macro-rx"></block></block>
+  <block id="d8e8ac6afb2eb807752701047c226ea4" category="list-text"><block ref="d8e8ac6afb2eb807752701047c226ea4" category="inline-link-macro-rx"></block></block>
+  <block id="3dba984744f6fded0967ff290b7f4f81" category="list-text"><block ref="3dba984744f6fded0967ff290b7f4f81" category="inline-link-macro-rx"></block></block>
+  <block id="0888a2333f6d12c6fa6dc8b575fc366a" category="list-text"><block ref="0888a2333f6d12c6fa6dc8b575fc366a" category="inline-link-macro-rx"></block></block>
+  <block id="9bb11503e555795b0a06ad05b1e48571" category="list-text"><block ref="9bb11503e555795b0a06ad05b1e48571" category="inline-link-macro-rx"></block></block>
+  <block id="9d24ac68cae5208a791f89521599796e" category="list-text"><block ref="9d24ac68cae5208a791f89521599796e" category="inline-link-macro-rx"></block></block>
+  <block id="7ef552ca2ba2dc8eaa401b4e73aff651" category="list-text"><block ref="7ef552ca2ba2dc8eaa401b4e73aff651" category="inline-link-macro-rx"></block></block>
+  <block id="df6a9f910732dce2d870273e585bb129" category="list-text"><block ref="df6a9f910732dce2d870273e585bb129" category="inline-link-macro-rx"></block></block>
+  <block id="528623c852e13e610ab3c1b52e07f87a" category="list-text"><block ref="528623c852e13e610ab3c1b52e07f87a" category="inline-link-macro-rx"></block></block>
+  <block id="763596bf917254538db2cc9278a23aa4" category="summary">本頁提供系統 RTC 電池更換程序的連結。</block>
+  <block id="62bea59ea294408f15cf787834a52ad9" category="doc">RTC 電池 FRU 鏈接</block>
+  <block id="7a572238b24a38068c8d47986854573f" category="paragraph">本頁面提供平台型號組織的 RTC 電池更換程序的連結。</block>
+  <block id="f85e22141f11e78d4fe4cd91bce6749d" category="list-text"><block ref="f85e22141f11e78d4fe4cd91bce6749d" category="inline-link-macro-rx"></block></block>
+  <block id="5084cef22a2f87e032524c1f8f952d50" category="list-text"><block ref="5084cef22a2f87e032524c1f8f952d50" category="inline-link-macro-rx"></block></block>
+  <block id="1d3f88c6bd414a82d3b9e82c217a489b" category="list-text"><block ref="1d3f88c6bd414a82d3b9e82c217a489b" category="inline-link-macro-rx"></block></block>
+  <block id="4ccd5824bf06dbda8a0874e5e24abd55" category="list-text"><block ref="4ccd5824bf06dbda8a0874e5e24abd55" category="inline-link-macro-rx"></block></block>
+  <block id="a893b10adad3b8ec821780932982222c" category="list-text"><block ref="a893b10adad3b8ec821780932982222c" category="inline-link-macro-rx"></block></block>
+  <block id="e929d0b6817f160d0009f935ddf0f57c" category="list-text"><block ref="e929d0b6817f160d0009f935ddf0f57c" category="inline-link-macro-rx"></block></block>
+  <block id="1223d8dbd7657015c0c3ee7abe65cc86" category="list-text"><block ref="1223d8dbd7657015c0c3ee7abe65cc86" category="inline-link-macro-rx"></block></block>
+  <block id="cdc7264b2a9d21d4498af0a8ccf761f5" category="list-text"><block ref="cdc7264b2a9d21d4498af0a8ccf761f5" category="inline-link-macro-rx"></block></block>
+  <block id="59ee615231d14053d3304ae4da52a74c" category="list-text"><block ref="59ee615231d14053d3304ae4da52a74c" category="inline-link-macro-rx"></block></block>
+  <block id="13d9ee974f2e8fd44e52aa7f1e52b967" category="list-text"><block ref="13d9ee974f2e8fd44e52aa7f1e52b967" category="inline-link-macro-rx"></block></block>
+  <block id="62837525a371d7712c6a2e72664e99a4" category="list-text"><block ref="62837525a371d7712c6a2e72664e99a4" category="inline-link-macro-rx"></block></block>
+  <block id="df78fed7374d288e1fd2ee53f3f96eca" category="list-text"><block ref="df78fed7374d288e1fd2ee53f3f96eca" category="inline-link-macro-rx"></block></block>
+  <block id="443254fcdfbb8a285da67f1225f1e123" category="list-text"><block ref="443254fcdfbb8a285da67f1225f1e123" category="inline-link-macro-rx"></block></block>
+  <block id="681db68c654220a3ea871b10e5bbd1e6" category="list-text"><block ref="681db68c654220a3ea871b10e5bbd1e6" category="inline-link-macro-rx"></block></block>
+  <block id="4359dc3c2b6ecc30ded949596a4b8000" category="list-text"><block ref="4359dc3c2b6ecc30ded949596a4b8000" category="inline-link-macro-rx"></block></block>
+  <block id="497d785d1dab4f00ae120a53cd06a74c" category="list-text"><block ref="497d785d1dab4f00ae120a53cd06a74c" category="inline-link-macro-rx"></block></block>
+  <block id="f2dec0723adbe9d05635091d0cd1bdee" category="list-text"><block ref="f2dec0723adbe9d05635091d0cd1bdee" category="inline-link-macro-rx"></block></block>
+  <block id="69623a3f1a2ccb6ccc7a2de0bcd6b197" category="list-text"><block ref="69623a3f1a2ccb6ccc7a2de0bcd6b197" category="inline-link-macro-rx"></block></block>
+  <block id="f2ca6ee6ab3db30efc88881c75487e64" category="list-text"><block ref="f2ca6ee6ab3db30efc88881c75487e64" category="inline-link-macro-rx"></block></block>
+  <block id="99712123453590603a14d4802834a7c0" category="list-text"><block ref="99712123453590603a14d4802834a7c0" category="inline-link-macro-rx"></block></block>
+  <block id="7fe7fa9abe741112d3f07f2f5609f52d" category="list-text"><block ref="7fe7fa9abe741112d3f07f2f5609f52d" category="inline-link-macro-rx"></block></block>
+  <block id="baf255819384e45558b29c2201e4657b" category="list-text"><block ref="baf255819384e45558b29c2201e4657b" category="inline-link-macro-rx"></block></block>
+  <block id="ed02ae54ee9914206470ca863a69f2e6" category="list-text"><block ref="ed02ae54ee9914206470ca863a69f2e6" category="inline-link-macro-rx"></block></block>
+  <block id="060923e780ec5badd881b60d6b3f3053" category="list-text"><block ref="060923e780ec5badd881b60d6b3f3053" category="inline-link-macro-rx"></block></block>
+  <block id="bd7ceac9e9d27f4fe6b0fddd89f3ab46" category="list-text"><block ref="bd7ceac9e9d27f4fe6b0fddd89f3ab46" category="inline-link-macro-rx"></block></block>
+  <block id="b77b3cdea968c8f385225181010d6ea1" category="list-text"><block ref="b77b3cdea968c8f385225181010d6ea1" category="inline-link-macro-rx"></block></block>
+  <block id="8d00459770d1aadd0ebd03dcfa1f5081" category="list-text"><block ref="8d00459770d1aadd0ebd03dcfa1f5081" category="inline-link-macro-rx"></block></block>
+  <block id="25337aee85cf30f71bab08ede7c542f1" category="list-text"><block ref="25337aee85cf30f71bab08ede7c542f1" category="inline-link-macro-rx"></block></block>
+  <block id="777db8dc946c1ce077b57824956ab9fd" category="list-text"><block ref="777db8dc946c1ce077b57824956ab9fd" category="inline-link-macro-rx"></block></block>
+  <block id="53bbe66077ca92a6bb9551fefbc54bf6" category="list-text"><block ref="53bbe66077ca92a6bb9551fefbc54bf6" category="inline-link-macro-rx"></block></block>
+  <block id="569be5d889e030126ae09a421d57a957" category="list-text"><block ref="569be5d889e030126ae09a421d57a957" category="inline-link-macro-rx"></block></block>
+  <block id="246d69bda4e58baf862475c7f8ad5fc4" category="list-text"><block ref="246d69bda4e58baf862475c7f8ad5fc4" category="inline-link-macro-rx"></block></block>
+  <block id="2b2d25cb1849b84ae46389306704e027" category="list-text"><block ref="2b2d25cb1849b84ae46389306704e027" category="inline-link-macro-rx"></block></block>
+  <block id="eed602c5e46ac3a2b84ae1049429f649" category="list-text"><block ref="eed602c5e46ac3a2b84ae1049429f649" category="inline-link-macro-rx"></block></block>
+  <block id="40700c83162b31a751ac2bf160bd8d57" category="list-text"><block ref="40700c83162b31a751ac2bf160bd8d57" category="inline-link-macro-rx"></block></block>
+  <block id="e0eb6c8d7790139f3acce8437ec1d06b" category="list-text"><block ref="e0eb6c8d7790139f3acce8437ec1d06b" category="inline-link-macro-rx"></block></block>
+  <block id="e4fecfdbfeb9b1312e1ca0cc789bbc13" category="list-text"><block ref="e4fecfdbfeb9b1312e1ca0cc789bbc13" category="inline-link-macro-rx"></block></block>
+  <block id="ff4fd8c3b8a651ff0e5a0ff0289faf02" category="list-text"><block ref="ff4fd8c3b8a651ff0e5a0ff0289faf02" category="inline-link-macro-rx"></block></block>
+  <block id="6bdd015029f86ab0068e75ce125561fa" category="list-text"><block ref="6bdd015029f86ab0068e75ce125561fa" category="inline-link-macro-rx"></block></block>
+  <block id="c18b79769b4cc5f6a95502814d88e7ad" category="list-text"><block ref="c18b79769b4cc5f6a95502814d88e7ad" category="inline-link-macro-rx"></block></block>
+  <block id="011e257f29736721c012e9303f5c5890" category="summary">本頁提供按平台劃分的系統管理模組更換流程的連結。</block>
+  <block id="772cdac688ba6697d8faa91760631153" category="doc">系統管理模組 FRU 鏈接</block>
+  <block id="6936d05e612baf27e27e1a58722672d6" category="paragraph">本頁提供按平台型號組織的系統管理模組更換程式的連結。</block>
+  <block id="96ff455f16ebc9bc397432b90883ed17" category="list-text"><block ref="96ff455f16ebc9bc397432b90883ed17" category="inline-link-macro-rx"></block></block>
+  <block id="93a9608c986f598d2acc111f00af1af4" category="list-text"><block ref="93a9608c986f598d2acc111f00af1af4" category="inline-link-macro-rx"></block></block>
+  <block id="4e1106967d0ac69c6d5e49c5483acdc0" category="list-text"><block ref="4e1106967d0ac69c6d5e49c5483acdc0" category="inline-link-macro-rx"></block></block>
+  <block id="cce44da42a05b0bb5071e81801a59968" category="list-text"><block ref="cce44da42a05b0bb5071e81801a59968" category="inline-link-macro-rx"></block></block>
+  <block id="3a1e258bd33cf18f9a13d2ed0006662c" category="list-text"><block ref="3a1e258bd33cf18f9a13d2ed0006662c" category="inline-link-macro-rx"></block></block>
+  <block id="9d19896da02fb113e9f5b0bc8647e153" category="list-text"><block ref="9d19896da02fb113e9f5b0bc8647e153" category="inline-link-macro-rx"></block></block>
+  <block id="5ef79279dd7f732336b5156398a8b391" category="section-title">2025年9月</block>
+  <block id="3e7278a35880ab6bc45afac28b6eccb7" category="section-title">平台規格</block>
+  <block id="da160308e3b4b4a80bf1b72b5bdbedb8" category="inline-link-macro">Hardware Universe</block>
+  <block id="8fe57efe9d90b7d0692240be14ac2258" category="paragraph">ONTAP硬體系統文件現在包括以下規格：<block ref="e9a08380ac48c4cddc2ba1523ab880f9" category="inline-link-macro-rx"></block> 。例如，<block ref="acdc34759059c788852603bbd0013ce4" category="inline-link-macro-rx"></block> 。</block>
+  <block id="227759de70d1791c6e7b9e65f787a890" category="section-title">平台 FRU 程式參考</block>
+  <block id="92541f43e309e72a868f5c8fe19abf43" category="paragraph">ONTAP硬體系統文件現在包含按 FRU 類型組織的 FRU 程式連結。</block>
+  <block id="8248d0fab8f49cc23c3d823f4ed5554c" category="paragraph"><block ref="8248d0fab8f49cc23c3d823f4ed5554c" category="inline-link-macro-rx"></block></block>
+  <block id="7d48629b60025c47699efee6d34437ad" category="sidebar">查看ASA r2 系統的關鍵硬體規格。選擇下面的平台來查看詳細規格。</block>
+  <block id="4c4867e2e7e5c8c985e0ad9d2510d42e" category="sidebar">ASA r2 系統的主要規格</block>
+  <block id="8764ee35612e8a26e67f101b1f89e38f" category="sidebar">了解ASA r2 A1K、A70、A90、A20、A30 和 A50 系統的主要規格。</block>
+  <block id="f0f6178ab166825eb655fbb94d91563e" category="sidebar">ASA r2 A1K</block>
+  <block id="a5429a9b8adc7f2cce6d6e056f373331" category="sidebar">主要規格</block>
+  <block id="9ff8f6946ffe7a040d554d61caf4d799" category="sidebar">ASA r2 A70 和ASA r2 A90</block>
+  <block id="006cb6a96cb8b049c02e10f4c2b357f1" category="sidebar">主要規格（A70）</block>
+  <block id="96ccdb7a6e7761fb07c35580e25f4f30" category="sidebar">主要規格（A90）</block>
+  <block id="ba65d7a7d2a21d0bb6a05536182bc49f" category="sidebar">ASA r2 A20、A30 和 A50</block>
+  <block id="12ae4523ca4522ef92d22fc4c623b42a" category="sidebar">主要規格（A20）</block>
+  <block id="0c8efcfbb2ad9d5d604f1ceb740fd9ca" category="sidebar">主要規格（A30）</block>
+  <block id="de474386c031937693080c619ab5712c" category="sidebar">主要規格（A50）</block>
+  <block id="8747aff6c17030cc70e08b16227df251" category="sidebar">DCPM電源模組</block>
+  <block id="d9c15772fbdb3650f12d1850a9cbf135" category="sidebar">LED 模組</block>
+  <block id="8387d7ad8d7f0093bd55d8f421665e8f" category="sidebar">夾層</block>
+  <block id="2c6bbba28523a59005c866b97ddd5c36" category="sidebar">NVMEM/ NVRAM電池</block>
+  <block id="bbcb0b44c56ad8a3dc3e0d0579d6d469" category="sidebar">PCI 卡和轉接卡</block>
+  <block id="9760a61d92a4096e0b6a7ba22f14f9bd" category="sidebar">ASA r2 A90</block>
+  <block id="397e2fb4bd585c8ad51bc4a676c86992" category="sidebar">ASA r2 A70</block>
+  <block id="7bb6abeb1f8bdb93952dfcd2a8791165" category="sidebar">ASA r2 A20</block>
+  <block id="e87fd97ec258c971e7cba43ed3446fb0" category="sidebar">ASA r2 A30</block>
+  <block id="cf17f0ad20637e32bcef36188a645c51" category="sidebar">ASA r2 A50</block>
+  <block id="235a3402494842ecaa7f8fe0f6f510ca" category="sidebar">FAS 8300</block>
+  <block id="5eb1b0862a6f3df9c8273f67eb17e4ff" category="sidebar">FAS 8700</block>
 </blocks>

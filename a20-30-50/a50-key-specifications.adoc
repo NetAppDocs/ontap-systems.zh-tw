@@ -1,0 +1,115 @@
+---
+permalink: a50-key-specifications.html 
+sidebar: sidebar 
+summary: AFF A50 的主要規格 
+---
+= AFF A50 的主要規格
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下是單一高可用性對中AFF A50 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。
+
+
+
+== AFF A50 規格一覽
+
+* 平台配置： AFF A50 單機箱 HA 對
+* 最大原容量：4.0392 PB
+* 記憶體：256.0000 GB
+* 外型尺寸：2U 機箱，配備 2 個 HA 控制器和 24 個驅動器插槽
+* ONTAP版本： ONTAP：9.16.1P2
+* PCIe 擴充槽：8
+* 最低ONTAP版本： ONTAP 9.16.1RC1 == 橫向擴展最大值
+* 類型：NAS；HA 對：12；原始容量：48.5 PB / 43.0 PiB；最大記憶體：3072 GB
+* 類型：SAN；HA 對：6；原始容量：24.2 PB / 21.5 PiB；最大記憶體：1536 GB
+* 類型：HA 對；原始容量：4.0 PB / 3.6 PiB；最大記憶體：256.0000
+
+
+
+
+== 輸入/輸出
+
+
+
+=== 板載 I/O
+
+無板載 I/O 資料。
+
+
+
+=== 總輸入/輸出
+
+* 協定：乙太網路 100 Gbps；連接埠：16
+* 協定：乙太網路 25 Gbps；連接埠：24
+* 協定：乙太網路 10 Gbps；連接埠：24
+* 協定：FC 64 Gbps；連接埠：24
+* 協定：NVMe/FC 64 Gbps；連接埠：24
+* 埠：0
+* 協定：SAS 12 Gbps；連接埠：16
+
+
+
+
+=== 管理埠
+
+* 協定：乙太網路 1 Gbps；連接埠：2
+* 協定：RS-232 115 Kbps；連接埠：4
+* 協定：USB 600 Mbps；連接埠：2
+
+
+
+
+== 支援儲存網絡
+
+* CIFS
+* FC
+* iSCSI
+* NFS v3
+* NFS v4.0
+* NFS v4.1
+* NFS v4.2
+* NVMe/光纖通道
+* NVMe/TCP
+* S3
+* S3 與 NAS
+* SMB 2.0
+* SMB 2.1
+* SMB 2.x
+* SMB 3.0
+* SMB 3.1
+* SMB 3.1.1 == 系統環境規範
+* 典型功率：3076 BTU/小時
+* 最壞情況下的功率：4860 BTU/小時
+* 重量：60.7 磅 27.5 公斤
+* 高度：2U
+* 寬度：19 吋 IEC 機架相容（17.6 吋 44.7 公分）
+* 深度：
+* 工作溫度/海拔/濕度：海拔高度 3048 公尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結
+* 非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺），相對濕度 10% 至 95%，無冷凝，原包裝箱內
+* 雜訊：標稱聲功率 (LwAd)：8.0 聲壓 (LpAm)（旁觀者位置）：70.5 dB
+
+
+
+
+== 遵守
+
+* EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
+* 安全認證：BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS
+* 安全/EMC/EMI認證：EAC、UKRSEPRO
+* 認證安全/EMC/EMI/RoHS：BSMI、CE DoC、UKCA DoC
+* 標準 EMC/EMI：BS-EN-55032、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、KS 第 15 部分 A 3830 33、230 3、KS 930 類
+* 標準安全：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 15598-1,6086825-168-1、CNS 15598-1、1086823623623639 62368-1、IEC60950-1、IS 13252（第 1 部分）
+
+
+
+
+== 高可用性
+
+* 基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面
+* 冗餘熱插拔控制器
+* 冗餘熱插拔電源
+* 透過外部機架的 SAS 連線進行 SAS 帶內管理
+
