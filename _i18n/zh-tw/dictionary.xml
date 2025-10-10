@@ -2105,10 +2105,7 @@
   <block id="85fd23f64df6d6e4c54bd55af7b58c44" category="paragraph">插槽3或7中的NIC模組、</block>
   <block id="86cf1151f6e6623b20e6f28b8eb846ea" category="paragraph">對於每個連接埠、使用「儲存連接埠修改節點*_&lt;節點名稱&gt;_-port *_&lt;連接埠名稱&gt;_-mode network」命令。</block>
   <block id="3cb2d50b71ca167f282d29cc4a2f763f" category="paragraph">儲存模組</block>
-  <block id="3d583022c2a0e3f44141400e25a3113d" category="list-text"><block ref="3d583022c2a0e3f44141400e25a3113d" category="inline-link-macro-rx"></block></block>
-  <block id="e95c782f97493fda4a0794b55f88c5be" category="list-text"><block ref="e95c782f97493fda4a0794b55f88c5be" category="inline-link-macro-rx"></block></block>
   <block id="0a4bb09bc90ee0ee6fecb0e670cb0d8e" category="inline-link-macro">詳細步驟</block>
-  <block id="280316afc56c30d6861e875ee64f9d8b" category="list-text"><block ref="280316afc56c30d6861e875ee64f9d8b" category="inline-link-macro-rx"></block></block>
   <block id="f0589341a30d82c76a3635dc142e3cde" category="paragraph">線上逐步指示、並提供其他內容的即時連結。</block>
   <block id="fcc9aa8940599a2c3be38723a65e9e21" category="doc">更換DIMM AFF - VA900</block>
   <block id="f7980892d5a8155c0cf2a73f4bff4bad" category="paragraph">將元件安裝到控制器模組之後、您必須將控制器模組裝回系統機箱、然後啟動作業系統。</block>
@@ -4833,9 +4830,6 @@
   <block id="a138242d674238dc6089a602c6c8909b" category="list-text">完成恢復後、請確認HA配對正常、而且可以接管：顯示儲存容錯移轉</block>
   <block id="f2c155633ff38e4e2d070e9d244a9074" category="doc">搬移及更換硬體- FAS9500</block>
   <block id="68828ed4b0036df85ace8abb1ad7c137" category="doc">還原並驗證組態- FAS9500</block>
-  <block id="ca44994b81cf73317bcdf6088f5dae8f" category="list-text"><block ref="ca44994b81cf73317bcdf6088f5dae8f" category="inline-link-macro-rx"></block></block>
-  <block id="bfd64d4015631c5c2c0c4db3a0badb51" category="list-text"><block ref="bfd64d4015631c5c2c0c4db3a0badb51" category="inline-link-macro-rx"></block></block>
-  <block id="f15e9fe5ff90a0ec8840f664bb40c138" category="list-text"><block ref="f15e9fe5ff90a0ec8840f664bb40c138" category="inline-link-macro-rx"></block></block>
   <block id="b139dc4b4943474860d7b90b369c2b27" category="doc">影片步驟- FAS9500</block>
   <block id="3a1bdb9a053493a7e1c1e62e796f32e6" category="doc">更換開機媒體- FAS9500</block>
   <block id="3e5fda4bdb63c28cc3aa53cadbde1129" category="doc">更換DIMM - FAS9500</block>
@@ -9430,7 +9424,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3ba33b604021069649467ecdf257be05" category="list-text">KMIP 伺服器的連接埠</block>
   <block id="2d554fdba3f08dbae96d767011163c64" category="list-text">系統處理完畢後，您會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。</block>
   <block id="5724bf734a1f497a07f249f0b315ffe6" category="list-text">檢查接管狀態：<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block></block>
-  <block id="fb06fb0bfbf591aaabffe9c4be97a3fe" category="list-text">請先進入進階模式，然後再<block ref="18e262a813b10ff8e5a5c7387605eb8c" prefix=" " category="inline-code"></block>進入，以確保已修復節點上的任何核心傾印都已儲存<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block>。</block>
   <block id="0f4c05d658aace7b29b5ea53d3fa4cf2" category="list-text">所有機櫃都必須正常運作。</block>
   <block id="34f0c52d74ac2c621ab6284425793c19" category="list-text">您必須以相同機型類型的控制器來更換控制器。您無法只更換控制器來升級系統。</block>
   <block id="f66467941a18b4f0a908d26d19b031ae" category="list-text">在此程序中，您無法變更任何磁碟機或磁碟櫃。</block>
@@ -10447,7 +10440,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9a14eb4201f018a934225cd84a42221c" category="summary">當電池開始充電或故障時，請更換 AFF A70 或 AFF A90 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
   <block id="b85925ab6af84e80af54ee558d7cdd7b" category="summary">當非揮發性記憶體故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的 NVRAM 。</block>
   <block id="aaf0a6c95c867df69992eef6a692ca4b" category="doc">更換 NVRAM - AFF A70 and AFF A90</block>
-  <block id="6ce37dbe2a72695de938ca0373d07a48" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 AFF A70 或 AFF A90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
   <block id="2529fd3c33c553ca2e8d9592843f4207" category="summary">請在 AFF A70 或 AFF A90 系統中更換即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
   <block id="074741912fd3881b9c0c739cd18929e2" category="summary">當 AFF A70 或 AFF A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉受損的控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
   <block id="20b1449f6216ab28919605292500b402" category="doc">更換系統管理模組 - AFF A70 和 AFF A90</block>
@@ -10583,7 +10575,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9820e4314a3e441bfece800b6e086ee5" category="paragraph">維護 ASA A70 和 ASA A90 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
   <block id="156e54fb574402ca9f26edcfaeff46e1" category="paragraph">維護程序假設 ASA A70 和 ASA A90 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="99b88f32607667ac31ffc4d65b240425" category="summary">當電池開始充電或故障時，請更換 ASA A70 或 ASA A90 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
-  <block id="2c183cd7821c2303d65c52bc4eccc960" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 ASA A70 或 ASA A90 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
   <block id="41e2f285e686b8f2a3edb4bab2e58d51" category="paragraph">請在 ASA A70 或 ASA A90 系統中更換即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
   <block id="bcde75f7bddc9226b30c2cb1712cb52b" category="summary">當 ASA A70 或 ASA A90 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
   <block id="603c758839f418606126a3dd634c68d9" category="doc">更換系統管理模組 - ASA A70 和 ASA A90</block>
@@ -10644,7 +10635,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dd70af6ac86c3004056a10922bf1e4a7" category="paragraph">維護程序假設 AFF C80 系統已部署為 ONTAP 環境中的儲存節點。</block>
   <block id="5d542a4393896b1649a9f71a10d0053c" category="summary">當電池開始充電或故障時，請更換 AFF C80 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。</block>
   <block id="6c723933775e16b84e349b93a65294be" category="paragraph">當電池開始充電或故障時，請更換 AFF C80 系統中的 NV 電池，因為它負責在停電期間保留重要的系統資料。更換程序包括關閉受損的控制器，移除控制器模組，更換 NV 電池，重新安裝控制器模組，以及將故障零件退回 NetApp 。</block>
-  <block id="4a39a7154d94aaf673b103d62c88527f" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換 AFF C80 系統中的 NVRAM 。更換程序包括關閉受損的控制器，更換 NVRAM 模組或 NVRAM DIMM ，重新分配磁碟，以及將故障零件退回 NetApp 。</block>
   <block id="faed8c38f21fc080afa13d15d554d7cd" category="summary">更換 AFF C80 系統中的即時時鐘（ RTC ）電池（通常稱為幣式電池），以確保仰賴精確時間同步的服務和應用程式仍能正常運作。</block>
   <block id="6bb54b1dd4c1b6fa5564137fda344533" category="summary">當 AFF C80 系統發生故障或韌體毀損時，請更換系統管理模組。更換程序包括關閉控制器，更換故障的系統管理模組，重新啟動控制器，更新授權金鑰，以及將故障零件退回 NetApp 。</block>
   <block id="a119fd4e8fa2ab8606dde519437910b4" category="summary">如果 FAS70 或 FAS90 系統中的某個組件出現故障，請將故障部件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
@@ -13181,7 +13171,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6ec20c5ffb71fc8e6407815aba709ebe" category="cell">15.0 PB / 13.3 PiB</block>
   <block id="e71a112fcba059348a330658e07fff85" category="list-text">工作溫度/海拔/濕度：海拔 3048 公尺/10000 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 90%，無凝結</block>
   <block id="fd64ba1b0614f4ffd66207f445196c93" category="summary">FAS9500平台組的主要規格</block>
-  <block id="e3a28d350d8771729547475ef2d67149" category="paragraph">以下是單一高可用性對中FAS9500儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="8d8c60ca9b0b29f222ed76c52c6cf55b" category="list-text">最低ONTAP版本： ONTAP 9.10.1P3 == 橫向擴展最大值</block>
   <block id="014f2208129cdc831cee84fc30f9247f" category="list-text">類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：24576 GB</block>
   <block id="42af051dd0fff696f5ce895c1bb97de4" category="list-text">類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：12288 GB</block>
@@ -13804,4 +13793,23 @@ SFP+ （目標 / 啟動器）</block>
   <block id="496c7adc63a126d0eb4ab5118d782f86" category="sidebar">儲存和驅動器</block>
   <block id="f529a7aaf3d6572add4d618d8be7d377" category="sidebar">系統電池和指示燈</block>
   <block id="58c13d8b084f626609d7f7546283abc8" category="sidebar">組件更換程序</block>
+  <block id="bf8cf727ae3139f3e7fe3e65453bcea8" category="paragraph">您使用的程式取決於您的控制器冗餘配置。</block>
+  <block id="c78ea1575d6ed5311ae16f57e7080f55" category="open-title">選項 1：HA 對</block>
+  <block id="cddabae5c0c8b3e2d64da933c9d3a116" category="paragraph">=== 驗證 HA 系統上的系統 ID 更改</block>
+  <block id="237578e36bc0b82ac635199432b9561a" category="open-title">選項 2：雙節點MetroCluster</block>
+  <block id="a50442518571cefc0118bd7662d857e6" category="paragraph">=== 在雙節點MetroCluster配置中的系統上手動重新分配系統 ID</block>
+  <block id="d11707ec467f1cc151a3fc2bff916c27" category="list-text">按下控制器上的兩個鎖定閂鎖，同時向下旋轉兩個閂鎖，然後將控制器拉出約 3 或 4 英吋。</block>
+  <block id="3212e1d7238176b184891f4e58ec4874" category="list-text">重新安裝控制器模組。控制器完全插入後立即重新啟動。</block>
+  <block id="d44afbf1e0eec290d1d18fef6bc57aad" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換AFF A70或AFF A90系統中的NVRAM 。更換過程包括關閉受損的控制器、將控制器拉出幾英寸以完全切斷電源、更換NVRAM模組或NVRAM DIMM、重新分配磁碟，以及將故障部件返回給NetApp。</block>
+  <block id="824e41b098dc2aeee8956dcc4079298b" category="list-text"><block ref="824e41b098dc2aeee8956dcc4079298b" category="inline-link-macro-rx"></block></block>
+  <block id="aa34fced84bfbcbb78619eb4193930e4" category="list-text"><block ref="aa34fced84bfbcbb78619eb4193930e4" category="inline-link-macro-rx"></block></block>
+  <block id="9c9e03a4da33702773b54fa36d9407bc" category="list-text"><block ref="9c9e03a4da33702773b54fa36d9407bc" category="inline-link-macro-rx"></block></block>
+  <block id="7e7450c37920b1792b62c14f49c6591b" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換ASA A70 或ASA A90 系統中的NVRAM 。更換過程包括關閉受損的控制器、將控制器拉出幾英寸以完全切斷電源、更換NVRAM模組或NVRAM DIMM、重新分配磁碟，以及將故障部件返回給NetApp。</block>
+  <block id="985cd84f00f61cfd350f06f034996dbc" category="list-text"><block ref="985cd84f00f61cfd350f06f034996dbc" category="inline-link-macro-rx"></block></block>
+  <block id="31ac19365e9e82afbf1c92c80f8f5345" category="list-text"><block ref="31ac19365e9e82afbf1c92c80f8f5345" category="inline-link-macro-rx"></block></block>
+  <block id="b749fa61154e5014f90db363c596629d" category="list-text"><block ref="b749fa61154e5014f90db363c596629d" category="inline-link-macro-rx"></block></block>
+  <block id="a3e8d54603612818524bd33249aa8a23" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換AFF c80 系統中的NVRAM 。更換過程包括關閉受損的控制器、將控制器拉出幾英寸以完全切斷電源、更換NVRAM模組或NVRAM DIMM、重新分配磁碟，以及將故障部件返回給NetApp。</block>
+  <block id="e0afc6f17acc32734a97d12897107976" category="list-text"><block ref="e0afc6f17acc32734a97d12897107976" category="inline-link-macro-rx"></block></block>
+  <block id="de12502ea1f5b1e834a82b554781952a" category="list-text"><block ref="de12502ea1f5b1e834a82b554781952a" category="inline-link-macro-rx"></block></block>
+  <block id="18b2d9b4b9271130118b3fa4d34741ca" category="list-text"><block ref="18b2d9b4b9271130118b3fa4d34741ca" category="inline-link-macro-rx"></block></block>
 </blocks>

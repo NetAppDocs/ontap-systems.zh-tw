@@ -118,7 +118,6 @@ NOTE: 如有任何問題、請聯絡 https://support.netapp.com["NetApp支援"]�
 
 . 系統處理完畢後，您會看到 Boot Menu （開機功能表）。選擇「 1 」以進行正常開機。
 . 檢查接管狀態： `storage failover show`
-. 請先進入進階模式，然後再 `run local partner nosavecore`進入，以確保已修復節點上的任何核心傾印都已儲存 `set -privilege advanced`。
 . 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
 . 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
 . 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
