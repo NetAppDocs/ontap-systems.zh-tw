@@ -13879,9 +13879,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d256a527bf5d931f1d622c72ddf1dded" category="list-text">從健康的控制器，驗證新的合作夥伴系統 ID 是否已自動分配：<block ref="1d9c4708f7f65a8fab50047c3df2e664" prefix=" " category="inline-code"></block></block>
   <block id="cfcb90feb85f8859e220b212215b63b0" category="paragraph">在命令輸出中，您應該會看到一條顯示儲存替換當前狀態的訊息。在以下範例中，node2 已完成替換，並顯示目前狀態為「接管中」。</block>
   <block id="8011afadee4323a554fac9e6cc29e58d" category="list-text">從健康的控制器中歸還被替換控制器的儲存：`_storage failover giveback -ofnode replacement_node_name_`</block>
-  <block id="17d9dcc7db89f6a4682cb542cf2044fc" category="open-title">更換交流電源</block>
   <block id="88a2125e60807865335c8747496af95b" category="admonition">電源結構緊湊。拆卸時請用雙手支撐它，以防止它從控制器模組上擺動出來並造成傷害。</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="1ff94e598108905bef8834018bba5d86" category="paragraph">取出故障的 RTC 電池並安裝替換電池。</block>
   <block id="344f921d0ec02fd1e7780b61a619a100" category="admonition">更換 RTC 電池、插入控制器並啟動第一次 BIOS 重置後，您將看到以下錯誤訊息：<block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix=" " category="inline-code"></block><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix=" " category="inline-code"></block>這些訊息是預期的，您可以繼續此過程。</block>
   <block id="5862e3059693b0ae5802e65d68b3df4c" category="list-text">使用<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block>命令。</block>
@@ -14199,4 +14197,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a43cc36cba3c97642118a8f1e1411d2a" category="sidebar">NX224貨架</block>
   <block id="44897f292c79e694fcea494af35f40cc" category="sidebar">NX224貨架維護</block>
   <block id="9356bad064253adcb17a19cef3f04d34" category="sidebar">更換 NX224 驅動器架</block>
+  <block id="5198087ddb6461cb35b786132461261c" category="sidebar">AFX 1K 啟動媒體</block>
+  <block id="5a94cb746c52c38beb8e02711e643cd9" category="sidebar">恢復啟動媒體</block>
+  <block id="d3bca45bb48d04c6d999281b772fa015" category="sidebar">AFX A1K 機箱</block>
+  <block id="9a4e2ca13bc5368ad30e628996c8e94e" category="sidebar">AFX 1K 控制器</block>
+  <block id="4c052a07dcf923d8d73e0be9a32b97a7" category="sidebar">AFX 1K IO模組</block>
 </blocks>
