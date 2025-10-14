@@ -1,0 +1,258 @@
+---
+permalink: afx-1k/nvdimm-battery-replace.html 
+sidebar: sidebar 
+keywords: afx 1k, replace the nv battery, NV battery 
+summary: 當電池開始失去電量或故障時，請更換 AFX 1K 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。 
+---
+= 更換 NV 電池 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當電池開始失去電量或故障時，請更換 AFX 1K 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。
+
+系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+
+
+
+== 步驟1：關閉受損的控制器
+
+關閉或接管受損的控制器。
+
+要關閉受損控制器，您必須確定控制器的狀態，並在必要時執行控制器的儲存故障轉移接管，以便健康的控制器繼續從受損控制器儲存提供資料。
+
+.關於這項工作
+* 如果您的叢集具有四個以上的節點，則它必須達到法定人數。要查看有關節點的叢集信息，請使用 `cluster show`命令。有關 `cluster show`命令，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["查看ONTAP叢集中的節點級詳細信息"^]。
+* 如果叢集不處於法定人數，或任何控制器（受損控制器除外）的健康狀況或資格顯示為錯誤，則必須在關閉受損控制器之前修正該問題。看link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^] 。
+
+
+.步驟
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
++
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 從受損控制器的控制台停用自動交還：
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
+
++
+
+NOTE: 當您看到「您想要停用自動回饋嗎？」時，請輸入 `y`。
+
++
+.. 如果您執行的是ONTAP版本 9.17.1，且受損控制器無法啟動或已被接管，則必須在啟動受損控制器之前從正常控制器上斷開 HA 互連鏈路。這可以防止受損控制器執行自動交還。
++
+`system ha interconnect link off -node healthy-node -link 0`
+
++
+`system ha interconnect link off -node healthy-node -link 1`
+
++
+
+NOTE: 如果您執行的不是ONTAP版本 9.17.1，請跳過上述步驟並前往步驟 3。
+
+
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從健康控制器接管或停止受損控制器：
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+_-halt true_ 參數將受損節點帶入 LOADER 提示符。
+
+|===
+
+
+
+
+== 步驟2：移除控制器模組
+
+更換控制器模組或更換控制器模組內的元件時、您必須從機箱中移除控制器模組。
+
+. 檢查系統插槽 4/5 中的 NVRAM 狀態 LED 。控制器模組前面板上也有 NVRAM LED 。尋找 NV 圖示：
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM 注意與狀態 LED 位置圖]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+NVRAM 狀態 LED
+
+
+
+ a| 
+image:../media/icon_round_2.png["編號 2"]
+ a| 
+NVRAM 注意 LED
+
+|===
++
+** 如果 NV LED 熄滅、請前往下一步。
+** 如果 NV LED 閃爍、請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。
+
+
+. 如果您尚未接地、請正確接地。
+. 用雙手抓住擋板兩側的開口並向自己方向拉，直到擋板從底盤框架上的球頭螺栓上鬆開，從而拆下擋板（如有必要）。
+. 在裝置正面、將手指勾入鎖定凸輪的孔中、壓緊凸輪桿上的彈片、然後輕輕地同時將兩個鎖條牢牢地朝您的方向旋轉。
++
+控制器模組會稍微移出機箱。
+
++
+image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[控制器移除圖形]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+| 鎖定凸輪栓鎖 
+|===
+. 將控制器模組滑出機箱、然後放在平坦穩定的表面上。
++
+將控制器模組滑出機箱時、請務必支撐控制器模組的底部。
+
+
+
+
+
+== 步驟3：更換NV電池
+
+從控制器模組中取出故障的 NV 電池、然後安裝替換的 NV 電池。
+
+. 打開通風管蓋並找到 NV 電池。
++
+image::../media/drw_a1k_remove_replace_nvmembat_ieops-1379.svg[更換NV電池]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+| NV 電池通風管蓋 
+
+
+ a| 
+image:../media/icon_round_2.png["編號 2"]
+ a| 
+NV 電池插頭
+
+|===
+. 將電池向上提、以取用電池插頭。
+. 擠壓電池插頭正面的固定夾、將插頭從插槽中拔下、然後從插槽拔下電池纜線。
+. 將電池從通風管和控制器模組中取出、然後放在一邊。
+. 從包裝中取出替換電池。
+. 將替換電池組裝入控制器：
++
+.. 將電池插頭插入擴充卡插槽、並確定插塞鎖定到位。
+.. 將電池套件插入插槽、然後穩固地向下按電池套件、以確保其鎖定到位。
+
+
+. 關閉 NV 通風管蓋。
++
+確定插頭已鎖入插槽。
+
+
+
+
+
+== 步驟4：重新安裝控制器模組
+
+重新安裝控制器模組並將其開機。
+
+. 將通風管往下轉動、以確保通風管完全關閉。
++
+它必須與控制器模組金屬板齊平。
+
+. 將控制器模組的末端與機箱中的開口對齊、然後將控制器模組滑入機箱、並將控制桿從系統正面旋轉。
+. 一旦控制器模組停止滑動、請向內旋轉 CAM 把手、直到卡入風扇下方
++
+
+NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連接器。
+
++
+一旦控制器模組完全插入機箱中、就會開始開機。
+
+. 將錶圈與球頭螺栓對齊，然後輕輕將錶圈推入到位。
+. 主控台訊息停止時、按 <enter> 。
++
+** 如果看到登入提示，請前往下一步。
+** 如果您沒有看到登入提示，請登入合作夥伴節點。
+
+
+. 僅傳回具有 override-destination-checks 選項的根：
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。有關權限級別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["了解ONTAP CLI 指令的權限級別"^]。
+
++
+如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+. 等待交還報告完成後 5 分鐘，然後檢查故障轉移和交還狀態：
++
+`storage failover show`和 `storage failover show-giveback`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。
+
+. 如果 HA 互連鏈路已斷開，請將其恢復：
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+
+
+== 步驟5：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

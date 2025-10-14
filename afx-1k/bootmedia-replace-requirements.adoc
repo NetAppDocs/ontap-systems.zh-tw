@@ -1,0 +1,29 @@
+---
+permalink: afx-1k/bootmedia-replace-requirements.html 
+sidebar: sidebar 
+keywords: afx 1k, replace the boot media 
+summary: '在更換 AFX 1K 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動介質、確認控制器上沒有有缺陷的叢集端口，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。' 
+---
+= 更換啟動介質的要求 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換 AFX 1K 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動介質、確認控制器上沒有有缺陷的叢集端口，以及確定是否啟用了板載密鑰管理器 (OKM) 或外部密鑰管理器 (EKM)。
+
+更換開機媒體之前、請務必檢閱下列需求。
+
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請務必在正確的控制器上套用下列步驟中的命令：
++
+** _減損_控制器是您要執行維護的控制器。
+** _Healthy控制器是受損控制器的HA合作夥伴。
+
+
+* 故障控制器上不得有故障的叢集連接埠。
+
+
+.接下來呢？
+在您查看更換啟動介質的要求後，您需要link:bootmedia-shutdown.html["關閉控制器"]。

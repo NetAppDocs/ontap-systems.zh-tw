@@ -1,0 +1,40 @@
+= 
+:allow-uri-read: 
+
+
+更換系統管理模組時，控制器的系統序號 (SSN) 會變更。如果受損節點使用需要標準（節點鎖定）許可證的ONTAP功能，則必須為該節點安裝新許可證。對於具有標準許可證的功能，叢集中的每個節點都應具有該功能的自己的金鑰。
+
+.關於這項工作
+在您安裝授權金鑰之前、需要標準授權的功能仍可繼續提供給節點使用。不過、如果節點是叢集中唯一擁有該功能授權的節點、則不允許對該功能進行任何組態變更。此外、在節點上使用未獲授權的功能可能會使您不遵守授權合約、因此您應該盡快在節點上安裝替換授權金鑰或金鑰。
+
+.開始之前
+需要新系統序號的NetApp許可證文件 (NLF)。有關NetApp許可證文件的更多信息，請參閱link:https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/ONTAP_9.10.1_and_later_licensing_overview["ONTAP 9.10.1 及更高版本許可概述"^]。
+
+您有 90 天的時間來安裝許可證密鑰，之後所有舊許可證都將失效。安裝有效的許可證金鑰後，您有 24 小時的時間在寬限期結束前安裝所有金鑰。
+
+
+NOTE: 如果您的系統最初運作的是ONTAP 9.15.1 或更高版本，請使用link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system["在AFF/FAS系統上更新授權的主機板更換程序"^]。如果您不確定係統的初始ONTAP版本，請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]了解更多。
+
+.步驟
+. 如果您需要新的授權金鑰、請在上取得替換授權金鑰 https://mysupport.netapp.com/site/global/dashboard["NetApp 支援網站"] 在「軟體授權」下的「我的支援」區段中。
++
+
+NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔案上的電子郵件地址。如果您在30天內未收到附有授權金鑰的電子郵件、請聯絡技術支援部門。
+
+. 透過ONTAP系統管理員安裝每個許可證金鑰。
++
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html["使用ONTAP System Manager 新增許可證金鑰來啟用新功能"^] 。
+
+. 視需要移除舊授權：
++
+.. 檢查未使用的授權：「授權清理-未使用的-Simulate」
+.. 如果清單看起來正確、請移除未使用的授權：「授權清理-未使用」
+
+
+. 向NetApp支援部門註冊系統序號。
++
+** 如果啟用了「支援」功能、請傳送「支援」訊息來登錄序號。AutoSupport AutoSupport
+** 如果AutoSupport 未啟用此功能、請致電 https://mysupport.netapp.com["NetApp支援"] 以登錄序號。
+
+
+

@@ -1,0 +1,206 @@
+= 步驟1：關閉受損節點
+:allow-uri-read: 
+
+
+您可以將此程序用於儲存系統支援的所有 ONTAP 版本。
+
+.開始之前
+* 您必須擁有可更換的零件。
+* 請確定儲存系統中的所有其他元件都正常運作；如果沒有，請聯絡技術支援部門。
+
+
+
+
+== 步驟1：關閉受損節點
+
+關閉或接管受損的控制器。
+
+要關閉受損控制器，您必須確定控制器的狀態，並在必要時執行控制器的儲存故障轉移接管，以便健康的控制器繼續從受損控制器儲存提供資料。
+
+.關於這項工作
+* 如果您的叢集具有四個以上的節點，則它必須達到法定人數。要查看有關節點的叢集信息，請使用 `cluster show`命令。有關 `cluster show`命令，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["查看ONTAP叢集中的節點級詳細信息"^]。
+* 如果叢集不處於法定人數，或任何控制器（受損控制器除外）的健康狀況或資格顯示為錯誤，則必須在關閉受損控制器之前修正該問題。看link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^] 。
+
+
+.步驟
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
++
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 從受損控制器的控制台停用自動交還：
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
+
++
+
+NOTE: 當您看到「您想要停用自動回饋嗎？」時，請輸入 `y`。
+
++
+.. 如果您執行的是ONTAP版本 9.17.1，且受損控制器無法啟動或已被接管，則必須在啟動受損控制器之前從正常控制器上斷開 HA 互連鏈路。這可以防止受損控制器執行自動交還。
++
+`system ha interconnect link off -node healthy-node -link 0`
+
++
+`system ha interconnect link off -node healthy-node -link 1`
+
++
+
+NOTE: 如果您執行的不是ONTAP版本 9.17.1，請跳過上述步驟並前往步驟 3。
+
+
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從健康控制器接管或停止受損控制器：
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+_-halt true_ 參數將受損節點帶入 LOADER 提示符。
+
+|===
+
+
+
+
+== 步驟 2 ：更換故障 I/O 模組
+
+若要更換 I/O 模組、請在機箱內找到該模組、然後依照特定步驟順序進行。
+
+. 如果您尚未接地、請正確接地。
+. 拔下目標I/O模組上的任何纜線。
++
+
+NOTE: 確保標記電纜連接的位置，以便在重新安裝模組時將它們連接到正確的連接埠。
+
+. 向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。
++
+
+NOTE: 下圖顯示移除水平和垂直 I/O 模組。一般而言、您只會移除一個 I/O 模組。
+
++
+image:../media/drw_a1k_io_remove_replace_ieops-1382.svg["移除 I/O 模組"]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+I/O CAM 閂鎖
+
+|===
++
+請務必貼上纜線的標籤、以便知道纜線的來源。
+
+. 從機箱中卸下目標 I/O 模組：
++
+.. 按下目標模組上的 CAM 按鈕。
+.. 將 CAM 栓鎖儘量遠離模組。
+.. 將手指連入凸輪桿開口處、然後將模組從機箱中拉出、即可將模組從機箱中取出。
++
+請務必追蹤I/O模組所在的插槽。
+
+
+
+. 將I/O模組放在一邊。
+. 將替換 I/O 模組安裝至機箱：
++
+.. 將模組與機箱插槽開口的邊緣對齊。
+.. 將模組一路滑入機箱中的插槽、然後將 CAM 栓鎖完全向上旋轉、將模組鎖定到位。
+
+
+. 重新連接 I/O 模組。
+. 將纜線管理承載器向上旋轉至關閉位置。
+
+
+
+
+== 步驟 3 ：重新啟動控制器
+
+更換 I/O 模組之後，您必須重新啟動控制器。
+
+. 從載入程式提示重新啟動控制器：
++
+`bye`
+
++
+
+NOTE: 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組和其他元件。
+
+. 主控台訊息停止時、按 <enter> 。
++
+** 如果您看到_login_提示，請前往下一個步驟。
+** 如果您沒有看到登入提示，請登入合作夥伴節點。
+
+
+. 僅傳回具有 override-destination-checks 選項的根：
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。有關權限級別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["了解ONTAP CLI 指令的權限級別"^]。
+
++
+如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+. 在恢復報告完成後等待 5 分鐘，並檢查容錯移轉狀態和恢復狀態：
++
+`storage failover show`和 `storage failover show-giveback`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。
+
+. 如果 HA 互連鏈路已斷開，請將其恢復：
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -ofnode impaired-node -automatic-giveback true`
+
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 從健全控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+
+
+== 步驟4：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

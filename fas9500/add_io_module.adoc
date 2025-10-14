@@ -40,7 +40,24 @@ summary: 您可以將I/O模組新增至系統、方法是在已完全安裝的�
 +
 下列 AutoSupport 命令會禁止自動建立案例兩小時： `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. 停用健全控制器主控台的自動恢復功能：「torage容錯移轉修改–節點本機-自動恢復錯誤」
+. 從受損控制器的控制台停用自動交還：
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
+
++
+
+NOTE: 當您看到「您想要停用自動回饋嗎？」時，請輸入 `y`。
+
++
+.. 如果受損控制器無法啟動或已被接管，則必須先從健康控制器斷開 HA 互連鏈路，然後再啟動受損控制器。這將阻止受損控制器執行自動交還。
++
+`system ha interconnect link off -node healthy-node -link 0`
+
++
+`system ha interconnect link off -node healthy-node -link 1`
+
+
+
 . 將受損的控制器移至載入器提示：
 +
 [cols="1,2"]
@@ -52,13 +69,6 @@ summary: 您可以將I/O模組新增至系統、方法是在已完全安裝的�
 載入程式提示
  a| 
 前往下一步。
-
-
-
- a| 
-《等待贈品……》
- a| 
-按Ctrl-C、然後在出現提示時回應「y」。
 
 
 

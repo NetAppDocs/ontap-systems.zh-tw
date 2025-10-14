@@ -1,0 +1,34 @@
+---
+permalink: afx-1k/bootmedia-replace-workflow.html 
+sidebar: sidebar 
+keywords: afx 1k, replace the boot media 
+summary: 透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密和驗證系統功能，開始更換 AFX 1K 儲存系統中的啟動媒體。 
+---
+= 啟動媒體替換工作流程 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、恢復加密和驗證系統功能，開始更換 AFX 1K 儲存系統中的啟動媒體。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱開機媒體需求"]
+[role="quick-margin-para"]
+檢閱開機媒體更換需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-shutdown.html["關閉控制器"]
+[role="quick-margin-para"]
+當您需要更換啟動媒體時，請關閉儲存系統中的控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-replace.html["更換開機媒體"]
+[role="quick-margin-para"]
+從 System Management 模組中移除故障開機媒體、然後安裝替換開機媒體。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-recovery-image-boot.html["還原開機媒體上的映像"]
+[role="quick-margin-para"]
+從合作夥伴控制器還原 ONTAP 映像。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-complete-rma.html["將故障零件歸還給NetApp"]
+[role="quick-margin-para"]
+如套件隨附的RMA指示所述、將故障零件退回NetApp。

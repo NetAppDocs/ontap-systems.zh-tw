@@ -1,0 +1,288 @@
+---
+permalink: afx-1k/bootmedia-recovery-image-boot.html 
+sidebar: sidebar 
+keywords: afx 1k, boot the recovery image 
+summary: 在 AFX 1K 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原設定。 
+---
+= 啟動恢復映像 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 AFX 1K 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原程序以從合作夥伴節點復原設定。
+
+.關於這項工作
+在復原過程中，系統會檢查是否啟用了加密並識別正在使用的金鑰加密類型。如果已啟用金鑰加密，系統將引導您完成對應的復原步驟。
+
+.開始之前
+* 對於 OKM，您需要叢集範圍的密碼和備份資料。
+* 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
++
+** /ccfcard/kmip/servers.cfg 檔案。
+** /ccfcard/kmip/certs/client.crt 檔案。
+** /ccfcard/kmip/certs/client.key 檔案。
+** /ccfcard/kmip/certs/ca.pem 檔案。
+
+
+
+
+.步驟
+. 在 Loader 提示字元中、輸入命令：
++
+`boot_recovery -partner`
+
++
+畫面會顯示下列訊息：
+
++
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+
+. 監控開機媒體安裝恢復程序。
++
+程序完成並顯示 `Installation complete`訊息。
+
+. 系統會檢查加密和加密類型，並顯示兩個訊息中的其中一個。視所顯示的訊息而定，請採取下列其中一項動作：
++
+
+IMPORTANT: 有時候，程序可能無法識別系統上是否已設定金鑰管理程式。它會顯示錯誤訊息，詢問是否已為系統設定金鑰管理程式，然後詢問已設定的金鑰管理程式類型。解決此問題後，程序將會繼續。
+
++
+.顯示組態錯誤尋找提示的範例
+[%collapsible]
+====
+....
+Error when fetching key manager config from partner ${partner_ip}: ${status}
+
+Has key manager been configured on this system
+
+Is the key manager onboard
+
+....
+====
++
+[cols="1,2"]
+|===
+| 如果您看到此訊息 ... | 執行此動作... 
+
+
+ a| 
+`key manager is not configured. Exiting.`
+ a| 
+系統上未配置加密。完成以下步驟：
+
+.. 主控台訊息停止時、按 <enter> 。
++
+*** 如果看到登入提示，請前往步驟 4。
+*** 如果您沒有看到登入提示，請登入合作夥伴節點並繼續執行步驟 4。
+
+
+.. 如果自動交還功能已停用，請前往步驟 6 啟用此功能。
+
+
+
+
+ a| 
+`key manager is configured.`
+ a| 
+轉到步驟 5 恢復適當的密鑰管理器。
+
+節點進入啟動選單並運行：
+
+** 選項 10 適用於內建金鑰管理程式（ OKM ）的系統。
+** 選項 11 適用於具有外部金鑰管理程式（ EKM ）的系統。
+
+
+|===
+. 如果系統上未安裝加密，則不會顯示登入提示。完成以下步驟：
++
+.. 僅傳回具有 override-destination-checks 選項的根：
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 此命令僅在診斷模式下可用。有關詳細信息，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["ONTAP CLI 指令的權限級別"^] 。
+
++
+如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+.. 在恢復報告完成後等待 5 分鐘，並檢查容錯移轉狀態和恢復狀態：
++
+`storage failover show`和 `storage failover show-giveback`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。
+
+.. 如果您正在執行ONTAP 9.17.1 並且 HA 內部連線連結已被斷開，請將其還原：
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
++
+
+NOTE: 如果您執行的是 9.18.1 或更高版本，請跳過上述步驟並前往下一步。
+
+.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+
+
+. 對於配置了金鑰管理員的系統，選擇適當的金鑰管理器復原程序。
++
+[role="tabbed-block"]
+====
+.內建金鑰管理程式（OKM）
+--
+如果偵測到 OKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 10 。
+
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
+.. 在提示下輸入 `Y`，確認您要開始 OKM 恢復程序。
+.. 出現提示時輸入以下內容：
++
+... 密碼
+... 當提示確認時再次輸入密碼
+... 板載密鑰管理器的備份數據
++
+.顯示密碼和備份資料提示的範例
+[%collapsible]
+=====
+....
+Enter the passphrase for onboard key management:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the passphrase again to confirm:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the backup data:
+-----BEGIN BACKUP-----
+<passphrase_value>
+-----END ACKUP-----
+....
+=====
+
+
+.. 繼續監控還原程序，同時從合作夥伴節點還原適當的檔案。
++
+恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
+
++
+....
+Trying to recover keymanager secrets....
+Setting recovery material for the onboard key manager
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.keydb file.
+
+Successfully recovered keymanager secrets.
+....
+.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
+.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
++
+... 如果 HA 互連連結已斷開，請將其恢復以恢復自動交還：
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+
+
+.. 在合作夥伴節點完全啟動並提供資料之後，請在叢集中同步 OKM 金鑰。
++
+`security key-manager onboard sync`
+
+
+
+--
+.外部金鑰管理程式（EKM）
+--
+如果偵測到 EKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 11 。
+
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+.. 視金鑰是否成功還原而定、請採取下列其中一項動作：
++
+*** 如果你看到 `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696`在輸出中，EKM 配置已成功恢復。
++
+該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。轉至步驟 d。
+
+*** 如果密鑰未成功恢復，系統將停止並指示無法恢復密鑰。顯示錯誤和警告訊息。您必須重新執行復原過程：
++
+`boot_recovery -partner`
+
++
+.顯示金鑰還原錯誤和警告訊息的範例
+[%collapsible]
+=====
+....
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+
+Uptime: 11m32s
+System halting...
+
+LOADER-B>
+....
+=====
+
+
+.. 當節點重新開機時，請確認系統已重新上線且可運作，以確認開機媒體還原是否成功。
+.. 將控制器的儲存設備歸還，使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
++
+... 如果 HA 互連連結已斷開，請將其恢復以恢復自動交還：
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+
+
+
+
+--
+====
+
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local auto-giveback-of true`
+
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+.接下來呢？
+還原ONTAP映像並且節點啟動並提供資料後，您需要link:bootmedia-complete-rma.html["將故障零件退回 NetApp"]。

@@ -1,0 +1,121 @@
+---
+permalink: nx224/service-replace-drive.html 
+sidebar: sidebar 
+keywords: nx224, shelves, shelf, nx224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive 
+summary: 您可以在已開啟電源且 I/O 正在進行的情況下無中斷地更換 NX224 架中的故障磁碟機。 
+---
+= 熱插拔驅動器 - NX224 盤架
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在已開啟電源且 I/O 正在進行的情況下無中斷地更換 NX224 架中的故障磁碟機。
+
+.開始之前
+* 您正在安裝的磁碟機必須受 NX224 架支援。您可以在 https://hwu.netapp.com["NetApp Hardware Universe"^]。
+* 如果已啟用SED驗證、您必須使用ONTAP 本文檔中的SED替換說明。
++
+您可以在更換 SED 之前和之後查看必須完成的附加步驟 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html["NetApp加密概述及 CLI 文檔"^]。
+
+* 系統中的所有其他元件都必須正常運作；如果無法正常運作、請聯絡技術支援部門。
+* 驗證您要移除的磁碟機是否故障。
++
+您可以執行「儲存磁碟show -disfed'命令來驗證磁碟機是否故障。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。
+
++
+
+NOTE: 視磁碟機類型和容量而定、磁碟機可能需要數小時才會出現在故障磁碟機清單中。
+
+
+
+.關於這項工作
+* *最佳實務：*確保您的系統能夠識別並使用新合格的驅動器 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip["下載目前版​​本的磁碟認證包"^]。
++
+這可以避免出現有關驅動器資訊不當前的系統事件訊息以及由於無法識別驅動器而導致的驅動器分區阻止。  DQP 也會通知您非目前磁碟機韌體。
+
+* *最佳實務：*最佳實務是在更換 FRU 組件之前，在系統上安裝最新版本的 NVMe 架模組 (NSM) 韌體和磁碟機韌體。您可以造訪NetApp支援網站 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["下載磁碟架韌體"^]和 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["下載磁碟機韌體"^] 。
++
+[NOTE]
+====
+請勿將韌體還原至不支援機櫃及其元件的版本。
+
+====
+* 磁碟機韌體會自動更新（不中斷營運）、以安裝非最新韌體版本的新磁碟機。
++
+
+NOTE: 每兩分鐘檢查一次磁碟機韌體。
+
+* 如有需要、您可以開啟機櫃的位置（藍色）LED、以協助實際找出受影響的機櫃：「儲存櫃位置導向的修改-機櫃名稱_bidle_name_-leide-Status on」
++
+如果您不知道受影響的機櫃的「_shider_name_」、請執行「shorage sh儲存 櫃show」命令。
+
++
+機櫃有三個位置 LED ：一個在操作員顯示面板上，一個在每個 NSM 上。位置LED會持續亮起30分鐘。您可以輸入相同的命令，但使用選項將其關閉 `off`。
+
+* 打開更換磁碟機的包裝時、請保留所有包裝材料、以便在退回故障磁碟機時使用。
++
+如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
+
+
+
+.步驟
+. 請妥善接地。
+. 實體識別故障磁碟機。
++
+當磁碟機故障時、系統會將警告訊息記錄到系統主控台、指出哪個磁碟機故障。此外，機櫃操作員顯示面板上的警示（琥珀色） LED 和故障磁碟機會亮起。
+
++
+
+NOTE: 故障磁碟機上的活動（綠色）LED可亮起（持續亮起）、表示磁碟機已開機、但不應閃爍、這表示I/O活動。故障磁碟機沒有I/O活動。
+
+. 移除故障磁碟機：
++
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[移除磁碟機。]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+按下磁碟機面上的釋放按鈕、以開啟CAM握把。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+向下轉動 CAM 把手，將磁碟機從中間背板上鬆脫。
+
+
+
+ a| 
+image::../media/icon_round_3.png[編號 3]
+ a| 
+使用CAM握把將磁碟機滑出磁碟櫃、並用另一隻手支撐磁碟機。
+
+|===
+. 請等待至少70秒、再插入替換磁碟機。
++
+這可讓系統辨識磁碟機已移除。
+
+. 插入替換磁碟機：
++
+.. 在凸輪把手處於開啟位置時，用雙手插入磁碟機。
+.. 輕輕推動直到磁碟機停止。
+.. 合上CAM握把、讓磁碟機完全插入中間平面、並將握把卡入定位。
++
+請務必緩慢關閉CAM握把、使其與磁碟機正面正確對齊。
+
+
+
+. 確認磁碟機的活動（綠色）LED亮起。
++
+當磁碟機的活動LED持續亮起時、表示磁碟機已有電力。當磁碟機的活動LED燈在閃爍時、表示磁碟機已開機且I/O正在進行中。如果磁碟機韌體正在自動更新、LED會開始閃爍。
+
+. 如果您要更換另一個磁碟機、請重複步驟3到步驟7。
+

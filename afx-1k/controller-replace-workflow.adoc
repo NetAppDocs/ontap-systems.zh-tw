@@ -1,0 +1,38 @@
+---
+permalink: afx-1k/controller-replace-workflow.html 
+sidebar: sidebar 
+keywords: afx 1k, replace the controller 
+summary: 透過關閉受損的控制器、移除並更換控制器、重新配置系統設定以及驗證系統操作來開始更換 AFX 1K 儲存系統中的控制器。 
+---
+= 控制器更換工作流程 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過關閉受損的控制器、移除並更換控制器、恢復系統配置以及驗證系統操作來開始更換 AFX 1K 儲存系統中的控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:controller-replace-requirements.html["檢閱更換控制器的需求"]
+[role="quick-margin-para"]
+若要更換控制器模組、您必須符合特定需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:controller-replace-shutdown.html["關閉受損的控制器"]
+[role="quick-margin-para"]
+關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:controller-replace-move-hardware.html["更換控制器"]
+[role="quick-margin-para"]
+透過移除損壞的控制器、將 FRU 組件移至替換模組並將替換模組安裝在機櫃中來更換控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:controller-replace-system-config-restore-and-verify.html["還原並驗證系統組態"]
+[role="quick-margin-para"]
+驗證替換控制器的低階系統配置，並根據需要更新系統設定。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:controller-replace-recable-reassign-disks.html["將控制器交回"]
+[role="quick-margin-para"]
+將儲存資源的擁有權移回更換控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:controller-replace-restore-system-rma.html["完整更換控制器"]
+[role="quick-margin-para"]
+驗證邏輯介面 (LIF)、檢查叢集健康狀況，並將故障元件傳回NetApp。

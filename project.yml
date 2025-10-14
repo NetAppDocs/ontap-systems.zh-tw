@@ -44,6 +44,39 @@ sidebar:
       - section: c250
       - section: c400
       - section: c800
+  - title: AFX 系統
+    url: "/afx/index.html"
+    entries:
+    - title: 安裝與設定
+      url: "/afx/afx-install-setup.html"
+    - title: 維護
+      pdf-filename: AFX 維護
+      url: "/afx-landing-maintain/index.html"
+      entries:
+      - title: 維護綜覽
+        url: "/afx-1k/maintain-overview.html"
+      - title: 開機媒體
+        url: "/afx-1k/bootmedia-replace-workflow.html"
+      - title: 機箱
+        url: "/afx-1k/chassis-replace-workflow.html"
+      - title: 控制器
+        url: "/afx-1k/controller-replace-workflow.html"
+      - title: DIMM
+        url: "/afx-1k/dimm-replace.html"
+      - title: 風扇
+        url: "/afx-1k/fan-replace.html"
+      - title: NVRAM
+        url: "/afx-1k/nvram-replace.html"
+      - title: 非易失電池
+        url: "/afx-1k/nvdimm-battery-replace.html"
+      - title: I/O模組
+        url: "/afx-1k/io-module-overview.html"
+      - title: 電源供應器
+        url: "/afx-1k/power-supply-replace.html"
+      - title: 即時時鐘電池
+        url: "/afx-1k/rtc-battery-replace.html"
+      - title: 系統管理模組
+        url: "/afx-1k/system-management-replace.html"
   - title: 系統ASA
     url: "/allsan-landing/index.html"
     entries:
@@ -103,6 +136,7 @@ sidebar:
     url: "/drive-shelves/index.html"
     entries:
     - section: ns224
+    - section: nx224
     - section: sas3
   - title: 機櫃與軌道套件
     entries:

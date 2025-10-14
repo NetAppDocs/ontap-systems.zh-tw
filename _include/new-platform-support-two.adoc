@@ -66,9 +66,25 @@ ONTAP 9.12.1P1::
 
 
 --
+.AFX 系統
+--
+AFX 系統提供分解解決方案，旨在滿足高效能 NAS 和 S3 工作負載（包括 AI/ML 應用程式）的嚴格要求。link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html["了解有關 AFX 系統的更多信息"^] 。
+
+從以下ONTAP版本開始支援 AFX 系統。
+
+ONTAP 9.17.1::
++
+--
+* AFX 1K
+
+
+--
+
+
+--
 .ASA r2 系統
 --
-ASA R2 系統提供統一化的硬體與軟體解決方案，可針對僅限 SAN 的客戶需求，提供簡化的體驗。link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["深入瞭解 ASA R2 系統"]。
+ASA r2 系統提供統一的硬體和軟體解決方案，可針對僅使用 SAN 的客戶的需求建立簡化的體驗。link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["深入瞭解 ASA R2 系統"^] 。
 
 從下列 ONTAP 版本開始，就支援 ASA R2 系統。
 
@@ -193,10 +209,17 @@ ONTAP 9.10.1P3::
 --
 .磁碟機櫃
 --
-磁碟機櫃專為 NetApp AFF ， ASA 和 FAS 系統所設計，可協助提供數位轉型所需的效能，恢復能力和靈活度。
+驅動器架專為NetApp AFF、AFX、 ASA和FAS系統設計，有助於提供您的數位轉型所需的效能、彈性和靈活性。
 
 磁碟機櫃從下列 ONTAP 版本開始供應。
 
+ONTAP 9.17.1::
++
+--
+* 適用於 AFX 系統的 NSX224 架子
+
+
+--
 ONTAP 9.16.1.::
 +
 --

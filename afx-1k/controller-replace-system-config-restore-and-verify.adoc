@@ -1,0 +1,56 @@
+---
+permalink: afx-1k/controller-replace-system-config-restore-and-verify.html 
+sidebar: sidebar 
+keywords: afx 1k, restore and verify the system configuration, verify and set the ha state of the controller module 
+summary: 驗證控制器的 HA 配置在 AFX 1K 儲存系統中是否處於活動狀態並正常運行，並確認系統的適配器列出了所有磁碟的路徑。 
+---
+= 恢復並驗證系統配置 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+驗證控制器的 HA 配置在 AFX 1K 儲存系統中是否處於活動狀態並正常運行，並確認系統的適配器列出了所有磁碟的路徑。
+
+
+
+== 步驟 1 ：驗證 HA 組態設定
+
+您必須驗證控制器模組的「HA」狀態、並視需要更新狀態以符合您的系統組態。
+
+. 開機至維護模式： `boot_ontap maint`
++
+.. 當您看到 _ 繼續開機？ _ 時、請輸入 `y`。
++
+如果您看到 _ 系統 ID 不相符 _ 警告訊息、請輸入 `y`。
+
+
+
+. 輸入 `sysconfig -v`並擷取顯示內容。
++
+
+NOTE: 如果您看到 _personality mismatch_ ，請聯絡客戶支援部門。
+
+. 從 `sysconfig -v`輸出中、將介面卡資訊與更換控制器中的介面卡和位置進行比較。
+
+
+
+
+== 步驟 2 ：驗證磁碟清單
+
+. 驗證介面卡是否列出所有磁碟的路徑：
++
+`storage show disk -p`
+
++
+如果您發現任何問題、請檢查纜線佈線並重新拔插纜線。
+
+. 結束維護模式：
++
+`halt`
+
+
+
+.接下來呢？
+恢復並驗證 AFX 1K 儲存系統配置後，link:controller-replace-recable-reassign-disks.html["將控制器交回"] 。

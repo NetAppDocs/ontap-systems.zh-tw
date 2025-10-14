@@ -1,0 +1,185 @@
+---
+permalink: nx224/service-replace-rtc-battery.html 
+sidebar: sidebar 
+keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, real-time, clock, rtc, battery, nondisruptive, power, i/o, replace the real-time clock battery 
+summary: '您可以在已開啟電源且 I/O 正在進行的情況下，無中斷地更換故障的即時時鐘 (RTC) 電池。' 
+---
+= 更換即時時鐘電池-NX224上架
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在已開啟電源且 I/O 正在進行的情況下，無中斷地更換 NX224 架中發生故障的即時時鐘 (RTC) 電池。
+
+.開始之前
+* 機架的合作夥伴 NSM 必須啟動並運行，並且佈線正確，以便當您移除具有故障 FRU（目標 NSM）的 NSM 時，機架能夠保持連接。您可以透過以下方式驗證合作夥伴 NSM 的狀態 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["下載並執行Config Advisor"^]。
+* 系統中的所有其他元件必須正常運作。
+
+
+.關於這項工作
+* 在移除和安裝NVMe機櫃模組（NSM）之間、請至少等待70秒。
++
+這讓ONTAP 我們有足夠的時間來處理NSM移除事件。
+
+* 更換 RTC 電池，重新安裝 NSM ，然後模組開機後， ONTAP 會更新即時時鐘時間。
+* *最佳實務：*最佳實務是在更換 FRU 組件之前，在系統上安裝最新版本的 NVMe 架模組 (NSM) 韌體和磁碟機韌體。您可以造訪NetApp支援網站 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware["下載磁碟架韌體"^]和 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware["下載磁碟機韌體"^] 。
++
+[NOTE]
+====
+請勿將韌體還原至不支援機櫃及其元件的版本。
+
+====
+* 如有需要、您可以開啟機櫃的位置（藍色）LED、以協助實際找出受影響的機櫃：「儲存櫃位置導向的修改-機櫃名稱_bidle_name_-leide-Status on」
++
+如果您不知道受影響機櫃的「shelf_name」、請執行「shorage shelage show」命令。
+
++
+機櫃有三個位置 LED ：一個在操作員顯示面板上，一個在每個 NSM 上。位置LED會持續亮起30分鐘。您可以輸入相同的命令，但使用選項將其關閉 `off`。
+
+* 當您打開更換的RTC電池時、請保留所有包裝材料、以便在退回故障的RTC電池時使用。
++
+如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門： https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。
+
+
+
+.步驟
+. 請妥善接地。
+. 從包含您要更換的 FRU 的 NSM 拔下纜線：
++
+.. 打開電源線固定器，然後從電源上拔下電源線，以斷開電源線與電源的連接。
++
+電源供應器沒有電源開關。
+
+.. 從 NSM 連接埠拔下儲存纜線。
++
+記下每條纜線所連接的 NSM 連接埠。重新插入 NSM 時，請將纜線重新連接至相同的連接埠，稍後將在本程序中進行。
+
+
+
+. 移除 NSM ：
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[移除 NSM 。]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+在 NSM 的兩端，將垂直鎖定彈片向外推，以鬆開把手。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+** 朝自己的方向拉動把手，將 NSM 從中間背板上取下。
++
+拉起時，把手會從機櫃伸出。當您感覺到阻力時，請繼續拉動。
+
+** 將 NSM 滑出機櫃，放在平坦穩定的表面上。
++
+將 NSM 滑出機櫃時，請務必支撐其底部。
+
+
+
+
+
+ a| 
+image::../media/icon_round_3.png[編號 3]
+ a| 
+將把手垂直轉動（在彈片旁邊），將其移出。
+
+|===
+. 逆時針轉動指旋螺絲以鬆開模組護蓋，然後打開護蓋。
+. 找到並更換 RTC 電池。
++
+.. 取出故障電池：
++
+image::../media/drw_tp_rtc_battery_replace_ieops-2205.svg[更換RTC電池]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+輕輕旋轉 RTC 電池，使其與固定座成一定的角度。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+將 RTC 電池從其固定座中取出。
+
+|===
+.. 從防靜電包裝袋中取出替換電池。
+.. 記下RTC電池的極性、然後以一定角度向下推電池、將其插入電池座。
++
+
+NOTE: 您必須確定電池上的加號與主機板上的加號相符。
+
+.. 目視檢查電池、確定電池已完全裝入電池座、且極性正確。
+
+
+. 合上 NSM 護蓋，然後順時針旋轉指旋螺絲，直到旋緊為止。
+. 將 NSM 插入機櫃：
++
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[更換 NSM 。]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+如果您在維修 NSM 時將 NSM 把手直立（在標籤旁邊）往外移動，請將它們向下旋轉至水平位置。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+將 NSM 背面對準機櫃中的開口，然後使用把手輕推 NSM ，直到完全就位。
+
+
+
+ a| 
+image::../media/icon_round_3.png[編號 3]
+ a| 
+將把手旋轉至直立位置，並使用彈片鎖定到位。
+
+|===
+. 可重新安裝 NSM 。
++
+.. 將儲存電纜重新連接到相同的八個 NSM 連接埠。
++
+插入纜線時、連接器拉片朝上。正確插入纜線時、會卡入定位。
+
+.. 將電源線重新連接到電源，然後使用電源線固定器固定電源線。
++
+當電源供應器正常運作時、雙色LED會亮起綠燈。
+
++
+此外，兩個 NSM 連接埠 LNK （綠色） LED 都會亮起。如果LNO LED未亮起、請重新拔插纜線。
+
+
+
+. 確認包含故障 RTC 電池的 NSM 上的警示（琥珀色） LED 和機櫃操作員顯示面板不再亮起
++
+NSM 注意 LED 會在 NSM 重新開機後關閉，而不再偵測到 RTC 電池問題。這可能需要三到五分鐘的時間。
+
+. 驗證 NSM 是否已正確連接，方法是 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["運行Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+

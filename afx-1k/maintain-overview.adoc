@@ -1,0 +1,96 @@
+---
+permalink: afx-1k/maintain-overview.html 
+sidebar: sidebar 
+keywords: afx 1k maintenance, maintenance, repairing a1k, repairing afx 1k, replace afx 1k components, replace afx 1k components 
+summary: 維護 AFX 1K 儲存系統的硬體以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。 
+---
+= 維護程序概述 - AFX 1K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+維護 AFX 1K 儲存系統的硬體以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。
+
+維護過程假定 AFX 1K 儲存系統已部署為ONTAP環境中的儲存節點。
+
+
+
+== 系統元件
+
+對於 AFX 1K 儲存系統，您可以對下列元件執行維護程序。
+
+[cols="25,65"]
+|===
+
+
+ a| 
+link:bootmedia-replace-workflow.html["開機媒體"]
+ a| 
+啟動媒體儲存系統啟動時所使用的一組主要ONTAP映像檔。
+
+
+
+ a| 
+link:controller-replace-workflow.html["控制器"]
+ a| 
+控制器由主機板、韌體和軟體組成。它控制磁碟機並執行 ONTAP 作業系統軟體。
+
+
+
+ a| 
+link:dimm-replace.html["DIMM"]
+ a| 
+雙列直插式記憶體模組（ DIMM ）是一種電腦記憶體類型。它們是為了將系統記憶體新增至控制器主機板而安裝。
+
+
+
+ a| 
+link:fan-replace.html["風扇"]
+ a| 
+風扇可冷卻控制器。
+
+
+
+ a| 
+link:nvram-replace.html["NVRAM 模組"]
+ a| 
+NVRAM （非揮發性隨機存取記憶體）模組可讓控制器在系統斷電時保護並保存飛行資料。系統 ID 儲存在NVRAM模組中。更換後，控制器將使用替換NVRAM模組中的新系統 ID。
+
+
+
+ a| 
+link:nvdimm-battery-replace.html["非易失電池"]
+ a| 
+NV 電池負責為 NVRAM 模組提供電力、而在電力中斷後、正在傳輸的資料會被轉至快閃記憶體。
+
+
+
+ a| 
+link:io-module-overview.html["I/O模組"]
+ a| 
+I/O 模組（輸入 / 輸出模組）是一種硬體元件、可作為控制器與需要與控制器交換資料的各種裝置或系統之間的中介。
+
+
+
+ a| 
+link:power-supply-replace.html["電源供應器"]
+ a| 
+電源供應器在控制器中提供備援電源。
+
+
+
+ a| 
+link:rtc-battery-replace.html["即時時鐘電池"]
+ a| 
+即時時鐘電池會在電源關閉時保留系統日期和時間資訊。
+
+
+
+ a| 
+link:system-management-replace.html["系統管理模組"]
+ a| 
+系統管理模組提供控制器與主控台或筆記型電腦之間的介面、以供控制器或系統維護之用。系統管理模組包含開機媒體、並儲存系統序號（ SSN ）。
+
+|===

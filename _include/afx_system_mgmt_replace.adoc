@@ -1,0 +1,289 @@
+= 步驟1：關閉受損的控制器
+:allow-uri-read: 
+
+
+系統管理模組位於控制器背面第 8 個插槽的左側，包含用於系統管理的板載元件以及用於外部管理的連接埠。必須關閉目標控制器並斷電以更換損壞的系統管理模組或更換啟動介質。
+
+系統管理模組具有下列主機板內建元件：
+
+* 開機媒體、無需移除控制器模組即可更換開機媒體。
+* BMC
+* 管理交換器
+
+
+系統管理模組也包含下列連接埠、可供外部管理：
+
+* RJ45 序列
+* USB 序列（ Type-C ）
+* USB Type-A （開機恢復）
+* 用於 e0M 和BMC網路存取的 RJ45 乙太網路服務端口
+
+
+.開始之前
+* 確定所有其他系統元件都正常運作。
+* 確保合作夥伴控制器能夠接管受損的控制器。
+* 請務必使用您從 NetApp 收到的替換元件來更換故障的元件。
+
+
+.關於這項工作
+本程序使用下列術語：
+
+* 受損的控制器是您要執行維護的控制器。
+* 健全的控制器是受損控制器的HA合作夥伴。
+
+
+
+
+== 步驟1：關閉受損的控制器
+
+關閉或接管受損的控制器。
+
+要關閉受損控制器，您必須確定控制器的狀態，並在必要時執行控制器的儲存故障轉移接管，以便健康的控制器繼續從受損控制器儲存提供資料。
+
+.關於這項工作
+* 如果您的叢集具有四個以上的節點，則它必須達到法定人數。要查看有關節點的叢集信息，請使用 `cluster show`命令。有關 `cluster show`命令，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html["查看ONTAP叢集中的節點級詳細信息"^]。
+* 如果叢集不處於法定人數，或任何控制器（受損控制器除外）的健康狀況或資格顯示為錯誤，則必須在關閉受損控制器之前修正該問題。看link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^] 。
+
+
+.步驟
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
++
+`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+
++
+下列AutoSupport 資訊不顯示自動建立案例兩小時：
+
++
+`cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 從受損控制器的控制台停用自動交還：
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
+
++
+
+NOTE: 當您看到「您想要停用自動回饋嗎？」時，請輸入 `y`。
+
++
+.. 如果您執行的是ONTAP版本 9.17.1，且受損控制器無法啟動或已被接管，則必須在啟動受損控制器之前從正常控制器上斷開 HA 互連鏈路。這可以防止受損控制器執行自動交還。
++
+`system ha interconnect link off -node healthy-node -link 0`
+
++
+`system ha interconnect link off -node healthy-node -link 1`
+
++
+
+NOTE: 如果您執行的不是ONTAP版本 9.17.1，請跳過上述步驟並前往步驟 3。
+
+
+
+. 將受損的控制器移至載入器提示：
++
+[cols="1,2"]
+|===
+| 如果受損的控制器正在顯示... | 然後... 
+
+
+ a| 
+載入程式提示
+ a| 
+前往下一步。
+
+
+
+ a| 
+系統提示或密碼提示
+ a| 
+從健康控制器接管或停止受損控制器：
+`storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
+
+_-halt true_ 參數將受損節點帶入 LOADER 提示符。
+
+|===
+
+
+
+
+== 步驟 2 ：更換損壞的系統管理模組
+
+更換損壞的系統管理模組。
+
+. 移除系統管理模組：
++
+
+NOTE: 繼續之前、請先確定 NVRAM 目標已完成。當 NV 模組上的 LED 熄滅時， NVRAM 就會停止運作。如果 LED 閃爍，請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。
+
++
+image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[更換系統管理模組]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+系統管理模組 CAM 栓鎖
+
+|===
++
+.. 如果您尚未接地、請正確接地。
+.. 從 PSU 上拔下電源線。
+.. 移除連接到系統管理模組的所有電纜。標記電纜連接的位置，以便重新安裝模組時可以將它們重新連接到正確的連接埠。
+.. 向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。
+.. 按下系統管理模組上的 CAM 按鈕。
+.. 將凸輪桿往下轉動至最遠的位置。
+.. 將您的手指迴圈到凸輪桿上的孔中、然後將模組直接從系統中拉出。
+.. 將系統管理模組放在防靜電墊上以存取啟動媒體。
+
+
+. 將開機媒體移至替換的 System Management 模組：
++
+image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[更換開機媒體]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+系統管理模組 CAM 栓鎖
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+開機媒體鎖定按鈕
+
+
+
+ a| 
+image::../media/icon_round_3.png[編號 3]
+ a| 
+開機媒體
+
+|===
++
+.. 按「減損系統管理」模組中的藍色開機媒體鎖定按鈕。
+.. 向上旋轉開機媒體、將其滑出插槽。
+
+
+. 在替換的 System Management 模組中安裝開機媒體：
++
+.. 將開機媒體的邊緣對齊插槽外殼、然後將其輕推入插槽。
+.. 向下旋轉開機媒體、直到碰到鎖定按鈕為止。
+.. 按下藍色鎖定並將開機媒體完全向下旋轉、然後放開藍色鎖定按鈕。
+
+
+. 將替換系統管理模組安裝至機箱：
++
+.. 將替換系統管理模組的邊緣與系統開口對齊、然後將其輕輕推入控制器模組。
+.. 將模組輕輕滑入插槽、直到凸輪閂鎖開始與 I/O 凸輪銷接合、然後將凸輪閂鎖完全向上旋轉、將模組鎖定到位。
+
+
+. 將纜線管理 ARM 向上旋轉至關閉位置。
+. 可重新學習系統管理模組。
+
+
+
+
+== 步驟 3 ：重新啟動控制器模組
+
+重新啟動控制器模組。
+
+. 將電源線重新插入 PSU。
++
+系統重新啟動，通常會進入 LOADER 提示符號。
+
+. 在載入程式提示字元中輸入 _bye 。
+. 主控台訊息停止時、按 <enter> 。
++
+** 如果您看到_login_提示，請前往下一個步驟。
+** 如果您沒有看到登入提示，請登入合作夥伴節點。
+
+
+. 僅傳回具有 override-destination-checks 選項的根：
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。有關權限級別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html["了解ONTAP CLI 指令的權限級別"^]。
+
++
+如果您遇到錯誤、請聯絡 https://support.netapp.com["NetApp支援"]。
+
+. 等待交還報告完成後 5 分鐘，然後檢查故障轉移和交還狀態：
++
+`storage failover show`和 `storage failover show-giveback`
+
++
+
+NOTE: 以下命令僅在診斷模式權限等級下可用。
+
+. 如果 HA 互連鏈路已斷開，請將其恢復：
++
+`system ha interconnect link on -node healthy-node -link 0`
+
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+. 如果自動交還功能已停用，請重新啟用它： `storage failover modify -node local -auto-giveback-of true` 。
+. 如果啟用 AutoSupport 、則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`。
+
+
+
+
+== 步驟 4 ：安裝授權並登錄序號
+
+更換系統管理模組時，控制器的系統序號 (SSN) 會變更。如果受損節點使用需要標準（節點鎖定）許可證的ONTAP功能，則必須為該節點安裝新許可證。對於具有標準許可證的功能，叢集中的每個節點都應具有該功能的自己的金鑰。
+
+.關於這項工作
+在您安裝授權金鑰之前、需要標準授權的功能仍可繼續提供給節點使用。不過、如果節點是叢集中唯一擁有該功能授權的節點、則不允許對該功能進行任何組態變更。此外、在節點上使用未獲授權的功能可能會使您不遵守授權合約、因此您應該盡快在節點上安裝替換授權金鑰或金鑰。
+
+.開始之前
+需要新系統序號的NetApp許可證文件 (NLF)。有關NetApp許可證文件的更多信息，請參閱link:https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/ONTAP_9.10.1_and_later_licensing_overview["ONTAP 9.10.1 及更高版本許可概述"^]。
+
+您有 90 天的時間來安裝許可證密鑰，之後所有舊許可證都將失效。安裝有效的許可證金鑰後，您有 24 小時的時間在寬限期結束前安裝所有金鑰。
+
+
+NOTE: 如果您的系統最初運作的是ONTAP 9.15.1 或更高版本，請使用link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system["在AFF/FAS系統上更新授權的主機板更換程序"^]。如果您不確定係統的初始ONTAP版本，請參閱link:https://hwu.netapp.com["NetApp Hardware Universe"^]了解更多。
+
+.步驟
+. 如果您需要新的授權金鑰、請在上取得替換授權金鑰 https://mysupport.netapp.com/site/global/dashboard["NetApp 支援網站"] 在「軟體授權」下的「我的支援」區段中。
++
+
+NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔案上的電子郵件地址。如果您在30天內未收到附有授權金鑰的電子郵件、請聯絡技術支援部門。
+
+. 透過ONTAP系統管理員安裝每個許可證金鑰。
++
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html["使用ONTAP System Manager 新增許可證金鑰來啟用新功能"^] 。
+
+. 視需要移除舊授權：
++
+.. 檢查未使用的授權：「授權清理-未使用的-Simulate」
+.. 如果清單看起來正確、請移除未使用的授權：「授權清理-未使用」
+
+
+. 向NetApp支援部門註冊系統序號。
++
+** 如果啟用了「支援」功能、請傳送「支援」訊息來登錄序號。AutoSupport AutoSupport
+** 如果AutoSupport 未啟用此功能、請致電 https://mysupport.netapp.com["NetApp支援"] 以登錄序號。
+
+
+
+
+
+
+== 步驟5：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。
