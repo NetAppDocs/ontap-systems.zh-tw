@@ -1,103 +1,136 @@
 ---
 permalink: fas9500/overview.html 
 sidebar: sidebar 
-keywords: fas9500 overview, specifications fas9500, fas9500 components, fas9500 specifications 
-summary: FAS9500平台組的主要規格 
+keywords: FAS9500 specifications, FAS9500 specs, NetApp FAS9500, FAS9500 hardware 
+summary: FAS9500儲存系統的主要規格 
 ---
 = FAS9500的主要規格
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:revdate: The following are select specifications for the FAS9500 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+
+
+[role="lead"]
+以下是FAS9500的部分規格。訪問 https://hwu.netapp.com["NetApp Hardware Universe"^]（HWU）取得FAS9500規格的完整清單。此頁面反映的是單一高可用性對。
 
 
 
+=== FAS9500的主要規格
 
-== FAS9500的主要規格
+平台配置： FAS9500單機箱 HA 對
 
-* 平台配置： FAS9500單機箱 HA 對
-* 最大原始容量：15.0000 PB
-* 記憶體：2048.0000 GB
-* 外形尺寸：8U 機箱，附 2 個 HA 控制器
-* ONTAP版本： ONTAP：9.16.1P2
-* PCIe 擴充槽：20
-* 最低ONTAP版本： ONTAP 9.10.1P3 == 橫向擴展最大值
-* 類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：24576 GB
-* 類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：12288 GB
-* 類型：HA 對；原始容量：15.0 PB / 13.3 PiB；最大記憶體：2048.0000
+最大原始容量：15.0000 PB
 
+記憶體：2048.0000 GB
 
+外形尺寸：8U 機箱，附 2 個 HA 控制器
 
+ONTAP版本：b_startONTAP：9.16.1P2b_end
 
-== 輸入/輸出
+PCIe 擴充槽：20
+
+最低ONTAP版本： ONTAP 9.10.1P3
 
 
 
-=== 板載 I/O
+=== 橫向擴展最大值
 
-無板載 I/O 資料。
-
-
-
-=== 總輸入/輸出
-
-* 協定：乙太網路 100 Gbps；連接埠：32
-* 協定：乙太網路 25 Gbps；連接埠：64
-* 協定：乙太網路 10 Gbps；連接埠：64
-* 協定：FC 32 Gbps；連接埠：64
-* 協定：NVMe/FC 32 Gbps；連接埠：64
-* 埠：0
-* 協定：SAS 12 Gbps；連接埠：64
+|===
 
 
+| 類型 | HA 對 | 原始容量 | 最大記憶體 
 
 
-=== 管理埠
+| 網路儲存 | 12 | 180.0 PB / 159.9 PiB | 24576GB 
 
-* 協定：乙太網路 1 Gbps；連接埠：2
-* 協定：RS-232 115 Kbps；連接埠：6
-* 協定：USB 12 Mbps；連接埠：2
+
+| 儲存區域網絡 | 6 | 90.0 PB / 79.9 PiB | 12288GB 
+
+
+| HA 對 |  | 15.0 PB / 13.3 PiB | 2048.0000 
+|===
+
+
+=== 輸入輸出
 
 
 
+==== 板載 IO
 
-== 支援儲存網絡
+無板載 IO 資料。
 
-* CIFS
-* FC
-* iSCSI
-* NFS v3
-* NFS v4.0
-* NFS v4.1
-* NFS v4.2
-* NVMe/光纖通道
-* NVMe/TCP
-* S3
-* S3 與 NAS
-* SMB 2.0
-* SMB 2.1
-* SMB 2.x
-* SMB 3.0
-* SMB 3.1
-* SMB 3.1.1 == 系統環境規範
+
+
+==== 總 IO
+
+|===
+
+
+| 協定 | 連接埠 
+
+
+| 乙太網路 100 Gbps | 32 
+
+
+| 乙太網路 25 Gbps | 64 
+
+
+| 乙太網路 10 Gbps | 64 
+
+
+| 光纖通道 32 Gbps | 64 
+
+
+| NVMe/FC 32 Gbps | 64 
+
+
+|  | 0 
+
+
+| SAS 12 Gbps | 64 
+|===
+
+
+==== 管理埠
+
+|===
+
+
+| 協定 | 連接埠 
+
+
+| 乙太網路 1 Gbps | 2. 
+
+
+| RS-232 115 Kbps | 6 
+
+
+| USB 12 Mbps | 2. 
+|===
+
+
+=== 支援的儲存網絡
+
+CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP；S3；含 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.SMB 3.1.1；
+
+
+
+=== 系統環境規格
+
 * 典型功率：8004 BTU/小時
 * 最壞情況下的功率：9937 BTU/小時
-* 重量：220.5 磅 100.0 公斤
+* 重量：220.5 磅/100.0 公斤
 * 高度：8U
 * 寬度：19 吋 IEC 機架相容（17.7 吋 45.0 公分）
-* 深度：28.8 英吋（含電纜管理支架為 36.8 英吋）
-* 工作溫度/海拔/濕度：海拔高度 3048 公尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 90%，無凝結
-* 非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺），相對濕度 10% 至 95%，無冷凝，原包裝箱內
-* 雜訊：標稱聲功率 (LwAd)：7.4 聲壓 (LpAm)（旁觀者位置）：65.0 dB
+* 深度：28.8 英寸/（36.8 英寸，含電纜管理支架）
+* 工作溫度/海拔/濕度：海拔 3048 公尺/10000 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 90%，無凝結
+* 非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺）<br/>10% 至 95% 相對濕度，非冷凝，原包裝箱內
+* 雜訊：標稱聲功率 (LwAd)：7.4；br/聲壓 (LpAm)（旁觀者位置）：65.0 dB
 
 
 
 
-== 遵守
+=== 遵守
 
 * EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
 * 安全認證：BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS
@@ -109,10 +142,6 @@ summary: FAS9500平台組的主要規格
 
 
 
-== 高可用性
+=== 高可用性
 
-* 基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面
-* 冗餘熱插拔控制器
-* 冗餘熱插拔電源
-* 透過外部機架的 SAS 連線進行 SAS 帶內管理
-
+基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；[//] 2025-10-15 ontap-systems-internal/issues/1357

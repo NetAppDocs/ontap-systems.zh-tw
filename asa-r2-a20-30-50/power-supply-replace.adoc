@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a power supply 
 summary: '當ASA A20、 ASA A30 或ASA A50 儲存系統中的交流或直流電源裝置 (PSU) 發生故障或故障時，請更換裝置，以確保系統繼續接收穩定運作所需的電力。更換過程包括將故障的 PSU 與電源斷開、拔除電源線、更換故障的 PSU，然後將其重新連接到電源。' 
 ---
-= 更換電源供應器 - ASA A20 ， ASA A30 和 ASA A50
+= 熱插拔電源 - ASA A20、 ASA A30 和ASA A50
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -16,7 +16,7 @@ summary: '當ASA A20、 ASA A30 或ASA A50 儲存系統中的交流或直流電�
 .關於這項工作
 * 本程序是為了一次更換一個PSU而編寫。
 +
-PSU 是備援且可熱交換的。
+PSU 是冗餘的且可熱插拔。您不必關閉控制器來更換 PSU。
 
 * 重要事項：請勿混合使用不同效率額定值或不同輸入類型的 PSU 。永遠像這樣更換。
 * 請針對您的PSU類型使用適當的程序：AC或DC。
@@ -31,7 +31,7 @@ PSU 是備援且可熱交換的。
 
 [role="tabbed-block"]
 ====
-.選項1：更換AC PSU
+.選項 1：熱插拔交流電源
 --
 若要更換AC PSU、請完成下列步驟。
 
@@ -97,7 +97,7 @@ NOTE: 為避免損壞內部連接器，將 PSU 滑入控制器時請勿過度施
 
 
 --
-.選項2：更換DC PSU
+.選項 2：熱插拔直流電源
 --
 若要更換DC PSU、請完成下列步驟。
 

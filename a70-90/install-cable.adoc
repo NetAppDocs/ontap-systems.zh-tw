@@ -64,7 +64,7 @@ image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[雙節點無交換
 --
 .交換式叢集纜線
 --
-使用 100 GbE 纜線將連接埠 e1a 連接至 e1a ，並將連接埠 e7a 連接至 e7a 。
+使用 100 GbE 電纜將控制器 A 和 B 連接埠 e1a 和 e7a 連接到叢集網路交換器 A 和 B。
 
 .步驟
 . 將控制器 A 上的連接埠 e1a 和控制器 B 上的連接埠 e1a 連接至叢集網路交換器 A
@@ -94,7 +94,7 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[將叢集連�
 . 將連接埠 e9a 和 e9b 連接至乙太網路資料網路交換器。
 +
 
-NOTE: 為了讓叢集和 HA 流量發揮最大的系統效能、請勿使用連接埠 e1b 和 e7b 連接埠進行主機網路連線。請使用獨立的主機卡來發揮最大效能。
+NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。使用單獨的主機卡。
 
 +
 *100 GbE 纜線 *

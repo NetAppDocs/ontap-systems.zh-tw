@@ -1,10 +1,10 @@
 ---
 permalink: asa400/power-supply-replace.html 
 sidebar: sidebar 
-keywords: asa a400, asa, a400, replace, replacing, power, supply, psu, disconnect, target, psu, unplug, power, cable, removing, remove, replacement, source, replace a power supply 
-summary: 更換電源供應器（PSU）需要中斷目標PSU與電源的連接、拔下電源線、移除舊PSU並安裝替換PSU、然後將替換PSU重新連接至電源。 
+keywords: asa a400, replace a power supply 
+summary: 更換電源供應器時、需要將目標電源供應器（PSU）從電源拔下、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。 
 ---
-= 更換電源設備 - ASA A400
+= 熱插拔電源 - ASA A400
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: 更換電源供應器（PSU）需要中斷目標PSU與電源的連接�
 [role="lead"]
 更換電源供應器（PSU）時、需要將目標PSU從電源拔下、拔下電源線、移除舊的PSU並安裝替換的PSU、然後將替換的PSU重新連接至電源。
 
-* 電源供應器備援且可熱交換。
+* 電源是冗餘的，並且可熱插拔。您不必關閉控制器來更換 PSU。
 * 本程序是針對一次更換一個電源供應器而撰寫。
 +
 

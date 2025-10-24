@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace a power supply 
 summary: 當或 AFF A90 系統故障或故障時，請更換 AFF A70 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以確保運作穩定。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。 
 ---
-= 更換電源供應器 - AFF A70 和 AFF A90
+= 熱插拔電源 - AFF A70和AFF A90
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,7 +13,7 @@ summary: 當或 AFF A90 系統故障或故障時，請更換 AFF A70 或 DC 電�
 [role="lead"]
 當或 AFF A90 系統故障或故障時，請更換 AFF A70 或 DC 電源供應器（ PSU ），以確保您的系統能繼續接收所需的電力，以確保運作穩定。更換程序包括中斷故障 PSU 與電源的連接，拔下電源線，更換故障 PSU ，然後將其重新連接至電源。
 
-電源供應器備援且可熱交換。
+電源是冗餘的，並且可熱插拔。您不必關閉控制器來更換 PSU。
 
 .關於這項工作
 本程序是為了一次更換一個PSU而編寫。
@@ -25,7 +25,7 @@ IMPORTANT: 請勿混用具有不同效率額定值或不同輸入類型的PSU。
 
 [role="tabbed-block"]
 ====
-.選項1：更換AC PSU
+.選項 1：熱插拔交流電源
 --
 若要更換AC PSU、請完成下列步驟。
 
@@ -81,7 +81,7 @@ Terracotta PSU 鎖定標籤
 
 
 --
-.選項2：更換DC PSU
+.選項 2：熱插拔直流電源
 --
 若要更換DC PSU、請完成下列步驟。
 
