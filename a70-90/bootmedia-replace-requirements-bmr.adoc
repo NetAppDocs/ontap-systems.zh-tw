@@ -2,7 +2,7 @@
 permalink: a70-90/bootmedia-replace-requirements-bmr.html 
 sidebar: sidebar 
 keywords: aff a70, aff a90, replace the boot media 
-summary: 在更換AFF A70或AFF A90儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。 
+summary: 在更換AFF A70或AFF A90儲存系統中的啟動媒體之前，請先查看相關要求。 
 ---
 = 自動啟動介質恢復的要求 - AFF A70和AFF A90
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 在更換AFF A70或AFF A90儲存系統中的啟動媒體之前，請確
 
 
 [role="lead"]
-在更換AFF A70或AFF A90儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。
+在更換AFF A70或AFF A90儲存系統中的啟動媒體之前，請檢查相關要求，包括叢集連接埠功能、金鑰管理器配置和ONTAP版本相容性。
 
-自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
+自動啟動媒體復原過程需要ONTAP 9.17.1 或更高版本。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"]。
 
 檢閱下列需求。
 
@@ -28,7 +28,7 @@ summary: 在更換AFF A70或AFF A90儲存系統中的啟動媒體之前，請確
 ** /cfcard/kmip/certs/CA.pem
 
 
-* 更換受損的啟動介質時，將命令應用到正確的控制器至關重要：
+* 瞭解本流程中使用的控制器術語：
 +
 ** _受損控制器_是您正在執行維護的控制器。
 ** _健康控制器_是受損控制器的 HA 夥伴。

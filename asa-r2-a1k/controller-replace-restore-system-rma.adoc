@@ -20,12 +20,21 @@ summary: 驗證邏輯介面（生命週期）是否正在回報其主連接埠�
 將替換節點送回服務之前，請先確認邏輯介面位於其主連接埠上，檢查叢集健全狀況，然後重設自動恢復。
 
 .步驟
-. 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
+. 驗證邏輯介面是否向其主伺服器和連接埠報告：
 +
-如果有任何邏輯介面列為 false ，請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
+`network interface show -is-home false`
 
-. 檢查叢集的健全狀況。如需詳細資訊、請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["如何使用 ONTAP 中的指令碼執行叢集健全狀況檢查"^] 知識庫文章。
-. 如果停用自動還原、請重新啟用：「儲存容錯移轉修改節點本機-自動恢復true」
++
+如果任何邏輯介面被列為 false，則將其恢復為其原始連接埠：
+
++
+`network interface revert -vserver * -lif *`
+
+. 檢查集群的健康狀況。參見 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["如何使用 ONTAP 中的指令碼執行叢集健全狀況檢查"^]知識庫文章。
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`
+
 
 
 

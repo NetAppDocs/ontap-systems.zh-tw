@@ -13,56 +13,93 @@ summary: 在 FAS70 或 FAS90 系統中安裝新的開機媒體裝置之後，您
 [role="lead"]
 在 FAS70 或 FAS90 系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟手動啟動復原映像，以從合作夥伴節點復原配置。
 
-.步驟
-. 在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：「boot_recovery」
-+
-映像會從USB隨身碟下載。
+.開始之前
+* 請確保您的遊戲機已連接到故障控制器。
+* 請確認您擁有包含恢復映像的USB。
+* 確定您的系統是否使用加密。在步驟 3 中，您需要根據是否啟用加密來選擇對應的選項。
 
-. 出現提示時、請輸入映像名稱、或接受螢幕上方括弧內顯示的預設映像。
-. 還原var檔案系統：
+
+.步驟
+. 在故障控制器的 LOADER 提示字元下，從 USB 隨身碟啟動復原映像：
++
+`boot_recovery`
+
++
+恢復鏡像檔是從USB下載的。
+
+. 出現提示時，輸入影像名稱或按 *Enter* 鍵接受括號中顯示的預設影像。
+. 請使用適用於您的ONTAP版本的步驟還原 var 檔案系統：
 +
 [role="tabbed-block"]
 ====
-.選項 1 ： ONTAP 9 。 16.0 或更早版本
+.ONTAP 9 。 16.0 或更早版本
 --
-.. 在功能受損的控制器上、當您看到時 `Do you want to restore the backup configuration now?`按 `Y`
-.. 如果出現受損控制器的提示，請按 `Y`以覆寫 _/etc/sssh / host_ECDSA_key_ 。
-.. 在健全的合作夥伴控制器上、將受損的控制器設為進階權限等級： `set -privilege advanced`。
-.. 在健全的合作夥伴控制器上、執行還原備份命令： `system node restore-backup -node local -target-address impaired_node_IP_address`。
+對受損控制人和合作控制人完成以下步驟：
+
+.. *在故障控制器上：* 按下 `Y`當你看到 `Do you want to restore the backup configuration now?`
+.. *在故障控制器上：* 若出現提示，請按 `Y`覆蓋 _/etc/ssh/ssh_host_ecdsa_key_。
+.. *在夥伴控制器上：*將故障控制器的權限等級設定為進階：
 +
-* 注意： * 如果您看到成功還原以外的任何訊息、請聯絡 https://support.netapp.com["NetApp支援"]。
+`set -privilege advanced`
 
-.. 在健全的合作夥伴控制器上、將受損的控制器恢復至管理層級： `set -privilege admin`。
-.. 在功能受損的控制器上，當您看到時 `Was the restore backup procedure successful?`按 `Y`。
-.. 在功能受損的控制器上，當您看到時 `...would you like to use this restored copy now?`按 `Y`。
-.. 在功能受損的控制器上、 `Y`當系統提示您重新啟動功能受損的控制器時、按下 `ctrl-c`以進入 Boot Menu （開機功能表）。
-.. 如果系統不使用加密，請選擇 _ 選項 1 正常開機 _ ，否則請前往link:bootmedia-encryption-restore.html["還原加密"]。
-
-
---
-.選項 2 ： ONTAP 9 。 16.1 或更新版本
---
-.. 在功能受損的控制器上、當系統提示您還原備份組態時、請按 `Y`。
+.. *在夥伴控制器上：*執行復原備份指令：
 +
-還原程序成功後、此訊息會顯示在主控台 - 上 `syncflash_partner: Restore from partner complete`。
+`system node restore-backup -node local -target-address _impaired_node_IP_address_`
 
-.. 在功能受損的控制器上、出現提示時按 `Y`確認還原備份是否成功。
-.. 在功能受損的控制器上、當系統提示您使用還原的組態時、請按 `Y`。
-.. 在功能受損的控制器上、當系統提示您重新啟動節點時、請按 `Y`。
-.. 在功能受損的控制器上、 `Y`當系統提示您重新啟動功能受損的控制器時、按下 `ctrl-c`以進入 Boot Menu （開機功能表）。
-.. 如果系統不使用加密，請選擇 _ 選項 1 正常開機 _ ，否則請前往link:bootmedia-encryption-restore.html["還原加密"]。
++
+
+NOTE: 如果看到的不是恢復成功的訊息，請聯絡NetApp支援。
+
+.. *在合作夥伴控制器上：* 返回管理員層級：
++
+`set -privilege admin`
+
+.. *在故障控制器上：* 按下 `Y`當你看到 `Was the restore backup procedure successful?`
+.. *在故障控制器上：* 按下 `Y`當你看到 `...would you like to use this restored copy now?`
+.. *在故障控制器上：* 按下 `Y`當提示重啟時，按 `Ctrl-C`當您看到啟動選單時。
+.. *對於故障控制器：*執行下列其中一項操作：
++
+*** 如果系統不使用加密，請從啟動選單中選擇_選項 1 正常啟動_。
+*** 如果系統使用加密，請前往link:bootmedia-encryption-restore.html["還原加密"]。
+
+
+
+
+--
+.ONTAP 9.16.1 或更高版本
+--
+對受損控制器完成以下步驟：
+
+.. 當系統提示您還原備份組態時，請按 `Y`。
++
+恢復過程成功後，將顯示以下訊息： `syncflash_partner: Restore from partner complete`
+
+.. 按 `Y`當提示確認恢復備份成功。
+.. 按 `Y`當系統提示使用恢復的配置。
+.. 按 `Y`當系統提示重啟節點時。
+.. 按 `Y`當系統提示再次重啟時，請按 `Ctrl-C`當您看到啟動選單時。
+.. 執行下列其中一項：
++
+*** 如果系統不使用加密，請從啟動選單中選擇_選項 1 正常啟動_。
+*** 如果系統使用加密，請前往link:bootmedia-encryption-restore.html["還原加密"]。
+
+
 
 
 --
 ====
-
-
 . 將主控台纜線連接至合作夥伴控制器。
-. 使用"shorage容錯移轉恢復-fromnode"命令來歸還控制器。
-. 如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。
-. 如果啟用 AutoSupport 、請使用命令還原 / 恢復自動建立個案 `system node autosupport invoke -node * -type all -message MAINT=END` 。
+. 將控制器的儲存設備歸還，使其恢復正常運作：
 +
-* 注意： * 如果程序失敗、請聯絡 https://support.netapp.com["NetApp支援"]。
+`storage failover giveback -fromnode local`
+
+. 如果您停用了自動返還功能，請重新啟用它：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 

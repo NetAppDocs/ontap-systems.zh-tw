@@ -2,7 +2,7 @@
 permalink: asa-r2-70-90/chassis-replace-workflow.html 
 sidebar: sidebar 
 keywords: asa r2 a70, a90, replace the chassis workflow 
-summary: 開始更換 ASA A70 或 ASA A90 儲存系統的機箱，方法是關閉控制器，更換機箱，以及驗證系統作業。 
+summary: 若要更換ASA A70 或ASA A90 儲存系統中的機箱，請先關閉控制器，然後更換機箱，並驗證系統運作。 
 ---
 = 機箱更換工作流程： ASA A70 和 ASA A90
 :allow-uri-read: 
@@ -11,24 +11,24 @@ summary: 開始更換 ASA A70 或 ASA A90 儲存系統的機箱，方法是關�
 
 
 [role="lead"]
-開始更換 ASA A70 或 ASA A90 儲存系統的機箱，方法是關閉控制器，更換機箱，以及驗證系統作業。
+若要更換ASA A70 或ASA A90 儲存系統中的機箱，請先關閉控制器，然後更換機箱，並驗證系統運作。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:chassis-replace-requirements.html["檢閱機箱更換需求"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:chassis-replace-requirements.html["審查底盤更換要求"]
 [role="quick-margin-para"]
-檢閱機箱更換需求。
+審查機箱更換要求，包括系統相容性、所需工具、 ONTAP憑證和組件功能驗證。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:chassis-replace-prepare.html["準備更換機箱"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:chassis-replace-prepare.html["準備更換底盤"]
 [role="quick-margin-para"]
-準備更換機箱，方法是找到系統，收集系統認證和必要工具，驗證是否已收到替換機箱，以及標記系統纜線。
+準備更換機箱時，請找到系統、收集憑證和工具、驗證更換機箱並標記電纜。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:chassis-replace-shutdown.html["關閉控制器"]
 [role="quick-margin-para"]
-關閉控制器、以便在機箱上執行維護。
+關閉控制器以安全地進行機箱維護。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:chassis-replace-move-hardware.html["更換機箱"]
 [role="quick-margin-para"]
-將元件從損壞的機箱移到更換的機箱，以更換機箱。
+將故障機箱中的組件移至替換機箱中。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]
 [role="quick-margin-para"]
-將控制器開機，歸還控制器，並將故障機箱歸還 NetApp ，以完成機箱更換。
+完成更換的方法是啟動控制器，執行返還操作，並將故障機箱退回給NetApp。

@@ -1,0 +1,166 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 判斷您的系統上啟用的金鑰管理程式：
++
+[cols="1a,2a"]
+|===
+| 版本ONTAP | 執行此命令 
+
+
+ a| 
+ONTAP 9.14.1 或更新版本
+ a| 
+`security key-manager keystore show`
+
+** 如果 EKM 已啟用、 `EKM`則會列在命令輸出中。
+** 如果 OKM 已啟用、 `OKM`則會列在命令輸出中。
+** 如果未啟用金鑰管理程式、 `No key manager keystores configured`則會列在命令輸出中。
+
+
+
+
+ a| 
+ONTAP 9 。 13.1 或更早版本
+ a| 
+`security key-manager show-key-store`
+
+** 如果 EKM 已啟用、 `external`則會列在命令輸出中。
+** 如果 OKM 已啟用、 `onboard`則會列在命令輸出中。
+** 如果未啟用金鑰管理程式、 `No key managers configured`則會列在命令輸出中。
+
+
+|===
+. 根據系統中是否配置了金鑰管理器，執行下列操作之一：
++
+*如果未配置金鑰管理員：*
+
++
+您可以安全地關閉故障控制器，並繼續執行關機程序。
+
++
+*如果配置了金鑰管理員（EKM 或 OKM）：*
+
++
+.. 輸入下列查詢指令，顯示金鑰管理員中驗證金鑰的狀態：
++
+`security key-manager key query`
+
+.. 查看輸出結果並檢查其中的值。 `Restored`柱子。此列指示金鑰管理員（EKM 或 OKM）的身份驗證金鑰是否已成功復原。
+
+
+. 請根據您的密鑰管理員類型完成相應的操作步驟：
++
+[role="tabbed-block"]
+====
+.外部金鑰管理程式（EKM）
+--
+根據數值完成以下步驟。 `Restored`柱子。
+
+*如果所有按鍵都顯示 `true`在「已復原」欄位中：*
+
+您可以安全地關閉故障控制器，並繼續執行關機程序。
+
+*如果任何鍵顯示的值不是 `true`在「已復原」欄位中：*
+
+.. 將外部金鑰管理認證金鑰還原到叢集中的所有節點：
++
+`security key-manager external restore`
+
++
+如果指令執行失敗，請聯絡NetApp支援。
+
+.. 確認所有身份驗證金鑰已恢復：
++
+`security key-manager key query`
+
++
+確認 `Restored`列顯示 `true`適用於所有身份驗證金鑰。
+
+.. 如果所有金鑰都已恢復，則可以安全地關閉故障控制器並繼續執行關機程序。
+
+
+--
+.內建金鑰管理程式（OKM）
+--
+根據數值完成以下步驟。 `Restored`柱子。
+
+*如果所有按鍵都顯示 `true`在「已復原」欄位中：*
+
+.. 備份 OKM 資訊：
++
+... 切換到進階權限模式：
++
+`set -priv advanced`
+
++
+進入 `y`當提示繼續。
+
+... 顯示金鑰管理備份資訊：
++
+`security key-manager onboard show-backup`
+
+... 將備份資訊複製到單獨的檔案或日誌檔案中。
++
+如果在更換過程中需要手動還原 OKM，您將需要此備份資訊。
+
+... 返回管理員模式：
++
+`set -priv admin`
+
+
+
+.. 您可以安全地關閉故障控制器，並繼續執行關機程序。
+
+
+*如果任何鍵顯示的值不是 `true`在「已復原」欄位中：*
+
+.. 同步板載密鑰管理器：
++
+`security key-manager onboard sync`
+
++
+出現提示時，請輸入 32 個字元的字母數字組合的機載密鑰管理密碼。
+
++
+
+NOTE: 這是您在最初配置車載密鑰管理器時建立的叢集範圍密碼短語。如果您沒有此密碼短語，請聯絡NetApp支援。
+
+.. 請確認所有驗證金鑰已恢復：
++
+`security key-manager key query`
+
++
+確認 `Restored`列顯示 `true`對於所有身份驗證金鑰和 `Key Manager`類型展 `onboard`。
+
+.. 備份 OKM 資訊：
++
+... 切換到進階權限模式：
++
+`set -priv advanced`
+
++
+進入 `y`當提示繼續。
+
+... 顯示金鑰管理備份資訊：
++
+`security key-manager onboard show-backup`
+
+... 將備份資訊複製到單獨的檔案或日誌檔案中。
++
+如果在更換過程中需要手動還原 OKM，您將需要此備份資訊。
+
+... 返回管理員模式：
++
+`set -priv admin`
+
+
+
+.. 您可以安全地關閉故障控制器，並繼續執行關機程序。
+
+
+--
+====
+

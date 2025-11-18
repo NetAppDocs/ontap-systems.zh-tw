@@ -16,19 +16,23 @@ summary: 在 ASA A20 ， ASA A30 或 ASA A50 儲存系統中安裝新的開機�
 在恢復過程中，系統會檢查是否已啟用加密，並判斷所使用的金鑰加密類型。如果啟用金鑰加密，系統會引導您完成適當的還原步驟。
 
 .開始之前
-* 對於 OKM，您需要叢集範圍的密碼以及備份資料。
-* 對於 EKM ，您需要從合作夥伴節點複本下列檔案：
+* 確定您的密鑰管理器類型：
 +
-** /ccfcard/kmip/servers.cfg 檔案。
-** /ccfcard/kmip/certs/client.crt 檔案。
-** /ccfcard/kmip/certs/client.key 檔案。
-** /ccfcard/kmip/certs/ca.pem 檔案。
+** 板載金鑰管理器 (OKM)：需要叢集範圍的密碼短語和備份數據
+** 外部金鑰管理員 (EKM)：需要來自夥伴節點的下列檔案：
++
+*** `/cfcard/kmip/servers.cfg`
+*** `/cfcard/kmip/certs/client.crt`
+*** `/cfcard/kmip/certs/client.key`
+*** `/cfcard/kmip/certs/CA.pem`
+
+
 
 
 
 
 .步驟
-. 在 Loader 提示字元中、輸入命令：
+. 在 LOADER 提示字元下，啟動啟動媒體復原程序：
 +
 `boot_recovery -partner`
 
@@ -42,24 +46,7 @@ summary: 在 ASA A20 ， ASA A30 或 ASA A50 儲存系統中安裝新的開機�
 +
 程序完成並顯示 `Installation complete`訊息。
 
-. 系統會檢查加密和加密類型，並顯示兩個訊息中的其中一個。視所顯示的訊息而定，請採取下列其中一項動作：
-+
-
-IMPORTANT: 有時候，程序可能無法識別系統上是否已設定金鑰管理程式。它會顯示錯誤訊息，詢問是否已為系統設定金鑰管理程式，然後詢問已設定的金鑰管理程式類型。解決此問題後，程序將會繼續。
-
-+
-.顯示組態錯誤尋找提示的範例
-[%collapsible]
-====
-....
-Error when fetching key manager config from partner ${partner_ip}: ${status}
-
-Has key manager been configured on this system
-
-Is the key manager onboard
-
-....
-====
+. 系統檢查加密情況，並顯示下列訊息之一：
 +
 [cols="1,2"]
 |===
@@ -69,13 +56,14 @@ Is the key manager onboard
  a| 
 `key manager is not configured. Exiting.`
  a| 
-系統上未安裝加密。完成下列步驟：
+系統未安裝加密功能。
 
-.. 顯示登入提示時登入節點，並將儲存設備交回：
+.. 等待登入提示出現。
+.. 登入節點並歸還儲存空間：
 +
 '容錯移轉還原-ofnode_disapped_node_name_'
 
-.. 移至步驟 5 ，啟用停用的自動恢復功能。
+.. 如果自動返還功能已停用，請前往步驟 6 重新啟用功能。
 
 
 
@@ -83,22 +71,20 @@ Is the key manager onboard
  a| 
 `key manager is configured.`
  a| 
-移至步驟 4 以還原適當的金鑰管理程式。
-
-節點進入啟動選單並運行：
-
-** 選項 10 適用於內建金鑰管理程式（ OKM ）的系統。
-** 選項 11 適用於具有外部金鑰管理程式（ EKM ）的系統。
-
+已安裝加密功能。請轉至步驟 4 恢復金鑰管理員。
 
 |===
-. 選取適當的金鑰管理程式還原程序。
++
+
+NOTE: 如果系統無法辨識金鑰管理員配置，則會顯示錯誤訊息，並提示您確認是否已配置金鑰管理員以及配置類型（板載或外部）。請回答提示以繼續。
+
+. 請使用適合您配置的步驟還原金鑰管理員：
 +
 [role="tabbed-block"]
 ====
 .內建金鑰管理程式（OKM）
 --
-如果偵測到 OKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 10 。
+系統顯示以下訊息並開始執行啟動選單選項 10：
 
 ....
 key manager is configured.
@@ -106,12 +92,10 @@ Entering Bootmenu Option 10...
 
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
-.. 在提示下輸入 `Y`，確認您要開始 OKM 恢復程序。
-.. 出現提示時輸入以下內容：
-+
-... 密碼
-... 當提示確認時再次輸入密碼
-... 板載密鑰管理器的備份數據
+.. 進入 `y`在提示時確認您是否要開始 OKM 恢復過程。
+.. 出現提示時，請輸入機載金鑰管理密碼。
+.. 出現確認提示時，請再次輸入密碼。
+.. 出現提示時，輸入車載金鑰管理員的備份資料。
 +
 .顯示密碼和備份資料提示的範例
 [%collapsible]
@@ -131,11 +115,9 @@ Enter the backup data:
 -----END BACKUP-----
 ....
 =====
-
-
-.. 繼續監控還原程序，同時從合作夥伴節點還原適當的檔案。
+.. 監控復原過程，看它如何從夥伴節點復原對應的檔案。
 +
-恢復程序完成後、節點將重新開機。下列訊息表示恢復成功：
+恢復過程完成後，節點將重新啟動。以下資訊顯示恢復成功：
 
 +
 ....
@@ -146,68 +128,33 @@ Trying to delete any existing km_onboard.keydb file.
 
 Successfully recovered keymanager secrets.
 ....
-.. 當節點重新開機時、請確認系統已重新上線且運作正常、以確認開機媒體恢復成功。
+.. 節點重新啟動後，驗證系統是否恢復上線並正常運作。
 .. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
 +
 '容錯移轉還原-ofnode_disapped_node_name_'
 
-.. 在合作夥伴節點完全啟動並提供資料之後，請在叢集中同步 OKM 金鑰。
+.. 在夥伴節點完全啟動並開始提供資料服務後，同步叢集中的 OKM 金鑰：
 +
 `security key-manager onboard sync`
+
++
+如果自動返還功能已停用，請前往步驟 5 重新啟用功能。
 
 
 
 --
 .外部金鑰管理程式（EKM）
 --
-如果偵測到 EKM ，系統會顯示下列訊息，並開始執行 BootMenu Option 11 。
+系統顯示以下訊息並開始運行啟動選單選項 11：
 
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
-.. 下一步取決於您的系統執行的 ONTAP 版本：
+.. 出現提示時，請輸入EKM設定：
 +
-[cols="1,2"]
-|===
-| 如果您的系統正在執行... | 執行此動作... 
-
-
- a| 
-ONTAP 9.16.0.
- a| 
-... 按 `Ctlr-C`退出 BootMenu Option 11 。
-... 按下 `Ctlr-C`以結束 EKM 組態程序並返回開機功能表。
-... 選取 BootMenu Option 8 。
-... 重新啟動節點。
+... 請輸入客戶端證書的內容。 `/cfcard/kmip/certs/client.crt`文件：
 +
-如果已設定，則 `AUTOBOOT`節點會重新開機，並使用來自合作夥伴節點的組態檔案。
-
-+
-如果 `AUTOBOOT`未設定，請輸入適當的開機命令。節點會重新開機，並使用來自合作夥伴節點的組態檔案。
-
-... 重新啟動節點，以保護開機媒體分割區。
-... 繼續執行步驟 C
-
-
-
-
- a| 
-ONTAP 9.16.1 及更高版本
- a| 
-繼續下一步。
-
-|===
-.. 出現提示時，請輸入下列 EKM 組態設定：
-+
-[cols="2"]
-|===
-| 行動 | 範例 
-
-
- a| 
-從檔案輸入用戶端憑證內容 `/cfcard/kmip/certs/client.crt`。
- a| 
 .顯示用戶端憑證內容範例
 [%collapsible]
 =====
@@ -217,11 +164,8 @@ ONTAP 9.16.1 及更高版本
 -----END CERTIFICATE-----
 ....
 =====
-
-
- a| 
-輸入檔案中的用戶端金鑰檔案內容 `/cfcard/kmip/certs/client.key`。
- a| 
+... 請輸入客戶端密鑰檔案的內容。 `/cfcard/kmip/certs/client.key`文件：
++
 .顯示用戶端金鑰檔案內容的範例
 [%collapsible]
 =====
@@ -231,11 +175,8 @@ ONTAP 9.16.1 及更高版本
 -----END RSA PRIVATE KEY-----
 ....
 =====
-
-
- a| 
-輸入檔案中的 KMIP 伺服器 CA 檔案內容 `/cfcard/kmip/certs/CA.pem`。
- a| 
+... 從下列位置輸入 KMIP 伺服器 CA(s) 檔案的內容： `/cfcard/kmip/certs/CA.pem`文件：
++
 .顯示 KMIP 伺服器檔案內容範例
 [%collapsible]
 =====
@@ -245,11 +186,8 @@ ONTAP 9.16.1 及更高版本
 -----END CERTIFICATE-----
 ....
 =====
-
-
- a| 
-輸入檔案中的伺服器組態檔案內容 `/cfcard/kmip/servers.cfg`。
- a| 
+... 輸入伺服器設定檔內容 `/cfcard/kmip/servers.cfg`文件：
++
 .顯示伺服器組態檔案內容的範例
 [%collapsible]
 =====
@@ -267,14 +205,9 @@ xxx.xxx.xxx.xxx:5696.verify=true
 xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
 ....
 =====
-
-
- a| 
-如果出現提示，請輸入合作夥伴的 ONTAP 叢集 UUID 。
-
-您可以使用以下方式從夥伴節點檢查叢集 UUID `cluster identify show`命令。
- a| 
-.顯示 ONTAP 叢集 UUID 範例
+... 如果出現提示，請輸入夥伴節點的ONTAP叢集 UUID。您可以使用下列指令從夥伴節點檢查叢集 UUID： `cluster identify show`命令。
++
+.顯示ONTAP集群 UUID 提示範例
 [%collapsible]
 =====
 ....
@@ -286,19 +219,13 @@ Enter the ONTAP Cluster UUID: <cluster_uuid_value>
 System is ready to utilize external key manager(s).
 ....
 =====
-
-
- a| 
-如果出現提示，請輸入節點的暫用網路介面和設定。
-
-您需要輸入：
-
-... 連接埠的 IP 位址
-... 連接埠的網路遮罩
-... 預設網關的 IP 位址
-
- a| 
-.顯示暫時網路設定的範例
+... 如果出現提示，請輸入節點的臨時網路介面和設定：
++
+**** 連接埠的 IP 位址
+**** 連接埠的網路遮罩
+**** 預設網關的 IP 位址
++
+.顯示臨時網路設定提示範例
 [%collapsible]
 =====
 ....
@@ -316,23 +243,19 @@ Trying to recover keys from key servers....
 [status=SUCCESS reason= message=]
 ....
 =====
-|===
-.. 視金鑰是否成功還原而定、請採取下列其中一項動作：
-+
-*** 如果你看到 `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696`在輸出中，EKM 配置已成功恢復。
-+
-該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。轉至步驟 d。
 
-*** 如果密鑰未成功恢復，系統將停止並指示無法恢復密鑰。顯示錯誤和警告訊息。您必須重新執行復原過程：
-+
-`boot_recovery -partner`
 
+
+
+.. 驗證金鑰恢復狀態：
++
+*** 如果你看到 `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696`輸出結果顯示，EKM 配置已成功恢復。該過程從夥伴節點恢復相應的檔案並重啟節點。進行下一步。
+*** 如果密鑰恢復失敗，系統將停止運作並顯示錯誤和警告訊息。從 LOADER 提示字元重新執行復原過程： `boot_recovery -partner`
 +
 .顯示金鑰還原錯誤和警告訊息的範例
 [%collapsible]
 =====
 ....
-
 ERROR: kmip_init: halting this system with encrypted mroot...
 WARNING: kmip_init: authentication keys might not be available.
 ********************************************************
@@ -353,10 +276,13 @@ LOADER-B>
 =====
 
 
-.. 當節點重新開機時，請確認系統已重新上線且可運作，以確認開機媒體還原是否成功。
+.. 節點重新啟動後，驗證系統是否恢復上線並正常運作。
 .. 將控制器的儲存設備歸還，使其恢復正常運作：
 +
 '容錯移轉還原-ofnode_disapped_node_name_'
+
++
+如果自動返還功能已停用，請前往步驟 5 重新啟用功能。
 
 
 

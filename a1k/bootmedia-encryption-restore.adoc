@@ -13,33 +13,27 @@ summary: 在 AFF A1K 系統中的替換開機媒體上還原加密，以確保�
 [role="lead"]
 在 AFF A1K 系統中的替換開機媒體上還原加密，以確保資料持續受到保護。更換程序包括驗證金鑰可用度，重新套用加密設定，以及確認資料的安全存取。
 
-您必須使用開機媒體取代程序開始時所擷取的設定、完成特定於已啟用內建金鑰管理程式（ OKM ）、 NetApp 儲存加密（ NSE ）或 NetApp 磁碟區加密（ NVE ）的系統的步驟。
+根據您的金鑰管理員類型，完成相應的步驟以恢復系統加密。如果您不確定您的系統使用哪個金鑰管理器，請檢查您在啟動媒體更換程序開始時所擷取的設定。
 
-根據系統上設定的金鑰管理程式、請從開機功能表中選取下列其中一個選項以還原。
-
-* link:["選項 1 ：還原 Onboard Key Manager 組態"]
-* link:["選項 2 ：還原外部金鑰管理程式組態"]
-
-
-
-
-== 選項 1 ：還原 Onboard Key Manager 組態
-
+[role="tabbed-block"]
+====
+.內建金鑰管理程式（OKM）
+--
 從 ONTAP 開機功能表還原內建金鑰管理程式（ OKM ）組態。
 
 .開始之前
-* 在還原 OKM 組態時、請確定您擁有下列資訊：
-+
-** 輸入的叢集範圍複雜密碼 https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html["同時啟用內建金鑰管理"]。
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html["Onboard Key Manager 的備份資訊"]。
+請確保您已準備好以下資訊：
 
-
-* 請先執行 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase["如何驗證內建金鑰管理備份和叢集範圍的複雜密碼"] 程序再繼續。
+* 在輸入群集範圍的密碼短語時 https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html["啟用車載密鑰管理"]
+* https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html["Onboard Key Manager 的備份資訊"]
+* 使用以下方式驗證您是否擁有正確的密碼短語和備份資料： https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase["如何驗證內建金鑰管理備份和叢集範圍的複雜密碼"]程式
 
 
 .步驟
-. 將主控台纜線連接至目標控制器。
-. 從 ONTAP 開機功能表中、從開機功能表中選取適當的選項。
+*關於受損控制者：*
+
+. 將遊戲機連接線連接到故障控制器。
+. 從ONTAP啟動選單中，選擇對應的選項：
 +
 [cols="1a,2a"]
 |===
@@ -53,7 +47,7 @@ summary: 在 AFF A1K 系統中的替換開機媒體上還原加密，以確保�
 
 .顯示開機功能表範例
 [%collapsible]
-====
+=====
 ....
 
 Please choose one of the following:
@@ -72,7 +66,7 @@ Please choose one of the following:
 Selection (1-11)? 10
 
 ....
-====
+=====
 
 
  a| 
@@ -82,7 +76,7 @@ Selection (1-11)? 10
 
 .顯示開機功能表範例
 [%collapsible]
-====
+=====
 ....
 
 Please choose one of the following:
@@ -99,36 +93,36 @@ Please choose one of the following:
 Selection (1-19)? recover_onboard_keymanager
 
 ....
-====
+=====
 |===
-. 確認您要繼續恢復程序。
+. 出現提示時，請確認您是否要繼續恢復過程：
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):`
 
-====
+=====
 . 輸入叢集範圍的複雜密碼兩次。
 +
-輸入複雜密碼時、主控台不會顯示任何輸入。
+輸入密碼時，控制台不顯示任何輸入內容。
 
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 `Enter the passphrase for onboard key management:`
 
 `Enter the passphrase again to confirm:`
 
-====
-. 輸入備份資訊。
+=====
+. 請輸入備份資訊：
 +
-.. 將整個內容從 BEGIN 備份線貼到終端備份線。
+.. 貼上從 BEGIN BACKUP 行到 END BACKUP 行的所有內容，包括破折號。
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 ....
 Enter the backup data:
 
@@ -166,15 +160,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ---------------------------END BACKUP---------------------------
 
 ....
-====
-.. 在輸入結束時按兩次 ENTER 鍵。
+=====
+.. 輸入內容結束後，按兩次回車鍵。
 +
-恢復程序即告完成。
+恢復過程完成，並顯示以下訊息：
+
++
+`Successfully recovered keymanager secrets.`
 
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 ....
 
 Trying to recover keymanager secrets....
@@ -191,18 +188,18 @@ Successfully recovered keymanager secrets.
 ***********************************************************************************
 
 ....
-====
-
-
+=====
 +
 
-WARNING: 如果顯示的輸出不是、請勿繼續 `Successfully recovered keymanager secrets`。執行疑難排解以修正錯誤。
+WARNING: 如果顯示的輸出結果不是以下內容，請勿繼續操作： `Successfully recovered keymanager secrets` 。進行故障排除以修正錯誤。
 
-. 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
+
+
+. 選擇選項 `1`從啟動選單繼續啟動進入ONTAP。
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 ....
 
 ***********************************************************************************
@@ -225,24 +222,30 @@ WARNING: 如果顯示的輸出不是、請勿繼續 `Successfully recovered keym
 Selection (1-11)? 1
 
 ....
-====
-. 確認控制器的主控台顯示下列訊息。
+=====
+. 確認控制器控制台顯示以下資訊：
 +
 `Waiting for giveback...(Press Ctrl-C to abort wait)`
 
-. 從合作夥伴節點輸入下列命令、即可恢復合作夥伴控制器。
 +
-`storage failover giveback -fromnode local -only-cfo-aggregates true`。
+*關於合作夥伴控制器：*
 
-. 只使用 CFO 集合體開機後、請執行下列命令。
+. 歸還受損控制器：
++
+`storage failover giveback -fromnode local -only-cfo-aggregates true`
+
++
+*關於受損控制者：*
+
+. 僅使用 CFO 聚合啟動後，同步金鑰管理員：
 +
 `security key-manager onboard sync`
 
-. 輸入Onboard Key Manager的全叢集密碼。
+. 出現提示時，輸入叢集範圍內的板載密鑰管理器密碼短語。
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 ....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
@@ -250,63 +253,58 @@ Enter the cluster-wide passphrase for the Onboard Key Manager:
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
 ....
-====
+=====
 +
 
-NOTE: 如果同步成功、就會傳回叢集提示、而不會傳回其他訊息。如果同步失敗、則會在返回叢集提示之前顯示錯誤訊息。在修正錯誤並成功執行同步處理之前、請勿繼續。
+NOTE: 如果同步成功，則傳回群集提示符，不包含其他訊息。如果同步失敗，則會在傳回群集提示符之前顯示錯誤訊息。請勿繼續操作，直到錯誤修正且同步成功為止。
 
-. 輸入下列命令、確保所有金鑰都已同步。
+. 確認所有金鑰均已同步：
 +
-`security key-manager key query -restored false`。
-
-+
-`There are no entries matching your query.`
+`security key-manager key query -restored false`
 
 +
+該命令不應傳回任何結果。如果出現任何結果，請重複同步命令，直到沒有結果返回為止。
 
-NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
++
+*關於合作夥伴控制器：*
 
-. 輸入下列命令、從合作夥伴中移出節點。
+. 歸還受損控制器：
 +
 `storage failover giveback -fromnode local`
 
-. 如果您停用了自動恢復功能、請輸入下列命令來還原。
+. 如果停用自動恢復功能，請還原：
 +
 `storage failover modify -node local -auto-giveback true`
 
-. 如果啟用 AutoSupport 、請輸入下列命令、以還原自動建立案例。
+. 如果啟用 AutoSupport 、請還原自動建立案例：
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 
-
-
-== 選項 2 ：還原外部金鑰管理程式組態
-
+--
+.外部金鑰管理程式（EKM）
+--
 從 ONTAP 開機功能表還原外部金鑰管理程式組態。
 
 .開始之前
-您需要下列資訊來還原外部金鑰管理程式（ EKM ）組態。
+從另一個叢集節點或備份中收集以下檔案：
 
-* 從另一個叢集節點複本 /ccfcard/kmip/servers.cfg 檔案、或以下資訊：
-+
-** KMIP 伺服器位址。
-** KMIP 連接埠。
-
-
-* 來自其他叢集節點或用戶端憑證的檔案複本 `/cfcard/kmip/certs/client.crt`。
-* 來自其他叢集節點或用戶端金鑰的檔案複本 `/cfcard/kmip/certs/client.key`。
-* 來自其他叢集節點或 KMIP 伺服器 CA 的檔案複本 `/cfcard/kmip/certs/CA.pem`。
+* `/cfcard/kmip/servers.cfg`檔案或 KMIP 伺服器位址和連接埠
+* `/cfcard/kmip/certs/client.crt`文件（客戶端證書）
+* `/cfcard/kmip/certs/client.key`文件（客戶端密鑰）
+* `/cfcard/kmip/certs/CA.pem`檔案（KMIP 伺服器 CA 憑證）
 
 
 .步驟
-. 將主控台纜線連接至目標控制器。
-. 從 ONTAP 開機功能表中選取選項 11 。
+*關於受損控制者：*
+
+. 將遊戲機連接線連接到故障控制器。
+. 選擇選項 `11`從ONTAP啟動選單。
 +
 .顯示開機功能表範例
 [%collapsible]
-====
+=====
 ....
 
 (1)  Normal Boot.
@@ -322,35 +320,30 @@ NOTE: 在還原的參數中篩選 FALSE 時、不應出現任何結果。
 (11) Configure node for external key management.
 Selection (1-11)? 11
 ....
-====
-. 出現提示時、請確認您已收集必要資訊。
+=====
+. 出現提示時，請確認您已收集到所需資訊：
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 ....
 Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}
 Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
 Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
 Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
 ....
-====
-. 出現提示時、請輸入用戶端和伺服器資訊。
+=====
+. 出現提示時，請輸入客戶端和伺服器資訊：
 +
-.顯示提示
-[%collapsible]
-====
-....
-Enter the client certificate (client.crt) file contents:
-Enter the client key (client.key) file contents:
-Enter the KMIP server CA(s) (CA.pem) file contents:
-Enter the server configuration (servers.cfg) file contents:
-....
-====
+.. 輸入客戶端憑證（client.crt）檔案的內容，包括 BEGIN 行和 END 行。
+.. 輸入客戶端金鑰（client.key）檔案的內容，包括 BEGIN 和 END 行。
+.. 輸入 KMIP 伺服器 CA(s) (CA.pem) 檔案內容，包括 BEGIN 和 END 行。
+.. 請輸入KMIP伺服器IP位址。
+.. 輸入 KMIP 伺服器連接埠（按 Enter 鍵使用預設連接埠 5696）。
 +
 .顯示範例
 [%collapsible]
-====
+=====
 ....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
@@ -378,26 +371,31 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ....
-====
+=====
 +
-輸入用戶端和伺服器資訊後、恢復程序即告完成。
+恢復過程完成，並顯示以下訊息：
+
++
+`Successfully recovered keymanager secrets.`
 
 +
 .顯示範例
 [%collapsible]
-====
+=====
 ....
 System is ready to utilize external key manager(s).
 Trying to recover keys from key servers....
 Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 ....
-====
-. 從開機功能表中選取選項 1 、以繼續開機至 ONTAP 。
+=====
+
+
+. 選擇選項 `1`從啟動選單繼續啟動進入ONTAP。
 +
 .顯示範例提示
 [%collapsible]
-====
+=====
 ....
 
 ***************************************************************************
@@ -419,16 +417,18 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
-====
-. 如果停用自動恢復功能，請將其還原。
+=====
+. 如果停用自動恢復功能，請還原：
 +
 `storage failover modify -node local -auto-giveback true`
 
-. 如果啟用 AutoSupport 、請輸入下列命令、以還原自動建立案例。
+. 如果啟用 AutoSupport 、請還原自動建立案例：
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 
+--
+====
 .接下來呢？
 在開機媒體上還原加密後link:bootmedia-complete-rma.html["將故障零件退回 NetApp"]，您需要。

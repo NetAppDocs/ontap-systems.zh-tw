@@ -13,6 +13,8 @@ summary: 在更換 AFF C80 系統中的開機媒體之前，請確保您符合�
 [role="lead"]
 在更換 AFF C80 系統中的開機媒體之前，請確保您符合成功更換所需的要求。這包括確保您擁有具有適當儲存容量的 USB 快閃磁碟機，並確認您擁有正確的替換開機裝置。
 
+如果您的系統運作的是ONTAP 9.17.1 及更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"] 。
+
 .USB 隨身碟
 * 確保您有一個格式化為 FAT32 的 USB 隨身碟。
 * USB 必須具有足夠的儲存容量來容納 `image_xxx.tgz`文件。

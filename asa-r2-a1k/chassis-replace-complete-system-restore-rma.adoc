@@ -15,9 +15,9 @@ summary: 重新啟動控制器，驗證系統健康狀況，並將故障部件�
 
 
 
-== 步驟 1 ：啟動控制器，然後將控制器交回
+== 步驟 1：啟動控制器並驗證系統健康狀況
 
-控制器重新開機後，請啟動 ONTAP ，然後將控制器交回。
+控制器重新啟動後，啟動ONTAP，交還控制器，並驗證儲存系統運作狀況。
 
 .步驟
 . 檢查主控台輸出：
@@ -34,21 +34,11 @@ summary: 重新啟動控制器，驗證系統健康狀況，並將故障部件�
 .. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+. 捐贈完成後，運行 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]驗證儲存系統的運作狀況，並修正遇到的任何問題。
 
 
 
 
-== 步驟 2 ：驗證儲存系統健全狀況
-
-控制器歸還儲存設備後，您應該使用檢查整體健全狀況 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
-
-.步驟
-. 恢復完成後，請執行 Active IQ Config Advisor 以驗證儲存系統的健全狀況。
-. 修正您遇到的任何問題。
-
-
-
-
-== 步驟3：將故障零件歸還給NetApp
+== 步驟 2 ：將故障零件退回 NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。
