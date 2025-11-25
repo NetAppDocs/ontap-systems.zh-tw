@@ -63,7 +63,7 @@ summary: 在AFF A400系統中安裝新的啟動媒體設備後，您可以啟動
 +
 '容錯移轉還原-ofnode_disapped_node_name_'
 
-.. 如果自動返還功能已停用，請前往步驟 6 重新啟用功能。
+.. 前往 <<reenable-auto-giveback,重新啟用自動返還功能>> 如果它被禁用了。
 
 
 
@@ -71,13 +71,16 @@ summary: 在AFF A400系統中安裝新的啟動媒體設備後，您可以啟動
  a| 
 `key manager is configured.`
  a| 
-已安裝加密功能。請轉至步驟 4 恢復金鑰管理員。
+已安裝加密功能。前往<<restore-key-manager,恢復密鑰管理器>>。
 
 |===
 +
 
 NOTE: 如果系統無法辨識金鑰管理員配置，則會顯示錯誤訊息，並提示您確認是否已配置金鑰管理員以及配置類型（板載或外部）。請回答提示以繼續。
 
+
+
+[[restore-key-manager]]
 . 請使用適合您配置的步驟還原金鑰管理員：
 +
 [role="tabbed-block"]
@@ -138,7 +141,7 @@ Successfully recovered keymanager secrets.
 `security key-manager onboard sync`
 
 +
-如果自動返還功能已停用，請前往步驟 5 重新啟用功能。
+前往 <<reenable-auto-giveback,重新啟用自動返還功能>> 如果它被禁用了。
 
 
 
@@ -282,7 +285,7 @@ LOADER-B>
 '容錯移轉還原-ofnode_disapped_node_name_'
 
 +
-如果自動返還功能已停用，請前往步驟 5 重新啟用功能。
+前往 <<reenable-auto-giveback,重新啟用自動返還功能>> 如果它被禁用了。
 
 
 
@@ -290,6 +293,7 @@ LOADER-B>
 ====
 
 
+[[reenable-auto-giveback]]
 . 如果自動恢復已停用、請重新啟用：
 +
 `storage failover modify -node local -auto-giveback true`

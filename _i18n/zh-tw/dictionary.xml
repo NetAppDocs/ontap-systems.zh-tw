@@ -1191,8 +1191,6 @@
   <block id="4ccbda321ca169104f4e4cac42fd679f" category="paragraph">如果您需要RMA號碼或更換程序的其他協助、請聯絡技術支援部門：<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>電話：888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。</block>
   <block id="01d36c3de356a203f6380095e17d5483" category="list-text">如果您想要手動指派更換磁碟機的磁碟機所有權、則必須停用自動磁碟機指派（如果已啟用）。</block>
   <block id="ba85497a31a9938c9ee8b64479f5eb73" category="paragraph">如果啟用自動磁碟指派、輸出會在「Auto assign」（自動指派）欄中顯示「On」（開啟）（針對每個控制器模組）。</block>
-  <block id="b1fed0a03aae9e2c00ae3f49b6c9b739" category="list-text">如果您要更換另一個磁碟機、請重複步驟3到步驟7。</block>
-  <block id="231236e14086359b3d54dea9955a700b" category="list-text">如果您在步驟1中停用自動磁碟機指派、請手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派：</block>
   <block id="04d800fa50ce1545b4418475b40e3ed5" category="doc">NS224磁碟櫃</block>
   <block id="c96ba587407b7de20ae8f5750c50673c" category="summary">當系統尚未執行任何功能時、或是在將機櫃連接至系統之前熱新增機櫃時、您可以變更系統中的機櫃ID ONTAP 。您也可以在ONTAP 啟用且執行更新時變更機櫃ID（控制器模組可用於提供資料）、機櫃中的所有磁碟機均為無擁有、備援或是外聯Aggregate的一部分。</block>
   <block id="cc621d5c504973952f1b7498f7fbb7c5" category="doc">變更機櫃ID - NS224機櫃</block>
@@ -1340,7 +1338,6 @@
   <block id="0d6f5d9adb2ab6c3f617bc7eda2e0f8c" category="list-text">從您要移除的機櫃拔下纜線：</block>
   <block id="a007137d2370650b20ec02dbf15cc9ab" category="list-text">拔下儲存設備纜線（從機櫃到控制器）。</block>
   <block id="7afc6825591dcf8e4f43bb0ebb7eda2a" category="list-text">從機架或機櫃實際移除機櫃。</block>
-  <block id="ea5d3bb3a6f3f53ef42084bdf7da0a58" category="list-text">如果您要移除多個機櫃、請重複步驟2至5。</block>
   <block id="99718262b8a1bcade48d62a6ea4c523c" category="paragraph">否則、請前往下一步。</block>
   <block id="fb1672d3b9cbaeecaea5d014d4664b11" category="list-text">如果您在移除磁碟機所有權時停用自動磁碟機指派、請重新啟用：「torage disk option modify -autodassign on（磁碟選項修改自動指派開啟）」</block>
   <block id="67d6ac4bf6a91c77849e039f6cf3781f" category="paragraph">您可以在兩個控制器模組上執行命令。</block>
@@ -1431,14 +1428,12 @@
   <block id="08285761db2e8c5630e9cd2b950779e4" category="list-text">將NSM A連接埠e0b纜線連接至控制器B插槽7連接埠b.</block>
   <block id="201cca5254621335487b601c90501130" category="list-text">將NSM B連接埠e0A纜線連接至控制器B插槽3連接埠a</block>
   <block id="107cc1b513bc08cd1a86f749d88fc763" category="list-text">將NSM B連接埠e0b纜線連接至控制器A插槽7連接埠b.</block>
-  <block id="3992e90365cd83d200a23714fd7144bd" category="list-text">如果您要熱新增第二個機櫃、請完成「'helf 2'」子步驟；否則、請前往步驟3。</block>
   <block id="a740221e4a860e8ea31ec9d725dfdeec" category="paragraph">機櫃2.</block>
   <block id="2e3b7d6e769a48d4603c0ca4b6b9d83f" category="admonition">這些子步驟假設您是從機櫃連接埠e0a佈線至插槽7中具備RoCE功能的I/O模組、而非插槽3（與機櫃1的佈線子步驟相關）開始佈線。</block>
   <block id="db9e9985ce3384ccc7437da17ab1b6d1" category="list-text">將NSM A連接埠e0a纜線連接至控制器A插槽7連接埠a</block>
   <block id="debc8e5f2759d5538f54f284b45dbc57" category="list-text">將NSM A連接埠e0b纜線連接至控制器B插槽3連接埠b.</block>
   <block id="cccebc538728b3b256a38000d9f82966" category="list-text">將NSM B連接埠e0A纜線連接至控制器B插槽7連接埠a</block>
   <block id="fc10913effb15f2e7e45af08900dd916" category="list-text">將NSM B連接埠e0b纜線連接至控制器A插槽3連接埠b.</block>
-  <block id="0dcadfb972a7b539c769d330f7ccc286" category="list-text">前往步驟3。</block>
   <block id="44602264e094d019e88a336cd27d0156" category="paragraph">下圖顯示第一個和第二個熱新增磁碟櫃的纜線佈線：</block>
   <block id="7f52c439783621a5d09c0e1eb50d4319" category="admonition">此步驟假設您已在插槽5中安裝具備RoCE功能的PCIe卡。</block>
   <block id="47f5ff4e183a793933d1f47d1d5d5b04" category="admonition">此步驟假設您已在插槽5和插槽3中安裝具備RoCE功能的PCIe卡。</block>
@@ -2408,12 +2403,10 @@
   <block id="b88824e6d8603c9320c904617d837190" category="list-text">連接好熱新增磁碟櫃之後ONTAP 、即可識別出它們：如果啟用磁碟擁有權自動指派、就會指派磁碟擁有權；如果需要、磁碟櫃（IOM）韌體和磁碟機韌體應該會自動更新； 如果您的組態已啟用頻內ACP、則會自動在熱新增磁碟櫃上啟用ACP。</block>
   <block id="07c4fdfdcd4fa801d7558b1c815fb28d" category="list-text">如果您想要為熱新增的磁碟櫃手動指派磁碟擁有權、則必須停用磁碟擁有權自動指派（如果已啟用）；否則、請前往下一步。</block>
   <block id="d9ce71b03c108dcad1fcc7bdde993749" category="paragraph">如果堆疊中的磁碟是由HA配對中的兩個控制器所擁有、則需要手動指派磁碟擁有權。</block>
-  <block id="2493fd5b459ed2fddb90c3c88dd93d84" category="paragraph">您可以停用磁碟擁有權自動指派功能、然後在熱新增磁碟櫃佈線之前、接著在步驟7中、在熱新增磁碟櫃佈線之後重新啟用磁碟擁有權。</block>
   <block id="92116092ac990ea4250874487fb2b721" category="list-text">驗證是否已啟用磁碟擁有權自動指派：「儲存磁碟選項show」</block>
   <block id="b21eb2f8b72a60653498f3a1f1e0241d" category="paragraph">如果啟用磁碟擁有權自動指派、輸出會在「Auto assign」（自動指派）欄中顯示「On」（開啟）（針對每個控制器）。</block>
   <block id="5e7b2771491c1f74a4de4ccf47100e80" category="list-text">如果已啟用磁碟擁有權自動指派、您需要停用：「磁碟選項modify -node_node_name_e -autodassign off'」</block>
   <block id="5ae892a217fddefdc39690fe39f16ed0" category="paragraph">您需要停用HA配對中兩個控制器上的磁碟擁有權自動指派。</block>
-  <block id="3f876ffd29608a6fdd6c56b2bcd2373a" category="list-text">如果您要直接將磁碟櫃堆疊熱新增至控制器、請完成下列子步驟；否則、請前往步驟3。</block>
   <block id="aab34a0f20291dc4eca51492b7dda4a1" category="list-text">如果您要熱新增的堆疊有多個磁碟櫃、請將機櫃對機櫃的連線纜線；否則、請前往子步驟b</block>
   <block id="e35dc83f4e69b7ee09cb18fffad51f70" category="list-text">對IOM B重複執行子步驟I</block>
   <block id="4532855c15fd578a54978e01af8f6908" category="paragraph">您要將堆疊以四路徑HA或四路徑連線連接至控制器</block>
@@ -2839,7 +2832,6 @@
   <block id="0526a53962b9d1e594dbbbe4f645ef86" category="list-text">如果您要移除整個磁碟櫃堆疊、請完成下列子步驟；否則、請執行下一步：</block>
   <block id="271fd74603b356597cb36da3cd6bb967" category="list-text">拔下路徑A（IOM A）和路徑B（IOM B）上的所有SAS纜線。</block>
   <block id="5749b0bc6aac212bd52cf2ceb0bc7e06" category="paragraph">這包括控制器對機櫃纜線、以及您要移除堆疊中所有磁碟櫃的機櫃對機櫃纜線。</block>
-  <block id="f1bf50366739c2deaea051a7aec101e7" category="list-text">前往步驟9。</block>
   <block id="5049f1ff4aa9257508eb89a945b63e9d" category="list-text">如果您要從堆疊中移除一或多個磁碟櫃（但保留堆疊）、請完成適用的子步驟集、重新恢復路徑A（IOM A）堆疊連線、以跳過您要移除的磁碟櫃：</block>
   <block id="8dc554d95262c3a398cad315b4d70e62" category="paragraph">如果您要移除堆疊中的多個磁碟櫃、請一次完成一組適用的子步驟、一次完成一個磁碟櫃。</block>
   <block id="7dd4f77a1d8a0add44b6d788582b503a" category="admonition">連接連接埠之前、請至少等待10秒鐘。SAS纜線連接器採用鎖定式設計；若方向正確放入SAS連接埠、連接器會卡入定位、而磁碟櫃SAS連接埠LNK LED會亮起綠色。若為磁碟櫃、請插入SAS纜線連接器、拉片朝下（位於連接器底部）。</block>
@@ -2916,7 +2908,6 @@
   <block id="e36a558e7bc20ae0e75bec222964d055" category="paragraph">數位顯示器上的兩個數字都會開始閃爍、而操作員顯示面板上的黃色LED會在約五秒鐘後亮起、提醒您、擱置中的磁碟櫃ID尚未生效。</block>
   <block id="9c221bef9744439a86ecbb6f88e250ff" category="list-text">重新啟動磁碟櫃、使機櫃ID生效。</block>
   <block id="205f1a8463c3864309c68834a88b379a" category="paragraph">您必須關閉兩個電源開關、等待適當的時間、然後重新開啟電源、才能完成電源循環。</block>
-  <block id="0de4baec8d6e3dac5c52267ff0631bac" category="list-text">針對每個額外的磁碟櫃重複步驟1到9。</block>
   <block id="c6f83377a8f707e5d4500fa6c34141e8" category="list-text">確認您的系統沒有重複的機櫃ID。</block>
   <block id="79a8830b6eb260be5b914306191dde58" category="paragraph">當兩個或多個磁碟櫃具有相同的ID時、系統會指派一個等於或大於100的軟體ID號碼給重複的磁碟櫃。您必須變更軟體ID（重複）號碼。</block>
   <block id="26a846deb04c0d63c063041ad0fa15ef" category="list-text">執行Active IQ Config Advisor 此功能可檢查是否有重複的機櫃ID警示、或執行「shorage sh家 中的show -Fields sh家 中的id」命令、查看已在使用中的機櫃ID清單、包括任何重複的ID。</block>
@@ -7840,7 +7831,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a03ae9a3c924d10a64e97ade6d86ee2b" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="49e34f6a53fbd8084ac48e4e6738a264" category="inline-link-macro-rx"></block></block>
   <block id="6cfe7f4574d90cb894d56246a1414fa2" category="paragraph">如果您在準備熱新增時停用自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</block>
   <block id="132976e79206d2260fc5308469634e7a" category="list-text">請參閱您的平台機型文件、瞭解 PCIe 卡或 I/O 模組安裝說明。</block>
-  <block id="5fc0fcdc83b05fb4f062a9fa1fe851d9" category="paragraph">否則、您必須完成步驟4到7來設定連接埠。</block>
   <block id="9db058e565a88604b6d87108ed139c51" category="paragraph"><block ref="6e972b196ebbc48e0575e24a92c8720d" prefix="" category="inline-code"></block></block>
   <block id="eb3110f9f105714e88d250d436520c1d" category="paragraph"><block ref="91bc4c8d50e9272a27ce62a39b4bf1a6" prefix="" category="inline-code"></block></block>
   <block id="a61cf40b2e5406ed295d4e38c35656df" category="paragraph">根據您的平台機型而定、在熱新增額外的機櫃之前、您可能需要在不同插槽中的兩組連接埠之間重新配置現有的機櫃（在安裝額外的具備 ROCE 功能的 PCIe 卡或 I/O 模組之後）、以避免插槽故障。</block>
@@ -9716,7 +9706,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="32b07ce753eb975c01de4108e4155ee7" category="list-text">如果您確定HA配對中的非專用的RoCE連接埠未設定為供儲存使用、則設定這些連接埠是不中斷營運的程序。您不需要重新啟動控制器，除非其中一個或兩個控制器都處於維護模式。此程序假設兩個控制器都未處於維護模式。</block>
   <block id="eb86e0541d4143c0318c9a167d5ce6fc" category="list-text">如果 HA 配對執行的是 ONTAP 9.7 ，則會在<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>欄<block ref="a10311459433adf322f2590a4987c423" prefix=" " category="inline-code"></block>中<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>顯示非專屬連接埠<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
   <block id="65889651ccf1dd661e3408010cd1a0cf" category="list-text">如果 HA 配對執行的是 ONTAP 9.7 ，則會在<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>欄<block ref="075ae3d2fc31640504f814f60e5ef713" prefix=" " category="inline-code"></block>中<block ref="7ed427253695f845f908985c78b9f390" prefix=" " category="inline-code"></block>顯示非專屬連接埠<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
-  <block id="52dba85eb288ea326ebb5d4df4417d51" category="list-text">對第二個控制器重複步驟 4 。</block>
   <block id="10251d86a3f1068222c5cda1b3021db3" category="open-title">AFF A70 、 AFF A90 或 AFF C80</block>
   <block id="b736a5ee7f8805d6653d8da0961406f7" category="list-text">如果您要熱新增第二個機櫃、請在每個控制器的插槽 2 和插槽 10 中、將第一個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
   <block id="500e77e5799330d4d88ed16c0d87beee" category="paragraph">子步驟假設現有機櫃已連接至每個控制器上插槽 2 中具有切入功能的 I/O 模組。</block>
@@ -11668,10 +11657,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b3d28b344c55260439945f6caed47e6c" category="list-text">連接埠的網路遮罩</block>
   <block id="0471579d34255a0d9b6386ea78d8fd44" category="list-text">預設網關的 IP 位址</block>
   <block id="240de215578701a602c7ee68dfdcb425" category="list-text">如果你看到<block ref="ac676b9b4d7ad5923ab3fe5f9ae60aa8" prefix=" " category="inline-code"></block>在輸出中，EKM 配置已成功恢復。</block>
-  <block id="42701a1ff76597ba7c5638bce0d2af9b" category="paragraph">該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。轉至步驟 d。</block>
   <block id="0c387b1b026e4f3547ed2f50da22a39e" category="list-text">如果密鑰未成功恢復，系統將停止並指示無法恢復密鑰。顯示錯誤和警告訊息。您必須重新執行復原過程：</block>
   <block id="1c27eb77b57ec03853c37b1f761a36dc" category="list-text">如果您想要手動指派替換磁碟機的磁碟機所有權，則需要停用自動磁碟機指派（如果已啟用）。</block>
-  <block id="9fb832dec5cd2e7d518230b1cfb70020" category="list-text">如果要更換另一個驅動器，請重複步驟 3 至 7。</block>
   <block id="9b36684b5751c1f43c35d80933024e6d" category="paragraph"><block ref="e546c7c0f19a803f32f47d3907849b62" prefix="" category="inline-code"></block></block>
   <block id="6d81f890ae97b7a0ebc76c301009ec65" category="paragraph">接觸<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要 RMA 號碼或更換程式的額外協助。</block>
   <block id="e55cf153efde1bb25a6c8b4b2a77e3a3" category="paragraph">聯絡技術支援<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要 RMA 號碼或更換程式的額外協助。</block>
@@ -11796,7 +11783,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2658eb11cd0ca39cfc2d7394809fff01" category="list-text">將MetroCluster連接埠設定為啟動器：<block ref="2c8f25cb974f5d5b1e520b768a31cde6" prefix=" " category="inline-code"></block></block>
   <block id="262d6ff37dc133df81dc97d7127c21ca" category="list-text">重新安裝控制器模組：</block>
   <block id="aae9b254c24cc3785086114d3d117232" category="list-text">如果要更換另一個驅動器，請重複步驟 3 至 7。</block>
-  <block id="7c9d4c7520ca0f8e1dc57c8c26289d65" category="list-text">如果要更換另一個驅動器，請重複步驟 4 至步驟 8。</block>
   <block id="6ab51c87498e3948742262b60aeeee14" category="paragraph">啟動映像的自動恢復涉及系統自動識別並選擇適當的啟動選單選項。它使用合作夥伴節點上的啟動映像在AFF A1K 儲存系統中的替換啟動媒體上重新安裝ONTAP 。</block>
   <block id="1598afb8f3a2e9755fe6204af9dbaa8d" category="inline-link-macro">自動啟動恢復程序</block>
   <block id="a3484b2f8cbf6736974f7d02ebc99cb3" category="paragraph">如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用<block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。</block>
@@ -13639,7 +13625,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="22dd5ea8b069cf90dfb213fcf3136023" category="list-text">如果您的叢集具有四個以上的節點，則它必須達到法定人數。要查看有關節點的叢集信息，請使用<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>命令。有關<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>命令，請參閱<block ref="812d195420030f92a12eef2f47c24053" category="inline-link-macro-rx"></block>。</block>
   <block id="3339c1abb6a38c2a82f66c0780893536" category="list-text">如果叢集不處於法定人數，或任何控制器（受損控制器除外）的健康狀況或資格顯示為錯誤，則必須在關閉受損控制器之前修正該問題。看<block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block> 。</block>
   <block id="eea7e5b28d3e1c4e8e7e7e8e310d7994" category="list-text">如果您執行的是ONTAP版本 9.17.1，且受損控制器無法啟動或已被接管，則必須在啟動受損控制器之前從正常控制器上斷開 HA 互連鏈路。這可以防止受損控制器執行自動交還。</block>
-  <block id="78fa259f1575c0e9b637544144ce5988" category="admonition">如果您執行的不是ONTAP版本 9.17.1，請跳過上述步驟並前往步驟 3。</block>
   <block id="c30938ccf076c4ec0d3f2ba34fd8f16e" category="paragraph">從健康控制器接管或停止受損控制器：<block ref="db99891238c978ac8afa2f5699f2917d" prefix=" " category="inline-code"></block></block>
   <block id="4ab0c772ea9a8193b238eb673a9fb06f" category="paragraph">_-halt true_ 參數將受損節點帶入 LOADER 提示符。</block>
   <block id="cea31bd46ad20e8b209bfbe53fc5e093" category="paragraph">更換系統管理模組時，控制器的系統序號 (SSN) 會變更。如果受損節點使用需要標準（節點鎖定）許可證的ONTAP功能，則必須為該節點安裝新許可證。對於具有標準許可證的功能，叢集中的每個節點都應具有該功能的自己的金鑰。</block>
@@ -14129,8 +14114,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4754524f8b29b8650fe75329e6042256" category="paragraph">系統未安裝加密功能。</block>
   <block id="509770c8dda30e85db49f8642db6ca11" category="list-text">等待登入提示出現。</block>
   <block id="0e24346f9a92e6d04d57b5ccead814c3" category="list-text">登入節點並歸還儲存空間：</block>
-  <block id="78f0d70cb3d505c2399506f81065c747" category="list-text">如果自動返還功能已停用，請前往步驟 6 重新啟用功能。</block>
-  <block id="0e8a095551e7e50c3ca3d504bd2ad77b" category="paragraph">已安裝加密功能。請轉至步驟 4 恢復金鑰管理員。</block>
   <block id="20d2bf4f3f943fcc1e340e99a4d368ba" category="admonition">如果系統無法辨識金鑰管理員配置，則會顯示錯誤訊息，並提示您確認是否已配置金鑰管理員以及配置類型（板載或外部）。請回答提示以繼續。</block>
   <block id="4aac054c51ae042dd6c06bdad5d13845" category="list-text">請使用適合您配置的步驟還原金鑰管理員：</block>
   <block id="564c83534ce0095bf811b4f45e8a7587" category="paragraph">系統顯示以下訊息並開始執行啟動選單選項 10：</block>
@@ -14142,7 +14125,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3ba7e3971d948d8fa9119ea7d3326cd3" category="paragraph">恢復過程完成後，節點將重新啟動。以下資訊顯示恢復成功：</block>
   <block id="5403c23d7cc21fd6b1016c3d10c93711" category="list-text">節點重新啟動後，驗證系統是否恢復上線並正常運作。</block>
   <block id="1041ca100654e89f3959fe8698d3fe03" category="list-text">在夥伴節點完全啟動並開始提供資料服務後，同步叢集中的 OKM 金鑰：</block>
-  <block id="682b9eab5d02570a6044fbb81a96818d" category="paragraph">如果自動返還功能已停用，請前往步驟 5 重新啟用功能。</block>
   <block id="c611091d645837a22ce250179398219c" category="paragraph">系統顯示以下訊息並開始運行啟動選單選項 11：</block>
   <block id="51d6f35e7cccefb24fbfc4c082b44026" category="list-text">出現提示時，請輸入EKM設定：</block>
   <block id="abc81377b7e3cbf13c4b821e795e2424" category="list-text">請輸入客戶端證書的內容。<block ref="d606236dedb6ed649b29651c1ec53a99" prefix=" " category="inline-code"></block>文件：</block>
@@ -14311,4 +14293,21 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9ec706133a8a1899257edbed12b2d39a" category="sidebar">ASA系統提供簡化的專用 SAN 體驗，可為使用 FCP 或 iSCSI 協定的企業關鍵任務資料庫和其他 SAN 工作負載提供持續的資料可用性。</block>
   <block id="3898e1d169485951c2a49a4a69789502" category="sidebar">安裝和設定ASA系統</block>
   <block id="10b7e05447c2dbec670e886811f71bcb" category="sidebar">維護ASA系統</block>
+  <block id="c239ad11021e49c97ea2bf8272c6588a" category="paragraph">該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。繼續進行下一步。</block>
+  <block id="774ee8b1398c2f16e1d77ddac27a50b0" category="inline-xref">重新啟用自動返還功能</block>
+  <block id="d3218fd897781ec8a86658de26e1ddf1" category="list-text">前往 <block ref="7aacd8b9a7e4a74d04304c7c616e940e" category="inline-xref-macro-rx"></block> 如果它被禁用了。</block>
+  <block id="2ff143fefd61054fa148afd75a8c98be" category="inline-xref">恢復密鑰管理器</block>
+  <block id="1f74fd97b861dbc201b74171805bda09" category="paragraph">已安裝加密功能。前往<block ref="74744f98b89b6a4dbb3b3e013250a83f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f1d6db02f39f4711fa05b5edf32c6425" category="list-text">如果您要快速新增第二個擱板，請完成「`擱板 2`」子步驟；否則，請前往下一步。</block>
+  <block id="be7b8247eb925c7add4470f65b89e936" category="list-text">如果要更換另一塊硬碟，請重複上述步驟。</block>
+  <block id="d2fddd9e240829fc1dc928ed61196fbf" category="list-text">如果在此程序的早期階段停用了自動磁碟機分配，請手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派：</block>
+  <block id="4cca325ed840b8ff6bedb9a2bcf0134f" category="paragraph">請聯絡技術支援。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要RMA編號或更換流程的其他協助，請致電888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。 //2025-11-17 ontap-systems-internal/issues/1391</block>
+  <block id="696e3a46f755e71b2efb8fc66ed7bf86" category="paragraph">否則，熱添加貨架程序就完成了。====//2025-11-17 ontap-systems-internal/issues/1391</block>
+  <block id="ac5e04a2b567f923df0569c7177f596f" category="list-text">若要移除多個層架，請重複上述步驟。</block>
+  <block id="959de3aca4b6b23d81011f18ca2b15f7" category="paragraph">否則，您需要按照以下步驟配置連接埠。</block>
+  <block id="75fc199dd3b8c9f1fc952121556e245d" category="list-text">對第二個控制器重複上述步驟。</block>
+  <block id="b7cf733f61d2f31373ecbc67f036248f" category="list-text">如有需要，請跳至重新啟用自動分配部分（以下步驟）。</block>
+  <block id="98b8aea422580c306bf6d9bfa94dd665" category="list-text">對每個額外的磁碟架重複上述步驟。</block>
+  <block id="f843ac1c00181fdda1ccb77040024169" category="paragraph">在為熱添加磁碟機連接線纜之前，您需要停用磁碟所有權自動分配；而在為熱添加磁碟櫃連接線纜之後，您還需要重新啟用該功能。</block>
+  <block id="ec25bc86b3fe7d64ec86315f71195fc0" category="list-text">如果您要將一疊磁碟櫃直接熱添加到控制器，請完成以下子步驟；否則，請轉到下一步。</block>
 </blocks>
