@@ -1,0 +1,40 @@
+---
+permalink: asa800/controller-replace-requirements.html 
+sidebar: sidebar 
+keywords: asa a800, prerequisite, replace the controller module 
+summary: 在更換ASA A800系統的控制器之前，請確保滿足成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。 
+---
+= 更換控制器的要求 - ASA A800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換ASA A800系統的控制器之前，請確保滿足成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。
+
+檢閱更換控制器模組的需求。
+
+* 所有磁碟機櫃都必須正常運作。
+* 健康的控制器必須能夠接管被替換的控制器（在本程式中稱為受損控制器）。
+* 請勿使用此方法進行控制器升級。請參閱 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["選擇控制器硬體升級程序"]供參考。
+* 如果您的系統採用MetroCluster配置，請查看 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"]確定是否採用此程序。
+* 以從NetApp收到的現場可更換單元 (FRU) 取代故障組件。
+* 更換控制器模組時，請使用相同型號的控制器模組。您無法透過更換控制器模組來升級系統。
+* 在此過程中，您不能更換驅動器或驅動器架。
+* 啟動設備位於系統背面的系統管理模組上。更換控制器模組時，無需行動啟動設備。
+* 瞭解本流程中使用的控制器術語：
++
+** 受損的控制器是指將被替換的控制器。
+** 替換控制器是指替換故障控制器的新控制器。
+** _Healthy控制器是正常運作的控制器。
+
+
+* 將控制器的控制台輸出擷取到文字日誌檔案中。
++
+這為解決更換過程中出現的任何問題提供了程序記錄。
+
+
+
+.接下來呢？
+在您查看了更換ASA A800控制器的要求之後，您需要：link:controller-replace-shutdown.html["關閉受損的控制器"] 。

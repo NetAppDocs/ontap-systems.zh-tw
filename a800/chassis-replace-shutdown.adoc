@@ -11,6 +11,8 @@ summary: 若要更換機箱、您必須關閉控制器。
 
 
 [role="lead"]
+更換機殼時，請關閉AFF A800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。
+
 此程序適用於具有兩個節點組態的系統。有關在服務叢集時正常關機的詳細資訊，請參閱 https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage["正常關機並開機儲存系統解決方案指南 - NetApp 知識庫"]。
 
 .開始之前
@@ -64,3 +66,6 @@ NOTE: 對於在 StrictSync 模式下使用 SnapMirror 同步操作的叢集： `
 
 . 等待每個控制器停止並顯示載入器提示。
 
+
+.接下來呢？
+關閉控制器後，link:chassis-replace-move-hardware.html["更換機箱"] 。

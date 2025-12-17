@@ -172,12 +172,51 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 --
 若要更換 NVRAM 模組、請將其放在機箱的插槽 4/5 中、然後依照特定步驟順序進行。
 
+. 如果您尚未接地、請正確接地。
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
+.影片 - 確認駕駛座椅
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[將驅動器安裝到位]
 
-. 移至機箱背面。如果您尚未接地、請正確接地。
-. 如果您尚未接地、請正確接地。
+. 根據系統狀態檢查控制器驅動器：
++
+.. 在運作正常的控制器上，檢查是否有任何處於降級狀態、故障狀態或兩者兼具的狀態：
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<Check-missing-drives,進入下一個子步驟，檢查是否有缺少的驅動器。>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[檢查缺少磁碟機]]檢查檔案系統或備用磁碟機是否有缺失磁碟機問題：
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<Go-to-the-rear,進入下一步>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[前往後方]]前往底盤後方。
 . 拔下控制器的 PSU。
 +
 
@@ -253,11 +292,51 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 --
 若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。
 
+. 如果您尚未接地、請正確接地。
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
+.影片 - 確認駕駛座椅
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[將驅動器安裝到位]
 
-. 移至機箱背面。如果您尚未接地、請正確接地。
+. 根據系統狀態檢查控制器驅動器：
++
+.. 在運作正常的控制器上，檢查是否有任何處於降級狀態、故障狀態或兩者兼具的狀態：
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<Check-missing-drives,進入下一個子步驟，檢查是否有缺少的驅動器。>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[檢查缺少磁碟機]]檢查檔案系統或備用磁碟機是否有缺失磁碟機問題：
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<Go-to-the-rear,進入下一步>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[前往後方]]前往底盤後方。
 . 拔下控制器的 PSU。
 +
 

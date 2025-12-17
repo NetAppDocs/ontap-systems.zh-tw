@@ -11,7 +11,7 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 
 
 [role="lead"]
-在系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。
+在ASA A800系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟啟動復原映像，並從夥伴節點復原設定。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
@@ -104,3 +104,6 @@ NOTE: 如果看到的不是恢復成功的訊息，請聯絡NetApp支援。
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.接下來呢？
+引導恢復映像後，您需要link:bootmedia-encryption-restore.html["在開機媒體上還原加密"]。

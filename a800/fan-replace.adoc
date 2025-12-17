@@ -11,11 +11,13 @@ summary: 更換故障的風扇模組時、您必須將控制器模組從機箱�
 
 
 [role="lead"]
-若要更換風扇、請移除故障的風扇模組、然後以新的風扇模組進行更換。
+當AFF A800系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。更換過程包括關閉故障控制器，將其拆下，更換風扇模組，重新安裝控制器，然後將故障零件退回給NetApp。
 
 
 
 == 步驟1：關閉受損的控制器
+
+關閉受損的控制器
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
@@ -84,16 +86,55 @@ summary: 更換故障的風扇模組時、您必須將控制器模組從機箱�
 
 == 步驟2：移除控制器模組
 
-更換風扇模組時、您必須從機箱中移除控制器模組。
+更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
 
+.步驟
 . 如果您尚未接地、請正確接地。
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
+.影片 - 確認駕駛座椅
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[將驅動器安裝到位]
 
-. 從來源拔下控制器模組電源供應器。
-. 釋放電源線固定器、然後從電源供應器拔下纜線。
-. 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線、並追蹤纜線的連接位置。
+. 根據系統狀態檢查控制器驅動器：
++
+.. 在運作正常的控制器上，檢查是否有任何處於降級狀態、故障狀態或兩者兼具的狀態：
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<Check-missing-drives,進入下一個子步驟，檢查是否有缺少的驅動器。>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[檢查缺少磁碟機]]檢查檔案系統或備用磁碟機是否有缺失磁碟機問題：
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<remove-power-cables,進入下一步>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[移除電源線]]移除電源線固定器，然後從電源上拔下電源線。
+. 鬆開線纜管理裝置上的魔鬼氈綁帶。從控制器模組上拔下系統電纜和 SFP/QSFP 模組（如果需要）。記下每條電纜的位置。
 +
 將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。
 
@@ -103,7 +144,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
 控制器模組會稍微移出機箱。
 
 +
-image::../media/drw_a800_pcm_remove.png[釋放控制器模組]
+image::../media/drw_a800_pcm_remove.png[卸下控制器模組]
 
 +
 [cols="1,4"]
@@ -112,7 +153,9 @@ image::../media/drw_a800_pcm_remove.png[釋放控制器模組]
 
  a| 
 image:../media/icon_round_1.png["編號 1"]
-| 鎖定鎖定 
+ a| 
+鎖定鎖定
+
 
 
  a| 
@@ -121,19 +164,19 @@ image:../media/icon_round_2.png["編號 2"]
 鎖定銷
 
 |===
-. 將控制器模組滑出機箱。
+. 將控制器模組滑出機箱、然後放在穩固的平面上。
 +
-將控制器模組滑出機箱時、請確定您支援控制器模組的底部。
+托住控制器模組的底部，將其從機箱中滑出。
 
-. 將控制器模組放在安全的地方。
 
 
 
 
 == 步驟3：更換風扇
 
-若要更換風扇、請移除故障的風扇模組、然後以新的風扇模組進行更換。
+找出故障的風扇模組，並用新的風扇模組取代它。
 
+.步驟
 . 請查看主控台錯誤訊息或找出主機板上風扇模組的LED燈號、以識別您必須更換的風扇模組。
 . 將風扇模組側邊的鎖定彈片夾住、然後將風扇模組從控制器模組中直接提出、以移除風扇模組。
 +
@@ -161,14 +204,18 @@ image:../media/icon_round_2.png["編號 2"]
 
 == 步驟4：重新安裝控制器模組
 
-更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、然後將其開機。
+重新安裝控制器模組、然後重新啟動。
 
+.步驟
 . 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
 +
 
 NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 
 . 視需要重新安裝系統。
++
+如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖纜線時重新安裝。
+
 . 完成控制器模組的重新安裝：
 +
 .. 將控制器模組穩固地推入機箱、直到它與中間板完全接入。
@@ -187,8 +234,18 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 .. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
 
 
-. 將控制器恢復正常運作、方法是歸還儲存設備：「torage容錯移轉恢復-ofnode_disapped_node_name_」
-. 如果停用自動恢復功能、請重新啟用：「torage容錯移轉修改-controller local -autom-retorback true」
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
+
 
 
 

@@ -11,15 +11,18 @@ summary: 當系統登錄快閃存壽命即將結束、或辨識出的NVDIMM一�
 
 
 [role="lead"]
-當系統登錄快閃存壽命即將結束、或辨識出的NVDIMM一般狀況不正常時、您必須更換控制器模組中的NVDIMM；否則會造成系統恐慌。
+當您的AFF A800系統偵測到快閃記憶體壽命即將結束或偵測到已識別的 NVDIMM 記憶體狀況不佳時，請更換 NVDIMM 記憶體條；否則會導致系統崩潰。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+.開始之前
+* 請確保您已收到從NetApp收到的替換 NVDIMM，並且該 NVDIMM 與您的AFF A800系統相容。
+* 請確保儲存系統中的所有其他元件均正常運作；如果出現問題，請聯絡NetApp支援。
 
-您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
 
 
 == 步驟1：關閉受損的控制器
+
+關閉或接管受損的控制器。
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
 
@@ -90,14 +93,53 @@ summary: 當系統登錄快閃存壽命即將結束、或辨識出的NVDIMM一�
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
 
+.步驟
 . 如果您尚未接地、請正確接地。
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
+.影片 - 確認駕駛座椅
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[將驅動器安裝到位]
 
-. 從來源拔下控制器模組電源供應器。
-. 釋放電源線固定器、然後從電源供應器拔下纜線。
-. 解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線、SFP和QSFP模組（如有需要）、並追蹤纜線的連接位置。
+. 根據系統狀態檢查控制器驅動器：
++
+.. 在運作正常的控制器上，檢查是否有任何處於降級狀態、故障狀態或兩者兼具的狀態：
++
+[source, cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<Check-missing-drives,進入下一個子步驟，檢查是否有缺少的驅動器。>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+.. [[檢查缺少磁碟機]]檢查檔案系統或備用磁碟機是否有缺失磁碟機問題：
++
+[source, cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
++
+*** 如果命令返回 `There are no entries matching your query.`繼續<<remove-power-cables,進入下一步>>。
+*** 如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。
++
+[source, cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+
+
+. [[移除電源線]]移除電源線固定器，然後從電源上拔下電源線。
+. 鬆開線纜管理裝置上的魔鬼氈綁帶。從控制器模組上拔下系統電纜和 SFP/QSFP 模組（如果需要）。記下每條電纜的位置。
 +
 將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。
 
@@ -107,7 +149,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[安裝磁碟機]
 控制器模組會稍微移出機箱。
 
 +
-image::../media/drw_a800_pcm_remove.png[釋放控制器模組]
+image::../media/drw_a800_pcm_remove.png[卸下控制器模組]
 
 +
 [cols="1,4"]
@@ -127,53 +169,20 @@ image:../media/icon_round_2.png["編號 2"]
 鎖定銷
 
 |===
-. 將控制器模組滑出機箱。
+. 將控制器模組滑出機箱、然後放在穩固的平面上。
 +
-將控制器模組滑出機箱時、請確定您支援控制器模組的底部。
+托住控制器模組的底部，將其從機箱中滑出。
 
-. 將控制器模組放在穩固、平坦的表面上、然後打開通風管：
-+
-.. 將通風管側邊的鎖定彈片往控制器模組中央壓下。
-.. 將通風管滑向風扇模組、然後將其向上旋轉至完全開啟的位置。
-+
-image::../media/drw_a800_open_air_duct.png[打開通風管]
-
-
-
-+
-[cols="1,4"]
-|===
-
-
- a| 
-image:../media/icon_round_1.png["編號 1"]
- a| 
-通風管鎖定翼片
-
-
-
- a| 
-image:../media/icon_round_2.png["編號 2"]
- a| 
-將通風管滑向風扇模組
-
-
-
- a| 
-image:../media/icon_round_3.png["編號 3"]
- a| 
-將通風管朝風扇模組轉動
-
-|===
 
 
 
 
 == 步驟3：更換NVDIMM
 
-若要更換NVDIMM、您必須使用通風管頂端的NVDIMM對應標籤、將其放置在控制器模組中、然後依照特定步驟順序加以更換。
+使用風管頂部的 NVDIMM 定位標籤找到控制器模組中的 NVDIMM，然後進行更換。
 
-. 如果您要移除或移動NVDIMM、請解除鎖定擴充卡上的鎖定栓、然後移除適用的擴充卡。
+.步驟
+. 解鎖對應立管上的鎖定閂鎖，即可存取 NVDIMM，然後移除立管。
 +
 image::../media/drw_A800_nvdimm_replace_ieops-1953.svg[更換 NVDIMM]
 
@@ -230,36 +239,9 @@ NOTE: 目視檢查NVDIMM、確認其已平均對齊並完全插入插槽。
 
 == 步驟4：重新安裝控制器模組並啟動系統
 
-在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。
+重新安裝控制器模組、然後重新啟動。
 
-. 如果您尚未這麼做、請關閉通風管：
-+
-.. 將通風管向下旋轉至控制器模組。
-.. 將通風管滑向提升板、直到鎖定彈片卡入定位。
-.. 檢查通風管、確定其已正確放置並鎖定到位。
-+
-image::../media/drw_a700s_close_air_duct.png[關閉通風管]
-
-+
-[cols="1,4"]
-|===
-
-
- a| 
-image:../media/icon_round_1.png["編號 1"]
- a| 
-鎖定彈片
-
-
-
- a| 
-image:../media/icon_round_2.png["編號 2"]
- a| 
-滑入柱塞
-
-|===
-
-
+.步驟
 . 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
 +
 
@@ -287,10 +269,22 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 .. 如果您尚未重新安裝纜線管理裝置、請重新安裝。
 
 
+. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`。
+
+. 如果自動恢復已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`。
+
+. 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`。
 
 
 
 
-== 步驟4：將故障零件歸還給NetApp
+
+== 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

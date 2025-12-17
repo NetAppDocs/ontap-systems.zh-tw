@@ -11,7 +11,7 @@ summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key
 
 
 [role="lead"]
-在替換開機媒體上還原加密。
+在AFF C800系統中，恢復替換啟動媒體上的加密，以確保資料持續受到保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
@@ -432,3 +432,5 @@ Selection (1-11)? 1
 
 --
 ====
+.接下來呢？
+在開機媒體上還原加密後link:bootmedia-complete-rma.html["將故障零件退回 NetApp"]，您需要。

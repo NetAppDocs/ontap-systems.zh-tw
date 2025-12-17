@@ -1,0 +1,43 @@
+---
+permalink: asa800/chassis-replace-prepare.html 
+sidebar: sidebar 
+keywords: asa a800, replace the chassis 
+summary: 準備更換ASA A800 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。 
+---
+= 準備更換機殼 - ASA A800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+準備更換ASA A800 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。
+
+.步驟
+. 連接至序列主控台連接埠，以與系統進行介面並監控系統。
+. 打開控制器的位置指示燈：
++
+.. 使用 `system controller location-led show`顯示位置指示燈目前狀態的指令。
+.. 打開位置指示燈：
++
+`system controller location-led modify -node _node1_ -state on`
+
++
+位置 LED 會持續亮起 30 分鐘。
+
+
+
+. 打開包裝前，請檢查包裝標籤並確認以下內容：
++
+** 組件零件編號
+** 部件描述
+** 盒子裡的數量
+
+
+. 從包裝中取出內容物，並儲存包裝以便將故障組件退回給NetApp。
+. 將連接到儲存系統的所有電纜貼上標籤。這樣可以確保後續步驟中能夠正確地重新佈線。
+. 如果還沒有接地，那就先接地。
+
+
+.接下來呢？
+準備好更換ASA A800機殼硬體後，您需要：link:chassis-replace-shutdown.html["關閉控制器"] 。

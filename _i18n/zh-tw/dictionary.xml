@@ -576,7 +576,6 @@
   <block id="536b0bd1a9c2b544d6cfae19d9289ea7" category="section-title">步驟1：重新連接系統纜線</block>
   <block id="d0b16eb1b162f9fb3ef65f59b13902e7" category="list-text">重新安裝系統。</block>
   <block id="865e9b4ef52f3b0d3050c8b3c14eb660" category="inline-link">Active IQ Config Advisor</block>
-  <block id="13edd69852bcd53467b47d0660b70558" category="list-text">使用確認纜線正確無誤<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block>。</block>
   <block id="90dc124f4910ed686c7a901f89c979a1" category="list-text">下載並安裝Config Advisor 此功能。</block>
   <block id="346b4f7ee9332e3cfdf5a7cf01ff8783" category="list-text">輸入目標系統的資訊、然後按一下「Collect Data（收集資料）」。</block>
   <block id="85d28480ac76c431742cdec099135894" category="list-text">按一下「纜線」索引標籤、然後檢查輸出。請確定所有磁碟櫃均已顯示、且所有磁碟均顯示在輸出中、以修正您發現的任何纜線問題。</block>
@@ -4265,7 +4264,6 @@
   <block id="a99f211848e0a3fa987df05f364dcc0b" category="doc">關閉控制器AFF -現象A250</block>
   <block id="f7b32babba20f290222a62a499496335" category="section-title">選項2：MetroCluster 系統在一個方面</block>
   <block id="ea00def363aacc8779f9b5afd4cc8812" category="doc">還原並驗證系統組態- AFF VA800</block>
-  <block id="868fb46f8db1c45bfa9a49dea454c35a" category="doc">控制器模組更換總覽- AFF VA800</block>
   <block id="1bab600dfeb5dd52557d4dc719a4016b" category="admonition">請勿降級BIOS版本的_replacity_控制器、以符合合作夥伴控制器或舊控制器模組。</block>
   <block id="5ffba9ed2c673f5145fe25996fc2b0dc" category="summary">本節將詳細說明如何安裝AFF 一套功能完善的系統。</block>
   <block id="823b36f7fa4cb798d78af7be2bf8aca7" category="doc">詳細步驟- AFF VA800</block>
@@ -4294,7 +4292,6 @@
   <block id="9bcb203190e45fed6ef1d56a224cc2de" category="list-text">解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線、SFP和QSFP模組（如有需要）、並追蹤纜線的連接位置。</block>
   <block id="cdaaae7c9540237628621c761db1e26f" category="cell">將通風管滑向風扇模組</block>
   <block id="2ebdec22d5a391965cdb58290055d04c" category="paragraph">將通風管朝風扇模組轉動</block>
-  <block id="56ea39f220f0f9a4e092906ae1b4e2a2" category="paragraph">更換控制器模組時、您必須將電源供應器從受損的控制器模組移至更換的控制器模組。</block>
   <block id="3526385a16b15ee87aa73e9d27bca396" category="section-title">步驟4：移動NVDIMM電池</block>
   <block id="eb8c69a21ff0c4a8461c088e525b55c0" category="list-text">打開通風管蓋、並將NVDIMM電池放入擴充卡中。</block>
   <block id="9c519cb503392d6429ecc30f4aa04158" category="cell">通風管提升板</block>
@@ -4305,28 +4302,23 @@
   <block id="6b877fd7406f9e32e483d9152a8adf11" category="list-text">將電池套件移至更換的控制器模組、然後將其安裝在NVDIMM通風管中：</block>
   <block id="cf8ea0f5dfed524860f3010d70905914" category="list-text">將電池套件插入插槽、然後穩固地向下按電池套件、以確保其鎖定到位。</block>
   <block id="3d9f72ffd47c9dac4f448e760a3f484c" category="section-title">步驟5：移除PCIe擴充卡</block>
-  <block id="b405ea212dda5b48a9ff7eee99d701aa" category="paragraph">在控制器更換程序中、您必須從受損的控制器模組中移除PCIe模組。一旦NVDIMM和DIMM移至更換的控制器模組、您必須將它們安裝在更換的控制器模組中的相同位置。</block>
   <block id="0d7e9cfc68207216c33db900c7febcd1" category="list-text">向上轉動提升板左側的提升板鎖定栓、並朝風扇模組方向轉動。</block>
   <block id="fa323fe0e7eb4e73cb83bdb12663ab9d" category="list-text">向上提起提升板、將其移向風扇、使提升板上的金屬片邊緣脫離控制器模組邊緣、將提升板從控制器模組中提出、然後將其放置在穩固的平面上。</block>
   <block id="653ea8a6130b5d0841f01e50954b4851" category="paragraph">提升板1（左提升板）、提升板2（中間提升板）和3（右提升板）鎖定鎖定鎖條</block>
   <block id="1a5b33c6bb645d292a0bd9e500d23e4f" category="list-text">對受損控制器模組中的其餘擴充卡重複上述步驟。</block>
   <block id="6b6bb2475c683160c5d551bcb849e69d" category="list-text">在更換控制器中使用空的擴充卡重複上述步驟、然後將其移除。</block>
   <block id="98e98a06e3a3254b76d460b5e1cf8ee9" category="section-title">步驟7：移動NVDIMM</block>
-  <block id="34fd67d638efc01a9982820477d8cd0d" category="paragraph">若要移動NVDIMM、請從受損的控制器找到NVDIMM並將其移至更換控制器、然後依照特定的步驟順序進行。</block>
   <block id="e1483a59aeaa93f50df5e7591168e9ab" category="list-text">找到控制器模組上的NVDIMM。</block>
   <block id="5521b41573623c3aa2d96f12239f0385" category="paragraph">NVDIMM</block>
   <block id="fb9c911f5fd782e8fd686ca595abbfed" category="list-text">重複上述步驟以移動其他NVDIMM。</block>
   <block id="80392a74120115863aba040983d75dcc" category="section-title">步驟8：移動開機媒體</block>
-  <block id="4ca80d99d67871d37c8da5807f9599aa" category="paragraph">開機媒體位於擴充卡3下方。</block>
   <block id="413c7cb867bfe063a5a3a480228674da" category="paragraph">擴充卡3</block>
   <block id="d4d3885e3484305b905fde6b3ef5c19c" category="paragraph">1號十字螺絲起子</block>
   <block id="c2ac0f879d7f2a549904c604053848ff" category="section-title">步驟9：安裝PCIe擴充卡</block>
-  <block id="62e09e7465a59af05fb9cbfbb611b808" category="paragraph">移動DIMM、NVDIMM和開機媒體後、您可以在更換的控制器模組中安裝PCIe擴充卡。</block>
   <block id="6aee55fb2ccea9a6748ee2d1c0a8562e" category="list-text">將擴充卡安裝至更換的控制器模組：</block>
   <block id="743c15499d42aca5c2e1819a12ef6a92" category="list-text">重新插入從PCIe卡中移除的任何SFP或QSFP模組。</block>
   <block id="8b26c226c3b2f8b0febf9a60a1354c96" category="list-text">針對其餘的PCIe擴充卡重複上述步驟。</block>
   <block id="7f162e118d7c5841e35145af500cfea2" category="section-title">步驟10：安裝控制器模組</block>
-  <block id="99c63b9bf884dd51a946aceee88a56e0" category="paragraph">將所有元件從受損的控制器模組移至更換的控制器模組之後、您必須將更換的控制器模組安裝到機箱中、然後將其開機至維護模式。</block>
   <block id="c4565f27e7eb1d0640e258fb796df9c4" category="list-text">將系統纜線和收發器模組插入控制器模組、然後重新安裝纜線管理設備。</block>
   <block id="2bb6eb6e274e403747742b20b6b76f1a" category="doc">更換即時時鐘電池AFF - REVA800</block>
   <block id="92a1e44c6fd05cd1ba8ab2abf944200f" category="paragraph">擴充卡2（中間擴充卡）鎖定栓</block>
@@ -4336,16 +4328,13 @@
   <block id="1e1eb097395dd5376d6e746987676ab9" category="doc">更換風扇AFF - REVA800</block>
   <block id="45c8293117e9731c1b2983abd691e338" category="paragraph">更換風扇模組時、您必須從機箱中移除控制器模組。</block>
   <block id="92cadc5fd1d76419c4c16ddc63416c45" category="list-text">解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線、並追蹤纜線的連接位置。</block>
-  <block id="842e14e3a23f8c1d39234a2a722507d3" category="list-text">如果停用自動恢復功能、請重新啟用：「torage容錯移轉修改-controller local -autom-retorback true」</block>
   <block id="2ee0c03cb33be156e12b5b33dbf8e422" category="doc">更換NVDIMM電池AFF - REVA800</block>
-  <block id="a2a7f6c4d01f5224a71aaaa23dd37c83" category="list-text">解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線、SFP和QSFP模組（如有需要）、並追蹤纜線的連接位置。解開將纜線綁定至纜線管理裝置的掛勾和迴圈帶、然後從控制器模組拔下系統纜線、並追蹤纜線的連接位置。</block>
   <block id="37b8a6e3babdf08f527a03eb0aa4fc62" category="list-text">抓住電池、將電池從通風管和控制器模組中取出、然後放在一旁。</block>
   <block id="82b20010a8467fe7355af1c0f1bd1718" category="list-text">在NVDIMM通風管中安裝替換的電池套件：</block>
   <block id="1e37147d794224bac36635bdee74d81d" category="list-text">關閉NVDIMM通風管。</block>
   <block id="df0ede63d2bddc647b3f8cf55d7be4f6" category="paragraph">確定插頭已鎖入插槽。</block>
   <block id="d38e923a5dbd4c9cea0e47d7894638fd" category="section-title">步驟4：重新安裝控制器模組並啟動系統</block>
   <block id="b0e69a1b113b20966641e48d3d36e788" category="doc">快速步驟- AFF VA800</block>
-  <block id="03b53347b73f88773815b1fcb2c4507b" category="doc">搬移及更換硬體AFF - REVA800</block>
   <block id="4b03e4a08b555f0fcfb41ec98179267c" category="paragraph">對於大部分的組態（包括ASA 不完整的組態）、您可以選擇不同的內容格式。</block>
   <block id="4dbd79294c989758d5af25c272edcd18" category="list-text"><block ref="4dbd79294c989758d5af25c272edcd18" category="inline-link-macro-rx"></block></block>
   <block id="d95b217968788dc25668292af7a9506a" category="list-text"><block ref="d95b217968788dc25668292af7a9506a" category="inline-link-macro-rx"></block></block>
@@ -4361,7 +4350,6 @@
   <block id="2bed99b4660dcf909368c3a2ae62b513" category="doc">更換SSD磁碟機或HDD磁碟機- AFF VA800</block>
   <block id="3b1cae4630f47c8bafa2138c896b9e8d" category="list-text">使用"shorage容錯移轉恢復-fromnode"命令來歸還控制器</block>
   <block id="b847555d08409368f0fef45554d04bc5" category="doc">更換PCIe卡AFF - REVA800</block>
-  <block id="1ae20649d2f47264734a3a5ec5e979b9" category="paragraph">若要更換PCIe卡、您必須從目標擴充卡的PCIe卡連接埠移除纜線和任何QSFP和SFP、從控制器模組移除擴充卡、移除並更換PCIe卡、將擴充卡和任何QSFP和SFP重新安裝到連接埠上、 並連接連接埠。</block>
   <block id="2f5f40c20deffe104b10db195557449f" category="list-text">確定您要更換的插卡是否來自提升板1、或是來自提升板2或3。</block>
   <block id="44ba9b28a38d3396817ad65a92d90c3c" category="list-text">如果您要更換提升板1中的100GbE PCIe卡、請執行步驟2 - 3和步驟6 - 7。</block>
   <block id="acbf6011b70c1d614f3cb407d3ff275c" category="list-text">如果您要從擴充卡2或3更換PCIe卡、請執行步驟4至7。</block>
@@ -4379,9 +4367,7 @@
   <block id="515a9278fa676806936af5610703610f" category="list-text">若為擴充卡2或3、請關閉側邊面板。</block>
   <block id="f0623f3de563d7ac67a984a76c53803d" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
   <block id="161d11f75b68457ea33ac52c79b01c05" category="doc">更換NVDIMM AFF - NVME A800</block>
-  <block id="2c0856fef0927def0bd154513fb326fb" category="list-text">如果您要移除或移動NVDIMM、請解除鎖定擴充卡上的鎖定栓、然後移除適用的擴充卡。</block>
   <block id="9fc6e6ebb195a8b268f686a0f8256e7b" category="summary">更換電源供應器時、需要從電源拔下目標電源供應器、拔下電源線、移除舊的PSU、然後安裝替換的PSU、再將其重新連接至電源。</block>
-  <block id="0e3989fd0fd811ede751f0ca9dbfbe88" category="doc">開機媒體更換總覽- AFF VA800</block>
   <block id="fd1cff0abcf1ef0e075b330e2ee360fe" category="doc">完成還原與更換程序AFF -還原A800</block>
   <block id="b8238a1ffeb288edb4606d4cee1cdf5c" category="doc">關閉控制器AFF -現象A800</block>
   <block id="49cc582b0e041effb99494704c8f0963" category="doc">還原並驗證系統組態- FAS500f</block>
@@ -5097,8 +5083,6 @@
   <block id="68d9e980b8b4998ef88139d7b7ab8ff6" category="paragraph"><block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block></block>
   <block id="9fec9d1f051b750c4b137dc68aaa9695" category="list-text">移至機箱背面。如果您尚未接地、請正確接地。</block>
   <block id="3caccb46026f8affc6c95f65aa0c8af1" category="list-text">將控制器模組滑出機箱、然後放在穩固的平面上。</block>
-  <block id="9bc9bee1c7c86ea6e815437b4f02ff6c" category="paragraph">將控制器模組滑出機箱時、請確定您支援控制器模組的底部。。</block>
-  <block id="1422875ceb77c2edc7c07474b11b3c6f" category="list-text">打開控制器模組通風管：</block>
   <block id="43ae4ee714a69574b12c2b05c54410b5" category="list-text">按下模組握把上的Terra cotta釋放按鈕、然後將DCPM模組滑出機箱。</block>
   <block id="0721343ac8e5e32a5122775fda62e4d0" category="doc">還原並驗證組態- AFF VA900</block>
   <block id="a5462faa34b6cf806cb49f24d84b02a7" category="list-text">如果您的系統設定為支援40 GbE NIC上的10 GbE叢集互連和資料連線、請使用維護模式中的nicadmin convert命令、將這些連接埠轉換成10 GbE連線。請參閱<block ref="2d808a662d9493bde97b50913a25a294" category="inline-link-rx"></block> 以取得更多資訊。</block>
@@ -5260,7 +5244,6 @@
   <block id="45b4088dd83a4a7b2bba149e4e3d9b79" category="list-text">從PSU拔下纜線、並將其放在一邊。</block>
   <block id="7086b5b8246e319a69ceaa9c8bea88f2" category="list-text">向上轉動握把、按下鎖定彈片、然後將PSU從控制器模組中拉出、以移除PSU。</block>
   <block id="3c7945776be28bf262f95808630c98bc" category="paragraph">D-sub DC電源PSU纜線連接器</block>
-  <block id="14a4774e9c6245d6341272988d1f5fbe" category="admonition">如果您的系統有DC電源供應器、請確定電源供應器纜線上的指旋螺絲已鎖緊。</block>
   <block id="46f00909dad629ef305730aebec6b362" category="list-text">您可以使用下列動畫或書面步驟來取代開機媒體。</block>
   <block id="d277c9568778ee459f0e04f57bb73a7b" category="list-text">如果電源線是AC電源供應器、請打開電源線固定器、將電源線從電源供應器拔下；如果是DC電源供應器、請打開兩個指旋螺絲、然後從電源供應器拔下電源線。</block>
   <block id="8ba0a60c4c9ef98086ff14a53b417216" category="list-text">將電源線重新連接至電源供應器、如果是AC電源供應器、請將電源線與電源線固定器固定、如果是DC電源供應器、請將兩顆指旋螺絲鎖緊。</block>
@@ -5321,7 +5304,6 @@
   <block id="6d940c412bcfcdb76ebf095399d157ea" category="doc">還原並驗證系統組態- AFF 還原C800</block>
   <block id="e00efce1b44b4a70e33640aa4e4da7ab" category="doc">更換風扇AFF - REC800</block>
   <block id="7bb5b3f1026a3e755afd3077cd503481" category="doc">更換NVDIMM電池AFF - REC800</block>
-  <block id="47b1e09c5a04b6651d4bc03190565935" category="doc">控制器模組更換總覽- AFF C800</block>
   <block id="3898efc1e45ee027e1343af6cd87375e" category="list-text"><block ref="3898efc1e45ee027e1343af6cd87375e" category="inline-link-macro-rx"></block></block>
   <block id="76908712922b1fbfdbdf730f794b109c" category="list-text"><block ref="76908712922b1fbfdbdf730f794b109c" category="inline-link-macro-rx"></block></block>
   <block id="96ec8a0dff9ea2637e9a0469cd7bf45e" category="list-text"><block ref="96ec8a0dff9ea2637e9a0469cd7bf45e" category="inline-link-macro-rx"></block></block>
@@ -5337,7 +5319,6 @@
   <block id="053f6b40fe6bb9b0a6dde49c0f76dc01" category="doc">重新連接系統並重新分配磁碟- AFF 《The》（《The》）-《》（《The》</block>
   <block id="1085be18597d7d6c96ecba68a211bd73" category="doc">更換PCIe卡AFF - REC800</block>
   <block id="c73861201327e5c06b062143f039e8bc" category="doc">開機媒體更換總覽- AFF 《》（Overview of boot media replacement -）-《</block>
-  <block id="07aadbac64794a2290e43416f4863695" category="doc">搬移及更換硬體AFF - REC800</block>
   <block id="253caa9c2eebe3748f90a07e4d0d1158" category="doc">完整系統還原：AFF NetApp C800</block>
   <block id="de76cd60441abcdc9d5a84858b3a0fad" category="sidebar">SAS磁碟櫃</block>
   <block id="ccd67995cab28bf139c1e242119020df" category="sidebar">支援的交換器</block>
@@ -5405,7 +5386,6 @@
   <block id="b38f7c9ed48d1cadfbd357776bcf9e09" category="section-title">步驟 13 ：安裝控制器</block>
   <block id="c24ca3412a6dae4a658543695619f65a" category="list-text">重複上述步驟、將第二個控制器安裝到更換的機箱中。</block>
   <block id="e1c82a0b92bea9d8ce8c8d14a1992cd8" category="list-text">啟動每個控制器。</block>
-  <block id="7765edbf8893ad208b9932e53c6d932a" category="doc">更換 SSD 磁碟機 - AFF C800</block>
   <block id="632bcda28821b8191cdaaa396c4b3e22" category="paragraph">若要安裝 I/O 模組、包括受損機箱的 NVRAM 模組、請依照特定步驟順序進行。</block>
   <block id="bcf7de048a0b400d784ce2434b8beffe" category="doc">更換 SSD 磁碟機 - AFF C250</block>
   <block id="1ffab5c59dbafc5f9803c8c1c9f1a392" category="list-text">按住電源供應器把手上的 terra cotta 鎖定按鈕、然後將電源供應器從機箱中拉出。</block>
@@ -6130,37 +6110,29 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6de8c701b813fa785eb31e5e50407a97" category="doc">維護 AFF A800 硬體</block>
   <block id="b885796508edf1420614355727c14d93" category="paragraph">對於 AFF A800 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="71e8fbd180dabc904b04d4fbdd2c5ea0" category="paragraph">對於 ASA A800 儲存系統、您可以對下列元件執行維護程序。</block>
-  <block id="1749168a8c9d05326b86666fc73e3a29" category="paragraph">若要更換控制器、您必須移除受損的控制器、將 FRU 元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。</block>
   <block id="9094f27eead0d01bfc039d8264960995" category="paragraph">更換控制器模組中的元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機。</block>
   <block id="31ade10e8dcf88c0dc0a4b90ba975a43" category="doc">維護 AFF A320 硬體</block>
   <block id="88145bf2af138ed528349e08d441968a" category="paragraph">對於 AFF A320 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="8486b7c66d6ece05f01d5c8074d027a1" category="paragraph">將控制器模組安裝至新機箱後、您必須啟動系統。</block>
   <block id="416d28e93ee53a5fe99f4863443c9bf3" category="summary">NetApp 的 AFF 、 ASA 和 FAS 儲存系統提供領先業界的企業級橫向擴充全快閃或混合式儲存設備、並提供業界最先進的資料管理功能。請使用本網站上的文件來安裝、擴充、升級及維護 AFF 、 ASA 和 FAS 系統及其儲存櫃和叢集交換器。</block>
   <block id="9dbc6de9e979960d269ff45dfa541d76" category="doc">重新分配系統並重新分配磁碟 - ASA A800</block>
-  <block id="0b61404420e238ba6738c723b617ba4f" category="doc">開機媒體更換總覽 - ASA A800</block>
   <block id="308e5629f56cd85980c01c5a7d6b4a5e" category="doc">更換風扇 - ASA A800</block>
-  <block id="799d5020bc2d18c715e106de04ae1867" category="doc">更換機箱 - ASA A800</block>
   <block id="3ef7061589a2a04431ea9f25b6e79307" category="doc">關閉受損控制器 - ASA A800</block>
   <block id="e2bc701c24d2b9ed0f95fc6ba2920d2d" category="doc">還原並驗證系統組態 - ASA A800</block>
   <block id="d5ebc86a83d59dde394b71343ed8cc34" category="doc">更換 NVDIMM - ASA A800</block>
   <block id="3f479130be8b78844c0bd49727174069" category="doc">詳細步驟 - ASA A800</block>
   <block id="a820ea2fa41e56fbe040f9100f11d297" category="paragraph">本頁提供安裝 ASA A800 系統的詳細逐步指示。</block>
-  <block id="95fcff8e2589b768473a2156b6782181" category="doc">更換 PCIe 卡 - ASA A800</block>
   <block id="370845993b41687570ddfd991106c84f" category="doc">更換 NVDIMM 電池 - ASA A800</block>
   <block id="5fa3fc366648b99a59526964d222385e" category="summary">維護 ASA A800 硬體</block>
   <block id="8c32524c30f1cf8ac0610fc400ed0758" category="doc">維護 ASA A800 硬體</block>
   <block id="d374640195a360abfae0102d10acd97b" category="doc">更換即時時鐘電池 - ASA A800</block>
-  <block id="202dc1ddf91930fc943d288f13abc2c4" category="doc">更換 DIMM - ASA A800</block>
   <block id="498a9392717395bcd76919fcbc8cd683" category="doc">關閉控制器 - ASA A800</block>
-  <block id="8eeb34b2abc09270a61b91c0fea86350" category="doc">還原 OKM 、 NSE 和 NVE - ASA A800</block>
   <block id="7fe4a4ac81db4c15db36e72a3ea5981e" category="doc">完整系統還原 - ASA A800</block>
   <block id="d1df8c22a8919d325b97cb34cdbfec4f" category="doc">快速步驟 - ASA A800</block>
   <block id="caa8aa4a595b6f33857d21fb97a3622e" category="paragraph">本頁提供從機架和纜線到初始系統開機的一般系統安裝說明。使用 <block ref="0cdb4981396afec17d02c8ce5d1b8e06" category="inline-link-macro-rx"></block> 如果您熟悉NetApp系統的安裝、</block>
   <block id="f0d6a8fa292b0f0965c180c3ec81b98c" category="admonition">ASA A800 使用與 AFF A800 系統相同的安裝程序。</block>
   <block id="1809d57833f6aee6ca28a7a9976f3c02" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - ASA A800</block>
-  <block id="ab40c87c67587a22552f3f86175f6b6c" category="doc">更換控制器 - ASA A800</block>
   <block id="3e1e482bf99769f878506ac262ea9469" category="doc">更換機箱 - ASA A800</block>
-  <block id="cf89ec61d7d165d24a4540839ef73f51" category="doc">完整機箱更換 - ASA A800</block>
   <block id="67908030f8ab0c8af80f92c280cae057" category="doc">控制器更換總覽 - ASA A800</block>
   <block id="aac030e27e2d05ac9c8d86c5ee6b670b" category="doc">更換 LED USB 模組： FAS9000</block>
   <block id="f149ffc69b5cfb8f7aad3b01a8a19d4a" category="doc">可重新分配系統並重新分配磁碟： FAS9000</block>
@@ -6500,7 +6472,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="14a78bce1fad359d61fd0d2e4a24c3f0" category="list-text">在載入程式提示下、存取專為系統層級診斷所設計的特殊驅動程式、以正常運作：<block ref="87ee09e2a5f76fd0b04e7f6e02d1e3ef" prefix=" " category="inline-code"></block></block>
   <block id="62b108a49afeed7e7e1892a4157f8715" category="list-text">根據上述步驟的結果繼續進行：</block>
   <block id="bd47a35792b075014fd52e08e307f334" category="paragraph">您可以使用下列圖例搭配書面步驟來更換電源供應器。</block>
-  <block id="b5775fd5494c53337ae6cdf9684c92bb" category="paragraph">您必須將開機媒體裝置從功能受損的控制器移出、並將其安裝在更換的控制器中。</block>
   <block id="e1e22f74d03ae53f2b284cc33a49e335" category="paragraph">您必須將開機媒體裝置從功能受損的控制器模組移至更換的控制器模組。</block>
   <block id="5f5c8582e186539c05898d22a8d895e8" category="paragraph">開機媒體位於本程序稍早所移除的通風管護蓋下方。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
@@ -6673,15 +6644,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f672d90fc8d0ab339549e32ae4a18c26" category="doc">更換 DIMM - ASA C800</block>
   <block id="16c54e4c9f50a83bb13eddc18729c9e7" category="doc">更換 NVDIMM 電池 - ASA C800</block>
   <block id="6a9d061449e03d1a36e0711f39abff8f" category="doc">關閉受損控制器 - ASA C800</block>
-  <block id="f5811521c6ed1fabe9020730715bf6ec" category="doc">更換控制器模組總覽 - ASA C800</block>
   <block id="a77bfb07153ea54985cd6d32b137a0c8" category="doc">更換風扇 - ASA C800</block>
   <block id="0033b3cf7bd066a6dcb42aab6d55a7f7" category="doc">更換控制器模組硬體 - ASA C800</block>
   <block id="bc6187f0b8778014377ccebd8b17d2ed" category="doc">更換 SSD 磁碟機或 HDD 磁碟機 - ASA C800</block>
   <block id="2f7ac9575acad766cc32c4e3e9719d24" category="doc">更換 PCIe 卡 - ASA C800</block>
-  <block id="dee67159310079d1b0fb667da81d6e9e" category="doc">開機媒體更換總覽 - ASA C800</block>
   <block id="7aceb406cd07b754209377738399299c" category="doc">完整系統還原 - ASA C800</block>
   <block id="7eb1428cde412a152576637c584b14c0" category="doc">重新分配系統並重新分配磁碟 - ASA C800</block>
-  <block id="ea1dc19906ddc0d31254dd6f8ec34328" category="doc">移動並更換硬體 - ASA C800</block>
   <block id="bf0c9d599368cd33e5930b660050f4e0" category="doc">更換即時時鐘電池 - ASA C800</block>
   <block id="d7839b53c88c4bbaff7e95ac9d3c76fc" category="doc">還原並驗證系統組態 - ASA C800</block>
   <block id="cbc21197c1871348bbf882e4a113a8cf" category="doc">完成還原與更換程序： ASA C800</block>
@@ -7441,7 +7409,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f0d27e50eb41ec006d18a96b5254063e" category="list-text">向下轉動 CAM 拉桿、然後從控制器模組中移除 System Management 模組。</block>
   <block id="54a53a09772d42f23357a9952d2d46a1" category="section-title">步驟2：將開機映像傳輸到開機媒體</block>
   <block id="ba6a859a07959f14e93fa82e7da1233e" category="image-alt">關閉控制器模組通風管圖形 AFF A1K</block>
-  <block id="51f2f04b22eba49bd6c9066a5648bd67" category="list-text">檢查故障控制器模組背面插槽 4/5 中的琥珀色 NVRAM 狀態 LED 是否熄滅。尋找 NV 圖示。</block>
   <block id="deb4147b46ea2ebcf52f58598b90e46b" category="list-text">從控制器模組電源供應器（ PSU ）拔下控制器模組電源供應器纜線。</block>
   <block id="6233363b0d15d7066ec85e296a99f7eb" category="admonition">如果您的系統有直流電源、請從 PSU 拔下電源區塊。</block>
   <block id="afba20d4eb44e94103854196f1d30cbf" category="list-text">從控制器模組拔下系統纜線、 SFP 和 QSFP 模組（如有需要）、並追蹤纜線的連接位置。</block>
@@ -8196,7 +8163,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="37e0009e8f9c1c6982a732432e86d180" category="sidebar">AFF A70 和 AFF A90 I/O 模組</block>
   <block id="c079075c23cce6316cdc21e35ca264ec" category="sidebar">更換 NS224 磁碟機櫃</block>
   <block id="2ebb7b9dab34661ab53f47e149c49c5c" category="sidebar">更換 SAS 磁碟機櫃</block>
-  <block id="fb6ec7c4253b066bf6babd3c0e080e2c" category="paragraph">控制器模組一連接到電源、就會立即開始開機。準備好中斷開機程序。</block>
   <block id="f7f4c867e693e550f28050ab9569b77b" category="paragraph">插槽 11 和 23 中的 NVDIMM</block>
   <block id="f5fb85d160e4ca0263ef1d466e1904de" category="image-alt">起重把手和纜線管理裝置</block>
   <block id="a51606326fdc4dd84336979274179876" category="inline-link">零件退貨與更換</block>
@@ -8837,7 +8803,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0306ff5f8ff1d760b409c6f7f1b3b8bd" category="paragraph"><block ref="9ac424c0d7b432975df36a19daf50c9c" prefix="" category="inline-code"></block>。</block>
   <block id="1ae221b034a7bacf99b88892279c2462" category="paragraph">雙色 LED 會在綠色時顯示電源 / 活動、紅色時則顯示故障。</block>
   <block id="7ea17d80896a391ffe01665c36e03909" category="cell">注意（紅色）</block>
-  <block id="ea08cb92daf9bb299780da4c66b593b3" category="paragraph">驗證控制器模組的儲存設備和網路連線。</block>
   <block id="810a6e5b7c7e7dc33bd43c852dc5809d" category="admonition">控制器完全就位後、就會立即開機至 Loader 提示字元。</block>
   <block id="45a1b3d9bbbc077546cfb071ca46cde7" category="list-text">在 Loader 提示字元中、輸入<block ref="7e17e2b336dbdd66c2f45405573b53de" prefix=" " category="inline-code"></block>以在更換控制器上顯示日期和時間。日期和時間以 GMT 為準。</block>
   <block id="6de41248c129d02992789fffa274dd9d" category="admonition">顯示的時間不一定是本地時間、會以 24 小時模式顯示。</block>
@@ -10516,7 +10481,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cf4eab2b0d88ec4bacebde986a9b8eb9" category="summary">關閉 AFF A70 或 AFF A90 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定。</block>
   <block id="9a7b84fa6ef9f0a29d5eafc3304d18ed" category="doc">關閉控制器以更換機箱 - AFF A70 和 AFF A90</block>
   <block id="a3b6d0681b238842e8abbe17c93092bf" category="doc">機箱更換工作流程： AFF A70 和 AFF A90</block>
-  <block id="bffc713618f01feea26e9d1b0a2cb34f" category="paragraph">在您審查了更換 AFF A70 或 AFF A90 控制器的要求之後，您需要<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block>。</block>
   <block id="3fc2d8288ca2d9186a190046cd5b6611" category="summary">關閉 AFF A70 或 AFF A90 儲存系統中的控制器，以防止資料遺失，並確保更換控制器時系統穩定。</block>
   <block id="05bf5962e43260a46857d5654c4d1eb4" category="doc">控制器更換工作流程： AFF A70 和 AFF A90</block>
   <block id="842ddb267d25fbc4eb3107587a8382b3" category="list-text">AFF A70 和 AFF A90 控制器上的 I/O 插槽編號為 1 至 11 。</block>
@@ -13098,20 +13062,16 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f89fae77e712db915e5c4f5899f9dc90" category="list-text"><block ref="f89fae77e712db915e5c4f5899f9dc90" category="inline-link-macro-rx"></block></block>
   <block id="e3206d2a4bfac404deed13522814ca26" category="list-text"><block ref="e3206d2a4bfac404deed13522814ca26" category="inline-link-macro-rx"></block></block>
   <block id="bcb3d11de31ace3af18f7f575560fad0" category="list-text"><block ref="bcb3d11de31ace3af18f7f575560fad0" category="inline-link-macro-rx"></block></block>
-  <block id="78d89d9d928d7bb8393893eb2cf8c1a6" category="list-text"><block ref="78d89d9d928d7bb8393893eb2cf8c1a6" category="inline-link-macro-rx"></block></block>
   <block id="4fb3a37ea6a8bf216a7a7ff9ed43a0bc" category="list-text"><block ref="4fb3a37ea6a8bf216a7a7ff9ed43a0bc" category="inline-link-macro-rx"></block></block>
   <block id="389571f23e645f55137b0c744a724b29" category="list-text"><block ref="389571f23e645f55137b0c744a724b29" category="inline-link-macro-rx"></block></block>
   <block id="01fb5d600feb973e6df3173c64f3a198" category="list-text"><block ref="01fb5d600feb973e6df3173c64f3a198" category="inline-link-macro-rx"></block></block>
   <block id="6431f05b1242b5f32378ef62d266c798" category="list-text"><block ref="6431f05b1242b5f32378ef62d266c798" category="inline-link-macro-rx"></block></block>
   <block id="3021891faee4fde9067d94377729f785" category="list-text"><block ref="3021891faee4fde9067d94377729f785" category="inline-link-macro-rx"></block></block>
   <block id="0457c9709948ef27324c936bd420f69a" category="list-text"><block ref="0457c9709948ef27324c936bd420f69a" category="inline-link-macro-rx"></block></block>
-  <block id="7826621ad300e3ee247a068416f6334e" category="list-text"><block ref="7826621ad300e3ee247a068416f6334e" category="inline-link-macro-rx"></block></block>
   <block id="4703cf7610a24c32062a5258bc53ee8e" category="list-text"><block ref="4703cf7610a24c32062a5258bc53ee8e" category="inline-link-macro-rx"></block></block>
   <block id="37bf7febe6d710ccb6b01eaa16d4abed" category="list-text"><block ref="37bf7febe6d710ccb6b01eaa16d4abed" category="inline-link-macro-rx"></block></block>
-  <block id="ce49035ce4f40af93fa811b2e7cea09c" category="list-text"><block ref="ce49035ce4f40af93fa811b2e7cea09c" category="inline-link-macro-rx"></block></block>
   <block id="634a4b84bba737c2869a94edc155749b" category="list-text"><block ref="634a4b84bba737c2869a94edc155749b" category="inline-link-macro-rx"></block></block>
   <block id="2e1190705587bc5d69188be8d441c21a" category="list-text"><block ref="2e1190705587bc5d69188be8d441c21a" category="inline-link-macro-rx"></block></block>
-  <block id="ab8cc36a7dd48038aa603d5139194bc8" category="list-text"><block ref="ab8cc36a7dd48038aa603d5139194bc8" category="inline-link-macro-rx"></block></block>
   <block id="caac5e8e53dadcc0cf395f3fed6aa0d2" category="list-text"><block ref="caac5e8e53dadcc0cf395f3fed6aa0d2" category="inline-link-macro-rx"></block></block>
   <block id="bd5b1e86a29aef36e6e499c3e57069b9" category="list-text"><block ref="bd5b1e86a29aef36e6e499c3e57069b9" category="inline-link-macro-rx"></block></block>
   <block id="26618a408ce26e97bc2d109a161d3b80" category="list-text"><block ref="26618a408ce26e97bc2d109a161d3b80" category="inline-link-macro-rx"></block></block>
@@ -13138,22 +13098,18 @@ SFP+ （目標 / 啟動器）</block>
   <block id="657b2449f31023007c28fe58c1112b27" category="list-text"><block ref="657b2449f31023007c28fe58c1112b27" category="inline-link-macro-rx"></block></block>
   <block id="2d0745dbc460eeaa58a9a0ff32201dbd" category="list-text"><block ref="2d0745dbc460eeaa58a9a0ff32201dbd" category="inline-link-macro-rx"></block></block>
   <block id="8c93358c335849a177a2b064d61fee49" category="list-text"><block ref="8c93358c335849a177a2b064d61fee49" category="inline-link-macro-rx"></block></block>
-  <block id="43996848b7be1623ec1b67d2688fd85b" category="list-text"><block ref="43996848b7be1623ec1b67d2688fd85b" category="inline-link-macro-rx"></block></block>
   <block id="fe7940c070c008b7384704652d68649d" category="list-text"><block ref="fe7940c070c008b7384704652d68649d" category="inline-link-macro-rx"></block></block>
   <block id="3126d2686507d95d694289ed10b84c81" category="list-text"><block ref="3126d2686507d95d694289ed10b84c81" category="inline-link-macro-rx"></block></block>
   <block id="961e258e36c7c0498a4cd9ada2d70c28" category="list-text"><block ref="961e258e36c7c0498a4cd9ada2d70c28" category="inline-link-macro-rx"></block></block>
   <block id="22f46c8d8c23447b8b2d25ba99c89ea5" category="list-text"><block ref="22f46c8d8c23447b8b2d25ba99c89ea5" category="inline-link-macro-rx"></block></block>
   <block id="ac31af4b50ec3f45e426fed2d12a4579" category="list-text"><block ref="ac31af4b50ec3f45e426fed2d12a4579" category="inline-link-macro-rx"></block></block>
   <block id="efb4ef1a7e68e6464e2855d284715e8f" category="list-text"><block ref="efb4ef1a7e68e6464e2855d284715e8f" category="inline-link-macro-rx"></block></block>
-  <block id="0c472d56dbf6a5b57ad5c3da163cdc31" category="list-text"><block ref="0c472d56dbf6a5b57ad5c3da163cdc31" category="inline-link-macro-rx"></block></block>
   <block id="b9a5aa0dda2abe8c56433655233c5afe" category="list-text"><block ref="b9a5aa0dda2abe8c56433655233c5afe" category="inline-link-macro-rx"></block></block>
   <block id="4617ca51af3e7539e1032042c8ad9ebb" category="list-text"><block ref="4617ca51af3e7539e1032042c8ad9ebb" category="inline-link-macro-rx"></block></block>
   <block id="09514b85ea6e4a26b271ee897526f719" category="list-text"><block ref="09514b85ea6e4a26b271ee897526f719" category="inline-link-macro-rx"></block></block>
-  <block id="dd053f961cb1efe9f8ad53c3f0d6ed1c" category="list-text"><block ref="dd053f961cb1efe9f8ad53c3f0d6ed1c" category="inline-link-macro-rx"></block></block>
   <block id="d667d10a2839d4d94c58c56f5c5f3632" category="list-text"><block ref="d667d10a2839d4d94c58c56f5c5f3632" category="inline-link-macro-rx"></block></block>
   <block id="d363d6fa2d5b7d1a3acbba63d58ee5df" category="list-text"><block ref="d363d6fa2d5b7d1a3acbba63d58ee5df" category="inline-link-macro-rx"></block></block>
   <block id="25e9061afcbf32bd115473b789388d4a" category="list-text"><block ref="25e9061afcbf32bd115473b789388d4a" category="inline-link-macro-rx"></block></block>
-  <block id="c663a0a84f4e5e6b8f8077f1b5729e26" category="list-text"><block ref="c663a0a84f4e5e6b8f8077f1b5729e26" category="inline-link-macro-rx"></block></block>
   <block id="7934c4d942ff95cd60f23fa77b0f6248" category="list-text"><block ref="7934c4d942ff95cd60f23fa77b0f6248" category="inline-link-macro-rx"></block></block>
   <block id="ac8da8b52bd313ac221e71b1ea98d0fe" category="list-text"><block ref="ac8da8b52bd313ac221e71b1ea98d0fe" category="inline-link-macro-rx"></block></block>
   <block id="1682e451ff05726b873698cd1d255f39" category="list-text"><block ref="1682e451ff05726b873698cd1d255f39" category="inline-link-macro-rx"></block></block>
@@ -14302,7 +14258,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="be7b8247eb925c7add4470f65b89e936" category="list-text">如果要更換另一塊硬碟，請重複上述步驟。</block>
   <block id="d2fddd9e240829fc1dc928ed61196fbf" category="list-text">如果在此程序的早期階段停用了自動磁碟機分配，請手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派：</block>
   <block id="4cca325ed840b8ff6bedb9a2bcf0134f" category="paragraph">請聯絡技術支援。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要RMA編號或更換流程的其他協助，請致電888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。 //2025-11-17 ontap-systems-internal/issues/1391</block>
-  <block id="696e3a46f755e71b2efb8fc66ed7bf86" category="paragraph">否則，熱添加貨架程序就完成了。====//2025-11-17 ontap-systems-internal/issues/1391</block>
   <block id="ac5e04a2b567f923df0569c7177f596f" category="list-text">若要移除多個層架，請重複上述步驟。</block>
   <block id="959de3aca4b6b23d81011f18ca2b15f7" category="paragraph">否則，您需要按照以下步驟配置連接埠。</block>
   <block id="75fc199dd3b8c9f1fc952121556e245d" category="list-text">對第二個控制器重複上述步驟。</block>
@@ -14312,4 +14267,210 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ec25bc86b3fe7d64ec86315f71195fc0" category="list-text">如果您要將一疊磁碟櫃直接熱添加到控制器，請完成以下子步驟；否則，請轉到下一步。</block>
   <block id="26d1768b79c13cb58b658543460502f0" category="inline-link">如何連接ONTAP控制器控制台連接埠以進行遠端管理</block>
   <block id="5881473e019a362326922dbcff8f2c1d" category="admonition">有關如何建立控制器控制台連接埠的持續連接以進行遠端管理的信息，請參閱知識庫文章。<block ref="4d1fe15c86a554e538de1277e9fedec9" category="inline-link-rx"></block>。</block>
+  <block id="2c4f9d30c8112771d63d82ca4e4b0b5d" category="paragraph">使用以下方法驗證控制器模組的儲存和網路連接：<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block> 。</block>
+  <block id="5bbe8c98797b09c1ebb6c43782af51b5" category="video-title">影片 - 確認駕駛座椅</block>
+  <block id="5a2582e097121b5d7fd80a0df8885819" category="image-alt">將驅動器安裝到位</block>
+  <block id="653bb4f5a64f1289bbe50fd8bff75a77" category="list-text">根據系統狀態檢查控制器驅動器：</block>
+  <block id="b1180089c9de95b9a4df24a2a6f5f314" category="list-text">在運作正常的控制器上，檢查是否有任何處於降級狀態、故障狀態或兩者兼具的狀態：</block>
+  <block id="d3738177ad832df0e099b0a175ecfd41" category="inline-xref">進入下一個子步驟，檢查是否有缺少的驅動器。</block>
+  <block id="aac7ff393ce30ae401acb62ee5e14656" category="list-text">如果命令返回<block ref="ff552bb89260932a935c259f2e059d29" prefix=" " category="inline-code"></block>繼續<block ref="7d36e07de3bacab12ecbd7db0b12c345" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0772d56fc2d341eab9a081d1123053df" category="list-text">如果該命令返回任何其他結果，請從兩個控制器收集AutoSupport數據，並聯絡NetApp支援部門以取得進一步協助。</block>
+  <block id="c84a6dd36530e6693a4e883dea830b49" category="list-text">[[檢查缺少磁碟機]]檢查檔案系統或備用磁碟機是否有缺失磁碟機問題：</block>
+  <block id="1b85bf2d98246a22962246a50e9d1d61" category="inline-xref">進入下一步</block>
+  <block id="f0ba5f8a55128b1ca2549ec6d20bc6a2" category="list-text">如果命令返回<block ref="ff552bb89260932a935c259f2e059d29" prefix=" " category="inline-code"></block>繼續<block ref="a60fa4bc4bcb0cbd6997b97ce229ccd8" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8a5368755aa7e797c228749aac78e86f" category="list-text">[[移除電源線]]移除電源線固定器，然後從電源上拔下電源線。</block>
+  <block id="1e97832fe7b5e15094f9519fe877041f" category="list-text">鬆開線纜管理裝置上的魔鬼氈綁帶。從控制器模組上拔下系統電纜和 SFP/QSFP 模組（如果需要）。記下每條電纜的位置。</block>
+  <block id="ef676cdf8e16ac757d216b9d51d77bf1" category="paragraph">托住控制器模組的底部，將其從機箱中滑出。</block>
+  <block id="a81fcd9be9fa8d710fa208ffdd924844" category="list-text">找到 Riser 3 下方的啟動介質。</block>
+  <block id="9d1caa6ed8a5087c01b6262a2b5f4246" category="list-text">解鎖對應立管上的鎖定閂鎖，即可存取 NVDIMM，然後移除立管。</block>
+  <block id="15954437b8d958af5b731bc2c51fb11a" category="paragraph">更換 RTC 電池的步驟因控制器是原版還是 VER2 型號而異。請使用下面的選項卡選擇適合您控制器型號的說明。</block>
+  <block id="cd99fee2fc414b6b4ecf4289a4a7973e" category="paragraph">在第一代控制器上，電池位於 Riser 2（中間的 Riser）下方；在 VER2 控制器上，電池位於 DIMM 附近。</block>
+  <block id="a547eed6400b8f0c38c46d19b04920a9" category="list-text">如果命令返回<block ref="ff552bb89260932a935c259f2e059d29" prefix=" " category="inline-code"></block>繼續<block ref="8338a0781d1f7fac68921a389e320207" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f21e079707b66cbd264414ea0dc53dd3" category="list-text">[[檢查琥珀色NVRAM]]檢查琥珀色NVRAM ，確保位於故障控制器模組背面插槽 4/5 的狀態 LED 熄滅。尋找NV圖示。</block>
+  <block id="e9d04eb4ff35abd25ef31c8f809fc4d1" category="list-text">如果命令返回<block ref="ff552bb89260932a935c259f2e059d29" prefix=" " category="inline-code"></block>繼續<block ref="ae7901402ff867dc168147af39af1d95" category="inline-xref-macro-rx"></block>。</block>
+  <block id="df2154c6e85705518031e635188b7ff3" category="list-text">[[前往後方]]前往底盤後方。</block>
+  <block id="5b5636d254c19ce2285676eb2b6b3168" category="list-text">如果命令返回<block ref="ff552bb89260932a935c259f2e059d29" prefix=" " category="inline-code"></block>繼續<block ref="199828395f03282e248e60543b0b5831" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c3f622aa978a0658cd2f1bcde5c7615a" category="list-text">如果命令返回<block ref="ff552bb89260932a935c259f2e059d29" prefix=" " category="inline-code"></block>繼續<block ref="5278a391e06338ca38d1acd0f289424f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8039fea653dd3c9ec3bb0431e6c506fd" category="paragraph">在您查看了更換AFF A70或AFF A90控制器的要求後，您需要：<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="97616885fd9750dcdf48dfde6257540c" category="paragraph">如果您的AFF A800 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>更多資訊請參閱頁面。</block>
+  <block id="6e094d0861c00984f80be59f98bd372e" category="paragraph">為確保AFF A800 儲存系統上的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況及其狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。</block>
+  <block id="572a37383952d502b69e854eff4e6a4b" category="paragraph">在AFF A800系統中，恢復替換啟動媒體上的加密，以確保資料持續受到保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
+  <block id="0bdcc5e16d5e508a9058a0d06fa34d18" category="paragraph">在AFF A800系統中安裝新的啟動媒體裝置後，您可以從 USB 磁碟機啟動復原映像，並從夥伴節點復原配置。</block>
+  <block id="d98daf98f51d227f253484a5e6479547" category="paragraph">AFF A800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括：移除系統管理模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
+  <block id="05eab5680582a2a5e233d4bcb3e9727d" category="paragraph">重新啟動控制器，驗證系統健康狀況，並將故障零件退回NetApp ，完成AFF A800機箱更換流程的最後一步。</block>
+  <block id="867699666f35dc66ef6fa522daa65581" category="paragraph">當您的AFF A800 系統發生硬體故障需要更換機殼時，請更換機殼。更換過程包括：拆下控制器，將驅動器移至替換機箱，拆下故障機箱，安裝替換機箱，以及重新安裝機箱組件。</block>
+  <block id="35424585126ba1daa6652b307e2d415e" category="section-title">步驟 1：從舊機殼拆下控制器模組</block>
+  <block id="ab34769e0e882c4834c5908527ea5571" category="paragraph">從舊機箱拆下控制器模組。</block>
+  <block id="f0e779a7c7b1d99b98c5c3d0d1ccb502" category="paragraph">將硬碟從舊機殼移到新機殼。</block>
+  <block id="b8bc7ea16f8067b56613000e7716b1bf" category="paragraph">將設備機架或系統機櫃中損壞的機殼更換為新的機箱。</block>
+  <block id="c6905506c0252c8b5253519995dbc9b3" category="section-title">第四步：將控制器模組安裝到新機殼中</block>
+  <block id="5eb5e60ad9114314c885734ac69c80cf" category="paragraph">更換損壞的AFF A800機殼並重新安裝組件後，您需要：<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="02f75aa3f880c38caff08abce7d9dc49" category="summary">準備更換AFF A800 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。</block>
+  <block id="5f946bea3d6d41d25f661fbc16d8da64" category="doc">準備更換機殼 - AFF A800</block>
+  <block id="0aac77060cfab18de05062bcd2573894" category="paragraph">準備好更換AFF A800機殼硬體後，您需要：<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2e77e85f41c9bbd98b8764af9663f65d" category="summary">在更換AFF A800 系統中的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="82e0f90ce9219ae1721476b5de32f943" category="doc">更換機殼的要求 - AFF A800</block>
+  <block id="9ec650b3ed4a3608c95001572ea3ae1a" category="paragraph">更換機殼時，請關閉AFF A800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="03d381cfe5ad7b9b8c6d49c796f94d63" category="summary">若要開始更換AFF A800儲存系統的機箱，請先查看更換需求，關閉控制器，更換機箱，然後驗證系統運作。</block>
+  <block id="bb7d89d51a9169e92be256999b1eed09" category="doc">機殼更換工作流程 - AFF A800</block>
+  <block id="3028bb227fd9d972722e04f7adb2d6a5" category="paragraph">當硬體故障需要更換時，請更換AFF A800系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="8cc9c346001c09018f8406e5e0dd3d5e" category="paragraph">將電源移至替換控制器模組。</block>
+  <block id="a80e81958aaf26d5aaf9ce1c5fa10ca1" category="paragraph">將風扇模組移至替換控制器模組。</block>
+  <block id="bc7f9a113b700ae96ca6d1f48f2252df" category="paragraph">將NVDIMM電池移至替換控制器模組。</block>
+  <block id="1ac88e11f994e6d63708eb9b87c6e7f1" category="paragraph">從故障控制器模組上移除 PCIe 轉接卡。</block>
+  <block id="bae8f6379179c5844588909f827432dd" category="paragraph">將系統 DIMM 移至替換控制器模組。</block>
+  <block id="02e7603db5fdeb443670a49cebcb4c25" category="paragraph">將 NVDIMMS 移至替換控制器模組。</block>
+  <block id="9d3764f53e4203638a4203a5024741be" category="paragraph">將啟動媒體移至替換後的控制器模組。</block>
+  <block id="05c94c45c9bef6048ded16c2b85585f8" category="paragraph">將立管安裝到替換控制器模組中。</block>
+  <block id="18d24d91b937607139e8be08733ab6b9" category="paragraph">更換故障的A800控制器後，您需要：<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block></block>
+  <block id="493475a75e574f8c7e1e73a73aa38106" category="paragraph">將儲存資源的控制權交還給替換控制器，以便您的AFF A800系統能夠恢復正常運作。返還過程會根據您系統使用的加密類型而有所不同：無加密或板載密鑰管理器 (OKM) 加密。</block>
+  <block id="b0b935363b86e2eceb4f0f9c267046fc" category="paragraph">此步驟僅適用於在 HA 對中執行ONTAP 的系統。</block>
+  <block id="1cd88e97027c9a6cbbb4cb35e6dbb99a" category="summary">在更換AFF A800系統的控制器之前，請確保滿足成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="822a03ce42c8531cc00c6489d15f1034" category="doc">更換控制器的要求 - AFF A800</block>
+  <block id="8a22eb174d8ee7844fc0036c54b87f2d" category="paragraph">在您查看了更換AFF A800控制器的要求之後，您需要：<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="916fbc9112260aefc372e00a0808f5f8" category="paragraph">更換控制器時，請關閉AFF A800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="e76aa63c6fd23b50b5178d3e1b7090a9" category="summary">若要更換AFF A800儲存系統中的控制器，首先要關閉故障控制器，然後卸下並更換控制器，重新配置系統設置，並驗證系統運作。</block>
+  <block id="61fdb6bd0560dd5ce775a8d513c915cb" category="doc">控制器更換流程 - AFF A800</block>
+  <block id="1140d1e512de205e865126a4836c67f5" category="paragraph">若要更換AFF A800儲存系統中的控制器，請關閉故障控制器，移除並更換控制器，恢復系統配置，並將儲存資源的控制權交還給更換後的控制器。</block>
+  <block id="b0a1e2dadd9a9c47dac42a38289fdb2f" category="paragraph">如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換AFF A800系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="c5b7c31c54fe953e329d747df799f358" category="paragraph">關閉或接管故障控制器</block>
+  <block id="099786ed8b307e61941f3af347aa34ce" category="paragraph">更換控制器中的記憶體條。</block>
+  <block id="9f6e11fcca3c8c2bb0737c35573e6c1b" category="paragraph">當AFF A800系統中的硬碟發生故障或需要升級時，請更換該硬碟。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="d67798a98a1ee25cedb544b850f51cd7" category="paragraph">當AFF A800系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。更換過程包括關閉故障控制器，將其拆下，更換風扇模組，重新安裝控制器，然後將故障零件退回給NetApp。</block>
+  <block id="e0e96aca9f1177fdf54a623885490030" category="paragraph">找出故障的風扇模組，並用新的風扇模組取代它。</block>
+  <block id="326381082949c7181d26050dda2bbd2b" category="paragraph">當AFF A800系統中的 NV 電池開始失去電量或故障時，請更換該電池，因為它負責在斷電期間保存關鍵的系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="f658f5fc1f681de0518be8a4ef32393a" category="section-title">步驟 1：關閉故障控制器</block>
+  <block id="3ebd8bcd9c1ad131f2ab631a21a0c400" category="paragraph">更換 NVDIMM 電池的方法是：從控制器模組中取出故障電池，然後將新電池安裝到控制器模組中。</block>
+  <block id="0db8d6b7c97267afff598b9a8ea869ca" category="paragraph">當您的AFF A800系統偵測到快閃記憶體壽命即將結束或偵測到已識別的 NVDIMM 記憶體狀況不佳時，請更換 NVDIMM 記憶體條；否則會導致系統崩潰。</block>
+  <block id="380f9098727707c3f399be4c49967dfc" category="list-text">請確保您已收到從NetApp收到的替換 NVDIMM，並且該 NVDIMM 與您的AFF A800系統相容。</block>
+  <block id="fb9c0b26234b9cdd0447553484e5560f" category="list-text">請確保儲存系統中的所有其他元件均正常運作；如果出現問題，請聯絡NetApp支援。</block>
+  <block id="17ec9d6003cf1d8fa6263248afd3b30d" category="paragraph">使用風管頂部的 NVDIMM 定位標籤找到控制器模組中的 NVDIMM，然後進行更換。</block>
+  <block id="b826d3d0dc0dbe6dae4bf98516876f1d" category="paragraph">當AFF A800系統中的 I/O 模組發生故障、需要升級以支援更高的效能或附加功能時，請更換或新增該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="001b56abd363a7ec0e7fb289ea8b177c" category="list-text">您必須備有NetApp的新零件或替換零件。</block>
+  <block id="c1e00ba7161268dc544557197a0ae1ec" category="section-title">步驟 3：更換 PCIe 卡</block>
+  <block id="d1150578bbd18c79081db21b2ab8ef7d" category="paragraph">更換 PCIe 卡時，請先移除目標轉接卡上 PCIe 卡埠的線纜和所有 QSFP 和 SFP，然後從控制器模組上移除轉接卡，移除並更換 PCIe 卡，再將轉接卡和所有 QSFP 和 SFP 重新安裝到連接埠上，最後重新連接連接埠線。</block>
+  <block id="f7e0d510e1ac1198097ffc6aa7198b09" category="paragraph">當您的AFF A800系統中的交流或直流電源單元 (PSU) 發生故障或故障時，請更換該電源單元，以確保您的系統繼續獲得穩定運作所需的電力。更換過程包括：斷開故障電源與電源的連接，拔下電源線，更換故障電源，然後將其重新連接到電源。</block>
+  <block id="f01118bce731a75ee9ac83bfa04ff60e" category="paragraph">更換AFF A800系統中的即時時鐘 (RTC) 電池（通常稱為紐扣電池），以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
+  <block id="f5948978ce19b7dfe3516caeeab8b1ff" category="paragraph">更換即時時鐘電池。</block>
+  <block id="8e43fd29056c7e0ebbddb2567e7c2988" category="paragraph">如果您的ASA C800 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>更多資訊請參閱頁面。</block>
+  <block id="0649600aae6484a03c0b943cf6b00a39" category="paragraph">為確保ASA C800 儲存系統上的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況及其狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。</block>
+  <block id="df9169b0bb620599a2a68e06248322e6" category="paragraph">在ASA C800系統中，恢復替換啟動媒體上的加密，以確保資料持續受到保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
+  <block id="9295be68a2d5ab8f2d5bd579807b04cc" category="paragraph">在ASA C800系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟啟動復原映像，並從夥伴節點復原設定。</block>
+  <block id="7cb2b91eb601962ad108a7aa3ea7d7fb" category="paragraph">ASA C800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括：移除系統管理模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
+  <block id="2fcac5cca9656e7a1da1406b6e6db871" category="paragraph">重新啟動控制器，驗證系統健康狀況，並將故障零件退回NetApp ，完成ASA C800機箱更換流程的最後一步。</block>
+  <block id="730137df01a3aefee5ffab414b3393a6" category="paragraph">當您的ASA C800 系統發生硬體故障需要更換機殼時，請更換機殼。更換過程包括：拆下控制器，將驅動器移至替換機箱，拆下故障機箱，安裝替換機箱，以及重新安裝機箱組件。</block>
+  <block id="b42acc8f60ba08421cbb9177d81ae818" category="paragraph">更換故障的ASA C800機殼並重新安裝組件後，您需要：<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="1f9b7a3044a23ba0fb1aaa636e5b94f0" category="summary">準備更換ASA C800 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。</block>
+  <block id="5437668a1e595570df46f38614fa01cf" category="doc">準備更換機殼 - ASA C800</block>
+  <block id="fe226a44dfc5b21337b50057556732dd" category="paragraph">準備好更換ASA C800機殼硬體後，您需要：<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="0b28416c2329f38348a669a60ffaa357" category="summary">在更換ASA C800 系統中的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="05a1cb829bb52eef13519ba5e3b9634e" category="doc">更換機殼的要求 - ASA C800</block>
+  <block id="8666e9a729b544a9d2efe56771650988" category="paragraph">更換機殼時，請關閉ASA C800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="9977d1f340d42c507f7f1cad009889e6" category="summary">若要開始更換ASA C800儲存系統的機箱，請先查看更換需求，關閉控制器，更換機箱，然後驗證系統運作。</block>
+  <block id="995b2cf773709a62c10aff2783babc39" category="doc">機殼更換工作流程 - ASA C800</block>
+  <block id="2534868949e02f90d31c45af4de8b798" category="paragraph">當硬體故障需要更換時，請更換ASA C800系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="d1228b2a1e840206ca6406b44a2bcc1f" category="paragraph">更換故障的ASA C800控制器後，您需要：<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block></block>
+  <block id="e6e7c11a15f1987a6a3be3880fff4f6f" category="paragraph">將儲存資源的控制權交還給替換控制器，以便您的ASA C800系統能夠恢復正常運作。返還過程會根據您系統使用的加密類型而有所不同：無加密或板載密鑰管理器 (OKM) 加密。</block>
+  <block id="288f9acfcf7e8b995412ab59efa8ca3b" category="summary">在更換ASA C800系統的控制器之前，請確保滿足成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="738ca7fd06698210ccb8a1ab27bec491" category="doc">更換控制器的要求 - ASA C800</block>
+  <block id="0f02d9e00bc437e753301e4430ee4d1a" category="paragraph">在您查看了更換ASA C800控制器的要求之後，您需要：<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a34c3d4f8c8fbda6ee52144e18df909e" category="paragraph">更換控制器時，請關閉ASA C800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="c20c7bbc90c75cf6a692d016b27a3913" category="summary">若要更換ASA C800儲存系統中的控制器，首先要關閉故障控制器，然後移除並更換控制器，重新配置系統設置，並驗證系統運作。</block>
+  <block id="51c4b15a26e855581d456fbd939937d1" category="doc">控制器更換工作流程 - ASA C800</block>
+  <block id="bff56a3defd8256bf9c2b2ea7ded5a2a" category="paragraph">若要更換ASA C800儲存系統中的控制器，請關閉故障控制器，移除並更換控制器，恢復系統配置，並將儲存資源的控制權交還給替換控制器。</block>
+  <block id="b50fbf0fa90db9c1f92f9c706f7c2950" category="paragraph">如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換ASA C800系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="b0c11e8653300786f948fbe7cce5225f" category="paragraph">當ASA C800系統中的硬碟發生故障或需要升級時，請更換硬碟。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="dbca1f3351cc090d57eca151347e8c13" category="paragraph">當ASA C800系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉故障控制器，將其拆下，更換風扇模組，重新安裝控制器，然後將故障零件退回給NetApp。</block>
+  <block id="24ce1dee6069d7d21ccfe01ecda30d56" category="paragraph">當ASA C800系統中的 NV 電池開始失去電力或故障時，請更換電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="bc7fece08c612d5220e1c40d028d84b4" category="paragraph">當您的ASA C800系統偵測到快閃記憶體壽命即將結束或偵測到已識別的 NVDIMM 整體上不健康時，請更換系統中的 NVDIMM；否則會導致系統崩潰。</block>
+  <block id="34212026d4ee6285d814527ac689761d" category="list-text">請確保您已收到從NetApp收到的替換 NVDIMM，並且該 NVDIMM 與您的ASA C800系統相容。</block>
+  <block id="5e6b59fb6db828e0ba4da0ce245028f6" category="paragraph">當ASA C800系統中的 I/O 模組發生故障、需要升級以支援更高的效能或附加功能時，請更換或新增該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="eef2fa0ee19b7e265770deb66a2ed531" category="paragraph">當您的ASA C800系統中的交流或直流電源單元 (PSU) 發生故障或故障時，請更換此電源單元，以確保您的系統繼續獲得穩定運作所需的電力。更換過程包括：斷開故障電源與電源的連接，拔下電源線，更換故障電源，然後將其重新連接到電源。</block>
+  <block id="fda1a39ddd80c9c5ab54c3484fc3ab3b" category="paragraph">更換ASA C800系統中的即時時鐘 (RTC) 電池（通常稱為連結電池），以確保依賴精確時間同步的服務和應用程式保持運作。</block>
+  <block id="1a3e0fa907667f65616c8793e725a763" category="paragraph">如果您的ASA A800 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>更多資訊請參閱頁面。</block>
+  <block id="08206313818cd1d28b9b2fdb76252af5" category="paragraph">為確保ASA A800 儲存系統上的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況及其狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。</block>
+  <block id="9ba02b68d02088618c9f7503641ce8d0" category="doc">恢復加密 - ASA A800</block>
+  <block id="e4d6513951b85211e72ef331eba4943d" category="paragraph">在ASA A800系統中，恢復替換啟動媒體上的加密，以確保資料持續受到保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
+  <block id="4a99261de25de88723882fcf5ae5a2d3" category="paragraph">在ASA A800系統中安裝新的啟動媒體裝置後，您可以從 USB 隨身碟啟動復原映像，並從夥伴節點復原設定。</block>
+  <block id="cdb3456e45b0f01b2e2d152a06ecb8e2" category="paragraph">ASA A800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括：移除系統管理模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
+  <block id="38e2bffd43ed0fa633f28b47d80c89ec" category="doc">完成修復和更換流程 - ASA A800</block>
+  <block id="b8701abb70b2fddc3aaf8641a5e8933a" category="paragraph">重新啟動控制器，驗證系統健康狀況，並將故障零件退回NetApp ，完成ASA A800機箱更換流程的最後一步。</block>
+  <block id="5fd3cf2b721aa95a091ffa0bc2348ebe" category="paragraph">當您的ASA A800 系統發生硬體故障需要更換機殼時，請更換機殼。更換過程包括：拆下控制器，將驅動器移至替換機箱，拆下故障機箱，安裝替換機箱，以及重新安裝機箱組件。</block>
+  <block id="bf9503dc74db3a77c88e3711949e1196" category="paragraph">更換故障的ASA A800機殼並重新安裝組件後，您需要：<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="b5a6f3c6943588439307afc12c988363" category="summary">準備更換ASA A800 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。</block>
+  <block id="82070ddce5ec230645b5a004b359b275" category="doc">準備更換機殼 - ASA A800</block>
+  <block id="8c8b282518ccc3faf1849e49a3156c8b" category="paragraph">準備好更換ASA A800機殼硬體後，您需要：<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="0f27ab208bfe5ede38264de77e9dd810" category="summary">在更換ASA A800 系統中的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="adaa05ca130adaca6eb567a6e8aca378" category="doc">更換機殼的要求 - ASA A800</block>
+  <block id="cb77f8469624bb0b6f3e319b37d51924" category="paragraph">更換機殼時，請關閉ASA A800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="5f9d31be244a1e604d1ef8e22c938140" category="summary">若要開始更換ASA A800儲存系統的機箱，請先查看更換需求，關閉控制器，更換機箱，然後驗證系統運作。</block>
+  <block id="45522cb75b71d98e5c1ed80415ac8781" category="doc">機殼更換工作流程 - ASA A800</block>
+  <block id="9a791accd4e5b2f9c7572a82efa442bb" category="doc">更換控制器模組硬體 - ASA A800</block>
+  <block id="a997f533a663618757490232465988e2" category="paragraph">當硬體故障需要更換時，請更換ASA A800系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="c77db9436d28675b19e003f742ebe31e" category="paragraph">更換故障的ASA A800控制器後，您需要：<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block></block>
+  <block id="d3e59eca730de70f2260e8f930a80739" category="paragraph">將儲存資源的控制權交還給替換控制器，以便您的ASA A800系統能夠恢復正常運作。返還過程會根據您系統使用的加密類型而有所不同：無加密或板載密鑰管理器 (OKM) 加密。</block>
+  <block id="bcc68b5dd20bb191a7219b5770a8e40b" category="summary">在更換ASA A800系統的控制器之前，請確保滿足成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="fde0f60db83d22c81e1906c97be0c0cf" category="doc">更換控制器的要求 - ASA A800</block>
+  <block id="51abe8f7e2cfe5345e05064824ba6b6e" category="paragraph">在您查看了更換ASA A800控制器的要求之後，您需要：<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="5bc3aa2c555cbfdc9a3357e06234129c" category="paragraph">更換控制器時，請關閉ASA A800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="fabb12c2c93e367f6f8c63608e938af3" category="summary">若要更換ASA A800儲存系統中的控制器，首先要關閉故障控制器，然後移除並更換控制器，重新配置系統設置，並驗證系統運作。</block>
+  <block id="64d417c0492ada0bf624cdfa0202d486" category="doc">控制器更換流程 - ASA A800</block>
+  <block id="3ccde0c04d9ffedf2a51e10621e19dd3" category="paragraph">若要更換ASA A800儲存系統中的控制器，請關閉故障控制器，移除並更換控制器，恢復系統配置，並將儲存資源的控制權交還給替換控制器。</block>
+  <block id="38f80fd3377fb2ee353a03c40cbaec2a" category="doc">更換記憶體條 - ASA A800</block>
+  <block id="eea2252d1c3816b8efcad70d597e0ed8" category="paragraph">如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換ASA A800系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="df67a6ad1447c4c4f8980daf63ba6033" category="paragraph">當ASA A800系統中的硬碟發生故障或需要升級時，請更換硬碟。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="c1ede9689ec61dc5d94d865151d0be7b" category="paragraph">當ASA A800系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉故障控制器，將其拆下，更換風扇模組，重新安裝控制器，然後將故障零件退回給NetApp。</block>
+  <block id="401ac7ba166683cfa22f7e98a423119f" category="paragraph">當ASA A800系統中的 NV 電池開始失去電力或故障時，請更換電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="2d2bbf0109be1264bd8dc4097ed175c6" category="paragraph">當您的ASA A800系統偵測到快閃記憶體壽命即將結束或偵測到已識別的 NVDIMM 整體狀況不佳時，請更換系統中的 NVDIMM；否則會導致系統崩潰。</block>
+  <block id="6911d46efeb3458c15e6015393175328" category="list-text">請確保您已收到從NetApp收到的替換 NVDIMM，並且該 NVDIMM 與您的ASA A800系統相容。</block>
+  <block id="d66aec26e9255e10a8bcd8d20a629537" category="doc">更換 PCIe 卡 - ASA A800</block>
+  <block id="62e12f08961747e8931ef132a1fa7cd1" category="paragraph">當ASA A800系統中的 I/O 模組發生故障、需要升級以支援更高的效能或附加功能時，請更換或新增該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="596743307e846b6be3b2d3db6ad7389d" category="paragraph">當您的ASA A800系統中的交流或直流電源單元 (PSU) 發生故障或故障時，請更換此電源單元，以確保您的系統繼續獲得穩定運作所需的電力。更換過程包括：斷開故障電源與電源的連接，拔下電源線，更換故障電源，然後將其重新連接到電源。</block>
+  <block id="26def7298908089958e3ba3011e3ac4e" category="paragraph">更換ASA A800系統中的即時時鐘 (RTC) 電池（通常稱為連結電池），以確保依賴精確時間同步的服務和應用程式保持運作。</block>
+  <block id="7f713edc68ddda9c2a2f05fb210839f8" category="paragraph">如果您的AFF C800 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>更多資訊請參閱頁面。</block>
+  <block id="3ca26f35c077fb5272cc86de9b12de3d" category="paragraph">為確保AFF C800 儲存系統上的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況及其狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。</block>
+  <block id="4892ccbe8e90c73ccda739a7c5797cf1" category="paragraph">在AFF C800系統中，恢復替換啟動媒體上的加密，以確保資料持續受到保護。替換過程包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
+  <block id="07ac8ba3b1469d29c440a8d1b4e8e114" category="paragraph">在AFF C800系統中安裝新的啟動媒體裝置後，您可以從 USB 磁碟機啟動復原映像，並從夥伴節點復原配置。</block>
+  <block id="06a8586bd6623be8a1feb5f24451dc4d" category="paragraph">AFF C800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括：移除系統管理模組、移除損壞的啟動介質、安裝替換啟動介質，然後使用 USB 隨身碟將ONTAP映像手動傳輸到替換啟動介質。</block>
+  <block id="b46e26f4f7e5b5577188b28ba8409b6b" category="paragraph">關閉AFF C800 儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。</block>
+  <block id="443c0d2698b8ee95d8793faad23889ae" category="paragraph">重新啟動控制器，驗證系統健康狀況，並將故障零件退回NetApp ，完成AFF C800機箱更換流程的最後一步。</block>
+  <block id="b57c2ef18007630e897236881a0f4c86" category="paragraph">當您的AFF C800 系統發生硬體故障需要更換機殼時，請更換機殼。更換過程包括：拆下控制器，將驅動器移至替換機箱，拆下故障機箱，安裝替換機箱，以及重新安裝機箱組件。</block>
+  <block id="6ed44434aad42eec3e428ebe0611e3c2" category="paragraph">更換損壞的AFF C800機殼並重新安裝組件後，您需要：<block ref="e567761f3b9d650307e1ffbce9c62dc9" category="inline-link-macro-rx"></block></block>
+  <block id="fec68c8e99eac9d58f992c498fc919e9" category="summary">準備更換AFF C800 系統中受損的機箱，方法是識別受損的機箱、驗證更換組件並標記電纜和控制器模組。</block>
+  <block id="97b5983081a5b7e4759b0506037011f3" category="doc">準備更換機殼 - AFF C800</block>
+  <block id="f0bd07b9f3128b0de66d94b99b3349c4" category="paragraph">準備好更換AFF C800機箱硬體後，您需要：<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="5149ff6c940014853bcf4c55d2e3bb6e" category="summary">在更換AFF C800 系統中的機殼之前，請確保滿足成功更換的必要要求。這包括驗證系統中的所有其他元件是否正常運作，驗證您是否擁有ONTAP 的本機管理員憑證、正確的替換機箱以及必要的工具。</block>
+  <block id="97f4ecfbcfcaf76d584051915116326f" category="doc">更換機殼的要求 - AFF C800</block>
+  <block id="b918fee073ac037c43bd3e8107cb0454" category="paragraph">更換機殼時，請關閉AFF C800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="f27adb6b83d1a270373d4a3197896057" category="summary">若要開始更換AFF C800儲存系統的機箱，請先查看更換需求，關閉控制器，更換機箱，然後驗證系統運作。</block>
+  <block id="37fea55d6a2111cbc82a9369a01c3a4c" category="doc">機殼更換工作流程 - AFF C800</block>
+  <block id="fd4f91ea5dd659c3f4e877a277aca263" category="paragraph">當硬體故障需要更換時，請更換AFF C800系統中的控制器。更換過程包括移除受損的控制器、將組件移至更換的控制器、安裝更換的控制器以及重新啟動它。</block>
+  <block id="b660678959b6bed7114103d95113896c" category="paragraph">更換故障的AFF C800控制器後，您需要：<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block></block>
+  <block id="ebe2fa1fe58b6382591cd750bd08772e" category="paragraph">將儲存資源的控制權交還給替換控制器，以便您的AFF C800系統能夠恢復正常運作。返還過程會根據您系統使用的加密類型而有所不同：無加密或板載密鑰管理器 (OKM) 加密。</block>
+  <block id="73e6f07925605bf7d4e192b96a61d4d0" category="summary">在更換AFF C800系統的控制器之前，請確保滿足成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運行，驗證您是否有正確的替換控制器，以及將控制器的控制台輸出儲存到文字日誌檔案。</block>
+  <block id="b64fb4aafcde27e85e72123dfe5304cd" category="doc">更換控制器的要求 - AFF C800</block>
+  <block id="9e9db93fbce008ac5ae3a50460fa831f" category="paragraph">在您查看了更換AFF C800控制器的要求之後，您需要：<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="09f409adab2cb4ca097668f956ca857e" category="paragraph">更換控制器時，請關閉AFF C800儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="7ffb3b2c9c7d63266cad041c9e3ff650" category="summary">若要更換AFF C800儲存系統中的控制器，首先要關閉故障控制器，然後移除並更換控制器，重新配置系統設置，並驗證系統運作。</block>
+  <block id="c3f2d2abc51fa1c7f1e6e6f4a2955321" category="doc">控制器更換流程 - AFF C800</block>
+  <block id="3e792303fd01276e39bf614c4d8a76b3" category="paragraph">若要更換AFF C800儲存系統中的控制器，請關閉故障控制器，移除並更換控制器，恢復系統配置，並將儲存資源的控制權交還給更換後的控制器。</block>
+  <block id="9e32e711d3897b8b278b43359818f455" category="paragraph">如果偵測到過多的可修正或不可修正的記憶體錯誤，請更換AFF C800系統中的 DIMM。此類錯誤可能會阻止儲存系統啟動ONTAP。更換過程包括關閉受損的控制器、將其移除、更換 DIMM、重新安裝控制器，然後將故障部件傳回NetApp。</block>
+  <block id="5a91241342ea3d42d2bcc501dcd2cf3b" category="doc">更換固態硬碟或機械硬碟 - AFF C800</block>
+  <block id="fb305aacf6f4db5a1177025231adb950" category="paragraph">當AFF C800系統中的硬碟發生故障或需要升級時，請更換該硬碟。更換過程包括識別故障磁碟機、安全移除它以及安裝新磁碟機以確保持續的資料存取和系統效能。</block>
+  <block id="546bbd4c8f6bb10f9241dc9618263b8c" category="paragraph">當AFF C800系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。更換過程包括關閉故障控制器，將其拆下，更換風扇模組，重新安裝控制器，然後將故障零件退回給NetApp。</block>
+  <block id="de7294eb9b1e3f97009e732d12d34daa" category="paragraph">當AFF C800系統中的 NV 電池開始失去電量或故障時，請更換該電池，因為它負責在斷電期間保存關鍵的系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。</block>
+  <block id="bfdabce29c967c7d3b2ed5d954629ca5" category="paragraph">當您的AFF C800系統偵測到快閃記憶體壽命即將結束或偵測到已識別的 NVDIMM 整體上不健康時，請更換系統中的 NVDIMM；否則會導致系統崩潰。</block>
+  <block id="61cb5c68a7ecbb5a4bc98e3c53051dce" category="list-text">請確保您已收到從NetApp收到的替換 NVDIMM，並且該 NVDIMM 與您的AFF C800系統相容。</block>
+  <block id="912c2eb967b5cf7932f288419cd17714" category="paragraph">當AFF C800系統中的 I/O 模組發生故障、需要升級以支援更高的效能或附加功能時，請更換或新增該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
+  <block id="ead7299e1e821ba0466b978a328546e3" category="paragraph">當您的AFF C800系統中的交流電或直流電源單元 (PSU) 發生故障或故障時，請更換該電源單元，以確保您的系統繼續獲得穩定運作所需的電力。更換過程包括：斷開故障電源與電源的連接，拔下電源線，更換故障電源，然後將其重新連接到電源。</block>
+  <block id="762e399143806c63195087d694f5d51f" category="paragraph">更換AFF C800系統中的即時時鐘 (RTC) 電池（通常稱為紐扣電池），以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
+  <block id="b6e338b7c8ecbc4bfbecd81a429fc96f" category="inline-link-macro">AFF 70/90</block>
+  <block id="ebcb4fad61331738a08395dc6a90134c" category="list-text"><block ref="ebcb4fad61331738a08395dc6a90134c" category="inline-link-macro-rx"></block></block>
+  <block id="98f65513520f11bc7354ad30adb9fed2" category="list-text"><block ref="98f65513520f11bc7354ad30adb9fed2" category="inline-link-macro-rx"></block></block>
+  <block id="ab25b6ec63f78b2148a7a4bde774f9e8" category="list-text"><block ref="ab25b6ec63f78b2148a7a4bde774f9e8" category="inline-link-macro-rx"></block></block>
+  <block id="b4484b25bc07c7749fd2ecd7ada3f6a3" category="list-text"><block ref="b4484b25bc07c7749fd2ecd7ada3f6a3" category="inline-link-macro-rx"></block></block>
+  <block id="df5de57abbc267e8735e1cf83fbe79e4" category="list-text"><block ref="df5de57abbc267e8735e1cf83fbe79e4" category="inline-link-macro-rx"></block></block>
+  <block id="c8e28ee11f5aed1ad0eadccaf8de83d7" category="list-text"><block ref="c8e28ee11f5aed1ad0eadccaf8de83d7" category="inline-link-macro-rx"></block></block>
+  <block id="bcbb0b81d0720e2cc8e6293852d8f76b" category="list-text"><block ref="bcbb0b81d0720e2cc8e6293852d8f76b" category="inline-link-macro-rx"></block></block>
+  <block id="70ef73c42db0b1681fa61ef4b1d4608c" category="list-text"><block ref="70ef73c42db0b1681fa61ef4b1d4608c" category="inline-link-macro-rx"></block></block>
 </blocks>
