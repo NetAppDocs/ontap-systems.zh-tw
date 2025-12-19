@@ -229,8 +229,6 @@
   <block id="f520ae6a21fe8875386bf25f0f70cc17" category="paragraph">對於PDU斷路器、按鈕會在與PDU框架齊面時開啟。</block>
   <block id="c9c398d96e19f76a792dde6c40d97674" category="summary">您可以訂購裝有NetApp儲存控制器和磁碟櫃的系統機櫃、如果您已經有NetApp設備、也可以訂購空的系統機櫃。您可以使用選購的互連套件、將多個系統機櫃連接在一起、也可以使用選購的栓接式套件、將它們固定在資料中心樓層。</block>
   <block id="04dd3356a6ed1dc409a57e068d7f5007" category="doc">安裝系統機櫃</block>
-  <block id="408521a2467d21746b611d562e795e60" category="list-text">從系統主控台執行「shorage disk show -disf肯」命令、以識別故障的磁碟機。故障磁碟機出現在故障磁碟機清單中。如果沒有、您應該稍候、然後再次執行命令。</block>
-  <block id="ab580dd61655d242c5e7898b10207e71" category="paragraph">更換多個磁碟機時、您必須在移除每個故障磁碟機和插入替換磁碟機之間等待一分鐘、以便儲存系統識別每個新磁碟的存在。</block>
   <block id="30bc8715fab2eca793d47ebeb9b97131" category="list-text">從平台正面輕移擋板。</block>
   <block id="d71968c5c4f5afed90572170969deee8" category="list-text">從系統主控台警告訊息和磁碟機上亮起的故障LED來識別故障磁碟機</block>
   <block id="559d6c27ed3408b0bae6821791181311" category="list-text">按下磁碟機正面的釋放按鈕。</block>
@@ -968,7 +966,6 @@
   <block id="8fda4ed107d1ec1aebbec15e8e97e9c9" category="section-title">步驟1：重新安裝系統</block>
   <block id="6e831181b071042488de60792bba5661" category="paragraph">如果儲存系統位於HA配對中、則在程序結束時進行恢復時、新控制器模組的系統ID會自動指派給磁碟。您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。</block>
   <block id="2a468fdd2649c2bddd5f46d0d16b08af" category="doc">關閉受損的控制器AFF -現象A700s</block>
-  <block id="2e7119d7d654a51006d39261079ed460" category="doc">移除控制器模組AFF -《Se A700s》</block>
   <block id="1ab25fd464770ca38598dbf7e3aa872c" category="doc">安裝與設定影片- AFF Se A700s</block>
   <block id="0e77f42d7c64a07ce718d60dd8e6bd46" category="inline-link-macro">BIOS A700s設定影片AFF</block>
   <block id="0dfb2568739ce156f475dfddb29e2387" category="doc">機箱更換總覽- AFF 《Se A700s》</block>
@@ -1690,10 +1687,6 @@
   <block id="c055245c084600ec7129f0f3c0692170" category="section-title">選項2：控制器採用雙節點MetroCluster 的不二組態</block>
   <block id="c11d911fdc6f049d5491a18850fa08dd" category="doc">完整系統還原- AFF 還原為NetApp</block>
   <block id="14e1966b2539241942d6151ccb0e2a0e" category="section-title">步驟4：在雙節點MetroCluster 的不二組態中切換回集合體</block>
-  <block id="8394191e21f04380d08fe40ae8199691" category="summary">若要更換機箱、您必須關閉控制器。此程序會造成中斷。對於雙節點叢集、您將會在多節點叢集中發生完整的服務中斷和部分中斷。</block>
-  <block id="a5c7a7f72206c6b63d2ec6de862b1cfd" category="doc">關閉控制器AFF -現象A300</block>
-  <block id="c1835b78219bf98dc8901ba1eb56866b" category="paragraph">更換機箱之前、您必須先關閉控制器。</block>
-  <block id="781ec9f87f3965b6a34526e735ee3c5b" category="section-title">選項2：控制器位於雙節點MetroCluster 的不二面</block>
   <block id="21a759f002cfc3385b168953dde9a34e" category="summary">從恢復映像啟動受損控制器的程序、取決於系統是否為雙節點MetroCluster 的版本。</block>
   <block id="a23c69960d3b280b58087226f261d0e1" category="doc">開機恢復映像AFF -還原A300</block>
   <block id="825f13ad9fc8dc2bdd837adbced6f40f" category="paragraph">從恢復映像啟動受損控制器的程序、取決於系統是否為雙控制器MetroCluster 的版本。</block>
@@ -2130,7 +2123,6 @@
   <block id="a8869e142255ff80f45be4817f469087" category="section-title">步驟3：更換I/O模組後、重新啟動控制器</block>
   <block id="bbee62c98bf71c87d77b3d48e5cacaff" category="paragraph">更換I/O模組之後、您必須重新啟動控制器模組。</block>
   <block id="b40d85db7a9de91cff53c5663c76daaf" category="list-text">使節點恢復正常運作：「儲存容錯移轉恢復-節點減損節點名稱」</block>
-  <block id="10446d8e0f9e8e6b297995ce7dafe03c" category="doc">完成更換程序AFF -整套流程</block>
   <block id="8f73eb9fb7acfd413cf2778aacee51b6" category="doc">影片步驟AFF - VA900</block>
   <block id="561273ebb17be6fcb781473771bc32cb" category="paragraph">有兩段影片：一段影片顯示如何整理及連接系統、另一段影片則顯示使用System Manager引導式設定來執行初始系統組態的範例。</block>
   <block id="9ed9163b4599600e6378be760fd75fa8" category="paragraph">下列影片說明如何安裝及連接新系統。</block>
@@ -3044,7 +3036,6 @@
   <block id="0a777e4b645d66ac575356b85c16ed55" category="paragraph">如果已設定自動開機、節點將會重新開機。</block>
   <block id="4cc5d765a3b2155ab803f6ce50c11747" category="paragraph">從「儲存容錯移轉show」命令輸出的內容、不應包含「系統ID已在合作夥伴上變更」訊息。</block>
   <block id="a5d68caf62cce2afa4e8ca12ce07943a" category="open-title">選項2：重新指派ID MetroCluster （資訊組態）</block>
-  <block id="f2ff55accbe6a2f86bcb85e25825d8fb" category="doc">完成更換程序AFF - FASA700和FAS9000</block>
   <block id="fd0db0c0a8315e064601a11ecc8c2b49" category="doc">更換即時時鐘電池</block>
   <block id="d7076750c213f85f11c8bc3c569bd82b" category="list-text">使用「show date」命令檢查健全節點上的日期和時間。</block>
   <block id="152a6d8c12057e31d60520297587612b" category="list-text">在目標節點的載入器提示下、檢查時間和日期。</block>
@@ -3329,11 +3320,7 @@
   <block id="dd97e64f3163f239256639a3f4314e89" category="paragraph">如果您的系統採用MetroCluster 不知道IP組態、請參閱<block ref="373f2390d7121eb9c57821ab147cf1e7" category="inline-link-rx"></block> 說明。</block>
   <block id="03be12a0476133b21cb6c1c927956d23" category="doc">更換SSD磁碟機或HDD磁碟機- AFF E4A220和FAS2700</block>
   <block id="c6eb316cc94904301a8765db5aa1680f" category="doc">開機媒體更換總覽- AFF EFASA220與FAS2700</block>
-  <block id="c715a9373bbec24b23f4dc8858259082" category="summary">發行說明ONTAP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">版本資訊</block>
-  <block id="425e1349202124b82f3764d0351df734" category="paragraph">本網站外部提供版本資訊。系統會提示您使用NetApp支援網站認證登入。</block>
-  <block id="e43128f7c789cef4c5803c71a455e62b" category="inline-link">存取ONTAP 《R9發行說明》</block>
-  <block id="aee57c40ad1b8fc3b33e5e954861e270" category="paragraph"><block ref="aee57c40ad1b8fc3b33e5e954861e270" category="inline-link-rx"></block></block>
   <block id="478fc4fb96b68e7639f1b8b60636da7c" category="doc">更換NVMEM電池- FAS2600</block>
   <block id="c8ce5afe6808111cafcf57c11a22b941" category="inline-link-macro">FAS2600 NVMEM電池更換影片AFF</block>
   <block id="cdb877e559bf1542dd2ee0540807d4a8" category="doc">還原並驗證系統組態- FAS2600</block>
@@ -3729,7 +3716,6 @@
   <block id="dc44a05c9df8a3734f53cd9c3fbb4703" category="paragraph">NVDIMM可緊密裝入插槽、但應能輕鬆放入。如果沒有、請重新將NVDIMM與插槽對齊、然後重新插入。</block>
   <block id="c80537fb323930f899a793bcde5d41e4" category="admonition">目視檢查NVDIMM、確認其已平均對齊並完全插入插槽。</block>
   <block id="4962b83b6a8a444589f8f671a2a4bbe3" category="list-text">小心但穩固地推入NVDIMM頂端邊緣、直到彈出彈片卡入NVDIMM末端的槽口。</block>
-  <block id="5d670c53861caee9002db54ba657302f" category="doc">完成風扇更換程序AFF -整套流程</block>
   <block id="d6cd25c7a2ec0fe6ad8621d4562ce0ae" category="summary">更換電源供應器（PSU）需要中斷目標PSU與電源的連接、拔下電源線、移除舊PSU並安裝替換PSU、然後將替換PSU重新連接至電源。</block>
   <block id="f044adaf132925553df56c50232bae8a" category="paragraph">更換電源供應器（PSU）時、需要將目標PSU從電源拔下、拔下電源線、移除舊的PSU並安裝替換的PSU、然後將替換的PSU重新連接至電源。</block>
   <block id="0b8bc61409e02494497fb415b526324c" category="list-text">移除電源供應器：</block>
@@ -3966,7 +3952,6 @@
   <block id="53a6eef1d61ae1268797df395fb6c8cd" category="admonition">如果系統在開機功能表停止、請選取開機至載入器選項。</block>
   <block id="5dd34f930572d9b91079ee416155a071" category="list-text">在載入程式提示下、輸入「bye」重新初始化PCIe卡和其他元件。</block>
   <block id="586f834e3ea252c8d0ecb1f23610e68c" category="list-text">中斷開機程序、然後按「Ctrl-C」開機至載入器提示字元。</block>
-  <block id="ed8e6ac65f869dd5cec262d6da357514" category="doc">完成更換程序：FAS8300和FAS8700</block>
   <block id="c0925c06c8c424f377718df251d2ae9f" category="doc">更換即時時鐘電池- FAS8300和FAS8700</block>
   <block id="4f4fd54acab309f1a5e65fa28f282bda" category="paragraph">您需要在控制器模組內找到RTC電池、然後依照特定的步驟順序進行。請參閱控制器模組內的FRU對應圖、以瞭解RTC電池的位置。</block>
   <block id="1d865762dc572ea89458b46f1d146cdf" category="paragraph">您可以使用下列動畫、圖例或書面步驟來更換RTC電池。</block>
@@ -4463,10 +4448,6 @@
   <block id="f63746c86a42cd15d7a70dfdd276f719" category="doc">關閉控制器AFF -現象A400</block>
   <block id="0288adc0f71efbfccd93c799c7b290be" category="section-title">選項1：更換機箱時關閉控制器</block>
   <block id="c41b3a61f99c2acfc4df4b56cbc1ea35" category="section-title">選項2：在雙節點MetroCluster 的現象組態中關閉控制器</block>
-  <block id="b20f6d14e4d2aa074f783ed7ba24d15f" category="doc">更換故障磁碟機- AFF REVA200</block>
-  <block id="f24bbd8bd23b87a9a7d8b466f2edd685" category="list-text">最佳實務做法是在熱交換磁碟機之前、先安裝目前版本的磁碟認證套件（DQP）。</block>
-  <block id="38b15850492133a635d50ad8448e62b9" category="list-text">如何熱交換磁碟取決於磁碟機的使用方式。如果已啟用SED驗證、您必須使用中的SED替換指示<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。這些指示說明更換SED之前和之後、您必須執行的其他步驟。</block>
-  <block id="6e3d311e755c860fa8be4786c7ffe617" category="list-text">替換磁碟機必須由您的平台支援。請參閱<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="7ff4995c299eff1168d2cf4a88aff450" category="sidebar">安裝與設定</block>
   <block id="ade01a5a398372194a42c36e9f5279ac" category="sidebar">維護</block>
@@ -6101,7 +6082,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="77f4b626bd525dc6753d0c5c459c2958" category="section-title">選項 1 ：在大多數系統中開機恢復映像</block>
   <block id="c1b14ddbfb6bd16c817a493198749827" category="doc">快速步驟 - AFF A700</block>
   <block id="2f58f52c667d8f6129bee3c5ba8644cf" category="doc">影片步驟 - AFF A700</block>
-  <block id="44e53c2846c4f980518ba5d7283e9081" category="doc">棄置電池 - AFF A700</block>
   <block id="c4ff77a52611317c3331111397cfa50f" category="doc">機箱更換總覽 - AFF A700</block>
   <block id="bf2e36e3dc75b2830255919926958060" category="doc">完成還原與更換程序： AFF A700</block>
   <block id="292ce50c48ac5c7190c639ba6b1b977d" category="doc">更換 DCPM 模組 - AFF A700</block>
@@ -6164,8 +6144,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="62195060113df8a2782db9da3228a189" category="doc">開機恢復映像： FAS9000</block>
   <block id="3a201b28e54c09ae98a539a9903e205e" category="doc">快速步驟： FAS9000</block>
   <block id="98086fd66cf46437e4aac147ee073e02" category="doc">影片步驟： FAS9000</block>
-  <block id="293b81cec704d1c7b8c338a1a7533f56" category="doc">完成更換程序： FAS9000</block>
-  <block id="4d34a1694a90d19bee6a0506ea02117f" category="doc">棄置電池 - FAS9000</block>
   <block id="3731267ab8f5fa9e16fa3e35a2fab7e7" category="doc">更換快取模組或新增 / 更換核心傾印模組： FAS9000</block>
   <block id="fa677b6e6708d8f388aadfd5d40ae948" category="doc">機箱更換概述： FAS9000</block>
   <block id="49887930d95252f889edea85abfb6633" category="doc">完成還原與更換程序： FAS9000</block>
@@ -6211,7 +6189,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4da6be1bf421fc7ff067ee2e73b4b8b1" category="summary">提供從機架安裝和佈線到初始系統開機等系統典型安裝的圖形說明。</block>
   <block id="4848727d4d964e87d86f556430e12505" category="doc">快速步驟 - ASA A900</block>
   <block id="c247d6dca80720b1329aceeb17a50ccf" category="admonition">ASA A900 使用與 AFF A900 系統相同的安裝程序。</block>
-  <block id="5be7906317aa19835143b0c0fe5bf8dd" category="doc">完成更換程序： ASA A900</block>
   <block id="ffd35f8c2bbd04d0d068c1f8df413804" category="doc">影片步驟 - ASA A900</block>
   <block id="7d1fb483052073af4f4cc12799641b5e" category="doc">更換裝有 NVRAM11 電池的 DCPM - ASA A900</block>
   <block id="2b061d20a12abc555d3ec31b4a597fbd" category="doc">更換控制器模組硬體 - ASA A900</block>
@@ -6987,8 +6964,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dc0a61369ab78188b5040b237202d13a" category="inline-image-macro">移除 PCIe 模組</block>
   <block id="851adb1cfe0add8b264f80f294e53d6e" category="paragraph"><block ref="851adb1cfe0add8b264f80f294e53d6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4bed25d7279305fb1486095526c2cbe" category="image-alt">卸下或安裝風扇</block>
-  <block id="793c006966d00d222996468e86da89f4" category="image-alt">電信機架中間安裝</block>
-  <block id="7f615fc773ecf20799d3f2a060bd3afb" category="image-alt">安裝電信機架</block>
   <block id="f6f0bd2e4727e80f2ce638a745f37465" category="image-alt">移除快取模組</block>
   <block id="7b421531117f7a333a0bf6943ea821e6" category="image-alt">取出 RTC 電池</block>
   <block id="633a92fd671d3ef2ca3005733f0cb806" category="image-alt">卸下控制器模組</block>
@@ -7762,7 +7737,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f4bf409b84e11d30249909dc7746ba6d" category="example-title">連接至 FAS500f 的纜線架</block>
   <block id="a89eecfaa6455eb7bc4017895b259e99" category="paragraph">當需要額外的儲存設備時、您可以將一個 NS224 機櫃熱新增至 FAS500f HA 配對。</block>
   <block id="a372a75abe895e1d1df66a7346836990" category="image-alt">FAS500f AFF A250 或 AFF C250 的纜線、其中包含一個 NS224 機櫃和一組連接埠</block>
-  <block id="f890bb9917c8ebad074582718fe97720" category="doc">連接 FAS 系統的纜線架 - NS224 機櫃</block>
   <block id="833d8fad165a38386db2f5d83d561178" category="doc">熱插拔纜線總覽 - NS224 機櫃</block>
   <block id="46f11d99d5f59f4aa316ba3db790a179" category="paragraph">本纜線一節說明如何將 NS224 機櫃連接至下列儲存系統：</block>
   <block id="a392e2560dc5e657e918caf1331842b5" category="inline-link-macro">連接至 AFF 系統的纜線</block>
@@ -9440,7 +9414,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bb20d77f45b4cc0d8fb7e2ceeb73a6e8" category="paragraph">將 NSM 滑出機櫃時，請務必支撐其底部。</block>
   <block id="badfffbcf4c415d2d54e8598e4f36a66" category="paragraph">將把手垂直轉動（在彈片旁邊），將其移出。</block>
   <block id="39ef8cb3c259a4bd68bc8b173e6232d4" category="doc">將故障零件退回 NetApp - AFF A20 ， AFF A30 和 AFF A50</block>
-  <block id="d0b57c9831251827dec0d4fee9bfbfad" category="summary">當系統登錄越來越多的可修正錯誤修正碼（ ECC ）時，您必須更換控制器模組；否則會造成系統恐慌。</block>
   <block id="56b8cde3b1f3e08c4473d9b2684dcde7" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
   <block id="3d380bb3e10695f0ff14d7bd2503d30a" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="7444ce336f5cb99437679b1ac8b6aefb" category="inline-link-macro-rx"></block></block>
   <block id="4cb467fae72dd386afc8ef7522d342e3" category="paragraph-title"><block ref="d5b760e3b486da6aca46a9bd83d66c13" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
@@ -10983,8 +10956,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="008e878c00337b7c1676a1bf2b5e1f88" category="summary">當 ASA C30 儲存系統中的某個元件發生故障時，請將故障元件退回給 NetApp。</block>
   <block id="1a74384be12ec55525108f8b4b66e4cf" category="doc">將故障零件退回 NetApp - ASA C30</block>
   <block id="5c57ecccb489a807b7ce058e84066112" category="paragraph">當 ASA C30 儲存系統中的某個元件發生故障時，請將故障元件退回給 NetApp。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
-  <block id="998d7afe02e862a99bc2356bb4360a68" category="doc">重新安裝控制器 - ASA C30</block>
-  <block id="f7fa8f7e10c9cc8ec8c1a66e7e044c0c" category="doc">移除控制器 - ASA C30</block>
   <block id="a6090718a9aeffd0a4509ab0c7982422" category="summary">在 ASA C30 儲存系統中安裝新的啟動媒體設備後，您可以啟動自動啟動媒體復原流程，從健康節點復原設定。</block>
   <block id="c2de4d4510a9a64facdf71ce04df1256" category="doc">在啟動媒體上還原 ONTAP 映像 - ASA C30</block>
   <block id="ea8fd5bd6c26f06b31f96391b253c778" category="summary">ASA C30 儲存系統中的啟動媒體儲存了必要的韌體和設定資料。更換程序包括移除控制器模組，移除受損的開機媒體，安裝更換的開機媒體，然後將 ONTAP 映像傳輸至更換的開機媒體。</block>
@@ -12325,13 +12296,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9b7b330028a8e9da6f55b86fd3d33f89" category="section-title">系統環境規格</block>
   <block id="5df6a3025f4f85ae5bc83b02f5916f87" category="list-text">典型功率：1209 BTU/小時</block>
   <block id="64e22d62ec39174118c9e82cc6dcfa6b" category="list-text">最壞情況下的功率：1676 BTU/小時</block>
-  <block id="0a468b2bd789d07addc76d7889e6e2d8" category="list-text">重量：60.8 磅&lt;br/&gt;27.6 公斤</block>
   <block id="88a8e41521299f0493891f0c6b79967a" category="list-text">高度：2U</block>
   <block id="b0f6bb9e15d5385ada0d645f19f9f8e9" category="list-text">寬度：19 吋 IEC 機架相容（17.6 吋 44.7 公分）</block>
-  <block id="d4411cb4316548ce03dbb23ca9c17b7a" category="list-text">深度：19.0 英吋&lt;br/&gt;（含電纜管理支架為 24.1 英吋）</block>
-  <block id="9d56de4dc650ba03a2f7cd023d11f7be" category="list-text">工作溫度/海拔/濕度：海拔高度&lt;br/&gt;3048公尺&lt;br/&gt;10000英尺時，5°C 至 45°C&lt;br/&gt;41°F 至 &lt;br/&gt;113°F；相對濕度 8% 至 90%，無凝結</block>
-  <block id="c41e237102e6691218f7320a8d877dfe" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺）&lt;br/&gt;10% 至 95% 相對濕度，非冷凝，原包裝箱內</block>
-  <block id="a0f11d40bf496f127af5f6d70b58cd12" category="list-text">雜訊：標稱聲功率 (LwAd)：6.9；&lt;br/&gt;聲壓 (LpAm)（旁觀者位置）：51.0 dB</block>
   <block id="9c0408c775a2b61052a2e700a89f396f" category="section-title">遵守</block>
   <block id="4c00771b9a13a18c84a302748b7e2016" category="list-text">EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI</block>
   <block id="c8d90a6281a35910b880ffff81384a91" category="list-text">安全認證：BIS、CB、CSA、G_K_U-SoR、IRAM、NOM、NRCS、SONCAP、TBS</block>
@@ -12368,11 +12334,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6b0fa4590459e6ee34459dd90571d0b3" category="list-text">SMB 2.x</block>
   <block id="e3b6710d220a8b184b813afd623b6126" category="list-text">SMB 3.0</block>
   <block id="d13f7003befcd5012d9b171e5cc1ec7c" category="list-text">SMB 3.1</block>
-  <block id="ad885d13a6931dbe9364981c4a9e46f8" category="list-text">SMB 3.1.1 == 系統環境規範</block>
   <block id="2dd3dbbb4fb385b867ab48d985ebe0d0" category="list-text">重量：60.8 磅 27.6 公斤</block>
   <block id="a6277a061ba7ff4bee1620efc87bc236" category="list-text">深度：19.0 英吋（含電纜管理支架為 24.1 英吋）</block>
-  <block id="b11a5ee48097596f5af95c2bb8a616ac" category="list-text">工作溫度/海拔高度/濕度：海拔高度 &lt;= 3048m (&lt;= 10000 ft) 時 5°C 至 45°C (41°F 至 113°F)；相對濕度 8% 至 90%，無冷凝</block>
-  <block id="208d1a3e7dafc1baa32977b369442c05" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），最高海拔 12192 公尺（40000 英尺），相對濕度 10% 至 95%，無冷凝，原包裝箱內</block>
   <block id="40a919b5a0505ca942495ee4446b4f98" category="list-text">雜訊：標稱聲功率 (LwAd)：6.9 聲壓 (LpAm)（旁觀者位置）：51.0 dB</block>
   <block id="05807e454c19f244770adae059b3c330" category="section-title">高可用性</block>
   <block id="c5c02fffbc2ee6fe6623153a2a5e9e19" category="list-text">基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面</block>
@@ -12381,13 +12344,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fb9739d8125a9b29ff16762480779e87" category="list-text">透過 SAS 連線進行 SAS 帶內管理</block>
   <block id="3a11f68c452218eaaba02353655fd4c1" category="summary">A1K平台組的主要規格</block>
   <block id="99796d31c3e48d5cd6e9ed06d9fb9a47" category="doc">AFF A1K的主要規格</block>
-  <block id="a335bb33fcb9e8c831ff747ec976669e" category="paragraph">以下是單一高可用性對中AFF A1K儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="a79a212c9edd36428ef764ada9dc6cb3" category="list-text">平台配置： AFF A1K雙機箱 HA 對</block>
   <block id="02eacd56ba58be7852d6581d938e6a4e" category="list-text">最大原容量：14.6880 PB</block>
   <block id="b3b84944f4fcdd5a638e0b97332f25c5" category="list-text">記憶體：2048.0000 GB</block>
   <block id="2ab4f08685ad9b1d2fa19d89e6ba868d" category="list-text">外形尺寸：2U 機箱，附 1 個 HA 控制器</block>
   <block id="c9953c4267de28d4e4f4289b7b365daf" category="list-text">PCIe 擴充槽：18</block>
-  <block id="d42c81998c8bb20f01a171602fa2f1a4" category="list-text">最低ONTAP版本： ONTAP 9.15.1RC2 == 橫向擴展最大值</block>
   <block id="9b47b9e090f3ed760ac1261a644c05f0" category="list-text">類型：NAS；HA 對：12；原始容量：176.3 PB / 156.5 PiB；最大記憶體：24576 GB</block>
   <block id="f327af4f44f0baf2a9bb36a92f38228b" category="list-text">類型：SAN；HA 對：6；原始容量：88.1 PB / 78.3 PiB；最大記憶體：12288 GB</block>
   <block id="cf229378f8192fe9232cb0dd2665b5c2" category="list-text">類型：HA 對；原始容量：14.7 PB / 13.0 PiB；最大記憶體：2048.0000</block>
@@ -12409,7 +12370,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="99a11be73f2f4988ed4b0695ca00ca62" category="list-text">重量：59.5 磅 27.0 公斤</block>
   <block id="658d4184d5ca9a8b014acdf84474ea7e" category="list-text">寬度：19 吋 IEC 機架相容（17.7 吋 44.9 公分）</block>
   <block id="b7c705f03831e422ad258e381f62556f" category="list-text">深度：30.0 英吋（含電纜管理支架為 35.2 英吋）</block>
-  <block id="aa535ccad0e06026b2c80c79e42a2b75" category="list-text">工作溫度/海拔/濕度：海拔高度 3048 公尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結</block>
   <block id="5cff7da614bbbf25f8c9cca36c38f691" category="list-text">雜訊：標稱聲功率 (LwAd)：8.5 聲壓 (LpAm)（旁觀者位置）：67.7 dB</block>
   <block id="a7daecb8dc316b95333993b2c485c8f2" category="list-text">標準 EMC/EMI：BS-EN-55032、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、KS 第 15 部分 A 3830 33、230 3、KS 930 類</block>
   <block id="d44b841abd6708491fa419df7215fd64" category="list-text">標準安全：ANSI/UL60950-1、ANSI/UL62368-1、BS-EN62368-1、CAN/CSA C22.2 No. 60950-1、CAN/CSA C22.2 No. 62368-1、CNS 15598-1,6086825-168-1、CNS 15598-1、1086823623623639 62368-1、IEC60950-1、IS 13252（第 1 部分）</block>
@@ -12421,7 +12381,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bb982cf1c6df93898547742fd7c13e34" category="list-text">最大原容量：4.0392 PB</block>
   <block id="1f36f37c7c81df7b77e777706e8262f9" category="list-text">記憶體：128.0000 GB</block>
   <block id="f4c24a91325c512de420ced357e65577" category="list-text">PCIe 擴充槽：8</block>
-  <block id="5b3dc59120722ac76ee6af21d9abc7e7" category="list-text">最低ONTAP版本： ONTAP 9.16.1RC1 == 橫向擴展最大值</block>
   <block id="06cf2fed8ae499b2f77075b4924fa458" category="list-text">類型：NAS；HA 對：3；原始容量：12.1 PB / 10.8 PiB；最大記憶體：384 GB</block>
   <block id="0dc78f5fc53d592da101560a72c495ee" category="list-text">類型：SAN；HA 對：3；原始容量：12.1 PB / 10.8 PiB；最大記憶體：384 GB</block>
   <block id="6e2d02e867428685021b5207f032cc30" category="list-text">類型：HA 對；原始容量：4.0 PB / 3.6 PiB；最大記憶體：128.0000</block>
@@ -12429,7 +12388,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="23841fcfa56717ecbb90e2b28b0be81e" category="list-text">協定：乙太網路 25 Gbps；連接埠：32</block>
   <block id="8c5245963873dc44aed87d82e8c6090f" category="list-text">協定：乙太網路 10 Gbps；連接埠：24</block>
   <block id="e5c0138c0b3f7e29403979905d7f0ffd" category="list-text">協定：FC 64 Gbps；連接埠：24</block>
-  <block id="540fda4e6727c0b4511226f712bfccac" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：24</block>
   <block id="ec21c9636f37a17e64c44f57b2d45f1f" category="list-text">協定：SAS 12 Gbps；連接埠：16</block>
   <block id="36ce54fb78d86bb29a64f39130a0e48e" category="list-text">典型功率：2489 BTU/小時</block>
   <block id="ffac78d3bc24df13cd04b1c34ed6c9bc" category="list-text">最壞情況下的功率：3890 BTU/小時</block>
@@ -12476,9 +12434,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cfcd208495d565ef66e7dff9f98764da" category="cell">0</block>
   <block id="23154a4c417ae30150c8183e97228049" category="cell">USB 600 Mbps</block>
   <block id="e1ed1cc7f2ba5df4283f016409893812" category="paragraph">CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP；S3；含 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.SMB 3.1.1；</block>
-  <block id="23dfbabb7837ab3a7b1454bbdde8dcc8" category="list-text">重量：60.7 磅/27.5 公斤</block>
-  <block id="319e7cb7bbbedc00c30be1b9a4530542" category="list-text">工作溫度/海拔/濕度：海拔 3048 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結</block>
-  <block id="2d4e493bd03e1f489892a17ab8b7aea5" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0；br/聲壓 (LpAm)（旁觀者位置）：70.5 dB</block>
   <block id="d2aa9231f8ce36fee3257dac7f9040ef" category="paragraph">以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；</block>
   <block id="3a5eef6111f051ba247922c28e4d140c" category="cell">12.1 PB / 10.8 PiB</block>
   <block id="5c4e7400165835e351764cdbeb0d733e" category="cell">128.0000</block>
@@ -12500,8 +12455,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2175c342acbf385248108299c44118b8" category="cell">NVMe/FC 32 Gbps</block>
   <block id="06f18c4daece38548aaed1f8e7ad7a65" category="list-text">典型功率：2642 BTU/小時</block>
   <block id="caee1a6bd998eef961868a45bd4dbc8b" category="list-text">最壞情況下的功率：3476 BTU/小時</block>
-  <block id="7d5423ead4cc9c9c7523162c96b9a70a" category="list-text">重量：54.3 磅/24.6 公斤</block>
-  <block id="bfb224eca9d5778fa9096edb45c6e0a6" category="list-text">雜訊：標稱聲功率 (LwAd)：7.2；br/聲壓 (LpAm)（旁觀者位置）：69.1 dB</block>
   <block id="8620fd4a54bd59df48445495cc60d6a1" category="list-text">類型：HA 對；原始容量：1.1 PB / 1.0 PiB；最大記憶體：128.0000</block>
   <block id="f350094c762b190b03da78050fac38f6" category="list-text">協定：乙太網路 25 Gbps；連接埠：4</block>
   <block id="ae6233ad0fe7d541d74b7fcbd8e20ee1" category="list-text">協定：乙太網路 10 Gbps；連接埠：4</block>
@@ -12526,11 +12479,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="82b23dd1d66ccbbfcd3a41578d44c162" category="paragraph">CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4/RDMA；NVMe/FC；NVMe/TCP；S3；附 NAS 的 S3；SMB 2.0；SMB 2.1；</block>
   <block id="333946675ad4bc16ff4866e620f0381a" category="list-text">典型功率：4209 BTU/小時</block>
   <block id="4828cf039ad8ba2d28d9246597351104" category="list-text">最壞情況下的功率：5215 BTU/小時</block>
-  <block id="b964471e3140e0a2dc6c7f25ca5880ee" category="list-text">重量：110.0 磅/49.9 公斤</block>
   <block id="99190bf361f23d7f60b0311ed65db52c" category="list-text">高度：4U</block>
-  <block id="fd82bddbad5203300e57904c991cb840" category="list-text">深度：32.6 英寸/（34.7 英寸，含電纜管理支架）</block>
-  <block id="9725247c68aace7973804f231cbdd26b" category="list-text">雜訊：標稱聲功率 (LwAd)：8.5；br/聲壓 (LpAm)（旁觀者位置）：67.2 dB</block>
-  <block id="8d6f1126e03ba70819901e3191bf6358" category="list-text">最低ONTAP版本： ONTAP 9.7RC1 == 橫向擴展最大值</block>
   <block id="603170cd5591c91144ede853fb7004e9" category="list-text">協定：乙太網路 25 Gbps；連接埠：12</block>
   <block id="c3346d55fb4bcd313308cf344c3c9956" category="list-text">協定：乙太網路 100 Gbps；連接埠：20</block>
   <block id="1f9a9c48fecfca4a044d529a9d033783" category="list-text">協定：乙太網路 10 Gbps；連接埠：32</block>
@@ -12549,7 +12498,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b19c2c7048b82c29d5feda222d696605" category="list-text">類型：HA 對；原始容量：6.6 PB / 5.9 PiB；最大記憶體：256.0000</block>
   <block id="c803d8d230c5020cdc30a3cb8e9303f4" category="list-text">典型功率：6938 BTU/小時</block>
   <block id="dc7a593c222c4030f739c8d0e1f00f2e" category="list-text">最壞情況下的功率：9089 BTU/小時</block>
-  <block id="393e9f65cd03d1b202348e74d85ea15c" category="list-text">重量：118.0 磅 53.5 公斤</block>
   <block id="7c7e70fa4ec76732aa0e3f8c34e33b0a" category="list-text">深度：34.5 英吋（含電纜管理支架為 36.6 英吋）</block>
   <block id="8b00587d45c71c577c712b3a1bb0c9f2" category="list-text">雜訊：標稱聲功率 (LwAd)：8.6 聲壓 (LpAm)（旁觀者位置）：71.6 dB</block>
   <block id="ea033f663b18ef68b8d1ea62bc608ed6" category="summary">AFF A90的主要規格</block>
@@ -12577,9 +12525,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6614ba120512c4b5534e09992ffb3b48" category="list-text">乙太網路 1 Gbps：2 個連接埠</block>
   <block id="a641c2b52081bb6d5109bd6c1aed3da6" category="list-text">RS-232 115 Kbps：4 個連接埠</block>
   <block id="178dcda4ffd023c89a1eb518337f3c34" category="list-text">USB 600 Mbps：2 個連接埠</block>
-  <block id="cfb07b6404929452a20cf49b5564f634" category="list-text">重量：118.0 磅/53.5 公斤</block>
-  <block id="75c66802e076ebfbdb8135f4d73d33a3" category="list-text">深度：34.5 英寸/（36.6 英寸，含電纜管理支架）</block>
-  <block id="e3f8e554738613be85c954cb0fe985be" category="list-text">雜訊：標稱聲功率 (LwAd)：8.6；br/聲壓 (LpAm)（旁觀者位置）：71.6 dB</block>
   <block id="d81fc6af6ea13811aecbc5e80e82a6e0" category="summary">AFF A90儲存系統的主要規格</block>
   <block id="9b05f025388044bfb675c0d7665f9af8" category="paragraph">以下是AFF A90的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF A90規格的完整清單。此頁面反映的是單一高可用性對。</block>
   <block id="1449c87ec77b43f028315be24aff95c6" category="list-text">NAS：12 個 HA 對，79.3 PB / 70.4 PiB 原始容量，24576 GB 最大內存</block>
@@ -12587,10 +12532,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b4e746b652dc71bc904fa260cd47dd74" category="list-text">HA 對：6.6 PB / 5.9 PiB 原始容量，2048.0000 GB 最大內存</block>
   <block id="f4ccae1af0c039ef6331a12dfa192bc4" category="summary">A800平台組的主要規格</block>
   <block id="4412f4700447802c6ab24953f2967296" category="doc">AFF A800的主要規格</block>
-  <block id="bdb11ff259e5f7f084623cae9c68c9a0" category="paragraph">以下是單一高可用性對中AFF A800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="e29752183e34c8411a0856db12339812" category="list-text">平台配置： AFF A800單機箱 HA 對</block>
   <block id="17f48666aa0c35f775a1b2aac2486d64" category="list-text">記憶體：1280.0000 GB</block>
-  <block id="1f54434a03024a54ecb330e9febd2445" category="list-text">最低ONTAP版本： ONTAP 9.4RC1 == 橫向擴展最大值</block>
   <block id="10f6bfd3f9f7efb9da69f6aaaf00dd2e" category="list-text">類型：NAS；HA 對：12；原始容量：79.3 PB / 70.4 PiB；最大記憶體：15360 GB</block>
   <block id="7076302b15d2e2833bdd55e6aa4d498f" category="list-text">類型：SAN；HA 對：6；原始容量：39.7 PB / 35.2 PiB；最大記憶體：7680 GB</block>
   <block id="93b2830e4ec577d691b02f4284fe92e0" category="list-text">類型：HA 對；原始容量：6.6 PB / 5.9 PiB；最大記憶體：1280.0000</block>
@@ -12601,15 +12544,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8128140dc138c0144edf19fd950d1ee2" category="list-text">典型功率：6626 BTU/小時</block>
   <block id="e42b526fbe0f3c1227d56efb1f018003" category="list-text">最壞情況下的功率：8417 BTU/小時</block>
   <block id="39fe1ab17015b4c54d3acbb381464843" category="list-text">重量：132.5 磅 60.1 公斤</block>
-  <block id="c407b354a69fc0f35ea83e395d7236e0" category="list-text">工作溫度/海拔/濕度：海拔高度 3048 公尺時 5°C 至 40°C（41°F 至 104°F）；相對濕度 8% 至 90%，無凝結</block>
   <block id="884a1ad02adc9b1a30d1fb64a488ff81" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0 聲壓 (LpAm)（旁觀者位置）：62.8 dB</block>
   <block id="374f686d1050b8db4234a3cff60f21f6" category="summary">A900平台組的主要規格</block>
   <block id="baccae61b0b2c7a795093da2188894c0" category="doc">AFF A900的主要規格</block>
-  <block id="d7377ef7ac2fe02f983d361f9ccd35ce" category="paragraph">以下是單一高可用性對中AFF A900儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="d786d99c8a946cff6ec7792dc598b9f8" category="list-text">平台配置： AFF A900單機箱 HA 對</block>
   <block id="23bcd6d5f3a8deb59601aecde62055ac" category="list-text">外形尺寸：8U 機箱，附 2 個 HA 控制器</block>
   <block id="fcc16789555a80dd6421ce488b7de02f" category="list-text">PCIe 擴充槽：20</block>
-  <block id="4e4544052daf1f29c67fcb821b779206" category="list-text">最低ONTAP版本： ONTAP 9.10.1RC2 == 橫向擴展最大值</block>
   <block id="a0177ff33f36bce292684d5f6e69b13c" category="list-text">協定：乙太網路 100 Gbps；連接埠：32</block>
   <block id="a4b06306ca8860e11ab1daa2f1d103d7" category="list-text">協定：乙太網路 25 Gbps；連接埠：64</block>
   <block id="3f954f581bbf55d1e42c397e6d2a769c" category="list-text">協定：乙太網路 10 Gbps；連接埠：64</block>
@@ -12626,19 +12566,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f8f37ef9a6b72f1149134728ec9a48d4" category="list-text">雜訊：標稱聲功率 (LwAd)：7.4 聲壓 (LpAm)（旁觀者位置）：65.0 dB</block>
   <block id="46ae63d798657637d7b0da22ab66be8f" category="summary">ASA-C250 平台組的主要規格</block>
   <block id="8b14cc17bebb14141a13d943fbf03bea" category="doc">ASA C250的主要規格</block>
-  <block id="2fb11ccabb5f061076955212cf9e3ce1" category="paragraph">以下是單一高可用性對中ASA C250儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="fdd6c5bebca24bc951e9fd52ceb5eecf" category="list-text">平台配置： ASA C250單機箱 HA 對</block>
   <block id="f91b8c8831bab83cc95ee102087c617f" category="list-text">最大原容量：1.4736 PB</block>
-  <block id="8803112546143acade991372c28bca22" category="list-text">最低ONTAP版本： ONTAP 9.13.1P1 == 橫向擴展最大值</block>
   <block id="d199fe3f9b1e4090a8f9c733e498aa7e" category="list-text">類型：NAS</block>
   <block id="a23d2142a38187167c012fc417446750" category="list-text">類型：SAN；HA 對：6；原始容量：8.8 PB / 7.9 PiB；最大記憶體：768 GB</block>
   <block id="bd65761abbdcb433903d000fc35bf75d" category="list-text">類型：HA 對；原始容量：1.5 PB / 1.3 PiB；最大記憶體：128.0000</block>
-  <block id="12232c1b0db425eb005a4461c504595d" category="list-text">NVMe/FC == 系統環境規格</block>
   <block id="0159c5ec653e15fcbcae39428fa791d8" category="list-text">典型功率：2906 BTU/小時</block>
   <block id="d707b620c17bdc4f1ab8681a199b43f0" category="list-text">最壞情況下的功率：3750 BTU/小時</block>
   <block id="3c202f79f61f28bb47426c96d75b8df6" category="summary">ASA-C400 平台組的主要規格</block>
   <block id="71baed637b22c2f4560587af954092b7" category="doc">ASA C400的主要規格</block>
-  <block id="dc5457cf69538274fe26d7679976aade" category="paragraph">以下是單一高可用性對中ASA C400儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="280a6502db2cb8db47a1361c0ec70b69" category="list-text">平台配置： ASA C400A 單機箱 HA 對，乙太網路捆綁包</block>
   <block id="06ebb33b1d02a3a4d52515c3169814cc" category="list-text">最大原容量：2.9472 PB</block>
   <block id="f0895b0c06e00482b7082cef32c9359f" category="list-text">類型：SAN；HA 對：6；原始容量：17.7 PB / 15.7 PiB；最大記憶體：1536 GB</block>
@@ -12649,7 +12585,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="47ddf3a62f6716ffc2f5dcb2920d6923" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：40</block>
   <block id="91fc1bf42be5829ef3dba0f799901b92" category="summary">ASA-C800 平台組的主要規格</block>
   <block id="43901cff589f977e8a6fb9b0ed89e14f" category="doc">ASA C800的主要規格</block>
-  <block id="5a16a1d0d6cb4dff48ee98d4b2fe7b43" category="paragraph">以下是單一高可用性對中ASA C800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="484376736a8b3c83db54118bb81c0552" category="list-text">平台配置： ASA C800單機箱 HA 對</block>
   <block id="590ea72c375cf8671060032d26812f04" category="list-text">最大原始容量：7.3680 PB</block>
   <block id="bd1b05bb015a0a2acf5c371d5fcae997" category="list-text">類型：SAN；HA 對：6；原始容量：44.2 PB / 39.3 PiB；最大記憶體：7680 GB</block>
@@ -12659,15 +12594,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7c79445526ccce20b92cbf01e1a47e8d" category="section-title">主要容量、記憶體、外形規格和ONTAP版本規格</block>
   <block id="5e87e402ec6e815000f9fcf30cb59e70" category="list-text">平台配置： ASA A1KA 雙機箱 HA 對</block>
   <block id="594ea955f42a459c95e5ec7be911e8b3" category="list-text">最大原容量：2.6622 PB</block>
-  <block id="0bcdc83987481874b3df2da8ad3f5001" category="list-text">最低ONTAP版本： ONTAP 9.16.0 == 橫向擴展最大值</block>
   <block id="14280657c7fa8d036ae80129b1cfe036" category="list-text">類型：SAN；HA 對：6；原始容量：16.0 PB / 14.2 PiB；最大記憶體：12288 GB</block>
   <block id="694db4398fbad6ed501214dd8938f337" category="list-text">類型：HA 對；原始容量：2.7 PB / 2.4 PiB；最大記憶體：2048.0000</block>
-  <block id="be5f78085e15e220c97d810039c3d2be" category="list-text">NVMe/TCP == 系統環境規格</block>
   <block id="987d679b705691bf50ce94ba0126b762" category="summary">ASA A20 的主要規格</block>
   <block id="067b5fa0404e0a1d2eca59c5e5161621" category="paragraph">以下是單一高可用性對中ASA A20 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="f69463a171f3ace651b547cb61052c23" category="list-text">平台配置： ASA A20 單機箱 HA 對</block>
   <block id="55ff5c7e853405bb677fe7963b81c4a5" category="list-text">最大原容量：0.7344 PB</block>
-  <block id="9947eeeafeed3d5406463e828a6143b0" category="list-text">最低ONTAP版本： ONTAP 9.16.1 == 橫向擴展最大值</block>
   <block id="07e012e88c2eae0569e081f75bdc556c" category="list-text">類型：SAN；HA 對：3；原始容量：2.2 PB / 2.0 PiB；最大記憶體：384 GB</block>
   <block id="0d8ec3cd4998a46e4220bea48bd01c3b" category="list-text">類型：HA 對；原始容量：0.7 PB / 0.7 PiB；最大記憶體：128.0000</block>
   <block id="a6064ac30820627594be27df076928cb" category="summary">ASA A30 的主要規格</block>
@@ -12724,9 +12656,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b92faf9c4929da09bc231f321d401aa8" category="cell">12288GB</block>
   <block id="98cdd85e8301f2ead1b77774d04aeb95" category="cell">2048.0000</block>
   <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
-  <block id="d5badd98590f7c8475031c722bee9f13" category="list-text">重量：220.5 磅/100.0 公斤</block>
-  <block id="d7dbfe33d50154da8ce85d1c1065e7be" category="list-text">深度：28.8 英寸/（36.8 英寸，含電纜管理支架）</block>
-  <block id="a57159585077204011cc6d81536a227c" category="list-text">雜訊：標稱聲功率 (LwAd)：7.4；br/聲壓 (LpAm)（旁觀者位置）：65.0 dB</block>
   <block id="18dc17338011190ae60489762b18bbba" category="summary">AFF C250儲存系統的主要規格</block>
   <block id="06b4db325464ed97a14422979b4d8924" category="doc">AFF C250的主要規格</block>
   <block id="12dc95d0bc892a4d68c08990a2e0e93f" category="paragraph">以下是AFF C250的部分規格。訪問<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）取得AFF C250規格的完整清單。此頁面反映的是單一高可用性對。</block>
@@ -12785,15 +12714,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="282171cc5dd323ec3623eb44944c319e" category="paragraph">平台配置： AFF C800單機箱 HA 對</block>
   <block id="1aa18ff2688eef082ca414ef6c1d0efb" category="cell">15360GB</block>
   <block id="750d899f51fc7f647f07a546c5cedf65" category="cell">44.2 PB / 39.3 PiB</block>
-  <block id="439e4902245729253229992fd0a361ae" category="list-text">重量：132.5 磅/60.1 公斤</block>
-  <block id="f60520e90b3a6d873ecb44d71d75b734" category="list-text">工作溫度/海拔/濕度：5°C 至 40°Cbr/41°F 至 br/104°F) atbr/= 3048mbr/= 10000 ft) 海拔；8% 至 90%br/相對濕度，無冷凝</block>
-  <block id="d5cacbff7b82ab3d26541de685b1a32b" category="list-text">雜訊：標稱聲功率 (LwAd)：8.0；br/聲壓 (LpAm)（旁觀者位置）：62.8 dB</block>
   <block id="8403c0175395ff495c9af55099b8fef4" category="summary">FAS70 的主要規格</block>
   <block id="c96eb561070b12daad5027ae91335418" category="paragraph">以下是單一高可用性對中 FAS70 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="c692e4fa105561892a2a9228b34bffae" category="section-title">FAS70 規格一覽</block>
   <block id="b60dd0f48b757bf37e7152687a5f1e2a" category="list-text">平台配置：FAS70 雙機箱 HA 對</block>
   <block id="40d3ca6b2e5b5c3a7cf307c29003021c" category="list-text">最大原始容量：15.0000 PB</block>
-  <block id="5452f0b55e47fd57056cfbc2c1df1383" category="list-text">最低ONTAP版本： ONTAP 9.15.1 == 橫向擴展最大值</block>
   <block id="b254a13dcae5f4c43da172d62dc20c0d" category="list-text">類型：NAS；HA 對：12；原始容量：180.0 PB / 159.9 PiB；最大記憶體：3072 GB</block>
   <block id="4b63cb91007f9af60dc4a59b97bf7ca9" category="list-text">類型：SAN；HA 對：6；原始容量：90.0 PB / 79.9 PiB；最大記憶體：1536 GB</block>
   <block id="f3ded331a5a6e6365d277baac957b315" category="list-text">類型：HA 對；原始容量：15.0 PB / 13.3 PiB；最大記憶體：256.0000</block>
@@ -12801,10 +12726,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6b50628d21385cc30c365a7eb8bffd16" category="list-text">協定：乙太網路 25 Gbps；連接埠：48</block>
   <block id="e2eaefdeb48f05ec9cb35dfb6f615aeb" category="list-text">協定：乙太網路 10 Gbps；連接埠：48</block>
   <block id="e5aa4df0ff781766e2e817068625c8b1" category="list-text">協定：FC 64 Gbps；連接埠：48</block>
-  <block id="70e1c8cd6acecd7be46535fa29cde5eb" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：48</block>
   <block id="d2601122f2e33565668f0d284f9bba63" category="list-text">協定：SAS 12 Gbps；連接埠：48</block>
-  <block id="9d02a28c4d1a1a71729bbb0ac80472a7" category="list-text">典型功率：2653 BTU/小時</block>
-  <block id="7a334425f69fb6c06dfa651065352e0b" category="list-text">最壞情況下的功率：3050 BTU/小時</block>
   <block id="11c8af1f99a8557ee032710d4d130287" category="summary">FAS90 的主要規格</block>
   <block id="9f993159e76f4a7d4b4b8b8eddb4460a" category="paragraph">以下是單一高可用性對中 FAS90 儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="42779fde1dac86b0723d2e19199ac8fa" category="section-title">FAS90 規格一覽</block>
@@ -12817,7 +12739,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="12425dc1c33eeeb8070ff1d0f0dd0990" category="list-text">最壞情況下的功率：5136 BTU/小時</block>
   <block id="524bbf314904b6048321bf7d57c0721a" category="summary">FAS2700 平台組的主要規格</block>
   <block id="f9fdf8f9fd1bcb23867be4e8677041cd" category="doc">FAS2750的主要規格</block>
-  <block id="4b81974f9adc22dc0d93c489cfefd300" category="paragraph">以下是單一高可用性對中FAS2750儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="b740280982e279e3689c99d02e31f681" category="list-text">平台配置： FAS2750 UTA2 單機箱 HA 對</block>
   <block id="97d0e3c1fe730b3fc51986b2a3d86897" category="list-text">最大原容量：2.6832 PB</block>
   <block id="10dfcb5c5a94973a0430e25e6c8fa34f" category="list-text">PCIe 擴充槽：2</block>
@@ -12826,11 +12747,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b6b10df768149e4f90013273cf86d895" category="list-text">類型：HA 對；原始容量：2.7 PB / 2.4 PiB；最大記憶體：64.0000</block>
   <block id="43f7c906d8d706e8eaaac5f08222a66d" category="summary">FAS2800 平台組的主要規格</block>
   <block id="9085692f34e3fb2c2c78d38a14521724" category="doc">FAS2820的主要規格</block>
-  <block id="128d9b59350624d5c79c6c363cab68cc" category="paragraph">以下是單一高可用性對中FAS2820儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="39406851902f01211ead25d98062f61d" category="list-text">平台配置： FAS2820單機箱 HA 對</block>
   <block id="575985f97a1f988a6350ac06db427db9" category="list-text">最大原始容量：3.1680 PB</block>
   <block id="b0e3a3152d05dd16038908656c9c2f8a" category="list-text">外型尺寸：2U 機箱，配備 2 個 HA 控制器和 12 個驅動器插槽</block>
-  <block id="af595004b31eb9535c259508ed0ae2fb" category="list-text">最低ONTAP版本： ONTAP 9.13.1RC1 == 橫向擴展最大值</block>
   <block id="ba885ec4ce316bb75e770a53e3213761" category="list-text">類型：NAS；HA 對：12；原始容量：38.0 PB / 33.8 PiB；最大記憶體：1536 GB</block>
   <block id="d29c5defb734a27748e948f94d789e06" category="list-text">類型：SAN；HA 對：6；原始容量：19.0 PB / 16.9 PiB；最大記憶體：768 GB</block>
   <block id="fead3e0ee4def93b2151167022fb4533" category="list-text">類型：HA 對；原始容量：3.2 PB / 2.8 PiB；最大記憶體：128.0000</block>
@@ -12852,7 +12771,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cbf45d5ba7051d1a5a5803d60ac6d3db" category="cell">10.6 PB / 9.4 PiB</block>
   <block id="5914ff703c6686a6800588a76dacab74" category="list-text">典型功率：2319 BTU/小時</block>
   <block id="1c28248d81d6ff87ee55b4eb47056a8c" category="list-text">最壞情況下的功率：3872 BTU/小時</block>
-  <block id="b95d880eb71d3f28802d99353d93f6f0" category="list-text">重量：52.2 磅/23.7 公斤</block>
   <block id="c0abf347ba9cbc3892abfa80eb2e4397" category="summary">FAS8300的主要規格</block>
   <block id="e0fa95a49988723bdb3a71e39da9c698" category="paragraph">以下是單一高可用性對中FAS8300儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
   <block id="39d93cb8cb49b1e34ce4682195baa972" category="section-title">FAS8300規格概覽</block>
@@ -12881,7 +12799,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="73f56d8353140321c6d56ae1cd03dcbc" category="cell">24576GB</block>
   <block id="5d1cd462bd74ff5016c71d1735d844d0" category="cell">90.0 PB / 79.9 PiB</block>
   <block id="6ec20c5ffb71fc8e6407815aba709ebe" category="cell">15.0 PB / 13.3 PiB</block>
-  <block id="e71a112fcba059348a330658e07fff85" category="list-text">工作溫度/海拔/濕度：海拔 3048 公尺/10000 英尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 90%，無凝結</block>
   <block id="65a4d6fcc372057dd61e6cc7abb8c696" category="inline-link-macro">AFF A1K （自動恢復）</block>
   <block id="94bd55fe0571dbfa433cb6e80d3e228b" category="inline-link-macro">AFF A1K （手動恢復）</block>
   <block id="3c9419b0744beccd4fd6272e84be9db0" category="inline-link-macro">AFF A20/30/50（自動恢復）</block>
@@ -12941,16 +12858,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="73b98ef043acd488522721608d1383c0" category="inline-link-macro">ASA 70/90</block>
   <block id="1424eb9825ad365579c4da49e4786b56" category="inline-link-macro">AFF A70/90</block>
   <block id="3acfb7ef5d74a9a2b83867ee2f648b5c" category="inline-link-macro">ASA A70/90</block>
-  <block id="9fb8b7f7ff808262345139c29591fbfd" category="cell">機箱是容納所有控制器組件（例如控制器/CPU 單元、電源和 I/O）的實體外殼。</block>
-  <block id="1dd12ce23185605c475a49a224a49d9c" category="cell">資料中心持久記憶體 (DCPM) 電源模組在意外斷電事件期間為 DCPM 模組提供備用電源。</block>
-  <block id="e93ac6e8beec2ad9885ab64cf4a808c1" category="cell">風扇提供氣流來冷卻系統組件並維持適當的工作溫度。</block>
-  <block id="58fed263b925f9d39e313af171460d1a" category="cell">I/O模組為控制器提供網路和儲存連接介面。</block>
-  <block id="860762194502ed1a9210218c7841a247" category="cell">LED 模組提供系統健康和組件狀態的視覺狀態指示器。</block>
-  <block id="91ed5045bf07352365158d842f193224" category="cell">夾層卡為控制器提供額外的 I/O 連接和擴充功能。</block>
-  <block id="c7cd9ad7ad29f1254a2b2e42d95aa345" category="cell">當模組發生故障或顯示錯誤時，必須更換 NVDIMM（非揮發性雙列直插式記憶體模組）。</block>
-  <block id="394c77de2c782fcabbeb8d9b2abf1c39" category="cell">NVRAM模組為系統元資料和快取寫入資料提供非揮發性儲存。</block>
-  <block id="e46170c7e18fcaa48a2a75898487c4bc" category="cell">PCI 卡和轉接卡提供擴充槽，用於附加功能和 I/O 連接。</block>
-  <block id="f1ec2e231b90edf57a42e251aa1ecd14" category="cell">系統管理模組為系統提供帶外管理功能。</block>
   <block id="5ef79279dd7f732336b5156398a8b391" category="section-title">2025年9月</block>
   <block id="3e7278a35880ab6bc45afac28b6eccb7" category="section-title">平台規格</block>
   <block id="da160308e3b4b4a80bf1b72b5bdbedb8" category="inline-link-macro">Hardware Universe</block>
@@ -13127,8 +13034,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="01a3f659112c26b68dc2a4223fa153e4" category="summary">尋找按平台系列組織的適用於您的NetApp儲存系統的 DCPM 電源模組更換程式。此參考提供了針對AFF、 ASA和FAS系統的 DCPM 電源模組更換工作流程的直接鏈接，以幫助您快速找到適合您特定型號的正確程序。</block>
   <block id="24ba48f76c2f85b52a50c43721f703a5" category="doc">不同平台系列的 DCPM 電源模組更換程序</block>
   <block id="50120036de2420f624aad48cd6524af4" category="paragraph">尋找按平台系列組織的適用於您的NetApp儲存系統的 DCPM 電源模組更換程式。此參考資料提供了AFF和FAS系統的 DCPM 電源模組更換工作流程的直接鏈接，以幫助您快速找到適合您特定型號的正確程序。</block>
-  <block id="070491ddebb3f660fcc77c7ca943e574" category="list-text"><block ref="070491ddebb3f660fcc77c7ca943e574" category="inline-link-macro-rx"></block></block>
-  <block id="51576e16019de8a26627c3b34c3cc4a6" category="list-text"><block ref="51576e16019de8a26627c3b34c3cc4a6" category="inline-link-macro-rx"></block></block>
   <block id="b0005daeb1b62349a88154ecde473f4a" category="summary">尋找按平台系列組織的NetApp儲存系統的 DIMM 更換程式。此參考提供了針對AFF、 ASA和FAS系統的逐步 DIMM 更換工作流程的直接鏈接，以幫助您快速找到適合您特定型號的正確步驟。</block>
   <block id="0f443b61e3296d8259f810843d2eee39" category="doc">各平台系列的 DIMM 更換流程</block>
   <block id="c6cf91f7c1afd4f1026ce9c6461ef869" category="paragraph">尋找按平台系列組織的NetApp儲存系統的 DIMM 更換程式。此參考提供了針對AFF和FAS系統的逐步 DIMM 更換工作流程的直接鏈接，以幫助您快速找到適合您特定型號的正確步驟。</block>
@@ -13173,7 +13078,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ca971619f09e56e46375817722921514" category="list-text"><block ref="ca971619f09e56e46375817722921514" category="inline-link-macro-rx"></block></block>
   <block id="3cf0cc20768b309ce48bae94338d1a4a" category="list-text"><block ref="3cf0cc20768b309ce48bae94338d1a4a" category="inline-link-macro-rx"></block></block>
   <block id="037bbd1e50309583e0757f2140d95bc0" category="list-text"><block ref="037bbd1e50309583e0757f2140d95bc0" category="inline-link-macro-rx"></block></block>
-  <block id="c0b6c1f9d7b6f47b6ad55fc4d44a89aa" category="summary">尋找按平台系列組織的NetApp儲存系統的磁碟機更換程式。此參考提供了AFF、 ASA和FAS系統的逐步驅動器更換工作流程的直接鏈接，以幫助您快速找到適合您特定型號的正確程序。</block>
   <block id="d5c3fc0c2d25177f5b932a7171ee9e15" category="doc">按平台系列劃分的驅動器更換流程</block>
   <block id="a3d085470eba15e9280b129464b8ddb2" category="list-text"><block ref="a3d085470eba15e9280b129464b8ddb2" category="inline-link-macro-rx"></block></block>
   <block id="7c1733a0618e460dfa7b8102d537646a" category="list-text"><block ref="7c1733a0618e460dfa7b8102d537646a" category="inline-link-macro-rx"></block></block>
@@ -13233,45 +13137,23 @@ SFP+ （目標 / 啟動器）</block>
   <block id="23c6dc6e34e0e976cd5c554e6c02002a" category="list-text"><block ref="23c6dc6e34e0e976cd5c554e6c02002a" category="inline-link-macro-rx"></block></block>
   <block id="3aee59630782232e9467e39d10ac14fa" category="list-text"><block ref="3aee59630782232e9467e39d10ac14fa" category="inline-link-macro-rx"></block></block>
   <block id="768edc0422c0a8f015d113c020d7a9bc" category="list-text"><block ref="768edc0422c0a8f015d113c020d7a9bc" category="inline-link-macro-rx"></block></block>
-  <block id="56b2756b38a38c7e0d0795fd713f6dd6" category="summary">尋找按組件類型組織的NetApp儲存系統的更換程序。此參考提供了AFF、 ASA和FAS系統的逐步更換工作流程的直接鏈接，以幫助您快速找到適合您特定硬體維護需求的正確程序。</block>
-  <block id="d9eb7d819b58e61afbb24550e2a1631c" category="doc">NetApp儲存系統取代參考</block>
-  <block id="c7e61f30815ea807b2c62cf7cb92097b" category="cell">系統組件</block>
   <block id="e7bad79193e24a89406e41f0c4e8f05e" category="inline-link-macro">啟動介質更換程序</block>
-  <block id="b2d0814c343d11f01888f171a3c58e43" category="cell"><block ref="b2d0814c343d11f01888f171a3c58e43" category="inline-link-macro-rx"></block></block>
   <block id="a076ab1593328ebead7d251317431612" category="inline-link-macro">快取模組更換程序</block>
-  <block id="a85bc00ea0dfd82598b0da6e04516a5a" category="cell"><block ref="a85bc00ea0dfd82598b0da6e04516a5a" category="inline-link-macro-rx"></block></block>
   <block id="3757681a91eeded1b126522b38e3b046" category="inline-link-macro">底盤更換程序</block>
-  <block id="0a48ed2c3490171246310058801a0443" category="cell"><block ref="0a48ed2c3490171246310058801a0443" category="inline-link-macro-rx"></block></block>
   <block id="a191d3c8972a062c47584de321d754d2" category="inline-link-macro">控制器更換程序</block>
-  <block id="f5e86a00101d88eab5b0ae4913a273cb" category="cell"><block ref="f5e86a00101d88eab5b0ae4913a273cb" category="inline-link-macro-rx"></block></block>
   <block id="c8c976dddd090448c4cfbb511b7d169d" category="inline-link-macro">DCPM 電源模組更換流程</block>
-  <block id="e10aad718ca38836a4034ff265656adb" category="cell"><block ref="e10aad718ca38836a4034ff265656adb" category="inline-link-macro-rx"></block></block>
   <block id="1f8b57a714d976477d5cac757c69ff49" category="inline-link-macro">DIMM 更換步驟</block>
-  <block id="fab84821bfd6dbd31c2695b34cb3d075" category="cell"><block ref="fab84821bfd6dbd31c2695b34cb3d075" category="inline-link-macro-rx"></block></block>
   <block id="33376dc38d7738903c34618cd5cf0a86" category="inline-link-macro">驅動器更換程式</block>
-  <block id="89ffe18c0f10ae937c5828a696b1b14e" category="cell"><block ref="89ffe18c0f10ae937c5828a696b1b14e" category="inline-link-macro-rx"></block></block>
   <block id="1c714e0299d03e0f90a132d58f10e2d2" category="inline-link-macro">風扇更換程序</block>
-  <block id="2fa0e3268413bc3e2f63a1589fa363c7" category="cell"><block ref="2fa0e3268413bc3e2f63a1589fa363c7" category="inline-link-macro-rx"></block></block>
-  <block id="4e085c80a7c964b51a8c45f937bedc70" category="inline-link-macro">IO模組更換流程</block>
-  <block id="f40defb7ceb52d828c04d4bc8d23006e" category="cell"><block ref="f40defb7ceb52d828c04d4bc8d23006e" category="inline-link-macro-rx"></block></block>
   <block id="fd696a0146c08cb1afec667b64236a41" category="inline-link-macro">LED 模組更換程序</block>
-  <block id="daa172f31ec750d7c79713b3c2c05dd2" category="cell"><block ref="daa172f31ec750d7c79713b3c2c05dd2" category="inline-link-macro-rx"></block></block>
   <block id="8080dfea6d5ab34a8d6fe2a50c44788e" category="inline-link-macro">夾層更換程序</block>
-  <block id="c5fa3a7caefc23841d39414d7b336b34" category="cell"><block ref="c5fa3a7caefc23841d39414d7b336b34" category="inline-link-macro-rx"></block></block>
   <block id="4f4446698c5fb8f0eed8106cfea9817a" category="inline-link-macro">NVDIMM 更換步驟</block>
-  <block id="15977e344cad74a295af6c97f27e92f3" category="cell"><block ref="15977e344cad74a295af6c97f27e92f3" category="inline-link-macro-rx"></block></block>
   <block id="ed4a29c77228f95b5f34ec27e46fedc2" category="inline-link-macro">NVMEM/ NVRAM電池更換程序</block>
-  <block id="aac5b994162555f58eb246c4ef86a7a0" category="cell"><block ref="aac5b994162555f58eb246c4ef86a7a0" category="inline-link-macro-rx"></block></block>
   <block id="d32eb153b568d7e40e55e2cafb029f40" category="inline-link-macro">NVRAM模組更換程序</block>
-  <block id="391566a35112726187e0fdf57736bbc9" category="cell"><block ref="391566a35112726187e0fdf57736bbc9" category="inline-link-macro-rx"></block></block>
   <block id="43c26decdf9e6a5f7bb6c271d50831f4" category="inline-link-macro">PCI 卡和轉接卡更換程序</block>
-  <block id="c1cecd1ba364d60042f5a4e0a810ea14" category="cell"><block ref="c1cecd1ba364d60042f5a4e0a810ea14" category="inline-link-macro-rx"></block></block>
   <block id="78fa3a30758e4d5a65c341989241ee8f" category="inline-link-macro">電源更換程序</block>
-  <block id="4d8df984cfa3270d805f8668ef8e657c" category="cell"><block ref="4d8df984cfa3270d805f8668ef8e657c" category="inline-link-macro-rx"></block></block>
   <block id="a7da9d6c9cdcddf6adea58eed6c0f530" category="inline-link-macro">RTC 電池更換步驟</block>
-  <block id="bee16daab2c491b6b955353538c49d9f" category="cell"><block ref="bee16daab2c491b6b955353538c49d9f" category="inline-link-macro-rx"></block></block>
   <block id="dff5719e2d9eaa7b6bd9235aaa97593d" category="inline-link-macro">系統管理模組更換流程</block>
-  <block id="6fd4916afc23661bea63eff84ce82c9c" category="cell"><block ref="6fd4916afc23661bea63eff84ce82c9c" category="inline-link-macro-rx"></block></block>
   <block id="ce0289f5a93ebc431b8daf2de51af353" category="summary">尋找按平台系列組織的NetApp儲存系統的 I/O 模組更換程式。此參考提供了AFF、 ASA和FAS系統的逐步 I/O 模組更換工作流程的直接鏈接，以幫助您快速找到適合您特定型號的正確程序。</block>
   <block id="ade554b9dd3913961cccafe3afa99fba" category="doc">各平台系列的 I/O 模組更換程序</block>
   <block id="d6b1e37b5093a063f4e832675aca8094" category="list-text"><block ref="d6b1e37b5093a063f4e832675aca8094" category="inline-link-macro-rx"></block></block>
@@ -13928,7 +13810,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3d70b6b1c750645a1540b9185ec5dbfc" category="open-title">選項 2：熱插拔直流電源</block>
   <block id="27b8025bf920b2fdec95f4719d7e3772" category="paragraph">PSU 是冗餘的且可熱插拔。您不必關閉控制器來更換 PSU。</block>
   <block id="41221ad2b8f379d044b6e4c034575270" category="list-text">找到每個正在安裝的控制器的系統序號 (SSN)。</block>
-  <block id="639a764bd23851da6594721b4ee0a7d1" category="paragraph">基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接進行 SAS 帶內管理；[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="67bfe38eadb8acf6e70be93f4020561b" category="doc">熱插拔電源 - AFF A150</block>
   <block id="5ea0f09670f21c71300695e92b2cd256" category="admonition">請勿使用連接埠 e1b 和 e7b 連接埠進行主機網路連線。使用單獨的主機卡。</block>
   <block id="e0c35bf779836a3b5e187a211457a2b9" category="list-text">透過 SAS 連接對外部機架進行 SAS 帶內管理 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
@@ -13944,9 +13825,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b61c2071102a270d16023e40ee5b949e" category="doc">熱插拔電源 - AFF A700</block>
   <block id="9fdca944f84d0d7c1dd5bec5b33c4dad" category="doc">熱插拔電源 - AFF A700s</block>
   <block id="c88ebc5327d1036601d0eda773d3a9b3" category="doc">熱插拔電源 - AFF A800</block>
-  <block id="000e33b346cf40ffbe68a52c2d14f2ea" category="list-text">透過 SAS 連線進行 SAS 帶內管理 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="8548a56c519034463f28eadc644360ab" category="doc">熱插拔電源 - AFF A900</block>
-  <block id="20c8ebc12d960783bc610a9a7c628624" category="list-text">冗餘熱插拔電源 [//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="98c78afbee9a38af4c14116fcea041ee" category="doc">熱插拔電源 - ASA C250</block>
   <block id="a93641a4525fdc7b24b1b838539eaefd" category="doc">熱插拔電源 - ASA C400</block>
   <block id="c5fdd34e2ef42364012a118012d79fb4" category="doc">熱插拔電源 - ASA C800</block>
@@ -13958,10 +13837,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2c050786a43c0ea0115e636878783956" category="doc">熱插拔電源 - ASA A400</block>
   <block id="a2ada69f15b8dc349c947f1966fadfab" category="doc">熱插拔電源 - ASA A800</block>
   <block id="afa34f783768c8c33178d16016fc5fc4" category="doc">熱插拔電源 - ASA A900</block>
-  <block id="a09a90cc8fcac9f4d3e4b984533b8cad" category="paragraph">[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="5e227aeb2fcad7eaeead32f5302682f3" category="doc">熱插拔電源 - AFF C250</block>
   <block id="41002485b29502010a8644065a0c7d58" category="doc">熱插拔電源 - AFF C400</block>
-  <block id="e8b86e4a9e550f2cd1adce1d2f24708b" category="paragraph">基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
   <block id="e742e13f0573253743538a54686b965c" category="doc">熱插拔電源 - AFF C800</block>
   <block id="bb9a46a830b86006c64c8c357fbcb73c" category="doc">熱插拔電源 - FAS70 和 FAS90</block>
   <block id="c0fb977424a2b5bca01ac503e2f1b009" category="doc">熱插拔電源 - FAS2700</block>
@@ -14473,4 +14350,79 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c8e28ee11f5aed1ad0eadccaf8de83d7" category="list-text"><block ref="c8e28ee11f5aed1ad0eadccaf8de83d7" category="inline-link-macro-rx"></block></block>
   <block id="bcbb0b81d0720e2cc8e6293852d8f76b" category="list-text"><block ref="bcbb0b81d0720e2cc8e6293852d8f76b" category="inline-link-macro-rx"></block></block>
   <block id="70ef73c42db0b1681fa61ef4b1d4608c" category="list-text"><block ref="70ef73c42db0b1681fa61ef4b1d4608c" category="inline-link-macro-rx"></block></block>
+  <block id="a76d2084ed496076051922f0248b4853" category="list-text">重量：60.8 磅 27.6 公斤</block>
+  <block id="1e0c5fdb95dbfe6d5185caa4e11b89b6" category="list-text">深度：19.0 吋（含電纜管理支架為 24.1 吋）</block>
+  <block id="f3c536d4bfa76301d0b998924643f4ca" category="list-text">工作溫度/海拔/濕度：5°C 至 45°C（41°F 至 113°F），海拔最高可達 3048 公尺（10000 英尺）；相對濕度 8% 至 90%，無冷凝</block>
+  <block id="8ef9a06c0f63d5ff48d9a2cbed3169fc" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），海拔最高 12192 公尺（40000 英尺），相對濕度 10% 至 95%，無冷凝，原包裝</block>
+  <block id="10fd02a64a2d685f6678b6e3eff801b4" category="list-text">聲學噪音：標稱聲功率 (LwAd)：6.9；聲壓 (LpAm)（旁觀者位置）：51.0 分貝</block>
+  <block id="e447884015fc6cccd73419a58f4a2dc9" category="paragraph">以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連線進行 SAS 帶內管理；</block>
+  <block id="055aaee38a4b81eee6b4c24afbfcf729" category="paragraph">以下是單一高可用性對中AFF A1K儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="6daf083a3b3af83606075a29263440e7" category="section-title">橫向擴展最大值</block>
+  <block id="9f90ffdb250a94daf62a96eadd837607" category="list-text">SMB 3.1.1</block>
+  <block id="319496b6dca90504eb98e165573b640d" category="section-title">系統環境規範</block>
+  <block id="d484740478fa346bb18d6910949dbf47" category="list-text">工作溫度/海拔/濕度：10°C 至 35°C（50°F 至 95°F），海拔最高可達 3048 公尺（10000 英尺）；相對濕度 8% 至 80%，無冷凝</block>
+  <block id="0a5236d201517d1045ceae9b22e84fd5" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），海拔最高 12192 公尺（40000 英尺），相對濕度 10% 至 95%，無冷凝，原包裝</block>
+  <block id="c2c0077a342e25e5b74108a7f982ec71" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：24</block>
+  <block id="17243e3b5926560a59bcb5788ccee719" category="list-text">重量：60.7磅，27.5公斤</block>
+  <block id="a4d565bca0d7f8d64f35f9301a4f9778" category="list-text">寬度：19 英寸，符合 IEC 機架標準（17.6 英寸，44.7 厘米）</block>
+  <block id="5a751ecf985c6c64727d47f0e7aa7590" category="list-text">工作溫度/海拔/濕度：10°C 至 35°C（50°F 至 95°F），海拔最高可達 3048 公尺（10000 英尺）；相對濕度 8% 至 80%，無冷凝</block>
+  <block id="0c96908bdfe382795267cfd6b60bd0be" category="list-text">非工作溫度/濕度：-40°C 至 70°C（-40°F 至 158°F），海拔最高 12192 公尺（40000 英尺）；相對濕度 10% 至 95%，無冷凝，原容器</block>
+  <block id="a4618fbe6321146b02b45798227aa70f" category="list-text">聲學噪音：標稱聲功率 (LwAd)：8.0；聲壓 (LpAm)（旁觀者位置）：70.5 分貝</block>
+  <block id="9d8e8dde4e8f21db43e81a7eac62bf71" category="list-text">重量：60.7 磅 27.5 公斤</block>
+  <block id="85322b710a117737921e5b3c67e22faf" category="list-text">典型功率：2040 BTU/小時</block>
+  <block id="9bead36a4acbbc6e579c9b09058b0562" category="list-text">最壞情況下的功率：2907 BTU/小時</block>
+  <block id="30ce8c4179e462c044d5b8c2f8dba6ed" category="list-text">工作溫度/海拔/濕度：海拔高度 3048 公尺時 10°C 至 35°C（50°F 至 95°F）；相對濕度 8% 至 80%，無凝結</block>
+  <block id="306b0c1febd5a08539ced2821516e9d1" category="list-text">重量：54.3 磅 24.6 公斤</block>
+  <block id="6e15f64fd5a71681231b94ba550418d0" category="list-text">聲學噪音：標稱聲功率 (LwAd)：7.2；聲壓 (LpAm)（旁觀者位置）：69.1 分貝</block>
+  <block id="6357a9d7fb85d17241271315eb30967f" category="list-text">重量：110.0 磅 49.9 公斤</block>
+  <block id="2ff9f624082a84f12f514886fe9395d7" category="list-text">深度：32.6 吋（含電纜管理支架為 34.7 吋）</block>
+  <block id="d287c191cec43d3bb8ae0246b681601e" category="list-text">聲學噪音：標稱聲功率 (LwAd)：8.5；聲壓 (LpAm)（旁觀者位置）：67.2 分貝</block>
+  <block id="98e02f6afb915ae8bd2a149fb34f71fd" category="paragraph">以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連線進行 SAS 帶內管理</block>
+  <block id="20e386cc0532205afba67fcf837b2de0" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：56</block>
+  <block id="c9abd2a6058c1c2e98bfaca8755c0d6c" category="list-text">重量：118.0磅，53.5公斤</block>
+  <block id="6db82ab8acd2176b1b41c4bfe7c21010" category="list-text">深度：34.5吋（有線纜管理支架時為36.6吋）</block>
+  <block id="6bc18bdec69fb4197f471d1fa5bbbb8c" category="list-text">聲學噪音：標稱聲功率 (LwAd)：8.6；聲壓 (LpAm)（旁觀者位置）：71.6 分貝</block>
+  <block id="bbc28ae220e6e9a6c8c415d1678a3b9b" category="list-text">標準 EMC/EMI：BS-EN-55032、BS-EN55035、CISPR 32、EN55022、EN55024、EN55032、EN55035、EN61000-3-2、EN61000-3-3、KS 第 15 部分 A 3830 33、230 3、KS 930 類</block>
+  <block id="0271d3a0295931efdb1b5f315d1d0872" category="list-text">重量：118.0 磅 53.5 公斤</block>
+  <block id="f64096538a9a3a7d77db8a5e07a4ef1c" category="list-text">深度：34.5 吋（含電纜管理支架為 36.6 吋）</block>
+  <block id="50dedd894f9f18dfab59fddde9f15cff" category="paragraph">以下是單一高可用性對中AFF A800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="7749107591c00050a7a97efbcce604e1" category="list-text">最低ONTAP版本： ONTAP 9.4RC1</block>
+  <block id="0c9df2b89e75c6856ec132de86c9d91c" category="list-text">工作溫度/海拔/濕度：5°C 至 40°C（41°F 至 104°F），海拔最高可達 3048 公尺（10000 英尺）；相對濕度 8% 至 90%，無冷凝</block>
+  <block id="947bfdf26afda4c316cfe23dba310704" category="paragraph">以下是單一高可用性對中AFF A900儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="3977f806931e67288d91a7d641a2ca23" category="list-text">最低ONTAP版本： ONTAP 9.10.1RC2</block>
+  <block id="b428bcb6a99ba39cab6cb8a92f57b757" category="paragraph">以下是單一高可用性對中ASA C250儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="4007e0d642a6de3d969bc6c8ded4d7b5" category="list-text">最低ONTAP版本： ONTAP 9.13.1P1</block>
+  <block id="c3f605ba5c36c2235196166996b7e4e6" category="paragraph">以下是單一高可用性對中ASA C400儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="8a55129d0495c7d8bf6dc99af7674c75" category="paragraph">以下是單一高可用性對中ASA C800儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="c73d27ec459313829377c86c2266b5aa" category="list-text">最低ONTAP版本： ONTAP 9.16.0</block>
+  <block id="98d68f2cca0362b7dda09b035396b473" category="list-text">重量：220.5 磅 100.0 公斤</block>
+  <block id="b5c6fd1f9657fe4f02b5d9fd487b55a1" category="list-text">深度：28.8 吋（含電纜管理支架為 36.8 吋）</block>
+  <block id="63f08a7208f7923adb07eca88a769dcf" category="list-text">聲學噪音：標稱聲功率 (LwAd)：7.4；聲壓 (LpAm)（旁觀者位置）：65.0 分貝</block>
+  <block id="c7c3ddda9d210ef666a3c119a3fdcc0a" category="list-text">重量：132.5 磅 60.1 公斤</block>
+  <block id="3727d02431fe5d12b18a99817596a8d2" category="list-text">聲學噪音：標稱聲功率 (LwAd)：8.0；聲壓 (LpAm)（旁觀者位置）：62.8 分貝</block>
+  <block id="dc23e1b298369b74c90ed634c0abebbe" category="list-text">最低ONTAP版本： ONTAP 9.15.1</block>
+  <block id="b95bccfd3c36e53baa48cdcd3e16ec1d" category="list-text">協定：NVMe/FC 64 Gbps；連接埠：48</block>
+  <block id="59159f1c6a3f617b2eb84d699f5d7637" category="list-text">重量：59.5磅，27.0公斤</block>
+  <block id="5dd136cdf737da206284674962f850c7" category="list-text">寬度：19 英寸，符合 IEC 機架標準（17.7 英寸，44.9 厘米）</block>
+  <block id="a54db06e04e535848c65879c380cc721" category="list-text">深度：30.0吋（有線纜管理支架時為35.2吋）</block>
+  <block id="b5af7f6404ef1a44420cf37f349cbe80" category="list-text">聲學噪音：標稱聲功率 (LwAd)：8.5；聲壓 (LpAm)（旁觀者位置）：67.7 分貝</block>
+  <block id="8e76cd1d7f01fdb17314a9d2c896b3b1" category="list-text">EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI</block>
+  <block id="fdb85fa0cd4484e694f6b09bd123a03a" category="paragraph">以下是單一高可用性對中FAS2750儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="20772ee85911759c410115a8e7b6a12b" category="paragraph">以下是單一高可用性對中FAS2820儲存系統的精選規格。請造訪NetApp Hardware Universe (HWU) 以了解此儲存系統的完整規格。</block>
+  <block id="c75ee040b0cc7ce4ae6a3a3b0b26d452" category="list-text">最低ONTAP版本： ONTAP 9.13.1RC1</block>
+  <block id="ca35bdac11fca604dd48c1bf1faabae9" category="list-text">重量：52.2 磅 23.7 公斤</block>
+  <block id="c562978db16268878442d34624b9ef6d" category="list-text">協定：NVMe/FC 32 Gbps；連接埠：32</block>
+  <block id="3c12d3b3ef0feee8bcf9b0c6035c41dc" category="list-text">工作溫度/海拔/濕度：10°C 至 35°C（50°F 至 95°F），海拔最高可達 3048 公尺（10000 英尺）；相對濕度 8% 至 90%，無冷凝</block>
+  <block id="6e8c0bacd4c23b1cebf6863e7b060aab" category="summary">尋找按平台或機架系列組織的NetApp儲存系統的硬碟更換流程。本參考資料提供了AFF、 ASA和FAS系統以及機架式系統的分步驅動器更換工作流程的直接鏈接，以幫助您快速找到適用於您特定型號的正確程序。</block>
+  <block id="ad5a939dc335c66beb9dfbc62ee1f7b6" category="paragraph">尋找按平台或機架系列組織的NetApp儲存系統的硬碟更換流程。本參考資料提供了AFF、 ASA、 FAS和機架式系統的分步驅動器更換工作流程的直接鏈接，以幫助您快速找到適用於您特定型號的正確程序。</block>
+  <block id="cef67cd843b549a3b7a33216f421ecf6" category="inline-link-macro">DS212C、DS224C</block>
+  <block id="8144f53bc94254f3e689f803ce11f387" category="list-text"><block ref="8144f53bc94254f3e689f803ce11f387" category="inline-link-macro-rx"></block></block>
+  <block id="9111f621282fe2ae515f50178407689b" category="inline-link-macro">DS460C</block>
+  <block id="e6781bdef8fafc97acb61bb8c35bab93" category="list-text"><block ref="e6781bdef8fafc97acb61bb8c35bab93" category="inline-link-macro-rx"></block></block>
+  <block id="0a1948d40e59c471b7932718582bd42a" category="inline-link-macro">DS460C抽屜</block>
+  <block id="95c6d3bb7f930d837907745c8402058e" category="list-text"><block ref="95c6d3bb7f930d837907745c8402058e" category="inline-link-macro-rx"></block></block>
+  <block id="cfd87148988e1c4ef0a45823691555b1" category="list-text"><block ref="cfd87148988e1c4ef0a45823691555b1" category="inline-link-macro-rx"></block></block>
+  <block id="2d501e4167e8802637141bdc2adc5926" category="inline-link-macro">DS212C、DS224C、DS460C</block>
+  <block id="c98448a1324dace9b0625e6a7320d285" category="list-text"><block ref="c98448a1324dace9b0625e6a7320d285" category="inline-link-macro-rx"></block></block>
+  <block id="fca9c8461c6c2e8a996867347aa55ff7" category="list-text"><block ref="fca9c8461c6c2e8a996867347aa55ff7" category="inline-link-macro-rx"></block></block>
 </blocks>
