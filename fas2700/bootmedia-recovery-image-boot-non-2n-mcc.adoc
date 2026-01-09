@@ -1,8 +1,8 @@
 ---
 permalink: fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible 
-summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。 
+keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery 
+summary: 在 FAS2700 系統上，從 USB 磁碟機啟動ONTAP復原映像，以還原啟動媒體。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 開機恢復映像： FAS2700
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 
 
 [role="lead"]
+在 FAS2700 系統上，從 USB 磁碟機啟動ONTAP復原映像，以還原啟動媒體。此過程包括從 USB 隨身碟啟動、還原檔案系統、驗證環境變數以及在更換啟動媒體後使控制器恢復正常運作。
+
+FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+
 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
 
 .步驟

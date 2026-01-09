@@ -1,8 +1,8 @@
 ---
 permalink: a700/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, shut, down, impaired, controller, take, over 
-summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
+keywords: aff a700, shut, down, impaired, controller, take, over, manual, manual boot recovery 
+summary: 完成加密檢查後，關閉AFF A700系統上故障的控制器。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 關閉受損控制器 - AFF A700
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 根據儲存系統硬體組態的不同、您可以使用不同的程�
 
 
 [role="lead"]
-使用適合您組態的適當程序來關閉或接管受損的控制器。
+完成加密檢查後，關閉AFF A700系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動介質，具體步驟因係統配置而異。
+
+AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 
 

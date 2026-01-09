@@ -1,8 +1,8 @@
 ---
 permalink: a220/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb 
-summary: 開機媒體會儲存系統開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。 
+keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb, manual, manual boot recovery 
+summary: 啟動媒體儲存系統啟動時所使用的主系統（啟動映像）檔案集和輔助系統（啟動映像）檔案集。根據您的網路配置，您可以執行非中斷式或中斷式更換。AFF A220系統僅支援手動啟動媒體復原程式。 
 ---
 = 開機媒體更換總覽 - AFF A220
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 開機媒體會儲存系統開機時所使用的一組主要和次要�
 
 
 [role="lead"]
+AFF A220系統僅支援手動啟動媒體復原程式。
+
 開機媒體會儲存系統在開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。
 
 您必須擁有一個格式化為FAT32的USB快閃磁碟機、並具有適當的儲存容量、才能容納「image_xxx.tgz」檔案。

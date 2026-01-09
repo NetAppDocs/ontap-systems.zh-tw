@@ -1,8 +1,8 @@
 ---
 permalink: a700/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, shutdown, check, onboard, encryption, key 
-summary: 在關閉受損節點並檢查機載加密金鑰的狀態之前、您必須先檢查受損節點的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+keywords: aff a700, shutdown, check, onboard, encryption, key, manual, manual boot recovery 
+summary: 在關閉受損節點並檢查板載加密金鑰的狀態之前，必須檢查受損節點的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A700系統僅支援手動啟動媒體復原程式。 
 ---
 = 檢查加密金鑰支援與狀態 - AFF A700
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 在關閉受損節點並檢查機載加密金鑰的狀態之前、您�
 
 
 [role="lead"]
-為了確保儲存系統上的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+
+檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。
 
 
 

@@ -1,8 +1,8 @@
 ---
 permalink: c190/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff c190, shut down the controller 
-summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
+keywords: aff c190, shut down the controller, manual, manual boot recovery 
+summary: 在完成加密檢查後，關閉AFF C190系統上故障的控制器。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 關閉控制器AFF -現象C190
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機�
 
 
 [role="lead"]
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。
+在完成加密檢查後，關閉AFF C190系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動媒體。
+
+AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 完成NVE或NSE工作之後、您必須完成受損控制器的關機。
 

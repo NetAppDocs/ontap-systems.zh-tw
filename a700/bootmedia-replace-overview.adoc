@@ -1,16 +1,20 @@
 ---
 permalink: a700/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff a700, replace, boot, media, primary, secondary, image, disruptive, nondisruptive 
-summary: 開機媒體會儲存系統在開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。 
+keywords: aff a700, replace, boot, media, primary, secondary, image, disruptive, nondisruptive, manual, manual boot recovery 
+summary: 了解AFF A700系統上的啟動介質更換，並了解不同的更換方法。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
-= 開機媒體更換總覽- AFF FASA700和FAS9000
+= 啟動介質更換概述 - AFF A700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+了解AFF A700系統上的啟動介質更換，並了解不同的更換方法。啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（使用內部 e0S 連線）或中斷式更換（需要兩次重新啟動）。
+
+AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+
 開機媒體會儲存系統在開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。
 
 您必須擁有一個格式化為FAT32的USB快閃磁碟機、以及適當的儲存容量、才能容納「image_xxx.tgz」。

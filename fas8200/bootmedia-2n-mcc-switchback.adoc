@@ -1,8 +1,8 @@
 ---
 permalink: fas8200/bootmedia-2n-mcc-switchback.html 
 sidebar: sidebar 
-keywords: fas8200, switch back aggregate in a two-node metrocluster configuration 
-summary: 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後、您就可以執行MetroCluster 還原還原作業。這會將組態恢復至正常運作狀態、使先前受損站台上的同步來源儲存虛擬機器（SVM）現在處於作用中狀態、並從本機磁碟集區提供資料。 
+keywords: fas8200, switch back aggregate in a two-node metrocluster configuration, manual, manual boot recovery 
+summary: 在雙節點MetroCluster配置中完成啟動介質更換後，對FAS8200系統執行MetroCluster切換回操作。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 在雙節點MetroCluster 的「效能不全」組態中切換回集合體- FAS8200
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: 完成雙節點MetroCluster 的故障恢復組態中的FRU更換之後�
 
 
 [role="lead"]
+在雙節點MetroCluster配置中完成啟動介質更換後，對FAS8200系統執行MetroCluster切換回操作。此程序包括驗證節點和儲存虛擬機器 (SVM) 的狀態，執行回退命令，並確認設定恢復到正常運作狀態，同步來源 SVM 從本機磁碟池提供資料。
+
+FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+
 此工作僅適用於雙節點MetroCluster 的不完整組態。
 
 .步驟

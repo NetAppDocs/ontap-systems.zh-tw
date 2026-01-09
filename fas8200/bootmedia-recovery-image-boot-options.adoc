@@ -1,8 +1,8 @@
 ---
 permalink: fas8200/bootmedia-recovery-image-boot-options.html 
 sidebar: sidebar 
-keywords: fas8200, boot the recovery image 
-summary: 從恢復映像啟動受損控制器的程序、取決於系統是否為雙節點MetroCluster 的版本。 
+keywords: fas8200, boot the recovery image, manual, manual boot recovery 
+summary: 在FAS8200系統上，從 USB 隨身碟啟動ONTAP恢復映像以恢復啟動媒體。 FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 開機恢復映像- FAS8200
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 從恢復映像啟動受損控制器的程序、取決於系統是否�
 
 
 [role="lead"]
-從恢復映像啟動受損控制器的程序、取決於系統是否為雙節點MetroCluster 的版本。
+在FAS8200系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。該過程包括從 USB 隨身碟啟動、恢復檔案系統、驗證環境變數以及使控制器恢復正常運行，具體步驟取決於系統是否處於雙節點MetroCluster配置中。
+
+FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
 
 
 

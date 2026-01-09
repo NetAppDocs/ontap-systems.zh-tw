@@ -1,8 +1,8 @@
 ---
 permalink: fas8200/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: fas8200, shut down the impaired controller 
-summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
+keywords: fas8200, shut down the impaired controller, manual, manual boot recovery 
+summary: 完成加密檢查後，關閉FAS8200系統上故障的控制器。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 關閉受損的控制器- FAS8200
 :allow-uri-read: 
@@ -15,7 +15,15 @@ summary: 根據儲存系統硬體組態的不同、您可以使用不同的程�
 == 選項1：大多數系統
 
 [role="lead"]
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。完成NVE或NSE工作之後、您必須完成受損控制器的關機。
+完成加密檢查後，關閉FAS8200系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動介質，具體步驟因係統配置而異。
+
+FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+
+
+
+== 選項1：大多數系統
+
+完成NVE或NSE工作之後、您必須完成受損控制器的關機。
 
 .步驟
 . 將受損的控制器移至載入器提示：

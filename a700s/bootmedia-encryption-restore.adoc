@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, environment, variable, check, complete, onboard, key, manager, okm, netapp, storage, encryption, nse, volume, nve, enable, post, boot, replacement, post boot media replacement steps for okm nse and nve 
-summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。 
+keywords: aff a700s, aff, a700s, environment, variable, check, complete, onboard, key, manager, okm, netapp, storage, encryption, nse, volume, nve, enable, post, boot, replacement, post boot media replacement steps for okm nse and nve, manual, manual boot recovery 
+summary: 恢復AFF A700s系統的替換啟動媒體上的加密配置。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 還原加密 - AFF A700s
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key
 
 
 [role="lead"]
-在替換開機媒體上還原加密。
+恢復AFF A700s系統的替換啟動媒體上的加密配置。此流程包括完成已啟用板載金鑰管理器 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統更換後的步驟，以確保安全的資料存取和系統的正常運作。
+
+AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 根據您的金鑰管理員類型，完成相應的步驟以恢復系統加密。如果您不確定您的系統使用哪個金鑰管理器，請檢查您在啟動媒體更換程序開始時所擷取的設定。
 

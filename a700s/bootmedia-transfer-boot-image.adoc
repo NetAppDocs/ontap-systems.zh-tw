@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-transfer-boot-image.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, trasnfer, usb, flash, drive, transfer the boot image to the boot medai using a usb flash drive 
-summary: 只有當次要開機媒體還原失敗、或在次要開機媒體上找不到image.tgz檔案時、才應使用此程序。 
+keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, trasnfer, usb, flash, drive, transfer the boot image to the boot medai using a usb flash drive, manual, manual boot recovery 
+summary: 使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 將開機映像傳輸到開機媒體AFF -《非洲》（Se）
 :allow-uri-read: 
@@ -11,11 +11,13 @@ summary: 只有當次要開機媒體還原失敗、或在次要開機媒體上�
 
 
 [role="lead"]
-您可以使用安裝在控制器模組中第二個開機媒體上的映像、還原系統映像的主要方法、 或是在次要開機媒體還原失敗或在次要開機媒體上找不到image.tgz檔案時、使用USB快閃磁碟機將開機映像傳輸到開機媒體。
+使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。此過程包括從輔助啟動媒體上的映像進行復原（作為主要方法），或在輔助啟動媒體復原失敗或 image.tgz 檔案遺失時使用 USB 隨身碟。
+
+AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 
 
-== 選項1：使用第二個開機媒體的備份還原、將檔案傳輸到開機媒體
+== 方案一：使用備份復原功能從第二個啟動媒體傳輸文件
 
 您可以使用安裝在控制器模組中的第二個開機媒體上的映像、將系統映像安裝到替換的開機媒體。這是將開機媒體檔案傳輸至控制器模組中具有兩個開機媒體之系統中的替換開機媒體的主要方法。
 
@@ -84,7 +86,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
-== 選項2：使用USB快閃磁碟機將開機映像傳輸到開機媒體
+== 方案二：使用USB傳輸啟動鏡像
 
 只有當次要開機媒體還原失敗、或在次要開機媒體上找不到image.tgz檔案時、才應使用此程序。
 

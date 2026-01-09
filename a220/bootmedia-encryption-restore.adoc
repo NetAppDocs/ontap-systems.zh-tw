@@ -1,8 +1,8 @@
 ---
 permalink: a220/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
-summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。 
+keywords: aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption, manual, manual boot recovery 
+summary: '檢查完環境變數後，您必須完成已啟用板載金鑰管理員 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統的特定步驟。AFF A220系統僅支援手動啟動媒體復原程式。' 
 ---
 = 還原加密 - AFF A220
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 一旦勾選環境變數、您必須完成特定於已啟用Onboard Key
 
 
 [role="lead"]
-在替換開機媒體上還原加密。
+恢復替換啟動媒體上的加密。AFF A220系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 根據您的金鑰管理員類型，完成相應的步驟以恢復系統加密。如果您不確定您的系統使用哪個金鑰管理器，請檢查您在啟動媒體更換程序開始時所擷取的設定。
 

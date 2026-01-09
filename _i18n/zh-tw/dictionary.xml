@@ -673,7 +673,6 @@
   <block id="399f225e1b570ae91edafe38ed1e3467" category="list-text">當每個控制器開始開機時、當您看到「Press Ctrl-C for Boot Menu（按Ctrl-C進入開機功能表）」訊息時、請按「Ctrl-C」來中斷開機程序。</block>
   <block id="323803a62993a3ba0d4d3f7b3b6c7a16" category="admonition">如果您錯過提示、且控制器模組開機至ONTAP 指令碼、請輸入「halt」、然後在載入程式提示字元輸入「boot_ONTAP」、並在出現提示時按「Ctrl-C」、然後重複此步驟。</block>
   <block id="d5bfba1ac511ef4b8b0fcb489bdaf25b" category="summary">一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM\）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE\）的系統的步驟。</block>
-  <block id="080362a2b4cc1ec10758d0142bde822c" category="paragraph">一旦勾選環境變數、您必須完成特定於已啟用Onboard Key Manager（OKM）、NetApp Storage Encryption（NSE）或NetApp Volume Encryption（NVE）的系統的步驟。</block>
   <block id="27be5ff3320dd506741c0dbef8e1a1d9" category="list-text">將主控台纜線連接至目標控制器。</block>
   <block id="fd8f15b053a3b35d3aaa40b5f46c7fbc" category="list-text">使用「儲存容錯移轉show」命令確認目標控制器已準備好進行還原。</block>
   <block id="0e4c0966d084bca62cb0b1d57bb4cd37" category="list-text">如果您使用「儲存容錯移轉修改節點本機-自動恢復true」命令停用自動恢復。</block>
@@ -1052,8 +1051,6 @@
   <block id="667ec5d2e7ff49916ac90c31eb178520" category="list-text">將CAM握把往下旋轉至最遠位置、以將其關閉。</block>
   <block id="3ceabec6c24f4b298d5024f17ef30a0b" category="summary">只有當次要開機媒體還原失敗、或在次要開機媒體上找不到image.tgz檔案時、才應使用此程序。</block>
   <block id="05dffff712f4aca6f86af6c7c42a9991" category="doc">將開機映像傳輸到開機媒體AFF -《非洲》（Se）</block>
-  <block id="d13198d049fcff37aa785f790572ef1e" category="paragraph">您可以使用安裝在控制器模組中第二個開機媒體上的映像、還原系統映像的主要方法、 或是在次要開機媒體還原失敗或在次要開機媒體上找不到image.tgz檔案時、使用USB快閃磁碟機將開機映像傳輸到開機媒體。</block>
-  <block id="f0883ed7dc01ca5a7c6baa998e45a6be" category="section-title">選項1：使用第二個開機媒體的備份還原、將檔案傳輸到開機媒體</block>
   <block id="f2517f7437e31c22e8ebbe3208bc1f18" category="paragraph">您可以使用安裝在控制器模組中的第二個開機媒體上的映像、將系統映像安裝到替換的開機媒體。這是將開機媒體檔案傳輸至控制器模組中具有兩個開機媒體之系統中的替換開機媒體的主要方法。</block>
   <block id="c74fc698f6085001fa8e634011afdd6d" category="paragraph">次要開機媒體上的映像必須包含「image.tgz」檔案、而且不得回報故障。如果image.tgz檔案遺失或開機媒體報告失敗、您將無法使用此程序。您必須使用USB快閃磁碟機更換程序、將開機映像傳輸至更換的開機媒體。</block>
   <block id="0c285136d46116873f7508d317da15c6" category="list-text">將控制器模組一路輕推入系統、直到控制器模組鎖定掛勾開始上升、穩固地推入鎖定掛勾、以完成控制器模組的安裝、然後將鎖定掛勾旋轉至控制器模組插銷上的鎖定位置。</block>
@@ -1067,7 +1064,6 @@
   <block id="bc8660c5f3569dff11062aab0e8487d1" category="list-text">完成組態同步後、若系統提示您確認備份程序成功、請按「y」。</block>
   <block id="499f2b4faaecf09ce2df725ed89b18e0" category="list-text">系統提示是否使用還原的複本時、請按「y」、然後在系統提示重新啟動控制器時按「y」。</block>
   <block id="3228093fe4dbdd24659a9a88f379aa09" category="list-text">結束健全控制器上的進階權限層級。</block>
-  <block id="77fa1d2fec9c705a79b5ec4300599706" category="section-title">選項2：使用USB快閃磁碟機將開機映像傳輸到開機媒體</block>
   <block id="868f53ce89a2d5fa947c589850deead0" category="list-text">儘管保留了環境變數和bootargs、您仍應使用「printenv bootargs name」命令、檢查是否已針對您的系統類型和組態正確設定所有必要的開機環境變數和bootargs、並使用「show variable-name &lt;value&gt;」命令修正任何錯誤。</block>
   <block id="0032ff6878e0eb024d2d7d2145235782" category="list-text">檢查開機環境變數：</block>
   <block id="67cee8596d9c8d2c1fc298a78f8c3906" category="list-text">bootarg.init.boot_clustered`</block>
@@ -1131,9 +1127,7 @@
   <block id="42276924a11ced220d6673bca09aab34" category="list-text">重新安裝從控制器模組中卸下的所有擴充卡。</block>
   <block id="f7d2e85282b0ca5073c032b071225e16" category="paragraph">如果您卸下NVRAM擴充卡（第1號提升卡）、請確定將NVRAM電池插入控制器模組。</block>
   <block id="78891883edccb7cc97dd58049b3468fd" category="list-text">關閉通風管。</block>
-  <block id="e5869c3e3552c60a1a151cf93d8bdbee" category="summary">您必須在控制器模組中找出故障開機媒體、方法是移除控制器模組上的中間PCIe模組、在開機媒體附近的LED燈號旁找到故障開機媒體、然後更換開機媒體。</block>
   <block id="b5c7e371c94b117279a0ebbc15ea8bf3" category="doc">更換開機媒體AFF - Se A700s</block>
-  <block id="e9e66c1bd59e20ff8acce6fb41f94461" category="paragraph">您必須從機箱中取出控制器模組、開啟它、然後更換故障的開機媒體。</block>
   <block id="e88eebc1797d32d10ed4abe331b3ecb6" category="section-title">步驟2：更換開機媒體AFF - S4A700s</block>
   <block id="588550e231fd9dcead167f2e3a8a2926" category="paragraph">您需要使用十字螺絲起子來移除將開機媒體固定到位的螺絲。</block>
   <block id="08e062e39a8a4c0f3e78183b95ffe7a6" category="list-text">向下轉動開機媒體、直到它與主機板齊面。</block>
@@ -1151,7 +1145,6 @@
   <block id="d26f9a8db778421541cf5cebfdeb9039" category="section-title">步驟3：更換PCIe卡</block>
   <block id="ab0f1b74bde528a6c04a7682a94cb284" category="paragraph">若要更換PCIe卡、您必須從目標擴充卡的PCIe卡連接埠移除纜線和任何SFP、從控制器模組移除擴充卡、移除並更換PCIe卡、重新安裝擴充卡、然後重新安裝。</block>
   <block id="fc9b566637bbcf2a8a0459c61e065654" category="doc">關閉控制器AFF -現象A700s</block>
-  <block id="8a9d9ac73cd783fd8be1adef7a7b3710" category="summary">主開機媒體會儲存ONTAP 系統在開機時所使用的功能不均的開機映像。您可以使用ONTAP 次要開機媒體上的還原影像來還原主要開機媒體映像、或是必要時使用USB快閃磁碟機來還原主開機媒體映像。</block>
   <block id="505ba7be41620674b2d6d7caf7f3453d" category="doc">開機媒體更換總覽- AFF 《Sof boot media replacement》-《Se A700s</block>
   <block id="327cba4c3b39fe95536adbd9bda04a68" category="paragraph">如果您的次要開機媒體故障或遺失image.tgz檔案、您必須使用USB快閃磁碟機還原主要開機媒體。磁碟機必須格式化為AT32、而且必須有適當的儲存容量、才能容納image_xxx.tgz檔案。</block>
   <block id="c36778782b4ef6254390f7e747b95625" category="list-text">更換程序會將var檔案系統從次要開機媒體或USB快閃磁碟機還原至主要開機媒體。</block>
@@ -1689,7 +1682,6 @@
   <block id="14e1966b2539241942d6151ccb0e2a0e" category="section-title">步驟4：在雙節點MetroCluster 的不二組態中切換回集合體</block>
   <block id="21a759f002cfc3385b168953dde9a34e" category="summary">從恢復映像啟動受損控制器的程序、取決於系統是否為雙節點MetroCluster 的版本。</block>
   <block id="a23c69960d3b280b58087226f261d0e1" category="doc">開機恢復映像AFF -還原A300</block>
-  <block id="825f13ad9fc8dc2bdd837adbced6f40f" category="paragraph">從恢復映像啟動受損控制器的程序、取決於系統是否為雙控制器MetroCluster 的版本。</block>
   <block id="4e0316258b9c412eb9479c8f462e10f4" category="section-title">選項1：大多數系統</block>
   <block id="7314a9fd3ee72bf0d057c4e5272b697e" category="paragraph">此程序適用於非雙節點MetroCluster 的系統。</block>
   <block id="b829b8b1be5636c7bcd3a7828593e11e" category="section-title">選項2：控制器位於雙節點MetroCluster 的不二</block>
@@ -2987,7 +2979,6 @@
   <block id="e26c9b04bf0bc2c4d8073d81596cbe06" category="paragraph">如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。</block>
   <block id="87f3e022170704ccb603a73e613a5c05" category="list-text">使用系統隨附的主控台纜線將主控台纜線連接至筆記型電腦或主控台、然後將筆記型電腦連接至管理子網路上的管理交換器。</block>
   <block id="ec15ae659445c6b6db2f5a726a8eac48" category="admonition">地址格式為+https://x.x.x.x.+</block>
-  <block id="4ef2119efbb49942a200e3b516caf558" category="doc">將故障零件歸還給NetApp AFF - NetApp - NetApp - NetApp A700和FAS9000</block>
   <block id="117a00785fdf02074d05fddbc86f7975" category="paragraph">如果儲存系統位於HA配對中、則在程序結束時進行恢復時、新控制器模組的系統ID會自動指派給磁碟。您必須在開機_replaced_節點時確認系統ID變更、然後驗證變更是否已實作。</block>
   <block id="07bcf96175c4fb31a9a4900272f1bd18" category="list-text">在_replace_節點的載入器提示中、啟動節點、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」</block>
   <block id="ee6adef69d8b8786ea9c8ed7878b0970" category="list-text">如果系統採用MetroCluster 的是一套不全功能的組態、請監控節點的狀態：MetroCluster 「不只是顯示節點」</block>
@@ -3128,7 +3119,6 @@
   <block id="c0231814de48c33dacc879427cd2b0c4" category="list-text">若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。</block>
   <block id="67217a13f69bc00335677c551451bc10" category="doc">更換I/O模組AFF - FASA700和FAS9000</block>
   <block id="074956b98e6ab62b7ae2bf9b8699df64" category="list-text">如果您的系統設定為支援40 GbE NIC或內建連接埠上的10 GbE叢集互連和資料連線、請使用「維護模式」中的「nicadmin convert」命令、將這些連接埠轉換成10 GbE連線。</block>
-  <block id="30c36d0c10aef968ba45a8742ec6c704" category="doc">以雙節點MetroCluster 的不全功能組態切換回Aggregate：AFF 還原A700和FAS9000</block>
   <block id="26f799463ec0df8fa8944abe163ef0a0" category="list-text">準備好快取模組插槽以進行更換、如下所示：</block>
   <block id="57bed1144a41a674208d8d0428026e0b" category="list-text">適用於更新版本的更新版本：ONTAP</block>
   <block id="21b03e46945fa952d9781d385e7edcec" category="list-text">在目標節點上記錄快取模組容量、零件編號和序號：「System Node run local sysconfig -av6」（系統節點執行本機sysconfig -av6）</block>
@@ -3148,7 +3138,6 @@
   <block id="0733021a14a5c436b9b7a0e6bc3eed4e" category="admonition">如果您以不同廠商的快取模組來取代快取模組、則命令輸出中會顯示新的廠商名稱。</block>
   <block id="b4c31341ab0f1e49529261f974be146d" category="summary">在關閉受損節點並檢查機載加密金鑰的狀態之前、您必須先檢查受損節點的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。</block>
   <block id="44e5cb60393d7e735de29347758edd23" category="doc">檢查內建加密金鑰</block>
-  <block id="165c715a7b9960848663b1b8fa3c5525" category="doc">開機媒體更換總覽- AFF FASA700和FAS9000</block>
   <block id="299fe45efcdacbb68bc84ef67b7c2627" category="paragraph">「HA狀態」的值可以是下列其中一項：</block>
   <block id="156eb6e82c7345080012a8f00d566c5e" category="paragraph">此時會出現載入程式提示。</block>
   <block id="dc8763d13c28622d2ba4adace1e2fee7" category="summary">從恢復映像開機受損節點的程序、取決於系統是否為雙節點MetroCluster 的版本。</block>
@@ -3203,7 +3192,6 @@
   <block id="2216eac1370ba80b7d35957763b292f0" category="list-text">如果您有第二個快取模組、請重複這些步驟。視需要關閉控制器模組護蓋。</block>
   <block id="b8657f72d8b4e1ef5c7e2c082690279e" category="list-text"><block ref="b8657f72d8b4e1ef5c7e2c082690279e" category="inline-link-rx"></block></block>
   <block id="4d2e328d055378ef43067726132a9c56" category="list-text"><block ref="4d2e328d055378ef43067726132a9c56" category="inline-link-rx"></block></block>
-  <block id="51e6a2fb5c6f27756e90e2666efd984d" category="paragraph">完成NVE或NSE工作之後、您必須完成受損控制器的關機。完成NVE或NSE工作之後、您必須完成受損控制器的關機。</block>
   <block id="f6706fbf02796cde0f95e3aa80e2a592" category="section-title">選項3：控制器位於雙節點MetroCluster 的不二</block>
   <block id="f8a35054c2c3b7ffbacd941c8bc38831" category="doc">更換硬體- FAS8200</block>
   <block id="10bc7f8044338127350055a62aad1a90" category="doc">更換DIMM - FAS8200</block>
@@ -3293,7 +3281,6 @@
   <block id="d7fb1a4bddb3db62efbcefc0f8162f42" category="paragraph">獨立式</block>
   <block id="c35620e4053e83506175fd11f77f79d1" category="paragraph">雙節點MetroCluster 的不全功能組態</block>
   <block id="d7f3697202a93edfa9694f456f135d47" category="section-title">選項3：手動重新指派雙節點MetroCluster 的系統ID</block>
-  <block id="4a548135158bf0dbaee8622657e29f8a" category="doc">關閉受損的控制器AFF - E4A220和FAS2700</block>
   <block id="390911875f818301a4ee051939794a66" category="paragraph">若要更換機箱、您必須將電源供應器、硬碟機、控制器模組或模組從受損機箱移至新機箱、然後將受損機箱從設備機架或系統機櫃中換成與受損機箱相同機型的新機箱。</block>
   <block id="616fd6518ea3af054114db97fda5ce99" category="section-title">步驟2：搬移NVMEM電池</block>
   <block id="b6790ed19ee7185948334edd9ddcca05" category="section-title">步驟3：移動開機媒體</block>
@@ -3319,7 +3306,6 @@
   <block id="00a787350c10dda9fec8ed799a0a0d41" category="inline-link">安裝MetroCluster 不需要的IP組態</block>
   <block id="dd97e64f3163f239256639a3f4314e89" category="paragraph">如果您的系統採用MetroCluster 不知道IP組態、請參閱<block ref="373f2390d7121eb9c57821ab147cf1e7" category="inline-link-rx"></block> 說明。</block>
   <block id="03be12a0476133b21cb6c1c927956d23" category="doc">更換SSD磁碟機或HDD磁碟機- AFF E4A220和FAS2700</block>
-  <block id="c6eb316cc94904301a8765db5aa1680f" category="doc">開機媒體更換總覽- AFF EFASA220與FAS2700</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">版本資訊</block>
   <block id="478fc4fb96b68e7639f1b8b60636da7c" category="doc">更換NVMEM電池- FAS2600</block>
   <block id="c8ce5afe6808111cafcf57c11a22b941" category="inline-link-macro">FAS2600 NVMEM電池更換影片AFF</block>
@@ -3601,7 +3587,6 @@
   <block id="b06018bc829da55a1eb1a43b93312dc5" category="summary">開機媒體會儲存系統開機時所使用的一組主要和次要系統（開機映像）檔案。</block>
   <block id="acd5b7a742e22209bb792b093caff068" category="doc">更換開機媒體AFF - 32</block>
   <block id="7182b14422325235a1325aec0997297b" category="paragraph">您必須在控制器模組中找到開機媒體、然後依照指示進行更換。</block>
-  <block id="e7ee072a3e06310afcc412655144e84b" category="section-title">步驟3：使用USB快閃磁碟機將開機映像傳輸到開機媒體</block>
   <block id="0186f6c22953c36e3e4978bb091e11b3" category="paragraph">您安裝的替換開機媒體沒有開機映像、因此您需要使用USB快閃磁碟機來傳輸開機映像。</block>
   <block id="ce92127c659a39f2e906ff085ee4ba89" category="list-text">您必須擁有一個USB快閃磁碟機、其格式必須為MBR/fat32、容量至少為4GB</block>
   <block id="0d9dfc0a6375698e6933a448cc1933dc" category="list-text">從NetApp支援網站下載並複製適當的服務映像到USB快閃磁碟機。</block>
@@ -3724,7 +3709,6 @@
   <block id="4268a48319165f00443a3542abb14409" category="list-text">用兩隻手將電源供應器從機箱中拉出、然後放在一旁。</block>
   <block id="26d09b9ba8933f73cf8d88ec306034f4" category="list-text">旋轉CAM握把、使其與電源供應器齊平。</block>
   <block id="b6b9806df3f9a4e627587365674eb890" category="doc">關閉節點AFF -現象A320</block>
-  <block id="dc034442a42b074e0609ba09ebc77d0e" category="paragraph">完成NVE或NSE工作之後、您需要完成受損節點的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。</block>
   <block id="442396e207d697f3466573acd63cdeb7" category="section-title">選項2：系統MetroCluster 位於一個不二之處</block>
   <block id="19700f9c729dfc1036b3ebeb2a20006a" category="doc">熱抽換風扇模組AFF - VA320</block>
   <block id="a7e949b06c0a14c96761a482fe850048" category="paragraph">當風扇安裝到位後、警示LED不應亮起、而且會加速運作。</block>
@@ -6962,7 +6946,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="96d704bc763b695c9de9168784c7737d" category="paragraph">將控制器B纜線連接至磁碟櫃：    <block ref="a190910980606e8669e301ec6bfe2395" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9293060aa1ce6aba93f2da08c5b9a87a" category="image-alt">將筆記型電腦或主控台連接至管理子網路上的交換器</block>
   <block id="dc0a61369ab78188b5040b237202d13a" category="inline-image-macro">移除 PCIe 模組</block>
-  <block id="851adb1cfe0add8b264f80f294e53d6e" category="paragraph"><block ref="851adb1cfe0add8b264f80f294e53d6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4bed25d7279305fb1486095526c2cbe" category="image-alt">卸下或安裝風扇</block>
   <block id="f6f0bd2e4727e80f2ce638a745f37465" category="image-alt">移除快取模組</block>
   <block id="7b421531117f7a333a0bf6943ea821e6" category="image-alt">取出 RTC 電池</block>
@@ -7093,10 +7076,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="95aeba05fe11ccca40520c6ce7b337c0" category="image-alt">移除或安裝 PSU 模組</block>
   <block id="24e0e5253433e4844dd4f414ae1d2599" category="image-alt">卸下或安裝風扇</block>
   <block id="a3c54240889d795a785f54b21112d1b7" category="image-alt">移除控制器</block>
-  <block id="f57cfb70573c5a389eec98a4b3777fac" category="paragraph"><block ref="f57cfb70573c5a389eec98a4b3777fac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d44f4505f0712dd667909d5cee1045ad" category="image-alt">取出 NV 電池</block>
   <block id="f7bb7277d30be1722953bb82a41f4e96" category="image-alt">移除或更換 USB LED 模組</block>
-  <block id="f4b28a464440a488e54ab8d8cd76ab99" category="image-alt">可移動 DIMM</block>
   <block id="67550a2c9a63c691d7df7437a3e51506" category="image-alt">DIMM 位置地圖</block>
   <block id="06bc29f6fd4846509ff02a3bcd57dfc2" category="image-alt">卸下 DIMM</block>
   <block id="cbbd92f6eb83a9a939ca1ac9673002a5" category="list-text">取下受損的 LED USB 模組：</block>
@@ -8759,8 +8740,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="087db3b88ab1127d927c06f47dd3bd04" category="doc">還原加密 - AFF C800</block>
   <block id="a29212026f644e3af5d7d35e4872e64e" category="doc">檢查加密金鑰支援與狀態 - FAS2600</block>
   <block id="f69fe3fd7c25297cb61a32bc5fc76020" category="doc">還原加密： FAS2600</block>
-  <block id="5d4211964469579f1f45285fc12474dd" category="doc">檢查加密金鑰支援與狀態： AFF A220 和 FAS2700</block>
-  <block id="73bc3dac4ffabefd42b1c26a096bbc4e" category="doc">還原加密： AFF A220 和 FAS2700</block>
   <block id="cbae18ebc2b8ffd413dbf0fb20bf3f9d" category="doc">檢查加密金鑰支援與狀態 - FAS500f</block>
   <block id="a7b0a510fdfaae6ab395e09cd164f2f8" category="doc">還原加密 - FAS500f</block>
   <block id="8de2c4c1d0c319cb07b6837fd62d106e" category="doc">檢查加密金鑰支援與狀態 - FAS8200</block>
@@ -14425,4 +14404,176 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2d501e4167e8802637141bdc2adc5926" category="inline-link-macro">DS212C、DS224C、DS460C</block>
   <block id="c98448a1324dace9b0625e6a7320d285" category="list-text"><block ref="c98448a1324dace9b0625e6a7320d285" category="inline-link-macro-rx"></block></block>
   <block id="fca9c8461c6c2e8a996867347aa55ff7" category="list-text"><block ref="fca9c8461c6c2e8a996867347aa55ff7" category="inline-link-macro-rx"></block></block>
+  <block id="10039cc1a20163d1a931d80c0770f45e" category="paragraph"><block ref="10039cc1a20163d1a931d80c0770f45e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8477b205c2f67bd8717734004366332" category="paragraph"><block ref="c8477b205c2f67bd8717734004366332" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca21db06c06912b48d17c3197e6d0983" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF A200系統僅支援手動啟動媒體復原程式。</block>
+  <block id="74ef99a35d81c6de819ef44d76f84f3f" category="paragraph">更換啟動媒體後，請依照套件隨附的 RMA 說明中的描述，將故障元件退回給NetApp 。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="314a33b9cb2380e7bf6cbe30954dba92" category="summary">在關閉故障控制器並檢查板載加密金鑰的狀態之前，必須檢查故障控制器的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A200系統僅支援手動啟動媒體復原程式。</block>
+  <block id="9189347a6ca1f63634b31ff8e62e599e" category="paragraph">為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="417433163e7f6e44354674ded41b7b04" category="paragraph">恢復替換啟動媒體上的加密。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="9c0b613b1dfa8fe40241db2b67428c79" category="paragraph">您必須從 USB 隨身碟啟動ONTAP映像，還原檔案系統，並驗證環境變數。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="1b8db95aad32c822a8a3c157ccea8f39" category="paragraph">啟動媒體儲存系統啟動時使用的主系統檔案和輔助系統檔案（啟動映像）。根據您的網路配置，您可以執行非中斷式或中斷式更換。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="b61a13acff8399ece630b606d1113c40" category="paragraph">若要更換啟動介質，必須拆下損壞的控制器模組，安裝新的啟動介質，並將啟動映像傳輸到 USB 隨身碟。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="2c075207937ba4d6fa42e8df72045731" category="summary">完成 NVE 或 NSE 任務後，需要完成故障控制器的關閉。AFF A200系統僅支援手動啟動媒體復原程式。</block>
+  <block id="eb03fc95eccafc3dc47b5cbb485805a0" category="paragraph">使用適合您配置的對應程式關閉故障控制器。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="6185eb520e4a892c1c1cea93ce86e7a6" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="6a4129d7f7559d93bea64aaf6cc50dd2" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF A220系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="2f2b66e4958780f4b0218a228e142375" category="summary">在關閉故障控制器並檢查板載加密金鑰的狀態之前，必須檢查故障控制器的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="5e4d3493c495db06014fa5d1c4ba98a2" category="paragraph">為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。AFF A220系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="2a38eccf29619a7c06875648bdbf5aa9" category="summary">檢查完環境變數後，您必須完成已啟用板載金鑰管理員 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統的特定步驟。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="ba84a621c7485d91c2c8ab174648083a" category="paragraph">恢復替換啟動媒體上的加密。AFF A220系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="232b514d5cb9e9b1767dc306e59f6a4d" category="summary">您必須從 USB 隨身碟啟動ONTAP映像，還原檔案系統，並驗證環境變數。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="53730ccfa28b3e3ffc10eb272982d61c" category="paragraph">AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="c453023c99c39ca3485fd37f5b6aafae" category="summary">啟動媒體儲存系統啟動時所使用的主系統（啟動映像）檔案集和輔助系統（啟動映像）檔案集。根據您的網路配置，您可以執行非中斷式或中斷式更換。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="93303c110d5a89a2d943e7bb7282ad9d" category="summary">您必須找到控制器中的啟動介質，並按照說明進行更換。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="f6f0c5143d03c908260edb730d21ef18" category="summary">您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。AFF A220系統僅支援手動啟動媒體復原程式。</block>
+  <block id="882250128c224c1fbdd372d32597991d" category="paragraph">使用適合您配置的相應程式關閉或接管故障控制器。AFF A220系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="b99f3ef5da4db32163d85e0e59fc5926" category="summary">在雙節點MetroCluster配置中完成 FRU 更換後，您可以執行MetroCluster切換操作。這樣就將設定恢復到正常運作狀態，先前受損網站上的同步來源儲存虛擬機器 (SVM) 現在處於活動狀態，並從本機磁碟池提供資料。AFF A300系統僅支援手動啟動媒體復原程式。</block>
+  <block id="28c09a76a539cac48fbf3bcb1e88771b" category="paragraph">完成啟動介質更換後，執行MetroCluster切換操作。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="26cab572f60fbb16a513d5d6cacfe94f" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF A300系統僅支援手動啟動媒體復原程式。請聯絡技術支援。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要 RMA 編號或更換程序方面的其他協助，請撥打 888-463-8277（北美）、00-800-44-638277（歐洲）或 +800-800-80-800（亞太地區）。</block>
+  <block id="b4f9e21b6cb4be0615d95b69fce6c7b8" category="paragraph">更換啟動媒體後，將故障零件退回NetApp 。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="92d8c38f4c65c5a2e2d7baf3d4f75b39" category="summary">在關閉故障控制器並檢查板載加密金鑰的狀態之前，必須檢查故障控制器的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A300系統僅支援手動啟動媒體復原程式。</block>
+  <block id="4585895ebb7097a6d74e58d99e20e151" category="paragraph">為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="89206b2c34ef884bad24d16aa929d77a" category="paragraph">檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。</block>
+  <block id="e1a0a619534a33db9c34d8d068e9c4ee" category="summary">檢查完環境變數後，您必須完成已啟用板載金鑰管理員 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統的特定步驟。AFF A300系統僅支援手動啟動媒體復原程式。</block>
+  <block id="cd7e7a7beb4e7979e12176a610d6aabd" category="paragraph">恢復替換啟動媒體上的加密。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="279d10c4854449f1c8fffcc770c1d33a" category="summary">從恢復映像啟動受損控制器的過程取決於系統是否處於雙節點MetroCluster配置中。AFF A300系統僅支援手動啟動媒體復原程式。</block>
+  <block id="fd61a87e54350163fd45f73f7d03bf43" category="paragraph">從恢復映像啟動受損控制器的過程取決於系統是否處於雙控制器MetroCluster配置中。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="e1887a0915f40702ad150fd4a3064134" category="summary">啟動媒體儲存系統啟動時所使用的主系統（啟動映像）檔案集和輔助系統（啟動映像）檔案集。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。根據您的網路配置，您可以執行非中斷式或中斷式更換。</block>
+  <block id="ec288fa9102803d16b8872c9da48c5c5" category="summary">您必須找到控制器中的啟動介質，並按照說明進行更換。AFF A300系統僅支援手動啟動媒體復原程式。</block>
+  <block id="e7199746bf12e08d76bedcbd9d050820" category="paragraph">若要更換啟動介質，必須拆下損壞的控制器模組，安裝新的啟動介質，並將啟動映像傳輸到 USB 隨身碟。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="f913c2a70852b80287a4b79c41a77fb9" category="summary">您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。AFF A300系統僅支援手動啟動媒體復原程式。</block>
+  <block id="3cc042a2bef2feaf24c8cfb8e205179a" category="paragraph">使用適合您配置的相應程式關閉或接管故障控制器。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="e46d987942426fc86b7730afc7b248d6" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF A320系統僅支援手動啟動媒體復原程式。</block>
+  <block id="f15365d982da7478369dbc891e2f7a88" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF A320系統僅支援手動啟動媒體復原程式。</block>
+  <block id="e034eb6503cd1dcc43bcc967016a3d89" category="summary">在關閉故障控制器並檢查板載加密金鑰的狀態之前，必須檢查故障控制器的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A320系統僅支援手動啟動媒體復原程式。</block>
+  <block id="0ad82b1bf8daf4fb1ddb9e3e915a9e4e" category="paragraph">為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="4f008eb1744791be8360357dcdd6f12f" category="summary">檢查完環境變數後，您必須完成已啟用板載金鑰管理器、 NetApp儲存加密或NetApp磁碟區加密的系統的特定步驟。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="729253df1626962822de60a13f8880ae" category="paragraph">恢復替換啟動媒體上的加密。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="9149e7c3aa9467700c08e84c3c1bef95" category="summary">您必須從 USB 隨身碟啟動ONTAP映像，還原檔案系統，並驗證環境變數。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="5f0959bce551ed982ccd77d9e57ce417" category="summary">您必須找到控制器模組中的啟動介質，然後按照說明進行更換。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="cde010cf008036347b873e12216c3adb" category="paragraph">AFF A320系統僅支援手動啟動媒體復原程式。</block>
+  <block id="c79ca81429a6b6fc94e755e5c890c339" category="summary">啟動媒體儲存系統啟動時所使用的主啟動映像檔集和輔助啟動映像檔集。AFF A320系統僅支援手動啟動媒體復原程式。</block>
+  <block id="aa51f617e616759ff97f6f3e452f7a79" category="paragraph">若要更換啟動介質，必須拆下損壞的控制器模組，安裝新的啟動介質，並將啟動映像傳輸到 USB 隨身碟。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="947b36feb00e90cdec6c7a3d4ecdd233" category="section-title">步驟 3：使用 U 碟傳輸啟動鏡像</block>
+  <block id="4206624bbbad923da4b854862152a86b" category="summary">完成 NVE 或 NSE 任務後，需要完成受損節點的關閉。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="ceb5bd5610e4072d7e0ea83ab8c9bd35" category="paragraph">完成 NVE 或 NSE 任務後，需要完成受損節點的關閉。使用適合您配置的相應程式關閉或接管故障控制器。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="53df83e7f3d3d516635394c3f473ae6d" category="summary">您安裝的替換啟動媒體沒有啟動映像，因此您需要使用 USB 隨身碟傳輸啟動映像。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="b53095e62c73c8b99f1d02552c000fe3" category="summary">在雙節點MetroCluster配置中完成 FRU 更換後，您可以執行MetroCluster切換操作。這樣就將設定恢復到正常運作狀態，先前受損網站上的同步來源儲存虛擬機器 (SVM) 現在處於活動狀態，並從本機磁碟池提供資料。AFF A700系統僅支援手動啟動媒體復原程式。</block>
+  <block id="99cf1e1ab20c4cfd0d95014cd67a0a08" category="doc">在雙節點MetroCluster配置中切換回聚合 - AFF A700</block>
+  <block id="1c03bf396c9eca00858b527b5453a171" category="paragraph">完成啟動介質更換後，執行MetroCluster切換操作。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="7c5da5f5d614c9e136861d7065d7b7de" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF A700系統僅支援手動啟動媒體復原程式。</block>
+  <block id="3080fc912ede9ee6ebc9d25d65da7ca5" category="doc">將故障零件退回NetApp - AFF A700</block>
+  <block id="3abf23ca48f7e13f80f5fe7bb1275105" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="e4e3fca76d6c0e123250e2cff21a47c3" category="summary">在關閉受損節點並檢查板載加密金鑰的狀態之前，必須檢查受損節點的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A700系統僅支援手動啟動媒體復原程式。</block>
+  <block id="e5c2fdb34f1de6346aff8ea3b7a3e6f4" category="paragraph">為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="c244f21ad756e7c793cac0e0cd147065" category="summary">檢查完環境變數後，您必須完成已啟用板載金鑰管理員 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統的特定步驟。AFF A700系統僅支援手動啟動媒體復原程式。</block>
+  <block id="75ab832e014c22332ebc38b0436cb501" category="paragraph">恢復替換啟動媒體上的加密。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="c7d20417b980cce3ed3bb7d7005db376" category="summary">在AFF A700系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="57fd47470ae718542cad7b5b9f01e9e9" category="paragraph">在AFF A700系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。該過程包括從 USB 隨身碟啟動、恢復檔案系統、驗證環境變數以及使控制器恢復正常運行，具體步驟取決於系統是否處於雙節點MetroCluster配置中。</block>
+  <block id="3f5511369794c1ee63fa5125d9a5db59" category="paragraph">AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="2e930073e64024b137488b076f49173b" category="summary">了解AFF A700系統上的啟動介質更換，並了解不同的更換方法。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="1624c11f18d5334431899b9c1fa94231" category="doc">啟動介質更換概述 - AFF A700</block>
+  <block id="50cf5ff096dc3312afbcf78ae754cb14" category="paragraph">了解AFF A700系統上的啟動介質更換，並了解不同的更換方法。啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（使用內部 e0S 連線）或中斷式更換（需要兩次重新啟動）。</block>
+  <block id="d1d2b405ad8bdeae70fb327661aff7a6" category="summary">更換AFF A700控制器模組上故障的啟動介質。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="85a247e45c819a9feaa0b28c861135b7" category="paragraph">更換AFF A700控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。</block>
+  <block id="9bcade05d37289ef7b50c3b5574449d5" category="summary">完成加密檢查後，關閉AFF A700系統上故障的控制器。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="8e892210dae0eb554a31aac3a79cc06a" category="paragraph">完成加密檢查後，關閉AFF A700系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動介質，具體步驟因係統配置而異。</block>
+  <block id="dc042dd29833b053080629e6a3a65c7b" category="paragraph">啟動媒體儲存系統啟動時所使用的主啟動映像檔集和輔助啟動映像檔集。AFF A700和FAS9000系統僅支援手動啟動媒體恢復程序。</block>
+  <block id="b8487c17915dcb428606ef47abd9b2e2" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回NetApp AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="91d08f7feb0cfd21fefc415323d857ee" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="4110027e00fc8b821cde07add698a3c9" category="summary">在關閉AFF A700s系統上故障的控制器之前，請先驗證加密金鑰支援和狀態。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="8afaf1a71df8b5e8293ad4548f96995b" category="paragraph">在關閉AFF A700s系統上故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本與NetApp卷加密 (NVE) 的兼容性、驗證金鑰管理器配置以及備份加密訊息，以確保在啟動媒體恢復期間的資料安全。</block>
+  <block id="3d59e209df076e5f186b38a1955edef9" category="paragraph">AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="fb61bd7ee6046c46954f664f27baf207" category="summary">恢復AFF A700s系統的替換啟動媒體上的加密配置。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="dc551a70b913db6df211355fa06088d6" category="paragraph">恢復AFF A700s系統的替換啟動媒體上的加密配置。此流程包括完成已啟用板載金鑰管理器 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統更換後的步驟，以確保安全的資料存取和系統的正常運作。</block>
+  <block id="c602a786cf1afc7286fa740b4aa73d7e" category="summary">在AFF A700s系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="52f54bd2a3371a3d9c472bcdd1b83dcd" category="paragraph">在AFF A700s系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。此過程包括從 USB 隨身碟啟動、還原檔案系統、驗證環境變數以及在更換啟動媒體後使控制器恢復正常運作。</block>
+  <block id="6343c488c5fd7366ccb8097fd368c902" category="summary">了解AFF A700s系統上的啟動介質更換，並了解恢復方法。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="75444ab6d7631b7666137714ef269b70" category="paragraph">了解AFF A700s系統上的啟動介質更換，並了解恢復方法。主啟動媒體儲存系統啟動期間使用的ONTAP啟動映像。您可以使用輔助啟動媒體中的ONTAP映像恢復主啟動媒體映像，或者，如果需要，可以使用格式化為 FAT32 的 USB 隨身碟來恢復主啟動媒體映像。</block>
+  <block id="80e4adf0a07f65179b721a3aa643f199" category="summary">更換AFF A700s控制器模組上故障的啟動介質。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="288a1ba541e20c0b8408486c5ac2021c" category="paragraph">更換AFF A700s控制器模組上故障的啟動介質。此程序包括從機箱中取出控制器模組，使用點亮的 LED 指示燈找到故障的啟動介質，物理更換啟動介質組件，並將系統恢復到正常運作狀態。</block>
+  <block id="045d601ea55137d06367b4e5c07294cb" category="summary">在完成加密檢查後，關閉AFF A700s系統上故障的控制器。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="1cde608d6fe62f56bdc3a29ae9eafc3b" category="paragraph">在完成加密檢查後，關閉AFF A700s系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動媒體。</block>
+  <block id="7ff709ab33d28508eabb142a3db7ae80" category="summary">使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="6827ba78ed93529d56c15a33eb4ff531" category="paragraph">使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。此過程包括從輔助啟動媒體上的映像進行復原（作為主要方法），或在輔助啟動媒體復原失敗或 image.tgz 檔案遺失時使用 USB 隨身碟。</block>
+  <block id="b3e6f6b7e4e5a440cfc3f9e0993cee92" category="section-title">方案一：使用備份復原功能從第二個啟動媒體傳輸文件</block>
+  <block id="e4e6847403baa34b19d3eda275449b4b" category="section-title">方案二：使用USB傳輸啟動鏡像</block>
+  <block id="a9ada9881e4356b94c8f1b22d5de3285" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF C190系統僅支援手動啟動媒體復原程式。</block>
+  <block id="16938aed6aaf31d064148061342cc4bf" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="db6232233752b78cea44cf76a92c0d32" category="summary">在關閉AFF C190系統上故障的控制器之前，請先驗證加密金鑰支援和狀態。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="2a1422d9858e45053a63cc3d30c30dad" category="paragraph">在關閉AFF C190系統上故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本與NetApp卷加密 (NVE) 的兼容性、驗證金鑰管理器配置以及備份加密訊息，以確保在啟動媒體恢復期間的資料安全。</block>
+  <block id="ab06aa9f0bcbe2033eb5a19f038de415" category="paragraph">AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="9953b0723da6931c16a5c932a2f00d95" category="summary">恢復AFF C190系統的替換啟動媒體上的加密配置。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="e0287af39af81ba06b0b36fbce24680d" category="paragraph">恢復AFF C190系統的替換啟動媒體上的加密配置。此流程包括完成已啟用板載金鑰管理器 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統更換後的步驟，以確保安全的資料存取和系統的正常運作。</block>
+  <block id="3c585d951f675da7be1e40e7c9815e79" category="summary">在AFF C190系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="89ce752a7b048b74e0d2160dd3d8933d" category="paragraph">在AFF C190系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。此過程包括從 USB 隨身碟啟動、還原檔案系統、驗證環境變數以及在更換啟動媒體後使控制器恢復正常運作。</block>
+  <block id="cc57173da2a214140ee5e4141fbbaf3a" category="summary">了解AFF C190系統上的啟動介質更換，並了解不同的更換方法。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="b3a51b10ba02ec214448df46a80734a4" category="paragraph">了解AFF C190系統上的啟動介質更換，並了解不同的更換方法。啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（HA 對連接到網路）或中斷式更換（需要重新啟動兩次）。</block>
+  <block id="5124334c95b4d6c8ba42a76baa65cc6a" category="summary">更換AFF C190控制器模組上故障的啟動介質。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="93e482204e53a43fa356c54257d0114c" category="paragraph">更換AFF C190控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。</block>
+  <block id="8175cc71d4d5286f96a9cede62d639ea" category="summary">在完成加密檢查後，關閉AFF C190系統上故障的控制器。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
+  <block id="68ba47c6b1d2b392e8bb23e56c9f6e22" category="paragraph">在完成加密檢查後，關閉AFF C190系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動媒體。</block>
+  <block id="7436c89939496dcc28b8f9c7ccbc772a" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。FAS2600 系統僅支援手動啟動媒體復原程序。</block>
+  <block id="c2a4b06d1cc1349c24f24b820ee36069" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="48f99a557cdb12e066cd81c373c3ea86" category="summary">在關閉 FAS2600 系統上發生故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本相容性。 FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="7ca680c61f0050a8d5510b0654331ca0" category="paragraph">在關閉 FAS2600 系統上發生故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本與NetApp卷加密 (NVE) 的兼容性、驗證金鑰管理器配置以及備份加密訊息，以確保在啟動媒體恢復期間的資料安全。</block>
+  <block id="e50bbd9920423b606b77b8053d9e14c2" category="paragraph">FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="65ef36d139347b00ddbea88d18eec7c3" category="summary">在 FAS2600 系統的替換啟動媒體上還原加密配置。此流程包括完成已啟用板載金鑰管理器 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統更換後的步驟，以確保安全的資料存取和系統的正常運作。</block>
+  <block id="61bf013e936b5989a900bd93a27115a9" category="summary">在 FAS2600 系統上，從 USB 磁碟機啟動ONTAP復原映像，以復原啟動媒體。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="f1a9c41d9d6f039272f569eb3baf2a2f" category="paragraph">在 FAS2600 系統上，從 USB 磁碟機啟動ONTAP復原映像，以復原啟動媒體。此過程包括從 USB 隨身碟啟動、還原檔案系統、驗證環境變數以及在更換啟動媒體後使控制器恢復正常運作。</block>
+  <block id="caf2f3e60e8b9a5df9864a5424e47837" category="summary">了解 FAS2600 系統上的啟動介質更換，並了解不同的更換方法。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="3fd4ff674a02896028e93e76dac4e3f6" category="paragraph">啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（HA 對連接到網路）或中斷式更換（需要重新啟動兩次）。</block>
+  <block id="531859330aaf7d2cb986bba1ea86611e" category="summary">更換 FAS2600 控制器模組上故障的啟動介質。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="c5cd0685223ec8c9dfe118b80eebe6ee" category="paragraph">更換 FAS2600 控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。</block>
+  <block id="2c6a895283d547854eaba691af00540f" category="summary">完成加密檢查後，關閉 FAS2600 系統上故障的控制器。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="f14e6ca36d9f6936d45ba95faaa72b55" category="paragraph">完成加密檢查後，關閉 FAS2600 系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動媒體。</block>
+  <block id="152a510da7acd87fb780c3924e66dd3d" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。FAS2700 系統僅支援手動啟動媒體復原程序。</block>
+  <block id="6453951e8d3ca08e9ff3620e8eafe394" category="paragraph">FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="12be28c959d52cd55789d7b31c840e89" category="summary">在關閉 FAS2700 系統上發生故障的控制器之前，請先驗證加密金鑰支援和狀態。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="dcc2c2b8f3fcf52a59e925727d2cdb33" category="doc">檢查加密金鑰支援和狀態 - FAS2700</block>
+  <block id="d3c8f46411c2bbf048f38ffb243dcb21" category="paragraph">在關閉 FAS2700 系統上發生故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本與NetApp卷加密 (NVE) 的兼容性、驗證金鑰管理器配置以及備份加密訊息，以確保在啟動媒體恢復期間的資料安全。</block>
+  <block id="b55fa1f84a4aa200d621896941c317eb" category="summary">恢復替換啟動媒體上的加密。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="6ede00f70e3bbaac2bcec93d01e0e41f" category="doc">恢復加密 - FAS2700</block>
+  <block id="4c06ef68822114c73b4fa5767260497f" category="summary">在 FAS2700 系統上，從 USB 磁碟機啟動ONTAP復原映像，以還原啟動媒體。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="13238a211d9253451026e3af83c70248" category="paragraph">在 FAS2700 系統上，從 USB 磁碟機啟動ONTAP復原映像，以還原啟動媒體。此過程包括從 USB 隨身碟啟動、還原檔案系統、驗證環境變數以及在更換啟動媒體後使控制器恢復正常運作。</block>
+  <block id="d6edd271c8327657fd2403fffc4c50ca" category="summary">了解 FAS2700 系統上的啟動介質更換，並了解不同的更換方法。啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（HA 對連接到網路）或中斷式更換（需要重新啟動兩次）。</block>
+  <block id="5c6af4f49c78cf6324723c8432cd7825" category="doc">啟動介質更換概述 - FAS2700</block>
+  <block id="32bd0098b7b66789878381234e1b8f0f" category="paragraph">了解 FAS2700 系統上的啟動介質更換，並了解不同的更換方法。</block>
+  <block id="eb1bbb601de5f007b052500d1daa9897" category="summary">更換 FAS2700 控制器模組上故障的啟動介質。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="4a4a24c4da47fc1ffc6cca5c2d6ce583" category="paragraph">更換 FAS2700 控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。</block>
+  <block id="099bbbe59f1279cd79dc828d1fdd1e2a" category="summary">您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。FAS2700 系統僅支援手動啟動媒體復原程序。</block>
+  <block id="8bed89a7ecf253634e51f38e2fcd58fc" category="paragraph">使用適合您配置的相應程式關閉或接管故障控制器。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="612de12b06dc92e879871af6108e9145" category="summary">在雙節點MetroCluster配置中完成啟動介質更換後，對FAS8200系統執行MetroCluster切換回操作。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="55abb9cbcf608e1e1788ba5c70f5cdd7" category="paragraph">在雙節點MetroCluster配置中完成啟動介質更換後，對FAS8200系統執行MetroCluster切換回操作。此程序包括驗證節點和儲存虛擬機器 (SVM) 的狀態，執行回退命令，並確認設定恢復到正常運作狀態，同步來源 SVM 從本機磁碟池提供資料。</block>
+  <block id="20ffd50557ca256223fa86dcd17bd2f7" category="paragraph">FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="8d6de04460a654100b8060c21ce281b5" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。FAS8200系統僅支援手動啟動媒體復原程序。</block>
+  <block id="bc350256d7a6cef7c02710a0139714df" category="summary">在關閉FAS8200系統上故障的控制器之前，請先驗證加密金鑰支援和狀態。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="42106298b2c64aa36df74ef0043663e1" category="paragraph">在關閉FAS8200系統上故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本與NetApp卷加密 (NVE) 的兼容性、驗證金鑰管理器配置以及備份加密訊息，以確保在啟動媒體恢復期間的資料安全。</block>
+  <block id="b64021e89ec05c245f475633fde22260" category="summary">在FAS8200系統的替換啟動媒體上恢復加密配置。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="dee1cab956be03e5d86505f17196a970" category="paragraph">在FAS8200系統的替換啟動媒體上恢復加密配置。此流程包括完成已啟用板載金鑰管理器 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統更換後的步驟，以確保安全的資料存取和系統的正常運作。</block>
+  <block id="fa4f4d2a57ed28f9d153ed33311c2d54" category="summary">在FAS8200系統上，從 USB 隨身碟啟動ONTAP恢復映像以恢復啟動媒體。 FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="7549eda3bfab69811efe7331a5381e9a" category="paragraph">在FAS8200系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。該過程包括從 USB 隨身碟啟動、恢復檔案系統、驗證環境變數以及使控制器恢復正常運行，具體步驟取決於系統是否處於雙節點MetroCluster配置中。</block>
+  <block id="689cec69f36cf77612e0646ba7b2eceb" category="summary">了解FAS8200系統上的啟動介質更換，並了解不同的更換方法。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="277591904d45c0d913e14dba26389b19" category="paragraph">了解FAS8200系統上的啟動介質更換，並了解不同的更換方法。啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（HA 對連接到網路）或中斷式更換（需要重新啟動兩次）。</block>
+  <block id="1358d65cf4d1fd0a8157e298a88f4cd6" category="summary">更換FAS8200控制器模組上故障的啟動介質。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="4fa7fac5155fdf6f00f32df2d2a3b87a" category="paragraph">更換FAS8200控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。</block>
+  <block id="e992c53eecb095681987a9a8910cafde" category="summary">完成加密檢查後，關閉FAS8200系統上故障的控制器。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="e5d65c4ef08045931c1be2779705747d" category="paragraph">完成加密檢查後，關閉FAS8200系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動介質，具體步驟因係統配置而異。</block>
+  <block id="87cb40395acfe10a1650b9e02b006d26" category="summary">在雙節點MetroCluster配置中完成 FRU 更換後，您可以執行MetroCluster切換操作。這樣就將設定恢復到正常運作狀態，先前受損網站上的同步來源儲存虛擬機器 (SVM) 現在處於活動狀態，並從本機磁碟池提供資料。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="b9c389d5862c302fad7b418a751b439f" category="paragraph">完成啟動介質更換後，執行MetroCluster切換操作。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="d758bd8309af45c1b9501e2a932fa172" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="bbc2e11d910d1f68251116d75c0e313c" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="cbea2cd042953291c746b64ed00be111" category="summary">在關閉受損節點並檢查板載加密金鑰的狀態之前，必須檢查受損節點的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="3249cc5272c53a1d5aa9d8cabeeb1b8a" category="paragraph">為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="c46823c1660463f61a49f1053b334476" category="summary">檢查完環境變數後，您必須完成已啟用板載金鑰管理員 (OKM)、 NetApp儲存加密 (NSE) 或NetApp磁碟區加密 (NVE) 的系統的特定步驟。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="5bf36be54158a4cae3903c79c7649a8b" category="paragraph">恢復替換啟動媒體上的加密。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="f2355f742ad86c970b7ed390e9ced48b" category="summary">從恢復映像啟動受損節點的步驟取決於系統是否處於雙節點MetroCluster配置中。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="49692a6c92e707f5a903378cbf38fea9" category="paragraph">從恢復映像啟動受損節點的步驟取決於系統是否處於雙節點MetroCluster配置中。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="b99c7514fe97acfde29bf189d8ccf471" category="summary">啟動媒體儲存系統啟動時使用的主系統檔案和輔助系統檔案（啟動映像）。根據您的網路配置，您可以執行非中斷式或中斷式更換。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="77bf0cee49a3470f6b38489a0f7086ad" category="paragraph">啟動媒體儲存系統啟動時使用的主系統檔案和輔助系統檔案（啟動映像）。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="b4c3475bf2e714a4ed9f24ecb6cc7669" category="summary">若要接觸控制器內部的組件，必須先將控制器模組從系統中取出，然後再取下控制器模組上的蓋子。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="bda7991538d7df6f87277c8872fcbf32" category="paragraph">若要更換啟動介質，必須拆下損壞的控制器模組，安裝新的啟動介質，並將啟動映像傳輸到 USB 隨身碟。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="8f1c79a411c0d8e59d3c43c509193d4e" category="summary">您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。FAS9000系統僅支援手動啟動媒體復原程序。</block>
+  <block id="e03f71d6f85378a6ef0de5701ebfafaa" category="paragraph">使用適合您配置的相應程式關閉或接管故障控制器。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
 </blocks>

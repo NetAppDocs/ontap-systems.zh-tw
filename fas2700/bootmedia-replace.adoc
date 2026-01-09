@@ -1,8 +1,8 @@
 ---
 permalink: fas2700/bootmedia-replace.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, replace, boot, media, controller, module, fru map 
-summary: 您必須在控制器中找到開機媒體、然後依照指示進行更換。 
+keywords: fas2700, aff a220, replace, boot, media, controller, module, fru map, manual, manual boot recovery 
+summary: 更換 FAS2700 控制器模組上故障的啟動介質。FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 更換開機媒體： FAS2700
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: 您必須在控制器中找到開機媒體、然後依照指示進行�
 
 
 [role="lead"]
+更換 FAS2700 控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。
+
+FAS2700 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+
 若要更換開機媒體、您必須移除受損的控制器模組、安裝替換的開機媒體、並將開機映像傳輸到USB快閃磁碟機。
 
 

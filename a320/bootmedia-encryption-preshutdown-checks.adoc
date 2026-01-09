@@ -1,8 +1,8 @@
 ---
 permalink: a320/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: aff, a320, aff a320, shut, down, impair, controller, check, status, onboard, encryption, kets, status, impair, controller, disable, automatic, giveback, ontap, run, pre-shutdown, pre-shutdown checks for onboard encryption keys 
-summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+keywords: aff, a320, aff a320, shut, down, impair, controller, check, status, onboard, encryption, kets, status, impair, controller, disable, automatic, giveback, ontap, run, pre-shutdown, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery 
+summary: 在關閉故障控制器並檢查板載加密金鑰的狀態之前，必須檢查故障控制器的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。AFF A320系統僅支援手動啟動媒體復原程式。 
 ---
 = 檢查加密金鑰支援與狀態 - AFF A320
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 
 
 [role="lead"]
-為了確保儲存系統上的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。AFF A320系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 
 

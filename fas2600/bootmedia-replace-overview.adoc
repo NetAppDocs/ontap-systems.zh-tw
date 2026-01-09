@@ -1,8 +1,8 @@
 ---
 permalink: fas2600/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: fas2600, nondisruptive, disruptive, replace the boot media 
-summary: 開機媒體會儲存系統開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。 
+keywords: fas2600, nondisruptive, disruptive, replace the boot media, manual, manual boot recovery 
+summary: 了解 FAS2600 系統上的啟動介質更換，並了解不同的更換方法。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 開機媒體更換總覽- FAS2600
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: 開機媒體會儲存系統開機時所使用的一組主要和次要�
 
 
 [role="lead"]
+了解 FAS2600 系統上的啟動介質更換，並了解不同的更換方法。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+
+啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（HA 對連接到網路）或中斷式更換（需要重新啟動兩次）。
+
 開機媒體會儲存系統在開機時所使用的一組主要和次要系統（開機映像）檔案。視網路組態而定、您可以執行不中斷營運或中斷營運的更換作業。
 
 您必須擁有一個格式化為FAT32的USB快閃磁碟機、並具有適當的儲存容量、才能容納「image_xxx.tgz」檔案。

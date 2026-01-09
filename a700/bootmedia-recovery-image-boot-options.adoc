@@ -1,8 +1,8 @@
 ---
 permalink: a700/bootmedia-recovery-image-boot-options.html 
 sidebar: sidebar 
-keywords: aff a700, fas9000, boot, recovery, image, two, node, metrocluster, configuration 
-summary: 從恢復映像開機受損節點的程序、取決於系統是否為雙節點MetroCluster 的版本。 
+keywords: aff a700, boot, recovery, image, two, node, metrocluster, configuration, manual, manual boot recovery 
+summary: 在AFF A700系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 開機恢復映像 - AFF A700
 :allow-uri-read: 
@@ -11,6 +11,10 @@ summary: 從恢復映像開機受損節點的程序、取決於系統是否為�
 
 
 [role="lead"]
+在AFF A700系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。該過程包括從 USB 隨身碟啟動、恢復檔案系統、驗證環境變數以及使控制器恢復正常運行，具體步驟取決於系統是否處於雙節點MetroCluster配置中。
+
+AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+
 從恢復映像開機受損節點的程序、取決於系統是否為雙節點MetroCluster 的版本。
 
 

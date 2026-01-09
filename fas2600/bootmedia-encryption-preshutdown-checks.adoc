@@ -1,8 +1,8 @@
 ---
 permalink: fas2600/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: fas2600, pre-shutdown checks for onboard encryption keys 
-summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+keywords: fas2600, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery 
+summary: 在關閉 FAS2600 系統上發生故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本相容性。 FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
 = 檢查加密金鑰支援與狀態 - FAS2600
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 
 
 [role="lead"]
-為了確保儲存系統上的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+在關閉 FAS2600 系統上發生故障的控制器之前，請先驗證加密金鑰支援和狀態。此過程包括檢查ONTAP版本與NetApp卷加密 (NVE) 的兼容性、驗證金鑰管理器配置以及備份加密訊息，以確保在啟動媒體恢復期間的資料安全。
+
+FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
 
 
 

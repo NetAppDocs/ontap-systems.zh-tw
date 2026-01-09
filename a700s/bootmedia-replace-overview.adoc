@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-replace-overview.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media 
-summary: 主開機媒體會儲存ONTAP 系統在開機時所使用的功能不均的開機映像。您可以使用ONTAP 次要開機媒體上的還原影像來還原主要開機媒體映像、或是必要時使用USB快閃磁碟機來還原主開機媒體映像。 
+keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media, manual, manual boot recovery 
+summary: 了解AFF A700s系統上的啟動介質更換，並了解恢復方法。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 開機媒體更換總覽- AFF 《Sof boot media replacement》-《Se A700s
 :allow-uri-read: 
@@ -11,7 +11,9 @@ summary: 主開機媒體會儲存ONTAP 系統在開機時所使用的功能不�
 
 
 [role="lead"]
-主開機媒體會儲存ONTAP 系統在開機時所使用的功能不均的開機映像。您可以使用ONTAP 次要開機媒體上的還原影像來還原主要開機媒體映像、或是必要時使用USB快閃磁碟機來還原主開機媒體映像。
+了解AFF A700s系統上的啟動介質更換，並了解恢復方法。主啟動媒體儲存系統啟動期間使用的ONTAP啟動映像。您可以使用輔助啟動媒體中的ONTAP映像恢復主啟動媒體映像，或者，如果需要，可以使用格式化為 FAT32 的 USB 隨身碟來恢復主啟動媒體映像。
+
+AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 如果您的次要開機媒體故障或遺失image.tgz檔案、您必須使用USB快閃磁碟機還原主要開機媒體。磁碟機必須格式化為AT32、而且必須有適當的儲存容量、才能容納image_xxx.tgz檔案。
 

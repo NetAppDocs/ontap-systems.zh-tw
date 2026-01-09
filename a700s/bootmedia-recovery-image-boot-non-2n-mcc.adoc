@@ -1,8 +1,8 @@
 ---
 permalink: a700s/bootmedia-recovery-image-boot-non-2n-mcc.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, boot, ontap, image, usb, drive, restore, file, system, verify, environmental, variable 
-summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。 
+keywords: aff a700s, aff, a700s, boot, ontap, image, usb, drive, restore, file, system, verify, environmental, variable, manual, manual boot recovery 
+summary: 在AFF A700s系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 開機恢復映像AFF - S還原A700s
 :allow-uri-read: 
@@ -11,8 +11,11 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 
 
 [role="lead"]
-您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
+在AFF A700s系統上，從 USB 隨身碟啟動ONTAP恢復映像，以恢復啟動媒體。此過程包括從 USB 隨身碟啟動、還原檔案系統、驗證環境變數以及在更換啟動媒體後使控制器恢復正常運作。
 
+AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+
+.步驟
 . 在載入程式提示字元中、從USB快閃磁碟機開機恢復映像：「boot_recovery」
 +
 映像會從USB隨身碟下載。
