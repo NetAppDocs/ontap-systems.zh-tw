@@ -1,0 +1,115 @@
+= 
+:allow-uri-read: 
+
+
+將替換的 I/O 模組上線、驗證 I/O 模組連接埠是否成功初始化、驗證插槽是否已開啟電源，然後驗證 I/O 模組是否已上線並被識別。
+
+.關於這項工作
+更換 I/O 模組後，連接埠恢復正常狀態，LIF 將恢復到已更換的 I/O 模組。
+
+.步驟
+. 將替換的 I/O 模組上線：
++
+.. 輸入以下命令：
++
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_number_`
+
+.. 進入 `y`當您看到提示“您想繼續嗎？”
++
+輸出結果應確認 I/O 模組已成功上線（已通電、已初始化、已投入使用）。
+
++
+例如，以下命令將節點 2 （故障控制器）上的插槽 7 聯機，並顯示一則訊息，表示該程序已成功：
+
++
+[listing]
+----
+node2::> system controller slot module insert -node node2 -slot 7
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 7 of node node2 will be powered on and initialized.
+
+Do you want to continue? {y|n}: `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+
+
+. 驗證 I/O 模組上的每個連接埠是否已成功初始化：
++
+.. 從受損控制器的控制台輸入以下命令：
++
+`event log show -event \*hotplug.init*`
+
++
+
+NOTE: 任何所需的韌體更新和連接埠初始化可能需要幾分鐘的時間。
+
++
+輸出應顯示一個或多個 hotplug.init.success EMS 事件，並在 `_Event_`欄位中顯示 `_hotplug.init.success:_`，表示 I/O 模組上的每個連接埠已成功初始化。
+
++
+例如，以下輸出顯示 I/O 連接埠 e7b 和 e7a 的初始化成功：
+
++
+[listing]
+----
+node2::> event log show -event *hotplug.init*
+
+Time                Node             Severity      Event
+
+------------------- ---------------- ------------- ---------------------------
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e7b" in slot 7 succeeded
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e7a" in slot 7 succeeded
+
+2 entries were displayed.
+----
+.. 如果連接埠初始化失敗、請檢閱 EMS 記錄以瞭解後續步驟。
+
+
+. 確認 I/O 模組插槽已通電並準備好運作：
++
+`system controller slot module show`
+
++
+輸出應顯示插槽狀態為 `_powered-on_`，因此 I/O 模組可以運作。
+
+. 確認 I/O 模組已上線並已識別。
++
+從受損控制器的控制台輸入命令：
+
++
+`system controller config show -node local -slot _slot_number_`
+
++
+如果 I/O 模組成功上線並被識別，則輸出會顯示 I/O 模組資訊，包括插槽的連接埠資訊。
+
++
+例如，對於插槽 7 中的 I/O 模組，您應該會看到類似以下的輸出：
+
++
+[listing]
+----
+node2::> system controller config show -node local -slot 7
+
+Node: node2
+Sub- Device/
+Slot slot Information
+---- ---- -----------------------------
+   7    - Dual 40G/100G Ethernet Controller CX6-DX
+                  e7a MAC Address: d0:39:ea:59:69:74 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2807GJFM-B
+                  e7b MAC Address: d0:39:ea:59:69:75 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2809G26F-A
+                  Device Type:        CX6-DX PSID(NAP0000000027)
+                  Firmware Version:   22.44.1700
+                  Part Number:        111-05341
+                  Hardware Revision:  20
+                  Serial Number:      032403001370
+----
+

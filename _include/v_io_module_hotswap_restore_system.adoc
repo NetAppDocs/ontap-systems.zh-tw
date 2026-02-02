@@ -7,30 +7,11 @@
 .步驟
 . 根據儲存系統執行的 ONTAP 版本和控制器狀態，視需要歸還儲存設備並還原被接管控制器的自動歸還功能：
 +
-[cols="1,2,3"]
+[cols="1,2"]
 |===
-| 版本ONTAP | 如果... | 然後... 
+| 如果... | 然後... 
 
 
- a| 
-9.17.1 或 9.18.1RC
- a| 
-如果受損的控制器自動接管了健康的控制器
- a| 
-.. 透過恢復儲存設備，使健全的控制器恢復正常運作：
-+
-`storage failover giveback -ofnode _healthy_node_name_`
-
-.. 從受損控制器的主控台還原自動恢復：
-+
-`storage failover modify -node local -auto-giveback _true_`
-
-
-
-
-
- a| 
-9.18.1GA 或更新版本
  a| 
 如果其中一方控制器自動接管了其合作夥伴控制器
  a| 
@@ -47,14 +28,12 @@
 
 
  a| 
-9.18.1GA 或更新版本
- a| 
 兩個控制器均已啟動並運行 I/O （提供資料服務）
  a| 
 前往下一步。
 
 |===
-. 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
+. 驗證邏輯介面是否正在向其主節點和連接埠報告： `network interface show -is-home false`
 +
 如果有任何生命被列為假、請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
 

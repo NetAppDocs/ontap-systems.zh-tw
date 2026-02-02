@@ -1,0 +1,432 @@
+---
+permalink: c30-60/io-module-hotswap.html 
+sidebar: sidebar 
+keywords: aff c30, aff c60, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
+summary: 如果 AFF C30 或 AFF C60 儲存系統中的某個乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。 
+---
+= 熱插拔 I/O 模組 - AFF C30 和 AFF C60
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 AFF C30 或 AFF C60 儲存系統中的某個乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。
+
+要熱插拔 I/O 模組，請確保您的儲存系統符合 ONTAP 版本要求，準備好您的儲存系統和 I/O 模組，熱插拔故障模組，將取代模組上線，將儲存系統恢復正常運作，並將故障模組退回 NetApp。
+
+.關於這項工作
+* 熱插拔 I/O 模組意味著在更換故障的 I/O 模組之前，無需執行手動接管操作。
+* 熱插拔 I/O 模組時，請將命令套用至正確的控制器和 I/O 插槽：
++
+** _受損的控制器_ 是指您正在熱插拔 I/O 模組的控制器。
+** _健康控制器_是受損控制器的 HA 夥伴。
+
+
+* 您可以開啟儲存系統位置（藍色）LED 指示燈，以便於快速定位受影響的儲存系統。使用 SSH 登入 BMC 並輸入 `system location-led _on_`命令。
++
+儲存系統有三個位置 LED ：一個在操作員顯示面板上，一個在每個控制器上。位置LED會持續亮起30分鐘。
+
++
+您可以輸入命令將其關閉 `system location-led _off_`。如果您不確定 LED 是否亮起或熄滅，可以輸入命令來檢查其狀態 `system location-led show`。
+
+
+
+
+
+== 步驟 1：確保儲存系統符合程序要求
+
+若要使用此程序，您的儲存系統必須執行 ONTAP 9.17.1 或更新版本，且您的儲存系統必須符合儲存系統所執行 ONTAP 版本的所有要求。
+
+
+NOTE: 如果您的儲存系統未執行 ONTAP 9.17.1 或更新版本、或不符合儲存系統所執行 ONTAP 版本的所有需求、則無法使用此程序、您必須使用 link:io-module-replace.html["更換 I/O 模組程序"]。
+
+[role="tabbed-block"]
+====
+.ONTAP 9.17.1 或 9.18.1RC
+--
+* 您正在熱插拔插槽 4 中發生故障的叢集和 HA I/O 模組，更換為等效的 I/O 模組。您無法變更 I/O 模組類型。
+* 具有故障叢集和 HA I/O 模組的控制器（受損控制器）必須已接管正常的合作夥伴控制器。如果 I/O 模組發生故障，接管應該會自動進行。
++
+對於雙節點叢集，儲存系統無法區分哪個控制器的 I/O 模組故障，因此任一控制器都可能啟動接管。只有當具有故障 I/O 模組的控制器（受損控制器）接管正常控制器時，才支援熱插拔。熱插拔 I/O 模組是在不中斷的情況下進行還原的唯一方法。
+
++
+您可以輸入以下命令來驗證受損控制器是否成功接管了健康控制器 `storage failover show`命令。
+
++
+如果您不確定哪個控制器的 I/O 模組出現故障，請聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"] 。
+
+* 您的儲存系統配置必須只有一個位於插槽 4 的叢集和 HA I/O 模組，而不是兩個叢集和 HA I/O 模組。
+* 您的儲存系統必須是雙節點（無交換器或有交換器）叢集配置。
+* 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+
+
+--
+.ONTAP 9.18.1GA 或更新版本
+--
+* 您正在對任意插槽中的乙太網路 I/O 模組進行熱插拔，該插槽可以包含用於叢集、HA 和用戶端的任意連接埠組合，並且需要使用功能相同的 I/O 模組。您無法變更 I/O 模組類型。
++
+乙太網路 I/O 模組，其連接埠用於儲存或 MetroCluster 不支援熱插拔。
+
+* 您的儲存系統（無交換器或有交換器叢集組態）可以有任何數量的節點，以供您的儲存系統支援。
+* 叢集中的所有節點都必須執行相同的 ONTAP 版本（ONTAP 9.18.1GA 或更新版本），或執行相同 ONTAP 版本的不同修補程式層級。
++
+如果叢集中的節點執行不同的 ONTAP 版本，則該叢集被視為混合版本叢集，不支援熱插拔 I/O 模組。
+
+
+
+* 儲存系統中的控制器可能處於下列其中一種狀態：
++
+** 兩個控制器都可以啟動並執行 I/O（提供資料）。
+** 如果接管是由故障的 I/O 模組引起的，且控制器在其他方面運作正常，則任一控制器都可以處於接管狀態。
++
+在某些情況下，ONTAP 可以因為 I/O 模組故障而自動接管任一控制器。例如，如果故障的 I/O 模組包含所有叢集連接埠（該控制器上的所有叢集連結都中斷），ONTAP 會自動執行接管。
+
+
+
+
+
+* 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+
+
+--
+====
+
+
+== 步驟 2：準備儲存系統和 I/O 模組插槽
+
+準備好儲存系統和 I/O 模組插槽，以便安全地移除故障的 I/O 模組：
+
+.步驟
+. 請妥善接地。
+. 從故障的 I/O 模組拔下纜線。
++
+請務必為纜線貼上標籤，以便稍後在此程序中將其重新連接至相同的連接埠。
+
++
+[NOTE]
+====
+I/O 模組應該發生故障（連接埠應該處於鏈路關閉狀態）；但是，如果鏈路仍然處於連接狀態，並且包含最後一個正常運作的叢集連接埠，則拔下纜線會觸發自動接管。
+
+拔下纜線後請等待五分鐘,以確保任何接管或 LIF 容錯移轉完成後,再繼續執行此程序。
+
+====
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
++
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+例如，以下AutoSupport訊息會抑制自動案例建立兩小時：
+
++
+`node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 根據儲存系統執行的 ONTAP 版本和控制器狀態，視需要停用自動恢復：
++
+[cols="1,2,3"]
+|===
+| 版本ONTAP | 如果... | 然後... 
+
+
+ a| 
+9.17.1 或 9.18.1RC
+ a| 
+如果受損的控制器自動接管了健康的控制器
+ a| 
+停用自動交還：
+
+.. 從受損控制器的主控台輸入下列命令
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
+
+
+
+
+ a| 
+9.18.1GA 或更新版本
+ a| 
+如果其中一方控制器自動接管了其合作夥伴控制器
+ a| 
+停用自動交還：
+
+.. 在接管其合作夥伴的控制器主控台中輸入下列命令：
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
+
+
+
+
+ a| 
+9.18.1GA 或更新版本
+ a| 
+兩個控制器均已啟動並運行 I/O （提供資料服務）
+ a| 
+前往下一步。
+
+|===
+. 準備移除故障的 I/O 模組，方法是將其從服務中移除並關閉電源：
++
+.. 輸入以下命令：
++
+`system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
+
+.. 進入 `y`當您看到提示“您想繼續嗎？”
++
+例如，以下命令準備移除節點 2（受損控制器）上插槽 4 中的故障模組，並顯示一則訊息，表示可以安全移除：
+
++
+[listing]
+----
+node2::> system controller slot module remove -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered off for removal.
+
+Do you want to continue? {y|n}: y
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+
+
+. 確認故障的 I/O 模組已關閉電源：
++
+`system controller slot module show`
+
++
+輸出結果應在故障模組及其插槽編號的 `_status_`欄位中顯示 `_powered-off_`。
+
+
+
+
+
+== 步驟 3：熱插拔故障的 I/O 模組
+
+將故障的 I/O 模組熱插拔為等效的 I/O 模組：
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 從受損的控制器中移除故障的 I/O 模組：
++
+image::../media/drw_g_io_module_hotswap_slot4_ieops-2366.svg[插槽 4 中的熱插拔群集和 HA I/O 模組]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[編號 1]
+ a| 
+逆時針旋轉 I/O 模組指旋螺絲以鬆開。
+
+
+
+ a| 
+image::../media/icon_round_2.png[編號 2]
+ a| 
+使用左側的連接埠標籤卡榫和右側的翼形螺絲將 I/O 模組從控制器中拉出。
+
+|===
+. 安裝替換的 I/O 模組：
++
+.. 將I/O模組與插槽邊緣對齊。
+.. 輕輕地將 I/O 模組完全推入插槽，確保 I/O 模組正確插入連接器。
++
+您可以使用左側的卡榫和右側的翼形螺絲來推入 I/O 模組。
+
+.. 順時針旋轉指旋螺絲以旋緊。
+
+
+. 將替換的 I/O 模組接上纜線。
+
+
+
+
+== 步驟 4：將替換的 I/O 模組上線
+
+將替換的 I/O 模組上線、驗證 I/O 模組連接埠是否成功初始化、驗證插槽是否已開啟電源，然後驗證 I/O 模組是否已上線並被識別。
+
+.關於這項工作
+更換 I/O 模組後，連接埠恢復正常狀態，LIF 將恢復到已更換的 I/O 模組。
+
+.步驟
+. 將替換的 I/O 模組上線：
++
+.. 輸入以下命令：
++
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_number_`
+
+.. 進入 `y`當您看到提示“您想繼續嗎？”
++
+輸出結果應確認 I/O 模組已成功上線（已通電、已初始化、已投入使用）。
+
++
+例如，以下命令使節點 2（受損控制器）上的插槽 4 聯機，並顯示該程序成功的訊息：
+
++
+[listing]
+----
+node2::> system controller slot module insert -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered on and initialized.
+
+Do you want to continue? {y|n}: `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+
+
+. 驗證 I/O 模組上的每個連接埠是否已成功初始化：
++
+.. 從受損控制器的控制台輸入以下命令：
++
+`event log show -event \*hotplug.init*`
+
++
+
+NOTE: 任何所需的韌體更新和連接埠初始化可能需要幾分鐘的時間。
+
++
+輸出應顯示一個或多個 hotplug.init.success EMS 事件，表示 I/O 模組上的每個連接埠均已成功啟動。
+
++
+例如，以下輸出顯示 I/O 連接埠 e4b 和 e4a 的初始化成功：
+
++
+[listing]
+----
+node2::> event log show -event *hotplug.init*
+
+Time                Node             Severity      Event
+
+------------------- ---------------- ------------- ---------------------------
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succeeded
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succeeded
+
+2 entries were displayed.
+----
+.. 如果連接埠初始化失敗、請檢閱 EMS 記錄以瞭解後續步驟。
+
+
+. 確認 I/O 模組插槽已通電並準備好運作：
++
+`system controller slot module show`
+
++
+輸出應顯示插槽狀態為 `_powered-on_`，因此 I/O 模組可以運作。
+
+. 確認 I/O 模組已上線並已識別。
++
+從受損控制器的控制台輸入命令：
+
++
+`system controller config show -node local -slot _slot_number_`
+
++
+如果 I/O 模組成功上線並被識別，則輸出會顯示 I/O 模組資訊，包括插槽的連接埠資訊。
+
++
+例如，對於插槽 4 中的 I/O 模組，您應該會看到類似以下的輸出：
+
++
+[listing]
+----
+node2::> system controller config show -node local -slot 4
+
+Node: node2
+Sub- Device/
+Slot slot Information
+---- ---- -----------------------------
+   4    - Dual 40G/100G Ethernet Controller CX6-DX
+                  e4a MAC Address: d0:39:ea:59:69:74 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2807GJFM-B
+                  e4b MAC Address: d0:39:ea:59:69:75 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2809G26F-A
+                  Device Type:        CX6-DX PSID(NAP0000000027)
+                  Firmware Version:   22.44.1700
+                  Part Number:        111-05341
+                  Hardware Revision:  20
+                  Serial Number:      032403001370
+----
+
+
+
+
+== 步驟 5：恢復儲存系統正常運作
+
+將儲存空間恢復到正常運作狀態，方法是：將儲存空間恢復給被接管的控制器（根據需要）、恢復自動恢復功能（根據需要）、驗證 LIF 是否在其主連接埠上，並重新啟用 AutoSupport 自動建立案例功能。
+
+.步驟
+. 根據儲存系統執行的 ONTAP 版本和控制器狀態，視需要歸還儲存設備並還原被接管控制器的自動歸還功能：
++
+[cols="1,2,3"]
+|===
+| 版本ONTAP | 如果... | 然後... 
+
+
+ a| 
+9.17.1 或 9.18.1RC
+ a| 
+如果受損的控制器自動接管了健康的控制器
+ a| 
+.. 透過恢復儲存設備，使健全的控制器恢復正常運作：
++
+`storage failover giveback -ofnode _healthy_node_name_`
+
+.. 從受損控制器的主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback _true_`
+
+
+
+
+
+ a| 
+9.18.1GA 或更新版本
+ a| 
+如果其中一方控制器自動接管了其合作夥伴控制器
+ a| 
+.. 透過歸還儲存設備，使被接管的控制器恢復正常運作：
++
+`storage failover giveback -ofnode _controller that was taken over_name_`
+
+.. 從被接管的控制器主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback _true_`
+
+
+
+
+
+ a| 
+9.18.1GA 或更新版本
+ a| 
+兩個控制器均已啟動並運行 I/O （提供資料服務）
+ a| 
+前往下一步。
+
+|===
+. 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」
++
+如果有任何生命被列為假、請將其還原至其主連接埠： `network interface revert -vserver * -lif *`
+
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=end`
+
+
+
+
+
+== 步驟6：將故障零件歸還給NetApp
+
+如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

@@ -2,18 +2,21 @@
 :allow-uri-read: 
 
 
-將插槽 4 中的替換叢集和 HA I/O 模組聯機，驗證模組連接埠是否已成功初始化，驗證插槽 4 是否已開啟電源，然後驗證模組是否連線並被識別。
+將替換的 I/O 模組上線、驗證 I/O 模組連接埠是否成功初始化、驗證插槽是否已開啟電源，然後驗證 I/O 模組是否已上線並被識別。
+
+.關於這項工作
+更換 I/O 模組後，連接埠恢復正常狀態，LIF 將恢復到已更換的 I/O 模組。
 
 .步驟
-. 使替換叢集和 HA I/O 模組連線：
+. 將替換的 I/O 模組上線：
 +
 .. 輸入以下命令：
 +
-`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_number_`
 
 .. 進入 `y`當您看到提示“您想繼續嗎？”
 +
-輸出應確認叢集和 HA I/O 模組已成功上線（啟動、初始化並投入使用）。
+輸出結果應確認 I/O 模組已成功上線（已通電、已初始化、已投入使用）。
 
 +
 例如，以下命令使節點 2（受損控制器）上的插槽 4 聯機，並顯示該程序成功的訊息：
@@ -31,19 +34,21 @@ The module has been successfully powered on, initialized and placed into service
 ----
 
 
-. 驗證叢集和 HA I/O 模組上的每個連接埠是否已成功初始化：
+. 驗證 I/O 模組上的每個連接埠是否已成功初始化：
++
+.. 從受損控制器的控制台輸入以下命令：
 +
 `event log show -event \*hotplug.init*`
 
 +
 
-NOTE: 可能需要幾分鐘的時間才能完成所需的韌體更新和連接埠初始化。
+NOTE: 任何所需的韌體更新和連接埠初始化可能需要幾分鐘的時間。
 
 +
-輸出應顯示為群集和 HA I/O 模組上的每個連接埠記錄的 hotplug.init.success EMS 事件，其中包含 `_hotplug.init.success:_`在 `_Event_`柱子。
+輸出應顯示一個或多個 hotplug.init.success EMS 事件，表示 I/O 模組上的每個連接埠均已成功啟動。
 
 +
-例如，以下輸出顯示叢集和 HA I/O 模組連接埠 e4b 和 e4a 的初始化成功：
+例如，以下輸出顯示 I/O 連接埠 e4b 和 e4a 的初始化成功：
 
 +
 [listing]
@@ -60,25 +65,28 @@ Time                Node             Severity      Event
 
 2 entries were displayed.
 ----
-. 驗證 I/O 模組插槽 4 是否已通電並準備好運作：
+.. 如果連接埠初始化失敗、請檢閱 EMS 記錄以瞭解後續步驟。
+
+
+. 確認 I/O 模組插槽已通電並準備好運作：
 +
 `system controller slot module show`
 
 +
-輸出應顯示插槽 4 狀態為 `_powered-on_`因此可以為替換叢集和 HA I/O 模組的運作做好準備。
+輸出應顯示插槽狀態為 `_powered-on_`，因此 I/O 模組可以運作。
 
-. 驗證替換叢集和 HA I/O 模組是否在線並被識別。
+. 確認 I/O 模組已上線並已識別。
 +
 從受損控制器的控制台輸入命令：
 
 +
-`system controller config show -node local -slot4`
+`system controller config show -node local -slot _slot_number_`
 
 +
-如果取代叢集和 HA I/O 模組成功連線並被識別，則輸出將顯示插槽 4 的 I/O 模組訊息，包括連接埠資訊。
+如果 I/O 模組成功上線並被識別，則輸出會顯示 I/O 模組資訊，包括插槽的連接埠資訊。
 
 +
-例如，您應該會看到類似以下內容的輸出：
+例如，對於插槽 4 中的 I/O 模組，您應該會看到類似以下的輸出：
 
 +
 [listing]

@@ -1,0 +1,108 @@
+= 
+:allow-uri-read: 
+
+
+準備好儲存系統和 I/O 模組插槽，以便安全地移除故障的 I/O 模組：
+
+.步驟
+. 請妥善接地。
+. 從故障的 I/O 模組拔下纜線。
++
+請務必為纜線貼上標籤，以便稍後在此程序中將其重新連接至相同的連接埠。
+
++
+[NOTE]
+====
+I/O 模組應該發生故障（連接埠應該處於鏈路關閉狀態）；但是，如果鏈路仍然處於連接狀態，並且包含最後一個正常運作的叢集連接埠，則拔下纜線會觸發自動接管。
+
+拔下纜線後請等待五分鐘,以確保任何接管或 LIF 容錯移轉完成後,再繼續執行此程序。
+
+====
+. 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
++
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+例如，以下AutoSupport訊息會抑制自動案例建立兩小時：
+
++
+`node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. 根據儲存系統執行的 ONTAP 版本和控制器狀態，視需要停用自動恢復：
++
+[cols="1,2,3"]
+|===
+| 版本ONTAP | 如果... | 然後... 
+
+
+ a| 
+9.17.1 或 9.18.1RC
+ a| 
+如果受損的控制器自動接管了健康的控制器
+ a| 
+停用自動交還：
+
+.. 從受損控制器的主控台輸入下列命令
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
+
+
+
+
+ a| 
+9.18.1GA 或更新版本
+ a| 
+如果其中一方控制器自動接管了其合作夥伴控制器
+ a| 
+停用自動交還：
+
+.. 在接管其合作夥伴的控制器主控台中輸入下列命令：
++
+`storage failover modify -node local -auto-giveback false`
+
+.. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
+
+
+
+
+ a| 
+9.18.1GA 或更新版本
+ a| 
+兩個控制器均已啟動並運行 I/O （提供資料服務）
+ a| 
+前往下一步。
+
+|===
+. 準備移除故障的 I/O 模組，方法是將其從服務中移除並關閉電源：
++
+.. 輸入以下命令：
++
+`system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
+
+.. 進入 `y`當您看到提示“您想繼續嗎？”
++
+例如，以下命令準備移除節點 2（受損控制器）上插槽 4 中的故障模組，並顯示一則訊息，表示可以安全移除：
+
++
+[listing]
+----
+node2::> system controller slot module remove -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered off for removal.
+
+Do you want to continue? {y|n}: y
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+
+
+. 確認故障的 I/O 模組已關閉電源：
++
+`system controller slot module show`
+
++
+輸出結果應在故障模組及其插槽編號的 `_status_`欄位中顯示 `_powered-off_`。
+
+

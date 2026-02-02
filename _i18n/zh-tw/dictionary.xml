@@ -743,7 +743,6 @@
   <block id="f03c92168a16d01cf92fdfdfc719b6b5" category="summary">您可以使用工作表來收集和記錄站台專屬的IP位址、以及設定ONTAP 叢集時所需的其他資訊。</block>
   <block id="677d8bcfde6bff1a436a7a5e69b4dd4b" category="doc">叢集組態工作表- AFF VA200</block>
   <block id="f80cea0e802a372818458562fc5d9f43" category="inline-link-macro">叢集組態工作表</block>
-  <block id="4ab41e9db35b429ef17dc75c3671d5a3" category="paragraph">您可以使用 <block ref="29bd1f640adeeec5f2bc6e197d0840c4" category="inline-link-macro-rx"></block> 收集並記錄您在設定ONTAP 叢集時所需的站台專屬IP位址和其他資訊。</block>
   <block id="33d6eb89aeb8e2ba671f43912a716deb" category="summary">安裝及設定系統。</block>
   <block id="32df575971fcea9e12bea94b59ef2afa" category="doc">從這裡開始：選擇您的安裝與設定體驗</block>
   <block id="27e824f8d84211dc662b81aa3d2c5296" category="paragraph">您可以選擇不同的內容格式、引導您完成新儲存系統的安裝與設定。</block>
@@ -1151,7 +1150,6 @@
   <block id="d574c271d37aff5dfc97b6ecd338458f" category="doc">完成還原與更換程序AFF -還原A700s</block>
   <block id="1a3890308672bc09a82a2b01bfd856b6" category="list-text">重新安裝系統正面的擋板。</block>
   <block id="1790a5691629705d1dfd90934b6c5f4d" category="doc">叢集組態工作表- AFF Se A700s</block>
-  <block id="29bd1f640adeeec5f2bc6e197d0840c4" category="paragraph"><block ref="29bd1f640adeeec5f2bc6e197d0840c4" category="inline-link-macro-rx"></block></block>
   <block id="ee5ff73969a958477db471cca8246c98" category="doc">關閉控制器AFF -現象A700s</block>
   <block id="883c91c37ee151a81d34d6105afae5ea" category="summary">如果您的系統需要將NS224磁碟機櫃纜線當作交換器附加儲存設備（非直接附加儲存設備）、請使用所提供的資訊。</block>
   <block id="e8f8b2e7fe84a76416bedc8340d89ea1" category="doc">纜線櫃作為交換器附加儲存設備- NS224磁碟櫃</block>
@@ -3205,7 +3203,6 @@
   <block id="8f2c083353ba46faa1f5bfb6d1740753" category="doc">開機恢復映像- FAS8200</block>
   <block id="b6c33850022ae87ff1d2d111469a0da5" category="paragraph">：您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。</block>
   <block id="e7d6ca5a4598f4102e93853e3167db4f" category="doc">叢集組態工作表- FAS8200</block>
-  <block id="47172f1226f9908865e044955d2f091b" category="paragraph">您可以使用 <block ref="cb0390cbe2f3cf678134885ff143b6ba" category="inline-link-macro-rx"></block> 收集並記錄您在設定ONTAP 叢集時所需的站台專屬IP位址和其他資訊。</block>
   <block id="52a61ff1e81c104a11ce1a58a38dd667" category="doc">關閉控制器- FAS8200</block>
   <block id="b6ea0c6054b7f5b7832dafbb8468dc0f" category="paragraph">接管或停止受損的控制器：</block>
   <block id="4571f480b4cb6246b64d91e6cacdf34c" category="list-text">對於HA配對、請從健全的控制器接管受損的控制器：「儲存容錯移轉接管-節點_受損節點_節點名稱_」</block>
@@ -8114,7 +8111,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="887f19a9ed16e42d506a7ee90031e54f" category="image-alt">如何安裝兩柱嵌入式安裝軌道套件</block>
   <block id="664a1b1220265a449d182e15fb02318f" category="inline-image-macro">寬度 =200px</block>
   <block id="ba54bcf2001d79bb8625529fa7f35e9f" category="inline-image-macro">寬度 =50px</block>
-  <block id="53c210c2168561d49ec663ddcdb6d39e" category="sidebar">A1K I/O 模組</block>
   <block id="37e0009e8f9c1c6982a732432e86d180" category="sidebar">AFF A70 和 AFF A90 I/O 模組</block>
   <block id="c079075c23cce6316cdc21e35ca264ec" category="sidebar">更換 NS224 磁碟機櫃</block>
   <block id="2ebb7b9dab34661ab53f47e149c49c5c" category="sidebar">更換 SAS 磁碟機櫃</block>
@@ -9514,7 +9510,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="34ae4f1779c2db0223377cbefc6262df" category="image-alt">NS224 ，含 NSM100b 舉升注意事項</block>
   <block id="2ef800dd74cfc13c160b4dd543b29cf0" category="inline-link-macro">準備安裝</block>
   <block id="fc712710d97303ab15c75bfdc03fe7fc" category="paragraph">檢閱儲存系統的安裝需求與考量之後<block ref="ed6b9a70f700f93dff5a00181f615d05" category="inline-link-macro-rx"></block>，您就可以了。</block>
-  <block id="b33de9966d9d43b710f08c7404d97657" category="paragraph">當有可用插槽或所有插槽均已完全插滿時，您可以將 I/O 模組新增至 AFF A20 ， AFF A30 和 AFF A50 儲存系統。</block>
   <block id="9498413c95fb0b129853a42fc8125eb8" category="paragraph">新增額外的 I/O 模組可改善備援性，有助於確保儲存系統在一個 I/O 模組故障時仍能正常運作。</block>
   <block id="90a8d302e5a2869554fc370c0ce052fb" category="paragraph">更換故障 I/O 模組可將儲存系統還原至其最佳作業狀態。</block>
   <block id="90173eb1ed454afdf58b9269bb20c2b9" category="paragraph">風扇可冷卻控制器和磁碟機。</block>
@@ -11105,44 +11100,18 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d606236dedb6ed649b29651c1ec53a99" category="list-text">/cfcard/kmip/certs/client.crt</block>
   <block id="ccb442c2c2cc4367a087cfc7cd3b4876" category="list-text">/cfcard/kmip/certs/client.key</block>
   <block id="443acc94def30bc037fb2dacac4fb7d3" category="list-text">/cfcard/kmip/certs/CA.pem</block>
-  <block id="741c1531b1b7141f53a0337179c265cf" category="paragraph">將插槽 4 中的替換叢集和 HA I/O 模組聯機，驗證模組連接埠是否已成功初始化，驗證插槽 4 是否已開啟電源，然後驗證模組是否連線並被識別。</block>
-  <block id="75dd7e743b900db3d0f9c02be5b24510" category="list-text">使替換叢集和 HA I/O 模組連線：</block>
-  <block id="028ada948dd464df9426709f6a1d2269" category="paragraph">輸出應確認叢集和 HA I/O 模組已成功上線（啟動、初始化並投入使用）。</block>
-  <block id="c5f5687001a40fd7c2a564fc926869a0" category="list-text">驗證叢集和 HA I/O 模組上的每個連接埠是否已成功初始化：</block>
   <block id="51d4dccbc76a334800d2dac18db18ac2" category="paragraph"><block ref="15404739b2f55b30bb50d467945d6913" prefix="" category="inline-code"></block></block>
-  <block id="7fc275cd9bf1fb166d2fa3b246080895" category="admonition">可能需要幾分鐘的時間才能完成所需的韌體更新和連接埠初始化。</block>
-  <block id="add8e526dd235e5358ff284f9f2bc8ec" category="paragraph">輸出應顯示為群集和 HA I/O 模組上的每個連接埠記錄的 hotplug.init.success EMS 事件，其中包含<block ref="a77c45176de81a2a712de614d83b5001" prefix=" " category="inline-code"></block>在<block ref="b360a7914f2f6f0af030548466ad9b53" prefix=" " category="inline-code"></block>柱子。</block>
-  <block id="2b5e015b293c127fe016c5d1b7fe281f" category="paragraph">例如，以下輸出顯示叢集和 HA I/O 模組連接埠 e4b 和 e4a 的初始化成功：</block>
-  <block id="90516f2e7c3348e8edbeca9d158321bf" category="list-text">驗證 I/O 模組插槽 4 是否已通電並準備好運作：</block>
   <block id="c7c8c33b77320002f156cbc7ce4f5a36" category="paragraph"><block ref="3f548e7ceb0e30f546cba4ae1c7f714b" prefix="" category="inline-code"></block></block>
-  <block id="60a6600287beee5fbd57daa5c0a11886" category="paragraph">輸出應顯示插槽 4 狀態為<block ref="37f91ad1146e82f76425365a497e93de" prefix=" " category="inline-code"></block>因此可以為替換叢集和 HA I/O 模組的運作做好準備。</block>
-  <block id="903ef5c166b48f5fa4db5240652f00c0" category="list-text">驗證替換叢集和 HA I/O 模組是否在線並被識別。</block>
   <block id="642dc810614f1073e44a9cda64db1d61" category="paragraph">從受損控制器的控制台輸入命令：</block>
-  <block id="27483a4be18d5b34b702569372623de0" category="paragraph"><block ref="085eecf0944be6c3e7b42054a780a772" prefix="" category="inline-code"></block></block>
-  <block id="3afb084631cea0d8c44faaf694858ee8" category="paragraph">如果取代叢集和 HA I/O 模組成功連線並被識別，則輸出將顯示插槽 4 的 I/O 模組訊息，包括連接埠資訊。</block>
-  <block id="6c300b46c1c9b487283b130ceb20f09f" category="paragraph">例如，您應該會看到類似以下內容的輸出：</block>
-  <block id="81babc7e54f1031bf7dec56a94310108" category="paragraph">準備儲存系統和 I/O 模組插槽 4，以便可以安全地移除故障叢集和 HA I/O 模組：</block>
-  <block id="b8124b8aa69ba0025e3b8487367c9142" category="list-text">拔掉故障集群和 HA I/O 模組的電纜。</block>
-  <block id="d361e89f4b142674423ad77bdbf0fd0d" category="paragraph">確保標記電纜，以便稍後在此過程中將它們重新連接到相同的連接埠。</block>
   <block id="f8b2336a2bcefa8eae3cc1dd58f2ef1d" category="paragraph"><block ref="4c5e89da35e7d8eb3d4b03256b0e62e0" prefix="" category="inline-code"></block></block>
   <block id="73dc1410bd15a21d2e25a8c2c5bb6654" category="paragraph">例如，以下AutoSupport訊息會抑制自動案例建立兩小時：</block>
   <block id="c2128aedb31aab2e3956fd01cbeed47c" category="paragraph"><block ref="2f7215622e57a8f3f6890685db5d3613" prefix="" category="inline-code"></block></block>
-  <block id="98a7ada8dee442fe8faa866e293fb607" category="list-text">準備移除插槽 4 中的故障叢集和 HA 模組，方法是將其從服務中移除並關閉電源：</block>
   <block id="5ddee439702c3faec4f27c253933b0fe" category="paragraph"><block ref="2bde061eaeb28b0fdc0cb59228784ef6" prefix="" category="inline-code"></block></block>
-  <block id="c5d3a7ea33e518913edcfbd2758e0b62" category="list-text">驗證發生故障的叢集以及插槽 4 中的 HA 模組是否已關閉：</block>
-  <block id="0e39c3862c5814af942ca4592a92eb0c" category="paragraph">輸出應該顯示<block ref="dad62d6cbcf5ade24a9f59bab2c1490a" prefix=" " category="inline-code"></block>在插槽 4 發生故障的模組的狀態列中。</block>
-  <block id="3eb3ec950e8cd06ef38158071b70d5af" category="paragraph">使用等效的 I/O 模組更換插槽 4 中發生故障的叢集和 HA I/O 模組：</block>
-  <block id="7d9e10cd76d275ee60667cf535b77c9b" category="list-text">從受損的控制器中移除發生故障的叢集和 HA I/O 模組：</block>
   <block id="de5f824b61986d563fe94c3a6d945277" category="image-alt">插槽 4 中的熱插拔群集和 HA I/O 模組</block>
   <block id="5ea88ba805bdaacfdce62e862cfa864e" category="paragraph">使用左側的連接埠標籤卡榫和右側的翼形螺絲將 I/O 模組從控制器中拉出。</block>
-  <block id="8ce3f98eef50a008ff61a03fd72831c1" category="list-text">將替換叢集和 HA I/O 模組安裝到插槽 4 中：</block>
   <block id="13059d11e7bee59bf0f77fc68428ae22" category="list-text">輕輕地將 I/O 模組完全推入插槽，確保 I/O 模組正確插入連接器。</block>
   <block id="0545fdd05a2820d65daf71f2452756fa" category="paragraph">您可以使用左側的卡榫和右側的翼形螺絲來推入 I/O 模組。</block>
-  <block id="f1d9d59f3221247635d46002f26d792e" category="list-text">連接集群和 HA I/O 模組。</block>
-  <block id="67a3dceacb980a3235e4014e6621ea08" category="paragraph">透過將儲存交還給運作狀況良好的控制器、恢復自動交還以及重新啟用AutoSupport自動案例創建，將儲存系統恢復正常運作。</block>
-  <block id="d34477bcb0727e01ea15de0ac2bf79d4" category="list-text">透過歸還存儲，使健康控制器（被接管的控制器）恢復正常運作：</block>
   <block id="44c53fcde580cad7366bca382fcbaeb6" category="paragraph"><block ref="0fd480b49039d1e85a0630cb246651f9" prefix="" category="inline-code"></block></block>
-  <block id="901eb4b77142253b3435dd63a61ea035" category="list-text">從受損控制器（接管正常控制器的控制器）的控制台恢復自動交還：</block>
   <block id="79910735f49a20c788785c012ab58feb" category="list-text">適用於 SAS-3 架的 DCM3</block>
   <block id="2bff771ad7bf960d3d5ad1bbefa5194d" category="summary">如果您的AFF A1K系統中的某個元件發生故障，請將故障元件退回給NetApp。</block>
   <block id="eb49d242761a24140778b315a0ea6654" category="doc">將失敗的啟動媒體部分回傳給NetApp - AFF A1K</block>
@@ -11206,27 +11175,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c48758516887cabfc7aa631065bbbf52" category="summary">關閉AFF A20、 AFF A30 或AFF A50 儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="63e126797305c7f8c49721deaec6f6c9" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="3c199c593e067fa1f51f90da936eb18d" category="paragraph">在您的AFF A20、 AFF A30 或AFF A50 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。</block>
-  <block id="6b232c9d9431de2948d224ac1438ed55" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - AFF A20、 AFF A30 和AFF A50</block>
-  <block id="ae0a8348139fa13812ce5b8381566578" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在AFF A20、 AFF A30 或AFF A50 儲存系統中熱插拔該模組。</block>
   <block id="4df4a7f18003a7a352929815909d2724" category="inline-link-macro">更換 I/O 模組程序</block>
-  <block id="6f0bac18353bd75d71f7a421f1c4fd2f" category="list-text">您的儲存系統必須運作ONTAP 9.17.1 或更高版本。</block>
   <block id="c47de950a59748040835adedd3b77af8" category="list-text">您的儲存系統配置必須只有一個位於插槽 4 的叢集和 HA I/O 模組，而不是兩個叢集和 HA I/O 模組。</block>
   <block id="7725f6ef165da5751744a53bfaec7915" category="list-text">您的儲存系統必須是雙節點（無交換器或有交換器）叢集配置。</block>
-  <block id="c16f887b0b90f799bb88880e3ea5a676" category="list-text">叢集和 HA I/O 模組發生故障的控制器（受損控制器）必須已接管正常的配對控制器。如果 I/O 模組發生故障，接管應該會自動進行。</block>
-  <block id="0ba8076cc2688ae9d585f3e99dcb9a30" category="paragraph">對於雙節點集群，儲存系統無法辨別哪個控制器的 I/O 模組發生故障，因此任一控制器都可能啟動接管。只有當 I/O 模組發生故障的控制器（受損控制器）接管了正常的控制器時，才支援叢集和 HA I/O 模組熱插拔過程。</block>
   <block id="f89def9f1f1d555c34df92bcf51e75d4" category="paragraph">您可以輸入以下命令來驗證受損控制器是否成功接管了健康控制器<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>命令。</block>
   <block id="3f822e21ffc331cafa53f56ab3670d6d" category="paragraph">如果您不確定哪個控制器的 I/O 模組出現故障，請聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block> 。</block>
-  <block id="dea1cae6186236142a8821d00fd30127" category="list-text">熱交換叢集和 HA I/O 模組意味著您不必執行手動接管；受損控制器（具有故障叢集和 HA I/O 模組的控制器）已自動接管健康的控制器。</block>
-  <block id="536526103d7987e429d3fa42b6b5d6c4" category="paragraph">當受損控制器接管健康控制器時，不發生中斷而恢復的唯一方法就是熱插拔模組。</block>
-  <block id="5d04a05e7c4341bb0ab0e307d5258258" category="list-text">熱插拔叢集和 HA I/O 模組時，將指令應用到正確的控制器至關重要：</block>
-  <block id="f0e82e7a2343dab9b216c5b80fe26396" category="list-text">_受損控制器_是您正在熱交換叢集和 HA I/O 模組的控制器，它是接管了健康控制器的控制器。</block>
-  <block id="b77e3edae5d77f87bcb2c4471aebceba" category="list-text">_健康控制器_是受損控制器的 HA 夥伴，也是被受損控制器接管的控制器。</block>
   <block id="cfd09206f0a13c5092d1f58dd42e890d" category="summary">AFF A20、 AFF A30 和AFF A50 儲存系統可靈活擴充或更換 I/O 模組，進而增強網路連接性和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
   <block id="8ef45d64afdfdfbe4e19aaf35faa33ff" category="paragraph">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來更換儲存系統中發生故障的 I/O 模組。當儲存系統符合特定要求時，您可以熱插拔叢集和 HA I/O 模組。您也可以將 I/O 模組新增至具有可用插槽的儲存系統。</block>
-  <block id="05c8d2e17b691ebb9e570097babd4b3f" category="inline-link-macro">熱插拔集群和 HA I/O 模組</block>
-  <block id="f34320fb440d129decb61de6359de310" category="list-text"><block ref="f34320fb440d129decb61de6359de310" category="inline-link-macro-rx"></block></block>
-  <block id="bf4c1f1ee42899f4604e32cb234dd518" category="paragraph">熱插拔故障叢集和 HA I/O 模組可以將儲存系統恢復到最佳運作狀態。熱插拔無需手動接管受損控制器。</block>
-  <block id="7311633317f2259d1de3c7e5774dd308" category="paragraph">若要使用此流程，您的儲存系統必須執行ONTAP 9.17.1 或更高版本，並且符合特定的儲存系統要求。</block>
   <block id="81e3c082eff02c485b0295e28136b279" category="paragraph">當AFF A20、 AFF A30 或AFF A50 儲存系統中的 I/O 模組發生故障或需要升級以支援更高效能或其他功能時，請更換此模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。</block>
   <block id="877d9e5cae60ee4322b8a76ed1502397" category="doc">維護程序概述 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="9371c931f382583c22141a6466950205" category="paragraph">維護AFF A20、 AFF A30 或AFF A50 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
@@ -11260,11 +11215,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d55169feb27a15b4ac62b82359989d13" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF A70和AFF A90</block>
   <block id="2e4843ddf40683ca1c00244d80d3270c" category="paragraph">在更換ASA A70 或ASA A90 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。</block>
   <block id="957a8300cdf9b41cbbe3e3e196ad4dbb" category="paragraph">在更換ASA A1K 系統中的啟動介質之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。</block>
-  <block id="ca6ff5e2a18f563b4e6acadc68d46f64" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - ASA A20、 ASA A30 和ASA A50</block>
-  <block id="6f5a8e68f677f939bbd426fa307f6c3c" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在ASA A20、 ASA A30 或ASA A50 儲存系統中熱插拔該模組。</block>
   <block id="7cfc66ffab0e5dcaf35aec6c1f45c0e4" category="paragraph">若要使用此流程，您的儲存系統必須執行ONTAP 9.17.1 或更高版本，並且符合特定的系統要求。</block>
-  <block id="7e204d8c50c3b311f5f084b18f60fe42" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - ASA C30</block>
-  <block id="ae9ac95e753aa6e11b1f186d2894bfbe" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在ASA C30 儲存系統中熱插拔該模組。</block>
   <block id="7e40ba54f9478efaeb9f51563cb1f923" category="paragraph">ASA C30 儲存系統可靈活擴充或更換 I/O 模組，進而增強網路連線和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
   <block id="54d490a5d6fa1e1e563c715d1658d4c2" category="doc">將失敗的啟動媒體部分回傳給NetApp - AFF C30 和AFF C60</block>
   <block id="e4fd04a4bd5ca71d2941edf4b47e1b10" category="paragraph">如果您的AFF C30 或AFF C60 儲存系統中的某個元件發生故障，請將故障元件退回給NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以獲取更多資訊。</block>
@@ -11289,8 +11240,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7976355e51dac60c58e55293f936de38" category="doc">關閉控制器以進行自動啟動媒體恢復 - AFF C30 和AFF C60</block>
   <block id="f8285106d469d3b0c42b570cd2305d2f" category="summary">關閉AFF C30 或AFF C60 儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="66459e7abffb3c94a92d570450f1c4f2" category="doc">關閉控制器以進行手動啟動媒體恢復 - AFF C30 和AFF C60</block>
-  <block id="1b0c016612713903a3c497b1aba4bbe6" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - AFF C30 和AFF C60</block>
-  <block id="257a07574b8e17c7ad551a78350bbfb1" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在AFF C30 或AFF C60 儲存系統中熱插拔該模組。</block>
   <block id="ac8f3969a316894b12e15fbd022b3e6b" category="summary">AFF C30 和AFF C60 儲存系統可靈活擴充或更換 I/O 模組，進而增強網路連接性和效能。在升級網路功能或處理故障模組時，添加、熱插拔或更換 I/O 模組至關重要。</block>
   <block id="73cacf52c7ab30fc7a47a1633dbe49f5" category="paragraph">維護AFF C30 或AFF C60 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
   <block id="466d1cf6baca603bba771ae5236812f6" category="paragraph">本節中的程序假定AFF C30 或AFF C60 儲存系統已部署為ONTAP環境中的儲存節點。</block>
@@ -11378,8 +11327,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b2293480756f9ad39fc82ed5d46ca4d3" category="doc">關閉控制器以進行自動啟動媒體恢復 - FAS50</block>
   <block id="999a50283687ab52206373131390978e" category="summary">關閉 FAS50 儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。</block>
   <block id="95f11137222c4d00467bd8e0ffa768dd" category="doc">關閉控制器以進行手動啟動媒體恢復 - FAS50</block>
-  <block id="5b013473b3a0ecde061a431e92574ae9" category="doc">熱插拔用於叢集和 HA 流量的 I/O 模組 - FAS50</block>
-  <block id="6cae912dff84ae6240c315ddaaf28349" category="paragraph">叢集和 HA I/O 模組支援叢集和高可用性互連。當模組發生故障且您的儲存系統符合特定要求時，您可以在 FAS50 儲存系統中熱插拔該模組。</block>
   <block id="50021c9aa8d3585a4c703c3363cab114" category="paragraph">維護 FAS50 儲存系統的硬件，以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
   <block id="8eba03c70758101e68e6391b4be43740" category="paragraph">維護過程假定 FAS50 儲存系統已部署為ONTAP環境中的儲存節點。</block>
   <block id="49be3e0ad5188b850535280e2d521d5f" category="doc">冷更換架 - DS212C、DS224C 和 DS460C</block>
@@ -11510,7 +11457,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fa71ed5381e38f2d01282cdf058709c9" category="doc">更換風扇模組 - DS460C</block>
   <block id="7b9a6fdb87cb1f6f211f41d044f49a11" category="sidebar">ASA A1K 啟動介質自動化</block>
   <block id="0353c4306baefb0104fdbd22f3a83fd7" category="sidebar">啟動媒體 - 手動恢復</block>
-  <block id="08b63ec985583f10ecad76916f072d7b" category="sidebar">熱插拔集群/HA模組</block>
   <block id="f838e5a09ddd1d5f9eea197d4648da7c" category="sidebar">DS212C、DS224C 或 DS460C 機架安裝和佈線</block>
   <block id="4db3443ca8b7e077da6fda74143b5d12" category="sidebar">多路徑 HA</block>
   <block id="98a06331c5019fee7c2bec76b5d289fb" category="sidebar">四路徑 HA</block>
@@ -11518,21 +11464,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="445dfd5b6a6cefa8cddbd35f02b84b3f" category="list-text">驗證受損控制器上的 e0M（扳手）連接埠是否已連接且沒有故障。</block>
   <block id="28ee83acca422d1018aa8c24fc45a4ae" category="paragraph">e0M 連接埠用於在自動啟動復原過程中在兩個控制器之間進行通訊。</block>
   <block id="6dcd1ebf4390170868ab9bcdfd967581" category="list-text">輸入以下命令：</block>
-  <block id="44a1542818eb6c662eb3c490c43da379" category="paragraph"><block ref="429cc3d1d3dd3682974d006c02080d7a" prefix="" category="inline-code"></block></block>
   <block id="fafdccda6cda9f9e3734c54d6282a4a7" category="list-text">進入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>當您看到提示“您想繼續嗎？”</block>
   <block id="e2d52ada26e40deccc8c184926b380b3" category="paragraph">例如，以下命令使節點 2（受損控制器）上的插槽 4 聯機，並顯示該程序成功的訊息：</block>
   <block id="e1e4c5a78e939d1c395d29fa29b00a6d" category="list-text">停用自動交還：</block>
   <block id="8a0b41604f08531e25cac74cbed555ce" category="list-text">從受損控制器的控制台輸入以下命令：</block>
   <block id="c839598e8cd5c29bde6c617cf440daeb" category="list-text">進入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>當您看到提示「您是否要停用自動回饋？」時</block>
   <block id="b17710a831db85286b790ec982422585" category="list-text">進入<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block>當您看到提示“您想繼續嗎？”</block>
-  <block id="b3a29894ebbd7743077b200ddcd67c99" category="paragraph">例如，以下命令準備移除節點 2（受損控制器）上插槽 4 中的模組，並顯示可以安全移除的訊息：</block>
-  <block id="3a06445388ea9f45380e61bdcd8e390a" category="admonition">如果您的儲存系統不符合所有要求，則必須使用<block ref="9f7a817607c1343a4577e0eb53bffb0f" category="inline-link-macro-rx"></block>。</block>
-  <block id="d5289a7c7a439993123bceae28506164" category="list-text">發生故障的 I/O 模組必須是插槽 4 中的叢集和 HA I/O 模組，並且必須將其替換為等效的叢集和 HA I/O 模組。您無法變更 I/O 模組類型。</block>
-  <block id="8a1240d7278991deb34efd819884bfe7" category="paragraph">要熱插拔模組，您需要確保您的儲存系統符合程式要求，準備好插槽 4 中的儲存系統和 I/O 模組，將故障模組熱插拔為等效模組，使替換模組聯機，將儲存系統恢復正常運行，然後將故障模組傳回NetApp。</block>
   <block id="0ce7a3dae2c87181c761986e783eb102" category="section-title">步驟 1：確保儲存系統符合程序要求</block>
-  <block id="7da2c8847c1955b0494341a440d20a1b" category="section-title">步驟 2：準備儲存系統和 I/O 模組插槽 4</block>
-  <block id="1826a677aeed73d2d1ad12227f635ea5" category="section-title">步驟 3：更換故障的叢集和 HA I/O 模組</block>
-  <block id="ef52935218329fe4c276c834a767e2b0" category="section-title">步驟 4：使替換叢集和 HA I/O 模組聯機</block>
   <block id="aa6f3f8c8fe8c3ee1076fbae1b862c0f" category="section-title">步驟 5：恢復儲存系統正常運作</block>
   <block id="4494f67d47bd95840cfaf71f7427c5d9" category="doc">I/O 模組維護概述 - AFF A20、 AFF A30 和AFF A50</block>
   <block id="96c5fffbd9befb3a2893a3e1abf894c4" category="doc">I/O 模組維護概述 - ASA A20、 ASA A30 和ASA A50</block>
@@ -11578,7 +11516,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e55cf153efde1bb25a6c8b4b2a77e3a3" category="paragraph">聯絡技術支援<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要 RMA 號碼或更換程式的額外協助。</block>
   <block id="d598f43c29dbfb57d8a433d03113c67f" category="paragraph">如何更換磁碟取決於磁碟機的使用方式。如果啟用了 SED 身份驗證，則必須使用<block ref="fc87e4868a863f484cb32d2391c4aa0d" category="inline-link-rx"></block>。這些說明描述了更換 SED 之前和之後必須執行的附加步驟。</block>
   <block id="eb03cbc9aa8eb5663aa471a07b6db216" category="list-text">確保您的平台支援替換的驅動器。看<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
-  <block id="fddb24d381975e775beadef5c508bb6a" category="paragraph">若要使用此流程，請確保您的儲存系統符合所有要求。</block>
   <block id="28c97d58702fb49d4aa748d2804f3821" category="paragraph">更換 RTC 電池、插入控制器並開啟電源進行第一次 BIOS 重設後，您將看到以下錯誤訊息：</block>
   <block id="2f34e43a31489ab6aae443176e8154f6" category="paragraph"><block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix="" category="inline-code"></block></block>
   <block id="fbd1b3bb67ce5ea92711c37024536ea7" category="paragraph"><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix="" category="inline-code"></block></block>
@@ -14576,4 +14513,161 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bda7991538d7df6f87277c8872fcbf32" category="paragraph">若要更換啟動介質，必須拆下損壞的控制器模組，安裝新的啟動介質，並將啟動映像傳輸到 USB 隨身碟。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
   <block id="8f1c79a411c0d8e59d3c43c509193d4e" category="summary">您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。FAS9000系統僅支援手動啟動媒體復原程序。</block>
   <block id="e03f71d6f85378a6ef0de5701ebfafaa" category="paragraph">使用適合您配置的相應程式關閉或接管故障控制器。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。</block>
+  <block id="92c3d0eeef0b14186c9d2b60db1a38ea" category="paragraph">將故障的 I/O 模組熱插拔為同等功能的 I/O 模組。</block>
+  <block id="b1cd69e899e8ab2e8b0c559899a3f2d7" category="admonition">下圖展示如何拆卸水平和垂直 I/O 模組。通常情況下，您只需拆卸一個 I/O 模組。</block>
+  <block id="c8fee166e38fdcf210f4a5953bba23d2" category="paragraph">記錄 I/O 模組所在的插槽。</block>
+  <block id="e863eb216f0c445ea096112450f87069" category="paragraph">以同等規格的 I/O 模組取代故障的 I/O 模組。</block>
+  <block id="d06d238c8545434f8e901c40d37b7acc" category="list-text">在電纜上貼上標籤以識別其來源，然後從目標 I/O 模組拔下所有電纜。</block>
+  <block id="b5dc745adc4ec803a657d299074a0b73" category="paragraph">將替換的 I/O 模組上線、驗證 I/O 模組連接埠是否成功初始化、驗證插槽是否已開啟電源，然後驗證 I/O 模組是否已上線並被識別。</block>
+  <block id="b97c90d5851db49bfd529d77dde54a42" category="paragraph">更換 I/O 模組後，連接埠恢復正常狀態，LIF 將恢復到已更換的 I/O 模組。</block>
+  <block id="5fb8361b11082c32a39f9ccba85217c6" category="list-text">將替換的 I/O 模組上線：</block>
+  <block id="32ef31142091e9893b42b113e187d286" category="paragraph"><block ref="8f2268f072c9f1f467218ea386202c13" prefix="" category="inline-code"></block></block>
+  <block id="39ef5efb5abfa297d5024ba30ddb854a" category="paragraph">輸出結果應確認 I/O 模組已成功上線（已通電、已初始化、已投入使用）。</block>
+  <block id="7cf2db672dbe2cfccd751b1b76e80673" category="list-text">驗證 I/O 模組上的每個連接埠是否已成功初始化：</block>
+  <block id="13cbeb83cdb5e55063e258a8f074812e" category="admonition">任何所需的韌體更新和連接埠初始化可能需要幾分鐘的時間。</block>
+  <block id="d6b9ca1a68ce59da22d45dd2c212a14a" category="paragraph">輸出應顯示一個或多個 hotplug.init.success EMS 事件，表示 I/O 模組上的每個連接埠均已成功啟動。</block>
+  <block id="36a4e7cf9347fe709f837485b0fe3614" category="paragraph">例如，以下輸出顯示 I/O 連接埠 e4b 和 e4a 的初始化成功：</block>
+  <block id="84d122f6394eac3196e477c2b378f536" category="list-text">如果連接埠初始化失敗、請檢閱 EMS 記錄以瞭解後續步驟。</block>
+  <block id="12aca5bb3e942078171086ccba64607a" category="list-text">確認 I/O 模組插槽已通電並準備好運作：</block>
+  <block id="50817bf1664ab369761dba7ff64608c2" category="paragraph">輸出應顯示插槽狀態為<block ref="37f91ad1146e82f76425365a497e93de" prefix=" " category="inline-code"></block>，因此 I/O 模組可以運作。</block>
+  <block id="054ef2f4d58558c29e16b56d1d7f7f6a" category="list-text">確認 I/O 模組已上線並已識別。</block>
+  <block id="4010fa0125b842dbee19fbe6e32efc41" category="paragraph"><block ref="da53410ab6999f0ac6616047721dd701" prefix="" category="inline-code"></block></block>
+  <block id="c7352d7c4a4e413f74f39c71b17980aa" category="paragraph">如果 I/O 模組成功上線並被識別，則輸出會顯示 I/O 模組資訊，包括插槽的連接埠資訊。</block>
+  <block id="32a2ad5d2c5c5cdf63e82ff875c07414" category="paragraph">例如，對於插槽 4 中的 I/O 模組，您應該會看到類似以下的輸出：</block>
+  <block id="3259035c82fe6b2266b47703217fb119" category="paragraph">準備好儲存系統和 I/O 模組插槽，以便安全地移除故障的 I/O 模組：</block>
+  <block id="bd3e523ec9b37c0b2fcf7c50d9cc43d1" category="list-text">從故障的 I/O 模組拔下纜線。</block>
+  <block id="5e327bc0f3b4ab297c024ab132271311" category="paragraph">請務必為纜線貼上標籤，以便稍後在此程序中將其重新連接至相同的連接埠。</block>
+  <block id="4d9b3f592c4056ac05a481faa114b24f" category="paragraph">I/O 模組應該發生故障（連接埠應該處於鏈路關閉狀態）；但是，如果鏈路仍然處於連接狀態，並且包含最後一個正常運作的叢集連接埠，則拔下纜線會觸發自動接管。</block>
+  <block id="488862f26ac2d210784b07ebe2016f5f" category="paragraph">拔下纜線後請等待五分鐘,以確保任何接管或 LIF 容錯移轉完成後,再繼續執行此程序。</block>
+  <block id="06a7562e119387d13d79697d7ae2e61c" category="list-text">根據儲存系統執行的 ONTAP 版本和控制器狀態，視需要停用自動恢復：</block>
+  <block id="7a73acb906bdbbc95a7b72df2c6b689e" category="paragraph">9.17.1 或 9.18.1RC</block>
+  <block id="23e6e22a32e7cb2a5dd2bd26345c958a" category="paragraph">如果受損的控制器自動接管了健康的控制器</block>
+  <block id="b8f94bb7875a310fa55dd7dd8e7bfeba" category="list-text">從受損控制器的主控台輸入下列命令</block>
+  <block id="764fdceb807a3cfc8c4d404024c1cf3e" category="paragraph">9.18.1GA 或更新版本</block>
+  <block id="1b9bbeb94aeb8882d9e95539bc7e5c6c" category="paragraph">如果其中一方控制器自動接管了其合作夥伴控制器</block>
+  <block id="3c1491ec457a6c7854495c9d756c4174" category="list-text">在接管其合作夥伴的控制器主控台中輸入下列命令：</block>
+  <block id="09d341bb3270a8eebee8ef76a7bf791f" category="paragraph">兩個控制器均已啟動並運行 I/O （提供資料服務）</block>
+  <block id="eca8e62853af19bf2289598a8584e52f" category="list-text">準備移除故障的 I/O 模組，方法是將其從服務中移除並關閉電源：</block>
+  <block id="f5849184f813348a85355af1ce6ffdde" category="paragraph">例如，以下命令準備移除節點 2（受損控制器）上插槽 4 中的故障模組，並顯示一則訊息，表示可以安全移除：</block>
+  <block id="042e1e3a8511b8be1cabcfd29931814d" category="list-text">確認故障的 I/O 模組已關閉電源：</block>
+  <block id="c34e076864cdaee933770fc1be601ca4" category="paragraph">輸出結果應在故障模組及其插槽編號的<block ref="723762465df41480d1199b3a0f7b2674" prefix=" " category="inline-code"></block>欄位中顯示<block ref="dad62d6cbcf5ade24a9f59bab2c1490a" prefix=" " category="inline-code"></block>。</block>
+  <block id="cc9bc9fd5fd85d22f65c381bd64328ec" category="paragraph">若要使用此程序，您的儲存系統必須執行 ONTAP 9.17.1 或更新版本，且您的儲存系統必須符合儲存系統所執行 ONTAP 版本的所有要求。</block>
+  <block id="b1d699d566d9a2f3a864fcf05fe74c9f" category="admonition">如果您的儲存系統未執行 ONTAP 9.17.1 或更新版本、或不符合儲存系統所執行 ONTAP 版本的所有需求、則無法使用此程序、您必須使用 <block ref="9f7a817607c1343a4577e0eb53bffb0f" category="inline-link-macro-rx"></block>。</block>
+  <block id="8bdf2ab07d8d8cd3f5237fb90c9e340e" category="open-title">ONTAP 9.17.1 或 9.18.1RC</block>
+  <block id="bdb62a3f8178d9f563b6f584a06f8b6a" category="list-text">您正在熱插拔插槽 4 中發生故障的叢集和 HA I/O 模組，更換為等效的 I/O 模組。您無法變更 I/O 模組類型。</block>
+  <block id="6af6222ef1dbbf2f48d5e92a60c07248" category="list-text">具有故障叢集和 HA I/O 模組的控制器（受損控制器）必須已接管正常的合作夥伴控制器。如果 I/O 模組發生故障，接管應該會自動進行。</block>
+  <block id="0c69be990f8240fba55bc1b9b82d171b" category="paragraph">對於雙節點叢集，儲存系統無法區分哪個控制器的 I/O 模組故障，因此任一控制器都可能啟動接管。只有當具有故障 I/O 模組的控制器（受損控制器）接管正常控制器時，才支援熱插拔。熱插拔 I/O 模組是在不中斷的情況下進行還原的唯一方法。</block>
+  <block id="123f02f9538b2fc159c78abd1e853311" category="open-title">ONTAP 9.18.1GA 或更新版本</block>
+  <block id="5ff24fb889b8b546af9f904ee1b2c9e7" category="list-text">您正在對任意插槽中的乙太網路 I/O 模組進行熱插拔，該插槽可以包含用於叢集、HA 和用戶端的任意連接埠組合，並且需要使用功能相同的 I/O 模組。您無法變更 I/O 模組類型。</block>
+  <block id="3d95a5e5b3ebce5383a2ec54256917d1" category="paragraph">乙太網路 I/O 模組，其連接埠用於儲存或 MetroCluster 不支援熱插拔。</block>
+  <block id="388b5278a420d4e26d757ea05d290c39" category="list-text">您的儲存系統（無交換器或有交換器叢集組態）可以有任何數量的節點，以供您的儲存系統支援。</block>
+  <block id="57a22d85e4295f602bb52b798c0bc17e" category="list-text">叢集中的所有節點都必須執行相同的 ONTAP 版本（ONTAP 9.18.1GA 或更新版本），或執行相同 ONTAP 版本的不同修補程式層級。</block>
+  <block id="97aafdbe69604d2ca91a2944df0f33cb" category="paragraph">如果叢集中的節點執行不同的 ONTAP 版本，則該叢集被視為混合版本叢集，不支援熱插拔 I/O 模組。</block>
+  <block id="ef59e0c8d4ebf3c446d8584ff368c7ad" category="list-text">儲存系統中的控制器可能處於下列其中一種狀態：</block>
+  <block id="d49761189d944ddcf4681d70a8b961d5" category="list-text">兩個控制器都可以啟動並執行 I/O（提供資料）。</block>
+  <block id="417ba3c087e82af38fb73fa14c37bebd" category="list-text">如果接管是由故障的 I/O 模組引起的，且控制器在其他方面運作正常，則任一控制器都可以處於接管狀態。</block>
+  <block id="2a70609cc120eb294fe3adcbaed17c21" category="paragraph">在某些情況下，ONTAP 可以因為 I/O 模組故障而自動接管任一控制器。例如，如果故障的 I/O 模組包含所有叢集連接埠（該控制器上的所有叢集連結都中斷），ONTAP 會自動執行接管。</block>
+  <block id="c665d0e5559dc1402b410a432775a005" category="paragraph">將故障的 I/O 模組熱插拔為等效的 I/O 模組：</block>
+  <block id="f082af9e632b55a0589035b8597ac906" category="list-text">從受損的控制器中移除故障的 I/O 模組：</block>
+  <block id="317649ae19f8171b38046b4e44a625e8" category="list-text">安裝替換的 I/O 模組：</block>
+  <block id="cf3097a2cae6846825e5732d2389fba6" category="list-text">將替換的 I/O 模組接上纜線。</block>
+  <block id="cd704b8e280548a2de41978a9946d328" category="paragraph">將儲存空間恢復到正常運作狀態，方法是：將儲存空間恢復給被接管的控制器（根據需要）、恢復自動恢復功能（根據需要）、驗證 LIF 是否在其主連接埠上，並重新啟用 AutoSupport 自動建立案例功能。</block>
+  <block id="0a3db2ac25fde064ed01d876128fce0d" category="list-text">根據儲存系統執行的 ONTAP 版本和控制器狀態，視需要歸還儲存設備並還原被接管控制器的自動歸還功能：</block>
+  <block id="c0e70dc2d7599946863b5394e586c12a" category="list-text">透過恢復儲存設備，使健全的控制器恢復正常運作：</block>
+  <block id="9a826ffbfcfd0695c85a97de1f2b2631" category="list-text">從受損控制器的主控台還原自動恢復：</block>
+  <block id="d0c70ad4ff7f77bb93e3b22b66b4b2c7" category="list-text">透過歸還儲存設備，使被接管的控制器恢復正常運作：</block>
+  <block id="5a0036f0d52da33db07b544db5563aa7" category="paragraph"><block ref="1dbf08337957828ee3b1ba7aa60c0850" prefix="" category="inline-code"></block></block>
+  <block id="ef32941cdbd5503eb91c301391fa4b6e" category="list-text">從被接管的控制器主控台還原自動恢復：</block>
+  <block id="2db9a4182f0b1bd864ed45ef022debbd" category="paragraph">例如，以下命令將節點 2 （故障控制器）上的插槽 7 聯機，並顯示一則訊息，表示該程序已成功：</block>
+  <block id="d99d43ddf7ba47bc1a735230b4c93747" category="paragraph">輸出應顯示一個或多個 hotplug.init.success EMS 事件，並在<block ref="b360a7914f2f6f0af030548466ad9b53" prefix=" " category="inline-code"></block>欄位中顯示<block ref="a77c45176de81a2a712de614d83b5001" prefix=" " category="inline-code"></block>，表示 I/O 模組上的每個連接埠已成功初始化。</block>
+  <block id="a776a020487a45d69d4a055d17d40c70" category="paragraph">例如，以下輸出顯示 I/O 連接埠 e7b 和 e7a 的初始化成功：</block>
+  <block id="5a6fb8e4b72329ef2e5dd08246ff3bf8" category="paragraph">例如，對於插槽 7 中的 I/O 模組，您應該會看到類似以下的輸出：</block>
+  <block id="bcc359afb8647bf9c92cc08c9289a411" category="list-text">如果合作夥伴節點已接管，則停用自動返還功能：</block>
+  <block id="679927d7f80ef95d3cfc699aa3fa56a9" category="paragraph">例如，以下命令準備移除節點 2（受損控制器）上插槽 7 中的故障模組，並顯示一則訊息，表示可以安全移除：</block>
+  <block id="530f847ae6ca3ed8ff37394cf2e72c39" category="paragraph">若要使用此程序，您的儲存系統必須執行 ONTAP 9.18.1 GA 或更新版本，且您的儲存系統必須符合所有要求。</block>
+  <block id="33b5ec919545122f289dab72fa923ef7" category="admonition">如果您的儲存系統運作的不是 ONTAP 9.18.1 GA 或更高版本，則無法使用此程序，您必須使用 <block ref="9f7a817607c1343a4577e0eb53bffb0f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ab23b1c23b8f89148b973514c78dd2d2" category="list-text">如果接管是由故障的 I/O 模組引起的，且節點在其他方面運作正常，則任一控制器都可以處於接管狀態。</block>
+  <block id="69b45bddef61f17a4f92d36289feb827" category="list-text">驗證邏輯介面是否正在向其主節點和連接埠報告：<block ref="f8a58a872dbff91c3ae7076526ddf81a" prefix=" " category="inline-code"></block></block>
+  <block id="1281f2ef9c0870a84e599462edb7f0d2" category="summary">如果 AFF A1K 儲存系統中的乙太網路 I/O 模組發生故障，您可以熱插拔該模組，前提是您的儲存系統符合所有 ONTAP 版本要求。</block>
+  <block id="3af0886ff9301c92cedd11d42bfbd245" category="doc">熱插拔 I/O 模組 - AFF A1K</block>
+  <block id="417c10271d58147d5c0838c42384902b" category="paragraph">要熱插拔 I/O 模組，請確保您的儲存系統運行的是 ONTAP 9.18.1 GA 或更高版本，準備好您的儲存系統和 I/O 模組，熱插拔故障模組，使替換模組聯機，將儲存系統恢復正常運行，然後將故障模組退回 NetApp。</block>
+  <block id="bea17a6a87ffc871a3bd8224cafbe282" category="list-text">更換故障的 I/O 模組之前，無需執行手動接管操作。</block>
+  <block id="50d294b2d8d3651fbd9c6ee9fa5e39e6" category="list-text">在熱插拔過程中，將命令套用至正確的控制器和 I/O 插槽：</block>
+  <block id="2ae3bf4589ae61f12767eec59debd68c" category="list-text">_受損控制器_ 是指您要更換 I/O 模組的控制器。</block>
+  <block id="1aae00d6a5f635afc84776fe5acf5998" category="list-text">您可以開啟儲存系統位置（藍色）LED 指示燈，以便於快速定位受影響的儲存系統。使用 SSH 登入 BMC 並輸入<block ref="748a449bca03582c103ee6b7bcd4a969" prefix=" " category="inline-code"></block>命令。</block>
+  <block id="df9179677fb655e8d6e7889a56adadf9" category="paragraph">此儲存系統包含三個位置 LED：一個位於操作員顯示面板上，另外兩個分別位於兩個控制器上。LED 會持續亮起 30 分鐘。</block>
+  <block id="551a9e90cdd1b71fd6c08323acc30ed0" category="section-title">步驟 2：準備儲存系統和 I/O 模組插槽</block>
+  <block id="12643bd90329adbf9e20e7f8cebc0f8a" category="section-title">步驟 3：熱插拔故障的 I/O 模組</block>
+  <block id="553da4fde236835d7f19368df8127568" category="section-title">步驟 4：將替換的 I/O 模組上線</block>
+  <block id="b54482e18823d3ad4906ba8d522a304d" category="inline-link-macro">熱插拔 I/O 模組</block>
+  <block id="dac02c86959c488952e3a497724c2435" category="list-text"><block ref="dac02c86959c488952e3a497724c2435" category="inline-link-macro-rx"></block></block>
+  <block id="bb65953277d3ef143dc83b8e7ca1c846" category="paragraph">熱插拔 I/O 模組可讓您在不關閉系統的情況下更換故障模組，從而最大限度地減少停機時間並保持系統可用性。</block>
+  <block id="8ea24ceb5f865a5d1d2eb709a6882efc" category="paragraph">新增程序包括關閉一個控制器、新增 I/O 模組、重新啟動控制器、關閉另一個控制器、新增 I/O 模組，以及重新啟動控制器。</block>
+  <block id="a7856cf9712776c70d68ada1f0bb3511" category="list-text">當有可用插槽或所有插槽都已滿時，您可以將 I/O 模組新增至儲存系統。</block>
+  <block id="e92270e0981f2b30fa7c69ce34348d73" category="summary">如果 AFF A20、AFF A30 或 AFF A50 儲存系統中的某個乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="944ea7c4dae54081fc5f08dfdb499175" category="doc">熱插拔 I/O 模組 - AFF A20、AFF A30 和 AFF A50</block>
+  <block id="30f7803fb4f157daf81f5cfc7d0c4c02" category="paragraph">要熱插拔 I/O 模組，請確保您的儲存系統符合 ONTAP 版本要求，準備好您的儲存系統和 I/O 模組，熱插拔故障模組，將取代模組上線，將儲存系統恢復正常運作，並將故障模組退回 NetApp。</block>
+  <block id="12f7fd7e591df061102546cbc74eca8d" category="list-text">熱插拔 I/O 模組意味著在更換故障的 I/O 模組之前，無需執行手動接管操作。</block>
+  <block id="49389a2283ff8c5aa44fa2c6ca0ac7d4" category="list-text">熱插拔 I/O 模組時，請將命令套用至正確的控制器和 I/O 插槽：</block>
+  <block id="109ad10a89a24f68db6c219d48863fcb" category="list-text">_受損的控制器_ 是指您正在熱插拔 I/O 模組的控制器。</block>
+  <block id="7fcad6643b97b6ebe3a40f38ab48e5c8" category="paragraph">您可以新增 I/O 模組來提高備援能力，協助確保即使某個 I/O 模組故障，儲存系統仍能繼續運作。當有可用插槽或所有插槽都已滿時，您可以新增 I/O 模組。</block>
+  <block id="21bba362cddf160bb9aa46cc61548a44" category="inline-link-macro">熱插拔 I/O 模組</block>
+  <block id="93e1e4f8f9318938380c22619315bb8c" category="list-text"><block ref="93e1e4f8f9318938380c22619315bb8c" category="inline-link-macro-rx"></block></block>
+  <block id="61ab2f6fe01d01bce4a87e48be1493c1" category="paragraph">您可以熱插拔某些 I/O 模組，將其更換為等效的 I/O 模組，以使儲存系統恢復到最佳運作狀態。熱插拔無需執行手動接管。</block>
+  <block id="ae89dd56e08246659e7955d44c92b9b6" category="paragraph">若要使用此程序，您的儲存系統必須執行 ONTAP 9.17.1 或更新版本，並符合系統所執行 ONTAP 版本的特定要求。</block>
+  <block id="8ae7298c03883a8f408cfa1fb9c4fe9c" category="paragraph">您可以更換故障的 I/O 模組，使儲存系統恢復到最佳運作狀態。此程序需要手動接管包含故障 I/O 模組的控制器。</block>
+  <block id="59dd68824341b9d12dc0f67dd0a19dd5" category="paragraph">當您的 AFF A20、AFF A30 或 AFF A50 儲存系統中的 I/O 模組發生故障或需要升級以支援更高的效能或其他功能時，請更換該 I/O 模組。</block>
+  <block id="409d2a0e01863ea7b2af0d1b786d3202" category="paragraph">更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，並將故障零件退回 NetApp。</block>
+  <block id="a3eda5931a9b2fa667e3035a4279b596" category="paragraph">您可以使用<block ref="f25ec35d4d5d6570eef543875b7ce480" category="inline-link-macro-rx"></block>來收集和記錄站台專屬的 IP 位址以及設定 ONTAP 叢集時所需的其他資訊。</block>
+  <block id="f25ec35d4d5d6570eef543875b7ce480" category="paragraph"><block ref="f25ec35d4d5d6570eef543875b7ce480" category="inline-link-macro-rx"></block></block>
+  <block id="bef7447398a4953152c06dad098a3830" category="summary">如果 AFF A70 或 AFF A90 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="339a155aff6966380d8494d3c016f7a3" category="doc">熱插拔 I/O 模組 - AFF A70 和 AFF A90</block>
+  <block id="1461566b8f3aae783d99a66f0df3990d" category="section-title">步驟 3：更換故障的 I/O 模組</block>
+  <block id="b8be2940448923b51c62ceac37101eb3" category="paragraph">若要使用此程序，您的儲存系統必須執行 ONTAP 9.18.1 或更新版本。</block>
+  <block id="5c065eb86f11d025e27522a2e8f5ffab" category="summary">如果 AFF A1K 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="732c16d1d339600ecda893e568d0b4e6" category="doc">熱插拔 I/O 模組 - AFX 1K</block>
+  <block id="ecb1657a93dd53d8703fa4d979bf60bf" category="summary">如果 ASA A70 或 ASA A90 儲存系統中的某個乙太網路 I/O 模組發生故障，並且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="6ae6d79b0037565d0a3ec873779e6fb5" category="doc">熱插拔 I/O 模組 - ASA A70 和 ASA A90</block>
+  <block id="7786e2ae70ae02d3334e57c054000628" category="paragraph">若要使用此程序，您的儲存系統必須執行 ONTAP 9.18.1。</block>
+  <block id="f62687b6556e483223b86d81e6c69cf3" category="summary">如果 ASA A1K 儲存系統中的乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="f3389636fc7088fd282f840758d061b7" category="doc">熱插拔 I/O 模組 - ASA A1K</block>
+  <block id="83ac6a4711c3416ed290046898df82df" category="summary">如果 ASA A20、ASA A30 或 ASA A50 儲存系統中的某個乙太網路 I/O 模組發生故障，並且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="3e25ddbb94c4b798474308099541a9de" category="doc">熱插拔 I/O 模組 - ASA A20、ASA A30 和 ASA A50</block>
+  <block id="8e3cd31e8a235e75e789cfedbe57a095" category="summary">如果 ASA C30 儲存系統中的乙太網路 I/O 模組發生故障，您可以熱插拔該模組，前提是您的儲存系統符合所有 ONTAP 版本要求。</block>
+  <block id="7e34b764fe767bebec3fb4012725ee85" category="doc">熱插拔 I/O 模組 - ASA C30</block>
+  <block id="2e653b1c06ff140c10b0fcd2447299a8" category="summary">如果 AFF C30 或 AFF C60 儲存系統中的某個乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="8c09192e3ad4ada0bd01a56b960e1dcb" category="doc">熱插拔 I/O 模組 - AFF C30 和 AFF C60</block>
+  <block id="6a7de62c378c9220323525ce7cf5a281" category="summary">如果 AFF C80 儲存系統中的乙太網路 I/O 模組發生故障，您可以熱插拔該模組，前提是您的儲存系統符合所有 ONTAP 版本要求。</block>
+  <block id="e3b85d79e73bb87dbed838922d62660c" category="doc">熱插拔 I/O 模組 - AFF C80</block>
+  <block id="685304d38062de21d18a7038128795a4" category="summary">如果 FAS 70 或 FAS 90 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="664befe2be4c4a34e28e2972740054f6" category="doc">熱插拔 I/O 模組 - FAS 70 和 FAS 90</block>
+  <block id="927f315febe4a9dd665018ab50117b02" category="summary">如果 FAS50 儲存系統中的乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，您可以熱插拔該模組。</block>
+  <block id="1493ee21557526916197d1ebb39f8da3" category="doc">熱插拔 I/O 模組 - FAS50</block>
+  <block id="a273758efece6727bfcbf76aa487c4b0" category="paragraph">您可以使用<block ref="72e7cdb99ab8c050f94092b7b0899905" category="inline-link-macro-rx"></block>來收集和記錄站台專屬的 IP 位址以及設定 ONTAP 叢集時所需的其他資訊。</block>
+  <block id="7022ed6df71cc12fbd0576cef4df23fd" category="section-title">2026 年 1 月</block>
+  <block id="b85fe2cea5398f1f038d29cdc997a57e" category="section-title">I/O 模組熱插拔程序</block>
+  <block id="f1ff5900f30ea46d90ede55a7bebd849" category="paragraph">現在，多個 ONTAP 硬體平台和 ONTAP 版本中的特定 I/O 模組均可支援熱插拔程序。</block>
+  <block id="fda83885cac1608803e3a918e2128e61" category="paragraph">*ONTAP 9.18.1 GA 或更新版本支援：*</block>
+  <block id="fd59c98826ce058902aa9888d91f7c8c" category="paragraph">只要乙太網路 I/O 模組的連接埠用於叢集、HA 或用戶端連線，您就可以在任何插槽中熱插拔故障的乙太網路 I/O 模組。此程序適用於任何節點數量的系統。</block>
+  <block id="3debc6b04a70f4a9cdb52fe164546aed" category="admonition">如果乙太網路 I/O 模組的連接埠已指派給儲存或 MetroCluster 連接，則無法熱插拔該模組。</block>
+  <block id="43bf4e612f8d0160d3bc5b40929afc19" category="paragraph">支援以下平台：</block>
+  <block id="7bcbc716b436192ec4eff88cacc197c8" category="list-text">AFF A 系列：A1K、A20、A30、A50、A70 和 A90</block>
+  <block id="dc891b882ac6d4a7bfe383f7803be2cc" category="list-text">ASA r2：A1K、A20、A30、A50、A70、A90 和 C30</block>
+  <block id="485ed6a2e0a83a79a5b43b4496b39a00" category="list-text">AFF C 系列：C30、C60 和 C80</block>
+  <block id="e2802a9219df7f342045b21491d408d0" category="list-text">FAS：FAS50、FAS70 和 FAS90</block>
+  <block id="ed4e6325dc1d6bac787d50d5a746db88" category="list-text">AFX：AFX 1K</block>
+  <block id="a00a8858dd17a7497925c1599c2a01a8" category="paragraph">*ONTAP 9.17.1 或 9.18.1RC 支援：*</block>
+  <block id="e67d145506b6865effbb43236b1d8d9f" category="paragraph">為避免雙節點叢集中斷，僅當受損控制器（即具有故障模組的控制器）已接管正常合作夥伴時，才能在插槽 4 中熱插拔故障叢集和 HA I/O 模組。這是唯一無需停機即可恢復的支援方法。</block>
+  <block id="ac0edc01a83e9b848b8cd4718317d3b3" category="list-text">AFF A 系列：A20、A30 和 A50</block>
+  <block id="9531e61578bd8f565b10aa312388a87a" category="list-text">ASA r2：A20、A30、A50 和 C30</block>
+  <block id="d5c98b58ffa424b5c269675a0f776ed1" category="list-text">AFF C 系列：C30 和 C60</block>
+  <block id="ba607022106b5e84e7dfdb6cde2391c0" category="list-text">FAS：FS50</block>
+  <block id="6ed5230d92cdb5bd5ad6144ce76dc227" category="section-title">AFF C800 停產</block>
+  <block id="1099abf3488280e460b0bdb29efaa68e" category="paragraph">AFF C800 系統已移至停產清單，不再接受新訂單。</block>
+  <block id="89d808282bc3d02e142a92d345c4532a" category="inline-link-macro">檢視停產硬體</block>
+  <block id="ba3ae576e12f67d02a68b6d3685a9937" category="paragraph"><block ref="c442ddf46f2c20e9aad78218eec7b152" category="inline-link-macro-rx"></block>。</block>
+  <block id="07449d4b5ae0b786607898af7e474dcd" category="section-title">2025 年發布</block>
+  <block id="462bdaed9eace863845b41e01c3480e8" category="sidebar">熱插拔 I/O 模組</block>
+  <block id="db0a3be0ea02de25a3475124879fa44b" category="sidebar">AFF A1K I/O 模組</block>
+  <block id="912c10cfdcb4f2e697e3be725e084f23" category="sidebar">熱插拔 I/O 模組</block>
 </blocks>
