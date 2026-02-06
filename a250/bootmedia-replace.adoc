@@ -4,13 +4,17 @@ sidebar: sidebar
 keywords: aff a250, replace the boot media 
 summary: 在更換開機媒體之前、請先移除控制器模組上的通風管、以找出控制器模組中故障的開機媒體。 
 ---
-= 更換開機媒體AFF - REVA250
+= 更換開機媒體並準備手動開機還原 - AFF A250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+AFF A250 系統中的開機媒體儲存重要的韌體和組態資料。更換程序包括移除系統管理模組、移除故障的開機媒體、安裝更換的開機媒體，然後使用 USB 快閃磁碟機手動將 ONTAP 映像傳輸到更換的開機媒體。
+
+如果您的儲存系統執行的是 ONTAP 9.18.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統執行的是較早版本的 ONTAP，則必須使用手動開機還原程序。
+
 若要更換開機媒體、您必須移除受損的控制器模組、安裝替換的開機媒體、並將開機映像傳輸到USB快閃磁碟機。
 
 
@@ -217,3 +221,6 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+
+.接下來呢？
+更換開機媒體之後link:bootmedia-recovery-image-boot.html["啟動恢復映像"]，您需要。

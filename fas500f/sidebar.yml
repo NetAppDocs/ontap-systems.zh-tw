@@ -16,21 +16,38 @@ entries:
 - title: 維護
   pdf-filename: FAS500f維護
   entries:
-  - title: 總覽
+  - title: 維護綜覽
     url: "/fas500f/maintain-overview.html"
-  - title: 開機媒體
-    pdf-filename: FAS500f開機媒體
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: FAS500f 開機媒體自動化
     entries:
-    - title: 總覽
-      url: "/fas500f/bootmedia-replace-overview.html"
+    - title: 開機媒體更換工作流程
+      url: "/fas500f/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/fas500f/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉受損的控制器
+      url: "/fas500f/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/fas500f/bootmedia-replace-bmr.html"
+    - title: 開機還原映像
+      url: "/fas500f/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/fas500f/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
+    pdf-filename: FAS500f 開機媒體手冊
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/fas500f/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/fas500f/bootmedia-replace-requirements.html"
     - title: 檢查加密金鑰
       url: "/fas500f/bootmedia-encryption-preshutdown-checks.html"
-    - title: 關閉節點
+    - title: 關閉受損的控制器
       url: "/fas500f/bootmedia-shutdown.html"
-    - title: 取代開機映像
+    - title: 更換開機媒體
       url: "/fas500f/bootmedia-replace.html"
     - title: 開機還原映像
-      url: "/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html"
+      url: "/fas500f/bootmedia-recovery-image-boot.html"
     - title: 還原加密
       url: "/fas500f/bootmedia-encryption-restore.html"
     - title: 將故障零件退回NetApp
@@ -38,28 +55,34 @@ entries:
   - title: 機箱
     pdf-filename: FAS500f機箱
     entries:
-    - title: 總覽
-      url: "/fas500f/chassis-replace-overview.html"
-    - title: 關閉受損的控制器
+    - title: 機箱更換工作流程
+      url: "/fas500f/chassis-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/fas500f/chassis-replace-requirements.html"
+    - title: 準備更換
+      url: "/fas500f/chassis-replace-prepare.html"
+    - title: 關閉控制器
       url: "/fas500f/chassis-replace-shutdown.html"
-    - title: 更換硬體
+    - title: 更換機箱
       url: "/fas500f/chassis-replace-move-hardware.html"
-    - title: 完整更換
+    - title: 完成機箱更換
       url: "/fas500f/chassis-replace-complete-system-restore-rma.html"
   - title: 控制器
     pdf-filename: FAS500f控制器模組
     entries:
-    - title: 總覽
-      url: "/fas500f/controller-replace-overview.html"
+    - title: 控制器更換工作流程
+      url: "/fas500f/controller-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/fas500f/controller-replace-requirements.html"
     - title: 關閉受損的控制器
       url: "/fas500f/controller-replace-shutdown.html"
-    - title: 更換控制器模組
+    - title: 更換控制器
       url: "/fas500f/controller-replace-move-hardware.html"
     - title: 還原系統組態
       url: "/fas500f/controller-replace-system-config-restore-and-verify.html"
     - title: 可重新恢復的系統
       url: "/fas500f/controller-replace-recable-reassign-disks.html"
-    - title: 完整系統還原
+    - title: 完整更換控制器
       url: "/fas500f/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/fas500f/dimm-replace.html"
@@ -70,8 +93,10 @@ entries:
   - title: 夾層卡
     url: "/fas500f/mezzanine-replace.html"
   - title: NVMEM電池
-    url: "/fas500f/nvmem-battery-replace.html"
+    url: "/fas500f/nvmem-nvram-battery-replace.html"
   - title: 電源供應器
     url: "/fas500f/power-supply-replace.html"
   - title: 即時時鐘電池
     url: "/fas500f/rtc-battery-replace.html"
+- title: 主要規格
+  url: "/fas500f/overview.html"

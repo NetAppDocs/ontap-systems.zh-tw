@@ -1,0 +1,304 @@
+---
+permalink: fas500f/bootmedia-recovery-image-boot-bmr.html 
+sidebar: sidebar 
+keywords: fas500f, boot the recovery image 
+summary: 在 FAS500f 系統中安裝新的開機媒體裝置後、您可以啟動自動開機媒體還原程序、從合作夥伴節點還原組態。 
+---
+= 從合作夥伴節點自動復原開機媒體 - FAS500f
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 FAS500f 系統中安裝新的開機媒體裝置後，您可以啟動自動開機媒體還原程序，以從合作夥伴節點還原組態。在還原程序期間，系統會檢查是否已啟用加密，並判斷使用中的金鑰加密類型。如果已啟用金鑰加密，系統會引導您完成適當的步驟來還原金鑰加密。
+
+自動開機媒體還原程序僅在 ONTAP 9.18.1 及更新版本中受支援。如果您的儲存系統執行的是較早版本的 ONTAP，請使用 link:bootmedia-replace-workflow.html["手動啟動恢復程序"]。
+
+.開始之前
+* 確定您的密鑰管理器類型：
++
+** 板載金鑰管理器 (OKM)：需要叢集範圍的密碼短語和備份數據
+** 外部金鑰管理員 (EKM)：需要來自夥伴節點的下列檔案：
++
+*** `/cfcard/kmip/servers.cfg`
+*** `/cfcard/kmip/certs/client.crt`
+*** `/cfcard/kmip/certs/client.key`
+*** `/cfcard/kmip/certs/CA.pem`
+
+
+
+
+
+
+.步驟
+. 在 LOADER 提示字元下，啟動啟動媒體復原程序：
++
+`boot_recovery -partner`
+
++
+畫面會顯示下列訊息：
+
++
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+
+. 監控開機媒體安裝恢復程序。
++
+程序完成並顯示 `Installation complete`訊息。
+
+. 系統檢查加密情況，並顯示下列訊息之一：
++
+[cols="1,2"]
+|===
+| 如果您看到此訊息 ... | 執行此動作... 
+
+
+ a| 
+`key manager is not configured. Exiting.`
+ a| 
+系統未安裝加密功能。
+
+.. 等待登入提示出現。
+.. 登入節點並歸還儲存空間：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+.. 前往 <<reenable-auto-giveback,重新啟用自動返還功能>> 如果它被禁用了。
+
+
+
+
+ a| 
+`key manager is configured.`
+ a| 
+已安裝加密功能。前往<<restore-key-manager,恢復密鑰管理器>>。
+
+|===
++
+
+NOTE: 如果系統無法辨識金鑰管理員配置，則會顯示錯誤訊息，並提示您確認是否已配置金鑰管理員以及配置類型（板載或外部）。請回答提示以繼續。
+
+. [[restore-key-manager]] 使用適合您組態的程序還原金鑰管理程式：
++
+[role="tabbed-block"]
+====
+.內建金鑰管理程式（OKM）
+--
+系統顯示以下訊息並開始執行啟動選單選項 10：
+
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
+.. 進入 `y`在提示時確認您是否要開始 OKM 恢復過程。
+.. 出現提示時，請輸入機載金鑰管理密碼。
+.. 出現確認提示時，請再次輸入密碼。
+.. 出現提示時，輸入車載金鑰管理員的備份資料。
++
+.顯示密碼和備份資料提示的範例
+[%collapsible]
+=====
+....
+Enter the passphrase for onboard key management:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the passphrase again to confirm:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the backup data:
+-----BEGIN BACKUP-----
+<passphrase_value>
+-----END BACKUP-----
+....
+=====
+.. 監控復原過程，看它如何從夥伴節點復原對應的檔案。
++
+恢復過程完成後，節點將重新啟動。以下資訊顯示恢復成功：
+
++
+....
+Trying to recover keymanager secrets....
+Setting recovery material for the onboard key manager
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.keydb file.
+
+Successfully recovered keymanager secrets.
+....
+.. 節點重新啟動後，驗證系統是否恢復上線並正常運作。
+.. 將受損的控制器歸還其儲存設備、使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
+.. 在夥伴節點完全啟動並開始提供資料服務後，同步叢集中的 OKM 金鑰：
++
+`security key-manager onboard sync`
+
++
+前往 <<reenable-auto-giveback,重新啟用自動返還功能>> 如果它被禁用了。
+
+
+
+--
+.外部金鑰管理程式（EKM）
+--
+系統顯示以下訊息並開始運行啟動選單選項 11：
+
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+.. 出現提示時，請輸入EKM設定：
++
+... 請輸入客戶端證書的內容。 `/cfcard/kmip/certs/client.crt`文件：
++
+.顯示用戶端憑證內容範例
+[%collapsible]
+=====
+....
+-----BEGIN CERTIFICATE-----
+<certificate_value>
+-----END CERTIFICATE-----
+....
+=====
+... 請輸入客戶端密鑰檔案的內容。 `/cfcard/kmip/certs/client.key`文件：
++
+.顯示用戶端金鑰檔案內容的範例
+[%collapsible]
+=====
+....
+-----BEGIN RSA PRIVATE KEY-----
+<key_value>
+-----END RSA PRIVATE KEY-----
+....
+=====
+... 從下列位置輸入 KMIP 伺服器 CA(s) 檔案的內容： `/cfcard/kmip/certs/CA.pem`文件：
++
+.顯示 KMIP 伺服器檔案內容範例
+[%collapsible]
+=====
+....
+-----BEGIN CERTIFICATE-----
+<KMIP_certificate_CA_value>
+-----END CERTIFICATE-----
+....
+=====
+... 輸入伺服器設定檔內容 `/cfcard/kmip/servers.cfg`文件：
++
+.顯示伺服器組態檔案內容的範例
+[%collapsible]
+=====
+....
+xxx.xxx.xxx.xxx:5696.host=xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx:5696.port=5696
+xxx.xxx.xxx.xxx:5696.trusted_file=/cfcard/kmip/certs/CA.pem
+xxx.xxx.xxx.xxx:5696.protocol=KMIP1_4
+1xxx.xxx.xxx.xxx:5696.timeout=25
+xxx.xxx.xxx.xxx:5696.nbio=1
+xxx.xxx.xxx.xxx:5696.cert_file=/cfcard/kmip/certs/client.crt
+xxx.xxx.xxx.xxx:5696.key_file=/cfcard/kmip/certs/client.key
+xxx.xxx.xxx.xxx:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
+xxx.xxx.xxx.xxx:5696.verify=true
+xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
+....
+=====
+... 如果出現提示，請輸入夥伴節點的ONTAP叢集 UUID。您可以使用下列指令從夥伴節點檢查叢集 UUID： `cluster identify show`命令。
++
+.顯示ONTAP集群 UUID 提示範例
+[%collapsible]
+=====
+....
+Notice: bootarg.mgwd.cluster_uuid is not set or is empty.
+Do you know the ONTAP Cluster UUID? {y/n} y
+Enter the ONTAP Cluster UUID: <cluster_uuid_value>
+
+
+System is ready to utilize external key manager(s).
+....
+=====
+... 如果出現提示，請輸入節點的臨時網路介面和設定：
++
+**** 連接埠的 IP 位址
+**** 連接埠的網路遮罩
+**** 預設網關的 IP 位址
++
+.顯示臨時網路設定提示範例
+[%collapsible]
+=====
+....
+In order to recover key information, a temporary network interface needs to be
+configured.
+
+Select the network port you want to use (for example, 'e0a')
+e0M
+
+Enter the IP address for port : xxx.xxx.xxx.xxx
+Enter the netmask for port : xxx.xxx.xxx.xxx
+Enter IP address of default gateway: xxx.xxx.xxx.xxx
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+....
+=====
+
+
+
+
+.. 驗證金鑰恢復狀態：
++
+*** 如果你看到 `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696`輸出結果顯示，EKM 配置已成功恢復。該過程從夥伴節點恢復相應的檔案並重啟節點。進行下一步。
+*** 如果密鑰恢復失敗，系統將停止運作並顯示錯誤和警告訊息。從 LOADER 提示字元重新執行復原過程： `boot_recovery -partner`
++
+.顯示金鑰還原錯誤和警告訊息的範例
+[%collapsible]
+=====
+....
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+
+Uptime: 11m32s
+System halting...
+
+LOADER-B>
+....
+=====
+
+
+.. 節點重新啟動後，驗證系統是否恢復上線並正常運作。
+.. 將控制器的儲存設備歸還，使其恢復正常運作：
++
+'容錯移轉還原-ofnode_disapped_node_name_'
+
++
+前往 <<reenable-auto-giveback,重新啟用自動返還功能>> 如果它被禁用了。
+
+
+
+--
+====
+
+
+. [[reenable-auto-giveback]]如果自動恢復功能已停用、請重新啟用：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用 AutoSupport 、請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
+
+.下一步
+還原 ONTAP 映像並啟動節點並提供資料之後link:bootmedia-complete-rma-bmr.html["將故障零件退回 NetApp"]，您就可以了。

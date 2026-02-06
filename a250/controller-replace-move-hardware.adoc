@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a250, move the hardware components 
 summary: 若要更換控制器模組硬體、您必須移除受損的控制器模組、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。 
 ---
-= 更換控制器模組硬體AFF - REVA250
+= 更換控制器 - AFF A250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+當您的 AFF A250 系統發生硬體故障需要更換控制器時，請進行更換。更換過程包括：拆下故障控制器，將組件轉移到新的控制器上，安裝新的控制器，然後重新啟動系統。
+
 若要更換控制器模組硬體、您必須移除受損的控制器、將FRU元件移至更換的控制器模組、在機箱中安裝更換的控制器模組、然後將系統開機至維護模式。
 
 
@@ -374,3 +376,6 @@ NOTE: 您將在本程序稍後將其餘纜線連接至控制器模組。
 
 
 
+
+.接下來呢？
+更換故障的 A250 控制器後、您需要link:controller-replace-system-config-restore-and-verify.html["還原並驗證系統組態"]。

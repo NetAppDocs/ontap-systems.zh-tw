@@ -16,13 +16,30 @@ entries:
 - title: 維護
   pdf-filename: ASA A250 維護
   entries:
-  - title: 總覽
+  - title: 維護綜覽
     url: "/asa250/maintain-overview.html"
-  - title: 開機媒體
-    pdf-filename: ASA A250 開機媒體
+  - title: 啟動媒體 - 自動恢復
+    pdf-filename: ASA A250 開機媒體自動化
     entries:
-    - title: 總覽
-      url: "/asa250/bootmedia-replace-overview.html"
+    - title: 開機媒體更換工作流程
+      url: "/asa250/bootmedia-replace-workflow-bmr.html"
+    - title: 檢閱要求
+      url: "/asa250/bootmedia-replace-requirements-bmr.html"
+    - title: 關閉控制器
+      url: "/asa250/bootmedia-shutdown-bmr.html"
+    - title: 更換開機媒體
+      url: "/asa250/bootmedia-replace-bmr.html"
+    - title: 還原開機媒體上的映像
+      url: "/asa250/bootmedia-recovery-image-boot-bmr.html"
+    - title: 將故障零件退回NetApp
+      url: "/asa250/bootmedia-complete-rma-bmr.html"
+  - title: 啟動媒體 - 手動恢復
+    pdf-filename: ASA A250 開機媒體手冊
+    entries:
+    - title: 開機媒體更換工作流程
+      url: "/asa250/bootmedia-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/asa250/bootmedia-replace-requirements.html"
     - title: 檢查加密金鑰
       url: "/asa250/bootmedia-encryption-preshutdown-checks.html"
     - title: 關閉受損的控制器
@@ -38,9 +55,13 @@ entries:
   - title: 機箱
     pdf-filename: ASA A250 機箱
     entries:
-    - title: 總覽
-      url: "/asa250/chassis-replace-overview.html"
-    - title: 關閉受損的控制器
+    - title: 機箱更換工作流程
+      url: "/asa250/chassis-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/asa250/chassis-replace-requirements.html"
+    - title: 準備更換
+      url: "/asa250/chassis-replace-prepare.html"
+    - title: 關閉控制器
       url: "/asa250/chassis-replace-shutdown.html"
     - title: 更換機箱
       url: "/asa250/chassis-replace-move-hardware.html"
@@ -49,8 +70,10 @@ entries:
   - title: 控制器
     pdf-filename: ASA A250 控制器模組
     entries:
-    - title: 總覽
-      url: "/asa250/controller-replace-overview.html"
+    - title: 控制器更換工作流程
+      url: "/asa250/controller-replace-workflow.html"
+    - title: 檢閱要求
+      url: "/asa250/controller-replace-requirements.html"
     - title: 關閉受損的控制器
       url: "/asa250/controller-replace-shutdown.html"
     - title: 更換控制器
@@ -59,7 +82,7 @@ entries:
       url: "/asa250/controller-replace-system-config-restore-and-verify.html"
     - title: 可重新恢復的系統
       url: "/asa250/controller-replace-recable-reassign-disks.html"
-    - title: 完整系統還原
+    - title: 完整更換控制器
       url: "/asa250/controller-replace-restore-system-rma.html"
   - title: DIMM
     url: "/asa250/dimm-replace.html"

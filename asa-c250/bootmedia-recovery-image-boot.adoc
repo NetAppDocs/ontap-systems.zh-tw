@@ -13,6 +13,8 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 [role="lead"]
 在系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。
 
+如果您的儲存系統執行的是 ONTAP 9.18.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統執行的是較早版本的 ONTAP，則必須使用手動開機還原程序。
+
 .開始之前
 * 請確保您的遊戲機已連接到故障控制器。
 * 請確認您擁有包含恢復映像的USB。
@@ -102,3 +104,6 @@ NOTE: 如果看到的不是恢復成功的訊息，請聯絡NetApp支援。
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
+
+.接下來呢？
+引導恢復映像後，您需要link:bootmedia-encryption-restore.html["在開機媒體上還原加密"]。

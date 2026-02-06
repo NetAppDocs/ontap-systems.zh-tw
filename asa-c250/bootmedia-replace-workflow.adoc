@@ -1,0 +1,44 @@
+---
+permalink: asa-c250/bootmedia-replace-workflow.html 
+sidebar: sidebar 
+keywords: asa c250, replace the boot media 
+summary: 若要開始更換 ASA C250 儲存系統中的開機媒體，請先檢閱更換需求、檢查加密狀態、關閉控制器、更換開機媒體、啟動還原映像、還原加密，並驗證系統功能。 
+---
+= 開機媒體手動還原工作流程 - ASA C250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要開始更換 ASA C250 儲存系統中的開機媒體，請先檢閱更換需求、檢查加密狀態、關閉控制器、更換開機媒體、啟動還原映像、還原加密，並驗證系統功能。
+
+如果您的儲存系統執行的是 ONTAP 9.18.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統執行的是較早版本的 ONTAP，則必須使用手動開機還原程序。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements.html["檢閱開機媒體需求"]
+[role="quick-margin-para"]
+檢閱更換開機媒體的需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-encryption-preshutdown-checks.html["檢查加密金鑰支援和狀態"]
+[role="quick-margin-para"]
+判斷系統是否已啟用安全金鑰管理程式或加密磁碟。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-shutdown.html["關閉控制器"]
+[role="quick-margin-para"]
+當您需要更換開機媒體時，請關閉控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-replace.html["更換開機媒體"]
+[role="quick-margin-para"]
+從系統管理模組移除故障開機媒體、然後安裝替換開機媒體、然後使用 USB 快閃磁碟機傳輸 ONTAP 映像。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-recovery-image-boot.html["開機恢復映像"]
+[role="quick-margin-para"]
+從 USB 磁碟機開機 ONTAP 映像、還原檔案系統、並驗證環境變數。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:bootmedia-encryption-restore.html["還原加密"]
+[role="quick-margin-para"]
+從ONATP啟動選單恢復板載金鑰管理器設定或外部金鑰管理器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"]link:bootmedia-complete-rma.html["將故障零件歸還給NetApp"]
+[role="quick-margin-para"]
+如套件隨附的RMA指示所述、將故障零件退回NetApp。

@@ -11,6 +11,8 @@ summary: 您必須重新儲存並確認磁碟重新指派。
 
 
 [role="lead"]
+完成 ASA A250 系統的還原和系統組態驗證後，您需要重新連接系統纜線並重新指派磁碟。
+
 重新啟用儲存設備並確認磁碟重新指派、以繼續執行更換程序。
 
 
@@ -144,3 +146,6 @@ dr-group-id            cluster node           configuration-state
 . 驗證每個控制器是否存在預期的磁碟區：「vol. show -node-name」
 . 如果您在重新開機時停用自動接管、請從健全的控制器啟用：「torage容錯移轉修改節點置換節點名稱-onreboottrue」
 
+
+.接下來呢？
+重新連接系統線纜並重新分配磁碟後、您需要link:controller-replace-restore-system-rma.html["完成控制器更換"]。

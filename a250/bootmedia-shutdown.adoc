@@ -1,20 +1,24 @@
 ---
 permalink: a250/bootmedia-shutdown.html 
 sidebar: sidebar 
-keywords: aff a250, shutdown 
+keywords: aff a250, shut down the controller 
 summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
 ---
-= 關閉控制器AFF -現象A250
+= 關閉控制器以進行手動開機媒體還原 - AFF A250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+關閉 AFF A250 儲存系統中發生故障的控制器，以防止資料遺失並在自動開機媒體復原過程中保持系統穩定性。
+
+如果您的儲存系統執行的是 ONTAP 9.18.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統執行的是較早版本的 ONTAP，則必須使用手動開機還原程序。
+
 
 
 == 選項1：大多數系統
 
-[role="lead"]
 完成NVE或NSE工作之後、您必須完成受損控制器的關機。
 
 .步驟
@@ -56,9 +60,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 
 
 
-== 選項2：MetroCluster 系統在一個方面
-
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。
+== 選項2：系統MetroCluster 位於一個不二之處
 
 
 NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
@@ -105,3 +107,6 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 
 |===
 
+
+.接下來呢？
+關閉控制器之後，您需要link:bootmedia-replace.html["更換開機媒體"]執行。

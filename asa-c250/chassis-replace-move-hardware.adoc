@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: asa c250, move hardware components, replace the chassis 
 summary: 將電源供應器、硬碟機、控制器模組或模組從受損的機箱移至新機箱、然後將受損的機箱從設備機架或系統機櫃中換成與受損機箱相同機型的新機箱。 
 ---
-= 更換硬體 - ASA C250
+= 更換機箱 - ASA C250
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+當您的 ASA C250 系統發生硬體故障需要更換機殼時，請進行更換。更換過程包括：拆卸控制器和電源單元（PSU）、拆卸硬碟、安裝新的機箱，然後重新安裝機箱組件。
+
 若要更換機箱、請將電源供應器、硬碟機和控制器模組從損壞的機箱移至新機箱、然後將損壞的機箱從換成與損壞的機箱相同機型的新機箱。
 
 
@@ -140,3 +142,6 @@ NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 
 . 重複上述步驟、將第二個控制器安裝到新機箱中。
 
+
+.接下來呢？
+更換故障的 ASA C250 機箱並重新安裝元件後，您需要link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]

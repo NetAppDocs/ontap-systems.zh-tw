@@ -1,0 +1,38 @@
+---
+permalink: a250/controller-replace-workflow.html 
+sidebar: sidebar 
+keywords: aff a250, replace the controller workflow 
+summary: 若要更換 AFF A250 儲存系統中的控制器，首先要關閉故障控制器，然後卸下並更換控制器、重新配置系統設定，並驗證系統運作。 
+---
+= 控制器更換工作流程 - AFF A250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要更換 AFF A250 儲存系統中的控制器、請關閉受損的控制器、移除並更換控制器、還原系統組態、然後將儲存資源的控制權歸還給替換控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:controller-replace-requirements.html["檢閱更換控制器的需求"]
+[role="quick-margin-para"]
+審查控制器更換要求，包括系統相容性、所需工具、 ONTAP憑證和組件功能驗證。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:controller-replace-shutdown.html["關閉受損的控制器"]
+[role="quick-margin-para"]
+關閉或接管功能受損的控制器、使狀況良好的控制器能繼續從功能受損的控制器儲存設備提供資料。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:controller-replace-move-hardware.html["更換控制器"]
+[role="quick-margin-para"]
+拆下故障控制器，將 FRU 組件移至替換控制器模組，然後將替換控制器模組安裝到機殼中。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:controller-replace-system-config-restore-and-verify.html["還原並驗證系統組態"]
+[role="quick-margin-para"]
+驗證更換控制器的低階系統組態、並視需要重新設定系統設定。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:controller-replace-recable-reassign-disks.html["可重新分配控制器"]
+[role="quick-margin-para"]
+重新分配控制器、並將儲存資源的擁有權移交給更換的控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:controller-replace-restore-system-rma.html["完整更換控制器"]
+[role="quick-margin-para"]
+驗證生命，檢查叢集健全狀況，並將故障零件退回 NetApp 。

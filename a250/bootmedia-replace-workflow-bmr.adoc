@@ -1,0 +1,38 @@
+---
+permalink: a250/bootmedia-replace-workflow-bmr.html 
+sidebar: sidebar 
+keywords: a250, replace the boot media 
+summary: 若要開始更換 AFF A250 儲存系統中的開機媒體，請先檢閱更換需求、關閉控制器、更換開機媒體、還原開機媒體上的映像，並驗證系統功能。 
+---
+= 開機媒體自動還原工作流程 - AFF A250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+啟動映像的自動復原過程包括系統自動辨識並選擇對應的啟動選單選項。它使用夥伴節點上的啟動映像，將 ONTAP 重新安裝到 AFF A250 儲存系統中的替換啟動媒體上。
+
+自動開機媒體還原程序僅在 ONTAP 9.18.1 及更新版本中受支援。如果您的儲存系統執行的是較早版本的 ONTAP，請使用 link:bootmedia-replace-workflow.html["手動啟動恢復程序"]。
+
+首先，檢查更換要求，關閉控制器，更換啟動介質，允許系統恢復映像，並驗證系統功能。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:bootmedia-replace-requirements-bmr.html["檢閱開機媒體需求"]
+[role="quick-margin-para"]
+檢閱開機媒體更換需求。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:bootmedia-shutdown-bmr.html["關閉控制器"]
+[role="quick-margin-para"]
+當您需要更換開機媒體時，請關閉儲存系統中的控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-replace-bmr.html["更換開機媒體"]
+[role="quick-margin-para"]
+從控制器模組移除故障的啟動媒體並安裝替換的啟動媒體。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-recovery-image-boot-bmr.html["還原開機媒體上的映像"]
+[role="quick-margin-para"]
+從合作夥伴控制器還原 ONTAP 映像。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:bootmedia-complete-rma-bmr.html["將故障零件歸還給NetApp"]
+[role="quick-margin-para"]
+如套件隨附的RMA指示所述、將故障零件退回NetApp。

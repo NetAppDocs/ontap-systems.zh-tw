@@ -1,0 +1,34 @@
+---
+permalink: asa250/chassis-replace-workflow.html 
+sidebar: sidebar 
+keywords: asa a250, replace the chassis workflow 
+summary: 若要開始更換 ASA A250 儲存系統的機箱、請先檢閱更換需求、關閉控制器、更換機箱、然後驗證系統作業。 
+---
+= 機箱更換工作流程 - ASA A250
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要開始更換 ASA A250 儲存系統的機箱、請先檢閱更換需求、關閉控制器、更換機箱、然後驗證系統作業。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:chassis-replace-requirements.html["審查底盤更換要求"]
+[role="quick-margin-para"]
+審查機箱更換要求，包括系統相容性、所需工具、 ONTAP憑證和組件功能驗證。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:chassis-replace-prepare.html["準備更換底盤"]
+[role="quick-margin-para"]
+準備更換機箱時，請找到系統、收集憑證和工具、驗證更換機箱並標記電纜。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:chassis-replace-shutdown.html["關閉控制器"]
+[role="quick-margin-para"]
+關閉控制器以安全地進行機箱維護。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:chassis-replace-move-hardware.html["更換機箱"]
+[role="quick-margin-para"]
+將故障機箱中的組件移至替換機箱中。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:chassis-replace-complete-system-restore-rma.html["完成機箱更換"]
+[role="quick-margin-para"]
+完成更換的方法是啟動控制器，執行返還操作，並將故障機箱退回給NetApp。
