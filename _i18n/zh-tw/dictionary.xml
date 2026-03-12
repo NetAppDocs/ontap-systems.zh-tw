@@ -8074,7 +8074,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b58ec5a6cf078c8a3a2b309a797f9e62" category="paragraph">控制器會重新連接其儲存資源池、並完成開機。</block>
   <block id="db4669e53766b1110dbd428a22b6f5cc" category="list-text">按下系統管理 CAM 按鈕。</block>
   <block id="cf91b43675e7187d6e724e7c312e336a" category="list-text">轉動 CAM 栓鎖、使其儘可能遠離模組。</block>
-  <block id="f5c1d99a4f032f30d087e32fbbbdb994" category="paragraph">關閉或接管受損的控制器。- 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、使狀況良好的控制器能繼續提供受損控制器儲存設備的資料。</block>
   <block id="5050dae1093a80a257a1d121ca5f3b0f" category="section-title">步驟 4 ：驗證控制器狀態</block>
   <block id="417968dd9c410e2ebdf82236e2a6f1d8" category="doc">步驟 1 ：將儲存控制器連接到您的網路</block>
   <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">使用叢集 /HA 互連纜線將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。</block>
@@ -13299,7 +13298,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4144051484bacbb26b0997a24a36532e" category="paragraph"><block ref="d5be9149b0861afc30e359e3506a3da0" prefix="" category="inline-code"></block></block>
   <block id="4e08d1e0cedf01306836a427edd98e6a" category="list-text">將控制台電纜移至替換節點並輸入以下內容：</block>
   <block id="cd74239882532c0ea03cfa93da31d5cb" category="paragraph"><block ref="8d87a410a64e11591a338ede7162a6d2" prefix="" category="inline-code"></block></block>
-  <block id="45a2d32fc61cc2d123cf4027040c4bf8" category="paragraph">要關閉受損控制器，您必須確定控制器的狀態，並在必要時執行控制器的儲存故障轉移接管，以便健康的控制器繼續從受損控制器儲存提供資料。</block>
   <block id="b5ca6041147fb4f4df4801f4f10784f5" category="inline-link-macro">查看ONTAP叢集中的節點級詳細信息</block>
   <block id="22dd5ea8b069cf90dfb213fcf3136023" category="list-text">如果您的叢集具有四個以上的節點，則它必須達到法定人數。要查看有關節點的叢集信息，請使用<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>命令。有關<block ref="639161158d7426b3865ce9c5a6f648b3" prefix=" " category="inline-code"></block>命令，請參閱<block ref="812d195420030f92a12eef2f47c24053" category="inline-link-macro-rx"></block>。</block>
   <block id="3339c1abb6a38c2a82f66c0780893536" category="list-text">如果叢集不處於法定人數，或任何控制器（受損控制器除外）的健康狀況或資格顯示為錯誤，則必須在關閉受損控制器之前修正該問題。看<block ref="68d9e980b8b4998ef88139d7b7ab8ff6" category="inline-link-macro-rx"></block> 。</block>
@@ -14922,4 +14920,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3e43f7eeca64d5c830b0064870a6156b" category="admonition">在安裝和維護過程中，請務必配戴連接至已驗證接地點的接地腕帶。未採取正確的 ESD 防護措施可能會對控制器節點、儲存架和網路交換器造成永久性損壞。</block>
   <block id="65a7bfdd77aba70777e2700d48d0925f" category="paragraph">本程序適用於一次更換一個 PSU。請根據您的 PSU 類型使用適當的程序：AC 或 DC。</block>
   <block id="9bedcc9650ba1fe86ed7720eb975429e" category="list-text">前往機箱後方。</block>
+  <block id="6c2bf859d9ce264150989f2d23c86e92" category="paragraph">接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。</block>
+  <block id="0cea086e190611d579375e0cfbe7f6b7" category="paragraph">透過將故障控制器停止到 LOADER 提示符號並擷取啟動環境變數，完成故障控制器的關機。LOADER 提示符號是安全的停止狀態，您可以從該狀態更換啟動媒體。</block>
+  <block id="580317d87f0c97d7c347306d452cfb2c" category="paragraph">關閉或接管故障控制器。接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例，停用自動恢復，並將故障控制器置於 LOADER 提示字元。LOADER 提示符號是安全的停止狀態，您可以從中更換 FRU。</block>
 </blocks>
