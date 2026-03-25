@@ -5332,12 +5332,7 @@
   <block id="68d685ddbaa25f1a411d5e93d6f91913" category="list-text">ONTAP 的本機系統管理員認證。</block>
   <block id="d6562c849f41b9038124f0c304aed030" category="list-text">停止所有用戶端 / 主機存取 NetApp 系統上的資料。</block>
   <block id="d61b46d9cd719b77efb76269147aa377" category="list-text">暫停外部備份工作。</block>
-  <block id="356bf392971487f892daba5338258571" category="paragraph">關機前的最佳做法是：</block>
-  <block id="2ee5edc561a6167cf2d57a64ee655bef" category="inline-link">系統健全狀況檢查</block>
-  <block id="7023017d0098f741d6569842ee62b922" category="list-text">執行其他<block ref="9ace058273de133e6accbea83a7d278a" category="inline-link-rx"></block>。</block>
-  <block id="f40b8507b340a958be200bec6d3758a0" category="list-text">將 ONTAP 升級至建議的系統版本。</block>
   <block id="9f4d2068e7b3d206efc0252b3da597a5" category="inline-link">Active IQ 健康警示與風險</block>
-  <block id="c5df4dcae9a001142a36959487445ff6" category="list-text">解決任何問題<block ref="31b25beca26cb366eeb0665e3c0d7cbf" category="inline-link-rx"></block>。記下系統上目前存在的任何故障、例如系統元件上的 LED 。</block>
   <block id="3923b7d5100131c85be2160c8b680704" category="list-text">透過 SSH 登入叢集、或使用本機主控台纜線和筆記型電腦 / 主控台、從叢集中的任何節點登入。</block>
   <block id="0d16db60da2c01b63ef84ee8d616c2fb" category="paragraph"><block ref="b206d268f79aeaa7c4f1e44684d2f080" prefix="" category="inline-code"></block></block>
   <block id="a39c8c38e51a42fcfaac22367dd19064" category="list-text">等待每個控制器停止並顯示載入器提示。</block>
@@ -7474,7 +7469,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0be7ecaeb710959e64858a36fa1f8783" category="inline-link">AFF A1K</block>
   <block id="c61e96543ff55077f64d8dd03940c2c6" category="inline-link">AFF A70</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="paragraph">ONTAP 9.15.1.1</block>
-  <block id="3fa7c0866aba2253b800fb8f1b9d08dc" category="list-text">每個控制器的 BMC 存取能力。</block>
   <block id="ac632c351c050929564cd7a72c3d383a" category="doc">關閉受損控制器 - AFF A1K</block>
   <block id="a4fbb291103a5430eb9ece2393c095a4" category="doc">將控制器交回 AFF A1K</block>
   <block id="fb829c49a3a2da88fb46330449bb960d" category="summary">若要將系統還原為完整作業、您必須驗證生命、檢查叢集健全狀況、並將故障零件歸還 NetApp 。如需 RMA 編號或更換程序的其他協助、請聯絡技術支援<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>：、 888-463-8277 （北美）、 00-800-444-638277 （歐洲）或 +800-800-80-800 （亞太地區）。</block>
@@ -8757,7 +8751,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9959e1ea8c67446c566e6a371f9e14cb" category="list-text">在功能受損的控制器上、出現提示時按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>確認還原備份是否成功。</block>
   <block id="b883391d9dfbf834ff0bda07a53554f5" category="list-text">在功能受損的控制器上、當系統提示您使用還原的組態時、請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
   <block id="d0ec0afe83814a07fcdbf02b0d2e2e8b" category="list-text">在功能受損的控制器上、當系統提示您重新啟動節點時、請按<block ref="57cec4137b614c87cb4e24a3d003a3e0" prefix=" " category="inline-code"></block>。</block>
-  <block id="cd979ca520736846558f2b04a04b63da" category="paragraph">如果您使用的是主控台 / 筆記型電腦、請使用相同的叢集管理員認證登入控制器。</block>
   <block id="4250e5b5781f94ff901cc1822461f6ae" category="doc">更換系統管理模組 - AFF A1K</block>
   <block id="b1b14a007e6d27cacb6cbf9837dd5e7e" category="doc">將控制器交回 AFF A70 和 AFF A90</block>
   <block id="4443f66d8d4febc600e0d4d0b3b0db91" category="doc">將控制器交回 ASA A70 和 ASA A90</block>
@@ -9399,7 +9392,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7329bfa51dec924de206ced093bea600" category="paragraph">*40/100 GbE 纜線 *</block>
   <block id="8f31147c7cfeb7520dc9739e31dedc90" category="image-alt">40/100 GB 纜線</block>
   <block id="ec83c89c1bfd1fa2fe72db4df75b0e43" category="image-alt">連接至 40/100GbE 乙太網路主機網路交換器的纜線</block>
-  <block id="8f03269dbdbab70bab244893051fb6ec" category="paragraph">在每個控制器上，將連接埠 1a ， 1b ， 1c 和 1D 連接至 FC 主機網路交換器。</block>
   <block id="241c17a1be2cc4feae5c8c6007f8aed3" category="paragraph">* 64 Gb/s FC 纜線 *</block>
   <block id="176084e0e3d1d8b98919ade28704bd7b" category="inline-image-macro">64 GB 光纖通道纜線，寬度 = 100px</block>
   <block id="0174aef3c6edce25256f90638a06bdca" category="paragraph"><block ref="0174aef3c6edce25256f90638a06bdca" category="inline-image-macro-rx" type="image"></block></block>
@@ -9867,7 +9859,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="4288b2b72921e4670bb8b42ba6a5248d" category="list-text">識別所有叢集節點的 SP / BMC 位址：</block>
   <block id="bb000e8434af9c71358c26cf3aa76ce3" category="list-text">結束叢集 Shell ：</block>
   <block id="d9f6eac526670fe9182f1a63d251a180" category="paragraph"><block ref="f24f62eeb789199b9b2e467df3b1876b" prefix="" category="inline-code"></block></block>
-  <block id="29b1aa97ab42c7253b7c5769a711e501" category="list-text">使用上一步輸出中列出的任何節點的 IP 位址，透過 SSH 登入 SP / BMC ，以監控進度。</block>
   <block id="4e66424513d5ccef0e91ad9aa7c87642" category="list-text">當您看到下列項目時，請為叢集中的每個控制器輸入 * y* ：</block>
   <block id="38ae227cf94e3775806bccfd95814d4b" category="paragraph"><block ref="035b082bfaf23bf2d7b95c3ef597d380" prefix="" category="inline-code"></block></block>
   <block id="a5e51e5f50ca83720f1d0d8b17c1e93b" category="list-text">這些程序顯示一般組態。具體的佈線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
@@ -14924,4 +14915,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0cea086e190611d579375e0cfbe7f6b7" category="paragraph">透過將故障控制器停止到 LOADER 提示符號並擷取啟動環境變數，完成故障控制器的關機。LOADER 提示符號是安全的停止狀態，您可以從該狀態更換啟動媒體。</block>
   <block id="580317d87f0c97d7c347306d452cfb2c" category="paragraph">關閉或接管故障控制器。接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例，停用自動恢復，並將故障控制器置於 LOADER 提示字元。LOADER 提示符號是安全的停止狀態，您可以從中更換 FRU。</block>
   <block id="0348833f0ff47bd2ae37f1706a53ef42" category="list-text">如果 HA 互連鏈路斷開，請將其恢復：</block>
+  <block id="5689c5ea3692b97ad8c9b15340cdeaf8" category="admonition">務必將夾層卡上的蝶形螺絲完全擰緊。如果螺絲鬆動，可能無法偵測到連接埠 e0e 至 e0h，LED 指示燈可能會持續閃爍，且日誌中可能會顯示「不支援的電纜」錯誤。</block>
+  <block id="4383fe9a37feb4f64a0355e3ec27ad10" category="paragraph">從提取的 ONTAP 映像中，將 <block ref="6e2807816e9d2621b7e5dffff6c33711" prefix=" " category="inline-code"></block> 資料夾複製到 USB 隨身碟的根目錄。</block>
+  <block id="8b0642e6333dcba17664a67ef72215ec" category="list-text">每個控制器的 BMC 存取權限。</block>
+  <block id="da9053d5fc06539ec5cadf63d46c662d" category="list-text">使用上一個步驟中確定的 IP 位址登入每個控制器的 SP/BMC：</block>
+  <block id="43ed5e374baf2e56183228d2ee15fdc4" category="list-text">如果您透過 SSH 從 BMC 登入，請使用 SP/BMC 位址（例如<block ref="4af43ee092242a6ac7ac3f68e7a27542" prefix=" " category="inline-code"></block>）進行連線，然後輸入命令<block ref="6a412eb180c3f0a9798690443fba49e1" prefix=" " category="inline-code"></block>並進行驗證。</block>
+  <block id="4238d84ec7e4655601b7b55b2f076b2e" category="list-text">如果您使用的是直接連接到控制器的本機主控台或筆記型電腦，請使用相同的叢集管理員認證登入。</block>
+  <block id="8e06442a81408e5b3d9d881ee34604d9" category="list-text">將連接埠 e10b 連接至機櫃 1 NSM B 連接埠 e0b。</block>
+  <block id="e075a310e0208871f253ed1786f7aa85" category="list-text">在每個控制器上，將連接埠 2a、2b、2c 和 2d 連接到 FC 主機網路交換器。</block>
 </blocks>
