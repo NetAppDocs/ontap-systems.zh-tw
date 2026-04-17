@@ -2,7 +2,7 @@
 permalink: asa-c250/dimm-replace.html 
 sidebar: sidebar 
 keywords: asa c250, replace a dimm 
-summary: 當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。 
+summary: 當系統登錄越來越多的可修正錯誤修正碼（correctable error correction codes）或不可修正的 ECC 錯誤時，請更換 ASA C250 控制器模組中的 DIMM。若未更換故障的 DIMM，可能會導致系統出現緊急狀況（panic）。 
 ---
 = 更換 DIMM - ASA C250
 :allow-uri-read: 

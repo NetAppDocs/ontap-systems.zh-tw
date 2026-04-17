@@ -2,7 +2,7 @@
 permalink: c190/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff c190, replace dimm 
-summary: 當系統登錄的可修正錯誤修正碼（ECC）數量不斷增加時、您必須更換控制器模組中的DIMM；否則會導致系統嚴重錯誤。 
+summary: 當儲存系統遇到錯誤時，例如基於 Health Monitor 警示的過多可修正錯誤修正碼錯誤或無法修正的 ECC 錯誤（通常是由單一 DIMM 故障引起，導致儲存系統無法開機 ONTAP），您必須更換控制器中的 DIMM。 
 ---
 = 更換DIMM AFF - REC190
 :allow-uri-read: 
