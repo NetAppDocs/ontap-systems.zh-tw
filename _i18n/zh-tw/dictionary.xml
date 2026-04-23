@@ -5609,15 +5609,11 @@
 請參閱<block ref="087e4d006962c8ba6c4d8fdb71ff8e38" category="inline-link-rx"></block> 以取得更多詳細資料。</block>
   <block id="0f844d6324319ebe9b4aabd24f1b88dd" category="list-text">安裝控制器模組：</block>
   <block id="6bfde1459ef866428e3532004887b3b8" category="list-text">可重新安裝控制器模組。</block>
-  <block id="db5c04ca6cb958f296ff071cf8420f54" category="paragraph">將纜線、任何 SFP 和 QSFP 模組從插卡上拔下、裝回故障的夾層卡、然後重新讀取插卡、以更換夾層卡。</block>
-  <block id="783de30113379b15fc6135387f11b7e6" category="video-title">動畫 - 更換夾層卡</block>
   <block id="a0ff1a6d16d908c33e10409aed0ac623" category="paragraph">從系統中卸下控制器模組、然後卸下控制器模組上的護蓋。</block>
   <block id="cf6800eb49ae54456676c105c115a1fa" category="section-title">步驟 3 ：更換夾層卡</block>
   <block id="6918dd1d1ecfa7a18a047a925c4f30ee" category="paragraph">更換夾層卡。</block>
   <block id="83b54898f0ac014b1e217ee413643205" category="paragraph">PCIe 夾層卡</block>
   <block id="64016c063cf6b470fdcccc5a97f852b1" category="list-text">鬆開夾層卡上的指旋螺絲、然後垂直提起夾層卡。</block>
-  <block id="4bca5310f65e82fe5c4eec2c7a1c6c17" category="list-text">將替換夾層卡插頭上的插槽與主機板上的插槽對齊、然後將插卡輕輕平齊插入插槽。</block>
-  <block id="f2972968e044e6666c42c0182107b4f6" category="paragraph">重新安裝控制器模組。</block>
   <block id="f36f34bd21dc87823e156cd47c7d7440" category="list-text">將控制器模組翻轉過來、並將端點對齊機箱的開口。</block>
   <block id="3ab31ac30e2ad91e2f7e6a9ecd045f6e" category="list-text">將控制器模組輕輕推入系統的一半。將控制器模組的末端與機箱中的開口對齊、然後將控制器模組輕輕推入系統的一半。</block>
   <block id="d32890221c5529cefc96a956073d9844" category="list-text">使用還原自動恢復<block ref="6f0c6616b99fea33a3020e0e0dcbe3c6" prefix=" " category="inline-code"></block> 命令。</block>
@@ -10896,7 +10892,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="56632d1795a7d32b89a455a3b633b7f5" category="list-text">打開架子電源並使用此步驟開始時的動畫設定架 ID。</block>
   <block id="6a3ffb8f58252e034e90b5eb7a9cc233" category="list-text">打開架子電源並使用此步驟開始時的動畫設定架 ID。</block>
   <block id="cb102c5c1eccde9b442d1de001f76cc3" category="image-alt">卸下控制器蓋</block>
-  <block id="8fca7d700183532fd08f68b674a86c60" category="image-alt">打開控制器</block>
   <block id="6abebf9335209d6b986ad1d41e48f43b" category="image-alt">更換夾層卡</block>
   <block id="9f8a96e46f0e86179108737100c29b9d" category="list-text">重新安裝控制器蓋。</block>
   <block id="627450f7182bd50247300c6db6f17129" category="image-alt">移除 PCI 模組</block>
@@ -15016,4 +15011,48 @@ SFP+ （目標 / 啟動器）</block>
   <block id="284f3d864e67ec64454ad1382833e490" category="summary">尋找適用於您 NetApp 儲存架型號的 NVMe 儲存架模組更換步驟。本參考資料提供 NS224 和 NX224 儲存架 NSM 更換流程的詳細步驟連結，幫助您快速找到適用於您特定儲存架型號的正確步驟。</block>
   <block id="a461d5a3ec6eff00835d5b1479552285" category="doc">依平台系列的 NVMEM 或 NVRAM 電池更換程序</block>
   <block id="66439d0b114daf635ee9ba53d5e8d568" category="summary">系統機櫃支援不同的配電單元類型。PDU 符合 NEMA 或 IEC 標準。</block>
+  <block id="bb67cf9a22f6bca036da3944f082f70d" category="admonition">在關閉故障控制器護蓋之前，請確保所有空 DIMM 插槽上的退出卡榫已完全回復至鎖定位置。</block>
+  <block id="669e934b15627ccb89dc33fcabeddbfb" category="paragraph">如果 FAS2820 系統中的夾層卡發生故障，請更換該夾層卡；或者，透過安裝新卡將其升級到不同的協定。</block>
+  <block id="188325fb14c01076ac7986e006024318" category="list-text">此程序適用於您系統支援的任何 ONTAP 版本。</block>
+  <block id="ac252143999e21b283146112dd2be869" category="list-text">將夾層卡更換為相同類型或不同類型。</block>
+  <block id="fe8724291ba433d10b4fcf50b8fb75e8" category="list-text">關閉控制器之前，請記下 ifgrp 和 VLAN 資訊。</block>
+  <block id="f161beffd589a67ef92732e9b253cdd7" category="list-text">如果變更夾層卡類型，請在控制器重新啟動後變更 LIF 和連接埠設定。</block>
+  <block id="449e834456e7e68b70b454418fba97ab" category="list-text">確認所有其他系統元件均正常運作。如果問題仍然存在，請聯絡技術支援。</block>
+  <block id="5bff8c12368fa11b6a921de13c7b88c4" category="list-text">如果您要變更夾層卡類型，請擷取受損節點的 ifgrp 和 VLAN 資訊。</block>
+  <block id="f8d7ee81ae11933d89c54b63f5fadf14" category="paragraph">拆下控制器模組及其護蓋。</block>
+  <block id="209665c3ca401651aef828199962e8e6" category="list-text">鬆開魔鬼氈綁帶，記下纜線的連接位置，然後拔下系統纜線和 SFP（如果需要）。</block>
+  <block id="3cd42af34b01ed058f7c2cd55e0996dd" category="paragraph">將纜線留在纜線管理裝置中，以保持整齊有序。</block>
+  <block id="7b0ea8fe43bfe3b98d824632eff95227" category="list-text">鬆開凸輪把手鎖扣，將其完全打開，然後將控制器模組從機箱中拉出。</block>
+  <block id="98218aa7f65c228232e406628bf68c52" category="list-text">將控制器翻過來，放在平坦穩定的表面上。</block>
+  <block id="c423597c377723410ddff79391c30184" category="list-text">按下控制器模組側面的藍色按鈕以釋放護蓋。向上旋轉護蓋並將其從控制器模組上取下。</block>
+  <block id="049bcfe9f533b1ce55e8c569103ad005" category="list-text">將替換夾層卡上的連接器與主機板上的插槽對齊，然後輕輕地將卡片正對著插槽插入。</block>
+  <block id="9995c7de2e4f28bd5897f9cddbfb7fe2" category="list-text">將控制器模組蓋裝回並鎖好。</block>
+  <block id="8b9e2d3291c598b800be072b8afefa3b" category="section-title">步驟 4：安裝並重新啟動控制器模組</block>
+  <block id="df34b20e74975704c940ac43d85db1a0" category="paragraph">重新安裝並重新啟動控制器模組。</block>
+  <block id="aa8d1cbe476192b8bca04b6db3820a20" category="list-text">輕輕地將控制器模組推入機箱一半深度。</block>
+  <block id="f537a6f2f3860f6a3385b2dba60ee50d" category="list-text">視需要重新連接系統纜線。</block>
+  <block id="f44818abfdb464a54383bded154be7a6" category="list-text">打開凸輪手柄，用力將控制器模組推入至完全就位。關閉凸輪手柄進行鎖定。</block>
+  <block id="3caa3f6c101dc917e6e89ed7e891e2e7" category="list-text">用魔鬼氈將纜線固定到纜線管理裝置上。== 步驟 5：重新配置夾層卡（如果類型已變更）</block>
+  <block id="e705f3e2e1683e9fdc37c829b76df435" category="paragraph">控制器重新啟動後，如果您更換了不同類型的卡，請將夾層卡設定變更為與新卡相符。</block>
+  <block id="4a75ad40a6302b2865f475233d3fb5e5" category="open-title">選項 1：光纖通道至乙太網路夾層卡</block>
+  <block id="3eab4e5e3f38a487e4c0ff8986b53620" category="paragraph">視需要更新 LIF 和連接埠設定，以設定乙太網路替換夾層卡。</block>
+  <block id="5f0a91ebda5419c9dae2884b55adbe74" category="list-text">使用 <block ref="838c4deb1e9c47dcd4c44b6e40276467" prefix=" " category="inline-code"></block> 指令確認新的連接埠名稱和連結狀態。</block>
+  <block id="3efcada16cb2f3e01caddea484618416" category="list-text">在新乙太網路夾層連接埠上重建所有 ifgrp 和 VLAN。</block>
+  <block id="6e2960cee1a644afd90e3d3b838fd123" category="list-text">將新連接埠或 ifgrp/VLAN 連接埠放入正確的廣播網域和 IPspace，並設定 MTU 值。</block>
+  <block id="4c56c513928e3bd961610cfdc822c8d9" category="list-text">更新受影響的 LIF 主連接埠和容錯移轉設定。</block>
+  <block id="a795d709ecd423b1744a5ef88448d471" category="list-text">刪除不再需要的 LIF。</block>
+  <block id="2379f006c7634c9a3930eb53207e352b" category="inline-link-macro">了解 ONTAP 網路連接埠組態</block>
+  <block id="b98137e3a1d1b6f4b29e605a6485919a" category="paragraph">如需在 ONTAP 中設定乙太網路的詳細資訊，請參閱 <block ref="cb17047b6380f83ae8de9ed3ea1a53d8" category="inline-link-macro-rx"></block>。</block>
+  <block id="52a696c40ad570403490bdec6c48e094" category="open-title">選項 2：乙太網路至光纖通道夾層卡</block>
+  <block id="e9e71980f309166c903d0c3d71389741" category="paragraph">視需要更新 LIF 和連接埠設定，以設定替換的 FC 中介卡。</block>
+  <block id="fea1b58373a99298346b2ee3c42f7a8e" category="list-text">在相關的 SVM 上啟用 FCP。建立新的資料 LIF。</block>
+  <block id="da9bb3b5a73b19eb3674470b3621051d" category="list-text">更新網路結構分區和主機路徑。根據需要更新 portset、igroup 和 LUN 對應。</block>
+  <block id="87160066c3c44a03aee7080e00432c64" category="list-text">驗證主機多重路徑。確認沒有過時的路徑，且路徑在最佳化和非最佳化路徑之間保持平衡。</block>
+  <block id="062a9fa0f81c39da805029b15f680004" category="list-text">確認沒有 LIF 連接到已移除的乙太網路連接埠、所有 FC LIF 都已啟動並提供 I/O 服務，且 AutoSupport 監控反映了新的組態。</block>
+  <block id="563c6fa09f1e284ce85546393fc8feb8" category="inline-link-macro">SAN 管理概述</block>
+  <block id="63018430f374d831226e536d0e46ce53" category="paragraph">如需在 ONTAP 中設定光纖通道的詳細資訊，請參閱 <block ref="02b029a61c3a3a6905adcb1c22e947fd" category="inline-link-macro-rx"></block>。</block>
+  <block id="b677c618703db10bec968500a7722ccc" category="section-title">步驟 6：將控制器恢復正常運作</block>
+  <block id="21eb4ba3e07d5691bb2ca2aeeaea8fca" category="paragraph">將儲存設備歸還給受損的控制器、還原自動歸還、並結束 AutoSupport 維護時段。</block>
+  <block id="b0cf17c34e1e13a80699938c1fb9a3a1" category="list-text">從運作正常的控制器或叢集管理員提示下，透過還原其儲存設備使控制器恢復正常運作：<block ref="30edaf7c9fa43c78aeaf4b8fabb7af1a" prefix=" " category="inline-code"></block></block>
+  <block id="5a1c9794f830d65f2a212554cf798ab8" category="admonition">在關閉故障的 NSM 蓋之前、請確保所有空 DIMM 插槽上的退出卡榫已完全返回鎖定位置。</block>
 </blocks>
