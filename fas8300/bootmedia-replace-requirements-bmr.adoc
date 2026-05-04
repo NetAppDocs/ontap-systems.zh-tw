@@ -15,8 +15,17 @@ summary: 在更換FAS8300或FAS8700系統中的啟動介質之前，請確保滿
 
 自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 
+[NOTE]
+====
+NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在執行此程序時採取下列行動：
+
+* 在維護期間保持 AutoSupport 啟用狀態。這樣一來，如果發生問題，NetApp 支援人員就能收到診斷資訊。
+* 啟用所有 CLI 工作階段的工作階段記錄。這會建立維護活動期間所有命令和系統輸出的完整記錄。如需如何啟用工作階段記錄的指引，請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["如何設定 PuTTY 以獲得與 ONTAP 系統的最佳連線"^]。
+
+
+====
 * 您必須使用與從 NetApp 收到的容量相同的替換 FRU 元件來更換故障元件。
-* 驗證受損控制器上的 e0M（扳手）連接埠是否已連接且沒有故障。
+* 確認故障控制器上的 e0S 介面 (e0M 扳手連接埠) 沒有故障。
 +
 e0M 連接埠用於在自動啟動復原過程中在兩個控制器之間進行通訊。
 

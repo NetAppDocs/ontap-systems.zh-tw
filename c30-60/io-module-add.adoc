@@ -4,18 +4,24 @@ sidebar: sidebar
 keywords: aff c30, aff c60, add IO module 
 summary: 為您的 AFF C30 或 AFF C60 儲存系統新增 I/O 模組，以增強網路連線能力並擴展系統處理資料流量的能力。 
 ---
-= 新增 IO 模組 - AFF C30 和 AFF C60
+= 新增 I/O 模組 - AFF C30 和 AFF C60
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在您的AFF C30 或AFF C60 儲存系統中新增 I/O 模組，以增強網路連接並擴展系統處理資料流量的能力。
+為您的 AFF C30 或 AFF C60 儲存系統新增 I/O 模組，以增強網路連線並擴充系統的資料流量處理能力。您可以使用此程序將 I/O 模組新增至正在執行的控制器（作為計劃升級）或新增至維護期間發生故障的控制器。
 
 當有可用的插槽或所有插槽都已滿時，您可以將 I/O 模組新增至 AFF C30 和 AFF C60 儲存系統。
 
 .關於這項工作
+無論 HA 對中的控制器目前是否正常運作，您都可以對任一控制器執行此程序。由於無法在正在運作的控制器上新增 I/O 模組，因此必須先關閉目標控制器才能安裝模組。在程序期間，HA 合作夥伴會接管儲存作業，以便讓用戶端仍可使用資料。
+
+* 如果目標控制器是 *operational* （計畫新增），請依照所寫的關機步驟進行，並將目標控制器視為該內容中的「受損」控制器。
+* 如果目標控制器 *受損*，請依照指示執行關機步驟。
+
+
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
 
 儲存系統有三個位置 LED ：一個在操作員顯示面板上，一個在每個控制器上。位置LED會持續亮起30分鐘。
@@ -24,7 +30,9 @@ summary: 為您的 AFF C30 或 AFF C60 儲存系統新增 I/O 模組，以增強
 
 
 
-== 步驟 1 ：關閉受損的控制器模組
+== 步驟 1：關閉目標控制器模組
+
+接手並關閉目標控制器模組，以便其 HA 合作夥伴在您新增 I/O 模組時繼續提供資料。連結的步驟將要關閉的控制器稱為「受損」控制器；無論您是為了計劃性新增而接管運作中的控制器，還是關閉已經受損的控制器，這些步驟都適用。
 
 [role="tabbed-block"]
 ====
@@ -43,7 +51,10 @@ summary: 為您的 AFF C30 或 AFF C60 儲存系統新增 I/O 模組，以增強
 .步驟
 . 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+這樣可以防止在您規劃的維護視窗期間自動建立支援案例。最長抑制時間為 72 小時。如果您的維護提前完成，您可以透過呼叫包含 `MAINT=END`的 AutoSupport 訊息來重新啟用案例建立功能。如需詳細資訊，請參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["如何在排程維護期間抑制自動建立案例"^]。
 
 +
 下列AutoSupport 資訊不顯示自動建立案例兩小時：
@@ -108,7 +119,10 @@ summary: 為您的 AFF C30 或 AFF C60 儲存系統新增 I/O 模組，以增強
 .步驟
 . 如果啟用了「支援」功能、請叫用下列消息來禁止自動建立個案AutoSupport AutoSupport ：
 +
-`system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
+
++
+這樣可以防止在您規劃的維護視窗期間自動建立支援案例。最長抑制時間為 72 小時。如果您的維護提前完成，您可以透過呼叫包含 `MAINT=END`的 AutoSupport 訊息來重新啟用案例建立功能。如需詳細資訊，請參閱 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92["如何在排程維護期間抑制自動建立案例"^]。
 
 +
 下列AutoSupport 資訊不顯示自動建立案例兩小時：

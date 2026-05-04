@@ -4,6 +4,15 @@
 
 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版本選擇正確的解決方法。
 
+[NOTE]
+====
+NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在執行此程序時採取下列行動：
+
+* 在維護期間保持 AutoSupport 啟用狀態。這樣一來，如果發生問題，NetApp 支援人員就能收到診斷資訊。
+* 啟用所有 CLI 工作階段的工作階段記錄。這會建立維護活動期間所有命令和系統輸出的完整記錄。如需如何啟用工作階段記錄的指引，請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["如何設定 PuTTY 以獲得與 ONTAP 系統的最佳連線"^]。
+
+
+====
 * 所有磁碟機櫃都必須正常運作。
 * 如果您的系統是HA配對、健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
 * 如果您的系統採用MetroCluster 不必要的組態、您必須檢閱一節 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"] 判斷您是否應該使用此程序。
@@ -24,9 +33,5 @@
 ** _replacement控制器是取代受損控制器的新控制器。
 ** _Healthy控制器是正常運作的控制器。
 
-
-* 您必須將控制器的主控台輸出擷取至文字檔。
-+
-這會提供程序記錄、以便您疑難排解在更換程序期間可能遇到的任何問題。
 
 

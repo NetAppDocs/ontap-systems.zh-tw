@@ -15,6 +15,15 @@ summary: 在更換ASA A800系統的控制器之前，請確保滿足成功更換
 
 檢閱更換控制器模組的需求。
 
+[NOTE]
+====
+NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在執行此程序時採取下列行動：
+
+* 在維護期間保持 AutoSupport 啟用狀態。這樣一來，如果發生問題，NetApp 支援人員就能收到診斷資訊。
+* 啟用所有 CLI 工作階段的工作階段記錄。這會建立維護活動期間所有命令和系統輸出的完整記錄。如需如何啟用工作階段記錄的指引，請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["如何設定 PuTTY 以獲得與 ONTAP 系統的最佳連線"^]。
+
+
+====
 * 所有磁碟機櫃都必須正常運作。
 * 健康的控制器必須能夠接管被替換的控制器（在本程式中稱為受損控制器）。
 * 請勿使用此方法進行控制器升級。請參閱 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["選擇控制器硬體升級程序"]供參考。
@@ -29,10 +38,6 @@ summary: 在更換ASA A800系統的控制器之前，請確保滿足成功更換
 ** 替換控制器是指替換故障控制器的新控制器。
 ** _Healthy控制器是正常運作的控制器。
 
-
-* 將控制器的控制台輸出擷取到文字日誌檔案中。
-+
-這為解決更換過程中出現的任何問題提供了程序記錄。
 
 
 
