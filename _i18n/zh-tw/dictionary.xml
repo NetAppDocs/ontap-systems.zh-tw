@@ -9287,7 +9287,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d16a227aab66041a81c6f88b290eb486" category="section-title">步驟 1 ：連接叢集 / HA 連線</block>
   <block id="134e0586a0879fa097abfb47d5e64dbe" category="open-title">無交換器叢集纜線</block>
   <block id="ee68cf12a16ca46d58bedd8cf9051f32" category="example-title">AFF A30 或 AFF A50 ，含兩個雙埠 40/100 GbE I/O 模組</block>
-  <block id="a8d16746fb80901317600cba36862a10" category="list-text">連接叢集 / HA 互連連線：</block>
   <block id="6780657f10ef4bbe5e784f3b1e7777e3" category="admonition">叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 2 和 4 的 I/O 模組上）。連接埠為 40/100 GbE 。</block>
   <block id="efe3bfda2c730f42fd2741bc4722e6f0" category="list-text">纜線控制器 A 連接埠 E2A 至控制器 B 連接埠 E2A 。</block>
   <block id="064b137ca9cfb01af5cef5f59d057fe2" category="list-text">纜線控制器 A 連接埠 E4A 至控制器 B 連接埠 E4A 。</block>
@@ -9313,10 +9312,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b53a4effb80334f95a8d3a106ebd8d78" category="paragraph">*40/100 GbE 叢集 / HA 互連纜線 *</block>
   <block id="b0f68808f5130fe93780d063d5a249ef" category="image-alt">叢集 HA 40/100 GbE 纜線</block>
   <block id="fdf9561d280feaca372af24a497c913c" category="image-alt">使用兩個 100GbE IO 模組的 A30 和 A50 交換式叢集佈線圖</block>
-  <block id="03b14fd60bbaa553460ca8bf5858ac71" category="list-text">將控制器連接至叢集網路交換器：</block>
   <block id="2cfaddf7a4d44f5351fdb0ee36c9c36b" category="list-text">纜線控制器 A 連接埠 e4b 至叢集網路交換器 B</block>
   <block id="04fca3f1f2d55aeb84370ab3e66d9214" category="list-text">纜線控制器 B 連接埠 e4b 至叢集網路交換器 B</block>
-  <block id="044628848918241f36841cbeb4d4dc4e" category="admonition">叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 10/25 GbE 。</block>
   <block id="9d14c26ccbbb0d65a3b5d05e2013404b" category="paragraph">*10/25 GbE 叢集 / HA 互連纜線 *</block>
   <block id="7f99cbc2aa28ab9fed6e99fa94242b4a" category="section-title">步驟 2 ：連接主機網路連線</block>
   <block id="8246042d23ca859d83185957ac9c4044" category="paragraph">在每個控制器上，使用纜線連接埠 e2b 和 e4b 連接乙太網路主機網路交換器。</block>
@@ -9331,18 +9328,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c053ea984f8ec26545ef5a0f8e3c516b" category="paragraph">*10/25 GbE 纜線 *</block>
   <block id="53b32e6926c94a5a2ab06b2fe3836135" category="image-alt">連接至 64GB 光纖信道主機網路交換器的纜線</block>
   <block id="945babbf23a8741321d27a1c4a0c4200" category="section-title">步驟 3 ：連接管理網路連線</block>
-  <block id="b88fb46fa64622aa179b7b543ddf13a5" category="paragraph">將控制器連接至管理網路。</block>
   <block id="e42848811631f979cb5744f72268013a" category="list-text">將每個控制器上的管理（扳手）連接埠連接到管理網路交換器。</block>
   <block id="cc9dc8ff5d926a2f202e16be7619d147" category="section-title">步驟 4 ：連接機櫃連接線</block>
   <block id="63a714a4848b4ea90e8f63ae1efc6250" category="paragraph">本程序說明如何將控制器連接至一個 NS224 機櫃。</block>
   <block id="02b0ddc9c51a6fd3d072763fb5b859f3" category="list-text">如需儲存系統支援的最大機櫃數量，以及所有纜線選項（例如光纖和交換器連接），請參閱<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="302158186d4e933e7fd1df5cef7e5e27" category="list-text">圖形顯示控制器 A 的藍色纜線和控制器 B 的黃色纜線。</block>
-  <block id="252938adaa820c554614fbc402a51423" category="list-text">將控制器A纜線連接至機櫃：</block>
   <block id="3c4324a5217fea116e9e54ac43c2946d" category="list-text">纜線控制器 A 連接埠 e3a 至 NSM A 連接埠 e1a 。</block>
   <block id="3146f6e92eca07f5f546ef1fab1f08db" category="list-text">纜線控制器 A 連接埠 e3b 至 NSM B 連接埠 e1b 。</block>
   <block id="c4026e3ae600ac06e1796e4025a51f22" category="inline-image-macro">控制器 A 連接埠 e3a 和 e3b 連接至一個 NS224 機櫃</block>
   <block id="5b9ac89947f29d7d4db86ad300db69d3" category="paragraph"><block ref="5b9ac89947f29d7d4db86ad300db69d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f267ad5aad3c1a8c5c19c559fb9d2b34" category="list-text">將控制器B纜線連接至機櫃：</block>
   <block id="9640655140834664cdff76358e447096" category="list-text">纜線控制器 B 連接埠 e3a 至 NSM B 連接埠 e1a 。</block>
   <block id="b0e91ffa1bef20547911449f7a3300db" category="list-text">纜線控制器 B 連接埠 e3b 至 NSM A 連接埠 e1b 。</block>
   <block id="a7232cb75808a8e7cf49cc148792b59d" category="inline-image-macro">控制器 B 連接埠 e3a 和 e3b 連接至一個 NS224 機櫃</block>
@@ -9708,9 +9702,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="34f650ca44fabe66ff7e4095a137da22" category="list-text">確保儲存系統中的所有其他元件都能正常運作；否則，請先聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>再繼續。」</block>
   <block id="d48b3cfe096b47bcb7f13e683c934beb" category="paragraph">將控制器連接至乙太網路或 FC 主機網路。</block>
   <block id="bb8661c49545cac68358046e25b8f950" category="open-title">乙太網路主機纜線</block>
-  <block id="3c90cea8d34e6c024dcfcf7fbe2bc396" category="example-title">AFF A20 ， A30 或 AFF A50 ，搭配一個 4 埠 10/25 GbE I/O 模組</block>
   <block id="91ca13b03c277f557b91f705d4455de5" category="open-title">FC 主機纜線</block>
-  <block id="45adc6168b3bfdd0a69aad7185cab6d2" category="example-title">AFF A20 ， A30 或 AFF A50 ，搭配一個 4 埠 64 Gb/s FC I/O 模組</block>
   <block id="5b903193757e7495dce32499ded20f07" category="paragraph">安裝儲存系統之前，必須符合安裝需求。</block>
   <block id="82f66f7658dd53410415bd1c67e9ccad" category="paragraph">為了準備安裝，請準備好場地，檢查環境和電力需求，並確保有足夠的機架空間。然後，打開設備包裝，將內容物與裝箱單進行比較，並註冊硬體以取得支援效益。</block>
   <block id="c273a3f4ab5c9add6857208b8a70d10e" category="example-title">AFF C30 或 AFF C60 搭配一個 4 埠 10/25 GbE I/O 模組</block>
@@ -10475,7 +10467,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="176d935f21584d13a73cc2fee6d2006f" category="paragraph">安裝 FAS50 儲存系統硬體後，請將控制器連接至網路和機櫃。</block>
   <block id="e7bd234f89aa10fe2a25ab70f1881386" category="example-title">FAS50 配備一個雙埠 40/100 GbE I/O 模組</block>
   <block id="ab0929853066bc5afff8f565bc7e138d" category="image-alt">使用一個 100GbE IO 模組的無交換器叢集佈線圖</block>
-  <block id="f5e2edd1a08f37ae784f4706be49b73d" category="admonition">叢集互連流量和 HA 流量共用相同的實體連接埠（位於插槽 4 的 I/O 模組上）。連接埠為 40/100 GbE 。</block>
   <block id="587bed5e1b1013acb3b0cad78e0dc97f" category="inline-image-macro">使用一個 100GbE IO 模組的 fas50 交換式叢集佈線圖</block>
   <block id="5af61e2d32561bdfd725b4ff1abad33d" category="paragraph"><block ref="5af61e2d32561bdfd725b4ff1abad33d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="30116aad52f0bad698fa0cb2a523a7d2" category="example-title">FAS50 配備一個 4 埠 10/25 GbE I/O 模組</block>
@@ -10487,7 +10478,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="41f30de602f778bd37fd94cde0e93d98" category="paragraph">其他支援的 SAS 磁碟櫃的纜線類似。請參閱。 <block ref="c0d7aa9ee22aab3ecf7bf0fe7732f94e" category="inline-link-macro-rx"></block>您也可以參閱<block ref="f178d666cc0e8ba0d12eda1a67319fdb" category="inline-link-macro-rx"></block>。</block>
   <block id="0bf36a9d3e5241c7c2a803cca8393af0" category="list-text">如需儲存系統支援的最大機櫃數量，以及所有的纜線選項，例如光纖和交換器連接選項<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>，請參閱。</block>
   <block id="72d885b36f3dabe9e44ce371442073d6" category="list-text">您可以使用儲存系統隨附的儲存纜線，其纜線類型可能如下：</block>
-  <block id="72f4035027f2f7ca82b0a522cc86f866" category="open-title">選項 1 ：一個 DS460C 機櫃</block>
   <block id="1475db94c866c1134ab5b90020f91d8e" category="paragraph">將每個控制器連接至 DS460C 機櫃上的每個 IOM12 模組。</block>
   <block id="4148c23baf0acb2d5a889bf39e98d451" category="list-text">纜線控制器 A 連接埠 3a 至 IOMA 連接埠 1 。</block>
   <block id="83622a8ebd61bb324e46d859d063a629" category="list-text">纜線控制器 A 連接埠 3D 至 IOMB 連接埠 3 。</block>
@@ -10497,19 +10487,15 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e8849143d50daef61f19b6d8a620b759" category="list-text">纜線控制器 B 連接埠 3D 至 IOMA 連接埠 3 。</block>
   <block id="ef1647c46666dea72c87973140aae982" category="inline-image-macro">控制器 B 連接埠 3a 和 3D 連接至一個 DS460C 機櫃</block>
   <block id="e4c4ceb79fe5729418dba70f3d3a4b6f" category="paragraph"><block ref="e4c4ceb79fe5729418dba70f3d3a4b6f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fd4b8702e1fece6900211aed1df08297" category="open-title">選項 2 ：兩個 DS460C 機櫃</block>
   <block id="d5b0fb86b04fadb04b2c1aabdc682124" category="paragraph">將每個控制器連接至兩個 DS460C 機櫃上的 IOM12 模組。</block>
-  <block id="92b6981d91e56c51ed8cd81ceb0c2725" category="list-text">纜線連接機櫃與機櫃：</block>
   <block id="4a433061aeb5f5489a4f6f2c6998431e" category="list-text">纜線架 1 IOMA 連接埠 3 至機架 2 IOMA 連接埠 1 。</block>
   <block id="953e03d7a579b26571697352f2be0e05" category="list-text">纜線架 1 IOMB 連接埠 3 至機架 2 IOMB 連接埠 1 。</block>
   <block id="123ab7e1c9141cb0b7e7b712d202404a" category="inline-image-macro">纜線架與機櫃連接</block>
   <block id="5b5c504f96f7bd830b1746878c952c52" category="paragraph"><block ref="5b5c504f96f7bd830b1746878c952c52" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="32711258ec649d276f0febe359183174" category="list-text">將控制器A纜線連接至磁碟櫃：</block>
   <block id="8a077fe26258a791808f6c79d3bb7497" category="list-text">纜線控制器 A 連接埠 3a 至機櫃 1 IOMA 連接埠 1 。</block>
   <block id="3b49545c9e32c779ba99005b8bdb4459" category="list-text">纜線控制器 A 連接埠 3D 至機櫃 2 IOMB 連接埠 3 。</block>
   <block id="262e032c06dfbe5a4f5e5984c10f93a8" category="inline-image-macro">控制器 A 連接埠 3a 和 3D 連線至兩個 DS460C 機櫃</block>
   <block id="f55c64664eae8ba733b8672a7ff524f8" category="paragraph"><block ref="f55c64664eae8ba733b8672a7ff524f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7a6143a096aca12e23bfad9f1d41fe20" category="list-text">將控制器B纜線連接至磁碟櫃：</block>
   <block id="0b811f09e9eac5e37e239a12858a54c1" category="list-text">纜線控制器 B 連接埠 3a 至機櫃 1 IOMB 連接埠 1 。</block>
   <block id="01c7cda26a7b465d1c56f741d328e967" category="list-text">纜線控制器 B 連接埠 3D 至機櫃 2 IOMA 連接埠 3 。</block>
   <block id="60fee2ee2c3e768d10719c680fb38afb" category="inline-image-macro">控制器 B 連接埠 3a 和 3D 連線至兩個 DS460C 機櫃</block>
@@ -10647,9 +10633,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9cb7b36b3f2bccc776862e6f2f494077" category="list-text">e1a</block>
   <block id="03c334f1a71e7086b1987bb740b5b995" category="paragraph"><block ref="03c334f1a71e7086b1987bb740b5b995" category="inline-image-macro-rx" type="image"></block></block>
   <block id="149908e216dc72e0533f69ab126aad8f" category="doc">將控制器交回 AFF C30 和 AFF C60</block>
-  <block id="d577eb8153a8191824e900c199f4adb5" category="image-alt">使用兩個 100GbE IO 模組的 A30 和 A60 無交換式叢集佈線圖</block>
-  <block id="b36b92a50cc219291b67a5511975b913" category="image-alt">使用一個 100GbE IO 模組的 A30 和 A60 無交換式叢集佈線圖</block>
-  <block id="ccea46e36f76a430c118e619834cee72" category="image-alt">使用兩個 100GbE IO 模組的 A30 和 A60 交換式叢集佈線圖</block>
   <block id="526ef9ab51ab95d97249aac6cc69c855" category="doc">將控制器交回 AFF C80</block>
   <block id="f114d3932a75433b75f66fa15d3b0340" category="list-text">控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。</block>
   <block id="6ba9035799414ab848820232d6755ea3" category="paragraph">DRW_autodimation_控制 器 _Select_ieops-1849.svg[ 選取 ONTAP 圖示 ]</block>
@@ -13587,8 +13570,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="53293de4445d9809b5beb36bf8b2bdd2" category="list-text"><block ref="53293de4445d9809b5beb36bf8b2bdd2" category="inline-link-macro-rx"></block></block>
   <block id="b1a10fdec821bde7511fcf1b956e5382" category="paragraph"><block ref="b6b8a8462966204b648f1ae9c887611d" category="inline-link-macro-rx"></block>。</block>
   <block id="8a484401787078890bc1e7fd9beb44fb" category="sidebar">NSM 更換程序</block>
-  <block id="9dd7ce2f864cf38177fc70779cbe6635" category="sidebar">AFF A70概述</block>
-  <block id="045d04f83b324cbd691c0a2eef106f65" category="sidebar">AFF A90概述</block>
   <block id="dcb60d37ecd73502c4c85283951d3ef3" category="paragraph">使用 100 GbE 電纜將控制器 A 和 B 的 e1a 和 e7a 連接埠連接到叢集網路交換器 A 和 B。</block>
   <block id="bb7f8ab7bb4d8aa48ac1718817f85e14" category="list-text">捐贈完成後，運行<block ref="48865c7c1d8013246e4e5f705a9105de" category="inline-link-rx"></block>驗證儲存系統的運作狀況，並修正遇到的任何問題。</block>
   <block id="348d4833794229229acf56a65271f1b1" category="paragraph">更換啟動介質，該介質位於控制器背面的系統管理模組內。</block>
@@ -15050,4 +15031,21 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9032ec2413add8bae5c7091ded2efd15" category="paragraph">使用 25 GbE 叢集互連纜線將叢集互連連接埠彼此連接起來</block>
   <block id="ae50728003d401e456e4268de55cb82f" category="list-text"><block ref="22c13bbaef49007250d4766c3983eb52" category="inline-xref-macro-rx"></block></block>
   <block id="c8319347335872bf1fd4bd3b782289bd" category="paragraph">在更換 FAS8300 或 FAS8700 系統中的開機媒體之前，請確保滿足成功更換的必要條件。這包括確認您擁有正確的替換開機媒體，確認故障控制器上的 e0S（e0M wrench）連接埠沒有故障，以及確定 Onboard Key Manager（OKM）或 External Key Manager（EKM）是否已啟用。</block>
+  <block id="9f111fc1eda18bc0e82125c03d816b62" category="paragraph">當兩個控制器直接相互連接而不使用叢集網路交換器時，請使用此佈線選項。</block>
+  <block id="5580d6ef55888e18898368c925aa8e52" category="paragraph">將插槽 2 和 4 中 I/O 模組上的叢集 / HA 互連連接埠接上纜線。</block>
+  <block id="97946d7a89e89a736323c25878b34550" category="paragraph">將插槽 4 中 I/O 模組上的叢集 / HA 互連連接埠接上纜線。</block>
+  <block id="d5029cecd62f8760a4e59f4e1ded8188" category="paragraph">當控制器連接到叢集網路交換器而不是直接相互連接時，請使用此佈線選項。</block>
+  <block id="78cf93b0fe428a0be986a2c28a10216f" category="paragraph">將插槽 2 和 4 中 I/O 模組上的叢集 / HA 互連連接埠透過纜線連接至叢集網路交換器。</block>
+  <block id="8c36cb2a1e1d7f5dc821ce32ab2aad17" category="paragraph">將插槽 4 中 I/O 模組上的叢集 / HA 互連連接埠連接至叢集網路交換器。</block>
+  <block id="108e7b770dea3f3fb9b6db30c0e7b0f6" category="paragraph">根據 I/O 模組組態，使用適當的連接埠將控制器連接至乙太網路主機網路。</block>
+  <block id="5e8a0cb1b4d7dcff26906f3e887b61e7" category="paragraph-title">AFF A20、AFF A30 或 AFF A50，配備一個 4 埠 10/25 GbE I/O 模組</block>
+  <block id="1c1b2907a48ad79cead7728a563058b8" category="paragraph">使用系統中的 FC I/O 模組將控制器連接至光纖通道主機網路。</block>
+  <block id="45101dabe48484da8329d9f4ce2fe9f3" category="paragraph-title">AFF A20、AFF A30 或 AFF A50，配備一個 4 埠 64 Gb/s FC I/O 模組</block>
+  <block id="c5189f4a776457dc21c60d6f43c07b75" category="image-alt">使用兩個 100GbE I/O 模組的 c30 和 c60 無交換器叢集佈線圖</block>
+  <block id="5907445d3493356c9bc5fa236dc3bb3e" category="image-alt">使用單一 100GbE I/O 模組的 c30 和 c60 無交換器叢集佈線圖</block>
+  <block id="8bb4519e94b250398d3a201fc380c5ad" category="image-alt">使用兩個 100GbE I/O 模組的 c30 和 c60 交換式叢集佈線圖</block>
+  <block id="767e4ed898ca6cd698046f422d170efa" category="section-title">一個 DS460C 機櫃</block>
+  <block id="6b7f864bd91be16ace313bfe44f12e71" category="section-title">兩台 DS460C 磁碟櫃</block>
+  <block id="b62281acd6d6f68b211c9c140acb1de6" category="summary">重新連接系統線纜並重新分配磁碟。</block>
+  <block id="c7585f11abe7b6b5267f9b01ab8db3d3" category="summary">更換控制器模組中的即時時鐘電池。</block>
 </blocks>
