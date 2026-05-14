@@ -8306,12 +8306,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9e4b32259f721cc54024969657de5534" category="paragraph">當需要額外儲存（至內部機櫃）時、您最多可以將兩個 NS224 機櫃熱新增至 ASA A70 或 ASA A90 HA 配對。</block>
   <block id="55ec693931401ff7a634100e33ff8cfd" category="doc">ONTAP 硬體系統的新功能</block>
   <block id="ec6e72d1c4bb7dccdc62b6caf35c95f7" category="sidebar">ONTAP 硬體系統文件</block>
-  <block id="64f78e10c5d8a4db6f25299bf9a418cd" category="sidebar">AFF A 系列和 C 系列系統旨在協助組織更快速地轉型基礎架構、並推動資料導向策略。</block>
-  <block id="d186b8a54af216bfae7a9573dc3dfd54" category="sidebar">AFF 系統文件說明如何安裝、設定及維護 AFF A 系列和 C 系列系統。</block>
-  <block id="8b4ad289620e7b0611000ddd6fa583c3" category="sidebar">安裝及設定 A 系列系統</block>
-  <block id="c91d48fe9284f4d299615b787ff7c882" category="sidebar">安裝和設定 C 系列系統</block>
-  <block id="d82b198ed12fecd580981b34c4959490" category="sidebar">維護 A 系列系統</block>
-  <block id="e32ee65ffedbf05873ffce177cee51b5" category="sidebar">維護 C 系列系統</block>
   <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2 儲存系統文件可讓您安裝、設定及維護 ASA R2 系統。</block>
   <block id="e995d56efd9e31d97825dd79be4d1383" category="sidebar">瞭解 ASA R2 儲存系統</block>
   <block id="aa0dbb314a1c2c27148345705facc55c" category="sidebar">安裝及維護 ASA R2 系統</block>
@@ -8328,8 +8322,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2a2dfadb84e98697260fabd8a1ba63ea" category="sidebar">您可能需要在硬體上執行維護程序。本節說明維護 ASA r2 系統元件的特定程序。</block>
   <block id="9823a9d702614ebe046cb789d32b241d" category="sidebar">瞭解如何維護 ASA R2 系統。</block>
   <block id="8cf7baf96983d1c70a286576ddcd0ca1" category="sidebar">ASA A70 和 ASA A90</block>
-  <block id="91be56ff709f018bb7b1a4c33c68d316" category="sidebar">A 系列系統</block>
-  <block id="078c4b575f196efdc8ec79e58f26db9f" category="sidebar">C 系列系統</block>
   <block id="2d0e9a7694bf5bc701c3af145a6bba71" category="sidebar">檢閱要求</block>
   <block id="f76aaf3aaa7b30238e7a3e2b1a04493b" category="sidebar">準備安裝</block>
   <block id="03f15d4e5abe2379224af55ea714e8fd" category="sidebar">ASA A70 和 ASA A90 系統</block>
@@ -9781,7 +9773,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="38ae227cf94e3775806bccfd95814d4b" category="paragraph"><block ref="035b082bfaf23bf2d7b95c3ef597d380" prefix="" category="inline-code"></block></block>
   <block id="a5e51e5f50ca83720f1d0d8b17c1e93b" category="list-text">這些程序顯示一般組態。具體的佈線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="e5f780ef73bd41c1dd64af7a1a1a31ac" category="paragraph">將控制器連接至 ONTAP 叢集。此程序會因您的儲存系統機型和 I/O 模組組組態而異。</block>
-  <block id="0990249c3bba6596b74be9af46837266" category="list-text">將控制器 A 上的連接埠 e7a 連接至控制器 B 上的連接埠 e1a</block>
   <block id="18695b824b22d82a916970e4903bf31d" category="paragraph">使用 100 GbE 纜線將連接埠 e1a 連接至 e1a ，並將連接埠 e7a 連接至 e7a 。</block>
   <block id="3b29102e499249644dff327644d96081" category="list-text">將連接埠 e9a 和 e9b 連接至乙太網路資料網路交換器。</block>
   <block id="c7900e3ee1f4eb935f449465b57ad5c1" category="paragraph">使用 1000BASE-T RJ-45 纜線，將每個控制器上的管理（扳手）連接埠連接到管理網路交換器。</block>
@@ -9812,7 +9803,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8019bdcaff5849ab8015533c8674f305" category="paragraph">將每個控制器連接至兩個 NS224 機櫃上的 NSM 模組。圖形顯示控制器 A 的藍色纜線和控制器 B 的黃色纜線。</block>
   <block id="546125971d4fce23d0f562118f0ce95f" category="open-title">選項 3 ：兩個 DS460C 機櫃</block>
   <block id="8994222dc8e3118b755e00531cef6a1c" category="paragraph">將每個控制器連接至兩個 DS460C 機櫃上的 IOM 模組。圖形顯示控制器 A 的藍色纜線和控制器 B 的黃色纜線。</block>
-  <block id="d42c87e93d80bf28fffc01d7bb494eb2" category="list-text"><block ref="d42c87e93d80bf28fffc01d7bb494eb2" category="inline-link-macro-rx"></block></block>
   <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">準備更換</block>
@@ -15048,4 +15038,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6b7f864bd91be16ace313bfe44f12e71" category="section-title">兩台 DS460C 磁碟櫃</block>
   <block id="b62281acd6d6f68b211c9c140acb1de6" category="summary">重新連接系統線纜並重新分配磁碟。</block>
   <block id="c7585f11abe7b6b5267f9b01ab8db3d3" category="summary">更換控制器模組中的即時時鐘電池。</block>
+  <block id="4e219191285e6b026a35828fa008670f" category="list-text"><block ref="4e219191285e6b026a35828fa008670f" category="inline-link-macro-rx"></block></block>
+  <block id="f907c55a04055c61d778510e17a75874" category="list-text"><block ref="f907c55a04055c61d778510e17a75874" category="inline-link-macro-rx"></block></block>
 </blocks>
