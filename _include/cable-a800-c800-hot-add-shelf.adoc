@@ -2,12 +2,6 @@
 :allow-uri-read: 
 
 
-.開始之前
-* 您必須已檢閱 link:requirements-hot-add-shelf.html["熱新增需求和最佳實務做法"]。
-* 您必須已完成中的適用程序 link:prepare-hot-add-shelf.html["準備熱新增機櫃"]。
-* 您必須已安裝機櫃、開啟電源、並依照中所述設定機櫃 ID link:prepare-hot-add-shelf.html["安裝用於熱新增的機櫃"]。
-
-
 .步驟
 . 如果您要在每個控制器上使用一組具備切換功能的連接埠（一個具備切換功能的 PCIe 卡）來熱新增一個機櫃、而且這是 HA 配對中唯一的 NS224 機櫃、請完成下列子步驟。
 +
@@ -81,8 +75,3 @@ image::../media/drw_ns224_a800_c800_2shelves_IEOPS-966.svg[新南威爾斯224 a8
 如果產生任何纜線錯誤、請遵循所提供的修正行動。
 
 
-
-.接下來呢？
-如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。前往 link:complete-hot-add-shelf.html["完成熱新增"]。
-
-否則、您就會完成熱新增機櫃程序。

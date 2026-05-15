@@ -1,0 +1,20 @@
+= 
+:allow-uri-read: 
+
+
+當您在 AFF A800 或 AFF C800 HA 配對熱新增第二個磁碟櫃時，您需要將第一個磁碟櫃重新佈線至每個控制器插槽 5 和插槽 3 中的兩組支援 RoCE 的連接埠。
+
+此程序假設現有機櫃透過纜線連接至每個控制器插槽 5 中支援 RoCE 的 PCIe 卡。
+
+.步驟
+. 將第一個機櫃重新佈線至每個控制器插槽 5 和插槽 3 中的兩組支援 RoCE 的連接埠。
++
+.. 在控制器A上、將纜線從插槽5連接埠b（e5b）移至插槽3連接埠b（e3b）。
+.. 在控制器B上重複相同的纜線移動
+
+
+. 使用驗證已重新連接的機架是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+

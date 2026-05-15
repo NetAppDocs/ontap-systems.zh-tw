@@ -1,0 +1,19 @@
+= 
+:allow-uri-read: 
+
+
+如果您不確定應該手動指派磁碟機擁有權、或想要瞭解儲存系統的磁碟機擁有權原則自動指派、請前往 https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html["關於自動指派磁碟擁有權"^]。
+
+.步驟
+. 驗證是否已啟用自動磁碟指派：「torage disk option show」
++
+您可以在任一節點上輸入命令。
+
++
+如果啟用自動磁碟指派，則每個節點的輸出會在 `on`欄中顯示 `Auto Assign`。
+
+. 如果已啟用自動磁碟指派、請停用此功能：「torage disk option modify -node_node_name_-autodassign Off」（磁碟選項修改-node_node_name_-autodassign Off）
++
+您必須停用兩個節點上的自動磁碟機指派。
+
+

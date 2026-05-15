@@ -1143,12 +1143,10 @@
   <block id="1a3890308672bc09a82a2b01bfd856b6" category="list-text">重新安裝系統正面的擋板。</block>
   <block id="1790a5691629705d1dfd90934b6c5f4d" category="doc">叢集組態工作表- AFF Se A700s</block>
   <block id="ee5ff73969a958477db471cca8246c98" category="doc">關閉控制器AFF -現象A700s</block>
-  <block id="e8f8b2e7fe84a76416bedc8340d89ea1" category="doc">纜線櫃作為交換器附加儲存設備- NS224磁碟櫃</block>
   <block id="a94de468f363b57c8cc1ea1b7a532a9e" category="paragraph">如果您的系統需要將NS224磁碟機櫃纜線作為交換器附加儲存設備（非直接附加儲存設備）、請使用提供的資訊。</block>
   <block id="97a30f090fd38397124788f1f0376eda" category="inline-link">VMware交換器文件AFF FAS</block>
   <block id="7c5ee56a01b06b00d2d910cc295d8c56" category="paragraph"><block ref="7c5ee56a01b06b00d2d910cc295d8c56" category="inline-link-rx"></block></block>
   <block id="66c55f70fc7014da19c97d66f75b43e0" category="summary">您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障磁碟機。</block>
-  <block id="100cf583f6cdd16852a08df77146f368" category="doc">熱交換磁碟機- NS224磁碟櫃</block>
   <block id="9e09af22b61dcdd808a9a927f88b99ed" category="list-text">您要安裝的磁碟機必須由NS224機櫃支援。</block>
   <block id="673f7a1f10ce14ef29b06ba53cf1e5d7" category="inline-link">使用CLI進行NetApp加密概述</block>
   <block id="63950e6254e665584c6e0a02f9b4388b" category="paragraph"><block ref="63950e6254e665584c6e0a02f9b4388b" category="inline-link-rx"></block></block>
@@ -1207,7 +1205,6 @@
   <block id="7c13ab1dd022d1e3637dc6d126d99281" category="list-text">如果執行的是（控制器可用於處理資料）、而且機櫃中的所有磁碟機均為無擁有、備援或是外聯Aggregate的一部分、請等待至少70秒。ONTAP</block>
   <block id="93343660fe0c9586be193e558eb4f745" category="paragraph">這次ONTAP 、支援使用者正確刪除舊的機櫃位址、並更新新機櫃位址的複本。</block>
   <block id="5a6ec3ac63a7fb05de2686f31f690298" category="list-text">更換左端蓋。</block>
-  <block id="2cc84b3be9e849adc2789fc0cd994e1b" category="doc">更換即時時鐘電池- NS224磁碟櫃</block>
   <block id="e4882b21497de6fedaf4c9c3b8016faa" category="paragraph">您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障的即時時鐘（RTC）電池。</block>
   <block id="39bb070ebce0f99b6019e129d0f5faf9" category="inline-link">NetApp下載Config Advisor</block>
   <block id="3868a54921a81264bddb64b574765582" category="paragraph"><block ref="3868a54921a81264bddb64b574765582" category="inline-link-rx"></block></block>
@@ -1231,7 +1228,6 @@
   <block id="5260d6b60af6cb8ae138542a4545f3c8" category="paragraph">當電源供應器正常運作時、雙色LED會亮起綠燈。</block>
   <block id="be18329abc2d39cf668517f7b74c32c6" category="paragraph">如果產生任何纜線錯誤、請遵循所提供的修正行動。</block>
   <block id="7ac22c07a9dcb85e963d9fbf1f27178a" category="summary">您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障的DIMM。</block>
-  <block id="1be54ea4e140628405dd1f92cbb65f8e" category="doc">更換DIMM - NS224磁碟櫃</block>
   <block id="ee5bf2cd4b43105d31343a884728a3d4" category="list-text">當您打開更換的DIMM的包裝時、請保留所有包裝材料、以便在退回故障的DIMM時使用。</block>
   <block id="8784146272dd716aac8c73ca366c7cc8" category="list-text">實體識別故障的DIMM。</block>
   <block id="7a53774970ebbc388ee000791ae12db3" category="list-text">更換故障DIMM：</block>
@@ -1244,7 +1240,6 @@
   <block id="cd3a33c660a3471bcf63783151894354" category="paragraph">DIMM底部插針之間的槽口應與插槽中的卡舌對齊。</block>
   <block id="93405e099686118e8a7c5145278ff4d6" category="paragraph">正確插入時、DIMM應可輕鬆插入、但應緊密插入插槽中。如果沒有、請重新插入DIMM。</block>
   <block id="9575090426787707867ccbc79b2a7518" category="list-text">小心地向下推DIMM頂端邊緣、但穩固地推入、直到彈出彈片卡入DIMM兩端的槽口為止。</block>
-  <block id="89d4335ef7ebbfe1db510925f09d4702" category="doc">更換開機媒體- NS224磁碟櫃</block>
   <block id="74f49f6f28d9fd5e7df6f1800c601a73" category="paragraph">您可以在任一控制器的主控台輸入「儲存櫃show -module'命令、以驗證機櫃上的NSM韌體版本。</block>
   <block id="d6d6b039d46a324ed8ec81e6ba9ff295" category="paragraph">用於將開機媒體固定至主機板的螺絲需要使用一號十字螺絲起子；使用不同類型的螺絲起子可能會使螺絲脫開。</block>
   <block id="00aa3f1a6a7c08b0657c7993e5c8b5c3" category="paragraph">這可能需要五分鐘的時間。</block>
@@ -1273,7 +1268,6 @@
   <block id="6f62b455052540a6f03d9666561be1c2" category="admonition">請勿過度施力、否則可能會損壞內部接頭。</block>
   <block id="231d3f36498918bf3f8978127e4be044" category="list-text">確認機櫃操作員顯示面板上的警示（黃色）LED不再亮起。</block>
   <block id="d60624f33844c521f18921a4a9b49842" category="summary">您可以在開啟電源的NS224磁碟機櫃中、以及I/O進行中、不中斷地更換故障的電源供應器。</block>
-  <block id="ce58a339ef0b5aa08e1351185f66a2ec" category="doc">熱交換電源供應器- NS224磁碟櫃</block>
   <block id="e1ad4e3599275cd19a2d7fdf242bd624" category="list-text">如果您要更換多個電源供應器、則必須一次更換一個電源供應器、以便磁碟櫃維持電力。</block>
   <block id="9933eb186a5ed678263e25a456659d04" category="paragraph">如果超過兩分鐘、磁碟櫃會繼續運作、ONTAP 但在更換電源供應器之前、會將降級電源供應器的相關訊息傳送至主控台。</block>
   <block id="48d0ab80f7b5ca9cf8dc1ac2c8c7123a" category="list-text">打開更換用電源供應器的包裝時、請保留所有包裝材料、以便在退回故障的電源供應器時使用。</block>
@@ -1314,7 +1308,6 @@
   <block id="99718262b8a1bcade48d62a6ea4c523c" category="paragraph">否則、請前往下一步。</block>
   <block id="fb1672d3b9cbaeecaea5d014d4664b11" category="list-text">如果您在移除磁碟機所有權時停用自動磁碟機指派、請重新啟用：「torage disk option modify -autodassign on（磁碟選項修改自動指派開啟）」</block>
   <block id="67d6ac4bf6a91c77849e039f6cf3781f" category="paragraph">您可以在兩個控制器模組上執行命令。</block>
-  <block id="9f828d34e3b637190e1077658926821a" category="paragraph">否則、您將完成此程序。</block>
   <block id="e51f4a966b3b35e8279bd6056a17d73d" category="list-text">驗證目前設定用於儲存用途的非專屬連接埠名稱：「儲存連接埠顯示」</block>
   <block id="09717857bd238c15d9fcc102d5404886" category="list-text">完成適用於ONTAP HA配對所執行版本的一系列步驟：</block>
   <block id="08991d0bdf685c94c284280aafed49b0" category="cell">如果HA配對正在執行...</block>
@@ -1327,25 +1320,12 @@
   <block id="d81f7f24384cc4d23a1eb3cdc1f3093b" category="list-text">在第一個控制器模組上重新設定非專用連接埠以供網路使用：「torage port disable-node-node-node-name_-port _port name_」</block>
   <block id="d133f9489f82e1094aeabb56f67bbcb9" category="list-text">確認兩個控制器模組的非專屬連接埠已重新設定為網路使用：「torage port show」（儲存連接埠顯示）</block>
   <block id="ea26f0c009e33e86f172f22d6e190d0a" category="paragraph">如果HA配對執行ONTAP 的是NetApp 9.8或更新版本、非專屬連接埠會在「模式」欄位中顯示「network」（網路）。</block>
-  <block id="d8109bc1e72c67d266f35804a93c0a8d" category="summary">當HA配對符合特定需求、且已完成適用於HA配對的準備工作之後、您可以熱新增NS224磁碟機櫃。</block>
   <block id="2a8cd3ca573de9451e94751347275dc3" category="inline-link-macro">更換快取模組、或新增/更換核心傾印模組（AFF 即：VA700和FAS9000）</block>
-  <block id="0cba540a6f27fb2ed5b8694332213f9d" category="list-text">如果要將機櫃熱新增至已有NS224機櫃的HA配對、HA配對就不會出現任何儲存設備纜線錯誤訊息、而且必須以多重路徑HA的纜線連接。</block>
-  <block id="eb8f45b1db6775caf49b1a0ff7b38f44" category="list-text">連接好熱新增的機櫃之後ONTAP 、即可識別出機櫃：</block>
-  <block id="583e7dd0a618fcea3c1f37593c2e7202" category="list-text">如果啟用自動磁碟機指派、則會指派磁碟機所有權。</block>
-  <block id="97f2d61fca24e47abce33d66ce5427b7" category="list-text">如有需要、應自動更新NSM機櫃韌體和磁碟機韌體。</block>
   <block id="3de1e52644cd0e31c01bd38eb7e3cd32" category="admonition">韌體更新最多可能需要30分鐘。</block>
   <block id="f02a3810a88faed2075af7fdeef6cc0d" category="admonition">如果HA配對執行ONTAP 的是NetApp 9.7或更新版本、則不需要重新啟動控制器、除非其中一個或兩個控制器都處於維護模式。此程序假設兩個控制器都未處於維護模式。</block>
-  <block id="9c421700c0f93ff32ed586c9cde9ac20" category="paragraph">如果HA配對執行ONTAP 的是NetApp 9.8或更新版本、則非專屬連接埠會在「模式」欄中顯示「儲存」。</block>
-  <block id="d0d1f0809de877f29fd0a846c8876708" category="list-text">如果將非專屬連接埠設定為供儲存使用、則您必須完成此程序。</block>
-  <block id="07d80afbccd38f7712fa336226de0865" category="paragraph">如果未將非專屬連接埠設定為供儲存使用、命令輸出會顯示下列項目：</block>
-  <block id="1529765b6b367d0e6b6e265150953287" category="paragraph">您必須針對所設定的每個連接埠重複執行適用的命令。</block>
   <block id="7dd2a92fd3f41a5334edf46f95d77e71" category="paragraph">部分9.6 ONTAP</block>
-  <block id="5f73e21cfc57f9099894052fde4bfc56" category="list-text">如果您的機櫃具有多重路徑HA連線功能、則重新啟用連接埠連線是不中斷營運的程序。</block>
-  <block id="7e273a22e6f4b495323284cd54002213" category="admonition">移動纜線時、從一個連接埠拔下纜線、然後將纜線插入另一個連接埠、不需要任何等待時間。</block>
-  <block id="2f37a5aa23cfb87abad4097db5d8b5ee" category="admonition">這些子步驟假設現有機櫃已連接至每個控制器插槽3中具有資源相容的I/O模組。</block>
   <block id="336f4ce595af8dfded4dff3e6c2d2dbe" category="list-text">在控制器A上、將纜線從插槽3連接埠b（e3b）移至插槽7連接埠b（e7b）。</block>
   <block id="7fade3ed4792ef4e89e2ae6000199479" category="list-text">在控制器B上重複相同的纜線移動</block>
-  <block id="97db9d4f6a8cf0456ad92952a384cb79" category="admonition">以下步驟假設現有的機櫃已連接至每個控制器插槽5中的可操作PCIe卡。</block>
   <block id="f6eccf676a12f3899de1b6cd792b9d6f" category="list-text">在控制器A上、將纜線從插槽5連接埠b（e5b）移至插槽3連接埠b（e3b）。</block>
   <block id="077cb21f670cc68aea4bf00f1abd4745" category="list-text">在控制器A上、將纜線從連接埠e0d移至插槽5連接埠b（e5b）。</block>
   <block id="378b62d2964ec0a6c4ac6ec95662dee4" category="paragraph">機櫃連接電源時會啟動、但沒有電源開關。當電源供應器正常運作時、雙色LED會亮起綠燈。</block>
@@ -1362,7 +1342,6 @@
   <block id="52aad3ff52241a2e329ba14ca2b495ec" category="list-text">插入纜線時、連接器拉片朝上。</block>
   <block id="546b03f9ca211c30f5975ab99dd93ce8" category="paragraph">正確插入纜線時、會卡入定位。</block>
   <block id="36dad54a495121233a847704d6bf5a6b" category="paragraph">連接纜線兩端之後、機櫃和控制器連接埠LK（綠色）LED會亮起。如果連接埠LNO LED未亮起、請重新拔插纜線。</block>
-  <block id="e859983e28521134b4429e2ad40d035f" category="paragraph">如果需要額外的儲存空間、您可以將最多三個額外的NS224磁碟機櫃（總共四個磁碟櫃）熱新增至AFF 一對《非洲》HA配對。</block>
   <block id="e1f00a018e7f4f086a0bcbc7eccb98fb" category="list-text">此程序假設您的HA配對至少有一個現有的NS224磁碟櫃、而且您要熱新增最多三個額外的磁碟櫃。</block>
   <block id="6df1d9010eb2d59922ff15832ca8a435" category="list-text">如果您的HA配對只有一個現有的NS224磁碟櫃、則此程序假設磁碟櫃已連接至每個控制器上兩個具有RoCE功能的100GbE I/O模組。</block>
   <block id="71c9cd1d9d6cb72f550738fcffdcb856" category="list-text">如果您要熱新增的NS224磁碟櫃是HA配對中的第二個NS224磁碟櫃、請完成下列子步驟。</block>
@@ -1426,8 +1405,6 @@
   <block id="6893aba6204908a9ad4e8ef231b0937b" category="list-text">將NSM B連接埠e0A纜線連接至控制器B連接埠e0e。</block>
   <block id="fd1b7820b9a22b62bca8acf5ddbaf7ed" category="list-text">將NSM B連接埠e0b纜線連接至控制器A連接埠e0b。+下圖顯示熱新增機櫃（機櫃2）的佈線：</block>
   <block id="63b43efd4d91098da87b471ae31f6a98" category="section-title">完成熱新增</block>
-  <block id="c639108428188e5708bbbe72adfdde85" category="paragraph">如果您在準備NS224磁碟機櫃熱新增時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</block>
-  <block id="52e2f58fc39d834074ac8badf66c9b06" category="paragraph">您可以使用萬用字元一次指派多個磁碟機。</block>
   <block id="e935849faf7cd25a183a726f34797bb7" category="doc">更換控制器模組AFF - REVA300</block>
   <block id="d555d8d5b180690f03f434585c90b8d9" category="section-title">步驟1：開啟控制器模組</block>
   <block id="c65d11e5b8171391c6bacf6aa11b9362" category="list-text">旋鬆控制器模組CAM握把上的指旋螺絲。</block>
@@ -5784,7 +5761,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="44e9bf23cac339f1a46833e07d1be621" category="list-text">將電池與金屬板側壁上的固定支架對齊。</block>
   <block id="cca6b082b0a0af8dfe622b365bd85350" category="section-title">步驟 5 ：將故障零件退回 NetApp - AFF A700s</block>
   <block id="0a90cb9b1ee5610139d0e39856363c8c" category="summary">您可以瞭解磁碟機櫃元件上 LED 的位置和狀態條件、藉此監控磁碟機櫃的健全狀況。</block>
-  <block id="039c72bbf63892ab7a9a7d88f01d9ef1" category="doc">監控磁碟機櫃 LED - NS224 機櫃</block>
   <block id="3417b5f666a273fe6204a90a40cd960a" category="paragraph">位置LED會持續亮起30分鐘。您可以輸入相同的命令、但使用來關閉這些命令<block ref="3262d48df5d75e3452f0f16b313b7808" prefix=" " category="inline-code"></block> 選項。</block>
   <block id="90c4ae9a3664954df72efa181f417914" category="list-text">LED 狀態可以是：</block>
   <block id="5f77ac1006b54df5d09a24404a213642" category="list-text">「開啟」： LED 燈恆亮 / 穩定</block>
@@ -6654,7 +6630,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b70986af2d94261df69e2141b1a928cf" category="inline-link">如何使用冷機櫃移除程序來更換機櫃機箱</block>
   <block id="3946a95173cf2872b6b6e8309352d61b" category="inline-link">NS224 NVMe磁碟機櫃佈線指南</block>
   <block id="5932d352036c33399a3ddcba5a995002" category="summary">您可以冷更換 NS224 磁碟機櫃。</block>
-  <block id="1aba95483fe95743e6b48b8708c5c514" category="doc">冷更換機櫃 - NS224 機櫃</block>
   <block id="efc8f4d1076344beccb8353312cb002a" category="sidebar">磁碟機櫃</block>
   <block id="da98db34d10199077b14ab14b7e32c9f" category="sidebar">冷更換機櫃</block>
   <block id="674478ae995b81c552fa78ca38a62f55" category="sidebar">監控機櫃 LED</block>
@@ -6704,7 +6679,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="eeb8f13cb25825752e216fedcd65a6b1" category="paragraph">IO 板</block>
   <block id="c746ae924024283281476c33315a4598" category="list-text">將 IO 板從控制器模組中直接滑出、以將其卸下。</block>
   <block id="b4ce9255fe86b124b06814d87b3233db" category="summary">NS224 機櫃維護總覽。</block>
-  <block id="6839d8dc991c3da89b9b3b916fde2b7b" category="doc">機櫃維護總覽 - NS224 機櫃</block>
   <block id="79a918585a1d94a22b468960e11e9174" category="paragraph">您可以採取下列行動來維護 NS224 機櫃：</block>
   <block id="4ad47736772386e98b3765035e4ccc77" category="summary">SAS3 機櫃維護總覽。</block>
   <block id="9db4c90afc251da112cecabb2b945f1a" category="sidebar">機櫃維護總覽</block>
@@ -6734,7 +6708,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0981347849054d7973149d23c4187aa8" category="list-text"><block ref="0981347849054d7973149d23c4187aa8" category="inline-link-macro-rx"></block></block>
   <block id="fd6333b3a15bf4ff3d4a25db6d99ea06" category="paragraph">請使用 NetApp 知識庫文件<block ref="0ce7a268461a7f9e86d34962088e7dcd" category="inline-link-rx"></block>。</block>
   <block id="b1acc3668afb9014f44281694ae06824" category="summary">即使在 I/O 作業期間、您也可以將新的磁碟機新增至開機的機櫃、不會中斷營運。</block>
-  <block id="68bab7572a161f11853ff30476a32e76" category="doc">熱新增磁碟機 - NS224 機櫃</block>
   <block id="4c8c4b22ca17117dae583f0c094d9eed" category="inline-link">將磁碟新增至現有機櫃或叢集的最佳實務做法</block>
   <block id="daf4bbdefc995283fd259f0a85f2206e" category="paragraph">請使用 NetApp 知識庫文件<block ref="d77269536bcca9e0e9d3e1016828b4c0" category="inline-link-rx"></block>。</block>
   <block id="3336aa3ff360375747634c1e3385684b" category="paragraph">您可以採取下列行動來維護 SAS 機櫃：</block>
@@ -7321,11 +7294,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="39ae5f56527ba81d40a11f9ee81d3594" category="list-text">將開機媒體朝下旋轉、直到它卡入鎖定按鈕為止。如有必要、請按下藍色上鎖。</block>
   <block id="31b44b2bbf802ac2ba72cd5f64a91a73" category="list-text">安裝系統管理模組：</block>
   <block id="c8eac505350cb0f1af11cd259653ff42" category="inline-link-macro">熱新增需求和最佳實務做法</block>
-  <block id="41f1f5d5c9c84b4192d60dae68221e74" category="list-text">您必須已檢閱 <block ref="4ce128836e76285f9c9ed40b724d2cac" category="inline-link-macro-rx"></block>。</block>
-  <block id="132e9fc46dcb8ce0ada8aaba479842e1" category="inline-link-macro">準備熱新增機櫃</block>
-  <block id="4cff528eaaa2c2b349b730fbd0fcabe9" category="list-text">您必須已完成中的適用程序 <block ref="f3f64106bbfa74e473b00e3a56614cbe" category="inline-link-macro-rx"></block>。</block>
-  <block id="bd9bb82cb12ed85b385001364772cc79" category="inline-link-macro">安裝用於熱新增的機櫃</block>
-  <block id="7767ac26e2b3cd3f28d8d69583317704" category="list-text">您必須已安裝機櫃、開啟電源、並依照中所述設定機櫃 ID <block ref="68c2828044dd0dd776e961af4615948f" category="inline-link-macro-rx"></block>。</block>
   <block id="6c5978baa311721c1879e0b7bc95d1af" category="list-text">本程序假設您的 HA 配對只有內部儲存設備（無外部機櫃）、而且每個控制器中最多可熱新增兩個額外機櫃和兩個具備切換功能的 I/O 模組。</block>
   <block id="693d178bd7e316e4b461a6475eabb0f5" category="list-text">此程序可解決下列熱新增案例：</block>
   <block id="0b58f7350d7c6e30945be789846ad507" category="list-text">將第一個機櫃熱新增至 HA 配對、並在每個控制器中使用一個具備切換功能的 I/O 模組。</block>
@@ -7346,11 +7314,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ae14ce538d268aca5ec54fbb093b2156" category="paragraph">下圖顯示使用每個控制器模組中兩個具備 CE 功能的 I/O 模組、為兩個熱新增機櫃進行纜線連接：</block>
   <block id="14ac662b33a52d48f6573c07b50e5b8f" category="list-text">使用驗證熱添加的機櫃是否已正確連接<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
-  <block id="8d39c366d0f2a2847eeab7a904800822" category="paragraph">如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。前往 <block ref="27f0c709ab4d9ea809b0da6fd9c1c251" category="inline-link-macro-rx"></block>。</block>
   <block id="0e3d081c008c032c73e41d141ef3e8f2" category="paragraph">否則、您就會完成熱新增機櫃程序。</block>
   <block id="8043797db2626f941c758e70e51c6421" category="paragraph">您可以將最多三個額外的 NS224 機櫃（總共四個機櫃）熱新增至 AFF A1K HA 配對。</block>
-  <block id="d2ac780b2e8141b11e4649760187228e" category="inline-link-macro">準備熱新增機櫃</block>
-  <block id="ee6f36975e23e964b7700e9186519410" category="list-text">您必須已完成中的適用程序 <block ref="93c25ff2c1ab57827ce49b9c5fd4ddeb" category="inline-link-macro-rx"></block>。</block>
   <block id="1bab1cfda6fee5cde83d1380c3e5b9ab" category="list-text">本程序假設您的 HA 配對至少有一個現有的 NS224 機櫃。</block>
   <block id="9d83d849a4156a45c99412990ea0e5ec" category="list-text">在 HA 配對中熱新增第二個機櫃、每個控制器都有兩個具備切換功能的 I/O 模組。（您已安裝第二個 I/O 模組、並將第一個機櫃重新連接至兩個 I/O 模組、或是已將第一個機櫃連接至兩個 I/O 模組。將第二個機櫃連接至兩個 I/O 模組）。</block>
   <block id="e16364738058258c38c3fd4625d05ec4" category="list-text">在 HA 配對中熱新增第三個機櫃、每個控制器都有三個具備切換功能的 I/O 模組。（您已安裝第三個 I/O 模組、並將第三個機櫃連接至第三個 I/O 模組）。</block>
@@ -7371,19 +7336,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d10794f4d3cca7a2993e8d2d6a12cd28" category="list-text">纜線架 NSM A 連接埠 e0a 至控制器插槽 8 連接埠 A （ e8a ）。</block>
   <block id="ed24faf41d7d53c3a668df6e070aca6d" category="list-text">纜線架 NSM B 連接埠 e0A 至控制器 B 插槽 8 連接埠 A （ e8a ）。</block>
   <block id="551d2fc9e8e1159b84b9c23da6d27984" category="paragraph">下圖重點說明 HA 配對中第四個機櫃的纜線、每個控制器中有四個具備切入功能的 I/O 模組：</block>
-  <block id="8f5d4ff45922bd2a0a4b4ca26b784653" category="paragraph">當需要額外儲存時、您最多可以在 AFF A250 或 AFF C250 HA 配對中熱新增一個 NS224 機櫃。</block>
-  <block id="3c8f15ce2288517ffd28cbab07b4cd4f" category="paragraph">如何為 NS224 機櫃接線以進行熱新增、取決於您是否有 AFF A400 或 AFF C400 HA 配對。</block>
-  <block id="95e9c90f47d7134271c5de6f5d8d41f5" category="paragraph">* 連接至 AFF A400 HA 配對的纜線架 *</block>
-  <block id="e47d066c3638efab14a13923e89b312a" category="paragraph">對於 AFF A400 HA 配對、您可以熱新增最多兩個機櫃、並視需要使用板載連接埠 e0c/e0d 和插槽 5 中的連接埠。</block>
   <block id="d4e171bee30acee3b4097e177f087224" category="list-text">如果您要在每個控制器上使用一組具備切換功能的連接埠（內建具備切換功能的連接埠）來熱新增一個機櫃、而且這是 HA 配對中唯一的 NS224 機櫃、請完成下列子步驟。</block>
   <block id="4df6de3fb6b5eece4bd1d42f75e5ae3d" category="paragraph">下圖顯示使用每個控制器上一組具備磁碟功能的連接埠、為一個熱新增機櫃進行纜線連接的情況：</block>
   <block id="306fa6b2ff7e9909c6a2a302a380875a" category="list-text">如果您要在每個控制器上使用兩組具備切換功能的連接埠（主機板內建連接埠和具備 PCIe 卡切換功能的連接埠）來熱新增一個或兩個機櫃、請完成下列子步驟。</block>
-  <block id="41132f8bc7d00935b8687c18c2c9e35d" category="list-text">如果您在準備此程序時停用了自動磁碟機指派、則需要手動指派磁碟機所有權、然後視需要重新啟用自動磁碟機指派。請參閱。 <block ref="27f0c709ab4d9ea809b0da6fd9c1c251" category="inline-link-macro-rx"></block></block>
-  <block id="406a6a05dc05bb651919c02b9570c743" category="paragraph">* 連接至 AFF C400 HA 配對的纜線架 *</block>
-  <block id="9d6636aae443fd88eb415b0a814eb7ed" category="paragraph">對於 AFF C400 HA 配對、您可以熱新增最多兩個機櫃、並視需要使用插槽 4 和 5 中的連接埠。</block>
   <block id="b6c9c1f2bae5bda1b2ec0ca34865478a" category="list-text">如果您要在每個控制器上使用一組具備切換功能的連接埠來熱新增一個機櫃、而且這是 HA 配對中唯一的 NS224 機櫃、請完成下列子步驟。</block>
   <block id="c4dcb8322178395823ac67e2ea704340" category="list-text">如果您要在每個控制器上使用兩組具備 ROCE 功能的連接埠來熱新增一個或兩個機櫃、請完成下列子步驟。</block>
-  <block id="8b27019cea28c7866ff81a933ac7c02c" category="paragraph">如何在 AFF A800 或 AFF C800 HA 配對中連接 NS224 機櫃、取決於您要熱新增的機櫃數量、以及您在控制器上使用的具備 ROCE 功能的連接埠集數（一或兩個）。</block>
   <block id="e6960ae3a6a92d53555f3471da322c41" category="list-text">如果您要在每個控制器上使用一組具備切換功能的連接埠（一個具備切換功能的 PCIe 卡）來熱新增一個機櫃、而且這是 HA 配對中唯一的 NS224 機櫃、請完成下列子步驟。</block>
   <block id="c55555ebd43bc616a6c859bbbad79ac8" category="paragraph">下圖顯示使用每個控制器上一個具備切換功能的 PCIe 卡來連接一個熱插拔機櫃的纜線：</block>
   <block id="6f313b51958d9ef2aa65c80a9b64de6b" category="list-text">如果您要在每個控制器上使用兩組具備切換功能的連接埠（兩個具備切換功能的 PCIe 卡）來熱新增一個或兩個磁碟櫃、請完成適用的子步驟。</block>
@@ -7563,87 +7520,34 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bf1f9977d76210449a57d0b526df80f9" category="paragraph"><block ref="bf1f9977d76210449a57d0b526df80f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="50c089c00eacadfe94238545067e1673" category="image-alt">AFF A90</block>
   <block id="fa2548c5f212acd29e45e9296579f088" category="paragraph">如需安裝說明及相容性資訊、請參閱<block ref="512a1f6ca3554ab9c3f8be1627b41678" category="inline-link-rx"></block> <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
-  <block id="f710bde9f928341df6ff92fee79cb81a" category="summary">每個要熱新增的 NS224 機櫃都要連接纜線、以便每個機櫃都有兩個連線至 HA 配對中的每個控制器。</block>
-  <block id="567fab43047b0960ce69a80b4d3eeef2" category="doc">連接 AFF 系統的纜線架 - NS224 機櫃</block>
-  <block id="62415c5f208498fa7a928f2f3d1ce337" category="example-title">連接至 AFF A1K 的纜線架</block>
-  <block id="97a5530ac5ff8544a3e1b76f2a7c829b" category="example-title">連接至 AFF A250 或 AFF C250 的纜線架</block>
-  <block id="4631b1a60ba4b9c98b792c04ede40e3e" category="example-title">連接至 AFF A400 或 AFF C400 的纜線架</block>
-  <block id="2c4de459c86fa6d0fcf85f5f54f925ea" category="example-title">連接至 AFF A800 或 AFF C800 的纜線架</block>
-  <block id="faf33e342e418597ef26218d26be2eb3" category="example-title">連接至 AFF A900 的纜線架</block>
-  <block id="101e83bd64f471fa9ab9ec831ae79bf5" category="doc">連接 ASA 系統的纜線架 - NS224 機櫃</block>
-  <block id="14e93bfe999bd26d30efe27bc42d4e33" category="example-title">連接至 ASA A250 或 ASA C250 的纜線架</block>
-  <block id="8249cdd39950bcc8dcd2742ed885f569" category="example-title">連接至 ASA A400 或 ASA C400 的纜線架</block>
-  <block id="7702b4b78c879b561068c08066c8216e" category="example-title">連接至 ASA A800 或 ASA C800 的纜線架</block>
-  <block id="5988254c8d26b61e1a07c6a096e63ce5" category="example-title">連接至 ASA A900 的纜線架</block>
-  <block id="58b21538405eea98ef7b8d327aac34fc" category="doc">從纜線架到可用性結束的系統 - NS224 機櫃</block>
-  <block id="93d30e9f000936c1ea0bb870a06b4bfa" category="example-title">連接至 AFF A320 的纜線架</block>
   <block id="3a3fd2c18ea2486ea238ad698e2db584" category="paragraph">您可以在需要額外儲存時、將第二個機櫃熱新增至現有的 HA 配對。</block>
   <block id="e1661f98263e8ce47be51e134d3c36d0" category="list-text">將機架連接至控制器。</block>
   <block id="1cfaf56b497f5a10023e79e4fb9c1fbb" category="image-alt">AFF A320 的纜線、含兩個 NS224 機櫃和三組內建連接埠</block>
-  <block id="4cae9c36555adc7405cb65350569cc5b" category="example-title">連接至 AFF A700 的纜線架</block>
   <block id="6d74e474495b3177dfbf319429b6127e" category="paragraph">如何將 NS224 機櫃連接至 AFF A700 HA 配對、取決於您要熱新增的機櫃數量、以及您在控制器上使用的具備 ROCE 功能的連接埠集數（一或兩個）。</block>
   <block id="efa6ea2ea99c7e90eec9ccd6f7a76146" category="list-text">如果您要熱新增初始 NS224 機櫃（ HA 配對中沒有 NS224 機櫃）、則必須在每個控制器中安裝核心傾印模組（ X9170A 、 NVMe 1TB SSD ）、以支援核心傾印（儲存核心檔案）。</block>
-  <block id="b2482d207d76c39d02b23b924006d57a" category="paragraph">請參閱。 <block ref="475cacc4c4d3f4ca67cc021d7e76f4ce" category="inline-link-macro-rx"></block></block>
   <block id="08580c56ffbd5745597395d8d6e0d742" category="list-text">如果您要在每個控制器上使用一組具備切換功能的連接埠（一個具備切換功能的 I/O 模組）來熱新增一個機櫃、而且這是 HA 配對中唯一的 NS224 機櫃、請完成下列子步驟。</block>
   <block id="499e8a65f6cfb0d93ad414f0ec885567" category="admonition">此步驟假設您已在每個控制器的插槽 3 中安裝具備 ROCE 功能的 I/O 模組、而非插槽 7 。</block>
   <block id="d39664dd0d35fc68dbbe8654914c8ddf" category="paragraph">下圖顯示使用每個控制器中一個具備切換功能的 I/O 模組來連接一個熱新增機櫃的纜線：</block>
   <block id="7981040959b8ff518083d65eb7cbd0d8" category="image-alt">AFF A700 的纜線、其中包含一個 NS224 機櫃和一組 IO 模組連接埠</block>
   <block id="c7ecb88c8abf3772dd901d707c09f414" category="list-text">如果您要在每個控制器中使用兩組具備 ROCE 功能的連接埠（兩個具備 ROCE 功能的 I/O 模組）來熱新增一個或兩個機櫃、請完成適用的子步驟。</block>
   <block id="84d0e0babe795476f7ae8da0b8e585f1" category="image-alt">AFF A700 的纜線、配備兩個 NS224 機櫃和兩組 IO 模組連接埠</block>
-  <block id="f4bf409b84e11d30249909dc7746ba6d" category="example-title">連接至 FAS500f 的纜線架</block>
   <block id="a89eecfaa6455eb7bc4017895b259e99" category="paragraph">當需要額外的儲存設備時、您可以將一個 NS224 機櫃熱新增至 FAS500f HA 配對。</block>
   <block id="a372a75abe895e1d1df66a7346836990" category="image-alt">FAS500f AFF A250 或 AFF C250 的纜線、其中包含一個 NS224 機櫃和一組連接埠</block>
-  <block id="833d8fad165a38386db2f5d83d561178" category="doc">熱插拔纜線總覽 - NS224 機櫃</block>
-  <block id="46f11d99d5f59f4aa316ba3db790a179" category="paragraph">本纜線一節說明如何將 NS224 機櫃連接至下列儲存系統：</block>
-  <block id="a392e2560dc5e657e918caf1331842b5" category="inline-link-macro">連接至 AFF 系統的纜線</block>
-  <block id="e486dfdb295c50313a841301bdff1252" category="list-text"><block ref="e486dfdb295c50313a841301bdff1252" category="inline-link-macro-rx"></block></block>
-  <block id="67ae7265d01a10fd7ba93405485a9bd6" category="inline-link-macro">連接至 ASA 系統的纜線</block>
-  <block id="2f658f93ae23965e7c42c3eb6ac41a06" category="list-text"><block ref="2f658f93ae23965e7c42c3eb6ac41a06" category="inline-link-macro-rx"></block></block>
-  <block id="71ccc93af9bf68a63dfe7bea83d57067" category="inline-link-macro">連接 EOA 系統的纜線</block>
-  <block id="63ff153655ced66df13d8b44311364cb" category="list-text"><block ref="63ff153655ced66df13d8b44311364cb" category="inline-link-macro-rx"></block></block>
-  <block id="612f3ba3d7c921e4e9a9699a946fa2ee" category="list-text">熟悉正確的纜線連接器方向、以及 NS224 NSM100 機櫃模組上連接埠的位置和標籤。</block>
-  <block id="aed40018e03baa0cb0ff1fc2ac8a3a01" category="list-text">您可以使用下圖來協助實體識別機櫃 NSM100 連接埠、 e0a 和 e0b 。</block>
-  <block id="175008e225c4f0b4f43ff24af0d85656" category="paragraph">NS224 機櫃包含兩個 NSM100 模組。頂部模組插入插槽 A （ NSM A ）、底部模組則插入插槽 B （ NSM B ）。</block>
-  <block id="3ec82f450cefc3cf550494e5fe235a93" category="paragraph">每個 NSM100 模組包含 2 個 100GbE QSFP28 連接埠： e0a 和 e0b 。</block>
-  <block id="0a8cb3c38ccd084a10c6299732a71520" category="doc">完成熱新增 - NS224 機櫃</block>
   <block id="c2ea2e55d65331d8bcef52bb3b64c92d" category="paragraph">如果您在準備 NS224 機櫃熱新增時停用自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</block>
-  <block id="d83a83fb9fe927923ea18a2ee6b6a97e" category="inline-link-macro">熱新增的纜線總覽</block>
-  <block id="d3f2a9416871f3005be3d67b52def753" category="paragraph">您必須已依照HA配對的指示、將機櫃連接好纜線。請參閱。 <block ref="9022d9944a90d9c35d6825c9076441c8" category="inline-link-macro-rx"></block></block>
   <block id="cb765b2f357801af3e06c0ea438901c4" category="paragraph">您可以在任一控制器上輸入命令。</block>
   <block id="8727882f7d3942a12771df67450a7f2a" category="paragraph">您必須在兩個控制器上重新啟用自動磁碟機指派。</block>
-  <block id="564ffc14604e000bfeb97b6018c52095" category="summary">若要熱新增 NS224 磁碟機櫃、您的 HA 配對必須符合特定需求。</block>
-  <block id="447174728e5129c9b8c53342c0264116" category="doc">熱新增工作流程 - NS224 機櫃</block>
-  <block id="053409ab39417f68b55ff02091cdc8a8" category="paragraph">請依照下列工作流程步驟、熱新增 NS224 機櫃。</block>
-  <block id="be1a34deed7e0574ef6cd0ac74fb0fff" category="paragraph">若要熱新增 NS224 機櫃、您的 HA 配對必須符合特定需求。查看 <block ref="4ce128836e76285f9c9ed40b724d2cac" category="inline-link-macro-rx"></block>。</block>
   <block id="1a5e345c0f17016fde10413b2819068b" category="inline-link-macro">準備熱新增您的機櫃</block>
-  <block id="549ca2ce1f0bb7709065c93991fbf32d" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="23e7b17e935955a0ced3a866a7d3f994" category="inline-link-macro-rx"></block></block>
   <block id="3c8cdaceb2d0f43fc2d3506231f63b93" category="paragraph">視您的平台機型而定、您可能需要安裝其他具備 ROCE 功能的 PCIe 卡或 I/O 模組、設定支援 ROCE 功能的非專用乙太網路連接埠以供儲存使用、在不同插槽的兩組連接埠之間重新配置現有機櫃、以因應插槽故障的恢復能力、 如果您是手動指派磁碟機擁有權、請停用自動磁碟機指派。</block>
   <block id="7a0deab7173e7204e2e4459ffd121ad6" category="inline-link-macro">安裝您的機櫃</block>
-  <block id="775c6030e9743bbed8a852b3e8a20bcd" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="a6b180b7d344b08e449360b1fc8e7912" category="inline-link-macro-rx"></block></block>
-  <block id="f9c593fc474bf3ae98144f9c167660d5" category="paragraph">若要安裝機櫃、請安裝機櫃的軌道套件、然後將機櫃安裝並固定在電信機架或機櫃中。接下來、將電源線連接至機櫃電源、然後指派唯一的機櫃 ID 、以確保機櫃在 HA 配對中是不同的。</block>
   <block id="d27ec3c6554e9ab2b8d0207fb25f4f21" category="inline-link-macro">為您的機櫃佈線</block>
-  <block id="c6fb67d510dc1d5618e70b4dc334b6f5" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="c9298aba701f0349a6aafcc92942d939" category="inline-link-macro-rx"></block></block>
   <block id="e9a05c30d154bcc11825c7c6f620c2b7" category="paragraph">將您要熱新增的機櫃連接至 HA 配對中的每個控制器、使其有兩個連線。</block>
   <block id="b234edf4e69ffb2b833a8efb85ba5ee7" category="inline-link-macro">完成熱新增</block>
-  <block id="a03ae9a3c924d10a64e97ade6d86ee2b" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="49e34f6a53fbd8084ac48e4e6738a264" category="inline-link-macro-rx"></block></block>
   <block id="6cfe7f4574d90cb894d56246a1414fa2" category="paragraph">如果您在準備熱新增時停用自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。</block>
-  <block id="132976e79206d2260fc5308469634e7a" category="list-text">請參閱您的平台機型文件、瞭解 PCIe 卡或 I/O 模組安裝說明。</block>
   <block id="9db058e565a88604b6d87108ed139c51" category="paragraph"><block ref="6e972b196ebbc48e0575e24a92c8720d" prefix="" category="inline-code"></block></block>
   <block id="eb3110f9f105714e88d250d436520c1d" category="paragraph"><block ref="91bc4c8d50e9272a27ce62a39b4bf1a6" prefix="" category="inline-code"></block></block>
-  <block id="a61cf40b2e5406ed295d4e38c35656df" category="paragraph">根據您的平台機型而定、在熱新增額外的機櫃之前、您可能需要在不同插槽中的兩組連接埠之間重新配置現有的機櫃（在安裝額外的具備 ROCE 功能的 PCIe 卡或 I/O 模組之後）、以避免插槽故障。</block>
-  <block id="bac6096d635a78bfc7662e151ab39559" category="list-text">在本程序中、您一次移動一條纜線、以永遠保持與機櫃的連線。</block>
-  <block id="e87dec4c82a6131b352eff5116f7fab8" category="list-text">可將現有機櫃的連線重新連接至不同插槽中的兩組具備切換功能的連接埠、以適用於您的平台機型。</block>
-  <block id="3dbc71070033db4d4c05e736c6f4075a" category="admonition">子步驟假設現有機櫃已連接至每個控制器上插槽 11 中具有切入功能的 I/O 模組。</block>
-  <block id="b73b81430a005b6489a33cd21955e985" category="list-text">在控制器A上、將纜線從插槽11連接埠b（e11b）移至插槽8連接埠b（e8b）。</block>
-  <block id="04c18e5cb17496cb3b9f53a5b07c76b4" category="list-text">在控制器A上、將纜線從插槽11連接埠b（e11b）移至插槽10連接埠b（e10b）。</block>
-  <block id="59a884f424ff6cf6eadda8a43ad15c18" category="list-text">在控制器A上、將纜線從插槽9連接埠b（e9b）移至插槽8連接埠b（e8b）。</block>
   <block id="6ffd935255573ad4570c6a3b3450e0f9" category="inline-link">關於自動指派磁碟擁有權</block>
   <block id="53c2f27803aec3d938e33bbae4de6b05" category="paragraph">您可以在任一節點上輸入命令。</block>
-  <block id="5aa025a6412a09854e833ab5ef7bad16" category="paragraph">如果啟用自動磁碟機指派、則輸出會顯示在<block ref="ed2b5c0139cec8ad2873829dc1117d50" prefix=" " category="inline-code"></block> 欄中<block ref="36dcdb9f764aaa4313fab85a6eb8d6a6" prefix=" " category="inline-code"></block> （針對每個節點）。</block>
   <block id="76252ddf99e749110059e04910646005" category="paragraph">您必須停用兩個節點上的自動磁碟機指派。</block>
-  <block id="c44506a424da54e7a512c3fe58befda4" category="list-text">請確定您的有一個迴紋針、一邊拉直、或是一支窄尖的圓珠筆。</block>
-  <block id="96ef72d95f222f00433291a58b6b8744" category="doc">安裝熱新增的機櫃 - NS224 機櫃</block>
-  <block id="3e7bc606456977aca4460d0843a5999b" category="paragraph">您需要在機櫃或電信機架中安裝 NS224 機櫃、連接電源線（會自動開啟機櫃電源）、並設定機櫃 ID 。</block>
   <block id="ed86a7d5c45c5290afeff3be20438da8" category="paragraph">若要變更機櫃 ID 、您可以使用迴紋針或圓珠筆來存取「操作員顯示面板」（ ODP ）後面的機櫃 ID 按鈕、以進行變更機櫃 ID 步驟。</block>
   <block id="da0aca2ea4c0e9ba2b05f533db2f5bc8" category="list-text">根據需要、使用套件隨附的說明、安裝機架的軌道套件。</block>
   <block id="707f1d6805c820b56046e8ac294bd1c0" category="list-text">安裝機櫃：</block>
@@ -7655,64 +7559,24 @@ SFP+ （目標 / 啟動器）</block>
   <block id="081d25588bc0e416dcb90117515e0162" category="paragraph">如果是直流電源、請使用兩個拇指螺絲將它們固定到位。</block>
   <block id="0c2a365669993e8b6749e4053a2ea454" category="list-text">將電源線連接至不同的電源、以獲得恢復能力。</block>
   <block id="62867ffe0beeac6153809460aa6adcfc" category="paragraph">如需更多詳細指示、請參閱 <block ref="c69a1009359358cbb1f3e5d6483736fb" category="inline-link-macro-rx"></block>。</block>
-  <block id="98be19dba1a369d902405986d602e7c9" category="paragraph">連接熱插拔機櫃。前往 <block ref="9022d9944a90d9c35d6825c9076441c8" category="inline-link-macro-rx"></block>。</block>
-  <block id="aecdb59befc0746a8105963d6c8096af" category="doc">準備熱新增 - NS224 機櫃</block>
-  <block id="ecfa7406eca9294b8db5d3a07d57ef49" category="paragraph">在熱新增 NS224 機櫃之前、請先完成適用於 HA 配對的準備工作。</block>
-  <block id="75fafab48d351db2b919a6a10431f31b" category="paragraph">完成適用的準備工作後、請前往 <block ref="68c2828044dd0dd776e961af4615948f" category="inline-link-macro-rx"></block>。</block>
   <block id="42635b3d9723bd789b225319be56c7c8" category="section-title">安裝具備 ROCE 功能的 PCIe 卡或 I/O 模組</block>
-  <block id="31ff39468f998e23e617383291720b0f" category="paragraph">如果您的平台機型支援使用具備 ROCE 功能的 PCIe 卡或 I/O 模組、則您的 HA 配對必須有足夠的可用 Roce 功能乙太網路連接埠、以支援您要熱新增的機櫃數量。</block>
   <block id="1b27049efde6cac780da715f0b01bc98" category="list-text">針對您要熱新增的每個機櫃、請確認每個控制器上有兩個具備 ROCE 功能的連接埠。</block>
-  <block id="a50ddb4ae65653aca8601897505aa60f" category="paragraph">這些連接埠可在控制器上、具備RoCE功能的PCIe卡上、兩者的組合、或是具備RoCE功能的I/O模組上、如您的平台機型所支援。</block>
-  <block id="6ac3e8a30409115d5b79db8603f51706" category="list-text">如果您的 HA 配對沒有足夠的可用具備 ROCE 功能的連接埠、請將額外的 PCIe 卡或 I/O 模組安裝到正確的控制器插槽中、視您的平台機型所支援。</block>
-  <block id="9e9a9898b5abe5f31eb65bf39449aef9" category="list-text">識別適用於您平台機型的正確控制器插槽。請參閱。<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block></block>
   <block id="e29034f589384eef13baae824e82b481" category="section-title">設定具備 ROCE 功能的連接埠以供儲存使用</block>
-  <block id="8d40e879b78362d010921b5b0212222e" category="paragraph">如果您的 HA 配對具有非專屬的具備 ROCE 功能的乙太網路連接埠、而您使用這些連接埠來熱新增 NS224 機櫃、則必須設定連接埠以供儲存使用（而非網路使用）。</block>
-  <block id="8b2e5af852d259b533001cadde1a0ca8" category="list-text">請確定您在每個控制器中安裝任何其他具備 ROCE 功能的 PCIe 卡或 I/O 模組。</block>
-  <block id="72146225175efd85ba944f5ac7575176" category="list-text">在某些平台機型中、當具有 Roce 功能的 PCIe 卡或 I/O 模組安裝在控制器上支援的插槽中時、連接埠會自動預設為使用儲存設備（而非網路）； 不過、建議您完成下列程序、以驗證具備 ROCE 功能的連接埠是否已設定供儲存使用。</block>
-  <block id="2ea18967d5aa61c347f7083b24fa762a" category="list-text">如果將來需要將端口從存儲使用更改爲網絡使用，請輸入命令。<block ref="9a677bf17da6cbfa9b6a63efbc67d3f2" prefix=" " category="inline-code"></block></block>
   <block id="d5c6e08c6eebf8adfb34dc24756d570f" category="list-text">使用 SSH 或序列主控台連接埠登入叢集。</block>
-  <block id="3e4a94904f41cf118e77a622f36547e9" category="list-text">輸入下列命令、確認 HA 配對中的非專屬連接埠是否已設定供儲存使用：</block>
-  <block id="d75813e35497e6772c951cd78d3c71cb" category="paragraph"><block ref="90e0991b70398b08e4e3eb0ae46c4163" prefix="" category="inline-code"></block></block>
-  <block id="cac946705a8c279083094c886d6e736a" category="list-text">在其中一個控制器上設定用於儲存設備的非專用連接埠：</block>
   <block id="394247ac369fff4729d586172906244e" category="cell">使用此命令...</block>
-  <block id="acc2bb851ead4ba06a525f898fa9d757" category="list-text">確認兩個控制器上的非專屬連接埠均已設定為用於儲存設備：<block ref="90e0991b70398b08e4e3eb0ae46c4163" prefix=" " category="inline-code"></block></block>
   <block id="dff6b8783c45aa76125a2603fbfe43bf" category="section-title">可重新配置現有的機櫃</block>
-  <block id="afd2be08ff66ef180fcc2f0cc5cf1fd7" category="list-text">請確定您安裝的具備切換功能的 PCIe 卡或 I/O 模組上的非專用連接埠已設定為用於儲存設備。</block>
-  <block id="692f3fd736128335341ec9c447ca8376" category="list-text">如有需要、請參閱中平台機型的機櫃佈線圖示 <block ref="9022d9944a90d9c35d6825c9076441c8" category="inline-link-macro-rx"></block>。</block>
   <block id="54f937d3a20d54ade33be7b557487bde" category="paragraph">如果您要熱新增第二個機櫃或第四個機櫃、請執行下列其中一項操作。</block>
-  <block id="899adf8ecd6aef37ec53e5c48663013b" category="admonition">如果您有 AFF A1K HA 配對、而且您正在熱新增第三個機櫃、並在每個控制器中安裝第三個或第四個具備 ROCE 功能的 I/O 模組、則第三個機櫃只能連接到第三個或第三個和第四個 I/O 模組。您不需要重新配置任何現有的機櫃。</block>
   <block id="f191cdb40a12349ee1f8c533f07dc92c" category="list-text">如果您要熱新增第二個機櫃、請在每個控制器的插槽 11 和插槽 10 中、將第一個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
   <block id="b0f7f259d069071edc40fb8d3e8a652c" category="list-text">如果您要熱新增第四個機櫃、請在每個控制器的插槽 9 和插槽 8 中、將第三個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
-  <block id="c5ee181c89508f48f2ee4f481db306ee" category="paragraph">子步驟假設第三個機櫃已連接至每個控制器上插槽 9 中具有切入功能的 I/O 模組。</block>
-  <block id="cdf1c0270479d0a5ad04f2c74c0c4833" category="paragraph">如果您要熱新增第二個機櫃、請在每個控制器的插槽 11 和插槽 8 中、將第一個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
-  <block id="651656ace2aedb3df5c7638a857b529b" category="open-title">AFF A800 或 AFF C800</block>
-  <block id="ddb435164ec15edba58659109e9b1ed3" category="paragraph">如果您要熱新增第二個機櫃、請在每個控制器的插槽 5 和插槽 3 的兩組具備切換功能的連接埠中重新放置第一個機櫃。</block>
-  <block id="87c636a063da18092d1205f20f872dc3" category="paragraph">如果您要熱新增第二個機櫃、請在每個控制器的插槽 3 和插槽 7 的兩組具備切換功能的連接埠中重新放置第一個機櫃。</block>
-  <block id="0403e095c309b62ff7c6b736fe5f1b0f" category="open-title">AFF A400 或 AFF C400</block>
-  <block id="f60c054fab21a0c7ab3a2990f06f3918" category="paragraph">如果您要熱新增第二個機櫃、請根據您的平台模式執行下列其中一項：</block>
-  <block id="165b58213f3001efb531a140285078b3" category="list-text">在 AFF A400 上：</block>
   <block id="2eef41081d0f91ffdb6457ede9f4cb73" category="paragraph">可在每個控制器的兩組具備 ROCE 功能的連接埠（內建 e0c/e0d 和插槽 5 ）中、重新放置第一個機櫃。</block>
-  <block id="9ea7d3176d7e42bb894c7dfc4a047f98" category="paragraph">子步驟假設現有機櫃已連接至每個控制器上具有 ROCE 功能的板載連接埠 e0c/e0d 。</block>
-  <block id="d69878207b35b21781b0b0d31559655d" category="list-text">在 AFF C400 上：</block>
   <block id="04853e3291e216091e8f7c8d858186d5" category="paragraph">在每個控制器的插槽 4 和插槽 5 中、將第一個機櫃放在兩組具備切換功能的連接埠上。</block>
-  <block id="7227ec552cdc231f47c1e1a1851c0e84" category="paragraph">子步驟假設現有機櫃已連接至每個控制器插槽 4 中具有切入功能的連接埠。</block>
   <block id="0219958df85d229cc47655b01271068a" category="list-text">使用驗證已重新連接的機架是否已正確連接<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
   <block id="9d21aacca1510ddef8de552b2390d5c8" category="section-title">停用自動磁碟機指派</block>
-  <block id="8aadf4d491c9afd936a2737677005583" category="paragraph">如果您要手動指派您要熱新增的 NS224 機櫃的磁碟機擁有權、則需要停用自動磁碟機指派（如果已啟用）。</block>
   <block id="e5eccc451484bc421d9afd96e1a5fba3" category="paragraph">如果您不確定應該手動指派磁碟機擁有權、或想要瞭解儲存系統的磁碟機擁有權原則自動指派、請前往<block ref="7cf2c47025b8136f811da5dc672735ee" category="inline-link-rx"></block>。</block>
-  <block id="388fa08176ec0787504660c971afb5ce" category="paragraph">在熱新增機櫃之前、請務必先檢閱需求和最佳實務做法。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">需求</block>
-  <block id="363158f1a7b77877e830ff40750ea599" category="paragraph">若要熱新增 NS224 機櫃、您的 HA 配對必須符合特定需求。</block>
-  <block id="d5b2dc488bc34a9addcea2215df132cb" category="list-text">* 支援的 ONTAP 版本 * ：您的平台型號和 ONTAP 版本必須支援您要熱新增的 NS224 機櫃和磁碟機。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block></block>
-  <block id="803860583bfa2665bad301bcd365c743" category="list-text">* 機櫃數量 * ：您的 HA 配對必須少於支援的機櫃數量上限、至少要少於您打算熱新增的機櫃數量。</block>
-  <block id="0500cc21f1d9baac1c3bf93ce1d9c6df" category="paragraph">在熱新增磁碟櫃之後、您無法超過HA配對所支援的磁碟櫃數量上限。請參閱。<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block></block>
-  <block id="cc50eb33da36b3b2dc0375c9859ba991" category="list-text">* 佈線 * ：</block>
-  <block id="1b1694d3f7a5f1dca21b2fd8b938a575" category="list-text">請確定您擁有正確的纜線數量和類型、以連接機櫃。請參閱。<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block></block>
-  <block id="9f69034c3015816e0c4ed00c6f13a51a" category="paragraph">您可以執行 <block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block> 以檢視任何儲存纜線錯誤訊息、以及您應該採取的修正行動。</block>
   <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">最佳實務做法</block>
   <block id="c4d5d39d9de05fa063bc3710cce88d43" category="paragraph">在熱新增 NS224 機櫃之前、請先熟悉下列最佳實務做法。</block>
   <block id="b0af51fce4a966624ca8dbbb18556393" category="inline-link">磁碟資格審查套件</block>
-  <block id="9f24cdc2b556e4f7c914bbbf091868aa" category="paragraph">在熱新增機櫃之後執行Active IQ Config Advisor 功能、可讓您驗證機櫃的纜線是否正確、以及HA配對內的機櫃ID是否獨特。</block>
   <block id="3ddbd0df27907810ff1b446086cf9a21" category="inline-link">NVMe 儲存模組（ NSM ）韌體</block>
   <block id="9a29657c935c0df841655f534d7ab2f2" category="inline-link">磁碟機韌體</block>
   <block id="79a4da7f1ec39f638870f54388dd033e" category="sidebar">AFF A1K 系統</block>
@@ -7734,8 +7598,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="be9c2c89d042ee7f71b10024f37a31ce" category="sidebar">熱新增工作流程</block>
   <block id="9671268467391e7f925a038c0f83e411" category="sidebar">要求與最佳實務做法</block>
   <block id="df10384110caadaab35322c6cb194231" category="sidebar">準備熱新增</block>
-  <block id="62a10800dc4fe510c56d94d676f237a7" category="sidebar">安裝熱新增的機櫃</block>
-  <block id="4f3c2a2682e905ecf93df0cc8b4bb7c8" category="sidebar">熱新增的纜線架</block>
   <block id="3b1d6e6330ca5bf54a0c22beaa407de9" category="sidebar">纜線配置總覽</block>
   <block id="f3585daa539c5917b4fedd0eb7efb3f2" category="sidebar">系統AFF</block>
   <block id="6476573ba5b973ad8ea01c57f5b30267" category="sidebar">系統ASA</block>
@@ -7864,7 +7726,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f4c083c41633c63a72a1bbce7db1c159" category="sidebar">給回控制器</block>
   <block id="a39e0fbfb2db42a80ba7546850d8b5c6" category="paragraph"><block ref="a39e0fbfb2db42a80ba7546850d8b5c6" category="inline-link-rx"></block></block>
   <block id="3512d92434ff4ef9e4eb4253b21a863e" category="image-alt">插入纜線時、接頭拉片朝上</block>
-  <block id="fa8057e66f11f58b193c0063c5f89d0f" category="image-alt">NS224 NSM100 模組連接埠 e0a 和 e0b 的位置</block>
   <block id="21631ea576ae592d82bfa53578687d4b" category="image-alt">操作員顯示面板電源 LED</block>
   <block id="98d01cf184fc8b875e89cd5e6234e36c" category="image-alt">操作員顯示面板注意 LED</block>
   <block id="345a70f624e27675dfa914aa27521075" category="image-alt">操作員顯示面板位置 LED</block>
@@ -8300,10 +8161,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d387637ce68cde3388b8e2a316fb8a4b" category="summary">若要使用 ONTAP 硬體系統開始運作、請在 ONTAP 中安裝硬體元件、連接硬體纜線、以及設定儲存設備。</block>
   <block id="b11226c776ec1b74f6a42f871e3194c9" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>安裝儲存系統和儲存櫃</block>
   <block id="130792cb3edc8d0afffb557e50b218c3" category="paragraph">在機櫃或機架中安裝儲存系統和儲存櫃。存取您平台機型的安裝與設定指示。</block>
-  <block id="3ab6aa369c3f9b8276a331929da6f82c" category="example-title">連接至 ASA A1K 的纜線架</block>
   <block id="5085ff6c350861af4448d82a2c958fe8" category="paragraph">您可以將最多三個額外的 NS224 機櫃（總共四個機櫃）熱新增至 ASA A1K HA 配對。</block>
-  <block id="ae9e439bbd5c00f8b8a1bc7a935729c7" category="example-title">連接至 ASA A70 或 ASA A90 的纜線架</block>
-  <block id="9e4b32259f721cc54024969657de5534" category="paragraph">當需要額外儲存（至內部機櫃）時、您最多可以將兩個 NS224 機櫃熱新增至 ASA A70 或 ASA A90 HA 配對。</block>
   <block id="55ec693931401ff7a634100e33ff8cfd" category="doc">ONTAP 硬體系統的新功能</block>
   <block id="ec6e72d1c4bb7dccdc62b6caf35c95f7" category="sidebar">ONTAP 硬體系統文件</block>
   <block id="9c2e760711833288658335a04261b16a" category="sidebar">ASA R2 儲存系統文件可讓您安裝、設定及維護 ASA R2 系統。</block>
@@ -8834,7 +8692,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2741ff4a8a85e30121737c9b3ebcb407" category="list-text">纜線 NSM A 連接埠 EXB 至控制器 B 插槽 3 連接埠 b （ e3b ）。</block>
   <block id="aa0b77890636a5ca85289b2fb8ee9600" category="list-text">將 NSM B 連接埠 exa 連接至控制器 B 插槽 1 連接埠 A （ e1a ）。</block>
   <block id="b3bbb4afcee820f34e1a3fe10fb4ea2f" category="list-text">將 NSM B 連接埠 EXB 連接至控制器 A 插槽 3 連接埠 b （ e3b ）。</block>
-  <block id="286dd0ea791610230068bd9a76bda132" category="paragraph">當需要額外儲存（至內部機櫃）時，您最多可以將兩個 NS224 機櫃熱新增至 AFF A70 ， AFF A90 或 AFF C80 HA 配對。</block>
   <block id="4281b80a2260bdc6f03d445a9d7966bc" category="doc">選項 1 ：將 I/O 模組新增至具有可用插槽的儲存系統</block>
   <block id="bdb60b537bd60bb1cb98572f053450a1" category="paragraph">您可以將 I/O 模組新增至可用的插槽，或是在完全填入的儲存系統中以新的 I/O 模組取代 I/O 模組，將其新增至儲存系統。</block>
   <block id="24a669262cfe7c910051f1652351f673" category="list-text">如果有多個插槽可用，請檢查中的插槽優先順序，並使用 I/O 模組可用的最佳優先順序<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。</block>
@@ -9437,15 +9294,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="11eb8865607ab8973149731becf87b54" category="doc">更換電源供應器 - AFF C80</block>
   <block id="dafdc51bcfddfb75cdc104244fa42b60" category="doc">更換即時時鐘電池 - AFF C80</block>
   <block id="0c760c78e9d0c008701a3538ed8f1c85" category="doc">更換系統管理模組 - AFF C80</block>
-  <block id="0e0493531094a28281ba5f32c328ac63" category="paragraph">您的硬體系統可能與配備 NSM100 模組的 NS224 機櫃和配備 NSM100B 模組的 NS224 機櫃相容。若要檢查硬體和機櫃的相容性和連接埠名稱，請參閱<block ref="ed4326c3351d8ac0e334b8b4d9b37c82" category="inline-link-rx"></block>。</block>
-  <block id="494fa596205dff234fa0bdbd9d667c60" category="example-title">連接至 AFF A70 ， AFF A90 或 AFF C80 的纜線架</block>
   <block id="cfa4ea65df4b282eb8322ca03dbd679d" category="inline-link-macro">交換器連接纜線指南</block>
-  <block id="d8ddb474e138beeebfa487dca0fe0955" category="list-text">此程序僅適用於直接附加儲存設備。若要檢視交換器附加儲存設備的說明，請檢視我們的<block ref="655fd8ce12b9f1cd7287415659488f07" category="inline-link-macro-rx"></block>。</block>
   <block id="ef04d219de1162f8cce081a33c1fca53" category="open-title">NSM100 模組</block>
   <block id="3800f17d2618d503375d50232027db25" category="open-title">NSM100B 模組</block>
-  <block id="4a1578fb1022f8681d76788b08316767" category="list-text">NS224 機櫃包含兩個 NSM100B 模組。頂部模組插入插槽 A （ NSM A ）、底部模組則插入插槽 B （ NSM B ）。</block>
-  <block id="51a06a25d2cb2d30e87d95931f91501a" category="list-text">每個 NSM100B 模組均包含 2 個 100GbE CX6/DX 連接埠： e1a 和 e1b 。</block>
-  <block id="b25d4e79edd007fbc8d7f7c3b7e8ada1" category="image-alt">NS224 NSM100B 模組連接埠 e0a 和 e0b 的位置</block>
   <block id="1a33b99f51fcb2a8f6ea51ac4e257381" category="paragraph">若要檢閱更多關於此步驟的資訊，並避免可能的 IO 問題，請參閱<block ref="11c438ae853a787dcddaa721519c0224" category="inline-link-rx"></block>。</block>
   <block id="25100a423c79a218fac90393d0bc7914" category="list-text">如果您的系統是在系統機櫃中出貨，您需要一把十字螺絲起子來卸下將機櫃固定至機櫃機架滑軌的螺絲。</block>
   <block id="693f1507f684bece33ef2fa519a62e0a" category="list-text">最佳實務做法： * 最佳做法是在您從要移除的機櫃中的磁碟機移除集合體之後，清除磁碟機擁有權。</block>
@@ -9458,22 +9309,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ce6dd8b1e73e6b0db754f2de7ba1a326" category="paragraph">如果 HA 配對執行的是 ONTAP 9.7 ，則會在<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>欄<block ref="075ae3d2fc31640504f814f60e5ef713" prefix=" " category="inline-code"></block>中<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>顯示非專屬連接埠<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
   <block id="54e4c4d362e10824d6051776175bc957" category="list-text">請瞭解，使用 NSM100 模組時，完全負載的 NS224 機櫃可重達 66.78 磅（ 30.29 公斤），使用 NSM100B 模組時平均可重達 56.8 磅（ 25.8 公斤），需要兩個人才能抬起或使用液壓起重。避免移除機櫃元件（從機櫃正面或背面）、以降低機櫃重量、因為機櫃重量會不平衡。</block>
   <block id="f3f483aabff03c4196cfaf775612cb23" category="admonition">請務必使用適當的滑軌套件，將機櫃安裝在機架或機櫃中。</block>
-  <block id="32b07ce753eb975c01de4108e4155ee7" category="list-text">如果您確定HA配對中的非專用的RoCE連接埠未設定為供儲存使用、則設定這些連接埠是不中斷營運的程序。您不需要重新啟動控制器，除非其中一個或兩個控制器都處於維護模式。此程序假設兩個控制器都未處於維護模式。</block>
-  <block id="eb86e0541d4143c0318c9a167d5ce6fc" category="list-text">如果 HA 配對執行的是 ONTAP 9.7 ，則會在<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>欄<block ref="a10311459433adf322f2590a4987c423" prefix=" " category="inline-code"></block>中<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>顯示非專屬連接埠<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
-  <block id="65889651ccf1dd661e3408010cd1a0cf" category="list-text">如果 HA 配對執行的是 ONTAP 9.7 ，則會在<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>欄<block ref="075ae3d2fc31640504f814f60e5ef713" prefix=" " category="inline-code"></block>中<block ref="7ed427253695f845f908985c78b9f390" prefix=" " category="inline-code"></block>顯示非專屬連接埠<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
-  <block id="10251d86a3f1068222c5cda1b3021db3" category="open-title">AFF A70 、 AFF A90 或 AFF C80</block>
   <block id="b736a5ee7f8805d6653d8da0961406f7" category="list-text">如果您要熱新增第二個機櫃、請在每個控制器的插槽 2 和插槽 10 中、將第一個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
-  <block id="500e77e5799330d4d88ed16c0d87beee" category="paragraph">子步驟假設現有機櫃已連接至每個控制器上插槽 2 中具有切入功能的 I/O 模組。</block>
-  <block id="790b782576aedd040a92c9e319bb7407" category="list-text">在控制器A上、將纜線從插槽2連接埠b（e2b）移至插槽10連接埠b（e10b）。</block>
   <block id="90b6b99d1ca07b30050597284039356b" category="list-text">如果您要熱新增第四個機櫃、請在每個控制器的插槽 1 和插槽 11 中、將第三個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
-  <block id="3cf1ba971421708b568b39ad7bd83aab" category="paragraph">子步驟假設第三個機櫃已連接至每個控制器上插槽 1 中具有切入功能的 I/O 模組。</block>
-  <block id="b941fac886870589f7db40f3b7d0b239" category="list-text">在控制器A上、將纜線從插槽1連接埠b（e1b）移至插槽11連接埠b（e11b）。</block>
-  <block id="84739a3f00907008743ec08d67ca0018" category="open-title">AFF A30 ， AFF C30 ， AFF A50 或 AFF C60</block>
-  <block id="a779d6332aeed6aa1f244a003d8141ac" category="paragraph">如果您要熱新增第二個機櫃、請在每個控制器的插槽 3 和插槽 1 中、將第一個機櫃重新放置在具有切換功能的 I/O 模組上。</block>
-  <block id="c228a130c4008ae084c9826a4adf6d0c" category="paragraph">子步驟假設現有機櫃已連接至每個控制器上插槽 3 中具有切入功能的 I/O 模組。</block>
-  <block id="b992f93b74d37ae6c979bf7fa1d5059e" category="list-text">在控制器A上、將纜線從插槽3連接埠b（e3b）移至插槽1連接埠b（e1b）。</block>
-  <block id="84599615562d840542b08727956d7584" category="doc">熱新增 NS224 機櫃的需求與最佳實務做法</block>
-  <block id="24d6e72970452bf185e063f26dde1307" category="paragraph">在熱新增機櫃之前執行 Active IQ Config Advisor 可提供現有機櫃乙太網路（ ENET ）連線的快照，驗證 NVMe 機櫃模組（ NSM ）韌體版本，並可讓您驗證 HA 配對中已使用的機櫃 ID 。</block>
   <block id="93e209eef7250f2c3dd9648dfa8b6237" category="list-text">可啟動機櫃操作員顯示面板（ ODP ）和兩個 NSM 上的位置（藍色） LED ，以協助實體定位需要維修的機櫃：<block ref="d6bcc7ed2edc5b8ad7e7188bba8189eb" prefix=" " category="inline-code"></block></block>
   <block id="848574ddaf0dc88763b02a92a2120ff3" category="section-title">NSM LED</block>
   <block id="276061f16c400b6eca99c7eef9f371d4" category="paragraph">NSM 上的 LED 會指出模組是否正常運作，是否已準備好處理 I/O 流量，以及硬體是否有任何問題。</block>
@@ -9530,7 +9367,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8c730e7f0ed619ecc12a6b6eee9168c2" category="list-text">更換 DIMM ：</block>
   <block id="869916a36ea3fe4814c2f998da5f59c1" category="admonition">如果磁碟櫃中的磁碟機是由HA配對中的兩個控制器模組所擁有、則您需要手動指派磁碟機擁有權。您將在本程序稍後完成此工作。</block>
   <block id="36af6c0789f3b35c6a8c474e0b4e66ee" category="image-alt">移除磁碟機。</block>
-  <block id="ebf49f799b81f16663764f137403e280" category="doc">更換風扇模組 - NS224 機櫃</block>
   <block id="c470458262a5bbc89c9003e2f2f84bd8" category="paragraph">如果風扇模組中的一個或兩個風扇故障，您可以更換風扇模組。此程序可在 NS224 磁碟機櫃中以不中斷的方式完成，並在 I/O 進行中的情況下開啟電源。</block>
   <block id="4b691b95d8c60f28c5dfd9dd24941ef6" category="list-text">以更新<block ref="585e085c167dffb4091a9c937b46294a" category="inline-link-rx"></block></block>
   <block id="9fe844dd87b3416bab8a90cbcc35c19a" category="paragraph">您可以使用下列動畫來協助將 NS224 中的風扇更換為 NSM100 模組。</block>
@@ -9541,7 +9377,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="499432c176c5fcad27196bb2b3f2ccae" category="image-alt">移除故障風扇。</block>
   <block id="29e53f05df1b4dca0231cb88eb84e9ea" category="paragraph">抓住藍色接觸點所在的側邊，然後將故障風扇垂直拉出插槽，以取下風扇。</block>
   <block id="86ac9af0fe7d7334657dad7de6f53b8a" category="summary">您可以在開啟電源的 NS224 磁碟機櫃中，以及在 I/O 進行中，以不中斷營運的方式更換故障的乙太網路 I/O 模組。</block>
-  <block id="29e8aa51a1fc09e881e377d480c9b87d" category="doc">將乙太網路 I/O 模組 - NS224 機櫃更換為 NSM100B 模組</block>
   <block id="a9216bfc701cbf2762d361895b922524" category="paragraph">您可以在開啟電源的 NS224 磁碟機櫃中，以及在 I/O 進行中，以不中斷營運的方式更換故障的乙太網路 I/O 模組。此程序僅適用於配備 NSM100B 模組的 NS224 機櫃。</block>
   <block id="3322bf509d5ae7459c7e6eb2c240e91d" category="list-text">機櫃的合作夥伴 NSM 必須正常運作，並正確連接纜線，以便在移除故障的 NSM 時保持連線狀態。</block>
   <block id="4511fdab10776b541832e33e66ebc11e" category="list-text">在具有非最新韌體版本的新 NSM 上，機櫃（ NSM ）韌體會自動更新（不中斷營運）。</block>
@@ -10056,9 +9891,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c0caee8d791d630286e30c5e81a37e68" category="list-text">若要透過儲存交換器連接 NS224 磁碟機櫃，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以取得更多資訊。對於較舊的硬體機型，也可在中找到交換器纜線資訊<block ref="c0b67f04541b649189f1a990ae4a004d" category="inline-link-rx"></block>。</block>
   <block id="d4fa7a653c8bbd17c1100e0ee0b5da36" category="list-text">若要安裝儲存交換器，請參閱<block ref="cd35f6165185d2c70017bfb031f19b89" category="inline-link-rx"></block>。</block>
   <block id="5b799a4d08d10d5bb45cb3c7b02567ba" category="list-text">若要確認平台機型支援的硬體，例如儲存交換器和纜線，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
-  <block id="88b31bba8e7c3dc30d53e07a3939afe0" category="list-text">* 磁碟資格認證套件： * 最佳做法是在熱新增機櫃之前，先安裝最新版本<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block>的。</block>
-  <block id="ae748ebab4dfd9690b144080dee0a021" category="list-text">* Active IQ Config Advisor ： * 最佳實務做法是在熱新增機櫃之前和之後執行<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。</block>
-  <block id="fe6c711b5e959d7eb45e9dad280a18ac" category="list-text">* NSM 韌體： * 最佳實務做法是在新增新機櫃之前，先在儲存系統上安裝及<block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block>更新版本<block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block>。</block>
   <block id="1c0fa23373954917c0b08b188941f3c3" category="sidebar">全新的 NetApp ASA R2 系統（ ASA A1K ， ASA A70 ， ASA A90 ， ASA A20 ， ASA A30 和 ASA A50 ）提供統一化的硬體與軟體解決方案，可針對僅限 SAN 的客戶需求，提供簡化的體驗。</block>
   <block id="34d5f1e610f6b8eaf1a7180026def343" category="sidebar">關閉控制器</block>
   <block id="43229c521bba188c3491ed72abe03043" category="sidebar">Flash Cache 模組</block>
@@ -10666,27 +10498,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="97f00e66a1cda314ebb07a43f08fca5b" category="image-alt">四個 NS224 機櫃和四個 IO 模組的 AFF / ASA A900 纜線</block>
   <block id="10236a63db20e6dd5b0c0b8f3cbc1c18" category="list-text">將兩條電源線插入控制器電源供應器，然後將它們連接至不同電路上的電源。</block>
   <block id="dba5caf7b75bcd8724abd1b1ca8827fd" category="image-alt">AFF A1K AFF A70 或 AFF A90 ， FAS70 或 FAS90 電源連接圖</block>
-  <block id="638f4a62fea5cc77db53abd671ddb8ef" category="example-title">連接至 AFF A20 的纜線架</block>
   <block id="9eec124f47af3a03039f640091e3ed69" category="paragraph">當需要額外儲存（至內部機櫃）時，您可以將一個 NS224 機櫃熱新增至 AFF A20 HA 配對。</block>
-  <block id="e76cf9924a9de1dd17f1b48f3a38d0cd" category="example-title">連接至 AFF A30 ， AFF A50 ， AFF C30 或 AFF C60 的纜線架</block>
   <block id="5820f31f30f8fc695d25c9cec1305cdb" category="paragraph">當需要額外儲存（至內部機櫃）時，您最多可以將兩個 NS224 機櫃熱新增至 AFF A30 ， AFF C30 ， AFF A50 或 AFF C60 HA 配對。</block>
-  <block id="2b5ec68149482145f38e8592a2e4b794" category="example-title">連接至 ASA A20 的纜線架</block>
   <block id="c84fe478157d5a5e8c65815d80aa16a6" category="paragraph">當需要額外的儲存設備（至內部機櫃）時，您最多可以將一個 NS224 機櫃熱新增至 ASA A20 HA 配對。</block>
-  <block id="bb5cf394b2e920ea8a139221d234cd8f" category="example-title">連接至 ASA A30 或 ASA A50 的纜線架</block>
-  <block id="541e9b9bea8f992a6c173f0c44b17452" category="paragraph">當需要額外儲存（至內部機櫃）時，您最多可以將兩個 NS224 機櫃熱新增至 ASA A30 或 A50 HA 配對。</block>
-  <block id="46aa3bf0a87f8519f8e9314ed7186c68" category="paragraph">當需要額外儲存時、您最多可以在 ASA A250 或 ASA C250 HA 配對中熱新增一個 NS224 機櫃。</block>
-  <block id="74259516da197cf641342dca62af2c0b" category="paragraph">如何為 NS224 機櫃接線以進行熱新增、取決於您是否有 ASA A400 或 ASA C400 HA 配對。</block>
-  <block id="5a9c7ba8fea538e8bddca7cfd05765f9" category="paragraph">如何在 ASA A800 或 ASA C800 HA 配對中連接 NS224 機櫃、取決於您要熱新增的機櫃數量、以及您在控制器上使用的具備 ROCE 功能的連接埠集數（一或兩個）。</block>
-  <block id="6bb205a0be0fdef8b8935f61e328f79d" category="paragraph">如果需要額外的儲存空間、您可以將最多三個額外的NS224磁碟機櫃（總共四個磁碟櫃）熱新增至ASA 一對《非洲》HA配對。</block>
-  <block id="74375be821a0ccfdaa2aae68f1a39391" category="list-text">對於 AFF 系統：</block>
-  <block id="f7e7abd6131f4502c1bda794831656d2" category="list-text">對於 ASA 系統：</block>
-  <block id="c1ec0f43de6728212fc94985d5f83feb" category="admonition">如果您有 ASA A1K HA 配對、而且您正在熱新增第三個機櫃、並在每個控制器中安裝第三個或第四個具備 ROCE 功能的 I/O 模組、則第三個機櫃只能連接到第三個或第三個和第四個 I/O 模組。您不需要重新配置任何現有的機櫃。</block>
-  <block id="80e4582b9d6f2e4fef63bc13dc0ddad1" category="open-title">ASA A70 或 ASA A90</block>
-  <block id="ba8d903e745090016b0afab400d33f7c" category="open-title">ASA A800 或 ASA C800</block>
-  <block id="ade2052b1dc75cccb7fc7b0760456566" category="open-title">ASA A400 或 ASA C400</block>
-  <block id="18b75697f84707c97e051581b495caae" category="list-text">在 ASA A400 上：</block>
-  <block id="f08c247bf18a7d50e52f66010faca66f" category="list-text">在 ASA C400 上：</block>
-  <block id="2aba7ab5e3f8f696965da4208fe4dd23" category="open-title">ASA A30 或 ASA A50</block>
   <block id="e3fb1d8bd564bfe9f807ba42e5cd7b33" category="paragraph">按下快取模組面板上的釋放按鈕以開啟 CAM 把手。</block>
   <block id="06269d1797937a16e290698098cc8abd" category="paragraph">向下轉動 CAM 把手，將快取模組從中間背板上鬆脫。</block>
   <block id="469c355b09315b0a1d1690c1923180a4" category="paragraph">使用 CAM 把手將快取模組滑出磁碟機支架，另一隻手支撐快取模組。</block>
@@ -13811,7 +13625,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d2fddd9e240829fc1dc928ed61196fbf" category="list-text">如果在此程序的早期階段停用了自動磁碟機分配，請手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派：</block>
   <block id="4cca325ed840b8ff6bedb9a2bcf0134f" category="paragraph">請聯絡技術支援。<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>如果您需要RMA編號或更換流程的其他協助，請致電888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。 //2025-11-17 ontap-systems-internal/issues/1391</block>
   <block id="ac5e04a2b567f923df0569c7177f596f" category="list-text">若要移除多個層架，請重複上述步驟。</block>
-  <block id="959de3aca4b6b23d81011f18ca2b15f7" category="paragraph">否則，您需要按照以下步驟配置連接埠。</block>
   <block id="75fc199dd3b8c9f1fc952121556e245d" category="list-text">對第二個控制器重複上述步驟。</block>
   <block id="b7cf733f61d2f31373ecbc67f036248f" category="list-text">如有需要，請跳至重新啟用自動分配部分（以下步驟）。</block>
   <block id="98b8aea422580c306bf6d9bfa94dd665" category="list-text">對每個額外的磁碟架重複上述步驟。</block>
@@ -15040,4 +14853,289 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c7585f11abe7b6b5267f9b01ab8db3d3" category="summary">更換控制器模組中的即時時鐘電池。</block>
   <block id="4e219191285e6b026a35828fa008670f" category="list-text"><block ref="4e219191285e6b026a35828fa008670f" category="inline-link-macro-rx"></block></block>
   <block id="f907c55a04055c61d778510e17a75874" category="list-text"><block ref="f907c55a04055c61d778510e17a75874" category="inline-link-macro-rx"></block></block>
+  <block id="a0cbc36fd6bf1267146e4ea69803cf38" category="doc">將纜線機櫃連接至 AFF A400 HA 配對</block>
+  <block id="1b3cfd966274d0da78f35d96194ec49e" category="paragraph">對於 AFF A400 HA 配對，您可以熱新增最多兩個磁碟櫃，並視需要使用內建連接埠 e0c/e0d 和插槽 5 中的連接埠。</block>
+  <block id="477fc6d6df6db3734f2c6a40c302db5a" category="section-title">將磁碟櫃連接至 AFF C400 HA 配對</block>
+  <block id="cd0e14682a3141e2e7fc92e5bde0d94a" category="paragraph">對於 AFF C400 HA 配對，您可以熱新增最多兩個磁碟櫃，並視需要使用插槽 4 和 5 中的連接埠。</block>
+  <block id="0b73d2043f833318d0e6906da448e24c" category="paragraph">+ 請參閱 <block ref="475cacc4c4d3f4ca67cc021d7e76f4ce" category="inline-link-macro-rx"></block>。</block>
+  <block id="26578a13642ebc9b93c61b5941c0fe06" category="paragraph">當您為 AFF A1K HA 配對熱新增磁碟櫃時、需要重新連接現有磁碟櫃、以平衡多個支援 RoCE 的 I/O 模組之間的連線。</block>
+  <block id="173a86cec1dd77d4c5fc91eedd8de82e" category="list-text">如果要熱新增第二個磁碟櫃，則必須將第一個磁碟櫃重新佈線至插槽 11 和 10。對於第二個磁碟櫃，此程序假設現有磁碟櫃已佈線至每個控制器插槽 11 中支援 RoCE 的 I/O 模組。</block>
+  <block id="33f717eb3025994616ff29e90aba32dc" category="list-text">如果要熱新增第四個機櫃，則必須將第三個機櫃重新佈線至插槽 9 和 8。對於第四個機櫃，此程序假設第三個機櫃已佈線至每個控制器上的插槽 9。</block>
+  <block id="ae45b4bbb6ff1eb5eaddb30881e0d506" category="list-text">如果您要熱新增第三個機櫃，並在每個控制器中安裝第三個或第四個支援 RoCE 的 I/O 模組，則第三個機櫃只需連接到第三個或第三和第四個 I/O 模組。您無需重新連接任何現有機櫃，因此可以跳過此程序。</block>
+  <block id="6c02a01654c2ad61fb43c78f67092670" category="list-text">在控制器 A 上，將纜線從插槽 11 連接埠 b（e11b）移至插槽 10 連接埠 b（e10b）。</block>
+  <block id="953f06c08b2fbc0697565c2da85c999a" category="list-text">在控制器 A 上、將纜線從插槽 9 連接埠 b（e9b）移至插槽 8 連接埠 b（e8b）。</block>
+  <block id="8dd899ce26de1e731f09eb3ceeefd94a" category="paragraph">當您在 A30、C30、A50 或 C60 HA 配對熱新增第二個磁碟櫃時，需要將第一個磁碟櫃重新佈線至每個控制器插槽 3 和插槽 1 中支援 RoCE 的 I/O 模組。</block>
+  <block id="70087f05d1fd3ccb7b7682e515192eac" category="paragraph">此程序假設現有機櫃透過纜線連接至每個控制器插槽 3 中支援 RoCE 的 I/O 模組。</block>
+  <block id="9fab75d1eaff06de9c649b8b5f412560" category="list-text">重新連接每個控制器上插槽 3 和插槽 1 中支援 RoCE 的 I/O 模組的第一個磁碟櫃電纜。</block>
+  <block id="55de1d79bf1c6031fcd14c97149764a2" category="list-text">在控制器 A 上、將纜線從插槽 3 連接埠 b（e3b）移至插槽 1 連接埠 b（e1b）。</block>
+  <block id="0ab0068cd00aa1e6038918dca08f418d" category="paragraph">當您在 AFF A400 或 AFF C400 HA 配對熱新增第二個磁碟櫃時，您需要將第一個磁碟櫃重新佈線至每個控制器上的兩組支援 RoCE 的連接埠。</block>
+  <block id="8b8f56701f420dc2012a8b5dad0102d2" category="list-text">對於 A400，此程序假設現有機櫃已透過纜線連接至每個控制器上具備 RoCE 功能的內建連接埠 e0c/e0d，而您會在內建連接埠 e0c/e0d 和插槽 5 之間重新佈線。</block>
+  <block id="66a51ceaad8d5450d634bd5d2d8f3515" category="list-text">對於 C400，此程序假設現有機櫃已透過纜線連接至每個控制器插槽 4 中具備 RoCE 功能的連接埠，而您需要在插槽 4 和插槽 5 之間重新佈線。</block>
+  <block id="48d254d220297e5d99cacc3839e68834" category="list-text">根據您的系統，執行下列其中一項作業：</block>
+  <block id="b2520d600c9dfcf4432d443b18de2acd" category="list-text">在 A400 上：</block>
+  <block id="21333a3d11d8bfdcadbe84893c0e2122" category="list-text">在 C400 上：</block>
+  <block id="6f7eb794b6cf6a3e433cc896d7c98803" category="paragraph">當您將第二個磁碟櫃熱新增至 A70 或 A90 HA 配對時，您需要在每個控制器的插槽 11 和插槽 8 中，跨支援 RoCE 的 I/O 模組重新連接第一個磁碟櫃。</block>
+  <block id="00df1e3ec58bbef0db466b355bfeaf41" category="paragraph">此程序假設現有機櫃透過纜線連接至每個控制器插槽 11 中支援 RoCE 的 I/O 模組。</block>
+  <block id="86915092649c7571b0206e9c1748eae4" category="list-text">重新連接每個控制器上插槽 11 和插槽 8 中支援 RoCE 的 I/O 模組的第一個磁碟櫃。</block>
+  <block id="22b9a02a9a69779d6ce15f4ddd3ba7bb" category="list-text">在控制器 A 上、將纜線從插槽 11 連接埠 b（e11b）移至插槽 8 連接埠 b（e8b）。</block>
+  <block id="31e09cd5f85176c08454f97ee2335332" category="paragraph">當您為 A700 HA 配對熱新增第二個機櫃時、您需要在每個控制器的插槽 3 和插槽 7 中、跨兩組支援 RoCE 的連接埠重新連接第一個機櫃。</block>
+  <block id="3d0cad4b2c11e6f992f478cbb833d07d" category="paragraph">此程序假設現有機櫃透過纜線連接到每個控制器插槽 3 中支援 RoCE 的 I/O 模組。</block>
+  <block id="8c82f3ce45adfabf3bcf4bef0c5c9616" category="list-text">將第一個機櫃重新佈線至每個控制器插槽 3 和插槽 7 中的兩組支援 RoCE 的連接埠。</block>
+  <block id="ee34596226f322b19976b9d9cf030fe2" category="paragraph">當您在 AFF A800 或 AFF C800 HA 配對熱新增第二個磁碟櫃時，您需要將第一個磁碟櫃重新佈線至每個控制器插槽 5 和插槽 3 中的兩組支援 RoCE 的連接埠。</block>
+  <block id="d9690594e2117dc67d09d66166f65f59" category="paragraph">此程序假設現有機櫃透過纜線連接至每個控制器插槽 5 中支援 RoCE 的 PCIe 卡。</block>
+  <block id="86951dfadef461637e000e25774e2fe8" category="list-text">將第一個機櫃重新佈線至每個控制器插槽 5 和插槽 3 中的兩組支援 RoCE 的連接埠。</block>
+  <block id="b1b0a0221efd67adf0e8cf3b64c5d67b" category="paragraph">當您將磁碟櫃熱新增至 A900 HA 配對時、您需要重新連接現有磁碟櫃的纜線、以平衡多個支援 RoCE 的 I/O 模組之間的連線。</block>
+  <block id="3a4495c15b70d015f6e5c7ad0c5ce2a1" category="list-text">如果要熱新增第二個機櫃，則必須將第一個機櫃重新連接到插槽 2 和 10。對於第二個機櫃，此程序假定現有機櫃已連接到每個控制器插槽 2 中支援 RoCE 的 I/O 模組。</block>
+  <block id="c1b0611f6c5689351b5e627a0a5ab51c" category="list-text">如果要熱新增第四個機櫃，則必須將第三個機櫃重新連接到插槽 1 和 11。對於第四個機櫃，此程序假定第三個機櫃已連接到每個控制器的插槽 1。</block>
+  <block id="a53adfa6184a428c29c8399b792072fe" category="list-text">在控制器 A 上，將纜線從插槽 2 連接埠 b（e2b）移至插槽 10 連接埠 b（e10b）。</block>
+  <block id="5b16e323ed5c1c0899c87091235f2c06" category="list-text">在控制器 A 上、將纜線從插槽 1 連接埠 b（e1b）移至插槽 11 連接埠 b（e11b）。</block>
+  <block id="c180b3ee265cd8852fc5bfedc37c02ae" category="paragraph">您必須已經按照 HA 配對的說明為磁碟櫃連接好纜線。</block>
+  <block id="b90aa224ee401194fba8105220723c1b" category="list-text">請確保您有一個一端拉直的迴紋針或一支細尖的原子筆。</block>
+  <block id="dcd215251fb963dae58090ccab613ba3" category="paragraph">您的 HA 配對必須符合下列要求，才能熱新增 NS224 磁碟櫃。</block>
+  <block id="52a13bb563bdd9efe50a0c0b73573c77" category="list-text">支援的 ONTAP 版本</block>
+  <block id="14c62310fe26c7674cb04dbef8592350" category="list-text">您的平台型號和 ONTAP 版本必須支援您要熱新增的 NS224 磁碟櫃和磁碟機。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="5b4295684e2b4533b83c2a36ef9b9315" category="list-text">磁碟櫃數量</block>
+  <block id="1b34098f4bbbcfdeb8ed734b86b1b182" category="list-text">您的 HA 配對必須至少支援一個額外的磁碟櫃，超出目前已安裝的數量。熱新增磁碟櫃後，您不能超過 HA 配對支援的最大磁碟櫃數量。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="33e182bf9039bbcbd085d5cb357983f2" category="list-text">您必須使用正確數量和類型的纜線來連接磁碟櫃。如果您要將磁碟櫃熱新增至已有 NS224 磁碟櫃的 HA 配對、則您的 HA 配對必須以多重路徑 HA 方式進行佈線、且儲存設備佈線不得有任何錯誤。</block>
+  <block id="7c82194ccd1fc8fbaba9e14093ba9cea" category="paragraph">執行<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>以檢視任何儲存設備佈線錯誤訊息和修正動作。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以瞭解纜線需求。</block>
+  <block id="6fda6cbada9a9407c3fe9cca29c4b546" category="list-text">在熱新增磁碟櫃之前、請先安裝目前版本的<block ref="2e664cd4eb21331de01544565a2d83a5" category="inline-link-rx"></block>。安裝目前的 DQP 可讓您的系統辨識並使用新認證的磁碟機、避免有關非目前磁碟機資訊的系統事件訊息、並避免因無法辨識的磁碟機而導致磁碟機分割失敗。DQP 也會通知您非目前的磁碟機韌體。</block>
+  <block id="fe5dd0860205ca94d294fd24922657a7" category="list-text">在熱新增磁碟櫃之前和之後執行<block ref="7064c89577900622f24a070c24ebbaa7" category="inline-link-rx"></block>。在熱新增之前執行可提供現有磁碟櫃乙太網路連線的快照、驗證 NSM 韌體版本、並識別任何已在使用中的磁碟櫃 ID。在熱新增之後執行可驗證磁碟櫃的纜線連接是否正確、以及磁碟櫃 ID 在 HA 配對中是否為唯一。</block>
+  <block id="0f87de1d340e16a4b9d7b7134d7094ab" category="list-text">NSM 和磁碟機韌體</block>
+  <block id="d5ae5dab847b02985abd57cc3922826c" category="list-text">在新增儲存架之前，請先在儲存系統中安裝最新版本的 <block ref="2e6e5b670045aa9f131e153e1b997791" category="inline-link-rx"></block> 和 <block ref="fdb117163130a37cd01d2ae31eb75969" category="inline-link-rx"></block>。請勿將韌體降級至不支援您的儲存架及其組件的版本。</block>
+  <block id="c9af08b0eed3f336ebfe7d1fb4d98cd0" category="paragraph">在某些系統中，當您在支援的控制器插槽中安裝支援 RoCE 的 PCIe 卡或 I/O 模組時，支援 RoCE 的連接埠會自動預設用於儲存。但是，您應該完成此程序以驗證連接埠是否已正確配置為用於儲存。</block>
+  <block id="4f5d4efbc17521f8d813c2b79e2eb424" category="paragraph">為儲存使用設定非專用 RoCE 功能連接埠是不中斷營運的程序。除非一個或兩個控制器處於維護模式，否則您不需要重新啟動控制器。此程序假設兩個控制器均未處於維護模式。</block>
+  <block id="0e8ccac4a46ef3fd556a5caed2336836" category="paragraph">如果將來需要將連接埠從儲存用途變更為網路用途，請使用命令 <block ref="9a677bf17da6cbfa9b6a63efbc67d3f2" prefix=" " category="inline-code"></block>。</block>
+  <block id="73e4323070eb26caf1319e143fa422c7" category="list-text">請確認您已在每個控制器中安裝任何額外的支援 RoCE 的 PCIe 卡或 I/O 模組。</block>
+  <block id="c4c9acfacfc6050bfffa62474d260e1d" category="list-text">輸入命令 <block ref="90e0991b70398b08e4e3eb0ae46c4163" prefix=" " category="inline-code"></block>，驗證 HA 配對中的非專用連接埠是否已設定為儲存用途。</block>
+  <block id="035d629b0f14c629835cc5b8e0a45cc5" category="paragraph">命令輸出會因 ONTAP 版本而異：</block>
+  <block id="5e3bb7e7c7e33b5b646050ea202d3809" category="list-text">**ONTAP 9.8 或更新版本：** 未專用於儲存用途的連接埠會在<block ref="ddecebdea58b5f264d27f1f7909bab74" prefix=" " category="inline-code"></block>欄中顯示<block ref="650be61892bf690026089544abbd9d26" prefix=" " category="inline-code"></block>。未設定為儲存用途的連接埠會在<block ref="91e02cd2b8621d0c05197f645668c5c4" prefix=" " category="inline-code"></block>欄中顯示<block ref="650be61892bf690026089544abbd9d26" prefix=" " category="inline-code"></block>。</block>
+  <block id="f250a05f49f0cbefc44cacb88a52fe1a" category="list-text">**ONTAP 9.7：** 未專用於儲存用途的連接埠會在<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>欄中顯示<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>，並在<block ref="a10311459433adf322f2590a4987c423" prefix=" " category="inline-code"></block>欄中顯示<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>。未設定為儲存用途的連接埠會在<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>欄中顯示<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>，並在<block ref="075ae3d2fc31640504f814f60e5ef713" prefix=" " category="inline-code"></block>欄中顯示<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>。</block>
+  <block id="86ce64b32e4464f583cff39920486a9b" category="list-text">如果非專用連接埠已設定為用於儲存設備，則此程序已完成。否則，請完成以下步驟來設定連接埠。</block>
+  <block id="1ad41c6de8bf4f9a223c253a7c3bb39e" category="list-text">在其中一個控制器上設定非專用連接埠以供儲存使用。您必須針對要設定的每個連接埠重複執行適用的命令。</block>
+  <block id="7a59d7cecf95c0906bbe5d35bf2865cc" category="list-text">輸入命令 <block ref="90e0991b70398b08e4e3eb0ae46c4163" prefix=" " category="inline-code"></block>，驗證兩個控制器上的非專用連接埠是否已配置為用於儲存。</block>
+  <block id="d788bfb64ed591480b251e5b8d17888a" category="list-text">**ONTAP 9.8 或更高版本：**配置為儲存用途的非專用連接埠將顯示<block ref="ddecebdea58b5f264d27f1f7909bab74" prefix=" " category="inline-code"></block>在<block ref="650be61892bf690026089544abbd9d26" prefix=" " category="inline-code"></block>欄中。</block>
+  <block id="1cb49fad8ec458ef6e7e3cab53c0b92b" category="list-text">**ONTAP 9.7：** 配置為儲存用途的非專用 port 會在<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block> 欄中顯示<block ref="c7b4666e1f46b9d8409deace1de37977" prefix=" " category="inline-code"></block>，並在<block ref="a10311459433adf322f2590a4987c423" prefix=" " category="inline-code"></block> 欄中顯示<block ref="46a2a41cc6e552044816a2d04634545d" prefix=" " category="inline-code"></block>。</block>
+  <block id="6ab55c7e451e54a10f0fe87262b2992a" category="paragraph">如果啟用自動磁碟指派，則每個節點的輸出會在<block ref="ed2b5c0139cec8ad2873829dc1117d50" prefix=" " category="inline-code"></block>欄中顯示<block ref="36dcdb9f764aaa4313fab85a6eb8d6a6" prefix=" " category="inline-code"></block>。</block>
+  <block id="865cc6a4c2f354190ea3e3bd54df6604" category="paragraph">如果您的系統支援使用支援 RoCE 的 PCIe 卡或 I/O 模組、則您的 HA 配對必須有足夠的可用支援 RoCE 的乙太網路連接埠、以支援您要熱新增的磁碟櫃數量。</block>
+  <block id="58e554499157c46abf2de339e4ed9bc2" category="paragraph">這些 port 可以位於控制器上、支援 RoCE 的 PCIe 卡上、兩者的組合上，或位於支援 RoCE 的 I/O 模組上，具體取決於您的系統支援情況。</block>
+  <block id="f7e3a77e817459318f769fd9b395a47f" category="list-text">如果您的 HA 配對沒有足夠的可用 RoCE 連接埠，請將額外的 PCIe 卡或 I/O 模組安裝到系統支援的正確控制器插槽中。</block>
+  <block id="4e56b0e9308628bec7178554aa1e5b4c" category="list-text">識別適合您系統的正確控制器插槽。請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="a00b201899ccb57aeab0319f86d89f18" category="list-text">請參閱系統文件以取得 PCIe 卡或 I/O 模組安裝說明。</block>
+  <block id="3d9882663c241e5e6078e7d90137ebc4" category="doc">將 NS224 機櫃佈線為交換器附加儲存設備</block>
+  <block id="8a5cdaafbddb9e51404e27ca4a3fb41f" category="doc">變更 NS224 機櫃 ID</block>
+  <block id="862e98960ce320c6575c845f3e4991a4" category="doc">冷更換 NS224 機櫃</block>
+  <block id="1a0a1e794ad800fbed3de37684328ad1" category="summary">將 NS224 機架連接到 AFF A1K 系統，使每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="55c2fb16fc0bd927626af7bc6b78bd77" category="doc">將 NS224 機架連接到您的 AFF A1K 系統</block>
+  <block id="2698abf53c340591b5ba96196af4e17c" category="paragraph">如果您在準備此程序時停用了自動磁碟機指派，則需要手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派。請前往 <block ref="347147f0bd5101f34a178d83fde73582" category="inline-link-macro-rx"></block>。</block>
+  <block id="120c82d04f4c7074562e775cfac4eac7" category="summary">將 NS224 機架連接到 AFF A20 系統，使每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="efe08b551753a714a18f17b75175cfad" category="doc">將 NS224 機架連接到您的 AFF A20 系統</block>
+  <block id="87d90a17e8d344d5a3d89f24d4f5b970" category="summary">將 NS224 機架透過電纜連接到 AFF A250 或 AFF C250 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="47f38b6feda3004b77d8b398c6e9e7a4" category="doc">將 NS224 機架連接到您的 AFF A250 或 AFF C250 系統</block>
+  <block id="7732d4ad5768b94fb9d28182271cb817" category="summary">將 NS224 機架連接到 AFF A30、AFF A50、AFF C30 或 AFF C60 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="5c1a1831184f8dc398c8916f83bca5fc" category="doc">將 NS224 機架透過電纜連接到您的 AFF A30、AFF A50、AFF C30 或 AFF C60 系統</block>
+  <block id="e85110894c4cf8fef966351fe4ae3c82" category="summary">將 NS224 機架連接到 AFF A400 或 AFF C400 系統，使每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="73260ba4715deb8464f5062a50c08a69" category="doc">將 NS224 機架連接到您的 AFF A400 或 AFF C400 系統</block>
+  <block id="cf8101dfd1b75e84587ee28e174a40c8" category="summary">將 NS224 機架連接到 AFF A70、AFF A90 或 AFF C80 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="c4c32caf5d7fec16e7024a3a8e5a41fc" category="doc">將 NS224 機架透過電纜連接到您的 AFF A70、AFF A90 或 AFF C80 系統</block>
+  <block id="71de0ed2d07a284e359612ec92c72298" category="summary">將 NS224 機架透過電纜連接到 AFF A800 或 AFF C800 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="a37526073109da5aa666d0ea3cd7e0a8" category="doc">將 NS224 機架連接到您的 AFF A800 或 AFF C800 系統</block>
+  <block id="cd45f1f42258f4a3c9bdbd9c267f15ea" category="summary">將 NS224 機架連接到 AFF A900 系統，使每個機架與 HA 配對中的每個控制器都有兩個連線。</block>
+  <block id="84b6aa584f7f3531c31187236f9e19eb" category="doc">將 NS224 機架連接到您的 AFF A900 系統</block>
+  <block id="1405f3f0f72b4cb16c01e65187cc0a31" category="summary">將 NS224 機架透過電纜連接到 AFF 系統，以提供雙路徑連線，從而確保 HA 配對的儲存備援和高可用度。</block>
+  <block id="92049d9acef18f958d25c1002a97d1f4" category="doc">將 NS224 機架連接到您的 AFF 系統</block>
+  <block id="3cedaa2644585f7d97ddf9b3685a5288" category="section-title">AFF 系統佈線概覽</block>
+  <block id="7c8595133f58348854ae0397e9b930e9" category="paragraph">由於每個系統都有獨特的連接埠分配和 I/O 模組配置，因此不同 AFF 平台型號的佈線方式也不同。</block>
+  <block id="a25a4b9044901a542f722cf5b7d83148" category="paragraph">在熱新增佈線程序期間，您需要將每個 NS224 機櫃連接到 HA 配對中的兩個控制器：</block>
+  <block id="07f2e3b0ed1ef1005fb0e25393c5b7ef" category="list-text">每個機櫃 NSM 模組都連接到每個控制器上的專用儲存連接埠，從而為每個機櫃建立兩條路徑（一條通過 NSM A、一條通過 NSM B）。</block>
+  <block id="5a8b588acf37f2df10282d9680c69325" category="list-text">這種雙路徑組態可提供儲存備援、並確保在單一路徑故障時能繼續存取資料。</block>
+  <block id="e923daff5f71ca0f5e8d74ac8b8ac0c5" category="list-text">纜線從機櫃 NSM e0a/e0b 連接埠（NSM100）或 e1a/e1b 連接埠（NSM100B）連接至控制器上具備 RoCE 功能的儲存連接埠。</block>
+  <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="section-title">其他資源</block>
+  <block id="5023d267ba63a2b359bd92a5291db2ef" category="paragraph">您的硬體系統可能同時相容於配備 NSM100 模組的 NS224 機架和配備 NSM100B 模組的 NS224 機架。有關完整的連接埠名稱和配置詳細資訊，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
+  <block id="03848e4fd9b885bbb260116430e16aaf" category="summary">如果您停用了自動磁碟機指派，請手動指派磁碟機所有權，然後重新啟用 AFF 系統的自動磁碟機指派。</block>
+  <block id="f4d6f2b45bd33f083d2eecbaa78bee2f" category="doc">為您的 AFF 系統完成 NS224 機架熱新增</block>
+  <block id="25fc4080e0a12976ca367ff5acde625a" category="summary">將 NS224 機櫃安裝到機櫃或電信機架中、連接電源線、並為您的 AFF 系統設定機櫃 ID。</block>
+  <block id="a7aea80a1fe9f48cb571bec422b6c9f2" category="doc">在您的 AFF 系統上安裝 NS224 機架</block>
+  <block id="32a721b8419c5252f4c3b1b468176546" category="inline-link-macro">為磁碟櫃佈線</block>
+  <block id="f5879540c092748be8f5ee2c354a84f4" category="paragraph">安裝好磁碟櫃後，<block ref="0d54957d836f9b784d85412a008d0389" category="inline-link-macro-rx"></block>。</block>
+  <block id="2aba7604a5709fd1fef2ecf32c77d141" category="summary">若要讓 AFF A1K 系統能夠熱新增 NS224 機櫃，請安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機櫃並停用自動磁碟機指派。</block>
+  <block id="395a73420823c6c23743513fdccfe319" category="doc">準備好您的 AFF A1K 系統，以便熱新增 NS224 機櫃</block>
+  <block id="b34ee0a8a1bf123717187b99947addb5" category="paragraph">準備您的 AFF A1K 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以獲得最佳連線能力，以及停用自動磁碟機指派。</block>
+  <block id="5be9e283aea1041c5c29448e60426e99" category="section-title">安裝支援 RoCE 的 I/O 模組</block>
+  <block id="57f56305e885095f553cf18f6291ea83" category="inline-link-macro">安裝磁碟櫃</block>
+  <block id="61255c2d42072960a48796efe411bade" category="paragraph">轉到 <block ref="4d4a8ccbf4d03f7d6a62418b862bb25e" category="inline-link-macro-rx"></block>。</block>
+  <block id="0872777981fca910d26bbf770305ced8" category="summary">準備您的 AFF A30、AFF C30、AFF A50 或 AFF C60 系統以熱新增 NS224 機櫃，方法是安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機櫃的纜線，以及停用自動磁碟機指派。</block>
+  <block id="2d563fb46c646f94a2f727631946f3df" category="doc">準備好您的 AFF A30、AFF C30、AFF A50 或 AFF C60 系統，以便熱新增 NS224 機櫃</block>
+  <block id="1389f5acd88efd153efd488bbf3ee14d" category="paragraph">準備您的 AFF A30、AFF C30、AFF A50 或 AFF C60 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="2560ba51dff741d0a014bd3e169f62e6" category="summary">準備您的 AFF A400 或 ASA C400 系統以熱新增 NS224 磁碟櫃，方法是安裝支援 RoCE 的 PCIe 卡或 I/O 模組、設定連接埠、重新連接現有磁碟櫃、以及停用自動磁碟機指派。</block>
+  <block id="8a4f5872d6232213d75396f364a4b167" category="doc">準備好您的 AFF A400 或 C400 系統，以便熱新增 NS224 機櫃</block>
+  <block id="cd5fbf92e2dc106e2e4b223a9b129ed8" category="paragraph">準備您的 AFF A400 或 C400 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途、重新連接現有磁碟櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="c6d22232782b48eb86f86354673710ba" category="summary">準備您的 AFF A70、A90 或 C80 系統以熱新增 NS224 機櫃，方法是安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機櫃的纜線，以及停用自動磁碟機指派。</block>
+  <block id="6ba48dc512a8294041fed56548c9abf4" category="doc">準備好您的 AFF A70、A90 或 C80 系統，以便熱新增 NS224 機櫃</block>
+  <block id="3a0d0406fc7715fdf267820d38b0dc40" category="paragraph">準備您的 AFF A70、A90 或 C80 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="db0584b97bce65f5bad54bc2cad21cac" category="summary">若要讓 AFF A800 或 ASA C800 系統能夠熱新增 NS224 磁碟櫃，請安裝支援 RoCE 的 PCIe 卡、設定連接埠、重新連接現有磁碟櫃並停用自動磁碟機指派。</block>
+  <block id="052038fca30c1fc8413e8574149184de" category="doc">準備好您的 AFF A800 或 C800 系統，以便熱新增 NS224 機櫃</block>
+  <block id="4622f028b4f22dfb7897ce52d73b2aaf" category="paragraph">準備您的 AFF A800 或 C800 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="32a7e09f74300736683b4c524096a240" category="section-title">安裝支援 RoCE 的 PCIe 卡</block>
+  <block id="a878fd1e3061b3618b8a1d758060db05" category="summary">若要讓 AFF A900 系統能夠熱新增 NS224 機櫃，請安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機櫃並停用自動磁碟機指派。</block>
+  <block id="c7a7fdcbc8b21a0701a4dccdbec961fb" category="doc">準備好您的 AFF A900 系統，以便熱新增 NS224 機櫃</block>
+  <block id="f69559aa820670c67c6f6f1227b394c4" category="paragraph">準備您的 AFF A900 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以獲得最佳連線能力，以及停用自動磁碟機指派。</block>
+  <block id="e5bf79601c805cedc0d3d9c3c137b68f" category="summary">準備將 NS224 機櫃熱新增至 AFF 系統，方法是安裝支援 RoCE 的 PCIe 卡或 I/O 模組、設定連接埠、重新連接現有機櫃，以及視需要停用自動磁碟機指派。</block>
+  <block id="c6588b3b8907c436298fce85580e0a56" category="doc">將 NS224 機架熱新增至 AFF 系統的準備工作概述</block>
+  <block id="b42055437befa3019b98e312efccfaa5" category="paragraph">準備將 NS224 機櫃熱新增至 AFF 系統，請確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途，並針對新機櫃最佳化現有組態。</block>
+  <block id="de765c87904a1c8b3f4a489808386f11" category="section-title">需要準備什麼</block>
+  <block id="981a9628f2e1767b68746cbfa827f1a4" category="paragraph">將 NS224 機架熱新增到 AFF 系統之前，需要先驗證並設定儲存連線基礎架構，然後再實際安裝新機架。這些工作可確保您的 HA 配對具有必要的支援 RoCE 的乙太網路連接埠，並且您的系統已設定為支援額外的儲存容量。</block>
+  <block id="5f4103995666c0e8687605ee1f99b0e9" category="paragraph">您需要完成的特定準備工作取決於您的平台型號、目前組態以及您要新增的磁碟櫃數量：</block>
+  <block id="87667eb31cdc64b3be90f8cbadb6c09b" category="list-text">請確認您的系統擁有足夠的支援 RoCE 的乙太網路連接埠（每個控制器的每個機櫃兩個）。如果需要更多連接埠，請在正確的控制器插槽中安裝支援 RoCE 的 PCIe 卡或 I/O 模組。</block>
+  <block id="eb21f3dcacccd7b7f5f24b51e81246b6" category="list-text">如果您使用非專用的 RoCE 連接埠連接 NS224 儲存架，請將這些連接埠配置為儲存用途，而不是網路用途。此過程不會中斷服務。</block>
+  <block id="508bef148bdd188def3822b889b7aa55" category="list-text">對於某些平台型號，在安裝額外的支援 RoCE 的 PCIe 卡或 I/O 模組後，您可能需要將現有機櫃重新連接至不同插槽中的兩組連接埠，以提供防止插槽故障的備援能力。</block>
+  <block id="5a0c2b4ca97e3384a6f1b403c5ebf4b5" category="list-text">如果您打算手動指派磁碟機所有權，請在熱新增磁碟櫃之前停用自動磁碟機指派。</block>
+  <block id="eb7d3592b7b6bed2cf5285d399b5f07d" category="summary">在將 NS224 機架熱新增至 AFF 系統之前、請先檢閱相關要求和最佳實務做法。</block>
+  <block id="c870280c34b6255f8503844836b02a76" category="doc">將 NS224 機櫃熱新增至 AFF 系統的需求與最佳實務做法</block>
+  <block id="622bd6910a80e1f8997c8f869ea4869e" category="paragraph">在熱新增 NS224 機櫃之前，請確認您的 AFF 系統符合 ONTAP 版本、機櫃容量和纜線佈線要求。請檢閱韌體和組態最佳實務做法，以確保熱新增程序順利完成且無錯誤。</block>
+  <block id="3ef7608d5b72eeb79b1699911e426acb" category="inline-link-macro">準備熱新增您的磁碟櫃</block>
+  <block id="77c7e5c1c55fb8220c94d8f0ab943182" category="paragraph">在審查了要求之後，<block ref="36563988a42ff32ec83debd69feaa1f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="04b56ada8862f6a4a0f631ecd34cba15" category="summary">請依照以下工作流程步驟、將 NS224 機櫃熱新增至您的 AFF 系統。</block>
+  <block id="8082f8222e3542d8b445206f6ec26592" category="doc">將 NS224 機架熱新增至您的 AFF 系統</block>
+  <block id="e50f989acda866ee7e3f0c22640b8ee5" category="list-text">此程序僅適用於直接連接的儲存設備。若要檢視交換器連接儲存設備的說明，請檢視<block ref="655fd8ce12b9f1cd7287415659488f07" category="inline-link-macro-rx"></block>。</block>
+  <block id="d933d934ca9e454349765e91ad3fb239" category="list-text">若要熱新增 NS224 磁碟櫃，您的 HA 配對必須符合特定需求。請檢閱<block ref="7c9dea7e8ce4663aa59dc0ebaed5ca89" category="inline-link-macro-rx"></block>。</block>
+  <block id="631166ce3f5e55542f2a9818f39f770a" category="inline-link-macro">檢閱熱新增需求</block>
+  <block id="6348f493d5548b689183fef815a74f95" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="bd153466fe91a6b8dcfc62823c0b6aae" category="inline-link-macro-rx"></block></block>
+  <block id="3cc8b1f07599dacfaf0be26bb27d77ac" category="paragraph">確認您的 AFF 系統符合熱新增 NS224 機櫃的要求，包括 ONTAP 版本支援、機櫃數量和佈線要求。</block>
+  <block id="0a14f39f541e8eb2b8cb9c1d9bc83b33" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="ed3dd087cd272bed933337d743d8db4d" category="inline-link-macro-rx"></block></block>
+  <block id="8fa55ff0ed526af6d65a67f130977508" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="686fc9b0b18a73ca745152883bffc56f" category="inline-link-macro-rx"></block></block>
+  <block id="744631736a5f7a7958dfde9d7b66f155" category="paragraph">安裝機櫃的導軌套件、在電信機架或機櫃中安裝並固定機櫃、連接電源線以開啟機櫃電源，並指派唯一的機櫃 ID 以確保機櫃在 HA 配對中是獨特的。</block>
+  <block id="0bfc4bf1e8851cfbea23a6c9adcebd64" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="e6c16ac8d522f23900a2c096341e6e99" category="inline-link-macro-rx"></block></block>
+  <block id="eb34dcff7d391de6c4a643ec02cf549e" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="b0ff862177133f021846080bd5224b71" category="inline-link-macro-rx"></block></block>
+  <block id="2e8dcd4ab3198564b18f8cf94360f516" category="summary">將 NS224 機架連接到 ASA A1K 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="7dc7357df0af776b17b5e126d648039d" category="doc">將 NS224 機架連接到您的 ASA A1K 系統</block>
+  <block id="f18c5aa6e5aa4bc97bd92dc212163199" category="paragraph">如果您在準備此程序時停用了自動磁碟機指派，則需要手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派。請前往<block ref="81897965bc831929e1d364eaa9b503fa" category="inline-link-macro-rx"></block>。</block>
+  <block id="371ffc2e97518d1fcbb40008b9198042" category="summary">將 NS224 機架連接到 ASA A20 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="33fa648a7f450ff038edb0754b9809f4" category="doc">將 NS224 機架連接線連接到您的 ASA A20 系統</block>
+  <block id="a44fe02a2b229685798e6f8211346515" category="summary">將 NS224 機架透過電纜連接到 ASA A250 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="7b82ab947e2871202ffbde90802c0210" category="doc">將 NS224 機架連接到您的 ASA A250 系統</block>
+  <block id="52484d3964bcbc71d0d4ba96694b9328" category="summary">將 NS224 機架連接到 ASA A30 或 ASA A50 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="59f7d1901d5414405db1545b1841e56d" category="doc">將 NS224 機架連接線連接到您的 ASA A30 或 ASA A50 系統</block>
+  <block id="47af986372d92423cfd7137c8c462d89" category="paragraph">當需要額外的儲存設備（內部機櫃之外）時、您可以將最多兩個 NS224 機櫃熱新增至 ASA A30 或 ASA A50 HA 配對。</block>
+  <block id="cc74f3f37f24a16f8db985007a40066c" category="summary">將 NS224 機架透過電纜連接到 ASA A400 或 ASA C400 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="490951b30aa6c03ce002a62514d5f196" category="doc">將 NS224 機架連接到您的 ASA A400 或 ASA C400 系統</block>
+  <block id="e97e86edd9af06a0a2cb6c140108aec7" category="summary">將 NS224 機架連接到 ASA A70 或 ASA A90 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="99cf231be9981bc8b648f854e7e9c78d" category="doc">將 NS224 機架連接到您的 ASA A70 或 ASA A90 系統</block>
+  <block id="13c129d6cc34bbf2c850307844984418" category="summary">將 NS224 機架透過電纜連接到 ASA A800 或 ASA C800 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="517a757444a6500a08af4525a075f03f" category="doc">將 NS224 機架連接到您的 ASA A800 或 ASA C800 系統</block>
+  <block id="d0c7ba1591ce7cec9db813a4f7be3860" category="summary">將 NS224 機架透過電纜連接到 ASA A900 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="cb19d49f2e1b325d8039538f29685547" category="doc">將 NS224 機架連接到您的 ASA A900 系統</block>
+  <block id="c38800d152928a66baffc9d708fa8986" category="summary">將 NS224 機架透過電纜連接到 ASA 系統,以提供雙路徑連接,從而確保 HA 配對的儲存備援和高可用性。</block>
+  <block id="873f5d21c81c7743192709a81dd36a4d" category="doc">將 NS224 機架連接到您的 ASA 系統</block>
+  <block id="0aa37078bd8133be6e75ef1e8e20bef1" category="section-title">ASA 系統佈線概覽</block>
+  <block id="a9fca1b812aeb288b51c092088e226ae" category="paragraph">由於每個系統都有獨特的連接埠分配和 I/O 模組配置，因此 ASA 平台機型的佈線方式也不同。</block>
+  <block id="f3dcc6df080374abf8409c7168ed8078" category="summary">如果您停用了自動磁碟機指派、請手動指派磁碟機所有權、然後重新啟用 ASA 系統的自動磁碟機指派。</block>
+  <block id="b4d021a54202499ea69059ff825728a3" category="doc">為您的 ASA 系統完成 NS224 機架熱新增</block>
+  <block id="e126c554448ccae5ed684aa2ba4cedc4" category="summary">將 NS224 機架安裝到機櫃或電信機架中、連接電源線，並為您的 ASA 系統設定機架 ID。</block>
+  <block id="0415bbc8ca9ac00eafda1bc34080819d" category="doc">在您的 ASA 系統上安裝 NS224 機架</block>
+  <block id="2f7ba60e0c58def18dbbea1328912695" category="paragraph">安裝好磁碟櫃後，<block ref="e09907e37993cc4d1bba0106108e294c" category="inline-link-macro-rx"></block>。</block>
+  <block id="753cc24e983b75bb3bf97f7a66136bbf" category="summary">準備您的 ASA A1K 系統以熱新增 NS224 機櫃，方法是安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機櫃的纜線，以及停用自動磁碟機指派。</block>
+  <block id="649662cc73035ea8f5bfcba4542613cb" category="doc">準備好您的 ASA A1K 系統，以便熱新增 NS224 機櫃</block>
+  <block id="39e29808d6f8eb3c974ff8ddc0882f07" category="paragraph">準備您的 ASA A1K 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以獲得最佳連線能力，以及停用自動磁碟機指派。</block>
+  <block id="0eb624d77c81b12e515f2e44e9f8dc88" category="paragraph">轉到 <block ref="440ce0e6bf6be827ef7eb4b0421de7d8" category="inline-link-macro-rx"></block>。</block>
+  <block id="9fc324cfd65a2bd579e477fb25ca1c00" category="summary">準備 ASA A30 或 A50 系統，透過安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機架以及停用自動磁碟機指派，以熱新增 NS224 機架。</block>
+  <block id="341ccf8011c490d87809d88bb82cebf5" category="doc">準備您的 ASA A30 或 ASA A50 系統以熱新增 NS224 磁碟櫃</block>
+  <block id="6d7fc55eb2d5db8c6b0a458361992703" category="paragraph">準備您的 ASA A30 或 A50 系統以熱新增 NS224 機櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途、重新連接現有機櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="61ff2a1d76855c857fa35ac44cb921ab" category="summary">準備 ASA A400 或 C400 系統，透過安裝支援 RoCE 的 PCIe 卡或 I/O 模組、配置連接埠、重新連接現有機架以及停用自動磁碟機指派，以熱新增 NS224 機架。</block>
+  <block id="9d62c140b57e909563af1f9cf21e9138" category="doc">準備您的 ASA A400 或 C400 系統以熱新增 NS224 磁碟櫃</block>
+  <block id="13f421b0b10e68b7621c5bbe6d65fdd2" category="paragraph">準備您的 ASA A400 或 C400 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途、重新連接現有磁碟櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="71c2e3f1f9508be360fc969e5ee198a1" category="summary">準備 ASA A70 或 A90 系統，透過安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機架以及停用自動磁碟機指派，即可熱新增 NS224 機架。</block>
+  <block id="03382a2f343da2385510a721a0bffa82" category="doc">準備好您的 ASA A70 或 A90 系統以熱新增 NS224 磁碟櫃</block>
+  <block id="922add47bc46b6f736782a8d678eeef1" category="paragraph">準備您的 ASA A70 或 A90 系統以熱新增 NS224 機櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途、重新連接現有機櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="4d72712a5b4d8b3ee1fdcc8b97da08b1" category="summary">若要讓 ASA A800 或 C800 系統能夠熱添加 NS224 機架，請安裝支援 RoCE 的 PCIe 卡、設定連接埠、重新連接現有機架並停用自動磁碟機指派。</block>
+  <block id="7fbe478603617057784b0023cafe572a" category="doc">準備您的 ASA A800 或 C800 系統以熱新增 NS224 磁碟櫃</block>
+  <block id="0da881672d22e7a3454b51046ad10d90" category="paragraph">準備您的 ASA A800 或 C800 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途、重新連接現有磁碟櫃以提高插槽恢復能力，以及停用自動磁碟機指派。</block>
+  <block id="9af146c048ea69207cee0cd2b00b0e38" category="summary">若要讓 ASA A900 系統能夠熱添加 NS224 機架，請安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機架並停用自動磁碟機指派。</block>
+  <block id="d6427f0b777bc13c5a0fcf8f26b17078" category="doc">準備好您的 ASA A900 系統，以便熱新增 NS224 機櫃</block>
+  <block id="fb9e3c69b85cf2cecab941e78e7df7b4" category="paragraph">準備您的 ASA A900 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以獲得最佳連線能力，以及停用自動磁碟機指派。</block>
+  <block id="afa132af8ba3b02a9bc7d5d244242dbd" category="summary">準備將 NS224 機櫃熱新增至 ASA 系統，請安裝支援 RoCE 的 PCIe 卡或 I/O 模組、設定連接埠、重新佈線現有機櫃，並視需要停用自動磁碟機指派。</block>
+  <block id="f1d1a74e6f771bea0d25ea934db1009c" category="doc">將 NS224 機架熱新增至 ASA 系統的準備工作概述</block>
+  <block id="60aebe5eb849c2b6d4c592af6029fc6f" category="paragraph">要將 NS224 機櫃熱新增至 ASA 系統，請確保有足夠的支援 RoCE 的儲存連接埠，將其設定為儲存用途，並針對新機櫃最佳化現有組態。</block>
+  <block id="31d24711890b0a6d52d63651e587a41b" category="paragraph">將 NS224 機架熱新增到 ASA 系統之前，需要先驗證並設定儲存連線基礎架構，然後再實際安裝新機架。這些工作可確保您的 HA 配對具有必要的支援 RoCE 的乙太網路連接埠，並且您的系統已設定為支援額外的儲存容量。</block>
+  <block id="dd62640a8b71fe0f97ac8c12549ed2a4" category="summary">在將 NS224 機架熱新增至 ASA 系統之前，請先檢閱相關要求和最佳實務做法。</block>
+  <block id="7127bf68b41e6861b1f6e66fb4cc0b5d" category="doc">將 NS224 機架熱新增至 ASA 系統的需求與最佳實務做法</block>
+  <block id="ec4f3666cf60ff7ad4313e86b6786d6c" category="paragraph">在熱添加 NS224 機架之前,請確認您的 ASA 系統符合 ONTAP 版本、機架容量和佈線要求。請查閱韌體和組態最佳實務做法,以確保熱添加程序順利完成且無錯誤。</block>
+  <block id="a42471fb2fabcd69abfd361718c08e99" category="paragraph">在審查了要求之後，<block ref="b56aedb7884c764740a3d294deea36ac" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8d2b47e38367fdc76847482befa5bdb" category="summary">請依照以下工作流程步驟，將 NS224 機架熱新增至您的 ASA 系統。</block>
+  <block id="19c15bf5aa39a83a69907120eee58de3" category="doc">將 NS224 機架熱新增至您的 ASA 系統</block>
+  <block id="199ddd16ce02bab6d6ab84563d33bad1" category="list-text">要熱新增 NS224 機櫃，您的 HA 配對必須符合特定需求。請檢閱<block ref="cae34a34292923892e7b617987c13150" category="inline-link-macro-rx"></block>。</block>
+  <block id="2805b77e32d80b204c57f1f5ab7faa4e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="bb0373d02ad23ba850bd42e162cb7277" category="inline-link-macro-rx"></block></block>
+  <block id="48479edd79e91d00fb5816989b9a318a" category="paragraph">確認您的 ASA 系統符合熱新增 NS224 機櫃的要求，包括 ONTAP 版本支援、機櫃數量和佈線要求。</block>
+  <block id="d8c3acfc3d325e4b6fe4b94c24fd4abd" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="740e6f11bd0fe547897163b7ed46fb71" category="inline-link-macro-rx"></block></block>
+  <block id="39459b9503609e9f2dcb787fcf5359cc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="397a1d4a7ea2ce36b00b0d0fb8dde434" category="inline-link-macro-rx"></block></block>
+  <block id="b21af7e6b60c8c10d758df0e7e2d2941" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="584f5591f47a2e1fa1ce25aa1a2a2e36" category="inline-link-macro-rx"></block></block>
+  <block id="9a39f929deb5b25ead99c18d0ab8de81" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="01d4a4e36e3c11048d9bfeeed3c3cf8f" category="inline-link-macro-rx"></block></block>
+  <block id="1c67bd96a3e587fdef4b79fb771ca919" category="doc">將磁碟機熱新增至 NS224 磁碟櫃</block>
+  <block id="c2e7d4fa88898fad95f82b64fbbf4f81" category="summary">將 NS224 機架連接到 AFF A320 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="702426b4c0f8a77d67355ae14c161e1a" category="doc">將 NS224 機架連接到您的 AFF A320 系統</block>
+  <block id="6ff3e2a3de323898dbec8017ea91b8f6" category="paragraph">如果您在準備此程序時停用了自動磁碟機指派，則需要手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派。請前往 <block ref="a6ace0a0c5f156c7b783660a3cde7328" category="inline-link-macro-rx"></block>。</block>
+  <block id="3f0be66da374eef958dfa935d2ef6047" category="summary">將 NS224 機架連接到 AFF A700 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="ef53bfc2321b20baba24ec048612f6dc" category="doc">將 NS224 機架連接到您的 AFF A700 系統</block>
+  <block id="5cd39a9b7190e6a2a2b513aa9d89c982" category="summary">將 NS224 機架連接到 FAS500f 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。</block>
+  <block id="335fd93e439289e5d41b90ed6b8759d6" category="doc">將 NS224 機架連接到您的 FAS500f 系統</block>
+  <block id="369695e0c8996f64fd46292580ff60e5" category="summary">將 NS224 機櫃連接至您的可用性終止系統，以提供雙路徑連線能力，確保 HA 配對的儲存備援和高可用性。</block>
+  <block id="87b96b6f516ac33c5ea7005b81cd9ac4" category="doc">將 NS224 機架連接到您的可用性終止系統</block>
+  <block id="8b251d26dfce27520aaa5a1e3ca84428" category="section-title">停用系統的佈線概觀</block>
+  <block id="a82bcb2ee3a4c8c1928b30e9628990b0" category="paragraph">由於每個系統都有獨特的連接埠指派和 I/O 模組組態，因此不同平台機型的佈線方式也不同。</block>
+  <block id="a73daa375a042f18cab8da6ffde9002e" category="summary">如果您停用了自動磁碟機指派，請手動指派磁碟機擁有權，然後為您的終止供應系統重新啟用自動磁碟機指派。</block>
+  <block id="bfbd5bd4ddba325dc6079014ad29d44a" category="doc">為您的停產系統完成 NS224 機櫃熱新增</block>
+  <block id="b443b2935eb6e694081b3128b6e007d5" category="summary">將 NS224 磁碟櫃安裝到機櫃或電信機架中、連接電源線，並為您的停用系統設定磁碟櫃 ID。</block>
+  <block id="61a5f8651cbd3168c731e7ebf791fdb8" category="doc">在您的可用性終止系統上安裝 NS224 機櫃</block>
+  <block id="cf3a347889d8a442de5965814559bb76" category="paragraph">安裝好磁碟櫃後，<block ref="3913f1674d1bfe5c79fe7e1ce377e0a9" category="inline-link-macro-rx"></block>。</block>
+  <block id="9c5bff626f79c8b180c688ebdccebfd2" category="summary">準備將 NS224 機櫃熱新增至可用性終止系統，請安裝支援 RoCE 的 PCIe 卡或 I/O 模組、設定連接埠，並視需要停用自動磁碟機指派。</block>
+  <block id="9d226b4fb84d7302b5480d775bfda66f" category="doc">準備將 NS224 磁碟櫃熱新增至停產系統的總覽</block>
+  <block id="a0f7d6dee30cd981dce0f08115ee4b57" category="paragraph">要將 NS224 機櫃熱新增至可用性終止系統，請確保有足夠的支援 RoCE 的儲存連接埠，將其設定為儲存用途，並針對新機櫃最佳化現有組態。</block>
+  <block id="3ad5229ed903da1478ba8ecf38dd1135" category="paragraph">將 NS224 機架熱添加到可用性即將結束的系統之前，需要先驗證並配置儲存連接基礎架構，然後再實際安裝新機架。這些工作可確保您的 HA 配對具有必要的支援 RoCE 的乙太網路連接埠，並且您的系統已配置為支援額外的儲存容量。</block>
+  <block id="f2d50bcb3d53798eb009a96a0f7682cc" category="summary">準備您的可用性終止系統，透過安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機櫃以及停用自動磁碟機指派，來熱新增 NS224 機櫃。</block>
+  <block id="7df89419d568e905e3a692148a7dfaa3" category="doc">準備好您的 EOA 系統，以便熱新增 NS224 機櫃</block>
+  <block id="18bc8299eae667d2360213db6c729117" category="paragraph">準備好在系統可用性終止時熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存用途、重新連接現有磁碟櫃以提高插槽恢復能力，並停用自動磁碟機指派。</block>
+  <block id="3afb92ba60f3992c4a15e2dd58fc3b97" category="paragraph">現有機櫃的重新佈線僅適用於 AFF A700 工作流程中即將停用的系統。</block>
+  <block id="d46f1bfbaaf19b8faf0f27f3a3ec82d4" category="paragraph">此程序假設現有機櫃透過纜線連接至每個控制器插槽 3 中支援 RoCE 的 I/O 模組。</block>
+  <block id="354152d92f3c90d73f508330ebbd0fc5" category="paragraph">轉到 <block ref="cb47a6e97b235f0db9e09d237da39070" category="inline-link-macro-rx"></block>。</block>
+  <block id="798e6c0fcf599a647fdbbbf5a65a0435" category="summary">在將 NS224 機櫃熱新增至您的終端可用性系統之前，請先檢閱需求和最佳實務做法。</block>
+  <block id="9a869f2c5e42872af0cfa20ac3907efe" category="doc">將 NS224 磁碟櫃熱新增至停產系統的需求與最佳實務做法</block>
+  <block id="f08ed02b2f8131815ea18d356dbb09ac" category="paragraph">在熱添加 NS224 機架之前，請確認您的停用系統符合 ONTAP 版本、機架容量和佈線要求。請查閱韌體和配置最佳實踐，以確保熱添加過程順利完成且無錯誤。</block>
+  <block id="e36c4bf89f1633fab68840f3d3124e8c" category="paragraph">在審查了要求之後，<block ref="5b5c3240d6346f8b8d8b63a3fb709abe" category="inline-link-macro-rx"></block>。</block>
+  <block id="2ea534d32d413944e4f3876872e6d225" category="summary">請依照以下工作流程步驟，將 NS224 機架熱新增至您的停用系統。</block>
+  <block id="ee9ee1e1fd966d9e801ed4e99ec13d55" category="doc">將 NS224 機櫃熱新增至您的停產系統</block>
+  <block id="06fca788aab272f669076e5415f1ac81" category="list-text">若要熱新增 NS224 磁碟櫃，您的 HA 配對必須符合特定需求。請檢閱<block ref="cf52a303476cc9b824879b2dd0d3b447" category="inline-link-macro-rx"></block>。</block>
+  <block id="036ef454407708a0fde459868c584bb1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="2ed8872f0cb696e3f1082301ca8d5dd0" category="inline-link-macro-rx"></block></block>
+  <block id="da07279e97169902d3fef9feb4d8c988" category="paragraph">確認您的停用系統符合熱新增 NS224 機櫃的要求、包括 ONTAP 版本支援、機櫃數量和佈線要求。</block>
+  <block id="39a4bfcc890d0e6f6e70035022540ebe" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="2062cd7572cd63e3b118c7a87bfca915" category="inline-link-macro-rx"></block></block>
+  <block id="84e4a82707920d40f8a1f4e543c9e6b9" category="paragraph">根據您的平台型號，您可能需要安裝額外的支援 RoCE 的 PCIe 卡或 I/O 模組，將非專用的支援 RoCE 的乙太網路連接埠配置為儲存用途，如果您要手動指派磁碟機所有權，則需要停用自動磁碟機指派。</block>
+  <block id="5f90549ed2d02bf2c128f663507cc5f9" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="b72722c30e9b7abd7b610c100a4ee69c" category="inline-link-macro-rx"></block></block>
+  <block id="1066cdab80e0344cb59bb64129ce6bb4" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block><block ref="70351221e80cde7f67674280906ac958" category="inline-link-macro-rx"></block></block>
+  <block id="547e69a65d8d81d553578ff24dea7d85" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="c30d44dfb40ef3d97d45fe457d63947e" category="inline-link-macro-rx"></block></block>
+  <block id="a5b8d0ff3666c1c6c1e0f3944d0cd507" category="doc">NS224 機架維護總覽</block>
+  <block id="763c12dd763d273a35753f2a44eca1a9" category="doc">監控 NS224 機櫃 LED</block>
+  <block id="5b54fb2713b76b6e1e97a0989a23a80f" category="doc">更換 NS224 開機媒體</block>
+  <block id="1d92e02b5b98c09f519d6931bdcad8c5" category="doc">更換 NS224 DIMM</block>
+  <block id="9c9bc1bf8eb1af4d0965537884465377" category="doc">熱插拔 NS224 磁碟機</block>
+  <block id="eeb8ab72bb69d58a211caf901026370f" category="doc">更換 NS224 風扇模組</block>
+  <block id="3401c50dafcc783f658b82ebdfa94d96" category="doc">更換 NS224 乙太網路 I/O 模組</block>
+  <block id="86d45ff09c4f1c000050f2f3dd5d31d7" category="doc">更換 NS224 NSM 模組</block>
+  <block id="1fc1c33f9779093c62cbb04ceceda196" category="doc">熱插拔 NS224 電源供應器</block>
+  <block id="a0c4f0471be6ae7c816563e7a5847bc8" category="doc">更換 NS224 即時時鐘電池</block>
+  <block id="8b26fbf6521b9b4e81d41419a3dcd80f" category="sidebar">AFF 系統的熱新增磁碟櫃</block>
+  <block id="6f79aff28bf80816c1ab31edc8c0f5fc" category="sidebar">ASA 系統的熱新增磁碟櫃</block>
+  <block id="a0f079bb758cc5ce39f78b0c361f2906" category="sidebar">EOA 系統的熱新增磁碟櫃</block>
+  <block id="60674128560e3ecd6184c7c88590f63e" category="sidebar">熱新增準備總覽</block>
+  <block id="2ed0fadb282d9ecdca4887ac46baeb57" category="sidebar">AFF A70、A90 和 C80</block>
+  <block id="eef954fbf55cd4bc61bce5bbe04573b9" category="sidebar">AFF A800 和 C800</block>
+  <block id="d6dd692bacb3d2c841a6c540519410ba" category="sidebar">AFF A400 和 C400</block>
+  <block id="67e432b144bfa2ee15973e4bf4ae0c12" category="sidebar">AFF A30、A50、C30 和 C60</block>
+  <block id="1ce969d143fa3250f8279c0e368b76fd" category="sidebar">安裝磁碟櫃</block>
+  <block id="ab7e2e5e2af2a848c5163bc689d4cf22" category="sidebar">連接 AFF 系統纜線</block>
+  <block id="d4fef4e3a57ca9a06c3d1d98fecf0d95" category="sidebar">AFF A250 和 C250</block>
+  <block id="99ae651c59f33408c7dd545d0b2c2e69" category="sidebar">ASA A70 或 A90</block>
+  <block id="2aa33f8cc9c107c908c2abefc2e716e7" category="sidebar">ASA A800 或 C800</block>
+  <block id="f8dbf3a4d10424faab253f3f35595c1d" category="sidebar">ASA A400 或 C400</block>
+  <block id="c5de68fa2afe67767ddd7b45054c122d" category="sidebar">ASA A30 或 A50</block>
+  <block id="8d5e7895e7572495b322b60ec1134d14" category="sidebar">纜線 ASA 系統</block>
+  <block id="91d95e6e15279946ba73922f805b7916" category="sidebar">EOA 系統</block>
+  <block id="9d0dcbcd43b2c01863b0888b33784f20" category="sidebar">纜線終止供應系統</block>
 </blocks>

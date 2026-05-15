@@ -1,0 +1,39 @@
+---
+permalink: ns224/hot-add-eoa-cable-a320.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a320, cable, end-of-availability 
+summary: 將 NS224 機架連接到 AFF A320 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。 
+---
+= 將 NS224 機架連接到您的 AFF A320 系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 NS224 機架連接到 AFF A320 系統，使每個機架與 HA 配對中的每個控制器都有兩個連接。
+
+您可以在需要額外儲存時、將第二個機櫃熱新增至現有的 HA 配對。
+
+.步驟
+. 將機架連接至控制器。
++
+.. 將NSM A連接埠e0a連接至控制器A連接埠e0e。
+.. 將NSM A連接埠e0b纜線連接至控制器B連接埠e0b。
+.. 將NSM B連接埠e0A纜線連接至控制器B連接埠e0e。
+.. 將NSM B連接埠e0b纜線連接至控制器A連接埠e0b。+下圖顯示熱新增機櫃（機櫃2）的佈線：
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[AFF A320 的纜線、含兩個 NS224 機櫃和三組內建連接埠]
+
+
+
+. 使用驗證熱添加的機櫃是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+
+
+.下一步
+如果您在準備此程序時停用了自動磁碟機指派，則需要手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派。請前往 link:hot-add-eoa-complete.html["完成熱新增"]。
+
+否則、您就會完成熱新增機櫃程序。

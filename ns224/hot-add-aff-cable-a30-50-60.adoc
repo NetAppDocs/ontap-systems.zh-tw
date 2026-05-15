@@ -1,0 +1,126 @@
+---
+permalink: ns224/hot-add-aff-cable-a30-50-60.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a30, aff a50, aff c30, aff c60, cable 
+summary: 將 NS224 機架連接到 AFF A30、AFF A50、AFF C30 或 AFF C60 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。 
+---
+= 將 NS224 機架透過電纜連接到您的 AFF A30、AFF A50、AFF C30 或 AFF C60 系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 NS224 機架連接到 AFF A30、AFF A50、AFF C30 或 AFF C60 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。
+
+當需要額外儲存（至內部機櫃）時，您最多可以將兩個 NS224 機櫃熱新增至 AFF A30 ， AFF C30 ， AFF A50 或 AFF C60 HA 配對。
+
+.關於這項工作
+* 本程序假設您的 HA 配對只有內部儲存設備（無外部機櫃），而且每個控制器中最多可熱新增兩個額外機櫃和兩個具備切換功能的 I/O 模組。
+* 此程序可解決下列熱新增案例：
++
+** 將第一個機櫃熱新增至 HA 配對、並在每個控制器中使用一個具備切換功能的 I/O 模組。
+** 將第一個機櫃熱新增至 HA 配對、每個控制器都有兩個具備切換功能的 I/O 模組。
+** 熱 - 將第二個機櫃新增至 HA 配對、每個控制器都有兩個具備切換功能的 I/O 模組。
+
+
+* 這些系統與 NSM100 模組的 NS224 機櫃和 NSM100B 模組的 NS224 機櫃相容。為確保將控制器連接至正確的連接埠，請將每個圖表中的「 X 」取代為模組的正確連接埠編號：
++
+[cols="1,4"]
+|===
+| 模組類型 | 連接埠標籤 
+
+
+ a| 
+NSM100
+ a| 
+"0"
+
+例如 e0a
+
+
+
+ a| 
+NSM100B
+ a| 
+"1"
+
+例如： e1a.
+
+|===
+
+
+.步驟
+. 如果您要在每個控制器模組中使用一組具備切換功能的連接埠（一個具備切換功能的 I/O 模組）來熱新增一個機櫃、而且這是 HA 配對中唯一的 NS224 機櫃、請完成下列子步驟。
++
+否則、請前往下一步。
+
++
+
+NOTE: 此步驟假設您已在插槽 3 中安裝具備 ROCE 功能的 I/O 模組。
+
++
+.. 纜線架 NSM A 連接埠 exa 至控制器插槽 3 連接埠 A （ e3a ）。
+.. 纜線架 NSM A 連接埠 EXB 至控制器 B 插槽 3 連接埠 b （ e3b ）。
+.. 纜線架 NSM B 連接埠 exa 至控制器 B 插槽 3 連接埠 A （ e3a ）。
+.. 纜線架 NSM B 連接埠 EXB 至控制器 A 插槽 3 連接埠 b （ e3b ）。
++
+下圖顯示使用每個控制器模組中一個具備RoCE功能的I/O模組、連接一個熱新增機櫃的纜線：
+
++
+image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[AFF / ASA A30 的纜線,452px,AFF/ASA A50]
+
+
+
+. 如果您在每個控制器模組中使用兩組具備RoCE功能的連接埠（兩個具備RoCE功能的I/O模組）熱新增一或兩個磁碟櫃、請完成適用的子步驟。
++
+
+NOTE: 此步驟假設您已在插槽 3 和 1 中安裝具備 ROCE 功能的 I/O 模組。
+
++
+[cols="1,3"]
+|===
+| 磁碟櫃 | 纜線 
+
+
+ a| 
+機櫃1.
+ a| 
+.. 纜線 NSM A 連接埠 exa 至控制器 A 插槽 3 連接埠 A （ e3a ）。
+.. 纜線 NSM A 連接埠 EXB 至控制器 B 插槽 1 連接埠 b （ e1b ）。
+.. 將 NSM B 連接埠 exa 連接至控制器 B 插槽 3 連接埠 A （ e3a ）。
+.. 將 NSM B 連接埠 EXB 連接至控制器 A 插槽 1 連接埠 b （ e1b ）。
+.. 如果您要快速新增第二個擱板，請完成「`擱板 2`」子步驟；否則，請前往下一步。
+
+
+下圖顯示每個控制器模組中使用兩個具備切換功能的 I/O 模組、為一個熱新增機櫃佈線的情況：
+
+image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[AFF / ASA A30 的纜線,452px,AFF/ASA A50]
+
+
+
+ a| 
+機櫃2.
+ a| 
+.. 纜線 NSM A 連接埠 exa 至控制器插槽 1 連接埠 A （ e1a ）。
+.. 纜線 NSM A 連接埠 EXB 至控制器 B 插槽 3 連接埠 b （ e3b ）。
+.. 將 NSM B 連接埠 exa 連接至控制器 B 插槽 1 連接埠 A （ e1a ）。
+.. 將 NSM B 連接埠 EXB 連接至控制器 A 插槽 3 連接埠 b （ e3b ）。
+.. 前往下一步。
+
+
+下圖顯示使用每個控制器模組中兩個具備 CE 功能的 I/O 模組、為兩個熱新增機櫃進行纜線連接：
+
+image::../media/drw_ns224_g_2shelf_2card_ieops-2003.svg[AFF ASA 纜線,452px,AFF/ASA A50]
+
+|===
+. 使用驗證熱添加的機櫃是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+
+
+.下一步
+如果您在準備此程序時停用了自動磁碟機指派，則需要手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派。請前往 link:hot-add-aff-complete.html["完成熱新增"]。
+
+否則、您就會完成熱新增機櫃程序。

@@ -1,0 +1,144 @@
+---
+permalink: ns224/hot-add-asa-prepare-a900.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, preparation, roce, asa a900 
+summary: 若要讓 ASA A900 系統能夠熱添加 NS224 機架，請安裝支援 RoCE 的 I/O 模組、設定連接埠、重新連接現有機架並停用自動磁碟機指派。 
+---
+= 準備好您的 ASA A900 系統，以便熱新增 NS224 機櫃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+準備您的 ASA A900 系統以熱新增 NS224 磁碟櫃，方法是確保有足夠的支援 RoCE 的儲存連接埠、將其設定為儲存設備使用、重新連接現有磁碟櫃以獲得最佳連線能力，以及停用自動磁碟機指派。
+
+
+
+== 安裝支援 RoCE 的 I/O 模組
+
+如果您的系統支援使用支援 RoCE 的 PCIe 卡或 I/O 模組、則您的 HA 配對必須有足夠的可用支援 RoCE 的乙太網路連接埠、以支援您要熱新增的磁碟櫃數量。
+
+.步驟
+. 針對您要熱新增的每個機櫃、請確認每個控制器上有兩個具備 ROCE 功能的連接埠。
++
+這些 port 可以位於控制器上、支援 RoCE 的 PCIe 卡上、兩者的組合上，或位於支援 RoCE 的 I/O 模組上，具體取決於您的系統支援情況。
+
+. 如果您的 HA 配對沒有足夠的可用 RoCE 連接埠，請將額外的 PCIe 卡或 I/O 模組安裝到系統支援的正確控制器插槽中。
++
+.. 識別適合您系統的正確控制器插槽。請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^]。
+.. 請參閱系統文件以取得 PCIe 卡或 I/O 模組安裝說明。
+
+
+
+
+
+
+== 設定具備 ROCE 功能的連接埠以供儲存使用
+
+在某些系統中，當您在支援的控制器插槽中安裝支援 RoCE 的 PCIe 卡或 I/O 模組時，支援 RoCE 的連接埠會自動預設用於儲存。但是，您應該完成此程序以驗證連接埠是否已正確配置為用於儲存。
+
+為儲存使用設定非專用 RoCE 功能連接埠是不中斷營運的程序。除非一個或兩個控制器處於維護模式，否則您不需要重新啟動控制器。此程序假設兩個控制器均未處於維護模式。
+
+如果將來需要將連接埠從儲存用途變更為網路用途，請使用命令  `storage port modify -node _node_name_ -port _port_name_ -mode network`。
+
+.步驟
+. 請確認您已在每個控制器中安裝任何額外的支援 RoCE 的 PCIe 卡或 I/O 模組。
+. 使用 SSH 或序列主控台連接埠登入叢集。
+. 輸入命令  `storage port show`，驗證 HA 配對中的非專用連接埠是否已設定為儲存用途。
++
+命令輸出會因 ONTAP 版本而異：
+
++
+** **ONTAP 9.8 或更新版本：** 未專用於儲存用途的連接埠會在 `storage`欄中顯示 `Mode`。未設定為儲存用途的連接埠會在 `network`欄中顯示 `Mode`。
+** **ONTAP 9.7：** 未專用於儲存用途的連接埠會在 `false`欄中顯示 `Is Dedicated?`，並在 `enabled`欄中顯示 `State`。未設定為儲存用途的連接埠會在 `false`欄中顯示 `Is Dedicated?`，並在 `disabled`欄中顯示 `State`。
+
+
+. 如果非專用連接埠已設定為用於儲存設備，則此程序已完成。否則，請完成以下步驟來設定連接埠。
+. 在其中一個控制器上設定非專用連接埠以供儲存使用。您必須針對要設定的每個連接埠重複執行適用的命令。
++
+[cols="1,3"]
+|===
+| 如果HA配對正在執行... | 使用此命令... 
+
+
+ a| 
+部分9.8或更新版本ONTAP
+ a| 
+`storage port modify -node _node_name_ -port _port_name_ -mode storage`
+
+
+
+ a| 
+更新ONTAP
+ a| 
+`storage port enable -node _node_name_ -port _port_name_`
+
+|===
+. 對第二個控制器重複上述步驟。
+. 輸入命令  `storage port show`，驗證兩個控制器上的非專用連接埠是否已配置為用於儲存。
++
+命令輸出會因 ONTAP 版本而異：
+
++
+** **ONTAP 9.8 或更高版本：**配置為儲存用途的非專用連接埠將顯示 `storage`在 `Mode`欄中。
+** **ONTAP 9.7：** 配置為儲存用途的非專用 port 會在 `false` 欄中顯示 `Is Dedicated?`，並在 `enabled` 欄中顯示 `State`。
+
+
+
+
+
+
+== 可重新配置現有的機櫃
+
+當您將磁碟櫃熱新增至 A900 HA 配對時、您需要重新連接現有磁碟櫃的纜線、以平衡多個支援 RoCE 的 I/O 模組之間的連線。
+
+* 如果要熱新增第二個機櫃，則必須將第一個機櫃重新連接到插槽 2 和 10。對於第二個機櫃，此程序假定現有機櫃已連接到每個控制器插槽 2 中支援 RoCE 的 I/O 模組。
+* 如果要熱新增第四個機櫃，則必須將第三個機櫃重新連接到插槽 1 和 11。對於第四個機櫃，此程序假定第三個機櫃已連接到每個控制器的插槽 1。
+
+
+.步驟
+. 如果您要熱新增第二個機櫃或第四個機櫃、請執行下列其中一項操作。
++
+** 如果您要熱新增第二個機櫃、請在每個控制器的插槽 2 和插槽 10 中、將第一個機櫃重新放置在具有切換功能的 I/O 模組上。
++
+... 在控制器 A 上，將纜線從插槽 2 連接埠 b（e2b）移至插槽 10 連接埠 b（e10b）。
+... 在控制器B上重複相同的纜線移動
+
+
+** 如果您要熱新增第四個機櫃、請在每個控制器的插槽 1 和插槽 11 中、將第三個機櫃重新放置在具有切換功能的 I/O 模組上。
++
+... 在控制器 A 上、將纜線從插槽 1 連接埠 b（e1b）移至插槽 11 連接埠 b（e11b）。
+... 在控制器B上重複相同的纜線移動
+
+
+
+
+. 使用驗證已重新連接的機架是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+
+
+
+
+== 停用自動磁碟機指派
+
+如果您不確定應該手動指派磁碟機擁有權、或想要瞭解儲存系統的磁碟機擁有權原則自動指派、請前往 https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html["關於自動指派磁碟擁有權"^]。
+
+.步驟
+. 驗證是否已啟用自動磁碟指派：「torage disk option show」
++
+您可以在任一節點上輸入命令。
+
++
+如果啟用自動磁碟指派，則每個節點的輸出會在 `on`欄中顯示 `Auto Assign`。
+
+. 如果已啟用自動磁碟指派、請停用此功能：「torage disk option modify -node_node_name_-autodassign Off」（磁碟選項修改-node_node_name_-autodassign Off）
++
+您必須停用兩個節點上的自動磁碟機指派。
+
+
+
+.下一步
+轉到 link:hot-add-asa-install.html["安裝磁碟櫃"]。

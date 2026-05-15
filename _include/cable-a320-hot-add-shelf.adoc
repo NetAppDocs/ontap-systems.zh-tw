@@ -1,0 +1,21 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 將機架連接至控制器。
++
+.. 將NSM A連接埠e0a連接至控制器A連接埠e0e。
+.. 將NSM A連接埠e0b纜線連接至控制器B連接埠e0b。
+.. 將NSM B連接埠e0A纜線連接至控制器B連接埠e0e。
+.. 將NSM B連接埠e0b纜線連接至控制器A連接埠e0b。+下圖顯示熱新增機櫃（機櫃2）的佈線：
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[AFF A320 的纜線、含兩個 NS224 機櫃和三組內建連接埠]
+
+
+
+. 使用驗證熱添加的機櫃是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+

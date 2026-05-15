@@ -1,0 +1,40 @@
+---
+permalink: ns224/hot-add-aff-cable-a250-c250.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a250, aff c250, cable 
+summary: 將 NS224 機架透過電纜連接到 AFF A250 或 AFF C250 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。 
+---
+= 將 NS224 機架連接到您的 AFF A250 或 AFF C250 系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 NS224 機架透過電纜連接到 AFF A250 或 AFF C250 系統，以便每個機架與 HA 配對中的每個控制器都有兩個連線。
+
+.關於這項工作
+從平台機箱背面看、左側的RoCE卡連接埠為連接埠「a」（e1a）、右側連接埠為連接埠「b」（e1b）。
+
+.步驟
+. 纜線連接機櫃：
++
+.. 纜線櫃NSM A連接埠e0a、用於控制器A插槽1連接埠A（e1a）。
+.. 纜線櫃NSM A連接埠e0b至控制器B插槽1連接埠b（e1b）。
+.. 纜線櫃NSM B連接埠e0A至控制器B插槽1連接埠A（e1a）。
+.. 纜線櫃NSM B連接埠e0b連接至控制器A插槽1連接埠b（e1b）。+下圖顯示機櫃佈線完成後的情形。
++
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[使用一個 NS224 機櫃和一組 PCIe 卡連接埠的 AFF / ASA A250 C250 或 FAS500f 纜線]
+
+
+
+. 使用驗證熱添加的機櫃是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+
+
+.下一步
+如果您在準備此程序時停用了自動磁碟機指派，則需要手動指派磁碟機所有權，然後根據需要重新啟用自動磁碟機指派。請前往 link:hot-add-aff-complete.html["完成熱新增"]。
+
+否則、您就會完成熱新增機櫃程序。

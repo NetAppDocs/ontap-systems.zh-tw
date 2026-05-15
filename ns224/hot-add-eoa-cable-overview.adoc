@@ -1,0 +1,33 @@
+---
+permalink: ns224/hot-add-eoa-cable-overview.html 
+sidebar: sidebar 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, cable 
+summary: 將 NS224 機櫃連接至您的可用性終止系統，以提供雙路徑連線能力，確保 HA 配對的儲存備援和高可用性。 
+---
+= 將 NS224 機架連接到您的可用性終止系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 NS224 機櫃連接至您的可用性終止系統，以提供雙路徑連線能力，確保 HA 配對的儲存備援和高可用性。
+
+
+
+== 停用系統的佈線概觀
+
+由於每個系統都有獨特的連接埠指派和 I/O 模組組態，因此不同平台機型的佈線方式也不同。
+
+在熱新增佈線程序期間，您需要將每個 NS224 機櫃連接到 HA 配對中的兩個控制器：
+
+* 每個機櫃 NSM 模組都連接到每個控制器上的專用儲存連接埠，從而為每個機櫃建立兩條路徑（一條通過 NSM A、一條通過 NSM B）。
+* 這種雙路徑組態可提供儲存備援、並確保在單一路徑故障時能繼續存取資料。
+* 纜線從機櫃 NSM e0a/e0b 連接埠（NSM100）或 e1a/e1b 連接埠（NSM100B）連接至控制器上具備 RoCE 功能的儲存連接埠。
+
+
+
+
+== 其他資源
+
+您的硬體系統可能同時相容於配備 NSM100 模組的 NS224 機架和配備 NSM100B 模組的 NS224 機架。有關完整的連接埠名稱和配置詳細資訊，請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^]。

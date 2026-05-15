@@ -1,10 +1,10 @@
 ---
-permalink: ns224/complete-hot-add-shelf.html 
+permalink: ns224/hot-add-asa-complete.html 
 sidebar: sidebar 
-keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, complete, drive, hot-add an ns224 drive shelf 
-summary: 如果您在準備NS224磁碟機櫃熱新增時停用了自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。 
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, complete, drive 
+summary: 如果您停用了自動磁碟機指派、請手動指派磁碟機所有權、然後重新啟用 ASA 系統的自動磁碟機指派。 
 ---
-= 完成熱新增 - NS224 機櫃
+= 為您的 ASA 系統完成 NS224 機架熱新增
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 如果您在準備NS224磁碟機櫃熱新增時停用了自動磁碟機
 如果您在準備 NS224 機櫃熱新增時停用自動磁碟機指派、則需要手動指派磁碟機擁有權、然後視需要重新啟用自動磁碟機指派。
 
 .開始之前
-您必須已依照HA配對的指示、將機櫃連接好纜線。請參閱。 link:cable-overview-hot-add-shelf.html["熱新增的纜線總覽"]
+您必須已經按照 HA 配對的說明為磁碟櫃連接好纜線。
 
 .步驟
 . 顯示所有未擁有的磁碟機：「torage disk show -conter-type unallected」

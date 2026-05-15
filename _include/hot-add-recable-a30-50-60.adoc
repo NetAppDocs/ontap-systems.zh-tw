@@ -1,0 +1,20 @@
+= 
+:allow-uri-read: 
+
+
+當您在 A30、C30、A50 或 C60 HA 配對熱新增第二個磁碟櫃時，需要將第一個磁碟櫃重新佈線至每個控制器插槽 3 和插槽 1 中支援 RoCE 的 I/O 模組。
+
+此程序假設現有機櫃透過纜線連接至每個控制器插槽 3 中支援 RoCE 的 I/O 模組。
+
+.步驟
+. 重新連接每個控制器上插槽 3 和插槽 1 中支援 RoCE 的 I/O 模組的第一個磁碟櫃電纜。
++
+.. 在控制器 A 上、將纜線從插槽 3 連接埠 b（e3b）移至插槽 1 連接埠 b（e1b）。
+.. 在控制器B上重複相同的纜線移動
+
+
+. 使用驗證已重新連接的機架是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+

@@ -1,0 +1,20 @@
+= 
+:allow-uri-read: 
+
+
+當您將第二個磁碟櫃熱新增至 A70 或 A90 HA 配對時，您需要在每個控制器的插槽 11 和插槽 8 中，跨支援 RoCE 的 I/O 模組重新連接第一個磁碟櫃。
+
+此程序假設現有機櫃透過纜線連接至每個控制器插槽 11 中支援 RoCE 的 I/O 模組。
+
+.步驟
+. 重新連接每個控制器上插槽 11 和插槽 8 中支援 RoCE 的 I/O 模組的第一個磁碟櫃。
++
+.. 在控制器 A 上、將纜線從插槽 11 連接埠 b（e11b）移至插槽 8 連接埠 b（e8b）。
+.. 在控制器B上重複相同的纜線移動
+
+
+. 使用驗證已重新連接的機架是否已正確連接 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"^]。
++
+如果產生任何纜線錯誤、請遵循所提供的修正行動。
+
+
