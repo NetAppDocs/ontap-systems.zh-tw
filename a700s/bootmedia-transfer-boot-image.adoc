@@ -1,7 +1,7 @@
 ---
 permalink: a700s/bootmedia-transfer-boot-image.html 
 sidebar: sidebar 
-keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, trasnfer, usb, flash, drive, transfer the boot image to the boot medai using a usb flash drive, manual, manual boot recovery 
+keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive, manual, manual boot recovery 
 summary: 使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
 ---
 = 將開機映像傳輸到開機媒體AFF -《非洲》（Se）
@@ -11,17 +11,17 @@ summary: 使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF
 
 
 [role="lead"]
-使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。此過程包括從輔助啟動媒體上的映像進行復原（作為主要方法），或在輔助啟動媒體復原失敗或 image.tgz 檔案遺失時使用 USB 隨身碟。
+使用輔助開機媒體（主要方法）或 USB 隨身碟（如果輔助開機媒體還原失敗或  `image.tgz` 檔案遺失），將開機映像傳輸到 AFF A700s 系統上的替換開機媒體。
 
 AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
 
 
-== 方案一：使用備份復原功能從第二個啟動媒體傳輸文件
+== 選項 1：使用第二個開機媒體的備份還原功能傳輸系統映像
 
-您可以使用安裝在控制器模組中的第二個開機媒體上的映像、將系統映像安裝到替換的開機媒體。這是將開機媒體檔案傳輸至控制器模組中具有兩個開機媒體之系統中的替換開機媒體的主要方法。
+您可以使用控制器模組中第二個開機媒體上的映像，將系統映像安裝到替換的開機媒體。這是控制器模組中具有兩個開機媒體的系統的主要方法。
 
-次要開機媒體上的映像必須包含「image.tgz」檔案、而且不得回報故障。如果image.tgz檔案遺失或開機媒體報告失敗、您將無法使用此程序。您必須使用USB快閃磁碟機更換程序、將開機映像傳輸至更換的開機媒體。
+次要開機媒體上的映像必須包含  `image.tgz` 檔案、且不得報告故障。如果  `image.tgz` 檔案遺失或開機媒體報告故障、您就無法使用此程序。請改用 <<方案二：使用USB傳輸啟動鏡像>>。
 
 .步驟
 . 如果您尚未接地、請正確接地。
@@ -88,10 +88,10 @@ image:../media/icon_round_2.png["編號 2"]
 
 == 方案二：使用USB傳輸啟動鏡像
 
-只有當次要開機媒體還原失敗、或在次要開機媒體上找不到image.tgz檔案時、才應使用此程序。
+僅當次要開機媒體還原失敗或在次要開機媒體上找不到  `image.tgz` 檔案時，才應使用此程序。
 
 * 您必須擁有格式化為FAT32的USB隨身碟、且容量至少為4GB。
-* 與執行受損控制器相同ONTAP 版本之圖片的一份複本。您可以從NetApp支援網站的「下載」區段下載適當的映像
+* 一份與故障控制器運作的 ONTAP 版本相同的鏡像檔。您可以從 NetApp 支援網站的「下載」部分下載對應的鏡像檔。
 +
 ** 如果已啟用NVE、請使用NetApp Volume Encryption下載映像、如下載按鈕所示。
 ** 如果未啟用NVE、請下載不含NetApp Volume Encryption的映像、如下載按鈕所示。
@@ -176,7 +176,7 @@ image:../media/icon_round_2.png["編號 2"]
 *** 「bootarg.onal_keymanager <value>」
 
 
-.. 使用「shavenv」命令儲存您變更的環境變數
+.. 使用  `savenv` 命令儲存您變更的環境變數。
 .. 使用「prontenv _variable-name_」命令確認您的變更。
 
 
@@ -195,12 +195,11 @@ image:../media/icon_round_2.png["編號 2"]
 . 系統提示是否使用還原的複本時、請按「y」、然後在系統提示重新啟動控制器時按「y」。
 . 從處於進階權限層級的合作夥伴控制器、使用上一個步驟中記錄的IP位址開始組態同步：「系統節點還原-備份-節點本機-目標位址_受損節點_ip_address_」
 . 完成組態同步後、若系統提示您確認備份程序成功、請按「y」。
-. 系統提示是否使用還原的複本時、請按「y」、然後在系統提示重新啟動控制器時按「y」。
-. 確認環境變數設定符合預期。
+. 請確認環境變數已如預期設定。
 +
 .. 將控制器移至載入器提示字元。
 +
-在這個畫面提示字元中ONTAP 、您可以發出命令「ystem Node halt -skip-lif-emation-te-bute-shutf-shut true -ignical-warnings true -cute-takeover true」。
+在這個畫面提示字元中ONTAP 、您可以發出命令「系統節點halt -skip-lif-emation-te-bute-shutf true -ignore quorum警告true -ite-takeover true」。
 
 .. 使用「prontenv」命令檢查環境變數設定。
 .. 如果環境變數未如預期設定、請使用'采 集_環境變數名稱____變更值___命令加以修改。

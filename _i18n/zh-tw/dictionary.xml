@@ -1040,10 +1040,7 @@
   <block id="76c422e38c98bcea8a54ea2c31b96d23" category="admonition">最好是在從機箱中取出電源供應器的兩分鐘內進行更換。系統仍可繼續運作、但ONTAP 在更換電源供應器之前、無法將降級電源供應器的相關訊息傳送至主控台。</block>
   <block id="bdf78208a16277bdf48a7e0c9bfa97a4" category="list-text">拔下電源供應器：</block>
   <block id="667ec5d2e7ff49916ac90c31eb178520" category="list-text">將CAM握把往下旋轉至最遠位置、以將其關閉。</block>
-  <block id="3ceabec6c24f4b298d5024f17ef30a0b" category="summary">只有當次要開機媒體還原失敗、或在次要開機媒體上找不到image.tgz檔案時、才應使用此程序。</block>
   <block id="05dffff712f4aca6f86af6c7c42a9991" category="doc">將開機映像傳輸到開機媒體AFF -《非洲》（Se）</block>
-  <block id="f2517f7437e31c22e8ebbe3208bc1f18" category="paragraph">您可以使用安裝在控制器模組中的第二個開機媒體上的映像、將系統映像安裝到替換的開機媒體。這是將開機媒體檔案傳輸至控制器模組中具有兩個開機媒體之系統中的替換開機媒體的主要方法。</block>
-  <block id="c74fc698f6085001fa8e634011afdd6d" category="paragraph">次要開機媒體上的映像必須包含「image.tgz」檔案、而且不得回報故障。如果image.tgz檔案遺失或開機媒體報告失敗、您將無法使用此程序。您必須使用USB快閃磁碟機更換程序、將開機映像傳輸至更換的開機媒體。</block>
   <block id="0c285136d46116873f7508d317da15c6" category="list-text">將控制器模組一路輕推入系統、直到控制器模組鎖定掛勾開始上升、穩固地推入鎖定掛勾、以完成控制器模組的安裝、然後將鎖定掛勾旋轉至控制器模組插銷上的鎖定位置。</block>
   <block id="8a3329557ea656d2883ec2301fc0c785" category="list-text">在載入程式提示字元下按Ctrl-C停止、以中斷開機程序。</block>
   <block id="9a31048ac5a99c8ed4056d3af461b406" category="list-text">在載入程式提示字元中、從次要開機媒體開機恢復映像：「boot_recovery」</block>
@@ -1073,7 +1070,6 @@
   <block id="d34866f3088c7776e916f77e459c1c80" category="list-text">使用「shavenv」命令儲存您變更的環境變數</block>
   <block id="d28690996b38deb3b6d333e5751da58d" category="list-text">使用「prontenv _variable-name_」命令確認您的變更。</block>
   <block id="8a0d213b82dba7e159bf42a3ac99febf" category="list-text">確認環境變數設定符合預期。</block>
-  <block id="018ed71ecc770af5fd2b70a8cffb7032" category="paragraph">在這個畫面提示字元中ONTAP 、您可以發出命令「ystem Node halt -skip-lif-emation-te-bute-shutf-shut true -ignical-warnings true -cute-takeover true」。</block>
   <block id="8b4eefcd8e93a21d1bcd9ddea95d0b29" category="list-text">使用「shavenv」命令儲存變更。</block>
   <block id="7f5d701a64318868c16d00d43b911d93" category="list-text">重新啟動控制器。</block>
   <block id="dc2fb67295c2f173a720e03d73f0e627" category="list-text">重新啟動的受損控制器顯示「正在等待恢復...」訊息、請從健全的控制器執行恢復：</block>
@@ -13149,9 +13145,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0d9cb84ca4d1b976611c703d55106b16" category="image-alt">更改NX224貨架ID</block>
   <block id="c3248ba61632476b6423842b95414f99" category="paragraph">貨架ID按鈕訪問</block>
   <block id="f6b50513ccb0458f52042b169361dd21" category="list-text">如果ONTAP正在運作（控制器可用於提供資料），且機架中的所有磁碟機都無人擁有、備用，則等待至少 180 秒。</block>
-  <block id="9daf77d9d23bfd6b9091a7cc689fc060" category="doc">熱添加驅動器 - NX224 驅動器架</block>
   <block id="6297d133d06242a84ced78f25874e3a3" category="summary">在 AFX 叢集滿足特定要求並且適用於 AFX 叢集的準備任務完成後，您可以熱添加 NX224 磁碟機架。</block>
-  <block id="21fcbf0345b3dd3b3ef04dc5e417d6f9" category="doc">熱添加架子 - NX224 架子</block>
   <block id="a65fc212542af95abeff48e08e593cf1" category="paragraph">您可以透過將 NX224 架熱添加到現有的 AFX 叢集配置來擴充儲存功能。</block>
   <block id="ea76371559e3b84b90531685bb2cc925" category="list-text">為熱添加的架子佈線後， ONTAP會識別該架子。如果需要，NSM 架子韌體和驅動器韌體應該會自動更新。</block>
   <block id="0449258a59d5f091984e585ac1700de0" category="list-text">在熱添加架子之前，請確保您已：</block>
@@ -13187,9 +13181,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c73a63da4aa2a55331dc580e3f7a6058" category="paragraph">下圖突顯了向交換器配置熱添加附加架的佈線。要添加額外的架子，請遵循相同的基於交換器的佈線方法。</block>
   <block id="b05d02c2614c4a2d2b2a26a857851df5" category="image-alt">NX224 交換器佈線至 AFX A1K</block>
   <block id="6556efde934a1b635008a5645f522b81" category="summary">NX224貨架維護概述。</block>
-  <block id="aea5557e47a25549577bff88a217d584" category="doc">貨架維護概述 - NX224貨架</block>
   <block id="993a8298922e1e33c5d4cd26d00918db" category="paragraph">您可以採取以下措施來維護您的 NX224 機架：</block>
-  <block id="fd707bab34d37e3b52a981059bad8f48" category="doc">監控驅動器架 LED - NX224 架</block>
   <block id="25a6c9168ed620e1583de103c9a0feda" category="paragraph">您可以透過了解驅動器架組件上 LED 的位置和狀態條件來監控架子的健康狀況。</block>
   <block id="beab8079a8da60c183b5d6654c926a74" category="list-text">可啟動機架操作員顯示面板 (ODP) 和兩個 NVMe 機架模組 (NSM) 上的位置 (藍色) LED，以協助實體定位需要維修的機架：<block ref="d6bcc7ed2edc5b8ad7e7188bba8189eb" prefix=" " category="inline-code"></block></block>
   <block id="7162be5b0165c245b74c633ca80cf635" category="image-alt">NX224 NSM140 模組 LED</block>
@@ -13199,7 +13191,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5d6dfe5ed734a2782721caf18e0b4c2c" category="paragraph">PSU 沒有交流電</block>
   <block id="bcf3b498a47e3fa766dac31a45cbe289" category="paragraph">交流電源已打開，但電源不在機櫃內</block>
   <block id="025f8295430770e736e984e6794d5d23" category="summary">您可以更換 NX224 架中發生故障的啟動媒體。當機架已通電且 I/O 正在進行時，可以無中斷地更換啟動介質。</block>
-  <block id="332b9527a936c07781bf0cadb44287ea" category="doc">更換啟動媒體 - NX224 架</block>
   <block id="eb5f70737199e249936ef82aa6ae88c5" category="list-text">機架的合作夥伴 NSM 必須啟動並運行，並且佈線正確，以便當您移除具有故障 FRU（目標 NSM）的 NSM 時，機架能夠保持連接。您可以透過以下方式驗證合作夥伴 NSM 的狀態<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block>。</block>
   <block id="901f0035fc2e222a5f2556710312ea92" category="list-text">打開電源線固定器，然後從電源上拔下電源線，以斷開電源線與電源的連接。</block>
   <block id="49c7a6cf6e0ed8a4a54247d9cd7587a2" category="list-text">將儲存電纜重新連接到相同的八個 NSM 連接埠。</block>
@@ -13207,7 +13198,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3c562e952688339fa635b0286f963d4f" category="inline-link">運行Active IQ Config Advisor</block>
   <block id="1da3eefc08ef3fe26013bf7d8153fa76" category="list-text">驗證 NSM 是否已正確連接，方法是<block ref="634f3ece8b47f8abdb5020d54bf495f5" category="inline-link-rx"></block>。</block>
   <block id="c9e888f57f6411c65b9b5e2979bef85d" category="summary">您可以在已開啟電源且 I/O 正在進行的情況下無中斷地更換 NX224 磁碟機架中的故障 DIMM。</block>
-  <block id="475128cdfcd3d32fe12f61f1c5c81913" category="doc">更換 DIMM - NX224 托架</block>
   <block id="49386f77e99642fe7af5b51a113e488e" category="list-text">*最佳實務：*最佳實務是在更換 FRU 組件之前，在系統上安裝最新版本的 NVMe 架模組 (NSM) 韌體和磁碟機韌體。您可以造訪NetApp支援網站<block ref="131f203722a665651ecdd6a35f72c75e" category="inline-link-rx"></block>和<block ref="33577154670f1ae7cae0968251dd0eac" category="inline-link-rx"></block> 。</block>
   <block id="cd8dd115df9bdca0ec5fbe812575893b" category="list-text">機架的合作夥伴 NSM 必須啟動並運行，並且正確連接電纜，以便當您移除具有故障 FRU（目標 NSM）的 NSM 時，機架能夠保持連接。您可以透過以下方式驗證合作夥伴 NSM 的狀態<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block>。</block>
   <block id="6c1921d7df069dd1505980207b7ea2f4" category="list-text">系統中的所有其他組件（包括其他三個 DIMM）必須正常運作。</block>
@@ -13215,7 +13205,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c642de7f35cea37f108d6c93586ba109" category="inline-link">運行Config Advisor</block>
   <block id="0051f60b031fe2ab0d81803f9509c124" category="list-text">驗證 NSM 是否已正確連接，方法是<block ref="a1776ed37448018544fe80631966bcd7" category="inline-link-rx"></block>。</block>
   <block id="275d34ff75df0b93dbba7bdb3db9f37c" category="summary">您可以在已開啟電源且 I/O 正在進行的情況下無中斷地更換 NX224 架中的故障磁碟機。</block>
-  <block id="7a87bb303f4254003a5ab0d31a1ed9fb" category="doc">熱插拔驅動器 - NX224 盤架</block>
   <block id="cf2ae209b31955517ebee51c6c982859" category="list-text">您正在安裝的磁碟機必須受 NX224 架支援。您可以在<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>。</block>
   <block id="94f21a41afb0bb0d980e0970f99f7d57" category="inline-link">NetApp加密概述及 CLI 文檔</block>
   <block id="8fa5eb38a5f3ec0d799934def134e531" category="paragraph">您可以在更換 SED 之前和之後查看必須完成的附加步驟<block ref="a45663e4b664b1d312b1973da8ba3d7f" category="inline-link-rx"></block>。</block>
@@ -13223,17 +13212,14 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7e2123141c266fa24d4f529172a4b541" category="list-text">*最佳實務：*確保您的系統能夠識別並使用新合格的驅動器<block ref="3d50ed979df83d97dd20b0cc2c8bc3a9" category="inline-link-rx"></block>。</block>
   <block id="c9ebef258f2f12def066b21415a56382" category="paragraph">這可以避免出現有關驅動器資訊不當前的系統事件訊息以及由於無法識別驅動器而導致的驅動器分區阻止。  DQP 也會通知您非目前磁碟機韌體。</block>
   <block id="9552387a009f53c2998cb220cd16067e" category="summary">您可以在已開啟電源且 I/O 正在進行的情況下無中斷地更換 NX224 架中的故障風扇。</block>
-  <block id="57d682160e2237bd5f87944217c26dcf" category="doc">更換風扇模組 - NX224 架</block>
   <block id="89f2ef4ce5077162c93e2010696841ef" category="paragraph">如果風扇模組中的一個或兩個風扇發生故障，您可以更換風扇模組。此過程可以在已開啟電源且 I/O 正在進行的 NX224 架中無中斷地完成。</block>
   <block id="392ec912e5e56a755ba6aec50131adae" category="list-text">*最佳實務：*最佳實務是在更換 FRU 組件之前在系統上安裝最新版本的 NSM 韌體和磁碟機韌體。您可以造訪NetApp支援網站<block ref="131f203722a665651ecdd6a35f72c75e" category="inline-link-rx"></block>和<block ref="33577154670f1ae7cae0968251dd0eac" category="inline-link-rx"></block> 。</block>
   <block id="37a8affe1fa106032de554c062e9e1cd" category="list-text">斷開架子電纜與 NSM 連接埠的連接。</block>
   <block id="df72294c1d47e46ba433ddee498c7caa" category="list-text">將架子電纜重新連接到相同的八個 NSM 連接埠。</block>
   <block id="795e5b2d8dd6ace5605e89211abdf341" category="summary">您可以在已開啟電源的 NX224 架中以無中斷方式更換故障的乙太網路 I/O 模組，且 I/O 仍在進行中。</block>
-  <block id="56c6680038919ffea816b0106b2ef69f" category="doc">更換乙太網路 I/O 模組 - NX224 架</block>
   <block id="bcbb78790793c3b3a6c4cc3de0f22bc6" category="list-text">機架的合作夥伴 NSM 必須啟動並運行，並且正確連接電纜，以便在您移除故障的 NSM 時機架能夠保持連接。您可以透過以下方式驗證合作夥伴 NSM 的狀態<block ref="d3209ff29e83e82c4ec5003559161f56" category="inline-link-rx"></block>。</block>
   <block id="8b9a79e838c879494b6ec6a4dd9f83d7" category="list-text">重新連接 NSM：</block>
   <block id="2ddc2541950d2b7cf5fa865af0c30811" category="list-text">驗證包含故障 I/O 模組和機架操作員顯示面板的 NSM 上的注意（琥珀色）LED 不再亮起。</block>
-  <block id="868dffc494c85c09a39784a568ce58c4" category="doc">更換 NSM - NX224 架子</block>
   <block id="8caf14bc08677c718cf235d44b23051c" category="paragraph">您可以在已開啟電源且 I/O 正在進行的情況下，無中斷地更換受損的 NVMe 架模組 (NSM)。</block>
   <block id="1ca26d4850e86adaada89afb267eaf6f" category="list-text">更換 NSM 涉及將 DIMM、風扇、啟動媒體、I/O 模組和電源供應器從受損的 NSM 移至更換的 NSM。</block>
   <block id="580caa7b67645719e0a4c78df2b4ea6a" category="paragraph">您不要移動實時時鐘 (RTC) 電池。它已預先安裝在替換的 NSM 中。</block>
@@ -13249,8 +13235,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5b1662852c865a6bd771638b5db9e862" category="list-text">用拇指按下電源上的陶土卡舌，釋放鎖定機制。</block>
   <block id="1b4028b0424fade1bdb82356997b35c2" category="list-text">將電源手柄向下旋轉，使其不妨礙正常操作。</block>
   <block id="c772043a43cbf70f178bc60e9c2bb650" category="summary">您可以在已開啟電源且 I/O 正在進行的情況下無中斷地更換 NX224 架中的故障電源。</block>
-  <block id="d50fc1b8ef2aa32e52f173d19ecc37c2" category="doc">熱插拔電源 - NX224 層架</block>
-  <block id="8cd7ffd76d7b4b46c49c984da4cc21cf" category="doc">更換即時時鐘電池-NX224上架</block>
   <block id="504ce12704134674e6c4f4d48826e550" category="paragraph">您可以在已開啟電源且 I/O 正在進行的情況下，無中斷地更換 NX224 架中發生故障的即時時鐘 (RTC) 電池。</block>
   <block id="99dfa28920a40a7be0858c50f989a3e5" category="section-title">2025年10月</block>
   <block id="f48884bca72e8c9a2c859cce9d6c2275" category="section-title">AFX儲存系統</block>
@@ -13997,8 +13981,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="045d601ea55137d06367b4e5c07294cb" category="summary">在完成加密檢查後，關閉AFF A700s系統上故障的控制器。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
   <block id="1cde608d6fe62f56bdc3a29ae9eafc3b" category="paragraph">在完成加密檢查後，關閉AFF A700s系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動媒體。</block>
   <block id="7ff709ab33d28508eabb142a3db7ae80" category="summary">使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
-  <block id="6827ba78ed93529d56c15a33eb4ff531" category="paragraph">使用輔助啟動媒體或 USB 隨身碟，將啟動映像傳輸到AFF A700s系統上的替換啟動媒體。此過程包括從輔助啟動媒體上的映像進行復原（作為主要方法），或在輔助啟動媒體復原失敗或 image.tgz 檔案遺失時使用 USB 隨身碟。</block>
-  <block id="b3e6f6b7e4e5a440cfc3f9e0993cee92" category="section-title">方案一：使用備份復原功能從第二個啟動媒體傳輸文件</block>
   <block id="e4e6847403baa34b19d3eda275449b4b" category="section-title">方案二：使用USB傳輸啟動鏡像</block>
   <block id="a9ada9881e4356b94c8f1b22d5de3285" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給NetApp。AFF C190系統僅支援手動啟動媒體復原程式。</block>
   <block id="16938aed6aaf31d064148061342cc4bf" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF C190系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
@@ -15138,4 +15120,28 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8d5e7895e7572495b322b60ec1134d14" category="sidebar">纜線 ASA 系統</block>
   <block id="91d95e6e15279946ba73922f805b7916" category="sidebar">EOA 系統</block>
   <block id="9d0dcbcd43b2c01863b0888b33784f20" category="sidebar">纜線終止供應系統</block>
+  <block id="63dd54bdbae041eaa0355a49c82ac7f1" category="paragraph">使用 BMC 訊息或注意 LED 來識別要更換的風扇模組。BMC 將風扇模組對應為 Fan#_#，其中第一個數字是插槽，第二個數字是列（1= 頂部、2= 底部）；例如，插槽 1、第二列 = Fan1_2。</block>
+  <block id="f6f03e6d93cc09c3d00cfa6485d8a770" category="paragraph">風扇模組會稍微移出機箱。</block>
+  <block id="c06f099c5d6289bd8592143ef4a8371d" category="paragraph">風扇就位並加速至運轉速度後，注意 LED 將熄滅。</block>
+  <block id="3c046249b91ec9e1b6e20b1dca03357b" category="paragraph">使用輔助開機媒體（主要方法）或 USB 隨身碟（如果輔助開機媒體還原失敗或 <block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block> 檔案遺失），將開機映像傳輸到 AFF A700s 系統上的替換開機媒體。</block>
+  <block id="1c8d763a92bd021dd060e8e7d9ac1731" category="section-title">選項 1：使用第二個開機媒體的備份還原功能傳輸系統映像</block>
+  <block id="d5a720bc38c4a4820ccca7cd1812ddeb" category="paragraph">您可以使用控制器模組中第二個開機媒體上的映像，將系統映像安裝到替換的開機媒體。這是控制器模組中具有兩個開機媒體的系統的主要方法。</block>
+  <block id="2b749bec4e587e3e4467be27bd35ee54" category="paragraph">次要開機媒體上的映像必須包含 <block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block> 檔案、且不得報告故障。如果 <block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block> 檔案遺失或開機媒體報告故障、您就無法使用此程序。請改用 <block ref="480fd3d07776d9101453634e69c396f9" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7d4f9a8194d67a25499f31dd2c3c5474" category="paragraph">僅當次要開機媒體還原失敗或在次要開機媒體上找不到 <block ref="c1317185516b20a37b064c5ed31cf719" prefix=" " category="inline-code"></block> 檔案時，才應使用此程序。</block>
+  <block id="a5c386e3a25844e2b0970f41423bd18b" category="list-text">一份與故障控制器運作的 ONTAP 版本相同的鏡像檔。您可以從 NetApp 支援網站的「下載」部分下載對應的鏡像檔。</block>
+  <block id="b59e3c20d440ebde2a51c9f98270768b" category="list-text">使用 <block ref="c1a29cc79fbc441f23fa8d5d10961fd8" prefix=" " category="inline-code"></block> 命令儲存您變更的環境變數。</block>
+  <block id="746e6404fb3c214cba42a49e00f4cdbc" category="list-text">請確認環境變數已如預期設定。</block>
+  <block id="769810d91f37a33448f782804afe8b15" category="doc">更改 NX224 磁碟機櫃 ID</block>
+  <block id="9462a81bfda8f9b77a3fb2f9e1f1d3fa" category="doc">將磁碟機熱新增至 NX224 磁碟櫃</block>
+  <block id="7a327b955d36fb9e8769c059837e905f" category="doc">將 NX224 機櫃熱新增至 AFF 叢集</block>
+  <block id="9cbcc0cd643835114561467f05ae3a12" category="doc">NX224 機櫃維護</block>
+  <block id="35ec49663bb0d725792ecfd7cdfd35d8" category="doc">監控 NX224 機櫃 LED</block>
+  <block id="ff0b8412ab1e2c3c52a16bb8d94e3beb" category="doc">更換 NX224 機架中的開機媒體</block>
+  <block id="cb0d0b8199238de6776631ac4982ab88" category="doc">更換 NX224 機架中的 DIMM</block>
+  <block id="8571f926f0e56c390aab9e784e5aa2a8" category="doc">在 NX224 機架中熱插拔磁碟機</block>
+  <block id="4f770573b4054149d0e3f5d188ae4e4f" category="doc">更換 NX224 機架中的風扇模組</block>
+  <block id="a2faab4698e67845fc0fbe185cc98fd9" category="doc">更換 NX224 機架中的 Ethernet I/O 模組</block>
+  <block id="8f58e61d50af420886f01cc38be3cf6a" category="doc">更換 NX224 機架中的 NSM</block>
+  <block id="5154a7eeeb6eb7c914e9aa6ac86007e6" category="doc">更換 NX224 機架中的電源供應器</block>
+  <block id="7b0bd118308264295dfa730998f7251f" category="doc">更換 NX224 機櫃內的 RTC 電池</block>
 </blocks>
