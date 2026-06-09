@@ -1,0 +1,46 @@
+---
+permalink: fas8300/controller-replace-requirements.html 
+sidebar: sidebar 
+keywords: fas8300, fas8700, prerequisite, replace the controller module 
+summary: 在更換 FAS8300 或 FAS8700 系統的控制器之前，請先驗證系統中的所有其他元件是否正常運作，確保您擁有正確的替換控制器，並將控制器的主控台輸出儲存到文字記錄檔。 
+---
+= 更換控制器的要求 - FAS8300 和 FAS8700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換 FAS8300 或 FAS8700 系統的控制器之前，請先驗證系統中的所有其他元件是否正常運作，確保您擁有正確的替換控制器，並將控制器的主控台輸出儲存到文字記錄檔。
+
+檢閱更換控制器模組的需求。
+
+[NOTE]
+====
+NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在執行此程序時採取下列行動：
+
+* 在維護期間保持 AutoSupport 啟用狀態。這樣一來，如果發生問題，NetApp 支援人員就能收到診斷資訊。
+* 啟用所有 CLI 工作階段的工作階段記錄。這會建立維護活動期間所有命令和系統輸出的完整記錄。如需如何啟用工作階段記錄的指引，請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["如何設定 PuTTY 以獲得與 ONTAP 系統的最佳連線"^]。
+
+
+====
+* 所有磁碟機櫃都必須正常運作。
+* 健康的控制器必須能夠接管被替換的控制器（在本程式中稱為受損控制器）。
+* 請勿使用此方法進行控制器升級。請參閱 https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html["選擇控制器硬體升級程序"]供參考。
+* 如果您的系統採用MetroCluster配置，請查看 https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html["選擇正確的恢復程序"]確定是否採用此程序。
+* 以從NetApp收到的現場可更換單元 (FRU) 取代故障組件。
+* 更換控制器模組時，請使用相同型號的控制器模組。您無法透過更換控制器模組來升級系統。
+* 在此過程中，您不能更換驅動器或驅動器架。
+* 在此程序中、開機裝置會從受損的控制器移至更換的控制器、以便更換的控制器以ONTAP 與舊控制器模組相同的版本進行重新開機。
+* 瞭解本流程中使用的控制器術語：
++
+** 受損的控制器是指將被替換的控制器。
+** 替換控制器是指替換故障控制器的新控制器。
+** _Healthy控制器是正常運作的控制器。
+
+
+* 使用 `security key-manager onboard show-key-store`檢查是否已設定 Onboard Key Manager（OKM）。如果是、請在開始此程序之前使用 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html["security key-manager onboard show-backup"]擷取整個叢集的通關密碼、或聯絡 NetApp 支援部門。
+
+
+.接下來呢？
+在您查看了更換 FAS8300 或 FAS8700 控制器的要求後、您需要link:controller-replace-shutdown.html["關閉受損的控制器"]。

@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-在將_replacement節點送回服務之前、您應該先確認該生命點是否位於其主連接埠上、如果AutoSupport 啟用了「BIOS」、請登錄_replacement節點的序號、然後重設自動恢復。
+在將 _replacement_ 節點恢復服務之前、您應該驗證 LIF 是否在其主連接埠上、如果啟用了 AutoSupport，則註冊 _replacement_ 節點的序號、檢查叢集的健全狀況、關閉任何維護時段、並重設自動恢復功能。
 
 .步驟
 . 驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」

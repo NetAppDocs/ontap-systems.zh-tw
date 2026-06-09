@@ -15,7 +15,7 @@ summary: 將儲存資源的控制權交給更換控制器，讓 ASA A70 或 ASA 
 
 [role="tabbed-block"]
 ====
-.無加密
+.無加密或 External Key Manager（EKM）
 --
 將受損的控制器歸還其儲存設備，使其恢復正常運作。
 
@@ -35,11 +35,25 @@ summary: 將儲存資源的控制權交給更換控制器，讓 ASA A70 或 ASA 
 --
 .機載加密（ OKM ）
 --
-重設內建加密，並將控制器恢復正常運作。
+還原並重新密封 OKM 的內建加密金鑰，並使控制器恢復正常運作。
+
+.開始之前
+開始之前，請先檢閱 https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html["security key-manager onboard show-backup"]或聯絡 NetApp 支援部門。
 
 .步驟
-. 在 Loader 提示符下，輸入 `boot_ontap maint`。
 . 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
+. 從運作正常的控制器擷取並驗證整個叢集的通關密語。
++
+.. 執行以下命令以擷取整個叢集的通關密語：
++
+`security key-manager onboard show-backup`
+
+.. 使用下列命令驗證整個叢集的通關密碼：
++
+`security key-manager onboard verify-backup`
+
+
+
 . 輸入 OKM 複雜密碼。
 +
 
@@ -63,9 +77,9 @@ NOTE: 系統會提示您輸入兩次密碼。
 
 NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
-.. 驗證金鑰狀態： `security key-manager key query -restored _false_`
+.. 驗證金鑰狀態： `security key-manager key query -restored false`
 +
-正確同步時，輸出應該不會顯示任何結果。
+正確同步後，輸出結果不應顯示任何內容。
 
 +
 如果輸出顯示結果（系統內部主索引鍵表中沒有的主索引鍵 ID ），請聯絡 https://support.netapp.com["NetApp支援"]。
@@ -74,6 +88,10 @@ NOTE: 系統會提示您輸入叢集範圍的 OKM 複雜密碼。
 
 . 將受損的控制器歸還其儲存設備，使其恢復正常運作： `storage failover giveback -ofnode _impaired_node_name_`
 . 如果自動恢復已停用，請重新啟用： `storage failover modify -node local -auto-giveback _true_`
++
+
+NOTE: 請勿推翻對遺失金鑰的還原否決權。請聯絡 NetApp 支援部門。
+
 . 如果啟用 AutoSupport ，則還原 / 恢復自動建立個案： `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
