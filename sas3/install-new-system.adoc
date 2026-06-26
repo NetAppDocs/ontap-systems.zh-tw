@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-new-system.html 
 sidebar: sidebar 
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
-summary: 如果您的新系統（HA配對或單一控制器組態）未安裝在機櫃中、您必須在機架中安裝磁碟櫃並將其纜線。 
+keywords: install, cable, disk, shelf, iom12, module, system, ha, pair, single-controller, configuration, iom12b, iom12c, ds212c, ds224c, ds460c 
+summary: 如果您的新系統沒有安裝在機櫃中，則必須將磁碟架安裝到機架中並連接電纜。 
 ---
-= 安裝與連接層架 - DS212C、DS224C 或 DS460C
+= 安裝並連接 DS212C、DS224C 或 DS460C 機架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 如果您的新系統（HA配對或單一控制器組態）未安裝在
 如果您的新系統（HA配對或單一控制器組態）未安裝在機櫃中、您可以在機架中安裝磁碟櫃並將其纜線。
 
 .關於這項工作
-* 配備IOM12/IOM12B模組的磁碟櫃會隨附預設為00的磁碟櫃ID。
+* 帶有 IOM12、IOM12B 或 IOM12C 模組的磁碟櫃出廠時，其櫃 ID 已預設為 00。
 +
 
 NOTE: 如果您有至少兩個堆疊的HA配對、則包含第二個堆疊根集合體的磁碟機櫃會將機櫃ID預設為10。
@@ -26,7 +26,7 @@ NOTE: 如果您有至少兩個堆疊的HA配對、則包含第二個堆疊根集
 +
 標籤顯示堆疊編號、例如*迴圈或堆疊編號：1*和*迴圈或堆疊編號：2*。不包含根集合體的磁碟櫃只會在標籤上顯示磁碟櫃序號。
 
-* 如果在系統設定和設定過程中，您未將系統設定為使用自動磁碟所有權分配，則需要手動指派磁碟所有權。
+* 如果在系統設定和組態時未將系統設定為使用自動磁碟擁有權指派，則需要手動指派磁碟擁有權。
 * 自動啟用頻內替代控制路徑（ IBACP ）。
 +
 單一路徑 HA 或單一路徑組態不支援 IBACP 。

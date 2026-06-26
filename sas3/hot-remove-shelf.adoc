@@ -1,17 +1,19 @@
 ---
 permalink: sas3/hot-remove-shelf.html 
 sidebar: sidebar 
-keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, I O, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b 
-summary: 當您需要移動或更換磁碟櫃時、可以使用IOM12模組熱移除磁碟櫃（在不中斷營運的情況下、從已開機且I/O正在進行的系統中移除磁碟櫃）。您可以從磁碟櫃堆疊內的任何位置熱移除一或多個磁碟櫃、或是移除磁碟櫃堆疊。 
+keywords: hot-remove, remove, disk, shelf, sas3, iom12, iom12b, iom12c, stack, ds460c, transport, move, ds212c, ds224c 
+summary: 當需要從已通電且正在進行 I/O 操作的系統中移除或更換磁碟架時，可以熱移除磁碟架。 
 ---
-= 熱移除架子 - DS212C、DS224C 和 DS460C
+= 熱移除 DS212C、DS224C 或 DS460C 層架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當您需要移動或更換磁碟架時，可以熱移除具有 IOM12 或 IOM12B 模組的磁碟架（即在系統已通電且 I/O 正在進行的情況下，以無中斷方式移除磁碟架）。您可以從磁碟架堆疊中的任何位置熱移除一個或多個磁碟架，也可以移除一疊磁碟架。
+當系統處於開機狀態且正在進行 I/O 操作時，如果需要從系統中移除或更換磁碟櫃，您可以熱移除磁碟櫃。您可以從磁碟櫃堆疊中的任意位置熱移除一個或多個磁碟櫃，也可以移除整疊磁碟櫃。
+
+此程序適用於具有 IOM12、IOM12B 或 IOM12C 模組的磁碟櫃。
 
 .關於這項工作
 * 如果您要從堆疊熱移除磁碟櫃（但保留堆疊）、您可以一次重新恢復並驗證一條路徑（路徑A接著路徑B）、以繞過您要移除的磁碟櫃、以便永遠維持從控制器到堆疊的單一路徑連線。
@@ -175,7 +177,7 @@ NOTE: 連接連接埠之前、請至少等待10秒鐘。SAS纜線連接器採用
 從堆疊末端或堆疊中間移除磁碟櫃時、請參閱下列纜線連接範例。請注意下列纜線佈線範例：
 
 +
-** IOM12/IOM12B 模組會與 DS224C 或 DS212C 磁碟櫃一樣並排排列；如果您有 DS460C 、則 IOM12/ IOM12B 模組會排列在另一個上方。
+** IOM12、IOM12B 或 IOM12C 模組並排排列，就像 DS224C 或 DS212C 磁碟架一樣；如果您有 DS460C，則 IOM12、IOM12B 或 IOM12C 模組上下排列。
 ** 每個範例中的堆疊都以標準的機櫃到機櫃纜線連接、用於以多重路徑 HA 、三重路徑 HA 或多重路徑連線方式連接的堆疊。
 +
 如果堆疊是以四路徑HA或四路徑連線進行纜線連接、則可以推斷出重新連線、這會使用雙寬的機櫃對機櫃纜線。

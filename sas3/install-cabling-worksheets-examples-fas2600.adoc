@@ -1,20 +1,17 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-fas2600.html 
 sidebar: sidebar 
-keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, fas2800, internal storage 
+keywords: controller, stack, cable, aff, a200, a220, fas2600, fas2700, fas2800, internal storage, iom12, iom12b, iom12c, ds212c, ds224c, ds460c 
 summary: 您可以使用完整的控制器對堆疊纜線工作表、並將纜線範例用於內部儲存設備的纜線平台。 
 ---
-= 內部儲存佈線工作表 - DS212C、DS224C 或 DS460C
+= 適用於內部儲存平台的 DS212C、DS224C 或 DS460C 機架的佈線工作表
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用已完成的控制器到堆疊佈線工作表和佈線範例來連接具有內部儲存的平台。這適用於具有 IOM12/IOM12B 模組的磁碟架。
-
-
-NOTE: 此資訊不適用於FAS25XX平台。
+您可以使用已完成的控制器到機架佈線工作表和佈線範例，為具有內部儲存的平台進行佈線。這適用於配備 IOM12、IOM12B 或 IOM12C 模組的機架。
 
 * 如有需要、請參閱 link:install-cabling-rules.html["SAS 纜線規則與概念"] 如需支援的組態、機櫃對機櫃連線及控制器對機櫃連線的相關資訊、
 * 佈線範例顯示控制器對堆疊的纜線為實線或虛線、以區別控制器 0b/0b1 連接埠與控制器 0A 連接埠的連接。
@@ -60,26 +57,8 @@ image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2820 三路徑 HA 
 以下工作表和佈線範例使用連接埠配對0A/0b：
 
 
-NOTE: 本節不適用於 FAS2820 或 FAS25XX 系統。
+NOTE: 本節內容不適用於 FAS2820 系統。
 
 image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[多重路徑 HA 纜線工作表、適用於具有內部儲存設備和單一堆疊的平台]
 
 image::../media/drw_fas2600_mpha_IEOPS-1256.svg[內部儲存平台的多重路徑 HA 纜線範例]
-
-
-
-== FAS2600系列多重路徑組態、搭配單一多重機櫃堆疊
-
-以下工作表和佈線範例使用連接埠配對0A/0b。
-
-在此範例中、控制器安裝在機箱的插槽A中。當控制器位於機箱的插槽A時、其內部儲存連接埠（0b）位於網域A（IOM A）中、因此連接埠0b必須連接至堆疊中的網域A（IOM A）。
-
-image::../media/drw_fas2600_mp_slot_a_worksheet.png[FAS2600 佈線工作表顯示多路徑組態的連接埠配對]
-
-image::../media/drw_fas2600_mp_slot_a.png[使用機箱插槽 1 中的控制器的 FAS2600 多重路徑纜線範例]
-
-在此範例中、控制器安裝在機箱的插槽B中。當控制器位於機箱的插槽B時、其內部儲存連接埠（0b）位於網域B（IOM B）中、因此連接埠0b必須連接至堆疊中的網域B（IOM B）。
-
-image::../media/drw_fas2600_mp_slot_b_worksheet.png[FAS2600 佈線工作表顯示多路徑組態的連接埠配對]
-
-image::../media/drw_fas2600_mp_slot_b.png[使用機箱插槽 2 中的控制器的 FAS2600 多重路徑纜線範例]

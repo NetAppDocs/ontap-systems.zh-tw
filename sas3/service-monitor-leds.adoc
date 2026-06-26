@@ -1,10 +1,10 @@
 ---
 permalink: sas3/service-monitor-leds.html 
 sidebar: sidebar 
-keywords: monitor, health, disk, shelf, location, status, condition, led, component, operator, display, panel, iom12, power, supply, fan, ds460c, shelves, drive, monitor disk shelf leds, operator display panel leds, iom12 module leds, power supply leds, fan leds on ds460c disk shelves, disk drive leds 
+keywords: monitor, health, disk, shelf, location, status, led, iom12, iom12b, iom12c, drive, ds212c, ds224c, ds460c 
 summary: 您可以瞭解磁碟櫃元件上LED的位置和狀態條件、以監控磁碟櫃的健全狀況。 
 ---
-= 顯示器層架 LED - DS212C、DS224C 或 DS460C
+= 監控 DS212C、DS224C 或 DS460C 機櫃 LED
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -40,7 +40,7 @@ image::../media/drw_sas_power_icon.svg[電源圖示]
 .2+| image:../media/drw_sas_fault_icon.svg["注意圖示、寬度 = 5px"] .2+| 注意  a| 
 持續亮起黃色燈號
  a| 
-多個 FRU 的功能發生錯誤：磁碟櫃、磁碟機、 IOM12/ IOM12B 模組或電源供應器。
+一個或多個 FRU 的功能出現錯誤：磁碟架、磁碟機、IOM12、IOM12B 或 IOM12C 模組或電源。
 
 檢查事件訊息、以確定要採取的修正行動。
 
@@ -64,7 +64,7 @@ image::../media/drw_sas3_location_icon.svg[位置圖示]
  a| 
 系統管理員啟動此LED功能、以協助實際找出需要維修的磁碟櫃。
 
-啟動此 LED 功能時、操作員顯示面板上的位置 LED 和兩個 IOM12/ IOM12B 模組都會亮起。位置LED會在30分鐘後自動關閉。
+啟用此 LED 功能後，操作顯示面板和兩個 IOM12、IOM12B 或 IOM12C 模組上的位置指示燈將會亮起。位置指示燈將在 30 分鐘後自動熄滅。
 
 |===
 視磁碟櫃機型而定、操作員顯示面板看起來不同、但三個LED的排列方式相同。
@@ -75,13 +75,13 @@ image::../media/drw_opd.gif[端蓋駕駛員顯示幕]
 
 
 
-== IOMM12 / IOM12B 模組 LED
+== IOM12、IOM12B 或 IOM12C 模組 LED
 
-IOM12/ IOM12B 模組上的 LED 會指出模組是否正常運作、是否已準備好處理 I/O 流量、以及硬體是否有任何問題。
+IOM12、IOM12B 或 IOM12C 模組上的 LED 指示燈顯示模組是否正常運作、是否準備好進行 I/O 通訊以及硬體是否有任何問題。
 
-下表說明與模組功能相關的 IOM12/ IOM12B 模組 LED 、以及模組上每個 SAS 連接埠的功能。
+下表描述了與模組功能和模組上每個 SAS 連接埠功能相關的 IOM12、IOM12B 或 IOM12C 模組 LED。
 
-IOM12/ IOM12B 模組用於 DS460C 、 DS224C 和 DS212C 磁碟櫃。
+IOM12、IOM12B 或 IOM12C 模組用於 DS460C、DS224C 和 DS212C 磁碟櫃。
 
 [cols="4*"]
 |===
@@ -95,7 +95,7 @@ image::../media/drw_sas_fault_icon.svg[注意圖示]
  a| 
 持續亮起黃色燈號
  a| 
-IOM12/ IOM12B 模組功能： IOM12/ IOM12B 模組功能發生錯誤。
+IOM12、IOM12B 或 IOM12C 模組功能：IOM12、IOM12B 或 IOM12C 模組的功能出現錯誤。
 
 SAS連接埠功能：不到四個SAS通道建立連結（使用介面卡或其他磁碟櫃）。
 
@@ -121,18 +121,22 @@ image::../media/drw_sas3_location_icon.svg[位置圖示]
  a| 
 持續亮藍燈
  a| 
-系統管理員啟動此 LED 功能、以協助實體定位故障 IOM12/ IOM12B 模組的磁碟機櫃。
+系統管理員啟用此 LED 功能，以協助實體定位發生故障的 IOM12、IOM12B 或 IOM12C 模組所在的磁碟櫃。
 
-啟動此 LED 功能時、操作員顯示面板上的位置 LED 和兩個 IOM12/ IOM12B 模組都會亮起。位置LED會在30分鐘後自動關閉。
+啟用此 LED 功能後，操作顯示面板和兩個 IOM12、IOM12B 或 IOM12C 模組上的位置指示燈將會亮起。位置指示燈將在 30 分鐘後自動熄滅。
 
 |===
 下圖為 IOM12 模組：
 
-image::../media/drw_iom12.gif[IOM12 模組]
+image::../media/drw_iom12.gif[IOM12 模組,828px,147px]
 
 IOM12B模組以藍色等量磁碟區和「IOM12B」標籤加以區分：
 
-image::../media/iom12b.png[IOM12B 模組]
+image::../media/iom12b.png[IOM12B 模組,828px,147px]
+
+IOM12C 模組以藍灰色條紋和「IOM12C」標籤為特徵：
+
+image::../media/drw_iom12c_ieops-2175.svg[IOM12C 模組,828px,147px]
 
 
 
