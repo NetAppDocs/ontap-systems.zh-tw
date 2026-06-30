@@ -12599,7 +12599,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6ec97e2f84e4bbd8386245095dc82c6c" category="admonition">以下命令僅在診斷模式權限等級下可用。有關權限級別的更多信息，請參閱<block ref="7ea886a463a2f378bb349492138018e4" category="inline-link-macro-rx"></block>。</block>
   <block id="6cf6b99f11a6f1d9493d7c0c682e72cc" category="paragraph"><block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix="" category="inline-code"></block>和<block ref="852ce55a153bc728405ba8a2c95bcdf1" prefix=" " category="inline-code"></block></block>
   <block id="3e51eab268209c4ecd6a66e3fb482d1e" category="admonition">以下命令僅在診斷模式權限等級下可用。</block>
-  <block id="fbda2271859607bf1d062d190a7ffbe4" category="list-text">如果 HA 互連鏈路已斷開，請將其恢復：</block>
   <block id="c45147b20fda10297d1b0e7d907f26f5" category="paragraph"><block ref="124fff7033dbf247c26ba55c91c24e05" prefix="" category="inline-code"></block></block>
   <block id="d764751d3eb0487a9a265fb174875be7" category="paragraph"><block ref="392f25c94aa750e124e01b0898bbf72d" prefix="" category="inline-code"></block></block>
   <block id="4138629ba2319734a01ac99105a7d77e" category="paragraph"><block ref="5702632fd36e775fbe40719b9f560522" prefix="" category="inline-code"></block></block>
@@ -12622,7 +12621,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a3bab47f3ba234dac2b20342edc8dcf3" category="admonition">如果您執行的是 9.18.1 或更高版本，請跳過上述步驟並前往下一步。</block>
   <block id="fc279180fd280dd504aa2557c0c4b7ba" category="list-text">對於配置了金鑰管理員的系統，選擇適當的金鑰管理器復原程序。</block>
   <block id="f7dd172e6fadfb3c093097a95e97e630" category="list-text">如果 HA 互連連結已斷開，請將其恢復以恢復自動交還：</block>
-  <block id="3581d4955c5076af6afb6cb30f7b03b8" category="paragraph"><block ref="9f164e62b00bce8d23a29e3dd492366d" prefix="" category="inline-code"></block></block>
   <block id="ed7739c629ade444e8a564a1c7027dba" category="list-text">從系統管理模組中拔下電纜並貼上標籤，以確保重新安裝時正確重新連接。</block>
   <block id="3202c1f631c1e508fc5fbb88d75ecd12" category="list-text">如果控制器在 LOADER 提示字元處停止，則使用<block ref="ce54ef17bebf280339d340bd40dff593" prefix=" " category="inline-code"></block>命令。</block>
   <block id="fd6b8aa1d23f1f6e813129702041b66f" category="list-text">節點啟動並提供登入提示後，登入合作夥伴控制器並檢查更換的控制器是否已準備好進行交還<block ref="ddf400f1cb6b8b9330ed6c79c508123c" prefix=" " category="inline-code"></block>命令。</block>
@@ -12701,7 +12699,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7198e71472ec41b1732ea66e4a56ac9e" category="paragraph">這<block ref="710390a66a3f7deb600ee6db0f191788" prefix=" " category="inline-code"></block>參數將帶您進入 LOADER 提示符號。</block>
   <block id="7b57ec62c551f7a0803d70e56d72b6df" category="summary">更換AFF A1K系統中發生故障或故障的風扇模組，以保持適當的冷卻並防止系統效能問題。風扇是熱插拔的，無需關閉系統即可更換。</block>
   <block id="3fe309657796b19bb6bd152bdc853d95" category="paragraph">更換AFF A1K系統中發生故障或故障的風扇模組，以保持適當的冷卻並防止系統效能問題。風扇是熱插拔的，無需關閉系統即可更換。此過程包括使用控制台錯誤訊息和 LED 指示燈識別故障風扇、卸下擋板、更換風扇模組以及將故障部件傳回NetApp。</block>
-  <block id="954efe13e01eb3431da5e6dcc2f00ab2" category="doc">安裝並設定您的 AFX 儲存系統</block>
   <block id="67e3534cd0feec346d52509c43cc0189" category="inline-link">AFX 文檔</block>
   <block id="3854c1721469c26bd8dfca0e95e5bdbf" category="paragraph">前往<block ref="1451289199683c74183eb3973056699f" category="inline-link-rx"></block>了解如何安裝、使用和管理您的 AFX 系統。</block>
   <block id="1c2ec7314c1e2ed4dd8bad09528d7973" category="paragraph">這<block ref="1451289199683c74183eb3973056699f" category="inline-link-rx"></block>包括以下資訊：</block>
@@ -12869,7 +12866,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0d751a1e018d36709b8b432579e17ae7" category="list-text">使用電纜將架 NSM A 和 NSM B Path_A 連接埠 e1a、e2a、e3a 和 e4a 連接至交換器 A 上的任意連接埠。</block>
   <block id="03832137a2df071ed5fe219e534cd9c2" category="list-text">使用電纜將架 NSM A 和 NSM B Path_B 連接埠 e1b、e2b、e3b 和 e4b 連接至交換器 B 上的任意連接埠。</block>
   <block id="c73a63da4aa2a55331dc580e3f7a6058" category="paragraph">下圖突顯了向交換器配置熱添加附加架的佈線。要添加額外的架子，請遵循相同的基於交換器的佈線方法。</block>
-  <block id="b05d02c2614c4a2d2b2a26a857851df5" category="image-alt">NX224 交換器佈線至 AFX A1K</block>
   <block id="6556efde934a1b635008a5645f522b81" category="summary">NX224貨架維護概述。</block>
   <block id="993a8298922e1e33c5d4cd26d00918db" category="paragraph">您可以採取以下措施來維護您的 NX224 機架：</block>
   <block id="25a6c9168ed620e1583de103c9a0feda" category="paragraph">您可以透過了解驅動器架組件上 LED 的位置和狀態條件來監控架子的健康狀況。</block>
@@ -12949,9 +12945,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="2eb3070ac77dd41679fb2a4b736fd5ab" category="sidebar">了解 AFX 存儲</block>
   <block id="f716c6e3202ed7d92fc8348d46cf91c0" category="sidebar">AFX系統特性</block>
   <block id="42bae4a5964639b077e0e13fa4126b4d" category="sidebar">AFX 架構</block>
-  <block id="c2dc06d8d82ede301d5f832213cb54bf" category="sidebar">安裝和維護 AFX</block>
-  <block id="89ff3ce0de6b4487110c6bfb69e1cec4" category="sidebar">安裝 AFX 硬體</block>
-  <block id="8e3f86181f0fb65d0b0b68d13bda7974" category="sidebar">維護 AFX 硬體</block>
   <block id="c5d12991791afbc0c95716bf77c8090c" category="sidebar">管理 AFX 上的數據</block>
   <block id="c19ab7b0503dde9b072764d1a9d252bb" category="sidebar">建立 AFX 卷</block>
   <block id="fdba72201777e5847a2c45a3cfc37679" category="sidebar">管理 AFX 卷</block>
@@ -12960,17 +12953,13 @@ SFP+ （目標 / 啟動器）</block>
   <block id="601296cd84138b168e734f88cec6ceb2" category="sidebar">維護 AFX 儲存系統的硬體以確保長期可靠性和最佳效能。定期執行維護任務（例如更換故障組件），有助於防止停機和資料遺失。</block>
   <block id="e80b87ba4d37600c592831624306362b" category="sidebar">維護您的 AFX 儲存系統</block>
   <block id="ff5a200358d7841c6f0da4a1e0582537" category="sidebar">維護 AFX 儲存系統的硬體以確保長期可靠性和最佳效能。</block>
-  <block id="8c9e54112088985292bdf1de01ba195c" category="sidebar">記憶體和儲存</block>
-  <block id="4c81882c84fe8dd13b8c5d9dccc2c472" category="sidebar">I/O 和擴展</block>
   <block id="492876b76f7f3555a0aa9a76a56bccb6" category="sidebar">安裝 NX224 架子</block>
   <block id="1336e883edd86f211d74be20135a50b1" category="sidebar">維護 NX224 架子</block>
-  <block id="3ce642d33ebe879acc4e339fbbe88746" category="sidebar">AFX 維護</block>
   <block id="a43cc36cba3c97642118a8f1e1411d2a" category="sidebar">NX224貨架</block>
   <block id="44897f292c79e694fcea494af35f40cc" category="sidebar">NX224貨架維護</block>
   <block id="9356bad064253adcb17a19cef3f04d34" category="sidebar">更換 NX224 驅動器架</block>
   <block id="5198087ddb6461cb35b786132461261c" category="sidebar">AFX 1K 啟動媒體</block>
   <block id="5a94cb746c52c38beb8e02711e643cd9" category="sidebar">恢復啟動媒體</block>
-  <block id="d3bca45bb48d04c6d999281b772fa015" category="sidebar">AFX A1K 機箱</block>
   <block id="9a4e2ca13bc5368ad30e628996c8e94e" category="sidebar">AFX 1K 控制器</block>
   <block id="4c052a07dcf923d8d73e0be9a32b97a7" category="sidebar">AFX 1K IO模組</block>
   <block id="35be92b1079dd4d454c4f763e5723f8a" category="list-text">電源是冗餘的，並且可熱插拔。您不必關閉控制器來更換 PSU。</block>
@@ -13014,38 +13003,26 @@ SFP+ （目標 / 啟動器）</block>
   <block id="265e5afbc76b65a563c8e31441a1e485" category="doc">熱插拔電源 - FAS8300和FAS8700</block>
   <block id="653496b123c4243a527d8a9ea55d4f8f" category="doc">熱插拔電源 - FAS9000</block>
   <block id="048c525dc48e40a1d09bef0038c82ef7" category="doc">熱插拔電源 - FAS9500</block>
-  <block id="80f1b598bcc25f7ec82fc65712322c5f" category="inline-link-macro">AFX A1K</block>
-  <block id="456595a68c845460a0bce72ae205008b" category="list-text"><block ref="456595a68c845460a0bce72ae205008b" category="inline-link-macro-rx"></block></block>
   <block id="bc43101d4663f6af1088f44fa1f4971c" category="open-title">貨架系統</block>
   <block id="4118c4e0c27fbed6f04b04d3aa72ac24" category="list-text"><block ref="4118c4e0c27fbed6f04b04d3aa72ac24" category="inline-link-macro-rx"></block></block>
   <block id="ce10d24d102f61248a1ca7225202165a" category="inline-link-macro">NX224</block>
   <block id="125f10a9ef50430953cfa201c04d3fc7" category="list-text"><block ref="125f10a9ef50430953cfa201c04d3fc7" category="inline-link-macro-rx"></block></block>
-  <block id="a15565e937e16d1f4615ffae54386c32" category="list-text"><block ref="a15565e937e16d1f4615ffae54386c32" category="inline-link-macro-rx"></block></block>
-  <block id="3c91bcd5af8e3e8a07bca4d6122e6b3e" category="list-text"><block ref="3c91bcd5af8e3e8a07bca4d6122e6b3e" category="inline-link-macro-rx"></block></block>
-  <block id="2eea8cfe67bfbaf554197cde256262be" category="list-text"><block ref="2eea8cfe67bfbaf554197cde256262be" category="inline-link-macro-rx"></block></block>
   <block id="ed07672fb572f93f885feb990d0a637f" category="list-text"><block ref="ed07672fb572f93f885feb990d0a637f" category="inline-link-macro-rx"></block></block>
   <block id="7a51e753de7bf2934296fac2cdc9d593" category="list-text"><block ref="7a51e753de7bf2934296fac2cdc9d593" category="inline-link-macro-rx"></block></block>
   <block id="1397e21113f4acf414d8754488a466fc" category="list-text"><block ref="1397e21113f4acf414d8754488a466fc" category="inline-link-macro-rx"></block></block>
   <block id="66fcce69e4503a0a9c8c46637435aa8c" category="list-text"><block ref="66fcce69e4503a0a9c8c46637435aa8c" category="inline-link-macro-rx"></block></block>
-  <block id="badea07b223f33f206dbb3f59038b884" category="list-text"><block ref="badea07b223f33f206dbb3f59038b884" category="inline-link-macro-rx"></block></block>
   <block id="54d8c26f8a704f2ae1cd358913de64ac" category="list-text"><block ref="54d8c26f8a704f2ae1cd358913de64ac" category="inline-link-macro-rx"></block></block>
   <block id="4b4484c2e067a790a8b029f0e7157ba8" category="list-text"><block ref="4b4484c2e067a790a8b029f0e7157ba8" category="inline-link-macro-rx"></block></block>
-  <block id="d4ec2b21b63964207f65fe842cdcf1d9" category="list-text"><block ref="d4ec2b21b63964207f65fe842cdcf1d9" category="inline-link-macro-rx"></block></block>
   <block id="f9eb62938eec55221ed8ab27033b19b9" category="list-text"><block ref="f9eb62938eec55221ed8ab27033b19b9" category="inline-link-macro-rx"></block></block>
   <block id="7ca1678229ac5064dbd99a27e4886773" category="list-text"><block ref="7ca1678229ac5064dbd99a27e4886773" category="inline-link-macro-rx"></block></block>
   <block id="bd57b67f8598879d2601631d0c721137" category="summary">尋找按機架型號組織的NetApp儲存機架的 NVMe 機架模組 (NSM) 更換程式。此參考提供了 NS224 和 NX224 架子的 NSM 更換工作流程的直接鏈接，以幫助您快速找到特定架子型號的正確程序。</block>
   <block id="09836515455d31781ff12c48f8614517" category="doc">按貨架型號劃分的 NSM 更換程序</block>
   <block id="1a82a6fe55e3f2f61872867b5fd0dceb" category="list-text"><block ref="1a82a6fe55e3f2f61872867b5fd0dceb" category="inline-link-macro-rx"></block></block>
   <block id="f39104a2d7ac4b866439486ba176811c" category="list-text"><block ref="f39104a2d7ac4b866439486ba176811c" category="inline-link-macro-rx"></block></block>
-  <block id="8f5f4bdbc294c6f2651fcd2e526c8a78" category="list-text"><block ref="8f5f4bdbc294c6f2651fcd2e526c8a78" category="inline-link-macro-rx"></block></block>
-  <block id="211bc6ebaac1ad5d04c5e33045e9bf83" category="list-text"><block ref="211bc6ebaac1ad5d04c5e33045e9bf83" category="inline-link-macro-rx"></block></block>
-  <block id="09fad4d466bf3d1fedb9b890171a4ef4" category="list-text"><block ref="09fad4d466bf3d1fedb9b890171a4ef4" category="inline-link-macro-rx"></block></block>
   <block id="fb22f4b778e12fb8fce97075a2c2e7cc" category="list-text"><block ref="fb22f4b778e12fb8fce97075a2c2e7cc" category="inline-link-macro-rx"></block></block>
   <block id="7e67c0810c8ad6d0694164958ee67278" category="list-text"><block ref="7e67c0810c8ad6d0694164958ee67278" category="inline-link-macro-rx"></block></block>
-  <block id="5b2fbd0784647c22ca81799fe3de9d4b" category="list-text"><block ref="5b2fbd0784647c22ca81799fe3de9d4b" category="inline-link-macro-rx"></block></block>
   <block id="9dfce2bdad58de88bbfaf4eb1ffec4c6" category="list-text"><block ref="9dfce2bdad58de88bbfaf4eb1ffec4c6" category="inline-link-macro-rx"></block></block>
   <block id="9942cbccf0648199db8728c675a51861" category="list-text"><block ref="9942cbccf0648199db8728c675a51861" category="inline-link-macro-rx"></block></block>
-  <block id="53293de4445d9809b5beb36bf8b2bdd2" category="list-text"><block ref="53293de4445d9809b5beb36bf8b2bdd2" category="inline-link-macro-rx"></block></block>
   <block id="b1a10fdec821bde7511fcf1b956e5382" category="paragraph"><block ref="b6b8a8462966204b648f1ae9c887611d" category="inline-link-macro-rx"></block>。</block>
   <block id="8a484401787078890bc1e7fd9beb44fb" category="sidebar">NSM 更換程序</block>
   <block id="dcb60d37ecd73502c4c85283951d3ef3" category="paragraph">使用 100 GbE 電纜將控制器 A 和 B 的 e1a 和 e7a 連接埠連接到叢集網路交換器 A 和 B。</block>
@@ -15031,4 +15008,227 @@ SFP+ （目標 / 啟動器）</block>
   <block id="53b85a29c003144aff88b6c26f882fa8" category="summary">如果 DS460C 硬碟架中的風扇模組發生故障，必須盡快更換，以確保硬碟架有足夠的散熱。</block>
   <block id="9b0d92965a7a8ccab1c7ce6ea546857d" category="doc">更換 DS460C 風扇模組</block>
   <block id="770b055f16b653c149bedee6248d42a9" category="sidebar">IOM12、IOM12B 或 IOM12C 模組</block>
+  <block id="7c0a38097cd9b6cf1def5c4486adbafb" category="admonition">下圖展示如何拆卸垂直 I/O 模組。通常情況下，您只需要拆卸一個 I/O 模組。</block>
+  <block id="005f37b37bf56ac92e0857be3c202b7a" category="section-title">步驟 2：移除 I/O 卡、NVRAM12、NVRAM12-EX 和系統管理模組</block>
+  <block id="eea947ddefc6869f6476a8336b6b48ab" category="paragraph"><block ref="eea947ddefc6869f6476a8336b6b48ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5cda905a256692afc5d5bd2ad1286cf4" category="image-alt">移除 NVRAM12 模組</block>
+  <block id="56243c3b9a32c27ab41689ffc7ffec61" category="list-text">移除 NVRAM12-EX 模組：</block>
+  <block id="614ef23fed4f95db557a4942bf413b2a" category="list-text">抓住模組上的把手，按下鎖定凸輪按鈕。</block>
+  <block id="bd8ef8cac0ce99c504a443fc5b0a348b" category="list-text">用一隻手托住模組底部，另一隻手將 NVRAM12-EX 模組從機殼中拔出。</block>
+  <block id="05832027315df23232d3769c5b6cb3f6" category="image-alt">移除 NVRAM12-EX 模組</block>
+  <block id="6eae4ee81d85be539e8c04f1e55590dc" category="cell">NVRAM12-EX 手把和凸輪按鈕</block>
+  <block id="c93e60e00d4ea21de1d30a9eac96d292" category="list-text">將 NVRAM12-EX 模組放置在穩定的表面上。</block>
+  <block id="f70281b96bbc4d892cc8175c4073c22b" category="list-text">檢查系統插槽 4/5 中的 NVRAM 狀態指示燈和插槽 6/7 中的 NVRAM12-EX 狀態指示燈。控制器模組前面板上也有一個 NVRAM 指示燈。請尋找 NV 圖示：</block>
+  <block id="94b6b55a0a9db1529f1372e896f14792" category="cell">*NVRAM*</block>
+  <block id="1fa16501584c9e30513abf91fc7cc0b9" category="image-alt">NVRAM12-EX 注意與狀態 LED 位置圖</block>
+  <block id="ba0a0c19ee7e80bc18262de3b080ead7" category="cell">*NVRAM12-EX*</block>
+  <block id="4404dfb734c8d7aa1077974f0212c768" category="paragraph">NVRAM12-EX 狀態指示燈</block>
+  <block id="67fb456c50422194fba4214d07f3e99d" category="paragraph">NVRAM12-EX 注意 LED</block>
+  <block id="5c40960208a7535beecf44f84d10cea9" category="paragraph"><block ref="fa00b95aa82b5506a4c27cc4a50f05d7" prefix="" category="inline-code"></block></block>
+  <block id="c3165d0219ae1a4207ad0ebcf7cf0c94" category="admonition">下圖展示如何拆卸垂直 I/O 模組。通常情況下，您只需要拆卸一個 I/O 模組。</block>
+  <block id="a8ca556aef32bcdf3b78af817650cec9" category="inline-link-macro">更換 NVRAM12-EX 的 NV 電池</block>
+  <block id="19357c6818732b5c143113cfbbdb6c00" category="paragraph">本步驟適用於更換 AFX 2K 控制器插槽 4 和 5 中 NVRAM 模組的故障 NV 電池。有關如何更換 AFX 2K 控制器插槽 6 和 7 中 NVRAM12-EX 模組的 NV 電池的資訊，請參閱 <block ref="c1527c06da2f8081a89a92a76513721c" category="inline-link-macro-rx"></block>。</block>
+  <block id="d0e0c3dcb53bac3afb0b39def82634d7" category="admonition">覆蓋系統 ID 僅在更換 NVRAM 模組時需要，而更換 NVRAM DIMM 時則不需要。</block>
+  <block id="e34ffdf953bcf2183852f0fba937d427" category="list-text">從健康的控制器，歸還被替換控制器的儲存設備：`_storage failover giveback -ofnode impaired_node_name_`</block>
+  <block id="632b0abbc27c5b279f1c1a81849131b9" category="paragraph">NVRAM12-EX 模組由 NVRAM12 硬體和可現場更換的 DIMM 記憶體條組成。您可以更換故障的 NVRAM12-EX 模組、DIMM 記憶體條或 NVRAM12-EX 模組內部的 NVRAM 電池。</block>
+  <block id="42ec7054527c81c3d49a47e997997484" category="admonition">在更換 NVRAM12-EX 模組之前，請確保先關閉受損控制器的電源，再繼續進行更換。</block>
+  <block id="0e0eace371a8fcc0e3130745a7bff00a" category="section-title">步驟 2：更換 NVRAM12-EX 模組、NVRAM DIMM 或 NVRAM 電池</block>
+  <block id="4e73ecbdea2cdd1dfd05e548e92b3da4" category="paragraph">使用下列選項更換 NVRAM12-EX 模組、NVRAM DIMM 或 NVRAM 電池。</block>
+  <block id="20d230b24a10e2d4ea62d894bf06edae" category="open-title">方案一：更換 NVRAM12-EX 模組</block>
+  <block id="cc7dad726b1758fd9848508967d40ce0" category="paragraph">若要更換 NVRAM12-EX 模組，請在機箱的 6/7 號插槽中找到該模組，然後按照特定的步驟順序進行操作。</block>
+  <block id="5d5429d2b89c16327681ac2d96a8e585" category="list-text">從機殼中取出故障的 NVRAM12-EX 模組：</block>
+  <block id="0155e2bfb22df6e3385523855e7c694e" category="list-text">按下鎖定凸輪按鈕。</block>
+  <block id="6351073ef6849491c5e2242099202cbf" category="list-text">將損壞的 NVRAM12-EX 模組從機殼中取出，方法是將模組從機殼中拉出。</block>
+  <block id="7016f8b9921b63b5910d0b5052f69057" category="list-text">用手指或螺絲起子鬆開 NVRAM12-EX 模組蓋上的單一蝶形螺絲，然後將蓋子從模組上取下，打開模組蓋。</block>
+  <block id="f60f8a91635df94cb56f931f0b614a81" category="image-alt">移除 NVRAM12-EX 蓋板</block>
+  <block id="76fb6593ae1c94607421dddd72aae250" category="cell">NVRAM12-EX 蓋板的指旋螺絲</block>
+  <block id="d3cc0012e39a8a3c9c566e21f5975126" category="list-text">將損壞的 NVRAM12-EX 模組中的 DIMM 逐一取出，然後安裝到替換的 NVRAM12-EX 模組中。</block>
+  <block id="c40d539131e0503bdda74196d486caa8" category="image-alt">移除 NVRAM12-EX DIMM</block>
+  <block id="3ac4543f6fa68e32a251dd05e79e3fcb" category="list-text">斷開 NVRAM12-EX 模組的電池連接：</block>
+  <block id="32f2f774008234de776ed9574f288b59" category="list-text">捏住電池插頭表面的卡扣，將插頭從插座中拔出。</block>
+  <block id="84c2235c0bf535a0089b333f043995bf" category="list-text">向上提起電池，將其從模組中取出，即可拆下斷開連接的電池。</block>
+  <block id="42fda177f3e900e1553b0c165c859c9d" category="image-alt">取出 NVRAM12-EX 電池</block>
+  <block id="9a045a4e889c795cd065c0bfab75d480" category="cell">NVRAM12-EX 電池連接夾</block>
+  <block id="f91e2ad43acf0c22357712b06e57659b" category="list-text">將電池安裝到替換的 NVRAM12-EX 模組中：</block>
+  <block id="04b5db8883b9a87196c9dc6772cfd7b0" category="list-text">將電池連接夾插入插座，並確保插頭鎖定到位。</block>
+  <block id="d9c23bb5121c13dfac0e43210d4e3f83" category="list-text">將 NVRAM12-EX 模組的蓋子對準螺絲孔，然後用指旋螺絲固定蓋子，即可安裝此模組的蓋子。</block>
+  <block id="19dbf5e022f7833a9f3a526224c5d077" category="list-text">將替換的 NVRAM12-EX 模組安裝到機殼中：</block>
+  <block id="7fac372261dcac427b5e44213304e389" category="list-text">將模組與機箱開口邊緣對齊，放入插槽 6/7。</block>
+  <block id="c57cb6ea839049a3ba2445d4e1c45843" category="list-text">輕輕地將模組滑入插槽，直到完全鎖定到位。</block>
+  <block id="2cac3dc3cab71edb78a2f05d65dd1557" category="paragraph">若要更換 NVRAM12-EX 模組中的 NVRAM DIMM，必須先移除 NVRAM12-EX 模組，然後再更換目標 DIMM。</block>
+  <block id="78e3759baf20573b4d15c50c1e5ffb60" category="list-text">從機殼中取出目標 NVRAM12-EX 模組：</block>
+  <block id="e68c8690544db2ecadf8cdf634ca7343" category="list-text">找到 NVRAM12-EX 模組內需要更換的 DIMM。</block>
+  <block id="73afffb93fececb9ea07d1d4315c870c" category="admonition">請參考 NVRAM12-EX 模組側面的 FRU 地圖標籤，確定 DIMM 插槽 1 和 2 的位置。</block>
+  <block id="af27e1d721237e51be8e630f9e9b8893" category="list-text">將 NVRAM12-EX 模組安裝到機殼中：</block>
+  <block id="b424c3c2319e21f3b8f736a3ea323d5c" category="list-text">輕輕地將模組滑入插槽，直到完全鎖定到位。</block>
+  <block id="c29503e6e52d224926a605d91b7e3bb0" category="open-title">方案三：更換 NVRAM 電池</block>
+  <block id="b5a80cf740dfe64de1875e52a75f6e4e" category="paragraph">若要更換 NVRAM12-EX 模組中的 NVRAM DIMM，必須先移除 NVRAM12-EX 模組，然後再更換電池。</block>
+  <block id="f68107ca5b2b795ebda55fa05adc5eb6" category="list-text">將替換電池組安裝到 NVRAM12-EX 模組中：</block>
+  <block id="23a1f9b0ad8df787fa40e2d7976923bf" category="section-title">步驟 4：完成 NVRAM12-EX 更換</block>
+  <block id="493298a3a6f3a3cf70519ac77bb7cc64" category="paragraph">請依照以下步驟完成 NVRAM12-EX 更換。</block>
+  <block id="1c0ddb7495bc326a40ae1ea3966e1457" category="paragraph">在命令輸出中，您應該會看到一條訊息，顯示儲存替換的當前狀態。在以下範例中，<block ref="78882aaeb08e9a4c81687b5de2add74f" prefix=" " category="inline-code"></block>已完成替換，目前狀態顯示為<block ref="f9aed4590452f5aef264e3a300310c74" prefix=" " category="inline-code"></block>。</block>
+  <block id="42b3f0646b307caaf22f86b43e3eb71d" category="list-text">從健康的控制器，將儲存空間歸還給已更換的控制器：<block ref="2758e32ab200505077d7f67db24fef34" prefix=" " category="inline-code"></block></block>
+  <block id="ce6279cd36ee4c306295f39452eabbf8" category="doc">安裝並設定您的 AFX 1K 儲存系統</block>
+  <block id="30954684f5a6a329efedc9f25f4bcc8c" category="doc">安裝並設定您的 AFX 2K 儲存系統</block>
+  <block id="e07ddba440295d8e078bed0178002da1" category="summary">如果您的 AFX 2K 儲存系統中的某個元件發生故障，請將故障元件退回 NetApp。</block>
+  <block id="9511dc49b384d1158b9f8a8c0337e207" category="doc">將故障零件退回 NetApp - AFX 2K</block>
+  <block id="0affd127beb8fc0bfeff964dd038d723" category="paragraph">如果您的 AFX 2K 儲存系統中的某個元件發生故障，請將故障元件退回 NetApp。請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面以取得更多資訊。</block>
+  <block id="47f0338c49f097e8093bce9657ff1646" category="summary">在您的 afx 2k 儲存系統中安裝新的開機媒體裝置後，您可以啟動自動化開機媒體復原程序，以從夥伴節點還原組態。</block>
+  <block id="84153d26e804fcdee7fb671df98746e1" category="doc">啟動恢復映像 - AFX 2K</block>
+  <block id="c450538e490e69fd0e9467f41c8631ab" category="paragraph">在 AFF A2K 儲存系統中安裝新的開機媒體裝置後，您可以啟動自動開機媒體還原程序，以從合作夥伴節點還原組態。</block>
+  <block id="5f1f79d08ef475823db8257dc1bdd0cc" category="summary">在更換 AFF A2K 儲存系統中的開機媒體之前，請確保滿足成功更換的必要條件。這包括確認您擁有正確的替換開機媒體、確認控制器上沒有故障的叢集連接埠，以及確定 Onboard Key Manager 或 External Key Manager 是否已啟用。</block>
+  <block id="d2d71b085d843602a2d9c3f66c9c5596" category="doc">更換啟動介質的要求 - AFX 2K</block>
+  <block id="d41dade972da3418c65cb14c057bd633" category="paragraph">在更換 AFX 2K 儲存系統中的開機媒體之前，請確保滿足成功更換的必要條件。這包括確認您擁有正確的替換開機媒體、確認控制器上沒有故障的叢集連接埠，以及確定 Onboard Key Manager （OKM） 或 External Key Manager （EKM） 是否已啟用。</block>
+  <block id="d5cd69eac9dd0d5de3d4237a240bece5" category="summary">若要開始更換 AFF A2K 儲存系統中的開機媒體，請先查看更換需求、檢查加密狀態、關閉控制器、更換開機媒體、啟動恢復映像、還原加密，並驗證系統功能。</block>
+  <block id="baef70475cbbc792f2131ba3fb54aefe" category="doc">啟動介質更換工作流程 - AFX 2K</block>
+  <block id="bc830856fd35a52a3a89d651cd864fbf" category="paragraph">若要開始更換 AFX 2K 儲存系統中的開機媒體，請先查看更換需求、檢查加密狀態、關閉控制器、更換開機媒體、啟動復原映像、還原加密，並驗證系統功能。</block>
+  <block id="4fd2c496ca4d33821f657d8aaf9a63ba" category="summary">您的 AFX-2K 儲存系統中的開機媒體儲存著重要的韌體和組態資料。更換程序包括：拆下 System Management 模組、取出受損的開機媒體、將替換的開機媒體安裝到 System Management 模組中，然後重新安裝 System Management 模組。</block>
+  <block id="0c3e985723f6a8a21af6e15c4396618f" category="doc">更換啟動介質 - AFX 2K</block>
+  <block id="8f1d1b9d974152a32c5690207277c95b" category="paragraph">AFX 2K 儲存系統中的開機媒體儲存著重要的韌體和組態資料。更換過程包括：拆下 System Management 模組、取出受損的開機媒體、將替換的開機媒體安裝到 System Management 模組中，然後重新安裝 System Management 模組。</block>
+  <block id="08fa7aa863e6b927cfc399f2ef320f21" category="summary">更換啟動媒體時，請關閉 AFX 2K 儲存系統中發生故障的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="68866c0551915937e68abe79bf5ef440" category="doc">關閉控制器以更換啟動介質 - AFX 2K</block>
+  <block id="4dc397418ec19de981c3fdf94c990373" category="paragraph">更換啟動媒體時，請關閉 AFX 2K 儲存系統中發生故障的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="733189122efc7c7d771d2781ab9edc13" category="doc">完成機殼更換 - AFX 2K</block>
+  <block id="f2cf1a2d6a564179db911470c7676dbc" category="paragraph">重新啟動控制器，驗證系統健康狀況，並將故障零件退回 NetApp，以完成 AFX 2K 機箱更換程序的最後一步。</block>
+  <block id="90f0deb4f558f0628824127f70ab2904" category="summary">當您的 AFX 2K 儲存系統出現硬體故障需要更換機殼時，請進行更換。更換過程包括：從機殼前面板拆下控制器、電源供應器、NVRAM12、I/O 模組和擋板、系統管理模組，然後安裝替換機殼，最後重新安裝機殼組件。</block>
+  <block id="e8a38b5bcb86d3baafecd1cb84315938" category="doc">更換機殼 - AFX 2K</block>
+  <block id="5c4826b51aa30ed4ef6492f516458b76" category="paragraph">當您的 AFX 2K 儲存系統出現硬體故障需要更換機殼時，請進行更換。更換過程包括：拆卸控制器、I/O 卡、NVRAM12 模組、系統管理模組和電源供應器 （PSU），安裝新的機殼，然後重新安裝機殼組件。</block>
+  <block id="5f488087f80a00d8a0a9c9ea39dd9a39" category="paragraph">更換損壞的 AFX 2K 機殼並重新安裝其元件後，請完成<block ref="26075a6bb8a8530abf8ac901371df95c" category="inline-link-macro-rx"></block>。</block>
+  <block id="0d31d940838cf27af8dcbdc4bb1e5cc5" category="summary">若要更換 AFX 2K 儲存系統中損壞的機箱，請先識別損壞的機箱，驗證更換的組件，並標記纜線和控制器模組。</block>
+  <block id="97ea2ff13381c9e80e4a9e5866798008" category="doc">準備更換機殼 - AFX 2K</block>
+  <block id="8ad61988da397d5c7edb61330bbffe52" category="paragraph">若要更換 AFX 2K 儲存系統中損壞的機箱，請先識別損壞的機箱，驗證更換的組件，並標記纜線和控制器模組。</block>
+  <block id="aee3662996304503df8dfe1957eb5f3f" category="paragraph">準備好更換 AFX 2K 機殼硬體後，您需要<block ref="56c6ba4ece2a517e11a0ae4af44a8f78" category="inline-link-macro-rx"></block>。</block>
+  <block id="d6df809a31fd91ee4ebfcf365ecba6c2" category="summary">在更換 AFF A2K 儲存系統中的機殼之前，請確保滿足成功更換所需的所有條件。這包括驗證系統中所有其他元件是否正常運作，確認您擁有 ONTAP 的本機管理員憑證，以及擁有正確的替換機殼和必要的工具。</block>
+  <block id="241c5559a8db1110c02f46f1b23144d9" category="doc">更換機殼的要求 - AFX 2K</block>
+  <block id="d140062b5792fa29619e99c355c9a0d1" category="paragraph">在更換 AFX 2K 儲存系統中的機殼之前，請確保滿足成功更換所需的所有條件。這包括驗證系統中的所有其他元件是否正常運作，確認您擁有 ONTAP 的本機管理員憑證，以及擁有正確的替換機殼和必要的工具。</block>
+  <block id="e16e7814eb1ed3a86464700b59e96402" category="summary">更換機殼時，請關閉 AFX 2K 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="99fc7a4cd41d10bebbe7ed8ded52ede7" category="doc">關閉控制器以更換機殼 - AFX 2K</block>
+  <block id="69ab490f4653208cd65d6913bee4569c" category="paragraph">更換機殼時，請關閉 AFX 2K 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="1f7ca8867973ca942502e20d95044a0e" category="summary">若要開始更換 AFX-2K 儲存系統的機箱，請先查看更換需求，關閉控制器，更換機箱，然後驗證系統運作。</block>
+  <block id="eb045a163eb7be9f73f4a40d1c0f41b7" category="doc">機殼更換工作流程 - AFX 2K</block>
+  <block id="eacae0f88e59233ad6ded55e422f7945" category="paragraph">若要開始更換 AFX 2K 儲存系統的機箱，請先查看更換需求，關閉控制器，更換機箱，然後驗證系統運作。</block>
+  <block id="5b8f290c3f089907bba9c2c693c2fe48" category="summary">當您的 AFX 2K 儲存系統出現硬體故障需要更換控制器時，請進行更換。更換過程包括：移除受損控制器、將組件移至替換控制器、安裝替換控制器，然後重新開機。</block>
+  <block id="7a37d11ee7f6a2db7866bba675f4a88c" category="doc">更換控制器 - AFX 2K</block>
+  <block id="2c9ff4eca4d80dfdc8f7696cd65f5221" category="paragraph">當您的 AFX 2K 儲存系統發生硬體故障時，請更換控制器。更換過程包括：卸下受損控制器、將組件移至替換控制器、安裝替換控制器，然後重新開機。</block>
+  <block id="9d165553852fd4225e1ab7573c22323b" category="paragraph">更換損壞的 AFX 2K 控制器後，<block ref="2b62b6819eda0605f4028f44dd716aa8" category="inline-link-macro-rx"></block>。</block>
+  <block id="232109d76a222d9f105a0d4882a42416" category="summary">將儲存資源的控制權交還給替換控制器，以便您的 AFX 2K 儲存系統能夠恢復正常運作。</block>
+  <block id="3cb36adf127544644230cf2e4b5ab84f" category="doc">歸還控制器 - AFX 2K</block>
+  <block id="19c41860e2f260ae2e77595f423e0eb2" category="paragraph">將儲存資源的控制權交還給替換控制器，以便您的 AFX 2K 儲存系統能夠恢復正常運作。交還控制權的步驟取決於您系統使用的加密類型：無加密或 Onboard Key Manager （OKM） 加密。</block>
+  <block id="72b508e9c8c6ad7aa90aadf13f71d293" category="summary">在更換 afx 2k 儲存系統中的控制器之前，請確保滿足成功更換所需的所有條件。這包括擁有正確的替換控制器、系統組態備份，以及存取任何所需工具和韌體的權限。</block>
+  <block id="5ce6725b6e299bd1adaa099d3aae884f" category="doc">更換控制器的要求 - AFX 2K</block>
+  <block id="a3ec385c2147224f642fb131801a40fd" category="paragraph">在更換 AFX 2K 儲存系統中的控制器之前，請確保符合成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運作、驗證您擁有正確的替換控制器，以及將控制器的主控台輸出儲存至文字日誌檔案。</block>
+  <block id="529ca8721a927b16e30574449622b413" category="paragraph">在審查了更換 AFX 2K 控制器的要求後，<block ref="8e2bedbe0502a7014e560cda99cd14d0" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d1c7ddaafa8c8a7745df487e02b16a8" category="summary">驗證邏輯介面是否向其主連接埠報告，執行叢集健康狀態檢查，然後將故障零件退回 NetApp，以完成 afx 2k 控制器更換程序的最後一步。</block>
+  <block id="1a5638aad581532c355b25c7fab88dd1" category="doc">完整控制器更換 - AFX 2K</block>
+  <block id="c74919ac1cf8befa5b3d4e0140e2f53d" category="paragraph">驗證邏輯介面 （LIF） 是否向其主連接埠報告，執行叢集健康檢查，然後將故障零件退回 NetApp 以完成 AFX 2K 控制器更換程序的最後一步。</block>
+  <block id="3d847e98ec2f041217e5a4b4b4c5c6f6" category="summary">當您的 AFX 2K 儲存系統中的控制器發生故障時，請將其關閉。在進行維護或更換組件之前，請務必安全地關閉控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="6c6c11c1dcf06a060fe052443c9b2260" category="doc">關閉故障控制器 - AFX 2K</block>
+  <block id="9188bc0bec40b9527dc8f57405753ee0" category="paragraph">更換控制器時，請關閉 AFX 2K 儲存系統中發生故障的控制器，以防止資料遺失並確保系統穩定性。</block>
+  <block id="b08c8863502f72da3fd581302686a342" category="summary">驗證控制器的 HA 組態在您的 afx 2k 儲存系統中是否處於作用中狀態並正常運作，並確認系統的介面卡是否列出了所有磁碟路徑。</block>
+  <block id="bce3dd09e8330d332cb5912ea39ab800" category="doc">還原並驗證系統組態 - AFX 2K</block>
+  <block id="85d06de7cf5f37631d681fe7e72c5ca4" category="paragraph">驗證控制器的 HA 組態在您的 AFX 2K 儲存系統中是否處於作用中狀態並正常運作，並確認系統的介面卡是否列出了所有磁碟路徑。</block>
+  <block id="3855e1fdaf92f61d59ffd35c040186b8" category="paragraph">恢復並驗證 AFX 2K 儲存系統配置後，<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>。</block>
+  <block id="9ca87651c273633e10245db8e8fea9f5" category="summary">若要開始更換 AFX-2K 儲存系統中的控制器，請先關閉受損控制器，然後移除並更換控制器、重新設定系統設定，並驗證系統運作。</block>
+  <block id="5023a06f40721fa8e50780b5148e4ea1" category="doc">控制器更換流程 - AFX 2K</block>
+  <block id="5b8b05b20932dd01e5f9e97a0b5065ae" category="paragraph">若要更換 AFX 2K 儲存系統中的控制器，首先要關閉受損控制器，然後移除並更換控制器、還原系統組態，並驗證系統運作。</block>
+  <block id="99c97b601c7421b57272daa86dbf8b23" category="summary">如果偵測到過多可修正或無法修正的記憶體錯誤，請更換 AFX 2K 儲存系統中的 DIMM 記憶體條。此類錯誤可能導致儲存系統無法啟動 ONTAP。更換流程包括：關閉故障控制器，將其拆下，更換 DIMM 記憶體條，重新安裝控制器，然後將故障零件退回 NetApp。</block>
+  <block id="3bdcaf1603b8e82edefeb8b285d86bbc" category="doc">更換 DIMM - AFX 2K</block>
+  <block id="6dd6eda6c74f7ba8b9bd081607f4aecd" category="paragraph">如果偵測到 AFX 2K 儲存系統中存在過多可修正或不可修正的記憶體錯誤，請更換其中的 DIMM 記憶體條。此類錯誤可能導致儲存系統無法啟動 ONTAP。更換流程包括：關閉故障控制器，將其拆下，更換 DIMM 記憶體條，重新安裝控制器，然後將故障零件退回 NetApp。</block>
+  <block id="838e989c8093a7e90636389afa993183" category="summary">更換 AFX 2K 系統中故障或損壞的風扇模組，以確保系統正常散熱並防止效能問題。這些風扇支援熱插拔，無需關閉系統即可更換。</block>
+  <block id="93af2d5c5da4ba62fcf3e889139979f8" category="doc">更換風扇 - AFX 2K</block>
+  <block id="cb1f064b836e4b8c180543dacce71319" category="paragraph">更換 AFX 2K 系統中故障或損壞的風扇模組，以保持良好的散熱並防止系統效能問題。風扇支援熱插拔，無需關閉系統即可更換。此步驟包括：使用主控台錯誤訊息和 LED 指示燈識別故障風扇，拆下面板，更換風扇模組，並將故障零件寄回 NetApp。</block>
+  <block id="887217312340d4bd19fcdac132019576" category="summary">為您的 afx 2k 儲存系統新增 I/O 模組，以增強網路連線能力並擴展系統處理資料流量的能力。</block>
+  <block id="9148cd0d2edc5ced8eb0a4dc9175dd6b" category="doc">新增 I/O 模組 - AFX 2K</block>
+  <block id="ce6d38b71c3fb3c7fb2ed59d66f0506e" category="paragraph">在 AFX 2K 儲存系統中新增 I/O 模組，以增強網路連線能力並擴展系統處理資料流量的能力。</block>
+  <block id="4fdb5fecd36bff72c28077c8ef1fdd69" category="paragraph">當 AFX 2K 儲存系統有空插槽可用或所有插槽均已佔滿時，您可以為其新增 I/O 模組。</block>
+  <block id="22b48166a83fe9cb39be3e37e219b528" category="summary">如果 afx 2k 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="3c08a7ab62bcec00e7adabd9ebfa32fb" category="doc">熱插拔 I/O 模組 - AFX 2K</block>
+  <block id="69f81f2052320136f3837bb5dc90b742" category="paragraph">如果 AFX 2K 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。</block>
+  <block id="1467175f80b5b6aeb9baf8911c169c66" category="paragraph">標準輸入中存在未解析的指令 - include::../_include/afx_2k_io_module_hotswap_replace.adoc[]</block>
+  <block id="a28f0e1852a67eef8c7002ec42407437" category="summary">afx 2k 儲存系統支援靈活擴充或更換 I/O 模組，從而增強網路連接性和效能。在升級網路功能或解決模組故障時，新增或更換 I/O 模組至關重要。</block>
+  <block id="090e0f185fc019584bd34692f1181c1b" category="doc">新增和替換 I/O 模組概述 - AFX 2K</block>
+  <block id="2a86a987b9aaad96420c91330dbf1d59" category="paragraph">AFX 2K 儲存系統支援靈活擴充或更換 I/O 模組，從而增強網路連接性和效能。在升級網路功能或解決模組故障時，新增或更換 I/O 模組至關重要。</block>
+  <block id="e79912bea1cf19564789abe796691f33" category="paragraph">在 AFX 2K 儲存系統中，您可以將故障的 I/O 模組更換為相同類型的 I/O 模組，也可以更換為不同類型的 I/O 模組。此外，您也可以為系統中的空閒插槽新增 I/O 模組。</block>
+  <block id="93c17c81de596806e55e0bcb545b0124" category="paragraph">AFX 2K 控制器上的 I/O 插槽編號為 1 至 11，如下圖所示。</block>
+  <block id="0c0b8e9d6d48f25f140564908a0fbefe" category="image-alt">AFX 2K 控制器上的插槽編號</block>
+  <block id="1910382d2df1981bfd58fce3bc46f693" category="cell">插槽號</block>
+  <block id="e6010d0015a0057354e2f435c8258d8c" category="cell">I/O插槽</block>
+  <block id="594c16ca0695f6665d7cf4971707adf6" category="cell">HA</block>
+  <block id="36a9bb76a73be848a5443273efc36dce" category="cell">NVRAM12</block>
+  <block id="6ba8ef21cd3a6e29bac6f5100625f023" category="image-alt">圖說編號 9</block>
+  <block id="249694a485fc5d3289c38986b4f8e887" category="cell">叢集</block>
+  <block id="252d3b7f2054eb6f5b22182e91ecc613" category="image-alt">圖說編號 6</block>
+  <block id="07df018939a3e88fde27c12e57c601e0" category="image-alt">圖說編號 7</block>
+  <block id="3b8240959b126ef66dac73a8609d4e88" category="cell">NVRAM12-EX</block>
+  <block id="995ee42e14fa7ada296e437cafe297d0" category="image-alt">圖說編號 10</block>
+  <block id="8c7663c7feb0ad581220a65f1966b9b1" category="image-alt">圖說編號 8</block>
+  <block id="3f93d6296d6d3a4e6ccba7c6defe16e0" category="image-alt">圖說編號 11</block>
+  <block id="2bbc0144b4be4eb8e87f365fd41bfd2b" category="cell">（*可選*）用於額外管理連接的四埠 25GbE SFP28</block>
+  <block id="b4a4627623c6898e3423c3771cab5324" category="summary">當您的 afx 2k 儲存系統中的 I/O 模組發生故障或需要升級以支援更高效能或附加功能時，需要更換該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，然後將故障零件退回 NetApp。</block>
+  <block id="a44655e5d7603039f1a2569d54108b18" category="doc">更換 I/O 模組 - AFX 2K</block>
+  <block id="c2bf9157db36930d03521f2fb5063469" category="paragraph">當您的 AFX 2K 儲存系統中的 I/O 模組發生故障時，請更換該模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，然後將故障零件退回 NetApp。</block>
+  <block id="e80e98fbdd1a8ff85f0ba233e912b977" category="summary">維護您的 afx 2k 儲存系統的硬體，以確保其長期可靠性和最佳效能。定期執行維護任務，例如更換故障組件，這有助於防止停機和資料遺失。</block>
+  <block id="35c425db32753c4c8a6d5f81d2e0b199" category="doc">維護程序概述 - AFX 2K</block>
+  <block id="8d1a6bb89dd08a5abd5d033d7c40f5c5" category="paragraph">維護 AFX 2K 儲存系統的硬體，以確保其長期可靠性和最佳效能。定期執行維護任務，例如更換故障元件，這有助於防止停機和資料遺失。</block>
+  <block id="00f00bf38d2535a80ca3e4d1b8808884" category="paragraph">維護程序假設 AFX 2K 儲存系統已部署為 ONTAP 環境中的儲存節點。</block>
+  <block id="e8b581fab68956048ad06e30bf595e8f" category="paragraph">對於 AFX 2K 儲存系統，您可以對下列元件執行維護程序。</block>
+  <block id="19d55967c2bced020d205588fd8a244c" category="inline-link-macro">NVRAM12-EX 模組</block>
+  <block id="b764fe9de756f253401af614379e0f69" category="paragraph"><block ref="b764fe9de756f253401af614379e0f69" category="inline-link-macro-rx"></block></block>
+  <block id="56ef17b17c8d7c119d3dc5a67d31d1c8" category="paragraph">NVRAM12-EX 是 AFX 2K 控制器的第二個 NVRAM （非揮發性隨機存取記憶體）模組。NVRAM12-EX 模組可讓控制器在系統斷電時保護並儲存傳輸中的資料。</block>
+  <block id="a7489340331ce7a0b75196c9756e98c1" category="summary">當 AFX 2K 儲存系統中的非揮發性記憶體故障或需要升級時，請更換 NVRAM12-EX。</block>
+  <block id="78f7a086ea9ce6525c8511fcf07b4c4c" category="doc">更換 NVRAM12-EX - AFX 2K</block>
+  <block id="cdeaf4befd645a1418466df1a21922d1" category="paragraph">當您的 AFX 2K 儲存系統中的非揮發性記憶體故障或需要升級時，請更換 NVRAM12-EX。更換過程包括關閉故障控制器，更換 NVRAM12-EX 模組、NVRAM DIMM 或 NVRAM 電池，然後將故障零件退回 NetApp。</block>
+  <block id="fd00f44b87ed9926040c0f7357406795" category="summary">當您的 afx 2k 儲存系統中的 NV 電池開始漏電或故障時，請更換該電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉故障控制器、拆下控制器模組、更換 NV 電池、重新安裝控制器模組，然後將故障零件寄回 NetApp。</block>
+  <block id="11e2fa2b1a655738e29861e2ca4853d7" category="doc">更換 NV 電池 - AFX 2K</block>
+  <block id="85e4f998436505a0021e344ba43480ef" category="paragraph">當您的 AFX 2K 儲存系統中的 NV 電池開始漏電或故障時，請更換該電池，因為它負責在斷電期間保存關鍵系統資料。更換程序包括：關閉故障控制器，拆下控制器模組，更換 NV 電池，重新安裝控制器模組，然後將故障零件退回 NetApp。</block>
+  <block id="a8eab56fbea9ed8a962d4d7c33caa257" category="summary">當您的 afx 2k 儲存系統中的非揮發性記憶體故障或需要升級時，請更換 NVRAM。</block>
+  <block id="d9eb0be8817cba6416aa39d8b13e726f" category="doc">更換 NVRAM - AFX 2K</block>
+  <block id="7a20acbb25fe20c5f0072b737cd45e25" category="paragraph">當您的 AFX 2K 儲存系統中的非揮發性記憶體故障或需要升級時，請更換 NVRAM。更換過程包括關閉故障控制器、更換 NVRAM 模組或 NVRAM DIMM，並將故障零件退回 NetApp。</block>
+  <block id="5ce39682ade36bffe68d0cc4d123011f" category="summary">當您的 AFX 2K 儲存系統中的交流電源供應器故障或損壞時，請更換電源供應器，以確保系統持續獲得穩定運作所需的電力。更換過程包括：斷開目標電源供應器的連接，拔除電源線，取出故障電源供應器，安裝新的電源供應器，然後重新連接電源。</block>
+  <block id="5ff8a93dd5f3d4779eb6968d4ed33fd1" category="doc">更換電源 - AFX 2K</block>
+  <block id="4afdc9b422bf39e0fd94dee5a0688c44" category="paragraph">當您的 AFX 2K 儲存系統中的交流電源供應器 （PSU） 發生故障或損壞時，請更換此電源供應器，以確保系統持續獲得穩定運作所需的電力。更換過程包括：斷開目標 PSU 的連接、拔除電源線、取出故障 PSU 並安裝替換 PSU，然後重新連接至電源。</block>
+  <block id="a33028de097a1247ad2cadb61dea9867" category="summary">更換 afx 2k 儲存系統中的即時時鐘電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
+  <block id="3f6e83d0edc72cc804f8be0755fa3c99" category="doc">更換即時時鐘電池 - AFX 2K</block>
+  <block id="0d8003363fc792dd81c652e8bc618b43" category="paragraph">更換 AFX 2K 儲存系統中的即時時鐘 (RTC) 電池（俗稱紐扣電池），以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
+  <block id="8a3215ed113f872bcf7d0d459fb9afad" category="summary">當您的 afx 2k 儲存系統中的系統管理模組故障或韌體損壞時，請更換模組。更換過程包括：關閉控制器、更換故障的系統管理模組、重新啟動控制器、更新授權金鑰，然後將故障零件退回 NetApp。</block>
+  <block id="5ed066357f2fda24aaedd57515d1c183" category="doc">更換系統管理模組 - AFX 2K</block>
+  <block id="87ed545ce36193cc1fbea29e4208a193" category="paragraph">當您的 AFX 2K 儲存系統中的系統管理模組故障或韌體損壞時，請更換模組。更換過程包括：關閉控制器、更換故障的系統管理模組、重新啟動控制器、更新授權金鑰，然後將故障零件退回 NetApp。</block>
+  <block id="cc124a47556540a9a228bf590b7e3b65" category="list-text"><block ref="cc124a47556540a9a228bf590b7e3b65" category="inline-link-macro-rx"></block></block>
+  <block id="23b43ede4557b73e6fa354124a73ba91" category="inline-link-macro">AFX 2K</block>
+  <block id="dbcc312bcf48bb612e820bd1b861c76b" category="list-text"><block ref="dbcc312bcf48bb612e820bd1b861c76b" category="inline-link-macro-rx"></block></block>
+  <block id="b305ca160420c491e6a321b063f1f526" category="list-text"><block ref="b305ca160420c491e6a321b063f1f526" category="inline-link-macro-rx"></block></block>
+  <block id="1c4baa9712f1624f2ffb11507ffcc90d" category="list-text"><block ref="1c4baa9712f1624f2ffb11507ffcc90d" category="inline-link-macro-rx"></block></block>
+  <block id="89d53452505bb77504dd6fe1f1f11472" category="list-text"><block ref="89d53452505bb77504dd6fe1f1f11472" category="inline-link-macro-rx"></block></block>
+  <block id="a6eb711ac1edc0c740ac5b39bccfa56f" category="list-text"><block ref="a6eb711ac1edc0c740ac5b39bccfa56f" category="inline-link-macro-rx"></block></block>
+  <block id="3fcdb1404138eeb1241c5074f743b569" category="list-text"><block ref="3fcdb1404138eeb1241c5074f743b569" category="inline-link-macro-rx"></block></block>
+  <block id="188ee2090b0cf8ebf483a8430f3f9294" category="list-text"><block ref="188ee2090b0cf8ebf483a8430f3f9294" category="inline-link-macro-rx"></block></block>
+  <block id="c1149d1b9cf1aa578313c54f4199ebd5" category="list-text"><block ref="c1149d1b9cf1aa578313c54f4199ebd5" category="inline-link-macro-rx"></block></block>
+  <block id="4afdd656b0da9c824f9f0b1e8b1d2833" category="list-text"><block ref="4afdd656b0da9c824f9f0b1e8b1d2833" category="inline-link-macro-rx"></block></block>
+  <block id="7a4729ce5a9ab5a9b735bf973721a637" category="list-text"><block ref="7a4729ce5a9ab5a9b735bf973721a637" category="inline-link-macro-rx"></block></block>
+  <block id="50f8399feede8a0e5e3e7518573d4934" category="list-text"><block ref="50f8399feede8a0e5e3e7518573d4934" category="inline-link-macro-rx"></block></block>
+  <block id="97218f014fcc079728135c579d4c16fc" category="list-text"><block ref="97218f014fcc079728135c579d4c16fc" category="inline-link-macro-rx"></block></block>
+  <block id="49588709ef279503d46e3fbf769f07d7" category="list-text"><block ref="49588709ef279503d46e3fbf769f07d7" category="inline-link-macro-rx"></block></block>
+  <block id="a2c936d1a014fd55a1910febb0a664ba" category="list-text"><block ref="a2c936d1a014fd55a1910febb0a664ba" category="inline-link-macro-rx"></block></block>
+  <block id="a20fbecf0fecf8199d60e0695a6f05a5" category="inline-link-macro">AFX 2K（NVRAM 模組）</block>
+  <block id="d157ea7251c66f2e890b7a4531922503" category="list-text"><block ref="d157ea7251c66f2e890b7a4531922503" category="inline-link-macro-rx"></block></block>
+  <block id="9a3b2a88f136b0356dcdcdef27c26265" category="inline-link-macro">AFX 2K（NVRAM12-EX 模組）</block>
+  <block id="429183d8ac6c25a2fb882b3b334734ad" category="list-text"><block ref="429183d8ac6c25a2fb882b3b334734ad" category="inline-link-macro-rx"></block></block>
+  <block id="b3cb2a10b0831d3295bf6e3135395f22" category="list-text"><block ref="b3cb2a10b0831d3295bf6e3135395f22" category="inline-link-macro-rx"></block></block>
+  <block id="a66e0746dd400680d10a1c0492550e95" category="list-text"><block ref="a66e0746dd400680d10a1c0492550e95" category="inline-link-macro-rx"></block></block>
+  <block id="3baa01ecc1ade86e469162b22bc53651" category="list-text"><block ref="3baa01ecc1ade86e469162b22bc53651" category="inline-link-macro-rx"></block></block>
+  <block id="de18288725848c30dca11daa590f854e" category="list-text"><block ref="de18288725848c30dca11daa590f854e" category="inline-link-macro-rx"></block></block>
+  <block id="c07b54afd1b8f146db9a728b6702a1b5" category="list-text"><block ref="c07b54afd1b8f146db9a728b6702a1b5" category="inline-link-macro-rx"></block></block>
+  <block id="868d7288522b8e1eee22545b0daa00c3" category="list-text"><block ref="868d7288522b8e1eee22545b0daa00c3" category="inline-link-macro-rx"></block></block>
+  <block id="1551ad4ae2e6078eb2eca8d5c6ff4bcb" category="image-alt">NX224 交換器佈線至 AFX 1K</block>
+  <block id="40de4ee4d271e2b473a234ce1418e8c1" category="sidebar">安裝並設定 AFX 系統</block>
+  <block id="e6b43d44e837c88835a24eed44fe337e" category="sidebar">安裝 AFX 1K 硬體</block>
+  <block id="22b501d3873dc125bd1324e3e003ec6c" category="sidebar">安裝 AFX 2K 硬體</block>
+  <block id="99a41adbe6b380b12a49c2d7894517a9" category="sidebar">維護 AFX 系統</block>
+  <block id="5129c3153a4394fb86c12a43692107aa" category="sidebar">AFX 1K 系統</block>
+  <block id="6a43958b7770ac343264ac2f57152bf7" category="sidebar">AFX 1K 機殼</block>
+  <block id="7722872ef8ea6640ddd1f94753987349" category="sidebar">AFX 2K 系統</block>
+  <block id="554af379134221e17ed749696cffb63e" category="sidebar">AFX 2K 啟動媒體</block>
+  <block id="6237e9bd3def009e1ada11487d357dc3" category="sidebar">AFX 2K 機殼</block>
+  <block id="f093b22bad0b8da1a16f35c6f8c25ca0" category="sidebar">AFX 2K 控制器</block>
+  <block id="62e406b8d6fcd44e844c63e4623510c3" category="sidebar">AFX 2K IO Module</block>
 </blocks>

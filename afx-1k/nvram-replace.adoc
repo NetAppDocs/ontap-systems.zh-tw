@@ -273,7 +273,7 @@ NOTE: 如果被否決、您可以考慮覆寫否決。
 
 NOTE: 以下命令僅在診斷模式權限等級下可用。
 
-. 如果 HA 互連鏈路已斷開，請將其恢復：
+. 如果 HA 互連鏈路斷開，請將其恢復：
 +
 `system ha interconnect link on -node healthy-node -link 0`
 

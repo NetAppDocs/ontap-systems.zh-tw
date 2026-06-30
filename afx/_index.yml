@@ -3,7 +3,7 @@ indexpage:
   title: AFX 系統
   summary: NetApp AFX 儲存系統是一種分解的硬體和軟體解決方案，專注於滿足高效能 NAS 和 S3 客戶的獨特需求。其效能和可擴充性專門設計用於滿足
     AI 和 ML 工作負載的要求。
-  keywords: afx, afx 1k, install, setup, maintain
+  keywords: afx, afx 1k, afx 2k, install, setup, maintain
   lead: NetApp AFX 儲存系統是一種分解的硬體和軟體解決方案，專注於滿足高效能 NAS 和 S3 客戶的獨特需求。其效能和可擴充性專門設計用於滿足
     AI 和 ML 工作負載的要求。
   tiles:
@@ -15,12 +15,18 @@ indexpage:
       url: https://docs.netapp.com/us-en/ontap-afx/get-started/system-design.html
     - title: AFX 架構
       url: https://docs.netapp.com/us-en/ontap-afx/get-started/software-architecture.html
-  - title: 安裝和維護 AFX
+  - title: 安裝並設定 AFX 系統
     links:
-    - title: 安裝 AFX 硬體
+    - title: 安裝 AFX 1K 硬體
       url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
-    - title: 維護 AFX 硬體
-      url: "../afx-landing-maintain/index.html"
+    - title: 安裝 AFX 2K 硬體
+      url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
+  - title: 維護 AFX 系統
+    links:
+    - title: AFX 1K
+      url: "../afx-1k/maintain-overview.html"
+    - title: AFX 2K
+      url: "../afx-2k/maintain-overview.html"
   - title: 管理 AFX 上的數據
     links:
     - title: 建立 AFX 卷

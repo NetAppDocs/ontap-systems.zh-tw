@@ -1,0 +1,42 @@
+---
+permalink: afx-2k/controller-replace-requirements.html 
+sidebar: sidebar 
+keywords: afx 2k, prerequisite, replace the controller module 
+summary: 在更換 afx 2k 儲存系統中的控制器之前，請確保滿足成功更換所需的所有條件。這包括擁有正確的替換控制器、系統組態備份，以及存取任何所需工具和韌體的權限。 
+---
+= 更換控制器的要求 - AFX 2K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換 AFX 2K 儲存系統中的控制器之前，請確保符合成功更換的必要條件。這包括驗證系統中的所有其他元件是否正常運作、驗證您擁有正確的替換控制器，以及將控制器的主控台輸出儲存至文字日誌檔案。
+
+檢閱更換控制器的需求。
+
+[NOTE]
+====
+NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在執行此程序時採取下列行動：
+
+* 在維護期間保持 AutoSupport 啟用狀態。這樣一來，如果發生問題，NetApp 支援人員就能收到診斷資訊。
+* 啟用所有 CLI 工作階段的工作階段記錄。這會建立維護活動期間所有命令和系統輸出的完整記錄。如需如何啟用工作階段記錄的指引，請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["如何設定 PuTTY 以獲得與 ONTAP 系統的最佳連線"^]。
+
+
+====
+* 請務必在正確的系統上套用這些步驟中的命令：
++
+** _減損_控制器是要更換的控制器。
+** _replacement控制器是取代受損控制器的新控制器。
+** _Healthy控制器是正常運作的控制器。
+
+
+* 所有磁碟機櫃都必須正常運作。
+* 健全的控制器必須能夠接管要更換的控制器（在本程序中稱為「受損的控制器」）。
+* 您必須使用從 NetApp 收到的現場可更換單元（ FRU ）來更換故障元件。
+* 您必須以相同型號的控制器模組來更換控制器模組。您無法只更換控制器模組來升級系統。
+* 在此程序中、您無法變更任何磁碟機或磁碟機櫃。
+
+
+.接下來呢？
+在審查了更換 AFX 2K 控制器的要求後，link:controller-replace-shutdown.html["關閉控制器"]。

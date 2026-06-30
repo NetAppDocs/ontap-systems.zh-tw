@@ -1,0 +1,67 @@
+---
+permalink: afx-2k/io-module-overview.html 
+sidebar: sidebar 
+keywords: afx 2k, replace io module 
+summary: afx 2k 儲存系統支援靈活擴充或更換 I/O 模組，從而增強網路連接性和效能。在升級網路功能或解決模組故障時，新增或更換 I/O 模組至關重要。 
+---
+= 新增和替換 I/O 模組概述 - AFX 2K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX 2K 儲存系統支援靈活擴充或更換 I/O 模組，從而增強網路連接性和效能。在升級網路功能或解決模組故障時，新增或更換 I/O 模組至關重要。
+
+在 AFX 2K 儲存系統中，您可以將故障的 I/O 模組更換為相同類型的 I/O 模組，也可以更換為不同類型的 I/O 模組。此外，您也可以為系統中的空閒插槽新增 I/O 模組。
+
+* link:io-module-add.html["新增 I/O 模組"]
++
+新增其他模組可改善備援、有助於確保即使有一個模組故障、系統仍能正常運作。
+
+* link:io-module-replace.html["更換 I/O 模組"]
++
+更換故障 I/O 模組可將系統還原至最佳作業狀態。
+
+
+
+.I/O 插槽編號
+AFX 2K 控制器上的 I/O 插槽編號為 1 至 11，如下圖所示。
+
+image::../media/drw_afx_2k_rear_slots_ieops-2862.svg[AFX 2K 控制器上的插槽編號]
+
+[cols="10%,23%,10%,24%,10%,23%"]
+|===
+| 插槽號 | I/O插槽 | 插槽號 | I/O插槽 | 插槽號 | I/O插槽 
+
+
+ a| 
+image::../media/icon_round_1.svg[編號 1]
+| HA  a| 
+image::../media/icon_round_4.svg[編號 4.]
+
+image::../media/icon_round_5.svg[編號 5.]
+| NVRAM12  a| 
+image::../media/icon_round_9.svg[圖說編號 9]
+| 網路 
+
+
+ a| 
+image::../media/icon_round_2.svg[編號 2]
+| 叢集  a| 
+image::../media/icon_round_6.svg[圖說編號 6]
+
+image::../media/icon_round_7.svg[圖說編號 7]
+| NVRAM12-EX  a| 
+image::../media/icon_round_10.svg[圖說編號 10]
+| 儲存設備 
+
+
+ a| 
+image::../media/icon_round_3.svg[編號 3]
+| 網路  a| 
+image::../media/icon_round_8.svg[圖說編號 8]
+| 儲存設備  a| 
+image::../media/icon_round_11.svg[圖說編號 11]
+| （*可選*）用於額外管理連接的四埠 25GbE SFP28 
+|===

@@ -1,0 +1,38 @@
+---
+permalink: afx-2k/bootmedia-replace-requirements.html 
+sidebar: sidebar 
+keywords: afx 2k, replace the boot media 
+summary: 在更換 AFF A2K 儲存系統中的開機媒體之前，請確保滿足成功更換的必要條件。這包括確認您擁有正確的替換開機媒體、確認控制器上沒有故障的叢集連接埠，以及確定 Onboard Key Manager 或 External Key Manager 是否已啟用。 
+---
+= 更換啟動介質的要求 - AFX 2K
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換 AFX 2K 儲存系統中的開機媒體之前，請確保滿足成功更換的必要條件。這包括確認您擁有正確的替換開機媒體、確認控制器上沒有故障的叢集連接埠，以及確定 Onboard Key Manager （OKM） 或 External Key Manager （EKM） 是否已啟用。
+
+更換開機媒體之前、請務必檢閱下列需求。
+
+[NOTE]
+====
+NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在執行此程序時採取下列行動：
+
+* 在維護期間保持 AutoSupport 啟用狀態。這樣一來，如果發生問題，NetApp 支援人員就能收到診斷資訊。
+* 啟用所有 CLI 工作階段的工作階段記錄。這會建立維護活動期間所有命令和系統輸出的完整記錄。如需如何啟用工作階段記錄的指引，請參閱 https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems["如何設定 PuTTY 以獲得與 ONTAP 系統的最佳連線"^]。
+
+
+====
+* 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
+* 請務必在正確的控制器上套用下列步驟中的命令：
++
+** _減損_控制器是您要執行維護的控制器。
+** _Healthy控制器是受損控制器的HA合作夥伴。
+
+
+* 故障控制器上不得有故障的叢集連接埠。
+
+
+.接下來呢？
+在您查看更換啟動介質的要求後，您需要link:bootmedia-shutdown.html["關閉控制器"]。
