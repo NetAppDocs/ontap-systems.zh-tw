@@ -18,6 +18,7 @@ summary: 當系統收到一則 AutoSupport ASUP 訊息，表示控制器模組�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
@@ -86,6 +87,7 @@ NOTE: 執行 `system controller flash-cache show`如果您不知道 Flash Cache 
 
 
 
+[[step-2-remove-controller-module]]
 == 步驟2：移除控制器模組
 
 從系統中卸下控制器模組、然後卸下控制器模組上的護蓋。
@@ -120,6 +122,7 @@ image::../media/icon_round_1.png[編號 1]
 |===
 
 
+[[step-3-replace-a-caching-module]]
 == 步驟3：更換快取模組
 
 找到控制器內的快取模組、移除故障的快取模組、然後將其更換。
@@ -166,6 +169,7 @@ image::../media/icon_round_1.png[編號 1]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 將控制器模組重新安裝到機箱中。
@@ -201,6 +205,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-restore-automatic-giveback-and-autosupport]]
 == 步驟 5 ：還原自動恢復和 AutoSupport
 
 如果已停用、請還原自動恢復和 AutoSupport 。
@@ -211,6 +216,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

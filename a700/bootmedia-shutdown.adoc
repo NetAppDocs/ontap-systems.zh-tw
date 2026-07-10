@@ -17,6 +17,7 @@ AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒
 
 
 
+[[option-1-most-systems]]
 == 選項1：大多數系統
 
 透過將故障控制器停止到 LOADER 提示符號並擷取啟動環境變數，完成故障控制器的關機。LOADER 提示符號是安全的停止狀態，您可以從該狀態更換啟動媒體。
@@ -60,6 +61,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 
 
 
+[[option-2-controller-is-in-a-metrocluster]]
 === 選項2：控制器位於MetroCluster 一個不二之處
 
 完成NVE或NSE工作之後、您需要完成受損節點的關機。附註：如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
@@ -118,6 +120,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 
 
 
+[[option-3-controller-is-in-a-two-node-metrocluster]]
 == 選項3：控制器位於雙節點MetroCluster 的不二
 
 完成NVE或NSE工作之後、您需要完成受損節點的關機。

@@ -15,6 +15,7 @@ summary: 準備 ASA A400 或 C400 系統，透過安裝支援 RoCE 的 PCIe 卡�
 
 
 
+[[install-roce-capable-pcie-cards-or-io-modules]]
 == 安裝具備 ROCE 功能的 PCIe 卡或 I/O 模組
 
 如果您的系統支援使用支援 RoCE 的 PCIe 卡或 I/O 模組、則您的 HA 配對必須有足夠的可用支援 RoCE 的乙太網路連接埠、以支援您要熱新增的磁碟櫃數量。
@@ -34,6 +35,7 @@ summary: 準備 ASA A400 或 C400 系統，透過安裝支援 RoCE 的 PCIe 卡�
 
 
 
+[[configure-roce-capable-ports-for-storage-use]]
 == 設定具備 ROCE 功能的連接埠以供儲存使用
 
 在某些系統中，當您在支援的控制器插槽中安裝支援 RoCE 的 PCIe 卡或 I/O 模組時，支援 RoCE 的連接埠會自動預設用於儲存。但是，您應該完成此程序以驗證連接埠是否已正確配置為用於儲存。
@@ -89,6 +91,7 @@ summary: 準備 ASA A400 或 C400 系統，透過安裝支援 RoCE 的 PCIe 卡�
 
 
 
+[[recable-existing-shelves]]
 == 可重新配置現有的機櫃
 
 當您在 AFF A400 或 AFF C400 HA 配對熱新增第二個磁碟櫃時，您需要將第一個磁碟櫃重新佈線至每個控制器上的兩組支援 RoCE 的連接埠。
@@ -128,6 +131,7 @@ summary: 準備 ASA A400 或 C400 系統，透過安裝支援 RoCE 的 PCIe 卡�
 
 
 
+[[disable-automatic-drive-assignment]]
 == 停用自動磁碟機指派
 
 如果您不確定應該手動指派磁碟機擁有權、或想要瞭解儲存系統的磁碟機擁有權原則自動指派、請前往 https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html["關於自動指派磁碟擁有權"^]。

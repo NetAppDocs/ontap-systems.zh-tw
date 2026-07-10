@@ -45,6 +45,7 @@ summary: 當 FAS70 或 FAS90 系統出現故障或固件損壞時，請更換系
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -191,6 +192,7 @@ summary: 當 FAS70 或 FAS90 系統出現故障或固件損壞時，請更換系
 ====
 
 
+[[step-2-replace-the-impaired-system-management-module]]
 == 步驟 2 ：更換損壞的系統管理模組
 
 更換損壞的系統管理模組。
@@ -284,6 +286,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-3-reboot-the-controller-module]]
 == 步驟 3 ：重新啟動控制器模組
 
 重新啟動控制器模組。
@@ -301,6 +304,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-4-install-licenses-and-register-serial-number]]
 == 步驟 4 ：安裝授權並登錄序號
 
 如果受損節點使用的是需要標準（節點鎖定）授權的 ONTAP 功能、則必須為節點安裝新授權。對於具有標準授權的功能、叢集中的每個節點都應該擁有自己的功能金鑰。
@@ -339,6 +343,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

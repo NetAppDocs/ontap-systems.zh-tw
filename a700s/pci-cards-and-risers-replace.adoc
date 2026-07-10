@@ -19,6 +19,7 @@ summary: 若要更換PCIe卡、您必須從擴充卡拔下纜線、移除擴充�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -73,6 +74,7 @@ summary: 若要更換PCIe卡、您必須從擴充卡拔下纜線、移除擴充�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -151,6 +153,7 @@ image:../media/icon_round_3.png["編號 3"]
 
 
 
+[[step-3-replace-a-pcie-card]]
 == 步驟3：更換PCIe卡
 
 若要更換PCIe卡、您必須從目標擴充卡的PCIe卡連接埠移除纜線和任何SFP、從控制器模組移除擴充卡、移除並更換PCIe卡、重新安裝擴充卡、然後重新安裝。
@@ -233,6 +236,7 @@ NOTE: 請確定插卡完全且正面地插入擴充卡插槽。
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、然後將其開機。
@@ -304,6 +308,7 @@ NOTE: 完成轉換後、請務必結束維護模式。
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

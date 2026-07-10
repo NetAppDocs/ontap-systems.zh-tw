@@ -17,6 +17,7 @@ summary: 若要更換系統中的NVMEM電池、您必須將控制器模組從系
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 [role="lead"]
@@ -89,6 +90,7 @@ summary: 若要更換系統中的NVMEM電池、您必須將控制器模組從系
 
 
 
+[[step-2-remove-controller-module]]
 == 步驟2：移除控制器模組
 
 [role="lead"]
@@ -114,6 +116,7 @@ image::../media/drw_2240_x_opening_cam_latch.png[打開凸輪把手栓鎖]
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 步驟3：更換NVMEM電池
 
 [role="lead"]
@@ -157,6 +160,7 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[更換NVMEM電池]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 [role="lead"]
@@ -218,6 +222,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
 
 [role="lead"]
@@ -275,6 +280,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 [role="lead"]

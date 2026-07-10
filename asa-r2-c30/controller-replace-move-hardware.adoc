@@ -15,6 +15,7 @@ summary: 當硬體故障需要更換 ASA C30 儲存系統中的控制器。更�
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
@@ -25,6 +26,7 @@ summary: 當硬體故障需要更換 ASA C30 儲存系統中的控制器。更�
 
 
 
+[[step-1-remove-the-controller]]
 == 步驟1：移除控制器
 
 更換控制器或更換控制器內部的元件時，您必須從機箱中移除控制器。
@@ -136,6 +138,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-2-move-the-power-supply]]
 == 步驟2：移動電源供應器
 
 將電源供應器（ PSU ）移至更換控制器。
@@ -273,6 +276,7 @@ NOTE: 為避免損壞內部連接器，將 PSU 滑入控制器時請勿過度施
 ====
 
 
+[[step-3-move-the-fans]]
 == 步驟3：移動風扇
 
 將風扇移至更換控制器。
@@ -301,6 +305,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
+[[step-4-move-the-nv-battery]]
 == 步驟4：搬移內華達州電池
 
 將 NV 電池移至更換控制器。
@@ -353,6 +358,7 @@ NV 電池應齊平放入電池盒中。
 
 
 
+[[step-5-move-system-dimms]]
 == 步驟5：移動系統DIMM
 
 將 DIMM 移至替換控制器。
@@ -420,6 +426,7 @@ CAUTION: 在關閉故障控制器護蓋之前，請確保所有空 DIMM 插槽�
 
 
 
+[[step-6-move-the-boot-media]]
 == 步驟6：移動開機媒體
 
 將開機媒體移至替換控制器。
@@ -470,6 +477,7 @@ image::../media/icon_round_4.png[編號 4.]
 
 
 
+[[step-7-move-the-io-modules]]
 == 步驟 7 ：移動 I/O 模組
 
 將 I/O 模組和任何 I/O 消隱模組移至替換控制器。
@@ -521,6 +529,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
+[[step-8-install-the-controller]]
 == 步驟 8 ：安裝控制器
 
 將控制器重新安裝到機箱中，然後重新啟動。

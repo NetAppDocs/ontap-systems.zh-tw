@@ -33,12 +33,14 @@ image::../media/drw_controller_to_stack_cable_color_key_non2600_4stackcolors.gif
 
 
 
+[[controller-to-stack-cabling-worksheets-and-cabling-examples-for-multipath-ha-configurations-with-quad-port-sas-hbas]]
 == 控制器對堆疊佈線工作表和佈線範例、適用於使用四埠SAS HBA的多重路徑HA組態
 
 您可以使用完整的控制器對堆疊佈線工作表和佈線範例、來連接具有四埠SAS HBA的一般多重路徑HA組態。這些控制器沒有內建SAS連接埠。
 
 
 
+[[multipath-ha-with-one-quad-port-sas-hba-and-one-single-shelf-stack]]
 === 多重路徑HA：一個四埠SAS HBA和一個單一機櫃堆疊
 
 下列工作表和纜線範例使用連接埠配對1a/1d：
@@ -49,6 +51,7 @@ image::../media/drw_mpha_slot_1_one_4porthba_one_singleshelf_stack.gif[一個四
 
 
 
+[[multipath-ha-with-one-quad-port-sas-hba-and-two-single-shelf-stacks]]
 === 多重路徑HA、搭配一個四埠SAS HBA和兩個單一機櫃堆疊
 
 下列工作表和纜線範例使用連接埠配對1a/1d和1c/1b：
@@ -59,6 +62,7 @@ image::../media/drw_mpha_slot_1_one_4porthba_two_singleshelf_stacks.gif[一個�
 
 
 
+[[multipath-ha-with-two-quad-port-sas-hbas-and-two-multi-shelf-stacks]]
 === 多重路徑HA、含兩個四埠SAS HBA和兩個多重機櫃堆疊
 
 此組態提供四個連接埠配對：1A/2b、2a/1d、1c/2D和2c/1b。您可以依照連接埠配對的識別順序（列於工作表）來連接連接連接埠配對、也可以連接其他連接埠配對（跳過連接埠配對）。
@@ -83,12 +87,14 @@ image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[使�
 
 
 
+[[controller-to-stack-cabling-worksheets-and-cabling-examples-for-multipath-ha-configurations-with-four-onboard-sas-ports]]
 == 控制器對堆疊佈線工作表和佈線範例、適用於具有四個內建SAS連接埠的多重路徑HA組態
 
 您可以使用完整的控制器對堆疊纜線工作表和纜線佈線範例、來連接具有四個內建SAS連接埠的一般多重路徑HA組態。
 
 
 
+[[multipath-ha-with-four-onboard-sas-ports-and-one-single-shelf-stack]]
 === 多重路徑HA具備四個內建SAS連接埠和一個單一機櫃堆疊
 
 以下工作表和佈線範例使用連接埠配對0A/0d：
@@ -99,6 +105,7 @@ image::../media/drw_mpha_slot_0_4ports_one_singleshelf_stack.gif[四個內建連
 
 
 
+[[multipath-ha-with-four-onboard-sas-ports-and-two-single-shelf-stacks]]
 === 多重路徑HA具備四個內建SAS連接埠和兩個單一機櫃堆疊
 
 以下工作表和佈線範例使用連接埠配對0A/0d和0c/0b：
@@ -109,6 +116,7 @@ image::../media/drw_mpha_slot_0_4ports_two_singleshelf_stacks.gif[四個內建�
 
 
 
+[[multipath-ha-with-four-onboard-sas-ports-a-quad-port-sas-hba-and-two-multi-shelf-stacks]]
 === 多重路徑HA具備四個內建SAS連接埠、四埠SAS HBA和兩個多重機櫃堆疊
 
 此組態提供四個連接埠配對：0A/1b、1a/0d、0c/1d和1c/0b。您可以依照連接埠配對的識別順序（列於工作表）來連接連接連接埠配對、也可以連接其他連接埠配對（跳過連接埠配對）。

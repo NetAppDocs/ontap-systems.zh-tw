@@ -19,6 +19,7 @@ summary: 若要更換I/O模組、您必須執行特定的工作順序。
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。
@@ -191,6 +192,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-replace-io-modules]]
 == 步驟2：更換I/O模組
 
 若要更換I/O模組、請在機箱內找到該模組、然後依照特定的步驟順序進行。
@@ -245,6 +247,7 @@ I/O CAM栓鎖完全解除鎖定
 
 
 
+[[step-3-reboot-the-controller-after-io-module-replacement]]
 == 步驟3：更換I/O模組後、重新啟動控制器
 
 更換I/O模組之後、您必須重新啟動控制器模組。
@@ -279,6 +282,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能不全、您必須�
 
 
 
+[[step-4-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟4：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -335,6 +339,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

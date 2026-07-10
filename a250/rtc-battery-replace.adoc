@@ -19,6 +19,7 @@ summary: 更換 AFF A250 控制器模組中的即時時鐘電池，以確保依�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -89,6 +90,7 @@ summary: 更換 AFF A250 控制器模組中的即時時鐘電池，以確保依�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -155,6 +157,7 @@ image::../media/drw_a250_remove_airduct_cover.png[提起通風管蓋]
 
 
 
+[[step-3-replace-the-rtc-battery]]
 == 步驟3：更換RTC電池
 
 若要更換RTC電池、請將其放在控制器內、然後依照特定的步驟順序進行。
@@ -223,6 +226,7 @@ CAUTION: 若將電池推入較積極的位置、可能會導致電池再次退�
 
 
 
+[[step-4-reinstall-the-controller-module-and-setting-timedate-after-rtc-battery-replacement]]
 == 步驟4：重新安裝控制器模組、並設定更換RTC電池後的時間/日期
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、重設控制器上的時間和日期、然後將其開機。
@@ -266,6 +270,7 @@ CAUTION: 若將電池推入較積極的位置、可能會導致電池再次退�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

@@ -21,6 +21,7 @@ link:https://youtu.be/ywwsMltvuXg["FAS2600 DIMM更換影片AFF"^]
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 根據儲存系統硬體組態、使用不同的程序來關閉或接管受損的控制器。
@@ -78,6 +79,7 @@ link:https://youtu.be/ywwsMltvuXg["FAS2600 DIMM更換影片AFF"^]
 
 
 
+[[step-2-remove-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。
@@ -104,6 +106,7 @@ image::../media/drw_2600_opening_pcm_cover.png[開啟或關閉控制器模組]
 
 
 
+[[step-3-replace-the-dimms]]
 == 步驟3：更換DIMM
 
 若要更換DIMM、請在控制器內找到DIMM、然後依照特定的步驟順序進行。
@@ -167,6 +170,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 更換控制器模組中的元件之後、請將其重新安裝到機箱中。
@@ -225,6 +229,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

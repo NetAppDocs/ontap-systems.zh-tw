@@ -15,6 +15,7 @@ FAS70 或 FAS90 系統中的啟動媒體儲存了重要的韌體和設定資料�
 
 
 
+[[step-1-replace-the-boot-media]]
 == 步驟1：更換開機媒體
 
 開機媒體位於系統管理模組內、可從系統中移除模組來存取。
@@ -90,6 +91,7 @@ NOTE: 如果您的儲存系統有 DC 電源供應器、請從電源供應器（ 
 
 
 
+[[step-2-transfer-the-ontap-image-to-the-boot-media]]
 == 步驟 2 ：將 ONTAP 映像傳輸至開機媒體
 
 您安裝的替換開機媒體沒有 ONTAP 映像。您可以將 ONTAP 映像從下載適當的 ONTAP 服務映像到 USB 快閃磁碟機、然後再將其傳輸到替換的開機媒體 https://mysupport.netapp.com/["NetApp 支援網站"]。

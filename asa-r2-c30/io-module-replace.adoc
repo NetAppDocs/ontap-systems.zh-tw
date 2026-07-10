@@ -27,6 +27,7 @@ summary: 當模組發生故障或需要升級以支援更高的效能或附加�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -97,6 +98,7 @@ summary: 當模組發生故障或需要升級以支援更高的效能或附加�
 
 
 
+[[step-2-replace-a-failed-io-module]]
 == 步驟 2 ：更換故障 I/O 模組
 
 若要更換故障的 I/O 模組，請在控制器中找到該模組，然後依照特定步驟順序進行。
@@ -144,6 +146,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
+[[step-3-reboot-the-controller]]
 == 步驟 3 ：重新啟動控制器
 
 更換 I/O 模組之後，您必須重新啟動控制器。
@@ -159,6 +162,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

@@ -19,6 +19,7 @@ summary: 您需要更換控制器模組中的即時時鐘 RTC 電池，以確保
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -73,6 +74,7 @@ summary: 您需要更換控制器模組中的即時時鐘 RTC 電池，以確保
 
 
 
+[[step-2-remove-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器模組內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。
@@ -99,6 +101,7 @@ image::../media/drw_2600_opening_pcm_cover.png[開啟或關閉控制器模組]
 
 
 
+[[step-3-replace-the-rtc-battery]]
 == 步驟3：更換RTC電池
 
 若要更換RTC電池、您需要將其放在控制器模組內、然後依照特定的步驟順序進行。
@@ -120,6 +123,7 @@ NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加�
 
 
 
+[[step-4-reinstall-the-controller-module-and-set-timedate-after-rtc-battery-replacement]]
 == 步驟4：重新安裝控制器模組、並在更換RTC電池後設定時間/日期
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、重設控制器上的時間和日期、然後將其開機。
@@ -162,6 +166,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-complete-the-replacement-process]]
 == 步驟5：完成更換程序
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

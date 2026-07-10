@@ -15,6 +15,7 @@ summary: AFF C800儲存系統的主要規格
 
 
 
+[[key-specifications-for-aff-c800]]
 === AFF C800的主要規格
 
 平台配置： AFF C800單機箱 HA 對
@@ -33,6 +34,7 @@ PCIe 擴充槽：10
 
 
 
+[[scaleout-maximums]]
 === 橫向擴展最大值
 
 |===
@@ -51,6 +53,7 @@ PCIe 擴充槽：10
 |===
 
 
+[[io]]
 === 輸入輸出
 
 
@@ -115,12 +118,14 @@ PCIe 擴充槽：10
 |===
 
 
+[[storage-networking-supported]]
 === 支援的儲存網絡
 
 CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4/RDMA；NVMe/FC；NVMe/TCP；S3；附 NAS 的 S3；SMB 2.0；SMB 2.1；
 
 
 
+[[system-environment-specifications]]
 === 系統環境規格
 
 * 典型功率：6626 BTU/小時
@@ -136,6 +141,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4
 
 
 
+[[compliance]]
 === 遵守
 
 * EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
@@ -148,6 +154,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4
 
 
 
+[[high-availability]]
 === 高可用性
 
 以乙太網路為基礎的基板管理控制器（BMC）和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；

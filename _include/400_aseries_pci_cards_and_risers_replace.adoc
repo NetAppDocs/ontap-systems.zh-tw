@@ -10,6 +10,7 @@
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。
@@ -182,6 +183,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
@@ -227,6 +229,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-a-pcie-card]]
 == 步驟3：更換PCIe卡
 
 若要更換PCIe卡、您必須找到故障的PCIe卡、從控制器模組中移除包含該卡的擴充卡、裝回該卡、然後在控制器模組中重新安裝PCIe擴充卡。
@@ -302,6 +305,7 @@ NOTE: 如果您要在底部插槽中安裝插卡、但看不到插卡插槽、�
 
 
 
+[[step-4-replace-the-mezzanine-card]]
 == 步驟4：更換夾層卡
 
 夾層卡位於提升卡編號3（插槽4和5）下。您必須移除該擴充卡、才能存取夾層卡、更換夾層卡、然後重新安裝3號擴充卡。如需詳細資訊、請參閱控制器模組上的FRU對應。
@@ -368,6 +372,7 @@ image:../media/icon_round_3.png["編號 3"]
 
 
 
+[[step-5-install-the-controller-module]]
 == 步驟5：安裝控制器模組
 
 在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
@@ -412,6 +417,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-6-restore-the-controller-module-to-operation]]
 == 步驟6：將控制器模組還原為運作狀態
 
 若要還原控制器、您必須重新啟動系統、歸還控制器模組、然後重新啟用自動還原。
@@ -426,6 +432,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-7-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟7：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -482,6 +489,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-8-return-the-failed-part-to-netapp]]
 == 步驟8：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

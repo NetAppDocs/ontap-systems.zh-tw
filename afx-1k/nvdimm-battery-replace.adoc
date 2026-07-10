@@ -17,6 +17,7 @@ summary: 當電池開始失去電量或故障時，請更換 AFX 1K 儲存系統
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 關閉或接管受損的控制器。
@@ -87,6 +88,7 @@ _-halt true_ 參數將受損節點帶入 LOADER 提示符。
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內的元件時、您必須從機箱中移除控制器模組。
@@ -144,6 +146,7 @@ image:../media/icon_round_1.png["編號 1"]
 
 
 
+[[step-3-replace-the-nv-battery]]
 == 步驟3：更換NV電池
 
 從控制器模組中取出故障的 NV 電池、然後安裝替換的 NV 電池。
@@ -186,6 +189,7 @@ NV 電池插頭
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 重新安裝控制器模組並將其開機。
@@ -252,6 +256,7 @@ NOTE: 以下命令僅在診斷模式權限等級下可用。
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

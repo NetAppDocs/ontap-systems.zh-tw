@@ -25,6 +25,7 @@ summary: 當 FAS50 儲存系統中的 I/O 模組發生故障或需要升級以�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -171,6 +172,7 @@ summary: 當 FAS50 儲存系統中的 I/O 模組發生故障或需要升級以�
 ====
 
 
+[[step-2-replace-a-failed-io-module]]
 == 步驟 2 ：更換故障 I/O 模組
 
 若要更換故障的 I/O 模組，請在控制器中找到該模組，然後依照特定步驟順序進行。
@@ -220,6 +222,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
+[[step-3-reboot-the-controller]]
 == 步驟 3 ：重新啟動控制器
 
 更換 I/O 模組之後，您必須重新啟動控制器。
@@ -249,6 +252,7 @@ NOTE: 重新啟動功能受損的控制器時，也會重新初始化 I/O 模組
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

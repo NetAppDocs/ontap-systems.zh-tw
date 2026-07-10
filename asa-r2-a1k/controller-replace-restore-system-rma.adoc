@@ -15,6 +15,7 @@ summary: 若要完成 ASA A1K 系統的控制器更換、請先還原 NetApp Sto
 
 
 
+[[step-1-verify-lifs-and-check-cluster-health]]
 == 步驟 1 ：驗證生命週期並檢查叢集健全狀況
 
 將替換節點送回服務之前，請先確認邏輯介面位於其主連接埠上，檢查叢集健全狀況，然後重設自動恢復。
@@ -39,6 +40,7 @@ summary: 若要完成 ASA A1K 系統的控制器更換、請先還原 NetApp Sto
 
 
 
+[[step-2-return-the-failed-part-to-netapp]]
 == 步驟 2 ：將故障零件退回 NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

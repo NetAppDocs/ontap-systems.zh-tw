@@ -15,6 +15,7 @@ summary: 此程序提供安裝一般 NetApp 儲存系統的詳細逐步指示。
 
 
 
+[[step-1-prepare-for-installation]]
 == 步驟1：準備安裝
 
 .開始之前
@@ -167,6 +168,7 @@ image::../media/oie_cable_fiber_lc_connector.png[LC 光纖連接器]
 |===
 
 
+[[step-2-install-the-hardware]]
 == 步驟2：安裝硬體
 
 視情況、將儲存系統安裝在電信機架或 NetApp 儲存系統機櫃中。
@@ -190,6 +192,7 @@ image::../media/drw_cable_management_arm_install.svg[安裝纜線管理 ARM]
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 步驟3：將控制器連接至網路
 
 將控制器以雙節點無交換器叢集或交換式叢集的形式連接至網路。
@@ -390,6 +393,7 @@ IMPORTANT: 請勿插入電源線。
 ====
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 步驟4：連接磁碟機櫃的纜線控制器
 
 將控制器連接至外部儲存設備。
@@ -471,6 +475,7 @@ image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[控制器 B 到機
 
 
 
+[[step-5-complete-storage-system-setup-and-configuration]]
 == 步驟 5 ：完整的儲存系統設定與組態
 
 使用選項 1 ：（如果已啟用網路探索）或選項 2 ：（如果未啟用網路探索）來完成儲存系統的設定和組態。

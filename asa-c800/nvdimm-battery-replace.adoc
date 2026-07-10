@@ -15,6 +15,7 @@ summary: 若要更換NVDIMM電池、您必須取出控制器模組、取出電�
 
 
 
+[[step-1-shutdown-the-impaired-controller]]
 == 步驟 1：關閉故障控制器
 
 關閉或接管受損的控制器。
@@ -87,6 +88,7 @@ summary: 若要更換NVDIMM電池、您必須取出控制器模組、取出電�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -175,6 +177,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-the-nvdimm-battery]]
 == 步驟3：更換NVDIMM電池
 
 更換 NVDIMM 電池的方法是：從控制器模組中取出故障電池，然後將新電池安裝到控制器模組中。
@@ -230,6 +233,7 @@ NVDIMM電池套件
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 重新安裝控制器模組、然後重新啟動。
@@ -278,6 +282,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

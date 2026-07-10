@@ -45,6 +45,7 @@ summary: 當 AFX 1K 儲存系統中的系統管理模組故障或其韌體損壞
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 關閉或接管受損的控制器。
@@ -115,6 +116,7 @@ _-halt true_ 參數將受損節點帶入 LOADER 提示符。
 
 
 
+[[step-2-replace-the-impaired-system-management-module]]
 == 步驟 2 ：更換損壞的系統管理模組
 
 更換損壞的系統管理模組。
@@ -202,6 +204,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-3-reboot-the-controller-module]]
 == 步驟 3 ：重新啟動控制器模組
 
 重新啟動控制器模組。
@@ -253,6 +256,7 @@ NOTE: 以下命令僅在診斷模式權限等級下可用。
 
 
 
+[[step-4-install-licenses-and-register-serial-number]]
 == 步驟 4 ：安裝授權並登錄序號
 
 更換系統管理模組時，控制器的系統序號 (SSN) 會變更。如果受損節點使用需要標準（節點鎖定）許可證的ONTAP功能，則必須為該節點安裝新許可證。對於具有標準許可證的功能，叢集中的每個節點都應具有該功能的自己的金鑰。
@@ -294,6 +298,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

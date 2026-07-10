@@ -15,6 +15,7 @@ summary: 若要更換控制器模組硬體、您必須移除受損的控制器�
 
 
 
+[[step-1-remove-controller-module]]
 == 步驟1：移除控制器模組
 
 若要更換控制器模組、您必須先從機箱中移除舊的控制器模組。
@@ -42,6 +43,7 @@ image::../media/drw_2600_opening_pcm_cover.png[開啟或關閉控制器模組]
 
 
 
+[[step-2-move-the-boot-media]]
 == 步驟2：移動開機媒體
 
 您必須找到開機媒體、並依照指示將其從舊的控制器模組中移除、然後將其插入新的控制器模組。
@@ -65,6 +67,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 
 
 
+[[step-3-move-the-nvmem-battery]]
 == 步驟3：搬移NVMEM電池
 
 若要將NVMEM電池從舊的控制器模組移至新的控制器模組、您必須執行特定的步驟順序。
@@ -104,6 +107,7 @@ image::../media/drw_2600_nvmem_battery_move_animated_gif.png[更換NVMEM電池]
 
 
 
+[[step-4-move-the-dimms]]
 == 步驟4：移動DIMM
 
 若要移動DIMM、您必須依照指示、將其從舊的控制器模組移至更換的控制器模組。
@@ -146,6 +150,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-5-install-the-controller-module]]
 == 步驟5：安裝控制器模組
 
 將舊控制器模組的元件安裝到新的控制器模組之後、您必須將新的控制器模組安裝到系統機箱中、然後啟動作業系統。

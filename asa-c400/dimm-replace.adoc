@@ -19,6 +19,7 @@ summary: 當系統登錄越來越多的可修正錯誤修正碼（correctable er
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用適合您組態的適當程序來關閉或接管受損的控制器。
@@ -191,6 +192,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
@@ -236,6 +238,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-system-dimms]]
 == 步驟3：更換系統DIMM
 
 更換系統DIMM時、需要透過相關的錯誤訊息來識別目標DIMM、使用通風管上的FRU對應來找出目標DIMM、然後更換DIMM。
@@ -306,6 +309,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-4-install-the-controller-module]]
 == 步驟4：安裝控制器模組
 
 在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
@@ -369,6 +373,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-5-restore-the-controller-module-to-operation]]
 == 步驟5：將控制器模組還原為運作狀態
 
 您必須重新設計系統、歸還控制器模組、然後重新啟用自動恢復功能。
@@ -383,6 +388,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-6-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟6：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -439,6 +445,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-7-return-the-failed-part-to-netapp]]
 == 步驟7：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

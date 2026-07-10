@@ -19,6 +19,7 @@ https://docs.netapp.com/us-en/ontap-metrocluster/index.html["資訊文件MetroCl
 
 
 
+[[step-1-prepare-for-installation]]
 == 步驟1：準備安裝
 
 若要安裝系統、您必須建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
@@ -157,6 +158,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南�
 
 
 
+[[step-2-install-the-hardware]]
 == 步驟2：安裝硬體
 
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
@@ -179,6 +181,7 @@ image::../media/drw_a320_cable_management_arms.png[卸下或安裝纜線管理�
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 步驟3：將控制器連接至網路
 
 您可以使用雙節點無交換器叢集方法或使用交換式叢集方法、將控制器連接至網路。
@@ -245,12 +248,14 @@ image::../media/drw_c400_switched_network_cabling_IEOPS-1096.svg[DRW C400 交換
 ====
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 步驟4：連接磁碟機櫃的纜線控制器
 
 下列選項說明如何將一或兩個NS224磁碟機櫃纜線連接至系統。
 
 
 
+[[option-1-cable-the-controllers-to-a-single-drive-shelf]]
 === 選項1：將控制器連接至單一磁碟機櫃
 
 您必須將每個控制器纜線連接至NS224磁碟機櫃上的NSM模組。
@@ -273,6 +278,7 @@ image::../media/drw_c400_one_ns224_shelf_IEOPS-1097.svg[DRW C400 ONE ns224 機�
 
 
 
+[[option-2-cable-the-controllers-to-two-drive-shelves]]
 === 選項2：將控制器連接至兩個磁碟機櫃
 
 您必須將每個控制器連接至兩個NS224磁碟機櫃上的NSM模組。
@@ -295,12 +301,14 @@ image::../media/drw_c400_two_ns224_shelves_IEOPS-1098.svg[DRW C400 兩個 ns224 
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 步驟5：完成系統設定與組態設定
 
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 
 
+[[option-1-completing-system-setup-and-configuration-if-network-discovery-is-enabled]]
 === 選項1：如果已啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
@@ -364,6 +372,7 @@ https://mysupport.netapp.com/site/tools["NetApp下載Config Advisor"]
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === 選項2：如果未啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。

@@ -17,6 +17,7 @@ summary: 若要更換系統中的NVMEM電池、您必須將控制器模組從系
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。
@@ -189,6 +190,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-open-the-controller-module]]
 == 步驟2：開啟控制器模組
 
 若要存取控制器內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。
@@ -229,6 +231,7 @@ CAM握把
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 步驟3：更換NVMEM電池
 
 若要更換系統中的NVMEM電池、您必須將故障的NVMEM電池從系統中取出、然後以新的NVMEM電池進行更換。
@@ -284,6 +287,7 @@ NVMEM電池套件
 
 
 
+[[step-4-reinstall-the-controller]]
 == 步驟4：重新安裝控制器
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、然後將其開機。
@@ -316,6 +320,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -372,6 +377,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

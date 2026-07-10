@@ -21,6 +21,7 @@ summary: 您需要更換控制器模組中的即時時鐘電池，以確保系�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -157,6 +158,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 ====
 
 
+[[step-2-remove-the-controller]]
 == 步驟2：移除控制器
 
 若要存取控制器內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。
@@ -209,6 +211,7 @@ image:../media/icon_round_1.png["編號 1"]
 |===
 
 
+[[step-3-replace-the-rtc-battery]]
 == 步驟3：更換RTC電池
 
 若要更換RTC電池、您必須在控制器模組中找到故障電池、將其從電池座中取出、然後將替換電池裝入電池座中。
@@ -253,6 +256,7 @@ NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加�
 
 
 
+[[step-4-reinstall-the-controller-module-and-set-timedate]]
 == 步驟4：重新安裝控制器模組、並設定時間/日期
 
 更換完RTC電池後、您必須重新安裝控制器模組。如果將RTC電池從控制器模組中取出超過10分鐘、您可能必須重設時間和日期。
@@ -301,6 +305,7 @@ NOTE: 如果系統在開機功能表停止、請選取「重新開機節點」�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

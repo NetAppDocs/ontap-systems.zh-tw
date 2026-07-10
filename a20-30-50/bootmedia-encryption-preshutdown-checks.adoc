@@ -15,6 +15,7 @@ summary: 為了確保您的 A20 ， AFF A30 或 AFF A50 儲存系統上的資料
 
 
 
+[[step-1-check-nve-support-and-download-the-correct-ontap-image]]
 == 步驟 1：檢查 NVE 支援並下載正確的ONTAP映像
 
 確定您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，以便您可以下載正確的ONTAP映像來取代啟動媒體。
@@ -41,6 +42,7 @@ NOTE: 從NetApp支援網站下載ONTAP映像到您的 HTTP 或 FTP 伺服器或�
 
 
 
+[[step-2-verify-key-manager-status-and-back-up-configuration]]
 == 步驟 2：驗證金鑰管理員狀態並備份配置
 
 在關閉故障控制器之前，請先驗證金鑰管理器配置並備份必要資訊。

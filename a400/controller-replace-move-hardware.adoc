@@ -15,6 +15,7 @@ summary: 當您的 AFF A400 系統發生硬體故障需要更換控制器時。�
 
 
 
+[[step-1-remove-the-controller-module]]
 == 步驟1：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -89,6 +90,7 @@ image:../media/icon_round_1.png["編號 1"]
 
 
 
+[[step-2-move-the-power-supplies]]
 == 步驟2：搬移電源供應器
 
 將電源移至替換控制器模組。
@@ -142,6 +144,7 @@ NOTE: 為避免損壞內部連接器、請勿在將電源供應器滑入系統�
 
 
 
+[[step-3-move-the-nvdimm-battery]]
 == 步驟3：移動NVDIMM電池
 
 將NVDIMM電池移至替換控制器模組。
@@ -198,6 +201,7 @@ NOTE: 請勿將電池纜線插回主機板、直到接到指示為止。
 
 
 
+[[step-4-move-the-boot-media]]
 == 步驟4：移動開機媒體
 
 將啟動媒體移至替換後的控制器模組。
@@ -250,6 +254,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-5-move-the-pcie-risers-and-mezzanine-card]]
 == 步驟5：移動PCIe擴充卡和夾層卡
 
 將 PCIe 轉接卡和夾層卡移至更換的控制器模組。
@@ -329,6 +334,7 @@ PCI 卡
 
 
 
+[[step-6-move-the-dimms]]
 == 步驟6：移動DIMM
 
 將 DIMM 移至更換的控制器模組。
@@ -399,6 +405,7 @@ DIMM可緊密裝入插槽、但應能輕鬆裝入。如果沒有、請重新將D
 
 
 
+[[step-7-install-the-controller-module]]
 == 步驟7：安裝控制器模組
 
 重新安裝控制器模組、然後重新啟動。

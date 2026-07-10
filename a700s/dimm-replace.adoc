@@ -19,6 +19,7 @@ summary: 當系統登錄越來越多的可修正錯誤修正碼（correctable er
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時接管控制器、以便健全的控制器繼續從受損的控制器儲存設備提供資料。
@@ -62,6 +63,7 @@ link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-t
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -139,6 +141,7 @@ image:../media/icon_round_3.png["編號 3"]
 
 
 
+[[step-3-replace-a-dimm]]
 == 步驟3：更換DIMM
 
 若要更換DIMM、您必須使用控制器模組內部的DIMM對應圖、將其放入控制器模組、然後依照特定步驟順序加以更換。
@@ -214,6 +217,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-4-reinstall-the-controller-module-and-boot-the-system]]
 == 步驟 4 ：重新安裝控制器模組並啟動系統
 
 在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。
@@ -252,6 +256,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5return-the-failed-part-to-netapp]]
 == 步驟 5 ：將故障零件退回 NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

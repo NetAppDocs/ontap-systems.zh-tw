@@ -15,6 +15,7 @@
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。
@@ -187,6 +188,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-replace-or-add-a-caching-module]]
 == 步驟2：更換或新增快取模組
 
 NVMe SSD Flash Cache 模組（ Flash Cache 或快取模組）是獨立的模組。它們位於NVRAM模組的正面。若要更換或新增快取模組、請將其放在系統背面的插槽6上、然後依照特定的步驟順序進行更換。
@@ -247,6 +249,7 @@ NOTE: 請勿使用編號和有字母標記的I/O CAM栓鎖來退出快取模組�
 
 
 
+[[step-3-add-or-replace-an-x9170a-core-dump-module]]
 == 步驟3：新增或更換X9170A核心傾印模組
 
 1TB快取核心傾印（X9170A）僅用於AFF 填寫故障資料的功能。核心傾印模組無法熱交換。核心傾印模組通常位於系統背面插槽6-1的NVRAM模組正面。若要更換或新增核心傾印模組、請找出插槽6至1、然後依照特定步驟順序來新增或更換。
@@ -305,6 +308,7 @@ NOTE: 請勿使用編號和有字母標記的I/O CAM栓鎖來退出核心傾印�
 
 
 
+[[step-4-reboot-the-controller-after-fru-replacement]]
 == 步驟4：更換FRU後重新啟動控制器
 
 更換FRU之後、您必須重新啟動控制器模組。
@@ -315,6 +319,7 @@ NOTE: 請勿使用編號和有字母標記的I/O CAM栓鎖來退出核心傾印�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -371,6 +376,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

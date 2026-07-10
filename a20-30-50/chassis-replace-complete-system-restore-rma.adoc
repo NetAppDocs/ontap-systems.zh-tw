@@ -15,6 +15,7 @@ summary: 驗證機箱的 HA 狀態，然後將故障零件退回 NetApp ，以�
 
 
 
+[[step-1-verify-and-set-the-ha-state-of-the-chassis]]
 == 步驟1：驗證並設定機箱的HA狀態
 
 您必須驗證機箱的 HA 狀態，並視需要更新狀態，以符合您的儲存系統組態。
@@ -46,6 +47,7 @@ HA 狀態的值應為 _ha_ 。HA 狀態的值可以是以下值之一： *** _ha
 
 
 
+[[step-2-return-the-failed-part-to-netapp]]
 == 步驟 2 ：將故障零件退回 NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

@@ -15,6 +15,7 @@ summary: 完成 ASA C400 系統的控制器更換。安裝替換控制器的授�
 
 
 
+[[step-1-install-licenses-for-the-replacement-controller-in-ontap]]
 == 步驟1：在ONTAP 更新版本中安裝更換控制器的授權
 
 如果受損節點使用ONTAP 的是需要標準（節點鎖定）授權的功能、您必須為_replace_節點安裝新的授權。對於具有標準授權的功能、叢集中的每個節點都應該擁有自己的功能金鑰。
@@ -49,6 +50,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
+[[step-2-verify-lifs-and-register-the-serial-number]]
 == 步驟2：驗證LIF並登錄序號
 
 在將 _replacement_ 節點恢復服務之前、您應該驗證 LIF 是否在其主連接埠上、如果啟用了 AutoSupport，則註冊 _replacement_ 節點的序號、檢查叢集的健全狀況、關閉任何維護時段、並重設自動恢復功能。
@@ -71,6 +73,7 @@ NOTE: 系統會自動產生您所需的新授權金鑰、並將其傳送至檔�
 
 
 
+[[step-3-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟3：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -127,6 +130,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

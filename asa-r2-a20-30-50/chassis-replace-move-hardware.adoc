@@ -15,6 +15,7 @@ summary: 當硬體故障需要更換ASA A20、 ASA A30 或ASA A50 儲存系統�
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
@@ -25,6 +26,7 @@ summary: 當硬體故障需要更換ASA A20、 ASA A30 或ASA A50 儲存系統�
 
 
 
+[[step-1-remove-the-controller]]
 == 步驟1：移除控制器
 
 更換控制器或更換控制器內部的元件時，您必須從機箱中移除控制器。
@@ -136,6 +138,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-2-remove-the-drives-from-the-impaired-chassis]]
 == 步驟 2 ：從損壞的機箱中取出磁碟機
 
 您需要從損壞的機箱中移除所有磁碟機和任何磁碟機擋片，以便稍後在程序中安裝它們到更換的機箱中。
@@ -184,6 +187,7 @@ NOTE: 由於磁碟機很脆弱，因此請盡量減少處理，以免損壞它�
 
 
 
+[[step-2-replace-the-chassis-from-within-the-equipment-rack-or-system-cabinet]]
 == 步驟 2 ：從設備機架或系統機櫃內更換機箱
 
 您可以從設備機架或系統機櫃中移除受損的機箱，安裝替換機箱，安裝磁碟機，任何磁碟機擋片，然後安裝擋板。
@@ -203,6 +207,7 @@ NOTE: 如果儲存系統是隨附於 NetApp 系統機櫃中，則必須先卸下
 
 
 
+[[step-4-install-the-controllers-and-drives]]
 == 步驟 4：安裝控制器和驅動器
 
 將控制器和磁碟機安裝到替換機箱中並重新啟動控制器。

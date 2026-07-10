@@ -29,6 +29,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["纜線拉片方向"]
 
 
 
+[[step-1-cable-the-clusterha-connections]]
 == 步驟 1 ：連接叢集 / HA 連線
 
 建立 ONTAP 叢集連線。對於無交換器叢集，請將控制器彼此連接。對於交換式叢集，請將控制器連接至叢集網路交換器。
@@ -147,6 +148,7 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[�
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 步驟 2 ：連接主機網路連線
 
 將控制器連接至乙太網路或 FC 主機網路。
@@ -203,6 +205,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[連接至
 ====
 
 
+[[step-3-cable-the-management-network-connections]]
 == 步驟 3 ：連接管理網路連線
 
 將每個控制器上的管理（扳手）連接埠連接到管理網路交換器。
@@ -218,6 +221,7 @@ IMPORTANT: 請勿插入電源線。
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 步驟 4 ：連接機櫃連接線
 
 本程序說明如何將控制器連接至一個 NS224 機櫃。

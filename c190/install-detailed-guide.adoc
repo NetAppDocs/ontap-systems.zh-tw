@@ -15,6 +15,7 @@ summary: 本節將詳細說明如何安裝AFF 一套功能完善的系統。
 
 
 
+[[step-1-prepare-for-installation]]
 == 步驟1：準備安裝
 
 若要安裝 AFF C190 系統、請建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
@@ -135,6 +136,7 @@ image:../media/oie_cable_power.png["電源線"]
 
 
 
+[[step-2-install-the-hardware]]
 == 步驟2：安裝硬體
 
 視情況、將您的系統安裝在 4 柱機架或 NetApp 系統機櫃中。
@@ -158,6 +160,7 @@ image::../media/drw_cable_management_arm_install.png[連接纜線管理裝置]
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 步驟3：將控制器連接至網路
 
 使用雙節點無交換器叢集方法或叢集互連網路方法、將控制器連接至網路。
@@ -327,6 +330,7 @@ IMPORTANT: 此時請勿插入電源線。
 ====
 
 
+[[step-4-complete-system-setup]]
 == 步驟 4 ：完成系統設定
 
 只要連線到交換器和筆記型電腦、或直接連線到系統中的控制器、然後連線到管理交換器、就能使用叢集探索來完成系統設定和組態。

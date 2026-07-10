@@ -23,6 +23,7 @@ FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 Fl
 
 
 
+[[replace-the-flash-cache-module-carrier]]
 == 更換 Flash Cache 模組承載器
 
 Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cache 模組。您無法熱交換 Flash Cache 模組承載器
@@ -34,6 +35,7 @@ Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cach
 
 
 
+[[step-1-shut-down-the-impaired-node]]
 === 步驟1：關閉受損節點
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -180,6 +182,7 @@ Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cach
 ====
 
 
+[[step-2-replace-the-flash-cache-module-carrier]]
 === 步驟 2 ：更換 Flash Cache 模組承載器
 
 請執行下列步驟以更換 Flash Cache 模組承載器。
@@ -249,6 +252,7 @@ Flash Cache 模組載體故障 LED
 
 
 
+[[step-3-reboot-the-controller]]
 === 步驟 3 ：重新啟動控制器
 
 更換 Flash Cache 模組承載器之後，您必須重新啟動控制器模組。
@@ -265,12 +269,14 @@ NOTE: 這會重新初始化 I/O 卡和其他元件、然後重新啟動節點。
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 === 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。
 
 
 
+[[replace-the-caching-module]]
 == 更換快取模組
 
 Flash Cache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中，或插槽 6-1 和插槽 6-2 中。

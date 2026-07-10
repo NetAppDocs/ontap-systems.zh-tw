@@ -8,6 +8,7 @@
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -79,6 +80,7 @@
 
 
 
+[[step-2-remove-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器內部的元件、您必須先從系統中移除控制器模組、然後移除控制器模組上的護蓋。
@@ -103,6 +105,7 @@ image::../media/drw_2240_x_opening_cam_latch.png[打開凸輪把手栓鎖]
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 步驟3：更換NVMEM電池
 
 若要更換系統中的NVMEM電池、您必須將故障的NVMEM電池從系統中取出、然後以新的NVMEM電池進行更換。
@@ -145,6 +148,7 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[更換NVMEM電池]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 更換控制器模組中的元件之後、請將其重新安裝到機箱中。
@@ -205,6 +209,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -261,6 +266,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

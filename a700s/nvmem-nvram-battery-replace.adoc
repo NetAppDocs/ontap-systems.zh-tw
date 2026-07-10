@@ -17,6 +17,7 @@ summary: 若要更換系統中的NVRAM電池、您必須從系統中取出控制
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -71,6 +72,7 @@ summary: 若要更換系統中的NVRAM電池、您必須從系統中取出控制
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -116,6 +118,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-the-nvram-battery]]
 == 步驟3：更換NVRAM電池
 
 若要更換NVRAM電池、您必須從控制器模組中取出故障的NVRAM電池、然後將替換的NVRAM電池裝入控制器模組。
@@ -152,6 +155,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、然後將其開機。
@@ -223,6 +227,7 @@ NOTE: 完成轉換後、請務必結束維護模式。
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

@@ -30,6 +30,7 @@ NOTE: 本指南中所述的 SAS 佈線規則，包括控制器插槽編號規則
 
 
 
+[[configuration-rules]]
 == 組態規則
 
 具有 IOM12、IOM12B 或 IOM12C 模組的磁碟櫃支援特定類型的 HA 配對和單控制器組態。
@@ -71,6 +72,7 @@ https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 
 
+[[controller-slot-numbering-rules]]
 == 控制器插槽編號規則
 
 為了在所有支援的HA配對和單一控制器組態中套用纜線佈線規則、我們會使用控制器插槽編號慣例。
@@ -95,12 +97,14 @@ image::../media/slot0_rules.png[插槽和插槽 [ 連接埠便利性]
 
 
 
+[[shelf-to-shelf-connection-rules]]
 == 機櫃對機櫃連線規則
 
 當您在磁碟櫃堆疊中有多個磁碟櫃時、它們會使用適用的「標準」或「雙寬」磁碟櫃對磁碟櫃佈線、透過每個SAS網域（IOM A和IOM B）相互連接。您使用「標準」或「雙寬」的機櫃對機櫃佈線取決於您的組態。
 
 
 
+[[standard-shelf-to-shelf-connectivity]]
 === 標準機櫃對機櫃連線能力
 
 * 標準的機櫃對機櫃連線功能可用於任何具有多個磁碟機櫃的磁碟機堆疊。
@@ -117,6 +121,7 @@ image::../media/drw_shelf_to_shelf_standard.gif[標準機櫃到機櫃的連線�
 
 
 
+[[double-wide-shelf-to-shelf-connectivity]]
 === 雙寬機櫃對機櫃連線能力
 
 * 雙寬磁碟櫃對磁碟櫃連線可用於四路徑（四路徑HA和四路徑）組態。
@@ -133,12 +138,14 @@ image::../media/drw_shelf_to_shelf_double_wide.gif[雙寬的機櫃到機櫃連�
 
 
 
+[[controller-to-stack-connection-rules]]
 == 控制器對堆疊連線規則
 
 您可以正確地將SAS連線從每個控制器連接至HA配對或單一控制器組態中的每個堆疊、方法是瞭解SAS磁碟櫃使用軟體磁碟擁有權、控制器連接埠A/C和B/D如何連接至堆疊、 控制器連接埠A/C和B/D如何組織成連接埠配對、以及採用內部儲存設備的平台如何將其控制器連接埠連接至堆疊。
 
 
 
+[[sas-disk-shelf-software-based-disk-ownership-rule]]
 === SAS磁碟櫃軟體型磁碟擁有權規則
 
 SAS磁碟櫃使用軟體型磁碟擁有權（而非硬體型磁碟擁有權）。這表示磁碟機擁有權儲存在磁碟機上、而非由儲存系統實體連線的拓撲所決定（如同硬體型磁碟擁有權）。具體而言、磁碟機所有權是由ONTAP 支援（自動或CLI命令）指派、而非由控制器與堆疊連線的纜線方式指派。
@@ -147,6 +154,7 @@ SAS磁碟櫃切勿使用硬體型磁碟擁有權配置來進行纜線連接。
 
 
 
+[[controller-a-and-c-port-connection-rules-for-platforms-without-internal-storage]]
 === 控制器A和C連接埠連線規則（適用於沒有內部儲存設備的平台）
 
 * A和C連接埠永遠是堆疊的主要路徑。
@@ -165,6 +173,7 @@ image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[不含�
 
 
 
+[[controller-b-and-d-port-connection-rules-for-platforms-without-internal-storage]]
 === 控制器B和D連接埠連線規則（適用於沒有內部儲存設備的平台）
 
 * B和D連接埠永遠是堆疊的次要路徑。
@@ -184,6 +193,7 @@ image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[無內�
 
 
 
+[[port-pair-connection-rules-for-platforms-without-internal-storage]]
 === 連接埠配對連線規則（適用於沒有內部儲存設備的平台）
 
 控制器SAS連接埠A、B、C和D會組織成連接埠配對、並使用一種方法來利用所有SAS連接埠、在HA配對和單一控制器組態中進行控制器對堆疊連線時、提供系統恢復能力和一致性。
@@ -255,6 +265,7 @@ link:install-cabling-worksheet-template-quadpath.html["控制器對堆疊佈線�
 
 
 
+[[controller-0b0b1-and-0a-port-connection-rules-for-platforms-with-internal-storage]]
 === 控制器 0b/0b1 和 0A 連接埠規則、適用於具有內部儲存設備的平台
 
 具有內部儲存設備的平台有一組獨特的連線規則、因為每個控制器必須在內部儲存設備（連接埠 0b/0b1 ）和堆疊之間維持相同的網域連線。這表示當控制器位於機箱（控制器 1 ）的插槽 A 時、它位於網域 A （ IOM A ）、因此連接埠 0b/0b1 必須連接到堆疊中的 IOM A 。當控制器位於機箱（控制器 2 ）的插槽 B 時、它位於網域 B （ IOM B ）、因此連接埠 0b/0b1 必須連接到堆疊中的 IOM B 。
@@ -291,6 +302,7 @@ image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[內部儲存連�
 
 
 
+[[tri-path-ha-connectivity]]
 === 三重路徑 HA 連線
 
 FAS2820 HA 配對提供三重路徑 HA 連線功能。三重路徑 HA 連線能力有三條路徑、從每個控制器到內部（ IOM12G ）和外部機櫃：
@@ -319,6 +331,7 @@ FAS2820 HA 配對纜線範例請參閱link:install-cabling-worksheets-examples-f
 
 
 
+[[mini-sas-hd-sas-optical-cable-rules]]
 == Mini-SAS HD SAS光纖纜線規則
 
 您可以使用迷你SAS HD SAS光纖纜線：多重模式主動式光纖纜線（AOC）纜線搭配迷你SAS HD對Mini SAS HD連接器、以及多重模式（OM4）中斷纜線搭配Mini-SAS HD對LC連接器、以實現長距離SAS連線、適用於具有IOM12模組磁碟櫃的特定組態。

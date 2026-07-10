@@ -29,6 +29,7 @@ summary: 若要更換故障的NVRAM卡、您必須從控制器模組中移除NVR
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 .步驟
@@ -91,6 +92,7 @@ https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html["《NetAp
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -169,6 +171,7 @@ image:../media/icon_round_3.png["編號 3"]
 
 
 
+[[step-3-remove-the-nvram-card]]
 == 步驟3：移除NVRAM卡
 
 裝回NVRAM包括從控制器模組中卸下NVRAM擴充卡、擴充卡1、從NVRAM卡拔下NVRAM電池、移除故障的NVRAM卡並安裝替換的NVRAM擴充卡、然後將NVRAM擴充卡重新安裝回控制器模組。
@@ -260,6 +263,7 @@ NOTE: 請確定插卡完全且正面地插入擴充卡插槽。
 
 
 
+[[step-4-reinstall-the-controller-module-and-booting-the-system]]
 == 步驟4：重新安裝控制器模組並啟動系統
 
 在控制器模組中更換FRU之後、您必須重新安裝控制器模組、然後重新啟動。
@@ -300,6 +304,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-verify-the-system-id-change-on-an-ha-system]]
 == 步驟5：驗證HA系統上的系統ID變更
 
 您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。
@@ -382,6 +387,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

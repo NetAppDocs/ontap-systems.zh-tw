@@ -17,6 +17,7 @@ summary: 若要更換系統中的NVMEM電池、您必須將控制器模組從系
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -71,6 +72,7 @@ summary: 若要更換系統中的NVMEM電池、您必須將控制器模組從系
 
 
 
+[[step-2-remove-and-open-the-controller-module]]
 == 步驟 2 ：移除並開啟控制器模組
 
 卸下並打開控制器模組。
@@ -107,6 +109,7 @@ NOTE: 如果系統處於「等待恢復」狀態、或系統未正確接管或�
 
 
 
+[[step-3-replace-the-nvmem-battery]]
 == 步驟3：更換NVMEM電池
 
 從系統中取出故障的 NVMEM 電池、並更換為新的 NVMEM 電池。
@@ -167,6 +170,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 更換控制器模組中的元件之後、請將其重新安裝到機箱中。
@@ -212,6 +216,7 @@ NOTE: 在開機程序期間、您可能會看到下列提示：
 
 
 
+[[step-5-restore-automatic-giveback-and-autsupport]]
 == 步驟 5 ：還原自動恢復和自動支援
 
 如果已停用、請還原自動恢復和 AutoSupport 。
@@ -222,6 +227,7 @@ NOTE: 在開機程序期間、您可能會看到下列提示：
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

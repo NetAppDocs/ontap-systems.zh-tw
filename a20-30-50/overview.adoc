@@ -15,10 +15,12 @@ summary: A20-30-50平台組的主要規格
 
 
 
+[[aff-a50]]
 == AFF A50
 
 
 
+[[key-specifications-for-aff-a50]]
 === AFF A50 的主要規格
 
 平台配置： AFF A50 單機箱 HA 對
@@ -37,6 +39,7 @@ PCIe 擴充槽：8
 
 
 
+[[scaleout-maximums]]
 === 橫向擴展最大值
 
 |===
@@ -55,6 +58,7 @@ PCIe 擴充槽：8
 |===
 
 
+[[io]]
 === 輸入輸出
 
 
@@ -113,12 +117,14 @@ PCIe 擴充槽：8
 |===
 
 
+[[storage-networking-supported]]
 === 支援的儲存網絡
 
 CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP；S3；含 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.SMB 3.1.1；
 
 
 
+[[system-environment-specifications]]
 === 系統環境規格
 
 * 典型功率：3076 BTU/小時
@@ -134,6 +140,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP
 
 
 
+[[compliance]]
 === 遵守
 
 * EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
@@ -146,16 +153,19 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP
 
 
 
+[[high-availability]]
 === 高可用性
 
 以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；
 
 
 
+[[aff-a20]]
 == AFF A20
 
 
 
+[[key-specifications-for-aff-a20]]
 === AFF A20 的主要規格
 
 平台配置： AFF A20 單機箱 HA 對
@@ -174,6 +184,7 @@ PCIe 擴充槽：8
 
 
 
+[[scaleout-maximums]]
 === 橫向擴展最大值
 
 |===
@@ -192,6 +203,7 @@ PCIe 擴充槽：8
 |===
 
 
+[[io]]
 === 輸入輸出
 
 
@@ -250,12 +262,14 @@ PCIe 擴充槽：8
 |===
 
 
+[[storage-networking-supported]]
 === 支援的儲存網絡
 
 CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP；S3；含 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.SMB 3.1.1；
 
 
 
+[[system-environment-specifications]]
 === 系統環境規格
 
 * 典型功率：2040 BTU/小時
@@ -271,6 +285,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP
 
 
 
+[[compliance]]
 === 遵守
 
 * EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
@@ -283,12 +298,14 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP
 
 
 
+[[high-availability]]
 === 高可用性
 
 以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；
 
 
 
+[[key-specifications-for-aff-a30]]
 === AFF A30 的主要規格
 
 平台配置： AFF A30 單機箱 HA 對
@@ -307,6 +324,7 @@ PCIe 擴充槽：8
 
 
 
+[[scaleout-maximums]]
 === 橫向擴展最大值
 
 |===
@@ -325,6 +343,7 @@ PCIe 擴充槽：8
 |===
 
 
+[[io]]
 === 輸入輸出
 
 
@@ -383,12 +402,14 @@ PCIe 擴充槽：8
 |===
 
 
+[[storage-networking-supported]]
 === 支援的儲存網絡
 
 CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP；S3；含 NAS 的 S3；SMB 2.0；SMB 2.1；SMB 2.x；SMB 3.SMB 3.1.1；
 
 
 
+[[system-environment-specifications]]
 === 系統環境規格
 
 * 典型功率：2892 BTU/小時
@@ -404,6 +425,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP
 
 
 
+[[compliance]]
 === 遵守
 
 * EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
@@ -416,6 +438,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NVMe/FC；NVMe/TCP
 
 
 
+[[high-availability]]
 === 高可用性
 
 以乙太網路為基礎的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；

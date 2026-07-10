@@ -7,6 +7,9 @@
 
 CAUTION: 在安裝和維護過程中，請務必配戴連接至已驗證接地點的接地腕帶。未採取正確的 ESD 防護措施可能會對控制器節點、儲存架和網路交換器造成永久性損壞。
 
+
+WARNING: NVRAM 模組不支援熱插拔。更換前，請重新安裝硬碟，關閉節點，拔掉控制器電源，並將控制器從機殼中拉出幾英寸。
+
 [role="tabbed-block"]
 ====
 .選項 1 ：更換 NVRAM 模組
@@ -130,7 +133,7 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 --
 .選項 2 ：更換 NVRAM DIMM
 --
-若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。
+若要更換 NVRAM 模組中的 NVRAM DIMM，首先必須卸下 NVRAM 模組，然後更換目標 DIMM。
 
 . 如果您尚未接地、請正確接地。
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
@@ -202,7 +205,9 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[取下 NVRAM12 
 
  a| 
 image:../media/icon_round_1.png["編號 1"]
-| CAM 鎖定按鈕 
+ a| 
+CAM 鎖定按鈕
+
 
 
  a| 
@@ -254,6 +259,7 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 ====
 
 
+[[step-3-reassign-disks]]
 == 步驟3：重新指派磁碟
 
 您必須在開機控制器時確認系統 ID 變更、然後確認變更已實作。
@@ -287,8 +293,10 @@ node2             node1             -            Waiting for giveback (HA mailbo
 ----
 . 退回控制器：
 +
-.. 從健康的控制器中，歸還被替換的控制器的儲存空間：+
+.. 從健康的控制器，將已更換控制器的儲存設備歸還：
++
 `storage failover giveback -ofnode replacement_node_name`
+
 +
 控制器會恢復其儲存設備並完成開機。
 

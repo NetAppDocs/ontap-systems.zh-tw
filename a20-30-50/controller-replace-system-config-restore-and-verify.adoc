@@ -15,6 +15,7 @@ summary: 確認控制器的 HA 組態在 AFF A20 ， AFF A30 或 AFF A50 儲存�
 
 
 
+[[step-1-verify-ha-config-settings]]
 == 步驟 1 ：驗證 HA 組態設定
 
 您必須驗證 `HA`控制器的狀態，並視需要更新狀態，以符合您的儲存系統組態。
@@ -65,6 +66,7 @@ HA 狀態的值可以是下列其中一項：
 
 
 
+[[step-2-verify-disk-list]]
 == 步驟 2 ：驗證磁碟清單
 
 . 驗證介面卡是否列出所有磁碟的路徑：

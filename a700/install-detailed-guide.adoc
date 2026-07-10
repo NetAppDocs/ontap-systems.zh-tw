@@ -15,6 +15,7 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。
 
 
 
+[[step-1-prepare-for-installation]]
 == 步驟1：準備安裝
 
 若要安裝系統、您必須在NetApp支援網站上建立帳戶、註冊系統並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
@@ -178,6 +179,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南�
 
 
 
+[[step-2-install-the-hardware]]
 == 步驟2：安裝硬體
 
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
@@ -205,12 +207,14 @@ image::../media/drw_9000_cable_management_arms.png[連接纜線管理裝置]
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 步驟3：將控制器連接至網路
 
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
 
+[[option-1-two-node-switchless-cluster]]
 === 選項1：雙節點無交換器叢集
 
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
@@ -237,6 +241,7 @@ image::../media/drw_9000_TNSC_composite_cabling.png[雙節點無交換器叢集�
 
 
 
+[[option-2-switched-cluster]]
 === 選項2：交換式叢集
 
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
@@ -263,12 +268,14 @@ image:../media/drw_9000_switched_cluster_cabling.png["交換式叢集複合纜�
 
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 步驟4：連接磁碟機櫃的纜線控制器
 
 您可以將新系統纜線連接至DS212C、DS224C或NS224磁碟櫃、視系統AFF 是指或者FAS 是指系統。
 
 
 
+[[option-1-cable-the-controllers-to-ds212c-or-ds224c-drive-shelves]]
 === 選項1：將控制器纜線連接至DS212C或DS224C磁碟機櫃
 
 您必須將機櫃對機櫃連線纜線、然後將兩個控制器纜線連接至DS212C或DS224C磁碟機櫃。
@@ -320,6 +327,7 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png["儲存系統與 SAS �
 
 
 
+[[option-2-cable-the-controllers-to-a-single-ns224-drive-shelf-in-aff-a700-and-asa-aff-a700-systems-running-ontap-9-8-and-later-only]]
 === 選項2：將控制器纜線連接AFF 至僅ASA AFF 執行ONTAP 《S9.8及更新版本》的單一NS224磁碟機櫃、即可連接至該系統
 
 您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
@@ -355,6 +363,7 @@ image::../media/single_NS224_shelf.png[單一機櫃纜線]
 
 
 
+[[option-3-cable-the-controllers-to-two-ns224-drive-shelves-in-aff-a700-and-asa-aff-a700-systems-running-ontap-9-8-and-later-only]]
 === 選項3：將控制器連接至AFF 僅ASA AFF 執行ONTAP 《S9.8及更新版本》的2個NS224磁碟機櫃、即可連接到位於《Se A700》和《Se A700》系統
 
 您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
@@ -390,12 +399,14 @@ image::../media/two_NS224_shelves.png[雙機櫃纜線]
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 步驟5：完成系統設定與組態設定
 
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 
 
+[[option-1-completing-system-setup-and-configuration-if-network-discovery-is-enabled]]
 === 選項1：如果已啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
@@ -468,6 +479,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["NetApp
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === 選項2：如果未啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。

@@ -19,6 +19,7 @@ summary: 更換 ASA A70 或 ASA A90 系統中的即時時鐘電池（通常稱�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 關閉或接管受損的控制器。
@@ -91,6 +92,7 @@ summary: 更換 ASA A70 或 ASA A90 系統中的即時時鐘電池（通常稱�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 
@@ -211,6 +213,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-the-rtc-battery]]
 == 步驟3：更換RTC電池
 
 取出故障的 RTC 電池、然後安裝替換的 RTC 電池。
@@ -246,6 +249,7 @@ image:../media/icon_round_1.png["編號 1"]
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 重新安裝控制器模組、然後重新啟動。
@@ -299,6 +303,7 @@ NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 
 
 
+[[step-5-reset-the-time-and-date-on-the-controller]]
 == 步驟 5 ：重設控制器上的時間和日期
 
 更換 RTC 電池、插入控制器並開啟電源進行第一次 BIOS 重設後，您將看到以下錯誤訊息：
@@ -323,6 +328,7 @@ NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

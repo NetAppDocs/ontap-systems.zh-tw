@@ -34,6 +34,7 @@ summary: 如果 FAS 70 或 FAS 90 儲存系統中的某個乙太網路 I/O 模�
 
 
 
+[[step-1-ensure-the-storage-system-meets-the-procedure-requirements]]
 == 步驟 1：確保儲存系統符合程序要求
 
 若要使用此程序，您的儲存系統必須執行 ONTAP 9.18.1 GA 或更新版本，且您的儲存系統必須符合所有要求。
@@ -68,6 +69,7 @@ NOTE: 如果您的儲存系統運作的不是 ONTAP 9.18.1 GA 或更高版本，
 
 
 
+[[step-2-prepare-the-storage-system-and-io-module-slot]]
 == 步驟 2：準備儲存系統和 I/O 模組插槽
 
 準備好儲存系統和 I/O 模組插槽，以便安全地移除故障的 I/O 模組：
@@ -154,6 +156,7 @@ The module has been successfully removed from service and powered off. It can no
 
 
 
+[[step-3-replace-the-failed-io-module]]
 == 步驟 3：更換故障的 I/O 模組
 
 以同等規格的 I/O 模組取代故障的 I/O 模組。
@@ -202,6 +205,7 @@ CAM 鎖定按鈕
 
 
 
+[[step-4-bring-the-replacement-io-module-online]]
 == 步驟 4：將替換的 I/O 模組上線
 
 將替換的 I/O 模組上線、驗證 I/O 模組連接埠是否成功初始化、驗證插槽是否已開啟電源，然後驗證 I/O 模組是否已上線並被識別。
@@ -318,6 +322,7 @@ Slot slot Information
 
 
 
+[[step-5-restore-the-storage-system-to-normal-operation]]
 == 步驟 5：恢復儲存系統正常運作
 
 將儲存空間恢復到正常運作狀態，方法是：將儲存空間恢復給被接管的控制器（根據需要）、恢復自動恢復功能（根據需要）、驗證 LIF 是否在其主連接埠上，並重新啟用 AutoSupport 自動建立案例功能。
@@ -363,6 +368,7 @@ Slot slot Information
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

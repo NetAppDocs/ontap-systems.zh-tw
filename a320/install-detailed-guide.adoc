@@ -15,6 +15,7 @@ summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。如果�
 
 
 
+[[prepare-for-installation]]
 == 準備安裝
 
 若要安裝AFF 您的32位版系統、您必須建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
@@ -175,6 +176,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["叢集組態工�
 
 
 
+[[install-the-hardware]]
 == 安裝硬體
 
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
@@ -197,12 +199,14 @@ image::../media/drw_a320_cable_management_arms.png[取下或安裝纜線管理�
 
 
 
+[[cable-controllers-to-your-network]]
 == 將控制器纜線連接至您的網路
 
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
 
+[[option-1-cable-a-two-node-switchless-cluster]]
 === 選項1：連接雙節點無交換式叢集
 
 控制器模組上的選用資料連接埠、選用NIC卡和管理連接埠、都會連接至交換器。兩個控制器模組上的叢集互連/ HA連接埠均已連接纜線。
@@ -276,6 +280,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 
 
+[[option-2-cabling-a-switched-cluster]]
 === 選項2：交換式叢集的佈線
 
 控制器模組上的選用資料連接埠、選用NIC卡和管理連接埠、都會連接至交換器。叢集互連/ HA連接埠會連接至叢集/ HA交換器。
@@ -349,12 +354,14 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 
 
+[[cable-controllers-to-drive-shelves]]
 == 將控制器纜線連接至磁碟機櫃
 
 您必須使用內建儲存連接埠將控制器連接至機櫃。
 
 
 
+[[option-1-cable-the-controllers-to-a-single-drive-shelf]]
 === 選項1：將控制器連接至單一磁碟機櫃
 
 您必須將每個控制器纜線連接至NS224磁碟機櫃上的NSM模組。
@@ -394,6 +401,7 @@ image:../media/icon_square_2_yellow.png["編號 2"]
 
 
 
+[[option-2-cable-the-controllers-to-two-drive-shelves]]
 === 選項2：將控制器連接至兩個磁碟機櫃
 
 您必須將每個控制器連接至兩個NS224磁碟機櫃上的NSM模組。
@@ -433,12 +441,14 @@ image:../media/icon_square_2_yellow.png["編號 2"]
 
 
 
+[[complete-system-setup-and-configuration]]
 == 完成系統設定與組態
 
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 
 
+[[option-1-completing-system-setup-and-configuration-if-network-discovery-is-enabled]]
 === 選項1：如果已啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
@@ -482,6 +492,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南�
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === 選項2：如果未啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。

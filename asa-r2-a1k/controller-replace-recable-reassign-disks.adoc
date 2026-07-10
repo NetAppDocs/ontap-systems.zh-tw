@@ -42,19 +42,19 @@ summary: 將儲存資源的控制權交給更換控制器，讓 ASA A1K 系統�
 
 .步驟
 . 從 Loader 提示字元開機至 ONTAP 功能表 `boot_ontap menu`、然後選取選項 10 。
-. 從運作正常的控制器擷取並驗證整個叢集的通關密語。
+. 顯示叢集的金鑰管理備份資訊。
 +
-.. 執行以下命令以擷取整個叢集的通關密語：
+.. 執行以下命令以顯示叢集的金鑰管理備份資訊：
 +
 `security key-manager onboard show-backup`
 
-.. 使用下列命令驗證整個叢集的通關密碼：
+.. 執行以下命令以驗證板載金鑰管理器備份：
 +
 `security key-manager onboard verify-backup`
 
 
 
-. 輸入 OKM 複雜密碼。
+. 輸入 OKM 密碼短語並確認驗證成功。
 +
 
 NOTE: 系統會提示您輸入兩次密碼。

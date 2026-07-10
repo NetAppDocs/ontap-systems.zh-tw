@@ -19,6 +19,7 @@ summary: 若要更換PCIe或夾層卡、您必須從插卡上拔下纜線和任�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 [role="lead"]
@@ -194,6 +195,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 [role="lead"]
@@ -240,6 +242,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-a-pcie-card]]
 == 步驟3：更換PCIe卡
 
 [role="lead"]
@@ -320,6 +323,7 @@ NOTE: 如果您要在底部插槽中安裝插卡、但看不到插卡插槽、�
 
 
 
+[[step-4-replace-the-mezzanine-card]]
 == 步驟4：更換夾層卡
 
 [role="lead"]
@@ -389,6 +393,7 @@ NOTE: 務必將夾層卡上的蝶形螺絲完全擰緊。如果螺絲鬆動，�
 
 
 
+[[step-5-install-the-controller-module]]
 == 步驟5：安裝控制器模組
 
 在控制器模組中更換元件之後、您必須將控制器模組重新安裝到機箱中、然後將其開機至維護模式。
@@ -433,6 +438,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-6-restore-the-controller-module-to-operation]]
 == 步驟6：將控制器模組還原為運作狀態
 
 若要還原控制器、您必須重新啟動系統、歸還控制器模組、然後重新啟用自動還原。
@@ -447,6 +453,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-7-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟7：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -503,6 +510,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-8-return-the-failed-part-to-netapp]]
 == 步驟8：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

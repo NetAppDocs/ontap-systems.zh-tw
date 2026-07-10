@@ -19,6 +19,7 @@ summary: 若要更換I/O模組、您必須執行特定的工作順序。
 
 
 
+[[step-1-shut-down-the-impaired-node]]
 == 步驟1：關閉受損節點
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -150,6 +151,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 ====
 
 
+[[step-2-replace-io-modules]]
 == 步驟2：更換I/O模組
 
 若要更換I/O模組、請在機箱內找到該模組、然後依照特定的步驟順序進行。
@@ -206,6 +208,7 @@ I/O CAM栓鎖完全解除鎖定
 
 
 
+[[step-3-reboot-the-controller]]
 == 步驟 3 ：重新啟動控制器
 
 更換I/O模組之後、您必須重新啟動控制器模組。
@@ -236,6 +239,7 @@ NOTE: 完成轉換後、請務必結束維護模式。
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

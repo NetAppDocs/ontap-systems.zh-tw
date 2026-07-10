@@ -4,6 +4,7 @@
 
 
 
+[[step-1-boot-the-controllers-and-give-back-the-controllers]]
 == 步驟 1 ：啟動控制器，然後將控制器交回
 
 控制器重新開機後，請啟動 ONTAP ，然後將控制器交回。
@@ -55,6 +56,7 @@ NOTE: 以下命令僅在診斷模式權限等級下可用。
 
 
 
+[[step-2-verify-storage-system-health]]
 == 步驟 2 ：驗證儲存系統健全狀況
 
 控制器歸還儲存後，使用 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor["Active IQ Config Advisor"]。
@@ -66,6 +68,7 @@ NOTE: 以下命令僅在診斷模式權限等級下可用。
 
 
 
+[[step-3-return-the-failed-part-to-netapp]]
 == 步驟3：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

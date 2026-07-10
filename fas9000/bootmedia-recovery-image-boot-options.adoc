@@ -17,6 +17,7 @@ summary: 從恢復映像啟動受損節點的步驟取決於系統是否處於�
 
 
 
+[[option-1-boot-the-recovery-image-in-most-systems]]
 == 選項 1 ：在大多數系統中開機恢復映像
 
 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系統、並驗證環境變數。
@@ -134,6 +135,7 @@ date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state
 
 
 
+[[option-2-boot-the-recovery-image-in-a-two-node-metrocluster-configuration]]
 == 選項2：以雙節點MetroCluster 的功能組態來開機恢復映像
 
 您必須從ONTAP USB磁碟機開機支援的影像、並驗證環境變數。

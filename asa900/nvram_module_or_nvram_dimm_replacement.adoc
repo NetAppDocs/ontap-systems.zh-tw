@@ -34,6 +34,7 @@ NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -170,6 +171,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 ====
 
 
+[[step-2-replace-the-nvram-module]]
 == 步驟2：更換NVRAM模組
 
 若要裝回NVRAM模組、請將其置於機箱的插槽6中、然後依照特定的步驟順序進行。
@@ -246,6 +248,7 @@ DIMM和DIMM彈出卡舌
 
 
 
+[[step-3-replace-a-nvram-dimm]]
 == 步驟3：更換NVRAM DIMM
 
 若要更換NVRAM模組中的NVRAM DIMM、您必須移除NVRAM模組、開啟模組、然後更換目標DIMM。
@@ -323,6 +326,7 @@ DIMM和DIMM彈出卡舌
 
 
 
+[[step-4-reboot-the-controller]]
 == 步驟 4 ：重新啟動控制器
 
 更換FRU之後、您必須重新啟動控制器模組。
@@ -332,6 +336,7 @@ DIMM和DIMM彈出卡舌
 
 
 
+[[step-5-reassign-disks]]
 == 步驟5：重新指派磁碟
 
 您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
@@ -434,6 +439,7 @@ dr-group-id            cluster node           configuration-state
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

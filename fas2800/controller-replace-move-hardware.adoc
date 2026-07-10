@@ -17,6 +17,7 @@ summary: 若要更換控制器模組硬體、您必須移除受損的控制器�
 video::c83a3301-3161-4d65-86e8-af540147576a[panopto]
 
 
+[[step-1-remove-controller-module]]
 == 步驟1：移除控制器模組
 
 從機箱中卸下受損的控制器模組。
@@ -51,6 +52,7 @@ image::../media/icon_round_1.png[編號 1]
 |===
 
 
+[[step-2-move-the-nvmem-battery]]
 == 步驟2：搬移NVMEM電池
 
 從受損的控制器模組中取出 NVMEM 電池、然後將其安裝到更換的控制器模組中。
@@ -98,6 +100,7 @@ NOTE: 請勿插入電池。  將其餘元件移至替換控制器模組後、您
 
 
 
+[[step-3-remove-the-mezzanine-card]]
 == 步驟 3 ：卸下夾層卡
 
 從受損的控制器模組中取出 IO 板和 PCIe 夾層卡。
@@ -132,6 +135,7 @@ NOTE: 您可以用手指或螺絲起子鬆開指旋螺絲。
 
 
 
+[[step-4-move-the-boot-media]]
 == 步驟4：移動開機媒體
 
 從受損的控制器模組中取出開機媒體、並將其安裝在替換的控制器模組中。
@@ -175,6 +179,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 
 
 
+[[step-5-install-the-mezzanine-card-in-the-replacement-controller]]
 == 步驟 5 ：在更換的控制器中安裝夾層卡
 
 在更換的控制器模組中安裝夾層卡。
@@ -191,6 +196,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 
 
 
+[[step-6-move-the-dimms]]
 == 步驟6：移動DIMM
 
 從受損的控制器模組中取出 DIMM 、然後將其安裝到更換的控制器模組中。
@@ -250,6 +256,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-7-move-a-caching-module]]
 == 步驟 7 ：移動快取模組
 
 從受損的控制器模組中移除快取模組、將其安裝到更換的控制器模組中。
@@ -295,6 +302,7 @@ NOTE: 如果很難插入電池、請從控制器模組中取出電池、插入�
 
 
 
+[[step-8-install-the-nv-battery]]
 == 步驟 8 ：安裝 NV 電池
 
 將 NV 電池安裝到更換的控制器模組中。
@@ -310,6 +318,7 @@ NOTE: 如果很難插入電池、請從控制器模組中取出電池、插入�
 
 
 
+[[step-9-install-the-controller]]
 == 步驟 9 ：安裝控制器
 
 將更換的控制器模組安裝到系統機箱中、然後啟動 ONTAP 。

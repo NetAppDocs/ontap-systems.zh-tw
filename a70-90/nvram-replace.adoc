@@ -22,6 +22,7 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -168,12 +169,16 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 ====
 
 
+[[step-2-replace-the-nvram-module-or-nvram-dimm]]
 == 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
 
 使用適當的選項更換NVRAM模組或NVRAM DIMM。
 
 
 CAUTION: 在安裝和維護過程中，請務必配戴連接至已驗證接地點的接地腕帶。未採取正確的 ESD 防護措施可能會對控制器節點、儲存架和網路交換器造成永久性損壞。
+
+
+WARNING: NVRAM 模組不支援熱插拔。更換前，請重新安裝硬碟，關閉節點，拔掉控制器電源，並將控制器從機殼中拉出幾英寸。
 
 [role="tabbed-block"]
 ====
@@ -298,7 +303,7 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 --
 .選項 2 ：更換 NVRAM DIMM
 --
-若要更換 NVRAM 模組中的 NVRAM DIMM ，必須先卸下 NVRAM 模組，然後更換目標 DIMM 。
+若要更換 NVRAM 模組中的 NVRAM DIMM，首先必須卸下 NVRAM 模組，然後更換目標 DIMM。
 
 . 如果您尚未接地、請正確接地。
 . 請用拇指推動每個磁碟機，直到您感覺到正向停止為止，以確保機箱中的所有磁碟機都穩固地安裝在中間背板上。
@@ -370,7 +375,9 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[取下 NVRAM12 
 
  a| 
 image:../media/icon_round_1.png["編號 1"]
-| CAM 鎖定按鈕 
+ a| 
+CAM 鎖定按鈕
+
 
 
  a| 
@@ -422,6 +429,7 @@ NOTE: 如果您有直流電源，請將電源塊重新連接到電源。
 ====
 
 
+[[step-3-reassign-disks]]
 == 步驟3：重新指派磁碟
 
 您必須在開機控制器時確認系統 ID 變更、然後確認變更已實作。
@@ -455,8 +463,10 @@ node2             node1             -            Waiting for giveback (HA mailbo
 ----
 . 退回控制器：
 +
-.. 從健康的控制器中，歸還被替換的控制器的儲存空間：+
+.. 從健康的控制器，將已更換控制器的儲存設備歸還：
++
 `storage failover giveback -ofnode replacement_node_name`
+
 +
 控制器會恢復其儲存設備並完成開機。
 
@@ -547,6 +557,7 @@ dr-group-id            cluster node           configuration-state
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

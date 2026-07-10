@@ -24,6 +24,7 @@ summary: 若要更換PCIe或夾層卡、您必須從插卡上拔下纜線和任�
 video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto]
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 .開始之前
@@ -88,6 +89,7 @@ network port ifgrp show -node _impaired_node_name_
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 拆下控制器模組及其護蓋。
@@ -122,6 +124,7 @@ image::../media/icon_round_1.png[編號 1]
 |===
 
 
+[[step-3-replace-the-mezzanine-card]]
 == 步驟 3 ：更換夾層卡
 
 更換夾層卡。
@@ -170,6 +173,7 @@ NOTE: 您可以用手指或螺絲起子鬆開指旋螺絲。如果您使用手�
 
 
 
+[[step-4-install-and-reboot-the-controller-module]]
 == 步驟 4：安裝並重新啟動控制器模組
 
 重新安裝並重新啟動控制器模組。
@@ -238,6 +242,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 ====
 
 
+[[step-6-return-the-controller-to-normal-operation]]
 == 步驟 6：將控制器恢復正常運作
 
 將儲存設備歸還給受損的控制器、還原自動歸還、並結束 AutoSupport 維護時段。
@@ -249,6 +254,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-7-return-the-failed-part-to-netapp]]
 == 步驟7：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

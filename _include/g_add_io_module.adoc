@@ -24,12 +24,14 @@
 
 
 
+[[option-1-add-io-modules-to-a-storage-system-with-available-slots]]
 == 選項 1 ：將 I/O 模組新增至具有可用插槽的儲存系統
 
 您可以將 I/O 模組新增至每個控制器的可用插槽中。
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 === 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -161,6 +163,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 ====
 
 
+[[step-2-add-io-modules-to-available-slots]]
 === 步驟 2 ：將 I/O 模組新增至可用的插槽
 
 . 如果您尚未接地、請正確接地。
@@ -215,6 +218,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[option-2-add-io-modules-in-a-storage-system-with-unavailable-slots]]
 == 選項 2 ：在具有不可用插槽的儲存系統中新增 I/O 模組
 
 您可以移除現有的 I/O 模組，並以不同的 I/O 模組取代，將 I/O 模組新增至完全填入的儲存系統。
@@ -250,6 +254,7 @@ NIC I/O模組、連接埠較少
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 === 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -381,6 +386,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 ====
 
 
+[[step-2-add-io-modules-to-unavailable-slots]]
 === 步驟 2 ：將 I/O 模組新增至無法使用的插槽
 
 . 如果您尚未接地、請正確接地。

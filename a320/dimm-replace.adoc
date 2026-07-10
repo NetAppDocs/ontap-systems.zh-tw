@@ -19,6 +19,7 @@ summary: 當系統偵測到越來越多的可修正錯誤修正代碼或不可�
 
 
 
+[[step-1-shut-down-the-controller]]
 == 步驟1：關閉控制器
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
@@ -89,6 +90,7 @@ summary: 當系統偵測到越來越多的可修正錯誤修正代碼或不可�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
@@ -119,6 +121,7 @@ image::../media/drw_a320_controller_remove_animated_gif.png[卸下控制器]
 
 
 
+[[step-3-replace-system-dimms]]
 == 步驟3：更換系統DIMM
 
 更換系統DIMM時、需要透過相關的錯誤訊息來識別目標DIMM、使用通風管上的FRU對應來找出目標DIMM、然後更換DIMM。
@@ -175,6 +178,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-4-install-the-controller-module]]
 == 步驟4：安裝控制器模組
 
 更換控制器模組中的元件之後、您必須將控制器模組重新安裝到機箱中。
@@ -215,6 +219,7 @@ NOTE: 鎖定機制臂滑入機箱。
 
 
 
+[[step-5-restore-the-controller-module-to-operation]]
 == 步驟5：將控制器模組還原為運作狀態
 
 您必須重新設計系統、歸還控制器模組、然後重新啟用自動恢復功能。
@@ -229,6 +234,7 @@ NOTE: 鎖定機制臂滑入機箱。
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

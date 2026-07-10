@@ -22,6 +22,7 @@ summary: 當您的 afx 2k 儲存系統中的 I/O 模組發生故障或需要升�
 
 
 
+[[step-1-shut-down-the-impaired-node]]
 == 步驟1：關閉受損節點
 
 關閉或接管受損的控制器。
@@ -79,6 +80,7 @@ _-halt true_ 參數將受損節點帶入 LOADER 提示符。
 
 
 
+[[step-2-replace-a-failed-io-module]]
 == 步驟 2 ：更換故障 I/O 模組
 
 若要更換 I/O 模組、請在機箱內找到該模組、然後依照特定步驟順序進行。
@@ -136,6 +138,7 @@ I/O CAM 閂鎖
 
 
 
+[[step-3-reboot-the-controller]]
 == 步驟 3 ：重新啟動控制器
 
 更換 I/O 模組之後，您必須重新啟動控制器。
@@ -193,6 +196,7 @@ NOTE: 以下命令僅在診斷模式權限等級下可用。
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟4：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

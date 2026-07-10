@@ -15,6 +15,7 @@ summary: 本節提供安裝系統的詳細逐步說明。
 
 
 
+[[step-1-prepare-for-installation]]
 == 步驟1：準備安裝
 
 若要安裝系統、您需要建立帳戶並註冊系統。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
@@ -143,6 +144,7 @@ image:../media/oie_cable_power.png["電源線"]
 
 
 
+[[step-2-install-the-hardware]]
 == 步驟2：安裝硬體
 
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
@@ -163,6 +165,7 @@ image::../media/drw_affa250_weight_caution.png[兩人提舉注意事項]
 
 
 
+[[step-3-cable-controllers-to-cluster]]
 == 步驟 3 ：將控制器連接至叢集
 
 使用雙節點無交換器叢集方法或使用叢集互連網路方法、將控制器連接至叢集。
@@ -244,6 +247,7 @@ image::../media/drw_affa250_mgmt_cabling.png[管理連接埠纜線]
 ====
 
 
+[[step-4-cable-to-host-network-or-storage-optional]]
 == 步驟 4 ：連接主機網路或儲存設備的纜線（選用）
 
 您可以選擇是否要連接至光纖通道或iSCSI主機網路或直接附加儲存設備、以設定為相依。這種佈線並非專屬、您可以使用佈線連接至主機網路和儲存設備。
@@ -336,6 +340,7 @@ image:../media/drw_affa250_1shelf_cabling_b.png["控制器 B 纜線"]
 ====
 
 
+[[step-5-complete-system-setup]]
 == 步驟 5 ：完成系統設定
 
 只要連線到交換器和筆記型電腦、或直接連線到系統中的控制器、然後連線到管理交換器、就能使用叢集探索來完成系統設定和組態。

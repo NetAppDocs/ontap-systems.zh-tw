@@ -15,6 +15,7 @@ summary: 本頁提供安裝一般 NetApp 系統的詳細逐步指示。
 
 
 
+[[step-1-prepare-for-installation]]
 == 步驟1：準備安裝
 
 若要安裝 AFF A220 系統、您必須在 NetApp 支援網站 上建立帳戶、註冊系統、並取得授權金鑰。您也需要為系統庫存適當數量和類型的纜線、並收集特定的網路資訊。
@@ -167,6 +168,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002["叢集組態工�
 
 
 
+[[step-2-install-the-hardware]]
 == 步驟2：安裝硬體
 
 您需要在4柱機架或NetApp系統機櫃中（視情況而定）安裝系統。
@@ -190,12 +192,14 @@ image::../media/drw_cable_management_arm_install.png[連接纜線管理裝置]
 
 
 
+[[step-3-cable-controllers-to-your-network]]
 == 步驟3：將控制器連接至網路
 
 您可以使用雙節點無交換式叢集方法或使用叢集互連網路、將控制器連接至網路。
 
 
 
+[[option-1-cable-a-two-node-switchless-cluster-unified-network-configuration]]
 === 選項1：連接雙節點無交換式叢集的纜線、統一化網路組態
 
 控制器上的管理網路、UTA2資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
@@ -272,6 +276,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 
 
+[[option-2-cable-a-switched-cluster-unified-network-configuration]]
 === 選項2：連接交換式叢集、統一化網路組態
 
 控制器上的管理網路、UTA2資料網路和管理連接埠均連接至交換器。叢集互連連接埠已連接至叢集互連交換器。
@@ -349,6 +354,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 
 
+[[option-3-cable-a-two-node-switchless-cluster-ethernet-network-configuration]]
 === 選項3：連接雙節點無交換式叢集、乙太網路組態
 
 控制器上的管理網路、乙太網路資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
@@ -413,6 +419,7 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 
 
+[[option-4-cable-a-switched-cluster-ethernet-network-configuration]]
 === 選項4：纜線交換式叢集、乙太網路組態
 
 控制器上的管理網路、乙太網路資料網路和管理連接埠均連接至交換器。叢集互連連接埠已連接至叢集互連交換器。
@@ -475,12 +482,14 @@ image:../media/oie_legend_icon_attn_symbol.png["注意符號"]
 
 
 
+[[step-4-cable-controllers-to-drive-shelves]]
 == 步驟4：連接磁碟機櫃的纜線控制器
 
 您必須使用內建儲存連接埠將控制器連接至機櫃。NetApp建議使用MP-HA纜線來連接具有外部儲存設備的系統。如果您有SAS磁帶機、可以使用單一路徑纜線。如果您沒有外部磁碟櫃、如果系統隨附SAS纜線、則可選擇（未顯示）連接至內部磁碟機的MP-HA纜線。
 
 
 
+[[option-1-cable-storage-on-an-ha-pair-with-external-drive-shelves]]
 === 選項1：HA與外部磁碟機櫃配對上的纜線儲存設備
 
 您必須將機櫃對機櫃連接纜線、然後將兩個控制器纜線連接至磁碟機櫃。
@@ -551,12 +560,14 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png["Mini-SAS 對 Mini-SAS �
 
 
 
+[[step-5-complete-system-setup-and-configuration]]
 == 步驟5：完成系統設定與組態設定
 
 您只需連線至交換器和筆記型電腦、或直接連線至系統中的控制器、然後連線至管理交換器、即可使用叢集探索功能完成系統設定和組態。
 
 
 
+[[option-1-complete-system-setup-if-network-discovery-is-enabled]]
 === 選項1：如果已啟用網路探索、請完成系統設定
 
 如果您的筆記型電腦已啟用網路探索功能、您可以使用自動叢集探索來完成系統設定與組態。
@@ -610,6 +621,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南�
 
 
 
+[[option-2-completing-system-setup-and-configuration-if-network-discovery-is-not-enabled]]
 === 選項2：如果未啟用網路探索、請完成系統設定與組態
 
 如果您的筆記型電腦未啟用網路探索、您必須使用此工作完成組態設定。

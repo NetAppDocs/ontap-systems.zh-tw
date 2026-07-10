@@ -15,6 +15,7 @@ summary: AFF A70儲存系統的主要規格
 
 
 
+[[key-specifications-for-aff-a70]]
 === AFF A70的主要規格
 
 平台配置： AFF A70單機箱 HA 對
@@ -33,6 +34,7 @@ PCIe 擴充槽：18
 
 
 
+[[scaleout-maximums]]
 === 橫向擴展最大值
 
 * NAS：12 個 HA 對，79.3 PB / 70.4 PiB 原始容量，3072 GB 最大內存
@@ -42,6 +44,7 @@ PCIe 擴充槽：18
 
 
 
+[[io]]
 === 輸入輸出
 
 
@@ -74,12 +77,14 @@ PCIe 擴充槽：18
 
 
 
+[[storage-networking-supported]]
 === 支援的儲存網絡
 
 CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4/RDMA；NVMe/FC；NVMe/TCP；S3；附 NAS 的 S3；SMB 2.0；SMB 2.1；
 
 
 
+[[system-environment-specifications]]
 === 系統環境規格
 
 * 典型功率：6938 BTU/小時
@@ -95,6 +100,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4
 
 
 
+[[compliance]]
 === 遵守
 
 * EMC/EMI 認證：AMCA、FCC、ICES、KC、摩洛哥、VCCI
@@ -107,6 +113,7 @@ CIFS；FC；iSCSI；NFS v3；NFS v4.0；NFS v4.1；NFS v4.2；NFSv3/RDMA；NFSv4
 
 
 
+[[high-availability]]
 === 高可用性
 
 基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；[//] 2025-10-15 ontap-systems-internal/issues/1357

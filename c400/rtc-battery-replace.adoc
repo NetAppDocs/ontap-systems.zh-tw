@@ -21,6 +21,7 @@ summary: 您可以更換控制器模組中的即時時鐘（RTc）電池、讓�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。
@@ -193,6 +194,7 @@ mcc1A::> metrocluster operation show
 ====
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 若要存取控制器模組內部的元件、您必須從機箱中移除控制器模組。
@@ -238,6 +240,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-the-rtc-battery]]
 == 步驟3：更換RTC電池
 
 您需要在控制器模組內找到RTC電池、然後依照特定的步驟順序進行。請參閱控制器模組內的FRU對應圖、以瞭解RTC電池的位置。
@@ -297,6 +300,7 @@ NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加�
 
 
 
+[[step-4-reinstall-the-controller-module-and-setting-timedate-after-rtc-battery-replacement]]
 == 步驟4：重新安裝控制器模組、並設定更換RTC電池後的時間/日期
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、重設控制器上的時間和日期、然後將其開機。
@@ -349,6 +353,7 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
+[[step-5-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
 == 步驟5：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
@@ -405,6 +410,7 @@ Remote: cluster_A configured      		normal
 
 
 
+[[step-6-return-the-failed-part-to-netapp]]
 == 步驟6：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

@@ -22,6 +22,7 @@ summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 關閉或接管受損的控制器。
@@ -94,6 +95,7 @@ summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上�
 
 
 
+[[step-2-remove-the-controller-module]]
 == 步驟2：移除控制器模組
 
 更換控制器模組或更換控制器模組內部的元件時、您必須從機箱中移除控制器模組。
@@ -182,6 +184,7 @@ image:../media/icon_round_2.png["編號 2"]
 
 
 
+[[step-3-replace-the-pcie-card]]
 == 步驟 3：更換 PCIe 卡
 
 更換 PCIe 卡時，請先移除目標轉接卡上 PCIe 卡埠的線纜和所有 QSFP 和 SFP，然後從控制器模組上移除轉接卡，移除並更換 PCIe 卡，再將轉接卡和所有 QSFP 和 SFP 重新安裝到連接埠上，最後重新連接連接埠線。
@@ -331,6 +334,7 @@ NOTE: 請確定插卡完全且正面地插入擴充卡插槽。
 
 
 
+[[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
 重新安裝控制器模組、然後重新啟動。
@@ -379,6 +383,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

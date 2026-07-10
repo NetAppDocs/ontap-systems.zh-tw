@@ -34,6 +34,7 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[纜線拉式彈片�
 
 
 
+[[step-1-connect-the-storage-controllers-to-your-network]]
 == 步驟 1 ：將儲存控制器連接到您的網路
 
 將控制器連接至 ONTAP 叢集。此程序會因您的儲存系統機型和 I/O 模組組組態而異。
@@ -84,6 +85,7 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[將叢集連�
 ====
 
 
+[[step-2-cable-the-host-network-connections]]
 == 步驟 2 ：連接主機網路連線
 
 將乙太網路模組連接埠連接到主機網路。
@@ -119,6 +121,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[連接至 100Gb 乙太
 
 
 
+[[step-3-cable-the-management-network-connections]]
 == 步驟 3 ：連接管理網路連線
 
 使用 1000BASE-T RJ-45 纜線，將每個控制器上的管理（扳手）連接埠連接到管理網路交換器。
@@ -134,6 +137,7 @@ IMPORTANT: 請勿插入電源線。
 
 
 
+[[step-4-cable-the-shelf-connections]]
 == 步驟 4 ：連接機櫃連接線
 
 以下佈線程序說明如何將控制器連接至儲存櫃。請選擇符合您設定的下列其中一個纜線選項。

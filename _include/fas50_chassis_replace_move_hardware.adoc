@@ -4,6 +4,7 @@
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
@@ -14,6 +15,7 @@
 
 
 
+[[step-1-remove-the-controller]]
 == 步驟1：移除控制器
 
 更換控制器或更換控制器內部的元件時，您必須從機箱中移除控制器。
@@ -125,6 +127,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-2-remove-the-caching-modules-from-the-impaired-chassis]]
 == 步驟 2 ：從受損機箱中移除快取模組
 
 您需要從損壞的機箱中移除任何快取模組和磁碟機擋片，以便稍後在程序中安裝它們到更換的機箱中。
@@ -170,6 +173,7 @@ image::../media/icon_round_3.png[編號 3]
 
 
 
+[[step-3-replace-the-chassis-from-within-the-equipment-rack-or-system-cabinet]]
 == 步驟 3 ：從設備機架或系統機櫃內更換機箱
 
 您可以從設備機架或系統機櫃中移除受損的機箱，安裝替換機箱，安裝控制器，安裝任何快取模組和磁碟機擋片，然後安裝擋板。
@@ -189,6 +193,7 @@ NOTE: 如果儲存系統是隨附於 NetApp 系統機櫃中，則必須先卸下
 
 
 
+[[step-4-install-the-controllers]]
 == 步驟4：安裝控制器
 
 將控制器安裝到更換的機箱中，然後重新啟動。

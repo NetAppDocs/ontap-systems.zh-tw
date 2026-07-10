@@ -11,6 +11,7 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 
 
 
+[[step-1-shut-down-the-impaired-controller]]
 == 步驟1：關閉受損的控制器
 
 使用下列其中一個選項來關閉或接管受損的控制器。
@@ -157,6 +158,7 @@ NVRAM 模組包含 NVRAM12 硬體和現場可更換的 DIMM 。您可以更換�
 ====
 
 
+[[step-2-replace-the-nvram-module-or-nvram-dimm]]
 == 步驟 2 ：更換 NVRAM 模組或 NVRAM DIMM
 
 使用下列適當選項更換 NVRAM 模組或 NVRAM DIMM 。
@@ -262,6 +264,7 @@ NOTE: 請參閱 NVRAM 模組側邊的 FRU 對應標籤、以判斷 DIMM 插槽 1
 ====
 
 
+[[step-3-reboot-the-controller]]
 == 步驟 3 ：重新啟動控制器
 
 更換 FRU 後，必須將電源線重新插入 PSU 來重新啟動控制器模組。
@@ -279,6 +282,7 @@ NOTE: 請參閱 NVRAM 模組側邊的 FRU 對應標籤、以判斷 DIMM 插槽 1
 
 
 
+[[step-4-reassign-disks]]
 == 步驟4：重新指派磁碟
 
 您必須在開機控制器時確認系統 ID 變更、然後確認變更已實作。
@@ -382,6 +386,7 @@ dr-group-id            cluster node           configuration-state
 
 
 
+[[step-5-return-the-failed-part-to-netapp]]
 == 步驟5：將故障零件歸還給NetApp
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。
