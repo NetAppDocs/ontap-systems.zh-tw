@@ -1,7 +1,7 @@
 ---
 permalink: a70-90/install-cable.html 
 sidebar: sidebar 
-keywords: aff a70, aff a90, prepare installation 
+keywords: aff a70, aff a90, prepare installation, cable the hardware 
 summary: 為 AFF A70 或 AFF A90 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並將纜線連接至控制器和儲存櫃。 
 ---
 = 連接硬體纜線 - AFF A70 和 AFF A90
@@ -20,7 +20,7 @@ summary: 為 AFF A70 或 AFF A90 儲存系統安裝機架硬體後、請安裝�
 * 這些程序顯示一般組態。具體的佈線取決於您的儲存系統所訂購的元件。如需完整的組態和插槽優先順序詳細資料、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
 * AFF A70 和 AFF A90 控制器上的 I/O 插槽編號為 1 至 11 。
 +
-image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[FAS70 和 FAS90 控制器上的插槽編號]
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[AFF A70 和 AFF A90 控制器上的插槽編號]
 
 * 將連接器插入連接埠時，纜線連接器拉片上的箭頭圖示會顯示正確的方向（上或下）。
 +
@@ -34,8 +34,8 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[纜線拉式彈片�
 
 
 
-[[step-1-connect-the-storage-controllers-to-your-network]]
-== 步驟 1 ：將儲存控制器連接到您的網路
+[[step-1-cable-the-clusterha-connections]]
+== 步驟 1 ：連接叢集 / HA 連線
 
 將控制器連接至 ONTAP 叢集。此程序會因您的儲存系統機型和 I/O 模組組組態而異。
 
@@ -46,7 +46,7 @@ NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
 ====
 .無交換器叢集纜線
 --
-使用叢集 /HA 互連纜線、將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。
+使用叢集 /HA 互連纜線將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。
 
 .步驟
 . 將控制器 A 上的連接埠 e1a 連接到控制器 B 上的連接埠 e1a
@@ -65,7 +65,7 @@ image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[雙節點無交換
 --
 .交換式叢集纜線
 --
-使用 100 GbE 電纜將控制器 A 和 B 連接埠 e1a 和 e7a 連接到叢集網路交換器 A 和 B。
+使用 100 GbE 電纜將控制器 A 和 B 的 e1a 和 e7a 連接埠連接到叢集網路交換器 A 和 B。
 
 .步驟
 . 將控制器 A 上的連接埠 e1a 和控制器 B 上的連接埠 e1a 連接至叢集網路交換器 A
@@ -90,13 +90,13 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[將叢集連�
 
 將乙太網路模組連接埠連接到主機網路。
 
-以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
+以下是一些典型的主機網路佈線範例。請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以瞭解您的特定系統組態。
 
 .步驟
 . 將連接埠 e9a 和 e9b 連接至乙太網路資料網路交換器。
 +
 
-NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。使用單獨的主機卡。
+NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。請使用獨立的主機網路卡。
 
 +
 *100 GbE 纜線 *
@@ -105,9 +105,9 @@ NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。使用單獨�
 image::../media/oie_cable_sfp_gbe_copper.png[100Gb 乙太網路纜線]
 
 +
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[連接至 100 Gb 乙太網路的纜線]
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[連接至 100Gb 乙太網路的纜線]
 
-. 連接 10/25 GbE 主機網路交換器。
+. 將您的 10/25 GbE 網路卡連接到主機網路交換器。
 +
 *4 個連接埠、 10/25 GbE 主機 *
 
@@ -115,7 +115,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[連接至 100 Gb 乙�
 image::../media/oie_cable_sfp_gbe_copper.png[10/25 GB 纜線]
 
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[連接至 100Gb 乙太網路的纜線]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[連接到 10/25Gb 乙太網路的纜線]
 
 
 
@@ -145,7 +145,7 @@ IMPORTANT: 請勿插入電源線。
 如需儲存系統支援的最大機櫃數量以及所有纜線選項link:https://hwu.netapp.com["NetApp Hardware Universe"^]，請參閱。
 
 .關於這項工作
-AFF A70 和 90 儲存系統支援具有 NSM100 或 NSM100B 模組的 NS224 架。模組之間的主要區別是：
+AFF A70 和 AFF A90 儲存系統支援配備 NSM100 或 NSM100B 模組的 NS224 機架。這兩個模組的主要差異在於：
 
 * NSM100 機架模組使用內建連接埠 e0a 和 e0b。
 * NSM100B 架模組使用插槽 1 中的連接埠 e1a 和 e1b。
@@ -165,7 +165,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 銅線]
 
 .步驟
 . 將控制器 A 連接埠 e11a 連接至 NSM A 連接埠 e0a 。
-. 將控制器 A 連接埠 e11b 連接至連接埠 NSM B 連接埠 e0b 。
+. 將控制器 A 連接埠 e11b 連接至 NSM B 連接埠 e0b。
 +
 image:../media/drw_a70-90_1shelf_cabling_a_ieops-1731.svg["將控制器 A e11a 和 e11b 移至單一 NS224 機櫃"]
 
@@ -189,9 +189,9 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 銅線]
 . 在控制器 A 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至機櫃 1 、 NSM A 連接埠 e0a 。
-.. 將連接埠 e11b 連接至機櫃 2 、 NSM B 連接埠 e0b 。
-.. 將連接埠 e8a 連接至機櫃 2 、 NSM A 連接埠 e0a 。
 .. 將連接埠 e8b 連接至機櫃 1 、 NSM B 連接埠 e0b 。
+.. 將連接埠 e8a 連接至機櫃 2 、 NSM A 連接埠 e0a 。
+.. 將連接埠 e11b 連接至機櫃 2 、 NSM B 連接埠 e0b 。
 +
 image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["控制器 A 的控制器與機櫃連線"]
 
@@ -200,9 +200,9 @@ image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["控制器 A 的控制
 . 在控制器 B 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至機櫃 1 、 NSM B 連接埠 e0A 。
-.. 將連接埠 e11b 連接至機櫃 2 、 NSM A 連接埠 e0b 。
-.. 將連接埠 e8a 連接至機櫃 2 、 NSM B 連接埠 e0a 。
 .. 將連接埠 e8b 連接至機櫃 1 、 NSM A 連接埠 e0b 。
+.. 將連接埠 e8a 連接至機櫃 2 、 NSM B 連接埠 e0a 。
+.. 將連接埠 e11b 連接到機櫃 2，NSM A 連接埠 e0b。
 +
 image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg["控制器 B 的控制器與機櫃連線"]
 
@@ -213,4 +213,4 @@ image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg["控制器 B 的控制
 --
 ====
 .接下來呢？
-為 AFF A70 或 AFF A90 系統連接硬體之後link:install-power-hardware.html["開啟 AFF A70 或 AFF A90 儲存系統的電源"]，您就可以了。
+完成 AFF A70 或 AFF A90 系統的硬體佈線後，您link:install-power-hardware.html["開啟 AFF A70 或 AFF A90 儲存系統的電源"]。

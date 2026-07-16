@@ -1,7 +1,7 @@
 ---
 permalink: c80/install-cable.html 
 sidebar: sidebar 
-keywords: aff c80, prepare installation 
+keywords: aff c80, prepare installation, cable the hardware 
 summary: 控制器上的管理網路連接埠連接至交換器。兩個控制器上的HA互連和叢集互連連接埠均已連接好纜線。控制器模組若有訂購、則會連接至外部儲存設備。 
 ---
 = 連接硬體 - AFF C80
@@ -46,7 +46,7 @@ NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
 ====
 .無交換器叢集纜線
 --
-使用叢集 /HA 互連纜線、將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。
+使用叢集 /HA 互連纜線將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。
 
 .步驟
 . 將控制器 A 上的連接埠 e1a 連接到控制器 B 上的連接埠 e1a
@@ -58,7 +58,7 @@ NOTE: 叢集互連流量和 HA 流量共用相同的實體連接埠。
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[叢集 HA 纜線]
 
 +
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[雙節點無交換器叢集佈線圖]
+image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[雙節點無交換器叢集佈線圖]
 
 
 
@@ -73,9 +73,10 @@ image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[雙節點無交換�
 +
 *100 GbE 纜線 *
 
-
-
++
 image::../media/oie_cable100_gbe_qsfp28.png[100 GB 纜線]
+
+
 
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[將叢集連線連接至叢集網路]
 
@@ -88,13 +89,13 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[將叢集連�
 
 將乙太網路模組連接埠連接到主機網路。
 
-以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
+以下是一些典型的主機網路佈線範例。請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以瞭解您的特定系統組態。
 
 .步驟
 . 將連接埠 e9a 和 e9b 連接至乙太網路資料網路交換器。
 +
 
-NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。使用單獨的主機卡。
+NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。請使用獨立的主機網路卡。
 
 +
 *100 GbE 纜線 *
@@ -105,7 +106,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[100Gb 乙太網路纜線]
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[連接至 100Gb 乙太網路的纜線]
 
-. 連接 10/25 GbE 主機網路交換器。
+. 將您的 10/25 GbE 網路卡連接到主機網路交換器。
 +
 *4 個連接埠、 10/25 GbE 主機 *
 
@@ -142,6 +143,15 @@ IMPORTANT: 請勿插入電源線。
 
 如需儲存系統支援的最大機櫃數量以及所有纜線選項link:https://hwu.netapp.com["NetApp Hardware Universe"^]，請參閱。
 
+.關於這項工作
+AFF C80 儲存系統支援配備 NSM100 或 NSM100B 模組的 NS224 機櫃。這兩個模組的主要差異在於：
+
+* NSM100 機架模組使用內建連接埠 e0a 和 e0b。
+* NSM100B 架模組使用插槽 1 中的連接埠 e1a 和 e1b。
+
+
+以下佈線範例顯示了 NS224 機架中的 NSM100 模組（涉及機架模組連接埠）。
+
 [role="tabbed-block"]
 ====
 .選項 1 ：一個 NS224 儲存櫃
@@ -154,7 +164,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 銅線]
 
 .步驟
 . 將控制器 A 連接埠 e11a 連接至 NSM A 連接埠 e0a 。
-. 將控制器 A 連接埠 e11b 連接至連接埠 NSM B 連接埠 e0b 。
+. 將控制器 A 連接埠 e11b 連接至 NSM B 連接埠 e0b。
 +
 image:../media/drw_a70-90_1shelf_cabling_a_ieops-1731.svg["將控制器 A e11a 和 e11b 移至單一 NS224 機櫃"]
 
@@ -178,9 +188,9 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 銅線]
 . 在控制器 A 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至機櫃 1 、 NSM A 連接埠 e0a 。
-.. 將連接埠 e11b 連接至機櫃 2 、 NSM B 連接埠 e0b 。
-.. 將連接埠 e8a 連接至機櫃 2 、 NSM A 連接埠 e0a 。
 .. 將連接埠 e8b 連接至機櫃 1 、 NSM B 連接埠 e0b 。
+.. 將連接埠 e8a 連接至機櫃 2 、 NSM A 連接埠 e0a 。
+.. 將連接埠 e11b 連接至機櫃 2 、 NSM B 連接埠 e0b 。
 +
 image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["控制器 A 的控制器與機櫃連線"]
 
@@ -189,9 +199,9 @@ image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg["控制器 A 的控制
 . 在控制器 B 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至機櫃 1 、 NSM B 連接埠 e0A 。
-.. 將連接埠 e11b 連接至機櫃 2 、 NSM A 連接埠 e0b 。
-.. 將連接埠 e8a 連接至機櫃 2 、 NSM B 連接埠 e0a 。
 .. 將連接埠 e8b 連接至機櫃 1 、 NSM A 連接埠 e0b 。
+.. 將連接埠 e8a 連接至機櫃 2 、 NSM B 連接埠 e0a 。
+.. 將連接埠 e11b 連接到機櫃 2，NSM A 連接埠 e0b。
 +
 image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg["控制器 B 的控制器與機櫃連線"]
 

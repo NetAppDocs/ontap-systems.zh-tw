@@ -90,13 +90,13 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[將叢集連線�
 
 將乙太網路模組連接埠連接到主機網路。
 
-以下是一些典型的主機網路纜線範例。如需特定系統組態的詳細資訊、請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 。
+以下是一些典型的主機網路佈線範例。請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以瞭解您的特定系統組態。
 
 .步驟
 . 將連接埠 e9a 和 e9b 連接至乙太網路資料網路交換器。
 +
 
-NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。使用單獨的主機卡。
+NOTE: 請勿使用連接埠 e1b 和 e7b 進行主機網路連線。請使用獨立的主機網路卡。
 
 +
 *100 GbE 纜線 *
@@ -147,7 +147,7 @@ IMPORTANT: 請勿插入電源線。
 有關 SAS 機櫃佈線的其他指導，請參閱link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html["SAS 纜線規則與概念 - 配備 IOM12/ IOM12B 模組的機櫃"]。
 
 .關於這項工作
-FAS70 和 FAS90 儲存系統支援具有 NSM100 或 NSM100B 模組的 DS212C、DS224C、DS460C 和 NS224 架。
+FAS70 和 FAS90 儲存系統支援 DS212C、DS224C、DS460C 和 NS224 機櫃，並可搭配 NSM100 或 NSM100B 模組。
 
 NS224 模組之間的主要區別是：
 
@@ -171,7 +171,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 銅線]
 . 在控制器 A 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至 NSM A 連接埠 e0a 。
-.. 將連接埠 e11b 連接至連接埠 NSM B 連接埠 e0b 。
+.. 將連接埠 e11b 連接至 NSM B 連接埠 e0b。
 +
 image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg["將控制器 A e11a 和 e11b 移至單一 NS224 機櫃"]
 
@@ -201,24 +201,24 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 銅線]
 . 在控制器 A 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至機櫃 1 NSM A 連接埠 e0a 。
-.. 將連接埠 e11b 連接至機櫃 2 NSM B 連接埠 e0b 。
-.. 將連接埠 E10A 連接至機櫃 2 NSM A 連接埠 e0a 。
 .. 將連接埠 e10b 連接至機櫃 1 NSM B 連接埠 e0b。
-
-
+.. 將連接埠 E10A 連接至機櫃 2 NSM A 連接埠 e0a 。
+.. 將連接埠 e11b 連接至機櫃 2 NSM B 連接埠 e0b 。
 +
 image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg["纜線控制器 A 連接埠 e11a e11b E10A 和 e10b 至兩個 NS224 機櫃"]
+
+
 
 . 在控制器 B 上、連接下列連接埠：
 +
 .. 將連接埠 e11a 連接至機櫃 1 NSM B 連接埠 e0A 。
-.. 將連接埠 e11b 連接至機櫃 2 NSM a 連接埠 e0b 。
-.. 將連接埠 E10A 連接至機櫃 2 NSM B 連接埠 e0A 。
 .. 將連接埠 e10b 連接至機櫃 1 NSM a 連接埠 e0b 。
-
-
+.. 將連接埠 E10A 連接至機櫃 2 NSM B 連接埠 e0A 。
+.. 將連接埠 e11b 連接至機櫃 2 NSM a 連接埠 e0b 。
 +
 image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg["纜線控制器 B 連接埠 e11a e11b E10A 和 e10b 至兩個 NS224 機櫃"]
+
+
 
 
 

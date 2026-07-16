@@ -7307,11 +7307,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f133a8ed8a0b7a76b6c1b28bc00b0fb1" category="doc">更換 NVRAM - AFF A1K</block>
   <block id="5dae7574a50de0a82f041d98e2b363d4" category="doc">更換即時時鐘電池 - AFF A1K</block>
   <block id="1fba4a247f94ae0adebcaa57fd54e768" category="image-alt">纜線拉式彈片方向範例</block>
-  <block id="d4f534f2d370cb0f29178f31331b3536" category="image-alt">連接至 100 Gb 乙太網路的纜線</block>
   <block id="06d20f31fccdd7b31221a7b1e1ed37d1" category="image-alt">10/25 GB 纜線</block>
   <block id="95b007a39e5ec5c4d9b8e17f2ec0424d" category="image-alt">RJ45 纜線</block>
   <block id="9dcc8dc3a558729dc61c31c84e00c3e4" category="list-text">將控制器 A 連接埠 e11a 連接至 NSM A 連接埠 e0a 。</block>
-  <block id="918349807746744597338bfd03ce241f" category="list-text">將控制器 A 連接埠 e11b 連接至連接埠 NSM B 連接埠 e0b 。</block>
   <block id="956aab6b8733f2140ed524c12e37f4bd" category="paragraph"><block ref="956aab6b8733f2140ed524c12e37f4bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8861b3a8d06aef3022e3d2cfa014512" category="list-text">將控制器 B 連接埠 e11a 連接至 NSM B 連接埠 e0A 。</block>
   <block id="6a5052a8c54e3e46dc1452dcb9c98eaa" category="list-text">將控制器 B 連接埠 e11b 連接至 NSM A 連接埠 e0b 。</block>
@@ -7323,7 +7321,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3d76afb25e68cbf6ec448ba97c8d77a4" category="list-text">將連接埠 e8b 連接至機櫃 1 、 NSM B 連接埠 e0b 。</block>
   <block id="f574117739b3e8dc40831cbb75e78d7f" category="paragraph"><block ref="f574117739b3e8dc40831cbb75e78d7f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c74d901dd29a71ee51992bf6462dd04" category="list-text">將連接埠 e11a 連接至機櫃 1 、 NSM B 連接埠 e0A 。</block>
-  <block id="1e063e8299a01fcdf8268f46edf62dfe" category="list-text">將連接埠 e11b 連接至機櫃 2 、 NSM A 連接埠 e0b 。</block>
   <block id="a032a8830d9e7689c545a9f5d436568b" category="list-text">將連接埠 e8a 連接至機櫃 2 、 NSM B 連接埠 e0a 。</block>
   <block id="a7ac225913423b42ae7801d894de31c8" category="list-text">將連接埠 e8b 連接至機櫃 1 、 NSM A 連接埠 e0b 。</block>
   <block id="bf1f9977d76210449a57d0b526df80f9" category="paragraph"><block ref="bf1f9977d76210449a57d0b526df80f9" category="inline-image-macro-rx" type="image"></block></block>
@@ -7680,7 +7677,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ee6c90ad735c4fc892e900202d6ff034" category="list-text">使用叢集 /HA 互連纜線將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。</block>
   <block id="8637ca13eb3c1a10bb4383130268c950" category="list-text">將乙太網路模組連接埠連接到主機網路。</block>
   <block id="1cddeaef0a0b08b7178f9023a157d0fc" category="list-text">連接 10/25 GbE 主機網路交換器。</block>
-  <block id="bd078f69cc3533ea9bc3100deef482d0" category="list-text">使用叢集 /HA 互連纜線、將連接埠 e1a 連接至 e1a 、並將連接埠 e7a 連接至 e7a 。</block>
   <block id="cdc609c675d24b2fff8b5acc2e37e89e" category="list-text">在控制器 A 上、連接下列連接埠：</block>
   <block id="ab7ef1e990b02e4f310f950e86665f24" category="list-text">在控制器 B 上、連接下列連接埠：</block>
   <block id="9567b57fbc256ab6a2a904d9e65e90fc" category="paragraph">使用<block ref="2b7eb894c1625ebcb138cf06e4e24423" category="inline-link-rx"></block> 記錄叢集設定程序期間所需的值。如果提供預設值、您可以使用該值、或輸入自己的值。</block>
@@ -7805,7 +7801,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="bab1b3baab1e9940a2218c82b7dcca29" category="doc">連接硬體纜線 - AFF A70 和 AFF A90</block>
   <block id="129659531a7af0b8cc014b27db714e59" category="paragraph">為 AFF A70 或 AFF A90 儲存系統安裝機架硬體後、請安裝控制器的網路纜線、並將纜線連接至控制器和儲存櫃。</block>
   <block id="4303b29f12561a35dc71cb122558d909" category="inline-link-macro">開啟 AFF A70 或 AFF A90 儲存系統的電源</block>
-  <block id="f4e587df8e3873f191b7a2eaee7efc0d" category="paragraph">為 AFF A70 或 AFF A90 系統連接硬體之後<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="eaed2b50f9ac1d1c725b320e4c9f09e1" category="doc">安裝硬體： AFF A70 和 AFF A90</block>
   <block id="816bbd9f7f68bfea42f976bdd1e27e0d" category="paragraph">準備好安裝 AFF A70 或 AFF A90 儲存系統之後、請安裝系統的硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
   <block id="fd0f91da61deb35dbaf2ae06cc064cf2" category="inline-link-macro">為 AFF A70 或 AFF A90 儲存系統連接硬體纜線</block>
@@ -7930,8 +7925,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="0b38b0938783d2cf1b3800f66d5154c3" category="paragraph">爲 FAS70 或 FAS90 系統連接好硬件之後<block ref="9d70727ad16ec47c3b1ffe9fcd624399" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="a88ce76514a173cf2bddffce66860b3a" category="doc">安裝硬體： FAS70 和 FAS90</block>
   <block id="8f4b2475d7c4e7fd5a95811a1509212a" category="paragraph">準備好安裝 FAS70 或 FAS90 儲存系統之後、請為系統安裝硬體。首先、安裝軌道套件。然後在機櫃或電信機架中安裝並保護您的平台。</block>
-  <block id="6416cb7210c1cd9b1d9cc413f9b62376" category="inline-link-macro">為 FAS70 或 FAS90 儲存系統連接硬體。</block>
-  <block id="c9ecf6c24d42c6c195a5d283af95a0b4" category="paragraph">安裝 FAS70 或 FAS90 儲存系統的硬體之後<block ref="66229e533d818dbc7b41a3001638f04f" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="90bee630c9da2d7d494cda69da33a583" category="summary">按照以下高級步驟安裝和設置 FAS70 和 FAS90 存儲系統，並將其部署爲 ONTAP 系統中的節點。</block>
   <block id="9b2aaebbf51e1beb36472d0ce0cc3185" category="doc">安裝與組態工作流程： FAS70 與 FAS90</block>
   <block id="bedb87d7b2671b0ded93144a6ce3c345" category="paragraph">若要安裝和設定 FAS70 或 FAS90 系統、請檢閱硬體需求、準備站台、安裝硬體元件並連接纜線、開啟系統電源、以及設定 ONTAP 叢集。</block>
@@ -7944,12 +7937,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a817c10af381296411c154c716af48b7" category="inline-link-macro">開啟 FAS70 或 FAS90 儲存系統的電源</block>
   <block id="b2f6fbbaf5842fe5addbaac3aabc158d" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="164a6e7d5b74e1ce7eb1009b0b13e4f3" category="inline-link-macro-rx"></block></block>
   <block id="d9eb7005000baef74822bf5afd90707b" category="doc">開啟儲存系統電源： FAS70 和 FAS90</block>
-  <block id="f6d3448cfd45b6a4ae23d47aec38dd6f" category="paragraph">為 FAS70 0r FAS90 儲存系統安裝機架硬體、並安裝控制器和儲存櫃的纜線之後、您應該開啟儲存櫃和控制器的電源。</block>
   <block id="971e955dfe15e7503ed5654ed6ebd8e0" category="summary">準備安裝 FAS70 和 FAS90 平台。</block>
   <block id="03162faf493040269b3b60738c942373" category="doc">準備安裝： FAS70 和 FAS90</block>
   <block id="5c3b9df48b8876003c4bc9bef5a99d08" category="paragraph">準備安裝 FAS70 或 FAS90 儲存系統、方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
   <block id="c122f93f0a8c0d86fe624d89c395a42d" category="inline-link-macro">安裝 FAS70 或 FAS90 儲存系統的硬體</block>
-  <block id="9ed07b45e5e582647bc2df0721e7b250" category="paragraph">準備好安裝 FAS70 或 FAS90 硬體之後<block ref="8b675fcd81dca00f177be4137f647288" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="6a9167a5943a2edebb563033d742c92d" category="doc">安裝要求： FAS70 和 FAS90</block>
   <block id="9ab04ed2ca5bf9f3a53912fe8182bc26" category="paragraph">檢閱 FAS70 或 FAS90 儲存系統和儲存櫃所需的設備和提升注意事項。</block>
   <block id="831a011f3efcfa2b56239bdfd5507fdc" category="paragraph">FAS70 或 FAS90 儲存系統的重量可達 62.83 磅（ 28.5 公斤）。若要抬起系統、請使用兩個人或液壓舉升設備。</block>
@@ -9035,7 +9026,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="aa2e3ee65f05caaf497283a0ab483129" category="doc">準備安裝 - AFF C80</block>
   <block id="ae94559d673eaece00e4a335f4347e99" category="paragraph">準備好安裝 AFF C80 儲存系統的方法是準備好場地、打開箱子的包裝箱、將箱子的內容與裝箱單進行比較、並註冊系統以取得支援效益。</block>
   <block id="11b741b11d83e458037ddbfc832295ac" category="inline-link-macro">安裝 AFF C80 儲存系統的硬體</block>
-  <block id="09350f8e92a2072060400a04780b4504" category="paragraph">準備好安裝 AFF C80hardware 之後<block ref="5529a04db23aefcda96e168a6808eaee" category="inline-link-macro-rx"></block>，您就可以了。</block>
   <block id="ce16306562432372fadd2f97d4862648" category="summary">檢閱儲存系統和機櫃所需的設備和起重注意事項。</block>
   <block id="d74315adf12485d8310e758b0294275f" category="doc">安裝需求 - AFF C80</block>
   <block id="a36836ef1b3b8277e163c5017c4ab7f9" category="paragraph">檢閱 AFF C80 儲存系統和儲存櫃所需的設備和起重注意事項。</block>
@@ -9982,7 +9972,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="837c47c934f14522b94248f34ec495be" category="paragraph">您可以更換控制器中的即時時鐘（ RTC ）電池，讓儲存系統的服務和應用程式能夠繼續運作，而這些服務和應用程式則需仰賴精確的時間同步。</block>
   <block id="55eba7ecf8d7b61636e734c095e4ed8c" category="paragraph">請確定您的筆記型電腦已連接至序列主控台連接埠、且控制器已開啟電源。</block>
   <block id="91860a8cf69554e12c3e3a5720821c5a" category="list-text">您必須關閉每個 SAS 機櫃電源供應器的電源開關，等待適當的時間，然後重新開啟電源），機櫃 ID 才會生效。</block>
-  <block id="f5afd4b6c78c970d9b9f36473a81eb43" category="paragraph">DS460C 機櫃最重可達 260.4 磅（ 181.1 公斤）。若要抬起儲存架，您可能需要最多五個人或液壓舉升設備。請將所有元件保留在儲存櫃（前後）、以避免在機櫃重量上出現不均衡的情況。</block>
   <block id="33ae25491bd1a8a3daa58c3e044ddc6f" category="doc">將故障零件退回 NetApp - FAS50</block>
   <block id="cb898608072ab3625e9f94c0f82cbc2f" category="paragraph">如果 FAS50 系統中的元件故障，請將故障零件退回 NetApp 。如<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>需詳細資訊、請參閱頁面。</block>
   <block id="0277d6392a2af9f708f9e4369e630a19" category="summary">為了確保 FAS50 儲存系統的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
@@ -10072,7 +10061,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f3239a5f1291696246e54607fd3b9a01" category="paragraph">檢閱 FAS50 儲存系統的需求。</block>
   <block id="e56a8d138f62f4590eed5655df5c011f" category="paragraph">儲存系統最重可達 53.8 磅（ 24.4 公斤）。若要抬起儲存系統，請使用兩個人或液壓舉升設備。</block>
   <block id="9c48a8da7b0db1cca470b9010947185e" category="image-alt">FAS50 重量注意圖示</block>
-  <block id="af0319de88f3ed43d4ee4fb8b670c558" category="paragraph">DS460C 機櫃最重可達 260.4 磅（ 181.1 公斤）。若要抬起機架，您可能需要最多五個人或液壓起重。請將所有元件保留在機架中（前後），以避免機架重量不均衡。</block>
   <block id="26f561223ab76238a005189688efb525" category="doc">新增I/O模組- FAS50</block>
   <block id="c65fcc9bc376acee1b7dc4604e426776" category="doc">更換 I/O 模組： FAS50</block>
   <block id="651d5528b03e26465b5710deab4b18d5" category="doc">硬體維護總覽： FAS50</block>
@@ -10280,7 +10268,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="30898d03a4ca37450e8ab2be81f38dd5" category="list-text">NSM100B 模組使用插槽 1 中 I/O 模組上的連接埠 e1a 和 e1b。</block>
   <block id="e6c68585977f6b3e8b2b4ced88ca3d4d" category="list-text">NSM100 模組使用內建（板載）連接埠 e0a 和 e0b。</block>
   <block id="215caa644827ccfb864125e557ed29f2" category="list-text">使用儲存系統隨附的儲存電纜將每個控制器連接到 NS224 架上的每個 NSM 模組，儲存電纜可以是以下電纜類型：</block>
-  <block id="01bd09c5271f772a108914f35e7efcd3" category="paragraph">AFF A70 和 90 儲存系統支援具有 NSM100 或 NSM100B 模組的 NS224 架。模組之間的主要區別是：</block>
   <block id="2486a91e78743df4d0cc635c5b8b51c8" category="list-text">NSM100 機架模組使用內建連接埠 e0a 和 e0b。</block>
   <block id="a53b96fad1d9b45d4ddb6e31d5f14d63" category="paragraph">在物理更換受損的啟動介質後，您<block ref="dcb4deaaa5f388ac9dd740fbe37648be" category="inline-link-macro-rx"></block> 。</block>
   <block id="023d1fe5c37125b4e245d88460c90d81" category="summary">開始更換 ASA A20 ， ASA A30 和 ASA A50 儲存系統中的開機媒體，方法是檢閱更換需求，關閉受損的控制器，更換開機媒體，還原開機媒體上的映像，以及驗證系統功能。</block>
@@ -10351,7 +10338,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b4a3b44dc7350cb88f59a4a2eb7dda1d" category="sidebar">ASA C30 機箱</block>
   <block id="cb330090f109eb2fa5d8e0cb697b8627" category="sidebar">ASA C30 控制器模組</block>
   <block id="d6cf13e3e73df787bea3a13aaa745efd" category="sidebar">ASA C30 I/O 模組</block>
-  <block id="8fdc5ec3ff56b023a707d257557cb7c1" category="paragraph">FAS70 和 FAS90 儲存系統支援具有 NSM100 或 NSM100B 模組的 DS212C、DS224C、DS460C 和 NS224 架。</block>
   <block id="cb1d7f2de7963108d3fe1b590a415523" category="paragraph">NS224 模組之間的主要區別是：</block>
   <block id="a1c52b2edb23bc93318c0b82dc9baead" category="paragraph">以下 NS224 佈線範例顯示了 NS224 架中的 NSM100 模組（涉及架模組連接埠）。</block>
   <block id="e275ee75ac16491873bfc9c9d1565329" category="paragraph">將儲存資源的控制權交給更換控制器，讓 AFF A1K 系統恢復正常運作。復原過程會根據系統使用的加密類型而有所不同：無加密或板載金鑰管理員 (OKM) 加密。</block>
@@ -12673,7 +12659,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="5862e3059693b0ae5802e65d68b3df4c" category="list-text">使用<block ref="1cac34e5e8442fb80d6ade838d969fc0" prefix=" " category="inline-code"></block>命令。</block>
   <block id="06cc2a18a376ef6cef2529359a8c1853" category="list-text">在目標控制器上的 LOADER 提示字元下，使用<block ref="7e17e2b336dbdd66c2f45405573b53de" prefix=" " category="inline-code"></block>命令。</block>
   <block id="ab00fa9bfc395c69bcff64c78065914d" category="list-text">等待交還報告完成後五分鐘，然後檢查故障轉移和交還狀態：</block>
-  <block id="a58f4831d1e28d273ad0f645bcbb3725" category="paragraph">系統管理模組位於控制器背面第 8 個插槽的左側，包含用於系統管理的板載元件以及用於外部管理的連接埠。必須關閉目標控制器並斷電以更換損壞的系統管理模組或更換啟動介質。</block>
   <block id="2facfdec284e980f443264b431f4e8ac" category="list-text">用於 e0M 和BMC網路存取的 RJ45 乙太網路服務端口</block>
   <block id="5ddf9434bc54978c062928eafba9691f" category="list-text">移除連接到系統管理模組的所有電纜。標記電纜連接的位置，以便重新安裝模組時可以將它們重新連接到正確的連接埠。</block>
   <block id="c13821e7f076ae89484ef92cc7173b08" category="list-text">將系統管理模組放在防靜電墊上以存取啟動媒體。</block>
@@ -12971,8 +12956,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="057cab5a212fb0cce841ca14b2cfeda3" category="doc">熱插拔電源 - AFF A320</block>
   <block id="3bebfde8a4d27ae5e27f0cd50cf9a5de" category="doc">熱插拔電源 - AFF A400</block>
   <block id="30432b9617d110e91bb55e0ee6592cdb" category="paragraph">基於乙太網路的基板管理控制器 (BMC) 和ONTAP管理介面；冗餘熱插拔控制器；冗餘熱插拔電源；透過 SAS 連接對外部機架進行 SAS 帶內管理；[//] 2025-10-15 ontap-systems-internal/issues/1357</block>
-  <block id="3076b9da82c66ef1cac1e7179b746828" category="paragraph">使用 100 GbE 電纜將控制器 A 和 B 連接埠 e1a 和 e7a 連接到叢集網路交換器 A 和 B。</block>
-  <block id="92998a9e2d395c7927371ced81dc9182" category="admonition">請勿使用連接埠 e1b 和 e7b 進行主機網路連線。使用單獨的主機卡。</block>
   <block id="ec3eca6cbff6c81c2c7efdc9ca0afcf4" category="doc">熱插拔電源 - AFF A70和AFF A90</block>
   <block id="b61c2071102a270d16023e40ee5b949e" category="doc">熱插拔電源 - AFF A700</block>
   <block id="9fdca944f84d0d7c1dd5bec5b33c4dad" category="doc">熱插拔電源 - AFF A700s</block>
@@ -15242,4 +15225,27 @@ SFP+ （目標 / 啟動器）</block>
   <block id="07264625bd1b5bafe8d9b9331bb63609" category="paragraph">如果將 DS460C 機櫃移至資料中心的不同部分或將機櫃運送到不同位置，則必須將磁碟機從磁碟機抽屜中取出，以避免對磁碟機抽屜和磁碟機造成損壞。</block>
   <block id="c141638ba1fc3bb008bb5eb896def79e" category="admonition">*資料存取可能中斷：* 如果將來您將機櫃移至資料中心的不同部分或將機櫃運送到不同的位置，則必須將磁碟機從磁碟機抽屜中取出，以避免對磁碟機抽屜和磁碟機造成可能的損壞。</block>
   <block id="c280702bf87115947662f11cc819ea08" category="paragraph">如果將來您將 DS460C 磁碟櫃移至資料中心的不同部分，或將磁碟櫃運送到不同的位置，則必須將磁碟機從磁碟機抽屜中取出，以避免對磁碟機抽屜和磁碟機造成損壞。</block>
+  <block id="d06a07083a90ec9a4378029abfdec7cb" category="paragraph">更換系統管理模組後，重新開機控制器以還原正常的 HA 配對運作。您必須先開機控制器，執行部分歸還以啟動根 Aggregate，然後再完成完全歸還，使受損控制器恢復運作。</block>
+  <block id="6638946c2c71169de88e635bdf3a1573" category="paragraph">系統管理模組包含開機媒體並提供系統管理功能。您必須移除故障的系統管理模組，將開機媒體轉移到替換模組，然後將替換模組重新安裝到機箱中。</block>
+  <block id="6e30ba5caa64e4ca3667dadeaa11cefd" category="admonition">請確保 NVRAM 已完全卸載後再繼續操作。當 NV 模組上的 LED 指示燈熄滅時，表示 NVRAM 已卸載。如果 LED 指示燈閃爍，請等待其停止閃爍。如果閃爍持續超過 5 分鐘，請聯絡技術支援尋求協助。</block>
+  <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="list-text">ONTAP 9.19.1</block>
+  <block id="e827146f835b35a49ebac185b3e71933" category="paragraph">以下是一些典型的主機網路佈線範例。請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以瞭解您的特定系統組態。</block>
+  <block id="bba084cab79d6f55fb1d0fc54cb54245" category="admonition">請勿使用連接埠 e1b 和 e7b 進行主機網路連線。請使用獨立的主機網路卡。</block>
+  <block id="d435ad3bb0c177c293988bf9a83d48e5" category="list-text">將您的 10/25 GbE 網路卡連接到主機網路交換器。</block>
+  <block id="d4757fa4dad3e14c7b22569e94598e77" category="paragraph">AFF A70 和 AFF A90 儲存系統支援配備 NSM100 或 NSM100B 模組的 NS224 機架。這兩個模組的主要差異在於：</block>
+  <block id="c385525fc45151e02ea60146533c3edf" category="list-text">將控制器 A 連接埠 e11b 連接至 NSM B 連接埠 e0b。</block>
+  <block id="d5c4ea0bd4062f3b335586480daba755" category="list-text">將連接埠 e11b 連接到機櫃 2，NSM A 連接埠 e0b。</block>
+  <block id="c67f19e104ad3611b366ccb143f8c86d" category="paragraph">完成 AFF A70 或 AFF A90 系統的硬體佈線後，您<block ref="c5f2d57d7889d01ebbda3bc0e0e75909" category="inline-link-macro-rx"></block>。</block>
+  <block id="f158217b4d76e5895e22e6e5f12f3f82" category="paragraph">系統管理模組位於控制器背面插槽 8 左側，包含用於系統管理的內建元件以及用於外部管理的連接埠。若要更換損壞的系統管理模組或開機媒體，必須關閉目標控制器並斷電。</block>
+  <block id="c252e729454f69bb6a0d6efb48dd02d3" category="paragraph">AFF C80 儲存系統支援配備 NSM100 或 NSM100B 模組的 NS224 機櫃。這兩個模組的主要差異在於：</block>
+  <block id="edf3046f20162fd9f4e8899af2dff261" category="paragraph">準備好安裝 AFF C80 硬體後，您<block ref="5529a04db23aefcda96e168a6808eaee" category="inline-link-macro-rx"></block>。</block>
+  <block id="412841ff7918862aec2940d9550d7b94" category="paragraph">FAS70 和 FAS90 儲存系統支援 DS212C、DS224C、DS460C 和 NS224 機櫃，並可搭配 NSM100 或 NSM100B 模組。</block>
+  <block id="fff62239bbf7b8e4f913dd0c94d3de2f" category="list-text">將連接埠 e11b 連接至 NSM B 連接埠 e0b。</block>
+  <block id="36a89ad9239def1b5e6daf8a3f66d103" category="summary">將您的儲存系統安裝在機櫃或電信機架中。</block>
+  <block id="56f562e1cc48bd1cf730414ac5a70986" category="inline-link-macro">為您的 FAS70 或 FAS90 儲存系統連接硬體線纜</block>
+  <block id="326a64162980e026d67fb6be05699641" category="paragraph">安裝 FAS70 或 FAS90 儲存系統的硬體後，您<block ref="3611ae43317c18d7133d9ac6f85a86be" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d05cad6882d00b69106773678892a60" category="paragraph">安裝 FAS70 或 FAS90 儲存系統的機架硬體並安裝控制器和儲存機櫃的纜線後，您應該開啟儲存機櫃和控制器的電源。</block>
+  <block id="f0459d9c2b469658ae28fdabcde86676" category="paragraph">準備好安裝 FAS70 或 FAS90 硬體後，您<block ref="8b675fcd81dca00f177be4137f647288" category="inline-link-macro-rx"></block>。</block>
+  <block id="b60cf29845b500861cf2f73b433dcb7a" category="paragraph">DS460C 機櫃最大重量可達 260.4 磅（118.1 公斤）。搬運儲存設備機櫃可能需要多達五人或液壓升降機。請將所有組件（包括前後組件）放置在儲存設備機櫃中，以防止機櫃重量不平衡。</block>
+  <block id="ede44ca49dfc10f87edfa2084fe039d9" category="paragraph">DS460C 機櫃最大重量可達 260.4 磅（118.1 公斤）。抬起該機櫃可能需要多達五人或一台液壓升降機。請將所有組件保留在機櫃中（包括前後兩側），以防止機櫃重量不平衡。</block>
 </blocks>
