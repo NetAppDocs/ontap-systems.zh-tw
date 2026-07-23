@@ -4,13 +4,15 @@ sidebar: sidebar
 keywords: aff a250, replace a dimm 
 summary: 當系統根據健康監視器警報遇到過多的 CECC 錯誤，或遇到無法修正的 ECC 錯誤導致儲存系統無法啟動 ONTAP 時，請更換 AFF A250 控制器中的 DIMM。 
 ---
-= 更換DIMM AFF - REVA250
+= 更換 AFF A250 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+當儲存系統遇到過多可修正（CECC）或不可修正的記憶體容量錯誤時，請更換 AFF A250 系統中的 DIMM。此類錯誤可能導致儲存系統無法開機 ONTAP。
+
 當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。
 
 .關於這項工作

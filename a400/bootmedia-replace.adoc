@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media 
 summary: 您必須找到控制器模組中的開機媒體，然後依照指示進行更換。 
 ---
-= 更換啟動媒體並準備手動啟動恢復 - AFF A400
+= 使用手動開機恢復流程更換 AFF A400 系統中的開機媒體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要更換開機媒體、您必須移除受損的控制器模組、安裝替換的開機媒體、並將開機映像傳輸到USB快閃磁碟機。
+AFF A400 系統中的開機媒體儲存著重要的韌體和組態資料。更換過程包括：移除控制器模組、移除受損的開機媒體、安裝替換的開機媒體，然後使用 USB 快閃磁碟機將 ONTAP 映像傳輸到替換的開機媒體。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 

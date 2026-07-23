@@ -2,16 +2,16 @@
 permalink: a1k/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a1k, shut down the controller 
-summary: 關閉AFF A1K儲存系統中受損的控制器，以防止資料遺失並在手動啟動媒體復原過程中保持系統穩定性。 
+summary: 關閉 AFF A1K 儲存系統中發生故障的控制器，以防止資料遺失，並在手動開機恢復過程中維持系統穩定性。 
 ---
-= 關閉控制器以進行手動啟動媒體恢復 - AFF A1K
+= 在手動開機恢復過程中，關閉 AFF A1K 系統中的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-關閉AFF A1K儲存系統中受損的控制器，以防止資料遺失並在自動啟動媒體復原過程中保持系統穩定性。
+關閉 AFF A1K 儲存系統中發生故障的控制器，以防止資料遺失，並在手動開機恢復過程中維持系統穩定性。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 

@@ -115,7 +115,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 .步驟
 . 將適當的 ONTAP 映像版本下載到格式化的 USB 快閃磁碟機：
 +
-.. 使用 https://kb.netapp.com/onprem/ontap/dm/Encryption/How_to_determine_if_the_running_ONTAP_version_supports_NetApp_Volume_Encryption_(NVE)["如何判斷執行中的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ）"^] 判斷目前是否支援磁碟區加密。
+.. 使用 https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/How_to_determine_if_the_running_ONTAP_version_supports_Data_At_Rest_Encryption["如何確定您的 ONTAP 版本是否支援 NetApp Volume Encryption （NVE）"^]來確定目前是否支援 Volume 加密。
 +
 *** 如果叢集支援 NVE 、請下載具有 NetApp Volume Encryption 的映像。
 *** 如果叢集不支援 NVE 、請下載不含 NetApp Volume Encryption 的映像。

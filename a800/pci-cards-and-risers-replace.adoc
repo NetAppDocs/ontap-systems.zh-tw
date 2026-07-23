@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a800, replace a pcie card 
 summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。 
 ---
-= 更換PCIe卡AFF - REVA800
+= 更換 AFF A800 系統中的 PCIe 卡
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當AFF A800系統中的 I/O 模組發生故障、需要升級以支援更高的效能或附加功能時，請更換或新增該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。
+當 AFF A800 系統中的 PCIe 卡發生故障或需要升級時，請更換該 PCIe 卡。更換過程包括拔除纜線和 SFP 或 QSFP 模組、更換 PCIe 卡，然後重新連接纜線。
 
 .開始之前
 * 您必須備有NetApp的新零件或替換零件。
