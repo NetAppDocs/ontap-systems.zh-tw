@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a200, replace the dimms 
 summary: 當儲存系統遇到諸如健康監視器警報中顯示的過多 CECC 錯誤或無法糾正的 ECC 錯誤等錯誤時，必須更換控制器中的 DIMM，這些錯誤通常是由單一 DIMM 故障引起的，導致儲存系統無法啟動 ONTAP。 
 ---
-= 更換DIMM AFF - VA200
+= 更換 AFF A200 系統中的記憶體條
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。
+當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC 錯誤時，請更換 AFF A200 系統中的 DIMM，這通常是由單一 DIMM 故障所引起的。
 
 .關於這項工作
 * 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
