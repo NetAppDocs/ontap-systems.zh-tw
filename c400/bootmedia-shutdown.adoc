@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
 summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
 ---
-= 關閉控制器以進行手動啟動媒體恢復 - AFF C400
+= 在手動開機恢復過程中，關閉 AFF C400 儲存系統中的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。使用適合您組態的適當程序來關閉或接管受損的控制器。
+完成加密檢查後，在更換開機媒體之前，請關閉 AFF C400 儲存系統中發生故障的控制器。
 
-如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"]
+如果您的儲存系統執行的是 ONTAP 9.17.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。
 
 
 

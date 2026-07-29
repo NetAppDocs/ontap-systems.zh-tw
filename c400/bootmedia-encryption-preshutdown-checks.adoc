@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys 
 summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
 ---
-= 檢查加密金鑰支援與狀態 - AFF C400
+= 檢查 AFF C400 儲存系統中開機媒體的加密支援
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-為了確保儲存系統上的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+在關閉受損控制器之前，請檢查 AFF C400 儲存系統中開機媒體的加密支援。這包括驗證 ONTAP 版本與 NetApp Volume Encryption （NVE） 的相容性，並確認金鑰管理程式組態。
 
-如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"]
+如果您的儲存系統執行的是 ONTAP 9.17.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。
 
 
 

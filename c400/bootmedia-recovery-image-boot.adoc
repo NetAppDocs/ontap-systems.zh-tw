@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, procedure, boot, impair, controller, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image 
 summary: 從恢復映像啟動受損控制器的程序、取決於系統是否為雙節點MetroCluster 的版本。 
 ---
-= 從 USB 隨身碟手動恢復啟動媒體 - AFF C400
+= 使用手動開機恢復流程，在 AFF C400 儲存系統上啟動恢復映像。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在系統中安裝新的開機媒體裝置之後，您可以從 USB 磁碟機開機恢復映像，並從合作夥伴節點還原組態。
+從 USB 磁碟機開機 AFF C400 儲存系統上的恢復映像，以從合作夥伴節點還原組態。
 
-如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"]
+如果您的儲存系統執行的是 ONTAP 9.17.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。
 
 .開始之前
 * 請確保您的遊戲機已連接到故障控制器。
