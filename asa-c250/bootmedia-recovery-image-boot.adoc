@@ -31,12 +31,16 @@ summary: 您必須從ONTAP USB磁碟機開機支援的影像、還原檔案系�
 恢復鏡像檔是從USB下載的。
 
 . 出現提示時，輸入影像名稱或按 *Enter* 鍵接受括號中顯示的預設影像。
-. 請使用適用於您的ONTAP版本的步驟還原 var 檔案系統：
+. 還原var檔案系統：
 +
-[role="tabbed-block"]
-====
-.ONTAP 9 。 16.0 或更早版本
---
+[cols="1,2"]
+|===
+| 如果您的系統有... | 然後... 
+
+
+ a| 
+網路連線正常，且運作的是 ONTAP 9.16.0 或更早版本。
+ a| 
 對受損控制人和合作控制人完成以下步驟：
 
 .. *在故障控制器上：* 按下 `Y`當你看到 `Do you want to restore the backup configuration now?`
@@ -68,9 +72,11 @@ NOTE: 如果看到的不是恢復成功的訊息，請聯絡NetApp支援。
 
 
 
---
-.ONTAP 9.16.1 或更高版本
---
+
+
+ a| 
+網路連線正常，且執行 ONTAP 9.16.1 或更新版本。
+ a| 
 對受損控制器完成以下步驟：
 
 .. 當系統提示您還原備份組態時，請按 `Y`。
@@ -89,8 +95,59 @@ NOTE: 如果看到的不是恢復成功的訊息，請聯絡NetApp支援。
 
 
 
---
-====
+
+
+ a| 
+無網路連線
+ a| 
+.. 出現提示時，按下  `N` 以還原備份組態。
+.. 系統出現提示時、請重新啟動系統。
+.. 從顯示的功能表中選取*從備份組態更新Flash *（同步Flash）選項。
++
+如果系統提示您繼續更新，請按 `Y`。
+
+.. 看到啟動選單時，請按下 `Ctrl-C`。
+.. 執行下列其中一項：
++
+*** 如果系統不使用加密，請從啟動選單中選擇_選項 1 正常啟動_。
+*** 如果系統使用加密，請前往link:bootmedia-encryption-restore.html["還原加密"]。
+
+
+
+
+
+
+ a| 
+無網路連線、且為MetroCluster 靜態IP組態
+ a| 
+.. 出現提示時，按下  `N` 以還原備份組態。
+.. 系統出現提示時、請重新啟動系統。
+.. 等待iSCSI儲存設備連線連線。
++
+您可以在看到下列訊息後繼續：
+
++
+[listing]
+----
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+----
+.. 從顯示的功能表中選取*從備份組態更新Flash *（同步Flash）選項。
++
+如果系統提示您繼續更新，請按 `Y`。
+
+.. 看到啟動選單時，請按下 `Ctrl-C`。
+.. 執行下列其中一項：
++
+*** 如果系統不使用加密，請從啟動選單中選擇_選項 1 正常啟動_。
+*** 如果系統使用加密，請前往link:bootmedia-encryption-restore.html["還原加密"]。
+
+
+
+
+|===
 . 將主控台纜線連接至合作夥伴控制器。
 . 將控制器的儲存設備歸還，使其恢復正常運作：
 +
