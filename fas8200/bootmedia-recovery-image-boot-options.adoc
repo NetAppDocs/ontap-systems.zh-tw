@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, boot the recovery image, manual, manual boot recovery 
 summary: 在FAS8200系統上，從 USB 隨身碟啟動ONTAP恢復映像以恢復啟動媒體。 FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
-= 開機恢復映像- FAS8200
+= 在 FAS8200 系統上開機恢復映像
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -62,7 +62,7 @@ FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒�
 
 
 |===
-. 確保環境變數設定符合預期：
+. 請確認環境變數是否已如預期設定：
 +
 .. 將控制器移至載入器提示字元。
 .. 使用「prontenv」命令檢查環境變數設定。
@@ -70,7 +70,7 @@ FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒�
 .. 使用「shavenv」命令儲存變更。
 
 
-. 下一個取決於您的系統組態：
+. 下一步取決於您的系統組態：
 +
 ** 如果您的系統已設定內建Keymanager、NSE或NVE、請前往 xref:bootmedia-encryption-restore.adoc[視需要還原OKM、NSE和NVE]
 ** 如果您的系統未設定內建金鑰管理程式、NSE或NVE、請完成本節中的步驟。

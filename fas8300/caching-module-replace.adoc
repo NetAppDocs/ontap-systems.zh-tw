@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, fas8200, replace, caching, module, shut, down, impaired, controller, fru, metrocluster, add, aggregates, switch, reinstall 
 summary: 當系統收到模組離線的單一 AutoSupport 訊息時、您必須更換控制器模組中的快取模組。 
 ---
-= 更換快取模組- FAS8300和FAS8700
+= 更換 FAS8300 或 FAS8700 系統中的快取模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 當系統收到模組離線的單一 AutoSupport 訊息時、您必須�
 當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。
 
 
-NOTE: Ver2 控制器模組在 FAS8000 中只有一個快取模組插槽。FAS8700 沒有 Ver2 控制器模組。快取模組功能不受插槽移除影響。
+NOTE: VER2 控制器模組在 FAS8300 中只有一個快取模組插槽。FAS8700 沒有 VER2 控制器模組。移除插槽不會影響快取模組的功能。
 
 * 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
@@ -220,18 +220,18 @@ image::../media/drw_A400_Remove_controller.png[釋放控制器模組]
 若要更換快取模組（在控制器標籤上稱為快閃快取）、請找出控制器內的插槽、然後依照特定的步驟順序進行。請參閱控制器模組上的FRU對應圖、以瞭解Flash Cache的位置。
 
 
-NOTE: 插槽 6 僅適用於 FAS8000 Ver2 控制器。
+NOTE: 插槽 6 僅適用於 FAS8300 VER2 控制器。
 
 您的儲存系統必須符合特定條件、視您的情況而定：
 
 * 它必須具備適用於您所安裝之快取模組的作業系統。
 * 它必須支援快取容量。
-* 雖然快取模組的內容已加密、但最好先清除模組的內容再進行更換。如需詳細資訊、請參閱 https://mysupport.netapp.com/info/web/ECMP1132988.html["波動性聲明"] 適用於您的系統、請至NetApp支援網站。
+* 雖然快取模組的內容已加密，但在更換模組之前，清除其內容是最佳實務做法。如需詳細資訊，請參閱 NetApp 支援網站上適用於您系統的 https://mysupport.netapp.com/info/web/ECMP1132988.html["波動性聲明"]。
 +
 
 NOTE: 您必須登入NetApp支援網站、才能顯示系統的_波動聲明_。
 
-* 儲存系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+* 儲存系統中的所有其他元件必須正常運作。如果發生故障，請聯絡技術支援。
 
 
 您可以使用下列動畫、圖例或書面步驟來取代快取模組。
@@ -248,9 +248,9 @@ image::../media/drw_8300_Replace-flashcache.png[移除並更換快取模組]
 .. 將通風管朝控制器模組背面滑入、然後將其向上旋轉至完全開啟的位置。
 
 
-. 使用控制器模組上的FRU對應圖、找出故障的快取模組並將其移除：
+. 使用控制器模組上的 FRU 映射表找到故障的快取模組，並將其移除：
 +
-視您的組態而定、控制器模組中可能有零、一個或兩個快取模組。使用控制器模組內的FRU對應來協助找出快取模組。
+根據您的組態，控制器模組中可能包含零個、一個或兩個快取模組。請使用控制器模組內的 FRU 映射表來協助定位快取模組。
 
 +
 .. 按下藍色釋放卡舌。
@@ -341,8 +341,8 @@ NOTE: 如果系統在開機功能表停止、請選取開機至載入器選項�
 
 
 
-[[step-7-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
-== 步驟7：在雙節點MetroCluster 的不二組態中切換回集合體
+[[step-6-switch-back-aggregates-in-a-two-node-metrocluster-configuration]]
+== 步驟6：在雙節點MetroCluster 的不二組態中切換回集合體
 
 此工作僅適用於雙節點MetroCluster 的不完整組態。
 
@@ -398,7 +398,7 @@ Remote: cluster_A configured      		normal
 
 
 
-[[step-8-complete-the-replacement-process]]
-== 步驟8：完成更換程序
+[[step-7-complete-the-replacement-process]]
+== 步驟 7：完成更換流程
 
 如套件隨附的RMA指示所述、將故障零件退回NetApp。如 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"]需詳細資訊、請參閱頁面。

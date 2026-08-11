@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache 
 summary: FAS70 或 FAS90 系統中的 NVMe SSD Flash Cache 模組承載器包含一或兩個 Flash Cache 模組（快取模組），每個快取模組都整合一個 SSD Flash Cache 磁碟機。 
 ---
-= 更換 Flash Cache 模組載體或快取模組： FAS70 和 FAS90
+= 更換 FAS70 或 FAS90 系統中的 Flash Cache 模組載體或快取模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -29,8 +29,8 @@ FAS70 支援 2TB 快取模組、 FAS90 支援 4TB 快取模組。您無法在 Fl
 Flash Cache 模組承載器位於插槽 6 中，最多可容納兩個 Flash Cache 模組。您無法熱交換 Flash Cache 模組承載器
 
 .開始之前
-* 確保您的儲存系統擁有適當的作業系統，可用於更換的 Flash Cache 模組承載器。
-* 確認所有其他元件正常運作；否則、您必須聯絡技術支援部門。
+* 請確認您的儲存系統是否具有適合替換 Flash Cache 模組業者的作業系統。
+* 確認其他所有組件均運作正常。如果發生故障，請聯絡技術支援。
 
 
 
@@ -284,8 +284,8 @@ Flash Cache 模組（快取模組）位於插槽 6-1 或插槽 6-2 中，或插�
 您可以使用同一廠商或其他支援廠商提供的相同容量快取模組來熱交換個別的快取模組。
 
 .開始之前
-* 確保更換快取模組的容量與故障模組、來自同一廠商或其他支援廠商的容量相同。
-* 確認所有其他元件正常運作；否則、您必須聯絡技術支援部門。
+* 確認替換的快取模組與故障模組的容量相同，可以是同一廠商的產品，也可以是其他受支援廠商的產品。
+* 確認其他所有組件均運作正常。如果發生故障，請聯絡技術支援。
 * 快取模組中的磁碟機不是現場可更換單元（ FRU ）。您必須更換整個快取模組。
 
 
@@ -341,7 +341,7 @@ image:../media/icon_round_2.png["編號 2"]
 .. 向下轉動纜線管理承載器、方法是拉動纜線管理承載器內側兩側的按鈕、然後向下旋轉承載器。
 .. 按下快取模組前面的Terra cotta釋放按鈕。
 .. 轉動凸輪把手至最遠的位置。
-.. 將手指插入 CAM 槓桿開口，然後將模組從 Flash Cache 模組承載器中拉出，即可將快取模組模組從機箱中移除。
+.. 將手指勾入凸輪桿開口，然後將快取模組從 Flash Cache 模組載體中拉出，即可從機箱中取出快取模組。
 +
 從 Flash Cache 模組載體中移除快取模組時，請務必支援快取模組。
 
@@ -371,7 +371,7 @@ The module has been successfully powered on, initialized and placed into service
 ----
 . 使用「系統控制器插槽模組show」命令來驗證插槽狀態。
 +
-確保命令輸出將的狀態報告為「已開機」、並準備好操作。
+確保命令輸出顯示狀態為 `powered-on`且已準備好運作。
 
 . 確認更換的快取模組已上線並已辨識、然後以視覺方式確認黃色警示LED未亮起：「syssconfig -av slid_number」
 +

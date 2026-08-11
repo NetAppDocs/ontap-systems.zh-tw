@@ -2,15 +2,17 @@
 permalink: fas500f/drive-replace.html 
 sidebar: sidebar 
 keywords: fas500f, replace the drives 
-summary: 當平台將警告訊息記錄到系統主控台、指出磁碟機故障時、您必須更換磁碟機。此外、操作員顯示面板上的故障LED和故障磁碟機上的故障LED都會亮起。 
+summary: 在 FAS500f 儲存系統中，即使 I/O 作業正在進行，也能無中斷地更換故障磁碟機。當磁碟機發生故障時，平台會記錄警告訊息並點亮故障指示燈。根據磁碟機是 SSD 還是 HDD，更換步驟略有不同。 
 ---
-= 更換SSD磁碟機或HDD磁碟機- AFF C190
+= 在 FAS500f 系統中熱插拔磁碟機
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在 FAS500f 儲存系統中，即使 I/O 作業正在進行，也能無中斷地更換故障磁碟機。當磁碟機發生故障時，平台會記錄警告訊息並點亮故障指示燈。根據磁碟機是 SSD 還是 HDD，更換步驟略有不同。
+
 在I/O進行期間、您可以不中斷地更換故障磁碟機。更換SSD的程序適用於非旋轉式磁碟機、更換HDD的程序適用於旋轉式磁碟機。
 
 當磁碟機故障時、平台會將警告訊息記錄到系統主控台、指出哪個磁碟機故障。此外、操作員顯示面板上的故障LED和故障磁碟機上的故障LED都會亮起。

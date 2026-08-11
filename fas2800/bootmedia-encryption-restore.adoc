@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-encryption-restore.html 
 sidebar: sidebar 
-keywords: fas 2800, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
-summary: 在替換開機媒體上還原加密。 
+keywords: fas2820, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption 
+summary: 在 FAS2820 系統中，還原替換開機媒體上的加密。 
 ---
-= 還原加密 - FAS2820
+= 手動開機恢復程序完成後，還原 FAS2820 系統中開機媒體上的加密。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在替換開機媒體上還原加密。
+在 FAS2820 系統中更換開機媒體後，請在新設備上還原加密，以維護資料安全並將系統恢復至原始組態。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 

@@ -2,16 +2,16 @@
 permalink: fas-70-90/bootmedia-replace-requirements-bmr.html 
 sidebar: sidebar 
 keywords: fas70, fas90, replace the boot media 
-summary: 在更換 FAS70 或 FAS90 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。 
+summary: 在更換 FAS70 或 FAS90 儲存系統中的開機媒體之前，請確認您符合成功更換的必要條件。 
 ---
-= 自動啟動介質恢復的要求 - FAS70 和 FAS90
+= 審查 FAS70 或 FAS90 系統中自動開機媒體恢復的要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在更換 FAS70 或 FAS90 儲存系統中的啟動媒體之前，請確保滿足成功更換的必要要求。這包括驗證您是否擁有正確的替換啟動媒體、確認受損控制器上的叢集連接埠正常運作，以及確定是否啟用了板載金鑰管理器 (OKM) 或外部金鑰管理器 (EKM)。
+在更換 FAS70 或 FAS90 儲存系統中的開機媒體之前，請確認您符合成功更換的必要條件。這包括確認您擁有正確的替換開機媒體、確認受損控制器上的叢集連接埠運作正常，以及確定 Onboard Key Manager （OKM） 或 External Key Manager （EKM） 是否已啟用。
 
 自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 

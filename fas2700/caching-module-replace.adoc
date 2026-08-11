@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/caching-module-replace.html 
 sidebar: sidebar 
-keywords: replace, caching, module, aff a220, fas 2700, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
-summary: 當系統收到一則 AutoSupport ASUP 訊息，表示控制器模組中的快取模組已離線時，您必須更換該快取模組。否則，會導致效能下降。 
+keywords: replace, caching, module, fas 2700, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, replace, reinstall 
+summary: 當您的 FAS2700 系統收到單一 AutoSupport ASUP 訊息，表示快取模組已離線時，請更換該快取模組。否則，會導致效能減低。 
 ---
-= 更換快取模組： FAS2700
+= 更換 FAS2700 系統中的快取模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+當您的 FAS2700 系統收到單一 AutoSupport （ASUP）訊息，表示快取模組已離線時，請更換該快取模組。否則，會導致效能減低。
+
 當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。
 
 * 您必須使用從供應商處收到的替換FRU元件來更換故障元件。

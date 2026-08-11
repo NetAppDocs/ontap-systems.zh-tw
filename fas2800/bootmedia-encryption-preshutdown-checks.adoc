@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
-keywords: fas2800, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
-summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前、您必須先檢查受損控制器的狀態、停用自動恢復功能、以及檢查ONTAP 系統執行的版本。 
+keywords: fas2820, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback 
+summary: 為確保 FAS2820 儲存系統的資料安全，您需要驗證開機媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption，並在關閉控制器之前檢查金鑰管理程式是否處於作用中。 
 ---
-= 檢查加密金鑰支援與狀態 - FAS2820
+= 檢查 FAS2820 系統中開機媒體的加密支援
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-為了確保儲存系統上的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （ NVE ），以及在關閉控制器之前，檢查金鑰管理程式是否為作用中。
+為確保 FAS2820 儲存系統的資料安全，請驗證開機媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （NVE）。關閉控制器前，請檢查金鑰管理程式是否已作用中。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 

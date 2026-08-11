@@ -4,16 +4,18 @@ sidebar: sidebar
 keywords: fas9500, replace nvram 
 summary: NVRAM 模組包含 NVRAM11 和 DIMM ，每個 NVRAM 模組最多兩個 NVMe SSD 快閃快取模組（快閃快取或快取模組）。 
 ---
-= 更換NVRAM模組和/或NVRAM DIMM - FAS9500
+= 更換 FAS9500 系統中的 NVRAM 模組或 NVRAM DIMM
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-NVRAM模組由NVRAM11和DIMM組成。您可以更換故障的NVRAM模組或NVRAM模組內的DIMM。若要更換故障的NVRAM模組、您必須將其從機箱中取出、將DIMM移至更換模組、然後將替換的NVRAM模組安裝到機箱中。
+FAS9500 系統中的 NVRAM 模組由 NVRAM11 和 DIMM 組成。您可以更換故障的 NVRAM 模組或 NVRAM DIMM，以確保系統正常運作。
 
-若要更換和NVRAM DIMM、您必須從機箱中移除NVRAM模組、更換模組中故障的DIMM、然後重新安裝NVRAM模組。
+若要更換故障的 NVRAM 模組，必須將其從機箱中移除，將 DIMM 移至替換模組，然後將替換的 NVRAM 模組安裝到機箱中。
+
+若要更換 NVRAM DIMM，必須將 NVRAM 模組從機箱中移除，更換模組中故障的 DIMM，然後重新安裝 NVRAM 模組。
 
 .關於這項工作
 由於系統ID是從NVRAM模組衍生而來、因此如果更換模組、則屬於系統的磁碟會重新指派至新的系統ID。
@@ -103,7 +105,7 @@ NOTE: 當您看到「您想要停用自動回饋嗎？」時，請輸入 `y`。
 [[step-2-replace-the-nvram-module]]
 == 步驟2：更換NVRAM模組
 
-若要裝回NVRAM模組、請將其放在機箱的插槽6中、然後依照特定步驟順序進行。
+若要裝回NVRAM模組、請將其置於機箱的插槽6中、然後依照特定的步驟順序進行。
 
 .步驟
 . 如果您尚未接地、請正確接地。
@@ -266,10 +268,10 @@ DIMM和DIMM彈出卡舌
 
 
 
-[[step-5-reassigning-disks]]
+[[step-5-reassign-disks]]
 == 步驟5：重新指派磁碟
 
-您必須在開機更換控制器時確認系統ID變更、然後驗證變更是否已實作。
+開機替換控制器時，必須確認系統 ID 變更，然後驗證變更是否正確。
 
 
 CAUTION: 只有在更換 NVRAM 模組時才需要重新指派磁碟、而且不適用於 NVRAM DIMM 更換。
@@ -333,7 +335,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 ----
 . 如果系統採用MetroCluster 的是一套不全功能的組態、請監控控制器的狀態：MetroCluster 「不只是顯示節點」
 +
-更換後、需要幾分鐘時間才能恢復正常狀態、此時每個控制器都會顯示已設定的狀態、並啟用DR鏡射和正常模式。MetroCluster「停止節點show -Fields node-SystemID」命令輸出會顯示舊的系統ID、直到該組態恢復正常狀態為止。MetroCluster MetroCluster
+MetroCluster 更換設備後，組態需要幾分鐘才能恢復正常狀態。此時，每個控制器都會顯示已配置的狀態，DR 鏡像功能已啟用，模式為正常。 `metrocluster node show -fields node-systemid` 命令輸出會顯示舊的系統 ID，直到 MetroCluster 組態恢復正常狀態為止。
 
 . 如果控制器是MetroCluster 以支援功能為基礎的組態、請MetroCluster 視所用的情況而定、確認如果原始擁有者是災難站台上的控制器、DR主ID欄位會顯示磁碟的原始擁有者。
 +

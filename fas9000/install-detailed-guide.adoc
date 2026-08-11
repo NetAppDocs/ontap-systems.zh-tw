@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700, fas9000, detailed, guide, prepare, install, hardware, two, node, switchless, cluster, cable, controller, ds212c, ds224c, ns224, drive, shelf, complete, system, setup, configuration, network, discovery 
 summary: 本指南提供安裝典型NetApp系統的詳細逐步指示。 
 ---
-= 詳細指南 - FAS9000
+= 請依照詳細說明安裝您的 FAS9000 系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-本指南提供安裝典型NetApp系統的詳細逐步指示。如果您需要更詳細的安裝說明、請使用本指南。
+這些詳細的逐步說明將引導您完成 FAS9000 系統的安裝，從機架安裝、佈線到初始設定。如果您需要比快速步驟更深入的安裝指導，請使用這些步驟。
 
 
 
@@ -171,7 +171,7 @@ image:../media/oie_cable_power.png["電源線"]
 開啟系統電源
 
 |===
-. 檢閱《_ NetApp ONTAP 資料保密指南》、並收集該指南所列的必要資訊。
+. 檢閱《_ NetApp ONTAP 產品資訊指南_》、並收集該指南所列的必要資訊。
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613["《組態指南》ONTAP"]
 
@@ -219,7 +219,7 @@ image::../media/drw_9000_cable_management_arms.png[連接纜線管理臂]
 
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。兩個控制器上的叢集互連連接埠均已連接好纜線。
 
-您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
+如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
 
@@ -246,7 +246,7 @@ image::../media/drw_9000_TNSC_composite_cabling.png[雙節點無交換器叢集�
 
 控制器上的管理網路、資料網路和管理連接埠均連接至交換器。叢集互連和HA連接埠均以纜線連接至叢集/ HA交換器。
 
-您必須聯絡網路管理員、以取得有關將系統連線至交換器的資訊。
+如需將系統連接至交換器的相關資訊、請聯絡您的網路管理員。
 
 將纜線插入連接埠時、請務必檢查纜線拉片的方向。所有網路模組連接埠的纜線拉式彈片均已上線。
 
@@ -271,7 +271,7 @@ image:../media/drw_9000_switched_cluster_cabling.png["交換式叢集複合佈�
 [[step-4-cable-controllers-to-drive-shelves]]
 == 步驟4：連接磁碟機櫃的纜線控制器
 
-您可以將新系統纜線連接至DS212C、DS224C或NS224磁碟櫃、視系統AFF 是指或者FAS 是指系統。
+您可以根據新系統是 AFF 系統還是 FAS 系統，將其連接到 DS212C、DS224C 或 NS224 機櫃。
 
 
 
@@ -330,10 +330,10 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png["儲存系統與 SAS �
 [[option-2-cable-the-controllers-to-a-single-ns224-drive-shelf-in-asa-aff-a700-systems-running-ontap-9-8-and-later-only]]
 === 選項 2 ：將控制器連接至 ASA AFF A700 系統中的單一 NS224 磁碟機櫃、僅執行 ONTAP 9.8 及更新版本
 
-您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
+您必須將每個控制器透過纜線連接至執行 ONTAP 9.8 或更新版本的 AFF A700 或 ASA AFF A700 系統上 NS224 磁碟機機櫃的 NSM 模組。
 
 * 此工作僅適用於執行 ONTAP 9.8 或更新版本的 ASA AFF A700 。
-* 系統每個控制器的插槽3和/或7中必須至少安裝一個X91148A模組。動畫或圖例顯示此模組安裝在插槽3和7中。
+* 每個控制器必須在插槽 3 或 7 中至少安裝一個 X91148A 模組。動畫或插圖顯示該模組已安裝在插槽 3 和 7 中。
 * 請務必檢查圖示箭頭、以瞭解纜線連接器的拉式彈片方向是否正確。儲存模組的纜線拉片朝上、而磁碟櫃上的拉片則朝下。
 +
 image::../media/oie_cable_pull_tab_up.png[纜線連接器、頂部有拉片]
@@ -366,7 +366,7 @@ image::../media/single_NS224_shelf.png[單一機櫃纜線]
 [[option-3-cable-the-controllers-to-two-ns224-drive-shelves-in-asa-aff-a700-systems-running-ontap-9-8-and-later-only]]
 === 選項 3 ：將控制器連接至兩個 NS224 磁碟櫃、僅限執行 ONTAP 9.8 及更新版本的 ASA AFF A700 系統
 
-您必須將每個控制器連接至AFF 執行系統S9.8或更新版本的NS224磁碟機櫃上的NSM模組。ASA AFF ONTAP
+您必須將每個控制器連接至執行 ONTAP 9.8 或更新版本的 AFF A700 或 ASA AFF A700 系統上 NS224 磁碟機櫃的 NSM 模組。
 
 * 此工作僅適用於執行 ONTAP 9.8 或更新版本的 ASA AFF A700 。
 * 每個控制器必須有兩個X91148A模組安裝在插槽3和7中。
@@ -414,7 +414,7 @@ image::../media/two_NS224_shelves.png[雙機櫃纜線]
 .步驟
 . 請使用下列動畫來設定一或多個磁碟機櫃ID：
 +
-如果您的系統有NS224磁碟機櫃、則磁碟櫃會預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
+如果您的系統有 NS224 磁碟機機櫃，則這些機櫃預設為機櫃 ID 00 和 01。如果您想要變更機櫃 ID，則必須建立一個工具，將其插入按鈕所在的孔中。
 
 +
 .動畫-設定SAS或NVMe磁碟機櫃ID
@@ -426,7 +426,7 @@ video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto]
 +
 
-NOTE: 初始開機最多可能需要八分鐘。
+NOTE: 首次啟動可能需要長達八分鐘的時間。
 
 . 請確定您的筆記型電腦已啟用網路探索功能。
 +
@@ -442,11 +442,11 @@ image::../media/drw_autodiscovery_controler_select.png[選取 ONTAP 圖示]
 
 +
 .. 開啟檔案總管。
-.. 按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。
+.. 在左側窗格中選擇 *Network*，右鍵單擊 *Network*，然後選擇 *Refresh*。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 
-NOTE: XXXXX是目標節點的系統序號。
+NOTE: 顯示的值是目標節點的系統序號。
 
 +
 系統管理程式隨即開啟。
@@ -501,7 +501,7 @@ image::../media/drw_9000_cable_console_switch_controller.png[主控台纜線]
 
 . 請使用下列動畫來設定一或多個磁碟機櫃ID：
 +
-如果您的系統有NS224磁碟機櫃、則磁碟櫃會預先設定為機櫃ID 00和01。如果您想要變更機櫃ID、必須建立工具、以便插入按鈕所在的孔中。
+如果您的系統有 NS224 磁碟機機櫃，則這些機櫃預設為機櫃 ID 00 和 01。如果您想要變更機櫃 ID，則必須建立一個工具，將其插入按鈕所在的孔中。
 
 +
 .動畫-設定SAS或NVMe磁碟機櫃ID
@@ -513,7 +513,7 @@ video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto]
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto]
 +
 
-NOTE: 初始開機最多可能需要八分鐘。
+NOTE: 首次啟動可能需要長達八分鐘的時間。
 
 . 將初始節點管理IP位址指派給其中一個節點。
 +

@@ -2,16 +2,16 @@
 permalink: fas2600/controller-replace-system-config-restore-and-verify.html 
 sidebar: sidebar 
 keywords: fas2600, restore and verify the system configuration, verify and set the ha state of the controller module 
-summary: 完成硬體更換並開機至維護模式之後、您需要驗證更換控制器的低階系統組態、並視需要重新設定系統設定。 
+summary: 完成硬體更換並開機至維護模式後，還原並驗證 FAS2600 系統中的控制器組態。 
 ---
-= 還原並驗證系統組態- FAS2600
+= 恢復並驗證 FAS2600 系統中的控制器組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-完成硬體更換並開機至維護模式之後、您需要驗證更換控制器的低階系統組態、並視需要重新設定系統設定。
+完成硬體更換並開機至維護模式後，還原並驗證 FAS2600 系統中的控制器組態、驗證更換控制器的底層系統組態，並視需要重新配置系統設定。
 
 
 
@@ -65,6 +65,5 @@ HA狀態的值可以是下列其中一項：
 ** 「非哈」
 
 
-. 如果顯示的控制器模組系統狀態與您的系統組態不符、請設定控制器模組的「HA」狀態：「ha-config modify controller ha-state」
 . 確認設定已變更：「ha-config show」
 

@@ -2,22 +2,22 @@
 permalink: fas-70-90/io-module-hotswap.html 
 sidebar: sidebar 
 keywords: fas70, fas90, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module 
-summary: 如果 FAS 70 或 FAS 90 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。 
+summary: 如果 FAS70 或 FAS90 儲存系統中的某個乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱交換模組。 
 ---
-= 熱插拔 I/O 模組 - FAS 70 和 FAS 90
+= 在不關機的情況下，熱插拔 FAS70 或 FAS90 系統中的 I/O 模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-如果 FAS 70 或 FAS 90 儲存系統中的某個乙太網路 I/O 模組發生故障，而您的儲存系統符合所有 ONTAP 版本要求，則可以熱插拔該模組。
+如果 FAS70 或 FAS90 儲存系統中的某個乙太網路 I/O 模組發生故障，且您的儲存系統符合所有 ONTAP 版本要求，則可以熱交換模組。
 
 要熱插拔 I/O 模組，請確保您的儲存系統運行的是 ONTAP 9.18.1 GA 或更高版本，準備好您的儲存系統和 I/O 模組，熱插拔故障模組，使替換模組聯機，將儲存系統恢復正常運行，然後將故障模組退回 NetApp。
 
 .關於這項工作
 * 更換故障的 I/O 模組之前，無需執行手動接管操作。
-* 在熱插拔過程中，將命令套用至正確的控制器和 I/O 插槽：
+* 熱交換過程中，請確保將命令套用至正確的控制器和 I/O 插槽：
 +
 ** _受損控制器_ 是指您要更換 I/O 模組的控制器。
 ** _健康控制器_是受損控制器的 HA 夥伴。

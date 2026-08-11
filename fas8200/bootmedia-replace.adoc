@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, replace the boot media, manual, manual boot recovery 
 summary: 更換FAS8200控制器模組上故障的啟動介質。FAS8200系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
-= 更換開機媒體- FAS8200
+= 更換 FAS8200 系統中的開機媒體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -100,7 +100,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 * 您必須擁有格式化為FAT32的USB隨身碟、且容量至少為4GB。
 +
 
-NOTE: tar.gz檔案必須放在最少4GB的fat32格式分割區上。儘管Windows內建工具（例如磁碟零件）的容量可達2TB、但卻無法格式化大於32GB的FAT32分割區。
+NOTE: tar.gz 檔案必須放置在至少 4GB 的 FAT32 格式分割區上。雖然 FAT32 分割區最大可達 2TB，但 Windows 內建工具（例如 DiskPart）無法格式化大於 32GB 的 FAT32 分割區。
 
 * 與執行受損控制器相同ONTAP 版本之圖片的一份複本。您可以從NetApp支援網站的「下載」區段下載適當的映像
 +
@@ -167,6 +167,6 @@ NOTE: 您的介面可能需要其他參數。您可以在韌體提示字元中�
 
 
 +
-系統開機時會執行變更。
+系統啟動時會套用這些變更。
 
 

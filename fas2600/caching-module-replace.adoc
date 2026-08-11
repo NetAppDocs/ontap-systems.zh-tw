@@ -2,16 +2,16 @@
 permalink: fas2600/caching-module-replace.html 
 sidebar: sidebar 
 keywords: fas2600, replace the caching module 
-summary: 當系統註冊單一 AutoSupport 訊息指出模組已離線時、您必須更換控制器模組中的快取模組。否則會導致效能降級。 
+summary: 當您的 FAS2600 系統收到單一 AutoSupport 訊息，指出模組已離線時，請更換快取模組。否則，會導致效能減低。 
 ---
-= 更換快取模組- FAS2600
+= 更換 FAS2600 系統中的快取模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當系統登錄單AutoSupport 一的故障資訊（ASUP）訊息、指出模組已離線時、您必須更換控制器模組中的快取模組、否則會導致效能降低。
+當您的 FAS2600 系統收到單一 AutoSupport （ASUP）訊息，表示快取模組已離線時，請更換該快取模組。否則，會導致效能減低。
 
 * 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
@@ -29,8 +29,6 @@ link:https://youtu.be/LaMzvnAwM_I["FAS2600快取模組更換影片AFF"^]
 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格與健全狀況、則您必須先修正問題、再關閉受損的控制器。
 
 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]
-
-您可能需要先清除快取模組的內容、然後再進行更換。
 
 . 雖然快取模組上的資料已加密、但您可能想要清除受損快取模組中的任何資料、並確認快取模組沒有資料：
 +
@@ -112,7 +110,7 @@ image::../media/drw_2600_opening_pcm_cover.png[開啟或關閉控制器模組]
 [[step-3-replace-a-caching-module]]
 == 步驟3：更換快取模組
 
-若要更換控制器標籤上的快取模組（稱為「M.2 PCIe卡」）、請找出控制器內的插槽、然後依照特定的步驟順序進行。
+快取模組在控制器標籤上稱為 M.2 PCIe 卡。找到控制器內部的插槽，然後依照下列步驟操作。
 
 您的儲存系統必須符合特定條件、視您的情況而定：
 

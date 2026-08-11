@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, pcie, mezzanine, card, controller, metrocluster, reinstall, controller, aggregate, reinstall, controller 
 summary: 若要更換PCIe或夾層卡、您必須從插卡上拔下纜線和任何SFP和QSFP模組、更換故障的PCIe或夾層卡、然後重新插接插卡。 
 ---
-= 更換PCIe或夾層卡- FAS8300和FAS8700
+= 更換 FAS8300 或 FAS8700 系統中的 PCIe 卡或夾層卡
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 若要更換PCIe或夾層卡、您必須從插卡上拔下纜線和任�
 若要更換PCIe或夾層卡、您必須從插卡上拔下纜線和任何SFP和QSFP模組、更換故障的PCIe或夾層卡、然後重新插接插卡。
 
 * 您可以將此程序用於ONTAP 系統支援的所有版本的功能
-* 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+* 系統中的所有其他組件必須正常運作。如果它們發生故障，您必須聯絡技術支援。
 
 
 
@@ -244,7 +244,7 @@ image:../media/drw_A400_Replace-PCIe-cards.png["卸下 PCIe 卡"]
 +
 提升板會從控制器模組稍微向上提升。
 
-.. 垂直向上提起擴充卡、並將其放在穩固的平面上、
+.. 將立柱筆直向上提起，放在穩定、平坦的表面上。
 
 
 . 從擴充卡中取出PCIe卡：
@@ -255,7 +255,7 @@ image:../media/drw_A400_Replace-PCIe-cards.png["卸下 PCIe 卡"]
 .. 將PCIe卡從擴充卡上卸下、方法是輕推支架、然後將其從插槽中垂直提起。
 
 
-. 將插卡對齊插槽、將插卡壓入插槽、然後合上擴充卡上的側邊面板（如果有）、將替換的PCIe卡安裝到擴充卡中。
+. 將替換的 PCIe 卡安裝到轉接卡中，方法是將卡片與插槽對齊，將卡片壓入插槽，然後關閉轉接卡的側面板（如果有）。
 +
 將插卡插入插槽時、請務必將插卡正確對齊、並對插卡施壓。PCIe卡必須完全且平均地置於插槽中。
 

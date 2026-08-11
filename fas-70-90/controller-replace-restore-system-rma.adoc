@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas70, fas90, how to restore NetApp Storage Encryption, how to complete the replacement process 
 summary: 驗證邏輯介面 LIF 是否向其主連接埠報告、執行叢集健全狀況檢查，然後將故障零件退回 NetApp，以完成 FAS70 或 FAS90 控制器更換程序的最後一步。 
 ---
-= 完整更換控制器： FAS70 和 FAS90
+= 完成 FAS70 或 FAS90 系統的控制器更換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要完成 AFF A1K 系統的控制器更換，請先還原 NetApp 儲存加密配置（如有必要）。接著，確認邏輯介面（生命）正在向其主連接埠回報，並執行叢集健全狀況檢查。最後，將故障元件退回給 NetApp。
+若要完成 FAS70 或 FAS90 系統的控制器更換，請先還原 NetApp 儲存加密組態（如有必要）。接下來，確認邏輯介面 （LIF） 是否向其主連接埠回報，並執行叢集資訊健檢。最後，將故障零件退回 NetApp。
 
 
 

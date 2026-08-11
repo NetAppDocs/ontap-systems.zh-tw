@@ -2,16 +2,16 @@
 permalink: fas9000/bootmedia-encryption-preshutdown-checks.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, shutdown, check, onboard, encryption, key, manual, manual boot recovery 
-summary: 在關閉受損節點並檢查板載加密金鑰的狀態之前，必須檢查受損節點的狀態，停用自動返還，並檢查系統正在執行的ONTAP版本。FAS9000系統僅支援手動啟動媒體復原程序。 
+summary: 在關閉故障控制器並檢查就職加密金鑰狀態之前，必須先檢查故障控制器的狀態，停用自動歸還，並檢查系統運作的 ONTAP 版本。FAS9000 系統僅支援手冊開機媒體恢復程序。 
 ---
-= 檢查加密金鑰支援和狀態
+= 檢查 FAS9000 系統中開機媒體的加密支援情況
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-為確保儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的ONTAP版本是否支援NetApp磁碟區加密 (NVE)，並在關閉控制器之前檢查金鑰管理員是否處於活動狀態。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+為確保儲存系統的資料安全，請驗證開機媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp 磁碟區加密 （NVE），並在關閉控制器之前檢查金鑰管理程式是否處於作用中。FAS9000 系統僅支援手動開機媒體恢復程序。
 
 
 

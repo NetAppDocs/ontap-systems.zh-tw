@@ -1,16 +1,18 @@
 ---
 permalink: fas2700/controller-replace-shutdown.html 
 sidebar: sidebar 
-keywords: fas2700, aff a220, shut down the impaired controller 
-summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
+keywords: fas2700, shut down the impaired controller 
+summary: 在更換 FAS2700 系統中受損控制器之前，請先將其關閉，方法是接管該控制器並將其停止至 LOADER 提示字元。 
 ---
-= 關閉功能受損的控制器 - FAS2700
+= 更換前，請先關閉 FAS2700 系統中故障的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在更換 FAS2700 系統中受損控制器之前，請先將其關閉，方法是接管該控制器並將其停止至 LOADER 提示字元。
+
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
 
 .關於這項工作

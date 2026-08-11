@@ -4,18 +4,18 @@ sidebar: sidebar
 keywords: fas9500, add io module 
 summary: 您可以將I/O模組新增至系統、方法是在已完全安裝的系統中以新的I/O模組取代現有的I/O模組、或是將新的I/O模組新增至機箱的空插槽。 
 ---
-= 新增I/O模組- FAS9500
+= 為您的 FAS9500 系統新增 I/O 模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以在系統中新增I/O模組、方法是將NIC或儲存介面卡更換為已完全安裝的系統中的新NIC或儲存介面卡、或是將新的NIC或儲存介面卡新增至系統中的空機箱插槽。
+您可以為 FAS9500 系統新增 I/O 模組，方法是在已安裝所有元件的系統中以新的 NIC 或儲存介面卡取代舊的 NIC 或儲存介面卡，或將新的 NIC 或儲存介面卡新增至空的機箱插槽。
 
 .開始之前
 * 請檢查 https://hwu.netapp.com/["NetApp Hardware Universe"] 確保新的I/O模組與您的系統和ONTAP 執行中的版本相容。
-* 如果有多個插槽可用、請檢查中的插槽優先順序 https://hwu.netapp.com/["NetApp Hardware Universe"] 並使用適用於您I/O模組的最佳工具。
+* 如果有多個插槽可用，請檢查 https://hwu.netapp.com/["NetApp Hardware Universe"]中的插槽優先順序，並為您的 I/O 模組選擇最佳的插槽。
 * 若要不中斷營運地新增I/O模組、您必須接管目標控制器、移除目標插槽的插槽遮罩、或移除現有的I/O模組、新增或更換I/O模組、然後歸還目標控制器。
 * 確定所有其他元件都正常運作。
 
@@ -184,7 +184,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 . 如果更換的I/O模組是NIC、請將模組纜線連接至資料交換器。
 +
 
-NOTE: 請確定所有未使用的I/O插槽均已安裝空白、以避免可能的散熱問題。
+NOTE: 請務必在所有未使用的 I/O 插槽中安裝擋板，以防止可能出現的散熱問題。
 
 . 從載入程式提示字元_by_重新啟動控制器
 +
@@ -193,7 +193,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
 
 . 從合作夥伴節點回饋節點。將容錯移轉還原為-ofnode_node_name'
 . 如果停用自動恢復功能、請啟用：「儲存容錯移轉修改節點本機-自動恢復true」
-. 如果您使用插槽3和/或7進行網路連線、請使用「儲存連接埠修改節點_」-_-port ______-mode network」命令來轉換插槽以供網路使用。
+. 如果您使用插槽 3 或 7 進行連網，請使用 `storage port modify -node __<node name>__ -port __<port name>__ -mode network`命令將插槽轉換為連網用途。
 . 對控制器B重複這些步驟
 . 如果您安裝了儲存 I/O 模組、請依照中所述link:../sas3/install-hot-add-shelf.html["熱新增SAS機櫃"]、安裝及連接 SAS 機櫃。
 
@@ -214,7 +214,7 @@ NOTE: 這會重新初始化PCIe卡和其他元件、然後重新啟動節點。
  a| 
 NIC 對 NIC （相同數量的連接埠）
  a| 
-當控制器模組關閉時、LIF會自動移轉。
+當控制器模組關閉時，LIF 會自動移轉。
 
 
 

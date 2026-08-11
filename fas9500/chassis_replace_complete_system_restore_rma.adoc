@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff fas9500, verify and set HA state, complete the replacement process 
 summary: 您必須驗證機箱的 HA 狀態、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。 
 ---
-= 還原並驗證組態- FAS9500
+= 完成 FAS9500 系統的機箱更換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要完成機箱更換、您必須完成特定工作。
+要完成 FAS9500 系統中的機箱更換，您必須驗證並設定機箱的 HA 狀態，使系統重新啟動，並將故障機箱退回 NetApp，如套件隨附的 RMA 說明中所述。
 
 
 
@@ -47,9 +47,9 @@ HA狀態的值可以是下列其中一項：
 == 步驟 2 ：啟動系統
 
 . 如果您尚未這樣做、請將電源線重新插入 PSU 。
-. 將搖桿切換至 * 開啟 * 、然後等待控制器完全開機、以開啟 PSU 。
+. 將搖桿開關撥到「ON」位置以開啟電源供應，並等待控制器完全開機。
 . 開機後、請檢查機箱和控制器的正面和背面是否有任何故障指示燈。
-. 透過 SSH 連線至節點的 SP 或 BMC IP 位址。此位址與用於關閉節點的位址相同。
+. 透過 SSH 連接到節點的 SP 或 BMC IP 位址。此位址與關閉節點時使用的位址相同。
 . 如所述、執行其他健全狀況檢查 https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP["how to 執行 _a_cluster_health 檢查與 _a_script_in_ONTAP"^]
 . 重新開啟 AutoSupport （結束維護期間訊息）：
 `system node autosupport invoke -node * -type all -message MAINT=end`

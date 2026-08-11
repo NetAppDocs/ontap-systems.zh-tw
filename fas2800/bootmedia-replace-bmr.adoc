@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-replace-bmr.html 
 sidebar: sidebar 
-keywords: fas2800, replace the boot media 
-summary: FAS2800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。 
+keywords: fas2820, replace the boot media 
+summary: FAS2820 系統中的開機媒體儲存重要的韌體和組態資料。更換程序包括移除控制器模組、移除受損的開機媒體、在控制器模組中安裝替換的開機媒體，然後重新安裝控制器模組。 
 ---
-= 更換啟動介質以實現自動啟動恢復 - FAS2800
+= 使用自動開機恢復流程更換 FAS2820 系統中的開機媒體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-FAS2800 系統中的啟動媒體儲存了重要的韌體和設定資料。更換過程包括移除並開啟控制器模組、移除受損的啟動介質、在控制器模組中安裝替換啟動介質，然後重新安裝控制器模組。
+FAS2820 系統中的開機媒體儲存重要的韌體和組態資料。更換程序包括移除並開啟控制器模組、移除受損的開機媒體、在控制器模組中安裝替換的開機媒體、然後重新安裝控制器模組。
 
 自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 

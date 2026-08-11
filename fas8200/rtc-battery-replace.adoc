@@ -2,9 +2,9 @@
 permalink: fas8200/rtc-battery-replace.html 
 sidebar: sidebar 
 keywords: fas8200, replace the rtc battery 
-summary: 您需要更換控制器模組中的即時時鐘電池，以確保系統中依賴精確時間同步的服務和應用程式能夠繼續運作。 
+summary: 您需要更換控制器模組中的即時時鐘電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。 
 ---
-= 更換即時時鐘電池- FAS8200
+= 更換 FAS8200 系統中的即時時鐘電池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,7 +14,7 @@ summary: 您需要更換控制器模組中的即時時鐘電池，以確保系�
 您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。
 
 * 您可以將此程序用於ONTAP 系統支援的所有版本的功能
-* 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+* 系統中的所有其他元件必須正常運作；如果它們無法正常運作，您必須聯絡技術支援。
 
 
 
@@ -259,8 +259,8 @@ NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加�
 
 
 
-[[step-4-reinstall-the-controller-module-and-setting-timedate-after-rtc-battery-replacement]]
-== 步驟4：重新安裝控制器模組、並設定更換RTC電池後的時間/日期
+[[step-4-reinstall-the-controller-module-and-reset-the-time-and-date-after-rtc-battery-replacement]]
+== 步驟 4：更換 RTC 電池後，重新安裝控制器模組並重設時間和日期
 
 更換控制器模組中的元件之後、您必須在系統機箱中重新安裝控制器模組、重設控制器上的時間和日期、然後將其開機。
 

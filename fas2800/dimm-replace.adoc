@@ -1,19 +1,19 @@
 ---
 permalink: fas2800/dimm-replace.html 
 sidebar: sidebar 
-keywords: fas2800, replace, dimm, shut, down, impaired, controller, controller, metrocluster, replace, system, reinstall, module, filed, part, aggregates, 
-summary: 當儲存系統遇到錯誤時，您必須更換控制器中的 DIMM，例如根據 Health Monitor 警示的過多可修正 ECC 錯誤，或導致儲存系統無法開機 ONTAP 的無法修正 ECC 錯誤。 
+keywords: fas2820, replace, dimm, shut, down, impaired, controller, controller, metrocluster, replace, system, reinstall, module, filed, part, aggregates, 
+summary: 當 FAS2820 系統控制器出現諸如基於 Health Monitor 警示的過多 CECC（可修正錯誤修正碼）錯誤或不可修正的 ECC 錯誤等錯誤時，您必須更換控制器中的 DIMM。這些錯誤通常是由單一 DIMM 故障引起的，導致儲存系統無法開機 ONTAP。 
 ---
-= 更換 DIMM - FAS2820
+= 更換 FAS2820 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。
+當 FAS2820 系統控制器出現諸如基於 Health Monitor 警示的過多 CECC（可修正錯誤修正碼）錯誤或不可修正的 ECC 錯誤等錯誤時，您必須更換控制器中的 DIMM。這些錯誤通常是由單一 DIMM 故障引起的，導致儲存系統無法開機 ONTAP。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+如果系統中的任何其他組件無法正常運作，請聯絡技術支援。
 
 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
@@ -142,7 +142,7 @@ image::../media/drw_hw_nvram_icon.svg[NV圖示]
 . 請注意 DIMM 在插槽中的方向和位置、以便以正確的方向插入替換 DIMM 。
 . 緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、然後將DIMM從插槽中滑出、藉此將DIMM從插槽中退出。
 +
-DIMM 會稍微向上旋轉。
+DIMM 向上旋轉了一點。
 
 . 儘量旋轉 DIMM 、然後將 DIMM 滑出插槽。
 +
@@ -190,14 +190,14 @@ DIMM插針之間的槽口應與插槽中的卡舌對齊。
 
 . 將DIMM正面插入插槽。
 +
-DIMM可緊密插入插槽、但應該很容易就能裝入。如果沒有、請重新將DIMM與插槽對齊、然後重新插入。
+DIMM 與插槽配合緊密，但應該可以輕鬆插入。如果插入困難，請重新對準 DIMM 與插槽的位置，然後重新插入。
 
 +
 
 NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 . 在DIMM頂端邊緣小心地推入、但穩固地推入、直到彈出彈出彈片卡入DIMM兩端的槽口。
-. 重新連接 NVMRM 電池：
+. 重新連接 NVRAM 電池：
 +
 .. 插入 NVRAM 電池。
 +
@@ -221,7 +221,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 . 如果您尚未接地、請正確接地。
 . 如果您尚未更換控制器模組的護蓋、請將其裝回。
 . 將控制器模組翻轉過來、並將端點對齊機箱的開口。
-. 將控制器模組輕輕推入系統的一半。將控制器模組的末端與機箱中的開口對齊、然後將控制器模組輕輕推入系統的一半。
+. 將控制器模組輕輕推入系統的一半。
 +
 
 NOTE: 在指示之前、請勿將控制器模組完全插入機箱。
@@ -258,8 +258,8 @@ NOTE: 在開機程序期間、您可能會看到下列提示：
 
 
 
-[[step-5-restore-automatic-giveback-and-autsupport]]
-== 步驟 5 ：還原自動恢復和自動支援
+[[step-5-restore-automatic-giveback-and-autosupport]]
+== 步驟 5 ：還原自動恢復和 AutoSupport
 
 如果已停用、請還原自動恢復和 AutoSupport 。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, locate, boot, media, controller, direction, replace, manual, manual boot recovery 
 summary: 更換 FAS2600 控制器模組上故障的啟動介質。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
 ---
-= 更換開機媒體- FAS2600
+= 更換 FAS2600 系統中的開機媒體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -81,7 +81,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 
 
 * 如果您的系統是HA配對、則必須有網路連線。
-* 如果您的系統是獨立式系統、則不需要網路連線、但在還原var檔案系統時、您必須執行額外的重新開機。
+* 如果您的系統是獨立系統，則不需要網路連線，但在還原 var 檔案系統時必須執行額外的重新開機。
 
 
 .步驟
@@ -111,7 +111,7 @@ NOTE: 請勿直接扭轉或拉起開機媒體、否則可能會損壞插槽或�
 ** 如果您正在設定DHCP：「ifconfige0a -auto」
 +
 
-NOTE: 您所設定的目標連接埠是您在使用網路連線進行var檔案系統還原期間、用來與健全控制器的受損控制器通訊的目標連接埠。您也可以在此命令中使用e0M連接埠。
+NOTE: 您設定的目標連接埠是在透過網路連線從正常控制器與受損控制器通訊、以進行 var 檔案系統還原時所使用的連接埠。您也可以在此命令中使用 e0M 連接埠。
 
 ** 如果您要設定手動連線：「ifconfige0a -addr=filer_addr -mask=netmask=-gateway-dns = dns _addr-domain=dns網域」
 +

@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/bootmedia-replace.html 
 sidebar: sidebar 
-keywords: fas2800, replace, boot, media, controller, module, fru map 
-summary: 您必須在控制器中找到開機媒體、然後依照指示進行更換。 
+keywords: fas2820, replace, boot, media, controller, module, fru map 
+summary: FAS2820 系統中的開機媒體儲存著重要的韌體和組態資料。若要更換開機媒體，請移除並開啟受損的控制器模組，找到並更換開機媒體，將開機映像傳輸到 USB 磁碟機，然後啟動控制器。 
 ---
-= 更換啟動介質並準備手動啟動恢復 - FAS2820
+= 使用手動開機恢復流程更換 FAS2820 系統中的開機媒體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您必須移除並打開受損的控制器模組，找到並更換控制器中的啟動介質，將啟動映像傳輸到 USB 驅動器，將 USB 驅動器插入控制器，然後啟動控制器。
+FAS2820 系統中的開機媒體儲存著重要的韌體和組態資料。若要更換開機媒體，請移除並開啟受損的控制器模組、找到並更換開機媒體、將開機映像傳輸至 USB 磁碟機、將 USB 磁碟機插入控制器、然後啟動控制器。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
@@ -51,7 +51,7 @@ image::../media/icon_round_1.png[編號 1]
 [[step-2-replace-the-boot-media]]
 == 步驟2：更換開機媒體
 
-在位於夾層卡下方的控制器模組中找到開機媒體、然後依照指示進行更換。
+尋找位於控制器模組夾層卡下方的開機媒體，並依照指示進行更換。
 
 image:../media/drw_2850_replace_boot_media_IEOPS-696.svg["更換開機媒體"]
 

@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/controller-replace-recable-reassign-disks.html 
 sidebar: sidebar 
-keywords: fas2800, how to recable the system, how to reassign disks 
-summary: 您必須重新儲存並確認磁碟重新指派。 
+keywords: fas2820, how to recable the system, how to reassign disks 
+summary: 若要完成控制器更換並將 FAS2820 系統還原為完全運作狀態，您必須重新連接儲存設備、確認磁碟重新分配、還原 NetApp 儲存加密組態（如有必要），並為新控制器安裝授權。 
 ---
-= 可重新分配系統並重新分配磁碟： FAS2820
+= 將 FAS2820 系統中的控制器交還，以恢復正常運作。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要完成更換程序並將系統還原為完整作業、您必須重新儲存、確認磁碟重新指派、還原NetApp儲存加密組態（如有必要）、以及安裝新控制器的授權。您必須先完成一系列工作、才能將系統還原至完整運作狀態。
+若要完成更換程序並將 FAS2820 系統還原為完全運作狀態，您必須重新連接儲存設備、確認磁碟重新分配、還原 NetApp 儲存加密組態（如有必要），並為新控制器安裝授權。
 
 
 
@@ -34,7 +34,7 @@ summary: 您必須重新儲存並確認磁碟重新指派。
 
 您必須在開機_replaced_控制器時確認系統ID變更、然後確認變更是否已實作。
 
-. 如果_replaced_控制器處於維護模式（顯示"*>"提示符）、請退出維護模式並進入載入器提示："half"（停止）
+. 如果_replaced_控制器處於維護模式（顯示"*>"提示）、請結束維護模式、然後進入載入程式提示：「halt（停止）」
 . 在_replace_控制器的載入器提示中、啟動控制器、如果系統ID不相符、系統提示您覆寫系統ID、請輸入「y」
 . 請等到_replace_控制器主控台顯示「waiting for恢復...（正在等待恢復...）」訊息、然後從健全的控制器驗證是否已自動指派新的合作夥伴系統ID：「儲存容錯移轉顯示」
 +

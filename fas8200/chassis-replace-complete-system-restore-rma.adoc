@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, verify and set HA state, complete the replacement process 
 summary: 您必須驗證機箱的 HA 狀態、切換回集合體、並將故障零件退回 NetApp 、如套件隨附的 RMA 說明所述。 
 ---
-= 還原並驗證組態- FAS8200
+= 完成 FAS8200 系統的機箱更換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -53,7 +53,7 @@ HA狀態的值可以是以下值之一：***"ha"（三個）***"mcc"（三個）
  a| 
 HA與第二個控制器模組配對
  a| 
-結束維護模式：「停止」載入程式提示字元出現。
+退出維護模式： `halt`。出現 LOADER 提示符號。
 
 |===
 

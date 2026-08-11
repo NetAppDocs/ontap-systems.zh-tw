@@ -1,20 +1,20 @@
 ---
 permalink: fas2800/rtc-battery-replace.html 
 sidebar: sidebar 
-keywords: fas2800, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
-summary: 您需要更換控制器模組中的即時時鐘 RTC 電池，以確保系統中依賴精確時間同步的服務和應用程式能夠繼續運作。 
+keywords: fas2820, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open 
+summary: 您需要更換 FAS2820 系統控制器模組中的即時時鐘電池，以便依賴精確時間同步的服務和應用程式能夠繼續運作。 
 ---
-= 更換實時時鐘電池 - FAS2820
+= 更換 FAS2820 系統中的即時時鐘電池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以更換控制器模組中的即時時鐘（RTc）電池、讓系統的服務和應用程式繼續運作、而這些服務和應用程式必須仰賴精確的時間同步。
+您需要更換 FAS2820 系統控制器模組中的即時時鐘 （RTC） 電池，以便依賴精確時間同步的服務和應用程式能夠繼續運作。
 
 * 您可以將此程序用於ONTAP 系統支援的所有版本的功能
-* 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+* 系統中的所有其他組件必須正常運作。如果發生故障，請聯絡技術支援。
 
 
 
@@ -117,7 +117,7 @@ image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[卸下控制
 [[step-3-replace-the-rtc-battery]]
 == 步驟3：更換RTC電池
 
-將 RTC 電池放在控制器內、然後依照特定步驟順序更換。
+找到控制器內部的 RTC 電池，然後依照特定步驟順序更換電池。
 
 .動畫-更換RTC電池
 video::7420d100-23b1-4213-a8da-af4701725622[panopto]
@@ -142,10 +142,10 @@ NOTE: 從電池座取出電池時、請注意電池的極性。電池標有加�
 [[step-4-reinstall-the-controller-module]]
 == 步驟4：重新安裝控制器模組
 
-重新安裝控制器模組、並將其開機至載入器提示。
+重新安裝控制器模組並將其開機至 LOADER 提示字元。
 
 . 將控制器模組翻轉過來、並將端點對齊機箱的開口。
-. 將控制器模組輕輕推入系統的一半。將控制器模組的末端與機箱中的開口對齊、然後將控制器模組輕輕推入系統的一半。
+. 將控制器模組的一端與機箱的開口對齊、然後將控制器模組輕推至系統的一半。
 +
 在指示之前、請勿將控制器模組完全插入機箱。
 

@@ -2,16 +2,16 @@
 permalink: fas-70-90/chassis-replace-shutdown.html 
 sidebar: sidebar 
 keywords: fas70, fas90, shutdown the controller 
-summary: 關閉 FAS70 或 FAS90 儲存系統中的控制器，以防止資料遺失並確保更換機箱時系統穩定性。 
+summary: 更換機箱時，請關閉 FAS70 或 FAS90 儲存系統中的控制器，以防止資料遺失並保持系統穩定性。 
 ---
-= 關閉控制器以更換機殼 - FAS70 和 FAS90
+= 更換機箱時，請關閉 FAS70 或 FAS90 控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-關閉 FAS70 或 FAS90 儲存系統中的控制器，以防止資料遺失並確保更換機箱時系統穩定性。
+更換機箱時，請關閉 FAS70 或 FAS90 儲存系統中的控制器，以防止資料遺失並保持系統穩定性。
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
 

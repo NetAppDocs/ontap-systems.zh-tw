@@ -1,19 +1,19 @@
 ---
 permalink: fas2800/nvmem-nvram-battery-replace.html 
 sidebar: sidebar 
-keywords: fas2800, replace, nvmem, battery, shut, down, impaired, controller, controller, system, aggregates, metrocluster, configuration, reinstall 
-summary: 若要更換系統中的NVMEM電池、您必須將控制器模組從系統中取出、開啟、更換電池、然後關閉並更換控制器模組。 
+keywords: fas2820, replace, nvmem, battery, shut, down, impaired, controller, controller, system, aggregates, metrocluster, configuration, reinstall 
+summary: 要更換 FAS2820 系統中的 NVMEM 電池，必須移除控制器模組、開啟它、更換電池，然後關閉並重新安裝控制器模組。 
 ---
-= 更換 NVMEM 電池 - FAS2820
+= 更換 FAS2820 系統中的 NVMEM 電池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-若要更換系統中的NVMEM電池、您必須將控制器模組從系統中取出、開啟、更換電池、然後關閉並更換控制器模組。
+要更換 FAS2820 系統中的 NVMEM 電池，必須移除控制器模組、開啟它、更換電池，然後關閉並重新安裝控制器模組。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
+如果系統中的任何其他組件無法正常運作，請聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
 
 
 
@@ -94,15 +94,15 @@ image::../media/drw_hw_nvram_icon.svg[NV圖示]
 
 +
 
-NOTE: 如果系統處於「等待恢復」狀態、或系統未正確接管或停止（未認可的資料）、則當從控制器拔下電源時、面板上的綠色 NV LED 會開始閃爍。  如果合作夥伴控制器模組未成功接管受損的控制器模組、請聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]
+NOTE: 如果系統處於「等待歸還」狀態，或系統未正確接管或停止（存在未提交資料），則在控制器斷電時，面板上的綠色 NV LED 指示燈會開始閃爍。如果故障控制器模組未能被合作夥伴控制器模組成功接管，請聯繫 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]
 
 +
 ** 如果從機箱中卸下控制器模組時綠色的 NV 狀態 LED 開始閃爍：
 +
-*** 確認控制器已由合作夥伴控制器模組進行乾淨接管、或是故障控制器顯示正在等待恢復、閃爍的 LED 可忽略、您可以從機箱中完全移除受損的控制器。
+*** 確認控制器已由合作夥伴控制器模組順利接管，或故障控制器顯示 _waiting for giveback_。如果是，您可以忽略閃爍的 LED 指示燈，並繼續從機箱移除故障控制器。
 
 
-** 如果綠色的 NV LED 燈熄滅、您可以從機箱中完全移除受損的控制器。
+** 如果綠色 NV LED 熄滅，則可以完成從機箱中移除受損控制器。
 
 
 
@@ -116,7 +116,7 @@ NOTE: 如果系統處於「等待恢復」狀態、或系統未正確接管或�
 
 .步驟
 . 如果您尚未接地、請正確接地。
-. 從機箱中卸下控制模組。
+. 從機箱移除控制器模組。
 . 翻轉控制器模組、將其放置在平穩的表面上。
 . 按下控制器模組兩側的藍色按鈕以鬆開護蓋、然後向上或向外旋轉控制器模組護蓋、以打開護蓋。
 +
@@ -155,7 +155,7 @@ image::../media/icon_round_2.png[編號 2]
 
 
 . 從包裝中取出替換電池。
-安裝替換電池：
+. 安裝替換電池：
 +
 .. 將電池插頭插回控制器模組上的插槽。
 +
@@ -216,8 +216,8 @@ NOTE: 在開機程序期間、您可能會看到下列提示：
 
 
 
-[[step-5-restore-automatic-giveback-and-autsupport]]
-== 步驟 5 ：還原自動恢復和自動支援
+[[step-5-restore-automatic-giveback-and-autosupport]]
+== 步驟 5 ：還原自動恢復和 AutoSupport
 
 如果已停用、請還原自動恢復和 AutoSupport 。
 

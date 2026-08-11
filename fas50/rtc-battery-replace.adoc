@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the real-time clock battery 
 summary: 更換 FAS50 儲存系統中的即時時鐘電池（通常稱為鈕扣電池），以確保依賴精確時間同步的服務和應用程式能夠繼續運作。 
 ---
-= 更換實時時鐘電池 - FAS50
+= 更換 FAS50 系統中的即時時鐘電池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -283,7 +283,7 @@ image::../media/icon_round_3.png[編號 3]
 如有需要，請將把手垂直轉動（在彈片旁），將其移出。
 
 |===
-. 逆時針轉動指旋螺絲以鬆開控制器護蓋，然後打開護蓋。
+. 逆時針旋轉指旋螺絲將其鬆開，然後開啟控制器蓋。
 
 
 
@@ -445,7 +445,7 @@ DC PSU
 == 步驟 5 ：重設控制器上的時間和日期
 
 
-NOTE: 更換 RTC 電池，插入控制器並開啟第一次 BIOS 重設的電源後，您會看到下列錯誤訊息：
+NOTE: 更換 RTC 電池後，插入控制器，並開機進行首次 BIOS 重置，您會看到以下錯誤訊息：
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`這些訊息是預期的，您可以繼續執行此程序。
 
@@ -455,7 +455,7 @@ NOTE: 更換 RTC 電池，插入控制器並開啟第一次 BIOS 重設的電源
 
 +
 
-NOTE: 如果您的儲存系統停止在開機功能表，請在出現提示時選取選項 `Reboot node`並回應 _y_ ，然後按下 _Ctrl-C_ 以開機至 Loader 。
+NOTE: 如果您的儲存系統在開機功能表處停止，請選擇該選項 `Reboot node`並在提示時回答 _y_，然後按 _Ctrl-C_ 開機至 LOADER。
 
 . 在受損控制器上，在 LOADER 提示字元下檢查時間和日期：
 +

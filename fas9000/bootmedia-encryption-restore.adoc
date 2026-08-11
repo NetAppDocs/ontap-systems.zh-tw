@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve, manual, manual boot recovery 
 summary: 環境變數檢查完畢後，您必須完成已啟用板載金鑰管理員（OKM）、NetApp 儲存加密（NSE）或 NetApp 磁碟區加密（NVE）的系統的特定步驟。FAS9000 系統僅支援手動開機媒體還原程序。 
 ---
-= 還原加密 - FAS9000
+= 還原 FAS9000 系統中開機媒體上的加密
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-恢復替換啟動媒體上的加密。FAS9000系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
+若要還原 FAS9000 系統中替換開機媒體上的加密，請依照適用於您的金鑰管理程式類型（例如 Onboard Key Manager （OKM））的步驟進行操作。FAS9000 系統僅支援手動開機媒體恢復程序。
 
 根據您的金鑰管理員類型，完成相應的步驟以恢復系統加密。如果您不確定您的系統使用哪個金鑰管理器，請檢查您在啟動媒體更換程序開始時所擷取的設定。
 

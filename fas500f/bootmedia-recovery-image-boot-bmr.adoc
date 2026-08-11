@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, boot the recovery image 
 summary: 在 FAS500f 系統中安裝新的開機媒體裝置後、您可以啟動自動開機媒體還原程序、從合作夥伴節點還原組態。 
 ---
-= 從合作夥伴節點自動復原開機媒體 - FAS500f
+= 使用自動開機恢復流程還原 FAS500f 系統上的開機映像
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -301,4 +301,4 @@ LOADER-B>
 
 
 .下一步
-還原 ONTAP 映像並啟動節點並提供資料之後link:bootmedia-complete-rma-bmr.html["將故障零件退回 NetApp"]，您就可以了。
+還原 ONTAP 映像後，節點已啟動並開始提供資料服務，link:bootmedia-complete-rma-bmr.html["將故障零件退回 NetApp"]。

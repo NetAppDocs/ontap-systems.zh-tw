@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, prerequisite, replace the controller module 
 summary: 您必須檢閱更換程序的先決條件、並針對ONTAP 您的版本選擇正確的解決方法。 
 ---
-= 控制器模組更換總覽 - FAS8200
+= 在更換 FAS8200 系統中的控制器之前，請先查看相關要求。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -36,7 +36,7 @@ NetApp 強烈建議您在使用的裝置上啟用主控台記錄功能，並在�
 * 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 * 您必須以相同型號的控制器模組來更換控制器模組。您無法只更換控制器模組來升級系統。
 * 在此程序中、您無法變更任何磁碟機或磁碟機櫃。
-* 在此程序中、開機裝置會從受損的控制器移至_replaced_控制器、以便以ONTAP 與舊控制器模組相同的版本進行_replaced_控制器開機。
+* 在此程序中，開機裝置從受損控制器移至_replacement_控制器，以便_replacement_控制器能夠以與舊控制器模組相同的 ONTAP 版本開機。
 * 更換控制器模組必須支援從舊控制器模組移至新控制器模組或從現有客戶站台庫存新增的任何PCIe卡。
 +
 https://hwu.netapp.com["NetApp Hardware Universe"]

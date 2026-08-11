@@ -1,16 +1,18 @@
 ---
 permalink: fas2800/controller-replace-shutdown.html 
 sidebar: sidebar 
-keywords: fas2800, shut down the impaired controller 
-summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
+keywords: fas2820, shut down the impaired controller 
+summary: 在更換受損控制器之前，請先關閉 FAS2820 系統中的受損控制器。您使用的程序取決於儲存系統的硬體組態。 
 ---
-= 關閉功能受損的控制器 - FAS2820
+= 更換前，請先關閉 FAS2820 系統中故障的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在更換受損控制器之前，請先關閉 FAS2820 系統中的受損控制器。您使用的程序取決於儲存系統的硬體組態。
+
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
 
 如果叢集有兩個以上的節點、則叢集必須處於仲裁狀態。如果叢集未達到法定人數、或健全的控制器顯示為「假」、表示符合資格和健全狀況、則您必須在關閉受損的控制器之前修正問題；請參閱 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum["將節點與叢集同步"^]。

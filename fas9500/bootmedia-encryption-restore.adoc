@@ -2,16 +2,16 @@
 permalink: fas9500/bootmedia-encryption-restore.html 
 sidebar: sidebar 
 keywords: fas9500, post boot media replacement steps for okm, nse, and nve 
-summary: 檢查完環境變數後、您必須完成已啟用 Onboard Key Manager OKM、NetApp Storage Encryption NSE 或 NetApp Volume Encryption NVE 的系統的特定步驟。 
+summary: 檢查環境變數後，必須完成已啟用 Onboard Key Manager （OKM）、NetApp Storage Encryption （NSE） 或 NetApp Volume Encryption （NVE） 的系統的特定步驟。 
 ---
-= 還原加密 - FAS9500
+= 手冊開機恢復程序完成後，還原 FAS9500 系統中開機媒體上的加密。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在替換開機媒體上還原加密。
+在 FAS9500 系統中更換開機媒體後，請依照金鑰管理程式類型（例如 Onboard Key Manager （OKM））的步驟還原加密。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 

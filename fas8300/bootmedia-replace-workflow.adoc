@@ -2,16 +2,16 @@
 permalink: fas8300/bootmedia-replace-workflow.html 
 sidebar: sidebar 
 keywords: fas8700, fas8300, replace the boot media 
-summary: 透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換FAS8300儲存系統中的啟動媒體。 
+summary: 若要開始更換 FAS8300 或 FAS8700 儲存系統中的開機媒體，請先審查更換要求、檢查加密狀態、關閉控制器、更換開機媒體、開機恢復映像、還原加密，並驗證系統功能。 
 ---
-= 啟動介質手動復原工作流程 - FAS8300 和 FAS8700
+= 使用手冊開機恢復流程的 FAS8300 和 FAS8700 開機媒體更換工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-透過查看更換需求、檢查加密狀態、關閉控制器、更換啟動媒體、啟動復原映像、復原加密以及驗證系統功能，開始更換FAS8300儲存系統中的啟動媒體。
+若要開始更換 FAS8300 或 FAS8700 儲存系統中的開機媒體，請先審查更換要求、檢查加密狀態、關閉控制器、更換開機媒體、開機恢復映像、還原加密，並驗證系統功能。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 
@@ -25,7 +25,7 @@ summary: 透過查看更換需求、檢查加密狀態、關閉控制器、更�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:bootmedia-shutdown.html["關閉控制器"]
 [role="quick-margin-para"]
-當您需要更換開機媒體時，請關閉控制器。
+當您需要更換啟動介質時，請關閉控制器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:bootmedia-replace.html["更換開機媒體"]
 [role="quick-margin-para"]
@@ -37,7 +37,7 @@ summary: 透過查看更換需求、檢查加密狀態、關閉控制器、更�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:bootmedia-encryption-restore.html["還原加密"]
 [role="quick-margin-para"]
-從ONATP啟動選單恢復板載金鑰管理器設定或外部金鑰管理器。
+從ONTAP啟動選單恢復板載金鑰管理器設定或外部金鑰管理器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"]link:bootmedia-complete-rma.html["將故障零件歸還給NetApp"]
 [role="quick-margin-para"]

@@ -2,18 +2,18 @@
 permalink: fas2600/dimm-replace.html 
 sidebar: sidebar 
 keywords: fas2600, replace dimm 
-summary: 當儲存系統遇到錯誤時，例如基於 Health Monitor 警示的過多可修正錯誤修正代碼錯誤或無法修正的 ECC 錯誤，則必須更換控制器中的 DIMM，這通常是由單一 DIMM 故障引起的，導致儲存系統無法開機 ONTAP。 
+summary: 當儲存系統根據 Health Monitor 警報遇到過多的可修正 ECC 錯誤，或由於單一 DIMM 故障導致系統無法開機 ONTAP 而出現不可修正的 ECC 錯誤時，請更換 FAS2600 系統中的 DIMM。 
 ---
-= 更換DIMM - FAS2600
+= 更換 FAS2600 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。
+當儲存系統根據執行狀況監視器警報遇到過多的 CECC （可修正錯誤修正代碼）錯誤，或遇到無法修正的 ECC 錯誤時，請更換 FAS2600 系統中的 DIMM，這通常是由單一 DIMM 故障引起的，導致儲存系統無法開機 ONTAP。
 
-系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
+如果其他任何組件無法正常運作，請聯絡技術支援。
 
 您必須使用從供應商處收到的替換FRU元件來更換故障元件。
 
@@ -154,7 +154,7 @@ DIMM插針之間的槽口應與插槽中的卡舌對齊。
 
 . 確定連接器上的DIMM彈出彈片處於開啟位置、然後將DIMM正面插入插槽。
 +
-DIMM可緊密插入插槽、但應該很容易就能裝入。如果沒有、請重新將DIMM與插槽對齊、然後重新插入。
+DIMM 與插槽配合緊密，但應該可以輕鬆插入。如果插入困難，請重新對準 DIMM 與插槽的位置，然後重新插入。
 
 +
 
