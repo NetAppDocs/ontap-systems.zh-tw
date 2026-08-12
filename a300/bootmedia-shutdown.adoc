@@ -2,16 +2,16 @@
 permalink: a300/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a300, shut down the impaired controller, manual, manual boot recovery 
-summary: 您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。AFF A300系統僅支援手動啟動媒體復原程式。 
+summary: 在手動開機媒體恢復過程中，關閉 AFF A300 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
-= 在手動開機恢復過程中，關閉 AFF A300 系統中發生故障的控制器。
+= 在手動開機恢復過程中，關閉 AFF A300 系統中的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-使用適合您配置的相應程式關閉或接管故障控制器。AFF A300系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+在手動開機媒體恢復過程中，關閉 AFF A300 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 
 
@@ -62,7 +62,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 [[option-2-controller-is-in-a-metrocluster-configuration]]
 == 選項2：控制器採用MetroCluster 不含資訊的組態
 
-完成NVE或NSE工作之後、您需要完成受損節點的關機。
+完成 NVE 或 NSE 任務後，您需要完成節點的關閉。
 
 
 NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
@@ -124,7 +124,7 @@ NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此�
 [[option-3-controller-is-in-a-two-node-metrocluster]]
 == 選項3：控制器位於雙節點MetroCluster 的不二
 
-完成NVE或NSE工作之後、您需要完成受損節點的關機。
+完成 NVE 或 NSE 任務後，您需要完成節點的關閉。
 
 若要關閉受損的控制器、您必須判斷控制器的狀態、並在必要時切換控制器、使健全的控制器繼續從受損的控制器儲存設備提供資料。
 

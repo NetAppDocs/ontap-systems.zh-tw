@@ -2,7 +2,7 @@
 permalink: asa-c250/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: asa c250, shutdown 
-summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
+summary: 在手動開機媒體還原過程中，關閉 ASA C250 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
 = 在手動開機恢復過程中，關閉 ASA C250 系統中的控制器。
 :allow-uri-read: 
@@ -10,12 +10,14 @@ summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機�
 :imagesdir: ../media/
 
 
+[role="lead"]
+在手動開機媒體還原過程中，關閉 ASA C250 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
+
 
 
 [[option-1-most-systems]]
 == 選項1：大多數系統
 
-[role="lead"]
 透過將故障控制器停止到 LOADER 提示符號並擷取啟動環境變數，完成故障控制器的關機。LOADER 提示符號是安全的停止狀態，您可以從該狀態更換啟動媒體。
 
 .步驟
@@ -60,7 +62,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 [[option-2-systems-in-a-metrocluster]]
 == 選項2：MetroCluster 系統在一個方面
 
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。
+完成 NVE 或 NSE 任務後，需要完成控制器的關機。
 
 
 NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。

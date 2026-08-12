@@ -2,7 +2,7 @@
 permalink: a250/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a250, shut down the controller 
-summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機。 
+summary: 在手動開機媒體恢復過程中，關閉 AFF A250 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
 = 在手動開機恢復過程中，關閉 AFF A250 系統中的控制器。
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 完成NVE或NSE工作之後、您必須完成受損控制器的關機�
 
 
 [role="lead"]
-關閉 AFF A250 儲存系統中發生故障的控制器，以防止資料遺失，並在手動開機媒體恢復過程中維持系統穩定性。
+在手動開機媒體恢復過程中，關閉 AFF A250 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 如果您的儲存系統執行的是 ONTAP 9.18.1 或更新版本，請使用 link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統執行的是較早版本的 ONTAP，則必須使用手動開機還原程序。
 

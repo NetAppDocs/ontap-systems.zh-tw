@@ -2,16 +2,16 @@
 permalink: a200/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a200, shut down the controller, manual, manual boot recovery 
-summary: 完成 NVE 或 NSE 任務後，需要完成故障控制器的關閉。AFF A200系統僅支援手動啟動媒體復原程式。 
+summary: 在手動開機媒體恢復過程中，關閉 AFF A200 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
-= 在手動開機恢復過程中，關閉 AFF A200 系統中發生故障的控制器。
+= 在手動開機恢復過程中，關閉 AFF A200 系統中的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-使用適合您配置的對應程式關閉故障控制器。AFF A200系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+在手動開機媒體恢復過程中，關閉 AFF A200 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 透過將故障控制器停止到 LOADER 提示符號並擷取啟動環境變數，完成故障控制器的關機。LOADER 提示符號是安全的停止狀態，您可以從該狀態更換啟動媒體。
 

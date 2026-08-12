@@ -2,16 +2,16 @@
 permalink: fas2600/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: fas2600, shut down the controller, manual, manual boot recovery 
-summary: 完成加密檢查後，關閉 FAS2600 系統上故障的控制器。FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。 
+summary: 在手動開機媒體恢復過程中，關閉 FAS2600 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
-= 在開機媒體恢復期間，關閉 FAS2600 系統中受損的控制器
+= 在開機媒體恢復期間關閉 FAS2600 系統中的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-完成加密檢查後，關閉 FAS2600 系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動媒體。
+在手動開機媒體恢復過程中，關閉 FAS2600 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 FAS2600 系統僅支援手動啟動媒體復原程序。不支援自動啟動媒體恢復。
 

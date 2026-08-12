@@ -11,7 +11,7 @@ summary: 在關閉受損的控制器並檢查機載加密金鑰的狀態之前�
 
 
 [role="lead"]
-為確保 AFF A250 儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption（NVE），並在關閉控制器之前檢查金鑰管理員是否已啟動。
+為確保 AFF A250 儲存系統的資料安全，請驗證開機媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （NVE）。關閉控制器前，請檢查金鑰管理程式是否已作用中。
 
 如果您的儲存系統執行的是 ONTAP 9.18.1 或更新版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統執行的是較早版本的 ONTAP，則必須使用手動開機還原程序。
 
@@ -213,4 +213,4 @@ NOTE: 這是您在最初配置車載密鑰管理器時建立的叢集範圍密�
 
 
 .接下來呢？
-在引導媒體上檢查加密密鑰支持和狀態後，您需要link:bootmedia-shutdown.html["關閉控制器"]。
+檢查開機媒體上的加密金鑰支援和狀態後，link:bootmedia-shutdown.html["關閉控制器"]。

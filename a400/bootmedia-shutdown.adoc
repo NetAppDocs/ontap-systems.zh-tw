@@ -2,7 +2,7 @@
 permalink: a400/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a400, aff, a400, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller 
-summary: 根據儲存系統硬體組態的不同、您可以使用不同的程序來關閉或接管受損的控制器。 
+summary: 在手動開機媒體恢復過程中，關閉 AFF A400 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
 = 在手動開機恢復過程中，關閉 AFF A400 系統中的控制器。
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 根據儲存系統硬體組態的不同、您可以使用不同的程�
 
 
 [role="lead"]
-關閉 AFF A400 儲存系統中受損的控制器，以防止資料遺失，並在手動開機恢復過程中維持系統穩定性。
+在手動開機媒體恢復過程中，關閉 AFF A400 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 如果您的儲存系統運作的是ONTAP 9.17.1 或更高版本，請使用link:bootmedia-replace-workflow-bmr.html["自動啟動恢復程序"]。如果您的系統運行的是早期版本的ONTAP，則必須使用手動啟動復原程序。
 

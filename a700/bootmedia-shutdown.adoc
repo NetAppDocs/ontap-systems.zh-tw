@@ -2,16 +2,16 @@
 permalink: a700/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: aff a700, shut, down, impaired, controller, take, over, manual, manual boot recovery 
-summary: 完成加密檢查後，關閉AFF A700系統上故障的控制器。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。 
+summary: 在手動開機媒體恢復過程中，關閉 AFF A700 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
-= 在手動開機恢復過程中，關閉 AFF A700 系統中發生故障的控制器。
+= 在手動開機恢復過程中，關閉 AFF A700 系統中的控制器。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-完成加密檢查後，關閉AFF A700系統上故障的控制器。此過程包括將控制器帶到 LOADER 提示符，捕獲啟動環境變數以供參考，以及準備控制器以更換啟動介質，具體步驟因係統配置而異。
+在手動開機媒體恢復過程中，關閉 AFF A700 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
 
@@ -64,7 +64,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 [[option-2-controller-is-in-a-metrocluster]]
 === 選項2：控制器位於MetroCluster 一個不二之處
 
-完成NVE或NSE工作之後、您需要完成受損節點的關機。附註：如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。
+完成 NVE 或 NSE 任務後，您需要完成節點的關閉。注意：如果您的系統採用雙節點 MetroCluster 組態，請勿使用此步驟。
 
 接管並停止故障控制器，以便正常控制器繼續從故障控制器的儲存提供資料。為此，您需要在 AutoSupport 中停用自動建立案例功能、停用自動復原功能，並將故障控制器置於 LOADER 提示字元。LOADER 提示字元是安全的停止狀態，您可以從中更換 FRU。
 
@@ -123,7 +123,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 [[option-3-controller-is-in-a-two-node-metrocluster]]
 == 選項3：控制器位於雙節點MetroCluster 的不二
 
-完成NVE或NSE工作之後、您需要完成受損節點的關機。
+完成 NVE 或 NSE 任務後，您需要完成節點的關閉。
 
 
 NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。

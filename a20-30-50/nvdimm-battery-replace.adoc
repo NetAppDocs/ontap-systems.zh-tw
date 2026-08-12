@@ -14,7 +14,7 @@ summary: 當電池開始失去電量或故障時，請更換AFF A20、 AFF A30 �
 當電池開始失去電量或故障時，請更換AFF A20、 AFF A30 或AFF A50 儲存系統中的 NV 電池，因為它負責在斷電期間保存關鍵系統資料。更換過程包括關閉受損的控制器、移除控制器模組、更換 NV 電池、重新安裝控制器模組以及將故障零件退回給NetApp。
 
 .開始之前
-儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+儲存系統中的所有其他元件必須正常運作。如果它們發生故障，請在繼續執行此步驟之前聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
 
 .關於這項工作
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。

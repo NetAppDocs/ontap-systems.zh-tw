@@ -532,7 +532,7 @@ image:../media/oie_cable100_gbe_qsfp28.png["GbE 銅線 SFP"]
 
 . 使用下列動畫或繪圖來設定一或多個磁碟機櫃ID：
 +
-NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃 ID 、您必須建立工具、將其插入按鈕所在的鑽孔中。如link:../ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"]需詳細說明、請參閱。
+NS224 機櫃預設機櫃 ID 為 00 和 01。如需變更機櫃 ID，您必須建立一個工具並將其插入按鈕所在的孔中。如需詳細指示，請參閱 link:../ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"]。
 
 +
 .動畫-設定NVMe磁碟機磁碟櫃ID
@@ -581,7 +581,7 @@ image::../media/drw_a900_power-on_IEOPS-941.svg[電源開關]
 
 +
 
-NOTE: 初始開機最多可能需要八分鐘。
+NOTE: 首次啟動可能需要長達八分鐘的時間。
 
 . 請確定您的筆記型電腦已啟用網路探索功能。
 +
@@ -600,7 +600,7 @@ image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[選取 ONTAP �
 
 +
 .. 開啟檔案總管。
-.. 按一下左窗格中的 * 網路 * 、然後按一下滑鼠右鍵並選取 * 重新整理 * 。
+.. 在左側窗格中選擇 *Network*，按一下滑鼠右鍵，然後選擇 *重新整理*。
 .. 按兩下ONTAP 任一個「資訊」圖示、並接受畫面上顯示的任何憑證。
 +
 
@@ -653,7 +653,7 @@ image::../media/drw_a900_cable_console_switch_controller_IEOPS-953.svg[主控台
 
 . 請使用下列動畫來設定一或多個磁碟機櫃ID：
 +
-NS224磁碟櫃已預先設定為機櫃ID 00和01。如果您想要變更機櫃 ID 、您必須建立工具、將其插入按鈕所在的鑽孔中。如link:../ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"]需詳細說明、請參閱。
+NS224 機櫃預設機櫃 ID 為 00 和 01。如需變更機櫃 ID，您必須建立一個工具並將其插入按鈕所在的孔中。如需詳細指示，請參閱 link:../ns224/change-shelf-id.html["變更機櫃ID - NS224機櫃"]。
 
 +
 .動畫-設定NVMe磁碟機磁碟櫃ID
@@ -702,7 +702,7 @@ image::../media/drw_a900_power-on_IEOPS-941.svg[電源開關]
 
 +
 
-NOTE: 初始開機最多可能需要八分鐘。
+NOTE: 首次啟動可能需要長達八分鐘的時間。
 
 . 將初始節點管理IP位址指派給其中一個節點。
 +

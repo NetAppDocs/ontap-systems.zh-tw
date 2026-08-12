@@ -14,7 +14,7 @@ summary: 更換 AFF A20、AFF A30 或 AFF A50 儲存系統中的即時時鐘電�
 更換AFF A20、 AFF A30 或AFF A50 儲存系統中的即時時鐘 (RTC) 電池（通常稱為紐扣電池），以確保依賴準確時間同步的服務和應用程式保持運作。
 
 .開始之前
-儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+儲存系統中的所有其他元件必須正常運作。如果它們發生故障，請在繼續執行此步驟之前聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
 
 .關於這項工作
 * 您可以將此程序用於儲存系統支援的所有 ONTAP 版本。
@@ -283,7 +283,7 @@ image::../media/icon_round_3.png[編號 3]
 如有需要，請將把手垂直轉動（在彈片旁），將其移出。
 
 |===
-. 逆時針轉動指旋螺絲以鬆開控制器護蓋，然後打開護蓋。
+. 逆時針旋轉指旋螺絲將其鬆開，然後開啟控制器蓋。
 
 
 
@@ -445,7 +445,7 @@ DC PSU
 == 步驟 5 ：重設控制器上的時間和日期
 
 
-NOTE: 更換 RTC 電池，插入控制器並開啟第一次 BIOS 重設的電源後，您會看到下列錯誤訊息：
+NOTE: 更換 RTC 電池後，插入控制器，並啟動系統進行首次 BIOS 重置，您將看到以下錯誤訊息：
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`這些訊息是預期的，您可以繼續執行此程序。
 
@@ -455,7 +455,7 @@ NOTE: 更換 RTC 電池，插入控制器並開啟第一次 BIOS 重設的電源
 
 +
 
-NOTE: 如果您的儲存系統停止在開機功能表，請在出現提示時選取選項 `Reboot node`並回應 _y_ ，然後按下 _Ctrl-C_ 以開機至 Loader 。
+NOTE: 如果您的儲存系統在開機功能表處停止，請選擇該選項 `Reboot node`並在提示時回答 _y_，然後按 _Ctrl-C_ 開機至 LOADER。
 
 . 在受損控制器上，在 LOADER 提示字元下檢查時間和日期：
 +
@@ -473,7 +473,7 @@ NOTE: 如果您的儲存系統停止在開機功能表，請在出現提示時�
 .. 確認日期和時間。
 
 
-. 在 Loader 提示符下，輸入 `bye`以重新初始化 I/O 模塊和其他組件，然後讓控制器重新啓動。
+. 在 LOADER 提示字元下，輸入 `bye`以重新初始化 I/O 模組和其他元件，並重新開機控制器。
 
 
 

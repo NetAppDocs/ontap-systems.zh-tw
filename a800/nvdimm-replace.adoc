@@ -11,11 +11,11 @@ summary: 當系統偵測到快閃記憶體壽命即將耗盡或偵測到的 NVDI
 
 
 [role="lead"]
-當您的AFF A800系統偵測到快閃記憶體壽命即將結束或偵測到已識別的 NVDIMM 記憶體狀況不佳時，請更換 NVDIMM 記憶體條；否則會導致系統崩潰。
+當您的 AFF A800 系統偵測到快閃記憶體壽命即將結束或偵測到的 NVDIMM 發生故障時，請更換 NVDIMM。如果未更換故障的 NVDIMM，會導致系統崩潰。
 
 .開始之前
-* 請確保您已收到從NetApp收到的替換 NVDIMM，並且該 NVDIMM 與您的AFF A800系統相容。
-* 請確保儲存系統中的所有其他元件均正常運作；如果出現問題，請聯絡NetApp支援。
+* 請確保您已從 NetApp 收到替換的 NVDIMM，並且它與您的 AFF A800 系統相容。
+* 請確保儲存系統中的所有其他元件均運作正常。如果發生故障，請聯絡 NetApp 支援。
 
 
 
@@ -243,8 +243,8 @@ NOTE: 目視檢查NVDIMM、確認其已平均對齊並完全插入插槽。
 
 
 
-[[step-4-reinstall-the-controller-module-and-booting-the-system]]
-== 步驟4：重新安裝控制器模組並啟動系統
+[[step-4-reinstall-the-controller-module-and-boot-the-system]]
+== 步驟 4 ：重新安裝控制器模組並啟動系統
 
 重新安裝控制器模組、然後重新啟動。
 

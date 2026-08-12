@@ -2,16 +2,16 @@
 permalink: fas8300/bootmedia-shutdown-bmr.html 
 sidebar: sidebar 
 keywords: fas8300, shut down the controller 
-summary: 關閉FAS8300或FAS8700儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。 
+summary: 更換開機媒體時，請關閉 FAS8300 或 FAS8700 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。 
 ---
-= 在自動開機恢復過程中，關閉 FAS8300 或 FAS8700 系統中發生故障的控制器。
+= 在自動開機恢復過程中，關閉 FAS8300 或 FAS8700 系統中的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-關閉FAS8300或FAS8700儲存系統中受損的控制器，以防止資料遺失並確保更換啟動媒體時系統穩定性。
+更換開機媒體時，請關閉 FAS8300 或 FAS8700 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。
 
 自動啟動媒體復原過程僅在ONTAP 9.17.1 及更高版本中支援。如果您的儲存系統運行的是早期版本的ONTAP，請使用link:bootmedia-replace-workflow.html["手動啟動恢復程序"] 。
 
@@ -82,4 +82,4 @@ summary: 關閉FAS8300或FAS8700儲存系統中受損的控制器，以防止資
 
 
 .下一步
-當您關閉受損的控制器之後link:bootmedia-replace-bmr.html["更換開機媒體"]，您將會。
+關閉控制器後，您link:bootmedia-replace-bmr.html["更換開機媒體"]。

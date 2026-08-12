@@ -2,16 +2,16 @@
 permalink: a220/bootmedia-shutdown.html 
 sidebar: sidebar 
 keywords: fas2700, aff a220, shut, down, impaired, controller, take, over, manual, manual boot recovery 
-summary: 您可以根據儲存系統硬體配置的不同，使用不同的程式來關閉或接管故障控制器。AFF A220系統僅支援手動啟動媒體復原程式。 
+summary: 在手動開機媒體恢復過程中，關閉 AFF A220 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。 
 ---
-= 關閉 AFF A220 系統中發生故障的控制器
+= 關閉 AFF A220 系統中的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-使用適合您配置的相應程式關閉或接管故障控制器。AFF A220系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。
+在手動開機媒體恢復過程中，關閉 AFF A220 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。
 
 
 
@@ -62,7 +62,7 @@ NOTE: 如果開機裝置毀損或無法運作、此命令可能無法運作。
 [[option-2-controller-is-in-a-metrocluster]]
 == 選項2：控制器位於MetroCluster 一個不二之處
 
-完成NVE或NSE工作之後、您必須完成受損控制器的關機。
+完成 NVE 或 NSE 任務後，需要完成控制器的關機。
 
 
 NOTE: 如果您的系統採用雙節點MetroCluster 的功能、請勿使用此程序。

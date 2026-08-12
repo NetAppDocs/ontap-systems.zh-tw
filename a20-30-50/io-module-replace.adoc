@@ -16,7 +16,7 @@ summary: 當AFF A20、 AFF A30 或AFF A50 儲存系統中的 I/O 模組發生故
 更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，並將故障零件退回 NetApp。
 
 .開始之前
-儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+儲存系統中的所有其他元件必須正常運作。如果它們發生故障，請在繼續執行此步驟之前聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
 
 .關於這項工作
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。

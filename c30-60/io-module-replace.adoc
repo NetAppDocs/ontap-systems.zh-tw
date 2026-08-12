@@ -14,7 +14,7 @@ summary: 當模組發生故障或需要升級以支援更高效能或附加功�
 當模組發生故障或需要升級以支援更高效能或附加功能時，請更換AFF C30 或AFF C60 儲存系統中的 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。
 
 .開始之前
-儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+儲存系統中的所有其他元件必須正常運作。如果它們發生故障，請在繼續執行此步驟之前聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
 
 .關於這項工作
 如有需要，您可以開啟儲存系統位置（藍色） LED ，以協助實際定位受影響的儲存系統。使用 SSH 登入 BMC ，然後輸入 `system location-led _on_`命令。
@@ -25,10 +25,10 @@ summary: 當模組發生故障或需要升級以支援更高效能或附加功�
 
 
 
-[[step-1-shut-down-the-impaired-controller]]
-== 步驟1：關閉受損的控制器
+[[step-1-shut-down-the-controller-with-the-impaired-io-module]]
+== 步驟 1：關閉故障 I/O 模組所在的控制器
 
-使用下列其中一個選項來關閉或接管受損的控制器。
+使用下列選項之一關閉或接管具有故障 I/O 模組的控制器。
 
 [role="tabbed-block"]
 ====
