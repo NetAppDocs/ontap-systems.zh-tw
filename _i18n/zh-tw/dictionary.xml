@@ -11689,7 +11689,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="3f5511369794c1ee63fa5125d9a5db59" category="paragraph">AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
   <block id="2e930073e64024b137488b076f49173b" category="summary">了解AFF A700系統上的啟動介質更換，並了解不同的更換方法。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
   <block id="50cf5ff096dc3312afbcf78ae754cb14" category="paragraph">了解AFF A700系統上的啟動介質更換，並了解不同的更換方法。啟動媒體儲存系統啟動時使用的主啟動映像檔和輔助啟動映像檔。根據您的網路配置，您可以執行非中斷式更換（使用內部 e0S 連線）或中斷式更換（需要兩次重新啟動）。</block>
-  <block id="d1d2b405ad8bdeae70fb327661aff7a6" category="summary">更換AFF A700控制器模組上故障的啟動介質。AFF A700系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
   <block id="85a247e45c819a9feaa0b28c861135b7" category="paragraph">更換AFF A700控制器模組上故障的啟動介質。此過程包括從機箱中取出控制器模組，物理更換啟動介質組件，使用 USB 隨身碟將啟動映像傳輸到更換的介質，以及將系統恢復到正常運作狀態。</block>
   <block id="dc042dd29833b053080629e6a3a65c7b" category="paragraph">啟動媒體儲存系統啟動時所使用的主啟動映像檔集和輔助啟動映像檔集。AFF A700和FAS9000系統僅支援手動啟動媒體恢復程序。</block>
   <block id="91d08f7feb0cfd21fefc415323d857ee" category="paragraph">請依照套件隨附的 RMA 說明中的說明，將故障元件退回給NetApp。參見<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block> 更多資訊請參閱頁面。AFF A700s系統僅支援手動啟動媒體復原程式。不支援自動啟動媒體恢復。</block>
@@ -12143,7 +12142,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="9492514c6280c5d6ecf3fe85120065ea" category="summary">若要完成 AFF A250 系統的控制器更換，如有必要，請恢復 NetApp 儲存加密組態、安裝新控制器的授權、並將故障零件退回 NetApp。</block>
   <block id="244c00d77fa9e5f227fc776970c53b6c" category="summary">當系統根據健康監視器警報遇到過多的 CECC 錯誤，或遇到無法修正的 ECC 錯誤導致儲存系統無法啟動 ONTAP 時，請更換 AFF A250 控制器中的 DIMM。</block>
   <block id="b684b7214d40df10105c8970d247f071" category="summary">若要更換 AFF A250 系統中的電源供應器，請中斷目標 PSU 與電源的連線、拔下電源線、移除舊的 PSU、安裝替換的 PSU，然後將其重新連接至電源。</block>
-  <block id="ae425b975a6a046a58fb4d15d457e360" category="summary">更換 AFF A250 控制器模組中的即時時鐘電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="009e5e05d86cbe23663a0b21e9479f8b" category="summary">在雙節點 MetroCluster 配置中完成開機媒體更換後、請執行 MetroCluster 切換作業、將組態恢復至正常作業狀態。AFF A300 系統僅支援手動開機媒體還原程序。</block>
   <block id="1d39e867dc7ed9008e966b116f4df953" category="summary">更換開機媒體後、請將故障零件退回 NetApp。AFF A300 系統僅支援手動開機媒體還原程序。</block>
   <block id="d2b049a7054e7e6f0e2f4783375aefe3" category="summary">在已替換的開機媒體上還原加密。完成針對已啟用 Onboard Key Manager、NetApp Storage Encryption 或 NetApp Volume Encryption 的系統的特定步驟。AFF A300 系統僅支援手動開機媒體還原程序。</block>
@@ -13051,204 +13049,76 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b60cf29845b500861cf2f73b433dcb7a" category="paragraph">DS460C 機櫃最大重量可達 260.4 磅（118.1 公斤）。搬運儲存設備機櫃可能需要多達五人或液壓升降機。請將所有組件（包括前後組件）放置在儲存設備機櫃中，以防止機櫃重量不平衡。</block>
   <block id="ede44ca49dfc10f87edfa2084fe039d9" category="paragraph">DS460C 機櫃最大重量可達 260.4 磅（118.1 公斤）。抬起該機櫃可能需要多達五人或一台液壓升降機。請將所有組件保留在機櫃中（包括前後兩側），以防止機櫃重量不平衡。</block>
   <block id="aad4cd5b2a338cacf10953105ac85138" category="doc">將故障的 AFF A150 開機媒體退回 NetApp</block>
-  <block id="873846e7faa0d42898a747e85b7524bb" category="doc">檢查 AFF A150 系統中開機媒體的加密支援</block>
   <block id="05719f7ef08d04e7aad4fda3bb88a7f2" category="paragraph">為確保 AFF A150 儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption（NVE），並在關閉控制器之前檢查金鑰管理員是否已啟動。</block>
-  <block id="16c95affa00c159e0d7054b58dee2f4e" category="doc">還原 AFF A150 系統中開機媒體上的加密</block>
   <block id="a981fe3703da418a8d1a7bd55853b3a0" category="paragraph">請在 AFF A150 系統中，使用替換開機媒體恢復加密，以確保資料持續受到保護。替換程序包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
-  <block id="90631011b4a6d9713123de7224af4e2a" category="doc">使用手動開機恢復程序，在您的 AFF A150 系統上啟動恢復映像。</block>
   <block id="369b37a6b30f65a188e5ad98ef9918db" category="paragraph">在 AFF A150 系統中安裝新的開機媒體後，從 USB 磁碟機開機 ONTAP 恢復映像，以還原檔案系統並驗證環境變數。</block>
-  <block id="95e38dfcdf1f7a82f2422cc1c7afaa77" category="doc">查看更換 AFF A150 系統中開機媒體的要求</block>
-  <block id="65309f1e3ceb284da86545e707989a18" category="doc">更換 AFF A150 系統中的開機媒體</block>
   <block id="b257747b135ff8ab467f257aa341fad9" category="paragraph">AFF A150 系統中的開機媒體儲存著重要的韌體和組態資料。更換過程包括：移除控制器模組、取出受損的開機媒體、安裝新的開機媒體，然後使用 USB 快閃磁碟機將 ONTAP 映像傳輸到新的開機媒體。</block>
-  <block id="8d7cbf03d6d5b7795221898f15650062" category="doc">在手動開機恢復過程中，關閉 AFF A150 系統中的控制器。</block>
-  <block id="08526bb4523a015ebb1098c09e584766" category="doc">完成 AFF A150 系統的機箱更換</block>
-  <block id="316d46ffc2fac5a73e8c26c857b7a4e3" category="doc">更換 AFF A150 系統中的機箱</block>
   <block id="04f3fdde0e55aef8fd23396f47bdc806" category="paragraph">當 AFF A150 系統發生硬體故障需要更換機箱時，請進行更換。更換過程包括將電源供應、磁碟機和控制器模組從受損機箱移至替換機箱。</block>
   <block id="e2fecd58050f321afb4d9cc739d4187c" category="summary">您可以用與故障機箱相同型號的新機箱來更換故障機箱。</block>
-  <block id="4af639d96ea2923ecf9b549cc0ffa08c" category="doc">關閉 AFF A150 控制器以更換機箱</block>
   <block id="eb120278bac5a28337fa9630d9446fff" category="paragraph">更換機殼時，請關閉 AFF A150 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
-  <block id="b8af34bc2adf56f62880a9fbf3dbeae0" category="doc">更換 AFF A150 系統中的控制器</block>
   <block id="55b79e3fcc0fc985172fbfbe1b92cb2b" category="paragraph">當 AFF A150 系統發生硬體故障需要更換控制器時，請進行更換。更換程序包括：移除受損控制器模組、將 FRU 組件移至替換控制器、將替換控制器模組安裝到機箱中，然後將系統開機至維護模式。</block>
   <block id="c23f2d99e6630e96f6714d41148f7dcf" category="paragraph">重新連接儲存設備，確認磁碟重新分配，並還原 NetApp Storage Encryption，使您的 AFF A150 系統恢復全面運作。</block>
-  <block id="cd6db38960e3dddd13012f29b89adfb2" category="doc">完成 AFF A150 系統的控制器更換</block>
   <block id="5a70e75f345fc32ab1b9fd7a5a82ffab" category="paragraph">若要完成 AFF A150 系統的控制器更換，還原 NetApp 儲存加密組態（如有必要），確認邏輯介面 （LIF） 正在向其主連接埠報告，執行叢集資訊健檢，並將故障元件退回 NetApp。</block>
   <block id="492c89edf3f10aca419e45a3c98467f9" category="paragraph">更換控制器時，請關閉 AFF A150 儲存系統中發生故障的控制器，以防止資料遺失並確保系統穩定性。</block>
-  <block id="ed47d84d180c91c1fdff3d523b04306b" category="doc">還原並驗證 AFF A150 系統中的控制器組態</block>
   <block id="4e1ce2a725e1af0c2dd34159cc2a15ec" category="paragraph">完成硬體更換並開機進入維護模式後，請驗證更換控制器的底層系統組態，並視需要重新設定系統設定。</block>
-  <block id="921d44b5b9d0d427333083467a2de817" category="doc">更換 AFF A150 系統中的 DIMM 以修復記憶體容量錯誤</block>
   <block id="68dd36aed3ead472eb1ee38bf2701a7c" category="paragraph">當儲存系統遇到太多可修正（CECC）或不可修正的記憶體容量錯誤時，請更換 AFF A150 系統中的記憶體條 (DIMM)。此類錯誤可能導致儲存系統無法開機 ONTAP。</block>
-  <block id="212b7b1160f4c6fe508a5182890a2a35" category="doc">更換 AFF A150 系統中的磁碟機</block>
   <block id="696a299a3335731a79c3611fb540f1bb" category="paragraph">在 AFF A150 系統中，即使 I/O 正在進行，也可以不中斷營運地更換故障磁碟機，以還原儲存容量和效能。</block>
-  <block id="8a15fc775ae125ef36376f312ef029a6" category="doc">按照詳細的逐步說明安裝您的 AFF A150 系統</block>
   <block id="e05bb9af6c7dbe2032886e10729bb031" category="paragraph">請按照這些詳細的逐步說明安裝您的 AFF A150 儲存系統，從準備站點到啟動 ONTAP 叢集。</block>
-  <block id="4ab6c1d2cf7a7de28542bd26c0d78fca" category="doc">按照簡明圖解說明安裝您的 AFF A150 系統</block>
   <block id="687968522462c4a9ed94a4f7e81f77a1" category="paragraph">依照簡明圖示說明安裝並連接您的 AFF A150 儲存系統。</block>
-  <block id="57ab1d2e94dc2ecdc253740c9e39b41d" category="doc">選擇 AFF A150 儲存系統的安裝方式</block>
   <block id="bd077b440dfa068b09d799de79194916" category="paragraph">選擇您喜歡的 AFF A150 儲存系統安裝格式：詳細的逐步說明、快速圖形指南或影片說明。</block>
-  <block id="c816bc39d4a66014df7c46ac7f0ceaf4" category="doc">按照影片教學安裝您的 AFF A150 系統</block>
   <block id="cb395bb04f0b700edd506ee4d2818060" category="paragraph">按照影片中的逐步說明安裝並連接您的 AFF A150 儲存系統。</block>
   <block id="4b1e6ee3563b83e394866c15838f66d3" category="summary">維護 AFF A150 硬體</block>
-  <block id="a787140401486daf0aebdd31db915c1d" category="doc">了解如何維護您的 AFF A150 儲存系統</block>
   <block id="1d82b77c72207d4516b6e3c50c092cf9" category="paragraph">維護 AFF A150 儲存系統的硬體，以確保其長期可靠性和最佳效能。定期執行維護任務，例如更換故障組件，以協助防止停機和資料遺失。</block>
   <block id="14079e96ea63d90e6c4e81eb422b07e0" category="paragraph">當您的 AFF A150 系統中的 NVMEM 電池開始漏電或故障時，請更換該電池，因為它可以在斷電期間保存關鍵的系統資料。更換過程包括：卸下控制器模組、更換電池，然後重新安裝控制器模組。</block>
-  <block id="e7f6a9052a23907f59cc4ea4d596ece5" category="doc">在 AFF A150 系統中熱交換電源供應單元</block>
   <block id="2fadba4bf531282a52c29a033b6ed3d1" category="paragraph">當您的 AFF A150 系統電源供應故障或損壞時，請更換電源供應。電源供應採用備援且熱交換的設計，因此您無需關閉控制器即可進行更換。</block>
-  <block id="ce2cde17fe08a75cda54cb2785c4e4b7" category="doc">更換 AFF A150 系統中的即時時鐘電池</block>
   <block id="61d01c27dcdd946ba34b27405dee74a0" category="paragraph">更換 AFF A150 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="7daa8458073c4919096c78cc5c2b37a5" category="doc">在自動開機恢復程序結束後，將故障的 AFF A1K 開機媒體退回 NetApp</block>
   <block id="8284cac68620c3ffdd35a70af235564a" category="doc">手冊開機恢復程序結束後，將故障的 AFF A1K 開機媒體退回 NetApp。</block>
-  <block id="810d47ca0628179aabe42361d84269d8" category="doc">檢查 AFF A1K 系統中開機媒體的加密支援</block>
-  <block id="1dc76e5997e337110e9bf3b3865cd4cf" category="doc">手動開機恢復程序後，還原 AFF A1K 系統中開機媒體上的加密。</block>
-  <block id="f5bf5457dab331f890f65466e8d95cdd" category="doc">使用手動開機恢復流程，在您的 AFF A1K 系統上啟動恢復映像。</block>
-  <block id="d022825d5f737e6f4dafddbb4031aeef" category="doc">使用自動開機恢復流程更換 AFF A1K 系統中的開機媒體</block>
-  <block id="a65bdddd0e77ce9788feab7b8a6ca9d0" category="doc">檢閱 AFF A1K 系統中自動開機媒體恢復的需求</block>
-  <block id="8e97154cbf8935dfdb5d443c8962c76b" category="doc">檢閱 AFF A1K 系統中手動開機媒體恢復的需求</block>
   <block id="5fd523f12397310fa5cbec896208ed24" category="doc">使用自動化開機恢復流程的 AFF A1K 開機媒體更換工作流程</block>
   <block id="541e047812cea33128a99956f4464744" category="doc">使用手冊開機恢復流程的 AFF A1K 開機媒體更換工作流程</block>
-  <block id="d86bbee83ab75ea9ed4a32ed6e38b4aa" category="doc">使用手動開機恢復程序更換 AFF A1K 系統中的開機媒體</block>
-  <block id="065f7c04d0d0f04c6bfc4c2d3dd8ae6c" category="doc">在自動開機恢復過程中，關閉 AFF A1K 系統中的控制器。</block>
-  <block id="a8d104f8ff31b83d0723fe6ab63eae3e" category="doc">在手動開機恢復過程中，關閉 AFF A1K 系統中的控制器。</block>
-  <block id="04f0d9caef8bbe50ff995a1434b489fb" category="doc">完成 AFF A1K 系統的機箱更換</block>
   <block id="9ffa9616ae5f7ef70ca86fbb317e379c" category="paragraph">重新開機控制器，驗證系統健全狀況，並將故障零件退回 NetApp，以完成 AFF A1K 系統機箱更換的最後一步。</block>
   <block id="0c30bbfcbd4f3037761d394d40ae30fd" category="paragraph">控制器重新開機後，開機 ONTAP，交還控制器，並驗證系統健全狀況。</block>
-  <block id="95663b9a259fbe85655d816881d624d2" category="doc">更換 AFF A1K 系統中的機箱</block>
-  <block id="25ca33cecc27c384b1c6aa6f32eb80bb" category="doc">準備更換您的 AFF A1K 機箱</block>
-  <block id="9fa7945223d6552c5b81250629e0a37c" category="doc">更換 AFF A1K 機箱前，請先查看相關要求。</block>
-  <block id="632c75e1d60e6f565f03796aa3cae96e" category="doc">關閉 AFF A1K 控制器以更換機箱</block>
   <block id="2131e417ab04428dfb6e49b3a1b4cc87" category="doc">AFF A1K 機箱更換工作流程</block>
-  <block id="237953d6748adf4a886e7007a142202b" category="doc">更換 AFF A1K 系統中的控制器</block>
   <block id="c7bb0682619aac3924ad651203f10f14" category="paragraph">當您的 AFF A1K 系統發生硬體故障需要更換控制器時。更換過程包括：卸下受損控制器、將組件移至替換控制器、安裝替換控制器，然後重新開機。</block>
-  <block id="7979daa76aa19a93ff3bd1f8507ebba6" category="doc">在更換 AFF A1K 系統中的控制器之前，請先查看相關要求。</block>
-  <block id="bef9ae2153a575df7316ab854f113957" category="doc">完成 AFF A1K 系統的控制器更換</block>
-  <block id="93688c8a86a653e6ef820461e7a8abcc" category="doc">更換 AFF A1K 系統中發生故障的控制器之前，請先將其關機。</block>
-  <block id="fc77646e8929b9108d3f39419960a833" category="doc">還原並驗證 AFF A1K 系統中的控制器組態</block>
   <block id="802b1ae2b70a556d09b7baa103514ef5" category="doc">AFF A1K 控制器更換工作流程</block>
-  <block id="f50f4b050a89fe0df1c228a78d0c986e" category="doc">更換 AFF A1K 系統中的 DIMM 以修復記憶體容量錯誤</block>
-  <block id="a7accedd1a3c53db3111a57fe861a9b7" category="doc">在 AFF A1K 系統中熱交換風扇</block>
-  <block id="7c3f9cf7b5118311ee86854bb8453ae1" category="doc">為您的 AFF A1K 硬體連接網路和儲存設備。</block>
-  <block id="059461de091fbabd2f147dc2276a95a7" category="doc">將您的 AFF A1K 硬體安裝在機櫃或機架中</block>
   <block id="1c272969f52c74177c4cdf77ac502c3b" category="doc">AFF A1K 安裝與組態工作流程</block>
-  <block id="51936fedc7b6b0e188f814d4ec45bd53" category="doc">啟動您的 AFF A1K 儲存系統</block>
-  <block id="e2d439049272493775a4d46ebf29cd9c" category="doc">準備安裝您的 AFF A1K 儲存系統</block>
-  <block id="71402faae70bf82e0424e7d55a7f855e" category="doc">查看安裝 AFF A1K 儲存系統的要求</block>
-  <block id="51a60be6105b15eeadc6bee3c44d7b0e" category="doc">在不關機的情況下，熱交換 AFF A1K 系統中的 I/O 模組</block>
-  <block id="4e20335a618a9164c9c9d6c952aadf08" category="doc">了解如何在 AFF A1K 系統中新增和更換 I/O 模組</block>
   <block id="0ed066551154bb00f48feea485608b24" category="doc">更換 AFF A1K 系統中的 I/O 模組</block>
-  <block id="5ae1ff77cf04c5db23b445e9a6046dd8" category="doc">了解如何維護您的 AFF A1K 儲存系統</block>
-  <block id="517611fbbbf082d96b8b3733c5cc6d12" category="doc">更換 AFF A1K 系統中的 NV 電池</block>
-  <block id="c8da68a4b5b6e5183ec5df50e04bb478" category="doc">更換 AFF A1K 系統中的 NVRAM</block>
-  <block id="6220f1fe67442b76bcc0a0dc99cbde6e" category="doc">在 AFF A1K 系統中熱交換電源供應單元</block>
-  <block id="907f00422d11e2cead7643654cfb8efb" category="doc">更換 AFF A1K 系統中的即時時鐘電池</block>
   <block id="878a1a680992f5e0bbda41c7265a0af2" category="doc">在自動開機恢復程序結束後，將故障的 AFF A20、AFF A30 或 AFF A50 開機媒體退回 NetApp。</block>
   <block id="6fdde3478e90aa829f8ea2583d9829b8" category="doc">手冊開機恢復程序結束後，將故障的 AFF A20、AFF A30 或 AFF A50 開機媒體退回 NetApp。</block>
-  <block id="c7bbc1ce85d847916547365cfbc4142d" category="doc">檢查您的 AFF A20、AFF A30 或 AFF A50 系統中開機媒體的加密支援</block>
-  <block id="3c926bf85062fa0f526b3d4af6dcd7fb" category="doc">使用自動開機恢復流程更換 AFF A20、AFF A30 或 AFF A50 系統中的開機媒體</block>
-  <block id="a24be9ae53d105a1eefbe339c6f990ed" category="doc">查看您的 AFF A20、AFF A30 或 AFF A50 系統中自動開機媒體恢復的要求</block>
-  <block id="66df429c0b87ee9cbb3718f475f9e86d" category="doc">查看 AFF A20、AFF A30 或 AFF A50 系統中手動開機媒體恢復的要求</block>
   <block id="4d60190a27eb4ecafa8c4dbdb679a219" category="doc">使用自動化開機恢復流程的 AFF A20、AFF A30 和 AFF A50 開機媒體更換工作流程</block>
   <block id="67996601f5c93fcf49fe3d7b13cf90dc" category="doc">使用手冊開機恢復流程更換 AFF A20、AFF A30 和 AFF A50 開機媒體的工作流程</block>
-  <block id="d081a2c81542ab38a76330531ce31bc6" category="doc">使用手動開機恢復流程更換 AFF A20、AFF A30 或 AFF A50 系統中的開機媒體</block>
-  <block id="15a091d8abf83e27999cfed5b51720e3" category="doc">在自動開機恢復過程中，關閉 AFF A20、AFF A30 或 AFF A50 系統中的控制器。</block>
-  <block id="294ddc6d3715f950e7468699f301170c" category="doc">在手動開機恢復過程中，關閉 AFF A20、AFF A30 或 AFF A50 系統中的控制器。</block>
-  <block id="d29ba9ea7dbf3195501d83cb08f01260" category="doc">完成 AFF A20、AFF A30 或 AFF A50 系統的機箱更換</block>
-  <block id="59190c0e1e90cc94faf89ae8addabf70" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的機箱</block>
-  <block id="5a58f0d259fad5009800aa02822b43e0" category="doc">更換 AFF A20、AFF A30 或 AFF A50 機箱前，請先查看相關要求。</block>
-  <block id="ec6df68bf52f015007a273b38ca89af0" category="doc">更換機箱時，請關閉 AFF A20、AFF A30 或 AFF A50 控制器。</block>
   <block id="42fbb057db96bd55ebd410cd130b5216" category="doc">AFF A20、AFF A30 和 AFF A50 機箱更換工作流程</block>
-  <block id="47c4fb58ab6b961c8ae080546c37c17c" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的控制器</block>
-  <block id="af99ccdcff0dd2d9d07051cc30b4b157" category="doc">請將 AFF A20、AFF A30 或 AFF A50 系統中的控制器交還給系統，以恢復正常運作。</block>
-  <block id="1b46ab3e071eac2e2932866d54550a57" category="doc">在更換 AFF A20、AFF A30 或 AFF A50 系統中的控制器之前，請先查看相關要求。</block>
-  <block id="b39943c94031a6aba1d6b8a99632b972" category="doc">完成 AFF A20、AFF A30 或 AFF A50 系統的控制器更換</block>
-  <block id="20730cdb9acd00e766ae06f0ec2a1429" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中發生故障的控制器之前，請先將其關閉。</block>
-  <block id="15c7e1c264f5c7fb062640b807d1ba33" category="doc">還原並驗證 AFF A20、AFF A30 或 AFF A50 系統中的控制器組態</block>
   <block id="824ff62d008dd2eb20856e62c0da7fb5" category="doc">AFF A20、AFF A30 和 AFF A50 控制器更換工作流程</block>
-  <block id="de1ce4b3fa14c7491a2854657ad8dca8" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的 DIMM 以修復記憶體容量錯誤</block>
-  <block id="dce9d609b056ae516f62f14570177fc7" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的磁碟機</block>
-  <block id="8bea1febd5421b0f3274a07d7bee0b5e" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱交換風扇模組</block>
-  <block id="c00ea3100c9e568b675e4a71bc1bcf44" category="doc">為您的 AFF A20、AFF A30 或 AFF A50 硬體連接網路和儲存設備</block>
-  <block id="c5471a8bf76d35618c526e7018340064" category="doc">將您的 AFF A20、AFF A30 或 AFF A50 硬體安裝到機櫃或機架中</block>
   <block id="cc2e03ea609b7d4fd0e42df42eda504d" category="doc">AFF A20、AFF A30 和 AFF A50 安裝和組態工作流程</block>
-  <block id="75b83fada8366f4a5c009f787bb9ab74" category="doc">啟動您的 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
-  <block id="9d5ac1fc81bb9903a5580f5d4a383ecf" category="doc">準備安裝您的 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
-  <block id="971b6a2c4cf86dc957b3cfc207da9aa9" category="doc">查看安裝 AFF A20、AFF A30 或 AFF A50 儲存系統的要求</block>
-  <block id="dcf29b5ca080725bd51d5325c736ee25" category="doc">了解如何在 AFF A20、AFF A30 或 AFF A50 系統中新增和更換 I/O 模組</block>
-  <block id="098ca3d3bd4d2bab2c47ad72a0fe27e2" category="doc">了解如何維護您的 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
-  <block id="61ef6cdbb4c6717cae33366b3112e529" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的 NV 電池</block>
-  <block id="d263139fd46bcc9039cd8b77fecee4d8" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱交換的電源供應單元</block>
-  <block id="9c5fa3cb3fa59fad6107a04e125d34d2" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的即時時鐘電池</block>
   <block id="9c89c114b369d3425621acadde80c2f1" category="doc">在自動開機恢復過程結束後，將故障的 AFF A250 開機媒體歸還給 NetApp。</block>
   <block id="c691562e579655aa2be1e8f4144b5e8e" category="doc">手冊開機恢復程序結束後，將故障的 AFF A250 開機媒體退回給 NetApp。</block>
-  <block id="dea88dd9c579b7f7cbb71000fe95a5ca" category="doc">檢查 AFF A250 系統中開機媒體的加密支援情況</block>
-  <block id="a26c02a98a18cbb0e70c81c2b85367b9" category="doc">在手動開機恢復程序之後，還原 AFF A250 系統中開機媒體上的加密。</block>
   <block id="bbf775313f141b07c895076b726820f8" category="summary">在 AFF A250 系統中安裝新的開機媒體裝置後，您可以啟動自動開機媒體還原程序，以從合作夥伴節點還原組態。</block>
-  <block id="6de81f69ef92a175796246c983010ad9" category="doc">使用手冊開機恢復程序，在您的 AFF A250 系統上啟動恢復映像。</block>
-  <block id="4c1ec7baeb7e8cd76b3e64c7f3c5faf5" category="doc">使用自動開機恢復流程更換 AFF A250 系統中的開機媒體</block>
-  <block id="fa94ae85406e071eb2e43fed2402c893" category="doc">檢閱 AFF A250 系統中自動開機媒體恢復的需求</block>
-  <block id="2cc3fbe8acb9655d376b7f1d44585c9a" category="doc">檢查 AFF A250 系統中手動開機媒體恢復的要求</block>
   <block id="142cd23fcff513ce18f794ca9544e194" category="doc">使用自動化開機恢復流程的 AFF A250 開機媒體更換工作流程</block>
   <block id="45f96d44dc3dd46212436c18b0712b13" category="doc">使用手冊開機恢復流程的 AFF A250 開機媒體更換工作流程</block>
-  <block id="c9995063fcecb0ef4841d465fd49d7bd" category="doc">使用手冊開機恢復流程更換 AFF A250 系統中的開機媒體</block>
-  <block id="844af8e0dd8e740fb230f4848c0b5d14" category="doc">在自動開機恢復過程中，關閉 AFF A250 系統中的控制器</block>
-  <block id="773c48509b1040fdd500c16308c8aa58" category="doc">在手動開機恢復過程中，關閉 AFF A250 系統中的控制器。</block>
-  <block id="123cc056ebc5bd3c17e85e0485eda854" category="doc">完成 AFF A250 系統的機箱更換</block>
-  <block id="484d4b5a5ef90b925222217f0eeaa9c0" category="doc">更換 AFF A250 系統中的機箱</block>
-  <block id="69e5c4fbe8692d35e104855af6daab58" category="doc">準備更換您的 AFF A250 機箱</block>
-  <block id="b880bc5ae753f4048032dacafbd3add3" category="doc">更換機箱時，請關閉 AFF A250 控制器。</block>
   <block id="23b550e833944b8c61ef6cb7271899e5" category="doc">AFF A250 機箱更換工作流程</block>
-  <block id="9ce734b305f97001e2d6fa0bc2241086" category="doc">更換 AFF A250 系統中的控制器</block>
-  <block id="3b0a75bb57e99779805ab4dfe431c375" category="doc">重新連接 AFF A250 系統中的系統線纜並重新分配磁碟</block>
   <block id="34fed2e77a9e15ffa5cae978dd1d69e2" category="paragraph">重新連接儲存設備，確認磁碟重新分配，並還原 NetApp Storage Encryption，使您的 AFF A250 系統恢復全面運作。</block>
-  <block id="cb542e8ed486f0a303d0bd32fdb05460" category="doc">在更換 AFF A250 系統中的控制器之前，請先查看相關要求。</block>
-  <block id="34f055081b3197809536e29f4687e431" category="doc">完成 AFF A250 系統的控制器更換</block>
   <block id="ae1e8d45dcecc0989481acfc809cb589" category="paragraph">若要完成 AFF A250 系統的控制器更換，還原 NetApp Storage Encryption 組態（如有必要），確認邏輯介面 （LIF） 正在向其主連接埠報告，執行叢集資訊健檢，並將故障元件退回 NetApp。</block>
-  <block id="1543708c005c5558b737973cdd5964dc" category="doc">更換 AFF A250 系統中發生故障的控制器之前，請先將其關機。</block>
-  <block id="d5cb993979342023264aac44748f66ab" category="doc">還原並驗證 AFF A250 系統中的控制器組態</block>
   <block id="e6b508d3ad0bda4467669b6873e4af10" category="doc">AFF A250 控制器更換工作流程</block>
-  <block id="dd926ab4f5ab71c3549e26a64759b86a" category="doc">更換 AFF A250 系統中的 DIMM 以修復記憶體容量錯誤</block>
   <block id="156d802f0d77e677afd46ac3c4607a0d" category="paragraph">當儲存系統遇到過多可修正（CECC）或不可修正的記憶體容量錯誤時，請更換 AFF A250 系統中的 DIMM。此類錯誤可能導致儲存系統無法開機 ONTAP。</block>
-  <block id="0a80b14c54b1e2cc951e811e095555fb" category="doc">更換 AFF A250 系統中的磁碟機</block>
   <block id="9435e40ae892f8112bede89d4bb83c43" category="paragraph">在 AFF A250 系統中，即使 I/O 正在進行，也可以無中斷地更換故障磁碟機，以還原儲存容量和效能。</block>
-  <block id="a7432604542585455dd942d4dfe1d3d2" category="doc">在 AFF A250 系統中熱交換風扇</block>
   <block id="49aeb0bb5d496401d4bde171b38b4ab5" category="paragraph">更換 AFF A250 系統中故障的風扇模組，以確保系統正常散熱並防止效能問題。風扇模組為熱交換的，無需關閉系統即可更換。</block>
-  <block id="0e86953724e61a664278715d7edf5a8e" category="doc">按照詳細的逐步說明安裝您的 AFF A250 系統</block>
   <block id="0d4e62f22088395485a3f549e175fd99" category="paragraph">請按照這些詳細的逐步說明安裝您的 AFF A250 儲存系統，從準備站台到啟動 ONTAP 叢集。</block>
-  <block id="70c5dc7fedf21f002b3e78dc73c61829" category="doc">使用簡明圖解說明安裝您的 AFF A250 系統</block>
   <block id="79fae8e27cc6142558d9fcc883b06a74" category="paragraph">依照簡明圖示說明安裝並連接您的 AFF A250 儲存系統。</block>
-  <block id="478f42dc1254df8a3e5d25e7ec182ed5" category="doc">選擇 AFF A250 儲存系統的安裝方式</block>
   <block id="ab71e54a3fb4e946810032444c082b73" category="paragraph">選擇您喜歡的 AFF A250 儲存系統安裝格式：詳細的逐步說明、快速圖形指南或影片說明。</block>
-  <block id="fdf79215e73021b0e9fd458b44ada4d4" category="doc">按照影片教學安裝您的 AFF A250 系統</block>
   <block id="c90fa60208adf91991d92c0a48d226f2" category="paragraph">按照影片教學的步驟說明，安裝並連接您的 AFF A250 儲存系統。</block>
-  <block id="77235e2b47eae8704e749e571e1f52e6" category="doc">了解如何維護您的 AFF A250 儲存系統</block>
-  <block id="436ea66608f1713ad1ae96bf1eab5b9a" category="doc">更換或安裝 AFF A250 系統中的夾層卡</block>
   <block id="8e5b6529b7ccab04b6257a58173b252a" category="paragraph">更換 AFF A250 系統中故障的夾層卡，或安裝新卡以擴充連接選項。更換過程包括移除線材和 SFP 或 QSFP 模組，更換夾層卡，然後重新佈線。</block>
   <block id="0e5845c3f55bf97c6139e8d2c814dc57" category="paragraph">當 AFF A250 系統中的 NVMEM 電池開始漏電或故障時，請更換該電池，因為它可在斷電期間保存關鍵的系統資料。更換過程包括卸下控制器模組、更換電池，然後重新安裝控制器模組。</block>
-  <block id="0237c8d9fdce83dd4bf7bde3ddd3ff99" category="doc">在 AFF A250 系統中熱交換電源供應單元</block>
   <block id="2589e48193642118d931483f22be0e3c" category="paragraph">當您的 AFF A250 系統電源故障或損壞時，請更換電源供應。電源供應採用備援且熱交換的設計，因此您無需關閉控制器即可進行更換。</block>
-  <block id="75d19348035803977766f2ff59d17a17" category="doc">更換 AFF A250 系統中的即時時鐘電池</block>
   <block id="d43c8a4cd5d90fa917b2f53199a8a5ec" category="paragraph">更換 AFF A250 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
-  <block id="4349168bd20fbffda57fae05588d58ee" category="doc">在您的 AFF A400 系統中，切換回雙節點 MetroCluster 組態中的集合體。</block>
   <block id="eebc7b578d609acefabd72465422ee78" category="doc">在自動開機恢復過程結束後，將故障的 AFF A400 開機媒體歸還給 NetApp</block>
   <block id="5cc97596855ba05979515bdeab2cef5c" category="doc">手冊開機恢復程序結束後，將故障的 AFF A400 開機媒體退回給 NetApp。</block>
-  <block id="041fc7493e005b3aa73c9590b9fc1e3b" category="doc">檢查 AFF A400 系統中開機媒體的加密支援情況</block>
-  <block id="2bed201651d4be3ee45772439a5fbe07" category="doc">在手動開機恢復程序完成後，還原 AFF A400 系統中開機媒體上的加密。</block>
   <block id="ba4b6018ad8ad436cd2238eb04fd492a" category="paragraph">請在 AFF A400 系統中，使用替換開機媒體恢復加密，以確保資料持續受到保護。替換程序包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
-  <block id="6257061f97c99fbbc646ce6877b1bc07" category="doc">使用自動開機恢復流程還原 AFF A400 系統上的開機映像</block>
-  <block id="941c98b35b24505107b03fcbca7e48ee" category="doc">使用手動開機恢復程序，在您的 AFF A400 系統上啟動恢復映像。</block>
   <block id="907c198112e4089faa52ffc912bcf74f" category="paragraph">在 AFF A400 系統中安裝新的開機媒體後，從 USB 磁碟機開機 ONTAP 恢復映像，以從合作夥伴節點還原組態。</block>
-  <block id="fbc64a25a45735f0a592615253d7c00a" category="doc">使用自動開機恢復流程更換 AFF A400 系統中的開機媒體</block>
-  <block id="0b411204009f201b022303faf8845b88" category="doc">查看更換 AFF A400 系統中開機媒體的要求</block>
-  <block id="c802880785177ceb69941c19e672dee2" category="doc">檢閱 AFF A400 系統中自動開機媒體恢復的需求</block>
-  <block id="a0dcb329a758ba06c4f587c1a2ad6268" category="doc">檢閱 AFF A400 系統中手動開機媒體恢復的需求</block>
   <block id="54c30ee39dd2ed06a8e7abc502948a4c" category="doc">使用自動化開機恢復流程的 AFF A400 開機媒體更換工作流程</block>
   <block id="5e2c29f4f65d79937698aba267ac68c8" category="doc">使用手冊開機恢復流程的 AFF A400 開機媒體更換工作流程</block>
   <block id="e12329c5d6a8ec43c95404608df1c3f9" category="paragraph">首先，請使用手動開機恢復流程更換 AFF A400 系統中的開機媒體。您必須從 NetApp 支援網站下載對應的 ONTAP 恢復映像，並將其複製到 USB 磁碟機，才能執行恢復並將系統還原至正常運作狀態。</block>
-  <block id="c3aa7910cdd310041cf1848f480a7709" category="doc">使用手動開機恢復流程更換 AFF A400 系統中的開機媒體</block>
   <block id="43ce1fb27b3257dccd2861b88d610b9a" category="paragraph">AFF A400 系統中的開機媒體儲存著重要的韌體和組態資料。更換過程包括：移除控制器模組、移除受損的開機媒體、安裝替換的開機媒體，然後使用 USB 快閃磁碟機將 ONTAP 映像傳輸到替換的開機媒體。</block>
-  <block id="2d47daae2d498f5759d21089d58a82b5" category="doc">在自動開機恢復過程中，關閉 AFF A400 系統中的控制器。</block>
-  <block id="cdc3f5f5b976144a6fcb9fbad7f723b8" category="doc">在手動開機恢復過程中，關閉 AFF A400 系統中的控制器。</block>
-  <block id="101bb7bd4823cc34bdace5c4e9d63fd7" category="doc">完成 AFF A400 系統的機箱更換</block>
   <block id="95fe396e95350617ae030ce250517694" category="paragraph">驗證機箱的 HA 狀態，並將故障零件退回 NetApp，以完成 AFF A400 系統的機箱更換。</block>
-  <block id="3279fd10e62532a44e42223566f3cc1a" category="doc">更換 AFF A400 系統中的機箱</block>
   <block id="790df688fa0672c22da3d00be37c40ab" category="paragraph">當 AFF A400 系統發生硬體故障需要更換機箱時，請進行更換。更換過程包括將風扇、磁碟機和控制器模組從故障機箱移至新的機箱。</block>
   <block id="c724070c3a8abbabbb56ea04fcf0fa2c" category="summary">若要更換 AFF A400 系統的機箱，首先要關閉控制器，將硬體移至替換機箱，然後完成系統還原。</block>
   <block id="b387342a1053ece71c8d4d66fdc23a5d" category="doc">AFF A400 機箱更換工作流程</block>
@@ -13257,191 +13127,73 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d072beaf53df6e0e78599a2ddc27ce03" category="paragraph">將故障機箱中的風扇、磁碟機和控制器模組移至替換機箱。</block>
   <block id="789edb348929f1b37fd6a0ecb0f7ac57" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="ccb4edb95b58f7050d5462ae0acd0b1b" category="inline-link-macro-rx"></block></block>
   <block id="d3c3b1122676397aa2dd3d4d025299d7" category="paragraph">透過驗證 HA 狀態、在需要時切換回聚合，以及將故障機箱退回 NetApp，完成更換程序。</block>
-  <block id="5affde269d1654eb75c67906fd54d77d" category="doc">更換機箱時，請關閉 AFF A400 控制器。</block>
   <block id="846b0fc64449fe95c7e0cffcd458da76" category="paragraph">更換機殼時，請關閉 AFF A400 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
-  <block id="0ea6d78e6d2a2d61e9ab7f2ea7dea2ee" category="doc">更換 AFF A400 系統中的控制器</block>
-  <block id="07bb690ea4bed2175494ef744b2167b0" category="doc">重新連接 AFF A400 系統中的系統纜線並重新指派磁碟機。</block>
-  <block id="cbdd9883ebad7ac28d08a4f485e38acd" category="doc">在更換 AFF A400 系統中的控制器之前，請先查看相關要求。</block>
-  <block id="8185fb10af890ab1af4813add4e1fe48" category="doc">完成 AFF A400 系統的控制器更換</block>
-  <block id="abaafe5fd35d8032c8fe0f01289481d7" category="doc">更換 AFF A400 系統中發生故障的控制器之前，請先將其關閉。</block>
-  <block id="d3cb46e4a594b53a1bd7844be686bbc3" category="doc">還原並驗證 AFF A400 系統中的控制器組態</block>
   <block id="67caa55c1469790c73935cad49083fe9" category="doc">AFF A400 控制器更換工作流程</block>
-  <block id="8dfe172e2b98d4c243c8b0a5615c01be" category="doc">更換 AFF A400 系統中的 DIMM 以修復記憶體容量錯誤</block>
   <block id="de1b18583598b9d330683a8c5f3779d4" category="paragraph">當儲存系統遇到過多可修正（CECC）或不可修正的記憶體容量錯誤時，請更換 AFF A400 系統中的記憶體條（DIMM）。此類錯誤可能導致儲存系統無法開機 ONTAP。</block>
-  <block id="de0307cd0a2732a8c1d5f02f326b96dd" category="doc">在 AFF A400 系統中熱交換風扇模組</block>
   <block id="82a44b8f432f7d9f728efa3679cbfe88" category="paragraph">熱交換 AFF A400 系統中的風扇模組，以維持適當的散熱。風扇模組必須在移除後兩分鐘內更換，以防止過熱。</block>
-  <block id="f62d185cf26e8acd608a081d4718be23" category="doc">請按照詳細的逐步說明安裝您的 AFF A400 系統</block>
   <block id="da5791d9628f999648bab7cd449834b5" category="paragraph">請按照這些詳細的逐步說明安裝您的 AFF A400 儲存系統，從準備站點到啟動 ONTAP 叢集。</block>
-  <block id="5d1a00b497cfac18e86bf7b26ddf5acb" category="doc">使用簡明圖解說明安裝您的 AFF A400 系統</block>
   <block id="ef9baf0f9dcf2cd163c579b137e616bc" category="paragraph">依照簡明圖示說明安裝並連接您的 AFF A400 儲存系統。</block>
-  <block id="74307649ca8a6ae796cec3a594364045" category="doc">選擇 AFF A400 儲存系統的安裝方式</block>
   <block id="c5a58b0ab148d06de0fa1bfdad87df15" category="paragraph">選擇您喜歡的 AFF A400 儲存系統安裝格式：詳細的逐步說明、快速圖形指南或影片說明。</block>
-  <block id="0d317331b9dad99dbb204b9ba9b9c5ed" category="doc">按照影片教學安裝您的 AFF A400 系統</block>
   <block id="eacd2a6acca5c7b7668fb746c87803c3" category="paragraph">按照影片中的逐步說明安裝和連接您的 AFF A400 儲存系統。</block>
-  <block id="c48bea205d3b4a0c181126317502040b" category="doc">了解如何維護您的 AFF A400 儲存系統</block>
-  <block id="14660015491b9471b64e87ddbb38a711" category="doc">更換 AFF A400 系統中的 NVDIMM 電池</block>
   <block id="25137dd9e94ace06b5281e84f16b2baa" category="paragraph">當您的 AFF A400 系統中的 NVDIMM 電池開始漏電或故障時，請更換電池。更換過程包括拆下控制器模組、更換電池，然後重新安裝控制器模組。</block>
-  <block id="cb29f8d2036740148a39abd01a02d0ac" category="doc">更換 AFF A400 系統中的 NVDIMM</block>
   <block id="741c50055485332dbe3e984f9dc881d2" category="paragraph">當您的 AFF A400 系統偵測到快閃記憶體壽命即將結束或 NVDIMM 狀況不良時，請更換 NVDIMM。若未更換，可能會導致系統發生緊急狀況。</block>
-  <block id="ab37bfe4ed7ac3efc584e0cb72204d5f" category="doc">更換 AFF A400 系統中的 PCIe 卡或夾層卡</block>
   <block id="e6781b241236d5bbde77a121330bb3fb" category="paragraph">當 AFF A400 系統中的 PCIe 卡或夾層卡發生故障或需要升級時，請更換該卡。更換過程包括拔除纜線和 SFP 或 QSFP 模組、更換卡，然後重新連接纜線。</block>
-  <block id="030896b78ac26347f522b78726169aa1" category="doc">在 AFF A400 系統中熱交換電源供應單元</block>
   <block id="256cd18039347a684d93784d6c69a912" category="paragraph">當您的 AFF A400 系統電源供應故障或損壞時，請更換電源供應。電源供應為備援且熱交換的，因此您無需關閉控制器即可進行更換。</block>
-  <block id="c18fe0668ed09bd420c1cc2a32b92a52" category="doc">更換 AFF A400 系統中的即時時鐘電池</block>
   <block id="2266b6308dbecc153a8cf95d92ca135f" category="paragraph">更換 AFF A400 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="4552c51e6d28d0750ae9f8f70dd79543" category="doc">在自動開機恢復程序結束後，將故障的 AFF A70 或 AFF A90 開機媒體退回 NetApp。</block>
   <block id="03aa8bd419c0a797f34e1192f2796c57" category="doc">完成手冊開機恢復程序後，將故障的 AFF A70 或 AFF A90 開機媒體退回 NetApp。</block>
-  <block id="96b3da790427989d33649031f7bd4f64" category="doc">檢查您的 AFF A70 或 AFF A90 系統中開機媒體的加密支援</block>
-  <block id="0e08657b8450cffefc11f8f74a2ce8b5" category="doc">在手動開機恢復程序之後，還原 AFF A70 或 AFF A90 系統中開機媒體上的加密。</block>
-  <block id="ec4a6bb3a30b1005f8efd081c4969279" category="doc">使用手動開機恢復流程，在您的 AFF A70 或 AFF A90 系統上啟動恢復映像。</block>
-  <block id="0f6a205e8757ced7aa7e343b81005950" category="doc">使用自動開機恢復流程更換 AFF A70 或 AFF A90 系統中的開機媒體</block>
-  <block id="288b695932731a10db31824c5d5544e9" category="doc">檢視 AFF A70 或 AFF A90 系統中自動開機媒體恢復的要求</block>
-  <block id="883b9997eaa8dcfc399a590ba091fd26" category="doc">查看 AFF A70 或 AFF A90 系統中手動開機媒體恢復的要求</block>
   <block id="dad0b17ae43d81df6287b27b21dafb1b" category="doc">使用自動化開機恢復流程的 AFF A70 和 AFF A90 開機媒體更換工作流程</block>
   <block id="f1c4ce539912dc56ebd79aba4a781f6f" category="doc">使用手冊開機恢復流程的 AFF A70 和 AFF A90 開機媒體更換工作流程</block>
-  <block id="41b516acea5e0b14bf721222daef85ed" category="doc">使用手動開機恢復流程更換 AFF A70 或 AFF A90 系統中的開機媒體</block>
-  <block id="1d738f3c7483aad130e17f6a3e9f7e51" category="doc">在自動開機恢復過程中，關閉 AFF A70 或 AFF A90 系統中的控制器。</block>
-  <block id="5fcd70577b386947f306d8779ffc4082" category="doc">在手動開機恢復過程中，關閉 AFF A70 或 AFF A90 系統中的控制器。</block>
-  <block id="e8a5f6b6d7f892740d2ca0cf336253cb" category="doc">完成 AFF A70 或 AFF A90 系統的機箱更換</block>
-  <block id="239535bfebd467e78adf0d08d3d5a95a" category="doc">更換 AFF A70 或 AFF A90 系統中的機箱</block>
-  <block id="04bdbd7b51e477372fc6c104662e6068" category="doc">準備更換您的 AFF A70 或 AFF A90 機箱</block>
-  <block id="9923485309bec63711f3db634b799449" category="doc">更換 AFF A70 或 AFF A90 機箱前，請先查看相關要求。</block>
-  <block id="3342e3035f1aa9fdbc5826c4fe7d9e66" category="doc">更換機箱時，請關閉 AFF A70 或 AFF A90 控制器。</block>
   <block id="4f6ae236844b9a4d1884b63c3e55c087" category="doc">AFF A70 和 AFF A90 機箱更換工作流程</block>
-  <block id="40574919990c93f5e66a3d7f9db65e8d" category="doc">更換 AFF A70 或 AFF A90 系統中的控制器</block>
-  <block id="1b4f4facdf519d9ba9026fd5d46b8ff9" category="doc">將 AFF A70 或 AFF A90 系統中的控制器歸還，以恢復正常運作。</block>
-  <block id="7d722a2f01921c7db60c0421e76f58da" category="doc">在更換 AFF A70 或 AFF A90 系統中的控制器之前，請先查看相關要求。</block>
-  <block id="eb1472dca32128b42d718fe55e7d4c63" category="doc">完成 AFF A70 或 AFF A90 系統的控制器更換</block>
-  <block id="8f4056cfa199941c229c69170187d50b" category="doc">更換 AFF A70 或 AFF A90 系統中發生故障的控制器之前，請先將其關閉。</block>
-  <block id="c5f3038fb3f2895f38f6d652dee0a4e3" category="doc">還原並驗證 AFF A70 或 AFF A90 系統中的控制器組態</block>
   <block id="da729c115048bf3e1955334b4bc3862b" category="doc">AFF A70 和 AFF A90 控制器更換工作流程</block>
-  <block id="9511c2498fa98b90ebc6ea6a644fc0a0" category="doc">更換 AFF A70 或 AFF A90 系統中的 DIMM 以修復記憶體容量錯誤</block>
-  <block id="110922d9056a80dcce75e86dfd0659f2" category="doc">更換 AFF A70 或 AFF A90 系統中的 SSD 硬碟</block>
-  <block id="49ad381497bd1d261e6503ee1964ec46" category="doc">在 AFF A70 或 AFF A90 系統中熱交換風扇模組</block>
-  <block id="a8fea6e65fdfc1369023b74ac0bc325b" category="doc">為您的 AFF A70 或 AFF A90 硬體連接網路和儲存設備。</block>
-  <block id="de8a62520add6d0ce521ccb8f96cfd75" category="doc">將您的 AFF A70 或 AFF A90 硬體安裝到機櫃或機架中</block>
   <block id="24c26737fd8a7bbc9729efeb235af65b" category="doc">AFF A70 和 AFF A90 安裝與組態工作流程</block>
-  <block id="cdfaac3feb104dba3e1f4e99ff4af6d7" category="doc">開啟 AFF A70 或 AFF A90 儲存系統的電源</block>
-  <block id="a09c493e5c16d2345ce49b56ea62b224" category="doc">準備安裝您的 AFF A70 或 AFF A90 儲存系統</block>
-  <block id="9b5d3162ad08de8ca9cdfd5e1d611152" category="doc">請查閱安裝 AFF A70 或 AFF A90 儲存系統的要求。</block>
-  <block id="0aa4239edb1509d0a716c4517975a8e2" category="doc">為您的 AFF A70 或 AFF A90 系統新增 I/O 模組，以增強網路連線。</block>
-  <block id="d3df9b321125cea2b2681cc937b7278b" category="doc">在不關機的情況下，熱交換 AFF A70 或 AFF A90 系統中的 I/O 模組</block>
-  <block id="b0836465bc945a658557fccfb7e6ed48" category="doc">了解如何在 AFF A70 或 AFF A90 系統中新增和更換 I/O 模組</block>
-  <block id="adf316a623a02a790b4299c50de469c6" category="doc">更換 AFF A70 或 AFF A90 系統中的 I/O 模組</block>
-  <block id="390542c34d7e3763ef4060ef829ab579" category="doc">了解如何維護您的 AFF A70 或 AFF A90 儲存系統</block>
-  <block id="811170a3b926d6dc7bee7c34052d341a" category="doc">更換 AFF A70 或 AFF A90 系統中的 NV 電池</block>
-  <block id="cfda886149370baefaf8afe0a405810b" category="doc">更換 AFF A70 或 AFF A90 系統中的 NVRAM</block>
-  <block id="ff83f8263f68902d3f17add40ac4f59d" category="doc">在 AFF A70 或 AFF A90 系統中熱交換的電源供應單元</block>
-  <block id="629deff4ced8915e34fc8d5c6c85c36f" category="doc">更換 AFF A70 或 AFF A90 系統中的即時時鐘電池</block>
-  <block id="2c7571160be28792e1f8cac3da2e40a0" category="doc">更換 AFF A70 或 AFF A90 系統中的系統管理模組</block>
   <block id="c3d852d1a1701140e5314eb6b97ab9f9" category="doc">在自動開機恢復過程結束後，將故障的 AFF A800 開機媒體歸還給 NetApp。</block>
   <block id="ca68996d0bdd651e5ac9215cc178815c" category="doc">手冊開機恢復程序結束後，將故障的 AFF A800 開機媒體退回給 NetApp。</block>
-  <block id="61774551dd49e2a6442a0e9564effa59" category="doc">檢查 AFF A800 系統中開機媒體的加密支援</block>
-  <block id="f7d868a271e8912c68e64c0126faf810" category="doc">在手動開機恢復程序之後，還原 AFF A800 系統中開機媒體上的加密。</block>
   <block id="0b819bb8e63448461d31662c9ffb21e6" category="summary">在 AFF A800 系統中安裝新的開機媒體裝置後，您可以啟動自動開機媒體還原程序，以從合作夥伴節點還原組態。</block>
-  <block id="455d0f0118f5715fa74fc79d2ba8035b" category="doc">使用手動開機恢復流程，在您的 AFF A800 系統上啟動恢復映像。</block>
-  <block id="456db4cf844ffda9b76c72130e8dd96e" category="doc">使用自動開機恢復流程更換 AFF A800 系統中的開機媒體</block>
-  <block id="55c9d93823468c168f85d723f80fe1e9" category="doc">檢閱 AFF A800 系統中自動開機媒體恢復的需求</block>
-  <block id="7b3d45ea9e524eac399bd812284d0b74" category="doc">查看 AFF A800 系統中手動開機媒體恢復的要求</block>
   <block id="6cad84e5699c80bbe3d8f2adb50344b9" category="doc">使用自動化開機恢復流程的 AFF A800 開機媒體更換工作流程</block>
   <block id="b335b75a3cf9b4c19c5ab8c992bd0120" category="doc">使用手冊開機恢復流程的 AFF A800 開機媒體更換工作流程</block>
-  <block id="278e2733407b88eb08c04f8a408d58e2" category="doc">使用手動開機恢復流程更換 AFF A800 系統中的開機媒體</block>
-  <block id="43bfbf7e6e47ba56dba69ab79aabe1c5" category="doc">在自動開機恢復過程中，關閉 AFF A800 系統中的控制器。</block>
-  <block id="0fb7f157bc4cf80f71bfbb1a06d8b856" category="doc">在手動開機恢復過程中，關閉 AFF A800 系統中的控制器。</block>
-  <block id="a7d154fed136879740d1c039266c963a" category="doc">完成 AFF A800 系統的機箱更換</block>
-  <block id="72f667e3624840756ec9e32d46486f8e" category="doc">更換 AFF A800 系統中的機箱</block>
-  <block id="42f9cdf9aa7f35c07036889dc7c49258" category="doc">準備更換您的 AFF A800 機箱</block>
-  <block id="8b327c1c595fb230516d3ed347d0fb75" category="doc">更換 AFF A800 機箱前，請先查看相關要求。</block>
-  <block id="e1fa3d9b32fbd87ce84d1891058ce946" category="doc">更換機箱時，請關閉 AFF A800 控制器。</block>
   <block id="8ca0a84b2769a1529ceb0c1634ff7d90" category="doc">AFF A800 機箱更換工作流程</block>
-  <block id="518dc7b118cfa729dcc491c2ac25b84c" category="doc">更換 AFF A800 系統中的控制器</block>
-  <block id="577afb9f6e276096a05e89ac52bf1df9" category="doc">重新連接 AFF A800 系統中的系統線纜並重新分配磁碟機</block>
-  <block id="33f8f6b16193744ba9476dee3abf7636" category="doc">在更換 AFF A800 系統中的控制器之前，請先查看相關要求。</block>
-  <block id="b0fe5dbe279b9fcda87407229a9b4821" category="doc">完成 AFF A800 系統的控制器更換</block>
   <block id="ce48717d49d77ebfa0f385552a907561" category="paragraph">若要完成 AFF A800 系統的控制器更換，還原 NetApp Storage Encryption 組態（如有必要），確認邏輯介面 （LIF） 正在向其主連接埠報告，執行叢集資訊健檢，並將故障元件退回 NetApp。</block>
-  <block id="b9ed8fcef4b21a7c9a87f23175cd3201" category="doc">更換 AFF A800 系統中發生故障的控制器之前，請先將其關閉。</block>
-  <block id="f5ad1c0b9cb2ab5414dd9f6daf9b385b" category="doc">還原並驗證 AFF A800 系統中的控制器組態</block>
   <block id="a9199d41f725af7119433a043a93d27e" category="doc">AFF A800 控制器更換工作流程</block>
-  <block id="75f1d84035ffe26cde7a318372c288e9" category="doc">更換 AFF A800 系統中的 DIMM 以修復記憶體容量錯誤</block>
   <block id="5de8fd358b0bfcb371ea93af023b63fa" category="paragraph">當儲存系統遇到過多可修正 （CECC） 或不可修正的記憶體容量錯誤時，請更換 AFF A800 系統中的 DIMM 記憶體條。此類錯誤可能導致儲存系統無法開機 ONTAP。</block>
-  <block id="fddf42c0dd0e82b68a154d85d9044624" category="doc">更換 AFF A800 系統中的磁碟機</block>
-  <block id="4b768d2d233ecc6937fb52da8e56ebb1" category="doc">更換 AFF A800 系統中的風扇</block>
   <block id="9162d38342e4289d8fd064bf0f5e8c37" category="paragraph">當 AFF A800 系統中的風扇發生故障或運作效率低時，請更換風扇模組，以保持適當的冷卻效果並防止系統效能問題。</block>
-  <block id="704bb4b679f22f87baf72d831332f110" category="doc">按照詳細的逐步說明安裝您的 AFF A800 系統</block>
   <block id="ea84800e97d9a9c444ab26c188499377" category="paragraph">請按照這些詳細的逐步說明安裝您的 AFF A800 儲存系統，從準備站點到啟動 ONTAP 叢集。</block>
-  <block id="9ac3e9422ecc2e3bf06f9d419f05fdbb" category="doc">按照快速設定說明安裝您的 AFF A800 系統</block>
   <block id="16900ababf84ffb54cc3f7ded6604d00" category="inline-link">AFF A800 安裝和設定說明</block>
-  <block id="4a3e2abc2bf885b05313f23b80975f7f" category="doc">選擇 AFF A800 儲存系統的安裝方式</block>
   <block id="2498ffc4519d65d97ef000e59a8683d2" category="paragraph">選擇您喜歡的 AFF A800 儲存系統安裝格式：詳細的逐步說明、快速圖形指南或影片說明。</block>
-  <block id="71ec226e9b1102387d1cdca5098c6b60" category="doc">按照影片教學安裝您的 AFF A800 系統</block>
   <block id="6c9ca076613d57ecd46259231a780186" category="paragraph">按照影片中的逐步說明安裝並連接您的 AFF A800 儲存系統。</block>
-  <block id="9f51cceef7b4104889a9f429a48686f4" category="doc">了解如何維護您的 AFF A800 儲存系統</block>
-  <block id="1aa0a06d908d8b533bd4ea955ee98f3b" category="doc">更換 AFF A800 系統中的 NVDIMM 電池</block>
-  <block id="2280a85ec96d188220bf52dc6d2debf0" category="doc">更換 AFF A800 系統中的 NVDIMM 記憶體條</block>
-  <block id="c016102559a2dca01cabecff19d041ba" category="doc">更換 AFF A800 系統中的 PCIe 卡</block>
   <block id="d9a870ad220d0644ad043160f5cb2cca" category="paragraph">當 AFF A800 系統中的 PCIe 卡發生故障或需要升級時，請更換該 PCIe 卡。更換過程包括拔除纜線和 SFP 或 QSFP 模組、更換 PCIe 卡，然後重新連接纜線。</block>
   <block id="683544ce9a9cb169ceaa0b3efdefdf53" category="paragraph">當您的 AFF A800 系統電源供應故障或損壞時，請更換電源供應。電源供應採用備援且熱交換的設計，因此您無需關閉控制器即可進行更換。</block>
-  <block id="46aa084a247121f2976931200590dfe7" category="doc">更換 AFF A800 系統中的即時時鐘電池</block>
   <block id="bca041feee4d1c42e4ed9eb6ce98e4ca" category="paragraph">更換 AFF A800 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="76fb3dcf2c8a41e34eb9dc4234df1860" category="doc">在自動開機恢復過程結束後，將故障的 AFF A900 開機媒體歸還給 NetApp</block>
   <block id="58175979683fc16fc7e9fc7fbe24049f" category="doc">手冊開機恢復程序結束後，將故障的 AFF A900 開機媒體退回給 NetApp。</block>
-  <block id="7f5397e65007e2e3dcbabf7d935019a6" category="doc">檢查 AFF A900 系統中開機媒體的加密支援</block>
   <block id="cfeac3532442ef1309e1f3e0e7a3cdfd" category="paragraph">請在 AFF A900 系統中，使用替換開機媒體恢復加密，以確保資料持續受到保護。替換程序包括驗證金鑰可用性、重新套用加密設定以及確認對資料的安全存取。</block>
   <block id="a4512bcc81083d7610e499f3b8a4ebcb" category="summary">在 AFF A900 系統中安裝新的開機媒體裝置後，您可以啟動自動開機媒體還原程序，以從合作夥伴節點還原組態。</block>
-  <block id="130fb0e7a56e75c53ea54e89e95e1970" category="doc">使用自動開機恢復流程更換 AFF A900 系統中的開機媒體</block>
-  <block id="1c987e10c7b183b92bce8695ffbd996f" category="doc">檢閱 AFF A900 系統中自動開機媒體恢復的需求</block>
-  <block id="e2ec85f6fc987bcc70ef9de45c30f387" category="doc">檢查 AFF A900 系統中手動開機媒體恢復的要求</block>
   <block id="4475a1784532df8077ba0ed4f7954799" category="doc">使用自動化開機恢復流程的 AFF A900 開機媒體更換工作流程</block>
   <block id="075d13a6abf335f89863860372b90708" category="doc">使用手冊開機恢復流程的 AFF A900 開機媒體更換工作流程</block>
-  <block id="669849c7452833be940a0f6556f84ca8" category="doc">使用手動開機恢復流程更換 AFF A900 系統中的開機媒體</block>
   <block id="eacbcd90fa64ddf211c7ea69a1ab9420" category="paragraph">AFF A900 系統中的開機媒體儲存著重要的韌體和組態資料。更換過程包括：移除控制器模組、移除受損的開機媒體、安裝替換的開機媒體，然後使用 USB 快閃磁碟機將 ONTAP 映像傳輸到替換的開機媒體。</block>
-  <block id="49487d24a9343d5c84d3d5efe0662f6a" category="doc">在自動開機恢復過程中，關閉 AFF A900 系統中的控制器。</block>
-  <block id="900f570af21efcf7a35bfb3577892197" category="doc">在手動開機恢復過程中，關閉 AFF A900 系統中的控制器。</block>
-  <block id="c7a89eaeec3de1362f46e0f19113bf47" category="doc">使用手動開機恢復流程，在您的 AFF A900 系統上啟動恢復映像。</block>
   <block id="06427b19678744aa6c87332cdf51deb9" category="paragraph">在 AFF A900 系統中安裝新的開機媒體後，從 USB 磁碟機開機 ONTAP 恢復映像，以從合作夥伴節點還原組態。</block>
-  <block id="bb6e5b84b1227ff19fc46016d09aed4c" category="doc">查看更換 AFF A900 系統中開機媒體的要求</block>
-  <block id="f6920b10885c9cb306dbeddd0f65cece" category="doc">完成 AFF A900 系統的機箱更換</block>
   <block id="69f19e65e837b55121749c43e2646d72" category="paragraph">驗證機箱的 HA 狀態，並將故障零件退回 NetApp，以完成 AFF A900 系統的機箱更換。</block>
-  <block id="dff8fbd31d44d98a149b17b0cdff5e69" category="doc">更換 AFF A900 系統中的機箱</block>
   <block id="aa0b7576c38113509c82afd08ed070af" category="paragraph">當 AFF A900 系統發生硬體故障需要更換機箱時，請進行更換。更換過程包括從故障機箱中移除電源供應、風扇、控制器模組和 I/O 模組，並將其安裝到替換機箱中。</block>
   <block id="0a304b41ef29aecb86e526684de118e2" category="doc">AFF A900 機箱更換工作流程</block>
   <block id="935c166638f0f22b712925ee740e1013" category="paragraph">開始更換 AFF A900 系統的機箱。此程序需要移除並重新安裝電源供應、風扇、控制器模組、I/O 模組、DCPM 模組和 USB LED 模組。系統中的所有其他組件必須運作正常。</block>
-  <block id="a0e1b6582f47f12f96f6b3b1f204166e" category="doc">更換機箱時，請關閉 AFF A900 控制器。</block>
   <block id="7e21619b966d1eae788c43bc0a2c20dc" category="paragraph">更換機殼時，請關閉 AFF A900 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
-  <block id="f7b82daedac7a88955c34f009abcd0c3" category="doc">更換 AFF A900 系統中的控制器</block>
   <block id="3660c38b9e06c9b7f4f81096e1d9a48e" category="paragraph">當 AFF A900 系統發生硬體故障需要更換控制器時，請進行更換。更換程序包括：移除受損控制器模組、將 FRU 組件移至替換控制器、將替換控制器模組安裝到機箱中，然後將系統開機至維護模式。</block>
-  <block id="8d237622679b4e510cf075a8ef358ba5" category="doc">完成 AFF A900 系統的控制器更換</block>
   <block id="73adc0249c09ab891aae34d540639489" category="paragraph">若要完成 AFF A900 系統的控制器更換，還原 NetApp Storage Encryption 組態（如有必要），確認邏輯介面 （LIF） 正在向其主連接埠報告，執行叢集資訊健檢，並將故障元件退回 NetApp。</block>
   <block id="c91e72c28b43c88fa0fe3c8400199e54" category="doc">AFF A900 控制器更換工作流程</block>
   <block id="d9427b71dcb7059cf0d092b696e5942a" category="paragraph">若要開始更換 AFF A900 系統中的控制器，請先查看先決條件，關閉受損控制器，將硬體移至替換控制器，然後還原系統組態。</block>
-  <block id="afee7249df96830211b48af64671db46" category="doc">重新連接 AFF A900 系統中的系統線纜並重新分配磁碟機</block>
   <block id="5726af4a516fee8668e5f9afebbef334" category="paragraph">重新連接儲存設備和網路組態，並還原 NetApp Storage Encryption，使您的 AFF A900 系統恢復全面運作。</block>
-  <block id="1a98c681c43c5aff5ea547ff64ffbd2c" category="doc">更換 AFF A900 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="3bc33bc7fc41e7f58b55e7b9b6d49b25" category="paragraph">更換控制器時，請關閉 AFF A900 儲存系統中發生故障的控制器，以防止資料遺失並確保系統穩定性。</block>
-  <block id="a713844130b82dda263157d33727a50a" category="doc">還原並驗證 AFF A900 系統中的控制器組態</block>
-  <block id="79bf3548a7eab9a7ecd455b60c9936a0" category="doc">更換 AFF A900 系統中包含 NVRAM11 電池的 DCPM 模組</block>
   <block id="00636c75ae546db6aca005963e617614" category="paragraph">當您的 AFF A900 系統中的降級控制器電源模組 （DCPM） 發生故障時，請進行熱交換。DCPM 包含 NVRAM11 電池，必須在移除後五分鐘內更換，以防止資料保護遺失。</block>
-  <block id="392499ea044f3b761992d77b5543d3ad" category="doc">更換 AFF A900 系統中的 DIMM 以修復記憶體容量錯誤</block>
   <block id="20c88cbb85acb6b1b280b6abc50c5ceb" category="paragraph">當 AFF A900 儲存系統出現過多可修正 （CECC） 或不可修正的記憶體容量錯誤時，請更換其中的 DIMM。此類錯誤可能導致儲存系統無法開機 ONTAP。</block>
-  <block id="e5aa97870deb37c4a4bb9476f9d8c429" category="doc">在 AFF A900 系統中熱交換風扇模組</block>
   <block id="f8c066f48bd0896cf75562636bf9480f" category="paragraph">熱交換 AFF A900 系統中的風扇模組，以維持適當的冷卻效果。更換風扇模組時，必須按照特定的步驟順序執行，且不得中斷服務。</block>
-  <block id="d4ea5baa0419e251764d61f2c738e920" category="doc">按照詳細的逐步說明安裝您的 AFF A900 系統</block>
   <block id="f6d672e5f5249aac9938c09149c13988" category="paragraph">請按照這些詳細的逐步說明安裝您的 AFF A900 儲存系統，從準備站台到啟動 ONTAP 叢集。</block>
-  <block id="ff9a0a22cfc505dd2fef09dcaf7f92d7" category="doc">依照簡明圖解說明安裝您的 AFF A900 系統</block>
   <block id="ed764ea7f2a95e2f703c2e60945ec3b4" category="paragraph">依照簡明圖示說明安裝並連接您的 AFF A900 儲存系統。</block>
-  <block id="dbfea82fdc85612faed2d461528aa338" category="doc">選擇 AFF A900 儲存系統的安裝方式</block>
   <block id="28f2645a9100eb42a0d895081817726a" category="paragraph">選擇您喜歡的 AFF A900 儲存系統安裝格式：詳細的逐步說明、快速圖形指南或影片說明。</block>
-  <block id="fa706f07b4102d5783db1db6f85aac3e" category="doc">按照影片教學安裝您的 AFF A900 系統</block>
   <block id="0b0a7930ae3ffffbe70c316b1eef990b" category="paragraph">按照影片教學的步驟說明，安裝並連接您的 AFF A900 儲存系統。</block>
-  <block id="e105813813cac135edb2e96a7d3d371a" category="doc">更換 AFF A900 系統中的 LED USB 模組</block>
   <block id="bb14a32c4ba1057e0bafd5d28094defa" category="paragraph">更換 AFF A900 系統中的 LED USB 模組，即可還原控制台連接埠的連接和系統狀態。更換過程無需工具，也不會中斷服務。</block>
-  <block id="c5f8c43c77ff5dd6d2e2d3ebae9c3c0d" category="doc">了解如何維護您的 AFF A900 儲存系統</block>
-  <block id="5c512357c115f7ac5251f3eec5aabbbe" category="doc">更換 AFF A900 系統中的 NVRAM 模組或 NVRAM DIMM</block>
   <block id="1e1e353547b3d5a4a8b7eb2677d7f55c" category="paragraph">當 AFF A900 系統中的 NVRAM 模組發生故障或 DIMM 出現故障時，請更換 NVRAM 模組或 NVRAM DIMM。更換過程包括從機箱中取出 NVRAM 模組、更換故障組件，然後重新安裝模組。</block>
-  <block id="1bafdced090e60edfc4c81e607bac5c1" category="doc">更換 AFF A900 系統中的 I/O 模組</block>
   <block id="f8b416c73291500a44862537c1bf135d" category="paragraph">當您的 AFF A900 系統中的 I/O 模組發生故障或需要升級時，請更換該模組。更換過程需要按照特定的步驟進行，以避免服務中斷。</block>
   <block id="23be4c5e2ff86369b46772f5d50be901" category="paragraph">當您的 AFF A900 系統電源故障或損壞時，請更換電源供應。電源供應採用備援且熱交換的設計，因此您無需關閉控制器即可進行更換。</block>
-  <block id="f2edba0c3c3a128e90ccb70fa2b193c3" category="doc">更換 AFF A900 系統中的即時時鐘電池</block>
   <block id="82931a62abfeb51837f5e5bd7061e8fd" category="doc">在自動開機恢復程序結束後，將故障的 ASA A20、ASA A30 或 ASA A50 開機媒體退回 NetApp。</block>
   <block id="0f8b6d33dbab57d5fbe0a8267bfaa0d2" category="doc">使用自動開機恢復流程還原 ASA A20、ASA A30 或 ASA A50 系統上的開機映像</block>
   <block id="4130e79bc7b4b72001d11f4224426c2b" category="doc">使用自動開機恢復流程更換 ASA A20、ASA A30 或 ASA A50 系統中的開機介質</block>
@@ -13772,309 +13524,143 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e3100a1ed15b6e04bfa241435608c305" category="sidebar">ONTAP 硬體系統停止供應</block>
   <block id="16b1cc12b78f6d1dcc110d94859b49e4" category="sidebar">儲存系統文件可協助您安裝、設定和維護 ONTAP 硬體系統。</block>
   <block id="26762e33a00f4bd9df870ba0826976fe" category="sidebar">ONTAP 硬體系統的系統組件更換參考</block>
-  <block id="114f2fbb3195d30cf8be70851b351860" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的 I/O 模組</block>
   <block id="0104e66d9e929de2c820eda8a168d62f" category="doc">將故障的 AFF A200 開機媒體退回 NetApp</block>
   <block id="06f7d4e6134dc668f23ab320d6b3e9a0" category="paragraph">更換開機媒體後，請依照套件隨附的 RMA 說明，將故障的 AFF A200 開機媒體退回給 NetApp。如需更多資訊，請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面。</block>
-  <block id="e077b641924d6cbee9193dd4ae97df08" category="doc">檢查 AFF A200 系統中開機媒體的加密支援</block>
-  <block id="ebed5b1abdeb97921e8ae6b5bf8c9f25" category="doc">還原 AFF A200 系統中開機媒體上的加密</block>
-  <block id="348b5b1a36b4f38e0a8df24f889d273c" category="doc">在您的 AFF A200 系統上開機恢復映像</block>
-  <block id="bcd2e6206b233a2b8a91850bf0ea21d3" category="doc">了解 AFF A200 系統中的開機媒體更換。</block>
-  <block id="8833ed38df257282c1ce05a6cdc97afd" category="doc">更換 AFF A200 系統中的開機媒體</block>
-  <block id="8940d152ce44811834b2f7c9016ffc87" category="doc">完成 AFF A200 系統的機箱更換</block>
   <block id="0b2c3bffea4ee561ec2f3dbe6d1d3428" category="paragraph">透過驗證機箱的 HA 狀態並將故障組件退回 NetApp，完成 AFF A200 系統的機箱更換。</block>
-  <block id="e165f3a417873671ed4f45e380e5ff80" category="doc">更換 AFF A200 系統中的機箱</block>
   <block id="2b4d4dfc43648b0e9df811a6260d961b" category="paragraph">將 AFF A200 系統中的電源供應、硬碟和控制器模組從受損機箱移至替換機箱，以更換機箱。</block>
-  <block id="fbc72b2cd14f81dfbf03bad4ee408694" category="doc">更換 AFF A200 機箱前，請先查看相關要求。</block>
   <block id="5e673a54df555f24a1ec50acea66c551" category="paragraph">在更換 AFF A200 系統中的機箱之前，請審查成功更換所需的條件。機箱更換程序會將所有電源供應、磁碟機和控制器模組從故障機箱移至替換機箱，此程序會造成系統中斷。</block>
-  <block id="a390656634bbd83d9020728353d9a243" category="doc">更換機箱時，請關閉 AFF A200 控制器。</block>
   <block id="a2b90fab545cfbc1e415d7fe44582700" category="paragraph">在更換機箱之前，請關閉 AFF A200 系統中的兩個控制器。</block>
-  <block id="d2afbf47eeab0c407649c30ff37a2ad5" category="doc">更換 AFF A200 系統中的控制器</block>
   <block id="aefc43b3610e35b9b1e83cc93bd2e024" category="paragraph">若要更換 AFF A200 系統中的控制器，請移除故障控制器，將 FRU 組件移至替換控制器模組，將其安裝到機箱中，然後開機至維護模式。</block>
-  <block id="537230d1ba7d61e56b1f41037e08f921" category="doc">在更換 AFF A200 系統中的控制器之前，請先查看相關要求。</block>
   <block id="a675ff6b0117e134f314c9702d2ec61b" category="paragraph">在更換 AFF A200 系統中的控制器之前，請審查更換程序的先決條件，並選擇適合您 ONTAP 版本的正確程序。</block>
-  <block id="9f01a344217561b084bc93e9d262d8d4" category="doc">重新連接 AFF A200 系統中的系統線纜並重新分配磁碟機</block>
   <block id="c51a11a464c2e925b807bc73b9a976d7" category="paragraph">透過重新連接儲存設備和確認磁碟重新分配，完成 AFF A200 系統的控制器更換。</block>
-  <block id="2661899cefc859826a938a9a029a29d6" category="doc">完成 AFF A200 系統的控制器更換</block>
   <block id="5838fb0d2918ac04d69dc5e33f8b02e5" category="paragraph">完成 AFF A200 系統的控制器更換，方法是還原 NetApp 儲存加密組態（如有必要），安裝新控制器的授權，並將故障零件退回 NetApp。</block>
-  <block id="113c6750124665a7a93ffc0d26382628" category="doc">更換 AFF A200 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="afd493941b5f981a7c63dee13c17fadf" category="paragraph">在更換 AFF A200 系統中發生故障的控制器之前，請先將其關閉，方法是接管該控制器並將其停止至 LOADER 提示符號。</block>
-  <block id="a3558edae94ef401443daa7f3acded94" category="doc">還原並驗證 AFF A200 系統中的控制器組態</block>
   <block id="b7122890ae6c72cf4b16404dc8113df0" category="paragraph">完成硬體更換並開機至維護模式後，還原並驗證 AFF A200 系統中的控制器組態。</block>
-  <block id="b1677690b9d9a6e917e2995691d955c9" category="doc">更換 AFF A200 系統中的記憶體條</block>
   <block id="39d7c7aca6a6ad7f79e977c00917402b" category="paragraph">當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC 錯誤時，請更換 AFF A200 系統中的 DIMM，這通常是由單一 DIMM 故障所引起的。</block>
-  <block id="b778f689bee5398478ce2982a2e5e37d" category="doc">更換 AFF A200 系統中的磁碟機</block>
   <block id="24adc4d7adaaa5ee046addd65dc5281b" category="paragraph">在不中斷 I/O 的情況下更換 AFF A200 系統中的故障磁碟機。AFF A200 同時支援 SSD 和 HDD，每種硬碟都有其專用的更換步驟。</block>
-  <block id="1d8947abad20ca0593eae778465dce38" category="doc">請使用 PDF 海報安裝並設定您的 AFF A200 儲存系統</block>
   <block id="d3fd4494dbf63c71696ce8826bbb8c37" category="paragraph">您可以使用 <block ref="b22470d24dd615c99a09a118a80f7353" category="inline-link-macro-rx"></block> 來安裝和設定新系統。PDF 海報提供逐步說明，並附有其他內容的即時連結。</block>
-  <block id="6a50b5882ccda218e9f93e3747da82b9" category="doc">安裝並設定您的 AFF A200 儲存系統</block>
   <block id="0e1b9b0a9ab429b2c10c7ea50a97b64e" category="paragraph">您可以從不同的內容格式中進行選擇，以引導您完成 AFF A200 儲存系統的安裝和設定。</block>
-  <block id="441c100f2e6345e9fddd40944feb5222" category="doc">使用組態工作表設定您的 AFF A200 叢集</block>
   <block id="4d7066c6f0b69e280436a9ac4c5394ab" category="paragraph">使用 <block ref="f25ec35d4d5d6570eef543875b7ce480" category="inline-link-macro-rx"></block> 收集並記錄設定 AFF A200 叢集時所需的站台專屬 IP 位址及其他資訊。</block>
-  <block id="5e95912179d70a9e9bea754b07601a23" category="doc">了解如何維護您的 AFF A200 儲存系統</block>
-  <block id="02e2ff622801a3d82e4fa048fdcbc10a" category="doc">更換 AFF A200 系統中的 NVMEM 電池</block>
   <block id="344aa08de2d42d5f9edb020f8c5f573d" category="paragraph">要更換 AFF A200 系統中的 NVMEM 電池，請卸下控制器模組、打開它、更換電池，然後重新安裝控制器模組。</block>
-  <block id="92795c9856dc86729a41845cb0399d59" category="doc">在 AFF A200 系統中熱插拔電源供應</block>
   <block id="dfe2696884bd9fcff290074bdf378045" category="paragraph">在 AFF A200 系統中，您可以透過關閉電源、斷開連接並移除故障電源供應單元，然後安裝並重新連接替換電源供應來熱插拔電源供應。</block>
-  <block id="843fe01fc65af8f862fe8e9b4bc3e833" category="doc">更換 AFF A200 系統中的即時時鐘電池</block>
   <block id="5893ed026e31ace43f8cec165a4f29d2" category="paragraph">更換 AFF A200 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="aa7fc9d45e33a7233c30fc88fd913d28" category="doc">將故障的 AFF A220 開機媒體退回 NetApp</block>
-  <block id="c3b9d0c4cc94131b45128a8158ce37dd" category="doc">檢查 AFF A220 系統中開機媒體的加密支援</block>
-  <block id="789b3639cfe22a60573612950edbb777" category="doc">還原 AFF A220 系統中開機媒體上的加密</block>
-  <block id="25718d96086876749dcccc49f895d34d" category="doc">在您的 AFF A220 系統上開機恢復映像</block>
   <block id="61be71d3c8579f1c952d1530cf275401" category="paragraph">從 AFF A220 系統上的 USB 磁碟機啟動 ONTAP 恢復映像，以手冊開機恢復程序還原開機媒體。</block>
-  <block id="39ffc2822d7a4e12d65eb35b9c8fd0e2" category="doc">了解 AFF A220 系統中的開機媒體更換。</block>
-  <block id="9a1ee42173db1cb0ed63a0a2de90731d" category="doc">更換 AFF A220 系統中的開機媒體</block>
-  <block id="6c147d90e46f944c6f1d9c4d09cb3c36" category="doc">完成 AFF A220 系統的機箱更換</block>
   <block id="c7bd2f9deaa1aac1437a037fa997de1b" category="paragraph">透過驗證機箱的 HA 狀態並將故障組件退回 NetApp，完成 AFF A220 系統的機箱更換。</block>
-  <block id="b880ff921ea9520d7b3dbf871ce1e155" category="doc">更換 AFF A220 系統中的機箱</block>
   <block id="24c4a29dbd5d8f127f9b06e825116e52" category="paragraph">將 AFF A220 系統中的電源供應、硬碟和控制器模組從受損機箱移至替換機箱，以更換機箱。</block>
-  <block id="2bb5d26103db2143d60cdb68ccf87eee" category="doc">更換 AFF A220 機箱前，請先查看相關要求。</block>
   <block id="73e2140f4697bc858ed0fba1b15941b6" category="paragraph">在更換 AFF A220 系統中的機箱之前，請審查成功更換所需的條件。機箱更換程序會將所有電源供應、磁碟機和控制器模組從故障機箱移至替換機箱，此程序會造成系統中斷。</block>
-  <block id="d394d59b7ece0f3b34f0d680c5d06818" category="doc">更換機箱時，請關閉 AFF A220 控制器。</block>
   <block id="47bcfb04a8180f8a65b2a1dfb38f235e" category="paragraph">關閉 AFF A220 控制器，按照適合您組態的相應步驟更換機箱。</block>
-  <block id="be6340638e8565bf792348a2421e9090" category="doc">更換 AFF A220 系統中的控制器</block>
   <block id="3bd8aa74a88651fd2b59606ae74196c7" category="paragraph">若要更換 AFF A220 系統中的控制器，請移除故障控制器，將 FRU 組件移至替換控制器模組，將其安裝到機箱中，然後開機至維護模式。</block>
-  <block id="3fb8d04699d9a6f7c1db3a9b64567cf2" category="doc">在更換 AFF A220 系統中的控制器之前，請先查看相關要求。</block>
   <block id="29847721728de4253212de9d66f6d5d9" category="paragraph">在更換 AFF A220 系統中的控制器之前，請審查更換程序的先決條件，並選擇適合您 ONTAP 版本的正確程序。</block>
-  <block id="ee09fca1501cd0c768d2a60d8b27d87e" category="doc">重新連接 AFF A220 系統中的系統線纜並重新分配磁碟機</block>
   <block id="e96033762ac290a3fea65c8744d9a2b3" category="paragraph">透過重新連接儲存設備並確認磁碟重新指派，完成 AFF A220 系統的控制器更換。</block>
-  <block id="af0b1f8466c86dbacac8adfc8adeb5c0" category="doc">完成 AFF A220 系統的控制器更換</block>
   <block id="a87bcbd998a6bfe1799aae1aa1223a1d" category="paragraph">完成 AFF A220 系統的控制器更換，方法是還原 NetApp 儲存加密組態（如有必要），安裝新控制器的授權，並將故障零件退回 NetApp。</block>
-  <block id="009a6e4a51b21750518bc47b2b7f973b" category="doc">更換 AFF A220 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="3e5342710100ab2105f619ab165f1305" category="paragraph">在更換之前，請先關閉 AFF A220 系統中發生故障的控制器，方法是接管控制器並將其停止到 LOADER 提示字元。</block>
-  <block id="bad6629c0ba6395c273fdac7cd1eeeab" category="doc">還原並驗證 AFF A220 系統中的控制器組態</block>
   <block id="53c6d668549f822f86923d50c58225d5" category="paragraph">完成硬體更換並開機至維護模式後，還原並驗證 AFF A220 系統中的控制器組態。</block>
-  <block id="0c3bed20fa052565d18bdf290da05780" category="doc">更換 AFF A220 系統中的記憶體條</block>
   <block id="2b199c5c46f3112bcb15d180e1ab9712" category="paragraph">當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC 錯誤時，請更換 AFF A220 系統中的 DIMM，這通常是由單一 DIMM 故障引起的。</block>
-  <block id="f6fbd9fc054ad4e6a899418113cc24cc" category="doc">更換 AFF A220 系統中的磁碟機</block>
   <block id="17260b3624c5da58f75cc1aef89b84ca" category="paragraph">在不中斷 I/O 的情況下更換 AFF A220 系統中的故障磁碟機。AFF A220 同時支援 SSD 和 HDD，每種硬碟都有其專用的更換步驟。</block>
-  <block id="b6ac54479f2647fa58ccd62ca54b1e0f" category="doc">請依照詳細步驟安裝您的 AFF A220 儲存系統</block>
   <block id="b07a0f764faf5d548629bf3aba4535bd" category="paragraph">按照詳細的逐步說明安裝您的 AFF A220 儲存系統，從機架安裝和佈線到初始系統啟動。</block>
-  <block id="27ad74da404cc67d4f6feb3544a816e8" category="doc">請依照以下快速步驟安裝您的 AFF A220 儲存系統</block>
   <block id="dba16817fd7875b9942722bf3cd42cfb" category="paragraph">使用快速圖形說明安裝您的 AFF A220 儲存系統，從機架安裝和佈線到初始系統啟動。</block>
-  <block id="1cde4cb87098fb70b0c661e9cf443862" category="doc">安裝並設定您的 AFF A220 儲存系統</block>
   <block id="e1b6a7c15fd791ff3063bf1f19a06ebc" category="paragraph">根據您的喜好，選擇不同的內容格式，安裝並設定您的 AFF A220 儲存系統。</block>
-  <block id="43f1846ae108618fa5f13c186f9ac7ff" category="doc">按照影片教學安裝您的 AFF A220 儲存系統</block>
   <block id="217fb947a3dee802027233f373989c77" category="paragraph">請觀看影片教學，了解如何安裝和連接纜線至您的 AFF A220 儲存系統，以完成系統安裝。</block>
-  <block id="ce2567238f560dfabae4cf6abce90931" category="doc">了解如何維護您的 AFF A220 儲存系統</block>
-  <block id="753b2f59cb668e5b6779124d190f3436" category="doc">更換 AFF A220 系統中的 NVMEM 電池</block>
   <block id="1add1dec4ac68ff81c0635f8493d7834" category="paragraph">更換 AFF A220 系統中的 NVMEM 電池，方法是拆下控制器模組，更換電池，然後重新安裝控制器模組。</block>
-  <block id="aa888166515582a7d834e1d77640b3c0" category="doc">在 AFF A220 系統中熱插拔電源供應</block>
   <block id="3353bfaf0cc5fe5d1c1b8eedd5181ac2" category="paragraph">在 AFF A220 系統中，您可以透過關閉電源、斷開連接並移除故障單元，然後安裝並重新連接替換單元來熱插拔電源供應。</block>
-  <block id="cf4866a1a9ce45824f1dc0c702ce2f40" category="doc">更換 AFF A220 系統中的即時時鐘電池</block>
   <block id="50944061f11433ea4a86c27a7990a1d0" category="paragraph">更換 AFF A220 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
-  <block id="661692cf4368517de3a2accc80ae5798" category="doc">切換回雙節點 MetroCluster 組態中的集合體，適用於您的 AFF A300 系統</block>
   <block id="9b7e9ae81bfebc9823c338e96e90f215" category="doc">將故障的 AFF A300 開機媒體退回 NetApp</block>
-  <block id="319e5a97b71f9cded77b8d60439f0504" category="doc">檢查 AFF A300 系統中開機媒體的加密支援</block>
-  <block id="6d4eef1f48942fa82b8c6510ac9177aa" category="doc">還原 AFF A300 系統中開機媒體上的加密</block>
-  <block id="95d2b399314ab4d61d68bf5950ca7250" category="doc">在您的 AFF A300 系統上開機恢復映像</block>
-  <block id="0d70068e16e6deb1a1ac3b7542cd73b0" category="doc">了解 AFF A300 系統中的開機媒體更換。</block>
   <block id="9473c4c3094b33defa1dacef488a4125" category="paragraph">了解 AFF A300 系統中的開機媒體更換選項。AFF A300 僅支援手動開機媒體恢復程序。</block>
-  <block id="45102949cff3847413e00443536f62d0" category="doc">更換 AFF A300 系統中的開機媒體</block>
-  <block id="1b506bb66a6f525d0652be8f1113cf02" category="doc">完成 AFF A300 系統的機箱更換</block>
   <block id="774817ce5a466c61873e3da1328c6ceb" category="paragraph">透過驗證機箱的 HA 狀態、視需要切換回聚合體，以及將故障組件退回 NetApp，完成 AFF A300 系統的機箱更換。</block>
-  <block id="bc61ba6c859ff59ec31651381aeee6be" category="doc">更換 AFF A300 系統中的機箱</block>
   <block id="ae7a25900db0455489f8aeb10d27efb5" category="paragraph">將電源供應器、風扇和控制器模組從受損機箱移至替換機箱，以更換 AFF A300 系統中的機箱。</block>
-  <block id="c66be953625fc70439caa4d5435b96e6" category="doc">更換 AFF A300 機箱前，請先查看相關要求。</block>
   <block id="0eb74304c463d88c07c6a1e2e32c86c3" category="paragraph">在更換 AFF A300 系統中的機箱之前，請審查成功更換所需的條件。此程序會將所有電源供應器、風扇和控制器模組從故障機箱移至替換機箱，因此會造成中斷。</block>
-  <block id="5488d721a01b8f4074ea6b41da0e2df5" category="doc">更換機箱時，請關閉 AFF A300 控制器。</block>
   <block id="46da55118d2b66f9d63703dfa529be51" category="paragraph">更換機箱時，請關閉 AFF A300 控制器。</block>
-  <block id="4a678120733b43cb507843b55e5ad5f6" category="doc">更換 AFF A300 系統中的控制器</block>
   <block id="1915c88db71ecd1227001c3a736c70a8" category="paragraph">若要更換 AFF A300 系統中的控制器，請移除受損控制器，將 FRU 組件移至替換模組，將其安裝到機箱中，然後開機至維護模式。</block>
-  <block id="4dbd6e5e3e4aa8a235fb2cb5fe63efca" category="doc">在更換 AFF A300 系統中的控制器之前，請先查看相關要求。</block>
   <block id="283cc2983ac6bea0c0fc2388bab13131" category="paragraph">在更換 AFF A300 系統中的控制器之前，請審查更換程序的先決條件，並選擇適合您 ONTAP 版本的正確程序。</block>
-  <block id="8d73e830fc859938704861e16cd9ca97" category="doc">重新連接 AFF A300 系統中的系統線纜並重新分配磁碟機</block>
   <block id="ae0cfe2daa13ee31bdbabcc5595d9d6e" category="paragraph">透過重新連接儲存設備和確認磁碟重新分配，完成 AFF A300 系統的控制器更換。</block>
-  <block id="30e9bb5744161a7f957a2220a9d84bbb" category="doc">完成 AFF A300 系統的控制器更換</block>
   <block id="320b38d85f0fd635d3409922fa64e2bc" category="paragraph">完成 AFF A300 系統的控制器更換，方法是還原 NetApp 儲存加密組態（如有必要），安裝新控制器的授權，並將故障零件退回 NetApp。</block>
-  <block id="df82c640d9eea92dc5a1213cbc173659" category="doc">更換 AFF A300 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="5183044065c6fb73affaa9b712ae8021" category="paragraph">在更換 AFF A300 系統中發生故障的控制器之前，請按照適用於您組態的相應程序將其關閉。</block>
-  <block id="5eabb3dd7315e540c5a8c0978b9716e3" category="doc">還原並驗證 AFF A300 系統中的控制器組態</block>
   <block id="d8618626ff6a99e5d213a1cb38090a3f" category="paragraph">完成硬體更換並開機至維護模式後，還原並驗證 AFF A300 系統中的控制器組態。</block>
-  <block id="ee98d8fc2c4ccede9c794b105202beb2" category="doc">更換 AFF A300 系統中的 DIMM</block>
   <block id="e9497c6c724d806e0832afe0244d62bc" category="paragraph">當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC 錯誤時，請更換 AFF A300 系統中的 DIMM，這通常是由單一 DIMM 故障引起的。</block>
-  <block id="cb68eb99f8552afaeb615982e77e8b29" category="doc">在 AFF A300 系統中熱交換風扇</block>
   <block id="e4ee646b7fd2cfde2346b06c8563df34" category="paragraph">在 AFF A300 系統中，無需中斷服務即可熱插拔風扇模組，以維持適當的氣流和系統冷卻。</block>
-  <block id="8a80a97d652da18f2b89e6b7a2e6fdfd" category="doc">使用 PDF 海報安裝並設定您的 AFF A300 儲存系統</block>
   <block id="caecfea918ec4acf8514855932eef94b" category="paragraph">使用 PDF 海報安裝和設定您的 AFF A300 儲存系統，該海報提供逐步說明以及指向其他內容的即時連結。</block>
-  <block id="ccecf6a69ebad209e61cbc6f158736b3" category="doc">安裝並設定您的 AFF A300 儲存系統</block>
   <block id="03fdc204891968a9f87c0d76365fe799" category="paragraph">根據您的喜好，選擇不同的內容格式，安裝並設定您的 AFF A300 儲存系統。</block>
-  <block id="548d82ce590b8b9296037d20b384204d" category="doc">使用組態工作表設定您的 AFF A300 叢集</block>
   <block id="9d8a828efbb1b485ac995045b5aa7a26" category="paragraph">收集並記錄設定 AFF A300 叢集時所需的站台專屬 IP 位址及其他資訊。</block>
   <block id="7735e2de62a7534f01f60241bc2eaa68" category="summary">維護 AFF A300 硬體</block>
-  <block id="a291fc4d531b1f0018150f76e0953da5" category="doc">了解如何維護您的 AFF A300 儲存系統</block>
-  <block id="1753b652f407f9dc755bfcace951e17d" category="doc">更換 AFF A300 系統中的 NVMEM 電池</block>
   <block id="dfc3ce006b266ba60761544da32efd8a" category="paragraph">要更換 AFF A300 系統中的 NVMEM 電池，請卸下控制器模組、打開它、更換電池，然後重新安裝控制器模組。</block>
-  <block id="899f32857d96576d148ab6d27f0b2bcf" category="doc">更換 AFF A300 系統中的 PCIe 卡</block>
   <block id="77f88230376d2204f10a12d08c75f464" category="paragraph">更換 AFF A300 系統中的 PCIe 卡，方法是拔除纜線、取出卡片、安裝替換卡，然後重新連接纜線。</block>
-  <block id="6dffe27094ff8693e1d43098c8803526" category="doc">在 AFF A300 系統中熱插拔電源供應</block>
   <block id="cd9a03b37958adff0d573ae9d6e6979c" category="paragraph">在 AFF A300 系統中，您可以透過關閉電源、斷開連接並移除故障電源供應單元，然後安裝並重新連接替換電源供應來熱插拔電源供應。</block>
-  <block id="0847611ee74822a4d5b901b87ecc5d09" category="doc">更換 AFF A300 系統中的即時時鐘電池</block>
   <block id="ebcf7c8d39f6fb7534bac2b7b4197c14" category="paragraph">更換 AFF A300 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="72fbb501b6222d44893f3e38bdcde36e" category="doc">將故障的 AFF A320 開機媒體退回 NetApp</block>
-  <block id="78145d38ba800aeb3473f2d41443bb2c" category="doc">檢查 AFF A320 系統中開機媒體的加密支援</block>
-  <block id="067d05d73719e46e81dd629949a497ef" category="doc">還原 AFF A320 系統中開機媒體上的加密</block>
-  <block id="db3664c718e110b35eaeb61af2ba894c" category="doc">在您的 AFF A320 系統上開機恢復映像</block>
-  <block id="bf00ad8598bed26f579ee72a07a77b60" category="doc">了解 AFF A320 系統中的開機媒體更換。</block>
-  <block id="a65be5ac11670154746c3d93c16943f3" category="doc">更換 AFF A320 系統中的開機媒體</block>
-  <block id="215903b796ccff996ed5011dede1153b" category="doc">使用 USB 快閃磁碟機將開機映像傳輸到 AFF A320 系統的開機媒體中</block>
-  <block id="d3c7bba58cf08a456b0d3444674cc602" category="doc">完成 AFF A320 系統的機箱更換</block>
   <block id="d283727909452237adfc657c8fe9d3d7" category="paragraph">透過驗證機箱的 HA 狀態並將故障組件退回 NetApp，完成 AFF A320 系統的機箱更換。</block>
-  <block id="71ce2259d38661e207a2ec9bb54bc296" category="doc">更換 AFF A320 系統中的機箱</block>
   <block id="eb853047f8634174d5334f5666652942" category="paragraph">將 AFF A320 系統中的風扇、硬碟機和控制器模組從受損機箱移至替換機箱，即可更換機箱。</block>
-  <block id="60eb6abf67d27476b2e48da077487995" category="doc">更換 AFF A320 機箱前，請先查看相關要求。</block>
   <block id="5fabb4cf59d7b872acd123ae9e4cdbd2" category="paragraph">在更換 AFF A320 系統中的機箱之前，請審查成功更換所需的條件。此程序會將所有風扇和控制器模組從故障機箱移至替換機箱，因此會造成系統中斷。</block>
-  <block id="acd759620505cd011f3d7073a66e1adc" category="doc">更換機箱時，請關閉 AFF A320 控制器。</block>
   <block id="70b7703fe388406725d33b641b6e4e8a" category="paragraph">關閉 AFF A320 控制器以更換機箱。</block>
-  <block id="e961b91f5b5433b3c1cec659a10c9e02" category="doc">更換 AFF A320 系統中的控制器</block>
   <block id="6344ade142c314f39d74ffec2594021b" category="paragraph">若要更換 AFF A320 系統中的控制器，請移除受損控制器，將 FRU 組件移至替換模組，將其安裝到機箱中，然後開機至維護模式。</block>
-  <block id="16a29761fb3f8c9c98d2f0040bbdf27f" category="doc">在更換 AFF A320 系統中的控制器之前，請先查看相關要求。</block>
   <block id="8a798ff703363eb6602480d88f68f919" category="paragraph">在更換 AFF A320 系統中的控制器之前，請審查更換程序的先決條件，並選擇適合您 ONTAP 版本的正確程序。</block>
-  <block id="db9094f7db5757a44bd2419d5ea6a207" category="doc">重新連接 AFF A320 系統中的系統線纜並重新分配磁碟機</block>
   <block id="400d5205eb652b46e52f2003ffc111a0" category="paragraph">透過重新連接儲存設備和確認磁碟重新分配，完成 AFF A320 系統的控制器更換。</block>
-  <block id="d317a3a86dcd56fe490caca68926f59e" category="doc">完成 AFF A320 系統的控制器更換</block>
   <block id="ea51f5b91252f9e768bb19539b4f230a" category="paragraph">完成 AFF A320 系統的控制器更換，方法是還原 NetApp 儲存加密組態（如有必要），安裝新控制器的授權，並將故障零件退回 NetApp。</block>
-  <block id="6f9e87287de30ae721d851079219d0b9" category="doc">更換 AFF A320 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="ec58280e236441ed059bc72dd7187266" category="paragraph">在更換之前，請先關閉 AFF A320 系統中發生故障的控制器，方法是接管控制器並將其停止到 LOADER 提示字元。</block>
-  <block id="6fc0829413cb86512e5370cf5363790b" category="doc">還原並驗證 AFF A320 系統中的控制器組態</block>
   <block id="68561b421328ea97ef916cb3b1f8f9be" category="paragraph">完成硬體更換並開機至維護模式後，還原並驗證 AFF A320 系統中的控制器組態。</block>
-  <block id="eb097d1083deb9c9e991bf804bad6233" category="doc">更換 AFF A320 系統中的記憶體條</block>
   <block id="e3c0c0e5c70e4f812bcc22ab4d934618" category="paragraph">當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC 錯誤時，請更換 AFF A320 系統中的 DIMM，這通常是由單一 DIMM 故障所引起的。</block>
-  <block id="d93f2422eeba2d3ee6656e9dfc5bf7ad" category="doc">在 AFF A320 系統中熱交換風扇</block>
   <block id="e62f52f3491acc24f880d12fded0200c" category="paragraph">在 AFF A320 系統中，無需中斷服務即可熱插拔風扇模組，以維持適當的氣流和系統冷卻。</block>
-  <block id="48171aa1d92431739e61be6be3a3c00a" category="doc">請依照詳細步驟安裝您的 AFF A320 儲存系統</block>
   <block id="d1632d3e415cee26e12a46d7b2ac5ab1" category="paragraph">按照詳細的逐步說明安裝您的 AFF A320 儲存系統，從機架安裝和佈線到初始系統啟動。</block>
-  <block id="d7f0e4751deb72890e2a4aa1abc47e16" category="doc">請依照以下快速步驟安裝您的 AFF A320 儲存系統</block>
   <block id="57894bc3be278afe835ab756124ce138" category="paragraph">使用快速圖形說明安裝您的 AFF A320 儲存系統，從機架安裝和佈線到初始系統啟動。</block>
-  <block id="ff542ef5da885a49f982bb81ae84abbb" category="doc">安裝並設定您的 AFF A320 儲存系統</block>
   <block id="1ddbba2e9b4554538159e48c21fd948f" category="paragraph">根據您的喜好，選擇不同的內容格式，安裝並設定您的 AFF A320 儲存系統。</block>
-  <block id="26b3843c97cdb55b1a2b0b35dca813d4" category="doc">按照影片教學安裝您的 AFF A320 儲存系統</block>
   <block id="c54471aee656b55d282bbf9780253847" category="paragraph">觀看影片教學，了解如何安裝和連接您的 AFF A320 儲存系統。</block>
   <block id="0a3a5b12da437c98d97866f6e487ebf4" category="summary">維護 AFF A320 硬體</block>
-  <block id="cc233dfc4ee84b26c1574f465757755f" category="doc">了解如何維護您的 AFF A320 儲存系統</block>
-  <block id="894d47f708d1370b774a14b9139da185" category="doc">更換 AFF A320 系統中的 NVDIMM 電池</block>
   <block id="4f30930a1d973d24f2143bebd7061c23" category="paragraph">更換 AFF A320 系統中的 NVDIMM 電池，方法是拆下控制器模組、更換電池，然後重新安裝控制器模組。</block>
-  <block id="a1f8e6b7b139c5bb566de235688a0e0d" category="doc">更換 AFF A320 系統中的 NVDIMM</block>
   <block id="583104ac00909592a67baa6b369ab64a" category="paragraph">當您的 AFF A320 系統偵測到快閃記憶體壽命即將耗盡或偵測到的 NVDIMM 發生故障時，請更換該 NVDIMM。未更換故障的 NVDIMM 可能會導致系統崩潰。</block>
-  <block id="accf015bd62a2bdac06b5bc35b4b0a46" category="doc">更換 AFF A320 系統中的 PCIe 卡</block>
   <block id="f7bd5f6a699061d0b96d1c8e7977f0d6" category="paragraph">更換 AFF A320 系統中的 PCIe 卡，方法是拔除纜線和 SFP/QSFP 模組、拆下轉接卡、更換卡，然後重新連接纜線。</block>
-  <block id="9278760aa9c91b9690530fd42f759bc7" category="doc">在 AFF A320 系統中熱插拔電源供應</block>
   <block id="8ecc6de222fc27562bcfcd0029041017" category="paragraph">在 AFF A320 系統中熱插拔電源供應，方法是斷開、移除並更換故障單元，然後重新連接以還原電源。</block>
-  <block id="89ff470779efe29bf5b49888aca864bc" category="doc">更換 AFF A320 系統中的即時時鐘電池</block>
   <block id="ee4ba258544e17d2253a6c7098190b51" category="paragraph">更換 AFF A320 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
-  <block id="a8b57c4e73bfc0d186e80ed255c17a2f" category="doc">切換回雙節點 MetroCluster 組態中的 AFF A700 系統聚合</block>
   <block id="b7e15b16a6a59b923433c4e20d4b45fd" category="doc">將故障的 AFF A700 開機媒體退回 NetApp</block>
-  <block id="5d62ce8c5aa3cca89a0392c8e12374f6" category="doc">檢查 AFF A700 系統中開機媒體的加密支援</block>
-  <block id="ff37a5f8e1bde0ddcb1f72b7f29087b4" category="doc">還原 AFF A700 系統中開機媒體上的加密</block>
-  <block id="21df91ec915c97211b07517efa425d5b" category="doc">在您的 AFF A700 系統上開機恢復映像</block>
-  <block id="bb34da26aecff2bbc4a35dad26e2cee5" category="doc">了解 AFF A700 系統中的開機媒體更換。</block>
-  <block id="13d8de0c5f5a8cf3fb2f41cbbf4b0f8b" category="doc">更換 AFF A700 系統中的開機媒體</block>
-  <block id="d6627ebd9c7910332c49e8aec912295f" category="doc">完成 AFF A700 系統的機箱更換</block>
   <block id="080857d2db36915ed976e5731e17a75f" category="paragraph">透過驗證機箱的 HA 狀態並將故障組件退回 NetApp，完成 AFF A700 系統的機箱更換。</block>
-  <block id="0925848af0282d54666336c018cda949" category="doc">更換 AFF A700 系統中的機箱</block>
   <block id="2c18fbce2e6461463b8f1f7ac4ade6d6" category="paragraph">將 AFF A700 系統中的電源供應、風扇和控制器模組從受損機箱移至替換機箱，以更換機箱。</block>
-  <block id="9639aef8cf0b4827ee1cab55b91cedd2" category="doc">更換 AFF A700 機箱前，請先查看相關要求。</block>
   <block id="97812f2829c1729303979d15f4112537" category="paragraph">在更換 AFF A700 系統中的機箱之前，請審查成功更換所需的條件。機箱更換程序會將所有元件從受損機箱移至替換機箱，此程序會造成系統中斷。</block>
-  <block id="25efa9b2f3e575a5c60dcfc7d524dc79" category="doc">更換機箱時，請關閉 AFF A700 控制器。</block>
   <block id="e1e3c7b31a70af46b1c9a3587ffb8c82" category="paragraph">更換機箱時，請關閉 AFF A700 控制器。</block>
-  <block id="6f91eb3e8f2d659a6e852808ab08dd37" category="doc">完成 AFF A700 系統的控制器更換</block>
   <block id="71510cbd5d3d8697dbded69ef17f37bc" category="paragraph">透過重新連接儲存設備、還原 NetApp 儲存加密組態（如有必要）以及安裝新控制器的授權，完成 AFF A700 系統的控制器更換。</block>
-  <block id="27200e94d00aae87d61ca4d968aeb270" category="doc">在更換 AFF A700 系統中的控制器之前，請先查看相關要求。</block>
   <block id="d4676829584c8732d67e73b40604d2aa" category="paragraph">在更換 AFF A700 系統中的控制器之前，請審查更換程序的先決條件，並選擇適合您 ONTAP 版本的正確程序。</block>
-  <block id="d0d09a855b1ec2633e2ce0d5af0c2986" category="doc">重新連接 AFF A700 系統中的系統線纜並重新分配磁碟機</block>
   <block id="1c8c058e0caf464b4ed1709eb34d4511" category="paragraph">透過重新連接儲存設備、還原 NetApp 儲存加密（如有必要）以及安裝新控制器的授權，完成 AFF A700 系統的控制器更換。</block>
-  <block id="ab84f17b770edc09f1f52fe2b92e31fe" category="doc">更換 AFF A700 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="76a0f0df840c2f7b9bb2b56beb2be1b3" category="paragraph">在更換 AFF A700 系統中發生故障的控制器之前，請按照適用於您組態的相應程序將其關閉。</block>
-  <block id="32c40f85c04ce3d8dc13cd7373c95885" category="doc">還原並驗證 AFF A700 系統中的控制器組態</block>
   <block id="1de8b57d28edaab5f5ea8104d1fa4abc" category="paragraph">完成硬體更換並開機至維護模式後，還原並驗證 AFF A700 系統中的控制器組態。</block>
-  <block id="77165f9a3a6ee77612bfaada7c73fe5f" category="doc">更換 AFF A700 系統中的控制器</block>
   <block id="aa8c0e07f37fbe87e6417e3f7a519b21" category="paragraph">若要更換 AFF A700 系統中的控制器，請移除受損控制器，將 FRU 組件移至替換模組，將其安裝到機箱中，然後開機至維護模式。</block>
-  <block id="f7e7be6d70bb05c684f6ccd6e9791e12" category="doc">在您的 AFF A700 系統中熱插拔降級控制器電源模組 (DCPM)</block>
   <block id="bf7100e426fd8e220894db4849878683" category="paragraph">在 AFF A700 系統中熱插拔降級控制器電源模組 (DCPM)，以更換故障模組，而無需中斷服務。</block>
-  <block id="7773485e3e5da964a0906fa604c45d4e" category="doc">更換 AFF A700 系統中的 DCPM 模組</block>
   <block id="9ddb260c03ba9130e581b98cf87f9f95" category="paragraph">更換 AFF A700 系統中的 DCPM 模組，以還原 NVRAM10 的正常電源管理。</block>
-  <block id="0c651f499ad337211947bf7908f4f24d" category="doc">更換 AFF A700 系統中的 DIMM</block>
   <block id="8859177a0d2174ea5cbae6d17fae1a08" category="paragraph">當儲存系統遇到過多的可修正 ECC 錯誤或無法修正的 ECC 錯誤時，請更換 AFF A700 系統中的 DIMM。</block>
-  <block id="4cee905f9cbbc0336c04b992aa5fe85c" category="doc">在 AFF A700 系統中熱交換風扇</block>
   <block id="b3d81812432b3cb29b27df730f623e7b" category="paragraph">在 AFF A700 系統中，無需中斷服務即可熱插拔風扇，以保持適當的氣流和系統冷卻。</block>
-  <block id="dfffe29c55e51da737a90fda1cc3b07d" category="doc">請依照詳細步驟安裝您的 AFF A700 儲存系統</block>
   <block id="18d73874d65b69e3659dd41a7916c14c" category="paragraph">按照詳細的逐步說明安裝您的 AFF A700 儲存系統，從機架安裝和佈線到初始系統啟動。</block>
-  <block id="53efd48089572342ae2b9ae44ecd49cf" category="doc">請依照以下快速步驟安裝您的 AFF A700 儲存系統</block>
   <block id="a8aa04b8f206998f774152a346dd1fb1" category="paragraph">使用快速圖形說明安裝您的 AFF A700 儲存系統，從機架安裝和佈線到初始系統啟動。</block>
-  <block id="6bfbb1f920bfbbd5c80f2490bc049d69" category="doc">安裝並設定您的 AFF A700 儲存系統</block>
   <block id="00a2f653d0420c611c63295206d6fd9d" category="paragraph">根據您的喜好，選擇不同的內容格式，安裝並設定您的 AFF A700 儲存系統。</block>
-  <block id="05ea3c5258c4666ba7e3188767cd82b1" category="doc">按照影片教學安裝您的 AFF A700 儲存系統</block>
   <block id="61d02c4b8638156804f3d47c70b466d9" category="paragraph">使用影片教學安裝您的 AFF A700 儲存系統，影片說明如何安裝系統及連接纜線。</block>
-  <block id="7631503a1412521e5e111d36032e8e7b" category="doc">更換 AFF A700 系統中的 LED USB 模組</block>
   <block id="4fbe63d0e77eb5a6552864393965ae7d" category="paragraph">更換 AFF A700 系統中的 LED USB 模組，以還原狀態指示燈 LED 和 USB 功能。</block>
   <block id="ee0cd2d6965aeb38f867b9ebc6783ba0" category="summary">維護 AFF A700 硬體</block>
-  <block id="d64acce25d6386bc310e73b5f37a0165" category="doc">了解如何維護您的 AFF A700 儲存系統</block>
-  <block id="5f1e806e22648ac9ab7738413da39abf" category="doc">更換 AFF A700 系統中的 NVRAM 模組或 NVRAM DIMM</block>
   <block id="f7c5c6e1d4ef21115fd182d2f28edc0e" category="paragraph">更換 AFF A700 系統中的 NVRAM 模組或 NVRAM DIMM，以還原 NVRAM 的正常功能和系統效能。</block>
-  <block id="9fa6df1c710797b986cc0f27c5211884" category="doc">更換 AFF A700 或 FAS9000 系統中的 I/O 模組</block>
   <block id="fe4351c7f30b9244d95c80511f5b2457" category="paragraph">更換 AFF A700 或 FAS9000 系統中的 I/O 模組，方法是拔除纜線、拆下擴充卡、更換模組，然後重新連接纜線。</block>
-  <block id="aa34e52f7a61ba297153e8af03d3d462" category="doc">在 AFF A700 系統中熱插拔電源供應</block>
   <block id="5ff8998aae8ac595c0e13a8840b588bf" category="paragraph">在 AFF A700 系統中熱插拔電源供應，以保持系統持續供電。</block>
-  <block id="0d73528cf8b47e2e5ee5b4369b593da6" category="doc">更換 AFF A700 系統中的即時時鐘電池</block>
   <block id="b48fb0819bb4bd823c359d3ad4f92152" category="paragraph">更換 AFF A700 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
-  <block id="0baa51af7a8b6411f01ef9e36e438ec7" category="doc">了解如何為您的 AFF A700 系統新增 X91148A 模組</block>
   <block id="5dcb7c7b1baaadd9a52d41562a5e0033" category="paragraph">了解如何將 X91148A 模組新增至您的 AFF A700 系統中，可以透過更換 NIC 或儲存設備介面卡，也可以將模組新增至空的機箱插槽。</block>
-  <block id="f97af7478b1d79d840d848de7321d317" category="doc">當所有插槽都已佔用時，請在 AFF A700 系統中新增 X91148A 儲存設備模組。</block>
   <block id="eab98bee8da5d7dc779b1b6f99b8ee57" category="paragraph">當 AFF A700 系統中所有插槽都被佔用時，可透過取代現有模組的方式新增 X91148A 儲存設備模組。</block>
-  <block id="8d112b818448f561dc7d02737bc1426b" category="doc">使用開放插槽將 X91148A 模組新增至 AFF A700 系統。</block>
   <block id="12deec8b3b79265f759c1fd68b6547e3" category="paragraph">使用機箱中可用的插槽，將 X91148A 模組新增至 AFF A700 系統。</block>
   <block id="daaf090ada669b49e0695a8610273ea7" category="summary">更換零件後，您可以按照套件隨附的 RMA 說明將故障零件退回給 NetApp。AFF A700s 系統僅支援手動開機媒體恢復程序。不支援自動開機媒體恢復。</block>
   <block id="1b8d601cae69cb01a0238c7b6973e232" category="doc">將故障的 AFF A700s 開機媒體退回 NetApp</block>
-  <block id="5bd4c5834b76d0ab3292ec0e79aae78a" category="doc">檢查 AFF A700s 系統中開機媒體的加密支援</block>
-  <block id="2594663a2a8e5e04be851a03d45454ce" category="doc">還原 AFF A700s 系統中開機媒體上的加密</block>
-  <block id="fd33bc9a7683b1d17bc2946109fb6366" category="doc">在您的 AFF A700s 系統上開機恢復映像</block>
-  <block id="886cb94fa8a868f155dff0a86bd269ce" category="doc">了解 AFF A700s 系統中的開機媒體更換。</block>
-  <block id="ccbda75419d41227a8ffbccb2e982967" category="doc">更換 AFF A700s 系統中的開機媒體</block>
-  <block id="282c10629123a825e75f71108f6d76e3" category="doc">使用 USB 快閃磁碟機將開機映像傳輸到 AFF A700s 系統的開機媒體</block>
-  <block id="743974525b778151ea7ff4795d9d4c8d" category="doc">完成 AFF A700s 系統的機箱更換</block>
   <block id="546748bb08b768c5b6e4b9c0d08a8553" category="paragraph">透過驗證機箱的 HA 狀態並將故障組件退回 NetApp，完成 AFF A700s 系統的機箱更換。</block>
-  <block id="2f520d24d450f35f245cae4dcefa821f" category="doc">更換 AFF A700s 系統中的機箱</block>
   <block id="2c340b7aa463cd4b482835f5d35d2e81" category="paragraph">透過將電源供應器、硬碟和控制器模組從故障機箱移至替換機箱，來更換 AFF A700s 系統中的機箱。</block>
-  <block id="144be00cc2d411c12f4c00a373208506" category="doc">更換 AFF A700s 機箱前，請先查看相關要求。</block>
   <block id="145854ed10144bf6e9023cd8df97dae1" category="paragraph">在更換 AFF A700s 系統中的機箱之前，請先審查成功更換所需的條件。機箱更換程序會將控制器模組和 SSD 磁碟機從故障機箱移至新機箱，此程序會造成系統中斷。</block>
-  <block id="43c87b26c499c576ba5cc55f5ef29e14" category="doc">更換機箱時，請關閉 AFF A700s 控制器。</block>
   <block id="84bc8398386bb3aa723f23f15fa44bec" category="paragraph">更換機箱時，請關閉 AFF A700s 控制器。</block>
-  <block id="4e6acf68df13aa615ce298ddbc65533d" category="doc">更換 AFF A700s 系統中的控制器</block>
   <block id="ce6b88308e267802962ed4f05ecf1ebc" category="paragraph">若要更換 AFF A700s 系統中的控制器，請移除故障控制器，將 FRU 組件移至替換模組，將其安裝到機箱中，然後開機至維護模式。</block>
-  <block id="6ed19792d0e9a612d9eef4f134e838c9" category="doc">在更換 AFF A700s 系統中的控制器之前，請先查看相關要求。</block>
   <block id="747ef0419d896810840ac2427b0ca822" category="paragraph">在更換 AFF A700s 系統中的控制器之前，請審查更換程序的先決條件，並選擇適合您 ONTAP 版本的正確程序。</block>
-  <block id="512048f39dc8f36f5f2e9594d29a1b7a" category="doc">重新連接 AFF A700s 系統中的系統線纜並重新分配磁碟機</block>
   <block id="e507e317ddca07445e9f8299295c46a4" category="paragraph">透過重新連接儲存設備、恢復 NetApp 儲存加密組態（如有必要）以及安裝新控制器的授權，完成 AFF A700s 系統的控制器更換。</block>
-  <block id="a525d0530031f25d1420a35b309e26ac" category="doc">完成 AFF A700s 系統的控制器更換</block>
   <block id="e51b99561194a464286222ea81a17a81" category="paragraph">完成 AFF A700s 系統的控制器更換，方法是還原 NetApp 儲存加密組態（如有必要），安裝新控制器的授權，並將故障零件退回 NetApp。</block>
-  <block id="9e131239da60e00fe801c4be30394bca" category="doc">更換 AFF A700s 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="4088534754ce72a68a42b7570afbfb7b" category="paragraph">在更換之前，請先關閉 AFF A700s 系統中發生故障的控制器，方法是接管該控制器並將其停止至 LOADER 提示字元。</block>
-  <block id="68718f10836787e281df54c10febe128" category="doc">還原並驗證 AFF A700s 系統中的控制器組態</block>
   <block id="5bda7ed63a2327511939be77791570ca" category="paragraph">完成硬體更換並開機至維護模式後，恢復並驗證 AFF A700s 系統中的控制器組態。</block>
-  <block id="8fa7ecc0d628a3afedb40c0c2d9737d0" category="doc">更換 AFF A700s 系統中的記憶體條</block>
   <block id="e322f231a82f87751c790d47635974bc" category="paragraph">當 AFF A700s 儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC 錯誤時，請更換系統中的 DIMM，這通常是由單一 DIMM 故障所引起的。</block>
-  <block id="56a3de745ad490a5fcf370b09110049e" category="doc">更換 AFF A700s 系統中的磁碟機</block>
   <block id="97d2decd7fbe070953bdae38db528e80" category="paragraph">在不中斷 I/O 的情況下更換 AFF A700s 系統中的故障磁碟機。</block>
-  <block id="84d575895255ed98f52cf820d58875e0" category="doc">更換 AFF A700s 系統中的風扇</block>
   <block id="88702eeb1ff0ade2c49c3ffa82627472" category="paragraph">更換 AFF A700s 系統中的風扇，方法是拆下故障的風扇模組，然後安裝替換風扇模組。</block>
-  <block id="91f4612415b99967f078ef49884adb2b" category="doc">請使用 PDF 海報安裝並設定您的 AFF A700s 儲存系統</block>
   <block id="11585c89a09e7752b15f976035fb8147" category="paragraph">使用 PDF 海報安裝和設定您的 AFF A700s 儲存系統，該海報提供逐步說明以及指向其他內容的即時連結。</block>
-  <block id="25d026c9a2eace122528a8cc3fe7ede2" category="doc">安裝並設定您的 AFF A700s 儲存系統</block>
   <block id="a6fc6bfb8f27ab2adba2218514b6fb97" category="paragraph">根據您的喜好，選擇不同的內容格式，安裝並設定您的 AFF A700s 儲存系統。</block>
-  <block id="d99acb599e1de157f1cc32a51678e824" category="doc">按照影片教學安裝您的 AFF A700s 儲存系統</block>
   <block id="d52ac126d9d44983bdcfdb9344c83607" category="paragraph">觀看影片教學，了解完整的軟體組態，安裝您的 AFF A700s 儲存系統。</block>
-  <block id="affe54fe1be8bb5bb2ef58340b6c60aa" category="doc">使用組態工作表設定您的 AFF A700s 叢集</block>
   <block id="76c996c107709006960eec72368a25b7" category="paragraph">收集並記錄設定 AFF A700s 叢集時所需的站台專屬 IP 位址及其他資訊。</block>
-  <block id="58d3b60376e1d10d89e5165f1c711e81" category="doc">了解如何維護您的 AFF A700s 儲存系統</block>
-  <block id="242cd96a5cc543bc383b30512ef79fbb" category="doc">更換 AFF A700s 系統中的 NVRAM 電池</block>
   <block id="d2cb6613f80b6ff5b162203b42cf320c" category="paragraph">更換 AFF A700s 系統中的 NVRAM 電池，方法是拆下控制器模組、更換電池，然後重新安裝控制器模組。</block>
-  <block id="cc66dfab5544848928e59a6b54f1b901" category="doc">更換 AFF A700s 系統中的 NVRAM 模組和 NVRAM DIMM</block>
   <block id="10a26f02346c291b44dc93f05da23d17" category="paragraph">更換 AFF A700s 系統中的 NVRAM 模組和 NVRAM DIMM 的方法是：拆下 NVRAM 轉接卡，更換故障卡，然後重新安裝轉接卡。</block>
-  <block id="375d89bbf96ed55a2bced38b0bfbb0a8" category="doc">更換 AFF A700s 系統中的 PCIe 卡</block>
   <block id="05884ff66d4ca190b20cc23ce57cb6a6" category="paragraph">更換 AFF A700s 系統中的 PCIe 卡，方法是拔除纜線、卸下轉接卡、更換卡片，然後重新連接纜線。</block>
-  <block id="57ed3959c0d15ce31f9981704c2f7e27" category="doc">在 AFF A700s 系統中熱插拔電源供應</block>
   <block id="cb43f3fa82adec8c64a7595e0683023d" category="paragraph">在 AFF A700s 系統中，您可以透過斷開、移除和更換故障的電源供應，然後將其重新連接到電源來源，以熱插拔電源供應。</block>
-  <block id="a19752780d8087f583d52ac92cdc6615" category="doc">更換 AFF A700s 系統中的即時時鐘電池</block>
   <block id="cae7040648d2ec9010f422a9a37f546a" category="paragraph">更換 AFF A700s 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="998ed4578cd80af5acc6ab106b104679" category="doc">在自動開機恢復過程結束後，將故障的 ASA C250 開機媒體歸還給 NetApp</block>
   <block id="eb9361f1d2d5082157e8c87165874d9f" category="doc">手冊開機恢復程序結束後，將故障的 ASA C250 開機媒體退回給 NetApp。</block>
@@ -15346,23 +14932,17 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8a3c5dbfa53414ab5660114e22494ee3" category="summary">在手動開機媒體恢復過程中，關閉 AFF A150 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
   <block id="55293f31686f4738679bbcf8d2599488" category="paragraph">完成 NVE 或 NSE 任務後，關閉控制器。</block>
   <block id="bc417059b34da2c2662f08b549c0bfff" category="paragraph">此程序透過驗證 HA 狀態、切換回聚合以及將故障機箱歸還給 NetApp，完成 AFF A150 系統的機箱更換。</block>
-  <block id="8ddfe605b183319cc313dcca5083dd2f" category="doc">在更換 AFF A150 系統中的機箱之前，請先審查相關要求。</block>
   <block id="6471b0af1ead5952093de109e096654a" category="paragraph">在更換 AFF A150 系統中的機箱之前，請確認您已符合成功更換的必要條件。這包括驗證系統中所有其他元件均運作正常，並了解此操作會中斷系統運行，需要關閉兩個控制器。</block>
-  <block id="62ee48b5d82f13991a1d4786becb1791" category="doc">在更換 AFF A150 系統中的控制器之前，請先查看相關要求。</block>
   <block id="af5304c6cbb04c4ae4b3a41d809f5e76" category="paragraph">在更換 AFF A150 系統中的控制器之前，請確認您符合成功更換的必要條件。驗證所有磁碟機櫃是否正常運作，確保正常控制器可以接管故障控制器，並確認您已選擇適用於您的 ONTAP 版本的正確更換程序。</block>
-  <block id="755061992fff50bc802e760a6df3378f" category="doc">重新連接 AFF A150 系統並重新分配磁碟</block>
-  <block id="567ddcc1fae0f37f524f20f2f0b2fa7e" category="doc">更換 AFF A150 系統中發生故障的控制器之前，請先將其關機。</block>
   <block id="6ab32bcb66b8043e10bd99b7a9590b79" category="paragraph">*警告：*如果您要安裝 ONTAP 9.13.1P8 - 9.13.1P11、ONTAP 9.14.1P1 - 9.14.1P7 或 ONTAP 9.15.1 - 9.15.1P2，且您的系統包含 10 個或更多內部固態硬碟，請採取額外步驟以準備系統進行安裝。請參閱問題 <block ref="91b500cab7dd22cbefdc889d84f14119" category="inline-link-rx"></block>。</block>
   <block id="e4fec21e33db8182a5bff183388aea44" category="list-text">用於將系統連接到網路交換器和具有網路瀏覽器的筆記型電腦或主控台的額外連網線</block>
   <block id="6bd887b8a18d0b0312249ac173f699d3" category="list-text">一台配備 RJ-45 介面並可存取網路瀏覽器的筆記型電腦或主控台</block>
   <block id="7717314207201db25dc2ea1a540fc088" category="paragraph">您可以將系統安裝在四柱機架或 NetApp 系統機櫃中（視情況而定）。</block>
   <block id="1813484f8b28b1b428f8d1dd9dbf59cc" category="list-text">使用 Cat 6 RJ45 電纜將 e0c 到 e0f 連接埠連接到主機網路，如下圖所示。</block>
   <block id="25bb74736f16c2f331c83243c1c16b23" category="list-text">在左側窗格中選擇 *Network*，按一下滑鼠右鍵，然後選擇 *重新整理*。</block>
-  <block id="a2c05c76dec30766a2c58896b9a0ac8f" category="doc">更換 AFF A150 系統中的 NVMEM 電池</block>
   <block id="e215ccee6a6fd5cf6add5ca2e0026ce2" category="paragraph">請查看 AFF A150 儲存系統的部分規格，這些規格適用於單一高可用度配對。請造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）以取得 AFF A150 的完整規格清單。</block>
   <block id="77939fc23214c4edf3f5c593de0a3ca9" category="summary">為確保 AFF A1K 儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption，並在關閉控制器之前檢查金鑰管理程式是否處於作用中狀態。</block>
   <block id="f20e756e314621a27b706dabf51b27cb" category="paragraph">為確保 AFF A1K 儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption（NVE），並在關閉控制器之前檢查金鑰管理員是否已啟動。</block>
-  <block id="c5f547a015a049443dbd92ee2af50507" category="doc">使用自動開機恢復流程在 AFF A1K 系統上啟動恢復映像</block>
   <block id="bfe23e32c0e58db908cc9e99d0d900a6" category="summary">AFF A1K 系統中的開機媒體儲存著重要的韌體和組態資料。更換開機媒體需要先拆下 System Management 模組，然後拆下受損的開機媒體，安裝替換的開機媒體，最後重新安裝該模組。</block>
   <block id="4adae30ab3d808dc95cadf2b526d8d62" category="summary">在更換 AFF A1K 系統中的開機媒體之前，請確保符合成功更換的必要條件。這包括確認您擁有具備適當儲存容量的 USB 隨身碟，並確認您擁有正確的替換開機裝置。</block>
   <block id="2c089d4cc57652773c1f95efb3415c63" category="summary">開機映像的自動恢復包括系統自動辨識並選擇對應的開機功能表選項。它使用合作夥伴節點上的開機映像，將 ONTAP 重新安裝到 AFF A1K 系統中的替換開機媒體上。</block>
@@ -15372,26 +14952,20 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a9e1df7a9e728978079df42b50d71d43" category="paragraph">關閉控制器後，您<block ref="52c48d39b9a1e431e1d04998ae5045f5" category="inline-link-macro-rx"></block>。</block>
   <block id="7e08272aeb6532f2152777e9eab69239" category="summary">在手動開機媒體恢復過程中，關閉 AFF A1K 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
   <block id="987cbfc59a972428b07b8a6c83ab9137" category="summary">在更換 AFF A1K 系統中的機箱之前，請確認您符合成功更換所需的所有條件。這包括確認系統中的所有其他元件均運作正常、確認您擁有 ONTAP 的本機系統管理員憑證、確認您擁有正確的替換機箱以及必要的工具。</block>
-  <block id="9471eca3d8b66fec54d8cdadaf7d5064" category="doc">歸還 AFF A1K 系統中的控制器</block>
   <block id="bcd77a1a055cd04f300e8b2c5ec32db3" category="paragraph">將儲存資源的控制交還給替換控制器，以便您的 AFF A1K 系統能夠恢復正常運作。交還控制權的步驟會根據您系統使用的加密類型而有所不同：無加密或 Onboard Key Manager （OKM）加密。</block>
   <block id="ace558cad7db9ac761cf69fa8fd3f6cb" category="summary">在更換 AFF A1K 系統中的控制器之前，請確認您符合成功更換的必要條件。這包括確認系統中的所有其他元件均運作正常、確認您擁有正確的替換控制器，以及將控制器的主控台輸出儲存至文字日誌檔。</block>
   <block id="b6246aced5f1cc84837084588f6de24b" category="paragraph">在您檢閱更換 AFF A1K 控制器的需求之後，您需要<block ref="049c9e44f3f84f6c7ce4b89629424c9c" category="inline-link-macro-rx"></block>。</block>
   <block id="2a57c5808cbb18c45dc6aede3c67aa00" category="paragraph">在開啟控制器電源之前，請先開啟每個 NS224 機櫃的電源，並指派唯一的機櫃 ID，以便在設定中唯一識別每個機櫃。然後將筆記型電腦或主控台連接到控制器，並將控制器連接到電源。</block>
   <block id="549f77d488bdc59dadcf20dfb0e57850" category="paragraph">安裝好 AFF A1K 儲存系統的機架硬體和纜線後，即可開啟儲存機櫃和控制器的電源。</block>
-  <block id="38fa842a0b409100c5c0a944ac4e8666" category="doc">在您的 AFF A1K 系統中新增 I/O 模組，以增強網路連線。</block>
   <block id="04cb1b9e9a09cc34488dd2092a487525" category="paragraph">若要熱交換 I/O 模組，請確認您的儲存系統運作的是 ONTAP 9.18.1 GA 或更新版本。然後準備儲存系統和 I/O 模組，熱交換故障模組，將替換模組上線，還原正常運作，並將故障模組退回 NetApp。</block>
   <block id="eadbdcf1db8900aef313a88989eac874" category="paragraph">機箱內裝有風扇、控制器、電源、NVRAM、系統管理模組、I/O 卡和消隱模組。</block>
   <block id="1b82929f867415b2985b1482dc370db7" category="paragraph">以下是 AFF A1K 儲存系統在單一高可用度配對中的部分規格。造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以取得此儲存系統的完整規格。</block>
   <block id="b7e7173008ba8a3f1ade523bb367b54c" category="list-text">外形尺寸：2U 機箱，附 1 個 HA 控制器</block>
   <block id="562a1b17b1074c44d631898565ccc2c0" category="summary">當您的 AFF A1K 系統中的系統管理模組故障或韌體損壞時，請更換此系統管理模組。更換過程包括：關閉控制器、更換故障的系統管理模組、重新開機控制器、更新授權金鑰，並將故障零件退回 NetApp。</block>
-  <block id="6bb9a6a5b52cbe428828a4cd11599939" category="doc">更換 AFF A1K 系統中的系統管理模組</block>
   <block id="2d4ea241fffa1786f5d52198db37fbba" category="paragraph">以下列出的規格描述了配置為單一高可用度配對的 AFF A20 儲存系統。請造訪 NetApp Hardware Universe （HWU） 以取得此系統的完整規格。</block>
   <block id="caca92a6cef7674fa355a57a5bf3715e" category="paragraph">以下列出的規格描述了配置為單一高可用度配對的 AFF A30 儲存系統。請造訪 NetApp Hardware Universe （HWU） 以取得此系統的完整規格。</block>
   <block id="5a93be5c33b18ae1480cc2c146b2de98" category="paragraph">以下列出的規格描述了配置為單一高可用度配對的 AFF A50 儲存系統。請造訪 NetApp Hardware Universe （HWU） 以取得此系統的完整規格。</block>
   <block id="f75d20b277edfeb300259f1fb74df786" category="paragraph">為確保 AFF A20、AFF A30 或 AFF A50 儲存系統的資料安全，您需要驗證開機媒體上的加密金鑰支援和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （NVE）。在關閉控制器之前，請檢查金鑰管理程式是否處於作用中。</block>
-  <block id="2c9237eca766d64c19f3a77617e97c4c" category="doc">使用手動開機恢復程序，還原 AFF A20、AFF A30 或 AFF A50 系統中開機媒體上的加密。</block>
-  <block id="8a05dcbb8375db1dbfe9665f963e813b" category="doc">使用自動開機恢復流程，在您的 AFF A20、AFF A30 或 AFF A50 系統上啟動恢復映像。</block>
-  <block id="79d27bd5f8644b5ca6769cf32dcd53d8" category="doc">使用手動開機恢復流程，在您的 AFF A20、AFF A30 或 AFF A50 系統上啟動恢復映像。</block>
   <block id="974d97d40418ec4e28c941144b887c03" category="paragraph">首先，審查更換需求、關閉控制器、更換開機媒體、還原映像，並驗證系統功能。</block>
   <block id="0427358c2e91a24102fdba851248b9b8" category="paragraph">如果您的系統執行的是 ONTAP 9.17.1 或更新版本，請使用 <block ref="58ebc7b11a01db336f2a0df37694fcef" category="inline-link-macro-rx"></block>。</block>
   <block id="b5daed1e073c8dd60659366e450d571e" category="summary">在自動開機媒體恢復過程中，關閉 AFF A20、AFF A30 或 AFF A50 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
@@ -15400,10 +14974,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="7fb9051fe5a7966be69f9152ac3fe187" category="paragraph">更換機箱包括將磁碟機、磁碟機擋板、控制器（含電源）和擋板從故障機箱移至新機箱。然後，將故障機箱更換為相同型號的新機箱。</block>
   <block id="f215463a0036a9ac60087981ceb1d7b6" category="list-text">儲存系統中的所有其他組件必須正常運作。如果某個組件發生故障，請在繼續操作前聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
   <block id="096a46de4774c60c66176bf171ec5d6d" category="paragraph">安裝儲存系統之前，必須確保其符合安裝要求。</block>
-  <block id="689d742ca7fe0e5b03bb12a60d8bbe3a" category="doc">為您的 AFF A20、AFF A30 或 AFF A50 系統新增 I/O 模組</block>
   <block id="230106e8e03504b0b34207b1ab3d7d65" category="paragraph">新增 I/O 模組需要關閉一個控制器、新增模組並重新開機，然後對另一個控制器重複這些步驟。</block>
   <block id="2c45bd211b2f24c015b150be0bde21c5" category="paragraph">您可以透過輸入<block ref="a8cd79dca1a50c22e43356a7357233db" prefix=" " category="inline-code"></block>命令來關閉它們。如果您不確定 LED 燈是亮著還是熄滅，可以透過輸入<block ref="7a8289442bf2f334b605fc50c1057343" prefix=" " category="inline-code"></block>命令來檢查它們的狀態。</block>
-  <block id="bf21cd5604311e12b1182722197a4992" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱交換 I/O 模組</block>
   <block id="e2175f242332b1485be134ef08d919c9" category="paragraph">您可以熱插拔某些 I/O 模組，將其更換為等效的 I/O 模組，以使儲存系統還原到最佳運作狀態。熱插拔模組無需執行手動接管。</block>
   <block id="2d87a00a93c3bbfe825f5651526dda18" category="paragraph">儲存系統中的所有其他元件必須正常運作。如果它們發生故障，請在繼續執行此步驟之前聯絡<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block>。</block>
   <block id="fee7708f7d6938369ed6ef98ca7dffb8" category="summary">AFF A20、AFF A30 和 AFF A50 平台的主要規格</block>
@@ -15411,14 +14983,11 @@ SFP+ （目標 / 啟動器）</block>
   <block id="d5faff5e0d36735b8c8469047195cd2a" category="admonition">更換 RTC 電池後，插入控制器，並啟動系統進行首次 BIOS 重置，您將看到以下錯誤訊息：<block ref="049ec00df3ddcbe28d63cf4fa733682c" prefix=" " category="inline-code"></block><block ref="6c8ad83004cc8bc224a596f5f1682744" prefix=" " category="inline-code"></block>這些訊息是預期的，您可以繼續執行此程序。</block>
   <block id="b05d1e7f78f1ec99bc81a090715d2b3a" category="list-text">在 LOADER 提示字元下，輸入<block ref="bfa99df33b137bc8fb5f5407d7e58da8" prefix=" " category="inline-code"></block>以重新初始化 I/O 模組和其他元件，並重新開機控制器。</block>
   <block id="4399da6bdabccdfdf68ca5f73958819d" category="summary">在手動開機媒體恢復過程中，關閉 AFF A200 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="765ee1893da7b4c2fb2d20dbe91bd1db" category="doc">在手動開機恢復過程中，關閉 AFF A200 系統中的控制器。</block>
   <block id="024349708598c2b62b13aa43e519752f" category="summary">在手動開機媒體恢復過程中，關閉 AFF A220 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="6f2f14f8f1546e5e843587a0d031f8b2" category="doc">關閉 AFF A220 系統中的控制器</block>
   <block id="0369224cb7b34b9f300b154276c8ca18" category="paragraph">完成 NVE 或 NSE 任務後，需要完成控制器的關機。</block>
   <block id="d254d1045397ae5a20f8432d8e040a77" category="paragraph">為確保 AFF A250 儲存系統的資料安全，請驗證開機媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （NVE）。關閉控制器前，請檢查金鑰管理程式是否已作用中。</block>
   <block id="2a2f2b8e50134e986bcd4ba0857a03f2" category="paragraph">檢查開機媒體上的加密金鑰支援和狀態後，<block ref="68b439f7374cbf94d1d0674cba562466" category="inline-link-macro-rx"></block>。</block>
   <block id="bfe829dca7f31d9efc4a842b167ac484" category="paragraph">在恢復開機媒體上的加密後，<block ref="e2df5d85d0d0d8d0a3a4f7656136cebe" category="inline-link-macro-rx"></block>。</block>
-  <block id="a6fae4d9823249eb83553ddd58212a19" category="doc">使用自動開機恢復程序在 AFF A250 系統上啟動恢復映像</block>
   <block id="1c1eae2078b3413c96905f6a68da435f" category="summary">在更換 AFF A250 系統中的開機媒體之前，請確認您符合成功更換的必要條件。</block>
   <block id="a17c69bd7e4e03749f50bbb538227186" category="paragraph">在更換 AFF A250 系統中的開機媒體之前，請確認您符合成功更換的必要條件。這包括確認您擁有正確的替換開機媒體、確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否已啟用 Onboard Key Manager (OKM) 或 External Key Manager (EKM)。</block>
   <block id="d98b8cc49dfc6df74106e21e738eb0fd" category="summary">在更換 AFF A250 系統中的開機媒體之前，請確認您符合成功更換所需的所有條件。這包括確保您擁有具備適當儲存容量的 USB 隨身碟，並確認您擁有正確的替換開機裝置。</block>
@@ -15426,18 +14995,14 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a62c78d71eb8cb25bf17cfba8d895baa" category="summary">更換開機媒體時，請關閉 AFF A250 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
   <block id="11feb5c3eb4ac11330fcff2d3ebf692e" category="paragraph">關閉 AFF A250 儲存系統中的控制器，以防止資料遺失，並在自動開機媒體恢復過程中維持系統穩定性。</block>
   <block id="8727aa935ac82c35af64e13da0cdbff1" category="summary">在手動開機媒體恢復過程中，關閉 AFF A250 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="64f5ceafe9dab9163b0dbc32844402a9" category="doc">在更換 AFF A250 系統中的機箱之前，請先審查相關要求。</block>
   <block id="21d0af5e91c90fb751d8877644f72bdc" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block><block ref="39d19595e37f49798f30accb5e41f609" category="inline-link-macro-rx"></block></block>
   <block id="9da1a6dc704d6b69a460d2a7f112cab7" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block><block ref="7965ac6558ac93dfaf2504fcd8c045af" category="inline-link-macro-rx"></block></block>
   <block id="fba3709eadcc80a0bf1eb1c3b68ece22" category="list-text">使用 25 GbE 叢集互連電纜將叢集互連埠 e0c 連接到 e0c，將 e0d 連接到 e0d。</block>
   <block id="4247f7b17b9edf3752856256f070abbe" category="paragraph">維護 AFF A250 儲存系統的硬體，以支援其長期可靠性和最佳效能。定期執行維護任務，例如更換故障組件，這有助於防止停機和資料遺失。</block>
-  <block id="262cee083a2b0c74b3a4005a2bc1774e" category="doc">更換 AFF A250 系統中的 NVMEM 電池</block>
   <block id="b9ad7c0a478686427ab2ccce0932fc8d" category="paragraph">審查 AFF A250 儲存系統的部分規格，反映單一高可用度配對。請造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）以取得 AFF A250 的完整規格清單。</block>
   <block id="0652c101791da57712ef417839a890b4" category="summary">在手動開機媒體恢復過程中，關閉 AFF A300 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="1f560f7ac0cfd4d98a5c0fda8c9170e4" category="doc">在手動開機恢復過程中，關閉 AFF A300 系統中的控制器。</block>
   <block id="7db50e22569b0b0d3ffb7c68fe19b9fb" category="paragraph">完成 NVE 或 NSE 任務後，您需要完成節點的關閉。</block>
   <block id="3e47d5acd6b8774a840e2bfc1afe7574" category="summary">在手動開機媒體恢復過程中，關閉 AFF A320 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="408d11ca1fcba53572ff74d32f4921f9" category="doc">在手動開機恢復過程中，關閉 AFF A320 系統中的控制器。</block>
   <block id="b9f5c12a0fa38831f2da3253d898751e" category="paragraph">為確保 AFF A400 儲存系統的資料安全，請在關閉控制器之前，先驗證開機媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption （NVE），並確認金鑰管理程式已作用中。</block>
   <block id="1eae2bd9111687feb118a4861debd402" category="paragraph">在更換 AFF A400 系統中的開機媒體之前，請確認您符合成功更換的必要條件。這包括擁有一個格式化為 FAT32 且具有足夠儲存空間以存放 ONTAP 恢復映像的 USB 隨身碟，並確定您的更換作業是不中斷營運的還是中斷式的。</block>
   <block id="953c277c37d573066e9a1bfb224a0df7" category="summary">在更換 AFF A400 系統中的開機媒體之前，請確認您符合成功更換的必要條件。</block>
@@ -15456,7 +15021,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="194b7f24939ca9d7834681ac5428ae91" category="paragraph">請參閱 AFF A70 儲存系統在單一 HA 配對組態中的部分規格。請造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）以取得 AFF A70 的完整規格清單。</block>
   <block id="a7a6322e137d6847a68851b94d7a751b" category="paragraph">請參閱 AFF A90 儲存系統在單一 HA 配對組態中的部分規格。請造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>（HWU）以取得 AFF A90 的完整規格清單。</block>
   <block id="e3386bbfce1139cc1ecadd8ad21f308f" category="paragraph">為確保 AFF A70 或 AFF A90 儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp 磁碟區加密 （NVE）。在關閉控制器之前，請檢查金鑰管理程式是否處於作用中狀態。</block>
-  <block id="84fc1256f53b3c63b4b45b9f030faf00" category="doc">使用自動開機恢復流程，在您的 AFF A70 或 AFF A90 系統上啟動恢復映像。</block>
   <block id="1a5da19d4f780c862f77a4b997e6daa3" category="paragraph">如果您的系統執行的是 ONTAP 9.17.1 或更新版本，請使用 <block ref="0326355f0329bd91b304522a96676e27" category="inline-link-macro-rx"></block>。</block>
   <block id="683ed62cf3d1d7c5d41ed1366a65c3d8" category="summary">更換開機媒體時，請關閉 AFF A70 或 AFF A90 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
   <block id="b43fe8c3d2db9ecac6d885c17e8122fc" category="paragraph">在自動開機媒體恢復過程中，關閉 AFF A70 或 AFF A90 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
@@ -15474,13 +15038,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="faef612f2d4ca61f2ee30f52825deafa" category="list-text">請確保儲存系統中的所有其他元件均運作正常。如果發生故障，請聯絡技術支援。</block>
   <block id="adb3cbbb8bd9a8e41c819b2879c4244b" category="list-text">請確保系統中所有其他組件都運作正常。如果發生故障，請聯絡技術支援。</block>
   <block id="4c7f035400bc911540eb488fd938227d" category="summary">在手動開機媒體恢復過程中，關閉 AFF A700 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="0b0cfc93d7a0879f48d203ca93a91f2f" category="doc">在手動開機恢復過程中，關閉 AFF A700 系統中的控制器。</block>
   <block id="f697fe053ecd7634b137f453d01de170" category="paragraph">完成 NVE 或 NSE 任務後，您需要完成節點的關閉。注意：如果您的系統採用雙節點 MetroCluster 組態，請勿使用此步驟。</block>
   <block id="ece41fc2dbf61777458067aee1e3b111" category="summary">在手動開機媒體恢復過程中，關閉 AFF A700s 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
-  <block id="190343f5370101efd5d69c7e3860caed" category="doc">在手動開機恢復過程中，關閉 AFF A700s 系統中的控制器。</block>
   <block id="7bace291106b7e0b519db9a0c1352af2" category="paragraph">在 AFF A800 系統中完成故障開機媒體的自動開機恢復程序後，請將故障元件退回 NetApp。詳情請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面。</block>
   <block id="765474e58d834b579a51e51eb954b63f" category="paragraph">在 AFF A800 系統中完成故障開機媒體的手動開機恢復程序後，請將故障元件退回 NetApp。詳情請參閱<block ref="f2d8b0d8f345a4e987bed9853cde2668" category="inline-link-rx"></block>頁面。</block>
-  <block id="95fb9df507ba44f6f4ec8a19bc72d1e0" category="doc">使用自動開機恢復程序，在您的 AFF A800 系統上啟動恢復映像。</block>
   <block id="a554c57ef46293dfee8bc648ca29d025" category="summary">在更換 AFF A800 系統中的開機媒體之前，請確認您符合成功更換的必要條件。</block>
   <block id="df96793216ee9a12ceab91aa061ea8e7" category="paragraph">在更換 AFF A800 系統中的開機媒體之前，請確認您符合成功更換的必要條件。這包括確認您擁有正確的替換開機媒體，確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定是否已啟用 Onboard Key Manager （OKM） 或 External Key Manager （EKM）。</block>
   <block id="8654e6749fa30bbac9024db629c911a1" category="summary">在更換 AFF A800 系統中的開機媒體之前，請確認您符合成功更換的必要條件。這包括確保您擁有具備適當儲存容量的 USB 隨身碟，並確認您擁有正確的替換開機裝置。</block>
@@ -15507,11 +15068,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ee8e1754770d7b836fd6871c6e2448bb" category="list-text">請確保儲存系統中的所有其他元件均運作正常。如果發生故障，請聯絡 NetApp 支援。</block>
   <block id="b348c6993917a599cef08ebc95e18bb0" category="paragraph">以下是 AFF A800 儲存系統在單一 HA 配對中的部分規格。造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以取得此儲存系統的完整規格。</block>
   <block id="926a9ac0982fcd672d8d406161f2cd83" category="paragraph">更換 PCIe 卡時，請先移除目標轉接卡上 PCIe 卡連接埠的線纜和所有 QSFP 和 SFP，然後從控制器模組上移除轉接卡，移除並更換 PCIe 卡，再將轉接卡和所有 QSFP 和 SFP 重新安裝到連接埠上，最後重新連接連接埠線纜。</block>
-  <block id="3b5c2fa72678621feba31310394eb4e3" category="doc">在 AFF A800 系統中熱插拔電源供應</block>
-  <block id="dd275328ae00994b23a94451d4969088" category="doc">為您的 AFF A900 系統新增 I/O 模組</block>
   <block id="49e9bc5da1a7c5e7b9f7b245720fa0c8" category="paragraph">為確保 AFF A900 儲存系統的資料安全，您需要驗證啟動媒體上的加密金鑰支援情況和狀態。檢查您的 ONTAP 版本是否支援 NetApp 磁碟區加密 （NVE）。在關閉控制器之前，請檢查金鑰管理程式是否處於作用中狀態。</block>
-  <block id="233f7c6d93ff603e77a5a0272472d2d3" category="doc">使用手動開機恢復程序還原 AFF A900 系統開機媒體上的加密。</block>
-  <block id="c864594ab02e026f8a524285ed2092fc" category="doc">使用自動開機恢復流程，在您的 AFF A900 系統上啟動恢復映像。</block>
   <block id="8f2840e65831d1bfe6738a0438686619" category="summary">在更換 AFF A900 系統中的開機媒體之前，請確認您符合成功更換的必要條件。</block>
   <block id="c08b23ff9cc555c729291aa45b5f1d4b" category="paragraph">在更換 AFF A900 系統中的開機媒體之前，請確認您符合成功更換的必要條件。這包括確認您擁有正確的替換開機媒體，確認受損控制器上的 e0S（e0M 扳手）連接埠沒有故障，以及確定 Onboard Key Manager （OKM） 或 External Key Manager （EKM） 是否已啟用。</block>
   <block id="93a1e8ad037e37292514d631952b44aa" category="summary">在更換 AFF A900 系統中的開機媒體之前，請確認您符合成功更換所需的所有條件。這包括確保您擁有具備適當儲存容量的 USB 隨身碟，並確認您擁有正確的替換開機裝置。</block>
@@ -15527,7 +15084,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="fc05c7ed12aa1544d501566f497fb4dc" category="list-text">在左側窗格中選擇 *Network*，按一下滑鼠右鍵，然後選擇 *重新整理*。</block>
   <block id="f7ddc54d52fed2bfd41d10dc405ad0f4" category="paragraph">單一 HA 配對的 AFF A900 儲存系統提供以下關鍵規格。請造訪<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以取得此儲存系統的完整規格。</block>
   <block id="30c2d7959db34220d690ac1f3a8e4d63" category="list-text">基於乙太網路的基板管理控制器 （BMC） 和 ONTAP 管理介面</block>
-  <block id="4ecc511efd0f579548d4930f8ff4dc62" category="doc">在 AFF A900 系統中熱插拔電源供應</block>
   <block id="3a220eefb0309517c9be95bc7c3706af" category="paragraph">更換 AFF A900 系統中的即時時鐘 （RTC） 電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
   <block id="bf4790692c93e9867a3eb955ec75f56f" category="summary">更換開機媒體時，請關閉 AFX 1K 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
   <block id="f7a4595a7b03b68e7a4822240fbe3e9b" category="summary">更換開機媒體時，請關閉 AFX 2K 儲存系統中的控制器，以防止資料遺失並確保系統穩定性。</block>
@@ -15646,4 +15202,449 @@ SFP+ （目標 / 啟動器）</block>
   <block id="253cc3418c907e81e03522dabf19db42" category="paragraph">在自動開機媒體恢復過程中，關閉 FAS9500 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
   <block id="7e60ede96f48b6ba8d0d47f2b8035f4c" category="summary">在手動開機媒體恢復過程中，關閉 FAS9500 儲存系統中的控制器，以防止資料遺失並維持系統穩定性。</block>
   <block id="a03664677c03952a54565c4193967469" category="doc">在手動開機恢復過程中，關閉 FAS9500 系統中的控制器。</block>
+  <block id="77e872222aa64b0ce342d4087f408161" category="doc">檢查 AFF A150 系統中開機媒體的加密支援情況</block>
+  <block id="c62860d1247fef919a90aaa84a1dc9e7" category="doc">在 AFF A150 系統中恢復開機媒體上的加密</block>
+  <block id="55e63eb194f1607cd9ec28b515055799" category="doc">使用手冊開機恢復程序在 AFF A150 系統上啟動恢復映像</block>
+  <block id="65628aac9d8136073fdd8bc9e2bfbf92" category="doc">檢閱更換 AFF A150 系統中開機媒體的需求</block>
+  <block id="6a937e573bf11d96725f27c3c25d5361" category="doc">更換 AFF A150 系統中的開機媒體</block>
+  <block id="acfbef481b6b5af8dd403b385265ac92" category="doc">在手動開機恢復過程中關閉 AFF A150 系統中的控制器</block>
+  <block id="688c5c62b9824aa9422f308bd0a1eb33" category="doc">完成 AFF A150 系統的機箱更換</block>
+  <block id="b27391e479a0b809fae44fd2fd3a0129" category="doc">更換 AFF A150 系統中的機箱</block>
+  <block id="6713939512cb849d0a82decc96c9f84f" category="doc">在更換 AFF A150 系統機箱之前，請先檢閱相關要求。</block>
+  <block id="4537a3c38c191b1d2767916c8ba78bd8" category="doc">關閉 AFF A150 控制器以更換機箱</block>
+  <block id="f56995a91cab8122974aa3b6939b3658" category="doc">更換 AFF A150 系統中的控制器</block>
+  <block id="aa90300f0054d4ba5104fb05485aa983" category="doc">在更換 AFF A150 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="7855ab757bf008fda75fd8bb671f0f85" category="doc">重新連接 AFF A150 系統並重新分配磁碟機</block>
+  <block id="38f19da0acc2ef8d32384f315d0dd73e" category="doc">完成 AFF A150 系統的控制器更換工作</block>
+  <block id="59209ef8d6f55fdf861186c9c5452dc9" category="doc">在更換之前，請先關閉 AFF A150 系統中故障的控制器</block>
+  <block id="9ad0a7fa751a429ae3817425bec53046" category="doc">恢復並驗證 AFF A150 系統中的控制器組態</block>
+  <block id="dc4bbb1816dc00dd17bfa476671c5487" category="doc">更換 AFF A150 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="6546850762140445d15177af1f1ac8a1" category="doc">更換 AFF A150 系統中的磁碟機</block>
+  <block id="d258e9e87231bf045c53b38c9aec5ade" category="doc">按照詳細的逐步說明安裝 AFF A150 系統</block>
+  <block id="050b7b810c4a934c04ec14dddf0ccef0" category="doc">使用簡明圖解說明安裝 AFF A150 系統</block>
+  <block id="c4284d6b45fd618c7f2f0e16a9c162ff" category="doc">選擇如何安裝 AFF A150 儲存系統</block>
+  <block id="f1a31a388df82db00bd1316810369bd0" category="doc">依照影片教學安裝 AFF A150 系統</block>
+  <block id="2b3615080558f3e1c802eb94a3ab35a8" category="doc">了解如何維護 AFF A150 儲存系統</block>
+  <block id="46f7a3df956b75786fa0af85e95a1fd9" category="doc">更換 AFF A150 系統中的 NVMEM 電池</block>
+  <block id="a6f7afcae0d946488e24306569938e5e" category="doc">在 AFF A150 系統中熱插拔電源供應單元</block>
+  <block id="c3950bd5c49f88c85a8de3eb94ddd196" category="doc">更換 AFF A150 系統中的即時時鐘電池</block>
+  <block id="7b9e82d4bd847200474aceb278d25bf9" category="doc">使用手冊開機恢復流程檢查 AFF A1K 系統中開機媒體的加密支援</block>
+  <block id="6363045f6c9c5ab09721237fbfb530c5" category="doc">在手動開機恢復程序後，恢復 AFF A1K 系統中開機媒體上的加密。</block>
+  <block id="3f449cfc330f8c7c94463a325fabf05f" category="doc">使用自動開機恢復流程在 AFF A1K 系統上啟動恢復映像</block>
+  <block id="cbb00cfef8ee616897991e0e8c3ed4cc" category="doc">使用手冊開機恢復流程在 AFF A1K 系統上啟動恢復映像</block>
+  <block id="401cf2da5e9d2c4eccc84f9d188831f6" category="doc">使用自動開機恢復流程更換 AFF A1K 系統中的開機介質</block>
+  <block id="f9e5d562bf564b4a1788d723c5cd1eb1" category="doc">檢閱 AFF A1K 系統中自動開機媒體恢復的需求</block>
+  <block id="ee615454c179e458b52d5c57ac37ce8a" category="doc">檢閱 AFF A1K 系統中手動開機媒體恢復的需求</block>
+  <block id="d78529abdef7e98fd6abdc4c680223d6" category="doc">使用手動開機恢復流程更換 AFF A1K 系統中的開機媒體</block>
+  <block id="b49d6a8d0b9173a5041712a58ffea775" category="doc">在自動開機恢復過程中關閉 AFF A1K 系統中的控制器</block>
+  <block id="46adde99762168192b460f7177250f71" category="doc">在手動開機恢復過程中關閉 AFF A1K 系統中的控制器</block>
+  <block id="01c7784deb05bf1aaed49cb8204c81e8" category="doc">完成 AFF A1K 系統的機箱更換</block>
+  <block id="efdcbe1c6f88d220bef06b6fe98059be" category="doc">更換 AFF A1K 系統中的機箱</block>
+  <block id="55b00afdb2f76c9b75e435161844ffc6" category="doc">準備更換 AFF A1K 機箱</block>
+  <block id="b3aeb5357fbed4abf51be8c04004a271" category="doc">更換 AFF A1K 機箱前，請先檢閱相關要求。</block>
+  <block id="93fb8bc5679ef249ff526fe48b0eaa17" category="doc">關閉 AFF A1K 控制器以更換機箱</block>
+  <block id="fe32c203b74c29866fb2167ac8d78d90" category="doc">更換 AFF A1K 系統中的控制器</block>
+  <block id="abffbcf565e0406ec2af2743f5fde683" category="doc">歸還 AFF A1K 系統中的控制器</block>
+  <block id="a1620621607b0818bc5ae001f0026299" category="doc">在更換 AFF A1K 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="d246e3cc45cb7ce2f790050f24bdc5a1" category="doc">完成 AFF A1K 系統的控制器更換工作</block>
+  <block id="b99efb1ef979351ce264784ca8a46239" category="doc">在更換之前，請先關閉 AFF A1K 系統中故障的控制器</block>
+  <block id="a6da2f06ea07fdeb962d0ae643553c11" category="doc">恢復並驗證 AFF A1K 系統中的控制器組態</block>
+  <block id="ccf639f60d31398fa30bb3fa54a0d8fd" category="doc">更換 AFF A1K 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="0cd0e72d1e7f46e33d74ce13405e265d" category="doc">在 AFF A1K 系統中熱插拔風扇</block>
+  <block id="13298207acd7d2f70664807565b9c1ed" category="doc">為 AFF A1K 硬體連接網路和儲存設備纜線</block>
+  <block id="44723db69ba28d90e175132f65e82f63" category="doc">將 AFF A1K 硬體安裝到機櫃或機架中</block>
+  <block id="e35287a3e30975603c630cacc906dacb" category="doc">啟動 AFF A1K 儲存系統</block>
+  <block id="bb802b8d00f382a3f56c92b276fd7c09" category="doc">準備安裝 AFF A1K 儲存系統</block>
+  <block id="35eb748d98aa034fc7a243e679ff2a83" category="doc">審查安裝 AFF A1K 儲存系統的要求</block>
+  <block id="334617a16d14c24497bf683317e3791a" category="doc">在 AFF A1K 系統中新增 I/O 模組以增強網路連線能力</block>
+  <block id="e67a3396fcd61e99ee4b825970f2b30d" category="doc">在 AFF A1K 系統中熱插拔 I/O 模組</block>
+  <block id="867d98b7e53923323033d2855822156d" category="doc">了解如何在 AFF A1K 系統中新增和更換 I/O 模組</block>
+  <block id="a9dfb190f5754df8a1c933029cb18a55" category="doc">了解如何維護 AFF A1K 儲存系統</block>
+  <block id="df2351affffa10eee2755bdd95c1baa9" category="doc">更換 AFF A1K 系統中的 NV 電池</block>
+  <block id="63e4ca888fc6d7dea41017c5b0b0889a" category="doc">更換 AFF A1K 系統中的 NVRAM</block>
+  <block id="af14ba9c0a09d99389ba9fcaf145e855" category="doc">在 AFF A1K 系統中熱插拔電源供應單元</block>
+  <block id="8d1d8471ba86e7bcbb670a07d98ee2dd" category="doc">更換 AFF A1K 系統中的即時時鐘電池</block>
+  <block id="b82f6ecef0490b792557ab750bd7ebc7" category="doc">更換 AFF A1K 系統中的系統管理模組</block>
+  <block id="36409e7b75476ae1d98062690b3871d6" category="doc">使用手冊開機恢復流程檢查 AFF A20、AFF A30 或 AFF A50 系統中開機媒體的加密支援</block>
+  <block id="37201855e7f606552a6ee9ec2ac47542" category="doc">使用手冊開機恢復流程，在 AFF A20、AFF A30 或 AFF A50 系統中復原開機媒體上的加密。</block>
+  <block id="5f7be116f812203ffced37290dc06366" category="doc">使用自動開機恢復流程，在 AFF A20、AFF A30 或 AFF A50 系統上啟動恢復映像</block>
+  <block id="3e9a43563938551f4a39cbcfe2f9ccba" category="doc">使用手動開機恢復流程，在 AFF A20、AFF A30 或 AFF A50 系統上啟動恢復映像</block>
+  <block id="f9ac4b5953cb6d13d5277d32cc02be95" category="doc">使用自動開機恢復流程更換 AFF A20、AFF A30 或 AFF A50 系統中的開機媒體</block>
+  <block id="4dc7d3ead2032b507302e0f4cb81e9a0" category="doc">檢視 AFF A20、AFF A30 或 AFF A50 系統中自動開機媒體恢復的要求</block>
+  <block id="ea50ce99ba9d622a8311337327902f92" category="doc">檢視 AFF A20、AFF A30 或 AFF A50 系統中手動開機媒體恢復的要求</block>
+  <block id="49e09c6856860ed9c0919896b88bf70c" category="doc">使用手動開機恢復流程更換 AFF A20、AFF A30 或 AFF A50 系統中的開機媒體</block>
+  <block id="ecf81ee35d87fbf3a15dd8f558430b15" category="doc">在自動開機恢復過程中，關閉 AFF A20、AFF A30 或 AFF A50 系統中的控制器</block>
+  <block id="16b34d7a31dd2ff6fdb1fe6f0c6f750b" category="doc">在手動開機恢復過程中，關閉 AFF A20、AFF A30 或 AFF A50 系統中的控制器。</block>
+  <block id="52212641e87206abc8d5209e161c6b3c" category="doc">完成 AFF A20、AFF A30 或 AFF A50 系統的機箱更換</block>
+  <block id="475c74408561352b4a717b25e0d57af5" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的機箱</block>
+  <block id="9dc45137f810eeb6bf351587dee73a16" category="doc">更換 AFF A20、AFF A30 或 AFF A50 機箱前，請先查看相關要求。</block>
+  <block id="f5629b7dd61134a1717382dc476f3025" category="doc">關閉 AFF A20、AFF A30 或 AFF A50 控制器以更換機箱</block>
+  <block id="e6b6e212a0094ee9b8cb07a680e14557" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的控制器</block>
+  <block id="498774ca236117dbc913131881a0fe1c" category="doc">將 AFF A20、AFF A30 或 AFF A50 系統中的控制器交還給系統，即可恢復正常運作。</block>
+  <block id="90bbd75c371e74c5071d8fd99255caab" category="doc">在更換 AFF A20、AFF A30 或 AFF A50 系統中的控制器之前，請先查看相關要求。</block>
+  <block id="0f82cd5236663c6e94ef8c7f9728153e" category="doc">完成 AFF A20、AFF A30 或 AFF A50 系統的控制器更換</block>
+  <block id="352d429c54621415cc05507a62338174" category="doc">在更換 AFF A20、AFF A30 或 AFF A50 系統中的受損控制器之前，請先將其關機。</block>
+  <block id="74e6f08c422d59cbb3a512c69842af19" category="doc">還原並驗證 AFF A20、AFF A30 或 AFF A50 系統中的控制器組態</block>
+  <block id="1290a0923f4ee7fb12cd44af220518b5" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="bebd72565cfc5e93026d46ca37725310" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的磁碟機</block>
+  <block id="4495cc2cb1d64fab3f6960c395b15b0f" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱插拔風扇模組</block>
+  <block id="93d133d3204b7024fba921363fd8d874" category="doc">為 AFF A20、AFF A30 或 AFF A50 硬體連接網路和儲存設備。</block>
+  <block id="a2c478f19f67784c8f43c028d4448e35" category="doc">將 AFF A20、AFF A30 或 AFF A50 硬體安裝到機櫃或機架中</block>
+  <block id="dde55a04d1203238613898d6b23d625c" category="doc">啟動 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
+  <block id="1ae6f3a205f832b6904a31963965f195" category="doc">準備安裝 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
+  <block id="efd8471e6e4a069d7c227129d4b0fd92" category="doc">檢閱安裝 AFF A20、AFF A30 或 AFF A50 儲存系統的需求</block>
+  <block id="324c8c5dc164bd7a20a196390999877a" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統新增 I/O 模組</block>
+  <block id="864386ce974fd4b0d66182a4e0c057d4" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱插拔 I/O 模組</block>
+  <block id="fcb55b0d2fdc0c07e54b1a1525f84391" category="doc">了解如何在 AFF A20、AFF A30 或 AFF A50 系統中新增和更換 I/O 模組</block>
+  <block id="605e4f4e923b5bee125a1b054c45eba5" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的 I/O 模組</block>
+  <block id="e1583f6a8d18e33e97ec3d8d22484760" category="doc">了解如何維護 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
+  <block id="c62385b0cf386a33ac0f72528074297e" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的 NV 電池</block>
+  <block id="dc4476660692318c3be67b73e1124e46" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱插拔電源供應單元</block>
+  <block id="431e369301e5eedb097da9d1cda2f6b2" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的即時時鐘電池</block>
+  <block id="c41db4136588a886c876e4525e6a4235" category="doc">檢查 AFF A200 系統中開機媒體的加密支援情況</block>
+  <block id="23724a7cbdd11dea5549f4f7555dbfa0" category="doc">在 AFF A200 系統中恢復開機媒體上的加密</block>
+  <block id="b5e0abc9410427bf05a488a8edd127ae" category="doc">在 AFF A200 系統上開機恢復映像</block>
+  <block id="26c2274f5cc9461b1cec92237a920af0" category="doc">了解 AFF A200 系統中的開機媒體更換</block>
+  <block id="b0f6d72d130bcc35417a6192782a8b81" category="doc">更換 AFF A200 系統中的開機媒體</block>
+  <block id="5f113dfe77a1605ca9709e93d3aa6969" category="doc">在手動開機恢復過程中關閉 AFF A200 系統中的控制器</block>
+  <block id="3ac02b2f8e79455e964ab7c5547e92e0" category="doc">完成 AFF A200 系統的機箱更換</block>
+  <block id="5b1863ccac0eb028b6bd29ffc9fad021" category="doc">更換 AFF A200 系統中的機箱</block>
+  <block id="0bcc39cb2a535c82c80b8fb3b06ea24c" category="doc">更換 AFF A200 機箱前，請先檢閱相關要求。</block>
+  <block id="094a3fa68dc87e291810786b2337f96e" category="doc">關閉 AFF A200 控制器以更換機箱</block>
+  <block id="050709a5f4ba0fd0f43058b123ab21e9" category="doc">更換 AFF A200 系統中的控制器</block>
+  <block id="38a75cc882541433cc9098c5a23652be" category="doc">在更換 AFF A200 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="9b4a153e32658979df9152717cf37383" category="doc">重新連接 AFF A200 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="e2ab45b7b794ff9786af9bf4ffc01eec" category="doc">完成 AFF A200 系統的控制器更換工作</block>
+  <block id="91623402551324a675c2cbdc5f391fef" category="doc">在更換之前，請先關閉 AFF A200 系統中故障的控制器</block>
+  <block id="fdcbd2155a6e402180bea09fa4634708" category="doc">恢復並驗證 AFF A200 系統中的控制器組態</block>
+  <block id="e1c14ec15f8a2d599d6aced81b79f9d6" category="doc">更換 AFF A200 系統中的 DIMM</block>
+  <block id="ca5132be25c85b33ec6e4c6777e7d8ea" category="doc">更換 AFF A200 系統中的磁碟機</block>
+  <block id="158929bb714845c83ed9d8f71d99518e" category="doc">使用 PDF 海報安裝和設定 AFF A200 儲存系統</block>
+  <block id="9451d4e0493f3d4f87ea0c49837b50da" category="doc">安裝並設定 AFF A200 儲存系統</block>
+  <block id="48c53dfbde943d7089761f4ec01f575a" category="doc">使用組態工作表設定 AFF A200 叢集</block>
+  <block id="e72018dfd7593ef2c4e2885347a4c3a0" category="doc">了解如何維護 AFF A200 儲存系統</block>
+  <block id="2a9cf7bd9c12207da086608207314538" category="doc">更換 AFF A200 系統中的 NVMEM 電池</block>
+  <block id="db3a7bf9eb9f5355ec5e5daa2538c871" category="doc">在 AFF A200 系統中熱插拔電源供應</block>
+  <block id="f0794f22fac81fec688c6f014cb6fdd6" category="summary">更換 AFF A200 系統中的即時時鐘電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
+  <block id="23cea2573b19221ee9e9f40197d6018e" category="doc">更換 AFF A200 系統中的即時時鐘電池</block>
+  <block id="6e544206eb6a3cd05e22ddee73d26e28" category="doc">檢查 AFF A220 系統中開機媒體的加密支援情況</block>
+  <block id="c108eac2be0defccf4513c9fa7020bfb" category="doc">在 AFF A220 系統中恢復開機媒體上的加密</block>
+  <block id="07274caf043b4f73b06d8102efee7975" category="doc">在 AFF A220 系統上開機恢復映像</block>
+  <block id="d9d353828361188c3ff45f06534b3614" category="doc">了解 AFF A220 系統中的開機媒體更換</block>
+  <block id="58e2a48be09d628bbfd76edca78506f6" category="doc">更換 AFF A220 系統中的開機媒體</block>
+  <block id="83f74c1f66e7222d2a3b47db3ac389ee" category="doc">關閉 AFF A220 系統中的控制器</block>
+  <block id="3325a27660113b161e2da0359aef75bb" category="doc">完成 AFF A220 系統的機箱更換</block>
+  <block id="ce026a03c2eda58e53bf5e2a339875ef" category="doc">更換 AFF A220 系統中的機箱</block>
+  <block id="eade81e6db6bffa1ab80e1c1d9705187" category="doc">更換 AFF A220 機箱前，請先檢閱相關要求。</block>
+  <block id="52c613af41ce7f530e81575019db90ee" category="doc">關閉 AFF A220 控制器以更換機箱</block>
+  <block id="84f61727a081afe231d1986a9bd0fac4" category="doc">更換 AFF A220 系統中的控制器</block>
+  <block id="fad5e72981e3564155bc704b4ae04ab9" category="doc">在更換 AFF A220 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="c4d73cfe761a91fce54e80333c5896e6" category="doc">重新連接 AFF A220 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="50d2197ad59e2fd24622a1aa85bdeea5" category="doc">完成 AFF A220 系統的控制器更換工作</block>
+  <block id="8240950f2d9d59ada7e1d9d6a2819129" category="doc">在更換之前，請先關閉 AFF A220 系統中故障的控制器。</block>
+  <block id="f438ae6fbec3f6852e9a8d24fea8188d" category="doc">恢復並驗證 AFF A220 系統中的控制器組態</block>
+  <block id="67ebc71db1b8ad696bdbeb4e213f757c" category="doc">更換 AFF A220 系統中的 DIMM</block>
+  <block id="a5c5dc84b71d4d082bd97d8070113b37" category="doc">更換 AFF A220 系統中的磁碟機</block>
+  <block id="7045267aa5f2ea7a67a4bf3861672e97" category="doc">依照詳細步驟安裝 AFF A220 儲存系統</block>
+  <block id="0cb4f6d507101c1af94dd4641cdfffe6" category="doc">請依照以下快速步驟安裝 AFF A220 儲存系統</block>
+  <block id="43763fca76eec61807f2b10cf83f68ee" category="doc">安裝並設定 AFF A220 儲存系統</block>
+  <block id="1d967715f78c42ee691f4772b2fdb034" category="doc">依照影片教學安裝 AFF A220 儲存系統</block>
+  <block id="236a5111da4ff2c2995d559f2a4389a3" category="doc">了解如何維護 AFF A220 儲存系統</block>
+  <block id="a0474c13f4d0c5500a5b2afd6f747a39" category="doc">更換 AFF A220 系統中的 NVMEM 電池</block>
+  <block id="af59b076e14af7f9caff10bef6aea250" category="doc">在 AFF A220 系統中熱插拔電源供應</block>
+  <block id="0534dccfc1223dd58ab17bb81834fc38" category="doc">更換 AFF A220 系統中的即時時鐘電池</block>
+  <block id="86b3cc0cc8a1b4afa45744edb824c310" category="doc">使用手冊開機恢復流程檢查 AFF A250 系統中開機媒體的加密支援</block>
+  <block id="96ffa2182f0a2633f8a9ae6f7945803d" category="doc">在手動開機恢復程序後，恢復 AFF A250 系統中開機媒體上的加密。</block>
+  <block id="836d93997ee8c1acb3fa107868bda4b2" category="doc">使用自動開機恢復流程在 AFF A250 系統上啟動恢復映像</block>
+  <block id="c197851902c3888523b44f42c5ca2c0e" category="doc">使用手動開機恢復流程在 AFF A250 系統上啟動恢復映像</block>
+  <block id="810c1340368c0d6ebc9a51af53f58a0a" category="doc">使用自動開機恢復流程更換 AFF A250 系統中的開機媒體</block>
+  <block id="271c18765b72b9118e6a9565f9613f65" category="doc">檢閱 AFF A250 系統中自動開機媒體恢復的需求</block>
+  <block id="d8795b1ee41ca6f7f834da23a5368cf2" category="doc">檢閱 AFF A250 系統中手動開機媒體恢復的需求</block>
+  <block id="5a9f14f23d5264a7b05bd5b310985072" category="doc">使用手動開機恢復流程更換 AFF A250 系統中的開機媒體</block>
+  <block id="e066abf7b966ea07d0495eeba0e8649f" category="doc">在自動開機恢復過程中關閉 AFF A250 系統中的控制器</block>
+  <block id="49e522866cc1a9cc7aff62059b6a237b" category="doc">在手動開機恢復過程中關閉 AFF A250 系統中的控制器</block>
+  <block id="9ac791f65e8f1f73d2202bf0d34fa669" category="doc">完成 AFF A250 系統的機箱更換</block>
+  <block id="3be923f5daed1d4fee7941add86fb123" category="doc">更換 AFF A250 系統中的機箱</block>
+  <block id="c1d84355cf2326951b06a06bb7fe0c1b" category="doc">準備更換 AFF A250 機箱</block>
+  <block id="2272b4e182ea20ccb9ae02bf5667bbf9" category="doc">在更換 AFF A250 系統機箱之前，請先檢閱相關要求。</block>
+  <block id="cfb2c7120d517c9d16423eae5a3f2da0" category="doc">關閉 AFF A250 控制器以更換機箱</block>
+  <block id="175a1f19c4d96cf76c3346178852f157" category="doc">更換 AFF A250 系統中的控制器</block>
+  <block id="8af5278a7646ad11549695aac6717f1e" category="doc">重新連接 AFF A250 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="e38ff5b96c2daa1e3caa863eb97ae95c" category="doc">在更換 AFF A250 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="045ae4735d5c98bd9cda880ef7a88c0b" category="doc">完成 AFF A250 系統的控制器更換工作</block>
+  <block id="3b06f1caa6b5958c0432df92118bb4f9" category="doc">在更換之前，請先關閉 AFF A250 系統中故障的控制器。</block>
+  <block id="ee970a6cb2e4caa63bb5a3bfd363a983" category="doc">恢復並驗證 AFF A250 系統中的控制器組態</block>
+  <block id="07ad0a1b0cf96c12b18cede245234b31" category="doc">更換 AFF A250 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="a6b6d911a8a17cd711e05f5449ea8ae4" category="doc">更換 AFF A250 系統中的磁碟機</block>
+  <block id="070ffbd86ec310d2991ee8589f585061" category="doc">在 AFF A250 系統中熱插拔風扇</block>
+  <block id="b7accb8b14ac5f3ea9b18848c60524f1" category="doc">按照詳細的逐步說明安裝 AFF A250 系統</block>
+  <block id="559d4c9ae378606b453ec096608835fd" category="doc">使用簡明圖解說明安裝 AFF A250 系統</block>
+  <block id="bcf286d5537d6f9439072d7b535a8c1f" category="doc">選擇如何安裝 AFF A250 儲存系統</block>
+  <block id="424e581b2a9f958d11e9d8315a9ee903" category="doc">依照影片教學安裝 AFF A250 系統</block>
+  <block id="8aa5e273ee3bfdbe96ab9bfe8749cac9" category="doc">了解如何維護 AFF A250 儲存系統</block>
+  <block id="1130e98209b6c2a701e100e343024b84" category="doc">更換或安裝 AFF A250 系統中的夾層卡</block>
+  <block id="ec00e6b670a946b5bae5502483927fca" category="doc">更換 AFF A250 系統中的 NVMEM 電池</block>
+  <block id="424115d12a4ea8516dc78b431f0f69da" category="doc">在 AFF A250 系統中熱插拔電源供應單元</block>
+  <block id="9901f45be1fc42c5ba86cf6068573536" category="summary">更換 AFF A250 系統中的即時時鐘電池，以確保依賴精確時間同步的服務和應用程式能夠繼續運作。</block>
+  <block id="78cbf08a85d629f2efd473db0f111037" category="doc">更換 AFF A250 系統中的即時時鐘電池</block>
+  <block id="d2c18f2170a5da831568527eeea4d6e6" category="doc">在雙節點 MetroCluster 組態中為 AFF A300 系統切換回聚合</block>
+  <block id="75ee7753d4c30fbc2eb36af1d36ff1be" category="doc">檢查 AFF A300 系統中開機媒體的加密支援</block>
+  <block id="55e14b42bed7216f01c8976d7b224d91" category="doc">在 AFF A300 系統中恢復開機媒體上的加密</block>
+  <block id="0e4de94c036d0fbf930204594bfc40fe" category="doc">在 AFF A300 系統上開機恢復映像</block>
+  <block id="73918ae143c327f3fc223fd354193e47" category="doc">了解 AFF A300 系統中的開機媒體更換。</block>
+  <block id="cf393632951d945bc55360f9cc9a440d" category="doc">更換 AFF A300 系統中的開機媒體</block>
+  <block id="d0d84d1bf61672d67ce4ef02fd67602a" category="doc">在手動開機恢復過程中關閉 AFF A300 系統中的控制器</block>
+  <block id="4d9ec1327ca4397ba866454817e5819d" category="doc">完成 AFF A300 系統的機箱更換</block>
+  <block id="70dbcd7d07c80ce5c986e9e8cd6bed27" category="doc">更換 AFF A300 系統中的機箱</block>
+  <block id="14a438242291c6f4fe778b3e916ef18c" category="doc">更換 AFF A300 機箱前，請先檢閱相關要求。</block>
+  <block id="41647bb58198a908a2eeeba58f5351e0" category="doc">關閉 AFF A300 控制器以更換機箱</block>
+  <block id="5f2dfa39ef9599c7e809109e0fe3d25f" category="doc">更換 AFF A300 系統中的控制器</block>
+  <block id="558a481fa189cae860ec77019323986f" category="doc">在更換 AFF A300 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="1e20af136bdb24f3da3f81831bd19be2" category="doc">重新連接 AFF A300 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="ea84f206f14b2c940c69f2813b942627" category="doc">完成 AFF A300 系統的控制器更換工作</block>
+  <block id="ff391ac45168ef820826236fe10a5f3d" category="doc">在更換之前，請先關閉 AFF A300 系統中發生故障的控制器。</block>
+  <block id="ae45fd3bc6d456041acf06354c5f8f97" category="doc">恢復並驗證 AFF A300 系統中的控制器組態</block>
+  <block id="e65c2709448346826044f8706acfc617" category="doc">更換 AFF A300 系統中的 DIMM 記憶體條</block>
+  <block id="39be05c4772a732b3b317e4f272c1967" category="doc">在 AFF A300 系統中熱插拔風扇</block>
+  <block id="2b548181cf63149dd082f2e84dc72a6b" category="doc">使用 PDF 海報安裝和設定 AFF A300 儲存系統</block>
+  <block id="26be76853af27d68ce80bc83eced97c7" category="doc">安裝並設定 AFF A300 儲存系統</block>
+  <block id="b3e97f482199cf240bb18a2caa7fd085" category="doc">使用組態工作表配置 AFF A300 叢集</block>
+  <block id="2c63e97def8996b5cbda2709e9b23ac7" category="doc">了解如何維護 AFF A300 儲存系統</block>
+  <block id="a8c95c2bda08487dc27170065662fc99" category="doc">更換 AFF A300 系統中的 NVMEM 電池</block>
+  <block id="f657417ff531feb8120565a16cd66ce0" category="doc">更換 AFF A300 系統中的 PCIe 卡</block>
+  <block id="4a647d6a47e0b0d23e342c554bd0f288" category="doc">在 AFF A300 系統中熱插拔電源供應</block>
+  <block id="987bdc840257663a6791de0dd893d340" category="doc">更換 AFF A300 系統中的即時時鐘電池</block>
+  <block id="043427eeaedddf12fb08db70c0516149" category="doc">檢查 AFF A320 系統中開機媒體的加密支援情況</block>
+  <block id="2486360587335392242e5d9deb6392b6" category="doc">在 AFF A320 系統中恢復開機媒體上的加密</block>
+  <block id="db074cfe5c6a35b828a8991e7fb7d5ed" category="doc">在 AFF A320 系統上開機恢復映像</block>
+  <block id="8c19697df0e97481ca8fd6383ba750cc" category="doc">了解 AFF A320 系統中的開機媒體更換</block>
+  <block id="15d0cd937d9a29948f179a782106b843" category="doc">更換 AFF A320 系統中的開機媒體</block>
+  <block id="afc2118f18cf85e7a6964eeade4aa114" category="doc">在手動開機恢復過程中關閉 AFF A320 系統中的控制器</block>
+  <block id="04438c89c1f3dab0c179a392df6ab848" category="doc">使用 USB 隨身碟將開機映像傳輸到 AFF A320 系統的開機媒體</block>
+  <block id="a78ce734883ca31185f970c29618410d" category="doc">完成 AFF A320 系統的機箱更換</block>
+  <block id="310c7dc908dba6d6607279133b804d45" category="doc">更換 AFF A320 系統中的機箱</block>
+  <block id="a573c4b9c2019a8d9c81f59895a480d3" category="doc">更換 AFF A320 機箱前，請先檢閱相關要求。</block>
+  <block id="5fa2beaad6cd2ade7df0d7aa8d189209" category="doc">關閉 AFF A320 控制器以更換機箱</block>
+  <block id="6c1fd73066c13f7c525cb9ae8747d626" category="doc">更換 AFF A320 系統中的控制器</block>
+  <block id="dd18e1e548c12a53b77b6ffec729cab0" category="doc">在更換 AFF A320 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="91622f5d05af70a4f7a6f5405483c9a4" category="doc">重新連接 AFF A320 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="666f253dd834131ec2cbde4de62fce13" category="doc">完成 AFF A320 系統的控制器更換工作</block>
+  <block id="59f0d5feb6a083044600125d2010878a" category="doc">在更換之前，請先關閉 AFF A320 系統中發生故障的控制器。</block>
+  <block id="a79e27b68ef8d26e891ab3e8944aea8a" category="doc">恢復並驗證 AFF A320 系統中的控制器組態</block>
+  <block id="40852418c63412cfdb608318e5c9c6d1" category="doc">更換 AFF A320 系統中的 DIMM 記憶體條</block>
+  <block id="12c3b57d8387e892e8f7b1f64e895a98" category="doc">在 AFF A320 系統中熱插拔風扇</block>
+  <block id="32c495f6399cfda8b104456e86bd1522" category="doc">依照詳細步驟安裝 AFF A320 儲存系統</block>
+  <block id="ca6a2acca73581638e51063fb6e162c3" category="doc">使用快速步驟安裝 AFF A320 儲存系統</block>
+  <block id="abc51437072e96dd9d4fcedb78d0fa83" category="doc">安裝並設定 AFF A320 儲存系統</block>
+  <block id="a7ffec5cf2a73afa979ee259baf7fa10" category="doc">依照影片教學安裝 AFF A320 儲存系統</block>
+  <block id="b006114d366a893be6ee1003fb566752" category="doc">了解如何維護 AFF A320 儲存系統</block>
+  <block id="248b6b2ce27449060c120ed90d82f446" category="doc">更換 AFF A320 系統中的 NVDIMM 電池</block>
+  <block id="abd753b98ed23c5bbe0912252fe0bb36" category="doc">更換 AFF A320 系統中的 NVDIMM</block>
+  <block id="332f4041246259d5e71966e2cc8bf2e8" category="doc">更換 AFF A320 系統中的 PCIe 卡</block>
+  <block id="65a7490f04c020af3647de1498b374cb" category="doc">在 AFF A320 系統中熱插拔電源供應</block>
+  <block id="5d43f623f664056b182286727d7acd02" category="doc">更換 AFF A320 系統中的即時時鐘電池</block>
+  <block id="a62dc320b7783039dc0dbaf81c4c97d6" category="doc">在 AFF A400 系統中，切換回雙節點 MetroCluster 組態中的聚合。</block>
+  <block id="ccf5d52038ae5d4fa9eca71d8035eecd" category="doc">檢查 AFF A400 系統中開機媒體的加密支援情況</block>
+  <block id="aac8713bef1e1d2bf781f60fe45ae16f" category="doc">在手動開機恢復程序後，恢復 AFF A400 系統中開機媒體上的加密。</block>
+  <block id="2e775b7e8f4a16db2a022be87af46991" category="doc">使用自動開機恢復流程在 AFF A400 系統上啟動恢復映像</block>
+  <block id="c1fef9987413cc649d73ecf8fdfdae38" category="doc">使用手動開機恢復流程在 AFF A400 系統上啟動恢復映像</block>
+  <block id="8b9697b5950a728ca37072cc9e84322a" category="doc">使用自動開機恢復流程更換 AFF A400 系統中的開機媒體</block>
+  <block id="d1d249bb08eaab613c9998ad5ddf629f" category="doc">檢閱更換 AFF A400 系統中開機媒體的需求</block>
+  <block id="a4276d2c74f372cfc53e884a534e26d1" category="doc">檢閱 AFF A400 系統中自動開機媒體恢復的需求</block>
+  <block id="2a2e2e7d8ab2c79bf5026dbfdd416a53" category="doc">檢閱 AFF A400 系統中手動開機媒體恢復的需求</block>
+  <block id="d0f6c63122f34ff03388feaf15debdaf" category="doc">使用手動開機恢復流程更換 AFF A400 系統中的開機媒體</block>
+  <block id="3819e47ed413eb85b686709cf2966a6f" category="doc">在自動開機恢復過程中關閉 AFF A400 系統中的控制器</block>
+  <block id="db5f8a4cfd44d8078f677865c99496ea" category="doc">在手動開機恢復過程中關閉 AFF A400 系統中的控制器</block>
+  <block id="e9ae9a111ba8867701f5a3e699bff753" category="doc">完成 AFF A400 系統的機箱更換</block>
+  <block id="67b4e0b7e5c4075a239c29c739321317" category="doc">更換 AFF A400 系統中的機箱</block>
+  <block id="32878cd460ed19fa36658a5dca963438" category="doc">關閉 AFF A400 控制器以更換機箱</block>
+  <block id="3a2f39a6f2a575aad8ef7400858cecf6" category="doc">更換 AFF A400 系統中的控制器</block>
+  <block id="dfdbc58b1d755bd040e5b7355f66c01a" category="doc">重新連接 AFF A400 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="631290d56c95bab111b968ae598bb441" category="doc">在更換 AFF A400 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="11f4e9e0e13f076e2309f9592aa6e174" category="doc">完成 AFF A400 系統的控制器更換</block>
+  <block id="7b2fbb913040c00d7fff495b1ccc2348" category="doc">在更換之前，請先關閉 AFF A400 系統中故障的控制器。</block>
+  <block id="62cdcbed6532c9e7192961f6f0fe6691" category="doc">恢復並驗證 AFF A400 系統中的控制器組態</block>
+  <block id="9e732d625da0705840900800ad610edc" category="doc">更換 AFF A400 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="c2cdd4a95033713f58d7234f1c6579e0" category="doc">在 AFF A400 系統中熱插拔風扇模組</block>
+  <block id="514bab99be9bc4267001bb8ed440d998" category="doc">按照詳細的逐步說明安裝 AFF A400 系統</block>
+  <block id="438b14c103d47aa26bcb77e411a87965" category="doc">使用簡明圖解說明安裝 AFF A400 系統</block>
+  <block id="a5d9f61442b69cc9205ed8b5bc124253" category="doc">選擇如何安裝 AFF A400 儲存系統</block>
+  <block id="7a76da704e30e1f2445460cc87d2a267" category="doc">依照影片教學安裝 AFF A400 系統</block>
+  <block id="c214fd8e77254b2c2707d85375ec0093" category="doc">了解如何維護 AFF A400 儲存系統</block>
+  <block id="3ec63aa2491de0f572219b303780c7a0" category="doc">更換 AFF A400 系統中的 NVDIMM 電池</block>
+  <block id="60d86d78f0be2f62328dee50239d8dbc" category="doc">更換 AFF A400 系統中的 NVDIMM</block>
+  <block id="483509bfc20b3a36a0a5a14d9c47a07d" category="doc">更換 AFF A400 系統中的 PCIe 卡或夾層卡</block>
+  <block id="753bf15814402dd7e7539e92767ca882" category="doc">在 AFF A400 系統中熱插拔電源供應單元</block>
+  <block id="af663fdda77d4c63d181fbb01aefae23" category="doc">更換 AFF A400 系統中的即時時鐘電池</block>
+  <block id="203cc5fdc2ae77023062034880f50d4c" category="doc">使用手冊開機恢復流程檢查 AFF A70 或 AFF A90 系統中開機媒體的加密支援</block>
+  <block id="346624f543c9a28386113f1a2e4f87e4" category="doc">在手動開機恢復程序之後，恢復 AFF A70 或 AFF A90 系統中開機媒體上的加密。</block>
+  <block id="21fa8495d6f161fb5c553554e1672bba" category="doc">使用自動開機恢復流程在 AFF A70 或 AFF A90 系統上啟動恢復映像</block>
+  <block id="f00b96dfa3e1f0c760394ae5d352779c" category="doc">使用手動開機恢復流程，在 AFF A70 或 AFF A90 系統上啟動恢復映像。</block>
+  <block id="e74e84a05cf69c9e06b1f53e0b046b17" category="doc">使用自動開機恢復流程更換 AFF A70 或 AFF A90 系統中的開機媒體</block>
+  <block id="bceb00c3478ebef80f3cd9b9aac012ea" category="doc">檢閱 AFF A70 或 AFF A90 系統中自動開機媒體恢復的要求</block>
+  <block id="93b3bda43bf142d0af7caf7ef4c3a92c" category="doc">檢閱 AFF A70 或 AFF A90 系統中手動開機媒體恢復的需求</block>
+  <block id="5a0a4a9d54c4c5bca873ba127b0b7158" category="doc">使用手冊開機恢復流程更換 AFF A70 或 AFF A90 系統中的開機媒體</block>
+  <block id="f9a9323de2c201feee9a5c8c17a0b06e" category="doc">在自動開機恢復過程中，關閉 AFF A70 或 AFF A90 系統中的控制器</block>
+  <block id="6cfd3ba7129a6fdce1e6a447d902dec5" category="doc">在手動開機恢復過程中，關閉 AFF A70 或 AFF A90 系統中的控制器</block>
+  <block id="9924d31ca7cd36e2c5e4e9e0155c18b7" category="doc">完成 AFF A70 或 AFF A90 系統的機箱更換</block>
+  <block id="3ce76db00120515f0e97a09f9e43aa0b" category="doc">更換 AFF A70 或 AFF A90 系統中的機箱</block>
+  <block id="3d1b8319fdc692cae6d95bc1ae004592" category="doc">準備更換 AFF A70 或 AFF A90 機箱</block>
+  <block id="19aba5e52577ef7d9241a20e89492266" category="doc">更換 AFF A70 或 AFF A90 機箱前，請先查看相關要求</block>
+  <block id="9a281fc9dcec8eac3ad7f9bcbcbc6b6a" category="doc">關閉 AFF A70 或 AFF A90 控制器以更換機箱</block>
+  <block id="58eac657fbaf1ebf06876c65490514ca" category="doc">更換 AFF A70 或 AFF A90 系統中的控制器</block>
+  <block id="3133219c131f62064b47a06d6f8e4e6d" category="doc">將 AFF A70 或 AFF A90 系統中的控制器交還，以恢復正常運作。</block>
+  <block id="9b7bd8ece8e8342d0f5ac5206bb69443" category="doc">在更換 AFF A70 或 AFF A90 系統中的控制器之前，請先查看相關要求。</block>
+  <block id="4157465bf3738902577b50046926ebeb" category="doc">完成 AFF A70 或 AFF A90 系統的控制器更換</block>
+  <block id="299216e30d89798af1102d881f0eafd0" category="doc">在更換之前，請先關閉 AFF A70 或 AFF A90 系統中發生故障的控制器。</block>
+  <block id="1af53f077776d5243bc8b92a6b91b642" category="doc">恢復並驗證 AFF A70 或 AFF A90 系統中的控制器組態</block>
+  <block id="8dbe70358153c76dc49ea10d85b96104" category="doc">更換 AFF A70 或 AFF A90 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="020b46c2235c710bca0ddec061656b69" category="doc">更換 AFF A70 或 AFF A90 系統中的 SSD 硬碟</block>
+  <block id="76aff585b3e10c80afc45d44d0d728b5" category="doc">在 AFF A70 或 AFF A90 系統中熱插拔風扇模組</block>
+  <block id="34a48b8e00367b3cd0077c62610afee6" category="doc">將 AFF A70 或 AFF A90 硬體連接至網路和儲存設備。</block>
+  <block id="70f2c8a2a319f1c779a4f164f598e390" category="doc">將 AFF A70 或 AFF A90 硬體安裝到機櫃或機架中</block>
+  <block id="119a4ba1e48d6295a828538cebdb39c8" category="doc">啟動 AFF A70 或 AFF A90 儲存系統</block>
+  <block id="9a2e8bc37556737c35c30d4c946d047e" category="doc">準備安裝 AFF A70 或 AFF A90 儲存系統</block>
+  <block id="c5bbda9d65f4eb70391a410bab801799" category="doc">檢閱安裝 AFF A70 或 AFF A90 儲存系統的需求</block>
+  <block id="804fe5797c499b63997f353bc520a286" category="doc">在 AFF A70 或 AFF A90 系統新增 I/O 模組</block>
+  <block id="e8e096f45f41c0ea64da080756daf433" category="doc">在 AFF A70 或 AFF A90 系統中熱插拔 I/O 模組</block>
+  <block id="a13590fe4de58e1ccfa0e0900bebd964" category="doc">了解如何在 AFF A70 或 AFF A90 系統中新增和更換 I/O 模組</block>
+  <block id="85263c966b05a2ca0e14b8a86729d46a" category="doc">更換 AFF A70 或 AFF A90 系統中的 I/O 模組</block>
+  <block id="a83746d5680071ecde11530379ff8235" category="doc">了解如何維護 AFF A70 或 AFF A90 儲存系統</block>
+  <block id="88fc01f965dde2f9a496d6779df3296b" category="doc">更換 AFF A70 或 AFF A90 系統中的 NV 電池</block>
+  <block id="767ca80895e06036233013026020f247" category="doc">更換 AFF A70 或 AFF A90 系統中的 NVRAM</block>
+  <block id="7b1a08fe26e53ecd365313ce987ece4a" category="doc">在 AFF A70 或 AFF A90 系統中熱插拔電源供應單元</block>
+  <block id="74e22f259a671a0273f388094b4d347f" category="doc">更換 AFF A70 或 AFF A90 系統中的即時時鐘電池</block>
+  <block id="e04e9ad4a699dcb7e8f62473e8967045" category="doc">更換 AFF A70 或 AFF A90 系統中的系統管理模組</block>
+  <block id="a429eca67b834f0674731bf8d4c18fc2" category="doc">在雙節點 MetroCluster 組態中為 AFF A700 系統切換回聚合</block>
+  <block id="2d42f6508db51259b7fdd8ffc246700a" category="doc">檢查 AFF A700 系統中開機媒體的加密支援</block>
+  <block id="5745bc310e92f831d56a4f55c8067559" category="doc">恢復 AFF A700 系統中開機媒體上的加密</block>
+  <block id="bb16428487e3a12021440ccf9819d992" category="doc">在 AFF A700 系統上開機恢復映像</block>
+  <block id="e32b248ea92d72ce1ca810df3c14d965" category="doc">了解 AFF A700 系統中的開機媒體更換</block>
+  <block id="8a62f3c7bcce526d359852f751b0476f" category="summary">更換 AFF A700 系統上故障的開機媒體。AFF A700 系統僅支援手冊開機媒體恢復程序。不支援自動開機媒體恢復。</block>
+  <block id="5d53c1f2243c6b11dbb7fa6119315f90" category="doc">更換 AFF A700 系統中的開機媒體</block>
+  <block id="794db990fdca7f3511de926035b839c6" category="doc">在手動開機恢復過程中關閉 AFF A700 系統中的控制器</block>
+  <block id="4fc63a61782510f57669c51f77fb9599" category="doc">完成 AFF A700 系統的機箱更換</block>
+  <block id="c922de7f3e93cbb15b0c3c7de271068b" category="doc">更換 AFF A700 系統中的機箱</block>
+  <block id="0c999eae0f773647a41d967615c38318" category="doc">更換 AFF A700 機箱前，請先檢閱相關要求。</block>
+  <block id="ff5bc82e2a09254d74253c19202d75a4" category="doc">關閉 AFF A700 控制器以更換機箱</block>
+  <block id="a34702674fa1cfd3a17016f56f14f99d" category="doc">完成 AFF A700 系統的控制器更換</block>
+  <block id="adb44ed2e1c9c4b83b86a8e2f016f66f" category="doc">在更換 AFF A700 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="2647e458ae21bead6bce82f8bded0616" category="doc">重新連接 AFF A700 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="fa56e68e371ae6357b95dce027a52096" category="doc">在更換之前、請先關閉 AFF A700 系統中故障的控制器</block>
+  <block id="cab5c56d58b8885c138c34ede49bccc4" category="doc">還原並驗證 AFF A700 系統中的控制器組態</block>
+  <block id="e48182c74b38abef1bfaa48fa8001c87" category="doc">更換 AFF A700 系統中的控制器</block>
+  <block id="0ae418b3de67eef5190ac56038471a2d" category="doc">在 AFF A700 系統中熱插拔 DCPM 模組</block>
+  <block id="0bf1da21182deb11edb16a97a33e10bc" category="doc">更換 AFF A700 系統中的 DCPM 模組</block>
+  <block id="62d24cc7eb690f2f58082786c30a276b" category="doc">更換 AFF A700 系統中的 DIMM</block>
+  <block id="bbc4646254408104af1264ff2fc598f3" category="doc">在 AFF A700 系統中熱插拔風扇</block>
+  <block id="ab2d1206948a75bc393cc77f78ddfdc8" category="doc">依照詳細步驟安裝 AFF A700 儲存系統</block>
+  <block id="d0a459e3a33ce18f984ffc5bb96ab531" category="doc">使用快速步驟安裝 AFF A700 儲存系統</block>
+  <block id="616dbad04231b629dfc1fba0d43090d4" category="doc">安裝並設定 AFF A700 儲存系統</block>
+  <block id="534662b9dbbb245bf942fea57a74d659" category="doc">依照影片教學安裝 AFF A700 儲存系統</block>
+  <block id="37ccfc398792659bc072054554b9c361" category="doc">更換 AFF A700 系統中的 LED USB 模組</block>
+  <block id="2af35ae3d9b7500dcaa7f837706498f1" category="doc">了解如何維護 AFF A700 儲存系統</block>
+  <block id="d8c81082fcb33ab8d8f30e5a1e15b415" category="doc">更換 AFF A700 系統中的 NVRAM 模組或 NVRAM DIMM</block>
+  <block id="ef0bbce0c80582a3a208db01429a2a66" category="doc">更換 AFF A700 系統或 FAS9000 系統中的 I/O 模組</block>
+  <block id="b129b2ed7352c32381504e9fd5e0c982" category="doc">在 AFF A700 系統中熱插拔電源供應</block>
+  <block id="f5d2dfdb02232b273220b23ed9968405" category="doc">更換 AFF A700 系統中的即時時鐘電池</block>
+  <block id="1d6f7d94c95c369c1bccf9df91f6e3e7" category="doc">了解如何為 AFF A700 系統新增 X91148A 模組</block>
+  <block id="6e10fb2c65ebb073deb45221a43dd907" category="doc">當 AFF A700 系統所有插槽已佔用時，新增 X91148A 儲存設備模組</block>
+  <block id="d674cbeb8716e4ce6472306deacfa7f9" category="doc">使用開啟插槽為 AFF A700 系統新增 X91148A 模組</block>
+  <block id="3776aa7bf65e70cf80f48200730954bc" category="doc">檢查 AFF A700s 系統中開機媒體的加密支援情況</block>
+  <block id="b2ae39a0eae91c6d391587f2e80517ee" category="doc">恢復 AFF A700s 系統中開機媒體上的加密</block>
+  <block id="4cab98f9243e2b90caeea58b2229edc9" category="doc">在 AFF A700s 系統上開機恢復映像</block>
+  <block id="2a01f144ed587285692ab18f4406a613" category="doc">了解 AFF A700s 系統中的開機媒體更換</block>
+  <block id="8331a3d2cf20eaf1f279088099bbe139" category="doc">更換 AFF A700s 系統中的開機媒體</block>
+  <block id="1111db0e2ab1b6207e3db67bb452facf" category="doc">在手動開機恢復過程中關閉 AFF A700s 系統中的控制器</block>
+  <block id="96801df09e5a3e391a3bae74eee01769" category="doc">使用 USB 隨身碟將開機映像傳輸到 AFF A700s 系統的開機媒體。</block>
+  <block id="e340650c7f7d03f39f4afed4cb8d24d5" category="doc">完成 AFF A700s 系統的機箱更換</block>
+  <block id="668633d699fd6e34119395b6686fba8f" category="doc">更換 AFF A700s 系統中的機箱</block>
+  <block id="31266244170d2a2206a7a1d80dc1e0e2" category="doc">更換 AFF A700s 機箱前，請先檢閱相關要求。</block>
+  <block id="935e6572d8253e599578e98b08dd2797" category="doc">關閉 AFF A700s 控制器以更換機箱</block>
+  <block id="757bddffd71eea7a06016ae934987b3b" category="doc">更換 AFF A700s 系統中的控制器</block>
+  <block id="8813c5f4b7c9fe6dfb43ec362ef6f1c6" category="doc">在更換 AFF A700s 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="4ac3ac43934b7586325df1708712a59f" category="doc">重新連接 AFF A700s 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="2de190c70bc68a50d7572be27275de8b" category="doc">完成 AFF A700s 系統的控制器更換工作</block>
+  <block id="d380d0458731ae438b11258d07275f43" category="doc">在更換之前、請先關閉 AFF A700s 系統中受損的控制器。</block>
+  <block id="a47301658c495cbe59e74997c487b3fb" category="doc">恢復並驗證 AFF A700s 系統中的控制器組態</block>
+  <block id="d1f45b71bdadc3979ef7c109bbb52f1d" category="doc">更換 AFF A700s 系統中的 DIMM 記憶體條</block>
+  <block id="bf6daf0df772a7d68316f6875614d898" category="doc">更換 AFF A700s 系統中的磁碟機</block>
+  <block id="bb146598739b74840b53ca31d5f417d8" category="doc">更換 AFF A700s 系統中的風扇</block>
+  <block id="48194504bc9249f5fd1590871c4752fb" category="doc">使用 PDF 海報安裝並設定 AFF A700s 儲存系統</block>
+  <block id="2aa33887c886484ac2cb35e64c7fdf20" category="doc">安裝並設定 AFF A700s 儲存系統</block>
+  <block id="bf58f49353d276b2526731402d30904b" category="doc">依照影片教學安裝 AFF A700s 儲存系統</block>
+  <block id="c57b364e1fff1ed617502f8a8d88ecc6" category="doc">使用組態工作表設定 AFF A700s 叢集</block>
+  <block id="ffbb5c8819585cde4451627ef872e656" category="doc">了解如何維護 AFF A700s 儲存系統</block>
+  <block id="51781a25f84220aadfdcabe160227853" category="doc">更換 AFF A700s 系統中的 NVRAM 電池</block>
+  <block id="fd1486f3902a0215fe6a7bc3d303fa7d" category="doc">更換 AFF A700s 系統中的 NVRAM 模組和 NVRAM DIMM</block>
+  <block id="7204efbdbf5f6f18bcd960ef9ba6e501" category="doc">更換 AFF A700s 系統中的 PCIe 卡</block>
+  <block id="749978fd1f082930a70c040d743bc1e3" category="doc">在 AFF A700s 系統中熱插拔電源供應</block>
+  <block id="ddc3319cb1c20a52e5cb4201ccc27591" category="doc">更換 AFF A700s 系統中的即時時鐘電池</block>
+  <block id="60efd2fa7fd7ee1a0aac8eceaef2de17" category="doc">檢查 AFF A800 系統中開機媒體的加密支援</block>
+  <block id="1994920dab87a16d55267b8c12858f81" category="doc">在手動開機恢復程序後，恢復 AFF A800 系統中開機媒體上的加密。</block>
+  <block id="d0823d28a014faef1cff926b495b2715" category="doc">使用自動開機恢復流程在 AFF A800 系統上啟動恢復映像</block>
+  <block id="b79500c82c099104b96f4ce79a01f4da" category="doc">使用手動開機恢復流程在 AFF A800 系統上啟動恢復映像</block>
+  <block id="fe0f86b9819acf9d7473166b0ff992f3" category="doc">使用自動開機恢復流程更換 AFF A800 系統中的開機媒體</block>
+  <block id="34e412a072313981173d6e776bd4fee8" category="doc">檢閱 AFF A800 系統中自動開機媒體恢復的需求</block>
+  <block id="52205234332ec51bbebd866ff60c7ebb" category="doc">檢閱 AFF A800 系統中手動開機媒體恢復的需求</block>
+  <block id="6969149565afc46098d2cabc2e789798" category="doc">使用手動開機恢復流程更換 AFF A800 系統中的開機媒體</block>
+  <block id="70e8b9cd934d191c30d13f98b53940e1" category="doc">在自動開機恢復過程中關閉 AFF A800 系統中的控制器</block>
+  <block id="2e04d8e0284099b8d79f63a817ffcba1" category="doc">在手動開機恢復過程中關閉 AFF A800 系統中的控制器</block>
+  <block id="0568f2fdd573ab3f83b60a79044f08e6" category="doc">完成 AFF A800 系統的機箱更換</block>
+  <block id="8a0badb8446c108f33a82716828151a8" category="doc">更換 AFF A800 系統中的機箱</block>
+  <block id="971fbac44748838777783b681a837155" category="doc">準備更換 AFF A800 機箱</block>
+  <block id="6c2e7cb80242749cce1782e300ce9445" category="doc">更換 AFF A800 機箱前，請先檢閱相關要求。</block>
+  <block id="ea2ff37f6c5d228d6e524e602b8b172c" category="doc">關閉 AFF A800 控制器以更換機箱</block>
+  <block id="e22780bc168b30f93dbadfd86e9b11b4" category="doc">更換 AFF A800 系統中的控制器</block>
+  <block id="33fb83dd93434f14f049503f78d6b0c7" category="doc">重新連接 AFF A800 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="41ad2bc9c99c9d791e7a8eba90f375aa" category="doc">在更換 AFF A800 系統中的控制器之前，請先檢視相關要求。</block>
+  <block id="4913ffdf66f6c4a8fb89ada82587702a" category="doc">完成 AFF A800 系統的控制器更換</block>
+  <block id="92cd26a0dfd202eef4b7e6ab4eab4944" category="doc">在更換之前，請先關閉 AFF A800 系統中故障的控制器。</block>
+  <block id="6319328687af809c1a7e2d050e618053" category="doc">恢復並驗證 AFF A800 系統中的控制器組態</block>
+  <block id="e8911d85ea9fd38207e7a5c6bf62958e" category="doc">更換 AFF A800 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="d5c9e69c0f65568cb460f2fa59f1faf3" category="doc">更換 AFF A800 系統中的磁碟機</block>
+  <block id="c84f2cfdc679f23bbd8419a40ec95831" category="doc">更換 AFF A800 系統中的風扇</block>
+  <block id="f3ed90e7543da79102dc255c34aaafbd" category="doc">按照詳細的逐步說明安裝 AFF A800 系統</block>
+  <block id="59c7c83cc79ab5ce18e4ac855f87aeaa" category="doc">按照快速設定說明安裝 AFF A800 系統</block>
+  <block id="536635ae8d62a44f01a99af3c439e089" category="doc">選擇如何安裝 AFF A800 儲存系統</block>
+  <block id="c772f8514a925bd2423afd20f17ab279" category="doc">依照影片教學安裝 AFF A800 系統</block>
+  <block id="b26ebfae06ee36b17f89a887241dbb91" category="doc">了解如何維護 AFF A800 儲存系統</block>
+  <block id="639183b343a3b7065fb1fed09e814d22" category="doc">更換 AFF A800 系統中的 NVDIMM 電池</block>
+  <block id="4849f0a95cbec41c8b78a40bd8e9c504" category="doc">更換 AFF A800 系統中的 NVDIMM</block>
+  <block id="8a6e95cac69e919bd551752e874b5dfb" category="doc">更換 AFF A800 系統中的 PCIe 卡</block>
+  <block id="ec9806aa6d1bdebb75668db5d6f22715" category="doc">在 AFF A800 系統中熱插拔電源供應</block>
+  <block id="4f9609b971369ac44e7cfaaced69b5e6" category="doc">更換 AFF A800 系統中的即時時鐘電池</block>
+  <block id="9f4c34f7dc345ec0ca20d83378dd170c" category="doc">在 AFF A900 系統新增 I/O 模組</block>
+  <block id="5ff98b831aa14ed775a09d978741b32f" category="doc">檢查 AFF A900 系統中開機媒體的加密支援</block>
+  <block id="17c802234b049ba4fb23c157ee983e39" category="doc">使用手冊開機恢復程序恢復 AFF A900 系統中開機媒體上的加密</block>
+  <block id="08bef061790a1e35ef3742fd40af4afd" category="doc">使用自動開機恢復流程在 AFF A900 系統上開機恢復映像</block>
+  <block id="e5a8d11594012a1e56091635c17ed21b" category="doc">使用自動開機恢復流程更換 AFF A900 系統中的開機媒體</block>
+  <block id="55a1ab4cb41db0b80b8ba862bb5f7aab" category="doc">檢閱 AFF A900 系統中自動開機媒體恢復的需求</block>
+  <block id="b20aaa311be13d0f9a97396720ba38b6" category="doc">檢閱 AFF A900 系統中手動開機媒體恢復的需求</block>
+  <block id="1cfacf915dd656ee6f50792fdba254f5" category="doc">使用手動開機恢復流程更換 AFF A900 系統中的開機媒體</block>
+  <block id="7dd769e64f4f976acccdc0157b05c707" category="doc">在自動開機恢復過程中關閉 AFF A900 系統中的控制器</block>
+  <block id="36f1b351e9ad9395e2e836327b656cc7" category="doc">在手動開機恢復過程中關閉 AFF A900 系統中的控制器</block>
+  <block id="0d74a248352ae788d28773ab6a26912b" category="doc">使用手動開機恢復流程在 AFF A900 系統上啟動恢復映像</block>
+  <block id="617825be2552ca3f37a560cf99f24f81" category="doc">檢閱更換 AFF A900 系統中開機媒體的需求</block>
+  <block id="48b6afe207164e01fea3068a506acb30" category="doc">完成 AFF A900 系統的機箱更換</block>
+  <block id="91e352810aec156aeb6a103abd33b8b2" category="doc">更換 AFF A900 系統中的機箱</block>
+  <block id="b80f9a4511ca5f4a175193098e78a0cd" category="doc">關閉 AFF A900 控制器以更換機箱</block>
+  <block id="c26ef46b82e5c246544d52f26cd915a8" category="doc">更換 AFF A900 系統中的控制器</block>
+  <block id="905fb0f25de7714d191d50d275c3b6c1" category="doc">完成 AFF A900 系統的控制器更換</block>
+  <block id="52b452f25fe983fb1d47480649419083" category="doc">重新連接 AFF A900 系統中的系統線纜並重新分配磁碟機</block>
+  <block id="f0a2524e02e78037e2ed43e8507c282c" category="doc">在更換之前，請先關閉 AFF A900 系統中故障的控制器</block>
+  <block id="fb1f5c76bde365441ac51b5121a9e85b" category="doc">恢復並驗證 AFF A900 系統中的控制器組態</block>
+  <block id="0a305c7d0e97d77fc39a3ae61e85c422" category="doc">更換 AFF A900 系統中包含 NVRAM11 電池的 DCPM 模組</block>
+  <block id="9d892362c65c081ae58432e54b6adbbb" category="doc">更換 AFF A900 系統中的 DIMM 以修復記憶體容量錯誤</block>
+  <block id="e140a8731f3aab8daacf1486ae53ef36" category="doc">在 AFF A900 系統中熱插拔風扇模組</block>
+  <block id="7fb30c125a50ecb8002dffb96031245e" category="doc">按照詳細的逐步說明安裝 AFF A900 系統</block>
+  <block id="7c25be84b26a6dec99bdfd76b81d495c" category="doc">使用簡明圖解說明安裝 AFF A900 系統</block>
+  <block id="9f7a48c23a7bffd855997a2fe1f3dca3" category="doc">選擇如何安裝 AFF A900 儲存系統</block>
+  <block id="3f9b704b82c5c2dfa2b29210bf90361b" category="doc">依照影片教學安裝 AFF A900 系統</block>
+  <block id="f87a7db48ada4445d3df378c1d321967" category="doc">更換 AFF A900 系統中的 LED USB 模組</block>
+  <block id="def10a4b2856cd966eadca8e0aa2854c" category="doc">了解如何維護 AFF A900 儲存系統</block>
+  <block id="671a864908c958f4355467784062bc64" category="doc">更換 AFF A900 系統中的 NVRAM 模組或 NVRAM DIMM</block>
+  <block id="5712e8af87fe16e7fed44e2c822246b6" category="doc">更換 AFF A900 系統中的 I/O 模組</block>
+  <block id="a80801e682252f6d915fda15ee2daa5e" category="doc">在 AFF A900 系統中熱插拔電源供應</block>
+  <block id="16109d0acee76589e9c56c72ef75939e" category="doc">更換 AFF A900 系統中的即時時鐘電池</block>
 </blocks>
