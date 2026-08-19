@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: asa c800, replace a pcie card 
 summary: 若要更換PCIe卡、您必須先拔下插卡的纜線、從插卡上拔下SFP和QSFP模組、再移除擴充卡、重新安裝擴充卡、然後重新安裝SFP和QSFP模組、再開始連接插卡。 
 ---
-= 更換 ASA C800 系統中的 PCIe 卡
+= 在 ASA C800 系統中更換或新增 PCIe 卡
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-當ASA C800系統中的 I/O 模組發生故障、需要升級以支援更高的效能或附加功能時，請更換或新增該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。
+當您的 ASA C800 系統中的 PCIe 卡發生故障時，請更換該卡；或者，您也可以新增或升級卡片以支援更高的效能或其他功能。更換過程包括：關閉控制器、更換故障的 PCIe 卡、重新啟動控制器，然後將故障零件寄回 NetApp。
 
 .開始之前
 * 您必須備有NetApp的新零件或替換零件。
