@@ -2,15 +2,17 @@
 permalink: fas9000/chassis-replace-overview.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, chassis replacement 
-summary: 您可以將受損的機箱更換為與受損機箱相同機型的新機箱。 
+summary: 在更換 FAS9000 系統中的機箱之前，請確認所有其他元件均正常運作，且更換的機箱與受損機箱型號相同。 
 ---
-= 更換 FAS9000 機箱前，請先查看相關要求。
+= 在更換 FAS9000 系統機箱之前，請先審查相關要求。
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+在更換 FAS9000 系統中的機箱之前，請確認所有其他元件都運作正常，且更換的機箱與故障機箱的型號相同。此程序會造成系統中斷，在雙節點叢集中會導致完全服務停電，在多節點叢集中會導致部分停電。
+
 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
 
 * 您可以將此程序用於ONTAP 系統支援的所有版本的功能。

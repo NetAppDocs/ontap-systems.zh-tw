@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, add IO module 
 summary: 在您的 ASA C30 儲存系統中新增 I/O 模組以增強網路連線並擴展系統處理資料流量的能力。 
 ---
-= 為您的 ASA C30 系統新增 I/O 模組，以增強網路連線。
+= 在 ASA C30 系統新增 I/O 模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -101,8 +101,8 @@ summary: 在您的 ASA C30 儲存系統中新增 I/O 模組以增強網路連線
 如果儲存系統有可用的插槽，請將新的 I/O 模組安裝到其中一個可用的插槽中。如果所有插槽都已佔用，請移除現有的 I/O 模組以騰出空間，然後安裝新的 I/O 模組。
 
 .開始之前
-* 檢查 https://hwu.netapp.com/["NetApp Hardware Universe"^] 以確定新的 I/O 模組與您執行的儲存系統和 ONTAP 版本相容。
-* 如果有多個插槽可用、請檢查中的插槽優先順序 https://hwu.netapp.com/["NetApp Hardware Universe"^] 並使用適用於您I/O模組的最佳工具。
+* 檢查 https://hwu.netapp.com["NetApp Hardware Universe"^]以確保新的 I/O 模組與您的儲存系統和您正在執行的 ONTAP 版本相容。
+* 如果有多個插槽可用，請檢查 https://hwu.netapp.com["NetApp Hardware Universe"^]中的插槽優先順序，並為您的 I/O 模組選擇最佳的插槽。
 * 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
 
 

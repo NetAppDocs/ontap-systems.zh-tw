@@ -2,7 +2,7 @@
 permalink: fas8300/dimm-replace.html 
 sidebar: sidebar 
 keywords: fas8300, fas8700, replace, dimm, shut, down, impaired, controller, module, reinstall,  system, controller, aggregates, metrocluster, replacement 
-summary: 當儲存系統遇到諸如過多的可修正錯誤修正代碼或不可修正錯誤等錯誤時,必須更換控制器中的 DIMM,這通常是由單一 DIMM 故障引起的,導致儲存系統無法啟動 ONTAP。 
+summary: 當儲存系統遇到諸如過多的可修正 ECC 記憶體容量錯誤或不可修正 ECC 錯誤等錯誤時，必須更換控制器中的 DIMM，這些錯誤通常是由單一 DIMM 故障引起的，導致儲存系統無法開機 ONTAP。 
 ---
 = 更換 FAS8300 或 FAS8700 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當儲存系統遇到諸如過多的可修正錯誤修正代碼或不�
 
 
 [role="lead"]
-當儲存系統出現諸如 Health Monitor 警報中顯示的過多 CECC （可糾正錯誤校正碼）錯誤或無法糾正的 ECC 錯誤等錯誤時，您必須更換控制器中的 DIMM。這些錯誤通常是由單一 DIMM 故障引起的，該故障會導致儲存系統無法開機 ONTAP。
+當儲存系統出現諸如 Health Monitor 警報提示的過多可糾正 ECC 記憶體容量錯誤或不可糾正 ECC 錯誤等情況時，必須更換控制器中的 DIMM。這些錯誤通常是由單一 DIMM 故障引起的，導致儲存系統無法開機 ONTAP。
 
 系統中的所有其他組件必須正常運作。如果某個組件無法正常運作，您必須聯絡技術支援。
 

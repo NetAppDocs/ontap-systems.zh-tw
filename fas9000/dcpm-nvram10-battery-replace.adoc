@@ -2,7 +2,7 @@
 permalink: fas9000/dcpm-nvram10-battery-replace.html 
 sidebar: sidebar 
 keywords: fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part 
-summary: 若要熱插拔包含 NVRAM10 電池的 de-stage 控制器電源模組 DCPM、您必須找到故障的 DCPM 模組、將其從機箱中移除、然後安裝替換的 DCPM 模組。 
+summary: 在 FAS9000 系統中，無需中斷服務即可熱插拔包含 NVRAM10 電池的降級控制器電源模組 （DCPM）。 
 ---
 = 在 FAS9000 系統中熱插拔 DCPM 模組
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 若要熱插拔包含 NVRAM10 電池的 de-stage 控制器電源模組 
 
 
 [role="lead"]
+在 FAS9000 系統中，無需中斷服務即可熱插拔包含 NVRAM10 電池的降級控制器電源模組 （DCPM）。
+
 若要熱交換內含NVRAM10電池的還原控制器電源模組（DCPM）、您必須找出故障的DCPM模組、將其從機箱中取出、然後安裝更換的DCPM模組。
 
 從機箱中取出故障模組之前、您必須備有備用的DCPM模組、而且必須在移除後五分鐘內進行更換。從機箱中移除DCPM模組之後、除了容錯移轉到其他控制器模組之外、擁有DCPM模組的控制器模組也不會有關機保護。

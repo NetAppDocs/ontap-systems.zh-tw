@@ -2,7 +2,7 @@
 permalink: fas8200/dimm-replace.html 
 sidebar: sidebar 
 keywords: fas8200, replace a dimm 
-summary: 當儲存系統報告 Health Monitor 警示所識別的過多可修正錯誤修正碼 （CECC） 錯誤，或由單一 DIMM 故障所導致的不可修正 ECC 錯誤使儲存系統無法開機 ONTAP 時，您必須更換控制器模組中的 DIMM。 
+summary: 當 FAS8200 系統透過 Health Monitor 警報報告過多可糾正的 ECC 記憶體容量錯誤或不可糾正的 ECC 錯誤時，請更換 DIMM。故障的 DIMM 可能導致儲存系統無法開機 ONTAP，因此更換 DIMM 可恢復系統的穩定運作。 
 ---
 = 更換 FAS8200 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當儲存系統報告 Health Monitor 警示所識別的過多可修正�
 
 
 [role="lead"]
-當儲存系統報告 Health Monitor 警示所識別的過多可修正錯誤修正碼 （CECC） 錯誤，或由單一 DIMM 故障所導致的不可修正 ECC 錯誤使儲存系統無法開機 ONTAP 時，您必須更換控制器模組中的 DIMM。
+當 FAS8200 系統透過 Health Monitor 警報報告過多可糾正的 ECC 記憶體容量錯誤或不可糾正的 ECC 錯誤時，請更換 DIMM。故障的 DIMM 可能導致儲存系統無法開機 ONTAP，因此更換 DIMM 可恢復系統的穩定運作。
 
 系統中的所有其他組件必須正常運作。如果發生故障，請聯絡技術支援。
 

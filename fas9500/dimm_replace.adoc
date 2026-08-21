@@ -2,7 +2,7 @@
 permalink: fas9500/dimm_replace.html 
 sidebar: sidebar 
 keywords: fas9500, replace a dimm 
-summary: 當儲存系統遇到諸如基於 Health Monitor 警示的過多 CECC 錯誤或無法修正的 ECC 錯誤等錯誤時，必須更換控制器中的 DIMM，這些錯誤通常是由單一 DIMM 故障引起的，導致儲存系統無法啟動 ONTAP。 
+summary: 當 FAS9500 系統透過 Health Monitor 警報報告過多可糾正的 ECC 記憶體容量錯誤或不可糾正的 ECC 錯誤時，請更換 DIMM。故障的 DIMM 可能導致儲存系統無法開機 ONTAP，因此更換 DIMM 可恢復系統的穩定運作。 
 ---
 = 更換 FAS9500 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當儲存系統遇到諸如基於 Health Monitor 警示的過多 CECC �
 
 
 [role="lead"]
-當儲存系統出現諸如基於 Health Monitor 警報的過多 CECC （Correctable Error Correction Codes）錯誤或不可糾正的 ECC 錯誤等錯誤時，您必須更換控制器中的 DIMM。這些錯誤通常是由單一 DIMM 故障所引起，導致儲存系統無法開機 ONTAP。
+當 FAS9500 系統透過 Health Monitor 警報報告過多可糾正的 ECC 記憶體容量錯誤或不可糾正的 ECC 錯誤時，請更換 DIMM。故障的 DIMM 可能導致儲存系統無法開機 ONTAP，因此更換 DIMM 可恢復系統的穩定運作。
 
 .開始之前
 系統中的所有其他組件必須正常運作；如果某個組件無法正常運作，您必須聯絡技術支援。

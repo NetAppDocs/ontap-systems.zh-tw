@@ -2,7 +2,7 @@
 permalink: fas9000/dimm-replace.html 
 sidebar: sidebar 
 keywords: aff a700, fas9000, replace, dimm, shut, down, impaired, controller, module, reinstall, system, node, aggregates, metrocluster, replacement 
-summary: 當系統登錄越來越多的可修正錯誤修正碼（ECC）時，您必須更換控制器模組中的 DIMM。否則會導致系統出現問題。 
+summary: 當 FAS9000 系統透過健康監視器警報報告過多可修正的 ECC 記憶體容量錯誤或不可修正的 ECC 錯誤時，請更換系統中的 DIMM 記憶體條。故障的 DIMM 記憶體條可能導致儲存系統無法開機 ONTAP，因此更換它可以恢復系統的穩定運作。 
 ---
 = 更換 FAS9000 系統中的 DIMM 以修復記憶體容量錯誤
 :allow-uri-read: 
@@ -11,6 +11,8 @@ summary: 當系統登錄越來越多的可修正錯誤修正碼（ECC）時，�
 
 
 [role="lead"]
+當 FAS9000 系統透過健康監視器警報報告過多可修正的 ECC 記憶體容量錯誤或不可修正的 ECC 錯誤時，請更換系統中的 DIMM 記憶體條。故障的 DIMM 記憶體條可能導致儲存系統無法開機 ONTAP，因此更換它可以恢復系統的穩定運作。
+
 當儲存系統遇到錯誤時、您必須更換控制器中的 DIMM 、例如根據健全狀況監視器警示或不可修正的 ECC 錯誤（可修正的錯誤修正碼）過多、通常是由於單一 DIMM 故障而導致、導致儲存系統無法開機 ONTAP 。
 
 系統中的所有其他元件都必須正常運作；否則、您必須聯絡技術支援部門。
