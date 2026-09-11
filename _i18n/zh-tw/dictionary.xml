@@ -774,7 +774,6 @@
   <block id="462ec873925d8409f9ead354ff424e1b" category="list-text">驗證邏輯介面是否向其主伺服器和連接埠回報：「network interface show -is home-false」</block>
   <block id="bfe787834fd9e46156b1d62f2f5029f8" category="list-text">向NetApp支援部門註冊系統序號。</block>
   <block id="523f153f577513ed6f7ddd1f4d6a7cac" category="list-text">如果啟用了「支援」功能、請傳送「支援」訊息來登錄序號。AutoSupport AutoSupport</block>
-  <block id="69d8be94d5b9ba35360160c6e3097920" category="list-text">如果AutoSupport 未啟用此功能、請致電<block ref="201cec37350c6561a61e79fe67dd46bf" category="inline-link-rx"></block> 以登錄序號。</block>
   <block id="95275f416abb0ceec250662ff9b425ed" category="section-title">步驟4：將故障零件歸還給NetApp</block>
   <block id="5f807f08fe5525cbcd6708fd63eac203" category="paragraph">在I/O進行期間、您可以不中斷地更換故障磁碟機。更換SSD的程序適用於非旋轉式磁碟機、更換HDD的程序適用於旋轉式磁碟機。</block>
   <block id="0d05e02f604e76f41068ce0c51bc6d81" category="paragraph">當磁碟機故障時、平台會將警告訊息記錄到系統主控台、指出哪個磁碟機故障。此外、操作員顯示面板上的故障LED和故障磁碟機上的故障LED都會亮起。</block>
@@ -8155,7 +8154,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8019bdcaff5849ab8015533c8674f305" category="paragraph">將每個控制器連接至兩個 NS224 機櫃上的 NSM 模組。圖形顯示控制器 A 的藍色纜線和控制器 B 的黃色纜線。</block>
   <block id="546125971d4fce23d0f562118f0ce95f" category="open-title">選項 3 ：兩個 DS460C 機櫃</block>
   <block id="8994222dc8e3118b755e00531cef6a1c" category="paragraph">將每個控制器連接至兩個 DS460C 機櫃上的 IOM 模組。圖形顯示控制器 A 的藍色纜線和控制器 B 的黃色纜線。</block>
-  <block id="98aab8017242eea1d6e23ba928b20ae5" category="list-text"><block ref="98aab8017242eea1d6e23ba928b20ae5" category="inline-link-macro-rx"></block></block>
   <block id="4e3c3284590d1aa1440e67b3bd65ba6e" category="list-text"><block ref="4e3c3284590d1aa1440e67b3bd65ba6e" category="inline-link-macro-rx"></block></block>
   <block id="370d2e6f20948d3881708f9706576691" category="sidebar">準備更換</block>
   <block id="7e8bda9aef5e8fb9e3018b4afe5250d1" category="list-text">對於 EKM ，您需要從合作夥伴節點複本下列檔案：</block>
@@ -11301,8 +11299,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="88cf8f1d92159c3cdea53a734f1d7a26" category="paragraph">更換損壞的AFF C80 控制器後，您需要：<block ref="ba0281d4e0b6e4cebf5e13fd7e583c92" category="inline-link-macro-rx"></block> 。</block>
   <block id="345fb173829c711fcd65d0471db9547b" category="paragraph">當您的AFF C80 系統中的 I/O 模組發生故障或需要升級以支援更高的效能或附加功能時，請更換該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。您可以將此方法用於儲存系統支援的所有ONTAP版本。</block>
   <block id="cf99c258aade4f04e63c51a37a560c71" category="paragraph">當非揮發性記憶體故障或需要升級時，請更換AFF C80 系統中的NVRAM 。更換過程包括關閉受損的控制器、將控制器拉出幾英寸以完全切斷電源、更換NVRAM模組或NVRAM DIMM、重新分配磁碟，以及將故障部件返回給NetApp。</block>
-  <block id="3898e1d169485951c2a49a4a69789502" category="sidebar">安裝和設定ASA系統</block>
-  <block id="10b7e05447c2dbec670e886811f71bcb" category="sidebar">維護ASA系統</block>
   <block id="c239ad11021e49c97ea2bf8272c6588a" category="paragraph">該過程嘗試從夥伴節點恢復適當的檔案並重新啟動該節點。繼續進行下一步。</block>
   <block id="774ee8b1398c2f16e1d77ddac27a50b0" category="inline-xref">重新啟用自動返還功能</block>
   <block id="d3218fd897781ec8a86658de26e1ddf1" category="list-text">前往 <block ref="7aacd8b9a7e4a74d04304c7c616e940e" category="inline-xref-macro-rx"></block> 如果它被禁用了。</block>
@@ -13087,8 +13083,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="006a0aef44a1bb691e9f644d1926371a" category="sidebar">ONTAP ASA C 系列系統提供具成本效益的高密度 Flash 儲存設備解決方案，專為資料中心內的關鍵企業應用而設計。</block>
   <block id="f448eec7530f30238deeb7ca09ca08e9" category="sidebar">ONTAP ASA C-Series 系統</block>
   <block id="f0cd4cc041c2ccdc2d72f5a039979218" category="sidebar">儲存系統文件可協助您安裝、設定和維護 ONTAP ASA C-Series 系統。</block>
-  <block id="ca646f85328c55542ec98da8c23da4d7" category="sidebar">ONTAP ASA 系統提供簡化的專用 SAN 體驗，可為使用 FCP 或 iSCSI 協定的企業關鍵任務型資料庫和其他 SAN 工作負載提供持續的資料可用度。</block>
-  <block id="f94409f7a4264c1d1b67dc1dae9ed979" category="sidebar">ONTAP ASA 系統</block>
   <block id="31d02e17d6f4955e62ee34e8f375593c" category="sidebar">請查看 ONTAP ASA r2 系統的關鍵硬體規格。請在下方選擇您的平台以檢視詳細規格。</block>
   <block id="ace8b1e16ed586fc025071917e7ada76" category="sidebar">ONTAP ASA r2 系統的關鍵規格</block>
   <block id="2b5c7860c45fbda4f791baa717f7406c" category="sidebar">了解 ONTAP ASA r2 A1K、A70、A90、A20、A30 和 A50 系統的關鍵規格。</block>
@@ -13096,7 +13090,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="c765d0e07cb0eb6f3c1d05edb0ddec3b" category="sidebar">維護 ONTAP ASA r2 系統</block>
   <block id="95d8b2944144fc1dea9bb18dfd4bcab6" category="sidebar">了解如何維護您的 ONTAP ASA r2 系統。</block>
   <block id="46bf8af591b2eda39968cb80a0f47b49" category="sidebar">已停產的 ONTAP 硬體系統不再出售，但仍提供支援。</block>
-  <block id="e3100a1ed15b6e04bfa241435608c305" category="sidebar">ONTAP 硬體系統停止供應</block>
   <block id="16b1cc12b78f6d1dcc110d94859b49e4" category="sidebar">儲存系統文件可協助您安裝、設定和維護 ONTAP 硬體系統。</block>
   <block id="26762e33a00f4bd9df870ba0826976fe" category="sidebar">ONTAP 硬體系統的系統組件更換參考</block>
   <block id="0104e66d9e929de2c820eda8a168d62f" category="doc">將故障的 AFF A200 開機媒體退回 NetApp</block>
@@ -13495,7 +13488,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="26f692511332eb8a8c46cde212670b50" category="admonition">首次啟動可能需要長達八分鐘的時間。</block>
   <block id="842fdbb17f378e39c5d026c1d0241d75" category="list-text">使用圖示或步驟尋找要設定的儲存系統節點：</block>
   <block id="b1375c0a5eb317dec19cb1588768cd82" category="list-text">在左側窗格中右鍵單擊 *Network* ，然後選擇 *重新整理* 。</block>
-  <block id="b759fa52fabc1d89d76df0334748bdc2" category="list-text">選擇<block ref="47d83efabc4122be28a80bdea228d0a5" category="inline-link-rx"></block></block>
   <block id="9e7d792ddf8505940beb1c9535d35ee3" category="list-text">如果您需要建立帳戶或登入帳戶，請選擇「建立帳戶」。</block>
   <block id="8dd4868355d21e4201d5f6312ccdcf2f" category="list-text">使用您在 <block ref="d0fb50e606c7cb2fa74e99fa5a3520a8" category="inline-xref-macro-rx"></block> 中收集的資料設定儲存系統。</block>
   <block id="dda5c0a3cc3bfed1a3c6bd195954d71f" category="summary">本指南提供 FAS2820 系統的安裝圖文說明，從機架安裝和佈線到初始系統開機。</block>
@@ -14746,13 +14738,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="274783e4c9519d6e916e56a3cf4668b5" category="doc">選擇如何安裝 AFF A700s 儲存系統</block>
   <block id="45bc957c869f2f300b10f32fa7b6b0bb" category="doc">在 AFF A900 系統中熱插拔 DCPM 模組</block>
   <block id="e98bdae8da84c5676493dd607a729deb" category="paragraph">當 AFF A900 系統中的電源供應發生故障或損壞時，請熱交換更換電源供應。電源供應為備援且熱交換的，因此您無需關閉控制器即可進行更換。</block>
-  <block id="efc9a5938fda5ed50d2f5f5241924dec" category="doc">安裝並設定 AFX 1K 儲存系統</block>
   <block id="e4ac995c054eac52cadbd3879943fa29" category="doc">使用自動開機恢復流程在 AFX 1K 系統上啟動恢復映像</block>
-  <block id="d98bf0bdec0e5b1623e19177b77bccb9" category="doc">檢閱 AFX 1K 系統中自動開機媒體恢復的要求</block>
   <block id="1709008a9441435e032e5515637baaaa" category="doc">在 AFX 1K 系統中，於自動開機恢復過程中關閉控制器</block>
   <block id="1cf079175d8c51ae4d882b569de2b842" category="doc">完成 AFX 1K 系統的機箱更換</block>
   <block id="5208f118595d995f31abb89fc26ad1da" category="doc">更換 AFX 1K 系統中的機箱</block>
-  <block id="b657cd45a1f1b70458977b03547ac662" category="doc">準備更換 AFX 1K 機箱</block>
   <block id="f0e2ddc53dde528f7a98f4f940c4dc5b" category="doc">關閉 AFX 1K 控制器以更換機箱</block>
   <block id="19020709050dc2f86d35da4dd00394a1" category="doc">更換 AFX 1K 系統中的控制器</block>
   <block id="676b5e1e4f790332d891111042ab81b9" category="doc">歸還 AFX 1K 系統中的控制器</block>
@@ -14770,12 +14759,10 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6befef2beb7e8511ae8624712db1017e" category="doc">更換 AFX 1K 系統中的系統管理模組</block>
   <block id="beeb0855a5513cdd5e0028ae3dc0552d" category="doc">安裝並設定 AFX 2K 儲存系統</block>
   <block id="8e36303970ba7d3956f3abcccba9a642" category="doc">使用自動開機恢復流程在 AFX 2K 系統上啟動恢復映像</block>
-  <block id="d4eecea550cbd08b714e9062c130e09d" category="doc">檢閱 AFX 2K 系統中自動開機媒體恢復的要求</block>
   <block id="a0031011edafc327be949a39236f6208" category="doc">在 AFX 2K 系統中，於自動開機恢復過程中關閉控制器</block>
   <block id="103eab4add6d34021094e3f8efaaef45" category="doc">完成 AFX 2K 系統的機箱更換</block>
   <block id="74bc862166a5d0f18c49dff569345112" category="doc">更換 AFX 2K 系統中的機箱</block>
   <block id="e68bc2c0512e029a09a2b43d7b516d78" category="doc">準備更換 AFX 2K 機箱</block>
-  <block id="9595dfd40a827967c7b3e0ca5f891707" category="doc">關閉 AFX 2K 控制器以更換機箱</block>
   <block id="a13213071540e6838727c5b862a2aa77" category="doc">更換 AFX 2K 系統中的控制器</block>
   <block id="db9abee8374f171bcd3c39af2f6b286f" category="doc">歸還 AFX 2K 系統中的控制器</block>
   <block id="a6b3c0f78c4c1cc2c97efd06b5d7e9bb" category="doc">完成 AFX 2K 系統的控制器更換</block>
@@ -14795,14 +14782,12 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b9e029bf8bccfe4bfab480ba4680eae0" category="doc">選擇如何安裝 ASA C400 儲存系統</block>
   <block id="7498ff6b06fbb7a38808334a73d974ee" category="doc">選擇如何安裝 ASA C800 儲存系統</block>
   <block id="b2b0363f93ea261182923a404dd77bf0" category="doc">使用自動開機恢復流程在 ASA A70 或 ASA A90 系統上啟動恢復映像</block>
-  <block id="02d9cdc893988160a99d8f286258dc19" category="doc">檢閱 ASA A70 或 ASA A90 系統中自動開機媒體恢復的要求</block>
   <block id="a6c94e9cab922026890d67a2e4ee57a7" category="doc">在自動開機恢復過程中，關閉 ASA A70 或 ASA A90 系統中的控制器</block>
   <block id="86cfd19cdbf8951311b8fa5909e4911d" category="doc">完成 ASA A70 或 ASA A90 系統的機箱更換</block>
   <block id="b15a01da7fa12798e93ca373ae9a925a" category="doc">更換 ASA A70 或 ASA A90 系統中的機箱</block>
   <block id="3586b11f868b72d4c7ad32d86823ba74" category="doc">準備更換 ASA A70 或 ASA A90 機箱</block>
   <block id="b1d86d89fc2b0f59650f835cd77633cd" category="doc">關閉 ASA A70 或 ASA A90 控制器以更換機箱</block>
   <block id="601975ac54f8d964829f27da2e20876b" category="doc">更換 ASA A70 或 ASA A90 系統中的控制器</block>
-  <block id="7fdbe7a7edfb77da7d41245ac2a0bfb9" category="doc">將 ASA A70 或 ASA A90 系統中的控制器交還，以恢復正常運作。</block>
   <block id="c5008eda2a2f8db468f6c3af42814c65" category="doc">完成 ASA A70 或 ASA A90 系統的控制器更換</block>
   <block id="19f705c85d6025a20edb5ddaf235f8aa" category="doc">恢復並驗證 ASA A70 或 ASA A90 系統中的控制器組態</block>
   <block id="7f7215a99f74f69753fe853a9f9b01e7" category="doc">在 ASA A70 或 ASA A90 系統中熱交換 SSD 硬碟</block>
@@ -14818,11 +14803,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="f77de2e285a1cea61968935e58b21d1d" category="doc">更換 ASA A70 或 ASA A90 系統中的即時時鐘電池</block>
   <block id="d07bc2fc56daaa173c6c923d5163266d" category="doc">更換 ASA A70 或 ASA A90 系統中的系統管理模組</block>
   <block id="836c19dad0cf94c91fb6de1d0a018810" category="doc">使用自動開機恢復流程在 ASA A1K 系統上開機恢復映像</block>
-  <block id="1cda8cc0351603337d5d63d375d91d51" category="doc">檢閱 ASA A1K 系統中自動開機媒體恢復的需求</block>
   <block id="0e94aedffe9d3659cff4d25672255ad0" category="doc">在自動開機恢復過程中關閉 ASA A1K 系統中的控制器</block>
   <block id="f1956fe49e4dd855917e39097b21dea0" category="doc">完成 ASA A1K 系統的機箱更換</block>
   <block id="5e938aed06be2dbd80d4d8809e4ae4cc" category="doc">更換 ASA A1K 系統中的機箱</block>
-  <block id="d774e2173945e6f19e68652bd0f8b317" category="doc">準備更換 ASA A1K 機箱</block>
   <block id="98f50493f4174671c85dce9168d98a09" category="doc">關閉 ASA A1K 控制器以更換機箱</block>
   <block id="0184b584e2742be7788f777737da5c1b" category="doc">更換 ASA A1K 系統中的控制器</block>
   <block id="e30f60539bf1941b9e2a3676e2bcf029" category="doc">歸還 ASA A1K 系統中的控制器</block>
@@ -14838,27 +14821,23 @@ SFP+ （目標 / 啟動器）</block>
   <block id="29c2d04574d08bf524e15db6962dcbb9" category="doc">更換 ASA A1K 系統中的即時時鐘電池</block>
   <block id="c9d58bcf41c4c5b622a55606caae132f" category="doc">更換 ASA A1K 系統中的 System Management 模組</block>
   <block id="c10b72934e01f3d15443daa79a737fd5" category="doc">使用自動開機恢復流程，在 ASA A20、ASA A30 或 ASA A50 系統上啟動恢復映像</block>
-  <block id="48e99abe6eac2b4c2493ed3f0846c0b0" category="doc">檢視 ASA A20、ASA A30 或 ASA A50 系統中自動開機媒體恢復的要求</block>
   <block id="f479c87512824f9b290221a7329e4703" category="doc">在自動開機恢復過程中，關閉 ASA A20、ASA A30 或 ASA A50 系統中的控制器</block>
   <block id="47b45901ff39f4c57f6371788bc83760" category="doc">完成 ASA A20、ASA A30 或 ASA A50 系統的機箱更換</block>
   <block id="fa41ec5f52fd7ef75eddecf8222f3b7b" category="doc">更換 ASA A20、ASA A30 或 ASA A50 系統中的機箱</block>
   <block id="3acdaaf770d6ffeacf4cb950ec737eb4" category="doc">關閉 ASA A20、ASA A30 或 ASA A50 控制器以更換機箱</block>
   <block id="39e57a4038d157f98d61c35726c02cf2" category="doc">更換 ASA A20、ASA A30 或 ASA A50 系統中的控制器</block>
-  <block id="44f7a97bcc3d20061b3e933e121c905a" category="doc">將 ASA A20、ASA A30 或 ASA A50 系統中的控制器交還給系統，即可恢復正常運作。</block>
   <block id="be64f3352744c9588b4126995810a8ed" category="doc">完成 ASA A20、ASA A30 或 ASA A50 系統的控制器更換</block>
   <block id="bffe16cafbe5f64d52b3cc926849a79d" category="doc">還原並驗證 ASA A20、ASA A30 或 ASA A50 系統中的控制器組態</block>
   <block id="1f15468020d9ff40a9112c28083938cd" category="doc">在 ASA A20、ASA A30 或 ASA A50 系統中熱交換磁碟機</block>
   <block id="a244144dad24a0a79ab9d337f7850af4" category="doc">更換 ASA A20、ASA A30 或 ASA A50 系統中的風扇模組</block>
   <block id="c564f4f97b4ac4ec8e8888d08b9da9f2" category="doc">在 ASA A20、ASA A30 或 ASA A50 系統新增 I/O 模組</block>
   <block id="d1c3ca0183fb2cf5b2fa04e2fe4561b1" category="doc">在 ASA A20、ASA A30 或 ASA A50 系統中熱插拔 I/O 模組</block>
-  <block id="a9e87d8266d1d94c0fb792a7022d7ed6" category="doc">了解如何在 ASA A20、ASA A30 或 ASA A50 系統中新增和更換 I/O 模組</block>
   <block id="7fdf84bf8dd6eee380bd39f9c252cab8" category="doc">更換 ASA A20、ASA A30 或 ASA A50 系統中的 I/O 模組</block>
   <block id="0da070a23c109f1968d4506ebd0eea7b" category="doc">了解如何維護 ASA A20、ASA A30 或 ASA A50 儲存系統</block>
   <block id="9c32f1ffddb4c3d6ad5e89cb872c1000" category="doc">更換 ASA A20、ASA A30 或 ASA A50 系統中的 NV 電池</block>
   <block id="1851f6b6551b0f9064265d074923a21a" category="doc">在 ASA A20、ASA A30 或 ASA A50 系統中熱插拔電源供應單元</block>
   <block id="96021c96ad6c958c6608b296bd39242f" category="doc">更換 ASA A20、ASA A30 或 ASA A50 系統中的即時時鐘電池</block>
   <block id="049196dd46767e094268def22b419750" category="doc">使用自動開機恢復流程在 ASA C30 系統上開機恢復映像</block>
-  <block id="1e7dc4c5b9d0af9d56b5b257647b73ee" category="doc">檢閱 ASA C30 系統中自動開機媒體恢復的需求</block>
   <block id="f152bba8e894d6a036fe7eb74627716a" category="doc">在自動開機恢復過程中關閉 ASA C30 系統中的控制器</block>
   <block id="206164985e80d2629f28ef4a4deff219" category="doc">完成 ASA C30 系統的機箱更換</block>
   <block id="32d92ee3c8de99c61a1b8d4d5825b788" category="doc">更換 ASA C30 系統中的機箱</block>
@@ -14874,7 +14853,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e6a66fce79a2141b833431148d24c962" category="doc">在 ASA C30 系統中熱插拔 I/O 模組</block>
   <block id="ec87291c3a0efed1108e585af46a67d7" category="doc">了解如何在 ASA C30 系統中新增和更換 I/O 模組</block>
   <block id="866befee7698560ba2183cae7fb89e1b" category="doc">更換 ASA C30 系統中的 I/O 模組</block>
-  <block id="f48e607781605c9a94882f3b9aab2e6d" category="doc">了解如何維護 ASA C30 系統</block>
   <block id="54dc5021d8076b003e3b7d7edaa20fa7" category="doc">更換 ASA C30 系統中的 NV 電池</block>
   <block id="1e42266af5c16cfcb9613150b455e8e2" category="doc">在 ASA C30 系統中熱插拔電源供應單元</block>
   <block id="e12c61e12d93c730b94baf56b89e1b22" category="doc">更換 ASA C30 系統中的即時時鐘電池</block>
@@ -15354,7 +15332,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8cb263247980423572b1994df1d56aac" category="doc">使用自動開機恢復流程的 ASA A70 或 ASA A90 系統開機媒體更換工作流程</block>
   <block id="0ad6347c37b40e5d2a3a457000c685f9" category="doc">檢閱在 ASA A70 或 ASA A90 系統中更換機箱的需求</block>
   <block id="7aaa8195a7b7e29e00746b1bac4a784d" category="doc">審查更換 ASA A70 或 ASA A90 系統中控制器的要求</block>
-  <block id="5c5b6a966b6a5f5f8d3e0e46bda2a351" category="doc">在非 MetroCluster 組態下，關閉 ASA A70 或 ASA A90 系統中發生故障的控制器</block>
   <block id="535fed17356555fa8bd69a05cd88aa0b" category="doc">更換 ASA A70 或 ASA A90 系統中的 DIMM</block>
   <block id="475c61f2af3c595642b312469829062f" category="summary">當您的 ASA A70 或 ASA A90 系統中的磁碟機發生故障或需要升級時，請對磁碟機進行熱插拔。此程序包括識別故障磁碟機、安全地將其移除，然後安裝新磁碟機，以確保持續的資料存取和系統效能。</block>
   <block id="a1c542e365496917997fb298ea65cb54" category="doc">在自動開機恢復過程中更換 ASA A1K 系統中的開機介質</block>
@@ -15682,4 +15659,30 @@ SFP+ （目標 / 啟動器）</block>
   <block id="a0d51b97ecebc4a2164c80e9993b43b7" category="doc">ONTAP 硬體系統機櫃支援的 PDU 類型和規格</block>
   <block id="d4f15e3529c28c34230d8c8c8157f378" category="doc">打開 ONTAP 硬體系統機櫃包裝</block>
   <block id="4fce94ed1c415c154afd3821b10ac5ec" category="doc">在四柱機架中為 ONTAP 硬體系統安裝 SuperRail 套件</block>
+  <block id="e21e1556ec068a5df6e695e6905205a6" category="list-text">如果 AutoSupport 未啟用，請聯絡<block ref="b4370becb2f960357cf9c0c2a970626e" category="inline-link-rx"></block>註冊序號。</block>
+  <block id="e57dd029768411dcacc988bedd650b42" category="doc">安裝並設定 AFX 1K 儲存系統</block>
+  <block id="fbcdc30a876ddf09596fed9d6b612d18" category="doc">檢視 AFX 1K 系統中自動開機媒體恢復的需求</block>
+  <block id="13fdab105307b71d347784a3f91b5b68" category="doc">準備更換 AFX 1K 系統中的機箱</block>
+  <block id="ec3fab985a2a90c34ebfe24d3912e300" category="doc">檢閱 AFX 2K 系統中自動開機媒體恢復的需求</block>
+  <block id="dbbf1e9e4f69be89b7edcd1f5eb53004" category="doc">關閉 AFX 2K 控制器以更換機箱</block>
+  <block id="f4d3d3a30282dbd88d419461171ac62d" category="doc">檢視 ASA A70 或 ASA A90 系統中自動開機媒體恢復的要求</block>
+  <block id="8d3d19afcc431c3469f48d9cc5c44a0f" category="doc">歸還 ASA A70 或 ASA A90 系統中的控制器</block>
+  <block id="315af91e6f1729d6435f1c2c8d03d2d6" category="doc">在非 MetroCluster ASA A70 或 ASA A90 系統中關閉故障控制器</block>
+  <block id="91c53e53fda253c2111535e334a024ac" category="doc">檢視 ASA A1K 系統中自動開機媒體恢復的需求</block>
+  <block id="db3d30f61d5398419368d752f7a491ea" category="doc">準備更換 ASA A1K 系統中的機箱</block>
+  <block id="d2302a996bd8c8d136c137469bf09018" category="doc">檢視 ASA A20、ASA A30 或 ASA A50 系統中自動開機媒體恢復的要求</block>
+  <block id="60503bd281def9806ee60e603e323a2f" category="doc">歸還 ASA A20、ASA A30 或 ASA A50 系統中的控制器</block>
+  <block id="4b587cd5fee1ca71bd5e4db3b2f8d3e6" category="doc">了解 ASA A20、ASA A30 或 ASA A50 系統中的 I/O 模組</block>
+  <block id="bd36fcdbe1840e814985a3deea33381f" category="doc">檢視 ASA C30 系統中自動開機媒體恢復的要求</block>
+  <block id="26c6a17702d6ba3531c668e8f92083a0" category="doc">了解如何維護 ASA C30 儲存系統</block>
+  <block id="a09aa4a77d03faefd31c42961a3d5b3c" category="list-text">選擇<block ref="ad0b04bb56ceedcbeec8dbcc205dcbdf" category="inline-link-rx"></block></block>
+  <block id="ba2104f74aeb79e7496e1678f8510db4" category="sidebar">ONTAP 硬體系統停止可用度</block>
+  <block id="a17781ff643a089b45aa6c0809af728c" category="sidebar">AFF 系統 - 安裝和設定</block>
+  <block id="749054ac8df8397a9ccaa9c736554a3c" category="sidebar">ASA 系統 - 安裝和設定</block>
+  <block id="bace621924db181d3b82ad092a96a17d" category="sidebar">FAS 系統 - 安裝與設定</block>
+  <block id="d0712c7405e84d87021b738cac4d8959" category="sidebar">AFF 系統 - 維護您的系統</block>
+  <block id="30b5e67a49c607bf48d7d3cb030979e1" category="sidebar">ASA 系統 - 維護您的系統</block>
+  <block id="71cc958203e2189f72e51984a78e2cff" category="sidebar">FAS 系統 - 維護您的系統</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多資源</block>
+  <block id="608111b6d6e17c7658e3ddc5bd4c7784" category="sidebar">可用度終止系統</block>
 </blocks>
