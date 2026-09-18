@@ -53,6 +53,60 @@ NOTE: 在本程序開始時，纜線應已貼上標籤。
 [[step-2-remove-the-io-cards-nvram12-nvram12-ex-and-system-management-module]]
 == 步驟 2：移除 I/O 卡、NVRAM12、NVRAM12-EX 和系統管理模組
 
+. 檢查系統插槽 4/5 中的 NVRAM 狀態指示燈和插槽 6/7 中的 NVRAM12-EX 狀態指示燈。控制器模組前面板上也有一個 NVRAM 指示燈。請尋找 NV 圖示：
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM 注意與狀態 LED 位置圖]
+
++
+[cols="1,4"]
+|===
+
+
+2+| *NVRAM* 
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+NVRAM 狀態 LED
+
+
+
+ a| 
+image:../media/icon_round_2.png["編號 2"]
+ a| 
+NVRAM 注意 LED
+
+|===
++
+image::../media/drw_afx_emr_nvram-led_ieops-2962.svg[NVRAM12-EX 注意與狀態 LED 位置圖]
+
++
+[cols="1,4"]
+|===
+
+
+2+| *NVRAM12-EX* 
+
+
+ a| 
+image:../media/icon_round_1.png["編號 1"]
+ a| 
+NVRAM12-EX 狀態指示燈
+
+
+
+ a| 
+image:../media/icon_round_2.png["編號 2"]
+ a| 
+NVRAM12-EX 注意 LED
+
+|===
++
+** 如果 NV LED 熄滅、請前往下一步。
+** 如果 NV LED 閃爍、請等待閃爍停止。如果持續閃爍超過 5 分鐘、請聯絡技術支援部門尋求協助。
+
+
 . 從機箱中移除目標I/O模組：
 +
 image:../media/drw_afx_2k_io_remove_replace_ieops-2878.svg["移除 I/O 模組"]
@@ -73,7 +127,8 @@ I/O CAM 閂鎖
 .. 將 CAM 栓鎖儘量遠離模組。
 .. 將手指勾入凸輪桿開口並將模組從底盤中拉出，從而將模組從底盤中取出。
 +
-請務必追蹤I/O模組所在的插槽。
+
+NOTE: 請務必追蹤I/O模組所在的插槽。
 
 .. 將 I/O 模組放在一邊，然後對任何其他 I/O 模組重複這些步驟。
 
@@ -210,6 +265,10 @@ image:../media/icon_round_1.png["編號 1"]
 . 在機箱後方安裝 I/O 卡：
 +
 .. 將 I/O 模組的末端與更換機箱中與損壞機箱相同的插槽對齊，然後輕輕地將模組完全推入機箱。
++
+
+NOTE: 請務必將 I/O 模組安裝到與故障機箱中相同的插槽。
+
 .. 將凸輪閂鎖向上旋轉至鎖定位置。
 .. 對任何其他 I/O 模組重複這些步驟。
 
@@ -231,6 +290,12 @@ NOTE: 如果您移除媒體轉換器（ QSFP 或 SFP ），請記得重新安裝
 . 在機箱後方安裝機殼背面的 NVRAM12 模組：
 +
 .. 將 NVRAM12 模組的末端與機箱中的開口對齊，然後輕輕地將模組完全推入機箱。
+.. 將凸輪閂鎖向上旋轉至鎖定位置。
+
+
+. 將 NVRAM12-EX 安裝在機箱後方：
++
+.. 將 NVRAM12-EX 模組的末端與機箱上的開口對齊，然後輕輕地將模組完全推入機箱中。
 .. 將凸輪閂鎖向上旋轉至鎖定位置。
 
 
