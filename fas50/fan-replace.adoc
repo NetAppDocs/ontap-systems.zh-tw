@@ -1,7 +1,7 @@
 ---
 permalink: fas50/fan-replace.html 
 sidebar: sidebar 
-keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
+keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task 
 summary: 當您的 FAS50 系統中風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。更換過程包括：關閉控制器、拆下控制器、更換風扇、重新安裝控制器，然後將故障零件寄回 NetApp。 
 ---
 = 更換 FAS50 系統中的風扇模組
@@ -59,7 +59,7 @@ summary: 當您的 FAS50 系統中風扇發生故障或運作效率低時，請�
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

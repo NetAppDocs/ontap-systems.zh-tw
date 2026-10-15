@@ -8468,7 +8468,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="dcac0d4d44ce3609f70b9f6817380eb7" category="summary">確認控制器的 HA 組態在 FAS70 或 FAS90 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
   <block id="8f15a6b55f9d40c8f4779330981502f5" category="paragraph">在您還原並驗證 FAS70 或 FAS90 系統的系統組態之後<block ref="f96992113d4cc080f9d372523b7a919c" category="inline-link-macro-rx"></block>，您需要。</block>
   <block id="17e4dd018a5a20b5b198058502e171bc" category="summary">開始更換 FAS70 或 FAS90 儲存系統中的控制器，方法是關閉受損的控制器，移除及更換控制器，重新設定系統設定，以及驗證系統作業。</block>
-  <block id="0d9cd1cb3839e926bde7f75246162365" category="summary">當風扇故障或無法有效運作時，請更換 FAS70 或 FAS90 系統中的風扇模組，因為這可能會影響系統冷卻和整體效能。更換程序包括關閉控制器，移除控制器，更換風扇，重新安裝控制器，以及將故障零件退回 NetApp 。</block>
   <block id="86cfd8171cc9d13fd6ba34c5f4b8560b" category="summary">FAS70 或 FAS90 系統可靈活地擴充或更換 I/O 模組，以增強網路連線能力和效能。在升級網路功能或處理故障模組時，新增或更換 I/O 模組是不可或缺的。</block>
   <block id="7b96b7e6eb8df75ce5aff9a62ce657e2" category="paragraph">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 FAS70 或 FAS90 儲存系統中故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
   <block id="55658611693e2dfb5ae95b1b317d553f" category="summary">當模組故障或需要升級以支援更高效能或其他功能時，請更換 FAS70 或 FAS90 系統中的 I/O 模組。更換程序包括關閉控制器，更換故障 I/O 模組，重新啟動控制器，以及將故障零件退回 NetApp 。</block>
@@ -9554,7 +9553,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="b283de4e13a7d5b68dec3f041941e3bc" category="sidebar">FAS8300和FAS8700實時時鐘電池</block>
   <block id="49083f96e824487850956b55d36a363f" category="sidebar">FAS9500啟動介質自動化</block>
   <block id="92e1f12178f27a238b4b86215c5615af" category="sidebar">FAS9500啟動介質手冊</block>
-  <block id="3bce4848ee8babd978a1eed14ffb0657" category="paragraph"><block ref="e5d0e758897049635b8f9c5e676046ce" prefix="" category="inline-code"></block></block>
   <block id="08ff655980adcc7a622e1807b2ce15c0" category="list-text">如果自動交還功能已停用，請重新啟用它：<block ref="07d94d90bbf940cf95f9dbba0029631f" prefix=" " category="inline-code"></block></block>
   <block id="23d2a44e582b0f47f51ad61543f2784a" category="paragraph">移除控制器之前，您需要移除兩個電源裝置 (PSU)。</block>
   <block id="754bdcb9d2a9982ca84863ebead5a9e8" category="list-text">卸下 PSU：</block>
@@ -12915,7 +12913,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ae1e8d45dcecc0989481acfc809cb589" category="paragraph">若要完成 AFF A250 系統的控制器更換，還原 NetApp Storage Encryption 組態（如有必要），確認邏輯介面 （LIF） 正在向其主連接埠報告，執行叢集資訊健檢，並將故障元件退回 NetApp。</block>
   <block id="e6b508d3ad0bda4467669b6873e4af10" category="doc">AFF A250 控制器更換工作流程</block>
   <block id="156d802f0d77e677afd46ac3c4607a0d" category="paragraph">當儲存系統遇到過多可修正（CECC）或不可修正的記憶體容量錯誤時，請更換 AFF A250 系統中的 DIMM。此類錯誤可能導致儲存系統無法開機 ONTAP。</block>
-  <block id="49aeb0bb5d496401d4bde171b38b4ab5" category="paragraph">更換 AFF A250 系統中故障的風扇模組，以確保系統正常散熱並防止效能問題。風扇模組為熱交換的，無需關閉系統即可更換。</block>
   <block id="0d4e62f22088395485a3f549e175fd99" category="paragraph">請按照這些詳細的逐步說明安裝您的 AFF A250 儲存系統，從準備站台到啟動 ONTAP 叢集。</block>
   <block id="79fae8e27cc6142558d9fcc883b06a74" category="paragraph">依照簡明圖示說明安裝並連接您的 AFF A250 儲存系統。</block>
   <block id="ab71e54a3fb4e946810032444c082b73" category="paragraph">選擇您喜歡的 AFF A250 儲存系統安裝格式：詳細的逐步說明、快速圖形指南或影片說明。</block>
@@ -14014,7 +14011,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="e6b6e212a0094ee9b8cb07a680e14557" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的控制器</block>
   <block id="0f82cd5236663c6e94ef8c7f9728153e" category="doc">完成 AFF A20、AFF A30 或 AFF A50 系統的控制器更換</block>
   <block id="74e6f08c422d59cbb3a512c69842af19" category="doc">還原並驗證 AFF A20、AFF A30 或 AFF A50 系統中的控制器組態</block>
-  <block id="4495cc2cb1d64fab3f6960c395b15b0f" category="doc">在 AFF A20、AFF A30 或 AFF A50 系統中熱插拔風扇模組</block>
   <block id="93d133d3204b7024fba921363fd8d874" category="doc">為 AFF A20、AFF A30 或 AFF A50 硬體連接網路和儲存設備。</block>
   <block id="a2c478f19f67784c8f43c028d4448e35" category="doc">將 AFF A20、AFF A30 或 AFF A50 硬體安裝到機櫃或機架中</block>
   <block id="dde55a04d1203238613898d6b23d625c" category="doc">啟動 AFF A20、AFF A30 或 AFF A50 儲存系統</block>
@@ -14086,7 +14082,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="8af5278a7646ad11549695aac6717f1e" category="doc">重新連接 AFF A250 系統中的系統線纜並重新分配磁碟機</block>
   <block id="045ae4735d5c98bd9cda880ef7a88c0b" category="doc">完成 AFF A250 系統的控制器更換工作</block>
   <block id="ee970a6cb2e4caa63bb5a3bfd363a983" category="doc">恢復並驗證 AFF A250 系統中的控制器組態</block>
-  <block id="070ffbd86ec310d2991ee8589f585061" category="doc">在 AFF A250 系統中熱插拔風扇</block>
   <block id="b7accb8b14ac5f3ea9b18848c60524f1" category="doc">按照詳細的逐步說明安裝 AFF A250 系統</block>
   <block id="559d4c9ae378606b453ec096608835fd" category="doc">使用簡明圖解說明安裝 AFF A250 系統</block>
   <block id="bcf286d5537d6f9439072d7b535a8c1f" category="doc">選擇如何安裝 AFF A250 儲存系統</block>
@@ -15685,4 +15680,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="36ff1b0cf056d6ead654398301edbbc1" category="inline-link-macro">_獲得 ENERGY STAR 認證的資料中心儲存設備產品_</block>
   <block id="be4049092eb4f116ae37997b11912f3e" category="list-text">本產品已獲得 ENERGY STAR 認證。如需詳細資訊，請造訪 <block ref="435b6d0174c4d003719c270181300a75" category="inline-link-macro-rx"></block>。</block>
   <block id="33ba153f9c27104ac9c370d6c06d5f5e" category="image-alt">ENERGY STAR 認證標誌</block>
+  <block id="191a1145acb5161a93983cb67bc7ac6d" category="doc">更換 AFF A20、AFF A30 或 AFF A50 系統中的風扇模組</block>
+  <block id="f5d2aeabd722753506bdc837f15883a8" category="summary">當您的 AFF A250 系統中的風扇發生故障或運作效率低時，請更換風扇模組。更換過程包括關閉故障控制器、拆下控制器模組、更換風扇、重新安裝控制器模組，並將故障零件退回 NetApp。</block>
+  <block id="ed3a1c751fa8ade111c8b6d1be8b8c5f" category="doc">更換 AFF A250 系統中的風扇</block>
+  <block id="2784a8192eaeb23d47dae9485279e807" category="summary">當您的 FAS70 或 FAS90 系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。FAS70 和 FAS90 系統中的風扇模組是熱交換的。更換過程包括：識別故障風扇模組、拆下、安裝新的風扇模組，然後將故障零件寄回 NetApp。</block>
+  <block id="cedf051c7874b86bf8685dbb501a4e9a" category="sidebar">AFF A20、AFF A30 和 AFF A50 主要規格</block>
 </blocks>

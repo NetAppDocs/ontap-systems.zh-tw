@@ -1,7 +1,7 @@
 ---
 permalink: c30-60/fan-replace.html 
 sidebar: sidebar 
-keywords: aff c30, aff c60, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
+keywords: aff c30, aff c60, aff, swap, out, fan, module, interrupt, service, sequence, task 
 summary: 當風扇發生故障或無法有效運作時，請更換AFF C30 或AFF C60 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。 
 ---
 = 更換 AFF C30 或 AFF C60 系統中的風扇模組
@@ -59,7 +59,7 @@ summary: 當風扇發生故障或無法有效運作時，請更換AFF C30 或AFF
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

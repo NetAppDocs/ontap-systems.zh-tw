@@ -52,7 +52,7 @@ summary: 當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC �
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 
@@ -88,6 +88,8 @@ summary: 當儲存系統遇到過多的可修正 ECC 錯誤或不可修正 ECC �
 --halt true_ 參數會帶您進入 Loader 提示字元。
 
 |===
+
+
 . 如果系統機箱中只有一個控制器模組、請關閉電源供應器、然後從電源插座拔下受損控制器的電源線。
 
 

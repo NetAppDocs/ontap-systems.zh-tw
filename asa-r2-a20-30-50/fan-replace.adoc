@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/fan-replace.html 
 sidebar: sidebar 
-keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module 
+keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task 
 summary: 當風扇發生故障或無法有效運作時，請更換ASA A20、 ASA A30 或ASA A50 儲存系統中的風扇模組，因為這會影響系統冷卻和整體效能。更換過程包括關閉控制器、移除控制器、更換風扇、重新安裝控制器以及將故障部件退回給NetApp。 
 ---
 = 更換 ASA A20、ASA A30 或 ASA A50 系統中的風扇模組
@@ -53,7 +53,7 @@ summary: 當風扇發生故障或無法有效運作時，請更換ASA A20、 ASA
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 

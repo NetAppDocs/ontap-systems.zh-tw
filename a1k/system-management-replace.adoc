@@ -82,7 +82,7 @@ summary: 當您的 AFF A1K 系統中的系統管理模組故障或韌體損壞�
 +
 .. 從健康控制器的控制台輸入以下命令：
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. 進入 `y`當您看到提示「您是否要停用自動回饋？」時
 
