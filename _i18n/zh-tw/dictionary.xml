@@ -7070,10 +7070,8 @@ SFP+ （目標 / 啟動器）</block>
   <block id="40d27fa6094c4326547f3923c7cee14d" category="paragraph"><block ref="40d27fa6094c4326547f3923c7cee14d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="50852571c17718fd36dbe6f392f78fc5" category="paragraph"><block ref="50852571c17718fd36dbe6f392f78fc5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fd55ca97a838d20a44630f5fc8563412" category="paragraph"><block ref="fd55ca97a838d20a44630f5fc8563412" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2fbf4b96b341ff3cf1fd1fb73e8899c8" category="paragraph"><block ref="2fbf4b96b341ff3cf1fd1fb73e8899c8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="feb4f24fd90c865c8c1692c9529598c6" category="paragraph">影像： [ 標註編號 1] drw_A900_POWER-on_IEOS-941.svg [width=500px]</block>
   <block id="cbb5640a4c423d549c9eb57b27dbd4ea" category="image-alt">圖示方塊 1 綠色</block>
-  <block id="96a5f900d6bd8337209c17fce1a47ae5" category="image-alt">編號 3]</block>
   <block id="cd5ec5f3586869573f3f0b3112426052" category="sidebar">TR-4290 - 採用 NFS 的 NetApp FAS 系統上的 SAP HANA</block>
   <block id="1e4893fc6c634f02ace3ba7beb78d669" category="inline-link-macro">仲裁狀態</block>
   <block id="8df1727c16aa446d0622abe8cab177ae" category="list-text">如果您有 SAN 系統，則必須檢查故障控制器 SCSI 刀鋒的事件訊息 <block ref="090678c8ba0a25df800d3d4eeaf19522" prefix="(" category="inline-code"></block>。<block ref="090678c8ba0a25df800d3d4eeaf19522" prefix=" " category="inline-code"></block>命令（從 priv 進階模式）會顯示節點名稱、<block ref="8650efa63daff32c831511388978454c" category="inline-link-macro-rx"></block>該節點的可用度狀態、以及該節點的作業狀態。</block>
@@ -7686,12 +7684,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="cf3f28797bb88ae9f14057ba85eb97b9" category="list-text">將 NSM 滑出機櫃，放在平坦穩定的表面上。</block>
   <block id="bb20d77f45b4cc0d8fb7e2ceeb73a6e8" category="paragraph">將 NSM 滑出機櫃時，請務必支撐其底部。</block>
   <block id="badfffbcf4c415d2d54e8598e4f36a66" category="paragraph">將把手垂直轉動（在彈片旁邊），將其移出。</block>
-  <block id="56b8cde3b1f3e08c4473d9b2684dcde7" category="paragraph-title"><block ref="444c1bf2e877f5617e8ce0a2ded57f4f" category="inline-image-macro-rx" type="image"></block><block ref="0caeda8d60cf80f7a042375ba653d60a" category="inline-link-macro-rx"></block></block>
-  <block id="3d380bb3e10695f0ff14d7bd2503d30a" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="7444ce336f5cb99437679b1ac8b6aefb" category="inline-link-macro-rx"></block></block>
-  <block id="4cb467fae72dd386afc8ef7522d342e3" category="paragraph-title"><block ref="d5b760e3b486da6aca46a9bd83d66c13" category="inline-image-macro-rx" type="image"></block><block ref="d5411bd0189d789655f8f33f07ceef1c" category="inline-link-macro-rx"></block></block>
-  <block id="68e401335e776f9115f19dc83fbb1ab4" category="paragraph-title"><block ref="91d7076df3f3bfcf6ace71bd0aa6cf68" category="inline-image-macro-rx" type="image"></block><block ref="68895f240ebc6c043e757f74f16ee4e8" category="inline-link-macro-rx"></block></block>
-  <block id="a782e599865f4a63ae7329f3a1de025e" category="paragraph-title"><block ref="6e12d70052c23b4d8ac555d298c6cb54" category="inline-image-macro-rx" type="image"></block><block ref="d767082d20397ebb99e586749eda3a08" category="inline-link-macro-rx"></block></block>
-  <block id="8e603f1c8e32c3de27ddc5fdfede052e" category="paragraph-title"><block ref="494807d2e8b0949d4144c33cc51d4984" category="inline-image-macro-rx" type="image"></block><block ref="ad27444622868149ebc13d5b01cf807a" category="inline-link-macro-rx"></block></block>
   <block id="78d32111d8a03b9d50893ee837ca8569" category="paragraph">若要更換控制器，您必須符合特定要求。</block>
   <block id="56316a8ca0d4ea8218ff785f2fe8fc7d" category="paragraph">更換控制器包括移除受損的控制器，將 FRU 元件移至更換控制器，在機箱中安裝更換控制器，設定時間和日期，然後重新啟用。</block>
   <block id="3fe8767a939feff2cd12159441aec4ee" category="paragraph">驗證生命，檢查叢集健全狀況，並將故障零件退回 NetApp 。</block>
@@ -8231,7 +8223,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="43d776718c1fd733b854e3b84bdffa63" category="summary">確認控制器的 HA 組態在 AFF C80 儲存系統中為作用中且運作正常，並確認系統的介面卡列出磁碟的所有路徑。</block>
   <block id="cd8d2c9f06c5661e2266f9927427382e" category="summary">您可以使用相同類型的 I/O 模組或不同類型的 I/O 模組來取代 AFF C80 儲存系統中發生故障的 I/O 模組。您也可以將 I/O 模組新增至具有空插槽的系統。</block>
   <block id="c52f1e3ee9e9664930223aa9ebbd84dc" category="summary">維護 AFF C80 儲存系統的硬體，以確保長期的可靠性和最佳效能。定期執行維護工作，例如更換故障元件，如此有助於避免停機和資料遺失。</block>
-  <block id="a70eaca09b18d4d2941af3eb0f7325cd" category="paragraph-title"><block ref="a65152a941ce25485720d5bcfae86492" category="inline-image-macro-rx" type="image"></block>設定 ONTAP 叢集</block>
   <block id="6cc5c9e930ea3d3b8bff4367c60ceea4" category="section-title">2025 年 2 月</block>
   <block id="9836617ae3e38bf714267c53aac7a422" category="section-title">ASA A20 ， ASA A30 和 ASA A50</block>
   <block id="4033d90a7ea8ab4b3276a0c26f0cc860" category="paragraph">入門級 ASA A20 和中階 ASA A30 和 A50 系統可為各種規模的公司提供區塊儲存，適用於資料庫和虛擬機器等關鍵任務應用程式。</block>
@@ -8483,7 +8474,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="6fcbff1d86e0024267f15e8f99c3a674" category="image-alt">AFF A1K 控制器上的插槽編號</block>
   <block id="1c0352693ded19ccdeb0fec11d3c385c" category="paragraph-title">I/O 插槽編號</block>
   <block id="49b9f31bb4801b746ad0f04e6c8fe614" category="summary">為了確保您的 A20 ， AFF A30 或 AFF A50 儲存系統上的資料安全性，您需要驗證開機媒體上的加密金鑰支援和狀態。請檢查您的 ONTAP 版本是否支援 NetApp Volume Encryption ，並在關閉控制器之前，檢查金鑰管理程式是否為作用中。</block>
-  <block id="ad5b6cd72397448815f30afe8edf14bb" category="paragraph-title"><block ref="4f954e3aac01b1dc982b61d245b37a02" category="inline-image-macro-rx" type="image"></block><block ref="f09c415cff110572b095b0b47b53909d" category="inline-link-macro-rx"></block></block>
   <block id="9fae3d417e2d3ebd88166f9029869c43" category="paragraph">驗證機箱的 HA 狀態，然後將故障零件退回 NetApp ，以完成 AFF A20 ， AFF A30 和 AFF A50 機箱更換程序的最後步驟。</block>
   <block id="a67af8037fff1bcc2d313723431a1370" category="paragraph">在您檢閱更換機箱的需求之後，您需要<block ref="5ad1268d806d8db9e0e59370c95dfac1" category="inline-link-macro-rx"></block></block>
   <block id="c4bc88aac3ca3e3334c364fc02c4ddd6" category="summary">關閉 AFF A20 ， AFF A30 或 AFF A50 儲存系統中的控制器，以防止資料遺失，並確保更換機箱時系統穩定。</block>
@@ -8742,7 +8732,6 @@ SFP+ （目標 / 啟動器）</block>
   <block id="83bff0d5c34d578fa839ac49404c9392" category="list-text">從控制器模組拔下 I/O 纜線。</block>
   <block id="d86f5a7ed8b3122487d6d2983a3d95f1" category="list-text">重新連接控制器模組 I/O 纜線。</block>
   <block id="db424e93139f05b40145c02ca1496dab" category="image-alt">更換 NVDIMM 電池</block>
-  <block id="f01c12d2b181f3fa692e46f31483240d" category="list-text">請確定機箱或電信機架的導引插腳已固定在機箱導引插槽中。</block>
   <block id="0ce45b8799d32fa93b50aed5301e827b" category="list-text">控制器2連接埠0b連接至堆疊中最後一個磁碟機櫃上的IOM B連接埠3。+ <block ref="065babb6c425d208f17452adf684f6f8" category="inline-image-macro-rx" type="image"></block>Mini-SAS HD 至 Mini-SAS HD 纜線</block>
   <block id="11695514a878032b3fb5ecdf5e659b5b" category="paragraph">如果您在此處看不到您的組態，請前往<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>以取得完整的組態和插槽優先順序資訊，以連接儲存系統。</block>
   <block id="2e169c8e6f4cc1f6315545b46d7284a2" category="inline-image-macro">64 GB 光纖通道纜線</block>
@@ -15685,4 +15674,7 @@ SFP+ （目標 / 啟動器）</block>
   <block id="ed3a1c751fa8ade111c8b6d1be8b8c5f" category="doc">更換 AFF A250 系統中的風扇</block>
   <block id="2784a8192eaeb23d47dae9485279e807" category="summary">當您的 FAS70 或 FAS90 系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。FAS70 和 FAS90 系統中的風扇模組是熱交換的。更換過程包括：識別故障風扇模組、拆下、安裝新的風扇模組，然後將故障零件寄回 NetApp。</block>
   <block id="cedf051c7874b86bf8685dbb501a4e9a" category="sidebar">AFF A20、AFF A30 和 AFF A50 主要規格</block>
+  <block id="c028c85efb1d1fc04746118670c19cf2" category="list-text">確保機櫃或電信機架的導引銷牢固地插入機箱指南槽。</block>
+  <block id="c0fcb1e09e77924fe85a8b205bead3af" category="image-alt">標註圖示 5</block>
+  <block id="7085927fbb8bc7e7f08b2e783854d864" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 設定您的 ONTAP 叢集</block>
 </blocks>
