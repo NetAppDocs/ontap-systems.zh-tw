@@ -2,7 +2,7 @@
 permalink: c80/io-module-replace.html 
 sidebar: sidebar 
 keywords: aff c80, replace a pcie card 
-summary: 當 AFF C80 系統中的 IO 模組發生故障或需要升級以支援更高的效能或附加功能時，請更換該 IO 模組。 
+summary: 當您的 AFF C80 系統中的 IO 模組發生故障時，請更換該 IO 模組。 
 ---
 = 更換 AFF C80 系統中的 I/O 模組
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 當 AFF C80 系統中的 IO 模組發生故障或需要升級以支援�
 
 
 [role="lead"]
-當您的AFF C80 系統中的 I/O 模組發生故障或需要升級以支援更高的效能或附加功能時，請更換該 I/O 模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，以及將故障零件退回NetApp。您可以將此方法用於儲存系統支援的所有ONTAP版本。
+當您的 AFF C80 系統中的 I/O 模組發生故障時，請更換該模組。更換過程包括：關閉控制器、更換故障的 I/O 模組、重新啟動控制器，然後將故障模組寄回 NetApp。此過程適用於您的儲存系統支援的所有 ONTAP 版本。
 
 .開始之前
 * 您必須擁有可更換的零件。
