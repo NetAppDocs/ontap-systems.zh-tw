@@ -65,6 +65,16 @@ NOTE: 如果您的儲存系統運作的不是 ONTAP 9.18.1 GA 或更高版本，
 
 
 * 儲存系統中的所有其他元件都必須正常運作；否則，請先聯絡， https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]再繼續執行此程序。
+* 叢集必須停用 IPsec 卸載，或是被更換的乙太網路 I/O 卡必須不支援 IPsec 卸載。
++
+如果啟用了 IPsec 卸載，且 I/O 卡支援 IPsec 卸載，則不支援熱插拔 I/O 模組。
+
++
+您可以透過輸入  `security ipsec config show` 命令並驗證結果是否包含  `Offload Enabled: false` 來驗證這一點。
+
++
+如果啟用了 IPsec 卸載，請在 link:https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html#requirements-and-recommendations["了解 ONTAP 網路上的 IP 安全性"^] 確認乙太網路 I/O 模組是否支援 IPsec 卸載。
+
 
 
 

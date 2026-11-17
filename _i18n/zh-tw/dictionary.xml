@@ -15453,4 +15453,9 @@ SFP+ （目標 / 啟動器）</block>
   <block id="024f9e2ec6a6b52885b486d36725bc5c" category="summary">FAS50 儲存系統在擴充或更換 I/O 模組方面提供靈活度，以增強網路連線能力與效能。升級網路能力時，新增 I/O 模組至關重要。處理故障的模組時，熱插拔或更換 I/O 模組至關重要。</block>
   <block id="5693f1a572453b8237bb4da7f9b67e53" category="summary">當您的 FAS50 儲存系統中的 I/O 模組發生故障時，請更換該模組。更換過程包括關閉控制器、更換故障的 I/O 模組、重新啟動控制器，並將故障零件退回 NetApp。</block>
   <block id="761a6ecb5755704bc93af5c2a3f8cfc7" category="list-text">FAS：FAS50</block>
+  <block id="9cfea601b1a6397b867acf5baf057fd6" category="list-text">叢集必須停用 IPsec 卸載，或是被更換的乙太網路 I/O 卡必須不支援 IPsec 卸載。</block>
+  <block id="f580a272827dab27be42bc85a298bf8e" category="paragraph">如果啟用了 IPsec 卸載，且 I/O 卡支援 IPsec 卸載，則不支援熱插拔 I/O 模組。</block>
+  <block id="681551041aae57078e94d534124a505d" category="paragraph">您可以透過輸入 <block ref="7e6e83b244ee73c77c0173da76d16bcb" prefix=" " category="inline-code"></block> 命令並驗證結果是否包含 <block ref="0f123819a61d2cfe139f30ea64d67708" prefix=" " category="inline-code"></block> 來驗證這一點。</block>
+  <block id="e30fdeefc5c0aec2077ae1ee0e2e02ab" category="inline-link-macro">了解 ONTAP 網路上的 IP 安全性</block>
+  <block id="56a329a295f64b40d16c5f41b94b25ec" category="paragraph">如果啟用了 IPsec 卸載，請在 <block ref="c7bebbbb762496b5cdd9ce53022b0167" category="inline-link-macro-rx"></block> 確認乙太網路 I/O 模組是否支援 IPsec 卸載。</block>
 </blocks>
